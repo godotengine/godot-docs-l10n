@@ -241,6 +241,9 @@ msgid ""
 msgstr ""
 "|release| Шлях до проекту (``<directory>`` має містити файл 'project.godot')."
 
+msgid "``--scene <path>``"
+msgstr "``--scene <path>``"
+
 msgid "|release| Path or UID of a scene in the project that should be started."
 msgstr "|release| Шлях або UID сцени в проєкті, яку слід запустити."
 
@@ -1162,9 +1165,9 @@ msgid ""
 "directory containing the ``project.godot`` file, **not** relative to the "
 "current working directory."
 msgstr ""
-"Якщо вказати відносний шлях як шлях для ``--export-release``, ``--export-"
-"debug`` або ``--export-pack``, шлях буде відносним до каталогу, що містить ` "
-"файл `project.godot``, **не** відносно поточного робочого каталогу."
+"Якщо вказати відносного шляху як шлях для ``--export-release``, ``--export-"
+"debug`` або ``--export-pack``, шлях буде відносним до каталогу, що містить "
+"файл ``project.godot``, а **не** відносним до поточного робочого каталогу."
 
 msgid "Running a script"
 msgstr "Запуск скрипта"

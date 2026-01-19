@@ -101,8 +101,23 @@ msgstr "`GH-105570`_"
 msgid "**RenderingServer**"
 msgstr "**RenderingServer**"
 
+msgid "Method ``instance_reset_physics_interpolation`` removed"
+msgstr "Méthode ``instance_reset_physics_interpolation`` enlevée"
+
 msgid "`GH-104269`_"
 msgstr "`GH-104269`_"
+
+msgid ""
+"In C#, the enum ``RenderingDevice.Features`` breaks compatibility because of "
+"the way the bindings generator detects the enum prefix. New members were "
+"added to the enum in `GH-103941`_ that caused the enum member ``Address`` to "
+"be renamed to ``BufferDeviceAddress``."
+msgstr ""
+"Dans C#, l'énumération ``RenderingDevice.Features`` casse la compatibilité "
+"en raison de la façon dont le générateur de liaisons détecte le préfixe "
+"enum. De nouveaux membres ont été ajoutés dans `GH-103941`_ à l’énumération, "
+"ce qui a forcé les membres de l'énumération ``Address`` à être renommés "
+"``BufferDeviceAddress``."
 
 msgid "GLTF"
 msgstr "GLTF"

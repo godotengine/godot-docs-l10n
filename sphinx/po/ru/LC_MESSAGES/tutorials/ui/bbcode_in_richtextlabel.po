@@ -374,17 +374,11 @@ msgstr "**u**"
 msgid "Makes ``{text}`` underlined."
 msgstr "Делает ``{text}`` подчеркнутым."
 
-msgid "``[u]{text}[/u]``"
-msgstr "``[u]{text}[/u]``"
-
 msgid "**s**"
 msgstr "**s**"
 
 msgid "Makes ``{text}`` strikethrough."
 msgstr "Делает ``{text}`` зачеркнутым."
-
-msgid "``[s]{text}[/s]``"
-msgstr "``[s]{text}[/s]``"
 
 msgid "**code**"
 msgstr "**code**"
@@ -516,13 +510,6 @@ msgstr "``[indent]{text}[/indent]``"
 
 msgid "**url**"
 msgstr "**url**"
-
-msgid ""
-"Creates a hyperlink (underlined and clickable text). Can contain optional "
-"``{text}`` or display ``{link}`` as is."
-msgstr ""
-"Создаёт гиперссылку (подчёркнутый и интерактивный текст). Может содержать "
-"необязательный ``{text}`` или отображать ``{link}`` как есть."
 
 msgid ""
 "**Must be handled with the \"meta_clicked\" signal to have an effect,** "
@@ -1216,6 +1203,9 @@ msgstr "``left`` (или ``l``), ``center`` (или ``c``), ``right`` (или ``
 msgid "Horizontal alignment."
 msgstr "Горизонтальное выравнивание."
 
+msgid "**tooltip**"
+msgstr "**tooltip**"
+
 msgid "Image options"
 msgstr "Image options"
 
@@ -1266,9 +1256,6 @@ msgstr ""
 "Если установлено значение ``true``, а изображение меньше размера, указанного "
 "``width`` и ``height``, то вместо масштабирования к изображению добавляется "
 "отступ для соответствия размеру."
-
-msgid "**tooltip**"
-msgstr "**tooltip**"
 
 msgid "String"
 msgstr "Строка"
@@ -1495,6 +1482,9 @@ msgstr ""
 
 msgid "Cell options"
 msgstr "Параметры ячеек"
+
+msgid "``true``"
+msgstr "``true``"
 
 msgid "**expand**"
 msgstr "**expand**"

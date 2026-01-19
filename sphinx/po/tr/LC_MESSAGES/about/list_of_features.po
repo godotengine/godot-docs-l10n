@@ -96,9 +96,6 @@ msgstr "**Dışa aktarılan projeleri çalıştırır:**"
 msgid "iOS."
 msgstr "iOS."
 
-msgid ":ref:`Consoles <doc_consoles>`."
-msgstr ":ref:`Oyun Konsolları <doc_consoles>`."
-
 msgid ""
 "Godot aims to be as platform-independent as possible and can be :ref:`ported "
 "to new platforms <doc_custom_platform_ports>` with relative ease."
@@ -971,6 +968,9 @@ msgstr "ETC2 (macOS'ta desteklenmez)."
 msgid "S3TC (not supported on mobile/Web platforms)."
 msgstr "S3TC (mobil/Web platformlarında desteklenmez)."
 
+msgid "**Antialiasing:**"
+msgstr "**Kenar yumuşatma:**"
+
 msgid "Temporal :ref:`antialiasing <doc_3d_antialiasing>` (TAA)."
 msgstr "Geçici :ref:`kenar yumuşatma <doc_3d_antialiasing>` (TAA)."
 
@@ -1423,6 +1423,13 @@ msgstr ""
 ":ref:`2B <doc_navigation_overview_2d>` ve :ref:`3B "
 "<doc_navigation_overview_3d>` için dinamik engellerden kaçınma özelliğine "
 "sahip gezinti örgüleri."
+
+msgid ""
+"Generate navigation meshes from the editor or at runtime (including from an "
+"exported project)."
+msgstr ""
+"Navigation mesh'lerini  editörden veya çalışma zamanında (dışa aktarılmış "
+"bir proje dahil) oluşturun"
 
 msgid "Networking"
 msgstr "Ağ oluşturma"

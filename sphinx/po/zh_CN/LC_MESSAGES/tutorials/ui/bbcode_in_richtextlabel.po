@@ -6,7 +6,7 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: zh_Hans\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -93,17 +93,11 @@ msgstr "**u**"
 msgid "Makes ``{text}`` underlined."
 msgstr "在 ``{text}`` 上显示下划线。"
 
-msgid "``[u]{text}[/u]``"
-msgstr "``[u]{text}[/u]``"
-
 msgid "**s**"
 msgstr "**s**"
 
 msgid "Makes ``{text}`` strikethrough."
 msgstr "在 ``{text}`` 上显示删除线。"
-
-msgid "``[s]{text}[/s]``"
-msgstr "``[s]{text}[/s]``"
 
 msgid "**code**"
 msgstr "**code**"
@@ -210,13 +204,6 @@ msgstr "``[indent]{text}[/indent]``"
 
 msgid "**url**"
 msgstr "**url**"
-
-msgid ""
-"Creates a hyperlink (underlined and clickable text). Can contain optional "
-"``{text}`` or display ``{link}`` as is."
-msgstr ""
-"创建超链接（有下划线且可点击的文本）。可以包含可选的 ``{text}`` 或者原样显示 "
-"``{link}``\\ 。"
 
 msgid "``[url]{link}[/url]``"
 msgstr "``[url]{link}[/url]``"
@@ -710,6 +697,9 @@ msgstr "十六进制颜色代码"
 
 msgid "Cell options"
 msgstr "单元格选项"
+
+msgid "``true``"
+msgstr "``true``"
 
 msgid "**expand**"
 msgstr "**expand**"

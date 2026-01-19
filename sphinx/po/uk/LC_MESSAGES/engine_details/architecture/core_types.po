@@ -28,6 +28,15 @@ msgstr "У цьому довіднику спробуємо перерахува
 msgid "Allocating memory"
 msgstr "Виділення пам'яті"
 
+msgid ""
+"Godot has many tricks for ensuring memory safety and tracking memory usage. "
+"Because of this, the regular C and C++ library calls should not be used. "
+"Instead, a few replacements are provided."
+msgstr ""
+"У Godot є багато хитрощів для забезпечення безпеки пам'яті та відстеження її "
+"використання. Через це не слід використовувати звичайні виклики бібліотек C "
+"та C++. Натомість передбачено кілька замін."
+
 msgid "For C-style allocation, Godot provides a few macros:"
 msgstr "Для розподілу в стилі C Godot надає кілька макросів:"
 
@@ -46,6 +55,16 @@ msgid ""
 "respectively."
 msgstr ""
 "Вони еквівалентні відповідно ``new``, ``delete``, ``new[]`` та ``delete[]``."
+
+msgid ""
+"``memnew``/``memdelete`` also use a little C++ magic to automatically call "
+"post-init and pre-release functions. For example, this is used to notify "
+"Objects right after they are created, and right before they are deleted."
+msgstr ""
+"``memnew``/``memdelete`` також використовують трохи магії C++ для "
+"автоматичного виклику функцій post-init та pre-release. Наприклад, це "
+"використовується для сповіщення об'єктів одразу після їх створення та "
+"безпосередньо перед їх видаленням."
 
 msgid ""
 "`core/os/memory.h <https://github.com/godotengine/godot/blob/master/core/os/"
@@ -90,6 +109,14 @@ msgstr "|string| 📜"
 
 msgid "``std::string``"
 msgstr "``std::string``"
+
+msgid ""
+"**Use this as the \"default\" string type.** ``String`` uses UTF-32 encoding "
+"to simplify processing thanks to its fixed character size."
+msgstr ""
+"**Використовуйте це як тип рядка «за замовчуванням».** ``String`` "
+"використовує кодування UTF-32 для спрощення обробки завдяки фіксованому "
+"розміру символів."
 
 msgid "|vector|"
 msgstr "|vector|"
@@ -227,6 +254,20 @@ msgstr "|span|"
 msgid "``std::span``"
 msgstr "``std::span``"
 
+msgid ""
+"Represents read-only access to a contiguous array without needing to copy "
+"any data. Note that ``Span`` is designed to be a high performance API: It "
+"does not perform parameter correctness checks in the same way you might be "
+"used to with other Godot containers. Use with care. `Span` can be "
+"constructed from most array-like containers (e.g. ``vector.span()``)."
+msgstr ""
+"Представляє доступ лише для читання до суміжного масиву без необхідності "
+"копіювання будь-яких даних. Зверніть увагу, що ``Span`` розроблено як "
+"високопродуктивний API: він не виконує перевірки правильності параметрів так "
+"само, як ви, можливо, звикли до інших контейнерів Godot. Використовуйте "
+"обережно. `Span` можна створити з більшості масивоподібних контейнерів "
+"(наприклад, ``vector.span()``)."
+
 msgid "|rb_set|"
 msgstr "|rb_set|"
 
@@ -275,6 +316,15 @@ msgstr "|rb_map|"
 msgid "``std::map``"
 msgstr "``std::map``"
 
+msgid ""
+"Map type that uses a `red-black tree <https://en.wikipedia.org/wiki/Red-"
+"black-tree>`__ to find keys. The performance benefits of ``RBMap`` aren't "
+"established, so prefer using other types."
+msgstr ""
+"Тип карти, що використовує `червоно-чорне дерево <https://en.wikipedia.org/"
+"wiki/Red-black-tree>`__ для пошуку ключів. Переваги ``RBMap`` у "
+"продуктивності не встановлені, тому перевагу надають іншим типам."
+
 msgid "|dictionary| 📜"
 msgstr "|dictionary| 📜"
 
@@ -301,6 +351,175 @@ msgstr "|pair|"
 
 msgid "``std::pair``"
 msgstr "``std::pair``"
+
+msgid ""
+"Stores a single pair. See also ``KeyValue`` in the same file, which uses "
+"read-only keys."
+msgstr ""
+"Зберігає одну пару. Див. також ``KeyValue`` у тому ж файлі, який "
+"використовує ключі лише для читання."
+
+msgid "Relocation safety"
+msgstr "Безпека переїзду"
+
+msgid ""
+"Godot's containers assume their elements are `trivially relocatable <https://"
+"open-std.org/JTC1/SC22/WG21/docs/papers/2020/p1144r5.html>`__."
+msgstr ""
+"Контейнери Годо припускають, що їхні елементи є `«тривіально переміщуваними» "
+"<https://open-std.org/JTC1/SC22/WG21/docs/papers/2020/p1144r5.html>`__."
+
+msgid ""
+"This means that, if you store data types in it that have pointers to "
+"themselves, or are otherwise `not trivially relocatable <https://open-"
+"std.org/JTC1/SC22/WG21/docs/papers/2020/p1144r5.html#non-trivial-"
+"samples>`__, Godot might crash. Note that storing **pointers to** objects "
+"that are not trivially relocatable, such as some Object subclasses, is "
+"unproblematic and supported."
+msgstr ""
+"Це означає, що якщо ви зберігаєте в ньому типи даних, які мають вказівники "
+"на себе або іншим чином `не є тривіально переміщуваними <https://open-"
+"std.org/JTC1/SC22/WG21/docs/papers/2020/p1144r5.html#non-trivial-"
+"samples>`__, Godot може аварійно завершити роботу. Зауважте, що зберігання "
+"**вказівників** на об'єкти, які не є тривіально переміщуваними, таких як "
+"деякі підкласи Object, не є проблематичним та підтримується."
+
+msgid ""
+"The reason to assume trivial relocatability is that it allows us to make use "
+"of important optimization techniques, such as relocation by ``memcpy`` or "
+"``realloc``."
+msgstr ""
+"Причина припускати тривіальну переміщуваність полягає в тому, що це дозволяє "
+"нам використовувати важливі методи оптимізації, такі як переміщення за "
+"допомогою ``memcpy`` або ``realloc``."
+
+msgid ""
+"`GH-100509 <https://github.com/godotengine/godot/issues/100509>`__ tracks "
+"this decision."
+msgstr ""
+"`GH-100509 <https://github.com/godotengine/godot/issues/100509>`__ відстежує "
+"це рішення."
+
+msgid "Multithreading / Concurrency"
+msgstr "Багатопотоковість / Паралелізм"
+
+msgid ""
+"You can find more information on multithreading strategies "
+"at :ref:`doc_using_multiple_threads`."
+msgstr ""
+"Більше інформації про стратегії багатопотоковості можна знайти за "
+"посиланням :ref:`doc_using_multiple_threads`."
+
+msgid ""
+"None of Godot's containers are thread-safe. When you expect multiple threads "
+"to access them, you must use multithread protections."
+msgstr ""
+"Жоден із контейнерів Godot не є потокобезпечним. Коли ви очікуєте, що до них "
+"звертатимуться кілька потоків, ви повинні використовувати багатопотоковий "
+"захист."
+
+msgid ""
+"Note that some of the types listed here are also available through the "
+"bindings, but the binding types are wrapped with :ref:`class_RefCounted` "
+"(found in the ``CoreBind::`` namespace). Prefer the primitives listed here "
+"when possible, for efficiency reasons."
+msgstr ""
+"Зверніть увагу, що деякі з перелічених тут типів також доступні через "
+"прив'язки, але ці типи прив'язок обгорнуті :ref:`class_RefCounted` "
+"(знаходиться в просторі імен ``CoreBind::``). З міркувань ефективності, коли "
+"це можливо, надавайте перевагу переліченим тут примітивам."
+
+msgid "|mutex|"
+msgstr "|mutex|"
+
+msgid "``std::recursive_mutex``"
+msgstr "``std::recursive_mutex``"
+
+msgid "Recursive mutex type. Use ``MutexLock lock(mutex)`` to lock it."
+msgstr ""
+"Рекурсивний тип м'ютексу. Використовуйте ``MutexLock lock(mutex)`` для його "
+"блокування."
+
+msgid "|binary_mutex|"
+msgstr "|binary_mutex|"
+
+msgid "``std::mutex``"
+msgstr "``std::mutex``"
+
+msgid "Non-recursive mutex type. Use ``MutexLock lock(mutex)`` to lock it."
+msgstr ""
+"Нерекурсивний тип м'ютексу. Використовуйте ``MutexLock lock(mutex)`` для "
+"його блокування."
+
+msgid "|rw_lock|"
+msgstr "|rw_lock|"
+
+msgid "``std::shared_timed_mutex``"
+msgstr "``std::shared_timed_mutex``"
+
+msgid ""
+"Read-write aware mutex type. Use ``RWLockRead lock(mutex)`` or ``RWLockWrite "
+"lock(mutex)`` to lock it."
+msgstr ""
+"Тип м'ютексу з підтримкою читання та запису. Використовуйте ``RWLockRead "
+"lock(mutex)`` або ``RWLockWrite lock(mutex)`` для його блокування."
+
+msgid "|safe_binary_mutex|"
+msgstr "|safe_binary_mutex|"
+
+msgid ""
+"Recursive mutex type that can be used with ``ConditionVariable``. Use "
+"``MutexLock lock(mutex)`` to lock it."
+msgstr ""
+"Рекурсивний тип м'ютексу, який можна використовувати з "
+"``ConditionVariable``. Використовуйте ``MutexLock lock(mutex)`` для його "
+"блокування."
+
+msgid "|condition_variable|"
+msgstr "|condition_variable|"
+
+msgid "``std::condition_variable``"
+msgstr "``std::condition_variable``"
+
+msgid "Condition variable type, used with ``SafeBinaryMutex``."
+msgstr "Тип умовної змінної, що використовується з ``SafeBinaryMutex``."
+
+msgid "|semaphore|"
+msgstr "|semaphore|"
+
+msgid "``std::counting_semaphore``"
+msgstr "``std::counting_semaphore``"
+
+msgid "Counting semaphore type."
+msgstr "Тип семафора підрахунку."
+
+msgid "|safe_numeric|"
+msgstr "|safe_numeric|"
+
+msgid "``std::atomic``"
+msgstr "``std::atomic``"
+
+msgid "Templated atomic type, designed for numbers."
+msgstr "Шаблонний атомарний тип, призначений для чисел."
+
+msgid "|safe_flag|"
+msgstr "|safe_flag|"
+
+msgid "``std::atomic_bool``"
+msgstr "``std::atomic_bool``"
+
+msgid "Bool atomic type."
+msgstr "Атомарний тип Bool."
+
+msgid "|safe_ref_count|"
+msgstr "|safe_ref_count|"
+
+msgid ""
+"Atomic type designed for reference counting. Will refuse to increment the "
+"reference count if it is 0."
+msgstr ""
+"Атомарний тип, призначений для підрахунку посилань. Відмовиться збільшувати "
+"лічильник посилань, якщо він дорівнює 0."
 
 msgid "Math types"
 msgstr "Типи математики"

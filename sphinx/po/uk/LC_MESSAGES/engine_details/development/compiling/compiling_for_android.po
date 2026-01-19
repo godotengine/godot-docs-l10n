@@ -57,6 +57,16 @@ msgid "`SCons 4.0+ <https://scons.org/pages/download.html>`_ build system."
 msgstr ""
 "`SCons 4.0+ <https://scons.org/pages/download.html>`_ будувати систему."
 
+msgid "Android SDK"
+msgstr "Android SDK"
+
+msgid ""
+"To install the Android SDK, follow the steps here <https://"
+"docs.godotengine.org/en/stable/tutorials/export/exporting_for_android.html>_."
+msgstr ""
+"Щоб встановити Android SDK, виконайте наведені тут кроки <https://"
+"docs.godotengine.org/en/stable/tutorials/export/exporting_for_android.html>_."
+
 msgid ""
 "On Linux, **do not use an Android SDK provided by your distribution's "
 "repositories** as it will often be outdated."
@@ -76,6 +86,13 @@ msgstr "Gradle (буде завантажено та встановлено ав
 
 msgid "JDK 17 (either OpenJDK or Oracle JDK)."
 msgstr "JDK 17 (або OpenJDK, або Oracle JDK)."
+
+msgid ""
+"You can download a build from `Adoptium <https://adoptium.net/temurin/"
+"releases?variant=openjdk17&version=17&os=any&arch=any>`_."
+msgstr ""
+"Ви можете завантажити збірку з `Adoptium <https://adoptium.net/temurin/"
+"releases?variant=openjdk17&version=17&os=any&arch=any>`_."
 
 msgid ""
 "To get the Godot source code for compiling, see :ref:`doc_getting_source`."
@@ -365,6 +382,15 @@ msgid ""
 msgstr ""
 "Ви можете додати параметри ``debug_symbols=yes``, щоб включити символи "
 "налагодження у згенеровану збірку."
+
+msgid ""
+"Note that you can include ``separate_debug_symbols=yes`` to the *last* "
+"architecture you're building, to generate the debug symbols in a separate "
+"``*-native-debug-symbols.zip`` file."
+msgstr ""
+"Зверніть увагу, що ви можете додати ``separate_debug_symbols=yes`` до "
+"*останньої* архітектури, яку ви будуєте, щоб згенерувати символи "
+"налагодження в окремому файлі ``*-native-debug-symbols.zip``."
 
 msgid ""
 "You can skip certain architectures depending on your target device to speed "

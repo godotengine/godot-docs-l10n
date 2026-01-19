@@ -6,7 +6,7 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: zh_Hant\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -332,17 +332,11 @@ msgstr "**u**"
 msgid "Makes ``{text}`` underlined."
 msgstr "讓 ``{text}`` 顯示底線。"
 
-msgid "``[u]{text}[/u]``"
-msgstr "``[u]{text}[/u]``"
-
 msgid "**s**"
 msgstr "**s**"
 
 msgid "Makes ``{text}`` strikethrough."
 msgstr "讓 ``{text}`` 顯示刪除線。"
-
-msgid "``[s]{text}[/s]``"
-msgstr "``[s]{text}[/s]``"
 
 msgid "**code**"
 msgstr "**code**"
@@ -471,13 +465,6 @@ msgstr "``[indent]{text}[/indent]``"
 
 msgid "**url**"
 msgstr "**url**"
-
-msgid ""
-"Creates a hyperlink (underlined and clickable text). Can contain optional "
-"``{text}`` or display ``{link}`` as is."
-msgstr ""
-"建立超連結（帶底線且可點擊的文字）。可以自訂顯示 ``{text}`` 或直接顯示 "
-"``{link}``。"
 
 msgid ""
 "**Must be handled with the \"meta_clicked\" signal to have an effect,** "
@@ -1111,6 +1098,9 @@ msgstr "``left`` (或 ``l``), ``center`` (或 ``c``), ``right`` (或 ``r``)"
 msgid "Horizontal alignment."
 msgstr "水平對齊。"
 
+msgid "**tooltip**"
+msgstr "**tooltip**"
+
 msgid "Image options"
 msgstr "圖片選項"
 
@@ -1158,9 +1148,6 @@ msgid ""
 msgstr ""
 "若設為 ``true``，且圖片小於指定的 ``width`` 和 ``height``，則會加上邊距填滿，"
 "而不是放大圖片。"
-
-msgid "**tooltip**"
-msgstr "**tooltip**"
 
 msgid "String"
 msgstr "字串"
@@ -1364,6 +1351,9 @@ msgstr ""
 
 msgid "Cell options"
 msgstr "儲存格選項"
+
+msgid "``true``"
+msgstr "``true``"
 
 msgid "**expand**"
 msgstr "**expand**"

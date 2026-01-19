@@ -241,8 +241,8 @@ msgstr ""
 "En la mayoría de los casos, puedes usar BBCode directamente tal cual, ya que "
 "formatear texto rara vez es una tarea compleja. Sin embargo, con "
 "RichTextLabels particularmente grandes (como los registros de consola que "
-"abarcan miles de líneas), podrías experimentar interrupciones durante el "
-"juego al actualizar el texto de RichTextLabels."
+"abarcan miles de líneas), podrías experimentar trastabilleo durante el juego "
+"al actualizar el texto de RichTextLabels."
 
 msgid "There are several ways to alleviate this:"
 msgstr "Hay varias maneras de aliviar esto:"
@@ -255,6 +255,17 @@ msgstr ""
 "Utiliza la función ``append_text()`` en lugar de añadir a la propiedad "
 "``text``. Esta función solo analizará el BBCode del texto añadido, en lugar "
 "de analizarlo desde toda la propiedad ``text``."
+
+msgid ""
+"Enable the **Threading > Threaded** property in RichTextLabel. This won't "
+"speed up processing, but it will prevent the main thread from blocking, "
+"which avoids stuttering during gameplay. Only enable threading if it's "
+"actually needed in your project, as threading has some overhead."
+msgstr ""
+"Activa la propiedad **Hilos > Hilado** en RichTextLabel. Esto no acelerará "
+"el procesamiento, pero prevendrá que el hilo principal se bloquee, lo que "
+"evita trastabilleos durante el juego. Sólo activa el hilado si en realidad "
+"es necesario en tu proyecto, ya que el hilado tiene un cierto costo."
 
 msgid "Reference"
 msgstr "Referencia"
@@ -280,12 +291,6 @@ msgstr "``[b]{text}[/b]``"
 
 msgid "``[i]{text}[/i]``"
 msgstr "``[i]{text}[/i]``"
-
-msgid "``[u]{text}[/u]``"
-msgstr "``[u]{text}[/u]``"
-
-msgid "``[s]{text}[/s]``"
-msgstr "``[s]{text}[/s]``"
 
 msgid "**code**"
 msgstr "**codigo**"
@@ -402,6 +407,9 @@ msgstr "Colores con nombre"
 
 msgid "Hexadecimal color codes"
 msgstr "Códigos Hexadecimales de color"
+
+msgid "``true``"
+msgstr "``true``"
 
 msgid "1"
 msgstr "1"

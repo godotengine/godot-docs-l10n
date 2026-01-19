@@ -33,51 +33,6 @@ msgstr ""
 msgid "Browser support"
 msgstr "Soporte del navegador"
 
-msgid ""
-"The Web editor requires support for WebAssembly's SharedArrayBuffer. This is "
-"in turn required to support threading in the browser. The following desktop "
-"browsers support WebAssembly threading and can therefore run the web editor:"
-msgstr ""
-"El editor web requiere soporte para SharedArrayBuffer de WebAssembly. Esto, "
-"a su vez, es necesario para admitir subprocesos en el navegador. Los "
-"siguientes navegadores de escritorio admiten subprocesos de WebAssembly y, "
-"por lo tanto, pueden ejecutar el editor web:"
-
-msgid "Chrome 68 or later"
-msgstr "Chrome 68 o versión posterior"
-
-msgid "Firefox 79 or later"
-msgstr "Firefox 79 o posterior"
-
-msgid "Edge 79 or later"
-msgstr "Edge 79 o posterior"
-
-msgid ""
-"Opera and Safari are not supported yet. Safari may work in the future once "
-"proper threading support is added."
-msgstr ""
-"Opera y Safari todavía no son compatibles. Puedes que Safari será compatible "
-"en el futuro cuando admita ejecución en multiples hilos."
-
-msgid "**Mobile browsers are currently not supported.**"
-msgstr "**Los navigadores de móvil no son compatibles.**"
-
-msgid ""
-"The web editor only supports the Compatibility rendering method, as there is "
-"no stable way to run Vulkan applications on the web yet."
-msgstr ""
-"El editor web sólo soporta el modo de renderizado Compatibility, ya que por "
-"el momento no hay un modo estable de ejecutar aplicaciones Vulkan en web."
-
-msgid ""
-"If you use Linux, due to `poor Firefox WebGL performance <https://"
-"bugzilla.mozilla.org/show_bug.cgi?id=1010527>`__, it's recommended to use a "
-"Chromium-based browser instead of Firefox."
-msgstr ""
-"Si usas Linuz, se recomienda usar un navegador basado en Chromium, a causa "
-"de `rendimiento pobre de Firefox WebGL <https://bugzilla.mozilla.org/"
-"show_bug.cgi?id=1010527>`__."
-
 msgid "Limitations"
 msgstr "Limitaciones"
 

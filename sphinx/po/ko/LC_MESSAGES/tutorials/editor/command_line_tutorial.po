@@ -166,8 +166,22 @@ msgstr "|release| 원격 파일시스템에 대한 암호."
 msgid "``--audio-driver <driver>``"
 msgstr "``--audio-driver <드라이버>``"
 
+msgid ""
+"|release| Audio driver. Use ``--help`` first to display the list of "
+"available drivers."
+msgstr ""
+"|release| 오디오 드라이버. 사용 가능한 드라이버의 목록을 표시하려면 먼저 ``--"
+"help``\\ 를 입력하세요."
+
 msgid "``--display-driver <driver>``"
 msgstr "``--display-driver <드라이버>``"
+
+msgid ""
+"|release| Display driver (and rendering driver). Use ``--help`` first to "
+"display the list of available drivers."
+msgstr ""
+"|release| 비디오 드라이버. 사용 가능한 드라이버의 목록을 표시하려면 먼저 ``--"
+"help``\\ 를 입력하세요."
 
 msgid "``--audio-output-latency`` <ms>"
 msgstr "``--audio-output-latency`` <ms>"
@@ -177,6 +191,13 @@ msgstr "``--rendering-method <렌더러>``"
 
 msgid "``--rendering-driver <driver>``"
 msgstr "``--rendering-driver <드라이버>``"
+
+msgid ""
+"|release| Rendering driver (depends on display driver). Use ``--help`` first "
+"to display the list of available drivers."
+msgstr ""
+"|release| 비디오 드라이버. 사용 가능한 드라이버의 목록을 표시하려면 먼저 ``--"
+"help``\\ 를 입력하세요."
 
 msgid "``--gpu-index <device_index>``"
 msgstr "``--gpu-index <기기_인덱스>``"
@@ -542,6 +563,15 @@ msgstr "``--export-debug <프리셋> <경로>``"
 msgid "``--export-pack <preset> <path>``"
 msgstr "``--export-pack <프리셋> <경로>``"
 
+msgid ""
+"|editor| Like ``--export-release``, but only export the game pack for the "
+"given preset. The ``<path>`` extension determines whether it will be in PCK "
+"or ZIP format. Implies ``--import``."
+msgstr ""
+"|editor| ``--export-release``\\ 와 비슷하지만, 주어진 프리셋에 대한 게임 팩"
+"만 내보냅니다. ``<경로>`` 확장자는 PCK 또는 ZIP 형식인지 여부를 결정합니다. "
+"``--import``\\ 를 암시합니다."
+
 msgid "``--export-patch <preset> <path>``"
 msgstr "``--export-patch <프리셋> <경로>``"
 
@@ -556,6 +586,13 @@ msgstr "``--convert-3to4 [<최대_파일_kb>] [<최대_줄_크기>]``"
 
 msgid "``--doctool [<path>]``"
 msgstr "``--doctool [<경로>]``"
+
+msgid ""
+"|editor| Dump the engine API reference to the given ``<path>`` in XML "
+"format, merging if existing files are found."
+msgstr ""
+"|editor| 엔진 API 참조를 지정된 ``<경로>``\\ 에 엔진 API 참조를 XML 형식으로 "
+"덤프하고, 기존 파일이 발견되면 병합합니다."
 
 msgid "``--no-docbase``"
 msgstr "``--no-docbase``"

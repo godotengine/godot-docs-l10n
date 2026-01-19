@@ -86,6 +86,9 @@ msgstr "Результат - просто альбедо. У матеріалі 
 msgid "**light_only**"
 msgstr "**Light_only**"
 
+msgid "Only draw in the light pass."
+msgstr "Малюйте лише світловий прохід."
+
 msgid "**skip_vertex_transform**"
 msgstr "**Skip_vertex_transform**"
 
@@ -139,14 +142,53 @@ msgstr "Вбудований"
 msgid "in float **TIME**"
 msgstr "In float **TIME**"
 
+msgid ""
+"Global time since the engine has started, in seconds. It repeats after every "
+"``3,600`` seconds (which can be changed with "
+"the :ref:`rollover<class_ProjectSettings_property_rendering/limits/time/"
+"time_rollover_secs>` setting). It's affected "
+"by :ref:`time_scale<class_Engine_property_time_scale>` but not by pausing. "
+"If you need a ``TIME`` variable that is not affected by time scale, add your "
+"own :ref:`global shader uniform<doc_shading_language_global_uniforms>` and "
+"update it each frame."
+msgstr ""
+"Глобальний час з моменту запуску двигуна, у секундах. Повторюється кожні "
+"``3600`` секунд (що можна змінити за допомогою "
+"налаштування :ref:`rollover<class_ProjectSettings_property_rendering/limits/"
+"time/time_rollover_secs>`). На нього "
+"впливає :ref:`time_scale<class_Engine_property_time_scale>`, але не пауза. "
+"Якщо вам потрібна змінна ``TIME``, на яку не впливає шкала часу, додайте "
+"власну :ref:`global shader uniform<doc_shading_language_global_uniforms>` та "
+"оновлюйте її кожного кадру."
+
 msgid "in float **PI**"
 msgstr "у float **PI**"
+
+msgid ""
+"A ``PI`` constant (``3.141592``). The ratio of a circle's circumference to "
+"its diameter and the number of radians in a half turn."
+msgstr ""
+"Константа типу ``PI`` (``3,141592``). Відношення довжини кола до його "
+"діаметра та кількість радіан за півоберту."
 
 msgid "in float **TAU**"
 msgstr "у float **TAU**"
 
+msgid ""
+"A ``TAU`` constant (``6.283185``). Equivalent to ``PI * 2`` and the number "
+"of radians in a full turn."
+msgstr ""
+"Константа типу ``TAU`` (``6.283185``). Еквівалентна ``PI * 2`` та кількості "
+"радіан у повному оберті."
+
 msgid "in float **E**"
 msgstr "у float **E**"
+
+msgid ""
+"An ``E`` constant (``2.718281``). Euler's number, the base of the natural "
+"logarithm."
+msgstr ""
+"Константа ``E`` (``2.718281``). Число Ейлера, основа натурального логарифма."
 
 msgid "Vertex built-ins"
 msgstr "Вбудовані вершини"
@@ -205,8 +247,24 @@ msgstr ""
 msgid "in mat4 **CANVAS_MATRIX**"
 msgstr "In mat4 **CANVAS_MATRIX**"
 
+msgid ""
+"World space to canvas space transform. In canvas space the origin is the "
+"upper-left corner of the screen and coordinates range from ``(0.0, 0.0)`` to "
+"viewport size."
+msgstr ""
+"Перетворення світового простору на простір полотна. У просторі полотна "
+"початком координат є верхній лівий кут екрана, а координати варіюються від "
+"``(0.0, 0.0)`` до розміру області перегляду."
+
 msgid "in mat4 **SCREEN_MATRIX**"
 msgstr "In mat4 **SCREEN_MATRIX**"
+
+msgid ""
+"Canvas space to clip space transform. In clip space coordinates range from "
+"``(-1.0, -1.0)`` to ``(1.0, 1.0).``"
+msgstr ""
+"Трансформація простору полотна в простір кліпу. Координати в просторі кліпу "
+"варіюються від ``(-1.0, -1.0)`` до ``(1.0, 1.0).``"
 
 msgid "in int  **INSTANCE_ID**"
 msgstr "In int **INSTANCE_ID**"
@@ -224,10 +282,19 @@ msgid "in bool **AT_LIGHT_PASS**"
 msgstr "In bool **AT_LIGHT_PASS**"
 
 msgid "Always ``false``."
-msgstr "Завжди``false``."
+msgstr "Завжди ``false``."
 
 msgid "in vec2 **TEXTURE_PIXEL_SIZE**"
 msgstr "In vec2 **TEXTURE_PIXEL_SIZE**"
+
+msgid ""
+"Normalized pixel size of the default 2D texture. For a Sprite2D with a "
+"texture of size 64x32px, **TEXTURE_PIXEL_SIZE** = ``vec2(1.0/64.0, "
+"1.0/32.0)``"
+msgstr ""
+"Нормалізований розмір пікселя стандартної 2D-текстури. Для Sprite2D з "
+"текстурою розміром 64x32px, **TEXTURE_PIXEL_SIZE** = ``vec2(1.0/64.0, "
+"1.0/32.0)``"
 
 msgid "inout vec2 **VERTEX**"
 msgstr "Inout vec2 **VERTEX**"
@@ -249,6 +316,17 @@ msgstr "Нормалізовані координати текстури. Діа
 
 msgid "inout vec4 **COLOR**"
 msgstr "Inout vec4 **COLOR**"
+
+msgid ""
+"Color from vertex primitive multiplied by the "
+"CanvasItem's :ref:`modulate<class_CanvasItem_property_modulate>` multiplied "
+"by "
+"CanvasItem's :ref:`self_modulate<class_CanvasItem_property_self_modulate>`."
+msgstr ""
+"Колір з примітиву вершини, помножений "
+"на :ref:`modulate<class_CanvasItem_property_modulate>` об'єкта CanvasItem, "
+"помножений на :ref:`self_modulate<class_CanvasItem_property_self_modulate>` "
+"об'єкта CanvasItem."
 
 msgid "inout float **POINT_SIZE**"
 msgstr "Inout float **POINT_SIZE**"
@@ -359,6 +437,9 @@ msgstr ""
 msgid "in vec2 **SCREEN_PIXEL_SIZE**"
 msgstr "In vec2 **SCREEN_PIXEL_SIZE**"
 
+msgid "Size of individual pixels. Equal to the inverse of resolution."
+msgstr "Розмір окремих пікселів. Дорівнює оберненій роздільній здатності."
+
 msgid "in vec4 **REGION_RECT**"
 msgstr "in vec4 **REGION_RECT**"
 
@@ -381,6 +462,13 @@ msgstr "Sampler2D **TEXTURE**"
 msgid "Default 2D texture."
 msgstr "Двовимірна текстура за замовчуванням."
 
+msgid ""
+"Normalized pixel size of the default 2D texture. For a Sprite2D with a "
+"texture of size 64x32px, ``TEXTURE_PIXEL_SIZE`` = ``vec2(1/64, 1/32)``"
+msgstr ""
+"Нормалізований розмір пікселів стандартної 2D-текстури. Для Sprite2D з "
+"текстурою розміром 64x32px., ``TEXTURE_PIXEL_SIZE`` = ``vec2(1/64, 1/32)``"
+
 msgid "sampler2D **SPECULAR_SHININESS_TEXTURE**"
 msgstr "Sampler2D **SPECULAR_SHININESS_TEXTURE**"
 
@@ -396,8 +484,20 @@ msgstr "Колір дзеркального блиску, взятий із те
 msgid "in vec2 **UV**"
 msgstr "In vec2 **UV**"
 
+msgid ""
+"UV from the ``vertex()`` function. For a Sprite2D with region enabled, this "
+"will sample the entire texture. Use ``REGION_RECT`` instead to sample only "
+"the region defined in the Sprite2D's properties."
+msgstr ""
+"UV з функції ``vertex()``. Для Sprite2D з увімкненою областю це призведе до "
+"вибірки всієї текстури. Використовуйте ``REGION_RECT`` для вибірки лише "
+"області, визначеної у властивостях Sprite2D."
+
 msgid "in vec2 **SCREEN_UV**"
 msgstr "In vec2 **SCREEN_UV**"
+
+msgid "Screen UV coordinate for the current pixel."
+msgstr "UV-координата екрану для поточного пікселя."
 
 msgid "sampler2D **SCREEN_TEXTURE**"
 msgstr "Sampler2D **SCREEN_TEXTURE**"
@@ -517,6 +617,9 @@ msgid ""
 "``fragment()`` function."
 msgstr "UV від функції ``vertex()``, еквівалентне UV у функції ``fragment()``."
 
+msgid "Current texture in use for the CanvasItem."
+msgstr "Поточна текстура, що використовується для CanvasItem."
+
 msgid ""
 "Normalized pixel size of ``TEXTURE``. For a Sprite2D with a ``TEXTURE`` of "
 "size ``64x32`` pixels, **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
@@ -596,6 +699,19 @@ msgstr "Помножте тіні, що відкидаються в цій то�
 
 msgid "SDF functions"
 msgstr "Функції SDF"
+
+msgid ""
+"There are a few additional functions implemented to sample an automatically "
+"generated Signed Distance Field texture. These functions are available in "
+"the ``fragment()`` and ``light()`` functions of CanvasItem shaders. Custom "
+"functions may also use them as long as they are called from supported "
+"functions."
+msgstr ""
+"Реалізовано кілька додаткових функцій для семплування автоматично "
+"згенерованої текстури Signed Distance Field. Ці функції доступні у функціях "
+"``fragment()`` та ``light()`` шейдерів CanvasItem. Користувацькі функції "
+"також можуть використовувати їх, якщо вони викликаються з підтримуваних "
+"функцій."
 
 msgid ""
 "The signed distance field is generated from :ref:`class_LightOccluder2D` "

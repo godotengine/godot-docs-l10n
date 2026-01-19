@@ -111,6 +111,13 @@ msgstr "|rb_set|"
 msgid "``std::set``"
 msgstr "``std::set``"
 
+msgid ""
+"Uses a `red-black tree <https://en.wikipedia.org/wiki/Red-black_tree>`__ for "
+"faster access."
+msgstr ""
+"Utilise un arbre rouge-noir <https://en.wikipedia.org/wiki/Red-"
+"black_tree>`__ pour un accès plus rapide."
+
 msgid "|v_set|"
 msgstr "|v_set|"
 
@@ -126,6 +133,16 @@ msgstr "|rb_map|"
 msgid "``std::map``"
 msgstr "``std::map``"
 
+msgid ""
+"Map type that uses a `red-black tree <https://en.wikipedia.org/wiki/Red-"
+"black-tree>`__ to find keys. The performance benefits of ``RBMap`` aren't "
+"established, so prefer using other types."
+msgstr ""
+"Type de carte qui utilise une `arborescence rouge-black <https://"
+"en.wikipedia.org/wiki/Red-black-tree>`_ pour trouver des clés. Les avantages "
+"de performance de ``RBMap`` ne sont pas établis, donc préférez utiliser "
+"d'autres types."
+
 msgid "|dictionary| 📜"
 msgstr "|dictionary| 📜"
 
@@ -137,6 +154,16 @@ msgstr "|pair|"
 
 msgid "``std::pair``"
 msgstr "``std::pair``"
+
+msgid ""
+"`GH-100509 <https://github.com/godotengine/godot/issues/100509>`__ tracks "
+"this decision."
+msgstr ""
+"`GH-100509 <https://github.com/godotengine/godot/issues/100509>`__ suit "
+"cette décision."
+
+msgid "Counting semaphore type."
+msgstr "Comptant le type sémaphore."
 
 msgid "Math types"
 msgstr "Types mathématiques"
@@ -171,6 +198,17 @@ msgstr ""
 
 msgid "RID"
 msgstr "RID"
+
+msgid ""
+"RIDs are *Resource IDs*. Servers use these to reference data stored in them. "
+"RIDs are opaque, meaning that the data they reference can't be accessed "
+"directly. RIDs are unique, even for different types of referenced data:"
+msgstr ""
+"Les RIDs sont des *IDentifiants de Ressources*. Les serveurs les utilisent "
+"pour référencer les données qu'ils stockent. Les RID sont opaques, ce qui "
+"signifie que les données qu'ils référencent ne sont pas directement "
+"accessibles. Les RIDs sont uniques, même pour des types de données "
+"référencées différents :"
 
 msgid ""
 "`core/templates/rid.h <https://github.com/godotengine/godot/blob/master/core/"

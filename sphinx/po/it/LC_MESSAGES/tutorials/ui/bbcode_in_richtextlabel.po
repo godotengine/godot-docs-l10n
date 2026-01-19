@@ -372,17 +372,11 @@ msgstr "**u**"
 msgid "Makes ``{text}`` underlined."
 msgstr "Rende ``{testo}`` sottolineato."
 
-msgid "``[u]{text}[/u]``"
-msgstr "``[u]{testo}[/u]``"
-
 msgid "**s**"
 msgstr "**s**"
 
 msgid "Makes ``{text}`` strikethrough."
 msgstr "Rende ``{testo}`` barrato."
-
-msgid "``[s]{text}[/s]``"
-msgstr "``[s]{testo}[/s]``"
 
 msgid "**code**"
 msgstr "**code**"
@@ -519,13 +513,6 @@ msgstr "``[indent]{testo}[/indent]``"
 
 msgid "**url**"
 msgstr "**url**"
-
-msgid ""
-"Creates a hyperlink (underlined and clickable text). Can contain optional "
-"``{text}`` or display ``{link}`` as is."
-msgstr ""
-"Crea un collegamento ipertestuale (testo sottolineato e cliccabile). Può "
-"contenere ``{testo}`` facoltativo o visualizzare ``{link}`` così com'è."
 
 msgid ""
 "**Must be handled with the \"meta_clicked\" signal to have an effect,** "
@@ -1228,6 +1215,9 @@ msgstr "``left`` (o ``l``), ``center`` (o ``c``), ``right`` (o ``r``)"
 msgid "Horizontal alignment."
 msgstr "Allineamento orizzontale."
 
+msgid "**tooltip**"
+msgstr "**tooltip**"
+
 msgid "Image options"
 msgstr "Opzioni di immagine"
 
@@ -1280,9 +1270,6 @@ msgstr ""
 "Se impostato su ``true`` e l'immagine è più piccola delle dimensioni "
 "specificate da ``width`` e ``height``, viene aggiunta una spaziatura "
 "all'immagine per adattarla alle dimensioni anziché ridimensionarla."
-
-msgid "**tooltip**"
-msgstr "**tooltip**"
 
 msgid "String"
 msgstr "Stringa"
@@ -1509,6 +1496,9 @@ msgstr ""
 
 msgid "Cell options"
 msgstr "Opzioni di cella"
+
+msgid "``true``"
+msgstr "``true``"
 
 msgid "**expand**"
 msgstr "**expand**"

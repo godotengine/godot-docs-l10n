@@ -44,16 +44,16 @@ msgid "``_enter_tree()``: ``NOTIFICATION_ENTER_TREE``"
 msgstr "``_enter_tree()``: ``NOTIFICATION_ENTER_TREE``"
 
 msgid "``_exit_tree()``: ``NOTIFICATION_EXIT_TREE``"
-msgstr "``_exit_tree()`` : ДЕРЕВО_ВИХОДУ_ПОВІДОМЛЕННЯ"
+msgstr "``_exit_tree()``: ``NOTIFICATION_EXIT_TREE``"
 
 msgid "``_process(delta)``: ``NOTIFICATION_PROCESS``"
-msgstr "``_process(delta)`` : ПРОЦЕС_ПОВІДОМЛЕННЯ"
+msgstr "``_process(delta)``: ``NOTIFICATION_PROCESS``"
 
 msgid "``_physics_process(delta)``: ``NOTIFICATION_PHYSICS_PROCESS``"
 msgstr "``_physics_process(delta)``: ``NOTIFICATION_PHYSICS_PROCESS``"
 
 msgid "``_draw()``: ``NOTIFICATION_DRAW``"
-msgstr "``_draw()`` : ПОВІДОМЛЕННЯ"
+msgstr "``_draw()``: ``NOTIFICATION_DRAW``"
 
 msgid ""
 "What users might *not* realize is that notifications exist for types other "
@@ -117,8 +117,8 @@ msgid ""
 "Methods in the documentation labeled as \"virtual\" are also intended to be "
 "overridden by scripts."
 msgstr ""
-"Методи в документації, позначені як \"virtual\" *(віртуальні)*, також "
-"призначені для перевизначення у скриптах."
+"Методи в документації, позначені як \"віртуальні\", також призначені для "
+"перевизначення скриптами."
 
 msgid ""
 "A classic example is the :ref:`_init <class_Object_private_method__init>` "

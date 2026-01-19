@@ -366,17 +366,11 @@ msgstr "** உ **"
 msgid "Makes ``{text}`` underlined."
 msgstr "`` {text} `` அடிக்கோடிட்டுக் காட்டுகிறது."
 
-msgid "``[u]{text}[/u]``"
-msgstr "`` [u] {text} [/u] ``"
-
 msgid "**s**"
 msgstr "** கள் **"
 
 msgid "Makes ``{text}`` strikethrough."
 msgstr "`` {text} `` ச்ட்ரைகெத்ரூவை உருவாக்குகிறது."
-
-msgid "``[s]{text}[/s]``"
-msgstr "`` [s] {text} [/s] ``"
 
 msgid "**code**"
 msgstr "** குறியீடு **"
@@ -506,13 +500,6 @@ msgstr "`` [இன்டென்ட்] {text} [/இன்டென்ட்] `
 
 msgid "**url**"
 msgstr "** முகவரி **"
-
-msgid ""
-"Creates a hyperlink (underlined and clickable text). Can contain optional "
-"``{text}`` or display ``{link}`` as is."
-msgstr ""
-"ஒரு ஐப்பர்லிங்கை உருவாக்கவும் (அடிக்கோடிட்டு மற்றும் சொடுக்கு செய்யக்கூடிய உரை). "
-"விருப்பமான `` {text} `` அல்லது `` {link} `` ஆகியவற்றைக் காண்பிக்கலாம்."
 
 msgid ""
 "**Must be handled with the \"meta_clicked\" signal to have an effect,** "
@@ -1182,6 +1169,9 @@ msgstr "`` இடது``."
 msgid "Horizontal alignment."
 msgstr "கிடைமட்ட சீரமைப்பு."
 
+msgid "**tooltip**"
+msgstr "** உதவிக்குறிப்பு **"
+
 msgid "Image options"
 msgstr "பட விருப்பங்கள்"
 
@@ -1232,9 +1222,6 @@ msgstr ""
 "`` உண்மை`` என அமைக்கப்பட்டால், படம் `` அகலம்`` மற்றும் `` உயரம்`` ஆகியவற்றால் "
 "குறிப்பிடப்பட்ட அளவை விட சிறியதாக இருந்தால், உயர்த்துவதற்கு பதிலாக அளவைப் பொருத்த பட "
 "திணிப்பு சேர்க்கப்படுகிறது."
-
-msgid "**tooltip**"
-msgstr "** உதவிக்குறிப்பு **"
 
 msgid "String"
 msgstr "சரம்"
@@ -1456,6 +1443,9 @@ msgstr ""
 
 msgid "Cell options"
 msgstr "செல் விருப்பங்கள்"
+
+msgid "``true``"
+msgstr "`` உண்மை``"
 
 msgid "**expand**"
 msgstr "** விரிவாக்கு **"

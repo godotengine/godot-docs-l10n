@@ -62,7 +62,7 @@ msgid ""
 "areas *may* happen in minor versions, but the vast majority of projects "
 "should not be affected or require significant porting work."
 msgstr ""
-"\"Малу\" версію збільшено для випусків функцій, які не порушують сумісність "
+"``minor`` версію збільшено для випусків функцій, які не порушують сумісність "
 "у значній мірі. Незначні порушення сумісності у дуже специфічних областях "
 "*можуть* траплятися у мінорних версіях, але на переважну більшість проектів "
 "це не повинно впливати або вимагати значних робіт з перенесення."
@@ -167,10 +167,16 @@ msgid "**Version**"
 msgstr "**Версія**"
 
 msgid "**Release date**"
-msgstr "** Дата виходу **"
+msgstr "**Дата виходу**"
 
 msgid "**Support level**"
-msgstr "** Рівень підтримки **"
+msgstr "**Рівень підтримки**"
+
+msgid "Godot 4.6 (`master`)"
+msgstr "Godot 4.6 (`master`)"
+
+msgid "Q1 2026 (estimate)"
+msgstr "Q1 2026 (еквіваленто)"
 
 msgid ""
 "|unstable| *Development.* Receives new features, usability and performance "
@@ -182,6 +188,12 @@ msgstr ""
 
 msgid "unstable"
 msgstr "нестабільний"
+
+msgid "Godot 4.5"
+msgstr "Godot 4.5"
+
+msgid "September 2025"
+msgstr "Вересень 2025 року"
 
 msgid ""
 "|supported| Receives fixes for bugs and security issues, as well as patches "
@@ -213,6 +225,9 @@ msgstr "Godot 4.3"
 msgid "August 2024"
 msgstr "Серпень 2024"
 
+msgid "|eol| No longer supported (last update: 4.3)."
+msgstr "|eol| Більше не підтримується (останнє оновлення: 4.3)."
+
 msgid "eol"
 msgstr "не підтримується"
 
@@ -221,6 +236,9 @@ msgstr "Godot 4.2"
 
 msgid "November 2023"
 msgstr "Листопад 2023"
+
+msgid "|eol| No longer supported (last update: 4.2.2)."
+msgstr "|eol| Більше не підтримується (останнє оновлення: 4.2.2)."
 
 msgid "Godot 4.1"
 msgstr "Godot 4.1"
@@ -265,6 +283,9 @@ msgstr "Godot 3.5"
 
 msgid "August 2022"
 msgstr "Серпень 2022"
+
+msgid "|eol| No longer supported (last update: 3.5.3)."
+msgstr "|eol| Більше не підтримується (останнє оновлення: 3.5.3)."
 
 msgid "Godot 3.4"
 msgstr "Godot 3.4"
@@ -446,7 +467,7 @@ msgstr ""
 "релізах, тому ризик регресії більший. Деякі виправлення, включені в мінорні "
 "випуски, також можуть змінювати очікувану поведінку класу, якщо це потрібно "
 "для виправлення деяких помилок. Особливо це стосується класів, позначених в "
-"документаціях, як експериментальні."
+"документаціях, як *експериментальні*."
 
 msgid ""
 "*Major* releases bring a lot of new functionality, but they also remove "
@@ -591,7 +612,7 @@ msgstr ""
 "Визнання застарілим методу, змінної-члена, або класу. Це робиться шляхом "
 "додавання позначки застарілості до посилання на клас, який буде показано в "
 "редакторі. Коли метод позначено як застарілий, його планується вилучити в "
-"наступному великому випуску."
+"наступному *великому* випуску."
 
 msgid "Changes that affect the default project theme's visuals."
 msgstr ""

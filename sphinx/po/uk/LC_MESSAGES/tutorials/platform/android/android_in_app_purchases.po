@@ -44,7 +44,10 @@ msgid "Initialize the plugin"
 msgstr "Ініціалізуйте плагін"
 
 msgid "To use the ``GodotGooglePlayBilling`` API:"
-msgstr "Щоб використовувати API GodotGooglePlayBilling:"
+msgstr "Щоб скористатися API ``GodotGooglePlayBilling``:"
+
+msgid "Access the ``BillingClient``."
+msgstr "Доступ до ``BillingClient``."
 
 msgid "Connect to its signals to receive billing results."
 msgstr ""
@@ -130,6 +133,18 @@ msgstr "Приклад використання ``query_purchases()``:"
 
 msgid "Purchase an item"
 msgstr "Придбайте товар"
+
+msgid ""
+"To launch the billing flow for an item: Use ``purchase()`` for in-app "
+"products, passing the product ID string. Use ``purchase_subscription()`` for "
+"subscriptions, passing the product ID and base plan ID. You may also "
+"optionally provide an offer ID."
+msgstr ""
+"Щоб запустити процес виставлення рахунків для товару: використовуйте "
+"``purchase()`` для продуктів у додатку, передаючи рядок ідентифікатора "
+"продукту. Використовуйте ``purchase_subscription()`` для підписок, передаючи "
+"ідентифікатор продукту та ідентифікатор базового плану. Ви також можете за "
+"бажанням вказати ідентифікатор пропозиції."
 
 msgid ""
 "For both ``purchase()`` and ``purchase_subscription()``, you can optionally "

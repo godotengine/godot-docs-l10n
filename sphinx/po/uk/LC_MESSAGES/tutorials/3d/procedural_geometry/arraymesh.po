@@ -257,7 +257,8 @@ msgid ""
 "mesh."
 msgstr ""
 "Після того, як ви заповнили свої масиви даних геометрією, ви можете створити "
-"меш, додавши кожен масив до ``surface_array`` *(масиву поверхні)*."
+"сітку, додавши кожен масив до ``surface_array``, а потім зафіксувавши його в "
+"сітці."
 
 msgid ""
 "In this example, we used ``Mesh.PRIMITIVE_TRIANGLES``, but you can use any "
@@ -268,6 +269,127 @@ msgstr ""
 
 msgid "Put together, the full code looks like:"
 msgstr "В сукупності повний код виглядає так:"
+
+msgid ""
+"The code that goes in the middle can be whatever you want. Below we will "
+"present some example code for generating shapes, starting with a rectangle."
+msgstr ""
+"Код, який розміщується посередині, може бути будь-яким. Нижче ми наведемо "
+"приклад коду для створення фігур, починаючи з прямокутника."
+
+msgid "Generating a rectangle"
+msgstr "Генерація прямокутника"
+
+msgid ""
+"Since we are using ``Mesh.PRIMITIVE_TRIANGLES`` to render, we will construct "
+"a rectangle with triangles."
+msgstr ""
+"Оскільки ми використовуємо ``Mesh.PRIMITIVE_TRIANGLES`` для рендерингу, ми "
+"побудуємо прямокутник з трикутниками."
+
+msgid ""
+"A rectangle is formed by two triangles sharing four vertices. For our "
+"example, we will create a rectangle with its top left point at ``(0, 0, 0)`` "
+"with a width and length of one as shown below:"
+msgstr ""
+"Прямокутник утворений двома трикутниками, що мають чотири спільні вершини. "
+"Для нашого прикладу ми створимо прямокутник з верхньою лівою точкою в ``(0, "
+"0, 0)``, шириною та довжиною, що дорівнюють одиниці, як показано нижче:"
+
+msgid "A rectangle made of two triangles sharing four vertices."
+msgstr ""
+"Прямокутник, складений з двох трикутників, що мають чотири спільні вершини."
+
+msgid ""
+"To draw this rectangle, define the coordinates of each vertex in the "
+"``verts`` array."
+msgstr ""
+"Щоб намалювати цей прямокутник, визначте координати кожної вершини в масиві "
+"``verts``."
+
+msgid ""
+"The ``uvs`` array helps describe where parts of a texture should go onto the "
+"mesh. The values range from 0 to 1. Depending on your texture, you may want "
+"to change these values."
+msgstr ""
+"Масив ``uvs`` допомагає описати, де частини текстури повинні розміщуватися "
+"на сітці. Значення варіюються від 0 до 1. Залежно від вашої текстури, ви "
+"можете захотіти змінити ці значення."
+
+msgid ""
+"The ``normals`` array is used to describe the direction the vertices face "
+"and is used in lighting calculations. For this example, we will default to "
+"the ``Vector3.UP`` direction."
+msgstr ""
+"Масив ``normals`` використовується для опису напрямку, куди спрямовані "
+"вершини, та використовується в розрахунках освітлення. У цьому прикладі ми "
+"за замовчуванням використовуватимемо напрямок ``Vector3.UP``."
+
+msgid ""
+"The ``indices`` array defines the order vertices are drawn. Godot renders in "
+"a *clockwise* direction, meaning that we must specify the vertices of a "
+"triangle we want to draw in clockwise order."
+msgstr ""
+"Масив ``indices`` визначає порядок, у якому малюються вершини. Godot "
+"відтворює зображення за *годинниковою стрілкою*, тобто ми повинні вказати "
+"вершини трикутника, які хочемо намалювати, за годинниковою стрілкою."
+
+msgid ""
+"For example, to draw the first triangle, we will want to draw the vertices "
+"``(0, 0, 0)``, ``(1, 0, 0)``, and ``(0, 0, 1)`` in that order. This is the "
+"same as drawing ``vert[0]``, ``vert[2]``, and ``vert[1]``, i.e., indices 0, "
+"2, and 1, in the ``verts`` array. These index values are what the "
+"``indices`` array defines."
+msgstr ""
+"Наприклад, щоб намалювати перший трикутник, нам потрібно намалювати вершини "
+"``(0, 0, 0)``, ``(1, 0, 0)`` та ``(0, 0, 1)`` у такому порядку. Це те саме, "
+"що й малювання ``vert[0]``, ``vert[2]`` та ``vert[1]``, тобто індексів 0, 2 "
+"та 1, у масиві ``verts``. Ці значення індексів визначає масив ``indices``."
+
+msgid "``verts[Index]``"
+msgstr "``verts[Index]``"
+
+msgid "``uvs[Index]``"
+msgstr "``uvs[Index]``"
+
+msgid "``normals[Index]``"
+msgstr "``normals[Index]``"
+
+msgid "(0, 0, 0)"
+msgstr "(0, 0, 0)"
+
+msgid "(0, 0)"
+msgstr "(0, 0)"
+
+msgid "Vector3.UP"
+msgstr "Vector3.UP"
+
+msgid "(0, 0, 1)"
+msgstr "(0, 0, 1)"
+
+msgid "(1, 0)"
+msgstr "(1, 0)"
+
+msgid "(1, 0, 0)"
+msgstr "(1, 0, 0)"
+
+msgid "(0, 1)"
+msgstr "(0, 1)"
+
+msgid "(1, 0, 1)"
+msgstr "(1, 0, 1)"
+
+msgid "(1, 1)"
+msgstr "(1, 1)"
+
+msgid "Put together, the rectangle generation code looks like:"
+msgstr "У сукупності код генерації прямокутника виглядає так:"
+
+msgid "For a more complex example, see the sphere generation section below."
+msgstr "Для більш складного прикладу дивіться розділ про генерацію сфер нижче."
+
+msgid "Generating a sphere"
+msgstr "Генерація сфери"
 
 msgid ""
 "Here is sample code for generating a sphere. Although the code is presented "

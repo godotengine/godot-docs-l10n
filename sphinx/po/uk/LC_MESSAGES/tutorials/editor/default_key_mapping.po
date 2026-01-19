@@ -69,6 +69,9 @@ msgstr "macOS"
 msgid "Editor setting"
 msgstr "Параметри редактора"
 
+msgid "Open 2D Workspace"
+msgstr "Відкрити 2D-робочий простір"
+
 msgid ":kbd:`Ctrl + F1`"
 msgstr ":kbd:`Ctrl + F1`"
 
@@ -77,6 +80,9 @@ msgstr ":kbd:`Cmd + Ctrl + 1`"
 
 msgid "``editor/editor_2d``"
 msgstr "``editor/editor_2d``"
+
+msgid "Open 3D Workspace"
+msgstr "Відкрити 3D-робочий простір"
 
 msgid ":kbd:`Ctrl + F2`"
 msgstr ":kbd:`Ctrl + F2`"
@@ -1219,17 +1225,41 @@ msgstr ":kbd:`Cmd + Shift + C`"
 msgid "``script_text_editor/duplicate_selection``"
 msgstr "``script_text_editor/duplicate_selection``"
 
+msgid "Select Down"
+msgstr "Виберіть вниз"
+
+msgid ":kbd:`Ctrl + Shift + Down Arrow`"
+msgstr ":kbd:`Ctrl + Shift + Down Arrow`"
+
 msgid ":kbd:`Shift + Opt + Down Arrow`"
 msgstr ":kbd:`Shift + Opt + Down Arrow`"
 
+msgid "``common/ui_text_caret_add_below``"
+msgstr "``common/ui_text_caret_add_below``"
+
+msgid "Select Up"
+msgstr "Виберіть вгору"
+
+msgid ":kbd:`Ctrl + Shift + Up Arrow`"
+msgstr ":kbd:`Ctrl + Shift + Up Arrow`"
+
 msgid ":kbd:`Shift + Opt + Up Arrow`"
 msgstr ":kbd:`Shift + Opt + Up Arrow`"
+
+msgid "``common/ui_text_caret_add_above``"
+msgstr "``common/ui_text_caret_add_above``"
+
+msgid "Select Next Occurrence"
+msgstr "Вибрати наступне виникнення"
 
 msgid ":kbd:`Ctrl + D`"
 msgstr ":kbd:`Ctrl + D`"
 
 msgid ":kbd:`Cmd + D`"
 msgstr ":kbd:`Cmd + D`"
+
+msgid "``common/ui_text_add_selection_for_next_occurrence``"
+msgstr "``common/ui_text_add_selection_for_next_occurrence``"
 
 msgid "Complete Symbol"
 msgstr "Завершити символ"
@@ -1365,9 +1395,6 @@ msgstr "``script_text_editor/goto_function``"
 
 msgid "Go to Line"
 msgstr "Перейти до рядка"
-
-msgid ":kbd:`Ctrl + L`"
-msgstr ":kbd:`Ctrl + L`"
 
 msgid ":kbd:`Cmd + L`"
 msgstr ":kbd:`Cmd + L`"
@@ -1711,6 +1738,9 @@ msgstr "``file_dialog/delete``"
 msgid "Focus Path"
 msgstr "Фокусувати шлях"
 
+msgid ":kbd:`Ctrl + L`"
+msgstr ":kbd:`Ctrl + L`"
+
 msgid "``file_dialog/focus_path``"
 msgstr "``file_dialog/focus_path``"
 
@@ -1883,7 +1913,7 @@ msgid ":kbd:`Esc`"
 msgstr ":kbd:`Esc`"
 
 msgid "``tiles_editor/cancel``"
-msgstr "bodies_editor/angel"
+msgstr "``tiles_editor/cancel``"
 
 msgid "Paint"
 msgstr "Фарба"
@@ -2055,6 +2085,15 @@ msgstr ":kbd:`8`"
 
 msgid "``tileset_editor/editmode_z_index``"
 msgstr "``tileset_editor/editmode_z_index``"
+
+msgid "Transform"
+msgstr "Перетворення"
+
+msgid "Selection"
+msgstr "Вибір"
+
+msgid "Fill"
+msgstr "Fill"
 
 msgid "Project manager"
 msgstr "Керівник проекту"
