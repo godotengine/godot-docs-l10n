@@ -219,13 +219,15 @@
 # Albert Sobral <albertsobral610@gmail.com>, 2025.
 # Hephaistos-Gaming <supermaxyotu@gmail.com>, 2025.
 # IDontPutRealNames <scriptoblox@gmail.com>, 2025.
+# clride <david.g.schilcher@gmail.com>, 2025.
+# Maximilian Wey <wey.maximilian@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2025-12-19 15:00+0100\n"
-"PO-Revision-Date: 2025-12-06 12:00+0000\n"
-"Last-Translator: IDontPutRealNames <scriptoblox@gmail.com>\n"
+"PO-Revision-Date: 2026-01-11 23:26+0000\n"
+"Last-Translator: Maximilian Wey <wey.maximilian@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/de/>\n"
 "Language: de\n"
@@ -233,7 +235,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -300,9 +302,8 @@ msgid "Class reference"
 msgstr "Klassenreferenz"
 
 #: ../../docs/index.rst:4
-#, fuzzy
 msgid "Godot Docs – *master* branch"
-msgstr "Godot-Dokumentation – *4.5*-Branch"
+msgstr "Godot Dokumentation – *master* Branch"
 
 #: ../../docs/index.rst:8
 msgid ""
@@ -5502,6 +5503,10 @@ msgid ""
 "to be used with its editor. We recommend you give it a try, as it will most "
 "likely save you time in the long term."
 msgstr ""
+"Falls Sie Interesse darin haben, ein Spiel mithilfe von Godot zu erstellen, "
+"behalten Sie im Kopf, dass Godot für die Nutzung mit seinem Editor entworfen "
+"ist. Wir raten Ihnen, diesen zu probieren, da er Ihnen wahrscheinlich auf "
+"lange Sicht Zeit sparen wird."
 
 #: ../../docs/about/faq.rst:491
 msgid ""
@@ -5511,6 +5516,12 @@ msgid ""
 "currently supported on Windows, macOS, and Linux. Support for Android and "
 "iOS is planned for a future release."
 msgstr ""
+"Für spezialisiertere Anwendungen kann es Sinn ergeben, Godot als eine "
+"Bibliothek zu verwenden. Seit Godot 4.6 gibt es **experimentelle** "
+"Unterstützung für die Nutzung von Godot als statische oder geteilte "
+"Bibliothek in der Form von LibGodot, welche zur Zeit auf Windows, macOS und "
+"Linux funktioniert. Unterstützung für Android und iOS ist für die Zukunft "
+"geplant."
 
 #: ../../docs/about/faq.rst:497
 msgid ""
@@ -5518,6 +5529,9 @@ msgid ""
 "libgodot_project GitHub repository <https://github.com/migeran/"
 "libgodot_project>`__."
 msgstr ""
+"Du kannst Beispiel-Anwendungen, welche Godot als eine Bibliothek benutzen "
+"als ein `migeran/libgodot_project Github  Repo 1<https://github.com/migeran/"
+"libgodot_project>`__ finden."
 
 #: ../../docs/about/faq.rst:501
 msgid "What user interface toolkit does Godot use?"

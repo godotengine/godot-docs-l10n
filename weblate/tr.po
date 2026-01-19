@@ -95,7 +95,7 @@
 # Batuhan Göbekli <batuhangobekli@gmail.com>, 2024.
 # Onur Kalkan <onurkalkanmv@gmail.com>, 2024, 2025.
 # Cataphract <catapharaoh@proton.me>, 2024.
-# ulk <ulk.info@gmail.com>, 2024, 2025.
+# ulk <ulk.info@gmail.com>, 2024, 2025, 2026.
 # goknarbahceli <goknarbahceli@proton.me>, 2024.
 # Koray Üstündağ <mskorayustundag@gmail.com>, 2025.
 # Alihan Ersoy <alihan98ersoy@hotmail.com>, 2025.
@@ -108,13 +108,15 @@
 # Unfinished_ <username1653e632@gmail.com>, 2025.
 # omfaoz <faruknam@hotmail.com>, 2025.
 # Aras Ege Gündüz <araszekeriya@hotmail.com>, 2025.
+# shaches <shaches7@proton.me>, 2025.
+# Hasan Kara <hasanbeytullahkara@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2025-12-19 15:00+0100\n"
-"PO-Revision-Date: 2025-12-15 11:00+0000\n"
-"Last-Translator: Aras Ege Gündüz <araszekeriya@hotmail.com>\n"
+"PO-Revision-Date: 2026-01-18 17:44+0000\n"
+"Last-Translator: ulk <ulk.info@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/tr/>\n"
 "Language: tr\n"
@@ -122,7 +124,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -189,7 +191,6 @@ msgid "Class reference"
 msgstr "Sınıf referansı"
 
 #: ../../docs/index.rst:4
-#, fuzzy
 msgid "Godot Docs – *master* branch"
 msgstr "Godot Belgeleri - *master* dalı"
 
@@ -1951,7 +1952,6 @@ msgid "S3TC (not supported on mobile/Web platforms)."
 msgstr "S3TC (mobil/Web platformlarında desteklenmez)."
 
 #: ../../docs/about/list_of_features.rst:380
-#, fuzzy
 msgid "**Antialiasing:**"
 msgstr "**Kenar yumuşatma:**"
 
@@ -2601,13 +2601,12 @@ msgstr ""
 "sahip gezinti örgüleri."
 
 #: ../../docs/about/list_of_features.rst:585
-#, fuzzy
 msgid ""
 "Generate navigation meshes from the editor or at runtime (including from an "
 "exported project)."
 msgstr ""
-"Düzenleyiciden, ya da çalışma sırasında, gezinme örgüleri oluşturun (dışa "
-"aktarılan projeyi dahil ederek)."
+"Navigation mesh'lerini  editörden veya çalışma zamanında (dışa aktarılmış "
+"bir proje dahil) oluşturun"
 
 #: ../../docs/about/list_of_features.rst:588
 #: ../../docs/about/docs_changelog.rst:413
@@ -125730,7 +125729,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:478
 msgid "similarity"
-msgstr "Benzerlik"
+msgstr "benzerlik"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:478
 msgid "StringExtensions.Similarity"
@@ -141826,9 +141825,8 @@ msgid "The ratio of indices of refraction."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1780
-#, fuzzy
 msgid "The refraction vector."
-msgstr "Kesin eylem fiilleri kullanın"
+msgstr "Kırılma vektörü."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1782
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/refract.xhtml"

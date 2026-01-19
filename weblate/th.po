@@ -21,13 +21,15 @@
 # napasit <napasitng@gmail.com>, 2024.
 # kasinee buapuean <kasinee.bp@gmail.com>, 2025.
 # Tan <nazapizzaemail.com@gmail.com>, 2025.
+# RESONA <championkungpvp@gmail.com>, 2025.
+# Wi Chan <mac.wikrom@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2025-12-19 15:00+0100\n"
-"PO-Revision-Date: 2025-06-04 17:55+0000\n"
-"Last-Translator: Tan <nazapizzaemail.com@gmail.com>\n"
+"PO-Revision-Date: 2026-01-15 07:06+0000\n"
+"Last-Translator: Wi Chan <mac.wikrom@gmail.com>\n"
 "Language-Team: Thai <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/th/>\n"
 "Language: th\n"
@@ -35,7 +37,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -90,7 +92,6 @@ msgid "Manual"
 msgstr "คู่มือ"
 
 #: ../../docs/index.rst:128
-#, fuzzy
 msgid "Engine details"
 msgstr "เกี่ยวกับ Godot Engine"
 
@@ -247,7 +248,7 @@ msgstr ""
 
 #: ../../docs/404.rst:5
 msgid "Page not found"
-msgstr ""
+msgstr "ไม่พบหน้าที่ต้องการ"
 
 #: ../../docs/about/introduction.rst:6
 #: ../../docs/getting_started/introduction/index.rst:10
@@ -3147,6 +3148,8 @@ msgid ""
 "derivatives (including ESR), Chrome and Chromium derivatives, Safari and "
 "WebKit derivatives."
 msgstr ""
+"Web editor: เบราว์เซอร์กระแสหลักเวอร์ชันล่าสุด: Firefox และอนุพันธ์ (รวมถึง ESR), "
+"Chrome และอนุพันธ์ของ Chromium, Safari และอนุพันธ์ของ WebKit"
 
 #: ../../docs/about/system_requirements.rst:66
 msgid ""
@@ -3154,6 +3157,8 @@ msgid ""
 "Godot executable which only has a SSE2 requirement (all x86_64 CPUs support "
 "SSE2)."
 msgstr ""
+"หาก CPU x86_64 ของคุณไม่รองรับ SSE4.2 คุณยังสามารถรัน Godot แบบ 32-bit ได้ ซึ่งต้องการเ"
+"พียงแค่ SSE2 เท่านั้น (CPU x86_64 ทุกตัวรองรับ SSE2"
 
 #: ../../docs/about/system_requirements.rst:69
 msgid ""
@@ -3164,11 +3169,16 @@ msgid ""
 "compiling instructions can be found on the :ref:`doc_compiling_for_linuxbsd` "
 "page."
 msgstr ""
+"แม้ว่าจะรองรับบน Linux แต่เราไม่มีข้อกำหนดขั้นต่ำอย่างเป็นทางการสำหรับการใช้งานบน rv64 "
+"(RISC-V), ppc64 & ppc32 (PowerPC) และ loongarch64 นอกจากนี้ คุณจำเป็นต้องคอมไพล์ตัว "
+"editor สำหรับแพลตฟอร์มดังกล่าว (รวมถึง export Templates) ด้วยตนเอง เนื่องจากปัจจุบันยังไม่"
+"มีไฟล์ให้ดาวน์โหลดอย่างเป็นทางการ สามารถดูคำแนะนำในการคอมไพล์ RISC-V ได้ที่หน้า "
+":ref:doc_compiling_for_linuxbsd"
 
 #: ../../docs/about/system_requirements.rst:76
 #: ../../docs/about/system_requirements.rst:253
 msgid "Mobile device (smartphone/tablet) - Minimum"
-msgstr ""
+msgstr "ขั้นต่ำคือ อุปกรณ์พกพา (สมาร์ทโฟน/แท็บเล็ต)"
 
 #: ../../docs/about/system_requirements.rst:79
 #: ../../docs/about/system_requirements.rst:256
@@ -3189,6 +3199,7 @@ msgstr "**สำหรับตัวโปรแกรม:**"
 #: ../../docs/about/system_requirements.rst:85
 msgid "**Forward+ renderer:** SoC featuring GPU with full Vulkan 1.0 support"
 msgstr ""
+"ตัวเรนเดอร์ Forward+: ชิป SoC ที่มี GPU ที่รองรับ Vulkan 1.0 อย่างสมบูรณ์"
 
 #: ../../docs/about/system_requirements.rst:87
 #: ../../docs/about/system_requirements.rst:91
@@ -4044,6 +4055,7 @@ msgstr ""
 #: ../../docs/about/faq.rst:168
 msgid "GDScript was designed to curtail the issues above, and more."
 msgstr ""
+"GDScript ได้รับการออกแบบมาเพื่อลดทอนปัญหาที่กล่าวมาข้างต้น รวมถึงปัญหาอื่นๆ อีกมากมาย"
 
 #: ../../docs/about/faq.rst:173
 #, fuzzy
@@ -4289,6 +4301,9 @@ msgid ""
 "run from any location (including non-writable locations) and never requires "
 "administrator privileges."
 msgstr ""
+"ในการตั้งค่าเริ่มต้น Godot จะมีลักษณะเป็นแบบ กึ่งพกพา (semi-portable) โดยตัวโปรแกรมสามารถ"
+"ทำงานจากตำแหน่งใดก็ได้ (รวมถึงตำแหน่งที่ไม่สามารถเขียนข้อมูลลงไปได้) และไม่จำเป็นต้องใช้สิทธิ์ผู้ดู"
+"แลระบบเลย"
 
 #: ../../docs/about/faq.rst:304
 msgid ""
@@ -4307,7 +4322,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:313
 msgid "Why does Godot aim to keep its core feature set small?"
-msgstr ""
+msgstr "ทำไม Godot ถึงเน้นให้ชุดฟีเจอร์หลักมีขนาดเล็ก"
 
 #: ../../docs/about/faq.rst:315
 msgid ""
@@ -4339,6 +4354,9 @@ msgid ""
 "contributors to get started with Godot, without requiring them to purchase "
 "high-end hardware."
 msgstr ""
+"ความสะดวกในการร่วมพัฒนา: การรักษาฐานโค้ด (codebase) ให้มีขนาดเล็กและเป็นระเบียบ ช่วยให้ก"
+"ารคอมไพล์จากซอร์สโค้ดทำได้รวดเร็วและง่ายดายอยู่เสมอ ซึ่งช่วยให้ผู้นักพัฒนาหน้าใหม่เริ่มต้นกับ "
+"Godot ได้ง่ายขึ้น โดยไม่จำเป็นต้องลงทุนซื้อฮาร์ดแวร์ประสิทธิภาพสูง\""
 
 #: ../../docs/about/faq.rst:334
 msgid ""
@@ -4347,6 +4365,9 @@ msgid ""
 "extract it and run it in less than 5 minutes makes Godot more accessible to "
 "developers in all countries."
 msgstr ""
+"การรักษาขนาดไฟล์ไบนารีของ Editor ให้มีขนาดเล็ก: ไม่ใช่ทุกคนที่จะมีการเชื่อมต่ออินเทอร์เน็ตความเ"
+"ร็วสูง การทำให้มั่นใจว่าทุกคนสามารถดาวน์โหลด Godot Editor, แตกไฟล์ และเปิดใช้งานได้ภายในเ"
+"วลาไม่ถึง 5 นาที ช่วยให้ Godot เป็นสิ่งที่เข้าถึงได้ง่ายสำหรับนักพัฒนาในทุกประเทศ"
 
 #: ../../docs/about/faq.rst:339
 msgid ""
@@ -4464,6 +4485,7 @@ msgid ""
 "When it's ready! See :ref:`doc_release_policy_when_is_next_release_out` for "
 "more information."
 msgstr ""
+"เมื่อพร้อมแล้ว! ดูข้อมูลเพิ่มเติมได้ที่ :ref:doc_release_policy_when_is_next_release_out"
 
 #: ../../docs/about/faq.rst:400
 #, fuzzy
@@ -4501,7 +4523,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:419
 msgid "I would like to contribute! How can I get started?"
-msgstr ""
+msgstr "ฉันอยากมีส่วนร่วม! จะเริ่มต้นได้อย่างไร?"
 
 #: ../../docs/about/faq.rst:421
 msgid ""
@@ -4538,7 +4560,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:439
 msgid "I have a great idea for Godot. How can I share it?"
-msgstr ""
+msgstr "ฉันมีไอเดียดีๆ สำหรับ Godot จะนำเสนอได้อย่างไร"
 
 #: ../../docs/about/faq.rst:441
 msgid ""
@@ -4586,7 +4608,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:469
 msgid "Is it possible to use Godot to create non-game applications?"
-msgstr ""
+msgstr "สามารถใช้ Godot สร้างแอปพลิเคชันที่ไม่ใช่เกมได้หรือไม่?"
 
 #: ../../docs/about/faq.rst:471
 msgid ""
@@ -4594,6 +4616,8 @@ msgid ""
 "distribution size can make it a suitable alternative to frameworks like "
 "Electron or Qt."
 msgstr ""
+"ได้แน่นอน! Godot มีระบบ UI ในตัวที่ครบครันกว้างขวาง และด้วยขนาดไฟล์แจกจ่ายที่เล็ก ทำให้มันเป็น"
+"ทางเลือกที่เหมาะสมสำหรับนำมาใช้แทนเฟรมเวิร์กอย่าง Electron หรือ Qt"
 
 #: ../../docs/about/faq.rst:474
 msgid ""
@@ -4601,6 +4625,9 @@ msgid ""
 "processor mode <class_ProjectSettings_property_application/run/"
 "low_processor_mode>` in the Project Settings to decrease CPU and GPU usage."
 msgstr ""
+"เมื่อสร้างแอปพลิเคชันที่ไม่ใช่เกม อย่าลืมเปิดใช้งาน :ref:low-processor mode "
+"<class_ProjectSettings_property_application/run/low_processor_mode> ใน "
+"Project Settings เพื่อลดการใช้งาน CPU และ GPU"
 
 #: ../../docs/about/faq.rst:478
 msgid ""
@@ -4608,10 +4635,13 @@ msgid ""
 "and `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ for "
 "examples of open source applications made with Godot."
 msgstr ""
+"ลองดู Material Maker <https://github.com/RodZill4/material-maker>__ และ "
+"Pixelorama <https://github.com/Orama-Interactive/Pixelorama>__ เพื่อดูตัวอย่างแอปพ"
+"ลิเคชันโอเพนซอร์สที่สร้างด้วย Godot"
 
 #: ../../docs/about/faq.rst:485
 msgid "Is it possible to use Godot as a library?"
-msgstr ""
+msgstr "นำ Godot ไปใช้งานในรูปแบบไลบรารีได้หรือไม่"
 
 #: ../../docs/about/faq.rst:487
 msgid ""
@@ -4638,7 +4668,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:501
 msgid "What user interface toolkit does Godot use?"
-msgstr ""
+msgstr "Godot ใช้ชุดเครื่องมือ (UI toolkit) ตัวไหน?"
 
 #: ../../docs/about/faq.rst:503
 msgid ""
@@ -4664,6 +4694,11 @@ msgid ""
 "Qt. Lastly, this means Godot is \"eating its own dog food\" since the editor "
 "itself is one of the most complex users of Godot's UI system."
 msgstr ""
+"ชุดเครื่องมือที่พัฒนาขึ้นเองนี้ ช่วยให้สามารถใช้ประโยชน์จากการเร่งความเร็วด้วยฮาร์ดแวร์ "
+"(Hardware Acceleration) และทำให้มีรูปลักษณ์ที่สม่ำเสมอเหมือนกันในทุกแพลตฟอร์ม นอกจากนี้ ยังช่"
+"วยให้ไม่ต้องกังวลกับเงื่อนไขสัญญาอนุญาตแบบ LGPL ที่มาพร้อมกับ GTK หรือ Qt อีกด้วย และท้ายที่สุด นี่"
+"หมายความว่า Godot กำลัง 'ใช้ผลิตภัณฑ์ที่ตนเองสร้างขึ้น' (Eating its own dog food) เนื่องจา"
+"กตัว Editor เองก็นับเป็นหนึ่งในงานที่ใช้ระบบ UI ของ Godot ได้อย่างซับซ้อนที่สุด"
 
 #: ../../docs/about/faq.rst:518
 msgid ""
@@ -4729,7 +4764,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:554
 msgid "Why does Godot not use STL (Standard Template Library)?"
-msgstr ""
+msgstr "เหตุใด Godot จึงไม่ใช้ STL (Standard Template Library"
 
 #: ../../docs/about/faq.rst:556
 msgid ""
@@ -4743,6 +4778,8 @@ msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
 msgstr ""
+"เทมเพลตของ STL จะสร้าง Symbol ที่มีขนาดใหญ่มาก ส่งผลให้ไฟล์ไบนารีสำหรับดีบั๊ก (Debug "
+"binary) มีขนาดมหึมา เราจึงเลือกใช้เทมเพลตจำนวนน้อยและตั้งชื่อให้สั้นๆ แทน"
 
 #: ../../docs/about/faq.rst:562
 msgid ""
@@ -4751,18 +4788,26 @@ msgid ""
 "O(1) access time for performance. Likewise, our hash map implementations are "
 "designed to integrate seamlessly with internal engine types."
 msgstr ""
+"คอนเทนเนอร์ส่วนใหญ่ของเราสร้างขึ้นเพื่อรองรับความต้องการพิเศษ เช่น Vector ซึ่งใช้ระบบ Copy-"
+"on-Write และถูกนำมาใช้เพื่อส่งข้อมูลระหว่างกัน หรือระบบ RID ที่จำเป็นต้องใช้เวลาในการเข้าถึงข้อ"
+"มูลแบบ O(1) เพื่อเน้นประสิทธิภาพ เช่นเดียวกันกับระบบ Hash Map ของเราที่ถูกออกแบบมาให้ทำงานร่"
+"วมกับชนิดข้อมูลภายในของ Engine ได้อย่างราบรื่น"
 
 #: ../../docs/about/faq.rst:566
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
 msgstr ""
+"คอนเทนเนอร์ของเรามีระบบติดตามหน่วยความจำในตัว ซึ่งช่วยให้ติดตามการใช้งานหน่วยความจำได้ดียิ่งขึ้"
+"น"
 
 #: ../../docs/about/faq.rst:567
 msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
 msgstr ""
+"สำหรับอาร์เรย์ขนาดใหญ่ เราใช้หน่วยความจำแบบพูล (Pooled Memory) ซึ่งสามารถแมปไปยังบัฟเฟอร์"
+"ที่จัดสรรไว้ล่วงหน้า หรือหน่วยความจำเสมือนได้"
 
 #: ../../docs/about/faq.rst:569
 msgid ""
@@ -6608,7 +6653,7 @@ msgstr "การสร้างคอนเทนต์"
 
 #: ../../docs/about/docs_changelog.rst:432
 msgid "Procedural geometry series:"
-msgstr ""
+msgstr "ชุดบทความเรขาคณิตเชิงกระบวนวิธี"
 
 #: ../../docs/about/docs_changelog.rst:433
 msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
@@ -170977,6 +171022,8 @@ msgid ""
 "If your asset is a library for working with other files, consider including "
 "**example files** in the asset."
 msgstr ""
+"หากแอสเซตของคุณเป็นไลบรารีสำหรับทำงานร่วมกับไฟล์อื่น ๆ ขอแนะนำให้รวม ไฟล์ตัวอย่าง ไว้ในแอสเ"
+"ซตด้วย"
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:85
 msgid ""
@@ -170987,6 +171034,11 @@ msgid ""
 "file, preventing them from being downloaded by the asset library users. "
 "These are common examples of **.gitattributes**:"
 msgstr ""
+"ขอแนะนำให้เพิ่มไฟล์ .gitattributes ลงใน Repository ของคุณ ไฟล์นี้ช่วยให้คุณสามารถกำหนดคำ"
+"สั่งเพิ่มเติมให้กับ Git ได้ เช่น การระบุรูปแบบการสิ้นสุดบรรทัด (Line endings) และการระบุรายกา"
+"รไฟล์ที่ไม่จำเป็นต่อการทำงานของ Asset โดยใช้คำสั่ง export-ignore คำสั่งนี้จะตัดไฟล์ดังกล่าวออก"
+"จากไฟล์ ZIP ผลลัพธ์ ทำให้ผู้ใช้ Asset Library ไม่ต้องดาวน์โหลดไฟล์เหล่านั้นไปด้วย ตัวอย่างทั่วไป"
+"ของไฟล์ .gitattributes มีดังนี้:"
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:94
 #, fuzzy
@@ -171359,7 +171411,7 @@ msgstr "`เว็บไซต์ GDScript โดย Andrew Wilkes <https://gdsc
 
 #: ../../docs/community/tutorials.rst:32
 msgid "`Catlike Coding by Jasper Flick <https://catlikecoding.com/godot/>`__"
-msgstr ""
+msgstr "­`Catlike Coding โดย Jasper Flick <https://catlikecoding.com/godot/>`__"
 
 #: ../../docs/community/tutorials.rst:33
 msgid "`GDScript website by Andrew Wilkes <https://gdscript.com>`__"

@@ -242,7 +242,7 @@
 # Juan Castro <castrotio09172002@gmail.com>, 2024.
 # Joaquín Pereyra <joaquinpereyra332@gmail.com>, 2024.
 # Delta_greed <joaquinpereyra332@gmail.com>, 2024.
-# Alejandro Moctezuma <moctezumaalejandro25@gmail.com>, 2024, 2025.
+# Alejandro Moctezuma <moctezumaalejandro25@gmail.com>, 2024, 2025, 2026.
 # Abraham <fcoabrahamprz@gmail.com>, 2024.
 # Neko <Nekoo041012@gmail.com>, 2024.
 # Tfa <eltfag@gmail.com>, 2024.
@@ -289,13 +289,16 @@
 # Laquin <anderaginaga2@gmail.com>, 2025.
 # Hompis Homp <hompis@gmail.com>, 2025.
 # iker-sr <saiz.iker12@gmail.com>, 2025.
+# Jhon clenis Velásquez caraguiche <gamerestrin217@gmail.com>, 2026.
+# Raciel Hernández Hernández <racielhernandezhdez@gmail.com>, 2026.
+# Ralph367 <ralphelmassih@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2025-12-19 15:00+0100\n"
-"PO-Revision-Date: 2025-12-19 10:00+0000\n"
-"Last-Translator: iker-sr <saiz.iker12@gmail.com>\n"
+"PO-Revision-Date: 2026-01-16 11:01+0000\n"
+"Last-Translator: Alejandro Moctezuma <moctezumaalejandro25@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
 "Language: es\n"
@@ -303,7 +306,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -1954,13 +1957,12 @@ msgid "**Volumetric fog:**"
 msgstr "**Niebla volumétrica**"
 
 #: ../../docs/about/list_of_features.rst:331
-#, fuzzy
 msgid ""
 "Global :ref:`volumetric fog <doc_volumetric_fog>` that reacts to lights and "
 "shadows."
 msgstr ""
-"Niebla volumétrica global :ref:` <doc_volumetric_fog>` que reacciona a las "
-"luces y sombras."
+"Niebla volumétrica global :ref:`volumetric fog <doc_volumetric_fog>` que "
+"reacciona a las luces y sombras."
 
 #: ../../docs/about/list_of_features.rst:332
 msgid ""
@@ -4106,9 +4108,8 @@ msgstr ""
 
 #: ../../docs/about/system_requirements.rst:268
 #: ../../docs/about/system_requirements.rst:274
-#, fuzzy
 msgid "*Example (Metal): Apple A12 (iPhone XR/XS)*"
-msgstr "*Ejemplo: Apple A11 (iPhone 8/X)*"
+msgstr "*Ejemplo (Metal): Apple A12 (iPhone XR/XS)*"
 
 #: ../../docs/about/system_requirements.rst:270
 msgid ""
@@ -4769,8 +4770,8 @@ msgstr ""
 "API de Godot, debido al coste del *marshalling*. El rendimiento de C# "
 "también puede verse afectado por el recolector de basura, que entra en "
 "funcionamiento en momentos aleatorios e impredecibles. Esto puede dar lugar "
-"a problemas de *tartamudeo* en proyectos complejos, y no es exclusivo de "
-"Godot."
+"a problemas de *trastabilleo* (stutter) en proyectos complejos, y no es "
+"exclusivo de Godot."
 
 #: ../../docs/about/faq.rst:193
 msgid ""
@@ -5494,6 +5495,9 @@ msgid ""
 "to be used with its editor. We recommend you give it a try, as it will most "
 "likely save you time in the long term."
 msgstr ""
+"­Si quieres crear un juego con Godot, ten en cuenta que está diseñado para "
+"usarse con su editor. Te recomendamos probarlo, ya que probablemente te "
+"ahorrará tiempo a largo plazo."
 
 #: ../../docs/about/faq.rst:491
 msgid ""
@@ -5503,6 +5507,11 @@ msgid ""
 "currently supported on Windows, macOS, and Linux. Support for Android and "
 "iOS is planned for a future release."
 msgstr ""
+"Para aplicaciones más especializadas, puede ser conveniente considerar el "
+"uso de Godot como biblioteca. Desde Godot 4.6, existe soporte "
+"**experimental** para usar Godot como biblioteca estática o compartida en la "
+"forma de LibGodot. Actualmente es compatible con Windows, macOS y Linux. "
+"Está previsto que sea compatible con Android e iOS en una próxima versión."
 
 #: ../../docs/about/faq.rst:497
 msgid ""
@@ -5510,6 +5519,9 @@ msgid ""
 "libgodot_project GitHub repository <https://github.com/migeran/"
 "libgodot_project>`__."
 msgstr ""
+"Puede encontrar aplicaciones de muestra que utilizan Godot como biblioteca "
+"en el repositorio de GitHub `migeran/libgodot_project <https://github.com/"
+"migeran/libgodot_project>`__."
 
 #: ../../docs/about/faq.rst:501
 msgid "What user interface toolkit does Godot use?"
@@ -5533,19 +5545,18 @@ msgstr ""
 "en proyectos de cualquier lenguaje de scripting soportado por Godot."
 
 #: ../../docs/about/faq.rst:508
-#, fuzzy
 msgid ""
 "This toolkit is exposed in the form of Control nodes, which are used to "
 "render the editor (which is written in C++). These Control nodes can also be "
 "used in projects from any scripting language supported by Godot."
 msgstr ""
-"Godot no utiliza un kit de herramientas :abbr:`GUI (Interfaz Gráfica de "
-"Usuario)` estándar como GTK, Qt o wxWidgets. En su lugar, Godot utiliza su "
-"propio kit de herramientas de interfaz de usuario, que se renderiza "
-"utilizando OpenGL ES o Vulkan. Este conjunto de herramientas se expone en "
-"forma de nodos de control, que se utilizan para renderizar el editor (que "
-"está escrito en C++). Estos nodos de control también pueden ser utilizados "
-"en proyectos de cualquier lenguaje de scripting soportado por Godot."
+"Godot no utiliza un kit de herramientas estándar como GTK, Qt o wxWidgets. "
+"En su lugar, Godot utiliza su propio kit de herramientas de interfaz de "
+"usuario, que se renderiza utilizando OpenGL ES o Vulkan. Este conjunto de "
+"herramientas se expone en forma de nodos de control, que se utilizan para "
+"renderizar el editor (que está escrito en C++). Estos nodos de control "
+"también pueden ser utilizados en proyectos de cualquier lenguaje de "
+"scripting soportado por Godot."
 
 #: ../../docs/about/faq.rst:512
 msgid ""
@@ -6361,14 +6372,12 @@ msgid "unstable"
 msgstr "inestable"
 
 #: ../../docs/about/release_policy.rst:90
-#, fuzzy
 msgid "Godot 4.5"
-msgstr "Godot 4.4"
+msgstr "Godot 4.5"
 
 #: ../../docs/about/release_policy.rst:90
-#, fuzzy
 msgid "September 2025"
-msgstr "Septiembre 2024"
+msgstr "Septiembre 2025"
 
 #: ../../docs/about/release_policy.rst:90
 #: ../../docs/about/release_policy.rst:106
@@ -6410,9 +6419,8 @@ msgid "August 2024"
 msgstr "Agosto 2024"
 
 #: ../../docs/about/release_policy.rst:95
-#, fuzzy
 msgid "|eol| No longer supported (last update: 4.3)."
-msgstr "|eol| Ya no recibe soporte (ultima actualización: 4.1.4)."
+msgstr "|eol| Ya no recibe soporte (ultima actualización: 4.3)."
 
 #: ../../docs/about/release_policy.rst:132
 msgid "eol"
@@ -6427,9 +6435,8 @@ msgid "November 2023"
 msgstr "Noviembre de 2023"
 
 #: ../../docs/about/release_policy.rst:97
-#, fuzzy
 msgid "|eol| No longer supported (last update: 4.2.2)."
-msgstr "|eol| Ya no recibe soporte (ultima actualización: 4.1.4)."
+msgstr "|eol| Ya no recibe soporte (ultima actualización: 4.2.2)."
 
 #: ../../docs/about/release_policy.rst:99
 msgid "Godot 4.1"
@@ -6488,9 +6495,8 @@ msgid "August 2022"
 msgstr "Agosto 2022"
 
 #: ../../docs/about/release_policy.rst:109
-#, fuzzy
 msgid "|eol| No longer supported (last update: 3.5.3)."
-msgstr "|eol| Esta versión ya no es soportada (última actualización: 3.2.3)."
+msgstr "|eol| Esta versión ya no es soportada (última actualización: 3.5.3)."
 
 #: ../../docs/about/release_policy.rst:111
 msgid "Godot 3.4"
@@ -6982,14 +6988,14 @@ msgstr ""
 "no está indicado en este documento."
 
 #: ../../docs/about/docs_changelog.rst:19
-#, fuzzy
 msgid "New pages since version 4.4"
-msgstr "Nuevas páginas desde la versión 4.3"
+msgstr "Nuevas páginas desde la versión 4.4"
 
 #: ../../docs/about/docs_changelog.rst:24
-#, fuzzy
 msgid ":ref:`doc_engine_compilation_configuration_editor`"
-msgstr "Usando el editor de animación"
+msgstr ""
+"Usando el editor de "
+"animación:ref:`doc_engine_compilation_configuration_editor`"
 
 #: ../../docs/about/docs_changelog.rst:27
 #: ../../docs/about/docs_changelog.rst:114
@@ -6999,9 +7005,8 @@ msgid "GDExtension"
 msgstr "GDExtensión"
 
 #: ../../docs/about/docs_changelog.rst:29
-#, fuzzy
 msgid ":ref:`doc_gdextension_c_example`"
-msgstr ":ref:`doc_gdextension_file`"
+msgstr ":ref:`doc_gdextension_c_example`"
 
 #: ../../docs/about/docs_changelog.rst:32
 #: ../../docs/about/docs_changelog.rst:66
@@ -7013,14 +7018,12 @@ msgid "Migrating"
 msgstr "Migrando"
 
 #: ../../docs/about/docs_changelog.rst:34
-#, fuzzy
 msgid ":ref:`doc_upgrading_to_godot_4.5`"
-msgstr ":ref:`doc_upgrading_to_godot_4.3`"
+msgstr ":ref:`doc_upgrading_to_godot_4.5`"
 
 #: ../../docs/about/docs_changelog.rst:40
-#, fuzzy
 msgid ":ref:`doc_logging`"
-msgstr ":ref:`doc_ios_plugin`"
+msgstr ":ref:`doc_logging`"
 
 #: ../../docs/about/docs_changelog.rst:43
 msgid "New pages since version 4.3"
@@ -7069,9 +7072,8 @@ msgid ":ref:`doc_using_the_xr_editor`"
 msgstr ":ref:`doc_using_the_xr_editor`"
 
 #: ../../docs/about/docs_changelog.rst:68
-#, fuzzy
 msgid ":ref:`doc_upgrading_to_godot_4.4`"
-msgstr ":ref:`doc_upgrading_to_godot_4.3`"
+msgstr ":ref:`doc_upgrading_to_godot_4.4`"
 
 #: ../../docs/about/docs_changelog.rst:71
 #: ../../docs/tutorials/3d/global_illumination/introduction_to_global_illumination.rst:115
@@ -8750,14 +8752,13 @@ msgstr ""
 "puede ver el editor de animación abierto:"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:116
-#, fuzzy
 msgid ""
 "Bottom panels can also be shown or hidden using the shortcuts defined in "
 "**Editor Settings > Shortcuts**, under the **Bottom Panels** category."
 msgstr ""
-"Los paneles inferiores también se pueden mostrar u ocultar usando los atajos "
-"definidos en **Configuración del Editor > Atajos**, en la categoría **Bottom "
-"Panels**."
+"Los paneles inferiores también se pueden mostrar u ocultar utilizando los "
+"accesos directos definidos en **Configuración del editor > Accesos "
+"directos**, en la categoría **Paneles inferiores**."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:122
 msgid "The five main screens"
@@ -14737,7 +14738,6 @@ msgid "Draw a user interface on a 3D game."
 msgstr "Dibuja una interfaz de usuario en un juego 3D."
 
 #: ../../docs/getting_started/first_3d_game/index.rst:32
-#, fuzzy
 msgid ""
 "This tutorial is for beginners who followed the complete getting started "
 "series. We'll start slow with detailed instructions and shorten them as we "
@@ -14748,8 +14748,7 @@ msgstr ""
 "introducción. Comenzaremos lentamente con instrucciones detalladas y las "
 "acortaremos a medida que hacemos pasos similares. Si eres un programador "
 "experimentado, puedes explorar el código fuente de la demostración completa "
-"aquí: `código fuente de Squash the Creep <https://github.com/godotengine/"
-"godot-3d-dodge-the-creeps>`__."
+"aquí:"
 
 #: ../../docs/getting_started/first_3d_game/index.rst:37
 #, fuzzy
@@ -22761,8 +22760,8 @@ msgid ""
 "The editor stutters and flickers on my variable refresh rate monitor (G-Sync/"
 "FreeSync)"
 msgstr ""
-"El editor se traba y parpadea en mi monitor de frecuencia de actualización "
-"variable (G-Sync/FreeSync)"
+"El editor trastabillea y parpadea en mi monitor de frecuencia de "
+"actualización variable (G-Sync/FreeSync)"
 
 #: ../../docs/tutorials/troubleshooting.rst:38
 msgid ""
@@ -34202,10 +34201,10 @@ msgid ""
 msgstr ""
 "``call_group()``, ``set_group()`` y ``notify_group()`` ahora son inmediatos "
 "por defecto. Si estás llamando una función costosa, esto puede resultar en "
-"inestabilidad cuando se usa en un grupo que contiene un gran número de "
-"nodos. Para utilizar llamadas diferidas como antes, reemplaza "
-"``call_group_flags(SceneTree. GROUP_CALL_DEFERRED, . . . )`` (y haz lo mismo "
-"con ``set_group()`` y ``notify_group()`` respectivamente)."
+"trastabilleo cuando se usa en un grupo que contiene un gran número de nodos. "
+"Para utilizar llamadas diferidas como antes, reemplaza ``call_group_flags"
+"(SceneTree. GROUP_CALL_DEFERRED, . . . )`` (y haz lo mismo con ``set_group()"
+"`` y ``notify_group()`` respectivamente)."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.rst:627
 msgid ""
@@ -45173,7 +45172,7 @@ msgid ""
 "far and repeat."
 msgstr ""
 "Nota la comprobación ``distance_to()`` que se hace antes del movimiento. Sin "
-"esto, el cuerpo podría \"temblar\" al llegar al destino, ya que el "
+"esto, el cuerpo podría \"traquetear\" al llegar al destino, ya que el "
 "movimiento puede pasarse un poco e intentará moverse hacia atrás, pasándose "
 "de largo nuevamente y repitiendo el proceso."
 
@@ -50622,7 +50621,7 @@ msgstr ""
 "Label3D es más rápido en generar que TextMesh. Mientras que ambos usan un "
 "mecanismo de almacenamiento en caché para renderizar los glifos nuevos solo "
 "una vez, Label3D aún será más rápido en (re)generar, especialmente para "
-"textos largos. Esto puede evitar el stuttering durante el gameplay en CPUs "
+"textos largos. Esto puede evitar el trastabilleo durante el gameplay en CPUs "
 "de gama baja o móviles."
 
 #: ../../docs/tutorials/3d/3d_text.rst:45
@@ -55542,9 +55541,8 @@ msgid "turbulence"
 msgstr ""
 
 #: ../../docs/tutorials/3d/particles/creating_a_3d_particle_system.rst:82
-#, fuzzy
 msgid "sub-emitters"
-msgstr "Jitter (temblor)"
+msgstr "sub-emisores"
 
 #: ../../docs/tutorials/3d/particles/creating_a_3d_particle_system.rst:83
 msgid "trails"
@@ -56569,7 +56567,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/particles/process_material_properties.rst:428
 #, fuzzy
 msgid "Sub-emitter"
-msgstr "Stutter (tartamudeo)"
+msgstr "Sub-emisor"
 
 #: ../../docs/tutorials/3d/particles/process_material_properties.rst:430
 #, fuzzy
@@ -56699,9 +56697,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/particles/subemitters.rst:55
-#, fuzzy
 msgid "Emitter mode"
-msgstr "Jitter (temblor)"
+msgstr "Modo Emisor"
 
 #: ../../docs/tutorials/3d/particles/subemitters.rst:57
 msgid ""
@@ -63304,6 +63301,11 @@ msgid ""
 "fog, but makes \"ghosting\" much worse. A lower value reduces ghosting but "
 "can result in the per-frame temporal jitter becoming visible."
 msgstr ""
+"**Temporal Reprojection > Cantidad:** La cantidad que el último fotograma se "
+"va a fusionar con el fotograma actual. Un número más alto resulta en niebla "
+"volumétrica más fluida, pero hace el \"ghosting\" mucho peor. Un número más "
+"bajo reduce el ghosting pero puede resultar en un traqueteo pre-fotograma "
+"temporal visible."
 
 #: ../../docs/tutorials/3d/volumetric_fog.rst:94
 msgid ""
@@ -63826,6 +63828,12 @@ msgid ""
 "every frame. This jittering is done to capture sub-pixel detail and should "
 "be unnoticeable except in extreme situations."
 msgstr ""
+"El antialiasing temporal funcional *convergiendo* el resultado de los "
+"fotogramas previamente renderizados a un solo fotograma de alta calidad. Es "
+"un proceso continuo que funciona sacudiendo la posición de todos los "
+"vértices en la escena cada fotograma. Este traqueteo sirve para capturar "
+"detalles sub-píxel y debería ser imperceptible excepto en situaciones "
+"extremas."
 
 #: ../../docs/tutorials/3d/3d_antialiasing.rst:100
 msgid ""
@@ -65673,6 +65681,10 @@ msgid ""
 "Select the OccluderInstance3D node, increase the **Bake > Simplification** "
 "property then bake occluders again."
 msgstr ""
+"Si notas bajo rendimiento o trastabilleo en escenas 3D complejas, puede "
+"indicar que el CPU está sobrecargado como resultado de renderizar oclusores "
+"detallados. Selecciona el nodo OccluderInstance3D, incrementa la propiedad "
+"**Bake > Simplification** y procesa los oclusores de nuevo."
 
 #: ../../docs/tutorials/3d/occlusion_culling.rst:260
 msgid ""
@@ -70599,6 +70611,17 @@ msgid ""
 "Afterwards, point the ``AnimationTree`` node to the ``AnimationPlayer`` that "
 "was created in the imported scene."
 msgstr ""
+"``AnimationPlayer`` y``AnimationTree`` se puede usar en una escena de 2D y "
+"3D. Cuando usando escenas de 3D y sus animaciones, puedes usar `sufijos de "
+"renombre <https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/"
+"importing_3d_scenes/node_type_customization.html#animation-loop-loop-cycle>` "
+"para simplificar la procesa y importarles con las propiedades correctas. En "
+"el fin, la escena de Godot importada contendrá las animaciones en un nodo "
+"``AnimationPlayer``. Dado que raramente se usan las escenas importadas "
+"directamente en Godot (o de ellos se instancian o se heredan), puedes "
+"colocar el nodo ``AnimationTree`` en tu nueva escena que contenga la "
+"importada. Después, señala el nodo de ``AnimationTree`` al "
+"``AnimationPlayer`` que estuve creado en la escena importada."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:30
 #, fuzzy
@@ -72105,6 +72128,12 @@ msgid ""
 "stuttering. Faster hardware will allow you to render a given animation in "
 "less time, but the visual output remains identical."
 msgstr ""
+"Usa cualquier configuración gráfica (incluyendo configuraciones "
+"extremadamente demandantes) sin importar la capacidad de tu hardware. El "
+"video de salida *siempre* tendrá el mismo ritmo de fotogramas; nunca "
+"mostrarpa fotogramas perdidos o trastabilleo. Un mejor hardware permitirá "
+"renderizar una animación dada en menos tiempo, pero el producto visual "
+"permanece idéntico."
 
 #: ../../docs/tutorials/animation/creating_movies.rst:36
 msgid ""
@@ -90949,7 +90978,7 @@ msgstr "kkj"
 
 #: ../../docs/tutorials/i18n/locales.rst:561
 msgid "Kako"
-msgstr ""
+msgstr "Kako"
 
 #: ../../docs/tutorials/i18n/locales.rst:563
 msgid "kl"
@@ -91192,7 +91221,7 @@ msgstr "lah"
 
 #: ../../docs/tutorials/i18n/locales.rst:621
 msgid "Lahnda"
-msgstr ""
+msgstr "Lahnda"
 
 #: ../../docs/tutorials/i18n/locales.rst:623
 msgid "lam"
@@ -91216,7 +91245,7 @@ msgstr "lez"
 
 #: ../../docs/tutorials/i18n/locales.rst:627
 msgid "Lezghian"
-msgstr ""
+msgstr "Lezgiano"
 
 #: ../../docs/tutorials/i18n/locales.rst:629
 msgid "lfn"
@@ -91232,7 +91261,7 @@ msgstr "lg"
 
 #: ../../docs/tutorials/i18n/locales.rst:631
 msgid "Ganda"
-msgstr ""
+msgstr "Luganda"
 
 #: ../../docs/tutorials/i18n/locales.rst:633
 msgid "li"
@@ -93287,9 +93316,8 @@ msgstr "tvl"
 
 #: ../../docs/tutorials/i18n/locales.rst:1139
 #: ../../docs/tutorials/i18n/locales.rst:2117
-#, fuzzy
 msgid "Tuvalu"
-msgstr "Tuvalu"
+msgstr "Tuvaluano"
 
 #: ../../docs/tutorials/i18n/locales.rst:1141
 msgid "tw"
@@ -93312,7 +93340,6 @@ msgid "ty"
 msgstr "ty"
 
 #: ../../docs/tutorials/i18n/locales.rst:1145
-#, fuzzy
 msgid "Tahitian"
 msgstr "Tahitiano"
 
@@ -104094,6 +104121,8 @@ msgid ""
 "Path simplification can help steering agents or agents that jitter on thin "
 "polygon edges."
 msgstr ""
+"La simplificación de rutas puede ayudar a agentes de dirección o agentes que "
+"traquetean en bordes delgados de polígonos."
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationpathqueryobjects.rst:143
 msgid "Path point difference with or without path simplification"
@@ -104487,6 +104516,14 @@ msgid ""
 "Always check very early in script with ``is_navigation_finished()`` if the "
 "path is already finished."
 msgstr ""
+"La función ``get_next_path_position()`` es responsable por actualizar muchos "
+"de los estados internos y propiedades de los agentes. La función deberá "
+"repetirse *una vez* cada ``physics_process`` hasta que "
+"``is_navigation_finished()`` diga que la ruta terminó. La función no se "
+"debería llamar después de alcanzar la posición o ruta meta, ya que puede "
+"hacer al agente traquetear en su lugar debido a las actualizaciones de ruta "
+"constantes. Siempre verifica temprano en el script con "
+"``is_navigation_finished()`` si la ruta ya terminó."
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:63
 #, fuzzy
@@ -108966,7 +109003,7 @@ msgid ""
 "games that feature real-time player movement."
 msgstr ""
 "El inconveniente de cambiar la tasa de ticks de la física es que puedes "
-"experimentar movimientos bruscos o temblores cuando la tasa de actualización "
+"experimentar movimientos bruscos o traqueteo cuando la tasa de actualización "
 "de la física no coincide con los cuadros por segundo que se renderizan. "
 "Además, disminuir la tasa de ticks de la física aumentará la latencia de "
 "entrada. Se recomienda mantener la tasa de ticks de la física predeterminada "
@@ -108974,7 +109011,6 @@ msgstr ""
 "del jugador."
 
 #: ../../docs/tutorials/performance/cpu_optimization.rst:271
-#, fuzzy
 msgid ""
 "The solution to jitter is to use *fixed timestep interpolation*, which "
 "involves smoothing the rendered positions and rotations over multiple frames "
@@ -108984,15 +109020,15 @@ msgid ""
 "It's orders of magnitude faster, so this can be a significant performance "
 "win while also reducing jitter."
 msgstr ""
-"La solución para el temblor es utilizar la \"interpolación de pasos de "
-"tiempo fijos\" (fixed timestep interpolation), que implica suavizar las "
-"posiciones y rotaciones renderizadas a lo largo de varios cuadros para que "
-"coincidan con la física. Puedes implementar esto por ti mismo o utilizar un "
-"`third-party addon <https://github.com/lawnjelly/smoothing-addon>`__. En "
-"cuanto al rendimiento, la interpolación es una operación muy económica en "
-"comparación con la ejecución de un tick de física. Es varias órdenes de "
-"magnitud más rápida, por lo que puede suponer un gran beneficio en "
-"rendimiento al tiempo que reduce el temblor."
+"La solución para el traqueteo es utilizar la *interpolación de pasos de "
+"tiempo fijos*, que implica suavizar las posiciones y rotaciones renderizadas "
+"a lo largo de varios cuadros para que coincidan con la física. Godot tiene "
+"física integrada subre la que puedes leer "
+":ref:`aquí<doc_physics_interpolation>`. En cuanto al rendimiento, la "
+"interpolación es una operación muy económica en comparación con la ejecución "
+"de un tick de física. Es varias órdenes de magnitud más rápida, por lo que "
+"puede suponer un gran beneficio en rendimiento al tiempo que reduce el "
+"traqueteo."
 
 #: ../../docs/tutorials/performance/gpu_optimization.rst:4
 msgid "GPU optimization"
@@ -109815,6 +109851,7 @@ msgstr ""
 #: ../../docs/tutorials/performance/pipeline_compilations.rst:4
 msgid "Reducing stutter from shader (pipeline) compilations"
 msgstr ""
+"Reducción de trastabilleo (stutter) por compilaciones de shader (pipeline)"
 
 #: ../../docs/tutorials/performance/pipeline_compilations.rst:6
 msgid ""
@@ -109875,6 +109912,11 @@ msgid ""
 "playthrough. **With Godot 4.4, new mechanisms have been introduced to "
 "mitigate stutters from pipeline compilation.**"
 msgstr ""
+"Antes de Godot 4.4, no había solución al pipeline de compilación excepto "
+"generarlos cuando un objeto aparece en la vista de la cámara, lo que llevó "
+"al infame *trastabilleo de shader* o trabas que sólo ocurren la primera vez "
+"que se juega.**Con Godot 4.4, se introdujeron nuevos mecanismos para mitigar "
+"trastabilleos por compilación de pipeline**"
 
 #: ../../docs/tutorials/performance/pipeline_compilations.rst:42
 msgid ""
@@ -109923,6 +109965,13 @@ msgid ""
 "These workarounds may be less necessary over time with future versions of "
 "Godot as more detection techniques are implemented."
 msgstr ""
+"Compilar pipelines por adelantado es el mecanismo principal que Godot usa "
+"para mitigar el trastabilleo de shader, pero no es una solución perfecta. "
+"Estar al tanto de las situaciones que pueden llevar al trastabilleo de "
+"pipeline puede ser muy útil, y las soluciones alternativas son bastante "
+"directas comparadas con versiones previas. Estas soluciones pueden ser menos "
+"necesarias con el tiempo en futuras versiones de Godot, conforme se "
+"implementen más técnicas de detección."
 
 #: ../../docs/tutorials/performance/pipeline_compilations.rst:78
 msgid ""
@@ -109937,6 +109986,17 @@ msgid ""
 "unable to experience them yourself without deleting your driver cache or "
 "testing on a weaker system."
 msgstr ""
+"El depurador de Godot ofrece monitores para registrar la cantidad de "
+"pipelines creadas por el juego y el paso que disparó su compilación. Puedes "
+"observar estos monitores mientras corre el juego para identificar fuentes "
+"potenciales de trastabilleo de shader sin tener que vaciar la caché del "
+"controlador cada vez que quieras hacer una prueva. Los incrementos "
+"repentinos de estos valores fuera de las pantallas de carga pueden aparecer "
+"como trabas durante el juego la primera vez que alguien lo juega en su "
+"sistema. **Se recomienda que vigiles estos monitores para indentificar "
+"posibles fuentes de trastabilleo para tus jugadores**, ya que puede que no "
+"los experimentes personalmente sin vaciar la caché del controlador o probar "
+"en un sistema más débil."
 
 #: ../../docs/tutorials/performance/pipeline_compilations.rst:88
 #, fuzzy
@@ -109962,6 +110022,9 @@ msgid ""
 "feature precompilation for 2D elements and stutters will show up when the 2D "
 "node is drawn for the first time."
 msgstr ""
+"**Lienzo**: Compilado al dibujar un nodo 2D. El motor actualmente no cuenta "
+"con precompilación de elementos 2D y trastabillea cuando el nodo 2D se "
+"dibuja por primera vez."
 
 #: ../../docs/tutorials/performance/pipeline_compilations.rst:103
 msgid ""
@@ -109971,6 +110034,12 @@ msgid ""
 "is loaded by using a background thread. **Modifiers that are part of nodes "
 "such as material overrides can't be compiled on this step**."
 msgstr ""
+"**Mesh**: Compilado como parte de cargar una malla 3D e identificar qué "
+"pipelines se pueden precompilar de sus propiedades. Estas pueden llevar a "
+"trastabilleos si una malla se carga durante el juego, pero se pueden mitigar "
+"si la malla se carga usando un hilo de fondo. **Los modificadores que son "
+"parte de nodos como sobreescrituras de materiales no se pueden compilar en "
+"este paso**."
 
 #: ../../docs/tutorials/performance/pipeline_compilations.rst:108
 msgid ""
@@ -109981,6 +110050,12 @@ msgid ""
 "which won't result in an obvious stutter if it happens right after a loading "
 "screen."
 msgstr ""
+"**Surface**: Compilado cuando un fotograma está a punto de dibujarse y los "
+"objetos 3D fueron instanciados en el árbol de escenas por primera vez. Esto "
+"también puede incluir compilación para los nodos que no son visibles en el "
+"árbol de escenas. El trastabilleo ocurrirá solamente en el primer fotograma "
+"que el nodo sea añadido a la escena, lo que no resultará en un trastabilleo "
+"obvio si pasa justo después de una pantala de carga."
 
 #: ../../docs/tutorials/performance/pipeline_compilations.rst:113
 msgid ""
@@ -109993,6 +110068,15 @@ msgid ""
 "godotengine/godot/issues>` as this should never happen with the Ubershader "
 "system. Make sure to attach a minimal reproduction project when doing so."
 msgstr ""
+"**Draw**: Compilado bajo demanda cuando un objeto 3D necesita dibujarse y un "
+"ubershader no se precompiló por adelantado. El motor no puede precompilar "
+"esta pipeline ya que dispara un caso que aún no ha sido cubierto o una "
+"modificación que se hizo al código del motor. Causa trastabilleos durante el "
+"juego. Esto es idéntico a versiones de Godot antes de 4.4. Si ves "
+"compilaciones aquí, por favor `notifica a los desarrolladores <https://"
+"github.com/godotengine/godot/issues>` ya que esto no debería pasar jamás con "
+"el sistema Ubershader. Asegúrate de adjuntar un projecto mínimo de "
+"reproducción al hacerlo."
 
 #: ../../docs/tutorials/performance/pipeline_compilations.rst:122
 msgid ""
@@ -110000,6 +110084,10 @@ msgid ""
 "the framerate. Unable to cause stutters, but may result in reduced "
 "framerates if there are many happening per frame."
 msgstr ""
+"**Specialization**: Compilado al fondo durante el juego para optimizar la "
+"frecuencia de fotogramas. No puede causar trastabilleos, pero podría "
+"resultar en frecuencias de fotogramas reducidas si hay demasiados por "
+"fotograma."
 
 #: ../../docs/tutorials/performance/pipeline_compilations.rst:127
 msgid "Pipeline precompilation features"
@@ -110035,6 +110123,11 @@ msgid ""
 "features from configuration screens if necessary and insert loading screens "
 "and messages when the changes are applied."
 msgstr ""
+"También debes tener en cuenta que cambiar cualquiera de estas "
+"características durante el juego resultará en trastabilleos inmediatos. "
+"Asegúrate de sólo cambiar estas características de las pantallas de "
+"configuración si es necesario e inserta pantallas y mensajes de carga al "
+"aplicar los cambios."
 
 #: ../../docs/tutorials/performance/pipeline_compilations.rst:149
 msgid ""
@@ -110043,6 +110136,11 @@ msgid ""
 "viewports will lead to stutters as the engine only keeps track of one level "
 "at a time to perform precompilation."
 msgstr ""
+"**MSAA Level**: Se activa cuando el nivel de MSAA 3D se cambia en la "
+"Configuración del Proyecto. Desafortunadamente, si se usan distintos niveles "
+"de MSAA en distintas ventanas de visualización causará trastabilleos, ya que "
+"el motor sólo lleva la cuenta de un nivel a la vez para realizar la "
+"precompilación."
 
 #: ../../docs/tutorials/performance/pipeline_compilations.rst:153
 msgid ""
@@ -110113,6 +110211,11 @@ msgid ""
 "feature was not enabled ahead of time. Ensuring that this effect is enabled "
 "while loading your game will likely mitigate the issue."
 msgstr ""
+"Si presencias trastabilleos durante el juego y los monitores reportan un "
+"incremento repentino en compilaciones durante el paso **Surface**, es muy "
+"probable que una característica no haya sido activada antes de tiempo. "
+"Asegurarte de que este efecto esté activado mientras carga tu juego podría "
+"mitigar el problema."
 
 #: ../../docs/tutorials/performance/pipeline_compilations.rst:181
 msgid "Pipeline precompilation instancing"
@@ -110127,6 +110230,13 @@ msgid ""
 "is preloaded, the engine might be unable to precompile the pipelines until "
 "the effect is added to the scene at least once."
 msgstr ""
+"Una fuente común de trastabilleos en los juegos es que algunos efectos sólo "
+"se instancian en la escena con interacciones que sólo suceden durante el "
+"juego. Por ejemplo, si tienes un efecto de partículas que sólo se agrega a "
+"la escena a través de un script cuando un jugador hace una acción. Incluso "
+"si una escena está precargada, puede que el motor no sea capaz de "
+"precompilar las pipelines hasta que el efecto se agregue a la escena al "
+"menos una vez."
 
 #: ../../docs/tutorials/performance/pipeline_compilations.rst:190
 msgid ""
@@ -110177,6 +110287,14 @@ msgid ""
 "conversion step required. Godot's own shaders use GLSL and SPIR-V, but "
 "Direct3D 12 and Metal use different formats."
 msgstr ""
+"A partir de Godot 4.5, tienes la opción de incrustar shaders al exportar "
+"para mejorar el tiempo de inicio. Esto generalmente no resolverá "
+"trastabilleos existentes, pero reducirá el tiempo que tome cargar el juego "
+"por primera vez. Esto es especialmente cierto cuando se usa Direct3D 12 o "
+"Metal, que tienen tiempos iniciales de compilación de shader "
+"significativamente más lentos que Vulkan debido al paso de conversión "
+"requerico. Los shaders propios de Godot usan GLSL and SPIR-V, pero Direct3D "
+"12 y Metal usan formatos distintos."
 
 #: ../../docs/tutorials/performance/pipeline_compilations.rst:227
 msgid ""
@@ -116546,6 +116664,9 @@ msgid ""
 "doesn't benefit from increased precision. Materials using triplanar mapping "
 "will exhibit visible jittering when far away from the world origin."
 msgstr ""
+"El :ref:`mapeo triplanar <doc_standard_material_3d_triplanar_mapping>` no se "
+"beneficia de incrementar la preciión. Los materiales que usan mapeo "
+"triplanar exhibirán traqueteo visible al alejarse del origen del mundo."
 
 #: ../../docs/tutorials/physics/large_world_coordinates.rst:232
 msgid ""
@@ -116630,6 +116751,15 @@ msgid ""
 "too slow for 60 and only reach the deadlines for 30 FPS, in which case the "
 "frames you see will change at 30 FPS (resulting in stuttering)."
 msgstr ""
+"Sin embargo, el motor no necesariamente **renderiza** con la misma "
+"frecuencia. Aunque muchos monitores se actualizan a 60 Hz (ciclos por "
+"segundo), muchos lo hacen a frecuencias completamente distintas (por ejemplo "
+"75 Hz, 144 Hz, 240 Hz o más). Aunque un monitor pueda mostrar un nuevo "
+"fotograma, por ejemplo, 60 veces por segundo, nada garantiza que el CPU y "
+"GPU podrán *suministrar* fotogramas a esta frecuencia. Por ejemplo, al "
+"correr con V-Sync, la computadora puede ser demasiado lenta para 60 y sólo "
+"alcanzar los plazos a 30FPS, en cuyo caso los fotogramas que veas cambiarán "
+"a 30FPS (lo que resulta en trastabilleo)."
 
 #: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:23
 msgid ""
@@ -117095,6 +117225,11 @@ msgid ""
 "longer limited to values that are multiples of the user's monitor refresh "
 "rate (for stutter-free gameplay if the target FPS is reached)."
 msgstr ""
+"Al usar interpolación de física, la renderización se desacopla de la física, "
+"y puedes usar cualquier valor que tenga sentido para tu juego. Ya no te "
+"limita a valores que sean múltiplos de la frecuencia de actualización del "
+"monitor de usuario (para jugar sin trastabilleos si se alcanza en los FPS "
+"deseados)."
 
 #: ../../docs/tutorials/physics/interpolation/using_physics_interpolation.rst:82
 msgid "As a rough guide:"
@@ -119575,9 +119710,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/android/resolving_crashes_on_android.rst:33
-#, fuzzy
 msgid "For example,"
-msgstr "Por ejemplo:"
+msgstr "Por ejemplo,"
 
 #: ../../docs/tutorials/platform/android/resolving_crashes_on_android.rst:39
 msgid ""
@@ -126648,6 +126782,12 @@ msgid ""
 "contrast, **Exclusive Fullscreen** uses the actual screen size and allows "
 "Windows to reduce jitter and input lag for fullscreen games."
 msgstr ""
+"La **pantalla completa** está diseñada para aplicaciones de GUI que quieran "
+"usar transparencia píxel a píxel sin riesgo de que el sistema operativo la "
+"deshabilite. Esto lo logra al dejar una línea de un píxel al fondo de la "
+"pantalla. En contraste, la **pantalla completa exclusiva** usa el tamaño "
+"real de la pantalla y permite que Windows reduzca el traqueteo y el retraso "
+"de entrada en juegos de pantalla completa."
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:358
 msgid ""
@@ -127140,14 +127280,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:4
-#, fuzzy
 msgid "Fixing jitter, stutter and input lag"
-msgstr "Corrigiendo el temblor y el tartamudeo"
+msgstr "Corrección del traqueteo, trastabilleo y retraso de entrada"
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:7
-#, fuzzy
 msgid "What is jitter, stutter and input lag?"
-msgstr "¿Qué son el jitter y el stutter?"
+msgstr "¿Qué son el jitter, stutter y el retraso de entrada?"
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:9
 msgid ""
@@ -127156,11 +127294,12 @@ msgid ""
 "These effects are mostly visible in games where the world moves at a "
 "constant speed in a fixed direction, like runners or platformers."
 msgstr ""
-"*Jitter* y *stutter* son dos alteraciones diferentes en el movimiento "
-"visible de objetos en la pantalla que pueden afectar a un juego, incluso "
-"cuando se ejecuta a velocidad completa. Estos efectos son principalmente "
-"visibles en juegos donde el mundo se mueve a una velocidad constante en una "
-"dirección fija, como juegos de carreras o plataformas."
+"El *traqueteo* (jitter) y *trastabilleo* (stutter) son dos alteraciones "
+"diferentes en el movimiento visible de objetos en la pantalla que pueden "
+"afectar a un juego, incluso cuando se ejecuta a velocidad completa. Estos "
+"efectos son principalmente visibles en juegos donde el mundo se mueve a una "
+"velocidad constante en una dirección fija, como juegos de carreras o "
+"plataformas."
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:14
 msgid ""
@@ -127172,11 +127311,18 @@ msgid ""
 "first-person games. Input lag can't be completely eliminated, but it can be "
 "reduced in several ways."
 msgstr ""
+"El *retraso de entrada* (input lag) no se relaciona con el traqueteo y "
+"trastabilleo, pero suelen discutirse juntos. El retraso de entrada se "
+"refiere a una demora visible en pantalla al realizar acciones con el ratón, "
+"teclado, mando o pantalla táctil. Puede relacionarse con el código del "
+"juego, del motor o con factores externos (como el hardware). El retraso de "
+"entrada es más notorio en juegos que usan el ratón para apuntar, como los "
+"juegos en primera persona. Este retraso no se puede eliminar por completo, "
+"pero se puede reducir de varias maneras."
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:22
-#, fuzzy
 msgid "Distinguishing between jitter and stutter"
-msgstr "Distinguiéndolos"
+msgstr "Distinguiendo el traqueteo y trastabilleo (jitter vs stutter)"
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:24
 msgid ""
@@ -127189,7 +127335,7 @@ msgstr ""
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:28
 msgid "A game exhibiting *jitter* will shake constantly in a very subtle way:"
 msgstr ""
-"Un juego que presenta *jitter* se sacudirá constantemente de manera muy "
+"Un juego que presenta *traqueteo* se sacudirá constantemente de manera muy "
 "sutil:"
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:32
@@ -127197,40 +127343,38 @@ msgid ""
 "Finally, a game exhibiting *stutter* will appear smooth, but appear to "
 "*stop* or *roll back a frame* every few seconds:"
 msgstr ""
-"Finalmente, un juego que presenta *stutter* parecerá suave, pero dará la "
-"impresión de *detenerse* o *retroceder un fotograma* cada pocos segundos:"
+"Finalmente, un juego que presenta *trastabilleo* parecerá suave, pero dará "
+"la impresión de *detenerse* o *retroceder un fotograma* cada pocos segundos:"
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:38
 msgid "Jitter"
-msgstr "Jitter (temblor)"
+msgstr "Jitter (traqueteo)"
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:40
-#, fuzzy
 msgid ""
 "There can be many causes of jitter. The most typical one happens when the "
 "game *physics frequency* (usually 60 Hz) runs at a different resolution than "
 "the monitor refresh rate. Check whether your monitor refresh rate is "
 "different from 60 Hz."
 msgstr ""
-"Puedes haber muchas causas de jitter, la más típica ocurre cuando la "
-"frecuencia de físicas del juego (generalmente 60 Hz) se ejecuta a una "
+"Puedes haber muchas causas de jitter. La más típica ocurre cuando la "
+"*frecuencia de física* del juego (generalmente 60 Hz) se ejecuta a una "
 "resolución diferente a la frecuencia de actualización del monitor. Verifica "
 "si la frecuencia de actualización de tu monitor es diferente de 60 Hz."
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:45
-#, fuzzy
 msgid ""
 "Sometimes, only some objects appear to jitter (character or background). "
 "This happens when they are processed in different time sources (one is "
 "processed in the physics step while another is processed in the idle step)."
 msgstr ""
-"En ocasiones, solo algunos objetos parecen temblar (como el personaje o el "
-"fondo). Esto ocurre cuando se procesan en fuentes de tiempo diferentes (uno "
-"se procesa en el paso de físicas mientras que otro se procesa en el paso "
-"inactivo). Godot 3.1 ha realizado algunas mejoras en este aspecto, desde "
-"permitir que los cuerpos cinemáticos sean animados en el ciclo _process "
-"regular, hasta correcciones adicionales en el temporizador de cuadros (frame "
-"timer) para abordar este problema."
+"En ocasiones, solo algunos objetos parecen traquetear (como el personaje o "
+"el fondo). Esto ocurre cuando se procesan en fuentes de tiempo diferentes "
+"(uno se procesa en el paso de físicas mientras que otro se procesa en el "
+"paso inactivo). Godot 3.1 ha realizado algunas mejoras en este aspecto, "
+"desde permitir que los cuerpos cinemáticos sean animados en el ciclo "
+"_process regular, hasta correcciones adicionales en el temporizador de "
+"cuadros (frame timer) para abordar este problema."
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:49
 msgid ""
@@ -127241,6 +127385,13 @@ msgid ""
 "way, the visual representation of physics objects will always look smooth no "
 "matter the framerate and physics tick rate."
 msgstr ""
+"Esta causa de traqueteo se puede reducir al activar :ref:`interpolación de "
+"física <doc_physics_interpolation_quick_start_guide>` en la Configuración "
+"del Proyecto. La interpolación de física suavisará las actualizaciones de "
+"física interpolando las transformaciones de objetos de física entre "
+"fotogramas de física. De esta manera, la representación de objetos de física "
+"siempre se verá fluida sin importar la frecuencia de fotogramas o la de tick "
+"de física."
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:56
 msgid ""
@@ -127259,20 +127410,26 @@ msgid ""
 "in input lag can be compensated by increasing the physics tick rate as "
 "described in the :ref:`doc_jitter_stutter_input_lag` section."
 msgstr ""
+"Activar la interpolación de física incrementará el retraso de entrada en "
+"comportamientos que dependan del tick de física, como el movimiento del "
+"jugador. En la mayoría de los juegos esto suele ser preferible al traqueteo, "
+"pero considéralo cuidadosamente con juegos que operen en una frecuencia de "
+"fotograma fija (como juegos de ritmo o de pelea). Este incremento en retraso "
+"de entrada se puede compensar al incrementar la frecuencia de tick de física "
+"como se describe en la sección  :ref:`doc_jitter_stutter_input_lag`."
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:72
 msgid "Stutter"
-msgstr "Stutter (tartamudeo)"
+msgstr "Stutter (trastabilleo)"
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:74
-#, fuzzy
 msgid ""
 "Stutter may happen due to several different reasons. One reason is the game "
 "not being able to keep full framerate performance due to a CPU or GPU "
 "bottleneck. Solving this is game-specific and will "
 "require :ref:`optimization <doc_general_optimization>`."
 msgstr ""
-"El tartamudeo puede ocurrir debido a dos razones diferentes. La primera y "
+"El trastabilleo puede ocurrir debido a dos razones diferentes. La primera y "
 "más obvia es que el juego no pueda mantener un rendimiento de fotogramas "
 "completo. Resolver esto es específico del juego y requerirá optimización "
 "para mejorar el rendimiento."
@@ -127285,6 +127442,12 @@ msgid ""
 "generally only happens on the first playthrough, or after a graphics driver "
 "update when the shader cache is invalidated."
 msgstr ""
+"Otro motivo de trastabilleo común es el *trastabilleo por compilación de "
+"shader*. Este ocurre cuando un shader necesita compilarse porque un nuevo "
+"material o efecto de partículas apareció en el juego. Este tipo de "
+"trastabilleo generalmente sólo pasa durante el primer jeugo, o después de "
+"una actualización del controlador gráfico en la que la caché del shader es "
+"invalidada."
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:84
 msgid ""
@@ -127295,6 +127458,13 @@ msgid ""
 "the scene/resource is loaded, as opposed as to when it's being drawn for the "
 "first time. See :ref:`doc_pipeline_compilations` for more information."
 msgstr ""
+"A partir de Godot 4.4, al usar los renderizadores Forward+ o Móvil, el motor "
+"intenta evitar trastabilleo por compilación de shader usando un enfoque "
+"ubershader. Para que este enfoque sea más efectivo, hay que tener cuidado al "
+"diseñar escenas y recursos apra que Godot pueda recolectar toda la "
+"información posible cuando la escena/recurso cargue, en lugar de cuando se "
+"dibuja por primera vez. Ver :ref:`doc_pipeline_compilations` para más "
+"información."
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:91
 msgid ""
@@ -127307,6 +127477,15 @@ msgid ""
 "be done behind solid 2D UI (such as a fullscreen :ref:`class_ColorRect` "
 "node) so that it's not visible to the player."
 msgstr ""
+"Sin embargo, al usar el renderizador de Compatibilidad, no se puede usar "
+"este enfoque ubershader debido a limitaciones técnicas en OpenGL. Por lo "
+"tanto, para evitar el trastabilleo por compilación de shader en el "
+"renderizador de Compatibilidad, necesitarás aparecer cada malla y efecto "
+"visual frente a la cámara por un solo fotograma cuando el nivel esté "
+"cargando. Esto asegura que el shader esté compilado cuando cargue el nivel, "
+"en lugar de ocurrir durante el juego. Esto se puede hacer detrás de una UI "
+"2D sólida (tal como un nodo :ref:`class_ColorRect` de pantalla completa) "
+"para que no sea visible al jugador."
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:101
 msgid ""
@@ -127318,24 +127497,33 @@ msgid ""
 "stuttering without introducing tearing. However, it will not help with large "
 "stutters, such as the ones caused by shader compilation stutter."
 msgstr ""
+"En las plataformas que soporten la desactivación de V-Sync, el trastabilleo "
+"se puede hacer menos notable al desactivar V-Sync en la configuración del "
+"proyecto. Sin embargo, esto causará que aparezcan rasgaduras, en especial en "
+"monitores con bajas frecuencias de actualización. Si tu monitor lo soporta, "
+"considera activar la frecuencia de actualización variable (G-Sync/FreeSync) "
+"dejando V-Sync activado. Esto permite mitigar algunas formas de trastabilleo "
+"sin introducir rasgaduras. Sin embargo, no ayudará con trastabilleos "
+"grandes, como los causados por compilación de shader."
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:109
 msgid ""
 "Forcing your graphics card to use the maximum performance profile can also "
 "help reduce stuttering, at the cost of increased GPU power draw."
 msgstr ""
+"Forzar tu targeta gráfica a usar el perfil de máximo rendimiento también "
+"puede ayudar a reducir los trastabilleos, al costo de mayor toma de poder "
+"del GPU."
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:112
-#, fuzzy
 msgid ""
 "Additionally, stutter may be induced by the underlying operating system. "
 "Here is some information regarding stutter on different OSes:"
 msgstr ""
-"Además, el sistema operativo subyacente puede inducir el tartamudeo. Aquí "
-"hay información sobre el tartamudeo en diferentes sistemas operativos:"
+"Además, el sistema operativo subyacente puede inducir el trastabilleo. Aquí "
+"hay información sobre el trastabilleo en diferentes sistemas operativos:"
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:118
-#, fuzzy
 msgid ""
 "Windows is known to cause stutter in windowed games. This mostly depends on "
 "the hardware installed, drivers version and processes running in parallel "
@@ -127343,14 +127531,14 @@ msgid ""
 "avoid this, Godot raises the game priority to \"Above Normal\". This helps "
 "considerably, but may not completely eliminate stutter."
 msgstr ""
-"Windows es conocido por causar tartamudeo en juegos en modo de ventana. Esto "
-"depende en gran medida del hardware instalado, la versión de los "
+"Windows es conocido por causar trastabilleo en juegos en modo de ventana. "
+"Esto depende en gran medida del hardware instalado, la versión de los "
 "controladores y los procesos que se ejecutan en paralelo (por ejemplo, tener "
-"muchas pestañas de navegador abiertas puede causar tartamudeo en un juego en "
-"ejecución). Para evitar esto, a partir de la versión 3.1, Godot eleva la "
+"muchas pestañas de navegador abiertas puede causar trastabilleo en un juego "
+"en ejecución). Para evitar esto, a partir de la versión 3.1, Godot eleva la "
 "prioridad del juego a \"por encima de lo normal\". Esto ayuda "
 "considerablemente, pero es posible que no elimine completamente el "
-"tartamudeo."
+"trastabilleo."
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:124
 #, fuzzy
@@ -127375,8 +127563,8 @@ msgid ""
 "longer visible and very rare. This is how most games are played."
 msgstr ""
 "Para el modo de pantalla completa, Windows otorga una prioridad especial al "
-"juego, por lo que el tartamudeo ya no es visible y es muy raro. Así es como "
-"se juega la mayoría de los juegos."
+"juego, por lo que el trastabilleo ya no es visible y es muy raro. Así es "
+"como se juega la mayoría de los juegos."
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:133
 msgid ""
@@ -127387,7 +127575,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:153
-#, fuzzy
 msgid ""
 "Stutter may be visible on desktop Linux, but this is usually associated with "
 "different video drivers and compositors. Some compositors may also trigger "
@@ -127396,25 +127583,26 @@ msgid ""
 "you to manually disable compositing, which can improve performance (at the "
 "cost of tearing)."
 msgstr ""
-"El tartamudeo puede ser visible en Desktop Linux, pero esto generalmente "
-"está asociado con diferentes controladores de video y compositores. Los "
-"controladores Nouveau a menudo presentan este problema, mientras que los "
-"controladores propietarios de AMD o NVidia no lo hacen. Algunos compositores "
-"también pueden desencadenar este problema (por ejemplo, KWin), por lo que se "
-"recomienda probar con un compositor diferente para descartarlo como causa "
-"del tartamudeo."
+"El trastabilleo puede ser visible en Desktop Linux, pero esto generalmente "
+"está asociado con diferentes controladores de video y compositores. Algunos "
+"compositores también pueden desencadenar este problema (por ejemplo, KWin), "
+"por lo que se recomienda probar con un compositor diferente para descartarlo "
+"como causa. Algunos gestores de ventanas como KWin y Xfwm permiten "
+"desactivar la composición manualmente, lo que puede mejorar el rendimiento "
+"(al costo de rasgaduras.)"
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:160
-#, fuzzy
 msgid ""
 "There is no workaround for driver or compositor stuttering, other than "
 "reporting it as an issue to the driver or compositor developers. Stutter may "
 "be more present when playing in windowed mode as opposed to fullscreen, even "
 "with compositing disabled."
 msgstr ""
-"No hay una solución alternativa para el tartamudeo causado por los "
+"No hay una solución alternativa para el trastabilleo causado por los "
 "controladores o compositores, aparte de informarlo como un problema a los "
-"desarrolladores de los controladores o compositores."
+"desarrolladores de los controladores o compositores. El trastabilleo puede "
+"estar más presente cuando se juega en modo de ventana en lugar de pantalla "
+"completa, incluso con la composición desactivada."
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:165
 msgid ""
@@ -127429,7 +127617,7 @@ msgid ""
 "when running on fullscreen (this is a macOS bug). If you have a machine "
 "exhibiting this behavior, please let us know."
 msgstr ""
-"En general, macOS no presenta tartamudeo, aunque recientemente se han "
+"En general, macOS no presenta trastabilleo, aunque recientemente se han "
 "reportado algunos errores al ejecutar en pantalla completa (esto es un error "
 "de macOS). Si tienes una máquina que muestra este comportamiento, por favor "
 "avísanos."
@@ -127441,10 +127629,11 @@ msgid ""
 "Kindle Fire is known to be one). If you see this problem on Android, please "
 "let us know."
 msgstr ""
-"En general, Android no presenta tartamudeo ni sacudidas porque la actividad "
-"en ejecución obtiene toda la prioridad. Dicho esto, puede haber dispositivos "
-"problemáticos (se sabe que algunos modelos antiguos de Kindle Fire presentan "
-"este problema). Si ves este problema en Android, por favor avísanos."
+"En general, Android no presenta trastabilleo ni traqueteo porque la "
+"actividad en ejecución obtiene toda la prioridad. Dicho esto, puede haber "
+"dispositivos problemáticos (se sabe que algunos modelos antiguos de Kindle "
+"Fire presentan este problema). Si ves este problema en Android, por favor "
+"avísanos."
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:186
 msgid ""
@@ -127452,7 +127641,7 @@ msgid ""
 "versions of the operating system may exhibit problems. This is generally "
 "unavoidable."
 msgstr ""
-"Los dispositivos iOS generalmente no presentan tartamudeo, pero los "
+"Los dispositivos iOS generalmente no presentan trastabilleo, pero los "
 "dispositivos más antiguos que ejecutan versiones más recientes del sistema "
 "operativo pueden experimentar problemas. Esto generalmente es inevitable."
 
@@ -127491,7 +127680,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:214
-#, fuzzy
 msgid ""
 "Increasing the number of physics iterations per second can also reduce "
 "physics-induced input latency. This is especially noticeable when using "
@@ -127512,7 +127700,7 @@ msgstr ""
 "configure ``Engine.physics_ticks_per_second`` en tiempo de ejecución en un "
 "script. Los valores que son un múltiplo de la frecuencia de actualización "
 "del monitor (normalmente ``60``) funcionan mejor cuando la interpolación "
-"física está deshabilitada, ya que evitarán la vibración. Esto significa que "
+"física está deshabilitada, ya que evitarán el traqueteo. Esto significa que "
 "valores como ``120``, ``180`` y ``240`` son buenos puntos de partida. Como "
 "beneficio adicional, los FPS de física más altos hacen que sea menos "
 "probable que ocurran problemas de tunelización e inestabilidad física."
@@ -127630,9 +127818,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:286
-#, fuzzy
 msgid "Reporting jitter, stutter or input lag problems"
-msgstr "Informar problemas de tartamudeo o sacudidas"
+msgstr "Informar problemas de traqueteo, trastabilleo o retraso de entrada"
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:288
 msgid ""
@@ -127641,7 +127828,7 @@ msgid ""
 "information possible about device, operating system, driver versions, etc. "
 "This may help to better troubleshoot it."
 msgstr ""
-"Si estás informando un problema de tartamudeo o sacudidas (abriendo un "
+"Si estás informando un problema de trastabilleo o traqueteo (abriendo un "
 "reporte) que no es causado por ninguna de las razones mencionadas "
 "anteriormente, por favor especifica de manera muy clara toda la información "
 "posible sobre el dispositivo, el sistema operativo, las versiones de los "
@@ -127659,17 +127846,17 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:300
-#, fuzzy
 msgid ""
 "Also, make sure to use the correct term (jitter, stutter, input lag) based "
 "on the exhibited behavior. This will help understand your issue much faster. "
 "Provide a project that can be used to reproduce the issue, and if possible, "
 "include a screen capture demonstrating the bug."
 msgstr ""
-"Asegúrate también de usar el término correcto (jitter o stutter) basado en "
-"el comportamiento exhibido. Esto ayudará a comprender tu problema mucho más "
-"rápido. Proporciona un proyecto que se pueda utilizar para reproducir el "
-"problema y, si es posible, una captura de pantalla que muestre el error."
+"Asegúrate también de usar el término correcto (traqueteo, trastabilleo, "
+"retraso de entrada) basado en el comportamiento exhibido. Esto ayudará a "
+"comprender tu problema mucho más rápido. Proporciona un proyecto que se "
+"pueda utilizar para reproducir el problema y, si es posible, una captura de "
+"pantalla que muestre el error."
 
 #: ../../docs/tutorials/rendering/compositor.rst:4
 msgid "The Compositor"
@@ -145520,9 +145707,8 @@ msgid "Using your own toolchain file"
 msgstr "Enviando su propia notificación de abandono"
 
 #: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:329
-#, fuzzy
 msgid "As described in the CMake documentation:"
-msgstr "Redactando documentación"
+msgstr "Como se describe en la documentación de CMake:"
 
 #: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:336
 msgid "Doing the equivalent just using the command line:"
@@ -145538,9 +145724,8 @@ msgid "This defaults to the minimum supported version and armv7-a:"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:358
-#, fuzzy
 msgid "Specifying the Android platform and ABI:"
-msgstr "Android SDK Platform 31"
+msgstr "Especificación de la plataforma Android y ABI:"
 
 #: ../../docs/tutorials/scripting/cpp/build_system/scons.rst:4
 msgid "Main build system: Working with SCons"
@@ -168779,9 +168964,8 @@ msgstr ""
 "de cero."
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:241
-#, fuzzy
 msgid "Mesh Emitter"
-msgstr "Jitter (temblor)"
+msgstr "Emisor de Mesh"
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:243
 msgid ""
@@ -174262,6 +174446,8 @@ msgid ""
 "There is less stuttering when rendering characters *at large font sizes* for "
 "the first time, as there is no rasterization performed."
 msgstr ""
+"Hay menos trastabilleo cuando se renderizan caracteres *en tamaños de fuente "
+"grandes* por primera vez, ya que no se realiza una rasterización."
 
 #: ../../docs/tutorials/ui/gui_using_fonts.rst:365
 #, fuzzy
@@ -175124,6 +175310,11 @@ msgid ""
 "first time a glyph is displayed when running the project. This can be "
 "especially noticeable at higher font sizes or on mobile devices."
 msgstr ""
+"Al usar fuentes tradicionales rasterizadas, Godot agrega glifos a la caché "
+"por fuente y por tamaño. Esto reduce el trastabilleo, pero aún puede ocurrir "
+"la primera vez que se muestra un glifo al ejecutar el proyecto. ESto puede "
+"ser especialmente notorio en tamaños de fuente grandes o en dispositivos "
+"móviles."
 
 #: ../../docs/tutorials/ui/gui_using_fonts.rst:863
 msgid ""
@@ -175142,6 +175333,12 @@ msgid ""
 "appear during gameplay (to reduce file size). Glyphs that aren't pre-"
 "rendered will be rasterized on-the-fly as usual."
 msgstr ""
+"Para evitar problemas de trastabilleo relacionados con el renderizado de "
+"fuentes, es posible *prerrenderizar* ciertos glifos. Esto se puede hacer "
+"para todos los glifos que planees usar (para resultados óptimos) o sólo para "
+"glifos comunes que sea más probable que aparezcan durante el juego (para "
+"reducir el tamaño de archivo). Los glifos que no sean pre-renderizados se "
+"rasterizarán sobre la marcha como de costumbre."
 
 #: ../../docs/tutorials/ui/gui_using_fonts.rst:877
 msgid ""
@@ -175683,8 +175880,8 @@ msgstr ""
 "En la mayoría de los casos, puedes usar BBCode directamente tal cual, ya que "
 "formatear texto rara vez es una tarea compleja. Sin embargo, con "
 "RichTextLabels particularmente grandes (como los registros de consola que "
-"abarcan miles de líneas), podrías experimentar interrupciones durante el "
-"juego al actualizar el texto de RichTextLabels."
+"abarcan miles de líneas), podrías experimentar trastabilleo durante el juego "
+"al actualizar el texto de RichTextLabels."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:172
 msgid "There are several ways to alleviate this:"
@@ -175713,6 +175910,10 @@ msgid ""
 "which avoids stuttering during gameplay. Only enable threading if it's "
 "actually needed in your project, as threading has some overhead."
 msgstr ""
+"Activa la propiedad **Hilos > Hilado** en RichTextLabel. Esto no acelerará "
+"el procesamiento, pero prevendrá que el hilo principal se bloquee, lo que "
+"evita trastabilleos durante el juego. Sólo activa el hilado si en realidad "
+"es necesario en tu proyecto, ya que el hilado tiene un cierto costo."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:187
 msgid "Using push_[tag]() and pop() functions instead of BBCode"
@@ -178068,6 +178269,13 @@ msgid ""
 "frames per second. Not matching the physics update rate will cause "
 "stuttering as frames are rendered without objects moving."
 msgstr ""
+"Finalmente emparejamos la frecuencia de actualización de nuestra fisica a la "
+"frecuencia de actualización de nuestros auriculares. Godot ejecuta una "
+"frecuencia de actualización de física de 60 actualizaciones por segundo por "
+"defecto mientras que los auriculares corren a un mínimo de 72, y para los "
+"auriculares modernos hasta 144 fotogramas por segundo. No igualar la "
+"frecuencia de actualización de la física causará trastabilleos mientras se "
+"renderizan los fotogramas sin objetos en movimiento."
 
 #: ../../docs/tutorials/xr/a_better_xr_start_script.rst:306
 msgid "On visible state"
@@ -183352,9 +183560,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1625
-#, fuzzy
 msgid "We add our discovery implementation:"
-msgstr "Implementaciones de referenca"
+msgstr "Agregamos nuestra implementación de descubrimiento:"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1743
 msgid "And we add our update functionality:"
@@ -186271,6 +186478,13 @@ msgid ""
 "when these features are used in a project. This can make shader compilation "
 "stutter more noticeable in complex 3D scenes."
 msgstr ""
+"Esto significa que hay una barrera más alta para agregar nuevas "
+"características de materiales integradas en Godot, tanto los shaders de "
+"núcleo como BaseMaterial3D. Aunque BaseMaterial3D puede usar generación "
+"dinámica de código si la característica está activada, requerirá generar aún "
+"más versiones de shader cuando esas características se usen en un proyecto. "
+"Esto puede hacer el trastabilleo por compilación de shader más notable en "
+"escenas 3D complejas."
 
 #: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:354
 msgid ""
@@ -186954,6 +187168,10 @@ msgid ""
 "slowest). Depth of field can optionally be jittered every frame to improve "
 "its appearance when temporal antialiasing is enabled."
 msgstr ""
+"Hay formas bokeh de caja, hexágono y círculo disponibles (de más rápida a "
+"más lenta). La profundidad de campo puede traquetear cada fotograma "
+"opcionalmente para mejorar su apariencia cuando se activa el antialiasing "
+"temporal."
 
 #: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:621
 #, fuzzy
@@ -188933,7 +189151,6 @@ msgid "infinite_bus.h"
 msgstr ""
 
 #: ../../docs/engine_details/architecture/custom_godot_servers.rst:313
-#, fuzzy
 msgid ":ref:`RID<class_rid>`"
 msgstr ":ref:`RID<class_rid>`"
 

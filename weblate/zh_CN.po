@@ -421,7 +421,7 @@
 # Frank JIn <chinafrank0129@outlook.com>, 2025.
 # SJ Guo <gsj_ujj@163.com>, 2025.
 # Hangyu Dong <ImJingLan@126.com>, 2025.
-# garlicode <garlicode@outlook.com>, 2025.
+# garlicode <garlicode@outlook.com>, 2025, 2026.
 # HYTommm <3146776307@qq.com>, 2025.
 # Muye <820724947@qq.com>, 2025.
 # riceliker <riceliker@outlook.com>, 2025.
@@ -451,13 +451,22 @@
 # 向着星…… <17329730393@163.com>, 2025.
 # 杨晓辉 <youngxhui@gmail.com>, 2025.
 # Peng Kuang <kap.kuang@gmail.com>, 2025.
+# Linnnnnn <Rev0lve@outlook.com>, 2025.
+# Jason Xue <1120090920@qq.com>, 2025.
+# Ruoxi Dong <ruoxi.dong@gmail.com>, 2025.
+# mid or meepo <dongnanzhujian@gmail.com>, 2025.
+# Zhen Luo <461652354@qq.com>, 2025, 2026.
+# Maxio <tianriaku@users.noreply.hosted.weblate.org>, 2026.
+# MapleL <zihanyee@gmail.com>, 2026.
+# NotBadCrawler <458967599@qq.com>, 2026.
+# link <synapse.link@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2025-12-19 15:00+0100\n"
-"PO-Revision-Date: 2025-12-07 23:00+0000\n"
-"Last-Translator: Aistra <aistra0528@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2026-01-18 07:30+0000\n"
+"Last-Translator: link <synapse.link@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/godot-engine/godot-docs/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -465,7 +474,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -532,9 +541,8 @@ msgid "Class reference"
 msgstr "类参考"
 
 #: ../../docs/index.rst:4
-#, fuzzy
 msgid "Godot Docs – *master* branch"
-msgstr "Godot 文档 - *4.5* 分支"
+msgstr "Godot 文档 - *master* 分支"
 
 #: ../../docs/index.rst:8
 msgid ""
@@ -3903,9 +3911,8 @@ msgstr ""
 
 #: ../../docs/about/system_requirements.rst:268
 #: ../../docs/about/system_requirements.rst:274
-#, fuzzy
 msgid "*Example (Metal): Apple A12 (iPhone XR/XS)*"
-msgstr "*示例（Metal）：Apple A11（iPhone 8/X）*"
+msgstr "*示例（Metal）：Apple A12（iPhone XR/XS）*"
 
 #: ../../docs/about/system_requirements.rst:270
 msgid ""
@@ -5140,6 +5147,8 @@ msgid ""
 "to be used with its editor. We recommend you give it a try, as it will most "
 "likely save you time in the long term."
 msgstr ""
+"如果你打算用 Godot 制作游戏，请记住 Godot 是为配合其编辑器使用而设计的。我们"
+"建议你尝试一下，因为从长远来看，这很可能会为你节省时间。"
 
 #: ../../docs/about/faq.rst:491
 msgid ""
@@ -5149,6 +5158,9 @@ msgid ""
 "currently supported on Windows, macOS, and Linux. Support for Android and "
 "iOS is planned for a future release."
 msgstr ""
+"对于更专业的应用，考虑将Godot作为库来使用是有意义的。自Godot 4.6版本起，以"
+"LibGodot的形式提供了将Godot作为静态或共享库的**experimental**支持。目前，这已"
+"在Windows、macOS和Linux上得到支持。Android和iOS的支持计划在未来的版本中推出。"
 
 #: ../../docs/about/faq.rst:497
 msgid ""
@@ -5156,13 +5168,14 @@ msgid ""
 "libgodot_project GitHub repository <https://github.com/migeran/"
 "libgodot_project>`__."
 msgstr ""
+"你可以在 <https://github.com/migeran/libgodot_project> GitHub 存储库中找到使"
+"用 Godot 作为库的示例应用程序。"
 
 #: ../../docs/about/faq.rst:501
 msgid "What user interface toolkit does Godot use?"
 msgstr "Godot 使用的用户界面工具包是什么？"
 
 #: ../../docs/about/faq.rst:503
-#, fuzzy
 msgid ""
 "Godot does not use a standard :abbr:`GUI (Graphical User Interface)` toolkit "
 "like GTK, Qt or wxWidgets. Instead, Godot uses its own user interface "
@@ -5170,24 +5183,19 @@ msgid ""
 "built-in software fallback, although external solutions that emulate "
 "graphics APIs on the CPU can be used."
 msgstr ""
-"Godot 不使用 GTK、Qt、wxWidgets 等标准的 :abbr:`GUI (Graphical User "
-"Interface，图形用户界面)` 工具包，而是使用自己的用户界面工具包，使用 OpenGL "
-"ES 或 Vulkan 进行渲染。这个工具包以 Control 节点的形式暴露出来，用于渲染编辑"
-"器（用 C++ 编写）。这些 Control 节点也可以在 Godot 支持的任何脚本语言的项目中"
-"使用。"
+"Godot 不使用 GTK、Qt、wxWidgets 等标准的 :abbr:`GUI (Graphical User Interface"
+"，图形用户界面)` 工具包，而是使用自己的用户界面工具包，并且始终使用硬件加速进"
+"行渲染。尽管可以使用在 CPU 上模拟图形 API 的外部解决方案，但是没有内置的软件"
+"渲染回退。"
 
 #: ../../docs/about/faq.rst:508
-#, fuzzy
 msgid ""
 "This toolkit is exposed in the form of Control nodes, which are used to "
 "render the editor (which is written in C++). These Control nodes can also be "
 "used in projects from any scripting language supported by Godot."
 msgstr ""
-"Godot 不使用 GTK、Qt、wxWidgets 等标准的 :abbr:`GUI (Graphical User "
-"Interface，图形用户界面)` 工具包，而是使用自己的用户界面工具包，使用 OpenGL "
-"ES 或 Vulkan 进行渲染。这个工具包以 Control 节点的形式暴露出来，用于渲染编辑"
-"器（用 C++ 编写）。这些 Control 节点也可以在 Godot 支持的任何脚本语言的项目中"
-"使用。"
+"这个工具包以 Control 节点的形式暴露出来，用于渲染编辑器（用 C++ 编写）。这些 "
+"Control 节点也可以在 Godot 支持的任何脚本语言的项目中使用。"
 
 #: ../../docs/about/faq.rst:512
 msgid ""
@@ -5202,16 +5210,15 @@ msgstr ""
 "“自产自用”，因为编辑器本身就是 Godot UI 系统中最复杂的用例之一。"
 
 #: ../../docs/about/faq.rst:518
-#, fuzzy
 msgid ""
 "This custom UI toolkit can be :ref:`embedded into other applications "
 "<doc_faq_use_godot_as_library>` (experimental). However, the preferred way "
 "to use it is to :ref:`use Godot to create non-game applications with the "
 "editor <doc_faq_non_game_applications>`."
 msgstr ""
-"这个自定义 UI 工具包\\ :ref:`不能作为一个库使用 "
-"<doc_faq_use_godot_as_library>`\\ ，但你仍然可以\\ :ref:`通过使用 Godot 编辑"
-"器来创建非游戏应用程序<doc_faq_non_game_applications>`\\ 。"
+"这个自定义 UI 工具包可以\\ :ref:`嵌入其他应用程序 "
+"<doc_faq_use_godot_as_library>`\\（实验性），但是更推荐\\ :ref:`通过使用 "
+"Godot 编辑器来创建非游戏应用程序<doc_faq_non_game_applications>`\\ 。"
 
 #: ../../docs/about/faq.rst:525
 msgid "Why does Godot use the SCons build system?"
@@ -5888,14 +5895,12 @@ msgid "**Support level**"
 msgstr "**支持级别**"
 
 #: ../../docs/about/release_policy.rst:87
-#, fuzzy
 msgid "Godot 4.6 (`master`)"
-msgstr "Godot 4.5（`master`）"
+msgstr "Godot 4.6（`master`）"
 
 #: ../../docs/about/release_policy.rst:87
-#, fuzzy
 msgid "Q1 2026 (estimate)"
-msgstr "2025 年第三季度（预计）"
+msgstr "2026 年第一季度（预计）"
 
 #: ../../docs/about/release_policy.rst:87
 msgid ""
@@ -5910,14 +5915,12 @@ msgid "unstable"
 msgstr "不稳定版"
 
 #: ../../docs/about/release_policy.rst:90
-#, fuzzy
 msgid "Godot 4.5"
-msgstr "Godot 4.4"
+msgstr "Godot 4.5"
 
 #: ../../docs/about/release_policy.rst:90
-#, fuzzy
 msgid "September 2025"
-msgstr "2024 年 9 月"
+msgstr "2025 年 9 月"
 
 #: ../../docs/about/release_policy.rst:90
 #: ../../docs/about/release_policy.rst:106
@@ -5955,9 +5958,8 @@ msgid "August 2024"
 msgstr "2024 年 8 月"
 
 #: ../../docs/about/release_policy.rst:95
-#, fuzzy
 msgid "|eol| No longer supported (last update: 4.3)."
-msgstr "|eol| 不再支持（最后更新：4.1.4）。"
+msgstr "|eol| 不再支持（最后更新：4.3）。"
 
 #: ../../docs/about/release_policy.rst:132
 msgid "eol"
@@ -5972,9 +5974,8 @@ msgid "November 2023"
 msgstr "2023 年 11 月"
 
 #: ../../docs/about/release_policy.rst:97
-#, fuzzy
 msgid "|eol| No longer supported (last update: 4.2.2)."
-msgstr "|eol| 不再支持（最后更新：4.1.4）。"
+msgstr "|eol| 不再支持（最后更新：4.2.2）。"
 
 #: ../../docs/about/release_policy.rst:99
 msgid "Godot 4.1"
@@ -6033,9 +6034,8 @@ msgid "August 2022"
 msgstr "2022 年 8 月"
 
 #: ../../docs/about/release_policy.rst:109
-#, fuzzy
 msgid "|eol| No longer supported (last update: 3.5.3)."
-msgstr "|eol| 不再支持（最后更新：3.2.3）。"
+msgstr "|eol| 不再支持（最后更新：3.5.3）。"
 
 #: ../../docs/about/release_policy.rst:111
 msgid "Godot 3.4"
@@ -6467,7 +6467,6 @@ msgstr ""
 "添加的新页面的列表。"
 
 #: ../../docs/about/docs_changelog.rst:15
-#, fuzzy
 msgid ""
 "This document only contains new pages, so not all changes are reflected. "
 "Many pages have been substantially updated but are not reflected in this "
@@ -6477,14 +6476,12 @@ msgstr ""
 "文档中。"
 
 #: ../../docs/about/docs_changelog.rst:19
-#, fuzzy
 msgid "New pages since version 4.4"
-msgstr "4.3 版本加入的新页面"
+msgstr "4.4 版本加入的新页面"
 
 #: ../../docs/about/docs_changelog.rst:24
-#, fuzzy
 msgid ":ref:`doc_engine_compilation_configuration_editor`"
-msgstr "使用引擎编译配置编辑器"
+msgstr ":ref:`doc_engine_compilation_configuration_editor`"
 
 #: ../../docs/about/docs_changelog.rst:27
 #: ../../docs/about/docs_changelog.rst:114
@@ -6494,9 +6491,8 @@ msgid "GDExtension"
 msgstr "GDExtension"
 
 #: ../../docs/about/docs_changelog.rst:29
-#, fuzzy
 msgid ":ref:`doc_gdextension_c_example`"
-msgstr ":ref:`doc_gdextension_file`"
+msgstr ":ref:`doc_gdextension_c_example`"
 
 #: ../../docs/about/docs_changelog.rst:32
 #: ../../docs/about/docs_changelog.rst:66
@@ -6508,14 +6504,12 @@ msgid "Migrating"
 msgstr "迁移"
 
 #: ../../docs/about/docs_changelog.rst:34
-#, fuzzy
 msgid ":ref:`doc_upgrading_to_godot_4.5`"
-msgstr ":ref:`doc_upgrading_to_godot_4.3`"
+msgstr ":ref:`doc_upgrading_to_godot_4.5`"
 
 #: ../../docs/about/docs_changelog.rst:40
-#, fuzzy
 msgid ":ref:`doc_logging`"
-msgstr ":ref:`doc_ios_plugin`"
+msgstr ":ref:`doc_logging`"
 
 #: ../../docs/about/docs_changelog.rst:43
 msgid "New pages since version 4.3"
@@ -6561,9 +6555,8 @@ msgid ":ref:`doc_using_the_xr_editor`"
 msgstr ":ref:`doc_using_the_xr_editor`"
 
 #: ../../docs/about/docs_changelog.rst:68
-#, fuzzy
 msgid ":ref:`doc_upgrading_to_godot_4.4`"
-msgstr ":ref:`doc_upgrading_to_godot_4.3`"
+msgstr ":ref:`doc_upgrading_to_godot_4.4`"
 
 #: ../../docs/about/docs_changelog.rst:71
 #: ../../docs/tutorials/3d/global_illumination/introduction_to_global_illumination.rst:115
@@ -7669,7 +7662,6 @@ msgstr ""
 "Godot 依赖于面向对象编程范式。熟悉类和对象等概念将有助于你高效地编写代码。"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:114
-#, fuzzy
 msgid ""
 "If you are entirely new to programming, GDQuest's *Learn GDScript From Zero* "
 "is a free and open source interactive tutorial for absolute beginners to "
@@ -7677,10 +7669,10 @@ msgid ""
 "`desktop application <https://gdquest.itch.io/learn-godot-gdscript>`__ or "
 "`in the browser <https://gdquest.github.io/learn-gdscript>`__."
 msgstr ""
-"GDQuest 的 *Learn GDScript From Zero* 是一套自由和开源的交互式教程，面向完全"
-"的新手，学习使用 Godot 的 GDScript 语言进行编程。提供\\ `桌面应用 <https://"
-"gdquest.itch.io/learn-godot-gdscript>`_\\ 及\\ `网页版 <https://"
-"gdquest.github.io/learn-gdscript>`_\\ 。"
+"如果你完全没接触过编程，GDQuest 的 *Learn GDScript From Zero* 是一套自由和开"
+"源的交互式教程，面向绝对的新手学习使用 Godot 的 GDScript 语言进行编程。提供\\"
+"`桌面应用 <https://gdquest.itch.io/learn-godot-gdscript>`_\\ 及\\ `网页版 "
+"<https://gdquest.github.io/learn-gdscript>`_\\ 。"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:120
 msgid ""
@@ -8410,7 +8402,6 @@ msgstr ""
 "编程新手，我们推荐两个优秀的免费资源来帮助你入门："
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:69
-#, fuzzy
 msgid ""
 "GDQuest's *Learn GDScript From Zero* is a free and open source interactive "
 "tutorial for absolute beginners to learn to program with Godot's GDScript "
@@ -8418,10 +8409,10 @@ msgid ""
 "learn-godot-gdscript>`__ or `in the browser <https://gdquest.github.io/learn-"
 "gdscript>`__."
 msgstr ""
-"GDQuest 的 *Learn GDScript From Zero* 是一套自由和开源的交互式教程，面向完全"
-"的新手，学习使用 Godot 的 GDScript 语言进行编程。提供\\ `桌面应用 <https://"
-"gdquest.itch.io/learn-godot-gdscript>`_\\ 及\\ `网页版 <https://"
-"gdquest.github.io/learn-gdscript>`_\\ 。"
+"GDQuest 发布的 *Learn GDScript From Zero* 是一套免费，开源，且完全面向新手的 "
+"Godot 专属 GDScript 语言教程。你可以在<https://gdquest.itch.io/learn-godot-"
+"gdscript> 下载并安装桌面应用程序，或者通过网页版 <https://gdquest.github.io/"
+"learn-gdscript>来进行使用。"
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:75
 msgid ""
@@ -11456,22 +11447,20 @@ msgid "You can find a completed version of this project at this location:"
 msgstr "你可以在此位置找到本项目的完整版本："
 
 #: ../../docs/getting_started/first_2d_game/index.rst:45
-#, fuzzy
 msgid ""
 "`Dodge the Creeps source code (GDScript) <https://github.com/godotengine/"
 "godot-demo-projects/tree/master/2d/dodge_the_creeps>`__"
 msgstr ""
-"https://github.com/godotengine/godot-demo-projects/tree/master/2d/"
-"dodge_the_creeps"
+"`Dodge the Creeps 源码 (GDScript) <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/2d/dodge_the_creeps>`__"
 
 #: ../../docs/getting_started/first_2d_game/index.rst:46
-#, fuzzy
 msgid ""
 "`Dodge the Creeps source code (C#) <https://github.com/godotengine/godot-"
 "demo-projects/tree/master/mono/dodge_the_creeps>`__"
 msgstr ""
-"https://github.com/godotengine/godot-demo-projects/tree/master/2d/"
-"dodge_the_creeps"
+"`Dodge the Creeps 源代码（C#） <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/mono/dodge_the_creeps>`__"
 
 #: ../../docs/getting_started/first_2d_game/index.rst:49
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:34
@@ -13467,35 +13456,32 @@ msgid "Draw a user interface on a 3D game."
 msgstr "在 3D 游戏中绘制用户界面。"
 
 #: ../../docs/getting_started/first_3d_game/index.rst:32
-#, fuzzy
 msgid ""
 "This tutorial is for beginners who followed the complete getting started "
 "series. We'll start slow with detailed instructions and shorten them as we "
 "do similar steps. If you're an experienced programmer, you can browse the "
 "complete demo's source code here:"
 msgstr ""
-"本教程是为跟着入门系列一路过来的初学者准备的。开始时我们会慢一点，提供详尽的"
-"指导，后续类似的步骤则会简短一些。如果你是一位经验丰富的程序员，可以在这里查"
-"看完整的演示源码：\\ `Squash the Creep 源代码 <https://github.com/"
+"本教程是为跟着入门系列一路学过来的初学者准备的。开始时我们会慢一点，提供详尽"
+"的指导，后续类似的步骤则会简短一些。如果你是一位经验丰富的程序员，可以在这里"
+"查看完整的演示源码：\\ `Squash the Creep 源代码 <https://github.com/"
 "godotengine/godot-3d-dodge-the-creeps>`__\\ 。"
 
 #: ../../docs/getting_started/first_3d_game/index.rst:37
-#, fuzzy
 msgid ""
 "`Squash the Creeps source code (GDScript) <https://github.com/godotengine/"
 "godot-demo-projects/tree/master/3d/squash_the_creeps>`__"
 msgstr ""
-"https://github.com/godotengine/godot-demo-projects/tree/master/2d/"
-"dodge_the_creeps"
+"`Squash the Creeps 源代码（GDScript） <https://github.com/godotengine/godot-"
+"demo-projects/tree/master/3d/squash_the_creeps>`__"
 
 #: ../../docs/getting_started/first_3d_game/index.rst:38
-#, fuzzy
 msgid ""
 "`Squash the Creeps source code (C#) <https://github.com/godotengine/godot-"
 "demo-projects/tree/master/mono/squash_the_creeps>`__"
 msgstr ""
-"https://github.com/godotengine/godot-demo-projects/tree/master/2d/"
-"dodge_the_creeps"
+"`Squash the Creeps 源代码（C#） <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/mono/squash_the_creeps>`__"
 
 #: ../../docs/getting_started/first_3d_game/index.rst:42
 msgid ""
@@ -14531,11 +14517,12 @@ msgid "image8"
 msgstr "image8"
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:417
-#, fuzzy
 msgid ""
 "You can run the scene by pressing :kbd:`F6` (:kbd:`Cmd + R` on macOS) and "
 "press the arrow keys to move the character."
-msgstr "你可以按 :kbd:`F6` 运行场景，然后按方向键来移动角色。"
+msgstr ""
+"你可以按 :kbd:`F6`（在 macOS 中为 :kbd:`Cmd + R`）运行场景，然后按方向键来移"
+"动角色。"
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:420
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:227
@@ -15455,12 +15442,12 @@ msgid "Here is the complete ``main.gd`` script so far, for reference."
 msgstr "这是目前完整的 ``main.gd`` 脚本，仅供参考。"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:338
-#, fuzzy
 msgid ""
 "You can test the scene by pressing :kbd:`F6` (:kbd:`Cmd + R` on macOS). You "
 "should see the monsters spawn and move in a straight line."
 msgstr ""
-"按 :kbd:`F6` 即可测试该场景。你应该会看到有怪物刷了出来，然后会进行直线运动。"
+"按 :kbd:`F6` （在macOS上则按:kbd:`Cmd + R`）即可测试该场景。你应该会看到有怪"
+"物刷了出来，然后会进行直线运动。"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:341
 msgid "|image25|"
@@ -17673,9 +17660,9 @@ msgid ""
 "in the program. For traditional applications, this is normally a \"main\" "
 "function. In Godot, it's a Main node."
 msgstr ""
-"一个游戏总是应该具有某种“入口点”，你能明确地从入口点追踪各种东西从哪里开始，"
-"进而能够跟着逻辑的延伸跟踪它们。它也充当着程序中所有其他数据和逻辑的鸟瞰点。"
-"对于传统的应用程序而言，这就是“main”函数。而在Godot中，它就是一个 Main 节点。"
+"游戏总是应该具有一个“入口点”。在这里，你能找到所有事物的起点，并跟随着逻辑找"
+"到它们去向哪里。也就是说，入口点是程序中所有其他数据和逻辑的鸟瞰点。对于传统"
+"的应用程序而言，这一般是“main”函数；而在Godot中，它就是 Main 节点。"
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:359
 #: ../../docs/tutorials/best_practices/scene_organization.rst:367
@@ -19850,27 +19837,24 @@ msgstr ""
 "看一个例子:"
 
 #: ../../docs/tutorials/best_practices/logic_preferences.rst:122
-#, fuzzy
 msgid ""
 "Preloading allows the script to handle all the loading the moment one loads "
 "the script. Preloading is useful, but there are also times when one doesn't "
 "wish to use it. Here are a few considerations when determining which to use:"
 msgstr ""
-"预加载允许脚本在加载脚本时处理所有加载. 预加载是有用的, 但也有一些时候, 人们"
-"并不希望这样. 为了区分这些情况, 我们可以考虑以下几点:"
+"预加载允许脚本在加载脚本时处理所有加载. 预加载虽然很有用, 但有时候开发者则并"
+"不采用。 为了区分这些情况, 我们可以考虑以下几点:"
 
 #: ../../docs/tutorials/best_practices/logic_preferences.rst:126
-#, fuzzy
 msgid ""
 "If one cannot determine when the script might load, then preloading a "
 "resource (especially a scene or script) could result in additional loads one "
 "does not expect. This could lead to unintentional, variable-length load "
 "times on top of the original script's load operations."
 msgstr ""
-"如果无法确定何时可以加载脚本, 则预加载资源, 尤其是场景或脚本, 可能会导致进一"
-"步加载, 这是人们所不希望的. 这可能会导致无意中, 在原始脚本的加载操作之上的可"
-"变长度加载时间. 在原始脚本的加载操作之上, 这可能导致意外的, 可变长度的加载时"
-"间."
+"如果无法确定何时可以加载脚本, 那么预加载资源（尤其是场景或脚本）则有可能会导"
+"致非预料的多余加载。 这有可能会导在原始脚本加载时间之上多出意料之外的不确定加"
+"载时间。"
 
 #: ../../docs/tutorials/best_practices/logic_preferences.rst:131
 msgid ""
@@ -19900,7 +19884,6 @@ msgstr ""
 "``load()`` 初始化（或者甚至更晚一些才初始化）。"
 
 #: ../../docs/tutorials/best_practices/logic_preferences.rst:143
-#, fuzzy
 msgid ""
 "If the script requires a great many dependencies, and one does not wish to "
 "consume so much memory, then one may wish to load and unload various "
@@ -19911,11 +19894,11 @@ msgid ""
 "resource (which, as a :ref:`RefCounted <class_RefCounted>`-extending type, "
 "will cause the resources to delete themselves from memory)."
 msgstr ""
-"如果脚本需要大量依赖关系，又不想消耗太多内存，则可以在环境变化时动态地加载或"
-"卸载各种依赖关系。如果将资源预加载为常量，则卸载这些资源的唯一方法是卸载整个"
-"脚本。如果改为加载属性，则可以将它们设置为 ``null`` 并完全删除对资源的所有引"
-"用（扩展自 :ref:`RefCounted <class_RefCounted>` 的类型会在指向其的所有引用均"
-"已消失时自动释放内存）。"
+"如果脚本需要大量依赖关系，又不想消耗太多内存，则可以在运行环境变化时动态地加"
+"载或卸载各种依赖关系。如果将资源预加载为常量，那唯一卸载这些资源的方法则是卸"
+"载整个脚本。如果这些资源作为属性来加载，则可以将这些属性设置为 ``null`` 并完"
+"全删除对资源的所有引用（扩展自 :ref:`RefCounted <class_RefCounted>` 的类型会"
+"让该资源在指向其的所有引用均已消失时自动释放内存）。"
 
 #: ../../docs/tutorials/best_practices/logic_preferences.rst:154
 msgid "Large levels: static vs. dynamic"
@@ -19964,22 +19947,20 @@ msgstr ""
 "样环境或程序生成的元素的游戏，通常会实行这些策略，以避免浪费内存。"
 
 #: ../../docs/tutorials/best_practices/logic_preferences.rst:175
-#, fuzzy
 msgid ""
 "On the flip side, coding a dynamic system is more complex; it uses more "
 "programmed logic which results in opportunities for errors and bugs. If one "
 "isn't careful, they can develop a system that bloats the technical debt of "
 "the application."
 msgstr ""
-"另一方面, 对动态系统进行编码更复杂, 即, 使用更多的编程逻辑, 这会导致出现错误"
-"和bug的机会. 如果不小心的话, 开发的系统, 会增加应用程序的技术成本."
+"另一方面, 编一个动态系统则更加复杂, 这会使用更多的编程逻辑, 并借此增加出错和"
+"bug的机会。如果不够小心的话，编出的系统技术债务可能会像吹气球一样增加。"
 
 #: ../../docs/tutorials/best_practices/logic_preferences.rst:180
 msgid "As such, the best options would be..."
 msgstr "因此, 最好的选择是…"
 
 #: ../../docs/tutorials/best_practices/logic_preferences.rst:182
-#, fuzzy
 msgid "Use static levels for smaller games."
 msgstr "在小型游戏中使用静态关卡."
 
@@ -20241,12 +20222,11 @@ msgstr ""
 "项目> 版本控制**\\ 下设置或关闭 VCS。"
 
 #: ../../docs/tutorials/best_practices/version_control_systems.rst:18
-#, fuzzy
 msgid ""
 "As of October 2025, there is only a Git plugin available, but the community "
 "may create additional VCS plugins."
 msgstr ""
-"截至 2023 年 7 月，尚且只有一个 Git 插件可用，但社区可能会创建其他的 VCS 插"
+"截至 2025 年 10 月，尚且只有一个 Git 插件可用，但社区可能会创建其他的 VCS 插"
 "件。"
 
 #: ../../docs/tutorials/best_practices/version_control_systems.rst:22
@@ -20292,11 +20272,10 @@ msgstr ""
 "在 ``export_presets.cfg`` 中，而 Godot 4.1 及更高版本不会。"
 
 #: ../../docs/tutorials/best_practices/version_control_systems.rst:44
-#, fuzzy
 msgid ""
 "If you are using Godot 3, check the ``3.6`` version of this documentation "
 "page instead."
-msgstr "如果你正在使用 Godot 3，请查看本页说明文档的 ``3.5`` 版本。"
+msgstr "如果你正在使用 Godot 3，请查看本页说明文档的 ``3.6`` 版本。"
 
 #: ../../docs/tutorials/best_practices/version_control_systems.rst:47
 msgid ""
@@ -24745,7 +24724,7 @@ msgstr ":kbd:`Shift + Opt + 下箭头`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:295
 msgid "``common/ui_text_caret_add_below``"
-msgstr ""
+msgstr "``common/ui_text_caret_add_below``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:297
 #, fuzzy
@@ -24764,11 +24743,11 @@ msgstr ":kbd:`Shift + Opt + 上箭头`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:297
 msgid "``common/ui_text_caret_add_above``"
-msgstr ""
+msgstr "``common/ui_text_caret_add_above``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:299
 msgid "Select Next Occurrence"
-msgstr ""
+msgstr "选择下一个匹配项"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:299
 #: ../../docs/tutorials/editor/default_key_mapping.rst:450
@@ -24786,7 +24765,7 @@ msgstr ":kbd:`Cmd + D`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:299
 msgid "``common/ui_text_add_selection_for_next_occurrence``"
-msgstr ""
+msgstr "``common/ui_text_add_selection_for_next_occurrence``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:301
 msgid "Complete Symbol"
@@ -35145,7 +35124,7 @@ msgstr "方法 ``set_scope`` 被可选参数 ``set_method`` 替代"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:42
 msgid "|❌ with stub|"
-msgstr ""
+msgstr "|❌ 待兼容|"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:42
 msgid "`GH-104890`_"
@@ -35674,16 +35653,14 @@ msgid "`GH-108825`_"
 msgstr "`GH-108825`_"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:191
-#, fuzzy
 msgid ""
 "In 4.5, some behavior changes have been introduced, which might require you "
 "to adjust your project."
-msgstr "在 4.5 中引入了一些行为更改，你可能需要调整项目。"
+msgstr "在 4.5 版本中，一些功能的行为被更改，您可能需要重新适配您的项目。"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:194
-#, fuzzy
 msgid "TileMapLayer"
-msgstr "TileMap"
+msgstr "图块地图画布层"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:196
 msgid ""
@@ -35697,6 +35674,15 @@ msgid ""
 "<class_TileMapLayer_property_physics_quadrant_size>` to ``1``, which "
 "disables physics chunking."
 msgstr ""
+"相较于 4.4 版本，由于 4.5 版本中 TileMapLayer 的物理分区是默认开启的， "
+":ref:`TileMapLayer.get_coords_for_body_rid() "
+"<class_TileMapLayer_method_get_coords_for_body_rid>` 的返回值将变得不同。 "
+":ref:`TileMapLayer.physics_quadrant_size "
+"<class_TileMapLayer_property_physics_quadrant_size>` 的值越高，函数的精确度越"
+"低。若想要像 4.4 及之前版本一样获取准确的单元坐标，需要将 "
+":ref:`TileMapLayer.physics_quadrant_size "
+"<class_TileMapLayer_property_physics_quadrant_size>` 的值设置为 ``1`` ，这同"
+"时也将关闭物理分区。"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:206
 msgid "3D Model Import"
@@ -35730,6 +35716,11 @@ msgid ""
 "call :ref:`Resource.duplicate_deep(DEEP_DUPLICATE_ALL) "
 "<class_Resource_method_duplicate_deep>` instead to keep the old behavior."
 msgstr ""
+":ref:`Resource.duplicate(true) <class_Resource_method_duplicate>` （执行深度"
+"复制）现在仅复制它被调用资源文件内部的资源。在 4.4 版本中，它相反复制了所有内"
+"容，包括外部资源。如果你正在深度复制一个包含对其他外部资源引用的资源，这些外"
+"部资源现在不再被复制。你必须调用 :ref:`Resource.duplicate_deep"
+"(DEEP_DUPLICATE_ALL) <class_Resource_method_duplicate_deep>` 来保持旧的行为。"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:231
 msgid ""
@@ -37437,6 +37428,9 @@ msgid ""
 "of lights and shadows depends on your window or Viewport resolution, not on "
 "the resolution of individual sprite textures."
 msgstr ""
+"引擎在 Viewport 的像素分辨率 处计算 2D 光照和阴影，而不是在源纹理的纹素分辨率"
+"处。光照和阴影的外观取决于你的窗口或 Viewport 分辨率，而不是单个精灵纹理的分"
+"辨率。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:248
 msgid ""
@@ -38126,12 +38120,11 @@ msgid ""
 "``advance(0)`` to update the animation immediately."
 msgstr ""
 "如果同时更新一个动画和一个其他的属性（比如说，平台跳跃游戏可能会更新精灵的 "
-"``h_flip``/``v_flip`` 属性然后同时开始一个转身动画“turning”），要记住 "
-"``play()`` 不是即时生效的。它会在下次 :ref:`AnimationPlayer "
-"<class_AnimationPlayer>` 被处理时生效。也就是说可能要到下一帧才行，导致现在这"
-"一帧变成“问题”帧——应用了属性的变化，但动画还没有开始。如果这会造成麻烦的话，"
-"在调用 ``play()`` 后，你可以调用 ``advance(0)`` :ref:`AnimationPlayer "
-"<class_AnimationPlayer>`来立即开始播放动画。"
+"``h_flip``/ ``v_flip`` 属性然后同时开始一个转身动画“turning”），要记住 ``play"
+"()`` 不是即时生效的。它会在下次 :ref:`AnimationPlayer <class_AnimationPlayer>"
+"` 被处理时生效。也就是说可能要到下一帧才行，导致现在这一帧变成“问题”帧——应用"
+"了属性的变化，但动画还没有开始。如果这会造成麻烦的话，在调用 ``play()`` 后，"
+"你可以调用 ``advance(0)`` 来立即开始播放动画。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:281
 msgid ""
@@ -47562,9 +47555,9 @@ msgid ""
 "RibbonTrailMesh or TubeTrailMesh. Enabling this feature outside of materials "
 "used in GPUParticles3D meshes will break material rendering."
 msgstr ""
-"若启用，将激活 GPUParticles3D 尾迹功能所需的着色器部分。需配合使用具有合适外"
-"观的网格（如 RibbonTrailMesh 或 TubeTrailMesh）。在非 GPUParticles3D 网格中启"
-"用此功能将导致渲染异常。"
+"若启用，将激活 GPUParticles3D 尾迹功能所需的着色器部分。需配合使用具有合适蒙"
+"皮的网格（如 RibbonTrailMesh 或 TubeTrailMesh）。在未被 GPUParticles3D 网格使"
+"用的材质中启用此功能将导致渲染异常。"
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:774
 msgid "Use Z Clip Scale"
@@ -47579,9 +47572,10 @@ msgid ""
 "screen-space effects like SSAO and SSR may break with lower scales. "
 "Therefore, try to keep this setting as close to 1.0 as possible."
 msgstr ""
-"将渲染对象向相机方向缩放，避免穿墙等裁剪问题。适用于相对相机固定的对象（如玩"
-"家手臂、工具等）。调整此设置时，光照与阴影仍正常运作，但SSAO/SSR等屏幕空间特"
-"效可能在低缩放值时失效。因此，尽量保持此设置接近1.0。"
+"将渲染对象向摄像机方向缩放，以避免穿模到墙壁等物体。这适用于相对摄像机固定的"
+"物体，比如玩家的手臂、工具等。调整该设置后，光影效果会保持正常，但像 SSAO 和 "
+"SSR 这样的屏幕空间效果在缩放较低时可能会出现问题。因此，尽量保持这个设置接近 "
+"1.0。"
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:784
 msgid "Use FOV Override"
@@ -48178,7 +48172,6 @@ msgstr ""
 "效果，你可能需要针对每个灯光使用不同的阴影偏置值。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:166
-#, fuzzy
 msgid ""
 "**Note on Appearance Changes**: When enabling shadows on a light, be aware "
 "that the light's appearance might change compared to when it's rendered "
@@ -48189,11 +48182,11 @@ msgid ""
 "light's appearance. To achieve a similar appearance to an unshadowed light, "
 "you may need to adjust the light's energy setting."
 msgstr ""
-"**关于外观变化的注意事项**：在光源上启用阴影时，请注意，与在兼容性渲染器中未"
-"启用阴影渲染时的光源外观相比，光源的外观可能会发生变化。由于较旧移动设备的限"
-"制，阴影是使用多通道渲染方法实现的，因此带有阴影的光源在 sRGB 空间中渲染，而"
-"不是在线性空间中。渲染空间的这种变化有时会极大地改变光源的外观。为了获得与未"
-"启用阴影的光源相似的外观，你可能需要调整光源的能量设置。"
+"**关于外观变化的注意事项**：为光源启用阴影时需注意，与兼容性渲染器中关闭阴影"
+"渲染时的情况相比，光源的外观可能发生变化。由于较旧移动设备的限制，阴影是通过"
+"多通道渲染方式实现的，因此启用阴影的光源在 sRGB 色彩空间而非线性空间中进行渲"
+"染。这种渲染空间的变化有时会显著影响光源的外观。若需获得与未启用阴影的光源相"
+"似的外观，你可能需要调整光源的能量设置。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:176
 msgid ""
@@ -53165,7 +53158,6 @@ msgstr ""
 "在这里输入的内容取决于源网格的大小（需要覆盖的面积）和所需的粒子密度。"
 
 #: ../../docs/tutorials/3d/particles/complex_shapes.rst:56
-#, fuzzy
 msgid ""
 "``Emission Source`` offers 3 different options for how the points are "
 "generated. Select ``Surface Points`` if all you want to do is distribute the "
@@ -53175,11 +53167,11 @@ msgid ""
 "point at. The last option, ``Volume``, creates emission points everywhere "
 "inside the mesh, not just across its surface."
 msgstr ""
-"发射源 ``Emission Source``提供 3 种不同的点生成方式。如果你只想在网格表面分布"
-"发射点，请选择 表面点``Surface Point``。如果你还想生成表面法线信息，并使粒子"
-"沿法线指向的方向移动，请选择表面点 + 法线（定向）``Surface Points + Normal "
-"(Directed)``。最后一个选项体积``Volume``会在网格内的任何地方创建发射点，而不"
-"仅仅是网格表面。"
+"发射源 ``Emission Source`` 提供 3 种不同的点生成方式。如果你只想在网格表面分"
+"布发射点，请选择表面点 ``Surface Point`` 。如果你还想生成表面法线信息，并使粒"
+"子沿法线指向的方向移动，请选择表面点 + 法线（定向） ``Surface Points + "
+"Normal (Directed)`` 。最后一个选项体积 ``Volume`` 会在网格内的任何地方创建发"
+"射点，而不仅仅是网格表面。"
 
 #: ../../docs/tutorials/3d/particles/complex_shapes.rst:63
 msgid ""
@@ -57833,7 +57825,6 @@ msgstr ""
 "和度，从而呈现出更加逼真的外观。性能略低于电影级模式。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:348
-#, fuzzy
 msgid ""
 "**AgX:** Uses a film-like tonemapping curve and desaturates bright values "
 "for a more realistic appearance. Better than other tonemappers at "
@@ -57841,9 +57832,9 @@ msgid ""
 "tonemapping option. **White** is fixed at a value of ``16.29``, which makes "
 "AgX unsuitable for use with the Mobile rendering method."
 msgstr ""
-"**AgX**：采用类胶片色调映射曲线，通过降低高光饱和度实现更真实的效果，在保持高"
-"亮度色彩色相方面优于其他色调映射器。性能最低的选项。**White**值固定为"
-"``16.29``，因此不适用于移动端渲染模式。"
+"**AgX：** 使用类似胶片的色调映射曲线，并通过降低高光饱和度实现更真实的效果。"
+"在保持颜色随亮度增加时的色调方面，优于其他色调映射器。这是最慢的色调映射选项"
+"。\\ **白点（White）** 固定为 ``16.29``，这使得 AgX 不适用于移动端渲染模式。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:354
 #, fuzzy
@@ -84002,15 +83993,12 @@ msgid ""
 msgstr "独立游戏通常只需要关注语言，但请继续往下看更多信息。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:100
-#, fuzzy
 msgid ""
 "Why locales exist can be illustrated through the USA and Great Britain. Both "
 "speak the same language (English), yet differ in many aspects:"
 msgstr ""
-"可以通过美国和英国的例子来解释区域设置存在的必要性。他们所说的同一种语言（英"
-"语），但在很多方面又有区别：——拼写：如 gray（美）和 grey（英）——用词：如 "
-"eggplant（美）和 aubergine（英）——单位和货币：如 feet/inch（美）和 metre/cm"
-"（英）"
+"可以通过美国和英国的例子来解释区域设置存在的必要性。他们说的是同一种语言（英"
+"语），但在很多方面又有区别："
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:103
 msgid "Spelling: e.g. gray (USA), grey (GB)"
@@ -84330,9 +84318,8 @@ msgstr ""
 "式。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:311
-#, fuzzy
 msgid "Coordinate system is **not** mirrored."
-msgstr "坐标系（2D）"
+msgstr "坐标系**不会**被镜像。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:312
 #, fuzzy
@@ -84346,14 +84333,13 @@ msgid ""
 msgstr "可以使用下列控件属性来覆盖文字和控件布局方向："
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:317
-#, fuzzy
 msgid ""
 "``text_direction``, sets the base text direction. When set to \"auto\", the "
 "direction depends on the first strong directional character in the text "
 "according to the Unicode Bidirectional Algorithm."
 msgstr ""
-"``text_direction`` 设定基本文字方向。当设定为“auto”时，方向取决于根据 "
-"Unicode 双向算法的文字中的第一个强方向字符，"
+"``text_direction`` 设定基本文字方向。当设定为“auto”时，文字方向取决于文本中根"
+"据 Unicode 双向文本算法的第一个强方向字符。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:320
 #, fuzzy
@@ -107948,7 +107934,6 @@ msgid "Semaphores"
 msgstr "Semaphore"
 
 #: ../../docs/tutorials/performance/using_multiple_threads.rst:306
-#, fuzzy
 msgid ""
 "Sometimes you want your thread to work *\"on demand\"*. In other words, tell "
 "it when to work and let it suspend when it isn't doing anything. For "
@@ -107956,10 +107941,10 @@ msgid ""
 "function :ref:`Semaphore.wait()<class_Semaphore_method_wait>` is used in the "
 "thread to suspend it until some data arrives."
 msgstr ""
-"有时你希望你的线程能“按需”工作。换句话说，告诉它什么时候工作，让它在不工作的"
-"时候暂停。为此，可以使用信号量 :ref:`Semaphore <class_Semaphore>`\\ 。线程中"
-"使用函数 :ref:`Semaphore.wait()<class_Semaphore_method_wait>` 来暂停它的工"
-"作，直到有数据到达。"
+"有时你希望你的线程能够 *“按需”* 工作。换句话说，告诉它什么时候工作，并在空闲"
+"时让其暂停。为此，可以使用信号量 :ref:`Semaphore <class_Semaphore>`\\ 。在线"
+"程中调用函数 :ref:`Semaphore.wait()<class_Semaphore_method_wait>` 来让线程挂"
+"起，直到有数据到达为止。"
 
 #: ../../docs/tutorials/performance/using_multiple_threads.rst:312
 msgid ""
@@ -112228,13 +112213,10 @@ msgstr ""
 "静态体."
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:107
-#, fuzzy
 msgid ""
 "**Create Trimesh Collision Sibling** creates a CollisionShape node with a "
 "concave shape matching the mesh's geometry."
-msgstr ""
-"**创建Trimesh(三角面)碰撞同级** 创建具有与网格几何体匹配的凹面形状的"
-"CollisionShape(碰撞形状)节点."
+msgstr "**创建三角网格碰撞同级节点** 会创建一个与网格几何形状匹配的凹面碰撞体节点."
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:112
 msgid ""
@@ -129655,9 +129637,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:570
-#, fuzzy
 msgid "Results in:"
-msgstr "结果"
+msgstr "结果为："
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:578
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_exports.rst:634
@@ -142030,9 +142011,8 @@ msgid "Using your own toolchain file"
 msgstr "发送你自己的退出通知"
 
 #: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:329
-#, fuzzy
 msgid "As described in the CMake documentation:"
-msgstr "添加文档"
+msgstr "如 CMake 文档中所述："
 
 #: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:336
 msgid "Doing the equivalent just using the command line:"
@@ -142048,9 +142028,8 @@ msgid "This defaults to the minimum supported version and armv7-a:"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:358
-#, fuzzy
 msgid "Specifying the Android platform and ABI:"
-msgstr "Android 平台 API"
+msgstr "指定 Android 平台与 ABI："
 
 #: ../../docs/tutorials/scripting/cpp/build_system/scons.rst:4
 msgid "Main build system: Working with SCons"

@@ -36,13 +36,14 @@
 # John Fowler <john@madarasz.page>, 2025.
 # "Attila N." <nattilax1@gmail.com>, 2025.
 # Nagy-Kollár Vince <nagy.kollar.vince@gmail.com>, 2025.
+# Tallyrald <tally.github@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2025-12-19 15:00+0100\n"
-"PO-Revision-Date: 2025-09-24 21:02+0000\n"
-"Last-Translator: Nagy-Kollár Vince <nagy.kollar.vince@gmail.com>\n"
+"PO-Revision-Date: 2026-01-16 11:01+0000\n"
+"Last-Translator: Tallyrald <tally.github@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/hu/>\n"
 "Language: hu\n"
@@ -50,7 +51,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -527,7 +528,7 @@ msgid ""
 msgstr ""
 "A **Közösség** a Godot közösségnek lett létrehozva és meleg szívvel ajánlott "
 "harmadik féltől származó oktatótartalmakat és -anyagokat tartalmaz ezen "
-"dokumentáción kívül. Az erőforrástárról is információkkal szolgál, valamint "
+"dokumentáción kívül. Az csomagtárról is információkkal szolgál, valamint "
 "Godot Közösségek listázására is használatos, amelyek immáron a `Godot "
 "weboldalán<https://godotengine.org/community/>`_ is elérhetőek."
 
@@ -674,6 +675,8 @@ msgid ""
 ":ref:`Web browsers <doc_using_the_web_editor>`. Experimental in 4.0, using "
 "Godot 3.x is recommended instead when targeting HTML5."
 msgstr ""
+":ref:`Web böngészők <doc_using_the_web_editor>`. Kísérleti a 4.0 verzióban, "
+"HTML5-höz a Godot 3.x verzió használata javasolt."
 
 #: ../../docs/about/list_of_features.rst:41
 msgid ""
@@ -683,24 +686,31 @@ msgid ""
 "compiling instructions can be found on the :ref:`doc_compiling_for_linuxbsd` "
 "page."
 msgstr ""
+"Linuxon rv64 (RISC-V), ppc64 & ppc32 (PowerPC), és loongarch64 támogatott. "
+"Azonban ha a szerkesztőt ezekre a platformokra kell fordítani (beleértve a "
+"sablonok exportálását), hivatalos letöltés jelenleg nem készül. RISC-V "
+"fordításhoz a dokumentáció :ref:`doc_compiling_for_linuxbsd` oldalán "
+"találhatók instrukciók."
 
 #: ../../docs/about/list_of_features.rst:46
 msgid "**Runs exported projects:**"
-msgstr ""
+msgstr "**Futtatható exportált projektek:**"
 
 #: ../../docs/about/list_of_features.rst:48
 msgid "iOS."
-msgstr ""
+msgstr "iOS."
 
 #: ../../docs/about/list_of_features.rst:49
 msgid ":ref:`Consoles <doc_consoles>`."
-msgstr ""
+msgstr ":ref:`Konzolok <doc_consoles>`."
 
 #: ../../docs/about/list_of_features.rst:51
 msgid ""
 "Godot aims to be as platform-independent as possible and can be :ref:`ported "
 "to new platforms <doc_custom_platform_ports>` with relative ease."
 msgstr ""
+"A Godot szoftver igyekszik platform-független lenni és viszonylag könnyen "
+":ref:`új platformokra portolható <doc_custom_platform_ports>`."
 
 #: ../../docs/about/list_of_features.rst:56
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:131
@@ -710,6 +720,10 @@ msgid ""
 "iOS platform support is available as of Godot 4.2, but is experimental "
 "and :ref:`some limitations apply <doc_c_sharp_platforms>`."
 msgstr ""
+"A Godot 4-ben készült C# projektek jelenleg nem exportálhatóak a webre. "
+"Ehhez használja a Godot 3-mat. Az Android és iOS platformok a Godot 4.2 óta "
+"támogatottak, de csak kísérleti jelleggel és :ref:`bizonyos korlátozásokkal "
+"<doc_c_sharp_platforms>`."
 
 #: ../../docs/about/list_of_features.rst:62
 #: ../../docs/about/docs_changelog.rst:22
@@ -724,11 +738,11 @@ msgstr "Szerkesztő"
 #: ../../docs/about/list_of_features.rst:64
 #: ../../docs/about/list_of_features.rst:504
 msgid "**Features:**"
-msgstr ""
+msgstr "**Funkciók:**"
 
 #: ../../docs/about/list_of_features.rst:66
 msgid "Scene tree editor."
-msgstr ""
+msgstr "Jelenet faszerkesztő."
 
 #: ../../docs/about/list_of_features.rst:67
 msgid "Built-in script editor."
@@ -739,50 +753,60 @@ msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
 msgstr ""
+"Támogatás :ref:`külső szkript szerkesztőkhöz <doc_external_editor>`, például "
+"Visual Studio Code vagy Vim."
 
 #: ../../docs/about/list_of_features.rst:70
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
-msgstr ""
+msgstr "GDScript :ref:`hibakereső <doc_debugger_panel>`."
 
 #: ../../docs/about/list_of_features.rst:72
 msgid "Support for debugging in threads is available since 4.2."
-msgstr ""
+msgstr "A szálakban történő hibakeresés 4.2 óta elérhető."
 
 #: ../../docs/about/list_of_features.rst:73
 msgid ""
 "Visual profiler with CPU and GPU time indications for each step of the "
 "rendering pipeline."
 msgstr ""
+"Vizuális profilozó CPU és GPU időjelzőkkel a render folyamat minden "
+"lépéséhez."
 
 #: ../../docs/about/list_of_features.rst:75
 msgid ""
 "Performance monitoring tools, including :ref:`custom performance monitors "
 "<doc_custom_performance_monitors>`."
 msgstr ""
+"Teljesítmény figyelő eszközök, beleértve az :ref:`egyedi teljesítmény "
+"figyelőket <doc_custom_performance_monitors>`."
 
 #: ../../docs/about/list_of_features.rst:77
 msgid "Live script reloading."
-msgstr ""
+msgstr "Élő kód újratöltés."
 
 #: ../../docs/about/list_of_features.rst:78
 msgid "Live scene editing."
-msgstr ""
+msgstr "Élő jelenet módosítás."
 
 #: ../../docs/about/list_of_features.rst:80
 msgid ""
 "Changes will reflect in the editor and will be kept after closing the "
 "running project."
 msgstr ""
+"A módosítások látszódni fognak a szerkesztőben és megmaradnak a futó projekt "
+"bezárása után is."
 
 #: ../../docs/about/list_of_features.rst:82
 msgid "Remote inspector."
-msgstr ""
+msgstr "Távoli elemző."
 
 #: ../../docs/about/list_of_features.rst:84
 msgid ""
 "Changes won't reflect in the editor and won't be kept after closing the "
 "running project."
 msgstr ""
+"A módosítások nem fognak látszódni a szerkesztőben és nem maradnak meg a "
+"futó projekt bezárása után."
 
 #: ../../docs/about/list_of_features.rst:86
 #, fuzzy
@@ -791,15 +815,15 @@ msgstr "Animáció"
 
 #: ../../docs/about/list_of_features.rst:88
 msgid "Move the in-editor camera and see the result in the running project."
-msgstr ""
+msgstr "A szerkesztőbeli kamera mozgatása látható a futó projektben."
 
 #: ../../docs/about/list_of_features.rst:90
 msgid "Built-in offline class reference documentation."
-msgstr ""
+msgstr "Beépített offline osztály referencia dokumentáció."
 
 #: ../../docs/about/list_of_features.rst:91
 msgid "Use the editor in dozens of languages contributed by the community."
-msgstr ""
+msgstr "Használhatja a szerkesztőt több tucat nyelven a közösség jóvoltából."
 
 #: ../../docs/about/list_of_features.rst:93
 #, fuzzy
@@ -811,18 +835,24 @@ msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
+"A szerkesztőhöz letölthetőek beépülő modulok a :ref:`csomagtárból "
+"<doc_what_is_assetlib>`, melyek bővítik a szerkesztő képességeit."
 
 #: ../../docs/about/list_of_features.rst:97
 msgid ""
 ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
 "new features or speed up your workflow."
 msgstr ""
+":ref:`Létrehozhatja saját beépülő moduljait <doc_making_plugins>` új "
+"funkciókhoz vagy a munkafolyamat gyorsításához GDScript használatával."
 
 #: ../../docs/about/list_of_features.rst:99
 msgid ""
 ":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
 "in the Project Manager and import them directly."
 msgstr ""
+":ref:`Letölthet projekteket a csomagtárból <doc_using_assetlib_editor>` a "
+"Projektkezelő segítségével közvetlen importálásra."
 
 #: ../../docs/about/list_of_features.rst:103
 #: ../../docs/about/docs_changelog.rst:86
@@ -841,12 +871,12 @@ msgstr ""
 #: ../../docs/tutorials/rendering/index.rst:4
 #: ../../docs/tutorials/rendering/viewports.rst:202
 msgid "Rendering"
-msgstr ""
+msgstr "Renderelés"
 
 #: ../../docs/about/list_of_features.rst:105
 #: ../../docs/tutorials/rendering/renderers.rst:15
 msgid "Godot 4 includes three renderers:"
-msgstr ""
+msgstr "A Godot 4 három rendermotort tartalmaz:"
 
 #: ../../docs/about/list_of_features.rst:107
 #: ../../docs/tutorials/rendering/renderers.rst:17
@@ -856,6 +886,10 @@ msgid ""
 "**Direct3D 12**, or **Metal** as the rendering driver, and it uses the "
 "**RenderingDevice** backend."
 msgstr ""
+"**Forward+**. A legfejlettebb rendermotor, ami csak asztali platformokhoz "
+"alkalmas. Alapértelmezett asztali platformokon. Ez a rendermotor **Vulkan**, "
+"**Direct3D 12**, vagy **Metal** meghajtóprogramokkal működik és a "
+"**RenderingDevice** háttérprogramot használja."
 
 #: ../../docs/about/list_of_features.rst:110
 #: ../../docs/tutorials/rendering/renderers.rst:20
@@ -865,6 +899,11 @@ msgid ""
 "renderer uses **Vulkan**, **Direct3D 12**, or **Metal** as the rendering "
 "driver, and it uses the **RenderingDevice** backend."
 msgstr ""
+"**Mobile**. Kevesebb funkció, de az egyszerű jeleneteket gyorsabban "
+"rendereli. Hordozható és asztali platformokhoz alkalmas. Alapértelmezett a "
+"hordozható platformokon. Ez a rendermotor **Vulkan**, **Direct3D 12**, vagy "
+"**Metal** meghajtóprogramokkal működik és a **RenderingDevice** "
+"háttérprogramot használja."
 
 #: ../../docs/about/list_of_features.rst:114
 #: ../../docs/tutorials/rendering/renderers.rst:24
@@ -873,6 +912,10 @@ msgid ""
 "renderer, suited for low-end desktop and mobile platforms. Used by default "
 "on the web platform. This renderer uses **OpenGL** as the rendering driver."
 msgstr ""
+"**Compatibility**, vagy néha **GL Compatibility**. A legkevésbé fejlett "
+"rendermotor, belépőszintű asztali és hordozható platformokhoz alkalmas. "
+"Alapértelmezett a web platformon. Ez a rendermotor **OpenGL** "
+"meghajtóprogrammal működik."
 
 #: ../../docs/about/list_of_features.rst:118
 #, fuzzy
@@ -884,43 +927,47 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:121
 msgid "2D graphics"
-msgstr ""
+msgstr "2D grafika"
 
 #: ../../docs/about/list_of_features.rst:123
 msgid "Sprite, polygon and line rendering."
-msgstr ""
+msgstr "Sprite, sokszög és vonal rajzolás."
 
 #: ../../docs/about/list_of_features.rst:125
 msgid ""
 "High-level tools to draw lines and polygons such as :ref:`class_Polygon2D` "
 "and :ref:`class_Line2D`, with support for texturing."
 msgstr ""
+"Magasszintű eszközök vonalak és sokszögek rajzolásához, mint például "
+":ref:`class_Polygon2D` és :ref:`class_Line2D` textúra támogatással."
 
 #: ../../docs/about/list_of_features.rst:128
 msgid "AnimatedSprite2D as a helper for creating animated sprites."
-msgstr ""
+msgstr "AnimatedSprite2D segítségként animált sprite-ok létrehozásához."
 
 #: ../../docs/about/list_of_features.rst:129
 msgid "Parallax layers."
-msgstr ""
+msgstr "Parallax rétegek."
 
 #: ../../docs/about/list_of_features.rst:131
 msgid "Pseudo-3D support including preview in the editor."
-msgstr ""
+msgstr "Pszeudó-3D támogatás szerkesztőbeli előnézettel."
 
 #: ../../docs/about/list_of_features.rst:133
 msgid ""
 ":ref:`2D lighting <doc_2d_lights_and_shadows>` with normal maps and specular "
 "maps."
 msgstr ""
+":ref:`2D fények <doc_2d_lights_and_shadows>` normáltérképekkel és "
+"tükröződési (specular) térképekkel."
 
 #: ../../docs/about/list_of_features.rst:135
 msgid "Point (omni/spot) and directional 2D lights."
-msgstr ""
+msgstr "Pontszerű (omni/spot) és irányított 2D fények."
 
 #: ../../docs/about/list_of_features.rst:136
 msgid "Hard or soft shadows (adjustable on a per-light basis)."
-msgstr ""
+msgstr "Kemény vagy lágy árnyékok (fényforrásonként állítható)."
 
 #: ../../docs/about/list_of_features.rst:137
 msgid ""
@@ -929,58 +976,80 @@ msgid ""
 "which can be used for improved 2D lighting effects including 2D global "
 "illumination."
 msgstr ""
+"Az egyedi shaderek valós időben hozzáférhetnek a 2D jelenet :abbr:`SDF "
+"(Signed Distance Field)` reprezentációjához a :ref:`class_LightOccluder2D` "
+"node-ok alapján, ezzel javítva a 2D megvilágítási effekteket, beleértve a 2D "
+"globális megvilágítást."
 
 #: ../../docs/about/list_of_features.rst:141
 msgid ""
 ":ref:`Font rendering <doc_gui_using_fonts>` using bitmaps, rasterization "
 "using FreeType or multi-channel signed distance fields (MSDF)."
 msgstr ""
+":ref:`Betűtípus renderelés <doc_gui_using_fonts>` bitmapekkel, raszterizáció "
+"FreeType segítségével vagy többcsatornás előjeles távolságmezőkkel (MSDF)."
 
 #: ../../docs/about/list_of_features.rst:144
 msgid ""
 "Bitmap fonts can be exported using tools like BMFont, or imported from "
 "images (for fixed-width fonts only)."
 msgstr ""
+"A bitmap betűtípusok exportálhatóak például a BMFont eszköz segítségével, "
+"vagy importálhatóak képekből (csak fix szélességű betűtípusok)."
 
 #: ../../docs/about/list_of_features.rst:146
 msgid ""
 "Dynamic fonts support monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF, WOFF1 and WOFF2."
 msgstr ""
+"A dinamikus betűtípusok a monokróm és színes típusokat is támogatják (pl. "
+"emojik-hoz). TTF, OTF, WOFF1 és WOFF2 formátumok támogatottak."
 
 #: ../../docs/about/list_of_features.rst:148
 msgid ""
 "Dynamic fonts support optional font outlines with adjustable width and color."
 msgstr ""
+"A dinamikus betűtípusok támogatják a változtatható szélességű és színű "
+"opcionális körvonalakat."
 
 #: ../../docs/about/list_of_features.rst:149
 msgid ""
 "Dynamic fonts support variable fonts and OpenType features including "
 "ligatures."
 msgstr ""
+"A dinamikus betűtípusok a változó betűtípusokat és az OpenType funkciókat is "
+"támogatják, a ligatúrákat is beleértve."
 
 #: ../../docs/about/list_of_features.rst:150
 msgid ""
 "Dynamic fonts support simulated bold and italic when the font file lacks "
 "those styles."
 msgstr ""
+"A dinamikus betűtípusok támogatják a szimulált félkövér és dőlt stílusokat, "
+"ha a betűtípus nem tartalmazza azokat."
 
 #: ../../docs/about/list_of_features.rst:152
 msgid ""
 "Dynamic fonts support oversampling to keep fonts sharp at higher resolutions."
 msgstr ""
+"A dinamikus betűtípusok támogatják a túlmintavételezést, hogy nagy "
+"felbontáson is élesek maradjanak."
 
 #: ../../docs/about/list_of_features.rst:153
 msgid ""
 "Dynamic fonts support subpixel positioning to make fonts crisper at low "
 "sizes."
 msgstr ""
+"A dinamikus betűtípusok támogatják a szubpixel elhelyezést, hogy kis "
+"méretben is tisztábbak lehessenek."
 
 #: ../../docs/about/list_of_features.rst:154
 msgid ""
 "Dynamic fonts support LCD subpixel optimizations to make fonts even crisper "
 "at low sizes."
 msgstr ""
+"A dinamikus betűtípusok támogatják az LCD szubpixel javításokat, hogy kis "
+"méretben is tisztábbak lehessenek."
 
 #: ../../docs/about/list_of_features.rst:155
 msgid ""
@@ -988,12 +1057,17 @@ msgid ""
 "requiring re-rasterization. Multi-channel usage makes SDF fonts scale down "
 "to lower sizes better compared to monochrome SDF fonts."
 msgstr ""
+"Az előjeles távolságmező betűtípusok bármilyen felbontásra átméretezhetőek "
+"újra-raszterizálás nélkül. A többcsatornás használat kis méreteknél jobbá "
+"teszi az SDF betűtípusokat, mint a monokróm SDF-ek esetében."
 
 #: ../../docs/about/list_of_features.rst:159
 msgid ""
 "GPU-based :ref:`particles <doc_particle_systems_2d>` with support "
 "for :ref:`custom particle shaders <doc_particle_shader>`."
 msgstr ""
+"GPU-alapú :ref:`particle rendszerek <doc_particle_systems_2d>`, amelyek "
+"támogatják az :ref:`egyedi particle shader-eket <doc_particle_shader>`."
 
 #: ../../docs/about/list_of_features.rst:161
 #: ../../docs/about/list_of_features.rst:352
@@ -1007,6 +1081,9 @@ msgid ""
 "<doc_environment_and_post_processing_using_glow_in_2d>` for better glow "
 "capabilities."
 msgstr ""
+"Opcionális: :ref:`2D HDR renderelés "
+"<doc_environment_and_post_processing_using_glow_in_2d>` a jobb ragyogás "
+"(glow) effektusokért."
 
 #: ../../docs/about/list_of_features.rst:166
 #, fuzzy
@@ -1016,23 +1093,24 @@ msgstr "Eszközök"
 #: ../../docs/about/list_of_features.rst:168
 msgid ":ref:`TileMaps <doc_using_tilemaps>` for 2D tile-based level design."
 msgstr ""
+":ref:`TileMap-ek <doc_using_tilemaps>` a 2D csempekészlet alapú szintekhez."
 
 #: ../../docs/about/list_of_features.rst:169
 msgid "2D camera with built-in smoothing and drag margins."
-msgstr ""
+msgstr "2D kamera beépített simítással és változtatható margókkal."
 
 #: ../../docs/about/list_of_features.rst:170
 msgid "Path2D node to represent a path in 2D space."
-msgstr ""
+msgstr "Path2D node a 2D útvonalak térbeli reprezentációjához."
 
 #: ../../docs/about/list_of_features.rst:172
 #: ../../docs/about/list_of_features.rst:413
 msgid "Can be drawn in the editor or generated procedurally."
-msgstr ""
+msgstr "Megrajzolható a szerkesztőben vagy procedurálisan generálható."
 
 #: ../../docs/about/list_of_features.rst:173
 msgid "PathFollow2D node to make nodes follow a Path2D."
-msgstr ""
+msgstr "PathFollow2D node a további node-ok Path2D lekövetéséhez."
 
 #: ../../docs/about/list_of_features.rst:175
 #, fuzzy
@@ -1041,17 +1119,17 @@ msgstr "Részecskék"
 
 #: ../../docs/about/list_of_features.rst:178
 msgid "2D physics"
-msgstr ""
+msgstr "2D fizika"
 
 #: ../../docs/about/list_of_features.rst:180
 #: ../../docs/about/list_of_features.rst:423
 msgid "**Physics bodies:**"
-msgstr ""
+msgstr "**Fizikai testek:**"
 
 #: ../../docs/about/list_of_features.rst:182
 #: ../../docs/about/list_of_features.rst:425
 msgid "Static bodies."
-msgstr ""
+msgstr "Statikus testek."
 
 #: ../../docs/about/list_of_features.rst:183
 #: ../../docs/about/list_of_features.rst:426
@@ -1059,11 +1137,13 @@ msgid ""
 "Animatable bodies (for objects moving only by script or animation, such as "
 "doors and platforms)."
 msgstr ""
+"Animálható testek (kódból vagy animációval mozgatott objektumokhoz, mint "
+"például ajtók vagy mozgó padló)."
 
 #: ../../docs/about/list_of_features.rst:184
 #: ../../docs/about/list_of_features.rst:427
 msgid "Rigid bodies."
-msgstr ""
+msgstr "Merev testek."
 
 #: ../../docs/about/list_of_features.rst:185
 #: ../../docs/about/list_of_features.rst:428
@@ -1074,12 +1154,12 @@ msgstr "Animáció"
 #: ../../docs/about/list_of_features.rst:186
 #: ../../docs/about/list_of_features.rst:430
 msgid "Joints."
-msgstr ""
+msgstr "Csuklópontok."
 
 #: ../../docs/about/list_of_features.rst:187
 #: ../../docs/about/list_of_features.rst:433
 msgid "Areas to detect bodies entering or leaving it."
-msgstr ""
+msgstr "Területek a be- és kilépő objektumok detektálásához."
 
 #: ../../docs/about/list_of_features.rst:189
 #: ../../docs/about/list_of_features.rst:435
@@ -1091,30 +1171,36 @@ msgstr "Látható Ütközési Alakzatok"
 msgid ""
 "Built-in shapes: line, box, circle, capsule, world boundary (infinite plane)."
 msgstr ""
+"Beépített alakzatok: vonal, doboz, kör, kapszula, világhatár (végtelen sík)."
 
 #: ../../docs/about/list_of_features.rst:192
 msgid ""
 "Collision polygons (can be drawn manually or generated from a sprite in the "
 "editor)."
 msgstr ""
+"Ütközési sokszögek (megrajzolható manuálisan vagy generálható sprite-ból a "
+"szerkesztőben)."
 
 #: ../../docs/about/list_of_features.rst:195
 msgid "3D graphics"
-msgstr ""
+msgstr "3D grafika"
 
 #: ../../docs/about/list_of_features.rst:197
 msgid "HDR rendering with sRGB."
-msgstr ""
+msgstr "HDR renderelés sRGB-vel."
 
 #: ../../docs/about/list_of_features.rst:198
 msgid "Perspective, orthographic and frustum-offset cameras."
-msgstr ""
+msgstr "Perspektívikus, ortografikus és frustum-eltolásos kamerák."
 
 #: ../../docs/about/list_of_features.rst:199
 msgid ""
 "When using the Forward+ renderer, a depth prepass is used to improve "
 "performance in complex scenes by reducing the cost of overdraw."
 msgstr ""
+"A Forward+ rendermotor használatakor komplex jelenetek esetében mélységi "
+"előkészítés (prepass) gondoskodik a teljesítmény növeléséről, ezzel "
+"csökkentve a túlzott rajzműveleteket."
 
 #: ../../docs/about/list_of_features.rst:201
 #, fuzzy
@@ -1124,102 +1210,120 @@ msgstr "Részecskék"
 
 #: ../../docs/about/list_of_features.rst:203
 msgid "**Physically-based rendering (built-in material features):**"
-msgstr ""
+msgstr "**Fizika-alapú renderelés (beépített anyagtulajdonságok)**"
 
 #: ../../docs/about/list_of_features.rst:205
 msgid "Follows the Disney PBR model."
-msgstr ""
+msgstr "A Disney PBR modellt követi."
 
 #: ../../docs/about/list_of_features.rst:206
 msgid ""
 "Supports Burley, Lambert, Lambert Wrap (half-Lambert) and Toon diffuse "
 "shading modes."
 msgstr ""
+"Támogatja a Burley, Lambert, Lambert Wrap (fél-Lambert) és Toon diffúziós "
+"shading módokat."
 
 #: ../../docs/about/list_of_features.rst:207
 msgid "Supports Schlick-GGX, Toon and Disabled specular shading modes."
 msgstr ""
+"Támogatja a Schlick-GGX, Toon és Letiltott tükröződési (specular) shading "
+"módokat."
 
 #: ../../docs/about/list_of_features.rst:208
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
-msgstr ""
+msgstr "Érdesség-fémes munkafolyamatot használ ORM textúra támogatással."
 
 #: ../../docs/about/list_of_features.rst:209
 msgid ""
 "Uses horizon specular occlusion (Filament model) to improve material "
 "appearance."
 msgstr ""
+"Horizon specular occlusion-t (Filament model) használ az anyag "
+"megjelenésének szépítéséhez."
 
 #: ../../docs/about/list_of_features.rst:210
 msgid "Normal mapping."
-msgstr ""
+msgstr "Normáltérkép használat."
 
 #: ../../docs/about/list_of_features.rst:211
 msgid ""
 "Parallax/relief mapping with automatic level of detail based on distance."
 msgstr ""
+"Parallax/relief térképezés automatikus távolság alapú részletezettségi "
+"szinttel (LOD)."
 
 #: ../../docs/about/list_of_features.rst:212
 msgid "Detail mapping for the albedo and normal maps."
-msgstr ""
+msgstr "Detail mapping az albedóhoz és a normáltérképekhez."
 
 #: ../../docs/about/list_of_features.rst:213
 msgid "Sub-surface scattering and transmittance."
-msgstr ""
+msgstr "Anyagbeli szóródás és áteresztés."
 
 #: ../../docs/about/list_of_features.rst:214
 msgid ""
 "Screen-space refraction with support for material roughness (resulting in "
 "blurry refraction)."
 msgstr ""
+"Screen-space refraction, amely támogatja az anyagok érdességét (ezzel "
+"elmosva a fénytörést)."
 
 #: ../../docs/about/list_of_features.rst:215
 msgid "Proximity fade (soft particles) and distance fade."
-msgstr ""
+msgstr "Közelségi halványítás (lágy részecskék) és távolsági halványítás."
 
 #: ../../docs/about/list_of_features.rst:216
 msgid ""
 "Distance fade can use alpha blending or dithering to avoid going through the "
 "transparent pipeline."
 msgstr ""
+"A távolsági halványítás használhatja az alfa keverést vagy ditherelést, "
+"elkerülve ezzel az átlátszósági számításokat."
 
 #: ../../docs/about/list_of_features.rst:218
 msgid "Dithering can be determined on a per-pixel or per-object basis."
-msgstr ""
+msgstr "A ditherelés pixelenként vagy objektumonként is meghatározható."
 
 #: ../../docs/about/list_of_features.rst:220
 msgid "**Real-time lighting:**"
-msgstr ""
+msgstr "**Valós-idejű fények:**"
 
 #: ../../docs/about/list_of_features.rst:222
 msgid "Directional lights (sun/moon). Up to 4 per scene."
-msgstr ""
+msgstr "Irányított fények (nap, hold). Jelenetenként akár 4."
 
 #: ../../docs/about/list_of_features.rst:223
 msgid "Omnidirectional lights."
-msgstr ""
+msgstr "Mindenirányú fények."
 
 #: ../../docs/about/list_of_features.rst:224
 msgid "Spot lights with adjustable cone angle and attenuation."
-msgstr ""
+msgstr "Spot fények állítható fénykúppal és csillapítással."
 
 #: ../../docs/about/list_of_features.rst:225
 msgid ""
 "Specular, indirect light, and volumetric fog energy can be adjusted on a per-"
 "light basis."
 msgstr ""
+"A tükröződő, közvetett fény és a volumetrikus köd energiája fényforrásonként "
+"állítható."
 
 #: ../../docs/about/list_of_features.rst:226
 msgid ""
 "Adjustable light \"size\" for fake area lights (will also make shadows "
 "blurrier)."
 msgstr ""
+"Állítható fényforrás \"méret\" a kvázi terület-fényekhez (ami az árnyékokat "
+"elhomályosítja)."
 
 #: ../../docs/about/list_of_features.rst:227
 msgid ""
 "Optional distance fade system to fade distant lights and their shadows, "
 "improving performance."
 msgstr ""
+"Opcionális távolság alapú halványító rendszer, ami a távoli fényeket és azok "
+"árnyékait elhalványítja, javítva a teljesítményt."
 
 #: ../../docs/about/list_of_features.rst:228
 msgid ""
@@ -1228,6 +1332,10 @@ msgid ""
 "Clustered rendering also lifts any limits on the number of lights that can "
 "be used on a mesh."
 msgstr ""
+"A Forward+ rendermotor használatakor (alapértelmezett asztali környezetben) "
+"a fények csoportos optimalizálással (clustered forward optimizations) "
+"renderelődnek, csökkentve az egyenkénti terhelést. A csoportos renderelés "
+"egyúttal eltöröl minden korlátot az egy mesh-re vetülő fényeknél."
 
 #: ../../docs/about/list_of_features.rst:231
 msgid ""
@@ -1235,52 +1343,66 @@ msgid ""
 "displayed per mesh resource. Baked lighting can be used to overcome this "
 "limit if needed."
 msgstr ""
+"A Mobile rendermotor használatakor akár 8 mindenirányú és 8 spot fény is "
+"megjeleníthető mesh erőforrásonként. Égetett megvilágítással ez a limit "
+"legyőzhető."
 
 #: ../../docs/about/list_of_features.rst:235
 msgid "**Shadow mapping:**"
-msgstr ""
+msgstr "**Árnyék térképezés:**"
 
 #: ../../docs/about/list_of_features.rst:237
 msgid ""
 "*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
 "blending between splits."
 msgstr ""
+"*DirectionalLight:* Ortogonális (leggyorsabb), 2-részes és 4-részes PSSM. "
+"Támogatja a részenkénti összemosást."
 
 #: ../../docs/about/list_of_features.rst:239
 msgid ""
 "*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
+"*OmniLight:* Kettős paraboloid (gyors) vagy cubemap (lassabb, de pontosabb). "
+"Támogatja a színes projekciós textúrákat panoráma formájukban."
 
 #: ../../docs/about/list_of_features.rst:241
 msgid "*SpotLight:* Single texture. Supports colored projector textures."
 msgstr ""
+"*SpotLight:* Egyetlen textúra. Támogatja a színes projekciós textúrákat."
 
 #: ../../docs/about/list_of_features.rst:242
 msgid ""
 "Shadow normal offset bias and shadow pancaking to decrease the amount of "
 "visible shadow acne and peter-panning."
 msgstr ""
+"Árnyék normál eltolás és árnyék összenyomás, ami csökkenti a látható árnyék "
+"acne és peter-panning mértékét."
 
 #: ../../docs/about/list_of_features.rst:244
 msgid ""
 ":abbr:`PCSS (Percentage Closer Soft Shadows)`-like shadow blur based on the "
 "light size and distance from the surface the shadow is cast on."
 msgstr ""
+":abbr:`PCSS (Percentage Closer Soft Shadows)`-szerű árnyék homályosítás a "
+"fényforrás árnyékos felülettől számolt méretétől és távolságától függően."
 
 #: ../../docs/about/list_of_features.rst:246
 msgid "Adjustable shadow blur on a per-light basis."
-msgstr ""
+msgstr "Állítható árnyék homályosítás fényforrásonként."
 
 #: ../../docs/about/list_of_features.rst:248
 msgid "**Global illumination with indirect lighting:**"
-msgstr ""
+msgstr "**Globális megvilágítás közvetett fényekkel:**"
 
 #: ../../docs/about/list_of_features.rst:250
 msgid ""
 ":ref:`Baked lightmaps <doc_using_lightmap_gi>` (fast, but can't be updated "
 "at runtime)."
 msgstr ""
+":ref:`Beégetett lightmap-ek <doc_using_lightmap_gi>` (gyors, de futásidőben "
+"nem frissíthető)."
 
 #: ../../docs/about/list_of_features.rst:252
 msgid ""
@@ -1288,17 +1410,24 @@ msgid ""
 "lighting. The bake mode can be adjusted on a per-light basis to allow for "
 "hybrid light baking setups."
 msgstr ""
+"Támogatja kizárólag a közvetett fények égetését vagy a közvetlen és "
+"közvetett fények együttesét. Az égetés módja változtatható fényforrásonként, "
+"ami lehetővé teszi a hibrid megoldásokat."
 
 #: ../../docs/about/list_of_features.rst:255
 msgid ""
 "Supports lighting dynamic objects using automatic and manually placed probes."
 msgstr ""
+"Támogatja a dinamikus objektumok megvilágítását automatikus és manuálisan "
+"elhelyezett szondákkal is."
 
 #: ../../docs/about/list_of_features.rst:256
 msgid ""
 "Optionally supports directional lighting and rough reflections based on "
 "spherical harmonics."
 msgstr ""
+"Opcionálisan támogatja az irányított fényeket és a durva "
+"fényvisszaverődéseket gömbharmonikusok segítségével."
 
 #: ../../docs/about/list_of_features.rst:258
 msgid ""
@@ -1306,12 +1435,17 @@ msgid ""
 "to CPU lightmapping). Baking can only be performed from the editor, not in "
 "exported projects."
 msgstr ""
+"A lightmap-ek számítási (compute) shader-ekkel készülnek a GPU-n (sokkal "
+"gyorsabb, mint a CPU-n). Az égetés csak a szerkesztőben lehetséges, "
+"exportált projektekben nem."
 
 #: ../../docs/about/list_of_features.rst:261
 msgid ""
 "Supports GPU-based :ref:`denoising <doc_using_lightmap_gi_denoising>` with "
 "JNLM, or CPU/GPU-based denoising with OIDN."
 msgstr ""
+"Támogatja a GPU alapú :ref:`zajszűrést <doc_using_lightmap_gi_denoising>` "
+"JNLM használatával vagy a CPU/GPU alapú zajszűrést OIDN használatával."
 
 #: ../../docs/about/list_of_features.rst:264
 msgid ""
@@ -1320,6 +1454,11 @@ msgid ""
 "baking step which can be performed in the editor or at runtime (including "
 "from an exported project)."
 msgstr ""
+":ref:`Voxel-alapú GI szondák <doc_using_voxel_gi>`. Támogatja a dinamikus "
+"fényeket *és* a dinamikus occluder-eket, miközben lehetővé teszi a "
+"fényvisszaverődéseket. Használatához szükség van egy gyors égetési lépésre, "
+"amely a szerkesztőben vagy futásidőben is elérhető (beleértve az exportált "
+"projekteket)."
 
 #: ../../docs/about/list_of_features.rst:268
 msgid ""
@@ -1327,6 +1466,9 @@ msgid ""
 "worlds. Supports dynamic lights, but not dynamic occluders. Supports "
 "reflections. No baking required."
 msgstr ""
+":ref:`Előjeles távolságmező GI <doc_using_sdfgi>` kifejezetten a nagy, "
+"nyitott világokhoz. Támogatja a dinamikus fényeket, de a dinamikus occluder-"
+"eket nem. Támogatja a fényvisszaverődéseket. Nincs szükség égetésre."
 
 #: ../../docs/about/list_of_features.rst:271
 msgid ""
@@ -1335,6 +1477,10 @@ msgid ""
 "Fully real-time and supports any kind of emissive light source (including "
 "decals)."
 msgstr ""
+":ref:`Screen-space indirect lighting (SSIL) "
+"<doc_environment_and_post_processing_ssil>` felezett vagy teljes "
+"felbontáson. Teljes mértékben valós-idejű és támogat bármilyen fénykibocsátó "
+"fényforrást (beleértve a decal textúrákat)."
 
 #: ../../docs/about/list_of_features.rst:274
 msgid ""
@@ -1342,6 +1488,9 @@ msgid ""
 "resolution to improve performance (while still having functional MSAA "
 "support)."
 msgstr ""
+"A VoxelGI és SDFGI késleltetett folyamatot használ, ami lehetővé teszi a GI "
+"fél-felbontáson renderelését a teljesítmény javítása érdekében (miközben így "
+"is funkcionális MSAA támogatással rendelkezik)."
 
 #: ../../docs/about/list_of_features.rst:277
 msgid "**Reflections:**"
@@ -105657,7 +105806,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:136
 msgid "Keywords"
-msgstr ""
+msgstr "Kulcsszavak"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:138
 msgid ""
@@ -149509,7 +149658,7 @@ msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:66
 msgid "Local"
-msgstr ""
+msgstr "Helyi"
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:68
 msgid ""
@@ -168823,7 +168972,7 @@ msgstr ""
 
 #: ../../docs/community/asset_library/index.rst:4
 msgid "Asset Library"
-msgstr "Eszköz könyvtár"
+msgstr "Csomagtár"
 
 #: ../../docs/community/asset_library/what_is_assetlib.rst:4
 msgid "About the Asset Library"

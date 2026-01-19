@@ -311,13 +311,16 @@
 # Uriel Barbosa Pinheiro <urielbp@gmail.com>, 2025.
 # "A Thousand Ships (she/her)" <over999ships@gmail.com>, 2025.
 # DATA <arthurextreme2784@gmail.com>, 2025.
+# André Basco Becker <andrebascobecker@gmail.com>, 2025.
+# MaiaAf <arthurmaia0125@gmail.com>, 2026.
+# Maíra Alves Rodrigues <contato@mairarodrigues.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2025-12-19 15:00+0100\n"
-"PO-Revision-Date: 2025-11-12 13:51+0000\n"
-"Last-Translator: DATA <arthurextreme2784@gmail.com>\n"
+"PO-Revision-Date: 2026-01-14 17:28+0000\n"
+"Last-Translator: Maíra Alves Rodrigues <contato@mairarodrigues.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -325,7 +328,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -392,9 +395,8 @@ msgid "Class reference"
 msgstr "Referência de classe"
 
 #: ../../docs/index.rst:4
-#, fuzzy
 msgid "Godot Docs – *master* branch"
-msgstr "Documentação do Godot — ramo *4.5*"
+msgstr "Documentação do Godot — versão *4.5*"
 
 #: ../../docs/index.rst:8
 msgid ""
@@ -3612,7 +3614,7 @@ msgstr ""
 msgid ""
 "*Example: Intel HD Graphics 510 (Skylake), AMD Radeon R5 Graphics (Kaveri)*"
 msgstr ""
-"*Exemplos: Intel HD Graphics 5500 (Skylake), AMD Radeon R5 Graphics (Kaveri)*"
+"*Exemplos: Intel HD Graphics 510 (Skylake), AMD Radeon R5 Graphics (Kaveri)*"
 
 #: ../../docs/about/system_requirements.rst:43
 msgid "**Mobile renderer:** Integrated graphics with full Vulkan 1.0 support"
@@ -4102,9 +4104,8 @@ msgstr ""
 
 #: ../../docs/about/system_requirements.rst:268
 #: ../../docs/about/system_requirements.rst:274
-#, fuzzy
 msgid "*Example (Metal): Apple A12 (iPhone XR/XS)*"
-msgstr "*Exemplo (Metal): Applet A7 (iPhone 5S)*"
+msgstr "*Exemplo (Metal): Apple A12 (iPhone XR/XS)*"
 
 #: ../../docs/about/system_requirements.rst:270
 msgid ""
@@ -4674,17 +4675,17 @@ msgstr ""
 "(Lua, Python, JavaScript)."
 
 #: ../../docs/about/faq.rst:156
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in a large amount of code, bugs, bottlenecks, and general "
 "inefficiency (Lua, Python, Squirrel, JavaScript, etc.). We wanted to focus "
 "on a great engine, not a great number of integrations."
 msgstr ""
-"Muitas linguagens existentes têm interfaces terríveis entre si e o C++, "
-"resultando em uma grande quantidade de código, bugs, gargalos e ineficiência "
-"em geral (Lua, Python, Squirrel, JavaScript e etc). Nós queríamos focar em "
-"uma engine incrível, e não em uma incrível quantidade de integrações."
+"Muitas linguagens existentes têm interfaces terríveis para conectar-se com o "
+"C++, resultando em uma grande quantidade de código, bugs, gargalos e "
+"ineficiência em geral (Lua, Python, Squirrel, JavaScript e etc). Nós "
+"queríamos focar em uma engine incrível, e não em uma incrível quantidade de "
+"integrações."
 
 #: ../../docs/about/faq.rst:160
 msgid ""
@@ -5086,7 +5087,6 @@ msgid "There are several reasons for this:"
 msgstr "Há algumas razões para isto:"
 
 #: ../../docs/about/faq.rst:321
-#, fuzzy
 msgid ""
 "**Code maintenance and surface for bugs.** Every time we accept new code in "
 "the Godot repository, existing contributors often take the responsibility of "
@@ -5129,7 +5129,6 @@ msgstr ""
 "para desenvolvedores em todos os países."
 
 #: ../../docs/about/faq.rst:339
-#, fuzzy
 msgid ""
 "**Keeping the binary size small for export templates.** This directly "
 "impacts the size of projects exported with Godot. On mobile and web "
@@ -5138,13 +5137,13 @@ msgid ""
 "high-speed Internet is not readily available. To add to this, strict data "
 "usage caps are often in effect in those countries."
 msgstr ""
-"**Manter o tamanho do binário pequeno para modelos de exportação** Isso "
-"impacta diretamente no tamanho dos projetos exportados com o Godot. Em "
+"**Manter o tamanho do binário pequeno para modelos de exportação.** Isso "
+"impacta diretamente o tamanho dos projetos exportados com o Godot. Em "
 "plataformas móveis e web, manter os tamanhos dos arquivos pequenos é "
-"essencial para assegurar instalações e carregamento rápidos em dispositivos "
-"de baixo desempenho. Novamente, existem muitos países onde a Internet de "
-"alta velocidade não está disponível para todos. Além disso, limites de banda "
-"costumam estar em vigor nesses países."
+"importante para garantir instalação e carregamento rápidos em dispositivos "
+"com recursos limitados. Além disso, existem muitos países onde a internet de "
+"alta velocidade não está prontamente disponível. Para piorar a situação, "
+"limites rígidos de uso de dados geralmente estão em vigor nesses países."
 
 #: ../../docs/about/faq.rst:346
 msgid ""
@@ -5193,20 +5192,18 @@ msgstr ""
 "aspectos foram criados, e com uma variedade enorme de tamanhos e DPIs."
 
 #: ../../docs/about/faq.rst:365
-#, fuzzy
 msgid ""
 "The most common and proper way to achieve this is to, instead, use a single "
 "base resolution for the game and only handle different screen aspect ratios. "
 "This is mostly needed for 2D, as in 3D, it's just a matter of camera "
 "vertical or horizontal FOV."
 msgstr ""
-"A maneira mais comum e adequada de fazer isso é, na verdade, usar uma única "
-"resolução básica para o jogo e lidar apenas com diferentes proporções de "
-"tela. Isso é necessário principalmente para 2D, já que em 3D é apenas uma "
-"questão de ajuste da Camera (XFov ou YFov)."
+"A maneira mais comum e adequada de se conseguir isso é usar uma única "
+"resolução base para o jogo e lidar apenas com diferentes proporções de tela. "
+"Isso é necessário principalmente para jogos 2D, já que em 3D, trata-se "
+"apenas do campo de visão vertical ou horizontal da câmera."
 
 #: ../../docs/about/faq.rst:370
-#, fuzzy
 msgid ""
 "Choose a single base resolution for your game. Even if there are devices "
 "that go up to 1440p and devices that go down to 400p, regular hardware "
@@ -5216,23 +5213,23 @@ msgid ""
 "the more memory they will take and the longer the time it will take for "
 "loading."
 msgstr ""
-"Escolha uma resolução base para seu jogo. Mesmo que existam dispositivos que "
-"vão até 2k e outros que desçam até os 400p, o redimensionamento por hardware "
-"normal no seu dispositivo vai tomar conta disso com pouco ou nenhum custo de "
-"desempenho. As escolhas mais comuns são próximas a 1080p (1920x1080) ou 720p "
-"(1280x720). Tenha em mente que, quanto maior a resolução, maiores são os "
-"conteúdos, e mais memória eles vão ocupar e mais tempo levará para carregar."
+"Escolha uma resolução base única para o seu jogo. Mesmo que existam "
+"dispositivos que suportem até 1440p e outros que suportem até 400p, o "
+"dimensionamento de hardware padrão do seu dispositivo cuidará disso com "
+"pouco ou nenhum custo de desempenho. As opções mais comuns são resoluções "
+"próximas a 1080p (1920x1080) ou 720p (1280x720). Lembre-se de que quanto "
+"maior a resolução, maiores serão os seus recursos, mais memória eles "
+"ocuparão e maior será o tempo de carregamento."
 
 #: ../../docs/about/faq.rst:378
-#, fuzzy
 msgid ""
 "Use the stretch options in Godot; canvas items stretching while keeping "
 "aspect ratios works best. Check the :ref:`doc_multiple_resolutions` tutorial "
 "on how to achieve this."
 msgstr ""
-"Use as opções de esticar no Godot; O alongamento 2D, mantendo as proporções, "
-"funciona melhor. Verifique o tutorial :ref:`doc_multiple_resolutions` sobre "
-"como conseguir isso."
+"Use as opções de esticar no Godot; esticar os elementos da tela mantendo as "
+"proporções funciona melhor. Consulte o tutorial "
+":ref:`doc_multiple_resolutions` para saber como fazer isso."
 
 #: ../../docs/about/faq.rst:382
 msgid ""
@@ -5275,9 +5272,8 @@ msgstr ""
 "informações."
 
 #: ../../docs/about/faq.rst:400
-#, fuzzy
 msgid "Which Godot version should I use for a new project?"
-msgstr "Qual versão da Godot devo usar para um novo projeto?"
+msgstr "Qual versão do Godot devo usar para um novo projeto?"
 
 #: ../../docs/about/faq.rst:402
 msgid ""
@@ -5491,6 +5487,9 @@ msgid ""
 "to be used with its editor. We recommend you give it a try, as it will most "
 "likely save you time in the long term."
 msgstr ""
+"Se você quer fazer um jogo com Godot, lembre-se que Godot foi projetado para "
+"ser usado com seu editor. Nós recomendamos que você tente utiliza-lo, já que "
+"provavelmente poupará tempo a longo prazo."
 
 #: ../../docs/about/faq.rst:491
 msgid ""
@@ -5500,6 +5499,11 @@ msgid ""
 "currently supported on Windows, macOS, and Linux. Support for Android and "
 "iOS is planned for a future release."
 msgstr ""
+"Para aplicações mais especializadas, pode fazer sentido usar o Godot como "
+"biblioteca. Desde o Godot 4.6, há suporte **experimental** para usar o Godot "
+"como uma biblioteca estática ou compartilhada na forma de LibGodot. "
+"Atualmente há suporte para isso no Windows, MacOS e Linux. O suporte para "
+"Android e iOS está planejado para uma versão futura."
 
 #: ../../docs/about/faq.rst:497
 msgid ""
@@ -5507,6 +5511,9 @@ msgid ""
 "libgodot_project GitHub repository <https://github.com/migeran/"
 "libgodot_project>`__."
 msgstr ""
+"Você pode encontrar amostras de aplicações que utilizam Godot como uma "
+"bilbioteca no `repositório do Github migeran/libgodot_project <https://"
+"github.com/migeran/libgodot_project>`__."
 
 #: ../../docs/about/faq.rst:501
 msgid "What user interface toolkit does Godot use?"
@@ -8311,18 +8318,16 @@ msgid "Let's talk about the available programming languages."
 msgstr "Vamos falar sobre as linguagens de programação disponíveis."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:87
-#, fuzzy
 msgid ""
 "You can code your games using :ref:`GDScript <doc_gdscript>`, a Godot-"
 "specific and tightly integrated language with a lightweight syntax, "
 "or :ref:`C# <doc_c_sharp>`, which is popular in the games industry. These "
 "are the two main scripting languages we support."
 msgstr ""
-"Você pode programar seu jogo usando :ref:`GDScript <toc-learn-scripting-"
-"gdscript>`, uma linguagem específica do Godot e diretamente integrada com "
-"uma sintaxe simples, ou :ref:`C# <toc-learn-scripting-C#>`, que é popular na "
-"indústria de jogos. Essas são as duas principais linguagens de scripts "
-"suportadas."
+"Você pode programar seu jogo usando :ref:`GDScript <doc_gdscript>`, uma "
+"linguagem específica do Godot e diretamente integrada com uma sintaxe "
+"simples, ou :ref:`C# <doc_c_sharp>`, que é popular na indústria de jogos. "
+"Essas são as duas principais linguagens de scripts suportadas."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:92
 #, fuzzy
@@ -8409,9 +8414,8 @@ msgstr ""
 "engine."
 
 #: ../../docs/getting_started/introduction/learn_to_code_with_gdscript.rst:4
-#, fuzzy
 msgid "Learn to code with GDScript"
-msgstr "Carregando no GDScript"
+msgstr "Aprenda a programar em GDScript"
 
 #: ../../docs/getting_started/introduction/learn_to_code_with_gdscript.rst:6
 msgid ""
@@ -27735,7 +27739,7 @@ msgstr ":kbd:`Shift + Alt + Seta para Baixo`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:295
 msgid "``common/ui_text_caret_add_below``"
-msgstr ""
+msgstr "``common/ui_text_caret_add_below``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:297
 #, fuzzy
@@ -27755,11 +27759,11 @@ msgstr ":kbd:`Shift + Alt + Seta para Cima`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:297
 msgid "``common/ui_text_caret_add_above``"
-msgstr ""
+msgstr "``common/ui_text_caret_add_above``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:299
 msgid "Select Next Occurrence"
-msgstr ""
+msgstr "Selecionar Próxima Ocorrência"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:299
 #: ../../docs/tutorials/editor/default_key_mapping.rst:450
@@ -27777,7 +27781,7 @@ msgstr ":kbd:`Cmd + D`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:299
 msgid "``common/ui_text_add_selection_for_next_occurrence``"
-msgstr ""
+msgstr "``common/ui_text_add_selection_for_next_occurrence``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:301
 msgid "Complete Symbol"
@@ -39316,7 +39320,7 @@ msgstr "Método ``_process`` adiciona um novo parâmetro ``test_only``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:42
 msgid "|❌ with stub|"
-msgstr ""
+msgstr "|❌ com stub|"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:42
 #, fuzzy
@@ -39964,6 +39968,16 @@ msgid ""
 "<class_TileMapLayer_property_physics_quadrant_size>` to ``1``, which "
 "disables physics chunking."
 msgstr ""
+":ref:`TileMapLayer.get_coords_for_body_rid() "
+"<class_TileMapLayer_method_get_coords_for_body_rid>` retornará valores "
+"diferentes na versão 4.5 em relação à versão 4.4, já que a divisão em chunks "
+"físicos do TileMapLayer é ativada por padrão. Valores maiores de "
+":ref:`TileMapLayer.physics_quadrant_size "
+"<class_TileMapLayer_property_physics_quadrant_size>` farão esta função menos "
+"precisa. Para obter as coordenadas exatas da célula como na 4.4 e versões "
+"anteriores, é preciso definir :ref:`TileMapLayer.physics_quadrant_size "
+"<class_TileMapLayer_property_physics_quadrant_size>` para ``1``, o que "
+"desativa a divisão em chunks físicos."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:206
 msgid "3D Model Import"
@@ -40001,6 +40015,14 @@ msgid ""
 "call :ref:`Resource.duplicate_deep(DEEP_DUPLICATE_ALL) "
 "<class_Resource_method_duplicate_deep>` instead to keep the old behavior."
 msgstr ""
+"O método `Resource.duplicate(true) <class_Resource_method_duplicate>` (que "
+"realiza duplicação profunda) agora duplica apenas os recursos internos ao "
+"arquivo de recurso em que é chamado. Na versão 4.4, ele duplicava tudo, "
+"incluindo recursos externos. Se você estava realizando uma duplicação "
+"profunda de um recurso que continha referências a outros recursos externos, "
+"esses recursos externos não serão mais duplicados. Você deve chamar "
+"`Resource.duplicate_deep(DEEP_DUPLICATE_ALL) "
+"<class_Resource_method_duplicate_deep>` para manter o comportamento anterior."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:231
 msgid ""
@@ -40016,6 +40038,14 @@ msgid ""
 "or :ref:`ProjectSettings.set_as_internal() "
 "<class_ProjectSettings_method_set_as_internal>` instead."
 msgstr ""
+"O método `ProjectSettings.add_property_info()` agora exibe um aviso quando o "
+"parâmetro do dicionário contém chaves ausentes ou inválidas. Mais importante "
+"ainda, agora ele avisa quando uma chave `usage` é passada, pois essa chave "
+"não é utilizada. Isso também ocorria antes da versão 4.5, mas era ignorado "
+"silenciosamente. Como lembrete, para definir as informações de uso da "
+"propriedade corretamente, você deve usar os métodos "
+"`ProjectSettings.set_as_basic()`, `ProjectSettings.set_restart_if_changed()` "
+"ou `ProjectSettings.set_as_internal()`."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:242
 msgid ""
@@ -40057,6 +40087,11 @@ msgid ""
 "toggled with the ``navigation/world/region_use_async_iterations`` project "
 "setting."
 msgstr ""
+"Por padrão, as regiões em um mapa do NavigationServer agora são atualizadas "
+"de forma assíncrona usando threads para melhorar o desempenho. Isso pode "
+"causar atrasos adicionais na atualização devido à sincronização de threads. "
+"A atualização assíncrona de regiões pode ser ativada ou desativada com a "
+"configuração de projeto ``navigation/world/region_use_async_iterations``."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:266
 msgid ""
@@ -60279,12 +60314,12 @@ msgid ""
 "simple transfer function of the display. A more complex approach to encoding "
 "is required."
 msgstr ""
-"Os cálculos de um modelo referenciado por cena exige que multiplicamos a "
-"cena por diferentes valores para ajustar a intensidade e a exposição para "
-"diferentes faixas de luz. A função de transferência da tela não pode "
-"renderizar apropriadamente a gama dinâmica mais ampla da saída de cena da "
-"engine usando a função de transferência simples da tela. É necessária uma "
-"abordagem mais complexa para a codificação."
+"A matemática de um modelo referenciado à cena exige que multipliquemos a "
+"cena por diferentes valores para ajustar as intensidades e a exposição a "
+"diferentes faixas de luz. A função de transferência do monitor não consegue "
+"renderizar adequadamente a ampla faixa dinâmica da saída de cena do motor de "
+"jogo usando a função de transferência simples do monitor. Uma abordagem mais "
+"complexa para a codificação é necessária."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:77
 msgid "Scene linear & asset pipelines"
@@ -62422,7 +62457,6 @@ msgid "Using Lightmap global illumination"
 msgstr "Usando a iluminação global Lightmap"
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:6
-#, fuzzy
 msgid ""
 "Baked lightmaps are a workflow for adding indirect (or fully baked) lighting "
 "to a scene. Unlike the :ref:`VoxelGI <doc_using_voxel_gi>` and :ref:`SDFGI "
@@ -62431,13 +62465,14 @@ msgid ""
 "VoxelGI and SDFGI, baked lightmaps can optionally be used to store direct "
 "lighting, which provides even further performance gains."
 msgstr ""
-"Os mapas de luz baked são um fluxo de trabalho alternativo para adicionar "
-"iluminação indireta (ou totalmente baked) a uma cena. Ao contrário da "
-"abordagem :ref:`doc_gi_probes`, mapas de luz preparados funcionam bem em PCs "
-"e dispositivos móveis de baixo desempenho já que quase não consomem recursos "
-"em tempo de execução. Também ao contrário do GIProbe, mapas de luz baked "
-"podem opcionalmente ser usados para armazenar iluminação direta, o que "
-"fornece ainda mais ganhos de desempenho."
+"Os mapas de luz pré-calculados são um fluxo de trabalho alternativo para "
+"adicionar iluminação indireta (ou totalmente baked) a uma cena. Ao contrário "
+"da abordagem :ref:`VoxelGI <doc_using_voxel_gi>` e :ref:`SDFGI "
+"<doc_using_sdfgi>`, mapas de luz pré-calculados funcionam bem em PCs e "
+"dispositivos móveis de baixo desempenho já que quase não consomem recursos "
+"em tempo de execução. Além disso, ao contrário do GIProbe, mapas de luz pré-"
+"calculados podem opcionalmente ser usados para armazenar iluminação direta, "
+"o que fornece ainda mais ganhos de desempenho."
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:13
 #, fuzzy
@@ -62517,7 +62552,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:56
 msgid "LightmapGI enabled (with direct and indirect light baked)."
-msgstr ""
+msgstr "LightmapGI ativado (com luz direta e indireta pré-calculada)."
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:59
 msgid ""
@@ -62525,6 +62560,9 @@ msgid ""
 "but lower quality visuals. Notice the blurrier sun shadow in the top-right "
 "corner."
 msgstr ""
+"LightmapGI ativado (com luz direta e indireta pré-calculada). Melhor "
+"desempenho, mas menor qualidade visual. Repare na sombra do sol mais borrada "
+"no canto superior direito."
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:63
 #, fuzzy
@@ -62545,6 +62583,8 @@ msgid ""
 "SDFGI is also less accurate compared to LightmapGI. However, SDFGI can "
 "support large open worlds without any need for baking."
 msgstr ""
+"SDFGI também é menos preciso comparado ao LightmapGI. Porém, o SDFGI "
+"consegue suportar grandes mundos abertos sem necessidade de Pré-Cálculo."
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:75
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_3d_shader.rst:62
@@ -62557,6 +62597,9 @@ msgid ""
 "limitations. On the web platform, only *rendering* lightmaps that were baked "
 "on a different platform is supported."
 msgstr ""
+"Pré-calcular mapas de luz no editor web não é suportado devido à limitações "
+"de API gráfica. Na plataforma web, apenas a *renderização* de mapas de luz "
+"que foram pré-calculados em uma plataforma diferente são suportados."
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:85
 msgid ""
@@ -145449,9 +145492,8 @@ msgid "Links to other related parts of the Godot API."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:53
-#, fuzzy
 msgid "Tutorials"
-msgstr "Tutoriais em texto"
+msgstr "Tutoriais"
 
 #: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:57
 msgid ""

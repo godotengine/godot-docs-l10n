@@ -76,13 +76,14 @@
 # DeviceBlack <devicewhite@proton.me>, 2025.
 # João Vitor Viana do Nascimento <joaovitor25112007@gmail.com>, 2025.
 # "A Thousand Ships (she/her)" <over999ships@gmail.com>, 2025.
+# 100Nome <100nome.portugal@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2025-12-19 15:00+0100\n"
-"PO-Revision-Date: 2025-11-04 13:03+0000\n"
-"Last-Translator: \"A Thousand Ships (she/her)\" <over999ships@gmail.com>\n"
+"PO-Revision-Date: 2026-01-11 16:37+0000\n"
+"Last-Translator: 100Nome <100nome.portugal@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pt/>\n"
 "Language: pt\n"
@@ -90,7 +91,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14.1-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -861,13 +862,14 @@ msgid "**Plugins:**"
 msgstr "**Plugins:**"
 
 #: ../../docs/about/list_of_features.rst:95
+#, fuzzy
 msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
 "Plugins para o editor podem ser descarregados através da :ref:`biblioteca de "
-"assets <doc_what_is_assetlib>`, a permitir a expansão das funcionalidades do "
-"editor."
+"recursos <doc_what_is_assetlib>`, a permitir a expansão das funcionalidades "
+"do editor."
 
 #: ../../docs/about/list_of_features.rst:97
 msgid ""
@@ -3141,8 +3143,8 @@ msgstr ""
 msgid ""
 "Text-based formats are human-readable and more friendly to version control."
 msgstr ""
-"Formatos baseados em texto são legíveis por humanos e mais amigáveis a "
-"sistemas de versionamento."
+"Os formatos baseados em texto são legíveis por humanos e mais adequados para "
+"controlo de versões."
 
 #: ../../docs/about/list_of_features.rst:744
 msgid "Binary formats are faster to save/load for large scenes/resources."
@@ -8911,8 +8913,8 @@ msgstr ""
 msgid ""
 "You can learn more about the asset library in :ref:`doc_what_is_assetlib`."
 msgstr ""
-"Pode aprender mais sobre a biblioteca de assets "
-"em :ref:`doc_what_is_assetlib`."
+"Pode aprender mais sobre a biblioteca de recursos em "
+":ref:`doc_what_is_assetlib`."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:163
 msgid "Integrated class reference"
@@ -22754,10 +22756,11 @@ msgstr ""
 "raiz do projeto:"
 
 #: ../../docs/tutorials/best_practices/version_control_systems.rst:59
+#, fuzzy
 msgid ""
 "Creating version control metadata in the project manager's New Project dialog"
 msgstr ""
-"Criar metadados de controle de versão na caixa de diálogo \"Novo Projeto\" "
+"Criar metadados de controlo de versão na caixa de diálogo \"Novo projeto\" "
 "do gestor de projetos"
 
 #: ../../docs/tutorials/best_practices/version_control_systems.rst:63
@@ -40592,14 +40595,13 @@ msgid "3D in 2D"
 msgstr "2D em 3D"
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:306
-#, fuzzy
 msgid ""
 "It is possible to display 3D scenes in 2D screen, You can see this in the "
 "demo `3D in 2D Viewport <https://godotengine.org/asset-library/asset/"
 "2804>`__."
 msgstr ""
-"`Biblioteca de Assets do Godot <https://godotengine.org/asset-library/"
-"asset>`_"
+"É possível apresentar cenas 3D num ecrã 2D. Pode ver isto na demonstração "
+"`3D in 2D Viewport <https://godotengine.org/asset-library/asset/2804>`__."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:4
 msgid "Canvas layers"
@@ -85854,13 +85856,12 @@ msgstr ""
 "ser visto mais como uma continuação daquele."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:22
-#, fuzzy
 msgid ""
 "We will be using the official demo as an example; you can `download it from "
 "the Asset Library <https://godotengine.org/asset-library/asset/2776>`_."
 msgstr ""
-"Utilizaremos a demonstração oficial como exemplo; pode `descarregá-la da "
-"Biblioteca de Assets <https://godotengine.org/asset-library/asset/134>`_."
+"Vamos utilizar a demonstração oficial como exemplo; pode `descarregá-la da "
+"Biblioteca de Recursos <https://godotengine.org/asset-library/asset/2776>`_."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:28
 msgid "Configuring the imported translation"
@@ -138836,13 +138837,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:16
-#, fuzzy
 msgid ""
 "Optional: Publish on the `Godot Asset Library <https://godotengine.org/asset-"
 "library/asset>`__."
 msgstr ""
-"`Biblioteca de Assets do Godot <https://godotengine.org/asset-library/"
-"asset>`_"
+"Opcional: Publicar na `Biblioteca de Recursos do Godot <https://"
+"godotengine.org/asset-library/asset>`__."
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:21
 msgid ""
@@ -169063,15 +169063,14 @@ msgid "Installing the vendors plugin"
 msgstr "Instalando um plug-in"
 
 #: ../../docs/tutorials/xr/deploying_to_android.rst:44
-#, fuzzy
 msgid ""
 "The vendors plugin can be downloaded from the asset library, search for "
 "\"OpenXR vendors\" and install the one named \"Godot OpenXR Vendors plugin "
 "v4\"."
 msgstr ""
-"Plugins para o editor podem ser descarregados através da :ref:`biblioteca de "
-"assets <doc_what_is_assetlib>`, a permitir a expansão das funcionalidades do "
-"editor."
+"O plugin de fornecedores pode ser descarregado da biblioteca de recursos. "
+"Procure por \"OpenXR vendors\" e instale aquele com o nome \"Godot OpenXR "
+"Vendors plugin v4\"."
 
 #: ../../docs/tutorials/xr/deploying_to_android.rst:49
 #, fuzzy
@@ -189838,7 +189837,7 @@ msgstr "Biblioteca de Ativos"
 
 #: ../../docs/community/asset_library/what_is_assetlib.rst:4
 msgid "About the Asset Library"
-msgstr "Sobre a Biblioteca de Assets"
+msgstr "Sobre a Biblioteca de Recursos"
 
 #: ../../docs/community/asset_library/what_is_assetlib.rst:6
 msgid ""
@@ -189858,25 +189857,24 @@ msgid ""
 "distributed under non-free, proprietary licenses, limiting what you can do "
 "with them."
 msgstr ""
-"De começo, a Biblioteca de Assets pode parecer e funcionar de maneira "
-"semelhante a lojas de assets disponíveis para outros motores, como a Unity "
-"Asset Store, ou o Marketplace do Unreal Engine, onde pode enviar tanto "
-"assets gratuitamente disponíveis, como assets pagos, comerciais. Além disso, "
-"muitas vezes esses assets são distribuídos sob licenças proprietárias não-"
-"livres, limitando o que pode fazer com eles."
+"À primeira vista, a Biblioteca de Recursos poderá parecer e funcionar de "
+"forma semelhante às lojas de recursos disponíveis para outros motores, como "
+"a Unity Asset Store ou a Unreal Engine Marketplace, onde pode submeter "
+"recursos gratuitos, assim como recursos comerciais pagos. Além disso, muitas "
+"vezes esses recursos são distribuídos sob licenças não livres e "
+"proprietárias, limitando o que pode fazer com eles."
 
 #: ../../docs/community/asset_library/what_is_assetlib.rst:17
-#, fuzzy
 msgid ""
 "The Asset Library is different - all assets are distributed free of charge, "
 "and under a host of open source licenses (such as the MIT license, the GPL, "
 "and the Boost Software License). This makes the AssetLib more similar to the "
 "software repositories of a Linux distribution."
 msgstr ""
-"A Biblioteca de Assets é diferente - todos os assets são distribuídos "
+"A Biblioteca de Recursos é diferente — todos os recursos são distribuídos "
 "gratuitamente e sob uma série de licenças de código aberto (como a licença "
-"MIT, a GPL e a Boost Software License). Isso faz a AssetLib mais similar aos "
-"repositórios de software de uma distribuição Linux."
+"MIT, a GPL e a Boost Software License). Isto torna a Biblioteca de Recursos "
+"mais semelhante aos repositórios de software de uma distribuição Linux."
 
 #: ../../docs/community/asset_library/what_is_assetlib.rst:21
 msgid ""
@@ -189932,7 +189930,7 @@ msgstr ""
 
 #: ../../docs/community/asset_library/what_is_assetlib.rst:45
 msgid "Can paid assets be uploaded to the asset library?"
-msgstr "Assets pagos podem ser enviados à biblioteca de assets?"
+msgstr "Recursos pagos podem ser enviados para a biblioteca de recursos?"
 
 #: ../../docs/community/asset_library/what_is_assetlib.rst:47
 msgid ""
@@ -189940,9 +189938,9 @@ msgid ""
 "libraries which allow it. That said, you are allowed to monetize and sell "
 "Godot assets outside the Asset Library."
 msgstr ""
-"Não para a oficial, embora no futuro possa haver outras bibliotecas de "
-"assets que permitam. Dito isso, tem permissão de monetizar e vender assets "
-"do Godot fora da Biblioteca de Assets."
+"Não na oficial, embora no futuro possa haver outras bibliotecas de recursos "
+"que o permitam. Dito isto, tem permissão para monetizar e vender recursos "
+"para o Godot fora da Biblioteca de Recursos."
 
 #: ../../docs/community/asset_library/using_assetlib.rst:4
 msgid "Using the Asset Library"
@@ -190818,7 +190816,7 @@ msgstr ""
 #: ../../docs/community/tutorials.rst:44
 msgid "`Godot Asset Library <https://godotengine.org/asset-library/asset>`_"
 msgstr ""
-"`Biblioteca de Assets do Godot <https://godotengine.org/asset-library/"
+"`Biblioteca de Recursos do Godot <https://godotengine.org/asset-library/"
 "asset>`_"
 
 #: ../../docs/community/tutorials.rst:45

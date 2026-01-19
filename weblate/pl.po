@@ -128,7 +128,7 @@
 # MiloszS <m.sobczyk.official@gmail.com>, 2024.
 # Piotr Jurczak <piotr5jurczak@gmail.com>, 2024.
 # Syl Eleuth <syleleuth@gmail.com>, 2024.
-# Cyprian Klimaszewski <cyprian.klimaszewski@gmail.com>, 2024, 2025.
+# Cyprian Klimaszewski <cyprian.klimaszewski@gmail.com>, 2024, 2025, 2026.
 # Rafał Szyja <c64power@gmail.com>, 2025.
 # Kordian Lipiecki <kordian.lipiecki4@gmail.com>, 2025.
 # Bartosz Nowaczyk <bartus.nowaczyk@gmail.com>, 2025.
@@ -138,13 +138,15 @@
 # Marcus Cadaver <pilekc@hotmail.com>, 2025.
 # "A Thousand Ships (she/her)" <over999ships@gmail.com>, 2025.
 # Paweł Ruszkiewicz <pawel66031@protonmail.com>, 2025.
+# Pcniado <bratuspro2137@gmail.com>, 2025.
+# Paweł Szlubecki <szlube@szlube.net>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2025-12-19 15:00+0100\n"
-"PO-Revision-Date: 2025-11-24 07:52+0000\n"
-"Last-Translator: Paweł Ruszkiewicz <pawel66031@protonmail.com>\n"
+"PO-Revision-Date: 2026-01-05 16:02+0000\n"
+"Last-Translator: Cyprian Klimaszewski <cyprian.klimaszewski@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
 "Language: pl\n"
@@ -153,7 +155,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -220,9 +222,8 @@ msgid "Class reference"
 msgstr "Referencja klas"
 
 #: ../../docs/index.rst:4
-#, fuzzy
 msgid "Godot Docs – *master* branch"
-msgstr "Dokumentacja Godot – gałąź *4.5*"
+msgstr "Dokumentacja Godot – gałąź *master*"
 
 #: ../../docs/index.rst:8
 msgid ""
@@ -345,11 +346,14 @@ msgid ""
 "``index.html`` in a web browser."
 msgstr ""
 "W celu przeglądania dokumentacji offline, możesz pobrać kopię dokumentacji "
-"HTML <https://nightly.link/godotengine/godot-docs/workflows/"
-"build_offline_docs/master/godot-docs-html-master.zip>`__, z której możesz "
-"korzystać bez dostępu do internetu (jest aktualizowana w każdy "
-"poniedziałek). Wypakuj pobrane archiwum ZIP i otwórz w przeglądarce "
-"internetowej plik ``index.html`` z głównego katalogu dokumentacji."
+"HTML(odświeżana, co poniedziałek): `stabilna <https://nightly.link/"
+"godotengine/godot-docs/workflows/build_offline_docs/master/godot-docs-html-"
+"stable.zip>`__, `najnowsza <https://nightly.link/godotengine/godot-docs/"
+"workflows/build_offline_docs/master/godot-docs-html-master.zip>`__, `3.6 "
+"<https://nightly.link/godotengine/godot-docs/workflows/build_offline_docs/"
+"master/godot-docs-html-3.6.zip>`__. Wypakuj pobrane archiwum ZIP i otwórz w "
+"przeglądarce internetowej plik ``index.html`` z głównego katalogu "
+"dokumentacji."
 
 #: ../../docs/index.rst:59
 msgid ""
@@ -488,7 +492,6 @@ msgid "Before you start"
 msgstr "Zanim zaczniesz"
 
 #: ../../docs/about/introduction.rst:33
-#, fuzzy
 msgid ""
 "The :ref:`Tutorials and resources <doc_community_tutorials>` page lists "
 "video tutorials contributed by the community. If you prefer video to text, "
@@ -497,9 +500,8 @@ msgid ""
 msgstr ""
 "Strona :ref:`Kursy i zasoby <doc_community_tutorials>` zawiera listę "
 "poradników wideo stworzonych przez społeczność. Jeśli wolisz materiały wideo "
-"zamiast tekstu, może warto się im przyjrzeć. W przeciwnym "
-"razie, :ref:`Rozpoczynanie <doc_getting_started_intro>` jest dobrym punktem "
-"początkowym."
+"zamiast tekstu, może warto się im przyjrzeć. W przeciwnym razie, "
+":ref:`Zaczynanie <doc_getting_started_intro>` jest dobrym punktem by zacząć."
 
 #: ../../docs/about/introduction.rst:38
 msgid ""
@@ -511,7 +513,8 @@ msgstr ""
 "Jeśli masz problem z jednym z samouczków albo ze swoim projektem, możesz "
 "znaleźć pomoc na różnych `Kanałach społeczności <https://godotengine.org/"
 "community/>`_, w szczególności na `Discordzie <https://discord.gg/"
-"godotengine>`_ Godota i na `Forum <https://forum.godotengine.org/>`_."
+"godotengine>`_ społeczności Godota i na `Forum <https://"
+"forum.godotengine.org/>`_."
 
 #: ../../docs/about/introduction.rst:44
 msgid "About Godot Engine"
@@ -637,7 +640,6 @@ msgstr ""
 "wszystkich klasach, funkcjach, sygnałach i tak dalej."
 
 #: ../../docs/about/introduction.rst:91
-#, fuzzy
 msgid ""
 "In addition to this documentation, you may also want to take a look at the "
 "various `Godot demo projects <https://github.com/godotengine/godot-demo-"
@@ -651,7 +653,6 @@ msgid "About this documentation"
 msgstr "O tej dokumentacji"
 
 #: ../../docs/about/introduction.rst:97
-#, fuzzy
 msgid ""
 "Members of the Godot Engine community continuously write, correct, edit, and "
 "improve this documentation. We are always looking for more help. You can "
@@ -666,12 +667,13 @@ msgid ""
 msgstr ""
 "Członkowie społeczności Silnika Godot stale piszą, poprawiają, edytują i "
 "ulepszają tę dokumentację. Zawsze jest tu coś do zrobienia. Możesz również "
-"pomóc otwierając zgłoszenia na GitHubie lub tłumacząc tę dokumentację na "
-"własny język. Jeśli chcesz pomóc, sprawdź :ref:`Sposoby współtworzenia "
-"<doc_ways_to_contribute>` i :ref:`Pisanie dokumentacji "
-"<doc_contributing_writing_documentation>`, albo skontaktuj się z `zespołem "
-"tworzącym Dokumentację <https://godotengine.org/teams/#documentation>`_ on "
-"`Czacie Twórców Godota <https://chat.godotengine.org/>`_."
+"pomóc otwierając zgłoszenia błędów na GitHubie lub tłumacząc tę dokumentację "
+"na własny język. Jeżeli chcesz pomóc, zajrzyj do `How to contribute <https://"
+"contributing.godotengine.org/en/latest/organization/how_to_contribute.html>"
+"`__ i `Writing documentation <https://contributing.godotengine.org/en/latest/"
+"documentation/manual/index.html>`__ lub bądź w kontakcie z `Documentation "
+"team <https://godotengine.org/teams/#documentation>`_ na `Godot Contributors "
+"Chat <https://chat.godotengine.org/>`_."
 
 #: ../../docs/about/introduction.rst:105
 msgid ""
@@ -696,7 +698,7 @@ msgstr "Lista funkcji"
 #: ../../docs/about/list_of_features.rst:8
 msgid "This page aims to list **all** features currently supported by Godot."
 msgstr ""
-"Ta strona ma na celu wyszczególnienie wszystkich funkcji aktualnie "
+"Ta strona ma na celu wyszczególnienie **wszystkich** funkcji aktualnie "
 "obsługiwanych przez Godot."
 
 #: ../../docs/about/list_of_features.rst:12
@@ -760,14 +762,13 @@ msgid "Android (editor support is experimental)."
 msgstr "Android (obsługa edytora jest eksperymentalna)."
 
 #: ../../docs/about/list_of_features.rst:36
-#, fuzzy
 msgid ""
 ":ref:`Web browsers <doc_using_the_web_editor>`. Experimental in 4.0, using "
 "Godot 3.x is recommended instead when targeting HTML5."
 msgstr ""
-":ref:`Przeglądarki internetowe <doc_using_the_web_editor>`. Eksperymentalne "
-"w wersji 4.0, zamiast tego zaleca się korzystanie z Godot 3.x, gdy celem "
-"jest HTML5."
+":ref:`Przeglądarki internetowe <doc_using_the_web_editor>`. Są "
+"eksperymentalne w wersji 4.0, zamiast tego zaleca się korzystanie z Godot "
+"3.x, gdy celem jest HTML5."
 
 #: ../../docs/about/list_of_features.rst:41
 msgid ""
@@ -806,7 +807,6 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:56
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:131
-#, fuzzy
 msgid ""
 "Projects written in C# using Godot 4 currently cannot be exported to the web "
 "platform. To use C# on that platform, consider Godot 3 instead. Android and "
@@ -814,10 +814,9 @@ msgid ""
 "and :ref:`some limitations apply <doc_c_sharp_platforms>`."
 msgstr ""
 "Projekty napisane w C# używające Godot 4 obecnie nie mogą być eksportowane "
-"do platformy web. Aby użyć C# dla tej platformy, rozważ Godot 3 w zamian. "
-"Wsparcie dla Platformy Android i iOS jest dostępne od wersji Godot 4.2, ale "
-"jest eksperymentalna and :ref:`some limitations apply "
-"<doc_c_sharp_platforms>`."
+"na platformę web. Aby użyć C# dla tej platformy, rozważ użycie Godot 3. "
+"Wsparcie dla Platformy Android i iOS jest dostępne od wersji Godot 4.2 jako "
+"eksperymentalne z :ref:`ograniczeniami <doc_c_sharp_platforms>`."
 
 #: ../../docs/about/list_of_features.rst:62
 #: ../../docs/about/docs_changelog.rst:22
@@ -1662,6 +1661,8 @@ msgid ""
 ":ref:`Supports albedo <doc_using_decals>`, emissive, :abbr:`ORM (Occlusion "
 "Roughness Metallic)`, and normal mapping."
 msgstr ""
+":ref:`Wspiera kolor bazowy materiału <doc_using_decals>`, emisyjny, "
+":abbr:`ORM (Occlusion Roughness Metallic)` i mapowanie wartości normalnych."
 
 #: ../../docs/about/list_of_features.rst:298
 msgid ""
@@ -8181,20 +8182,19 @@ msgid ""
 "Signals are Godot's version of the *observer* pattern. You can read more "
 "about it here: https://gameprogrammingpatterns.com/observer.html"
 msgstr ""
-"Sygnały to odpowiednik \"obserwatora\" z wzorców projektowych używanych w "
-"grach, o którym możesz przeczytać więcej tutaj: https://"
+"Sygnały to Godotowa wersja wzorca projektowego *observer* (obserwator). "
+"Możesz dowiedzieć się o tym więcej tutaj: https://"
 "gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:87
-#, fuzzy
 msgid ""
 "For example, buttons emit a signal when pressed. You can connect a piece of "
 "code to this signal which will run in reaction to this event, like starting "
 "the game or opening a menu."
 msgstr ""
-"Dla przykładu, przyciski wysyłają sygnał po naciśnięciu. Możesz podłączyć "
-"się do tego sygnału, aby uruchomić kod w reakcji na to zdarzenie, np. "
-"uruchomić grę lub otworzyć menu."
+"Dla przykładu, przyciski wysyłają sygnał po ich naciśnięciu. Możesz podpiąć "
+"fragment programu do tego sygnału, aby uruchomiał się w reakcji na to "
+"zdarzenie, np. uruchomiał grę lub otwierał menu."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:91
 msgid ""
@@ -8249,9 +8249,8 @@ msgstr ""
 "cierpliwy, bo w serii dla początkujących otrzymasz wiele odpowiedzi."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:10
-#, fuzzy
 msgid "First look at Godot's interface"
-msgstr "Pierwsze spojrzenie na edytor Godota"
+msgstr "Pierwsze spojrzenie na interface Godota"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:12
 msgid ""
@@ -8266,14 +8265,14 @@ msgid ""
 "For a comprehensive breakdown of the editor's interface and how to use it, "
 "see the :ref:`Editor manual <doc_editor_introduction>`."
 msgstr ""
+"Aby uzyskać wyczerpujący opis interfejsu edytora i sposobu korzystania z "
+"niego, zobacz :ref:`instrukcję obsługi Edytora <doc_editor_introduction>`."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:19
-#, fuzzy
 msgid "The Project Manager"
 msgstr "Menedżer projektów"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:21
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you see is the Project Manager. In "
 "the default tab **Projects**, you can manage existing projects, import or "
@@ -8284,7 +8283,6 @@ msgstr ""
 "utworzonymi projektami, zaimportować lub stworzyć nowe, i wiele więcej."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:27
-#, fuzzy
 msgid ""
 "At the top of the window, there is another tab named **Asset Library**. The "
 "first time you go to this tab you'll see a \"Go Online\" button. For privacy "
@@ -8292,28 +8290,28 @@ msgid ""
 "To change this click the \"Go Online\" button. You can change this option "
 "later in the settings."
 msgstr ""
-"Na górze okna znajduje się zakładka pod nazwą \"Biblioteka Zasobów\". Gdy ją "
-"otworzysz po raz pierwszy, zobaczysz przycisk z napisem \"Przejdź do trybu "
-"online\". Ze względów prywatności menedżer projektów nie pozwala na domyślne "
-"połączenie z internet. Aby to zmienić kliknij przycisk \"Przejdź do trybu "
-"online\". Jeżeli chcesz wrócić do trybu \"offline\" możesz to zrobić w "
-"ustawieniach menadżera projektów."
+"Na górze okna znajduje się inna zakładka pod nazwą **Biblioteka Zasobów**. "
+"Gdy ją otworzysz po raz pierwszy, zobaczysz przycisk z napisem **Przejdź do "
+"trybu online**. Aby zachować prywatność domyślnie menedżer projektów nie "
+"pozwala na połączenie z internetem. Aby to zmienić kliknij przycisk "
+"\"Przejdź do trybu online\". Jeżeli później będziesz chciał przywrócić to "
+"ustawienie, możesz to zrobić w ustawieniach."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:32
-#, fuzzy
 msgid ""
 "Once your network mode is set to \"online\", you can search for demo "
 "projects in the open source asset library, which includes many projects "
 "developed by the community:"
 msgstr ""
 "Gdyż już zmienisz ustawienia sieciowe na \"online\" będziesz mieć możliwość "
-"przeszukiwania gotowych projektów z biblioteki zasobów typu open source. "
-"Znajduje się tam wiele projektów stworzonych przez społeczność."
+"wyszukiwania projektów demonstracyjnych z biblioteki open source, która "
+"zawiera mnóstwo projektów stworzonych przez społeczność:"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:37
 msgid ""
 "The Project Manager's settings can be opened using the **Settings** menu:"
 msgstr ""
+"Ustawienia Menadżera Projektów można otworzyć używając menu *Ustawienia*:"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:41
 msgid ""
@@ -8321,6 +8319,9 @@ msgid ""
 "language), interface theme, display scale, network mode, and also the "
 "directory naming convention."
 msgstr ""
+"Z tego miejsca możesz zmienić język edytora(domyślnym językiem jest język "
+"systemu operacyjnego), motyw graficzny , a także jego skalę, tryb dostępu do "
+"sieci, czy też konwencję nazewnictwa katalogów."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:44
 msgid ""
@@ -8334,13 +8335,12 @@ msgid "First look at Godot's editor"
 msgstr "Pierwsze spojrzenie na edytor Godota"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:51
-#, fuzzy
 msgid ""
 "When you open a new or an existing project, the editor's interface appears. "
 "Let's look at its main areas:"
 msgstr ""
 "Kiedy otworzysz nowy lub istniejący projekt, pojawi się interfejs edytora. "
-"Spójrzmy na jego główne obszary."
+"Spójrzmy na jego główne obszary:"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:56
 msgid ""
@@ -68565,45 +68565,50 @@ msgid "**web_android**"
 msgstr "**web_android**"
 
 #: ../../docs/tutorials/export/feature_tags.rst:117
-#, fuzzy
 msgid "Host OS is a Web browser running on Android"
-msgstr "Gospodarzem jest przeglądarka"
+msgstr ""
+"Systemem operacyjnym jest przeglądarka internetowa działająca w systemie "
+"Android"
 
 #: ../../docs/tutorials/export/feature_tags.rst:119
 msgid "**web_ios**"
 msgstr "**web_ios**"
 
 #: ../../docs/tutorials/export/feature_tags.rst:119
-#, fuzzy
 msgid "Host OS is a Web browser running on iOS"
-msgstr "Gospodarzem jest przeglądarka"
+msgstr ""
+"Systemem operacyjnym gospodarza jest przeglądarka internetowa działająca w "
+"iOS"
 
 #: ../../docs/tutorials/export/feature_tags.rst:121
 msgid "**web_linuxbsd**"
 msgstr "**web_linuxbsd**"
 
 #: ../../docs/tutorials/export/feature_tags.rst:121
-#, fuzzy
 msgid "Host OS is a Web browser running on Linux or \\*BSD"
-msgstr "Gospodarzem jest przeglądarka"
+msgstr ""
+"Systemem operacyjnym gospodarza jest przeglądarka internetowa działająca w "
+"systemie Linux lub \\*BSD"
 
 #: ../../docs/tutorials/export/feature_tags.rst:123
 msgid "**web_macos**"
 msgstr "**web_macos**"
 
 #: ../../docs/tutorials/export/feature_tags.rst:123
-#, fuzzy
 msgid "Host OS is a Web browser running on macOS"
-msgstr "Gospodarzem jest przeglądarka"
+msgstr ""
+"Systemem operacyjnym gospodarza jest przeglądarka internetowa działająca w "
+"systemie macOS"
 
 #: ../../docs/tutorials/export/feature_tags.rst:125
 msgid "**web_windows**"
 msgstr "**web_windows**"
 
 #: ../../docs/tutorials/export/feature_tags.rst:125
-#, fuzzy
 msgid "Host OS is a Web browser running on Windows"
-msgstr "Gospodarzem jest przeglądarka"
+msgstr ""
+"Systemem operacyjnym gospodarza jest przeglądarka internetowa działająca w "
+"systemie Windows"
 
 #: ../../docs/tutorials/export/feature_tags.rst:127
 msgid "**etc**"
@@ -68627,7 +68632,7 @@ msgstr "**s3tc**"
 
 #: ../../docs/tutorials/export/feature_tags.rst:131
 msgid "Textures using S3TC (DXT/BC) compression are supported"
-msgstr ""
+msgstr "Obsługiwane są tekstury korzystające z kompresji S3TC (DXT/BC)"
 
 #: ../../docs/tutorials/export/feature_tags.rst:133
 msgid "**movie**"
@@ -68796,9 +68801,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:4
-#, fuzzy
 msgid "Exporting for Windows"
-msgstr "Eksportowanie na Androida"
+msgstr "Eksportowanie dla Windowsa"
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:8
 msgid ""
@@ -68838,9 +68842,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:30
-#, fuzzy
 msgid "Code signing"
-msgstr "**Wersja Godota**"
+msgstr "Podpisywanie kodu"
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:32
 msgid ""
@@ -68894,9 +68897,8 @@ msgstr ""
 #: ../../docs/tutorials/export/exporting_for_android.rst:168
 #: ../../docs/tutorials/export/exporting_for_ios.rst:133
 #: ../../docs/tutorials/export/exporting_for_web.rst:442
-#, fuzzy
 msgid "Environment variables"
-msgstr "Zmienne środowiskowe"
+msgstr "Zmienne środowiska"
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:70
 #: ../../docs/tutorials/export/exporting_for_linux.rst:24
@@ -68911,9 +68913,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:74
-#, fuzzy
 msgid "Windows export environment variables"
-msgstr "Zmienne środowiskowe"
+msgstr "Zmienne środowiska eksportu dla systemu Winodws"
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:77
 #: ../../docs/tutorials/export/exporting_for_linux.rst:31
@@ -68921,9 +68922,8 @@ msgstr "Zmienne środowiskowe"
 #: ../../docs/tutorials/export/exporting_for_android.rst:177
 #: ../../docs/tutorials/export/exporting_for_ios.rst:142
 #: ../../docs/tutorials/export/exporting_for_web.rst:451
-#, fuzzy
 msgid "Export option"
-msgstr "Opcje Eksportu"
+msgstr "Opcja eksportu"
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:78
 #: ../../docs/tutorials/export/exporting_for_linux.rst:32
@@ -68931,9 +68931,8 @@ msgstr "Opcje Eksportu"
 #: ../../docs/tutorials/export/exporting_for_android.rst:178
 #: ../../docs/tutorials/export/exporting_for_ios.rst:143
 #: ../../docs/tutorials/export/exporting_for_web.rst:452
-#, fuzzy
 msgid "Environment variable"
-msgstr "Zmienne środowiskowe"
+msgstr "Zmienna środowiska"
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:79
 #: ../../docs/tutorials/export/exporting_for_linux.rst:33
@@ -68994,9 +68993,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_linux.rst:4
-#, fuzzy
 msgid "Exporting for Linux"
-msgstr "Eksportowanie dla iOS"
+msgstr "Eksportowanie dla Linuxa"
 
 #: ../../docs/tutorials/export/exporting_for_linux.rst:8
 msgid ""
@@ -69022,9 +69020,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_linux.rst:28
-#, fuzzy
 msgid "Linux export environment variables"
-msgstr "Zmienne środowiskowe"
+msgstr "Zmienne środowiskowe eksportu systemu Linux"
 
 #: ../../docs/tutorials/export/exporting_for_linux.rst:39
 msgid ""
@@ -69089,9 +69086,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:37
-#, fuzzy
 msgid "Code signing and notarization"
-msgstr "Wybieranie animacji"
+msgstr "Podpisywanie kodu i jego uwierzytelnianie(notarializacja)"
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:39
 msgid ""

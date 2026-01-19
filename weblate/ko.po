@@ -55,7 +55,7 @@
 # MJ Kim <mjnkim@protonmail.com>, 2018.
 # moolow <copyhyeon@gmail.com>, 2019, 2021.
 # MOta <drg2000k@gmail.com>, 2021.
-# Myeongjin Lee <aranet100@gmail.com>, 2021-2023, 2025.
+# Myeongjin Lee <aranet100@gmail.com>, 2021-2023, 2025, 2026.
 # Nariri <freeingi@gmail.com>, 2023.
 # nulltable <un5450@naver.com>, 2022.
 # nulta <un5450@naver.com>, 2023.
@@ -124,14 +124,14 @@
 # SungHoon Ko <claivern@gmail.com>, 2025.
 # bpforest <bpsoop@gmail.com>, 2025.
 # "A Thousand Ships (she/her)" <over999ships@gmail.com>, 2025.
-# "영하십도Ent." <newminus10degreesent@gmail.com>, 2025.
+# "영하십도Ent." <newminus10degreesent@gmail.com>, 2025, 2026.
 # 멘탕핑 <tjtjdnjswhd@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2025-12-19 15:00+0100\n"
-"PO-Revision-Date: 2025-12-17 10:00+0000\n"
+"PO-Revision-Date: 2026-01-15 08:07+0000\n"
 "Last-Translator: Myeongjin <aranet100@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
@@ -140,7 +140,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.15.1-dev\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -207,9 +207,8 @@ msgid "Class reference"
 msgstr "클래스 참조"
 
 #: ../../docs/index.rst:4
-#, fuzzy
 msgid "Godot Docs – *master* branch"
-msgstr "Godot 문서 – *4.5* 브랜치"
+msgstr "Godot 문서 – *master* 브랜치"
 
 #: ../../docs/index.rst:8
 msgid ""
@@ -247,9 +246,9 @@ msgid ""
 "engine versions using the \"Read the Docs\" panel at the bottom of the "
 "sidebar."
 msgstr ""
-"당분간 현지화된 번역은 \"stable\" 브랜치에서만 사용할 수 있습니다. 여전히 사"
-"이드바 아래의 \"Read the Docs\" 패널을 사용하여 다른 엔진 버전의 영어 문서를 "
-"볼 수 있습니다."
+"당분간 현지화된 번역은 \"stable\" 브랜치에서만 사용 가능합니다. 여전히 "
+"사이드바 아래의 \"Read the Docs\" 패널을 사용하여 다른 엔진 버전의 영어 "
+"문서를 볼 수 있습니다."
 
 #: ../../docs/index.rst:28
 msgid ""
@@ -478,10 +477,10 @@ msgid ""
 "consider checking them out. Otherwise, :ref:`Getting Started "
 "<doc_getting_started_intro>` is a great starting point."
 msgstr ""
-":ref:`튜토리얼과 리소스 <doc_community_tutorials>` 페이지에는 커뮤니티가 기여"
-"한 영상 튜토리얼 목록이 있습니다. 글보다 영상을 선호한다면 확인해 보시기 바랍"
-"니다. 아니면 :ref:`시작하기 <doc_getting_started_intro>`\\ 가 좋은 출발점이 "
-"될 수 있습니다."
+":ref:`튜토리얼과 리소스 <doc_community_tutorials>` 페이지에는 커뮤니티가 "
+"기여한 비디오 튜토리얼 목록이 있습니다. 글보다 비디오를 선호한다면 확인해 "
+"보시기 바랍니다. 아니면 :ref:`시작하기 <doc_getting_started_intro>`\\ 가 "
+"좋은 출발점이 될 수 있습니다."
 
 #: ../../docs/about/introduction.rst:38
 msgid ""
@@ -547,7 +546,7 @@ msgstr "문서의 구성"
 
 #: ../../docs/about/introduction.rst:69
 msgid "This documentation is organized into several sections:"
-msgstr "이 문서는 여러 단락으로 구성되어 있습니다:"
+msgstr "이 문서는 여러 단락으로 조직되어 있습니다:"
 
 #: ../../docs/about/introduction.rst:71
 msgid ""
@@ -605,9 +604,9 @@ msgid ""
 "available directly within the engine's script editor. You can find "
 "information on all classes, functions, signals and so on here."
 msgstr ""
-"마지막으로 **클래스 참조**\\ 는 엔진의 스크립트 편집기에서 바로 사용할 수 있"
-"는 전체 Godot API를 문서화합니다. 여기에서 모든 클래스, 함수, 시그널 등에 대"
-"한 정보를 찾을 수 있습니다."
+"마지막으로 **클래스 참조**\\ 는 엔진의 스크립트 편집기에서 바로 사용 가능한 "
+"전체 Godot API를 문서화합니다. 여기에서 모든 클래스, 함수, 시그널 등에 대한 "
+"정보를 찾을 수 있습니다."
 
 #: ../../docs/about/introduction.rst:91
 msgid ""
@@ -988,8 +987,8 @@ msgid ""
 "High-level tools to draw lines and polygons such as :ref:`class_Polygon2D` "
 "and :ref:`class_Line2D`, with support for texturing."
 msgstr ""
-":ref:`class_Polygon2D` 와 :ref:`class_Line2D` 같은 직선이나 폴리곤을 그리는 "
-"고수준 툴. 텍스처링도 지원합니다."
+":ref:`class_Polygon2D`\\ 와 :ref:`class_Line2D` 같은 직선이나 폴리곤을 "
+"그리는 고수준 툴. 텍스처링도 지원합니다."
 
 #: ../../docs/about/list_of_features.rst:128
 msgid "AnimatedSprite2D as a helper for creating animated sprites."
@@ -1207,7 +1206,7 @@ msgstr "**콜리전 감지:**"
 #: ../../docs/about/list_of_features.rst:191
 msgid ""
 "Built-in shapes: line, box, circle, capsule, world boundary (infinite plane)."
-msgstr "내장 모양: 선, 상자, 원, 캡슐, 월드 경계 (무한 평면)."
+msgstr "내장 모양: 선, 상자, 원, 캡슐, 세계 경계 (무한 평면)."
 
 #: ../../docs/about/list_of_features.rst:192
 msgid ""
@@ -1790,7 +1789,7 @@ msgid ""
 "exposure override)."
 msgstr ""
 "뷰포트의 밝기에 따라 자동 노출을 조정하는 기능을 지원합니다(수동으로 노출을 "
-"재정의하는 것도 가능)."
+"오버라이드하는 것도 가능)."
 
 #: ../../docs/about/list_of_features.rst:358
 msgid ""
@@ -2017,7 +2016,7 @@ msgstr "차체 (시뮬레이션이 아닌 오락용 물리를 위한 물체)."
 
 #: ../../docs/about/list_of_features.rst:431
 msgid "Soft bodies."
-msgstr "연체."
+msgstr "소프트 바디."
 
 #: ../../docs/about/list_of_features.rst:432
 msgid "Ragdolls."
@@ -2442,8 +2441,8 @@ msgid ""
 "When captured, raw input will be used on Windows and Linux to sidestep the "
 "OS' mouse acceleration settings."
 msgstr ""
-"입력이 캡쳐되는 경우 Windows나 Linux에서는 OS의 마우스 가속 설정에 맞춰 입력"
-"의 로우값을(raw input) 사용하게 됩니다."
+"입력이 캡쳐될 때 원형 입력이 Windows와 Linux에서는 OS의 마우스 가속 설정을 "
+"우회하기 위해 사용하게 됩니다."
 
 #: ../../docs/about/list_of_features.rst:576
 msgid "Gamepad input (up to 8 simultaneous controllers)."
@@ -2624,7 +2623,7 @@ msgstr "단일 프로세스 안에서 여러 독립적인 창을 소환합니다
 
 #: ../../docs/about/list_of_features.rst:628
 msgid "Move, resize, minimize, and maximize windows spawned by the project."
-msgstr "프로젝트에서 소환한 창 이동, 크기 조정, 최소화 및 최대화."
+msgstr "프로젝트에서 소환한 창 이동, 크기 조절, 최소화 및 최대화."
 
 #: ../../docs/about/list_of_features.rst:629
 msgid "Change the window title and icon."
@@ -2772,8 +2771,8 @@ msgid ""
 "Various advanced toolkits are available that implement common features "
 "required by XR applications."
 msgstr ""
-"XR 애플리케이션에 필요한 공통 기능을 구현하는 다양한 고급 툴킷을 사용할 수 있"
-"습니다."
+"XR 애플리케이션에 필요한 공통 기능을 구현하는 다양한 고급 툴킷이 사용 "
+"가능합니다."
 
 #: ../../docs/about/list_of_features.rst:677
 msgid "GUI system"
@@ -2878,9 +2877,8 @@ msgid ""
 "<class_CenterContainer>` and :ref:`aspect ratio "
 "<class_AspectRatioContainer>` layouts."
 msgstr ""
-":ref:`Margin <class_MarginContainer>` , :ref:`centered "
-"<class_CenterContainer>` 및 :ref:`aspect ratio <class_AspectRatioContainer>` "
-"레이아웃."
+":ref:`여백 <class_MarginContainer>`, :ref:`가운디 <class_CenterContainer>` "
+"및 :ref:`화면 비율 <class_AspectRatioContainer>` 레이아웃."
 
 #: ../../docs/about/list_of_features.rst:708
 msgid ":ref:`Draggable splitter <class_SplitContainer>` layouts."
@@ -2897,7 +2895,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:712
 msgid ""
 "Support any aspect ratio using anchors and the ``expand`` stretch aspect."
-msgstr "앵커와 ``expand`` 늘이기 비율을 사용한 모든 종횡비 지원."
+msgstr "앵커와 ``expand`` 늘리기 비율을 사용한 모든 화면 비율 지원."
 
 #: ../../docs/about/list_of_features.rst:714
 msgid "**Theming:**"
@@ -2952,7 +2950,7 @@ msgstr "애니메이션"
 
 #: ../../docs/about/list_of_features.rst:732
 msgid "Direct kinematics and inverse kinematics."
-msgstr "직접 운동학과 역 운동학."
+msgstr "직운동학과 역운동학."
 
 #: ../../docs/about/list_of_features.rst:733
 msgid "Support for animating any property with customizable interpolation."
@@ -2964,7 +2962,7 @@ msgstr "애니메이션 트랙에서 메서드 호출 지원."
 
 #: ../../docs/about/list_of_features.rst:735
 msgid "Support for playing sounds in animation tracks."
-msgstr "애니메이션 트랙에서 음향 지원."
+msgstr "애니메이션 트랙에서 소리 지원."
 
 #: ../../docs/about/list_of_features.rst:736
 msgid "Support for Bézier curves in animation."
@@ -3088,7 +3086,7 @@ msgid ""
 "misc/dist/shell>`__ are available for Bash, zsh and fish."
 msgstr ""
 "`명령줄 자동완성 스크립트 <https://github.com/godotengine/godot/tree/master/"
-"misc/dist/shell>`__\\ 는 Bash, zsh 그리고 fish에서 사용할 수 있습니다."
+"misc/dist/shell>`__\\ 는 Bash, zsh 그리고 fish에서 사용 가능합니다."
 
 #: ../../docs/about/list_of_features.rst:776
 msgid ""
@@ -3896,7 +3894,7 @@ msgid ""
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
 "Godot는 `OSI가 승인한 <https://opensource.org/licenses/MIT>`_ MIT 라이선스로 "
-"사용할 수 있는 `자유 및 오픈 소스 소프트웨어 <https://ko.wikipedia.org/wiki/"
+"사용 가능한 `자유 및 오픈 소스 소프트웨어 <https://ko.wikipedia.org/wiki/"
 "자유-오픈_소스_소프트웨어>`_\\ 입니다. 이 말인 즉, Godot는 \"언론의 자유"
 "(Free)\", \"무료(Free) 맥주\"에서의 free의 뜻을 모두 지니고 있다는 것이죠."
 
@@ -4092,9 +4090,9 @@ msgid ""
 "of Godot 3 for interested users."
 msgstr ""
 "Godot 3는 유니버설 Windows 플랫폼(UWP)도 지원했습니다. 이 플랫폼 포트는 유지 "
-"관리 부족으로 인해 Godot 4에서 제거되었으며 Microsoft에서 더 이상 지원하지 않"
-"습니다. 관심 있는 사용자를 위해 현재 안정된 Godot 3 릴리스에서 계속 사용할 "
-"수 있습니다."
+"관리 부족으로 인해 Godot 4에서 제거되었으며 Microsoft에서 더 이상 지원하지 "
+"않습니다. 관심 있는 사용자를 위해 현재 안정된 Godot 3 릴리스에서 계속 사용 "
+"가능합니다."
 
 #: ../../docs/about/faq.rst:81
 msgid "Which programming languages are supported in Godot?"
@@ -4118,11 +4116,12 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
-"Godot 또는 게임 개발을 막 시작한 경우 일반적으로 Godot에서 네이티브로 동작하"
-"는 GDScript를 배우고 사용하는 것을 권장합니다. 스크립트 언어는 장기적으로 다"
-"른 로우 레벨 언어보다 퍼포먼스가 떨어지는 경향이 있습니다. 하지만 프로토타이"
-"핑, 최소 기능 제품(MVP) 개발, 판매할 때까지 걸리는 시간(TTM)에 중점을 둔다면 "
-"GDScript는 게임을 개발하는데 빠르고, 친절하고, 유능한 방법을 제공합니다."
+"Godot 또는 게임 개발을 막 시작한 경우 일반적으로 Godot에서 네이티브로 "
+"동작하는 GDScript를 배우고 사용하는 것을 권장합니다. 스크립트 언어는 "
+"장기적으로 다른 저수준 언어보다 퍼포먼스가 떨어지는 경향이 있습니다. 하지만 "
+"프로토타이핑, 최소 기능 제품(MVP) 개발, 판매할 때까지 걸리는 시간(TTM)에 "
+"중점을 둔다면 GDScript는 게임을 개발하는데 빠르고, 친절하고, 유능한 방법을 "
+"제공합니다."
 
 #: ../../docs/about/faq.rst:93
 #, fuzzy
@@ -4216,13 +4215,13 @@ msgid ""
 "once you see how powerful it is and how rapid your development becomes, we "
 "think GDScript will grow on you."
 msgstr ""
-"Godot는 오픈 소스 프로젝트이기 때문에, 사용자층을 늘리기 위해 친근한 프로그래"
-"밍 언어를 지원하기보다는 처음부터 더 통합되고 완벽한 경험을 제공하는 일을 우"
-"선시할 필요가 있었습니다. 특히 더 친근한 언어를 지원하는 것이 더 나쁜 결과로 "
-"이어질 수 있었다면 더욱 그랬습니다. 물론 Godot에서 다른 언어를 쓰고 싶은 마음"
-"을 이해합니다 (위에서 지원하는 옵션 목록을 참고하세요). 하지만 GDScript를 써"
-"보지 않았다면, 딱 **3일만** 한 번 써보세요. GDScript가 얼마나 강력한지, 개발 "
-"속도가 얼마나 더 빨라지는지 알고 나면 분명 Godot처럼 마음에 들 것입니다."
+"Godot는 오픈 소스 프로젝트이기 때문에, 사용자층을 늘리기 위해 친근한 "
+"프로그래밍 언어를 지원하기보다는 처음부터 더 통합되고 완벽한 경험을 제공하는 "
+"일을 우선시할 필요가 있었습니다. 특히 더 친근한 언어를 지원하는 것이 더 나쁜 "
+"결과로 이어질 수 있었다면 더욱 그랬습니다. 물론 Godot에서 다른 언어를 쓰고 "
+"싶은 마음을 이해합니다 (위에서 지원되는 옵션의 목록 참조). 하지만 GDScript를 "
+"써보지 않았다면, 딱 **3일만** 한 번 써보세요. GDScript가 얼마나 강력한지, "
+"개발 속도가 얼마나 더 빨라지는지 알고 나면 분명 Godot처럼 마음에 들 것입니다."
 
 #: ../../docs/about/faq.rst:138
 msgid ""
@@ -4801,9 +4800,9 @@ msgid ""
 "is one aspect ratio and you want black bars to appear instead. This is also "
 "explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
-"최소 해상도를 정한 다음, 게임의 화면을 다른 화면 비율에 맞게 수직이나 수평으"
-"로 늘일지 또는 한 화면 비율만 사용하고 남은 공간을 검은 여백으로 처리할지 결"
-"정하세요. 이는 :ref:`doc_multiple_resolutions`\\ 에서 설명합니다."
+"최소 해상도를 정한 다음, 게임의 화면을 다른 화면 비율에 맞게 수직이나 "
+"수평으로 늘릴지 또는 한 화면 비율만 사용하고 남은 공간을 검은 여백으로 "
+"처리할지 결정하세요. 이는 :ref:`doc_multiple_resolutions`\\ 에서 설명합니다."
 
 #: ../../docs/about/faq.rst:387
 msgid ""
@@ -5449,7 +5448,7 @@ msgid ""
 "This includes free assets, which often come with licenses that require "
 "attribution."
 msgstr ""
-"프로젝트의 라이선스 화면에는 텍스처, 모델, 사운드, 음악 및 글꼴과 같은 사용 "
+"프로젝트의 라이선스 화면에는 텍스처, 모델, 소리, 음악 및 글꼴과 같은 사용 "
 "중인 애셋에 대한 서드 파티 공지사항도 함께 목록에 포함시켜야 합니다."
 
 #: ../../docs/about/complying_with_licenses.rst:40
@@ -7563,15 +7562,14 @@ msgid "What can the engine do?"
 msgstr "엔진으로 무엇을 할 수 있습니까?"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:32
-#, fuzzy
 msgid ""
 "Godot was initially developed in-house by an Argentinian game studio. Its "
 "development started in 2001, and the engine was rewritten and improved "
 "tremendously since its open source release in 2014."
 msgstr ""
-"Godot 는 2001년 Argentinan 게임 스튜디오에서 사내 엔진으로 처음 개발 되기 시"
-"작했고, 2014년 오픈소스로 개발 방식이 변경된 이후 많은 발전과 코드 업데이트"
-"가 이루어졌습니다."
+"Godot는 원래 아르헨티나의 게임 스튜디오에서 사내용으로 개발되었습니다. "
+"2001년에 개발이 시작되었으며, 2014년 오픈 소스로 배포된 이후 엔진이 대폭 "
+"재작성되고 개선되었습니다."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:36
 msgid ""
@@ -7837,18 +7835,18 @@ msgid ""
 "level, or anything you can think of. Godot's scenes are flexible; they fill "
 "the role of both prefabs and scenes in some other game engines."
 msgstr ""
-"Godot에서는 게임을 재사용 가능한 씬(scene)으로 구성합니다. 씬(scene)은 캐릭"
-"터, 무기, 사용자 인터페이스의 메뉴, 하나의 집, 전체 레벨 또는 상상할 수 있는 "
-"모든 것이 될 수 있습니다. Godot의 씬(scene)은 유연하며, 다른 일부 게임 엔진에"
-"서의 프리팹(prefab)과 씬(scene)의 역할을 모두 수행합니다."
+"Godot에서는 게임을 재사용 가능한 씬으로 구성합니다. 씬은 캐릭터, 무기, "
+"사용자 인터페이스의 메뉴, 하나의 집, 전체 레벨 또는 상상할 수 있는 모든 것이 "
+"될 수 있습니다. Godot의 씬은 유연하며, 다른 일부 게임 엔진에서의 프리팹과 "
+"씬의 역할을 모두 수행합니다."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:31
 msgid ""
 "You can also nest scenes. For example, you can put your character in a "
 "level, and drag and drop a scene as a child of it."
 msgstr ""
-"또한 씬(scene)을 중첩할 수도 있습니다. 예를 들어 캐릭터를 레벨에 배치하고, 씬"
-"(scene)을 해당 캐릭터의 자식(child)으로 끌어다 놓을 수 있습니다."
+"또한 씬을 중첩할 수도 있습니다. 예를 들어 캐릭터를 레벨에 배치하고, 씬을 "
+"해당 캐릭터의 자식으로 끌어다 놓을 수 있습니다."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:37
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:14
@@ -7866,9 +7864,8 @@ msgid ""
 "building blocks that you arrange into trees. Here's an example of a "
 "character's nodes."
 msgstr ""
-"씬(scene)은 하나 이상의 **노드**(nodes)로 구성됩니다. 노드는 게임의 가장 작"
-"은 구성 요소로, 이를 트리(tree)로 배열합니다. 다음은 캐릭터의 노드 예시입니"
-"다."
+"씬은 하나 이상의 **노드**\\ 로 구성됩니다. 노드는 게임의 가장 작은 구성 "
+"요소로, 이를 트리로 배열합니다. 다음은 캐릭터의 노드 예시입니다."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:45
 msgid ""
@@ -8280,7 +8277,7 @@ msgid ""
 "The **Script screen** is a complete code editor with a debugger, rich auto-"
 "completion, and built-in code reference."
 msgstr ""
-"**스크립트 화면**\\ 은 완전한 코드 편집기로서 디버거, 풍부한 자동 완성 기능 "
+"**스크립트 화면**\\ 은 완전한 코드 편집기로서 디버거, 풍부한 자동완성 기능 "
 "및 내장된 코드 참조 기능을 제공합니다."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:152
@@ -8790,10 +8787,10 @@ msgid ""
 "update as well. It helps you build your projects so that their structure "
 "matches the game's design."
 msgstr ""
-"씬은 상속하고 확장할 수 있기 때문에 여러 3D 엔진에서 찾을 수 있는 프리팹"
-"(prefab)과는 다릅니다. 여러분은 여러분의 캐릭터를 확장해서 마술사(Magician)"
-"로 만들 수 있습니다. 편집기에서 캐릭터를 수정하면 Magician도 업데이트됩니다. "
-"이는 구조가 게임 디자인과 일치하도록 프로젝트를 빌드하는 데 도움이 됩니다."
+"씬은 상속하고 확장할 수 있기 때문에 여러 3D 엔진에서 찾을 수 있는 프리팹과는 "
+"다릅니다. 여러분은 여러분의 캐릭터를 확장해서 마술사(Magician)로 만들 수 "
+"있습니다. 편집기에서 캐릭터를 수정하면 Magician도 업데이트됩니다. 이는 "
+"구조가 게임 디자인과 일치하도록 프로젝트를 빌드하는 데 도움이 됩니다."
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:50
 #: ../../docs/getting_started/first_2d_game/index.rst:12
@@ -8948,8 +8945,8 @@ msgid ""
 "is also optimized for gameplay code with built-in types like Vectors and "
 "Colors."
 msgstr ""
-"GDScript는 들여쓰기 기반의 문장과 자동 완성, 데이터 타입 감지도 제공합니다. "
-"이는 벡터나 색과 같은 빌트인 타입의 코드에도 최적화되어있습니다."
+"GDScript는 들여쓰기 기반의 문장과 자동완성, 데이터 유형 감지도 제공합니다. "
+"이는 벡터나 색상과 같은 내장 유형의 코드에도 최적화되어있습니다."
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:90
 #, fuzzy
@@ -9177,9 +9174,9 @@ msgid ""
 "the ingredients in a recipe. There are dozens of kinds that can display an "
 "image, play a sound, represent a camera, and much more."
 msgstr ""
-"**노드는 게임의 기본 구성 요소입니다**. 이들은 요리 레시피의 재료와 같습니"
-"다. 이미지를 표시하거나 사운드를 재생하거나 카메라를 표현하는 등 수십 가지 종"
-"류가 있습니다."
+"**노드는 게임의 기본 구성 요소입니다**. 이들은 요리 레시피의 재료와 "
+"같습니다. 이미지를 표시하거나 소리를 재생하거나 카메라를 표현하는 등 수십 "
+"가지 종류가 있습니다."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:22
 #, fuzzy
@@ -9217,9 +9214,9 @@ msgid ""
 "<class_Sprite2D>` node, a :ref:`Camera2D <class_Camera2D>` node, and "
 "a :ref:`CollisionShape2D <class_CollisionShape2D>` node."
 msgstr ""
-"마지막 속성은 키(Key)입니다. 노드들은 함께 트리(Tree)를 형성하며, 이는 프로젝"
-"트를 구성하는 데 강력한 기능입니다. 각기 다른 기능을 가진 다른 노드들을 조합"
-"함으로써 더 복잡한 동작을 만들어낼 수 있습니다. 이전에 살펴본 것처럼, "
+"마지막 속성은 키입니다. 노드는 함께 트리를 형성하며, 이는 프로젝트를 "
+"조직하는 데 강력한 기능입니다. 각기 다른 기능을 가진 다른 노드를 "
+"조합함으로써 더 복잡한 동작을 만들어낼 수 있습니다. 이전에 살펴본 것처럼, "
 "\"Character\"라는 이름의 키네마틱 바디 노드, 스프라이트 노드, 카메라 노드 및 "
 "콜리전 형태 노드를 사용하여 카메라가 따라가는 플레이 가능한 캐릭터를 만들 수 "
 "있습니다."
@@ -9231,9 +9228,10 @@ msgid ""
 "editor, where you can add them as a child of an existing node. In that case, "
 "the instance of the scene appears as a single node with its internals hidden."
 msgstr ""
-"노드를 캐릭터와 같이 트리로 구성할 때, 이 구조를 씬이라고 부릅니다. 씬을 저장"
-"한 후에는, 편집기에서 새로운 노드 유형처럼 작동하여 기존 노드의 자식으로 추가"
-"할 수 있습니다. 이 경우 씬의 인스턴스는 내부를 숨긴 단일 노드로 표시됩니다."
+"노드를 캐릭터와 같이 트리로 조직할 때, 이 구조를 씬이라고 부릅니다. 씬을 "
+"저장한 후에는, 편집기에서 새로운 노드 유형처럼 작동하여 기존 노드의 자식으로 "
+"추가할 수 있습니다. 이 경우 씬의 인스턴스는 내부를 숨긴 단일 노드로 "
+"표시됩니다."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:47
 msgid ""
@@ -9569,9 +9567,9 @@ msgid ""
 "project into any number of scenes. This feature helps you break down and "
 "organize your game's different components."
 msgstr ""
-"이전 파트에서는 씬이 하나의 루트 노드를 가진 트리 구조로 구성된 노드 모음임"
-"을 알아보았습니다. 프로젝트를 여러 씬으로 분할할 수 있습니다. 이 기능은 게임"
-"의 다양한 컴포넌트를 분리하고 조직하는 데 도움이 됩니다."
+"이전 파트에서는 씬이 하나의 루트 노드를 가진 트리 구조로 조직된 노드 "
+"모음임을 알아보았습니다. 프로젝트를 여러 씬으로 분할할 수 있습니다. 이 "
+"기능은 게임의 다양한 컴포넌트를 분리하고 조직하는 데 도움이 됩니다."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:20
 #, fuzzy
@@ -9792,7 +9790,7 @@ msgstr ""
 msgid ""
 "Changing a property on an instance always overrides values from the "
 "corresponding packed scene."
-msgstr "인스턴스의 속성을 변경하면 해당 패킹된 씬의 값이 항상 덮어씁니다."
+msgstr "인스턴스의 속성을 변경하면 해당 패킹된 씬의 값이 항상 오버라이드합니다."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:130
 msgid ""
@@ -9858,9 +9856,9 @@ msgid ""
 "will be preserved in the instance. Clicking the revert icon will restore the "
 "property to the value in the saved scene."
 msgstr ""
-"이 아이콘은 씬에서 팩된 소스의 값을 덮어썼다는 것을 알려줍니다. 원본 씬의 속"
-"성을 수정하더라도 인스턴스에 덮어씌워진 값이 보존됩니다. 복구 아이콘을 누르"
-"면 저장된 씬에서 속성 값을 불러옵니다."
+"이 아이콘은 씬에서 팩된 소스의 값을 오버라이드했다는 것을 알려줍니다. 원본 "
+"씬의 속성을 수정하더라도 인스턴스에 오버라이드된 값이 보존됩니다. 복구 "
+"아이콘을 누르면 저장된 씬에서 속성 값을 불러옵니다."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:167
 msgid ""
@@ -10041,9 +10039,9 @@ msgid ""
 "in Godot. You will learn the pros and cons of each option. In the next part, "
 "you will write your first script using GDScript."
 msgstr ""
-"이 강의에서는 Godot에서 사용할 수 있는 스크립트 언어들을 살펴볼 것입니다. 옵"
-"션 별로 어떤 장점과 단점이 있는지 배워봅시다. 그 다음, GDScript를 사용하여 "
-"첫 번째 스크립트를 작성해 보겠습니다."
+"이 강의에서는 Godot에서 사용 가능한 스크립트 언어를 살펴볼 것입니다. 옵션 "
+"별로 어떤 장점과 단점이 있는지 배워봅시다. 그 다음, GDScript를 사용하여 첫 "
+"번째 스크립트를 작성해 보겠습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:15
 msgid ""
@@ -10675,7 +10673,7 @@ msgid ""
 "instead."
 msgstr ""
 "Godot에서 각도는 기본적으로 라디안으로 동작하지만, 각도를 도 단위로 계산하는 "
-"것을 선호하는 경우 사용할 수 있는 내장 함수와 속성도 있습니다."
+"것을 선호하는 경우 사용 가능한 내장 함수와 속성도 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:203
 #, fuzzy
@@ -11345,7 +11343,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:123
 msgid "The dock displays a list of signals available on the selected node."
-msgstr "독은 선택한 노드에서 사용할 수 있는 시그널을 표시합니다."
+msgstr "독은 선택된 노드에서 사용 가능한 시그널을 표시합니다."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:127
 msgid "Double-click the \"pressed\" signal to open the node connection window."
@@ -11415,8 +11413,8 @@ msgid ""
 "connection. This feature is only available when connecting nodes in the "
 "editor."
 msgstr ""
-"아이콘을 클릭하면 창이 팝업하고 연결에 대한 정보를 표시합니다. 이 기능은 편집"
-"기에서 노드를 연결할 때만 사용할 수 있습니다."
+"아이콘을 클릭하면 창이 팝업하고 연결에 대한 정보를 표시합니다. 이 기능은 "
+"편집기에서 노드를 연결할 때만 사용 가능합니다."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:166
 msgid ""
@@ -11724,9 +11722,9 @@ msgid ""
 "exiting the game world, to a collision, to a character entering or leaving "
 "an area, to an element of the interface changing size, and much more."
 msgstr ""
-"시그널은 다양한 용도로 사용됩니다. 시그널을 사용하면 노드가 게임 월드에 들어"
-"오거나 나가는 것, 콜리전, 캐릭터가 영역에 들어오거나 나가는 것, 인터페이스 요"
-"소의 크기가 변경되는 것 등에 반응할 수 있습니다."
+"시그널은 다양한 용도로 사용됩니다. 시그널을 사용하면 노드가 게임 세계에 "
+"들어오거나 나가는 것, 콜리전, 캐릭터가 영역에 들어오거나 나가는 것, "
+"인터페이스 요소의 크기가 변경되는 것 등에 반응할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:559
 #, fuzzy
@@ -11991,11 +11989,11 @@ msgid ""
 "set \"Viewport Width\" to ``480`` and \"Viewport Height\" to ``720``. You "
 "can see the \"Project\" menu on the upper left corner."
 msgstr ""
-"이 게임은 포트레이트 모드로 설계되었으므로 게임 창의 크기를 조정해야 합니다. "
-"*프로젝트 -> 프로젝트 설정*\\ 을 클릭하여 프로젝트 설정 창을 열고, 왼쪽 열에"
-"서 *표시 -> 창* 탭을 엽니다. 거기에서 \"뷰포트 너비\"를 ``480``\\ 으로, \"뷰"
-"포트 높이\"를 ``720``\\ 으로 설정합니다. 왼쪽 상단 모서리에서 \"프로젝트\" 메"
-"뉴를 볼 수 있습니다."
+"이 게임은 포트레이트 모드로 설계되었으므로 게임 창의 크기를 조절해야 합니다. "
+"*프로젝트 -> 프로젝트 설정*\\ 을 클릭하여 프로젝트 설정 창을 열고, 왼쪽 "
+"열에서 *표시 -> 창* 탭을 엽니다. 거기에서 \"뷰포트 너비\"를 ``480``\\ 으로, "
+"\"뷰포트 높이\"를 ``720``\\ 으로 설정합니다. 왼쪽 상단 모서리에서 "
+"\"프로젝트\" 메뉴를 볼 수 있습니다."
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:49
 msgid ""
@@ -13453,10 +13451,10 @@ msgid ""
 "well. There is a font file included in the game assets called \"Xolonium-"
 "Regular.ttf\". To use this font, do the following:"
 msgstr ""
-"``ScoreLabel``\\ 을 클릭하고 인스펙터에서 ``텍스트`` 필드에 숫자를 입력하세"
-"요. ``Control`` 노드에 대한 디폴트 글꼴은 작아서 크기 조정이 잘 되지 않습니"
-"다. 게임 애셋에는 \"Xolonium-Regular.ttf\"라는 글꼴 파일이 있습니다. 이 글꼴"
-"을 사용하려면, 다음과 같이 하세요:"
+"``ScoreLabel``\\ 을 클릭하고 인스펙터에서 ``텍스트`` 필드에 숫자를 "
+"입력하세요. ``Control`` 노드에 대한 디폴트 글꼴은 작아서 크기 조절이 잘 되지 "
+"않습니다. 게임 애셋에는 \"Xolonium-Regular.ttf\"라는 글꼴 파일이 있습니다. "
+"이 글꼴을 사용하려면, 다음과 같이 하세요:"
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:39
 msgid ""
@@ -13822,7 +13820,7 @@ msgstr "대신 ``TextureRect`` 노드를 사용해 배경 이미지를 추가할
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:24
 msgid "Sound effects"
-msgstr "음향 효과(Sound effects)"
+msgstr "소리 효과"
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:26
 #, fuzzy
@@ -13832,10 +13830,10 @@ msgid ""
 "\"House In a Forest Loop.ogg\" for background music, and \"gameover.wav\" "
 "for when the player loses."
 msgstr ""
-"사운드와 음악은 게임 경험을 매력적으로 만들어주는 가장 효과적인 요소가 될 수 "
-"있습니다. 게임 애셋 폴더에서, 두 개의 사운드 파일을 찾을 수 있습니다: "
-"\"House In a Forest Loop.ogg\"는 배경 음악으로, \"gameover.wav\"는 플레이어"
-"가 죽었을 때 사용하면 됩니다."
+"소리와 음악은 게임 경험을 매력적으로 만들어주는 가장 효과적인 요소가 될 수 "
+"있습니다. 게임 애셋 폴더에서, 두 개의 소리 파일을 찾을 수 있습니다: \"House "
+"In a Forest Loop.ogg\"는 배경 음악으로, \"gameover.wav\"는 플레이어가 죽었을 "
+"때 사용하면 됩니다."
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:31
 msgid ""
@@ -13960,9 +13958,9 @@ msgid ""
 "around the game board, count the score, implement a game over and replay, "
 "user interface, sounds, and more. Congratulations!"
 msgstr ""
-"플레이어가 제어하는 캐릭터를 만들고, 게임 보드 주변에 무작위로 소환되는 적"
-"들, 점수 계산, 게임 오버 및 재시작, 사용자 인터페이스, 사운드 등을 구현했습니"
-"다. 축하합니다!"
+"플레이어가 제어하는 캐릭터를 만들고, 게임 보드 주변에 무작위로 소환되는 "
+"적들, 점수 계산, 게임 오버 및 재시작, 사용자 인터페이스, 소리 등을 "
+"구현했습니다. 축하합니다!"
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:119
 msgid ""
@@ -13998,7 +13996,7 @@ msgid ""
 "(not the raw project files) to a ZIP file, then upload this ZIP file to a "
 "file sharing website."
 msgstr ""
-"프로젝트를 내보낸 후, 내보낸 실행 파일과 PCK 파일(원시 프로젝트 파일 아님)을 "
+"프로젝트를 내보낸 후, 내보낸 실행 파일과 PCK 파일(원형 프로젝트 파일 아님)을 "
 "ZIP 파일로 압축한 다음, 이 ZIP 파일을 파일 공유 웹사이트에 업로드하세요."
 
 #: ../../docs/getting_started/first_3d_game/index.rst:6
@@ -14146,9 +14144,9 @@ msgid ""
 "godotengine/godot-docs-project-starters/releases/download/latest-4.x/"
 "3d_squash_the_creeps_starter.zip>`_."
 msgstr ""
-"이 튜토리얼에서 사용할 3D 모델과 사운드가 포함된 Godot 프로젝트를 준비했으"
-"며, 이는 index 페이지에 링크되어 있습니다. 아직 다운로드하지 않았다면, 여기에"
-"서 아카이브를 다운로드할 수 있습니다: `Squash the Creeps assets <https://"
+"이 튜토리얼에서 사용할 3D 모델과 소리가 포함된 Godot 프로젝트를 준비했으며, "
+"이는 index 페이지에 링크되어 있습니다. 아직 다운로드하지 않았다면, 여기에서 "
+"아카이브를 다운로드할 수 있습니다: `Squash the Creeps assets <https://"
 "github.com/godotengine/godot-3d-dodge-the-creeps/releases/tag/1.1.0>`__."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:13
@@ -15456,7 +15454,7 @@ msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:85
 msgid "Resize it using the orange dots until it covers the entire 3D model."
-msgstr "전체 3D 모델을 덮을 때까지 주황색 점을 사용하여 크기를 조정합니다."
+msgstr "전체 3D 모델을 덮을 때까지 주황색 점을 사용하여 크기를 조절합니다."
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:90
 msgid "Coding the mob's movement"
@@ -16590,8 +16588,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "The method ``is_in_group()`` is available on every :ref:`Node<class_Node>`."
-msgstr ""
-"``is_in_group()`` 메서드는 매 :ref:`Node<class_Node>`마다 사용할 수 있습니다."
+msgstr "``is_in_group()`` 메서드는 매 :ref:`Node<class_Node>`마다 사용 가능합니다."
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:314
 msgid ""
@@ -17771,11 +17768,11 @@ msgid ""
 "comes in handy: even though we animated the *Character*, we can still move "
 "and rotate the *Pivot* and layer changes on top of the animation in a script."
 msgstr ""
-"애니메이션은 애니메이션화된 노드의 속성을 매 프레임마다 업데이트하여 초기값"
-"을 덮어씁니다. *Player* 노드를 직접 애니메이션화하면 코드에서 노드를 이동할 "
-"수 없습니다. 이럴 때 *Pivot* 노드가 유용합니다. *Character*\\ 를 애니메이션화"
-"했더라도 스크립트에서 *Pivot*\\ 을 이동 및 회전하고 애니메이션 위에 변경사항"
-"을 레이어링할 수 있습니다."
+"애니메이션은 애니메이션화된 노드의 속성을 매 프레임마다 업데이트하여 초기 "
+"값을 오버라이드합니다. *Player* 노드를 직접 애니메이션화하면 코드에서 노드를 "
+"이동할 수 없습니다. 이럴 때 *Pivot* 노드가 유용합니다. *Character*\\ 를 "
+"애니메이션화했더라도 스크립트에서 *Pivot*\\ 을 이동 및 회전하고 애니메이션 "
+"위에 변경사항을 레이어링할 수 있습니다."
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:185
 msgid "If you play the game, the player's creature will now float!"
@@ -18204,11 +18201,11 @@ msgid ""
 "they extend ``RefCounted`` though, you cannot attach them to a :ref:`Node "
 "<class_Node>`."
 msgstr ""
-"``extends`` 키워드를 사용하지 않는 스크립트도 묵시적으로 엔진의 기"
-"본 :ref:`RefCounted <class_RefCounted>` 클래스를 상속합니다. 결과적으로 "
-"``extends`` 키워드를 사용하지 않고 스크립트를 인스턴스화 할 수 있습니다. 스크"
-"립트가 ``RefCounted`` 를 상속하기 때문에 :ref:`Node <class_Node>`에는 붙일 "
-"수 없습니다."
+"``extends`` 키워드를 사용하지 않는 스크립트도 묵시적으로 엔진의 기본 "
+":ref:`RefCounted <class_RefCounted>` 클래스를 상속합니다. 결과적으로 "
+"``extends`` 키워드를 사용하지 않고 스크립트를 인스턴스화할 수 있습니다. "
+"스크립트가 ``RefCounted``\\ 를 상속하기 때문에 :ref:`Node <class_Node>`\\ "
+"에는 붙일 수 없습니다."
 
 #: ../../docs/tutorials/best_practices/what_are_godot_classes.rst:51
 msgid ""
@@ -18218,9 +18215,9 @@ msgid ""
 "that creates nodes and adds them as children using ``add_child()``."
 msgstr ""
 "씬의 동작도 클래스와 여러 유사점을 갖고 있으므로 씬을 클래스처럼 여기는 것도 "
-"타당합니다. 씬은 재사용이 가능하고, 인스턴스화 할 수 있고, 상속이 가능한 노드"
-"들의 집합입니다. 씬을 생성하는 것은 스크립트가 노드를 생성한 후 이를 "
-"``add_child()`` 를 사용해 자식으로 추가하는 것과 유사합니다."
+"타당합니다. 씬은 재사용이 가능하고, 인스턴스화할 수 있고, 상속이 가능한 "
+"노드들의 집합입니다. 씬을 생성하는 것은 스크립트가 노드를 생성한 후 이를 "
+"``add_child()``\\ 를 사용해 자식으로 추가하는 것과 유사합니다."
 
 #: ../../docs/tutorials/best_practices/what_are_godot_classes.rst:55
 msgid ""
@@ -18238,20 +18235,19 @@ msgstr "씬의 구성물은 다음을 정의하는데 도움이 됩니다:"
 
 #: ../../docs/tutorials/best_practices/what_are_godot_classes.rst:60
 msgid "What nodes are available to the script."
-msgstr "어떤 노드를 스크립트에서 사용할 수 있는지"
+msgstr "스크립트에서 사용 가능한 노드는 무엇인지."
 
 #: ../../docs/tutorials/best_practices/what_are_godot_classes.rst:61
 msgid "How they are organized."
-msgstr "노드들이 어떻게 조직화 되어있는지"
+msgstr "노드가 어떻게 조직되어있는지."
 
 #: ../../docs/tutorials/best_practices/what_are_godot_classes.rst:62
 msgid "How they are initialized."
-msgstr "노드들이 어떻게 초기화되는지"
+msgstr "노드가 어떻게 초기화되는지."
 
 #: ../../docs/tutorials/best_practices/what_are_godot_classes.rst:63
-#, fuzzy
 msgid "What signal connections they have with each other."
-msgstr "서로 어떤 시그널 연결을 갖고 있는지"
+msgstr "노드가 서로 어떤 시그널 연결을 가지고 있는지."
 
 #: ../../docs/tutorials/best_practices/what_are_godot_classes.rst:65
 msgid ""
@@ -18260,9 +18256,9 @@ msgid ""
 "apply to written code also apply to scenes: single responsibility, "
 "encapsulation, and others."
 msgstr ""
-"왜 씬의 구성에 이런 사항들이 중요할까요? 이는 씬의 인스턴스가 *곧* 오브젝트이"
-"기 때문입니다. 결과적으로 단일 책임 원칙, 캡슐화 등 코드에 적용할 수 있는 객"
-"체 지향 기법이 씬에도 적용될 수 있습니다."
+"왜 씬의 조직에 이런 사항들이 중요할까요? 이는 씬의 인스턴스가 *곧* "
+"오브젝트이기 때문입니다. 결과적으로 단일 책임 원칙, 캡슐화 등 코드에 적용할 "
+"수 있는 객체 지향 기법이 씬에도 적용될 수 있습니다."
 
 #: ../../docs/tutorials/best_practices/what_are_godot_classes.rst:69
 msgid ""
@@ -18280,7 +18276,7 @@ msgstr "모범 사례에서 설명하는 여러 기법들은 이런 점에 기�
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:4
 msgid "Scene organization"
-msgstr "씬 구성"
+msgstr "씬 조직"
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:6
 #, fuzzy
@@ -18373,9 +18369,9 @@ msgid ""
 msgstr ""
 "씬이 외부 컨텍스트와 상호작용해야 한다면, 경험있는 개발자들은 `의존성 주입 "
 "<https://ko.wikipedia.org/wiki/의존성 주입>`_\\ 사용을 권장합니다. 이 기술은 "
-"하이 레벨 API를 사용해 로우 레벨 API의 의존성을 제공하는 것과 관련이 있습니"
-"다. 왜 이럴까요? 외부 환경에 의존하는 클래스에서는 버그나 예측하지 못한 동작"
-"이 발생하기 쉽기 때문입니다."
+"고수준 API를 사용해 저수준 API의 의존성을 제공하는 것과 관련이 있습니다. 왜 "
+"이럴까요? 외부 환경에 의존하는 클래스에서는 버그나 예측하지 못한 동작이 "
+"발생하기 쉽기 때문입니다."
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:48
 #, fuzzy
@@ -18625,8 +18621,8 @@ msgid ""
 "full control over how your game world transitions."
 msgstr ""
 "레벨을 변경할 때, \"World\" 노드의 자식을 바꾸면 됩니다. :ref:`씬을 수동으로 "
-"바꾸는 것 <doc_change_scenes_manually>`\\ 으로 사용자는 게임 월드 전환 방식"
-"을 완전히 제어할 수 있습니다."
+"바꾸는 것 <doc_change_scenes_manually>`\\ 으로 사용자는 게임 세계 전환 "
+"방식을 완전히 제어할 수 있습니다."
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:375
 #, fuzzy
@@ -19283,11 +19279,11 @@ msgid ""
 "``AudioStreamPlayer`` while it is already playing a sound, the new sound "
 "interrupts the first."
 msgstr ""
-"예를 들어, 플랫포머 게임을 제작하면서 동전을 먹을 때 음향 효과가 나게 하고 싶"
-"다고 해 봅시다. 이를 위한 노드가 있습니다: :ref:`AudioStreamPlayer "
+"예를 들어, 플랫포머 게임을 제작하면서 동전을 먹을 때 소리 효과가 나게 하고 "
+"싶다고 해 봅시다. 이를 위한 노드가 있습니다: :ref:`AudioStreamPlayer "
 "<class_AudioStreamPlayer>`. 하지만 소리가 재생되고 있는 도중 "
-"``AudioStreamPlayer``를 호출하면, 새로운 소리가 첫 번째 소리가 끝나기 전에 재"
-"생됩니다."
+"``AudioStreamPlayer``\\ 를 호출하면, 새로운 소리가 첫 번째 소리가 끝나기 "
+"전에 재생됩니다."
 
 #: ../../docs/tutorials/best_practices/autoloads_versus_internal_nodes.rst:26
 msgid ""
@@ -19298,12 +19294,12 @@ msgid ""
 "``Sound.play(\"coin_pickup.ogg\")``. This solves the problem in the short "
 "term but causes more problems:"
 msgstr ""
-"해결 방법은 전역 오토로드된 사운드 매니저 클래스를 만드는 것입니다. 여기에서 "
-"``AudioStreamPlayer`` 노드의 풀을 만들어서 새로운 사운드 효과가 요청될 때마"
-"다 하나씩 순회하도록 하는 것입니다. 이 클래스를 ``Sound``\\ 라고 한다면 프로"
-"젝트 어디에서든 ``Sound.play(\"coin_pickup.ogg\")``\\ 를 호출하여 사용할 수 "
-"있습니다. 이렇게 하면 일시적으로 문제가 해결되지만 더 많은 문제가 발생하게 됩"
-"니다:"
+"해결책은 전역 오토로드된 소리 매니저 클래스를 코딩하 것입니다. 여기에서 "
+"``AudioStreamPlayer`` 노드의 풀을 생성해서 새로운 소리 효과가 요청될 때마다 "
+"하나씩 순회하도록 하는 것입니다. 이 클래스를 ``Sound``\\ 라고 한다면 "
+"프로젝트 어디에서든 ``Sound.play(\"coin_pickup.ogg\")``\\ 를 호출하여 사용할 "
+"수 있습니다. 이렇게 하면 일시적으로 문제가 해결되지만 더 많은 문제가 "
+"발생하게 됩니다:"
 
 #: ../../docs/tutorials/best_practices/autoloads_versus_internal_nodes.rst:32
 msgid ""
@@ -19438,15 +19434,14 @@ msgstr ""
 "``self``\\ 를 참조할 수 없다는 점입니다."
 
 #: ../../docs/tutorials/best_practices/autoloads_versus_internal_nodes.rst:89
-#, fuzzy
 msgid ""
 "Since Godot 4.1, GDScript also supports ``static`` variables using ``static "
 "var``. This means you can now share variables across instances of a class "
 "without having to create a separate autoload."
 msgstr ""
-"Godot 4.1 버전부터 GDScript는 ``static var``\\ 를 통한 ``static`` 변수를 지원"
-"합니다. 즉 이제 클래스 인스턴스 간 변수 공유를 별도의 오토로드를 만들지 않고"
-"도 가능하다는 뜻입니다."
+"Godot 4.1부터 GDScript는 ``static var``\\ 를 사용하여 ``static`` 변수도 "
+"지원합니다. 이제 별도의 오토로드를 만들지 않고도 클래스의 인스턴스 간에 "
+"변수를 공유할 수 있다는 뜻입니다."
 
 #: ../../docs/tutorials/best_practices/autoloads_versus_internal_nodes.rst:93
 msgid ""
@@ -19530,16 +19525,16 @@ msgstr ""
 "여지는 데이터는 실제로는 :ref:`TreeItem <class_TreeItem>` 오브젝트들입니다."
 
 #: ../../docs/tutorials/best_practices/node_alternatives.rst:25
-#, fuzzy
 msgid ""
 "**Advantages:** Simplifying one's API to smaller scoped objects helps "
 "improve its accessibility and improve iteration time. Rather than working "
 "with the entire Node library, one creates an abbreviated set of Objects from "
 "which a node can generate and manage the appropriate sub-nodes."
 msgstr ""
-"**장점:** API를 더 작은 유효 범위의 오브젝트로 단순화하여 접근성과 반복 시간"
-"을 향상시켜 줍니다. 전체 노드 라이브러리에서 작업하는 대신, 한 노드가 적절한 "
-"하위 노드를 생성하고 관리할 수 있는 단축된 오브젝트들의 집합을 만듭니다."
+"**장점:** API를 더 작은 범위의 오브젝트로 단순화하면 접근성을 향상시키고 "
+"반복 시간을 향상시킬 수 있습니다. 전체 노드 라이브러리로 작업하는 대신, "
+"노드가 적절한 하위 노드를 생성하고 관리할 수 있는 축약된 오브젝트의 집합을 "
+"만들 수 있습니다."
 
 #: ../../docs/tutorials/best_practices/node_alternatives.rst:32
 msgid ""
@@ -19561,9 +19556,10 @@ msgid ""
 "when no further references to themselves exist. These are useful in the "
 "majority of cases where one needs data in a custom class."
 msgstr ""
-":ref:`참조 <class_Reference>`: 오브젝트보다 오직 조금 더 복잡함. 참조는 자신"
-"을 참조하는 지를 추적해서 더 이상 참조하지 않으면 불러온 메모리를 삭제합니"
-"다. 이는 데이터가 필요한 맞춤 클래스에 있어 대부분의 경우에 유용합니다."
+":ref:`참조 <class_Reference>`: 오브젝트보다 오직 조금 더 복잡함. 참조는 "
+"자신을 참조하는 지를 추적해서 더 이상 참조하지 않으면 불러온 메모리를 "
+"삭제합니다. 이는 데이터가 필요한 커스텀 클래스에 있어 대부분의 경우에 "
+"유용합니다."
 
 #: ../../docs/tutorials/best_practices/node_alternatives.rst:42
 #, fuzzy
@@ -19666,10 +19662,9 @@ msgid ""
 "While users often access :ref:`Node <class_Node>` and :ref:`Resource "
 "<class_Resource>` this way, alternative measures are available."
 msgstr ""
-":ref:`RefCounted <class_RefCounted>` 오브젝트에 대해서도 같은 원리가 적용됩니"
-"다. 사용자들은 종종 :ref:`Node <class_Node>`\\ 와 :ref:`Resource "
-"<class_Resource>`\\ 를 이런 방식으로 접근하지만, 대체 조치도 사용할 수 있습니"
-"다."
+":ref:`RefCounted <class_RefCounted>` 오브젝트에 대해서도 같은 원리가 "
+"적용됩니다. 사용자들은 종종 :ref:`Node <class_Node>`\\ 와 :ref:`Resource "
+"<class_Resource>`\\ 를 이런 방식으로 접근하지만, 대체 조치도 사용 가능합니다."
 
 #: ../../docs/tutorials/best_practices/godot_interfaces.rst:36
 msgid ""
@@ -23376,9 +23371,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/editor/script_editor.rst:388
-#, fuzzy
 msgid "override"
-msgstr "기본 재정의"
+msgstr "오버라이드"
 
 #: ../../docs/tutorials/editor/script_editor.rst:389
 msgid "receiver"
@@ -25249,7 +25243,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:301
 msgid "Complete Symbol"
-msgstr "상징 자동 완성"
+msgstr "기호 자동완성"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:301
 msgid ":kbd:`Ctrl + Space`"
@@ -25620,7 +25614,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:368
 msgid "Soft Reload Script"
-msgstr "스크립트 소프트 다시 불러옴"
+msgstr "스크립트 소프트 리로드"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:368
 msgid "``script_editor/reload_script_soft``"
@@ -25987,9 +25981,8 @@ msgid "``filesystem_dock/delete``"
 msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:456
-#, fuzzy
 msgid "Scene tree dock"
-msgstr "SceneTree(씬 트리)"
+msgstr "씬 트리 독"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:461
 msgid "Add Child Node"
@@ -27938,26 +27931,24 @@ msgid "``--audio-driver <driver>``"
 msgstr "``--audio-driver <드라이버>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:102
-#, fuzzy
 msgid ""
 "|release| Audio driver. Use ``--help`` first to display the list of "
 "available drivers."
 msgstr ""
-"오디오 드라이버. 사용할 수 있는 드라이버 목록을 표시하려면 먼저 ``--help``\\ "
-"를 입력하세요."
+"|release| 오디오 드라이버. 사용 가능한 드라이버의 목록을 표시하려면 먼저 ``--"
+"help``\\ 를 입력하세요."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:104
 msgid "``--display-driver <driver>``"
 msgstr "``--display-driver <드라이버>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:104
-#, fuzzy
 msgid ""
 "|release| Display driver (and rendering driver). Use ``--help`` first to "
 "display the list of available drivers."
 msgstr ""
-"비디오 드라이버. 사용할 수 있는 드라이버 목록을 표시하려면 먼저 ``--help``\\ "
-"를 입력하세요."
+"|release| 비디오 드라이버. 사용 가능한 드라이버의 목록을 표시하려면 먼저 ``--"
+"help``\\ 를 입력하세요."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:106
 msgid "``--audio-output-latency`` <ms>"
@@ -27983,13 +27974,12 @@ msgid "``--rendering-driver <driver>``"
 msgstr "``--rendering-driver <드라이버>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:111
-#, fuzzy
 msgid ""
 "|release| Rendering driver (depends on display driver). Use ``--help`` first "
 "to display the list of available drivers."
 msgstr ""
-"비디오 드라이버. 사용할 수 있는 드라이버 목록을 표시하려면 먼저 ``--help``\\ "
-"를 입력하세요."
+"|release| 비디오 드라이버. 사용 가능한 드라이버의 목록을 표시하려면 먼저 ``--"
+"help``\\ 를 입력하세요."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:113
 msgid "``--gpu-index <device_index>``"
@@ -28523,15 +28513,14 @@ msgid "``--export-pack <preset> <path>``"
 msgstr "``--export-pack <프리셋> <경로>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:249
-#, fuzzy
 msgid ""
 "|editor| Like ``--export-release``, but only export the game pack for the "
 "given preset. The ``<path>`` extension determines whether it will be in PCK "
 "or ZIP format. Implies ``--import``."
 msgstr ""
-"``--export``\\ 와 비슷하지만 주어진 사전 설정에 대한 게임 팩만 내보냅니다. <"
-"경로> 확장자는 PCK 형식인지 ZIP 형식인지 여부를 결정합니다. (:ref:`tools(툴) "
-"<doc_introduction_to_the_buildsystem_tools>`\\ 이 활성화되어 있어야 합니다)."
+"|editor| ``--export-release``\\ 와 비슷하지만, 주어진 프리셋에 대한 게임 "
+"팩만 내보냅니다. ``<경로>`` 확장자는 PCK 또는 ZIP 형식인지 여부를 "
+"결정합니다. ``--import``\\ 를 암시합니다."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:252
 msgid "``--export-patch <preset> <path>``"
@@ -28586,14 +28575,12 @@ msgid "``--doctool [<path>]``"
 msgstr "``--doctool [<경로>]``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:262
-#, fuzzy
 msgid ""
 "|editor| Dump the engine API reference to the given ``<path>`` in XML "
 "format, merging if existing files are found."
 msgstr ""
-"엔진 API 참조를 주어진 <경로>에 XML 형식으로 덤프합니다. 이미 해당 파일이 있"
-"다면 병합합니다. (:ref:`tools(툴) "
-"<doc_introduction_to_the_buildsystem_tools>`\\ 이 활성화되어 있어야 합니다)."
+"|editor| 엔진 API 참조를 지정된 ``<경로>``\\ 에 엔진 API 참조를 XML 형식으로 "
+"덤프하고, 기존 파일이 발견되면 병합합니다."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:264
 msgid "``--no-docbase``"
@@ -30019,7 +30006,7 @@ msgstr ""
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.rst:240
 msgid "KinematicBody2D"
-msgstr ""
+msgstr "KinematicBody2D"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.rst:240
 #: ../../docs/tutorials/physics/physics_introduction.rst:367
@@ -36604,10 +36591,10 @@ msgid ""
 "in :ref:`doc_multiple_resolutions`), but can also be manually set on each "
 "viewport."
 msgstr ""
-"마지막으로, 뷰포트에는 *늘이기 변형*이 있으며, 이는 화면 크기를 조정하거나 늘"
-"일 때 사용됩니다. 이 변형은 내부적으로 사용되지만"
-"( :ref:`doc_multiple_resolutions`에 설명됨) 각 뷰포트에서 수동으로 설정할 수"
-"도 있습니다."
+"마지막으로, 뷰포트에는 *늘이기 변형*이 있으며, 이는 화면 크기를 조절하거나 "
+"늘일 때 사용됩니다. 이 변형은 내부적으로 사용되지만( "
+":ref:`doc_multiple_resolutions`에 설명됨) 각 뷰포트에서 수동으로 설정할 수도 "
+"있습니다."
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:48
 #, fuzzy
@@ -36680,9 +36667,10 @@ msgid ""
 "coordinates (``CanvasItem.get_global_transform()``), to allow automatic "
 "screen resolution resizing to work properly."
 msgstr ""
-"그러나 화면 좌표를 사용하여 작업하는 것은 일반적으로 바람직하지 않음을 명심하"
-"세요. 권장되는 접근방식은 Canvas 좌표(``CanvasItem.get_global_transform()``)"
-"로 자동으로 화면 해상도를 제대로 크기 조정할 수 있게 간단히 작동해야 합니다."
+"그러나 화면 좌표를 사용하여 작업하는 것은 일반적으로 바람직하지 않음을 "
+"명심하세요. 권장되는 접근방식은 Canvas 좌표(``CanvasItem.get_global_transform"
+"()``)로 자동으로 화면 해상도를 제대로 크기 조절할 수 있게 간단히 작동해야 "
+"합니다."
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:109
 msgid "Feeding custom input events"
@@ -38910,8 +38898,8 @@ msgid ""
 "Making a custom UI control. There are plenty of controls available, but when "
 "you have unusual needs, you will likely need a custom control."
 msgstr ""
-"사용자 정의 UI 컨트롤 만들기. 사용할 수 있는 컨트롤은 많지만, 새롭고 맞춤화"
-"된 컨트롤을 만들어야 할 필요성에 부딪치기 쉽습니다."
+"사용자 정의 UI 컨트롤 만들기. 사용 가능한 컨트롤은 많지만, 새롭고 커스텀화된 "
+"컨트롤을 만들어야 할 필요성에 부딪치기 쉽습니다."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:27
 #: ../../docs/tutorials/math/beziers_and_curves.rst:233
@@ -38928,7 +38916,7 @@ msgid ""
 msgstr ""
 ":ref:`CanvasItem <class_CanvasItem>` 를 상속받는 :ref:`Control "
 "<class_Control>` 또는 :ref:`Node2D <class_Node2D>` 와 같은 노드에 스크립트를 "
-"추가하세요. 그런 다음 ``_draw()`` 함수를 재정의하세요."
+"추가하세요. 그런 다음 ``_draw()`` 함수를 오버라이드하세요."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:54
 #, fuzzy
@@ -45721,9 +45709,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:665
-#, fuzzy
 msgid "Sampling"
-msgstr "컴파일링(Compiling)"
+msgstr "샘플링"
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:668
 #: ../../docs/tutorials/audio/audio_effects.rst:122
@@ -52862,7 +52849,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:447
 msgid "Three shadowmasking modes are available:"
-msgstr "세 가지 섀도우마스킹 모드를 사용할 수 있습니다:"
+msgstr "세 가지 섀도우마스킹 모드가 사용 가능합니다:"
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:449
 msgid ""
@@ -55594,9 +55581,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/volumetric_fog.rst:261
-#, fuzzy
 msgid "Custom FogVolume shaders"
-msgstr "맞춤 메시"
+msgstr "커스텀 FogVolume 셰이더"
 
 #: ../../docs/tutorials/3d/volumetric_fog.rst:263
 msgid ""
@@ -58842,7 +58828,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:91
 msgid "Custom meshes"
-msgstr "맞춤 메시"
+msgstr "커스텀 메시"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:93
 msgid ""
@@ -58856,9 +58842,8 @@ msgid "For a mesh to be used as a CSG mesh, it is required to:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:99
-#, fuzzy
 msgid "be closed"
-msgstr "Repeat가 활성화되어 있어야 합니다"
+msgstr "닫혀 있음"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:100
 msgid "have each edge connect to only two faces"
@@ -61080,11 +61065,8 @@ msgstr ""
 "를 종료하려면 ``ESC`` 를 누르세요."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:91
-#, fuzzy
 msgid "The rotation pivot is wrong and needs to be adjusted."
-msgstr ""
-"이런, 좋게 보이지 않습니다! 회전 중심점이 잘못 되었습니다. 즉 조정할 필요가 "
-"있습니다."
+msgstr "회전 피벗이 잘못되어 조정할 필요가 있습니다."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:93
 #, fuzzy
@@ -61956,9 +61938,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:47
-#, fuzzy
 msgid "A few types of root nodes are available:"
-msgstr "사용할 수 있는 프로세싱 타입은 두 가지가 있습니다:"
+msgstr "루트 노드 중 몇 가지가 사용 가능합니다:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:51
 msgid ""
@@ -63379,9 +63360,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/creating_movies.rst:226
-#, fuzzy
 msgid "Custom"
-msgstr "맞춤 메시"
+msgstr "커스텀"
 
 #: ../../docs/tutorials/animation/creating_movies.rst:228
 msgid ""
@@ -63395,7 +63375,7 @@ msgstr ""
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:32
 #: ../../docs/engine_details/development/debugging/profiling/tracing_profilers.rst:166
 msgid "Configuration"
-msgstr ""
+msgstr "구성"
 
 #: ../../docs/tutorials/animation/creating_movies.rst:236
 msgid ""
@@ -64491,7 +64471,7 @@ msgstr "플랫폼에 따라 S3TC, BPTC 또는 ETC2로 저장됨"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:193
 msgid "Stored as raw pixels"
-msgstr "압축되지 않은 픽셀로 저장됨"
+msgstr "원형 픽셀로 저장됨"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:193
 msgid "Transcoded to VRAM Compressed format"
@@ -65286,9 +65266,9 @@ msgid ""
 "(hundreds of simultaneous voices in this format are fine). The downside is "
 "that they take up a lot of disk space."
 msgstr ""
-"Wav 파일은 압축되지 않은 데이터나 가벼운 압축을 사용합니다 (IMA-ADPCM). 재생"
-"에 CPU를 거의 사용하지 않습니다. (수 백 개의 목소리가 이 포맷으로 재생되어도 "
-"문제가 없습니다), 하지만 큰 용량이 단점입니다."
+"Wav 파일은 압축되지 않은 데이터나 가벼운 압축을 사용합니다 (IMA-ADPCM). "
+"재생에 CPU를 거의 사용하지 않습니다. (수 백 개의 보이스가 이 포맷으로 "
+"재생되어도 문제가 없습니다), 하지만 큰 용량이 단점입니다."
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:17
 msgid ""
@@ -65800,15 +65780,15 @@ msgid ""
 "reducing their size greatly and ensuring correct trimming."
 msgstr ""
 "Godot는 내장 효과를 가진 :ref:`광역 버스 시스템 <doc_audio_buses>`\\ 을 갖고 "
-"있습니다. 이걸로 SFX 아티스트가 음향 효과에 울림(reverb)을 추가하는 번거로움"
-"을 줄여주며, 파일 크기를 크게 줄이고 올바른 트리밍을 보장합니다."
+"있습니다. 이걸로 SFX 아티스트가 소리 효과에 반향을 추가하는 번거로움을 "
+"줄여주며, 파일 크기를 크게 줄이고 올바른 트리밍을 보장합니다."
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:312
 #, fuzzy
 msgid ""
 "As you can see above, sound effects become much larger in file size with "
 "reverb added."
-msgstr "위에서 볼 수 있듯이, reverb가 추가되면서 음향 효과는 거대해졌습니다."
+msgstr "위에서 볼 수 있듯이, 반향이 추가되면서 소리 효과는 거대해졌습니다."
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:317
 msgid ""
@@ -65855,12 +65835,12 @@ msgid ""
 "if a game is released first in English, later in other languages, but a "
 "complete nightmare if working with many languages at the same time."
 msgstr ""
-"다국어 언어 게임과 응용 프로그램을 만들기 위한 두 가지 접근법이 있습니다. 두 "
-"가지 모두 키:값 시스템을 기반으로 이루어집니다. 첫 번째는 하나의 언어를 키로 "
-"사용하는 것이고 (보통은 영어), 두 번째는 특정 식별자를 사용하는 것입니다. 첫 "
-"번째 접근은 게임을 영어로 먼저 출시하고, 이후 다른 언어로 출시한다면 더 쉬울 "
-"수도 있습니다, 하지만 동시에 다른 언어를 작업한다면, 이는 완벽한 악몽이 될 것"
-"입니다."
+"다국어 언어 게임과 응용 프로그램을 생성하기 위한 두 가지 접근법이 있습니다. "
+"두 가지 모두 키:값 시스템을 기반으로 이루어집니다. 첫 번째는 하나의 언어를 "
+"키로 사용하는 것이고 (보통은 영어), 두 번째는 특정 식별자를 사용하는 "
+"것입니다. 첫 번째 접근은 게임을 영어로 먼저 출시하고, 이후 다른 언어로 "
+"출시한다면 더 쉬울 수도 있습니다, 하지만 동시에 다른 언어를 작업한다면, 이는 "
+"완벽한 악몽이 될 것입니다."
 
 #: ../../docs/tutorials/assets_pipeline/importing_translations.rst:29
 msgid ""
@@ -67858,7 +67838,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/advanced_import_settings.rst:227
 msgid "Optimizer"
-msgstr "최적화 도구"
+msgstr "옵티마이저"
 
 #: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/advanced_import_settings.rst:229
 msgid ""
@@ -67866,14 +67846,13 @@ msgid ""
 "the animation considerably. In general, this should always be turned on "
 "unless you suspect that an animation might be broken due to it being enabled."
 msgstr ""
-"애니메이션을 가져올 때 옵티마이저(optimizer)가 실행되어 애니메이션의 크기는 "
-"상당히 줄어듭니다. 일반적으로, 옵티마이저가 활성화되어 있기 때문에 애니메이션"
-"이 손상되었다고 의심되는 상황이 아니라면 항상 활성화되어 있어야 합니다."
+"애니메이션을 가져올 때 옵티마이저가 실행되어 애니메이션의 크기는 상당히 "
+"줄어듭니다. 일반적으로, 옵티마이저가 활성화되어 있기 때문에 애니메이션이 "
+"손상되었다고 의심되는 상황이 아니라면 항상 활성화되어 있어야 합니다."
 
 #: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/advanced_import_settings.rst:234
-#, fuzzy
 msgid "Save to file"
-msgstr "파일 전달하기"
+msgstr "파일에 저장"
 
 #: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/advanced_import_settings.rst:236
 msgid ""
@@ -67881,12 +67860,11 @@ msgid ""
 "a file instead. This allows adding custom tracks to the animations and "
 "keeping them after a reimport."
 msgstr ""
-"기본적으로, 애니메이션은 내장되어 저장됩니다. 대신 파일로 애니메이션을 저장"
-"할 수도 있습니다. 이렇게 하면 맞춤 트랙을 애니메이션에 추가할 수 있고, 다시 "
-"가져온 후에도 이를 유지할 수 있습니다."
+"기본적으로, 애니메이션은 내장되어 저장됩니다. 대신 파일로 애니메이션을 "
+"저장할 수도 있습니다. 이렇게 하면 커스텀 트랙을 애니메이션에 추가할 수 있고, "
+"다시 가져온 후에도 이를 유지할 수 있습니다."
 
 #: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/advanced_import_settings.rst:241
-#, fuzzy
 msgid "Slices"
 msgstr "썰기"
 
@@ -68857,7 +68835,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_effects.rst:209
 msgid "Reverb"
-msgstr ""
+msgstr "반향"
 
 #: ../../docs/tutorials/audio/audio_effects.rst:211
 msgid ""
@@ -70068,7 +70046,7 @@ msgstr "텍스처"
 
 #: ../../docs/tutorials/export/exporting_pcks.rst:47
 msgid "sound effects"
-msgstr "음향 효과"
+msgstr "소리 효과"
 
 #: ../../docs/tutorials/export/exporting_pcks.rst:48
 msgid "music"
@@ -70817,15 +70795,15 @@ msgstr ""
 
 #: ../../docs/tutorials/export/feature_tags.rst:154
 msgid "Custom features"
-msgstr "맞춤 기능"
+msgstr "커스텀 기능"
 
 #: ../../docs/tutorials/export/feature_tags.rst:156
 msgid ""
 "It is possible to add custom features to a build; use the relevant field in "
 "the *export preset* used to generate it:"
 msgstr ""
-"빌드에 맞춤 기능을 추가할 수 있습니다; 생성하기 위해 *내보내기 프리셋*\\ 에"
-"서 관련 필드를 사용하세요:"
+"빌드에 커스텀 기능을 추가할 수 있습니다; 생성하기 위해 *내보내기 프리셋*\\ "
+"에서 관련 필드를 사용하세요:"
 
 #: ../../docs/tutorials/export/feature_tags.rst:163
 msgid ""
@@ -70844,7 +70822,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/feature_tags.rst:173
 msgid "Overriding project settings"
-msgstr "프로젝트 설정 재정의하기"
+msgstr "프로젝트 설정 오버라이드하기"
 
 #: ../../docs/tutorials/export/feature_tags.rst:175
 msgid ""
@@ -70852,9 +70830,9 @@ msgid ""
 "*Project Settings*. This allows you to better customize any configuration "
 "when doing a build."
 msgstr ""
-"기능을 사용하여 *프로젝트 설정*\\ 의 특정 구성 값을 재정의하는데 사용할 수 있"
-"습니다. 이를 통해 빌드를 작업할 때 모든 구성을 더 잘 사용자 지정할 수 있습니"
-"다."
+"기능을 사용하여 *프로젝트 설정*\\ 의 특정 구성 값을 오버라이드하는데 사용할 "
+"수 있습니다. 이를 통해 빌드를 작업할 때 모든 구성을 더 잘 사용자 지정할 수 "
+"있습니다."
 
 #: ../../docs/tutorials/export/feature_tags.rst:178
 msgid ""
@@ -70879,7 +70857,7 @@ msgstr ""
 #: ../../docs/tutorials/export/feature_tags.rst:186
 #, fuzzy
 msgid "After overriding, a new field is added for this specific configuration."
-msgstr "재정의한 후, 지정된 구성을 위한 새로운 영역이 추가됩니다:"
+msgstr "오버라이드한 후, 지정된 구성을 위한 새로운 영역이 추가됩니다:"
 
 #: ../../docs/tutorials/export/feature_tags.rst:192
 msgid ""
@@ -70890,22 +70868,22 @@ msgid ""
 "project settings on all platforms and configurations."
 msgstr ""
 "(기능 태그와 관련이 없는) :ref:`프로젝트 설정의 \"override.cfg\" 기능 "
-"<class_ProjectSettings>`\\ 을 사용할 때 기능 태그가 여전히 적용되고 있다는 사"
-"실을 기억하세요. 따라서 원하는 기능 태그가 모든 플랫폼 및 구성에서 기본 프로"
-"젝트 설정을 재정의 하도록 하고 싶다면 그 기능 태그가 포함된 설정도 *함께* 재"
-"정의 해야 합니다."
+"<class_ProjectSettings>`\\ 을 사용할 때 기능 태그가 여전히 적용되고 있다는 "
+"사실을 기억하세요. 따라서 원하는 기능 태그가 모든 플랫폼 및 구성에서 기본 "
+"프로젝트 설정을 오버라이드하도록 하고 싶다면 그 기능 태그가 포함된 설정도 "
+"*함께* 오버라이드해야 합니다."
 
 #: ../../docs/tutorials/export/feature_tags.rst:200
 msgid "Default overrides"
-msgstr "디폴트 재정의"
+msgstr "디폴트 오버라이드"
 
 #: ../../docs/tutorials/export/feature_tags.rst:202
 msgid ""
 "There are already a lot of settings that come with overrides by default; "
 "they can be found in many sections of the project settings."
 msgstr ""
-"기본적으로 재정의를 통해 오는 많은 설정이 있습니다; 프로젝트 설정의 많은 섹션"
-"에서 이를 확인할 수 있습니다."
+"기본적으로 오버라이드를 통해 오는 많은 설정이 있습니다; 프로젝트 설정의 많은 "
+"섹션에서 이를 확인할 수 있습니다."
 
 #: ../../docs/tutorials/export/feature_tags.rst:208
 msgid "Taking feature tags into account when reading project settings"
@@ -70947,9 +70925,9 @@ msgid ""
 "custom **ExportPlugin**. They are also used to specify which shared library "
 "is loaded and exported in **GDExtension**."
 msgstr ""
-"기능 태그는 맞춤 **ExportPlugin**\\ 을 작성하는 것으로, 빌드 처리를 커스터마"
-"이즈하는데 사용할 수도 있습니다. 그리고 **GDNative**\\ 에서 불러오고 내보내"
-"는 공유된 라이브러리를 지정하는데에도 사용됩니다."
+"기능 태그는 커스텀 **ExportPlugin**\\ 을 작성하는 것으로, 빌드 처리를 "
+"커스터마이즈하는데 사용할 수도 있습니다. 그리고 **GDNative**\\ 에서 불러오고 "
+"내보내는 공유된 라이브러리를 지정하는데에도 사용됩니다."
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:4
 msgid "Exporting for Windows"
@@ -71452,7 +71430,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:106
 msgid "Identity"
-msgstr "아이덴티티"
+msgstr "식별자"
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:106
 msgid ""
@@ -73039,8 +73017,8 @@ msgid ""
 "If a path to a **Custom HTML shell** file is given, it will be used instead "
 "of the default HTML page. See :ref:`doc_customizing_html5_shell`."
 msgstr ""
-"**맞춤 HTML 셸** 파일에 대한 경로가 주어진다면, 그것이 기본 HTML 페이지 대신 "
-"사용됩니다. :ref:`doc_customizing_html5_shell`\\ 을 참고하세요."
+"**커스텀 HTML 셸** 파일에 대한 경로가 주어진다면, 그것이 기본 HTML 페이지 "
+"대신 사용됩니다. :ref:`doc_customizing_html5_shell`\\ 을 참고하세요."
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:149
 msgid ""
@@ -73177,14 +73155,13 @@ msgid ""
 "exempt from such requirement)."
 msgstr ""
 "브라우저 공급업체는 `보안 컨텍스트 <https://developer.mozilla.org/ko/docs/"
-"Web/Security/Secure_Contexts>`_\\ 에서만 사용할 수 있는 기능을 점점 더 많이 "
+"Web/Security/Secure_Contexts>`_\\ 에서만 사용 가능한 기능을 점점 더 많이 "
 "만들고 있는데 즉, 이러한 기능은 웹 페이지가 보안 HTTPS 연결을 통해 제공되는 "
-"경우에만 사용할 수 있습니다(localhost는 보통 이러한 요구 사항에서 예외입니"
-"다)."
+"경우에만 사용 가능합니다 (localhost는 보통 이러한 요구 사항에서 예외입니다)."
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:236
 msgid "Using cookies for data persistence"
-msgstr "데이터 지속성을 위한 쿠키 사용"
+msgstr "데이터 지속성을 위한 쿠키 사용하기"
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:238
 msgid ""
@@ -73411,8 +73388,8 @@ msgid ""
 "can be used, see :ref:`doc_customizing_html5_shell`."
 msgstr ""
 "웹으로 내보내면 웹 서버로 보낼 여러 파일들을 생성합니다, 표시하기 위한 기본 "
-"HTML 페이지도 이에 속합니다. 맞춤 HTML 파일을 사용할 수 있습니"
-"다, :ref:`doc_customizing_html5_shell`\\ 을 보세요."
+"HTML 페이지도 이에 속합니다. 커스텀 HTML 파일을 사용할 수 있습니다, "
+":ref:`doc_customizing_html5_shell`\\ 을 보세요."
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:354
 msgid ""
@@ -73669,16 +73646,16 @@ msgid ""
 "`This video tutorial <https://www.youtube.com/watch?v=uqV3UfM-n5Y>`_ goes "
 "over how to export an ICO file with GIMP."
 msgstr ""
-"GIMP로 ICO 파일을 내보내는 방법은`이 튜토리얼 영상 <https://www.youtube.com/"
-"watch?v=uqV3UfM-n5Y>`_ 에 설명되어 있습니다."
+"GIMP로 ICO 파일을 내보내는 방법은`이 튜토리얼 비디오 <https://"
+"www.youtube.com/watch?v=uqV3UfM-n5Y>`_\\ 에 설명되어 있습니다."
 
 #: ../../docs/tutorials/export/changing_application_icon_for_windows.rst:26
 msgid ""
 "It is also possible to convert a PNG image to an hiDPI-friendly ICO file "
 "using this `ImageMagick <https://www.imagemagick.org/>`_ command:"
 msgstr ""
-"다음 `ImageMagick <https://www.imagemagick.org/>`_ 명령문을 사용하면 PNG 이미"
-"지를 hiDPI 친화적인 ICO 파일로 변환할 수 있습니다:"
+"다음 `ImageMagick <https://www.imagemagick.org/>`_ 명령을 사용하면 PNG "
+"이미지를 hiDPI 친화적인 ICO 파일로 변환할 수 있습니다:"
 
 #: ../../docs/tutorials/export/changing_application_icon_for_windows.rst:33
 msgid ""
@@ -74124,10 +74101,10 @@ msgid ""
 "may be incorrectly installed, device may be improperly configured, etc.), "
 "it's good to let the user know that it exists."
 msgstr ""
-"원클릭 배포는 플랫폼이 구성되어있고 컴퓨터에 지원 기기가 연결되어 있기만 하"
-"면 사용할 수 있는 기능입니다. 설치 과정은 여러 부분에서 문제가 발생할 수 있"
-"기 때문에(플랫폼이 잘못 구성되었거나, SDK가 잘못 설치되었거나 기기 구성이 잘"
-"못된 등) 사용자에게 이런 기능이 있는 것을 알리는 것이 좋습니다."
+"원클릭 배포는 플랫폼이 구성되어있고 컴퓨터에 지원 기기가 연결되어 있기만 "
+"하면 사용 가능한 기능입니다. 설치 과정은 여러 부분에서 문제가 발생할 수 있기 "
+"때문에(플랫폼이 잘못 구성되었거나, SDK가 잘못 설치되었거나 기기 구성이 "
+"잘못된 등) 사용자에게 이런 기능이 있는 것을 알리는 것이 좋습니다."
 
 #: ../../docs/tutorials/export/one-click_deploy.rst:15
 msgid ""
@@ -77235,27 +77212,24 @@ msgstr ""
 "요."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:100
-#, fuzzy
 msgid ""
 "Why locales exist can be illustrated through the USA and Great Britain. Both "
 "speak the same language (English), yet differ in many aspects:"
 msgstr ""
-"로케일의 존재 이유는 미국과 영국을 통해 설명할 수 있습니다. 두 나라는 같은 언"
-"어(영어)를 사용하지만 여러 측면에서 차이가 있습니다: - 철자: 예: gray (미"
-"국), grey (영국) - 단어 사용: 예: eggplant (미국), aubergine (영국) - 단위 또"
-"는 통화: 예: feet/inches (미국), meters/cm (영국)"
+"로케일의 존재 이유는 미국과 영국을 통해 설명할 수 있습니다. 두 나라는 같은 "
+"언어(영어)를 사용하지만 여러 측면에서 차이가 있습니다:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:103
 msgid "Spelling: e.g. gray (USA), grey (GB)"
-msgstr ""
+msgstr "철자: 예: gray (미국), grey (영국)"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:104
 msgid "Use of words: e.g. eggplant (USA), aubergine (GB)"
-msgstr ""
+msgstr "단어의 사용: 예: eggplant (미국), aubergine (영국)"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:105
 msgid "Units or currencies: e.g. feet/inches (USA), metres/cm (GB)"
-msgstr ""
+msgstr "단위 또는 통화: 예: feet/inches (미국), meters/cm (영국)"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:107
 msgid ""
@@ -80326,9 +80300,8 @@ msgid "hsn"
 msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:451
-#, fuzzy
 msgid "Xiang Chinese"
-msgstr "맞춤 데이터 타입 생성하기"
+msgstr "샹 중국어"
 
 #: ../../docs/tutorials/i18n/locales.rst:453
 msgid "ht"
@@ -88759,7 +88732,9 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:125
 msgid "Note that adding ``a + b`` gives the same result as ``b + a``."
-msgstr "즉 더하기 a+b는 b+a 와 같은 결과 값을 갖는다."
+msgstr ""
+"``a + b``\\ 를 더하는 것은 ``b + a``\\ 를 더하는 것과 같은 결과를 가져온다는 "
+"점을 참고하세요."
 
 #: ../../docs/tutorials/math/vector_math.rst:128
 msgid "Scalar multiplication"
@@ -88785,8 +88760,8 @@ msgid ""
 "only its magnitude. Multiplying with a negative scalar results in a vector "
 "in the opposite direction. This is how you **scale** a vector."
 msgstr ""
-"벡터에 스칼라를 곱하는 것은 벡터의 방향을 바꾸지는 않고, 이것의 크기만 바꿉니"
-"다. 이것이 바로 벡터의 크기를 조정하는 방법입니다."
+"벡터에 스칼라를 곱하는 것은 벡터의 방향을 바꾸지는 않고, 이것의 크기만 "
+"바꿉니다. 이것이 바로 벡터의 크기를 조절하는 방법입니다."
 
 #: ../../docs/tutorials/math/vector_math.rst:156
 msgid "Practical applications"
@@ -88811,10 +88786,10 @@ msgid ""
 "velocity to the current position."
 msgstr ""
 "벡터는 크기와 방향을 가진 **모든** 양을 나타낼 수 있습니다. 대표적인 예로는 "
-"위치, 속도, 가속도, 힘이 있습니다. 이 그림에서 1단계의 우주선은 위치 벡터 "
+"위치, 속도, 가속도, 힘이 있습니다. 이 이미지에서 1단계의 우주선은 위치 벡터 "
 "``(1,3)``\\ 과 속도 벡터 ``(2,1)``\\ 을 가지고 있습니다. 속도 벡터는 배가 각 "
-"단계마다 이동하는 정도를 나타냅니다. 현재 위치에 속도를 더함으로써 2단계의 위"
-"치를 찾을 수 있습니다."
+"단계마다 이동하는 정도를 나타냅니다. 현재 위치에 속도를 더함으로써 2단계의 "
+"위치를 찾을 수 있습니다."
 
 #: ../../docs/tutorials/math/vector_math.rst:171
 #, fuzzy
@@ -90267,8 +90242,9 @@ msgid ""
 "recommended read afterwards is the :ref:`Bezier <doc_beziers_and_curves>` "
 "page."
 msgstr ""
-"이 밖에도 여러 종류의 보간법이 있지만, 여기에선 설명하지 않겠습니다. 이 글을 "
-"읽은 뒤에 :ref:`Bezier <doc_beziers_and_curves>` 를 읽어보는 것을 권장합니다."
+"이 밖에도 여러 유형의 보간법이 있지만, 여기에선 설명하지 않겠습니다. 이 글을 "
+"읽은 뒤에 :ref:`베지어 <doc_beziers_and_curves>`\\ 를 읽어보는 것을 "
+"권장합니다."
 
 #: ../../docs/tutorials/math/interpolation.rst:32
 msgid "Vector interpolation"
@@ -90463,7 +90439,7 @@ msgstr "이와 같은 곡선을 *2차 베지어* 곡선이라고 부릅니다."
 #: ../../docs/tutorials/math/beziers_and_curves.rst:63
 #: ../../docs/tutorials/math/beziers_and_curves.rst:165
 msgid "*(Image credit: Wikipedia)*"
-msgstr "*(사진 출처: 위키백과)*"
+msgstr "*(이미지 출처: 위키백과)*"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:66
 msgid "Cubic Bezier"
@@ -94622,11 +94598,11 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:4
 msgid "High-level multiplayer"
-msgstr "하이 레벨 멀티플레이어"
+msgstr "고수준 멀티플레이어"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:7
 msgid "High-level vs low-level API"
-msgstr "하이 레벨 대 로우 레벨 API"
+msgstr "고수준 대 저수준 API"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:9
 msgid ""
@@ -94635,10 +94611,10 @@ msgid ""
 "add networking to your first nodes, skip to `Initializing the network`_ "
 "below. But make sure to read the rest later on!"
 msgstr ""
-"여기부터는 몇 가지 기본 사항과 함께, Godot에서 하이 레벨 네트워킹과 로우 레"
-"벨 네트워킹의 차이를 설명합니다. 바로 실전으로 가서 첫 노드에 네트워킹을 추가"
-"하고 싶다면, 아래의 `네트워크 초기화하기`_\\ 로 건너뛰세요. 하지만 나중에라"
-"도 이 부분을 읽어주세요!"
+"여기부터는 몇 가지 기본 사항과 함께, Godot에서 고수준 네트워킹과 저수준 "
+"네트워킹의 차이를 설명합니다. 바로 실전으로 가서 첫 노드에 네트워킹을 "
+"추가하고 싶다면, 아래의 `네트워크 초기화하기`_\\ 로 건너뛰세요. 하지만 "
+"나중에라도 이 부분을 읽어주세요!"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:11
 #, fuzzy
@@ -94654,17 +94630,17 @@ msgid ""
 "level networking API, which sacrifices some of the fine-grained control of "
 "low-level networking for greater ease of use."
 msgstr ""
-"Godot는 항상 UDP, TCP, 그 외 SSL이나 HTTP와 같은 일부 하이 레벨 프로토콜을 통"
-"해, 일반적인 로우 레벨 네트워킹을 지원했습니다. 이 프로토콜은 유연하고 거의 "
-"모든 것에 사용될 수 있습니다. 하지만 게임 상태를 일일이 동기화하기 위해 이 프"
-"로토콜을 사용하는 일은 많은 작업이 필요합니다. 때로는 그 작업이 필요하고, 가"
-"치가 있습니다. 예를 들면 백엔드에서 맞춤 서버 구현을 작업할 때가 있죠. 그러"
-"나 대부분의 경우, 저수준 네트워킹의 세부적인 제어를 희생하고 사용 편의성을 높"
-"이는 Godot의 고수준 네트워킹 API를 고려해 보는 게 좋습니다."
+"Godot는 항상 UDP, TCP, 그 외 SSL이나 HTTP와 같은 일부 고수준 프로토콜을 "
+"통해, 일반적인 저수준 네트워킹을 지원했습니다. 이 프로토콜은 유연하고 거의 "
+"모든 것에 사용될 수 있습니다. 하지만 게임 상태를 일일이 동기화하기 위해 이 "
+"프로토콜을 사용하는 일은 많은 작업이 필요합니다. 때로는 그 작업이 필요하고, "
+"가치가 있습니다. 예를 들면 백엔드에서 커스텀 서버 구현을 작업할 때가 있죠. "
+"그러나 대부분의 경우, 저수준 네트워킹의 세부적인 제어를 희생하고 사용 "
+"편의성을 높이는 Godot의 고수준 네트워킹 API를 고려해 보는 게 좋습니다."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:14
 msgid "This is due to the inherent limitations of the low-level protocols:"
-msgstr "이는 로우 레벨 프로토콜의 고유의 한계 때문입니다:"
+msgstr "이는 저수준 프로토콜의 고유의 한계 때문입니다:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:16
 msgid ""
@@ -94727,10 +94703,10 @@ msgid ""
 "API based on :ref:`SceneTree <class_SceneTree>` that does most of the heavy "
 "lifting behind the scenes in a generally optimized way."
 msgstr ""
-"요약해서 말하자면, 최대한의 제어와 순수한 네트워크 프로토콜에서 모든 것을 구"
-"현하려면, 로우 레벨 네트워킹 API를 사용할 수 있습니다. 혹은 일반적으로 최적"
-"화 된 방식에서 씬 뒤로 대부분의 무거운 리프팅을 수행하는 :ref:`SceneTree(씬 "
-"트리) <class_SceneTree>`\\ 에서 하이 레벨 API를 사용할 수 있습니다."
+"요약해서 말하자면, 최대한의 제어와 순수한 네트워크 프로토콜에서 모든 것을 "
+"구현하려면, 저수준 네트워킹 API를 사용할 수 있습니다. 혹은 일반적으로 최적화 "
+"된 방식에서 씬 뒤로 대부분의 무거운 리프팅을 수행하는 :ref:`SceneTree "
+"<class_SceneTree>`\\ 에서 고수준 API를 사용할 수 있습니다."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:28
 #, fuzzy
@@ -94743,12 +94719,12 @@ msgid ""
 "level features, as well as raw access to low-level protocols like TCP and "
 "UDP."
 msgstr ""
-"Godot의 지원하는 플랫폼 대부분은 앞서 언급한 하이 레벨과 로우 레벨 네트워킹 "
-"기능을 거의 전부 제공합니다. 그러나 네트워킹은 항상 하드웨어와 운영 체제에 따"
-"라 크게 달라지므로, 일부 기능은 특정 플랫폼에서 달라지거나 이용할 수 없을지"
-"도 모릅니다. 가장 주목할 것으로, HTML5 플랫폼은 현재로써 오직 WebSocket 지원"
-"을 제공하고 하이 레벨 기능은 부족하고, TCP 및 UDP와 같은 로우 레벨 프로토콜"
-"로 원시 접근만 지원합니다."
+"Godot의 지원하는 플랫폼 대부분은 앞서 언급한 고수준과 저수준 네트워킹 기능을 "
+"거의 전부 제공합니다. 그러나 네트워킹은 항상 하드웨어와 운영 체제에 따라 "
+"크게 달라지므로, 일부 기능은 특정 플랫폼에서 달라지거나 이용할 수 없을지도 "
+"모릅니다. 가장 주목할 것으로, HTML5 플랫폼은 현재로써 오직 WebSocket 지원을 "
+"제공하고 고수준 기능은 부족하고, TCP 및 UDP와 같은 저수준 프로토콜로 원시 "
+"접근만 지원합니다."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:34
 #, fuzzy
@@ -95335,9 +95311,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/networking/http_request_class.rst:129
-#, fuzzy
 msgid "Setting custom HTTP headers"
-msgstr "맞춤 데이터 타입 생성하기"
+msgstr "커스텀 HTTP 헤더 설정하기"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:131
 msgid ""
@@ -99144,10 +99119,10 @@ msgid ""
 "``Area2D`` can also be used to override physics properties, such as gravity "
 "or damping, in a defined area."
 msgstr ""
-"``Area2D`` 노드는 **감지**\\ 와 **영향력**\\ 을 제공합니다. 그들은 오브젝트들"
-"이 언제 겹치는지를 감지할 수 있고, 바디가 들어가거나 나올 때 시그널을 방출할 "
-"수 있습니다. ``Area2D``\\ 는 또한 정의된 영역에서 중력이나 제동과 같은 물리"
-"적 속성을 재정의하는 데에도 사용될 수 있습니다."
+"``Area2D`` 노드는 **감지**\\ 와 **영향력**\\ 을 제공합니다. 그들은 "
+"오브젝트들이 언제 겹치는지를 감지할 수 있고, 바디가 들어가거나 나올 때 "
+"시그널을 방출할 수 있습니다. ``Area2D``\\ 는 또한 정의된 영역에서 중력이나 "
+"제동과 같은 물리적 속성을 오버라이드하는 데에도 사용될 수 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:38
 msgid ":ref:`StaticBody2D <class_StaticBody2D>`"
@@ -99442,10 +99417,10 @@ msgid ""
 "be used to override physics properties, such as gravity or damping, in a "
 "defined area."
 msgstr ""
-"Area 노드는 **감지**\\ 와 **영향력**\\ 을 제공합니다. 그들은 오브젝트들이 언"
-"제 겹치는지를 감지할 수 있고, 바디가 들어가거나 나올 때 시그널을 방출합니다. "
-"Area는 또한 정의된 영역에서 중력이나 제동과 같은 물리적 속성을 재정의하는 데"
-"에도 사용될 수 있습니다."
+"Area 노드는 **감지**\\ 와 **영향력**\\ 을 제공합니다. 그들은 오브젝트들이 "
+"언제 겹치는지를 감지할 수 있고, 바디가 들어가거나 나올 때 시그널을 "
+"방출합니다. Area는 또한 정의된 영역에서 중력이나 제동과 같은 물리적 속성을 "
+"오버라이드하는 데에도 사용될 수 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:221
 msgid "There are three main uses for :ref:`Area2D <class_Area2D>`:"
@@ -99453,7 +99428,7 @@ msgstr ":ref:`Area2D <class_Area2D>`\\ 에는 3가지 주요 용도가 있습니
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:223
 msgid "Overriding physics parameters (such as gravity) in a given region."
-msgstr "특정 지역에서 (중력과 같은) 물리적 매개변수를 재정의 합니다."
+msgstr "특정 지역에서 (중력과 같은) 물리적 매개변수를 오버라이드합니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:225
 msgid ""
@@ -99544,9 +99519,9 @@ msgid ""
 "**Project Settings > Physics**, or by entering an :ref:`Area2D "
 "<class_Area2D>` that is overriding the global physics properties."
 msgstr ""
-"바디의 행동은 또한 **프로젝트 설정 > 물리**\\ 에서 설정한 월드 속성의 영향을 "
-"받거나 전역 물리 속성을 오버라이딩하는 :ref:`Area2D <class_Area2D>`\\ 를 입력"
-"한 것에 영향을 받습니다."
+"바디의 행동은 또한 **프로젝트 설정 > 물리**\\ 에서 설정한 세계 속성의 영향을 "
+"받거나 전역 물리 속성을 오버라이딩하는 :ref:`Area2D <class_Area2D>`\\ 를 "
+"입력한 것에 영향을 받습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:264
 msgid ""
@@ -100420,9 +100395,9 @@ msgid ""
 "each frame to follow a target. Here is a custom ``look_at()`` method called "
 "``look_follow()`` that will work with rigid bodies:"
 msgstr ""
-"위에서 설명한 것처럼, Spatial 노드의 ``look_at()``\\ 을 각 프레임에 사용하여 "
-"대상을 따라가도록 할 수는 없습니다. 다음은 리지드 바디에서 안정적으로 작동하"
-"는 맞춤 ``look_at()`` 함수입니다:"
+"위에서 설명한 것처럼, Node3D의 ``look_at()`` 메서드를 각 프레임에 사용하여 "
+"대상을 따라가도록 할 수는 없습니다. 다음은 리지드 바디에서 안정적으로 "
+"작동하는 ``look_follow()``\\ 라 불리는 커스텀 ``look_at()`` 메서드입니다:"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:80
 msgid ""
@@ -101065,10 +101040,10 @@ msgid ""
 msgstr ""
 "이 예시에서 ``CharacterBody2D``\\ 를 두 자식과 함께 추가합니다: "
 "``Sprite2D``\\ 와 ``CollisionShape2D``\\ 입니다. Godot \"icon.png\"를 "
-"Sprite2D의 텍스처 속성으로 사용합니다 (파일시스템 독에서 ``Sprite2D``\\ 의 *"
-"텍스처* 속성으로 끌어 놓으세요). ``CollisionShape2D``\\ 의 *모양* 속성에서 "
-"\"새 RectangleShape2D\"를 선택하고 스프라이트 이미지에 맞게 사각형 크기를 조"
-"정합니다."
+"Sprite2D의 텍스처 속성으로 사용합니다 (파일시스템 독에서 ``Sprite2D``\\ 의 "
+"*텍스처* 속성으로 끌어 놓으세요). ``CollisionShape2D``\\ 의 *모양* 속성에서 "
+"\"새 RectangleShape2D\"를 선택하고 스프라이트 이미지에 맞게 사각형 크기를 "
+"조절합니다."
 
 #: ../../docs/tutorials/physics/using_character_body_2d.rst:231
 msgid ""
@@ -101260,10 +101235,10 @@ msgid ""
 "AI, etc. to take place. This tutorial will explain how to do this in 2D and "
 "3D."
 msgstr ""
-"게임 개발에서 일반적인 과제로 광선을 (혹은 맞춤 모양 오브젝트를) 투사하고, 닿"
-"은 것이 무엇인지 확인하는 것입니다. 광선 투사를 하면 복잡한 동작도 만들 수 있"
-"는데, 예를 들면 AI가 있습니다. 이 튜토리얼에서는 어떻게 광선 추적을 하는지 2D"
-"와 3D에서 설명하겠습니다."
+"게임 개발에서 일반적인 과제로 광선을 (또는 커스텀 모양 오브젝트를) 투사하고, "
+"닿은 것이 무엇인지 확인하는 것입니다. 광선 투사를 하면 복잡한 동작도 만들 수 "
+"있는데, 예를 들면 AI가 있습니다. 이 튜토리얼에서는 어떻게 광선 추적을 하는지 "
+"2D와 3D에서 설명하겠습니다."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:14
 #, fuzzy
@@ -101274,10 +101249,11 @@ msgid ""
 "and :ref:`RayCast2D <class_RayCast2D>` will work, as they return every frame "
 "what the result of a raycast is."
 msgstr ""
-"Godot는 서버에 로우 레벨 게임 정보를 저장합니다. 씬은 단지 프론트엔드입니다. "
-"마찬가지로 광선 추적은 일반적으로 더 로우 레벨의 과제입니다. 간단한 광선 추적"
-"으로 :ref:`RayCast <class_RayCast>`\\ 와 :ref:`RayCast2D <class_RayCast2D>` "
-"노드로 가능합니다. 매 프레임마다 광선 추적의 결과를 반환하죠."
+"Godot는 서버에 저수준 게임 정보를 저장합니다. 씬은 단지 프론트엔드입니다. "
+"마찬가지로 광선 추적은 일반적으로 더 저수준의 과제입니다. 간단한 광선 "
+"추적으로 :ref:`RayCast <class_RayCast>`\\ 와 :ref:`RayCast2D "
+"<class_RayCast2D>` 노드로 가능합니다. 매 프레임마다 광선 추적의 결과를 "
+"반환하죠."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:21
 msgid ""
@@ -101300,12 +101276,11 @@ msgid ""
 "<class_CanvasItem_method_get_world_2d>`. For 3D, "
 "it's :ref:`Node3D.get_world_3d().space <class_Node3D_method_get_world_3d>`."
 msgstr ""
-"물리 세계에서, Godot는 모든 로우 레벨 콜리전과 물리 정보를 *공간(Space)*\\ "
-"에 저장합니다. (2D 물리의) 현재 2d 공간"
-"은 :ref:`CanvasItem.get_world_2d().space "
+"물리 세계에서, Godot는 모든 저수준 콜리전과 물리 정보를 *공간(Space)*\\ 에 "
+"저장합니다. (2D 물리의) 현재 2d 공간은 :ref:`CanvasItem.get_world_2d().space "
 "<class_CanvasItem_method_get_world_2d>`\\ 으로 접근해서 가져올 수 있습니다. "
-"3D의 경우는 :ref:`Spatial.get_world().space "
-"<class_Spatial_method_get_world>`\\ 으로 가져올 수 있습니다."
+"3D의 경우는 :ref:`Spatial.get_world().space <class_Spatial_method_get_world>"
+"`\\ 으로 가져올 수 있습니다."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:33
 #, fuzzy
@@ -101948,7 +101923,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:4
 msgid "Kinematic character (2D)"
-msgstr ""
+msgstr "키네마틱 캐릭터 (2D)"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:9
 msgid ""
@@ -111847,7 +111822,7 @@ msgstr ""
 msgid ""
 "The following settings are recommended to support multiple resolutions and "
 "aspect ratios well."
-msgstr "여러 해상도와 종횡비를 잘 지원하려면 다음 설정이 권장됩니다."
+msgstr "여러 해상도와 화면 비율을 잘 지원하려면 다음 설정이 권장됩니다."
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:369
 msgid "Desktop game"
@@ -113878,7 +113853,7 @@ msgstr "``\"안녕하세요\"``, ``\"안녕\"``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:355
 msgid "Raw strings"
-msgstr "원시 문자열"
+msgstr "원형 문자열"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:357
 #, fuzzy
@@ -113887,7 +113862,7 @@ msgstr "``\"안녕하세요\"``, ``\"안녕\"``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:357
 msgid "Triple-quoted raw strings"
-msgstr "세 번 따옴표로 묶인 원시 문자열"
+msgstr "세 번 따옴표로 묶인 원형 문자열"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:359
 msgid "``&\"name\"``"
@@ -114553,7 +114528,7 @@ msgid ""
 "3x3 matrix used for 3D rotation and scale. It contains 3 vector fields "
 "(``x``, ``y`` and ``z``) and can also be accessed as an array of 3D vectors."
 msgstr ""
-"3x3 행렬로 3D 회전과 크기 조정에 사용됩니다. 3개의 벡터 필드(``x``, ``y``, "
+"3x3 행렬로 3D 회전과 크기 조절에 사용됩니다. 3개의 벡터 필드(``x``, ``y``, "
 "``z``)를 가집니다. 3D 벡터의 배열로 접근할 수도 있습니다."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:815
@@ -116272,9 +116247,9 @@ msgid ""
 msgstr ""
 "파일로 저장된 클래스는 :ref:`리소스 <class_GDScript>`\\ 로 취급됩니다. 다른 "
 "클래스에서 접근하려면 반드시 디스크에서 불러와야 합니다. 불러오려면 "
-"``load``\\ 나 ``preload`` 함수를 사용할 수 있습니다 (아래를 참고하세요). 불러"
-"온 클래스 리소스를 인스턴스화 하려면 클래스 오브젝트에 ``new`` 함수를 호출해"
-"야 합니다::"
+"``load``\\ 나 ``preload`` 함수를 사용할 수 있습니다 (아래 참조). 불러온 "
+"클래스 리소스를 인스턴스화 하려면 클래스 오브젝트에 ``new`` 함수를 호출해야 "
+"합니다::"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:2477
 msgid "Exports"
@@ -117043,8 +117018,8 @@ msgid ""
 "forward iterator follows:"
 msgstr ""
 "스크립트에서 Variant 클래스의 ``_iter_init``, ``_iter_next``, ``_iter_get`` "
-"함수를 재정의해서 기본 반복자가 필요에 맞지 않는 경우 커스텀 반복자를 만들 "
-"수 있습니다. 순방향 반복기의 구현 예는 다음과 같습니다."
+"함수를 오버라이드해서 기본 반복자가 필요에 맞지 않는 경우 커스텀 반복자를 "
+"만들 수 있습니다. 순방향 반복기의 구현 예는 다음과 같습니다."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:452
 msgid "And it can be used like any other iterator:"
@@ -117192,8 +117167,8 @@ msgid ""
 "specific type and don't need the variable to be typed (see the *Examples* "
 "section below)."
 msgstr ""
-"내보낸 변수는 상수 표현식으로 초기화되거나 ``export`` 키워드에 대한 인수 형식"
-"의 내보내기 힌트가 있어야 합니다(아래 *예제* 섹션을 참고하세요)."
+"내보낸 변수는 상수 표현식으로 초기화되거나 ``export`` 키워드에 대한 인수 "
+"형식의 내보내기 힌트가 있어야 합니다 (아래 *예제* 섹션 참조)."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:22
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_exports.rst:24
@@ -117819,9 +117794,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:570
-#, fuzzy
 msgid "Results in:"
-msgstr "결과"
+msgstr "결과:"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:578
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_exports.rst:634
@@ -117835,9 +117809,9 @@ msgid ""
 "to avoid unnecessary design complexity. The following describes some more or "
 "less common exporting features which can be implemented with a low-level API."
 msgstr ""
-"불필요한 디자인 복잡성을 피하기 위해 모든 타입의 내보내기를 언어 자체 수준에"
-"서 제공할 수 있는 것은 아닙니다. 다음은 로우 레벨 API로 구현할 수 있는 다소 "
-"일반적인 내보내기 기능에 대해 설명합니다."
+"불필요한 디자인 복잡성을 피하기 위해 모든 유형의 내보내기를 언어 자체 "
+"수준에서 제공할 수 있는 것은 아닙니다. 다음은 저수준 API로 구현할 수 있는 "
+"다소 일반적인 내보내기 기능에 대해 설명합니다."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:584
 #, fuzzy
@@ -119286,8 +119260,8 @@ msgid ""
 "Prepend a single underscore (\\_) to virtual methods functions the user must "
 "override, private functions, and private variables:"
 msgstr ""
-"사용자가 재정의해야 하는 가상 메서드 함수, private 함수, private 변수 앞에 밑"
-"줄(\\_) 하나를 추가하세요:"
+"사용자가 오버라이드해야 하는 가상 메서드 함수, private 함수, private 변수 "
+"앞에 밑줄(\\_) 하나를 추가하세요:"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:726
 msgid "Use the past tense to name signals:"
@@ -120026,10 +120000,10 @@ msgid ""
 "can use this to check if the body is the player or not. We will also get "
 "full autocompletion on the player variable thanks to that cast."
 msgstr ""
-"커스텀 타입을 다룰 때 ``body``\\ 가 ``PlayerController``\\ 를 확장하지 않으"
-"면 ``player``\\ 변수가 ``null``\\ 로 설정됩니다. 이를 사용해 본체가 플레이어"
-"인지 확인할 수 있습니다. 우리는 이 캐스트 덕분에 플레이어 변수에 대한 완전한 "
-"자동 완성도 얻습니다."
+"커스텀 유형을 다룰 때 ``body``\\ 가 ``PlayerController``\\ 를 확장하지 "
+"않으면 ``player``\\ 변수가 ``null``\\ 로 설정됩니다. 이를 사용해 바디가 "
+"플레이어인지 확인할 수 있습니다. 우리는 이 캐스트 덕분에 플레이어 변수에 "
+"대한 완전한 자동완성도 얻습니다."
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:317
 msgid ""
@@ -120814,9 +120788,9 @@ msgid ""
 "are handed in the form of an array, one value per placeholder (unless using "
 "a format specifier with ``*``, see `dynamic padding`_):"
 msgstr ""
-"형식 문자열은 여러가지 플레이스 홀더를 가질 수 있습니다. 예를 들어, 값은 배열"
-"의 형식으로, 각각의 플레이스 홀더에 단일 값으로 전달됩니다 (``*`` 으로 이루어"
-"진 형식 지정자를 사용하지 않는다면, `동적 패딩`_ 을 참고하세요):"
+"형식 문자열은 여러가지 플레이스 홀더를 가질 수 있습니다. 이런 경우, 값은 "
+"배열의 형식으로, 각각의 플레이스 홀더에 단일 값으로 전달됩니다 (``*`` 으로 "
+"이루어진 형식 지정자를 사용하지 않는다면, `동적 패딩`_ \\을 참조하세요):"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:66
 msgid ""
@@ -121110,8 +121084,8 @@ msgid ""
 "Arrays can be used as key, index, or mixed style (see below examples). Order "
 "only matters when the index or mixed style of Array is used."
 msgstr ""
-"배열은 키, 인덱스, 혼합 스타일로 사용됩니다 (밑의 예시를 참고하세요). 순서는 "
-"배열의 인덱스나 혼합 스타일을 사용할 때만 중요합니다."
+"배열은 키, 인덱스, 혼합 스타일로 사용됩니다 (아래 예제 참조). 순서는 배열의 "
+"인덱스나 혼합 스타일을 사용할 때만 중요합니다."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:233
 msgid "A quick example in GDScript:"
@@ -121514,11 +121488,11 @@ msgstr ""
 "Godot의 내장 스크립트 편집기에서 C# 지원은 최소한입니다. `Visual Studio Code "
 "<https://code.visualstudio.com/>`__ 또는 `Visual Studio <https://"
 "visualstudio.microsoft.com/>`__\\ 와 같은 외부 IDE나 편집기를 사용하는 것을 "
-"고려해 보세요. 이러한 편집기는 C#을 위한 자동 완성, 디버깅 및 기타 유용한 기"
-"능을 제공합니다. Godot에서 외부 편집기를 선택하려면 **편집기 → 편집기 설정"
-"**\\ 을 클릭하고 **Dotnet**\\ 으로 스크롤하세요. **Dotnet** 아래에 **편집기"
-"**\\ 를 클릭하고 원하는 외부 편집기를 선택하세요. Godot는 현재 다음과 같은 외"
-"부 편집기를 지원합니다:"
+"고려해 보세요. 이러한 편집기는 C#을 위한 자동완성, 디버깅 및 기타 유용한 "
+"기능을 제공합니다. Godot에서 외부 편집기를 선택하려면 **편집기 → 편집기 "
+"설정**\\ 을 클릭하고 **Dotnet**\\ 으로 스크롤하세요. **Dotnet** 아래에 "
+"**편집기**\\ 를 클릭하고 원하는 외부 편집기를 선택하세요. Godot는 현재 "
+"다음과 같은 외부 편집기를 지원합니다:"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:71
 msgid "Visual Studio 2022"
@@ -121758,10 +121732,10 @@ msgstr ""
 "첫 C# 스크립트를 생성하면, Godot는 Godot 프로젝트를 위한 C# 프로젝트 파일을 "
 "초기화합니다. 여기에는 C# 솔루션 (``.sin``)이나 프로젝트 파일 (``.csproj``) "
 "뿐만 아니라, 일부 유용 파일과 폴더들 (``.mono``\\ 와 ``Properties/"
-"AssemblyInfo.cs``)을 생성하는 것도 포함합니다. ``.mono``\\ 를 제외하고는 모"
-"두 중요하므로 버전 관리 시스템에 유지해 두어야 합니다. ``.mono``\\ 는 버전 관"
-"리 시스템의 무시 목록에 쉽게 추가할 수 있습니다. 문제를 해결할 때, ``.mono`` "
-"폴더를 삭제하고 다시 만드는 것이 때로는 도움이 됩니다."
+"AssemblyInfo.cs``)을 생성하는 것도 포함합니다. ``.mono``\\ 를 제외하고는 "
+"모두 중요하므로 버전 관리 시스템에 유지해 두어야 합니다. ``.mono``\\ 는 버전 "
+"관리 시스템의 무시 목록에 쉽게 추가할 수 있습니다. 문제를 해결할 때, "
+"``.mono`` 폴더를 삭제하고 다시 생성하는 것이 때로는 도움이 됩니다."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:224
 msgid ""
@@ -121777,10 +121751,10 @@ msgid ""
 "the class reference pages for :ref:`@GDScript <class_@gdscript>` "
 "and :ref:`@GlobalScope <class_@globalscope>`."
 msgstr ""
-"보시다시피, Godot의 ``print`` 함수와 마찬가지로 GDScript에서 함수는 기본적으"
-"로 전역 범위에 있기 때문에 ``Godot`` 네임스페이스의 일부분인 ``GD`` 클래스에"
-"서 사용할 수 있습니다. ``GD`` 클래스에서의 메서드 목록을 보려"
-"면, :ref:`@GDScript <class_@gdscript>`\\ 와 :ref:`@GlobalScope "
+"보시다시피, Godot의 ``print`` 함수와 마찬가지로 GDScript에서 함수는 "
+"기본적으로 전역 범위에 있기 때문에 ``Godot`` 네임스페이스의 일부분인 ``GD`` "
+"클래스에서 사용 가능합니다. ``GD`` 클래스에서의 메서드 목록을 보려면, "
+":ref:`@GDScript <class_@gdscript>`\\ 와 :ref:`@GlobalScope "
 "<class_@globalscope>`\\ 에서 클래스 참조 페이지를 참고하세요."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:258
@@ -121886,12 +121860,12 @@ msgid ""
 "``SignalName`` to avoid extra ``StringName`` allocations and worrying about "
 "snake_case naming."
 msgstr ""
-"Godot 의 ``snake_case\" API 명명 규칙에 의존하는 ``Get ()\"/\"Set()\" "
-"\"Call()\"/\"CallDeferred()\"와\" 시그널 연결 메서드 ``Connect()\"와 같은 방"
-"법이 있습니다. 그러므로 예를 들어 ``CallDeferred\"(\"AddChild\")를 사용할 때 "
-"``AddChild\"는 API가 원래의 ``snake_case\" 버전의 ``add_child\"를 기대하기 때"
-"문에 작동하지 않을 것입니다. 그러나 당신은 이러한 제한 없이 모든 맞춤 속성이"
-"나 메서드를 사용할 수 있습니다."
+"Godot 의 ``snake_case\" API 명명 규칙에 의존하는 ``Get ()\"/\"Set()\" \"Call"
+"()\"/\"CallDeferred()\"와\" 시그널 연결 메서드 ``Connect()\"와 같은 방법이 "
+"있습니다. 그러므로 예를 들어 ``CallDeferred\"(\"AddChild\")를 사용할 때 "
+"``AddChild\"는 API가 원래의 ``snake_case\" 버전의 ``add_child\"를 기대하기 "
+"때문에 작동하지 않을 것입니다. 그러나 당신은 이러한 제한 없이 모든 커스텀 "
+"속성이나 메서드를 사용할 수 있습니다."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:310
 #, fuzzy
@@ -122515,8 +122489,8 @@ msgid ""
 "After a single-line comment symbol (``//``), and before it if used at the "
 "end of a line."
 msgstr ""
-"한 줄 주석 상징 (``//``)이후, 주석이 코드 뒤의 줄 마지막에 위치한 경우 상징"
-"의 앞에도 공백을 넣습니다."
+"이 기호는 한 줄 주석 기호 (``//``) 뒤에 오며, 줄의 끝에 사용되는 경우 줄 "
+"앞에 옵니다."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_style_guide.rst:157
 msgid ""
@@ -122544,8 +122518,8 @@ msgid ""
 "identifiers (i.e. methods, properties, constants, events), except for "
 "private fields:"
 msgstr ""
-"private 멤버 변수를 제외한 모든 네임스페이스, 즉 타입 이름과 멤버 레벨 식별"
-"자 (예: 메서드, 속성, 상수, 이벤트)에 **PascalCase** 를 사용합니다:"
+"private 필드를 제외한 모든 네임스페이스, 유형 이름과 멤버 레벨 식별자(즉 "
+"메서드, 속성, 상수, 이벤트)에는 **PascalCase**\\ 를 사용합니다:"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_style_guide.rst:221
 msgid ""
@@ -122553,9 +122527,9 @@ msgid ""
 "arguments), and use an underscore (``_``) as a prefix for private fields "
 "(but not for methods or properties, as explained above):"
 msgstr ""
-"모든 다른 식별자 (예: 지역 변수, 메서드 인수)에 *camelCase*\\ 를 사용하고, "
-"private 멤버 변수의 접두사로 언더스코어(``_``)를 사용합니다 (이전에 설명했듯"
-"이 메서드나 속성에는 해당하지 않습니다):"
+"모든 다른 식별자(즉 지역 변수, 메서드 인수)에는 **camelCase**\\ 를 사용하고, "
+"private 필드에는 접두사로 밑줄(``_``)을 사용합니다 (단 위에 설명했듯이 "
+"메서드나 속성에는 해당하지 않습니다):"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_style_guide.rst:235
 msgid ""
@@ -125054,9 +125028,9 @@ msgid ""
 "pattern. This is to make code less verbose than it would be with an "
 "``Instance`` property."
 msgstr ""
-"싱글톤은 싱글톤 패턴을 사용하는 대신 정적 클래스로 사용할 수 있습니다. 이것으"
-"로 ``Instance`` 속성으로 작업하는 것과 비슷하면서도 더 적은 문장의 코드를 만"
-"들 수 있습니다."
+"싱글톤은 싱글톤 패턴을 사용하는 대신 정적 클래스로 사용 가능합니다. 이것으로 "
+"``Instance`` 속성으로 작업하는 것과 비슷하면서도 더 적은 문장의 코드를 만들 "
+"수 있습니다."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:355
 #, fuzzy
@@ -125183,9 +125157,8 @@ msgid "contains"
 msgstr "continue"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:411
-#, fuzzy
 msgid "`string.Contains`_"
-msgstr "맞춤 데이터 타입 생성하기"
+msgstr "`string.Contains`_"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:412
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:129
@@ -127978,9 +127951,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_signals.rst:157
-#, fuzzy
 msgid "Using Connect and Disconnect"
-msgstr "맞춤 데이터 타입 생성하기"
+msgstr "연결과 연결 해제 사용하기"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_signals.rst:159
 msgid ""
@@ -129809,9 +129781,8 @@ msgid "Using your own toolchain file"
 msgstr "알림(Notifications)"
 
 #: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:329
-#, fuzzy
 msgid "As described in the CMake documentation:"
-msgstr "문서의 구조"
+msgstr "CMake 문서에 설명된 대로:"
 
 #: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:336
 msgid "Doing the equivalent just using the command line:"
@@ -129827,9 +129798,8 @@ msgid "This defaults to the minimum supported version and armv7-a:"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:358
-#, fuzzy
 msgid "Specifying the Android platform and ABI:"
-msgstr "Android SDK Platform 29"
+msgstr "Android 플랫폼 및 ABI 지정하기:"
 
 #: ../../docs/tutorials/scripting/cpp/build_system/scons.rst:4
 msgid "Main build system: Working with SCons"
@@ -131560,9 +131530,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:706
-#, fuzzy
 msgid "Custom methods"
-msgstr "맞춤 메시"
+msgstr "커스텀 메서드"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:708
 msgid ""
@@ -132947,9 +132916,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:174
-#, fuzzy
 msgid "Override Main Tags"
-msgstr "재정의 가능한(Overridable) 함수"
+msgstr "주요 태그 오버라이드"
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:176
 msgid ""
@@ -133224,7 +133192,7 @@ msgstr "메시지 출력하기"
 
 #: ../../docs/tutorials/scripting/debug/output_panel.rst:55
 msgid "Several methods are available to print messages:"
-msgstr "메시지를 출력하는 데에는 여러 방법을 사용할 수 있습니다:"
+msgstr "메시지를 출력하는 데에는 여러 방법이 사용 가능합니다:"
 
 #: ../../docs/tutorials/scripting/debug/output_panel.rst:57
 msgid ""
@@ -134412,7 +134380,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/idle_and_physics_processing.rst:4
 msgid "Idle and Physics Processing"
-msgstr "유휴 (Idle) 상태와 물리 프로세싱"
+msgstr "유휴와 물리 처리"
 
 #: ../../docs/tutorials/scripting/idle_and_physics_processing.rst:6
 #, fuzzy
@@ -134424,24 +134392,24 @@ msgid ""
 "<class_Node_private_method__physics_process>`. If you define either or both "
 "in a script, the engine will call them automatically."
 msgstr ""
-"게임은 루프 안에서 실행됩니다. 각 프레임 마다, 게임 월드의 상태를 화면에 표시"
-"하기 전에 업데이트 해야 합니다. Godot는 Node 클래스에서 사용하기 위한 두 가"
-"지 가상 메서드를 제공합니다: :ref:`Node._process() "
+"게임은 루프 안에서 실행됩니다. 각 프레임 마다, 게임 세계의 상태를 화면에 "
+"표시하기 전에 업데이트 해야 합니다. Godot는 Node 클래스에서 사용하기 위한 두 "
+"가지 가상 메서드를 제공합니다: :ref:`Node._process() "
 "<class_Node_method__process>` 및 :ref:`Node._physics_process() "
-"<class_Node_method__physics_process>`. 스크립트에서 두 가지나 한 가지를 정의"
-"한다면, 엔진이 이를 자동으로 호출합니다."
+"<class_Node_method__physics_process>`. 스크립트에서 두 가지나 한 가지를 "
+"정의한다면, 엔진이 이를 자동으로 호출합니다."
 
 #: ../../docs/tutorials/scripting/idle_and_physics_processing.rst:12
 msgid "There are two types of processing available to you:"
-msgstr "사용할 수 있는 프로세싱 타입은 두 가지가 있습니다:"
+msgstr "사용 가능한 처리 유형은 두 가지가 있습니다:"
 
 #: ../../docs/tutorials/scripting/idle_and_physics_processing.rst:14
 msgid ""
 "**Idle processing** allows you to run code that updates a node every frame, "
 "as often as possible."
 msgstr ""
-"**Idle processing**(유휴상태 프로세싱) 은 모든 프레임마다 노드를 가능한 한 자"
-"주 업데이트하는 코드를 실행하게 해줍니다."
+"**유휴 처리**\\ 는 모든 프레임마다 노드를 가능한 한 자주 업데이트하는 코드를 "
+"실행하게 해줍니다."
 
 #: ../../docs/tutorials/scripting/idle_and_physics_processing.rst:16
 msgid ""
@@ -134450,10 +134418,10 @@ msgid ""
 "physics running smoothly. You should use it for anything that involves the "
 "physics engine, like moving a body that collides with the environment."
 msgstr ""
-"**Physics processing** (물리 프로세싱) 은 기본적으로 1초 당 60회를 고정된 속"
-"도로 처리합니다. 이는 게임의 실제 프레임 속도와는 별개이며, 물리 (physics)를 "
-"매끄럽게 진행하도록 유지합니다. 움직이는 몸이 환경에 충돌하는 것처럼, 물리 엔"
-"진과 관련된 모든 것에 대해 물리 프로세싱을 사용해야 합니다."
+"**물리 처리**\\ 는 기본적으로 1초 당 60회를 고정된 속도로 처리합니다. 이는 "
+"게임의 실제 프레임 속도와는 별개이며, 물리를 매끄럽게 진행하도록 유지합니다. "
+"움직이는 몸이 환경에 충돌하는 것처럼, 물리 엔진과 관련된 모든 것에 대해 물리 "
+"처리를 사용해야 합니다."
 
 #: ../../docs/tutorials/scripting/idle_and_physics_processing.rst:21
 msgid ""
@@ -134461,9 +134429,9 @@ msgid ""
 "script. You can turn it off and back on by calling :ref:`Node.set_process() "
 "<class_Node_method_set_process>`."
 msgstr ""
-"스크립트에서 :ref:`Node._process() <class_Node_method__process>`\\ 메서드를 "
-"정의하여 유휴 프로세싱을 활성화 할 수 있습니다. :ref:`Node.set_process() "
-"<class_Node_method_set_process>`를 호출하여 이 기능을 끄고 킬 수 있습니다."
+"스크립트에서 :ref:`Node._process() <class_Node_method__process>` 메서드를 "
+"정의하여 유휴 처리를 활성화 할 수 있습니다. :ref:`Node.set_process() "
+"<class_Node_method_set_process>`\\ 를 호출하여 이 기능을 끄고 켤 수 있습니다."
 
 #: ../../docs/tutorials/scripting/idle_and_physics_processing.rst:25
 msgid "The engine calls this method every time it draws a frame:"
@@ -134935,7 +134903,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/overridable_functions.rst:4
 msgid "Overridable functions"
-msgstr "재정의 가능한(Overridable) 함수"
+msgstr "오버라이드 가능한 함수"
 
 #: ../../docs/tutorials/scripting/overridable_functions.rst:6
 msgid ""
@@ -135070,9 +135038,9 @@ msgid ""
 "(see :ref:`doc_gdscript_classes_as_resources`), the script can be "
 "instantiated with :ref:`new() <class_CSharpScript_method_new>`."
 msgstr ""
-"C# 노드는 GDScript에서 어렵지 않게 사용할 수 있습니다. 로딩이 끝나면 "
-"(:ref:`doc_gdscript_classes_as_resources`를 참고하세요) :ref:`new() "
-"<class_CSharpScript_method_new>`로 스크립트를 인스턴스화 할 수 있습니다."
+"C# 노드는 GDScript에서 어렵지 않게 사용할 수 있습니다. 일단 불러오면 "
+"(:ref:`doc_gdscript_classes_as_resources` 참조) :ref:`new() "
+"<class_CSharpScript_method_new>`\\ 로 스크립트를 인스턴스화할 수 있습니다."
 
 #: ../../docs/tutorials/scripting/cross_language_scripting.rst:108
 msgid ""
@@ -135115,9 +135083,9 @@ msgid ""
 "From the C# side, everything work the same way. Once loaded, the GDScript "
 "can be instantiated with :ref:`GDScript.New() <class_GDScript_method_new>`."
 msgstr ""
-"C#에서의 방법도 위와 크게 다르지 않습니다. 로딩이 완료되면 GDScript"
-"를 :ref:`GDScript.New() <class_GDScript_method_new>`로 인스턴스화 할 수 있습"
-"니다."
+"C#에서의 방법도 위와 크게 다르지 않습니다. 로딩이 완료되면 GDScript를 "
+":ref:`GDScript.New() <class_GDScript_method_new>`\\ 로 인스턴스화할 수 "
+"있습니다."
 
 #: ../../docs/tutorials/scripting/cross_language_scripting.rst:132
 msgid ""
@@ -135297,8 +135265,8 @@ msgid ""
 "These are available globally throughout any project. The location of these "
 "templates are determined per each OS:"
 msgstr ""
-"이 부류의 템플릿은 모든 프로젝트에서 전 세계적으로 사용할 수 있습니다. 템플릿"
-"의 위치는 각 OS 별로 결정됩니다:"
+"이 부류의 템플릿은 모든 프로젝트에서 전 세계적으로 사용 가능합니다. 템플릿의 "
+"위치는 각 OS 별로 결정됩니다:"
 
 #: ../../docs/tutorials/scripting/creating_script_templates.rst:32
 msgid "Windows: ``%APPDATA%\\Godot\\script_templates\\``"
@@ -137408,9 +137376,9 @@ msgid ""
 "when making games in Godot, writing your own MainLoop seldom makes sense."
 msgstr ""
 "사용자 프로그램, 게임은 MainLoop에서 시작됩니다. 이 클래스에는 초기화, 유휴: "
-"프레임에 동기화된 콜백(idle: frame-synchronized callback), 고정: 물리에 동기"
-"화된 콜백(fixed: physics-synchronized callback) 및 입력에 대한 몇 가지 메서드"
-"가 있습니다. 다시 말하지만, 이는 로우 레벨이며 Godot에서 게임을 만들 때 "
+"프레임에 동기화된 콜백(idle: frame-synchronized callback), 고정: 물리에 "
+"동기화된 콜백(fixed: physics-synchronized callback) 및 입력에 대한 몇 가지 "
+"메서드가 있습니다. 다시 말하지만, 이는 저수준이며 Godot에서 게임을 만들 때 "
 "MainLoop를 작성하는 것은 거의 의미가 없습니다."
 
 #: ../../docs/tutorials/scripting/scene_tree.rst:35
@@ -137427,9 +137395,7 @@ msgstr ""
 msgid ""
 "The scene system is the game engine, while the :ref:`OS <class_OS>` and "
 "servers are the low-level API."
-msgstr ""
-"씬 시스템은 게임 엔진이고 :ref:`OS <class_OS>`\\ 와 서버는 로우 레벨 API입니"
-"다."
+msgstr "씬 시스템은 게임 엔진이고 :ref:`OS <class_OS>`\\ 와 서버는 저수준 API입니다."
 
 #: ../../docs/tutorials/scripting/scene_tree.rst:41
 msgid ""
@@ -138039,9 +138005,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/logging.rst:196
-#, fuzzy
 msgid "Creating custom loggers"
-msgstr "맞춤 데이터 타입 생성하기"
+msgstr "커스텀 로거 만들기"
 
 #: ../../docs/tutorials/scripting/logging.rst:198
 msgid ""
@@ -138063,10 +138028,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/logging.rst:206
-#, fuzzy
 msgid "Integrate a dedicated server export with monitoring platforms."
-msgstr ""
-"내보내기 프리셋에서 **데디케이티드 서버로 내보내기** 내보내기 모드를 선택하기"
+msgstr "데디케이티드 서버 내보내기를 모니터링 플랫폼과 통합합니다."
 
 #: ../../docs/tutorials/scripting/logging.rst:208
 msgid ""
@@ -143738,7 +143701,7 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:2865
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:2976
 msgid "Available only in the fragment shader."
-msgstr "프래그먼트 셰이더에서만 사용할 수 있습니다."
+msgstr "프래그먼트 셰이더에서만 사용 가능합니다."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:2423
 msgid ""
@@ -144358,8 +144321,8 @@ msgid ""
 "Available only in the fragment shader. Not available when using the "
 "Compatibility renderer."
 msgstr ""
-"프래그먼트 셰이더에서만 사용할 수 있습니다. 호환성 렌더러를 사용할 때 사용할 "
-"수 없습니다."
+"프래그먼트 셰이더에서만 사용 가능합니다. 호환성 렌더러를 사용할 때 사용 "
+"가능하지 않습니다."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:2905
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:2945
@@ -149181,9 +149144,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/your_first_shader/index.rst:4
-#, fuzzy
 msgid "Your first shader"
-msgstr "당신의 첫 게임"
+msgstr "여러분의 첫 셰이더"
 
 #: ../../docs/tutorials/shaders/your_first_shader/index.rst:6
 msgid ""
@@ -149194,23 +149156,31 @@ msgid ""
 "overview of shaders in Godot see the :ref:`Shading Reference Page <toc-"
 "shading-reference>`."
 msgstr ""
+"이 튜토리얼 시리즈는 첫 셰이더를 쓰는 과정을 단계별로 설명합니다. 셰이더 "
+"경험이 거의 없어 기초부터 시작하고 싶은 사람들을 위해 제작되었습니다. 이 "
+"튜토리얼에서는 고급 주제를 다루지 않을 것이며 모든 내용을 포괄하지도 "
+"않습니다. 보다 포괄적이고 세부적인 고도 셰이더 개요는 :ref:`셰이딩 참조 "
+"페이지 <toc-shading-reference>`\\ 를 참조하세요."
 
 #: ../../docs/tutorials/shaders/your_first_shader/index.rst:12
 msgid ""
 "The \"your first shader\" tutorials walk you through the process of writing "
 "a shader step-by-step."
 msgstr ""
+"\"여러분의 첫 셰이더\" 튜토리얼 시리즈는 셰이더를 작성하는 법에 대해 "
+"단계별로 안내합니다."
 
 #: ../../docs/tutorials/shaders/your_first_shader/index.rst:15
 msgid ""
 "For a more general introduction into shaders and the OpenGL Shading "
 "Language, use `The Book of Shaders <https://thebookofshaders.com>`_."
 msgstr ""
+"셰이더와 OpenGL 셰이더 언어에 대한 보다 일반적인 소개는 `The Book of Shaders "
+"<https://thebookofshaders.com>`_\\ 를 사용하세요."
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_2d_shader.rst:4
-#, fuzzy
 msgid "Your first 2D shader"
-msgstr "당신의 첫 게임"
+msgstr "여러분의 첫 2D 셰이더"
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_2d_shader.rst:9
 msgid ""
@@ -149219,6 +149189,10 @@ msgid ""
 "detailed description of what shaders are please see :ref:`What are shaders "
 "<doc_introduction_to_shaders>`."
 msgstr ""
+"셰이더는 GPU에서 실행되며 그래픽을 렌더링하는 데 사용되는 특별한 "
+"프로그램입니다. 현대의 모든 렌더링은 셰이더로 동작합니다. 셰이더가 "
+"무엇인지에 대한 자세한 사항은 :ref:`셰이더가 무엇입니까 "
+"<doc_introduction_to_shaders>`\\ 를 참조해 주세요."
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_2d_shader.rst:14
 msgid ""
@@ -153188,9 +153162,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_containers.rst:4
-#, fuzzy
 msgid "Using Containers"
-msgstr "맞춤 데이터 타입 생성하기"
+msgstr "컨테이너 사용하기"
 
 #: ../../docs/tutorials/ui/gui_containers.rst:6
 msgid ""
@@ -153217,9 +153190,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_containers.rst:18
-#, fuzzy
 msgid "Container layout"
-msgstr "컨테이너 내장 타입"
+msgstr "컨테이너 레이아웃"
 
 #: ../../docs/tutorials/ui/gui_containers.rst:20
 msgid ""
@@ -153526,9 +153498,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_containers.rst:198
-#, fuzzy
 msgid "CenterContainer"
-msgstr "뷰포트"
+msgstr "CenterContainer"
 
 #: ../../docs/tutorials/ui/gui_containers.rst:200
 msgid ""
@@ -153547,9 +153518,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_containers.rst:215
-#, fuzzy
 msgid "Creating custom Containers"
-msgstr "맞춤 데이터 타입 생성하기"
+msgstr "커스텀 컨테이너 만들기"
 
 #: ../../docs/tutorials/ui/gui_containers.rst:217
 msgid ""
@@ -154520,9 +154490,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_using_fonts.rst:4
-#, fuzzy
 msgid "Using Fonts"
-msgstr "맞춤 데이터 타입 생성하기"
+msgstr "글꼴 사용하기"
 
 #: ../../docs/tutorials/ui/gui_using_fonts.rst:6
 msgid "Godot allows you to set specific fonts for different UI nodes."
@@ -158242,9 +158211,9 @@ msgid ""
 "can result in choppy physics. You should set "
 "``Engine.physics_ticks_per_second`` to a higher value."
 msgstr ""
-"또 유의해야 할 것은 물리 엔진은 기본적으로 60Hz로 동작하기 때문에 불안정한 결"
-"과가 나타날 수 있습니다. ``Engine.physics_ticks_per_second`` 도 더 높은 값으"
-"로 설정해야 합니다."
+"또 유의해야 할 것은 물리 엔진은 기본적으로 60Hz로 동작하기 때문에 불안정한 "
+"결과가 나타날 수 있습니다. ``Engine.physics_ticks_per_second``\\ 도 더 높은 "
+"값으로 설정해야 합니다."
 
 #: ../../docs/tutorials/xr/setting_up_xr.rst:153
 msgid ""
@@ -158256,12 +158225,12 @@ msgid ""
 "to temporarily visualise them. Make sure you configure a sky in your world "
 "environment."
 msgstr ""
-"이제 프로젝트를 실행하면 모든 것들이 잘 동작하지만 검은 화면이 보일 것입니"
-"다. 따라서 마지막으로 :ref:`DirectionalLight3D <class_directionallight3d>` "
-"와 :ref:`WorldEnvironment <class_worldenvironment>` 노드를 씬에 추가하는 것으"
-"로 마치도록 하겠습니다. 메시 인스턴스를 컨트롤러 노드의 자식으로 추가하여 임"
-"시로 손의 위치를 보여줄 수도 있습니다. 하늘(sky)을 월드 환경에 추가하는 것을 "
-"잊지 마세요."
+"이제 프로젝트를 실행하면 모든 것들이 잘 동작하지만 검은 화면이 보일 "
+"것입니다. 따라서 마지막으로 :ref:`DirectionalLight3D "
+"<class_directionallight3d>`\\ 와 :ref:`WorldEnvironment "
+"<class_worldenvironment>` 노드를 씬에 추가하는 것으로 마치도록 하겠습니다. "
+"메시 인스턴스를 컨트롤러 노드의 자식으로 추가하여 임시로 손의 위치를 보여줄 "
+"수도 있습니다. 하늘을 세계 환경에 구성했는지 확인하세요."
 
 #: ../../docs/tutorials/xr/setting_up_xr.rst:157
 msgid ""
@@ -163911,7 +163880,7 @@ msgstr ""
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1625
 #, fuzzy
 msgid "We add our discovery implementation:"
-msgstr "구현"
+msgstr "저희는 검색 구현 기능을 추가합니다:"
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:1743
 msgid "And we add our update functionality:"
@@ -164129,7 +164098,7 @@ msgstr ""
 
 #: ../../docs/tutorials/xr/basic_xr_locomotion.rst:9
 msgid "Adding our player body"
-msgstr "플레이어 몸체 추가"
+msgstr "플레이어 바디 추가하기"
 
 #: ../../docs/tutorials/xr/basic_xr_locomotion.rst:11
 msgid ""
@@ -164142,11 +164111,11 @@ msgid ""
 "``PlayerBody``."
 msgstr ""
 "먼저 해야 할 것은 :ref:`XROrigin3D <class_xrorigin3d>` 노드에 도우미 노드를 "
-"추가하는 것입니다. XR은 룸스케일 트래킹을 지원하기 때문에 단순히 XR 설정들"
-"을 :ref:`CharacterBody3D <class_characterbody3d>` 노드에 추가한다고 동작하지"
-"는 않습니다. 유저가 현실 공간에서 돌아다녀서 방 가운에 있지 않게 되면 문제가 "
+"추가하는 것입니다. XR은 룸스케일 트래킹을 지원하기 때문에 단순히 XR 설정들을 "
+":ref:`CharacterBody3D <class_characterbody3d>` 노드에 추가한다고 동작하지는 "
+"않습니다. 유저가 물리 공간에서 돌아다녀서 방 가운데에 있지 않게 되면 문제가 "
 "생기게 됩니다. Godot XR 도구에서는 이러한 상황에 필요한 로직을 "
-"``PlayerBody`` 라는 도우미 노드에 추가해 두었습니다."
+"``PlayerBody``\\ 라는 도우미 노드에 추가해 두었습니다."
 
 #: ../../docs/tutorials/xr/basic_xr_locomotion.rst:16
 #, fuzzy
@@ -165283,7 +165252,7 @@ msgstr "변종 유형의 목록"
 
 #: ../../docs/engine_details/architecture/variant_class.rst:54
 msgid "These types are available in Variant:"
-msgstr "다음 유형은 변종으로 사용할 수 있습니다:"
+msgstr "다음 유형은 변종으로 사용 가능합니다:"
 
 #: ../../docs/engine_details/architecture/variant_class.rst:59
 msgid "Nil (can only store ``null``)"
@@ -168481,9 +168450,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:493
-#, fuzzy
 msgid "Writing custom unit tests"
-msgstr "맞춤 데이터 타입 생성하기"
+msgstr "커스텀 단위 테스트 작성하기"
 
 #: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:495
 msgid ""
@@ -169053,7 +169021,7 @@ msgstr ""
 
 #: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:150
 msgid "Creating custom data types"
-msgstr "맞춤 데이터 타입 생성하기"
+msgstr "커스텀 데이터 유형 만들기"
 
 #: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:152
 msgid ""
@@ -172483,9 +172451,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/introduction_to_the_buildsystem.rst:288
-#, fuzzy
 msgid "Custom modules"
-msgstr "맞춤 메시"
+msgstr "커스텀 모듈"
 
 #: ../../docs/engine_details/development/compiling/introduction_to_the_buildsystem.rst:290
 msgid ""
@@ -172576,9 +172543,8 @@ msgstr ""
 #: ../../docs/engine_details/development/compiling/introduction_to_the_buildsystem.rst:348
 #: ../../docs/engine_details/development/compiling/introduction_to_the_buildsystem.rst:378
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:284
-#, fuzzy
 msgid "custom.py"
-msgstr "맞춤 메시"
+msgstr "custom.py"
 
 #: ../../docs/engine_details/development/compiling/introduction_to_the_buildsystem.rst:356
 msgid ""
@@ -172608,7 +172574,7 @@ msgstr ""
 msgid ""
 "Build options set from the file can be overridden by the command line "
 "options."
-msgstr "파일에서 설정된 빌드 옵션은 명령줄 옵션으로 재정의될 수 있습니다."
+msgstr "파일에서 설정된 빌드 옵션은 명령줄 옵션으로 오버라이드될 수 있습니다."
 
 #: ../../docs/engine_details/development/compiling/introduction_to_the_buildsystem.rst:376
 msgid "It's also possible to override the options conditionally:"
@@ -176744,14 +176710,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/engine_details/development/debugging/using_sanitizers.rst:4
-#, fuzzy
 msgid "Using sanitizers"
-msgstr "맞춤 데이터 타입 생성하기"
+msgstr "새니타이저 사용하기"
 
 #: ../../docs/engine_details/development/debugging/using_sanitizers.rst:7
-#, fuzzy
 msgid "What are sanitizers?"
-msgstr "라이센스가 무엇입니까?"
+msgstr "새니타이저가 무엇입니까?"
 
 #: ../../docs/engine_details/development/debugging/using_sanitizers.rst:9
 msgid ""
@@ -176759,6 +176723,9 @@ msgid ""
 "traditional debuggers usually cannot catch. This is particularly useful when "
 "combined with :ref:`doc_unit_testing` in continuous integration."
 msgstr ""
+"새니타이저는 전통 디버거로는 일반적으로 잡아낼 수 없는 버그를 찾는 데 도움이 "
+"되는 정적 계측 툴입니다. 이는 지속적 통합 환경에서 :ref:`doc_unit_testing`\\ "
+"과 함께할 때 특히 유용합니다."
 
 #: ../../docs/engine_details/development/debugging/using_sanitizers.rst:13
 msgid ""
@@ -176771,9 +176738,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/engine_details/development/debugging/using_sanitizers.rst:21
-#, fuzzy
 msgid "Using sanitizers on Godot"
-msgstr "Godot에서 NuGet 패키지 사용하기"
+msgstr "Godot에서 새니타이저 사용하기"
 
 #: ../../docs/engine_details/development/debugging/using_sanitizers.rst:23
 msgid ""
@@ -179311,8 +179277,8 @@ msgid ""
 "The **icon** must be square (1:1 aspect ratio). It should have a minimum "
 "resolution of 128×128 pixels."
 msgstr ""
-"**아이콘**\\ 은 정사각형(1:1 종횡비)이어야 합니다. 해상도는 최소 128×128 픽셀"
-"이어야 합니다."
+"**아이콘**\\ 은 정사각형(1:1 화면 비율)이어야 합니다. 해상도는 최소 128×128 "
+"픽셀이어야 합니다."
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:183
 msgid ""
@@ -179360,8 +179326,9 @@ msgid ""
 "shown at the bottom of the asset page. Use the \"Enable\" checkbox on each "
 "of the preview submission boxes to enable them."
 msgstr ""
-"애셋 페이지 하단에 보여질 최대 3개의 동영상과 이미지 프리뷰를 추가할 수도 있"
-"습니다. 각 미리보기 제출 상자의 \"Enable\" 체크박스로 활성화하세요."
+"애셋 페이지의 하단에 보여질 최대 3개의 비디오 및/또는 이미지 미리보기를 "
+"추가할 수도 있습니다. 각 미리보기 제출 상자의 \"활성화\" 체크박스를 사용하여 "
+"활성화하세요."
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:200
 msgid "**Type**:"
@@ -179369,7 +179336,7 @@ msgstr "**유형**:"
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:201
 msgid "Either an image, or a video."
-msgstr "이미지 또는 동영상 중 하나입니다."
+msgstr "이미지 또는 비디오 중 하나입니다."
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:202
 msgid "**Image/YouTube URL**:"
@@ -179377,7 +179344,7 @@ msgstr "**이미지/YouTube URL**:"
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:203
 msgid "Either a link to the image, or to a video, hosted on YouTube."
-msgstr "유튜브에 호스팅된 이미지나 영상의 링크입니다."
+msgstr "유튜브에 호스팅된 이미지나 비디오의 링크입니다."
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:204
 msgid "**Thumbnail URL**:"
@@ -179479,9 +179446,9 @@ msgid ""
 "UCxboW7x0jZqFdvMdCFKTMsQ/playlists>`_ are well-regarded in the community and "
 "often recommended as a gentle introduction to beginners."
 msgstr ""
-"`GDQuest <https://www.youtube.com/channel/UCxboW7x0jZqFdvMdCFKTMsQ/"
-"playlists>`_\\ 의 Godot 동영상 튜토리얼은 커뮤니티에서 좋은 평가를 받고 있으"
-"며, 초보자를 위한 쉬운 소개 자료로 자주 추천됩니다."
+"`GDQuest <https://www.youtube.com/channel/UCxboW7x0jZqFdvMdCFKTMsQ/playlists>"
+"`_\\ 의 Godot 비디오 튜토리얼은 커뮤니티에서 좋은 평가를 받고 있으며, "
+"초보자를 위한 쉬운 소개 자료로 자주 추천됩니다."
 
 #: ../../docs/community/tutorials.rst:18
 msgid ""

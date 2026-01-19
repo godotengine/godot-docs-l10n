@@ -73,13 +73,15 @@
 # Ihab Shoully <shoully@gmail.com>, 2025.
 # yassinexpr <yasri.199934@gmail.com>, 2025.
 # "A Thousand Ships (she/her)" <over999ships@gmail.com>, 2025.
+# TamarMJ <tamarma9@gmail.com>, 2025.
+# ahmad aaaz <aaazahmad8@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2025-12-19 15:00+0100\n"
-"PO-Revision-Date: 2025-11-04 12:51+0000\n"
-"Last-Translator: \"A Thousand Ships (she/her)\" <over999ships@gmail.com>\n"
+"PO-Revision-Date: 2025-12-31 14:01+0000\n"
+"Last-Translator: ahmad aaaz <aaazahmad8@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ar/>\n"
 "Language: ar\n"
@@ -88,7 +90,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.14.1-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -155,9 +157,8 @@ msgid "Class reference"
 msgstr "مرجع القالب البرمجي"
 
 #: ../../docs/index.rst:4
-#, fuzzy
 msgid "Godot Docs – *master* branch"
-msgstr "توثيقات محرك جَوْدَتْ -الإصدار *الحالي*"
+msgstr "مستندات غودو - فرع *الماستر*"
 
 #: ../../docs/index.rst:8
 msgid ""
@@ -248,12 +249,11 @@ msgid ""
 "language, or talk to us on the ``#documentation`` channel on the `Godot "
 "Contributors Chat <https://chat.godotengine.org/>`_!"
 msgstr ""
-"قم بتقديم مشكلة أو طلب سحب على `أرشيف جيت هب <https://github.com/godotengine/"
-"godot-docs/issues>`_، ساعدنا على `ترجمة المستندات <https://"
-"hosted.weblate.org/engage/godot-engine/>`_ للغتك، أو تناقش معنا، إما على "
-"قناة ``#documentation`` على `ديسكورد <https://discord.gg/zH7NUgz>`_، أو قناة "
-"``#godotengine-doc`` على `irc.freenode.net <http://webchat.freenode.net/?"
-"channels=#godotengine-doc>`_!"
+"قم بإرسال بلاغ عن مشكلة (issue) أو طلب سحب (pull request) على `مستودع GitHub "
+"<https://github.com/godotengine/godot-docs/issues>`_، أو ساعدنا في `ترجمة "
+"التوثيق <https://hosted.weblate.org/engage/godot-engine/>`_ إلى لغتك، أو "
+"تواصل معنا عبر قناة ``#documentation`` على `دردشة مساهمي Godot <https://"
+"chat.godotengine.org/>`_!"
 
 #: ../../docs/index.rst:52
 msgid "weblate_widget"
@@ -854,8 +854,9 @@ msgid ""
 ":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
 "in the Project Manager and import them directly."
 msgstr ""
-":ref:`قم بتنزيل المشاريع من مكتبة الأصول<doc_using_assetlib_editor>` في مدير "
-"المشروع واستيرادها مباشرة."
+":ref:`قم بتنزيل المشاريع من مكتبة الأصول (asset library) "
+"<doc_using_assetlib_editor>` في مدير المشاريع (Project Manager) واستوردها "
+"مباشرة."
 
 #: ../../docs/about/list_of_features.rst:103
 #: ../../docs/about/docs_changelog.rst:86
@@ -920,11 +921,11 @@ msgstr ""
 "تشغيل للعرض."
 
 #: ../../docs/about/list_of_features.rst:118
-#, fuzzy
 msgid ""
 "See :ref:`doc_renderers` for a detailed comparison of the rendering methods."
 msgstr ""
-"راجع :ref:'doc_system_requirements' للحصول على مقارنة مفصلة بين طرق العرض."
+"انظر :ref:`doc_renderers` للحصول على مقارنة تفصيلية لأساليب الصيرورة "
+"(rendering)."
 
 #: ../../docs/about/list_of_features.rst:121
 msgid "2D graphics"
@@ -1096,9 +1097,10 @@ msgstr ""
 "على tile."
 
 #: ../../docs/about/list_of_features.rst:169
-#, fuzzy
 msgid "2D camera with built-in smoothing and drag margins."
-msgstr "كاميرا ثنائية الأبعاد مع دعم للسلاسة وهوامش السحب."
+msgstr ""
+"كاميرا ثنائية الأبعاد (2D) مع ميزات التنعيم (smoothing) وهوامش السحب (drag "
+"margins) المدمجة."
 
 #: ../../docs/about/list_of_features.rst:170
 msgid "Path2D node to represent a path in 2D space."
@@ -1162,64 +1164,74 @@ msgstr "مناطق للكشف عن الأجسام التي تدخلها أو ت�
 
 #: ../../docs/about/list_of_features.rst:189
 #: ../../docs/about/list_of_features.rst:435
-#, fuzzy
 msgid "**Collision detection:**"
-msgstr "أشكال إصطدام ظاهرة"
+msgstr "**كشف التصادم (Collision detection):**"
 
 #: ../../docs/about/list_of_features.rst:191
-#, fuzzy
 msgid ""
 "Built-in shapes: line, box, circle, capsule, world boundary (infinite plane)."
-msgstr "الأشكال المدمجة: شبيه المكعب cuboid، الكرة، الكبسولة، الأسطوانة."
+msgstr ""
+"أشكال مدمجة: خط (line)، صندوق (box)، دائرة (circle)، كبسولة (capsule)، وحدود "
+"العالم (world boundary) (مستوى لانهائي)."
 
 #: ../../docs/about/list_of_features.rst:192
 msgid ""
 "Collision polygons (can be drawn manually or generated from a sprite in the "
 "editor)."
 msgstr ""
+"مضلعات التصادم (Collision polygons) (يمكن رسمها يدوياً أو إنشاؤها تلقائياً من "
+"صورة sprite داخل المحرر)."
 
 #: ../../docs/about/list_of_features.rst:195
 msgid "3D graphics"
 msgstr "رسوميات ثلاثية الأبعاد"
 
 #: ../../docs/about/list_of_features.rst:197
-#, fuzzy
 msgid "HDR rendering with sRGB."
-msgstr "محدودية الإخراج البصري ثلاثي الأبعاد"
+msgstr "صيرورة المدى الديناميكي العالي (HDR rendering) مع فضاء ألوان sRGB."
 
 #: ../../docs/about/list_of_features.rst:198
 msgid "Perspective, orthographic and frustum-offset cameras."
 msgstr ""
+"كاميرات المنظور (Perspective)، والمتعامدة (orthographic)، وإزاحة الهرم الرؤي "
+"(frustum-offset)."
 
 #: ../../docs/about/list_of_features.rst:199
 msgid ""
 "When using the Forward+ renderer, a depth prepass is used to improve "
 "performance in complex scenes by reducing the cost of overdraw."
 msgstr ""
+"عند استخدام صيّار +Forward، يتم استخدام تمريرة مسبقة للعمق (depth prepass) "
+"لتحسين الأداء في المشاهد المعقدة عن طريق تقليل تكلفة الرسم الزائد (overdraw)."
 
 #: ../../docs/about/list_of_features.rst:201
-#, fuzzy
 msgid ""
 ":ref:`doc_variable_rate_shading` on supported GPUs in Forward+ and Mobile."
-msgstr "جسيمات"
+msgstr ""
+"ميزة :ref:`doc_variable_rate_shading` على وحدات معالجة الرسوميات (GPUs) "
+"المدعومة في صيّاري +Forward و Mobile."
 
 #: ../../docs/about/list_of_features.rst:203
 msgid "**Physically-based rendering (built-in material features):**"
-msgstr ""
+msgstr "**الصيرورة المبنية على الفيزياء - PBR (ميزات المواد المدمجة):**"
 
 #: ../../docs/about/list_of_features.rst:205
 msgid "Follows the Disney PBR model."
-msgstr ""
+msgstr "يتبع نموذج ديزني للصيرورة المبنية على الفيزياء (Disney PBR model)."
 
 #: ../../docs/about/list_of_features.rst:206
 msgid ""
 "Supports Burley, Lambert, Lambert Wrap (half-Lambert) and Toon diffuse "
 "shading modes."
 msgstr ""
+"يدعم أنماط تظليل التشتت (diffuse shading) من نوع: Burley، و Lambert، و "
+"Lambert Wrap (نصف Lambert)، و Toon (الكرتوني)."
 
 #: ../../docs/about/list_of_features.rst:207
 msgid "Supports Schlick-GGX, Toon and Disabled specular shading modes."
 msgstr ""
+"يدعم أنماط تظليل اللمعان (specular shading) من نوع: Schlick-GGX، و Toon، و "
+"\"معطل\" (Disabled)."
 
 #: ../../docs/about/list_of_features.rst:208
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
@@ -1284,24 +1296,32 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:224
 msgid "Spot lights with adjustable cone angle and attenuation."
 msgstr ""
+"أضواء بقعية (Spot lights) مع زاوية مخروطية (cone angle) وتضاؤل (attenuation) "
+"قابلين للتعديل."
 
 #: ../../docs/about/list_of_features.rst:225
 msgid ""
 "Specular, indirect light, and volumetric fog energy can be adjusted on a per-"
 "light basis."
 msgstr ""
+"يمكن ضبط طاقة الضوء المرآتي (specular)، والضوء غير المباشر (indirect light)، "
+"والضباب الحجمي (volumetric fog) لكل ضوء على حدة."
 
 #: ../../docs/about/list_of_features.rst:226
 msgid ""
 "Adjustable light \"size\" for fake area lights (will also make shadows "
 "blurrier)."
 msgstr ""
+"\"حجم\" ضوء قابل للتعديل لإضاءة المساحات الوهمية (fake area lights)، مما يجعل "
+"الظلال أكثر ضبابية (blurrier) أيضاً."
 
 #: ../../docs/about/list_of_features.rst:227
 msgid ""
 "Optional distance fade system to fade distant lights and their shadows, "
 "improving performance."
 msgstr ""
+"نظام تلاشي المسافة (distance fade) اختياري لتلاشي الأضواء البعيدة وظلالها، مما "
+"يؤدي إلى تحسين الأداء."
 
 #: ../../docs/about/list_of_features.rst:228
 msgid ""
@@ -1310,6 +1330,10 @@ msgid ""
 "Clustered rendering also lifts any limits on the number of lights that can "
 "be used on a mesh."
 msgstr ""
+"عند استخدام صيّار +Forward (الافتراضي على أجهزة الحاسوب)، يتم صيرورة الأضواء "
+"باستخدام تحسينات \"الأمامية العنقودية\" (clustered forward) لتقليل تكلفة كل "
+"ضوء على حدة. كما يرفع الرندر العنقودي (Clustered rendering) أي قيود على عدد "
+"الأضواء التي يمكن استخدامها على المجسم الواحد (mesh)."
 
 #: ../../docs/about/list_of_features.rst:231
 msgid ""
@@ -1317,53 +1341,72 @@ msgid ""
 "displayed per mesh resource. Baked lighting can be used to overcome this "
 "limit if needed."
 msgstr ""
+"عند استخدام صيّار الهواتف (Mobile renderer)، يمكن عرض ما يصل إلى 8 أضواء "
+"شاملة (omni lights) و8 أضواء بقعية (spot lights) لكل مورد مجسم (mesh "
+"resource). يمكن استخدام الإضاءة المخبوزة (Baked lighting) لتجاوز هذا الحد عند "
+"الحاجة."
 
 #: ../../docs/about/list_of_features.rst:235
 msgid "**Shadow mapping:**"
-msgstr ""
+msgstr "**تخطيط الظلال (Shadow mapping):**"
 
 #: ../../docs/about/list_of_features.rst:237
 msgid ""
 "*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
 "blending between splits."
 msgstr ""
+"*DirectionalLight:* متعامد (Orthogonal - الأسرع)، و PSSM بـ 2-انقسام أو 4-"
+"انقسام. يدعم المزج بين الانقسامات (blending between splits)."
 
 #: ../../docs/about/list_of_features.rst:239
 msgid ""
 "*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
+"*OmniLight:* مكافئ مزدوج (Dual paraboloid - سريع) أو خريطة مكعبة (cubemap - "
+"أبطأ ولكن أكثر دقة). يدعم أنسجة العرض الملونة (projector textures) على شكل "
+"بانوراما."
 
 #: ../../docs/about/list_of_features.rst:241
 msgid "*SpotLight:* Single texture. Supports colored projector textures."
 msgstr ""
+"*SpotLight:* نسيج واحد (Single texture). يدعم أنسجة العرض الملونة (projector "
+"textures)."
 
 #: ../../docs/about/list_of_features.rst:242
 msgid ""
 "Shadow normal offset bias and shadow pancaking to decrease the amount of "
 "visible shadow acne and peter-panning."
 msgstr ""
+"إزاحة منحى ظل السطح (Shadow normal offset bias) وتسطيح الظل (shadow "
+"pancaking) لتقليل ظهور \"بثور الظل\" (shadow acne) و\"انفصال الظل\" (peter-"
+"panning)."
 
 #: ../../docs/about/list_of_features.rst:244
 msgid ""
 ":abbr:`PCSS (Percentage Closer Soft Shadows)`-like shadow blur based on the "
 "light size and distance from the surface the shadow is cast on."
 msgstr ""
+"تضبيب للظل يشبه تقنية :abbr:`PCSS (Percentage Closer Soft Shadows)` بناءً على "
+"حجم الضوء والمسافة من السطح الذي يُلقى عليه الظل."
 
 #: ../../docs/about/list_of_features.rst:246
 msgid "Adjustable shadow blur on a per-light basis."
-msgstr ""
+msgstr "تضبيب ظل (shadow blur) قابل للضبط لكل ضوء على حدة."
 
 #: ../../docs/about/list_of_features.rst:248
 msgid "**Global illumination with indirect lighting:**"
 msgstr ""
+"**الإضاءة الشاملة مع الإضاءة غير المباشرة (Global illumination with indirect "
+"lighting):**"
 
 #: ../../docs/about/list_of_features.rst:250
-#, fuzzy
 msgid ""
 ":ref:`Baked lightmaps <doc_using_lightmap_gi>` (fast, but can't be updated "
 "at runtime)."
-msgstr "الإضاءات الجاهزة ( سريعة ، لكن لا يمكن تحديثها في أثناء-التشغيل)"
+msgstr ""
+":ref:`خرائط الإضاءة المخبوزة <doc_using_lightmap_gi>` (سريعة، ولكن لا يمكن "
+"تحديثها أثناء التشغيل)."
 
 #: ../../docs/about/list_of_features.rst:252
 msgid ""
@@ -1371,17 +1414,24 @@ msgid ""
 "lighting. The bake mode can be adjusted on a per-light basis to allow for "
 "hybrid light baking setups."
 msgstr ""
+"يدعم خبز الضوء غير المباشر فقط (indirect light) أو خبز كل من الإضاءة المباشرة "
+"وغير المباشرة معاً. يمكن ضبط وضع الخبز (bake mode) لكل ضوء على حدة للسماح "
+"بإعدادات خبز ضوئي هجينة (hybrid)."
 
 #: ../../docs/about/list_of_features.rst:255
 msgid ""
 "Supports lighting dynamic objects using automatic and manually placed probes."
 msgstr ""
+"يدعم إضاءة الأجسام الديناميكية (dynamic objects) باستخدام مجسات (probes) توضع "
+"تلقائياً أو يدوياً."
 
 #: ../../docs/about/list_of_features.rst:256
 msgid ""
 "Optionally supports directional lighting and rough reflections based on "
 "spherical harmonics."
 msgstr ""
+"يدعم اختيارياً الإضاءة الاتجاهية (directional lighting) والانعكاسات الخشنة "
+"(rough reflections) بناءً على التوافقيات الكروية (spherical harmonics)."
 
 #: ../../docs/about/list_of_features.rst:258
 msgid ""
@@ -1389,12 +1439,19 @@ msgid ""
 "to CPU lightmapping). Baking can only be performed from the editor, not in "
 "exported projects."
 msgstr ""
+"يتم خبز خرائط الإضاءة (Lightmaps) على وحدة معالجة الرسومات (GPU) باستخدام "
+"مضللات الحوسبة (compute shaders)؛ وهي أسرع بكثير مقارنة بالخبز عبر المعالج "
+"المركزي (CPU). يمكن إجراء عملية الخبز من المحرر فقط، وليس في المشاريع "
+"المصدرة."
 
 #: ../../docs/about/list_of_features.rst:261
 msgid ""
 "Supports GPU-based :ref:`denoising <doc_using_lightmap_gi_denoising>` with "
 "JNLM, or CPU/GPU-based denoising with OIDN."
 msgstr ""
+"يدعم :ref:`إزالة الضجيج <doc_using_lightmap_gi_denoising>` المستندة إلى وحدة "
+"معالجة الرسومات (GPU) باستخدام JNLM، أو إزالة الضجيج المستندة إلى المعالج "
+"المركزي (CPU) أو وحدة معالجة الرسومات (GPU) باستخدام OIDN."
 
 #: ../../docs/about/list_of_features.rst:264
 msgid ""
@@ -1403,6 +1460,10 @@ msgid ""
 "baking step which can be performed in the editor or at runtime (including "
 "from an exported project)."
 msgstr ""
+":ref:`مجسات الإضاءة الشاملة المعتمدة على الـ Voxel <doc_using_voxel_gi>`. "
+"تدعم الأضواء الديناميكية *و* الأجسام الحاجبة للديناميكية (dynamic occluders)، "
+"كما تدعم الانعكاسات. تتطلب خطوة خبز سريعة يمكن إجراؤها في المحرر أو أثناء "
+"التشغيل (بما في ذلك المشاريع المصدرة)."
 
 #: ../../docs/about/list_of_features.rst:268
 msgid ""
@@ -1410,6 +1471,10 @@ msgid ""
 "worlds. Supports dynamic lights, but not dynamic occluders. Supports "
 "reflections. No baking required."
 msgstr ""
+":ref:`الإضاءة الشاملة بحقول المسافة الموقعة (SDFGI) <doc_using_sdfgi>` "
+"المصممة للعوالم المفتوحة الكبيرة. تدعم الأضواء الديناميكية، ولكنها لا تدعم "
+"الأجسام الحاجبة الديناميكية (dynamic occluders). تدعم الانعكاسات، ولا تتطلب أي "
+"خطوة خبز (baking)."
 
 #: ../../docs/about/list_of_features.rst:271
 msgid ""
@@ -1418,6 +1483,10 @@ msgid ""
 "Fully real-time and supports any kind of emissive light source (including "
 "decals)."
 msgstr ""
+":ref:`الإضاءة غير المباشرة بمساحة الشاشة (SSIL) "
+"<doc_environment_and_post_processing_ssil>` بدقة كاملة أو بنصف الدقة. تعمل "
+"بالوقت الحقيقي بالكامل وتدعم أي نوع من مصادر الضوء الانبعاثي (بما في ذلك "
+"الملصقات - decals)."
 
 #: ../../docs/about/list_of_features.rst:274
 msgid ""
@@ -1425,6 +1494,9 @@ msgid ""
 "resolution to improve performance (while still having functional MSAA "
 "support)."
 msgstr ""
+"تستخدم تقنيتا VoxelGI و SDFGI \"ممرًا مؤجلًا\" (deferred pass) للسماح بصيرورة "
+"الإضاءة الشاملة (GI) بنصف الدقة لتحسين الأداء (مع استمرار دعم تنعيم الحواف "
+"MSAA بشكل فعال)."
 
 #: ../../docs/about/list_of_features.rst:277
 msgid "**Reflections:**"
@@ -1437,22 +1509,33 @@ msgid ""
 "on transparent surfaces, while rough SDF-based reflections are visible on "
 "transparent surfaces."
 msgstr ""
+"الانعكاسات المعتمدة على الـ Voxel (عند استخدام مجسات الإضاءة الشاملة GI "
+"probes) والانعكاسات المعتمدة على حقول المسافة (SDF) (عند استخدام الإضاءة "
+"الشاملة بحقول المسافة الموقعة). تظهر الانعكاسات المعتمدة على الـ Voxel على "
+"الأسطح الشفافة، بينما تظهر الانعكاسات المعتمدة على حقول المسافة (SDF) الخشنة "
+"على الأسطح الشفافة أيضاً."
 
 #: ../../docs/about/list_of_features.rst:283
 msgid ""
 "Fast baked reflections or slow real-time reflections using ReflectionProbe. "
 "Parallax box correction can optionally be enabled."
 msgstr ""
+"انعكاسات مخبوزة سريعة أو انعكاسات وقت حقيقي بطيئة باستخدام ReflectionProbe. "
+"يمكن اختيارياً تفعيل تصحيح المنظور الصندوقي (Parallax box correction)."
 
 #: ../../docs/about/list_of_features.rst:285
 msgid "Screen-space reflections with support for material roughness."
 msgstr ""
+"انعكاسات مساحة الشاشة (Screen-space reflections) مع دعم خشونة المواد "
+"(material roughness)."
 
 #: ../../docs/about/list_of_features.rst:286
 msgid ""
 "Reflection techniques can be mixed together for greater accuracy or "
 "scalability."
 msgstr ""
+"يمكن دمج تقنيات الانعكاس معاً لتحقيق دقة أعلى أو قابلية توسع (scalability) "
+"أكبر."
 
 #: ../../docs/about/list_of_features.rst:287
 msgid ""
@@ -1461,6 +1544,11 @@ msgid ""
 "cost. Clustered rendering also lifts any limits on the number of reflection "
 "probes that can be used on a mesh."
 msgstr ""
+"عند استخدام صيرورة Forward+‎ (الافتراضية على سطح المكتب)، يتم رسم مجسات "
+"الانعكاس (reflection probes) باستخدام تحسينات الأمام العنقودي (clustered "
+"forward) لتقليل تكلفتها الفردية. كما ترفع الصيرورة العنقودية (Clustered "
+"rendering) أي قيود على عدد مجسات الانعكاس التي يمكن استخدامها على المجسم "
+"الواحد."
 
 #: ../../docs/about/list_of_features.rst:290
 msgid ""
@@ -1468,28 +1556,36 @@ msgid ""
 "per mesh resource. When using the Compatibility renderer, up to 2 reflection "
 "probes can be displayed per mesh resource."
 msgstr ""
+"عند استخدام صيرورة Mobile، يمكن عرض ما يصل إلى 8 مجسات انعكاس لكل مورد مجسم "
+"(mesh resource). أما عند استخدام صيرورة Compatibility، فيمكن عرض ما يصل إلى "
+"مجسّي انعكاس فقط لكل مورد مجسم."
 
 #: ../../docs/about/list_of_features.rst:294
-#, fuzzy
 msgid "**Decals:**"
-msgstr "**مميزات.**"
+msgstr "**مميزات:**"
 
 #: ../../docs/about/list_of_features.rst:296
 msgid ""
 ":ref:`Supports albedo <doc_using_decals>`, emissive, :abbr:`ORM (Occlusion "
 "Roughness Metallic)`, and normal mapping."
 msgstr ""
+":ref:`يدعم خرائط البياض (albedo) <doc_using_decals>`، والخرائط الانبعاثية "
+"(emissive)، وخرائط :abbr:`ORM (الإطباق والخشونة والمعدنية)`، والخرائط "
+"الطبيعية (normal mapping)."
 
 #: ../../docs/about/list_of_features.rst:298
 msgid ""
 "Texture channels are smoothly overlaid on top of the underlying material, "
 "with support for normal/ORM-only decals."
 msgstr ""
+"يتم تراكب قنوات النسيج (Texture channels) بسلاسة فوق المادة الأساسية، مع دعم "
+"الملصقات التي تحتوي فقط على الخرائط الطبيعية (normal) أو خرائط ORM."
 
 #: ../../docs/about/list_of_features.rst:300
 msgid ""
 "Support for normal fade to fade the decal depending on its incidence angle."
 msgstr ""
+"دعم التلاشي الطبيعي (normal fade) لتلاشي الملصق اعتماداً على زاوية سقوطه."
 
 #: ../../docs/about/list_of_features.rst:301
 msgid ""
@@ -1497,17 +1593,24 @@ msgid ""
 "complex skinned meshes with no performance penalty, even if the decal moves "
 "every frame."
 msgstr ""
+"لا تعتمد على إنشاء المجسمات (mesh generation) أثناء التشغيل. وهذا يعني "
+"إمكانية استخدام الملصقات على المجسمات الهيكلية (skinned meshes) المعقدة دون "
+"أي تأثير على الأداء، حتى لو كان الملصق يتحرك في كل إطار."
 
 #: ../../docs/about/list_of_features.rst:303
 msgid ""
 "Support for nearest, bilinear, trilinear or anisotropic texture filtering "
 "(configured globally)."
 msgstr ""
+"دعم ترشيح الأنسجة من نوع الأقرب (nearest)، أو ثنائي الخطي (bilinear)، أو ثلاثي "
+"الخطي (trilinear)، أو متباين الخواص (anisotropic) (يتم ضبطها عالمياً)."
 
 #: ../../docs/about/list_of_features.rst:304
 msgid ""
 "Optional distance fade system to fade distant decals, improving performance."
 msgstr ""
+"نظام تلاشٍ اختياري حسب المسافة (distance fade) لإخفاء الملصقات البعيدة، مما "
+"يؤدي لتحسين الأداء."
 
 #: ../../docs/about/list_of_features.rst:305
 msgid ""
@@ -1516,12 +1619,54 @@ msgid ""
 "Clustered rendering also lifts any limits on the number of decals that can "
 "be used on a mesh."
 msgstr ""
+"عند استخدام صيرورة Forward+‎ (الافتراضية على سطح المكتب)، يتم رسم الملصقات "
+"(decals) باستخدام تحسينات الأمام العنقودي (clustered forward) لتقليل تكلفتها "
+"الفردية. كما ترفع الصيرورة العنقودية (Clustered rendering) أي قيود على عدد "
+"الملصقات التي يمكن استخدامها على المجسم الواحد."
 
 #: ../../docs/about/list_of_features.rst:308
 msgid ""
 "When using the Mobile renderer, up to 8 decals can be displayed per mesh "
 "resource."
 msgstr ""
+"قم بتمييز الخاصية التالية كخاصية مُصدَّرة (قابلة للتعديل في لوحة الفحص "
+"\"Inspector\" وتُحفظ على القرص). للتحكم في نوع الخاصية المُصدَّرة، استخدم تدوين "
+"تلميح النوع (type hint notation).\n"
+"[codeblock]\n"
+"extends Node\n"
+"\n"
+"enum Direction {LEFT, RIGHT, UP, DOWN}\n"
+"\n"
+"# أنواع مدمجة (Built-in types).\n"
+"@export var string = \"\"\n"
+"@export var int_number = 5\n"
+"@export var float_number: float = 5\n"
+"\n"
+"# التعدادات (Enums).\n"
+"@export var type: Variant.Type\n"
+"@export var format: Image.Format\n"
+"@export var direction: Direction\n"
+"\n"
+"# الموارد (Resources).\n"
+"@export var image: Image\n"
+"@export var custom_resource: CustomResource\n"
+"\n"
+"# العقد (Nodes).\n"
+"@export var node: Node\n"
+"@export var custom_node: CustomNode\n"
+"\n"
+"# المصفوفات محددة النوع (Typed arrays).\n"
+"@export var int_array: Array[int]\n"
+"@export var direction_array: Array[Direction]\n"
+"@export var image_array: Array[Image]\n"
+"@export var node_array: Array[Node]\n"
+"[/codeblock]\n"
+"[b]Note:[/b] يجب تسجيل الموارد (Resources) والعقد (Nodes) المخصصة كأصناف "
+"عامة (global classes) باستخدام [code]class_name[/code]، لأن لوحة الفحص "
+"(Inspector) حالياً تدعم الأصناف العامة فقط. وإلا، فسيتم تصدير نوع أقل تحديداً "
+"بدلاً من ذلك.\n"
+"[b]Note:[/b] تصدير العقد (Node export) مدعوم فقط في الأصناف المشتقة من "
+"[Node]، وله عدد من القيود الأخرى."
 
 #: ../../docs/about/list_of_features.rst:311
 msgid "**Sky:**"

@@ -360,7 +360,7 @@
 # Monster_Domosed <monsterdomosed@gmail.com>, 2024.
 # Vladimir Chistov <wchistow@yandex.ru>, 2024.
 # Матвей Торопин <toropinmatve550@gmail.com>, 2024.
-# Richard Dolphin <ilushativ@gmail.com>, 2024, 2025.
+# Richard Dolphin <ilushativ@gmail.com>, 2024, 2025, 2026.
 # Account Rush Royale#1 <ghhh5238unq1@gmail.com>, 2024.
 # Yuriy Zymlex <id@zymlex.com>, 2024.
 # Maksim <cometq@vk.com>, 2024.
@@ -435,13 +435,16 @@
 # Denis Isaev <ashlander@internet.ru>, 2025.
 # zhoeshin <ayron64632723837@gmail.com>, 2025.
 # penggrin12 <miner.sidor@gmail.com>, 2025.
+# cofeek-codes <11kormyshev11@gmail.com>, 2025.
+# Firdavs <faridmardonov94@gmail.com>, 2025.
+# daodan <karovich16@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2025-12-19 15:00+0100\n"
-"PO-Revision-Date: 2025-12-15 11:00+0000\n"
-"Last-Translator: penggrin12 <miner.sidor@gmail.com>\n"
+"PO-Revision-Date: 2026-01-11 16:36+0000\n"
+"Last-Translator: Richard Dolphin <ilushativ@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -450,7 +453,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -517,9 +520,8 @@ msgid "Class reference"
 msgstr "Справочник по классам"
 
 #: ../../docs/index.rst:4
-#, fuzzy
 msgid "Godot Docs – *master* branch"
-msgstr "Godot Docs – ветка *4.5*"
+msgstr "Godot Docs – ветка *master*"
 
 #: ../../docs/index.rst:8
 msgid ""
@@ -5617,6 +5619,9 @@ msgid ""
 "to be used with its editor. We recommend you give it a try, as it will most "
 "likely save you time in the long term."
 msgstr ""
+"Если вы собираетесь сделать игру, используя Godot, помните, что в Godot есть "
+"свой встроенный редактор. Мы рекомендуем опробовать его, ведь скорее всего "
+"он сохранит вам время в долгосрочной перспективе."
 
 #: ../../docs/about/faq.rst:491
 msgid ""
@@ -5626,6 +5631,12 @@ msgid ""
 "currently supported on Windows, macOS, and Linux. Support for Android and "
 "iOS is planned for a future release."
 msgstr ""
+"Для более специализированных приложений, есть смысл использования Godot в "
+"качестве библиотеки. С версии Godot 4.6, присутствует **экспериментальная** "
+"поддержка использования Godot в качестве статической или общей библиотеки, в "
+"виде LibGodot. На текущей момент поддерживаются семейства операционных "
+"систем: Windows, macOS и Linux. Поддержка Android и iOS планируется в "
+"будущем."
 
 #: ../../docs/about/faq.rst:497
 msgid ""
@@ -5633,6 +5644,9 @@ msgid ""
 "libgodot_project GitHub repository <https://github.com/migeran/"
 "libgodot_project>`__."
 msgstr ""
+"Вы можете найти приложение-пример (сэмпл), которое использует Godot как "
+"библиотеку в `GitHub репозитории migeran/libgodot_project <https://"
+"github.com/migeran/libgodot_project>`__."
 
 #: ../../docs/about/faq.rst:501
 msgid "What user interface toolkit does Godot use?"
@@ -7114,7 +7128,7 @@ msgstr "GDExtension"
 #: ../../docs/about/docs_changelog.rst:29
 #, fuzzy
 msgid ":ref:`doc_gdextension_c_example`"
-msgstr ":ref:`doc_gdextension_file`"
+msgstr ":ref:`doc_gdextension_c_example`"
 
 #: ../../docs/about/docs_changelog.rst:32
 #: ../../docs/about/docs_changelog.rst:66
@@ -7128,7 +7142,7 @@ msgstr "Переход"
 #: ../../docs/about/docs_changelog.rst:34
 #, fuzzy
 msgid ":ref:`doc_upgrading_to_godot_4.5`"
-msgstr ":ref:`doc_upgrading_to_godot_4.3`"
+msgstr ":ref:`doc_upgrading_to_godot_4.5`"
 
 #: ../../docs/about/docs_changelog.rst:40
 #, fuzzy
@@ -18411,7 +18425,7 @@ msgstr "|second_keys_both|"
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:639
 msgid "second_keys_both"
-msgstr "second_keys_ both"
+msgstr "second_keys_both"
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:115
 msgid ""
@@ -27158,7 +27172,7 @@ msgstr ":kbd:`Shift + Opt + Down Arrow`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:295
 msgid "``common/ui_text_caret_add_below``"
-msgstr ""
+msgstr "``common/ui_text_caret_add_below``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:297
 #, fuzzy
@@ -27177,11 +27191,11 @@ msgstr ":kbd:`Shift + Opt + Up Arrow`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:297
 msgid "``common/ui_text_caret_add_above``"
-msgstr ""
+msgstr "``common/ui_text_caret_add_above``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:299
 msgid "Select Next Occurrence"
-msgstr ""
+msgstr "Выбрать следующее появление"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:299
 #: ../../docs/tutorials/editor/default_key_mapping.rst:450
@@ -27198,8 +27212,9 @@ msgid ":kbd:`Cmd + D`"
 msgstr ":kbd:`Cmd + D`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:299
+#, fuzzy
 msgid "``common/ui_text_add_selection_for_next_occurrence``"
-msgstr ""
+msgstr "``common/ui_text_add_selection_for_next_occurrence``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:301
 msgid "Complete Symbol"
@@ -38846,6 +38861,17 @@ msgid ""
 "<class_TileMapLayer_property_physics_quadrant_size>` to ``1``, which "
 "disables physics chunking."
 msgstr ""
+":ref:`TileMapLayer.get_coords_for_body_rid() "
+"<class_TileMapLayer_method_get_coords_for_body_rid>` будет возвращать другие "
+"значения в 4.5, в сравнении с 4.4, так как по умолчанию в TileMapLayer "
+"включено деление физики на части. Более высокие значения параметра "
+":ref:`TileMapLayer.physics_quadrant_size "
+"<класс_TileMapLayer_property_physics_quadrant_size>` сделают эту функцию "
+"менее точной. Чтобы получить точные координаты ячейки, как в версии 4.4 и "
+"предыдущих версиях, вам необходимо установить "
+":ref:`TileMapLayer.physics_quadrant_size "
+"<class_TileMapLayer_property_physics_quadrant_size>` на значение ``1``, что "
+"отключает разбиение физики на блоки."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:206
 msgid "3D Model Import"
@@ -52252,8 +52278,9 @@ msgstr ""
 "прозрачность одинакова по всей поверхности объекта."
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:837
+#, fuzzy
 msgid "Stencil"
-msgstr ""
+msgstr "Трафарет"
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:839
 msgid ""
@@ -142814,8 +142841,8 @@ msgid ""
 "<https://www.python.org/dev/peps/pep-0008/>`__ programming style guide."
 msgstr ""
 "Поскольку GDScript очень близок к Python, это руководство вдохновлено "
-"руководством по стилю программирования на Python`PEP 8 <https://"
-"www.python.org/dev/peps/pep-0008/>."
+"руководством по стилю программирования на Python `PEP 8 <https://"
+"www.python.org/dev/peps/pep-0008/>`__."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:15
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:16
@@ -142868,7 +142895,8 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:57
 msgid "Use one line feed character at the end of each file. *(editor default)*"
 msgstr ""
-"Используйте символ перевода строки в конце каждого файла. *(editor default)*"
+"Используйте символ перевода строки в конце каждого файла. *(редактор по "
+"умолчанию)*"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:116
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:58
@@ -154792,8 +154820,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:92
+#, fuzzy
 msgid "``arch``"
-msgstr ""
+msgstr "``arch``"
 
 #: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:94
 msgid ""
@@ -155093,8 +155122,9 @@ msgid "You may want to learn about available options:"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/build_system/scons.rst:23
+#, fuzzy
 msgid "scons --help"
-msgstr ""
+msgstr "scons --help"
 
 #: ../../docs/tutorials/scripting/cpp/build_system/scons.rst:25
 msgid ""
@@ -155102,8 +155132,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/build_system/scons.rst:27
+#, fuzzy
 msgid "scons --clean"
-msgstr ""
+msgstr "scons --clean"
 
 #: ../../docs/tutorials/scripting/cpp/build_system/scons.rst:29
 msgid ""
