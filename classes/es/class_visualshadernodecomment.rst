@@ -9,7 +9,7 @@ VisualShaderNodeComment
 
 **Hereda:** :ref:`VisualShaderNodeFrame<class_VisualShaderNodeFrame>` **<** :ref:`VisualShaderNodeResizableBase<class_VisualShaderNodeResizableBase>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Sólo existe por compatibilidad. Utiliza :ref:`VisualShaderNodeFrame<class_VisualShaderNodeFrame>` como reemplazo.
+Solo existe por compatibilidad. Utiliza :ref:`VisualShaderNodeFrame<class_VisualShaderNodeFrame>` como reemplazo.
 
 .. rst-class:: classref-introduction-group
 

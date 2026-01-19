@@ -332,7 +332,7 @@ Button
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+Код языка, используемый алгоритмами переноса строк и форматирования текста. Если оставить поле пустым, будет использоваться текущая локаль.
 
 .. rst-class:: classref-item-separator
 

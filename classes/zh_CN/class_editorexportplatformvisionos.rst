@@ -2671,9 +2671,9 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 :ref:`bool<class_bool>` **shader_baker/enabled** :ref:`🔗<class_EditorExportPlatformVisionOS_property_shader_baker/enabled>`
 
-If ``true``, shaders will be compiled and embedded in the application. This option is only supported when using the Forward+ and Mobile renderers.
+如果为 ``true``\ ，则着色器将被编译并嵌入到应用程序中。此选项仅当使用 Forward+ 或 Mobile 渲染器时才受支持。
 
-\ **Note:** When exporting as a dedicated server, the shader baker is always disabled since no rendering is performed.
+\ **注意：**\ 导出为专用服务器时，由于不执行渲染，着色器烘焙器将始终被禁用。
 
 .. rst-class:: classref-item-separator
 

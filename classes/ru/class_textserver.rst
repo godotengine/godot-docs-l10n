@@ -2537,7 +2537,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`bool<class_bool>` **font_is_language_supported**\ (\ font_rid\: :ref:`RID<class_RID>`, language\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServer_method_font_is_language_supported>`
 
-Returns ``true`` if the font supports the given language (as a `ISO 639 <https://en.wikipedia.org/wiki/ISO_639-1>`__ code).
+Возвращает ``true``, если шрифт поддерживает указанный язык (в виде `кода ISO 639 <https://en.wikipedia.org/wiki/ISO_639-1>`__).
 
 .. rst-class:: classref-item-separator
 
@@ -2573,7 +2573,7 @@ Returns ``true`` if color modulation is applied when drawing the font's colored 
 
 :ref:`bool<class_bool>` **font_is_script_supported**\ (\ font_rid\: :ref:`RID<class_RID>`, script\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServer_method_font_is_script_supported>`
 
-Returns ``true`` if the font supports the given script (as a `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`__ code).
+Возвращает ``true``, если шрифт поддерживает указанный шрифт (в виде `кода ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`__).
 
 .. rst-class:: classref-item-separator
 

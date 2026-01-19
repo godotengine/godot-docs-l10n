@@ -631,14 +631,14 @@ Renvoie ``true`` si une animation joue actuellement avec une section.
 
 :ref:`bool<class_bool>` **is_animation_active**\ (\ ) |const| :ref:`🔗<class_AnimationPlayer_method_is_animation_active>`
 
-Returns ``true`` if the an animation is currently active. An animation is active if it was played by calling :ref:`play()<class_AnimationPlayer_method_play>` and was not finished yet, or was stopped by calling :ref:`stop()<class_AnimationPlayer_method_stop>`.
+Renvoie ``true`` si une animation est actuellement active. Une animation est active si elle a été jouée en appelant :ref:`play()<class_AnimationPlayer_method_play>` et n'est pas encore finie, ou a été arrêtée en appelant :ref:`stop()<class_AnimationPlayer_method_stop>`.
 
-This can be used to check whether an animation is currently paused or stopped.
+Cela peut être utilisé pour vérifier si une animation est actuellement interrompue ou arrêtée.
 
 ::
 
-    var is_paused = not is_playing() and is_animation_active()
-    var is_stopped = not is_playing() and not is_animation_active()
+    var est_en_pause = not is_playing() and is_animation_active()
+    var est_arretee = not is_playing() and not is_animation_active()
 
 .. rst-class:: classref-item-separator
 

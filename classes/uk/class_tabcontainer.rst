@@ -432,7 +432,7 @@ enum **TabPosition**: :ref:`🔗<enum_TabContainer_TabPosition>`
 - |void| **set_switch_on_drag_hover**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_switch_on_drag_hover**\ (\ )
 
-If ``true``, hovering over a tab while dragging something will switch to that tab. Does not have effect when hovering another tab to rearrange.
+Якщо значення ``true``, наведення курсора на вкладку під час перетягування призведе до перемикання на цю вкладку. Це не впливає на перевпорядкування вкладки під час наведення курсора на іншу вкладку.
 
 .. rst-class:: classref-item-separator
 
@@ -483,7 +483,7 @@ If ``true``, hovering over a tab while dragging something will switch to that ta
 - |void| **set_tabs_position**\ (\ value\: :ref:`TabPosition<enum_TabContainer_TabPosition>`\ )
 - :ref:`TabPosition<enum_TabContainer_TabPosition>` **get_tabs_position**\ (\ )
 
-The horizontal alignment of the tabs.
+Горизонтальне вирівнювання вкладок.
 
 .. rst-class:: classref-item-separator
 
@@ -960,7 +960,7 @@ The horizontal alignment of the tabs.
 
 :ref:`Color<class_Color>` **icon_disabled_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabContainer_theme_color_icon_disabled_color>`
 
-Icon color of disabled tabs.
+Колір значка вимкнених вкладок.
 
 .. rst-class:: classref-item-separator
 
@@ -972,7 +972,7 @@ Icon color of disabled tabs.
 
 :ref:`Color<class_Color>` **icon_hovered_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabContainer_theme_color_icon_hovered_color>`
 
-Icon color of the currently hovered tab. Does not apply to the selected tab.
+Колір значка вкладки, на яку наведено курсор. Не застосовується до вибраної вкладки.
 
 .. rst-class:: classref-item-separator
 
@@ -984,7 +984,7 @@ Icon color of the currently hovered tab. Does not apply to the selected tab.
 
 :ref:`Color<class_Color>` **icon_selected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabContainer_theme_color_icon_selected_color>`
 
-Icon color of the currently selected tab.
+Колір значка поточної вибраної вкладки.
 
 .. rst-class:: classref-item-separator
 
@@ -996,7 +996,7 @@ Icon color of the currently selected tab.
 
 :ref:`Color<class_Color>` **icon_unselected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabContainer_theme_color_icon_unselected_color>`
 
-Icon color of the other, unselected tabs.
+Колір значків інших, невибраних вкладок.
 
 .. rst-class:: classref-item-separator
 

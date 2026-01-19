@@ -420,13 +420,13 @@ Y 轴的枚举值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 :ref:`float<class_float>` **angle**\ (\ ) |const| :ref:`🔗<class_Vector2_method_angle>`
 
-Returns this vector's angle with respect to the positive X axis, or ``(1, 0)`` vector, in radians.
+返回该向量与 X 轴正方向，即 ``(1, 0)``\ ，的夹角，单位为弧度。
 
-For example, ``Vector2.RIGHT.angle()`` will return zero, ``Vector2.DOWN.angle()`` will return ``PI / 2`` (a quarter turn, or 90 degrees), and ``Vector2(1, -1).angle()`` will return ``-PI / 4`` (a negative eighth turn, or -45 degrees).
+例如，\ ``Vector2.RIGHT.angle()`` 将返回零，\ ``Vector2.DOWN.angle()`` 将返回 ``PI / 2``\ （四分之一圈，即 90 度），而 ``Vector2(1, -1).angle()`` 将返回 ``-PI / 4``\ （负八分之一圈，即 -45 度）。
 
-This is equivalent to calling :ref:`@GlobalScope.atan2()<class_@GlobalScope_method_atan2>` with :ref:`y<class_Vector2_property_y>` and :ref:`x<class_Vector2_property_x>`.
+这等同于传递 :ref:`y<class_Vector2_property_y>` 和 :ref:`x<class_Vector2_property_x>` 调用 :ref:`@GlobalScope.atan2()<class_@GlobalScope_method_atan2>`\ 。
 
-\ `Illustration of the returned angle. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle.png>`__
+\ `返回角度的示意图。 <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle.png>`__
 
 .. rst-class:: classref-item-separator
 

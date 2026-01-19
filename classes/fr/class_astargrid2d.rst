@@ -545,9 +545,11 @@ Remplit la ``region`` donnée sur la grille avec la valeur spécifiée pour le f
 
 Renvoie un tableau avec les points qui sont dans le chemin trouvé par AStar2D entre les points donnés. Le tableau est trié du point de départ au point final du chemin.
 
-S'il n'y a pas de chemin valide vers la cible, et ``allow_partial_path`` vaut ``true``, renvoie un chemin vers le point le plus proche de la cible qui peut être atteint.
+Si le point ``from_id`` est désactivé, renvoie un tableau vide (même si ``from_id == to_id``).
 
-\ **Note :** Lorsque ``allow_partial_path`` vaut ``true`` et ``to_id`` est solide, la recherche peut prendre un temps inhabituellement long pour se terminer.
+Si le point ``from_id`` n'est pas désactivé, qu'il n'y a pas de chemin valide vers la cible, et que ``allow_partial_path`` vaut ``true``, renvoie un chemin vers le point le plus proche de la cible qui peut être atteint.
+
+\ **Note :** Lorsque ``allow_partial_path`` vaut ``true`` et que ``to_id`` est solide, la recherche peut prendre un temps inhabituellement long pour se terminer.
 
 .. rst-class:: classref-item-separator
 
@@ -573,7 +575,9 @@ Renvoie un tableau de dictionnaires avec les données des points (``id``\  : :r
 
 Renvoie un tableau avec les points qui sont dans le chemin trouvé par **AStarGrid2D** entre les points donnés. Le tableau est trié du point de départ au point final du chemin.
 
-S'il n'y a pas de chemin valide vers la cible, et que ``allow_partial_path`` vaut ``true``, renvoie un chemin vers le point le plus proche de la cible qui peut être atteint.
+Si ``from_id`` point est désactivé, retourne un tableau vide (même si ``from_id == to_id``).
+
+Si ``from_id`` point n'est pas désactivé, qu'il n'y a pas de chemin valide vers la cible, et que ``allow_partial_path`` vaut ``true``, renvoie un chemin vers le point le plus proche de la cible qui peut être atteint.
 
 \ **Note :** Cette méthode n'est pas thread-safe, elle ne peut être utilisée qu'à partir d'un seul :ref:`Thread<class_Thread>` à un moment donné. Envisagez d'utiliser :ref:`Mutex<class_Mutex>` pour garantir un accès exclusif à un thread pour éviter les race conditions.
 

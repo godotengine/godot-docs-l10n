@@ -53,9 +53,9 @@ Descripciones de Métodos
 
 :ref:`bool<class_bool>` **_can_generate_small_preview**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorResourcePreviewGenerator_private_method__can_generate_small_preview>`
 
-If this function returns ``true``, the generator will call :ref:`_generate()<class_EditorResourcePreviewGenerator_private_method__generate>` or :ref:`_generate_from_path()<class_EditorResourcePreviewGenerator_private_method__generate_from_path>` for small previews as well.
+Si esta función devuelve ``true``, el generador llamará a :ref:`_generate()<class_EditorResourcePreviewGenerator_private_method__generate>` o :ref:`_generate_from_path()<class_EditorResourcePreviewGenerator_private_method__generate_from_path>` también para vistas previas pequeñas.
 
-By default, it returns ``false``.
+Por defecto, devuelve ``false``.
 
 .. rst-class:: classref-item-separator
 

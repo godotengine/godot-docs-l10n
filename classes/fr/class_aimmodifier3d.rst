@@ -181,11 +181,11 @@ Définit l'axe de la première rotation. C'est activé seulement si :ref:`is_usi
 
 |void| **set_relative**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_AimModifier3D_method_set_relative>`
 
-Sets relative option in the setting at ``index`` to ``enabled``.
+Définit l'option relative dans le paramètre ``index`` sur ``enabled``.
 
-If sets ``enabled`` to ``true``, the rotation is applied relative to the pose.
+Si ``enabled`` est défini sur ``true``, la rotation est appliquée par rapport à la pose.
 
-If sets ``enabled`` to ``false``, the rotation is applied relative to the rest. It means to replace the current pose with the **AimModifier3D**'s result.
+Si ``enabled`` est défini sur ``false``, la rotation est appliquée par rapport au repos. Cela signifie que la pose actuelle est remplacée par le résultat de **AimModifier3D**.
 
 .. rst-class:: classref-item-separator
 

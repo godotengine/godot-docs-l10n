@@ -317,7 +317,7 @@ enum **OpenXRAlphaBlendModeSupport**: :ref:`🔗<enum_OpenXRAPIExtension_OpenXRA
 
 :ref:`int<class_int>` **get_openxr_version**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_openxr_version>`
 
-Returns the version of OpenXR that was initialized. Only valid after the OpenXR instance has been created. See `XR_MAKE_VERSION <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_MAKE_VERSION>`__ for how the version is calculated.
+Возвращает версию OpenXR, которая была инициализирована. Действительна только после создания экземпляра OpenXR. См. `XR_MAKE_VERSION <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_MAKE_VERSION>`__ для получения информации о том, как рассчитывается версия.
 
 .. rst-class:: classref-item-separator
 
@@ -431,7 +431,7 @@ Returns the version of OpenXR that was initialized. Only valid after the OpenXR 
 
 :ref:`int<class_int>` **get_system_id**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_system_id>`
 
-Returns the ID of the system, which is an `XrSystemId <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSystemId.html>`__ cast to an integer.
+Возвращает идентификатор (ID) системы, который представляет собой `XrSystemId <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSystemId.html>`__, преобразованный в целое число.
 
 .. rst-class:: classref-item-separator
 
@@ -575,9 +575,9 @@ Returns the ID of the system, which is an `XrSystemId <https://registry.khronos.
 
 |void| **register_composition_layer_provider**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_register_composition_layer_provider>`
 
-Registers the given extension as a composition layer provider.
+Регистрирует указанное расширение в качестве поставщика слоя композиции.
 
-\ **Note:** This cannot be called after the OpenXR session has started. However, it can be called in :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>`.
+\ **Примечание:** Этот метод нельзя вызвать после начала сессии OpenXR. Однако его можно вызвать в :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>`.
 
 .. rst-class:: classref-item-separator
 
@@ -589,9 +589,9 @@ Registers the given extension as a composition layer provider.
 
 |void| **register_frame_info_extension**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_register_frame_info_extension>`
 
-Registers the given extension as modifying frame info via the :ref:`OpenXRExtensionWrapper._set_frame_wait_info_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_frame_wait_info_and_get_next_pointer>`, :ref:`OpenXRExtensionWrapper._set_view_locate_info_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_view_locate_info_and_get_next_pointer>`, or :ref:`OpenXRExtensionWrapper._set_frame_end_info_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_frame_end_info_and_get_next_pointer>` virtual methods.
+Регистрирует указанное расширение как изменяющее информацию о кадре с помощью виртуальных методов :ref:`OpenXRExtensionWrapper._set_frame_wait_info_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_frame_wait_info_and_get_next_pointer>`, :ref:`OpenXRExtensionWrapper._set_view_locate_info_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_view_locate_info_and_get_next_pointer>` или :ref:`OpenXRExtensionWrapper._set_frame_end_info_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_frame_end_info_and_get_next_pointer>`.
 
-\ **Note:** This cannot be called after the OpenXR session has started. However, it can be called in :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>`.
+\ **Примечание:** Этот метод нельзя вызвать после начала сеанса OpenXR. Однако его можно вызвать в :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>`.
 
 .. rst-class:: classref-item-separator
 
@@ -603,9 +603,9 @@ Registers the given extension as modifying frame info via the :ref:`OpenXRExtens
 
 |void| **register_projection_views_extension**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_register_projection_views_extension>`
 
-Registers the given extension as a provider of additional data structures to projections views.
+Регистрирует указанное расширение в качестве поставщика дополнительных структур данных для проекционных представлений.
 
-\ **Note:** This cannot be called after the OpenXR session has started. However, it can be called in :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>`.
+\ **Примечание:** Этот метод нельзя вызвать после начала сеанса OpenXR. Однако его можно вызвать в :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>`.
 
 .. rst-class:: classref-item-separator
 
@@ -713,9 +713,9 @@ Registers the given extension as a provider of additional data structures to pro
 
 |void| **unregister_composition_layer_provider**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_unregister_composition_layer_provider>`
 
-Unregisters the given extension as a composition layer provider.
+Отменяет регистрацию указанного расширения в качестве поставщика слоя композиции.
 
-\ **Note:** This cannot be called while the OpenXR session is still running.
+\ **Примечание:** Эту функцию нельзя вызвать, пока сессия OpenXR еще запущена.
 
 .. rst-class:: classref-item-separator
 
@@ -727,9 +727,9 @@ Unregisters the given extension as a composition layer provider.
 
 |void| **unregister_frame_info_extension**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_unregister_frame_info_extension>`
 
-Unregisters the given extension as modifying frame info.
+Отменяет регистрацию указанного расширения как изменяющего информацию о кадре.
 
-\ **Note:** This cannot be called while the OpenXR session is still running.
+\ **Примечание:** Эту функцию нельзя вызвать, пока сессия OpenXR еще запущена.
 
 .. rst-class:: classref-item-separator
 
@@ -741,9 +741,9 @@ Unregisters the given extension as modifying frame info.
 
 |void| **unregister_projection_views_extension**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_unregister_projection_views_extension>`
 
-Unregisters the given extension as a provider of additional data structures to projections views.
+Отменяет регистрацию указанного расширения в качестве поставщика дополнительных структур данных для проекционных представлений.
 
-\ **Note:** This cannot be called while the OpenXR session is still running.
+\ **Примечание:** Эту функцию нельзя вызвать, пока сеанс OpenXR еще запущен.
 
 .. rst-class:: classref-item-separator
 
@@ -755,7 +755,7 @@ Unregisters the given extension as a provider of additional data structures to p
 
 |void| **update_main_swapchain_size**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_update_main_swapchain_size>`
 
-Request the recommended resolution from the OpenXR runtime and update the main swapchain size if it has changed.
+Запросите рекомендуемое разрешение у среды выполнения OpenXR и обновите размер основной цепочки обменов, если он изменился.
 
 .. rst-class:: classref-item-separator
 

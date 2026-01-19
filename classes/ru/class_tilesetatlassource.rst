@@ -375,7 +375,7 @@ enum **TileAnimationMode**: :ref:`🔗<enum_TileSetAtlasSource_TileAnimationMode
 
 :ref:`Texture2D<class_Texture2D>` **get_runtime_texture**\ (\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_runtime_texture>`
 
-If :ref:`use_texture_padding<class_TileSetAtlasSource_property_use_texture_padding>` is ``false``, returns :ref:`texture<class_TileSetAtlasSource_property_texture>`. Otherwise, returns an internal :ref:`ImageTexture<class_ImageTexture>` created that includes the padding.
+Если :ref:`use_texture_padding<class_TileSetAtlasSource_property_use_texture_padding>` равно ``false``, возвращает :ref:`texture<class_TileSetAtlasSource_property_texture>`. В противном случае возвращает внутренний объект :ref:`ImageTexture<class_ImageTexture>`, созданный с учетом отступов.
 
 .. rst-class:: classref-item-separator
 

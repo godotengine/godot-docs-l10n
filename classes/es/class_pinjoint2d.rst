@@ -75,7 +75,7 @@ Si es ``true``, se aplican la rotación máxima y mínima del pivote, definidas 
 - |void| **set_angular_limit_lower**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angular_limit_lower**\ (\ )
 
-La rotación mínima. Sólo está activa si :ref:`angular_limit_enabled<class_PinJoint2D_property_angular_limit_enabled>` es ``true``.
+La rotación mínima. Solo está activa si :ref:`angular_limit_enabled<class_PinJoint2D_property_angular_limit_enabled>` es ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -92,7 +92,7 @@ La rotación mínima. Sólo está activa si :ref:`angular_limit_enabled<class_Pi
 - |void| **set_angular_limit_upper**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angular_limit_upper**\ (\ )
 
-La rotación máxima. Sólo está activa si :ref:`angular_limit_enabled<class_PinJoint2D_property_angular_limit_enabled>` es ``true``.
+La rotación máxima. Solo está activa si :ref:`angular_limit_enabled<class_PinJoint2D_property_angular_limit_enabled>` es ``true``.
 
 .. rst-class:: classref-item-separator
 

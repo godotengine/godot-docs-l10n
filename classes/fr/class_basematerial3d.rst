@@ -1020,9 +1020,9 @@ Définit ``ALBEDO`` par la couleur définie pour chaque sommet du maillage.
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_SRGB_VERTEX_COLOR** = ``2``
 
-Vertex colors are considered to be stored in nonlinear sRGB encoding and are converted to linear encoding during rendering. See also :ref:`vertex_color_is_srgb<class_BaseMaterial3D_property_vertex_color_is_srgb>`.
+Les couleurs de sommet sont considérées comme stockées dans un encodage sRGB et sont converties en encodage linéaire durant le rendu. Voir aussi :ref:`vertex_color_is_srgb<class_BaseMaterial3D_property_vertex_color_is_srgb>`.
 
-\ **Note:** Only effective when using the Forward+ and Mobile rendering methods.
+\ **Note :** Seulement effectif lors de l'utilisation des méthodes de rendu Forward+ et Mobile.
 
 .. _class_BaseMaterial3D_constant_FLAG_USE_POINT_SIZE:
 
@@ -1102,7 +1102,7 @@ Utiliser les coordonnées ``UV2`` pour la projection de la :ref:`emission_textur
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_ALBEDO_TEXTURE_FORCE_SRGB** = ``12``
 
-Forces the shader to convert albedo from nonlinear sRGB encoding to linear encoding. See also :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>`.
+Force le shader à convertir l'albedo d'un encodage sRGB en un encodage linéaire. Voir aussi :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>`.
 
 .. _class_BaseMaterial3D_constant_FLAG_DONT_RECEIVE_SHADOWS:
 
@@ -3430,9 +3430,9 @@ La valeur de référence du pochoir (0-255). Typiquement une puissance de 2.
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-If ``true``, subsurface scattering is enabled. Emulates light that penetrates an object's surface, is scattered, and then emerges. Subsurface scattering quality is controlled by :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_quality<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_quality>`.
+Si ``true``, la diffusion de la surface est activée. Émule la lumière qui pénètre la surface d'un objet, est dispersée, puis émerge. La qualité de diffusion de la surface est contrôlée par :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_quality<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_quality>`.
 
-\ **Note:** Subsurface scattering is not supported on viewports that have a transparent background (where :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` is ``true``).
+\ **Note:** La diffusion de la surface n'est pas pris en charge dans les vues qui ont un fond transparent (où :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` est ``true``).
 
 .. rst-class:: classref-item-separator
 
@@ -3935,7 +3935,7 @@ Descriptions des méthodes
 
 :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const| :ref:`🔗<class_BaseMaterial3D_method_get_feature>`
 
-Returns ``true`` if the specified ``feature`` is enabled.
+Renvoie ``true`` si la fonctionnalité ``feature`` spécifiée est active.
 
 .. rst-class:: classref-item-separator
 
@@ -3947,7 +3947,7 @@ Returns ``true`` if the specified ``feature`` is enabled.
 
 :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const| :ref:`🔗<class_BaseMaterial3D_method_get_flag>`
 
-Returns ``true`` if the specified ``flag`` is enabled.
+Renvoie ``true`` si le drapeau ``flag`` spécifié est activé.
 
 .. rst-class:: classref-item-separator
 

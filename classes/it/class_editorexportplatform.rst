@@ -20,13 +20,6 @@ Risorsa base che fornisce la funzionalità di esportazione di una build di rilas
 
 Utilizzato in scripting da :ref:`EditorExportPlugin<class_EditorExportPlugin>` per configurare la personalizzazione specifica per una piattaforma di scene e di risorse. Consulta :ref:`EditorExportPlugin._begin_customize_scenes()<class_EditorExportPlugin_private_method__begin_customize_scenes>` e :ref:`EditorExportPlugin._begin_customize_resources()<class_EditorExportPlugin_private_method__begin_customize_resources>` per ulteriori dettagli.
 
-.. rst-class:: classref-introduction-group
-
-Tutorial
-----------------
-
-- :doc:`Supporto per le console in Godot <../tutorials/platform/consoles>`
-
 .. rst-class:: classref-reftable-group
 
 Metodi

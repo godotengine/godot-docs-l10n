@@ -686,9 +686,9 @@ Max векторний, вектор з усіма компонентами, щ�
 
 :ref:`Vector4<class_Vector4>` **operator /**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Vector4i_operator_div_float>`
 
-Divides each component of the **Vector4i** by the given :ref:`float<class_float>`.
+Ділить кожен компонент **Vector4i** на задане число з плаваючою комою :ref:`float<class_float>`.
 
-Returns a Vector4 value due to floating-point operations.
+Повертає значення Vector4 внаслідок операцій з плаваючою комою.
 
 ::
 

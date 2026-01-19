@@ -83,19 +83,23 @@ ScrollContainer
 .. table::
    :widths: auto
 
-   +-----------------------------------+--------------------------------------------------------------------------------------------+-------+
-   | :ref:`int<class_int>`             | :ref:`scrollbar_h_separation<class_ScrollContainer_theme_constant_scrollbar_h_separation>` | ``0`` |
-   +-----------------------------------+--------------------------------------------------------------------------------------------+-------+
-   | :ref:`int<class_int>`             | :ref:`scrollbar_v_separation<class_ScrollContainer_theme_constant_scrollbar_v_separation>` | ``0`` |
-   +-----------------------------------+--------------------------------------------------------------------------------------------+-------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`scroll_hint_horizontal<class_ScrollContainer_theme_icon_scroll_hint_horizontal>`     |       |
-   +-----------------------------------+--------------------------------------------------------------------------------------------+-------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`scroll_hint_vertical<class_ScrollContainer_theme_icon_scroll_hint_vertical>`         |       |
-   +-----------------------------------+--------------------------------------------------------------------------------------------+-------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`focus<class_ScrollContainer_theme_style_focus>`                                      |       |
-   +-----------------------------------+--------------------------------------------------------------------------------------------+-------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`panel<class_ScrollContainer_theme_style_panel>`                                      |       |
-   +-----------------------------------+--------------------------------------------------------------------------------------------+-------+
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`Color<class_Color>`         | :ref:`scroll_hint_horizontal_color<class_ScrollContainer_theme_color_scroll_hint_horizontal_color>` | ``Color(0, 0, 0, 1)`` |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`Color<class_Color>`         | :ref:`scroll_hint_vertical_color<class_ScrollContainer_theme_color_scroll_hint_vertical_color>`     | ``Color(0, 0, 0, 1)`` |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`int<class_int>`             | :ref:`scrollbar_h_separation<class_ScrollContainer_theme_constant_scrollbar_h_separation>`          | ``0``                 |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`int<class_int>`             | :ref:`scrollbar_v_separation<class_ScrollContainer_theme_constant_scrollbar_v_separation>`          | ``0``                 |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`scroll_hint_horizontal<class_ScrollContainer_theme_icon_scroll_hint_horizontal>`              |                       |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`scroll_hint_vertical<class_ScrollContainer_theme_icon_scroll_hint_vertical>`                  |                       |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`focus<class_ScrollContainer_theme_style_focus>`                                               |                       |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`panel<class_ScrollContainer_theme_style_panel>`                                               |                       |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -201,7 +205,7 @@ enum **ScrollHintMode**: :ref:`🔗<enum_ScrollContainer_ScrollHintMode>`
 
 :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **SCROLL_HINT_MODE_DISABLED** = ``0``
 
-Scroll hints will never be shown.
+Підказки прокручування ніколи не відображатимуться.
 
 .. _class_ScrollContainer_constant_SCROLL_HINT_MODE_ALL:
 
@@ -209,7 +213,7 @@ Scroll hints will never be shown.
 
 :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **SCROLL_HINT_MODE_ALL** = ``1``
 
-Scroll hints will be shown at the top and bottom (if vertical), or left and right (if horizontal).
+Підказки прокручування будуть відображатися вгорі та внизу (якщо вертикально) або ліворуч та праворуч (якщо горизонтально).
 
 .. _class_ScrollContainer_constant_SCROLL_HINT_MODE_TOP_AND_LEFT:
 
@@ -217,7 +221,7 @@ Scroll hints will be shown at the top and bottom (if vertical), or left and righ
 
 :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **SCROLL_HINT_MODE_TOP_AND_LEFT** = ``2``
 
-Scroll hints will be shown at the top (if vertical), or the left (if horizontal).
+Підказки прокручування будуть відображатися зверху (якщо вертикально) або ліворуч (якщо горизонтально).
 
 .. _class_ScrollContainer_constant_SCROLL_HINT_MODE_BOTTOM_AND_RIGHT:
 
@@ -225,7 +229,7 @@ Scroll hints will be shown at the top (if vertical), or the left (if horizontal)
 
 :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **SCROLL_HINT_MODE_BOTTOM_AND_RIGHT** = ``3``
 
-Scroll hints will be shown at the bottom (if horizontal), or the right (if horizontal).
+Підказки прокручування будуть відображатися внизу (якщо горизонтальне розташування) або праворуч (якщо горизонтальне розташування).
 
 .. rst-class:: classref-section-separator
 
@@ -315,9 +319,9 @@ Scroll hints will be shown at the bottom (if horizontal), or the right (if horiz
 - |void| **set_scroll_hint_mode**\ (\ value\: :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>`\ )
 - :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **get_scroll_hint_mode**\ (\ )
 
-The way which scroll hints (indicators that show that the content can still be scrolled in a certain direction) will be shown.
+Спосіб відображення підказок прокручування (індикаторів, які показують, що вміст все ще можна прокручувати в певному напрямку).
 
-\ **Note:** Hints won't be shown if the content can be scrolled both vertically and horizontally.
+\ **Примітка:** Підказки не відображатимуться, якщо вміст можна прокручувати як вертикально, так і горизонтально.
 
 .. rst-class:: classref-item-separator
 
@@ -416,7 +420,7 @@ The way which scroll hints (indicators that show that the content can still be s
 - |void| **set_tile_scroll_hint**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_scroll_hint_tiled**\ (\ )
 
-If ``true``, the scroll hint texture will be tiled instead of stretched. See :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
+Якщо значення ``true``, текстура підказки прокручування буде розкладена мозаїкою, а не розтягнута. Див. :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -497,13 +501,37 @@ If ``true``, the scroll hint texture will be tiled instead of stretched. See :re
 Описи тематичної нерухомості
 --------------------------------------------------------
 
+.. _class_ScrollContainer_theme_color_scroll_hint_horizontal_color:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Color<class_Color>` **scroll_hint_horizontal_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ScrollContainer_theme_color_scroll_hint_horizontal_color>`
+
+:ref:`Color<class_Color>` використовується для модуляції текстури :ref:`scroll_hint_horizontal<class_ScrollContainer_theme_icon_scroll_hint_horizontal>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ScrollContainer_theme_color_scroll_hint_vertical_color:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Color<class_Color>` **scroll_hint_vertical_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ScrollContainer_theme_color_scroll_hint_vertical_color>`
+
+:ref:`Color<class_Color>` використовується для модуляції текстури :ref:`scroll_hint_vertical<class_ScrollContainer_theme_icon_scroll_hint_vertical>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_ScrollContainer_theme_constant_scrollbar_h_separation:
 
 .. rst-class:: classref-themeproperty
 
 :ref:`int<class_int>` **scrollbar_h_separation** = ``0`` :ref:`🔗<class_ScrollContainer_theme_constant_scrollbar_h_separation>`
 
-The space between the ScrollContainer's vertical scroll bar and its content, in pixels. No space will be added when the content's minimum size is larger than the ScrollContainer's size.
+Простір між вертикальною смугою прокручування ScrollContainer та його вмістом у пікселях. Простір не додаватиметься, якщо мінімальний розмір вмісту перевищує розмір ScrollContainer.
 
 .. rst-class:: classref-item-separator
 
@@ -515,7 +543,7 @@ The space between the ScrollContainer's vertical scroll bar and its content, in 
 
 :ref:`int<class_int>` **scrollbar_v_separation** = ``0`` :ref:`🔗<class_ScrollContainer_theme_constant_scrollbar_v_separation>`
 
-The space between the ScrollContainer's horizontal scroll bar and its content, in pixels. No space will be added when the content's minimum size is larger than the ScrollContainer's size.
+Простір між горизонтальною смугою прокручування ScrollContainer та його вмістом у пікселях. Простір не додаватиметься, якщо мінімальний розмір вмісту перевищує розмір ScrollContainer.
 
 .. rst-class:: classref-item-separator
 
@@ -527,7 +555,7 @@ The space between the ScrollContainer's horizontal scroll bar and its content, i
 
 :ref:`Texture2D<class_Texture2D>` **scroll_hint_horizontal** :ref:`🔗<class_ScrollContainer_theme_icon_scroll_hint_horizontal>`
 
-The indicator that will be shown when the content can still be scrolled horizontally. See :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
+Індикатор, який відображатиметься, коли вміст все ще можна прокручувати горизонтально. Див. :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -539,7 +567,7 @@ The indicator that will be shown when the content can still be scrolled horizont
 
 :ref:`Texture2D<class_Texture2D>` **scroll_hint_vertical** :ref:`🔗<class_ScrollContainer_theme_icon_scroll_hint_vertical>`
 
-The indicator that will be shown when the content can still be scrolled vertically. See :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
+Індикатор, який відображатиметься, коли вміст все ще можна прокручувати вертикально. Див. :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
 
 .. rst-class:: classref-item-separator
 

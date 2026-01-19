@@ -12,17 +12,17 @@ Une couleur représentée au format RGBA (Red Green Blue Alpha, ou Rouge Vert Bl
 Description
 -----------
 
-A color represented in RGBA format by a red (:ref:`r<class_Color_property_r>`), green (:ref:`g<class_Color_property_g>`), blue (:ref:`b<class_Color_property_b>`), and alpha (:ref:`a<class_Color_property_a>`) component. Each component is a 32-bit floating-point value, usually ranging from ``0.0`` to ``1.0``. Some properties (such as :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>`) may support values greater than ``1.0``, for overbright or HDR (High Dynamic Range) colors.
+Une couleur représentée au format RGBA par un composant rouge (:ref:`r<class_Color_property_r>`), vert (:ref:`g<class_Color_property_g>`), bleu (:ref:`b<class_Color_property_b>`), et alpha (:ref:`a<class_Color_property_a>`). Chaque composant est une valeur flottante de 32 bits, variant habituellement de ``0.0`` à ``1.0``. Certaines propriétés (comme :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>`) peuvent supporter des valeurs supérieures à ``1.0``, pour les couleurs overbright ou HDR (High Dynamic Range).
 
-Colors can be created in a number of ways: By the various **Color** constructors, by static methods such as :ref:`from_hsv()<class_Color_method_from_hsv>`, and by using a name from the set of standardized colors based on `X11 color names <https://en.wikipedia.org/wiki/X11_color_names>`__ with the addition of :ref:`TRANSPARENT<class_Color_constant_TRANSPARENT>`.
+Les couleurs peuvent être créées de plusieurs façons : Par les différents constructeurs **Color**, par des méthodes statiques telles que :ref:`from_hsv()<class_Color_method_from_hsv>`, et en utilisant un nom de l ' ensemble de couleurs normalisées basées sur `X11 noms de couleur <https ://en.wikipedia.org/wiki/X11_color_names>`__ avec l'ajout de :ref:`TRANSPARENT<class_Color_constant_TRANSPARENT>`.
 
-\ `Color constants cheatsheet <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/color_constants.png>`__\ 
+\ `Color constants cheatsheet <https ://raw.githubusercontent.com/godotengine/godot-docs/master/img/color_constants.png>`__\ 
 
-Although **Color** may be used to store values of any encoding, the red (:ref:`r<class_Color_property_r>`), green (:ref:`g<class_Color_property_g>`), and blue (:ref:`b<class_Color_property_b>`) properties of **Color** are expected by Godot to be encoded using the `nonlinear sRGB transfer function <https://en.wikipedia.org/wiki/SRGB#Transfer_function_(%22gamma%22)>`__ unless otherwise stated. This color encoding is used by many traditional art and web tools, making it easy to match colors between Godot and these tools. Godot uses `Rec. ITU-R BT.709 <https://en.wikipedia.org/wiki/Rec._709>`__ color primaries, which are used by the sRGB standard.
+Bien que **Color** puisse être utilisé pour stocker les valeurs de tout codage, les propriétés rouges (:ref:`r<class_Color_property_r>`), vertes (:ref:`g<class_Color_property_g>`), et bleues (:ref:`b<class_Color_property_b>`) de **Color** sont attendues par Godot pour être encodé en utilisant la fonction `). Cet encodage de couleurs est utilisé par de nombreux outils d'art et de web traditionnels, ce qui permet de comparer facilement les couleurs entre Godot et ces outils. Godot utilise [url=https ://en.wikipedia.org/wiki/Rec._709]Rec. ITU-R BT.709 <https ://en.wikipedia.org/wiki/SRGB#Transfer_fonction_(%22gamma%22)22)>`__ des primaires de couleurs, qui sont utilisées par la norme sRGB.
 
-All physical simulation, such as lighting calculations, and colorimetry transformations, such as :ref:`get_luminance()<class_Color_method_get_luminance>`, must be performed on linearly encoded values to produce correct results. When performing these calculations, convert **Color** to and from linear encoding using :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` and :ref:`linear_to_srgb()<class_Color_method_linear_to_srgb>`.
+Toutes les simulations physiques, telles que les calculs d'éclairage et les transformations de colorimétrie, telles que :ref:`get_luminance()<class_Color_method_get_luminance>`, doivent être effectuées sur des valeurs codées linéairement pour produire des résultats corrects. Lors de l'exécution de ces calculs, convertir **Color** à et à partir d'encodage linéaire en utilisant :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` et :ref:`linear_to_srgb()<class_Color_method_linear_to_srgb>`.
 
-\ **Note:** In a boolean context, a Color will evaluate to ``false`` if it is equal to ``Color(0, 0, 0, 1)`` (opaque black). Otherwise, a Color will always evaluate to ``true``.
+\ **Note :** Dans un contexte booléen, une couleur évaluera ``false`` si elle est égale à ``Color(0, 0, 0, 1)`` (opaque noir). Sinon, une couleur évaluera toujours ``true``.
 
 .. note::
 
@@ -1631,18 +1631,18 @@ Construit une **Color** soit depuis un code de couleur HTML, soit depuis un nom 
 
 :ref:`Color<class_Color>` **Color**\ (\ r\: :ref:`float<class_float>`, g\: :ref:`float<class_float>`, b\: :ref:`float<class_float>`\ )
 
-Constructs a **Color** from RGB values, typically between 0.0 and 1.0. :ref:`a<class_Color_property_a>` is set to 1.0.
+Construit une **Color** depuis des valeurs Rouge Vertes Bleues, typiquement entre 0.0 et 1.0. :ref:`a<class_Color_property_a>` est défini à 1.0
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var color = Color(0.2, 1.0, 0.7) # Similar to `Color.from_rgba8(51, 255, 178, 255)`
+    var couleur = Color(0.2, 1.0, 0.7) # Similaire à `Color8(51, 255, 178, 255)`
 
  .. code-tab:: csharp
 
-    var color = new Color(0.2f, 1.0f, 0.7f); // Similar to `Color.Color8(51, 255, 178, 255)`
+    var couleur = Color(0.2f, 1.0f, 0.7f) ; # Similaire à `Color.Color8(51, 255, 178, 255)`
 
 
 
@@ -1654,18 +1654,18 @@ Constructs a **Color** from RGB values, typically between 0.0 and 1.0. :ref:`a<c
 
 :ref:`Color<class_Color>` **Color**\ (\ r\: :ref:`float<class_float>`, g\: :ref:`float<class_float>`, b\: :ref:`float<class_float>`, a\: :ref:`float<class_float>`\ )
 
-Constructs a **Color** from RGBA values, typically between 0.0 and 1.0.
+Construit une **Color** depuis des valeurs Rouge Vert Bleu Alpha, typiquement entre 0.0 et 1.0.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var color = Color(0.2, 1.0, 0.7, 0.8) # Similar to `Color.from_rgba8(51, 255, 178, 204)`
+    var couleur = Color(0.2, 1.0, 0.7, 0.8) # Similaire à `Color.from_rgba8(51, 255, 178, 204)`
 
  .. code-tab:: csharp
 
-    var color = new Color(0.2f, 1.0f, 0.7f, 0.8f); // Similar to `Color.Color8(51, 255, 178, 255, 204)`
+    var couleur = Color(0.2f, 1.0f, 0.7f, 0.8f); // Similaire à `Color.Color8(51, 255, 178, 204)`
 
 
 
@@ -1848,9 +1848,9 @@ Si vous voulez créer une couleur depuis une chaîne dans une expression constan
 
 :ref:`float<class_float>` **get_luminance**\ (\ ) |const| :ref:`🔗<class_Color_method_get_luminance>`
 
-Returns the light intensity of the color, as a value between 0.0 and 1.0 (inclusive). This is useful when determining light or dark color. Colors with a luminance smaller than 0.5 can be generally considered dark.
+Renvoie l'intensité lumineuse de la couleur, en tant que valeur entre 0.0 et 1.0 (inclusive). Ceci est utile pour déterminer si la couleur est claire ou foncée. Les couleurs avec une luminance inférieure à 0,5 peuvent généralement être considérées comme foncées.
 
-\ **Note:** :ref:`get_luminance()<class_Color_method_get_luminance>` relies on the color using linear encoding to return an accurate relative luminance value. If the color uses the default nonlinear sRGB encoding, use :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` to convert it to linear encoding first.
+\ **Note :** :ref:`get_luminance()<class_Color_method_get_luminance>` s'appuie sur le fait que la couleur utilise un encodage linéaire pour renvoyer une valeur de luminosité relative exacte. Si la couleur utilise l'encodage sRGB non-linéaire par défaut, utilisez :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` pour la convertir en encodage linéaire d'abord.
 
 .. rst-class:: classref-item-separator
 

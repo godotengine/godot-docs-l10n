@@ -9,14 +9,14 @@ NavigationLink2D
 
 **Hereda:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A link between two positions on :ref:`NavigationRegion2D<class_NavigationRegion2D>`\ s that agents can be routed through.
+Un enlace entre dos posiciones en :ref:`NavigationRegion2D<class_NavigationRegion2D>`\ s por el que los agentes pueden ser enrutados.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-A link between two positions on :ref:`NavigationRegion2D<class_NavigationRegion2D>`\ s that agents can be routed through. These positions can be on the same :ref:`NavigationRegion2D<class_NavigationRegion2D>` or on two different ones. Links are useful to express navigation methods other than traveling along the surface of the navigation polygon, such as ziplines, teleporters, or gaps that can be jumped across.
+Un enlace entre dos posiciones en :ref:`NavigationRegion2D<class_NavigationRegion2D>`\ s por el que los agentes pueden ser enrutados. Estas posiciones pueden estar en el mismo :ref:`NavigationRegion2D<class_NavigationRegion2D>` o en dos diferentes. Los enlaces son útiles para expresar métodos de navegación distintos a viajar a lo largo de la superficie del polígono de navegación, como tirolinas, teletransportadores o huecos que se pueden saltar.
 
 .. rst-class:: classref-introduction-group
 
@@ -97,7 +97,7 @@ Descripciones de Propiedades
 - |void| **set_bidirectional**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_bidirectional**\ (\ )
 
-Whether this link can be traveled in both directions or only from :ref:`start_position<class_NavigationLink2D_property_start_position>` to :ref:`end_position<class_NavigationLink2D_property_end_position>`.
+Indica si este enlace puede ser recorrido en ambas direcciones o solo desde :ref:`start_position<class_NavigationLink2D_property_start_position>` hasta :ref:`end_position<class_NavigationLink2D_property_end_position>`.
 
 .. rst-class:: classref-item-separator
 
@@ -114,7 +114,7 @@ Whether this link can be traveled in both directions or only from :ref:`start_po
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_enabled**\ (\ )
 
-Whether this link is currently active. If ``false``, :ref:`NavigationServer2D.map_get_path()<class_NavigationServer2D_method_map_get_path>` will ignore this link.
+Si este enlace está actualmente activo. Si es ``false``, :ref:`NavigationServer2D.map_get_path()<class_NavigationServer2D_method_map_get_path>` ignorará este enlace.
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ La distancia que buscará el enlace se controla mediante :ref:`NavigationServer2
 - |void| **set_enter_cost**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_enter_cost**\ (\ )
 
-When pathfinding enters this link from another regions navigation mesh the :ref:`enter_cost<class_NavigationLink2D_property_enter_cost>` value is added to the path distance for determining the shortest path.
+Cuando la búsqueda de trayectos entra en este enlace desde la malla de navegación de otra región, el valor :ref:`enter_cost<class_NavigationLink2D_property_enter_cost>` se añade a la distancia del trayecto para determinar el trayecto más corto.
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ When pathfinding enters this link from another regions navigation mesh the :ref:
 - |void| **set_navigation_layers**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_navigation_layers**\ (\ )
 
-A bitfield determining all navigation layers the link belongs to. These navigation layers will be checked when requesting a path with :ref:`NavigationServer2D.map_get_path()<class_NavigationServer2D_method_map_get_path>`.
+Un campo de bits que determina todas las capas de navegación a las que pertenece el enlace. Estas capas de navegación se comprobarán al solicitar un trayecto con :ref:`NavigationServer2D.map_get_path()<class_NavigationServer2D_method_map_get_path>`.
 
 .. rst-class:: classref-item-separator
 
@@ -186,11 +186,11 @@ A bitfield determining all navigation layers the link belongs to. These navigati
 - |void| **set_start_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_start_position**\ (\ )
 
-Starting position of the link.
+Posición inicial del enlace.
 
-This position will search out the nearest polygon in the navigation mesh to attach to.
+Esta posición buscará el polígono más cercano en la malla de navegación para adjuntarse.
 
-The distance the link will search is controlled by :ref:`NavigationServer2D.map_set_link_connection_radius()<class_NavigationServer2D_method_map_set_link_connection_radius>`.
+La distancia que buscará el enlace está controlada por :ref:`NavigationServer2D.map_set_link_connection_radius()<class_NavigationServer2D_method_map_set_link_connection_radius>`.
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ The distance the link will search is controlled by :ref:`NavigationServer2D.map_
 - |void| **set_travel_cost**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_travel_cost**\ (\ )
 
-When pathfinding moves along the link the traveled distance is multiplied with :ref:`travel_cost<class_NavigationLink2D_property_travel_cost>` for determining the shortest path.
+Cuando la búsqueda de trayecto se mueve a lo largo del enlace, la distancia recorrida se multiplica por :ref:`travel_cost<class_NavigationLink2D_property_travel_cost>` para determinar el trayecto más corto.
 
 .. rst-class:: classref-section-separator
 
@@ -224,7 +224,7 @@ Descripciones de Métodos
 
 :ref:`Vector2<class_Vector2>` **get_global_end_position**\ (\ ) |const| :ref:`🔗<class_NavigationLink2D_method_get_global_end_position>`
 
-Returns the :ref:`end_position<class_NavigationLink2D_property_end_position>` that is relative to the link as a global position.
+Devuelve la :ref:`end_position<class_NavigationLink2D_property_end_position>` que es relativa al enlace como una posición global.
 
 .. rst-class:: classref-item-separator
 
@@ -236,7 +236,7 @@ Returns the :ref:`end_position<class_NavigationLink2D_property_end_position>` th
 
 :ref:`Vector2<class_Vector2>` **get_global_start_position**\ (\ ) |const| :ref:`🔗<class_NavigationLink2D_method_get_global_start_position>`
 
-Returns the :ref:`start_position<class_NavigationLink2D_property_start_position>` that is relative to the link as a global position.
+Devuelve la :ref:`start_position<class_NavigationLink2D_property_start_position>` que es relativa al enlace como una posición global.
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +260,7 @@ Devuelve si la capa especificada de la máscara de bits :ref:`navigation_layers<
 
 :ref:`RID<class_RID>` **get_navigation_map**\ (\ ) |const| :ref:`🔗<class_NavigationLink2D_method_get_navigation_map>`
 
-Returns the current navigation map :ref:`RID<class_RID>` used by this link.
+Devuelve el :ref:`RID<class_RID>` del mapa de navegación actual utilizado por este enlace.
 
 .. rst-class:: classref-item-separator
 
@@ -272,7 +272,7 @@ Returns the current navigation map :ref:`RID<class_RID>` used by this link.
 
 :ref:`RID<class_RID>` **get_rid**\ (\ ) |const| :ref:`🔗<class_NavigationLink2D_method_get_rid>`
 
-Returns the :ref:`RID<class_RID>` of this link on the :ref:`NavigationServer2D<class_NavigationServer2D>`.
+Devuelve el :ref:`RID<class_RID>` de este enlace en el :ref:`NavigationServer2D<class_NavigationServer2D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -284,7 +284,7 @@ Returns the :ref:`RID<class_RID>` of this link on the :ref:`NavigationServer2D<c
 
 |void| **set_global_end_position**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_NavigationLink2D_method_set_global_end_position>`
 
-Sets the :ref:`end_position<class_NavigationLink2D_property_end_position>` that is relative to the link from a global ``position``.
+Establece la :ref:`end_position<class_NavigationLink2D_property_end_position>` que es relativa al enlace desde una ``position`` global.
 
 .. rst-class:: classref-item-separator
 
@@ -320,7 +320,7 @@ Based on ``value``, enables or disables the specified layer in the :ref:`navigat
 
 |void| **set_navigation_map**\ (\ navigation_map\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_NavigationLink2D_method_set_navigation_map>`
 
-Sets the :ref:`RID<class_RID>` of the navigation map this link should use. By default the link will automatically join the :ref:`World2D<class_World2D>` default navigation map so this function is only required to override the default map.
+Establece el :ref:`RID<class_RID>` del mapa de navegación que debe usar este enlace. Por defecto, el enlace se unirá automáticamente al mapa de navegación predeterminado de :ref:`World2D<class_World2D>`, por lo que esta función solo es necesaria para sobrescribir el mapa predeterminado.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -208,11 +208,11 @@ enum **ErrorCode**: :ref:`🔗<enum_JSONRPC_ErrorCode>`
 
 |void| **set_method**\ (\ name\: :ref:`String<class_String>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_JSONRPC_method_set_method>`
 
-Registers a callback for the given method name.
+Регистрирует функцию обратного вызова для указанного имени метода.
 
-- ``name``: The name that clients can use to access the callback.
+- ``name``: Имя, которое клиенты могут использовать для доступа к функции обратного вызова.
 
-- ``callback``: The callback which will handle the specified method.
+- ``callback``: Функция обратного вызова, которая будет обрабатывать указанный метод.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

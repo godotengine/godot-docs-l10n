@@ -381,7 +381,7 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_primary_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_limit_angle**\ (\ )
 
-Граничний кут первинного повороту, коли :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` має значення ``true``.
+Граничний кут основного обертання, коли :ref:`symmetry_limition<class_LookAtModifier3D_property_symmetry_limition>` має значення ``true``, у радіанах.
 
 .. rst-class:: classref-item-separator
 
@@ -415,7 +415,7 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_primary_negative_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_negative_limit_angle**\ (\ )
 
-Граничний кут негативної сторони первинного обертання, коли :ref:`symmetry_limiting<class_LookAtModifier3D_property_symmetry_limiting>` дорівнює ``false``.
+Граничний кут від'ємної сторони основного обертання, коли :ref:`symmetry_limition<class_LookAtModifier3D_property_symmetry_limition>` дорівнює ``false``, у радіанах.
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_primary_positive_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_positive_limit_angle**\ (\ )
 
-Граничний кут позитивної сторони первинного обертання, коли :ref:`symmetry_limiting<class_LookAtModifier3D_property_symmetry_limiting>` дорівнює ``false``.
+Граничний кут позитивної сторони первинного обертання, коли :ref:`symmetry_limition<class_LookAtModifier3D_property_symmetry_limition>` дорівнює ``false``, у радіанах.
 
 .. rst-class:: classref-item-separator
 
@@ -483,7 +483,7 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_relative**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_relative**\ (\ )
 
-The relative option. If ``true``, the rotation is applied relative to the pose. If ``false``, the rotation is applied relative to the rest. It means to replace the current pose with the **LookAtModifier3D**'s result.
+Відносний параметр. Якщо ``true``, обертання застосовується відносно пози. Якщо ``false``, обертання застосовується відносно решти. Це означає заміну поточної пози результатом **LookAtModifier3D**.
 
 .. rst-class:: classref-item-separator
 
@@ -517,7 +517,7 @@ The relative option. If ``true``, the rotation is applied relative to the pose. 
 - |void| **set_secondary_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_limit_angle**\ (\ )
 
-Граничний кут вторинного обертання, коли :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` має значення ``true``.
+Граничний кут вторинного обертання, коли :ref:`symmetry_limition<class_LookAtModifier3D_property_symmetry_limition>` має значення ``true``, у радіанах.
 
 .. rst-class:: classref-item-separator
 
@@ -551,7 +551,7 @@ The relative option. If ``true``, the rotation is applied relative to the pose. 
 - |void| **set_secondary_negative_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_negative_limit_angle**\ (\ )
 
-Граничний кут негативної сторони вторинного обертання, коли :ref:`symmetry_limiting<class_LookAtModifier3D_property_symmetry_limiting>` дорівнює ``false``.
+Граничний кут від'ємної сторони вторинного обертання, коли :ref:`symmetry_limition<class_LookAtModifier3D_property_symmetry_limition>` дорівнює ``false``, у радіанах.
 
 .. rst-class:: classref-item-separator
 
@@ -585,7 +585,7 @@ The relative option. If ``true``, the rotation is applied relative to the pose. 
 - |void| **set_secondary_positive_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_positive_limit_angle**\ (\ )
 
-Граничний кут позитивної сторони вторинного обертання, коли :ref:`symmetry_limiting<class_LookAtModifier3D_property_symmetry_limiting>` дорівнює ``false``.
+Граничний кут позитивної сторони вторинного обертання, коли :ref:`symmetry_limition<class_LookAtModifier3D_property_symmetry_limition>` дорівнює ``false``, у радіанах.
 
 .. rst-class:: classref-item-separator
 

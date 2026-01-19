@@ -162,7 +162,7 @@ Obtient l'objet de répertoire racine.
 
 :ref:`EditorFileSystemDirectory<class_EditorFileSystemDirectory>` **get_filesystem_path**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorFileSystem_method_get_filesystem_path>`
 
-Returns a view into the filesystem at ``path``.
+Retourne une vue dans le système de fichiers à ``path``.
 
 .. rst-class:: classref-item-separator
 

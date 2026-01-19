@@ -9,14 +9,14 @@ JointLimitation3D
 
 **Успадковано від:** :ref:`JointLimitationCone3D<class_JointLimitationCone3D>`
 
-A base class of the limitation that interacts with :ref:`ChainIK3D<class_ChainIK3D>`.
+Базовий клас обмеження, що взаємодіє з :ref:`ChainIK3D<class_ChainIK3D>`.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-The limitation is attached to each joint and limits the rotation of the bone.
+Обмеження прикріплене до кожного суглоба та обмежує обертання кістки.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

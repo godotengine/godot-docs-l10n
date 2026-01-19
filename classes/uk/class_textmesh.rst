@@ -110,9 +110,9 @@ UV-макет розташовано у вигляді 4 горизонталь�
 - |void| **set_curve_step**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_curve_step**\ (\ )
 
-Step (in pixels) used to approximate Bézier curves. Lower values result in smoother curves, but is slower to generate and render. Consider adjusting this according to the font size and the typical viewing distance.
+Крок (у пікселях), що використовується для апроксимації кривих Безьє. Нижчі значення призводять до більш плавних кривих, але їх генерація та рендеринг повільніші. Розгляньте можливість налаштування цього кроку відповідно до розміру шрифту та типової відстані перегляду.
 
-\ **Note:** Changing this property will regenerate the mesh, which is a slow operation, especially with large font sizes and long texts.
+\ **Примітка:** Зміна цієї властивості призведе до регенерації сітки, що є повільною операцією, особливо з великими розмірами шрифтів та довгими текстами.
 
 .. rst-class:: classref-item-separator
 
@@ -163,9 +163,9 @@ Step (in pixels) used to approximate Bézier curves. Lower values result in smoo
 - |void| **set_font_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_font_size**\ (\ )
 
-Font size of the **TextMesh**'s text. This property works in tandem with :ref:`pixel_size<class_TextMesh_property_pixel_size>`. Higher values will result in a more detailed font, regardless of :ref:`curve_step<class_TextMesh_property_curve_step>` and :ref:`pixel_size<class_TextMesh_property_pixel_size>`. Consider keeping this value below 63 (inclusive) for good performance, and adjust :ref:`pixel_size<class_TextMesh_property_pixel_size>` as needed to enlarge text.
+Розмір шрифту тексту **TextMesh**. Ця властивість працює разом із властивістю :ref:`pixel_size<class_TextMesh_property_pixel_size>`. Вищі значення призведуть до детальнішого шрифту, незалежно від :ref:`curve_step<class_TextMesh_property_curve_step>` та :ref:`pixel_size<class_TextMesh_property_pixel_size>`. Для кращої продуктивності рекомендується залишати це значення нижче 63 (включно), а для збільшення тексту слід коригувати :ref:`pixel_size<class_TextMesh_property_pixel_size>` за потреби.
 
-\ **Note:** Changing this property will regenerate the mesh, which is a slow operation, especially with large font sizes and long texts. To change the text's size in real-time efficiently, change the node's :ref:`Node3D.scale<class_Node3D_property_scale>` instead.
+\ **Примітка:** Зміна цієї властивості призведе до регенерації сітки, що є повільною операцією, особливо з великими розмірами шрифтів та довгими текстами. Щоб ефективно змінювати розмір тексту в режимі реального часу, змініть замість цього властивість :ref:`Node3D.scale<class_Node3D_property_scale>` вузла.
 
 .. rst-class:: classref-item-separator
 
@@ -216,7 +216,7 @@ Font size of the **TextMesh**'s text. This property works in tandem with :ref:`p
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+Код мови, що використовується для алгоритмів розриву рядків та формування тексту. Якщо залишити поле порожнім, використовується поточна локалізація.
 
 .. rst-class:: classref-item-separator
 
@@ -250,9 +250,9 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 - |void| **set_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset**\ (\ )
 
-The text drawing offset (in pixels).
+Зсув малювання тексту (у пікселях).
 
-\ **Note:** Changing this property will regenerate the mesh, which is a slow operation. To change the text's position in real-time efficiently, change the node's :ref:`Node3D.position<class_Node3D_property_position>` instead.
+\ **Примітка:** Зміна цієї властивості призведе до регенерації сітки, що є повільною операцією. Щоб ефективно змінювати положення тексту в режимі реального часу, змініть замість цього вузол :ref:`Node3D.position<class_Node3D_property_position>`.
 
 .. rst-class:: classref-item-separator
 
@@ -269,9 +269,9 @@ The text drawing offset (in pixels).
 - |void| **set_pixel_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pixel_size**\ (\ )
 
-The size of one pixel's width on the text to scale it in 3D. This property works in tandem with :ref:`font_size<class_TextMesh_property_font_size>`.
+Розмір ширини одного пікселя тексту для масштабування у 3D. Ця властивість працює разом із :ref:`font_size<class_TextMesh_property_font_size>`.
 
-\ **Note:** Changing this property will regenerate the mesh, which is a slow operation, especially with large font sizes and long texts. To change the text's size in real-time efficiently, change the node's :ref:`Node3D.scale<class_Node3D_property_scale>` instead.
+\ **Примітка:** Зміна цієї властивості призведе до регенерації сітки, що є повільною операцією, особливо з великими розмірами шрифтів та довгими текстами. Щоб ефективно змінювати розмір тексту в режимі реального часу, змініть замість цього вузол :ref:`Node3D.scale<class_Node3D_property_scale>`.
 
 .. rst-class:: classref-item-separator
 

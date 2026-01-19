@@ -7,7 +7,7 @@ UPNP
 
 **Hereda:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Universal Plug and Play (UPnP) functions for network device discovery, querying and port forwarding.
+Funciones de Universal Plug and Play (UPnP) para el descubrimiento de dispositivos de red, consulta y redirección de puertos.
 
 .. rst-class:: classref-introduction-group
 
@@ -269,7 +269,7 @@ Los valores de los puertos externos e internos deben ser los mismos.
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_ONLY_PERMANENT_LEASE_SUPPORTED** = ``15``
 
-Sólo se admiten los arrendamientos permanentes. No utilices el parámetro ``duration`` cuando añada mapeos de puertos.
+Solo se admiten los arrendamientos permanentes. No utilices el parámetro ``duration`` cuando añada mapeos de puertos.
 
 .. _class_UPNP_constant_UPNP_RESULT_INVALID_GATEWAY:
 

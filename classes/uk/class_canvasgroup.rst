@@ -14,9 +14,9 @@ CanvasGroup
 Опис
 --------
 
-Child :ref:`CanvasItem<class_CanvasItem>` nodes of a **CanvasGroup** are drawn as a single object. It allows to e.g. draw overlapping translucent 2D nodes without causing the overlapping sections to be more opaque than intended (set the :ref:`CanvasItem.self_modulate<class_CanvasItem_property_self_modulate>` property on the **CanvasGroup** to achieve this effect).
+Дочірні вузли :ref:`CanvasItem<class_CanvasItem>` об'єкта **CanvasGroup** малюються як один об'єкт. Це дозволяє, наприклад, малювати перекриваючі напівпрозорі 2D-вузли, не роблячи перекриваючі ділянки більш непрозорими, ніж передбачалося (для досягнення цього ефекту встановіть властивість :ref:`CanvasItem.self_modulate<class_CanvasItem_property_self_modulate>` об'єкта **CanvasGroup**).
 
-\ **Note:** The **CanvasGroup** uses a custom shader to read from the backbuffer to draw its children. Assigning a :ref:`Material<class_Material>` to the **CanvasGroup** overrides the built-in shader. To duplicate the behavior of the built-in shader in a custom :ref:`Shader<class_Shader>`, use the following:
+\ **Примітка:** Об'єкт **CanvasGroup** використовує власний шейдер для зчитування з бекбуфера для малювання своїх дочірніх об'єктів. Призначення :ref:`Material<class_Material>` об'єкту **CanvasGroup** перевизначає вбудований шейдер. Щоб дублювати поведінку вбудованого шейдера у власному :ref:`Shader<class_Shader>`, використовуйте наступне:
 
 ::
 
@@ -26,7 +26,7 @@ Child :ref:`CanvasItem<class_CanvasItem>` nodes of a **CanvasGroup** are drawn a
     uniform sampler2D screen_texture : hint_screen_texture, repeat_disable, filter_nearest;
 
     void fragment() {
-        vec4 c = textureLod(screen_texture, SCREEN_UV, 0.0);
+        vec4 c = textureLod(screen_texture, SCREEN_UV, 0.0); 
 
         if (c.a > 0.0001) {
             c.rgb /= c.a;
@@ -35,7 +35,7 @@ Child :ref:`CanvasItem<class_CanvasItem>` nodes of a **CanvasGroup** are drawn a
         COLOR *= c;
     }
 
-\ **Note:** Since **CanvasGroup** and :ref:`CanvasItem.clip_children<class_CanvasItem_property_clip_children>` both utilize the backbuffer, children of a **CanvasGroup** who have their :ref:`CanvasItem.clip_children<class_CanvasItem_property_clip_children>` set to anything other than :ref:`CanvasItem.CLIP_CHILDREN_DISABLED<class_CanvasItem_constant_CLIP_CHILDREN_DISABLED>` will not function correctly.
+\ **Примітка:** Оскільки **CanvasGroup** та :ref:`CanvasItem.clip_children<class_CanvasItem_property_clip_children>` використовують зворотний буфер, дочірні елементи **CanvasGroup**, у яких :ref:`CanvasItem.clip_children<class_CanvasItem_property_clip_children>` встановлено значення, відмінне від :ref:`CanvasItem.CLIP_CHILDREN_DISABLED<class_CanvasItem_constant_CLIP_CHILDREN_DISABLED>`, не працюватимуть належним чином.
 
 .. rst-class:: classref-reftable-group
 

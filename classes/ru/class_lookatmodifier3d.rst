@@ -381,7 +381,7 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_primary_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_limit_angle**\ (\ )
 
-Предельный угол первичного вращения, когда :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` равно ``true``.
+Предельный угол основного вращения, когда :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` равно ``true``, в радианах.
 
 .. rst-class:: classref-item-separator
 
@@ -415,7 +415,7 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_primary_negative_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_negative_limit_angle**\ (\ )
 
-Предельный угол отрицательной стороны первичного вращения, когда :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` равно ``false``.
+Предельный угол отрицательной стороны основного вращения, когда :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` равно ``false``, в радианах.
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_primary_positive_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_positive_limit_angle**\ (\ )
 
-Предельный угол положительной стороны первичного вращения, когда :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` равно ``false``.
+Предельный угол положительной стороны основного вращения, когда :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` равно ``false``, в радианах.
 
 .. rst-class:: classref-item-separator
 
@@ -483,7 +483,7 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_relative**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_relative**\ (\ )
 
-The relative option. If ``true``, the rotation is applied relative to the pose. If ``false``, the rotation is applied relative to the rest. It means to replace the current pose with the **LookAtModifier3D**'s result.
+Относительная опция. Если ``true``, вращение применяется относительно позы. Если ``false``, вращение применяется относительно всего остального. Это означает замену текущей позы результатом **LookAtModifier3D**.
 
 .. rst-class:: classref-item-separator
 
@@ -517,7 +517,7 @@ The relative option. If ``true``, the rotation is applied relative to the pose. 
 - |void| **set_secondary_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_limit_angle**\ (\ )
 
-Предельный угол вторичного вращения, когда :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` равно ``true``.
+Предельный угол вторичного вращения, когда :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` равно ``true``, в радианах.
 
 .. rst-class:: classref-item-separator
 
@@ -551,7 +551,7 @@ The relative option. If ``true``, the rotation is applied relative to the pose. 
 - |void| **set_secondary_negative_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_negative_limit_angle**\ (\ )
 
-Предельный угол отрицательной стороны вторичного вращения, когда :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` равно ``false``.
+Предельный угол отрицательной стороны вторичного вращения, когда :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` равно ``false``, в радианах.
 
 .. rst-class:: classref-item-separator
 
@@ -585,7 +585,7 @@ The relative option. If ``true``, the rotation is applied relative to the pose. 
 - |void| **set_secondary_positive_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_positive_limit_angle**\ (\ )
 
-Предельный угол положительной стороны вторичного вращения, когда :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` равно ``false``.
+Предельный угол положительной стороны вторичного вращения, когда :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` равно ``false``, в радианах.
 
 .. rst-class:: classref-item-separator
 

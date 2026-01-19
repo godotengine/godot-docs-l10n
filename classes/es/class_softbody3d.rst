@@ -154,9 +154,9 @@ Descripciones de Propiedades
 - |void| **set_collision_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_layer**\ (\ )
 
-The physics layers this SoftBody3D **is in**. Collision objects can exist in one or more of 32 different layers. See also :ref:`collision_mask<class_SoftBody3D_property_collision_mask>`.
+Las capas de física **en las que se encuentra** este SoftBody3D. Los objetos de colisión pueden existir en una o más de 32 capas diferentes. Ver también :ref:`collision_mask<class_SoftBody3D_property_collision_mask>`.
 
-\ **Note:** Object A can detect a contact with object B only if object B is in any of the layers that object A scans. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
+\ **Nota:** El objeto A puede detectar un contacto con el objeto B solo si el objeto B está en alguna de las capas que el objeto A escanea. Véase `Capas y máscaras de colisión <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ en la documentación para más información.
 
 .. rst-class:: classref-item-separator
 
@@ -173,9 +173,9 @@ The physics layers this SoftBody3D **is in**. Collision objects can exist in one
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-The physics layers this SoftBody3D **scans**. Collision objects can scan one or more of 32 different layers. See also :ref:`collision_layer<class_SoftBody3D_property_collision_layer>`.
+Las capas de física que este SoftBody3D **escanea**. Los objetos de colisión pueden escanear una o más de 32 capas diferentes. Véase también :ref:`collision_layer<class_SoftBody3D_property_collision_layer>`.
 
-\ **Note:** Object A can detect a contact with object B only if object B is in any of the layers that object A scans. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
+\ **Nota:** El objeto A puede detectar un contacto con el objeto B solo si el objeto B está en alguna de las capas que el objeto A escanea. Véase `Capas y máscaras de colisión <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ en la documentación para más información.
 
 .. rst-class:: classref-item-separator
 

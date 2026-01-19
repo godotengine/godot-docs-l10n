@@ -16,7 +16,7 @@ Object for storing the queries mesh2d result data.
 Описание
 ----------------
 
-Object for storing the queries 2D mesh result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Объект для хранения данных результатов запроса в виде 2D-сетки при вызове метода :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -49,7 +49,7 @@ Object for storing the queries 2D mesh result data when calling :ref:`OpenXRSpat
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_indices**\ (\ snapshot\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMesh2DList_method_get_indices>`
 
-Returns the mesh indices for the entity at this ``index``.
+Возвращает индексы (indices) сетки для объекта по этому адресу ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -61,7 +61,7 @@ Returns the mesh indices for the entity at this ``index``.
 
 :ref:`Transform3D<class_Transform3D>` **get_transform**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMesh2DList_method_get_transform>`
 
-Returns the transform for positioning our mesh for the entity at this ``index``.
+Возвращает преобразование для позиционирования нашей сетки для объекта в точке с индексом ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ Returns the transform for positioning our mesh for the entity at this ``index``.
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_vertices**\ (\ snapshot\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMesh2DList_method_get_vertices>`
 
-Returns the mesh vertices for the entity at this ``index``.
+Возвращает вершины сетки для объекта по этому ``index``.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -247,9 +247,9 @@ Sets the end bone name of the bone chain.
 
 |void| **set_extend_end_bone**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ChainIK3D_method_set_extend_end_bone>`
 
-If ``enabled`` is ``true``, the end bone is extended to have a tail.
+如果 ``enabled`` 为 ``true``\ ，则会延伸末端骨骼形成尾部。
 
-The extended tail config is allocated to the last element in the joint list. In other words, if you set ``enabled`` to ``false``, the config of the last element in the joint list has no effect in the simulated result.
+扩展的尾部配置会分配给关节列表中的最后一个元素。换句话说，如果将 ``enabled`` 设置为 ``false``\ ，则关节列表中最后一个元素的配置对模拟结果没有影响。
 
 .. rst-class:: classref-item-separator
 

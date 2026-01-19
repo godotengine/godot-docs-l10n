@@ -33,7 +33,7 @@ The **LightmapGI** node is used to compute and store baked lightmaps. Lightmaps 
 Tutoriales
 --------------------
 
-- :doc:`Using Lightmap global illumination <../tutorials/3d/global_illumination/using_lightmap_gi>`
+- :doc:`Usando iluminación global de Lightmap <../tutorials/3d/global_illumination/using_lightmap_gi>`
 
 .. rst-class:: classref-reftable-group
 
@@ -110,7 +110,7 @@ enum **BakeQuality**: :ref:`🔗<enum_LightmapGI_BakeQuality>`
 
 :ref:`BakeQuality<enum_LightmapGI_BakeQuality>` **BAKE_QUALITY_LOW** = ``0``
 
-Low bake quality (fastest bake times). The quality of this preset can be adjusted by changing :ref:`ProjectSettings.rendering/lightmapping/bake_quality/low_quality_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/low_quality_ray_count>` and :ref:`ProjectSettings.rendering/lightmapping/bake_quality/low_quality_probe_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/low_quality_probe_ray_count>`.
+Calidad baja de procesado (tiempos de procesado más rápidos). La calidad de este ajuste preestablecido se puede ajustar cambiando :ref:`ProjectSettings.rendering/lightmapping/bake_quality/low_quality_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/low_quality_ray_count>` y :ref:`ProjectSettings.rendering/lightmapping/bake_quality/low_quality_probe_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/low_quality_probe_ray_count>`.
 
 .. _class_LightmapGI_constant_BAKE_QUALITY_MEDIUM:
 
@@ -118,7 +118,7 @@ Low bake quality (fastest bake times). The quality of this preset can be adjuste
 
 :ref:`BakeQuality<enum_LightmapGI_BakeQuality>` **BAKE_QUALITY_MEDIUM** = ``1``
 
-Medium bake quality (fast bake times). The quality of this preset can be adjusted by changing :ref:`ProjectSettings.rendering/lightmapping/bake_quality/medium_quality_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/medium_quality_ray_count>` and :ref:`ProjectSettings.rendering/lightmapping/bake_quality/medium_quality_probe_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/medium_quality_probe_ray_count>`.
+Calidad media de procesado (tiempos de procesado rápidos). La calidad de este ajuste preestablecido se puede ajustar cambiando :ref:`ProjectSettings.rendering/lightmapping/bake_quality/medium_quality_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/medium_quality_ray_count>` y :ref:`ProjectSettings.rendering/lightmapping/bake_quality/medium_quality_probe_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/medium_quality_probe_ray_count>`.
 
 .. _class_LightmapGI_constant_BAKE_QUALITY_HIGH:
 
@@ -126,7 +126,7 @@ Medium bake quality (fast bake times). The quality of this preset can be adjuste
 
 :ref:`BakeQuality<enum_LightmapGI_BakeQuality>` **BAKE_QUALITY_HIGH** = ``2``
 
-High bake quality (slow bake times). The quality of this preset can be adjusted by changing :ref:`ProjectSettings.rendering/lightmapping/bake_quality/high_quality_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/high_quality_ray_count>` and :ref:`ProjectSettings.rendering/lightmapping/bake_quality/high_quality_probe_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/high_quality_probe_ray_count>`.
+Calidad alta de procesado (tiempos de procesado lentos). La calidad de este preajuste se puede ajustar cambiando :ref:`ProjectSettings.rendering/lightmapping/bake_quality/high_quality_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/high_quality_ray_count>` y :ref:`ProjectSettings.rendering/lightmapping/bake_quality/high_quality_probe_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/high_quality_probe_ray_count>`.
 
 .. _class_LightmapGI_constant_BAKE_QUALITY_ULTRA:
 
@@ -134,7 +134,7 @@ High bake quality (slow bake times). The quality of this preset can be adjusted 
 
 :ref:`BakeQuality<enum_LightmapGI_BakeQuality>` **BAKE_QUALITY_ULTRA** = ``3``
 
-Highest bake quality (slowest bake times). The quality of this preset can be adjusted by changing :ref:`ProjectSettings.rendering/lightmapping/bake_quality/ultra_quality_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/ultra_quality_ray_count>` and :ref:`ProjectSettings.rendering/lightmapping/bake_quality/ultra_quality_probe_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/ultra_quality_probe_ray_count>`.
+Calidad más alta de procesado (tiempos de procesado más lentos). La calidad de este preajuste se puede ajustar cambiando :ref:`ProjectSettings.rendering/lightmapping/bake_quality/ultra_quality_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/ultra_quality_ray_count>` y :ref:`ProjectSettings.rendering/lightmapping/bake_quality/ultra_quality_probe_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/ultra_quality_probe_ray_count>`.
 
 .. rst-class:: classref-item-separator
 
@@ -316,9 +316,9 @@ Ignorar la iluminación del entorno al procesar lightmaps.
 
 :ref:`EnvironmentMode<enum_LightmapGI_EnvironmentMode>` **ENVIRONMENT_MODE_SCENE** = ``1``
 
-Use the scene's environment lighting when baking lightmaps.
+Usa la iluminación ambiental de la escena al procesar lightmaps.
 
-\ **Note:** If baking lightmaps in a scene with no :ref:`WorldEnvironment<class_WorldEnvironment>` node, this will act like :ref:`ENVIRONMENT_MODE_DISABLED<class_LightmapGI_constant_ENVIRONMENT_MODE_DISABLED>`. The editor's preview sky and sun is *not* taken into account by **LightmapGI** when baking lightmaps.
+\ **Nota:** Si procesas lightmaps en una escena sin un nodo :ref:`WorldEnvironment<class_WorldEnvironment>`, esto actuará como :ref:`ENVIRONMENT_MODE_DISABLED<class_LightmapGI_constant_ENVIRONMENT_MODE_DISABLED>`. El cielo y el sol de la previsualización del editor *no* son tomados en cuenta por **LightmapGI** al procesar lightmaps.
 
 .. _class_LightmapGI_constant_ENVIRONMENT_MODE_CUSTOM_SKY:
 
@@ -426,7 +426,7 @@ El recurso :ref:`CameraAttributes<class_CameraAttributes>` que especifica los ni
 - |void| **set_denoiser_range**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_denoiser_range**\ (\ )
 
-The distance in pixels from which the denoiser samples. Lower values preserve more details, but may give blotchy results if the lightmap quality is not high enough. Only effective if :ref:`use_denoiser<class_LightmapGI_property_use_denoiser>` is ``true`` and :ref:`ProjectSettings.rendering/lightmapping/denoising/denoiser<class_ProjectSettings_property_rendering/lightmapping/denoising/denoiser>` is set to JNLM.
+La distancia en píxeles desde la que muestrea el denoiser. Los valores más bajos conservan más detalles, pero pueden dar resultados irregulares si la calidad del lightmap no es lo suficientemente alta. Solo es efectivo si :ref:`use_denoiser<class_LightmapGI_property_use_denoiser>` es ``true`` y :ref:`ProjectSettings.rendering/lightmapping/denoising/denoiser<class_ProjectSettings_property_rendering/lightmapping/denoising/denoiser>` está establecido en JNLM.
 
 .. rst-class:: classref-item-separator
 
@@ -460,9 +460,9 @@ La fuerza del paso de eliminación de ruido aplicado a los lightmaps generados. 
 - |void| **set_directional**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_directional**\ (\ )
 
-If ``true``, bakes lightmaps to contain directional information as spherical harmonics. This results in more realistic lighting appearance, especially with normal mapped materials and for lights that have their direct light baked (:ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>` set to :ref:`Light3D.BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>` and with :ref:`Light3D.editor_only<class_Light3D_property_editor_only>` set to ``false``). The directional information is also used to provide rough reflections for static and dynamic objects. This has a small run-time performance cost as the shader has to perform more work to interpret the direction information from the lightmap. Directional lightmaps also take longer to bake and result in larger file sizes.
+Si ``true``, procesa lightmaps para contener información direccional como armónicos esféricos. Esto resulta en una apariencia de iluminación más realista, especialmente con materiales con mapeado normal y para luces que tienen su luz directa procesada (:ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>` establecido en :ref:`Light3D.BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>` y con :ref:`Light3D.editor_only<class_Light3D_property_editor_only>` establecido en ``false``). La información direccional también se utiliza para proporcionar reflejos rugosos para objetos estáticos y dinámicos. Esto tiene un pequeño coste de rendimiento en tiempo de ejecución, ya que el sombreador tiene que realizar más trabajo para interpretar la información de dirección del lightmap. Los lightmaps direccionales también tardan más en procesarse y resultan en archivos de mayor tamaño.
 
-\ **Note:** The property's name has no relationship with :ref:`DirectionalLight3D<class_DirectionalLight3D>`. :ref:`directional<class_LightmapGI_property_directional>` works with all light types.
+\ **Nota:** El nombre de la propiedad no tiene relación con :ref:`DirectionalLight3D<class_DirectionalLight3D>`. :ref:`directional<class_LightmapGI_property_directional>` funciona con todos los tipos de luz.
 
 .. rst-class:: classref-item-separator
 
@@ -642,11 +642,11 @@ Para aumentar aún más la calidad, activa :ref:`supersampling<class_LightmapGI_
 
 **Experimental:** Esta propiedad podría ser modificada o eliminada en versiones futuras.
 
-The shadowmasking policy to use for directional shadows on static objects that are baked with this **LightmapGI** instance.
+La política de máscara de sombras a utilizar para sombras direccionales en objetos estáticos que se procesan con esta instancia de **LightmapGI**.
 
-Shadowmasking allows :ref:`DirectionalLight3D<class_DirectionalLight3D>` nodes to cast shadows even outside the range defined by their :ref:`DirectionalLight3D.directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>` property. This is done by baking a texture that contains a shadowmap for the directional light, then using this texture according to the current shadowmask mode.
+El enmascaramiento de sombras permite a los nodos :ref:`DirectionalLight3D<class_DirectionalLight3D>` proyectar sombras incluso fuera del rango definido por su propiedad :ref:`DirectionalLight3D.directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>`. Esto se logra procesando una textura que contiene un mapa de sombras para la luz direccional, y luego usando esta textura de acuerdo con el modo de máscara de sombras actual.
 
-\ **Note:** The shadowmask texture is only created if :ref:`shadowmask_mode<class_LightmapGI_property_shadowmask_mode>` is not :ref:`LightmapGIData.SHADOWMASK_MODE_NONE<class_LightmapGIData_constant_SHADOWMASK_MODE_NONE>`. To see a difference, you need to bake lightmaps again after switching from :ref:`LightmapGIData.SHADOWMASK_MODE_NONE<class_LightmapGIData_constant_SHADOWMASK_MODE_NONE>` to any other mode.
+\ **Nota:** La textura de máscara de sombras solo se crea si :ref:`shadowmask_mode<class_LightmapGI_property_shadowmask_mode>` no es :ref:`LightmapGIData.SHADOWMASK_MODE_NONE<class_LightmapGIData_constant_SHADOWMASK_MODE_NONE>`. Para ver una diferencia, debes procesar los lightmaps nuevamente después de cambiar de :ref:`LightmapGIData.SHADOWMASK_MODE_NONE<class_LightmapGIData_constant_SHADOWMASK_MODE_NONE>` a cualquier otro modo.
 
 .. rst-class:: classref-item-separator
 
@@ -663,9 +663,9 @@ Shadowmasking allows :ref:`DirectionalLight3D<class_DirectionalLight3D>` nodes t
 - |void| **set_supersampling_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_supersampling_enabled**\ (\ )
 
-If ``true``, lightmaps are baked with the texel scale multiplied with :ref:`supersampling_factor<class_LightmapGI_property_supersampling_factor>` and downsampled before saving the lightmap (so the effective texel density is identical to having supersampling disabled).
+Si ``true``, los lightmaps se procesan con la escala de texel multiplicada por :ref:`supersampling_factor<class_LightmapGI_property_supersampling_factor>` y se submuestrean antes de guardar el lightmap (de modo que la densidad de texel efectiva es idéntica a tener el supermuestreo deshabilitado).
 
-Supersampling provides increased lightmap quality with less noise, smoother shadows and better shadowing of small-scale features in objects. However, it may result in significantly increased bake times and memory usage while baking lightmaps. Padding is automatically adjusted to avoid increasing light leaking.
+El supermuestreo proporciona una mayor calidad de lightmap con menos ruido, sombras más suaves y una mejor proyección de sombras de características a pequeña escala en los objetos. Sin embargo, puede resultar en tiempos de procesado y uso de memoria significativamente mayores al procesar lightmaps. El relleno se ajusta automáticamente para evitar aumentar la fuga de luz.
 
 .. rst-class:: classref-item-separator
 
@@ -682,11 +682,11 @@ Supersampling provides increased lightmap quality with less noise, smoother shad
 - |void| **set_supersampling_factor**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_supersampling_factor**\ (\ )
 
-The factor by which the texel density is multiplied for supersampling. For best results, use an integer value. While fractional values are allowed, they can result in increased light leaking and a blurry lightmap.
+El factor por el cual se multiplica la densidad de texel para el supermuestreo. Para obtener mejores resultados, utiliza un valor entero. Aunque se permiten valores fraccionarios, estos pueden resultar en un aumento de la fuga de luz y un lightmap borroso.
 
-Higher values may result in better quality, but also increase bake times and memory usage while baking.
+Valores más altos pueden resultar en una mejor calidad, pero también aumentan los tiempos de procesado y el uso de memoria durante el procesado.
 
-See :ref:`supersampling<class_LightmapGI_property_supersampling>` for more information.
+Consulta :ref:`supersampling<class_LightmapGI_property_supersampling>` para obtener más información.
 
 .. rst-class:: classref-item-separator
 
@@ -739,9 +739,9 @@ If ``true``, uses a GPU-based denoising algorithm on the generated lightmap. Thi
 - |void| **set_use_texture_for_bounces**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_texture_for_bounces**\ (\ )
 
-If ``true``, a texture with the lighting information will be generated to speed up the generation of indirect lighting at the cost of some accuracy. The geometry might exhibit extra light leak artifacts when using low resolution lightmaps or UVs that stretch the lightmap significantly across surfaces. Leave :ref:`use_texture_for_bounces<class_LightmapGI_property_use_texture_for_bounces>` at its default value of ``true`` if unsure.
+Si es ``true``, se generará una textura con la información de iluminación para acelerar la generación de iluminación indirecta a costa de cierta precisión. La geometría puede presentar artefactos de fugas de luz adicionales al usar lightmaps de baja resolución o UVs que estiran el lightmap significativamente a través de las superficies. Deja :ref:`use_texture_for_bounces<class_LightmapGI_property_use_texture_for_bounces>` en su valor predeterminado de ``true`` si no estás seguro.
 
-\ **Note:** :ref:`use_texture_for_bounces<class_LightmapGI_property_use_texture_for_bounces>` only has an effect if :ref:`bounces<class_LightmapGI_property_bounces>` is set to a value greater than or equal to ``1``.
+\ **Nota:** :ref:`use_texture_for_bounces<class_LightmapGI_property_use_texture_for_bounces>` solo tiene efecto si :ref:`bounces<class_LightmapGI_property_bounces>` se establece en un valor mayor o igual a ``1``.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

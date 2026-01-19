@@ -319,7 +319,7 @@ Esto no afecta al tamaño de las mallas. Véase :ref:`cell_scale<class_GridMap_p
 
 Las capas físicas en las que se encuentra este GridMap.
 
-Los GridMaps actúan como cuerpos estáticos, lo que significa que no son afectados por la gravedad u otras fuerzas. Sólo afectan a otros cuerpos físicos que colisionan con ellos.
+Los GridMaps actúan como cuerpos estáticos, lo que significa que no son afectados por la gravedad u otras fuerzas. Solo afectan a otros cuerpos físicos que colisionan con ellos.
 
 .. rst-class:: classref-item-separator
 

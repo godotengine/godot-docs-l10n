@@ -1226,11 +1226,11 @@ Voir aussi :ref:`map()<class_Array_method_map>`, :ref:`filter()<class_Array_meth
 
 |void| **remove_at**\ (\ position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Array_method_remove_at>`
 
-Removes the element from the array at the given index (``position``). If the index is out of bounds, this method fails. If the index is negative, ``position`` is considered relative to the end of the array.
+Retire l'élément du tableau à l'index donné (``position``). Si l'index est hors des limites, cette méthode échoue. Si l'index est négatif, ``position`` est considéré comme relatif par rapport à la fin du tableau.
 
-If you need to return the removed element, use :ref:`pop_at()<class_Array_method_pop_at>`. To remove an element by value, use :ref:`erase()<class_Array_method_erase>` instead.
+Si vous devez renvoyer l'élément enlevé, utilisez :ref:`pop_at()<class_Array_method_pop_at>`. Pour supprimer un élément par valeur, utilisez plutôt :ref:`erase()<class_Array_method_erase>`.
 
-\ **Note:** This method shifts every element's index after ``position`` back, which may have a noticeable performance cost, especially on larger arrays.
+\ **Note :** Cette méthode déplace l'index de chaque élément après ``position`` en arrière, ce qui peut avoir un coût en performance notable, en particulier sur les grands tableaux.
 
 .. rst-class:: classref-item-separator
 

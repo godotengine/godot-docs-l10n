@@ -2352,9 +2352,9 @@ Renvoie la transformation d'étirement 2D automatiquement calculée, en tenant c
 
 :ref:`ViewportTexture<class_ViewportTexture>` **get_texture**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_texture>`
 
-Returns the viewport's texture.
+Renvoie la texture du viewport.
 
-\ **Note:** When trying to store the current texture (e.g. in a file), it might be completely black or outdated if used too early, especially when used in e.g. :ref:`Node._ready()<class_Node_private_method__ready>`. To make sure the texture you get is correct, you can await :ref:`RenderingServer.frame_post_draw<class_RenderingServer_signal_frame_post_draw>` signal.
+\ **Note :** Lorsque vous essayez de stocker la texture actuelle (par exemple dans un fichier), elle peut être complètement noire ou périmée si elle est utilisée trop tôt, surtout lorsqu'elle est utilisée par ex. dans :ref:`Node._ready()<class_Node_private_method__ready>`. Pour vous assurer que la texture que vous obtenez est correcte, vous pouvez attendre le signal :ref:`RenderingServer.frame_post_draw<class_RenderingServer_signal_frame_post_draw>`.
 
 
 .. tabs::
@@ -2363,7 +2363,7 @@ Returns the viewport's texture.
 
     func _ready():
         await RenderingServer.frame_post_draw
-        $Viewport.get_texture().get_image().save_png("user://Screenshot.png")
+        $Viewport.get_texture().get_image().save_png("user://Capture_d_ecran.png")
 
  .. code-tab:: csharp
 
@@ -2371,12 +2371,12 @@ Returns the viewport's texture.
     {
         await ToSignal(RenderingServer.Singleton, RenderingServer.SignalName.FramePostDraw);
         var viewport = GetNode<Viewport>("Viewport");
-        viewport.GetTexture().GetImage().SavePng("user://Screenshot.png");
+        viewport.GetTexture().GetImage().SavePng("user://Capture_d_ecran.png");
     }
 
 
 
-\ **Note:** When :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` is ``true`` the returned texture will be an HDR image using linear encoding.
+\ **Note :** Lorsque :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` vaut ``true``, la texture renvoyée sera une image HDR encodée dans l'espace linéaire.
 
 .. rst-class:: classref-item-separator
 

@@ -443,7 +443,7 @@ Window
 
 **nonclient_window_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) :ref:`🔗<class_Window_signal_nonclient_window_input>`
 
-Emitted when the mouse event is received by the custom decoration area defined by :ref:`nonclient_area<class_Window_property_nonclient_area>`, and normal input to the window is blocked (such as when it has an exclusive child opened). ``event``'s position is in the embedder's coordinate system.
+Событие генерируется при получении события мыши пользовательской областью оформления, определенной параметром :ref:`nonclient_area<class_Window_property_nonclient_area>`, и блокировке обычного ввода в окно (например, когда в нем открыт эксклюзивный дочерний элемент). Позиция ``event`` указана в системе координат встраиваемого элемента.
 
 .. rst-class:: classref-item-separator
 
@@ -746,7 +746,7 @@ enum **ContentScaleMode**: :ref:`🔗<enum_Window_ContentScaleMode>`
 
 :ref:`ContentScaleMode<enum_Window_ContentScaleMode>` **CONTENT_SCALE_MODE_DISABLED** = ``0``
 
-Содержимое не будет масштабироваться в соответствии с размером **Window**.
+The content will not be scaled to match the **Window**'s size (:ref:`content_scale_size<class_Window_property_content_scale_size>` is ignored).
 
 .. _class_Window_constant_CONTENT_SCALE_MODE_CANVAS_ITEMS:
 
@@ -1157,7 +1157,11 @@ enum **WindowInitialPosition**: :ref:`🔗<enum_Window_WindowInitialPosition>`
 - |void| **set_content_scale_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_content_scale_size**\ (\ )
 
-Базовый размер содержимого (т. е. узлов, которые рисуются внутри окна). Если не равно нулю, содержимое **Window** будет масштабироваться при изменении размера окна до другого размера.
+The content's base size in "virtual" pixels. Not to be confused with :ref:`size<class_Window_property_size>`, which sets the actual window's physical size in pixels. If set to a value greater than ``0`` and :ref:`content_scale_mode<class_Window_property_content_scale_mode>` is set to a value other than :ref:`CONTENT_SCALE_MODE_DISABLED<class_Window_constant_CONTENT_SCALE_MODE_DISABLED>`, the **Window**'s content will be scaled when the window is resized to a different size. Higher values will make the content appear *smaller*, as it will be able to fit more of the project in view. On the root **Window**, this is set to match :ref:`ProjectSettings.display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` and :ref:`ProjectSettings.display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>` by default.
+
+For example, when using :ref:`CONTENT_SCALE_MODE_CANVAS_ITEMS<class_Window_constant_CONTENT_SCALE_MODE_CANVAS_ITEMS>` and :ref:`content_scale_size<class_Window_property_content_scale_size>` set to ``Vector2i(1280, 720)``, using a window size of ``2560×1440`` will make 2D elements appear at double their original size, as the content is scaled by a factor of ``2.0`` (``2560.0 / 1280.0 = 2.0``, ``1440.0 / 720.0 = 2.0``).
+
+See `the Base size section of the Multiple resolutions documentation <../tutorials/rendering/multiple_resolutions.html#base-size>`__ for details.
 
 .. rst-class:: classref-item-separator
 
@@ -1496,7 +1500,7 @@ enum **WindowInitialPosition**: :ref:`🔗<enum_Window_WindowInitialPosition>`
 - |void| **set_nonclient_area**\ (\ value\: :ref:`Rect2i<class_Rect2i>`\ )
 - :ref:`Rect2i<class_Rect2i>` **get_nonclient_area**\ (\ )
 
-If set, defines the window's custom decoration area which will receive mouse input, even if normal input to the window is blocked (such as when it has an exclusive child opened). See also :ref:`nonclient_window_input<class_Window_signal_nonclient_window_input>`.
+Если задано, определяет область пользовательского оформления окна, которая будет получать ввод с мыши, даже если обычный ввод в окно заблокирован (например, когда у него открыт дочерний элемент, не имеющий отношения к основному окну). См. также :ref:`nonclient_window_input<class_Window_signal_nonclient_window_input>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1589,7 +1593,7 @@ If set, defines the window's custom decoration area which will receive mouse inp
 - |void| **set_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_size**\ (\ )
 
-Размер окна в пикселях.
+The window's size in pixels. See also :ref:`content_scale_size<class_Window_property_content_scale_size>`, which doesn't set the window's physical size but affects how scaling works relative to the current :ref:`content_scale_mode<class_Window_property_content_scale_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2398,7 +2402,7 @@ If set, defines the window's custom decoration area which will receive mouse inp
 
 |void| **move_to_center**\ (\ ) :ref:`🔗<class_Window_method_move_to_center>`
 
-Centers the window in the current screen. If the window is embedded, it is centered in the embedder :ref:`Viewport<class_Viewport>` instead.
+Центрирует окно на текущем экране. Если окно встроено, оно центрируется в области просмотра :ref:`Viewport<class_Viewport>`.
 
 .. rst-class:: classref-item-separator
 

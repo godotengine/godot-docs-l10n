@@ -289,7 +289,7 @@ enum **CustomControlContainer**: :ref:`🔗<enum_EditorPlugin_CustomControlConta
 
 :ref:`CustomControlContainer<enum_EditorPlugin_CustomControlContainer>` **CONTAINER_TOOLBAR** = ``0``
 
-Main editor toolbar, next to play buttons.
+Barra de herramientas principal del editor, junto a los botones de reproducción.
 
 .. _class_EditorPlugin_constant_CONTAINER_SPATIAL_EDITOR_MENU:
 
@@ -395,7 +395,7 @@ enum **DockSlot**: :ref:`🔗<enum_EditorPlugin_DockSlot>`
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_NONE** = ``-1``
 
-The dock is closed.
+El panel está cerrado.
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_LEFT_UL:
 
@@ -467,7 +467,7 @@ Dock slot, right side, bottom-right (empty in default layout).
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_BOTTOM** = ``8``
 
-Bottom panel.
+Panel inferior.
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_MAX:
 
@@ -509,7 +509,7 @@ Evita que :ref:`InputEvent<class_InputEvent>` llegue a otras clases de Editor.
 
 :ref:`AfterGUIInput<enum_EditorPlugin_AfterGUIInput>` **AFTER_GUI_INPUT_CUSTOM** = ``2``
 
-Pass the :ref:`InputEvent<class_InputEvent>` to other editor plugins except the main :ref:`Node3D<class_Node3D>` one. This can be used to prevent node selection changes and work with sub-gizmos instead.
+Pasa el :ref:`InputEvent<class_InputEvent>` a otros plugins del editor, excepto el :ref:`Node3D<class_Node3D>` principal. Esto se puede usar para evitar cambios en la selección de nodos y trabajar con subgizmos en su lugar.
 
 .. rst-class:: classref-section-separator
 
@@ -1444,7 +1444,7 @@ Devuelve la instancia singleton :ref:`EditorInterface<class_EditorInterface>`.
 
 :ref:`PopupMenu<class_PopupMenu>` **get_export_as_menu**\ (\ ) :ref:`🔗<class_EditorPlugin_method_get_export_as_menu>`
 
-Returns the :ref:`PopupMenu<class_PopupMenu>` under **Scene > Export As...**.
+Devuelve el :ref:`PopupMenu<class_PopupMenu>` bajo **Escena > Exportar como...**.
 
 .. rst-class:: classref-item-separator
 
@@ -1456,7 +1456,7 @@ Returns the :ref:`PopupMenu<class_PopupMenu>` under **Scene > Export As...**.
 
 :ref:`String<class_String>` **get_plugin_version**\ (\ ) |const| :ref:`🔗<class_EditorPlugin_method_get_plugin_version>`
 
-Provide the version of the plugin declared in the ``plugin.cfg`` config file.
+Provee la versión del plugin declarada en el archivo de configuración ``plugin.cfg``.
 
 .. rst-class:: classref-item-separator
 
@@ -1468,11 +1468,11 @@ Provide the version of the plugin declared in the ``plugin.cfg`` config file.
 
 :ref:`ScriptCreateDialog<class_ScriptCreateDialog>` **get_script_create_dialog**\ (\ ) :ref:`🔗<class_EditorPlugin_method_get_script_create_dialog>`
 
-Gets the Editor's dialog used for making scripts.
+Obtiene el diálogo del Editor usado para crear scripts.
 
-\ **Note:** Users can configure it before use.
+\ **Nota:** Los usuarios pueden configurarlo antes de usarlo.
 
-\ **Warning:** Removing and freeing this node will render a part of the editor useless and may cause a crash.
+\ **Advertencia:** Eliminar y liberar este nodo hará que una parte del editor sea inútil y podría causar un fallo.
 
 .. rst-class:: classref-item-separator
 
@@ -1620,7 +1620,7 @@ Elimina el plugin del depurador con el script dado del depurador.
 
 |void| **remove_dock**\ (\ dock\: :ref:`EditorDock<class_EditorDock>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_dock>`
 
-Removes ``dock`` from the available docks. You should manually call :ref:`Node.queue_free()<class_Node_method_queue_free>` to free it.
+Elimina ``dock`` de los docks disponibles. Debes llamar manualmente a :ref:`Node.queue_free()<class_Node_method_queue_free>` para liberarlo.
 
 .. rst-class:: classref-item-separator
 
@@ -1632,7 +1632,7 @@ Removes ``dock`` from the available docks. You should manually call :ref:`Node.q
 
 |void| **remove_export_platform**\ (\ platform\: :ref:`EditorExportPlatform<class_EditorExportPlatform>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_export_platform>`
 
-Removes an export platform registered by :ref:`add_export_platform()<class_EditorPlugin_method_add_export_platform>`.
+Elimina una plataforma de exportación registrada por :ref:`add_export_platform()<class_EditorPlugin_method_add_export_platform>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1644,7 +1644,7 @@ Removes an export platform registered by :ref:`add_export_platform()<class_Edito
 
 |void| **remove_export_plugin**\ (\ plugin\: :ref:`EditorExportPlugin<class_EditorExportPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_export_plugin>`
 
-Removes an export plugin registered by :ref:`add_export_plugin()<class_EditorPlugin_method_add_export_plugin>`.
+Elimina un plugin de exportación registrado por :ref:`add_export_plugin()<class_EditorPlugin_method_add_export_plugin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1656,7 +1656,7 @@ Removes an export plugin registered by :ref:`add_export_plugin()<class_EditorPlu
 
 |void| **remove_import_plugin**\ (\ importer\: :ref:`EditorImportPlugin<class_EditorImportPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_import_plugin>`
 
-Removes an import plugin registered by :ref:`add_import_plugin()<class_EditorPlugin_method_add_import_plugin>`.
+Elimina un plugin de importación registrado por :ref:`add_import_plugin()<class_EditorPlugin_method_add_import_plugin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1668,7 +1668,7 @@ Removes an import plugin registered by :ref:`add_import_plugin()<class_EditorPlu
 
 |void| **remove_inspector_plugin**\ (\ plugin\: :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_inspector_plugin>`
 
-Removes an inspector plugin registered by :ref:`add_inspector_plugin()<class_EditorPlugin_method_add_inspector_plugin>`.
+Elimina un plugin de inspector registrado por :ref:`add_inspector_plugin()<class_EditorPlugin_method_add_inspector_plugin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1680,7 +1680,7 @@ Removes an inspector plugin registered by :ref:`add_inspector_plugin()<class_Edi
 
 |void| **remove_node_3d_gizmo_plugin**\ (\ plugin\: :ref:`EditorNode3DGizmoPlugin<class_EditorNode3DGizmoPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_node_3d_gizmo_plugin>`
 
-Removes a gizmo plugin registered by :ref:`add_node_3d_gizmo_plugin()<class_EditorPlugin_method_add_node_3d_gizmo_plugin>`.
+Elimina un plugin de gizmo registrado por :ref:`add_node_3d_gizmo_plugin()<class_EditorPlugin_method_add_node_3d_gizmo_plugin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1692,7 +1692,7 @@ Removes a gizmo plugin registered by :ref:`add_node_3d_gizmo_plugin()<class_Edit
 
 |void| **remove_resource_conversion_plugin**\ (\ plugin\: :ref:`EditorResourceConversionPlugin<class_EditorResourceConversionPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_resource_conversion_plugin>`
 
-Removes a resource conversion plugin registered by :ref:`add_resource_conversion_plugin()<class_EditorPlugin_method_add_resource_conversion_plugin>`.
+Elimina un plugin de conversión de recursos registrado por :ref:`add_resource_conversion_plugin()<class_EditorPlugin_method_add_resource_conversion_plugin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1704,7 +1704,7 @@ Removes a resource conversion plugin registered by :ref:`add_resource_conversion
 
 |void| **remove_scene_format_importer_plugin**\ (\ scene_format_importer\: :ref:`EditorSceneFormatImporter<class_EditorSceneFormatImporter>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_scene_format_importer_plugin>`
 
-Removes a scene format importer registered by :ref:`add_scene_format_importer_plugin()<class_EditorPlugin_method_add_scene_format_importer_plugin>`.
+Elimina un importador de formato de escena registrado por :ref:`add_scene_format_importer_plugin()<class_EditorPlugin_method_add_scene_format_importer_plugin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1716,7 +1716,7 @@ Removes a scene format importer registered by :ref:`add_scene_format_importer_pl
 
 |void| **remove_scene_post_import_plugin**\ (\ scene_import_plugin\: :ref:`EditorScenePostImportPlugin<class_EditorScenePostImportPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_scene_post_import_plugin>`
 
-Remove the :ref:`EditorScenePostImportPlugin<class_EditorScenePostImportPlugin>`, added with :ref:`add_scene_post_import_plugin()<class_EditorPlugin_method_add_scene_post_import_plugin>`.
+Elimina el :ref:`EditorScenePostImportPlugin<class_EditorScenePostImportPlugin>`, añadido con :ref:`add_scene_post_import_plugin()<class_EditorPlugin_method_add_scene_post_import_plugin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1728,7 +1728,7 @@ Remove the :ref:`EditorScenePostImportPlugin<class_EditorScenePostImportPlugin>`
 
 |void| **remove_tool_menu_item**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_tool_menu_item>`
 
-Removes a menu ``name`` from **Project > Tools**.
+Elimina un menú ``name`` de **Proyecto > Herramientas**.
 
 .. rst-class:: classref-item-separator
 
@@ -1740,7 +1740,7 @@ Removes a menu ``name`` from **Project > Tools**.
 
 |void| **remove_translation_parser_plugin**\ (\ parser\: :ref:`EditorTranslationParserPlugin<class_EditorTranslationParserPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_translation_parser_plugin>`
 
-Removes a custom translation parser plugin registered by :ref:`add_translation_parser_plugin()<class_EditorPlugin_method_add_translation_parser_plugin>`.
+Elimina un plugin de analizador de traducción personalizado registrado por :ref:`add_translation_parser_plugin()<class_EditorPlugin_method_add_translation_parser_plugin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1752,7 +1752,7 @@ Removes a custom translation parser plugin registered by :ref:`add_translation_p
 
 |void| **remove_undo_redo_inspector_hook_callback**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_undo_redo_inspector_hook_callback>`
 
-Removes a callback previously added by :ref:`add_undo_redo_inspector_hook_callback()<class_EditorPlugin_method_add_undo_redo_inspector_hook_callback>`.
+Elimina una callback previamente añadida por :ref:`add_undo_redo_inspector_hook_callback()<class_EditorPlugin_method_add_undo_redo_inspector_hook_callback>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1766,7 +1766,7 @@ Removes a callback previously added by :ref:`add_undo_redo_inspector_hook_callba
 
 **Obsoleto:** Use :ref:`EditorDock.dock_icon<class_EditorDock_property_dock_icon>` instead.
 
-Sets the tab icon for the given control in a dock slot. Setting to ``null`` removes the icon.
+Establece el icono de la pestaña para el control dado en una ranura de dock. Establecerlo a ``null`` elimina el icono.
 
 .. rst-class:: classref-item-separator
 
@@ -1778,7 +1778,7 @@ Sets the tab icon for the given control in a dock slot. Setting to ``null`` remo
 
 |void| **set_force_draw_over_forwarding_enabled**\ (\ ) :ref:`🔗<class_EditorPlugin_method_set_force_draw_over_forwarding_enabled>`
 
-Enables calling of :ref:`_forward_canvas_force_draw_over_viewport()<class_EditorPlugin_private_method__forward_canvas_force_draw_over_viewport>` for the 2D editor and :ref:`_forward_3d_force_draw_over_viewport()<class_EditorPlugin_private_method__forward_3d_force_draw_over_viewport>` for the 3D editor when their viewports are updated. You need to call this method only once and it will work permanently for this plugin.
+Habilita la llamada a :ref:`_forward_canvas_force_draw_over_viewport()<class_EditorPlugin_private_method__forward_canvas_force_draw_over_viewport>` para el editor 2D y a :ref:`_forward_3d_force_draw_over_viewport()<class_EditorPlugin_private_method__forward_3d_force_draw_over_viewport>` para el editor 3D cuando sus viewports se actualizan. Solo necesitas llamar a este método una vez y funcionará permanentemente para este plugin.
 
 .. rst-class:: classref-item-separator
 
@@ -1790,7 +1790,7 @@ Enables calling of :ref:`_forward_canvas_force_draw_over_viewport()<class_Editor
 
 |void| **set_input_event_forwarding_always_enabled**\ (\ ) :ref:`🔗<class_EditorPlugin_method_set_input_event_forwarding_always_enabled>`
 
-Use this method if you always want to receive inputs from 3D view screen inside :ref:`_forward_3d_gui_input()<class_EditorPlugin_private_method__forward_3d_gui_input>`. It might be especially usable if your plugin will want to use raycast in the scene.
+Usa este método si siempre quieres recibir entradas de la pantalla de la vista 3D dentro de :ref:`_forward_3d_gui_input()<class_EditorPlugin_private_method__forward_3d_gui_input>`. Podría ser especialmente útil si tu plugin quiere usar raycast en la escena.
 
 .. rst-class:: classref-item-separator
 
@@ -1802,7 +1802,7 @@ Use this method if you always want to receive inputs from 3D view screen inside 
 
 :ref:`int<class_int>` **update_overlays**\ (\ ) |const| :ref:`🔗<class_EditorPlugin_method_update_overlays>`
 
-Updates the overlays of the 2D and 3D editor viewport. Causes methods :ref:`_forward_canvas_draw_over_viewport()<class_EditorPlugin_private_method__forward_canvas_draw_over_viewport>`, :ref:`_forward_canvas_force_draw_over_viewport()<class_EditorPlugin_private_method__forward_canvas_force_draw_over_viewport>`, :ref:`_forward_3d_draw_over_viewport()<class_EditorPlugin_private_method__forward_3d_draw_over_viewport>` and :ref:`_forward_3d_force_draw_over_viewport()<class_EditorPlugin_private_method__forward_3d_force_draw_over_viewport>` to be called.
+Actualiza las superposiciones de la ventana de vista del editor 2D y 3D. Hace que se llamen los métodos :ref:`_forward_canvas_draw_over_viewport()<class_EditorPlugin_private_method__forward_canvas_draw_over_viewport>`, :ref:`_forward_canvas_force_draw_over_viewport()<class_EditorPlugin_private_method__forward_canvas_force_draw_over_viewport>`, :ref:`_forward_3d_draw_over_viewport()<class_EditorPlugin_private_method__forward_3d_draw_over_viewport>` y :ref:`_forward_3d_force_draw_over_viewport()<class_EditorPlugin_private_method__forward_3d_force_draw_over_viewport>`.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

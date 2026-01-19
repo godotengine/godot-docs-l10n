@@ -14,7 +14,16 @@ Array di texture per le Cubemap, associata a una texture creata sul :ref:`Render
 Descrizione
 ----------------------
 
-Questa classe di texture consente di utilizzare un'array di texture cubemap creato direttamente sul :ref:`RenderingDevice<class_RenderingDevice>` come texture per materiali, mesh, ecc.
+This texture class allows you to use a cubemap array texture created directly on the :ref:`RenderingDevice<class_RenderingDevice>` as a texture for materials, meshes, etc.
+
+\ **Note:** **TextureCubemapArrayRD** is intended for low-level usage with :ref:`RenderingDevice<class_RenderingDevice>`. For most use cases, use :ref:`CubemapArray<class_CubemapArray>` instead.
+
+.. rst-class:: classref-introduction-group
+
+Tutorial
+----------------
+
+- `Compute Texture demo <https://godotengine.org/asset-library/asset/2764>`__
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

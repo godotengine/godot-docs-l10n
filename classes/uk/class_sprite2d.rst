@@ -372,7 +372,7 @@ Sprite2D
 
 :ref:`bool<class_bool>` **is_pixel_opaque**\ (\ pos\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Sprite2D_method_is_pixel_opaque>`
 
-Returns ``true`` if the pixel at the given position is opaque, ``false`` otherwise. Also returns ``false`` if the given position is out of bounds or this sprite's :ref:`texture<class_Sprite2D_property_texture>` is ``null``. ``pos`` is in local coordinates.
+Повертає ``true``, якщо піксель у заданій позиції непрозорий, ``false`` в іншому випадку. Також повертає ``false``, якщо задана позиція виходить за межі дозволеного або значення :ref:`texture<class_Sprite2D_property_texture>` цього спрайта дорівнює ``null``. ``pos`` знаходиться в локальних координатах.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

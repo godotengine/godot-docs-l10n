@@ -344,7 +344,7 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 向目标对等体 ``peer`` 发送 RPC。会使用提供的参数 ``arguments`` 在远程对象 ``object`` 上调用给定的方法 ``method``\ 。根据实现和 RPC 配置，RPC 可能也可以进行本地调用。见 :ref:`Node.rpc()<class_Node_method_rpc>` 和 :ref:`Node.rpc_config()<class_Node_method_rpc_config>`\ 。
 
-\ **注意：**\ 请尽量使用 :ref:`Node.rpc()<class_Node_method_rpc>`\ 、\ :ref:`Node.rpc_id()<class_Node_method_rpc_id>` 或 ``my_method.rpc(peer, arg1, arg2, ...)``\ （适用于 GDScript），因为速度更快。这个方法主要用于 :ref:`MultiplayerAPIExtension<class_MultiplayerAPIExtension>` 进行多人游戏能力的扩展和替换。
+\ **注意：**\ 请尽量使用 :ref:`Node.rpc()<class_Node_method_rpc>`\ 、\ :ref:`Node.rpc_id()<class_Node_method_rpc_id>` 或 ``my_method.rpc(peer, arg1, arg2, ...)``\ （适用于 GDScript），因为速度更快。这个方法主要用于连同 :ref:`MultiplayerAPIExtension<class_MultiplayerAPIExtension>` 进行多人游戏功能的扩展和替换。
 
 .. rst-class:: classref-item-separator
 

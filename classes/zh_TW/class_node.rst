@@ -1278,9 +1278,11 @@ Defines if any text should automatically change to its translated version depend
 - |void| **set_owner**\ (\ value\: :ref:`Node<class_Node>`\ )
 - :ref:`Node<class_Node>` **get_owner**\ (\ )
 
-本節點的擁有者。擁有者必須是本節點的祖先。當將擁有者節點打包為 :ref:`PackedScene<class_PackedScene>` 時，其所擁有的所有節點也會一併儲存。詳見 :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`\ 。
+The owner of this node. The owner must be an ancestor of this node. When packing the owner node in a :ref:`PackedScene<class_PackedScene>`, all the nodes it owns are also saved with it. See also :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`.
 
-\ **注意：**\ 在編輯器中，不屬於場景根節點的節點通常不會顯示於「場景」面板，且\ **不會**\ 被儲存。為避免此情況，請在呼叫 :ref:`add_child()<class_Node_method_add_child>` 後設定 owner。
+\ **Note:** In the editor, nodes not owned by the scene root are usually not displayed in the Scene dock, and will **not** be saved. To prevent this, remember to set the owner after calling :ref:`add_child()<class_Node_method_add_child>`.
+
+\ **Note:** The owner needs to be the current scene root. See `Instancing scenes <../tutorials/plugins/running_code_in_the_editor.html#instancing-scenes>`__ in the documentation for more information.
 
 .. rst-class:: classref-item-separator
 

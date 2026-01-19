@@ -9,14 +9,14 @@ OpenXRSpatialPlaneTrackingCapability
 
 **Наследует:** :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>` **<** :ref:`Object<class_Object>`
 
-Implementation for handling spatial entity plane tracking logic.
+Реализация для обработки логики отслеживания пространственных объектов в плоскости объекта.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-This class handles the OpenXR plane tracking spatial entity extension.
+Этот класс обрабатывает расширение OpenXR для отслеживания пространственных объектов на плоскости.
 
 .. rst-class:: classref-reftable-group
 
@@ -45,7 +45,7 @@ This class handles the OpenXR plane tracking spatial entity extension.
 
 :ref:`bool<class_bool>` **is_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialPlaneTrackingCapability_method_is_supported>`
 
-Returns ``true`` if plane tracking is supported by the current device.
+Возвращает ``true``, если текущее устройство поддерживает отслеживание плоскости.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

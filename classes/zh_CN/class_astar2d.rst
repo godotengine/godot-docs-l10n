@@ -337,11 +337,13 @@ A\* 算法的一种实现，用于在 2D 空间中的连通图上找到两个顶
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_id_path**\ (\ from_id\: :ref:`int<class_int>`, to_id\: :ref:`int<class_int>`, allow_partial_path\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AStar2D_method_get_id_path>`
 
-返回一个数组，其中包含构成由 AStar2D 在给定点之间找到的路径的点的 ID。数组从路径的起点到终点进行排序。
+Returns an array with the IDs of the points that form the path found by AStar2D between the given points. The array is ordered from the starting point to the ending point of the path.
 
-如果没有能够到达目标的有效路径，并且 ``allow_partial_path`` 为\ ``true``\ ，则返回能够到达的最接近目标点的路径。
+If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
 
-\ **注意：**\ 如果 ``allow_partial_path`` 为 ``true`` 并且 ``to_id`` 处于禁用状态，搜索耗时可能异常地大。
+If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
+
+\ **Note:** When ``allow_partial_path`` is ``true`` and ``to_id`` is disabled the search may take an unusually long time to finish.
 
 
 .. tabs::
@@ -350,7 +352,7 @@ A\* 算法的一种实现，用于在 2D 空间中的连通图上找到两个顶
 
     var astar = AStar2D.new()
     astar.add_point(1, Vector2(0, 0))
-    astar.add_point(2, Vector2(0, 1), 1) # 默认权重为 1
+    astar.add_point(2, Vector2(0, 1), 1) # Default weight is 1
     astar.add_point(3, Vector2(1, 1))
     astar.add_point(4, Vector2(2, 0))
 
@@ -359,13 +361,13 @@ A\* 算法的一种实现，用于在 2D 空间中的连通图上找到两个顶
     astar.connect_points(4, 3, false)
     astar.connect_points(1, 4, false)
 
-    var res = astar.get_id_path(1, 3) # 返回 [1, 2, 3]
+    var res = astar.get_id_path(1, 3) # Returns [1, 2, 3]
 
  .. code-tab:: csharp
 
     var astar = new AStar2D();
     astar.AddPoint(1, new Vector2(0, 0));
-    astar.AddPoint(2, new Vector2(0, 1), 1); // 默认权重为 1
+    astar.AddPoint(2, new Vector2(0, 1), 1); // Default weight is 1
     astar.AddPoint(3, new Vector2(1, 1));
     astar.AddPoint(4, new Vector2(2, 0));
 
@@ -373,11 +375,11 @@ A\* 算法的一种实现，用于在 2D 空间中的连通图上找到两个顶
     astar.ConnectPoints(2, 3, false);
     astar.ConnectPoints(4, 3, false);
     astar.ConnectPoints(1, 4, false);
-    long[] res = astar.GetIdPath(1, 3); // 返回 [1, 2, 3]
+    long[] res = astar.GetIdPath(1, 3); // Returns [1, 2, 3]
 
 
 
-如果将第 2 个点的权重更改为 3，则结果将改为 ``[1, 4, 3]``\ ，因为现在即使距离更长，通过第 4 点也比通过第 2 点“更容易”。
+If you change the 2nd point's weight to 3, then the result will be ``[1, 4, 3]`` instead, because now even though the distance is longer, it's "easier" to get through point 4 than through point 2.
 
 .. rst-class:: classref-item-separator
 
@@ -468,13 +470,15 @@ A\* 算法的一种实现，用于在 2D 空间中的连通图上找到两个顶
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_point_path**\ (\ from_id\: :ref:`int<class_int>`, to_id\: :ref:`int<class_int>`, allow_partial_path\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AStar2D_method_get_point_path>`
 
-返回一个数组，其中包含 AStar2D 在给定点之间找到的路径中的点。数组从路径的起点到终点进行排序。
+Returns an array with the points that are in the path found by AStar2D between the given points. The array is ordered from the starting point to the ending point of the path.
 
-如果没有通往目标的有效路径并且 ``allow_partial_path`` 为 ``true``\ ，则会返回通往距离目标最近的可达点的路径。
+If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
 
-\ **注意：**\ 该方法不是线程安全的，同一时间只能有一个 :ref:`Thread<class_Thread>` 使用。请考虑使用 :ref:`Mutex<class_Mutex>` 来确保线程独占访问，避免竞态条件。
+If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
 
-另外，如果 ``allow_partial_path`` 为 ``true`` 并且 ``to_id`` 处于禁用状态，搜索耗时可能异常地大。
+\ **Note:** This method is not thread-safe; it can only be used from a single :ref:`Thread<class_Thread>` at a given time. Consider using :ref:`Mutex<class_Mutex>` to ensure exclusive access to one thread to avoid race conditions.
+
+Additionally, when ``allow_partial_path`` is ``true`` and ``to_id`` is disabled the search may take an unusually long time to finish.
 
 .. rst-class:: classref-item-separator
 

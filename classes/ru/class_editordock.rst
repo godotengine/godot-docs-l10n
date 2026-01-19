@@ -11,36 +11,36 @@ EditorDock
 
 **Наследуется от:** :ref:`FileSystemDock<class_FileSystemDock>`
 
-Dockable container for the editor.
+Встраиваемый контейнер для редактора.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-EditorDock is a :ref:`Container<class_Container>` node that can be docked in one of the editor's dock slots. Docks are added by plugins to provide space for controls related to an :ref:`EditorPlugin<class_EditorPlugin>`. The editor comes with a few built-in docks, such as the Scene dock, FileSystem dock, etc.
+EditorDock — это узел :ref:`Container<class_Container>`, который можно закрепить в одном из слотов док-панели редактора. Док-панели добавляются плагинами, чтобы предоставить место для элементов управления, связанных с :ref:`EditorPlugin<class_EditorPlugin>`. Редактор поставляется с несколькими встроенными док-панелями, такими как док-панель сцены, док-панель файловой системы и т. д.
 
-You can add a dock by using :ref:`EditorPlugin.add_dock()<class_EditorPlugin_method_add_dock>`. The dock can be customized by changing its properties.
+Вы можете добавить док-панель, используя :ref:`EditorPlugin.add_dock()<class_EditorPlugin_method_add_dock>`. Док-панель можно настроить, изменив её свойства.
 
 ::
 
     @tool
     extends EditorPlugin
 
-    # Dock reference.
+    # Ссылка на док
     var dock
 
-    # Plugin initialization.
+    # Инициализация плагина.
     func _enter_tree():
         dock = EditorDock.new()
         dock.title = "My Dock"
         dock.dock_icon = preload("./dock_icon.png")
-        dock.default_slot = EditorPlugin.DOCK_SLOT_RIGHT_UL
+        dock.default_slot = EditorDock.DOCK_SLOT_RIGHT_UL
         var dock_content = preload("./dock_content.tscn").instantiate()
         dock.add_child(dock_content)
         add_dock(dock)
 
-    # Plugin clean-up.
+    # Очистка плагинов.
     func _exit_tree():
         remove_dock(dock)
         dock.queue_free()
@@ -51,7 +51,7 @@ You can add a dock by using :ref:`EditorPlugin.add_dock()<class_EditorPlugin_met
 Обучающие материалы
 --------------------------------------
 
-- :doc:`Making plugins <../tutorials/plugins/editor/making_plugins>`
+- :doc:`Создание плагинов <../tutorials/plugins/editor/making_plugins>`
 
 .. rst-class:: classref-reftable-group
 
@@ -66,7 +66,7 @@ You can add a dock by using :ref:`EditorPlugin.add_dock()<class_EditorPlugin_met
    +-------------------------------------------------------------+-----------------------------------------------------------------------+-----------------------+
    | :ref:`bool<class_bool>`                                     | :ref:`closable<class_EditorDock_property_closable>`                   | ``false``             |
    +-------------------------------------------------------------+-----------------------------------------------------------------------+-----------------------+
-   | :ref:`DockSlot<enum_EditorPlugin_DockSlot>`                 | :ref:`default_slot<class_EditorDock_property_default_slot>`           | ``-1``                |
+   | :ref:`DockSlot<enum_EditorDock_DockSlot>`                   | :ref:`default_slot<class_EditorDock_property_default_slot>`           | ``-1``                |
    +-------------------------------------------------------------+-----------------------------------------------------------------------+-----------------------+
    | :ref:`Texture2D<class_Texture2D>`                           | :ref:`dock_icon<class_EditorDock_property_dock_icon>`                 |                       |
    +-------------------------------------------------------------+-----------------------------------------------------------------------+-----------------------+
@@ -124,7 +124,7 @@ You can add a dock by using :ref:`EditorPlugin.add_dock()<class_EditorPlugin_met
 
 **closed**\ (\ ) :ref:`🔗<class_EditorDock_signal_closed>`
 
-Emitted when the dock is closed with the Close button in the context popup, before it's removed from its parent. See :ref:`closable<class_EditorDock_property_closable>`.
+Событие возникает при закрытии панели Dock с помощью кнопки «Закрыть» во всплывающем окне контекста, до того, как панель будет удалена из родительского элемента. См. :ref:`closable<class_EditorDock_property_closable>`.
 
 .. rst-class:: classref-section-separator
 
@@ -147,7 +147,7 @@ flags **DockLayout**: :ref:`🔗<enum_EditorDock_DockLayout>`
 
 :ref:`DockLayout<enum_EditorDock_DockLayout>` **DOCK_LAYOUT_VERTICAL** = ``1``
 
-Allows placing the dock in the vertical dock slots on either side of the editor.
+Позволяет размещать панель Dock в вертикальных слотах Dock по обеим сторонам редактора.
 
 .. _class_EditorDock_constant_DOCK_LAYOUT_HORIZONTAL:
 
@@ -155,7 +155,7 @@ Allows placing the dock in the vertical dock slots on either side of the editor.
 
 :ref:`DockLayout<enum_EditorDock_DockLayout>` **DOCK_LAYOUT_HORIZONTAL** = ``2``
 
-Allows placing the dock in the editor's bottom panel.
+Позволяет разместить панель Dock в нижней панели редактора.
 
 .. _class_EditorDock_constant_DOCK_LAYOUT_FLOATING:
 
@@ -163,7 +163,7 @@ Allows placing the dock in the editor's bottom panel.
 
 :ref:`DockLayout<enum_EditorDock_DockLayout>` **DOCK_LAYOUT_FLOATING** = ``4``
 
-Allows making the dock floating (opened as a separate window).
+Позволяет сделать док-станцию плавающей (открывается как отдельное окно).
 
 .. _class_EditorDock_constant_DOCK_LAYOUT_ALL:
 
@@ -171,7 +171,105 @@ Allows making the dock floating (opened as a separate window).
 
 :ref:`DockLayout<enum_EditorDock_DockLayout>` **DOCK_LAYOUT_ALL** = ``7``
 
-Allows placing the dock in all available slots.
+Позволяет разместить док-станцию во всех доступных слотах.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _enum_EditorDock_DockSlot:
+
+.. rst-class:: classref-enumeration
+
+enum **DockSlot**: :ref:`🔗<enum_EditorDock_DockSlot>`
+
+.. _class_EditorDock_constant_DOCK_SLOT_NONE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_NONE** = ``-1``
+
+Док-панель закрыта.
+
+.. _class_EditorDock_constant_DOCK_SLOT_LEFT_UL:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_LEFT_UL** = ``0``
+
+Слот для док-станции, левая сторона, вверху слева (в макете по умолчанию пуст).
+
+.. _class_EditorDock_constant_DOCK_SLOT_LEFT_BL:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_LEFT_BL** = ``1``
+
+Слот для док-станции, левая сторона, внизу слева (в макете по умолчанию пуст).
+
+.. _class_EditorDock_constant_DOCK_SLOT_LEFT_UR:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_LEFT_UR** = ``2``
+
+Слот док-станции, левая сторона, вверху справа (в макете по умолчанию включены док-станции «Сцена» и «Импорт»).
+
+.. _class_EditorDock_constant_DOCK_SLOT_LEFT_BR:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_LEFT_BR** = ``3``
+
+Док-слот, слева, внизу справа (в стандартной конфигурации включает док-станции файловой системы и истории).
+
+.. _class_EditorDock_constant_DOCK_SLOT_RIGHT_UL:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_RIGHT_UL** = ``4``
+
+Док-слот, справа, в верхнем левом углу (в стандартной компоновке включает в себя док-станции «Инспектор», «Сигнал» и «Группа»).
+
+.. _class_EditorDock_constant_DOCK_SLOT_RIGHT_BL:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_RIGHT_BL** = ``5``
+
+Слот для док-станции, правая сторона, левый нижний угол (в макете по умолчанию пуст).
+
+.. _class_EditorDock_constant_DOCK_SLOT_RIGHT_UR:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_RIGHT_UR** = ``6``
+
+Слот для док-станции, правая сторона, вверху справа (пустой в макете по умолчанию).
+
+.. _class_EditorDock_constant_DOCK_SLOT_RIGHT_BR:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_RIGHT_BR** = ``7``
+
+Слот для док-станции, справа, внизу справа (в макете по умолчанию пуст).
+
+.. _class_EditorDock_constant_DOCK_SLOT_BOTTOM:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_BOTTOM** = ``8``
+
+Нижняя панель.
+
+.. _class_EditorDock_constant_DOCK_SLOT_MAX:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_MAX** = ``9``
+
+Представляет размер перечисления :ref:`DockSlot<enum_EditorDock_DockSlot>`.
 
 .. rst-class:: classref-section-separator
 
@@ -193,7 +291,7 @@ Allows placing the dock in all available slots.
 - |void| **set_available_layouts**\ (\ value\: |bitfield|\[:ref:`DockLayout<enum_EditorDock_DockLayout>`\]\ )
 - |bitfield|\[:ref:`DockLayout<enum_EditorDock_DockLayout>`\] **get_available_layouts**\ (\ )
 
-The available layouts for this dock, as a bitmask. By default, the dock allows vertical and floating layouts.
+Доступные варианты расположения элементов для этой панели Dock представлены в виде битовой маски. По умолчанию панель Dock поддерживает вертикальное и плавающее расположение элементов.
 
 .. rst-class:: classref-item-separator
 
@@ -210,7 +308,7 @@ The available layouts for this dock, as a bitmask. By default, the dock allows v
 - |void| **set_closable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_closable**\ (\ )
 
-If ``true``, the dock can be closed with the Close button in the context popup. Docks with :ref:`global<class_EditorDock_property_global>` enabled are always closable.
+Если ``true``, панель Dock можно закрыть с помощью кнопки «Закрыть» во всплывающем окне. Панели Dock с включенной опцией :ref:`global<class_EditorDock_property_global>` всегда можно закрыть.
 
 .. rst-class:: classref-item-separator
 
@@ -220,16 +318,16 @@ If ``true``, the dock can be closed with the Close button in the context popup. 
 
 .. rst-class:: classref-property
 
-:ref:`DockSlot<enum_EditorPlugin_DockSlot>` **default_slot** = ``-1`` :ref:`🔗<class_EditorDock_property_default_slot>`
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **default_slot** = ``-1`` :ref:`🔗<class_EditorDock_property_default_slot>`
 
 .. rst-class:: classref-property-setget
 
-- |void| **set_default_slot**\ (\ value\: :ref:`DockSlot<enum_EditorPlugin_DockSlot>`\ )
-- :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **get_default_slot**\ (\ )
+- |void| **set_default_slot**\ (\ value\: :ref:`DockSlot<enum_EditorDock_DockSlot>`\ )
+- :ref:`DockSlot<enum_EditorDock_DockSlot>` **get_default_slot**\ (\ )
 
-The default dock slot used when adding the dock with :ref:`EditorPlugin.add_dock()<class_EditorPlugin_method_add_dock>`.
+Слот док-панели по умолчанию, используемый при добавлении док-панели с помощью :ref:`EditorPlugin.add_dock()<class_EditorPlugin_method_add_dock>`.
 
-After the dock is added, it can be moved to a different slot and the editor will automatically remember its position between sessions. If you remove and re-add the dock, it will be reset to default.
+После добавления док-панели её можно переместить в другой слот, и редактор автоматически запомнит её положение между сессиями. Если вы удалите и снова добавите док-панель, её положение будет сброшено до значения по умолчанию.
 
 .. rst-class:: classref-item-separator
 
@@ -246,7 +344,7 @@ After the dock is added, it can be moved to a different slot and the editor will
 - |void| **set_dock_icon**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_dock_icon**\ (\ )
 
-The icon for the dock, as a texture. If specified, it will override :ref:`icon_name<class_EditorDock_property_icon_name>`.
+Иконка для панели Dock в виде текстуры. Если указано, она переопределит :ref:`icon_name<class_EditorDock_property_icon_name>`.
 
 .. rst-class:: classref-item-separator
 
@@ -263,7 +361,7 @@ The icon for the dock, as a texture. If specified, it will override :ref:`icon_n
 - |void| **set_dock_shortcut**\ (\ value\: :ref:`Shortcut<class_Shortcut>`\ )
 - :ref:`Shortcut<class_Shortcut>` **get_dock_shortcut**\ (\ )
 
-The shortcut used to open the dock.
+Быстрая клавиша для открытия док-станции.
 
 .. rst-class:: classref-item-separator
 
@@ -280,7 +378,7 @@ The shortcut used to open the dock.
 - |void| **set_force_show_icon**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_force_show_icon**\ (\ )
 
-If ``true``, the dock will always display an icon, regardless of :ref:`EditorSettings.interface/editor/dock_tab_style<class_EditorSettings_property_interface/editor/dock_tab_style>` or :ref:`EditorSettings.interface/editor/bottom_dock_tab_style<class_EditorSettings_property_interface/editor/bottom_dock_tab_style>`.
+Если ``true``, то на панели Dock всегда будет отображаться значок, независимо от :ref:`EditorSettings.interface/editor/dock_tab_style<class_EditorSettings_property_interface/editor/dock_tab_style>` или :ref:`EditorSettings.interface/editor/bottom_dock_tab_style<class_EditorSettings_property_interface/editor/bottom_dock_tab_style>`.
 
 .. rst-class:: classref-item-separator
 
@@ -297,7 +395,7 @@ If ``true``, the dock will always display an icon, regardless of :ref:`EditorSet
 - |void| **set_global**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_global**\ (\ )
 
-If ``true``, the dock appears in the **Editor > Editor Docks** menu and can be closed. Non-global docks can still be closed using :ref:`close()<class_EditorDock_method_close>` or when :ref:`closable<class_EditorDock_property_closable>` is ``true``.
+Если ``true``, панель отображается в меню **Редактор > Панели редактора** и может быть закрыта. Панели, не являющиеся глобальными, также могут быть закрыты с помощью :ref:`close()<class_EditorDock_method_close>` или когда :ref:`closable<class_EditorDock_property_closable>` имеет значение ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -314,7 +412,7 @@ If ``true``, the dock appears in the **Editor > Editor Docks** menu and can be c
 - |void| **set_icon_name**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_icon_name**\ (\ )
 
-The icon for the dock, as a name from the ``EditorIcons`` theme type in the editor theme. You can find the list of available icons `here <https://godot-editor-icons.github.io/>`__.
+Значок для панели Dock, название которого взято из типа темы ``EditorIcons`` в теме редактора. Список доступных значков можно найти `здесь <https://godot-editor-icons.github.io/>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -331,7 +429,7 @@ The icon for the dock, as a name from the ``EditorIcons`` theme type in the edit
 - |void| **set_layout_key**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_layout_key**\ (\ )
 
-The key representing this dock in the editor's layout file. If empty, the dock's displayed name will be used instead.
+Ключ, представляющий эту панель в файле макета редактора. Если поле пустое, будет использоваться отображаемое имя панели.
 
 .. rst-class:: classref-item-separator
 
@@ -348,7 +446,7 @@ The key representing this dock in the editor's layout file. If empty, the dock's
 - |void| **set_title**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_title**\ (\ )
 
-The title of the dock's tab. If empty, the dock's :ref:`Node.name<class_Node_property_name>` will be used. If the name is auto-generated (contains ``@``), the first child's name will be used instead.
+Заголовок вкладки панели Dock. Если поле пустое, будет использовано имя :ref:`Node.name<class_Node_property_name>` панели Dock. Если имя генерируется автоматически (содержит ``@``), вместо него будет использовано имя первого дочернего элемента.
 
 .. rst-class:: classref-item-separator
 
@@ -365,7 +463,7 @@ The title of the dock's tab. If empty, the dock's :ref:`Node.name<class_Node_pro
 - |void| **set_title_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_title_color**\ (\ )
 
-The color of the dock tab's title. If its alpha is ``0.0``, the default font color will be used.
+Цвет заголовка вкладки в доке. Если его прозрачность равна ``0.0``, будет использоваться цвет шрифта по умолчанию.
 
 .. rst-class:: classref-item-separator
 
@@ -382,7 +480,7 @@ The color of the dock tab's title. If its alpha is ``0.0``, the default font col
 - |void| **set_transient**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_transient**\ (\ )
 
-If ``true``, the dock is not automatically opened or closed when loading an editor layout, only moved. It also can't be opened using a shortcut. This is meant for docks that are opened and closed in specific cases, such as when selecting a :ref:`TileMap<class_TileMap>` or :ref:`AnimationTree<class_AnimationTree>` node.
+Если ``true``, панель Dock не открывается и не закрывается автоматически при загрузке макета редактора, а только перемещается. Её также нельзя открыть с помощью сочетания клавиш. Это относится к панелям Dock, которые открываются и закрываются в определённых случаях, например, при выборе узла :ref:`TileMap<class_TileMap>` или :ref:`AnimationTree<class_AnimationTree>`.
 
 .. rst-class:: classref-section-separator
 
@@ -399,7 +497,7 @@ If ``true``, the dock is not automatically opened or closed when loading an edit
 
 |void| **_load_layout_from_config**\ (\ config\: :ref:`ConfigFile<class_ConfigFile>`, section\: :ref:`String<class_String>`\ ) |virtual| :ref:`🔗<class_EditorDock_private_method__load_layout_from_config>`
 
-Implement this method to handle loading this dock's layout. It's equivalent to :ref:`EditorPlugin._set_window_layout()<class_EditorPlugin_private_method__set_window_layout>`. ``section`` is a unique section based on :ref:`layout_key<class_EditorDock_property_layout_key>`.
+Реализуйте этот метод для обработки загрузки макета этой панели Dock. Он эквивалентен методу :ref:`EditorPlugin._set_window_layout()<class_EditorPlugin_private_method__set_window_layout>`. ``section`` — это уникальный раздел, основанный на :ref:`layout_key<class_EditorDock_property_layout_key>`.
 
 .. rst-class:: classref-item-separator
 
@@ -411,7 +509,7 @@ Implement this method to handle loading this dock's layout. It's equivalent to :
 
 |void| **_save_layout_to_config**\ (\ config\: :ref:`ConfigFile<class_ConfigFile>`, section\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_EditorDock_private_method__save_layout_to_config>`
 
-Implement this method to handle saving this dock's layout. It's equivalent to :ref:`EditorPlugin._get_window_layout()<class_EditorPlugin_private_method__get_window_layout>`. ``section`` is a unique section based on :ref:`layout_key<class_EditorDock_property_layout_key>`.
+Реализуйте этот метод для сохранения расположения элементов в доке. Он эквивалентен методу ``EditorPlugin._get_window_layout``. ``section`` — это уникальный раздел, основанный на :ref:`layout_key<class_EditorDock_property_layout_key>`.
 
 .. rst-class:: classref-item-separator
 
@@ -423,7 +521,7 @@ Implement this method to handle saving this dock's layout. It's equivalent to :r
 
 |void| **_update_layout**\ (\ layout\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_EditorDock_private_method__update_layout>`
 
-Implement this method to handle the layout switching for this dock. ``layout`` is one of the :ref:`DockLayout<enum_EditorDock_DockLayout>` constants.
+Реализуйте этот метод для обработки переключения макета для этой панели DockLayout. ``layout`` — одна из констант :ref:`DockLayout<enum_EditorDock_DockLayout>`.
 
 ::
 
@@ -440,7 +538,7 @@ Implement this method to handle the layout switching for this dock. ``layout`` i
 
 |void| **close**\ (\ ) :ref:`🔗<class_EditorDock_method_close>`
 
-Closes the dock, making its tab hidden.
+Закрывает панель Dock, скрывая соответствующую вкладку.
 
 .. rst-class:: classref-item-separator
 
@@ -452,7 +550,7 @@ Closes the dock, making its tab hidden.
 
 |void| **make_visible**\ (\ ) :ref:`🔗<class_EditorDock_method_make_visible>`
 
-Focuses the dock's tab (or window if it's floating). If the dock was closed, it will be opened. If it's a bottom dock, makes the bottom panel visible.
+Фокусирует вкладку (или окно, если оно плавающее) док-панели. Если док-панель была закрыта, она откроется. Если это нижняя док-панель, делает видимой нижнюю панель.
 
 .. rst-class:: classref-item-separator
 
@@ -464,9 +562,9 @@ Focuses the dock's tab (or window if it's floating). If the dock was closed, it 
 
 |void| **open**\ (\ ) :ref:`🔗<class_EditorDock_method_open>`
 
-Opens the dock. It will appear in the last used dock slot. If the dock has no default slot, it will be opened floating.
+Открывает док-панель. Она появится в последнем использованном слоте док-панели. Если у док-панели нет слота по умолчанию, она будет открыта в плавающем режиме.
 
-\ **Note:** This does not focus the dock. If you want to open and focus the dock, use :ref:`make_visible()<class_EditorDock_method_make_visible>`.
+\ **Примечание:** Этот метод не фокусирует док-панель. Если вы хотите открыть и сфокусировать док-панель, используйте :ref:`make_visible()<class_EditorDock_method_make_visible>`.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

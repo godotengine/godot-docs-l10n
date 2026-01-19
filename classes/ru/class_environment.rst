@@ -14,17 +14,17 @@ Environment
 Описание
 ----------------
 
-Resource for environment nodes (like :ref:`WorldEnvironment<class_WorldEnvironment>`) that define multiple environment operations (such as background :ref:`Sky<class_Sky>` or :ref:`Color<class_Color>`, ambient light, fog, depth-of-field...). These parameters affect the final render of the scene. The order of these operations is:
+Ресурс для узлов окружения (например, :ref:`WorldEnvironment<class_WorldEnvironment>`), которые определяют множество операций с окружением (таких как фон :ref:`Sky<class_Sky>` или :ref:`Color<class_Color>`, окружающее освещение, туман, глубина резкости...). Эти параметры влияют на окончательный рендеринг сцены. Порядок этих операций следующий:
 
-- Depth of Field Blur
+- Размытие глубины резкости
 
-- Auto Exposure
+- Автоматическая экспозиция
 
-- Glow
+- Свечение
 
-- Tonemap
+- Тональная карта
 
-- Adjustments
+- Коррекция
 
 .. rst-class:: classref-introduction-group
 
@@ -462,7 +462,7 @@ enum **ToneMapper**: :ref:`🔗<enum_Environment_ToneMapper>`
 
 :ref:`ToneMapper<enum_Environment_ToneMapper>` **TONE_MAPPER_AGX** = ``4``
 
-Uses an adjustable film-like tonemapping curve and desaturates bright values for a more realistic appearance. Better than other tonemappers at maintaining the hue of colors as they become brighter. The slowest tonemapping option.
+Использует регулируемую кривую тонального отображения, аналогичную пленочной, и снижает насыщенность ярких значений для более реалистичного вида. Лучше других тональных преобразователей сохраняет оттенок цветов при их увеличении яркости. Самый медленный вариант тонального отображения.
 
 .. rst-class:: classref-item-separator
 
@@ -480,7 +480,7 @@ enum **GlowBlendMode**: :ref:`🔗<enum_Environment_GlowBlendMode>`
 
 :ref:`GlowBlendMode<enum_Environment_GlowBlendMode>` **GLOW_BLEND_MODE_ADDITIVE** = ``0``
 
-Adds the glow effect to the scene.
+Добавляет эффект свечения в сцену.
 
 .. _class_Environment_constant_GLOW_BLEND_MODE_SCREEN:
 
@@ -488,7 +488,7 @@ Adds the glow effect to the scene.
 
 :ref:`GlowBlendMode<enum_Environment_GlowBlendMode>` **GLOW_BLEND_MODE_SCREEN** = ``1``
 
-Adds the glow effect to the scene after modifying the glow influence based on the scene value; dark values will be highly influenced by glow and bright values will not be influenced by glow. This approach avoids bright values becoming overly bright from the glow effect. :ref:`tonemap_white<class_Environment_property_tonemap_white>` is used to determine the maximum scene value where the glow should have no influence. When :ref:`tonemap_mode<class_Environment_property_tonemap_mode>` is set to :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>`, a value of ``1.0`` will be used as the maximum scene value.
+Добавляет эффект свечения к сцене после изменения влияния свечения в зависимости от значения сцены; темные значения будут сильно подвержены влиянию свечения, а светлые — нет. Такой подход позволяет избежать чрезмерного усиления ярких значений из-за эффекта свечения. :ref:`tonemap_white<class_Environment_property_tonemap_white>` используется для определения максимального значения сцены, при котором свечение не должно оказывать никакого влияния. Если :ref:`tonemap_mode<class_Environment_property_tonemap_mode>` установлено на :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>`, в качестве максимального значения сцены будет использоваться значение ``1.0``.
 
 .. _class_Environment_constant_GLOW_BLEND_MODE_SOFTLIGHT:
 
@@ -496,7 +496,7 @@ Adds the glow effect to the scene after modifying the glow influence based on th
 
 :ref:`GlowBlendMode<enum_Environment_GlowBlendMode>` **GLOW_BLEND_MODE_SOFTLIGHT** = ``2``
 
-Adds the glow effect to the tonemapped image after modifying the glow influence based on the image value; dark values and bright values will not be influenced by glow and mid-range values will be highly influenced by glow. This approach avoids bright values becoming overly bright from the glow effect. The glow will have the largest influence on image values of ``0.25`` and will have no influence when applied to image values greater than ``1.0``.
+Добавляет эффект свечения к тонированному изображению после изменения влияния свечения в зависимости от значения изображения; темные и светлые значения не будут подвержены влиянию свечения, а средние значения будут сильно подвержены его влиянию. Такой подход позволяет избежать чрезмерного увеличения яркости светлых значений из-за эффекта свечения. Свечение будет оказывать наибольшее влияние на значения изображения ``0.25`` и не будет оказывать никакого влияния при применении к значениям изображения больше ``1.0``.
 
 .. _class_Environment_constant_GLOW_BLEND_MODE_REPLACE:
 
@@ -504,7 +504,7 @@ Adds the glow effect to the tonemapped image after modifying the glow influence 
 
 :ref:`GlowBlendMode<enum_Environment_GlowBlendMode>` **GLOW_BLEND_MODE_REPLACE** = ``3``
 
-Replaces all pixels' color by the glow effect. This can be used to simulate a full-screen blur effect by tweaking the glow parameters to match the original image's brightness or to preview glow configuration in the editor.
+Заменяет цвет всех пикселей эффектом свечения. Это можно использовать для имитации эффекта размытия на весь экран, настроив параметры свечения так, чтобы они соответствовали яркости исходного изображения, или для предварительного просмотра конфигурации свечения в редакторе.
 
 .. _class_Environment_constant_GLOW_BLEND_MODE_MIX:
 
@@ -512,7 +512,7 @@ Replaces all pixels' color by the glow effect. This can be used to simulate a fu
 
 :ref:`GlowBlendMode<enum_Environment_GlowBlendMode>` **GLOW_BLEND_MODE_MIX** = ``4``
 
-Mixes the glow image with the scene image. Best used with :ref:`glow_bloom<class_Environment_property_glow_bloom>` to avoid darkening the scene.
+Смешивает изображение свечения с изображением сцены. Лучше всего использовать с :ref:`glow_bloom<class_Environment_property_glow_bloom>`, чтобы избежать затемнения сцены.
 
 .. rst-class:: classref-item-separator
 
@@ -594,7 +594,7 @@ enum **SDFGIYScale**: :ref:`🔗<enum_Environment_SDFGIYScale>`
 - |void| **set_adjustment_brightness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_adjustment_brightness**\ (\ )
 
-Applies a simple brightness adjustment to the rendered image after tonemaping. To adjust scene brightness use :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>` instead, which is applied before tonemapping and thus less prone to issues with bright colors. Effective only if :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` is ``true``.
+Применяет простую регулировку яркости к отрендеренному изображению после тонального отображения. Для регулировки яркости сцены используйте :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`, который применяется до тонального отображения и, следовательно, менее подвержен проблемам с яркими цветами. Эффективно только если :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` имеет значение ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -628,7 +628,7 @@ Applies a simple brightness adjustment to the rendered image after tonemaping. T
 - |void| **set_adjustment_contrast**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_adjustment_contrast**\ (\ )
 
-Increasing :ref:`adjustment_contrast<class_Environment_property_adjustment_contrast>` will make dark values darker and bright values brighter. This simple adjustment is applied to the rendered image after tonemaping. When set to a value greater than ``1.0``, :ref:`adjustment_contrast<class_Environment_property_adjustment_contrast>` is prone to clipping colors that become too bright or too dark. Effective only if :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` is ``true``.
+Увеличение значения параметра :ref:`adjustment_contrast<class_Environment_property_adjustment_contrast>` сделает темные значения темнее, а светлые — ярче. Эта простая корректировка применяется к отрендеренному изображению после тонального отображения. При значении больше ``1.0`` параметр :ref:`adjustment_contrast<class_Environment_property_adjustment_contrast>` может обрезать цвета, которые становятся слишком яркими или слишком темными. Эффективно только в том случае, если параметр :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` имеет значение ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -662,7 +662,7 @@ Increasing :ref:`adjustment_contrast<class_Environment_property_adjustment_contr
 - |void| **set_adjustment_saturation**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_adjustment_saturation**\ (\ )
 
-Applies a simple saturation adjustment to the rendered image after tonemaping. When :ref:`adjustment_saturation<class_Environment_property_adjustment_saturation>` is set to ``0.0``, the rendered image will be fully converted to a grayscale image. Effective only if :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` is ``true``.
+Применяет простую корректировку насыщенности к отрендеренному изображению после тонального отображения. Если параметр :ref:`adjustment_saturation<class_Environment_property_adjustment_saturation>` установлен на ``0.0``, отрендеренное изображение будет полностью преобразовано в изображение в оттенках серого. Действует только если параметр :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` имеет значение ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -1082,9 +1082,9 @@ Applies a simple saturation adjustment to the rendered image after tonemaping. W
 - |void| **set_glow_blend_mode**\ (\ value\: :ref:`GlowBlendMode<enum_Environment_GlowBlendMode>`\ )
 - :ref:`GlowBlendMode<enum_Environment_GlowBlendMode>` **get_glow_blend_mode**\ (\ )
 
-The glow blending mode.
+Режим смешивания свечения.
 
-\ **Note:** The Compatibility renderer always uses :ref:`GLOW_BLEND_MODE_SCREEN<class_Environment_constant_GLOW_BLEND_MODE_SCREEN>` and :ref:`glow_blend_mode<class_Environment_property_glow_blend_mode>` will have no effect.
+\ **Примечание:** Рендерер совместимости всегда использует :ref:`GLOW_BLEND_MODE_SCREEN<class_Environment_constant_GLOW_BLEND_MODE_SCREEN>`, и :ref:`glow_blend_mode<class_Environment_property_glow_blend_mode>` не будет иметь никакого эффекта.
 
 .. rst-class:: classref-item-separator
 
@@ -1118,11 +1118,11 @@ The glow blending mode.
 - |void| **set_glow_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_glow_enabled**\ (\ )
 
-If ``true``, the glow effect is enabled. This simulates real world atmosphere and eye/camera behavior by causing bright pixels to bleed onto surrounding pixels.
+Если ``true``, эффект свечения включается. Это имитирует реальную атмосферу и поведение глаз/камеры, заставляя яркие пиксели распространяться на окружающие пиксели.
 
-\ **Note:** When using the Mobile rendering method, glow looks different due to the lower dynamic range available in the Mobile rendering method.
+\ **Примечание:** При использовании метода рендеринга для мобильных устройств эффект свечения выглядит иначе из-за меньшего динамического диапазона, доступного в этом методе.
 
-\ **Note:** When using the Compatibility rendering method, glow uses a different implementation with some properties being unavailable and hidden from the inspector: ``glow_levels/*``, :ref:`glow_normalized<class_Environment_property_glow_normalized>`, :ref:`glow_strength<class_Environment_property_glow_strength>`, :ref:`glow_blend_mode<class_Environment_property_glow_blend_mode>`, :ref:`glow_mix<class_Environment_property_glow_mix>`, :ref:`glow_map<class_Environment_property_glow_map>`, and :ref:`glow_map_strength<class_Environment_property_glow_map_strength>`. This implementation is optimized to run on low-end devices and is less flexible as a result.
+\ **Примечание:** При использовании метода рендеринга для совместимости эффект свечения использует другую реализацию, при которой некоторые свойства недоступны и скрыты от инспектора: ``glow_levels/*``, :ref:`glow_normalized<class_Environment_property_glow_normalized>`, :ref:`glow_strength<class_Environment_property_glow_strength>`, :ref:`glow_blend_mode<class_Environment_property_glow_blend_mode>`, :ref:`glow_mix<class_Environment_property_glow_mix>`, :ref:`glow_map<class_Environment_property_glow_map>` и :ref:`glow_map_strength<class_Environment_property_glow_map_strength>`. Эта реализация оптимизирована для работы на устройствах низкого класса и, как следствие, менее гибкая.
 
 .. rst-class:: classref-item-separator
 
@@ -1156,7 +1156,7 @@ If ``true``, the glow effect is enabled. This simulates real world atmosphere an
 - |void| **set_glow_hdr_bleed_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_glow_hdr_bleed_scale**\ (\ )
 
-Smooths the transition between values that are below and above :ref:`glow_hdr_threshold<class_Environment_property_glow_hdr_threshold>` by reducing the amount of glow generated by values that are close to :ref:`glow_hdr_threshold<class_Environment_property_glow_hdr_threshold>`. Values above ``glow_hdr_threshold + glow_hdr_scale`` will not have glow reduced in this way.
+Сглаживает переход между значениями, находящимися ниже и выше :ref:`glow_hdr_threshold<class_Environment_property_glow_hdr_threshold>`, уменьшая интенсивность свечения, создаваемого значениями, близкими к :ref:`glow_hdr_threshold<class_Environment_property_glow_hdr_threshold>`. Значения выше ``glow_hdr_threshold + glow_hdr_scale`` не будут иметь такого уменьшения свечения.
 
 .. rst-class:: classref-item-separator
 
@@ -1190,7 +1190,7 @@ Smooths the transition between values that are below and above :ref:`glow_hdr_th
 - |void| **set_glow_intensity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_glow_intensity**\ (\ )
 
-The overall brightness multiplier that is applied to the glow effect just before it is blended with the scene. When using the Mobile rendering method (which only supports a lower dynamic range up to ``2.0``), this should be increased to ``1.5`` to compensate.
+Общий множитель яркости, применяемый к эффекту свечения непосредственно перед его смешиванием со сценой. При использовании метода рендеринга для мобильных устройств (который поддерживает только более низкий динамический диапазон до ``2.0``) его следует увеличить до ``1.5`` для компенсации.
 
 .. rst-class:: classref-item-separator
 
@@ -1420,9 +1420,9 @@ The overall brightness multiplier that is applied to the glow effect just before
 - |void| **set_glow_strength**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_glow_strength**\ (\ )
 
-The strength that is used when blurring across the screen to generate the glow effect. This affects the distance and intensity of the blur. When using the Mobile rendering method, this should be increased to compensate for the lower dynamic range.
+Величина, используемая при размытии по экрану для создания эффекта свечения. Она влияет на расстояние и интенсивность размытия. При использовании метода рендеринга для мобильных устройств её следует увеличить, чтобы компенсировать меньший динамический диапазон.
 
-\ **Note:** :ref:`glow_strength<class_Environment_property_glow_strength>` has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
+\ **Примечание:** Параметр :ref:`glow_strength<class_Environment_property_glow_strength>` не оказывает влияния при использовании метода рендеринга «Совместимость», поскольку этот метод использует более простую реализацию эффекта свечения, оптимизированную для устройств низкого класса.
 
 .. rst-class:: classref-item-separator
 
@@ -1759,9 +1759,9 @@ The strength that is used when blurring across the screen to generate the glow e
 - |void| **set_ssao_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ssao_enabled**\ (\ )
 
-If ``true``, the screen-space ambient occlusion effect is enabled. This darkens objects' corners and cavities to simulate ambient light not reaching the entire object as in real life. This works well for small, dynamic objects, but baked lighting or ambient occlusion textures will do a better job at displaying ambient occlusion on large static objects. Godot uses a form of SSAO called Adaptive Screen Space Ambient Occlusion which is itself a form of Horizon Based Ambient Occlusion.
+Если ``true``, эффект экранного затенения (SAM) включается. Он затемняет углы и углубления объектов, имитируя рассеянный свет, не достигающий всего объекта, как в реальной жизни. Это хорошо работает для небольших динамических объектов, но запеченное освещение или текстуры затенения лучше справятся с отображением затенения на больших статических объектах. Godot использует форму SSAO, называемую адаптивным экранным затенением (Adaptive Screen Space Ambient Occlusion), которая сама по себе является формой затенения на основе горизонта (Horizon Based Ambient Occlusion).
 
-\ **Note:** SSAO is only supported in the Forward+ and Compatibility rendering methods, not Mobile.
+\ **Примечание:** SSAO поддерживается только в методах рендеринга Forward+ и Compatibility, а не на мобильных устройствах.
 
 .. rst-class:: classref-item-separator
 
@@ -2056,7 +2056,7 @@ If ``true``, the screen-space ambient occlusion effect is enabled. This darkens 
 - |void| **set_tonemap_agx_contrast**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tonemap_agx_contrast**\ (\ )
 
-Increasing :ref:`tonemap_agx_contrast<class_Environment_property_tonemap_agx_contrast>` will make dark values darker and bright values brighter. Produces a higher quality result than :ref:`adjustment_contrast<class_Environment_property_adjustment_contrast>` without any additional performance cost, but is only available when using the :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>` tonemapper.
+Увеличение параметра :ref:`tonemap_agx_contrast<class_Environment_property_tonemap_agx_contrast>` сделает темные значения темнее, а светлые — ярче. Это обеспечит более высокое качество результата, чем параметр :ref:`adjustment_contrast<class_Environment_property_adjustment_contrast>`, без дополнительных затрат производительности, но доступно только при использовании тонального преобразователя :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2073,9 +2073,9 @@ Increasing :ref:`tonemap_agx_contrast<class_Environment_property_tonemap_agx_con
 - |void| **set_tonemap_agx_white**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tonemap_agx_white**\ (\ )
 
-The white reference value for tonemapping, which indicates where bright white is located in the scale of values provided to the tonemapper. For photorealistic lighting, it is recommended to set :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` to at least ``6.0``. Higher values result in less blown out highlights, but may make the scene appear lower contrast. :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` is the same as :ref:`tonemap_white<class_Environment_property_tonemap_white>`, but is only effective with the :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>` tonemapper. See also :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`.
+Опорное значение белого для тонального отображения, указывающее, где находится яркий белый цвет в шкале значений, предоставляемых тональному преобразователю. Для фотореалистичного освещения рекомендуется установить :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` не менее чем на ``6.0``. Более высокие значения приводят к меньшему количеству пересвеченных участков, но могут снизить контрастность сцены. :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` аналогичен :ref:`tonemap_white<class_Environment_property_tonemap_white>`, но эффективен только с тональным преобразователем :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>`. См. также :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`.
 
-\ **Note:** When using the Mobile renderer with :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` disabled, :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` is ignored and a white value of ``2.0`` will always be used instead.
+\ **Примечание:** При использовании рендерера Mobile с отключенным :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` значение :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` игнорируется, и вместо него всегда будет использоваться значение белого ``2.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -2128,9 +2128,9 @@ The white reference value for tonemapping, which indicates where bright white is
 - |void| **set_tonemap_white**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tonemap_white**\ (\ )
 
-The white reference value for tonemapping, which indicates where bright white is located in the scale of values provided to the tonemapper. For photorealistic lighting, it is recommended to set :ref:`tonemap_white<class_Environment_property_tonemap_white>` to at least ``6.0``. Higher values result in less blown out highlights, but may make the scene appear lower contrast. :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` will be used instead when using the :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>` tonemapper. See also :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`.
+Опорное значение белого цвета для тонального отображения, указывающее, где находится яркий белый цвет в шкале значений, предоставляемых тональному преобразователю. Для фотореалистичного освещения рекомендуется установить :ref:`tonemap_white<class_Environment_property_tonemap_white>` не менее чем на ``6.0``. Более высокие значения приводят к меньшему количеству пересвеченных участков, но могут снизить контрастность сцены. :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` будет использоваться вместо него при использовании тонального преобразователя :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>`. См. также :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`.
 
-\ **Note:** :ref:`tonemap_white<class_Environment_property_tonemap_white>` must be set to ``2.0`` or lower on the Mobile renderer to produce bright images.
+\ **Примечание:** :ref:`tonemap_white<class_Environment_property_tonemap_white>` необходимо установить на ``2.0`` или ниже в мобильном рендерере для получения ярких изображений.
 
 .. rst-class:: classref-item-separator
 

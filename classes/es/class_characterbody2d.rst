@@ -499,7 +499,7 @@ Devuelve el ángulo de colisión del suelo en el último punto de colisión seg�
 
 :ref:`Vector2<class_Vector2>` **get_floor_normal**\ (\ ) |const| :ref:`🔗<class_CharacterBody2D_method_get_floor_normal>`
 
-Devuelve la normal de colisión del suelo en el último punto de colisión. Sólo es válido después de llamar a :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` y cuando :ref:`is_on_floor()<class_CharacterBody2D_method_is_on_floor>` devuelve ``true``.
+Devuelve la normal de colisión del suelo en el último punto de colisión. Solo es válido después de llamar a :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` y cuando :ref:`is_on_floor()<class_CharacterBody2D_method_is_on_floor>` devuelve ``true``.
 
 \ **Advertencia:** La normal de colisión no siempre es la misma que la normal de la superficie.
 

@@ -9,14 +9,14 @@ ChainIK3D
 
 **Наследуется от:** :ref:`IterateIK3D<class_IterateIK3D>`, :ref:`SplineIK3D<class_SplineIK3D>`
 
-A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` to apply inverse kinematics to bone chains containing an arbitrary number of bones.
+:ref:`SkeletonModifier3D<class_SkeletonModifier3D>` для применения обратной кинематики к цепочкам костей, содержащим произвольное количество костей.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` that automatically generates a joint list from the bones between the root bone and the end bone.
+Базовый класс :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`, который автоматически генерирует список суставов из костей между корневой и конечными костями.
 
 .. rst-class:: classref-reftable-group
 
@@ -89,7 +89,7 @@ Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` that automatic
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **get_end_bone_direction**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ChainIK3D_method_get_end_bone_direction>`
 
-Returns the tail direction of the end bone of the bone chain when :ref:`is_end_bone_extended()<class_ChainIK3D_method_is_end_bone_extended>` is ``true``.
+Возвращает направление хвоста конечной кости цепочки костей, когда :ref:`is_end_bone_extended()<class_ChainIK3D_method_is_end_bone_extended>` имеет значение ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -101,7 +101,7 @@ Returns the tail direction of the end bone of the bone chain when :ref:`is_end_b
 
 :ref:`float<class_float>` **get_end_bone_length**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ChainIK3D_method_get_end_bone_length>`
 
-Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extended()<class_ChainIK3D_method_is_end_bone_extended>` is ``true``.
+Возвращает длину хвостовой части конечной кости цепочки костей, когда :ref:`is_end_bone_extended()<class_ChainIK3D_method_is_end_bone_extended>` имеет значение ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -185,7 +185,7 @@ Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extend
 
 :ref:`bool<class_bool>` **is_end_bone_extended**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ChainIK3D_method_is_end_bone_extended>`
 
-Returns ``true`` if the end bone is extended to have a tail.
+Возвращает ``true``, если конечная кость удлинена и имеет хвост.
 
 .. rst-class:: classref-item-separator
 
@@ -233,9 +233,9 @@ Returns ``true`` if the end bone is extended to have a tail.
 
 |void| **set_end_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ChainIK3D_method_set_end_bone_name>`
 
-Sets the end bone name of the bone chain.
+Задает имя конечной кости цепочки костей.
 
-\ **Note:** The end bone must be the root bone or a child of the root bone. If they are the same, the tail must be extended by :ref:`set_extend_end_bone()<class_ChainIK3D_method_set_extend_end_bone>` to modify the bone.
+\ **Примечание:** Конечная кость должна быть корневой костью или дочерней костью корневой кости. Если они совпадают, хвостовая кость должна быть расширена с помощью :ref:`set_extend_end_bone()<class_ChainIK3D_method_set_extend_end_bone>` для изменения кости.
 
 .. rst-class:: classref-item-separator
 
@@ -247,9 +247,9 @@ Sets the end bone name of the bone chain.
 
 |void| **set_extend_end_bone**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ChainIK3D_method_set_extend_end_bone>`
 
-If ``enabled`` is ``true``, the end bone is extended to have a tail.
+Если ``enabled`` равно ``true``, конечная кость удлиняется, образуя хвост.
 
-The extended tail config is allocated to the last element in the joint list. In other words, if you set ``enabled`` to ``false``, the config of the last element in the joint list has no effect in the simulated result.
+Конфигурация расширенного хвоста назначается последнему элементу в списке суставов. Другими словами, если вы установите ``enabled`` в ``false``, конфигурация последнего элемента в списке суставов не повлияет на результат моделирования.
 
 .. rst-class:: classref-item-separator
 

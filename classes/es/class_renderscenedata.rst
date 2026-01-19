@@ -16,9 +16,9 @@ Objeto de datos de renderizado abstracto, contiene datos de escena relacionados 
 Descripción
 ----------------------
 
-Objeto de datos de escena abstracto, existe durante el renderizado de un único viewport.
+Abstract scene data object, exists for the duration of rendering a single viewport. See also :ref:`RenderSceneDataRD<class_RenderSceneDataRD>`, :ref:`RenderData<class_RenderData>`, and :ref:`RenderDataRD<class_RenderDataRD>`.
 
-\ **Nota:** Este es un objeto interno del servidor de renderizado, no instanciar desde script.
+\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
 
 .. rst-class:: classref-reftable-group
 

@@ -823,7 +823,7 @@ flags **ImageUpdateMask**: :ref:`🔗<enum_RichTextLabel_ImageUpdateMask>`
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+Код мови, що використовується для алгоритмів розриву рядків та формування тексту. Якщо залишити поле порожнім, використовується поточна локалізація.
 
 .. rst-class:: classref-item-separator
 
@@ -2077,7 +2077,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 
 |void| **push_strikethrough**\ (\ color\: :ref:`Color<class_Color>` = Color(0, 0, 0, 0)\ ) :ref:`🔗<class_RichTextLabel_method_push_strikethrough>`
 
-Adds a ``[s]`` tag to the tag stack. If ``color``'s alpha value is ``0.0``, the current font's color with its alpha multiplied by :ref:`strikethrough_alpha<class_RichTextLabel_theme_constant_strikethrough_alpha>` is used.
+Додає тег ``[s]`` до стеку тегів. Якщо значення альфа-кадра ``color`` дорівнює ``0.0``, використовується поточний колір шрифту, помножений на альфа-кадр :ref:`strikethrough_alpha<class_RichTextLabel_theme_constant_strikethrough_alpha>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2101,7 +2101,7 @@ Adds a ``[s]`` tag to the tag stack. If ``color``'s alpha value is ``0.0``, the 
 
 |void| **push_underline**\ (\ color\: :ref:`Color<class_Color>` = Color(0, 0, 0, 0)\ ) :ref:`🔗<class_RichTextLabel_method_push_underline>`
 
-Adds a ``[u]`` tag to the tag stack. If ``color``'s alpha value is ``0.0``, the current font's color with its alpha multiplied by :ref:`underline_alpha<class_RichTextLabel_theme_constant_underline_alpha>` is used.
+Додає тег ``[u]`` до стеку тегів. Якщо значення альфа-кадра ``color`` дорівнює ``0.0``, використовується поточний колір шрифту, помножений на альфа-кадр :ref:`underline_alpha<class_RichTextLabel_theme_constant_underline_alpha>`.
 
 .. rst-class:: classref-item-separator
 

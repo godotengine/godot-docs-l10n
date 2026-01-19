@@ -16,9 +16,9 @@ FileDialog
 描述
 ----
 
-**FileDialog** is a preset dialog used to choose files and directories in the filesystem. It supports filter masks. **FileDialog** automatically sets its window title according to the :ref:`file_mode<class_FileDialog_property_file_mode>`. If you want to use a custom title, disable this by setting :ref:`mode_overrides_title<class_FileDialog_property_mode_overrides_title>` to ``false``.
+**FileDialog** 是用来选择文件系统中文件和目录的预设对话框。它支持筛选掩码。\ **FileDialog** 会自动根据 :ref:`file_mode<class_FileDialog_property_file_mode>` 设置窗口标题。若想使用自定义标题，将 :ref:`mode_overrides_title<class_FileDialog_property_mode_overrides_title>` 设置为 ``false`` 来禁用此功能。
 
-\ **Note:** **FileDialog** is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **注意：**\ **FileDialog** 默认情况下是隐藏的。若要显示，调用节点上来自 :ref:`Window<class_Window>` 的 ``popup_*`` 方法中的其中一个，比如 :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`\ 。
 
 .. rst-class:: classref-reftable-group
 

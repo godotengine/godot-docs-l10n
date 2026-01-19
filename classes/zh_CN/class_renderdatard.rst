@@ -7,18 +7,16 @@ RenderDataRD
 
 **继承：** :ref:`RenderData<class_RenderData>` **<** :ref:`Object<class_Object>`
 
-基于 RenderingDevice 的渲染器的渲染数据实现。
-
-\ **注意：**\ 这是一个内部渲染服务器对象，不要从脚本中实例化它。
+Render data implementation for the RenderingDevice based renderers.
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-该对象管理基于渲染设备的渲染器的所有渲染数据。
+This object manages all render data for the :ref:`RenderingDevice<class_RenderingDevice>`-based renderers. See also :ref:`RenderData<class_RenderData>`, :ref:`RenderSceneData<class_RenderSceneData>`, and :ref:`RenderSceneDataRD<class_RenderSceneDataRD>`.
 
-\ **注意：**\ 这是一个仅为 GDExtension 插件公开的内部渲染服务器对象。
+\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

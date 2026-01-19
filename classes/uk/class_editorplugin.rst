@@ -395,7 +395,7 @@ enum **DockSlot**: :ref:`🔗<enum_EditorPlugin_DockSlot>`
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_NONE** = ``-1``
 
-The dock is closed.
+Док закритий.
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_LEFT_UL:
 
@@ -467,7 +467,7 @@ Dock слот, ліва сторона, нижня права (у макеті �
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_BOTTOM** = ``8``
 
-Bottom panel.
+Нижня панель.
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_MAX:
 
@@ -1048,7 +1048,7 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_run_scene**\ (\ scene\: :ref:`String<class_String>`, args\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__run_scene>`
 
-This function is called when an individual scene is about to be played in the editor. ``args`` is a list of command line arguments that will be passed to the new Godot instance, which will be replaced by the list returned by this function.
+Ця функція викликається, коли окрема сцена має відтворитися в редакторі. ``args`` – це список аргументів командного рядка, які будуть передані новому екземпляру Godot, а потім будуть замінені списком, повернутим цією функцією.
 
 ::
 
@@ -1056,7 +1056,7 @@ This function is called when an individual scene is about to be played in the ed
         args.append("--an-extra-argument")
         return args
 
-\ **Note:** Text that is printed in this method will not be visible in the editor's Output panel unless :ref:`EditorSettings.run/output/always_clear_output_on_play<class_EditorSettings_property_run/output/always_clear_output_on_play>` is ``false``.
+\ **Примітка:** Текст, який друкується цим методом, не буде видимим на панелі виводу редактора, якщо :ref:`EditorSettings.run/output/always_clear_output_on_play<class_EditorSettings_property_run/output/always_clear_output_on_play>` не має значення ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -1146,11 +1146,11 @@ This function is called when an individual scene is about to be played in the ed
 
 **Застаріло:** Use :ref:`add_dock()<class_EditorPlugin_method_add_dock>` instead, with :ref:`EditorDock.default_slot<class_EditorDock_property_default_slot>` set to :ref:`DOCK_SLOT_BOTTOM<class_EditorPlugin_constant_DOCK_SLOT_BOTTOM>`.
 
-Adds a control to the bottom panel (together with Output, Debug, Animation, etc.). Returns a reference to a button that is outside the scene tree. It's up to you to hide/show the button when needed. When your plugin is deactivated, make sure to remove your custom control with :ref:`remove_control_from_bottom_panel()<class_EditorPlugin_method_remove_control_from_bottom_panel>` and free it with :ref:`Node.queue_free()<class_Node_method_queue_free>`.
+Додає елемент керування до нижньої панелі (разом із Output, Debug, Animation тощо). Повертає посилання на кнопку, яка знаходиться поза деревом сцени. Ви самі вирішуєте, чи приховувати/показувати кнопку за потреби. Коли ваш плагін деактивовано, обов’язково видаліть свій власний елемент керування за допомогою :ref:`remove_control_from_bottom_panel()<class_EditorPlugin_method_remove_control_from_bottom_panel>` та звільніть його за допомогою :ref:`Node.queue_free()<class_Node_method_queue_free>`.
 
-\ ``shortcut`` is a shortcut that, when activated, will toggle the bottom panel's visibility. The shortcut object is only set when this control is added to the bottom panel.
+\ ``shortcut`` – це ярлик, який при активації перемикатиме видимість нижньої панелі. Об’єкт shortcut встановлюється лише тоді, коли цей елемент керування додано до нижньої панелі.
 
-\ **Note** See the default editor bottom panel shortcuts in the Editor Settings for inspiration. By convention, they all use :kbd:`Alt` modifier.
+\ **Примітка** Дивіться стандартні ярлики нижньої панелі редактора в налаштуваннях редактора для натхнення. За домовленістю, всі вони використовують модифікатор :kbd:`Alt`.
 
 .. rst-class:: classref-item-separator
 
@@ -1232,9 +1232,9 @@ Adds a control to the bottom panel (together with Output, Debug, Animation, etc.
 
 |void| **add_dock**\ (\ dock\: :ref:`EditorDock<class_EditorDock>`\ ) :ref:`🔗<class_EditorPlugin_method_add_dock>`
 
-Adds a new dock.
+Додає новий док.
 
-When your plugin is deactivated, make sure to remove your custom dock with :ref:`remove_dock()<class_EditorPlugin_method_remove_dock>` and free it with :ref:`Node.queue_free()<class_Node_method_queue_free>`.
+Коли ваш плагін деактивовано, обов’язково видаліть свій користувацький док за допомогою методу :ref:`remove_dock()<class_EditorPlugin_method_remove_dock>` та звільніть його за допомогою методу :ref:`Node.queue_free()<class_Node_method_queue_free>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1616,7 +1616,7 @@ Gets the undo/redo об'єкт. Більшість дій редактора м�
 
 |void| **remove_dock**\ (\ dock\: :ref:`EditorDock<class_EditorDock>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_dock>`
 
-Removes ``dock`` from the available docks. You should manually call :ref:`Node.queue_free()<class_Node_method_queue_free>` to free it.
+Видаляє ``dock`` з доступних доків. Вам слід вручну викликати :ref:`Node.queue_free()<class_Node_method_queue_free>`, щоб звільнити його.
 
 .. rst-class:: classref-item-separator
 

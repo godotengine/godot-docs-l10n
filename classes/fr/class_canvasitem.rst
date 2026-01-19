@@ -508,9 +508,9 @@ Le **CanvasItem** est entré dans le canevas.
 
 **NOTIFICATION_EXIT_CANVAS** = ``33`` :ref:`🔗<class_CanvasItem_constant_NOTIFICATION_EXIT_CANVAS>`
 
-The **CanvasItem** has exited the canvas.
+Le **CanvasItem** a quitté le canevas.
 
-This notification is sent in reversed order.
+Cette notification est envoyée en ordre inverse.
 
 .. _class_CanvasItem_constant_NOTIFICATION_WORLD_2D_CHANGED:
 
@@ -901,7 +901,9 @@ If ``antialiased`` is ``true``, half transparent "feathers" will be attached to 
 
 Dessine un polygone coloré à n'importe quel nombre de points, convexe ou concave. Les points dans le tableau ``points`` sont définis en espace local. Unlike :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`, a single color must be specified for the whole polygon.
 
-\ **Remarque :** Si un polygone avec un nombre considérable de sommets est fréquemment redessiné, il serait conseillé de pré-calculer la triangulation avec :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` et utiliser la méthode :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`, :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>`, ou :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
+\ **Note:** Si un polygone avec un nombre considérable de sommets est fréquemment redessiné, il serait conseillé de pré-calculer la triangulation avec :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` et utiliser la méthode :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`, :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>`, ou :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
+
+\ **Note:** Les boîtes de styles, les textures et les mailles stockées uniquement dans les variables locales ne devraient **pas** être utilisées avec cette méthode dans GDScript, parce que l'opération de dessin ne commence pas immédiatement une fois cette méthode appelée. Dans GDScript, lorsque la fonction avec les variables locales se termine, les variables locales sont détruites avant le rendu.
 
 .. rst-class:: classref-item-separator
 
@@ -992,6 +994,8 @@ La texture est dessinée à l'aide de l'opération de fusion suivante ; le mod
     dst.b = texture.b * modulate.b * modulate.a + dst.b * (1.0 - texture.b * modulate.a);
     dst.a = modulate.a + dst.a * (1.0 - modulate.a);
 
+\ **Note:** Les boîtes de styles, les textures et les maillages stockées uniquement dans les variables locales ne devraient **pas** être utilisées avec cette méthode dans GDScript, parce que l'opération de dessin ne commence pas immédiatement une fois cette méthode appelée. Dans GDScript, lorsque la fonction avec les variables locales se termine, les variables locales sont détruites avant le rendu.
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -1016,7 +1020,9 @@ Si ``width`` est négative, alors des primitives à deux points seront dessinée
 
 |void| **draw_mesh**\ (\ mesh\: :ref:`Mesh<class_Mesh>`, texture\: :ref:`Texture2D<class_Texture2D>`, transform\: :ref:`Transform2D<class_Transform2D>` = Transform2D(1, 0, 0, 1, 0, 0), modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) :ref:`🔗<class_CanvasItem_method_draw_mesh>`
 
-Dessine un :ref:`Mesh<class_Mesh>` en 2D, en utilisant la texture spécifiée. Voir :ref:`MeshInstance2D<class_MeshInstance2D>` pour la documentation en rapport. La transformation ``transform`` est définie dans l'espace local.
+Draws a :ref:`Mesh<class_Mesh>` in 2D, using the provided texture. See :ref:`MeshInstance2D<class_MeshInstance2D>` for related documentation. The ``transform`` is defined in local space.
+
+\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
 
 .. rst-class:: classref-item-separator
 
@@ -1033,6 +1039,8 @@ Dessine une région rectangulaire texturée de la texture du champ de distance s
 Si la valeur ``outline`` est positive, chaque valeur de canal alpha d'un pixel dans la région est affectée a la valeur maximale de la distance réelle dans le rayon ``outline``.
 
 La valeur de ``pixel_range`` doit être la même que celle qui a été utilisée pour la génération de la texture de distance signées.
+
+\ **Note:** Les boîtes de styles, les textures et les mailles stockées uniquement dans les variables locales ne devraient **pas** être utilisées avec cette méthode dans GDScript, parce que l'opération de dessin ne commence pas immédiatement une fois cette méthode appelée. Dans GDScript, lorsque la fonction avec les variables locales se termine, les variables locales sont détruites avant le rendu.
 
 .. rst-class:: classref-item-separator
 
@@ -1100,7 +1108,9 @@ Sépare ``text`` en lignes et dessine le contour du texte avec la police ``font`
 
 |void| **draw_multimesh**\ (\ multimesh\: :ref:`MultiMesh<class_MultiMesh>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_CanvasItem_method_draw_multimesh>`
 
-Dessine un :ref:`MultiMesh<class_MultiMesh>` en 2D avec la texture spécifiée. Voir :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>` pour la documentation en rapport.
+Draws a :ref:`MultiMesh<class_MultiMesh>` in 2D with the provided texture. See :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>` for related documentation.
+
+\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
 
 .. rst-class:: classref-item-separator
 
@@ -1114,7 +1124,9 @@ Dessine un :ref:`MultiMesh<class_MultiMesh>` en 2D avec la texture spécifiée. 
 
 Dessine un polygone rempli avec un nombre quelconque de points, qu’il soit convexe ou concave. Contrairement à :ref:`draw_colored_polygon()<class_CanvasItem_method_draw_colored_polygon>`, la couleur de chaque point peut être modifiée individuellement. Le tableau ``points`` est défini dans l’espace local. Voir également :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` et :ref:`draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>`. Si vous avez besoin de plus de flexibilité (par exemple pour utiliser des os), utilisez plutôt :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
 
-\ **Note :** Si vous redessinez fréquemment le même polygone avec un grand nombre de sommets, envisagez de pré-calculer la triangulation avec :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` et en utilisant :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`, :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>`, ou :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
+\ **Note:** Si un polygone avec un nombre considérable de sommets est fréquemment redessiné, il serait conseillé de pré-calculer la triangulation avec :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` et utiliser la méthode :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`, :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>`, ou :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
+
+\ **Note:** Les boîtes de styles, les textures et les mailles stockées uniquement dans les variables locales ne devraient **pas** être utilisées avec cette méthode dans GDScript, parce que l'opération de dessin ne commence pas immédiatement une fois cette méthode appelée. Dans GDScript, lorsque la fonction avec les variables locales se termine, les variables locales sont détruites avant le rendu.
 
 .. rst-class:: classref-item-separator
 
@@ -1155,6 +1167,8 @@ Si ``width`` est négative, elle sera ignorée et la polyligne sera dessinée en
 |void| **draw_primitive**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`, uvs\: :ref:`PackedVector2Array<class_PackedVector2Array>`, texture\: :ref:`Texture2D<class_Texture2D>` = null\ ) :ref:`🔗<class_CanvasItem_method_draw_primitive>`
 
 Dessine une primitive personnalisée. 1 point pour dessiner un point, 2 points pour une ligne, 3 points pour un triangle, et 4 points pour un quad. Si 0 points ou plus de 4 points sont spécifiés, rien ne sera dessiné et un message d'erreur sera affiché. Voir aussi :ref:`draw_line()<class_CanvasItem_method_draw_line>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`, :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`, et :ref:`draw_rect()<class_CanvasItem_method_draw_rect>`.
+
+\ **Note:** Les boîtes de styles, les textures et les mailles stockées uniquement dans les variables locales ne devraient **pas** être utilisées avec cette méthode dans GDScript, parce que l'opération de dessin ne commence pas immédiatement une fois cette méthode appelée. Dans GDScript, lorsque la fonction avec les variables locales se termine, les variables locales sont détruites avant le rendu.
 
 .. rst-class:: classref-item-separator
 
@@ -1212,34 +1226,24 @@ Définit une transformation personnalisée pour le dessin via la matrice. Tout c
 
 |void| **draw_string**\ (\ font\: :ref:`Font<class_Font>`, pos\: :ref:`Vector2<class_Vector2>`, text\: :ref:`String<class_String>`, alignment\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` = 0, width\: :ref:`float<class_float>` = -1, font_size\: :ref:`int<class_int>` = 16, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), justification_flags\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] = 3, direction\: :ref:`Direction<enum_TextServer_Direction>` = 0, orientation\: :ref:`Orientation<enum_TextServer_Orientation>` = 0, oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_CanvasItem_method_draw_string>`
 
-Dessine ``text`` en utilisant la police ``font`` spécifiée à la position ``pos`` dans l'espace local (le coin en bas à gauche correspond à la ligne de base de la police). Le texte aura sa couleur multipliée par ``modulate``. Si ``width`` est supérieure ou égale à 0, le texte sera coupé s'il dépasse la largeur spécifiée. Si ``oversampling`` est supérieur à zéro, il est utilisé comme facteur de sur-échantillonnage de la police, sinon les paramètres de sur-échantillonnage du viewport sont utilisés.
+Draws ``text`` using the specified ``font`` at the ``pos`` in local space (bottom-left corner using the baseline of the font). The text will have its color multiplied by ``modulate``. If ``width`` is greater than or equal to 0, the text will be clipped if it exceeds the specified width. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
 
-\ **Exemple :** Dessiner "Bonjour le monde", en utilisant la police par défaut du projet :
+\ **Example:** Draw "Hello world", using the project's default font:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Si vous utilisez cette méthode dans un script qui redessine souvent, déplacez la
-    # déclaration de `default_font` vers une variable membre assignée dans `_Ready()`
-    # pour que le Control ne soit créé qu'une fois.
-    var police_par_defaut = ThemeDB.fallback_font
-    var taille_police_par_defaut = ThemeDB.fallback_font_size
-    draw_string(police_par_defaut, Vector2(64, 64), "Bonjour le monde", HORIZONTAL_ALIGNMENT_LEFT, -1, taille_police_par_defaut)
+    draw_string(ThemeDB.fallback_font, Vector2(64, 64), "Hello world", HORIZONTAL_ALIGNMENT_LEFT, -1, ThemeDB.fallback_font_size)
 
  .. code-tab:: csharp
 
-    // Si vous utilisez cette méthode dans un script qui redessine souvent, déplacez la
-    // déclaration de `default_font` vers une variable membre assignée dans `_Ready()`
-    // pour que le Control ne soit créé qu'une fois.
-    Font policeParDefaut = ThemeDB.FallbackFont;
-    int taillePoliceParDefaut = ThemeDB.FallbackFontSize;
-    DrawString(policeParDefaut, new Vector2(64, 64), "Bonjour le monde", HORIZONTAL_ALIGNMENT_LEFT, -1, taillePoliceParDefaut);
+    DrawString(ThemeDB.FallbackFont, new Vector2(64, 64), "Hello world", HorizontalAlignment.Left, -1, ThemeDB.FallbackFontSize);
 
 
 
-Voir aussi :ref:`Font.draw_string()<class_Font_method_draw_string>`.
+See also :ref:`Font.draw_string()<class_Font_method_draw_string>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1263,7 +1267,9 @@ Dessine le contour du ``text`` en utilisant la police ``font`` spécifiée à la
 
 |void| **draw_style_box**\ (\ style_box\: :ref:`StyleBox<class_StyleBox>`, rect\: :ref:`Rect2<class_Rect2>`\ ) :ref:`🔗<class_CanvasItem_method_draw_style_box>`
 
-Dessine un rectangle stylisé. ``rect`` est défini dans l'espace local.
+Draws a styled rectangle. The ``rect`` is defined in local space.
+
+\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
 
 .. rst-class:: classref-item-separator
 
@@ -1275,7 +1281,9 @@ Dessine un rectangle stylisé. ``rect`` est défini dans l'espace local.
 
 |void| **draw_texture**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, position\: :ref:`Vector2<class_Vector2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) :ref:`🔗<class_CanvasItem_method_draw_texture>`
 
-Dessine une texture à une position donnée. La ``position`` est définie dans l'espace local.
+Draws a texture at a given position. The ``position`` is defined in local space.
+
+\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
 
 .. rst-class:: classref-item-separator
 
@@ -1289,6 +1297,8 @@ Dessine une texture à une position donnée. La ``position`` est définie dans l
 
 Dessine un rectangle texturé à une position donnée, possiblement modulé par une couleur. Le ``rect`` est défini dans l'espace local. Si ``transpose`` vaut ``true``, la texture aura ses coordonnées X et Y échangées. Voir aussi :ref:`draw_rect()<class_CanvasItem_method_draw_rect>` et :ref:`draw_texture_rect_region()<class_CanvasItem_method_draw_texture_rect_region>`.
 
+\ **Note:** Les boîtes de styles, les textures et les mailles stockées uniquement dans les variables locales ne devraient **pas** être utilisées avec cette méthode dans GDScript, parce que l'opération de dessin ne commence pas immédiatement une fois cette méthode appelée. Dans GDScript, lorsque la fonction avec les variables locales se termine, les variables locales sont détruites avant le rendu.
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -1300,6 +1310,8 @@ Dessine un rectangle texturé à une position donnée, possiblement modulé par 
 |void| **draw_texture_rect_region**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, src_rect\: :ref:`Rect2<class_Rect2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), transpose\: :ref:`bool<class_bool>` = false, clip_uv\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_CanvasItem_method_draw_texture_rect_region>`
 
 Dessine un rectangle texturé depuis une région d'une texture (précisé par ``src_rect``) à une position donnée dans l'espace local, possiblement modulé par une couleur. Si ``transpose`` vaut ``true``, la texture aura ses coordonnées X et Y échangées. Voir aussi :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`.
+
+\ **Note:** Les boîtes de styles, les textures et les mailles stockées uniquement dans les variables locales ne devraient **pas** être utilisées avec cette méthode dans GDScript, parce que l'opération de dessin ne commence pas immédiatement une fois cette méthode appelée. Dans GDScript, lorsque la fonction avec les variables locales se termine, les variables locales sont détruites avant le rendu.
 
 .. rst-class:: classref-item-separator
 

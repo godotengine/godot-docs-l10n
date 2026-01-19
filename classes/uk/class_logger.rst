@@ -92,17 +92,17 @@ enum **ErrorType**: :ref:`🔗<enum_Logger_ErrorType>`
 
 |void| **_log_error**\ (\ function\: :ref:`String<class_String>`, file\: :ref:`String<class_String>`, line\: :ref:`int<class_int>`, code\: :ref:`String<class_String>`, rationale\: :ref:`String<class_String>`, editor_notify\: :ref:`bool<class_bool>`, error_type\: :ref:`int<class_int>`, script_backtraces\: :ref:`Array<class_Array>`\[:ref:`ScriptBacktrace<class_ScriptBacktrace>`\]\ ) |virtual| :ref:`🔗<class_Logger_private_method__log_error>`
 
-Called when an error is logged. The error provides the ``function``, ``file``, and ``line`` that it originated from, as well as either the ``code`` that generated the error or a ``rationale``.
+Викликається, коли реєструється помилка. Помилка містить ``function``, ``file`` та ``line``, з яких вона виникла, а також або ``code``, який спричинив помилку, або ``rationale``.
 
-The type of error provided by ``error_type`` is described in the :ref:`ErrorType<enum_Logger_ErrorType>` enumeration.
+Тип помилки, що надається ``error_type``, описано у переліку :ref:`ErrorType<enum_Logger_ErrorType>`.
 
-Additionally, ``script_backtraces`` provides backtraces for each of the script languages. These will only contain stack frames in editor builds and debug builds by default. To enable them for release builds as well, you need to enable :ref:`ProjectSettings.debug/settings/gdscript/always_track_call_stacks<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`.
+Крім того, ``script_backtraces`` надає зворотні трасування для кожної з мов сценаріїв. За замовчуванням вони міститимуть стекові фрейми лише в збірках редактора та налагодження. Щоб увімкнути їх також для релізних збірок, потрібно ввімкнути :ref:`ProjectSettings.debug/settings/gdscript/always_track_call_stacks<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`.
 
-\ **Warning:** This method will be called from threads other than the main thread, possibly at the same time, so you will need to have some kind of thread-safety in your implementation of it, like a :ref:`Mutex<class_Mutex>`.
+\ **Попередження:** Цей метод буде викликано з потоків, відмінних від основного, можливо, одночасно, тому вам знадобиться певний тип потокобезпечності у вашій реалізації, наприклад, :ref:`Mutex<class_Mutex>`.
 
-\ **Note:** ``script_backtraces`` will not contain any captured variables, due to its prohibitively high cost. To get those you will need to capture the backtraces yourself, from within the **Logger** virtual methods, using :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>`.
+\ **Примітка:** ``script_backtraces`` не міститиме жодних захоплених змінних через свою надмірно високу вартість. Щоб отримати їх, вам потрібно буде самостійно захопити зворотні трасування з віртуальних методів **Logger**, використовуючи :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>`.
 
-\ **Note:** Logging errors from this method using functions like :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` or :ref:`@GlobalScope.push_warning()<class_@GlobalScope_method_push_warning>` is not supported, as it could cause infinite recursion. These errors will only show up in the console output.
+\ **Примітка:** Реєстрація помилок з цього методу за допомогою таких функцій, як :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` або :ref:`@GlobalScope.push_warning()<class_@GlobalScope_method_push_warning>`, не підтримується, оскільки це може призвести до нескінченної рекурсії. Ці помилки відображатимуться лише у виводі консолі.
 
 .. rst-class:: classref-item-separator
 
@@ -114,11 +114,11 @@ Additionally, ``script_backtraces`` provides backtraces for each of the script l
 
 |void| **_log_message**\ (\ message\: :ref:`String<class_String>`, error\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_Logger_private_method__log_message>`
 
-Called when a message is logged. If ``error`` is ``true``, then this message was meant to be sent to ``stderr``.
+Викликається, коли реєструється повідомлення. Якщо ``error`` має значення ``true``, то це повідомлення мало бути надіслане до ``stderr``.
 
-\ **Warning:** This method will be called from threads other than the main thread, possibly at the same time, so you will need to have some kind of thread-safety in your implementation of it, like a :ref:`Mutex<class_Mutex>`.
+\ **Попередження:** Цей метод буде викликано з потоків, відмінних від основного потоку, можливо, одночасно, тому вам знадобиться певний захист від потоків у вашій реалізації, наприклад, :ref:`Mutex<class_Mutex>`.
 
-\ **Note:** Logging another message from this method using functions like :ref:`@GlobalScope.print()<class_@GlobalScope_method_print>` is not supported, as it could cause infinite recursion. These messages will only show up in the console output.
+\ **Примітка:** Реєстрація іншого повідомлення з цього методу за допомогою функцій, таких як :ref:`@GlobalScope.print()<class_@GlobalScope_method_print>`, не підтримується, оскільки це може призвести до нескінченної рекурсії. Ці повідомлення відображатимуться лише у виводі консолі.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -26,7 +26,7 @@ PhysicalBone3D
 Посібники
 ------------------
 
-- :doc:`Ragdoll System <../tutorials/physics/ragdoll_system>`
+- :doc:`Система регдолл <../tutorials/physics/ragdoll_system>`
 
 .. rst-class:: classref-reftable-group
 

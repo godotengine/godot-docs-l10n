@@ -14,7 +14,7 @@ Una constante booleana para ser usada dentro del gráfico visual del shader.
 Descripción
 ----------------------
 
-Sólo tiene un puerto de salida y no tiene entradas.
+Solo tiene un puerto de salida y no tiene entradas.
 
 Traducido a ``bool`` en el lenguaje de los shaders.
 

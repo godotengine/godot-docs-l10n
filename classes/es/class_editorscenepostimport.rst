@@ -16,7 +16,7 @@ Descripción
 
 Las escenas importadas pueden ser modificadas automáticamente justo después de la importación estableciendo su propiedad de importación **Custom Script** a un script ``tool`` que herede de esta clase.
 
-La llamada de retorno :ref:`_post_import()<class_EditorScenePostImport_private_method__post_import>` recibe el nodo raíz de la escena importada y devuelve la versión modificada de la escena:
+La callback :ref:`_post_import()<class_EditorScenePostImport_private_method__post_import>` recibe el nodo raíz de la escena importada y devuelve la versión modificada de la escena:
 
 
 .. tabs::

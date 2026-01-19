@@ -721,7 +721,7 @@ Max векторний, вектор з усіма компонентами, щ�
 
 :ref:`Vector3<class_Vector3>` **operator /**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Vector3i_operator_div_float>`
 
-Divides each component of the **Vector3i** by the given :ref:`float<class_float>`. Returns a :ref:`Vector3<class_Vector3>`.
+Ділить кожен компонент **Vector3i** на задане число з плаваючою комою :ref:`float<class_float>`. Повертає :ref:`Vector3<class_Vector3>`.
 
 ::
 

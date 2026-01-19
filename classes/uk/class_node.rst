@@ -663,7 +663,7 @@ enum **DuplicateFlags**: :ref:`🔗<enum_Node_DuplicateFlags>`
 
 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>` **DUPLICATE_INTERNAL_STATE** = ``16``
 
-Duplicate also non-serializable variables (i.e. without :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>`).
+Також дублюйте несеріалізовані змінні (тобто без ``константи @GlobalScope.PROPERTY_USAGE_STORAGE``).
 
 .. _class_Node_constant_DUPLICATE_DEFAULT:
 
@@ -671,11 +671,11 @@ Duplicate also non-serializable variables (i.e. without :ref:`@GlobalScope.PROPE
 
 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>` **DUPLICATE_DEFAULT** = ``15``
 
-Duplicate using default flags. This constant is useful to add or remove a single flag.
+Дублювати, використовуючи прапорці за замовчуванням. Ця константа корисна для додавання або видалення одного прапорця.
 
 ::
 
-    # Duplicate non-exported variables.
+    # Дублікати неекспортованих змінних.
     var dupe = duplicate(DUPLICATE_DEFAULT | DUPLICATE_INTERNAL_STATE)
 
 .. rst-class:: classref-item-separator
@@ -744,9 +744,9 @@ enum **AutoTranslateMode**: :ref:`🔗<enum_Node_AutoTranslateMode>`
 
 :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **AUTO_TRANSLATE_MODE_DISABLED** = ``2``
 
-Never automatically translate. This is the inverse of :ref:`AUTO_TRANSLATE_MODE_ALWAYS<class_Node_constant_AUTO_TRANSLATE_MODE_ALWAYS>`.
+Ніколи не перекладати автоматично. Це інверсія :ref:`AUTO_TRANSLATE_MODE_ALWAYS<class_Node_constant_AUTO_TRANSLATE_MODE_ALWAYS>`.
 
-String parsing for translation template generation will be skipped for this node and children that are set to :ref:`AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>`.
+Розбір рядків для створення шаблону перекладу буде пропущено для цього вузла та дочірніх вузлів, для яких встановлено значення :ref:`AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>`.
 
 .. rst-class:: classref-section-separator
 
@@ -773,11 +773,11 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_EXIT_TREE** = ``11`` :ref:`🔗<class_Node_constant_NOTIFICATION_EXIT_TREE>`
 
-Notification received when the node is about to exit a :ref:`SceneTree<class_SceneTree>`. See :ref:`_exit_tree()<class_Node_private_method__exit_tree>`.
+Сповіщення отримано, коли вузол збирається вийти з :ref:`SceneTree<class_SceneTree>`. Див. :ref:`_exit_tree()<class_Node_private_method__exit_tree>`.
 
-This notification is received *after* the related :ref:`tree_exiting<class_Node_signal_tree_exiting>` signal.
+Це сповіщення отримано *після* відповідного сигналу :ref:`tree_exiting<class_Node_signal_tree_exiting>`.
 
-This notification is sent in reversed order.
+Це сповіщення надсилається у зворотному порядку.
 
 .. _class_Node_constant_NOTIFICATION_MOVED_IN_PARENT:
 
@@ -1115,9 +1115,9 @@ This notification is sent in reversed order.
 
 **NOTIFICATION_OS_IME_UPDATE** = ``2013`` :ref:`🔗<class_Node_constant_NOTIFICATION_OS_IME_UPDATE>`
 
-Notification received from the OS when an update of the Input Method Engine occurs (e.g. change of IME cursor position or composition string).
+Сповіщення, отримане від ОС, коли відбувається оновлення механізму вводу (наприклад, зміна позиції курсора IME або рядка композиції).
 
-Implemented on desktop and web platforms.
+Реалізовано на настільних та веб-платформах.
 
 .. _class_Node_constant_NOTIFICATION_APPLICATION_RESUMED:
 
@@ -1205,9 +1205,9 @@ Implemented on desktop and web platforms.
 - |void| **set_auto_translate_mode**\ (\ value\: :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>`\ )
 - :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **get_auto_translate_mode**\ (\ )
 
-Defines if any text should automatically change to its translated version depending on the current locale (for nodes such as :ref:`Label<class_Label>`, :ref:`RichTextLabel<class_RichTextLabel>`, :ref:`Window<class_Window>`, etc.). Also decides if the node's strings should be parsed for translation template generation.
+Визначає, чи має будь-який текст автоматично змінюватися на перекладену версію залежно від поточної локалізації (для вузлів, таких як :ref:`Label<class_Label>`, :ref:`RichTextLabel<class_RichTextLabel>`, :ref:`Window<class_Window>` тощо). Також вирішує, чи слід аналізувати рядки вузла для створення шаблону перекладу.
 
-\ **Note:** For the root node, auto translate mode can also be set via :ref:`ProjectSettings.internationalization/rendering/root_node_auto_translate<class_ProjectSettings_property_internationalization/rendering/root_node_auto_translate>`.
+\ **Примітка:** Для кореневого вузла режим автоматичного перекладу також можна встановити через :ref:`ProjectSettings.internationalization/rendering/root_node_auto_translate<class_ProjectSettings_property_internationalization/rendering/root_node_auto_translate>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1278,9 +1278,11 @@ Defines if any text should automatically change to its translated version depend
 - |void| **set_owner**\ (\ value\: :ref:`Node<class_Node>`\ )
 - :ref:`Node<class_Node>` **get_owner**\ (\ )
 
-Власник цього вузла. Власник має бути предком цього вузла. Під час упаковки вузла власника в :ref:`PackedScene<class_PackedScene>` усі вузли, якими він володіє, також зберігаються разом із ним. Дивіться також :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`. 
+Власник цього вузла. Власник має бути предком цього вузла. Під час пакування вузла власника в :ref:`PackedScene<class_PackedScene>` усі вузли, якими він володіє, також зберігаються разом з ним. Див. також :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`.
 
-\ **Примітка:** У редакторі вузли, які не належать кореневій частині сцени, зазвичай не відображаються в доку сцени та **ні** зберігаються. Щоб запобігти цьому, не забудьте встановити власника після виклику :ref:`add_child()<class_Node_method_add_child>`.
+\ **Примітка:** У редакторі вузли, що не належать кореню сцени, зазвичай не відображаються в доці сцени та **не** зберігаються. Щоб запобігти цьому, не забудьте встановити власника після виклику :ref:`add_child()<class_Node_method_add_child>`.
+
+\ **Примітка:** Власник має бути поточним коренем сцени. Див. `Інстанцювання сцен <../tutorials/plugins/running_code_in_the_editor.html#instancing-scenes>`__ в документації для отримання додаткової інформації.
 
 .. rst-class:: classref-item-separator
 
@@ -1756,13 +1758,13 @@ Defines if any text should automatically change to its translated version depend
 
 |void| **add_to_group**\ (\ group\: :ref:`StringName<class_StringName>`, persistent\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Node_method_add_to_group>`
 
-Adds the node to the ``group``. Groups can be helpful to organize a subset of nodes, for example ``"enemies"`` or ``"collectables"``. See notes in the description, and the group methods in :ref:`SceneTree<class_SceneTree>`.
+Додає вузол до групи ``group``. Групи можуть бути корисними для організації підмножини вузлів, наприклад, ``"enemies"`` або ``"collectables"``. Див. примітки в описі та методи груп у :ref:`SceneTree<class_SceneTree>`.
 
-If ``persistent`` is ``true``, the group will be stored when saved inside a :ref:`PackedScene<class_PackedScene>`. All groups created and displayed in the Groups dock are persistent.
+Якщо ``persistent`` має значення ``true``, група буде збережена під час збереження всередині :ref:`PackedScene<class_PackedScene>`. Усі групи, створені та відображені в панелі груп, є постійними.
 
-\ **Note:** To improve performance, the order of group names is *not* guaranteed and may vary between project runs. Therefore, do not rely on the group order.
+\ **Примітка:** Для покращення продуктивності порядок назв груп *не* гарантований і може змінюватися між запусками проекту. Тому не покладайтеся на порядок груп.
 
-\ **Note:** :ref:`SceneTree<class_SceneTree>`'s group methods will *not* work on this node if not inside the tree (see :ref:`is_inside_tree()<class_Node_method_is_inside_tree>`).
+\ **Примітка:** Методи груп :ref:`SceneTree<class_SceneTree>` *не* працюватимуть на цьому вузлі, якщо він не знаходиться всередині дерева (див. :ref:`is_inside_tree()<class_Node_method_is_inside_tree>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1905,11 +1907,11 @@ If ``persistent`` is ``true``, the group will be stored when saved inside a :ref
 
 :ref:`Node<class_Node>` **duplicate**\ (\ flags\: :ref:`int<class_int>` = 15\ ) |const| :ref:`🔗<class_Node_method_duplicate>`
 
-Duplicates the node, returning a new node with all of its properties, signals, groups, and children copied from the original, recursively. The behavior can be tweaked through the ``flags`` (see :ref:`DuplicateFlags<enum_Node_DuplicateFlags>`). Internal nodes are not duplicated.
+Дублює вузол, повертаючи новий вузол з усіма його властивостями, сигналами, групами та дочірніми елементами, рекурсивно скопійованими з оригіналу. Поведінку можна налаштувати за допомогою ``flags`` (див. :ref:`DuplicateFlags<enum_Node_DuplicateFlags>`). Внутрішні вузли не дублюються.
 
-\ **Note:** For nodes with a :ref:`Script<class_Script>` attached, if :ref:`Object._init()<class_Object_private_method__init>` has been defined with required parameters, the duplicated node will not have a :ref:`Script<class_Script>`.
+\ **Примітка:** Для вузлів із приєднаним :ref:`Script<class_Script>`, якщо :ref:`Object._init()<class_Object_private_method__init>` було визначено з обов'язковими параметрами, дубльований вузол не матиме :ref:`Script<class_Script>`.
 
-\ **Note:** By default, this method will duplicate only properties marked for serialization (i.e. using :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>`, or in GDScript, :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`). If you want to duplicate all properties, use :ref:`DUPLICATE_INTERNAL_STATE<class_Node_constant_DUPLICATE_INTERNAL_STATE>`.
+\ **Примітка:** За замовчуванням цей метод дублюватиме лише властивості, позначені для серіалізації (тобто за допомогою :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` або в GDScript, :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`). Якщо ви хочете дублювати всі властивості, використовуйте :ref:`DUPLICATE_INTERNAL_STATE<class_Node_constant_DUPLICATE_INTERNAL_STATE>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2729,9 +2731,9 @@ Fetches a вершина :ref:`NodePath<class_NodePath>`. Подібно до :r
 
 |void| **print_orphan_nodes**\ (\ ) |static| :ref:`🔗<class_Node_method_print_orphan_nodes>`
 
-Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). Useful for debugging.
+Виводить усі вузли-сиріти (вузли поза :ref:`SceneTree<class_SceneTree>`). Корисно для налагодження.
 
-\ **Note:** This method only works in debug builds. It does nothing in a project exported in release mode.
+\ **Примітка:** Цей метод працює лише у збірках для налагодження. Він нічого не робить у проекті, експортованому в режимі випуску.
 
 .. rst-class:: classref-item-separator
 

@@ -218,7 +218,7 @@ Emitted when the collision between one of this RigidBody2D's :ref:`Shape2D<class
 
 Emitida cuando el motor físico cambia el estado de sueño del cuerpo.
 
-\ **Nota:** Cambiar el valor :ref:`sleeping<class_RigidBody2D_property_sleeping>` no activará esta señal. Sólo se emite si el motor de física cambia el estado de sueño o si se utiliza ``emit_signal("sleeping_state_changed")``.
+\ **Nota:** Cambiar el valor :ref:`sleeping<class_RigidBody2D_property_sleeping>` no activará esta señal. Solo se emite si el motor de física cambia el estado de sueño o si se utiliza ``emit_signal("sleeping_state_changed")``.
 
 .. rst-class:: classref-section-separator
 

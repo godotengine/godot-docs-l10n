@@ -145,7 +145,7 @@ enum **Feature**: :ref:`🔗<enum_EditorFeatureProfile_Feature>`
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_SIGNALS_DOCK** = ``9``
 
-The Signals dock. If this feature is disabled, signals won't be visible and modifiable from the editor.
+Панель «Сигналы». Если эта функция отключена, сигналы не будут видны и недоступны для изменения в редакторе.
 
 .. _class_EditorFeatureProfile_constant_FEATURE_GROUPS_DOCK:
 
@@ -153,7 +153,7 @@ The Signals dock. If this feature is disabled, signals won't be visible and modi
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_GROUPS_DOCK** = ``10``
 
-The Groups dock. If this feature is disabled, groups won't be visible and modifiable from the editor.
+Панель «Группы». Если эта функция отключена, группы не будут видны и недоступны для изменения в редакторе.
 
 .. _class_EditorFeatureProfile_constant_FEATURE_MAX:
 

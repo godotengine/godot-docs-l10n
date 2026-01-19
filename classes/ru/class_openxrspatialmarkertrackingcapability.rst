@@ -75,7 +75,7 @@ Returns ``true`` if Aruco marker tracking is supported by the current device.
 
 :ref:`bool<class_bool>` **is_micro_qrcode_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_is_micro_qrcode_supported>`
 
-Returns ``true`` if micro QR code marker tracking is supported by the current device.
+Возвращает ``true``, если текущее устройство поддерживает отслеживание микро-QR-кодов.
 
 .. rst-class:: classref-item-separator
 
@@ -87,7 +87,7 @@ Returns ``true`` if micro QR code marker tracking is supported by the current de
 
 :ref:`bool<class_bool>` **is_qrcode_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_is_qrcode_supported>`
 
-Returns ``true`` if QR code marker tracking is supported by the current device.
+Возвращает ``true``, если текущее устройство поддерживает отслеживание маркеров QR-кода.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

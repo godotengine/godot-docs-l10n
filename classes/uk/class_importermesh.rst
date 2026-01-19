@@ -139,7 +139,7 @@ ImporterMesh
 
 :ref:`ImporterMesh<class_ImporterMesh>` **from_mesh**\ (\ mesh\: :ref:`Mesh<class_Mesh>`\ ) |static| :ref:`🔗<class_ImporterMesh_method_from_mesh>`
 
-Converts the given :ref:`Mesh<class_Mesh>` into an **ImporterMesh** by copying all its surfaces, blend shapes, materials, and metadata into a new **ImporterMesh** object.
+Перетворює заданий :ref:`Mesh<class_Mesh>` на **ImporterMesh**, копіюючи всі його поверхні, форми поєднання, матеріали та метадані в новий об'єкт **ImporterMesh**.
 
 .. rst-class:: classref-item-separator
 

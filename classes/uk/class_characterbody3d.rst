@@ -443,9 +443,9 @@ enum **PlatformOnLeave**: :ref:`🔗<enum_CharacterBody3D_PlatformOnLeave>`
 - |void| **set_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_velocity**\ (\ )
 
-Current velocity vector (typically meters per second), used and modified during calls to :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`.
+Поточний вектор швидкості (зазвичай метри за секунду), який використовується та змінюється під час викликів :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`.
 
-\ **Note:** A common mistake is setting this property to the desired velocity multiplied by ``delta``, which produces a motion vector (typically in meters).
+\ **Примітка:** Поширеною помилкою є встановлення для цієї властивості значення бажаної швидкості, помноженої на ``дельта``, що створює вектор руху (зазвичай у метрах).
 
 .. rst-class:: classref-item-separator
 
@@ -529,7 +529,7 @@ Current velocity vector (typically meters per second), used and modified during 
 
 :ref:`KinematicCollision3D<class_KinematicCollision3D>` **get_last_slide_collision**\ (\ ) :ref:`🔗<class_CharacterBody3D_method_get_last_slide_collision>`
 
-Returns a :ref:`KinematicCollision3D<class_KinematicCollision3D>` if a collision occurred. The returned value contains information about the latest collision that occurred during the last call to :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Returns ``null`` if no collision occurred. See also :ref:`get_slide_collision()<class_CharacterBody3D_method_get_slide_collision>`.
+Повертає значення :ref:`KinematicCollision3D<class_KinematicCollision3D>`, якщо відбулося зіткнення. Повернене значення містить інформацію про останнє зіткнення, яке сталося під час останнього виклику методу :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Повертає значення ``null``, якщо зіткнення не відбулося. Див. також метод :ref:`get_slide_collision()<class_CharacterBody3D_method_get_slide_collision>`.
 
 .. rst-class:: classref-item-separator
 
@@ -589,7 +589,7 @@ Returns a :ref:`KinematicCollision3D<class_KinematicCollision3D>` if a collision
 
 :ref:`KinematicCollision3D<class_KinematicCollision3D>` **get_slide_collision**\ (\ slide_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CharacterBody3D_method_get_slide_collision>`
 
-Returns a :ref:`KinematicCollision3D<class_KinematicCollision3D>`, which contains information about a collision that occurred during the last call to :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Since the body can collide several times in a single call to :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`, you must specify the index of the collision in the range 0 to (:ref:`get_slide_collision_count()<class_CharacterBody3D_method_get_slide_collision_count>` - 1). See also :ref:`get_last_slide_collision()<class_CharacterBody3D_method_get_last_slide_collision>`.
+Повертає :ref:`KinematicCollision3D<class_KinematicCollision3D>`, який містить інформацію про зіткнення, що сталося під час останнього виклику методу :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Оскільки тіло може зіткнутися кілька разів за один виклик методу :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`, необхідно вказати індекс зіткнення в діапазоні від 0 до (:ref:`get_slide_collision_count()<class_CharacterBody3D_method_get_slide_collision_count>` - 1). Див. також :ref:`get_last_slide_collision()<class_CharacterBody3D_method_get_last_slide_collision>`.
 
 .. rst-class:: classref-item-separator
 

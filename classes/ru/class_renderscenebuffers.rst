@@ -16,9 +16,9 @@ RenderSceneBuffers
 Описание
 ----------------
 
-Объект буферов абстрактной сцены, созданный для каждого окна просмотра, для которого выполняется 3D-рендеринг. Он управляет любыми дополнительными буферами, используемыми во время рендеринга, и отбрасывает буферы при изменении размера окна просмотра.
+Abstract scene buffers object, created for each viewport for which 3D rendering is done. It manages any additional buffers used during rendering and will discard buffers when the viewport is resized. See also :ref:`RenderSceneBuffersRD<class_RenderSceneBuffersRD>`.
 
-\ **Примечание:** Это внутренний объект сервера рендеринга, не создавайте его из скрипта.
+\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
 
 .. rst-class:: classref-reftable-group
 

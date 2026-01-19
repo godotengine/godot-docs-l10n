@@ -100,11 +100,11 @@ ResourceImporterTexture
 
 :ref:`int<class_int>` **compress/channel_pack** = ``0`` :ref:`🔗<class_ResourceImporterTexture_property_compress/channel_pack>`
 
-Controls how color channels should be used in the imported texture.
+Керує тим, як колірні канали повинні використовуватися в імпортованій текстурі.
 
-\ **sRGB Friendly:** Prevents the R and RG color formats from being used, as they do not support nonlinear sRGB encoding.
+\ **Зручний для sRGB:** Запобігає використанню кольорових форматів R та RG, оскільки вони не підтримують нелінійне кодування sRGB.
 
-\ **Optimized:** Allows the RG color format to be used if the texture does not use the blue channel. This reduces memory usage if the texture's blue channel can be discarded (all pixels must have a blue value of ``0``).
+\ **Оптимізований:** Дозволяє використовувати кольоровий формат RG, якщо текстура не використовує синій канал. Це зменшує використання пам'яті, якщо синій канал текстури можна відкинути (усі пікселі повинні мати значення синього ``0``).
 
 .. rst-class:: classref-item-separator
 
@@ -454,9 +454,9 @@ BPTC і ASTC підтримка VRAM стиснення для текстур HD
 
 :ref:`bool<class_bool>` **process/hdr_as_srgb** = ``false`` :ref:`🔗<class_ResourceImporterTexture_property_process/hdr_as_srgb>`
 
-Some HDR images you can find online may be broken and contain data that is encoded using the nonlinear sRGB transfer function (instead of using linear encoding). It is advised not to use those files. If you absolutely have to, enabling :ref:`process/hdr_as_srgb<class_ResourceImporterTexture_property_process/hdr_as_srgb>` will make them look correct.
+Деякі HDR-зображення, які ви можете знайти в Інтернеті, можуть бути пошкодженими та містити дані, закодовані за допомогою нелінійної функції передачі sRGB (замість лінійного кодування). Рекомендується не використовувати такі файли. Якщо це абсолютно необхідно, увімкнення :ref:`process/hdr_as_srgb<class_ResourceImporterTexture_property_process/hdr_as_srgb>` зробить їх вигляд правильним.
 
-\ **Warning:** Enabling :ref:`process/hdr_as_srgb<class_ResourceImporterTexture_property_process/hdr_as_srgb>` on well-formatted HDR images will cause the resulting image to look too dark, so leave this on ``false`` if unsure.
+\ **Попередження:** Увімкнення :ref:`process/hdr_as_srgb<class_ResourceImporterTexture_property_process/hdr_as_srgb>` на добре відформатованих HDR-зображеннях призведе до того, що отримане зображення виглядатиме занадто темним, тому залиште це значення на ``false``, якщо не впевнені.
 
 .. rst-class:: classref-item-separator
 

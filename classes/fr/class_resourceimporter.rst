@@ -16,7 +16,7 @@ Classe de base pour les importateurs de ressources.
 Description
 -----------
 
-This is the base class for Godot's resource importers. To implement your own resource importers using editor plugins, see :ref:`EditorImportPlugin<class_EditorImportPlugin>`.
+Il s'agit de la classe de base pour les importeurs de ressources de Godot. Pour implémenter vos propres importeurs de ressources en utilisant des plugins éditeur, voir :ref:`EditorImportPlugin<class_EditorImportPlugin>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -83,18 +83,18 @@ Descriptions des méthodes
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_build_dependencies**\ (\ path\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_ResourceImporter_private_method__get_build_dependencies>`
 
-Called when the engine compilation profile editor wants to check what build options an imported resource needs. For example, :ref:`ResourceImporterDynamicFont<class_ResourceImporterDynamicFont>` has a property called :ref:`ResourceImporterDynamicFont.multichannel_signed_distance_field<class_ResourceImporterDynamicFont_property_multichannel_signed_distance_field>`, that depends on the engine to be build with the "msdfgen" module. If that resource happened to be a custom one, it would be handled like this:
+Appelée lorsque l'éditeur de profil de compilation du moteur veut vérifier quelles options de compilation une ressource importée a besoin. Par exemple, :ref:`ResourceImporterDynamicFont<class_ResourceImporterDynamicFont>` a une propriété appelée :ref:`ResourceImporterDynamicFont.multichannel_signed_distance_field<class_ResourceImporterDynamicFont_property_multichannel_signed_distance_field>`, qui nécessite à ce que le moteur soit compilé avec le module "msdfgen". Si cette ressource était une ressource personnalisée, ceci serait géré comme ceci :
 
 ::
 
     func _get_build_dependencies(path):
-        var resource = load(path)
-        var dependencies = PackedStringArray()
+        var ressource = load(path)
+        var dependances = PackedStringArray()
 
-        if resource.multichannel_signed_distance_field:
-            dependencies.push_back("module_msdfgen_enabled")
+        if ressource.multichannel_signed_distance_field:
+            dependances.push_back("module_msdfgen_enabled")
 
-        return dependencies
+        return dependances
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -80,7 +80,7 @@ El recurso :ref:`Mesh<class_Mesh>` a usar como forma CSG.
 
 \ **Nota:** Algunos tipos de :ref:`Mesh<class_Mesh>` como :ref:`PlaneMesh<class_PlaneMesh>`, :ref:`PointMesh<class_PointMesh>`, :ref:`QuadMesh<class_QuadMesh>`, y :ref:`RibbonTrailMesh<class_RibbonTrailMesh>` son excluidos de la sugerencia de tipo para esta propiedad, ya que estas primitivas no son *múltiples* y por lo tanto no son compatibles con el algoritmo CSG.
 
-\ **Nota:** Cuando se usa un :ref:`ArrayMesh<class_ArrayMesh>`, todos los atributos de vértice excepto :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>`, :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>` y :ref:`Mesh.ARRAY_TEX_UV<class_Mesh_constant_ARRAY_TEX_UV>` se dejan sin usar. Sólo :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>` y :ref:`Mesh.ARRAY_TEX_UV<class_Mesh_constant_ARRAY_TEX_UV>` se pasarán a la GPU.
+\ **Nota:** Cuando se usa un :ref:`ArrayMesh<class_ArrayMesh>`, todos los atributos de vértice excepto :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>`, :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>` y :ref:`Mesh.ARRAY_TEX_UV<class_Mesh_constant_ARRAY_TEX_UV>` se dejan sin usar. Solo :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>` y :ref:`Mesh.ARRAY_TEX_UV<class_Mesh_constant_ARRAY_TEX_UV>` se pasarán a la GPU.
 
 \ :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>` sólo se usa para determinar qué caras requieren el uso de sombreado plano. Por defecto, CSGMesh ignorará las normales de los vértices de la malla, las recalculará para cada vértice y usará un shader suave. Si se requiere un shader plano para una cara, asegúrate de que todas las normales de los vértices de la cara sean aproximadamente iguales.
 

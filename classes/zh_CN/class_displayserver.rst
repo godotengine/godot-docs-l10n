@@ -2791,9 +2791,9 @@ enum **TTSUtteranceEvent**: :ref:`🔗<enum_DisplayServer_TTSUtteranceEvent>`
 
 :ref:`RID<class_RID>` **accessibility_create_sub_text_edit_elements**\ (\ parent_rid\: :ref:`RID<class_RID>`, shaped_text\: :ref:`RID<class_RID>`, min_height\: :ref:`float<class_float>`, insert_pos\: :ref:`int<class_int>` = -1, is_last_line\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_DisplayServer_method_accessibility_create_sub_text_edit_elements>`
 
-Creates a new, empty accessibility sub-element from the shaped text buffer. Sub-elements are freed automatically when the parent element is freed, or can be freed early using the :ref:`accessibility_free_element()<class_DisplayServer_method_accessibility_free_element>` method.
+根据指定的文本缓冲区创建一个新的、空的无障碍访问子元素。子元素在父元素被释放时会自动释放，也可以提前使用 :ref:`accessibility_free_element()<class_DisplayServer_method_accessibility_free_element>` 方法释放。
 
-If ``is_last_line`` is ``true``, no trailing newline is appended to the text content. Set to ``true`` for the last line in multi-line text fields and for single-line text fields.
+如果 ``is_last_line`` 为 ``true``\ ，则不会在文本内容后附加换行符。对于多行文本框的最后一行和单行文本框，应将此参数设为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3851,9 +3851,11 @@ Returns ``1`` if a screen reader, Braille display or other assistive app is acti
 
 |void| **cursor_set_custom_image**\ (\ cursor\: :ref:`Resource<class_Resource>`, shape\: :ref:`CursorShape<enum_DisplayServer_CursorShape>` = 0, hotspot\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_DisplayServer_method_cursor_set_custom_image>`
 
-为给定的形状 ``shape`` 设置自定义鼠标指针图像。这意味着用户的操作系统和鼠标光标主题不再影响鼠标光标的外观。
+Sets a custom mouse cursor image for the given ``shape``. This means the user's operating system and mouse cursor theme will no longer influence the mouse cursor's appearance.
 
-\ ``cursor`` 可以是 :ref:`Texture2D<class_Texture2D>` 或 :ref:`Image<class_Image>`\ ，并且它不应大于 256×256 才能正确显示。还可以选择设置 ``hotspot`` 以偏移图像相对于点击点的位置。默认情况下，\ ``hotspot`` 被设置为图像的左上角。另见 :ref:`cursor_set_shape()<class_DisplayServer_method_cursor_set_shape>`\ 。
+\ ``cursor`` can be either a :ref:`Texture2D<class_Texture2D>` or an :ref:`Image<class_Image>`, and it should not be larger than 256×256 to display correctly. Optionally, ``hotspot`` can be set to offset the image's position relative to the click point. By default, ``hotspot`` is set to the top-left corner of the image. See also :ref:`cursor_set_shape()<class_DisplayServer_method_cursor_set_shape>`.
+
+\ **Note:** On Web, calling this method every frame can cause the cursor to flicker.
 
 .. rst-class:: classref-item-separator
 
@@ -3931,45 +3933,45 @@ Returns ``1`` if a screen reader, Braille display or other assistive app is acti
 
 :ref:`Error<enum_@GlobalScope_Error>` **file_dialog_show**\ (\ title\: :ref:`String<class_String>`, current_directory\: :ref:`String<class_String>`, filename\: :ref:`String<class_String>`, show_hidden\: :ref:`bool<class_bool>`, mode\: :ref:`FileDialogMode<enum_DisplayServer_FileDialogMode>`, filters\: :ref:`PackedStringArray<class_PackedStringArray>`, callback\: :ref:`Callable<class_Callable>`, parent_window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_file_dialog_show>`
 
-Displays OS native dialog for selecting files or directories in the file system.
+显示操作系统原生对话框，用于选择文件系统中的文件或目录。
 
-Each filter string in the ``filters`` array should be formatted like this: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. The description text of the filter is optional and can be omitted. It is recommended to set both file extension and MIME type. See also :ref:`FileDialog.filters<class_FileDialog_property_filters>`.
+\ ``filters`` 数组中的每个筛选字符串的格式应类似于：\ ``*.png,*.jpg,*.jpeg;图像文件;image/png,image/jpeg``\ 。过滤器的描述文本是可选的，可以省略。建议同时设置文件扩展名和 MIME 类型。另见 :ref:`FileDialog.filters<class_FileDialog_property_filters>`\ 。
 
-Callbacks have the following arguments: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int``. **On Android,** the third callback argument (``selected_filter_index``) is always ``0``.
+回调的参数如下：\ ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int``\ 。\ **在 Android 平台上**\ ，第三个回调参数（\ ``selected_filter_index``\ ）始终为 ``0``\ 。
 
-\ **Note:** This method is implemented if the display server has the :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>` feature. Supported platforms include Linux (X11/Wayland), Windows, macOS, and Android (API level 29+).
+\ **注意：**\ 此方法仅在显示服务器支持 :ref:`FEATURE_NATIVE_DIALOG<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG>` 特性时可用。支持的平台包括 Linux（X11/Wayland）、Windows、macOS 和 Android（API 级别 29+）。
 
-\ **Note:** ``current_directory`` might be ignored.
+\ **注意：**\ ``current_directory`` 可能会被忽略。
 
-\ **Note:** Embedded file dialogs and Windows file dialogs support only file extensions, while Android, Linux, and macOS file dialogs also support MIME types.
+\ **注意：**\ 嵌入文件对话框和 Windows 文件对话框仅支持文件扩展名过滤，而 Android、Linux 和 macOS 的文件对话框还支持 MIME 类型过滤。
 
-\ **Note:** On Android and Linux, ``show_hidden`` is ignored.
+\ **注意：**\ 在 Android 和 Linux 上，\ ``show_hidden`` 无效。
 
-\ **Note:** On Android and macOS, native file dialogs have no title.
+\ **注意：**\ 在 Android 和 macOS 上，原生文件对话框没有标题。
 
-\ **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` to get a list of saved bookmarks.
+\ **注意：**\ 在 macOS 上，沙盒应用程序将保存安全范围书签，以便在多次会话期间保持对已打开文件夹的访问权限。可使用 :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` 获取已保存书签的列表。
 
-\ **Note:** On Android, this method uses the Android Storage Access Framework (SAF).
+\ **注意：**\ 在 Android 上，此方法使用 Android 存储访问框架（SAF）。
 
-The file picker returns a URI instead of a filesystem path. This URI can be passed directly to :ref:`FileAccess<class_FileAccess>` to perform read/write operations.
+文件选择器返回的是一个 URI 而非文件系统路径。此 URI 可直接传递给 :ref:`FileAccess<class_FileAccess>` 以执行读写操作。
 
-When using :ref:`FILE_DIALOG_MODE_OPEN_DIR<class_DisplayServer_constant_FILE_DIALOG_MODE_OPEN_DIR>`, it returns a tree URI that grants full access to the selected directory. File operations inside this directory can be performed by passing a path on the form ``treeUri#relative/path/to/file`` to :ref:`FileAccess<class_FileAccess>`.
+当使用 :ref:`FILE_DIALOG_MODE_OPEN_DIR<class_DisplayServer_constant_FILE_DIALOG_MODE_OPEN_DIR>` 模式时，会返回一个授予对所选目录完全访问权限的树形 URI。在该目录内进行文件操作时，可将形如 ``treeUri#相对/路径/到/文件`` 的路径传递给 :ref:`FileAccess<class_FileAccess>`\ 。
 
-To avoid opening the file picker again after each app restart, you can take persistable URI permission as follows:
+为避免每次应用重启后重复打开文件选择器，可按如下方式获取持久化的 URI 权限：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    val uri = "content://com.android..." # URI of the selected file or folder.
-    val persist = true # Set to false to release the persistable permission.
+    val uri = "content://com.android..." # 所选文件或文件夹的 URI。
+    val persist = true # 设为 false 可释放持久化权限。
     var android_runtime = Engine.get_singleton("AndroidRuntime")
     android_runtime.updatePersistableUriPermission(uri, persist)
 
 
 
-The persistable URI permission remains valid across app restarts as long as the directory is not moved, renamed, or deleted.
+只要目录未被移动、重命名或删除，持久化的 URI 权限将在应用重启后保持有效。
 
 .. rst-class:: classref-item-separator
 
@@ -5561,11 +5563,11 @@ Returns the index of the primary screen.
 
 :ref:`Color<class_Color>` **screen_get_pixel**\ (\ position\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_pixel>`
 
-Returns the color of the pixel at the given screen ``position``. On multi-monitor setups, the screen position is relative to the virtual desktop area.
+返回指定屏幕 ``position`` 位置像素的颜色。在多显示器配置下，屏幕位置相对于虚拟桌面区域。
 
-\ **Note:** This method is implemented on Linux (X11, excluding XWayland), macOS, and Windows. On other platforms, this method always returns ``Color(0, 0, 0, 1)``.
+\ **注意：**\ 此方法在 Linux（X11，不包括 XWayland）、macOS 和 Windows 平台上实现。在其他平台上，此方法始终返回 ``Color(0, 0, 0, 1)``\ 。
 
-\ **Note:** On macOS, this method requires the "Screen Recording" permission. If permission is not granted, this method returns a color from a screenshot that will not include other application windows or OS elements not related to the application.
+\ ** 注意：**\ 在 macOS 上，该方法需要“屏幕录制”权限。若未授予权限，则该方法返回的像素颜色将取自不包含其他应用程序窗口以及与该应用程序无关的操作系统元素的屏幕截图。
 
 .. rst-class:: classref-item-separator
 
@@ -5718,9 +5720,9 @@ To fallback to a default refresh rate if the method fails, try:
 
 |void| **set_hardware_keyboard_connection_change_callback**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_DisplayServer_method_set_hardware_keyboard_connection_change_callback>`
 
-Sets the callback that should be called when a hardware keyboard is connected or disconnected. ``callable`` should accept a single :ref:`bool<class_bool>` argument indicating whether the keyboard has been connected (``true``) or disconnected (``false``).
+设置当硬件键盘连接或断开时应调用的回调函数。\ ``callable`` 应接受单个 :ref:`bool<class_bool>` 参数，指示键盘已连接（\ ``true``\ ）或已断开（\ ``false``\ ）。
 
-\ **Note:** This method is only implemented on Android.
+\ **注意：**\ 该方法仅在 Android 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -6094,9 +6096,9 @@ Sets the callback that should be called when the system's theme settings are cha
 
 :ref:`int<class_int>` **virtual_keyboard_get_height**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_virtual_keyboard_get_height>`
 
-Returns the on-screen keyboard's height in pixels. Returns ``0`` if there is no keyboard or if it is currently hidden.
+返回屏幕键盘的高度（单位为像素）。如果没有键盘或键盘当前被隐藏，则返回 ``0``\ 。
 
-\ **Note:** On Android 7 and 8, the keyboard height may return ``0`` the first time the keyboard is opened in non-immersive mode. This behavior does not occur in immersive mode.
+\ **注意：**\ 在 Android 7 和 8 上，在非沉浸模式下首次打开键盘时，键盘高度可能会返回 ``0``\ 。该问题在沉浸模式下不会出现。
 
 .. rst-class:: classref-item-separator
 

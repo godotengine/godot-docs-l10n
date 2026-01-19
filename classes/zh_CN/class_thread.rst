@@ -14,15 +14,15 @@ Thread
 描述
 ----
 
-A unit of execution in a process. Can run methods on :ref:`Object<class_Object>`\ s simultaneously. The use of synchronization via :ref:`Mutex<class_Mutex>` or :ref:`Semaphore<class_Semaphore>` is advised if working with shared objects.
+进程中的执行单元。可以同时在 :ref:`Object<class_Object>` 上运行方法。如果使用共享对象，建议通过 :ref:`Mutex<class_Mutex>` 或 :ref:`Semaphore<class_Semaphore>` 进行同步。
 
-\ **Warning:** To ensure proper cleanup without crashes or deadlocks, when a **Thread**'s reference count reaches zero and it is therefore destroyed, the following conditions must be met:
+\ **警告：**\ 为了确保能够正确清理，避免崩溃和死锁，\ **Thread** 的引用计数变为零进行销毁时，必须满足以下条件：
 
-- It must not have any :ref:`Mutex<class_Mutex>` objects locked.
+- 它不能有任何已锁定的 :ref:`Mutex<class_Mutex>` 对象。
 
-- It must not be waiting on any :ref:`Semaphore<class_Semaphore>` objects.
+- 它不能在等待任何 :ref:`Semaphore<class_Semaphore>` 对象。
 
-- :ref:`wait_to_finish()<class_Thread_method_wait_to_finish>` should have been called on it.
+- 应该已经对其调用过 :ref:`wait_to_finish()<class_Thread_method_wait_to_finish>`\ 。
 
 .. rst-class:: classref-introduction-group
 

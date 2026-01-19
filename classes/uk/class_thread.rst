@@ -14,15 +14,15 @@ Thread
 Опис
 --------
 
-A unit of execution in a process. Can run methods on :ref:`Object<class_Object>`\ s simultaneously. The use of synchronization via :ref:`Mutex<class_Mutex>` or :ref:`Semaphore<class_Semaphore>` is advised if working with shared objects.
+Одиниця виконання в процесі. Може одночасно запускати методи на :ref:`Object<class_Object>`. Використання синхронізації через :ref:`Mutex<class_Mutex>` або :ref:`Semaphore<class_Semaphore>` рекомендується при роботі зі спільними об'єктами.
 
-\ **Warning:** To ensure proper cleanup without crashes or deadlocks, when a **Thread**'s reference count reaches zero and it is therefore destroyed, the following conditions must be met:
+\ **Попередження:** Щоб забезпечити належне очищення без збоїв або блокувань, коли кількість посилань ``Потоку`` досягає нуля і, таким чином, він знищується, повинні бути виконані такі умови:
 
-- It must not have any :ref:`Mutex<class_Mutex>` objects locked.
+- Він не повинен мати заблокованих об'єктів :ref:`Mutex<class_Mutex>`.
 
-- It must not be waiting on any :ref:`Semaphore<class_Semaphore>` objects.
+- Він не повинен очікувати на жодних об'єктах :ref:`Semaphore<class_Semaphore>`.
 
-- :ref:`wait_to_finish()<class_Thread_method_wait_to_finish>` should have been called on it.
+- Для нього мав бути викликаний :ref:`wait_to_finish()<class_Thread_method_wait_to_finish>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -139,9 +139,9 @@ enum **Priority**: :ref:`🔗<enum_Thread_Priority>`
 
 :ref:`bool<class_bool>` **is_main_thread**\ (\ ) |static| :ref:`🔗<class_Thread_method_is_main_thread>`
 
-Returns ``true`` if the thread this method was called from is the main thread.
+Повертає ``true``, якщо потік, з якого було викликано цей метод, є основним потоком.
 
-\ **Note:** This is a static method and isn't associated with a specific **Thread** object.
+\ **Примітка:** Це статичний метод, який не пов'язаний з певним об'єктом **Thread**.
 
 .. rst-class:: classref-item-separator
 

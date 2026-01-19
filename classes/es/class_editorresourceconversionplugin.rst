@@ -7,7 +7,7 @@ EditorResourceConversionPlugin
 
 **Hereda:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Plugin for adding custom converters from one resource format to another in the editor resource picker context menu; for example, converting a :ref:`StandardMaterial3D<class_StandardMaterial3D>` to a :ref:`ShaderMaterial<class_ShaderMaterial>`.
+Plugin para añadir convertidores personalizados de un formato de recurso a otro en el menú contextual del selector de recursos del editor; por ejemplo, convertir un :ref:`StandardMaterial3D<class_StandardMaterial3D>` a un :ref:`ShaderMaterial<class_ShaderMaterial>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -71,7 +71,7 @@ Descripciones de Métodos
 
 :ref:`Resource<class_Resource>` **_convert**\ (\ resource\: :ref:`Resource<class_Resource>`\ ) |virtual| |const| :ref:`🔗<class_EditorResourceConversionPlugin_private_method__convert>`
 
-Takes an input :ref:`Resource<class_Resource>` and converts it to the type given in :ref:`_converts_to()<class_EditorResourceConversionPlugin_private_method__converts_to>`. The returned :ref:`Resource<class_Resource>` is the result of the conversion, and the input :ref:`Resource<class_Resource>` remains unchanged.
+Toma un :ref:`Resource<class_Resource>` de entrada y lo convierte al tipo dado en :ref:`_converts_to()<class_EditorResourceConversionPlugin_private_method__converts_to>`. El :ref:`Resource<class_Resource>` devuelto es el resultado de la conversión, y el :ref:`Resource<class_Resource>` de entrada permanece sin cambios.
 
 .. rst-class:: classref-item-separator
 
@@ -83,7 +83,7 @@ Takes an input :ref:`Resource<class_Resource>` and converts it to the type given
 
 :ref:`String<class_String>` **_converts_to**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorResourceConversionPlugin_private_method__converts_to>`
 
-Returns the class name of the target type of :ref:`Resource<class_Resource>` that this plugin converts source resources to.
+Devuelve el nombre de la clase del tipo de destino de :ref:`Resource<class_Resource>` al que este plugin convierte los recursos de origen.
 
 .. rst-class:: classref-item-separator
 
@@ -95,7 +95,7 @@ Returns the class name of the target type of :ref:`Resource<class_Resource>` tha
 
 :ref:`bool<class_bool>` **_handles**\ (\ resource\: :ref:`Resource<class_Resource>`\ ) |virtual| |const| :ref:`🔗<class_EditorResourceConversionPlugin_private_method__handles>`
 
-Called to determine whether a particular :ref:`Resource<class_Resource>` can be converted to the target resource type by this plugin.
+Se llama para determinar si un :ref:`Resource<class_Resource>` en particular puede ser convertido al tipo de recurso de destino por este plugin.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

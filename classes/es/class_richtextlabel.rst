@@ -1101,11 +1101,11 @@ Controla la alineación vertical del texto. Admite superior, centro, inferior y 
 - |void| **set_visible_characters**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_visible_characters**\ (\ )
 
-The number of characters to display. If set to ``-1``, all characters are displayed. This can be useful when animating the text appearing in a dialog box.
+El número de caracteres a mostrar. Si se establece en ``-1``, se muestran todos los caracteres. Esto puede ser útil al animar el texto que aparece en un cuadro de diálogo.
 
-\ **Note:** Setting this property updates :ref:`visible_ratio<class_RichTextLabel_property_visible_ratio>` accordingly.
+\ **Nota:** Establecer esta propiedad actualiza :ref:`visible_ratio<class_RichTextLabel_property_visible_ratio>` en consecuencia.
 
-\ **Note:** Characters are counted as Unicode codepoints. A single visible grapheme may contain multiple codepoints (e.g. certain emoji use three codepoints). A single codepoint may contain two UTF-16 characters, which are used in C# strings.
+\ **Nota:** Los caracteres se cuentan como puntos de código Unicode. Un solo grafema visible puede contener múltiples puntos de código (por ejemplo, algunos emojis usan tres puntos de código). Un solo punto de código puede contener dos caracteres UTF-16, que se usan en las cadenas de C#.
 
 .. rst-class:: classref-item-separator
 

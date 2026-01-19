@@ -7,14 +7,14 @@ OpenXRFrameSynthesisExtension
 
 **Успадковує:** :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>` **<** :ref:`Object<class_Object>`
 
-The OpenXR Frame synthesis extension allows for advanced reprojection at low(er) framerates.
+Розширення синтезу кадрів OpenXR дозволяє розширене повторне проектування з нижчою (меншою) частотою кадрів.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-This class implements the `OpenXR Frame synthesis extension <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_EXT_frame_synthesis>`__. When enabled in the project settings and supported by the XR runtime in use, frame synthesis uses advanced reprojection techniques to inject additional frames so that your XR experience hits the full frame rate of the device.
+Цей клас реалізує розширення синтезу кадрів OpenXR `OpenXR Frame Synthesis <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_EXT_frame_synthesis>`__. Коли воно ввімкнено в налаштуваннях проекту та підтримується середовищем виконання XR, синтез кадрів використовує розширені методи повторного проектування для введення додаткових кадрів, щоб ваш досвід XR досяг повної частоти кадрів пристрою.
 
 .. rst-class:: classref-reftable-group
 
@@ -64,7 +64,7 @@ This class implements the `OpenXR Frame synthesis extension <https://registry.kh
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_enabled**\ (\ )
 
-Enable frame synthesis. When ``true`` motion vector and depth data is provided to the XR runtime.
+Увімкнути синтез кадрів. Коли до середовища виконання XR надаються дані вектора руху та глибини ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -81,7 +81,7 @@ Enable frame synthesis. When ``true`` motion vector and depth data is provided t
 - |void| **set_relax_frame_interval**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_relax_frame_interval**\ (\ )
 
-If ``true`` this informs the XR runtime we will be providing frames at a greatly reduced rate. Enable this when you expect your application to run at low framerates and wish to inject multiple reprojected frames.
+Якщо значення ``true`` використовується для визначення значення, це повідомляє середовище виконання XR, що ми надаватимемо кадри зі значно зниженою частотою. Увімкніть цю функцію, якщо ви очікуєте, що ваша програма працюватиме з низькою частотою кадрів, і хочете вставити кілька перепроектованих кадрів.
 
 .. rst-class:: classref-section-separator
 
@@ -98,7 +98,7 @@ If ``true`` this informs the XR runtime we will be providing frames at a greatly
 
 :ref:`bool<class_bool>` **is_available**\ (\ ) |const| :ref:`🔗<class_OpenXRFrameSynthesisExtension_method_is_available>`
 
-Returns ``true`` if frame synthesis is enabled in the project settings and the current XR runtime supports frame synthesis. The value returned will only be valid once OpenXR has been initialized.
+Повертає ``true``, якщо синтез кадрів увімкнено в налаштуваннях проекту, і поточне середовище виконання XR підтримує синтез кадрів. Повернене значення буде дійсним лише після ініціалізації OpenXR.
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ Returns ``true`` if frame synthesis is enabled in the project settings and the c
 
 |void| **skip_next_frame**\ (\ ) :ref:`🔗<class_OpenXRFrameSynthesisExtension_method_skip_next_frame>`
 
-Queues the next frame to be skipped when supplying motion vector and depth data. Call this after teleporting your player or a similar action has moved the player to prevent incorrect reprojection results due to this movement.
+Ставить у чергу наступний кадр, який буде пропущено, під час надання даних вектора руху та глибини. Викликайте цю функцію після телепортації гравця або подібної дії, яка перемістила його, щоб запобігти неправильним результатам повторного проектування через цей рух.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

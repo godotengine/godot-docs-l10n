@@ -163,7 +163,7 @@ MenuBar
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+Код мови, що використовується для алгоритмів розриву рядків та формування тексту. Якщо залишити поле порожнім, використовується поточна локалізація.
 
 .. rst-class:: classref-item-separator
 
@@ -300,7 +300,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 
 :ref:`bool<class_bool>` **is_menu_disabled**\ (\ menu\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MenuBar_method_is_menu_disabled>`
 
-Returns ``true`` if the menu item is disabled.
+Повертає ``true``, якщо елемент меню вимкнено.
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +312,7 @@ Returns ``true`` if the menu item is disabled.
 
 :ref:`bool<class_bool>` **is_menu_hidden**\ (\ menu\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MenuBar_method_is_menu_hidden>`
 
-Returns ``true`` if the menu item is hidden.
+Повертає ``true``, якщо елемент меню прихований.
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +324,7 @@ Returns ``true`` if the menu item is hidden.
 
 :ref:`bool<class_bool>` **is_native_menu**\ (\ ) |const| :ref:`🔗<class_MenuBar_method_is_native_menu>`
 
-Returns ``true`` if the current system's global menu is supported and used by this **MenuBar**.
+Повертає ``true``, якщо глобальне меню поточної системи підтримується та використовується цим **MenuBar**.
 
 .. rst-class:: classref-item-separator
 

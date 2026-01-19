@@ -9,14 +9,14 @@ OpenXRSpatialComponentAnchorList
 
 **Наследует:** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the queries anchor result data.
+Объект для хранения данных результатов привязки запроса.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-Object for storing the queries anchor result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Объект для хранения данных результатов привязки запроса при вызове :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -45,7 +45,7 @@ Object for storing the queries anchor result data when calling :ref:`OpenXRSpati
 
 :ref:`Transform3D<class_Transform3D>` **get_entity_pose**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentAnchorList_method_get_entity_pose>`
 
-Returns the transform for the entity at this ``index``.
+Возвращает преобразование для объекта по этому ``index``.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

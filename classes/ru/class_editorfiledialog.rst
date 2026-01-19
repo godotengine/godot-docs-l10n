@@ -14,11 +14,11 @@ EditorFileDialog
 Описание
 ----------------
 
-**EditorFileDialog** is a :ref:`FileDialog<class_FileDialog>` tweaked to work in the editor. It automatically handles favorite and recent directory lists, and synchronizes some properties with their corresponding editor settings.
+**EditorFileDialog** — это :ref:`FileDialog<class_FileDialog>`, адаптированный для работы в редакторе. Он автоматически обрабатывает списки избранных и недавно использованных файлов, а также синхронизирует некоторые свойства с соответствующими настройками редактора.
 
-\ **EditorFileDialog** will automatically show a native dialog based on the :ref:`EditorSettings.interface/editor/use_native_file_dialogs<class_EditorSettings_property_interface/editor/use_native_file_dialogs>` editor setting and ignores :ref:`FileDialog.use_native_dialog<class_FileDialog_property_use_native_dialog>`.
+\ **EditorFileDialog** автоматически отобразит собственный диалог на основе настройки редактора :ref:`EditorSettings.interface/editor/use_native_file_dialogs<class_EditorSettings_property_interface/editor/use_native_file_dialogs>` и проигнорирует :ref:`FileDialog.use_native_dialog<class_FileDialog_property_use_native_dialog>`.
 
-\ **Note:** **EditorFileDialog** is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **Примечание:** **EditorFileDialog** по умолчанию невидим. Чтобы сделать его видимым, вызовите один из методов ``popup_*`` из :ref:`Window<class_Window>` узла, например, :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -85,7 +85,7 @@ EditorFileDialog
 
 **Устарело:** This feature is no longer supported.
 
-This method is kept for compatibility and does nothing. As an alternative, you can display another dialog after showing the file dialog.
+Этот метод сохранен для обеспечения совместимости и ничего не делает. В качестве альтернативы вы можете отобразить другое диалоговое окно после показа диалогового окна выбора файла.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

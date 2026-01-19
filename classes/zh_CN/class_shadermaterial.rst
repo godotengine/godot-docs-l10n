@@ -102,11 +102,11 @@ ShaderMaterial
 
 |void| **set_shader_parameter**\ (\ param\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_ShaderMaterial_method_set_shader_parameter>`
 
-更改这个材质的着色器中为某个 uniform 设置的值。
+Changes the value set for this material of a uniform in the shader.
 
-\ **注意：**\ ``param`` 大小写敏感，必须完全匹配代码中 uniform 的名称（不是检查器中首字母大写后的名称）。
+\ **Note:** ``param`` is case-sensitive and must match the name of the uniform in the code exactly (not the capitalized name in the inspector).
 
-\ **注意：**\ 对着色器 uniform 的修改会在使用这个 **ShaderMaterial** 的所有实例上生效。要防止这种行为，请通过 :ref:`GeometryInstance3D.set_instance_shader_parameter()<class_GeometryInstance3D_method_set_instance_shader_parameter>` 使用单实例 uniform，或者使用 :ref:`Resource.duplicate()<class_Resource_method_duplicate>` 制作该 **ShaderMaterial** 的副本。单实例 uniform 可以更好地复用着色器，因此速度也更快，所以应该尽可能优先使用，而不是制作 **ShaderMaterial** 的副本。
+\ **Note:** Changes to the shader uniform will be effective on all instances using this **ShaderMaterial**. To prevent this, use per-instance uniforms with :ref:`CanvasItem.set_instance_shader_parameter()<class_CanvasItem_method_set_instance_shader_parameter>`, :ref:`GeometryInstance3D.set_instance_shader_parameter()<class_GeometryInstance3D_method_set_instance_shader_parameter>` or duplicate the **ShaderMaterial** resource using :ref:`Resource.duplicate()<class_Resource_method_duplicate>`. Per-instance uniforms allow for better shader reuse and are therefore faster, so they should be preferred over duplicating the **ShaderMaterial** when possible.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -216,17 +216,17 @@ JSON
 
 :ref:`String<class_String>` **stringify**\ (\ data\: :ref:`Variant<class_Variant>`, indent\: :ref:`String<class_String>` = "", sort_keys\: :ref:`bool<class_bool>` = true, full_precision\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_JSON_method_stringify>`
 
-Converts a :ref:`Variant<class_Variant>` var to JSON text and returns the result. Useful for serializing data to store or send over the network.
+Перетворює змінну :ref:`Variant<class_Variant>` на текст JSON та повертає результат. Корисно для серіалізації даних для зберігання або надсилання через мережу.
 
-\ **Note:** The JSON specification does not define integer or float types, but only a *number* type. Therefore, converting a Variant to JSON text will convert all numerical values to :ref:`float<class_float>` types.
+\ **Примітка:** Специфікація JSON не визначає цілочисельні або числові типи з плаваючою комою, а лише числовий тип *number*. Тому перетворення Variant на текст JSON перетворить усі числові значення на типи :ref:`float<class_float>`.
 
-\ **Note:** If ``full_precision`` is ``true``, when stringifying floats, the unreliable digits are stringified in addition to the reliable digits to guarantee exact decoding.
+\ **Примітка:** Якщо ``full_precision`` має значення ``true``, під час перетворення чисел з плаваючою комою в рядок перетворюються ненадійні цифри на додаток до надійних, щоб гарантувати точне декодування.
 
-The ``indent`` parameter controls if and how something is indented; its contents will be used where there should be an indent in the output. Even spaces like ``"   "`` will work. ``\t`` and ``\n`` can also be used for a tab indent, or to make a newline for each indent respectively.
+Параметр ``indent`` контролює, чи буде щось відступне і як; його вміст буде використано там, де має бути відступ у виводі. Навіть пробіли, такі як ``" "``, працюватимуть. ``\t`` та ``\n`` також можна використовувати для відступу табуляції або для створення нового рядка для кожного відступу відповідно.
 
-\ **Warning:** Non-finite numbers are not supported in JSON. Any occurrences of :ref:`@GDScript.INF<class_@GDScript_constant_INF>` will be replaced with ``1e99999``, and negative :ref:`@GDScript.INF<class_@GDScript_constant_INF>` will be replaced with ``-1e99999``, but they will be interpreted correctly as infinity by most JSON parsers. :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` will be replaced with ``null``, and it will not be interpreted as NaN in JSON parsers. If you expect non-finite numbers, consider passing your data through :ref:`from_native()<class_JSON_method_from_native>` first.
+\ **Попередження:** Нескінченні числа не підтримуються в JSON. Будь-які входження :ref:`@GDScript.INF<class_@GDScript_constant_INF>` будуть замінені на ``1e99999``, а від'ємне значення :ref:`@GDScript.INF<class_@GDScript_constant_INF>` буде замінено на ``-1e99999``, але більшість JSON-парсерів правильно інтерпретуватимуть їх як нескінченність. :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` буде замінено на ``null`` і не буде інтерпретовано як NaN в JSON-парсерах. Якщо ви очікуєте нескінченні числа, спочатку передайте свої дані через :ref:`from_native()<class_JSON_method_from_native>`.
 
-\ **Example output:**\ 
+\ **Приклад виводу:**\ 
 
 ::
 

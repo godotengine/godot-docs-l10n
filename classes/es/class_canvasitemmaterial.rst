@@ -181,9 +181,9 @@ La manera en que el material reacciona a la iluminación.
 - |void| **set_particles_anim_h_frames**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_particles_anim_h_frames**\ (\ )
 
-The number of columns in the spritesheet assigned as :ref:`Texture2D<class_Texture2D>` for a :ref:`GPUParticles2D<class_GPUParticles2D>` or :ref:`CPUParticles2D<class_CPUParticles2D>`.
+El número de columnas en la spritesheet asignada como :ref:`Texture2D<class_Texture2D>` para un :ref:`GPUParticles2D<class_GPUParticles2D>` o :ref:`CPUParticles2D<class_CPUParticles2D>`.
 
-\ **Note:** This property is only used and visible in the editor if :ref:`particles_animation<class_CanvasItemMaterial_property_particles_animation>` is ``true``.
+\ **Nota:** Esta propiedad solo se utiliza y es visible en el editor si :ref:`particles_animation<class_CanvasItemMaterial_property_particles_animation>` es ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -219,9 +219,9 @@ Si es ``true``, la animación de las partículas se hará en bucle.
 - |void| **set_particles_anim_v_frames**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_particles_anim_v_frames**\ (\ )
 
-The number of rows in the spritesheet assigned as :ref:`Texture2D<class_Texture2D>` for a :ref:`GPUParticles2D<class_GPUParticles2D>` or :ref:`CPUParticles2D<class_CPUParticles2D>`.
+El número de filas en la spritesheet asignada como :ref:`Texture2D<class_Texture2D>` para un :ref:`GPUParticles2D<class_GPUParticles2D>` o :ref:`CPUParticles2D<class_CPUParticles2D>`.
 
-\ **Note:** This property is only used and visible in the editor if :ref:`particles_animation<class_CanvasItemMaterial_property_particles_animation>` is ``true``.
+\ **Nota:** Esta propiedad solo se usa y es visible en el editor si :ref:`particles_animation<class_CanvasItemMaterial_property_particles_animation>` es ``true``.
 
 .. rst-class:: classref-item-separator
 

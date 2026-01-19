@@ -9,14 +9,14 @@ OpenXRSpatialContextPersistenceConfig
 
 **Успадковує:** :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Configuration header for spatial persistence.
+Заголовок конфігурації для просторової персистенції.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Configuration header for spatial persistence. Pass this to :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` as the next parameter to create a spatial context with spatial persistence capabilities.
+Заголовок конфігурації для просторової персистенції. Передайте його до :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` як наступний параметр для створення просторового контексту з можливостями просторової персистенції.
 
 .. rst-class:: classref-reftable-group
 
@@ -47,7 +47,7 @@ Configuration header for spatial persistence. Pass this to :ref:`OpenXRSpatialEn
 
 |void| **add_persistence_context**\ (\ persistence_context\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialContextPersistenceConfig_method_add_persistence_context>`
 
-Adds a persistence context to this configuration. You must add at least one persistence context to create a valid configuration. You can create a persistence context by calling :ref:`OpenXRSpatialAnchorCapability.create_persistence_context()<class_OpenXRSpatialAnchorCapability_method_create_persistence_context>`.
+Додає контекст персистенції до цієї конфігурації. Ви повинні додати принаймні один контекст персистенції, щоб створити коректну конфігурацію. Ви можете створити контекст персистенції, викликавши :ref:`OpenXRSpatialAnchorCapability.create_persistence_context()<class_OpenXRSpatialAnchorCapability_method_create_persistence_context>`.
 
 .. rst-class:: classref-item-separator
 
@@ -59,7 +59,7 @@ Adds a persistence context to this configuration. You must add at least one pers
 
 |void| **remove_persistence_context**\ (\ persistence_context\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialContextPersistenceConfig_method_remove_persistence_context>`
 
-Removes a persistence context.
+Вилучає контекст персистенції.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

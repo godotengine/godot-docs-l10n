@@ -566,7 +566,7 @@ enum **ModifierCallbackModeProcess**: :ref:`🔗<enum_Skeleton3D_ModifierCallbac
 
 :ref:`Variant<class_Variant>` **get_bone_meta**\ (\ bone_idx\: :ref:`int<class_int>`, key\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Skeleton3D_method_get_bone_meta>`
 
-Returns the metadata with the given ``key`` for the bone at index ``bone_idx``.
+Повертає метадані з заданим параметром ``key`` для кістки з індексом ``bone_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -720,7 +720,7 @@ Returns the metadata with the given ``key`` for the bone at index ``bone_idx``.
 
 :ref:`bool<class_bool>` **has_bone_meta**\ (\ bone_idx\: :ref:`int<class_int>`, key\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Skeleton3D_method_has_bone_meta>`
 
-Returns ``true`` if the bone at index ``bone_idx`` has metadata with the given ``key``.
+Повертає ``true``, якщо кістка за індексом ``bone_idx`` має метадані з заданим ключем ``key``.
 
 .. rst-class:: classref-item-separator
 
@@ -898,7 +898,7 @@ Returns ``true`` if the bone at index ``bone_idx`` has metadata with the given `
 
 |void| **set_bone_meta**\ (\ bone_idx\: :ref:`int<class_int>`, key\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Skeleton3D_method_set_bone_meta>`
 
-Sets the metadata with the given ``key`` to ``value`` for the bone at index ``bone_idx``.
+Встановлює метадані з заданим ``key`` на ``value`` для кістки з індексом ``bone_idx``.
 
 .. rst-class:: classref-item-separator
 

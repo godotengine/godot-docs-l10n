@@ -16,9 +16,9 @@ RenderSceneData
 描述
 ----
 
-抽象场景数据对象，在渲染单个视口期间存在。
+Abstract scene data object, exists for the duration of rendering a single viewport. See also :ref:`RenderSceneDataRD<class_RenderSceneDataRD>`, :ref:`RenderData<class_RenderData>`, and :ref:`RenderDataRD<class_RenderDataRD>`.
 
-\ **注意：**\ 这是一个内部渲染服务器对象，不要从脚本中实例化它。
+\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
 
 .. rst-class:: classref-reftable-group
 

@@ -925,9 +925,9 @@ If ``true``, this app will show in Android TV launcher UI.
 
 :ref:`bool<class_bool>` **package/show_in_app_library** :ref:`🔗<class_EditorExportPlatformAndroid_property_package/show_in_app_library>`
 
-If ``true``, this app will show in the device's app library.
+Si ``true``, cette application apparaîtra dans la bibliothèque d'applications de l'appareil.
 
-\ **Note:** This is ``true`` by default.
+\ **Note:** Ceci est ``true`` par défaut.
 
 .. rst-class:: classref-item-separator
 
@@ -2911,9 +2911,9 @@ Indicates whether the application supports extra large screen form-factors.
 
 :ref:`bool<class_bool>` **shader_baker/enabled** :ref:`🔗<class_EditorExportPlatformAndroid_property_shader_baker/enabled>`
 
-If ``true``, shaders will be compiled and embedded in the application. This option is only supported when using the Forward+ or Mobile renderers.
+Si ``true``, les shaders seront compilées et intégrées dans l'application. Cette option n'est prise en charge que lors de l'utilisation des rendus Forward+ ou Mobile.
 
-\ **Note:** When exporting as a dedicated server, the shader baker is always disabled since no rendering is performed.
+\ **Note :** Lors de l'exportation en tant que serveur dédié, le compilateur de shader est toujours désactivé car aucun rendu n'est effectué.
 
 .. rst-class:: classref-item-separator
 

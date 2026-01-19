@@ -14,9 +14,9 @@ Contiene datos de colisión del movimiento de un :ref:`PhysicsBody3D<class_Physi
 Descripción
 ----------------------
 
-Holds collision data from the movement of a :ref:`PhysicsBody3D<class_PhysicsBody3D>`, usually from :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`. When a :ref:`PhysicsBody3D<class_PhysicsBody3D>` is moved, it stops if it detects a collision with another body. If a collision is detected, a **KinematicCollision3D** object is returned.
+Contiene los datos de colisión del movimiento de un :ref:`PhysicsBody3D<class_PhysicsBody3D>`, normalmente de :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`. Cuando un :ref:`PhysicsBody3D<class_PhysicsBody3D>` es movido, se detiene si detecta una colisión con otro cuerpo. Si se detecta una colisión, se devuelve un objeto **KinematicCollision3D**.
 
-The collision data includes the colliding object, the remaining motion, and the collision position. This data can be used to determine a custom response to the collision.
+Los datos de colisión incluyen el objeto colisionador, el movimiento restante y la posición de la colisión. Estos datos pueden usarse para determinar una respuesta personalizada a la colisión.
 
 .. rst-class:: classref-reftable-group
 

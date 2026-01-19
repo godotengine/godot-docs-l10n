@@ -352,7 +352,7 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 
 :ref:`Resource<class_Resource>` **duplicate_deep**\ (\ deep_subresources_mode\: :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>` = 1\ ) |const| :ref:`🔗<class_Resource_method_duplicate_deep>`
 
-Duplicates this resource, deeply, like :ref:`duplicate()<class_Resource_method_duplicate>` when passing ``true``, with extra control over how subresources are handled.
+Дублює цей ресурс, глибоко, подібно до :ref:`duplicate()<class_Resource_method_duplicate>` при передачі ``true``, з додатковим контролем над обробкою підресурсів.
 
 .. rst-class:: classref-item-separator
 

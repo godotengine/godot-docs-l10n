@@ -20,13 +20,6 @@ Base resource that provides the functionality of exporting a release build of a 
 
 Used in scripting by :ref:`EditorExportPlugin<class_EditorExportPlugin>` to configure platform-specific customization of scenes and resources. See :ref:`EditorExportPlugin._begin_customize_scenes()<class_EditorExportPlugin_private_method__begin_customize_scenes>` and :ref:`EditorExportPlugin._begin_customize_resources()<class_EditorExportPlugin_private_method__begin_customize_resources>` for more details.
 
-.. rst-class:: classref-introduction-group
-
-Tutoriels
-------------------
-
-- :doc:`Support de la console dans Godot <../tutorials/platform/consoles>`
-
 .. rst-class:: classref-reftable-group
 
 Méthodes
@@ -239,7 +232,7 @@ Create a new preset for this platform.
 
 :ref:`Error<enum_@GlobalScope_Error>` **export_pack**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`, path\: :ref:`String<class_String>`, flags\: |bitfield|\[:ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>`\] = 0\ ) :ref:`🔗<class_EditorExportPlatform_method_export_pack>`
 
-Creates a PCK archive at ``path`` for the specified ``preset``.
+Crée une archive PCK à ``path`` pour le ``preset`` spécifié.
 
 .. rst-class:: classref-item-separator
 
@@ -265,7 +258,7 @@ Creates a patch PCK archive at ``path`` for the specified ``preset``, containing
 
 :ref:`Error<enum_@GlobalScope_Error>` **export_project**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`, path\: :ref:`String<class_String>`, flags\: |bitfield|\[:ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>`\] = 0\ ) :ref:`🔗<class_EditorExportPlatform_method_export_project>`
 
-Creates a full project at ``path`` for the specified ``preset``.
+Crée un projet complet à ``path`` pour le ``preset`` spécifié.
 
 .. rst-class:: classref-item-separator
 
@@ -295,7 +288,7 @@ Exports project files for the specified preset. This method can be used to imple
 
 :ref:`Error<enum_@GlobalScope_Error>` **export_zip**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`, path\: :ref:`String<class_String>`, flags\: |bitfield|\[:ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>`\] = 0\ ) :ref:`🔗<class_EditorExportPlatform_method_export_zip>`
 
-Create a ZIP archive at ``path`` for the specified ``preset``.
+Créer une archive ZIP à ``path`` pour le ``preset`` spécifié.
 
 .. rst-class:: classref-item-separator
 
@@ -381,7 +374,7 @@ Returns additional files that should always be exported regardless of preset con
 
 :ref:`String<class_String>` **get_message_category**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_message_category>`
 
-Returns the message category for the message with the given ``index``.
+Retourne la catégorie de message pour le message à l'index  donné.
 
 .. rst-class:: classref-item-separator
 
@@ -405,7 +398,7 @@ Returns the number of messages in the export log.
 
 :ref:`String<class_String>` **get_message_text**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_message_text>`
 
-Returns the text for the message with the given ``index``.
+Retourne le texte pour le message avec le ``index`` donné.
 
 .. rst-class:: classref-item-separator
 
@@ -417,7 +410,7 @@ Returns the text for the message with the given ``index``.
 
 :ref:`ExportMessageType<enum_EditorExportPlatform_ExportMessageType>` **get_message_type**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_message_type>`
 
-Returns the type for the message with the given ``index``.
+Retourne le type pour le message au ``index`` donné.
 
 .. rst-class:: classref-item-separator
 

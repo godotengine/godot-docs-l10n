@@ -9,14 +9,14 @@ OpenXRSpatialComponentBounded2DList
 
 **Наследует:** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the queries bounded2d result data.
+Объект для хранения данных результатов запроса bounded2d.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-Object for storing the queries 2D bounding rectangle result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Объект для хранения данных результата запроса в виде двумерного ограничивающего прямоугольника при вызове метода :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -47,7 +47,7 @@ Object for storing the queries 2D bounding rectangle result data when calling :r
 
 :ref:`Transform3D<class_Transform3D>` **get_center_pose**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentBounded2DList_method_get_center_pose>`
 
-Returns the center of our bounding rectangle for the entity at this ``index``.
+Возвращает центр ограничивающего прямоугольника для объекта по этому адресу ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -59,7 +59,7 @@ Returns the center of our bounding rectangle for the entity at this ``index``.
 
 :ref:`Vector2<class_Vector2>` **get_size**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentBounded2DList_method_get_size>`
 
-Returns the size of our bounding rectangle for the entity at this ``index``.
+Возвращает размер ограничивающего прямоугольника для объекта по этому ``index``.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -508,9 +508,9 @@ enum **ClipChildrenMode**: :ref:`🔗<enum_CanvasItem_ClipChildrenMode>`
 
 **NOTIFICATION_EXIT_CANVAS** = ``33`` :ref:`🔗<class_CanvasItem_constant_NOTIFICATION_EXIT_CANVAS>`
 
-The **CanvasItem** has exited the canvas.
+**CanvasItem** вийшов за межі полотна.
 
-This notification is sent in reversed order.
+Це сповіщення надсилається у зворотному порядку.
 
 .. _class_CanvasItem_constant_NOTIFICATION_WORLD_2D_CHANGED:
 
@@ -716,9 +716,9 @@ This notification is sent in reversed order.
 - |void| **set_visibility_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_visibility_layer**\ (\ )
 
-The rendering layer in which this **CanvasItem** is rendered by :ref:`Viewport<class_Viewport>` nodes. A :ref:`Viewport<class_Viewport>` will render a **CanvasItem** if it and all its parents share a layer with the :ref:`Viewport<class_Viewport>`'s canvas cull mask.
+Рендерний шар, у якому цей **CanvasItem** рендерирується вузлами :ref:`Viewport<class_Viewport>`. :ref:`Viewport<class_Viewport>` відображатиме **CanvasItem**, якщо він і всі його батьки мають спільний шар із маскою canvas cull від :ref:`Viewport<class_Viewport>`.
 
-\ **Note:** A **CanvasItem** does not inherit its parents' visibility layers. This means that if a parent **CanvasItem** does not have all the same layers as its child, the child may not be visible even if both the parent and child have :ref:`visible<class_CanvasItem_property_visible>` set to ``true``. For example, if a parent has layer 1 and a child has layer 2, the child will not be visible in a :ref:`Viewport<class_Viewport>` with the canvas cull mask set to layer 1 or 2 (see :ref:`Viewport.canvas_cull_mask<class_Viewport_property_canvas_cull_mask>`). To ensure that both the parent and child are visible, the parent must have both layers 1 and 2, or the child must have :ref:`top_level<class_CanvasItem_property_top_level>` set to ``true``.
+\ **Примітка:** A **CanvasItem** не успадковує рівні видимості своїх батьків. Це означає, що якщо батько **CanvasItem** не має всіх тих самих шарів, що й його дитина, дитина може бути невидимою, навіть якщо і батьки, і дитина мають :ref:`visible<class_CanvasItem_property_visible>` встановлено на ``true``. Наприклад, якщо у батька є шар 1, а у дитини шар 2, дитина не буде видно в :ref:`Viewport<class_Viewport>` з маскою canvas cull, налаштованою на рівень 1 або 2 (див. :ref:`Viewport.canvas_cull_mask<class_Viewport_property_canvas_cull_mask>`). Щоб переконатися, що батьки та дитина видимі, батько повинен мати обидва шари 1 і 2, або дитина повинна встановити :ref:`top_level<class_CanvasItem_property_top_level>` на ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -839,11 +839,11 @@ The rendering layer in which this **CanvasItem** is rendered by :ref:`Viewport<c
 
 |void| **draw_arc**\ (\ center\: :ref:`Vector2<class_Vector2>`, radius\: :ref:`float<class_float>`, start_angle\: :ref:`float<class_float>`, end_angle\: :ref:`float<class_float>`, point_count\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_arc>`
 
-Draws an unfilled arc between the given angles with a uniform ``color`` and ``width`` and optional antialiasing (supported only for positive ``width``). The larger the value of ``point_count``, the smoother the curve. ``center`` is defined in local space. For elliptical arcs, see :ref:`draw_ellipse_arc()<class_CanvasItem_method_draw_ellipse_arc>`. See also :ref:`draw_circle()<class_CanvasItem_method_draw_circle>`.
+Малює незаповнену дугу між заданими кутами з рівномірним ``color`` та ``width`` та додатковим згладжуванням (підтримується лише для додатного ``width``). Чим більше значення ``point_count``, тим плавніша крива. ``center`` визначено в локальному просторі. Для еліптичних дуг див. :ref:`draw_ellipse_arc()<class_CanvasItem_method_draw_ellipse_arc>`. Див. також :ref:`draw_circle()<class_CanvasItem_method_draw_circle>`.
 
-If ``width`` is negative, it will be ignored and the arc will be drawn using :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>`. This means that when the CanvasItem is scaled, the arc will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+Якщо ``width`` від'ємне, воно буде проігноровано, а дуга буде намальована за допомогою :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>`. Це означає, що при масштабуванні CanvasItem дуга залишиться тонкою. Якщо така поведінка небажана, передайте додатне значення ``width``, наприклад, ``1.0``.
 
-The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in clockwise direction if ``start_angle < end_angle`` and counter-clockwise otherwise. Passing the same angles but in reversed order will produce the same arc. If absolute difference of ``start_angle`` and ``end_angle`` is greater than :ref:`@GDScript.TAU<class_@GDScript_constant_TAU>` radians, then a full circle arc is drawn (i.e. arc will not overlap itself).
+Дуга малюється від ``start_angle`` до значення ``end_angle``, тобто за годинниковою стрілкою, якщо ``start_angle < end_angle``, і проти годинникової стрілки в іншому випадку. Передача тих самих кутів, але у зворотному порядку, призведе до створення тієї ж дуги. Якщо абсолютна різниця ``start_angle`` та ``end_angle`` більша за :ref:`@GDScript.TAU<class_@GDScript_constant_TAU>` радіан, то малюється повна дуга кола (тобто дуга не перекриватиме сама себе).
 
 .. rst-class:: classref-item-separator
 
@@ -879,15 +879,15 @@ The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in c
 
 |void| **draw_circle**\ (\ position\: :ref:`Vector2<class_Vector2>`, radius\: :ref:`float<class_float>`, color\: :ref:`Color<class_Color>`, filled\: :ref:`bool<class_bool>` = true, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_circle>`
 
-Draws a circle, with ``position`` defined in local space. See also :ref:`draw_ellipse()<class_CanvasItem_method_draw_ellipse>`, :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`, and :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
+Малює коло, де ``position`` визначено в локальному просторі. Див. також :ref:`draw_ellipse()<class_CanvasItem_method_draw_ellipse>`, :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` та :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
 
-If ``filled`` is ``true``, the circle will be filled with the ``color`` specified. If ``filled`` is ``false``, the circle will be drawn as a stroke with the ``color`` and ``width`` specified.
+Якщо ``filled`` має значення ``true``, коло буде заповнено заданим ``color``. Якщо ``filled`` має значення ``false``, коло буде намальовано як обведення із заданими ``color`` та ``width``.
 
-If ``width`` is negative, then two-point primitives will be drawn instead of a four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+Якщо ``width`` має від'ємне значення, то замість чотириточкових будуть намальовані двоточкові примітиви. Це означає, що при масштабуванні CanvasItem лінії залишатимуться тонкими. Якщо така поведінка небажана, то передайте додатне значення ``width``, наприклад, ``1.0``.
 
-If ``antialiased`` is ``true``, half transparent "feathers" will be attached to the boundary, making outlines smooth.
+Якщо ``antialiased`` має значення ``true``, до межі будуть прикріплені напівпрозорі "пір'я", що зробить контури гладкими.
 
-\ **Note:** ``width`` is only effective if ``filled`` is ``false``.
+\ **Примітка:** ``width`` ефективний лише тоді, коли ``filled`` має значення ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -899,9 +899,11 @@ If ``antialiased`` is ``true``, half transparent "feathers" will be attached to 
 
 |void| **draw_colored_polygon**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, color\: :ref:`Color<class_Color>`, uvs\: :ref:`PackedVector2Array<class_PackedVector2Array>` = PackedVector2Array(), texture\: :ref:`Texture2D<class_Texture2D>` = null\ ) :ref:`🔗<class_CanvasItem_method_draw_colored_polygon>`
 
-Малює кольоровий багатокутник з будь-якою кількістю точок, опуклий або увігнутий. Точки в масиві ``points`` визначаються в локальному просторі. На відміну від :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`, для всього багатокутника необхідно вказати один колір.
+Намалює кольоровий багатокутник будь-якої кількості точок, опуклі або увігнуті. Точки в масиві ``points`` визначені в локальному просторі. На відміну від :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`, для всього полігону необхідно вказати один колір.
 
-\ **Примітка:** Якщо ви часто перемальовуєте один і той самий багатокутник з великою кількістю вершин, розгляньте можливість попереднього обчислення триангуляції за допомогою :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` і використання :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`, :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>` або :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
+\ **Note:** Якщо ви часто перемальовуєте один і той самий полігон з великою кількістю вершин, подумайте про попереднє обчислення тріангуляції за допомогою :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` та використовуючи :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`, :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>` або :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
+
+\ **Примітка:** Стайлбокси, текстури та сітки, що зберігаються лише всередині локальних змінних, **не** повинні використовуватися з цим методом у GDScript, оскільки операція малювання не починається одразу після виклику цього методу. У GDScript, коли функція з локальними змінними закінчується, локальні змінні знищуються до того, як відбудеться рендеринг.
 
 .. rst-class:: classref-item-separator
 
@@ -933,15 +935,15 @@ If ``antialiased`` is ``true``, half transparent "feathers" will be attached to 
 
 |void| **draw_ellipse**\ (\ position\: :ref:`Vector2<class_Vector2>`, major\: :ref:`float<class_float>`, minor\: :ref:`float<class_float>`, color\: :ref:`Color<class_Color>`, filled\: :ref:`bool<class_bool>` = true, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_ellipse>`
 
-Draws an ellipse with semi-major axis ``major`` and semi-minor axis ``minor``. See also :ref:`draw_circle()<class_CanvasItem_method_draw_circle>`, :ref:`draw_ellipse_arc()<class_CanvasItem_method_draw_ellipse_arc>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`, and :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
+Малює еліпс з великою піввіссю ``major`` та малою піввіссю ``minor``. Див. також :ref:`draw_circle()<class_CanvasItem_method_draw_circle>`, :ref:`draw_ellipse_arc()<class_CanvasItem_method_draw_ellipse_arc>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` та :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
 
-If ``filled`` is ``true``, the ellipse will be filled with the ``color`` specified. If ``filled`` is ``false``, the ellipse will be drawn as a stroke with the ``color`` and ``width`` specified.
+Якщо ``filled`` має значення ``true``, еліпс буде заповнено заданим кольором ``color``. Якщо ``filled`` має значення ``false``, еліпс буде намальовано як обведення із заданими кольором ``color`` та шириною ``width``.
 
-If ``width`` is negative, then two-point primitives will be drawn instead of four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+Якщо ``width`` має від'ємне значення, то будуть намальовані двоточкові примітиви замість чотириточкових. Це означає, що при масштабуванні CanvasItem лінії залишатимуться тонкими. Якщо така поведінка небажана, передайте додатне значення ``width``, наприклад, ``1.0``.
 
-If ``antialiased`` is ``true``, half transparent "feathers" will be attached to the boundary, making outlines smooth.
+Якщо ``antialiased`` має значення ``true``, до межі будуть прикріплені напівпрозорі "пір'я", що зробить контури гладкими.
 
-\ **Note:** ``width`` is only effective if ``filled`` is ``false``.
+\ **Примітка:** ``width`` ефективний лише тоді, коли ``filled`` має значення ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -953,11 +955,11 @@ If ``antialiased`` is ``true``, half transparent "feathers" will be attached to 
 
 |void| **draw_ellipse_arc**\ (\ center\: :ref:`Vector2<class_Vector2>`, major\: :ref:`float<class_float>`, minor\: :ref:`float<class_float>`, start_angle\: :ref:`float<class_float>`, end_angle\: :ref:`float<class_float>`, point_count\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_ellipse_arc>`
 
-Draws an unfilled elliptical arc between the given angles with a uniform ``color`` and ``width`` and optional antialiasing (supported only for positive ``width``). The larger the value of ``point_count``, the smoother the curve. For circular arcs, see :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`. See also :ref:`draw_ellipse()<class_CanvasItem_method_draw_ellipse>`.
+Малює незаповнену еліптичну дугу між заданими кутами з рівномірним ``color`` та ``width`` та додатковим згладжуванням (підтримується лише для додатного ``width``). Чим більше значення ``point_count``, тим плавніша крива. Щодо кругових дуг див. :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`. Див. також :ref:`draw_ellipse()<class_CanvasItem_method_draw_ellipse>`.
 
-If ``width`` is negative, it will be ignored and the arc will be drawn using :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>`. This means that when the CanvasItem is scaled, the arc will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+Якщо ``width`` від'ємне, воно буде проігноровано, а дуга буде намальована за допомогою :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>`. Це означає, що при масштабуванні CanvasItem дуга залишиться тонкою. Якщо така поведінка небажана, передайте додатне значення ``width``, наприклад, ``1.0``.
 
-The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in clockwise direction if ``start_angle < end_angle`` and counter-clockwise otherwise. Passing the same angles but in reversed order will produce the same arc. If absolute difference of ``start_angle`` and ``end_angle`` is greater than :ref:`@GDScript.TAU<class_@GDScript_constant_TAU>` radians, then a full ellipse is drawn (i.e. arc will not overlap itself).
+Дуга малюється від ``start_angle`` до значення ``end_angle``, тобто за годинниковою стрілкою, якщо ``start_angle < end_angle``, і проти годинникової стрілки в іншому випадку. Передача тих самих кутів, але у зворотному порядку, призведе до створення тієї ж дуги. Якщо абсолютна різниця між ``start_angle`` та ``end_angle`` більша за :ref:`@GDScript.TAU<class_@GDScript_constant_TAU>` радіан, то малюється повний еліпс (тобто дуга не перекриватиме сама себе).
 
 .. rst-class:: classref-item-separator
 
@@ -981,9 +983,9 @@ The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in c
 
 |void| **draw_lcd_texture_rect_region**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, src_rect\: :ref:`Rect2<class_Rect2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) :ref:`🔗<class_CanvasItem_method_draw_lcd_texture_rect_region>`
 
-Малює текстуровану прямокутну область текстури шрифту з антиаліасингом субпікселів LCD у заданому положенні, за бажанням модульовану кольором. ``rect`` визначається в локальному просторі.
+Малює текстуровану прямокутну область текстури шрифту з антиаліазом субпікселя LCD у заданому положенні, додатково модульованого кольором. ``rect`` визначається в локальному просторі.
 
-Текстура малюється за допомогою наступної операції змішування, режим змішування :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` ігнорується:
+Текстура малюється за допомогою такої операції зведення, режим змішування :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` ігнорується:
 
 ::
 
@@ -991,6 +993,8 @@ The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in c
     dst.g = texture.g * modulate.g * modulate.a + dst.g * (1.0 - texture.g * modulate.a);
     dst.b = texture.b * modulate.b * modulate.a + dst.b * (1.0 - texture.b * modulate.a);
     dst.a = modulate.a + dst.a * (1.0 - modulate.a);
+
+\ **Примітка:** Стайлбокси, текстури та сітки, що зберігаються лише всередині локальних змінних, **не** повинні використовуватися з цим методом у GDScript, оскільки операція малювання не починається одразу після виклику цього методу. У GDScript, коли функція з локальними змінними закінчується, локальні змінні знищуються до того, як відбудеться рендеринг.
 
 .. rst-class:: classref-item-separator
 
@@ -1016,7 +1020,9 @@ The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in c
 
 |void| **draw_mesh**\ (\ mesh\: :ref:`Mesh<class_Mesh>`, texture\: :ref:`Texture2D<class_Texture2D>`, transform\: :ref:`Transform2D<class_Transform2D>` = Transform2D(1, 0, 0, 1, 0, 0), modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) :ref:`🔗<class_CanvasItem_method_draw_mesh>`
 
-Малює :ref:`Mesh<class_Mesh>` у 2D, використовуючи надану текстуру. Див. :ref:`MeshInstance2D<class_MeshInstance2D>` для отримання відповідної документації. ``transform`` визначено в локальному просторі.
+Намалює :ref:`Mesh<class_Mesh>` у 2D, використовуючи надану текстуру. Дивіться :ref:`MeshInstance2D<class_MeshInstance2D>` для відповідної документації. ``transform`` визначається в локальному просторі.
+
+\ **Примітка:** Стайлбокси, текстури та сітки, що зберігаються лише всередині локальних змінних, **не** повинні використовуватися з цим методом у GDScript, оскільки операція малювання не починається одразу після виклику цього методу. У GDScript, коли функція з локальними змінними закінчується, локальні змінні знищуються до того, як відбудеться рендеринг.
 
 .. rst-class:: classref-item-separator
 
@@ -1028,11 +1034,13 @@ The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in c
 
 |void| **draw_msdf_texture_rect_region**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, src_rect\: :ref:`Rect2<class_Rect2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), outline\: :ref:`float<class_float>` = 0.0, pixel_range\: :ref:`float<class_float>` = 4.0, scale\: :ref:`float<class_float>` = 1.0\ ) :ref:`🔗<class_CanvasItem_method_draw_msdf_texture_rect_region>`
 
-Малює текстуровану прямокутну область багатоканальної текстури поля відстані зі знаком у заданому положенні, за бажанням модульовану кольором. ``rect`` визначається в локальному просторі. Див. :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` для отримання додаткової інформації та застережень щодо рендерингу шрифтів MSDF.
+Draws a textured rectangle region of the multichannel signed distance field texture at a given position, optionally modulated by a color. The ``rect`` is defined in local space. See :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` for more information and caveats about MSDF font rendering.
 
-Якщо ``outline`` є додатним, кожне значення альфа-каналу пікселя в області встановлюється на максимальне значення справжньої відстані в радіусі ``outline``.
+Якщо ``outline`` позитивний, кожне значення альфа-каналу пікселя в області встановлюється на максимальне значення справжньої відстані в радіусі ``outline``.
 
-Значення ``pixel_range`` повинно бути таким самим, як те, що використовувалося під час генерації текстури поля відстані.
+Значення ``pixel_range`` має бути таким самим, яке використовувалося під час генерації текстури поля відстані.
+
+\ **Примітка:** Стайлбокси, текстури та сітки, що зберігаються лише всередині локальних змінних, **не** повинні використовуватися з цим методом у GDScript, оскільки операція малювання не починається одразу після виклику цього методу. У GDScript, коли функція з локальними змінними закінчується, локальні змінні знищуються до того, як відбудеться рендеринг.
 
 .. rst-class:: classref-item-separator
 
@@ -1100,7 +1108,9 @@ The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in c
 
 |void| **draw_multimesh**\ (\ multimesh\: :ref:`MultiMesh<class_MultiMesh>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_CanvasItem_method_draw_multimesh>`
 
-Малює :ref:`MultiMesh<class_MultiMesh>` у 2D із наданою текстурою. Відповідну документацію див. у :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>`.
+Малює :ref:`MultiMesh<class_MultiMesh>` у 2D із наданою текстурою. Див. :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>` для відповідної документації.
+
+\ **Примітка:** Стайлбокси, текстури та сітки, що зберігаються лише всередині локальних змінних, **не** повинні використовуватися з цим методом у GDScript, оскільки операція малювання не починається одразу після виклику цього методу. У GDScript, коли функція з локальними змінними закінчується, локальні змінні знищуються до того, як відбудеться рендеринг.
 
 .. rst-class:: classref-item-separator
 
@@ -1112,9 +1122,11 @@ The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in c
 
 |void| **draw_polygon**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`, uvs\: :ref:`PackedVector2Array<class_PackedVector2Array>` = PackedVector2Array(), texture\: :ref:`Texture2D<class_Texture2D>` = null\ ) :ref:`🔗<class_CanvasItem_method_draw_polygon>`
 
-Малює суцільний багатокутник з будь-якою кількістю точок, опуклий або увігнутий. На відміну від :ref:`draw_colored_polygon()<class_CanvasItem_method_draw_colored_polygon>`, колір кожної точки можна змінювати окремо. Масив ``points`` визначається в локальному просторі. Див. також :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` та :ref:`draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>`. Якщо вам потрібна більша гнучкість (наприклад, можливість використовувати кістки), використовуйте замість цього :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
+Малює суцільний многокутник з будь-якою кількістю точок, опуклих або увігнутих. На відміну від :ref:`draw_colored_polygon()<class_CanvasItem_method_draw_colored_polygon>`, колір кожної точки можна змінювати окремо. Масив ``points`` визначено в локальному просторі. Див. також :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` та :ref:`draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>`. Якщо вам потрібна більша гнучкість (наприклад, можливість використання кісток), використовуйте замість цього :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
 
-\ **Примітка:** Якщо ви часто перемальовуєте один і той самий багатокутник з великою кількістю вершин, розгляньте можливість попереднього обчислення триангуляції за допомогою :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` і використання :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`, :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>` або :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
+\ **Примітка:** Якщо ви часто перемальовуєте один і той самий полігон з великою кількістю вершин, подумайте про попереднє обчислення тріангуляції за допомогою :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` та використовуючи :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`, :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>` або :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
+
+\ **Примітка:** Стайлбокси, текстури та сітки, що зберігаються лише всередині локальних змінних, **не** повинні використовуватися з цим методом у GDScript, оскільки операція малювання не починається одразу після виклику цього методу. У GDScript, коли функція з локальними змінними закінчується, локальні змінні знищуються до того, як відбудеться рендеринг.
 
 .. rst-class:: classref-item-separator
 
@@ -1154,7 +1166,9 @@ The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in c
 
 |void| **draw_primitive**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`, uvs\: :ref:`PackedVector2Array<class_PackedVector2Array>`, texture\: :ref:`Texture2D<class_Texture2D>` = null\ ) :ref:`🔗<class_CanvasItem_method_draw_primitive>`
 
-Малює користувацький примітив. 1 точка для точки, 2 точки для лінії, 3 точки для трикутника і 4 точки для чотирикутника. Якщо вказано 0 точок або більше 4 точок, нічого не буде намальовано і буде виведено повідомлення про помилку. Масив ``points`` визначається в локальному просторі. Див. також :ref:`draw_line()<class_CanvasItem_method_draw_line>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`, :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>` та :ref:`draw_rect()<class_CanvasItem_method_draw_rect>`.
+Малює звичайний примітив. 1 бал за очко, 2 бали за лінію, 3 очки за трикутник і 4 бали за квадроцикл. Якщо вказано 0 балів або більше ніж 4 бали, нічого не буде намальовано та буде надруковано повідомлення про помилку. Масив ``points`` визначено в локальному просторі. Див. також :ref:`draw_line()<class_CanvasItem_method_draw_line>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`,
+
+\ **Примітка:** Стайлбокси, текстури та сітки, що зберігаються лише всередині локальних змінних, **не** повинні використовуватися з цим методом у GDScript, оскільки операція малювання не починається одразу після виклику цього методу. У GDScript, коли функція з локальними змінними закінчується, локальні змінні знищуються до того, як відбудеться рендеринг.
 
 .. rst-class:: classref-item-separator
 
@@ -1212,30 +1226,20 @@ The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in c
 
 |void| **draw_string**\ (\ font\: :ref:`Font<class_Font>`, pos\: :ref:`Vector2<class_Vector2>`, text\: :ref:`String<class_String>`, alignment\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` = 0, width\: :ref:`float<class_float>` = -1, font_size\: :ref:`int<class_int>` = 16, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), justification_flags\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] = 3, direction\: :ref:`Direction<enum_TextServer_Direction>` = 0, orientation\: :ref:`Orientation<enum_TextServer_Orientation>` = 0, oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_CanvasItem_method_draw_string>`
 
-Малює ``text`` за допомогою вказаного ``font`` у ``pos`` у локальному просторі (у нижньому лівому куті, використовуючи базову лінію шрифту). Колір тексту буде помножений на ``modulate``. Якщо ``width`` більше або дорівнює 0, текст буде обрізаний, якщо він перевищує вказану ширину. Якщо ``oversampling`` більше нуля, воно використовується як коефіцієнт передискретизації шрифту, в іншому випадку використовуються налаштування передискретизації вікна перегляду.
+Малює ``text``, використовуючи вказаний ``font`` у ``pos`` локального простору (нижній лівий кут за допомогою базової лінії шрифту). Колір тексту буде помножено на ``modulate``. Якщо ``width`` більша або дорівнює 0, текст буде нарізані, якщо він перевищує вказану ширину. Якщо ``oversampling`` перевищує нуль, він використовується як коефіцієнт надмірного відбору шрифту, інакше використовуються налаштування перевищення семпли вікна.
 
-\ **Приклад:** Намалюйте «Hello world», використовуючи шрифт за замовчуванням проекту:
+\ **Приклад:** Намалюйте "Hello world", використовуючи шрифт за замовчуванням проекту:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Якщо ви використовуєте цей метод у скрипті, який постійно перемальовується, перемістіть
-    # оголошення `default_font` до змінної-члена, призначеної в `_ready()`,
-    # щоб елемент управління створювався тільки один раз.
-    var default_font = ThemeDB.fallback_font
-    var default_font_size = ThemeDB.fallback_font_size
-    draw_string(default_font, Vector2(64, 64), "Hello world", HORIZONTAL_ALIGNMENT_LEFT, -1, default_font_size)
+    draw_string(ThemeDB.fallback_font, Vector2(64, 64), "Hello world", HORIZONTAL_ALIGNMENT_LEFT, -1, ThemeDB.fallback_font_size)
 
  .. code-tab:: csharp
 
-    // Якщо ви використовуєте цей метод у скрипті, який постійно перемальовується, перемістіть
-    // оголошення `default_font` до змінної-члена, призначеної в `_Ready()`,
-    // щоб елемент управління створювався лише один раз.
-    Font defaultFont = ThemeDB.FallbackFont;
-    int defaultFontSize = ThemeDB.FallbackFontSize;
-    DrawString(defaultFont, new Vector2(64, 64), "Hello world", HORIZONTAL_ALIGNMENT_LEFT, -1, defaultFontSize);
+    DrawString(ThemeDB.FallbackFont, new Vector2(64, 64), "Hello world", HorizontalAlignment.Left, -1, ThemeDB.FallbackFontSize);
 
 
 
@@ -1263,7 +1267,9 @@ The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in c
 
 |void| **draw_style_box**\ (\ style_box\: :ref:`StyleBox<class_StyleBox>`, rect\: :ref:`Rect2<class_Rect2>`\ ) :ref:`🔗<class_CanvasItem_method_draw_style_box>`
 
-Малює стилізований прямокутник. Параметр ``rect`` визначено в локальному просторі.
+Малює стилізований прямокутник. ``rect`` визначається в локальному просторі.
+
+\ **Примітка:** Стайлбокси, текстури та сітки, що зберігаються лише всередині локальних змінних, **не** повинні використовуватися з цим методом у GDScript, оскільки операція малювання не починається одразу після виклику цього методу. У GDScript, коли функція з локальними змінними закінчується, локальні змінні знищуються до того, як відбудеться рендеринг.
 
 .. rst-class:: classref-item-separator
 
@@ -1275,7 +1281,9 @@ The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in c
 
 |void| **draw_texture**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, position\: :ref:`Vector2<class_Vector2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) :ref:`🔗<class_CanvasItem_method_draw_texture>`
 
-Малює текстуру в заданій позиції. ``position`` визначається в локальному просторі.
+Малює текстуру в певному положенні. ``Положення параметра`` визначено в локальному просторі.
+
+\ **Примітка:** Стайлбокси, текстури та сітки, що зберігаються лише всередині локальних змінних, **не** повинні використовуватися з цим методом у GDScript, оскільки операція малювання не починається одразу після виклику цього методу. У GDScript, коли функція з локальними змінними закінчується, локальні змінні знищуються до того, як відбудеться рендеринг.
 
 .. rst-class:: classref-item-separator
 
@@ -1287,7 +1295,9 @@ The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in c
 
 |void| **draw_texture_rect**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, tile\: :ref:`bool<class_bool>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), transpose\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_texture_rect>`
 
-Малює текстурований прямокутник у заданому положенні, за бажанням модульований кольором. ``rect`` визначається в локальному просторі. Якщо ``transpose`` дорівнює ``true``, координати X і Y текстури будуть поміняні місцями. Див. також :ref:`draw_rect()<class_CanvasItem_method_draw_rect>` і :ref:`draw_texture_rect_region()<class_CanvasItem_method_draw_texture_rect_region>`.
+Малює текстурований прямокутник у певній позиції, необов"язково модульований кольором. ``rect`` визначається в локальному просторі. Якщо ``transpose`` є ``true``, текстура матиме свої координати X і Y. Див. також :ref:`draw_rect()<class_CanvasItem_method_draw_rect>` і :ref:`draw_texture_rect_region()<class_CanvasItem_method_draw_texture_rect_region>`.
+
+\ **Примітка:** Стайлбокси, текстури та сітки, що зберігаються лише всередині локальних змінних, **не** повинні використовуватися з цим методом у GDScript, оскільки операція малювання не починається одразу після виклику цього методу. У GDScript, коли функція з локальними змінними закінчується, локальні змінні знищуються до того, як відбудеться рендеринг.
 
 .. rst-class:: classref-item-separator
 
@@ -1299,7 +1309,9 @@ The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in c
 
 |void| **draw_texture_rect_region**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, src_rect\: :ref:`Rect2<class_Rect2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), transpose\: :ref:`bool<class_bool>` = false, clip_uv\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_CanvasItem_method_draw_texture_rect_region>`
 
-Малює текстурований прямокутник з області текстури (зазначеної ``src_rect``) у заданій позиції в локальному просторі, за бажанням модульований кольором. Якщо ``transpose`` має значення ``true``, координати X і Y текстури будуть поміняні місцями. Див. також :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`.
+Малює текстурований прямокутник із області текстури (вказано ``src_rect``) у заданій позиції в локальному просторі, необов"язково модульованому кольором. Якщо ``transpose`` є ``true``, текстура матиме свої координати X і Y. Дивіться також :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`.
+
+\ **Примітка:** Стайлбокси, текстури та сітки, що зберігаються лише всередині локальних змінних, **не** повинні використовуватися з цим методом у GDScript, оскільки операція малювання не починається одразу після виклику цього методу. У GDScript, коли функція з локальними змінними закінчується, локальні змінні знищуються до того, як відбудеться рендеринг.
 
 .. rst-class:: classref-item-separator
 
@@ -1435,9 +1447,9 @@ The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in c
 
 :ref:`Transform2D<class_Transform2D>` **get_screen_transform**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_screen_transform>`
 
-Returns the transform of this **CanvasItem** in global screen coordinates (i.e. taking window position into account). Mostly useful for editor plugins.
+Повертає перетворення цього **CanvasItem** у глобальних координатах екрана (тобто з урахуванням положення вікна). Здебільшого корисно для плагінів редактора.
 
-Equivalent to :ref:`get_global_transform_with_canvas()<class_CanvasItem_method_get_global_transform_with_canvas>` if the window is embedded (see :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>`).
+Еквівалентно :ref:`get_global_transform_with_canvas()<class_CanvasItem_method_get_global_transform_with_canvas>`, якщо вікно вбудоване (див. :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1647,9 +1659,9 @@ Equivalent to :ref:`get_global_transform_with_canvas()<class_CanvasItem_method_g
 
 |void| **set_notify_transform**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CanvasItem_method_set_notify_transform>`
 
-If ``true``, the node will receive :ref:`NOTIFICATION_TRANSFORM_CHANGED<class_CanvasItem_constant_NOTIFICATION_TRANSFORM_CHANGED>` whenever its global transform changes.
+Якщо значення ``true``, вузол отримуватиме :ref:`NOTIFICATION_TRANSFORM_CHANGED<class_CanvasItem_constant_NOTIFICATION_TRANSFORM_CHANGED>` щоразу, коли змінюється його глобальне перетворення.
 
-\ **Note:** Many canvas items such as :ref:`Camera2D<class_Camera2D>` or :ref:`Light2D<class_Light2D>` automatically enable this in order to function correctly.
+\ **Примітка:** Багато елементів полотна, такі як :ref:`Camera2D<class_Camera2D>` або :ref:`Light2D<class_Light2D>`, автоматично вмикають це для правильної роботи.
 
 .. rst-class:: classref-item-separator
 

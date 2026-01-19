@@ -93,7 +93,7 @@ La velocidad con la que los dos cuerpos se juntan cuando se mueven en diferentes
 
 :ref:`Param<enum_HingeJoint3D_Param>` **PARAM_LIMIT_UPPER** = ``1``
 
-La rotación máxima. Sólo está activa si :ref:`angular_limit/enable<class_HingeJoint3D_property_angular_limit/enable>` es ``true``.
+La rotación máxima. Solo está activa si :ref:`angular_limit/enable<class_HingeJoint3D_property_angular_limit/enable>` es ``true``.
 
 .. _class_HingeJoint3D_constant_PARAM_LIMIT_LOWER:
 
@@ -101,7 +101,7 @@ La rotación máxima. Sólo está activa si :ref:`angular_limit/enable<class_Hin
 
 :ref:`Param<enum_HingeJoint3D_Param>` **PARAM_LIMIT_LOWER** = ``2``
 
-La rotación mínima. Sólo está activa si :ref:`angular_limit/enable<class_HingeJoint3D_property_angular_limit/enable>` es ``true``.
+La rotación mínima. Solo está activa si :ref:`angular_limit/enable<class_HingeJoint3D_property_angular_limit/enable>` es ``true``.
 
 .. _class_HingeJoint3D_constant_PARAM_LIMIT_BIAS:
 
@@ -241,7 +241,7 @@ Si es ``true``, la rotación máxima y mínima de las bisagras, definida por :re
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`\ ) |const|
 
-La rotación mínima. Sólo está activa si :ref:`angular_limit/enable<class_HingeJoint3D_property_angular_limit/enable>` es ``true``.
+La rotación mínima. Solo está activa si :ref:`angular_limit/enable<class_HingeJoint3D_property_angular_limit/enable>` es ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -292,7 +292,7 @@ Cuanto más bajo es este valor, más se ralentiza la rotación.
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`\ ) |const|
 
-La rotación máxima. Sólo está activa si :ref:`angular_limit/enable<class_HingeJoint3D_property_angular_limit/enable>` es ``true``.
+La rotación máxima. Solo está activa si :ref:`angular_limit/enable<class_HingeJoint3D_property_angular_limit/enable>` es ``true``.
 
 .. rst-class:: classref-item-separator
 

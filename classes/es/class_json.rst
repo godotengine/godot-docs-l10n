@@ -129,11 +129,11 @@ Descripciones de Métodos
 
 :ref:`Variant<class_Variant>` **from_native**\ (\ variant\: :ref:`Variant<class_Variant>`, full_objects\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_JSON_method_from_native>`
 
-Converts a native engine type to a JSON-compliant value.
+Convierte un tipo de motor nativo en un valor compatible con JSON.
 
-By default, objects are ignored for security reasons, unless ``full_objects`` is ``true``.
+Por defecto, los objetos se ignoran por razones de seguridad, a menos que ``full_objects`` sea ``true``.
 
-You can convert a native value to a JSON string like this:
+Puedes convertir un valor nativo en una cadena JSON de esta manera:
 
 ::
 
@@ -186,13 +186,13 @@ Devuelve el texto analizado por :ref:`parse()<class_JSON_method_parse>` (requier
 
 :ref:`Error<enum_@GlobalScope_Error>` **parse**\ (\ json_text\: :ref:`String<class_String>`, keep_text\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_JSON_method_parse>`
 
-Attempts to parse the ``json_text`` provided.
+Intenta analizar el ``json_text`` proporcionado.
 
-Returns an :ref:`Error<enum_@GlobalScope_Error>`. If the parse was successful, it returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` and the result can be retrieved using :ref:`data<class_JSON_property_data>`. If unsuccessful, use :ref:`get_error_line()<class_JSON_method_get_error_line>` and :ref:`get_error_message()<class_JSON_method_get_error_message>` to identify the source of the failure.
+Devuelve un :ref:`Error<enum_@GlobalScope_Error>`. Si el análisis fue exitoso, devuelve :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` y el resultado se puede recuperar usando :ref:`data<class_JSON_property_data>`. Si no tiene éxito, usa :ref:`get_error_line()<class_JSON_method_get_error_line>` y :ref:`get_error_message()<class_JSON_method_get_error_message>` para identificar la causa del fallo.
 
-Non-static variant of :ref:`parse_string()<class_JSON_method_parse_string>`, if you want custom error handling.
+Variante no estática de :ref:`parse_string()<class_JSON_method_parse_string>`, si quieres un manejo de errores personalizado.
 
-The optional ``keep_text`` argument instructs the parser to keep a copy of the original text. This text can be obtained later by using the :ref:`get_parsed_text()<class_JSON_method_get_parsed_text>` function and is used when saving the resource (instead of generating new text from :ref:`data<class_JSON_property_data>`).
+El argumento opcional ``keep_text`` instruye al analizador a mantener una copia del texto original. Este texto se puede obtener más tarde usando la función :ref:`get_parsed_text()<class_JSON_method_get_parsed_text>` y se usa al guardar el recurso (en lugar de generar nuevo texto a partir de :ref:`data<class_JSON_property_data>`).
 
 .. rst-class:: classref-item-separator
 

@@ -229,9 +229,9 @@ Registra una referencia para "deshacer" que se borrará si se pierde la historia
 
 |void| **clear_history**\ (\ id\: :ref:`int<class_int>` = -99, increase_version\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_EditorUndoRedoManager_method_clear_history>`
 
-Limpia el historial de deshacer dado. Puedes limpiar el historial de una escena específica, el historial global o para todas las escenas a la vez si ``id`` es :ref:`INVALID_HISTORY<class_EditorUndoRedoManager_constant_INVALID_HISTORY>`.
+Clears the given undo history. You can clear history for a specific scene, global history, or for all histories at once (except :ref:`REMOTE_HISTORY<class_EditorUndoRedoManager_constant_REMOTE_HISTORY>`) if ``id`` is :ref:`INVALID_HISTORY<class_EditorUndoRedoManager_constant_INVALID_HISTORY>`.
 
-Si ``increase_version`` es ``true``, la versión del historial de deshacer se incrementará, marcándola como no guardada. Útil para las operaciones que modifican la escena, pero no admiten deshacer.
+If ``increase_version`` is ``true``, the undo history version will be increased, marking it as unsaved. Useful for operations that modify the scene, but don't support undo.
 
 ::
 
@@ -239,7 +239,7 @@ Si ``increase_version`` es ``true``, la versión del historial de deshacer se in
     var undo_redo = EditorInterface.get_editor_undo_redo()
     undo_redo.clear_history(undo_redo.get_object_history_id(scene_root))
 
-\ **Nota:** Si quieres marcar una escena editada como no guardada sin limpiar su historial, usa :ref:`EditorInterface.mark_scene_as_unsaved()<class_EditorInterface_method_mark_scene_as_unsaved>` en su lugar.
+\ **Note:** If you want to mark an edited scene as unsaved without clearing its history, use :ref:`EditorInterface.mark_scene_as_unsaved()<class_EditorInterface_method_mark_scene_as_unsaved>` instead.
 
 .. rst-class:: classref-item-separator
 

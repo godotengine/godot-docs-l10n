@@ -16,9 +16,9 @@ Objet de données de rendu abstrait, détient des données de scène relatives a
 Description
 -----------
 
-Objet de données abstrait, existe pour la durée du rendu d'un seul viewport.
+Abstract scene data object, exists for the duration of rendering a single viewport. See also :ref:`RenderSceneDataRD<class_RenderSceneDataRD>`, :ref:`RenderData<class_RenderData>`, and :ref:`RenderDataRD<class_RenderDataRD>`.
 
-\ **Note :** Il s'agit d'un objet de serveur de rendu interne, ne l'instanciez pas depuis un script.
+\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
 
 .. rst-class:: classref-reftable-group
 

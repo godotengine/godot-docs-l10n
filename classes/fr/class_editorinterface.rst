@@ -394,11 +394,11 @@ Returns the language currently used for the editor interface.
 
 :ref:`VBoxContainer<class_VBoxContainer>` **get_editor_main_screen**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_editor_main_screen>`
 
-Returns the editor control responsible for main screen plugins and tools. Use it with plugins that implement :ref:`EditorPlugin._has_main_screen()<class_EditorPlugin_private_method__has_main_screen>`.
+Retourne le contrôle de l'éditeur responsable des plugins et outils d'écran principal. Utilisez-le avec des plugins qui implémentent :ref:`EditorPlugin._has_main_screen()<class_EditorPlugin_private_method__has_main_screen>`.
 
-\ **Note:** This node is a :ref:`VBoxContainer<class_VBoxContainer>`, which means that if you add a :ref:`Control<class_Control>` child to it, you need to set the child's :ref:`Control.size_flags_vertical<class_Control_property_size_flags_vertical>` to :ref:`Control.SIZE_EXPAND_FILL<class_Control_constant_SIZE_EXPAND_FILL>` to make it use the full available space.
+\ **Note :** Ce nœud est un :ref:`VBoxContainer<class_VBoxContainer>`, ce qui signifie que si vous lui ajoutez un :ref:`Control<class_Control>` fils, vous devez définir le :ref:`Control.size_flags_vertical<class_Control_property_size_flags_vertical>` du fils à :ref:`Control. SIZE_EXPAND_FILL<class_Control_constant_ SIZE_EXPAND_FILL>` pour le faire utiliser tout l'espace disponible.
 
-\ **Warning:** Removing and freeing this node will render a part of the editor useless and may cause a crash.
+\ **Avertissement :** La suppression et la libération de ce nœud rend une partie de l'éditeur inutile et peut causer un crash.
 
 .. rst-class:: classref-item-separator
 
@@ -672,7 +672,7 @@ Renvoie l'instance :ref:`EditorSelection<class_EditorSelection>` de l'éditeur.
 
 |void| **inspect_object**\ (\ object\: :ref:`Object<class_Object>`, for_property\: :ref:`String<class_String>` = "", inspector_only\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_EditorInterface_method_inspect_object>`
 
-Shows the given property on the given ``object`` in the editor's Inspector dock. If ``inspector_only`` is ``true``, plugins will not attempt to edit ``object``.
+Affiche la propriété donnée du ``object`` donné dans le dock d'inspecteur de l'éditeur. Si ``inspector_only`` vaut ``true``, les plugins ne tenteront pas de modifier ``object``.
 
 .. rst-class:: classref-item-separator
 
@@ -738,7 +738,7 @@ Returns ``true`` if a scene is currently being played, ``false`` otherwise. Paus
 
 :ref:`bool<class_bool>` **is_plugin_enabled**\ (\ plugin\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_EditorInterface_method_is_plugin_enabled>`
 
-Returns ``true`` if the specified ``plugin`` is enabled. The plugin name is the same as its directory name.
+Retourne ``true`` si le ``plugin`` spécifié est activé. Le nom du plugin est le même que son nom de répertoire.
 
 .. rst-class:: classref-item-separator
 
@@ -1014,7 +1014,7 @@ Saves all opened scenes in the editor.
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_scene**\ (\ ) :ref:`🔗<class_EditorInterface_method_save_scene>`
 
-Saves the currently active scene. Returns either :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` or :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`.
+Enregistre la scène actuellement active. Retourne soit :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` ou :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1026,7 +1026,7 @@ Saves the currently active scene. Returns either :ref:`@GlobalScope.OK<class_@Gl
 
 |void| **save_scene_as**\ (\ path\: :ref:`String<class_String>`, with_preview\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_EditorInterface_method_save_scene_as>`
 
-Saves the currently active scene as a file at ``path``.
+Enregistre la scène actuellement active en tant que fichier localisé sur ``path``.
 
 .. rst-class:: classref-item-separator
 
@@ -1038,7 +1038,7 @@ Saves the currently active scene as a file at ``path``.
 
 |void| **select_file**\ (\ file\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInterface_method_select_file>`
 
-Selects the file, with the path provided by ``file``, in the FileSystem dock.
+Sélectionne le fichier, avec le chemin spécifié dans ``file``, dans la barre d'outils « FileSystem ».
 
 .. rst-class:: classref-item-separator
 
@@ -1066,7 +1066,7 @@ A feature profile can be created programmatically using the :ref:`EditorFeatureP
 
 |void| **set_main_screen_editor**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInterface_method_set_main_screen_editor>`
 
-Sets the editor's current main screen to the one specified in ``name``. ``name`` must match the title of the tab in question exactly (e.g. ``2D``, ``3D``, ``Script``, ``Game``, or ``AssetLib`` for default tabs).
+Définit l'écran principal courant de l'éditeur à celui spécifié dans ``name``. ``name`` doit correspondre exactement au titre de l'onglet en question (par exemple ``2D``, ``3D``, ``Script``, ``Game``, ou ``AssetLib`` pour les onglets par défaut).
 
 .. rst-class:: classref-item-separator
 

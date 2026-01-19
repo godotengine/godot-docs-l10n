@@ -9,14 +9,14 @@ OpenXRSpatialComponentPlaneAlignmentList
 
 **Успадковує:** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the queries plane alignment result data.
+Об'єкт для зберігання даних результатів вирівнювання площини запитів.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Object for storing the queries plane alignment result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Об'єкт для зберігання результатів вирівнювання площини запитів під час виклику :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -51,7 +51,7 @@ enum **PlaneAlignment**: :ref:`🔗<enum_OpenXRSpatialComponentPlaneAlignmentLis
 
 :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>` **PLANE_ALIGNMENT_HORIZONTAL_UPWARD** = ``0``
 
-Plane is facing upward.
+Літак спрямований вгору.
 
 .. _class_OpenXRSpatialComponentPlaneAlignmentList_constant_PLANE_ALIGNMENT_HORIZONTAL_DOWNWARD:
 
@@ -59,7 +59,7 @@ Plane is facing upward.
 
 :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>` **PLANE_ALIGNMENT_HORIZONTAL_DOWNWARD** = ``1``
 
-Plane is facing downwards.
+Літак спрямований вниз.
 
 .. _class_OpenXRSpatialComponentPlaneAlignmentList_constant_PLANE_ALIGNMENT_VERTICAL:
 
@@ -67,7 +67,7 @@ Plane is facing downwards.
 
 :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>` **PLANE_ALIGNMENT_VERTICAL** = ``2``
 
-Plane is vertically aligned.
+Площина вирівняна вертикально.
 
 .. _class_OpenXRSpatialComponentPlaneAlignmentList_constant_PLANE_ALIGNMENT_ARBITRARY:
 
@@ -75,7 +75,7 @@ Plane is vertically aligned.
 
 :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>` **PLANE_ALIGNMENT_ARBITRARY** = ``3``
 
-Plane has an arbitrary alignment.
+Площина має довільне вирівнювання.
 
 .. rst-class:: classref-section-separator
 
@@ -92,7 +92,7 @@ Plane has an arbitrary alignment.
 
 :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>` **get_plane_alignment**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentPlaneAlignmentList_method_get_plane_alignment>`
 
-Returns the plane alignment for the parent entity at this ``index``.
+Повертає вирівнювання площини для батьківської сутності в цій точці ``index``.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

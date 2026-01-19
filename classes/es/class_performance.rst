@@ -161,7 +161,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_TOTAL_OBJECTS_IN_FRAME** = ``11``
 
-The total number of objects in the last rendered frame. This metric doesn't include culled objects (either via hiding nodes, frustum culling or occlusion culling). *Lower is better.*
+El número total de objetos en el último fotograma renderizado. Esta métrica no incluye objetos eliminados (ya sea ocultando nodos, culling de frustum o culling de oclusión). *Cuanto menor, mejor.*
 
 .. _class_Performance_constant_RENDER_TOTAL_PRIMITIVES_IN_FRAME:
 
@@ -169,7 +169,7 @@ The total number of objects in the last rendered frame. This metric doesn't incl
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_TOTAL_PRIMITIVES_IN_FRAME** = ``12``
 
-The total number of vertices or indices rendered in the last rendered frame. This metric doesn't include primitives from culled objects (either via hiding nodes, frustum culling or occlusion culling). Due to the depth prepass and shadow passes, the number of primitives is always higher than the actual number of vertices in the scene (typically double or triple the original vertex count). *Lower is better.*
+El número total de vértices o índices renderizados en el último fotograma renderizado. Esta métrica no incluye primitivas de objetos eliminados (ya sea ocultando nodos, culling de frustum o culling de oclusión). Debido a la pre-pasada de profundidad y las pasadas de sombra, el número de primitivas es siempre mayor que el número real de vértices en la escena (típicamente el doble o triple del recuento de vértices original). *Cuanto menor, mejor.*
 
 .. _class_Performance_constant_RENDER_TOTAL_DRAW_CALLS_IN_FRAME:
 
@@ -177,7 +177,7 @@ The total number of vertices or indices rendered in the last rendered frame. Thi
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_TOTAL_DRAW_CALLS_IN_FRAME** = ``13``
 
-The total number of draw calls performed in the last rendered frame. This metric doesn't include culled objects (either via hiding nodes, frustum culling or occlusion culling), since they do not result in draw calls. *Lower is better.*
+El número total de llamadas de dibujado realizadas en el último fotograma renderizado. Esta métrica no incluye objetos eliminados (ya sea ocultando nodos, culling de frustum o culling de oclusión), ya que no resultan en llamadas de dibujado. *Cuanto menor, mejor.*
 
 .. _class_Performance_constant_RENDER_VIDEO_MEM_USED:
 
@@ -185,7 +185,7 @@ The total number of draw calls performed in the last rendered frame. This metric
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_VIDEO_MEM_USED** = ``14``
 
-The amount of video memory used (texture and vertex memory combined, in bytes). Since this metric also includes miscellaneous allocations, this value is always greater than the sum of :ref:`RENDER_TEXTURE_MEM_USED<class_Performance_constant_RENDER_TEXTURE_MEM_USED>` and :ref:`RENDER_BUFFER_MEM_USED<class_Performance_constant_RENDER_BUFFER_MEM_USED>`. *Lower is better.*
+La cantidad de memoria de vídeo utilizada (memoria de texturas y vértices combinada, en bytes). Dado que esta métrica también incluye asignaciones varias, este valor es siempre mayor que la suma de :ref:`RENDER_TEXTURE_MEM_USED<class_Performance_constant_RENDER_TEXTURE_MEM_USED>` y :ref:`RENDER_BUFFER_MEM_USED<class_Performance_constant_RENDER_BUFFER_MEM_USED>`. *Cuanto menor, mejor.*
 
 .. _class_Performance_constant_RENDER_TEXTURE_MEM_USED:
 
@@ -201,7 +201,7 @@ La cantidad de memoria de textura utilizada (en bytes). *Cuanto menor, mejor.*
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_BUFFER_MEM_USED** = ``16``
 
-The amount of render buffer memory used (in bytes). *Lower is better.*
+La cantidad de memoria de búfer de renderizado utilizada (en bytes). *Cuanto menor, mejor.*
 
 .. _class_Performance_constant_PHYSICS_2D_ACTIVE_OBJECTS:
 
@@ -257,7 +257,7 @@ Número de islas en el motor de física 3D. *Cuanto menor, mejor.*
 
 :ref:`Monitor<enum_Performance_Monitor>` **AUDIO_OUTPUT_LATENCY** = ``23``
 
-Output latency of the :ref:`AudioServer<class_AudioServer>`. Equivalent to calling :ref:`AudioServer.get_output_latency()<class_AudioServer_method_get_output_latency>`, it is not recommended to call this every frame.
+Latencia de salida del :ref:`AudioServer<class_AudioServer>`. Equivalente a llamar a :ref:`AudioServer.get_output_latency()<class_AudioServer_method_get_output_latency>`. No se recomienda llamar a esto en cada fotograma.
 
 .. _class_Performance_constant_NAVIGATION_ACTIVE_MAPS:
 
@@ -265,7 +265,7 @@ Output latency of the :ref:`AudioServer<class_AudioServer>`. Equivalent to calli
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_ACTIVE_MAPS** = ``24``
 
-Number of active navigation maps in :ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>`. This also includes the empty default navigation maps created by :ref:`World2D<class_World2D>` and :ref:`World3D<class_World3D>` instances.
+Número de mapas de navegación activos en :ref:`NavigationServer2D<class_NavigationServer2D>` y :ref:`NavigationServer3D<class_NavigationServer3D>`. Esto también incluye los mapas de navegación por defecto vacíos creados por instancias de :ref:`World2D<class_World2D>` y :ref:`World3D<class_World3D>`.
 
 .. _class_Performance_constant_NAVIGATION_REGION_COUNT:
 
@@ -289,7 +289,7 @@ Number of active navigation agents processing avoidance in :ref:`NavigationServe
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_LINK_COUNT** = ``27``
 
-Number of active navigation links in :ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>`.
+Número de enlaces de navegación activos en :ref:`NavigationServer2D<class_NavigationServer2D>` y :ref:`NavigationServer3D<class_NavigationServer3D>`.
 
 .. _class_Performance_constant_NAVIGATION_POLYGON_COUNT:
 
@@ -297,7 +297,7 @@ Number of active navigation links in :ref:`NavigationServer2D<class_NavigationSe
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_POLYGON_COUNT** = ``28``
 
-Number of navigation mesh polygons in :ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>`.
+Número de polígonos de malla de navegación en :ref:`NavigationServer2D<class_NavigationServer2D>` y :ref:`NavigationServer3D<class_NavigationServer3D>`.
 
 .. _class_Performance_constant_NAVIGATION_EDGE_COUNT:
 
@@ -345,7 +345,7 @@ Número de obstáculos de navegación activos en :ref:`NavigationServer2D<class_
 
 :ref:`Monitor<enum_Performance_Monitor>` **PIPELINE_COMPILATIONS_CANVAS** = ``34``
 
-Number of pipeline compilations that were triggered by the 2D canvas renderer.
+Número de compilaciones de canalización activadas por el renderizador del lienzo 2D.
 
 .. _class_Performance_constant_PIPELINE_COMPILATIONS_MESH:
 
@@ -563,7 +563,7 @@ enum **MonitorType**: :ref:`🔗<enum_Performance_MonitorType>`
 
 :ref:`MonitorType<enum_Performance_MonitorType>` **MONITOR_TYPE_QUANTITY** = ``0``
 
-Monitor output is formatted as an integer value.
+La salida del monitor tiene el formato de un valor entero.
 
 .. _class_Performance_constant_MONITOR_TYPE_MEMORY:
 

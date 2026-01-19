@@ -2671,9 +2671,9 @@ UUID профиля обеспечения. Если оставить пусты
 
 :ref:`bool<class_bool>` **shader_baker/enabled** :ref:`🔗<class_EditorExportPlatformVisionOS_property_shader_baker/enabled>`
 
-If ``true``, shaders will be compiled and embedded in the application. This option is only supported when using the Forward+ and Mobile renderers.
+Если ``true``, шейдеры будут скомпилированы и встроены в приложение. Эта опция поддерживается только при использовании рендереров Forward+ и Mobile.
 
-\ **Note:** When exporting as a dedicated server, the shader baker is always disabled since no rendering is performed.
+\ **Примечание:** При экспорте в качестве выделенного сервера запекатель шейдеров всегда отключен, поскольку рендеринг не выполняется.
 
 .. rst-class:: classref-item-separator
 

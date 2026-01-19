@@ -282,9 +282,9 @@ Constructs a new **PackedFloat32Array**. Додатково ви можете п
 
 :ref:`float<class_float>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedFloat32Array_method_get>`
 
-Returns the 32-bit float at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns ``0.0``.
+Повертає 32-бітне число з плаваючою комою за заданим значенням ``index`` у масиві. Якщо значення ``index`` виходить за межі або є від'ємним, цей метод завершується невдачею та повертає значення ``0.0``.
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+Цей метод схожий (але не ідентичний) на оператор ``[]``. Найголовніше, що коли цей метод завершується невдачею, він не призупиняє виконання проекту, якщо його запускати з редактора.
 
 .. rst-class:: classref-item-separator
 

@@ -289,9 +289,9 @@ Constructs a **PackedStringArray** як копія даної **PackedStringArra
 
 :ref:`String<class_String>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedStringArray_method_get>`
 
-Returns the :ref:`String<class_String>` at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns an empty string.
+Повертає :ref:`String<class_String>` за заданим ``index`` у масиві. Якщо ``index`` виходить за межі або є від'ємним, цей метод завершується невдачею та повертає порожній рядок.
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+Цей метод схожий (але не ідентичний) на оператор ``[]``. Найголовніше, що коли цей метод завершується невдачею, він не призупиняє виконання проекту, якщо його запускати з редактора.
 
 .. rst-class:: classref-item-separator
 

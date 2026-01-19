@@ -17,11 +17,11 @@ FoldableContainer
 Опис
 --------
 
-A container that can be expanded/collapsed, with a title that can be filled with controls, such as buttons. This is also called an accordion.
+Контейнер, який можна розгортати/згортати, із заголовком, який можна заповнювати елементами керування, такими як кнопки. Це також називається акордеоном.
 
-The title can be positioned at the top or bottom of the container. The container can be expanded or collapsed by clicking the title or by pressing ``ui_accept`` when focused. Child control nodes are hidden when the container is collapsed. Ignores non-control children.
+Заголовок можна розташувати у верхній або нижній частині контейнера. Контейнер можна розгортати або згортати, клацнувши на заголовку або натиснувши ``ui_accept``, коли він у фокусі. Дочірні вузли керування приховані, коли контейнер згорнуто. Ігнорує дочірні елементи, які не є елементами керування.
 
-A FoldableContainer can be grouped with other FoldableContainers so that only one of them can be opened at a time; see :ref:`foldable_group<class_FoldableContainer_property_foldable_group>` and :ref:`FoldableGroup<class_FoldableGroup>`.
+FoldableContainer можна групувати з іншими FoldableContainer, щоб одночасно можна було відкрити лише один з них; див. :ref:`foldable_group<class_FoldableContainer_property_foldable_group>` та :ref:`FoldableGroup<class_FoldableGroup>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -219,7 +219,7 @@ enum **TitlePosition**: :ref:`🔗<enum_FoldableContainer_TitlePosition>`
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for text shaping algorithms. If left empty, the current locale is used instead.
+Код мови, що використовується для алгоритмів формування тексту. Якщо залишити поле порожнім, використовується поточна локалізація.
 
 .. rst-class:: classref-item-separator
 

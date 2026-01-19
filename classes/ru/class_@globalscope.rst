@@ -3468,11 +3468,11 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_RANGE** = ``1``
 
-Hints that an :ref:`int<class_int>` or :ref:`float<class_float>` property should be within a range specified via the hint string ``"min,max"`` or ``"min,max,step"``. The hint string can optionally include ``"or_greater"`` and/or ``"or_less"`` to allow manual input going respectively above the max or below the min values.
+Подсказка указывает, что свойство типа :ref:`int<class_int>` или :ref:`float<class_float>` должно находиться в диапазоне, указанном в строке подсказки ``"min,max"`` или ``"min,max,step"``. Строка подсказки может дополнительно включать ``"or_greater"`` и/или ``"or_less"``, чтобы разрешить ручной ввод значений, превышающих или не превышающих минимальное значение соответственно.
 
-\ **Example:** ``"-360,360,1,or_greater,or_less"``.
+\ **Пример:** ``"-360,360,1,or_greater,or_less"``.
 
-Additionally, other keywords can be included: ``"exp"`` for exponential range editing, ``"radians_as_degrees"`` for editing radian angles in degrees (the range values are also in degrees), ``"degrees"`` to hint at an angle, ``"prefer_slider"`` to show the slider for integers, ``"hide_control"`` to hide the slider or up-down arrows, and ``"suffix:px/s"`` to display a suffix indicating the value's unit (e.g. ``px/s`` for pixels per second).
+Кроме того, можно добавить другие ключевые слова: ``"exp"`` для редактирования диапазона в экспоненциальных значениях, ``"radians_as_degrees"`` для редактирования углов в радианах в градусах (значения диапазона также указываются в градусах), ``"degrees"`` для указания угла, ``"prefer_slider"`` для отображения ползунка для целых чисел, ``"hide_control"`` для скрытия ползунка или стрелок вверх-вниз и ``"suffix:px/s"`` для отображения суффикса, указывающего единицу измерения значения (например, ``px/s`` для пикселей в секунду).
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_ENUM:
 
@@ -3480,9 +3480,9 @@ Additionally, other keywords can be included: ``"exp"`` for exponential range ed
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_ENUM** = ``2``
 
-Hints that an :ref:`int<class_int>`, :ref:`String<class_String>`, or :ref:`StringName<class_StringName>` property is an enumerated value to pick in a list specified via a hint string.
+Подсказка указывает, что свойство типа :ref:`int<class_int>`, :ref:`String<class_String>` или :ref:`StringName<class_StringName>` представляет собой перечисляемое значение, которое нужно выбрать из списка, указанного в строке подсказки.
 
-The hint string is a comma separated list of names such as ``"Hello,Something,Else"``. Whitespace is **not** removed from either end of a name. For integer properties, the first name in the list has value 0, the next 1, and so on. Explicit values can also be specified by appending ``:integer`` to the name, e.g. ``"Zero,One,Three:3,Four,Six:6"``.
+Строка подсказки представляет собой список имен, разделенных запятыми, например, ``"Hello,Something,Else"``. Пробелы **не** удаляются с обоих концов имени. Для целочисленных свойств первое имя в списке имеет значение 0, следующее — 1 и так далее. Явные значения также можно указать, добавив к имени ``:integer``, например, ``"Zero,One,Three:3,Four,Six:6"``.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_ENUM_SUGGESTION:
 
@@ -3490,9 +3490,9 @@ The hint string is a comma separated list of names such as ``"Hello,Something,El
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_ENUM_SUGGESTION** = ``3``
 
-Hints that a :ref:`String<class_String>` or :ref:`StringName<class_StringName>` property can be an enumerated value to pick in a list specified via a hint string such as ``"Hello,Something,Else"``. See :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>` for details.
+Подсказка указывает, что свойство типа :ref:`String<class_String>` или :ref:`StringName<class_StringName>` может представлять собой перечисляемое значение, которое можно выбрать из списка, указанного в строке подсказки, например, ``"Hello,Something,Else"``. Подробнее см. :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`.
 
-Unlike :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`, a property with this hint still accepts arbitrary values and can be empty. The list of values serves to suggest possible values.
+В отличие от :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`, свойство с этой подсказкой по-прежнему принимает произвольные значения и может быть пустым. Список значений служит для предложения возможных значений.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_EXP_EASING:
 
@@ -3516,13 +3516,13 @@ Unlike :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_FLAGS** = ``6``
 
-Hints that an :ref:`int<class_int>` property is a bitmask with named bit flags.
+Подсказка указывает, что свойство типа :ref:`int<class_int>` представляет собой битовую маску с именованными битовыми флагами.
 
-The hint string is a comma separated list of names such as ``"Bit0,Bit1,Bit2,Bit3"``. Whitespace is **not** removed from either end of a name. The first name in the list has value 1, the next 2, then 4, 8, 16 and so on. Explicit values can also be specified by appending ``:integer`` to the name, e.g. ``"A:4,B:8,C:16"``. You can also combine several flags (``"A:4,B:8,AB:12,C:16"``).
+Строка подсказки представляет собой список имен, разделенных запятыми, например, ``"Bit0,Bit1,Bit2,Bit3"``. Пробелы **не** удаляются с обоих концов имени. Первое имя в списке имеет значение 1, следующее — 2, затем 4, 8, 16 и так далее. Явные значения также можно указать, добавив к имени ``:integer``, например, ``"A:4,B:8,C:16"``. Вы также можете комбинировать несколько флагов (``"A:4,B:8,AB:12,C:16"``).
 
-\ **Note:** A flag value must be at least ``1`` and at most ``2 ** 32 - 1``.
+\ **Примечание:** Значение флага должно быть не менее ``1`` и не более ``2 ** 32 - 1``.
 
-\ **Note:** Unlike :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`, the previous explicit value is not taken into account. For the hint ``"A:16,B,C"``, A is 16, B is 2, C is 4.
+\ **Примечание:** В отличие от :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`, предыдущее явное значение не учитывается. Для подсказки ``"A:16,B,C"`` A равно 16, B равно 2, C равно 4.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_2D_RENDER:
 
@@ -3626,11 +3626,11 @@ The hint string is a comma separated list of names such as ``"Bit0,Bit1,Bit2,Bit
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_MULTILINE_TEXT** = ``18``
 
-Hints that a :ref:`String<class_String>` property is text with line breaks. Editing it will show a text input field where line breaks can be typed.
+Подсказка указывает, что свойство :ref:`String<class_String>` содержит текст с переносами строк. При его редактировании появится текстовое поле ввода, куда можно вводить переносы строк.
 
-The hint string can be set to ``"monospace"`` to force the input field to use a monospaced font.
+Строку подсказки можно установить на ``"monospace"``, чтобы принудительно использовать моноширинный шрифт в поле ввода.
 
-If the hint string ``"no_wrap"`` is set, the input field will not wrap lines at boundaries, instead resorting to making the area scrollable.
+Если задана строка подсказки ``"no_wrap"``, поле ввода не будет переносить строки по границам, вместо этого область будет прокручиваться.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_EXPRESSION:
 
@@ -4084,23 +4084,23 @@ flags **PropertyUsageFlags**: :ref:`🔗<enum_@GlobalScope_PropertyUsageFlags>`
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_ARRAY** = ``262144``
 
-The property is the element count of a property array, i.e. a list of groups of related properties. Properties defined with this usage also need a specific ``class_name`` field in the form of ``label,prefix``. The field may also include additional comma-separated options:
+Это свойство представляет собой количество элементов в массиве свойств, то есть в списке групп связанных свойств. Свойства, определенные с таким использованием, также должны иметь специальное поле ``class_name`` в формате ``label,prefix``. Поле может также содержать дополнительные параметры, разделенные запятыми:
 
-- ``page_size=N``: Overrides :ref:`EditorSettings.interface/inspector/max_array_dictionary_items_per_page<class_EditorSettings_property_interface/inspector/max_array_dictionary_items_per_page>` for this array.
+- ``page_size=N``: Переопределяет :ref:`EditorSettings.interface/inspector/max_array_dictionary_items_per_page<class_EditorSettings_property_interface/inspector/max_array_dictionary_items_per_page>` для этого массива.
 
-- ``add_button_text=text``: The text displayed by the "Add Element" button.
+- ``add_button_text=text``: Текст, отображаемый кнопкой «Добавить элемент».
 
-- ``static``: The elements can't be re-arranged.
+- ``static``: Элементы нельзя переставлять.
 
-- ``const``: New elements can't be added.
+- ``const``: Новые элементы нельзя добавлять.
 
-- ``numbered``: An index will appear next to each element.
+- ``numbered``: Рядом с каждым элементом будет отображаться индекс.
 
-- ``unfoldable``: The array can't be folded.
+- ``unfoldable``: Массив нельзя свернуть.
 
-- ``swap_method=method_name``: The method that will be called when two elements switch places. The method should take 2 :ref:`int<class_int>` parameters, which will be indices of the elements being swapped.
+- ``swap_method=method_name``: Метод, который будет вызываться при обмене местами двух элементов. Метод должен принимать 2 параметра типа :ref:`int<class_int>`, которые будут индексами обмениваемых элементов.
 
-Note that making a full-fledged property array requires boilerplate code involving :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`.
+Обратите внимание, что создание полноценного массива свойств требует шаблонного кода, включающего :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`.
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_ALWAYS_DUPLICATE:
 
@@ -5089,7 +5089,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`NavigationServer2DManager<class_NavigationServer2DManager>` **NavigationServer2DManager** :ref:`🔗<class_@GlobalScope_property_NavigationServer2DManager>`
 
-The :ref:`NavigationServer2DManager<class_NavigationServer2DManager>` singleton.
+Синглтон :ref:`NavigationServer2DManager<class_NavigationServer2DManager>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5113,7 +5113,7 @@ The :ref:`NavigationServer2DManager<class_NavigationServer2DManager>` singleton.
 
 :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` **NavigationServer3DManager** :ref:`🔗<class_@GlobalScope_property_NavigationServer3DManager>`
 
-The :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` singleton.
+Синглтон :ref:`NavigationServer3DManager<class_NavigationServer3DManager>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6014,7 +6014,7 @@ Prints:
 
 :ref:`Object<class_Object>` **instance_from_id**\ (\ instance_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_@GlobalScope_method_instance_from_id>`
 
-Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All Objects have a unique instance ID. See also :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`.
+Возвращает :ref:`Object<class_Object>`, соответствующий параметру ``instance_id``. Все объекты имеют уникальный идентификатор (ID) экземпляра. См. также :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`.
 
 
 .. tabs::
@@ -6026,7 +6026,7 @@ Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All
     func _ready():
         var id = get_instance_id()
         var instance = instance_from_id(id)
-        print(instance.drink) # Prints "water"
+        print(instance.drink) # Выводит "water"
 
  .. code-tab:: csharp
 
@@ -6038,7 +6038,7 @@ Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All
         {
             ulong id = GetInstanceId();
             var instance = (MyNode)InstanceFromId(Id);
-            GD.Print(instance.Drink); // Prints "water"
+            GD.Print(instance.Drink); // Выводит "water"
         }
     }
 
@@ -7438,7 +7438,7 @@ Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All
 
 :ref:`int<class_int>` **typeof**\ (\ variable\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_@GlobalScope_method_typeof>`
 
-Returns the internal type of the given ``variable``, using the :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` values.
+Возвращает внутренний тип заданной ``variable``, используя значения :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`.
 
 ::
 
@@ -7446,11 +7446,11 @@ Returns the internal type of the given ``variable``, using the :ref:`Variant.Typ
     json.parse('["a", "b", "c"]')
     var result = json.get_data()
     if typeof(result) == TYPE_ARRAY:
-        print(result[0]) # Prints "a"
+        print(result[0]) # Выводит "a"
     else:
-        print("Unexpected result!")
+        print("Неожиданный результат!")
 
-See also :ref:`type_string()<class_@GlobalScope_method_type_string>`.
+См. также :ref:`type_string()<class_@GlobalScope_method_type_string>`.
 
 .. rst-class:: classref-item-separator
 

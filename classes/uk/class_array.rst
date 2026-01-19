@@ -680,9 +680,9 @@ Array
 
 :ref:`Array<class_Array>` **duplicate_deep**\ (\ deep_subresources_mode\: :ref:`int<class_int>` = 1\ ) |const| :ref:`🔗<class_Array_method_duplicate_deep>`
 
-Duplicates this array, deeply, like :ref:`duplicate()<class_Array_method_duplicate>` when passing ``true``, with extra control over how subresources are handled.
+Дублює цей масив глибоко, подібно до :ref:`duplicate()<class_Array_method_duplicate>` при передачі ``true``, з додатковим контролем над обробкою підресурсів.
 
-\ ``deep_subresources_mode`` must be one of the values from :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>`. By default, only internal resources will be duplicated (recursively).
+\ ``deep_subresources_mode`` має бути одним зі значень з :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>`. За замовчуванням (рекурсивно) будуть дублюватися лише внутрішні ресурси.
 
 .. rst-class:: classref-item-separator
 
@@ -831,9 +831,9 @@ Duplicates this array, deeply, like :ref:`duplicate()<class_Array_method_duplica
 
 :ref:`Variant<class_Variant>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Array_method_get>`
 
-Returns the element at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns ``null``.
+Повертає елемент за заданим ``index`` у масиві. Якщо ``index`` виходить за межі або є від'ємним, цей метод завершується невдачею та повертає ``null``.
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+Цей метод схожий (але не ідентичний) на оператор ``[]``. Найголовніше, що коли цей метод завершується невдачею, він не призупиняє виконання проекту, якщо його запускати з редактора.
 
 .. rst-class:: classref-item-separator
 
@@ -917,9 +917,9 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`int<class_int>` **hash**\ (\ ) |const| :ref:`🔗<class_Array_method_hash>`
 
-Returns a hashed 32-bit integer value representing the array and its contents.
+Повертає хешоване 32-бітове ціле число, що представляє масив та його вміст.
 
-\ **Note:** Arrays with equal hash values are *not* guaranteed to be the same, as a result of hash collisions. On the contrary, arrays with different hash values are guaranteed to be different.
+\ **Примітка:** Масиви з однаковими хеш-значеннями *не* гарантовано будуть однаковими через колізії хеш-значень. Навпаки, масиви з різними хеш-значеннями гарантовано будуть різними.
 
 .. rst-class:: classref-item-separator
 
@@ -1216,11 +1216,11 @@ Returns a hashed 32-bit integer value representing the array and its contents.
 
 |void| **remove_at**\ (\ position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Array_method_remove_at>`
 
-Removes the element from the array at the given index (``position``). If the index is out of bounds, this method fails. If the index is negative, ``position`` is considered relative to the end of the array.
+Видаляє елемент з масиву за заданим індексом (``position``). Якщо індекс виходить за межі, цей метод не працює. Якщо індекс від'ємний, ``position`` вважається відносно кінця масиву.
 
-If you need to return the removed element, use :ref:`pop_at()<class_Array_method_pop_at>`. To remove an element by value, use :ref:`erase()<class_Array_method_erase>` instead.
+Якщо вам потрібно повернути видалений елемент, використовуйте метод ``position``]. Щоб видалити елемент за значенням, використовуйте метод :ref:`erase()<class_Array_method_erase>`.
 
-\ **Note:** This method shifts every element's index after ``position`` back, which may have a noticeable performance cost, especially on larger arrays.
+\ **Примітка:** Цей метод зсуває індекс кожного елемента після ``position`` назад, що може мати помітне зниження продуктивності, особливо на більших масивах.
 
 .. rst-class:: classref-item-separator
 

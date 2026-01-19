@@ -109,7 +109,7 @@ Si es ``true``, habilita el sombreado por muestra, que reemplaza MSAA por SSAA. 
 - |void| **set_min_sample_shading**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_min_sample_shading**\ (\ )
 
-El multiplicador de :ref:`sample_count<class_RDPipelineMultisampleState_property_sample_count>` que determina cuántas muestras se realizan para cada fragmento. Debe estar entre ``0.0`` y ``1.0`` (inclusive). Sólo es efectivo si :ref:`enable_sample_shading<class_RDPipelineMultisampleState_property_enable_sample_shading>` es ``true``. Si :ref:`min_sample_shading<class_RDPipelineMultisampleState_property_min_sample_shading>` es ``1.0``, la invocación de fragmentos sólo debe leer de la muestra del índice de cobertura. El acceso a la imagen de tile no debe utilizarse si :ref:`enable_sample_shading<class_RDPipelineMultisampleState_property_enable_sample_shading>` *no* es ``1.0``.
+El multiplicador de :ref:`sample_count<class_RDPipelineMultisampleState_property_sample_count>` que determina cuántas muestras se realizan para cada fragmento. Debe estar entre ``0.0`` y ``1.0`` (inclusive). Solo es efectivo si :ref:`enable_sample_shading<class_RDPipelineMultisampleState_property_enable_sample_shading>` es ``true``. Si :ref:`min_sample_shading<class_RDPipelineMultisampleState_property_min_sample_shading>` es ``1.0``, la invocación de fragmentos sólo debe leer de la muestra del índice de cobertura. El acceso a la imagen de tile no debe utilizarse si :ref:`enable_sample_shading<class_RDPipelineMultisampleState_property_enable_sample_shading>` *no* es ``1.0``.
 
 .. rst-class:: classref-item-separator
 

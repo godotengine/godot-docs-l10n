@@ -14,11 +14,11 @@ EditorFileDialog
 Опис
 --------
 
-**EditorFileDialog** is a :ref:`FileDialog<class_FileDialog>` tweaked to work in the editor. It automatically handles favorite and recent directory lists, and synchronizes some properties with their corresponding editor settings.
+**EditorFileDialog** – це :ref:`FileDialog<class_FileDialog>`, налаштований для роботи в редакторі. Він автоматично обробляє списки обраних та нещодавніх каталогів, а також синхронізує деякі властивості з відповідними налаштуваннями редактора.
 
-\ **EditorFileDialog** will automatically show a native dialog based on the :ref:`EditorSettings.interface/editor/use_native_file_dialogs<class_EditorSettings_property_interface/editor/use_native_file_dialogs>` editor setting and ignores :ref:`FileDialog.use_native_dialog<class_FileDialog_property_use_native_dialog>`.
+\ **EditorFileDialog** автоматично відображатиме рідне діалогове вікно на основі налаштувань редактора :ref:`EditorSettings.interface/editor/use_native_file_dialogs<class_EditorSettings_property_interface/editor/use_native_file_dialogs>` та ігноруватиме :ref:`FileDialog.use_native_dialog<class_FileDialog_property_use_native_dialog>`.
 
-\ **Note:** **EditorFileDialog** is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **Примітка:** **EditorFileDialog** за замовчуванням невидимий. Щоб зробити його видимим, викличте один із методів ``popup_*`` з :ref:`Window<class_Window>` на вузлі, наприклад, :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -85,7 +85,7 @@ EditorFileDialog
 
 **Застаріло:** This feature is no longer supported.
 
-This method is kept for compatibility and does nothing. As an alternative, you can display another dialog after showing the file dialog.
+Цей метод збережено для сумісності та нічого не робить. Як альтернативу, ви можете відобразити інше діалогове вікно після відображення діалогового вікна файлу.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

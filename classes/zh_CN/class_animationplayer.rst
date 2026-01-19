@@ -631,9 +631,9 @@ enum **AnimationMethodCallMode**: :ref:`🔗<enum_AnimationPlayer_AnimationMetho
 
 :ref:`bool<class_bool>` **is_animation_active**\ (\ ) |const| :ref:`🔗<class_AnimationPlayer_method_is_animation_active>`
 
-Returns ``true`` if the an animation is currently active. An animation is active if it was played by calling :ref:`play()<class_AnimationPlayer_method_play>` and was not finished yet, or was stopped by calling :ref:`stop()<class_AnimationPlayer_method_stop>`.
+若当前有动画处于活动状态则返回 ``true``\ 。动画在通过调用 :ref:`play()<class_AnimationPlayer_method_play>` 方法开始播放且尚未播放完毕时，又或者通过调用 :ref:`stop()<class_AnimationPlayer_method_stop>` 方法被停止时，均视为活动状态。
 
-This can be used to check whether an animation is currently paused or stopped.
+此方法可用于检查动画当前是处于暂停状态还是已停止状态。
 
 ::
 

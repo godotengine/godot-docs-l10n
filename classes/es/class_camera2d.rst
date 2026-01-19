@@ -698,7 +698,9 @@ Descripciones de Métodos
 
 |void| **align**\ (\ ) :ref:`🔗<class_Camera2D_method_align>`
 
-Alinea la cámara con el nodo rastreado.
+Aligns the camera to the tracked node.
+
+\ **Note:** Calling :ref:`force_update_scroll()<class_Camera2D_method_force_update_scroll>` after this method is not required.
 
 .. rst-class:: classref-item-separator
 

@@ -7,7 +7,7 @@ Mutex
 
 **Hereda:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A binary :ref:`Semaphore<class_Semaphore>` for synchronization of multiple :ref:`Thread<class_Thread>`\ s.
+Un :ref:`Semaphore<class_Semaphore>` binario para la sincronización de múltiples :ref:`Thread<class_Thread>`\ s.
 
 .. rst-class:: classref-introduction-group
 

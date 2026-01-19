@@ -212,9 +212,9 @@ If not overridden, returns ``false``.
 
 :ref:`int<class_int>` **_get_format_version**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_format_version>`
 
-Gets the format version of this importer. Increment this version when making incompatible changes to the format of the imported resources.
+获取此导入器的格式版本号。当对导入资源的格式进行不兼容的更改时，应递增此版本号。
 
-If not overridden, the format version is ``0``.
+若未覆写，格式版本号默认为 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -301,9 +301,9 @@ If not overridden, the format version is ``0``.
 
 :ref:`int<class_int>` **_get_preset_count**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_preset_count>`
 
-Gets the number of initial presets defined by the plugin. Use :ref:`_get_import_options()<class_EditorImportPlugin_private_method__get_import_options>` to get the default options for the preset and :ref:`_get_preset_name()<class_EditorImportPlugin_private_method__get_preset_name>` to get the name of the preset.
+获取插件定义的初始预设的数量。使用 :ref:`_get_import_options()<class_EditorImportPlugin_private_method__get_import_options>` 获取预设的默认选项，使用 :ref:`_get_preset_name()<class_EditorImportPlugin_private_method__get_preset_name>` 获取预设的名称。
 
-By default, there are no presets.
+默认情况下，不提供任何预设。
 
 .. rst-class:: classref-item-separator
 

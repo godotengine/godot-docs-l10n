@@ -739,21 +739,21 @@ Crashes двигун (або редактор, якщо називається �
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_cmdline_args**\ (\ ) :ref:`🔗<class_OS_method_get_cmdline_args>`
 
-Returns the command-line arguments passed to the engine, excluding arguments processed by the engine, such as ``--headless`` and ``--fullscreen``.
+Повертає аргументи командного рядка, передані до движка, за винятком аргументів, оброблених движком, таких як ``--headless`` та ``--fullscreen``.
 
 ::
 
-    # Godot has been executed with the following command:
+    # Godot було виконано за допомогою такої команди:
     # godot --headless --verbose --scene my_scene.tscn --custom
-    OS.get_cmdline_args() # Returns ["--scene", "my_scene.tscn", "--custom"]
+    OS.get_cmdline_args() # Повертає ["--scene", "my_scene.tscn", "--custom"]
 
-Command-line arguments can be written in any form, including both ``--key value`` and ``--key=value`` forms so they can be properly parsed, as long as custom command-line arguments do not conflict with engine arguments.
+Аргументи командного рядка можна записувати в будь-якій формі, включаючи форми ``--key value`` та ``--key=value``, щоб їх можна було правильно проаналізувати, за умови, що власні аргументи командного рядка не конфліктують з аргументами движка.
 
-You can also incorporate environment variables using the :ref:`get_environment()<class_OS_method_get_environment>` method.
+Ви також можете включати змінні середовища за допомогою методу :ref:`get_environment()<class_OS_method_get_environment>`.
 
-You can set :ref:`ProjectSettings.editor/run/main_run_args<class_ProjectSettings_property_editor/run/main_run_args>` to define command-line arguments to be passed by the editor when running the project.
+ Ви можете встановити :ref:`ProjectSettings.editor/run/main_run_args<class_ProjectSettings_property_editor/run/main_run_args>`, щоб визначити аргументи командного рядка, які має передавати редактор під час запуску проєкту.
 
-\ **Example:** Parse command-line arguments into a :ref:`Dictionary<class_Dictionary>` using the ``--key=value`` form for arguments:
+\ **Приклад:** Розберіть аргументи командного рядка у :ref:`Dictionary<class_Dictionary>`, використовуючи форму ``--key=value`` для аргументів:
 
 
 .. tabs::
@@ -766,8 +766,8 @@ You can set :ref:`ProjectSettings.editor/run/main_run_args<class_ProjectSettings
             var key_value = argument.split("=")
             arguments[key_value[0].trim_prefix("--")] = key_value[1]
         else:
-            # Options without an argument will be present in the dictionary,
-            # with the value set to an empty string.
+            # Варіанти без аргументу будуть присутні у словнику,
+            # зі значенням, встановленим на порожній рядок.
             arguments[argument.trim_prefix("--")] = ""
 
  .. code-tab:: csharp
@@ -782,15 +782,15 @@ You can set :ref:`ProjectSettings.editor/run/main_run_args<class_ProjectSettings
         }
         else
         {
-            // Options without an argument will be present in the dictionary,
-            // with the value set to an empty string.
+            // Варіанти без аргументу будуть присутні у словнику,
+            // зі значенням, встановленим на порожній рядок.
             arguments[argument.TrimPrefix("--")] = "";
         }
     }
 
 
 
-\ **Note:** Passing custom user arguments directly is not recommended, as the engine may discard or modify them. Instead, pass the standard UNIX double dash (``--``) and then the custom arguments, which the engine will ignore by design. These can be read via :ref:`get_cmdline_user_args()<class_OS_method_get_cmdline_user_args>`.
+\ **Примітка:** Не рекомендується передавати власні аргументи користувача безпосередньо, оскільки механізм може їх відкинути або змінити. Натомість передайте стандартний подвійний тире UNIX (``--``), а потім власні аргументи, які механізм ігноруватиме за своєю природою. Їх можна прочитати за допомогою :ref:`get_cmdline_user_args()<class_OS_method_get_cmdline_user_args>`.
 
 .. rst-class:: classref-item-separator
 
@@ -802,17 +802,17 @@ You can set :ref:`ProjectSettings.editor/run/main_run_args<class_ProjectSettings
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_cmdline_user_args**\ (\ ) :ref:`🔗<class_OS_method_get_cmdline_user_args>`
 
-Returns the command-line user arguments passed to the engine. User arguments are ignored by the engine and reserved for the user. They are passed after the double dash ``--`` argument. ``++`` may be used when ``--`` is intercepted by another program (such as ``startx``).
+Повертає аргументи користувача командного рядка, передані до механізму. Аргументи користувача ігноруються механізмом і резервуються для користувача. Вони передаються після аргумента з подвійним дефісом ``--``. ``++`` може використовуватися, коли ``--`` перехоплюється іншою програмою (наприклад, ``startx``).
 
 ::
 
-    # Godot has been executed with the following command:
+    # Команду Godot було виконано за допомогою такої команди:
     # godot --fullscreen --custom -- --level=2 --hardcore
 
     OS.get_cmdline_args()      # Returns ["--custom"]
     OS.get_cmdline_user_args() # Returns ["--level=2", "--hardcore"]
 
-To get arguments passed before ``--`` or ``++``, use :ref:`get_cmdline_args()<class_OS_method_get_cmdline_args>`.
+Щоб отримати аргументи, передані перед ``--`` або ``++``, використовуйте :ref:`get_cmdline_args()<class_OS_method_get_cmdline_args>`.
 
 .. rst-class:: classref-item-separator
 

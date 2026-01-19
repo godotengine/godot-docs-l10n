@@ -14,22 +14,22 @@ ViewportTexture
 Опис
 --------
 
-A **ViewportTexture** provides the content of a :ref:`Viewport<class_Viewport>` as a dynamic :ref:`Texture2D<class_Texture2D>`. This can be used to combine the rendering of :ref:`Control<class_Control>`, :ref:`Node2D<class_Node2D>` and :ref:`Node3D<class_Node3D>` nodes. For example, you can use this texture to display a 3D scene inside a :ref:`TextureRect<class_TextureRect>`, or a 2D overlay in a :ref:`Sprite3D<class_Sprite3D>`.
+**ViewportTexture** надає вміст :ref:`Viewport<class_Viewport>` як динамічний :ref:`Texture2D<class_Texture2D>`. Це можна використовувати для поєднання рендерингу вузлів :ref:`Control<class_Control>`, :ref:`Node2D<class_Node2D>` та :ref:`Node3D<class_Node3D>`. Наприклад, ви можете використовувати цю текстуру для відображення 3D-сцени всередині :ref:`TextureRect<class_TextureRect>` або 2D-накладання в :ref:`Sprite3D<class_Sprite3D>`.
 
-To get a **ViewportTexture** in code, use the :ref:`Viewport.get_texture()<class_Viewport_method_get_texture>` method on the target viewport.
+Щоб отримати **ViewportTexture** в коді, використовуйте метод :ref:`Viewport.get_texture()<class_Viewport_method_get_texture>` на цільовому вікні перегляду.
 
-\ **Note:** A **ViewportTexture** is always local to its scene (see :ref:`Resource.resource_local_to_scene<class_Resource_property_resource_local_to_scene>`). If the scene root is not ready, it may return incorrect data (see :ref:`Node.ready<class_Node_signal_ready>`).
+\ **Примітка:** **ViewportTexture** завжди є локальним для своєї сцени (див. :ref:`Resource.resource_local_to_scene<class_Resource_property_resource_local_to_scene>`). Якщо корінь сцени не готовий, він може повертати неправильні дані (див. :ref:`Node.ready<class_Node_signal_ready>`).
 
-\ **Note:** Instantiating scenes containing a high-resolution **ViewportTexture** may cause noticeable stutter.
+\ **Примітка:** Створення екземплярів сцен, що містять **ViewportTexture** з високою роздільною здатністю, може спричинити помітне заїкання.
 
-\ **Note:** When using a :ref:`Viewport<class_Viewport>` with :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` set to ``true``, the returned texture will be an HDR image that uses linear encoding. This may look darker than normal when displayed directly on screen. To convert to nonlinear sRGB encoding, you can do the following:
+ **Примітка:** Під час використання :ref:`Viewport<class_Viewport>` зі значенням :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`, встановленим на ``true``, повернена текстура буде HDR-зображенням, яке використовує лінійне кодування. Воно може виглядати темнішим, ніж зазвичай, коли відображається безпосередньо на екрані. Щоб перетворити на нелінійне кодування sRGB, ви можете зробити наступне:
 
 ::
 
     img.convert(Image.FORMAT_RGBA8)
     img.linear_to_srgb()
 
-\ **Note:** Some nodes such as :ref:`Decal<class_Decal>`, :ref:`Light3D<class_Light3D>`, and :ref:`PointLight2D<class_PointLight2D>` do not support using **ViewportTexture** directly. To use texture data from a **ViewportTexture** in these nodes, you need to create an :ref:`ImageTexture<class_ImageTexture>` by calling :ref:`Texture2D.get_image()<class_Texture2D_method_get_image>` on the **ViewportTexture** and passing the result to :ref:`ImageTexture.create_from_image()<class_ImageTexture_method_create_from_image>`. This conversion is a slow operation, so it should not be performed every frame.
+\ **Примітка:** Деякі вузли, такі як :ref:`Decal<class_Decal>`, :ref:`Light3D<class_Light3D>` та :ref:`PointLight2D<class_PointLight2D>`, не підтримують безпосереднє використання **ViewportTexture**. Щоб використовувати дані текстури з **ViewportTexture** у цих вузлах, вам потрібно створити :ref:`ImageTexture<class_ImageTexture>`, викликавши :ref:`Texture2D.get_image()<class_Texture2D_method_get_image>` на **ViewportTexture** та передавши результат до :ref:`ImageTexture.create_from_image()<class_ImageTexture_method_create_from_image>`. Це перетворення є повільною операцією, тому його не слід виконувати кожного кадру.
 
 .. rst-class:: classref-introduction-group
 

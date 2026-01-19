@@ -125,7 +125,7 @@ enum **DisperseMode**: :ref:`🔗<enum_BoneTwistDisperser3D_DisperseMode>`
 
 :ref:`DisperseMode<enum_BoneTwistDisperser3D_DisperseMode>` **DISPERSE_MODE_EVEN** = ``0``
 
-Assign amounts so that they monotonically increase from ``0.0`` to ``1.0``, ensuring all weights are equal. For example, with five joints, the amounts would be ``0.2``, ``0.4``, ``0.6``, ``0.8``, and ``1.0`` starting from the root bone.
+分配数值，使其从 ``0.0`` 到 ``1.0`` 单调递增，并确保所有权重相等。例如，如果有五个关节，从根骨骼开始的数值将依次为 ``0.2``\ 、\ ``0.4``\ 、\ ``0.6``\ 、\ ``0.8`` 和 ``1.0``\ 。
 
 .. _class_BoneTwistDisperser3D_constant_DISPERSE_MODE_WEIGHTED:
 
@@ -483,9 +483,9 @@ Sets the end bone name of the bone chain.
 
 |void| **set_extend_end_bone**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_extend_end_bone>`
 
-If ``enabled`` is ``true``, the end bone is extended to have a tail.
+如果 ``enabled`` 为 ``true``\ ，则会延伸末端骨骼形成尾部。
 
-If ``enabled`` is ``false``, :ref:`get_reference_bone()<class_BoneTwistDisperser3D_method_get_reference_bone>` becomes a parent of the end bone and it uses the vector to the end bone as a twist axis.
+如果 ``enabled`` 为 ``false``\ ，则 :ref:`get_reference_bone()<class_BoneTwistDisperser3D_method_get_reference_bone>` 会成为末端骨骼的父骨骼，并使用到末端骨骼的向量作为扭转轴。
 
 .. rst-class:: classref-item-separator
 

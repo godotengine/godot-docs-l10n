@@ -16,9 +16,9 @@ RenderData
 Описание
 ----------------
 
-Абстрактный объект данных рендеринга, существует на протяжении рендеринга одного окна просмотра.
+Abstract render data object, exists for the duration of rendering a single viewport. See also :ref:`RenderDataRD<class_RenderDataRD>`, :ref:`RenderSceneData<class_RenderSceneData>`, and :ref:`RenderSceneDataRD<class_RenderSceneDataRD>`.
 
-\ **Примечание:** Это внутренний объект сервера рендеринга, не создавайте его из скрипта.
+\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
 
 .. rst-class:: classref-reftable-group
 

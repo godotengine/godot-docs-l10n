@@ -79,7 +79,7 @@ SpringArm3D
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-The layers against which the collision check will be done. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
+Шари, для яких буде виконуватися перевірка на колізії. Див. розділ `Шари та маски на колізії <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ у документації для отримання додаткової інформації.
 
 .. rst-class:: classref-item-separator
 

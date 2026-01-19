@@ -276,9 +276,9 @@ PackedInt64Array
 
 :ref:`int<class_int>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedInt64Array_method_get>`
 
-Returns the 64-bit integer at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns ``0``.
+Возвращает 64-битное целое число по указанному ``index`` в массиве. Если ``index`` выходит за пределы или отрицателен, этот метод завершается ошибкой и возвращает ``0``. 
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+Этот метод похож (но не идентичен) оператору ``[]``. В частности, когда этот метод завершается ошибкой, он не приостанавливает выполнение проекта, если запущен из редактора.
 
 .. rst-class:: classref-item-separator
 

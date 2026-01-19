@@ -382,7 +382,7 @@ EditorInterface
 
 :ref:`String<class_String>` **get_editor_language**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_editor_language>`
 
-Returns the language currently used for the editor interface.
+Возвращает язык, используемый в данный момент для интерфейса редактора.
 
 .. rst-class:: classref-item-separator
 
@@ -538,7 +538,7 @@ Returns the language currently used for the editor interface.
 
 :ref:`float<class_float>` **get_node_3d_rotate_snap**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_node_3d_rotate_snap>`
 
-Returns the amount of degrees the 3D editor's rotational snapping is set to.
+Возвращает значение, на которое установлена привязка к вращательному полю в 3D-редакторе.
 
 .. rst-class:: classref-item-separator
 
@@ -550,7 +550,7 @@ Returns the amount of degrees the 3D editor's rotational snapping is set to.
 
 :ref:`float<class_float>` **get_node_3d_scale_snap**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_node_3d_scale_snap>`
 
-Returns the amount of units the 3D editor's scale snapping is set to.
+Возвращает количество единиц, на которое установлена привязка масштаба в 3D-редакторе.
 
 .. rst-class:: classref-item-separator
 
@@ -562,7 +562,7 @@ Returns the amount of units the 3D editor's scale snapping is set to.
 
 :ref:`float<class_float>` **get_node_3d_translate_snap**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_node_3d_translate_snap>`
 
-Returns the amount of units the 3D editor's translation snapping is set to.
+Возвращает значение, на которое установлена привязка к перемещению в 3D-редакторе.
 
 .. rst-class:: classref-item-separator
 
@@ -702,7 +702,7 @@ Returns the amount of units the 3D editor's translation snapping is set to.
 
 :ref:`bool<class_bool>` **is_node_3d_snap_enabled**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_is_node_3d_snap_enabled>`
 
-Returns ``true`` if the 3D editor currently has snapping mode enabled, and ``false`` otherwise.
+Возвращает ``true``, если в 3D-редакторе в данный момент включен режим привязки, и ``false`` в противном случае.
 
 .. rst-class:: classref-item-separator
 
@@ -714,7 +714,7 @@ Returns ``true`` if the 3D editor currently has snapping mode enabled, and ``fal
 
 :ref:`bool<class_bool>` **is_object_edited**\ (\ object\: :ref:`Object<class_Object>`\ ) |const| :ref:`🔗<class_EditorInterface_method_is_object_edited>`
 
-Returns ``true`` if the object has been marked as edited through :ref:`set_object_edited()<class_EditorInterface_method_set_object_edited>`.
+Возвращает ``true``, если объект был помечен как отредактированный с помощью :ref:`set_object_edited()<class_EditorInterface_method_set_object_edited>`.
 
 .. rst-class:: classref-item-separator
 
@@ -824,19 +824,19 @@ Returns ``true`` if the object has been marked as edited through :ref:`set_objec
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Pops up an editor dialog for creating an object.
+Открывает диалоговое окно редактора для создания объекта.
 
-The ``callback`` must take a single argument of type :ref:`String<class_String>`, which will contain the type name of the selected object (or the script path of the type, if the type is created from a script), or be an empty string if no item is selected.
+Параметр ``callback`` должен принимать один аргумент типа :ref:`String<class_String>`, который будет содержать имя типа выбранного объекта (или путь к скрипту типа, если тип создан из скрипта), или пустую строку, если ни один элемент не выбран.
 
-The ``base_type`` specifies the base type of objects to display. For example, if you set this to "Resource", all types derived from :ref:`Resource<class_Resource>` will display in the create dialog.
+Параметр ``base_type`` указывает базовый тип отображаемых объектов. Например, если вы установите его значение на "Resource", в диалоговом окне создания будут отображаться все типы, производные от :ref:`Resource<class_Resource>`.
 
-The ``current_type`` will be passed in the search box of the create dialog, and the specified type can be immediately selected when the dialog pops up. If the ``current_type`` is not derived from ``base_type``, there will be no result of the type in the dialog.
+Параметр ``current_type`` будет передан в поле поиска диалогового окна создания, и указанный тип можно будет сразу выбрать при появлении диалогового окна. Если ``current_type`` не является производным от ``base_type``, в диалоговом окне не будет результатов этого типа.
 
-The ``dialog_title`` allows you to define a custom title for the dialog. This is useful if you want to accurately hint the usage of the dialog. If the ``dialog_title`` is an empty string, the dialog will use "Create New 'Base Type'" as the default title.
+Параметр ``dialog_title`` позволяет определить пользовательский заголовок для диалогового окна. Это полезно, если вы хотите точно указать на назначение диалогового окна. Если параметр ``dialog_title`` является пустой строкой, в качестве заголовка по умолчанию будет использоваться «Создать новый базовый тип».
 
-The ``type_blocklist`` contains a list of type names, and the types in the blocklist will be hidden from the create dialog.
+Параметр ``type_blocklist`` содержит список имен типов, и типы из этого списка будут скрыты из диалога создания.
 
-\ **Note:** Trying to list the base type in the ``type_blocklist`` will hide all types derived from the base type from the create dialog.
+\ **Примечание:** Попытка указать базовый тип в параметре ``type_blocklist`` скроет из диалога создания все типы, производные от базового типа.
 
 .. rst-class:: classref-item-separator
 
@@ -1078,11 +1078,11 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
 |void| **set_object_edited**\ (\ object\: :ref:`Object<class_Object>`, edited\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorInterface_method_set_object_edited>`
 
-If ``edited`` is ``true``, the object is marked as edited.
+Если ``edited`` равно ``true``, объект помечается как отредактированный.
 
-\ **Note:** This is primarily used by the editor for :ref:`Resource<class_Resource>` based objects to track their modified state. For example, any changes to an open scene, a resource in the inspector, or an edited script will cause this method to be called with ``true``. Saving the scene, script, or resource resets the edited state by calling this method with ``false``.
+\ **Примечание:** Этот метод в основном используется редактором для объектов на основе :ref:`Resource<class_Resource>` для отслеживания их измененного состояния. Например, любые изменения открытой сцены, ресурса в инспекторе или отредактированного скрипта приведут к вызову этого метода с ``true``. Сохранение сцены, скрипта или ресурса сбрасывает состояние редактирования, вызывая этот метод с ``false``.
 
-\ **Note:** Each call to this method increments the object's edited version. This is used to track changes in the editor and to trigger when thumbnails should be regenerated for resources.
+\ **Примечание:** Каждый вызов этого метода увеличивает номер отредактированной версии объекта. Это используется для отслеживания изменений в редакторе и для запуска процесса перегенерации эскизов для ресурсов.
 
 .. rst-class:: classref-item-separator
 

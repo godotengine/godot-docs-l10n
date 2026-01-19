@@ -7,16 +7,16 @@ NavigationServer3DManager
 
 **Наследует:** :ref:`Object<class_Object>`
 
-A singleton for managing :ref:`NavigationServer3D<class_NavigationServer3D>` implementations.
+Синглтон для управления реализациями :ref:`NavigationServer3D<class_NavigationServer3D>`.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-**NavigationServer3DManager** is the API for registering :ref:`NavigationServer3D<class_NavigationServer3D>` implementations and setting the default implementation.
+**NavigationServer3DManager** — это API для регистрации реализаций :ref:`NavigationServer3D<class_NavigationServer3D>` и установки реализации по умолчанию.
 
-\ **Note:** It is not possible to switch servers at runtime. This class is only used on startup at the server initialization level.
+\ **Примечание:** Переключение серверов во время выполнения невозможно. Этот класс используется только при запуске на уровне инициализации сервера.
 
 .. rst-class:: classref-reftable-group
 
@@ -47,7 +47,7 @@ A singleton for managing :ref:`NavigationServer3D<class_NavigationServer3D>` imp
 
 |void| **register_server**\ (\ name\: :ref:`String<class_String>`, create_callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NavigationServer3DManager_method_register_server>`
 
-Registers a :ref:`NavigationServer3D<class_NavigationServer3D>` implementation by passing a ``name`` and a :ref:`Callable<class_Callable>` that returns a :ref:`NavigationServer3D<class_NavigationServer3D>` object.
+Регистрирует реализацию :ref:`NavigationServer3D<class_NavigationServer3D>`, передав ``name`` и :ref:`Callable<class_Callable>`, которая возвращает объект :ref:`NavigationServer3D<class_NavigationServer3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -59,7 +59,7 @@ Registers a :ref:`NavigationServer3D<class_NavigationServer3D>` implementation b
 
 |void| **set_default_server**\ (\ name\: :ref:`String<class_String>`, priority\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NavigationServer3DManager_method_set_default_server>`
 
-Sets the default :ref:`NavigationServer3D<class_NavigationServer3D>` implementation to the one identified by ``name``, if ``priority`` is greater than the priority of the current default implementation.
+Устанавливает реализацию :ref:`NavigationServer3D<class_NavigationServer3D>` по умолчанию на ту, которая указана в ``name``, если ``priority`` выше приоритета текущей реализации по умолчанию.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

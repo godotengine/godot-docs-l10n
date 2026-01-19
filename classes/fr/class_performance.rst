@@ -151,9 +151,9 @@ Nombre de nœuds actuellement instanciés dans l'arbre de scène. Cela inclut é
 
 :ref:`Monitor<enum_Performance_Monitor>` **OBJECT_ORPHAN_NODE_COUNT** = ``10``
 
-Number of orphan nodes, i.e. nodes which are not parented to a node of the scene tree. *Lower is better.*\ 
+Nombre de nœuds orphelins, c'est-à-dire de nœuds qui ne sont pas parentés à un nœud de l'arbre de scène. *Une valeur faible est souhaitable.*\ 
 
-\ **Note:** This is only available in debug mode and will always return ``0`` when used in a project exported in release mode.
+\ **Note :** Ceci est seulement disponible en mode de débogage et renvoie toujours ``0`` lorsqu'il est utilisé dans un projet exporté en mode release.
 
 .. _class_Performance_constant_RENDER_TOTAL_OBJECTS_IN_FRAME:
 

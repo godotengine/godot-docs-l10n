@@ -9,14 +9,14 @@ OpenXRMarkerTracker
 
 **Успадковує:** :ref:`OpenXRSpatialEntityTracker<class_OpenXRSpatialEntityTracker>` **<** :ref:`XRPositionalTracker<class_XRPositionalTracker>` **<** :ref:`XRTracker<class_XRTracker>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Spatial entity tracker for our spatial entity marker tracking extension.
+Трекер просторових сутностей для нашого розширення відстеження маркерів просторових сутностей.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Spatial entity tracker for our OpenXR spatial entity marker tracking extension. These trackers identify entities in our real space detected by a visual marker such as a QRCode or Aruco code, and map their location to our virtual space.
+Трекер просторових сутностей для нашого розширення відстеження маркерів просторових сутностей OpenXR. Ці трекери ідентифікують сутності в нашому реальному просторі, виявлені візуальним маркером, таким як QRCode або Aruco, та відображають їхнє розташування у нашому віртуальному просторі.
 
 .. rst-class:: classref-reftable-group
 
@@ -68,7 +68,7 @@ Spatial entity tracker for our OpenXR spatial entity marker tracking extension. 
 - |void| **set_bounds_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_bounds_size**\ (\ )
 
-The bounds size for this marker.
+Розмір меж для цього маркера.
 
 .. rst-class:: classref-item-separator
 
@@ -85,7 +85,7 @@ The bounds size for this marker.
 - |void| **set_marker_id**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_marker_id**\ (\ )
 
-The marker ID for this marker, this is only returned for Aruco and April Tag markers. Call :ref:`get_marker_data()<class_OpenXRMarkerTracker_method_get_marker_data>` for QRCode markers.
+Ідентифікатор маркера для цього маркера. Він повертається лише для маркерів Aruco та April Tag. Викличте :ref:`get_marker_data()<class_OpenXRMarkerTracker_method_get_marker_data>` для маркерів QRCode.
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +102,7 @@ The marker ID for this marker, this is only returned for Aruco and April Tag mar
 - |void| **set_marker_type**\ (\ value\: :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>`\ )
 - :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **get_marker_type**\ (\ )
 
-The type of marker.
+Тип маркера.
 
 .. rst-class:: classref-section-separator
 
@@ -119,7 +119,7 @@ The type of marker.
 
 :ref:`Variant<class_Variant>` **get_marker_data**\ (\ ) |const| :ref:`🔗<class_OpenXRMarkerTracker_method_get_marker_data>`
 
-Returns the marker data for this marker. This can return a :ref:`String<class_String>` or :ref:`PackedByteArray<class_PackedByteArray>`. Only applicable to QR Code based markers.
+Повертає дані маркера для цього маркера. Може повертати значення типу :ref:`String<class_String>` або :ref:`PackedByteArray<class_PackedByteArray>`. Стосується лише маркерів на основі QR-кодів.
 
 .. rst-class:: classref-item-separator
 
@@ -131,9 +131,9 @@ Returns the marker data for this marker. This can return a :ref:`String<class_St
 
 |void| **set_marker_data**\ (\ marker_data\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_OpenXRMarkerTracker_method_set_marker_data>`
 
-Sets the marker data for this marker.
+Встановлює дані маркера для цього маркера.
 
-\ **Note:** This should only be set by marker discovery logic.
+\ **Примітка:** Це має встановлюватися лише логікою виявлення маркерів.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

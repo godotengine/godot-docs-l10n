@@ -124,7 +124,7 @@ Returns the absolute path to the user's data folder. This folder should be used 
 
 :ref:`String<class_String>` **get_project_settings_dir**\ (\ ) |const| :ref:`🔗<class_EditorPaths_method_get_project_settings_dir>`
 
-Returns the relative path to the editor settings for this project. This is usually ``"res://.godot/editor"``. Projects all have a unique subdirectory inside the settings path where project-specific editor settings are saved.
+Retourne le chemin relatif aux paramètres de l'éditeur pour ce projet. C'est habituellement ``"res://.godot/editor"``. Les projets ont tous un sous-répertoire unique dans le chemin de réglage où les paramètres de l'éditeur de projet sont sauvegardés.
 
 .. rst-class:: classref-item-separator
 

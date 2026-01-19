@@ -381,7 +381,7 @@ Se ``1.0``, non viene effettuato alcuno smorzamento. Se ``0.0``, lo smorzamento 
 - |void| **set_primary_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_limit_angle**\ (\ )
 
-L'angolo limite della rotazione primaria quando :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` è ``true``.
+The limit angle of the primary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``true``, in radians.
 
 .. rst-class:: classref-item-separator
 
@@ -415,7 +415,7 @@ La soglia per iniziare lo smorzamento per :ref:`primary_negative_limit_angle<cla
 - |void| **set_primary_negative_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_negative_limit_angle**\ (\ )
 
-L'angolo limite del lato negativo della rotazione primaria quando :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` è ``false``.
+The limit angle of negative side of the primary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ La soglia per iniziare lo smorzamento per :ref:`primary_positive_limit_angle<cla
 - |void| **set_primary_positive_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_positive_limit_angle**\ (\ )
 
-L'angolo limite del lato positivo della rotazione primaria quando :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` è ``false``.
+The limit angle of positive side of the primary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
 
 .. rst-class:: classref-item-separator
 
@@ -517,7 +517,7 @@ La soglia per iniziare lo smorzamento per :ref:`secondary_limit_angle<class_Look
 - |void| **set_secondary_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_limit_angle**\ (\ )
 
-L'angolo limite della rotazione secondaria quando :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` è ``true``.
+The limit angle of the secondary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``true``, in radians.
 
 .. rst-class:: classref-item-separator
 
@@ -551,7 +551,7 @@ La soglia per iniziare lo smorzamento per :ref:`secondary_negative_limit_angle<c
 - |void| **set_secondary_negative_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_negative_limit_angle**\ (\ )
 
-L'angolo limite del lato negativo della rotazione secondaria quando :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` è ``false``.
+The limit angle of negative side of the secondary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
 
 .. rst-class:: classref-item-separator
 
@@ -585,7 +585,7 @@ La soglia per iniziare lo smorzamento per :ref:`secondary_positive_limit_angle<c
 - |void| **set_secondary_positive_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_positive_limit_angle**\ (\ )
 
-L'angolo limite del lato positivo della rotazione secondaria quando :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` è ``false``.
+The limit angle of positive side of the secondary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
 
 .. rst-class:: classref-item-separator
 

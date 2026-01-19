@@ -618,11 +618,11 @@ EditorExportPlatformMacOS
 
 :ref:`String<class_String>` **application/liquid_glass_icon** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/liquid_glass_icon>`
 
-macOS 26 Liquid Glass icon source file. Use `Icon Composer <https://developer.apple.com/icon-composer/>`__ to create Liquid Glass icons.
+Исходный файл иконки Liquid Glass для macOS 26. Используйте `Icon Composer <https://developer.apple.com/icon-composer/>`__ для создания иконок Liquid Glass.
 
-\ **Note:** Supported when exporting from macOS only, Xcode 26+ required.
+\ **Примечание:** Поддерживается только при экспорте из macOS, требуется Xcode 26+.
 
-\ **Note:** Liquid Glass icons are supported on macOS 26 only, use :ref:`application/icon<class_EditorExportPlatformMacOS_property_application/icon>` to set the icon for older macOS versions.
+\ **Примечание:** Иконки Liquid Glass поддерживаются только в macOS 26, используйте :ref:`application/icon<class_EditorExportPlatformMacOS_property_application/icon>` для установки иконки для более старых версий macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -3237,9 +3237,9 @@ UUID издателя API Apple App Store Connect.
 
 :ref:`bool<class_bool>` **shader_baker/enabled** :ref:`🔗<class_EditorExportPlatformMacOS_property_shader_baker/enabled>`
 
-If ``true``, shaders will be compiled and embedded in the application. This option is only supported when using the Forward+ or Mobile renderers.
+Если ``true``, шейдеры будут скомпилированы и встроены в приложение. Эта опция поддерживается только при использовании рендереров Forward+ или Mobile.
 
-\ **Note:** When exporting as a dedicated server, the shader baker is always disabled since no rendering is performed.
+\ **Примечание:** При экспорте в качестве выделенного сервера запекатель шейдеров всегда отключен, поскольку рендеринг не выполняется.
 
 .. rst-class:: classref-item-separator
 

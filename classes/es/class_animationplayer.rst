@@ -156,9 +156,9 @@ Señales
 
 **animation_changed**\ (\ old_name\: :ref:`StringName<class_StringName>`, new_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationPlayer_signal_animation_changed>`
 
-Emitted when a queued animation plays after the previous animation finished. See also :ref:`queue()<class_AnimationPlayer_method_queue>`.
+Emitida cuando una animación en cola se reproduce después de que la animación anterior haya terminado. Véase también :ref:`queue()<class_AnimationPlayer_method_queue>`.
 
-\ **Note:** The signal is not emitted when the animation is changed via :ref:`play()<class_AnimationPlayer_method_play>` or by an :ref:`AnimationTree<class_AnimationTree>`.
+\ **Nota:** La señal no se emite cuando la animación se cambia a través de :ref:`play()<class_AnimationPlayer_method_play>` o por un :ref:`AnimationTree<class_AnimationTree>`.
 
 .. rst-class:: classref-item-separator
 
@@ -371,9 +371,9 @@ If ``true`` and the engine is running in Movie Maker mode (see :ref:`MovieWriter
 - |void| **set_auto_capture**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_auto_capture**\ (\ )
 
-If ``true``, performs :ref:`AnimationMixer.capture()<class_AnimationMixer_method_capture>` before playback automatically. This means just :ref:`play_with_capture()<class_AnimationPlayer_method_play_with_capture>` is executed with default arguments instead of :ref:`play()<class_AnimationPlayer_method_play>`.
+Si es ``true``, realiza :ref:`AnimationMixer.capture()<class_AnimationMixer_method_capture>` antes de la reproducción automáticamente. Esto significa que se ejecuta simplemente :ref:`play_with_capture()<class_AnimationPlayer_method_play_with_capture>` con argumentos por defecto en lugar de :ref:`play()<class_AnimationPlayer_method_play>`.
 
-\ **Note:** Capture interpolation is only performed if the animation contains a capture track. See also :ref:`Animation.UPDATE_CAPTURE<class_Animation_constant_UPDATE_CAPTURE>`.
+\ **Nota:** La interpolación de captura solo se realiza si la animación contiene una pista de captura. Véase también :ref:`Animation.UPDATE_CAPTURE<class_Animation_constant_UPDATE_CAPTURE>`.
 
 .. rst-class:: classref-item-separator
 
@@ -409,7 +409,7 @@ Si :ref:`playback_auto_capture_duration<class_AnimationPlayer_property_playback_
 - |void| **set_auto_capture_ease_type**\ (\ value\: :ref:`EaseType<enum_Tween_EaseType>`\ )
 - :ref:`EaseType<enum_Tween_EaseType>` **get_auto_capture_ease_type**\ (\ )
 
-The ease type of the capture interpolation. See also :ref:`EaseType<enum_Tween_EaseType>`.
+El tipo de facilidad de la interpolación de captura. Véase también :ref:`EaseType<enum_Tween_EaseType>`.
 
 .. rst-class:: classref-item-separator
 

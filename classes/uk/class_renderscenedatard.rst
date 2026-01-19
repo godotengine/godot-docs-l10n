@@ -14,9 +14,9 @@ RenderSceneDataRD
 Опис
 --------
 
-Об'єкт зберігає дані сцени, пов'язані з наданням єдиного кадру перегляду.
+Об'єкт містить дані сцени, пов'язані з рендерингом одного кадру області перегляду. Див. також :ref:`RenderSceneData<class_RenderSceneData>`, :ref:`RenderData<class_RenderData>` та :ref:`RenderDataRD<class_RenderDataRD>`.
 
-\ **Примітка:** Це внутрішній об'єкт рендерингового сервера, не миттєво ознайомтеся з скриптом.
+\ **Примітка:** Це внутрішній об'єкт сервера рендерингу. Не створюйте екземпляр цього класу зі скрипта.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -420,13 +420,13 @@ Y компонент вектора. Может быть доступен чер
 
 :ref:`float<class_float>` **angle**\ (\ ) |const| :ref:`🔗<class_Vector2_method_angle>`
 
-Returns this vector's angle with respect to the positive X axis, or ``(1, 0)`` vector, in radians.
+Возвращает угол этого вектора относительно положительной оси X, или вектора ``(1, 0)``, в радианах.
 
-For example, ``Vector2.RIGHT.angle()`` will return zero, ``Vector2.DOWN.angle()`` will return ``PI / 2`` (a quarter turn, or 90 degrees), and ``Vector2(1, -1).angle()`` will return ``-PI / 4`` (a negative eighth turn, or -45 degrees).
+Например, ``Vector2.RIGHT.angle()`` вернет ноль, ``Vector2.DOWN.angle()`` вернет ``PI / 2`` (четверть оборота, или 90 градусов), а ``Vector2(1, -1).angle()`` вернет ``-PI / 4`` (минус восьмая оборота, или -45 градусов).
 
-This is equivalent to calling :ref:`@GlobalScope.atan2()<class_@GlobalScope_method_atan2>` with :ref:`y<class_Vector2_property_y>` and :ref:`x<class_Vector2_property_x>`.
+Это эквивалентно вызову :ref:`@GlobalScope.atan2()<class_@GlobalScope_method_atan2>` с :ref:`y<class_Vector2_property_y>` и :ref:`x<class_Vector2_property_x>`.
 
-\ `Illustration of the returned angle. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle.png>`__
+\ `Иллюстрация возвращаемого угла. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle.png>`__
 
 .. rst-class:: classref-item-separator
 
@@ -438,9 +438,9 @@ This is equivalent to calling :ref:`@GlobalScope.atan2()<class_@GlobalScope_meth
 
 :ref:`float<class_float>` **angle_to**\ (\ to\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_angle_to>`
 
-Returns the signed angle to the given vector, in radians. The result ranges from ``-PI`` to ``PI`` (inclusive).
+Возвращает знаковый угол к заданному вектору в радианах. Результат находится в диапазоне от ``-PI`` до ``PI`` (включительно).
 
-\ `Illustration of the returned angle. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle_to.png>`__
+\ `Иллюстрация возвращаемого угла. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle_to.png>`__
 
 .. rst-class:: classref-item-separator
 
@@ -452,11 +452,11 @@ Returns the signed angle to the given vector, in radians. The result ranges from
 
 :ref:`float<class_float>` **angle_to_point**\ (\ to\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_angle_to_point>`
 
-Returns the signed angle between the X axis and the line from this vector to point ``to``, in radians. The result ranges from ``-PI`` to ``PI`` (inclusive).
+Возвращает знаковый угол между осью X и линией, проведенной от этого вектора к точке ``to``, в радианах. Результат варьируется от ``-PI`` до ``PI`` (включительно).
 
-\ ``a.angle_to_point(b)`` is equivalent to ``(b - a).angle()``. See also :ref:`angle()<class_Vector2_method_angle>`.
+\ ``a.angle_to_point(b)`` эквивалентно ``(b - a).angle()``. См. также :ref:`angle()<class_Vector2_method_angle>`.
 
-\ `Illustration of the returned angle. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle_to_point.png>`__
+\ `Иллюстрация возвращаемого угла. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle_to_point.png>`__
 
 .. rst-class:: classref-item-separator
 
@@ -468,7 +468,7 @@ Returns the signed angle between the X axis and the line from this vector to poi
 
 :ref:`float<class_float>` **aspect**\ (\ ) |const| :ref:`🔗<class_Vector2_method_aspect>`
 
-Returns this vector's aspect ratio, which is :ref:`x<class_Vector2_property_x>` divided by :ref:`y<class_Vector2_property_y>`.
+Возвращает соотношение сторон этого вектора, равное :ref:`x<class_Vector2_property_x>` делению на :ref:`y<class_Vector2_property_y>`.
 
 .. rst-class:: classref-item-separator
 
@@ -596,9 +596,9 @@ Returns this vector's aspect ratio, which is :ref:`x<class_Vector2_property_x>` 
 
 :ref:`Vector2<class_Vector2>` **direction_to**\ (\ to\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_direction_to>`
 
-Returns the normalized vector pointing from this vector to ``to``.
+Возвращает нормализованный вектор, указывающий из этого вектора на ``to``.
 
-\ ``a.direction_to(b)`` is equivalent to ``(b - a).normalized()``. See also :ref:`normalized()<class_Vector2_method_normalized>`.
+\ ``a.direction_to(b)`` эквивалентно ``(b - a).normalized()``. См. также :ref:`normalized()<class_Vector2_method_normalized>`.
 
 .. rst-class:: classref-item-separator
 

@@ -297,9 +297,9 @@ Constructs a **PackedVector2Array** як копія даної **PackedVector2Ar
 
 :ref:`Vector2<class_Vector2>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedVector2Array_method_get>`
 
-Returns the :ref:`Vector2<class_Vector2>` at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns ``Vector2(0, 0)``.
+Повертає :ref:`Vector2<class_Vector2>` за заданим ``index`` у масиві. Якщо ``index`` виходить за межі або є від'ємним, цей метод завершується невдачею та повертає ``Vector2(0, 0)``.
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+Цей метод схожий (але не ідентичний) на оператор ``[]``. Найголовніше, що коли цей метод завершується невдачею, він не призупиняє виконання проекту, якщо його запускати з редактора.
 
 .. rst-class:: classref-item-separator
 

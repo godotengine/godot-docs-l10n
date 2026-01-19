@@ -608,9 +608,9 @@ MeshDataTool предоставляет доступ к отдельным ве�
 
 |void| **set_vertex_tangent**\ (\ idx\: :ref:`int<class_int>`, tangent\: :ref:`Plane<class_Plane>`\ ) :ref:`🔗<class_MeshDataTool_method_set_vertex_tangent>`
 
-Sets the tangent of the given vertex.
+Задает касательную к заданной вершине.
 
-\ **Note:** Even though ``tangent`` is a :ref:`Plane<class_Plane>`, it does not directly represent the tangent plane. Its :ref:`Plane.x<class_Plane_property_x>`, :ref:`Plane.y<class_Plane_property_y>`, and :ref:`Plane.z<class_Plane_property_z>` represent the tangent vector and :ref:`Plane.d<class_Plane_property_d>` should be either ``-1`` or ``1``. See also :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>`.
+\ **Примечание:** Хотя ``tangent`` является :ref:`Plane<class_Plane>`, он не представляет собой непосредственно касательную плоскость. Его :ref:`Plane.x<class_Plane_property_x>`, :ref:`Plane.y<class_Plane_property_y>` и :ref:`Plane.z<class_Plane_property_z>` представляют собой касательный вектор, а :ref:`Plane.d<class_Plane_property_d>` должен быть либо ``-1``, либо ``1``. См. также :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>`.
 
 .. rst-class:: classref-item-separator
 

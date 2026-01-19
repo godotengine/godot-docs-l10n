@@ -201,6 +201,8 @@ Propiedades del Tema
    +-----------------------------------+--------------------------------------------------------------------------------------------+--------------------------------+
    | :ref:`Color<class_Color>`         | :ref:`guide_color<class_ItemList_theme_color_guide_color>`                                 | ``Color(0.7, 0.7, 0.7, 0.25)`` |
    +-----------------------------------+--------------------------------------------------------------------------------------------+--------------------------------+
+   | :ref:`Color<class_Color>`         | :ref:`scroll_hint_color<class_ItemList_theme_color_scroll_hint_color>`                     | ``Color(0, 0, 0, 1)``          |
+   +-----------------------------------+--------------------------------------------------------------------------------------------+--------------------------------+
    | :ref:`int<class_int>`             | :ref:`h_separation<class_ItemList_theme_constant_h_separation>`                            | ``4``                          |
    +-----------------------------------+--------------------------------------------------------------------------------------------+--------------------------------+
    | :ref:`int<class_int>`             | :ref:`icon_margin<class_ItemList_theme_constant_icon_margin>`                              | ``4``                          |
@@ -354,7 +356,7 @@ enum **SelectMode**: :ref:`🔗<enum_ItemList_SelectMode>`
 
 :ref:`SelectMode<enum_ItemList_SelectMode>` **SELECT_SINGLE** = ``0``
 
-Sólo permite seleccionar un único elemento.
+Solo permite seleccionar un único elemento.
 
 .. _class_ItemList_constant_SELECT_MULTI:
 
@@ -1416,6 +1418,18 @@ El tinte del contorno del texto del elemento.
 :ref:`Color<class_Color>` **guide_color** = ``Color(0.7, 0.7, 0.7, 0.25)`` :ref:`🔗<class_ItemList_theme_color_guide_color>`
 
 :ref:`Color<class_Color>` de la pauta. La pauta es una línea trazada entre cada fila de elementos.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ItemList_theme_color_scroll_hint_color:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Color<class_Color>` **scroll_hint_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ItemList_theme_color_scroll_hint_color>`
+
+:ref:`Color<class_Color>` used to modulate the :ref:`scroll_hint<class_ItemList_theme_icon_scroll_hint>` texture.
 
 .. rst-class:: classref-item-separator
 

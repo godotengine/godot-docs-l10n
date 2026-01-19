@@ -17,9 +17,9 @@ Nodo que instancia un :ref:`MultiMesh<class_MultiMesh>`.
 Descripción
 ----------------------
 
-**MultiMeshInstance3D** is a specialized node to instance :ref:`GeometryInstance3D<class_GeometryInstance3D>`\ s based on a :ref:`MultiMesh<class_MultiMesh>` resource.
+**MultiMeshInstance3D** es un nodo especializado para instanciar :ref:`GeometryInstance3D<class_GeometryInstance3D>`\ s basadas en un recurso :ref:`MultiMesh<class_MultiMesh>`.
 
-This is useful to optimize the rendering of a high number of instances of a given mesh (for example trees in a forest or grass strands).
+Esto es útil para optimizar la representación de un gran número de instancias de una malla determinada (por ejemplo, árboles en un bosque o briznas de hierba).
 
 .. rst-class:: classref-introduction-group
 
@@ -64,7 +64,7 @@ Descripciones de Propiedades
 - |void| **set_multimesh**\ (\ value\: :ref:`MultiMesh<class_MultiMesh>`\ )
 - :ref:`MultiMesh<class_MultiMesh>` **get_multimesh**\ (\ )
 
-The :ref:`MultiMesh<class_MultiMesh>` resource that will be used and shared among all instances of the **MultiMeshInstance3D**.
+El recurso :ref:`MultiMesh<class_MultiMesh>` que se utilizará y compartirá entre todas las instancias de **MultiMeshInstance3D**.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

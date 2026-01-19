@@ -267,7 +267,7 @@ Returns the root bone name.
 
 :ref:`NodePath<class_NodePath>` **get_target_node**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_target_node>`
 
-Returns the target node that the end bone is trying to reach.
+Renvoie le nœud cible que l'os final tente d'atteindre.
 
 .. rst-class:: classref-item-separator
 
@@ -279,7 +279,7 @@ Returns the target node that the end bone is trying to reach.
 
 :ref:`bool<class_bool>` **is_end_bone_extended**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_is_end_bone_extended>`
 
-Returns ``true`` if the end bone is extended to have a tail.
+Renvoie ``true`` si l'os final est prolongé pour avoir une queue.
 
 .. rst-class:: classref-item-separator
 
@@ -461,7 +461,7 @@ Sets the root bone name.
 
 |void| **set_target_node**\ (\ index\: :ref:`int<class_int>`, target_node\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_target_node>`
 
-Sets the target node that the end bone is trying to reach.
+Définit le nœud cible que l'os final tente d'atteindre.
 
 .. rst-class:: classref-item-separator
 

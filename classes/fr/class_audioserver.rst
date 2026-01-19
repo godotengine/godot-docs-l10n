@@ -559,7 +559,7 @@ Renvoie le nom du pilote audio actuel. La valeur par défaut dépend généralem
 
 **Expérimental :** Cette méthode peut être changée ou retirée dans de futures versions.
 
-Returns the absolute size of the microphone input buffer. This is set to a multiple of the audio latency and can be used to estimate the minimum rate at which the frames need to be fetched.
+Renvoie la taille absolue du tampon d'entrée du microphone. Il s'agit d'un multiple de la latence audio et peut être utilisé pour estimer le taux minimum auquel les trames doivent être récupérées.
 
 .. rst-class:: classref-item-separator
 
@@ -587,11 +587,11 @@ Renvoie les noms de tous les périphériques d'entrée audio détectés sur le s
 
 **Expérimental :** Cette méthode peut être changée ou retirée dans de futures versions.
 
-Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` containing exactly ``frames`` audio samples from the internal microphone buffer if available, otherwise returns an empty :ref:`PackedVector2Array<class_PackedVector2Array>`.
+Renvoie un :ref:`PackedVector2Array<class_PackedVector2Array>` contenant exactement ``frames`` d'échantillons audio du buffer du microphone interne si disponible, sinon renvoie un :ref:`PackedVector2Array<class_PackedVector2Array>` vide.
 
-The buffer is filled at the rate of :ref:`get_input_mix_rate()<class_AudioServer_method_get_input_mix_rate>` frames per second when :ref:`set_input_device_active()<class_AudioServer_method_set_input_device_active>` has successfully been set to ``true``.
+Le buffer est rempli au taux de :ref:`get_input_mix_rate()<class_AudioServer_method_get_input_mix_rate>` images par seconde lorsque :ref:`set_input_device_active()<class_AudioServer_method_set_input_device_active>` a été définie avec succès à ``true``.
 
-The samples are signed floating-point PCM values between ``-1`` and ``1``.
+Les échantillons sont des valeurs PCM flottantes entre ``-1`` et ``1``.
 
 .. rst-class:: classref-item-separator
 
@@ -605,7 +605,7 @@ The samples are signed floating-point PCM values between ``-1`` and ``1``.
 
 **Expérimental :** Cette méthode peut être changée ou retirée dans de futures versions.
 
-Returns the number of frames available to read using :ref:`get_input_frames()<class_AudioServer_method_get_input_frames>`.
+Renvoie le nombre de trames disponibles à la lecture en utilisant :ref:`get_input_frames()<class_AudioServer_method_get_input_frames>`.
 
 .. rst-class:: classref-item-separator
 
@@ -959,9 +959,9 @@ S'il est défini à ``true``, toutes les instances de :ref:`AudioStreamPlayback<
 
 **Expérimental :** Cette méthode peut être changée ou retirée dans de futures versions.
 
-If ``active`` is ``true``, starts the microphone input stream specified by :ref:`input_device<class_AudioServer_property_input_device>` or returns an error if it failed.
+Si ``active`` vaut ``true``, démarre le flux d'entrée du microphone spécifié par :ref:`input_device<class_AudioServer_property_input_device>` ou renvoie une erreur s'il a échoué.
 
-If ``active`` is ``false``, stops the input stream if it is running.
+Si ``active`` vaut ``false``, arrête le flux d'entrée s'il est en cours d'exécution.
 
 .. rst-class:: classref-item-separator
 

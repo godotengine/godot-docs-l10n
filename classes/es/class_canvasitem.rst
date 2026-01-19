@@ -313,9 +313,9 @@ The texture filter blends between the nearest 4 pixels. This makes the texture l
 
 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **TEXTURE_FILTER_NEAREST_WITH_MIPMAPS** = ``3``
 
-The texture filter reads from the nearest pixel and blends between the nearest 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``). This makes the texture look pixelated from up close, and smooth from a distance.
+El filtro de textura lee del píxel más cercano y mezcla entre los 2 mipmaps más cercanos (o usa el mipmap más cercano si :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` es ``true``). Esto hace que la textura se vea pixelada de cerca y suave de lejos.
 
-Use this for non-pixel art textures that may be viewed at a low scale (e.g. due to :ref:`Camera2D<class_Camera2D>` zoom or sprite scaling), as mipmaps are important to smooth out pixels that are smaller than on-screen pixels.
+Úsalo para texturas que no son de arte de píxeles y que pueden verse a baja escala (por ejemplo, debido al zoom de :ref:`Camera2D<class_Camera2D>` o al escalado de sprites), ya que los mipmaps son importantes para suavizar los píxeles que son más pequeños que los píxeles en pantalla.
 
 .. _class_CanvasItem_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS:
 
@@ -323,9 +323,9 @@ Use this for non-pixel art textures that may be viewed at a low scale (e.g. due 
 
 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **TEXTURE_FILTER_LINEAR_WITH_MIPMAPS** = ``4``
 
-The texture filter blends between the nearest 4 pixels and between the nearest 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``). This makes the texture look smooth from up close, and smooth from a distance.
+El filtro de textura mezcla entre los 4 píxeles más cercanos y entre los 2 mipmaps más cercanos (o usa el mipmap más cercano si :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` es ``true``). Esto hace que la textura se vea suave de cerca y suave de lejos.
 
-Use this for non-pixel art textures that may be viewed at a low scale (e.g. due to :ref:`Camera2D<class_Camera2D>` zoom or sprite scaling), as mipmaps are important to smooth out pixels that are smaller than on-screen pixels.
+Úsalo para texturas que no son de arte de píxeles y que pueden verse a baja escala (por ejemplo, debido al zoom de :ref:`Camera2D<class_Camera2D>` o al escalado de sprites), ya que los mipmaps son importantes para suavizar los píxeles que son más pequeños que los píxeles en pantalla.
 
 .. _class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC:
 
@@ -333,9 +333,9 @@ Use this for non-pixel art textures that may be viewed at a low scale (e.g. due 
 
 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC** = ``5``
 
-The texture filter reads from the nearest pixel and blends between 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``) based on the angle between the surface and the camera view. This makes the texture look pixelated from up close, and smooth from a distance. Anisotropic filtering improves texture quality on surfaces that are almost in line with the camera, but is slightly slower. The anisotropic filtering level can be changed by adjusting :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
+El filtro de textura lee del píxel más cercano y mezcla entre 2 mipmaps (o usa el mipmap más cercano si :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` es ``true``) basándose en el ángulo entre la superficie y la vista de la cámara. Esto hace que la textura se vea pixelada de cerca y suave de lejos. El filtrado anisotrópico mejora la calidad de la textura en superficies que están casi en línea con la cámara, pero es ligeramente más lento. El nivel de filtrado anisotrópico se puede cambiar ajustando :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
 
-\ **Note:** This texture filter is rarely useful in 2D projects. :ref:`TEXTURE_FILTER_NEAREST_WITH_MIPMAPS<class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS>` is usually more appropriate in this case.
+\ **Nota:** Este filtro de textura rara vez es útil en proyectos 2D. :ref:`TEXTURE_FILTER_NEAREST_WITH_MIPMAPS<class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS>` suele ser más apropiado en este caso.
 
 .. _class_CanvasItem_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC:
 
@@ -343,9 +343,9 @@ The texture filter reads from the nearest pixel and blends between 2 mipmaps (or
 
 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC** = ``6``
 
-The texture filter blends between the nearest 4 pixels and blends between 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``) based on the angle between the surface and the camera view. This makes the texture look smooth from up close, and smooth from a distance. Anisotropic filtering improves texture quality on surfaces that are almost in line with the camera, but is slightly slower. The anisotropic filtering level can be changed by adjusting :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
+El filtro de textura mezcla entre los 4 píxeles más cercanos y mezcla entre 2 mipmaps (o usa el mipmap más cercano si :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` es ``true``) basándose en el ángulo entre la superficie y la vista de la cámara. Esto hace que la textura se vea suave de cerca y suave de lejos. El filtrado anisotrópico mejora la calidad de la textura en superficies que están casi en línea con la cámara, pero es ligeramente más lento. El nivel de filtrado anisotrópico se puede cambiar ajustando :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
 
-\ **Note:** This texture filter is rarely useful in 2D projects. :ref:`TEXTURE_FILTER_LINEAR_WITH_MIPMAPS<class_CanvasItem_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS>` is usually more appropriate in this case.
+\ **Nota:** Este filtro de textura rara vez es útil en proyectos 2D. :ref:`TEXTURE_FILTER_LINEAR_WITH_MIPMAPS<class_CanvasItem_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS>` suele ser más apropiado en este caso.
 
 .. _class_CanvasItem_constant_TEXTURE_FILTER_MAX:
 
@@ -379,7 +379,7 @@ El **CanvasItem** heredará el filtro de su padre.
 
 :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>` **TEXTURE_REPEAT_DISABLED** = ``1``
 
-The texture does not repeat. Sampling the texture outside its extents will result in "stretching" of the edge pixels. You can avoid this by ensuring a 1-pixel fully transparent border on each side of the texture.
+La textura no se repite. Muestrear la textura fuera de sus límites resultará en el "estiramiento" de los píxeles de los bordes. Puedes evitar esto asegurándote de que haya un borde de 1 píxel completamente transparente a cada lado de la textura.
 
 .. _class_CanvasItem_constant_TEXTURE_REPEAT_ENABLED:
 
@@ -395,7 +395,7 @@ La textura se repite al exceder el tamaño de la textura.
 
 :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>` **TEXTURE_REPEAT_MIRROR** = ``3``
 
-The texture repeats when the exceeding the texture's size in a "2×2 tiled mode". Repeated textures at even positions are mirrored.
+La textura se repite al exceder el tamaño de la textura en un "modo de mosaico 2×2". Las texturas repetidas en posiciones pares se reflejan.
 
 .. _class_CanvasItem_constant_TEXTURE_REPEAT_MAX:
 
@@ -421,7 +421,7 @@ enum **ClipChildrenMode**: :ref:`🔗<enum_CanvasItem_ClipChildrenMode>`
 
 :ref:`ClipChildrenMode<enum_CanvasItem_ClipChildrenMode>` **CLIP_CHILDREN_DISABLED** = ``0``
 
-Children are drawn over this node and are not clipped.
+Los hijos se dibujan sobre este nodo y no se recortan.
 
 .. _class_CanvasItem_constant_CLIP_CHILDREN_ONLY:
 
@@ -429,7 +429,7 @@ Children are drawn over this node and are not clipped.
 
 :ref:`ClipChildrenMode<enum_CanvasItem_ClipChildrenMode>` **CLIP_CHILDREN_ONLY** = ``1``
 
-This node is used as a mask and is **not** drawn. The mask is based on this node's alpha channel: Opaque pixels are kept, transparent pixels are discarded, and semi-transparent pixels are blended in according to their opacity. Children are clipped to this node's drawn area.
+Este nodo se usa como máscara y **no** se dibuja. La máscara se basa en el canal alfa de este nodo: los píxeles opacos se mantienen, los píxeles transparentes se descartan y los píxeles semitransparentes se mezclan según su opacidad. Los hijos se recortan al área dibujada de este nodo.
 
 .. _class_CanvasItem_constant_CLIP_CHILDREN_AND_DRAW:
 
@@ -437,7 +437,7 @@ This node is used as a mask and is **not** drawn. The mask is based on this node
 
 :ref:`ClipChildrenMode<enum_CanvasItem_ClipChildrenMode>` **CLIP_CHILDREN_AND_DRAW** = ``2``
 
-This node is used as a mask and is also drawn. The mask is based on this node's alpha channel: Opaque pixels are kept, transparent pixels are discarded, and semi-transparent pixels are blended in according to their opacity. Children are clipped to the parent's drawn area.
+Este nodo se usa como máscara y también se dibuja. La máscara se basa en el canal alfa de este nodo: los píxeles opacos se mantienen, los píxeles transparentes se descartan y los píxeles semitransparentes se mezclan según su opacidad. Los hijos se recortan al área dibujada del padre.
 
 .. _class_CanvasItem_constant_CLIP_CHILDREN_MAX:
 
@@ -518,7 +518,7 @@ This notification is sent in reversed order.
 
 **NOTIFICATION_WORLD_2D_CHANGED** = ``36`` :ref:`🔗<class_CanvasItem_constant_NOTIFICATION_WORLD_2D_CHANGED>`
 
-Notification received when this **CanvasItem** is registered to a new :ref:`World2D<class_World2D>` (see :ref:`get_world_2d()<class_CanvasItem_method_get_world_2d>`).
+Notificación recibida cuando este **CanvasItem** se registra en un nuevo :ref:`World2D<class_World2D>` (véase :ref:`get_world_2d()<class_CanvasItem_method_get_world_2d>`).
 
 .. rst-class:: classref-section-separator
 
@@ -903,6 +903,8 @@ Draws a colored polygon of any number of points, convex or concave. The points i
 
 \ **Note:** If you frequently redraw the same polygon with a large number of vertices, consider pre-calculating the triangulation with :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` and using :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`, :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>`, or :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
 
+\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -992,6 +994,8 @@ Texture is drawn using the following blend operation, blend mode of the :ref:`Ca
     dst.b = texture.b * modulate.b * modulate.a + dst.b * (1.0 - texture.b * modulate.a);
     dst.a = modulate.a + dst.a * (1.0 - modulate.a);
 
+\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -1018,6 +1022,8 @@ If ``width`` is negative, then a two-point primitive will be drawn instead of a 
 
 Draws a :ref:`Mesh<class_Mesh>` in 2D, using the provided texture. See :ref:`MeshInstance2D<class_MeshInstance2D>` for related documentation. The ``transform`` is defined in local space.
 
+\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -1033,6 +1039,8 @@ Draws a textured rectangle region of the multichannel signed distance field text
 If ``outline`` is positive, each alpha channel value of pixel in region is set to maximum value of true distance in the ``outline`` radius.
 
 Value of the ``pixel_range`` should the same that was used during distance field texture generation.
+
+\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
 
 .. rst-class:: classref-item-separator
 
@@ -1100,7 +1108,9 @@ Breaks ``text`` to the lines and draws text outline using the specified ``font``
 
 |void| **draw_multimesh**\ (\ multimesh\: :ref:`MultiMesh<class_MultiMesh>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_CanvasItem_method_draw_multimesh>`
 
-Dibuja una :ref:`MultiMesh<class_MultiMesh>` en 2D con la textura proporcionada. Ver :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>` para la documentación relacionada.
+Draws a :ref:`MultiMesh<class_MultiMesh>` in 2D with the provided texture. See :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>` for related documentation.
+
+\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
 
 .. rst-class:: classref-item-separator
 
@@ -1115,6 +1125,8 @@ Dibuja una :ref:`MultiMesh<class_MultiMesh>` en 2D con la textura proporcionada.
 Draws a solid polygon of any number of points, convex or concave. Unlike :ref:`draw_colored_polygon()<class_CanvasItem_method_draw_colored_polygon>`, each point's color can be changed individually. The ``points`` array is defined in local space. See also :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` and :ref:`draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>`. If you need more flexibility (such as being able to use bones), use :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>` instead.
 
 \ **Note:** If you frequently redraw the same polygon with a large number of vertices, consider pre-calculating the triangulation with :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` and using :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`, :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>`, or :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
+
+\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
 
 .. rst-class:: classref-item-separator
 
@@ -1155,6 +1167,8 @@ If ``width`` is negative, it will be ignored and the polyline will be drawn usin
 |void| **draw_primitive**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`, uvs\: :ref:`PackedVector2Array<class_PackedVector2Array>`, texture\: :ref:`Texture2D<class_Texture2D>` = null\ ) :ref:`🔗<class_CanvasItem_method_draw_primitive>`
 
 Draws a custom primitive. 1 point for a point, 2 points for a line, 3 points for a triangle, and 4 points for a quad. If 0 points or more than 4 points are specified, nothing will be drawn and an error message will be printed. The ``points`` array is defined in local space. See also :ref:`draw_line()<class_CanvasItem_method_draw_line>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`, :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`, and :ref:`draw_rect()<class_CanvasItem_method_draw_rect>`.
+
+\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
 
 .. rst-class:: classref-item-separator
 
@@ -1221,21 +1235,11 @@ Draws ``text`` using the specified ``font`` at the ``pos`` in local space (botto
 
  .. code-tab:: gdscript
 
-    # If using this method in a script that redraws constantly, move the
-    # `default_font` declaration to a member variable assigned in `_ready()`
-    # so the Control is only created once.
-    var default_font = ThemeDB.fallback_font
-    var default_font_size = ThemeDB.fallback_font_size
-    draw_string(default_font, Vector2(64, 64), "Hello world", HORIZONTAL_ALIGNMENT_LEFT, -1, default_font_size)
+    draw_string(ThemeDB.fallback_font, Vector2(64, 64), "Hello world", HORIZONTAL_ALIGNMENT_LEFT, -1, ThemeDB.fallback_font_size)
 
  .. code-tab:: csharp
 
-    // If using this method in a script that redraws constantly, move the
-    // `default_font` declaration to a member variable assigned in `_Ready()`
-    // so the Control is only created once.
-    Font defaultFont = ThemeDB.FallbackFont;
-    int defaultFontSize = ThemeDB.FallbackFontSize;
-    DrawString(defaultFont, new Vector2(64, 64), "Hello world", HORIZONTAL_ALIGNMENT_LEFT, -1, defaultFontSize);
+    DrawString(ThemeDB.FallbackFont, new Vector2(64, 64), "Hello world", HorizontalAlignment.Left, -1, ThemeDB.FallbackFontSize);
 
 
 
@@ -1265,6 +1269,8 @@ Draws ``text`` outline using the specified ``font`` at the ``pos`` in local spac
 
 Draws a styled rectangle. The ``rect`` is defined in local space.
 
+\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -1276,6 +1282,8 @@ Draws a styled rectangle. The ``rect`` is defined in local space.
 |void| **draw_texture**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, position\: :ref:`Vector2<class_Vector2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) :ref:`🔗<class_CanvasItem_method_draw_texture>`
 
 Draws a texture at a given position. The ``position`` is defined in local space.
+
+\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
 
 .. rst-class:: classref-item-separator
 
@@ -1289,6 +1297,8 @@ Draws a texture at a given position. The ``position`` is defined in local space.
 
 Draws a textured rectangle at a given position, optionally modulated by a color. The ``rect`` is defined in local space. If ``transpose`` is ``true``, the texture will have its X and Y coordinates swapped. See also :ref:`draw_rect()<class_CanvasItem_method_draw_rect>` and :ref:`draw_texture_rect_region()<class_CanvasItem_method_draw_texture_rect_region>`.
 
+\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -1300,6 +1310,8 @@ Draws a textured rectangle at a given position, optionally modulated by a color.
 |void| **draw_texture_rect_region**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, src_rect\: :ref:`Rect2<class_Rect2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), transpose\: :ref:`bool<class_bool>` = false, clip_uv\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_CanvasItem_method_draw_texture_rect_region>`
 
 Draws a textured rectangle from a texture's region (specified by ``src_rect``) at a given position in local space, optionally modulated by a color. If ``transpose`` is ``true``, the texture will have its X and Y coordinates swapped. See also :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`.
+
+\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
 
 .. rst-class:: classref-item-separator
 

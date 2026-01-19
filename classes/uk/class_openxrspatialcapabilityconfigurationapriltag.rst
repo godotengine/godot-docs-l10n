@@ -9,14 +9,14 @@ OpenXRSpatialCapabilityConfigurationAprilTag
 
 **Успадковує:** :ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Configuration header for April tag markers.
+Заголовок конфігурації для маркерів тегів за квітень.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Configuration header for April tag markers. Pass this to :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` to create a spatial context that can detect April tags.
+Заголовок конфігурації для маркерів квітневих тегів. Передайте його до :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>`, щоб створити просторовий контекст, який може виявляти квітневі теги.
 
 .. rst-class:: classref-reftable-group
 
@@ -63,7 +63,7 @@ enum **AprilTagDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationApril
 
 :ref:`AprilTagDict<enum_OpenXRSpatialCapabilityConfigurationAprilTag_AprilTagDict>` **APRIL_TAG_DICT_16H5** = ``1``
 
-4 by 4 bits, minimum Hamming distance between any two codes = 5, 30 codes.
+4 на 4 біти, мінімальна відстань Хеммінга між будь-якими двома кодами = 5, 30 кодів.
 
 .. _class_OpenXRSpatialCapabilityConfigurationAprilTag_constant_APRIL_TAG_DICT_25H9:
 
@@ -71,7 +71,7 @@ enum **AprilTagDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationApril
 
 :ref:`AprilTagDict<enum_OpenXRSpatialCapabilityConfigurationAprilTag_AprilTagDict>` **APRIL_TAG_DICT_25H9** = ``2``
 
-5 by 5 bits, minimum Hamming distance between any two codes = 9, 35 codes.
+5 на 5 бітів, мінімальна відстань Хеммінга між будь-якими двома кодами = 9, 35 кодів.
 
 .. _class_OpenXRSpatialCapabilityConfigurationAprilTag_constant_APRIL_TAG_DICT_36H10:
 
@@ -87,7 +87,7 @@ enum **AprilTagDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationApril
 
 :ref:`AprilTagDict<enum_OpenXRSpatialCapabilityConfigurationAprilTag_AprilTagDict>` **APRIL_TAG_DICT_36H11** = ``4``
 
-6 by 6 bits, minimum Hamming distance between any two codes = 11, 587 codes.
+6 на 6 бітів, мінімальна відстань Хеммінга між будь-якими двома кодами = 11 587 кодів.
 
 .. rst-class:: classref-section-separator
 
@@ -109,9 +109,9 @@ enum **AprilTagDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationApril
 - |void| **set_april_dict**\ (\ value\: :ref:`AprilTagDict<enum_OpenXRSpatialCapabilityConfigurationAprilTag_AprilTagDict>`\ )
 - :ref:`AprilTagDict<enum_OpenXRSpatialCapabilityConfigurationAprilTag_AprilTagDict>` **get_april_dict**\ (\ )
 
-Dictionary to use to decode April tags.
+Словник для декодування тегів квітня.
 
-\ **Note:** Must be set before using this configuration to create a spatial context.
+\ **Примітка:** Потрібно встановити перед використанням цієї конфігурації для створення просторового контексту.
 
 .. rst-class:: classref-section-separator
 
@@ -128,9 +128,9 @@ Dictionary to use to decode April tags.
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_enabled_components**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationAprilTag_method_get_enabled_components>`
 
-Returns the components enabled by this configuration.
+Повертає компоненти, увімкнені цією конфігурацією.
 
-\ **Note:** Only valid after this configuration was used to create a spatial context.
+\ **Примітка:** Дійсно лише після того, як ця конфігурація була використана для створення просторового контексту.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

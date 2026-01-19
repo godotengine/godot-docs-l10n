@@ -16,9 +16,9 @@ Popup
 描述
 ----
 
-**Popup** is a base class for contextual windows and panels with fixed position. It's a modal by default (see :ref:`Window.popup_window<class_Window_property_popup_window>`) and provides methods for implementing custom popup behavior.
+**Popup** 是上下文窗口以及固定位置面板的基类。默认情况下它是模态的（见 :ref:`Window.popup_window<class_Window_property_popup_window>`\ ），且提供用于自定义弹出行为的方法。
 
-\ **Note:** **Popup** is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **注意：**\ **Popup** 默认情况下是隐藏的。若要显示，调用节点上来自 :ref:`Window<class_Window>` 的 ``popup_*`` 方法中的其中一个，比如 :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`\ 。
 
 .. rst-class:: classref-reftable-group
 

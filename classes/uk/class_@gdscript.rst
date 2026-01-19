@@ -628,15 +628,19 @@
 
 **@export_multiline**\ (\ hint\: :ref:`String<class_String>` = "", ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_multiline>`
 
-Export a :ref:`String<class_String>`, :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], :ref:`PackedStringArray<class_PackedStringArray>`, :ref:`Dictionary<class_Dictionary>` or :ref:`Array<class_Array>`\ \[:ref:`Dictionary<class_Dictionary>`\ \] property with a large :ref:`TextEdit<class_TextEdit>` widget instead of a :ref:`LineEdit<class_LineEdit>`. This adds support for multiline content and makes it easier to edit large amount of text stored in the property.
+Експортуйте властивість :ref:`String<class_String>`, :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], :ref:`PackedStringArray<class_PackedStringArray>`, :ref:`Dictionary<class_Dictionary>` або :ref:`Array<class_Array>`\ \[:ref:`Dictionary<class_Dictionary>`\ \] з великим віджетом :ref:`TextEdit<class_TextEdit>` замість :ref:`LineEdit<class_LineEdit>`. Це додає підтримку багаторядкового вмісту та спрощує редагування великої кількості тексту, що зберігається у властивості.
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_MULTILINE_TEXT<class_@GlobalScope_constant_PROPERTY_HINT_MULTILINE_TEXT>`.
+Див. також :ref:`@GlobalScope.PROPERTY_HINT_MULTILINE_TEXT<class_@GlobalScope_constant_PROPERTY_HINT_MULTILINE_TEXT>`.
 
-::
+\ ``codblock``\ 
 
-    @export_multiline var character_biography
-    @export_multiline var npc_dialogs: Array[String]
-    @export_multiline("monospace", "no_wrap") var favorite_ascii_art: String
+@export_multiline var character_biography
+
+@export_multiline var npc_dialogs: Array\ :ref:`String<class_String>`\ 
+
+@export_multiline("monospace", "no_wrap") var favorite_ascii_art: String
+
+[/codblock]
 
 .. rst-class:: classref-item-separator
 
@@ -688,13 +692,13 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_MULTILINE_TEXT<class_@GlobalScope_cons
 
 **@export_range**\ (\ min\: :ref:`float<class_float>`, max\: :ref:`float<class_float>`, step\: :ref:`float<class_float>` = 1.0, extra_hints\: :ref:`String<class_String>` = "", ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_range>`
 
-Export an :ref:`int<class_int>`, :ref:`float<class_float>`, :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \], :ref:`Array<class_Array>`\ \[:ref:`float<class_float>`\ \], :ref:`PackedByteArray<class_PackedByteArray>`, :ref:`PackedInt32Array<class_PackedInt32Array>`, :ref:`PackedInt64Array<class_PackedInt64Array>`, :ref:`PackedFloat32Array<class_PackedFloat32Array>`, or :ref:`PackedFloat64Array<class_PackedFloat64Array>` property as a range value. The range must be defined by ``min`` and ``max``, as well as an optional ``step`` and a variety of extra hints. The ``step`` defaults to ``1`` for integer properties. For floating-point numbers this value depends on your :ref:`EditorSettings.interface/inspector/default_float_step<class_EditorSettings_property_interface/inspector/default_float_step>` setting.
+Експортуйте властивість :ref:`int<class_int>`, :ref:`float<class_float>`, :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \], :ref:`Array<class_Array>`\ \[:ref:`float<class_float>`\ \], :ref:`PackedByteArray<class_PackedByteArray>`, :ref:`PackedInt32Array<class_PackedInt32Array>`, :ref:`PackedInt64Array<class_PackedInt64Array>`, :ref:`PackedFloat32Array<class_PackedFloat32Array>` або :ref:`PackedFloat64Array<class_PackedFloat64Array>` як значення діапазону. Діапазон має бути визначений параметрами ``min`` та ``max``, а також необов'язковим параметром ``step`` та різноманітними додатковими підказками. Для цілочисельних властивостей ``step`` за замовчуванням має значення ``1``. Для чисел з плаваючою комою це значення залежить від налаштування :ref:`EditorSettings.interface/inspector/default_float_step<class_EditorSettings_property_interface/inspector/default_float_step>`.
 
-If hints ``"or_greater"`` and ``"or_less"`` are provided, the editor widget will not cap the value at range boundaries. The ``"exp"`` hint will make the edited values on range to change exponentially. The ``"prefer_slider"`` hint will make integer values use the slider instead of arrows for editing, while ``"hide_control"`` will hide the element controlling the value of the editor widget.
+Якщо надано підказки ``"or_greater"`` та ``"or_less"``, віджет редактора не обмежуватиме значення межами діапазону. Підказка ``"exp"`` призведе до експоненціальної зміни відредагованих значень у діапазоні. Підказка ``"prefer_slider"`` призведе до використання повзунка замість стрілок для редагування цілочисельних значень, тоді як ``"hide_control"`` приховає елемент, що керує значенням віджета редактора.
 
-Hints also allow to indicate the units for the edited value. Using ``"radians_as_degrees"`` you can specify that the actual value is in radians, but should be displayed in degrees in the Inspector dock (the range values are also in degrees). ``"degrees"`` allows to add a degree sign as a unit suffix (the value is unchanged). Finally, a custom suffix can be provided using ``"suffix:unit"``, where "unit" can be any string.
+Підказки також дозволяють вказувати одиниці вимірювання для відредагованого значення. Використовуючи ``"radians_as_degrees"``, ви можете вказати, що фактичне значення має бути в радіанах, але має відображатися в градусах на панелі Інспектора (значення діапазону також у градусах). ``"degrees"`` дозволяє додати знак градуса як суфікс одиниці (значення залишається незмінним). Нарешті, можна надати власний суфікс за допомогою ``"suffix:unit"``, де "unit" може бути будь-яким рядком.
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>`.
+Див. також :ref:`@GlobalScope.PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>`.
 
 ::
 
@@ -860,32 +864,32 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROP
 
 .. rst-class:: classref-annotation
 
-**@rpc**\ (\ mode\: :ref:`String<class_String>` = "authority", sync\: :ref:`String<class_String>` = "call_remote", transfer_mode\: :ref:`String<class_String>` = "unreliable", transfer_channel\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_@GDScript_annotation_@rpc>`
+**@rpc**\ (\ mode\: :ref:`String<class_String>` = "authority", sync\: :ref:`String<class_String>` = "call_remote", transfer_mode\: :ref:`String<class_String>` = "reliable", transfer_channel\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_@GDScript_annotation_@rpc>`
 
-Позначте наступний метод для викликів віддалених процедур. Див. :doc:`Високорівневий багатокористувацький режим <../tutorials/networking/high_level_multiplayer>`.
+Позначте наступний метод для віддалених викликів процедури. Дивіться :doc:`Високий рівень багатокористувацької гри <../tutorials/networking/high_level_multiplayer>`.
 
-Якщо ``mode`` встановлено як ``"any_peer"``, це дозволяє будь-якому вузлу викликати цю функцію RPC. В іншому випадку, лише вузол з авторизацією може викликати її, а ``mode`` слід зберігати як ``"authority"``. Під час налаштування функцій як RPC за допомогою методу :ref:`node.rpc_config()<class_node_method_rpc_config>` кожен з цих режимів відповідно відповідає режимам RPC :ref:`MultiplayerAPI.RPC_MODE_AUTHORITY<class_MultiplayerAPI_constant_RPC_MODE_AUTHORITY>` та :ref:`MultiplayerAPI.RPC_MODE_ANY_PEER<class_MultiplayerAPI_constant_RPC_MODE_ANY_PEER>`. Див. :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>`. Якщо вузол, який не має авторизації, намагається викликати функцію, дозволену лише для цього вузла, функція не буде виконана. Якщо помилку можна виявити локально (коли конфігурація RPC узгоджується між локальним та віддаленим вузлами), на вузлі відправника буде відображено повідомлення про помилку. В іншому випадку віддалений вузол виявить помилку та виведе на екран помилку.
+Якщо ``mode`` встановлено як ``"any_peer"``, це дозволяє будь-якому аналогу викликати цю функцію RPC. В іншому випадку лише колега з владою має право викликати його, а ``mode`` слід зберігати як ``"авторитет"``. Під час налаштування функцій як RPC за допомогою :ref:`Node.rpc_config()<class_Node_method_rpc_config>` кожен із цих режимів відповідно відповідає :ref:`MultiplayerAPI.RPC_MODE_AUTHORITY<class_MultiplayerAPI_constant_RPC_MODE_AUTHORITY>` і :ref:`Multiplayer API.RPS_MODe_ANY_PEER<class_Multiplayer API_constant_RPS_MODe_ANY_PEER>` режимам RPC. Див. :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>`. Якщо колега, який не є авторитетом, спробує викликати функцію, яка дозволена лише для авторитету, функція не буде виконана. Якщо помилку можна виявити локально (коли конфігурація RPC узгоджується між локальним і віддаленим аналогом), повідомлення про помилку буде відображено на аналізі відправника. В іншому випадку віддалений аналог виявить помилку та надрукує там помилку.
 
-Якщо ``sync`` встановлено як ``"call_remote"``, функція буде виконана лише на віддаленому вузлі, але не локально. Щоб запустити цю функцію також локально, встановіть ``sync`` на ``"call_local"``. Під час налаштування функцій як RPC за допомогою методу :ref:`Node.rpc_config()<class_Node_method_rpc_config>` це еквівалентно встановленню ``call_local`` на ``true``.
+Якщо ``sync`` встановлено як ``"call_remote"``, функція буде виконуватися лише на віддаленому рівні, але не локально. Щоб запустити цю функцію локально, встановіть ``sync`` на ``"call_local"``. Під час налаштування функцій як RPC за допомогою :ref:`Node.rpc_config()<class_Node_method_rpc_config>` це еквівалентно встановленню ``call_local``\ на ``true``\ 
 
-Прийнятні значення ``transfer_mode``: ``"unreliable"``, ``"unreliable_ordered"`` або ``"reliable"``. Він встановлює режим передачі базового :ref:`MultiplayerPeer<class_MultiplayerPeer>`. Див. :ref:`MultiplayerPeer.transfer_mode<class_MultiplayerPeer_property_transfer_mode>`.
+Прийняті значення ``transfer_mode``: ``"ненадійний"``, ``"unreliable_ordered"`` або ``"надійні"``. Він встановлює режим передачі базового :ref:`MultiplayerPeer<class_MultiplayerPeer>`. Дивіться :ref:`MultiplayerPeer.transfer_mode<class_MultiplayerPeer_property_transfer_mode>`.
 
-\ ``transfer_channel`` визначає канал базового :ref:`MultiplayerPeer<class_MultiplayerPeer>`. Див. :ref:`MultiplayerPeer.transfer_channel<class_MultiplayerPeer_property_transfer_channel>`.
+\ ``transfer_channel`` визначає канал базового :ref:`MultiplayerPeer<class_MultiplayerPeer>`. Дивіться :ref:`MultiplayerPeer.transfer_channel<class_MultiplayerPeer_property_transfer_channel>`.
 
-Порядок ``mode``, ``sync`` та ``transfer_mode`` не має значення, але значення, пов'язані з одним і тим самим аргументом, не повинні використовуватися більше одного разу. ``transfer_channel`` завжди має бути 4-м аргументом (потрібно вказати 3 попередні аргументи).
+Порядок ``mode``, ``sync`` та ``transfer_mode`` не має значення, але значення, пов"язані з одним і тим же аргументом, не повинні використовуватися більше одного разу. ``transfer_channel`` завжди має бути четвертим аргументом (ви повинні вказати 3 попередні аргументи).
 
 ::
 
-    @rpc
     func fn(): pass
 
     @rpc("any_peer", "unreliable_ordered")
     func fn_update_pos(): pass
 
-    @rpc("authority", "call_remote", "unreliable", 0) # Еквівалент @rpc
+    @rpc("authority", "call_remote", "reliable", 0) # Equivalent to @rpc
+
     func fn_default(): pass
 
-\ **Примітка:** Методи, анотовані :ref:`@rpc<class_@GDScript_annotation_@rpc>`, не можуть отримувати об'єкти, які визначають необхідні параметри в :ref:`Object._init()<class_Object_private_method__init>`. Див. :ref:`Object._init()<class_Object_private_method__init>` для отримання додаткової інформації.
+\ **Примітка:** Методи, анотовані за допомогою :ref:`@rpc<class_@GDScript_annotation_@rpc>`, не можуть отримувати об"єкти, які визначають необхідні параметри в :ref:`Object._init()<class_Object_private_method__init>`. Див. :ref:`Object._init()<class_Object_private_method__init>` для отримання додаткової інформації.
 
 .. rst-class:: classref-item-separator
 

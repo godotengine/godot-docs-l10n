@@ -146,7 +146,7 @@ AES 电子密码簿解密模式。
 
 :ref:`Mode<enum_AESContext_Mode>` **MODE_CBC_ENCRYPT** = ``2``
 
-AES cipher block chaining encryption mode.
+AES 密码块链接加密模式。
 
 .. _class_AESContext_constant_MODE_CBC_DECRYPT:
 
@@ -154,7 +154,7 @@ AES cipher block chaining encryption mode.
 
 :ref:`Mode<enum_AESContext_Mode>` **MODE_CBC_DECRYPT** = ``3``
 
-AES cipher block chaining decryption mode.
+AES 密码块链接解密模式。
 
 .. _class_AESContext_constant_MODE_MAX:
 

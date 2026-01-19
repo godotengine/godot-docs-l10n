@@ -170,7 +170,7 @@ El modo de compresión a utilizar. Cada modo de compresión ofrece una compensac
 
 \ **Con pérdida:** Calidad reducida, alto uso de memoria, tamaño reducido en el disco, importación rápida.
 
-\ **VRAM Comprimido:** Calidad reducida, bajo uso de memoria, tamaño reducido en el disco, importación más lenta. Solo usar para texturas en escenas 3D, no para elementos 2D.
+\ **VRAM Comprimida:** Calidad reducida, bajo uso de memoria, tamaño reducido en el disco, importación más lenta. Solo usar para texturas en escenas 3D, no para elementos 2D.
 
 \ **VRAM Sin comprimir:** Calidad original, alto uso de memoria, mayor tamaño en el disco, importación más rápida.
 

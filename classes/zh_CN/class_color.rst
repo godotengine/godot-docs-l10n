@@ -12,17 +12,17 @@ Color
 描述
 ----
 
-A color represented in RGBA format by a red (:ref:`r<class_Color_property_r>`), green (:ref:`g<class_Color_property_g>`), blue (:ref:`b<class_Color_property_b>`), and alpha (:ref:`a<class_Color_property_a>`) component. Each component is a 32-bit floating-point value, usually ranging from ``0.0`` to ``1.0``. Some properties (such as :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>`) may support values greater than ``1.0``, for overbright or HDR (High Dynamic Range) colors.
+由红（\ :ref:`r<class_Color_property_r>`\ ）、绿（\ :ref:`g<class_Color_property_g>`\ ）、蓝（\ :ref:`b<class_Color_property_b>`\ ）和 alpha（\ :ref:`a<class_Color_property_a>`\ ）分量表示的 RGBA 格式的颜色。每个分量都是一个 32 位浮点值，通常介于 ``0.0`` 到 ``1.0`` 之间。某些属性（例如 :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>`\ ）可能支持大于 ``1.0`` 的值，用于表示过亮或 HDR（High Dynamic Range，高动态范围）颜色。
 
-Colors can be created in a number of ways: By the various **Color** constructors, by static methods such as :ref:`from_hsv()<class_Color_method_from_hsv>`, and by using a name from the set of standardized colors based on `X11 color names <https://en.wikipedia.org/wiki/X11_color_names>`__ with the addition of :ref:`TRANSPARENT<class_Color_constant_TRANSPARENT>`.
+创建颜色的方法有很多：可以使用 **Color** 的各种构造函数，\ :ref:`from_hsv()<class_Color_method_from_hsv>` 等静态方法，以及来自基于 `X11 颜色名称 <https://en.wikipedia.org/wiki/X11_color_names>`__\ 的标准化颜色集合（外加 :ref:`TRANSPARENT<class_Color_constant_TRANSPARENT>`\ ）的名称。
 
-\ `Color constants cheatsheet <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/color_constants.png>`__\ 
+\ `Color 常量速查表 <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/color_constants.png>`__\ 
 
-Although **Color** may be used to store values of any encoding, the red (:ref:`r<class_Color_property_r>`), green (:ref:`g<class_Color_property_g>`), and blue (:ref:`b<class_Color_property_b>`) properties of **Color** are expected by Godot to be encoded using the `nonlinear sRGB transfer function <https://en.wikipedia.org/wiki/SRGB#Transfer_function_(%22gamma%22)>`__ unless otherwise stated. This color encoding is used by many traditional art and web tools, making it easy to match colors between Godot and these tools. Godot uses `Rec. ITU-R BT.709 <https://en.wikipedia.org/wiki/Rec._709>`__ color primaries, which are used by the sRGB standard.
+尽管 **Color** 可以用于存储任意编码的值，除非有特殊说明，Godot 会认为其中红（\ :ref:`r<class_Color_property_r>`\ ）、绿（\ :ref:`g<class_Color_property_g>`\ ）和蓝（\ :ref:`b<class_Color_property_b>`\ ）的属性是由 `nonlinear sRGB transfer function <https://en.wikipedia.org/wiki/SRGB#Transfer_function_(%22gamma%22)>`__ 编码的。这个色彩编码被大量传统的艺术和网络工具使用，使得 Godot 和这些工具之间的色彩容易保持一致。Godot 与 sRGB 标准同样使用 `Rec. ITU-R BT.709 <https://en.wikipedia.org/wiki/Rec._709>`__ 中的原色。
 
-All physical simulation, such as lighting calculations, and colorimetry transformations, such as :ref:`get_luminance()<class_Color_method_get_luminance>`, must be performed on linearly encoded values to produce correct results. When performing these calculations, convert **Color** to and from linear encoding using :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` and :ref:`linear_to_srgb()<class_Color_method_linear_to_srgb>`.
+所有物理模拟，比如光照计算，以及色度变换，比如 :ref:`get_luminance()<class_Color_method_get_luminance>`\ ，都必须在线性编码下进行运算才能得到正确结果。进行这些运算时，可以用 :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` 和 :ref:`linear_to_srgb()<class_Color_method_linear_to_srgb>` 将 **Color** 在默认编码和线性编码之间转换。
 
-\ **Note:** In a boolean context, a Color will evaluate to ``false`` if it is equal to ``Color(0, 0, 0, 1)`` (opaque black). Otherwise, a Color will always evaluate to ``true``.
+\ **注意：**\ 在布尔运算的上下文中，只有等于 ``Color(0, 0, 0, 1)``\ （不透明黑色）的 Color 才会被求值为 ``false``\ 。其余情况下 Color 将始终被求值为 ``true``\ 。
 
 .. note::
 

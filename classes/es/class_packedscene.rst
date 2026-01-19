@@ -201,7 +201,7 @@ Devuelve ``true`` si el archivo de la escena tiene nodos.
 
 :ref:`SceneState<class_SceneState>` **get_state**\ (\ ) |const| :ref:`🔗<class_PackedScene_method_get_state>`
 
-Returns the :ref:`SceneState<class_SceneState>` representing the scene file contents.
+Devuelve el :ref:`SceneState<class_SceneState>` que representa el contenido del archivo de la escena.
 
 .. rst-class:: classref-item-separator
 

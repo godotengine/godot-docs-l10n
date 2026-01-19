@@ -9,14 +9,14 @@ OpenXRSpatialComponentMesh3DList
 
 **Наследует:** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the queries mesh3d result data.
+Объект для хранения данных результатов запросов mesh3d.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-Object for storing the queries 3d mesh result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Объект для хранения данных результатов запроса в виде 3D-сетки при вызове метода :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -47,7 +47,7 @@ Object for storing the queries 3d mesh result data when calling :ref:`OpenXRSpat
 
 :ref:`Mesh<class_Mesh>` **get_mesh**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMesh3DList_method_get_mesh>`
 
-Returns the mesh for the entity at this ``index``.
+Возвращает сетку для объекта по этому ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -59,7 +59,7 @@ Returns the mesh for the entity at this ``index``.
 
 :ref:`Transform3D<class_Transform3D>` **get_transform**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMesh3DList_method_get_transform>`
 
-Returns the transform for positioning our mesh for the entity at this ``index``.
+Возвращает преобразование для позиционирования нашей сетки для объекта в точке с индексом ``index``.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

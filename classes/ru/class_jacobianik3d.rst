@@ -7,18 +7,18 @@ JacobianIK3D
 
 **Наследует:** :ref:`IterateIK3D<class_IterateIK3D>` **<** :ref:`ChainIK3D<class_ChainIK3D>` **<** :ref:`IKModifier3D<class_IKModifier3D>` **<** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Jacobian transpose based inverse kinematics solver.
+Решатель обратной кинематики на основе транспонирования матрицы Якоби.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-**JacobianIK3D** calculates rotations for all joints simultaneously, producing natural and smooth movement. It is particularly suited for biological animations.
+**JacobianIK3D** вычисляет вращения для всех суставов одновременно, обеспечивая естественное и плавное движение. Он особенно подходит для биологической анимации.
 
-The resulting twist around the forward vector will always be kept from the previous pose.
+Результирующее скручивание вокруг вектора движения всегда будет сохраняться из предыдущей позы.
 
-\ **Note:** It converges more slowly than other IK solvers, leading to gentler and less immediate tracking of targets.
+\ **Примечание:** Он сходится медленнее, чем другие решатели обратной кинематики, что приводит к более плавному и менее быстрому отслеживанию целей.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

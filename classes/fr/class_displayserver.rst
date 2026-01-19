@@ -2817,7 +2817,7 @@ Returns the metadata of the accessibility element ``id``.
 
 |void| **accessibility_element_set_meta**\ (\ id\: :ref:`RID<class_RID>`, meta\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_DisplayServer_method_accessibility_element_set_meta>`
 
-Sets the metadata of the accessibility element ``id`` to ``meta``.
+Définit les méta-données pour l'élément d'accessibilité ``id`` à ``meta``.
 
 .. rst-class:: classref-item-separator
 
@@ -2881,11 +2881,11 @@ Returns ``1`` if a screen reader, Braille display or other assistive app is acti
 
 |void| **accessibility_set_window_focused**\ (\ window_id\: :ref:`int<class_int>`, focused\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_DisplayServer_method_accessibility_set_window_focused>`
 
-Sets the window focused state for assistive apps.
+Définit l'état avec focus de la fenêtre pour les applications d'assistance.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Note :** Cette méthode est implémentée sur Linux, macOS et Windows.
 
-\ **Note:** Advanced users only! :ref:`Window<class_Window>` objects call this method automatically.
+\ **Note :** Utilisateurs avancés seulement ! Les objets :ref:`Window<class_Window>` appellent cette méthode automatiquement.
 
 .. rst-class:: classref-item-separator
 
@@ -3319,7 +3319,7 @@ Sets the priority of the live region updates.
 
 |void| **accessibility_update_set_member_of**\ (\ id\: :ref:`RID<class_RID>`, group_id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_DisplayServer_method_accessibility_update_set_member_of>`
 
-Sets the element to be a member of the group.
+Définit l'élément pour être membre du groupe.
 
 .. rst-class:: classref-item-separator
 
@@ -3855,6 +3855,8 @@ Sets a custom mouse cursor image for the given ``shape``. This means the user's 
 
 \ ``cursor`` can be either a :ref:`Texture2D<class_Texture2D>` or an :ref:`Image<class_Image>`, and it should not be larger than 256×256 to display correctly. Optionally, ``hotspot`` can be set to offset the image's position relative to the click point. By default, ``hotspot`` is set to the top-left corner of the image. See also :ref:`cursor_set_shape()<class_DisplayServer_method_cursor_set_shape>`.
 
+\ **Note:** On Web, calling this method every frame can cause the cursor to flicker.
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -4087,9 +4089,9 @@ Returns the unobscured area of the display where interactive controls should be 
 
 :ref:`int<class_int>` **get_keyboard_focus_screen**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_get_keyboard_focus_screen>`
 
-Returns the index of the screen containing the window with the keyboard focus, or the primary screen if there's no focused window.
+Renvoie l'index de l'écran contenant la fenêtre avec le focus du clavier, ou l'écran primaire s'il n'y a pas de fenêtre ciblée.
 
-\ **Note:** This method is implemented on Linux/X11, macOS, and Windows. On other platforms, this method always returns the primary screen.
+\ **Note :** Cette méthode est implémentée sur Linux/X11, macOS et Windows. Sur d'autres plateformes, cette méthode renvoie toujours l'écran primaire.
 
 .. rst-class:: classref-item-separator
 
@@ -4143,7 +4145,7 @@ Returns the number of displays available.
 
 :ref:`int<class_int>` **get_screen_from_rect**\ (\ rect\: :ref:`Rect2<class_Rect2>`\ ) |const| :ref:`🔗<class_DisplayServer_method_get_screen_from_rect>`
 
-Returns the index of the screen that overlaps the most with the given rectangle. Returns :ref:`INVALID_SCREEN<class_DisplayServer_constant_INVALID_SCREEN>` if the rectangle doesn't overlap with any screen or has no area.
+Renvoie l'index de l'écran qui recoupe le plus le rectangle donné. Renvoie :ref:`INVALID_SCREEN<class_DisplayServer_constant_INVALID_SCREEN>` si le rectangle ne chevauche pas d'écran ou n'a pas d'aire.
 
 .. rst-class:: classref-item-separator
 
@@ -4792,11 +4794,11 @@ Returns ``true`` if the item at index ``idx`` is checked.
 
 **Obsolète :** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Returns ``true`` if the item at index ``idx`` is disabled. When it is disabled it can't be selected, or its action invoked.
+Renvoie ``true`` si l'élément à l'index ``idx`` est désactivé. Lorsqu'il est désactivé, il ne peut être sélectionné, ou son action invoquée.
 
-See :ref:`global_menu_set_item_disabled()<class_DisplayServer_method_global_menu_set_item_disabled>` for more info on how to disable an item.
+Voir :ref:`global_menu_set_item_disabled()<class_DisplayServer_method_global_menu_set_item_disabled>` pour plus d'informations sur la façon de désactiver un élément.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Note :** Cette méthode n'est implémentée que sur macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4810,11 +4812,11 @@ See :ref:`global_menu_set_item_disabled()<class_DisplayServer_method_global_menu
 
 **Obsolète :** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Returns ``true`` if the item at index ``idx`` is hidden.
+Retourne ``true`` si l'élément à l'index ``idx`` est caché.
 
-See :ref:`global_menu_set_item_hidden()<class_DisplayServer_method_global_menu_set_item_hidden>` for more info on how to hide an item.
+Voir :ref:`global_menu_set_item_hidden()<class_DisplayServer_method_global_menu_set_item_hidden>` pour plus d'informations sur la façon de cacher un élément.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Note:** Cette méthode n'est disponible que sur macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4828,11 +4830,11 @@ See :ref:`global_menu_set_item_hidden()<class_DisplayServer_method_global_menu_s
 
 **Obsolète :** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Returns ``true`` if the item at index ``idx`` has radio button-style checkability.
+Retourne ``true`` si l'élément à l'index ``idx`` a une vérification de style bouton radio.
 
-\ **Note:** This is purely cosmetic; you must add the logic for checking/unchecking items in radio groups.
+\ **Note :** Ceci est purement cosmétique ; vous devez ajouter la logique pour cocher/décocher les éléments dans les groupes radio.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Note :** Cette méthode n'est supportée que sur macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4846,11 +4848,11 @@ Returns ``true`` if the item at index ``idx`` has radio button-style checkabilit
 
 **Obsolète :** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Removes the item at index ``idx`` from the global menu ``menu_root``.
+Retire l'élément à l'index "idx" du menu global ``menu_root``.
 
-\ **Note:** The indices of items after the removed item will be shifted by one.
+\ **Note :** Les indices des éléments après l'éléments supprimé seront décalés de un.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Note :** Cette méthode est implémentée sur macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4880,11 +4882,11 @@ Définit l'accélérateur de l'élément à l'index ``idx``. ``keycode`` peut ê
 
 **Obsolète :** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Sets the callback of the item at index ``idx``. Callback is emitted when an item is pressed.
+Définit le rappel de l'élément à l'index ``idx``. Le rappel est émis lorsqu'un article est pressé.
 
-\ **Note:** The ``callback`` Callable needs to accept exactly one Variant parameter, the parameter passed to the Callable will be the value passed to the ``tag`` parameter when the menu item was created.
+\ **Note:** Le ``callback`` Appelable doit accepter exactement un paramètre Variant, le paramètre passé à la Callable sera la valeur transmise au paramètre ``tag`` lorsque l'élément de menu a été créé.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Note:** Cette méthode n'est supportée que sur macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4898,9 +4900,9 @@ Sets the callback of the item at index ``idx``. Callback is emitted when an item
 
 **Obsolète :** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Sets whether the item at index ``idx`` has a checkbox. If ``false``, sets the type of the item to plain text.
+Définit si l'élément à l'index ``idx`` a une case à cocher. Si ``false``, fixe le type de l'élément au texte brut.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Note :** Cette méthode n'est supportée que sur macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4980,11 +4982,11 @@ Définit le callback de l'élément à l'index ``idx``. Le callback est émis lo
 
 **Obsolète :** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Replaces the :ref:`Texture2D<class_Texture2D>` icon of the specified ``idx``.
+Remplace l'icône :ref:`Texture2D<class_Texture2D>` de l'index ``idx`` spécifié.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Note :** Cette méthode n'est implémentée que sur macOS.
 
-\ **Note:** This method is not supported by macOS "_dock" menu items.
+\ **Note :** Cette méthode n'est pas supportée par les éléments de menu "_dock" macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -5048,11 +5050,11 @@ Sets number of state of a multistate item. See :ref:`global_menu_add_multistate_
 
 **Obsolète :** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Sets the type of the item at the specified index ``idx`` to radio button. If ``false``, sets the type of the item to plain text.
+Définit le type de l'élément à l'index spécifié ``idx`` en bouton radio. Si ``false``, fixe le type de l'élément au texte brut.
 
-\ **Note:** This is purely cosmetic; you must add the logic for checking/unchecking items in radio groups.
+\ **Note :** Ceci est purement cosmétique ; vous devez ajouter la logique pour cocher/décocher les éléments dans les groupes radio.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Note :** Cette méthode n'est supportée que sur macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -5146,7 +5148,7 @@ Définit la chaîne :ref:`String<class_String>` de l'info-bulle de l'élément �
 
 **Obsolète :** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Registers callables to emit when the menu is respectively about to show or closed. Callback methods should have zero arguments.
+Enregistre les appels (callables) à émettre lorsque le menu est respectivement sur le point d'apparaitre ou de fermer. Les méthodes de rappel ne doivent pas avoir d'arguments.
 
 .. rst-class:: classref-item-separator
 
@@ -5308,9 +5310,9 @@ Returns active keyboard layout index.
 
 :ref:`Key<enum_@GlobalScope_Key>` **keyboard_get_keycode_from_physical**\ (\ keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) |const| :ref:`🔗<class_DisplayServer_method_keyboard_get_keycode_from_physical>`
 
-Converts a physical (US QWERTY) ``keycode`` to one in the active keyboard layout.
+Convertit un clavier physique (US QWERTY) ``keycode`` en un clavier dans la mise en page du clavier actif.
 
-\ **Note:** This method is implemented on Linux (X11/Wayland), macOS and Windows.
+\ **Note :** Cette méthode est supportée sur Linux (X11/Wayland), macOS et Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -5322,9 +5324,9 @@ Converts a physical (US QWERTY) ``keycode`` to one in the active keyboard layout
 
 :ref:`Key<enum_@GlobalScope_Key>` **keyboard_get_label_from_physical**\ (\ keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) |const| :ref:`🔗<class_DisplayServer_method_keyboard_get_label_from_physical>`
 
-Converts a physical (US QWERTY) ``keycode`` to localized label printed on the key in the active keyboard layout.
+Convertit un clavier physique (US QWERTY) ``keycode`` vers l'étiquette localisée imprimée sur la touche dans la disposition active du clavier.
 
-\ **Note:** This method is implemented on Linux (X11/Wayland), macOS and Windows.
+\ **Note:** Cette méthode est supportée sur Linux (X11/Wayland), macOS et Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -5350,9 +5352,9 @@ Returns the number of keyboard layouts.
 
 :ref:`String<class_String>` **keyboard_get_layout_language**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_DisplayServer_method_keyboard_get_layout_language>`
 
-Returns the ISO-639/BCP-47 language code of the keyboard layout at position ``index``.
+Retourne le code de langue ISO-639/BCP-47 de la disposition du clavier à la position ``index``.
 
-\ **Note:** This method is implemented on Linux (X11/Wayland), macOS and Windows.
+\ **Note :** Cette méthode est implémentée sur Linux (X11/Wayland, macOS et Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -5364,9 +5366,9 @@ Returns the ISO-639/BCP-47 language code of the keyboard layout at position ``in
 
 :ref:`String<class_String>` **keyboard_get_layout_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_DisplayServer_method_keyboard_get_layout_name>`
 
-Returns the localized name of the keyboard layout at position ``index``.
+Retourne le nom localisé de la disposition du clavier à la position ``index``.
 
-\ **Note:** This method is implemented on Linux (X11/Wayland), macOS and Windows.
+\ **Note :** Cette méthode est implémentée sur Linux(X11/Wayland), macOS et Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -5466,15 +5468,15 @@ This can be used to prevent Godot from skipping rendering when no normal windows
 
 :ref:`int<class_int>` **screen_get_dpi**\ (\ screen\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_dpi>`
 
-Returns the dots per inch density of the specified screen. Returns platform specific default value if ``screen`` is invalid.
+Retourne la densité en points pour pouce ("dpi") de l'écran spécifié. Renvoie la valeur par défaut spécifique de la plateforme si ``écran param`` est invalide.
 
-\ **Note:** One of the following constants can be used as ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, or :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
+\ **Note :** Une des constantes suivantes peut être utilisée comme ``screen``\  : :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, ou :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`\ 
 
-\ **Note:** On macOS, returned value is inaccurate if fractional display scaling mode is used.
+\ **Note :** Sous macOS, la valeur retournée est inexacte si la mise à l'échelle n'est pas un nombre entier.
 
-\ **Note:** On Android devices, the actual screen densities are grouped into six generalized densities:
+\ **Note :** Pour les appareils Android, les densités des écrans sont groupés en six catégories :
 
-.. code:: text
+::
 
        ldpi - 120 dpi
        mdpi - 160 dpi
@@ -5483,7 +5485,7 @@ Returns the dots per inch density of the specified screen. Returns platform spec
      xxhdpi - 480 dpi
     xxxhdpi - 640 dpi
 
-\ **Note:** This method is implemented on Android, iOS, Linux (X11/Wayland), macOS, Web, and Windows. On other platforms, this method always returns ``72``.
+\ **Note :** Cette méthode est implémentée sous Android, Linux, macOS et Windows. Retourne ``72`` sur les plateformes non supportées.
 
 .. rst-class:: classref-item-separator
 
@@ -5561,11 +5563,11 @@ Returns the ``screen``'s current orientation. See also :ref:`screen_set_orientat
 
 :ref:`Color<class_Color>` **screen_get_pixel**\ (\ position\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_pixel>`
 
-Returns the color of the pixel at the given screen ``position``. On multi-monitor setups, the screen position is relative to the virtual desktop area.
+Renvoie la couleur du pixel à l'écran donné ``position``. Sur les configurations à moniteurs multiples, la position d'écran est relative à la zone de bureau virtuel.
 
-\ **Note:** This method is implemented on Linux (X11, excluding XWayland), macOS, and Windows. On other platforms, this method always returns ``Color(0, 0, 0, 1)``.
+\ **Note :** Cette méthode est mise en œuvre sur Linux (X11, excluant XWayland), macOS et Windows. Sur d'autres plateformes, cette méthode renvoie toujours ``Color(0, 0, 0, 1)``.
 
-\ **Note:** On macOS, this method requires the "Screen Recording" permission. If permission is not granted, this method returns a color from a screenshot that will not include other application windows or OS elements not related to the application.
+\ **Note :** Sur macOS, cette méthode nécessite l'autorisation d' "enregistrement d'écran". Si la permission n'est pas accordée, cette méthode renvoie une couleur d'une capture d'écran qui n'inclut pas d'autres fenêtres d'application ou des éléments OS non liés à l'application.
 
 .. rst-class:: classref-item-separator
 
@@ -5700,13 +5702,13 @@ Sets whether the screen should never be turned off by the operating system's pow
 
 |void| **screen_set_orientation**\ (\ orientation\: :ref:`ScreenOrientation<enum_DisplayServer_ScreenOrientation>`, screen\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_DisplayServer_method_screen_set_orientation>`
 
-Sets the ``screen``'s ``orientation``. See also :ref:`screen_get_orientation()<class_DisplayServer_method_screen_get_orientation>`.
+Définit la ``orientation`` du ``screen``. Voir aussi :ref:`screen_get_orientation()<class_DisplayServer_method_screen_get_orientation>`.
 
-\ **Note:** One of the following constants can be used as ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, or :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
+\ **Note :** Une des constantes suivantes peut être utilisée comme ``screen``\  : :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, ou :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
 
-\ **Note:** This method is implemented on Android and iOS.
+\ **Note :** Cette méthode est supportée sur Android et iOS.
 
-\ **Note:** On iOS, this method has no effect if :ref:`ProjectSettings.display/window/handheld/orientation<class_ProjectSettings_property_display/window/handheld/orientation>` is not set to :ref:`SCREEN_SENSOR<class_DisplayServer_constant_SCREEN_SENSOR>`.
+\ **Note :** Sur iOS, cette méthode n'a aucun effet si :ref:`ProjectSettings.display/window/handheld/orientation<class_ProjectSettings_property_display/window/handheld/orientation>` n'est pas définie à :ref:`SCREEN_SENSOR<class_DisplayServer_constant_SCREEN_SENSOR>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5760,9 +5762,9 @@ Sets the window icon (usually displayed in the top-left corner) in the operating
 
 |void| **set_system_theme_change_callback**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_DisplayServer_method_set_system_theme_change_callback>`
 
-Sets the callback that should be called when the system's theme settings are changed. ``callable`` should accept zero arguments.
+Définit la fonction de rappel qui devrait être lancé lorsque les paramètres du thème système sont changés. ``callable`` ne devrait pas accepter d'argument.
 
-\ **Note:** This method is implemented on Android, iOS, macOS, Windows, and Linux (X11/Wayland).
+\ **Note :** Cette méthode est supportée sur Android, iOS, macOS, Windows et Linux (X11/Wayland).
 
 .. rst-class:: classref-item-separator
 
@@ -5788,9 +5790,9 @@ Opens system emoji and symbol picker.
 
 :ref:`Rect2<class_Rect2>` **status_indicator_get_rect**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_DisplayServer_method_status_indicator_get_rect>`
 
-Returns the rectangle for the given status indicator ``id`` in screen coordinates. If the status indicator is not visible, returns an empty :ref:`Rect2<class_Rect2>`.
+Retourne le rectangle pour l'indicateur de statut donné ``id`` dans les coordonnées d'écran. Si l'indicateur de statut n'est pas visible, retourne un :ref:`Rect2<class_Rect2>` vide.
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **Note :** Cette méthode est supportée sur macOS et Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -5802,9 +5804,9 @@ Returns the rectangle for the given status indicator ``id`` in screen coordinate
 
 |void| **status_indicator_set_callback**\ (\ id\: :ref:`int<class_int>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_DisplayServer_method_status_indicator_set_callback>`
 
-Sets the application status indicator activation callback. ``callback`` should take two arguments: :ref:`int<class_int>` mouse button index (one of :ref:`MouseButton<enum_@GlobalScope_MouseButton>` values) and :ref:`Vector2i<class_Vector2i>` click position in screen coordinates.
+Définit la fonction de rappel de l'activation de l'indicateur de statut d'application. ``callback`` devrait prendre deux arguments : :ref:`int<class_int>` index du bouton de souris (une des valeurs de :ref:`MouseButton<enum_@GlobalScope_MouseButton>`) et :ref:`Vector2i<class_Vector2i>` la position du clic dans les coordonnées de l'écran.
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **Note :** Cette méthode est supportée sur macOS et Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -5816,9 +5818,9 @@ Sets the application status indicator activation callback. ``callback`` should t
 
 |void| **status_indicator_set_icon**\ (\ id\: :ref:`int<class_int>`, icon\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_DisplayServer_method_status_indicator_set_icon>`
 
-Sets the application status indicator icon.
+Définit l'icône de l'indicateur de statut d'application.
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **Note :** Cette méthode est supportée sur macOS et Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -5848,9 +5850,9 @@ Sets the application status indicator native popup menu.
 
 |void| **status_indicator_set_tooltip**\ (\ id\: :ref:`int<class_int>`, tooltip\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DisplayServer_method_status_indicator_set_tooltip>`
 
-Sets the application status indicator tooltip.
+Définit l'info-bulle d'indicateur de statut d'application.
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **Note :** Cette méthode est supportée sur macOS et Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -5964,9 +5966,9 @@ Returns a :ref:`PackedStringArray<class_PackedStringArray>` of voice identifiers
 
 :ref:`bool<class_bool>` **tts_is_paused**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_tts_is_paused>`
 
-Returns ``true`` if the synthesizer is in a paused state.
+Retourne ``true`` si le synthétiseur est dans un état de pause.
 
-\ **Note:** This method is implemented on Android, iOS, Web, Linux (X11/Wayland), macOS, and Windows.
+\ **Note :** Cette méthode est supportée sur Android, iOS, Web, Linux (X11/Wayland), macOS et Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -6146,9 +6148,9 @@ Shows the virtual keyboard if the platform has one.
 
 |void| **warp_mouse**\ (\ position\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_DisplayServer_method_warp_mouse>`
 
-Sets the mouse cursor position to the given ``position`` relative to an origin at the upper left corner of the currently focused game Window Manager window.
+Règle la position du curseur de la souris à la position  par rapport à une origine au coin supérieur gauche de la fenêtre actuellement en focus par le Window Manager.
 
-\ **Note:** :ref:`warp_mouse()<class_DisplayServer_method_warp_mouse>` is only supported on Windows, macOS, and Linux (X11/Wayland). It has no effect on Android, iOS, and Web.
+\ **Note :** :ref:`warp_mouse()<class_DisplayServer_method_warp_mouse>` n'est pris en charge que sous Windows, macOS et Linux (X11/Wayland). Il n'a aucun effet sur Android, iOS et Web.
 
 .. rst-class:: classref-item-separator
 
@@ -6184,7 +6186,7 @@ Returns ID of the active popup window, or :ref:`INVALID_WINDOW_ID<class_DisplayS
 
 :ref:`int<class_int>` **window_get_attached_instance_id**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_get_attached_instance_id>`
 
-Returns the :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>` of the :ref:`Window<class_Window>` the ``window_id`` is attached to.
+Retourne le :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>` de la ``Fenêtre`` à laquelle ``window_id`` est joint.
 
 .. rst-class:: classref-item-separator
 

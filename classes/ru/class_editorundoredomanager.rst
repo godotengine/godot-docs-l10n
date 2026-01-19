@@ -229,9 +229,9 @@ enum **SpecialHistory**: :ref:`🔗<enum_EditorUndoRedoManager_SpecialHistory>`
 
 |void| **clear_history**\ (\ id\: :ref:`int<class_int>` = -99, increase_version\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_EditorUndoRedoManager_method_clear_history>`
 
-Очищает указанную историю отмен. Вы можете очистить историю для определенной сцены, глобальную историю или для всех сцен сразу, если ``id`` — :ref:`INVALID_HISTORY<class_EditorUndoRedoManager_constant_INVALID_HISTORY>`.
+Очищает указанную историю отмены. Вы можете очистить историю для конкретной сцены, глобальную историю или для всех историй одновременно (кроме :ref:`REMOTE_HISTORY<class_EditorUndoRedoManager_constant_REMOTE_HISTORY>`), если ``id`` равно :ref:`INVALID_HISTORY<class_EditorUndoRedoManager_constant_INVALID_HISTORY>`.
 
-Если ``increase_version`` — ``true``, версия истории отмен будет увеличена, что пометит ее как несохраненную. Полезно для операций, которые изменяют сцену, но не поддерживают отмену.
+Если ``increase_version`` равно ``true``, версия истории отмены будет увеличена, помечая её как несохранённую. Полезно для операций, изменяющих сцену, но не поддерживающих отмену.
 
 ::
 
@@ -239,7 +239,7 @@ enum **SpecialHistory**: :ref:`🔗<enum_EditorUndoRedoManager_SpecialHistory>`
     var undo_redo = EditorInterface.get_editor_undo_redo()
     undo_redo.clear_history(undo_redo.get_object_history_id(scene_root))
 
-\ **Примечание:** Если вы хотите отметить отредактированную сцену как несохраненную, не очищая ее историю, используйте вместо этого :ref:`EditorInterface.mark_scene_as_unsaved()<class_EditorInterface_method_mark_scene_as_unsaved>`.
+\ **Примечание:** Если вы хотите пометить отредактированную сцену как несохраненную, не очищая ее историю, используйте вместо этого :ref:`EditorInterface.mark_scene_as_unsaved()<class_EditorInterface_method_mark_scene_as_unsaved>`.
 
 .. rst-class:: classref-item-separator
 

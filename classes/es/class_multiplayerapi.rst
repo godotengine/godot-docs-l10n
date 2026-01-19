@@ -12,7 +12,7 @@ MultiplayerAPI
 
 **Heredado por:** :ref:`MultiplayerAPIExtension<class_MultiplayerAPIExtension>`, :ref:`SceneMultiplayer<class_SceneMultiplayer>`
 
-High-level multiplayer API interface.
+Interfaz de la API multijugador de alto nivel.
 
 .. rst-class:: classref-introduction-group
 

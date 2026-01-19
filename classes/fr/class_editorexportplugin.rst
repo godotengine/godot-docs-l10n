@@ -240,7 +240,7 @@ Ceci est appelé lorsque le processus de personnalisation pour les scènes se te
 
 |void| **_export_begin**\ (\ features\: :ref:`PackedStringArray<class_PackedStringArray>`, is_debug\: :ref:`bool<class_bool>`, path\: :ref:`String<class_String>`, flags\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_EditorExportPlugin_private_method__export_begin>`
 
-Virtual method to be overridden by the user. It is called when the export starts and provides all information about the export. ``features`` is the list of features for the export, ``is_debug`` is ``true`` for debug builds, ``path`` is the target path for the exported project. ``flags`` is only used when running a runnable profile, e.g. when using native run on Android.
+Méthode virtuelle à surcharger par l'utilisateur. Elle est appelée lorsque l'exportation commence et fournit toutes les informations sur l'exportation. ``features`` est la liste des fonctionnalité pour l'export, ``is_debug`` est ``true`` pour les builds de débogage, ``path`` est le chemin cible pour le projet exporté. ``flags`` n'est utilisé que lors de l'exécution d'un profil exécutable, p.ex. lorsque vous utilisez native run sur Android.
 
 .. rst-class:: classref-item-separator
 
@@ -264,9 +264,9 @@ Une méthode virtuelle à surcharger par l'utilisateur. Elle est appelée lorsqu
 
 |void| **_export_file**\ (\ path\: :ref:`String<class_String>`, type\: :ref:`String<class_String>`, features\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |virtual| :ref:`🔗<class_EditorExportPlugin_private_method__export_file>`
 
-Virtual method to be overridden by the user. Called for each exported file before :ref:`_customize_resource()<class_EditorExportPlugin_private_method__customize_resource>` and :ref:`_customize_scene()<class_EditorExportPlugin_private_method__customize_scene>`. The arguments can be used to identify the file. ``path`` is the path of the file, ``type`` is the :ref:`Resource<class_Resource>` represented by the file (e.g. :ref:`PackedScene<class_PackedScene>`), and ``features`` is the list of features for the export.
+Une méthode virtuelle à surcharger par l'utilisateur. Elle est appelée pour chaque fichier exporté avant\ :ref:`_customize_resource()<class_EditorExportPlugin_private_method__customize_resource>` and :ref:`_customize_scene()<class_EditorExportPlugin_private_method__customize_scene>`. Les arguments passés peuvent permettre d'identifier le fichier exporté.\ ``path`` est le chemin du fichier, ``type`` est la :ref:`Resource<class_Resource>` représentée par ce fichier (par exemple :ref:`PackedScene<class_PackedScene>`) et ``features`` est la liste des fonctionnalités de cette exportation.
 
-Calling :ref:`skip()<class_EditorExportPlugin_method_skip>` inside this callback will make the file not included in the export.
+Appeler :ref:`skip()<class_EditorExportPlugin_method_skip>` dans cette fonction de rappel pour ne pas exporter ce fichier.
 
 .. rst-class:: classref-item-separator
 
@@ -526,7 +526,7 @@ If no modifications are needed, then an empty :ref:`PackedByteArray<class_Packed
 
 |void| **add_apple_embedded_platform_bundle_file**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorExportPlugin_method_add_apple_embedded_platform_bundle_file>`
 
-Adds an Apple embedded platform bundle file from the given ``path`` to the exported project.
+Ajoute un fichier de paquet de plate-forme intégré d'Apple depuis ``path`` au projet exporté.
 
 .. rst-class:: classref-item-separator
 
@@ -550,11 +550,11 @@ Adds C++ code to the Apple embedded platform export. The final code is created f
 
 |void| **add_apple_embedded_platform_embedded_framework**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorExportPlugin_method_add_apple_embedded_platform_embedded_framework>`
 
-Adds a dynamic library (\*.dylib, \*.framework) to the Linking Phase in the Apple embedded platform's Xcode project and embeds it into the resulting binary.
+Ajoute une bibliothèque dynamique (\*.dylib, \*.framework) au "Linking Phase" dans le projet Xcode de la plateforme intégrée Apple et l'intègre au binaire final.
 
-\ **Note:** For static libraries (\*.a), this works in the same way as :ref:`add_apple_embedded_platform_framework()<class_EditorExportPlugin_method_add_apple_embedded_platform_framework>`.
+\ **Note :** Pour les bibliothèques statiques (\*.a), cela fonctionne de la même manière que :ref:`add_apple_embedded_platform_framework()<class_EditorExportPlugin_method_add_apple_embedded_platform_framework>`.
 
-\ **Note:** This method should not be used for System libraries as they are already present on the device.
+\ **Note :** Cette méthode ne devrait pas être utilisée pour les bibliothèques système car elles sont déjà présentes sur l'appareil.
 
 .. rst-class:: classref-item-separator
 
@@ -602,7 +602,7 @@ Adds additional fields to the Apple embedded platform's project Info.plist file.
 
 |void| **add_apple_embedded_platform_project_static_lib**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorExportPlugin_method_add_apple_embedded_platform_project_static_lib>`
 
-Adds a static library from the given ``path`` to the Apple embedded platform project.
+Ajoute une bibliothèque statique depuis ``path`` au projet de plateforme intégré Apple.
 
 .. rst-class:: classref-item-separator
 
@@ -614,11 +614,11 @@ Adds a static library from the given ``path`` to the Apple embedded platform pro
 
 |void| **add_file**\ (\ path\: :ref:`String<class_String>`, file\: :ref:`PackedByteArray<class_PackedByteArray>`, remap\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorExportPlugin_method_add_file>`
 
-Adds a custom file to be exported. ``path`` is the virtual path that can be used to load the file, ``file`` is the binary data of the file.
+Ajoute un fichier personnalisé à exporter. ``path`` est le chemin virtuel qui peut être utilisé pour charger le fichier, ``file`` représente les données binaires du fichier. 
 
-When called inside :ref:`_export_file()<class_EditorExportPlugin_private_method__export_file>` and ``remap`` is ``true``, the current file will not be exported, but instead remapped to this custom file. ``remap`` is ignored when called in other places.
+Quand appelée au sein de :ref:`_export_file et lorsque [param remap()<class_EditorExportPlugin_private_method__export_file et lorsque [param remap>` est ``true``, le fichier ne sera pas exporté, mais sera remplacé par une référence à ce fichier. ``remap`` est ignoré quand appelé dans d'autres endroits.
 
-\ ``file`` will not be imported, so consider using :ref:`_customize_resource()<class_EditorExportPlugin_private_method__customize_resource>` to remap imported resources.
+\ ``file`` ne sera pas importé, alors envisagez d'utiliser ``méthode _customize_resource`` pour remapper les ressources importées.
 
 .. rst-class:: classref-item-separator
 
@@ -632,7 +632,7 @@ When called inside :ref:`_export_file()<class_EditorExportPlugin_private_method_
 
 **Obsolète :** Use :ref:`add_apple_embedded_platform_bundle_file()<class_EditorExportPlugin_method_add_apple_embedded_platform_bundle_file>` instead.
 
-Adds an iOS bundle file from the given ``path`` to the exported project.
+Ajoute un fichier d'iOS depuis ``path`` au projet exporté.
 
 .. rst-class:: classref-item-separator
 
@@ -720,7 +720,7 @@ Adds additional fields to the iOS project Info.plist file.
 
 **Obsolète :** Use :ref:`add_apple_embedded_platform_project_static_lib()<class_EditorExportPlugin_method_add_apple_embedded_platform_project_static_lib>` instead.
 
-Adds a static library from the given ``path`` to the iOS project.
+Ajoute une bibliothèque statique depuis ``path`` au projet iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -746,11 +746,11 @@ Ajoute le fichier ou le dossier correspondant à l'emplacement ``path`` au dossi
 
 |void| **add_shared_object**\ (\ path\: :ref:`String<class_String>`, tags\: :ref:`PackedStringArray<class_PackedStringArray>`, target\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorExportPlugin_method_add_shared_object>`
 
-Adds a shared object or a directory containing only shared objects with the given ``tags`` and destination ``path``.
+Ajoute un objet partagé ou un dossier contenant uniquement des objets partagés avec les étiquettes\ ``tags`` et la destination ``path``.
 
-\ **Note:** In case of macOS exports, those shared objects will be added to ``Frameworks`` directory of app bundle.
+\ **Note :** En cas d'exportation pour macOS, ces objets partagés seront ajoutés au dossier ``Frameworks`` de l'app bundle.
 
-In case of a directory code-sign will error if you place non code object in directory.
+Pour les dossiers, "code-sign" affichera une erreur si vous placez dans ce dossier un objet qui n'est pas du code.
 
 .. rst-class:: classref-item-separator
 

@@ -3851,9 +3851,11 @@ Restituisce la forma predefinita del cursore del mouse come impostata da :ref:`c
 
 |void| **cursor_set_custom_image**\ (\ cursor\: :ref:`Resource<class_Resource>`, shape\: :ref:`CursorShape<enum_DisplayServer_CursorShape>` = 0, hotspot\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_DisplayServer_method_cursor_set_custom_image>`
 
-Imposta un'immagine personalizzata del cursore del mouse per la forma ``shape``. Ciò significa che il sistema operativo dell'utente e il tema del cursore del mouse non influenzeranno più l'aspetto del cursore del mouse.
+Sets a custom mouse cursor image for the given ``shape``. This means the user's operating system and mouse cursor theme will no longer influence the mouse cursor's appearance.
 
-\ ``cursor`` può essere una :ref:`Texture2D<class_Texture2D>` o un':ref:`Image<class_Image>` e non dovrebbe essere più grande di 256×256 per essere visualizzato correttamente. Facoltativamente, ``hotspot`` può essere impostato per compensare la posizione dell'immagine rispetto al punto di clic. Per impostazione predefinita, ``hotspot`` è impostato sull'angolo in alto a sinistra dell'immagine. Vedi anche :ref:`cursor_set_shape()<class_DisplayServer_method_cursor_set_shape>`.
+\ ``cursor`` can be either a :ref:`Texture2D<class_Texture2D>` or an :ref:`Image<class_Image>`, and it should not be larger than 256×256 to display correctly. Optionally, ``hotspot`` can be set to offset the image's position relative to the click point. By default, ``hotspot`` is set to the top-left corner of the image. See also :ref:`cursor_set_shape()<class_DisplayServer_method_cursor_set_shape>`.
+
+\ **Note:** On Web, calling this method every frame can cause the cursor to flicker.
 
 .. rst-class:: classref-item-separator
 

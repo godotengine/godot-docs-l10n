@@ -186,7 +186,7 @@ Compara dos configuraciones regionales y devuelve una puntuación de similitud e
 
 :ref:`Array<class_Array>`\[:ref:`Translation<class_Translation>`\] **find_translations**\ (\ locale\: :ref:`String<class_String>`, exact\: :ref:`bool<class_bool>`\ ) |const| :ref:`🔗<class_TranslationServer_method_find_translations>`
 
-Returns the :ref:`Translation<class_Translation>` instances in the main translation domain that match ``locale`` (see :ref:`compare_locales()<class_TranslationServer_method_compare_locales>`). If ``exact`` is ``true``, only instances whose locale exactly equals ``locale`` will be returned.
+Devuelve las instancias de :ref:`Translation<class_Translation>` en el dominio de traducción principal que coinciden con ``locale`` (véase :ref:`compare_locales()<class_TranslationServer_method_compare_locales>`). Si ``exact`` es ``true``, solo se devolverán las instancias cuyo locale sea exactamente igual a ``locale``.
 
 .. rst-class:: classref-item-separator
 
@@ -198,7 +198,7 @@ Returns the :ref:`Translation<class_Translation>` instances in the main translat
 
 :ref:`String<class_String>` **format_number**\ (\ number\: :ref:`String<class_String>`, locale\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TranslationServer_method_format_number>`
 
-Converts a number from Western Arabic (0..9) to the numeral system used in the given ``locale``.
+Convierte un número del sistema arábigo occidental (0..9) al sistema numérico utilizado en el ``locale`` dado.
 
 .. rst-class:: classref-item-separator
 
@@ -320,7 +320,7 @@ Devuelve el dominio de traducción con el nombre especificado. Se creará y agre
 
 :ref:`String<class_String>` **get_percent_sign**\ (\ locale\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TranslationServer_method_get_percent_sign>`
 
-Returns the percent sign used in the given ``locale``.
+Devuelve el signo de porcentaje utilizado en la ``locale`` dada.
 
 .. rst-class:: classref-item-separator
 
@@ -332,7 +332,7 @@ Returns the percent sign used in the given ``locale``.
 
 :ref:`String<class_String>` **get_plural_rules**\ (\ locale\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TranslationServer_method_get_plural_rules>`
 
-Returns the default plural rules for the ``locale``.
+Devuelve las reglas de pluralización predeterminadas para la ``locale``.
 
 .. rst-class:: classref-item-separator
 
@@ -384,7 +384,7 @@ Devuelve la instancia de :ref:`Translation<class_Translation>` que mejor coincid
 
 :ref:`Array<class_Array>`\[:ref:`Translation<class_Translation>`\] **get_translations**\ (\ ) |const| :ref:`🔗<class_TranslationServer_method_get_translations>`
 
-Returns all available :ref:`Translation<class_Translation>` instances in the main translation domain as added by :ref:`add_translation()<class_TranslationServer_method_add_translation>`.
+Devuelve todas las instancias :ref:`Translation<class_Translation>` disponibles en el dominio de traducción principal, tal como se agregaron con :ref:`add_translation()<class_TranslationServer_method_add_translation>`.
 
 .. rst-class:: classref-item-separator
 
@@ -408,7 +408,7 @@ Devuelve ``true`` si existe un dominio de traducción con el nombre especificado
 
 :ref:`bool<class_bool>` **has_translation**\ (\ translation\: :ref:`Translation<class_Translation>`\ ) |const| :ref:`🔗<class_TranslationServer_method_has_translation>`
 
-Returns ``true`` if the main translation domain contains the given ``translation``.
+Devuelve ``true`` si el dominio de traducción principal contiene la traducción ``translation`` dada.
 
 .. rst-class:: classref-item-separator
 
@@ -420,7 +420,7 @@ Returns ``true`` if the main translation domain contains the given ``translation
 
 :ref:`bool<class_bool>` **has_translation_for_locale**\ (\ locale\: :ref:`String<class_String>`, exact\: :ref:`bool<class_bool>`\ ) |const| :ref:`🔗<class_TranslationServer_method_has_translation_for_locale>`
 
-Returns ``true`` if there are any :ref:`Translation<class_Translation>` instances in the main translation domain that match ``locale`` (see :ref:`compare_locales()<class_TranslationServer_method_compare_locales>`). If ``exact`` is ``true``, only instances whose locale exactly equals ``locale`` are considered.
+Devuelve ``true`` si hay alguna instancia :ref:`Translation<class_Translation>` en el dominio de traducción principal que coincida con ``locale`` (véase :ref:`compare_locales()<class_TranslationServer_method_compare_locales>`). Si ``exact`` es ``true``, solo se consideran las instancias cuya configuración regional sea exactamente igual a ``locale``.
 
 .. rst-class:: classref-item-separator
 
@@ -432,7 +432,7 @@ Returns ``true`` if there are any :ref:`Translation<class_Translation>` instance
 
 :ref:`String<class_String>` **parse_number**\ (\ number\: :ref:`String<class_String>`, locale\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TranslationServer_method_parse_number>`
 
-Converts ``number`` from the numeral system used in the given ``locale`` to Western Arabic (0..9).
+Convierte ``number`` del sistema numérico utilizado en la ``locale`` dada al árabe occidental (0..9).
 
 .. rst-class:: classref-item-separator
 

@@ -516,7 +516,7 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 :ref:`bool<class_bool>` **custom_step**\ (\ delta\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Tween_method_custom_step>`
 
-使用给定的增量秒数 ``delta`` 处理该 **Tween**\ 。最常见的用法是在该 **Tween** 暂停时对其进行手动控制。也可用于立即停止该 **Tween** 的动画，将 ``delta`` 设得比完整长度更大即可。
+使用给定的增量 ``delta`` 处理该 **Tween**\ ，单位为秒。主要用于在该 **Tween** 暂停时进行手动控制。通过将 ``delta`` 设置为大于 **Tween** 动画总时长的值，也可以立即结束该 **Tween** 的动画。
 
 如果该 **Tween** 仍然有未完成的 :ref:`Tweener<class_Tweener>`\ ，则返回 ``true``\ 。
 

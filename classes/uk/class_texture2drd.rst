@@ -14,7 +14,16 @@ Texture2DRD
 Опис
 --------
 
-Цей клас текстури дозволяє використовувати текстуру 2D, створену безпосередньо на :ref:`RenderingDevice<class_RenderingDevice>` як текстура для матеріалів, сіточок і т.д.
+Цей клас текстур дозволяє використовувати 2D-текстуру, створену безпосередньо на :ref:`RenderingDevice<class_RenderingDevice>`, як текстуру для матеріалів, сіток тощо.
+
+\ **Примітка:** **Texture2DRD** призначений для низькорівневого використання з :ref:`RenderingDevice<class_RenderingDevice>`. Для більшості випадків використання використовуйте замість нього :ref:`Texture2D<class_Texture2D>`.
+
+.. rst-class:: classref-introduction-group
+
+Посібники
+------------------
+
+- `Демонстрація обчислення текстури <https://godotengine.org/asset-library/asset/2764>`__
 
 .. rst-class:: classref-reftable-group
 

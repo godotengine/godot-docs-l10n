@@ -443,9 +443,9 @@ Vecteur pointant vers le haut, utilisé pour déterminer ce qui est un mur et ce
 - |void| **set_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_velocity**\ (\ )
 
-Current velocity vector (typically meters per second), used and modified during calls to :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`.
+Vecteur de vitesse actuelle (typiquement mètres par seconde), utilisé et modifié pendant les appels à :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`.
 
-\ **Note:** A common mistake is setting this property to the desired velocity multiplied by ``delta``, which produces a motion vector (typically in meters).
+\ **Note:** Une erreur courante est de placer cette propriété à la vitesse souhaitée multipliée par ``delta``, qui produit un vecteur de mouvement (généralement en mètres).
 
 .. rst-class:: classref-item-separator
 
@@ -529,7 +529,7 @@ Renvoie le dernier mouvement appliqué au **CharacterBody3D** lors du dernier ap
 
 :ref:`KinematicCollision3D<class_KinematicCollision3D>` **get_last_slide_collision**\ (\ ) :ref:`🔗<class_CharacterBody3D_method_get_last_slide_collision>`
 
-Returns a :ref:`KinematicCollision3D<class_KinematicCollision3D>` if a collision occurred. The returned value contains information about the latest collision that occurred during the last call to :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Returns ``null`` if no collision occurred. See also :ref:`get_slide_collision()<class_CharacterBody3D_method_get_slide_collision>`.
+Retourne une :ref:`KinematicCollision3D<class_KinematicCollision3D>` si une collision s'est produite. La valeur retournée contient des informations sur la dernière collision qui s'est produite lors du dernier appel à :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Retourne ``null`` si aucune collision ne s'est produite. Voir aussi :ref:`get_slide_collision()<class_CharacterBody3D_method_get_slide_collision>`.
 
 .. rst-class:: classref-item-separator
 

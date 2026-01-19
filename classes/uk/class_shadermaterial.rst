@@ -102,11 +102,11 @@ ShaderMaterial
 
 |void| **set_shader_parameter**\ (\ param\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_ShaderMaterial_method_set_shader_parameter>`
 
-Зміна значення, встановленого для цього матеріалу уніформи в шейдері.
+Змінює значення, встановлене для цього матеріалу уніформи в шейдері.
 
-\ **Примітка:** ``param`` є випадково-чутливим і повинен відповідати назві однорідності в коді точно (не капіталізоване ім'я в інспекторі).
+\ **Примітка:** ``param`` чутливий до регістру та має точно збігатися з назвою уніформи в коді (не з назвою, написаною з великої літери в інспекторі).
 
-\ **Примітка:** Зміни у форму шейдера будуть ефективні на всіх екземплярах з використанням цього **ShaderMaterial**. Щоб запобігти цьому, скористайтеся перистентними уніформами з :ref:`GeometryInstance3D.set_instance_shader_parameter()<class_GeometryInstance3D_method_set_instance_shader_parameter>` або дублікуванням **ShaderMaterial** ресурсу за допомогою :ref:`Resource.changed<class_Resource_signal_changed>`. Уніформи перистансу дозволяють краще перевикористання шейкера і тому швидше, тому їх слід віддавати перевагу над зануренням ``СhaderMaterial`` при можливості.
+\ **Примітка:** Зміни до уніформи шейдера будуть чинними для всіх екземплярів, що використовують цей **ShaderMaterial**. Щоб запобігти цьому, використовуйте уніформи для кожного екземпляра з :ref:`CanvasItem.set_instance_shader_parameter()<class_CanvasItem_method_set_instance_shader_parameter>`, :ref:`GeometryInstance3D.set_instance_shader_parameter()<class_GeometryInstance3D_method_set_instance_shader_parameter>` або дублюйте ресурс **ShaderMaterial** за допомогою :ref:`Resource.duplicate()<class_Resource_method_duplicate>`. Уніформи для кожного екземпляра дозволяють краще повторно використовувати шейдери і, отже, швидші, тому їм слід надавати перевагу над дублюванням **ShaderMaterial**, коли це можливо.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -228,7 +228,7 @@ GraphElement
 - |void| **set_scaling_menus**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_scaling_menus**\ (\ )
 
-If ``true``, :ref:`PopupMenu<class_PopupMenu>`\ s that are descendants of the GraphElement are scaled with the :ref:`GraphEdit<class_GraphEdit>` zoom.
+Якщо значення ``true``, то :ref:`PopupMenu<class_PopupMenu>`, що є нащадками GraphElement, масштабуються за допомогою зуму :ref:`GraphEdit<class_GraphEdit>`.
 
 .. rst-class:: classref-item-separator
 

@@ -7,16 +7,16 @@ NavigationServer2DManager
 
 **Наследует:** :ref:`Object<class_Object>`
 
-A singleton for managing :ref:`NavigationServer2D<class_NavigationServer2D>` implementations.
+Синглтон для управления реализациями :ref:`NavigationServer2D<class_NavigationServer2D>`.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-**NavigationServer2DManager** is the API for registering :ref:`NavigationServer2D<class_NavigationServer2D>` implementations and setting the default implementation.
+**NavigationServer2DManager** — это API для регистрации реализаций :ref:`NavigationServer2D<class_NavigationServer2D>` и установки реализации по умолчанию.
 
-\ **Note:** It is not possible to switch servers at runtime. This class is only used on startup at the server initialization level.
+\ **Примечание:** Переключение серверов во время выполнения невозможно. Этот класс используется только при запуске на уровне инициализации сервера.
 
 .. rst-class:: classref-reftable-group
 
@@ -47,7 +47,7 @@ A singleton for managing :ref:`NavigationServer2D<class_NavigationServer2D>` imp
 
 |void| **register_server**\ (\ name\: :ref:`String<class_String>`, create_callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NavigationServer2DManager_method_register_server>`
 
-Registers a :ref:`NavigationServer2D<class_NavigationServer2D>` implementation by passing a ``name`` and a :ref:`Callable<class_Callable>` that returns a :ref:`NavigationServer2D<class_NavigationServer2D>` object.
+Регистрирует реализацию :ref:`NavigationServer2D<class_NavigationServer2D>`, передав ``name`` и :ref:`Callable<class_Callable>`, который возвращает объект :ref:`NavigationServer2D<class_NavigationServer2D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -59,7 +59,7 @@ Registers a :ref:`NavigationServer2D<class_NavigationServer2D>` implementation b
 
 |void| **set_default_server**\ (\ name\: :ref:`String<class_String>`, priority\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NavigationServer2DManager_method_set_default_server>`
 
-Sets the default :ref:`NavigationServer2D<class_NavigationServer2D>` implementation to the one identified by ``name``, if ``priority`` is greater than the priority of the current default implementation.
+Устанавливает реализацию :ref:`NavigationServer2D<class_NavigationServer2D>` по умолчанию на ту, которая указана в ``name``, если ``priority`` выше приоритета текущей реализации по умолчанию.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

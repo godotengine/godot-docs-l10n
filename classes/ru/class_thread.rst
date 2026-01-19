@@ -14,15 +14,15 @@ Thread
 Описание
 ----------------
 
-A unit of execution in a process. Can run methods on :ref:`Object<class_Object>`\ s simultaneously. The use of synchronization via :ref:`Mutex<class_Mutex>` or :ref:`Semaphore<class_Semaphore>` is advised if working with shared objects.
+Единица выполнения в процессе. Может одновременно выполнять методы объектов :ref:`Object<class_Object>`. При работе с разделяемыми объектами рекомендуется использовать синхронизацию через :ref:`Mutex<class_Mutex>` или :ref:`Semaphore<class_Semaphore>`.
 
-\ **Warning:** To ensure proper cleanup without crashes or deadlocks, when a **Thread**'s reference count reaches zero and it is therefore destroyed, the following conditions must be met:
+\ **Предупреждение:** Для обеспечения надлежащей очистки без сбоев или взаимоблокировок, когда счетчик ссылок **Thread** достигает нуля и, следовательно, уничтожается, должны быть выполнены следующие условия:
 
-- It must not have any :ref:`Mutex<class_Mutex>` objects locked.
+- В нем не должно быть заблокированных объектов :ref:`Mutex<class_Mutex>`.
 
-- It must not be waiting on any :ref:`Semaphore<class_Semaphore>` objects.
+- Он не должен ожидать завершения от каких-либо объектов :ref:`Semaphore<class_Semaphore>`.
 
-- :ref:`wait_to_finish()<class_Thread_method_wait_to_finish>` should have been called on it.
+- На нем должен быть вызван метод :ref:`wait_to_finish()<class_Thread_method_wait_to_finish>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -139,9 +139,9 @@ enum **Priority**: :ref:`🔗<enum_Thread_Priority>`
 
 :ref:`bool<class_bool>` **is_main_thread**\ (\ ) |static| :ref:`🔗<class_Thread_method_is_main_thread>`
 
-Returns ``true`` if the thread this method was called from is the main thread.
+Возвращает ``true``, если поток, из которого был вызван этот метод, является основным потоком.
 
-\ **Note:** This is a static method and isn't associated with a specific **Thread** object.
+\ **Примечание:** Это статический метод, не связанный с конкретным объектом **Thread**.
 
 .. rst-class:: classref-item-separator
 

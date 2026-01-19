@@ -64,7 +64,7 @@ Object for storing OpenXR structure data that is passed when calling into OpenXR
 - |void| **set_next**\ (\ value\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>`\ )
 - :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` **get_next**\ (\ )
 
-Setting another structure object here chains these structures together to extend the API functionality. Consult the OpenXR documentation for which structures can be used with a given API call.
+Установка здесь другого структурного объекта связывает эти структуры вместе, расширяя функциональность API. Для получения информации о том, какие структуры можно использовать с конкретным вызовом API, обратитесь к документации OpenXR.
 
 .. rst-class:: classref-section-separator
 

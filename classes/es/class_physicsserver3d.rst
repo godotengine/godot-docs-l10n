@@ -1085,7 +1085,7 @@ enum **G6DOFJointAxisFlag**: :ref:`🔗<enum_PhysicsServer3D_G6DOFJointAxisFlag>
 
 :ref:`G6DOFJointAxisFlag<enum_PhysicsServer3D_G6DOFJointAxisFlag>` **G6DOF_JOINT_FLAG_ENABLE_LINEAR_LIMIT** = ``0``
 
-If set, linear motion is possible within the given limits.
+Si se activa, el movimiento lineal es posible dentro de los límites dados.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_FLAG_ENABLE_ANGULAR_LIMIT:
 
@@ -1125,7 +1125,7 @@ Si se configura, es posible el movimiento de rotación.
 
 :ref:`G6DOFJointAxisFlag<enum_PhysicsServer3D_G6DOFJointAxisFlag>` **G6DOF_JOINT_FLAG_ENABLE_MOTOR** = ``4``
 
-If set, there is a rotational motor across these axes.
+Si se activa, hay un motor de rotación a través de estos ejes.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_FLAG_ENABLE_LINEAR_MOTOR:
 
@@ -1133,7 +1133,7 @@ If set, there is a rotational motor across these axes.
 
 :ref:`G6DOFJointAxisFlag<enum_PhysicsServer3D_G6DOFJointAxisFlag>` **G6DOF_JOINT_FLAG_ENABLE_LINEAR_MOTOR** = ``5``
 
-If set, there is a linear motor on this axis that targets a specific velocity.
+Si se activa, hay un motor lineal en este eje que apunta a una velocidad específica.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_FLAG_MAX:
 
@@ -1159,7 +1159,7 @@ enum **ShapeType**: :ref:`🔗<enum_PhysicsServer3D_ShapeType>`
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_WORLD_BOUNDARY** = ``0``
 
-Constant for creating a world boundary shape (used by the :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` resource).
+Constante para crear una forma de límite de mundo (utilizado por el recurso :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_SEPARATION_RAY:
 
@@ -1167,7 +1167,7 @@ Constant for creating a world boundary shape (used by the :ref:`WorldBoundarySha
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_SEPARATION_RAY** = ``1``
 
-Constant for creating a separation ray shape (used by the :ref:`SeparationRayShape3D<class_SeparationRayShape3D>` resource).
+Constante para crear una forma de rayo de separación (utilizado por el recurso :ref:`SeparationRayShape3D<class_SeparationRayShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_SPHERE:
 
@@ -1175,7 +1175,7 @@ Constant for creating a separation ray shape (used by the :ref:`SeparationRaySha
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_SPHERE** = ``2``
 
-Constant for creating a sphere shape (used by the :ref:`SphereShape3D<class_SphereShape3D>` resource).
+Constante para crear una forma de esfera (utilizado por el recurso :ref:`SphereShape3D<class_SphereShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_BOX:
 
@@ -1183,7 +1183,7 @@ Constant for creating a sphere shape (used by the :ref:`SphereShape3D<class_Sphe
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_BOX** = ``3``
 
-Constant for creating a box shape (used by the :ref:`BoxShape3D<class_BoxShape3D>` resource).
+Constante para crear una forma de caja (utilizado por el recurso :ref:`BoxShape3D<class_BoxShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_CAPSULE:
 
@@ -1191,7 +1191,7 @@ Constant for creating a box shape (used by the :ref:`BoxShape3D<class_BoxShape3D
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_CAPSULE** = ``4``
 
-Constant for creating a capsule shape (used by the :ref:`CapsuleShape3D<class_CapsuleShape3D>` resource).
+Constante para crear una forma de cápsula (utilizado por el recurso :ref:`CapsuleShape3D<class_CapsuleShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_CYLINDER:
 
@@ -1199,7 +1199,7 @@ Constant for creating a capsule shape (used by the :ref:`CapsuleShape3D<class_Ca
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_CYLINDER** = ``5``
 
-Constant for creating a cylinder shape (used by the :ref:`CylinderShape3D<class_CylinderShape3D>` resource).
+Constante para crear una forma de cilindro (utilizado por el recurso :ref:`CylinderShape3D<class_CylinderShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_CONVEX_POLYGON:
 
@@ -1207,7 +1207,7 @@ Constant for creating a cylinder shape (used by the :ref:`CylinderShape3D<class_
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_CONVEX_POLYGON** = ``6``
 
-Constant for creating a convex polygon shape (used by the :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` resource).
+Constante para crear una forma de polígono convexo (utilizado por el recurso :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_CONCAVE_POLYGON:
 
@@ -1215,7 +1215,7 @@ Constant for creating a convex polygon shape (used by the :ref:`ConvexPolygonSha
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_CONCAVE_POLYGON** = ``7``
 
-Constant for creating a concave polygon (trimesh) shape (used by the :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` resource).
+Constante para crear una forma de polígono cóncavo (trimesh) (utilizado por el recurso :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_HEIGHTMAP:
 
@@ -1647,7 +1647,7 @@ enum **AreaBodyStatus**: :ref:`🔗<enum_PhysicsServer3D_AreaBodyStatus>`
 
 :ref:`AreaBodyStatus<enum_PhysicsServer3D_AreaBodyStatus>` **AREA_BODY_ADDED** = ``0``
 
-El valor del primer parámetro y la función de retrollamada de área recibe, cuando un objeto entra en una de sus formas.
+El valor del primer parámetro y la función de callback de área recibe, cuando un objeto entra en una de sus formas.
 
 .. _class_PhysicsServer3D_constant_AREA_BODY_REMOVED:
 

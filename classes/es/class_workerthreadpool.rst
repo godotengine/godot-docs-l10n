@@ -191,7 +191,7 @@ Devuelve cuántas veces el :ref:`Callable<class_Callable>` de la tarea de grupo 
 
 Devuelve ``true`` si la tarea de grupo con el ID dado está completada.
 
-\ **Nota:** Sólo deberías llamar a este método entre la adición de la tarea de grupo y la espera de su finalización.
+\ **Nota:** Solo deberías llamar a este método entre la adición de la tarea de grupo y la espera de su finalización.
 
 .. rst-class:: classref-item-separator
 
@@ -205,7 +205,7 @@ Devuelve ``true`` si la tarea de grupo con el ID dado está completada.
 
 Devuelve ``true`` si la tarea con el ID dado está completada.
 
-\ **Nota:** Sólo deberías llamar a este método entre la adición de la tarea y la espera de su finalización.
+\ **Nota:** Solo deberías llamar a este método entre la adición de la tarea y la espera de su finalización.
 
 .. rst-class:: classref-item-separator
 

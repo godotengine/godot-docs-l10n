@@ -47,6 +47,10 @@ Proprietà
    +-------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                         | :ref:`prefer_native_menu<class_PopupMenu_property_prefer_native_menu>`                             | ``false``                                                                    |
    +-------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                         | :ref:`shrink_height<class_PopupMenu_property_shrink_height>`                                       | ``true``                                                                     |
+   +-------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                         | :ref:`shrink_width<class_PopupMenu_property_shrink_width>`                                         | ``true``                                                                     |
+   +-------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
    | :ref:`float<class_float>`                       | :ref:`submenu_popup_delay<class_PopupMenu_property_submenu_popup_delay>`                           | ``0.2``                                                                      |
    +-------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
    | :ref:`SystemMenus<enum_NativeMenu_SystemMenus>` | :ref:`system_menu_id<class_PopupMenu_property_system_menu_id>`                                     | ``0``                                                                        |
@@ -455,6 +459,40 @@ Il numero di elementi attualmente nell'elenco.
 Se ``true``, il :ref:`MenuBar<class_MenuBar>` utilizzerà il menu nativo quando supportato.
 
 \ **Nota:** Se il **PopupMenu** è collegato a uno :ref:`StatusIndicator<class_StatusIndicator>`, il :ref:`MenuBar<class_MenuBar>` o un altro elemento **PopupMenu** può utilizzare il menu nativo a prescindere da questa proprietà, usa :ref:`is_native_menu()<class_PopupMenu_method_is_native_menu>` per verificarlo.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_PopupMenu_property_shrink_height:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **shrink_height** = ``true`` :ref:`🔗<class_PopupMenu_property_shrink_height>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_shrink_height**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **get_shrink_height**\ (\ )
+
+If ``true``, shrinks **PopupMenu** to minimum height when it's shown.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_PopupMenu_property_shrink_width:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **shrink_width** = ``true`` :ref:`🔗<class_PopupMenu_property_shrink_width>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_shrink_width**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **get_shrink_width**\ (\ )
+
+If ``true``, shrinks **PopupMenu** to minimum width when it's shown.
 
 .. rst-class:: classref-item-separator
 

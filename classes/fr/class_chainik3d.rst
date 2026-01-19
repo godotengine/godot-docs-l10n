@@ -9,7 +9,7 @@ ChainIK3D
 
 **Hérité par :** :ref:`IterateIK3D<class_IterateIK3D>`, :ref:`SplineIK3D<class_SplineIK3D>`
 
-A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` to apply inverse kinematics to bone chains containing an arbitrary number of bones.
+Un :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` pour appliquer de la cinématique inverse à des chaînes d'os contenant un nombre arbitraire d'os.
 
 .. rst-class:: classref-introduction-group
 
@@ -185,7 +185,7 @@ Renvoie le nom de l'os racine de la chaîne d'os.
 
 :ref:`bool<class_bool>` **is_end_bone_extended**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ChainIK3D_method_is_end_bone_extended>`
 
-Returns ``true`` if the end bone is extended to have a tail.
+Renvoie ``true`` si l'os final est prolongé pour avoir une queue.
 
 .. rst-class:: classref-item-separator
 
@@ -247,9 +247,9 @@ Sets the end bone name of the bone chain.
 
 |void| **set_extend_end_bone**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ChainIK3D_method_set_extend_end_bone>`
 
-If ``enabled`` is ``true``, the end bone is extended to have a tail.
+Si ``enabled`` vaut ``true``, l'os de fin est prolongé pour avoir la queue.
 
-The extended tail config is allocated to the last element in the joint list. In other words, if you set ``enabled`` to ``false``, the config of the last element in the joint list has no effect in the simulated result.
+La configuration de la queue prolongée est attribuée au dernier élément de la liste des liaisons. En d'autres termes, si vous définissez ``enabled`` à ``false``, la configuration du dernier élément de la liste de liaisons n'a aucun effet sur le résultat simulé.
 
 .. rst-class:: classref-item-separator
 

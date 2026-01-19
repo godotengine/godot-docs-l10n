@@ -201,6 +201,8 @@ ItemList
    +-----------------------------------+--------------------------------------------------------------------------------------------+--------------------------------+
    | :ref:`Color<class_Color>`         | :ref:`guide_color<class_ItemList_theme_color_guide_color>`                                 | ``Color(0.7, 0.7, 0.7, 0.25)`` |
    +-----------------------------------+--------------------------------------------------------------------------------------------+--------------------------------+
+   | :ref:`Color<class_Color>`         | :ref:`scroll_hint_color<class_ItemList_theme_color_scroll_hint_color>`                     | ``Color(0, 0, 0, 1)``          |
+   +-----------------------------------+--------------------------------------------------------------------------------------------+--------------------------------+
    | :ref:`int<class_int>`             | :ref:`h_separation<class_ItemList_theme_constant_h_separation>`                            | ``4``                          |
    +-----------------------------------+--------------------------------------------------------------------------------------------+--------------------------------+
    | :ref:`int<class_int>`             | :ref:`icon_margin<class_ItemList_theme_constant_icon_margin>`                              | ``4``                          |
@@ -388,7 +390,7 @@ enum **ScrollHintMode**: :ref:`🔗<enum_ItemList_ScrollHintMode>`
 
 :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>` **SCROLL_HINT_MODE_DISABLED** = ``0``
 
-Scroll hints will never be shown.
+Подсказки при прокрутке никогда не будут отображаться.
 
 .. _class_ItemList_constant_SCROLL_HINT_MODE_BOTH:
 
@@ -396,7 +398,7 @@ Scroll hints will never be shown.
 
 :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>` **SCROLL_HINT_MODE_BOTH** = ``1``
 
-Scroll hints will be shown at the top and bottom.
+Подсказки при прокрутке будут отображаться вверху и внизу.
 
 .. _class_ItemList_constant_SCROLL_HINT_MODE_TOP:
 
@@ -404,7 +406,7 @@ Scroll hints will be shown at the top and bottom.
 
 :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>` **SCROLL_HINT_MODE_TOP** = ``2``
 
-Only the top scroll hint will be shown.
+Будет отображаться только подсказка прокрутки вверху.
 
 .. _class_ItemList_constant_SCROLL_HINT_MODE_BOTTOM:
 
@@ -412,7 +414,7 @@ Only the top scroll hint will be shown.
 
 :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>` **SCROLL_HINT_MODE_BOTTOM** = ``3``
 
-Only the bottom scroll hint will be shown.
+Будет отображаться только подсказка прокрутки внизу экрана.
 
 .. rst-class:: classref-section-separator
 
@@ -667,7 +669,7 @@ Only the bottom scroll hint will be shown.
 - |void| **set_scroll_hint_mode**\ (\ value\: :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>`\ )
 - :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>` **get_scroll_hint_mode**\ (\ )
 
-The way which scroll hints (indicators that show that the content can still be scrolled in a certain direction) will be shown.
+Будет отображаться способ отображения подсказок прокрутки (индикаторов, показывающих, что контент все еще можно прокручивать в определенном направлении).
 
 .. rst-class:: classref-item-separator
 
@@ -718,7 +720,7 @@ The way which scroll hints (indicators that show that the content can still be s
 - |void| **set_tile_scroll_hint**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_scroll_hint_tiled**\ (\ )
 
-If ``true``, the scroll hint texture will be tiled instead of stretched. See :ref:`scroll_hint_mode<class_ItemList_property_scroll_hint_mode>`.
+Если ``true``, текстура подсказки прокрутки будет мозаичной, а не растянутой. См. :ref:`scroll_hint_mode<class_ItemList_property_scroll_hint_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1254,7 +1256,7 @@ If ``true``, the scroll hint texture will be tiled instead of stretched. See :re
 
 |void| **set_item_language**\ (\ idx\: :ref:`int<class_int>`, language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ItemList_method_set_item_language>`
 
-Sets the language code of the text for the item at the given index to ``language``. This is used for line-breaking and text shaping algorithms. If ``language`` is empty, the current locale is used.
+Устанавливает языковой код текста для элемента по заданному индексу равным ``language``. Это используется для алгоритмов переноса строк и формирования текста. Если ``language`` пусто, используется текущая локаль.
 
 .. rst-class:: classref-item-separator
 
@@ -1421,6 +1423,18 @@ Sets the language code of the text for the item at the given index to ``language
 
 ----
 
+.. _class_ItemList_theme_color_scroll_hint_color:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Color<class_Color>` **scroll_hint_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ItemList_theme_color_scroll_hint_color>`
+
+:ref:`Color<class_Color>` используется для модуляции текстуры :ref:`scroll_hint<class_ItemList_theme_icon_scroll_hint>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_ItemList_theme_constant_h_separation:
 
 .. rst-class:: classref-themeproperty
@@ -1513,7 +1527,7 @@ Sets the language code of the text for the item at the given index to ``language
 
 :ref:`Texture2D<class_Texture2D>` **scroll_hint** :ref:`🔗<class_ItemList_theme_icon_scroll_hint>`
 
-The indicator that will be shown when the content can still be scrolled. See :ref:`scroll_hint_mode<class_ItemList_property_scroll_hint_mode>`.
+Индикатор, который будет отображаться, когда контент еще можно прокручивать. См. :ref:`scroll_hint_mode<class_ItemList_property_scroll_hint_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1549,7 +1563,7 @@ The indicator that will be shown when the content can still be scrolled. See :re
 
 :ref:`StyleBox<class_StyleBox>` **focus** :ref:`🔗<class_ItemList_theme_style_focus>`
 
-The focused style for the **ItemList**, drawn on top of everything.
+Стиль выделения для **ItemList**, отображаемый поверх всего остального.
 
 .. rst-class:: classref-item-separator
 

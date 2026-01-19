@@ -25,7 +25,7 @@ See also :ref:`ResourceImporterBMFont<class_ResourceImporterBMFont>` and :ref:`R
 Tutoriels
 ------------------
 
-- `Dynamic fonts - Using fonts <../tutorials/ui/gui_using_fonts.html#dynamic-fonts>`__
+- `Polices dynamiques - Utiliser des polices d'écriture <../tutorials/ui/gui_using_fonts.html#dynamic-fonts>`__
 
 .. rst-class:: classref-reftable-group
 

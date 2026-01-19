@@ -216,7 +216,9 @@ enum **PlayMode**: :ref:`🔗<enum_AnimationNodeAnimation_PlayMode>`
 - |void| **set_timeline_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_timeline_length**\ (\ )
 
-當 :ref:`use_custom_timeline<class_AnimationNodeAnimation_property_use_custom_timeline>` 為 ``true`` 時，可偏移動畫的起始位置。
+The length of the custom timeline.
+
+If :ref:`stretch_time_scale<class_AnimationNodeAnimation_property_stretch_time_scale>` is ``true``, scales the animation to this length.
 
 .. rst-class:: classref-item-separator
 

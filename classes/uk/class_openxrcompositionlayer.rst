@@ -361,9 +361,9 @@ enum **Swizzle**: :ref:`🔗<enum_OpenXRCompositionLayer_Swizzle>`
 - |void| **set_protected_content**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_protected_content**\ (\ )
 
-If enabled, the OpenXR swapchain will be created with the ``XR_SWAPCHAIN_CREATE_PROTECTED_CONTENT_BIT`` flag, which will protect its contents from CPU access.
+Якщо ввімкнено, ланцюжок обміну OpenXR буде створено з прапорцем ``XR_SWAPCHAIN_CREATE_PROTECTED_CONTENT_BIT``, який захистить його вміст від доступу процесора.
 
-When used with an Android Surface, this may allow DRM content to be presented, and will only take effect when the Surface is first created; later changes to this property will have no effect.
+Під час використання з Android Surface це може дозволити відображення контенту DRM і набуде чинності лише під час першого створення Surface; пізніші зміни цієї властивості не матимуть жодного ефекту.
 
 .. rst-class:: classref-item-separator
 

@@ -337,11 +337,13 @@ Il risultato è nel segmento che va da ``y = 0`` a ``y = 5``. È la posizione pi
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_id_path**\ (\ from_id\: :ref:`int<class_int>`, to_id\: :ref:`int<class_int>`, allow_partial_path\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AStar2D_method_get_id_path>`
 
-Restituisce un array con gli ID dei punti che formano il percorso trovato da AStar2D tra i punti indicati. L'array è ordinato dal punto iniziale al punto finale del percorso.
+Returns an array with the IDs of the points that form the path found by AStar2D between the given points. The array is ordered from the starting point to the ending point of the path.
 
-Se non c'è un percorso valido per la destinazione, e ``allow_partial_path`` è ``true``, restituisce un percorso al punto più vicino alla destinazione che può essere raggiunto.
+If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
 
-\ **Nota:** Quando ``allow_partial_path`` è ``true`` e ``to_id`` è disabilitato, la ricerca potrebbe richiedere un tempo insolitamente lungo per essere completata.
+If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
+
+\ **Note:** When ``allow_partial_path`` is ``true`` and ``to_id`` is disabled the search may take an unusually long time to finish.
 
 
 .. tabs::
@@ -350,7 +352,7 @@ Se non c'è un percorso valido per la destinazione, e ``allow_partial_path`` è 
 
     var astar = AStar2D.new()
     astar.add_point(1, Vector2(0, 0))
-    astar.add_point(2, Vector2(0, 1), 1) # Il peso predefinito è 1
+    astar.add_point(2, Vector2(0, 1), 1) # Default weight is 1
     astar.add_point(3, Vector2(1, 1))
     astar.add_point(4, Vector2(2, 0))
 
@@ -359,13 +361,13 @@ Se non c'è un percorso valido per la destinazione, e ``allow_partial_path`` è 
     astar.connect_points(4, 3, false)
     astar.connect_points(1, 4, false)
 
-    var res = astar.get_id_path(1, 3) # Restituisce [1, 2, 3]
+    var res = astar.get_id_path(1, 3) # Returns [1, 2, 3]
 
  .. code-tab:: csharp
 
     var astar = new AStar2D();
     astar.AddPoint(1, new Vector2(0, 0));
-    astar.AddPoint(2, new Vector2(0, 1), 1); // Il peso predefinito è 1
+    astar.AddPoint(2, new Vector2(0, 1), 1); // Default weight is 1
     astar.AddPoint(3, new Vector2(1, 1));
     astar.AddPoint(4, new Vector2(2, 0));
 
@@ -373,11 +375,11 @@ Se non c'è un percorso valido per la destinazione, e ``allow_partial_path`` è 
     astar.ConnectPoints(2, 3, false);
     astar.ConnectPoints(4, 3, false);
     astar.ConnectPoints(1, 4, false);
-    long[] res = astar.GetIdPath(1, 3); // Restituisce [1, 2, 3]
+    long[] res = astar.GetIdPath(1, 3); // Returns [1, 2, 3]
 
 
 
-Se si cambia il peso a 3 per il punto 2, allora il risultato sarà ``[1, 4, 3]`` invece, poiché adesso anche se la distanza è più lunga, è "più facile" arrivare attraverso il punto 4 che attraverso il punto 2.
+If you change the 2nd point's weight to 3, then the result will be ``[1, 4, 3]`` instead, because now even though the distance is longer, it's "easier" to get through point 4 than through point 2.
 
 .. rst-class:: classref-item-separator
 
@@ -468,13 +470,15 @@ Restituisce un array di tutti gli ID dei punti.
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_point_path**\ (\ from_id\: :ref:`int<class_int>`, to_id\: :ref:`int<class_int>`, allow_partial_path\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AStar2D_method_get_point_path>`
 
-Restituisce un array con i punti che sono presenti nel percorso trovato da AStar2D tra i punti indicati. L'array è ordinato dal punto iniziale al punto finale del percorso.
+Returns an array with the points that are in the path found by AStar2D between the given points. The array is ordered from the starting point to the ending point of the path.
 
-Se non c'è un percorso valido per la destinazione, e ``allow_partial_path`` è ``true``, restituisce un percorso al punto più vicino alla destinazione che può essere raggiunto.
+If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
 
-\ **Nota:** Questo metodo non è thread-safe; si può usare solo da un singolo :ref:`Thread<class_Thread>` alla volta. Si consiglia di utilizzare :ref:`Mutex<class_Mutex>` per garantire l'accesso esclusivo a un thread ed evitare accessi concorrenti.
+If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
 
-Inoltre, quando ``allow_partial_path`` è ``true`` e ``to_id`` è disabilitato, la ricerca potrebbe richiedere un tempo insolitamente lungo per essere completata.
+\ **Note:** This method is not thread-safe; it can only be used from a single :ref:`Thread<class_Thread>` at a given time. Consider using :ref:`Mutex<class_Mutex>` to ensure exclusive access to one thread to avoid race conditions.
+
+Additionally, when ``allow_partial_path`` is ``true`` and ``to_id`` is disabled the search may take an unusually long time to finish.
 
 .. rst-class:: classref-item-separator
 

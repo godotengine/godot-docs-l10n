@@ -196,11 +196,11 @@ EditorImportPlugins работают, связываясь с определен
 
 :ref:`bool<class_bool>` **_can_import_threaded**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorImportPlugin_private_method__can_import_threaded>`
 
-Tells whether this importer can be run in parallel on threads, or, on the contrary, it's only safe for the editor to call it from the main thread, for one file at a time.
+Указывает, может ли этот импортер выполняться параллельно в потоках, или, наоборот, редактору безопасно вызывать его только из основного потока, для одного файла за раз.
 
-If this importer's implementation is thread-safe and can be run in parallel, override this with ``true`` to optimize for concurrency.
+Если реализация этого импортера потокобезопасна и может выполняться параллельно, переопределите это значение на ``true``, чтобы оптимизировать параллельное выполнение.
 
-If not overridden, returns ``false``.
+Если не переопределено, возвращает ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -212,9 +212,9 @@ If not overridden, returns ``false``.
 
 :ref:`int<class_int>` **_get_format_version**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_format_version>`
 
-Gets the format version of this importer. Increment this version when making incompatible changes to the format of the imported resources.
+Получает версию формата этого импортера. Увеличивайте эту версию при внесении несовместимых изменений в формат импортируемых ресурсов.
 
-If not overridden, the format version is ``0``.
+Если не переопределено, версия формата равна ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -301,9 +301,9 @@ If not overridden, the format version is ``0``.
 
 :ref:`int<class_int>` **_get_preset_count**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_preset_count>`
 
-Gets the number of initial presets defined by the plugin. Use :ref:`_get_import_options()<class_EditorImportPlugin_private_method__get_import_options>` to get the default options for the preset and :ref:`_get_preset_name()<class_EditorImportPlugin_private_method__get_preset_name>` to get the name of the preset.
+Получает количество начальных предустановок, определенных плагином. Используйте :ref:`_get_import_options()<class_EditorImportPlugin_private_method__get_import_options>`, чтобы получить параметры по умолчанию для предустановки, и :ref:`_get_preset_name()<class_EditorImportPlugin_private_method__get_preset_name>`, чтобы получить имя предустановки.
 
-By default, there are no presets.
+По умолчанию предустановок нет.
 
 .. rst-class:: classref-item-separator
 

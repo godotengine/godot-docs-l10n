@@ -525,7 +525,7 @@ Renvoie le dernier mouvement appliqué au **CharacterBody2D** lors du dernier ap
 
 :ref:`KinematicCollision2D<class_KinematicCollision2D>` **get_last_slide_collision**\ (\ ) :ref:`🔗<class_CharacterBody2D_method_get_last_slide_collision>`
 
-Returns a :ref:`KinematicCollision2D<class_KinematicCollision2D>` if a collision occurred. The returned value contains information about the latest collision that occurred during the last call to :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Returns ``null`` if no collision occurred. See also :ref:`get_slide_collision()<class_CharacterBody2D_method_get_slide_collision>`.
+Retourne une :ref:`KinematicCollision2D<class_KinematicCollision2D>` si une collision s'est produite. La valeur retournée contient des informations sur la dernière collision qui s'est produite lors du dernier appel à :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Retourne ``null`` si aucune collision ne s'est produite. Voir aussi :ref:`get_slide_collision()<class_CharacterBody2D_method_get_slide_collision>`.
 
 .. rst-class:: classref-item-separator
 
@@ -573,25 +573,25 @@ Renvoie la vitesse réelle actuelle depuis le dernier appel à :ref:`move_and_sl
 
 :ref:`KinematicCollision2D<class_KinematicCollision2D>` **get_slide_collision**\ (\ slide_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CharacterBody2D_method_get_slide_collision>`
 
-Returns a :ref:`KinematicCollision2D<class_KinematicCollision2D>`, which contains information about a collision that occurred during the last call to :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Since the body can collide several times in a single call to :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`, you must specify the index of the collision in the range 0 to (:ref:`get_slide_collision_count()<class_CharacterBody2D_method_get_slide_collision_count>` - 1). See also :ref:`get_last_slide_collision()<class_CharacterBody2D_method_get_last_slide_collision>`.
+Renvoie une :ref:`KinematicCollision2D<class_KinematicCollision2D>` qui contient des informations sur une collision qui s'est produite lors du dernier appel à :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Comme le corps peut entrer en collisions plusieurs fois dans un seul appel à :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`, vous devez spécifier l'index de la collision dans une plage de 0 à (:ref:`get_slide_collision_count()<class_CharacterBody2D_method_get_slide_collision_count>` - 1).
 
-\ **Example:** Iterate through the collisions with a ``for`` loop:
+\ **Exemple :** Itérer sur les collisions avec une boucle ``for``\  :
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    for i in get_slide_collision_count():
+    for i in get_slide_collision_count() :
         var collision = get_slide_collision(i)
-        print("Collided with: ", collision.get_collider().name)
+        print("Entré en collision avec : ", collision.get_collider().name)
 
  .. code-tab:: csharp
 
-    for (int i = 0; i < GetSlideCollisionCount(); i++)
+    for (int i = 0 ; i < GetSlideCollisionCount() ; i++)
     {
-        KinematicCollision2D collision = GetSlideCollision(i);
-        GD.Print("Collided with: ", (collision.GetCollider() as Node).Name);
+        KinematicCollision2D collision = GetSlideCollision(i) ;
+        GD.Print("Entré en collision avec : ", (collision.GetCollider() as Node).Name) ;
     }
 
 

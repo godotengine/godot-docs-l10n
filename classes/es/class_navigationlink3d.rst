@@ -9,14 +9,14 @@ NavigationLink3D
 
 **Hereda:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A link between two positions on :ref:`NavigationRegion3D<class_NavigationRegion3D>`\ s that agents can be routed through.
+Un enlace entre dos posiciones en :ref:`NavigationRegion3D<class_NavigationRegion3D>`\ s por el que los agentes pueden ser enrutados.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-A link between two positions on :ref:`NavigationRegion3D<class_NavigationRegion3D>`\ s that agents can be routed through. These positions can be on the same :ref:`NavigationRegion3D<class_NavigationRegion3D>` or on two different ones. Links are useful to express navigation methods other than traveling along the surface of the navigation mesh, such as ziplines, teleporters, or gaps that can be jumped across.
+Un enlace entre dos posiciones en :ref:`NavigationRegion3D<class_NavigationRegion3D>`\ s por el que los agentes pueden ser enrutados. Estas posiciones pueden estar en la misma :ref:`NavigationRegion3D<class_NavigationRegion3D>` o en dos diferentes. Los enlaces son útiles para expresar métodos de navegación distintos a los de viajar por la superficie de la malla de navegación, como tirolinas, teletransportadores o huecos que se pueden saltar.
 
 .. rst-class:: classref-introduction-group
 
@@ -97,7 +97,7 @@ Descripciones de Propiedades
 - |void| **set_bidirectional**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_bidirectional**\ (\ )
 
-Whether this link can be traveled in both directions or only from :ref:`start_position<class_NavigationLink3D_property_start_position>` to :ref:`end_position<class_NavigationLink3D_property_end_position>`.
+Indica si este enlace puede ser recorrido en ambas direcciones o solo desde :ref:`start_position<class_NavigationLink3D_property_start_position>` hasta :ref:`end_position<class_NavigationLink3D_property_end_position>`.
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ The distance the link will search is controlled by :ref:`NavigationServer3D.map_
 - |void| **set_enter_cost**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_enter_cost**\ (\ )
 
-When pathfinding enters this link from another regions navigation mesh the :ref:`enter_cost<class_NavigationLink3D_property_enter_cost>` value is added to the path distance for determining the shortest path.
+Cuando la búsqueda de trayectos entra en este enlace desde la malla de navegación de otra región, el valor :ref:`enter_cost<class_NavigationLink3D_property_enter_cost>` se añade a la distancia del trayecto para determinar el trayecto más corto.
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ The distance the link will search is controlled by :ref:`NavigationServer3D.map_
 - |void| **set_travel_cost**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_travel_cost**\ (\ )
 
-When pathfinding moves along the link the traveled distance is multiplied with :ref:`travel_cost<class_NavigationLink3D_property_travel_cost>` for determining the shortest path.
+Cuando la búsqueda de trayecto se mueve a lo largo del enlace, la distancia recorrida se multiplica por :ref:`travel_cost<class_NavigationLink3D_property_travel_cost>` para determinar el trayecto más corto.
 
 .. rst-class:: classref-section-separator
 
@@ -224,7 +224,7 @@ Descripciones de Métodos
 
 :ref:`Vector3<class_Vector3>` **get_global_end_position**\ (\ ) |const| :ref:`🔗<class_NavigationLink3D_method_get_global_end_position>`
 
-Returns the :ref:`end_position<class_NavigationLink3D_property_end_position>` that is relative to the link as a global position.
+Devuelve la :ref:`end_position<class_NavigationLink3D_property_end_position>` que es relativa al enlace como una posición global.
 
 .. rst-class:: classref-item-separator
 
@@ -236,7 +236,7 @@ Returns the :ref:`end_position<class_NavigationLink3D_property_end_position>` th
 
 :ref:`Vector3<class_Vector3>` **get_global_start_position**\ (\ ) |const| :ref:`🔗<class_NavigationLink3D_method_get_global_start_position>`
 
-Returns the :ref:`start_position<class_NavigationLink3D_property_start_position>` that is relative to the link as a global position.
+Devuelve la :ref:`start_position<class_NavigationLink3D_property_start_position>` que es relativa al enlace como una posición global.
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +260,7 @@ Devuelve si la capa especificada de la máscara de bits :ref:`navigation_layers<
 
 :ref:`RID<class_RID>` **get_navigation_map**\ (\ ) |const| :ref:`🔗<class_NavigationLink3D_method_get_navigation_map>`
 
-Returns the current navigation map :ref:`RID<class_RID>` used by this link.
+Devuelve el :ref:`RID<class_RID>` del mapa de navegación actual utilizado por este enlace.
 
 .. rst-class:: classref-item-separator
 
@@ -284,7 +284,7 @@ Devuelve el :ref:`RID<class_RID>` de este enlace en :ref:`NavigationServer3D<cla
 
 |void| **set_global_end_position**\ (\ position\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_NavigationLink3D_method_set_global_end_position>`
 
-Sets the :ref:`end_position<class_NavigationLink3D_property_end_position>` that is relative to the link from a global ``position``.
+Establece la :ref:`end_position<class_NavigationLink3D_property_end_position>` que es relativa al enlace desde una ``position`` global.
 
 .. rst-class:: classref-item-separator
 
@@ -320,7 +320,7 @@ Based on ``value``, enables or disables the specified layer in the :ref:`navigat
 
 |void| **set_navigation_map**\ (\ navigation_map\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_NavigationLink3D_method_set_navigation_map>`
 
-Sets the :ref:`RID<class_RID>` of the navigation map this link should use. By default the link will automatically join the :ref:`World3D<class_World3D>` default navigation map so this function is only required to override the default map.
+Establece el :ref:`RID<class_RID>` del mapa de navegación que este enlace debe usar. Por defecto, el enlace se unirá automáticamente al mapa de navegación predeterminado de :ref:`World3D<class_World3D>`, por lo que esta función solo es necesaria para sobrescribir el mapa predeterminado.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

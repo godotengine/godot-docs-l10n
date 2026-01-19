@@ -61,7 +61,7 @@ JavaObject
 
 :ref:`bool<class_bool>` **has_java_method**\ (\ method\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_JavaObject_method_has_java_method>`
 
-Returns ``true`` if the given ``method`` name exists in the object's Java methods.
+Возвращает ``true``, если заданное имя ``method`` существует в методах Java объекта.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

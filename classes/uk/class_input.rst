@@ -142,7 +142,7 @@ Input
    +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                                  | :ref:`set_gyroscope<class_Input_method_set_gyroscope>`\ (\ value\: :ref:`Vector3<class_Vector3>`\ )                                                                                                                                                                                                                 |
    +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                                 | :ref:`set_joy_light<class_Input_method_set_joy_light>`\ (\ device\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ )                                                                                                                                                                                     |
+   | |void|                                                                  | :ref:`set_joy_light<class_Input_method_set_joy_light>`\ (\ device\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ )                                                                                                                                                                                     |
    +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                                  | :ref:`set_magnetometer<class_Input_method_set_magnetometer>`\ (\ value\: :ref:`Vector3<class_Vector3>`\ )                                                                                                                                                                                                           |
    +-------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -807,9 +807,9 @@ I-beam курсор. Зазвичай використовується для в
 
 :ref:`bool<class_bool>` **has_joy_light**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_has_joy_light>`
 
-Returns ``true`` if the joypad has an LED light that can change colors and/or brightness. See also :ref:`set_joy_light()<class_Input_method_set_joy_light>`.
+Повертає ``true``, якщо джойстик має світлодіодну підсвітку, яка може змінювати кольори та/або яскравість. Див. також :ref:`set_joy_light()<class_Input_method_set_joy_light>`.
 
-\ **Note:** This feature is only supported on Windows, Linux, and macOS.
+\ **Примітка:** Ця функція підтримується лише у Windows, Linux та macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1132,13 +1132,13 @@ Returns ``true`` if the joypad has an LED light that can change colors and/or br
 
 .. rst-class:: classref-method
 
-:ref:`bool<class_bool>` **set_joy_light**\ (\ device\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Input_method_set_joy_light>`
+|void| **set_joy_light**\ (\ device\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Input_method_set_joy_light>`
 
-Sets the joypad's LED light, if available, to the specified color. Returns ``true`` if the operation was successful. See also :ref:`has_joy_light()<class_Input_method_has_joy_light>`.
+Встановлює для світлодіода джойстика, якщо він доступний, заданий колір. Див. також :ref:`has_joy_light()<class_Input_method_has_joy_light>`.
 
-\ **Note:** There is no way to get the color of the light from a joypad. If you need to know the assigned color, store it separately.
+\ **Примітка:** Немає способу отримати колір світла з джойстика. Якщо вам потрібно знати призначений колір, збережіть його окремо.
 
-\ **Note:** This feature is only supported on Windows, Linux, and macOS.
+\ **Примітка:** Ця функція підтримується лише у Windows, Linux та macOS.
 
 .. rst-class:: classref-item-separator
 

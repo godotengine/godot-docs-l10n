@@ -14,9 +14,9 @@ RenderSceneDataRD
 Описание
 ----------------
 
-Объект содержит данные сцены, связанные с рендерингом одного кадра области просмотра.
+Object holds scene data related to rendering a single frame of a viewport. See also :ref:`RenderSceneData<class_RenderSceneData>`, :ref:`RenderData<class_RenderData>`, and :ref:`RenderDataRD<class_RenderDataRD>`.
 
-\ **Примечание:** Это внутренний объект сервера рендеринга, не создавайте его из скрипта.
+\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

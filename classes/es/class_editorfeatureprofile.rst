@@ -178,7 +178,7 @@ Descripciones de Métodos
 
 :ref:`String<class_String>` **get_feature_name**\ (\ feature\: :ref:`Feature<enum_EditorFeatureProfile_Feature>`\ ) :ref:`🔗<class_EditorFeatureProfile_method_get_feature_name>`
 
-Returns the specified ``feature``'s human-readable name.
+Devuelve el nombre legible para humanos de la ``feature`` especificada.
 
 .. rst-class:: classref-item-separator
 

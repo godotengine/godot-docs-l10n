@@ -455,7 +455,7 @@ EditorExportPlatformAndroid
 
 :ref:`String<class_String>` **apk_expansion/SALT** :ref:`🔗<class_EditorExportPlatformAndroid_property_apk_expansion/SALT>`
 
-Array of random bytes that the licensing policy uses to create an `Obfuscator <https://developer.android.com/google/play/licensing/adding-licensing#impl-Obfuscator>`__.
+Массив случайных байтов, который политика лицензирования использует для создания `обфускатора <https://developer.android.com/google/play/licensing/adding-licensing#impl-Obfuscator>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1871,7 +1871,7 @@ Array of random bytes that the licensing policy uses to create an `Obfuscator <h
 
 :ref:`bool<class_bool>` **permissions/manage_media** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/manage_media>`
 
-Allows an application to modify and delete media files on this device or any connected storage device without user confirmation. Applications must already be granted the ``READ_EXTERNAL_STORAGE`` or ``MANAGE_EXTERNAL_STORAGE`` permissions for this permission to take effect. See `MANAGE_MEDIA <https://developer.android.com/reference/android/Manifest.permission#MANAGE_MEDIA>`__.
+Позволяет приложению изменять и удалять медиафайлы на этом устройстве или любом подключенном устройстве хранения без подтверждения пользователя. Для того чтобы это разрешение вступило в силу, приложению должны быть предварительно предоставлены разрешения ``READ_EXTERNAL_STORAGE`` или ``MANAGE_EXTERNAL_STORAGE``. См. `MANAGE_MEDIA <https://developer.android.com/reference/android/Manifest.permission#MANAGE_MEDIA>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2825,7 +2825,7 @@ Allows an application to modify and delete media files on this device or any con
 
 :ref:`Color<class_Color>` **screen/background_color** :ref:`🔗<class_EditorExportPlatformAndroid_property_screen/background_color>`
 
-The background color used for the root window. By default it's :ref:`Color.BLACK<class_Color_constant_BLACK>`.
+Цвет фона, используемый для корневого окна. По умолчанию это :ref:`Color.BLACK<class_Color_constant_BLACK>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2911,9 +2911,9 @@ The background color used for the root window. By default it's :ref:`Color.BLACK
 
 :ref:`bool<class_bool>` **shader_baker/enabled** :ref:`🔗<class_EditorExportPlatformAndroid_property_shader_baker/enabled>`
 
-If ``true``, shaders will be compiled and embedded in the application. This option is only supported when using the Forward+ or Mobile renderers.
+Если ``true``, шейдеры будут скомпилированы и встроены в приложение. Эта опция поддерживается только при использовании рендереров Forward+ или Mobile.
 
-\ **Note:** When exporting as a dedicated server, the shader baker is always disabled since no rendering is performed.
+\ **Примечание:** При экспорте в качестве выделенного сервера запекатель шейдеров всегда отключен, поскольку рендеринг не выполняется.
 
 .. rst-class:: classref-item-separator
 

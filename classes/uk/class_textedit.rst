@@ -1501,7 +1501,7 @@ enum **GutterType**: :ref:`🔗<enum_TextEdit_GutterType>`
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+Код мови, що використовується для алгоритмів розриву рядків та формування тексту. Якщо залишити поле порожнім, використовується поточна локалізація.
 
 .. rst-class:: classref-item-separator
 
@@ -4212,7 +4212,7 @@ String значення **TextEdit**.
 
 :ref:`int<class_int>` **wrap_offset** = ``10`` :ref:`🔗<class_TextEdit_theme_constant_wrap_offset>`
 
-Sets an additional margin for line wrapping width.
+Встановлює додатковий відступ для ширини переносу рядка.
 
 .. rst-class:: classref-item-separator
 

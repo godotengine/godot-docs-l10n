@@ -424,7 +424,7 @@ enum **FeedPosition**: :ref:`🔗<enum_CameraFeed_FeedPosition>`
 
 |void| **set_ycbcr_images**\ (\ y_image\: :ref:`Image<class_Image>`, cbcr_image\: :ref:`Image<class_Image>`\ ) :ref:`🔗<class_CameraFeed_method_set_ycbcr_images>`
 
-Sets Y and CbCr images for this feed.
+Задает значения Y и CbCr изображений для этого потока.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

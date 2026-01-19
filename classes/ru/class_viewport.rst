@@ -1309,7 +1309,7 @@ The rendering layers in which this **Viewport** renders :ref:`CanvasItem<class_C
 - |void| **set_default_canvas_item_texture_filter**\ (\ value\: :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>`\ )
 - :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **get_default_canvas_item_texture_filter**\ (\ )
 
-The default filter mode used by :ref:`CanvasItem<class_CanvasItem>` nodes in this viewport.
+Режим фильтрации по умолчанию, используемый узлами :ref:`CanvasItem<class_CanvasItem>` в этом окне просмотра.
 
 .. rst-class:: classref-item-separator
 
@@ -1326,7 +1326,7 @@ The default filter mode used by :ref:`CanvasItem<class_CanvasItem>` nodes in thi
 - |void| **set_default_canvas_item_texture_repeat**\ (\ value\: :ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>`\ )
 - :ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>` **get_default_canvas_item_texture_repeat**\ (\ )
 
-The default repeat mode used by :ref:`CanvasItem<class_CanvasItem>` nodes in this viewport.
+Режим повтора по умолчанию, используемый узлами :ref:`CanvasItem<class_CanvasItem>` в этом окне просмотра.
 
 .. rst-class:: classref-item-separator
 
@@ -1447,7 +1447,7 @@ The default repeat mode used by :ref:`CanvasItem<class_CanvasItem>` nodes in thi
 - |void| **set_drag_threshold**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_drag_threshold**\ (\ )
 
-The minimum distance the mouse cursor must move while pressed before a drag operation begins.
+Минимальное расстояние, на которое должен переместиться курсор мыши при нажатии, прежде чем начнется операция перетаскивания.
 
 .. rst-class:: classref-item-separator
 
@@ -1965,11 +1965,11 @@ The minimum distance the mouse cursor must move while pressed before a drag oper
 - |void| **set_use_debanding**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_debanding**\ (\ )
 
-When using the Mobile or Forward+ renderers, set :ref:`use_debanding<class_Viewport_property_use_debanding>` to enable or disable the debanding feature of this **Viewport**. If :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` is ``false``, 2D rendering is *not* affected by debanding unless the :ref:`Environment.background_mode<class_Environment_property_background_mode>` is :ref:`Environment.BG_CANVAS<class_Environment_constant_BG_CANVAS>`. If :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` is ``true``, debanding will only be applied if this is the root **Viewport** and will affect all 2D and 3D rendering, including canvas items.
+При использовании рендереров Mobile или Forward+ установите параметр :ref:`use_debanding<class_Viewport_property_use_debanding>`, чтобы включить или отключить функцию устранения полос в этом **Viewport**. Если :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` имеет значение ``false``, 2D-рендеринг *не* затрагивается устранением полос, если только :ref:`Environment.background_mode<class_Environment_property_background_mode>` не имеет значения :ref:`Environment.BG_CANVAS<class_Environment_constant_BG_CANVAS>`. Если :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` имеет значение ``true``, устранение полос будет применяться только в том случае, если это корневой **Viewport**, и повлияет на весь 2D и 3D рендеринг, включая элементы холста.
 
-\ :ref:`use_debanding<class_Viewport_property_use_debanding>` has no effect when using the Compatibility rendering method. The Mobile renderer can also use material debanding, which can be set with :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` or configured with :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>`.
+Параметр :ref:`use_debanding<class_Viewport_property_use_debanding>` не оказывает никакого эффекта при использовании метода рендеринга Compatibility. Мобильный рендерер также может использовать сглаживание материалов, которое можно установить с помощью :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` или настроить с помощью :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>`.
 
-See also :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>`, :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>`, and :ref:`RenderingServer.viewport_set_use_debanding()<class_RenderingServer_method_viewport_set_use_debanding>`.
+См. также :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>`, :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` и :ref:`RenderingServer.viewport_set_use_debanding()<class_RenderingServer_method_viewport_set_use_debanding>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1986,9 +1986,9 @@ See also :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<cla
 - |void| **set_use_hdr_2d**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_hdr_2d**\ (\ )
 
-If ``true``, 2D rendering will use a high dynamic range (HDR) ``RGBA16`` format framebuffer. Additionally, 2D rendering will be performed on linear values and will be converted using the appropriate transfer function immediately before blitting to the screen (if the Viewport is attached to the screen).
+Если ``true``, 2D-рендеринг будет использовать буфер кадров в формате RGBA16 с высоким динамическим диапазоном (HDR). Кроме того, 2D-рендеринг будет выполняться на линейных значениях и будет преобразован с использованием соответствующей функции преобразования непосредственно перед выводом на экран (если область просмотра подключена к экрану).
 
-Practically speaking, this means that the end result of the Viewport will not be clamped to the ``0-1`` range and can be used in 3D rendering without color encoding adjustments. This allows 2D rendering to take advantage of effects requiring high dynamic range (e.g. 2D glow) as well as substantially improves the appearance of effects requiring highly detailed gradients.
+На практике это означает, что конечный результат области просмотра не будет ограничен диапазоном ``0-1`` и может использоваться в 3D-рендеринге без корректировки цветового кодирования. Это позволяет 2D-рендерингу использовать преимущества эффектов, требующих высокого динамического диапазона (например, 2D-свечение), а также существенно улучшает внешний вид эффектов, требующих высокодетализированных градиентов.
 
 .. rst-class:: classref-item-separator
 
@@ -2212,9 +2212,9 @@ Practically speaking, this means that the end result of the Viewport will not be
 
 :ref:`Camera2D<class_Camera2D>` **get_camera_2d**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_camera_2d>`
 
-Returns the currently active 2D camera. Returns ``null`` if there are no active cameras.
+Возвращает текущую активную 2D-камеру. Возвращает ``null``, если активных камер нет.
 
-\ **Note:** If called while the *Camera Override* system is active in editor, this will return the internally managed override camera. It is therefore advised to avoid caching the return value, or to check that the cached value is still a valid instance and is the current camera before use. See :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>` and :ref:`Camera2D.is_current()<class_Camera2D_method_is_current>`.
+\ **Примечание:** Если этот метод вызывается, когда в редакторе активна система *Переопределения камеры*, он вернет внутренне управляемую камеру переопределения. Поэтому рекомендуется избегать кэширования возвращаемого значения или перед использованием убедиться, что кэшированное значение по-прежнему является допустимым экземпляром и текущей камерой. См. :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>` и :ref:`Camera2D.is_current()<class_Camera2D_method_is_current>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2226,9 +2226,9 @@ Returns the currently active 2D camera. Returns ``null`` if there are no active 
 
 :ref:`Camera3D<class_Camera3D>` **get_camera_3d**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_camera_3d>`
 
-Returns the currently active 3D camera. Returns ``null`` if there are no active cameras.
+Возвращает текущую активную 3D-камеру. Возвращает ``null``, если активных камер нет.
 
-\ **Note:** If called while the *Camera Override* system is active in editor, this will return the internally managed override camera. It is therefore advised to avoid caching the return value, or to check that the cached value is a valid instance and is the current camera before use. See :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>` and :ref:`Camera3D.current<class_Camera3D_property_current>`.
+\ **Примечание:** Если этот метод вызывается, когда в редакторе активна система *Переопределения камеры*, он вернет внутренне управляемую камеру переопределения. Поэтому рекомендуется избегать кэширования возвращаемого значения или перед использованием проверять, является ли кэшированное значение допустимым экземпляром и текущей камерой. См. :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>` и :ref:`Camera3D.current<class_Camera3D_property_current>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2352,9 +2352,9 @@ Returns the currently active 3D camera. Returns ``null`` if there are no active 
 
 :ref:`ViewportTexture<class_ViewportTexture>` **get_texture**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_texture>`
 
-Returns the viewport's texture.
+Возвращает текстуру области просмотра.
 
-\ **Note:** When trying to store the current texture (e.g. in a file), it might be completely black or outdated if used too early, especially when used in e.g. :ref:`Node._ready()<class_Node_private_method__ready>`. To make sure the texture you get is correct, you can await :ref:`RenderingServer.frame_post_draw<class_RenderingServer_signal_frame_post_draw>` signal.
+\ **Примечание:** При попытке сохранить текущую текстуру (например, в файл) она может оказаться полностью чёрной или устаревшей, если используется слишком рано, особенно если используется, например, в :ref:`Node._ready()<class_Node_private_method__ready>`. Чтобы убедиться в правильности полученной текстуры, можно дождаться сигнала :ref:`RenderingServer.frame_post_draw<class_RenderingServer_signal_frame_post_draw>`.
 
 
 .. tabs::
@@ -2376,7 +2376,7 @@ Returns the viewport's texture.
 
 
 
-\ **Note:** When :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` is ``true`` the returned texture will be an HDR image using linear encoding.
+\ **Примечание:** Если :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` имеет значение ``true``, возвращаемая текстура будет представлять собой HDR-изображение, использующее линейное кодирование.
 
 .. rst-class:: classref-item-separator
 
@@ -2436,7 +2436,7 @@ Returns the viewport's texture.
 
 :ref:`String<class_String>` **gui_get_drag_description**\ (\ ) |const| :ref:`🔗<class_Viewport_method_gui_get_drag_description>`
 
-Returns the human-readable description of the drag data, used for assistive apps.
+Возвращает удобочитаемое описание данных перетаскивания, используемое в вспомогательных приложениях.
 
 .. rst-class:: classref-item-separator
 
@@ -2512,7 +2512,7 @@ Returns the human-readable description of the drag data, used for assistive apps
 
 |void| **gui_set_drag_description**\ (\ description\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Viewport_method_gui_set_drag_description>`
 
-Sets the human-readable description of the drag data to ``description``, used for assistive apps.
+Устанавливает удобочитаемое описание данных перетаскивания в значение ``description``, используемое в вспомогательных приложениях.
 
 .. rst-class:: classref-item-separator
 
@@ -2654,9 +2654,9 @@ Sets the human-readable description of the drag data to ``description``, used fo
 
 |void| **set_input_as_handled**\ (\ ) :ref:`🔗<class_Viewport_method_set_input_as_handled>`
 
-Stops the input from propagating further up the :ref:`SceneTree<class_SceneTree>`.
+Предотвращает дальнейшее распространение входных данных вверх по :ref:`SceneTree<class_SceneTree>`.
 
-\ **Note:** This does not affect the methods in :ref:`Input<class_Input>`, only the way events are propagated.
+\ **Примечание:** Это не влияет на методы в :ref:`Input<class_Input>`, только на способ распространения событий.
 
 .. rst-class:: classref-item-separator
 

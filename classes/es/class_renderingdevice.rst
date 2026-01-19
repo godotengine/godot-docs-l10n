@@ -4719,7 +4719,7 @@ Desplazamiento máximo del atributo de entrada de vértice.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_VERTEX_INPUT_ATTRIBUTES** = ``23``
 
-Maximum number of vertex input attributes.
+Número máximo de atributos de entrada de vértice.
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_VERTEX_INPUT_BINDINGS:
 
@@ -4727,7 +4727,7 @@ Maximum number of vertex input attributes.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_VERTEX_INPUT_BINDINGS** = ``24``
 
-Maximum number of vertex input bindings.
+Número máximo de enlaces de entrada de vértice.
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_VERTEX_INPUT_BINDING_STRIDE:
 
@@ -4783,7 +4783,7 @@ Número máximo de grupos de trabajo para los shaders de cómputo en el eje Z.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_COMPUTE_WORKGROUP_INVOCATIONS** = ``31``
 
-Maximum number of workgroup invocations for compute shaders.
+Número máximo de invocaciones de grupos de trabajo para los shaders de cómputo.
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_COMPUTE_WORKGROUP_SIZE_X:
 
@@ -4791,7 +4791,7 @@ Maximum number of workgroup invocations for compute shaders.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_COMPUTE_WORKGROUP_SIZE_X** = ``32``
 
-Maximum workgroup size for compute shaders on the X axis.
+Tamaño máximo del grupo de trabajo para los shaders de cómputo en el eje X.
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_COMPUTE_WORKGROUP_SIZE_Y:
 
@@ -4799,7 +4799,7 @@ Maximum workgroup size for compute shaders on the X axis.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_COMPUTE_WORKGROUP_SIZE_Y** = ``33``
 
-Maximum workgroup size for compute shaders on the Y axis.
+Tamaño máximo del grupo de trabajo para los shaders de cómputo en el eje Y.
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_COMPUTE_WORKGROUP_SIZE_Z:
 
@@ -4807,7 +4807,7 @@ Maximum workgroup size for compute shaders on the Y axis.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_COMPUTE_WORKGROUP_SIZE_Z** = ``34``
 
-Maximum workgroup size for compute shaders on the Z axis.
+Tamaño máximo del grupo de trabajo para los shaders de cómputo en el eje Z.
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_VIEWPORT_DIMENSIONS_X:
 
@@ -4823,7 +4823,7 @@ Ancho máximo del viewport (en píxeles).
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_VIEWPORT_DIMENSIONS_Y** = ``36``
 
-Maximum viewport height (in pixels).
+Alto máximo del viewport (en píxeles).
 
 .. _class_RenderingDevice_constant_LIMIT_METALFX_TEMPORAL_SCALER_MIN_SCALE:
 
@@ -4831,9 +4831,9 @@ Maximum viewport height (in pixels).
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_METALFX_TEMPORAL_SCALER_MIN_SCALE** = ``46``
 
-Returns the smallest value for :ref:`ProjectSettings.rendering/scaling_3d/scale<class_ProjectSettings_property_rendering/scaling_3d/scale>` when using the MetalFX temporal upscaler.
+Devuelve el valor más pequeño para :ref:`ProjectSettings.rendering/scaling_3d/scale<class_ProjectSettings_property_rendering/scaling_3d/scale>` al usar el escalador temporal MetalFX.
 
-\ **Note:** The returned value is multiplied by a factor of ``1000000`` to preserve 6 digits of precision. It must be divided by ``1000000.0`` to convert the value to a floating point number.
+\ **Nota:** El valor devuelto se multiplica por un factor de ``1000000`` para preservar 6 dígitos de precisión. Se debe dividir por ``1000000.0`` para convertir el valor a un número de punto flotante.
 
 .. _class_RenderingDevice_constant_LIMIT_METALFX_TEMPORAL_SCALER_MAX_SCALE:
 
@@ -4841,9 +4841,9 @@ Returns the smallest value for :ref:`ProjectSettings.rendering/scaling_3d/scale<
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_METALFX_TEMPORAL_SCALER_MAX_SCALE** = ``47``
 
-Returns the largest value for :ref:`ProjectSettings.rendering/scaling_3d/scale<class_ProjectSettings_property_rendering/scaling_3d/scale>` when using the MetalFX temporal upscaler.
+Devuelve el valor más grande para :ref:`ProjectSettings.rendering/scaling_3d/scale<class_ProjectSettings_property_rendering/scaling_3d/scale>` al usar el escalador temporal MetalFX.
 
-\ **Note:** The returned value is multiplied by a factor of ``1000000`` to preserve 6 digits of precision. It must be divided by ``1000000.0`` to convert the value to a floating point number.
+\ **Nota:** El valor devuelto se multiplica por un factor de ``1000000`` para preservar 6 dígitos de precisión. Debe dividirse por ``1000000.0`` para convertir el valor a un número de punto flotante.
 
 .. rst-class:: classref-item-separator
 
@@ -4869,7 +4869,7 @@ La memoria utilizada por las texturas.
 
 :ref:`MemoryType<enum_RenderingDevice_MemoryType>` **MEMORY_BUFFERS** = ``1``
 
-Memory taken by buffers.
+Memoria ocupada por búferes.
 
 .. _class_RenderingDevice_constant_MEMORY_TOTAL:
 
@@ -4877,7 +4877,7 @@ Memory taken by buffers.
 
 :ref:`MemoryType<enum_RenderingDevice_MemoryType>` **MEMORY_TOTAL** = ``2``
 
-Total memory taken. This is greater than the sum of :ref:`MEMORY_TEXTURES<class_RenderingDevice_constant_MEMORY_TEXTURES>` and :ref:`MEMORY_BUFFERS<class_RenderingDevice_constant_MEMORY_BUFFERS>`, as it also includes miscellaneous memory usage.
+Memoria total ocupada. Esto es mayor que la suma de :ref:`MEMORY_TEXTURES<class_RenderingDevice_constant_MEMORY_TEXTURES>` y :ref:`MEMORY_BUFFERS<class_RenderingDevice_constant_MEMORY_BUFFERS>`, ya que también incluye el uso de memoria miscelánea.
 
 .. rst-class:: classref-item-separator
 
@@ -4895,7 +4895,7 @@ enum **BreadcrumbMarker**: :ref:`🔗<enum_RenderingDevice_BreadcrumbMarker>`
 
 :ref:`BreadcrumbMarker<enum_RenderingDevice_BreadcrumbMarker>` **NONE** = ``0``
 
-No breadcrumb marker will be added.
+No se añadirá ningún marcador de ruta de navegación.
 
 .. _class_RenderingDevice_constant_REFLECTION_PROBES:
 
@@ -4903,7 +4903,7 @@ No breadcrumb marker will be added.
 
 :ref:`BreadcrumbMarker<enum_RenderingDevice_BreadcrumbMarker>` **REFLECTION_PROBES** = ``65536``
 
-During a GPU crash in dev or debug mode, Godot's error message will include ``"REFLECTION_PROBES"`` for added context as to when the crash occurred.
+Durante un fallo de GPU en modo de desarrollo o depuración, el mensaje de error de Godot incluirá ``"REFLECTION_PROBES"`` para un contexto adicional sobre cuándo ocurrió el fallo.
 
 .. _class_RenderingDevice_constant_SKY_PASS:
 
@@ -4911,7 +4911,7 @@ During a GPU crash in dev or debug mode, Godot's error message will include ``"R
 
 :ref:`BreadcrumbMarker<enum_RenderingDevice_BreadcrumbMarker>` **SKY_PASS** = ``131072``
 
-During a GPU crash in dev or debug mode, Godot's error message will include ``"SKY_PASS"`` for added context as to when the crash occurred.
+Durante un fallo de GPU en modo de desarrollo o depuración, el mensaje de error de Godot incluirá ``"SKY_PASS"`` para un contexto adicional sobre cuándo ocurrió el fallo.
 
 .. _class_RenderingDevice_constant_LIGHTMAPPER_PASS:
 
@@ -4919,7 +4919,7 @@ During a GPU crash in dev or debug mode, Godot's error message will include ``"S
 
 :ref:`BreadcrumbMarker<enum_RenderingDevice_BreadcrumbMarker>` **LIGHTMAPPER_PASS** = ``196608``
 
-During a GPU crash in dev or debug mode, Godot's error message will include ``"LIGHTMAPPER_PASS"`` for added context as to when the crash occurred.
+Durante un fallo de GPU en modo de desarrollo o depuración, el mensaje de error de Godot incluirá ``"LIGHTMAPPER_PASS"`` para un contexto adicional sobre cuándo ocurrió el fallo.
 
 .. _class_RenderingDevice_constant_SHADOW_PASS_DIRECTIONAL:
 
@@ -4927,7 +4927,7 @@ During a GPU crash in dev or debug mode, Godot's error message will include ``"L
 
 :ref:`BreadcrumbMarker<enum_RenderingDevice_BreadcrumbMarker>` **SHADOW_PASS_DIRECTIONAL** = ``262144``
 
-During a GPU crash in dev or debug mode, Godot's error message will include ``"SHADOW_PASS_DIRECTIONAL"`` for added context as to when the crash occurred.
+Durante un fallo de GPU en modo de desarrollo o depuración, el mensaje de error de Godot incluirá ``"SHADOW_PASS_DIRECTIONAL"`` para un contexto adicional sobre cuándo ocurrió el fallo.
 
 .. _class_RenderingDevice_constant_SHADOW_PASS_CUBE:
 
@@ -4935,7 +4935,7 @@ During a GPU crash in dev or debug mode, Godot's error message will include ``"S
 
 :ref:`BreadcrumbMarker<enum_RenderingDevice_BreadcrumbMarker>` **SHADOW_PASS_CUBE** = ``327680``
 
-During a GPU crash in dev or debug mode, Godot's error message will include ``"SHADOW_PASS_CUBE"`` for added context as to when the crash occurred.
+Durante un fallo de GPU en modo de desarrollo o depuración, el mensaje de error de Godot incluirá ``"SHADOW_PASS_CUBE"`` para un contexto adicional sobre cuándo ocurrió el fallo.
 
 .. _class_RenderingDevice_constant_OPAQUE_PASS:
 
@@ -4943,7 +4943,7 @@ During a GPU crash in dev or debug mode, Godot's error message will include ``"S
 
 :ref:`BreadcrumbMarker<enum_RenderingDevice_BreadcrumbMarker>` **OPAQUE_PASS** = ``393216``
 
-During a GPU crash in dev or debug mode, Godot's error message will include ``"OPAQUE_PASS"`` for added context as to when the crash occurred.
+Durante un fallo de GPU en modo de desarrollo o depuración, el mensaje de error de Godot incluirá ``"OPAQUE_PASS"`` para un contexto adicional sobre cuándo ocurrió el fallo.
 
 .. _class_RenderingDevice_constant_ALPHA_PASS:
 
@@ -5234,7 +5234,7 @@ Constantes
 
 **INVALID_ID** = ``-1`` :ref:`🔗<class_RenderingDevice_constant_INVALID_ID>`
 
-Returned by functions that return an ID if a value is invalid.
+Devuelto por funciones que devuelven una ID si un valor es inválido.
 
 .. _class_RenderingDevice_constant_INVALID_FORMAT_ID:
 
@@ -5242,7 +5242,7 @@ Returned by functions that return an ID if a value is invalid.
 
 **INVALID_FORMAT_ID** = ``-1`` :ref:`🔗<class_RenderingDevice_constant_INVALID_FORMAT_ID>`
 
-Returned by functions that return a format ID if a value is invalid.
+Devuelto por funciones que devuelven una ID de formato si un valor es inválido.
 
 .. rst-class:: classref-section-separator
 

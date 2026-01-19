@@ -496,9 +496,9 @@ HTTPRequest не смог выполнить запись в загружаем�
 - |void| **set_timeout**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_timeout**\ (\ )
 
-The duration to wait before a request times out, in seconds (independent of :ref:`Engine.time_scale<class_Engine_property_time_scale>`). If :ref:`timeout<class_HTTPRequest_property_timeout>` is set to ``0.0``, the request will never time out.
+Длительность ожидания до истечения таймаута запроса в секундах (независимо от параметра :ref:`Engine.time_scale<class_Engine_property_time_scale>`). Если :ref:`timeout<class_HTTPRequest_property_timeout>` установлено на ``0.0``, запрос никогда не истечет по таймауту.
 
-For simple requests, such as communication with a REST API, it is recommended to set :ref:`timeout<class_HTTPRequest_property_timeout>` to a value suitable for the server response time (commonly between ``1.0`` and ``10.0``). This will help prevent unwanted timeouts caused by variation in response times while still allowing the application to detect when a request has timed out. For larger requests such as file downloads, it is recommended to set :ref:`timeout<class_HTTPRequest_property_timeout>` to ``0.0``, disabling the timeout functionality. This will help prevent large transfers from failing due to exceeding the timeout value.
+Для простых запросов, таких как взаимодействие с REST API, рекомендуется установить :ref:`timeout<class_HTTPRequest_property_timeout>` на значение, подходящее для времени ответа сервера (обычно от ``1.0`` до ``10.0``). Это поможет предотвратить нежелательные таймауты, вызванные колебаниями времени ответа, и при этом позволит приложению определять, когда запрос истек по таймауту. Для более крупных запросов, таких как загрузка файлов, рекомендуется установить :ref:`timeout<class_HTTPRequest_property_timeout>` на ``0.0``, отключив функцию таймаута. Это поможет предотвратить сбои при больших передачах из-за превышения значения таймаута.
 
 .. rst-class:: classref-item-separator
 

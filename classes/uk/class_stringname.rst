@@ -618,7 +618,7 @@ Constructs a **StringName** як копія даної **StringName**.
 
 :ref:`int<class_int>` **find**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_StringName_method_find>`
 
-Returns the index of the **first** occurrence of ``what`` in this string, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the string.
+Повертає індекс **першого** входження ``what`` у цей рядок, або ``-1``, якщо таких немає. Початок пошуку можна вказати за допомогою ``from``, продовжуючи до кінця рядка.
 
 
 .. tabs::
@@ -641,9 +641,9 @@ Returns the index of the **first** occurrence of ``what`` in this string, or ``-
 
 
 
-\ **Note:** If you just want to know whether the string contains ``what``, use :ref:`contains()<class_StringName_method_contains>`. In GDScript, you may also use the ``in`` operator.
+\ **Примітка:** Якщо ви просто хочете дізнатися, чи містить рядок ``what``, використовуйте :ref:`contains()<class_StringName_method_contains>`. У GDScript ви також можете використовувати оператор ``in``.
 
-\ **Note:** A negative value of ``from`` is converted to a starting index by counting back from the last possible index with enough space to find ``what``.
+\ **Примітка:** Від'ємне значення ``from`` перетворюється на початковий індекс шляхом зворотного відліку від останнього можливого індексу з достатнім простором для знаходження ``what``.
 
 .. rst-class:: classref-item-separator
 
@@ -1417,7 +1417,7 @@ Returns the index of the **first** occurrence of ``what`` in this string, or ``-
 
 :ref:`String<class_String>` **remove_chars**\ (\ chars\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_remove_chars>`
 
-Removes all occurrences of the characters in ``chars``. See also :ref:`remove_char()<class_StringName_method_remove_char>`.
+Вилучає всі символи, що з'являються в ``chars``. Див. також :ref:`remove_char()<class_StringName_method_remove_char>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1501,11 +1501,11 @@ Removes all occurrences of the characters in ``chars``. See also :ref:`remove_ch
 
 :ref:`int<class_int>` **rfind**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_StringName_method_rfind>`
 
-Returns the index of the **last** occurrence of ``what`` in this string, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the beginning of the string. This method is the reverse of :ref:`find()<class_StringName_method_find>`.
+Повертає індекс **останнього** входження ``what`` у цей рядок, або ``-1``, якщо таких немає. Початок пошуку можна вказати за допомогою ``from``, продовжуючи до початку рядка. Цей метод є зворотним до :ref:`find()<class_StringName_method_find>`.
 
-\ **Note:** A negative value of ``from`` is converted to a starting index by counting back from the last possible index with enough space to find ``what``.
+\ **Примітка:** Від'ємне значення ``from`` перетворюється на початковий індекс шляхом зворотного відліку від останнього можливого індексу з достатнім простором для знаходження ``what``.
 
-\ **Note:** A value of ``from`` that is greater than the last possible index with enough space to find ``what`` is considered out-of-bounds, and returns ``-1``.
+\ **Примітка:** Значення ``from``, яке більше за останній можливий індекс з достатнім простором для знаходження ``what``, вважається поза межами допустимого значення та повертає ``-1``.
 
 .. rst-class:: classref-item-separator
 

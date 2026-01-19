@@ -1386,7 +1386,7 @@ This is a Unicode version of :ref:`get_slice()<class_String_method_get_slice>`.
 
 :ref:`int<class_int>` **naturalcasecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_naturalcasecmp_to>`
 
-与另一个字符串进行\ **不区分大小写**\ 的\ *自然顺序*\ 比较。小于时返回 ``-1``\ 、大于时返回 ``1``\ 、等于时返回 ``0``\ 。“小于”和“大于”比较的是字符串中的 `Unicode 码位 <https://zh.wikipedia.org/wiki/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8>`__\ ，大致与字母表顺序一致。内部实现时，会将小写字符转换为大写后进行比较。
+与另一个字符串进行\ **区分大小写**\ 的\ *自然顺序*\ 比较。小于时返回 ``-1``\ 、大于时返回 ``1``\ 、等于时返回 ``0``\ 。“小于”和“大于”比较的是字符串中的 `Unicode 码位 <https://zh.wikipedia.org/wiki/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8>`__\ ，大致与字母表顺序一致。
 
 使用自然顺序进行排序时，会和常见预期一样将连续的数字进行组合，而不是一个个数字进行比较。排序后的数列为 ``["1", "2", "3", ...]`` 而不是 ``["1", "10", "2", "3", ...]``\ 。
 

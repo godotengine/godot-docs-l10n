@@ -686,13 +686,13 @@ Z компонент вектора. Также может быть доступ
 
 :ref:`Vector4<class_Vector4>` **operator /**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Vector4i_operator_div_float>`
 
-Divides each component of the **Vector4i** by the given :ref:`float<class_float>`.
+Делит каждый компонент **Vector4i** на заданное значение :ref:`float<class_float>`.
 
-Returns a Vector4 value due to floating-point operations.
+Возвращает значение Vector4, поскольку выполняются операции с плавающей запятой.
 
 ::
 
-    print(Vector4i(1, 2, 3, 4) / 2.5) # Prints (0.4, 0.8, 1.2, 1.6)
+    print(Vector4i(1, 2, 3, 4) / 2.5) # Выводит (0.4, 0.8, 1.2, 1.6)
 
 .. rst-class:: classref-item-separator
 

@@ -93,7 +93,7 @@ Returns the index of the file with name ``name`` or ``-1`` if not found.
 
 :ref:`String<class_String>` **get_file**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorFileSystemDirectory_method_get_file>`
 
-Returns the name of the file at index ``idx``.
+Devuelve el nombre del archivo en el índice ``idx``.
 
 .. rst-class:: classref-item-separator
 

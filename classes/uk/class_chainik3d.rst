@@ -9,14 +9,14 @@ ChainIK3D
 
 **Успадковано від:** :ref:`IterateIK3D<class_IterateIK3D>`, :ref:`SplineIK3D<class_SplineIK3D>`
 
-A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` to apply inverse kinematics to bone chains containing an arbitrary number of bones.
+:ref:`SkeletonModifier3D<class_SkeletonModifier3D>` для застосування оберненої кінематики до ланцюгів кісток, що містять довільну кількість кісток.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` that automatically generates a joint list from the bones between the root bone and the end bone.
+Базовий клас :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`, який автоматично генерує список суглобів з кісток між кореневою кісткою та кінцевою кісткою.
 
 .. rst-class:: classref-reftable-group
 
@@ -89,7 +89,7 @@ Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` that automatic
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **get_end_bone_direction**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ChainIK3D_method_get_end_bone_direction>`
 
-Returns the tail direction of the end bone of the bone chain when :ref:`is_end_bone_extended()<class_ChainIK3D_method_is_end_bone_extended>` is ``true``.
+Повертає напрямок хвоста кінцевої кістки ланцюжка кісток, коли :ref:`is_end_bone_extended()<class_ChainIK3D_method_is_end_bone_extended>` має значення ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -101,7 +101,7 @@ Returns the tail direction of the end bone of the bone chain when :ref:`is_end_b
 
 :ref:`float<class_float>` **get_end_bone_length**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ChainIK3D_method_get_end_bone_length>`
 
-Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extended()<class_ChainIK3D_method_is_end_bone_extended>` is ``true``.
+Повертає довжину кінця кісткового ланцюжка, коли :ref:`is_end_bone_extended()<class_ChainIK3D_method_is_end_bone_extended>` має значення ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -185,7 +185,7 @@ Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extend
 
 :ref:`bool<class_bool>` **is_end_bone_extended**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ChainIK3D_method_is_end_bone_extended>`
 
-Returns ``true`` if the end bone is extended to have a tail.
+Повертає ``true``, якщо кінцева кістка подовжена, щоб мати хвіст.
 
 .. rst-class:: classref-item-separator
 
@@ -233,9 +233,9 @@ Returns ``true`` if the end bone is extended to have a tail.
 
 |void| **set_end_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ChainIK3D_method_set_end_bone_name>`
 
-Sets the end bone name of the bone chain.
+Встановлює назву кінцевої кістки ланцюжка кісток.
 
-\ **Note:** The end bone must be the root bone or a child of the root bone. If they are the same, the tail must be extended by :ref:`set_extend_end_bone()<class_ChainIK3D_method_set_extend_end_bone>` to modify the bone.
+\ **Примітка:** Кінцева кістка має бути кореневою кісткою або дочірньою кісткою кореневої кістки. Якщо вони однакові, хвіст потрібно розширити за допомогою :ref:`set_extend_end_bone()<class_ChainIK3D_method_set_extend_end_bone>`, щоб змінити кістку.
 
 .. rst-class:: classref-item-separator
 
@@ -247,9 +247,9 @@ Sets the end bone name of the bone chain.
 
 |void| **set_extend_end_bone**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ChainIK3D_method_set_extend_end_bone>`
 
-If ``enabled`` is ``true``, the end bone is extended to have a tail.
+Якщо ``enabled`` має значення ``true``, кінцева кістка подовжується, щоб мати хвіст.
 
-The extended tail config is allocated to the last element in the joint list. In other words, if you set ``enabled`` to ``false``, the config of the last element in the joint list has no effect in the simulated result.
+Конфігурація розширеного хвоста призначається останньому елементу у списку суглобів. Іншими словами, якщо встановити ``enabled`` на ``false``, конфігурація останнього елемента у списку суглобів не впливає на результат моделювання.
 
 .. rst-class:: classref-item-separator
 

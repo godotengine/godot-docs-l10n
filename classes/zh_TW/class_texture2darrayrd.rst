@@ -14,7 +14,16 @@ Texture2DArrayRD
 說明
 ----
 
-此紋理陣列類別可讓您使用直接在 :ref:`RenderingDevice<class_RenderingDevice>` 上建立的 2D 陣列紋理作為材質、網格等的紋理
+This texture array class allows you to use a 2D array texture created directly on the :ref:`RenderingDevice<class_RenderingDevice>` as a texture for materials, meshes, etc.
+
+\ **Note:** **Texture2DArrayRD** is intended for low-level usage with :ref:`RenderingDevice<class_RenderingDevice>`. For most use cases, use :ref:`Texture2DArray<class_Texture2DArray>` instead.
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- `Compute Texture demo <https://godotengine.org/asset-library/asset/2764>`__
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

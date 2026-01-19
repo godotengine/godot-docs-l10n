@@ -618,32 +618,32 @@ Pour obtenir un résultat booléen :ref:`bool<class_bool>` d’une comparaison d
 
 :ref:`int<class_int>` **find**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_StringName_method_find>`
 
-Returns the index of the **first** occurrence of ``what`` in this string, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the string.
+Renvoie l’index de la **première** occurrence de ``what`` dans cette chaîne, ou ``-1`` s’il n’y en a pas. Le début de la recherche peut être spécifié avec ``from``, continuant jusqu’à la fin de la chaîne.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    print("Team".find("I")) # Prints -1
+    print("équipe".find("je") # Affiche -1
 
-    print("Potato".find("t"))    # Prints 2
-    print("Potato".find("t", 3)) # Prints 4
-    print("Potato".find("t", 5)) # Prints -1
+    print("Patate".find("t") # Affiche 2
+    print("Patate".find("t", 3)) # Affiche 4
+    print("Patate".find("t", 5) # Affiche -1
 
  .. code-tab:: csharp
 
-    GD.Print("Team".Find("I")); // Prints -1
+    GD.Print("équipe".Find("je")) ; // Affiche -1
 
-    GD.Print("Potato".Find("t"));    // Prints 2
-    GD.Print("Potato".Find("t", 3)); // Prints 4
-    GD.Print("Potato".Find("t", 5)); // Prints -1
+    GD.Print("Patate".Find("t")) ; // Affiche 2
+    GD.Print("Patate".Find("t", 3)) ; // Affiche 4
+    GD.Print("Patate",Find("t", 5)) ; // Affiche -1
 
 
 
-\ **Note:** If you just want to know whether the string contains ``what``, use :ref:`contains()<class_StringName_method_contains>`. In GDScript, you may also use the ``in`` operator.
+\ **Note :** Si vous voulez simplement savoir si la chaîne contient ``what``, utilisez :ref:`contains()<class_StringName_method_contains>`. En GDScript, vous pouvez également utiliser l'opérateur ``in``.
 
-\ **Note:** A negative value of ``from`` is converted to a starting index by counting back from the last possible index with enough space to find ``what``.
+\ **Note :** Une valeur négative de ``from`` est convertie en un index de départ en comptant à partir du dernier index possible avec suffisamment d'espace pour trouver ``what``.
 
 .. rst-class:: classref-item-separator
 

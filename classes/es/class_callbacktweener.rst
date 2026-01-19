@@ -47,7 +47,7 @@ Descripciones de Métodos
 
 :ref:`CallbackTweener<class_CallbackTweener>` **set_delay**\ (\ delay\: :ref:`float<class_float>`\ ) :ref:`🔗<class_CallbackTweener_method_set_delay>`
 
-Hace que la llamada de retorno se retrase el tiempo dado en segundos.
+Hace que la callback se retrase el tiempo dado en segundos.
 
 \ **Ejemplo:** Llama a :ref:`Node.queue_free()<class_Node_method_queue_free>` después de 2 segundos:
 

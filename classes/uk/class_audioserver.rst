@@ -559,7 +559,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 **Експериментальний:** Цей метод може бути змінений або усунутий у наступних версіях.
 
-Returns the absolute size of the microphone input buffer. This is set to a multiple of the audio latency and can be used to estimate the minimum rate at which the frames need to be fetched.
+Повертає абсолютний розмір вхідного буфера мікрофона. Він встановлюється як значення, кратне затримці звуку, і може бути використаний для оцінки мінімальної швидкості, з якою потрібно отримувати кадри.
 
 .. rst-class:: classref-item-separator
 
@@ -587,11 +587,11 @@ Returns the absolute size of the microphone input buffer. This is set to a multi
 
 **Експериментальний:** Цей метод може бути змінений або усунутий у наступних версіях.
 
-Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` containing exactly ``frames`` audio samples from the internal microphone buffer if available, otherwise returns an empty :ref:`PackedVector2Array<class_PackedVector2Array>`.
+Повертає :ref:`PackedVector2Array<class_PackedVector2Array>`, що містить рівно ``frames`` аудіосемплів з внутрішнього буфера мікрофона, якщо доступно, інакше повертає порожній :ref:`PackedVector2Array<class_PackedVector2Array>`.
 
-The buffer is filled at the rate of :ref:`get_input_mix_rate()<class_AudioServer_method_get_input_mix_rate>` frames per second when :ref:`set_input_device_active()<class_AudioServer_method_set_input_device_active>` has successfully been set to ``true``.
+Буфер заповнюється зі швидкістю :ref:`get_input_mix_rate()<class_AudioServer_method_get_input_mix_rate>` кадрів на секунду, коли :ref:`set_input_device_active()<class_AudioServer_method_set_input_device_active>` успішно встановлено на ``true``.
 
-The samples are signed floating-point PCM values between ``-1`` and ``1``.
+Семпли – це значення PCM зі знаком у діапазоні від ``-1`` до ``1``.
 
 .. rst-class:: classref-item-separator
 
@@ -605,7 +605,7 @@ The samples are signed floating-point PCM values between ``-1`` and ``1``.
 
 **Експериментальний:** Цей метод може бути змінений або усунутий у наступних версіях.
 
-Returns the number of frames available to read using :ref:`get_input_frames()<class_AudioServer_method_get_input_frames>`.
+Повертає кількість фреймів, доступних для зчитування за допомогою :ref:`get_input_frames()<class_AudioServer_method_get_input_frames>`.
 
 .. rst-class:: classref-item-separator
 
@@ -959,9 +959,9 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 **Експериментальний:** Цей метод може бути змінений або усунутий у наступних версіях.
 
-If ``active`` is ``true``, starts the microphone input stream specified by :ref:`input_device<class_AudioServer_property_input_device>` or returns an error if it failed.
+Якщо ``active`` має значення ``true``, запускає вхідний потік мікрофона, визначений параметром :ref:`input_device<class_AudioServer_property_input_device>`, або повертає помилку, якщо він не спрацював.
 
-If ``active`` is ``false``, stops the input stream if it is running.
+Якщо ``active`` має значення ``false``, зупиняє вхідний потік, якщо він запущений.
 
 .. rst-class:: classref-item-separator
 

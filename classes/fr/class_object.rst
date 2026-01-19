@@ -329,37 +329,37 @@ Descriptions des méthodes
 
 :ref:`Variant<class_Variant>` **_get**\ (\ property\: :ref:`StringName<class_StringName>`\ ) |virtual| :ref:`🔗<class_Object_private_method__get>`
 
-Override this method to customize the behavior of :ref:`get()<class_Object_method_get>`. Should return the given ``property``'s value, or ``null`` if the ``property`` should be handled normally.
+Redéfinissez cette méthode pour personnaliser le comportement de :ref:`get()<class_Object_method_get>`. Devrait renvoyer la valeur de la propriété ``property`` donnée, ou ``null`` si ``property`` devrait être traitée normalement.
 
-Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_property_list()<class_Object_private_method__get_property_list>`, this method allows defining custom properties, which is particularly useful for editor plugins.
+Combiné avec :ref:`_set()<class_Object_private_method__set>` et :ref:`_get_property_list()<class_Object_private_method__get_property_list>`, cette méthode permet de définir des propriétés personnalisées, ce qui est particulièrement utile pour les plugins éditeurs.
 
-\ **Note:** This method is not called when getting built-in properties of an object, including properties defined with :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
+\ **Note :** Cette méthode n'est pas appelée pour obtenir des propriétés intégrées d'un objet, y compris les propriétés définies avec :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    func _get(property):
-        if property == "fake_property":
-            print("Getting my property!")
+    func _get(property) :
+        if property == "fausse_propriete" :
+            print("Obtenir ma propriété !")
             return 4
 
-    func _get_property_list():
+    func _get_property_list() :
         return [
-            { "name": "fake_property", "type": TYPE_INT }
+            { "name" : "fausse_propriete", "type" : TYPE_INT }
         ]
 
  .. code-tab:: csharp
 
     public override Variant _Get(StringName property)
     {
-        if (property == "FakeProperty")
+        if (property == "FaussePropriete")
         {
-            GD.Print("Getting my property!");
-            return 4;
+            GD.Print("Obtenir ma propriété !") ;
+            return 4 ;
         }
-        return default;
+        return default ;
     }
 
     public override Godot.Collections.Array<Godot.Collections.Dictionary> _GetPropertyList()
@@ -368,15 +368,15 @@ Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_pro
         [
             new Godot.Collections.Dictionary()
             {
-                { "name", "FakeProperty" },
+                { "name", "FaussePropriete" },
                 { "type", (int)Variant.Type.Int },
             },
-        ];
+        ] ;
     }
 
 
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy. The call chain will stop on the first class that returns a non-``null`` value.
+\ **Note :** Contrairement à d'autres méthodes virtuelles, cette méthode est appelée automatiquement pour chaque script qui l'écrase. Cela signifie que la mise en œuvre de base ne doit pas être appelée via ``super`` dans GDScript ou ses équivalents dans d'autres langues. La sous-classe la plus basse sera appelée en premier, avec des appels subséquents ascendant la hiérarchie de classe. La chaîne d'appels s'arrête sur la première classe qui retourne une valeur non-``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -668,45 +668,45 @@ Override this method to customize the given ``property``'s revert behavior. Shou
 
 :ref:`bool<class_bool>` **_set**\ (\ property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) |virtual| :ref:`🔗<class_Object_private_method__set>`
 
-Override this method to customize the behavior of :ref:`set()<class_Object_method_set>`. Should set the ``property`` to ``value`` and return ``true``, or ``false`` if the ``property`` should be handled normally. The *exact* way to set the ``property`` is up to this method's implementation.
+Redéfinissez cette méthode pour personnaliser le comportement de :ref:`set()<class_Object_method_set>`. Doit définir la propriété ``property`` à la valeur ``value`` et renvoyer ``true``, ou ``false`` si la propriété ``property`` devrait être manipulée normalement. La façon *exacte* de configurer ``property`` dépend de l'implémentation de cette méthode.
 
-Combined with :ref:`_get()<class_Object_private_method__get>` and :ref:`_get_property_list()<class_Object_private_method__get_property_list>`, this method allows defining custom properties, which is particularly useful for editor plugins.
+Combiné avec :ref:`_get()<class_Object_private_method__get>` et :ref:`_get_property_list()<class_Object_private_method__get_property_list>`, cette méthode permet de définir des propriétés personnalisées, ce qui est particulièrement utile pour les plugins éditeurs.
 
-\ **Note:** This method is not called when setting built-in properties of an object, including properties defined with :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
+\ **Note :** Cette méthode n'est pas appelée lorsque vous définissez des propriétés intégrées d'un objet, y compris les propriétés définies par :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var internal_data = {}
+    var donnees_internes = {}
 
-    func _set(property, value):
-        if property == "fake_property":
-            # Storing the value in the fake property.
-            internal_data["fake_property"] = value
+    func _set(property, value) :
+        if property == "fausse_propriete" :
+            # Stocker la valeur dans la fausse propriété.
+            donnees_internes["fausse_propriete"] = value
             return true
         return false
 
-    func _get_property_list():
+    func _get_property_list() :
         return [
-            { "name": "fake_property", "type": TYPE_INT }
+            { "name" : "fausse_propriete", "type" : TYPE_INT }
         ]
 
  .. code-tab:: csharp
 
-    private Godot.Collections.Dictionary _internalData = new Godot.Collections.Dictionary();
+    private Godot.Collections.Dictionary _donneesInternes= new Godot.Collections.Dictionary() ;
 
     public override bool _Set(StringName property, Variant value)
     {
-        if (property == "FakeProperty")
+        if (property == "FaussePropriete")
         {
-            // Storing the value in the fake property.
-            _internalData["FakeProperty"] = value;
-            return true;
+            // Stocker la valeur dans la fausse propriété.
+            _donneesInternes["FaussePropriete"] = value ;
+            return true ;
         }
 
-        return false;
+        return false ;
     }
 
     public override Godot.Collections.Array<Godot.Collections.Dictionary> _GetPropertyList()
@@ -715,15 +715,15 @@ Combined with :ref:`_get()<class_Object_private_method__get>` and :ref:`_get_pro
         [
             new Godot.Collections.Dictionary()
             {
-                { "name", "FakeProperty" },
+                { "name", "FaussePropriete" },
                 { "type", (int)Variant.Type.Int },
             },
-        ];
+        ] ;
     }
 
 
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy. The call chain will stop on the first class that returns ``true``.
+\ **Note :** Contrairement à d'autres méthodes virtuelles, cette méthode est appelée automatiquement pour chaque script qui l'écrase. Cela signifie que la mise en œuvre de base ne doit pas être appelée via ``super`` dans GDScript ou ses équivalents dans d'autres langues. La sous-classe la plus basse sera appelée en premier, avec des appels subséquents ascendant la hiérarchie de classe. La chaîne d'appels s'arrête sur la première classe qui retourne ``true``.
 
 .. rst-class:: classref-item-separator
 

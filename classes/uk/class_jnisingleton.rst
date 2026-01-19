@@ -50,7 +50,7 @@ JNISingleton реалізовано лише в експорті Android. Він
 
 :ref:`bool<class_bool>` **has_java_method**\ (\ method\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_JNISingleton_method_has_java_method>`
 
-Returns ``true`` if the given ``method`` name exists in the JNISingleton's Java methods.
+Повертає ``true``, якщо задана назва ``method`` існує в методах Java JNISingleton.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -199,7 +199,7 @@ enum **MixMode**: :ref:`🔗<enum_AnimationNodeOneShot_MixMode>`
 - |void| **set_abort_on_reset**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_aborted_on_reset**\ (\ )
 
-If ``true``, the sub-animation will abort if resumed with a reset after a prior interruption.
+Если ``true``, то при возобновлении анимации с перезагрузкой после предыдущего прерывания, она будет прервана.
 
 .. rst-class:: classref-item-separator
 

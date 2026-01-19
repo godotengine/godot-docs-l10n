@@ -227,7 +227,7 @@ enum **SecondaryDirection**: :ref:`🔗<enum_SkeletonModifier3D_SecondaryDirecti
 
 :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>` **SECONDARY_DIRECTION_NONE** = ``0``
 
-Enumerated value for the case when the axis is undefined.
+Перечислюване значення для випадку, коли вісь невизначена.
 
 .. _class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_PLUS_X:
 
@@ -283,7 +283,7 @@ Enumerated value for the case when the axis is undefined.
 
 :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>` **SECONDARY_DIRECTION_CUSTOM** = ``7``
 
-Enumerated value for an optional axis.
+Перечислюване значення для додаткової осі.
 
 .. rst-class:: classref-item-separator
 
@@ -333,7 +333,7 @@ enum **RotationAxis**: :ref:`🔗<enum_SkeletonModifier3D_RotationAxis>`
 
 :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>` **ROTATION_AXIS_CUSTOM** = ``4``
 
-Enumerated value for an optional rotation axis.
+Перечислюване значення для додаткової осі обертання.
 
 .. rst-class:: classref-section-separator
 
@@ -407,11 +407,13 @@ Enumerated value for an optional rotation axis.
 
 |void| **_process_modification_with_delta**\ (\ delta\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_SkeletonModifier3D_private_method__process_modification_with_delta>`
 
-Перевизначте цей віртуальний метод, щоб реалізувати власний модифікатор скелета. Вам слід виконати такі дії, як отримання поточної пози :ref:`Skeleton3D<class_Skeleton3D>` та застосування її тут.
+Перевизначте цей віртуальний метод, щоб реалізувати власний модифікатор скелета. Вам слід виконати такі дії, як отримання поточної пози :ref:`Skeleton3D<class_Skeleton3D>` та застосування цієї пози тут.
 
 \ :ref:`_process_modification_with_delta()<class_SkeletonModifier3D_private_method__process_modification_with_delta>` не повинен застосовувати :ref:`influence<class_SkeletonModifier3D_property_influence>` до поз кісток, оскільки :ref:`Skeleton3D<class_Skeleton3D>` автоматично застосовує вплив до всіх поз кісток, встановлених модифікатором.
 
 \ ``delta`` передається з батьківського :ref:`Skeleton3D<class_Skeleton3D>`. Див. також :ref:`Skeleton3D.advance()<class_Skeleton3D_method_advance>`.
+
+\ **Примітка:** Цей метод може бути викликаний поза :ref:`Node._process()<class_Node_private_method__process>` та :ref:`Node._physics_process()<class_Node_private_method__physics_process>` з ``delta``, що дорівнює ``0.0``, оскільки модифікація повинна бути оброблена негайно після ініціалізації :ref:`Skeleton3D<class_Skeleton3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -435,7 +437,7 @@ Enumerated value for an optional rotation axis.
 
 |void| **_validate_bone_names**\ (\ ) |virtual| :ref:`🔗<class_SkeletonModifier3D_private_method__validate_bone_names>`
 
-Called when bone names and indices need to be validated, such as when entering the scene tree or changing skeleton.
+Викликається, коли потрібно перевірити назви та індекси кісток, наприклад, під час входу в дерево сцени або зміни скелета.
 
 .. rst-class:: classref-item-separator
 
@@ -447,7 +449,7 @@ Called when bone names and indices need to be validated, such as when entering t
 
 :ref:`Skeleton3D<class_Skeleton3D>` **get_skeleton**\ (\ ) |const| :ref:`🔗<class_SkeletonModifier3D_method_get_skeleton>`
 
-Returns the parent :ref:`Skeleton3D<class_Skeleton3D>` node if it exists. Otherwise, returns ``null``.
+Повертає батьківський вузол :ref:`Skeleton3D<class_Skeleton3D>`, якщо він існує. В іншому випадку повертає ``null``.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

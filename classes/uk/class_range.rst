@@ -255,7 +255,7 @@ Range
 - |void| **set_step**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_step**\ (\ )
 
-If greater than ``0.0``, :ref:`value<class_Range_property_value>` will always be rounded to a multiple of this property's value above :ref:`min_value<class_Range_property_min_value>`. For example, if :ref:`min_value<class_Range_property_min_value>` is ``0.1`` and step is ``0.2``, then :ref:`value<class_Range_property_value>` is limited to ``0.1``, ``0.3``, ``0.5``, and so on. If :ref:`rounded<class_Range_property_rounded>` is also ``true``, :ref:`value<class_Range_property_value>` will first be rounded to a multiple of this property's value, then rounded to the nearest integer.
+Якщо значення більше за ``0.0``, значення :ref:`value<class_Range_property_value>` завжди буде округлено до значення, кратного значенню цієї властивості, вище за :ref:`min_value<class_Range_property_min_value>`. Наприклад, якщо :ref:`min_value<class_Range_property_min_value>` дорівнює ``0.1``, а крок дорівнює ``0.2``, тоді значення :ref:`value<class_Range_property_value>` обмежене значеннями ``0.1``, ``0.3``, ``0.5`` тощо. Якщо значення :ref:`rounded<class_Range_property_rounded>` також дорівнює ``true``, значення :ref:`value<class_Range_property_value>` спочатку буде округлено до значення, кратного значенню цієї властивості, а потім до найближчого цілого числа.
 
 .. rst-class:: classref-item-separator
 

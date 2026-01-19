@@ -698,7 +698,9 @@ enum **Camera2DProcessCallback**: :ref:`🔗<enum_Camera2D_Camera2DProcessCallba
 
 |void| **align**\ (\ ) :ref:`🔗<class_Camera2D_method_align>`
 
-Вирівнює камеру щодо відстежуваного вузла.
+Вирівнює камеру відносно відстежуваного вузла.
+
+\ **Примітка:** Виклик :ref:`force_update_scroll()<class_Camera2D_method_force_update_scroll>` після цього методу не є обов'язковим.
 
 .. rst-class:: classref-item-separator
 

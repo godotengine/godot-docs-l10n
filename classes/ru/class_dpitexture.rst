@@ -127,7 +127,7 @@ DPITexture
 
 :ref:`DPITexture<class_DPITexture>` **create_from_string**\ (\ source\: :ref:`String<class_String>`, scale\: :ref:`float<class_float>` = 1.0, saturation\: :ref:`float<class_float>` = 1.0, color_map\: :ref:`Dictionary<class_Dictionary>` = {}\ ) |static| :ref:`🔗<class_DPITexture_method_create_from_string>`
 
-Creates a new **DPITexture** and initializes it by allocating and setting the SVG data to ``source``.
+Создает новый **DPITexture** и инициализирует его, выделяя и устанавливая данные SVG в ``source``.
 
 .. rst-class:: classref-item-separator
 
@@ -151,7 +151,7 @@ Creates a new **DPITexture** and initializes it by allocating and setting the SV
 
 :ref:`String<class_String>` **get_source**\ (\ ) |const| :ref:`🔗<class_DPITexture_method_get_source>`
 
-Returns this SVG texture's source code.
+Возвращает исходный код этой SVG-текстуры.
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ Returns this SVG texture's source code.
 
 |void| **set_source**\ (\ source\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DPITexture_method_set_source>`
 
-Sets this SVG texture's source code.
+Задает исходный код этой SVG-текстуры.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

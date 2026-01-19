@@ -746,9 +746,9 @@ GZIP имеет максимальный коэффициент сжатия 103
 
 :ref:`int<class_int>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedByteArray_method_get>`
 
-Returns the byte at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns ``0``.
+Возвращает байт по заданному ``index`` в массиве. Если ``index`` выходит за пределы массива или является отрицательным, этот метод завершается с ошибкой и возвращает ``0``.
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+Этот метод похож (но не идентичен) оператору ``[]``. Наиболее примечательно то, что при сбое этого метода выполнение проекта не приостанавливается, если он запускается из редактора.
 
 .. rst-class:: classref-item-separator
 

@@ -175,9 +175,9 @@ The texture filter blends between the nearest 4 pixels. This makes the texture l
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_NEAREST_MIPMAP** = ``3``
 
-The texture filter reads from the nearest pixel and blends between the nearest 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``). This makes the texture look pixelated from up close, and smooth from a distance.
+El filtro de textura lee del píxel más cercano y mezcla entre los 2 mipmaps más cercanos (o usa el mipmap más cercano si :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` es ``true``). Esto hace que la textura se vea pixelada de cerca y suave de lejos.
 
-Use this for non-pixel art textures that may be viewed at a low scale (e.g. due to :ref:`Camera2D<class_Camera2D>` zoom or sprite scaling), as mipmaps are important to smooth out pixels that are smaller than on-screen pixels.
+Úsalo para texturas que no son de arte de píxeles y que pueden verse a baja escala (por ejemplo, debido al zoom de :ref:`Camera2D<class_Camera2D>` o al escalado de sprites), ya que los mipmaps son importantes para suavizar los píxeles que son más pequeños que los píxeles en pantalla.
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_LINEAR_MIPMAP:
 
@@ -185,9 +185,9 @@ Use this for non-pixel art textures that may be viewed at a low scale (e.g. due 
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_LINEAR_MIPMAP** = ``4``
 
-The texture filter blends between the nearest 4 pixels and between the nearest 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``). This makes the texture look smooth from up close, and smooth from a distance.
+El filtro de textura mezcla entre los 4 píxeles más cercanos y entre los 2 mipmaps más cercanos (o usa el mipmap más cercano si :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` es ``true``). Esto hace que la textura se vea suave de cerca y suave de lejos.
 
-Use this for non-pixel art textures that may be viewed at a low scale (e.g. due to :ref:`Camera2D<class_Camera2D>` zoom or sprite scaling), as mipmaps are important to smooth out pixels that are smaller than on-screen pixels.
+Úsalo para texturas que no son de arte de píxeles y que pueden verse a baja escala (por ejemplo, debido al zoom de :ref:`Camera2D<class_Camera2D>` o al escalado de sprites), ya que los mipmaps son importantes para suavizar los píxeles que son más pequeños que los píxeles en pantalla.
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_NEAREST_MIPMAP_ANISOTROPIC:
 

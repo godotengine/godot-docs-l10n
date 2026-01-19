@@ -7,18 +7,18 @@ BoneTwistDisperser3D
 
 **Hérite de :** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A node that propagates and disperses the child bone's twist to the parent bones.
+Un nœud qui propage et disperse la torsion de l'os enfant aux os parent.
 
 .. rst-class:: classref-introduction-group
 
 Description
 -----------
 
-This **BoneTwistDisperser3D** allows for smooth twist interpolation between multiple bones by dispersing the end bone's twist to the parents. This only changes the twist without changing the global position of each joint.
+Ce **BoneTwistDisperser3D** permet d'interpoler une torsion lisse entre plusieurs os en dispersant la torsion de l'os final à ses parents. Cela ne change que la torsion sans changer la position globale de chaque articulation.
 
-This is useful for smoothly twisting bones in combination with :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>` and IK.
+Ceci est utile pour tordre des os de manière lisse en combinaison avec :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>` et de l'IK.
 
-\ **Note:** If an extracted twist is greater than 180 degrees, flipping occurs. This is similar to :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>`.
+\ **Note :** Si une torsion extraite est supérieure à 180 degrés, une inversion se produit. Ceci est similaire à :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -213,7 +213,7 @@ Efface tous les paramètres.
 
 :ref:`Curve<class_Curve>` **get_damping_curve**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_damping_curve>`
 
-Returns the damping curve when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
+Renvoie la courbe d'amortissement lorsque :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` est :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
 
 .. rst-class:: classref-item-separator
 
@@ -225,7 +225,7 @@ Returns the damping curve when :ref:`get_disperse_mode()<class_BoneTwistDisperse
 
 :ref:`DisperseMode<enum_BoneTwistDisperser3D_DisperseMode>` **get_disperse_mode**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_disperse_mode>`
 
-Returns whether to use automatic amount assignment or to allow manual assignment.
+Renvoie s'il faut utiliser l'assignation automatique ou autoriser l'assignation manuelle.
 
 .. rst-class:: classref-item-separator
 
@@ -309,7 +309,7 @@ Renvoie la quantité de liaisons dans la liste des liaisons de la chaîne d'os.
 
 :ref:`float<class_float>` **get_joint_twist_amount**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_joint_twist_amount>`
 
-Returns the twist amount at ``joint`` in the bone chain's joint list when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
+Définit la quantité de gravité de la liaison ``joint`` dans la liste des liaisons de la chaîne d'os lorsque :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` vaut :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
 
 .. rst-class:: classref-item-separator
 
@@ -385,7 +385,7 @@ Returns the rotation to an arbitrary state before twisting for the current bone 
 
 :ref:`float<class_float>` **get_weight_position**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_weight_position>`
 
-Returns the position at which to divide the segment between joints for weight assignment when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_WEIGHTED<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_WEIGHTED>`.
+Renvoie la position à laquelle diviser le segment entre les articulations pour la répartition du poids lorsque :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` vaut :ref:`DISPERSE_MODE_WEIGHTED<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_WEIGHTED>`.
 
 .. rst-class:: classref-item-separator
 
@@ -397,7 +397,7 @@ Returns the position at which to divide the segment between joints for weight as
 
 :ref:`bool<class_bool>` **is_end_bone_extended**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_is_end_bone_extended>`
 
-Returns ``true`` if the end bone is extended to have a tail.
+Renvoie ``true`` si l'os final est prolongé pour avoir une queue.
 
 .. rst-class:: classref-item-separator
 
@@ -483,9 +483,9 @@ Sets the end bone name of the bone chain.
 
 |void| **set_extend_end_bone**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_extend_end_bone>`
 
-If ``enabled`` is ``true``, the end bone is extended to have a tail.
+Si ``enabled`` vaut ``true``, l'os final est prolongé pour avoir une queue.
 
-If ``enabled`` is ``false``, :ref:`get_reference_bone()<class_BoneTwistDisperser3D_method_get_reference_bone>` becomes a parent of the end bone and it uses the vector to the end bone as a twist axis.
+Si ``enabled`` vaut ``false``, :ref:`get_reference_bone()<class_BoneTwistDisperser3D_method_get_reference_bone>` devient un parent de l'os final et il utilise le vecteur à l'os final comme axe de torsion.
 
 .. rst-class:: classref-item-separator
 
@@ -497,7 +497,7 @@ If ``enabled`` is ``false``, :ref:`get_reference_bone()<class_BoneTwistDisperser
 
 |void| **set_joint_twist_amount**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, twist_amount\: :ref:`float<class_float>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_joint_twist_amount>`
 
-Sets the twist amount at ``joint`` in the bone chain's joint list when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
+Définit la quantité de gravité de la liaison ``joint`` dans la liste des liaisons de la chaîne d'os lorsque :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
 
 .. rst-class:: classref-item-separator
 

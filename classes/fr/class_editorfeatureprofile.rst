@@ -202,7 +202,7 @@ Renvoie ``true`` si la classe avec le nom ``class_name`` est désactivée. Lorsq
 
 :ref:`bool<class_bool>` **is_class_editor_disabled**\ (\ class_name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_EditorFeatureProfile_method_is_class_editor_disabled>`
 
-Returns ``true`` if editing for the class specified by ``class_name`` is disabled. When disabled, the class will still appear in the Create New Node dialog but the Inspector will be read-only when selecting a node that extends the class.
+Retourne ``true`` si l'édition pour la classe spécifiée par ``class_name`` est désactivée. Lorsqu'elle est désactivée, la classe apparaîtra toujours dans la boite de dialogue Créer un nouveau nœud, mais l'inspecteur sera en lecture seule lors de la sélection d'un nœud qui étend la classe.
 
 .. rst-class:: classref-item-separator
 
@@ -214,7 +214,7 @@ Returns ``true`` if editing for the class specified by ``class_name`` is disable
 
 :ref:`bool<class_bool>` **is_class_property_disabled**\ (\ class_name\: :ref:`StringName<class_StringName>`, property\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_EditorFeatureProfile_method_is_class_property_disabled>`
 
-Returns ``true`` if ``property`` is disabled in the class specified by ``class_name``. When a property is disabled, it won't appear in the Inspector when selecting a node that extends the class specified by ``class_name``.
+Retourne ``true`` si ``property`` est désactivé dans la classe spécifiée par ``class_name``. Lorsqu'une propriété est désactivée, elle n'apparaîtra pas dans l'inspecteur lors de la sélection d'un nœud qui étend la classe spécifiée par ``class_name``.
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ Returns ``true`` if ``property`` is disabled in the class specified by ``class_n
 
 :ref:`bool<class_bool>` **is_feature_disabled**\ (\ feature\: :ref:`Feature<enum_EditorFeatureProfile_Feature>`\ ) |const| :ref:`🔗<class_EditorFeatureProfile_method_is_feature_disabled>`
 
-Returns ``true`` if the ``feature`` is disabled. When a feature is disabled, it will disappear from the editor entirely.
+Retourne ``true`` si ``feature`` est désactivé. Lorsqu'une fonction est désactivée, elle disparaîtra entièrement de l'éditeur.
 
 .. rst-class:: classref-item-separator
 
@@ -266,7 +266,7 @@ Saves the editor feature profile to a file in JSON format. It can then be import
 
 |void| **set_disable_class**\ (\ class_name\: :ref:`StringName<class_StringName>`, disable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorFeatureProfile_method_set_disable_class>`
 
-If ``disable`` is ``true``, disables the class specified by ``class_name``. When disabled, the class won't appear in the Create New Node dialog.
+Si ``disable`` est ``true``, désactive la classe spécifiée par ``class_name``. Lorsqu'elle est désactivée, la classe n'apparaîtra pas dans la boite de dialogue Créer un nouveau nœud.
 
 .. rst-class:: classref-item-separator
 

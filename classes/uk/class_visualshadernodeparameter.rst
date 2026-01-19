@@ -79,7 +79,7 @@ enum **Qualifier**: :ref:`🔗<enum_VisualShaderNodeParameter_Qualifier>`
 
 :ref:`Qualifier<enum_VisualShaderNodeParameter_Qualifier>` **QUAL_INSTANCE_INDEX** = ``3``
 
-The parameter will be tied to the node with attached :ref:`ShaderMaterial<class_ShaderMaterial>` using this shader. Enables setting a :ref:`instance_index<class_VisualShaderNodeParameter_property_instance_index>` property.
+Параметр буде прив'язано до вузла з підключеним :ref:`ShaderMaterial<class_ShaderMaterial>` за допомогою цього шейдера. Дозволяє встановити властивість :ref:`instance_index<class_VisualShaderNodeParameter_property_instance_index>`.
 
 .. _class_VisualShaderNodeParameter_constant_QUAL_MAX:
 
@@ -109,7 +109,7 @@ The parameter will be tied to the node with attached :ref:`ShaderMaterial<class_
 - |void| **set_instance_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_instance_index**\ (\ )
 
-The index within 0-15 range, which is used to avoid clashes when shader used on multiple materials.
+Індекс у діапазоні від 0 до 15, який використовується для уникнення конфліктів, коли шейдер використовується на кількох матеріалах.
 
 .. rst-class:: classref-item-separator
 

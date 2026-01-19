@@ -16,6 +16,15 @@ Description
 
 This texture array class allows you to use a 2D array texture created directly on the :ref:`RenderingDevice<class_RenderingDevice>` as a texture for materials, meshes, etc.
 
+\ **Note:** **Texture2DArrayRD** is intended for low-level usage with :ref:`RenderingDevice<class_RenderingDevice>`. For most use cases, use :ref:`Texture2DArray<class_Texture2DArray>` instead.
+
+.. rst-class:: classref-introduction-group
+
+Tutoriels
+------------------
+
+- `Compute Texture demo <https://godotengine.org/asset-library/asset/2764>`__
+
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Cette méthode n'a pas d'effets de bord. Elle ne modifie aucune des variables membres de l'instance.)`

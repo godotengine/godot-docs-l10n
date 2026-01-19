@@ -191,9 +191,15 @@ How much physics ticks are synchronized with real time. If ``0`` or less, the ti
 - |void| **set_physics_ticks_per_second**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_physics_ticks_per_second**\ (\ )
 
-每秒執行的固定反覆運算次數。用於控制物理模擬和 :ref:`Node._physics_process()<class_Node_private_method__physics_process>` 的執行頻率。因為 Godot 不會進行物理步驟的插值，所以通常應該總是將其設成大於等於 ``60`` 的值。因此，如果值小於 ``60`` 就會看起來卡頓。提高該值可以讓輸入變得更加靈敏、也可以繞過碰撞隧道問題，但請記得這麼做也會提升 CPU 的佔用率。另請參閱 :ref:`max_fps<class_Engine_property_max_fps>` 和 :ref:`ProjectSettings.physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`\ 。
+The number of fixed iterations per second. This controls how often physics simulation and the :ref:`Node._physics_process()<class_Node_private_method__physics_process>` method are run.
 
-\ **注意：**\ 每個算繪影格最多只能模擬 :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` 個物理週期。如果為了追趕算繪，需要在每個算繪影格中類比更多物理週期，遊戲看上去會是降速的（即便在物理計算中始終使用 ``delta``\ ）。因此，如果增大了 :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`\ ，而且遠大於預設值，那麼建議將 :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` 也調大。
+CPU usage scales approximately with the physics tick rate. However, at very low tick rates (usually below 30), physics behavior can break down. Input can also become less responsive at low tick rates as there can be a gap between input being registered, and the response on the next physics tick. High tick rates give more accurate physics simulation, particularly for fast moving objects. For example, racing games may benefit from increasing the tick rate above the default 60.
+
+See also :ref:`max_fps<class_Engine_property_max_fps>` and :ref:`ProjectSettings.physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`.
+
+\ **Note:** Only :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` physics ticks may be simulated per rendered frame at most. If more physics ticks have to be simulated per rendered frame to keep up with rendering, the project will appear to slow down (even if ``delta`` is used consistently in physics calculations). Therefore, it is recommended to also increase :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` if increasing :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` significantly above its default value.
+
+\ **Note:** Consider enabling :doc:`physics interpolation <../tutorials/physics/interpolation/index>` if you change :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` to a value that is not a multiple of ``60``. Using physics interpolation will avoid jittering when the monitor refresh rate and physics update rate don't exactly match.
 
 .. rst-class:: classref-item-separator
 

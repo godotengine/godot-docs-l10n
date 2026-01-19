@@ -93,7 +93,7 @@ Métodos
    +-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                                        | :ref:`close<class_FileAccess_method_close>`\ (\ )                                                                                                                                                                                                                                                       |
    +-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`FileAccess<class_FileAccess>`                                           | :ref:`create_temp<class_FileAccess_method_create_temp>`\ (\ mode_flags\: :ref:`int<class_int>`, prefix\: :ref:`String<class_String>` = "", extension\: :ref:`String<class_String>` = "", keep\: :ref:`bool<class_bool>` = false\ ) |static|                                                             |
+   | :ref:`FileAccess<class_FileAccess>`                                           | :ref:`create_temp<class_FileAccess_method_create_temp>`\ (\ mode_flags\: :ref:`ModeFlags<enum_FileAccess_ModeFlags>`, prefix\: :ref:`String<class_String>` = "", extension\: :ref:`String<class_String>` = "", keep\: :ref:`bool<class_bool>` = false\ ) |static|                                       |
    +-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                                       | :ref:`eof_reached<class_FileAccess_method_eof_reached>`\ (\ ) |const|                                                                                                                                                                                                                                   |
    +-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -482,7 +482,7 @@ Cierra el archivo actualmente abierto e impide las operaciones de lectura/escrit
 
 .. rst-class:: classref-method
 
-:ref:`FileAccess<class_FileAccess>` **create_temp**\ (\ mode_flags\: :ref:`int<class_int>`, prefix\: :ref:`String<class_String>` = "", extension\: :ref:`String<class_String>` = "", keep\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_FileAccess_method_create_temp>`
+:ref:`FileAccess<class_FileAccess>` **create_temp**\ (\ mode_flags\: :ref:`ModeFlags<enum_FileAccess_ModeFlags>`, prefix\: :ref:`String<class_String>` = "", extension\: :ref:`String<class_String>` = "", keep\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_FileAccess_method_create_temp>`
 
 Crea un archivo temporal. Este archivo se liberará cuando el **FileAccess** devuelto se libere.
 
@@ -577,7 +577,7 @@ Devuelve los siguientes 8 bits del archivo como un entero. Esto avanza el cursor
 
 :ref:`int<class_int>` **get_16**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_16>`
 
-Returns the next 16 bits from the file as an integer. This advances the file cursor by 2 bytes. See :ref:`store_16()<class_FileAccess_method_store_16>` for details on what values can be stored and retrieved this way.
+Devuelve los siguientes 16 bits del archivo como un integer. Esto avanza el cursor del archivo en 2 bytes. Véase :ref:`store_16()<class_FileAccess_method_store_16>` para obtener detalles sobre qué valores se pueden almacenar y recuperar de esta manera.
 
 .. rst-class:: classref-item-separator
 
@@ -625,7 +625,7 @@ Devuelve la última vez que se accedió al ``file`` en formato de marca de tiemp
 
 :ref:`String<class_String>` **get_as_text**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_as_text>`
 
-Returns the whole file as a :ref:`String<class_String>`. Text is interpreted as being UTF-8 encoded. This ignores the file cursor and does not affect it.
+Devuelve el archivo completo como una :ref:`String<class_String>`. El texto se interpreta como codificado en UTF-8. Esto ignora el cursor del archivo y no lo afecta.
 
 .. rst-class:: classref-item-separator
 
@@ -649,19 +649,19 @@ Devuelve los siguientes ``length`` bytes del archivo como un :ref:`PackedByteArr
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_csv_line**\ (\ delim\: :ref:`String<class_String>` = ","\ ) |const| :ref:`🔗<class_FileAccess_method_get_csv_line>`
 
-Returns the next value of the file in CSV (Comma-Separated Values) format. You can pass a different delimiter ``delim`` to use other than the default ``","`` (comma). This delimiter must be one-character long, and cannot be a double quotation mark.
+Devuelve el siguiente valor del archivo en formato CSV (Valores Separados por Comas). Puedes pasar un delimitador diferente ``delim`` para usar en lugar de la coma por defecto ``","``. Este delimitador debe tener un solo carácter de longitud y no puede ser una comilla doble.
 
-Text is interpreted as being UTF-8 encoded. Text values must be enclosed in double quotes if they include the delimiter character. Double quotes within a text value can be escaped by doubling their occurrence. This advances the file cursor to after the newline character at the end of the line.
+El texto se interpreta como codificado en UTF-8. Los valores de texto deben estar entre comillas dobles si incluyen el carácter delimitador. Las comillas dobles dentro de un valor de texto pueden escaparse duplicando su aparición. Esto avanza el cursor del archivo hasta después del carácter de nueva línea al final de la línea.
 
-For example, the following CSV lines are valid and will be properly parsed as two strings each:
+Por ejemplo, las siguientes líneas CSV son válidas y serán correctamente analizadas como dos cadenas cada una:
 
 .. code:: text
 
-    Alice,"Hello, Bob!"
-    Bob,Alice! What a surprise!
-    Alice,"I thought you'd reply with ""Hello, world""."
+    Alicia,"¡Hola, Bob!"
+    ¡Bob,Alicia! ¡Qué sorpresa!
+    Alicia,"pensé que responderías con ""Hola, mundo""."
 
-Note how the second line can omit the enclosing quotes as it does not include the delimiter. However it *could* very well use quotes, it was only written without for demonstration purposes. The third line must use ``""`` for each quotation mark that needs to be interpreted as such instead of the end of a text value.
+Ten en cuenta cómo la segunda línea puede omitir las comillas de cierre ya que no incluye el delimitador. Sin embargo, *podría* muy bien usar comillas, solo se escribió sin ellas para fines de demostración. La tercera línea debe usar ``""`` para cada comilla que necesite ser interpretada como tal en lugar del final de un valor de texto.
 
 .. rst-class:: classref-item-separator
 
@@ -673,7 +673,7 @@ Note how the second line can omit the enclosing quotes as it does not include th
 
 :ref:`float<class_float>` **get_double**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_double>`
 
-Returns the next 64 bits from the file as a floating-point number. This advances the file cursor by 8 bytes.
+Devuelve los siguientes 64 bits del archivo como un número de punto flotante. Esto avanza el cursor del archivo en 8 bytes.
 
 .. rst-class:: classref-item-separator
 
@@ -697,15 +697,15 @@ Devuelve el último error que ocurrió al intentar realizar las operaciones. Com
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_extended_attribute**\ (\ file\: :ref:`String<class_String>`, attribute_name\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_extended_attribute>`
 
-Reads the file extended attribute with name ``attribute_name`` as a byte array.
+Lee el atributo extendido del archivo con el nombre ``attribute_name`` como un array de bytes.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Nota:** Este método está implementado en Linux, macOS y Windows.
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **Nota:** La compatibilidad con atributos extendidos depende del sistema de archivos. Los atributos se perderán cuando el archivo se mueva entre sistemas de archivos incompatibles.
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **Nota:** En Linux, solo los atributos del espacio de nombres "user" son accesibles, el prefijo del espacio de nombres no debe incluirse.
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **Nota:** En Windows, se utilizan flujos de datos alternativos para almacenar atributos extendidos.
 
 .. rst-class:: classref-item-separator
 
@@ -717,15 +717,15 @@ Reads the file extended attribute with name ``attribute_name`` as a byte array.
 
 :ref:`String<class_String>` **get_extended_attribute_string**\ (\ file\: :ref:`String<class_String>`, attribute_name\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_extended_attribute_string>`
 
-Reads the file extended attribute with name ``attribute_name`` as a UTF-8 encoded string.
+Lee el atributo extendido del archivo con el nombre ``attribute_name`` como una string codificada en UTF-8.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Nota:** Este método está implementado en Linux, macOS y Windows.
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **Nota:** La compatibilidad con atributos extendidos depende del sistema de archivos. Los atributos se perderán cuando el archivo se mueva entre sistemas de archivos incompatibles.
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **Nota:** En Linux, solo los atributos del espacio de nombres "user" son accesibles, el prefijo del espacio de nombres no debe incluirse.
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **Nota:** En Windows, se utilizan flujos de datos alternativos para almacenar atributos extendidos.
 
 .. rst-class:: classref-item-separator
 
@@ -737,15 +737,15 @@ Reads the file extended attribute with name ``attribute_name`` as a UTF-8 encode
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_extended_attributes_list**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_extended_attributes_list>`
 
-Returns a list of file extended attributes.
+Devuelve una lista de atributos extendidos del archivo.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Nota:** Este método está implementado en Linux, macOS y Windows.
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **Nota:** La compatibilidad con atributos extendidos depende del sistema de archivos. Los atributos se perderán cuando el archivo se mueva entre sistemas de archivos incompatibles.
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **Nota:** En Linux, solo los atributos del espacio de nombres "user" son accesibles, el prefijo del espacio de nombres no debe incluirse.
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **Nota:** En Windows, se utilizan flujos de datos alternativos para almacenar atributos extendidos.
 
 .. rst-class:: classref-item-separator
 
@@ -873,7 +873,7 @@ Devuelve la última vez que se modificó ``file`` en formato de marca de tiempo 
 
 :ref:`Error<enum_@GlobalScope_Error>` **get_open_error**\ (\ ) |static| :ref:`🔗<class_FileAccess_method_get_open_error>`
 
-Returns the result of the last :ref:`open()<class_FileAccess_method_open>` call in the current thread.
+Devuelve el resultado de la última llamada a :ref:`open()<class_FileAccess_method_open>` en el hilo actual.
 
 .. rst-class:: classref-item-separator
 
@@ -975,7 +975,7 @@ Devuelve un SHA-256 :ref:`String<class_String>` que representa el archivo en la 
 
 :ref:`int<class_int>` **get_size**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_size>`
 
-Returns the size of the file at the given path, in bytes, or ``-1`` on error.
+Devuelve el tamaño del archivo en la ruta dada, en bytes, o ``-1`` en caso de error.
 
 .. rst-class:: classref-item-separator
 
@@ -987,9 +987,9 @@ Returns the size of the file at the given path, in bytes, or ``-1`` on error.
 
 |bitfield|\[:ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>`\] **get_unix_permissions**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_unix_permissions>`
 
-Returns the UNIX permissions of the file at the given path.
+Devuelve los permisos UNIX del archivo en la ruta dada.
 
-\ **Note:** This method is implemented on iOS, Linux/BSD, and macOS.
+\ **Nota:** Este método está implementado en iOS, Linux/BSD y macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1089,15 +1089,15 @@ Devuelve ``null`` si la apertura del archivo falla. Puedes usar :ref:`get_open_e
 
 :ref:`Error<enum_@GlobalScope_Error>` **remove_extended_attribute**\ (\ file\: :ref:`String<class_String>`, attribute_name\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_remove_extended_attribute>`
 
-Removes file extended attribute with name ``attribute_name``.
+Elimina el atributo extendido del archivo con el nombre ``attribute_name``.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Nota:** Este método está implementado en Linux, macOS y Windows.
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **Nota:** La compatibilidad con atributos extendidos depende del sistema de archivos. Los atributos se perderán cuando el archivo se mueva entre sistemas de archivos incompatibles.
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **Nota:** En Linux, solo los atributos del espacio de nombres "user" son accesibles; el prefijo del espacio de nombres no debe incluirse.
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **Nota:** En Windows, se utilizan flujos de datos alternativos para almacenar atributos extendidos.
 
 .. rst-class:: classref-item-separator
 
@@ -1147,15 +1147,15 @@ Sets the file cursor to the specified position in bytes, from the end of the fil
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_extended_attribute**\ (\ file\: :ref:`String<class_String>`, attribute_name\: :ref:`String<class_String>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) |static| :ref:`🔗<class_FileAccess_method_set_extended_attribute>`
 
-Writes file extended attribute with name ``attribute_name`` as a byte array.
+Escribe el atributo extendido del archivo con el nombre ``attribute_name`` como un array de bytes.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Nota:** Este método está implementado en Linux, macOS y Windows.
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **Nota:** El soporte de atributos extendidos depende del sistema de archivos. Los atributos se perderán cuando el archivo se mueva entre sistemas de archivos incompatibles.
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **Nota:** En Linux, solo los atributos del espacio de nombres "user" son accesibles, el prefijo del espacio de nombres no debe ser incluido.
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **Nota:** En Windows, se utilizan flujos de datos alternativos para almacenar atributos extendidos.
 
 .. rst-class:: classref-item-separator
 
@@ -1167,15 +1167,15 @@ Writes file extended attribute with name ``attribute_name`` as a byte array.
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_extended_attribute_string**\ (\ file\: :ref:`String<class_String>`, attribute_name\: :ref:`String<class_String>`, data\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_set_extended_attribute_string>`
 
-Writes file extended attribute with name ``attribute_name`` as a UTF-8 encoded string.
+Escribe el atributo extendido del archivo con el nombre ``attribute_name`` como una cadena codificada en UTF-8.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Nota:** Este método está implementado en Linux, macOS y Windows.
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **Nota:** El soporte de atributos extendidos depende del sistema de archivos. Los atributos se perderán cuando el archivo se mueva entre sistemas de archivos incompatibles.
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **Nota:** En Linux, solo los atributos del espacio de nombres "user" son accesibles, el prefijo del espacio de nombres no debe ser incluido.
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **Nota:** En Windows, se utilizan flujos de datos alternativos para almacenar atributos extendidos.
 
 .. rst-class:: classref-item-separator
 

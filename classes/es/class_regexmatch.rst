@@ -69,7 +69,7 @@ Descripciones de Propiedades
 
 - :ref:`Dictionary<class_Dictionary>` **get_names**\ (\ )
 
-Un diccionario de grupos nombrados y su correspondiente número de grupo. Sólo se incluyen los grupos que fueron coincidentes. Si varios grupos tienen el mismo nombre, ese nombre se referirá al primero que coincida.
+Un diccionario de grupos nombrados y su correspondiente número de grupo. Solo se incluyen los grupos que fueron coincidentes. Si varios grupos tienen el mismo nombre, ese nombre se referirá al primero que coincida.
 
 .. rst-class:: classref-item-separator
 

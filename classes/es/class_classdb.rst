@@ -424,7 +424,7 @@ Returns whether ``class`` or its ancestry has a signal called ``signal`` or not.
 
 :ref:`Error<enum_@GlobalScope_Error>` **class_set_property**\ (\ object\: :ref:`Object<class_Object>`, property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_ClassDB_method_class_set_property>`
 
-Sets ``property`` value of ``object`` to ``value``.
+Establece el valor de la ``property`` de ``object`` a ``value``.
 
 .. rst-class:: classref-item-separator
 

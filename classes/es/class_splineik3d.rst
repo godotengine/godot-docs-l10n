@@ -14,15 +14,15 @@ A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` for aligning bones along a
 Descripción
 ----------------------
 
-A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` for aligning bones along a :ref:`Path3D<class_Path3D>`. The smoothness of the fitting depends on the :ref:`Curve3D.bake_interval<class_Curve3D_property_bake_interval>`.
+Un :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` para alinear huesos a lo largo de una :ref:`Path3D<class_Path3D>`. La suavidad del ajuste depende de :ref:`Curve3D.bake_interval<class_Curve3D_property_bake_interval>`.
 
-If you want the :ref:`Path3D<class_Path3D>` to attach to a specific bone, it is recommended to place a :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>` before the **SplineIK3D** in the :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` list (children of the :ref:`Skeleton3D<class_Skeleton3D>`), and then place a :ref:`Path3D<class_Path3D>` as the :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>`'s child.
+Si quieres que la :ref:`Path3D<class_Path3D>` se adjunte a un hueso específico, se recomienda colocar un :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>` antes del **SplineIK3D** en la lista de :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` (hijos del :ref:`Skeleton3D<class_Skeleton3D>`), y luego colocar una :ref:`Path3D<class_Path3D>` como hijo del :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>`.
 
-Bone twist is determined based on the :ref:`Curve3D.get_point_tilt()<class_Curve3D_method_get_point_tilt>`.
+La torsión del hueso se determina basándose en el :ref:`Curve3D.get_point_tilt()<class_Curve3D_method_get_point_tilt>`.
 
-If the root bone joint and the start point of the :ref:`Curve3D<class_Curve3D>` are separated, it assumes that there is a linear line segment between them. This means that the vector pointing toward the start point of the :ref:`Curve3D<class_Curve3D>` takes precedence over the shortest intersection point along the :ref:`Curve3D<class_Curve3D>`.
+Si la articulación del hueso raíz y el punto de inicio de la :ref:`Curve3D<class_Curve3D>` están separados, asume que hay un segmento de línea recta entre ellos. Esto significa que el vector que apunta hacia el punto de inicio de la :ref:`Curve3D<class_Curve3D>` tiene prioridad sobre el punto de intersección más corto a lo largo de la :ref:`Curve3D<class_Curve3D>`.
 
-If the end bone joint exceeds the path length, it is bent as close as possible to the end point of the :ref:`Curve3D<class_Curve3D>`.
+Si la articulación del hueso final excede la longitud de la ruta, se dobla lo más cerca posible del punto final de la :ref:`Curve3D<class_Curve3D>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -99,7 +99,7 @@ Descripciones de Métodos
 
 :ref:`NodePath<class_NodePath>` **get_path_3d**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SplineIK3D_method_get_path_3d>`
 
-Returns the node path of the :ref:`Path3D<class_Path3D>` which is describing the path.
+Devuelve la ruta de nodo de la :ref:`Path3D<class_Path3D>` que describe la trayectoria.
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ Returns the node path of the :ref:`Path3D<class_Path3D>` which is describing the
 
 :ref:`int<class_int>` **get_tilt_fade_in**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SplineIK3D_method_get_tilt_fade_in>`
 
-Returns the tilt interpolation method used between the root bone and the start point of the :ref:`Curve3D<class_Curve3D>` when they are apart. See also :ref:`set_tilt_fade_in()<class_SplineIK3D_method_set_tilt_fade_in>`.
+Devuelve el método de interpolación de inclinación usado entre el hueso raíz y el punto de inicio de la :ref:`Curve3D<class_Curve3D>` cuando están separados. Véase también :ref:`set_tilt_fade_in()<class_SplineIK3D_method_set_tilt_fade_in>`.
 
 .. rst-class:: classref-item-separator
 
@@ -123,7 +123,7 @@ Returns the tilt interpolation method used between the root bone and the start p
 
 :ref:`int<class_int>` **get_tilt_fade_out**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SplineIK3D_method_get_tilt_fade_out>`
 
-Returns the tilt interpolation method used between the end bone and the end point of the :ref:`Curve3D<class_Curve3D>` when they are apart. See also :ref:`set_tilt_fade_out()<class_SplineIK3D_method_set_tilt_fade_out>`.
+Devuelve el método de interpolación de inclinación usado entre el hueso final y el punto final de la :ref:`Curve3D<class_Curve3D>` cuando están separados. Véase también :ref:`set_tilt_fade_out()<class_SplineIK3D_method_set_tilt_fade_out>`.
 
 .. rst-class:: classref-item-separator
 
@@ -135,7 +135,7 @@ Returns the tilt interpolation method used between the end bone and the end poin
 
 :ref:`bool<class_bool>` **is_tilt_enabled**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SplineIK3D_method_is_tilt_enabled>`
 
-Returns if the tilt property of the :ref:`Curve3D<class_Curve3D>` affects the bone twist.
+Devuelve si la propiedad de inclinación de la :ref:`Curve3D<class_Curve3D>` afecta la torsión del hueso.
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +147,7 @@ Returns if the tilt property of the :ref:`Curve3D<class_Curve3D>` affects the bo
 
 |void| **set_path_3d**\ (\ index\: :ref:`int<class_int>`, path_3d\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SplineIK3D_method_set_path_3d>`
 
-Sets the node path of the :ref:`Path3D<class_Path3D>` which is describing the path.
+Establece la ruta de nodo de la :ref:`Path3D<class_Path3D>` que describe la trayectoria.
 
 .. rst-class:: classref-item-separator
 
@@ -159,7 +159,7 @@ Sets the node path of the :ref:`Path3D<class_Path3D>` which is describing the pa
 
 |void| **set_tilt_enabled**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SplineIK3D_method_set_tilt_enabled>`
 
-Sets if the tilt property of the :ref:`Curve3D<class_Curve3D>` should affect the bone twist.
+Establece si la propiedad de inclinación de la :ref:`Curve3D<class_Curve3D>` debe afectar la torsión del hueso.
 
 .. rst-class:: classref-item-separator
 
@@ -171,11 +171,11 @@ Sets if the tilt property of the :ref:`Curve3D<class_Curve3D>` should affect the
 
 |void| **set_tilt_fade_in**\ (\ index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SplineIK3D_method_set_tilt_fade_in>`
 
-If ``size`` is greater than ``0``, the tilt is interpolated between ``size`` start bones from the start point of the :ref:`Curve3D<class_Curve3D>` when they are apart.
+Si ``size`` es mayor que ``0``, la inclinación se interpola entre ``size`` huesos iniciales desde el punto inicial de la :ref:`Curve3D<class_Curve3D>` cuando están separados.
 
-If ``size`` is equal ``0``, the tilts between the root bone head and the start point of the :ref:`Curve3D<class_Curve3D>` are unified with a tilt of the start point of the :ref:`Curve3D<class_Curve3D>`.
+Si ``size`` es igual a ``0``, las inclinaciones entre la cabeza del hueso raíz y el punto inicial de la :ref:`Curve3D<class_Curve3D>` se unifican con la inclinación del punto inicial de la :ref:`Curve3D<class_Curve3D>`.
 
-If ``size`` is less than ``0``, the tilts between the root bone and the start point of the :ref:`Curve3D<class_Curve3D>` are ``0.0``.
+Si ``size`` es menor que ``0``, las inclinaciones entre el hueso raíz y el punto inicial de la :ref:`Curve3D<class_Curve3D>` son ``0.0``.
 
 .. rst-class:: classref-item-separator
 

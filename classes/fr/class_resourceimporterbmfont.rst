@@ -25,7 +25,7 @@ Voir aussi :ref:`ResourceImporterDynamicFont<class_ResourceImporterDynamicFont>`
 Tutoriels
 ------------------
 
-- `Bitmap fonts - Using fonts <../tutorials/ui/gui_using_fonts.html#bitmap-fonts>`__
+- `Polices Bitmap - Utiliser des polices <../tutorials/ui/gui_using_fonts.html#bitmap-fonts>`__
 
 .. rst-class:: classref-reftable-group
 

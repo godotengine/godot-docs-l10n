@@ -280,9 +280,9 @@ PackedColorArray
 
 :ref:`Color<class_Color>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedColorArray_method_get>`
 
-Returns the :ref:`Color<class_Color>` at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns ``Color(0, 0, 0, 1)``.
+Возвращает значение :ref:`Color<class_Color>` по заданному ``index`` в массиве. Если ``index`` выходит за пределы массива или имеет отрицательное значение, этот метод завершается с ошибкой и возвращает ``Color(0, 0, 0, 1)``.
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+Этот метод похож (но не идентичен) оператору ``[]``. Наиболее примечательно то, что при сбое этого метода выполнение проекта не приостанавливается, если он запускается из редактора.
 
 .. rst-class:: classref-item-separator
 

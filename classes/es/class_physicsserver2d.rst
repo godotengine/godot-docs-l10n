@@ -1045,7 +1045,7 @@ enum **AreaBodyStatus**: :ref:`🔗<enum_PhysicsServer2D_AreaBodyStatus>`
 
 :ref:`AreaBodyStatus<enum_PhysicsServer2D_AreaBodyStatus>` **AREA_BODY_ADDED** = ``0``
 
-El valor del primer parámetro y la función de retrollamada de área recibe, cuando un objeto entra en una de sus formas.
+El valor del primer parámetro y la función de callback de área recibe, cuando un objeto entra en una de sus formas.
 
 .. _class_PhysicsServer2D_constant_AREA_BODY_REMOVED:
 

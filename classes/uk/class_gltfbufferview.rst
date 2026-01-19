@@ -187,7 +187,7 @@ GLTFBufferView — це структура даних, що представля
 
 :ref:`GLTFBufferView<class_GLTFBufferView>` **from_dictionary**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`\ ) |static| :ref:`🔗<class_GLTFBufferView_method_from_dictionary>`
 
-Creates a new GLTFBufferView instance by parsing the given :ref:`Dictionary<class_Dictionary>`.
+Створює новий екземпляр GLTFBufferView шляхом розбору заданого :ref:`Dictionary<class_Dictionary>`.
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ Creates a new GLTFBufferView instance by parsing the given :ref:`Dictionary<clas
 
 :ref:`Dictionary<class_Dictionary>` **to_dictionary**\ (\ ) |const| :ref:`🔗<class_GLTFBufferView_method_to_dictionary>`
 
-Serializes this GLTFBufferView instance into a :ref:`Dictionary<class_Dictionary>`.
+Серіалізує цей екземпляр GLTFBufferView у :ref:`Dictionary<class_Dictionary>`.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

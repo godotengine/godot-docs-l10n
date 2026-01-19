@@ -14,7 +14,7 @@ UniformSetCacheRD
 描述
 ----
 
-基于渲染设备的渲染器的 uniform 集缓存管理器。提供一种创建 uniform 集并在后续调用中重用它的方法（只要该 uniform 集存在）。当依赖的对象被释放时，该 uniform 集将自动被清理。
+Uniform set cache manager for :ref:`RenderingDevice<class_RenderingDevice>`-based renderers. Provides a way to create a uniform set and reuse it in subsequent calls for as long as the uniform set exists. Uniform set will automatically be cleaned up when dependent objects are freed.
 
 .. rst-class:: classref-reftable-group
 

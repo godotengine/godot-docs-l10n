@@ -106,7 +106,7 @@ Può essere utilizzato per effettuare richieste HTTP, ovvero scaricare o caricar
 .. tabs::
 
  .. code-tab:: gdscript
-[b]
+
     func _ready():
         # Crea un nodo di richiesta HTTP e collega il suo segnale di completamento.
         var http_request = HTTPRequest.new()

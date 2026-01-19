@@ -14,122 +14,122 @@ EditorTranslationParserPlugin
 Опис
 --------
 
-**EditorTranslationParserPlugin** is invoked when a file is being parsed to extract strings that require translation. To define the parsing and string extraction logic, override the :ref:`_parse_file()<class_EditorTranslationParserPlugin_private_method__parse_file>` method in script.
+**EditorTranslationParserPlugin** викликається, коли файл аналізується для вилучення рядків, які потребують перекладу. Щоб визначити логіку парсингу та вилучення рядків, перевизначте метод :ref:`_parse_file()<class_EditorTranslationParserPlugin_private_method__parse_file>` у скрипті.
 
-The return value should be an :ref:`Array<class_Array>` of :ref:`PackedStringArray<class_PackedStringArray>`\ s, one for each extracted translatable string. Each entry should contain ``[msgid, msgctxt, msgid_plural, comment, source_line]``, where all except ``msgid`` are optional. Empty strings will be ignored.
+Поверненим значенням має бути :ref:`Array<class_Array>` :ref:`PackedStringArray<class_PackedStringArray>`\ s, по одному для кожного вилученого перекладуваного рядка. Кожен запис має містити ``[msgid, msgctxt, msgid_plural, comment]``, де всі, крім ``msgid``, є необов’язковими. Порожні рядки ігноруватимуться. 
 
-The extracted strings will be written into a translation template file selected by user under "Template Generation" in "Localization" tab in "Project Settings" menu.
+Витягнуті рядки будуть записані у POT-файл, вибраний користувачем у розділі "Генерація POT" на вкладці "Локалізація" в меню "Налаштування проекту".
 
-Below shows an example of a custom parser that extracts strings from a CSV file to write into a template.
+Нижче наведено приклад спеціального аналізатора, який витягує рядки з файлу CSV для запису в POT. 
 
 
-.. tabs::
+.. tabs:: 
 
  .. code-tab:: gdscript
-
-    @tool
+ 
+    @tool 
     extends EditorTranslationParserPlugin
 
-    func _parse_file(path):
-        var ret: Array[PackedStringArray] = []
-        var file = FileAccess.open(path, FileAccess.READ)
-        var text = file.get_as_text()
-        var split_strs = text.split(",", false)
-        for s in split_strs:
-            ret.append(PackedStringArray([s]))
-            #print("Extracted string: " + s)
+    func _parse_file(path): 
+        було правильно: Array[PackedStringArray] = [] 
+        var file = FileAccess.open(шлях, FileAccess.READ) 
+        var text = file.get_as_text() 
+        var split_strs = text.split(",", false) 
+        для s у split_strs: 
+            ret.append(PackedStringArray([s])) 
+            #print("Видобутий рядок: " + s) 
 
-        return ret
+        return ret 
 
-    func _get_recognized_extensions():
-        return ["csv"]
+    func _get_recognized_extensions(): 
+        return ["csv"]  
 
  .. code-tab:: csharp
+ 
+    using Godot; 
 
-    using Godot;
-
-    [Tool]
+    [Tool] 
     public partial class CustomParser : EditorTranslationParserPlugin
     {
-        public override Godot.Collections.Array<string[]> _ParseFile(string path)
-        {
-            Godot.Collections.Array<string[]> ret;
-            using var file = FileAccess.Open(path, FileAccess.ModeFlags.Read);
-            string text = file.GetAsText();
-            string[] splitStrs = text.Split(",", allowEmpty: false);
-            foreach (string s in splitStrs)
-            {
-                ret.Add([s]);
-                //GD.Print($"Extracted string: {s}");
-            }
-            return ret;
-        }
+        public override Godot.Collections.Array<string[]> _ParseFile(string path) 
+        { 
+            Godot.Collections.Array<string[]> ret; 
+            using var file = FileAccess.Open(path, FileAccess.ModeFlags.Read); 
+            string text = file.GetAsText(); 
+            string[] splitStrs = text.Split(",", allowEmpty: false); 
+            foreach (String s у splitStrs) 
+            { 
+                ret.Add([s]); 
+                //GD.Print($"Видобутий рядок: {s}"); 
+            } 
+            return ret; 
+        } 
 
-        public override string[] _GetRecognizedExtensions()
-        {
-            return ["csv"];
-        }
-    }
+        public override string[] _GetRecognizedExtensions() 
+        { 
+            return ["csv"]; 
+        } 
+    } 
 
+ 
 
-
-To add a translatable string associated with a context, plural, comment, or source line:
-
-
-.. tabs::
-
- .. code-tab:: gdscript
-
-    # This will add a message with msgid "Test 1", msgctxt "context", msgid_plural "test 1 plurals", comment "test 1 comment", and source line "7".
-    ret.append(PackedStringArray(["Test 1", "context", "test 1 plurals", "test 1 comment", "7"]))
-    # This will add a message with msgid "A test without context" and msgid_plural "plurals".
-    ret.append(PackedStringArray(["A test without context", "", "plurals"]))
-    # This will add a message with msgid "Only with context" and msgctxt "a friendly context".
-    ret.append(PackedStringArray(["Only with context", "a friendly context"]))
-
- .. code-tab:: csharp
-
-    // This will add a message with msgid "Test 1", msgctxt "context", msgid_plural "test 1 plurals", comment "test 1 comment", and source line "7".
-    ret.Add(["Test 1", "context", "test 1 plurals", "test 1 comment", "7"]);
-    // This will add a message with msgid "A test without context" and msgid_plural "plurals".
-    ret.Add(["A test without context", "", "plurals"]);
-    // This will add a message with msgid "Only with context" and msgctxt "a friendly context".
-    ret.Add(["Only with context", "a friendly context"]);
+Щоб додати перекладний рядок, пов’язаний із контекстом, множиною чи коментарем: 
 
 
-
-\ **Note:** If you override parsing logic for standard script types (GDScript, C#, etc.), it would be better to load the ``path`` argument using :ref:`ResourceLoader.load()<class_ResourceLoader_method_load>`. This is because built-in scripts are loaded as :ref:`Resource<class_Resource>` type, not :ref:`FileAccess<class_FileAccess>` type. For example:
-
-
-.. tabs::
+.. tabs:: 
 
  .. code-tab:: gdscript
-
-    func _parse_file(path):
-        var res = ResourceLoader.load(path, "Script")
-        var text = res.source_code
-        # Parsing logic.
-
-    func _get_recognized_extensions():
-        return ["gd"]
+ 
+    # Це додасть повідомлення з msgid «Тест 1», msgctxt «контекст», msgid_plural «тест 1 множини» та коментар «тест 1 коментар». 
+    ret.append(PackedStringArray(["Тест 1", "контекст", "тест 1 множини", "тест 1 коментар"])) 
+    # Це додасть повідомлення з msgid "Тест без контексту" та msgid_plural "множина". 
+    ret.append(PackedStringArray(["Тест без контексту", "", "множина"])) 
+    # Це додасть повідомлення з msgid "Тільки з контекстом" і msgctxt "дружній контекст". 
+    ret.append(PackedStringArray(["Тільки з контекстом", "дружній контекст"]))  
 
  .. code-tab:: csharp
+ 
+    // Це додасть повідомлення з msgid "Test 1", msgctxt "context", msgid_plural "test 1 plurals" і коментарем "test 1 comment". 
+    ret.Add(["Тест 1", "контекст", "тест 1 множини", "тест 1 коментар"]); 
+    // Це додасть повідомлення з msgid "Тест без контексту" та msgid_plural "plurals". 
+    ret.Add(["Тест без контексту", "", "множина"]); 
+    // Це додасть повідомлення з msgid "Тільки з контекстом" і msgctxt "дружній контекст". 
+    ret.Add(["Тільки з контекстом", "дружній контекст"]);  
 
-    public override Godot.Collections.Array<string[]> _ParseFile(string path)
+ 
+
+\ **Примітка:** Якщо ви замінюєте логіку аналізу для стандартних типів сценаріїв (GDScript, C# тощо), було б краще завантажити аргумент ``path`` за допомогою :ref:`ResourceLoader.load()<class_ResourceLoader_method_load>`. Це тому, що вбудовані сценарії завантажуються як тип :ref:`Resource<class_Resource>`, а не як тип :ref:`FileAccess<class_FileAccess>`. Наприклад: 
+
+
+.. tabs:: 
+
+ .. code-tab:: gdscript
+ 
+    func _parse_file(path): 
+        var res = ResourceLoader.load(path, "Script") 
+        var text = res.source_code 
+        # Логіка розбору. 
+
+    func _get_recognized_extensions(): 
+        return ["gd"]  
+
+ .. code-tab:: csharp
+ 
+    public override Godot.Collections.Array<string[]> _ParseFile(string path) 
     {
-        var res = ResourceLoader.Load<Script>(path, "Script");
-        string text = res.SourceCode;
-        // Parsing logic.
+        var res = ResourceLoader.Load<Script>(String, "Script"); 
+        string text = res.SourceCode; 
+        // Розбір логіки. 
     }
 
-    public override string[] _GetRecognizedExtensions()
+    public override string[] _GetRecognizedExtensions() 
     {
-        return ["gd"];
-    }
+        return ["gd"]; 
+    } 
 
+ 
 
-
-To use **EditorTranslationParserPlugin**, register it using the :ref:`EditorPlugin.add_translation_parser_plugin()<class_EditorPlugin_method_add_translation_parser_plugin>` method first.
+Щоб використовувати **EditorTranslationParserPlugin**, спочатку зареєструйте його за допомогою методу :ref:`EditorPlugin.add_translation_parser_plugin()<class_EditorPlugin_method_add_translation_parser_plugin>`.
 
 .. rst-class:: classref-reftable-group
 

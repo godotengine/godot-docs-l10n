@@ -14,7 +14,16 @@ TextureCubemapArrayRD
 Опис
 --------
 
-Цей фактурний клас дозволяє використовувати текстуру кубічного масиву, створену безпосередньо на :ref:`RenderingDevice<class_RenderingDevice>` як текстура для матеріалів, сіточок і т.д.
+Цей клас текстур дозволяє використовувати текстуру масиву кубічної карти, створену безпосередньо на :ref:`RenderingDevice<class_RenderingDevice>`, як текстуру для матеріалів, сіток тощо.
+
+\ **Примітка:** **TextureCubemapArrayRD** призначений для низькорівневого використання з :ref:`RenderingDevice<class_RenderingDevice>`. Для більшості випадків використання використовуйте замість нього :ref:`CubemapArray<class_CubemapArray>`.
+
+.. rst-class:: classref-introduction-group
+
+Посібники
+------------------
+
+- `Демонстрація обчислення текстури <https://godotengine.org/asset-library/asset/2764>`__
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

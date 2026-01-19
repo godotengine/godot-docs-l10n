@@ -1278,9 +1278,9 @@ enum **TextDirection**: :ref:`🔗<enum_Control_TextDirection>`
 
 **NOTIFICATION_FOCUS_EXIT** = ``44`` :ref:`🔗<class_Control_constant_NOTIFICATION_FOCUS_EXIT>`
 
-Sent when the node loses focus.
+当节点失去焦点时发送。
 
-This notification is sent in reversed order.
+该通知会以反向顺序发送。
 
 .. _class_Control_constant_NOTIFICATION_THEME_CHANGED:
 
@@ -1970,9 +1970,9 @@ This notification is sent in reversed order.
 - |void| **set_pivot_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_pivot_offset**\ (\ )
 
-By default, the node's pivot is its top-left corner. When you change its :ref:`rotation<class_Control_property_rotation>` or :ref:`scale<class_Control_property_scale>`, it will rotate or scale around this pivot.
+默认情况下，该节点的轴心位于其左上角。当更改其 :ref:`rotation<class_Control_property_rotation>` 或 :ref:`scale<class_Control_property_scale>` 时，节点将围绕此轴心进行旋转或缩放。
 
-The actual offset is the combined value of this property and :ref:`pivot_offset_ratio<class_Control_property_pivot_offset_ratio>`.
+实际的偏移量是该属性值与 :ref:`pivot_offset_ratio<class_Control_property_pivot_offset_ratio>` 值的总和。
 
 .. rst-class:: classref-item-separator
 
@@ -3034,11 +3034,11 @@ Returns the combined value of :ref:`pivot_offset<class_Control_property_pivot_of
 
 :ref:`Vector2<class_Vector2>` **get_screen_position**\ (\ ) |const| :ref:`🔗<class_Control_method_get_screen_position>`
 
-Returns the position of this **Control** in global screen coordinates (i.e. taking window position into account). Mostly useful for editor plugins.
+返回该 **Control** 在全局屏幕坐标系中的位置（即考虑窗口的位置）。主要用于编辑器插件。
 
-Equivalent to ``get_screen_transform().origin`` (see :ref:`CanvasItem.get_screen_transform()<class_CanvasItem_method_get_screen_transform>`).
+等同于 ``get_screen_transform().origin``\ （见 :ref:`CanvasItem.get_screen_transform()<class_CanvasItem_method_get_screen_transform>`\ ）。
 
-\ **Example:** Show a popup at the mouse position:
+\ **示例：**\ 在鼠标位置显示弹出窗口：
 
 ::
 

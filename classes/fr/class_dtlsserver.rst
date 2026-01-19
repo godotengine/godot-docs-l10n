@@ -208,9 +208,9 @@ Setup the DTLS server to use the given ``server_options``. See :ref:`TLSOptions.
 
 :ref:`PacketPeerDTLS<class_PacketPeerDTLS>` **take_connection**\ (\ udp_peer\: :ref:`PacketPeerUDP<class_PacketPeerUDP>`\ ) :ref:`🔗<class_DTLSServer_method_take_connection>`
 
-Try to initiate the DTLS handshake with the given ``udp_peer`` which must be already connected (see :ref:`PacketPeerUDP.connect_to_host()<class_PacketPeerUDP_method_connect_to_host>`).
+Essaye de débuter une vérification DTLS avec le ``udp_peer`` donné qui doit être connecté au préalable (voir :ref:`PacketPeerUDP.connect_to_host)()<class_PacketPeerUDP_method_connect_to_host)>`\ 
 
-\ **Note:** You must check that the state of the return PacketPeerUDP is :ref:`PacketPeerDTLS.STATUS_HANDSHAKING<class_PacketPeerDTLS_constant_STATUS_HANDSHAKING>`, as it is normal that 50% of the new connections will be invalid due to cookie exchange.
+\ **Note :** Vous devez vérifier que le status du retour PacketPeerUDP est :ref:`PacketPeerDTLS.STATUS_HANDSHAKING<class_PacketPeerDTLS_constant_STATUS_HANDSHAKING>`, car il est commun que 50% des nouvelles connexions deviennent invalides en raison de l'échange de cookies.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

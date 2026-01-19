@@ -16,27 +16,27 @@ Control
 Опис
 --------
 
-Base class for all UI-related nodes. **Control** features a bounding rectangle that defines its extents, an anchor position relative to its parent control or the current viewport, and offsets relative to the anchor. The offsets update automatically when the node, any of its parents, or the screen size change.
+Базовий клас для всіх вузлів, пов'язаних з інтерфейсом користувача. **Control** має обмежувальний прямокутник, який визначає його межі, положення прив'язки відносно батьківського елемента керування або поточної області перегляду, а також зміщення відносно прив'язки. Зміщення оновлюються автоматично, коли змінюється вузол, будь-який з його батьківських елементів або розмір екрана.
 
-For more information on Godot's UI system, anchors, offsets, and containers, see the related tutorials in the manual. To build flexible UIs, you'll need a mix of UI elements that inherit from **Control** and :ref:`Container<class_Container>` nodes.
+Щоб отримати додаткову інформацію про систему інтерфейсу користувача Godot, прив'язки, зміщення та контейнери, див. відповідні навчальні посібники в посібнику. Для створення гнучких інтерфейсів користувача вам знадобиться поєднання елементів інтерфейсу користувача, які успадковуються від вузлів **Control** та :ref:`Container<class_Container>`.
 
-\ **Note:** Since both :ref:`Node2D<class_Node2D>` and **Control** inherit from :ref:`CanvasItem<class_CanvasItem>`, they share several concepts from the class such as the :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` and :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` properties.
+\ **Примітка:** Оскільки як :ref:`Node2D<class_Node2D>`, так і **Control** успадковуються від :ref:`CanvasItem<class_CanvasItem>`, вони мають кілька спільних концепцій з класу, таких як властивості :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` та :ref:`CanvasItem.visible<class_CanvasItem_property_visible>`.
 
-\ **User Interface nodes and input**\ 
+\ **Вузли інтерфейсу користувача та вхідні дані**\ 
 
-Godot propagates input events via viewports. Each :ref:`Viewport<class_Viewport>` is responsible for propagating :ref:`InputEvent<class_InputEvent>`\ s to their child nodes. As the :ref:`SceneTree.root<class_SceneTree_property_root>` is a :ref:`Window<class_Window>`, this already happens automatically for all UI elements in your game.
+Godot поширює події введення через області перегляду. Кожна :ref:`Viewport<class_Viewport>` відповідає за поширення :ref:`InputEvent<class_InputEvent>` на свої дочірні вузли. Оскільки :ref:`SceneTree.root<class_SceneTree_property_root>` є :ref:`Window<class_Window>`, це вже відбувається автоматично для всіх елементів інтерфейсу у вашій грі.
 
-Input events are propagated through the :ref:`SceneTree<class_SceneTree>` from the root node to all child nodes by calling :ref:`Node._input()<class_Node_private_method__input>`. For UI elements specifically, it makes more sense to override the virtual method :ref:`_gui_input()<class_Control_private_method__gui_input>`, which filters out unrelated input events, such as by checking z-order, :ref:`mouse_filter<class_Control_property_mouse_filter>`, focus, or if the event was inside of the control's bounding box.
+Вхідні події поширюються через :ref:`SceneTree<class_SceneTree>` від кореневого вузла до всіх дочірніх вузлів шляхом виклику методу :ref:`Node._input()<class_Node_private_method__input>`. Зокрема, для елементів інтерфейсу має більше сенсу перевизначити віртуальний метод :ref:`_gui_input()<class_Control_private_method__gui_input>`, який фільтрує непов'язані вхідні події, такі як перевірка z-порядку, :ref:`mouse_filter<class_Control_property_mouse_filter>`, фокусу або того, чи подія була всередині рамки обмежувального елемента керування.
 
-Call :ref:`accept_event()<class_Control_method_accept_event>` so no other node receives the event. Once you accept an input, it becomes handled so :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>` will not process it.
+Викличте :ref:`accept_event()<class_Control_method_accept_event>`, щоб жоден інший вузол не отримував подію. Після того, як ви приймете вхідні дані, вони стануть обробленими, тому :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>` не оброблятиме їх.
 
-Only one **Control** node can be in focus. Only the node in focus will receive events. To get the focus, call :ref:`grab_focus()<class_Control_method_grab_focus>`. **Control** nodes lose focus when another node grabs it, or if you hide the node in focus. Focus will not be represented visually if gained via mouse/touch input, only appearing with keyboard/gamepad input (for accessibility), or via :ref:`grab_focus()<class_Control_method_grab_focus>`.
+Тільки один вузол **Control** може бути у фокусі. Тільки вузол у фокусі отримуватиме події. Щоб отримати фокус, викличте :ref:`grab_focus()<class_Control_method_grab_focus>`. Вузли **Control** втрачають фокус, коли інший вузол захоплює їх або якщо ви приховуєте вузол у фокусі. Фокус не буде представлений візуально, якщо його отримано за допомогою введення мишею/сенсором, а з'явиться лише за допомогою введення з клавіатури/геймпада (для доступності) або через :ref:`grab_focus()<class_Control_method_grab_focus>`.
 
-Set :ref:`mouse_filter<class_Control_property_mouse_filter>` to :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>` to tell a **Control** node to ignore mouse or touch events. You'll need it if you place an icon on top of a button.
+Встановіть :ref:`mouse_filter<class_Control_property_mouse_filter>` на :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`, щоб повідомити вузлу **Control** ігнорувати події миші або дотику. Вам це знадобиться, якщо ви розміщуєте значок поверх кнопки.
 
-\ :ref:`Theme<class_Theme>` resources change the control's appearance. The :ref:`theme<class_Control_property_theme>` of a **Control** node affects all of its direct and indirect children (as long as a chain of controls is uninterrupted). To override some of the theme items, call one of the ``add_theme_*_override`` methods, like :ref:`add_theme_font_override()<class_Control_method_add_theme_font_override>`. You can also override theme items in the Inspector.
+Ресурси :ref:`Theme<class_Theme>` змінюють зовнішній вигляд елемента керування. Тема  вузла **Control** впливає на всі його прямі та непрямі дочірні елементи (доки ланцюжок елементів керування не переривається). Щоб перезаписати деякі елементи теми, викличте один із методів ``add_theme_*_override``, наприклад, :ref:`add_theme_font_override()<class_Control_method_add_theme_font_override>`. Ви також можете перезаписати елементи теми в Інспекторі.
 
-\ **Note:** Theme items are *not* :ref:`Object<class_Object>` properties. This means you can't access their values using :ref:`Object.get()<class_Object_method_get>` and :ref:`Object.set()<class_Object_method_set>`. Instead, use the ``get_theme_*`` and ``add_theme_*_override`` methods provided by this class.
+\ **Примітка:** Елементи теми *не є* властивостями :ref:`Object<class_Object>`. Це означає, що ви не можете отримати доступ до їхніх значень за допомогою :ref:`Object.get()<class_Object_method_get>` та :ref:`Object.set()<class_Object_method_set>`. Замість цього використовуйте методи ``get_theme_*`` та ``add_theme_*_override``, що надаються цим класом.
 
 .. rst-class:: classref-introduction-group
 
@@ -599,7 +599,7 @@ enum **MouseBehaviorRecursive**: :ref:`🔗<enum_Control_MouseBehaviorRecursive>
 
 :ref:`MouseBehaviorRecursive<enum_Control_MouseBehaviorRecursive>` **MOUSE_BEHAVIOR_ENABLED** = ``2``
 
-Allows the control to receive mouse input, depending on the :ref:`mouse_filter<class_Control_property_mouse_filter>`. This can be used to ignore the parent's :ref:`mouse_behavior_recursive<class_Control_property_mouse_behavior_recursive>`. :ref:`get_mouse_filter_with_override()<class_Control_method_get_mouse_filter_with_override>` will return the :ref:`mouse_filter<class_Control_property_mouse_filter>`.
+Дозволяє елементу керування отримувати ввід миші, залежно від :ref:`mouse_filter<class_Control_property_mouse_filter>`. Це можна використовувати для ігнорування батьківського :ref:`mouse_behavior_recursive<class_Control_property_mouse_behavior_recursive>`. :ref:`get_mouse_filter_with_override()<class_Control_method_get_mouse_filter_with_override>` поверне :ref:`mouse_filter<class_Control_property_mouse_filter>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1278,9 +1278,9 @@ enum **TextDirection**: :ref:`🔗<enum_Control_TextDirection>`
 
 **NOTIFICATION_FOCUS_EXIT** = ``44`` :ref:`🔗<class_Control_constant_NOTIFICATION_FOCUS_EXIT>`
 
-Sent when the node loses focus.
+Надсилається, коли вузол втрачає фокус.
 
-This notification is sent in reversed order.
+Це сповіщення надсилається у зворотному порядку.
 
 .. _class_Control_constant_NOTIFICATION_THEME_CHANGED:
 
@@ -1970,9 +1970,9 @@ This notification is sent in reversed order.
 - |void| **set_pivot_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_pivot_offset**\ (\ )
 
-By default, the node's pivot is its top-left corner. When you change its :ref:`rotation<class_Control_property_rotation>` or :ref:`scale<class_Control_property_scale>`, it will rotate or scale around this pivot.
+За замовчуванням, опорною точкою вузла є його верхній лівий кут. Коли ви змінюєте його :ref:`rotation<class_Control_property_rotation>` або :ref:`scale<class_Control_property_scale>`, він обертатиметься або масштабуватиметься навколо цієї опорної точки.
 
-The actual offset is the combined value of this property and :ref:`pivot_offset_ratio<class_Control_property_pivot_offset_ratio>`.
+Фактичне зміщення – це комбіноване значення цієї властивості та :ref:`pivot_offset_ratio<class_Control_property_pivot_offset_ratio>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1989,9 +1989,9 @@ The actual offset is the combined value of this property and :ref:`pivot_offset_
 - |void| **set_pivot_offset_ratio**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_pivot_offset_ratio**\ (\ )
 
-Same as :ref:`pivot_offset<class_Control_property_pivot_offset>`, but expressed as uniform vector, where ``Vector2(0, 0)`` is the top-left corner of this control, and ``Vector2(1, 1)`` is its bottom-right corner. Set this property to ``Vector2(0.5, 0.5)`` to pivot around this control's center.
+Те саме, що й :ref:`pivot_offset<class_Control_property_pivot_offset>`, але виражено як рівномірний вектор, де ``Vector2(0, 0)`` – це верхній лівий кут цього елемента керування, а ``Vector2(1, 1)`` – його нижній правий кут. Встановіть для цієї властивості значення ``Vector2(0.5, 0.5)``, щоб повертатися навколо центру цього елемента керування.
 
-The actual offset is the combined value of this property and :ref:`pivot_offset<class_Control_property_pivot_offset>`.
+Фактичне зміщення – це сума значення цієї властивості та :ref:`pivot_offset<class_Control_property_pivot_offset>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2505,19 +2505,19 @@ Godot викликає цей метод для отримання даних, �
 
 :ref:`Object<class_Object>` **_make_custom_tooltip**\ (\ for_text\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__make_custom_tooltip>`
 
-Virtual method to be implemented by the user. Returns a **Control** node that should be used as a tooltip instead of the default one. ``for_text`` is the return value of :ref:`get_tooltip()<class_Control_method_get_tooltip>`.
+Віртуальний метод, який має бути реалізований користувачем. Повертає вузол **Control**, який слід використовувати як підказку замість вузла за замовчуванням. ``for_text`` – це повернене значення :ref:`get_tooltip()<class_Control_method_get_tooltip>`.
 
-The returned node must be of type **Control** or Control-derived. It can have child nodes of any type. It is freed when the tooltip disappears, so make sure you always provide a new instance (if you want to use a pre-existing node from your scene tree, you can duplicate it and pass the duplicated instance). When ``null`` or a non-Control node is returned, the default tooltip will be used instead.
+Повернений вузол має бути типу **Control** або похідного від Control. Він може мати дочірні вузли будь-якого типу. Він звільняється, коли підказка зникає, тому переконайтеся, що ви завжди надаєте новий екземпляр (якщо ви хочете використовувати вже існуючий вузол з вашого дерева сцени, ви можете дублювати його та передати дублікат). Коли повертається вузол ``null`` або вузол, що не є Control, замість нього буде використана підказка за замовчуванням.
 
-The returned node will be added as child to a :ref:`PopupPanel<class_PopupPanel>`, so you should only provide the contents of that panel. That :ref:`PopupPanel<class_PopupPanel>` can be themed using :ref:`Theme.set_stylebox()<class_Theme_method_set_stylebox>` for the type ``"TooltipPanel"`` (see :ref:`tooltip_text<class_Control_property_tooltip_text>` for an example).
+Повернений вузол буде додано як дочірній до :ref:`PopupPanel<class_PopupPanel>`, тому ви повинні надавати лише вміст цієї панелі. Цю :ref:`PopupPanel<class_PopupPanel>` можна оформити за допомогою методу :ref:`Theme.set_stylebox()<class_Theme_method_set_stylebox>` для типу ``"TooltipPanel"`` (див. приклад :ref:`tooltip_text<class_Control_property_tooltip_text>`).
 
-\ **Note:** The tooltip is shrunk to minimal size. If you want to ensure it's fully visible, you might want to set its :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` to some non-zero value.
+ **Примітка:** Розмір підказки зменшено до мінімального. Якщо ви хочете забезпечити її повну видимість, можливо, варто встановити для її :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` значення, відмінне від нуля.
 
-\ **Note:** The node (and any relevant children) should have their :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` set to ``true`` when returned, otherwise, the viewport that instantiates it will not be able to calculate its minimum size reliably.
+\ **Примітка:** Вузол (та будь-які відповідні дочірні об'єкти) повинен мати значення :ref:`CanvasItem.visible<class_CanvasItem_property_visible>`, встановлене на ``true`` під час повернення, інакше область перегляду, яка створює його екземпляр, не зможе надійно обчислити його мінімальний розмір.
 
-\ **Note:** If overridden, this method is called even if :ref:`get_tooltip()<class_Control_method_get_tooltip>` returns an empty string. When this happens with the default tooltip, it is not displayed. To copy this behavior, return ``null`` in this method when ``for_text`` is empty.
+\ **Примітка:** Якщо перевизначити, цей метод викликається, навіть якщо :ref:`get_tooltip()<class_Control_method_get_tooltip>` повертає порожній рядок. Коли це трапляється зі стандартною підказкою, вона не відображається. Щоб скопіювати цю поведінку, поверніть ``null`` у цьому методі, коли ``for_text`` порожній.
 
-\ **Example:** Use a constructed node as a tooltip:
+\ **Приклад:** Використовуйте сконструйований вузол як підказку:
 
 
 .. tabs::
@@ -2540,7 +2540,7 @@ The returned node will be added as child to a :ref:`PopupPanel<class_PopupPanel>
 
 
 
-\ **Example:** Use a scene instance as a tooltip:
+\ **Приклад:** Використання екземпляра сцени як підказки:
 
 
 .. tabs::
@@ -2877,7 +2877,7 @@ The returned node will be added as child to a :ref:`PopupPanel<class_PopupPanel>
 
 :ref:`Vector2<class_Vector2>` **get_combined_pivot_offset**\ (\ ) |const| :ref:`🔗<class_Control_method_get_combined_pivot_offset>`
 
-Returns the combined value of :ref:`pivot_offset<class_Control_property_pivot_offset>` and :ref:`pivot_offset_ratio<class_Control_property_pivot_offset_ratio>`, in pixels. The ratio is multiplied by the control's size.
+Повертає сумарне значення :ref:`pivot_offset<class_Control_property_pivot_offset>` та :ref:`pivot_offset_ratio<class_Control_property_pivot_offset_ratio>` у пікселях. Співвідношення множиться на розмір елемента керування.
 
 .. rst-class:: classref-item-separator
 
@@ -3031,17 +3031,17 @@ Returns the combined value of :ref:`pivot_offset<class_Control_property_pivot_of
 
 :ref:`Vector2<class_Vector2>` **get_screen_position**\ (\ ) |const| :ref:`🔗<class_Control_method_get_screen_position>`
 
-Returns the position of this **Control** in global screen coordinates (i.e. taking window position into account). Mostly useful for editor plugins.
+Повертає позицію цього **Control** у глобальних координатах екрана (тобто з урахуванням позиції вікна). Здебільшого корисно для плагінів редактора.
 
-Equivalent to ``get_screen_transform().origin`` (see :ref:`CanvasItem.get_screen_transform()<class_CanvasItem_method_get_screen_transform>`).
+Еквівалентно ``get_screen_transform().origin`` (див. :ref:`CanvasItem.get_screen_transform()<class_CanvasItem_method_get_screen_transform>`).
 
-\ **Example:** Show a popup at the mouse position:
+\ **Приклад:** Показати спливаюче вікно в позиції миші:
 
 ::
 
     popup_menu.position = get_screen_position() + get_screen_transform().basis_xform(get_local_mouse_position())
 
-    # The above code is equivalent to:
+    # Наведений вище код еквівалентний:
     popup_menu.position = get_screen_transform() * get_local_mouse_position()
 
     popup_menu.reset_size()
@@ -3251,11 +3251,11 @@ Equivalent to ``get_screen_transform().origin`` (see :ref:`CanvasItem.get_screen
 
 |void| **grab_focus**\ (\ hide_focus\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Control_method_grab_focus>`
 
-Steal the focus from another control and become the focused control (see :ref:`focus_mode<class_Control_property_focus_mode>`).
+Вкрасти фокус з іншого елемента керування та стати сфокусованим елементом керування (див. :ref:`focus_mode<class_Control_property_focus_mode>`).
 
-If ``hide_focus`` is ``true``, the control will not visually show its focused state. Has no effect for :ref:`LineEdit<class_LineEdit>` and :ref:`TextEdit<class_TextEdit>` when :ref:`ProjectSettings.gui/common/show_focus_state_on_pointer_event<class_ProjectSettings_property_gui/common/show_focus_state_on_pointer_event>` is set to ``Control Supports Keyboard Input``, or for any control when it is set to ``Always``.
+Якщо ``hide_focus`` має значення ``true``, елемент керування візуально не відображатиме свій сфокусований стан. Не має жодного ефекту для :ref:`LineEdit<class_LineEdit>` та :ref:`TextEdit<class_TextEdit>`, коли :ref:`ProjectSettings.gui/common/show_focus_state_on_pointer_event<class_ProjectSettings_property_gui/common/show_focus_state_on_pointer_event>` встановлено на ``Елемент керування підтримує введення з клавіатури``, або для будь-якого елемента керування, коли встановлено на ``Завжди``.
 
-\ **Note:** Using this method together with :ref:`Callable.call_deferred()<class_Callable_method_call_deferred>` makes it more reliable, especially when called inside :ref:`Node._ready()<class_Node_private_method__ready>`.
+\ **Примітка:** Використання цього методу разом з :ref:`Callable.call_deferred()<class_Callable_method_call_deferred>` робить його надійнішим, особливо коли його викликають всередині :ref:`Node._ready()<class_Node_private_method__ready>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3267,9 +3267,9 @@ If ``hide_focus`` is ``true``, the control will not visually show its focused st
 
 :ref:`bool<class_bool>` **has_focus**\ (\ ignore_hidden_focus\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Control_method_has_focus>`
 
-Returns ``true`` if this is the current focused control. See :ref:`focus_mode<class_Control_property_focus_mode>`.
+Повертає ``true``, якщо це поточний елемент керування, на якому встановлено фокус. Див. :ref:`focus_mode<class_Control_property_focus_mode>`.
 
-If ``ignore_hidden_focus`` is ``true``, controls that have their focus hidden will always return ``false``. Hidden focus happens automatically when controls gain focus via mouse input, or manually using :ref:`grab_focus()<class_Control_method_grab_focus>` with ``hide_focus`` set to ``true``.
+Якщо ``ignore_hidden_focus`` має значення ``true``, елементи керування, фокус яких приховано, завжди повертатимуть ``false``. Фокус приховано автоматично, коли елементи керування отримують фокус за допомогою вводу миші або вручну за допомогою методу ``grab_focus`` з ``hide_focus``, встановленим на ``true``.
 
 .. rst-class:: classref-item-separator
 

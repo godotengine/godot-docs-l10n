@@ -14,7 +14,7 @@ ImageTexture
 描述
 ----
 
-基于 :ref:`Image<class_Image>` 的 :ref:`Texture2D<class_Texture2D>`\ 。对于图像的显示，必须使用 :ref:`create_from_image()<class_ImageTexture_method_create_from_image>` 方法从中创建一个 **ImageTexture**\ ：
+基于 :ref:`Image<class_Image>` 的 :ref:`Texture2D<class_Texture2D>`\ 。若要显示图像，必须使用 :ref:`create_from_image()<class_ImageTexture_method_create_from_image>` 方法从中创建一个 **ImageTexture**\ ：
 
 ::
 
@@ -22,7 +22,7 @@ ImageTexture
     var texture = ImageTexture.create_from_image(image)
     $Sprite2D.texture = texture
 
-这样，可以在运行时通过从编辑器内部和外部加载图像来创建纹理。
+如此一来，便可通过加载编辑器内外部的图像，在运行时动态创建纹理。
 
 \ **警告：**\ 最好使用 :ref:`@GDScript.load()<class_@GDScript_method_load>` 加载导入的纹理，而不是使用 :ref:`Image.load()<class_Image_method_load>` 从文件系统中动态加载它们，因为后者可能不适用于导出的项目：
 
@@ -31,16 +31,16 @@ ImageTexture
     var texture = load("res://icon.svg")
     $Sprite2D.texture = texture
 
-这是因为图像必须首先作为 :ref:`CompressedTexture2D<class_CompressedTexture2D>` 导入，然后才能使用 :ref:`@GDScript.load()<class_@GDScript_method_load>` 加载。如果仍想像加载任何其他 :ref:`Resource<class_Resource>` 一样加载图像文件，请将其导入为 :ref:`Image<class_Image>` 资源，然后使用 :ref:`@GDScript.load()<class_@GDScript_method_load>` 方法正常加载它。
+这是因为图像必须首先作为 :ref:`CompressedTexture2D<class_CompressedTexture2D>` 被导入，然后才能被 :ref:`@GDScript.load()<class_@GDScript_method_load>` 加载。若仍希望像加载其他 :ref:`Resource<class_Resource>` 一样加载图像文件，可先将其作为 :ref:`Image<class_Image>` 资源导入，然后使用 :ref:`@GDScript.load()<class_@GDScript_method_load>` 方法正常加载。
 
-\ **注意：**\ 可以使用 :ref:`Texture2D.get_image()<class_Texture2D_method_get_image>` 方法从导入的纹理中检索该图像，该方法返回该图像的副本：
+\ **注意：**\ 若要从已导入的纹理中重新获得图像，可以使用 :ref:`Texture2D.get_image()<class_Texture2D_method_get_image>`\ ，该方法返回图像的副本：
 
 ::
 
     var texture = load("res://icon.svg")
     var image = texture.get_image()
 
-\ **ImageTexture** 并不意味着直接在编辑器界面中进行操作，主要用于通过代码在屏幕上动态渲染图像。如果需要从编辑器中按程序生成图像，请考虑实现一个新的 :ref:`EditorImportPlugin<class_EditorImportPlugin>`\ ，将图像保存和导入为自定义纹理资源。
+\ **ImageTexture** 并非设计为在编辑器界面内直接操作，其主要用途是通过代码在屏幕上动态渲染图像。如果你需要在编辑器内部程序化生成图像，请考虑将其保存并导入为自定义纹理资源，这需要实现一个新的 :ref:`EditorImportPlugin<class_EditorImportPlugin>`\ 。
 
 \ **注意：**\ 由于图形硬件限制，最大纹理大小为 16384×16384 像素。
 

@@ -14,9 +14,9 @@ Un nœud qui fournit une :ref:`Shape3D<class_Shape3D>` à un parent :ref:`Collis
 Description
 -----------
 
-A node that provides a :ref:`Shape3D<class_Shape3D>` to a :ref:`CollisionObject3D<class_CollisionObject3D>` parent and allows it to be edited. This can give a detection shape to an :ref:`Area3D<class_Area3D>` or turn a :ref:`PhysicsBody3D<class_PhysicsBody3D>` into a solid object.
+Un nœud qui fournit une :ref:`Shape3D<class_Shape3D>` à un parent :ref:`CollisionObject3D<class_CollisionObject3D>` et permet de la modifier. Cela peut donner une forme de détection à une :ref:`Area3D<class_Area3D>` ou transformer un :ref:`PhysicsBody3D<class_PhysicsBody3D>` en un objet solide.
 
-\ **Warning:** A non-uniformly scaled **CollisionShape3D** will likely not behave as expected. Make sure to keep its scale the same on all axes and adjust its :ref:`shape<class_CollisionShape3D_property_shape>` resource instead.
+\ **Attention :**\  Un **CollisionShape3D** non-uniformémement dimensionné ne se comportera probablement pas comme prévu. Assurez-vous de garder la même échelle sur tous les axes et d'ajuster sa ressource :ref:`shape<class_CollisionShape3D_property_shape>` à la place.
 
 .. rst-class:: classref-introduction-group
 

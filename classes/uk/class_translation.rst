@@ -16,9 +16,9 @@ Translation
 Опис
 --------
 
-**Translation** maps a collection of strings to their individual translations, and also provides convenience methods for pluralization.
+**Translation** зіставляє колекцію рядків з їхніми окремими перекладами, а також надає зручні методи для множини.
 
-A **Translation** consists of messages. A message is identified by its context and untranslated string. Unlike `gettext <https://www.gnu.org/software/gettext/>`__, using an empty context string in Godot means not using any context.
+\ **Translation** складається з повідомлень. Повідомлення ідентифікується за контекстом та неперекладеним рядком. На відміну від `gettext <https://www.gnu.org/software/gettext/>`__, використання порожнього контекстного рядка в Godot означає невикористання жодного контексту.
 
 .. rst-class:: classref-introduction-group
 
@@ -112,9 +112,9 @@ A **Translation** consists of messages. A message is identified by its context a
 - |void| **set_plural_rules_override**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_plural_rules_override**\ (\ )
 
-The plural rules string to enforce. See `GNU gettext <https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html>`__ for examples and more info.
+Рядок правил множини, які потрібно застосувати. Див. приклади та додаткову інформацію за посиланням `GNU gettext <https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html>`__.
 
-If empty or invalid, default plural rules from :ref:`TranslationServer.get_plural_rules()<class_TranslationServer_method_get_plural_rules>` are used. The English plural rules are used as a fallback.
+Якщо поле порожнє або недійсне, використовуються правила множини за замовчуванням з методу :ref:`TranslationServer.get_plural_rules()<class_TranslationServer_method_get_plural_rules>`. Англійські правила множини використовуються як резервний варіант.
 
 .. rst-class:: classref-section-separator
 
@@ -169,9 +169,9 @@ If empty or invalid, default plural rules from :ref:`TranslationServer.get_plura
 
 |void| **add_plural_message**\ (\ src_message\: :ref:`StringName<class_StringName>`, xlated_messages\: :ref:`PackedStringArray<class_PackedStringArray>`, context\: :ref:`StringName<class_StringName>` = &""\ ) :ref:`🔗<class_Translation_method_add_plural_message>`
 
-Adds a message involving plural translation if nonexistent, followed by its translation.
+Додає повідомлення, що містить переклад у множині, якщо він відсутній, а потім його переклад.
 
-An additional context could be used to specify the translation context or differentiate polysemic words.
+Додатковий контекст може бути використаний для уточнення контексту перекладу або розрізнення полісемічних слів.
 
 .. rst-class:: classref-item-separator
 
@@ -219,9 +219,9 @@ An additional context could be used to specify the translation context or differ
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_message_list**\ (\ ) |const| :ref:`🔗<class_Translation_method_get_message_list>`
 
-Returns the keys of all messages, that is, the context and untranslated strings of each message.
+Повертає ключі всіх повідомлень, тобто контекст та неперекладені рядки кожного повідомлення.
 
-\ **Note:** If a message does not use a context, the corresponding element is the untranslated string. Otherwise, the corresponding element is the context and untranslated string separated by the EOT character (``U+0004``). This is done for compatibility purposes.
+\ **Примітка:** Якщо повідомлення не використовує контекст, відповідним елементом є неперекладений рядок. В іншому випадку відповідним елементом є контекст та неперекладений рядок, розділені символом EOT (``U+0004``). Це зроблено для цілей сумісності.
 
 ::
 
@@ -261,7 +261,7 @@ Returns the keys of all messages, that is, the context and untranslated strings 
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_translated_message_list**\ (\ ) |const| :ref:`🔗<class_Translation_method_get_translated_message_list>`
 
-Returns all the translated strings.
+Повертає всі перекладені рядки.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

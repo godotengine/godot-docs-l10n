@@ -14,7 +14,11 @@ MeshInstance2D
 說明
 ----
 
-用於在 2D 中顯示 :ref:`Mesh<class_Mesh>` 的節點。可以通過編輯器工具列中的工具，從現有的 :ref:`Sprite2D<class_Sprite2D>` 自動建立 **MeshInstance2D**\ 。請選中該 :ref:`Sprite2D<class_Sprite2D>` 節點，然後在 2D 編輯器視口的頂部選擇 **Sprite2D > 轉換為 MeshInstance2D**\ 。
+Node used for displaying a :ref:`Mesh<class_Mesh>` in 2D. This can be faster to render compared to displaying a :ref:`Sprite2D<class_Sprite2D>` node with large transparent areas, especially if the node takes up a lot of space on screen at high viewport resolutions. This is because using a mesh designed to fit the sprite's opaque areas will reduce GPU fill rate utilization (at the cost of increased vertex processing utilization).
+
+When a :ref:`Mesh<class_Mesh>` has to be instantiated more than thousands of times close to each other, consider using a :ref:`MultiMesh<class_MultiMesh>` in a :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>` instead.
+
+A **MeshInstance2D** can be created from an existing :ref:`Sprite2D<class_Sprite2D>` via a tool in the editor toolbar. Select the :ref:`Sprite2D<class_Sprite2D>` node, then choose **Sprite2D > Convert to MeshInstance2D** at the top of the 2D editor viewport.
 
 .. rst-class:: classref-introduction-group
 

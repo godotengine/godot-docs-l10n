@@ -17,9 +17,9 @@ Label
 Описание
 ----------------
 
-A control for displaying plain text. It gives you control over the horizontal and vertical alignment and can wrap the text inside the node's bounding rectangle. It doesn't support bold, italics, or other rich text formatting. For that, use :ref:`RichTextLabel<class_RichTextLabel>` instead.
+Элемент управления для отображения обычного текста. Он позволяет управлять горизонтальным и вертикальным выравниванием и может переносить текст внутри ограничивающего прямоугольника узла. Он не поддерживает жирный шрифт, курсив или другие форматированные текстовые элементы. Для этого используйте :ref:`RichTextLabel<class_RichTextLabel>`.
 
-\ **Note:** A single Label node is not designed to display huge amounts of text. To display large amounts of text in a single node, consider using :ref:`RichTextLabel<class_RichTextLabel>` instead as it supports features like an integrated scroll bar and threading. :ref:`RichTextLabel<class_RichTextLabel>` generally performs better when displaying large amounts of text (several pages or more).
+\ **Примечание:** Один узел Label не предназначен для отображения больших объемов текста. Для отображения больших объемов текста в одном узле рассмотрите возможность использования :ref:`RichTextLabel<class_RichTextLabel>`, поскольку он поддерживает такие функции, как встроенная полоса прокрутки и многопоточность. :ref:`RichTextLabel<class_RichTextLabel>` обычно работает лучше при отображении больших объемов текста (несколько страниц или более).
 
 .. rst-class:: classref-introduction-group
 
@@ -281,7 +281,7 @@ A control for displaying plain text. It gives you control over the horizontal an
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+Код языка, используемый алгоритмами переноса строк и форматирования текста. Если оставить поле пустым, будет использоваться текущая локаль.
 
 .. rst-class:: classref-item-separator
 

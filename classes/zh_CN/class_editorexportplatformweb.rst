@@ -350,9 +350,9 @@ Emscripten 在启动时分配的线程数。较小的值将分配较少的线程
 
 :ref:`int<class_int>` **threads/godot_pool_size** :ref:`🔗<class_EditorExportPlatformWeb_property_threads/godot_pool_size>`
 
-Override for the default size of the :ref:`WorkerThreadPool<class_WorkerThreadPool>`. This setting is used when :ref:`ProjectSettings.threading/worker_pool/max_threads<class_ProjectSettings_property_threading/worker_pool/max_threads>` size is set to ``-1`` (which it is by default). This size must be smaller than :ref:`threads/emscripten_pool_size<class_EditorExportPlatformWeb_property_threads/emscripten_pool_size>` otherwise deadlocks may occur.
+覆盖 :ref:`WorkerThreadPool<class_WorkerThreadPool>` 的默认大小。该设置在 :ref:`ProjectSettings.threading/worker_pool/max_threads<class_ProjectSettings_property_threading/worker_pool/max_threads>` 设为 ``-1``\ （默认）时生效。该大小必须小于 :ref:`threads/emscripten_pool_size<class_EditorExportPlatformWeb_property_threads/emscripten_pool_size>`\ ，否则可能造成死锁。
 
-When using threads, this size needs to be large enough to accommodate features that rely on having a dedicated thread like :ref:`ProjectSettings.physics/2d/run_on_separate_thread<class_ProjectSettings_property_physics/2d/run_on_separate_thread>` or :ref:`ProjectSettings.rendering/driver/threads/thread_model<class_ProjectSettings_property_rendering/driver/threads/thread_model>`. In general, it is best to ensure that this is at least ``4`` and is at least ``2`` or ``3`` less than :ref:`threads/emscripten_pool_size<class_EditorExportPlatformWeb_property_threads/emscripten_pool_size>`.
+在使用线程时，该大小需足以容纳依赖专用线程的特性，例如 :ref:`ProjectSettings.physics/2d/run_on_separate_thread<class_ProjectSettings_property_physics/2d/run_on_separate_thread>` 和 :ref:`ProjectSettings.rendering/driver/threads/thread_model<class_ProjectSettings_property_rendering/driver/threads/thread_model>`\ 。通常，建议确保此值至少为 ``4``\ ，并且至少比 :ref:`threads/emscripten_pool_size<class_EditorExportPlatformWeb_property_threads/emscripten_pool_size>` 小 ``2`` 或 ``3``\ 。
 
 .. rst-class:: classref-item-separator
 

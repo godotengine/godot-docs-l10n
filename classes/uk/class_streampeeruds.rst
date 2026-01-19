@@ -7,16 +7,16 @@ StreamPeerUDS
 
 **Успадковує:** :ref:`StreamPeerSocket<class_StreamPeerSocket>` **<** :ref:`StreamPeer<class_StreamPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A stream peer that handles UNIX Domain Socket (UDS) connections.
+Потоковий вузол, який обробляє з'єднання UNIX Domain Socket (UDS).
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-A stream peer that handles UNIX Domain Socket (UDS) connections. This object can be used to connect to UDS servers, or also is returned by a UDS server. Unix Domain Sockets provide inter-process communication on the same machine using the filesystem namespace.
+Потоковий вузол, який обробляє з'єднання UNIX Domain Socket (UDS). Цей об'єкт може використовуватися для підключення до UDS-серверів або також повертається UDS-сервером. Unix Domain Sockets забезпечують міжпроцесний зв'язок на одній машині, використовуючи простір імен файлової системи.
 
-\ **Note:** UNIX Domain Sockets are only available on UNIX-like systems (Linux, macOS, etc.) and are not supported on Windows.
+\ **Примітка:** UNIX Domain Sockets доступні лише на UNIX-подібних системах (Linux, macOS тощо) і не підтримуються у Windows.
 
 .. rst-class:: classref-reftable-group
 
@@ -49,9 +49,9 @@ A stream peer that handles UNIX Domain Socket (UDS) connections. This object can
 
 :ref:`Error<enum_@GlobalScope_Error>` **bind**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_StreamPeerUDS_method_bind>`
 
-Opens the UDS socket, and binds it to the specified socket path.
+Відкриває сокет UDS та прив'язує його до вказаного шляху сокета.
 
-This method is generally not needed, and only used to force the subsequent call to :ref:`connect_to_host()<class_StreamPeerUDS_method_connect_to_host>` to use the specified ``path`` as the source address.
+Цей метод зазвичай не потрібен і використовується лише для того, щоб примусово використовувати вказаний ``path`` як адресу джерела під час наступного виклику методу :ref:`connect_to_host()<class_StreamPeerUDS_method_connect_to_host>`.
 
 .. rst-class:: classref-item-separator
 
@@ -63,7 +63,7 @@ This method is generally not needed, and only used to force the subsequent call 
 
 :ref:`Error<enum_@GlobalScope_Error>` **connect_to_host**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_StreamPeerUDS_method_connect_to_host>`
 
-Connects to the specified UNIX Domain Socket path. Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success.
+Підключається до вказаного шляху UNIX Domain Socket. У разі успіху повертає :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`.
 
 .. rst-class:: classref-item-separator
 
@@ -75,7 +75,7 @@ Connects to the specified UNIX Domain Socket path. Returns :ref:`@GlobalScope.OK
 
 :ref:`String<class_String>` **get_connected_path**\ (\ ) |const| :ref:`🔗<class_StreamPeerUDS_method_get_connected_path>`
 
-Returns the socket path of this peer.
+Повертає шлях сокета цього вузла.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

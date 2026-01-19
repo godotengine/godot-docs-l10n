@@ -3034,21 +3034,21 @@ Renvoie la position et la taille du contrôle dans le système de coordonnées d
 
 :ref:`Vector2<class_Vector2>` **get_screen_position**\ (\ ) |const| :ref:`🔗<class_Control_method_get_screen_position>`
 
-Returns the position of this **Control** in global screen coordinates (i.e. taking window position into account). Mostly useful for editor plugins.
+Renvoie la position de ce **Control** dans les coordonnées globales de l'écran (c.-à-d. en tenant compte de la position de la fenêtre). Généralement utile pour les plugins éditeur.
 
-Equivalent to ``get_screen_transform().origin`` (see :ref:`CanvasItem.get_screen_transform()<class_CanvasItem_method_get_screen_transform>`).
+Équivalent à ``get_screen_transform().origin`` (voir :ref:`CanvasItem.get_screen_transform()<class_CanvasItem_method_get_screen_transform>`).
 
-\ **Example:** Show a popup at the mouse position:
+\ **Exemple :** Afficher une popup à la position de la souris :
 
 ::
 
-    popup_menu.position = get_screen_position() + get_screen_transform().basis_xform(get_local_mouse_position())
+    menu_popup.position = get_screen_position() + get_screen_transform().basis_xform(get_local_mouse_position())
 
-    # The above code is equivalent to:
-    popup_menu.position = get_screen_transform() * get_local_mouse_position()
+    # Le code au dessus est équivalent à :
+    menu_popup.position = get_screen_transform() * get_local_mouse_position()
 
-    popup_menu.reset_size()
-    popup_menu.popup()
+    menu_popup.reset_size()
+    menu_popup.popup()
 
 .. rst-class:: classref-item-separator
 

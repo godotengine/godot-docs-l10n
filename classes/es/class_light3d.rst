@@ -23,7 +23,7 @@ Light3D es la clase base *abstracta* para los nodos de luz. Dado que no se puede
 Tutoriales
 --------------------
 
-- :doc:`3D lights and shadows <../tutorials/3d/lights_and_shadows>`
+- :doc:`Luces y sombras 3D <../tutorials/3d/lights_and_shadows>`
 
 - :doc:`Falsificar la iluminación global <../tutorials/3d/global_illumination/faking_global_illumination>`
 
@@ -491,7 +491,7 @@ El modo de procesado de la luz. Esto afectará a las técnicas de iluminación g
 - |void| **set_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_color**\ (\ )
 
-The light's color in nonlinear sRGB encoding. An *overbright* color can be used to achieve a result equivalent to increasing the light's :ref:`light_energy<class_Light3D_property_light_energy>`.
+El color de la luz en codificación sRGB no lineal. Un color *sobrebrillante* puede usarse para lograr un resultado equivalente a aumentar la :ref:`light_energy<class_Light3D_property_light_energy>` de la luz.
 
 .. rst-class:: classref-item-separator
 
@@ -508,9 +508,9 @@ The light's color in nonlinear sRGB encoding. An *overbright* color can be used 
 - |void| **set_cull_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_cull_mask**\ (\ )
 
-The light will affect objects in the selected layers.
+La luz afectará a los objetos en las capas seleccionadas.
 
-\ **Note:** The light cull mask is ignored by :ref:`VoxelGI<class_VoxelGI>`, SDFGI, :ref:`LightmapGI<class_LightmapGI>`, and volumetric fog. These will always render lights in a way that ignores the cull mask. See also :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`.
+\ **Nota:** La máscara de recorte de luz es ignorada por :ref:`VoxelGI<class_VoxelGI>`, SDFGI, :ref:`LightmapGI<class_LightmapGI>` y la niebla volumétrica. Estos siempre renderizarán las luces de una manera que ignora la máscara de recorte. Véase también :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`.
 
 .. rst-class:: classref-item-separator
 

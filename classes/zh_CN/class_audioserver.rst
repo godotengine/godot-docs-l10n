@@ -559,7 +559,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Returns the absolute size of the microphone input buffer. This is set to a multiple of the audio latency and can be used to estimate the minimum rate at which the frames need to be fetched.
+返回麦克风输入缓冲区的绝对大小。这设置为音频延迟的倍数，可用于预估需要获取帧的最小速率。
 
 .. rst-class:: classref-item-separator
 
@@ -587,11 +587,11 @@ Returns the absolute size of the microphone input buffer. This is set to a multi
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` containing exactly ``frames`` audio samples from the internal microphone buffer if available, otherwise returns an empty :ref:`PackedVector2Array<class_PackedVector2Array>`.
+如果麦克风内部缓冲区有可用数据，则返回一个恰好包含 ``frames`` 个音频样本的 :ref:`PackedVector2Array<class_PackedVector2Array>`\ ，否则返回一个空的 :ref:`PackedVector2Array<class_PackedVector2Array>`\ 。
 
-The buffer is filled at the rate of :ref:`get_input_mix_rate()<class_AudioServer_method_get_input_mix_rate>` frames per second when :ref:`set_input_device_active()<class_AudioServer_method_set_input_device_active>` has successfully been set to ``true``.
+当 :ref:`set_input_device_active()<class_AudioServer_method_set_input_device_active>` 成功设置为 ``true`` 时，缓冲区会以每秒 :ref:`get_input_mix_rate()<class_AudioServer_method_get_input_mix_rate>` 帧的速率被填充。
 
-The samples are signed floating-point PCM values between ``-1`` and ``1``.
+样本值是在 ``-1`` 到 ``1`` 之间的有符号浮点 PCM 值。
 
 .. rst-class:: classref-item-separator
 
@@ -959,9 +959,9 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-If ``active`` is ``true``, starts the microphone input stream specified by :ref:`input_device<class_AudioServer_property_input_device>` or returns an error if it failed.
+若 ``active`` 参数为 ``true``\ ，则启动由 :ref:`input_device<class_AudioServer_property_input_device>` 指定的麦克风输入流，若启动失败则返回一个错误。
 
-If ``active`` is ``false``, stops the input stream if it is running.
+若 ``active`` 参数为 ``false``\ ，则停止当前正在运行的输入流。
 
 .. rst-class:: classref-item-separator
 

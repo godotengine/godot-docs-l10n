@@ -7,16 +7,16 @@ OptimizedTranslation
 
 **Наследует:** :ref:`Translation<class_Translation>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-An optimized translation.
+Оптимизированный перевод.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-An optimized translation. Uses real-time compressed translations, which results in very small dictionaries.
+Оптимизированный перевод. Использует сжатые переводы в реальном времени, что приводит к очень небольшим словарям.
 
-This class does not store the untranslated strings for optimization purposes. Therefore, :ref:`Translation.get_message_list()<class_Translation_method_get_message_list>` always returns an empty array, and :ref:`Translation.get_message_count()<class_Translation_method_get_message_count>` always returns ``0``.
+Этот класс не хранит непереведенные строки в целях оптимизации. Поэтому :ref:`Translation.get_message_list()<class_Translation_method_get_message_list>` всегда возвращает пустой массив, а :ref:`Translation.get_message_count()<class_Translation_method_get_message_count>` всегда возвращает ``0``.
 
 .. rst-class:: classref-reftable-group
 
@@ -45,11 +45,11 @@ This class does not store the untranslated strings for optimization purposes. Th
 
 |void| **generate**\ (\ from\: :ref:`Translation<class_Translation>`\ ) :ref:`🔗<class_OptimizedTranslation_method_generate>`
 
-Generates and sets an optimized translation from the given :ref:`Translation<class_Translation>` resource.
+Генерирует и устанавливает оптимизированный перевод на основе заданного ресурса :ref:`Translation<class_Translation>`.
 
-\ **Note:** Messages in ``from`` should not use context or plural forms.
+\ **Примечание:** В сообщениях в ``from`` не следует использовать контекст или множественное число.
 
-\ **Note:** This method is intended to be used in the editor. It does nothing when called from an exported project.
+\ **Примечание:** Этот метод предназначен для использования в редакторе. Он ничего не делает при вызове из экспортированного проекта.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

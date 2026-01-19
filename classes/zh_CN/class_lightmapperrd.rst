@@ -14,9 +14,9 @@ LightmapperRD
 描述
 ----
 
-LightmapperRD（“RD”代表 :ref:`RenderingDevice<class_RenderingDevice>`\ ）是基于 GPU 的内置光照贴图器，可与 :ref:`LightmapGI<class_LightmapGI>` 一起使用。在大多数专用 GPU 上，它可以比大多数基于 CPU 的光照贴图更快地烘焙光照贴图。LightmapperRD 使用计算着色器来烘焙光照贴图，因此它不需要安装 CUDA 或 OpenCL 库即可使用。
+LightmapperRD ("RD" stands for :ref:`RenderingDevice<class_RenderingDevice>`) is the built-in GPU-based lightmapper for use with :ref:`LightmapGI<class_LightmapGI>`. On most dedicated GPUs, it can bake lightmaps much faster than most CPU-based lightmappers. LightmapperRD uses compute shaders to bake lightmaps, so it does not require CUDA or OpenCL libraries to be installed to be usable.
 
-\ **注意：**\ 仅在使用 RenderingDevice 后端（Forward+ 或移动渲染器）时可用，使用 Compatibility 时不可用。
+\ **Note:** This lightmapper requires the GPU to support the :ref:`RenderingDevice<class_RenderingDevice>` backend (Forward+ and Mobile renderers). When using the Compatibility renderer, baking will use a temporary :ref:`RenderingDevice<class_RenderingDevice>`. Support for :ref:`RenderingDevice<class_RenderingDevice>` is not required to *render* lightmaps that were already baked beforehand.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

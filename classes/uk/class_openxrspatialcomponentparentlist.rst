@@ -9,14 +9,14 @@ OpenXRSpatialComponentParentList
 
 **Успадковує:** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the queries parent result data.
+Об'єкт для зберігання батьківських результатів запитів.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Object for storing the queries parent result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Об'єкт для зберігання батьківських результатів запитів під час виклику :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -45,7 +45,7 @@ Object for storing the queries parent result data when calling :ref:`OpenXRSpati
 
 :ref:`RID<class_RID>` **get_parent**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentParentList_method_get_parent>`
 
-Returns the RID for the parent entity at this ``index``.
+Повертає RID для батьківської сутності за цією адресою ``index``.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -14,20 +14,20 @@ Un compte à rebours.
 Description
 -----------
 
-The **Timer** node is a countdown timer and is the simplest way to handle time-based logic in the engine. When a timer reaches the end of its :ref:`wait_time<class_Timer_property_wait_time>`, it will emit the :ref:`timeout<class_Timer_signal_timeout>` signal.
+Le nœud **Timer** est un minuteur de compte à rebours et est le moyen le plus simple de gérer la logique basée sur le temps dans le moteur. Quand un minuteur atteint la fin de son temps d'attente :ref:`wait_time<class_Timer_property_wait_time>`, il émettra le :ref:`timeout<class_Timer_signal_timeout>`\ signal .
 
-After a timer enters the scene tree, it can be manually started with :ref:`start()<class_Timer_method_start>`. A timer node is also started automatically if :ref:`autostart<class_Timer_property_autostart>` is ``true``.
+Après qu'un minuteur entre dans l'arborescence de scène, il peut être démarré manuellement avec :ref:`start()<class_Timer_method_start>`. Un nœud minuteur est également démarré automatiquement si :ref:`autostart<class_Timer_property_autostart>` vaut ``true``.
 
-Without requiring much code, a timer node can be added and configured in the editor. The :ref:`timeout<class_Timer_signal_timeout>` signal it emits can also be connected through the Signals dock in the editor:
+Sans nécessiter beaucoup de code, un nœud minuteur peut être ajouté et configuré dans l'éditeur. Le :ref:`timeout<class_Timer_signal_timeout>` signal qu'il émet peut également être connecté par le dock Nœud dans l'éditeur :
 
 ::
 
     func _on_timer_timeout():
-        print("Time to attack!")
+        print("C'est le moment d'attaquer !")
 
-\ **Note:** To create a one-shot timer without instantiating a node, use :ref:`SceneTree.create_timer()<class_SceneTree_method_create_timer>`.
+\ **Note :** Pour créer un minuteur à usage unique sans instancier un nœud, utilisez :ref:`SceneTree.create_timer()<class_SceneTree_method_create_timer>`.
 
-\ **Note:** Timers are affected by :ref:`Engine.time_scale<class_Engine_property_time_scale>` unless :ref:`ignore_time_scale<class_Timer_property_ignore_time_scale>` is ``true``. The higher the time scale, the sooner timers will end. How often a timer processes may depend on the framerate or :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`.
+\ **Note :** Les Timers sont affectés par :ref:`Engine.time_scale<class_Engine_property_time_scale>` à moins que :ref:`ignore_time_scale<class_Timer_property_ignore_time_scale>` ne vaille ``true``. Plus l'échelle du temps sera élevée, plus les minuteurs se termineront tôt. Combien de fois un minuteur effectue son traitement peut dépendre du framerate ou de :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`.
 
 .. rst-class:: classref-introduction-group
 

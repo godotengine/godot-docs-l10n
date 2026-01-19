@@ -1457,7 +1457,7 @@ Establece el color personalizado de la columna dada.
 
 **Obsoleto:** Use :ref:`set_custom_draw_callback()<class_TreeItem_method_set_custom_draw_callback>` instead.
 
-Establece la retrollamada de dibujo personalizado de la columna dada al método ``callback`` en ``object``.
+Establece la callback de dibujo personalizado de la columna dada al método ``callback`` en ``object``.
 
 El método llamado ``callback`` debe aceptar dos argumentos: el **TreeItem** que se dibuja y su posición y tamaño como un :ref:`Rect2<class_Rect2>`.
 
@@ -1471,7 +1471,7 @@ El método llamado ``callback`` debe aceptar dos argumentos: el **TreeItem** que
 
 |void| **set_custom_draw_callback**\ (\ column\: :ref:`int<class_int>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_TreeItem_method_set_custom_draw_callback>`
 
-Establece la retrollamada de dibujo personalizado de la columna dada. Utiliza un :ref:`Callable<class_Callable>` vacío (``Callable()``) para borrar la retrollamada personalizada. La celda debe estar en :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` para usar esta función.
+Establece la callback de dibujo personalizado de la columna dada. Utiliza un :ref:`Callable<class_Callable>` vacío (``Callable()``) para borrar la callback personalizada. La celda debe estar en :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` para usar esta función.
 
 El ``callback`` debe aceptar dos argumentos: el **TreeItem** que se dibuja y su posición y tamaño como un :ref:`Rect2<class_Rect2>`.
 

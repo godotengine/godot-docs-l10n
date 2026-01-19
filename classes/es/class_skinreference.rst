@@ -53,7 +53,7 @@ Descripciones de Métodos
 
 :ref:`RID<class_RID>` **get_skeleton**\ (\ ) |const| :ref:`🔗<class_SkinReference_method_get_skeleton>`
 
-Returns the :ref:`RID<class_RID>` owned by this SkinReference, as returned by :ref:`RenderingServer.skeleton_create()<class_RenderingServer_method_skeleton_create>`.
+Devuelve el :ref:`RID<class_RID>` propiedad de esta SkinReference, tal como lo devuelve :ref:`RenderingServer.skeleton_create()<class_RenderingServer_method_skeleton_create>`.
 
 .. rst-class:: classref-item-separator
 
@@ -65,9 +65,9 @@ Returns the :ref:`RID<class_RID>` owned by this SkinReference, as returned by :r
 
 :ref:`Skin<class_Skin>` **get_skin**\ (\ ) |const| :ref:`🔗<class_SkinReference_method_get_skin>`
 
-Returns the :ref:`Skin<class_Skin>` connected to this SkinReference. In the case of :ref:`MeshInstance3D<class_MeshInstance3D>` with no :ref:`MeshInstance3D.skin<class_MeshInstance3D_property_skin>` assigned, this will reference an internal default :ref:`Skin<class_Skin>` owned by that :ref:`MeshInstance3D<class_MeshInstance3D>`.
+Dvuelve la :ref:`Skin<class_Skin>` conectado a este SkinReference. En el caso de :ref:`MeshInstance3D<class_MeshInstance3D>` sin :ref:`MeshInstance3D.skin<class_MeshInstance3D_property_skin>` asignado, esta hará referencia a una :ref:`Skin<class_Skin>` predeterminada interna propiedad de ese :ref:`MeshInstance3D<class_MeshInstance3D>`.
 
-Note that a single :ref:`Skin<class_Skin>` may have more than one **SkinReference** in the case that it is shared by meshes across multiple :ref:`Skeleton3D<class_Skeleton3D>` nodes.
+Ten en cuenta que un único :ref:`Skin<class_Skin>` puede tener más de un **SkinReference** en el caso de que sea compartida por mallas en múltiples nodos :ref:`Skeleton3D<class_Skeleton3D>`.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

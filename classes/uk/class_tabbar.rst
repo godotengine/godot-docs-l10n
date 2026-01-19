@@ -263,9 +263,9 @@ TabBar
 
 **tab_close_pressed**\ (\ tab\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_signal_tab_close_pressed>`
 
-Emitted when a tab's close button is pressed or, if :ref:`close_with_middle_mouse<class_TabBar_property_close_with_middle_mouse>` is ``true``, when middle-clicking on a tab.
+Викликається при натисканні кнопки закриття вкладки або, якщо :ref:`close_with_middle_mouse<class_TabBar_property_close_with_middle_mouse>` має значення ``true``, при клацанні середньою кнопкою миші на вкладці.
 
-\ **Note:** Tabs are not removed automatically; this behavior needs to be coded manually. For example:
+\ **Примітка:** Вкладки не видаляються автоматично; цю поведінку потрібно налаштувати вручну. Наприклад:
 
 
 .. tabs::
@@ -302,7 +302,7 @@ Emitted when a tab's close button is pressed or, if :ref:`close_with_middle_mous
 
 **tab_rmb_clicked**\ (\ tab\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_signal_tab_rmb_clicked>`
 
-Emitted when a tab is right-clicked.
+Викликається при натисканні правої кнопки миші на вкладку.
 
 .. rst-class:: classref-item-separator
 
@@ -337,7 +337,7 @@ enum **AlignmentMode**: :ref:`🔗<enum_TabBar_AlignmentMode>`
 
 :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **ALIGNMENT_LEFT** = ``0``
 
-Aligns tabs to the left.
+Вирівнює вкладки ліворуч.
 
 .. _class_TabBar_constant_ALIGNMENT_CENTER:
 
@@ -345,7 +345,7 @@ Aligns tabs to the left.
 
 :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **ALIGNMENT_CENTER** = ``1``
 
-Aligns tabs in the middle.
+Вирівнює вкладки посередині.
 
 .. _class_TabBar_constant_ALIGNMENT_RIGHT:
 
@@ -353,7 +353,7 @@ Aligns tabs in the middle.
 
 :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **ALIGNMENT_RIGHT** = ``2``
 
-Aligns tabs to the right.
+Вирівнює вкладки праворуч.
 
 .. _class_TabBar_constant_ALIGNMENT_MAX:
 
@@ -442,7 +442,7 @@ enum **CloseButtonDisplayPolicy**: :ref:`🔗<enum_TabBar_CloseButtonDisplayPoli
 - |void| **set_close_with_middle_mouse**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_close_with_middle_mouse**\ (\ )
 
-If ``true``, middle-clicking on a tab will emit the :ref:`tab_close_pressed<class_TabBar_signal_tab_close_pressed>` signal.
+Якщо ``true``, клацання середньою кнопкою миші на вкладці видаватиме сигнал :ref:`tab_close_pressed<class_TabBar_signal_tab_close_pressed>`.
 
 .. rst-class:: classref-item-separator
 
@@ -578,7 +578,7 @@ If ``true``, middle-clicking on a tab will emit the :ref:`tab_close_pressed<clas
 - |void| **set_switch_on_drag_hover**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_switch_on_drag_hover**\ (\ )
 
-If ``true``, hovering over a tab while dragging something will switch to that tab. Does not have effect when hovering another tab to rearrange. The delay for when this happens is dictated by :ref:`hover_switch_wait_msec<class_TabBar_theme_constant_hover_switch_wait_msec>`.
+Якщо ``true``, наведення курсора на вкладку під час перетягування чогось призведе до перемикання на цю вкладку. Це не впливає на наведення курсора на іншу вкладку для зміни порядку. Затримка перемикання визначається параметром :ref:`hover_switch_wait_msec<class_TabBar_theme_constant_hover_switch_wait_msec>`.
 
 .. rst-class:: classref-item-separator
 
@@ -595,7 +595,7 @@ If ``true``, hovering over a tab while dragging something will switch to that ta
 - |void| **set_tab_alignment**\ (\ value\: :ref:`AlignmentMode<enum_TabBar_AlignmentMode>`\ )
 - :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **get_tab_alignment**\ (\ )
 
-The horizontal alignment of the tabs.
+Горизонтальне вирівнювання вкладок.
 
 .. rst-class:: classref-item-separator
 
@@ -989,7 +989,7 @@ The horizontal alignment of the tabs.
 
 |void| **set_tab_language**\ (\ tab_idx\: :ref:`int<class_int>`, language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TabBar_method_set_tab_language>`
 
-Sets the language code of the title for the tab at index ``tab_idx`` to ``language``. This is used for line-breaking and text shaping algorithms. If ``language`` is empty, the current locale is used.
+Встановлює код мови заголовка вкладки за індексом ``tab_idx`` на ``language``. Це використовується для алгоритмів розриву рядків та формування тексту. Якщо ``language`` порожній, використовується поточна локалізація.
 
 .. rst-class:: classref-item-separator
 
@@ -1128,7 +1128,7 @@ Sets the language code of the title for the tab at index ``tab_idx`` to ``langua
 
 :ref:`Color<class_Color>` **icon_disabled_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_disabled_color>`
 
-Icon color of disabled tabs.
+Колір значка вимкнених вкладок.
 
 .. rst-class:: classref-item-separator
 
@@ -1140,7 +1140,7 @@ Icon color of disabled tabs.
 
 :ref:`Color<class_Color>` **icon_hovered_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_hovered_color>`
 
-Icon color of the currently hovered tab. Does not apply to the selected tab.
+Колір значка вкладки, на яку наведено курсор. Не застосовується до вибраної вкладки.
 
 .. rst-class:: classref-item-separator
 
@@ -1152,7 +1152,7 @@ Icon color of the currently hovered tab. Does not apply to the selected tab.
 
 :ref:`Color<class_Color>` **icon_selected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_selected_color>`
 
-Icon color of the currently selected tab.
+Колір значка поточної вибраної вкладки.
 
 .. rst-class:: classref-item-separator
 
@@ -1164,7 +1164,7 @@ Icon color of the currently selected tab.
 
 :ref:`Color<class_Color>` **icon_unselected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_unselected_color>`
 
-Icon color of the other, unselected tabs.
+Колір значків інших, невибраних вкладок.
 
 .. rst-class:: classref-item-separator
 
@@ -1188,7 +1188,7 @@ Icon color of the other, unselected tabs.
 
 :ref:`int<class_int>` **hover_switch_wait_msec** = ``500`` :ref:`🔗<class_TabBar_theme_constant_hover_switch_wait_msec>`
 
-During a drag-and-drop, this is how many milliseconds to wait before switching the tab.
+Під час перетягування це кількість мілісекунд, яку потрібно чекати перед перемиканням вкладки.
 
 .. rst-class:: classref-item-separator
 

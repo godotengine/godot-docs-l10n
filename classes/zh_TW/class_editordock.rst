@@ -35,7 +35,7 @@ You can add a dock by using :ref:`EditorPlugin.add_dock()<class_EditorPlugin_met
         dock = EditorDock.new()
         dock.title = "My Dock"
         dock.dock_icon = preload("./dock_icon.png")
-        dock.default_slot = EditorPlugin.DOCK_SLOT_RIGHT_UL
+        dock.default_slot = EditorDock.DOCK_SLOT_RIGHT_UL
         var dock_content = preload("./dock_content.tscn").instantiate()
         dock.add_child(dock_content)
         add_dock(dock)
@@ -66,7 +66,7 @@ You can add a dock by using :ref:`EditorPlugin.add_dock()<class_EditorPlugin_met
    +-------------------------------------------------------------+-----------------------------------------------------------------------+-----------------------+
    | :ref:`bool<class_bool>`                                     | :ref:`closable<class_EditorDock_property_closable>`                   | ``false``             |
    +-------------------------------------------------------------+-----------------------------------------------------------------------+-----------------------+
-   | :ref:`DockSlot<enum_EditorPlugin_DockSlot>`                 | :ref:`default_slot<class_EditorDock_property_default_slot>`           | ``-1``                |
+   | :ref:`DockSlot<enum_EditorDock_DockSlot>`                   | :ref:`default_slot<class_EditorDock_property_default_slot>`           | ``-1``                |
    +-------------------------------------------------------------+-----------------------------------------------------------------------+-----------------------+
    | :ref:`Texture2D<class_Texture2D>`                           | :ref:`dock_icon<class_EditorDock_property_dock_icon>`                 |                       |
    +-------------------------------------------------------------+-----------------------------------------------------------------------+-----------------------+
@@ -173,6 +173,104 @@ Allows making the dock floating (opened as a separate window).
 
 Allows placing the dock in all available slots.
 
+.. rst-class:: classref-item-separator
+
+----
+
+.. _enum_EditorDock_DockSlot:
+
+.. rst-class:: classref-enumeration
+
+enum **DockSlot**: :ref:`🔗<enum_EditorDock_DockSlot>`
+
+.. _class_EditorDock_constant_DOCK_SLOT_NONE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_NONE** = ``-1``
+
+The dock is closed.
+
+.. _class_EditorDock_constant_DOCK_SLOT_LEFT_UL:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_LEFT_UL** = ``0``
+
+左側停靠槽的左上（預設佈局中為空）。
+
+.. _class_EditorDock_constant_DOCK_SLOT_LEFT_BL:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_LEFT_BL** = ``1``
+
+左側停靠槽的左下（預設佈局中為空）。
+
+.. _class_EditorDock_constant_DOCK_SLOT_LEFT_UR:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_LEFT_UR** = ``2``
+
+左側停靠槽的右上（預設佈局中為“場景”和“匯入”面板）。
+
+.. _class_EditorDock_constant_DOCK_SLOT_LEFT_BR:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_LEFT_BR** = ``3``
+
+Dock slot, left side, bottom-right (in default layout includes FileSystem and History docks).
+
+.. _class_EditorDock_constant_DOCK_SLOT_RIGHT_UL:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_RIGHT_UL** = ``4``
+
+Dock slot, right side, upper-left (in default layout includes Inspector, Signal, and Group docks).
+
+.. _class_EditorDock_constant_DOCK_SLOT_RIGHT_BL:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_RIGHT_BL** = ``5``
+
+右側停靠槽的左下（預設佈局中為空）。
+
+.. _class_EditorDock_constant_DOCK_SLOT_RIGHT_UR:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_RIGHT_UR** = ``6``
+
+右側停靠槽的左上（預設佈局中為空）。
+
+.. _class_EditorDock_constant_DOCK_SLOT_RIGHT_BR:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_RIGHT_BR** = ``7``
+
+右側停靠槽的右下（預設佈局中為空）。
+
+.. _class_EditorDock_constant_DOCK_SLOT_BOTTOM:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_BOTTOM** = ``8``
+
+Bottom panel.
+
+.. _class_EditorDock_constant_DOCK_SLOT_MAX:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_MAX** = ``9``
+
+代表 :ref:`DockSlot<enum_EditorDock_DockSlot>` 列舉的大小。
+
 .. rst-class:: classref-section-separator
 
 ----
@@ -220,12 +318,12 @@ If ``true``, the dock can be closed with the Close button in the context popup. 
 
 .. rst-class:: classref-property
 
-:ref:`DockSlot<enum_EditorPlugin_DockSlot>` **default_slot** = ``-1`` :ref:`🔗<class_EditorDock_property_default_slot>`
+:ref:`DockSlot<enum_EditorDock_DockSlot>` **default_slot** = ``-1`` :ref:`🔗<class_EditorDock_property_default_slot>`
 
 .. rst-class:: classref-property-setget
 
-- |void| **set_default_slot**\ (\ value\: :ref:`DockSlot<enum_EditorPlugin_DockSlot>`\ )
-- :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **get_default_slot**\ (\ )
+- |void| **set_default_slot**\ (\ value\: :ref:`DockSlot<enum_EditorDock_DockSlot>`\ )
+- :ref:`DockSlot<enum_EditorDock_DockSlot>` **get_default_slot**\ (\ )
 
 The default dock slot used when adding the dock with :ref:`EditorPlugin.add_dock()<class_EditorPlugin_method_add_dock>`.
 

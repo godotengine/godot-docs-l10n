@@ -216,9 +216,9 @@ If ``true``, the sub-animation will abort if resumed with a reset after a prior 
 - |void| **set_autorestart**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_autorestart**\ (\ )
 
-If ``true``, the sub-animation will restart automatically after finishing.
+Si es ``true``, la subanimación se reiniciará automáticamente al finalizar.
 
-In other words, to start auto restarting, the animation must be played once with the :ref:`ONE_SHOT_REQUEST_FIRE<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_FIRE>` request. The :ref:`ONE_SHOT_REQUEST_ABORT<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_ABORT>` request stops the auto restarting, but it does not disable the :ref:`autorestart<class_AnimationNodeOneShot_property_autorestart>` itself. So, the :ref:`ONE_SHOT_REQUEST_FIRE<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_FIRE>` request will start auto restarting again.
+En otras palabras, para iniciar el reinicio automático, la animación debe reproducirse una vez con la petición :ref:`ONE_SHOT_REQUEST_FIRE<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_FIRE>`. La petición :ref:`ONE_SHOT_REQUEST_ABORT<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_ABORT>` detendrá el reinicio automático, pero no deshabilitará a :ref:`autorestart<class_AnimationNodeOneShot_property_autorestart>` en sí. Así que la solicitud :ref:`ONE_SHOT_REQUEST_FIRE<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_FIRE>` iniciará de nuevo el reinicio automático.
 
 .. rst-class:: classref-item-separator
 

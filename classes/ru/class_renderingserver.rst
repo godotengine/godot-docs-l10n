@@ -4315,7 +4315,7 @@ enum **EnvironmentToneMapper**: :ref:`🔗<enum_RenderingServer_EnvironmentToneM
 
 :ref:`EnvironmentToneMapper<enum_RenderingServer_EnvironmentToneMapper>` **ENV_TONE_MAPPER_AGX** = ``4``
 
-Uses an adjustable film-like tonemapping curve and desaturates bright values for a more realistic appearance. Better than other tonemappers at maintaining the hue of colors as they become brighter. The slowest tonemapping option.
+Использует регулируемую кривую тонального отображения, аналогичную пленочной, и снижает насыщенность ярких значений для более реалистичного вида. Лучше других тональных преобразователей сохраняет оттенок цветов при их увеличении яркости. Самый медленный вариант тонального отображения.
 
 .. rst-class:: classref-item-separator
 

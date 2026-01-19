@@ -16,9 +16,9 @@ AcceptDialog
 描述
 ----
 
-The default use of **AcceptDialog** is to allow it to only be accepted or closed, with the same result. However, the :ref:`confirmed<class_AcceptDialog_signal_confirmed>` and :ref:`canceled<class_AcceptDialog_signal_canceled>` signals allow to make the two actions different, and the :ref:`add_button()<class_AcceptDialog_method_add_button>` method allows to add custom buttons and actions.
+**AcceptDialog** 的默认用途是允许它只被接受或关闭，结果相同。但是，\ :ref:`confirmed<class_AcceptDialog_signal_confirmed>` 和 :ref:`canceled<class_AcceptDialog_signal_canceled>` 信号允许使两个动作不同，\ :ref:`add_button()<class_AcceptDialog_method_add_button>` 方法允许添加自定义按钮和动作。
 
-\ **Note:** **AcceptDialog** is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **注意：**\ **AcceptDialog** 默认情况下是隐藏的。若要显示，调用节点上来自 :ref:`Window<class_Window>` 的 ``popup_*`` 方法中的其中一个，比如 :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -174,7 +174,7 @@ The default use of **AcceptDialog** is to allow it to only be accepted or closed
 - |void| **set_close_on_escape**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_close_on_escape**\ (\ )
 
-If ``true``, the dialog will be hidden when the ``ui_close_dialog`` action is pressed (by default, this action is bound to :kbd:`Escape`, or :kbd:`Cmd + W` on macOS).
+如果为 ``true``\ ，则按下 ``ui_cancel`` 动作时会隐藏对话框（该动作默认绑定至 :kbd:`Escape`\ ，在 macOS 上则是 :kbd:`Cmd + W`\ ）。
 
 .. rst-class:: classref-item-separator
 

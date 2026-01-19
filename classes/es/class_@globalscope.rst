@@ -3468,11 +3468,11 @@ La propiedad no tiene ninguna sugerencia para el editor.
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_RANGE** = ``1``
 
-Hints that an :ref:`int<class_int>` or :ref:`float<class_float>` property should be within a range specified via the hint string ``"min,max"`` or ``"min,max,step"``. The hint string can optionally include ``"or_greater"`` and/or ``"or_less"`` to allow manual input going respectively above the max or below the min values.
+Indica que una propiedad :ref:`int<class_int>` o :ref:`float<class_float>` debe estar dentro de un rango especificado mediante la string de pista ``"min,max"`` o ``"min,max,step"``. La string de pista puede incluir opcionalmente ``"or_greater"`` y/o ``"or_less"`` para permitir la entrada manual que vaya, respectivamente, por encima del valor máximo o por debajo del valor mínimo.
 
-\ **Example:** ``"-360,360,1,or_greater,or_less"``.
+\ **Ejemplo:** ``"-360,360,1,or_greater,or_less"``.
 
-Additionally, other keywords can be included: ``"exp"`` for exponential range editing, ``"radians_as_degrees"`` for editing radian angles in degrees (the range values are also in degrees), ``"degrees"`` to hint at an angle, ``"prefer_slider"`` to show the slider for integers, ``"hide_control"`` to hide the slider or up-down arrows, and ``"suffix:px/s"`` to display a suffix indicating the value's unit (e.g. ``px/s`` for pixels per second).
+Además, se pueden incluir otras palabras clave: ``"exp"`` para la edición de rango exponencial, ``"radians_as_degrees"`` para editar ángulos en radianes en grados (los valores del rango también están en grados), ``"degrees"`` para sugerir un ángulo, ``"prefer_slider"`` para mostrar el deslizador para enteros, ``"hide_control"`` para ocultar el deslizador o las flechas de subir/bajar, y ``"suffix:px/s"`` para mostrar un sufijo que indique la unidad del valor (p. ej., ``px/s`` para píxeles por segundo).
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_ENUM:
 
@@ -3480,9 +3480,9 @@ Additionally, other keywords can be included: ``"exp"`` for exponential range ed
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_ENUM** = ``2``
 
-Hints that an :ref:`int<class_int>`, :ref:`String<class_String>`, or :ref:`StringName<class_StringName>` property is an enumerated value to pick in a list specified via a hint string.
+Indica que una propiedad :ref:`int<class_int>`, :ref:`String<class_String>` o :ref:`StringName<class_StringName>` es un valor enumerado que se selecciona en una lista especificada mediante una string de pista.
 
-The hint string is a comma separated list of names such as ``"Hello,Something,Else"``. Whitespace is **not** removed from either end of a name. For integer properties, the first name in the list has value 0, the next 1, and so on. Explicit values can also be specified by appending ``:integer`` to the name, e.g. ``"Zero,One,Three:3,Four,Six:6"``.
+La string de pista es una lista de nombres separados por comas, como ``"Hello,Something,Else"``. Los espacios en blanco **no** se eliminan de ninguno de los extremos de un nombre. Para las propiedades enteras, el primer nombre de la lista tiene el valor 0, el siguiente 1, y así sucesivamente. También se pueden especificar valores explícitos añadiendo ``:integer`` al nombre, por ejemplo, ``"Zero,One,Three:3,Four,Six:6"``.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_ENUM_SUGGESTION:
 
@@ -3490,9 +3490,9 @@ The hint string is a comma separated list of names such as ``"Hello,Something,El
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_ENUM_SUGGESTION** = ``3``
 
-Hints that a :ref:`String<class_String>` or :ref:`StringName<class_StringName>` property can be an enumerated value to pick in a list specified via a hint string such as ``"Hello,Something,Else"``. See :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>` for details.
+Indica que una propiedad :ref:`String<class_String>` o :ref:`StringName<class_StringName>` puede ser un valor enumerado para elegir en una lista especificada a través de una string de pista como ``"Hola,algo,más"``. Véase :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>` para más detalles.
 
-Unlike :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`, a property with this hint still accepts arbitrary values and can be empty. The list of values serves to suggest possible values.
+A diferencia de :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`, una propiedad con esta pista sigue aceptando valores arbitrarios y puede estar vacía. La lista de valores sirve para sugerir posibles valores.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_EXP_EASING:
 
@@ -3516,13 +3516,13 @@ Sugiere que una propiedad vectorial debe permitir que sus componentes se enlacen
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_FLAGS** = ``6``
 
-Hints that an :ref:`int<class_int>` property is a bitmask with named bit flags.
+Indica que una propiedad :ref:`int<class_int>` es una máscara de bits con bits con nombre.
 
-The hint string is a comma separated list of names such as ``"Bit0,Bit1,Bit2,Bit3"``. Whitespace is **not** removed from either end of a name. The first name in the list has value 1, the next 2, then 4, 8, 16 and so on. Explicit values can also be specified by appending ``:integer`` to the name, e.g. ``"A:4,B:8,C:16"``. You can also combine several flags (``"A:4,B:8,AB:12,C:16"``).
+La string de sugerencia es una lista de nombres separada por comas, por ejemplo ``"Bit0,Bit1,Bit2,Bit3"``. Los espacios en blanco **no** se eliminan de ninguno de los extremos de un nombre. El primer nombre de la lista tiene el valor 1, el siguiente 2, luego 4, 8, 16, y así sucesivamente. También se pueden especificar valores explícitos añadiendo ``:integer`` al nombre, p. ej. ``"A:4,B:8,C:16"``. También puedes combinar varias banderas (``"A:4,B:8,AB:12,C:16"``).
 
-\ **Note:** A flag value must be at least ``1`` and at most ``2 ** 32 - 1``.
+\ **Nota:** El valor de una bandera debe ser al menos ``1`` y como máximo ``2 ** 32 - 1``.
 
-\ **Note:** Unlike :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`, the previous explicit value is not taken into account. For the hint ``"A:16,B,C"``, A is 16, B is 2, C is 4.
+\ **Nota:** A diferencia de :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`, el valor explícito previo no se tiene en cuenta. Para la string de sugerencia ``"A:16,B,C"``, A es 16, B es 2, C es 4.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_2D_RENDER:
 
@@ -3626,11 +3626,11 @@ Sugiere que una propiedad es una instancia de un tipo derivado de :ref:`Resource
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_MULTILINE_TEXT** = ``18``
 
-Hints that a :ref:`String<class_String>` property is text with line breaks. Editing it will show a text input field where line breaks can be typed.
+Indica que una propiedad :ref:`String<class_String>` es texto con saltos de línea. Al editarla, aparecerá un campo de entrada de texto en el que se pueden escribir saltos de línea.
 
-The hint string can be set to ``"monospace"`` to force the input field to use a monospaced font.
+La string de sugerencia se puede establecer en ``"monospace"`` para forzar que el campo de entrada utilice una fuente monoespaciada.
 
-If the hint string ``"no_wrap"`` is set, the input field will not wrap lines at boundaries, instead resorting to making the area scrollable.
+Si se establece la string de sugerencia ``"no_wrap"``, el campo de entrada no ajustará las líneas en los límites, sino que recurrirá a hacer que el área sea desplazable.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_EXPRESSION:
 
@@ -4084,23 +4084,23 @@ Si la propiedad tiene ``nil`` como valor predeterminado, su tipo será :ref:`Var
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_ARRAY** = ``262144``
 
-The property is the element count of a property array, i.e. a list of groups of related properties. Properties defined with this usage also need a specific ``class_name`` field in the form of ``label,prefix``. The field may also include additional comma-separated options:
+La propiedad es el recuento de elementos de un array de propiedades, es decir, una lista de grupos de propiedades relacionadas. Las propiedades definidas con este uso también necesitan un campo específico ``class_name`` en forma de ``label,prefix``. El campo también puede incluir opciones adicionales separadas por comas:
 
-- ``page_size=N``: Overrides :ref:`EditorSettings.interface/inspector/max_array_dictionary_items_per_page<class_EditorSettings_property_interface/inspector/max_array_dictionary_items_per_page>` for this array.
+- ``page_size=N``: Anula :ref:`EditorSettings.interface/inspector/max_array_dictionary_items_per_page<class_EditorSettings_property_interface/inspector/max_array_dictionary_items_per_page>` para este array.
 
-- ``add_button_text=text``: The text displayed by the "Add Element" button.
+- ``add_button_text=text``: El texto que se muestra en el botón "Añadir elemento".
 
-- ``static``: The elements can't be re-arranged.
+- ``static``: Los elementos no se pueden reorganizar.
 
-- ``const``: New elements can't be added.
+- ``const``: No se pueden añadir nuevos elementos.
 
-- ``numbered``: An index will appear next to each element.
+- ``numbered``: Aparecerá un índice junto a cada elemento.
 
-- ``unfoldable``: The array can't be folded.
+- ``unfoldable``: El array no se puede plegar.
 
-- ``swap_method=method_name``: The method that will be called when two elements switch places. The method should take 2 :ref:`int<class_int>` parameters, which will be indices of the elements being swapped.
+- ``swap_method=method_name``: El método que se llamará cuando dos elementos cambien de lugar. El método debe tomar 2 parámetros :ref:`int<class_int>`, que serán los índices de los elementos que se intercambian.
 
-Note that making a full-fledged property array requires boilerplate code involving :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`.
+Ten en cuenta que para crear una matriz de propiedades completa se requiere código repetitivo que incluya :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`.
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_ALWAYS_DUPLICATE:
 
@@ -5013,7 +5013,7 @@ El singleton :ref:`InputMap<class_InputMap>`.
 
 El singleton :ref:`JavaClassWrapper<class_JavaClassWrapper>` .
 
-\ **Nota:** Sólo implementado en Android.
+\ **Nota:** Solo implementado en Android.
 
 .. rst-class:: classref-item-separator
 

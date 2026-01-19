@@ -158,7 +158,7 @@ Renvoie le nom de l'os d'application du paramètre à l'index ``index``. Cet os 
 
 :ref:`int<class_int>` **get_reference_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneConstraint3D_method_get_reference_bone>`
 
-Renvoie l'os de référence du paramètre à l'index\ ``index``.
+Renvoie l'os de référence du paramètre à l'index ``index``.
 
 Cet os sera uniquement référencé et non modifié par ce modificateur.
 
@@ -186,9 +186,9 @@ Cet os sera uniquement référencé et non modifié par ce modificateur.
 
 :ref:`NodePath<class_NodePath>` **get_reference_node**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneConstraint3D_method_get_reference_node>`
 
-Returns the reference node path of the setting at ``index``.
+Renvoie le chemin du nœud de référence du paramètre à l'index ``index``.
 
-This node will be only referenced and not modified by this modifier.
+Ce nœud sera uniquement référencé et non modifié par ce modificateur.
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ This node will be only referenced and not modified by this modifier.
 
 :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>` **get_reference_type**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneConstraint3D_method_get_reference_type>`
 
-Returns the reference target type of the setting at ``index``. See also :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
+Renvoie le type de cible de référence du réglage à ``index``. Voir aussi :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +302,7 @@ This node will be only referenced and not modified by this modifier.
 
 |void| **set_reference_type**\ (\ index\: :ref:`int<class_int>`, type\: :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`\ ) :ref:`🔗<class_BoneConstraint3D_method_set_reference_type>`
 
-Sets the reference target type of the setting at ``index`` to ``type``. See also :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
+Définit le type de cible de référence du réglage à ``index`` à ``type``. Voir aussi :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
 
 .. rst-class:: classref-item-separator
 

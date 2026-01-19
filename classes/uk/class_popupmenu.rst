@@ -14,17 +14,17 @@ PopupMenu
 Опис
 --------
 
-**PopupMenu** is a modal window used to display a list of options. Useful for toolbars and context menus.
+**PopupMenu** – це модальне вікно, яке використовується для відображення списку опцій. Корисно для панелей інструментів та контекстних меню.
 
-The size of a **PopupMenu** can be limited by using :ref:`Window.max_size<class_Window_property_max_size>`. If the height of the list of items is larger than the maximum height of the **PopupMenu**, a :ref:`ScrollContainer<class_ScrollContainer>` within the popup will allow the user to scroll the contents. If no maximum size is set, or if it is set to ``0``, the **PopupMenu** height will be limited by its parent rect.
+Розмір **PopupMenu** можна обмежити за допомогою :ref:`Window.max_size<class_Window_property_max_size>`. Якщо висота списку елементів більша за максимальну висоту **PopupMenu**, :ref:`ScrollContainer<class_ScrollContainer>` у спливаючому вікні дозволить користувачеві прокручувати вміст. Якщо максимальний розмір не встановлено або якщо він встановлено на ``0``, висота **PopupMenu** буде обмежена його батьківським прямокутником.
 
-All ``set_*`` methods allow negative item indices, i.e. ``-1`` to access the last item, ``-2`` to select the second-to-last item, and so on.
+Усі методи ``set_*`` дозволяють від'ємні індекси елементів, тобто ``-1`` для доступу до останнього елемента, ``-2`` для вибору передостаннього елемента тощо.
 
-\ **Incremental search:** Like :ref:`ItemList<class_ItemList>` and :ref:`Tree<class_Tree>`, **PopupMenu** supports searching within the list while the control is focused. Press a key that matches the first letter of an item's name to select the first item starting with the given letter. After that point, there are two ways to perform incremental search: 1) Press the same key again before the timeout duration to select the next item starting with the same letter. 2) Press letter keys that match the rest of the word before the timeout duration to match to select the item in question directly. Both of these actions will be reset to the beginning of the list if the timeout duration has passed since the last keystroke was registered. You can adjust the timeout duration by changing :ref:`ProjectSettings.gui/timers/incremental_search_max_interval_msec<class_ProjectSettings_property_gui/timers/incremental_search_max_interval_msec>`.
+\ **Інкрементальний пошук:** Як і :ref:`ItemList<class_ItemList>` та :ref:`Tree<class_Tree>`, **PopupMenu** підтримує пошук у списку, коли елемент керування перебуває у фокусі. Натисніть клавішу, яка відповідає першій літері назви елемента, щоб вибрати перший елемент, що починається з заданої літери. Після цього є два способи виконати поступовий пошук: 1) Натисніть ту саму клавішу ще раз до закінчення часу очікування, щоб вибрати наступний елемент, що починається з тієї ж літери. 2) Натисніть клавіші з літерами, які відповідають решті слова до закінчення часу очікування, щоб вибрати потрібний елемент безпосередньо. Обидві ці дії будуть скинуті до початку списку, якщо час очікування минув з моменту реєстрації останнього натискання клавіші. Ви можете налаштувати час очікування, змінивши :ref:`ProjectSettings.gui/timers/incremental_search_max_interval_msec<class_ProjectSettings_property_gui/timers/incremental_search_max_interval_msec>`.
 
-\ **Note:** **PopupMenu** is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **Примітка:** **PopupMenu** за замовчуванням невидимий. Щоб зробити його видимим, викличте один із методів ``popup_*`` з :ref:`Window<class_Window>` на вузлі, наприклад :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
 
-\ **Note:** The ID values used for items are limited to 32 bits, not full 64 bits of :ref:`int<class_int>`. This has a range of ``-2^32`` to ``2^32 - 1``, i.e. ``-2147483648`` to ``2147483647``.
+ **Примітка:** Значення ідентифікаторів, що використовуються для елементів, обмежені 32 бітами, а не повними 64 бітами :ref:`int<class_int>`. Це має діапазон від ``-2^32`` до ``2^32 - 1``, тобто від ``-2147483648`` до ``2147483647``.
 
 .. rst-class:: classref-reftable-group
 
@@ -46,6 +46,10 @@ All ``set_*`` methods allow negative item indices, i.e. ``-1`` to access the las
    | :ref:`int<class_int>`                           | :ref:`item_count<class_PopupMenu_property_item_count>`                                             | ``0``                                                                        |
    +-------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                         | :ref:`prefer_native_menu<class_PopupMenu_property_prefer_native_menu>`                             | ``false``                                                                    |
+   +-------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                         | :ref:`shrink_height<class_PopupMenu_property_shrink_height>`                                       | ``true``                                                                     |
+   +-------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                         | :ref:`shrink_width<class_PopupMenu_property_shrink_width>`                                         | ``true``                                                                     |
    +-------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
    | :ref:`float<class_float>`                       | :ref:`submenu_popup_delay<class_PopupMenu_property_submenu_popup_delay>`                           | ``0.2``                                                                      |
    +-------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
@@ -319,9 +323,9 @@ All ``set_*`` methods allow negative item indices, i.e. ``-1`` to access the las
 
 **id_pressed**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_signal_id_pressed>`
 
-Emitted when an item of some ``id`` is pressed. Also emitted when its accelerator is activated on macOS.
+Викликається при натисканні елемента з деяким ``id``. Також викликається при активації його акселератора на macOS.
 
-\ **Note:** If ``id`` is negative (either explicitly or due to overflow), this will return the corresponding index instead.
+\ **Примітка:** Якщо ``id`` є від'ємним (явно або через переповнення), це поверне відповідний індекс.
 
 .. rst-class:: classref-item-separator
 
@@ -333,7 +337,7 @@ Emitted when an item of some ``id`` is pressed. Also emitted when its accelerato
 
 **index_pressed**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_signal_index_pressed>`
 
-Emitted when an item of some ``index`` is pressed. Also emitted when its accelerator is activated on macOS.
+Викликається при натисканні елемента деякого ``index``. Також викликається при активації його прискорювача на macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -460,6 +464,40 @@ Emitted when an item of some ``index`` is pressed. Also emitted when its acceler
 
 ----
 
+.. _class_PopupMenu_property_shrink_height:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **shrink_height** = ``true`` :ref:`🔗<class_PopupMenu_property_shrink_height>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_shrink_height**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **get_shrink_height**\ (\ )
+
+Якщо ``true``, **PopupMenu** зменшується до мінімальної висоти під час відображення.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_PopupMenu_property_shrink_width:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **shrink_width** = ``true`` :ref:`🔗<class_PopupMenu_property_shrink_width>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_shrink_width**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **get_shrink_width**\ (\ )
+
+Якщо ``true``, **PopupMenu** зменшується до мінімальної ширини під час відображення.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_PopupMenu_property_submenu_popup_delay:
 
 .. rst-class:: classref-property
@@ -471,9 +509,9 @@ Emitted when an item of some ``index`` is pressed. Also emitted when its acceler
 - |void| **set_submenu_popup_delay**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_submenu_popup_delay**\ (\ )
 
-Sets the delay time in seconds for the submenu item to popup on mouse hovering. If the popup menu is added as a child of another (acting as a submenu), it will inherit the delay time of the parent menu item.
+Встановлює час затримки в секундах для появи елемента підменю при наведенні курсора миші. Якщо спливаюче меню додається як дочірній елемент іншого (що діє як підменю), воно успадкує час затримки батьківського елемента меню.
 
-\ **Note:** If the mouse is exiting a submenu item with an open submenu and enters a different submenu item, the submenu popup delay time is affected by the direction of the mouse movement toward the open submenu. If the mouse is moving toward the submenu, the open submenu will wait approximately ``0.5`` seconds before closing, which then allows the hovered submenu item to open. This additional delay allows the mouse time to move to the open submenu across other menu items without prematurely closing. If the mouse is not moving toward the open submenu, for example in a downward direction, the open submenu will close immediately.
+\ **Примітка:** Якщо миша виходить з елемента підменю з відкритим підменю та входить до іншого елемента підменю, час затримки появи спливаючого підменю залежить від напрямку руху миші до відкритого підменю. Якщо миша рухається до підменю, відкрите підменю чекатиме приблизно ``0,5`` секунди перед закриттям, що потім дозволяє відкрити елемент підменю, на який наведено курсор. Ця додаткова затримка дає миші час для переходу до відкритого підменю через інші елементи меню без передчасного закриття. Якщо миша не рухається до відкритого підменю, наприклад, у напрямку вниз, відкрите підменю негайно закриється.
 
 .. rst-class:: classref-item-separator
 
@@ -1319,7 +1357,7 @@ Sets the delay time in seconds for the submenu item to popup on mouse hovering. 
 
 |void| **set_item_language**\ (\ index\: :ref:`int<class_int>`, language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_language>`
 
-Sets the language code of the text for the item at the given index to ``language``. This is used for line-breaking and text shaping algorithms. If ``language`` is empty, the current locale is used.
+Встановлює мовний код тексту для елемента за заданим індексом на ``language``. Це використовується для алгоритмів розриву рядків та формування тексту. Якщо ``language`` порожній, використовується поточна локалізація.
 
 .. rst-class:: classref-item-separator
 
@@ -1566,7 +1604,7 @@ Sets the language code of the text for the item at the given index to ``language
 
 :ref:`int<class_int>` **gutter_compact** = ``1`` :ref:`🔗<class_PopupMenu_theme_constant_gutter_compact>`
 
-If not ``0``, the icon gutter will be merged with the checkbox gutter when possible. This acts as a boolean.
+Якщо не ``0``, область значка буде об'єднана з областю прапорців, коли це можливо. Це діє як логічне значення.
 
 .. rst-class:: classref-item-separator
 

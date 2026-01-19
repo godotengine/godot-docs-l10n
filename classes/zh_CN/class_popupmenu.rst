@@ -14,17 +14,17 @@ PopupMenu
 描述
 ----
 
-**PopupMenu** is a modal window used to display a list of options. Useful for toolbars and context menus.
+**PopupMenu** 是用于显示选项列表的模态窗口，常见于工具栏和上下文菜单。
 
-The size of a **PopupMenu** can be limited by using :ref:`Window.max_size<class_Window_property_max_size>`. If the height of the list of items is larger than the maximum height of the **PopupMenu**, a :ref:`ScrollContainer<class_ScrollContainer>` within the popup will allow the user to scroll the contents. If no maximum size is set, or if it is set to ``0``, the **PopupMenu** height will be limited by its parent rect.
+\ **PopupMenu** 的大小可以使用 :ref:`Window.max_size<class_Window_property_max_size>` 限制。如果菜单项列表的高度大于 **PopupMenu** 的最大高度，则会在弹出框中使用 :ref:`ScrollContainer<class_ScrollContainer>` 让用户滚动内容。如果没有设置最大尺寸或者设为了 ``0``\ ，则该 **PopupMenu** 的高度会被限制在父级的矩形框之中。
 
-All ``set_*`` methods allow negative item indices, i.e. ``-1`` to access the last item, ``-2`` to select the second-to-last item, and so on.
+所有的 ``set_*`` 方法都允许使用负数菜单项索引，即 ``-1`` 访问的是最后一个菜单项，\ ``-2`` 选择的是倒数第二个菜单项，依次类推。
 
-\ **Incremental search:** Like :ref:`ItemList<class_ItemList>` and :ref:`Tree<class_Tree>`, **PopupMenu** supports searching within the list while the control is focused. Press a key that matches the first letter of an item's name to select the first item starting with the given letter. After that point, there are two ways to perform incremental search: 1) Press the same key again before the timeout duration to select the next item starting with the same letter. 2) Press letter keys that match the rest of the word before the timeout duration to match to select the item in question directly. Both of these actions will be reset to the beginning of the list if the timeout duration has passed since the last keystroke was registered. You can adjust the timeout duration by changing :ref:`ProjectSettings.gui/timers/incremental_search_max_interval_msec<class_ProjectSettings_property_gui/timers/incremental_search_max_interval_msec>`.
+\ **增量搜索：**\ 与 :ref:`ItemList<class_ItemList>` 和 :ref:`Tree<class_Tree>` 类似，\ **PopupMenu** 也支持在聚焦控件时在列表中进行搜索。按下与某个条目名称首字母一致的按键，就会选中以该字母开头的第一个条目。在此之后，进行增量搜索的办法有两种：1）在超时前再次按下同一个按键，选中以该字母开头的下一个条目。2）在超时前按下剩余字母对应的按键，直接匹配并选中所需的条目。这两个动作都会在最后一次按键超时后重置回列表顶端。你可以通过 :ref:`ProjectSettings.gui/timers/incremental_search_max_interval_msec<class_ProjectSettings_property_gui/timers/incremental_search_max_interval_msec>` 修改超时时长。
 
-\ **Note:** **PopupMenu** is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **注意：**\ **PopupMenu** 默认情况下是隐藏的。若要显示，调用节点上来自 :ref:`Window<class_Window>` 的 ``popup_*`` 方法中的其中一个，比如 :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`\ 。
 
-\ **Note:** The ID values used for items are limited to 32 bits, not full 64 bits of :ref:`int<class_int>`. This has a range of ``-2^32`` to ``2^32 - 1``, i.e. ``-2147483648`` to ``2147483647``.
+\ **注意：**\ 菜单项的 ID 有 32 位的限制，不是完整 :ref:`int<class_int>` 的 64 位。取值范围为 ``-2^32`` 到 ``2^32 - 1``\ ，即 ``-2147483648`` 到 ``2147483647``\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -46,6 +46,10 @@ All ``set_*`` methods allow negative item indices, i.e. ``-1`` to access the las
    | :ref:`int<class_int>`                           | :ref:`item_count<class_PopupMenu_property_item_count>`                                             | ``0``                                                                        |
    +-------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                         | :ref:`prefer_native_menu<class_PopupMenu_property_prefer_native_menu>`                             | ``false``                                                                    |
+   +-------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                         | :ref:`shrink_height<class_PopupMenu_property_shrink_height>`                                       | ``true``                                                                     |
+   +-------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                         | :ref:`shrink_width<class_PopupMenu_property_shrink_width>`                                         | ``true``                                                                     |
    +-------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
    | :ref:`float<class_float>`                       | :ref:`submenu_popup_delay<class_PopupMenu_property_submenu_popup_delay>`                           | ``0.2``                                                                      |
    +-------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
@@ -455,6 +459,40 @@ Emitted when an item of some ``index`` is pressed. Also emitted when its acceler
 如果为 ``true``\ ，则支持原生菜单时 :ref:`MenuBar<class_MenuBar>` 会使用原生菜单。
 
 \ **注意：**\ 如果 **PopupMenu** 与 :ref:`StatusIndicator<class_StatusIndicator>`\ 、\ :ref:`MenuBar<class_MenuBar>` 或其他 **PopupMenu** 菜单项之间存在链接，则无论该属性为何值，均可使用原生菜单，请使用 :ref:`is_native_menu()<class_PopupMenu_method_is_native_menu>` 检查。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_PopupMenu_property_shrink_height:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **shrink_height** = ``true`` :ref:`🔗<class_PopupMenu_property_shrink_height>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_shrink_height**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **get_shrink_height**\ (\ )
+
+If ``true``, shrinks **PopupMenu** to minimum height when it's shown.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_PopupMenu_property_shrink_width:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **shrink_width** = ``true`` :ref:`🔗<class_PopupMenu_property_shrink_width>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_shrink_width**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **get_shrink_width**\ (\ )
+
+If ``true``, shrinks **PopupMenu** to minimum width when it's shown.
 
 .. rst-class:: classref-item-separator
 

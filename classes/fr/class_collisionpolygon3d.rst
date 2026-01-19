@@ -14,9 +14,9 @@ Un nœud qui fournit une forme de polygone épaissie (un prisme) à un :ref:`Col
 Description
 -----------
 
-A node that provides a thickened polygon shape (a prism) to a :ref:`CollisionObject3D<class_CollisionObject3D>` parent and allows it to be edited. The polygon can be concave or convex. This can give a detection shape to an :ref:`Area3D<class_Area3D>` or turn a :ref:`PhysicsBody3D<class_PhysicsBody3D>` into a solid object.
+Un nœud qui fournit une forme de polygone épaissie (un prisme) à un :ref:`CollisionObject3D<class_CollisionObject3D>` parent et permet de l'éditer. Le polygone peut être concave ou convexe. Cela peut donner une forme de détection à une :ref:`Area3D<class_Area3D>` ou transformer un :ref:`PhysicsBody3D<class_PhysicsBody3D>` en un objet solide.
 
-\ **Warning:** A non-uniformly scaled :ref:`CollisionShape3D<class_CollisionShape3D>` will likely not behave as expected. Make sure to keep its scale the same on all axes and adjust its shape resource instead.
+\ **Attention :** Une :ref:`CollisionShape3D<class_CollisionShape3D>` avec une échelle non uniforme ne se comportera probablement pas comme prévu. Assurez-vous de garder la même échelle sur tous les axes et d'ajuster sa ressource de forme à la place.
 
 .. rst-class:: classref-reftable-group
 

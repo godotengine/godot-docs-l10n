@@ -229,9 +229,9 @@ Registra un riferimento per "annullare" che verrà cancellato se la cronologia p
 
 |void| **clear_history**\ (\ id\: :ref:`int<class_int>` = -99, increase_version\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_EditorUndoRedoManager_method_clear_history>`
 
-Cancella la cronologia degli annullamenti specificata. È possibile cancellare la cronologia per una scena specifica, la cronologia globale o per tutte le scene alla vota se ``id`` è :ref:`INVALID_HISTORY<class_EditorUndoRedoManager_constant_INVALID_HISTORY>`.
+Clears the given undo history. You can clear history for a specific scene, global history, or for all histories at once (except :ref:`REMOTE_HISTORY<class_EditorUndoRedoManager_constant_REMOTE_HISTORY>`) if ``id`` is :ref:`INVALID_HISTORY<class_EditorUndoRedoManager_constant_INVALID_HISTORY>`.
 
-Se ``increase_version`` è ``true``, la versione della cronologia degli annullamenti verrà aumentata, contrassegnandola come non salvata. Utile per le operazioni che modificano la scena, ma non supportano l'annullamento.
+If ``increase_version`` is ``true``, the undo history version will be increased, marking it as unsaved. Useful for operations that modify the scene, but don't support undo.
 
 ::
 
@@ -239,7 +239,7 @@ Se ``increase_version`` è ``true``, la versione della cronologia degli annullam
     var undo_redo = EditorInterface.get_editor_undo_redo()
     undo_redo.clear_history(undo_redo.get_object_history_id(scene_root))
 
-\ **Nota:** Se di desidera contrassegnare una scena modificata come non salvata senza cancellarne la cronologia, usa invece :ref:`EditorInterface.mark_scene_as_unsaved()<class_EditorInterface_method_mark_scene_as_unsaved>`.
+\ **Note:** If you want to mark an edited scene as unsaved without clearing its history, use :ref:`EditorInterface.mark_scene_as_unsaved()<class_EditorInterface_method_mark_scene_as_unsaved>` instead.
 
 .. rst-class:: classref-item-separator
 

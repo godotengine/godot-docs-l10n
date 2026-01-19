@@ -1367,7 +1367,7 @@ TextServerExtension
 
 :ref:`bool<class_bool>` **_font_is_language_supported**\ (\ font_rid\: :ref:`RID<class_RID>`, language\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_is_language_supported>`
 
-Returns ``true`` if the font supports the given language (as a `ISO 639 <https://en.wikipedia.org/wiki/ISO_639-1>`__ code).
+Повертає ``true``, якщо шрифт підтримує задану мову (як `ISO 639 <https://en.wikipedia.org/wiki/ISO_639-1>`__ code).
 
 .. rst-class:: classref-item-separator
 
@@ -1379,7 +1379,7 @@ Returns ``true`` if the font supports the given language (as a `ISO 639 <https:/
 
 :ref:`bool<class_bool>` **_font_is_modulate_color_glyphs**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_is_modulate_color_glyphs>`
 
-Returns ``true`` if color modulation is applied when drawing the font's colored glyphs.
+Повертає ``true``, якщо під час малювання кольорових гліфів шрифту застосовується колірна модуляція.
 
 .. rst-class:: classref-item-separator
 
@@ -1403,7 +1403,7 @@ Returns ``true`` if color modulation is applied when drawing the font's colored 
 
 :ref:`bool<class_bool>` **_font_is_script_supported**\ (\ font_rid\: :ref:`RID<class_RID>`, script\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_is_script_supported>`
 
-Returns ``true`` if the font supports the given script (as a `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`__ code).
+Повертає ``true``, якщо шрифт підтримує заданий скрипт (як `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`__ code).
 
 .. rst-class:: classref-item-separator
 
@@ -2077,9 +2077,9 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 **Застаріло:** Use :ref:`TranslationServer.format_number()<class_TranslationServer_method_format_number>` instead.
 
-Converts a number from Western Arabic (0..9) to the numeral system used in the given ``language``.
+Перетворює число із західної арабської системи (0..9) у систему числення, що використовується у вказаному параметрі ``language``.
 
-If ``language`` is an empty string, the active locale will be used.
+Якщо параметр ``language`` є порожнім рядком, буде використано активну локаль.
 
 .. rst-class:: classref-item-separator
 
@@ -2223,7 +2223,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`bool<class_bool>` **_is_locale_using_support_data**\ (\ locale\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__is_locale_using_support_data>`
 
-Returns ``true`` if the locale requires text server support data for line/word breaking.
+Повертає ``true``, якщо локаль вимагає даних підтримки текстового сервера для розриву рядків/слів.
 
 .. rst-class:: classref-item-separator
 
@@ -2273,7 +2273,7 @@ Returns ``true`` if the locale requires text server support data for line/word b
 
 :ref:`int<class_int>` **_name_to_tag**\ (\ name\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__name_to_tag>`
 
-Converts the given readable name of a feature, variation, script, or language to an OpenType tag.
+Перетворює задану читабельну назву функції, варіанта, скрипту або мови на тег OpenType.
 
 .. rst-class:: classref-item-separator
 
@@ -2287,9 +2287,9 @@ Converts the given readable name of a feature, variation, script, or language to
 
 **Застаріло:** Use :ref:`TranslationServer.parse_number()<class_TranslationServer_method_parse_number>` instead.
 
-Converts ``number`` from the numeral system used in the given ``language`` to Western Arabic (0..9).
+Перетворює ``language`` із системи числення, що використовується у вказаній ``language``, на західну арабську систему (0..9).
 
-If ``language`` is an empty string, the active locale will be used.
+Якщо ``language`` – порожній рядок, буде використано активну локаль.
 
 .. rst-class:: classref-item-separator
 
@@ -2315,7 +2315,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 **Застаріло:** Use :ref:`TranslationServer.get_percent_sign()<class_TranslationServer_method_get_percent_sign>` instead.
 
-Returns percent sign used in the given ``language``.
+Повертає знак відсотка, який використовується у заданому ``language``.
 
 .. rst-class:: classref-item-separator
 
@@ -2603,7 +2603,7 @@ Returns percent sign used in the given ``language``.
 
 :ref:`RID<class_RID>` **_shaped_text_duplicate**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |virtual| |required| :ref:`🔗<class_TextServerExtension_private_method__shaped_text_duplicate>`
 
-Duplicates shaped text buffer.
+Буфер дублікатів форми тексту.
 
 .. rst-class:: classref-item-separator
 
@@ -3035,7 +3035,7 @@ Duplicates shaped text buffer.
 
 :ref:`bool<class_bool>` **_shaped_text_has_object**\ (\ shaped\: :ref:`RID<class_RID>`, key\: :ref:`Variant<class_Variant>`\ ) |virtual| |required| |const| :ref:`🔗<class_TextServerExtension_private_method__shaped_text_has_object>`
 
-Returns ``true`` if an object with ``key`` is embedded in this shaped text buffer.
+Повертає ``true``, якщо об'єкт з ``key`` вбудований у цей текстовий буфер у формі.
 
 .. rst-class:: classref-item-separator
 
@@ -3371,7 +3371,7 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 :ref:`String<class_String>` **_string_to_title**\ (\ string\: :ref:`String<class_String>`, language\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__string_to_title>`
 
-Returns the string converted to ``Title Case``.
+Повертає рядок, перетворений на ``Регістр заголовка``.
 
 .. rst-class:: classref-item-separator
 
@@ -3407,7 +3407,7 @@ Returns the string converted to ``Title Case``.
 
 :ref:`String<class_String>` **_tag_to_name**\ (\ tag\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__tag_to_name>`
 
-Converts the given OpenType tag to the readable name of a feature, variation, script, or language.
+Перетворює заданий тег OpenType на читабельну назву функції, варіанта, скрипту або мови.
 
 .. rst-class:: classref-item-separator
 

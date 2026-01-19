@@ -160,13 +160,13 @@ Cuando un servidor ha recibido y procesado una solicitud, se espera que envíe u
 
 :ref:`Dictionary<class_Dictionary>` **make_response_error**\ (\ code\: :ref:`int<class_int>`, message\: :ref:`String<class_String>`, id\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_JSONRPC_method_make_response_error>`
 
-Creates a response which indicates a previous reply has failed in some way.
+Crea una respuesta que indica que una respuesta anterior ha fallado de alguna manera.
 
-- ``code``: The error code corresponding to what kind of error this is. See the :ref:`ErrorCode<enum_JSONRPC_ErrorCode>` constants.
+- ``code``: El código de error que corresponde al tipo de error. Consulta las constantes :ref:`ErrorCode<enum_JSONRPC_ErrorCode>`.
 
-- ``message``: A custom message about this error.
+- ``message``: Un mensaje personalizado sobre este error.
 
-- ``id``: The request this error is a response to.
+- ``id``: La solicitud a la que este error es una respuesta.
 
 .. rst-class:: classref-item-separator
 
@@ -178,11 +178,11 @@ Creates a response which indicates a previous reply has failed in some way.
 
 :ref:`Variant<class_Variant>` **process_action**\ (\ action\: :ref:`Variant<class_Variant>`, recurse\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_JSONRPC_method_process_action>`
 
-Given a Dictionary which takes the form of a JSON-RPC request: unpack the request and run it. Methods are resolved by looking at the field called "method" and looking for an equivalently named function in the JSONRPC object. If one is found that method is called.
+Dado un Dictionary con formato de solicitud JSON-RPC: desempaca la solicitud y ejecútala. Los métodos se resuelven buscando el campo llamado "method" y buscando una función con un nombre equivalente en el objeto JSONRPC. Si se encuentra una, se llama a ese método.
 
-To add new supported methods extend the JSONRPC class and call :ref:`process_action()<class_JSONRPC_method_process_action>` on your subclass.
+Para añadir nuevos métodos compatibles, extiende la clase JSONRPC y llama a :ref:`process_action()<class_JSONRPC_method_process_action>` en tu subclase.
 
-\ ``action``: The action to be run, as a Dictionary in the form of a JSON-RPC request or notification.
+\ ``action``: La acción a ejecutar, como un Dictionary con formato de solicitud o notificación JSON-RPC.
 
 .. rst-class:: classref-item-separator
 
@@ -208,11 +208,11 @@ To add new supported methods extend the JSONRPC class and call :ref:`process_act
 
 |void| **set_method**\ (\ name\: :ref:`String<class_String>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_JSONRPC_method_set_method>`
 
-Registers a callback for the given method name.
+Registra una callback para el nombre de método dado.
 
-- ``name``: The name that clients can use to access the callback.
+- ``name``: El nombre que los clientes pueden usar para acceder al callback.
 
-- ``callback``: The callback which will handle the specified method.
+- ``callback``: El callback que manejará el método específico.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

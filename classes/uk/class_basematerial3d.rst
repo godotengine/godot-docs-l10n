@@ -1020,9 +1020,9 @@ enum **Flags**: :ref:`🔗<enum_BaseMaterial3D_Flags>`
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_SRGB_VERTEX_COLOR** = ``2``
 
-Vertex colors are considered to be stored in nonlinear sRGB encoding and are converted to linear encoding during rendering. See also :ref:`vertex_color_is_srgb<class_BaseMaterial3D_property_vertex_color_is_srgb>`.
+Кольори вершин вважаються збереженими в нелінійному кодуванні sRGB і перетворюються на лінійне кодування під час рендерингу. Див. також :ref:`vertex_color_is_srgb<class_BaseMaterial3D_property_vertex_color_is_srgb>`.
 
-\ **Note:** Only effective when using the Forward+ and Mobile rendering methods.
+\ **Примітка:** Ефективно лише при використанні методів рендерингу Forward+ та Mobile.
 
 .. _class_BaseMaterial3D_constant_FLAG_USE_POINT_SIZE:
 
@@ -1102,7 +1102,7 @@ Vertex colors are considered to be stored in nonlinear sRGB encoding and are con
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_ALBEDO_TEXTURE_FORCE_SRGB** = ``12``
 
-Forces the shader to convert albedo from nonlinear sRGB encoding to linear encoding. See also :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>`.
+Примушує шейдер конвертувати альбедо з нелінійного кодування sRGB у лінійне кодування. Див. також :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>`.
 
 .. _class_BaseMaterial3D_constant_FLAG_DONT_RECEIVE_SHADOWS:
 
@@ -1512,7 +1512,7 @@ enum **StencilFlags**: :ref:`🔗<enum_BaseMaterial3D_StencilFlags>`
 
 :ref:`StencilFlags<enum_BaseMaterial3D_StencilFlags>` **STENCIL_FLAG_READ** = ``1``
 
-The material will only be rendered where it passes a stencil comparison with existing stencil buffer values.
+Матеріал буде відрендерено лише там, де він пройде порівняння трафарету з існуючими значеннями буфера трафарету.
 
 .. _class_BaseMaterial3D_constant_STENCIL_FLAG_WRITE:
 
@@ -1654,9 +1654,9 @@ enum **StencilCompare**: :ref:`🔗<enum_BaseMaterial3D_StencilCompare>`
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, forces a conversion of the :ref:`albedo_texture<class_BaseMaterial3D_property_albedo_texture>` from nonlinear sRGB encoding to linear encoding. See also :ref:`vertex_color_is_srgb<class_BaseMaterial3D_property_vertex_color_is_srgb>`.
+Якщо ``true``, примусово перетворюється :ref:`albedo_texture<class_BaseMaterial3D_property_albedo_texture>` з нелінійного кодування sRGB на лінійне кодування. Див. також :ref:`vertex_color_is_srgb<class_BaseMaterial3D_property_vertex_color_is_srgb>`.
 
-This should only be enabled when needed (typically when using a :ref:`ViewportTexture<class_ViewportTexture>` as :ref:`albedo_texture<class_BaseMaterial3D_property_albedo_texture>`). If :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>` is ``true`` when it shouldn't be, the texture will appear to be too dark. If :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>` is ``false`` when it shouldn't be, the texture will appear to be too bright.
+Це слід вмикати лише за потреби (зазвичай, під час використання :ref:`ViewportTexture<class_ViewportTexture>` як :ref:`albedo_texture<class_BaseMaterial3D_property_albedo_texture>`). Якщо :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>` має значення ``true``, коли не повинно бути, текстура виглядатиме занадто темною. Якщо :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>` має значення ``false``, коли не повинно бути, текстура виглядатиме занадто яскравою.
 
 .. rst-class:: classref-item-separator
 
@@ -2152,9 +2152,9 @@ This should only be enabled when needed (typically when using a :ref:`ViewportTe
 
 **Експериментальний:** May be affected by future rendering pipeline changes.
 
-Determines which comparison operator is used when testing depth.
+Визначає, який оператор порівняння використовується під час перевірки глибини.
 
-\ **Note:** Changing :ref:`depth_test<class_BaseMaterial3D_property_depth_test>` to a non-default value only has a visible effect when used on a transparent material, or a material that has :ref:`depth_draw_mode<class_BaseMaterial3D_property_depth_draw_mode>` set to :ref:`DEPTH_DRAW_DISABLED<class_BaseMaterial3D_constant_DEPTH_DRAW_DISABLED>`.
+\ **Примітка:** Зміна :ref:`depth_test<class_BaseMaterial3D_property_depth_test>` на значення, відмінне від стандартного, має видимий ефект лише тоді, коли використовується на прозорому матеріалі або матеріалі, для якого :ref:`depth_draw_mode<class_BaseMaterial3D_property_depth_draw_mode>` встановлено значення :ref:`DEPTH_DRAW_DISABLED<class_BaseMaterial3D_constant_DEPTH_DRAW_DISABLED>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3337,7 +3337,7 @@ Determines which comparison operator is used when testing depth.
 
 **Експериментальний:** May be affected by future rendering pipeline changes.
 
-The comparison operator to use for stencil masking operations.
+Оператор порівняння, який використовується для операцій маскування трафарету.
 
 .. rst-class:: classref-item-separator
 
@@ -3356,7 +3356,7 @@ The comparison operator to use for stencil masking operations.
 
 **Експериментальний:** May be affected by future rendering pipeline changes.
 
-The flags dictating how the stencil operation behaves.
+Прапорці, що визначають поведінку операції з трафаретом.
 
 .. rst-class:: classref-item-separator
 
@@ -3375,7 +3375,7 @@ The flags dictating how the stencil operation behaves.
 
 **Експериментальний:** May be affected by future rendering pipeline changes.
 
-The stencil effect mode.
+Режим ефекту трафарету.
 
 .. rst-class:: classref-item-separator
 
@@ -3882,9 +3882,9 @@ The stencil effect mode.
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, vertex colors are considered to be stored in nonlinear sRGB encoding and are converted to linear encoding during rendering. If ``false``, vertex colors are considered to be stored in linear encoding and are rendered as-is. See also :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>`.
+Якщо ``true``, кольори вершин вважаються збереженими в нелінійному кодуванні sRGB і перетворюються на лінійне кодування під час рендерингу. Якщо ``false``, кольори вершин вважаються збереженими в лінійному кодуванні і рендеряться як є. Див. також :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>`.
 
-\ **Note:** Only effective when using the Forward+ and Mobile rendering methods, not Compatibility.
+\ **Примітка:** Ефективно лише при використанні методів рендерингу Forward+ та Mobile, не Compatibility.
 
 .. rst-class:: classref-item-separator
 
@@ -3935,7 +3935,7 @@ If ``true``, vertex colors are considered to be stored in nonlinear sRGB encodin
 
 :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const| :ref:`🔗<class_BaseMaterial3D_method_get_feature>`
 
-Returns ``true`` if the specified ``feature`` is enabled.
+Повертає ``true``, якщо вказану функцію ``feature`` увімкнено.
 
 .. rst-class:: classref-item-separator
 
@@ -3947,7 +3947,7 @@ Returns ``true`` if the specified ``feature`` is enabled.
 
 :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const| :ref:`🔗<class_BaseMaterial3D_method_get_flag>`
 
-Returns ``true`` if the specified ``flag`` is enabled.
+Повертає ``true``, якщо вказаний ``flag`` увімкнено.
 
 .. rst-class:: classref-item-separator
 
@@ -3959,7 +3959,7 @@ Returns ``true`` if the specified ``flag`` is enabled.
 
 :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const| :ref:`🔗<class_BaseMaterial3D_method_get_texture>`
 
-Returns the :ref:`Texture2D<class_Texture2D>` associated with the specified texture ``param``.
+Повертає :ref:`Texture2D<class_Texture2D>`, пов'язаний із зазначеною текстурою ``param``.
 
 .. rst-class:: classref-item-separator
 
@@ -3971,7 +3971,7 @@ Returns the :ref:`Texture2D<class_Texture2D>` associated with the specified text
 
 |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BaseMaterial3D_method_set_feature>`
 
-If ``enable`` is ``true``, enables the specified ``feature``. Many features that are available in **BaseMaterial3D** need to be enabled before use. This way, the cost for using the feature is only incurred when specified. Features can also be enabled by setting their corresponding property to ``true``.
+Якщо ``enable`` має значення ``true``, вмикає вказану функцію ``feature``. Багато функцій, доступних у **BaseMaterial3D**, потрібно ввімкнути перед використанням. Таким чином, вартість використання функції стягується лише тоді, коли вона вказана. Функції також можна ввімкнути, встановивши для їхньої відповідної властивості значення ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -3983,7 +3983,7 @@ If ``enable`` is ``true``, enables the specified ``feature``. Many features that
 
 |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BaseMaterial3D_method_set_flag>`
 
-If ``enable`` is ``true``, enables the specified ``flag``. Flags are optional behavior that can be turned on and off. Only one flag can be enabled at a time with this function, the flag enumerators cannot be bit-masked together to enable or disable multiple flags at once. Flags can also be enabled by setting their corresponding property to ``true``.
+Якщо ``enable`` має значення ``true``, вмикається вказаний ``flag``. Прапорці – це необов'язкова поведінка, яку можна вмикати та вимикати. За допомогою цієї функції можна вмикати лише один прапорець одночасно, перечислителі прапорців не можна маскувати бітами разом, щоб увімкнути або вимкнути кілька прапорців одночасно. Прапорці також можна ввімкнути, встановивши їх відповідну властивість на ``true``.
 
 .. rst-class:: classref-item-separator
 

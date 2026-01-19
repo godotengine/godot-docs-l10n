@@ -178,7 +178,7 @@ There can be multiple property editors for a property. If ``add_to_end`` is ``tr
 
 |void| **add_property_editor_for_multiple_properties**\ (\ label\: :ref:`String<class_String>`, properties\: :ref:`PackedStringArray<class_PackedStringArray>`, editor\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_EditorInspectorPlugin_method_add_property_editor_for_multiple_properties>`
 
-Adds an editor that allows modifying multiple properties. The ``editor`` control must extend :ref:`EditorProperty<class_EditorProperty>`.
+Ajoute un éditeur qui permet de modifier plusieurs propriétés. Le contrôle ``editor`` doit étendre :ref:`EditorProperty<class_EditorProperty>`.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -130,7 +130,7 @@ Will not take culling into account, so all faces will be taken into account when
 
 :ref:`ShadowCastingSetting<enum_GeometryInstance3D_ShadowCastingSetting>` **SHADOW_CASTING_SETTING_SHADOWS_ONLY** = ``3``
 
-Sólo mostrará las sombras proyectadas por este objeto.
+Solo mostrará las sombras proyectadas por este objeto.
 
 En otras palabras, la malla real no será visible, sólo las sombras proyectadas desde la malla lo serán.
 
@@ -264,7 +264,7 @@ Se desvanecerá cuando alcance los límites de su propio rango de visibilidad. E
 
 Aparecerán gradualmente sus dependencias de visibilidad (véase :ref:`Node3D.visibility_parent<class_Node3D_property_visibility_parent>`) cuando alcance los límites de su propio rango de visibilidad. Esto es más lento que :ref:`VISIBILITY_RANGE_FADE_DISABLED<class_GeometryInstance3D_constant_VISIBILITY_RANGE_FADE_DISABLED>`, pero puede proporcionar transiciones más suaves. El rango de desvanecimiento está determinado por :ref:`visibility_range_begin_margin<class_GeometryInstance3D_property_visibility_range_begin_margin>` y :ref:`visibility_range_end_margin<class_GeometryInstance3D_property_visibility_range_end_margin>`.
 
-\ **Nota:** Sólo se admite cuando se utiliza el método de renderizado Forward+. Cuando se utiliza el método de renderizado Móvil o de Compatibilidad, este modo actúa como :ref:`VISIBILITY_RANGE_FADE_DISABLED<class_GeometryInstance3D_constant_VISIBILITY_RANGE_FADE_DISABLED>` pero con la histéresis desactivada.
+\ **Nota:** Solo se admite cuando se utiliza el método de renderizado Forward+. Cuando se utiliza el método de renderizado Móvil o de Compatibilidad, este modo actúa como :ref:`VISIBILITY_RANGE_FADE_DISABLED<class_GeometryInstance3D_constant_VISIBILITY_RANGE_FADE_DISABLED>` pero con la histéresis desactivada.
 
 .. rst-class:: classref-section-separator
 

@@ -14,11 +14,11 @@ WebSocketPeer
 Опис
 --------
 
-This class represents WebSocket connection, and can be used as a WebSocket client (`RFC 6455 <https://datatracker.ietf.org/doc/html/rfc6455>`__-compliant) or as a remote peer of a WebSocket server.
+Цей клас представляє з'єднання WebSocket і може використовуватися як клієнт WebSocket (сумісний з RFC 6455) або як віддалений вузол сервера WebSocket.
 
-You can send WebSocket binary frames using :ref:`PacketPeer.put_packet()<class_PacketPeer_method_put_packet>`, and WebSocket text frames using :ref:`send()<class_WebSocketPeer_method_send>` (prefer text frames when interacting with text-based API). You can check the frame type of the last packet via :ref:`was_string_packet()<class_WebSocketPeer_method_was_string_packet>`.
+Ви можете надсилати бінарні кадри WebSocket за допомогою методу :ref:`PacketPeer.put_packet()<class_PacketPeer_method_put_packet>`, а текстові кадри WebSocket - за допомогою методу :ref:`send()<class_WebSocketPeer_method_send>` (надавати перевагу текстовим кадрам під час взаємодії з текстовим API). Ви можете перевірити тип кадру останнього пакета за допомогою методу :ref:`was_string_packet()<class_WebSocketPeer_method_was_string_packet>`.
 
-To start a WebSocket client, first call :ref:`connect_to_url()<class_WebSocketPeer_method_connect_to_url>`, then regularly call :ref:`poll()<class_WebSocketPeer_method_poll>` (e.g. during :ref:`Node<class_Node>` process). You can query the socket state via :ref:`get_ready_state()<class_WebSocketPeer_method_get_ready_state>`, get the number of pending packets using :ref:`PacketPeer.get_available_packet_count()<class_PacketPeer_method_get_available_packet_count>`, and retrieve them via :ref:`PacketPeer.get_packet()<class_PacketPeer_method_get_packet>`.
+Щоб запустити клієнт WebSocket, спочатку викличте метод ``connect_to_url``, а потім регулярно викликайте метод ``poll`` (наприклад, під час процесу :ref:`Node<class_Node>`). Ви можете запитувати стан сокета за допомогою методу :ref:`get_ready_state()<class_WebSocketPeer_method_get_ready_state>`, отримувати кількість пакетів, що очікують обробки, за допомогою методу :ref:`PacketPeer.get_available_packet_count()<class_PacketPeer_method_get_available_packet_count>`, та отримувати їх за допомогою методу :ref:`PacketPeer.get_packet()<class_PacketPeer_method_get_packet>`.
 
 
 .. tabs::
@@ -49,7 +49,7 @@ To start a WebSocket client, first call :ref:`connect_to_url()<class_WebSocketPe
 
 
 
-To use the peer as part of a WebSocket server refer to :ref:`accept_stream()<class_WebSocketPeer_method_accept_stream>` and the online tutorial.
+Щоб використовувати вузол як частину сервера WebSocket, зверніться до :ref:`accept_stream()<class_WebSocketPeer_method_accept_stream>` та онлайн-посібника.
 
 .. rst-class:: classref-reftable-group
 
@@ -332,15 +332,15 @@ enum **State**: :ref:`🔗<enum_WebSocketPeer_State>`
 
 |void| **close**\ (\ code\: :ref:`int<class_int>` = 1000, reason\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_WebSocketPeer_method_close>`
 
-Closes this WebSocket connection.
+Закриває це з’єднання WebSocket.
 
-\ ``code`` is the status code for the closure (see `RFC 6455 section 7.4 <https://datatracker.ietf.org/doc/html/rfc6455#section-7.4.1>`__ for a list of valid status codes). If ``code`` is negative, the connection will be closed immediately without notifying the remote peer.
+\ ``code`` – це код стану закриття (див. `RFC 6455 розділ 7.4 <https://datatracker.ietf.org/doc/html/rfc6455#section-7.4.1>`__ для списку дійсних кодів стану). Якщо ``code`` від’ємне, з’єднання буде негайно закрито без повідомлення віддаленого вузла.
 
-\ ``reason`` is the human-readable reason for closing the connection. It can be any UTF-8 string that's smaller than 123 bytes.
+\ ``reason`` – це причина закриття з’єднання, яку може прочитати людина. Це може бути будь-який рядок UTF-8, менший за 123 байти.
 
-\ **Note:** To achieve a clean closure, you will need to keep polling until :ref:`STATE_CLOSED<class_WebSocketPeer_constant_STATE_CLOSED>` is reached.
+\ **Примітка:** Щоб досягти чистого закриття, потрібно продовжувати опитування, доки не буде досягнуто :ref:`STATE_CLOSED<class_WebSocketPeer_constant_STATE_CLOSED>`.
 
-\ **Note:** The Web export might not support all status codes. Please refer to browser-specific documentation for more details.
+\ **Примітка:** Веб-експорт може не підтримувати всі коди стану. Будь ласка, зверніться до документації до конкретного браузера для отримання додаткової інформації.
 
 .. rst-class:: classref-item-separator
 

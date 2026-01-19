@@ -1082,7 +1082,7 @@ flags **TextOverrunFlag**: :ref:`🔗<enum_TextServer_TextOverrunFlag>`
 
 :ref:`TextOverrunFlag<enum_TextServer_TextOverrunFlag>` **OVERRUN_SHORT_STRING_ELLIPSIS** = ``32``
 
-Determines whether the ellipsis should be added regardless of the string length, otherwise it is added only if the string is 6 characters or longer.
+Визначає, чи слід додавати три крапки незалежно від довжини рядка, інакше вони додаються, лише якщо рядок містить 6 символів або більше.
 
 .. rst-class:: classref-item-separator
 
@@ -1963,7 +1963,7 @@ Bitmap шрифт масштабований довільним (фракцій�
 
 **Застаріло:** Use :ref:`Viewport<class_Viewport>` oversampling, or the ``oversampling`` argument of the ``draw_*`` methods instead.
 
-This method does nothing and always returns ``1.0``.
+Цей метод нічого не робить і завжди повертає ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -2537,7 +2537,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`bool<class_bool>` **font_is_language_supported**\ (\ font_rid\: :ref:`RID<class_RID>`, language\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServer_method_font_is_language_supported>`
 
-Returns ``true`` if the font supports the given language (as a `ISO 639 <https://en.wikipedia.org/wiki/ISO_639-1>`__ code).
+Повертає ``true``, якщо шрифт підтримує задану мову (як `ISO 639 <https://en.wikipedia.org/wiki/ISO_639-1>`__ code).
 
 .. rst-class:: classref-item-separator
 
@@ -2549,7 +2549,7 @@ Returns ``true`` if the font supports the given language (as a `ISO 639 <https:/
 
 :ref:`bool<class_bool>` **font_is_modulate_color_glyphs**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_is_modulate_color_glyphs>`
 
-Returns ``true`` if color modulation is applied when drawing the font's colored glyphs.
+Повертає ``true``, якщо під час малювання кольорових гліфів шрифту застосовується колірна модуляція.
 
 .. rst-class:: classref-item-separator
 
@@ -2573,7 +2573,7 @@ Returns ``true`` if color modulation is applied when drawing the font's colored 
 
 :ref:`bool<class_bool>` **font_is_script_supported**\ (\ font_rid\: :ref:`RID<class_RID>`, script\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServer_method_font_is_script_supported>`
 
-Returns ``true`` if the font supports the given script (as a `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`__ code).
+Повертає ``true``, якщо шрифт підтримує заданий скрипт (як `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`__ code).
 
 .. rst-class:: classref-item-separator
 
@@ -3253,9 +3253,9 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 **Застаріло:** Use :ref:`TranslationServer.format_number()<class_TranslationServer_method_format_number>` instead.
 
-Converts a number from Western Arabic (0..9) to the numeral system used in the given ``language``.
+Перетворює число із західної арабської системи (0..9) у систему числення, що використовується у вказаному параметрі ``language``.
 
-If ``language`` is an empty string, the active locale will be used.
+Якщо параметр ``language`` є порожнім рядком, буде використано активну локаль.
 
 .. rst-class:: classref-item-separator
 
@@ -3403,7 +3403,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`bool<class_bool>` **is_locale_using_support_data**\ (\ locale\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServer_method_is_locale_using_support_data>`
 
-Returns ``true`` if the locale requires text server support data for line/word breaking.
+Повертає ``true``, якщо локаль вимагає даних підтримки текстового сервера для розриву рядків/слів.
 
 .. rst-class:: classref-item-separator
 
@@ -3469,7 +3469,7 @@ Returns ``true`` if the locale requires text server support data for line/word b
 
 :ref:`int<class_int>` **name_to_tag**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServer_method_name_to_tag>`
 
-Converts the given readable name of a feature, variation, script, or language to an OpenType tag.
+Перетворює задану читабельну назву функції, варіанта, скрипту або мови на тег OpenType.
 
 .. rst-class:: classref-item-separator
 
@@ -3483,9 +3483,9 @@ Converts the given readable name of a feature, variation, script, or language to
 
 **Застаріло:** Use :ref:`TranslationServer.parse_number()<class_TranslationServer_method_parse_number>` instead.
 
-Converts ``number`` from the numeral system used in the given ``language`` to Western Arabic (0..9).
+Перетворює ``language`` із системи числення, що використовується у вказаній ``language``, на західну арабську систему (0..9).
 
-If ``language`` is an empty string, the active locale will be used.
+Якщо ``language`` – порожній рядок, буде використано активну локаль.
 
 .. rst-class:: classref-item-separator
 
@@ -3511,9 +3511,9 @@ If ``language`` is an empty string, the active locale will be used.
 
 **Застаріло:** Use :ref:`TranslationServer.get_percent_sign()<class_TranslationServer_method_get_percent_sign>` instead.
 
-Returns the percent sign used in the given ``language``.
+Повертає знак відсотка, що використовується у заданому ``language``.
 
-If ``language`` is an empty string, the active locale will be used.
+Якщо ``language`` – порожній рядок, буде використано активну локалізацію.
 
 .. rst-class:: classref-item-separator
 
@@ -3795,7 +3795,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`RID<class_RID>` **shaped_text_duplicate**\ (\ rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_TextServer_method_shaped_text_duplicate>`
 
-Duplicates shaped text buffer.
+Буфер дублікатів форми тексту.
 
 .. rst-class:: classref-item-separator
 
@@ -4233,7 +4233,7 @@ Duplicates shaped text buffer.
 
 :ref:`bool<class_bool>` **shaped_text_has_object**\ (\ shaped\: :ref:`RID<class_RID>`, key\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_has_object>`
 
-Returns ``true`` if an object with ``key`` is embedded in this shaped text buffer.
+Повертає ``true``, якщо об'єкт з ``key`` вбудований у цей текстовий буфер у формі.
 
 .. rst-class:: classref-item-separator
 
@@ -4572,11 +4572,11 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 :ref:`String<class_String>` **string_to_lower**\ (\ string\: :ref:`String<class_String>`, language\: :ref:`String<class_String>` = ""\ ) |const| :ref:`🔗<class_TextServer_method_string_to_lower>`
 
-Returns the string converted to ``lowercase``.
+Повертає рядок, перетворений у ``нижній регістр``.
 
-\ **Note:** Casing is locale dependent and context sensitive if server support :ref:`FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION<class_TextServer_constant_FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION>` feature (supported by :ref:`TextServerAdvanced<class_TextServerAdvanced>`).
+\ **Примітка:** Регістр залежить від локалі та контексту, якщо сервер підтримує функцію :ref:`FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION<class_TextServer_constant_FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION>` (підтримується :ref:`TextServerAdvanced<class_TextServerAdvanced>`).
 
-\ **Note:** The result may be longer or shorter than the original.
+\ **Примітка:** Результат може бути довшим або коротшим за оригінал.
 
 .. rst-class:: classref-item-separator
 
@@ -4588,11 +4588,11 @@ Returns the string converted to ``lowercase``.
 
 :ref:`String<class_String>` **string_to_title**\ (\ string\: :ref:`String<class_String>`, language\: :ref:`String<class_String>` = ""\ ) |const| :ref:`🔗<class_TextServer_method_string_to_title>`
 
-Returns the string converted to ``Title Case``.
+Повертає рядок, перетворений на ``Title Case``.
 
-\ **Note:** Casing is locale dependent and context sensitive if server support :ref:`FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION<class_TextServer_constant_FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION>` feature (supported by :ref:`TextServerAdvanced<class_TextServerAdvanced>`).
+\ **Примітка:** Регістр залежить від локалі та контексту, якщо сервер підтримує функцію :ref:`FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION<class_TextServer_constant_FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION>` (підтримується :ref:`TextServerAdvanced<class_TextServerAdvanced>`).
 
-\ **Note:** The result may be longer or shorter than the original.
+\ **Примітка:** Результат може бути довшим або коротшим за оригінал.
 
 .. rst-class:: classref-item-separator
 
@@ -4604,11 +4604,11 @@ Returns the string converted to ``Title Case``.
 
 :ref:`String<class_String>` **string_to_upper**\ (\ string\: :ref:`String<class_String>`, language\: :ref:`String<class_String>` = ""\ ) |const| :ref:`🔗<class_TextServer_method_string_to_upper>`
 
-Returns the string converted to ``UPPERCASE``.
+Повертає рядок, перетворений на ``ВЕЛИКІ ЛІТЕРИ``.
 
-\ **Note:** Casing is locale dependent and context sensitive if server support :ref:`FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION<class_TextServer_constant_FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION>` feature (supported by :ref:`TextServerAdvanced<class_TextServerAdvanced>`).
+\ **Примітка:** Регістр залежить від локалі та контексту, якщо сервер підтримує функцію :ref:`FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION<class_TextServer_constant_FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION>` (підтримується :ref:`TextServerAdvanced<class_TextServerAdvanced>`).
 
-\ **Note:** The result may be longer or shorter than the original.
+\ **Примітка:** Результат може бути довшим або коротшим за оригінал.
 
 .. rst-class:: classref-item-separator
 
@@ -4634,7 +4634,7 @@ Returns the string converted to ``UPPERCASE``.
 
 :ref:`String<class_String>` **tag_to_name**\ (\ tag\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_tag_to_name>`
 
-Converts the given OpenType tag to the readable name of a feature, variation, script, or language.
+Перетворює заданий тег OpenType на читабельну назву функції, варіанта, скрипту або мови.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

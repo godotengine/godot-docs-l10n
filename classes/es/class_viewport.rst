@@ -403,7 +403,7 @@ Valores menores a ``1.0`` resultarán en que el viewport sea reescalado usando M
 
 Más información: `MetalFX <https://developer.apple.com/documentation/metalfx>`__.
 
-\ **Nota:** Sólo soportado cuando el controlador de renderizado Metal está en uso, lo que limita este modo de escalado a macOS e iOS.
+\ **Nota:** Solo soportado cuando el controlador de renderizado Metal está en uso, lo que limita este modo de escalado a macOS e iOS.
 
 .. _class_Viewport_constant_SCALING_3D_MODE_METALFX_TEMPORAL:
 
@@ -419,7 +419,7 @@ Los valores inferiores a ``1.0`` harán que el viewport se escale utilizando Met
 
 Más información: `MetalFX <https://developer.apple.com/documentation/metalfx>`__.
 
-\ **Nota:** Sólo se admite cuando se utiliza el controlador de renderizado Metal, lo que limita este modo de escalado a macOS e iOS.
+\ **Nota:** Solo se admite cuando se utiliza el controlador de renderizado Metal, lo que limita este modo de escalado a macOS e iOS.
 
 .. _class_Viewport_constant_SCALING_3D_MODE_MAX:
 
@@ -793,7 +793,7 @@ Dibuja el búfer de luminancia de la escena (si está disponible) en el cuadrant
 
 Dibuja la textura de oclusión ambiental del espacio de la pantalla en lugar de la escena, para que pueda ver claramente cómo está afectando a los objetos. Para que este modo de visualización funcione, debe tener :ref:`Environment.ssao_enabled<class_Environment_property_ssao_enabled>` establecido en su :ref:`WorldEnvironment<class_WorldEnvironment>`.
 
-\ **Nota:** Sólo se admite cuando se utiliza el método de renderizado Forward+.
+\ **Nota:** Solo se admite cuando se utiliza el método de renderizado Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_SSIL:
 
@@ -803,7 +803,7 @@ Dibuja la textura de oclusión ambiental del espacio de la pantalla en lugar de 
 
 Dibuja la textura de iluminación indirecta del espacio de la pantalla en lugar de la escena, para que pueda ver claramente cómo está afectando a los objetos. Para que este modo de visualización funcione, debe tener :ref:`Environment.ssil_enabled<class_Environment_property_ssil_enabled>` establecido en su :ref:`WorldEnvironment<class_WorldEnvironment>`.
 
-\ **Nota:** Sólo se admite cuando se utiliza el método de renderizado Forward+.
+\ **Nota:** Solo se admite cuando se utiliza el método de renderizado Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_PSSM_SPLITS:
 
@@ -823,9 +823,9 @@ Colorea cada división PSSM para los :ref:`DirectionalLight3D<class_DirectionalL
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_DECAL_ATLAS** = ``15``
 
-Dibuja el atlas de calcomanías utilizado por los :ref:`Decal<class_Decal>`\ s y las texturas del proyector de luz en el cuadrante superior izquierdo del **Viewport**.
+Dibuja el atlas de decals utilizado por los :ref:`Decal<class_Decal>`\ s y las texturas del proyector de luz en el cuadrante superior izquierdo del **Viewport**.
 
-\ **Nota:** Sólo se admite cuando se utilizan los métodos de renderizado Forward+ o Mobile.
+\ **Nota:** Solo se admite cuando se utilizan los métodos de renderizado Forward+ o Mobile.
 
 .. _class_Viewport_constant_DEBUG_DRAW_SDFGI:
 
@@ -837,7 +837,7 @@ Dibuja las cascadas utilizadas para renderizar la iluminación global del campo 
 
 No hace nada si el :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>` del entorno actual es ``false``.
 
-\ **Nota:** Sólo se admite cuando se utiliza el método de renderizado Forward+.
+\ **Nota:** Solo se admite cuando se utiliza el método de renderizado Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_SDFGI_PROBES:
 
@@ -861,7 +861,7 @@ Does nothing if the current environment's :ref:`Environment.sdfgi_enabled<class_
 
 Dibuja el búfer utilizado para la iluminación global de :ref:`VoxelGI<class_VoxelGI>` o SDFGI. Requiere que :ref:`VoxelGI<class_VoxelGI>` (al menos un nodo VoxelGI procesado visible) o SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`) estén habilitados para tener un efecto visible.
 
-\ **Nota:** Sólo se admite cuando se utiliza el método de renderizado Forward+.
+\ **Nota:** Solo se admite cuando se utiliza el método de renderizado Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_DISABLE_LOD:
 
@@ -897,7 +897,7 @@ Dibuja el clúster utilizado por los nodos :ref:`SpotLight3D<class_SpotLight3D>`
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_CLUSTER_DECALS** = ``22``
 
-Dibuja el clúster utilizado por los nodos :ref:`Decal<class_Decal>` para optimizar el renderizado de calcomanías.
+Dibuja el clúster utilizado por los nodos :ref:`Decal<class_Decal>` para optimizar el renderizado de decals.
 
 \ **Nota:** Solo es compatible cuando se utiliza el método de renderizado Forward+.
 
@@ -973,9 +973,9 @@ The texture filter blends between the nearest 4 pixels. This makes the texture l
 
 :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS** = ``2``
 
-The texture filter blends between the nearest 4 pixels and between the nearest 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``). This makes the texture look smooth from up close, and smooth from a distance.
+El filtro de textura mezcla entre los 4 píxeles más cercanos y entre los 2 mipmaps más cercanos (o usa el mipmap más cercano si :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` es ``true``). Esto hace que la textura se vea suave de cerca y suave de lejos.
 
-Use this for non-pixel art textures that may be viewed at a low scale (e.g. due to :ref:`Camera2D<class_Camera2D>` zoom or sprite scaling), as mipmaps are important to smooth out pixels that are smaller than on-screen pixels.
+Úsalo para texturas que no son de arte de píxeles y que pueden verse a baja escala (por ejemplo, debido al zoom de :ref:`Camera2D<class_Camera2D>` o al escalado de sprites), ya que los mipmaps son importantes para suavizar los píxeles que son más pequeños que los píxeles en pantalla.
 
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS:
 
@@ -983,9 +983,9 @@ Use this for non-pixel art textures that may be viewed at a low scale (e.g. due 
 
 :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS** = ``3``
 
-The texture filter reads from the nearest pixel and blends between the nearest 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``). This makes the texture look pixelated from up close, and smooth from a distance.
+El filtro de textura lee del píxel más cercano y mezcla entre los 2 mipmaps más cercanos (o usa el mipmap más cercano si :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` es ``true``). Esto hace que la textura se vea pixelada de cerca y suave de lejos.
 
-Use this for non-pixel art textures that may be viewed at a low scale (e.g. due to :ref:`Camera2D<class_Camera2D>` zoom or sprite scaling), as mipmaps are important to smooth out pixels that are smaller than on-screen pixels.
+Úsalo para texturas que no son de arte de píxeles y que pueden verse a baja escala (por ejemplo, debido al zoom de :ref:`Camera2D<class_Camera2D>` o al escalado de sprites), ya que los mipmaps son importantes para suavizar los píxeles que son más pequeños que los píxeles en pantalla.
 
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_MAX:
 
@@ -2007,7 +2007,7 @@ Practically speaking, this means that the end result of the Viewport will not be
 
 Si es ``true``, los nodos :ref:`OccluderInstance3D<class_OccluderInstance3D>` se podrán utilizar para el culling por oclusión en 3D para este viewport. Para el viewport raíz, en su lugar se debe establecer :ref:`ProjectSettings.rendering/occlusion_culling/use_occlusion_culling<class_ProjectSettings_property_rendering/occlusion_culling/use_occlusion_culling>` a ``true``.
 
-\ **Nota:** Activar el culling por oclusión tiene un coste en la CPU. Sólo activa el culling por oclusión si realmente planeas usarlo, y piensa si tu escena puede realmente beneficiarse del culling por oclusión. Las escenas grandes y abiertas con pocos o ningún objeto que bloquee la vista generalmente no se benefician mucho del culling por oclusión. Las escenas grandes y abiertas generalmente se benefician más del LOD de la malla y los rangos de visibilidad (:ref:`GeometryInstance3D.visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>` y :ref:`GeometryInstance3D.visibility_range_end<class_GeometryInstance3D_property_visibility_range_end>`) en comparación con el culling por oclusión.
+\ **Nota:** Activar el culling por oclusión tiene un coste en la CPU. Solo activa el culling por oclusión si realmente planeas usarlo, y piensa si tu escena puede realmente beneficiarse del culling por oclusión. Las escenas grandes y abiertas con pocos o ningún objeto que bloquee la vista generalmente no se benefician mucho del culling por oclusión. Las escenas grandes y abiertas generalmente se benefician más del LOD de la malla y los rangos de visibilidad (:ref:`GeometryInstance3D.visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>` y :ref:`GeometryInstance3D.visibility_range_end<class_GeometryInstance3D_property_visibility_range_end>`) en comparación con el culling por oclusión.
 
 \ **Nota:** Debido a las limitaciones de memoria, el culling por oclusión no es compatible por defecto en las plantillas de exportación Web. Se puede activar compilando plantillas de exportación Web personalizadas con ``module_raycast_enabled=yes``.
 

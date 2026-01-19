@@ -23,7 +23,7 @@ JavaScriptBridge
 Посібники
 ------------------
 
-- :doc:`The JavaScriptBridge singleton <../tutorials/platform/web/javascript_bridge>`
+- :doc:`Синглтон JavaScriptBridge <../tutorials/platform/web/javascript_bridge>`
 
 .. rst-class:: classref-reftable-group
 

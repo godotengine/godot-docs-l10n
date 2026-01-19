@@ -852,9 +852,9 @@ enum **SystemMenus**: :ref:`🔗<enum_NativeMenu_SystemMenus>`
 
 :ref:`String<class_String>` **get_system_menu_text**\ (\ menu_id\: :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_system_menu_text>`
 
-Returns the text of the system menu item.
+Возвращает текст пункта системного меню.
 
-\ **Note:** This method is implemented on macOS.
+\ **Примечание:** Этот метод реализован в macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1348,9 +1348,9 @@ Returns the text of the system menu item.
 
 |void| **set_system_menu_text**\ (\ menu_id\: :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_NativeMenu_method_set_system_menu_text>`
 
-Sets the text of the system menu item.
+Устанавливает текст пункта системного меню.
 
-\ **Note:** This method is implemented on macOS.
+\ **Примечание:** Этот метод реализован в macOS.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

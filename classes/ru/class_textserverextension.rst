@@ -1367,7 +1367,7 @@ TextServerExtension
 
 :ref:`bool<class_bool>` **_font_is_language_supported**\ (\ font_rid\: :ref:`RID<class_RID>`, language\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_is_language_supported>`
 
-Returns ``true`` if the font supports the given language (as a `ISO 639 <https://en.wikipedia.org/wiki/ISO_639-1>`__ code).
+Возвращает ``true``, если шрифт поддерживает указанный язык (в виде `кода ISO 639 <https://en.wikipedia.org/wiki/ISO_639-1>`__).
 
 .. rst-class:: classref-item-separator
 
@@ -1403,7 +1403,7 @@ Returns ``true`` if color modulation is applied when drawing the font's colored 
 
 :ref:`bool<class_bool>` **_font_is_script_supported**\ (\ font_rid\: :ref:`RID<class_RID>`, script\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_is_script_supported>`
 
-Returns ``true`` if the font supports the given script (as a `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`__ code).
+Возвращает ``true``, если шрифт поддерживает указанный шрифт (в виде `кода ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`__).
 
 .. rst-class:: classref-item-separator
 
@@ -2315,7 +2315,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 **Устарело:** Use :ref:`TranslationServer.get_percent_sign()<class_TranslationServer_method_get_percent_sign>` instead.
 
-Returns percent sign used in the given ``language``.
+Возвращает знак процента, используемый в заданном языке ``language``.
 
 .. rst-class:: classref-item-separator
 
@@ -3371,7 +3371,7 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 :ref:`String<class_String>` **_string_to_title**\ (\ string\: :ref:`String<class_String>`, language\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__string_to_title>`
 
-Returns the string converted to ``Title Case``.
+Возвращает строку, преобразованную в формат ``Title Case``.
 
 .. rst-class:: classref-item-separator
 

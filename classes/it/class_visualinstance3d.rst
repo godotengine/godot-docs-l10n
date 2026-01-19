@@ -26,13 +26,13 @@ Proprietà
 .. table::
    :widths: auto
 
-   +---------------------------+-----------------------------------------------------------------------------------------+-------+
-   | :ref:`int<class_int>`     | :ref:`layers<class_VisualInstance3D_property_layers>`                                   | ``1`` |
-   +---------------------------+-----------------------------------------------------------------------------------------+-------+
-   | :ref:`float<class_float>` | :ref:`sorting_offset<class_VisualInstance3D_property_sorting_offset>`                   |       |
-   +---------------------------+-----------------------------------------------------------------------------------------+-------+
-   | :ref:`bool<class_bool>`   | :ref:`sorting_use_aabb_center<class_VisualInstance3D_property_sorting_use_aabb_center>` |       |
-   +---------------------------+-----------------------------------------------------------------------------------------+-------+
+   +---------------------------+-----------------------------------------------------------------------------------------+---------+
+   | :ref:`int<class_int>`     | :ref:`layers<class_VisualInstance3D_property_layers>`                                   | ``1``   |
+   +---------------------------+-----------------------------------------------------------------------------------------+---------+
+   | :ref:`float<class_float>` | :ref:`sorting_offset<class_VisualInstance3D_property_sorting_offset>`                   | ``0.0`` |
+   +---------------------------+-----------------------------------------------------------------------------------------+---------+
+   | :ref:`bool<class_bool>`   | :ref:`sorting_use_aabb_center<class_VisualInstance3D_property_sorting_use_aabb_center>` |         |
+   +---------------------------+-----------------------------------------------------------------------------------------+---------+
 
 .. rst-class:: classref-reftable-group
 
@@ -96,7 +96,7 @@ Per regolare più facilmente i :ref:`layers<class_VisualInstance3D_property_laye
 
 .. rst-class:: classref-property
 
-:ref:`float<class_float>` **sorting_offset** :ref:`🔗<class_VisualInstance3D_property_sorting_offset>`
+:ref:`float<class_float>` **sorting_offset** = ``0.0`` :ref:`🔗<class_VisualInstance3D_property_sorting_offset>`
 
 .. rst-class:: classref-property-setget
 

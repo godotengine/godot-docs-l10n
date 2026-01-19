@@ -216,7 +216,9 @@ enum **PlayMode**: :ref:`🔗<enum_AnimationNodeAnimation_PlayMode>`
 - |void| **set_timeline_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_timeline_length**\ (\ )
 
-Якщо :ref:`use_custom_timeline<class_AnimationNodeAnimation_property_use_custom_timeline>` має значення ``true``, зсув початкової позиції анімації.
+Тривалість користувацької часової шкали.
+
+Якщо :ref:`stretch_time_scale<class_AnimationNodeAnimation_property_stretch_time_scale>` має значення ``true``, масштабує анімацію до цієї довжини.
 
 .. rst-class:: classref-item-separator
 

@@ -377,7 +377,7 @@ Returns the number of devices (or other options) available in the one-click depl
 
 :ref:`String<class_String>` **_get_options_tooltip**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_options_tooltip>`
 
-Returns tooltip of the one-click deploy menu button.
+Retourne l'info-bulle bouton de menu du déploiement en un clic.
 
 .. rst-class:: classref-item-separator
 

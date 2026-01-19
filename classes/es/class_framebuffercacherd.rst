@@ -14,7 +14,7 @@ Administrador de caché de framebuffer para renderizadores basados en el Disposi
 Descripción
 ----------------------
 
-Administrador de caché de framebuffer para renderizadores basados en el Dispositivo de Renderizado. Proporciona una forma de crear un framebuffer y reutilizarlo en llamadas posteriores mientras existan las texturas utilizadas. Los framebuffers se limpiarán automáticamente cuando se liberen los objetos dependientes.
+Framebuffer cache manager for :ref:`RenderingDevice<class_RenderingDevice>`-based renderers. Provides a way to create a framebuffer and reuse it in subsequent calls for as long as the used textures exists. Framebuffers will automatically be cleaned up when dependent objects are freed.
 
 .. rst-class:: classref-reftable-group
 

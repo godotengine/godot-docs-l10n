@@ -7,18 +7,16 @@ RenderDataRD
 
 **Hereda:** :ref:`RenderData<class_RenderData>` **<** :ref:`Object<class_Object>`
 
-Implementación de datos de renderizado para los renderizadores basados en RenderingDevice.
-
-\ **Nota:** Este es un objeto interno del servidor de renderizado, no lo instancies desde el script.
+Render data implementation for the RenderingDevice based renderers.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Este objeto gestiona todos los datos de renderizado para los renderizadores basados en el dispositivo de renderizado.
+This object manages all render data for the :ref:`RenderingDevice<class_RenderingDevice>`-based renderers. See also :ref:`RenderData<class_RenderData>`, :ref:`RenderSceneData<class_RenderSceneData>`, and :ref:`RenderSceneDataRD<class_RenderSceneDataRD>`.
 
-\ **Nota:** Este es un objeto interno del servidor de renderizado que solo se expone para los plugins GDExtension.
+\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -628,9 +628,9 @@
 
 **@export_multiline**\ (\ hint\: :ref:`String<class_String>` = "", ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_multiline>`
 
-Export a :ref:`String<class_String>`, :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], :ref:`PackedStringArray<class_PackedStringArray>`, :ref:`Dictionary<class_Dictionary>` or :ref:`Array<class_Array>`\ \[:ref:`Dictionary<class_Dictionary>`\ \] property with a large :ref:`TextEdit<class_TextEdit>` widget instead of a :ref:`LineEdit<class_LineEdit>`. This adds support for multiline content and makes it easier to edit large amount of text stored in the property.
+代替普通的 :ref:`LineEdit<class_LineEdit>` 组件，并使用较大的 :ref:`TextEdit<class_TextEdit>` 组件来导出 :ref:`String<class_String>`\ 、\ :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \]、\ :ref:`PackedStringArray<class_PackedStringArray>`\ 、\ :ref:`Dictionary<class_Dictionary>` 或 :ref:`Array<class_Array>`\ \[:ref:`Dictionary<class_Dictionary>`\ \] 属性，这样就能够支持编辑多行内容，便于在编辑属性中存储大量文本。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_MULTILINE_TEXT<class_@GlobalScope_constant_PROPERTY_HINT_MULTILINE_TEXT>`.
+另见 :ref:`@GlobalScope.PROPERTY_HINT_MULTILINE_TEXT<class_@GlobalScope_constant_PROPERTY_HINT_MULTILINE_TEXT>`\ 。
 
 ::
 
@@ -860,19 +860,19 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROP
 
 .. rst-class:: classref-annotation
 
-**@rpc**\ (\ mode\: :ref:`String<class_String>` = "authority", sync\: :ref:`String<class_String>` = "call_remote", transfer_mode\: :ref:`String<class_String>` = "unreliable", transfer_channel\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_@GDScript_annotation_@rpc>`
+**@rpc**\ (\ mode\: :ref:`String<class_String>` = "authority", sync\: :ref:`String<class_String>` = "call_remote", transfer_mode\: :ref:`String<class_String>` = "reliable", transfer_channel\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_@GDScript_annotation_@rpc>`
 
-将后续方法标记为远程过程调用。见\ :doc:`《高阶多人游戏》 <../tutorials/networking/high_level_multiplayer>`\ 。
+Mark the following method for remote procedure calls. See :doc:`High-level multiplayer <../tutorials/networking/high_level_multiplayer>`.
 
-如果将 ``mode`` 提示设为 ``"any_peer"``\ ，则会允许所有对等体调用该 RPC 函数。若只允许该对等体的控制方调用，则应该让 ``mode`` 提示保持为 ``"authority"``\ 。使用 :ref:`Node.rpc_config()<class_Node_method_rpc_config>` 将函数配置为 RPC 时，这些模式分别对应的是 RPC 模式 :ref:`MultiplayerAPI.RPC_MODE_ANY_PEER<class_MultiplayerAPI_constant_RPC_MODE_ANY_PEER>` 和 :ref:`MultiplayerAPI.RPC_MODE_AUTHORITY<class_MultiplayerAPI_constant_RPC_MODE_AUTHORITY>` 。如果非控制方的对等体尝试调用仅限控制方调用的函数，则不会执行该函数，且如果本地能够检测到错误（本地与远程对等体的 RPC 配置一致），则发送方对等体会显示错误消息，否则该对等体会检测到该错误并将其输出。
+If ``mode`` is set as ``"any_peer"``, allows any peer to call this RPC function. Otherwise, only the authority peer is allowed to call it and ``mode`` should be kept as ``"authority"``. When configuring functions as RPCs with :ref:`Node.rpc_config()<class_Node_method_rpc_config>`, each of these modes respectively corresponds to the :ref:`MultiplayerAPI.RPC_MODE_AUTHORITY<class_MultiplayerAPI_constant_RPC_MODE_AUTHORITY>` and :ref:`MultiplayerAPI.RPC_MODE_ANY_PEER<class_MultiplayerAPI_constant_RPC_MODE_ANY_PEER>` RPC modes. See :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>`. If a peer that is not the authority tries to call a function that is only allowed for the authority, the function will not be executed. If the error can be detected locally (when the RPC configuration is consistent between the local and the remote peer), an error message will be displayed on the sender peer. Otherwise, the remote peer will detect the error and print an error there.
 
-如果将 ``sync`` 提示设为 ``"call_remote"``\ ，则该函数只会在远程对等体上执行，不会在本地执行。要让这个函数在本地也能够执行，请将 ``sync`` 设置为 ``"call_local"``\ ，使用 :ref:`Node.rpc_config()<class_Node_method_rpc_config>` 将函数配置为 RPC 时，等价于将 ``call_local`` 设置为 ``true``\ 。
+If ``sync`` is set as ``"call_remote"``, the function will only be executed on the remote peer, but not locally. To run this function locally too, set ``sync`` to ``"call_local"``. When configuring functions as RPCs with :ref:`Node.rpc_config()<class_Node_method_rpc_config>`, this is equivalent to setting ``call_local`` to ``true``.
 
-\ ``transfer_mode`` 提示能够接受的值为 ``"unreliable"``\ 、\ ``"unreliable_ordered"``\ 、\ ``"reliable"``\ ，会设置底层 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 的传输模式。见 :ref:`MultiplayerPeer.transfer_mode<class_MultiplayerPeer_property_transfer_mode>`\ 。
+The ``transfer_mode`` accepted values are ``"unreliable"``, ``"unreliable_ordered"``, or ``"reliable"``. It sets the transfer mode of the underlying :ref:`MultiplayerPeer<class_MultiplayerPeer>`. See :ref:`MultiplayerPeer.transfer_mode<class_MultiplayerPeer_property_transfer_mode>`.
 
-\ ``transfer_channel`` 定义的是底层 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 的通道。见 :ref:`MultiplayerPeer.transfer_channel<class_MultiplayerPeer_property_transfer_channel>`\ 。
+The ``transfer_channel`` defines the channel of the underlying :ref:`MultiplayerPeer<class_MultiplayerPeer>`. See :ref:`MultiplayerPeer.transfer_channel<class_MultiplayerPeer_property_transfer_channel>`.
 
-\ ``mode``\ 、\ ``sync`` 和 ``transfer_mode`` 的顺序是无关的，但是相同参数的取值不能出现多次。\ ``transfer_channel`` 必须始终为第四个参数（同时前三个参数也必须指定）。
+The order of ``mode``, ``sync`` and ``transfer_mode`` does not matter, but values related to the same argument must not be used more than once. ``transfer_channel`` always has to be the 4th argument (you must specify 3 preceding arguments).
 
 ::
 
@@ -882,10 +882,10 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROP
     @rpc("any_peer", "unreliable_ordered")
     func fn_update_pos(): pass
 
-    @rpc("authority", "call_remote", "unreliable", 0) # 等价于 @rpc
+    @rpc("authority", "call_remote", "reliable", 0) # Equivalent to @rpc
     func fn_default(): pass
 
-\ **注意：**\ 使用 :ref:`@rpc<class_@GDScript_annotation_@rpc>` 注解的方法无法接收在 :ref:`Object._init()<class_Object_private_method__init>` 中定义了必要参数的对象。更多详情，请参阅 :ref:`Object._init()<class_Object_private_method__init>`\ 。
+\ **Note:** Methods annotated with :ref:`@rpc<class_@GDScript_annotation_@rpc>` cannot receive objects which define required parameters in :ref:`Object._init()<class_Object_private_method__init>`. See :ref:`Object._init()<class_Object_private_method__init>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -1123,9 +1123,9 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROP
 
     [{function:bar, line:12, source:res://script.gd}, {function:foo, line:9, source:res://script.gd}, {function:_ready, line:6, source:res://script.gd}]
 
-参见 :ref:`print_debug()<class_@GDScript_method_print_debug>`\ ，\ :ref:`print_stack()<class_@GDScript_method_print_stack>` 和 :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>`\ 。
+另见 :ref:`print_debug()<class_@GDScript_method_print_debug>`\ ，\ :ref:`print_stack()<class_@GDScript_method_print_stack>` 和 :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>`\ 。
 
-\ **注意：** 默认情况下，调用堆栈跟踪仅在编辑器构建和调试构建中可用。若要为发布构建启用该功能，您需要启用 :ref:`ProjectSettings.debug/settings/gdscript/always_track_call_stacks<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`\ 。
+\ **注意：** 默认情况下，调用堆栈跟踪仅在编辑器构建和调试构建中可用。若要为发布构建启用该功能，你需要启用 :ref:`ProjectSettings.debug/settings/gdscript/always_track_call_stacks<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1290,18 +1290,18 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROP
 
 |void| **print_debug**\ (\ ...\ ) |vararg| :ref:`🔗<class_@GDScript_method_print_debug>`
 
-与 :ref:`@GlobalScope.print()<class_@GlobalScope_method_print>` 类似，但在打开调试器运行时还会包含当前栈帧。
+与 :ref:`@GlobalScope.print()<class_@GlobalScope_method_print>` 类似，但在启用调试器运行时还会包含当前栈帧。
 
-控制台中的输出应该是类似这样的：
+控制台输出可能如下：
 
 .. code:: text
 
     Test print
     At: res://test.gd:15:_process()
 
-参见 :ref:`print_stack()<class_@GDScript_method_print_stack>`\ ，\ :ref:`get_stack()<class_@GDScript_method_get_stack>` 和 :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>`\ 。
+另见 :ref:`print_stack()<class_@GDScript_method_print_stack>`\ ，\ :ref:`get_stack()<class_@GDScript_method_get_stack>` 和 :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>`\ 。
 
-\ **注意：** 默认情况下，调用堆栈仅在编辑器构建和调试构建中可用。若要使其在发布构建中也可用，您需要启用 :ref:`ProjectSettings.debug/settings/gdscript/always_track_call_stacks<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`\ 。
+\ **注意：** 默认情况下，调用堆栈仅在编辑器构建和调试构建中可用。若要为发布构建启用该功能，你需要启用 :ref:`ProjectSettings.debug/settings/gdscript/always_track_call_stacks<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`\ 。
 
 .. rst-class:: classref-item-separator
 

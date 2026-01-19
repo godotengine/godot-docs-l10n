@@ -1902,6 +1902,8 @@ ProjectSettings
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`xr/openxr/submit_depth_buffer<class_ProjectSettings_property_xr/openxr/submit_depth_buffer>`                                                                                                         | ``false``                                                                                        |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`xr/openxr/target_api_version<class_ProjectSettings_property_xr/openxr/target_api_version>`                                                                                                           | ``""``                                                                                           |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`xr/openxr/view_configuration<class_ProjectSettings_property_xr/openxr/view_configuration>`                                                                                                           | ``"1"``                                                                                          |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`xr/shaders/enabled<class_ProjectSettings_property_xr/shaders/enabled>`                                                                                                                               | ``false``                                                                                        |
@@ -5723,9 +5725,9 @@ MSDF 字形算繪可以與 :ref:`gui/theme/default_font_generate_mipmaps<class_P
 
 :ref:`float<class_float>` **gui/theme/default_theme_scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_gui/theme/default_theme_scale>`
 
-:ref:`Theme<class_Theme>` 中沒有覆蓋縮放係數時，\ :ref:`Control<class_Control>` 的預設縮放係數。
+The default scale factor for :ref:`Control<class_Control>`\ s, when not overridden by a :ref:`Theme<class_Theme>`.
 
-\ **注意：**\ 這個屬性只在專案啟動時讀取。要在運作時改變預設縮放，請改為設定 :ref:`ThemeDB.fallback_base_scale<class_ThemeDB_property_fallback_base_scale>`\ 。
+\ **Note:** This property is only read when the project starts. To change the default theme scale at runtime, set :ref:`ThemeDB.fallback_base_scale<class_ThemeDB_property_fallback_base_scale>` instead. However, to adjust the scale of all 2D elements at runtime, it's preferable to use :ref:`Window.content_scale_factor<class_Window_property_content_scale_factor>` on the root :ref:`Window<class_Window>` node instead (as this also affects overridden :ref:`Theme<class_Theme>`\ s). See :doc:`Multiple resolutions <../tutorials/rendering/multiple_resolutions>` in the documentation for details.
 
 .. rst-class:: classref-item-separator
 
@@ -10905,11 +10907,17 @@ Controls how much physics ticks are synchronized with real time. For 0 or less, 
 
 :ref:`int<class_int>` **physics/common/physics_ticks_per_second** = ``60`` :ref:`🔗<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`
 
-每秒執行的固定反覆運算次數。用於控制物理模擬和 :ref:`Node._physics_process()<class_Node_private_method__physics_process>` 的執行頻率。另見 :ref:`application/run/max_fps<class_ProjectSettings_property_application/run/max_fps>`\ 。
+The number of fixed iterations per second. This controls how often physics simulation and the :ref:`Node._physics_process()<class_Node_private_method__physics_process>` method are run.
 
-\ **注意：**\ 這個屬性只在專案啟動時讀取。要在運作時改變物理 FPS，請改為設定 :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`\ 。
+CPU usage scales approximately with the physics tick rate. However, at very low tick rates (usually below 30), physics behavior can break down. Input can also become less responsive at low tick rates as there can be a gap between input being registered, and the response on the next physics tick. High tick rates give more accurate physics simulation, particularly for fast moving objects. For example, racing games may benefit from increasing the tick rate above the default 60.
 
-\ **注意：**\ 每個算繪影格最多只能模擬 :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` 個物理週期。如果為了追趕算繪，需要在每個算繪影格中類比更多物理週期，遊戲看上去會是降速的（即便在物理計算中始終使用 ``delta``\ ）。因此，如果增大了 :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`\ ，而且遠大於預設值，那麼建議將 :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` 也調大。
+See also :ref:`application/run/max_fps<class_ProjectSettings_property_application/run/max_fps>`.
+
+\ **Note:** This property is only read when the project starts. To change the physics FPS at runtime, set :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` instead.
+
+\ **Note:** Only :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` physics ticks may be simulated per rendered frame at most. If more physics ticks have to be simulated per rendered frame to keep up with rendering, the project will appear to slow down (even if ``delta`` is used consistently in physics calculations). Therefore, it is recommended to also increase :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` if increasing :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` significantly above its default value.
+
+\ **Note:** Consider enabling :doc:`physics interpolation <../tutorials/physics/interpolation/index>` if you change :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` to a value that is not a multiple of ``60``. Using physics interpolation will avoid jittering when the monitor refresh rate and physics update rate don't exactly match.
 
 .. rst-class:: classref-item-separator
 
@@ -14229,6 +14237,18 @@ Applied foveation level if supported.
 :ref:`bool<class_bool>` **xr/openxr/submit_depth_buffer** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/submit_depth_buffer>`
 
 如果為 ``true``\ ，則 OpenXR 會管理深度緩衝區，使用深度緩衝區進行高級再投影，前提是 XR 運作時支援。請注意，Godot 中的部分算繪功能無法與該功能一同使用。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ProjectSettings_property_xr/openxr/target_api_version:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **xr/openxr/target_api_version** = ``""`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/target_api_version>`
+
+Optionally sets a specific API version of OpenXR to initialize in ``major.minor.patch`` notation. Some XR runtimes gate old behavior behind version checks. This is non-standard OpenXR behavior.
 
 .. rst-class:: classref-item-separator
 

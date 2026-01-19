@@ -380,11 +380,13 @@ Note that this function is hidden in the default **AStar3D** class.
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_id_path**\ (\ from_id\: :ref:`int<class_int>`, to_id\: :ref:`int<class_int>`, allow_partial_path\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AStar3D_method_get_id_path>`
 
-返回一個陣列，包含 AStar3D 在給定兩點之間找到的路徑上各點的 ID。陣列按起點到終點排序。
+Returns an array with the IDs of the points that form the path found by AStar3D between the given points. The array is ordered from the starting point to the ending point of the path.
 
-若不存在通往目標的有效路徑且 ``allow_partial_path`` 為 ``true``\ ，則會回傳通往最接近目標且可到達之點的路徑。
+If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
 
-\ **注意：**\ 當 ``allow_partial_path`` 為 ``true`` 且 ``to_id`` 已被停用時，搜尋可能需要異常長的時間才能完成。
+If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
+
+\ **Note:** When ``allow_partial_path`` is ``true`` and ``to_id`` is disabled the search may take an unusually long time to finish.
 
 
 .. tabs::
@@ -393,7 +395,7 @@ Note that this function is hidden in the default **AStar3D** class.
 
     var astar = AStar3D.new()
     astar.add_point(1, Vector3(0, 0, 0))
-    astar.add_point(2, Vector3(0, 1, 0), 1) # 預設權重為 1
+    astar.add_point(2, Vector3(0, 1, 0), 1) # Default weight is 1
     astar.add_point(3, Vector3(1, 1, 0))
     astar.add_point(4, Vector3(2, 0, 0))
 
@@ -402,24 +404,24 @@ Note that this function is hidden in the default **AStar3D** class.
     astar.connect_points(4, 3, false)
     astar.connect_points(1, 4, false)
 
-    var res = astar.get_id_path(1, 3) # 回傳 [1, 2, 3]
+    var res = astar.get_id_path(1, 3) # Returns [1, 2, 3]
 
  .. code-tab:: csharp
 
     var astar = new AStar3D();
     astar.AddPoint(1, new Vector3(0, 0, 0));
-    astar.AddPoint(2, new Vector3(0, 1, 0), 1); // 預設權重為 1
+    astar.AddPoint(2, new Vector3(0, 1, 0), 1); // Default weight is 1
     astar.AddPoint(3, new Vector3(1, 1, 0));
     astar.AddPoint(4, new Vector3(2, 0, 0));
     astar.ConnectPoints(1, 2, false);
     astar.ConnectPoints(2, 3, false);
     astar.ConnectPoints(4, 3, false);
     astar.ConnectPoints(1, 4, false);
-    long[] res = astar.GetIdPath(1, 3); // 回傳 [1, 2, 3]
+    long[] res = astar.GetIdPath(1, 3); // Returns [1, 2, 3]
 
 
 
-若將第 2 個點的權重改為 3，則結果會變為 ``[1, 4, 3]``\ ，因為即便距離較長，透過點 4 的「成本」仍低於透過點 2。
+If you change the 2nd point's weight to 3, then the result will be ``[1, 4, 3]`` instead, because now even though the distance is longer, it's "easier" to get through point 4 than through point 2.
 
 .. rst-class:: classref-item-separator
 
@@ -511,7 +513,9 @@ Note that this function is hidden in the default **AStar3D** class.
 
 Returns an array with the points that are in the path found by AStar3D between the given points. The array is ordered from the starting point to the ending point of the path.
 
-If there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
+If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
+
+If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
 
 \ **Note:** This method is not thread-safe; it can only be used from a single :ref:`Thread<class_Thread>` at a given time. Consider using :ref:`Mutex<class_Mutex>` to ensure exclusive access to one thread to avoid race conditions.
 

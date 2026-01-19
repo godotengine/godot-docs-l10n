@@ -14,13 +14,13 @@ Implementación del búfer de escena de renderizado para los renderizadores basa
 Descripción
 ----------------------
 
-Este objeto gestiona todos los búferes de renderizado 3D para los renderizadores basados en dispositivos de renderizado. Se crea una instancia de este objeto por cada viewport que tenga habilitado el renderizado 3D.
+This object manages all 3D rendering buffers for the rendering device based renderers. An instance of this object is created for every viewport that has 3D rendering enabled. See also :ref:`RenderSceneBuffers<class_RenderSceneBuffers>`.
 
-Todos los búferes se organizan en **contextos**. El contexto por defecto se llama **render_buffers** y puede contener, entre otros, el búfer de color, el búfer de profundidad, los búferes de velocidad, el mapa de densidad VRS y las variantes MSAA de estos búferes.
+All buffers are organized in **contexts**. The default context is called **render_buffers** and can contain amongst others the color buffer, depth buffer, velocity buffers, VRS density map and MSAA variants of these buffers.
 
-Solo se garantiza la existencia de los búferes durante el renderizado del viewport.
+Buffers are only guaranteed to exist during rendering of the viewport.
 
-\ **Nota:** Este es un objeto interno del servidor de renderizado, no lo instancies desde un script.
+\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
 
 .. rst-class:: classref-reftable-group
 

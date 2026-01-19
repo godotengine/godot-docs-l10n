@@ -112,7 +112,7 @@ La geometría de ambas primitivas se fusiona, la geometría que se interseca se 
 
 :ref:`Operation<enum_CSGShape3D_Operation>` **OPERATION_INTERSECTION** = ``1``
 
-Sólo queda la geometría de intersección, el resto se elimina.
+Solo queda la geometría de intersección, el resto se elimina.
 
 .. _class_CSGShape3D_constant_OPERATION_SUBTRACTION:
 

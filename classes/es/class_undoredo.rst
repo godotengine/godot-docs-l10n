@@ -225,7 +225,7 @@ Hace que las operaciones de "hacer"/"deshacer" se mantengan en acciones separada
 
 :ref:`MergeMode<enum_UndoRedo_MergeMode>` **MERGE_ENDS** = ``1``
 
-Merges this action with the previous one if they have the same name. Keeps only the first action's "undo" operations and the last action's "do" operations. Useful for sequential changes to a single value.
+Fusiona esta acción con la anterior si tienen el mismo nombre. Mantiene solo las operaciones "deshacer" de la primera acción y las operaciones "rehacer" de la última acción. Útil para cambios secuenciales a un único valor.
 
 .. _class_UndoRedo_constant_MERGE_ALL:
 
@@ -233,7 +233,7 @@ Merges this action with the previous one if they have the same name. Keeps only 
 
 :ref:`MergeMode<enum_UndoRedo_MergeMode>` **MERGE_ALL** = ``2``
 
-Merges this action with the previous one if they have the same name.
+Fusiona esta acción con la anterior si tienen el mismo nombre.
 
 .. rst-class:: classref-section-separator
 
@@ -255,7 +255,7 @@ Descripciones de Propiedades
 - |void| **set_max_steps**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_steps**\ (\ )
 
-The maximum number of steps that can be stored in the undo/redo history. If the number of stored steps exceeds this limit, older steps are removed from history and can no longer be reached by calling :ref:`undo()<class_UndoRedo_method_undo>`. A value of ``0`` or lower means no limit.
+El número máximo de pasos que se pueden almacenar en el historial de deshacer/rehacer. Si el número de pasos almacenados excede este límite, los pasos más antiguos se eliminan del historial y ya no se pueden alcanzar llamando a :ref:`undo()<class_UndoRedo_method_undo>`. Un valor de ``0`` o inferior significa que no hay límite.
 
 .. rst-class:: classref-section-separator
 

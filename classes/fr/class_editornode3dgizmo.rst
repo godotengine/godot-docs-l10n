@@ -135,9 +135,9 @@ If the ``cancel`` argument is ``true``, the ``restores`` transforms should be di
 
 :ref:`String<class_String>` **_get_handle_name**\ (\ id\: :ref:`int<class_int>`, secondary\: :ref:`bool<class_bool>`\ ) |virtual| |const| :ref:`🔗<class_EditorNode3DGizmo_private_method__get_handle_name>`
 
-Override this method to return the name of an edited handle (handles must have been previously added by :ref:`add_handles()<class_EditorNode3DGizmo_method_add_handles>`). Handles can be named for reference to the user when editing.
+Surcharger cette méthode pour retourner le nom d'un gestionnaire édité (les gestionnaires doivent avoir été ajoutés précédemment par ``méthode add_handles``). Les gestionnaires peuvent être nommés pour référence à l'utilisateur lors de l'édition.
 
-The ``secondary`` argument is ``true`` when the requested handle is secondary (see :ref:`add_handles()<class_EditorNode3DGizmo_method_add_handles>` for more information).
+L'argument ``secondary`` vaut ``true`` lorsque le gestionnaire demandé est secondaire (voir :ref:`add_handles()<class_EditorNode3DGizmo_method_add_handles>` pour plus d'informations).
 
 .. rst-class:: classref-item-separator
 
@@ -251,7 +251,7 @@ Override this method to allow selecting subgizmos using mouse clicks. Given a ``
 
 |void| **add_collision_segments**\ (\ segments\: :ref:`PackedVector3Array<class_PackedVector3Array>`\ ) :ref:`🔗<class_EditorNode3DGizmo_method_add_collision_segments>`
 
-Adds the specified ``segments`` to the gizmo's collision shape for picking. Call this method during :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>`.
+Ajoute les ``segments`` spécifiés à la forme de collision du manipulateur pour le ramassage. Appelez cette méthode pendant ``méthode _redraw``.
 
 .. rst-class:: classref-item-separator
 
@@ -399,7 +399,7 @@ Définit le mode caché du manipulateur. Si ``true``, le manipulateur sera cach�
 
 |void| **set_node_3d**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_EditorNode3DGizmo_method_set_node_3d>`
 
-Sets the reference :ref:`Node3D<class_Node3D>` node for the gizmo. ``node`` must inherit from :ref:`Node3D<class_Node3D>`.
+Définit le nœud de référence :ref:`Node3D<class_Node3D>` pour le manipulateur. ``node`` doit hériter de :ref:`Node3D<class_Node3D>`.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

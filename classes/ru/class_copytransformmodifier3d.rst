@@ -14,27 +14,27 @@ CopyTransformModifier3D
 Описание
 ----------------
 
-Apply the copied transform of the bone set by :ref:`BoneConstraint3D.set_reference_bone()<class_BoneConstraint3D_method_set_reference_bone>` to the bone set by :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` with processing it with some masks and options.
+Примените скопированное преобразование набора костей, полученное методом :ref:`BoneConstraint3D.set_reference_bone()<class_BoneConstraint3D_method_set_reference_bone>`, к набору костей, полученному методом :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>`, обработав его с помощью масок и параметров.
 
-There are 4 ways to apply the transform, depending on the combination of :ref:`set_relative()<class_CopyTransformModifier3D_method_set_relative>` and :ref:`set_additive()<class_CopyTransformModifier3D_method_set_additive>`.
+Существует 4 способа применения преобразования, в зависимости от комбинации :ref:`set_relative()<class_CopyTransformModifier3D_method_set_relative>` и :ref:`set_additive()<class_CopyTransformModifier3D_method_set_additive>`.
 
-\ **Relative + Additive:**\ 
+\ **Относительное + Аддитивное:**\ 
 
-- Extract reference pose relative to the rest and add it to the apply bone's pose.
+- Извлеките опорную позу относительно остальных и добавьте её к позе применяемой кости.
 
-\ **Relative + Not Additive:**\ 
+\ **Относительное + Неаддитивное:**\ 
 
-- Extract reference pose relative to the rest and add it to the apply bone's rest.
+- Извлеките опорную позу относительно остальных и добавьте её к позе применяемой кости.
 
-\ **Not Relative + Additive:**\ 
+\ **Неотносительное + Аддитивное:**\ 
 
-- Extract reference pose absolutely and add it to the apply bone's pose.
+- Извлеките опорную позу абсолютно и добавьте её к позе применяемой кости.
 
-\ **Not Relative + Not Additive:**\ 
+\ **Не относительная + Не аддитивная:**\ 
 
-- Extract reference pose absolutely and the apply bone's pose is replaced with it.
+- Извлекаем эталонную позу абсолютно, и поза применяемой кости заменяется ею.
 
-\ **Note:** Relative option is available only in the case :ref:`BoneConstraint3D.get_reference_type()<class_BoneConstraint3D_method_get_reference_type>` is :ref:`BoneConstraint3D.REFERENCE_TYPE_BONE<class_BoneConstraint3D_constant_REFERENCE_TYPE_BONE>`. See also :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
+\ **Примечание:** Опция «Относительная» доступна только в том случае, если :ref:`BoneConstraint3D.get_reference_type()<class_BoneConstraint3D_method_get_reference_type>` равен :ref:`BoneConstraint3D.REFERENCE_TYPE_BONE<class_BoneConstraint3D_constant_REFERENCE_TYPE_BONE>`. См. также ``enumBoneConstraint3D.ReferenceType``.
 
 .. rst-class:: classref-reftable-group
 

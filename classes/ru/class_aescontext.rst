@@ -146,7 +146,7 @@ AES режим дешифрования электронной кодовой к
 
 :ref:`Mode<enum_AESContext_Mode>` **MODE_CBC_ENCRYPT** = ``2``
 
-AES cipher block chaining encryption mode.
+Режим шифрования с использованием цепочки блоков AES.
 
 .. _class_AESContext_constant_MODE_CBC_DECRYPT:
 
@@ -154,7 +154,7 @@ AES cipher block chaining encryption mode.
 
 :ref:`Mode<enum_AESContext_Mode>` **MODE_CBC_DECRYPT** = ``3``
 
-AES cipher block chaining decryption mode.
+Режим дешифрования с использованием цепочки блоков шифрования AES.
 
 .. _class_AESContext_constant_MODE_MAX:
 

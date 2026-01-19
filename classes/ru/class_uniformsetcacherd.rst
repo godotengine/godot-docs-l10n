@@ -14,7 +14,7 @@ UniformSetCacheRD
 Описание
 ----------------
 
-Менеджер кэша унифицированных наборов для рендереров на основе устройств рендеринга. Предоставляет способ создания унифицированного набора и повторного использования его в последующих вызовах до тех пор, пока существует унифицированный набор. Унифицированный набор будет автоматически очищен при освобождении зависимых объектов.
+Uniform set cache manager for :ref:`RenderingDevice<class_RenderingDevice>`-based renderers. Provides a way to create a uniform set and reuse it in subsequent calls for as long as the uniform set exists. Uniform set will automatically be cleaned up when dependent objects are freed.
 
 .. rst-class:: classref-reftable-group
 

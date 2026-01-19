@@ -211,9 +211,9 @@ Descripciones de Propiedades
 - |void| **set_include_hidden**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_include_hidden**\ (\ )
 
-If ``true``, hidden files are included when navigating the directory.
+Si ``true``, los archivos ocultos se incluyen al navegar por el directorio.
 
-Affects :ref:`list_dir_begin()<class_DirAccess_method_list_dir_begin>`, :ref:`get_directories()<class_DirAccess_method_get_directories>` and :ref:`get_files()<class_DirAccess_method_get_files>`.
+Afecta a :ref:`list_dir_begin()<class_DirAccess_method_list_dir_begin>`, :ref:`get_directories()<class_DirAccess_method_get_directories>` y :ref:`get_files()<class_DirAccess_method_get_files>`.
 
 .. rst-class:: classref-item-separator
 
@@ -230,9 +230,9 @@ Affects :ref:`list_dir_begin()<class_DirAccess_method_list_dir_begin>`, :ref:`ge
 - |void| **set_include_navigational**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_include_navigational**\ (\ )
 
-If ``true``, ``.`` and ``..`` are included when navigating the directory.
+Si ``true``, ``.`` y ``..`` se incluyen al navegar por el directorio.
 
-Affects :ref:`list_dir_begin()<class_DirAccess_method_list_dir_begin>` and :ref:`get_directories()<class_DirAccess_method_get_directories>`.
+Afecta a :ref:`list_dir_begin()<class_DirAccess_method_list_dir_begin>` y :ref:`get_directories()<class_DirAccess_method_get_directories>`.
 
 .. rst-class:: classref-section-separator
 
@@ -509,9 +509,9 @@ Use :ref:`get_files()<class_DirAccess_method_get_files>` if you want more contro
 
 :ref:`String<class_String>` **get_filesystem_type**\ (\ ) |const| :ref:`🔗<class_DirAccess_method_get_filesystem_type>`
 
-Returns file system type name of the current directory's disk. Returned values are uppercase strings like ``NTFS``, ``FAT32``, ``EXFAT``, ``APFS``, ``EXT4``, ``BTRFS``, and so on.
+Devuelve el nombre del tipo de sistema de archivos del disco del directorio actual. Los valores devueltos son cadenas de texto en mayúsculas como ``NTFS``, ``FAT32``, ``EXFAT``, ``APFS``, ``EXT4``, ``BTRFS``, y así sucesivamente.
 
-\ **Note:** This method is implemented on macOS, Linux, Windows and for PCK virtual file system.
+\ **Nota:** Este método está implementado en macOS, Linux, Windows y para el sistema de archivos virtual PCK.
 
 .. rst-class:: classref-item-separator
 
@@ -523,9 +523,9 @@ Returns file system type name of the current directory's disk. Returned values a
 
 :ref:`String<class_String>` **get_next**\ (\ ) :ref:`🔗<class_DirAccess_method_get_next>`
 
-Returns the next element (file or directory) in the current directory.
+Devuelve el siguiente elemento (archivo o directorio) en el directorio actual.
 
-The name of the file or directory is returned (and not its full path). Once the stream has been fully processed, the method returns an empty :ref:`String<class_String>` and closes the stream automatically (i.e. :ref:`list_dir_end()<class_DirAccess_method_list_dir_end>` would not be mandatory in such a case).
+Se devuelve el nombre del archivo o directorio (y no su ruta completa). Una vez que la secuencia se ha procesado completamente, el método devuelve una string vacía y cierra la secuencia automáticamente (es decir, :ref:`list_dir_end()<class_DirAccess_method_list_dir_end>` no sería obligatorio en tal caso).
 
 .. rst-class:: classref-item-separator
 
@@ -537,7 +537,7 @@ The name of the file or directory is returned (and not its full path). Once the 
 
 :ref:`Error<enum_@GlobalScope_Error>` **get_open_error**\ (\ ) |static| :ref:`🔗<class_DirAccess_method_get_open_error>`
 
-Returns the result of the last :ref:`open()<class_DirAccess_method_open>` call in the current thread.
+Devuelve el resultado de la última llamada a :ref:`open()<class_DirAccess_method_open>` en el hilo actual.
 
 .. rst-class:: classref-item-separator
 
@@ -549,7 +549,7 @@ Returns the result of the last :ref:`open()<class_DirAccess_method_open>` call i
 
 :ref:`int<class_int>` **get_space_left**\ (\ ) :ref:`🔗<class_DirAccess_method_get_space_left>`
 
-Returns the available space on the current directory's disk, in bytes. Returns ``0`` if the platform-specific method to query the available space fails.
+Devuelve el espacio disponible en el disco del directorio actual, en bytes. Devuelve ``0`` si el método específico de la plataforma para consultar el espacio disponible falla.
 
 .. rst-class:: classref-item-separator
 
@@ -561,9 +561,9 @@ Returns the available space on the current directory's disk, in bytes. Returns `
 
 :ref:`bool<class_bool>` **is_bundle**\ (\ path\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_DirAccess_method_is_bundle>`
 
-Returns ``true`` if the directory is a macOS bundle.
+Devuelve ``true`` si el directorio es un paquete de macOS.
 
-\ **Note:** This method is implemented on macOS.
+\ **Nota:** Este método está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -575,9 +575,9 @@ Returns ``true`` if the directory is a macOS bundle.
 
 :ref:`bool<class_bool>` **is_case_sensitive**\ (\ path\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_DirAccess_method_is_case_sensitive>`
 
-Returns ``true`` if the file system or directory use case sensitive file names.
+Devuelve ``true`` si el sistema de archivos o el directorio utilizan nombres de archivo que distinguen entre mayúsculas y minúsculas.
 
-\ **Note:** This method is implemented on macOS, Linux (for EXT4 and F2FS filesystems only) and Windows. On other platforms, it always returns ``true``.
+\ **Nota:** Este método está implementado en macOS, Linux (solo para sistemas de archivos EXT4 y F2FS) y Windows. En otras plataformas, siempre devuelve ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -589,7 +589,7 @@ Returns ``true`` if the file system or directory use case sensitive file names.
 
 :ref:`bool<class_bool>` **is_equivalent**\ (\ path_a\: :ref:`String<class_String>`, path_b\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_DirAccess_method_is_equivalent>`
 
-Returns ``true`` if paths ``path_a`` and ``path_b`` resolve to the same file system object. Returns ``false`` otherwise, even if the files are bit-for-bit identical (e.g., identical copies of the file that are not symbolic links).
+Devuelve ``true`` si las rutas ``path_a`` y ``path_b`` se resuelven en el mismo objeto del sistema de archivos. Devuelve ``false`` en caso contrario, incluso si los archivos son idénticos bit a bit (por ejemplo, copias idénticas del archivo que no son enlaces simbólicos).
 
 .. rst-class:: classref-item-separator
 
@@ -601,9 +601,9 @@ Returns ``true`` if paths ``path_a`` and ``path_b`` resolve to the same file sys
 
 :ref:`bool<class_bool>` **is_link**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DirAccess_method_is_link>`
 
-Returns ``true`` if the file or directory is a symbolic link, directory junction, or other reparse point.
+Devuelve ``true`` si el archivo o directorio es un enlace simbólico, una unión de directorio u otro punto de reanálisis.
 
-\ **Note:** This method is implemented on macOS, Linux, and Windows.
+\ **Nota:** Este método está implementado en macOS, Linux y Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -615,11 +615,11 @@ Returns ``true`` if the file or directory is a symbolic link, directory junction
 
 :ref:`Error<enum_@GlobalScope_Error>` **list_dir_begin**\ (\ ) :ref:`🔗<class_DirAccess_method_list_dir_begin>`
 
-Initializes the stream used to list all files and directories using the :ref:`get_next()<class_DirAccess_method_get_next>` function, closing the currently opened stream if needed. Once the stream has been processed, it should typically be closed with :ref:`list_dir_end()<class_DirAccess_method_list_dir_end>`.
+Inicializa el flujo usado para listar todos los archivos y directorios usando la función :ref:`get_next()<class_DirAccess_method_get_next>`, cerrando el flujo abierto actual si es necesario. Una vez que el flujo ha sido procesado, típicamente debería ser cerrado con :ref:`list_dir_end()<class_DirAccess_method_list_dir_end>`.
 
-Affected by :ref:`include_hidden<class_DirAccess_property_include_hidden>` and :ref:`include_navigational<class_DirAccess_property_include_navigational>`.
+Afectado por :ref:`include_hidden<class_DirAccess_property_include_hidden>` y :ref:`include_navigational<class_DirAccess_property_include_navigational>`.
 
-\ **Note:** The order of files and directories returned by this method is not deterministic, and can vary between operating systems. If you want a list of all files or folders sorted alphabetically, use :ref:`get_files()<class_DirAccess_method_get_files>` or :ref:`get_directories()<class_DirAccess_method_get_directories>`.
+\ **Nota:** El orden de los archivos y directorios devueltos por este método no es determinístico y puede variar entre sistemas operativos. Si quieres una lista de todos los archivos o carpetas ordenados alfabéticamente, usa :ref:`get_files()<class_DirAccess_method_get_files>` o :ref:`get_directories()<class_DirAccess_method_get_directories>`.
 
 .. rst-class:: classref-item-separator
 
@@ -631,7 +631,7 @@ Affected by :ref:`include_hidden<class_DirAccess_property_include_hidden>` and :
 
 |void| **list_dir_end**\ (\ ) :ref:`🔗<class_DirAccess_method_list_dir_end>`
 
-Closes the current stream opened with :ref:`list_dir_begin()<class_DirAccess_method_list_dir_begin>` (whether it has been fully processed with :ref:`get_next()<class_DirAccess_method_get_next>` does not matter).
+Cierra el flujo actual abierto con :ref:`list_dir_begin()<class_DirAccess_method_list_dir_begin>` (no importa si se ha procesado completamente con :ref:`get_next()<class_DirAccess_method_get_next>` o no).
 
 .. rst-class:: classref-item-separator
 
@@ -657,7 +657,7 @@ Devuelve una de las constantes de código :ref:`Error<enum_@GlobalScope_Error>` 
 
 :ref:`Error<enum_@GlobalScope_Error>` **make_dir_absolute**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_DirAccess_method_make_dir_absolute>`
 
-Static version of :ref:`make_dir()<class_DirAccess_method_make_dir>`. Supports only absolute paths.
+Versión estática de :ref:`make_dir()<class_DirAccess_method_make_dir>`. Solo admite rutas absolutas.
 
 .. rst-class:: classref-item-separator
 
@@ -669,9 +669,9 @@ Static version of :ref:`make_dir()<class_DirAccess_method_make_dir>`. Supports o
 
 :ref:`Error<enum_@GlobalScope_Error>` **make_dir_recursive**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DirAccess_method_make_dir_recursive>`
 
-Creates a target directory and all necessary intermediate directories in its path, by calling :ref:`make_dir()<class_DirAccess_method_make_dir>` recursively. The argument can be relative to the current directory, or an absolute path.
+Crea un directorio de destino y todos los directorios intermedios necesarios en su ruta, llamando a :ref:`make_dir()<class_DirAccess_method_make_dir>` recursivamente. El argumento puede ser relativo al directorio actual, o una ruta absoluta.
 
-Returns one of the :ref:`Error<enum_@GlobalScope_Error>` code constants (:ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success).
+Devuelve una de las constantes de código de :ref:`Error<enum_@GlobalScope_Error>` (:ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` en caso de éxito).
 
 .. rst-class:: classref-item-separator
 
@@ -683,7 +683,7 @@ Returns one of the :ref:`Error<enum_@GlobalScope_Error>` code constants (:ref:`@
 
 :ref:`Error<enum_@GlobalScope_Error>` **make_dir_recursive_absolute**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_DirAccess_method_make_dir_recursive_absolute>`
 
-Static version of :ref:`make_dir_recursive()<class_DirAccess_method_make_dir_recursive>`. Supports only absolute paths.
+Versión estática de :ref:`make_dir_recursive()<class_DirAccess_method_make_dir_recursive>`. Solo admite rutas absolutas.
 
 .. rst-class:: classref-item-separator
 
@@ -695,9 +695,9 @@ Static version of :ref:`make_dir_recursive()<class_DirAccess_method_make_dir_rec
 
 :ref:`DirAccess<class_DirAccess>` **open**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_DirAccess_method_open>`
 
-Creates a new **DirAccess** object and opens an existing directory of the filesystem. The ``path`` argument can be within the project tree (``res://folder``), the user directory (``user://folder``) or an absolute path of the user filesystem (e.g. ``/tmp/folder`` or ``C:\tmp\folder``).
+Crea un nuevo objeto **DirAccess** y abre un directorio existente del sistema de archivos. El argumento ``path`` puede estar dentro del árbol del proyecto (``res://folder``), el directorio de usuario (``user://folder``) o una ruta absoluta del sistema de archivos de usuario (por ejemplo, ``/tmp/folder`` o ``C:\tmp\folder``).
 
-Returns ``null`` if opening the directory failed. You can use :ref:`get_open_error()<class_DirAccess_method_get_open_error>` to check the error that occurred.
+Devuelve ``null`` si falló la apertura del directorio. Puedes usar :ref:`get_open_error()<class_DirAccess_method_get_open_error>` para verificar el error ocurrido.
 
 .. rst-class:: classref-item-separator
 
@@ -709,9 +709,9 @@ Returns ``null`` if opening the directory failed. You can use :ref:`get_open_err
 
 :ref:`String<class_String>` **read_link**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DirAccess_method_read_link>`
 
-Returns target of the symbolic link.
+Devuelve el destino del enlace simbólico.
 
-\ **Note:** This method is implemented on macOS, Linux, and Windows.
+\ **Nota:** Este método está implementado en macOS, Linux y Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -739,7 +739,7 @@ Devuelve una de las constantes de código :ref:`Error<enum_@GlobalScope_Error>`,
 
 :ref:`Error<enum_@GlobalScope_Error>` **remove_absolute**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_DirAccess_method_remove_absolute>`
 
-Static version of :ref:`remove()<class_DirAccess_method_remove>`. Supports only absolute paths.
+Versión estática de :ref:`remove()<class_DirAccess_method_remove>`. Solo admite rutas absolutas.
 
 .. rst-class:: classref-item-separator
 
@@ -751,9 +751,9 @@ Static version of :ref:`remove()<class_DirAccess_method_remove>`. Supports only 
 
 :ref:`Error<enum_@GlobalScope_Error>` **rename**\ (\ from\: :ref:`String<class_String>`, to\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DirAccess_method_rename>`
 
-Renames (move) the ``from`` file or directory to the ``to`` destination. Both arguments should be paths to files or directories, either relative or absolute. If the destination file or directory exists and is not access-protected, it will be overwritten.
+Renombra (mueve) el archivo o directorio ``from`` al destino ``to``. Ambos argumentos deben ser rutas a archivos o directorios, ya sean relativas o absolutas. Si el archivo o directorio de destino existe y no está protegido contra el acceso, será sobrescrito.
 
-Returns one of the :ref:`Error<enum_@GlobalScope_Error>` code constants (:ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success).
+Devuelve una de las constantes del código :ref:`Error<enum_@GlobalScope_Error>` (:ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` en caso de éxito).
 
 .. rst-class:: classref-item-separator
 
@@ -765,7 +765,7 @@ Returns one of the :ref:`Error<enum_@GlobalScope_Error>` code constants (:ref:`@
 
 :ref:`Error<enum_@GlobalScope_Error>` **rename_absolute**\ (\ from\: :ref:`String<class_String>`, to\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_DirAccess_method_rename_absolute>`
 
-Static version of :ref:`rename()<class_DirAccess_method_rename>`. Supports only absolute paths.
+Versión estática de :ref:`rename()<class_DirAccess_method_rename>`. Solo admite rutas absolutas.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

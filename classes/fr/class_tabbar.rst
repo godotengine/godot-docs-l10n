@@ -442,7 +442,7 @@ Si ``true``, les onglets débordant de la largeur de ce nœud seront cachés, af
 - |void| **set_close_with_middle_mouse**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_close_with_middle_mouse**\ (\ )
 
-If ``true``, middle-clicking on a tab will emit the :ref:`tab_close_pressed<class_TabBar_signal_tab_close_pressed>` signal.
+Si ``true``, un clic du milieu de la souris sur un onglet émettra le :ref:`tab_close_pressed<class_TabBar_signal_tab_close_pressed>`\ signal.
 
 .. rst-class:: classref-item-separator
 

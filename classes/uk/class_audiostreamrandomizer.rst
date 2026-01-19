@@ -136,9 +136,9 @@ enum **PlaybackMode**: :ref:`🔗<enum_AudioStreamRandomizer_PlaybackMode>`
 - |void| **set_random_pitch**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_random_pitch**\ (\ )
 
-The largest possible frequency multiplier of the random pitch variation. Pitch will be randomly chosen within a range of ``1.0 / random_pitch`` and ``random_pitch``. A value of ``1.0`` means no variation. A value of ``2.0`` means pitch will be randomized between double and half.
+Найбільший можливий множник частоти випадкової варіації висоти тону. Висота тону буде вибрана випадковим чином у діапазоні ``1.0 / random_pitch`` та ``random_pitch``. Значення ``1.0`` означає відсутність варіації. Значення ``2.0`` означає, що висота тону буде випадковим чином вибрана між подвійною та половинною.
 
-\ **Note:** Setting this property also sets :ref:`random_pitch_semitones<class_AudioStreamRandomizer_property_random_pitch_semitones>`.
+\ **Примітка:** Встановлення цієї властивості також встановлює :ref:`random_pitch_semitones<class_AudioStreamRandomizer_property_random_pitch_semitones>`.
 
 .. rst-class:: classref-item-separator
 
@@ -155,9 +155,9 @@ The largest possible frequency multiplier of the random pitch variation. Pitch w
 - |void| **set_random_pitch_semitones**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_random_pitch_semitones**\ (\ )
 
-The largest possible distance, in semitones, of the random pitch variation. A value of ``0.0`` means no variation.
+Найбільша можлива відстань, у півтонах, випадкової варіації висоти тону. Значення ``0.0`` означає відсутність варіації.
 
-\ **Note:** Setting this property also sets :ref:`random_pitch<class_AudioStreamRandomizer_property_random_pitch>`.
+\ **Примітка:** Встановлення цієї властивості також встановлює :ref:`random_pitch<class_AudioStreamRandomizer_property_random_pitch>`.
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ The largest possible distance, in semitones, of the random pitch variation. A va
 - |void| **set_random_volume_offset_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_random_volume_offset_db**\ (\ )
 
-The intensity of random volume variation. Volume will be increased or decreased by a random value up to ``random_volume_offset_db``. A value of ``0.0`` means no variation. A value of ``3.0`` means volume will be randomized between ``-3.0 dB`` and ``+3.0 dB``.
+Інтенсивність випадкової зміни гучності. Гучність буде збільшуватися або зменшуватися на випадкове значення до ``random_volume_offset_db``. Значення ``0.0`` означає відсутність зміни. Значення ``3.0`` означає, що гучність буде випадковим чином змінюватися між ``-3.0 дБ`` та ``+3.0 дБ``.
 
 .. rst-class:: classref-item-separator
 

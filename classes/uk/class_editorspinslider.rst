@@ -148,7 +148,7 @@ enum **ControlState**: :ref:`🔗<enum_EditorSpinSlider_ControlState>`
 
 :ref:`ControlState<enum_EditorSpinSlider_ControlState>` **CONTROL_STATE_DEFAULT** = ``0``
 
-The type of control used will depend on the value of :ref:`editing_integer<class_EditorSpinSlider_property_editing_integer>`. Up-down arrows if ``true``, a slider if ``false``.
+Тип елемента керування залежатиме від значення :ref:`editing_integer<class_EditorSpinSlider_property_editing_integer>`. Стрілки вгору-вниз, якщо ``true``, повзунок, якщо ``false``.
 
 .. _class_EditorSpinSlider_constant_CONTROL_STATE_PREFER_SLIDER:
 
@@ -156,7 +156,7 @@ The type of control used will depend on the value of :ref:`editing_integer<class
 
 :ref:`ControlState<enum_EditorSpinSlider_ControlState>` **CONTROL_STATE_PREFER_SLIDER** = ``1``
 
-A slider will always be used, even if :ref:`editing_integer<class_EditorSpinSlider_property_editing_integer>` is enabled.
+Повзунок завжди використовуватиметься, навіть якщо ввімкнено :ref:`editing_integer<class_EditorSpinSlider_property_editing_integer>`.
 
 .. _class_EditorSpinSlider_constant_CONTROL_STATE_HIDE:
 
@@ -164,7 +164,7 @@ A slider will always be used, even if :ref:`editing_integer<class_EditorSpinSlid
 
 :ref:`ControlState<enum_EditorSpinSlider_ControlState>` **CONTROL_STATE_HIDE** = ``2``
 
-Neither the up-down arrows nor the slider will be shown.
+Ні стрілки вгору-вниз, ні повзунок не відображатимуться.
 
 .. rst-class:: classref-section-separator
 
@@ -186,7 +186,7 @@ Neither the up-down arrows nor the slider will be shown.
 - |void| **set_control_state**\ (\ value\: :ref:`ControlState<enum_EditorSpinSlider_ControlState>`\ )
 - :ref:`ControlState<enum_EditorSpinSlider_ControlState>` **get_control_state**\ (\ )
 
-The state in which the control used to manipulate the value will be.
+Стан, у якому буде елемент керування, що використовується для маніпулювання значенням.
 
 .. rst-class:: classref-item-separator
 
@@ -203,7 +203,7 @@ The state in which the control used to manipulate the value will be.
 - |void| **set_editing_integer**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_editing_integer**\ (\ )
 
-If ``true``, the **EditorSpinSlider** is considered to be editing an integer value. If ``false``, the **EditorSpinSlider** is considered to be editing a floating-point value. This is used to determine whether a slider should be drawn by default. The slider is only drawn for floats; integers use up-down arrows similar to :ref:`SpinBox<class_SpinBox>` instead, unless :ref:`control_state<class_EditorSpinSlider_property_control_state>` is set to :ref:`CONTROL_STATE_PREFER_SLIDER<class_EditorSpinSlider_constant_CONTROL_STATE_PREFER_SLIDER>`. It will also use :ref:`EditorSettings.interface/inspector/integer_drag_speed<class_EditorSettings_property_interface/inspector/integer_drag_speed>` instead of :ref:`EditorSettings.interface/inspector/float_drag_speed<class_EditorSettings_property_interface/inspector/float_drag_speed>` if the slider is available.
+Якщо значення ``true``, вважається, що **EditorSpinSlider** редагує ціле значення. Якщо значення ``false``, вважається, що **EditorSpinSlider** редагує значення з плаваючою комою. Це використовується для визначення, чи слід повзунок малювати за замовчуванням. Повзунок малюється лише для чисел з плаваючою комою; цілі числа використовують стрілки вгору-вниз, подібні до :ref:`SpinBox<class_SpinBox>`, якщо тільки значення :ref:`control_state<class_EditorSpinSlider_property_control_state>` не встановлено на :ref:`CONTROL_STATE_PREFER_SLIDER<class_EditorSpinSlider_constant_CONTROL_STATE_PREFER_SLIDER>`. Також використовуватиметься значення :ref:`EditorSettings.interface/inspector/integer_drag_speed<class_EditorSettings_property_interface/inspector/integer_drag_speed>` замість значення :ref:`EditorSettings.interface/inspector/float_drag_speed<class_EditorSettings_property_interface/inspector/float_drag_speed>`, якщо повзунок доступний.
 
 .. rst-class:: classref-item-separator
 

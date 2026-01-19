@@ -51,7 +51,7 @@ enum **Source**: :ref:`🔗<enum_VisualShaderNodeSample3D_Source>`
 
 :ref:`Source<enum_VisualShaderNodeSample3D_Source>` **SOURCE_TEXTURE** = ``0``
 
-Crea un uniforme interno y proporciona una forma de asignarlo dentro del nodo.
+Crea una variable uniforme interna y proporciona una forma de asignarla dentro del nodo.
 
 .. _class_VisualShaderNodeSample3D_constant_SOURCE_PORT:
 

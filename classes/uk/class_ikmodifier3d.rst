@@ -9,14 +9,14 @@ IKModifier3D
 
 **Успадковано від:** :ref:`ChainIK3D<class_ChainIK3D>`, :ref:`TwoBoneIK3D<class_TwoBoneIK3D>`
 
-A node for inverse kinematics which may modify more than one bone.
+Вузол для інверсної кінематики, який може змінювати більше однієї кістки.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`\ s that has some joint lists and applies inverse kinematics. This class has some structs, enums, and helper methods which are useful to solve inverse kinematics.
+Базовий клас :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`, який має деякі списки суглобів та застосовує інверсну кінематику. Цей клас має деякі структури, переліки та допоміжні методи, корисні для розв'язання інверсної кінематики.
 
 .. rst-class:: classref-reftable-group
 
@@ -68,9 +68,9 @@ Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`\ s that has so
 - |void| **set_mutable_bone_axes**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_bone_axes_mutable**\ (\ )
 
-If ``true``, the solver retrieves the bone axis from the bone pose every frame.
+Якщо ``true``, розв'язувач отримує вісь кістки з пози кістки кожного кадру.
 
-If ``false``, the solver retrieves the bone axis from the bone rest and caches it, which increases performance slightly, but position changes in the bone pose made before processing this **IKModifier3D** are ignored.
+Якщо ``false``, розв'язувач отримує вісь кістки з залишку кістки та кешує її, що дещо підвищує продуктивність, але зміни положення в позі кістки, внесені до обробки цього **IKModifier3D**, ігноруються.
 
 .. rst-class:: classref-section-separator
 
@@ -99,7 +99,7 @@ If ``false``, the solver retrieves the bone axis from the bone rest and caches i
 
 :ref:`int<class_int>` **get_setting_count**\ (\ ) |const| :ref:`🔗<class_IKModifier3D_method_get_setting_count>`
 
-Returns the number of settings.
+Повертає кількість налаштувань.
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ Returns the number of settings.
 
 |void| **reset**\ (\ ) :ref:`🔗<class_IKModifier3D_method_reset>`
 
-Resets a state with respect to the current bone pose.
+Скидає стан відносно поточної пози кістки.
 
 .. rst-class:: classref-item-separator
 
@@ -123,7 +123,7 @@ Resets a state with respect to the current bone pose.
 
 |void| **set_setting_count**\ (\ count\: :ref:`int<class_int>`\ ) :ref:`🔗<class_IKModifier3D_method_set_setting_count>`
 
-Sets the number of settings.
+Встановлює кількість налаштувань.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -173,7 +173,7 @@ Crea un proyecto completo en ``path`` para el ``preset`` especificado.
 
 Este método se llama cuando se presiona el botón "Exportar" en el diálogo de exportación.
 
-Esta implementación del método puede llamar a :ref:`EditorExportPlatform.save_pack()<class_EditorExportPlatform_method_save_pack>` o :ref:`EditorExportPlatform.save_zip()<class_EditorExportPlatform_method_save_zip>` para usar el proceso de exportación PCK/ZIP predeterminado, o llama a :ref:`EditorExportPlatform.export_project_files()<class_EditorExportPlatform_method_export_project_files>` e implementa una función de retorno personalizada para procesar cada archivo exportado.
+Esta implementación del método puede llamar a :ref:`EditorExportPlatform.save_pack()<class_EditorExportPlatform_method_save_pack>` o :ref:`EditorExportPlatform.save_zip()<class_EditorExportPlatform_method_save_zip>` para usar el proceso de exportación PCK/ZIP predeterminado, o llama a :ref:`EditorExportPlatform.export_project_files()<class_EditorExportPlatform_method_export_project_files>` e implementa una callback personalizada para procesar cada archivo exportado.
 
 .. rst-class:: classref-item-separator
 

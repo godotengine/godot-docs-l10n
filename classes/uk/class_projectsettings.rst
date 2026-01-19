@@ -1902,6 +1902,8 @@ ProjectSettings
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`xr/openxr/submit_depth_buffer<class_ProjectSettings_property_xr/openxr/submit_depth_buffer>`                                                                                                         | ``false``                                                                                        |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`xr/openxr/target_api_version<class_ProjectSettings_property_xr/openxr/target_api_version>`                                                                                                           | ``""``                                                                                           |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`xr/openxr/view_configuration<class_ProjectSettings_property_xr/openxr/view_configuration>`                                                                                                           | ``"1"``                                                                                          |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`xr/shaders/enabled<class_ProjectSettings_property_xr/shaders/enabled>`                                                                                                                               | ``false``                                                                                        |
@@ -1991,15 +1993,15 @@ ProjectSettings
 
 :ref:`int<class_int>` **accessibility/general/accessibility_support** = ``0`` :ref:`🔗<class_ProjectSettings_property_accessibility/general/accessibility_support>`
 
-Accessibility support mode:
+Режим підтримки доступності:
 
-- **Auto** (``0``): Accessibility support is enabled, but updates to the accessibility information are processed only if an assistive app (such as a screen reader or a Braille display) is active (default).
+- **Автоматично** (``0``): Підтримка доступності ввімкнена, але оновлення інформації про доступність обробляються лише за умови активності допоміжного застосунку (наприклад, програми зчитування з екрана або дисплея Брайля) (за замовчуванням).
 
-- **Always Active** (``1``): Accessibility support is enabled, and updates to the accessibility information are always processed, regardless of the status of assistive apps.
+- **Завжди активно** (``1``): Підтримка доступності ввімкнена, а оновлення інформації про доступність обробляються завжди, незалежно від стану допоміжних застосунків.
 
-- **Disabled** (``2``): Accessibility support is fully disabled.
+- **Вимкнено** (``2``): Підтримка доступності повністю вимкнена.
 
-\ **Note:** Accessibility debugging tools, such as Accessibility Insights for Windows, Accessibility Inspector (macOS), or AT-SPI Browser (Linux/BSD), do not count as assistive apps. To test your project with these tools, use **Always Active**.
+\ **Примітка:** Інструменти налагодження доступності, такі як Accessibility Insights for Windows, Accessibility Inspector (macOS) або AT-SPI Browser (Linux/BSD), не вважаються допоміжними застосунками. Щоб протестувати свій проект за допомогою цих інструментів, використовуйте **Завжди активно**.
 
 .. rst-class:: classref-item-separator
 
@@ -2023,9 +2025,9 @@ Accessibility support mode:
 
 :ref:`bool<class_bool>` **animation/compatibility/default_parent_skeleton_in_mesh_instance_3d** = ``false`` :ref:`🔗<class_ProjectSettings_property_animation/compatibility/default_parent_skeleton_in_mesh_instance_3d>`
 
-If ``true``, :ref:`MeshInstance3D.skeleton<class_MeshInstance3D_property_skeleton>` will point to the parent node (``..``) by default, which was the behavior before Godot 4.6. It's recommended to keep this setting disabled unless the old behavior is needed for compatibility.
+Якщо ``true``, :ref:`MeshInstance3D.skeleton<class_MeshInstance3D_property_skeleton>` за замовчуванням вказуватиме на батьківський вузол (``.``), що було поведінкою до Godot 4.6. Рекомендується залишати цей параметр вимкненим, якщо стара поведінка не потрібна для сумісності.
 
-\ **Note:** If you disable this option in an existing project, it's strongly recommended to use the ``Project > Tools > Upgrade Project Files...`` option to ensure existing scenes do not break.
+\ **Примітка:** Якщо ви вимкнете цю опцію в існуючому проекті, наполегливо рекомендується використовувати опцію ``Проект > Інструменти > Оновити файли проекту...``, щоб переконатися, що існуючі сцени не пошкодяться.
 
 .. rst-class:: classref-item-separator
 
@@ -2115,7 +2117,7 @@ If ``true``, :ref:`MeshInstance3D.skeleton<class_MeshInstance3D_property_skeleto
 
 :ref:`int<class_int>` **application/boot_splash/stretch_mode** = ``1`` :ref:`🔗<class_ProjectSettings_property_application/boot_splash/stretch_mode>`
 
-Specifies how the splash image will be stretched. For the original size without stretching, set to disabled. See :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` constants for more information.
+Визначає, як буде розтягнуто заставку-зображення. Щоб отримати оригінальний розмір без розтягування, встановіть значення «вимкнено». Див. константи :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` для отримання додаткової інформації.
 
 .. rst-class:: classref-item-separator
 
@@ -2179,7 +2181,7 @@ Specifies how the splash image will be stretched. For the original size without 
 
 :ref:`bool<class_bool>` **application/config/disable_project_settings_override** = ``false`` :ref:`🔗<class_ProjectSettings_property_application/config/disable_project_settings_override>`
 
-If ``true``, disables loading of project settings overrides (file defined in :ref:`application/config/project_settings_override<class_ProjectSettings_property_application/config/project_settings_override>` and ``res://override.cfg``) and related CLI arguments.
+Якщо значення ``true``, вимикається завантаження змінених налаштувань проекту (файл, визначений у :ref:`application/config/project_settings_override<class_ProjectSettings_property_application/config/project_settings_override>` та ``res://override.cfg``) та пов'язаних з ними аргументів CLI.
 
 .. rst-class:: classref-item-separator
 
@@ -2229,9 +2231,9 @@ If ``true``, disables loading of project settings overrides (file defined in :re
 
 :ref:`Dictionary<class_Dictionary>` **application/config/name_localized** = ``{}`` :ref:`🔗<class_ProjectSettings_property_application/config/name_localized>`
 
-Translations of the project's name. This setting is used by OS tools to translate application name on Android, iOS and macOS.
+Переклади назви проєкту. Цей параметр використовується інструментами ОС для перекладу назви програми на Android, iOS та macOS.
 
-\ **Note:** When left empty, the application name is translated using the project translations.
+\ **Примітка:** Якщо залишити поле порожнім, назва програми перекладається за допомогою перекладів проєкту.
 
 .. rst-class:: classref-item-separator
 
@@ -2493,21 +2495,21 @@ Icon set in ``.ico`` формат, який використовується н�
 
 :ref:`int<class_int>` **application/run/max_fps** = ``0`` :ref:`🔗<class_ProjectSettings_property_application/run/max_fps>`
 
-Maximum number of frames per second allowed. A value of ``0`` means "no limit". The actual number of frames per second may still be below this value if the CPU or GPU cannot keep up with the project logic and rendering.
+Максимально дозволена кількість кадрів за секунду. Значення ``0`` означає «без обмежень». Фактична кількість кадрів за секунду може бути нижчою за це значення, якщо процесор або графічний процесор не можуть встигати за логікою проекту та рендерингом.
 
-Limiting the FPS can be useful to reduce system power consumption, which reduces heat and noise emissions (and improves battery life on mobile devices).
+Обмеження FPS може бути корисним для зменшення енергоспоживання системи, що зменшує виділення тепла та шуму (і покращує час роботи акумулятора на мобільних пристроях).
 
-If :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is set to ``Enabled`` or ``Adaptive``, it takes precedence and the forced FPS number cannot exceed the monitor's refresh rate. See also :ref:`DisplayServer.screen_get_refresh_rate()<class_DisplayServer_method_screen_get_refresh_rate>`.
+Якщо для :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` встановлено значення ``Увімкнено`` або ``Адаптивно``, це має пріоритет, і примусове число FPS не може перевищувати частоту оновлення монітора. Див. також :ref:`DisplayServer.screen_get_refresh_rate()<class_DisplayServer_method_screen_get_refresh_rate>`.
 
-If :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is ``Enabled``, on monitors with variable refresh rate enabled (G-Sync/FreeSync), using an FPS limit slightly lower than the monitor's refresh rate will `reduce input lag while avoiding tearing <https://blurbusters.com/howto-low-lag-vsync-on/>`__. At higher refresh rates, the difference between the FPS limit and the monitor refresh rate should be increased to ensure frames to account for timing inaccuracies. The optimal formula for the FPS limit value in this scenario is ``r - (r * r) / 3600.0``, where ``r`` is the monitor's refresh rate.
+ Якщо для параметра :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` встановлено значення ``Увімкнено``, на моніторах із увімкненою змінною частотою оновлення (G-Sync/FreeSync) використання обмеження FPS, трохи нижчого за частоту оновлення монітора, `зменшить затримку введення, уникаючи розривів <https://blurbusters.com/howto-low-lag-vsync-on/>`__. При вищих частотах оновлення різницю між обмеженням FPS та частотою оновлення монітора слід збільшити, щоб забезпечити врахування неточностей синхронізації кадрів. Оптимальна формула для визначення граничного значення FPS у цьому сценарії: ``r - (r * r) / 3600.0``, де ``r`` – частота оновлення монітора.
 
-If :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is ``Disabled``, limiting the FPS to a high value that can be consistently reached on the system can reduce input lag compared to an uncapped framerate. Since this works by ensuring the GPU load is lower than 100%, this latency reduction is only effective in GPU-bottlenecked scenarios, not CPU-bottlenecked scenarios.
+Якщо для параметра :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` встановлено значення ``Вимкнено``, обмеження FPS високим значенням, яке можна послідовно досягати в системі, може зменшити затримку введення порівняно з необмеженою частотою кадрів. Оскільки це працює, забезпечуючи навантаження на графічний процесор нижче 100%, це зменшення затримки ефективне лише у сценаріях з обмеженим доступом до графічного процесора, а не до обмеженого доступу до центрального процесора.
 
-See also :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`.
+Див. також :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`.
 
-This setting can be overridden using the ``--max-fps <fps>`` command line argument (including with a value of ``0`` for unlimited framerate).
+Цей параметр можна змінити за допомогою аргумента командного рядка ``--max-fps <fps>`` (включно зі значенням ``0`` для необмеженої частоти кадрів).
 
-\ **Note:** This property is only read when the project starts. To change the rendering FPS cap at runtime, set :ref:`Engine.max_fps<class_Engine_property_max_fps>` instead.
+\ **Примітка:** Ця властивість зчитується лише під час запуску проекту. Щоб змінити обмеження FPS під час рендерингу, встановіть замість цього :ref:`Engine.max_fps<class_Engine_property_max_fps>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2745,9 +2747,9 @@ Safer override для :ref:`audio/driver/mix_rate<class_ProjectSettings_property
 
 :ref:`bool<class_bool>` **audio/general/text_to_speech** = ``false`` :ref:`🔗<class_ProjectSettings_property_audio/general/text_to_speech>`
 
-If ``true``, text-to-speech support is enabled on startup, otherwise it is enabled the first time any TTS method is used. See also :ref:`DisplayServer.tts_get_voices()<class_DisplayServer_method_tts_get_voices>` and :ref:`DisplayServer.tts_speak()<class_DisplayServer_method_tts_speak>`.
+Якщо ``true``, підтримка перетворення тексту на мовлення вмикається під час запуску, інакше вона вмикається під час першого використання будь-якого методу TTS. Див. також :ref:`DisplayServer.tts_get_voices()<class_DisplayServer_method_tts_get_voices>` та :ref:`DisplayServer.tts_speak()<class_DisplayServer_method_tts_speak>`.
 
-\ **Note:** Enabling TTS can cause additional idle CPU usage and interfere with the sleep mode, so consider disabling it if TTS is not used.
+\ **Примітка:** Увімкнення TTS може призвести до додаткового використання процесора в режимі очікування та перешкоджати роботі режиму сну, тому подумайте про його вимкнення, якщо TTS не використовується.
 
 .. rst-class:: classref-item-separator
 
@@ -2919,7 +2921,7 @@ If ``true``, text-to-speech support is enabled on startup, otherwise it is enabl
 
 :ref:`int<class_int>` **debug/gdscript/warnings/assert_always_false** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/assert_always_false>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an ``assert`` call always evaluates to ``false``.
+Якщо встановлено значення **Warn** або **Error**, створюється попередження або помилка відповідно, коли виклик ``assert`` завжди повертає значення ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -2931,7 +2933,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/assert_always_true** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/assert_always_true>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an ``assert`` call always evaluates to ``true``.
+Якщо встановлено значення **Warn** або **Error**, створюється попередження або помилка відповідно, коли виклик ``assert`` завжди має значення ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -2943,7 +2945,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_capture_reassignment** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_capture_reassignment>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local variable captured by a lambda is reassigned, since this does not modify the outer local variable.
+Якщо встановлено значення **Попередження** або **Помилка**, створюється попередження або помилка відповідно, коли локальна змінна, захоплена лямбда-виразом, перепризначається, оскільки це не змінює зовнішню локальну змінну.
 
 .. rst-class:: classref-item-separator
 
@@ -2955,7 +2957,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_identifier** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_identifier>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an identifier contains characters that can be confused with something else, like when mixing different alphabets.
+Якщо встановлено значення **Попередження** або **Помилка**, створюється попередження або помилка відповідно, коли ідентифікатор містить символи, які можна сплутати з чимось іншим, наприклад, під час змішування різних алфавітів.
 
 .. rst-class:: classref-item-separator
 
@@ -2967,7 +2969,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_local_declaration** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_local_declaration>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an identifier declared in the nested block has the same name as an identifier declared below in the parent block.
+Якщо встановлено значення **Попередження** або **Помилка**, створюється попередження або помилка відповідно, коли ідентифікатор, оголошений у вкладеному блоці, має таку саму назву, як ідентифікатор, оголошений нижче в батьківському блоці.
 
 .. rst-class:: classref-item-separator
 
@@ -2979,7 +2981,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_local_usage** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_local_usage>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an identifier that will be shadowed below in the block is used.
+Якщо встановлено значення **Попередження** або **Помилка**, створюється попередження або помилка відповідно, коли використовується ідентифікатор, який буде затінений нижче в блоці.
 
 .. rst-class:: classref-item-separator
 
@@ -2991,9 +2993,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/deprecated_keyword** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/deprecated_keyword>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when deprecated keywords are used.
+Якщо встановлено значення **Попередження** або **Помилка**, створюється попередження або помилка відповідно, коли використовуються застарілі ключові слова.
 
-\ **Note:** There are currently no deprecated keywords, so this warning is never produced.
+\ **Примітка:** Наразі немає застарілих ключових слів, тому це попередження ніколи не створюється.
 
 .. rst-class:: classref-item-separator
 
@@ -3005,13 +3007,13 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Dictionary<class_Dictionary>` **debug/gdscript/warnings/directory_rules** = ``{ "res://addons": 0 }`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/directory_rules>`
 
-The rules for including or excluding scripts when generating warnings, as a dictionary. Each rule is an entry consisting of a directory path (key) and a decision (value). When trying to generate a warning, the GDScript parser chooses the most specific rule, i.e. the most nested directory containing the script. If the decision is **Exclude**, warnings are not generated for this script. If the decision is **Include** or the script doesn't satisfy any of the rules, the warning configuration specified in the Project Settings is applied.
+Правила включення або виключення скриптів під час створення попереджень у вигляді словника. Кожне правило – це запис, що складається зі шляху до каталогу (ключа) та рішення (значення). Під час спроби створення попередження парсер GDScript вибирає найконкретніше правило, тобто найбільш вкладений каталог, що містить скрипт. Якщо рішення – **Виключити**, попередження для цього скрипта не генеруються. Якщо рішення – **Включити** або скрипт не відповідає жодному з правил, застосовується конфігурація попереджень, зазначена в налаштуваннях проекту.
 
-It is recommended to include your own addons/libraries, either project-specific or actively being developed at the moment. Third-party or project-agnostic addons/libraries should be excluded, as they may be incompatible with the project's warning configuration.
+Рекомендується включати власні доповнення/бібліотеки, або специфічні для проекту, або ті, що активно розробляються на даний момент. Сторонні або незалежні від проекту доповнення/бібліотеки слід виключати, оскільки вони можуть бути несумісними з конфігурацією попереджень проекту.
 
-\ **Note:** It is not recommended to remove or change the rule for ``"res://addons"`` as the project's warning configuration may break third-party addons. Instead, consider including individual addons, if necessary.
+\ **Примітка: ** Не рекомендується видаляти або змінювати правило для ``"res://addons"``, оскільки конфігурація попереджень проекту може порушити роботу сторонніх доповнень. Натомість, за потреби, розгляньте можливість включення окремих доповнень.
 
-\ **Note:** The editor does not check whether the specified paths are existing directories. It also does not automatically update these paths when directories are moved.
+\ **Примітка:** Редактор не перевіряє, чи вказані шляхи є існуючими каталогами. Він також не оновлює ці шляхи автоматично під час переміщення каталогів.
 
 .. rst-class:: classref-item-separator
 
@@ -3023,7 +3025,7 @@ It is recommended to include your own addons/libraries, either project-specific 
 
 :ref:`int<class_int>` **debug/gdscript/warnings/empty_file** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/empty_file>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an empty file is parsed.
+Якщо встановлено значення **Попередження** або **Помилка**, під час аналізу порожнього файлу виникає попередження або помилка відповідно.
 
 .. rst-class:: classref-item-separator
 
@@ -3047,7 +3049,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/enum_variable_without_default** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/enum_variable_without_default>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a variable has an enum type but no explicit default value, but only if the enum does not contain ``0`` as a valid value.
+Якщо встановлено значення **Попередження** або **Помилка**, створюється попередження або помилка відповідно, коли змінна має тип переліку, але не має явного значення за замовчуванням, але лише якщо перелік не містить ``0`` як допустиме значення.
 
 .. rst-class:: classref-item-separator
 
@@ -3059,7 +3061,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/get_node_default_without_onready** = ``2`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/get_node_default_without_onready>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when :ref:`Node.get_node()<class_Node_method_get_node>` (or the shorthand ``$``) is used as default value of a class variable without the ``@onready`` annotation.
+Якщо встановлено значення **Warn** або **Error**, створюється попередження або помилка відповідно, коли :ref:`Node.get_node()<class_Node_method_get_node>` (або скорочений варіант ``$``) використовується як значення за замовчуванням змінної класу без анотації ``@onready``.
 
 .. rst-class:: classref-item-separator
 
@@ -3071,7 +3073,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/incompatible_ternary** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/incompatible_ternary>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a ternary operator may emit values with incompatible types.
+Якщо встановлено значення **Попередження** або **Помилка**, створює попередження або помилку відповідно, коли тернарний оператор може видавати значення несумісних типів.
 
 .. rst-class:: classref-item-separator
 
@@ -3083,7 +3085,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/inference_on_variant** = ``2`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/inference_on_variant>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a static inferred type uses a :ref:`Variant<class_Variant>` as initial value, which makes the static type to also be Variant.
+Якщо встановлено значення **Попередження** або **Помилка**, створюється попередження або помилка відповідно, коли статичний виведений тип використовує :ref:`Variant<class_Variant>` як початкове значення, що робить статичний тип також типом Variant.
 
 .. rst-class:: classref-item-separator
 
@@ -3095,9 +3097,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/inferred_declaration** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/inferred_declaration>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a variable, constant, or parameter has an implicitly inferred static type. In GDScript, type inference is performed by declaring a variable with ``:=`` instead of ``=`` and leaving out the type specifier. For example, ``var x := 1`` will *infer* the :ref:`int<class_int>` type, while ``var x: int = 1`` explicitly declares the variable as :ref:`int<class_int>`.
+Якщо встановлено значення **Warn** або **Error**, створюється попередження або помилка відповідно, коли змінна, константа або параметр має неявно виведений статичний тип. У GDScript виведення типу виконується шляхом оголошення змінної з ``:=`` замість ``=`` та пропускання специфікатора типу. Наприклад, ``var x := 1`` *виведе* тип :ref:`int<class_int>`, тоді як ``var x: int = 1`` явно оголошує змінну як :ref:`int<class_int>`.
 
-\ **Note:** This warning is recommended *in addition* to :ref:`debug/gdscript/warnings/untyped_declaration<class_ProjectSettings_property_debug/gdscript/warnings/untyped_declaration>` if you want to always specify the type explicitly. Having ``INFERRED_DECLARATION`` warning level higher than ``UNTYPED_DECLARATION`` warning level makes little sense and is not recommended.
+\ **Примітка:** Це попередження рекомендується *на додаток* до :ref:`debug/gdscript/warnings/untyped_declaration<class_ProjectSettings_property_debug/gdscript/warnings/untyped_declaration>`, якщо ви хочете завжди явно вказувати тип. Високий рівень попередження ``INFERRED_DECLARATION`` за рівень попередження ``UNTYPED_DECLARATION`` не має сенсу та не рекомендується.
 
 .. rst-class:: classref-item-separator
 
@@ -3109,7 +3111,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/int_as_enum_without_cast** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/int_as_enum_without_cast>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when trying to use an integer as an enum without an explicit cast.
+Якщо встановлено значення **Попередження** або **Помилка**, виникає попередження або помилка відповідно під час спроби використати ціле число як перелік без явного приведення типів.
 
 .. rst-class:: classref-item-separator
 
@@ -3121,7 +3123,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/int_as_enum_without_match** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/int_as_enum_without_match>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when trying to use an integer as an enum when there is no matching enum member for that numeric value.
+Якщо встановлено значення **Попередження** або **Помилка**, виникає попередження або помилка відповідно під час спроби використати ціле число як перелік, коли для цього числового значення немає відповідного члена переліку.
 
 .. rst-class:: classref-item-separator
 
@@ -3133,7 +3135,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/integer_division** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/integer_division>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when dividing an integer by another integer (the decimal part will be discarded).
+Якщо встановлено значення **Попередження** або **Помилка**, виникає попередження або помилка відповідно під час ділення цілого числа на інше ціле число (десяткова частина буде відкинута).
 
 .. rst-class:: classref-item-separator
 
@@ -3145,7 +3147,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/missing_await** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/missing_await>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a coroutine without ``await``.
+Якщо встановлено значення **Warn** або **Error**, створює попередження або помилку відповідно під час виклику корутини без ``await``.
 
 .. rst-class:: classref-item-separator
 
@@ -3157,7 +3159,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/missing_tool** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/missing_tool>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when the base class script has the ``@tool`` annotation, but the current class script does not have it.
+Якщо встановлено значення **Попередження** або **Помилка**, створюється попередження або помилка відповідно, коли базовий скрипт класу має анотацію ``@tool``, але поточний скрипт класу її не має.
 
 .. rst-class:: classref-item-separator
 
@@ -3169,7 +3171,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/narrowing_conversion** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/narrowing_conversion>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when passing a floating-point value to a function that expects an integer (it will be converted and lose precision).
+Якщо встановлено значення **Попередження** або **Помилка**, створюється попередження або помилка відповідно під час передачі значення з плаваючою комою функції, яка очікує ціле число (воно буде перетворено та втратить точність).
 
 .. rst-class:: classref-item-separator
 
@@ -3181,7 +3183,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/native_method_override** = ``2`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/native_method_override>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a method in the script overrides a native method, because it may not behave as expected.
+Якщо встановлено значення **Попередження** або **Помилка**, створюється попередження або помилка відповідно, коли метод у скрипті перевизначає власний метод, оскільки він може поводитися неналежним чином.
 
 .. rst-class:: classref-item-separator
 
@@ -3193,7 +3195,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/onready_with_export** = ``2`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/onready_with_export>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when the ``@onready`` annotation is used together with the ``@export`` annotation, since it may not behave as expected.
+Якщо встановлено значення **Попередження** або **Помилка**, створюється попередження або помилка відповідно, коли анотація ``@onready`` використовується разом з анотацією ``@export``, оскільки вона може працювати неналежним чином.
 
 .. rst-class:: classref-item-separator
 
@@ -3205,7 +3207,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/redundant_await** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/redundant_await>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a function that is not a coroutine is called with await.
+Якщо встановлено значення **Warn** або **Error**, створює попередження або помилку відповідно, коли функція, яка не є корутиною, викликається з await.
 
 .. rst-class:: classref-item-separator
 
@@ -3217,7 +3219,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/redundant_static_unload** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/redundant_static_unload>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when the ``@static_unload`` annotation is used in a script without any static variables.
+Якщо встановлено значення **Попередження** або **Помилка**, створюється попередження або помилка відповідно, коли анотація ``@static_unload`` використовується у скрипті без будь-яких статичних змінних.
 
 .. rst-class:: classref-item-separator
 
@@ -3241,7 +3243,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/return_value_discarded** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/return_value_discarded>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a function without using its return value (by assigning it to a variable or using it as a function argument). These return values are sometimes used to indicate possible errors using the :ref:`Error<enum_@GlobalScope_Error>` enum.
+Якщо встановлено значення **Warn** або **Error**, генерує попередження або помилку відповідно під час виклику функції без використання її повернутого значення (шляхом присвоєння його змінній або використання його як аргументу функції). Ці повернуті значення іноді використовуються для позначення можливих помилок за допомогою переліку :ref:`Error<enum_@GlobalScope_Error>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3253,7 +3255,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/shadowed_global_identifier** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/shadowed_global_identifier>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when defining a local or member variable, signal, or enum that would have the same name as a built-in function or global class name, thus shadowing it.
+Якщо встановлено значення **Попередження** або **Помилка**, створює попередження або помилку відповідно під час визначення локальної змінної або змінної-члена, сигналу або переліку, які мають таку саму назву, як і вбудована функція або глобальний клас, таким чином затінюючи її.
 
 .. rst-class:: classref-item-separator
 
@@ -3265,7 +3267,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/shadowed_variable** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/shadowed_variable>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local variable or local constant shadows a member declared in the current class.
+Якщо встановлено значення **Попередження** або **Помилка**, створюється попередження або помилка відповідно, коли локальна змінна або локальна константа закриває член, оголошений у поточному класі.
 
 .. rst-class:: classref-item-separator
 
@@ -3277,7 +3279,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/shadowed_variable_base_class** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/shadowed_variable_base_class>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local variable or local constant shadows a member declared in a base class.
+Якщо встановлено значення **Попередження** або **Помилка**, створюється попередження або помилка відповідно, коли локальна змінна або локальна константа затьмарює член, оголошений у базовому класі.
 
 .. rst-class:: classref-item-separator
 
@@ -3289,7 +3291,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/standalone_expression** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/standalone_expression>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling an expression that may have no effect on the surrounding code, such as writing ``2 + 2`` as a statement.
+Якщо встановлено значення **Попередження** або **Помилка**, створює попередження або помилку відповідно під час виклику виразу, який може не впливати на навколишній код, наприклад, запис ``2 + 2`` як оператора.
 
 .. rst-class:: classref-item-separator
 
@@ -3301,7 +3303,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/standalone_ternary** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/standalone_ternary>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a ternary expression that may have no effect on the surrounding code, such as writing ``42 if active else 0`` as a statement.
+Якщо встановлено значення **Попередження** або **Помилка**, створює попередження або помилку відповідно під час виклику тернарного виразу, який може не впливати на навколишній код, наприклад, запис ``42 if active else 0`` як оператор.
 
 .. rst-class:: classref-item-separator
 
@@ -3313,7 +3315,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/static_called_on_instance** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/static_called_on_instance>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a static method from an instance of a class instead of from the class directly.
+Якщо встановлено значення **Попередження** або **Помилка**, створює попередження або помилку відповідно під час виклику статичного методу з екземпляра класу, а не безпосередньо з класу.
 
 .. rst-class:: classref-item-separator
 
@@ -3325,7 +3327,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unassigned_variable** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unassigned_variable>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when using a variable that wasn't previously assigned.
+Якщо встановлено значення **Попередження** або **Помилка**, створює попередження або помилку відповідно під час використання змінної, яка раніше не була призначена.
 
 .. rst-class:: classref-item-separator
 
@@ -3337,7 +3339,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unassigned_variable_op_assign** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unassigned_variable_op_assign>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when assigning a variable using an assignment operator like ``+=`` if the variable wasn't previously assigned.
+Якщо встановлено значення **Попередження** або **Помилка**, створює попередження або помилку відповідно під час присвоєння змінній за допомогою оператора присвоєння, такого як ``+=``, якщо змінна не була призначена раніше.
 
 .. rst-class:: classref-item-separator
 
@@ -3349,7 +3351,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unreachable_code** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unreachable_code>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when unreachable code is detected (such as after a ``return`` statement that will always be executed).
+Якщо встановлено значення **Warn** або **Error**, створюється попередження або помилка відповідно, коли виявляється недоступний код (наприклад, після оператора ``return``, який завжди виконуватиметься).
 
 .. rst-class:: classref-item-separator
 
@@ -3361,7 +3363,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unreachable_pattern** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unreachable_pattern>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an unreachable ``match`` pattern is detected.
+Якщо встановлено значення **Попередження** або **Помилка**, створюється попередження або помилка відповідно, коли виявляється недоступний шаблон ``match``.
 
 .. rst-class:: classref-item-separator
 
@@ -3373,7 +3375,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_call_argument** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_call_argument>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when using an expression whose type may not be compatible with the function parameter expected.
+Якщо встановлено значення **Попередження** або **Помилка**, створюється попередження або помилка відповідно, якщо використовується вираз, тип якого може бути несумісним з очікуваним параметром функції.
 
 .. rst-class:: classref-item-separator
 
@@ -3385,7 +3387,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_cast** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_cast>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a :ref:`Variant<class_Variant>` value is cast to a non-Variant.
+Якщо встановлено значення **Попередження** або **Помилка**, створює попередження або помилку відповідно, коли значення :ref:`Variant<class_Variant>` перетворюється на не-Variant.
 
 .. rst-class:: classref-item-separator
 
@@ -3397,7 +3399,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_method_access** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_method_access>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a method whose presence is not guaranteed at compile-time in the class.
+Якщо встановлено значення **Попередження** або **Помилка**, створює попередження або помилку відповідно під час виклику методу, наявність якого не гарантується під час компіляції в класі.
 
 .. rst-class:: classref-item-separator
 
@@ -3409,7 +3411,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_property_access** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_property_access>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when accessing a property whose presence is not guaranteed at compile-time in the class.
+Якщо встановлено значення **Попередження** або **Помилка**, створює попередження або помилку відповідно під час доступу до властивості, наявність якої не гарантується під час компіляції в класі.
 
 .. rst-class:: classref-item-separator
 
@@ -3421,7 +3423,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_void_return** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_void_return>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when returning a call from a ``void`` function when such call cannot be guaranteed to be also ``void``.
+Якщо встановлено значення **Попередження** або **Помилка**, створює попередження або помилку відповідно під час повернення виклику функції ``void``, коли не можна гарантувати, що такий виклик також буде ``void``.
 
 .. rst-class:: classref-item-separator
 
@@ -3433,9 +3435,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/untyped_declaration** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/untyped_declaration>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a variable or parameter has no static type, or if a function has no static return type.
+Якщо встановлено значення **Попередження** або **Помилка**, створюється попередження або помилка відповідно, коли змінна або параметр не має статичного типу, або якщо функція не має статичного типу повернення.
 
-\ **Note:** This warning is recommended together with :ref:`EditorSettings.text_editor/completion/add_type_hints<class_EditorSettings_property_text_editor/completion/add_type_hints>` to help achieve type safety.
+\ **Примітка:** Це попередження рекомендується використовувати разом із :ref:`EditorSettings.text_editor/completion/add_type_hints<class_EditorSettings_property_text_editor/completion/add_type_hints>` для досягнення безпеки типів.
 
 .. rst-class:: classref-item-separator
 
@@ -3447,7 +3449,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_local_constant** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_local_constant>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local constant is never used.
+Якщо встановлено значення **Попередження** або **Помилка**, створюється попередження або помилка відповідно, якщо локальна константа ніколи не використовується.
 
 .. rst-class:: classref-item-separator
 
@@ -3459,7 +3461,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_parameter** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_parameter>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a function parameter is never used.
+Якщо встановлено значення **Попередження** або **Помилка**, створює попередження або помилку відповідно, якщо параметр функції ніколи не використовується.
 
 .. rst-class:: classref-item-separator
 
@@ -3471,7 +3473,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_private_class_variable** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_private_class_variable>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a private member variable is never used.
+Якщо встановлено значення **Попередження** або **Помилка**, створюється попередження або помилка відповідно, коли приватна змінна-член ніколи не використовується.
 
 .. rst-class:: classref-item-separator
 
@@ -3483,7 +3485,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_signal** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_signal>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a signal is declared but never explicitly used in the class.
+Якщо встановлено значення **Попередження** або **Помилка**, створюється попередження або помилка відповідно, коли сигнал оголошено, але ніколи явно не використовується в класі.
 
 .. rst-class:: classref-item-separator
 
@@ -3495,7 +3497,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_variable** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_variable>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local variable is unused.
+Якщо встановлено значення **Попередження** або **Помилка**, створюється попередження або помилка відповідно, коли локальна змінна не використовується.
 
 .. rst-class:: classref-item-separator
 
@@ -4775,19 +4777,19 @@ Hotspot для користувацького зображення курсор�
 
 :ref:`int<class_int>` **display/window/size/initial_position_type** = ``1`` :ref:`🔗<class_ProjectSettings_property_display/window/size/initial_position_type>`
 
-Main window initial position.
+Початкове положення головного вікна.
 
-\ ``0`` - "Absolute", :ref:`display/window/size/initial_position<class_ProjectSettings_property_display/window/size/initial_position>` is used to set window position.
+\ ``0`` - "Абсолютне", :ref:`display/window/size/initial_position<class_ProjectSettings_property_display/window/size/initial_position>` використовується для встановлення положення вікна.
 
-\ ``1`` - "Primary Screen Center".
+\ ``1`` - "Центр основного екрана".
 
-\ ``3`` - "Other Screen Center", :ref:`display/window/size/initial_screen<class_ProjectSettings_property_display/window/size/initial_screen>` is used to set the screen.
+\ ``3`` - "Центр іншого екрана", :ref:`display/window/size/initial_screen<class_ProjectSettings_property_display/window/size/initial_screen>` використовується для встановлення екрана.
 
-\ ``4`` - "Center of Screen With Mouse Pointer".
+\ ``4`` - "Центр екрана з вказівником миші".
 
-\ ``5`` - "Center of Screen With Keyboard Focus".
+\ ``5`` - "Центр екрана з фокусом клавіатури".
 
-\ **Note:** This setting only affects the exported project, or when the project is run from the command line. In the editor, the value of :ref:`EditorSettings.run/window_placement/rect<class_EditorSettings_property_run/window_placement/rect>` is used instead.
+\ **Примітка:** Цей параметр впливає лише на експортований проект або коли проект запускається з командного рядка. У редакторі замість нього використовується значення :ref:`EditorSettings.run/window_placement/rect<class_EditorSettings_property_run/window_placement/rect>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4965,17 +4967,17 @@ Main window initial position.
 
 :ref:`String<class_String>` **display/window/stretch/aspect** = ``"keep"`` :ref:`🔗<class_ProjectSettings_property_display/window/stretch/aspect>`
 
-Defines how the aspect ratio of the base size is preserved when stretching to fit the resolution of the window or screen.
+Визначає, як зберігається співвідношення сторін базового розміру під час розтягування, щоб відповідати роздільній здатності вікна або екрана.
 
-\ ``"ignore"``: Ignore the aspect ratio when stretching the screen. This means that the original resolution will be stretched to exactly fill the screen, even if it's wider or narrower. This may result in non-uniform stretching: things looking wider or taller than designed.
+\ ``"ignore"``: Ігнорувати співвідношення сторін під час розтягування екрана. Це означає, що початкова роздільна здатність буде розтягнута точно на весь екран, навіть якщо він ширший або вужчий. Це може призвести до нерівномірного розтягування: елементи виглядатимуть ширшими або вищими, ніж було задумано.
 
-\ ``"keep"``: Keep aspect ratio when stretching the screen. This means that the viewport retains its original size regardless of the screen resolution, and black bars will be added to the top/bottom of the screen ("letterboxing") or the sides ("pillarboxing").
+\ ``"keep"``: Зберігати співвідношення сторін під час розтягування екрана. Це означає, що область перегляду зберігає свій початковий розмір незалежно від роздільної здатності екрана, а чорні смуги будуть додані зверху/знизу екрана ("letterboxing") або з боків ("pillarboxing").
 
-\ ``"keep_width"``: Keep aspect ratio when stretching the screen. If the screen is wider than the base size, black bars are added at the left and right (pillarboxing). But if the screen is taller than the base resolution, the viewport will be grown in the vertical direction (and more content will be visible at the bottom). You can also think of this as "Expand Vertically".
+\ ``"keep_width"``: Зберігати співвідношення сторін під час розтягування екрана. Якщо екран ширший за базовий розмір, чорні смуги додаються ліворуч і праворуч (pillarboxing). Але якщо екран вищий за базову роздільну здатність, область перегляду буде збільшена у вертикальному напрямку (і більше контенту буде видно внизу). Ви також можете уявити це як «Розгорнути вертикально».
 
-\ ``"keep_height"``: Keep aspect ratio when stretching the screen. If the screen is taller than the base size, black bars are added at the top and bottom (letterboxing). But if the screen is wider than the base resolution, the viewport will be grown in the horizontal direction (and more content will be visible to the right). You can also think of this as "Expand Horizontally".
+\ ``«keep_height»``: Зберігати співвідношення сторін під час розтягування екрана. Якщо екран вищий за базовий розмір, зверху та знизу додаються чорні смуги (літтербокс). Але якщо екран ширший за базову роздільну здатність, область перегляду буде збільшена в горизонтальному напрямку (і більше контенту буде видно праворуч). Ви також можете уявити це як «Розгорнути горизонтально».
 
-\ ``"expand"``: Keep aspect ratio when stretching the screen, but keep neither the base width nor height. Depending on the screen aspect ratio, the viewport will either be larger in the horizontal direction (if the screen is wider than the base size) or in the vertical direction (if the screen is taller than the original size).
+\ ``«expand»``: Зберігати співвідношення сторін під час розтягування екрана, але не зберігати ні ширину, ні висоту основи. Залежно від співвідношення сторін екрана, область перегляду буде більшою або в горизонтальному напрямку (якщо екран ширший за базовий розмір), або у вертикальному напрямку (якщо екран вищий за початковий розмір).
 
 .. rst-class:: classref-item-separator
 
@@ -4987,13 +4989,13 @@ Defines how the aspect ratio of the base size is preserved when stretching to fi
 
 :ref:`String<class_String>` **display/window/stretch/mode** = ``"disabled"`` :ref:`🔗<class_ProjectSettings_property_display/window/stretch/mode>`
 
-Defines how the base size is stretched to fit the resolution of the window or screen.
+Визначає, як базовий розмір розтягується відповідно до роздільної здатності вікна або екрана.
 
-\ ``"disabled"``: No stretching happens. One unit in the scene corresponds to one pixel on the screen. In this mode, :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` has no effect. Recommended for non-game applications.
+\ ``"disabled"``: Розтягування не відбувається. Одна одиниця в сцені відповідає одному пікселю на екрані. У цьому режимі :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` не має жодного ефекту. Рекомендовано для неігрових програм.
 
-\ ``"canvas_items"``: The base size specified in width and height in the project settings is stretched to cover the whole screen (taking :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` into account). This means that everything is rendered directly at the target resolution. 3D is unaffected, while in 2D, there is no longer a 1:1 correspondence between sprite pixels and screen pixels, which may result in scaling artifacts. Recommended for most games that don't use a pixel art aesthetic, although it is possible to use this stretch mode for pixel art games too (especially in 3D).
+\ ``"canvas_items"``: Базовий розмір, вказаний у ширині та висоті в налаштуваннях проекту, розтягується, щоб охопити весь екран (з урахуванням :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>`). Це означає, що все рендериться безпосередньо з цільовою роздільною здатністю. 3D не змінюється, тоді як у 2D більше немає відповідності 1:1 між пікселями спрайта та пікселями екрана, що може призвести до артефактів масштабування. Рекомендовано для більшості ігор, які не використовують естетику піксельного мистецтва, хоча цей режим розтягування також можна використовувати для ігор з піксельним мистецтвом (особливо в 3D).
 
-\ ``"viewport"``: The size of the root :ref:`Viewport<class_Viewport>` is set precisely to the base size specified in the Project Settings' Display section. The scene is rendered to this viewport first. Finally, this viewport is scaled to fit the screen (taking :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` into account). Recommended for games that use a pixel art aesthetic.
+ ``"viewport"``: Розмір кореневого елемента :ref:`Viewport<class_Viewport>` встановлюється точно до базового розміру, зазначеного в розділі «Відображення» в налаштуваннях проекту. Спочатку сцена рендериться в цей viewport. Зрештою, цей viewport масштабується, щоб він помістився на екрані (з урахуванням :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>`). Рекомендовано для ігор, що використовують естетику піксельної графіки.
 
 .. rst-class:: classref-item-separator
 
@@ -5017,13 +5019,13 @@ Defines how the base size is stretched to fit the resolution of the window or sc
 
 :ref:`String<class_String>` **display/window/stretch/scale_mode** = ``"fractional"`` :ref:`🔗<class_ProjectSettings_property_display/window/stretch/scale_mode>`
 
-The policy to use to determine the final scale factor for 2D elements. This affects how :ref:`display/window/stretch/scale<class_ProjectSettings_property_display/window/stretch/scale>` is applied, in addition to the automatic scale factor determined by :ref:`display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>`.
+Політика, яка використовується для визначення кінцевого коефіцієнта масштабування для 2D-елементів. Це впливає на те, як застосовується :ref:`display/window/stretch/scale<class_ProjectSettings_property_display/window/stretch/scale>`, на додаток до автоматичного коефіцієнта масштабування, визначеного :ref:`display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>`.
 
-\ ``"fractional"``: The scale factor will not be modified.
+\ ``"fractional"``: Коефіцієнт масштабування не буде змінено.
 
-\ ``"integer"``: The scale factor will be floored to an integer value, which means that the screen size will always be an integer multiple of the base viewport size. This provides a crisp pixel art appearance.
+\ ``"integer"``: Коефіцієнт масштабування буде зведено до цілочисельного значення, що означає, що розмір екрана завжди буде цілочисельним кратним базового розміру області перегляду. Це забезпечує чіткий вигляд піксельної графіки.
 
-\ **Note:** When using integer scaling with a stretch mode, resizing the window to be smaller than the base viewport size will clip the contents. Consider preventing that by setting :ref:`Window.min_size<class_Window_property_min_size>` to the same value as the base viewport size defined in :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` and :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`.
+\ **Примітка:** Під час використання цілочисельного масштабування з режимом розтягування зміна розміру вікна, меншого за базовий розмір області перегляду, призведе до обрізання вмісту. Спробуйте запобігти цьому, встановивши :ref:`Window.min_size<class_Window_property_min_size>` на те саме значення, що й базовий розмір області перегляду, визначений у :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` та :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5035,11 +5037,11 @@ The policy to use to determine the final scale factor for 2D elements. This affe
 
 :ref:`bool<class_bool>` **display/window/subwindows/embed_subwindows** = ``true`` :ref:`🔗<class_ProjectSettings_property_display/window/subwindows/embed_subwindows>`
 
-If ``true``, subwindows are embedded in the main window (this is also called single-window mode). Single-window mode can be faster as it does not need to create a separate window for every popup and tooltip, which can be a slow operation depending on the operating system and rendering method in use.
+Якщо значення ``true``, підвікна вбудовуються в головне вікно (це також називається режимом одного вікна). Режим одного вікна може бути швидшим, оскільки не потрібно створювати окреме вікно для кожного спливаючого вікна та підказки, що може бути повільною операцією залежно від операційної системи та методу рендерингу, що використовується.
 
-If ``false``, subwindows are created as separate windows (this is also called multi-window mode). This allows them to be moved outside the main window and use native operating system window decorations.
+Якщо значення ``false``, підвікна створюються як окремі вікна (це також називається режимом кількох вікон). Це дозволяє переміщувати їх за межі головного вікна та використовувати власні декорації вікон операційної системи.
 
-This is equivalent to :ref:`EditorSettings.interface/editor/single_window_mode<class_EditorSettings_property_interface/editor/single_window_mode>` in the editor.
+Це еквівалентно :ref:`EditorSettings.interface/editor/single_window_mode<class_EditorSettings_property_interface/editor/single_window_mode>` у редакторі.
 
 .. rst-class:: classref-item-separator
 
@@ -5165,7 +5167,7 @@ V-Sync може бути вимкнено на командному рядку �
 
 :ref:`int<class_int>` **editor/movie_writer/audio_bit_depth** = ``16`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/audio_bit_depth>`
 
-Number of bits per audio sample written to the ``.avi`` file. Only 16 and 32-bit are supported.
+Кількість бітів на аудіосемпл, записаних у файл ``.avi``. Підтримуються лише 16- та 32-бітні розряди.
 
 .. rst-class:: classref-item-separator
 
@@ -5537,7 +5539,7 @@ Godot має 3 вбудовані :ref:`MovieWriter<class_MovieWriter>`:
 
 :ref:`int<class_int>` **gui/common/drag_threshold** = ``10`` :ref:`🔗<class_ProjectSettings_property_gui/common/drag_threshold>`
 
-The minimum distance the mouse cursor must move while pressed before a drag operation begins in the default viewport. For custom viewports see :ref:`Viewport.gui_drag_threshold<class_Viewport_property_gui_drag_threshold>`.
+Мінімальна відстань, на яку курсор миші повинен переміститися під час натискання, перш ніж розпочнеться операція перетягування у стандартному вікні перегляду. Інформацію про користувацькі вікна перегляду див. у :ref:`Viewport.gui_drag_threshold<class_Viewport_property_gui_drag_threshold>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5549,13 +5551,13 @@ The minimum distance the mouse cursor must move while pressed before a drag oper
 
 :ref:`int<class_int>` **gui/common/show_focus_state_on_pointer_event** = ``1`` :ref:`🔗<class_ProjectSettings_property_gui/common/show_focus_state_on_pointer_event>`
 
-Determines whether a :ref:`Control<class_Control>` should visually indicate focus when said focus is gained using a mouse or touch input.
+Визначає, чи має :ref:`Control<class_Control>` візуально вказувати фокус, коли цей фокус отримано за допомогою миші або сенсорного введення.
 
-- **Never** (``0``) show the focused state for mouse/touch input.
+- **Ніколи** (``0``) не показувати стан фокусування для введення мишею/сенсорним введенням.
 
-- **Control Supports Keyboard Input** (``1``) shows the focused state even when gained via mouse/touch input (similar to how browsers handle focus).
+- **Control підтримує введення з клавіатури** (``1``) показує стан фокусування, навіть якщо фокус отримано за допомогою миші/сенсорного введення (подібно до того, як браузери обробляють фокус).
 
-- **Always** (``2``) show the focused state, even if said focus was gained via mouse/touch input.
+- **Завжди** (``2``) показувати стан фокусування, навіть якщо цей фокус отримано за допомогою миші/сенсорного введення.
 
 .. rst-class:: classref-item-separator
 
@@ -5579,17 +5581,17 @@ Determines whether a :ref:`Control<class_Control>` should visually indicate focu
 
 :ref:`int<class_int>` **gui/common/swap_cancel_ok** = ``0`` :ref:`🔗<class_ProjectSettings_property_gui/common/swap_cancel_ok>`
 
-How to position the Cancel and OK buttons in the project's :ref:`AcceptDialog<class_AcceptDialog>` windows. Different platforms have different conventions for this, which can be overridden through this setting.
+Як розташувати кнопки «Скасувати» та «ОК» у вікнах :ref:`AcceptDialog<class_AcceptDialog>` проекту. Різні платформи мають різні домовленості для цього, які можна змінити за допомогою цього налаштування.
 
-- **Auto** follows the platform convention: OK first on Windows, KDE, and LXQt; Cancel first on macOS and other Linux desktop environments.
+- **Auto** дотримується домовленості платформи: спочатку «ОК» у Windows, KDE та LXQt; спочатку «Скасувати» у macOS та інших середовищах робочого столу Linux.
 
-- **Cancel First** forces the Cancel/OK ordering.
+- **Спочатку «Скасувати»** примусово встановлює порядок «Скасувати»/«ОК».
 
-- **OK First** forces the OK/Cancel ordering.
+- **Спочатку «ОК»** примусово встановлює порядок «ОК»/«Скасувати».
 
-To check if these buttons are swapped at runtime, use :ref:`DisplayServer.get_swap_cancel_ok()<class_DisplayServer_method_get_swap_cancel_ok>`.
+Щоб перевірити, чи ці кнопки помінялися місцями під час виконання, використовуйте :ref:`DisplayServer.get_swap_cancel_ok()<class_DisplayServer_method_get_swap_cancel_ok>`.
 
-\ **Note:** This doesn't affect native dialogs such as the ones spawned by :ref:`DisplayServer.dialog_show()<class_DisplayServer_method_dialog_show>`.
+\ **Примітка:** Це не впливає на власні діалогові вікна, такі як ті, що створюються :ref:`DisplayServer.dialog_show()<class_DisplayServer_method_dialog_show>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5613,7 +5615,7 @@ To check if these buttons are swapped at runtime, use :ref:`DisplayServer.get_sw
 
 :ref:`bool<class_bool>` **gui/fonts/dynamic_fonts/use_oversampling** = ``true`` :ref:`🔗<class_ProjectSettings_property_gui/fonts/dynamic_fonts/use_oversampling>`
 
-If set to ``true`` and :ref:`display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>` is set to ``"canvas_items"``, font and :ref:`DPITexture<class_DPITexture>` oversampling is enabled in the main window. Use :ref:`Viewport.oversampling<class_Viewport_property_oversampling>` to control oversampling in other viewports and windows.
+Якщо встановлено значення ``true``, а :ref:`display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>` має значення ``"canvas_items"``, у головному вікні вмикається передискретизація шрифтів та :ref:`DPITexture<class_DPITexture>`. Використовуйте :ref:`Viewport.oversampling<class_Viewport_property_oversampling>` для керування передискретизацією в інших вікнах та областях перегляду.
 
 .. rst-class:: classref-item-separator
 
@@ -5723,9 +5725,9 @@ MSDF Завантаження шрифту може поєднуватися з 
 
 :ref:`float<class_float>` **gui/theme/default_theme_scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_gui/theme/default_theme_scale>`
 
-За замовчуванням коефіцієнт ваги :ref:`Control<class_Control>`, коли не перейде :ref:`Theme<class_Theme>`.
+Коефіцієнт масштабування за замовчуванням для :ref:`Control<class_Control>`, якщо він не перевизначений :ref:`Theme<class_Theme>`.
 
-\ **Примітка:** Цей об'єкт знаходиться лише в тому випадку, коли проект починається. Щоб змінити масштаб за замовчуванням в режимі runtime, встановіть :ref:`ThemeDB.fallback_base_scale<class_ThemeDB_property_fallback_base_scale>`.
+\ **Примітка:** Ця властивість зчитується лише під час запуску проекту. Щоб змінити масштаб теми за замовчуванням під час виконання, встановіть замість цього :ref:`ThemeDB.fallback_base_scale<class_ThemeDB_property_fallback_base_scale>`. Однак, щоб налаштувати масштаб усіх 2D-елементів під час виконання, краще використовувати :ref:`Window.content_scale_factor<class_Window_property_content_scale_factor>` на кореневому вузлі :ref:`Window<class_Window>` (оскільки це також впливає на перевизначені :ref:`Theme<class_Theme>`). Див. :doc:`Кілька роздільних здатностей <../tutorials/rendering/multiple_resolutions>` у документації для отримання детальної інформації.
 
 .. rst-class:: classref-item-separator
 
@@ -5851,9 +5853,9 @@ MSDF Завантаження шрифту може поєднуватися з 
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_close_dialog** :ref:`🔗<class_ProjectSettings_property_input/ui_close_dialog>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to close a dialog window.
+За замовчуванням :ref:`InputEventAction<class_InputEventAction>` закриває діалогове вікно.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Примітка:** Дії за замовчуванням ``ui_*`` не можна видалити, оскільки вони необхідні для внутрішньої логіки кількох :ref:`Control<class_Control>`. Однак події, призначені дії, можна змінити.
 
 .. rst-class:: classref-item-separator
 
@@ -5865,7 +5867,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to close a dialog window
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_close_dialog.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_close_dialog.macos>`
 
-macOS specific override for the shortcut to close a dialog window.
+Специфічне для macOS перевизначення комбінації клавіш для закриття діалогового вікна.
 
 .. rst-class:: classref-item-separator
 
@@ -5947,9 +5949,9 @@ macOS specific override for the shortcut to close a dialog window.
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_delete** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_delete>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to delete the selected file in a :ref:`FileDialog<class_FileDialog>`.
+За замовчуванням :ref:`InputEventAction<class_InputEventAction>` видаляє вибраний файл у :ref:`FileDialog<class_FileDialog>`.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Примітка:** За замовчуванням дії ``ui_*`` не можна видалити, оскільки вони необхідні для внутрішньої логіки кількох :ref:`Control<class_Control>`. Однак події, призначені дії, можна змінити.
 
 .. rst-class:: classref-item-separator
 
@@ -5961,9 +5963,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to delete the selected f
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_find** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_find>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to open file filter in a :ref:`FileDialog<class_FileDialog>`.
+За замовчуванням :ref:`InputEventAction<class_InputEventAction>` відкриває фільтр файлу в :ref:`FileDialog<class_FileDialog>`.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Примітка:** Дії за замовчуванням ``ui_*`` не можна видалити, оскільки вони необхідні для внутрішньої логіки кількох :ref:`Control<class_Control>`. Однак події, призначені дії, можна змінити.
 
 .. rst-class:: classref-item-separator
 
@@ -5975,9 +5977,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to open file filter in a
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_focus_path** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_focus_path>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to focus path edit field in a :ref:`FileDialog<class_FileDialog>`.
+За замовчуванням :ref:`InputEventAction<class_InputEventAction>` фокусується на полі редагування шляху в :ref:`FileDialog<class_FileDialog>`.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Примітка:** Дії ``ui_*`` за замовчуванням не можна видалити, оскільки вони необхідні для внутрішньої логіки кількох :ref:`Control<class_Control>`. Однак події, призначені дії, можна змінити.
 
 .. rst-class:: classref-item-separator
 
@@ -5989,7 +5991,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to focus path edit field
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_focus_path.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_focus_path.macos>`
 
-macOS specific override for the shortcut to focus path edit field in :ref:`FileDialog<class_FileDialog>`.
+Специфічне для macOS перевизначення комбінації клавіш для фокусування поля редагування шляху в :ref:`FileDialog<class_FileDialog>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9945,15 +9947,15 @@ Godot використовує чергу повідомлення для вид
 
 :ref:`String<class_String>` **navigation/2d/navigation_engine** = ``"DEFAULT"`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/navigation_engine>`
 
-Sets which navigation engine to use for 2D navigation.
+Встановлює, який навігаційний механізм використовувати для 2D-навігації.
 
-\ **DEFAULT** is equivalent to **GodotNavigation2D**, but may change in future releases. Select an explicit implementation if you want to ensure that your project stays on the same engine.
+\ **DEFAULT** еквівалентно **GodotNavigation2D**, але може змінитися в майбутніх випусках. Виберіть явну реалізацію, якщо ви хочете, щоб ваш проект залишався на тому самому механізмі.
 
-\ **GodotNavigation2D** is Godot's internal 2D navigation engine.
+\ **GodotNavigation2D** – це внутрішній 2D-навігаційний механізм Godot.
 
-\ **Dummy** is a 2D navigation server that does nothing and returns only dummy values, effectively disabling all 2D navigation functionality.
+\ **Dummy** – це 2D-навігаційний сервер, який нічого не робить і повертає лише фіктивні значення, фактично вимикаючи всі функції 2D-навігації.
 
-Third-party modules can add other navigation engines to select with this setting.
+Сторонні модулі можуть додавати інші навігаційні механізми для вибору за допомогою цього налаштування.
 
 .. rst-class:: classref-item-separator
 
@@ -10073,15 +10075,15 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`String<class_String>` **navigation/3d/navigation_engine** = ``"DEFAULT"`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/navigation_engine>`
 
-Sets which navigation engine to use for 3D navigation.
+Встановлює, який навігаційний механізм використовувати для 3D-навігації.
 
-\ **DEFAULT** is equivalent to **GodotNavigation3D**, but may change in future releases. Select an explicit implementation if you want to ensure that your project stays on the same engine.
+\ **DEFAULT** еквівалентно **GodotNavigation3D**, але може змінитися в майбутніх випусках. Виберіть явну реалізацію, якщо ви хочете, щоб ваш проект залишався на тому самому механізмі.
 
-\ **GodotNavigation3D** is Godot's internal 3D navigation engine.
+\ **GodotNavigation3D** – це внутрішній 3D-навігаційний механізм Godot.
 
-\ **Dummy** is a 3D navigation server that does nothing and returns only dummy values, effectively disabling all 3D navigation functionality.
+\ **Dummy** – це 3D-навігаційний сервер, який нічого не робить і повертає лише фіктивні значення, фактично вимикаючи всі функції 3D-навігації.
 
-Third-party modules can add other navigation engines to select with this setting.
+Сторонні модулі можуть додавати інші навігаційні механізми для вибору за допомогою цього налаштування.
 
 .. rst-class:: classref-item-separator
 
@@ -10297,7 +10299,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`int<class_int>` **network/limits/unix/connect_timeout_seconds** = ``30`` :ref:`🔗<class_ProjectSettings_property_network/limits/unix/connect_timeout_seconds>`
 
-Timeout (in seconds) for connection attempts using UNIX domain socket.
+Тайм-аут (у секундах) для спроб підключення за допомогою сокета домену UNIX.
 
 .. rst-class:: classref-item-separator
 
@@ -10321,9 +10323,9 @@ Timeout (in seconds) for connection attempts using UNIX domain socket.
 
 :ref:`String<class_String>` **network/tls/certificate_bundle_override** = ``""`` :ref:`🔗<class_ProjectSettings_property_network/tls/certificate_bundle_override>`
 
-The CA certificates bundle to use for TLS connections. If this is set to a non-empty value, this will *override* Godot's default `Mozilla certificate bundle <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-bundle.crt>`__. If left empty, the default certificate bundle will be used.
+Пакет сертифікатів CA, який використовуватиметься для TLS-з’єднань. Якщо для цього поля встановлено непусте значення, це *перезапише* стандартний пакет сертифікатів Mozilla від Godot `https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-bundle.crt <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-bundle.crt>`__. Якщо залишити порожнім, буде використано стандартний пакет сертифікатів.
 
-If in doubt, leave this setting empty.
+У разі сумнівів залиште це налаштування порожнім.
 
 .. rst-class:: classref-item-separator
 
@@ -10689,17 +10691,17 @@ If in doubt, leave this setting empty.
 
 :ref:`String<class_String>` **physics/3d/physics_engine** = ``"DEFAULT"`` :ref:`🔗<class_ProjectSettings_property_physics/3d/physics_engine>`
 
-Sets which physics engine to use for 3D physics.
+Встановлює фізичний рушій для 3D-фізики.
 
-\ **DEFAULT** is currently equivalent to **GodotPhysics3D**, but may change in future releases. Select an explicit implementation if you want to ensure that your project stays on the same engine.
+\ **DEFAULT** наразі еквівалентний **GodotPhysics3D**, але може змінитися в майбутніх випусках. Виберіть явну реалізацію, якщо ви хочете, щоб ваш проект залишався на тому самому рушії.
 
-\ **GodotPhysics3D** is Godot's internal 3D physics engine.
+\ **GodotPhysics3D** – це внутрішній 3D-фізичний рушій Godot.
 
-\ **Jolt Physics** is an alternative physics engine that is generally faster and more reliable than **GodotPhysics3D**. Jolt Physics is the default for projects created starting in Godot 4.6.
+\ **Jolt Physics** – це альтернативний фізичний рушій, який загалом швидший і надійніший, ніж **GodotPhysics3D**. Jolt Physics є рушієм за замовчуванням для проектів, створених, починаючи з Godot 4.6.
 
-\ **Dummy** is a 3D physics server that does nothing and returns only dummy values, effectively disabling all 3D physics functionality.
+\ **Dummy** – це сервер 3D-фізики, який нічого не робить і повертає лише фіктивні значення, фактично вимикаючи всі функції 3D-фізики.
 
-Third-party extensions and modules can add other physics engines to select with this setting.
+Розширення та модулі сторонніх розробників можуть додавати інші фізичні рушії для вибору за допомогою цього налаштування.
 
 .. rst-class:: classref-item-separator
 
@@ -10905,11 +10907,17 @@ Third-party extensions and modules can add other physics engines to select with 
 
 :ref:`int<class_int>` **physics/common/physics_ticks_per_second** = ``60`` :ref:`🔗<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`
 
-Кількість фіксованих ітерацій за секунду. Це визначає частоту запуску фізичного моделювання та методів :ref:`Node._physics_process()<class_Node_private_method__physics_process>`. Див. також :ref:`application/run/max_fps<class_ProjectSettings_property_application/run/max_fps>`.
+Кількість фіксованих ітерацій за секунду. Це визначає частоту запуску фізичного моделювання та методу :ref:`Node._physics_process()<class_Node_private_method__physics_process>`.
+
+Використання процесора масштабується приблизно пропорційно частоті тактів фізики. Однак, при дуже низькій частоті тактів (зазвичай нижче 30), поведінка фізики може бути порушена. Вхідні дані також можуть стати менш чутливими при низькій частоті тактів, оскільки може виникнути розрив між реєстрацією вхідних даних та відповіддю на наступному фізичному такті. Високі частоти тактів забезпечують точнішу фізичну симуляцію, особливо для швидко рухомих об'єктів. Наприклад, гоночні ігри можуть отримати користь від збільшення частоти тактів вище стандартної 60.
+
+Див. також :ref:`application/run/max_fps<class_ProjectSettings_property_application/run/max_fps>`.
 
 \ **Примітка:** Ця властивість зчитується лише під час запуску проекту. Щоб змінити FPS фізики під час виконання, встановіть замість цього :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`.
 
-\ **Примітка:** На кожен кадр рендерингу можна моделювати максимум :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>`. Якщо для рендерингу потрібно моделювати більше фізичних тактів на кожен кадр рендерингу, щоб встигати за рендерингом, проект виглядатиме сповільненим (навіть якщо ``delta`` послідовно використовується у фізичних розрахунках). Тому рекомендується також збільшити :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>`, якщо :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` значно перевищує значення за замовчуванням.
+\ **Примітка:** Тільки :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` фізичних тактів можуть бути імітовані максимум на один кадр рендерингу. Якщо для відрендерення потрібно змоделювати більше фізичних тактів на кожен кадр, щоб встигати за рендерингом, проєкт виглядатиме сповільненим (навіть якщо ``delta`` послідовно використовується у фізичних розрахунках). Тому рекомендується також збільшити :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>`, якщо :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` значно збільшується вище значення за замовчуванням.
+
+\ **Примітка:** Розгляньте можливість увімкнення :doc:`фізичної інтерполяції <../tutorials/physics/interpolation/index>`, якщо ви змінюєте :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` на значення, не кратне ``60``. Використання фізичної інтерполяції дозволить уникнути тремтіння, коли частота оновлення монітора та частота оновлення фізики не зовсім збігаються.
 
 .. rst-class:: classref-item-separator
 
@@ -11517,11 +11525,11 @@ Third-party extensions and modules can add other physics engines to select with 
 
 :ref:`bool<class_bool>` **rendering/anti_aliasing/quality/use_debanding** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>`
 
-If ``true``, uses a fast dithering filter just before transforming floating point color values to integer color values to make banding significantly less visible. Debanding is applied at different steps of the rendering process depending on the rendering method and :ref:`rendering/viewport/hdr_2d<class_ProjectSettings_property_rendering/viewport/hdr_2d>` setting.
+Якщо ``true``, використовується фільтр швидкого дизерингу безпосередньо перед перетворенням значень кольорів з плаваючою комою на цілочисельні значення кольорів, щоб зробити смуги значно менш помітними. Дебендинг застосовується на різних етапах процесу рендерингу залежно від методу рендерингу та налаштування :ref:`rendering/viewport/hdr_2d<class_ProjectSettings_property_rendering/viewport/hdr_2d>`.
 
-In some cases, debanding may introduce a slightly noticeable dithering pattern. It's recommended to enable debanding only when actually needed since the dithering pattern will make lossless-compressed screenshots larger.
+У деяких випадках дебендинг може призвести до дещо помітного шаблону дизерингу. Рекомендується вмикати дебендинг лише тоді, коли це дійсно потрібно, оскільки шаблон дизерингу зробить стиснуті без втрат знімки екрана більшими.
 
-\ **Note:** This property is only read when the project starts and configures :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` and :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>` of the root :ref:`Viewport<class_Viewport>`. When :ref:`rendering/viewport/hdr_2d<class_ProjectSettings_property_rendering/viewport/hdr_2d>` is disabled, you should additionally set the :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>` of other viewports in your project. To set debanding at run-time, the property that should be set depends on the renderer: Forward+ only uses :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>` and Mobile uses both :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` and :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>`.
+\ **Примітка:** Ця властивість зчитується лише під час запуску проекту та налаштування :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` та :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>` кореневого :ref:`Viewport<class_Viewport>`. Коли :ref:`rendering/viewport/hdr_2d<class_ProjectSettings_property_rendering/viewport/hdr_2d>` вимкнено, вам слід додатково встановити :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>` інших вікон перегляду у вашому проекті. Щоб встановити дебандинг під час виконання, властивість, яку слід встановити, залежить від рендерера: Forward+ використовує лише :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>`, а Mobile використовує як :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>`, так і :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11717,7 +11725,7 @@ In some cases, debanding may introduce a slightly noticeable dithering pattern. 
 
 :ref:`bool<class_bool>` **rendering/environment/screen_space_reflection/half_size** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/screen_space_reflection/half_size>`
 
-If ``true``, screen-space reflections will be rendered at half size and then upscaled before being added to the scene. This is faster but may look pixelated or cause flickering. If ``false``, screen-space reflections will be rendered at full size.
+Якщо значення ``true``, відображення в просторі екрана будуть відображатися вдвічі меншого розміру, а потім масштабуватися перед додаванням до сцени. Це швидше, але може виглядати пікселізованим або спричиняти мерехтіння. Якщо значення ``false``, відображення в просторі екрана будуть відображатися в повному розмірі.
 
 .. rst-class:: classref-item-separator
 
@@ -12957,17 +12965,17 @@ OIDN використовуватиме прискорення GPU при ная
 
 :ref:`String<class_String>` **rendering/renderer/rendering_method** = ``"forward_plus"`` :ref:`🔗<class_ProjectSettings_property_rendering/renderer/rendering_method>`
 
-Sets the renderer that will be used by the project. Options are:
+Встановлює рендерер, який використовуватиметься проектом. Варіанти:
 
-\ **forward_plus** (Forward+): High-end renderer designed for desktop devices. Has a higher base overhead, but scales well with complex scenes. Not suitable for older devices or mobile.
+\ **forward_plus** (Forward+): Високоякісний рендерер, розроблений для настільних комп'ютерів. Має вищі базові накладні витрати, але добре масштабується зі складними сценами. Не підходить для старіших пристроїв або мобільних пристроїв.
 
-\ **mobile** (Mobile): Modern renderer designed for mobile devices. Has a lower base overhead than Forward+, but does not scale as well to large scenes with many elements.
+\ **mobile** (Мобільні): Сучасний рендерер, розроблений для мобільних пристроїв. Має нижчі базові накладні витрати, ніж Forward+, але не так добре масштабується для великих сцен з багатьма елементами.
 
-\ **gl_compatibility** (Compatibility): Low-end renderer designed for older devices. Based on the limitations of the OpenGL 3.3 / OpenGL ES 3.0 / WebGL 2 APIs. Lighting calculations are performed on nonlinear sRGB-encoded color data, which produces inaccurate results that may look acceptable for some games.
+\ **gl_compatibility** (Сумісність): Низькоякісний рендерер, розроблений для старіших пристроїв. Базується на обмеженнях API OpenGL 3.3 / OpenGL ES 3.0 / WebGL 2. Розрахунки освітлення виконуються на нелінійних кольорових даних, закодованих у sRGB, що призводить до неточних результатів, які можуть виглядати прийнятними для деяких ігор.
 
-This can be overridden using the ``--rendering-method <method>`` command line argument.
+Це можна змінити за допомогою аргументу командного рядка ``--rendering-method <method>``.
 
-\ **Note:** The actual rendering method may be automatically changed by the engine as a result of a fallback, or a user-specified command line argument. To get the actual rendering method that is used at runtime, use :ref:`RenderingServer.get_current_rendering_method()<class_RenderingServer_method_get_current_rendering_method>` instead of reading this project setting's value.
+ **Примітка:** Фактичний метод рендерингу може бути автоматично змінений рушієм в результаті резервного варіанту або заданого користувачем аргументу командного рядка. Щоб отримати фактичний метод рендерингу, який використовується під час виконання, використовуйте :ref:`RenderingServer.get_current_rendering_method()<class_RenderingServer_method_get_current_rendering_method>` замість зчитування значення цього налаштування проекту.
 
 .. rst-class:: classref-item-separator
 
@@ -13003,7 +13011,7 @@ This can be overridden using the ``--rendering-method <method>`` command line ar
 
 :ref:`int<class_int>` **rendering/rendering_device/d3d12/agility_sdk_version** = ``618`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/d3d12/agility_sdk_version>`
 
-Version code of the `Direct3D 12 Agility SDK <https://devblogs.microsoft.com/directx/directx12agility/>`__ to use (``D3D12SDKVersion``). This must match the *minor* version that is installed next to the editor binary and in the export templates directory for the current editor version. For example, if you have ``1.618.5`` installed, you need to input ``618`` here.
+Код версії `Direct3D 12 Agility SDK <https://devblogs.microsoft.com/directx/directx12agility/>`__ для використання (``D3D12SDKVersion``). Він має відповідати *мінорній* версії, встановленої поруч із бінарним файлом редактора та в каталозі шаблонів експорту для поточної версії редактора. Наприклад, якщо у вас встановлено ``1.618.5``, вам потрібно ввести тут ``618``.
 
 .. rst-class:: classref-item-separator
 
@@ -13015,9 +13023,9 @@ Version code of the `Direct3D 12 Agility SDK <https://devblogs.microsoft.com/dir
 
 :ref:`int<class_int>` **rendering/rendering_device/d3d12/max_resource_descriptors** = ``65536`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/d3d12/max_resource_descriptors>`
 
-The number of entries in the resource descriptor heap the Direct3D 12 rendering driver uses for most rendering operations.
+Кількість записів у купі дескриптора ресурсів, яку драйвер рендерингу Direct3D 12 використовує для більшості операцій рендерингу.
 
-Depending on the complexity of scenes, this value may be lowered or may need to be raised.
+Залежно від складності сцен, це значення може бути зменшене або, можливо, потребуватиме збільшення.
 
 .. rst-class:: classref-item-separator
 
@@ -13029,9 +13037,9 @@ Depending on the complexity of scenes, this value may be lowered or may need to 
 
 :ref:`int<class_int>` **rendering/rendering_device/d3d12/max_sampler_descriptors** = ``1024`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/d3d12/max_sampler_descriptors>`
 
-The number of entries in the sampler descriptor heap the Direct3D 12 rendering driver uses for most rendering operations.
+Кількість записів у купі дескриптора семплера, яку драйвер рендерингу Direct3D 12 використовує для більшості операцій рендерингу.
 
-Depending on the complexity of scenes, this value may be lowered or may need to be raised.
+Залежно від складності сцен, це значення може бути зменшене або, можливо, потребуватиме збільшення.
 
 .. rst-class:: classref-item-separator
 
@@ -13159,15 +13167,15 @@ Depending on the complexity of scenes, this value may be lowered or may need to 
 
 :ref:`String<class_String>` **rendering/rendering_device/driver.windows** = ``"vulkan"`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/driver.windows>`
 
-Windows override for :ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>`.
+Перевизначення Windows для :ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>`.
 
-Two options are supported:
+Підтримуються два варіанти:
 
-- ``vulkan`` (default), Vulkan from native drivers. If :ref:`rendering/rendering_device/fallback_to_vulkan<class_ProjectSettings_property_rendering/rendering_device/fallback_to_vulkan>` is enabled, this is used as a fallback if Direct3D 12 is not supported.
+- ``vulkan`` (за замовчуванням), Vulkan з власних драйверів. Якщо :ref:`rendering/rendering_device/fallback_to_vulkan<class_ProjectSettings_property_rendering/rendering_device/fallback_to_vulkan>` увімкнено, це використовується як резервний варіант, якщо Direct3D 12 не підтримується.
 
-- ``d3d12``, Direct3D 12 from native drivers. If :ref:`rendering/rendering_device/fallback_to_d3d12<class_ProjectSettings_property_rendering/rendering_device/fallback_to_d3d12>` is enabled, this is used as a fallback if Vulkan is not supported.
+- ``d3d12``, Direct3D 12 з власних драйверів. Якщо :ref:`rendering/rendering_device/fallback_to_d3d12<class_ProjectSettings_property_rendering/rendering_device/fallback_to_d3d12>` увімкнено, це використовується як резервний варіант, якщо Vulkan не підтримується.
 
-\ **Note:** Starting with Godot 4.6, new projects are configured by default to use ``d3d12`` on Windows. Projects created before Godot 4.6 keep ``vulkan`` for compatibility reasons, but it is recommended to switch them manually to ``d3d12``.
+\ **Примітка:** Починаючи з Godot 4.6, нові проекти за замовчуванням налаштовані на використання ``d3d12`` у Windows. Проекти, створені до Godot 4.6, зберігають ``vulkan`` з міркувань сумісності, але рекомендується вручну перемикати їх на ``d3d12``.
 
 .. rst-class:: classref-item-separator
 
@@ -13179,9 +13187,9 @@ Two options are supported:
 
 :ref:`bool<class_bool>` **rendering/rendering_device/fallback_to_d3d12** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/fallback_to_d3d12>`
 
-If ``true``, the Forward+ renderer will fall back to Direct3D 12 if Vulkan is not supported. The fallback is always attempted regardless of this setting if Vulkan driver support was disabled at compile time.
+Якщо значення ``true``, рендерер Forward+ повернеться до Direct3D 12, якщо Vulkan не підтримується. Резервний режим завжди буде спробовано незалежно від цього налаштування, якщо підтримка драйвера Vulkan була вимкнена під час компіляції.
 
-\ **Note:** This setting is implemented only on Windows.
+\ **Примітка:** Цей параметр реалізовано лише у Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -13193,9 +13201,9 @@ If ``true``, the Forward+ renderer will fall back to Direct3D 12 if Vulkan is no
 
 :ref:`bool<class_bool>` **rendering/rendering_device/fallback_to_opengl3** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/fallback_to_opengl3>`
 
-If ``true``, the Forward+ renderer will fall back to OpenGL 3 if Direct3D 12, Metal, and Vulkan are not supported.
+Якщо значення ``true``, рендерер Forward+ повернеться до OpenGL 3, якщо Direct3D 12, Metal та Vulkan не підтримуються.
 
-\ **Note:** This setting is implemented on Windows, Android, macOS, iOS, and Linux/X11.
+\ **Примітка:** Цей параметр реалізовано у Windows, Android, macOS, iOS та Linux/X11.
 
 .. rst-class:: classref-item-separator
 
@@ -13207,9 +13215,9 @@ If ``true``, the Forward+ renderer will fall back to OpenGL 3 if Direct3D 12, Me
 
 :ref:`bool<class_bool>` **rendering/rendering_device/fallback_to_vulkan** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/fallback_to_vulkan>`
 
-If ``true``, the Forward+ renderer will fall back to Vulkan if Direct3D 12 (on Windows) or Metal (on macOS x86_64) are not supported. The fallback is always attempted regardless of this setting if Direct3D 12 (Windows) or Metal (macOS) driver support was disabled at compile time.
+Якщо значення ``true``, рендерер Forward+ повернеться до Vulkan, якщо Direct3D 12 (у Windows) або Metal (у macOS x86_64) не підтримуються. Резервний режим завжди намагається використовувати незалежно від цього налаштування, якщо підтримка драйвера Direct3D 12 (Windows) або Metal (macOS) була вимкнена під час компіляції.
 
-\ **Note:** This setting is implemented on Windows and macOS.
+\ **Примітка:** Цей параметр реалізовано у Windows та macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -13323,19 +13331,19 @@ If ``true``, the Forward+ renderer will fall back to Vulkan if Direct3D 12 (on W
 
 :ref:`int<class_int>` **rendering/rendering_device/vsync/swapchain_image_count** = ``3`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/vsync/swapchain_image_count>`
 
-The number of images the swapchain will consist of (back buffers + front buffer).
+Кількість зображень, з яких складатиметься ланцюжок обміну (задні буфери + передній буфер).
 
-\ ``2`` corresponds to double-buffering and ``3`` to triple-buffering.
+\ ``2`` відповідає подвійній буферизації, а ``3`` – потрійній буферизації.
 
-Double-buffering may give you the lowest lag/latency but if V-Sync is on and the system can't render at 60 fps, the framerate will go down in multiples of it (e.g. 30 fps, 15, 7.5, etc.). Triple buffering gives you higher framerate (specially if the system can't reach a constant 60 fps) at the cost of up to 1 frame of latency, with :ref:`DisplayServer.VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>` (FIFO).
+Подвійна буферизація може забезпечити найменшу затримку/латентність, але якщо увімкнено вертикальну синхронізацію, і система не може рендерити зі швидкістю 60 кадрів/с, частота кадрів зменшиться у кілька разів (наприклад, 30 кадрів/с, 15, 7,5 тощо). Потрійна буферизація забезпечує вищу частоту кадрів (особливо якщо система не може досягти постійних 60 кадрів/с) ціною затримки до 1 кадру, з :ref:`DisplayServer.VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>` (FIFO).
 
-Use double-buffering with :ref:`DisplayServer.VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>`. Triple-buffering is a must if you plan on using :ref:`DisplayServer.VSYNC_MAILBOX<class_DisplayServer_constant_VSYNC_MAILBOX>` mode.
+Використовуйте подвійну буферизацію з :ref:`DisplayServer.VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>`. Потрійна буферизація є обов'язковою, якщо ви плануєте використовувати режим :ref:`DisplayServer.VSYNC_MAILBOX<class_DisplayServer_constant_VSYNC_MAILBOX>`.
 
-Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an interactive interface that simulates presentation to better understand how it is affected by different variables under various conditions.
+Спробуйте `симулятор V-Sync <https://darksylinc.github.io/vsync_simulator/>`__ – інтерактивний інтерфейс, який імітує презентацію, щоб краще зрозуміти, як на неї впливають різні змінні за різних умов.
 
-\ **Note:** Changes to this setting will only be applied on startup or when the swapchain is recreated (e.g. when setting the V-Sync mode).
+\ **Примітка:** Зміни цього налаштування будуть застосовані лише під час запуску або під час повторного створення ланцюга обміну (наприклад, під час налаштування режиму V-Sync).
 
-\ **Note:** Some platforms may restrict the actual value.
+\ **Примітка:** Деякі платформи можуть обмежувати фактичне значення.
 
 .. rst-class:: classref-item-separator
 
@@ -13679,7 +13687,7 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`bool<class_bool>` **rendering/textures/vram_compression/cache_gpu_compressor** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/vram_compression/cache_gpu_compressor>`
 
-If ``true``, the GPU texture compressor will cache the local RenderingDevice and its resources (shaders and pipelines), making subsequent imports faster at the cost of increased memory usage.
+Якщо ``true``, компресор текстур GPU кешуватиме локальний RenderingDevice та його ресурси (шейдери та конвеєри), що пришвидшить подальший імпорт ціною збільшення використання пам'яті.
 
 .. rst-class:: classref-item-separator
 
@@ -13763,11 +13771,11 @@ If ``true``, the GPU texture compressor will cache the local RenderingDevice and
 
 :ref:`bool<class_bool>` **rendering/viewport/hdr_2d** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/viewport/hdr_2d>`
 
-If ``true``, enables :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` on the root Viewport. 2D rendering will use a high dynamic range (HDR) ``RGBA16`` format framebuffer. Additionally, 2D rendering will be performed on linear values and will be converted using the appropriate transfer function immediately before blitting to the screen.
+Якщо значення ``true``, активується :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` на кореневому Viewport. 2D-рендеринг використовуватиме буфер кадрів у форматі високого динамічного діапазону (HDR) ``RGBA16``. Крім того, 2D-рендеринг виконуватиметься на лінійних значеннях і буде перетворено за допомогою відповідної передавальної функції безпосередньо перед виведенням на екран.
 
-Practically speaking, this means that the end result of the Viewport will not be clamped to the ``0-1`` range and can be used in 3D rendering without color encoding adjustments. This allows 2D rendering to take advantage of effects requiring high dynamic range (e.g. 2D glow) as well as substantially improves the appearance of effects requiring highly detailed gradients.
+Практично це означає, що кінцевий результат Viewport не буде обмежений діапазоном ``0-1`` і може бути використаний у 3D-рендерингу без коригування кодування кольорів. Це дозволяє 2D-рендерингу використовувати ефекти, що вимагають високого динамічного діапазону (наприклад, 2D світіння), а також суттєво покращує зовнішній вигляд ефектів, що вимагають високодеталізованих градієнтів.
 
-\ **Note:** This property is only read when the project starts. To toggle HDR 2D at runtime, set :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` on the root :ref:`Viewport<class_Viewport>`.
+\ **Примітка:** Ця властивість зчитується лише під час запуску проекту. Щоб перемкнути HDR 2D під час виконання, встановіть :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` на кореневому :ref:`Viewport<class_Viewport>`.
 
 .. rst-class:: classref-item-separator
 
@@ -13842,7 +13850,7 @@ Practically speaking, this means that the end result of the Viewport will not be
 
 :ref:`int<class_int>` **threading/worker_pool/max_threads** = ``-1`` :ref:`🔗<class_ProjectSettings_property_threading/worker_pool/max_threads>`
 
-Maximum number of threads to be used by :ref:`WorkerThreadPool<class_WorkerThreadPool>`. On Web, a value of ``-1`` means ``1``. On other platforms, it means all *logical* CPU cores available (see :ref:`OS.get_processor_count()<class_OS_method_get_processor_count>`).
+Максимальна кількість потоків, що використовуються :ref:`WorkerThreadPool<class_WorkerThreadPool>`. У веб-версії значення ``-1`` означає ``1``. На інших платформах це означає, що доступні всі *логічні* ядра процесора (див. :ref:`OS.get_processor_count()<class_OS_method_get_processor_count>`).
 
 .. rst-class:: classref-item-separator
 
@@ -13950,9 +13958,9 @@ Maximum number of threads to be used by :ref:`WorkerThreadPool<class_WorkerThrea
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/frame_synthesis** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/frame_synthesis>`
 
-If ``true`` the frame synthesis extension will be activated if supported by the platform.
+Якщо ``true``, розширення синтезу кадрів буде активовано, якщо воно підтримується платформою.
 
-\ **Note:** This feature should not be enabled in conjunction with Application Space Warp, if supported this replaces ASW.
+\ **Примітка:** Цю функцію не слід вмикати разом із Application Space Warp, якщо воно підтримується, воно замінює ASW.
 
 .. rst-class:: classref-item-separator
 
@@ -14032,7 +14040,7 @@ If ``true`` the frame synthesis extension will be activated if supported by the 
 
 :ref:`int<class_int>` **xr/openxr/extensions/spatial_entity/april_tag_dict** = ``"3"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/april_tag_dict>`
 
-The April Tag marker types the built-in marker tracking is set to recognize (if April Tag marker tracking is available and enabled).
+Типи маркерів квітневих тегів, які вбудоване відстеження маркерів налаштовано розпізнавати (якщо відстеження маркерів квітневих тегів доступне та ввімкнене).
 
 .. rst-class:: classref-item-separator
 
@@ -14044,7 +14052,7 @@ The April Tag marker types the built-in marker tracking is set to recognize (if 
 
 :ref:`int<class_int>` **xr/openxr/extensions/spatial_entity/aruco_dict** = ``"15"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/aruco_dict>`
 
-The ArUco marker types the built-in marker tracking is set to recognize (if ArUco marker tracking is available and enabled).
+Типи маркерів ArUco, які налаштовано розпізнавати вбудованим відстеженням маркерів (якщо відстеження маркерів ArUco доступне та ввімкнене).
 
 .. rst-class:: classref-item-separator
 
@@ -14056,9 +14064,9 @@ The ArUco marker types the built-in marker tracking is set to recognize (if ArUc
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection>`
 
-If ``true``, we enable the built-in logic for handling anchors. Godot will query (persistent) anchors and manage :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>` instances for you. If disabled you'll need to create your own spatial and persistence context and perform your own discovery queries.
+Якщо ``true``, ми вмикаємо вбудовану логіку для обробки якорів. Godot запитуватиме (постійні) якорі та керуватиме екземплярами :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>` для вас. Якщо вимкнено, вам потрібно буде створити власний просторовий та персистентний контекст і виконати власні запити на виявлення.
 
-\ **Note:** This functionality requires that spatial anchors are supported and enabled.
+\ **Примітка:** Ця функціональність вимагає, щоб просторові якорі підтримувалися та були ввімкнені.
 
 .. rst-class:: classref-item-separator
 
@@ -14070,9 +14078,9 @@ If ``true``, we enable the built-in logic for handling anchors. Godot will query
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_builtin_marker_tracking** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_marker_tracking>`
 
-If ``true``, we enable the built-in logic for handling marker tracking. Godot will query markers and manage :ref:`OpenXRMarkerTracker<class_OpenXRMarkerTracker>` instances for you. If disabled you'll need to create your own spatial context and perform your own discovery queries.
+Якщо ``true``, ми вмикаємо вбудовану логіку для обробки відстеження маркерів. Godot запитуватиме маркери та керуватиме екземплярами :ref:`OpenXRMarkerTracker<class_OpenXRMarkerTracker>` для вас. Якщо вимкнено, вам потрібно буде створити власний просторовий контекст та виконати власні запити на виявлення.
 
-\ **Note:** This functionality requires that marker tracking is supported and enabled.
+\ **Примітка:** Ця функціональність вимагає, щоб відстеження маркерів підтримувалося та було ввімкнено.
 
 .. rst-class:: classref-item-separator
 
@@ -14084,9 +14092,9 @@ If ``true``, we enable the built-in logic for handling marker tracking. Godot wi
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_builtin_plane_detection** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_plane_detection>`
 
-If ``true``, we enable the built-in logic for handling plane detection. Godot will query detected planes (walls, floors, ceilings, etc.) and manage :ref:`OpenXRPlaneTracker<class_OpenXRPlaneTracker>` instances for you. If disabled you'll need to create your own spatial context and perform your own discovery queries.
+Якщо ``true``, ми вмикаємо вбудовану логіку для обробки виявлення площин. Godot запитуватиме виявлені площини (стіни, підлоги, стелі тощо) та керуватиме екземплярами :ref:`OpenXRPlaneTracker<class_OpenXRPlaneTracker>` для вас. Якщо вимкнено, вам потрібно буде створити власний просторовий контекст та виконати власні запити на виявлення.
 
-\ **Note:** This functionality requires that plane tracking is supported and enabled.
+\ **Примітка:** Ця функціональність вимагає, щоб відстеження площин підтримувалося та було ввімкнено.
 
 .. rst-class:: classref-item-separator
 
@@ -14098,9 +14106,9 @@ If ``true``, we enable the built-in logic for handling plane detection. Godot wi
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_marker_tracking** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_marker_tracking>`
 
-If ``true``, support for the marker tracking extension is requested. If supported, you will be able to query information about markers detected by the XR runtime, e.g. QR codes, aruca markers and april tags.
+Якщо ``true``, запитується підтримка розширення відстеження маркерів. Якщо підтримується, ви зможете запитувати інформацію про маркери, виявлені середовищем виконання XR, наприклад, QR-коди, маркери аруки та квітневі теги.
 
-\ **Note:** This requires that the OpenXR spatial entities and marker tracking extensions are supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` must be enabled for this setting to be used.
+\ **Примітка:** Це вимагає, щоб середовище виконання XR підтримувало просторові сутності OpenXR та розширення відстеження маркерів. Якщо не підтримується, цей параметр буде проігноровано. Для використання цього параметра має бути ввімкнено :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>`.
 
 .. rst-class:: classref-item-separator
 
@@ -14112,9 +14120,9 @@ If ``true``, support for the marker tracking extension is requested. If supporte
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_persistent_anchors** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_persistent_anchors>`
 
-If ``true``, support for the persistent anchors extension is requested. If supported, you will be able to store spatial anchors and they will be restored on application startup.
+Якщо ``true``, запитується підтримка розширення persistent anchors. Якщо підтримується, ви зможете зберігати просторові якорі, і вони будуть відновлені під час запуску програми.
 
-\ **Note:** This requires that the OpenXR spatial entities, spatial anchors, and spatial persistence extensions are supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` and :ref:`xr/openxr/extensions/spatial_entity/enable_spatial_anchors<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_spatial_anchors>` must be enabled for this setting to be used.
+\ **Примітка:** Це вимагає, щоб просторові сутності OpenXR, просторові якорі та розширення просторової персистентності підтримувалися середовищем виконання XR. Якщо не підтримується, цей параметр буде проігноровано. Для використання цього параметра мають бути ввімкнені :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` та :ref:`xr/openxr/extensions/spatial_entity/enable_spatial_anchors<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_spatial_anchors>`.
 
 .. rst-class:: classref-item-separator
 
@@ -14126,9 +14134,9 @@ If ``true``, support for the persistent anchors extension is requested. If suppo
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_plane_tracking** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_plane_tracking>`
 
-If ``true``, support for the plane tracking extension is requested. If supported, you will be able to query information about planes detected by the XR runtime, e.g. walls, floors, etc.
+Якщо ``true``, запитується підтримка розширення відстеження площин. Якщо підтримується, ви зможете запитувати інформацію про площини, виявлені середовищем виконання XR, наприклад, стіни, підлоги тощо.
 
-\ **Note:** This requires that the OpenXR spatial entities and plane tracking extensions are supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` must be enabled for this setting to be used.
+\ **Примітка:** Це вимагає, щоб середовище виконання XR підтримувало просторові сутності OpenXR та розширення відстеження площин. Якщо не підтримується, цей параметр буде проігноровано. Для використання цього параметра має бути ввімкнено :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>`.
 
 .. rst-class:: classref-item-separator
 
@@ -14140,9 +14148,9 @@ If ``true``, support for the plane tracking extension is requested. If supported
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_spatial_anchors** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_spatial_anchors>`
 
-If ``true``, support for the spatial anchors extension is requested. If supported, you will be able to register anchor locations in the real world that the XR runtime will adjust as needed and/or potentially share with other headsets.
+Якщо ``true``, запитується підтримка розширення просторових якорів. Якщо підтримується, ви зможете реєструвати розташування якорів у реальному світі, які середовище виконання XR налаштовуватиме за потреби та/або потенційно ділитиметься з іншими гарнітурами.
 
-\ **Note:** This requires that the OpenXR spatial entities and spatial anchors extensions are supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` must be enabled for this setting to be used.
+\ **Примітка:** Це вимагає, щоб середовище виконання XR підтримувало просторові сутності OpenXR та розширення просторових якорів. Якщо не підтримується, цей параметр буде проігноровано. Для використання цього параметра має бути ввімкнено :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>`.
 
 .. rst-class:: classref-item-separator
 
@@ -14154,9 +14162,9 @@ If ``true``, support for the spatial anchors extension is requested. If supporte
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enabled** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>`
 
-If ``true``, support for the spatial entity extension is requested. If supported, you will be able to access spatial information about the real environment around you. What information is available is dependent on additional extensions.
+Якщо ``true``, запитується підтримка розширення просторових сутностей. Якщо воно підтримується, ви зможете отримати доступ до просторової інформації про реальне середовище навколо вас. Доступна інформація залежить від додаткових розширень.
 
-\ **Note:** This requires that the OpenXR spatial entities extension is supported by the XR runtime. If not supported this setting will be ignored.
+\ **Примітка:** Це вимагає, щоб розширення просторових сутностей OpenXR підтримувалося середовищем виконання XR. Якщо воно не підтримується, цей параметр буде проігноровано.
 
 .. rst-class:: classref-item-separator
 
@@ -14192,9 +14200,9 @@ If ``true``, support for the spatial entity extension is requested. If supported
 
 :ref:`int<class_int>` **xr/openxr/foveation_level** = ``"0"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/foveation_level>`
 
-Applied foveation level if supported.
+Застосовується рівень фовеації, якщо підтримується.
 
-\ **Note:** On platforms other than Android, if :ref:`rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` is enabled, this feature will be disabled.
+\ **Примітка:** На платформах, відмінних від Android, якщо ввімкнено :ref:`rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>`, ця функція буде вимкнена.
 
 .. rst-class:: classref-item-separator
 
@@ -14231,6 +14239,18 @@ Applied foveation level if supported.
 :ref:`bool<class_bool>` **xr/openxr/submit_depth_buffer** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/submit_depth_buffer>`
 
 Якщо ``true``, OpenXR буде керувати глибинним буфером і використовувати глибинний буфер для розширеної репроектації, що забезпечується XR час. Зверніть увагу, що деякі функції рендерингу в Godot не можна використовувати з цією функцією.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ProjectSettings_property_xr/openxr/target_api_version:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **xr/openxr/target_api_version** = ``""`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/target_api_version>`
+
+Optionally sets a specific API version of OpenXR to initialize in ``major.minor.patch`` notation. Some XR runtimes gate old behavior behind version checks. This is non-standard OpenXR behavior.
 
 .. rst-class:: classref-item-separator
 
@@ -14347,7 +14367,7 @@ Applied foveation level if supported.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_changed_settings**\ (\ ) |const| :ref:`🔗<class_ProjectSettings_method_get_changed_settings>`
 
-Gets an array of the settings which have been changed since the last save. Note that internally ``changed_settings`` is cleared after a successful save, so generally the most appropriate place to use this method is when processing :ref:`settings_changed<class_ProjectSettings_signal_settings_changed>`.
+Отримує масив налаштувань, які були змінені з моменту останнього збереження. Зверніть увагу, що внутрішньо ``changed_settings`` очищається після успішного збереження, тому зазвичай найдоцільніше використовувати цей метод під час обробки сигналу :ref:`settings_changed<class_ProjectSettings_signal_settings_changed>`.
 
 .. rst-class:: classref-item-separator
 

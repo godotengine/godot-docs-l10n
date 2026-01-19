@@ -7,14 +7,14 @@ EditorProperty
 
 **Hereda:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Custom control for editing properties that can be added to the :ref:`EditorInspector<class_EditorInspector>`.
+Control personalizado para editar propiedades que se pueden añadir al :ref:`EditorInspector<class_EditorInspector>`.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-A custom control for editing properties that can be added to the :ref:`EditorInspector<class_EditorInspector>`. It is added via :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>`.
+Un control personalizado para editar propiedades que se pueden añadir al :ref:`EditorInspector<class_EditorInspector>`. Se añade a través de :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -103,7 +103,7 @@ Señales
 
 **multiple_properties_changed**\ (\ properties\: :ref:`PackedStringArray<class_PackedStringArray>`, value\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_EditorProperty_signal_multiple_properties_changed>`
 
-Emit it if you want multiple properties modified at the same time. Do not use if added via :ref:`EditorInspectorPlugin._parse_property()<class_EditorInspectorPlugin_private_method__parse_property>`.
+Emítela si quieres que se modifiquen varias propiedades al mismo tiempo. No lo utilices si se agrega a través de :ref:`EditorInspectorPlugin._parse_property()<class_EditorInspectorPlugin_private_method__parse_property>`.
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +127,7 @@ Utilizado por los subinspectores. Emitelo si lo que se seleccionó fue una idde 
 
 **property_can_revert_changed**\ (\ property\: :ref:`StringName<class_StringName>`, can_revert\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorProperty_signal_property_can_revert_changed>`
 
-Emitted when the revertability (i.e., whether it has a non-default value and thus is displayed with a revert icon) of a property has changed.
+Emitida cuando la revertibilidad (es decir, si tiene un valor no predeterminado y, por lo tanto, se muestra con un icono de reversión) de una propiedad ha cambiado.
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ Emitida al eliminar una propiedad. Usada internamente.
 
 **property_favorited**\ (\ property\: :ref:`StringName<class_StringName>`, favorited\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorProperty_signal_property_favorited>`
 
-Emit it if you want to mark a property as favorited, making it appear at the top of the inspector.
+Emítela si quieres marcar una propiedad como favorita, haciendo que aparezca en la parte superior del inspector.
 
 .. rst-class:: classref-item-separator
 
@@ -223,9 +223,9 @@ Emitida cuando se solicita una sobrescritura de configuración para el proyecto 
 
 **property_pinned**\ (\ property\: :ref:`StringName<class_StringName>`, pinned\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorProperty_signal_property_pinned>`
 
-Emit it if you want to mark (or unmark) the value of a property for being saved regardless of being equal to the default value.
+Emítela si quieres marcar (o desmarcar) el valor de una propiedad para que se guarde independientemente de si es igual al valor por defecto.
 
-The default value is the one the property will get when the node is just instantiated and can come from an ancestor scene in the inheritance/instantiation chain, a script or a builtin class.
+El valor por defecto es el que la propiedad tendrá cuando el nodo acaba de ser instanciado y puede provenir de una escena ancestral en la cadena de herencia/instanciación, un script o una clase incorporada.
 
 .. rst-class:: classref-item-separator
 
@@ -305,7 +305,7 @@ Usado por el inspector, establecido en ``true`` cuando se comprueba la propiedad
 - |void| **set_deletable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_deletable**\ (\ )
 
-Used by the inspector, set to ``true`` when the property can be deleted by the user.
+Usado por el inspector, se establece a ``true`` cuando la propiedad puede ser eliminada por el usuario.
 
 .. rst-class:: classref-item-separator
 
@@ -322,7 +322,7 @@ Used by the inspector, set to ``true`` when the property can be deleted by the u
 - |void| **set_draw_background**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_draw_background**\ (\ )
 
-Used by the inspector, set to ``true`` when the property background is drawn.
+Usado por el inspector, se establece a ``true`` cuando se dibuja el fondo de la propiedad.
 
 .. rst-class:: classref-item-separator
 
@@ -339,7 +339,7 @@ Used by the inspector, set to ``true`` when the property background is drawn.
 - |void| **set_draw_label**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_draw_label**\ (\ )
 
-Used by the inspector, set to ``true`` when the property label is drawn.
+Usado por el inspector, se establece a ``true`` cuando se dibuja la etiqueta de la propiedad.
 
 .. rst-class:: classref-item-separator
 
@@ -475,7 +475,7 @@ Descripciones de Métodos
 
 |void| **_set_read_only**\ (\ read_only\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_EditorProperty_private_method__set_read_only>`
 
-Called when the read-only status of the property is changed. It may be used to change custom controls into a read-only or modifiable state.
+Llamado cuando el estado de solo lectura de la propiedad cambia. Puede usarse para cambiar los controles personalizados a un estado de solo lectura o modifiable.
 
 .. rst-class:: classref-item-separator
 
@@ -511,7 +511,7 @@ Si alguno de los controles añadidos puede obtener el enfoque del teclado, añá
 
 |void| **deselect**\ (\ ) :ref:`🔗<class_EditorProperty_method_deselect>`
 
-Draw property as not selected. Used by the inspector.
+Dibuja la propiedad como no seleccionada. Usado por el inspector.
 
 .. rst-class:: classref-item-separator
 
@@ -523,7 +523,7 @@ Draw property as not selected. Used by the inspector.
 
 |void| **emit_changed**\ (\ property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`, field\: :ref:`StringName<class_StringName>` = &"", changing\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_EditorProperty_method_emit_changed>`
 
-If one or several properties have changed, this must be called. ``field`` is used in case your editor can modify fields separately (as an example, Vector3.x). The ``changing`` argument avoids the editor requesting this property to be refreshed (leave as ``false`` if unsure).
+Si una o varias propiedades han cambiado, esto debe ser llamado. ``field`` se utiliza en caso de que tu editor pueda modificar campos por separado (como ejemplo, Vector3.x). El argumento ``changing`` evita que el editor solicite que esta propiedad se actualice (deja como ``false`` si no estás seguro).
 
 .. rst-class:: classref-item-separator
 
@@ -535,9 +535,9 @@ If one or several properties have changed, this must be called. ``field`` is use
 
 :ref:`Object<class_Object>` **get_edited_object**\ (\ ) :ref:`🔗<class_EditorProperty_method_get_edited_object>`
 
-Returns the edited object.
+Devuelve el objeto editado.
 
-\ **Note:** This method could return ``null`` if the editor has not yet been associated with a property. However, in :ref:`_update_property()<class_EditorProperty_private_method__update_property>` and :ref:`_set_read_only()<class_EditorProperty_private_method__set_read_only>`, this value is *guaranteed* to be non-``null``.
+\ **Nota:** Este método podría devolver ``null`` si el editor aún no se ha asociado con una propiedad. Sin embargo, en :ref:`_update_property()<class_EditorProperty_private_method__update_property>` y :ref:`_set_read_only()<class_EditorProperty_private_method__set_read_only>`, se *garantiza* que este valor no será ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -549,9 +549,9 @@ Returns the edited object.
 
 :ref:`StringName<class_StringName>` **get_edited_property**\ (\ ) |const| :ref:`🔗<class_EditorProperty_method_get_edited_property>`
 
-Returns the edited property. If your editor is for a single property (added via :ref:`EditorInspectorPlugin._parse_property()<class_EditorInspectorPlugin_private_method__parse_property>`), then this will return the property.
+Devuelve la propiedad editada. Si tu editor es para una sola propiedad (añadida a través de :ref:`EditorInspectorPlugin._parse_property()<class_EditorInspectorPlugin_private_method__parse_property>`), entonces esto devolverá la propiedad.
 
-\ **Note:** This method could return ``null`` if the editor has not yet been associated with a property. However, in :ref:`_update_property()<class_EditorProperty_private_method__update_property>` and :ref:`_set_read_only()<class_EditorProperty_private_method__set_read_only>`, this value is *guaranteed* to be non-``null``.
+\ **Nota:** Este método podría devolver ``null`` si el editor aún no se ha asociado con una propiedad. Sin embargo, en :ref:`_update_property()<class_EditorProperty_private_method__update_property>` y :ref:`_set_read_only()<class_EditorProperty_private_method__set_read_only>`, se *garantiza* que este valor no será ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -587,7 +587,7 @@ Dibujar propiedad según la selección. Utilizado por el inspector.
 
 |void| **set_bottom_editor**\ (\ editor\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_EditorProperty_method_set_bottom_editor>`
 
-Puts the ``editor`` control below the property label. The control must be previously added using :ref:`Node.add_child()<class_Node_method_add_child>`.
+Coloca el control ``editor`` debajo de la etiqueta de la propiedad. El control debe haber sido añadido previamente usando :ref:`Node.add_child()<class_Node_method_add_child>`.
 
 .. rst-class:: classref-item-separator
 
@@ -599,7 +599,7 @@ Puts the ``editor`` control below the property label. The control must be previo
 
 |void| **set_label_reference**\ (\ control\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_EditorProperty_method_set_label_reference>`
 
-Used by the inspector, set to a control that will be used as a reference to calculate the size of the label.
+Usado por el inspector, se establece a un control que se usará como referencia para calcular el tamaño de la etiqueta.
 
 .. rst-class:: classref-item-separator
 

@@ -9,14 +9,14 @@ OpenXRAnchorTracker
 
 **Наследует:** :ref:`OpenXRSpatialEntityTracker<class_OpenXRSpatialEntityTracker>` **<** :ref:`XRPositionalTracker<class_XRPositionalTracker>` **<** :ref:`XRTracker<class_XRTracker>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Positional tracker for our spatial entity anchor extension.
+Позиционный трекер для нашего расширения, устанавливающего привязки пространственных объектов.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-Positional tracker for our OpenXR spatial entity anchor extension, it tracks a user defined location in real space and maps it to our virtual space.
+Функция отслеживания положения для нашего расширения OpenXR для привязки пространственных объектов позволяет отслеживать заданное пользователем местоположение в реальном пространстве и сопоставлять его с нашим виртуальным пространством.
 
 .. rst-class:: classref-reftable-group
 
@@ -57,7 +57,7 @@ Positional tracker for our OpenXR spatial entity anchor extension, it tracks a u
 
 **uuid_changed**\ (\ ) :ref:`🔗<class_OpenXRAnchorTracker_signal_uuid_changed>`
 
-Emitted when the UUID for this anchor was changed.
+Сообщение появляется при изменении UUID для данного якоря.
 
 .. rst-class:: classref-section-separator
 
@@ -79,7 +79,7 @@ Emitted when the UUID for this anchor was changed.
 - |void| **set_uuid**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_uuid**\ (\ )
 
-The UUID provided for persistent anchors.
+UUID обеспечивал возможность постоянного использования привязки.
 
 .. rst-class:: classref-section-separator
 
@@ -96,7 +96,7 @@ The UUID provided for persistent anchors.
 
 :ref:`bool<class_bool>` **has_uuid**\ (\ ) |const| :ref:`🔗<class_OpenXRAnchorTracker_method_has_uuid>`
 
-Returns ``true`` if a non-zero UUID is set.
+Возвращает ``true``, если задан ненулевой UUID.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

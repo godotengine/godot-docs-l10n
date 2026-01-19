@@ -14,61 +14,60 @@ RegEx
 Описание
 ----------------
 
-Регулярное выражение (или regex) — это компактный язык, который можно использовать для распознавания строк, следующих определённому шаблону, например, URL-адресов, адресов электронной почты, полных предложений и т. д. Например, регулярное выражение ``ab[0-9]`` найдёт любую строку, которая содержит ``ab`` и за которой следует любое число от ``0`` до ``9``. Для более подробного изучения вы можете легко найти различные руководства и подробные объяснения в Интернете.
+A regular expression (or regex) is a compact language that can be used to recognize strings that follow a specific pattern, such as URLs, email addresses, complete sentences, etc. For example, a regex of ``ab[0-9]`` would find any string that is ``ab`` followed by any number from ``0`` to ``9``. For a more in-depth look, you can easily find various tutorials and detailed explanations on the Internet.
 
-Для начала объект RegEx необходимо скомпилировать с шаблоном поиска с помощью :ref:`compile()<class_RegEx_method_compile>`, прежде чем его можно будет использовать.
-
-::
-
-    var regex = RegEx.new()
-    regex.compile("\\w-(\\d+)")
-
-Шаблон поиска должен быть экранирован для GDScript, прежде чем он будет экранирован для выражения. Например, ``compile("\\d+")`` будет прочитан RegEx как ``\d+``. Аналогично, ``compile("\"(?:\\\\.|[^\"])*\"")`` будет прочитан как ``"(?:\\.|[^"])*"``. В GDScript также можно использовать необработанные строковые литералы (r-строки). Например, ``compile(r'"(?:\\.|[^"])*"')`` будет читаться одинаково.
-
-Используя :ref:`search()<class_RegEx_method_search>`, вы можете найти шаблон в заданном тексте. Если шаблон найден, возвращается :ref:`RegExMatch<class_RegExMatch>`, и вы можете получить подробную информацию о результатах, используя такие методы, как :ref:`RegExMatch.get_string()<class_RegExMatch_method_get_string>` и :ref:`RegExMatch.get_start()<class_RegExMatch_method_get_start>`.
+To begin, the RegEx object needs to be compiled with the search pattern using :ref:`compile()<class_RegEx_method_compile>` before it can be used. Alternatively, the static method :ref:`create_from_string()<class_RegEx_method_create_from_string>` can be used to create and compile a RegEx object in a single method call.
 
 ::
 
     var regex = RegEx.new()
     regex.compile("\\w-(\\d+)")
+    # Shorthand to create and compile a regex (used in the examples below):
+    var regex2 = RegEx.create_from_string("\\w-(\\d+)")
+
+The search pattern must be escaped first for GDScript before it is escaped for the expression. For example, ``compile("\\d+")`` would be read by RegEx as ``\d+``. Similarly, ``compile("\"(?:\\\\.|[^\"])*\"")`` would be read as ``"(?:\\.|[^"])*"``. In GDScript, you can also use raw string literals (r-strings). For example, ``compile(r'"(?:\\.|[^"])*"')`` would be read the same.
+
+Using :ref:`search()<class_RegEx_method_search>`, you can find the pattern within the given text. If a pattern is found, :ref:`RegExMatch<class_RegExMatch>` is returned and you can retrieve details of the results using methods such as :ref:`RegExMatch.get_string()<class_RegExMatch_method_get_string>` and :ref:`RegExMatch.get_start()<class_RegExMatch_method_get_start>`.
+
+::
+
+    var regex = RegEx.create_from_string("\\w-(\\d+)")
     var result = regex.search("abc n-0123")
     if result:
-        print(result.get_string()) # Выводит "n-0123"
+        print(result.get_string()) # Prints "n-0123"
 
-Результаты захвата групп ``()`` можно получить, передав номер группы различным методам :ref:`RegExMatch<class_RegExMatch>`. Группа 0 используется по умолчанию и всегда будет ссылаться на весь шаблон. В приведенном выше примере вызов ``result.get_string(1)`` вернет ``0123``.
+The results of capturing groups ``()`` can be retrieved by passing the group number to the various methods in :ref:`RegExMatch<class_RegExMatch>`. Group 0 is the default and will always refer to the entire pattern. In the above example, calling ``result.get_string(1)`` would give you ``0123``.
 
-Эта версия RegEx также поддерживает именованные захваты групп, и эти имена можно использовать для получения результатов. Если две или более групп имеют одинаковое имя, это имя будет ссылаться только на первую из них, совпавшую с шаблоном.
+This version of RegEx also supports named capturing groups, and the names can be used to retrieve the results. If two or more groups have the same name, the name would only refer to the first one with a match.
 
 ::
 
-    var regex = RegEx.new()
-    regex.compile("d(?<digit>[0-9]+)|x(?<digit>[0-9a-f]+)")
-    var result = regex.search("число равно x2f")
+    var regex = RegEx.create_from_string("d(?<digit>[0-9]+)|x(?<digit>[0-9a-f]+)")
+    var result = regex.search("the number is x2f")
     if result:
-        print(result.get_string("digit")) # Выводит "2f"
+        print(result.get_string("digit")) # Prints "2f"
 
-Если вам нужно обработать несколько результатов, :ref:`search_all()<class_RegEx_method_search_all>` сгенерирует список всех непересекающихся результатов. Для удобства этот метод можно объединить с циклом ``for``.
+If you need to process multiple results, :ref:`search_all()<class_RegEx_method_search_all>` generates a list of all non-overlapping results. This can be combined with a ``for`` loop for convenience.
 
 ::
 
-    # Выводит "01 03 0 3f 42"
+    # Prints "01 03 0 3f 42"
     for result in regex.search_all("d01, d03, d0c, x3f and x42"):
         print(result.get_string("digit"))
 
-\ **Пример:** Разделение строки с помощью регулярного выражения:
+\ **Example:** Split a string using a RegEx:
 
 ::
 
-    var regex = RegEx.new()
-    regex.compile("\\S+") # Отрицательный класс символов пробела.
+    var regex = RegEx.create_from_string("\\S+") # Negated whitespace character class.
     var results = []
     for result in regex.search_all("One  Two \n\tThree"):
         results.push_back(result.get_string())
-    print(results) # Выводит ["One", "Two", "Three"]
+    print(results) # Prints ["One", "Two", "Three"]
 
-\ **Примечание:** Реализация регулярных выражений Godot основана на библиотеке `PCRE2 <https://www.pcre.org/>`__. Полную версию шаблона можно найти `здесь <https://www.pcre.org/current/doc/html/pcre2pattern.html>`__.
+\ **Note:** Godot's regex implementation is based on the `PCRE2 <https://www.pcre.org/>`__ library. You can view the full pattern reference `here <https://www.pcre.org/current/doc/html/pcre2pattern.html>`__.
 
-\ **Совет:** Вы можете использовать `Regexr <https://regexr.com/>`__ для проверки регулярных выражений в Интернете.
+\ **Tip:** You can use `Regexr <https://regexr.com/>`__ to test regular expressions online.
 
 .. rst-class:: classref-reftable-group
 

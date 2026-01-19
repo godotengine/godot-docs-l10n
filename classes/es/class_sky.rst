@@ -7,7 +7,7 @@ Sky
 
 **Hereda:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Defines a 3D environment's background by using a :ref:`Material<class_Material>`.
+Define el fondo de un entorno 3D usando un :ref:`Material<class_Material>`.
 
 .. rst-class:: classref-introduction-group
 

@@ -9,14 +9,14 @@ StreamPeerSocket
 
 **Успадковано від:** :ref:`StreamPeerTCP<class_StreamPeerTCP>`, :ref:`StreamPeerUDS<class_StreamPeerUDS>`
 
-Abstract base class for interacting with socket streams.
+Абстрактний базовий клас для взаємодії з потоками сокетів.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-StreamPeerSocket is an abstract base class that defines common behavior for socket-based streams.
+StreamPeerSocket — це абстрактний базовий клас, який визначає загальну поведінку для потоків на основі сокетів.
 
 .. rst-class:: classref-reftable-group
 
@@ -55,7 +55,7 @@ enum **Status**: :ref:`🔗<enum_StreamPeerSocket_Status>`
 
 :ref:`Status<enum_StreamPeerSocket_Status>` **STATUS_NONE** = ``0``
 
-The initial status of the **StreamPeerSocket**. This is also the status after disconnecting.
+Початковий стан **StreamPeerSocket**. Це також стан після відключення.
 
 .. _class_StreamPeerSocket_constant_STATUS_CONNECTING:
 
@@ -63,7 +63,7 @@ The initial status of the **StreamPeerSocket**. This is also the status after di
 
 :ref:`Status<enum_StreamPeerSocket_Status>` **STATUS_CONNECTING** = ``1``
 
-A status representing a **StreamPeerSocket** that is connecting to a host.
+Стан, що представляє **StreamPeerSocket**, який підключається до хоста.
 
 .. _class_StreamPeerSocket_constant_STATUS_CONNECTED:
 
@@ -71,7 +71,7 @@ A status representing a **StreamPeerSocket** that is connecting to a host.
 
 :ref:`Status<enum_StreamPeerSocket_Status>` **STATUS_CONNECTED** = ``2``
 
-A status representing a **StreamPeerSocket** that is connected to a host.
+Стан, що представляє **StreamPeerSocket**, підключений до хоста.
 
 .. _class_StreamPeerSocket_constant_STATUS_ERROR:
 
@@ -79,7 +79,7 @@ A status representing a **StreamPeerSocket** that is connected to a host.
 
 :ref:`Status<enum_StreamPeerSocket_Status>` **STATUS_ERROR** = ``3``
 
-A status representing a **StreamPeerSocket** in error state.
+Стан, що представляє **StreamPeerSocket** у стані помилки.
 
 .. rst-class:: classref-section-separator
 
@@ -120,7 +120,7 @@ A status representing a **StreamPeerSocket** in error state.
 
 :ref:`Error<enum_@GlobalScope_Error>` **poll**\ (\ ) :ref:`🔗<class_StreamPeerSocket_method_poll>`
 
-Polls the socket, updating its state. See :ref:`get_status()<class_StreamPeerSocket_method_get_status>`.
+Опитує сокет, оновлюючи його стан. Див. :ref:`get_status()<class_StreamPeerSocket_method_get_status>`.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

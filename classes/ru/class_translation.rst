@@ -16,9 +16,9 @@ Translation
 Описание
 ----------------
 
-**Translation** maps a collection of strings to their individual translations, and also provides convenience methods for pluralization.
+**Translation** сопоставляет набор строк с их индивидуальными переводами, а также предоставляет удобные методы для образования множественного числа.
 
-A **Translation** consists of messages. A message is identified by its context and untranslated string. Unlike `gettext <https://www.gnu.org/software/gettext/>`__, using an empty context string in Godot means not using any context.
+\ **Translation** состоит из сообщений. Сообщение идентифицируется по его контексту и непереведенной строке. В отличие от `gettext <https://www.gnu.org/software/gettext/>`__, использование пустой контекстной строки в Godot означает отсутствие использования какого-либо контекста.
 
 .. rst-class:: classref-introduction-group
 
@@ -112,9 +112,9 @@ A **Translation** consists of messages. A message is identified by its context a
 - |void| **set_plural_rules_override**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_plural_rules_override**\ (\ )
 
-The plural rules string to enforce. See `GNU gettext <https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html>`__ for examples and more info.
+Строка правил множественного числа для применения. См. `GNU gettext <https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html>`__ для примеров и дополнительной информации.
 
-If empty or invalid, default plural rules from :ref:`TranslationServer.get_plural_rules()<class_TranslationServer_method_get_plural_rules>` are used. The English plural rules are used as a fallback.
+Если строка пустая или недействительная, используются правила множественного числа по умолчанию из :ref:`TranslationServer.get_plural_rules()<class_TranslationServer_method_get_plural_rules>`. В качестве запасного варианта используются правила множественного числа английского языка.
 
 .. rst-class:: classref-section-separator
 
@@ -169,9 +169,9 @@ If empty or invalid, default plural rules from :ref:`TranslationServer.get_plura
 
 |void| **add_plural_message**\ (\ src_message\: :ref:`StringName<class_StringName>`, xlated_messages\: :ref:`PackedStringArray<class_PackedStringArray>`, context\: :ref:`StringName<class_StringName>` = &""\ ) :ref:`🔗<class_Translation_method_add_plural_message>`
 
-Adds a message involving plural translation if nonexistent, followed by its translation.
+Добавляет сообщение, содержащее перевод во множественном числе, если он отсутствует, а затем его перевод.
 
-An additional context could be used to specify the translation context or differentiate polysemic words.
+Дополнительный контекст может использоваться для указания контекста перевода или различения многозначных слов.
 
 .. rst-class:: classref-item-separator
 
@@ -219,9 +219,9 @@ An additional context could be used to specify the translation context or differ
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_message_list**\ (\ ) |const| :ref:`🔗<class_Translation_method_get_message_list>`
 
-Returns the keys of all messages, that is, the context and untranslated strings of each message.
+Возвращает ключи всех сообщений, то есть контекст и непереведенные строки каждого сообщения.
 
-\ **Note:** If a message does not use a context, the corresponding element is the untranslated string. Otherwise, the corresponding element is the context and untranslated string separated by the EOT character (``U+0004``). This is done for compatibility purposes.
+\ **Примечание:** Если сообщение не использует контекст, соответствующим элементом является непереведенная строка. В противном случае соответствующим элементом является контекст и непереведенная строка, разделенные символом EOT (``U+0004``). Это сделано в целях совместимости.
 
 ::
 
@@ -261,7 +261,7 @@ Returns the keys of all messages, that is, the context and untranslated strings 
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_translated_message_list**\ (\ ) |const| :ref:`🔗<class_Translation_method_get_translated_message_list>`
 
-Returns all the translated strings.
+Возвращает все переведенные строки.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

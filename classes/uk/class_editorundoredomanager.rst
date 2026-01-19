@@ -229,17 +229,22 @@ enum **SpecialHistory**: :ref:`🔗<enum_EditorUndoRedoManager_SpecialHistory>`
 
 |void| **clear_history**\ (\ id\: :ref:`int<class_int>` = -99, increase_version\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_EditorUndoRedoManager_method_clear_history>`
 
-Очищає задану історію скасувань. Ви можете очистити історію для певної сцени, глобальної історії або для всіх сцен одночасно, якщо ``id`` має значення :ref:`INVALID_HISTORY<class_EditorUndoRedoManager_constant_INVALID_HISTORY>`.
+Очищає задану історію скасування. Ви можете очистити історію для певної сцени, глобальної історії або для всіх історій одночасно (крім :ref:`REMOTE_HISTORY<class_EditorUndoRedoManager_constant_REMOTE_HISTORY>`), якщо ``id`` має значення :ref:`INVALID_HISTORY<class_EditorUndoRedoManager_constant_INVALID_HISTORY>`.
 
-Якщо ``increase_version`` має значення ``true``, версія історії скасувань буде збільшена, позначаючи її як незбережену. Корисно для операцій, які змінюють сцену, але не підтримують скасування.
+Якщо ``increase_version`` має значення ``true``, версія історії скасування буде збільшена, що позначить її як незбережену. Корисно для операцій, які змінюють сцену, але не підтримують скасування.
 
+ 
 ::
 
-    var scene_root = EditorInterface.get_edited_scene_root()
-    var undo_redo = EditorInterface.get_editor_undo_redo()
-    undo_redo.clear_history(undo_redo.get_object_history_id(scene_root))
 
-\ **Примітка.** Якщо ви хочете позначити відредаговану сцену як незбережену, не очищаючи її історію, замість цього використовуйте :ref:`EditorInterface.mark_scene_as_unsaved()<class_EditorInterface_method_mark_scene_as_unsaved>`.
+var scene_root = EditorInterface.get_edited_scene_root()
+
+var undo_redo = EditorInterface.get_editor_undo_redo()
+
+undo_redo.clear_history(undo_redo.get_object_history_id(scene_root))
+
+
+\ **Примітка:** Якщо ви хочете позначити відредаговану сцену як незбережену, не очищуючи її історію, використовуйте замість цього :ref:`EditorInterface.mark_scene_as_unsaved()<class_EditorInterface_method_mark_scene_as_unsaved>`.
 
 .. rst-class:: classref-item-separator
 

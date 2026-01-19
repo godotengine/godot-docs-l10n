@@ -14,9 +14,9 @@ Contiene datos de colisión del movimiento de un :ref:`PhysicsBody2D<class_Physi
 Descripción
 ----------------------
 
-Holds collision data from the movement of a :ref:`PhysicsBody2D<class_PhysicsBody2D>`, usually from :ref:`PhysicsBody2D.move_and_collide()<class_PhysicsBody2D_method_move_and_collide>`. When a :ref:`PhysicsBody2D<class_PhysicsBody2D>` is moved, it stops if it detects a collision with another body. If a collision is detected, a **KinematicCollision2D** object is returned.
+Contiene los datos de colisión del movimiento de un :ref:`PhysicsBody2D<class_PhysicsBody2D>`, normalmente de :ref:`PhysicsBody2D.move_and_collide()<class_PhysicsBody2D_method_move_and_collide>`. Cuando se mueve un :ref:`PhysicsBody2D<class_PhysicsBody2D>`, se detiene si detecta una colisión con otro cuerpo. Si se detecta una colisión, se devuelve un objeto **KinematicCollision2D**.
 
-The collision data includes the colliding object, the remaining motion, and the collision position. This data can be used to determine a custom response to the collision.
+Los datos de colisión incluyen el objeto que colisiona, el movimiento restante y la posición de la colisión. Estos datos pueden utilizarse para determinar una respuesta personalizada a la colisión.
 
 .. rst-class:: classref-reftable-group
 

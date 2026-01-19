@@ -383,7 +383,9 @@ Le résultat est dans le segment qui va de ``y = 0`` à ``y = 5``. C'est la posi
 
 Renvoie un tableau avec les identifiants des points qui forment le chemin trouvé par AStar entre les points donnés. Le tableau est dans l'ordre du point de départ de celui de l'arrivée.
 
-S'il n'y a pas de chemin valide vers la cible, et ``allow_partial_path`` vaut ``true``, renvoie un chemin vers le point le plus proche de la cible qui peut être atteinte.
+Si ``from_id`` point est désactivé, retourne un tableau vide (même si ``from_id == to_id``).
+
+Si ``from_id`` point n'est pas désactivé, qu'il n'y a pas de chemin valide vers la cible, et ``allow_partial_path`` vauest ``true``, renvoitourne un chemin vers le point le plus proche de la cible qui peut être atteinte.
 
 \ **Note :** Lorsque ``allow_partial_path`` vaut ``true`` et ``to_id`` est désactivé, la recherche peut prendre un temps inhabituel à se terminer.
 
@@ -512,7 +514,9 @@ Renvoie un tableau de tous les identifiants des points.
 
 Renvoie un tableau avec les points qui sont dans le chemin trouvé par AStar3D entre les points donnés. Le tableau est trié du point de départ au point final du chemin.
 
-S'il n'y a pas de chemin valide vers la cible, et ``allow_partial_path`` vaut ``true``, renvoie un chemin vers le point le plus proche de la cible qui peut être atteinte.
+Si ``from_id`` point est désactivé, retourne un tableau vide (même si ``from_id == to_id``).
+
+Si ``from_id`` point n'est pas désactivé, qu''il n'y a pas de chemin valide vers la cible, et ``allow_partial_path`` vaut ``true``, renvoie un chemin vers le point le plus proche de la cible qui peut être atteinte.
 
 \ **Note :** Cette méthode n'est pas thread-safe, elle ne peut être appelée que depuis un seul :ref:`Thread<class_Thread>` à un instant donné. Envisagez d'utiliser des :ref:`Mutex<class_Mutex>` pour vous assurer de l'accès exclusif à un thread pour éviter des accès concurrents.
 

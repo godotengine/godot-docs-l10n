@@ -857,7 +857,7 @@ Y 排序的图层不使用象限大小，这种图层中的图块会按 Y 位置
 
 |void| **move_layer**\ (\ layer\: :ref:`int<class_int>`, to_position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileMap_method_move_layer>`
 
-将索引 ``layer`` 处的图层移动到数组中给定的位置 ``to_position``\ 。
+移动数组中索引为 ``layer`` 的图层到给定的位置 ``to_position``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -985,7 +985,7 @@ Y 排序的图层不使用象限大小，这种图层中的图块会按 Y 位置
 
 |void| **set_layer_name**\ (\ layer\: :ref:`int<class_int>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TileMap_method_set_layer_name>`
 
-设置图层的名称。主要在编辑器中使用。
+设置图层的名称。主要用于编辑器。
 
 如果 ``layer`` 为负，则逆序访问图层。
 

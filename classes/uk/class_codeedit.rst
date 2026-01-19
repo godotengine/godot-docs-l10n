@@ -722,7 +722,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_CodeEdit_CodeCompletionLocation
 - |void| **set_line_numbers_min_digits**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_line_numbers_min_digits**\ (\ )
 
-The minimum width in digits reserved for the line number gutter.
+Мінімальна ширина в цифрах, зарезервована для межі рядка номера.
 
 .. rst-class:: classref-item-separator
 

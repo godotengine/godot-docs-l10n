@@ -7,16 +7,16 @@ TwoBoneIK3D
 
 **Успадковує:** :ref:`IKModifier3D<class_IKModifier3D>` **<** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Rotation based intersection of two circles inverse kinematics solver.
+Розв'язувач оберненої кінематики перетину двох кіл на основі обертання.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-This :ref:`IKModifier3D<class_IKModifier3D>` requires a pole target. It provides deterministic results by constructing a plane from each joint and pole target and finding the intersection of two circles (disks in 3D).
+Цей :ref:`IKModifier3D<class_IKModifier3D>` вимагає цільового полюса. Він забезпечує детерміновані результати, побудувавши площину з кожного суглоба та цільового полюса та знайшовши перетин двох кіл (дисків у 3D).
 
-This IK can handle twist by setting the pole direction. If there are more than one bone between each set bone, their rotations are ignored, and the straight line connecting the root-middle and middle-end joints are treated as virtual bones.
+Цей IK може обробляти скручування, встановлюючи напрямок полюса. Якщо між кожною встановленою кісткою є більше однієї кістки, їх обертання ігноруються, а пряма лінія, що з'єднує коренево-серединний та середньо-кінцевий суглоби, розглядається як віртуальні кістки.
 
 .. rst-class:: classref-reftable-group
 
@@ -133,7 +133,7 @@ This IK can handle twist by setting the pole direction. If there are more than o
 
 :ref:`int<class_int>` **get_end_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_end_bone>`
 
-Returns the end bone index.
+Повертає індекс кінцевої кістки.
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ Returns the end bone index.
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **get_end_bone_direction**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_end_bone_direction>`
 
-Returns the end bone's tail direction when :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` is ``true``.
+Повертає напрямок хвоста кінцевої кістки, коли :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` має значення ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -157,7 +157,7 @@ Returns the end bone's tail direction when :ref:`is_end_bone_extended()<class_Tw
 
 :ref:`float<class_float>` **get_end_bone_length**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_end_bone_length>`
 
-Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` is ``true``.
+Повертає довжину кінця кісткового ланцюжка, коли :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` має значення ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extend
 
 :ref:`String<class_String>` **get_end_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_end_bone_name>`
 
-Returns the end bone name.
+Повертає назву кінцевої кістки.
 
 .. rst-class:: classref-item-separator
 
@@ -181,7 +181,7 @@ Returns the end bone name.
 
 :ref:`int<class_int>` **get_middle_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_middle_bone>`
 
-Returns the middle bone index.
+Повертає індекс середньої кістки.
 
 .. rst-class:: classref-item-separator
 
@@ -193,7 +193,7 @@ Returns the middle bone index.
 
 :ref:`String<class_String>` **get_middle_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_middle_bone_name>`
 
-Returns the middle bone name.
+Повертає назву середньої кістки.
 
 .. rst-class:: classref-item-separator
 
@@ -205,7 +205,7 @@ Returns the middle bone name.
 
 :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>` **get_pole_direction**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_pole_direction>`
 
-Returns the pole direction.
+Повертає напрямок полюса.
 
 .. rst-class:: classref-item-separator
 
@@ -217,9 +217,9 @@ Returns the pole direction.
 
 :ref:`Vector3<class_Vector3>` **get_pole_direction_vector**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_pole_direction_vector>`
 
-Returns the pole direction vector.
+Повертає вектор напрямку полюса.
 
-If :ref:`get_pole_direction()<class_TwoBoneIK3D_method_get_pole_direction>` is :ref:`SkeletonModifier3D.SECONDARY_DIRECTION_NONE<class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_NONE>`, this method returns ``Vector3(0, 0, 0)``.
+Якщо :ref:`get_pole_direction()<class_TwoBoneIK3D_method_get_pole_direction>` має значення :ref:`SkeletonModifier3D.SECONDARY_DIRECTION_NONE<class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_NONE>`, цей метод повертає ``Vector3(0, 0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -231,7 +231,7 @@ If :ref:`get_pole_direction()<class_TwoBoneIK3D_method_get_pole_direction>` is :
 
 :ref:`NodePath<class_NodePath>` **get_pole_node**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_pole_node>`
 
-Returns the pole target node that constructs a plane which the joints are all on and the pole is trying to direct.
+Повертає цільовий вузол полюса, який побудовує площину, на якій знаходяться всі з'єднання, і яку намагається спрямувати полюс.
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ Returns the pole target node that constructs a plane which the joints are all on
 
 :ref:`int<class_int>` **get_root_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_root_bone>`
 
-Returns the root bone index.
+Повертає індекс кореневої кістки.
 
 .. rst-class:: classref-item-separator
 
@@ -255,7 +255,7 @@ Returns the root bone index.
 
 :ref:`String<class_String>` **get_root_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_root_bone_name>`
 
-Returns the root bone name.
+Повертає назву кореневої кістки.
 
 .. rst-class:: classref-item-separator
 
@@ -267,7 +267,7 @@ Returns the root bone name.
 
 :ref:`NodePath<class_NodePath>` **get_target_node**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_target_node>`
 
-Returns the target node that the end bone is trying to reach.
+Повертає цільовий вузол, якого намагається досягти кінцева кістка.
 
 .. rst-class:: classref-item-separator
 
@@ -279,7 +279,7 @@ Returns the target node that the end bone is trying to reach.
 
 :ref:`bool<class_bool>` **is_end_bone_extended**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_is_end_bone_extended>`
 
-Returns ``true`` if the end bone is extended to have a tail.
+Повертає ``true``, якщо кінцева кістка подовжена, щоб мати хвіст.
 
 .. rst-class:: classref-item-separator
 
@@ -291,7 +291,7 @@ Returns ``true`` if the end bone is extended to have a tail.
 
 :ref:`bool<class_bool>` **is_using_virtual_end**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_is_using_virtual_end>`
 
-Returns ``true`` if the end bone is extended from the middle bone as a virtual bone.
+Повертає ``true``, якщо кінцева кістка продовжена із середньої кістки як віртуальна кістка.
 
 .. rst-class:: classref-item-separator
 
@@ -303,7 +303,7 @@ Returns ``true`` if the end bone is extended from the middle bone as a virtual b
 
 |void| **set_end_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_end_bone>`
 
-Sets the end bone index.
+Встановлює індекс кінцевої кістки.
 
 .. rst-class:: classref-item-separator
 
@@ -315,7 +315,7 @@ Sets the end bone index.
 
 |void| **set_end_bone_direction**\ (\ index\: :ref:`int<class_int>`, bone_direction\: :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_end_bone_direction>`
 
-Sets the end bone tail direction when :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` is ``true``.
+Встановлює напрямок хвоста кінцевої кістки, коли :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` має значення ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +327,7 @@ Sets the end bone tail direction when :ref:`is_end_bone_extended()<class_TwoBone
 
 |void| **set_end_bone_length**\ (\ index\: :ref:`int<class_int>`, length\: :ref:`float<class_float>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_end_bone_length>`
 
-Sets the end bone tail length when :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` is ``true``.
+Встановлює довжину хвоста кінцевої кістки, коли :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` має значення ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -339,9 +339,9 @@ Sets the end bone tail length when :ref:`is_end_bone_extended()<class_TwoBoneIK3
 
 |void| **set_end_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_end_bone_name>`
 
-Sets the end bone name.
+Встановлює назву кінцевої кістки.
 
-\ **Note:** The end bone must be a child of the middle bone.
+\ **Примітка:** Кінцева кістка має бути дочірньою до середньої кістки.
 
 .. rst-class:: classref-item-separator
 
@@ -353,7 +353,7 @@ Sets the end bone name.
 
 |void| **set_extend_end_bone**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_extend_end_bone>`
 
-If ``enabled`` is ``true``, the end bone is extended to have a tail.
+Якщо параметр ``enabled`` має значення ``true``, кінцева кістка подовжується, щоб мати хвіст.
 
 .. rst-class:: classref-item-separator
 
@@ -365,7 +365,7 @@ If ``enabled`` is ``true``, the end bone is extended to have a tail.
 
 |void| **set_middle_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_middle_bone>`
 
-Sets the middle bone index.
+Встановлює індекс середньої кістки.
 
 .. rst-class:: classref-item-separator
 
@@ -377,9 +377,9 @@ Sets the middle bone index.
 
 |void| **set_middle_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_middle_bone_name>`
 
-Sets the middle bone name.
+Встановлює назву середньої кістки.
 
-\ **Note:** The middle bone must be a child of the root bone.
+\ **Примітка:** Середня кістка має бути дочірньою до кореневої кістки.
 
 .. rst-class:: classref-item-separator
 
@@ -391,13 +391,13 @@ Sets the middle bone name.
 
 |void| **set_pole_direction**\ (\ index\: :ref:`int<class_int>`, direction\: :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_pole_direction>`
 
-Sets the pole direction.
+Встановлює напрямок полюса.
 
-The pole is on the middle bone and will direct to the pole target.
+Полюс знаходиться на середній кістці та буде спрямований до цільового полюса.
 
-The rotation axis is a vector that is orthogonal to this and the forward vector.
+Вісь обертання – це вектор, ортогональний до цього та прямого вектора.
 
-\ **Note:** The pole direction and the forward vector shouldn't be colinear to avoid unintended rotation.
+\ **Примітка:** Напрямок полюса та прямий вектор не повинні бути колінеарними, щоб уникнути ненавмисного обертання.
 
 .. rst-class:: classref-item-separator
 
@@ -409,11 +409,11 @@ The rotation axis is a vector that is orthogonal to this and the forward vector.
 
 |void| **set_pole_direction_vector**\ (\ index\: :ref:`int<class_int>`, vector\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_pole_direction_vector>`
 
-Sets the pole direction vector.
+Встановлює вектор напрямку полюса.
 
-This vector is normalized by an internal process.
+Цей вектор нормалізується внутрішнім процесом.
 
-If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonModifier3D.SECONDARY_DIRECTION_NONE<class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_NONE>`.
+Якщо довжина вектора дорівнює ``0``, він вважається синонімом :ref:`SkeletonModifier3D.SECONDARY_DIRECTION_NONE<class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_NONE>`.
 
 .. rst-class:: classref-item-separator
 
@@ -425,7 +425,7 @@ If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonMo
 
 |void| **set_pole_node**\ (\ index\: :ref:`int<class_int>`, pole_node\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_pole_node>`
 
-Sets the pole target node that constructs a plane which the joints are all on and the pole is trying to direct.
+Встановлює цільовий вузол полюса, який будує площину, на якій знаходяться всі з'єднання, і яку намагається спрямувати полюс.
 
 .. rst-class:: classref-item-separator
 
@@ -437,7 +437,7 @@ Sets the pole target node that constructs a plane which the joints are all on an
 
 |void| **set_root_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_root_bone>`
 
-Sets the root bone index.
+Встановлює індекс кореневої кістки.
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ Sets the root bone index.
 
 |void| **set_root_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_root_bone_name>`
 
-Sets the root bone name.
+Встановлює назву кореневої кістки.
 
 .. rst-class:: classref-item-separator
 
@@ -461,7 +461,7 @@ Sets the root bone name.
 
 |void| **set_target_node**\ (\ index\: :ref:`int<class_int>`, target_node\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_target_node>`
 
-Sets the target node that the end bone is trying to reach.
+Встановлює цільовий вузол, якого намагається досягти кінцева кістка.
 
 .. rst-class:: classref-item-separator
 
@@ -473,7 +473,7 @@ Sets the target node that the end bone is trying to reach.
 
 |void| **set_use_virtual_end**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_use_virtual_end>`
 
-If ``enabled`` is ``true``, the end bone is extended from the middle bone as a virtual bone.
+Якщо параметр ``enabled`` має значення ``true``, кінцева кістка продовжується із середньої кістки як віртуальна кістка.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

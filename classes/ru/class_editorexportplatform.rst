@@ -20,13 +20,6 @@ EditorExportPlatform
 
 Используется в скриптах :ref:`EditorExportPlugin<class_EditorExportPlugin>` для настройки платформенно-специфической настройки сцен и ресурсов. Подробнее см. :ref:`EditorExportPlugin._begin_customize_scenes()<class_EditorExportPlugin_private_method__begin_customize_scenes>` и :ref:`EditorExportPlugin._begin_customize_resources()<class_EditorExportPlugin_private_method__begin_customize_resources>`.
 
-.. rst-class:: classref-introduction-group
-
-Обучающие материалы
---------------------------------------
-
-- :doc:`Поддержка консоли в Godot <../tutorials/platform/consoles>`
-
 .. rst-class:: classref-reftable-group
 
 Методы
@@ -381,7 +374,7 @@ flags **DebugFlags**: :ref:`🔗<enum_EditorExportPlatform_DebugFlags>`
 
 :ref:`String<class_String>` **get_message_category**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_message_category>`
 
-Returns the message category for the message with the given ``index``.
+Возвращает категорию сообщения для сообщения с заданным ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -393,7 +386,7 @@ Returns the message category for the message with the given ``index``.
 
 :ref:`int<class_int>` **get_message_count**\ (\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_message_count>`
 
-Returns the number of messages in the export log.
+Возвращает количество сообщений в журнале экспорта.
 
 .. rst-class:: classref-item-separator
 
@@ -405,7 +398,7 @@ Returns the number of messages in the export log.
 
 :ref:`String<class_String>` **get_message_text**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_message_text>`
 
-Returns the text for the message with the given ``index``.
+Возвращает текст сообщения с заданным ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -417,7 +410,7 @@ Returns the text for the message with the given ``index``.
 
 :ref:`ExportMessageType<enum_EditorExportPlatform_ExportMessageType>` **get_message_type**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_message_type>`
 
-Returns the type for the message with the given ``index``.
+Возвращает тип сообщения с заданным ``index``.
 
 .. rst-class:: classref-item-separator
 

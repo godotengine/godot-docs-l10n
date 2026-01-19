@@ -124,7 +124,7 @@ EditorPaths
 
 :ref:`String<class_String>` **get_project_settings_dir**\ (\ ) |const| :ref:`🔗<class_EditorPaths_method_get_project_settings_dir>`
 
-Returns the relative path to the editor settings for this project. This is usually ``"res://.godot/editor"``. Projects all have a unique subdirectory inside the settings path where project-specific editor settings are saved.
+Возвращает относительный путь к настройкам редактора для данного проекта. Обычно это ``"res://.godot/editor"``. Все проекты имеют уникальную подпапку внутри пути к настройкам, где сохраняются специфические для проекта параметры редактора.
 
 .. rst-class:: classref-item-separator
 

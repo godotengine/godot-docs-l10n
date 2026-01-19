@@ -7,18 +7,18 @@ FABRIK3D
 
 **Успадковує:** :ref:`IterateIK3D<class_IterateIK3D>` **<** :ref:`ChainIK3D<class_ChainIK3D>` **<** :ref:`IKModifier3D<class_IKModifier3D>` **<** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Position based forward and backward reaching inverse kinematics solver.
+Розв'язувач оберненої кінематики на основі позиції вперед та назад.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-**FABRIK3D** is position based IK, allowing precise and accurate tracking of targets. It's ideal for simple chains without limitations.
+**FABRIK3D** — це IK на основі позиції, що дозволяє точне та точне відстеження цілей. Він ідеально підходить для простих ланцюгів без обмежень.
 
-The resulting twist around the forward vector will always be kept from the previous pose.
+Результуючий поворот навколо вектора вперед завжди буде збережений з попередньої пози.
 
-\ **Note:** When the target is close to the root, it tends to produce zig-zag patterns, resulting in unnatural visual movement.
+\ **Примітка:** Коли ціль знаходиться близько до кореня, вона має тенденцію створювати зигзагоподібні візерунки, що призводить до неприродного візуального руху.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

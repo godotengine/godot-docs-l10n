@@ -69,7 +69,7 @@ Descriptions des méthodes
 
 :ref:`int<class_int>` **find_dir_index**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_EditorFileSystemDirectory_method_find_dir_index>`
 
-Returns the index of the directory with name ``name`` or ``-1`` if not found.
+Retourne l'index du répertoire avec le nom ``name`` ou ``-1`` si rien n'est trouvé.
 
 .. rst-class:: classref-item-separator
 
@@ -141,7 +141,7 @@ Renvoie le chemin du fichier à l'index ``idx``.
 
 :ref:`String<class_String>` **get_file_script_class_extends**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorFileSystemDirectory_method_get_file_script_class_extends>`
 
-Returns the base class of the script class defined in the file at index ``idx``. If the file doesn't define a script class using the ``class_name`` syntax, this will return an empty string.
+Retourne la classe de base de la classe de script définie dans le fichier à index ``idx``. Si le fichier ne définit pas une classe de script en utilisant la syntaxe ``class_name``, retourne une chaîne vide.
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ Returns the base class of the script class defined in the file at index ``idx``.
 
 :ref:`String<class_String>` **get_file_script_class_name**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorFileSystemDirectory_method_get_file_script_class_name>`
 
-Returns the name of the script class defined in the file at index ``idx``. If the file doesn't define a script class using the ``class_name`` syntax, this will return an empty string.
+Retourne le nom de la classe script définie dans le fichier à l'index ``idx``. Si le fichier ne définit pas une classe de script en utilisant la syntaxe ``class_name``, retourne une chaîne vide.
 
 .. rst-class:: classref-item-separator
 
@@ -165,7 +165,7 @@ Returns the name of the script class defined in the file at index ``idx``. If th
 
 :ref:`StringName<class_StringName>` **get_file_type**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorFileSystemDirectory_method_get_file_type>`
 
-Returns the resource type of the file at index ``idx``. This returns a string such as ``"Resource"`` or ``"GDScript"``, *not* a file extension such as ``".gd"``.
+Retoune le type de ressource du fichier à l'index ``idx``. Retourne une chaîne telle que ``"Resource"`` ou ``"GDScript"``, *pas* une extension de fichier telle que ``".gd"``.
 
 .. rst-class:: classref-item-separator
 

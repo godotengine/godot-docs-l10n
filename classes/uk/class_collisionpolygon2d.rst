@@ -14,9 +14,9 @@ CollisionPolygon2D
 Опис
 --------
 
-A node that provides a polygon shape to a :ref:`CollisionObject2D<class_CollisionObject2D>` parent and allows it to be edited. The polygon can be concave or convex. This can give a detection shape to an :ref:`Area2D<class_Area2D>`, turn a :ref:`PhysicsBody2D<class_PhysicsBody2D>` into a solid object, or give a hollow shape to a :ref:`StaticBody2D<class_StaticBody2D>`.
+Вузол, який надає батьківському об'єкту :ref:`CollisionObject2D<class_CollisionObject2D>` форму полігону та дозволяє його редагування. Полігон може бути увігнутим або опуклим. Це може надати форму виявлення :ref:`Area2D<class_Area2D>`, перетворити :ref:`PhysicsBody2D<class_PhysicsBody2D>` на твердий об'єкт або надати порожнисту форму :ref:`StaticBody2D<class_StaticBody2D>`.
 
-\ **Warning:** A non-uniformly scaled **CollisionPolygon2D** will likely not behave as expected. Make sure to keep its scale the same on all axes and adjust its polygon instead.
+\ **Попередження:** Нерівномірно масштабований **CollisionPolygon2D**, ймовірно, не працюватиме належним чином. Переконайтеся, що його масштаб однаковий на всіх осях, і натомість налаштуйте його полігон.
 
 .. rst-class:: classref-reftable-group
 

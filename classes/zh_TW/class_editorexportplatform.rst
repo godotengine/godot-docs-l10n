@@ -20,13 +20,6 @@ EditorExportPlatform
 
 在 :ref:`EditorExportPlugin<class_EditorExportPlugin>` 的腳本中用於配置特定於平臺的場景和資源的定制。有關詳細信息，請參閱 :ref:`EditorExportPlugin._begin_customize_scenes()<class_EditorExportPlugin_private_method__begin_customize_scenes>` 和 :ref:`EditorExportPlugin._begin_customize_resources()<class_EditorExportPlugin_private_method__begin_customize_resources>`\ 。
 
-.. rst-class:: classref-introduction-group
-
-教學
-----
-
-- :doc:`Console support in Godot <../tutorials/platform/consoles>`
-
 .. rst-class:: classref-reftable-group
 
 方法

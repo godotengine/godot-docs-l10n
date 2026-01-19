@@ -14,7 +14,7 @@ Gestore di cache di set di uniformi per i renderer basati su Rendering Device.
 Descrizione
 ----------------------
 
-Gestore della cache per i set di uniformi, per i renderer basati sui dispositivi di rendering. Fornisce un modo per creare un set di uniformi e riutilizzarlo nelle chiamate successive fin quando esiste il set di uniformi. Il set di uniforme verrà automaticamente ripulito quando gli oggetti dipendenti vengono liberati.
+Uniform set cache manager for :ref:`RenderingDevice<class_RenderingDevice>`-based renderers. Provides a way to create a uniform set and reuse it in subsequent calls for as long as the uniform set exists. Uniform set will automatically be cleaned up when dependent objects are freed.
 
 .. rst-class:: classref-reftable-group
 

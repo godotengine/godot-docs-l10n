@@ -255,9 +255,9 @@ Renvoie l'axe de rotation à la liaison ``joint`` dans la liste des liaisons de 
 
 :ref:`Vector3<class_Vector3>` **get_joint_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_joint_rotation_axis_vector>`
 
-Returns the rotation axis vector for the specified joint in the bone chain. This vector represents the axis around which the joint can rotate. It is determined based on the rotation axis set for the joint.
+Renvoie le vecteur de l'axe de rotation à la liaison spécifiée dans la liste des liaisons de la chaîne d'os. Ce vecteur représente l'axe autour duquel la liaison peut tourner. Il est déterminé en fonction de l'axe de rotation défini pour la liaison.
 
-If :ref:`get_joint_rotation_axis()<class_IterateIK3D_method_get_joint_rotation_axis>` is :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, this method returns ``Vector3(0, 0, 0)``.
+Si :ref:`get_joint_rotation_axis()<class_IterateIK3D_method_get_joint_rotation_axis>` vaut :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, cette méthode renvoie ``Vector3(0, 0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -269,7 +269,7 @@ If :ref:`get_joint_rotation_axis()<class_IterateIK3D_method_get_joint_rotation_a
 
 :ref:`NodePath<class_NodePath>` **get_target_node**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_target_node>`
 
-Returns the target node that the end bone is trying to reach.
+Renvoie le nœud cible que l'os final tente d'atteindre.
 
 .. rst-class:: classref-item-separator
 
@@ -351,11 +351,11 @@ The axes are based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_meth
 
 |void| **set_joint_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, axis_vector\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_rotation_axis_vector>`
 
-Sets the rotation axis vector for the specified joint in the bone chain.
+Définit le vecteur d'axe de rotation pour la liaison spécifiée dans la chaîne d'os.
 
-This vector is normalized by an internal process and represents the axis around which the bone chain can rotate.
+Ce vecteur est normalisé par un processus interne et représente l'axe autour duquel la chaîne d'os peut tourner.
 
-If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
+Si la longueur du vecteur est de ``0``, il est considéré comme synonyme de :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
 
 .. rst-class:: classref-item-separator
 
@@ -367,7 +367,7 @@ If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonMo
 
 |void| **set_target_node**\ (\ index\: :ref:`int<class_int>`, target_node\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_IterateIK3D_method_set_target_node>`
 
-Sets the target node that the end bone is trying to reach.
+Définit le nœud cible que l'os final tente d'atteindre.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -102,11 +102,11 @@ Renvoie la valeur actuelle définie pour ce matériau d'un uniform du shader.
 
 |void| **set_shader_parameter**\ (\ param\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_ShaderMaterial_method_set_shader_parameter>`
 
-Change la valeur définie pour ce matériau d'un uniform du shader.
+Changes the value set for this material of a uniform in the shader.
 
-\ **Note :** ``param`` est sensible à la casse et doit correspondre exactement au nom de l'uniform dans le code (pas le nom capitalisé dans l'inspecteur).
+\ **Note:** ``param`` is case-sensitive and must match the name of the uniform in the code exactly (not the capitalized name in the inspector).
 
-\ **Note :** Les changements apportés à l'uniform du shader seront effectifs dans toutes les instances utilisant ce **ShaderMaterial**. Pour éviter cela, utilisez des uniforms par instance avec :ref:`GeometryInstance3D.set_instance_shader_parameter()<class_GeometryInstance3D_method_set_instance_shader_parameter>` ou dupliquez la ressource **ShaderMaterial** en utilisant :ref:`Resource.duplicate()<class_Resource_method_duplicate>`. Les uniforms par instance permettent une meilleure réutilisation du shader et sont donc plus rapides, de sorte qu'ils devraient être préférés plutôt que la duplication du **ShaderMaterial** si possible.
+\ **Note:** Changes to the shader uniform will be effective on all instances using this **ShaderMaterial**. To prevent this, use per-instance uniforms with :ref:`CanvasItem.set_instance_shader_parameter()<class_CanvasItem_method_set_instance_shader_parameter>`, :ref:`GeometryInstance3D.set_instance_shader_parameter()<class_GeometryInstance3D_method_set_instance_shader_parameter>` or duplicate the **ShaderMaterial** resource using :ref:`Resource.duplicate()<class_Resource_method_duplicate>`. Per-instance uniforms allow for better shader reuse and are therefore faster, so they should be preferred over duplicating the **ShaderMaterial** when possible.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

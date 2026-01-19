@@ -739,7 +739,7 @@ The minimum width in digits reserved for the line number gutter.
 - |void| **set_line_numbers_zero_padded**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_line_numbers_zero_padded**\ (\ )
 
-If ``true``, line numbers drawn in the gutter are zero padded based on the total line count. Requires :ref:`gutters_draw_line_numbers<class_CodeEdit_property_gutters_draw_line_numbers>` to be set to ``true``.
+Si ``true``, les numéros de ligne tirés dans la gouttière sont complété avec des zéro en fonction du nombre total de lignes. Exige que :ref:`gutters_draw_line_numbers<class_CodeEdit_property_gutters_draw_line_numbers>` soit défini à ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -1344,7 +1344,7 @@ Si ``line`` ``column`` est dans une chaîne ou un commentaire, renvoie la positi
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_executing_lines**\ (\ ) |const| :ref:`🔗<class_CodeEdit_method_get_executing_lines>`
 
-Gets all executing lines.
+Reprends toutes les lignes d'exécution.
 
 .. rst-class:: classref-item-separator
 
@@ -1620,7 +1620,7 @@ Emits :ref:`code_completion_requested<class_CodeEdit_signal_code_completion_requ
 
 |void| **set_code_completion_selected_index**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CodeEdit_method_set_code_completion_selected_index>`
 
-Sets the current selected completion option.
+Définit l'option d'achèvement sélectionnée actuelle.
 
 .. rst-class:: classref-item-separator
 
@@ -1903,7 +1903,7 @@ Background highlight :ref:`Color<class_Color>` for the current selected option i
 
 :ref:`Color<class_Color>` **executing_line_color** = ``Color(0.98, 0.89, 0.27, 1)`` :ref:`🔗<class_CodeEdit_theme_color_executing_line_color>`
 
-:ref:`Color<class_Color>` of the executing icon for executing lines.
+:ref:`Color<class_Color>` de l'icône d'exécution pour exécuter des lignes.
 
 .. rst-class:: classref-item-separator
 
@@ -1999,7 +1999,7 @@ Définit une :ref:`Texture2D<class_Texture2D>` personnalisée pour dessiner le b
 
 :ref:`Texture2D<class_Texture2D>` **breakpoint** :ref:`🔗<class_CodeEdit_theme_icon_breakpoint>`
 
-Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the breakpoint gutter for breakpointed lines.
+Définit la :ref:`Texture2D<class_Texture2D>` personnalisée pour le point d'arrêt dans le bandeau.
 
 .. rst-class:: classref-item-separator
 
@@ -2023,7 +2023,7 @@ Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the line folding gutt
 
 :ref:`Texture2D<class_Texture2D>` **can_fold_code_region** :ref:`🔗<class_CodeEdit_theme_icon_can_fold_code_region>`
 
-Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the line folding gutter when a code region can be folded.
+Définit une :ref:`Texture2D<class_Texture2D>` personnalisée pour dessiner dans le bandeau de ligne quand une région de code peut être pliée.
 
 .. rst-class:: classref-item-separator
 
@@ -2071,7 +2071,7 @@ Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the line folding gutt
 
 :ref:`Texture2D<class_Texture2D>` **folded_code_region** :ref:`🔗<class_CodeEdit_theme_icon_folded_code_region>`
 
-Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the line folding gutter when a code region is folded and can be unfolded.
+Définit une :ref:`Texture2D<class_Texture2D>` personnalisée pour dessiner dans le bandeau de ligne quand une région de code est pliée et peut être dépliée.
 
 .. rst-class:: classref-item-separator
 
@@ -2083,7 +2083,7 @@ Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the line folding gutt
 
 :ref:`Texture2D<class_Texture2D>` **folded_eol_icon** :ref:`🔗<class_CodeEdit_theme_icon_folded_eol_icon>`
 
-Sets a custom :ref:`Texture2D<class_Texture2D>` to draw at the end of a folded line.
+Définit une :ref:`Texture2D<class_Texture2D>` personnalisée pour dessiner la fin d'une région de code pliée.
 
 .. rst-class:: classref-item-separator
 

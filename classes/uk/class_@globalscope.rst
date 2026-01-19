@@ -3468,11 +3468,11 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_RANGE** = ``1``
 
-Hints that an :ref:`int<class_int>` or :ref:`float<class_float>` property should be within a range specified via the hint string ``"min,max"`` or ``"min,max,step"``. The hint string can optionally include ``"or_greater"`` and/or ``"or_less"`` to allow manual input going respectively above the max or below the min values.
+Підказки про те, що властивість :ref:`int<class_int>` або :ref:`float<class_float>` повинна знаходитися в діапазоні, визначеному за допомогою рядка підказки ``"min,max"`` або ``"min,max,step"``. Рядок підказки може за бажанням містити ``"or_greater"`` та/або ``"or_less"``, щоб дозволити ручне введення значень, що виходять за максимальне або мінімальне значення відповідно.
 
-\ **Example:** ``"-360,360,1,or_greater,or_less"``.
+\ **Приклад:** ``"-360,360,1,or_greater,or_less"``.
 
-Additionally, other keywords can be included: ``"exp"`` for exponential range editing, ``"radians_as_degrees"`` for editing radian angles in degrees (the range values are also in degrees), ``"degrees"`` to hint at an angle, ``"prefer_slider"`` to show the slider for integers, ``"hide_control"`` to hide the slider or up-down arrows, and ``"suffix:px/s"`` to display a suffix indicating the value's unit (e.g. ``px/s`` for pixels per second).
+ Крім того, можна включити інші ключові слова: ``"exp"`` для редагування експоненціального діапазону, ``"radians_as_degrees"`` для редагування радіанних кутів у градусах (значення діапазону також у градусах), ``"degrees"`` для підказки кута, ``"prefer_slider"`` для відображення повзунка для цілих чисел, ``"hide_control"`` для приховування повзунка або стрілок вгору-вниз, та ``"suffix:px/s"`` для відображення суфікса, що вказує на одиницю вимірювання значення (наприклад, ``px/s`` для пікселів за секунду).
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_ENUM:
 
@@ -3480,9 +3480,9 @@ Additionally, other keywords can be included: ``"exp"`` for exponential range ed
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_ENUM** = ``2``
 
-Hints that an :ref:`int<class_int>`, :ref:`String<class_String>`, or :ref:`StringName<class_StringName>` property is an enumerated value to pick in a list specified via a hint string.
+Підказки, що властивість :ref:`int<class_int>`, :ref:`String<class_String>` або :ref:`StringName<class_StringName>` є перелічуваним значенням для вибору зі списку, заданого за допомогою рядка підказки.
 
-The hint string is a comma separated list of names such as ``"Hello,Something,Else"``. Whitespace is **not** removed from either end of a name. For integer properties, the first name in the list has value 0, the next 1, and so on. Explicit values can also be specified by appending ``:integer`` to the name, e.g. ``"Zero,One,Three:3,Four,Six:6"``.
+Рядок підказки – це список імен, розділених комами, наприклад, ``"Hello,Something,Else"``. Пробіли **не** видаляються з жодного кінця імені. Для цілочисельних властивостей перше ім'я у списку має значення 0, наступне – 1 тощо. Явні значення також можна вказати, додавши ``:integer`` до імені, наприклад, ``"Zero,One,Three:3,Four,Six:6"``.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_ENUM_SUGGESTION:
 
@@ -3490,9 +3490,9 @@ The hint string is a comma separated list of names such as ``"Hello,Something,El
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_ENUM_SUGGESTION** = ``3``
 
-Hints that a :ref:`String<class_String>` or :ref:`StringName<class_StringName>` property can be an enumerated value to pick in a list specified via a hint string such as ``"Hello,Something,Else"``. See :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>` for details.
+Підказки, що властивість :ref:`String<class_String>` або :ref:`StringName<class_StringName>` може бути перелічуваним значенням для вибору зі списку, заданого за допомогою рядка підказки, такого як ``"Hello,Something,Else"``. Див. :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>` для отримання детальної інформації.
 
-Unlike :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`, a property with this hint still accepts arbitrary values and can be empty. The list of values serves to suggest possible values.
+На відміну від :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`, властивість з цією підказкою все ще приймає довільні значення та може бути порожньою. Список значень служить для підказки можливих значень.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_EXP_EASING:
 
@@ -3516,13 +3516,13 @@ Unlike :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_FLAGS** = ``6``
 
-Hints that an :ref:`int<class_int>` property is a bitmask with named bit flags.
+Підказує, що властивість :ref:`int<class_int>` є бітовою маскою з іменованими бітовими прапорцями.
 
-The hint string is a comma separated list of names such as ``"Bit0,Bit1,Bit2,Bit3"``. Whitespace is **not** removed from either end of a name. The first name in the list has value 1, the next 2, then 4, 8, 16 and so on. Explicit values can also be specified by appending ``:integer`` to the name, e.g. ``"A:4,B:8,C:16"``. You can also combine several flags (``"A:4,B:8,AB:12,C:16"``).
+Рядок підказки – це список імен, розділених комами, наприклад, ``"Bit0,Bit1,Bit2,Bit3"``. Пробіли **не** видаляються з жодного кінця імені. Перше ім'я у списку має значення 1, наступне 2, потім 4, 8, 16 тощо. Явні значення також можна вказати, додавши ``:integer`` до імені, наприклад, ``"A:4,B:8,C:16"``. Ви також можете поєднувати кілька прапорців (``"A:4,B:8,AB:12,C:16"``).
 
-\ **Note:** A flag value must be at least ``1`` and at most ``2 ** 32 - 1``.
+\ **Примітка:** Значення прапора має бути щонайменше ``1`` і щонайбільше ``2 ** 32 - 1``.
 
-\ **Note:** Unlike :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`, the previous explicit value is not taken into account. For the hint ``"A:16,B,C"``, A is 16, B is 2, C is 4.
+ **Примітка:** На відміну від :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`, попереднє явне значення не враховується. Для підказки ``"A:16,B,C"``, A дорівнює 16, B дорівнює 2, C дорівнює 4.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_2D_RENDER:
 
@@ -3626,11 +3626,11 @@ The hint string is a comma separated list of names such as ``"Bit0,Bit1,Bit2,Bit
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_MULTILINE_TEXT** = ``18``
 
-Hints that a :ref:`String<class_String>` property is text with line breaks. Editing it will show a text input field where line breaks can be typed.
+Підказує, що властивість :ref:`String<class_String>` є текстом з розривами рядків. Редагування відобразить поле введення тексту, де можна вводити розриви рядків.
 
-The hint string can be set to ``"monospace"`` to force the input field to use a monospaced font.
+Рядок підказки можна встановити на ``"monospace"``, щоб примусово використовувати моноширинний шрифт у полі введення.
 
-If the hint string ``"no_wrap"`` is set, the input field will not wrap lines at boundaries, instead resorting to making the area scrollable.
+Якщо встановлено рядок підказки ``"no_wrap"``, поле введення не переноситиме рядки на межах, натомість область буде прокручуватися.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_EXPRESSION:
 
@@ -4084,23 +4084,23 @@ flags **PropertyUsageFlags**: :ref:`🔗<enum_@GlobalScope_PropertyUsageFlags>`
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_ARRAY** = ``262144``
 
-The property is the element count of a property array, i.e. a list of groups of related properties. Properties defined with this usage also need a specific ``class_name`` field in the form of ``label,prefix``. The field may also include additional comma-separated options:
+Властивість – це кількість елементів масиву властивостей, тобто список груп пов’язаних властивостей. Властивості, визначені за цим використанням, також потребують спеціального поля ``class_name`` у форматі ``label,prefix``. Поле також може містити додаткові параметри, розділені комами:
 
-- ``page_size=N``: Overrides :ref:`EditorSettings.interface/inspector/max_array_dictionary_items_per_page<class_EditorSettings_property_interface/inspector/max_array_dictionary_items_per_page>` for this array.
+- ``page_size=N``: Перевизначає :ref:`EditorSettings.interface/inspector/max_array_dictionary_items_per_page<class_EditorSettings_property_interface/inspector/max_array_dictionary_items_per_page>` для цього масиву.
 
-- ``add_button_text=text``: The text displayed by the "Add Element" button.
+- ``add_button_text=text``: Текст, що відображається кнопкою «Додати елемент».
 
-- ``static``: The elements can't be re-arranged.
+- ``static``: Елементи не можна перевпорядкувати.
 
-- ``const``: New elements can't be added.
+- ``const``: Нові елементи не можна додавати.
 
-- ``numbered``: An index will appear next to each element.
+- ``numbered``: Індекс з’явиться поруч із кожним елементом.
 
-- ``unfoldable``: The array can't be folded.
+- ``unfoldable``: Масив не можна згорнути.
 
-- ``swap_method=method_name``: The method that will be called when two elements switch places. The method should take 2 :ref:`int<class_int>` parameters, which will be indices of the elements being swapped.
+ - ``swap_method=назва_методу``: Метод, який буде викликано, коли два елементи поміняються місцями. Метод повинен приймати 2 параметри :ref:`int<class_int>`, які будуть індексами елементів, що міняються місцями.
 
-Note that making a full-fledged property array requires boilerplate code involving :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`.
+Зверніть увагу, що створення повноцінного масиву властивостей вимагає шаблонного коду, що включає :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`.
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_ALWAYS_DUPLICATE:
 
@@ -5089,7 +5089,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`NavigationServer2DManager<class_NavigationServer2DManager>` **NavigationServer2DManager** :ref:`🔗<class_@GlobalScope_property_NavigationServer2DManager>`
 
-The :ref:`NavigationServer2DManager<class_NavigationServer2DManager>` singleton.
+Синглтон :ref:`NavigationServer2DManager<class_NavigationServer2DManager>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5113,7 +5113,7 @@ The :ref:`NavigationServer2DManager<class_NavigationServer2DManager>` singleton.
 
 :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` **NavigationServer3DManager** :ref:`🔗<class_@GlobalScope_property_NavigationServer3DManager>`
 
-The :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` singleton.
+Синглтон :ref:`NavigationServer3DManager<class_NavigationServer3DManager>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6014,7 +6014,7 @@ Cubic інтерполює між двома значеннями обертан
 
 :ref:`Object<class_Object>` **instance_from_id**\ (\ instance_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_@GlobalScope_method_instance_from_id>`
 
-Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All Objects have a unique instance ID. See also :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`.
+Повертає :ref:`Object<class_Object>`, що відповідає ``instance_id``. Усі Об'єкти мають унікальний ідентифікатор екземпляра. Див. також :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`.
 
 
 .. tabs::
@@ -6026,7 +6026,7 @@ Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All
     func _ready():
         var id = get_instance_id()
         var instance = instance_from_id(id)
-        print(instance.drink) # Prints "water"
+        print(instance.drink) # Друкує "water"
 
  .. code-tab:: csharp
 
@@ -6038,7 +6038,7 @@ Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All
         {
             ulong id = GetInstanceId();
             var instance = (MyNode)InstanceFromId(Id);
-            GD.Print(instance.Drink); // Prints "water"
+            GD.Print(instance.Drink); // Друкує "water"
         }
     }
 
@@ -7443,7 +7443,7 @@ max(1, 7, 3, -6, 5) # Returns 7
 
 :ref:`int<class_int>` **typeof**\ (\ variable\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_@GlobalScope_method_typeof>`
 
-Returns the internal type of the given ``variable``, using the :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` values.
+Повертає внутрішній тип заданої змінної ``variable``, використовуючи значення :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`.
 
 ::
 
@@ -7455,7 +7455,7 @@ Returns the internal type of the given ``variable``, using the :ref:`Variant.Typ
     else:
         print("Unexpected result!")
 
-See also :ref:`type_string()<class_@GlobalScope_method_type_string>`.
+Див. також :ref:`type_string()<class_@GlobalScope_method_type_string>`.
 
 .. rst-class:: classref-item-separator
 

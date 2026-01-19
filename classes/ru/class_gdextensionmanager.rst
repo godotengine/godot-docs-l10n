@@ -214,7 +214,7 @@ enum **LoadStatus**: :ref:`🔗<enum_GDExtensionManager_LoadStatus>`
 
 :ref:`LoadStatus<enum_GDExtensionManager_LoadStatus>` **load_extension_from_function**\ (\ path\: :ref:`String<class_String>`, init_func\: ``const GDExtensionInitializationFunction*``\ ) :ref:`🔗<class_GDExtensionManager_method_load_extension_from_function>`
 
-Loads the extension already in address space via the given path and initialization function. The ``path`` needs to be unique and start with ``"libgodot://"``. Returns :ref:`LOAD_STATUS_OK<class_GDExtensionManager_constant_LOAD_STATUS_OK>` if successful.
+Загружает расширение, уже находящееся в адресном пространстве, по указанному пути и с помощью функции инициализации. Параметр ``path`` должен быть уникальным и начинаться с ``"libgodot://"``. В случае успеха возвращает :ref:`LOAD_STATUS_OK<class_GDExtensionManager_constant_LOAD_STATUS_OK>`.
 
 .. rst-class:: classref-item-separator
 

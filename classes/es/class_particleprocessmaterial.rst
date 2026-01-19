@@ -740,7 +740,7 @@ La rotación de cada partícula será animada a lo largo de esta :ref:`CurveText
 
 Rotación inicial aplicada a cada partícula, en grados.
 
-Sólo se aplica cuando :ref:`particle_flag_disable_z<class_ParticleProcessMaterial_property_particle_flag_disable_z>` o :ref:`particle_flag_rotate_y<class_ParticleProcessMaterial_property_particle_flag_rotate_y>` son ``true`` o el :ref:`BaseMaterial3D<class_BaseMaterial3D>` que se usa para dibujar la partícula está usando :ref:`BaseMaterial3D.BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>`.
+Solo se aplica cuando :ref:`particle_flag_disable_z<class_ParticleProcessMaterial_property_particle_flag_disable_z>` o :ref:`particle_flag_rotate_y<class_ParticleProcessMaterial_property_particle_flag_rotate_y>` son ``true`` o el :ref:`BaseMaterial3D<class_BaseMaterial3D>` que se usa para dibujar la partícula está usando :ref:`BaseMaterial3D.BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>`.
 
 .. rst-class:: classref-item-separator
 

@@ -693,9 +693,9 @@ Display server поддерживает запрос масштабного ко
 
 :ref:`Feature<enum_DisplayServer_Feature>` **FEATURE_ICON** = ``13``
 
-Display server supports changing the window icon (usually displayed in the top-left corner). **Windows, macOS, Linux (X11/Wayland)**\ 
+Сервер отображения поддерживает изменение значка окна (обычно отображается в верхнем левом углу). **Windows, macOS, Linux (X11/Wayland)**\ 
 
-\ **Note:** Use on Wayland requires the compositor to implement the `xdg_toplevel_icon_v1 <https://wayland.app/protocols/xdg-toplevel-icon-v1#xdg_toplevel_icon_v1>`__ protocol, which not all compositors do. See `xdg_toplevel_icon_v1#compositor-support <https://wayland.app/protocols/xdg-toplevel-icon-v1#compositor-support>`__ for more information on individual compositor support.
+\ **Примечание:** Для использования в Wayland требуется, чтобы композитор реализовал протокол `xdg_toplevel_icon_v1 <https://wayland.app/protocols/xdg-toplevel-icon-v1#xdg_toplevel_icon_v1>`__, что есть не у всех композиторов. См. `xdg_toplevel_icon_v1#compositor-support <https://wayland.app/protocols/xdg-toplevel-icon-v1#compositor-support>`__ для получения дополнительной информации о поддержке отдельных композиторов.
 
 .. _class_DisplayServer_constant_FEATURE_NATIVE_ICON:
 
@@ -1301,7 +1301,7 @@ enum **AccessibilityFlags**: :ref:`🔗<enum_DisplayServer_AccessibilityFlags>`
 
 :ref:`AccessibilityFlags<enum_DisplayServer_AccessibilityFlags>` **FLAG_MULTISELECTABLE** = ``1``
 
-Element supports multiple item selection.
+Элемент поддерживает выбор нескольких элементов.
 
 .. _class_DisplayServer_constant_FLAG_REQUIRED:
 
@@ -2309,7 +2309,7 @@ enum **WindowFlags**: :ref:`🔗<enum_DisplayServer_WindowFlags>`
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MAX** = ``13``
 
-Represents the size of the :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` enum.
+Представляет размер перечисления :ref:`WindowFlags<enum_DisplayServer_WindowFlags>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2397,9 +2397,9 @@ enum **WindowEvent**: :ref:`🔗<enum_DisplayServer_WindowEvent>`
 
 :ref:`WindowEvent<enum_DisplayServer_WindowEvent>` **WINDOW_EVENT_FORCE_CLOSE** = ``8``
 
-Sent when the window has been forcibly closed by the display server. The window will immediately hide and clean any internal rendering references.
+Отправляется, когда окно было принудительно закрыто сервером отображения. Окно немедленно скроет и очистит все внутренние ссылки на отрисовку.
 
-\ **Note:** This flag is implemented only on Linux (Wayland).
+\ **Примечание:** Этот флаг реализован только в Linux (Wayland).
 
 .. rst-class:: classref-item-separator
 
@@ -2791,9 +2791,9 @@ ID Идентификатор, который ссылается на экран
 
 :ref:`RID<class_RID>` **accessibility_create_sub_text_edit_elements**\ (\ parent_rid\: :ref:`RID<class_RID>`, shaped_text\: :ref:`RID<class_RID>`, min_height\: :ref:`float<class_float>`, insert_pos\: :ref:`int<class_int>` = -1, is_last_line\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_DisplayServer_method_accessibility_create_sub_text_edit_elements>`
 
-Creates a new, empty accessibility sub-element from the shaped text buffer. Sub-elements are freed automatically when the parent element is freed, or can be freed early using the :ref:`accessibility_free_element()<class_DisplayServer_method_accessibility_free_element>` method.
+Создает новый пустой подэлемент доступности из буфера текста определенной формы. Подэлементы освобождаются автоматически при освобождении родительского элемента или могут быть освобождены досрочно с помощью метода :ref:`accessibility_free_element()<class_DisplayServer_method_accessibility_free_element>`.
 
-If ``is_last_line`` is ``true``, no trailing newline is appended to the text content. Set to ``true`` for the last line in multi-line text fields and for single-line text fields.
+Если ``is_last_line`` имеет значение ``true``, к содержимому текста не добавляется завершающая новая строка. Установите значение ``true`` для последней строки в многострочных текстовых полях и для однострочных текстовых полей.
 
 .. rst-class:: classref-item-separator
 
@@ -2805,7 +2805,7 @@ If ``is_last_line`` is ``true``, no trailing newline is appended to the text con
 
 :ref:`Variant<class_Variant>` **accessibility_element_get_meta**\ (\ id\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_DisplayServer_method_accessibility_element_get_meta>`
 
-Returns the metadata of the accessibility element ``id``.
+Возвращает метаданные элемента доступности ``id``.
 
 .. rst-class:: classref-item-separator
 
@@ -2817,7 +2817,7 @@ Returns the metadata of the accessibility element ``id``.
 
 |void| **accessibility_element_set_meta**\ (\ id\: :ref:`RID<class_RID>`, meta\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_DisplayServer_method_accessibility_element_set_meta>`
 
-Sets the metadata of the accessibility element ``id`` to ``meta``.
+Устанавливает метаданные элемента доступности ``id`` равными ``meta``.
 
 .. rst-class:: classref-item-separator
 
@@ -2829,7 +2829,7 @@ Sets the metadata of the accessibility element ``id`` to ``meta``.
 
 |void| **accessibility_free_element**\ (\ id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_DisplayServer_method_accessibility_free_element>`
 
-Frees the accessibility element ``id`` created by :ref:`accessibility_create_element()<class_DisplayServer_method_accessibility_create_element>`, :ref:`accessibility_create_sub_element()<class_DisplayServer_method_accessibility_create_sub_element>`, or :ref:`accessibility_create_sub_text_edit_elements()<class_DisplayServer_method_accessibility_create_sub_text_edit_elements>`.
+Освобождает элемент доступности ``id``, созданный с помощью :ref:`accessibility_create_element()<class_DisplayServer_method_accessibility_create_element>`, :ref:`accessibility_create_sub_element()<class_DisplayServer_method_accessibility_create_sub_element>` или :ref:`accessibility_create_sub_text_edit_elements()<class_DisplayServer_method_accessibility_create_sub_text_edit_elements>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2865,11 +2865,11 @@ Frees the accessibility element ``id`` created by :ref:`accessibility_create_ele
 
 :ref:`int<class_int>` **accessibility_screen_reader_active**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_accessibility_screen_reader_active>`
 
-Returns ``1`` if a screen reader, Braille display or other assistive app is active, ``0`` otherwise. Returns ``-1`` if status is unknown.
+Возвращает ``1``, если активна программа чтения с экрана, брайлевский дисплей или другое вспомогательное приложение, ``0`` в противном случае. Возвращает ``-1``, если статус неизвестен.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Примечание:** Этот метод реализован в Linux, macOS и Windows.
 
-\ **Note:** Accessibility debugging tools, such as Accessibility Insights for Windows, Accessibility Inspector (macOS), or AT-SPI Browser (Linux/BSD), do not count as assistive apps and will not affect this value. To test your project with these tools, set :ref:`ProjectSettings.accessibility/general/accessibility_support<class_ProjectSettings_property_accessibility/general/accessibility_support>` to ``1``.
+\ **Примечание:** Инструменты отладки специальных возможностей, такие как Accessibility Insights для Windows, Accessibility Inspector (macOS) или AT-SPI Browser (Linux/BSD), не считаются вспомогательными приложениями и не повлияют на это значение. Чтобы протестировать свой проект с помощью этих инструментов, установите :ref:`ProjectSettings.accessibility/general/accessibility_support<class_ProjectSettings_property_accessibility/general/accessibility_support>` в ``1``.
 
 .. rst-class:: classref-item-separator
 
@@ -3851,9 +3851,11 @@ Returns ``1`` if a screen reader, Braille display or other assistive app is acti
 
 |void| **cursor_set_custom_image**\ (\ cursor\: :ref:`Resource<class_Resource>`, shape\: :ref:`CursorShape<enum_DisplayServer_CursorShape>` = 0, hotspot\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_DisplayServer_method_cursor_set_custom_image>`
 
-Устанавливает пользовательское изображение курсора мыши для заданного ``shape``. Это означает, что операционная система пользователя и тема курсора мыши больше не будут влиять на внешний вид курсора мыши.
+Устанавливает пользовательское изображение курсора мыши для заданного параметра ``shape``. Это означает, что операционная система пользователя и тема курсора мыши больше не будут влиять на его внешний вид.
 
-\ ``cursor`` может быть либо :ref:`Texture2D<class_Texture2D>`, либо :ref:`Image<class_Image>`, и он не должен быть больше 256×256 для правильного отображения. При желании ``hotspot`` можно задать для смещения положения изображения относительно точки щелчка. По умолчанию ``hotspot`` устанавливается в верхнем левом углу изображения. См. также :ref:`cursor_set_shape()<class_DisplayServer_method_cursor_set_shape>`.
+Параметр ``cursor`` может быть либо :ref:`Texture2D<class_Texture2D>`, либо :ref:`Image<class_Image>`, и его размер не должен превышать 256×256 для корректного отображения. При желании параметр ``hotspot`` может быть установлен для смещения положения изображения относительно точки щелчка. По умолчанию ``hotspot`` устанавливается в верхний левый угол изображения. См. также :ref:`cursor_set_shape()<class_DisplayServer_method_cursor_set_shape>`.
+
+\ **Примечание:** В веб-среде вызов этого метода каждый кадр может привести к мерцанию курсора.
 
 .. rst-class:: classref-item-separator
 
@@ -3931,45 +3933,47 @@ Returns ``1`` if a screen reader, Braille display or other assistive app is acti
 
 :ref:`Error<enum_@GlobalScope_Error>` **file_dialog_show**\ (\ title\: :ref:`String<class_String>`, current_directory\: :ref:`String<class_String>`, filename\: :ref:`String<class_String>`, show_hidden\: :ref:`bool<class_bool>`, mode\: :ref:`FileDialogMode<enum_DisplayServer_FileDialogMode>`, filters\: :ref:`PackedStringArray<class_PackedStringArray>`, callback\: :ref:`Callable<class_Callable>`, parent_window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_file_dialog_show>`
 
-Displays OS native dialog for selecting files or directories in the file system.
+Отображает встроенный диалог ОС для выбора файлов или каталогов в файловой системе.
 
-Each filter string in the ``filters`` array should be formatted like this: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. The description text of the filter is optional and can be omitted. It is recommended to set both file extension and MIME type. See also :ref:`FileDialog.filters<class_FileDialog_property_filters>`.
 
-Callbacks have the following arguments: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int``. **On Android,** the third callback argument (``selected_filter_index``) is always ``0``.
 
-\ **Note:** This method is implemented if the display server has the :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>` feature. Supported platforms include Linux (X11/Wayland), Windows, macOS, and Android (API level 29+).
+Каждая строка фильтра в массиве ``filters`` должна быть отформатирована следующим образом: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. Текст описания фильтра является необязательным и может быть опущен. Рекомендуется указывать как расширение файла, так и MIME-тип. См. также :ref:`FileDialog.filters<class_FileDialog_property_filters>`.
 
-\ **Note:** ``current_directory`` might be ignored.
+Обратные вызовы имеют следующие аргументы: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int``. **На Android** третий аргумент обратного вызова (``selected_filter_index``) всегда равен ``0``.
 
-\ **Note:** Embedded file dialogs and Windows file dialogs support only file extensions, while Android, Linux, and macOS file dialogs also support MIME types.
+\ **Примечание:** Этот метод реализован, если сервер отображения имеет функцию :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>`. Поддерживаемые платформы: Linux (X11/Wayland), Windows, macOS и Android (уровень API 29+).
 
-\ **Note:** On Android and Linux, ``show_hidden`` is ignored.
+\ **Примечание:** Параметр ``current_directory`` может быть проигнорирован.
 
-\ **Note:** On Android and macOS, native file dialogs have no title.
+\ **Примечание:** Встроенные диалоговые окна выбора файлов и диалоговые окна выбора файлов Windows поддерживают только расширения файлов, в то время как диалоговые окна выбора файлов Android, Linux и macOS также поддерживают типы MIME.
 
-\ **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` to get a list of saved bookmarks.
+\ **Примечание:** На Android и Linux параметр ``show_hidden`` игнорируется.
 
-\ **Note:** On Android, this method uses the Android Storage Access Framework (SAF).
+\ **Примечание:** На Android и macOS у нативных диалоговых окон выбора файлов нет заголовка.
 
-The file picker returns a URI instead of a filesystem path. This URI can be passed directly to :ref:`FileAccess<class_FileAccess>` to perform read/write operations.
+\ **Примечание:** На macOS изолированные приложения сохраняют закладки с ограниченным доступом, чтобы сохранить доступ к открытым папкам в нескольких сессиях. Используйте :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>`, чтобы получить список сохраненных закладок.
 
-When using :ref:`FILE_DIALOG_MODE_OPEN_DIR<class_DisplayServer_constant_FILE_DIALOG_MODE_OPEN_DIR>`, it returns a tree URI that grants full access to the selected directory. File operations inside this directory can be performed by passing a path on the form ``treeUri#relative/path/to/file`` to :ref:`FileAccess<class_FileAccess>`.
+\ **Примечание:** На Android этот метод использует Android Storage Access Framework (SAF).
 
-To avoid opening the file picker again after each app restart, you can take persistable URI permission as follows:
+Средство выбора файлов возвращает URI вместо пути к файловой системе. Этот URI можно передать непосредственно в :ref:`FileAccess<class_FileAccess>` для выполнения операций чтения/записи.
+
+При использовании :ref:`FILE_DIALOG_MODE_OPEN_DIR<class_DisplayServer_constant_FILE_DIALOG_MODE_OPEN_DIR>` возвращается URI дерева, предоставляющий полный доступ к выбранному каталогу. Операции с файлами внутри этого каталога можно выполнять, передавая путь в формате ``treeUri#relative/path/to/file`` в :ref:`FileAccess<class_FileAccess>`.
+
+Чтобы избежать повторного открытия средства выбора файлов после каждого перезапуска приложения, можно получить постоянное разрешение URI следующим образом:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    val uri = "content://com.android..." # URI of the selected file or folder.
-    val persist = true # Set to false to release the persistable permission.
+    val uri = "content://com.android..." # URI выбранного файла или папки.
+    val persist = true # Установите значение false, чтобы освободить сохраняемое разрешение.
     var android_runtime = Engine.get_singleton("AndroidRuntime")
     android_runtime.updatePersistableUriPermission(uri, persist)
 
 
 
-The persistable URI permission remains valid across app restarts as long as the directory is not moved, renamed, or deleted.
+Сохраняемое разрешение URI остается в силе после перезапуска приложения, если каталог не перемещен, не переименован и не удален.
 
 .. rst-class:: classref-item-separator
 
@@ -3981,31 +3985,31 @@ The persistable URI permission remains valid across app restarts as long as the 
 
 :ref:`Error<enum_@GlobalScope_Error>` **file_dialog_with_options_show**\ (\ title\: :ref:`String<class_String>`, current_directory\: :ref:`String<class_String>`, root\: :ref:`String<class_String>`, filename\: :ref:`String<class_String>`, show_hidden\: :ref:`bool<class_bool>`, mode\: :ref:`FileDialogMode<enum_DisplayServer_FileDialogMode>`, filters\: :ref:`PackedStringArray<class_PackedStringArray>`, options\: :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\], callback\: :ref:`Callable<class_Callable>`, parent_window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_file_dialog_with_options_show>`
 
-Displays OS native dialog for selecting files or directories in the file system with additional user selectable options.
+Отображает встроенный диалог ОС для выбора файлов или каталогов в файловой системе с дополнительными параметрами, выбираемыми пользователем.
 
-Each filter string in the ``filters`` array should be formatted like this: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. The description text of the filter is optional and can be omitted. It is recommended to set both file extension and MIME type. See also :ref:`FileDialog.filters<class_FileDialog_property_filters>`.
+Каждая строка фильтра в массиве ``filters`` должна быть отформатирована следующим образом: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. Текст описания фильтра является необязательным и может быть опущен. Рекомендуется указывать как расширение файла, так и MIME-тип. См. также :ref:`FileDialog.filters<class_FileDialog_property_filters>`.
 
-\ ``options`` is array of :ref:`Dictionary<class_Dictionary>`\ s with the following keys:
+\ ``options`` — это массив :ref:`Dictionary<class_Dictionary>` со следующими ключами:
 
-- ``"name"`` - option's name :ref:`String<class_String>`.
+- ``"name"`` — имя параметра :ref:`String<class_String>`.
 
-- ``"values"`` - :ref:`PackedStringArray<class_PackedStringArray>` of values. If empty, boolean option (check box) is used.
+- ``"values"`` — :ref:`PackedStringArray<class_PackedStringArray>` значений. Если пусто, используется логический параметр (флажок).
 
-- ``"default"`` - default selected option index (:ref:`int<class_int>`) or default boolean value (:ref:`bool<class_bool>`).
+- ``"default"`` — индекс выбранного параметра по умолчанию (:ref:`int<class_int>`) или логическое значение по умолчанию (:ref:`bool<class_bool>`).
 
-Callbacks have the following arguments: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int, selected_option: Dictionary``.
+Функции обратного вызова имеют следующие аргументы: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int, selected_option: Dictionary``.
 
-\ **Note:** This method is implemented if the display server has the :ref:`FEATURE_NATIVE_DIALOG_FILE_EXTRA<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE_EXTRA>` feature. Supported platforms include Linux (X11/Wayland), Windows, and macOS.
+\ **Примечание:** Этот метод реализуется, если сервер отображения имеет функцию :ref:`FEATURE_NATIVE_DIALOG_FILE_EXTRA<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE_EXTRA>`. Поддерживаемые платформы включают Linux (X11/Wayland), Windows и macOS.
 
-\ **Note:** ``current_directory`` might be ignored.
+\ **Примечание:** Параметр ``current_directory`` может быть проигнорирован.
 
-\ **Note:** Embedded file dialogs and Windows file dialogs support only file extensions, while Android, Linux, and macOS file dialogs also support MIME types.
+\ **Примечание:** Встроенные диалоговые окна выбора файлов и диалоговые окна выбора файлов Windows поддерживают только расширения файлов, в то время как диалоговые окна выбора файлов Android, Linux и macOS также поддерживают типы MIME.
 
-\ **Note:** On Linux (X11), ``show_hidden`` is ignored.
+\ **Примечание:** В Linux (X11) параметр ``show_hidden`` игнорируется.
 
-\ **Note:** On macOS, native file dialogs have no title.
+\ **Примечание:** В macOS собственные диалоговые окна выбора файлов не имеют заголовка.
 
-\ **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` to get a list of saved bookmarks.
+\ **Примечание:** В macOS изолированные приложения сохраняют закладки с ограничениями безопасности, чтобы обеспечить доступ к открытым папкам в нескольких сеансах. Используйте :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>`, чтобы получить список сохраненных закладок.
 
 .. rst-class:: classref-item-separator
 
@@ -4115,9 +4119,9 @@ Callbacks have the following arguments: ``status: bool, selected_paths: PackedSt
 
 :ref:`int<class_int>` **get_primary_screen**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_get_primary_screen>`
 
-Returns the index of the primary screen.
+Возвращает индекс основного экрана.
 
-\ **Note:** This method is implemented on Linux/X11, macOS, and Windows. On other platforms, this method always returns ``0``.
+\ **Примечание:** Этот метод реализован в Linux/X11, macOS и Windows. На других платформах этот метод всегда возвращает ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -5561,11 +5565,11 @@ Returns the index of the primary screen.
 
 :ref:`Color<class_Color>` **screen_get_pixel**\ (\ position\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_pixel>`
 
-Returns the color of the pixel at the given screen ``position``. On multi-monitor setups, the screen position is relative to the virtual desktop area.
+Возвращает цвет пикселя на заданном экране ``position``. В многомониторных конфигурациях положение на экране определяется относительно области виртуального рабочего стола.
 
-\ **Note:** This method is implemented on Linux (X11, excluding XWayland), macOS, and Windows. On other platforms, this method always returns ``Color(0, 0, 0, 1)``.
+\ **Примечание:** Этот метод реализован в Linux (X11, за исключением XWayland), macOS и Windows. На других платформах этот метод всегда возвращает ``Color(0, 0, 0, 1)``.
 
-\ **Note:** On macOS, this method requires the "Screen Recording" permission. If permission is not granted, this method returns a color from a screenshot that will not include other application windows or OS elements not related to the application.
+\ **Примечание:** В macOS для работы этого метода требуется разрешение «Запись экрана». Если разрешение не предоставлено, этот метод возвращает цвет из скриншота, который не будет включать другие окна приложений или элементы ОС, не связанные с приложением.
 
 .. rst-class:: classref-item-separator
 
@@ -5602,9 +5606,9 @@ Returns the color of the pixel at the given screen ``position``. On multi-monito
 
 :ref:`float<class_float>` **screen_get_refresh_rate**\ (\ screen\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_refresh_rate>`
 
-Returns the current refresh rate of the specified screen. When V-Sync is enabled, this returns the maximum framerate the project can effectively reach. Returns ``-1.0`` if ``screen`` is invalid or the **DisplayServer** fails to find the refresh rate for the specified screen.
+Возвращает текущую частоту обновления указанного экрана. При включенной V-Sync возвращает максимальную частоту кадров, которую проект может эффективно достичь. Возвращает ``-1.0``, если ``screen`` недействителен или **DisplayServer** не может определить частоту обновления для указанного экрана.
 
-To fallback to a default refresh rate if the method fails, try:
+Чтобы вернуться к частоте обновления по умолчанию в случае сбоя метода, попробуйте:
 
 ::
 
@@ -5612,9 +5616,9 @@ To fallback to a default refresh rate if the method fails, try:
     if refresh_rate < 0:
         refresh_rate = 60.0
 
-\ **Note:** One of the following constants can be used as ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, or :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
+\ **Примечание:** В качестве ``screen`` можно использовать одну из следующих констант: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>` или :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
 
-\ **Note:** This method is implemented on Android, iOS, macOS, Linux (X11 and Wayland), and Windows. On other platforms, this method always returns ``-1.0``.
+\ **Примечание:** Этот метод реализован на Android, iOS, macOS, Linux (X11 и Wayland) и Windows. На других платформах этот метод всегда возвращает ``-1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -5718,9 +5722,9 @@ To fallback to a default refresh rate if the method fails, try:
 
 |void| **set_hardware_keyboard_connection_change_callback**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_DisplayServer_method_set_hardware_keyboard_connection_change_callback>`
 
-Sets the callback that should be called when a hardware keyboard is connected or disconnected. ``callable`` should accept a single :ref:`bool<class_bool>` argument indicating whether the keyboard has been connected (``true``) or disconnected (``false``).
+Устанавливает функцию обратного вызова, которая должна вызываться при подключении или отключении аппаратной клавиатуры. Параметр ``callable`` должен принимать один аргумент :ref:`bool<class_bool>`, указывающий, подключена ли клавиатура (``true``) или отключена (``false``).
 
-\ **Note:** This method is only implemented on Android.
+\ **Примечание:** Этот метод реализован только на Android.
 
 .. rst-class:: classref-item-separator
 
@@ -5760,9 +5764,9 @@ Sets the callback that should be called when a hardware keyboard is connected or
 
 |void| **set_system_theme_change_callback**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_DisplayServer_method_set_system_theme_change_callback>`
 
-Sets the callback that should be called when the system's theme settings are changed. ``callable`` should accept zero arguments.
+Устанавливает функцию обратного вызова, которая должна вызываться при изменении настроек темы системы. ``callable`` должен принимать ноль аргументов.
 
-\ **Note:** This method is implemented on Android, iOS, macOS, Windows, and Linux (X11/Wayland).
+\ **Примечание:** Этот метод реализован на Android, iOS, macOS, Windows и Linux (X11/Wayland).
 
 .. rst-class:: classref-item-separator
 
@@ -6094,9 +6098,9 @@ Sets the callback that should be called when the system's theme settings are cha
 
 :ref:`int<class_int>` **virtual_keyboard_get_height**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_virtual_keyboard_get_height>`
 
-Returns the on-screen keyboard's height in pixels. Returns ``0`` if there is no keyboard or if it is currently hidden.
+Возвращает высоту экранной клавиатуры в пикселях. Возвращает ``0``, если клавиатура отсутствует или скрыта.
 
-\ **Note:** On Android 7 and 8, the keyboard height may return ``0`` the first time the keyboard is opened in non-immersive mode. This behavior does not occur in immersive mode.
+\ **Примечание:** На Android 7 и 8 высота клавиатуры может возвращать ``0`` при первом открытии клавиатуры в неиммерсивном режиме. В иммерсивном режиме такое поведение не наблюдается.
 
 .. rst-class:: classref-item-separator
 
@@ -6394,9 +6398,9 @@ Returns the on-screen keyboard's height in pixels. Returns ``0`` if there is no 
 
 :ref:`bool<class_bool>` **window_maximize_on_title_dbl_click**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_window_maximize_on_title_dbl_click>`
 
-Returns ``true`` if double-clicking on a window's title should maximize it.
+Возвращает ``true``, если двойной щелчок по заголовку окна должен развернуть его на весь экран.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Примечание:** Этот метод реализован только в macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -6408,9 +6412,9 @@ Returns ``true`` if double-clicking on a window's title should maximize it.
 
 :ref:`bool<class_bool>` **window_minimize_on_title_dbl_click**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_window_minimize_on_title_dbl_click>`
 
-Returns ``true`` if double-clicking on a window's title should minimize it.
+Возвращает ``true``, если двойной щелчок по заголовку окна должен его свернуть.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Примечание:** Этот метод реализован только в macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -6446,9 +6450,9 @@ Returns ``true`` if double-clicking on a window's title should minimize it.
 
 |void| **window_set_color**\ (\ color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_DisplayServer_method_window_set_color>`
 
-Sets the background color of the root window.
+Устанавливает цвет фона корневого окна.
 
-\ **Note:** This method is implemented only on Android.
+\ **Примечание:** Этот метод реализован только на Android.
 
 .. rst-class:: classref-item-separator
 

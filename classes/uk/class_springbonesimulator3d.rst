@@ -290,9 +290,9 @@ enum **CenterFrom**: :ref:`🔗<enum_SpringBoneSimulator3D_CenterFrom>`
 - |void| **set_mutable_bone_axes**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_bone_axes_mutable**\ (\ )
 
-If ``true``, the solver retrieves the bone axis from the bone pose every frame.
+Якщо ``true``, розв'язувач отримує вісь кістки з пози кістки кожного кадру.
 
-If ``false``, the solver retrieves the bone axis from the bone rest and caches it, which increases performance slightly, but position changes in the bone pose made before processing this **SpringBoneSimulator3D** are ignored.
+Якщо ``false``, розв'язувач отримує вісь кістки з залишку кістки та кешує її, що дещо підвищує продуктивність, але зміни положення в позі кістки, внесені до обробки цього **SpringBoneSimulator3D**, ігноруються.
 
 .. rst-class:: classref-item-separator
 
@@ -482,7 +482,7 @@ If ``false``, the solver retrieves the bone axis from the bone rest and caches i
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **get_end_bone_direction**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_end_bone_direction>`
 
-Returns the tail direction of the end bone of the bone chain when :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` is ``true``.
+Повертає напрямок хвоста кінцевої кістки ланцюжка кісток, коли :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` має значення ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -494,7 +494,7 @@ Returns the tail direction of the end bone of the bone chain when :ref:`is_end_b
 
 :ref:`float<class_float>` **get_end_bone_length**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_end_bone_length>`
 
-Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` is ``true``.
+Повертає довжину кінця кісткового ланцюжка, коли :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` має значення ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -674,9 +674,9 @@ Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extend
 
 :ref:`Vector3<class_Vector3>` **get_joint_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_joint_rotation_axis_vector>`
 
-Returns the rotation axis vector for the specified joint in the bone chain. This vector represents the axis around which the joint can rotate. It is determined based on the rotation axis set for the joint.
+Повертає вектор осі обертання для зазначеного суглоба в ланцюжку кісток. Цей вектор представляє вісь, навколо якої може обертатися суглоб. Він визначається на основі осі обертання, встановленої для суглоба.
 
-If :ref:`get_joint_rotation_axis()<class_SpringBoneSimulator3D_method_get_joint_rotation_axis>` is :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, this method returns ``Vector3(0, 0, 0)``.
+Якщо :ref:`get_joint_rotation_axis()<class_SpringBoneSimulator3D_method_get_joint_rotation_axis>` має значення :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, цей метод повертає ``Vector3(0, 0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -760,9 +760,9 @@ If :ref:`get_joint_rotation_axis()<class_SpringBoneSimulator3D_method_get_joint_
 
 :ref:`Vector3<class_Vector3>` **get_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_rotation_axis_vector>`
 
-Returns the rotation axis vector of the bone chain. This vector represents the axis around which the bone chain can rotate. It is determined based on the rotation axis set for the bone chain.
+Повертає вектор осі обертання кісткового ланцюга. Цей вектор представляє вісь, навколо якої може обертатися кістковий ланцюг. Він визначається на основі осі обертання, встановленої для кісткового ланцюга.
 
-If :ref:`get_rotation_axis()<class_SpringBoneSimulator3D_method_get_rotation_axis>` is :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, this method returns ``Vector3(0, 0, 0)``.
+Якщо :ref:`get_rotation_axis()<class_SpringBoneSimulator3D_method_get_rotation_axis>` має значення :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, цей метод повертає ``Vector3(0, 0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -810,7 +810,7 @@ If :ref:`get_rotation_axis()<class_SpringBoneSimulator3D_method_get_rotation_axi
 
 :ref:`bool<class_bool>` **is_end_bone_extended**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_is_end_bone_extended>`
 
-Returns ``true`` if the end bone is extended to have a tail.
+Повертає ``true``, якщо кінцева кістка подовжена, щоб мати хвіст.
 
 .. rst-class:: classref-item-separator
 
@@ -1028,9 +1028,9 @@ Returns ``true`` if the end bone is extended to have a tail.
 
 |void| **set_extend_end_bone**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_extend_end_bone>`
 
-If ``enabled`` is ``true``, the end bone is extended to have a tail.
+Якщо ``enabled`` має значення ``true``, кінцева кістка подовжується, щоб мати хвіст.
 
-The extended tail config is allocated to the last element in the joint list. In other words, if you set ``enabled`` to ``false``, the config of the last element in the joint list has no effect in the simulated result.
+Конфігурація розширеного хвоста призначається останньому елементу у списку суглобів. Іншими словами, якщо встановити ``enabled`` на ``false``, конфігурація останнього елемента у списку суглобів не впливає на результат моделювання.
 
 .. rst-class:: classref-item-separator
 
@@ -1144,11 +1144,11 @@ The extended tail config is allocated to the last element in the joint list. In 
 
 |void| **set_joint_rotation_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, axis\: :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_joint_rotation_axis>`
 
-Sets the rotation axis at ``joint`` in the bone chain's joint list when :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` is ``true``.
+Встановлює вісь обертання в ``joint`` у списку суглобів ланцюжка кісток, коли :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` має значення ``true``.
 
-The axes are based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`'s space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
+Осі базуються на просторі :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`. Якщо ``axis`` має значення :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, можна вказати будь-яку вісь.
 
-\ **Note:** The rotation axis and the forward vector shouldn't be colinear to avoid unintended rotation since **SpringBoneSimulator3D** does not factor in twisting forces.
+\ **Примітка:** Вісь обертання та вектор вперед не повинні бути колінеарними, щоб уникнути ненавмисного обертання, оскільки **SpringBoneSimulator3D** не враховує сили скручування.
 
 .. rst-class:: classref-item-separator
 
@@ -1160,11 +1160,11 @@ The axes are based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_meth
 
 |void| **set_joint_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, vector\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_joint_rotation_axis_vector>`
 
-Sets the rotation axis vector for the specified joint in the bone chain.
+Встановлює вектор осі обертання для зазначеного суглоба в ланцюжку кісток.
 
-This vector is normalized by an internal process and represents the axis around which the bone chain can rotate.
+Цей вектор нормалізується внутрішнім процесом і представляє вісь, навколо якої може обертатися ланцюжок кісток.
 
-If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
+Якщо довжина вектора дорівнює ``0``, він вважається синонімом :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1238,11 +1238,11 @@ If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonMo
 
 |void| **set_rotation_axis**\ (\ index\: :ref:`int<class_int>`, axis\: :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_rotation_axis>`
 
-Sets the rotation axis of the bone chain. If set to a specific axis, it acts like a hinge joint. The value is cached in each joint setting in the joint list.
+Встановлює вісь обертання ланцюга кісток. Якщо встановлено значення певної осі, воно діє як шарнірне з'єднання. Значення кешується в кожному налаштуванні з'єднання у списку з'єднань.
 
-The axes are based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`'s space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
+Осі базуються на просторі методу :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`. Якщо ``axis`` має значення :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, можна вказати будь-яку вісь.
 
-\ **Note:** The rotation axis vector and the forward vector shouldn't be colinear to avoid unintended rotation since **SpringBoneSimulator3D** does not factor in twisting forces.
+\ **Примітка:** Вектор осі обертання та вектор вперед не повинні бути колінеарними, щоб уникнути ненавмисного обертання, оскільки **SpringBoneSimulator3D** не враховує сили скручування.
 
 .. rst-class:: classref-item-separator
 
@@ -1254,11 +1254,11 @@ The axes are based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_meth
 
 |void| **set_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, vector\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_rotation_axis_vector>`
 
-Sets the rotation axis vector of the bone chain. The value is cached in each joint setting in the joint list.
+Встановлює вектор осі обертання ланцюга кісток. Значення кешується в кожному налаштуванні суглоба у списку суглобів.
 
-This vector is normalized by an internal process and represents the axis around which the bone chain can rotate.
+Цей вектор нормалізується внутрішнім процесом і представляє вісь, навколо якої може обертатися ланцюг кісток.
 
-If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
+Якщо довжина вектора дорівнює ``0``, він вважається синонімом :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
 
 .. rst-class:: classref-item-separator
 

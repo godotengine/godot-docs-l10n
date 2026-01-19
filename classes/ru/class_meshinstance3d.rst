@@ -124,9 +124,9 @@ MeshInstance3D — это узел, который берет ресурс :ref:
 - |void| **set_skeleton_path**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_skeleton_path**\ (\ )
 
-:ref:`NodePath<class_NodePath>` to the :ref:`Skeleton3D<class_Skeleton3D>` associated with the instance.
+:ref:`NodePath<class_NodePath>` к связанному с экземпляром :ref:`Skeleton3D<class_Skeleton3D>`.
 
-\ **Note:** The default value of this property has changed in Godot 4.6. Enable :ref:`ProjectSettings.animation/compatibility/default_parent_skeleton_in_mesh_instance_3d<class_ProjectSettings_property_animation/compatibility/default_parent_skeleton_in_mesh_instance_3d>` if the old behavior is needed for compatibility.
+\ **Примечание:** Значение по умолчанию для этого свойства изменилось в Godot 4.6. Включите :ref:`ProjectSettings.animation/compatibility/default_parent_skeleton_in_mesh_instance_3d<class_ProjectSettings_property_animation/compatibility/default_parent_skeleton_in_mesh_instance_3d>`, если для совместимости необходимо старое поведение.
 
 .. rst-class:: classref-item-separator
 

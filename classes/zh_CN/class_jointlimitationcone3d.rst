@@ -24,9 +24,9 @@ A cone shape limitation that interacts with :ref:`ChainIK3D<class_ChainIK3D>`.
 .. table::
    :widths: auto
 
-   +---------------------------+------------------------------------------------------------------------+----------+
-   | :ref:`float<class_float>` | :ref:`radius_range<class_JointLimitationCone3D_property_radius_range>` | ``0.25`` |
-   +---------------------------+------------------------------------------------------------------------+----------+
+   +---------------------------+----------------------------------------------------------+---------------+
+   | :ref:`float<class_float>` | :ref:`angle<class_JointLimitationCone3D_property_angle>` | ``1.5707964`` |
+   +---------------------------+----------------------------------------------------------+---------------+
 
 .. rst-class:: classref-section-separator
 
@@ -37,20 +37,20 @@ A cone shape limitation that interacts with :ref:`ChainIK3D<class_ChainIK3D>`.
 属性说明
 --------
 
-.. _class_JointLimitationCone3D_property_radius_range:
+.. _class_JointLimitationCone3D_property_angle:
 
 .. rst-class:: classref-property
 
-:ref:`float<class_float>` **radius_range** = ``0.25`` :ref:`🔗<class_JointLimitationCone3D_property_radius_range>`
+:ref:`float<class_float>` **angle** = ``1.5707964`` :ref:`🔗<class_JointLimitationCone3D_property_angle>`
 
 .. rst-class:: classref-property-setget
 
-- |void| **set_radius_range**\ (\ value\: :ref:`float<class_float>`\ )
-- :ref:`float<class_float>` **get_radius_range**\ (\ )
+- |void| **set_angle**\ (\ value\: :ref:`float<class_float>`\ )
+- :ref:`float<class_float>` **get_angle**\ (\ )
 
-The size of the hole made by the cone.
+The radius range of the hole made by the cone.
 
-\ ``0`` is no hole, ``0.5`` makes a hemisphere, and ``1.0`` makes a sphere (no limitation).
+\ ``0`` degrees makes a sphere without hole, ``180`` degrees makes a hemisphere, and ``360`` degrees become empty (no limitation).
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

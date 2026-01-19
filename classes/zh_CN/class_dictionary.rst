@@ -889,7 +889,7 @@ Duplicates this dictionary, deeply, like :ref:`duplicate()<class_Dictionary_meth
 
 :ref:`bool<class_bool>` **set**\ (\ key\: :ref:`Variant<class_Variant>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Dictionary_method_set>`
 
-Sets the value of the element at the given ``key`` to the given ``value``. Returns ``true`` if the value is set successfully. Fails and returns ``false`` if the dictionary is read-only, or if ``key`` and ``value`` don't match the dictionary's types. This is the same as using the ``[]`` operator (``dict[key] = value``).
+将给定 ``key`` 对应元素的值设置为指定的 ``value``\ 。若设置成功则返回 ``true``\ 。若字典为只读，或 ``key`` 与 ``value`` 的类型与字典类型不匹配，则操作失败并返回 ``false``\ 。此方法等同于使用 ``[]`` 运算符（即 ``dict[key] = value``\ ）。
 
 .. rst-class:: classref-item-separator
 

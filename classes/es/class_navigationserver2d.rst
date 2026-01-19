@@ -26,7 +26,7 @@ Para que dos regiones se conecten entre sí, deben compartir un borde similar. S
 
 Puedes asignar capas de navegación a las regiones con :ref:`region_set_navigation_layers()<class_NavigationServer2D_method_region_set_navigation_layers>`, que luego se pueden verificar al solicitar una ruta con :ref:`map_get_path()<class_NavigationServer2D_method_map_get_path>`. Esto se puede utilizar para permitir o denegar ciertas áreas para algunos objetos.
 
-Para utilizar el sistema de evitación de colisiones, puedes utilizar agentes. Puedes establecer la velocidad objetivo de un agente, luego los servidores emitirán una retrollamada con una velocidad modificada.
+Para utilizar el sistema de evitación de colisiones, puedes utilizar agentes. Puedes establecer la velocidad objetivo de un agente, luego los servidores emitirán una callback con una velocidad modificada.
 
 \ **Nota:** El sistema de evitación de colisiones ignora las regiones. El uso directo de la velocidad modificada puedes mover un agente fuera del área transitable. Esta es una limitación del sistema de evitación de colisiones, cualquier situación más compleja puedes requerir el uso del motor de física.
 

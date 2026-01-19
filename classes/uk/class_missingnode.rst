@@ -107,7 +107,7 @@ MissingNode
 - |void| **set_recording_signals**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_recording_signals**\ (\ )
 
-If ``true``, allows new signals to be connected to along with existing ones. If ``false``, only existing signals can be connected to, and new signals cannot be added.
+Якщо ``true``, дозволяє підключати нові сигнали разом з існуючими. Якщо ``false``, можна підключати лише існуючі сигнали, а нові сигнали додавати не можна.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

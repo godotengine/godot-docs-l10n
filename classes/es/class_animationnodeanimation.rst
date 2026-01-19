@@ -216,7 +216,9 @@ Si es ``false``, se respeta la duración original de la animación. Si establece
 - |void| **set_timeline_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_timeline_length**\ (\ )
 
-Si :ref:`use_custom_timeline<class_AnimationNodeAnimation_property_use_custom_timeline>` es ``true``, desplaza la posición de inicio de la animación.
+The length of the custom timeline.
+
+If :ref:`stretch_time_scale<class_AnimationNodeAnimation_property_stretch_time_scale>` is ``true``, scales the animation to this length.
 
 .. rst-class:: classref-item-separator
 

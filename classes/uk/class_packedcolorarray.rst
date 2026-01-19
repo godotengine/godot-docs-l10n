@@ -280,9 +280,9 @@ Constructs a **PackedColorArray** як копія даної **PackedColorArray*
 
 :ref:`Color<class_Color>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedColorArray_method_get>`
 
-Returns the :ref:`Color<class_Color>` at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns ``Color(0, 0, 0, 1)``.
+Повертає :ref:`Color<class_Color>` за заданим ``index`` у масиві. Якщо ``index`` виходить за межі або є від'ємним, цей метод завершується невдачею та повертає ``Color(0, 0, 0, 1)``.
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+Цей метод схожий (але не ідентичний) на оператор ``[]``. Найголовніше, що коли цей метод завершується невдачею, він не призупиняє виконання проекту, якщо його запускати з редактора.
 
 .. rst-class:: classref-item-separator
 

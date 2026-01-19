@@ -16,7 +16,16 @@ Clase base abstracta para los tipos de texturas por capas RD.
 Descripción
 ----------------------
 
-Clase base para :ref:`Texture2DArrayRD<class_Texture2DArrayRD>`, :ref:`TextureCubemapRD<class_TextureCubemapRD>` y :ref:`TextureCubemapArrayRD<class_TextureCubemapArrayRD>`. No se puede usar directamente, pero contiene todas las funciones necesarias para acceder a los tipos de recursos derivados.
+Base class for :ref:`Texture2DArrayRD<class_Texture2DArrayRD>`, :ref:`TextureCubemapRD<class_TextureCubemapRD>` and :ref:`TextureCubemapArrayRD<class_TextureCubemapArrayRD>`. Cannot be used directly, but contains all the functions necessary for accessing the derived resource types.
+
+\ **Note:** **TextureLayeredRD** is intended for low-level usage with :ref:`RenderingDevice<class_RenderingDevice>`. For most use cases, use :ref:`TextureLayered<class_TextureLayered>` instead.
+
+.. rst-class:: classref-introduction-group
+
+Tutoriales
+--------------------
+
+- `Compute Texture demo <https://godotengine.org/asset-library/asset/2764>`__
 
 .. rst-class:: classref-reftable-group
 

@@ -16,9 +16,9 @@ Objeto de búferes de escena abstracto, creado para cada viewport para el que se
 Descripción
 ----------------------
 
-Objeto abstracto de búferes de escena, creado para cada viewport para el que se realiza el renderizado 3D. Gestiona cualquier búfer adicional utilizado durante el renderizado y descartará los búferes cuando se cambie el tamaño del viewport.
+Abstract scene buffers object, created for each viewport for which 3D rendering is done. It manages any additional buffers used during rendering and will discard buffers when the viewport is resized. See also :ref:`RenderSceneBuffersRD<class_RenderSceneBuffersRD>`.
 
-\ **Nota:** Este es un objeto interno del servidor de renderizado, no lo instancies desde el script.
+\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
 
 .. rst-class:: classref-reftable-group
 

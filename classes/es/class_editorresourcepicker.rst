@@ -9,7 +9,7 @@ EditorResourcePicker
 
 **Heredado por:** :ref:`EditorScriptPicker<class_EditorScriptPicker>`
 
-Godot editor's control for selecting :ref:`Resource<class_Resource>` type properties.
+Control del editor de Godot para seleccionar propiedades de tipo :ref:`Resource<class_Resource>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -173,7 +173,7 @@ Descripciones de Métodos
 
 :ref:`bool<class_bool>` **_handle_menu_selected**\ (\ id\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_EditorResourcePicker_private_method__handle_menu_selected>`
 
-This virtual method can be implemented to handle context menu items not handled by default. See :ref:`_set_create_options()<class_EditorResourcePicker_private_method__set_create_options>`.
+Este método virtual puede ser implementado para manejar elementos del menú contextual no manejados por defecto. Véase :ref:`_set_create_options()<class_EditorResourcePicker_private_method__set_create_options>`.
 
 .. rst-class:: classref-item-separator
 
@@ -185,9 +185,9 @@ This virtual method can be implemented to handle context menu items not handled 
 
 |void| **_set_create_options**\ (\ menu_node\: :ref:`Object<class_Object>`\ ) |virtual| :ref:`🔗<class_EditorResourcePicker_private_method__set_create_options>`
 
-This virtual method is called when updating the context menu of **EditorResourcePicker**. Implement this method to override the "New ..." items with your own options. ``menu_node`` is a reference to the :ref:`PopupMenu<class_PopupMenu>` node.
+Este método virtual es llamado al actualizar el menú contextual de **EditorResourcePicker**. Implementa este método para sobrescribir los elementos "Nuevo ..." con tus propias opciones. ``menu_node`` es una referencia al nodo :ref:`PopupMenu<class_PopupMenu>`.
 
-\ **Note:** Implement :ref:`_handle_menu_selected()<class_EditorResourcePicker_private_method__handle_menu_selected>` to handle these custom items.
+\ **Nota:** Implementa :ref:`_handle_menu_selected()<class_EditorResourcePicker_private_method__handle_menu_selected>` para manejar estos elementos personalizados.
 
 .. rst-class:: classref-item-separator
 
@@ -199,7 +199,7 @@ This virtual method is called when updating the context menu of **EditorResource
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_allowed_types**\ (\ ) |const| :ref:`🔗<class_EditorResourcePicker_method_get_allowed_types>`
 
-Returns a list of all allowed types and subtypes corresponding to the :ref:`base_type<class_EditorResourcePicker_property_base_type>`. If the :ref:`base_type<class_EditorResourcePicker_property_base_type>` is empty, an empty list is returned.
+Devuelve una lista de todos los tipos y subtipos permitidos correspondientes a :ref:`base_type<class_EditorResourcePicker_property_base_type>`. Si :ref:`base_type<class_EditorResourcePicker_property_base_type>` está vacío, se devuelve una lista vacía.
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ Returns a list of all allowed types and subtypes corresponding to the :ref:`base
 
 |void| **set_toggle_pressed**\ (\ pressed\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorResourcePicker_method_set_toggle_pressed>`
 
-Sets the toggle mode state for the main button. Works only if :ref:`toggle_mode<class_EditorResourcePicker_property_toggle_mode>` is set to ``true``.
+Establece el estado del modo de alternancia para el botón principal. Solo funciona si :ref:`toggle_mode<class_EditorResourcePicker_property_toggle_mode>` se establece en ``true``.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

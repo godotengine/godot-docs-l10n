@@ -14,7 +14,7 @@ Un nœud qui fournit une :ref:`Shape2D<class_Shape2D>` à un parent :ref:`Collis
 Description
 -----------
 
-A node that provides a :ref:`Shape2D<class_Shape2D>` to a :ref:`CollisionObject2D<class_CollisionObject2D>` parent and allows it to be edited. This can give a detection shape to an :ref:`Area2D<class_Area2D>` or turn a :ref:`PhysicsBody2D<class_PhysicsBody2D>` into a solid object.
+Un nœud qui fournit une :ref:`Shape2D<class_Shape2D>` à un parent :ref:`CollisionObject2D<class_CollisionObject2D>` et permet de la modifier. Cela peut donner une forme de détection à une :ref:`Area2D<class_Area2D>` ou transformer un :ref:`PhysicsBody2D<class_PhysicsBody2D>` en un objet solide.
 
 .. rst-class:: classref-introduction-group
 

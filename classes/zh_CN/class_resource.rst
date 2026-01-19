@@ -187,7 +187,7 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 - |void| **set_local_to_scene**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_local_to_scene**\ (\ )
 
-如果为 ``true``\ ，那么在本地场景的各个实例中，该资源都会被唯一化。在运行时，在某个场景中对该资源的修改不会影响其他实例（见 :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`\ ）。
+如果为 ``true``\ ，则该资源会为使用它的所有场景的每个实例重复创建。在运行时，在某个场景中对该资源的修改不会影响其他实例（见 :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`\ ）。
 
 \ **注意：**\ 运行时，在已创建副本的资源上修改该属性不会有效果。
 

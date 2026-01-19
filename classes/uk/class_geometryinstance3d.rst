@@ -286,7 +286,7 @@ enum **VisibilityRangeFadeMode**: :ref:`🔗<enum_GeometryInstance3D_VisibilityR
 - |void| **set_cast_shadows_setting**\ (\ value\: :ref:`ShadowCastingSetting<enum_GeometryInstance3D_ShadowCastingSetting>`\ )
 - :ref:`ShadowCastingSetting<enum_GeometryInstance3D_ShadowCastingSetting>` **get_cast_shadows_setting**\ (\ )
 
-The mode used to cast shadows from this instance.
+Режим, який використовується для відкидання тіней від цього екземпляра.
 
 .. rst-class:: classref-item-separator
 

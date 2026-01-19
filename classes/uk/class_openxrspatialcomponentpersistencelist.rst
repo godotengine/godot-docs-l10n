@@ -9,14 +9,14 @@ OpenXRSpatialComponentPersistenceList
 
 **Успадковує:** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the query persistence result data.
+Об'єкт для зберігання даних результатів запиту.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Object for storing the query persistence result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Об'єкт для зберігання даних результатів запиту під час виклику :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -47,7 +47,7 @@ Object for storing the query persistence result data when calling :ref:`OpenXRSp
 
 :ref:`int<class_int>` **get_persistent_state**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentPersistenceList_method_get_persistent_state>`
 
-Returns the persistent state (``XrSpatialPersistenceStateEXT``) for the entity at this ``index``.
+Повертає постійний стан (``XrSpatialPersistenceStateEXT``) для сутності за цим ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -59,7 +59,7 @@ Returns the persistent state (``XrSpatialPersistenceStateEXT``) for the entity a
 
 :ref:`String<class_String>` **get_persistent_uuid**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentPersistenceList_method_get_persistent_uuid>`
 
-Returns the persistent uuid for the entity at this ``index``.
+Повертає постійний UUID для сутності за цією адресою ``index``.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

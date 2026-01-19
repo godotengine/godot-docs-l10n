@@ -16,7 +16,7 @@ Proporciona acceso directo a un cuerpo físico en el :ref:`PhysicsServer3D<class
 Descripción
 ----------------------
 
-Proporciona acceso directo a un cuerpo físico en el :ref:`PhysicsServer3D<class_PhysicsServer3D>`, permitiendo cambios seguros en las propiedades físicas. Este objeto se pasa a través de la retrollamada de estado directo de :ref:`RigidBody3D<class_RigidBody3D>`, y está destinado a cambiar el estado directo de ese cuerpo. Véase :ref:`RigidBody3D._integrate_forces()<class_RigidBody3D_private_method__integrate_forces>`.
+Proporciona acceso directo a un cuerpo físico en el :ref:`PhysicsServer3D<class_PhysicsServer3D>`, permitiendo cambios seguros en las propiedades físicas. Este objeto se pasa a través de la callback de estado directo de :ref:`RigidBody3D<class_RigidBody3D>`, y está destinado a cambiar el estado directo de ese cuerpo. Véase :ref:`RigidBody3D._integrate_forces()<class_RigidBody3D_private_method__integrate_forces>`.
 
 .. rst-class:: classref-introduction-group
 

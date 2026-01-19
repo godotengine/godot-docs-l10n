@@ -7,14 +7,14 @@ OpenXRFrameSynthesisExtension
 
 **Наследует:** :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>` **<** :ref:`Object<class_Object>`
 
-The OpenXR Frame synthesis extension allows for advanced reprojection at low(er) framerates.
+Расширение OpenXR Frame synthesis позволяет выполнять расширенную репроекцию при более низкой частоте кадров.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-This class implements the `OpenXR Frame synthesis extension <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_EXT_frame_synthesis>`__. When enabled in the project settings and supported by the XR runtime in use, frame synthesis uses advanced reprojection techniques to inject additional frames so that your XR experience hits the full frame rate of the device.
+Этот класс реализует `расширение синтеза кадров OpenXR <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_EXT_frame_synthesis>`__. При включении в настройках проекта и поддержке используемой среды выполнения XR синтез кадров использует передовые методы репроекции для внедрения дополнительных кадров, чтобы ваше XR-изображение отображалось с полной частотой кадров устройства.
 
 .. rst-class:: classref-reftable-group
 
@@ -64,7 +64,7 @@ This class implements the `OpenXR Frame synthesis extension <https://registry.kh
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_enabled**\ (\ )
 
-Enable frame synthesis. When ``true`` motion vector and depth data is provided to the XR runtime.
+Включить синтез кадров. Когда ``true`` в среду выполнения XR поступают данные о векторе движения и глубине.
 
 .. rst-class:: classref-item-separator
 
@@ -81,7 +81,7 @@ Enable frame synthesis. When ``true`` motion vector and depth data is provided t
 - |void| **set_relax_frame_interval**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_relax_frame_interval**\ (\ )
 
-If ``true`` this informs the XR runtime we will be providing frames at a greatly reduced rate. Enable this when you expect your application to run at low framerates and wish to inject multiple reprojected frames.
+Если ``true``, это указывает среде выполнения XR, что мы будем предоставлять кадры со значительно сниженной частотой. Включите эту опцию, если вы ожидаете, что ваше приложение будет работать с низкой частотой кадров, и хотите внедрять несколько перепроецированных кадров.
 
 .. rst-class:: classref-section-separator
 
@@ -98,7 +98,7 @@ If ``true`` this informs the XR runtime we will be providing frames at a greatly
 
 :ref:`bool<class_bool>` **is_available**\ (\ ) |const| :ref:`🔗<class_OpenXRFrameSynthesisExtension_method_is_available>`
 
-Returns ``true`` if frame synthesis is enabled in the project settings and the current XR runtime supports frame synthesis. The value returned will only be valid once OpenXR has been initialized.
+Возвращает ``true``, если синтез кадров включен в настройках проекта и текущая среда выполнения XR поддерживает синтез кадров. Возвращаемое значение будет действительно только после инициализации OpenXR.
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ Returns ``true`` if frame synthesis is enabled in the project settings and the c
 
 |void| **skip_next_frame**\ (\ ) :ref:`🔗<class_OpenXRFrameSynthesisExtension_method_skip_next_frame>`
 
-Queues the next frame to be skipped when supplying motion vector and depth data. Call this after teleporting your player or a similar action has moved the player to prevent incorrect reprojection results due to this movement.
+Добавляет в очередь следующий кадр, который будет пропущен при передаче данных о векторе движения и глубине. Вызывайте эту функцию после телепортации игрока или аналогичного действия, которое переместило игрока, чтобы предотвратить некорректные результаты перепроецирования из-за этого движения.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

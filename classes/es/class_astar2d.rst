@@ -339,7 +339,9 @@ The result is in the segment that goes from ``y = 0`` to ``y = 5``. It's the clo
 
 Returns an array with the IDs of the points that form the path found by AStar2D between the given points. The array is ordered from the starting point to the ending point of the path.
 
-If there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
+If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
+
+If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
 
 \ **Note:** When ``allow_partial_path`` is ``true`` and ``to_id`` is disabled the search may take an unusually long time to finish.
 
@@ -468,13 +470,15 @@ Devuelve un array de todos los ID de los puntos.
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_point_path**\ (\ from_id\: :ref:`int<class_int>`, to_id\: :ref:`int<class_int>`, allow_partial_path\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AStar2D_method_get_point_path>`
 
-Devuelve un array con los puntos que están en la ruta encontrada por AStar2D entre los puntos dados. El array se ordena desde el punto de inicio hasta el punto final de la ruta.
+Returns an array with the points that are in the path found by AStar2D between the given points. The array is ordered from the starting point to the ending point of the path.
 
-Si no hay una ruta válida al destino, y ``allow_partial_path`` es ``true``, devuelve una ruta al punto más cercano al destino que se puede alcanzar.
+If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
 
-\ **Nota:** Este método no es seguro para hilos; solo se puede usar desde un único :ref:`Thread<class_Thread>` a la vez. Considera usar :ref:`Mutex<class_Mutex>` para asegurar el acceso exclusivo a un hilo para evitar condiciones de carrera.
+If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
 
-Adicionalmente, cuando ``allow_partial_path`` es ``true`` y ``to_id`` está deshabilitado, la búsqueda puede tardar un tiempo inusualmente largo en finalizar.
+\ **Note:** This method is not thread-safe; it can only be used from a single :ref:`Thread<class_Thread>` at a given time. Consider using :ref:`Mutex<class_Mutex>` to ensure exclusive access to one thread to avoid race conditions.
+
+Additionally, when ``allow_partial_path`` is ``true`` and ``to_id`` is disabled the search may take an unusually long time to finish.
 
 .. rst-class:: classref-item-separator
 

@@ -561,11 +561,11 @@ enum **GroupCallFlags**: :ref:`🔗<enum_SceneTree_GroupCallFlags>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **change_scene_to_file**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_SceneTree_method_change_scene_to_file>`
 
-Changes the running scene to the one at the given ``path``, after loading it into a :ref:`PackedScene<class_PackedScene>` and creating a new instance.
+Змінює запущену сцену на ту, що знаходиться за вказаним ``path``, після завантаження її в :ref:`PackedScene<class_PackedScene>` та створення нового екземпляра.
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:`@GlobalScope.ERR_CANT_OPEN<class_@GlobalScope_constant_ERR_CANT_OPEN>` if the ``path`` cannot be loaded into a :ref:`PackedScene<class_PackedScene>`, or :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>` if that scene cannot be instantiated.
+Повертає :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` у разі успіху, :ref:`@GlobalScope.ERR_CANT_OPEN<class_@GlobalScope_constant_ERR_CANT_OPEN>`, якщо ``path`` не може бути завантажений в :ref:`PackedScene<class_PackedScene>`, або :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`, якщо цю сцену не можна створити.
 
-\ **Note:** See :ref:`change_scene_to_node()<class_SceneTree_method_change_scene_to_node>` for details on the order of operations.
+\ **Примітка:** Див. :ref:`change_scene_to_node()<class_SceneTree_method_change_scene_to_node>` для отримання детальної інформації про порядок операцій.
 
 .. rst-class:: classref-item-separator
 
@@ -577,21 +577,21 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:
 
 :ref:`Error<enum_@GlobalScope_Error>` **change_scene_to_node**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_SceneTree_method_change_scene_to_node>`
 
-Changes the running scene to the provided :ref:`Node<class_Node>`. Useful when you want to set up the new scene before changing.
+Змінює поточну сцену на наданий :ref:`Node<class_Node>`. Корисно, коли ви хочете налаштувати нову сцену перед зміною.
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the ``node`` is ``null``, or :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>` if the ``node`` is already inside the scene tree.
+Повертає :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` у разі успіху, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`, якщо ``node`` має значення ``null``, або :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>`, якщо ``node`` вже знаходиться всередині дерева сцен.
 
-\ **Note:** Operations happen in the following order when :ref:`change_scene_to_node()<class_SceneTree_method_change_scene_to_node>` is called:
+\ **Примітка:** Операції відбуваються в такому порядку, коли викликається :ref:`change_scene_to_node()<class_SceneTree_method_change_scene_to_node>`:
 
-1. The current scene node is immediately removed from the tree. From that point, :ref:`Node.get_tree()<class_Node_method_get_tree>` called on the current (outgoing) scene will return ``null``. :ref:`current_scene<class_SceneTree_property_current_scene>` will be ``null`` too, because the new scene is not available yet.
+1. Поточний вузол сцени негайно видаляється з дерева. З цього моменту, :ref:`Node.get_tree()<class_Node_method_get_tree>`, викликаний для поточної (вихідної) сцени, поверне ``null``. :ref:`current_scene<class_SceneTree_property_current_scene>` також буде ``null``, оскільки нова сцена ще недоступна.
 
-2. At the end of the frame, the formerly current scene, already removed from the tree, will be deleted (freed from memory) and then the new scene node will be added to the tree. :ref:`Node.get_tree()<class_Node_method_get_tree>` and :ref:`current_scene<class_SceneTree_property_current_scene>` will be back to working as usual.
+2. В кінці кадру, попередньо поточна сцена, вже видалена з дерева, буде видалена (звільнена з пам'яті), а потім новий вузол сцени буде додано до дерева. :ref:`Node.get_tree()<class_Node_method_get_tree>` та :ref:`current_scene<class_SceneTree_property_current_scene>` повернуться до звичайної роботи.
 
-This ensures that both scenes aren't running at the same time, while still freeing the previous scene in a safe way similar to :ref:`Node.queue_free()<class_Node_method_queue_free>`.
+Це гарантує, що обидві сцени не працюють одночасно, водночас звільняючи попередню сцену безпечним способом, подібним до :ref:`Node.queue_free()<class_Node_method_queue_free>`.
 
-If you want to reliably access the new scene, await the :ref:`scene_changed<class_SceneTree_signal_scene_changed>` signal.
+Якщо ви хочете надійно отримати доступ до нової сцени, зачекайте сигналу :ref:`scene_changed<class_SceneTree_signal_scene_changed>`.
 
-\ **Warning:** After using this method, the **SceneTree** will take ownership of the node and will free it automatically when changing scene again. Any references you had to that node will become invalid.
+\ **Попередження:** Після використання цього методу **SceneTree** візьме на себе відповідальність за вузол і автоматично звільнить його під час наступної зміни сцени. Будь-які посилання на цей вузол стануть недійсними.
 
 .. rst-class:: classref-item-separator
 
@@ -603,11 +603,11 @@ If you want to reliably access the new scene, await the :ref:`scene_changed<clas
 
 :ref:`Error<enum_@GlobalScope_Error>` **change_scene_to_packed**\ (\ packed_scene\: :ref:`PackedScene<class_PackedScene>`\ ) :ref:`🔗<class_SceneTree_method_change_scene_to_packed>`
 
-Changes the running scene to a new instance of the given :ref:`PackedScene<class_PackedScene>` (which must be valid).
+Змінює запущену сцену на новий екземпляр заданого :ref:`PackedScene<class_PackedScene>` (який має бути дійсним).
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>` if the scene cannot be instantiated, or :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the scene is invalid.
+Повертає :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` у разі успіху, :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`, якщо сцену неможливо створити, або :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`, якщо сцена недійсна.
 
-\ **Note:** See :ref:`change_scene_to_node()<class_SceneTree_method_change_scene_to_node>` for details on the order of operations.
+\ **Примітка:** Див. :ref:`change_scene_to_node()<class_SceneTree_method_change_scene_to_node>` для отримання детальної інформації про порядок операцій.
 
 .. rst-class:: classref-item-separator
 

@@ -9,14 +9,14 @@ SplitContainer
 
 **Heredado por:** :ref:`HSplitContainer<class_HSplitContainer>`, :ref:`VSplitContainer<class_VSplitContainer>`
 
-A container that arranges child controls horizontally or vertically and provides grabbers for adjusting the split ratios between them.
+Un contenedor que organiza controles hijo horizontal o verticalmente y proporciona agarradores para ajustar las proporciones de división entre ellos.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-A container that arranges child controls horizontally or vertically and creates grabbers between them. The grabbers can be dragged around to change the size relations between the child controls.
+Un contenedor que organiza controles hijo horizontal o verticalmente y crea agarradores entre ellos. Los agarradores se pueden arrastrar para cambiar las relaciones de tamaño entre los controles hijo.
 
 .. rst-class:: classref-introduction-group
 
@@ -215,7 +215,7 @@ Descripciones de Propiedades
 - |void| **set_collapsed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_collapsed**\ (\ )
 
-If ``true``, the draggers will be disabled and the children will be sized as if all :ref:`split_offsets<class_SplitContainer_property_split_offsets>` were ``0``.
+Si es ``true``, los arrastradores estarán desactivados y los hijos se dimensionarán como si todos los :ref:`split_offsets<class_SplitContainer_property_split_offsets>` fueran ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -317,7 +317,7 @@ Determina la visibilidad del arrastrador. Esta propiedad no determina si el arra
 - |void| **set_dragging_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_dragging_enabled**\ (\ )
 
-Enables or disables split dragging.
+Activa o desactiva el arrastre de la división.
 
 .. rst-class:: classref-item-separator
 
@@ -336,7 +336,7 @@ Enables or disables split dragging.
 
 **Obsoleto:** Use :ref:`split_offsets<class_SplitContainer_property_split_offsets>` instead. The first element of the array is the split offset between the first two children.
 
-The first element of :ref:`split_offsets<class_SplitContainer_property_split_offsets>`.
+El primer elemento de :ref:`split_offsets<class_SplitContainer_property_split_offsets>`.
 
 .. rst-class:: classref-item-separator
 
@@ -412,7 +412,7 @@ Descripciones de Métodos
 
 |void| **clamp_split_offset**\ (\ priority_index\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_SplitContainer_method_clamp_split_offset>`
 
-Clamps the :ref:`split_offsets<class_SplitContainer_property_split_offsets>` values to ensure they are within valid ranges and do not overlap with each other. When overlaps occur, this method prioritizes one split offset (at index ``priority_index``) by clamping any overlapping split offsets to it.
+Limita los valores de :ref:`split_offsets<class_SplitContainer_property_split_offsets>` para asegurar que estén dentro de rangos válidos y que no se superpongan entre sí. Cuando ocurren superposiciones, este método prioriza un desplazamiento de división (en el índice ``priority_index``) al limitar cualquier desplazamiento de división superpuesto a este.
 
 .. rst-class:: classref-item-separator
 

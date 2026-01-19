@@ -14,9 +14,9 @@ LightmapperRD
 Описание
 ----------------
 
-LightmapperRD («RD» означает :ref:`RenderingDevice<class_RenderingDevice>`) — встроенный графопроцессор для использования с :ref:`LightmapGI<class_LightmapGI>`. На большинстве специализированных графических процессоров он может запекать карты освещения гораздо быстрее, чем большинство графопроцессоров на базе ЦП. LightmapperRD использует вычислительные шейдеры для запекания карт освещения, поэтому для его использования не требуется установка библиотек CUDA или OpenCL.
+LightmapperRD (где RD означает :ref:`RenderingDevice<class_RenderingDevice>`) — это встроенный графический процессор для создания карт освещения, используемый с :ref:`LightmapGI<class_LightmapGI>`. На большинстве выделенных графических процессоров он может создавать карты освещения намного быстрее, чем большинство процессоров. LightmapperRD использует вычислительные шейдеры для создания карт освещения, поэтому для его использования не требуется установка библиотек CUDA или OpenCL.
 
-\ **Примечание:** Можно использовать только при использовании бэкэнда RenderingDevice (рендеры Forward+ или Mobile), а не совместимости.
+\ **Примечание:** Для работы этого графического процессора требуется поддержка бэкенда :ref:`RenderingDevice<class_RenderingDevice>` (рендереры Forward+ и Mobile). При использовании рендерера Compatibility для создания карт освещения будет использоваться временный :ref:`RenderingDevice<class_RenderingDevice>`. Поддержка :ref:`RenderingDevice<class_RenderingDevice>` не требуется для *рендеринга* карт освещения, которые уже были созданы ранее.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

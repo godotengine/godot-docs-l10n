@@ -11,14 +11,14 @@ OpenXRSpatialComponentData
 
 **Успадковано від:** :ref:`OpenXRSpatialComponentAnchorList<class_OpenXRSpatialComponentAnchorList>`, :ref:`OpenXRSpatialComponentBounded2DList<class_OpenXRSpatialComponentBounded2DList>`, :ref:`OpenXRSpatialComponentBounded3DList<class_OpenXRSpatialComponentBounded3DList>`, :ref:`OpenXRSpatialComponentMarkerList<class_OpenXRSpatialComponentMarkerList>`, :ref:`OpenXRSpatialComponentMesh2DList<class_OpenXRSpatialComponentMesh2DList>`, :ref:`OpenXRSpatialComponentMesh3DList<class_OpenXRSpatialComponentMesh3DList>`, :ref:`OpenXRSpatialComponentParentList<class_OpenXRSpatialComponentParentList>`, :ref:`OpenXRSpatialComponentPersistenceList<class_OpenXRSpatialComponentPersistenceList>`, :ref:`OpenXRSpatialComponentPlaneAlignmentList<class_OpenXRSpatialComponentPlaneAlignmentList>`, :ref:`OpenXRSpatialComponentPlaneSemanticLabelList<class_OpenXRSpatialComponentPlaneSemanticLabelList>`, :ref:`OpenXRSpatialComponentPolygon2DList<class_OpenXRSpatialComponentPolygon2DList>`, :ref:`OpenXRSpatialQueryResultData<class_OpenXRSpatialQueryResultData>`
 
-Object for storing OpenXR spatial entity component data.
+Об'єкт для зберігання даних компонентів просторової сутності OpenXR.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Object for storing OpenXR spatial entity component data.
+Об'єкт для зберігання даних компонентів просторової сутності OpenXR.
 
 .. rst-class:: classref-reftable-group
 
@@ -53,7 +53,7 @@ Object for storing OpenXR spatial entity component data.
 
 :ref:`int<class_int>` **_get_component_type**\ (\ ) |virtual| |const| :ref:`🔗<class_OpenXRSpatialComponentData_private_method__get_component_type>`
 
-Return the component type for the component we store data for.
+Повертає тип компонента, для якого ми зберігаємо дані.
 
 .. rst-class:: classref-item-separator
 
@@ -65,7 +65,7 @@ Return the component type for the component we store data for.
 
 :ref:`int<class_int>` **_get_structure_data**\ (\ next\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_OpenXRSpatialComponentData_private_method__get_structure_data>`
 
-Return a pointer to the structure data that will be submitted along with the snapshot query. This pointer must remain valid as long as this object is instantiated.
+Повертає вказівник на дані структури, які будуть надіслані разом із запитом на знімок. Цей вказівник має залишатися дійсним, поки створюється екземпляр цього об'єкта.
 
 .. rst-class:: classref-item-separator
 
@@ -77,7 +77,7 @@ Return a pointer to the structure data that will be submitted along with the sna
 
 |void| **_set_capacity**\ (\ capacity\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRSpatialComponentData_private_method__set_capacity>`
 
-Set the expected capacity as provided by the spatial entities query system. Buffers should be initialized with the correct storage.
+Встановіть очікувану ємність, як це передбачено системою запитів просторових сутностей. Буфери слід ініціалізувати з правильним сховищем.
 
 .. rst-class:: classref-item-separator
 
@@ -89,7 +89,7 @@ Set the expected capacity as provided by the spatial entities query system. Buff
 
 |void| **set_capacity**\ (\ capacity\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRSpatialComponentData_method_set_capacity>`
 
-Set the expected capacity as provided by the spatial entities query system. Buffers should be initialized with the correct storage.
+Встановіть очікувану ємність, як це передбачено системою запитів просторових сутностей. Буфери слід ініціалізувати з правильним сховищем.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

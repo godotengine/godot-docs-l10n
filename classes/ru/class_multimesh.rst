@@ -490,9 +490,9 @@ enum **PhysicsInterpolationQuality**: :ref:`🔗<enum_MultiMesh_PhysicsInterpola
 
 |void| **reset_instances_physics_interpolation**\ (\ ) :ref:`🔗<class_MultiMesh_method_reset_instances_physics_interpolation>`
 
-When using *physics interpolation*, this function allows you to prevent interpolation for all instances in the current physics tick.
+При использовании *физической интерполяции* эта функция позволяет предотвратить интерполяцию для всех экземпляров в текущем физическом такте.
 
-This allows you to move all instances instantaneously, and should usually be used when initially placing instances to prevent graphical glitches.
+Это позволяет мгновенно перемещать все экземпляры и обычно должно использоваться при первоначальном размещении экземпляров во избежание графических сбоев.
 
 .. rst-class:: classref-item-separator
 

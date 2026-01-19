@@ -172,21 +172,21 @@ Señales
 
 **link_reached**\ (\ details\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_NavigationAgent3D_signal_link_reached>`
 
-Signals that the agent reached a navigation link. Emitted when the agent moves within :ref:`path_desired_distance<class_NavigationAgent3D_property_path_desired_distance>` of the next position of the path when that position is a navigation link.
+Señaliza que el agente alcanzó un enlace de navegación. Emitida cuando el agente se mueve dentro de :ref:`path_desired_distance<class_NavigationAgent3D_property_path_desired_distance>` de la siguiente posición del trayecto cuando esa posición es un enlace de navegación.
 
-The details dictionary may contain the following keys depending on the value of :ref:`path_metadata_flags<class_NavigationAgent3D_property_path_metadata_flags>`:
+El diccionario de detalles puede contener las siguientes claves, dependiendo del valor de :ref:`path_metadata_flags<class_NavigationAgent3D_property_path_metadata_flags>`:
 
-- ``position``: The start position of the link that was reached.
+- ``position``: La posición de inicio del enlace que fue alcanzado.
 
-- ``type``: Always :ref:`NavigationPathQueryResult3D.PATH_SEGMENT_TYPE_LINK<class_NavigationPathQueryResult3D_constant_PATH_SEGMENT_TYPE_LINK>`.
+- ``type``: Siempre es :ref:`NavigationPathQueryResult3D.PATH_SEGMENT_TYPE_LINK<class_NavigationPathQueryResult3D_constant_PATH_SEGMENT_TYPE_LINK>`.
 
-- ``rid``: The :ref:`RID<class_RID>` of the link.
+- ``rid``: El :ref:`RID<class_RID>` del enlace.
 
-- ``owner``: The object which manages the link (usually :ref:`NavigationLink3D<class_NavigationLink3D>`).
+- ``owner``: El objeto que gestiona el enlace (normalmente :ref:`NavigationLink3D<class_NavigationLink3D>`).
 
-- ``link_entry_position``: If ``owner`` is available and the owner is a :ref:`NavigationLink3D<class_NavigationLink3D>`, it will contain the global position of the link's point the agent is entering.
+- ``link_entry_position``: Si ``owner`` está disponible y el propietario es un :ref:`NavigationLink3D<class_NavigationLink3D>`, contendrá la posición global del punto del enlace al que el agente está entrando.
 
-- ``link_exit_position``: If ``owner`` is available and the owner is a :ref:`NavigationLink3D<class_NavigationLink3D>`, it will contain the global position of the link's point which the agent is exiting.
+- ``link_exit_position``: Si ``owner`` está disponible y el propietario es un :ref:`NavigationLink3D<class_NavigationLink3D>`, contendrá la posición global del punto del enlace del que el agente está saliendo.
 
 .. rst-class:: classref-item-separator
 
@@ -827,9 +827,9 @@ The minimal amount of time for which this agent's velocities, that are computed 
 - |void| **set_use_3d_avoidance**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_3d_avoidance**\ (\ )
 
-If ``true``, the agent calculates avoidance velocities in 3D omnidirectionally, e.g. for games that take place in air, underwater or space. Agents using 3D avoidance only avoid other agents using 3D avoidance, and react to radius-based avoidance obstacles. They ignore any vertex-based obstacles.
+Si es ``true``, el agente calcula las velocidades de evasión en 3D omnidireccionalmente, por ejemplo, para juegos que tienen lugar en el aire, bajo el agua o en el espacio. Los agentes que usan evasión en 3D solo evitan a otros agentes que usan evasión en 3D, y reaccionan a obstáculos de evasión basados en un radio. Ignoran cualquier obstáculo basado en vértices.
 
-If ``false``, the agent calculates avoidance velocities in 2D along the x and z-axes, ignoring the y-axis. Agents using 2D avoidance only avoid other agents using 2D avoidance, and react to radius-based avoidance obstacles or vertex-based avoidance obstacles. Other agents using 2D avoidance that are below or above their current position including :ref:`height<class_NavigationAgent3D_property_height>` are ignored.
+Si es ``false``, el agente calcula las velocidades de evasión en 2D a lo largo de los ejes X y Z, ignorando el eje Y. Los agentes que usan evasión en 2D solo evitan a otros agentes que usan evasión en 2D, y reaccionan a obstáculos de evasión basados en radio u obstáculos de evasión basados en vértices. Otros agentes que usan evasión en 2D que están por debajo o por encima de su posición actual, incluyendo :ref:`height<class_NavigationAgent3D_property_height>`, son ignorados.
 
 .. rst-class:: classref-item-separator
 

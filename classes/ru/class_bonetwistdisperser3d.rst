@@ -7,18 +7,18 @@ BoneTwistDisperser3D
 
 **Наследует:** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A node that propagates and disperses the child bone's twist to the parent bones.
+Узел, который распространяет и распределяет скручивание дочерней кости на родительские кости.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-This **BoneTwistDisperser3D** allows for smooth twist interpolation between multiple bones by dispersing the end bone's twist to the parents. This only changes the twist without changing the global position of each joint.
+Этот **BoneTwistDisperser3D** позволяет плавно интерполировать скручивание между несколькими костями, распределяя скручивание конечной кости на родительские кости. Это изменяет только скручивание, не изменяя глобальное положение каждого сустава.
 
-This is useful for smoothly twisting bones in combination with :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>` and IK.
+Это полезно для плавного скручивания костей в сочетании с :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>` и IK.
 
-\ **Note:** If an extracted twist is greater than 180 degrees, flipping occurs. This is similar to :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>`.
+\ **Примечание:** Если извлеченное скручивание превышает 180 градусов, происходит переворачивание. Это аналогично :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -125,7 +125,7 @@ enum **DisperseMode**: :ref:`🔗<enum_BoneTwistDisperser3D_DisperseMode>`
 
 :ref:`DisperseMode<enum_BoneTwistDisperser3D_DisperseMode>` **DISPERSE_MODE_EVEN** = ``0``
 
-Assign amounts so that they monotonically increase from ``0.0`` to ``1.0``, ensuring all weights are equal. For example, with five joints, the amounts would be ``0.2``, ``0.4``, ``0.6``, ``0.8``, and ``1.0`` starting from the root bone.
+Назначьте значения таким образом, чтобы они монотонно возрастали от ``0.0`` до ``1.0``, обеспечивая при этом равенство всех весов. Например, для пяти суставов значения будут ``0.2``, ``0.4``, ``0.6``, ``0.8`` и ``1.0``, начиная с корневой кости.
 
 .. _class_BoneTwistDisperser3D_constant_DISPERSE_MODE_WEIGHTED:
 
@@ -133,7 +133,7 @@ Assign amounts so that they monotonically increase from ``0.0`` to ``1.0``, ensu
 
 :ref:`DisperseMode<enum_BoneTwistDisperser3D_DisperseMode>` **DISPERSE_MODE_WEIGHTED** = ``1``
 
-Assign amounts so that they monotonically increase from ``0.0`` to ``1.0``, based on the length of the bones between joint segments. See also :ref:`set_weight_position()<class_BoneTwistDisperser3D_method_set_weight_position>`.
+Назначьте значения таким образом, чтобы они монотонно возрастали от ``0.0`` до ``1.0`` в зависимости от длины костей между суставными сегментами. См. также :ref:`set_weight_position()<class_BoneTwistDisperser3D_method_set_weight_position>`.
 
 .. _class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM:
 
@@ -141,9 +141,9 @@ Assign amounts so that they monotonically increase from ``0.0`` to ``1.0``, base
 
 :ref:`DisperseMode<enum_BoneTwistDisperser3D_DisperseMode>` **DISPERSE_MODE_CUSTOM** = ``2``
 
-You can assign arbitrary amounts to the joint list. See also :ref:`set_joint_twist_amount()<class_BoneTwistDisperser3D_method_set_joint_twist_amount>`.
+Вы можете присваивать произвольные значения списку суставов. См. также :ref:`set_joint_twist_amount()<class_BoneTwistDisperser3D_method_set_joint_twist_amount>`.
 
-When :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>` is ``false``, a child of the reference bone exists solely to determine the twist axis, so its custom amount has absolutely no effect at all.
+Когда :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>` имеет значение ``false``, дочерний элемент опорной кости существует исключительно для определения оси скручивания, поэтому его пользовательское значение абсолютно никак не влияет на результат.
 
 .. rst-class:: classref-section-separator
 
@@ -165,9 +165,9 @@ When :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_
 - |void| **set_mutable_bone_axes**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_bone_axes_mutable**\ (\ )
 
-If ``true``, the solver retrieves the bone axis from the bone pose every frame.
+Если ``true``, решатель извлекает ось кости из положения кости каждый кадр.
 
-If ``false``, the solver retrieves the bone axis from the bone rest and caches it.
+Если ``false``, решатель извлекает ось кости из положения кости и кэширует её.
 
 .. rst-class:: classref-item-separator
 
@@ -213,7 +213,7 @@ If ``false``, the solver retrieves the bone axis from the bone rest and caches i
 
 :ref:`Curve<class_Curve>` **get_damping_curve**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_damping_curve>`
 
-Returns the damping curve when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
+Возвращает кривую затухания, когда :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` равен :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
 
 .. rst-class:: classref-item-separator
 
@@ -225,7 +225,7 @@ Returns the damping curve when :ref:`get_disperse_mode()<class_BoneTwistDisperse
 
 :ref:`DisperseMode<enum_BoneTwistDisperser3D_DisperseMode>` **get_disperse_mode**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_disperse_mode>`
 
-Returns whether to use automatic amount assignment or to allow manual assignment.
+Возвращает значение, указывающее, следует ли использовать автоматическое присвоение суммы или разрешить ручное присвоение.
 
 .. rst-class:: classref-item-separator
 
@@ -249,7 +249,7 @@ Returns whether to use automatic amount assignment or to allow manual assignment
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **get_end_bone_direction**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_end_bone_direction>`
 
-Returns the tail direction of the end bone of the bone chain when :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>` is ``true``.
+Возвращает направление хвоста конечной кости цепочки костей, когда :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>` имеет значение ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -309,7 +309,7 @@ Returns the tail direction of the end bone of the bone chain when :ref:`is_end_b
 
 :ref:`float<class_float>` **get_joint_twist_amount**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_joint_twist_amount>`
 
-Returns the twist amount at ``joint`` in the bone chain's joint list when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
+Возвращает величину скручивания в ``joint`` в списке суставов цепочки костей, когда :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` имеет значение :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
 
 .. rst-class:: classref-item-separator
 
@@ -321,9 +321,9 @@ Returns the twist amount at ``joint`` in the bone chain's joint list when :ref:`
 
 :ref:`int<class_int>` **get_reference_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_reference_bone>`
 
-Returns the reference bone to extract twist of the setting at ``index``.
+Возвращает опорную кость для извлечения скручивания в настройке по адресу ``index``.
 
-This bone is either the end of the chain or its parent, depending on :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>`.
+Эта кость является либо концом цепочки, либо ее родительской, в зависимости от :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>`.
 
 .. rst-class:: classref-item-separator
 
@@ -335,9 +335,9 @@ This bone is either the end of the chain or its parent, depending on :ref:`is_en
 
 :ref:`String<class_String>` **get_reference_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_reference_bone_name>`
 
-Returns the reference bone name to extract twist of the setting at ``index``.
+Возвращает имя опорной кости для извлечения значения скручивания в настройке по адресу ``index``.
 
-This bone is either the end of the chain or its parent, depending on :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>`.
+Эта кость является либо концом цепочки, либо ее родительской костью, в зависимости от :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>`.
 
 .. rst-class:: classref-item-separator
 
@@ -373,7 +373,7 @@ This bone is either the end of the chain or its parent, depending on :ref:`is_en
 
 :ref:`Quaternion<class_Quaternion>` **get_twist_from**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_twist_from>`
 
-Returns the rotation to an arbitrary state before twisting for the current bone pose to extract the twist when :ref:`is_twist_from_rest()<class_BoneTwistDisperser3D_method_is_twist_from_rest>` is ``false``.
+Возвращает вращение в произвольное состояние перед поворотом для текущей позы кости, чтобы извлечь поворот, когда :ref:`is_twist_from_rest()<class_BoneTwistDisperser3D_method_is_twist_from_rest>` имеет значение ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -385,7 +385,7 @@ Returns the rotation to an arbitrary state before twisting for the current bone 
 
 :ref:`float<class_float>` **get_weight_position**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_weight_position>`
 
-Returns the position at which to divide the segment between joints for weight assignment when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_WEIGHTED<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_WEIGHTED>`.
+Возвращает позицию, в которой следует разделить сегмент между суставами для присвоения весов, когда :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` равен :ref:`DISPERSE_MODE_WEIGHTED<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_WEIGHTED>`.
 
 .. rst-class:: classref-item-separator
 
@@ -397,7 +397,7 @@ Returns the position at which to divide the segment between joints for weight as
 
 :ref:`bool<class_bool>` **is_end_bone_extended**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_is_end_bone_extended>`
 
-Returns ``true`` if the end bone is extended to have a tail.
+Возвращает ``true``, если конечная кость удлинена и имеет хвост.
 
 .. rst-class:: classref-item-separator
 
@@ -409,7 +409,7 @@ Returns ``true`` if the end bone is extended to have a tail.
 
 :ref:`bool<class_bool>` **is_twist_from_rest**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_is_twist_from_rest>`
 
-Returns ``true`` if extracting the twist amount from the difference between the bone rest and the current bone pose.
+Возвращает ``true``, если величина скручивания вычисляется как разница между состоянием покоя кости и текущим положением кости.
 
 .. rst-class:: classref-item-separator
 
@@ -421,7 +421,7 @@ Returns ``true`` if extracting the twist amount from the difference between the 
 
 |void| **set_damping_curve**\ (\ index\: :ref:`int<class_int>`, curve\: :ref:`Curve<class_Curve>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_damping_curve>`
 
-Sets the damping curve when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
+Устанавливает кривую затухания, когда :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` имеет значение :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
 
 .. rst-class:: classref-item-separator
 
@@ -433,7 +433,7 @@ Sets the damping curve when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D
 
 |void| **set_disperse_mode**\ (\ index\: :ref:`int<class_int>`, disperse_mode\: :ref:`DisperseMode<enum_BoneTwistDisperser3D_DisperseMode>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_disperse_mode>`
 
-Sets whether to use automatic amount assignment or to allow manual assignment.
+Определяет, следует ли использовать автоматическое присвоение сумм или разрешить ручное присвоение.
 
 .. rst-class:: classref-item-separator
 
@@ -469,9 +469,9 @@ Sets whether to use automatic amount assignment or to allow manual assignment.
 
 |void| **set_end_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_end_bone_name>`
 
-Sets the end bone name of the bone chain.
+Задает имя конечной кости цепочки костей.
 
-\ **Note:** The end bone must be a child of the root bone.
+\ **Примечание:** Конечная кость должна быть дочерней по отношению к корневой кости.
 
 .. rst-class:: classref-item-separator
 
@@ -483,9 +483,9 @@ Sets the end bone name of the bone chain.
 
 |void| **set_extend_end_bone**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_extend_end_bone>`
 
-If ``enabled`` is ``true``, the end bone is extended to have a tail.
+Если ``enabled`` равно ``true``, конечная кость удлиняется, образуя хвост.
 
-If ``enabled`` is ``false``, :ref:`get_reference_bone()<class_BoneTwistDisperser3D_method_get_reference_bone>` becomes a parent of the end bone and it uses the vector to the end bone as a twist axis.
+Если ``enabled`` равно ``false``, :ref:`get_reference_bone()<class_BoneTwistDisperser3D_method_get_reference_bone>` становится родительским элементом для конечной кости и использует вектор к конечной кости в качестве оси скручивания.
 
 .. rst-class:: classref-item-separator
 
@@ -497,7 +497,7 @@ If ``enabled`` is ``false``, :ref:`get_reference_bone()<class_BoneTwistDisperser
 
 |void| **set_joint_twist_amount**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, twist_amount\: :ref:`float<class_float>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_joint_twist_amount>`
 
-Sets the twist amount at ``joint`` in the bone chain's joint list when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
+Устанавливает величину скручивания в ``joint`` в списке суставов цепочки костей, когда :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` имеет значение :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
 
 .. rst-class:: classref-item-separator
 
@@ -533,9 +533,9 @@ Sets the twist amount at ``joint`` in the bone chain's joint list when :ref:`get
 
 |void| **set_twist_from**\ (\ index\: :ref:`int<class_int>`, from\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_twist_from>`
 
-Sets the rotation to an arbitrary state before twisting for the current bone pose to extract the twist when :ref:`is_twist_from_rest()<class_BoneTwistDisperser3D_method_is_twist_from_rest>` is ``false``.
+Устанавливает вращение в произвольное состояние перед скручиванием для текущей позы кости, чтобы извлечь скручивание, когда :ref:`is_twist_from_rest()<class_BoneTwistDisperser3D_method_is_twist_from_rest>` равен ``false``.
 
-In other words, by calling :ref:`set_twist_from()<class_BoneTwistDisperser3D_method_set_twist_from>` by :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>` of a specific :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`, you can extract only the twists generated by modifiers processed after that but before this **BoneTwistDisperser3D**.
+Другими словами, вызвав :ref:`set_twist_from()<class_BoneTwistDisperser3D_method_set_twist_from>` с помощью :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>` конкретного :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`, вы можете извлечь только скручивания, сгенерированные модификаторами, обработанными после, но до этого **BoneTwistDisperser3D**.
 
 .. rst-class:: classref-item-separator
 
@@ -547,9 +547,9 @@ In other words, by calling :ref:`set_twist_from()<class_BoneTwistDisperser3D_met
 
 |void| **set_twist_from_rest**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_twist_from_rest>`
 
-If ``enabled`` is ``true``, it extracts the twist amount from the difference between the bone rest and the current bone pose.
+Если ``enabled`` равно ``true``, то величина скручивания вычисляется как разница между положением кости в состоянии покоя и текущим положением кости.
 
-If ``enabled`` is ``false``, it extracts the twist amount from the difference between :ref:`get_twist_from()<class_BoneTwistDisperser3D_method_get_twist_from>` and the current bone pose. See also :ref:`set_twist_from()<class_BoneTwistDisperser3D_method_set_twist_from>`.
+Если ``enabled`` равно ``false``, то величина скручивания вычисляется как разница между :ref:`get_twist_from()<class_BoneTwistDisperser3D_method_get_twist_from>` и текущим положением кости. См. также :ref:`set_twist_from()<class_BoneTwistDisperser3D_method_set_twist_from>`.
 
 .. rst-class:: classref-item-separator
 
@@ -561,9 +561,9 @@ If ``enabled`` is ``false``, it extracts the twist amount from the difference be
 
 |void| **set_weight_position**\ (\ index\: :ref:`int<class_int>`, weight_position\: :ref:`float<class_float>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_weight_position>`
 
-Sets the position at which to divide the segment between joints for weight assignment when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_WEIGHTED<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_WEIGHTED>`.
+Задает положение, в котором следует разделить сегмент между суставами для присвоения весов, когда :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` равен :ref:`DISPERSE_MODE_WEIGHTED<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_WEIGHTED>`.
 
-For example, when ``weight_position`` is ``0.5``, if two bone segments with a length of ``1.0`` exist between three joints, weights are assigned to each joint from root to end at ratios of ``0.5``, ``1.0``, and ``0.5``. Then amounts become ``0.25``, ``0.75``, and ``1.0`` respectively.
+Например, если ``weight_position`` равен ``0.5``, и между тремя суставами существуют два костных сегмента длиной ``1.0``, каждому суставу присваиваются веса от корня до конца в соотношениях ``0.5``, ``1.0`` и ``0.5``. Тогда значения становятся ``0.25``, ``0.75`` и ``1.0`` соответственно.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

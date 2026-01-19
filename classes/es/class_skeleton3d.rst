@@ -286,7 +286,7 @@ Constantes
 
 **NOTIFICATION_UPDATE_SKELETON** = ``50`` :ref:`🔗<class_Skeleton3D_constant_NOTIFICATION_UPDATE_SKELETON>`
 
-Notification received when this skeleton's pose needs to be updated. In that case, this is called only once per frame in a deferred process.
+Notificación recibida cuando la pose de este esqueleto necesita ser actualizada. En ese caso, esto es llamado solo una vez por fotograma en un proceso diferido.
 
 .. rst-class:: classref-section-separator
 
@@ -898,7 +898,7 @@ Sets the global pose transform, ``pose``, for the bone at ``bone_idx``.
 
 |void| **set_bone_meta**\ (\ bone_idx\: :ref:`int<class_int>`, key\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Skeleton3D_method_set_bone_meta>`
 
-Sets the metadata with the given ``key`` to ``value`` for the bone at index ``bone_idx``.
+Establece los metadatos con la ``key`` dada en ``value`` para el hueso en el índice ``bone_idx``.
 
 .. rst-class:: classref-item-separator
 

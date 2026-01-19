@@ -1902,6 +1902,8 @@ ProjectSettings
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`xr/openxr/submit_depth_buffer<class_ProjectSettings_property_xr/openxr/submit_depth_buffer>`                                                                                                         | ``false``                                                                                        |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`xr/openxr/target_api_version<class_ProjectSettings_property_xr/openxr/target_api_version>`                                                                                                           | ``""``                                                                                           |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`xr/openxr/view_configuration<class_ProjectSettings_property_xr/openxr/view_configuration>`                                                                                                           | ``"1"``                                                                                          |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`xr/shaders/enabled<class_ProjectSettings_property_xr/shaders/enabled>`                                                                                                                               | ``false``                                                                                        |
@@ -1991,15 +1993,15 @@ ProjectSettings
 
 :ref:`int<class_int>` **accessibility/general/accessibility_support** = ``0`` :ref:`🔗<class_ProjectSettings_property_accessibility/general/accessibility_support>`
 
-Accessibility support mode:
+Режим поддержки специальных возможностей:
 
-- **Auto** (``0``): Accessibility support is enabled, but updates to the accessibility information are processed only if an assistive app (such as a screen reader or a Braille display) is active (default).
+- **Авто** (``0``): Поддержка специальных возможностей включена, но обновления информации о специальных возможностях обрабатываются только в том случае, если активно вспомогательное приложение (например, программа чтения с экрана или дисплей Брайля) (по умолчанию).
 
-- **Always Active** (``1``): Accessibility support is enabled, and updates to the accessibility information are always processed, regardless of the status of assistive apps.
+- **Всегда активен** (``1``): Поддержка специальных возможностей включена, и обновления информации о специальных возможностях обрабатываются всегда, независимо от состояния вспомогательных приложений.
 
-- **Disabled** (``2``): Accessibility support is fully disabled.
+- **Отключен** (``2``): Поддержка специальных возможностей полностью отключена.
 
-\ **Note:** Accessibility debugging tools, such as Accessibility Insights for Windows, Accessibility Inspector (macOS), or AT-SPI Browser (Linux/BSD), do not count as assistive apps. To test your project with these tools, use **Always Active**.
+\ **Примечание:** Инструменты отладки специальных возможностей, такие как Accessibility Insights для Windows, Accessibility Inspector (macOS) или AT-SPI Browser (Linux/BSD), не считаются вспомогательными приложениями. Для тестирования вашего проекта с помощью этих инструментов используйте **Всегда активен**.
 
 .. rst-class:: classref-item-separator
 
@@ -2023,9 +2025,9 @@ Accessibility support mode:
 
 :ref:`bool<class_bool>` **animation/compatibility/default_parent_skeleton_in_mesh_instance_3d** = ``false`` :ref:`🔗<class_ProjectSettings_property_animation/compatibility/default_parent_skeleton_in_mesh_instance_3d>`
 
-If ``true``, :ref:`MeshInstance3D.skeleton<class_MeshInstance3D_property_skeleton>` will point to the parent node (``..``) by default, which was the behavior before Godot 4.6. It's recommended to keep this setting disabled unless the old behavior is needed for compatibility.
+Если ``true``, то :ref:`MeshInstance3D.skeleton<class_MeshInstance3D_property_skeleton>` по умолчанию будет указывать на родительский узел (``..``), что было характерно для Godot 4.6. Рекомендуется оставлять этот параметр отключенным, если старое поведение не требуется для совместимости.
 
-\ **Note:** If you disable this option in an existing project, it's strongly recommended to use the ``Project > Tools > Upgrade Project Files...`` option to ensure existing scenes do not break.
+\ **Примечание:** Если вы отключите этот параметр в существующем проекте, настоятельно рекомендуется использовать опцию ``Проект > Инструменты > Обновить файлы проекта...``, чтобы гарантировать корректную работу существующих сцен.
 
 .. rst-class:: classref-item-separator
 
@@ -2115,7 +2117,7 @@ If ``true``, :ref:`MeshInstance3D.skeleton<class_MeshInstance3D_property_skeleto
 
 :ref:`int<class_int>` **application/boot_splash/stretch_mode** = ``1`` :ref:`🔗<class_ProjectSettings_property_application/boot_splash/stretch_mode>`
 
-Specifies how the splash image will be stretched. For the original size without stretching, set to disabled. See :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` constants for more information.
+Указывает, как будет растягиваться заставка. Для сохранения исходного размера без растягивания установите значение disabled. Дополнительную информацию см. в константах :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2179,7 +2181,7 @@ Specifies how the splash image will be stretched. For the original size without 
 
 :ref:`bool<class_bool>` **application/config/disable_project_settings_override** = ``false`` :ref:`🔗<class_ProjectSettings_property_application/config/disable_project_settings_override>`
 
-If ``true``, disables loading of project settings overrides (file defined in :ref:`application/config/project_settings_override<class_ProjectSettings_property_application/config/project_settings_override>` and ``res://override.cfg``) and related CLI arguments.
+Если ``true``, отключает загрузку переопределений настроек проекта (файл, определенный в :ref:`application/config/project_settings_override<class_ProjectSettings_property_application/config/project_settings_override>` и ``res://override.cfg``) и связанных с ними аргументов командной строки.
 
 .. rst-class:: classref-item-separator
 
@@ -2229,9 +2231,9 @@ If ``true``, disables loading of project settings overrides (file defined in :re
 
 :ref:`Dictionary<class_Dictionary>` **application/config/name_localized** = ``{}`` :ref:`🔗<class_ProjectSettings_property_application/config/name_localized>`
 
-Translations of the project's name. This setting is used by OS tools to translate application name on Android, iOS and macOS.
+Перевод названия проекта. Этот параметр используется инструментами ОС для перевода названия приложения на Android, iOS и macOS.
 
-\ **Note:** When left empty, the application name is translated using the project translations.
+\ **Примечание:** Если оставить поле пустым, название приложения будет переведено с использованием переводов проекта.
 
 .. rst-class:: classref-item-separator
 
@@ -2745,9 +2747,9 @@ This setting can be overridden using the ``--max-fps <fps>`` command line argume
 
 :ref:`bool<class_bool>` **audio/general/text_to_speech** = ``false`` :ref:`🔗<class_ProjectSettings_property_audio/general/text_to_speech>`
 
-If ``true``, text-to-speech support is enabled on startup, otherwise it is enabled the first time any TTS method is used. See also :ref:`DisplayServer.tts_get_voices()<class_DisplayServer_method_tts_get_voices>` and :ref:`DisplayServer.tts_speak()<class_DisplayServer_method_tts_speak>`.
+Если ``true``, поддержка преобразования текста в речь включается при запуске, в противном случае она включается при первом использовании любого метода TTS. См. также :ref:`DisplayServer.tts_get_voices()<class_DisplayServer_method_tts_get_voices>` и :ref:`DisplayServer.tts_speak()<class_DisplayServer_method_tts_speak>`.
 
-\ **Note:** Enabling TTS can cause additional idle CPU usage and interfere with the sleep mode, so consider disabling it if TTS is not used.
+\ **Примечание:** Включение TTS может привести к дополнительному использованию ЦП в режиме ожидания и помешать работе спящего режима, поэтому рекомендуется отключить его, если TTS не используется.
 
 .. rst-class:: classref-item-separator
 
@@ -2919,7 +2921,7 @@ If ``true``, text-to-speech support is enabled on startup, otherwise it is enabl
 
 :ref:`int<class_int>` **debug/gdscript/warnings/assert_always_false** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/assert_always_false>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an ``assert`` call always evaluates to ``false``.
+Если установлено значение **Warn** или **Error**, то при вызове ``assert`` всегда будет получено значение ``false`` выдается предупреждение или ошибка соответственно.
 
 .. rst-class:: classref-item-separator
 
@@ -2931,7 +2933,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/assert_always_true** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/assert_always_true>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an ``assert`` call always evaluates to ``true``.
+Если установлено значение **Warn** или **Error**, то при вызове ``assert`` всегда будет выдаваться предупреждение или ошибка соответственно.
 
 .. rst-class:: classref-item-separator
 
@@ -2943,7 +2945,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_capture_reassignment** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_capture_reassignment>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local variable captured by a lambda is reassigned, since this does not modify the outer local variable.
+Если установлено значение **Warn** или **Error**, то при переназначении локальной переменной, захваченной лямбда-функцией, выдается предупреждение или ошибка соответственно, поскольку это не изменяет внешнюю локальную переменную.
 
 .. rst-class:: classref-item-separator
 
@@ -2955,7 +2957,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_identifier** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_identifier>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an identifier contains characters that can be confused with something else, like when mixing different alphabets.
+Если установлено значение **Warn** или **Error**, то при наличии в идентификаторе символов, которые могут быть ошибочно приняты за другие, например, при смешивании разных алфавитов, выдается предупреждение или ошибка соответственно.
 
 .. rst-class:: classref-item-separator
 
@@ -5723,9 +5725,9 @@ If set to ``true`` and :ref:`display/window/stretch/mode<class_ProjectSettings_p
 
 :ref:`float<class_float>` **gui/theme/default_theme_scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_gui/theme/default_theme_scale>`
 
-Коэффициент масштабирования по умолчанию для :ref:`Control<class_Control>`, если не переопределен :ref:`Theme<class_Theme>`.
+The default scale factor for :ref:`Control<class_Control>`\ s, when not overridden by a :ref:`Theme<class_Theme>`.
 
-\ **Примечание:** Это свойство считывается только при запуске проекта. Чтобы изменить масштаб по умолчанию во время выполнения, вместо этого установите :ref:`ThemeDB.fallback_base_scale<class_ThemeDB_property_fallback_base_scale>`.
+\ **Note:** This property is only read when the project starts. To change the default theme scale at runtime, set :ref:`ThemeDB.fallback_base_scale<class_ThemeDB_property_fallback_base_scale>` instead. However, to adjust the scale of all 2D elements at runtime, it's preferable to use :ref:`Window.content_scale_factor<class_Window_property_content_scale_factor>` on the root :ref:`Window<class_Window>` node instead (as this also affects overridden :ref:`Theme<class_Theme>`\ s). See :doc:`Multiple resolutions <../tutorials/rendering/multiple_resolutions>` in the documentation for details.
 
 .. rst-class:: classref-item-separator
 
@@ -10905,11 +10907,17 @@ Third-party extensions and modules can add other physics engines to select with 
 
 :ref:`int<class_int>` **physics/common/physics_ticks_per_second** = ``60`` :ref:`🔗<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`
 
-Число фиксированных итераций в секунду. Это контролирует, как часто запускаются методы моделирования физики и :ref:`Node._physics_process()<class_Node_private_method__physics_process>`. См. также :ref:`application/run/max_fps<class_ProjectSettings_property_application/run/max_fps>`.
+The number of fixed iterations per second. This controls how often physics simulation and the :ref:`Node._physics_process()<class_Node_private_method__physics_process>` method are run.
 
-\ **Примечание:** Это свойство считывается только при запуске проекта. Чтобы изменить FPS физики во время выполнения, вместо этого установите :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`.
+CPU usage scales approximately with the physics tick rate. However, at very low tick rates (usually below 30), physics behavior can break down. Input can also become less responsive at low tick rates as there can be a gap between input being registered, and the response on the next physics tick. High tick rates give more accurate physics simulation, particularly for fast moving objects. For example, racing games may benefit from increasing the tick rate above the default 60.
 
-\ **Примечание:** Только :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` тактов физики могут моделироваться максимум на один отрендеренный кадр. Если для отрендеринга требуется моделировать больше тактов физики, проект будет замедляться (даже если ``delta`` используется последовательно в физических расчетах). Поэтому рекомендуется также увеличить :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>`, если увеличение :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` значительно превышает его значение по умолчанию.
+See also :ref:`application/run/max_fps<class_ProjectSettings_property_application/run/max_fps>`.
+
+\ **Note:** This property is only read when the project starts. To change the physics FPS at runtime, set :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` instead.
+
+\ **Note:** Only :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` physics ticks may be simulated per rendered frame at most. If more physics ticks have to be simulated per rendered frame to keep up with rendering, the project will appear to slow down (even if ``delta`` is used consistently in physics calculations). Therefore, it is recommended to also increase :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` if increasing :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` significantly above its default value.
+
+\ **Note:** Consider enabling :doc:`physics interpolation <../tutorials/physics/interpolation/index>` if you change :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` to a value that is not a multiple of ``60``. Using physics interpolation will avoid jittering when the monitor refresh rate and physics update rate don't exactly match.
 
 .. rst-class:: classref-item-separator
 
@@ -14236,6 +14244,18 @@ Applied foveation level if supported.
 
 ----
 
+.. _class_ProjectSettings_property_xr/openxr/target_api_version:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **xr/openxr/target_api_version** = ``""`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/target_api_version>`
+
+Optionally sets a specific API version of OpenXR to initialize in ``major.minor.patch`` notation. Some XR runtimes gate old behavior behind version checks. This is non-standard OpenXR behavior.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_ProjectSettings_property_xr/openxr/view_configuration:
 
 .. rst-class:: classref-property
@@ -14347,7 +14367,7 @@ Applied foveation level if supported.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_changed_settings**\ (\ ) |const| :ref:`🔗<class_ProjectSettings_method_get_changed_settings>`
 
-Gets an array of the settings which have been changed since the last save. Note that internally ``changed_settings`` is cleared after a successful save, so generally the most appropriate place to use this method is when processing :ref:`settings_changed<class_ProjectSettings_signal_settings_changed>`.
+Получает массив настроек, измененных с момента последнего сохранения. Обратите внимание, что внутренне ``changed_settings`` очищается после успешного сохранения, поэтому обычно наиболее подходящее место для использования этого метода — при обработке :ref:`settings_changed<class_ProjectSettings_signal_settings_changed>`.
 
 .. rst-class:: classref-item-separator
 

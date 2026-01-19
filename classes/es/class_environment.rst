@@ -350,7 +350,7 @@ enum **AmbientSource**: :ref:`🔗<enum_Environment_AmbientSource>`
 
 :ref:`AmbientSource<enum_Environment_AmbientSource>` **AMBIENT_SOURCE_BG** = ``0``
 
-Gather ambient light from whichever source is specified as the background.
+Recoge la luz ambiental de la fuente que se especifique como fondo.
 
 .. _class_Environment_constant_AMBIENT_SOURCE_DISABLED:
 
@@ -358,7 +358,7 @@ Gather ambient light from whichever source is specified as the background.
 
 :ref:`AmbientSource<enum_Environment_AmbientSource>` **AMBIENT_SOURCE_DISABLED** = ``1``
 
-Disable ambient light. This provides a slight performance boost over :ref:`AMBIENT_SOURCE_SKY<class_Environment_constant_AMBIENT_SOURCE_SKY>`.
+Deshabilita la luz ambiental. Esto proporciona una ligera mejora de rendimiento sobre :ref:`AMBIENT_SOURCE_SKY<class_Environment_constant_AMBIENT_SOURCE_SKY>`.
 
 .. _class_Environment_constant_AMBIENT_SOURCE_COLOR:
 
@@ -366,7 +366,7 @@ Disable ambient light. This provides a slight performance boost over :ref:`AMBIE
 
 :ref:`AmbientSource<enum_Environment_AmbientSource>` **AMBIENT_SOURCE_COLOR** = ``2``
 
-Specify a specific :ref:`Color<class_Color>` for ambient light. This provides a slight performance boost over :ref:`AMBIENT_SOURCE_SKY<class_Environment_constant_AMBIENT_SOURCE_SKY>`.
+Especifica un :ref:`Color<class_Color>` específico para la luz ambiental. Esto proporciona una ligera mejora de rendimiento sobre :ref:`AMBIENT_SOURCE_SKY<class_Environment_constant_AMBIENT_SOURCE_SKY>`.
 
 .. _class_Environment_constant_AMBIENT_SOURCE_SKY:
 
@@ -374,7 +374,7 @@ Specify a specific :ref:`Color<class_Color>` for ambient light. This provides a 
 
 :ref:`AmbientSource<enum_Environment_AmbientSource>` **AMBIENT_SOURCE_SKY** = ``3``
 
-Gather ambient light from the :ref:`Sky<class_Sky>` regardless of what the background is.
+Recoge la luz ambiental del :ref:`Sky<class_Sky>` independientemente de cuál sea el fondo.
 
 .. rst-class:: classref-item-separator
 
@@ -400,7 +400,7 @@ Utilizar el fondo para los reflejos.
 
 :ref:`ReflectionSource<enum_Environment_ReflectionSource>` **REFLECTION_SOURCE_DISABLED** = ``1``
 
-Disable reflections. This provides a slight performance boost over other options.
+Deshabilita los reflejos. Esto proporciona una ligera mejora de rendimiento sobre otras opciones.
 
 .. _class_Environment_constant_REFLECTION_SOURCE_SKY:
 
@@ -408,7 +408,7 @@ Disable reflections. This provides a slight performance boost over other options
 
 :ref:`ReflectionSource<enum_Environment_ReflectionSource>` **REFLECTION_SOURCE_SKY** = ``2``
 
-Use the :ref:`Sky<class_Sky>` for reflections regardless of what the background is.
+Usa el :ref:`Sky<class_Sky>` para los reflejos independientemente de cuál sea el fondo.
 
 .. rst-class:: classref-item-separator
 
@@ -426,7 +426,7 @@ enum **ToneMapper**: :ref:`🔗<enum_Environment_ToneMapper>`
 
 :ref:`ToneMapper<enum_Environment_ToneMapper>` **TONE_MAPPER_LINEAR** = ``0``
 
-Does not modify color data, resulting in a linear tonemapping curve which unnaturally clips bright values, causing bright lighting to look blown out. The simplest and fastest tonemapper.
+No modifica los datos de color, lo que resulta en una curva de mapeo tonal lineal que recorta de forma antinatural los valores brillantes, haciendo que la iluminación brillante se vea quemada. El mapeador tonal más simple y rápido.
 
 .. _class_Environment_constant_TONE_MAPPER_REINHARDT:
 
@@ -434,9 +434,9 @@ Does not modify color data, resulting in a linear tonemapping curve which unnatu
 
 :ref:`ToneMapper<enum_Environment_ToneMapper>` **TONE_MAPPER_REINHARDT** = ``1``
 
-A simple tonemapping curve that rolls off bright values to prevent clipping. This results in an image that can appear dull and low contrast. Slower than :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>`.
+Una curva de mapeo tonal simple que suaviza los valores brillantes para evitar el recorte. Esto resulta en una imagen que puede parecer opaca y de bajo contraste. Más lento que :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>`.
 
-\ **Note:** When :ref:`tonemap_white<class_Environment_property_tonemap_white>` is left at the default value of ``1.0``, :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>` produces an identical image to :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>`.
+\ **Nota:** Cuando :ref:`tonemap_white<class_Environment_property_tonemap_white>` se deja en el valor predeterminado de ``1.0``, :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>` produce una imagen idéntica a :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>`.
 
 .. _class_Environment_constant_TONE_MAPPER_FILMIC:
 
@@ -444,7 +444,7 @@ A simple tonemapping curve that rolls off bright values to prevent clipping. Thi
 
 :ref:`ToneMapper<enum_Environment_ToneMapper>` **TONE_MAPPER_FILMIC** = ``2``
 
-Uses a film-like tonemapping curve to prevent clipping of bright values and provide better contrast than :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>`. Slightly slower than :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>`.
+Utiliza una curva de mapeo tonal de tipo cinematográfico para evitar el recorte de valores brillantes y proporcionar un mejor contraste que :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>`. Ligeramente más lento que :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>`.
 
 .. _class_Environment_constant_TONE_MAPPER_ACES:
 
@@ -766,7 +766,7 @@ La identificación de la feed de la cámara para mostrarla en el fondo.
 - |void| **set_canvas_max_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_canvas_max_layer**\ (\ )
 
-El ID de la capa maxima a mostrar. Sólo es efectivo cuando se utiliza el modo de fondo :ref:`BG_CANVAS<class_Environment_constant_BG_CANVAS>`.
+El ID de la capa maxima a mostrar. Solo es efectivo cuando se utiliza el modo de fondo :ref:`BG_CANVAS<class_Environment_constant_BG_CANVAS>`.
 
 .. rst-class:: classref-item-separator
 

@@ -486,7 +486,7 @@ Renvoie le nom de ce pré-réglage d'export.
 
 :ref:`Variant<class_Variant>` **get_project_setting**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_EditorExportPreset_method_get_project_setting>`
 
-Returns the value of the setting identified by ``name`` using export preset feature tag overrides instead of current OS features.
+Retourne la valeur du paramètre spécifié par ``name`` en utilisant la fonctionnalité préréglée d'exportation au lieu des fonctions OS actuelles.
 
 .. rst-class:: classref-item-separator
 

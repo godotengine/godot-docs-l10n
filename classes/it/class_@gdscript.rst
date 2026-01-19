@@ -860,19 +860,19 @@ Segna la proprietà seguente come assegnata quando il nodo è pronto. I valori p
 
 .. rst-class:: classref-annotation
 
-**@rpc**\ (\ mode\: :ref:`String<class_String>` = "authority", sync\: :ref:`String<class_String>` = "call_remote", transfer_mode\: :ref:`String<class_String>` = "unreliable", transfer_channel\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_@GDScript_annotation_@rpc>`
+**@rpc**\ (\ mode\: :ref:`String<class_String>` = "authority", sync\: :ref:`String<class_String>` = "call_remote", transfer_mode\: :ref:`String<class_String>` = "reliable", transfer_channel\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_@GDScript_annotation_@rpc>`
 
-Contrassegna il seguente metodo per le chiamate di procedura remota. Vedi :doc:` Multigiocatore di alto livello <../tutorials/networking/high_level_multiplayer>`.
+Mark the following method for remote procedure calls. See :doc:`High-level multiplayer <../tutorials/networking/high_level_multiplayer>`.
 
-Se ``mode`` è impostato a ``"any_peer"``, permette a qualsiasi peer di chiamare questa funzione RPC. Altrimenti, solo al peer dell'autorità è permesso chiamarlo e ``mode`` dovrebbe essere mantenuto a ``"autorità"``. Quando si configurano le funzioni come RPC con :ref:`Node.rpc_config()<class_Node_method_rpc_config>`, ciascuna di queste modalità corrisponde rispettivamente alle modalità RPC :ref:`MultiplayerAPI.RPC_MODE_AUTHORITY<class_MultiplayerAPI_constant_RPC_MODE_AUTHORITY>` e :ref:`MultiplayerAPI.RPC_MODE_ANY_PEER<class_MultiplayerAPI_constant_RPC_MODE_ANY_PEER>`. Vedi :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>`. Se un peer che non è l'autorità cerca di chiamare una funzione che è consentita solo per l'autorità, la funzione non sarà eseguita. Se l'errore può essere rilevato localmente (quando la configurazione RPC è consistente tra il peer locale e il peer remoto), verrà visualizzato un messaggio di errore sul peer del mittente. Altrimenti, il peer remoto individuerà l'errore e stamperà un errore lì.
+If ``mode`` is set as ``"any_peer"``, allows any peer to call this RPC function. Otherwise, only the authority peer is allowed to call it and ``mode`` should be kept as ``"authority"``. When configuring functions as RPCs with :ref:`Node.rpc_config()<class_Node_method_rpc_config>`, each of these modes respectively corresponds to the :ref:`MultiplayerAPI.RPC_MODE_AUTHORITY<class_MultiplayerAPI_constant_RPC_MODE_AUTHORITY>` and :ref:`MultiplayerAPI.RPC_MODE_ANY_PEER<class_MultiplayerAPI_constant_RPC_MODE_ANY_PEER>` RPC modes. See :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>`. If a peer that is not the authority tries to call a function that is only allowed for the authority, the function will not be executed. If the error can be detected locally (when the RPC configuration is consistent between the local and the remote peer), an error message will be displayed on the sender peer. Otherwise, the remote peer will detect the error and print an error there.
 
-Se ``sync`` è impostato a ``"call_remote"``, la funzione sarà eseguita solo sul peer remoto, ma non localmente. Per eseguire questa funzione anche localmente, imposta ``sync`` a ``"call_local"``. Quando si configurano le funzioni come RPC con :ref:`Node.rpc_config()<class_Node_method_rpc_config>`, questo equivale a impostare ``call_local`` a ``true``.
+If ``sync`` is set as ``"call_remote"``, the function will only be executed on the remote peer, but not locally. To run this function locally too, set ``sync`` to ``"call_local"``. When configuring functions as RPCs with :ref:`Node.rpc_config()<class_Node_method_rpc_config>`, this is equivalent to setting ``call_local`` to ``true``.
 
-I valori accettati da ``transfer_mode`` sono ``"unreliable"``, ``"unreliable_order"``, o ``"reliable"``. Esso imposta la modalità di trasferimento del :ref:`MultiplayerPeer<class_MultiplayerPeer>` sottostante. Vedi :ref:`MultiplayerPeer.transfer_mode<class_MultiplayerPeer_property_transfer_mode>`.
+The ``transfer_mode`` accepted values are ``"unreliable"``, ``"unreliable_ordered"``, or ``"reliable"``. It sets the transfer mode of the underlying :ref:`MultiplayerPeer<class_MultiplayerPeer>`. See :ref:`MultiplayerPeer.transfer_mode<class_MultiplayerPeer_property_transfer_mode>`.
 
-Il ``transfer_channel`` definisce il canale del :ref:`MultiplayerPeer<class_MultiplayerPeer>` sottostante. Vedi :ref:`MultiplayerPeer.transfer_channel<class_MultiplayerPeer_property_transfer_channel>`.
+The ``transfer_channel`` defines the channel of the underlying :ref:`MultiplayerPeer<class_MultiplayerPeer>`. See :ref:`MultiplayerPeer.transfer_channel<class_MultiplayerPeer_property_transfer_channel>`.
 
-L'ordine di ``mode``, ``sync`` e ``transfer_mode`` non importa, ma i valori relativi allo stesso argomento non devono essere utilizzati più di una volta. ``transfer_channel`` deve sempre essere il quarto argomento (è necessario specificare 3 argomenti precedenti).
+The order of ``mode``, ``sync`` and ``transfer_mode`` does not matter, but values related to the same argument must not be used more than once. ``transfer_channel`` always has to be the 4th argument (you must specify 3 preceding arguments).
 
 ::
 
@@ -882,10 +882,10 @@ L'ordine di ``mode``, ``sync`` e ``transfer_mode`` non importa, ma i valori rela
     @rpc("any_peer", "unreliable_ordered")
     func fn_update_pos(): pass
 
-    @rpc("authority", "call_remote", "unreliable", 0) # Equivalent to @rpc
+    @rpc("authority", "call_remote", "reliable", 0) # Equivalent to @rpc
     func fn_default(): pass
 
-\ **Nota:** I metodi annotati con :ref:`@rpc<class_@GDScript_annotation_@rpc>` non possono ricevere oggetti che definiscono parametri obbligatori in :ref:`Object._init()<class_Object_private_method__init>`. Per maggiori dettagli, vedi :ref:`Object._init()<class_Object_private_method__init>`.
+\ **Note:** Methods annotated with :ref:`@rpc<class_@GDScript_annotation_@rpc>` cannot receive objects which define required parameters in :ref:`Object._init()<class_Object_private_method__init>`. See :ref:`Object._init()<class_Object_private_method__init>` for more details.
 
 .. rst-class:: classref-item-separator
 

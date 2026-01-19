@@ -83,7 +83,7 @@ enum **ReferenceType**: :ref:`🔗<enum_BoneConstraint3D_ReferenceType>`
 
 :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>` **REFERENCE_TYPE_BONE** = ``0``
 
-The reference target is a bone. In this case, the reference target spaces is local space.
+Цільовим елементом є кістка. У цьому випадку цільовим простором для посилань є локальний простір.
 
 .. _class_BoneConstraint3D_constant_REFERENCE_TYPE_NODE:
 
@@ -91,9 +91,9 @@ The reference target is a bone. In this case, the reference target spaces is loc
 
 :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>` **REFERENCE_TYPE_NODE** = ``1``
 
-The reference target is a :ref:`Node3D<class_Node3D>`. In this case, the reference target spaces is model space.
+Цільовим елементом для посилання є :ref:`Node3D<class_Node3D>`. У цьому випадку цільовим простором для посилання є простір моделі.
 
-In other words, the reference target's coordinates are treated as if it were placed directly under :ref:`Skeleton3D<class_Skeleton3D>` which parent of the **BoneConstraint3D**.
+Іншими словами, координати цільового елемента для посилання розглядаються так, ніби він розміщений безпосередньо під :ref:`Skeleton3D<class_Skeleton3D>`, батьківським елементом **BoneConstraint3D**.
 
 .. rst-class:: classref-section-separator
 
@@ -186,9 +186,9 @@ In other words, the reference target's coordinates are treated as if it were pla
 
 :ref:`NodePath<class_NodePath>` **get_reference_node**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneConstraint3D_method_get_reference_node>`
 
-Returns the reference node path of the setting at ``index``.
+Повертає шлях до вузла посилання налаштування за адресою ``index``.
 
-This node will be only referenced and not modified by this modifier.
+Цей вузол буде лише посиланням, а не змінюватиметься цим модифікатором.
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ This node will be only referenced and not modified by this modifier.
 
 :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>` **get_reference_type**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneConstraint3D_method_get_reference_type>`
 
-Returns the reference target type of the setting at ``index``. See also :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
+Повертає цільовий тип посилання на налаштування в ``index``. Див. також :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
 
 .. rst-class:: classref-item-separator
 
@@ -288,9 +288,9 @@ Returns the reference target type of the setting at ``index``. See also :ref:`Re
 
 |void| **set_reference_node**\ (\ index\: :ref:`int<class_int>`, node\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_BoneConstraint3D_method_set_reference_node>`
 
-Sets the reference node path of the setting at ``index`` to ``node``.
+Встановлює шлях вузла посилання для параметра ``index`` на ``node``.
 
-This node will be only referenced and not modified by this modifier.
+Цей модифікатор лише посилатиметься на цей вузол, а не змінюватиме його.
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +302,7 @@ This node will be only referenced and not modified by this modifier.
 
 |void| **set_reference_type**\ (\ index\: :ref:`int<class_int>`, type\: :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`\ ) :ref:`🔗<class_BoneConstraint3D_method_set_reference_type>`
 
-Sets the reference target type of the setting at ``index`` to ``type``. See also :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
+Встановлює тип цільового посилання для параметра ``index`` на ``type``. Див. також :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
 
 .. rst-class:: classref-item-separator
 

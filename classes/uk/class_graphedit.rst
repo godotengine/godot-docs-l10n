@@ -876,7 +876,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_type_names**\ (\ value\: :ref:`Dictionary<class_Dictionary>`\ )
 - :ref:`Dictionary<class_Dictionary>` **get_type_names**\ (\ )
 
-:ref:`Dictionary<class_Dictionary>` of human-readable port type names.
+:ref:`Dictionary<class_Dictionary>` назв типів портів, зрозумілих для людини.
 
 .. rst-class:: classref-item-separator
 
@@ -1388,7 +1388,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 |void| **remove_valid_left_disconnect_type**\ (\ type\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphEdit_method_remove_valid_left_disconnect_type>`
 
-Disallows to disconnect nodes when dragging from the left port of the :ref:`GraphNode<class_GraphNode>`'s slot if it has the specified type. Use this to disable a disconnection previously allowed with :ref:`add_valid_left_disconnect_type()<class_GraphEdit_method_add_valid_left_disconnect_type>`.
+Забороняє відключення вузлів під час перетягування з лівого порту слота :ref:`GraphNode<class_GraphNode>`, якщо він має вказаний тип. Використовуйте це, щоб вимкнути відключення, яке раніше було дозволено за допомогою методу :ref:`add_valid_left_disconnect_type()<class_GraphEdit_method_add_valid_left_disconnect_type>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1400,7 +1400,7 @@ Disallows to disconnect nodes when dragging from the left port of the :ref:`Grap
 
 |void| **remove_valid_right_disconnect_type**\ (\ type\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphEdit_method_remove_valid_right_disconnect_type>`
 
-Disallows to disconnect nodes when dragging from the right port of the :ref:`GraphNode<class_GraphNode>`'s slot if it has the specified type. Use this to disable a disconnection previously allowed with :ref:`add_valid_right_disconnect_type()<class_GraphEdit_method_add_valid_right_disconnect_type>`.
+Забороняє відключення вузлів під час перетягування з правого порту слота :ref:`GraphNode<class_GraphNode>`, якщо він має вказаний тип. Використовуйте це, щоб вимкнути відключення, яке раніше було дозволено за допомогою методу :ref:`add_valid_right_disconnect_type()<class_GraphEdit_method_add_valid_right_disconnect_type>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1537,7 +1537,7 @@ Disallows to disconnect nodes when dragging from the right port of the :ref:`Gra
 
 :ref:`int<class_int>` **connection_hover_thickness** = ``0`` :ref:`🔗<class_GraphEdit_theme_constant_connection_hover_thickness>`
 
-Widens the line of a connection when the mouse is hovering over it by a percentage factor. A value of ``0`` disables the highlight. A value of ``100`` doubles the line width.
+Розширює лінію з'єднання на певний відсоток, коли на неї наведено курсор миші. Значення ``0`` вимикає підсвічування. Значення ``100`` подвоює ширину лінії.
 
 .. rst-class:: classref-item-separator
 

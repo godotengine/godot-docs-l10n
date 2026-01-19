@@ -18,7 +18,7 @@ Descripción
 
 Clase base abstracta para objetos físicos 2D. **CollisionObject2D** puede contener cualquier número de :ref:`Shape2D<class_Shape2D>`\ s para la colisión. Cada forma debe ser asignada a un *propietario de la forma*. Los propietarios de la forma no son nodos y no aparecen en el editor, pero son accesibles a través del código usando los métodos ``shape_owner_*``.
 
-\ **Nota:** Sólo se admiten colisiones entre objetos dentro del mismo canvas (:ref:`Viewport<class_Viewport>` o :ref:`CanvasLayer<class_CanvasLayer>`). El comportamiento de las colisiones entre objetos en diferentes canvas no está definido.
+\ **Nota:** Solo se admiten colisiones entre objetos dentro del mismo canvas (:ref:`Viewport<class_Viewport>` o :ref:`CanvasLayer<class_CanvasLayer>`). El comportamiento de las colisiones entre objetos en diferentes canvas no está definido.
 
 .. rst-class:: classref-reftable-group
 

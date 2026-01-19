@@ -860,19 +860,19 @@ Marca la siguiente propiedad como asignada cuando el :ref:`Node<class_Node>` est
 
 .. rst-class:: classref-annotation
 
-**@rpc**\ (\ mode\: :ref:`String<class_String>` = "authority", sync\: :ref:`String<class_String>` = "call_remote", transfer_mode\: :ref:`String<class_String>` = "unreliable", transfer_channel\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_@GDScript_annotation_@rpc>`
+**@rpc**\ (\ mode\: :ref:`String<class_String>` = "authority", sync\: :ref:`String<class_String>` = "call_remote", transfer_mode\: :ref:`String<class_String>` = "reliable", transfer_channel\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_@GDScript_annotation_@rpc>`
 
-Marca el siguiente método para llamadas de procedimiento remoto. Véase :doc:`High-level multiplayer <../tutorials/networking/high_level_multiplayer>`.
+Mark the following method for remote procedure calls. See :doc:`High-level multiplayer <../tutorials/networking/high_level_multiplayer>`.
 
-Si ``mode`` es establecido como ``"any_peer"``, permite que cualquier dispositivo llame esta función RPC. De lo contrario, solo el dispositivo con autorización tiene permitido llamarla y el ``mode`` debería dejarse como ``"authority"``. Al configurar funciones como las RPC con :ref:`Node.rpc_config()<class_Node_method_rpc_config>`, cada uno de esos modos respectivamente corresponden a los modos RPC :ref:`MultiplayerAPI.RPC_MODE_AUTHORITY<class_MultiplayerAPI_constant_RPC_MODE_AUTHORITY>` y :ref:`MultiplayerAPI.RPC_MODE_ANY_PEER<class_MultiplayerAPI_constant_RPC_MODE_ANY_PEER>` RPC. Véase :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>`. Si un dispositivo que no tiene autorización intenta llamar una función que solo es permitida por quien tiene la autoridad, entonces la función no sera ejecutada. Si el error puede ser detectado localmente (cuando la configuración de RPC es consistente entre personas locales y remotas), se desplegará un mensaje de error en la persona que envía. De lo contrario, el dispositivo del servidor remoto debería detectar e imprimir el error entonces.
+If ``mode`` is set as ``"any_peer"``, allows any peer to call this RPC function. Otherwise, only the authority peer is allowed to call it and ``mode`` should be kept as ``"authority"``. When configuring functions as RPCs with :ref:`Node.rpc_config()<class_Node_method_rpc_config>`, each of these modes respectively corresponds to the :ref:`MultiplayerAPI.RPC_MODE_AUTHORITY<class_MultiplayerAPI_constant_RPC_MODE_AUTHORITY>` and :ref:`MultiplayerAPI.RPC_MODE_ANY_PEER<class_MultiplayerAPI_constant_RPC_MODE_ANY_PEER>` RPC modes. See :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>`. If a peer that is not the authority tries to call a function that is only allowed for the authority, the function will not be executed. If the error can be detected locally (when the RPC configuration is consistent between the local and the remote peer), an error message will be displayed on the sender peer. Otherwise, the remote peer will detect the error and print an error there.
 
-Si ``sync`` es establecido como ``"call_remote"``, la función debería ser ejecutada solo en el dispositivo remoto, pero no localmente. Para ejecutar esta función localmente también, cambia ``sync`` con ``"call_local"``. Al configurar funciones como las RPC con :ref:`Node.rpc_config()<class_Node_method_rpc_config>`, es el equivalente que establecer ``call_local`` para ``true``.
+If ``sync`` is set as ``"call_remote"``, the function will only be executed on the remote peer, but not locally. To run this function locally too, set ``sync`` to ``"call_local"``. When configuring functions as RPCs with :ref:`Node.rpc_config()<class_Node_method_rpc_config>`, this is equivalent to setting ``call_local`` to ``true``.
 
-Los ``transfer_mode`` valores aceptados son ``"unreliable"``, ``"unreliable_ordered"``, or ``"reliable"``. Establece el modo de transferencia subyacente :ref:`MultiplayerPeer<class_MultiplayerPeer>`. Véase :ref:`MultiplayerPeer.transfer_mode<class_MultiplayerPeer_property_transfer_mode>`.
+The ``transfer_mode`` accepted values are ``"unreliable"``, ``"unreliable_ordered"``, or ``"reliable"``. It sets the transfer mode of the underlying :ref:`MultiplayerPeer<class_MultiplayerPeer>`. See :ref:`MultiplayerPeer.transfer_mode<class_MultiplayerPeer_property_transfer_mode>`.
 
-El ``transfer_channel`` define el canal del :ref:`MultiplayerPeer<class_MultiplayerPeer>` subyacente. Véase :ref:`MultiplayerPeer.transfer_channel<class_MultiplayerPeer_property_transfer_channel>`.
+The ``transfer_channel`` defines the channel of the underlying :ref:`MultiplayerPeer<class_MultiplayerPeer>`. See :ref:`MultiplayerPeer.transfer_channel<class_MultiplayerPeer_property_transfer_channel>`.
 
-El orden de ``mode``, ``sync`` y ``transfer_mode`` no importa, pero los valores relacionados a el mismo argumento no deberían ser usados más de una vez. ``transfer_channel`` siempre debe ser el cuarto argumento (debes especificar los 3 argumentos que le preceden).
+The order of ``mode``, ``sync`` and ``transfer_mode`` does not matter, but values related to the same argument must not be used more than once. ``transfer_channel`` always has to be the 4th argument (you must specify 3 preceding arguments).
 
 ::
 
@@ -882,10 +882,10 @@ El orden de ``mode``, ``sync`` y ``transfer_mode`` no importa, pero los valores 
     @rpc("any_peer", "unreliable_ordered")
     func fn_update_pos(): pass
 
-    @rpc("authority", "call_remote", "unreliable", 0) # Equivalente a @rpc
+    @rpc("authority", "call_remote", "reliable", 0) # Equivalent to @rpc
     func fn_default(): pass
 
-\ **Nota:** Los métodos con la anotación :ref:`@rpc<class_@GDScript_annotation_@rpc>` no puede recibir objetos que definen un parámetro requerido en el método :ref:`Object._init()<class_Object_private_method__init>`. Véase :ref:`Object._init()<class_Object_private_method__init>` ara más detalles.
+\ **Note:** Methods annotated with :ref:`@rpc<class_@GDScript_annotation_@rpc>` cannot receive objects which define required parameters in :ref:`Object._init()<class_Object_private_method__init>`. See :ref:`Object._init()<class_Object_private_method__init>` for more details.
 
 .. rst-class:: classref-item-separator
 

@@ -302,7 +302,7 @@ Returns a :ref:`Dictionary<class_Dictionary>` with system information related to
 
 :ref:`TrackingStatus<enum_XRInterface_TrackingStatus>` **_get_tracking_status**\ (\ ) |virtual| |const| :ref:`🔗<class_XRInterfaceExtension_private_method__get_tracking_status>`
 
-Returns the current status of our tracking.
+Renvoie le statut actuel de notre suivi.
 
 .. rst-class:: classref-item-separator
 

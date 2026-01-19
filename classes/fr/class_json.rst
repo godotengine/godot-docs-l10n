@@ -216,51 +216,51 @@ Essaie de parser le ``json_string`` fourni et renvoie les données parsées. Ren
 
 :ref:`String<class_String>` **stringify**\ (\ data\: :ref:`Variant<class_Variant>`, indent\: :ref:`String<class_String>` = "", sort_keys\: :ref:`bool<class_bool>` = true, full_precision\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_JSON_method_stringify>`
 
-Converts a :ref:`Variant<class_Variant>` var to JSON text and returns the result. Useful for serializing data to store or send over the network.
+Convertit une variable :ref:`Variant<class_Variant>` en texte JSON et renvoie le résultat. Utile pour sérialiser les données pour les enregistrer ou les envoyer à travers le réseau.
 
-\ **Note:** The JSON specification does not define integer or float types, but only a *number* type. Therefore, converting a Variant to JSON text will convert all numerical values to :ref:`float<class_float>` types.
+\ **Note :** Les spécifications du JSON ne définissent pas de types entier ou flottant, et ne définissent que le type commun *number*. Donc, convertir un Variant en JSON transformera tous les nombres en type :ref:`float<class_float>`.
 
-\ **Note:** If ``full_precision`` is ``true``, when stringifying floats, the unreliable digits are stringified in addition to the reliable digits to guarantee exact decoding.
+\ **Note :** Si ``full_precision`` vaut ``true``, lors de la conversion des flottants, les chiffres non fiables sont convertis avec les chiffres fiables pour garantir un décodage exact.
 
-The ``indent`` parameter controls if and how something is indented; its contents will be used where there should be an indent in the output. Even spaces like ``"   "`` will work. ``\t`` and ``\n`` can also be used for a tab indent, or to make a newline for each indent respectively.
+La paramètre ``indent`` contrôle si et comment le JSON doit être indenté, la chaine de caractères utilisé pour ce paramètre sera utilisé pour l'indentation de la sortie, et même les espaces ``"   "`` fonctionneront. ``\t`` et ``\n`` peuvent aussi être utilisé pour la tabulation, ou pour le retour à la ligne, respectivement.
 
-\ **Warning:** Non-finite numbers are not supported in JSON. Any occurrences of :ref:`@GDScript.INF<class_@GDScript_constant_INF>` will be replaced with ``1e99999``, and negative :ref:`@GDScript.INF<class_@GDScript_constant_INF>` will be replaced with ``-1e99999``, but they will be interpreted correctly as infinity by most JSON parsers. :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` will be replaced with ``null``, and it will not be interpreted as NaN in JSON parsers. If you expect non-finite numbers, consider passing your data through :ref:`from_native()<class_JSON_method_from_native>` first.
+\ **Avertissement :** Les nombres non-finis ne sont pas gérés par JSON. Toute occurrences de :ref:`@GDScript.INF<class_@GDScript_constant_INF>` sera remplacée par ``1e99999``, et négatif :ref:`@GDScript.INF<class_@GDScript_constant_INF>` sera remplacé par ``-1e99999``, mais ils pourront être interprétés correctement par la plupart des analyseurs JSON. :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` sera remplacé par ``null``, et ne sera pas interprété en NaN par les analyseurs JSON. Si vous attendez des nombres non-finis, considérez de passer vos données par :ref:`from_native()<class_JSON_method_from_native>` avant toute opération.
 
-\ **Example output:**\ 
+\ **Exemples de sortie :**\ 
 
 ::
 
-    ## JSON.stringify(my_dictionary)
-    {"name":"my_dictionary","version":"1.0.0","entities":[{"name":"entity_0","value":"value_0"},{"name":"entity_1","value":"value_1"}]}
+    ## JSON.print(my_dictionary)
+    {"name" :"mon_dictionnaire","version" :"1.0.0","entities" :[{"name" :"élément_0","value" :"valeur_0"},{"name" :"élément_1","value" :"valeur_1"}]}
 
-    ## JSON.stringify(my_dictionary, "\t")
+    ## JSON.print(my_dictionary, "\t")
     {
-        "name": "my_dictionary",
-        "version": "1.0.0",
-        "entities": [
+        "name" : "mon_dictionnaire",
+        "version" : "1.0.0",
+        "entities" : [
             {
-                "name": "entity_0",
-                "value": "value_0"
+                "name" : "élément_0",
+                "value" : "valeur_0"
             },
             {
-                "name": "entity_1",
-                "value": "value_1"
+                "name" : "élément_1",
+                "value" : "valeur_1"
             }
         ]
     }
 
-    ## JSON.stringify(my_dictionary, "...")
+    ## JSON.print(my_dictionary, "...")
     {
-    ..."name": "my_dictionary",
-    ..."version": "1.0.0",
-    ..."entities": [
+    ..."name" : "mon_dictionnaire",
+    ..."version" : "1.0.0",
+    ..."entities" : [
     ......{
-    ........."name": "entity_0",
-    ........."value": "value_0"
+    ........."name" : "élément_0",
+    ........."value" : "valeur_0"
     ......},
     ......{
-    ........."name": "entity_1",
-    ........."value": "value_1"
+    ........."name" : "élément_1",
+    ........."value" : "valeur_1"
     ......}
     ...]
     }

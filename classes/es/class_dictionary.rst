@@ -440,9 +440,9 @@ Si ``deep`` es ``true``, se devuelve una copia **profunda**: todos los arrays y 
 
 :ref:`Dictionary<class_Dictionary>` **duplicate_deep**\ (\ deep_subresources_mode\: :ref:`int<class_int>` = 1\ ) |const| :ref:`🔗<class_Dictionary_method_duplicate_deep>`
 
-Duplicates this dictionary, deeply, like :ref:`duplicate()<class_Dictionary_method_duplicate>` when passing ``true``, with extra control over how subresources are handled.
+Duplica este diccionario, profundamente, como :ref:`duplicate()<class_Dictionary_method_duplicate>` cuando se pasa ``true``, con control adicional sobre cómo se manejan los subrecursos.
 
-\ ``deep_subresources_mode`` must be one of the values from :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>`. By default, only internal resources will be duplicated (recursively).
+\ ``deep_subresources_mode`` debe ser uno de los valores de :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>`. De forma predeterminada, solo los recursos internos se duplicarán (recursivamente).
 
 .. rst-class:: classref-item-separator
 
@@ -482,7 +482,7 @@ Encuentra y devuelve la primera clave cuyo valor asociado es igual a ``value``, 
 
 :ref:`Variant<class_Variant>` **get**\ (\ key\: :ref:`Variant<class_Variant>`, default\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_Dictionary_method_get>`
 
-Returns the corresponding value for the given ``key`` in the dictionary. If the ``key`` does not exist, returns ``default``, or ``null`` if the parameter is omitted.
+Devuelve el valor correspondiente a la ``key`` dada en el diccionario. Si la ``key`` no existe, devuelve ``default``, o ``null`` si el parámetro se omite.
 
 .. rst-class:: classref-item-separator
 

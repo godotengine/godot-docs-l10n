@@ -184,13 +184,13 @@ ResourceImporterDynamicFont
 
 :ref:`int<class_int>` **hinting** = ``1`` :ref:`🔗<class_ResourceImporterDynamicFont_property_hinting>`
 
-The hinting mode to use. This controls how aggressively glyph edges should be snapped to pixels when rasterizing the font. Depending on personal preference, you may prefer using one hinting mode over the other. Hinting modes other than **None** are only effective if the font contains hinting data (see :ref:`force_autohinter<class_ResourceImporterDynamicFont_property_force_autohinter>`).
+Режим підказок, який слід використовувати. Цей режим контролює, наскільки агресивно краї гліфів мають бути прив'язані до пікселів під час растеризації шрифту. Залежно від особистих уподобань, ви можете віддати перевагу використанню одного режиму підказок над іншим. Режими підказок, відмінні від **Жоден**, ефективні лише тоді, коли шрифт містить дані підказок (див. :ref:`force_autohinter<class_ResourceImporterDynamicFont_property_force_autohinter>`).
 
-\ **None:** Smoothest appearance, which can make the font look blurry at small sizes.
+\ **Жоден:** Найплавніший вигляд, який може зробити шрифт розмитим при малих розмірах.
 
-\ **Light:** Sharp result by snapping glyph edges to pixels on the Y axis only.
+\ **Світлий:** Різкий результат завдяки прив'язці країв гліфів до пікселів лише по осі Y.
 
-\ **Normal:** Sharpest by snapping glyph edges to pixels on both X and Y axes.
+\ **Звичайний:** Найчіткіший результат завдяки прив'язці країв гліфів до пікселів по осях X та Y.
 
 .. rst-class:: classref-item-separator
 

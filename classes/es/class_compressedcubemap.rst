@@ -24,11 +24,11 @@ Un cubemap que se carga desde un archivo ``.ccube``. Este formato de archivo es 
 
 - Sin comprimir en VRAM (sin comprimir en la GPU)
 
-- Basis Universal (comprimido en la GPU. Tamaños de archivo más bajos que VRAM Comprimido, pero más lento para comprimir y de menor calidad que VRAM Comprimido)
+- Basis Universal (comprimido en la GPU. Tamaños de archivo más bajos que VRAM Comprimida, pero más lento para comprimir y de menor calidad que VRAM Comprimido)
 
-Sólo **VRAM Comprimido** reduce realmente el uso de memoria en la GPU. Los métodos de compresión **Sin pérdida** y **Con pérdida** reducirán el almacenamiento necesario en el disco, pero no reducirán el uso de memoria en la GPU, ya que la textura se envía a la GPU sin comprimir.
+Solo **VRAM Comprimida** reduce realmente el uso de memoria en la GPU. Los métodos de compresión **Sin pérdida** y **Con pérdida** reducirán el almacenamiento necesario en el disco, pero no reducirán el uso de memoria en la GPU, ya que la textura se envía a la GPU sin comprimir.
 
-El uso de **VRAM Comprimido** también mejora los tiempos de carga, ya que las texturas comprimidas en VRAM se cargan más rápido en comparación con las texturas que utilizan compresión sin pérdida o con pérdida. La compresión VRAM puede mostrar artefactos notables y está destinada a ser utilizada para el renderizado 3D, no 2D.
+El uso de **VRAM Comprimida** también mejora los tiempos de carga, ya que las texturas comprimidas en VRAM se cargan más rápido en comparación con las texturas que utilizan compresión sin pérdida o con pérdida. La compresión VRAM puede mostrar artefactos notables y está destinada a ser utilizada para el renderizado 3D, no 2D.
 
 Véase :ref:`Cubemap<class_Cubemap>` para obtener una descripción general de los cubemaps.
 

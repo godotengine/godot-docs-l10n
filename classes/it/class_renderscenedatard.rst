@@ -14,9 +14,9 @@ Implementazione dei dati di scena di rendering per i renderer basati su Renderin
 Descrizione
 ----------------------
 
-L'oggetto contiene i dati di scena relativi al rendering di un singolo frame di una viewport.
+Object holds scene data related to rendering a single frame of a viewport. See also :ref:`RenderSceneData<class_RenderSceneData>`, :ref:`RenderData<class_RenderData>`, and :ref:`RenderDataRD<class_RenderDataRD>`.
 
-\ **Nota:** Questo è un oggetto interno nel server di rendering, non istanziarlo da script.
+\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -3468,11 +3468,11 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_RANGE** = ``1``
 
-Hints that an :ref:`int<class_int>` or :ref:`float<class_float>` property should be within a range specified via the hint string ``"min,max"`` or ``"min,max,step"``. The hint string can optionally include ``"or_greater"`` and/or ``"or_less"`` to allow manual input going respectively above the max or below the min values.
+提示 :ref:`int<class_int>` 或 :ref:`float<class_float>` 属性应处于指定范围内。范围通过提示字符串 ``"最小值,最大值"`` 或 ``"最小值,最大值,步长"`` 指定。该提示字符串可选包含 ``"or_greater"`` 和/或 ``"or_less"``\ ，从而允许手动输入值分别超出最大值或最小值。
 
-\ **Example:** ``"-360,360,1,or_greater,or_less"``.
+\ **示例：**\ ``"-360,360,1,or_greater,or_less"``\ 。
 
-Additionally, other keywords can be included: ``"exp"`` for exponential range editing, ``"radians_as_degrees"`` for editing radian angles in degrees (the range values are also in degrees), ``"degrees"`` to hint at an angle, ``"prefer_slider"`` to show the slider for integers, ``"hide_control"`` to hide the slider or up-down arrows, and ``"suffix:px/s"`` to display a suffix indicating the value's unit (e.g. ``px/s`` for pixels per second).
+此外，还可以包含其他关键字：\ ``"exp"`` 表示按指数范围编辑；\ ``"radians_as_degrees"`` 表示以角度编辑弧度（同时范围值也以角度为单位）；\ ``"degrees"`` 表示属性为角度；\ ``"prefer_slider"`` 表示对整数显示滑块；\ ``"hide_control"`` 表示隐藏滑块或上下箭头；\ ``"suffix:unit"`` 表示显示单位后缀（例如 ``"suffix:px/s"`` 表示像素每秒）。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_ENUM:
 
@@ -3626,11 +3626,11 @@ The hint string is a comma separated list of names such as ``"Bit0,Bit1,Bit2,Bit
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_MULTILINE_TEXT** = ``18``
 
-Hints that a :ref:`String<class_String>` property is text with line breaks. Editing it will show a text input field where line breaks can be typed.
+提示一个\ :ref:`String<class_String>`\ 属性是带有换行的文本。编辑它将显示一个可以输入换行的文本输入框。
 
-The hint string can be set to ``"monospace"`` to force the input field to use a monospaced font.
+提示字符串可以设置为\ ``"monospace"``\ 以强制输入框使用等宽字体。
 
-If the hint string ``"no_wrap"`` is set, the input field will not wrap lines at boundaries, instead resorting to making the area scrollable.
+如果提示字符串设置为\ ``"no_wrap"``\ ，输入框将不会在边界处换行，而是改为使区域可滚动。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_EXPRESSION:
 
@@ -4084,23 +4084,23 @@ flags **PropertyUsageFlags**: :ref:`🔗<enum_@GlobalScope_PropertyUsageFlags>`
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_ARRAY** = ``262144``
 
-The property is the element count of a property array, i.e. a list of groups of related properties. Properties defined with this usage also need a specific ``class_name`` field in the form of ``label,prefix``. The field may also include additional comma-separated options:
+该属性是属性数组的元素计数，即一组相关属性列表。使用此方式的属性还需要一个特定的 ``class_name`` 字段 ，形式为 ``label,prefix``\ 。该 字段 还可以包含其他用逗号分隔的选项：
 
-- ``page_size=N``: Overrides :ref:`EditorSettings.interface/inspector/max_array_dictionary_items_per_page<class_EditorSettings_property_interface/inspector/max_array_dictionary_items_per_page>` for this array.
+- ``page_size=N``: 覆盖此数组的 :ref:`EditorSettings.interface/inspector/max_array_dictionary_items_per_page<class_EditorSettings_property_interface/inspector/max_array_dictionary_items_per_page>`\ 。
 
-- ``add_button_text=text``: The text displayed by the "Add Element" button.
+- ``add_button_text=text``: "添加元素" 按钮显示的文本。
 
-- ``static``: The elements can't be re-arranged.
+- ``static``: 元素不能重新排序。
 
-- ``const``: New elements can't be added.
+- ``const``: 不能添加新元素。
 
-- ``numbered``: An index will appear next to each element.
+- `` 编号 ``\ ：每个元素旁边将出现一个索引 。
 
-- ``unfoldable``: The array can't be folded.
+- ``unfoldable``: 数组不能折叠。
 
-- ``swap_method=method_name``: The method that will be called when two elements switch places. The method should take 2 :ref:`int<class_int>` parameters, which will be indices of the elements being swapped.
+- ``swap_method=方法名 ``\ ：当两个元素交换位置时将调用的方法。该方法应接受 2 个\ :ref:`int<class_int>`\ 参数，这些参数将是被交换元素的索引。
 
-Note that making a full-fledged property array requires boilerplate code involving :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`.
+注意，创建一个完整的属性数组需要涉及\ :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`\ 的样板代码。
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_ALWAYS_DUPLICATE:
 
@@ -4132,7 +4132,7 @@ Note that making a full-fledged property array requires boilerplate code involvi
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_NODE_PATH_FROM_SCENE_ROOT** = ``4194304``
 
-:ref:`NodePath<class_NodePath>` 属性将始终相对于场景根。对于本地资源来说最有用。
+:ref:`NodePath<class_NodePath>` 属性将始终是相对于场景根的。主要用于本地资源。
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_RESOURCE_NOT_PERSISTENT:
 
@@ -5089,7 +5089,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`NavigationServer2DManager<class_NavigationServer2DManager>` **NavigationServer2DManager** :ref:`🔗<class_@GlobalScope_property_NavigationServer2DManager>`
 
-The :ref:`NavigationServer2DManager<class_NavigationServer2DManager>` singleton.
+:ref:`NavigationServer2DManager<class_NavigationServer2DManager>` 单例。
 
 .. rst-class:: classref-item-separator
 
@@ -5113,7 +5113,7 @@ The :ref:`NavigationServer2DManager<class_NavigationServer2DManager>` singleton.
 
 :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` **NavigationServer3DManager** :ref:`🔗<class_@GlobalScope_property_NavigationServer3DManager>`
 
-The :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` singleton.
+:ref:`NavigationServer3DManager<class_NavigationServer3DManager>` 单例。
 
 .. rst-class:: classref-item-separator
 
@@ -6014,7 +6014,7 @@ The :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` singleton.
 
 :ref:`Object<class_Object>` **instance_from_id**\ (\ instance_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_@GlobalScope_method_instance_from_id>`
 
-Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All Objects have a unique instance ID. See also :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`.
+返回实例 ID ``instance_id`` 所对应的 :ref:`Object<class_Object>`\ 。所有对象都有唯一实例 ID。另见 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`\ 。
 
 
 .. tabs::
@@ -6026,7 +6026,7 @@ Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All
     func _ready():
         var id = get_instance_id()
         var instance = instance_from_id(id)
-        print(instance.drink) # Prints "water"
+        print(instance.drink) # 输出“water”
 
  .. code-tab:: csharp
 
@@ -6038,7 +6038,7 @@ Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All
         {
             ulong id = GetInstanceId();
             var instance = (MyNode)InstanceFromId(Id);
-            GD.Print(instance.Drink); // Prints "water"
+            GD.Print(instance.Drink); // 输出“water”
         }
     }
 
@@ -7438,7 +7438,7 @@ URL 标签仅支持在 URL 标签中包含 URL，不支持使用不同标题的 
 
 :ref:`int<class_int>` **typeof**\ (\ variable\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_@GlobalScope_method_typeof>`
 
-Returns the internal type of the given ``variable``, using the :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` values.
+返回给定 ``variable`` 的内部类型，使用 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` 枚举值表示。
 
 ::
 
@@ -7446,11 +7446,11 @@ Returns the internal type of the given ``variable``, using the :ref:`Variant.Typ
     json.parse('["a", "b", "c"]')
     var result = json.get_data()
     if typeof(result) == TYPE_ARRAY:
-        print(result[0]) # Prints "a"
+        print(result[0]) # 输出“a”
     else:
-        print("Unexpected result!")
+        print("预料之外的结果！")
 
-See also :ref:`type_string()<class_@GlobalScope_method_type_string>`.
+另见 :ref:`type_string()<class_@GlobalScope_method_type_string>`\ 。
 
 .. rst-class:: classref-item-separator
 

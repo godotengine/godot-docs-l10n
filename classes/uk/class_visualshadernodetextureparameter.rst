@@ -67,7 +67,7 @@ enum **TextureType**: :ref:`🔗<enum_VisualShaderNodeTextureParameter_TextureTy
 
 :ref:`TextureType<enum_VisualShaderNodeTextureParameter_TextureType>` **TYPE_COLOR** = ``1``
 
-Adds ``source_color`` as hint to the uniform declaration for proper conversion from nonlinear sRGB encoding to linear encoding.
+Додає ``source_color`` як підказку до уніфікованого оголошення для правильного перетворення з нелінійного кодування sRGB на лінійне кодування.
 
 .. _class_VisualShaderNodeTextureParameter_constant_TYPE_NORMAL_MAP:
 

@@ -698,7 +698,9 @@ The camera's zoom. Higher values are more zoomed in. For example, a zoom of ``Ve
 
 |void| **align**\ (\ ) :ref:`🔗<class_Camera2D_method_align>`
 
-將相機與追蹤的節點對齊。
+Aligns the camera to the tracked node.
+
+\ **Note:** Calling :ref:`force_update_scroll()<class_Camera2D_method_force_update_scroll>` after this method is not required.
 
 .. rst-class:: classref-item-separator
 

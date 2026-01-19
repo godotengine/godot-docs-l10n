@@ -16,9 +16,9 @@ ConfirmationDialog
 Опис
 --------
 
-A dialog used for confirmation of actions. This window is similar to :ref:`AcceptDialog<class_AcceptDialog>`, but pressing its Cancel button can have a different outcome from pressing the OK button. The order of the two buttons varies depending on the host OS.
+Діалогове вікно, яке використовується для підтвердження дій. Це вікно схоже на :ref:`AcceptDialog<class_AcceptDialog>`, але натискання кнопки «Скасувати» може мати інший результат, ніж натискання кнопки «ОК». Порядок розташування двох кнопок залежить від операційної системи.
 
-To get cancel action, you can use:
+Щоб скасувати дію, можна використовувати:
 
 
 .. tabs::
@@ -33,7 +33,7 @@ To get cancel action, you can use:
 
 
 
-\ **Note:** :ref:`AcceptDialog<class_AcceptDialog>` is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **Примітка:** :ref:`AcceptDialog<class_AcceptDialog>` за замовчуванням невидимий. Щоб зробити його видимим, викличте один із методів ``popup_*`` з :ref:`Window<class_Window>` на вузлі, наприклад, :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
 
 .. rst-class:: classref-reftable-group
 

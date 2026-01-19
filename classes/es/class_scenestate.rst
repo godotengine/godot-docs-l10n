@@ -192,7 +192,7 @@ Returns the connection flags for the signal at ``idx``. See :ref:`ConnectFlags<e
 
 :ref:`StringName<class_StringName>` **get_connection_method**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_connection_method>`
 
-Returns the method connected to the signal at ``idx``.
+Devuelve el método conectado a la señal en ``idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ Returns the method connected to the signal at ``idx``.
 
 :ref:`StringName<class_StringName>` **get_connection_signal**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_connection_signal>`
 
-Returns the name of the signal at ``idx``.
+Devuelve el nombre de la señal en ``idx``.
 
 .. rst-class:: classref-item-separator
 

@@ -7,14 +7,14 @@ GodotInstance
 
 **Успадковує:** :ref:`Object<class_Object>`
 
-Provides access to an embedded Godot instance.
+Надає доступ до вбудованого екземпляра Godot.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-GodotInstance represents a running Godot instance that is controlled from an outside codebase, without a perpetual main loop. It is created by the C API ``libgodot_create_godot_instance``. Only one may be created per process.
+GodotInstance являє собою запущений екземпляр Godot, який керується із зовнішньої кодової бази, без постійного основного циклу. Він створюється за допомогою C API ``libgodot_create_godot_instance``. Для кожного процесу можна створити лише один екземпляр.
 
 .. rst-class:: classref-reftable-group
 
@@ -55,7 +55,7 @@ GodotInstance represents a running Godot instance that is controlled from an out
 
 |void| **focus_in**\ (\ ) :ref:`🔗<class_GodotInstance_method_focus_in>`
 
-Notifies the instance that it is now in focus.
+Повідомляє екземпляр, що він тепер у фокусі.
 
 .. rst-class:: classref-item-separator
 
@@ -67,7 +67,7 @@ Notifies the instance that it is now in focus.
 
 |void| **focus_out**\ (\ ) :ref:`🔗<class_GodotInstance_method_focus_out>`
 
-Notifies the instance that it is now not in focus.
+Повідомляє екземпляр, що він зараз не у фокусі.
 
 .. rst-class:: classref-item-separator
 
@@ -79,7 +79,7 @@ Notifies the instance that it is now not in focus.
 
 :ref:`bool<class_bool>` **is_started**\ (\ ) :ref:`🔗<class_GodotInstance_method_is_started>`
 
-Returns ``true`` if this instance has been fully started.
+Повертає ``true``, якщо цей екземпляр повністю запущено.
 
 .. rst-class:: classref-item-separator
 
@@ -91,7 +91,7 @@ Returns ``true`` if this instance has been fully started.
 
 :ref:`bool<class_bool>` **iteration**\ (\ ) :ref:`🔗<class_GodotInstance_method_iteration>`
 
-Runs a single iteration of the main loop. Returns ``true`` if the engine is attempting to quit.
+Виконує одну ітерацію основного циклу. Повертає ``true``, якщо двигун намагається завершити роботу.
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ Runs a single iteration of the main loop. Returns ``true`` if the engine is atte
 
 |void| **pause**\ (\ ) :ref:`🔗<class_GodotInstance_method_pause>`
 
-Notifies the instance that it is going to be paused.
+Повідомляє екземпляр про те, що його буде призупинено.
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +115,7 @@ Notifies the instance that it is going to be paused.
 
 |void| **resume**\ (\ ) :ref:`🔗<class_GodotInstance_method_resume>`
 
-Notifies the instance that it is being resumed.
+Повідомляє екземпляр про його відновлення.
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +127,7 @@ Notifies the instance that it is being resumed.
 
 :ref:`bool<class_bool>` **start**\ (\ ) :ref:`🔗<class_GodotInstance_method_start>`
 
-Finishes this instance's startup sequence. Returns ``true`` on success.
+Завершує послідовність запуску цього екземпляра. Повертає ``true`` у разі успіху.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

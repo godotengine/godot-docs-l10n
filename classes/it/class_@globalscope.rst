@@ -6251,7 +6251,7 @@ Simile a :ref:`lerp()<class_@GlobalScope_method_lerp>`, ma interpola correttamen
 Interpola linearmente tra due valori con un fattore definito in ``weight``. Per interpolare, ``weight`` dovrebbe rimanere tra ``0.0`` e ``1.0`` (inclusi). Tuttavia, i valori al di fuori di questo intervallo sono consentiti e possono essere utilizzati per eseguire un'*estrapolazione*. Se non è desiderato, utilizza :ref:`clampf()<class_@GlobalScope_method_clampf>` sul risultato di questa funzione.
 
 ::
-.
+
     lerp(0, 4, 0.75) # Restituisce 3.0
 
 Vedi anche :ref:`inverse_lerp()<class_@GlobalScope_method_inverse_lerp>` che esegue l'inverso di questa operazione. Per eseguire un'interpolazione alleggerita con :ref:`lerp()<class_@GlobalScope_method_lerp>`, combinalo con :ref:`ease()<class_@GlobalScope_method_ease>` o :ref:`smoothstep()<class_@GlobalScope_method_smoothstep>`.

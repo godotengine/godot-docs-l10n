@@ -16,9 +16,9 @@ Une boîte de dialogue pour la confirmation des actions.
 Description
 -----------
 
-A dialog used for confirmation of actions. This window is similar to :ref:`AcceptDialog<class_AcceptDialog>`, but pressing its Cancel button can have a different outcome from pressing the OK button. The order of the two buttons varies depending on the host OS.
+Un dialogue utilisé pour la confirmation des actions. Cette fenêtre est similaire à :ref:`AcceptDialog<class_AcceptDialog>`, mais appuyer sur son bouton Annuler peut avoir un résultat différent de la pression sur le bouton OK. L'ordre des deux boutons varie selon le système d'exploitation hôte.
 
-To get cancel action, you can use:
+Pour annuler l'action, vous pouvez utiliser:
 
 
 .. tabs::
@@ -33,7 +33,7 @@ To get cancel action, you can use:
 
 
 
-\ **Note:** :ref:`AcceptDialog<class_AcceptDialog>` is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **Note :** :ref:`AcceptDialog<class_AcceptDialog>` est invisible par défaut. Pour le rendre visible, appelez l'une des méthodes ``popup_*`` de :ref:`Window<class_Window>` sur le nœud, comme :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
 
 .. rst-class:: classref-reftable-group
 

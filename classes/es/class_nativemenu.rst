@@ -614,7 +614,7 @@ Devuelve el acelerador del elemento en el índice ``idx``. Los aceleradores son 
 
 :ref:`Callable<class_Callable>` **get_item_callback**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_callback>`
 
-Devuelve la función de retorno del elemento en el índice ``idx``.
+Devuelve la callback del elemento en el índice ``idx``.
 
 \ **Nota:** Este método está implementado en macOS y Windows.
 

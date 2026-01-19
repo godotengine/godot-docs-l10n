@@ -17,11 +17,11 @@ Luz direccional 2D desde la distancia.
 Descripción
 ----------------------
 
-A directional light is a type of :ref:`Light2D<class_Light2D>` node that models an infinite number of parallel rays covering the entire scene. It is used for lights with strong intensity that are located far away from the scene (for example: to model sunlight or moonlight).
+Una luz direccional es un tipo de nodo :ref:`Light2D<class_Light2D>` que modela un número infinito de rayos paralelos que cubren toda la escena. Se utiliza para luces de gran intensidad que se ubican lejos de la escena (por ejemplo: para modelar la luz del sol o la luz de la luna).
 
-Light is emitted in the +Y direction of the node's global basis. For an unrotated light, this means that the light is emitted downwards. The position of the node is ignored; only the basis is used to determine light direction.
+La luz se emite en la dirección +Y de la base global del nodo. Para una luz sin rotar, esto significa que la luz se emite hacia abajo. La posición del nodo se ignora; solo se usa la base para determinar la dirección de la luz.
 
-\ **Note:** **DirectionalLight2D** does not support light cull masks (but it supports shadow cull masks). It will always light up 2D nodes, regardless of the 2D node's :ref:`CanvasItem.light_mask<class_CanvasItem_property_light_mask>`.
+\ **Nota:** **DirectionalLight2D** no soporta máscaras de exclusión de luz (pero sí soporta máscaras de exclusión de sombra). Siempre iluminará los nodos 2D, independientemente de la :ref:`CanvasItem.light_mask<class_CanvasItem_property_light_mask>` del nodo 2D.
 
 .. rst-class:: classref-introduction-group
 
@@ -64,7 +64,7 @@ Descripciones de Propiedades
 - |void| **set_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_height**\ (\ )
 
-The height of the light. Used with 2D normal mapping. Ranges from 0 (parallel to the plane) to 1 (perpendicular to the plane).
+La altura de la luz. Se utiliza con el mapeo normal 2D. Rango de 0 (paralelo al plano) a 1 (perpendicular al plano).
 
 .. rst-class:: classref-item-separator
 
@@ -81,7 +81,7 @@ The height of the light. Used with 2D normal mapping. Ranges from 0 (parallel to
 - |void| **set_max_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_distance**\ (\ )
 
-The maximum distance from the camera center objects can be before their shadows are culled (in pixels). Decreasing this value can prevent objects located outside the camera from casting shadows (while also improving performance). :ref:`Camera2D.zoom<class_Camera2D_property_zoom>` is not taken into account by :ref:`max_distance<class_DirectionalLight2D_property_max_distance>`, which means that at higher zoom values, shadows will appear to fade out sooner when zooming onto a given point.
+La distancia máxima desde el centro de la cámara a la que los objetos pueden estar antes de que sus sombras sean eliminadas (en píxeles). Disminuir este valor puede evitar que los objetos situados fuera de la cámara proyecten sombras (al mismo tiempo que mejora el rendimiento). :ref:`Camera2D.zoom<class_Camera2D_property_zoom>` no es tomado en cuenta por :ref:`max_distance<class_DirectionalLight2D_property_max_distance>`, lo que significa que con valores de zoom más altos, las sombras parecerán desvanecerse antes al hacer zoom en un punto dado.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

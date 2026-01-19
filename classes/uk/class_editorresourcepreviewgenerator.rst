@@ -129,7 +129,7 @@ EditorResourcePreviewGenerator
 
 |void| **request_draw_and_wait**\ (\ viewport\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_EditorResourcePreviewGenerator_method_request_draw_and_wait>`
 
-Call from within :ref:`_generate()<class_EditorResourcePreviewGenerator_private_method__generate>` to request the rendering server draw to the ``viewport``.
+Викличте метод :ref:`_generate()<class_EditorResourcePreviewGenerator_private_method__generate>`, щоб запросити відображення сервера рендерингу в області перегляду ``viewport``.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -7,16 +7,16 @@ UDSServer
 
 **Успадковує:** :ref:`SocketServer<class_SocketServer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A Unix Domain Socket (UDS) server.
+Сервер Unix Domain Socket (UDS).
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-A Unix Domain Socket (UDS) server. Listens to connections on a socket path and returns a :ref:`StreamPeerUDS<class_StreamPeerUDS>` when it gets an incoming connection. Unix Domain Sockets provide inter-process communication on the same machine using the filesystem namespace.
+Сервер Unix Domain Socket (UDS). Прослуховує з'єднання на шляху сокета та повертає :ref:`StreamPeerUDS<class_StreamPeerUDS>`, коли отримує вхідне з'єднання. Unix Domain Sockets забезпечують міжпроцесну комунікацію на одній машині, використовуючи простір імен файлової системи.
 
-\ **Note:** Unix Domain Sockets are only available on Unix-like systems (Linux, macOS, etc.) and are not supported on Windows.
+\ **Примітка:** Unix Domain Sockets доступні лише на Unix-подібних системах (Linux, macOS тощо) та не підтримуються у Windows.
 
 .. rst-class:: classref-reftable-group
 
@@ -47,9 +47,9 @@ A Unix Domain Socket (UDS) server. Listens to connections on a socket path and r
 
 :ref:`Error<enum_@GlobalScope_Error>` **listen**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_UDSServer_method_listen>`
 
-Listens on the socket at ``path``. The socket file will be created at the specified path.
+Прослуховує сокет за адресою ``path``. Файл сокета буде створено за вказаним шляхом.
 
-\ **Note:** The socket file must not already exist at the specified path. You may need to remove any existing socket file before calling this method.
+\ **Примітка:** Файл сокета не повинен існувати за вказаним шляхом. Можливо, вам доведеться видалити будь-який існуючий файл сокета перед викликом цього методу.
 
 .. rst-class:: classref-item-separator
 
@@ -61,7 +61,7 @@ Listens on the socket at ``path``. The socket file will be created at the specif
 
 :ref:`StreamPeerUDS<class_StreamPeerUDS>` **take_connection**\ (\ ) :ref:`🔗<class_UDSServer_method_take_connection>`
 
-If a connection is available, returns a StreamPeerUDS with the connection.
+Якщо з'єднання доступне, повертає StreamPeerUDS із з'єднанням.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

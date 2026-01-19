@@ -9,14 +9,14 @@ OpenXRPlaneTracker
 
 **Успадковує:** :ref:`OpenXRSpatialEntityTracker<class_OpenXRSpatialEntityTracker>` **<** :ref:`XRPositionalTracker<class_XRPositionalTracker>` **<** :ref:`XRTracker<class_XRTracker>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Spatial entity tracker for our spatial entity plane tracking extension.
+Трекер просторових сутностей для нашого розширення відстеження площини просторових сутностей.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Spatial entity tracker for our OpenXR spatial entity plane tracking extension. These trackers identify entities in our real space such as walls, floors, tables, etc. and map their location to our virtual space.
+Трекер просторових сутностей для нашого розширення відстеження площини просторових сутностей OpenXR. Ці трекери ідентифікують сутності в нашому реальному просторі, такі як стіни, підлоги, столи тощо, та відображають їхнє розташування у нашому віртуальному просторі.
 
 .. rst-class:: classref-reftable-group
 
@@ -69,7 +69,7 @@ Spatial entity tracker for our OpenXR spatial entity plane tracking extension. T
 
 **mesh_changed**\ (\ ) :ref:`🔗<class_OpenXRPlaneTracker_signal_mesh_changed>`
 
-Emitted when our mesh data has changed the mesh instance and collision needs to be updated.
+Видається, коли дані нашої сітки змінилися, екземпляр сітки, і колізію потрібно оновити.
 
 .. rst-class:: classref-section-separator
 
@@ -91,7 +91,7 @@ Emitted when our mesh data has changed the mesh instance and collision needs to 
 - |void| **set_bounds_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_bounds_size**\ (\ )
 
-The bounding size of the plane. This is a 2D size.
+Обмежувальний розмір площини. Це двовимірний розмір.
 
 .. rst-class:: classref-item-separator
 
@@ -108,7 +108,7 @@ The bounding size of the plane. This is a 2D size.
 - |void| **set_plane_alignment**\ (\ value\: :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>`\ )
 - :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>` **get_plane_alignment**\ (\ )
 
-The main alignment in space of this plane.
+Основне вирівнювання в просторі цієї площини.
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ The main alignment in space of this plane.
 - |void| **set_plane_label**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_plane_label**\ (\ )
 
-The semantic label for this plane.
+Семантична мітка для цієї площини.
 
 .. rst-class:: classref-section-separator
 
@@ -142,7 +142,7 @@ The semantic label for this plane.
 
 |void| **clear_mesh_data**\ (\ ) :ref:`🔗<class_OpenXRPlaneTracker_method_clear_mesh_data>`
 
-Clears the mesh data for this tracker. You should only call this if you are handling your own discovery logic.
+Очищає дані мережі для цього трекера. Викликати цю функцію слід лише у випадку, якщо ви обробляєте власну логіку виявлення.
 
 .. rst-class:: classref-item-separator
 
@@ -154,7 +154,7 @@ Clears the mesh data for this tracker. You should only call this if you are hand
 
 :ref:`Mesh<class_Mesh>` **get_mesh**\ (\ ) :ref:`🔗<class_OpenXRPlaneTracker_method_get_mesh>`
 
-Gets a mesh created from either the mesh data or from our bounding size for this plane.
+Отримує сітку, створену або з даних сітки, або з нашого обмежувального розміру для цієї площини.
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +166,7 @@ Gets a mesh created from either the mesh data or from our bounding size for this
 
 :ref:`Transform3D<class_Transform3D>` **get_mesh_offset**\ (\ ) |const| :ref:`🔗<class_OpenXRPlaneTracker_method_get_mesh_offset>`
 
-Gets the transform by which to offset the mesh and collision shape from our pose to display these correctly.
+Отримує перетворення, за допомогою якого потрібно змістити сітку та форму зіткнення відносно нашої пози, щоб відобразити їх правильно.
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ Gets the transform by which to offset the mesh and collision shape from our pose
 
 :ref:`Shape3D<class_Shape3D>` **get_shape**\ (\ thickness\: :ref:`float<class_float>` = 0.01\ ) :ref:`🔗<class_OpenXRPlaneTracker_method_get_shape>`
 
-Gets a collision shape built either from the mesh data or from our bounding size for this plane.
+Отримує форму зіткнення, побудовану або з даних сітки, або з нашого граничного розміру для цієї площини.
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ Gets a collision shape built either from the mesh data or from our bounding size
 
 |void| **set_mesh_data**\ (\ origin\: :ref:`Transform3D<class_Transform3D>`, vertices\: :ref:`PackedVector2Array<class_PackedVector2Array>`, indices\: :ref:`PackedInt32Array<class_PackedInt32Array>` = PackedInt32Array()\ ) :ref:`🔗<class_OpenXRPlaneTracker_method_set_mesh_data>`
 
-Sets the mesh data for this plane. You should only call this if you are handling your own discovery logic.
+Встановлює дані сітки для цієї площини. Викликати цю функцію слід лише у випадку, якщо ви обробляєте власну логіку виявлення.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

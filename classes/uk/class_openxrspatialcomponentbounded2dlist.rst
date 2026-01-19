@@ -9,14 +9,14 @@ OpenXRSpatialComponentBounded2DList
 
 **Успадковує:** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the queries bounded2d result data.
+Об'єкт для зберігання результатів запитів bounded2d.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Object for storing the queries 2D bounding rectangle result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Об'єкт для зберігання результатів запитів двовимірного обмежувального прямокутника під час виклику :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -47,7 +47,7 @@ Object for storing the queries 2D bounding rectangle result data when calling :r
 
 :ref:`Transform3D<class_Transform3D>` **get_center_pose**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentBounded2DList_method_get_center_pose>`
 
-Returns the center of our bounding rectangle for the entity at this ``index``.
+Повертає центр нашого обмежувального прямокутника для об'єкта в цій точці ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -59,7 +59,7 @@ Returns the center of our bounding rectangle for the entity at this ``index``.
 
 :ref:`Vector2<class_Vector2>` **get_size**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentBounded2DList_method_get_size>`
 
-Returns the size of our bounding rectangle for the entity at this ``index``.
+Повертає розмір нашого обмежувального прямокутника для сутності в цій точці ``index``.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -666,7 +666,7 @@ String
 
 :ref:`int<class_int>` **find**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_String_method_find>`
 
-Returns the index of the **first** occurrence of ``what`` in this string, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the string.
+Повертає індекс **першого** входження ``what`` у цей рядок, або ``-1``, якщо таких немає. Початок пошуку можна вказати за допомогою ``from``, продовжуючи до кінця рядка.
 
 
 .. tabs::
@@ -689,9 +689,9 @@ Returns the index of the **first** occurrence of ``what`` in this string, or ``-
 
 
 
-\ **Note:** If you just want to know whether the string contains ``what``, use :ref:`contains()<class_String_method_contains>`. In GDScript, you may also use the ``in`` operator.
+\ **Примітка:** Якщо ви просто хочете дізнатися, чи містить рядок ``what``, використовуйте :ref:`contains()<class_String_method_contains>`. У GDScript ви також можете використовувати оператор ``in``.
 
-\ **Note:** A negative value of ``from`` is converted to a starting index by counting back from the last possible index with enough space to find ``what``.
+\ **Примітка:** Від'ємне значення ``from`` перетворюється на початковий індекс шляхом зворотного відліку від останнього можливого індексу з достатнім простором для знаходження ``what``.
 
 .. rst-class:: classref-item-separator
 
@@ -839,13 +839,13 @@ Returns the index of the **first** occurrence of ``what`` in this string, or ``-
 
 :ref:`String<class_String>` **get_slice**\ (\ delimiter\: :ref:`String<class_String>`, slice\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_String_method_get_slice>`
 
-Splits the string using a ``delimiter`` and returns the substring at index ``slice``. Returns the original string if ``delimiter`` does not occur in the string. Returns an empty string if the ``slice`` does not exist.
+Розділяє рядок за допомогою роздільника параметрів ``delimiter`` та повертає підрядок за індексом ``slice``. Повертає початковий рядок, якщо роздільник параметрів ``delimiter`` відсутній у рядку. Повертає порожній рядок, якщо роздільник параметрів ``slice`` не існує.
 
-This is faster than :ref:`split()<class_String_method_split>`, if you only need one or two substrings.
+Це швидше, ніж :ref:`split()<class_String_method_split>`, якщо вам потрібен лише один або два підрядки.
 
 ::
 
-    print("i/am/example/hi".get_slice("/", 2)) # Prints "example"
+    print("i/am/example/hi".get_slice("/", 2)) # Друк "example"
 
 .. rst-class:: classref-item-separator
 
@@ -857,14 +857,14 @@ This is faster than :ref:`split()<class_String_method_split>`, if you only need 
 
 :ref:`int<class_int>` **get_slice_count**\ (\ delimiter\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_get_slice_count>`
 
-Returns the total number of slices when the string is split with the given ``delimiter`` (see :ref:`split()<class_String_method_split>`).
+Повертає загальну кількість фрагментів, коли рядок розділено за заданим роздільником ``параметр`` (див. ``метод split``).
 
-Use :ref:`get_slice()<class_String_method_get_slice>` to extract a specific slice.
+Використовуйте ``метод get_slice`` для вилучення певного фрагмента.
 
 ::
 
-    print("i/am/example/string".get_slice_count("/")) # Prints '4'.
-    print("i am example string".get_slice_count("/")) # Prints '1'.
+    print("i/am/example/string".get_slice_count("/")) # Друкує «4».
+    print("i am example string".get_slice_count("/")) # Друкує «1».
 
 .. rst-class:: classref-item-separator
 
@@ -876,11 +876,11 @@ Use :ref:`get_slice()<class_String_method_get_slice>` to extract a specific slic
 
 :ref:`String<class_String>` **get_slicec**\ (\ delimiter\: :ref:`int<class_int>`, slice\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_String_method_get_slicec>`
 
-Splits the string using a Unicode character with code ``delimiter`` and returns the substring at index ``slice``. Returns an empty string if the ``slice`` does not exist.
+Розділяє рядок за допомогою символу Unicode з кодом ``delimiter`` та повертає підрядок за індексом ``slice``. Повертає порожній рядок, якщо ``slice`` не існує.
 
-This is faster than :ref:`split()<class_String_method_split>`, if you only need one or two substrings.
+Це швидше, ніж :ref:`split()<class_String_method_split>`, якщо вам потрібен лише один або два підрядки.
 
-This is a Unicode version of :ref:`get_slice()<class_String_method_get_slice>`.
+Це Unicode-версія методу :ref:`get_slice()<class_String_method_get_slice>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1583,7 +1583,7 @@ This is a Unicode version of :ref:`get_slice()<class_String_method_get_slice>`.
 
 :ref:`String<class_String>` **remove_chars**\ (\ chars\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_remove_chars>`
 
-Removes all occurrences of the characters in ``chars``. See also :ref:`remove_char()<class_String_method_remove_char>`.
+Вилучає всі символи, що з'являються в ``chars``. Див. також :ref:`remove_char()<class_String_method_remove_char>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1667,11 +1667,11 @@ Removes all occurrences of the characters in ``chars``. See also :ref:`remove_ch
 
 :ref:`int<class_int>` **rfind**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_String_method_rfind>`
 
-Returns the index of the **last** occurrence of ``what`` in this string, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the beginning of the string. This method is the reverse of :ref:`find()<class_String_method_find>`.
+Повертає індекс **останнього** входження ``what`` у цей рядок, або ``-1``, якщо таких немає. Початок пошуку можна вказати за допомогою ``from``, продовжуючи до початку рядка. Цей метод є зворотним до :ref:`find()<class_String_method_find>`.
 
-\ **Note:** A negative value of ``from`` is converted to a starting index by counting back from the last possible index with enough space to find ``what``.
+\ **Примітка:** Від'ємне значення ``from`` перетворюється на початковий індекс шляхом зворотного відліку від останнього можливого індексу з достатнім простором для знаходження ``what``.
 
-\ **Note:** A value of ``from`` that is greater than the last possible index with enough space to find ``what`` is considered out-of-bounds, and returns ``-1``.
+\ **Примітка:** Значення ``from``, яке більше за останній можливий індекс з достатнім простором для знаходження ``what``, вважається поза межами допустимого значення та повертає ``-1``.
 
 .. rst-class:: classref-item-separator
 

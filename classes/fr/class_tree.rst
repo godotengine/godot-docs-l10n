@@ -220,9 +220,13 @@ Propriétés du thème
    +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
    | :ref:`Color<class_Color>`         | :ref:`relationship_line_color<class_Tree_theme_color_relationship_line_color>`           | ``Color(0.27, 0.27, 0.27, 1)``      |
    +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`         | :ref:`scroll_hint_color<class_Tree_theme_color_scroll_hint_color>`                       | ``Color(0, 0, 0, 1)``               |
+   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
    | :ref:`Color<class_Color>`         | :ref:`title_button_color<class_Tree_theme_color_title_button_color>`                     | ``Color(0.875, 0.875, 0.875, 1)``   |
    +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
    | :ref:`int<class_int>`             | :ref:`button_margin<class_Tree_theme_constant_button_margin>`                            | ``4``                               |
+   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`             | :ref:`check_h_separation<class_Tree_theme_constant_check_h_separation>`                  | ``4``                               |
    +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
    | :ref:`int<class_int>`             | :ref:`children_hl_line_width<class_Tree_theme_constant_children_hl_line_width>`          | ``1``                               |
    +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
@@ -233,6 +237,8 @@ Propriétés du thème
    | :ref:`int<class_int>`             | :ref:`draw_relationship_lines<class_Tree_theme_constant_draw_relationship_lines>`        | ``0``                               |
    +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
    | :ref:`int<class_int>`             | :ref:`h_separation<class_Tree_theme_constant_h_separation>`                              | ``4``                               |
+   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`             | :ref:`icon_h_separation<class_Tree_theme_constant_icon_h_separation>`                    | ``4``                               |
    +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
    | :ref:`int<class_int>`             | :ref:`icon_max_width<class_Tree_theme_constant_icon_max_width>`                          | ``0``                               |
    +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
@@ -1623,6 +1629,18 @@ La :ref:`Color<class_Color>` par défaut des lignes relationnelles.
 
 ----
 
+.. _class_Tree_theme_color_scroll_hint_color:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Color<class_Color>` **scroll_hint_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_Tree_theme_color_scroll_hint_color>`
+
+:ref:`Color<class_Color>` used to modulate the :ref:`scroll_hint<class_Tree_theme_icon_scroll_hint>` texture.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Tree_theme_color_title_button_color:
 
 .. rst-class:: classref-themeproperty
@@ -1642,6 +1660,18 @@ La :ref:`Color<class_Color>` par défaut du titre du bouton.
 :ref:`int<class_int>` **button_margin** = ``4`` :ref:`🔗<class_Tree_theme_constant_button_margin>`
 
 L'espacement horizontal entre chaque bouton dans une cellule.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Tree_theme_constant_check_h_separation:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`int<class_int>` **check_h_separation** = ``4`` :ref:`🔗<class_Tree_theme_constant_check_h_separation>`
+
+The horizontal space between the checkbox and the text in a :ref:`TreeItem.CELL_MODE_CHECK<class_TreeItem_constant_CELL_MODE_CHECK>` mode cell.
 
 .. rst-class:: classref-item-separator
 
@@ -1702,6 +1732,18 @@ Draws the relationship lines if not zero, this acts as a boolean. Relationship l
 :ref:`int<class_int>` **h_separation** = ``4`` :ref:`🔗<class_Tree_theme_constant_h_separation>`
 
 L'espace horizontal entre les cellules d'éléments. Ceci est également utilisé en tant que marge au début d'un élément lorsque le repliage est désactivé.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Tree_theme_constant_icon_h_separation:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`int<class_int>` **icon_h_separation** = ``4`` :ref:`🔗<class_Tree_theme_constant_icon_h_separation>`
+
+The horizontal space between the icon and the text in item's cells.
 
 .. rst-class:: classref-item-separator
 

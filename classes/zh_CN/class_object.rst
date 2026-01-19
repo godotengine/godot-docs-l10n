@@ -302,9 +302,9 @@ Persisting connections are stored when the object is serialized (such as when us
 
 **NOTIFICATION_PREDELETE** = ``1`` :ref:`🔗<class_Object_constant_NOTIFICATION_PREDELETE>`
 
-Notification received when the object is about to be deleted. Can be used like destructors in object-oriented programming languages.
+该对象即将被删除时收到的通知。可以用作面向对象编程语言中的析构函数。
 
-This notification is sent in reversed order.
+该通知会以反向顺序发送。
 
 .. _class_Object_constant_NOTIFICATION_EXTENSION_RELOADED:
 
@@ -329,11 +329,11 @@ This notification is sent in reversed order.
 
 :ref:`Variant<class_Variant>` **_get**\ (\ property\: :ref:`StringName<class_StringName>`\ ) |virtual| :ref:`🔗<class_Object_private_method__get>`
 
-Override this method to customize the behavior of :ref:`get()<class_Object_method_get>`. Should return the given ``property``'s value, or ``null`` if the ``property`` should be handled normally.
+覆盖该方法以自定义 :ref:`get()<class_Object_method_get>` 的行为。应该返回给定的 ``property`` 的值，或者 ``property`` 应该被正常处理时返回 ``null``\ 。
 
-Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_property_list()<class_Object_private_method__get_property_list>`, this method allows defining custom properties, which is particularly useful for editor plugins.
+结合 :ref:`_set()<class_Object_private_method__set>` 和 :ref:`_get_property_list()<class_Object_private_method__get_property_list>`\ ，该方法允许定义自定义属性，这对编辑器插件特别有用。
 
-\ **Note:** This method is not called when getting built-in properties of an object, including properties defined with :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
+\ **注意：**\ 获取对象的内置属性时不会调用该方法，包括使用 :ref:`@GDScript.@export<class_@GDScript_annotation_@export>` 定义的属性。
 
 
 .. tabs::
@@ -342,7 +342,7 @@ Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_pro
 
     func _get(property):
         if property == "fake_property":
-            print("Getting my property!")
+            print("正在获取我的属性！")
             return 4
 
     func _get_property_list():
@@ -356,7 +356,7 @@ Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_pro
     {
         if (property == "FakeProperty")
         {
-            GD.Print("Getting my property!");
+            GD.Print("正在获取我的属性！");
             return 4;
         }
         return default;
@@ -376,7 +376,7 @@ Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_pro
 
 
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy. The call chain will stop on the first class that returns a non-``null`` value.
+\ **注意：** 和其他虚拟方法不同，每一个被脚本覆盖了的该方法都会被自动调用。这意味着基础实现不应该用 GDScript 中的 ``super`` 或者其他语言中的同等构造来调用。最底层子类的该方法会首先被调用，接着是沿类层次结构向上依次调用。调用链会在第一个返回了非 ``null`` 值的类停止。
 
 .. rst-class:: classref-item-separator
 
@@ -668,11 +668,11 @@ Override this method to customize the given ``property``'s revert behavior. Shou
 
 :ref:`bool<class_bool>` **_set**\ (\ property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) |virtual| :ref:`🔗<class_Object_private_method__set>`
 
-Override this method to customize the behavior of :ref:`set()<class_Object_method_set>`. Should set the ``property`` to ``value`` and return ``true``, or ``false`` if the ``property`` should be handled normally. The *exact* way to set the ``property`` is up to this method's implementation.
+覆盖该方法以自定义 :ref:`set()<class_Object_method_set>` 的行为。应将 ``property`` 设置为 ``value`` 并返回 ``true``\ ，如果 ``property`` 正常处理则返回 ``false``\ 。设置 ``property`` 的\ *确切*\ 方式取决于该方法的实现。
 
-Combined with :ref:`_get()<class_Object_private_method__get>` and :ref:`_get_property_list()<class_Object_private_method__get_property_list>`, this method allows defining custom properties, which is particularly useful for editor plugins.
+结合 :ref:`_get()<class_Object_private_method__get>` 和 :ref:`_get_property_list()<class_Object_private_method__get_property_list>`\ ，该方法允许定义自定义属性，这对编辑器插件特别有用。
 
-\ **Note:** This method is not called when setting built-in properties of an object, including properties defined with :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
+\ **注意：**\ 设置对象的内置属性时不会调用该方法，包括使用 :ref:`@GDScript.@export<class_@GDScript_annotation_@export>` 定义的属性。
 
 
 .. tabs::
@@ -683,7 +683,7 @@ Combined with :ref:`_get()<class_Object_private_method__get>` and :ref:`_get_pro
 
     func _set(property, value):
         if property == "fake_property":
-            # Storing the value in the fake property.
+            # 在冒牌属性中存值。
             internal_data["fake_property"] = value
             return true
         return false
@@ -701,7 +701,7 @@ Combined with :ref:`_get()<class_Object_private_method__get>` and :ref:`_get_pro
     {
         if (property == "FakeProperty")
         {
-            // Storing the value in the fake property.
+            // 在冒牌属性中存值。
             _internalData["FakeProperty"] = value;
             return true;
         }
@@ -723,7 +723,7 @@ Combined with :ref:`_get()<class_Object_private_method__get>` and :ref:`_get_pro
 
 
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy. The call chain will stop on the first class that returns ``true``.
+\ **注意：** 和其他虚拟方法不同，每一个被脚本覆盖了的该方法都会被自动调用。这意味着基础实现不应该用 GDScript 中的 ``super`` 或者其他语言中的同等构造来调用。最底层子类的该方法会首先被调用，接着是沿类层次结构向上依次调用。调用链会在第一个返回了 ``true`` 的类停止。
 
 .. rst-class:: classref-item-separator
 
@@ -1763,13 +1763,13 @@ Returns the list of existing signals as an :ref:`Array<class_Array>` of dictiona
 
 :ref:`String<class_String>` **tr**\ (\ message\: :ref:`StringName<class_StringName>`, context\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Object_method_tr>`
 
-使用项目设置中配置的翻译目录，翻译一个 ``message``\ 。可以进一步指定 ``context`` 来帮助翻译。请注意，大多数 :ref:`Control<class_Control>` 节点会自动翻译其字符串，因此该方法最适用于格式化的字符串或自定义绘制的文本。
+翻译一条 ``message``\ ，该翻译使用项目设置中配置的翻译目录。可指定额外的 ``context`` 来辅助翻译。请注意，大多数 :ref:`Control<class_Control>` 节点会自动翻译其上的字符串，因此该方法主要用于格式化字符串或自定义绘制的文本。
 
-如果 :ref:`can_translate_messages()<class_Object_method_can_translate_messages>` 为 ``false``\ ，或者没有翻译可用，则该方法将返回 ``message`` 而不做任何更改。请参阅 :ref:`set_message_translation()<class_Object_method_set_message_translation>`\ 。
+若 :ref:`can_translate_messages()<class_Object_method_can_translate_messages>` 为 ``false``\ ，或者无可用的翻译，则该方法将原样返回 ``message``\ 。见 :ref:`set_message_translation()<class_Object_method_set_message_translation>`\ 。
 
-有关详细示例，请参阅\ :doc:`《国际化游戏》 <../tutorials/i18n/internationalizing_games>`\ 。
+详细示例请见\ :doc:`国际化游戏 <../tutorials/i18n/internationalizing_games>`\ 。
 
-\ **注意：**\ 如果没有 **Object** 实例，则无法使用该方法，因为它需要 :ref:`can_translate_messages()<class_Object_method_can_translate_messages>` 方法。要在静态上下文中翻译字符串，请使用 :ref:`TranslationServer.translate()<class_TranslationServer_method_translate>`\ 。
+\ **注意：**\ 该方法无法在没有 **Object** 实例的情况下使用，因为它依赖 :ref:`can_translate_messages()<class_Object_method_can_translate_messages>` 方法。静态上下文中的字符串翻译，请使用 :ref:`TranslationServer.translate()<class_TranslationServer_method_translate>`\ 。
 
 .. rst-class:: classref-item-separator
 

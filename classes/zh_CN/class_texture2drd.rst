@@ -14,7 +14,16 @@ Texture2DRD
 描述
 ----
 
-该纹理类允许你使用直接在 :ref:`RenderingDevice<class_RenderingDevice>` 上创建的 2D 纹理作为材质、网格等的纹理。
+This texture class allows you to use a 2D texture created directly on the :ref:`RenderingDevice<class_RenderingDevice>` as a texture for materials, meshes, etc.
+
+\ **Note:** **Texture2DRD** is intended for low-level usage with :ref:`RenderingDevice<class_RenderingDevice>`. For most use cases, use :ref:`Texture2D<class_Texture2D>` instead.
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- `Compute Texture demo <https://godotengine.org/asset-library/asset/2764>`__
 
 .. rst-class:: classref-reftable-group
 

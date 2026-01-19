@@ -695,7 +695,7 @@ enum **ExpandMode**: :ref:`🔗<enum_LineEdit_ExpandMode>`
 
 :ref:`ExpandMode<enum_LineEdit_ExpandMode>` **EXPAND_MODE_ORIGINAL_SIZE** = ``0``
 
-Use the original size for the right icon.
+Для правой иконки используйте исходный размер.
 
 .. _class_LineEdit_constant_EXPAND_MODE_FIT_TO_TEXT:
 
@@ -703,7 +703,7 @@ Use the original size for the right icon.
 
 :ref:`ExpandMode<enum_LineEdit_ExpandMode>` **EXPAND_MODE_FIT_TO_TEXT** = ``1``
 
-Scale the right icon's size to match the size of the text.
+Измените размер правой иконки так, чтобы он соответствовал размеру текста.
 
 .. _class_LineEdit_constant_EXPAND_MODE_FIT_TO_LINE_EDIT:
 
@@ -711,7 +711,7 @@ Scale the right icon's size to match the size of the text.
 
 :ref:`ExpandMode<enum_LineEdit_ExpandMode>` **EXPAND_MODE_FIT_TO_LINE_EDIT** = ``2``
 
-Scale the right icon to fit the LineEdit.
+Измените размер правой иконки, чтобы она соответствовала размеру окна LineEdit.
 
 .. rst-class:: classref-section-separator
 
@@ -733,7 +733,7 @@ Scale the right icon to fit the LineEdit.
 - |void| **set_horizontal_alignment**\ (\ value\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>`\ )
 - :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` **get_horizontal_alignment**\ (\ )
 
-The text's horizontal alignment.
+Горизонтальное выравнивание текста.
 
 .. rst-class:: classref-item-separator
 
@@ -1007,7 +1007,7 @@ The text's horizontal alignment.
 - |void| **set_icon_expand_mode**\ (\ value\: :ref:`ExpandMode<enum_LineEdit_ExpandMode>`\ )
 - :ref:`ExpandMode<enum_LineEdit_ExpandMode>` **get_icon_expand_mode**\ (\ )
 
-Define the scaling behavior of the :ref:`right_icon<class_LineEdit_property_right_icon>`.
+Определите поведение масштабирования для :ref:`right_icon<class_LineEdit_property_right_icon>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1041,7 +1041,7 @@ Define the scaling behavior of the :ref:`right_icon<class_LineEdit_property_righ
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+Код языка, используемый алгоритмами переноса строк и форматирования текста. Если оставить поле пустым, будет использоваться текущая локаль.
 
 .. rst-class:: classref-item-separator
 
@@ -1157,7 +1157,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 - |void| **set_right_icon_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_right_icon_scale**\ (\ )
 
-Scale ratio of the icon when :ref:`icon_expand_mode<class_LineEdit_property_icon_expand_mode>` is set to :ref:`EXPAND_MODE_FIT_TO_LINE_EDIT<class_LineEdit_constant_EXPAND_MODE_FIT_TO_LINE_EDIT>`.
+Коэффициент масштабирования значка, когда для параметра :ref:`icon_expand_mode<class_LineEdit_property_icon_expand_mode>` установлено значение :ref:`EXPAND_MODE_FIT_TO_LINE_EDIT<class_LineEdit_constant_EXPAND_MODE_FIT_TO_LINE_EDIT>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1452,9 +1452,9 @@ Scale ratio of the icon when :ref:`icon_expand_mode<class_LineEdit_property_icon
 
 |void| **edit**\ (\ hide_focus\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_LineEdit_method_edit>`
 
-Allows entering edit mode whether the **LineEdit** is focused or not. If ``hide_focus`` is ``true``, the focused state will not be shown (see :ref:`Control.grab_focus()<class_Control_method_grab_focus>`).
+Позволяет переходить в режим редактирования независимо от того, находится ли элемент **LineEdit** в фокусе или нет. Если ``hide_focus`` равно ``true``, состояние фокуса не будет отображаться (см. :ref:`Control.grab_focus()<class_Control_method_grab_focus>`).
 
-See also :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_on_text_submit>`.
+См. также :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_on_text_submit>`.
 
 .. rst-class:: classref-item-separator
 

@@ -128,7 +128,7 @@ Descriptions des méthodes
 
 |void| **_breakpoint_set_in_tree**\ (\ script\: :ref:`Script<class_Script>`, line\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_EditorDebuggerPlugin_private_method__breakpoint_set_in_tree>`
 
-Override this method to be notified when a breakpoint is set in the editor.
+Surcharger cette méthode pour être notifié quand un point d'arrêt est défini dans l'éditeur.
 
 .. rst-class:: classref-item-separator
 
@@ -140,7 +140,7 @@ Override this method to be notified when a breakpoint is set in the editor.
 
 |void| **_breakpoints_cleared_in_tree**\ (\ ) |virtual| :ref:`🔗<class_EditorDebuggerPlugin_private_method__breakpoints_cleared_in_tree>`
 
-Override this method to be notified when all breakpoints are cleared in the editor.
+Surcharger cette méthode pour être notifié lorsque tous les points d'arrêt sont supprimés dans l'éditeur.
 
 .. rst-class:: classref-item-separator
 
@@ -164,7 +164,7 @@ Override this method to process incoming messages. The ``session_id`` is the ID 
 
 |void| **_goto_script_line**\ (\ script\: :ref:`Script<class_Script>`, line\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_EditorDebuggerPlugin_private_method__goto_script_line>`
 
-Override this method to be notified when a breakpoint line has been clicked in the debugger breakpoint panel.
+Surcharger cette méthode pour être notifié quand un point d'arrêt a été cliqué dans le panneau de point d'arrêt du débogueur.
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ Override this method to enable receiving messages from the debugger. If ``captur
 
 |void| **_setup_session**\ (\ session_id\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_EditorDebuggerPlugin_private_method__setup_session>`
 
-Override this method to be notified whenever a new :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` is created. Note that the session may be inactive during this stage.
+Surcharger cette méthode pour être notifié chaque fois qu'un nouveau :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` est créé. Notez que la session peut être inactive à ce stade.
 
 .. rst-class:: classref-item-separator
 

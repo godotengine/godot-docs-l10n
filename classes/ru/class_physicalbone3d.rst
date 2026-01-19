@@ -26,7 +26,7 @@ PhysicalBone3D
 Обучающие материалы
 --------------------------------------
 
-- :doc:`Ragdoll System <../tutorials/physics/ragdoll_system>`
+- :doc:`Система «тряпичная кукла» <../tutorials/physics/ragdoll_system>`
 
 .. rst-class:: classref-reftable-group
 

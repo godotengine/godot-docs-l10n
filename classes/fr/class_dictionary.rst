@@ -627,12 +627,12 @@ En GDScript, cela équivaut à l'opérateur ``in``\  :
 
 :ref:`bool<class_bool>` **has_all**\ (\ keys\: :ref:`Array<class_Array>`\ ) |const| :ref:`🔗<class_Dictionary_method_has_all>`
 
-Returns ``true`` if the dictionary contains all keys in the given ``keys`` array.
+Renvoie ``true`` si le dictionnaire contient toutes les clés du tableau ``keys`` donné.
 
 ::
 
-    var data = { "width": 10, "height": 20 }
-    data.has_all(["height", "width"]) # Returns true
+    var donnees = {"largeur" : 10, "hauteur" : 20}
+    donnees.has_all(["hauteur", "largeur"]) # Renvoie true
 
 .. rst-class:: classref-item-separator
 
@@ -889,7 +889,7 @@ Renvoie ``true`` si les deux dictionnaires contiennent les mêmes clés et valeu
 
 :ref:`bool<class_bool>` **set**\ (\ key\: :ref:`Variant<class_Variant>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Dictionary_method_set>`
 
-Sets the value of the element at the given ``key`` to the given ``value``. Returns ``true`` if the value is set successfully. Fails and returns ``false`` if the dictionary is read-only, or if ``key`` and ``value`` don't match the dictionary's types. This is the same as using the ``[]`` operator (``dict[key] = value``).
+Définit la valeur de l'élément à la clé ``key`` donnée à la valeur ``value`` donnée. Renvoie ``true`` si la valeur a été définie avec succès. Échoue et renvoie ``false`` si le dictionnaire est en lecture-seule, ou si ``key`` et ``value`` ne correspondent pas aux types du dictionnaire. Ceci est identique à l'utilisation de l'opérateur ``[]`` (``dict[key] = value``).
 
 .. rst-class:: classref-item-separator
 

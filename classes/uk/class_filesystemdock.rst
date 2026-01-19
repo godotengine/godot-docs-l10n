@@ -157,7 +157,7 @@ FileSystemDock
 
 **selection_changed**\ (\ ) :ref:`🔗<class_FileSystemDock_signal_selection_changed>`
 
-Emitted when the selection changes. Use :ref:`EditorInterface.get_selected_paths()<class_EditorInterface_method_get_selected_paths>` in the connected method to get the selected paths.
+Викликається, коли змінюється вибір. Використовуйте :ref:`EditorInterface.get_selected_paths()<class_EditorInterface_method_get_selected_paths>` у підключеному методі, щоб отримати вибрані шляхи.
 
 .. rst-class:: classref-section-separator
 

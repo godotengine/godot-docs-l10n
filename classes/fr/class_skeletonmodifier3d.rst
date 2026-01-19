@@ -407,11 +407,13 @@ Redéfinissez cette méthode virtuelle pour implémenter un modificateur de sque
 
 |void| **_process_modification_with_delta**\ (\ delta\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_SkeletonModifier3D_private_method__process_modification_with_delta>`
 
-Redéfinissez cette méthode virtuelle pour implémenter un modificateur de squelette personnalisé. Vous devriez faire des choses comme obtenir la pose actuelle du :ref:`Skeleton3D<class_Skeleton3D>` et appliquer la pose ici.
+Override this virtual method to implement a custom skeleton modifier. You should do things like get the :ref:`Skeleton3D<class_Skeleton3D>`'s current pose and apply the pose here.
 
-\ :ref:`_process_modification_with_delta()<class_SkeletonModifier3D_private_method__process_modification_with_delta>` ne doit pas appliquer :ref:`influence<class_SkeletonModifier3D_property_influence>` aux poses des os car le :ref:`Skeleton3D<class_Skeleton3D>` applique automatiquement l'influence à toutes les poses des os définies par le modificateur.
+\ :ref:`_process_modification_with_delta()<class_SkeletonModifier3D_private_method__process_modification_with_delta>` must not apply :ref:`influence<class_SkeletonModifier3D_property_influence>` to bone poses because the :ref:`Skeleton3D<class_Skeleton3D>` automatically applies influence to all bone poses set by the modifier.
 
-\ ``delta`` est passé depuis le :ref:`Skeleton3D<class_Skeleton3D>` parent. Voir aussi :ref:`Skeleton3D.advance()<class_Skeleton3D_method_advance>`.
+\ ``delta`` is passed from parent :ref:`Skeleton3D<class_Skeleton3D>`. See also :ref:`Skeleton3D.advance()<class_Skeleton3D_method_advance>`.
+
+\ **Note:** This method may be called outside :ref:`Node._process()<class_Node_private_method__process>` and :ref:`Node._physics_process()<class_Node_private_method__physics_process>` with ``delta`` is ``0.0``, since the modification should be processed immediately after initialization of the :ref:`Skeleton3D<class_Skeleton3D>`.
 
 .. rst-class:: classref-item-separator
 

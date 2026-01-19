@@ -7,7 +7,7 @@ ResourceImporterCSVTranslation
 
 **继承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Imports comma-separated values as :ref:`Translation<class_Translation>`\ s.
+导入 CSV 作为 :ref:`Translation<class_Translation>`\ 。
 
 .. rst-class:: classref-introduction-group
 

@@ -201,6 +201,8 @@ ItemList
    +-----------------------------------+--------------------------------------------------------------------------------------------+--------------------------------+
    | :ref:`Color<class_Color>`         | :ref:`guide_color<class_ItemList_theme_color_guide_color>`                                 | ``Color(0.7, 0.7, 0.7, 0.25)`` |
    +-----------------------------------+--------------------------------------------------------------------------------------------+--------------------------------+
+   | :ref:`Color<class_Color>`         | :ref:`scroll_hint_color<class_ItemList_theme_color_scroll_hint_color>`                     | ``Color(0, 0, 0, 1)``          |
+   +-----------------------------------+--------------------------------------------------------------------------------------------+--------------------------------+
    | :ref:`int<class_int>`             | :ref:`h_separation<class_ItemList_theme_constant_h_separation>`                            | ``4``                          |
    +-----------------------------------+--------------------------------------------------------------------------------------------+--------------------------------+
    | :ref:`int<class_int>`             | :ref:`icon_margin<class_ItemList_theme_constant_icon_margin>`                              | ``4``                          |
@@ -1416,6 +1418,18 @@ Sets the language code of the text for the item at the given index to ``language
 :ref:`Color<class_Color>` **guide_color** = ``Color(0.7, 0.7, 0.7, 0.25)`` :ref:`🔗<class_ItemList_theme_color_guide_color>`
 
 参考线的颜色 :ref:`Color<class_Color>`\ 。参考线是在每行项目之间画的一条线。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ItemList_theme_color_scroll_hint_color:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Color<class_Color>` **scroll_hint_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ItemList_theme_color_scroll_hint_color>`
+
+:ref:`Color<class_Color>` used to modulate the :ref:`scroll_hint<class_ItemList_theme_icon_scroll_hint>` texture.
 
 .. rst-class:: classref-item-separator
 

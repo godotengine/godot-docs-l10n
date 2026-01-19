@@ -251,9 +251,9 @@ enum **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`ConnectFlags<enum_Object_ConnectFlags>` **CONNECT_PERSIST** = ``2``
 
-Persisting connections are stored when the object is serialized (such as when using :ref:`PackedScene.pack()<class_PackedScene_method_pack>`). In the editor, connections created through the Signals dock are always persisting.
+Сохраняющиеся соединения сигналов сохраняются при сериализации объекта (например, при использовании :ref:`PackedScene.pack()<class_PackedScene_method_pack>`). В редакторе соединения, созданные через панель сигналов, всегда сохраняются.
 
-\ **Note:** Connections to lambda functions (that is, when the function code is embedded in the :ref:`connect()<class_Object_method_connect>` call) cannot be made persistent.
+\ **Примечание:** Соединения с лямбда-функциями (то есть, когда код функции встроен в вызов :ref:`connect()<class_Object_method_connect>`) не могут быть сделаны постоянными.
 
 .. _class_Object_constant_CONNECT_ONE_SHOT:
 
@@ -302,9 +302,9 @@ Persisting connections are stored when the object is serialized (such as when us
 
 **NOTIFICATION_PREDELETE** = ``1`` :ref:`🔗<class_Object_constant_NOTIFICATION_PREDELETE>`
 
-Notification received when the object is about to be deleted. Can be used like destructors in object-oriented programming languages.
+Уведомление, полученное, когда объект собирается быть удален. Может использоваться как деструкторы в объектно-ориентированных языках программирования.
 
-This notification is sent in reversed order.
+Это уведомление отправляется в обратном порядке.
 
 .. _class_Object_constant_NOTIFICATION_EXTENSION_RELOADED:
 
@@ -329,11 +329,11 @@ This notification is sent in reversed order.
 
 :ref:`Variant<class_Variant>` **_get**\ (\ property\: :ref:`StringName<class_StringName>`\ ) |virtual| :ref:`🔗<class_Object_private_method__get>`
 
-Override this method to customize the behavior of :ref:`get()<class_Object_method_get>`. Should return the given ``property``'s value, or ``null`` if the ``property`` should be handled normally.
+Переопределите этот метод, чтобы настроить поведение метода :ref:`get()<class_Object_method_get>`. Он должен возвращать значение заданного свойства ``property`` или ``null``, если свойство ``property`` должно обрабатываться обычным образом.
 
-Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_property_list()<class_Object_private_method__get_property_list>`, this method allows defining custom properties, which is particularly useful for editor plugins.
+В сочетании с методами :ref:`_set()<class_Object_private_method__set>` и :ref:`_get_property_list()<class_Object_private_method__get_property_list>` этот метод позволяет определять пользовательские свойства, что особенно полезно для плагинов редактора.
 
-\ **Note:** This method is not called when getting built-in properties of an object, including properties defined with :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
+\ **Примечание:** Этот метод не вызывается при получении встроенных свойств объекта, включая свойства, определенные с помощью аннотации :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
 
 
 .. tabs::
@@ -376,7 +376,7 @@ Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_pro
 
 
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy. The call chain will stop on the first class that returns a non-``null`` value.
+\ **Примечание:** В отличие от других виртуальных методов, этот метод вызывается автоматически для каждого скрипта, который его переопределяет. Это означает, что базовую реализацию не следует вызывать через ``super`` в GDScript или его эквиваленты в других языках. Первым будет вызван самый нижний подкласс, а последующие вызовы будут происходить по иерархии классов. Цепочка вызовов остановится на первом классе, который вернет значение, отличное от ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -388,13 +388,15 @@ Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_pro
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_get_property_list**\ (\ ) |virtual| :ref:`🔗<class_Object_private_method__get_property_list>`
 
-Override this method to provide a custom list of additional properties to handle by the engine.
+Переопределите этот метод, чтобы предоставить пользовательский список дополнительных свойств для обработки движком.
 
-Should return a property list, as an :ref:`Array<class_Array>` of dictionaries. The result is added to the array of :ref:`get_property_list()<class_Object_method_get_property_list>`, and should be formatted in the same way. Each :ref:`Dictionary<class_Dictionary>` must at least contain the ``name`` and ``type`` entries.
+Должен возвращать список свойств в виде массива :ref:`Array<class_Array>` словарей. Результат добавляется в массив :ref:`get_property_list()<class_Object_method_get_property_list>` и должен быть отформатирован аналогичным образом. Каждый :ref:`Dictionary<class_Dictionary>` должен содержать как минимум записи ``name`` и ``type``.
 
-You can use :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` and :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` to customize the default values of the properties added by this method.
+Вы можете использовать методы :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` и :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` для настройки значений по умолчанию для свойств, добавляемых этим методом.
 
-The example below displays a list of numbers shown as words going from ``ZERO`` to ``FIVE``, with ``number_count`` controlling the size of the list:
+
+
+В приведенном ниже примере отображается список чисел, представленных словами, от ``ZERO`` до ``FIVE``, при этом  ``number_count`` управляет размером списка:
 
 
 .. tabs::
@@ -502,11 +504,11 @@ The example below displays a list of numbers shown as words going from ``ZERO`` 
 
 
 
-\ **Note:** This method is intended for advanced purposes. For most common use cases, the scripting languages offer easier ways to handle properties. See :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`, :ref:`@GDScript.@export_enum<class_@GDScript_annotation_@export_enum>`, :ref:`@GDScript.@export_group<class_@GDScript_annotation_@export_group>`, etc. If you want to customize exported properties, use :ref:`_validate_property()<class_Object_private_method__validate_property>`.
+\ **Примечание:** Этот метод предназначен для сложных задач. В большинстве распространенных случаев языки сценариев предлагают более простые способы обработки свойств. См. :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`, :ref:`@GDScript.@export_enum<class_@GDScript_annotation_@export_enum>`, :ref:`@GDScript.@export_group<class_@GDScript_annotation_@export_group>` и т. д. Если вы хотите настроить экспортируемые свойства, используйте :ref:`_validate_property()<class_Object_private_method__validate_property>`.
 
-\ **Note:** If the object's script is not :ref:`@GDScript.@tool<class_@GDScript_annotation_@tool>`, this method will not be called in the editor.
+\ **Примечание:** Если скрипт объекта не является :ref:`@GDScript.@tool<class_@GDScript_annotation_@tool>`, этот метод не будет вызываться в редакторе.
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy.
+\ **Примечание:** В отличие от других виртуальных методов, этот метод вызывается автоматически для каждого скрипта, который его переопределяет. Это означает, что базовую реализацию не следует вызывать через ``super`` в GDScript или его эквиваленты в других языках. Сначала будет вызван самый нижний подкласс, а последующие вызовы будут происходить по иерархии классов.
 
 .. rst-class:: classref-item-separator
 
@@ -599,7 +601,7 @@ The example below displays a list of numbers shown as words going from ``ZERO`` 
 
 |void| **_notification**\ (\ what\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_Object_private_method__notification>`
 
-Called when the object receives a notification, which can be identified in ``what`` by comparing it with a constant. See also :ref:`notification()<class_Object_method_notification>`.
+Вызывается, когда объект получает уведомление, которое можно определить в параметре ``what``, сравнив его с константой. См. также :ref:`notification()<class_Object_method_notification>`.
 
 
 .. tabs::
@@ -608,7 +610,7 @@ Called when the object receives a notification, which can be identified in ``wha
 
     func _notification(what):
         if what == NOTIFICATION_PREDELETE:
-            print("Goodbye!")
+            print("До свидания!")
 
  .. code-tab:: csharp
 
@@ -616,15 +618,15 @@ Called when the object receives a notification, which can be identified in ``wha
     {
         if (what == NotificationPredelete)
         {
-            GD.Print("Goodbye!");
+            GD.Print("До свидания!");
         }
     }
 
 
 
-\ **Note:** The base **Object** defines a few notifications (:ref:`NOTIFICATION_POSTINITIALIZE<class_Object_constant_NOTIFICATION_POSTINITIALIZE>` and :ref:`NOTIFICATION_PREDELETE<class_Object_constant_NOTIFICATION_PREDELETE>`). Inheriting classes such as :ref:`Node<class_Node>` define a lot more notifications, which are also received by this method.
+\ **Примечание:** Базовый класс **Object** определяет несколько уведомлений (:ref:`NOTIFICATION_POSTINITIALIZE<class_Object_constant_NOTIFICATION_POSTINITIALIZE>` и :ref:`NOTIFICATION_PREDELETE<class_Object_constant_NOTIFICATION_PREDELETE>`). Наследующие классы, такие как :ref:`Node<class_Node>`, определяют гораздо больше уведомлений, которые также принимаются этим методом.
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. Call order depends on the ``reversed`` argument of :ref:`notification()<class_Object_method_notification>` and varies between different notifications. Most notifications are sent in the forward order (i.e. Object class first, most derived class last).
+\ **Примечание:** В отличие от других виртуальных методов, этот метод вызывается автоматически для каждого скрипта, который его переопределяет. Это означает, что базовую реализацию не следует вызывать через ``super`` в GDScript или его эквиваленты в других языках. Порядок вызова зависит от аргумента ``reversed`` метода :ref:`notification()<class_Object_method_notification>` и варьируется для разных уведомлений. Большинство уведомлений отправляются в прямом порядке (т.е. сначала класс Object, затем наиболее производный класс).
 
 .. rst-class:: classref-item-separator
 
@@ -636,11 +638,11 @@ Called when the object receives a notification, which can be identified in ``wha
 
 :ref:`bool<class_bool>` **_property_can_revert**\ (\ property\: :ref:`StringName<class_StringName>`\ ) |virtual| :ref:`🔗<class_Object_private_method__property_can_revert>`
 
-Override this method to customize the given ``property``'s revert behavior. Should return ``true`` if the ``property`` has a custom default value and is revertible in the Inspector dock. Use :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` to specify the ``property``'s default value.
+Переопределите этот метод, чтобы настроить поведение отмены для заданного свойства ``property``. Должен возвращать ``true``, если свойство ``property`` имеет пользовательское значение по умолчанию и может быть отменено в панели инспектора. Используйте :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>`, чтобы указать значение по умолчанию для свойства ``property``.
 
-\ **Note:** This method must return consistently, regardless of the current value of the ``property``.
+\ **Примечание:** Этот метод должен возвращать согласованное значение независимо от текущего значения свойства ``property``.
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy. The call chain will stop on the first class that returns ``true``.
+\ **Примечание:** В отличие от других виртуальных методов, этот метод вызывается автоматически для каждого скрипта, который его переопределяет. Это означает, что базовая реализация не должна вызываться через ``super`` в GDScript или его эквивалентах в других языках. Сначала будет вызван самый нижний подкласс, а последующие вызовы будут происходить по иерархии классов. Цепочка вызовов остановится на первом классе, который вернет ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -652,11 +654,11 @@ Override this method to customize the given ``property``'s revert behavior. Shou
 
 :ref:`Variant<class_Variant>` **_property_get_revert**\ (\ property\: :ref:`StringName<class_StringName>`\ ) |virtual| :ref:`🔗<class_Object_private_method__property_get_revert>`
 
-Override this method to customize the given ``property``'s revert behavior. Should return the default value for the ``property``. If the default value differs from the ``property``'s current value, a revert icon is displayed in the Inspector dock.
+Переопределите этот метод, чтобы настроить поведение отмены для заданного свойства ``property``. Должен возвращать значение по умолчанию для свойства ``property``. Если значение по умолчанию отличается от текущего значения свойства ``property``, в панели инспектора отображается значок отмены.
 
-\ **Note:** :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` must also be overridden for this method to be called.
+\ **Примечание:** Для вызова этого метода также необходимо переопределить метод :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>`.
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy. The call chain will stop on the first class that returns a non-``null`` value.
+\ **Примечание:** В отличие от других виртуальных методов, этот метод вызывается автоматически для каждого скрипта, который его переопределяет. Это означает, что базовую реализацию не следует вызывать через ``super`` в GDScript или его эквиваленты в других языках. Сначала будет вызван самый нижний подкласс, а последующие вызовы будут происходить по иерархии классов. Цепочка вызовов остановится на первом классе, который вернет значение, отличное от ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -989,15 +991,15 @@ See also :ref:`Callable.call_deferred()<class_Callable_method_call_deferred>`.
 
 :ref:`Error<enum_@GlobalScope_Error>` **connect**\ (\ signal\: :ref:`StringName<class_StringName>`, callable\: :ref:`Callable<class_Callable>`, flags\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_Object_method_connect>`
 
-Connects a ``signal`` by name to a ``callable``. Optional ``flags`` can be also added to configure the connection's behavior (see :ref:`ConnectFlags<enum_Object_ConnectFlags>` constants).
+Соединяет ``signal`` по имени с ``callable``. Для настройки поведения соединения можно также добавить необязательные ``flags`` (см. константы :ref:`ConnectFlags<enum_Object_ConnectFlags>`).
 
-A signal can only be connected once to the same :ref:`Callable<class_Callable>`. If the signal is already connected, this method returns :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` and generates an error, unless the signal is connected with :ref:`CONNECT_REFERENCE_COUNTED<class_Object_constant_CONNECT_REFERENCE_COUNTED>`. To prevent this, use :ref:`is_connected()<class_Object_method_is_connected>` first to check for existing connections.
+К одному и тому же :ref:`Callable<class_Callable>` сигнал может быть подключен только один раз. Если сигнал уже подключен, этот метод возвращает :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` и генерирует ошибку, если только сигнал не подключен с :ref:`CONNECT_REFERENCE_COUNTED<class_Object_constant_CONNECT_REFERENCE_COUNTED>`. Чтобы предотвратить это, сначала используйте :ref:`is_connected()<class_Object_method_is_connected>` для проверки существующих соединений.
 
-\ **Note:** If the ``callable``'s object is freed, the connection will be lost.
+\ **Примечание:** Если объект ``callable`` освобождается, соединение будет потеряно.
 
-\ **Note:** In GDScript, it is generally recommended to connect signals with :ref:`Signal.connect()<class_Signal_method_connect>` instead.
+\ **Примечание:** В GDScript обычно рекомендуется подключать сигналы с помощью :ref:`Signal.connect()<class_Signal_method_connect>`.
 
-\ **Note:** This method, and all other signal-related methods, are thread-safe.
+\ **Примечание:** Этот метод, как и все другие методы, связанные с сигналами, являются потокобезопасными.
 
 .. rst-class:: classref-item-separator
 
@@ -1302,9 +1304,9 @@ A signal can only be connected once to the same :ref:`Callable<class_Callable>`.
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_signal_list**\ (\ ) |const| :ref:`🔗<class_Object_method_get_signal_list>`
 
-Returns the list of existing signals as an :ref:`Array<class_Array>` of dictionaries.
+Возвращает список существующих сигналов в виде массива словарей.
 
-\ **Note:** Due to the implementation, each :ref:`Dictionary<class_Dictionary>` is formatted very similarly to the returned values of :ref:`get_method_list()<class_Object_method_get_method_list>`.
+\ **Примечание:** Из-за особенностей реализации каждый словарь имеет формат, очень похожий на возвращаемые значения метода :ref:`get_method_list()<class_Object_method_get_method_list>`.
 
 .. rst-class:: classref-item-separator
 

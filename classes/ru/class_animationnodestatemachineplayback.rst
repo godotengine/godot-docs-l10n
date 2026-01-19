@@ -174,7 +174,7 @@ AnimationNodeStateMachinePlayback
 
 :ref:`float<class_float>` **get_fading_from_length**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_get_fading_from_length>`
 
-Returns the playback state length of the node from :ref:`get_fading_from_node()<class_AnimationNodeStateMachinePlayback_method_get_fading_from_node>`. Returns ``0`` if no animation fade is occurring.
+Возвращает длительность состояния воспроизведения узла из :ref:`get_fading_from_node()<class_AnimationNodeStateMachinePlayback_method_get_fading_from_node>`. Возвращает ``0``, если затухание анимации не происходит.
 
 .. rst-class:: classref-item-separator
 
@@ -198,7 +198,7 @@ Returns the playback state length of the node from :ref:`get_fading_from_node()<
 
 :ref:`float<class_float>` **get_fading_from_play_position**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_get_fading_from_play_position>`
 
-Returns the playback position of the node from :ref:`get_fading_from_node()<class_AnimationNodeStateMachinePlayback_method_get_fading_from_node>`. Returns ``0`` if no animation fade is occurring.
+Возвращает позицию воспроизведения узла из :ref:`get_fading_from_node()<class_AnimationNodeStateMachinePlayback_method_get_fading_from_node>`. Возвращает ``0``, если анимация затухания не происходит.
 
 .. rst-class:: classref-item-separator
 
@@ -210,7 +210,7 @@ Returns the playback position of the node from :ref:`get_fading_from_node()<clas
 
 :ref:`float<class_float>` **get_fading_length**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_get_fading_length>`
 
-Returns the length of the current fade animation. Returns ``0`` if no animation fade is occurring.
+Возвращает длительность текущей анимации затухания. Возвращает ``0``, если анимация затухания не выполняется.
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +222,7 @@ Returns the length of the current fade animation. Returns ``0`` if no animation 
 
 :ref:`float<class_float>` **get_fading_position**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_get_fading_position>`
 
-Returns the playback position of the current fade animation. Returns ``0`` if no animation fade is occurring.
+Возвращает позицию воспроизведения текущей анимации затухания. Возвращает ``0``, если анимация затухания не выполняется.
 
 .. rst-class:: classref-item-separator
 

@@ -9,14 +9,14 @@ OpenXRStructureBase
 
 **Успадковано від:** :ref:`OpenXRSpatialContextPersistenceConfig<class_OpenXRSpatialContextPersistenceConfig>`
 
-Object for storing OpenXR structure data.
+Об'єкт для зберігання даних структури OpenXR.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Object for storing OpenXR structure data that is passed when calling into OpenXR APIs.
+Об'єкт для зберігання даних структури OpenXR, що передаються під час виклику API OpenXR.
 
 .. rst-class:: classref-reftable-group
 
@@ -64,7 +64,7 @@ Object for storing OpenXR structure data that is passed when calling into OpenXR
 - |void| **set_next**\ (\ value\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>`\ )
 - :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` **get_next**\ (\ )
 
-Setting another structure object here chains these structures together to extend the API functionality. Consult the OpenXR documentation for which structures can be used with a given API call.
+Встановлення тут іншого об'єкта структури об'єднує ці структури разом, щоб розширити функціональність API. Зверніться до документації OpenXR, щоб дізнатися, які структури можна використовувати з певним викликом API.
 
 .. rst-class:: classref-section-separator
 
@@ -95,7 +95,7 @@ Setting another structure object here chains these structures together to extend
 
 :ref:`int<class_int>` **get_structure_type**\ (\ ) :ref:`🔗<class_OpenXRStructureBase_method_get_structure_type>`
 
-Returns the structure type (OpenXR ``XrStructureType``) used for this structure.
+Повертає тип структури (OpenXR ``XrStructureType``), що використовується для цієї структури.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

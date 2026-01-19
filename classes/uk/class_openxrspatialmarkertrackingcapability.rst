@@ -9,14 +9,14 @@ OpenXRSpatialMarkerTrackingCapability
 
 **Успадковує:** :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>` **<** :ref:`Object<class_Object>`
 
-Implementation for handling spatial entity marker tracking logic.
+Реалізація для обробки логіки відстеження маркерів просторових сутностей.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-This class handles the OpenXR marker tracking spatial entity extension.
+Цей клас обробляє розширення просторової сутності відстеження маркерів OpenXR.
 
 .. rst-class:: classref-reftable-group
 
@@ -51,7 +51,7 @@ This class handles the OpenXR marker tracking spatial entity extension.
 
 :ref:`bool<class_bool>` **is_april_tag_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_is_april_tag_supported>`
 
-Returns ``true`` if April tag marker tracking is supported by the current device.
+Повертає значення ``true``, якщо поточний пристрій підтримує відстеження маркерів тегів за квітень.
 
 .. rst-class:: classref-item-separator
 
@@ -63,7 +63,7 @@ Returns ``true`` if April tag marker tracking is supported by the current device
 
 :ref:`bool<class_bool>` **is_aruco_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_is_aruco_supported>`
 
-Returns ``true`` if Aruco marker tracking is supported by the current device.
+Повертає ``true``, якщо поточний пристрій підтримує відстеження маркерів Aruco.
 
 .. rst-class:: classref-item-separator
 
@@ -75,7 +75,7 @@ Returns ``true`` if Aruco marker tracking is supported by the current device.
 
 :ref:`bool<class_bool>` **is_micro_qrcode_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_is_micro_qrcode_supported>`
 
-Returns ``true`` if micro QR code marker tracking is supported by the current device.
+Повертає ``true``, якщо поточний пристрій підтримує відстеження мікромаркерів QR-коду.
 
 .. rst-class:: classref-item-separator
 
@@ -87,7 +87,7 @@ Returns ``true`` if micro QR code marker tracking is supported by the current de
 
 :ref:`bool<class_bool>` **is_qrcode_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_is_qrcode_supported>`
 
-Returns ``true`` if QR code marker tracking is supported by the current device.
+Повертає ``true``, якщо поточний пристрій підтримує відстеження маркерів QR-коду.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

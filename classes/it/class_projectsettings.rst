@@ -1902,6 +1902,8 @@ Proprietà
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`xr/openxr/submit_depth_buffer<class_ProjectSettings_property_xr/openxr/submit_depth_buffer>`                                                                                                         | ``false``                                                                                        |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`xr/openxr/target_api_version<class_ProjectSettings_property_xr/openxr/target_api_version>`                                                                                                           | ``""``                                                                                           |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`xr/openxr/view_configuration<class_ProjectSettings_property_xr/openxr/view_configuration>`                                                                                                           | ``"1"``                                                                                          |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`xr/shaders/enabled<class_ProjectSettings_property_xr/shaders/enabled>`                                                                                                                               | ``false``                                                                                        |
@@ -5723,9 +5725,9 @@ Modalità di posizionamento dei glifi in mezzo ai pixel per il font predefinito 
 
 :ref:`float<class_float>` **gui/theme/default_theme_scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_gui/theme/default_theme_scale>`
 
-Il fattore di scala predefinito per i :ref:`Control<class_Control>`, quando non è sovrascritto da un :ref:`Theme<class_Theme>`.
+The default scale factor for :ref:`Control<class_Control>`\ s, when not overridden by a :ref:`Theme<class_Theme>`.
 
-\ **Nota:** Questa proprietà è letta solo all'avvio del progetto. Per modificare la scala predefinita in fase di esecuzione, imposta invece :ref:`ThemeDB.fallback_base_scale<class_ThemeDB_property_fallback_base_scale>`.
+\ **Note:** This property is only read when the project starts. To change the default theme scale at runtime, set :ref:`ThemeDB.fallback_base_scale<class_ThemeDB_property_fallback_base_scale>` instead. However, to adjust the scale of all 2D elements at runtime, it's preferable to use :ref:`Window.content_scale_factor<class_Window_property_content_scale_factor>` on the root :ref:`Window<class_Window>` node instead (as this also affects overridden :ref:`Theme<class_Theme>`\ s). See :doc:`Multiple resolutions <../tutorials/rendering/multiple_resolutions>` in the documentation for details.
 
 .. rst-class:: classref-item-separator
 
@@ -10905,11 +10907,17 @@ Controlla quanti tick fisici sono sincronizzati con il tempo reale. Per 0 o meno
 
 :ref:`int<class_int>` **physics/common/physics_ticks_per_second** = ``60`` :ref:`🔗<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`
 
-Numero di iterazioni fisse al secondo. Controlla la frequenza con cui vengono eseguiti i metodi di simulazione fisica e :ref:`Node._physics_process()<class_Node_private_method__physics_process>`. Vedi anche :ref:`application/run/max_fps<class_ProjectSettings_property_application/run/max_fps>`.
+The number of fixed iterations per second. This controls how often physics simulation and the :ref:`Node._physics_process()<class_Node_private_method__physics_process>` method are run.
 
-\ **Nota:** Questa proprietà è letta solo all'avvio del progetto. Per modificare gli FPS di fisica in fase di esecuzione, imposta invece :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`.
+CPU usage scales approximately with the physics tick rate. However, at very low tick rates (usually below 30), physics behavior can break down. Input can also become less responsive at low tick rates as there can be a gap between input being registered, and the response on the next physics tick. High tick rates give more accurate physics simulation, particularly for fast moving objects. For example, racing games may benefit from increasing the tick rate above the default 60.
 
-\ **Nota:** Possono essere simulati al massimo solo il numero :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` di tick di fisica per frame renderizzato. Se è necessario simulare più tick di fisica per ogni frame renderizzato per tenere il passo con il rendering, il progetto sembrerà rallentare (anche se ``delta`` è utilizzato in modo coerente nei calcoli fisici). Pertanto, si consiglia di aumentare anche :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` se si aumenta :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` drasticamente al di sopra del suo valore predefinito.
+See also :ref:`application/run/max_fps<class_ProjectSettings_property_application/run/max_fps>`.
+
+\ **Note:** This property is only read when the project starts. To change the physics FPS at runtime, set :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` instead.
+
+\ **Note:** Only :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` physics ticks may be simulated per rendered frame at most. If more physics ticks have to be simulated per rendered frame to keep up with rendering, the project will appear to slow down (even if ``delta`` is used consistently in physics calculations). Therefore, it is recommended to also increase :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` if increasing :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` significantly above its default value.
+
+\ **Note:** Consider enabling :doc:`physics interpolation <../tutorials/physics/interpolation/index>` if you change :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` to a value that is not a multiple of ``60``. Using physics interpolation will avoid jittering when the monitor refresh rate and physics update rate don't exactly match.
 
 .. rst-class:: classref-item-separator
 
@@ -12525,7 +12533,7 @@ Utilizza 16 bit per la mappa di profondità delle ombre omni/spot. Abilitando qu
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/positional_shadow/atlas_quadrant_0_subdiv** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_quadrant_0_subdiv>`
 
-The subdivision amount of the first quadrant on the shadow atlas. See the `documentation <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__ for more information.
+La quantità di suddivisione del primo quadrante sull'atlante delle ombre. Per ulteriori informazioni, consultare la `documentazione <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -12537,7 +12545,7 @@ The subdivision amount of the first quadrant on the shadow atlas. See the `docum
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/positional_shadow/atlas_quadrant_1_subdiv** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_quadrant_1_subdiv>`
 
-The subdivision amount of the second quadrant on the shadow atlas. See the `documentation <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__ for more information.
+La quantità di suddivisione del secondo quadrante sull'atlante delle ombre. Per ulteriori informazioni, consultare la `documentazione <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -14231,6 +14239,18 @@ Se ``true``, Godot visualizzerà un modale di avviso quando l'inizializzazione d
 :ref:`bool<class_bool>` **xr/openxr/submit_depth_buffer** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/submit_depth_buffer>`
 
 Se ``true``, OpenXR gestirà il buffer di profondità e utilizzerà il buffer di profondità per la riproiezione avanzata, a condizione che sia supportato dal runtime XR. Nota che alcune funzionalità di rendering in Godot non possono essere utilizzate con questa funzionalità.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ProjectSettings_property_xr/openxr/target_api_version:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **xr/openxr/target_api_version** = ``""`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/target_api_version>`
+
+Optionally sets a specific API version of OpenXR to initialize in ``major.minor.patch`` notation. Some XR runtimes gate old behavior behind version checks. This is non-standard OpenXR behavior.
 
 .. rst-class:: classref-item-separator
 

@@ -200,7 +200,7 @@ This node will be only referenced and not modified by this modifier.
 
 :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>` **get_reference_type**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneConstraint3D_method_get_reference_type>`
 
-Returns the reference target type of the setting at ``index``. See also :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
+返回索引为 ``index`` 的设置的参考骨骼类型。参见 :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +302,7 @@ This node will be only referenced and not modified by this modifier.
 
 |void| **set_reference_type**\ (\ index\: :ref:`int<class_int>`, type\: :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`\ ) :ref:`🔗<class_BoneConstraint3D_method_set_reference_type>`
 
-Sets the reference target type of the setting at ``index`` to ``type``. See also :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
+将索引为 ``index`` 的设置的参考目标类型设置为 ``type``\ 。另见 :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`\ 。
 
 .. rst-class:: classref-item-separator
 

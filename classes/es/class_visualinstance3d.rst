@@ -26,13 +26,13 @@ Propiedades
 .. table::
    :widths: auto
 
-   +---------------------------+-----------------------------------------------------------------------------------------+-------+
-   | :ref:`int<class_int>`     | :ref:`layers<class_VisualInstance3D_property_layers>`                                   | ``1`` |
-   +---------------------------+-----------------------------------------------------------------------------------------+-------+
-   | :ref:`float<class_float>` | :ref:`sorting_offset<class_VisualInstance3D_property_sorting_offset>`                   |       |
-   +---------------------------+-----------------------------------------------------------------------------------------+-------+
-   | :ref:`bool<class_bool>`   | :ref:`sorting_use_aabb_center<class_VisualInstance3D_property_sorting_use_aabb_center>` |       |
-   +---------------------------+-----------------------------------------------------------------------------------------+-------+
+   +---------------------------+-----------------------------------------------------------------------------------------+---------+
+   | :ref:`int<class_int>`     | :ref:`layers<class_VisualInstance3D_property_layers>`                                   | ``1``   |
+   +---------------------------+-----------------------------------------------------------------------------------------+---------+
+   | :ref:`float<class_float>` | :ref:`sorting_offset<class_VisualInstance3D_property_sorting_offset>`                   | ``0.0`` |
+   +---------------------------+-----------------------------------------------------------------------------------------+---------+
+   | :ref:`bool<class_bool>`   | :ref:`sorting_use_aabb_center<class_VisualInstance3D_property_sorting_use_aabb_center>` |         |
+   +---------------------------+-----------------------------------------------------------------------------------------+---------+
 
 .. rst-class:: classref-reftable-group
 
@@ -82,7 +82,7 @@ Las capas de renderizado en las que se dibuja este **VisualInstance3D**.
 
 Este objeto solo será visible para las :ref:`Camera3D<class_Camera3D>`\ s cuya máscara de eliminación incluya cualquiera de las capas de renderizado a las que esté establecido este **VisualInstance3D**.
 
-Para :ref:`Light3D<class_Light3D>`\ s, esto se puede utilizar para controlar qué **VisualInstance3D**\ s se ven afectados por una luz específica. Para :ref:`GPUParticles3D<class_GPUParticles3D>`, esto se puede utilizar para controlar qué partículas se ven afectadas por un atractor específico. Para :ref:`Decal<class_Decal>`\ s, esto se puede utilizar para controlar qué **VisualInstance3D**\ s se ven afectados por una calcomanía específica.
+Para :ref:`Light3D<class_Light3D>`\ s, esto se puede utilizar para controlar qué **VisualInstance3D**\ s se ven afectados por una luz específica. Para :ref:`GPUParticles3D<class_GPUParticles3D>`, esto se puede utilizar para controlar qué partículas se ven afectadas por un atractor específico. Para :ref:`Decal<class_Decal>`\ s, esto se puede utilizar para controlar qué **VisualInstance3D**\ s se ven afectados por un decal específico.
 
 Para ajustar :ref:`layers<class_VisualInstance3D_property_layers>` más fácilmente usando un script, utiliza :ref:`get_layer_mask_value()<class_VisualInstance3D_method_get_layer_mask_value>` y :ref:`set_layer_mask_value()<class_VisualInstance3D_method_set_layer_mask_value>`.
 
@@ -96,7 +96,7 @@ Para ajustar :ref:`layers<class_VisualInstance3D_property_layers>` más fácilme
 
 .. rst-class:: classref-property
 
-:ref:`float<class_float>` **sorting_offset** :ref:`🔗<class_VisualInstance3D_property_sorting_offset>`
+:ref:`float<class_float>` **sorting_offset** = ``0.0`` :ref:`🔗<class_VisualInstance3D_property_sorting_offset>`
 
 .. rst-class:: classref-property-setget
 

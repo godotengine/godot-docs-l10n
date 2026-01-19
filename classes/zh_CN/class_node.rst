@@ -16,29 +16,29 @@ Node
 描述
 ----
 
-节点是 Godot 的构建模块。它们可以被指定为另一个节点的子节点，从而形成树状排列。一个给定的节点可以包含任意数量的节点作为子节点，要求所有同级节点（即该节点的直接子节点）的名字唯一。
+节点是 Godot 的基本单元。它们可以成为另一个节点的子节点，从而形成树状排列。一个给定的节点可以包含任意数量的节点作为子节点，但要求所有同级节点（即该节点的直接子节点）的名称唯一。
 
-节点树被称为\ *场景*\ 。场景可以被保存到磁盘上，然后被实例化到其他场景中。这使得 Godot 项目的架构和数据模型具有非常高的灵活性。
+由节点构成的树被称为\ *场景*\ 。场景可以被保存到磁盘上，然后实例化到其他场景中。这为 Godot 项目的架构和数据模型提供了极大的灵活性。
 
-\ **场景树：**\ :ref:`SceneTree<class_SceneTree>` 包含活动的节点树。当一个节点被添加到场景树中时，它将收到 :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` 通知，并触发其 :ref:`_enter_tree()<class_Node_private_method__enter_tree>` 回调。子节点总是在其父节点\ *之后*\ 被添加，即父节点的 :ref:`_enter_tree()<class_Node_private_method__enter_tree>` 回调将在其子节点的之前被触发。
+\ **场景树：**\ :ref:`SceneTree<class_SceneTree>` 包含着当前活动的节点树。当一个节点被添加到场景树时，它将收到 :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` 通知，并触发其 :ref:`_enter_tree()<class_Node_private_method__enter_tree>` 回调。子节点总是在其父节点\ *之后*\ 被添加，亦即父节点的 :ref:`_enter_tree()<class_Node_private_method__enter_tree>` 回调将在其子节点之前被触发。
 
-一旦所有的节点被添加到场景树中，它们就会收到 :ref:`NOTIFICATION_READY<class_Node_constant_NOTIFICATION_READY>` 通知，其各自的 :ref:`_ready()<class_Node_private_method__ready>` 回调被触发。对于一组节点，\ :ref:`_ready()<class_Node_private_method__ready>` 回调是按相反的顺序调用的，从子节点开始，向上移动到父节点。
+当所有的节点都被添加到场景树后，它们会收到 :ref:`NOTIFICATION_READY<class_Node_constant_NOTIFICATION_READY>` 通知，并触发各自的 :ref:`_ready()<class_Node_private_method__ready>` 回调。对于成组的节点，\ :ref:`_ready()<class_Node_private_method__ready>` 回调的调用顺序是反向的：从子节点开始向上到父节点。
 
-这意味着，当把一个节点添加到场景树中时，将使用下面的顺序进行回调：父节点的 :ref:`_enter_tree()<class_Node_private_method__enter_tree>`\ 、子节点的 :ref:`_enter_tree()<class_Node_private_method__enter_tree>`\ 、子节点的 :ref:`_ready()<class_Node_private_method__ready>`\ ，最后是父节点的 :ref:`_ready()<class_Node_private_method__ready>`\ （对整个场景树进行递归）。
+这意味着，当向场景树中添加一个节点树时，其回调方法的触发顺序如下：父节点的 :ref:`_enter_tree()<class_Node_private_method__enter_tree>`\ 、子节点的 :ref:`_enter_tree()<class_Node_private_method__enter_tree>`\ 、子节点的 :ref:`_ready()<class_Node_private_method__ready>`\ ，最后是父节点的 :ref:`_ready()<class_Node_private_method__ready>`\ （递归适用于整个新增的节点树）。
 
-\ **处理：**\ 节点可以覆盖“处理”状态，以便它们在每一帧上都收到回调，要求它们进行处理（做一些事情）。普通处理（回调 :ref:`_process()<class_Node_private_method__process>`\ ，可以使用 :ref:`set_process()<class_Node_method_set_process>` 开关）会尽可能快地发生，并且取决于帧率，所以处理时间 *delta*\ （单位为秒）会作为参数传入。物理处理（回调 :ref:`_physics_process()<class_Node_private_method__physics_process>`\ ，可以使用 :ref:`set_physics_process()<class_Node_method_set_physics_process>` 开关）每秒发生固定次数（默认为 60），对物理引擎相关的代码很有用。
+\ **处理：**\ 节点可以覆盖“处理”状态，以便在每一帧上都收到回调要求它们进行处理（做一些事情）。普通处理（回调 :ref:`_process()<class_Node_private_method__process>`\ ，可以使用 :ref:`set_process()<class_Node_method_set_process>` 开关）会尽可能频繁地执行，并且取决于帧率。所以处理时间 *delta*\ （单位为秒）会作为参数传入。物理处理（回调 :ref:`_physics_process()<class_Node_private_method__physics_process>`\ ，可以使用 :ref:`set_physics_process()<class_Node_method_set_physics_process>` 开关）每秒执行固定的次数（默认为 60 次），适用于物理引擎相关的代码。
 
-节点也可以处理输入事件。存在 :ref:`_input()<class_Node_private_method__input>` 函数时，程序每收到一次输入都会去调用它。在许多情况下，这么做是大材小用了（除非是用于简单的项目），用 :ref:`_unhandled_input()<class_Node_private_method__unhandled_input>` 函数可能更合适；当输入事件没有被其他节点（通常是 GUI :ref:`Control<class_Control>` 节点）处理时，才会调用这个函数，可以确保节点只接收到它该收到的事件。
+节点还可以处理输入事件。如果 :ref:`_input()<class_Node_private_method__input>` 存在，程序每次收到输入时都会去调用它。但在许多情况下，这么做开销太大（除非是用于简单的项目），用 :ref:`_unhandled_input()<class_Node_private_method__unhandled_input>` 函数可能更合适；该函数仅在输入事件未被其他节点（通常是 GUI :ref:`Control<class_Control>` 节点）处理时才会被调用，从而确保节点只接收到它应该处理的事件。
 
-为了记录场景的层次结构（尤其是在将场景实例化到其他场景时）可以用 :ref:`owner<class_Node_property_owner>` 属性为节点设置一个“所有者”。它记录的是谁实例化了什么。这在编写编辑器和工具时非常有用。
+为了追踪场景的层次结构（尤其是在将场景实例化到其他场景中时），可以用 :ref:`owner<class_Node_property_owner>` 属性为节点设置一个“所有者”。这可以记录谁实例化了哪个节点。不过，这主要用于编写编辑器和工具。
 
-最后，当一个节点被 :ref:`Object.free()<class_Object_method_free>` 或 :ref:`queue_free()<class_Node_method_queue_free>` 释放时，它也将释放它的所有子节点。
+最后，当使用 :ref:`Object.free()<class_Object_method_free>` 或 :ref:`queue_free()<class_Node_method_queue_free>` 释放一个节点时，它也会释放其所有的子节点。
 
-\ **分组：**\ 节点可以被添加到很多的组中，以方便管理，你可以根据自己游戏的需要来创建类似“敌人”或“收集品”这样的组。见 :ref:`add_to_group()<class_Node_method_add_to_group>`\ 、\ :ref:`is_in_group()<class_Node_method_is_in_group>` 和 :ref:`remove_from_group()<class_Node_method_remove_from_group>`\ 。加入组后，你可以检索这些组中的所有节点，对它们进行迭代，甚至通过 :ref:`SceneTree<class_SceneTree>` 中的方法调用组内方法。
+\ **分组：**\ 节点可以被添加到任意数量的分组中，以方便管理。例如，你可以根据自己游戏的需要来创建类似“敌人”或“收集品”这样的分组。见 :ref:`add_to_group()<class_Node_method_add_to_group>`\ 、\ :ref:`is_in_group()<class_Node_method_is_in_group>` 和 :ref:`remove_from_group()<class_Node_method_remove_from_group>`\ 。之后，你可以获取分组内的所有节点，对它们进行迭代，甚至是通过 :ref:`SceneTree<class_SceneTree>` 中的方法对整个分组调用方法。
 
-\ **节点的网络编程：**\ 在连接到服务器（或制作服务器，见 :ref:`ENetMultiplayerPeer<class_ENetMultiplayerPeer>`\ ）之后，可以使用内置的 RPC（远程过程调用）系统在网络上进行通信。在调用 :ref:`rpc()<class_Node_method_rpc>` 时传入方法名，将在本地和所有已连接的对等体中调用对应的方法（对等体=客户端和接受连接的服务器）。为了识别哪个节点收到 RPC 调用，Godot 将使用它的 :ref:`NodePath<class_NodePath>`\ （请确保所有对等体上的节点名称相同）。另外，请参阅高级网络教程和相应的演示。
+\ **节点的网络编程：**\ 在连接服务器（或自行创建服务器，见 :ref:`ENetMultiplayerPeer<class_ENetMultiplayerPeer>`\ ）之后，可以使用内置的 RPC（远程过程调用）系统进行网络通信。在调用 :ref:`rpc()<class_Node_method_rpc>` 时传入方法名，就可以在本地和所有已连接的对等体上调用指定的方法（对等体=客户端和接受连接的服务器）。为了识别接收 RPC 调用的节点，Godot 将使用节点的 :ref:`NodePath<class_NodePath>`\ （因此请确保所有对等体上的节点名称相同）。另外，请参阅高级网络教程和相应的演示。
 
-\ **注意：**\ ``script`` 属性是 :ref:`Object<class_Object>` 类的一部分，不属于 **Node**\ 。这个属性暴露的方式和其他属性不同，但提供了 setter 和 getter（见 :ref:`Object.set_script()<class_Object_method_set_script>` 和 :ref:`Object.get_script()<class_Object_method_get_script>`\ ）。
+\ **注意：**\ ``script`` 属性属于 :ref:`Object<class_Object>` 类，而非 **Node**\ 。该属性的暴露方式和大多数属性不同，但它确实有自己的 setter 和 getter（见 :ref:`Object.set_script()<class_Object_method_set_script>` 和 :ref:`Object.get_script()<class_Object_method_get_script>`\ ）。
 
 .. rst-class:: classref-introduction-group
 
@@ -773,11 +773,11 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_EXIT_TREE** = ``11`` :ref:`🔗<class_Node_constant_NOTIFICATION_EXIT_TREE>`
 
-Notification received when the node is about to exit a :ref:`SceneTree<class_SceneTree>`. See :ref:`_exit_tree()<class_Node_private_method__exit_tree>`.
+当节点即将退出 :ref:`SceneTree<class_SceneTree>` 时收到的通知。请参阅 :ref:`_exit_tree()<class_Node_private_method__exit_tree>`\ 。
 
-This notification is received *after* the related :ref:`tree_exiting<class_Node_signal_tree_exiting>` signal.
+该通知会在相关的 :ref:`tree_exiting<class_Node_signal_tree_exiting>` 信号\ *之后*\ 收到。
 
-This notification is sent in reversed order.
+该通知会以反向顺序发送。
 
 .. _class_Node_constant_NOTIFICATION_MOVED_IN_PARENT:
 
@@ -1278,9 +1278,11 @@ Defines if any text should automatically change to its translated version depend
 - |void| **set_owner**\ (\ value\: :ref:`Node<class_Node>`\ )
 - :ref:`Node<class_Node>` **get_owner**\ (\ )
 
-该节点的所有者。所有者必须是该节点的祖先节点。将所有者节点打包到 :ref:`PackedScene<class_PackedScene>` 中时，它所拥有的节点也都会随之保存。另见 :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`\ 。
+The owner of this node. The owner must be an ancestor of this node. When packing the owner node in a :ref:`PackedScene<class_PackedScene>`, all the nodes it owns are also saved with it. See also :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`.
 
-\ **注意：**\ 在编辑器中，未被场景根节点拥有的节点通常不会显示在场景面板中，并且\ **不会**\ 被保存。为了防止这种情况，请记得在调用 :ref:`add_child()<class_Node_method_add_child>` 后设置所有者。
+\ **Note:** In the editor, nodes not owned by the scene root are usually not displayed in the Scene dock, and will **not** be saved. To prevent this, remember to set the owner after calling :ref:`add_child()<class_Node_method_add_child>`.
+
+\ **Note:** The owner needs to be the current scene root. See `Instancing scenes <../tutorials/plugins/running_code_in_the_editor.html#instancing-scenes>`__ in the documentation for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -1774,13 +1776,13 @@ If ``persistent`` is ``true``, the group will be stored when saved inside a :ref
 
 :ref:`String<class_String>` **atr**\ (\ message\: :ref:`String<class_String>`, context\: :ref:`StringName<class_StringName>` = ""\ ) |const| :ref:`🔗<class_Node_method_atr>`
 
-使用项目设置中配置的翻译目录，翻译一条 ``message``\ 。可以进一步指定 ``context`` 来帮助翻译。请注意，大多数 :ref:`Control<class_Control>` 节点会自动翻译其字符串，因此该方法最适用于格式化的字符串或自定义绘制的文本。
+翻译一条 ``message``\ ，该翻译使用项目设置中配置的翻译目录。可指定额外的 ``context`` 来辅助翻译。请注意，大多数 :ref:`Control<class_Control>` 节点会自动翻译其上的字符串，因此该方法主要用于格式化字符串或自定义绘制的文本。
 
-该方法的工作方式与 :ref:`Object.tr()<class_Object_method_tr>` 相同，此外还遵循 :ref:`auto_translate_mode<class_Node_property_auto_translate_mode>` 状态。
+该方法的工作方式与 :ref:`Object.tr()<class_Object_method_tr>` 相同，但额外遵循 :ref:`auto_translate_mode<class_Node_property_auto_translate_mode>` 状态。
 
-如果 :ref:`Object.can_translate_messages()<class_Object_method_can_translate_messages>` 为 ``false``\ ，或者没有翻译可用，则该方法将返回 ``message`` 而不做任何更改。请参阅 :ref:`Object.set_message_translation()<class_Object_method_set_message_translation>`\ 。
+若 :ref:`Object.can_translate_messages()<class_Object_method_can_translate_messages>` 为 ``false``\ ，或者无可用的翻译，则该方法将原样返回 ``message``\ 。见 :ref:`Object.set_message_translation()<class_Object_method_set_message_translation>`\ 。
 
-有关详细示例，请参阅\ :doc:`《国际化游戏》 <../tutorials/i18n/internationalizing_games>`\ 。
+详细示例请见\ :doc:`国际化游戏 <../tutorials/i18n/internationalizing_games>`\ 。
 
 .. rst-class:: classref-item-separator
 

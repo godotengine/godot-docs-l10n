@@ -9,14 +9,14 @@ OpenXRSpatialComponentMesh2DList
 
 **Успадковує:** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the queries mesh2d result data.
+Об'єкт для зберігання результатів запитів mesh2d.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Object for storing the queries 2D mesh result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Об'єкт для зберігання результатів двовимірної сітки запитів під час виклику :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -49,7 +49,7 @@ Object for storing the queries 2D mesh result data when calling :ref:`OpenXRSpat
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_indices**\ (\ snapshot\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMesh2DList_method_get_indices>`
 
-Returns the mesh indices for the entity at this ``index``.
+Повертає індекси сітки для об'єкта в цій точці ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -61,7 +61,7 @@ Returns the mesh indices for the entity at this ``index``.
 
 :ref:`Transform3D<class_Transform3D>` **get_transform**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMesh2DList_method_get_transform>`
 
-Returns the transform for positioning our mesh for the entity at this ``index``.
+Повертає перетворення для позиціонування нашої сітки для об'єкта в цій точці ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ Returns the transform for positioning our mesh for the entity at this ``index``.
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_vertices**\ (\ snapshot\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMesh2DList_method_get_vertices>`
 
-Returns the mesh vertices for the entity at this ``index``.
+Повертає вершини сітки для об'єкта в цій точці ``index``.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

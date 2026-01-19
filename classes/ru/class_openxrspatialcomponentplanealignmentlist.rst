@@ -9,14 +9,14 @@ OpenXRSpatialComponentPlaneAlignmentList
 
 **Наследует:** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the queries plane alignment result data.
+Объект для хранения данных о результатах выравнивания плоскости запроса.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-Object for storing the queries plane alignment result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Объект для хранения данных о результатах выравнивания плоскости запроса при вызове метода :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-reftable-group
 

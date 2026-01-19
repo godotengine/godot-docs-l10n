@@ -339,9 +339,9 @@ Node2D
 
 :ref:`float<class_float>` **get_angle_to**\ (\ point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Node2D_method_get_angle_to>`
 
-Returns the angle between the node and the ``point`` in radians. See also :ref:`look_at()<class_Node2D_method_look_at>`.
+Повертає кут між вузлом та ``point`` у радіанах. Див. також :ref:`look_at()<class_Node2D_method_look_at>`.
 
-\ `Illustration of the returned angle. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/node2d_get_angle_to.png>`__
+\ `Ілюстрація повернутого кута. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/node2d_get_angle_to.png>`__
 
 .. rst-class:: classref-item-separator
 
@@ -377,9 +377,9 @@ Returns the angle between the node and the ``point`` in radians. See also :ref:`
 
 |void| **look_at**\ (\ point\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Node2D_method_look_at>`
 
-Rotates the node so that its local +X axis points towards the ``point``, which is expected to use global coordinates. This method is a combination of both :ref:`rotate()<class_Node2D_method_rotate>` and :ref:`get_angle_to()<class_Node2D_method_get_angle_to>`.
+Повертає вузол так, щоб його локальна вісь +X була спрямована в бік ``метод rotate``, який, як очікується, використовуватиме глобальні координати. Цей метод є комбінацією методів :ref:`rotate()<class_Node2D_method_rotate>` та :ref:`get_angle_to()<class_Node2D_method_get_angle_to>`.
 
-\ ``point`` should not be the same as the node's position, otherwise the node always looks to the right.
+\ :ref:`point()<class_Node2D_method_point>` не повинен збігатися з позицією вузла, інакше вузол завжди дивиться праворуч.
 
 .. rst-class:: classref-item-separator
 
@@ -415,7 +415,7 @@ Rotates the node so that its local +X axis points towards the ``point``, which i
 
 |void| **rotate**\ (\ radians\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Node2D_method_rotate>`
 
-Applies a rotation to the node, in radians, starting from its current rotation. This is equivalent to ``rotation += radians``.
+Застосовує поворот до вузла в радіанах, починаючи з його поточного повороту. Це еквівалентно ``rotation += radians``.
 
 .. rst-class:: classref-item-separator
 
@@ -451,7 +451,7 @@ Applies a rotation to the node, in radians, starting from its current rotation. 
 
 |void| **translate**\ (\ offset\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Node2D_method_translate>`
 
-Translates the node by the given ``offset`` in local coordinates. This is equivalent to ``position += offset``.
+Зміщує вузол на задане значення ``offset`` у локальних координатах. Це еквівалентно ``position += offset``.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -3711,11 +3711,11 @@ enum **ViewportDebugDraw**: :ref:`🔗<enum_RenderingServer_ViewportDebugDraw>`
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_SDFGI_PROBES** = ``17``
 
-Draws SDFGI probe data. This is the data structure that is used to give indirect lighting dynamic objects moving within the scene.
+Малює дані зонда SDFGI. Це структура даних, яка використовується для забезпечення динамічного освітлення об'єктів, що рухаються в сцені, з непрямим освітленням.
 
-When in the editor, left-clicking a probe will display additional bright dots that show its occlusion information. A white dot means the light is not occluded at all at the dot's position, while a red dot means the light is fully occluded. Intermediate values are possible.
+У редакторі клацання лівою кнопкою миші на зонді відобразить додаткові яскраві точки, які показують інформацію про його оклюзію. Біла точка означає, що світло взагалі не перекривається в положенні точки, тоді як червона точка означає, що світло повністю перекривається. Можливі проміжні значення.
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **Примітка:** Підтримується лише при використанні методу рендерингу Forward+.
 
 .. _class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_GI_BUFFER:
 
@@ -4315,7 +4315,7 @@ enum **EnvironmentToneMapper**: :ref:`🔗<enum_RenderingServer_EnvironmentToneM
 
 :ref:`EnvironmentToneMapper<enum_RenderingServer_EnvironmentToneMapper>` **ENV_TONE_MAPPER_AGX** = ``4``
 
-Uses an adjustable film-like tonemapping curve and desaturates bright values for a more realistic appearance. Better than other tonemappers at maintaining the hue of colors as they become brighter. The slowest tonemapping option.
+Використовує регульовану криву тонального відображення, подібну до плівкової, та знебарвлює яскраві значення для більш реалістичного вигляду. Краще, ніж інші тональні відображення, зберігає відтінок кольорів, коли вони стають яскравішими. Найповільніший варіант тонального відображення.
 
 .. rst-class:: classref-item-separator
 
@@ -5911,7 +5911,7 @@ enum **SplashStretchMode**: :ref:`🔗<enum_RenderingServer_SplashStretchMode>`
 
 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` **SPLASH_STRETCH_MODE_DISABLED** = ``0``
 
-No stretching is applied.
+Розтяжка не застосовується.
 
 .. _class_RenderingServer_constant_SPLASH_STRETCH_MODE_KEEP:
 
@@ -5919,7 +5919,7 @@ No stretching is applied.
 
 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` **SPLASH_STRETCH_MODE_KEEP** = ``1``
 
-Stretches image to fullscreen while preserving aspect ratio.
+Розтягує зображення на весь екран, зберігаючи співвідношення сторін.
 
 .. _class_RenderingServer_constant_SPLASH_STRETCH_MODE_KEEP_WIDTH:
 
@@ -5927,7 +5927,7 @@ Stretches image to fullscreen while preserving aspect ratio.
 
 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` **SPLASH_STRETCH_MODE_KEEP_WIDTH** = ``2``
 
-Stretches the height of the image based on the width of the screen.
+Розтягує висоту зображення залежно від ширини екрана.
 
 .. _class_RenderingServer_constant_SPLASH_STRETCH_MODE_KEEP_HEIGHT:
 
@@ -5935,7 +5935,7 @@ Stretches the height of the image based on the width of the screen.
 
 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` **SPLASH_STRETCH_MODE_KEEP_HEIGHT** = ``3``
 
-Stretches the width of the image based on the height of the screen.
+Розтягує ширину зображення залежно від висоти екрана.
 
 .. _class_RenderingServer_constant_SPLASH_STRETCH_MODE_COVER:
 
@@ -5943,7 +5943,7 @@ Stretches the width of the image based on the height of the screen.
 
 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` **SPLASH_STRETCH_MODE_COVER** = ``4``
 
-Stretches the image to cover the entire screen while preserving aspect ratio.
+Розтягує зображення на весь екран, зберігаючи при цьому співвідношення сторін.
 
 .. _class_RenderingServer_constant_SPLASH_STRETCH_MODE_IGNORE:
 
@@ -5951,7 +5951,7 @@ Stretches the image to cover the entire screen while preserving aspect ratio.
 
 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` **SPLASH_STRETCH_MODE_IGNORE** = ``5``
 
-Stretches the image to cover the entire screen but doesn't preserve aspect ratio.
+Розтягує зображення на весь екран, але не зберігає співвідношення сторін.
 
 .. rst-class:: classref-item-separator
 
@@ -6485,7 +6485,7 @@ Canvas не має еквівалента :ref:`Resource<class_Resource>` або
 
 |void| **canvas_item_add_ellipse**\ (\ item\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, major\: :ref:`float<class_float>`, minor\: :ref:`float<class_float>`, color\: :ref:`Color<class_Color>`, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_ellipse>`
 
-Draws an ellipse with semi-major axis ``major`` and semi-minor axis ``minor`` on the :ref:`CanvasItem<class_CanvasItem>` pointed to by the ``item`` :ref:`RID<class_RID>`. See also :ref:`CanvasItem.draw_ellipse()<class_CanvasItem_method_draw_ellipse>`.
+Малює еліпс з великою піввіссю ``major`` та малою піввіссю ``minor`` на :ref:`CanvasItem<class_CanvasItem>`, на який вказує ``item`` :ref:`RID<class_RID>`. Див. також :ref:`CanvasItem.draw_ellipse()<class_CanvasItem_method_draw_ellipse>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7959,11 +7959,11 @@ Draws an ellipse with semi-major axis ``major`` and semi-minor axis ``minor`` on
 
 :ref:`Image<class_Image>` **environment_bake_panorama**\ (\ environment\: :ref:`RID<class_RID>`, bake_irradiance\: :ref:`bool<class_bool>`, size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_RenderingServer_method_environment_bake_panorama>`
 
-Generates and returns an :ref:`Image<class_Image>` containing the radiance map for the specified ``environment`` RID's sky. This supports built-in sky material and custom sky shaders. If ``bake_irradiance`` is ``true``, the irradiance map is saved instead of the radiance map. The radiance map is used to render reflected light, while the irradiance map is used to render ambient light. See also :ref:`sky_bake_panorama()<class_RenderingServer_method_sky_bake_panorama>`.
+Генерує та повертає :ref:`Image<class_Image>`, що містить карту яскравості для неба, зазначеного в ``environment`` RID. Це підтримує вбудований матеріал неба та власні шейдери неба. Якщо ``bake_irradiance`` має значення ``true``, карта яскравості зберігається замість карти яскравості. Карта яскравості використовується для візуалізації відбитого світла, тоді як карта яскравості використовується для візуалізації навколишнього світла. Див. також :ref:`sky_bake_panorama()<class_RenderingServer_method_sky_bake_panorama>`.
 
-\ **Note:** The image is saved using linear encoding without any tonemapping performed, which means it will look too dark if viewed directly in an image editor.
+\ **Примітка:** Зображення зберігається за допомогою лінійного кодування без будь-якого тонального відображення, що означає, що воно виглядатиме занадто темним, якщо переглядати його безпосередньо в редакторі зображень.
 
-\ **Note:** ``size`` should be a 2:1 aspect ratio for the generated panorama to have square pixels. For radiance maps, there is no point in using a height greater than :ref:`Sky.radiance_size<class_Sky_property_radiance_size>`, as it won't increase detail. Irradiance maps only contain low-frequency data, so there is usually no point in going past a size of 128×64 pixels when saving an irradiance map.
+\ **Примітка:** ``size`` має бути зі співвідношенням сторін 2:1, щоб згенерована панорама мала квадратні пікселі. Для карт яскравості немає сенсу використовувати висоту, більшу за :ref:`Sky.radiance_size<class_Sky_property_radiance_size>`, оскільки це не збільшить деталізацію. Карти опроміненості містять лише низькочастотні дані, тому зазвичай немає сенсу перевищувати розмір 128×64 пікселів під час збереження карти опроміненості.
 
 .. rst-class:: classref-item-separator
 
@@ -8257,7 +8257,7 @@ Generates and returns an :ref:`Image<class_Image>` containing the radiance map f
 
 |void| **environment_set_ssr_half_size**\ (\ half_size\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_ssr_half_size>`
 
-Sets whether screen-space reflections will be rendered at full or half size. Half size is faster, but may look pixelated or cause flickering.
+Встановлює, чи відображення на екрані будуть відображатися у повному чи половинному розмірі. Половина розміру працює швидше, але може виглядати пікселізовано або спричиняти мерехтіння.
 
 .. rst-class:: classref-item-separator
 
@@ -8293,7 +8293,7 @@ Sets whether screen-space reflections will be rendered at full or half size. Hal
 
 |void| **environment_set_tonemap_agx_contrast**\ (\ env\: :ref:`RID<class_RID>`, agx_contrast\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_tonemap_agx_contrast>`
 
-See :ref:`Environment.tonemap_agx_contrast<class_Environment_property_tonemap_agx_contrast>` for more details.
+Див. :ref:`Environment.tonemap_agx_contrast<class_Environment_property_tonemap_agx_contrast>` для отримання додаткової інформації.
 
 .. rst-class:: classref-item-separator
 
@@ -9649,11 +9649,11 @@ See :ref:`Environment.tonemap_agx_contrast<class_Environment_property_tonemap_ag
 
 |void| **material_set_use_debanding**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_material_set_use_debanding>`
 
-When using the Mobile renderer, :ref:`material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` can be used to enable or disable the debanding feature of 3D materials (:ref:`BaseMaterial3D<class_BaseMaterial3D>` and :ref:`ShaderMaterial<class_ShaderMaterial>`).
+Під час використання мобільного рендерера, метод ``material_set_use_debanding`` можна використовувати для ввімкнення або вимкнення функції згладжування 3D-матеріалів (:ref:`BaseMaterial3D<class_BaseMaterial3D>` та :ref:`ShaderMaterial<class_ShaderMaterial>`).
 
-\ :ref:`material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` has no effect when using the Compatibility or Forward+ renderer. In Forward+, :ref:`Viewport<class_Viewport>` debanding can be used instead.
+Метод ``material_set_use_debanding`` не має жодного ефекту під час використання рендерера Compatibility або Forward+. У Forward+ замість цього можна використовувати згладжування :ref:`Viewport<class_Viewport>`.
 
-See also :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>` and :ref:`viewport_set_use_debanding()<class_RenderingServer_method_viewport_set_use_debanding>`.
+Див. також :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>` та :ref:`viewport_set_use_debanding()<class_RenderingServer_method_viewport_set_use_debanding>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10282,9 +10282,9 @@ See also :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<cla
 
 |void| **multimesh_instances_reset_physics_interpolation**\ (\ multimesh\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_multimesh_instances_reset_physics_interpolation>`
 
-Prevents physics interpolation for all instances during the current physics tick.
+Запобігає інтерполяції фізики для всіх екземплярів протягом поточного такту фізики.
 
-This is useful when moving all instances to new locations, to give instantaneous changes rather than interpolation from the previous locations.
+Це корисно під час переміщення всіх екземплярів у нові місця, щоб отримати миттєві зміни, а не інтерполяцію з попередніх місць розташування.
 
 .. rst-class:: classref-item-separator
 
@@ -11351,7 +11351,7 @@ This is useful when moving all instances to new locations, to give instantaneous
 
 **Застаріло:** Use :ref:`set_boot_image_with_stretch()<class_RenderingServer_method_set_boot_image_with_stretch>` instead.
 
-Sets a boot image. The ``color`` defines the background color. The value of ``scale`` indicates if the image will be scaled to fit the screen size. If ``use_filter`` is ``true``, the image will be scaled with linear interpolation. If ``use_filter`` is ``false``, the image will be scaled with nearest-neighbor interpolation.
+Встановлює завантажувальний образ. ``color`` визначає колір фону. Значення ``scale`` вказує, чи буде зображення масштабовано відповідно до розміру екрана. Якщо ``use_filter`` має значення ``true``, зображення буде масштабовано за допомогою лінійної інтерполяції. Якщо ``use_filter`` має значення ``false``, зображення буде масштабовано за допомогою інтерполяції найближчого сусіда.
 
 .. rst-class:: classref-item-separator
 
@@ -11363,7 +11363,7 @@ Sets a boot image. The ``color`` defines the background color. The value of ``sc
 
 |void| **set_boot_image_with_stretch**\ (\ image\: :ref:`Image<class_Image>`, color\: :ref:`Color<class_Color>`, stretch_mode\: :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>`, use_filter\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_RenderingServer_method_set_boot_image_with_stretch>`
 
-Sets a boot image. The ``color`` defines the background color. The value of ``stretch_mode`` indicates how the image will be stretched (see :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` for possible values). If ``use_filter`` is ``true``, the image will be scaled with linear interpolation. If ``use_filter`` is ``false``, the image will be scaled with nearest-neighbor interpolation.
+Встановлює завантажувальний образ. ``color`` визначає колір фону. Значення ``stretch_mode`` вказує, як зображення буде розтягнуто (див. :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` для можливих значень). Якщо ``use_filter`` має значення ``true``, зображення буде масштабовано за допомогою лінійної інтерполяції. Якщо ``use_filter`` має значення ``false``, зображення буде масштабовано за допомогою інтерполяції найближчого сусіда.
 
 .. rst-class:: classref-item-separator
 
@@ -11595,11 +11595,11 @@ Sets a boot image. The ``color`` defines the background color. The value of ``st
 
 :ref:`Image<class_Image>` **sky_bake_panorama**\ (\ sky\: :ref:`RID<class_RID>`, energy\: :ref:`float<class_float>`, bake_irradiance\: :ref:`bool<class_bool>`, size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_RenderingServer_method_sky_bake_panorama>`
 
-Generates and returns an :ref:`Image<class_Image>` containing the radiance map for the specified ``sky`` RID. This supports built-in sky material and custom sky shaders. If ``bake_irradiance`` is ``true``, the irradiance map is saved instead of the radiance map. The radiance map is used to render reflected light, while the irradiance map is used to render ambient light. See also :ref:`environment_bake_panorama()<class_RenderingServer_method_environment_bake_panorama>`.
+Генерує та повертає :ref:`Image<class_Image>`, що містить карту яскравості (radiance map) для вказаного RID ``sky``. Це підтримує вбудований матеріал неба та власні шейдери неба. Якщо ``bake_irradiance`` має значення ``true``, карта яскравості (irradiance map) зберігається замість карти яскравості. Карта яскравості використовується для візуалізації відбитого світла, тоді як карта яскравості використовується для візуалізації навколишнього світла. Див. також :ref:`environment_bake_panorama()<class_RenderingServer_method_environment_bake_panorama>`.
 
-\ **Note:** The image is saved using linear encoding without any tonemapping performed, which means it will look too dark if viewed directly in an image editor. ``energy`` values above ``1.0`` can be used to brighten the resulting image.
+\ **Примітка:** Зображення зберігається за допомогою лінійного кодування без будь-якого тонального відображення, що означає, що воно виглядатиме занадто темним, якщо переглядати його безпосередньо в редакторі зображень. Значення ``energy`` вище ``1.0`` можна використовувати для освітлення результуючого зображення.
 
-\ **Note:** ``size`` should be a 2:1 aspect ratio for the generated panorama to have square pixels. For radiance maps, there is no point in using a height greater than :ref:`Sky.radiance_size<class_Sky_property_radiance_size>`, as it won't increase detail. Irradiance maps only contain low-frequency data, so there is usually no point in going past a size of 128×64 pixels when saving an irradiance map.
+\ **Примітка:** ``size`` має бути зі співвідношенням сторін 2:1, щоб згенерована панорама мала квадратні пікселі. Для карт опромінення немає сенсу використовувати висоту, більшу за :ref:`Sky.radiance_size<class_Sky_property_radiance_size>`, оскільки це не збільшить деталізацію. Карти опромінення містять лише низькочастотні дані, тому зазвичай немає сенсу перевищувати розмір 128×64 пікселів під час збереження карти опромінення.
 
 .. rst-class:: classref-item-separator
 
@@ -11865,9 +11865,9 @@ Generates and returns an :ref:`Image<class_Image>` containing the radiance map f
 
 :ref:`RID<class_RID>` **texture_create_from_native_handle**\ (\ type\: :ref:`TextureType<enum_RenderingServer_TextureType>`, format\: :ref:`Format<enum_Image_Format>`, native_handle\: :ref:`int<class_int>`, width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, depth\: :ref:`int<class_int>`, layers\: :ref:`int<class_int>` = 1, layered_type\: :ref:`TextureLayeredType<enum_RenderingServer_TextureLayeredType>` = 0\ ) :ref:`🔗<class_RenderingServer_method_texture_create_from_native_handle>`
 
-Creates a texture based on a native handle that was created outside of Godot's renderer.
+Створює текстуру на основі рідного дескриптора, створеного поза рендерером Godot.
 
-\ **Note:** If using only the rendering device renderer, it's recommend to use :ref:`RenderingDevice.texture_create_from_extension()<class_RenderingDevice_method_texture_create_from_extension>` together with :ref:`texture_rd_create()<class_RenderingServer_method_texture_rd_create>`, rather than this method. This way, the texture's format and usage can be controlled more effectively.
+\ **Примітка:** Якщо використовується лише рендерер пристрою рендерингу, рекомендується використовувати :ref:`RenderingDevice.texture_create_from_extension()<class_RenderingDevice_method_texture_create_from_extension>` разом з :ref:`texture_rd_create()<class_RenderingServer_method_texture_rd_create>`, а не цей метод. Таким чином, формат і використання текстури можна контролювати ефективніше.
 
 .. rst-class:: classref-item-separator
 
@@ -11891,11 +11891,11 @@ Creates a texture based on a native handle that was created outside of Godot's r
 
 :ref:`int<class_int>` **texture_get_native_handle**\ (\ texture\: :ref:`RID<class_RID>`, srgb\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_RenderingServer_method_texture_get_native_handle>`
 
-Returns the internal graphics handle for this texture object. For use when communicating with third-party APIs mostly with GDExtension.
+Повертає внутрішній графічний дескриптор для цього об'єкта текстури. Для використання під час зв'язку зі сторонніми API, переважно з GDExtension.
 
-\ ``srgb`` should be ``true`` when the texture uses nonlinear sRGB encoding and ``false`` when the texture uses linear encoding.
+\ ``srgb`` має бути ``true``, коли текстура використовує нелінійне кодування sRGB, та ``false``, коли текстура використовує лінійне кодування.
 
-\ **Note:** This function returns a ``uint64_t`` which internally maps to a ``GLuint`` (OpenGL) or ``VkImage`` (Vulkan).
+\ **Примітка:** Ця функція повертає ``uint64_t``, який внутрішньо відображається на ``GLuint`` (OpenGL) або ``VkImage`` (Vulkan).
 
 .. rst-class:: classref-item-separator
 
@@ -11921,9 +11921,9 @@ Returns the internal graphics handle for this texture object. For use when commu
 
 :ref:`RID<class_RID>` **texture_get_rd_texture**\ (\ texture\: :ref:`RID<class_RID>`, srgb\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_RenderingServer_method_texture_get_rd_texture>`
 
-Returns a texture :ref:`RID<class_RID>` that can be used with :ref:`RenderingDevice<class_RenderingDevice>`.
+Повертає текстуру :ref:`RID<class_RID>`, яку можна використовувати з :ref:`RenderingDevice<class_RenderingDevice>`.
 
-\ ``srgb`` should be ``true`` when the texture uses nonlinear sRGB encoding and ``false`` when the texture uses linear encoding.
+\ ``srgb`` має бути ``true``, якщо текстура використовує нелінійне кодування sRGB, та ``false``, якщо текстура використовує лінійне кодування.
 
 .. rst-class:: classref-item-separator
 
@@ -11963,11 +11963,11 @@ Returns a texture :ref:`RID<class_RID>` that can be used with :ref:`RenderingDev
 
 :ref:`RID<class_RID>` **texture_rd_create**\ (\ rd_texture\: :ref:`RID<class_RID>`, layer_type\: :ref:`TextureLayeredType<enum_RenderingServer_TextureLayeredType>` = 0\ ) :ref:`🔗<class_RenderingServer_method_texture_rd_create>`
 
-Creates a new texture object based on a texture created directly on the :ref:`RenderingDevice<class_RenderingDevice>`. If the texture contains layers, ``layer_type`` is used to define the layer type.
+Створює новий об'єкт текстури на основі текстури, створеної безпосередньо на :ref:`RenderingDevice<class_RenderingDevice>`. Якщо текстура містить шари, для визначення типу шару використовується ``layer_type``.
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+Після завершення роботи з RID вам потрібно звільнити RID за допомогою методу :ref:`free_rid()<class_RenderingServer_method_free_rid>` RenderingServer.
 
-\ **Note:** The RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` won't free the underlying ``rd_texture``, you will want to free the ``rd_texture`` using :ref:`RenderingDevice.free_rid()<class_RenderingDevice_method_free_rid>`.
+\ **Примітка:** Метод ``free_rid`` RenderingServer не звільнить базовий ``rd_texture``, вам потрібно звільнити ``rd_texture`` за допомогою :ref:`RenderingDevice.free_rid()<class_RenderingDevice_method_free_rid>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12644,9 +12644,9 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 
 |void| **viewport_set_use_hdr_2d**\ (\ viewport\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_use_hdr_2d>`
 
-If ``true``, 2D rendering will use a high dynamic range (HDR) ``RGBA16`` format framebuffer. Additionally, 2D rendering will be performed on linear values and will be converted using the appropriate transfer function immediately before blitting to the screen (if the Viewport is attached to the screen).
+Якщо значення ``true``, 2D-рендеринг використовуватиме буфер кадрів у форматі високого динамічного діапазону (HDR) ``RGBA16``. Крім того, 2D-рендеринг виконуватиметься на лінійних значеннях і буде перетворено за допомогою відповідної передавальної функції безпосередньо перед виведенням на екран (якщо Viewport підключено до екрана).
 
-Practically speaking, this means that the end result of the Viewport will not be clamped to the ``0-1`` range and can be used in 3D rendering without color encoding adjustments. This allows 2D rendering to take advantage of effects requiring high dynamic range (e.g. 2D glow) as well as substantially improves the appearance of effects requiring highly detailed gradients. This setting has the same effect as :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`.
+Практично це означає, що кінцевий результат Viewport не буде обмежений діапазоном ``0-1`` і може бути використаний у 3D-рендерингу без коригування кодування кольорів. Це дозволяє 2D-рендерингу використовувати ефекти, що вимагають високого динамічного діапазону (наприклад, 2D світіння), а також суттєво покращує зовнішній вигляд ефектів, що вимагають високодеталізованих градієнтів. Цей параметр має той самий ефект, що й :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`.
 
 .. rst-class:: classref-item-separator
 

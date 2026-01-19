@@ -309,7 +309,7 @@ GLTFNode
 - |void| **set_visible**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_visible**\ (\ )
 
-If ``true``, the GLTF node is visible. If ``false``, the GLTF node is not visible. This is converted to the :ref:`Node3D.visible<class_Node3D_property_visible>` property in the Godot scene, and is exported to ``KHR_node_visibility`` when ``false``.
+Якщо ``true``, вузол GLTF видимий. Якщо ``false``, вузол GLTF невидимий. Це перетворюється на властивість :ref:`Node3D.visible<class_Node3D_property_visible>` у сцені Godot та експортується до ``KHR_node_visibility``, коли ``false``.
 
 .. rst-class:: classref-item-separator
 

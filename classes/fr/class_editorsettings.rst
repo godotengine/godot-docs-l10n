@@ -102,6 +102,8 @@ Propriétés
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`docks/scene_tree/start_create_dialog_fully_expanded<class_EditorSettings_property_docks/scene_tree/start_create_dialog_fully_expanded>`                                                                     |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`float<class_float>`                         | :ref:`editors/2d/auto_resample_delay<class_EditorSettings_property_editors/2d/auto_resample_delay>`                                                                                                               |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                         | :ref:`editors/2d/bone_color1<class_EditorSettings_property_editors/2d/bone_color1>`                                                                                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                         | :ref:`editors/2d/bone_color2<class_EditorSettings_property_editors/2d/bone_color2>`                                                                                                                               |
@@ -211,6 +213,8 @@ Propriétés
    | :ref:`Color<class_Color>`                         | :ref:`editors/3d/secondary_grid_color<class_EditorSettings_property_editors/3d/secondary_grid_color>`                                                                                                             |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                         | :ref:`editors/3d/selection_box_color<class_EditorSettings_property_editors/3d/selection_box_color>`                                                                                                               |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                             | :ref:`editors/3d/show_gizmo_during_rotation<class_EditorSettings_property_editors/3d/show_gizmo_during_rotation>`                                                                                                 |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                         | :ref:`editors/3d_gizmos/gizmo_colors/aabb<class_EditorSettings_property_editors/3d_gizmos/gizmo_colors/aabb>`                                                                                                     |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1326,6 +1330,18 @@ If ``true``, the Create dialog (Create New Node/Create New Resource) will start 
 
 ----
 
+.. _class_EditorSettings_property_editors/2d/auto_resample_delay:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **editors/2d/auto_resample_delay** :ref:`🔗<class_EditorSettings_property_editors/2d/auto_resample_delay>`
+
+Delay time for automatic resampling in the 2D editor (in seconds).
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorSettings_property_editors/2d/bone_color1:
 
 .. rst-class:: classref-property
@@ -2017,6 +2033,18 @@ The color to use for the secondary 3D grid. This is generally a less visible col
 :ref:`Color<class_Color>` **editors/3d/selection_box_color** :ref:`🔗<class_EditorSettings_property_editors/3d/selection_box_color>`
 
 The color to use for the selection box that surrounds selected nodes in the 3D editor viewport. The color's alpha channel influences the selection box's opacity.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorSettings_property_editors/3d/show_gizmo_during_rotation:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **editors/3d/show_gizmo_during_rotation** :ref:`🔗<class_EditorSettings_property_editors/3d/show_gizmo_during_rotation>`
+
+If checked, the transform gizmo remains visible during rotation in that transform mode.
 
 .. rst-class:: classref-item-separator
 

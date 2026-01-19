@@ -1150,11 +1150,11 @@ This function is called when an individual scene is about to be played in the ed
 
 **已弃用：** Use :ref:`add_dock()<class_EditorPlugin_method_add_dock>` instead, with :ref:`EditorDock.default_slot<class_EditorDock_property_default_slot>` set to :ref:`DOCK_SLOT_BOTTOM<class_EditorPlugin_constant_DOCK_SLOT_BOTTOM>`.
 
-Adds a control to the bottom panel (together with Output, Debug, Animation, etc.). Returns a reference to a button that is outside the scene tree. It's up to you to hide/show the button when needed. When your plugin is deactivated, make sure to remove your custom control with :ref:`remove_control_from_bottom_panel()<class_EditorPlugin_method_remove_control_from_bottom_panel>` and free it with :ref:`Node.queue_free()<class_Node_method_queue_free>`.
+将控件添加到底部面板（与输出、调试、动画等面板并列）。返回一个按钮的引用。这个按钮在场景树外，需要你视情况自行隐藏/显示。当插件停用时，请务必使用 :ref:`remove_control_from_bottom_panel()<class_EditorPlugin_method_remove_control_from_bottom_panel>` 移除自定义控件，并使用 :ref:`Node.queue_free()<class_Node_method_queue_free>` 将其释放。
 
-\ ``shortcut`` is a shortcut that, when activated, will toggle the bottom panel's visibility. The shortcut object is only set when this control is added to the bottom panel.
+\ ``shortcut`` 为快捷键，激活时将切换底部面板的可见性。此快捷键对象仅在该控件被添加到底部面板时才被设置。
 
-\ **Note** See the default editor bottom panel shortcuts in the Editor Settings for inspiration. By convention, they all use :kbd:`Alt` modifier.
+\ **注意：**\ 请将编辑器设置中默认的底部面板快捷键作为设计参考。按照惯例，它们均使用 :kbd:`Alt` 修饰键。
 
 .. rst-class:: classref-item-separator
 
@@ -1236,9 +1236,9 @@ Adds a control to the bottom panel (together with Output, Debug, Animation, etc.
 
 |void| **add_dock**\ (\ dock\: :ref:`EditorDock<class_EditorDock>`\ ) :ref:`🔗<class_EditorPlugin_method_add_dock>`
 
-Adds a new dock.
+添加一个新的停靠面板。
 
-When your plugin is deactivated, make sure to remove your custom dock with :ref:`remove_dock()<class_EditorPlugin_method_remove_dock>` and free it with :ref:`Node.queue_free()<class_Node_method_queue_free>`.
+当插件停用时，请务必使用 :ref:`remove_dock()<class_EditorPlugin_method_remove_dock>` 移除自定义停靠面板，并使用 :ref:`Node.queue_free()<class_Node_method_queue_free>` 将其释放。
 
 .. rst-class:: classref-item-separator
 

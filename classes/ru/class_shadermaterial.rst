@@ -102,11 +102,11 @@ ShaderMaterial
 
 |void| **set_shader_parameter**\ (\ param\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_ShaderMaterial_method_set_shader_parameter>`
 
-Изменяет значение, заданное для этого материала uniform-переменной в шейдере.
+Changes the value set for this material of a uniform in the shader.
 
-\ **Примечание:** ``param`` чувствителен к регистру и должен точно соответствовать имени uniform-переменной в коде (не заглавному имени в инспекторе).
+\ **Note:** ``param`` is case-sensitive and must match the name of the uniform in the code exactly (not the capitalized name in the inspector).
 
-\ **Примечание:** Изменения uniform-переменной шейдера будут эффективны для всех экземпляров, использующих этот **ShaderMaterial**. Чтобы предотвратить это, используйте uniform-переменные для каждого экземпляра с :ref:`GeometryInstance3D.set_instance_shader_parameter()<class_GeometryInstance3D_method_set_instance_shader_parameter>` или дублируйте ресурс **ShaderMaterial** с помощью :ref:`Resource.duplicate()<class_Resource_method_duplicate>`. uniform-переменные для каждого экземпляра позволяют лучше повторно использовать шейдер и, следовательно, работают быстрее, поэтому их следует предпочесть дублированию **ShaderMaterial**, когда это возможно.
+\ **Note:** Changes to the shader uniform will be effective on all instances using this **ShaderMaterial**. To prevent this, use per-instance uniforms with :ref:`CanvasItem.set_instance_shader_parameter()<class_CanvasItem_method_set_instance_shader_parameter>`, :ref:`GeometryInstance3D.set_instance_shader_parameter()<class_GeometryInstance3D_method_set_instance_shader_parameter>` or duplicate the **ShaderMaterial** resource using :ref:`Resource.duplicate()<class_Resource_method_duplicate>`. Per-instance uniforms allow for better shader reuse and are therefore faster, so they should be preferred over duplicating the **ShaderMaterial** when possible.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

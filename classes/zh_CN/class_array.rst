@@ -1226,11 +1226,11 @@ Returns a hashed 32-bit integer value representing the array and its contents.
 
 |void| **remove_at**\ (\ position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Array_method_remove_at>`
 
-Removes the element from the array at the given index (``position``). If the index is out of bounds, this method fails. If the index is negative, ``position`` is considered relative to the end of the array.
+从数组中移除指定索引（\ ``position``\ ）处的元素。如果索引超出范围，则该方法失败。如果为负数，则认为 ``position`` 为相对于数组结尾的索引。
 
-If you need to return the removed element, use :ref:`pop_at()<class_Array_method_pop_at>`. To remove an element by value, use :ref:`erase()<class_Array_method_erase>` instead.
+如果需要返回被移除的元素，请使用 :ref:`pop_at()<class_Array_method_pop_at>`\ 。要按值移除元素，请改用 :ref:`erase()<class_Array_method_erase>`\ 。
 
-\ **Note:** This method shifts every element's index after ``position`` back, which may have a noticeable performance cost, especially on larger arrays.
+\ **注意：**\ 该方法将 ``position`` 之后每个元素的索引向前移动，这可能会产生明显的性能成本，尤其是在较大的数组上。
 
 .. rst-class:: classref-item-separator
 

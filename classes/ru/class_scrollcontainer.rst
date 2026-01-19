@@ -83,19 +83,23 @@ ScrollContainer
 .. table::
    :widths: auto
 
-   +-----------------------------------+--------------------------------------------------------------------------------------------+-------+
-   | :ref:`int<class_int>`             | :ref:`scrollbar_h_separation<class_ScrollContainer_theme_constant_scrollbar_h_separation>` | ``0`` |
-   +-----------------------------------+--------------------------------------------------------------------------------------------+-------+
-   | :ref:`int<class_int>`             | :ref:`scrollbar_v_separation<class_ScrollContainer_theme_constant_scrollbar_v_separation>` | ``0`` |
-   +-----------------------------------+--------------------------------------------------------------------------------------------+-------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`scroll_hint_horizontal<class_ScrollContainer_theme_icon_scroll_hint_horizontal>`     |       |
-   +-----------------------------------+--------------------------------------------------------------------------------------------+-------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`scroll_hint_vertical<class_ScrollContainer_theme_icon_scroll_hint_vertical>`         |       |
-   +-----------------------------------+--------------------------------------------------------------------------------------------+-------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`focus<class_ScrollContainer_theme_style_focus>`                                      |       |
-   +-----------------------------------+--------------------------------------------------------------------------------------------+-------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`panel<class_ScrollContainer_theme_style_panel>`                                      |       |
-   +-----------------------------------+--------------------------------------------------------------------------------------------+-------+
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`Color<class_Color>`         | :ref:`scroll_hint_horizontal_color<class_ScrollContainer_theme_color_scroll_hint_horizontal_color>` | ``Color(0, 0, 0, 1)`` |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`Color<class_Color>`         | :ref:`scroll_hint_vertical_color<class_ScrollContainer_theme_color_scroll_hint_vertical_color>`     | ``Color(0, 0, 0, 1)`` |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`int<class_int>`             | :ref:`scrollbar_h_separation<class_ScrollContainer_theme_constant_scrollbar_h_separation>`          | ``0``                 |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`int<class_int>`             | :ref:`scrollbar_v_separation<class_ScrollContainer_theme_constant_scrollbar_v_separation>`          | ``0``                 |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`scroll_hint_horizontal<class_ScrollContainer_theme_icon_scroll_hint_horizontal>`              |                       |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`scroll_hint_vertical<class_ScrollContainer_theme_icon_scroll_hint_vertical>`                  |                       |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`focus<class_ScrollContainer_theme_style_focus>`                                               |                       |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`panel<class_ScrollContainer_theme_style_panel>`                                               |                       |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -201,7 +205,7 @@ enum **ScrollHintMode**: :ref:`🔗<enum_ScrollContainer_ScrollHintMode>`
 
 :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **SCROLL_HINT_MODE_DISABLED** = ``0``
 
-Scroll hints will never be shown.
+Подсказки при прокрутке никогда не будут отображаться.
 
 .. _class_ScrollContainer_constant_SCROLL_HINT_MODE_ALL:
 
@@ -416,7 +420,7 @@ The way which scroll hints (indicators that show that the content can still be s
 - |void| **set_tile_scroll_hint**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_scroll_hint_tiled**\ (\ )
 
-If ``true``, the scroll hint texture will be tiled instead of stretched. See :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
+Если ``true``, текстура подсказки прокрутки будет мозаичной, а не растянутой. См. :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -496,6 +500,30 @@ If ``true``, the scroll hint texture will be tiled instead of stretched. See :re
 
 Описания свойств темы
 ------------------------------------------
+
+.. _class_ScrollContainer_theme_color_scroll_hint_horizontal_color:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Color<class_Color>` **scroll_hint_horizontal_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ScrollContainer_theme_color_scroll_hint_horizontal_color>`
+
+:ref:`Color<class_Color>` used to modulate the :ref:`scroll_hint_horizontal<class_ScrollContainer_theme_icon_scroll_hint_horizontal>` texture.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ScrollContainer_theme_color_scroll_hint_vertical_color:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Color<class_Color>` **scroll_hint_vertical_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ScrollContainer_theme_color_scroll_hint_vertical_color>`
+
+:ref:`Color<class_Color>` used to modulate the :ref:`scroll_hint_vertical<class_ScrollContainer_theme_icon_scroll_hint_vertical>` texture.
+
+.. rst-class:: classref-item-separator
+
+----
 
 .. _class_ScrollContainer_theme_constant_scrollbar_h_separation:
 

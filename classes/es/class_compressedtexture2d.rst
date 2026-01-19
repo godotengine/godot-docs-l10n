@@ -20,15 +20,15 @@ Una textura que se carga desde un archivo ``.ctex``. Este formato de archivo es 
 
 - Con pérdida (WebP, descomprimido en la GPU)
 
-- VRAM Comprimido (comprimido en la GPU)
+- VRAM Comprimida (comprimido en la GPU)
 
 - VRAM Sin comprimir (sin comprimir en la GPU)
 
-- Basis Universal (comprimido en la GPU. Tamaños de archivo más pequeños que VRAM Comprimido, pero más lento para comprimir y de menor calidad que VRAM Comprimido)
+- Basis Universal (comprimido en la GPU. Tamaños de archivo más pequeños que VRAM Comprimida, pero más lento para comprimir y de menor calidad que VRAM Comprimido)
 
-Sólo **VRAM Comprimido** reduce realmente el uso de memoria en la GPU. Los métodos de compresión **Sin pérdida** y **Con pérdida** reducirán el almacenamiento requerido en el disco, pero no reducirán el uso de memoria en la GPU, ya que la textura se envía a la GPU sin comprimir.
+Solo **VRAM Comprimida** reduce realmente el uso de memoria en la GPU. Los métodos de compresión **Sin pérdida** y **Con pérdida** reducirán el almacenamiento requerido en el disco, pero no reducirán el uso de memoria en la GPU, ya que la textura se envía a la GPU sin comprimir.
 
-El uso de **VRAM Comprimido** también mejora los tiempos de carga, ya que las texturas comprimidas en VRAM se cargan más rápido en comparación con las texturas que utilizan compresión sin pérdida o con pérdida. La compresión VRAM puede mostrar artefactos notables y está destinada a ser utilizada para el renderizado 3D, no 2D.
+El uso de **VRAM Comprimida** también mejora los tiempos de carga, ya que las texturas comprimidas en VRAM se cargan más rápido en comparación con las texturas que utilizan compresión sin pérdida o con pérdida. La compresión VRAM puede mostrar artefactos notables y está destinada a ser utilizada para el renderizado 3D, no 2D.
 
 .. rst-class:: classref-reftable-group
 

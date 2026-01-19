@@ -700,6 +700,8 @@ enum **Camera2DProcessCallback**: :ref:`🔗<enum_Camera2D_Camera2DProcessCallba
 
 Выравнивает камеру по отслеживаемому узлу.
 
+\ **Примечание:** Вызов :ref:`force_update_scroll()<class_Camera2D_method_force_update_scroll>` после этого метода не требуется.
+
 .. rst-class:: classref-item-separator
 
 ----

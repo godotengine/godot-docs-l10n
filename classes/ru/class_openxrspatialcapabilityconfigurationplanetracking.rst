@@ -9,14 +9,14 @@ OpenXRSpatialCapabilityConfigurationPlaneTracking
 
 **Наследует:** :ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Configuration header for plane tracking.
+Заголовок конфигурации для отслеживания плоскости.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-Configuration header for plane tracking. Pass this to :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` to create a spatial context with plane tracking capabilities.
+Заголовок конфигурации для отслеживания плоскости. Передайте его методу :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>`, чтобы создать пространственный контекст с возможностями отслеживания плоскости.
 
 .. rst-class:: classref-reftable-group
 
@@ -51,9 +51,9 @@ Configuration header for plane tracking. Pass this to :ref:`OpenXRSpatialEntityE
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_enabled_components**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationPlaneTracking_method_get_enabled_components>`
 
-Returns the components enabled by this configuration.
+Возвращает компоненты, включенные данной конфигурацией.
 
-\ **Note:** Only valid after this configuration was used to create a spatial context.
+\ **Примечание:** Действительно только после использования данной конфигурации для создания пространственного контекста.
 
 .. rst-class:: classref-item-separator
 
@@ -65,7 +65,7 @@ Returns the components enabled by this configuration.
 
 :ref:`bool<class_bool>` **supports_labels**\ (\ ) :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationPlaneTracking_method_supports_labels>`
 
-Returns ``true`` if we support the plane semantic label component (only valid after the OpenXR session has started). You can query these using the :ref:`OpenXRSpatialComponentPlaneSemanticLabelList<class_OpenXRSpatialComponentPlaneSemanticLabelList>` data object.
+Возвращает ``true``, если мы поддерживаем компонент семантической метки плоскости (действительно только после начала сеанса OpenXR). Вы можете запрашивать эти данные, используя объект данных :ref:`OpenXRSpatialComponentPlaneSemanticLabelList<class_OpenXRSpatialComponentPlaneSemanticLabelList>`.
 
 .. rst-class:: classref-item-separator
 
@@ -77,7 +77,7 @@ Returns ``true`` if we support the plane semantic label component (only valid af
 
 :ref:`bool<class_bool>` **supports_mesh_2d**\ (\ ) :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationPlaneTracking_method_supports_mesh_2d>`
 
-Returns ``true`` if we support the mesh 2D component (only valid after the OpenXR session has started). You can query these using the :ref:`OpenXRSpatialComponentMesh2DList<class_OpenXRSpatialComponentMesh2DList>` data object.
+Возвращает ``true``, если мы поддерживаем компонент 2D-сетки (действительно только после начала сеанса OpenXR). Вы можете запрашивать эти данные, используя объект данных :ref:`OpenXRSpatialComponentMesh2DList<class_OpenXRSpatialComponentMesh2DList>`.
 
 .. rst-class:: classref-item-separator
 
@@ -89,7 +89,7 @@ Returns ``true`` if we support the mesh 2D component (only valid after the OpenX
 
 :ref:`bool<class_bool>` **supports_polygons**\ (\ ) :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationPlaneTracking_method_supports_polygons>`
 
-Returns ``true`` if we support the polygon 2D component (only valid after the OpenXR session has started). You can query these using the :ref:`OpenXRSpatialComponentPolygon2DList<class_OpenXRSpatialComponentPolygon2DList>` data object.
+Возвращает ``true``, если мы поддерживаем компонент 2D-полигона (действительно только после начала сессии OpenXR). Вы можете запрашивать эти данные, используя объект данных :ref:`OpenXRSpatialComponentPolygon2DList<class_OpenXRSpatialComponentPolygon2DList>`.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

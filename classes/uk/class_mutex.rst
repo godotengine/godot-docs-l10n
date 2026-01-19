@@ -14,15 +14,15 @@ Mutex
 Опис
 --------
 
-A synchronization mutex (mutual exclusion). This is used to synchronize multiple :ref:`Thread<class_Thread>`\ s, and is equivalent to a binary :ref:`Semaphore<class_Semaphore>`. It guarantees that only one thread can access a critical section at a time.
+М'ютекс синхронізації (взаємне виключення). Використовується для синхронізації кількох :ref:`Thread<class_Thread>` і еквівалентний двійковому :ref:`Semaphore<class_Semaphore>`. Він гарантує, що лише один потік може отримати доступ до критичної секції одночасно.
 
-This is a reentrant mutex, meaning that it can be locked multiple times by one thread, provided it also unlocks it as many times.
+Це реентерантний м'ютекс, що означає, що він може бути заблокований кілька разів одним потоком, за умови, що він також розблокує його стільки ж разів.
 
-\ **Warning:** To ensure proper cleanup without crashes or deadlocks, the following conditions must be met:
+\ **Попередження:** Щоб забезпечити належне очищення без збоїв або глухих блокувань, повинні бути виконані такі умови:
 
-- When a **Mutex**'s reference count reaches zero and it is therefore destroyed, no threads (including the one on which the destruction will happen) must have it locked.
+- Коли кількість посилань **Mutex** досягає нуля і тому він знищується, жоден потік (включаючи той, в якому відбудеться знищення) не повинен мати його заблоковано.
 
-- When a :ref:`Thread<class_Thread>`'s reference count reaches zero and it is therefore destroyed, it must not have any mutex locked.
+- Коли кількість посилань :ref:`Thread<class_Thread>` досягає нуля і тому він знищується, він не повинен мати жодного заблокованого м'ютексу.
 
 .. rst-class:: classref-introduction-group
 
@@ -92,11 +92,11 @@ Locks this **Mutex**, блоки до тих пір, поки він не роз
 
 |void| **unlock**\ (\ ) :ref:`🔗<class_Mutex_method_unlock>`
 
-Unlocks this **Mutex**, leaving it to other threads.
+Розблоковує цей **Mutex**, залишаючи його іншим потокам.
 
-\ **Note:** If a thread called :ref:`lock()<class_Mutex_method_lock>` or :ref:`try_lock()<class_Mutex_method_try_lock>` multiple times while already having ownership of the mutex, it must also call :ref:`unlock()<class_Mutex_method_unlock>` the same number of times in order to unlock it correctly.
+\ **Примітка:** Якщо потік викликав :ref:`lock()<class_Mutex_method_lock>` або :ref:`try_lock()<class_Mutex_method_try_lock>` кілька разів, вже маючи право власності на мьютекс, він також повинен викликати :ref:`unlock()<class_Mutex_method_unlock>` таку ж кількість разів, щоб правильно його розблокувати.
 
-\ **Warning:** Calling :ref:`unlock()<class_Mutex_method_unlock>` more times than :ref:`lock()<class_Mutex_method_lock>` on a given thread, thus ending up trying to unlock a non-locked mutex, is wrong and may causes crashes or deadlocks.
+\ **Попередження:** Виклик :ref:`unlock()<class_Mutex_method_unlock>` більше разів, ніж :ref:`lock()<class_Mutex_method_lock>` у даному потоці, що призводить до спроби розблокувати незаблокований мьютекс, є неправильним і може призвести до збоїв або взаємоблокувань.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

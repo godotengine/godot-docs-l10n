@@ -1159,7 +1159,7 @@ enum **ShapeType**: :ref:`🔗<enum_PhysicsServer3D_ShapeType>`
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_WORLD_BOUNDARY** = ``0``
 
-Constant for creating a world boundary shape (used by the :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` resource).
+Константа для создания формы границы мира (используется ресурсом :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_SEPARATION_RAY:
 
@@ -1167,7 +1167,7 @@ Constant for creating a world boundary shape (used by the :ref:`WorldBoundarySha
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_SEPARATION_RAY** = ``1``
 
-Constant for creating a separation ray shape (used by the :ref:`SeparationRayShape3D<class_SeparationRayShape3D>` resource).
+Константа для создания формы разделительного луча (используется ресурсом :ref:`SeparationRayShape3D<class_SeparationRayShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_SPHERE:
 
@@ -1175,7 +1175,7 @@ Constant for creating a separation ray shape (used by the :ref:`SeparationRaySha
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_SPHERE** = ``2``
 
-Constant for creating a sphere shape (used by the :ref:`SphereShape3D<class_SphereShape3D>` resource).
+Константа для создания сферической формы (используется ресурсом :ref:`SphereShape3D<class_SphereShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_BOX:
 
@@ -1183,7 +1183,7 @@ Constant for creating a sphere shape (used by the :ref:`SphereShape3D<class_Sphe
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_BOX** = ``3``
 
-Constant for creating a box shape (used by the :ref:`BoxShape3D<class_BoxShape3D>` resource).
+Константа для создания прямоугольной формы (используется ресурсом :ref:`BoxShape3D<class_BoxShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_CAPSULE:
 
@@ -1191,7 +1191,7 @@ Constant for creating a box shape (used by the :ref:`BoxShape3D<class_BoxShape3D
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_CAPSULE** = ``4``
 
-Constant for creating a capsule shape (used by the :ref:`CapsuleShape3D<class_CapsuleShape3D>` resource).
+Константа для создания формы капсулы (используется ресурсом :ref:`CapsuleShape3D<class_CapsuleShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_CYLINDER:
 
@@ -1199,7 +1199,7 @@ Constant for creating a capsule shape (used by the :ref:`CapsuleShape3D<class_Ca
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_CYLINDER** = ``5``
 
-Constant for creating a cylinder shape (used by the :ref:`CylinderShape3D<class_CylinderShape3D>` resource).
+Константа для создания цилиндрической формы (используется ресурсом :ref:`CylinderShape3D<class_CylinderShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_CONVEX_POLYGON:
 
@@ -1207,7 +1207,7 @@ Constant for creating a cylinder shape (used by the :ref:`CylinderShape3D<class_
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_CONVEX_POLYGON** = ``6``
 
-Constant for creating a convex polygon shape (used by the :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` resource).
+Константа для создания выпуклой многоугольной фигуры (используется ресурсом :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_CONCAVE_POLYGON:
 
@@ -1215,7 +1215,7 @@ Constant for creating a convex polygon shape (used by the :ref:`ConvexPolygonSha
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_CONCAVE_POLYGON** = ``7``
 
-Constant for creating a concave polygon (trimesh) shape (used by the :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` resource).
+Константа для создания вогнутой многоугольной (тримеш) формы (используется ресурсом :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_HEIGHTMAP:
 
@@ -1223,7 +1223,7 @@ Constant for creating a concave polygon (trimesh) shape (used by the :ref:`Conca
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_HEIGHTMAP** = ``8``
 
-Constant for creating a heightmap shape (used by the :ref:`HeightMapShape3D<class_HeightMapShape3D>` resource).
+Константа для создания формы карты высот (используется ресурсом :ref:`HeightMapShape3D<class_HeightMapShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_SOFT_BODY:
 
@@ -1231,7 +1231,7 @@ Constant for creating a heightmap shape (used by the :ref:`HeightMapShape3D<clas
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_SOFT_BODY** = ``9``
 
-Constant used internally for a soft body shape. Any attempt to create this kind of shape results in an error.
+Константа, используемая внутри для создания мягкой формы тела. Любая попытка создать подобную форму приводит к ошибке.
 
 .. _class_PhysicsServer3D_constant_SHAPE_CUSTOM:
 
@@ -1239,7 +1239,7 @@ Constant used internally for a soft body shape. Any attempt to create this kind 
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_CUSTOM** = ``10``
 
-Constant used internally for a custom shape. Any attempt to create this kind of shape results in an error when using Godot Physics or Jolt Physics.
+Константа, используемая внутри для создания пользовательской формы. Любая попытка создать подобную форму приводит к ошибке при использовании Godot Physics или Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -2932,7 +2932,7 @@ enum **BodyAxis**: :ref:`🔗<enum_PhysicsServer3D_BodyAxis>`
 
 :ref:`RID<class_RID>` **box_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_box_shape_create>`
 
-Creates a 3D box shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the box's half-extents.
+Создает 3D форму параллелепипеда на физическом сервере и возвращает :ref:`RID<class_RID>`, который ее идентифицирует. Используйте :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` для установки половинных границ параллелепипеда.
 
 .. rst-class:: classref-item-separator
 
@@ -2944,7 +2944,7 @@ Creates a 3D box shape in the physics server, and returns the :ref:`RID<class_RI
 
 :ref:`RID<class_RID>` **capsule_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_capsule_shape_create>`
 
-Creates a 3D capsule shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the capsule's height and radius.
+Создает 3D капсулообразную форму на физическом сервере и возвращает :ref:`RID<class_RID>`, идентифицирующий ее. Используйте :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` для установки высоты и радиуса капсулы.
 
 .. rst-class:: classref-item-separator
 
@@ -2956,7 +2956,7 @@ Creates a 3D capsule shape in the physics server, and returns the :ref:`RID<clas
 
 :ref:`RID<class_RID>` **concave_polygon_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_concave_polygon_shape_create>`
 
-Creates a 3D concave polygon shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the concave polygon's triangles.
+Создает 3D вогнутую многоугольную фигуру на физическом сервере и возвращает :ref:`RID<class_RID>`, идентифицирующий ее. Используйте :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` для задания треугольников вогнутого многоугольника.
 
 .. rst-class:: classref-item-separator
 
@@ -2992,7 +2992,7 @@ Creates a 3D concave polygon shape in the physics server, and returns the :ref:`
 
 :ref:`RID<class_RID>` **convex_polygon_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_convex_polygon_shape_create>`
 
-Creates a 3D convex polygon shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the convex polygon's points.
+Создает 3D выпуклую многоугольную фигуру на физическом сервере и возвращает :ref:`RID<class_RID>`, идентифицирующий ее. Используйте :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` для установки точек выпуклого многоугольника.
 
 .. rst-class:: classref-item-separator
 
@@ -3004,9 +3004,9 @@ Creates a 3D convex polygon shape in the physics server, and returns the :ref:`R
 
 :ref:`RID<class_RID>` **custom_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_custom_shape_create>`
 
-Creates a custom shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the shape's data.
+Создает пользовательскую фигуру в физическом сервере и возвращает :ref:`RID<class_RID>`, который ее идентифицирует. Используйте :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` для установки данных фигуры.
 
-\ **Note:** Custom shapes are not supported by the built-in physics servers, so calling this method always produces an error when using Godot Physics or Jolt Physics. Custom physics servers implemented as GDExtensions may support a custom shape.
+\ **Примечание:** Встроенные физические серверы не поддерживают пользовательские фигуры, поэтому вызов этого метода всегда приводит к ошибке при использовании Godot Physics или Jolt Physics. Пользовательские физические серверы, реализованные как GDExtensions, могут поддерживать пользовательские фигуры.
 
 .. rst-class:: classref-item-separator
 
@@ -3018,7 +3018,7 @@ Creates a custom shape in the physics server, and returns the :ref:`RID<class_RI
 
 :ref:`RID<class_RID>` **cylinder_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_cylinder_shape_create>`
 
-Creates a 3D cylinder shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the cylinder's height and radius.
+Создает 3D цилиндрическую форму на физическом сервере и возвращает :ref:`RID<class_RID>`, который ее идентифицирует. Используйте :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` для установки высоты и радиуса цилиндра.
 
 .. rst-class:: classref-item-separator
 
@@ -3102,7 +3102,7 @@ Creates a 3D cylinder shape in the physics server, and returns the :ref:`RID<cla
 
 :ref:`RID<class_RID>` **heightmap_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_heightmap_shape_create>`
 
-Creates a 3D heightmap shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the heightmap's data.
+Создает 3D карту высот на физическом сервере и возвращает :ref:`RID<class_RID>`, который ее идентифицирует. Используйте :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` для установки данных карты высот.
 
 .. rst-class:: classref-item-separator
 
@@ -3390,7 +3390,7 @@ Creates a 3D heightmap shape in the physics server, and returns the :ref:`RID<cl
 
 :ref:`RID<class_RID>` **separation_ray_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_separation_ray_shape_create>`
 
-Creates a 3D separation ray shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the shape's ``length`` and ``slide_on_slope`` properties.
+Создает 3D форму разделительного луча на физическом сервере и возвращает :ref:`RID<class_RID>`, который ее идентифицирует. Используйте :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` для установки свойств ``length`` и ``slide_on_slope`` формы.
 
 .. rst-class:: classref-item-separator
 
@@ -3414,7 +3414,7 @@ Creates a 3D separation ray shape in the physics server, and returns the :ref:`R
 
 :ref:`Variant<class_Variant>` **shape_get_data**\ (\ shape\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_shape_get_data>`
 
-Returns the shape data that configures the shape, such as the half-extents of a box or the triangles of a concave (trimesh) shape. See :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` for the precise format of this data in each case.
+Возвращает данные о форме, которые определяют её конфигурацию, например, полуграницы прямоугольника или треугольники вогнутой (тримешной) фигуры. Точный формат этих данных в каждом случае см. в :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4076,7 +4076,7 @@ Sets the shape data that configures the shape. The ``data`` to be passed depends
 
 :ref:`RID<class_RID>` **sphere_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_sphere_shape_create>`
 
-Creates a 3D sphere shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the sphere's radius.
+Создает 3D сферическую форму на физическом сервере и возвращает :ref:`RID<class_RID>`, идентифицирующий ее. Используйте :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` для установки радиуса сферы.
 
 .. rst-class:: classref-item-separator
 
@@ -4088,7 +4088,7 @@ Creates a 3D sphere shape in the physics server, and returns the :ref:`RID<class
 
 :ref:`RID<class_RID>` **world_boundary_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_world_boundary_shape_create>`
 
-Creates a 3D world boundary shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the shape's normal direction and distance properties.
+Создает 3D форму границы мира на физическом сервере и возвращает :ref:`RID<class_RID>`, идентифицирующий ее. Используйте :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` для установки свойств направления нормали и расстояния формы.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

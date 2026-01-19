@@ -84,7 +84,7 @@ Señales
 
 **delta_synchronized**\ (\ ) :ref:`🔗<class_MultiplayerSynchronizer_signal_delta_synchronized>`
 
-Emitted when a new delta synchronization state is received by this synchronizer after the properties have been updated.
+Emitida cuando se recibe un nuevo estado de sincronización delta por parte de este sincronizador después de que las propiedades han sido actualizadas.
 
 .. rst-class:: classref-item-separator
 
@@ -96,7 +96,7 @@ Emitted when a new delta synchronization state is received by this synchronizer 
 
 **synchronized**\ (\ ) :ref:`🔗<class_MultiplayerSynchronizer_signal_synchronized>`
 
-Emitted when a new synchronization state is received by this synchronizer after the properties have been updated.
+Emitida cuando este sincronizador recibe un nuevo estado de sincronización después de que las propiedades han sido actualizadas.
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +147,7 @@ Visibility filters are updated during physics frames (see :ref:`Node.NOTIFICATIO
 
 :ref:`VisibilityUpdateMode<enum_MultiplayerSynchronizer_VisibilityUpdateMode>` **VISIBILITY_PROCESS_NONE** = ``2``
 
-Visibility filters are not updated automatically, and must be updated manually by calling :ref:`update_visibility()<class_MultiplayerSynchronizer_method_update_visibility>`.
+Los filtros de visibilidad no se actualizan automáticamente y deben ser actualizados manualmente llamando a :ref:`update_visibility()<class_MultiplayerSynchronizer_method_update_visibility>`.
 
 .. rst-class:: classref-section-separator
 
@@ -169,7 +169,7 @@ Descripciones de Propiedades
 - |void| **set_delta_interval**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_delta_interval**\ (\ )
 
-Time interval between delta synchronizations. Used when the replication is set to :ref:`SceneReplicationConfig.REPLICATION_MODE_ON_CHANGE<class_SceneReplicationConfig_constant_REPLICATION_MODE_ON_CHANGE>`. If set to ``0.0`` (the default), delta synchronizations happen every network process frame.
+Intervalo de tiempo entre sincronizaciones delta. Se usa cuando la replicación está configurada en :ref:`SceneReplicationConfig.REPLICATION_MODE_ON_CHANGE<class_SceneReplicationConfig_constant_REPLICATION_MODE_ON_CHANGE>`. Si se establece en ``0.0`` (el valor por defecto), las sincronizaciones delta ocurren en cada fotograma de proceso de red.
 
 .. rst-class:: classref-item-separator
 
@@ -203,7 +203,7 @@ Whether synchronization should be visible to all peers by default. See :ref:`set
 - |void| **set_replication_config**\ (\ value\: :ref:`SceneReplicationConfig<class_SceneReplicationConfig>`\ )
 - :ref:`SceneReplicationConfig<class_SceneReplicationConfig>` **get_replication_config**\ (\ )
 
-Resource containing which properties to synchronize.
+Recurso que contiene las propiedades a sincronizar.
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ Resource containing which properties to synchronize.
 - |void| **set_replication_interval**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_replication_interval**\ (\ )
 
-Time interval between synchronizations. Used when the replication is set to :ref:`SceneReplicationConfig.REPLICATION_MODE_ALWAYS<class_SceneReplicationConfig_constant_REPLICATION_MODE_ALWAYS>`. If set to ``0.0`` (the default), synchronizations happen every network process frame.
+Intervalo de tiempo entre sincronizaciones. Se usa cuando la replicación está configurada en :ref:`SceneReplicationConfig.REPLICATION_MODE_ALWAYS<class_SceneReplicationConfig_constant_REPLICATION_MODE_ALWAYS>`. Si se establece en ``0.0`` (el valor por defecto), las sincronizaciones ocurren en cada fotograma de proceso de red.
 
 .. rst-class:: classref-item-separator
 
@@ -237,9 +237,9 @@ Time interval between synchronizations. Used when the replication is set to :ref
 - |void| **set_root_path**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_root_path**\ (\ )
 
-Node path that replicated properties are relative to.
+Ruta del nodo a la que las propiedades replicadas son relativas.
 
-If :ref:`root_path<class_MultiplayerSynchronizer_property_root_path>` was spawned by a :ref:`MultiplayerSpawner<class_MultiplayerSpawner>`, the node will be also be spawned and despawned based on this synchronizer visibility options.
+Si :ref:`root_path<class_MultiplayerSynchronizer_property_root_path>` fue generado por un :ref:`MultiplayerSpawner<class_MultiplayerSpawner>`, el nodo también será generado y eliminado según las opciones de visibilidad de este sincronizador.
 
 .. rst-class:: classref-item-separator
 
@@ -256,7 +256,7 @@ If :ref:`root_path<class_MultiplayerSynchronizer_property_root_path>` was spawne
 - |void| **set_visibility_update_mode**\ (\ value\: :ref:`VisibilityUpdateMode<enum_MultiplayerSynchronizer_VisibilityUpdateMode>`\ )
 - :ref:`VisibilityUpdateMode<enum_MultiplayerSynchronizer_VisibilityUpdateMode>` **get_visibility_update_mode**\ (\ )
 
-Specifies when visibility filters are updated.
+Especifica cuándo se actualizan los filtros de visibilidad.
 
 .. rst-class:: classref-section-separator
 

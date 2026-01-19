@@ -7,16 +7,16 @@ EditorResourcePreview
 
 **Hereda:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A node used to generate previews of resources or files.
+Un nodo utilizado para generar vistas previas de recursos o archivos.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-This node is used to generate previews for resources or files.
+Este nodo se utiliza para generar vistas previas de recursos o archivos.
 
-\ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using :ref:`EditorInterface.get_resource_previewer()<class_EditorInterface_method_get_resource_previewer>`.
+\ **Nota:** Esta clase no debe ser instanciada directamente. En su lugar, accede al singleton usando :ref:`EditorInterface.get_resource_previewer()<class_EditorInterface_method_get_resource_previewer>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -94,9 +94,9 @@ Comprueba si el recurso ha cambiado, si es así, se invalidará y se emitirá la
 
 |void| **queue_edited_resource_preview**\ (\ resource\: :ref:`Resource<class_Resource>`, receiver\: :ref:`Object<class_Object>`, receiver_func\: :ref:`StringName<class_StringName>`, userdata\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_EditorResourcePreview_method_queue_edited_resource_preview>`
 
-Queue the ``resource`` being edited for preview. Once the preview is ready, the ``receiver``'s ``receiver_func`` will be called. The ``receiver_func`` must take the following four arguments: :ref:`String<class_String>` path, :ref:`Texture2D<class_Texture2D>` preview, :ref:`Texture2D<class_Texture2D>` thumbnail_preview, :ref:`Variant<class_Variant>` userdata. ``userdata`` can be anything, and will be returned when ``receiver_func`` is called.
+Encola el ``resource`` que se está editando para su vista previa. Una vez que la vista previa esté lista, se llamará a ``receiver_func`` de ``receiver``. ``receiver_func`` debe tomar los siguientes cuatro argumentos: :ref:`String<class_String>` path, :ref:`Texture2D<class_Texture2D>` preview, :ref:`Texture2D<class_Texture2D>` thumbnail_preview, :ref:`Variant<class_Variant>` userdata. ``userdata`` puede ser cualquier cosa, y será devuelto cuando se llame a ``receiver_func``.
 
-\ **Note:** If it was not possible to create the preview the ``receiver_func`` will still be called, but the preview will be ``null``.
+\ **Nota:** Si no fue posible crear la vista previa, se seguirá llamando a ``receiver_func``, pero la vista previa será ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -108,9 +108,9 @@ Queue the ``resource`` being edited for preview. Once the preview is ready, the 
 
 |void| **queue_resource_preview**\ (\ path\: :ref:`String<class_String>`, receiver\: :ref:`Object<class_Object>`, receiver_func\: :ref:`StringName<class_StringName>`, userdata\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_EditorResourcePreview_method_queue_resource_preview>`
 
-Queue a resource file located at ``path`` for preview. Once the preview is ready, the ``receiver``'s ``receiver_func`` will be called. The ``receiver_func`` must take the following four arguments: :ref:`String<class_String>` path, :ref:`Texture2D<class_Texture2D>` preview, :ref:`Texture2D<class_Texture2D>` thumbnail_preview, :ref:`Variant<class_Variant>` userdata. ``userdata`` can be anything, and will be returned when ``receiver_func`` is called.
+Encola un archivo de recurso ubicado en ``path`` para su vista previa. Una vez que la vista previa esté lista, se llamará a ``receiver_func`` de ``receiver``. ``receiver_func`` debe tomar los siguientes cuatro argumentos: :ref:`String<class_String>` path, :ref:`Texture2D<class_Texture2D>` preview, :ref:`Texture2D<class_Texture2D>` thumbnail_preview, :ref:`Variant<class_Variant>` userdata. ``userdata`` puede ser cualquier cosa, y será devuelto cuando se llame a ``receiver_func``.
 
-\ **Note:** If it was not possible to create the preview the ``receiver_func`` will still be called, but the preview will be ``null``.
+\ **Nota:** Si no fue posible crear la vista previa, se seguirá llamando a ``receiver_func``, pero la vista previa será ``null``.
 
 .. rst-class:: classref-item-separator
 

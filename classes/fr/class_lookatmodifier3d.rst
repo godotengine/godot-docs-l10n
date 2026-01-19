@@ -381,7 +381,7 @@ If ``1.0``, no damping is performed. If ``0.0``, damping is always performed.
 - |void| **set_primary_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_limit_angle**\ (\ )
 
-L'angle limite de la rotation primaire lorsque :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` vaut ``true``.
+The limit angle of the primary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``true``, in radians.
 
 .. rst-class:: classref-item-separator
 
@@ -415,7 +415,7 @@ Le seuil pour commencer l'amortissement pour :ref:`primary_negative_limit_angle<
 - |void| **set_primary_negative_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_negative_limit_angle**\ (\ )
 
-L'angle limite du côté négatif de la rotation primaire lorsque :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` vaut ``false``.
+The limit angle of negative side of the primary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ Le seuil pour commencer l'amortissement pour :ref:`primary_positive_limit_angle<
 - |void| **set_primary_positive_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_positive_limit_angle**\ (\ )
 
-L'angle limite du côté positif de la rotation primaire lorsque :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` vaut ``false``.
+The limit angle of positive side of the primary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
 
 .. rst-class:: classref-item-separator
 
@@ -517,7 +517,7 @@ Le seuil pour commencer l'amortissement pour :ref:`secondary_limit_angle<class_L
 - |void| **set_secondary_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_limit_angle**\ (\ )
 
-L'angle limite de la rotation secondaire lorsque :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` vaut ``true``.
+The limit angle of the secondary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``true``, in radians.
 
 .. rst-class:: classref-item-separator
 
@@ -551,7 +551,7 @@ Le seuil pour commencer l'amortissement pour :ref:`secondary_negative_limit_angl
 - |void| **set_secondary_negative_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_negative_limit_angle**\ (\ )
 
-L'angle limite du côté négatif de la rotation secondaire lorsque :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` vaut ``false``.
+The limit angle of negative side of the secondary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
 
 .. rst-class:: classref-item-separator
 
@@ -585,7 +585,7 @@ Le seuil pour commencer l'amortissement pour :ref:`secondary_positive_limit_angl
 - |void| **set_secondary_positive_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_positive_limit_angle**\ (\ )
 
-L'angle limite du côté positif de la rotation secondaire lorsque :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` vaut ``false``.
+The limit angle of positive side of the secondary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
 
 .. rst-class:: classref-item-separator
 

@@ -7,16 +7,16 @@ OptimizedTranslation
 
 **Успадковує:** :ref:`Translation<class_Translation>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-An optimized translation.
+Оптимізований переклад.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-An optimized translation. Uses real-time compressed translations, which results in very small dictionaries.
+Оптимізований переклад. Використовує стиснуті переклади в реальному часі, що призводить до дуже малих словників.
 
-This class does not store the untranslated strings for optimization purposes. Therefore, :ref:`Translation.get_message_list()<class_Translation_method_get_message_list>` always returns an empty array, and :ref:`Translation.get_message_count()<class_Translation_method_get_message_count>` always returns ``0``.
+Цей клас не зберігає неперекладені рядки для цілей оптимізації. Тому метод :ref:`Translation.get_message_list()<class_Translation_method_get_message_list>` завжди повертає порожній масив, а метод :ref:`Translation.get_message_count()<class_Translation_method_get_message_count>` завжди повертає ``0``.
 
 .. rst-class:: classref-reftable-group
 
@@ -45,11 +45,11 @@ This class does not store the untranslated strings for optimization purposes. Th
 
 |void| **generate**\ (\ from\: :ref:`Translation<class_Translation>`\ ) :ref:`🔗<class_OptimizedTranslation_method_generate>`
 
-Generates and sets an optimized translation from the given :ref:`Translation<class_Translation>` resource.
+Генерує та встановлює оптимізований переклад з заданого ресурсу :ref:`Translation<class_Translation>`.
 
-\ **Note:** Messages in ``from`` should not use context or plural forms.
+\ **Примітка:** Повідомлення в ``from`` не повинні використовувати контекстні або множинні форми.
 
-\ **Note:** This method is intended to be used in the editor. It does nothing when called from an exported project.
+\ **Примітка:** Цей метод призначений для використання в редакторі. Він нічого не робить, коли викликається з експортованого проекту.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

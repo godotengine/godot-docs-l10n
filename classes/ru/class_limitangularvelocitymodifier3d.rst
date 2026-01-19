@@ -7,16 +7,16 @@ LimitAngularVelocityModifier3D
 
 **Наследует:** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Limit bone rotation angular velocity.
+Ограничить угловую скорость вращения кости.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-This modifier limits bone rotation angular velocity by comparing poses between previous and current frame.
+Этот модификатор ограничивает угловую скорость вращения костей, сравнивая положения между предыдущим и текущим кадрами.
 
-You can add bone chains by specifying their root and end bones, then add the bones between them to a list. Modifier processes either that list or the bones excluding those in the list depending on the option :ref:`exclude<class_LimitAngularVelocityModifier3D_property_exclude>`.
+Вы можете добавлять цепочки костей, указывая их корневые и конечные кости, а затем добавлять кости между ними в список. Модификатор обрабатывает либо этот список, либо кости, исключая кости из списка, в зависимости от параметра :ref:`exclude<class_LimitAngularVelocityModifier3D_property_exclude>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -86,7 +86,7 @@ You can add bone chains by specifying their root and end bones, then add the bon
 - |void| **set_chain_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_chain_count**\ (\ )
 
-The number of chains.
+Количество цепочек.
 
 .. rst-class:: classref-item-separator
 
@@ -103,9 +103,9 @@ The number of chains.
 - |void| **set_exclude**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_exclude**\ (\ )
 
-If ``true``, the modifier processes bones not included in the bone list.
+Если ``true``, модификатор обрабатывает кости, не включенные в список костей.
 
-If ``false``, the bones processed by the modifier are equal to the bone list.
+Если ``false``, кости, обрабатываемые модификатором, равны костям из списка.
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ If ``false``, the bones processed by the modifier are equal to the bone list.
 
 :ref:`int<class_int>` **joint_count** = ``0`` :ref:`🔗<class_LimitAngularVelocityModifier3D_property_joint_count>`
 
-The number of joints in the list which created by chains dynamically.
+Количество соединений в списке, созданных динамически цепочками.
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +134,7 @@ The number of joints in the list which created by chains dynamically.
 - |void| **set_max_angular_velocity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_angular_velocity**\ (\ )
 
-The maximum angular velocity per second.
+Максимальная угловая скорость в секунду.
 
 .. rst-class:: classref-section-separator
 
@@ -151,7 +151,7 @@ The maximum angular velocity per second.
 
 |void| **clear_chains**\ (\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_clear_chains>`
 
-Clear all chains.
+Очистить все цепочки.
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ Clear all chains.
 
 |void| **reset**\ (\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_reset>`
 
-Sets the reference pose for angle comparison to the current pose with the influence of constraints removed. This function is automatically triggered when joints change or upon activation.
+Устанавливает эталонное положение для сравнения углов относительно текущего положения без учета влияния ограничений. Эта функция автоматически запускается при изменении положения суставов или при активации.
 
 .. rst-class:: classref-item-separator
 
@@ -235,9 +235,9 @@ Sets the reference pose for angle comparison to the current pose with the influe
 
 |void| **set_end_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_set_end_bone_name>`
 
-Sets the end bone name of the bone chain.
+Задает имя конечной кости цепочки костей.
 
-\ **Note:** End bone must be the root bone or a child of the root bone.
+\ **Примечание:** Конечная кость должна быть корневой костью или дочерней костью корневой кости.
 
 .. rst-class:: classref-item-separator
 

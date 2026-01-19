@@ -16,13 +16,13 @@ Clase base para los nodos :ref:`AnimationTree<class_AnimationTree>`. No está re
 Descripción
 ----------------------
 
-Base resource for :ref:`AnimationTree<class_AnimationTree>` nodes. In general, it's not used directly, but you can create custom ones with custom blending formulas.
+Recurso base para los nodos :ref:`AnimationTree<class_AnimationTree>`. En general, no se utiliza directamente, pero se pueden crear otros personalizados con fórmulas de mezcla personalizadas.
 
-Inherit this when creating animation nodes mainly for use in :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`, otherwise :ref:`AnimationRootNode<class_AnimationRootNode>` should be used instead.
+Heredar esto al crear nodos de animación principalmente para su uso en :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`; de lo contrario, se debe utilizar :ref:`AnimationRootNode<class_AnimationRootNode>` en su lugar.
 
-You can access the time information as read-only parameter which is processed and stored in the previous frame for all nodes except :ref:`AnimationNodeOutput<class_AnimationNodeOutput>`.
+Se puede acceder a la información de tiempo como parámetro de solo lectura que se procesa y almacena en el fotograma anterior para todos los nodos excepto :ref:`AnimationNodeOutput<class_AnimationNodeOutput>`.
 
-\ **Note:** If multiple inputs exist in the **AnimationNode**, which time information takes precedence depends on the type of **AnimationNode**.
+\ **Nota:** Si existen varias entradas en **AnimationNode**, la información de tiempo que tiene prioridad depende del tipo de **AnimationNode**.
 
 ::
 

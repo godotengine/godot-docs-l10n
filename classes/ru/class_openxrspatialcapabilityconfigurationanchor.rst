@@ -9,14 +9,14 @@ OpenXRSpatialCapabilityConfigurationAnchor
 
 **Наследует:** :ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Configuration header for spatial anchors.
+Заголовок конфигурации для пространственных привязок.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-Configuration header for spatial anchors. Pass this to :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` to create a spatial context with spatial anchor capabilities.
+Заголовок конфигурации для пространственных привязок. Передайте его методу :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>`, чтобы создать пространственный контекст с возможностями пространственных привязок.
 
 .. rst-class:: classref-reftable-group
 
@@ -45,9 +45,9 @@ Configuration header for spatial anchors. Pass this to :ref:`OpenXRSpatialEntity
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_enabled_components**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationAnchor_method_get_enabled_components>`
 
-Returns the components enabled by this configuration.
+Возвращает компоненты, включенные данной конфигурацией.
 
-\ **Note:** Only valid after this configuration was used to create a spatial context.
+\ **Примечание:** Действительно только после использования данной конфигурации для создания пространственного контекста.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

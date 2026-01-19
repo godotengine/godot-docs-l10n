@@ -1902,6 +1902,8 @@ Propiedades
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`xr/openxr/submit_depth_buffer<class_ProjectSettings_property_xr/openxr/submit_depth_buffer>`                                                                                                         | ``false``                                                                                        |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`xr/openxr/target_api_version<class_ProjectSettings_property_xr/openxr/target_api_version>`                                                                                                           | ``""``                                                                                           |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`xr/openxr/view_configuration<class_ProjectSettings_property_xr/openxr/view_configuration>`                                                                                                           | ``"1"``                                                                                          |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`xr/shaders/enabled<class_ProjectSettings_property_xr/shaders/enabled>`                                                                                                                               | ``false``                                                                                        |
@@ -3023,7 +3025,7 @@ It is recommended to include your own addons/libraries, either project-specific 
 
 :ref:`int<class_int>` **debug/gdscript/warnings/empty_file** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/empty_file>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an empty file is parsed.
+Cuando se establece en **Warn** o **Error**, produce una advertencia o un error respectivamente cuando se analiza un archivo vacío.
 
 .. rst-class:: classref-item-separator
 
@@ -3241,7 +3243,7 @@ Cuando está activado, el uso de una propiedad, enumeración o función que ha s
 
 :ref:`int<class_int>` **debug/gdscript/warnings/return_value_discarded** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/return_value_discarded>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a function without using its return value (by assigning it to a variable or using it as a function argument). These return values are sometimes used to indicate possible errors using the :ref:`Error<enum_@GlobalScope_Error>` enum.
+Si está establecido como **Warn** o **Error**, produce una advertencia o un error respectivamente al llamar a una función sin utilizar su valor de retorno (asignándolo a una variable o utilizándolo como argumento de la función). Esos valores de retorno se utilizan a veces para denotar posibles errores mediante el uso del enum :ref:`Error<enum_@GlobalScope_Error>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5303,7 +5305,7 @@ La calidad de codificación de vídeo que se utilizará al escribir un vídeo Th
 
 :ref:`String<class_String>` **editor/naming/default_signal_callback_name** = ``"_on_{node_name}_{signal_name}"`` :ref:`🔗<class_ProjectSettings_property_editor/naming/default_signal_callback_name>`
 
-El formato del nombre de la retrollamada de señal por defecto (en el Diálogo de Conexión de Señal). Las siguientes sustituciones están disponibles: ``{NodeName}``, ``{nodeName}``, ``{node_name}``, ``{SignalName}``, ``{signalName}``, y ``{signal_name}``.
+El formato del nombre de la callback de señal por defecto (en el Diálogo de Conexión de Señal). Las siguientes sustituciones están disponibles: ``{NodeName}``, ``{nodeName}``, ``{node_name}``, ``{SignalName}``, ``{signalName}``, y ``{signal_name}``.
 
 .. rst-class:: classref-item-separator
 
@@ -5725,7 +5727,7 @@ Font glyph subpixel positioning mode for the default project font. See :ref:`Fon
 
 The default scale factor for :ref:`Control<class_Control>`\ s, when not overridden by a :ref:`Theme<class_Theme>`.
 
-\ **Note:** This property is only read when the project starts. To change the default scale at runtime, set :ref:`ThemeDB.fallback_base_scale<class_ThemeDB_property_fallback_base_scale>` instead.
+\ **Note:** This property is only read when the project starts. To change the default theme scale at runtime, set :ref:`ThemeDB.fallback_base_scale<class_ThemeDB_property_fallback_base_scale>` instead. However, to adjust the scale of all 2D elements at runtime, it's preferable to use :ref:`Window.content_scale_factor<class_Window_property_content_scale_factor>` on the root :ref:`Window<class_Window>` node instead (as this also affects overridden :ref:`Theme<class_Theme>`\ s). See :doc:`Multiple resolutions <../tutorials/rendering/multiple_resolutions>` in the documentation for details.
 
 .. rst-class:: classref-item-separator
 
@@ -10905,11 +10907,17 @@ Controls how much physics ticks are synchronized with real time. For 0 or less, 
 
 :ref:`int<class_int>` **physics/common/physics_ticks_per_second** = ``60`` :ref:`🔗<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`
 
-The number of fixed iterations per second. This controls how often physics simulation and :ref:`Node._physics_process()<class_Node_private_method__physics_process>` methods are run. See also :ref:`application/run/max_fps<class_ProjectSettings_property_application/run/max_fps>`.
+The number of fixed iterations per second. This controls how often physics simulation and the :ref:`Node._physics_process()<class_Node_private_method__physics_process>` method are run.
+
+CPU usage scales approximately with the physics tick rate. However, at very low tick rates (usually below 30), physics behavior can break down. Input can also become less responsive at low tick rates as there can be a gap between input being registered, and the response on the next physics tick. High tick rates give more accurate physics simulation, particularly for fast moving objects. For example, racing games may benefit from increasing the tick rate above the default 60.
+
+See also :ref:`application/run/max_fps<class_ProjectSettings_property_application/run/max_fps>`.
 
 \ **Note:** This property is only read when the project starts. To change the physics FPS at runtime, set :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` instead.
 
 \ **Note:** Only :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` physics ticks may be simulated per rendered frame at most. If more physics ticks have to be simulated per rendered frame to keep up with rendering, the project will appear to slow down (even if ``delta`` is used consistently in physics calculations). Therefore, it is recommended to also increase :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` if increasing :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` significantly above its default value.
+
+\ **Note:** Consider enabling :doc:`physics interpolation <../tutorials/physics/interpolation/index>` if you change :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` to a value that is not a multiple of ``60``. Using physics interpolation will avoid jittering when the monitor refresh rate and physics update rate don't exactly match.
 
 .. rst-class:: classref-item-separator
 
@@ -14231,6 +14239,18 @@ Si es ``true``, Godot mostrará un modal de alerta cuando la inicialización de 
 :ref:`bool<class_bool>` **xr/openxr/submit_depth_buffer** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/submit_depth_buffer>`
 
 Si es ``true``, OpenXR gestionará el búfer de profundidad y lo usará para la reproyección avanzada, siempre que sea compatible con el runtime de XR. Ten en cuenta que algunas características de renderizado de Godot no se pueden usar con esta función.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ProjectSettings_property_xr/openxr/target_api_version:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **xr/openxr/target_api_version** = ``""`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/target_api_version>`
+
+Optionally sets a specific API version of OpenXR to initialize in ``major.minor.patch`` notation. Some XR runtimes gate old behavior behind version checks. This is non-standard OpenXR behavior.
 
 .. rst-class:: classref-item-separator
 

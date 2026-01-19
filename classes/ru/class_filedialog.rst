@@ -16,9 +16,9 @@ FileDialog
 Описание
 ----------------
 
-**FileDialog** is a preset dialog used to choose files and directories in the filesystem. It supports filter masks. **FileDialog** automatically sets its window title according to the :ref:`file_mode<class_FileDialog_property_file_mode>`. If you want to use a custom title, disable this by setting :ref:`mode_overrides_title<class_FileDialog_property_mode_overrides_title>` to ``false``.
+**FileDialog** — это предустановленный диалог, используемый для выбора файлов и каталогов в файловой системе. Он поддерживает маски фильтров. **FileDialog** автоматически устанавливает заголовок окна в соответствии с :ref:`file_mode<class_FileDialog_property_file_mode>`. Если вы хотите использовать пользовательский заголовок, отключите эту функцию, установив :ref:`mode_overrides_title<class_FileDialog_property_mode_overrides_title>` в ``false``.
 
-\ **Note:** **FileDialog** is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **Примечание:** **FileDialog** по умолчанию невидим. Чтобы сделать его видимым, вызовите один из методов ``popup_*`` из :ref:`Window<class_Window>` узла, например, :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -444,9 +444,9 @@ enum **Customization**: :ref:`🔗<enum_FileDialog_Customization>`
 
 :ref:`Customization<enum_FileDialog_Customization>` **CUSTOMIZATION_OVERWRITE_WARNING** = ``7``
 
-If enabled, the **FileDialog** will warn the user before overwriting files in save mode.
+Если включено, **FileDialog** предупредит пользователя перед перезаписью файлов в режиме сохранения.
 
-Equivalent to :ref:`overwrite_warning_enabled<class_FileDialog_property_overwrite_warning_enabled>`.
+Эквивалентно :ref:`overwrite_warning_enabled<class_FileDialog_property_overwrite_warning_enabled>`.
 
 .. _class_FileDialog_constant_CUSTOMIZATION_DELETE:
 
@@ -454,9 +454,9 @@ Equivalent to :ref:`overwrite_warning_enabled<class_FileDialog_property_overwrit
 
 :ref:`Customization<enum_FileDialog_Customization>` **CUSTOMIZATION_DELETE** = ``8``
 
-If enabled, the context menu will show the "Delete" option, which allows moving files and folders to trash.
+Если эта опция включена, в контекстном меню отобразится пункт «Удалить», позволяющий перемещать файлы и папки в корзину.
 
-Equivalent to :ref:`deleting_enabled<class_FileDialog_property_deleting_enabled>`.
+Эквивалентно :ref:`deleting_enabled<class_FileDialog_property_deleting_enabled>`.
 
 .. rst-class:: classref-section-separator
 
@@ -550,7 +550,7 @@ Equivalent to :ref:`deleting_enabled<class_FileDialog_property_deleting_enabled>
 - |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const|
 
-If ``true``, the context menu will show the "Delete" option, which allows moving files and folders to trash.
+Если ``true``, в контекстном меню отобразится опция «Удалить», позволяющая перемещать файлы и папки в корзину.
 
 .. rst-class:: classref-item-separator
 
@@ -671,9 +671,9 @@ If ``true``, the context menu will show the "Delete" option, which allows moving
 - |void| **set_filters**\ (\ value\: :ref:`PackedStringArray<class_PackedStringArray>`\ )
 - :ref:`PackedStringArray<class_PackedStringArray>` **get_filters**\ (\ )
 
-The available file type filters. Each filter string in the array should be formatted like this: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. The description text of the filter is optional and can be omitted. Both file extensions and MIME type should be always set.
+Доступные фильтры по типам файлов. Каждая строка фильтра в массиве должна быть отформатирована следующим образом: ``*.png,*.jpg,*.jpeg;Файлы изображений;image/png,image/jpeg``. Текст описания фильтра является необязательным и может быть опущен. Расширения файлов и MIME-типы всегда должны быть указаны.
 
-\ **Note:** Embedded file dialogs and Windows file dialogs support only file extensions, while Android, Linux, and macOS file dialogs also support MIME types.
+\ **Примечание:** Встроенные диалоговые окна выбора файлов и диалоговые окна выбора файлов Windows поддерживают только расширения файлов, в то время как диалоговые окна выбора файлов Android, Linux и macOS также поддерживают MIME-типы.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -692,7 +692,7 @@ The available file type filters. Each filter string in the array should be forma
 - |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const|
 
-If ``true``, shows the button for creating new directories (when using :ref:`FILE_MODE_OPEN_DIR<class_FileDialog_constant_FILE_MODE_OPEN_DIR>`, :ref:`FILE_MODE_OPEN_ANY<class_FileDialog_constant_FILE_MODE_OPEN_ANY>`, or :ref:`FILE_MODE_SAVE_FILE<class_FileDialog_constant_FILE_MODE_SAVE_FILE>`), and the context menu will have the "New Folder..." option.
+Если ``true``, отобразится кнопка для создания новых каталогов (при использовании :ref:`FILE_MODE_OPEN_DIR<class_FileDialog_constant_FILE_MODE_OPEN_DIR>`, :ref:`FILE_MODE_OPEN_ANY<class_FileDialog_constant_FILE_MODE_OPEN_ANY>` или :ref:`FILE_MODE_SAVE_FILE<class_FileDialog_constant_FILE_MODE_SAVE_FILE>`), а в контекстном меню появится опция "Новая папка...".
 
 .. rst-class:: classref-item-separator
 
@@ -777,7 +777,7 @@ If ``true``, shows the button for creating new directories (when using :ref:`FIL
 - |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const|
 
-If ``true``, the **FileDialog** will warn the user before overwriting files in save mode.
+Если ``true``, то **FileDialog** предупредит пользователя перед перезаписью файлов в режиме сохранения.
 
 .. rst-class:: classref-item-separator
 
@@ -849,17 +849,17 @@ If ``true``, the **FileDialog** will warn the user before overwriting files in s
 - |void| **set_use_native_dialog**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_native_dialog**\ (\ )
 
-If ``true``, and if supported by the current :ref:`DisplayServer<class_DisplayServer>`, OS native dialog will be used instead of custom one.
+Если ``true`` и если это поддерживается текущим :ref:`DisplayServer<class_DisplayServer>`, вместо пользовательского диалогового окна будет использоваться собственное диалоговое окно ОС.
 
-\ **Note:** On Android, it is only supported for Android 10+ devices and when using :ref:`ACCESS_FILESYSTEM<class_FileDialog_constant_ACCESS_FILESYSTEM>`. For access mode :ref:`ACCESS_RESOURCES<class_FileDialog_constant_ACCESS_RESOURCES>` and :ref:`ACCESS_USERDATA<class_FileDialog_constant_ACCESS_USERDATA>`, the system will fall back to custom FileDialog.
+\ **Примечание:** На Android это поддерживается только для устройств Android 10+ и при использовании :ref:`ACCESS_FILESYSTEM<class_FileDialog_constant_ACCESS_FILESYSTEM>`. Для режимов доступа :ref:`ACCESS_RESOURCES<class_FileDialog_constant_ACCESS_RESOURCES>` и :ref:`ACCESS_USERDATA<class_FileDialog_constant_ACCESS_USERDATA>` система будет использовать пользовательское диалоговое окно FileDialog.
 
-\ **Note:** On Linux and macOS, sandboxed apps always use native dialogs to access the host file system.
+\ **Примечание:** В Linux и macOS изолированные приложения всегда используют собственные диалоговые окна для доступа к файловой системе хоста.
 
-\ **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` to get a list of saved bookmarks.
+\ **Примечание:** В macOS изолированные приложения сохраняют закладки с ограниченным доступом, чтобы сохранить доступ к открытым папкам в нескольких сессиях. Используйте :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>`, чтобы получить список сохраненных закладок.
 
-\ **Note:** Native dialogs are isolated from the base process, file dialog properties can't be modified once the dialog is shown.
+\ **Примечание:** Нативные диалоговые окна изолированы от базового процесса, свойства диалогового окна выбора файла нельзя изменить после его отображения.
 
-\ **Note:** This property is ignored in :ref:`EditorFileDialog<class_EditorFileDialog>`.
+\ **Примечание:** Это свойство игнорируется в :ref:`EditorFileDialog<class_EditorFileDialog>`.
 
 .. rst-class:: classref-section-separator
 
@@ -876,13 +876,13 @@ If ``true``, and if supported by the current :ref:`DisplayServer<class_DisplaySe
 
 |void| **add_filter**\ (\ filter\: :ref:`String<class_String>`, description\: :ref:`String<class_String>` = "", mime_type\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_FileDialog_method_add_filter>`
 
-Adds a comma-separated file extension ``filter`` and comma-separated MIME type ``mime_type`` option to the **FileDialog** with an optional ``description``, which restricts what files can be picked.
+Добавляет в **FileDialog** параметр расширения файла, разделённого запятыми ``filter``, и параметр MIME-типа, разделённого запятыми ``mime_type``, с необязательным параметром ``description``, который ограничивает выбор файлов.
 
-A ``filter`` should be of the form ``"filename.extension"``, where filename and extension can be ``*`` to match any string. Filters starting with ``.`` (i.e. empty filenames) are not allowed.
+Параметр ``filter`` должен иметь вид ``"filename.extension"``, где имя файла и расширение могут быть ``*`` для соответствия любой строке. Фильтры, начинающиеся с ``.`` (т.е. пустые имена файлов), не допускаются.
 
-For example, a ``filter`` of ``"*.png, *.jpg"``, a ``mime_type`` of ``image/png, image/jpeg``, and a ``description`` of ``"Images"`` results in filter text "Images (\*.png, \*.jpg)".
+Например, ``filter`` со значением ``"*.png, *.jpg"``, ``mime_type`` со значением ``image/png, image/jpeg`` и ``description`` со значением ``"Images"`` приведёт к тексту фильтра "Images (\*.png, \*.jpg)".
 
-\ **Note:** Embedded file dialogs and Windows file dialogs support only file extensions, while Android, Linux, and macOS file dialogs also support MIME types.
+\ **Примечание:** Встроенные диалоговые окна выбора файлов и диалоговые окна выбора файлов Windows поддерживают только расширения файлов, в то время как диалоговые окна выбора файлов Android, Linux и macOS также поддерживают типы MIME.
 
 .. rst-class:: classref-item-separator
 
@@ -944,7 +944,7 @@ For example, a ``filter`` of ``"*.png, *.jpg"``, a ``mime_type`` of ``image/png,
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_favorite_list**\ (\ ) |static| :ref:`🔗<class_FileDialog_method_get_favorite_list>`
 
-Returns the list of favorite directories, which is shared by all **FileDialog** nodes. Useful to store the list of favorites between project sessions. This method can be called only from the main thread.
+Возвращает список избранных каталогов, который используется всеми узлами **FileDialog**. Полезен для хранения списка избранных каталогов между сессиями проекта. Этот метод может быть вызван только из основного потока.
 
 .. rst-class:: classref-item-separator
 
@@ -1006,7 +1006,7 @@ Returns the list of favorite directories, which is shared by all **FileDialog** 
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_recent_list**\ (\ ) |static| :ref:`🔗<class_FileDialog_method_get_recent_list>`
 
-Returns the list of recent directories, which is shared by all **FileDialog** nodes. Useful to store the list of recents between project sessions. This method can be called only from the main thread.
+Возвращает список недавно открытых каталогов, который используется всеми узлами **FileDialog**. Полезен для хранения списка недавно открытых каталогов между сессиями проекта. Этот метод может быть вызван только из основного потока.
 
 .. rst-class:: classref-item-separator
 
@@ -1046,9 +1046,9 @@ Returns the list of recent directories, which is shared by all **FileDialog** no
 
 |void| **invalidate**\ (\ ) :ref:`🔗<class_FileDialog_method_invalidate>`
 
-Invalidates and updates this dialog's content list.
+Аннулирует и обновляет список содержимого этого диалогового окна.
 
-\ **Note:** This method does nothing on native file dialogs.
+\ **Примечание:** Этот метод ничего не делает с собственными диалоговыми окнами выбора файла.
 
 .. rst-class:: classref-item-separator
 
@@ -1072,7 +1072,7 @@ Invalidates and updates this dialog's content list.
 
 |void| **popup_file_dialog**\ (\ ) :ref:`🔗<class_FileDialog_method_popup_file_dialog>`
 
-Shows the **FileDialog** using the default size and position for file dialogs, and selects the file name if there is a current file.
+Отображает диалоговое окно выбора файла (**FileDialog**) с использованием размера и положения по умолчанию для диалоговых окон выбора файлов и выбирает имя файла, если есть текущий файл.
 
 .. rst-class:: classref-item-separator
 
@@ -1084,7 +1084,7 @@ Shows the **FileDialog** using the default size and position for file dialogs, a
 
 |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_FileDialog_method_set_customization_flag_enabled>`
 
-Sets the specified customization ``flag``, allowing to customize the features available in this **FileDialog**.
+Устанавливает указанный параметр настройки ``flag``, позволяющий настраивать функции, доступные в этом **FileDialog**.
 
 .. rst-class:: classref-item-separator
 
@@ -1096,9 +1096,9 @@ Sets the specified customization ``flag``, allowing to customize the features av
 
 |void| **set_favorite_list**\ (\ favorites\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |static| :ref:`🔗<class_FileDialog_method_set_favorite_list>`
 
-Sets the list of favorite directories, which is shared by all **FileDialog** nodes. Useful to restore the list of favorites saved with :ref:`get_favorite_list()<class_FileDialog_method_get_favorite_list>`. This method can be called only from the main thread.
+Задает список избранных каталогов, который используется всеми узлами **FileDialog**. Полезен для восстановления списка избранных, сохраненного с помощью :ref:`get_favorite_list()<class_FileDialog_method_get_favorite_list>`. Этот метод можно вызывать только из основного потока.
 
-\ **Note:** **FileDialog** will update its internal :ref:`ItemList<class_ItemList>` of favorites when its visibility changes. Be sure to call this method earlier if you want your changes to have effect.
+\ **Примечание:** **FileDialog** будет обновлять свой внутренний :ref:`ItemList<class_ItemList>` избранных каталогов при изменении его видимости. Обязательно вызовите этот метод раньше, если хотите, чтобы ваши изменения вступили в силу.
 
 .. rst-class:: classref-item-separator
 
@@ -1110,7 +1110,7 @@ Sets the list of favorite directories, which is shared by all **FileDialog** nod
 
 |void| **set_get_icon_callback**\ (\ callback\: :ref:`Callable<class_Callable>`\ ) |static| :ref:`🔗<class_FileDialog_method_set_get_icon_callback>`
 
-Sets the callback used by the **FileDialog** nodes to get a file icon, when :ref:`DISPLAY_LIST<class_FileDialog_constant_DISPLAY_LIST>` mode is used. The callback should take a single :ref:`String<class_String>` argument (file path), and return a :ref:`Texture2D<class_Texture2D>`. If an invalid texture is returned, the :ref:`file<class_FileDialog_theme_icon_file>` icon will be used instead.
+Задает функцию обратного вызова, используемую узлами **FileDialog** для получения значка файла при использовании режима :ref:`DISPLAY_LIST<class_FileDialog_constant_DISPLAY_LIST>`. Функция обратного вызова должна принимать один аргумент :ref:`String<class_String>` (путь к файлу) и возвращать объект :ref:`Texture2D<class_Texture2D>`. Если возвращается недопустимая текстура, вместо нее будет использоваться значок из файла .
 
 .. rst-class:: classref-item-separator
 
@@ -1122,9 +1122,9 @@ Sets the callback used by the **FileDialog** nodes to get a file icon, when :ref
 
 |void| **set_get_thumbnail_callback**\ (\ callback\: :ref:`Callable<class_Callable>`\ ) |static| :ref:`🔗<class_FileDialog_method_set_get_thumbnail_callback>`
 
-Sets the callback used by the **FileDialog** nodes to get a file icon, when :ref:`DISPLAY_THUMBNAILS<class_FileDialog_constant_DISPLAY_THUMBNAILS>` mode is used. The callback should take a single :ref:`String<class_String>` argument (file path), and return a :ref:`Texture2D<class_Texture2D>`. If an invalid texture is returned, the :ref:`file_thumbnail<class_FileDialog_theme_icon_file_thumbnail>` icon will be used instead.
+Задает функцию обратного вызова, используемую узлами **FileDialog** для получения значка файла при использовании режима :ref:`DISPLAY_THUMBNAILS<class_FileDialog_constant_DISPLAY_THUMBNAILS>`. Функция обратного вызова должна принимать один аргумент :ref:`String<class_String>` (путь к файлу) и возвращать :ref:`Texture2D<class_Texture2D>`. Если возвращается недопустимая текстура, вместо нее будет использоваться значок :ref:`file_thumbnail<class_FileDialog_theme_icon_file_thumbnail>`.
 
-Thumbnails are usually more complex and may take a while to load. To avoid stalling the application, you can use :ref:`ImageTexture<class_ImageTexture>` to asynchronously create the thumbnail.
+Миниатюры обычно более сложные и могут загружаться некоторое время. Чтобы избежать задержки приложения, можно использовать :ref:`ImageTexture<class_ImageTexture>` для асинхронного создания миниатюры.
 
 ::
 
@@ -1137,7 +1137,7 @@ Thumbnails are usually more complex and may take a while to load. To avoid stall
         return image_texture
 
     func make_thumbnail_async(path, image_texture):
-        var thumbnail_texture = await generate_thumbnail(path) # Some method that generates a thumbnail.
+        var thumbnail_texture = await generate_thumbnail(path) # Метод, генерирующий миниатюру.
         image_texture.set_image(thumbnail_texture.get_image())
 
 .. rst-class:: classref-item-separator
@@ -1186,9 +1186,9 @@ Thumbnails are usually more complex and may take a while to load. To avoid stall
 
 |void| **set_recent_list**\ (\ recents\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |static| :ref:`🔗<class_FileDialog_method_set_recent_list>`
 
-Sets the list of recent directories, which is shared by all **FileDialog** nodes. Useful to restore the list of recents saved with :ref:`set_recent_list()<class_FileDialog_method_set_recent_list>`. This method can be called only from the main thread.
+Задает список недавно открытых каталогов, который используется всеми узлами **FileDialog**. Полезно для восстановления списка недавно открытых каталогов, сохраненного с помощью :ref:`set_recent_list()<class_FileDialog_method_set_recent_list>`. Этот метод можно вызывать только из основного потока.
 
-\ **Note:** **FileDialog** will update its internal :ref:`ItemList<class_ItemList>` of recent directories when its visibility changes. Be sure to call this method earlier if you want your changes to have effect.
+\ **Примечание:** **FileDialog** будет обновлять свой внутренний :ref:`ItemList<class_ItemList>` недавно открытых каталогов при изменении его видимости. Обязательно вызовите этот метод раньше, если хотите, чтобы ваши изменения вступили в силу.
 
 .. rst-class:: classref-section-separator
 

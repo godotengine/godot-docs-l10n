@@ -14,7 +14,16 @@ TextureCubemapRD
 說明
 ----
 
-此紋理類別可讓您使用直接在 :ref:`RenderingDevice<class_RenderingDevice>` 上建立的立方體貼圖紋理作為材質、網格等的紋理
+This texture class allows you to use a cubemap texture created directly on the :ref:`RenderingDevice<class_RenderingDevice>` as a texture for materials, meshes, etc.
+
+\ **Note:** **TextureCubemapRD** is intended for low-level usage with :ref:`RenderingDevice<class_RenderingDevice>`. For most use cases, use :ref:`Cubemap<class_Cubemap>` instead.
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- `Compute Texture demo <https://godotengine.org/asset-library/asset/2764>`__
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

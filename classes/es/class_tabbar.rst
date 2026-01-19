@@ -387,7 +387,7 @@ Nunca muestra los botones de cerrado.
 
 :ref:`CloseButtonDisplayPolicy<enum_TabBar_CloseButtonDisplayPolicy>` **CLOSE_BUTTON_SHOW_ACTIVE_ONLY** = ``1``
 
-Sólo muestra el botón de cierre en la pestaña actualmente activa.
+Solo muestra el botón de cierre en la pestaña actualmente activa.
 
 .. _class_TabBar_constant_CLOSE_BUTTON_SHOW_ALWAYS:
 

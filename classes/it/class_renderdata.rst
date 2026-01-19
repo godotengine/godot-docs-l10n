@@ -16,9 +16,9 @@ Oggetto astratto di dati di rendering, contiene i dati dei frame relativi al ren
 Descrizione
 ----------------------
 
-Oggetto astratto per i dati di rendering, esiste per il tempo necessario a renderizzare una singola viewport.
+Abstract render data object, exists for the duration of rendering a single viewport. See also :ref:`RenderDataRD<class_RenderDataRD>`, :ref:`RenderSceneData<class_RenderSceneData>`, and :ref:`RenderSceneDataRD<class_RenderSceneDataRD>`.
 
-\ **Nota:** Questo è un oggetto interno nel server di rendering, non istanziarlo da script.
+\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
 
 .. rst-class:: classref-reftable-group
 

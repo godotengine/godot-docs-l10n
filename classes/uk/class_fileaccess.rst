@@ -93,7 +93,7 @@ FileAccess
    +-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                                        | :ref:`close<class_FileAccess_method_close>`\ (\ )                                                                                                                                                                                                                                                       |
    +-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`FileAccess<class_FileAccess>`                                           | :ref:`create_temp<class_FileAccess_method_create_temp>`\ (\ mode_flags\: :ref:`int<class_int>`, prefix\: :ref:`String<class_String>` = "", extension\: :ref:`String<class_String>` = "", keep\: :ref:`bool<class_bool>` = false\ ) |static|                                                             |
+   | :ref:`FileAccess<class_FileAccess>`                                           | :ref:`create_temp<class_FileAccess_method_create_temp>`\ (\ mode_flags\: :ref:`ModeFlags<enum_FileAccess_ModeFlags>`, prefix\: :ref:`String<class_String>` = "", extension\: :ref:`String<class_String>` = "", keep\: :ref:`bool<class_bool>` = false\ ) |static|                                       |
    +-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                                       | :ref:`eof_reached<class_FileAccess_method_eof_reached>`\ (\ ) |const|                                                                                                                                                                                                                                   |
    +-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -253,9 +253,9 @@ enum **ModeFlags**: :ref:`🔗<enum_FileAccess_ModeFlags>`
 
 :ref:`ModeFlags<enum_FileAccess_ModeFlags>` **WRITE** = ``2``
 
-Opens the file for write operations. If the file exists, it is truncated to zero length and its contents are cleared. Otherwise, it is created.
+Відкриває файл для операцій запису. Якщо файл існує, він скорочується до нульової довжини, а його вміст очищується. В іншому випадку він створюється.
 
-\ **Note:** When creating a file it must be in an already existing directory. To recursively create directories for a file path, see :ref:`DirAccess.make_dir_recursive()<class_DirAccess_method_make_dir_recursive>`.
+\ **Примітка:** Під час створення файлу він має знаходитися у вже існуючому каталозі. Щоб рекурсивно створити каталоги для шляху до файлу, див. :ref:`DirAccess.make_dir_recursive()<class_DirAccess_method_make_dir_recursive>`.
 
 .. _class_FileAccess_constant_READ_WRITE:
 
@@ -271,9 +271,9 @@ Opens the file for write operations. If the file exists, it is truncated to zero
 
 :ref:`ModeFlags<enum_FileAccess_ModeFlags>` **WRITE_READ** = ``7``
 
-Opens the file for read and write operations. If the file exists, it is truncated to zero length and its contents are cleared. Otherwise, it is created. The file cursor is positioned at the beginning of the file.
+Відкриває файл для операцій читання та запису. Якщо файл існує, він скорочується до нульової довжини, а його вміст очищується. В іншому випадку він створюється. Курсор файлу розміщується на початку файлу.
 
-\ **Note:** When creating a file it must be in an already existing directory. To recursively create directories for a file path, see :ref:`DirAccess.make_dir_recursive()<class_DirAccess_method_make_dir_recursive>`.
+\ **Примітка:** Під час створення файлу він має знаходитися у вже існуючому каталозі. Щоб рекурсивно створити каталоги для шляху до файлу, див. :ref:`DirAccess.make_dir_recursive()<class_DirAccess_method_make_dir_recursive>`.
 
 .. rst-class:: classref-item-separator
 
@@ -482,7 +482,7 @@ flags **UnixPermissionFlags**: :ref:`🔗<enum_FileAccess_UnixPermissionFlags>`
 
 .. rst-class:: classref-method
 
-:ref:`FileAccess<class_FileAccess>` **create_temp**\ (\ mode_flags\: :ref:`int<class_int>`, prefix\: :ref:`String<class_String>` = "", extension\: :ref:`String<class_String>` = "", keep\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_FileAccess_method_create_temp>`
+:ref:`FileAccess<class_FileAccess>` **create_temp**\ (\ mode_flags\: :ref:`ModeFlags<enum_FileAccess_ModeFlags>`, prefix\: :ref:`String<class_String>` = "", extension\: :ref:`String<class_String>` = "", keep\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_FileAccess_method_create_temp>`
 
 Створює тимчасовий файл. Цей файл буде звільнено, коли буде звільнено повернутий **FileAccess**.
 
@@ -625,7 +625,7 @@ flags **UnixPermissionFlags**: :ref:`🔗<enum_FileAccess_UnixPermissionFlags>`
 
 :ref:`String<class_String>` **get_as_text**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_as_text>`
 
-Returns the whole file as a :ref:`String<class_String>`. Text is interpreted as being UTF-8 encoded. This ignores the file cursor and does not affect it.
+Повертає весь файл як :ref:`String<class_String>`. Текст інтерпретується як закодований UTF-8. Це ігнорує файловий курсор і не впливає на нього.
 
 .. rst-class:: classref-item-separator
 
@@ -697,15 +697,15 @@ Returns the whole file as a :ref:`String<class_String>`. Text is interpreted as 
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_extended_attribute**\ (\ file\: :ref:`String<class_String>`, attribute_name\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_extended_attribute>`
 
-Reads the file extended attribute with name ``attribute_name`` as a byte array.
+Зчитує розширений атрибут файлу з назвою ``attribute_name`` як масив байтів.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Примітка:** Цей метод реалізовано в Linux, macOS та Windows.
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **Примітка:** Підтримка розширених атрибутів залежить від файлової системи. Атрибути будуть втрачені під час переміщення файлу між несумісними файловими системами.
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **Примітка:** У Linux доступні лише атрибути простору імен "user", префікс простору імен не слід включати.
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **Примітка:** У Windows для зберігання розширених атрибутів використовуються альтернативні потоки даних.
 
 .. rst-class:: classref-item-separator
 
@@ -717,15 +717,15 @@ Reads the file extended attribute with name ``attribute_name`` as a byte array.
 
 :ref:`String<class_String>` **get_extended_attribute_string**\ (\ file\: :ref:`String<class_String>`, attribute_name\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_extended_attribute_string>`
 
-Reads the file extended attribute with name ``attribute_name`` as a UTF-8 encoded string.
+Зчитує розширений атрибут файлу з назвою ``attribute_name`` як рядок у кодуванні UTF-8.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Примітка:** Цей метод реалізовано в Linux, macOS та Windows.
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **Примітка:** Підтримка розширених атрибутів залежить від файлової системи. Атрибути будуть втрачені під час переміщення файлу між несумісними файловими системами.
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **Примітка:** У Linux доступні лише атрибути простору імен "user", префікс простору імен не слід включати.
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **Примітка:** У Windows для зберігання розширених атрибутів використовуються альтернативні потоки даних.
 
 .. rst-class:: classref-item-separator
 
@@ -737,15 +737,15 @@ Reads the file extended attribute with name ``attribute_name`` as a UTF-8 encode
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_extended_attributes_list**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_extended_attributes_list>`
 
-Returns a list of file extended attributes.
+Повертає список розширених атрибутів файлу.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Примітка:** Цей метод реалізовано в Linux, macOS та Windows.
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **Примітка:** Підтримка розширених атрибутів залежить від файлової системи. Атрибути будуть втрачені під час переміщення файлу між несумісними файловими системами.
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **Примітка:** У Linux доступні лише атрибути простору імен "user", префікс простору імен не слід включати.
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **Примітка:** У Windows для зберігання розширених атрибутів використовуються альтернативні потоки даних.
 
 .. rst-class:: classref-item-separator
 
@@ -809,9 +809,9 @@ Returns a list of file extended attributes.
 
 :ref:`bool<class_bool>` **get_hidden_attribute**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_hidden_attribute>`
 
-Returns ``true`` if the **hidden** attribute is set on the file at the given path.
+Повертає ``true``, якщо атрибут **hidden** встановлено для файлу за вказаним шляхом.
 
-\ **Note:** This method is implemented on iOS, BSD, macOS, and Windows.
+\ **Примітка:** Цей метод реалізовано на iOS, BSD, macOS та Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -935,9 +935,9 @@ Returns ``true`` if the **hidden** attribute is set on the file at the given pat
 
 :ref:`bool<class_bool>` **get_read_only_attribute**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_read_only_attribute>`
 
-Returns ``true`` if the **read only** attribute is set on the file at the given path.
+Повертає ``true``, якщо для файлу за вказаним шляхом встановлено атрибут **лише для читання**.
 
-\ **Note:** This method is implemented on iOS, BSD, macOS, and Windows.
+\ **Примітка:** Цей метод реалізовано на iOS, BSD, macOS та Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -975,7 +975,7 @@ Returns ``true`` if the **read only** attribute is set on the file at the given 
 
 :ref:`int<class_int>` **get_size**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_size>`
 
-Returns the size of the file at the given path, in bytes, or ``-1`` on error.
+Повертає розмір файлу за заданим шляхом у байтах або ``-1`` у разі помилки.
 
 .. rst-class:: classref-item-separator
 
@@ -987,9 +987,9 @@ Returns the size of the file at the given path, in bytes, or ``-1`` on error.
 
 |bitfield|\[:ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>`\] **get_unix_permissions**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_unix_permissions>`
 
-Returns the UNIX permissions of the file at the given path.
+Повертає дозволи UNIX для файлу за вказаним шляхом.
 
-\ **Note:** This method is implemented on iOS, Linux/BSD, and macOS.
+\ **Примітка:** Цей метод реалізовано на iOS, Linux/BSD та macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1089,15 +1089,15 @@ Returns the UNIX permissions of the file at the given path.
 
 :ref:`Error<enum_@GlobalScope_Error>` **remove_extended_attribute**\ (\ file\: :ref:`String<class_String>`, attribute_name\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_remove_extended_attribute>`
 
-Removes file extended attribute with name ``attribute_name``.
+Вилучає розширений атрибут файлу з назвою ``attribute_name``.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Примітка:** Цей метод реалізовано в Linux, macOS та Windows.
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **Примітка:** Підтримка розширених атрибутів залежить від файлової системи. Атрибути будуть втрачені під час переміщення файлу між несумісними файловими системами.
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **Примітка:** У Linux доступні лише атрибути простору імен "user", префікс простору імен не слід включати.
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **Примітка:** У Windows для зберігання розширених атрибутів використовуються альтернативні потоки даних.
 
 .. rst-class:: classref-item-separator
 
@@ -1121,7 +1121,7 @@ Removes file extended attribute with name ``attribute_name``.
 
 |void| **seek**\ (\ position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FileAccess_method_seek>`
 
-Sets the file cursor to the specified position in bytes, from the beginning of the file. This changes the value returned by :ref:`get_position()<class_FileAccess_method_get_position>`.
+Встановлює курсор файлу у вказану позицію в байтах, від початку файлу. Це змінює значення, що повертається методом :ref:`get_position()<class_FileAccess_method_get_position>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1133,9 +1133,9 @@ Sets the file cursor to the specified position in bytes, from the beginning of t
 
 |void| **seek_end**\ (\ position\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_FileAccess_method_seek_end>`
 
-Sets the file cursor to the specified position in bytes, from the end of the file. This changes the value returned by :ref:`get_position()<class_FileAccess_method_get_position>`.
+Встановлює курсор файлу у вказану позицію в байтах, від кінця файлу. Це змінює значення, що повертається методом :ref:`get_position()<class_FileAccess_method_get_position>`.
 
-\ **Note:** This is an offset, so you should use negative numbers otherwise the file cursor will be at the end of the file.
+\ **Примітка:** Це зміщення, тому слід використовувати від'ємні числа, інакше курсор файлу буде в кінці файлу.
 
 .. rst-class:: classref-item-separator
 
@@ -1147,15 +1147,15 @@ Sets the file cursor to the specified position in bytes, from the end of the fil
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_extended_attribute**\ (\ file\: :ref:`String<class_String>`, attribute_name\: :ref:`String<class_String>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) |static| :ref:`🔗<class_FileAccess_method_set_extended_attribute>`
 
-Writes file extended attribute with name ``attribute_name`` as a byte array.
+Записує розширений атрибут файлу з назвою ``attribute_name`` як байтовий масив.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Примітка:** Цей метод реалізовано в Linux, macOS та Windows.
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **Примітка:** Підтримка розширених атрибутів залежить від файлової системи. Атрибути будуть втрачені під час переміщення файлу між несумісними файловими системами.
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **Примітка:** У Linux доступні лише атрибути простору імен "user", префікс простору імен не слід включати.
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **Примітка:** У Windows для зберігання розширених атрибутів використовуються альтернативні потоки даних.
 
 .. rst-class:: classref-item-separator
 
@@ -1167,15 +1167,15 @@ Writes file extended attribute with name ``attribute_name`` as a byte array.
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_extended_attribute_string**\ (\ file\: :ref:`String<class_String>`, attribute_name\: :ref:`String<class_String>`, data\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_set_extended_attribute_string>`
 
-Writes file extended attribute with name ``attribute_name`` as a UTF-8 encoded string.
+Записує розширений атрибут файлу з назвою ``attribute_name`` як рядок у кодуванні UTF-8.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Примітка:** Цей метод реалізовано в Linux, macOS та Windows.
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **Примітка:** Підтримка розширених атрибутів залежить від файлової системи. Атрибути будуть втрачені під час переміщення файлу між несумісними файловими системами.
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **Примітка:** У Linux доступні лише атрибути простору імен "user", префікс простору імен не слід включати.
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **Примітка:** У Windows для зберігання розширених атрибутів використовуються альтернативні потоки даних.
 
 .. rst-class:: classref-item-separator
 
@@ -1350,11 +1350,11 @@ Writes file extended attribute with name ``attribute_name`` as a UTF-8 encoded s
 
 :ref:`bool<class_bool>` **store_csv_line**\ (\ values\: :ref:`PackedStringArray<class_PackedStringArray>`, delim\: :ref:`String<class_String>` = ","\ ) :ref:`🔗<class_FileAccess_method_store_csv_line>`
 
-Stores the given :ref:`PackedStringArray<class_PackedStringArray>` in the file as a line formatted in the CSV (Comma-Separated Values) format. You can pass a different delimiter ``delim`` to use other than the default ``","`` (comma). This delimiter must be one-character long.
+Зберігає заданий :ref:`PackedStringArray<class_PackedStringArray>` у файлі як рядок, відформатований у форматі CSV (значення, розділені комами). Ви можете передати інший роздільник ``delim``, відмінний від стандартного ``","`` (кома). Цей роздільник має бути довжиною один символ.
 
-Text will be encoded as UTF-8. Returns ``true`` if the operation is successful.
+Текст буде закодовано як UTF-8. Повертає ``true``, якщо операція виконана успішно.
 
-\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
+\ **Примітка:** Якщо виникає помилка, результуюче значення індикатора позиції у файлі є невизначеним.
 
 .. rst-class:: classref-item-separator
 

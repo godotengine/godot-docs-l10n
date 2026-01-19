@@ -136,9 +136,9 @@ Contrôle comment cet AudioStreamRandomizer choisit quel AudioStream joue ensuit
 - |void| **set_random_pitch**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_random_pitch**\ (\ )
 
-The largest possible frequency multiplier of the random pitch variation. Pitch will be randomly chosen within a range of ``1.0 / random_pitch`` and ``random_pitch``. A value of ``1.0`` means no variation. A value of ``2.0`` means pitch will be randomized between double and half.
+Le plus grand multiplicateur de fréquence possible de la variation aléatoire de la hauteur. La hauteur sera choisie aléatoirement dans une plage de ``1.0 / random_pitch`` et ``random_pitch``. Une valeur de ``1.0`` ne signifie aucune variation. Une valeur de ``2.0`` signifie que la hauteur sera aléatoire entre le double et la moitié.
 
-\ **Note:** Setting this property also sets :ref:`random_pitch_semitones<class_AudioStreamRandomizer_property_random_pitch_semitones>`.
+\ **Note :** Définir cette propriété définit également :ref:`random_pitch_semitones<class_AudioStreamRandomizer_property_random_pitch_semitones>`.
 
 .. rst-class:: classref-item-separator
 
@@ -155,9 +155,9 @@ The largest possible frequency multiplier of the random pitch variation. Pitch w
 - |void| **set_random_pitch_semitones**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_random_pitch_semitones**\ (\ )
 
-The largest possible distance, in semitones, of the random pitch variation. A value of ``0.0`` means no variation.
+La plus grande distance possible, en demi-tons, de la variation aléatoire de la hauteur. Une valeur de ``0.0`` signifie aucune variation.
 
-\ **Note:** Setting this property also sets :ref:`random_pitch<class_AudioStreamRandomizer_property_random_pitch>`.
+\ **Note :** Définir cette propriété définit également :ref:`random_pitch<class_AudioStreamRandomizer_property_random_pitch>`.
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ The largest possible distance, in semitones, of the random pitch variation. A va
 - |void| **set_random_volume_offset_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_random_volume_offset_db**\ (\ )
 
-The intensity of random volume variation. Volume will be increased or decreased by a random value up to ``random_volume_offset_db``. A value of ``0.0`` means no variation. A value of ``3.0`` means volume will be randomized between ``-3.0 dB`` and ``+3.0 dB``.
+L'intensité de la variation aléatoire du volume. Le volume sera augmenté ou diminué par une valeur aléatoire jusqu'à ``random_volume_offset_db``. Une valeur de ``0.0`` signifie aucune variation. Une valeur de ``3.0`` signifie que le volume sera aléatoire entre ``-3.0 dB`` et ``+3.0 dB``.
 
 .. rst-class:: classref-item-separator
 

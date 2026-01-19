@@ -739,7 +739,7 @@ enum **TreeCellMode**: :ref:`🔗<enum_TreeItem_TreeCellMode>`
 
 :ref:`StyleBox<class_StyleBox>` **get_custom_stylebox**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_custom_stylebox>`
 
-Returns the given column's custom :ref:`StyleBox<class_StyleBox>` used to draw the background.
+Повертає користувацький :ref:`StyleBox<class_StyleBox>` заданого стовпця, який використовується для малювання фону.
 
 .. rst-class:: classref-item-separator
 
@@ -1429,9 +1429,9 @@ Returns the given column's custom :ref:`StyleBox<class_StyleBox>` used to draw t
 
 |void| **set_custom_bg_color**\ (\ column\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`, just_outline\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_TreeItem_method_set_custom_bg_color>`
 
-Sets the given column's custom background color and whether to just use it as an outline.
+Встановлює власний колір фону заданого стовпця та визначає, чи використовувати його лише як контур.
 
-\ **Note:** If a custom :ref:`StyleBox<class_StyleBox>` is set, the background color will be drawn behind it.
+\ **Примітка:** Якщо встановлено власний :ref:`StyleBox<class_StyleBox>`, колір фону буде намальовано за ним.
 
 .. rst-class:: classref-item-separator
 
@@ -1509,9 +1509,9 @@ Sets the given column's custom background color and whether to just use it as an
 
 |void| **set_custom_stylebox**\ (\ column\: :ref:`int<class_int>`, stylebox\: :ref:`StyleBox<class_StyleBox>`\ ) :ref:`🔗<class_TreeItem_method_set_custom_stylebox>`
 
-Sets the given column's custom :ref:`StyleBox<class_StyleBox>` used to draw the background.
+Встановлює власний колір фону :ref:`StyleBox<class_StyleBox>` заданого стовпця, який використовується для малювання фону.
 
-\ **Note:** If a custom background color is set, the :ref:`StyleBox<class_StyleBox>` will be drawn in front of it.
+\ **Примітка:** Якщо встановлено власний колір фону, :ref:`StyleBox<class_StyleBox>` буде намальовано перед ним.
 
 .. rst-class:: classref-item-separator
 
@@ -1647,7 +1647,7 @@ Sets the given column's custom :ref:`StyleBox<class_StyleBox>` used to draw the 
 
 |void| **set_language**\ (\ column\: :ref:`int<class_int>`, language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TreeItem_method_set_language>`
 
-Sets the language code of the given ``column``'s text to ``language``. This is used for line-breaking and text shaping algorithms. If ``language`` is empty, the current locale is used.
+Встановлює мовний код тексту заданого ``column`` на ``language``. Це використовується для алгоритмів розриву рядків та формування тексту. Якщо ``language`` порожній, використовується поточна локалізація.
 
 .. rst-class:: classref-item-separator
 

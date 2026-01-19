@@ -439,9 +439,9 @@ enum **PlatformOnLeave**: :ref:`🔗<enum_CharacterBody2D_PlatformOnLeave>`
 - |void| **set_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_velocity**\ (\ )
 
-Current velocity vector in pixels per second, used and modified during calls to :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`.
+当前的速度向量，单位为像素每秒。该属性会在调用 :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` 时被使用和修改。
 
-\ **Note:** A common mistake is setting this property to the desired velocity multiplied by ``delta``, which produces a motion vector in pixels.
+\ **注意：**\ 一个常见的错误是将此属性设置为期望速度乘以 ``delta``\ 。这得到的是一个以像素为单位的移动向量。
 
 .. rst-class:: classref-item-separator
 
@@ -525,7 +525,7 @@ Current velocity vector in pixels per second, used and modified during calls to 
 
 :ref:`KinematicCollision2D<class_KinematicCollision2D>` **get_last_slide_collision**\ (\ ) :ref:`🔗<class_CharacterBody2D_method_get_last_slide_collision>`
 
-Returns a :ref:`KinematicCollision2D<class_KinematicCollision2D>` if a collision occurred. The returned value contains information about the latest collision that occurred during the last call to :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Returns ``null`` if no collision occurred. See also :ref:`get_slide_collision()<class_CharacterBody2D_method_get_slide_collision>`.
+如发生碰撞则返回一个 :ref:`KinematicCollision2D<class_KinematicCollision2D>`\ 。返回值包含了最近一次调用 :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` 期间发生的最后一次碰撞的信息。若无碰撞发生，则返回 ``null``\ 。另见 :ref:`get_slide_collision()<class_CharacterBody2D_method_get_slide_collision>`\ 。
 
 .. rst-class:: classref-item-separator
 

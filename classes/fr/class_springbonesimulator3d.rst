@@ -674,9 +674,9 @@ Renvoie l'axe de rotation à la liaison ``joint`` dans la liste des liaisons de 
 
 :ref:`Vector3<class_Vector3>` **get_joint_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_joint_rotation_axis_vector>`
 
-Returns the rotation axis vector for the specified joint in the bone chain. This vector represents the axis around which the joint can rotate. It is determined based on the rotation axis set for the joint.
+Renvoie le vecteur de l'axe de rotation à la liaison spécifiée dans la liste des liaisons de la chaîne d'os. Ce vecteur représente l'axe autour duquel la liaison peut tourner. Il est déterminé en fonction de l'axe de rotation défini pour la liaison.
 
-If :ref:`get_joint_rotation_axis()<class_SpringBoneSimulator3D_method_get_joint_rotation_axis>` is :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, this method returns ``Vector3(0, 0, 0)``.
+Si :ref:`get_joint_rotation_axis()<class_SpringBoneSimulator3D_method_get_joint_rotation_axis>` vaut :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, cette méthode renvoie ``Vector3(0, 0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -760,9 +760,9 @@ Renvoie l'axe de rotation de la chaîne d'os.
 
 :ref:`Vector3<class_Vector3>` **get_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_rotation_axis_vector>`
 
-Returns the rotation axis vector of the bone chain. This vector represents the axis around which the bone chain can rotate. It is determined based on the rotation axis set for the bone chain.
+Renvoie le vecteur de l'axe de rotation de la chaîne d'os. Ce vecteur représente l'axe autour duquel la chaîne d'os peut tourner. Il est déterminé en fonction de l'axe de rotation défini pour la chaîne d'os.
 
-If :ref:`get_rotation_axis()<class_SpringBoneSimulator3D_method_get_rotation_axis>` is :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, this method returns ``Vector3(0, 0, 0)``.
+Si :ref:`get_rotation_axis()<class_SpringBoneSimulator3D_method_get_rotation_axis>` vaut :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, cette méthode renvoie ``Vector3(0, 0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -810,7 +810,7 @@ Renvoie ``true`` si la configuration peut être modifiée individuellement pour 
 
 :ref:`bool<class_bool>` **is_end_bone_extended**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_is_end_bone_extended>`
 
-Returns ``true`` if the end bone is extended to have a tail.
+Renvoie ``true`` si l'os final est prolongé pour avoir une queue.
 
 .. rst-class:: classref-item-separator
 
@@ -1028,9 +1028,9 @@ Définit le chemin de nœud du :ref:`SpringBoneCollision3D<class_SpringBoneColli
 
 |void| **set_extend_end_bone**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_extend_end_bone>`
 
-If ``enabled`` is ``true``, the end bone is extended to have a tail.
+Si ``enabled`` vaut ``true``, l'os de fin est prolongé pour avoir la queue.
 
-The extended tail config is allocated to the last element in the joint list. In other words, if you set ``enabled`` to ``false``, the config of the last element in the joint list has no effect in the simulated result.
+La configuration de la queue prolongée est attribuée au dernier élément de la liste des liaisons. En d'autres termes, si vous définissez ``enabled`` à ``false``, la configuration du dernier élément de la liste de liaisons n'a aucun effet sur le résultat simulé.
 
 .. rst-class:: classref-item-separator
 
@@ -1144,11 +1144,11 @@ Définit le rayon de liaison à la liaison ``joint`` dans la liste de liaisons d
 
 |void| **set_joint_rotation_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, axis\: :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_joint_rotation_axis>`
 
-Sets the rotation axis at ``joint`` in the bone chain's joint list when :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` is ``true``.
+Définit l'axe de rotation de la liaison ``joint`` dans la liste des liaisons de la chaîne d'os lorsque :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` vaut ``true``.
 
-The axes are based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`'s space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
+Les axes sont basés sur l'espace de :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`, si ``axis`` vaut :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, vous pouvez spécifier n'importe quel axe.
 
-\ **Note:** The rotation axis and the forward vector shouldn't be colinear to avoid unintended rotation since **SpringBoneSimulator3D** does not factor in twisting forces.
+\ **Note :** L'axe de rotation et le vecteur avant ne devraient pas être colinéaires pour éviter une rotation intempestive car **SpringBoneSimulator3D** ne prend pas en compte les forces de torsion.
 
 .. rst-class:: classref-item-separator
 
@@ -1160,11 +1160,11 @@ The axes are based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_meth
 
 |void| **set_joint_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, vector\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_joint_rotation_axis_vector>`
 
-Sets the rotation axis vector for the specified joint in the bone chain.
+Définit le vecteur d'axe de rotation pour la liaison spécifiée dans la chaîne d'os.
 
-This vector is normalized by an internal process and represents the axis around which the bone chain can rotate.
+Ce vecteur est normalisé par un processus interne et représente l'axe autour duquel la chaîne d'os peut tourner.
 
-If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
+Si la longueur du vecteur est de ``0``, il est considéré comme synonyme de :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1238,11 +1238,11 @@ Définit le nom de l'os racine de la chaîne d'os.
 
 |void| **set_rotation_axis**\ (\ index\: :ref:`int<class_int>`, axis\: :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_rotation_axis>`
 
-Sets the rotation axis of the bone chain. If set to a specific axis, it acts like a hinge joint. The value is cached in each joint setting in the joint list.
+Définit l'axe de rotation de la chaîne d'os. S'il est défini à un axe spécifique, il agit comme une liaison avec charnière. La valeur est mise en cache dans chaque paramètre de liaison dans la liste des liaisons.
 
-The axes are based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`'s space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
+Les axes sont basés sur l'espace de :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`, si ``axis`` vaut :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, vous pouvez spécifier n'importe quel axe.
 
-\ **Note:** The rotation axis vector and the forward vector shouldn't be colinear to avoid unintended rotation since **SpringBoneSimulator3D** does not factor in twisting forces.
+\ **Note :** Le vecteur d'axe de rotation et le vecteur avant ne devraient pas être colinéaires pour éviter une rotation intempestive car **SpringBoneSimulator3D** ne prend pas en compte les forces de torsion.
 
 .. rst-class:: classref-item-separator
 
@@ -1254,11 +1254,11 @@ The axes are based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_meth
 
 |void| **set_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, vector\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_rotation_axis_vector>`
 
-Sets the rotation axis vector of the bone chain. The value is cached in each joint setting in the joint list.
+Définit le vecteur d'axe de rotation de la chaîne d'os. La valeur est mise en cache dans chaque paramètre de liaison dans la liste des liaisons.
 
-This vector is normalized by an internal process and represents the axis around which the bone chain can rotate.
+Ce vecteur est normalisé par un processus interne et représente l'axe autour duquel la chaîne d'os peut tourner.
 
-If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
+Si la longueur du vecteur est de ``0``, il est considéré comme synonyme de :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
 
 .. rst-class:: classref-item-separator
 

@@ -14,7 +14,16 @@ La texture per il 2D associata a una texture creata sul :ref:`RenderingDevice<cl
 Descrizione
 ----------------------
 
-Questa classe di texture consente di utilizzare una texture 2D creata direttamente sul :ref:`RenderingDevice<class_RenderingDevice>` come texture per materiali, mesh, ecc.
+This texture class allows you to use a 2D texture created directly on the :ref:`RenderingDevice<class_RenderingDevice>` as a texture for materials, meshes, etc.
+
+\ **Note:** **Texture2DRD** is intended for low-level usage with :ref:`RenderingDevice<class_RenderingDevice>`. For most use cases, use :ref:`Texture2D<class_Texture2D>` instead.
+
+.. rst-class:: classref-introduction-group
+
+Tutorial
+----------------
+
+- `Compute Texture demo <https://godotengine.org/asset-library/asset/2764>`__
 
 .. rst-class:: classref-reftable-group
 

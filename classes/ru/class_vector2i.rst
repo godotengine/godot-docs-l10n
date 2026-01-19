@@ -697,11 +697,11 @@ Y компонент вектора. Может быть доступен чер
 
 :ref:`Vector2<class_Vector2>` **operator /**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Vector2i_operator_div_float>`
 
-Divides each component of the **Vector2i** by the given :ref:`float<class_float>`. Returns a :ref:`Vector2<class_Vector2>`.
+Делит каждый компонент **Vector2i** на заданное значение :ref:`float<class_float>`. Возвращает :ref:`Vector2<class_Vector2>`.
 
 ::
 
-    print(Vector2i(1, 2) / 2.5) # Prints (0.4, 0.8)
+    print(Vector2i(1, 2) / 2.5) # Выводит (0.4, 0.8)
 
 .. rst-class:: classref-item-separator
 

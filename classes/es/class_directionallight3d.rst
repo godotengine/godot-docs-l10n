@@ -17,16 +17,16 @@ Luz direccional desde una distancia, como desde el Sol.
 Descripción
 ----------------------
 
-A directional light is a type of :ref:`Light3D<class_Light3D>` node that models an infinite number of parallel rays covering the entire scene. It is used for lights with strong intensity that are located far away from the scene to model sunlight or moonlight.
+Una luz direccional es un tipo de nodo :ref:`Light3D<class_Light3D>` que modela un número infinito de rayos paralelos que cubren toda la escena. Se utiliza para luces de gran intensidad que se ubican lejos de la escena para modelar la luz del sol o la luz de la luna.
 
-Light is emitted in the -Z direction of the node's global basis. For an unrotated light, this means that the light is emitted forwards, illuminating the front side of a 3D model (see :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` and :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`). The position of the node is ignored; only the basis is used to determine light direction.
+La luz se emite en la dirección -Z de la base global del nodo. Para una luz sin rotar, esto significa que la luz se emite hacia adelante, iluminando la parte frontal de un modelo 3D (véase :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` y :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`). La posición del nodo se ignora; solo se usa la base para determinar la dirección de la luz.
 
 .. rst-class:: classref-introduction-group
 
 Tutoriales
 --------------------
 
-- :doc:`3D lights and shadows <../tutorials/3d/lights_and_shadows>`
+- :doc:`Luces y sombras 3D <../tutorials/3d/lights_and_shadows>`
 
 - :doc:`Falsificar la iluminación global <../tutorials/3d/global_illumination/faking_global_illumination>`
 
@@ -113,7 +113,7 @@ enum **SkyMode**: :ref:`🔗<enum_DirectionalLight3D_SkyMode>`
 
 :ref:`SkyMode<enum_DirectionalLight3D_SkyMode>` **SKY_MODE_LIGHT_AND_SKY** = ``0``
 
-Makes the light visible in both scene lighting and sky rendering.
+Hace que la luz sea visible tanto en la iluminación de la escena como en la renderización del cielo.
 
 .. _class_DirectionalLight3D_constant_SKY_MODE_LIGHT_ONLY:
 
@@ -121,7 +121,7 @@ Makes the light visible in both scene lighting and sky rendering.
 
 :ref:`SkyMode<enum_DirectionalLight3D_SkyMode>` **SKY_MODE_LIGHT_ONLY** = ``1``
 
-Makes the light visible in scene lighting only (including direct lighting and global illumination). When using this mode, the light will not be visible from sky shaders.
+Hace que la luz sea visible solo en la iluminación de la escena (incluida la iluminación directa y la iluminación global). Al usar este modo, la luz no será visible desde los shaders del cielo.
 
 .. _class_DirectionalLight3D_constant_SKY_MODE_SKY_ONLY:
 
@@ -129,7 +129,7 @@ Makes the light visible in scene lighting only (including direct lighting and gl
 
 :ref:`SkyMode<enum_DirectionalLight3D_SkyMode>` **SKY_MODE_SKY_ONLY** = ``2``
 
-Makes the light visible to sky shaders only. When using this mode the light will not cast light into the scene (either through direct lighting or through global illumination), but can be accessed through sky shaders. This can be useful, for example, when you want to control sky effects without illuminating the scene (during a night cycle, for example).
+Hace que la luz sea visible solo para los shaders del cielo. Al usar este modo, la luz no proyectará luz en la escena (ya sea a través de iluminación directa o a través de iluminación global), pero se puede acceder a ella a través de los shaders del cielo. Esto puede ser útil, por ejemplo, cuando quieres controlar los efectos del cielo sin iluminar la escena (durante un ciclo nocturno, por ejemplo).
 
 .. rst-class:: classref-section-separator
 
@@ -151,7 +151,7 @@ Descripciones de Propiedades
 - |void| **set_blend_splits**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_blend_splits_enabled**\ (\ )
 
-If ``true``, shadow detail is sacrificed in exchange for smoother transitions between splits. Enabling shadow blend splitting also has a moderate performance cost. This is ignored when :ref:`directional_shadow_mode<class_DirectionalLight3D_property_directional_shadow_mode>` is :ref:`SHADOW_ORTHOGONAL<class_DirectionalLight3D_constant_SHADOW_ORTHOGONAL>`.
+Si es ``true``, el detalle de la sombra se sacrifica a cambio de transiciones más suaves entre divisiones. Habilitar la división de mezcla de sombras también tiene un costo moderado en el rendimiento. Esto se ignora cuando :ref:`directional_shadow_mode<class_DirectionalLight3D_property_directional_shadow_mode>` es :ref:`SHADOW_ORTHOGONAL<class_DirectionalLight3D_constant_SHADOW_ORTHOGONAL>`.
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ If ``true``, shadow detail is sacrificed in exchange for smoother transitions be
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-Proportion of :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>` at which point the shadow starts to fade. At :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>`, the shadow will disappear. The default value is a balance between smooth fading and distant shadow visibility. If the camera moves fast and the :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>` is low, consider lowering :ref:`directional_shadow_fade_start<class_DirectionalLight3D_property_directional_shadow_fade_start>` below ``0.8`` to make shadow transitions less noticeable. On the other hand, if you tuned :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>` to cover the entire scene, you can set :ref:`directional_shadow_fade_start<class_DirectionalLight3D_property_directional_shadow_fade_start>` to ``1.0`` to prevent the shadow from fading in the distance (it will suddenly cut off instead).
+Proporción de :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>` en la que la sombra comienza a desvanecerse. En :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>`, la sombra desaparecerá. El valor predeterminado es un equilibrio entre el desvanecimiento suave y la visibilidad de la sombra a distancia. Si la cámara se mueve rápido y :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>` es baja, considera reducir :ref:`directional_shadow_fade_start<class_DirectionalLight3D_property_directional_shadow_fade_start>` por debajo de ``0.8`` para hacer que las transiciones de sombra sean menos notorias. Por otro lado, si ajustaste :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>` para cubrir toda la escena, puedes establecer :ref:`directional_shadow_fade_start<class_DirectionalLight3D_property_directional_shadow_fade_start>` en ``1.0`` para evitar que la sombra se desvanezca en la distancia (en su lugar, se cortará repentinamente).
 
 .. rst-class:: classref-item-separator
 
@@ -185,7 +185,7 @@ Proportion of :ref:`directional_shadow_max_distance<class_DirectionalLight3D_pro
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-The maximum distance for shadow splits. Increasing this value will make directional shadows visible from further away, at the cost of lower overall shadow detail and performance (since more objects need to be included in the directional shadow rendering).
+La distancia máxima para las divisiones de sombra. Aumentar este valor hará que las sombras direccionales sean visibles desde más lejos, a costa de un menor detalle general de la sombra y rendimiento (ya que se deben incluir más objetos en la renderización de la sombra direccional).
 
 .. rst-class:: classref-item-separator
 
@@ -236,7 +236,7 @@ Sets the size of the directional shadow pancake. The pancake offsets the start o
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-The distance from camera to shadow split 1. Relative to :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>`. Only used when :ref:`directional_shadow_mode<class_DirectionalLight3D_property_directional_shadow_mode>` is :ref:`SHADOW_PARALLEL_2_SPLITS<class_DirectionalLight3D_constant_SHADOW_PARALLEL_2_SPLITS>` or :ref:`SHADOW_PARALLEL_4_SPLITS<class_DirectionalLight3D_constant_SHADOW_PARALLEL_4_SPLITS>`.
+La distancia desde la cámara hasta la primera división de sombra. Relativo a :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>`. Solo se usa cuando :ref:`directional_shadow_mode<class_DirectionalLight3D_property_directional_shadow_mode>` es :ref:`SHADOW_PARALLEL_2_SPLITS<class_DirectionalLight3D_constant_SHADOW_PARALLEL_2_SPLITS>` o :ref:`SHADOW_PARALLEL_4_SPLITS<class_DirectionalLight3D_constant_SHADOW_PARALLEL_4_SPLITS>`.
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +253,7 @@ The distance from camera to shadow split 1. Relative to :ref:`directional_shadow
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-The distance from shadow split 1 to split 2. Relative to :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>`. Only used when :ref:`directional_shadow_mode<class_DirectionalLight3D_property_directional_shadow_mode>` is :ref:`SHADOW_PARALLEL_4_SPLITS<class_DirectionalLight3D_constant_SHADOW_PARALLEL_4_SPLITS>`.
+La distancia desde la división de sombra 1 a la división 2. Relativo a :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>`. Solo se usa cuando :ref:`directional_shadow_mode<class_DirectionalLight3D_property_directional_shadow_mode>` es :ref:`SHADOW_PARALLEL_4_SPLITS<class_DirectionalLight3D_constant_SHADOW_PARALLEL_4_SPLITS>`.
 
 .. rst-class:: classref-item-separator
 
@@ -270,7 +270,7 @@ The distance from shadow split 1 to split 2. Relative to :ref:`directional_shado
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-The distance from shadow split 2 to split 3. Relative to :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>`. Only used when :ref:`directional_shadow_mode<class_DirectionalLight3D_property_directional_shadow_mode>` is :ref:`SHADOW_PARALLEL_4_SPLITS<class_DirectionalLight3D_constant_SHADOW_PARALLEL_4_SPLITS>`.
+La distancia desde la división de sombra 2 a la división 3. Relativo a :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>`. Solo se usa cuando :ref:`directional_shadow_mode<class_DirectionalLight3D_property_directional_shadow_mode>` es :ref:`SHADOW_PARALLEL_4_SPLITS<class_DirectionalLight3D_constant_SHADOW_PARALLEL_4_SPLITS>`.
 
 .. rst-class:: classref-item-separator
 
@@ -287,7 +287,7 @@ The distance from shadow split 2 to split 3. Relative to :ref:`directional_shado
 - |void| **set_sky_mode**\ (\ value\: :ref:`SkyMode<enum_DirectionalLight3D_SkyMode>`\ )
 - :ref:`SkyMode<enum_DirectionalLight3D_SkyMode>` **get_sky_mode**\ (\ )
 
-Whether this **DirectionalLight3D** is visible in the sky, in the scene, or both in the sky and in the scene.
+Si esta **DirectionalLight3D** es visible en el cielo, en la escena, o en ambos, en el cielo y en la escena.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

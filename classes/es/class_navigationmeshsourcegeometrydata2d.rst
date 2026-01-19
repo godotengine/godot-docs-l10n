@@ -9,14 +9,14 @@ NavigationMeshSourceGeometryData2D
 
 **Hereda:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Container for parsed source geometry data used in navigation mesh baking.
+Contenedor para los datos de geometría de origen analizados utilizados en el procesado de la malla de navegación.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Container for parsed source geometry data used in navigation mesh baking.
+Contenedor para los datos de geometría de origen analizados utilizados en el procesado de la malla de navegación.
 
 .. rst-class:: classref-reftable-group
 
@@ -75,7 +75,7 @@ Descripciones de Métodos
 
 |void| **add_obstruction_outline**\ (\ shape_outline\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_add_obstruction_outline>`
 
-Adds the outline points of a shape as obstructed area.
+Añade los puntos de contorno de una forma como área obstruida.
 
 .. rst-class:: classref-item-separator
 
@@ -87,7 +87,7 @@ Adds the outline points of a shape as obstructed area.
 
 |void| **add_projected_obstruction**\ (\ vertices\: :ref:`PackedVector2Array<class_PackedVector2Array>`, carve\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_add_projected_obstruction>`
 
-Adds a projected obstruction shape to the source geometry. If ``carve`` is ``true`` the carved shape will not be affected by additional offsets (e.g. agent radius) of the navigation mesh baking process.
+Añade una forma de obstrucción proyectada a la geometría de origen. Si ``carve`` es ``true``, la forma esculpida no se verá afectada por desplazamientos adicionales (p. ej., radio del agente) del proceso de horneado de la malla de navegación.
 
 .. rst-class:: classref-item-separator
 
@@ -99,7 +99,7 @@ Adds a projected obstruction shape to the source geometry. If ``carve`` is ``tru
 
 |void| **add_traversable_outline**\ (\ shape_outline\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_add_traversable_outline>`
 
-Adds the outline points of a shape as traversable area.
+Añade los puntos de contorno de una forma como área transitable.
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ Adds the outline points of a shape as traversable area.
 
 |void| **append_obstruction_outlines**\ (\ obstruction_outlines\: :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\]\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_append_obstruction_outlines>`
 
-Appends another array of ``obstruction_outlines`` at the end of the existing obstruction outlines array.
+Añade otro array de ``obstruction_outlines`` al final del array existente de contornos de obstrucción.
 
 .. rst-class:: classref-item-separator
 
@@ -123,7 +123,7 @@ Appends another array of ``obstruction_outlines`` at the end of the existing obs
 
 |void| **append_traversable_outlines**\ (\ traversable_outlines\: :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\]\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_append_traversable_outlines>`
 
-Appends another array of ``traversable_outlines`` at the end of the existing traversable outlines array.
+Añade otro array de ``traversable_outlines`` al final del array existente de contornos transitables.
 
 .. rst-class:: classref-item-separator
 
@@ -269,7 +269,7 @@ Sets the projected obstructions with an Array of Dictionaries with the following
 
 |void| **set_traversable_outlines**\ (\ traversable_outlines\: :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\]\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_set_traversable_outlines>`
 
-Sets all the traversable area outlines arrays.
+Establece todos los arrays de contornos de área transitable.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

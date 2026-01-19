@@ -178,9 +178,9 @@ enum **ColorSpace**: :ref:`🔗<enum_Gradient_ColorSpace>`
 - |void| **set_interpolation_color_space**\ (\ value\: :ref:`ColorSpace<enum_Gradient_ColorSpace>`\ )
 - :ref:`ColorSpace<enum_Gradient_ColorSpace>` **get_interpolation_color_space**\ (\ )
 
-The color space used to interpolate between points of the gradient. It does not affect the returned colors, which will always use nonlinear sRGB encoding.
+Цветовое пространство, используемое для интерполяции между точками градиента. Оно не влияет на возвращаемые цвета, которые всегда будут использовать нелинейное кодирование sRGB.
 
-\ **Note:** This setting has no effect when :ref:`interpolation_mode<class_Gradient_property_interpolation_mode>` is set to :ref:`GRADIENT_INTERPOLATE_CONSTANT<class_Gradient_constant_GRADIENT_INTERPOLATE_CONSTANT>`.
+\ **Примечание:** Этот параметр не оказывает никакого эффекта, если :ref:`interpolation_mode<class_Gradient_property_interpolation_mode>` установлено в :ref:`GRADIENT_INTERPOLATE_CONSTANT<class_Gradient_constant_GRADIENT_INTERPOLATE_CONSTANT>`.
 
 .. rst-class:: classref-item-separator
 

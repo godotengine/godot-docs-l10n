@@ -9,16 +9,16 @@ IterateIK3D
 
 **Успадковано від:** :ref:`CCDIK3D<class_CCDIK3D>`, :ref:`FABRIK3D<class_FABRIK3D>`, :ref:`JacobianIK3D<class_JacobianIK3D>`
 
-A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` to approach the goal by repeating small rotations.
+:ref:`SkeletonModifier3D<class_SkeletonModifier3D>` для наближення до мети шляхом повторення невеликих обертань.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` to approach the goal by repeating small rotations.
+Базовий клас :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` для досягнення мети шляхом повторення невеликих обертань.
 
-Each bone chain (setting) has one effector, which is processed in order of the setting list. You can set some limitations for each joint.
+Кожен ланцюг кісток (налаштування) має один ефектор, який обробляється в порядку списку налаштувань. Ви можете встановити деякі обмеження для кожного суглоба.
 
 .. rst-class:: classref-reftable-group
 
@@ -98,9 +98,9 @@ Each bone chain (setting) has one effector, which is processed in order of the s
 - |void| **set_angular_delta_limit**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angular_delta_limit**\ (\ )
 
-The maximum amount each bone can rotate in a single iteration.
+Максимальна величина, на яку кожна кістка може повернутись за одну ітерацію.
 
-\ **Note:** This limitation is applied during each iteration. For example, if :ref:`max_iterations<class_IterateIK3D_property_max_iterations>` is ``4`` and :ref:`angular_delta_limit<class_IterateIK3D_property_angular_delta_limit>` is ``5`` degrees, the maximum rotation possible in a single frame is ``20`` degrees.
+\ **Примітка:** Це обмеження застосовується під час кожної ітерації. Наприклад, якщо :ref:`max_iterations<class_IterateIK3D_property_max_iterations>` дорівнює ``4``, а :ref:`angular_delta_limit<class_IterateIK3D_property_angular_delta_limit>` дорівнює ``5`` градусів, максимально можливе обертання за один кадр становить ``20`` градусів.
 
 .. rst-class:: classref-item-separator
 
@@ -117,9 +117,9 @@ The maximum amount each bone can rotate in a single iteration.
 - |void| **set_deterministic**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_deterministic**\ (\ )
 
-If ``false``, the result is calculated from the previous frame's **IterateIK3D** result as the initial state.
+Якщо значення ``false``, результат обчислюється з результату **IterateIK3D** попереднього кадру як початкового стану.
 
-If ``true``, the previous frame's **IterateIK3D** result is discarded. At this point, the new result is calculated from the bone pose excluding the **IterateIK3D** as the initial state. This means the result will be always equal as long as the target position and the previous bone pose are the same. However, if :ref:`angular_delta_limit<class_IterateIK3D_property_angular_delta_limit>` and :ref:`max_iterations<class_IterateIK3D_property_max_iterations>` are set too small, the end bone of the chain will never reach the target.
+Якщо значення ``true``, результат **IterateIK3D** попереднього кадру відкидається. У цей момент новий результат обчислюється з пози кістки, виключаючи **IterateIK3D** як початковий стан. Це означає, що результат завжди буде однаковим, якщо цільова позиція та попередня поза кістки однакові. Однак, якщо значення :ref:`angular_delta_limit<class_IterateIK3D_property_angular_delta_limit>` та :ref:`max_iterations<class_IterateIK3D_property_max_iterations>` встановлено занадто малими, кінцева кістка ланцюга ніколи не досягне цілі.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ If ``true``, the previous frame's **IterateIK3D** result is discarded. At this p
 - |void| **set_max_iterations**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_iterations**\ (\ )
 
-The number of iteration loops used by the IK solver to produce more accurate results.
+Кількість циклів ітерацій, що використовуються розв'язувачем IK для отримання точніших результатів.
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ The number of iteration loops used by the IK solver to produce more accurate res
 - |void| **set_min_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_min_distance**\ (\ )
 
-The minimum distance between the end bone and the target. If the distance is below this value, the IK solver stops any further iterations.
+Мінімальна відстань між кінцевою кісткою та цільовою точкою. Якщо відстань менша за це значення, розв'язувач IK зупиняє будь-які подальші ітерації.
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ The minimum distance between the end bone and the target. If the distance is bel
 
 :ref:`JointLimitation3D<class_JointLimitation3D>` **get_joint_limitation**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_joint_limitation>`
 
-Returns the joint limitation at ``joint`` in the bone chain's joint list.
+Повертає обмеження суглоба за параметром ``joint`` у списку суглобів ланцюжка кісток.
 
 .. rst-class:: classref-item-separator
 
@@ -199,7 +199,7 @@ Returns the joint limitation at ``joint`` in the bone chain's joint list.
 
 :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>` **get_joint_limitation_right_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_joint_limitation_right_axis>`
 
-Returns the joint limitation right axis at ``joint`` in the bone chain's joint list.
+Повертає праву вісь обмеження суглоба в ``joint`` у списку суглобів ланцюжка кісток.
 
 .. rst-class:: classref-item-separator
 
@@ -211,9 +211,9 @@ Returns the joint limitation right axis at ``joint`` in the bone chain's joint l
 
 :ref:`Vector3<class_Vector3>` **get_joint_limitation_right_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>`
 
-Returns the joint limitation right axis vector at ``joint`` in the bone chain's joint list.
+Повертає вектор правої осі обмеження суглоба в точці ``joint`` у списку суглобів ланцюга кісток.
 
-If :ref:`get_joint_limitation_right_axis()<class_IterateIK3D_method_get_joint_limitation_right_axis>` is :ref:`SkeletonModifier3D.SECONDARY_DIRECTION_NONE<class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_NONE>`, this method returns ``Vector3(0, 0, 0)``.
+Якщо :ref:`get_joint_limitation_right_axis()<class_IterateIK3D_method_get_joint_limitation_right_axis>` має значення :ref:`SkeletonModifier3D.SECONDARY_DIRECTION_NONE<class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_NONE>`, цей метод повертає ``Vector3(0, 0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -225,13 +225,13 @@ If :ref:`get_joint_limitation_right_axis()<class_IterateIK3D_method_get_joint_li
 
 :ref:`Quaternion<class_Quaternion>` **get_joint_limitation_rotation_offset**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_joint_limitation_rotation_offset>`
 
-Returns the joint limitation rotation offset at ``joint`` in the bone chain's joint list.
+Повертає зміщення обертання обмеження суглоба в ``joint`` у списку суглобів ланцюжка кісток.
 
-Rotation is done in the local space which is constructed by the bone direction (in general parent to child) as the +Y axis and :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` as the +X axis.
+Обертання виконується в локальному просторі, який утворюється напрямком кістки (загалом від батьківського елемента до дочірнього) як віссю +Y та методом :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` як віссю +X.
 
-If the +X and +Y axes are not orthogonal, the +X axis is implicitly modified to make it orthogonal.
+Якщо осі +X та +Y не ортогональні, вісь +X неявно змінюється, щоб зробити її ортогональною.
 
-Also, if the length of :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` is zero, the space is created by rotating the bone rest using the shortest arc that rotates the +Y axis of the bone rest to match the bone direction.
+Також, якщо довжина методу :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` дорівнює нулю, простір створюється шляхом обертання залишку кістки за допомогою найкоротшої дуги, яка обертає вісь +Y залишку кістки, щоб він відповідав напрямку кістки.
 
 .. rst-class:: classref-item-separator
 
@@ -255,9 +255,9 @@ Also, if the length of :ref:`get_joint_limitation_right_axis_vector()<class_Iter
 
 :ref:`Vector3<class_Vector3>` **get_joint_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_joint_rotation_axis_vector>`
 
-Returns the rotation axis vector for the specified joint in the bone chain. This vector represents the axis around which the joint can rotate. It is determined based on the rotation axis set for the joint.
+Повертає вектор осі обертання для зазначеного суглоба в ланцюжку кісток. Цей вектор представляє вісь, навколо якої може обертатися суглоб. Він визначається на основі осі обертання, встановленої для суглоба.
 
-If :ref:`get_joint_rotation_axis()<class_IterateIK3D_method_get_joint_rotation_axis>` is :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, this method returns ``Vector3(0, 0, 0)``.
+Якщо :ref:`get_joint_rotation_axis()<class_IterateIK3D_method_get_joint_rotation_axis>` має значення :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, цей метод повертає ``Vector3(0, 0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -269,7 +269,7 @@ If :ref:`get_joint_rotation_axis()<class_IterateIK3D_method_get_joint_rotation_a
 
 :ref:`NodePath<class_NodePath>` **get_target_node**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_target_node>`
 
-Returns the target node that the end bone is trying to reach.
+Повертає цільовий вузол, якого намагається досягти кінцева кістка.
 
 .. rst-class:: classref-item-separator
 
@@ -281,7 +281,7 @@ Returns the target node that the end bone is trying to reach.
 
 |void| **set_joint_limitation**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, limitation\: :ref:`JointLimitation3D<class_JointLimitation3D>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_limitation>`
 
-Sets the joint limitation at ``joint`` in the bone chain's joint list.
+Встановлює обмеження суглоба на ``joint`` у списку суглобів ланцюжка кісток.
 
 .. rst-class:: classref-item-separator
 
@@ -293,7 +293,7 @@ Sets the joint limitation at ``joint`` in the bone chain's joint list.
 
 |void| **set_joint_limitation_right_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, direction\: :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_limitation_right_axis>`
 
-Sets the joint limitation right axis at ``joint`` in the bone chain's joint list.
+Встановлює праву вісь обмеження суглоба на ``joint`` у списку суглобів ланцюжка кісток.
 
 .. rst-class:: classref-item-separator
 
@@ -305,7 +305,7 @@ Sets the joint limitation right axis at ``joint`` in the bone chain's joint list
 
 |void| **set_joint_limitation_right_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, vector\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_limitation_right_axis_vector>`
 
-Sets the optional joint limitation right axis vector at ``joint`` in the bone chain's joint list.
+Встановлює необов'язковий вектор правої осі обмеження суглоба в ``joint`` у списку суглобів ланцюжка кісток.
 
 .. rst-class:: classref-item-separator
 
@@ -317,13 +317,13 @@ Sets the optional joint limitation right axis vector at ``joint`` in the bone ch
 
 |void| **set_joint_limitation_rotation_offset**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, offset\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_limitation_rotation_offset>`
 
-Sets the joint limitation rotation offset at ``joint`` in the bone chain's joint list.
+Встановлює зміщення обертання обмеження суглоба в ``joint`` у списку суглобів ланцюжка кісток.
 
-Rotation is done in the local space which is constructed by the bone direction (in general parent to child) as the +Y axis and :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` as the +X axis.
+Обертання виконується в локальному просторі, який утворюється напрямком кістки (загалом від батьківського елемента до дочірнього) як віссю +Y та методом :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` як віссю +X.
 
-If the +X and +Y axes are not orthogonal, the +X axis is implicitly modified to make it orthogonal.
+Якщо осі +X та +Y не ортогональні, вісь +X неявно змінюється, щоб зробити її ортогональною.
 
-Also, if the length of :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` is zero, the space is created by rotating the bone rest using the shortest arc that rotates the +Y axis of the bone rest to match the bone direction.
+Також, якщо довжина методу :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` дорівнює нулю, простір створюється шляхом обертання залишку кістки за допомогою найкоротшої дуги, яка обертає вісь +Y залишку кістки, щоб він відповідав напрямку кістки.
 
 .. rst-class:: classref-item-separator
 
@@ -335,11 +335,11 @@ Also, if the length of :ref:`get_joint_limitation_right_axis_vector()<class_Iter
 
 |void| **set_joint_rotation_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, axis\: :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_rotation_axis>`
 
-Sets the rotation axis at ``joint`` in the bone chain's joint list.
+Встановлює вісь обертання в ``joint`` у списку з'єднань ланцюжка кісток.
 
-The axes are based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`'s space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
+Осі базуються на просторі :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`. Якщо ``axis`` має значення :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, можна вказати будь-яку вісь.
 
-\ **Note:** The rotation axis and the forward vector shouldn't be colinear to avoid unintended rotation since :ref:`ChainIK3D<class_ChainIK3D>` does not factor in twisting forces.
+\ **Примітка:** Вісь обертання та вектор руху вперед не повинні бути колінеарними, щоб уникнути ненавмисного обертання, оскільки :ref:`ChainIK3D<class_ChainIK3D>` не враховує сили скручування.
 
 .. rst-class:: classref-item-separator
 
@@ -351,11 +351,11 @@ The axes are based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_meth
 
 |void| **set_joint_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, axis_vector\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_rotation_axis_vector>`
 
-Sets the rotation axis vector for the specified joint in the bone chain.
+Встановлює вектор осі обертання для зазначеного суглоба в ланцюжку кісток.
 
-This vector is normalized by an internal process and represents the axis around which the bone chain can rotate.
+Цей вектор нормалізується внутрішнім процесом і представляє вісь, навколо якої може обертатися ланцюжок кісток.
 
-If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
+Якщо довжина вектора дорівнює ``0``, він вважається синонімом :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
 
 .. rst-class:: classref-item-separator
 
@@ -367,7 +367,7 @@ If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonMo
 
 |void| **set_target_node**\ (\ index\: :ref:`int<class_int>`, target_node\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_IterateIK3D_method_set_target_node>`
 
-Sets the target node that the end bone is trying to reach.
+Встановлює цільовий вузол, якого намагається досягти кінцева кістка.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

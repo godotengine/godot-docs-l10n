@@ -14,15 +14,15 @@ A 3D heightmap shape used for physics collision.
 描述
 ----
 
-A 3D heightmap shape, intended for use in physics to provide a shape for a :ref:`CollisionShape3D<class_CollisionShape3D>`. This type is most commonly used for terrain with vertices placed in a fixed-width grid.
+3D 高度图形状，用于物理为 :ref:`CollisionShape3D<class_CollisionShape3D>` 提供形状。这种类型最常用于在固定宽度的栅格中放置顶点的地形。
 
-The heightmap is represented as a 2D grid of height values, which represent the position of grid points on the Y axis. Grid points are spaced 1 unit apart on the X and Z axes, and the grid is centered on the origin of the :ref:`CollisionShape3D<class_CollisionShape3D>` node. Internally, each grid square is divided into two triangles.
+高度图表示为 2D 栅格中的高度值，每个值代表格点在 Y 轴上的位置。 格点在 X 轴和 Z 轴上各自间隔为 1 个单位，且栅格的中心恰好在 :ref:`CollisionShape3D<class_CollisionShape3D>` 节点的原点。在内部，每个栅格正方形被划分为两个三角形。
 
-Due to the nature of the heightmap, it cannot be used to model overhangs or caves, which would require multiple vertices at the same vertical location. Holes can be punched through the collision by assigning :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` to the height of the desired vertices (this is supported in both GodotPhysics3D and Jolt Physics). You could then insert meshes with their own separate collision to provide overhangs, caves, and so on.
+由于高度图的特性，它无法用于建模悬垂或洞穴，因为这些情况在同一垂直位置上存在多个顶点。若要在碰撞中打孔，可以将所需位置的顶点高度设为 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`\ （受 GodotPhysics3D 和 Jolt Physics 双方支持）。你也可以接着在其中加入具有独立碰撞的网格来提供悬垂、洞穴等效果。
 
-\ **Performance:** **HeightMapShape3D** is faster to check collisions against than :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`, but it is significantly slower than primitive shapes like :ref:`BoxShape3D<class_BoxShape3D>`.
+\ **性能：**\ 对 **HeightMapShape3D** 的碰撞检测比 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` 快，但相比 :ref:`BoxShape3D<class_BoxShape3D>` 等基本体形状显著要慢。
 
-A heightmap collision shape can also be built by using an :ref:`Image<class_Image>` reference:
+高度图碰撞形状也可以由 :ref:`Image<class_Image>` 构建：
 
 
 .. tabs::
@@ -40,7 +40,7 @@ A heightmap collision shape can also be built by using an :ref:`Image<class_Imag
 
 
 
-\ **Note:** If you need to use a spacing different than 1 unit, you can adjust the :ref:`Node3D.scale<class_Node3D_property_scale>` of the shape. However, keep in mind that GodotPhysics3D does not support non-uniform scaling: you'll need to scale the Y axis by the same amount as the X and Z axes, which means the values in :ref:`map_data<class_HeightMapShape3D_property_map_data>` will need to be pre-scaled by the inverse of that scale. Also note that GodotPhysics3D does not support scaling at all for dynamic bodies (that is, non-frozen :ref:`RigidBody3D<class_RigidBody3D>` nodes); to use a scaled **HeightMapShape3D** with those, you will need to use Jolt Physics.
+\ **注意：** 如果需要使用 1 个单位以外的间距，可以调整形状的 :ref:`Node3D.scale<class_Node3D_property_scale>`\ 。不过，注意 GodotPhysics3D 不支持非均一的缩放：你需要在 Y 轴上进行和 X 轴与 Z 轴相同的缩放，这就意味着 :ref:`map_data<class_HeightMapShape3D_property_map_data>` 需要提前被相同程度的逆缩放。还要注意 GodotPhysics3D 不支持动态物体（亦即，未冻结的 :ref:`RigidBody3D<class_RigidBody3D>` 节点）的任何缩放。若要同时使用缩放了的 **HeightMapShape3D** 和动态物体，你必须使用 Jolt Physics。
 
 .. rst-class:: classref-reftable-group
 

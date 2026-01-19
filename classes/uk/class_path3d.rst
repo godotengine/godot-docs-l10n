@@ -98,7 +98,7 @@ Path3D
 - |void| **set_debug_custom_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_debug_custom_color**\ (\ )
 
-The custom color used to draw the path in the editor. If set to :ref:`Color.BLACK<class_Color_constant_BLACK>` (as by default), the color set in :ref:`ProjectSettings.debug/shapes/paths/geometry_color<class_ProjectSettings_property_debug/shapes/paths/geometry_color>` is used.
+Власний колір, який використовується для малювання шляху в редакторі. Якщо встановлено значення :ref:`Color.BLACK<class_Color_constant_BLACK>` (за замовчуванням), використовується колір, встановлений у :ref:`ProjectSettings.debug/shapes/paths/geometry_color<class_ProjectSettings_property_debug/shapes/paths/geometry_color>`.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

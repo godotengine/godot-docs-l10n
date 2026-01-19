@@ -14,7 +14,16 @@ TextureCubemapRD
 Описание
 ----------------
 
-Этот класс текстуры позволяет использовать текстуру кубической карты, созданную непосредственно на :ref:`RenderingDevice<class_RenderingDevice>`, в качестве текстуры для материалов, сеток и т. д.
+This texture class allows you to use a cubemap texture created directly on the :ref:`RenderingDevice<class_RenderingDevice>` as a texture for materials, meshes, etc.
+
+\ **Note:** **TextureCubemapRD** is intended for low-level usage with :ref:`RenderingDevice<class_RenderingDevice>`. For most use cases, use :ref:`Cubemap<class_Cubemap>` instead.
+
+.. rst-class:: classref-introduction-group
+
+Обучающие материалы
+--------------------------------------
+
+- `Compute Texture demo <https://godotengine.org/asset-library/asset/2764>`__
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

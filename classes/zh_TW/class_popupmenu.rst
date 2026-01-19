@@ -47,6 +47,10 @@ All ``set_*`` methods allow negative item indices, i.e. ``-1`` to access the las
    +-------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                         | :ref:`prefer_native_menu<class_PopupMenu_property_prefer_native_menu>`                             | ``false``                                                                    |
    +-------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                         | :ref:`shrink_height<class_PopupMenu_property_shrink_height>`                                       | ``true``                                                                     |
+   +-------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                         | :ref:`shrink_width<class_PopupMenu_property_shrink_width>`                                         | ``true``                                                                     |
+   +-------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
    | :ref:`float<class_float>`                       | :ref:`submenu_popup_delay<class_PopupMenu_property_submenu_popup_delay>`                           | ``0.2``                                                                      |
    +-------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------+
    | :ref:`SystemMenus<enum_NativeMenu_SystemMenus>` | :ref:`system_menu_id<class_PopupMenu_property_system_menu_id>`                                     | ``0``                                                                        |
@@ -455,6 +459,40 @@ Emitted when an item of some ``index`` is pressed. Also emitted when its acceler
 If ``true``, :ref:`MenuBar<class_MenuBar>` will use native menu when supported.
 
 \ **Note:** If **PopupMenu** is linked to :ref:`StatusIndicator<class_StatusIndicator>`, :ref:`MenuBar<class_MenuBar>`, or another **PopupMenu** item it can use native menu regardless of this property, use :ref:`is_native_menu()<class_PopupMenu_method_is_native_menu>` to check it.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_PopupMenu_property_shrink_height:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **shrink_height** = ``true`` :ref:`🔗<class_PopupMenu_property_shrink_height>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_shrink_height**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **get_shrink_height**\ (\ )
+
+If ``true``, shrinks **PopupMenu** to minimum height when it's shown.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_PopupMenu_property_shrink_width:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **shrink_width** = ``true`` :ref:`🔗<class_PopupMenu_property_shrink_width>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_shrink_width**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **get_shrink_width**\ (\ )
+
+If ``true``, shrinks **PopupMenu** to minimum width when it's shown.
 
 .. rst-class:: classref-item-separator
 

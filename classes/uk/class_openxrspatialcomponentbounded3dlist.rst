@@ -9,14 +9,14 @@ OpenXRSpatialComponentBounded3DList
 
 **Успадковує:** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the queries bounded3d result data.
+Об'єкт для зберігання результатів запитів bounded3d.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Object for storing the queries 3d bounding box result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Об'єкт для зберігання результатів запитів 3D-обмежувальної рамки під час виклику :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -47,7 +47,7 @@ Object for storing the queries 3d bounding box result data when calling :ref:`Op
 
 :ref:`Transform3D<class_Transform3D>` **get_center_pose**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentBounded3DList_method_get_center_pose>`
 
-Returns the center of our bounding box for the entity at this ``index``.
+Повертає центр нашої обмежувальної рамки для об'єкта в цій точці ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -59,7 +59,7 @@ Returns the center of our bounding box for the entity at this ``index``.
 
 :ref:`Vector3<class_Vector3>` **get_size**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentBounded3DList_method_get_size>`
 
-Returns the size of our bounding box for the entity at this ``index``.
+Повертає розмір нашої обмежувальної рамки для об'єкта в цій точці ``index``.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

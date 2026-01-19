@@ -181,11 +181,11 @@ AimModifier3D
 
 |void| **set_relative**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_AimModifier3D_method_set_relative>`
 
-Sets relative option in the setting at ``index`` to ``enabled``.
+Встановлює відносний параметр у налаштуванні ``index`` на ``enabled``.
 
-If sets ``enabled`` to ``true``, the rotation is applied relative to the pose.
+Якщо встановлює ``enabled`` на ``true``, обертання застосовується відносно пози.
 
-If sets ``enabled`` to ``false``, the rotation is applied relative to the rest. It means to replace the current pose with the **AimModifier3D**'s result.
+Якщо встановлює ``enabled`` на ``false``, обертання застосовується відносно решти. Це означає заміну поточної пози результатом **AimModifier3D**.
 
 .. rst-class:: classref-item-separator
 

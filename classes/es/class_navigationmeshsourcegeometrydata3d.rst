@@ -9,14 +9,14 @@ NavigationMeshSourceGeometryData3D
 
 **Hereda:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Container for parsed source geometry data used in navigation mesh baking.
+Contenedor para los datos de geometría de origen analizados utilizados en el procesado de la malla de navegación.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Container for parsed source geometry data used in navigation mesh baking.
+Contenedor para los datos de geometría de origen analizados utilizados en el procesado de la malla de navegación.
 
 .. rst-class:: classref-reftable-group
 
@@ -75,7 +75,7 @@ Descripciones de Métodos
 
 |void| **add_faces**\ (\ faces\: :ref:`PackedVector3Array<class_PackedVector3Array>`, xform\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData3D_method_add_faces>`
 
-Adds an array of vertex positions to the geometry data for navigation mesh baking to form triangulated faces. For each face the array must have three vertex positions in clockwise winding order. Since :ref:`NavigationMesh<class_NavigationMesh>` resources have no transform, all vertex positions need to be offset by the node's transform using ``xform``.
+Añade un array de posiciones de vértices a los datos de geometría para el horneado de mallas de navegación para formar caras trianguladas. Para cada cara, el array debe tener tres posiciones de vértice en orden de bobinado horario. Dado que los recursos :ref:`NavigationMesh<class_NavigationMesh>` no tienen transformación, todas las posiciones de los vértices deben ser compensadas por la transformación del nodo usando ``xform``.
 
 .. rst-class:: classref-item-separator
 
@@ -87,7 +87,7 @@ Adds an array of vertex positions to the geometry data for navigation mesh bakin
 
 |void| **add_mesh**\ (\ mesh\: :ref:`Mesh<class_Mesh>`, xform\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData3D_method_add_mesh>`
 
-Adds the geometry data of a :ref:`Mesh<class_Mesh>` resource to the navigation mesh baking data. The mesh must have valid triangulated mesh data to be considered. Since :ref:`NavigationMesh<class_NavigationMesh>` resources have no transform, all vertex positions need to be offset by the node's transform using ``xform``.
+Añade los datos de geometría de un recurso :ref:`Mesh<class_Mesh>` a los datos de horneado de la malla de navegación. La malla debe tener datos de malla triangulada válidos para ser considerada. Dado que los recursos :ref:`NavigationMesh<class_NavigationMesh>` no tienen transformación, todas las posiciones de los vértices deben ser compensadas por la transformación del nodo usando ``xform``.
 
 .. rst-class:: classref-item-separator
 
@@ -99,7 +99,7 @@ Adds the geometry data of a :ref:`Mesh<class_Mesh>` resource to the navigation m
 
 |void| **add_mesh_array**\ (\ mesh_array\: :ref:`Array<class_Array>`, xform\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData3D_method_add_mesh_array>`
 
-Adds an :ref:`Array<class_Array>` the size of :ref:`Mesh.ARRAY_MAX<class_Mesh_constant_ARRAY_MAX>` and with vertices at index :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>` and indices at index :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` to the navigation mesh baking data. The array must have valid triangulated mesh data to be considered. Since :ref:`NavigationMesh<class_NavigationMesh>` resources have no transform, all vertex positions need to be offset by the node's transform using ``xform``.
+Añade un :ref:`Array<class_Array>` del tamaño de :ref:`Mesh.ARRAY_MAX<class_Mesh_constant_ARRAY_MAX>` y con vértices en el índice :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>` e índices en el índice :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` a los datos de horneado de la malla de navegación. El array debe tener datos de malla triangulada válidos para ser considerado. Dado que los recursos :ref:`NavigationMesh<class_NavigationMesh>` no tienen transformación, todas las posiciones de los vértices deben ser compensadas por la transformación del nodo usando ``xform``.
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ Adds an :ref:`Array<class_Array>` the size of :ref:`Mesh.ARRAY_MAX<class_Mesh_co
 
 |void| **add_projected_obstruction**\ (\ vertices\: :ref:`PackedVector3Array<class_PackedVector3Array>`, elevation\: :ref:`float<class_float>`, height\: :ref:`float<class_float>`, carve\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData3D_method_add_projected_obstruction>`
 
-Adds a projected obstruction shape to the source geometry. The ``vertices`` are considered projected on an xz-axes plane, placed at the global y-axis ``elevation`` and extruded by ``height``. If ``carve`` is ``true`` the carved shape will not be affected by additional offsets (e.g. agent radius) of the navigation mesh baking process.
+Añade una forma de obstrucción proyectada a la geometría de origen. Los ``vertices`` se consideran proyectados en un plano de ejes xz, colocados en la posición ``elevation`` del eje Y global y extruidos por ``height``. Si ``carve`` es ``true``, la forma tallada no se verá afectada por desplazamientos adicionales (por ejemplo, el radio del agente) del proceso de horneado de la malla de navegación.
 
 .. rst-class:: classref-item-separator
 

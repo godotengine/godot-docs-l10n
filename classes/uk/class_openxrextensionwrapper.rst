@@ -16,17 +16,17 @@ OpenXRExtensionWrapper
 Опис
 --------
 
-**OpenXRExtensionWrapper** allows implementing OpenXR extensions with GDExtension. The extension should be registered with :ref:`register_extension_wrapper()<class_OpenXRExtensionWrapper_method_register_extension_wrapper>`.
+**OpenXRExtensionWrapper** дозволяє реалізовувати розширення OpenXR за допомогою GDExtension. Розширення слід зареєструвати за допомогою методу :ref:`register_extension_wrapper()<class_OpenXRExtensionWrapper_method_register_extension_wrapper>`.
 
-When :ref:`OpenXRInterface<class_OpenXRInterface>` is initialized as the primary interface and any :ref:`Viewport<class_Viewport>` has :ref:`Viewport.use_xr<class_Viewport_property_use_xr>` set to ``true``, OpenXR will become involved in Godot's rendering process. If :ref:`ProjectSettings.rendering/driver/threads/thread_model<class_ProjectSettings_property_rendering/driver/threads/thread_model>` is set to "Separate", Godot's renderer will run on its own thread, and special care must be taken in all **OpenXRExtensionWrapper**\ s in order to prevent crashes or unexpected behavior. Some virtual methods will be called on the render thread, and any data they access should not be directly written to on the main thread. This is to prevent two potential issues:
+Коли :ref:`OpenXRInterface<class_OpenXRInterface>` ініціалізовано як основний інтерфейс, і для будь-якого :ref:`Viewport<class_Viewport>` :ref:`Viewport.use_xr<class_Viewport_property_use_xr>` встановлено значення ``true``, OpenXR буде залучено до процесу рендерингу Godot. Якщо :ref:`ProjectSettings.rendering/driver/threads/thread_model<class_ProjectSettings_property_rendering/driver/threads/thread_model>` встановлено значення "Separate", рендерер Godot працюватиме у власному потоці, і необхідно дотримуватися особливої обережності у всіх **OpenXRExtensionWrapper**, щоб запобігти збоям або неочікуваній поведінці. Деякі віртуальні методи будуть викликані в потоці рендерингу, і будь-які дані, до яких вони отримують доступ, не повинні безпосередньо записуватися в головному потоці. Це зроблено для запобігання двом потенційним проблемам:
 
-1. Changes intended for the next frame, taking effect on the current frame. When using the "Separate" thread model, the main thread will immediately start working on the next frame while the render thread may still be rendering the current frame. If the main thread changes anything used by the render thread directly, the change could end up being used one frame earlier than intended.
+1. Зміни, призначені для наступного кадру, вступають в силу в поточному кадрі. Під час використання моделі потоків "Separate" (окремий) головний потік негайно почне працювати над наступним кадром, тоді як потік рендерингу може все ще рендерити поточний кадр. Якщо головний потік змінить щось, що використовується безпосередньо потоком рендерингу, зміна може бути використана на один кадр раніше, ніж передбачалося.
 
-2. Reading and writing to the same data at the same time from different threads can lead to the render thread using data in an invalid state.
+2. Одночасне читання та запис тих самих даних з різних потоків може призвести до того, що потік рендерингу використовуватиме дані в недійсному стані.
 
-In most cases, the solution is to use :ref:`RenderingServer.call_on_render_thread()<class_RenderingServer_method_call_on_render_thread>` to schedule :ref:`Callable<class_Callable>`\ s to write to any data used on the render thread. When using the "Separate" thread model, these :ref:`Callable<class_Callable>`\ s will run after the renderer finishes the current frame and before it starts rendering the next frame. When not using this mode, they'll run immediately, so it's recommended to always use :ref:`RenderingServer.call_on_render_thread()<class_RenderingServer_method_call_on_render_thread>` in these cases, which will allow your code to do the right thing regardless of the thread model.
+У більшості випадків рішенням є використання :ref:`RenderingServer.call_on_render_thread()<class_RenderingServer_method_call_on_render_thread>` для планування запису :ref:`Callable<class_Callable>` до будь-яких даних, що використовуються в потоці рендерингу. Під час використання моделі потоків "Separate" ці :ref:`Callable<class_Callable>` будуть виконуватися після того, як рендерер завершить поточний кадр і перед тим, як він почне рендеринг наступного кадру. Якщо цей режим не використовується, вони будуть виконуватися негайно, тому в цих випадках рекомендується завжди використовувати :ref:`RenderingServer.call_on_render_thread()<class_RenderingServer_method_call_on_render_thread>`, що дозволить вашому коду виконувати правильні дії незалежно від моделі потоку.
 
-Any virtual methods that run on the render thread will be noted below.
+ Будь-які віртуальні методи, що виконуються в потоці рендерингу, будуть зазначені нижче.
 
 .. rst-class:: classref-reftable-group
 
@@ -145,11 +145,11 @@ Any virtual methods that run on the render thread will be noted below.
 
 :ref:`int<class_int>` **_get_composition_layer**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__get_composition_layer>`
 
-Returns a pointer to an ``XrCompositionLayerBaseHeader`` struct to provide the given composition layer.
+Повертає вказівник на структуру ``XrCompositionLayerBaseHeader`` для надання заданого шару композиції.
 
-This will only be called if the extension previously registered itself with :ref:`OpenXRAPIExtension.register_composition_layer_provider()<class_OpenXRAPIExtension_method_register_composition_layer_provider>`.
+Це буде викликано лише в тому випадку, якщо розширення попередньо зареєструвалося за допомогою методу :ref:`OpenXRAPIExtension.register_composition_layer_provider()<class_OpenXRAPIExtension_method_register_composition_layer_provider>`.
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **Примітка:** Цей віртуальний метод буде викликано в потоці рендерингу. Крім того, дані, які він повертає, будуть використані невдовзі після виклику цього методу, тому він має залишатися дійсним до наступного запуску методу :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>`.
 
 .. rst-class:: classref-item-separator
 
@@ -161,11 +161,11 @@ This will only be called if the extension previously registered itself with :ref
 
 :ref:`int<class_int>` **_get_composition_layer_count**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__get_composition_layer_count>`
 
-Returns the number of composition layers this extension wrapper provides via :ref:`_get_composition_layer()<class_OpenXRExtensionWrapper_private_method__get_composition_layer>`.
+Повертає кількість композиційних шарів, які надає цей обгортка розширення через :ref:`_get_composition_layer()<class_OpenXRExtensionWrapper_private_method__get_composition_layer>`.
 
-This will only be called if the extension previously registered itself with :ref:`OpenXRAPIExtension.register_composition_layer_provider()<class_OpenXRAPIExtension_method_register_composition_layer_provider>`.
+Це буде викликано лише в тому випадку, якщо розширення попередньо зареєструвалося за допомогою :ref:`OpenXRAPIExtension.register_composition_layer_provider()<class_OpenXRAPIExtension_method_register_composition_layer_provider>`.
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **Примітка:** Цей віртуальний метод буде викликано в потоці рендерингу. Крім того, дані, які він повертає, будуть використані невдовзі після виклику цього методу, тому він має залишатися дійсним до наступного запуску :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>`.
 
 .. rst-class:: classref-item-separator
 
@@ -177,11 +177,11 @@ This will only be called if the extension previously registered itself with :ref
 
 :ref:`int<class_int>` **_get_composition_layer_order**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__get_composition_layer_order>`
 
-Returns an integer that will be used to sort the given composition layer provided via :ref:`_get_composition_layer()<class_OpenXRExtensionWrapper_private_method__get_composition_layer>`. Lower numbers will move the layer to the front of the list, and higher numbers to the end. The default projection layer has an order of ``0``, so layers provided by this method should probably be above or below (but not exactly) ``0``.
+Повертає ціле число, яке буде використано для сортування заданого шару композиції, наданого через :ref:`_get_composition_layer()<class_OpenXRExtensionWrapper_private_method__get_composition_layer>`. Менші числа перемістять шар на початок списку, а більші – в кінець. Шар проекції за замовчуванням має порядок ``0``, тому шари, надані цим методом, ймовірно, повинні бути вище або нижче (але не точно) ``0``.
 
-This will only be called if the extension previously registered itself with :ref:`OpenXRAPIExtension.register_composition_layer_provider()<class_OpenXRAPIExtension_method_register_composition_layer_provider>`.
+Це буде викликано лише в тому випадку, якщо розширення попередньо зареєструвалося за допомогою :ref:`OpenXRAPIExtension.register_composition_layer_provider()<class_OpenXRAPIExtension_method_register_composition_layer_provider>`.
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **Примітка:** Цей віртуальний метод буде викликано в потоці рендерингу. Крім того, дані, які він повертає, будуть використані невдовзі після виклику цього методу, тому він має залишатися дійсним до наступного запуску :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>`.
 
 .. rst-class:: classref-item-separator
 
@@ -193,11 +193,11 @@ This will only be called if the extension previously registered itself with :ref
 
 :ref:`Dictionary<class_Dictionary>` **_get_requested_extensions**\ (\ xr_version\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__get_requested_extensions>`
 
-Returns a :ref:`Dictionary<class_Dictionary>` of OpenXR extensions related to this extension. ``xr_version`` specifies the OpenXR version we're instantiating. This will be zero if the editor requests this list to flag supported features. The :ref:`Dictionary<class_Dictionary>` should contain the name of the extension, mapped to a ``bool *`` cast to an integer:
+Повертає :ref:`Dictionary<class_Dictionary>` розширень OpenXR, пов'язаних з цим розширенням. ``xr_version`` вказує версію OpenXR, екземпляр якої ми створюємо. Це буде нуль, якщо редактор запитує цей список для позначення підтримуваних функцій. ``Словник`` повинен містити назву розширення, зіставлену з ``bool *``, приведеним до цілого числа:
 
-- If the ``bool *`` is a ``nullptr`` this extension is mandatory.
+- Якщо ``bool *`` є ``nullptr``, це розширення є обов'язковим.
 
-- If the ``bool *`` points to a boolean, the boolean will be updated to ``true`` if the extension is enabled.
+- Якщо ``bool *`` вказує на логічне значення, логічне значення буде оновлено до ``true``, якщо розширення ввімкнено.
 
 .. rst-class:: classref-item-separator
 
@@ -221,9 +221,9 @@ Returns a :ref:`Dictionary<class_Dictionary>` of OpenXR extensions related to th
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_get_viewport_composition_layer_extension_properties**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_properties>`
 
-Gets an array of :ref:`Dictionary<class_Dictionary>`\ s that represent properties, just like :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`, that will be added to :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>` nodes.
+Отримує масив :ref:`Dictionary<class_Dictionary>`, що представляють властивості, подібно до :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`, які будуть додані до вузлів :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>`.
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **Примітка:** Цей віртуальний метод буде викликано в потоці рендерингу.
 
 .. rst-class:: classref-item-separator
 
@@ -247,9 +247,9 @@ Gets an array of :ref:`Dictionary<class_Dictionary>`\ s that represent propertie
 
 |void| **_on_before_instance_created**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_before_instance_created>`
 
-Called before the OpenXR instance is created.
+Викликається перед створенням екземпляра OpenXR.
 
-\ **Note:** This virtual method will be called on the main thread, however, it will be called *before* OpenXR becomes involved in rendering, so it is safe to write to data that will be used by the render thread.
+\ **Примітка:** Цей віртуальний метод буде викликано в головному потоці, проте він буде викликаний *перед тим, як* OpenXR почне брати участь у рендерингу, тому записувати дані, які будуть використовуватися потоком рендерингу, безпечно.
 
 .. rst-class:: classref-item-separator
 
@@ -273,9 +273,9 @@ Called before the OpenXR instance is created.
 
 |void| **_on_instance_created**\ (\ instance\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_instance_created>`
 
-Called right after the OpenXR instance is created.
+Викликається одразу після створення екземпляра OpenXR.
 
-\ **Note:** This virtual method will be called on the main thread, however, it will be called *before* OpenXR becomes involved in rendering, so it is safe to write to data that will be used by the render thread.
+\ **Примітка:** Цей віртуальний метод буде викликано в головному потоці, проте він буде викликаний *до того, як* OpenXR почне брати участь у рендерингу, тому записувати дані, які будуть використовуватися потоком рендерингу, безпечно.
 
 .. rst-class:: classref-item-separator
 
@@ -287,9 +287,9 @@ Called right after the OpenXR instance is created.
 
 |void| **_on_instance_destroyed**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_instance_destroyed>`
 
-Called right before the OpenXR instance is destroyed.
+Викликається безпосередньо перед знищенням екземпляра OpenXR.
 
-\ **Note:** This virtual method will be called on the main thread, however, it will be called *after* OpenXR is done being involved in rendering, so it is safe to write to data that was used by the render thread.
+\ **Примітка:** Цей віртуальний метод буде викликано в головному потоці, проте він буде викликаний *після* завершення участі OpenXR у рендерингу, тому запис даних, які використовувалися потоком рендерингу, безпечний.
 
 .. rst-class:: classref-item-separator
 
@@ -301,9 +301,9 @@ Called right before the OpenXR instance is destroyed.
 
 |void| **_on_main_swapchains_created**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_main_swapchains_created>`
 
-Called right after the main swapchains are (re)created.
+Викликається одразу після (пере)створення основних ланцюжків обміну.
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **Примітка:** Цей віртуальний метод буде викликано в потоці рендерингу.
 
 .. rst-class:: classref-item-separator
 
@@ -315,11 +315,11 @@ Called right after the main swapchains are (re)created.
 
 |void| **_on_post_draw_viewport**\ (\ viewport\: :ref:`RID<class_RID>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_post_draw_viewport>`
 
-Called right after the given viewport is rendered.
+Викликається одразу після рендерингу заданого вікна перегляду.
 
-\ **Note:** The draw commands might only be queued at this point, not executed.
+\ **Примітка:** Команди малювання можуть бути лише поставлені в чергу на цьому етапі, а не виконані.
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **Примітка:** Цей віртуальний метод буде викликано в потоці рендерингу.
 
 .. rst-class:: classref-item-separator
 
@@ -331,9 +331,9 @@ Called right after the given viewport is rendered.
 
 |void| **_on_pre_draw_viewport**\ (\ viewport\: :ref:`RID<class_RID>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_pre_draw_viewport>`
 
-Called right before the given viewport is rendered.
+Викликається безпосередньо перед рендерингом заданого вікна перегляду.
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **Примітка:** Цей віртуальний метод буде викликано в потоці рендерингу.
 
 .. rst-class:: classref-item-separator
 
@@ -345,9 +345,9 @@ Called right before the given viewport is rendered.
 
 |void| **_on_pre_render**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_pre_render>`
 
-Called right before the XR viewports begin their rendering step.
+Викликається безпосередньо перед тим, як вікна перегляду XR почнуть свій етап рендерингу.
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **Примітка:** Цей віртуальний метод буде викликано в потоці рендерингу.
 
 .. rst-class:: classref-item-separator
 
@@ -385,9 +385,9 @@ Called right before the XR viewports begin their rendering step.
 
 |void| **_on_session_created**\ (\ session\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_session_created>`
 
-Called right after the OpenXR session is created.
+Викликається одразу після створення сеансу OpenXR.
 
-\ **Note:** This virtual method will be called on the main thread, however, it will be called *before* OpenXR becomes involved in rendering, so it is safe to write to data that will be used by the render thread.
+\ **Примітка:** Цей віртуальний метод буде викликано в головному потоці, проте він буде викликаний *до того, як* OpenXR почне брати участь у рендерингу, тому записувати дані, які будуть використовуватися потоком рендерингу, безпечно.
 
 .. rst-class:: classref-item-separator
 
@@ -399,9 +399,9 @@ Called right after the OpenXR session is created.
 
 |void| **_on_session_destroyed**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_session_destroyed>`
 
-Called right before the OpenXR session is destroyed.
+Викликається безпосередньо перед знищенням сеансу OpenXR.
 
-\ **Note:** This virtual method will be called on the main thread, however, it will be called *after* OpenXR is done being involved in rendering, so it is safe to write to data that was used by the render thread.
+\ **Примітка:** Цей віртуальний метод буде викликано в головному потоці, проте він буде викликаний *після* завершення участі OpenXR у рендерингу, тому можна безпечно записувати дані, які використовувалися потоком рендерингу.
 
 .. rst-class:: classref-item-separator
 
@@ -535,7 +535,7 @@ Called right before the OpenXR session is destroyed.
 
 |void| **_prepare_view_configuration**\ (\ view_count\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__prepare_view_configuration>`
 
-Called before :ref:`_set_view_configuration_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_view_configuration_and_get_next_pointer>` to allow the extension to reserve data for the given number of views.
+Викликається перед :ref:`_set_view_configuration_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_view_configuration_and_get_next_pointer>`, щоб дозволити розширенню резервувати дані для заданої кількості переглядів.
 
 .. rst-class:: classref-item-separator
 
@@ -547,7 +547,7 @@ Called before :ref:`_set_view_configuration_and_get_next_pointer()<class_OpenXRE
 
 |void| **_print_view_configuration_info**\ (\ view\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__print_view_configuration_info>`
 
-Called to allow an extension to print additional information about its view configuration, if applicable. This will only be called if verbose output is enabled.
+Викликається, щоб дозволити розширенню виводити додаткову інформацію про конфігурацію перегляду, якщо це можливо. Це буде викликано, лише якщо ввімкнено детальний вивід.
 
 .. rst-class:: classref-item-separator
 
@@ -559,11 +559,11 @@ Called to allow an extension to print additional information about its view conf
 
 :ref:`int<class_int>` **_set_android_surface_swapchain_create_info_and_get_next_pointer**\ (\ property_values\: :ref:`Dictionary<class_Dictionary>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_android_surface_swapchain_create_info_and_get_next_pointer>`
 
-Add additional data structures to Android surface swapchains created by :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>`.
+Додайте додаткові структури даних до ланцюжків змін Android Surface, створених :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>`.
 
-\ ``property_values`` contains the values of the properties returned by :ref:`_get_viewport_composition_layer_extension_properties()<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_properties>`.
+\ ``property_values`` містить значення властивостей, повернених :ref:`_get_viewport_composition_layer_extension_properties()<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_properties>`.
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **Примітка:** Цей віртуальний метод буде викликано в потоці рендерингу.
 
 .. rst-class:: classref-item-separator
 
@@ -575,11 +575,11 @@ Add additional data structures to Android surface swapchains created by :ref:`Op
 
 :ref:`int<class_int>` **_set_frame_end_info_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_frame_end_info_and_get_next_pointer>`
 
-Add additional data structures to ``XrFrameEndInfo``.
+Додайте додаткові структури даних до ``XrFrameEndInfo``.
 
-This will only be called if the extension previously registered itself with :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>`.
+Це буде викликано лише в тому випадку, якщо розширення попередньо зареєструвалося за допомогою :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>`.
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **Примітка:** Цей віртуальний метод буде викликано в потоці рендерингу. Крім того, дані, які він повертає, будуть використані невдовзі після виклику цього методу, тому він має залишатися дійсним до наступного запуску :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>`.
 
 .. rst-class:: classref-item-separator
 
@@ -591,11 +591,11 @@ This will only be called if the extension previously registered itself with :ref
 
 :ref:`int<class_int>` **_set_frame_wait_info_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_frame_wait_info_and_get_next_pointer>`
 
-Add additional data structures to ``XrFrameWaitInfo``.
+Додайте додаткові структури даних до ``XrFrameWaitInfo``.
 
-This will only be called if the extension previously registered itself with :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>`.
+Це буде викликано лише в тому випадку, якщо розширення попередньо зареєструвалося за допомогою :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>`.
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **Примітка:** Цей віртуальний метод буде викликано в потоці рендерингу.
 
 .. rst-class:: classref-item-separator
 
@@ -607,7 +607,7 @@ This will only be called if the extension previously registered itself with :ref
 
 :ref:`int<class_int>` **_set_hand_joint_locations_and_get_next_pointer**\ (\ hand_index\: :ref:`int<class_int>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_hand_joint_locations_and_get_next_pointer>`
 
-Add additional data structures when each hand tracker is created.
+Додавайте додаткові структури даних під час створення кожного трекера рук.
 
 .. rst-class:: classref-item-separator
 
@@ -619,7 +619,7 @@ Add additional data structures when each hand tracker is created.
 
 :ref:`int<class_int>` **_set_instance_create_info_and_get_next_pointer**\ (\ xr_version\: :ref:`int<class_int>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_instance_create_info_and_get_next_pointer>`
 
-Add additional data structures when the OpenXR instance is created. ``xr_version`` specifies the OpenXR version we're instantiating.
+Додайте додаткові структури даних під час створення екземпляра OpenXR. ``xr_version`` визначає версію OpenXR, екземпляр якої ми створюємо.
 
 .. rst-class:: classref-item-separator
 
@@ -631,9 +631,9 @@ Add additional data structures when the OpenXR instance is created. ``xr_version
 
 :ref:`int<class_int>` **_set_projection_views_and_get_next_pointer**\ (\ view_index\: :ref:`int<class_int>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_projection_views_and_get_next_pointer>`
 
-Add additional data structures to the projection view of the given ``view_index``.
+Додайте додаткові структури даних до проекційного вигляду заданого ``view_index``.
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **Примітка:** Цей віртуальний метод буде викликано в потоці рендерингу. Крім того, дані, які він повертає, будуть використані невдовзі після виклику цього методу, тому він має залишатися дійсним до наступного запуску :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>`.
 
 .. rst-class:: classref-item-separator
 
@@ -645,7 +645,7 @@ Add additional data structures to the projection view of the given ``view_index`
 
 :ref:`int<class_int>` **_set_reference_space_create_info_and_get_next_pointer**\ (\ reference_space_type\: :ref:`int<class_int>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_reference_space_create_info_and_get_next_pointer>`
 
-Add additional data structures to ``XrReferenceSpaceCreateInfo``.
+Додайте додаткові структури даних до ``XrReferenceSpaceCreateInfo``.
 
 .. rst-class:: classref-item-separator
 
@@ -657,7 +657,7 @@ Add additional data structures to ``XrReferenceSpaceCreateInfo``.
 
 :ref:`int<class_int>` **_set_session_create_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_session_create_and_get_next_pointer>`
 
-Add additional data structures when the OpenXR session is created.
+Додайте додаткові структури даних під час створення сеансу OpenXR.
 
 .. rst-class:: classref-item-separator
 
@@ -669,7 +669,7 @@ Add additional data structures when the OpenXR session is created.
 
 :ref:`int<class_int>` **_set_swapchain_create_info_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_swapchain_create_info_and_get_next_pointer>`
 
-Add additional data structures when creating OpenXR swapchains.
+Додайте додаткові структури даних під час створення ланцюжків обміну OpenXR.
 
 .. rst-class:: classref-item-separator
 
@@ -681,7 +681,7 @@ Add additional data structures when creating OpenXR swapchains.
 
 :ref:`int<class_int>` **_set_system_properties_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_system_properties_and_get_next_pointer>`
 
-Add additional data structures when querying OpenXR system abilities.
+Додайте додаткові структури даних під час запитів можливостей системи OpenXR.
 
 .. rst-class:: classref-item-separator
 
@@ -693,7 +693,7 @@ Add additional data structures when querying OpenXR system abilities.
 
 :ref:`int<class_int>` **_set_view_configuration_and_get_next_pointer**\ (\ view\: :ref:`int<class_int>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_view_configuration_and_get_next_pointer>`
 
-Add additional data structures when querying OpenXR view configuration.
+Додайте додаткові структури даних під час запиту конфігурації представлення OpenXR.
 
 .. rst-class:: classref-item-separator
 
@@ -705,11 +705,11 @@ Add additional data structures when querying OpenXR view configuration.
 
 :ref:`int<class_int>` **_set_view_locate_info_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_view_locate_info_and_get_next_pointer>`
 
-Add additional data structures to ``XrViewLocateInfo``.
+Додайте додаткові структури даних до ``XrViewLocateInfo``.
 
-This will only be called if the extension previously registered itself with :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>`.
+Це буде викликано лише в тому випадку, якщо розширення попередньо зареєструвалося за допомогою :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>`.
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **Примітка:** Цей віртуальний метод буде викликано в потоці рендерингу. Крім того, дані, які він повертає, будуть використані невдовзі після виклику цього методу, тому він має залишатися дійсним до наступного запуску :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>`.
 
 .. rst-class:: classref-item-separator
 
@@ -721,13 +721,13 @@ This will only be called if the extension previously registered itself with :ref
 
 :ref:`int<class_int>` **_set_viewport_composition_layer_and_get_next_pointer**\ (\ layer\: ``const void*``, property_values\: :ref:`Dictionary<class_Dictionary>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_viewport_composition_layer_and_get_next_pointer>`
 
-Add additional data structures to composition layers created by :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>`.
+Додайте додаткові структури даних до шарів композиції, створених :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>`.
 
-\ ``property_values`` contains the values of the properties returned by :ref:`_get_viewport_composition_layer_extension_properties()<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_properties>`.
+\ ``property_values`` містить значення властивостей, що повертаються :ref:`_get_viewport_composition_layer_extension_properties()<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_properties>`.
 
-\ ``layer`` is a pointer to an ``XrCompositionLayerBaseHeader`` struct.
+\ ``layer`` – це вказівник на структуру ``XrCompositionLayerBaseHeader``.
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **Примітка:** Цей віртуальний метод буде викликано в потоці рендерингу. Крім того, дані, які він повертає, будуть використані невдовзі після виклику цього методу, тому він має залишатися дійсним до наступного запуску :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>`.
 
 .. rst-class:: classref-item-separator
 
@@ -751,9 +751,9 @@ Add additional data structures to composition layers created by :ref:`OpenXRComp
 
 |void| **register_extension_wrapper**\ (\ ) :ref:`🔗<class_OpenXRExtensionWrapper_method_register_extension_wrapper>`
 
-Registers the extension. This should happen at core module initialization level.
+Реєструє розширення. Це має відбуватися на рівні ініціалізації основного модуля.
 
-\ **Note:** This cannot be called once OpenXR has been initialized.
+\ **Примітка:** Це не можна викликати після ініціалізації OpenXR.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

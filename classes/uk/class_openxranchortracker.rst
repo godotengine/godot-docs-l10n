@@ -9,14 +9,14 @@ OpenXRAnchorTracker
 
 **Успадковує:** :ref:`OpenXRSpatialEntityTracker<class_OpenXRSpatialEntityTracker>` **<** :ref:`XRPositionalTracker<class_XRPositionalTracker>` **<** :ref:`XRTracker<class_XRTracker>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Positional tracker for our spatial entity anchor extension.
+Позиційний трекер для нашого розширення просторової сутності якоря.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Positional tracker for our OpenXR spatial entity anchor extension, it tracks a user defined location in real space and maps it to our virtual space.
+Позиційний трекер для нашого розширення просторової прив'язки OpenXR, він відстежує визначене користувачем місцезнаходження в реальному просторі та відображає його у нашому віртуальному просторі.
 
 .. rst-class:: classref-reftable-group
 
@@ -57,7 +57,7 @@ Positional tracker for our OpenXR spatial entity anchor extension, it tracks a u
 
 **uuid_changed**\ (\ ) :ref:`🔗<class_OpenXRAnchorTracker_signal_uuid_changed>`
 
-Emitted when the UUID for this anchor was changed.
+Видається, коли UUID для цього якоря було змінено.
 
 .. rst-class:: classref-section-separator
 
@@ -79,7 +79,7 @@ Emitted when the UUID for this anchor was changed.
 - |void| **set_uuid**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_uuid**\ (\ )
 
-The UUID provided for persistent anchors.
+UUID передбачав постійні якорі.
 
 .. rst-class:: classref-section-separator
 
@@ -96,7 +96,7 @@ The UUID provided for persistent anchors.
 
 :ref:`bool<class_bool>` **has_uuid**\ (\ ) |const| :ref:`🔗<class_OpenXRAnchorTracker_method_has_uuid>`
 
-Returns ``true`` if a non-zero UUID is set.
+Повертає ``true``, якщо встановлено ненульовий UUID.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

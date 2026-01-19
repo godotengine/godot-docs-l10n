@@ -148,7 +148,7 @@ El tipo de transformación. Se traduce al tipo ``mat4`` en el código del shader
 
 :ref:`PortType<enum_VisualShaderNode_PortType>` **PORT_TYPE_SAMPLER** = ``8``
 
-Tipo Sampler. Traducido a referencia del uniforme del muestras en el código shader. Sólo puede utilizarse para puertos de entrada en nodos no uniformes.
+Tipo Sampler. Traducido a referencia del uniforme del muestras en el código shader. Solo puede utilizarse para puertos de entrada en nodos no uniformes.
 
 .. _class_VisualShaderNode_constant_PORT_TYPE_MAX:
 

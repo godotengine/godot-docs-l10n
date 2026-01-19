@@ -102,6 +102,8 @@ Accessing the settings can be done using the following methods, such as:
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`docks/scene_tree/start_create_dialog_fully_expanded<class_EditorSettings_property_docks/scene_tree/start_create_dialog_fully_expanded>`                                                                     |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`float<class_float>`                         | :ref:`editors/2d/auto_resample_delay<class_EditorSettings_property_editors/2d/auto_resample_delay>`                                                                                                               |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                         | :ref:`editors/2d/bone_color1<class_EditorSettings_property_editors/2d/bone_color1>`                                                                                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                         | :ref:`editors/2d/bone_color2<class_EditorSettings_property_editors/2d/bone_color2>`                                                                                                                               |
@@ -211,6 +213,8 @@ Accessing the settings can be done using the following methods, such as:
    | :ref:`Color<class_Color>`                         | :ref:`editors/3d/secondary_grid_color<class_EditorSettings_property_editors/3d/secondary_grid_color>`                                                                                                             |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                         | :ref:`editors/3d/selection_box_color<class_EditorSettings_property_editors/3d/selection_box_color>`                                                                                                               |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                             | :ref:`editors/3d/show_gizmo_during_rotation<class_EditorSettings_property_editors/3d/show_gizmo_during_rotation>`                                                                                                 |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                         | :ref:`editors/3d_gizmos/gizmo_colors/aabb<class_EditorSettings_property_editors/3d_gizmos/gizmo_colors/aabb>`                                                                                                     |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1326,6 +1330,18 @@ Accessing the settings can be done using the following methods, such as:
 
 ----
 
+.. _class_EditorSettings_property_editors/2d/auto_resample_delay:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **editors/2d/auto_resample_delay** :ref:`🔗<class_EditorSettings_property_editors/2d/auto_resample_delay>`
+
+Delay time for automatic resampling in the 2D editor (in seconds).
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorSettings_property_editors/2d/bone_color1:
 
 .. rst-class:: classref-property
@@ -2017,6 +2033,18 @@ The angle threshold for snapping camera rotation to 45-degree angles while orbit
 :ref:`Color<class_Color>` **editors/3d/selection_box_color** :ref:`🔗<class_EditorSettings_property_editors/3d/selection_box_color>`
 
 用于在 3D 编辑器视口中围绕选定节点的选择框的颜色。颜色的 Alpha 通道影响选择框的不透明度。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorSettings_property_editors/3d/show_gizmo_during_rotation:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **editors/3d/show_gizmo_during_rotation** :ref:`🔗<class_EditorSettings_property_editors/3d/show_gizmo_during_rotation>`
+
+If checked, the transform gizmo remains visible during rotation in that transform mode.
 
 .. rst-class:: classref-item-separator
 
@@ -3409,7 +3437,7 @@ This should usually be resolved by moving the embedded binary subresource to its
 
 :ref:`bool<class_bool>` **filesystem/quick_open_dialog/include_addons** :ref:`🔗<class_EditorSettings_property_filesystem/quick_open_dialog/include_addons>`
 
-如果为 ``true``\ ，则结果中不包含位于 ``addons`` 文件夹中的文件。
+如果为 ``true``\ ，则结果中包含位于 ``addons`` 文件夹中的文件。
 
 .. rst-class:: classref-item-separator
 

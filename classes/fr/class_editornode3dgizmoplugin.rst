@@ -256,7 +256,7 @@ Override this method to return ``true`` whenever to given handle should be highl
 
 :ref:`bool<class_bool>` **_is_selectable_when_hidden**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorNode3DGizmoPlugin_private_method__is_selectable_when_hidden>`
 
-Override this method to define whether Node3D with this gizmo should be selectable even when the gizmo is hidden.
+Surcharger cette méthode pour définir si Node3D devrait être sélectionnable avec ce manipulateur même lorsque le manipulateur est caché.
 
 .. rst-class:: classref-item-separator
 

@@ -27,7 +27,7 @@ ResourceLoader
 Посібники
 ------------------
 
-- `Threaded Loading Demo <https://godotengine.org/asset-library/asset/2778>`__
+- `Демонстрація потокового завантаження <https://godotengine.org/asset-library/asset/2778>`__
 
 - `Демонстрація тестування операційної системи <https://godotengine.org/asset-library/asset/2789>`__
 

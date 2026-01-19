@@ -26,7 +26,7 @@ Le nœud **PhysicalBone3D** est un corps physique qui peut être utilisé pour f
 Tutoriels
 ------------------
 
-- :doc:`Ragdoll System <../tutorials/physics/ragdoll_system>`
+- :doc:`Système Ragdoll <../tutorials/physics/ragdoll_system>`
 
 .. rst-class:: classref-reftable-group
 

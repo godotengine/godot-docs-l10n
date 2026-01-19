@@ -14,9 +14,9 @@ CollisionPolygon3D
 Опис
 --------
 
-A node that provides a thickened polygon shape (a prism) to a :ref:`CollisionObject3D<class_CollisionObject3D>` parent and allows it to be edited. The polygon can be concave or convex. This can give a detection shape to an :ref:`Area3D<class_Area3D>` or turn a :ref:`PhysicsBody3D<class_PhysicsBody3D>` into a solid object.
+Вузол, який надає батьківському об'єкту :ref:`CollisionObject3D<class_CollisionObject3D>` форму потовщеного полігона (призму) та дозволяє його редагування. Полігон може бути увігнутим або опуклим. Це може надати форму виявлення :ref:`Area3D<class_Area3D>` або перетворити :ref:`PhysicsBody3D<class_PhysicsBody3D>` на твердий об'єкт.
 
-\ **Warning:** A non-uniformly scaled :ref:`CollisionShape3D<class_CollisionShape3D>` will likely not behave as expected. Make sure to keep its scale the same on all axes and adjust its shape resource instead.
+\ **Попередження:** Нерівномірно масштабований :ref:`CollisionShape3D<class_CollisionShape3D>`, ймовірно, не працюватиме належним чином. Переконайтеся, що його масштаб однаковий на всіх осях, і натомість налаштуйте його ресурс форми.
 
 .. rst-class:: classref-reftable-group
 

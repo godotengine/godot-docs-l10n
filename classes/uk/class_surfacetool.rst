@@ -634,9 +634,9 @@ enum **SkinWeightCount**: :ref:`🔗<enum_SurfaceTool_SkinWeightCount>`
 
 |void| **set_tangent**\ (\ tangent\: :ref:`Plane<class_Plane>`\ ) :ref:`🔗<class_SurfaceTool_method_set_tangent>`
 
-Specifies a tangent to use for the *next* vertex. If every vertex needs to have this information set and you fail to submit it for the first vertex, this information may not be used at all.
+Визначає дотичну, яку потрібно використовувати для *наступної* вершини. Якщо для кожної вершини потрібно встановити цю інформацію, а ви не надасте її для першої вершини, ця інформація може взагалі не використовуватися.
 
-\ **Note:** Even though ``tangent`` is a :ref:`Plane<class_Plane>`, it does not directly represent the tangent plane. Its :ref:`Plane.x<class_Plane_property_x>`, :ref:`Plane.y<class_Plane_property_y>`, and :ref:`Plane.z<class_Plane_property_z>` represent the tangent vector and :ref:`Plane.d<class_Plane_property_d>` should be either ``-1`` or ``1``. See also :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>`.
+\ **Примітка:** Навіть якщо ``tangent`` є :ref:`Plane<class_Plane>`, він безпосередньо не представляє дотичну площину. Його :ref:`Plane.x<class_Plane_property_x>`, :ref:`Plane.y<class_Plane_property_y>` та :ref:`Plane.z<class_Plane_property_z>` представляють вектор дотичної, а :ref:`Plane.d<class_Plane_property_d>` має бути або ``-1``, або ``1``. Див. також :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>`.
 
 .. rst-class:: classref-item-separator
 

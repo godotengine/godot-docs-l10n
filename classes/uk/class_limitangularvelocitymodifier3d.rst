@@ -7,16 +7,16 @@ LimitAngularVelocityModifier3D
 
 **Успадковує:** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Limit bone rotation angular velocity.
+Обмежена кутова швидкість обертання кістки.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-This modifier limits bone rotation angular velocity by comparing poses between previous and current frame.
+Цей модифікатор обмежує кутову швидкість обертання кісток, порівнюючи пози між попереднім та поточним кадрами.
 
-You can add bone chains by specifying their root and end bones, then add the bones between them to a list. Modifier processes either that list or the bones excluding those in the list depending on the option :ref:`exclude<class_LimitAngularVelocityModifier3D_property_exclude>`.
+Ви можете додавати ланцюжки кісток, вказуючи їх кореневі та кінцеві кістки, а потім додавати кістки між ними до списку. Модифікатор обробляє або цей список, або кістки, виключаючи ті, що у списку, залежно від опції :ref:`exclude<class_LimitAngularVelocityModifier3D_property_exclude>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -86,7 +86,7 @@ You can add bone chains by specifying their root and end bones, then add the bon
 - |void| **set_chain_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_chain_count**\ (\ )
 
-The number of chains.
+Кількість ланцюгів.
 
 .. rst-class:: classref-item-separator
 
@@ -103,9 +103,9 @@ The number of chains.
 - |void| **set_exclude**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_exclude**\ (\ )
 
-If ``true``, the modifier processes bones not included in the bone list.
+Якщо ``true``, модифікатор обробляє кістки, які не включені до списку кісток.
 
-If ``false``, the bones processed by the modifier are equal to the bone list.
+Якщо ``false``, кістки, оброблені модифікатором, дорівнюють списку кісток.
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ If ``false``, the bones processed by the modifier are equal to the bone list.
 
 :ref:`int<class_int>` **joint_count** = ``0`` :ref:`🔗<class_LimitAngularVelocityModifier3D_property_joint_count>`
 
-The number of joints in the list which created by chains dynamically.
+Кількість з'єднань у списку, що створюється ланцюгами динамічно.
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +134,7 @@ The number of joints in the list which created by chains dynamically.
 - |void| **set_max_angular_velocity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_angular_velocity**\ (\ )
 
-The maximum angular velocity per second.
+Максимальна кутова швидкість за секунду.
 
 .. rst-class:: classref-section-separator
 
@@ -151,7 +151,7 @@ The maximum angular velocity per second.
 
 |void| **clear_chains**\ (\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_clear_chains>`
 
-Clear all chains.
+Очистіть усі ланцюги.
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ Clear all chains.
 
 |void| **reset**\ (\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_reset>`
 
-Sets the reference pose for angle comparison to the current pose with the influence of constraints removed. This function is automatically triggered when joints change or upon activation.
+Встановлює еталонну позу для порівняння кутів з поточною позою без впливу обмежень. Ця функція автоматично спрацьовує при зміні суглобів або при активації.
 
 .. rst-class:: classref-item-separator
 
@@ -235,9 +235,9 @@ Sets the reference pose for angle comparison to the current pose with the influe
 
 |void| **set_end_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_set_end_bone_name>`
 
-Sets the end bone name of the bone chain.
+Встановлює назву кінцевої кістки ланцюжка кісток.
 
-\ **Note:** End bone must be the root bone or a child of the root bone.
+\ **Примітка:** Кінцева кістка має бути кореневою кісткою або дочірньою кісткою кореневої кістки.
 
 .. rst-class:: classref-item-separator
 

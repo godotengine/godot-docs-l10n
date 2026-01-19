@@ -14,9 +14,9 @@ El lightmapper incorporado basado en GPU para usar con :ref:`LightmapGI<class_Li
 Descripción
 ----------------------
 
-LightmapperRD ("RD" significa :ref:`RenderingDevice<class_RenderingDevice>`) es el lightmapper incorporado basado en GPU para usar con :ref:`LightmapGI<class_LightmapGI>`. En la mayoría de las GPU dedicadas, puede procesar lightmaps mucho más rápido que la mayoría de los lightmappers basados en CPU. LightmapperRD usa "compute shaders" para procesar lightmaps, por lo que no requiere que se instalen las bibliotecas CUDA u OpenCL para poder usarse.
+LightmapperRD ("RD" stands for :ref:`RenderingDevice<class_RenderingDevice>`) is the built-in GPU-based lightmapper for use with :ref:`LightmapGI<class_LightmapGI>`. On most dedicated GPUs, it can bake lightmaps much faster than most CPU-based lightmappers. LightmapperRD uses compute shaders to bake lightmaps, so it does not require CUDA or OpenCL libraries to be installed to be usable.
 
-\ **Nota:** Solo se puede usar cuando se utiliza el backend de RenderingDevice (renderizadores Forward+ o Mobile), no Compatibility.
+\ **Note:** This lightmapper requires the GPU to support the :ref:`RenderingDevice<class_RenderingDevice>` backend (Forward+ and Mobile renderers). When using the Compatibility renderer, baking will use a temporary :ref:`RenderingDevice<class_RenderingDevice>`. Support for :ref:`RenderingDevice<class_RenderingDevice>` is not required to *render* lightmaps that were already baked beforehand.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

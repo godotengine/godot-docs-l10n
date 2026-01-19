@@ -628,15 +628,15 @@ Voir aussi :ref:`@GlobalScope.PROPERTY_USAGE_GROUP<class_@GlobalScope_constant_P
 
 **@export_multiline**\ (\ hint\: :ref:`String<class_String>` = "", ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_multiline>`
 
-Export a :ref:`String<class_String>`, :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], :ref:`PackedStringArray<class_PackedStringArray>`, :ref:`Dictionary<class_Dictionary>` or :ref:`Array<class_Array>`\ \[:ref:`Dictionary<class_Dictionary>`\ \] property with a large :ref:`TextEdit<class_TextEdit>` widget instead of a :ref:`LineEdit<class_LineEdit>`. This adds support for multiline content and makes it easier to edit large amount of text stored in the property.
+Exporte une propriété :ref:`String<class_String>`, :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], :ref:`PackedStringArray<class_PackedStringArray>`, :ref:`Dictionary<class_Dictionary>` ou :ref:`Array<class_Array>`\ \[:ref:`Dictionary<class_Dictionary>`\ \] avec un widget :ref:`TextEdit<class_TextEdit>` large à la place d'un :ref:`LineEdit<class_LineEdit>`. Cela ajoute du support pour un contenu multi-ligne et rend plus facile l'édition de beaucoup de texte stocké dans la propriété.
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_MULTILINE_TEXT<class_@GlobalScope_constant_PROPERTY_HINT_MULTILINE_TEXT>`.
+Voir également :ref:`@GlobalScope.PROPERTY_HINT_MULTILINE_TEXT<class_@GlobalScope_constant_PROPERTY_HINT_MULTILINE_TEXT>`.
 
 ::
 
-    @export_multiline var character_biography
-    @export_multiline var npc_dialogs: Array[String]
-    @export_multiline("monospace", "no_wrap") var favorite_ascii_art: String
+    @export_multiline var biographie_personnage
+    @export_multiline var dialogues_pnj: Array[String]
+    @export_multiline("monospace", "no_wrap") var art_ascii_favori: String
 
 .. rst-class:: classref-item-separator
 
@@ -688,27 +688,27 @@ Voir également :ref:`@GlobalScope.PROPERTY_HINT_PLACEHOLDER_TEXT<class_@GlobalS
 
 **@export_range**\ (\ min\: :ref:`float<class_float>`, max\: :ref:`float<class_float>`, step\: :ref:`float<class_float>` = 1.0, extra_hints\: :ref:`String<class_String>` = "", ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_range>`
 
-Export an :ref:`int<class_int>`, :ref:`float<class_float>`, :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \], :ref:`Array<class_Array>`\ \[:ref:`float<class_float>`\ \], :ref:`PackedByteArray<class_PackedByteArray>`, :ref:`PackedInt32Array<class_PackedInt32Array>`, :ref:`PackedInt64Array<class_PackedInt64Array>`, :ref:`PackedFloat32Array<class_PackedFloat32Array>`, or :ref:`PackedFloat64Array<class_PackedFloat64Array>` property as a range value. The range must be defined by ``min`` and ``max``, as well as an optional ``step`` and a variety of extra hints. The ``step`` defaults to ``1`` for integer properties. For floating-point numbers this value depends on your :ref:`EditorSettings.interface/inspector/default_float_step<class_EditorSettings_property_interface/inspector/default_float_step>` setting.
+Exporte une propriété :ref:`int<class_int>`, :ref:`float<class_float>`, :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \], :ref:`Array<class_Array>`\ \[:ref:`float<class_float>`\ \], :ref:`PackedByteArray<class_PackedByteArray>`, :ref:`PackedInt32Array<class_PackedInt32Array>`, :ref:`PackedInt64Array<class_PackedInt64Array>`, :ref:`PackedFloat32Array<class_PackedFloat32Array>`, ou :ref:`PackedFloat64Array<class_PackedFloat64Array>` en tant que valeur de plage. La plage doit être définie par ``min`` et ``max`` et, facultativement, par un pas ``step`` et une variété d'indices supplémentaires. Le pas ``step`` est par défaut ``1`` pour les entiers. Pour les nombres à virgule flottante, cette valeur dépend de votre paramètre :ref:`EditorSettings.interface/inspector/default_float_step<class_EditorSettings_property_interface/inspector/default_float_step>`.
 
-If hints ``"or_greater"`` and ``"or_less"`` are provided, the editor widget will not cap the value at range boundaries. The ``"exp"`` hint will make the edited values on range to change exponentially. The ``"prefer_slider"`` hint will make integer values use the slider instead of arrows for editing, while ``"hide_control"`` will hide the element controlling the value of the editor widget.
+Si les indices ``"or_greater"`` et ``"or_less"`` sont fournis, le widget de l'éditeur ne plafonnera pas la valeur aux limites de la plage. L'indice ``"exp"`` fera en sorte que les valeurs modifiées sur la plage changent de manière exponentielle. L'indice ``"hide_slider"`` masquera l'élément slider du widget de l'éditeur.
 
-Hints also allow to indicate the units for the edited value. Using ``"radians_as_degrees"`` you can specify that the actual value is in radians, but should be displayed in degrees in the Inspector dock (the range values are also in degrees). ``"degrees"`` allows to add a degree sign as a unit suffix (the value is unchanged). Finally, a custom suffix can be provided using ``"suffix:unit"``, where "unit" can be any string.
+Des indices permettent également d'indiquer les unités de la valeur modifiée. En utilisant ``"radians_as_degrees"``, vous pouvez spécifier que la valeur réelle est en radians, mais doit être affichée en degrés dans le dock Inspecteur (les valeurs de plage sont également en degrés). ``"degrees"`` permet d'ajouter un signe de degré comme suffixe d'unité (la valeur est inchangée). Enfin, un suffixe personnalisé peut être fourni en utilisant ``"suffix :unit"``, où "unit" peut être n'importe quelle chaîne.
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>`.
+Voir également :ref:`@GlobalScope.PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>`.
 
 ::
 
     @export_range(0, 20) var number
     @export_range(-10, 20) var number
-    @export_range(-10, 20, 0.2) var number: float
-    @export_range(0, 20) var numbers: Array[float]
+    @export_range(-10, 20, 0.2) var number : float
+    @export_range(0, 20) var numbers : Array[float]
 
     @export_range(0, 100, 1, "or_greater") var power_percent
     @export_range(0, 100, 1, "or_greater", "or_less") var health_delta
 
     @export_range(-180, 180, 0.001, "radians_as_degrees") var angle_radians
     @export_range(0, 360, 1, "degrees") var angle_degrees
-    @export_range(-8, 8, 2, "suffix:px") var target_offset
+    @export_range(-8, 8, 2, "suffix :px") var target_offset
 
 .. rst-class:: classref-item-separator
 
@@ -860,32 +860,32 @@ Marque la propriété suivante comme attribuée lorsque la :ref:`Node<class_Node
 
 .. rst-class:: classref-annotation
 
-**@rpc**\ (\ mode\: :ref:`String<class_String>` = "authority", sync\: :ref:`String<class_String>` = "call_remote", transfer_mode\: :ref:`String<class_String>` = "unreliable", transfer_channel\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_@GDScript_annotation_@rpc>`
+**@rpc**\ (\ mode\: :ref:`String<class_String>` = "authority", sync\: :ref:`String<class_String>` = "call_remote", transfer_mode\: :ref:`String<class_String>` = "reliable", transfer_channel\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_@GDScript_annotation_@rpc>`
 
-Marque la méthode suivante pour les appels de procédure distante. Voir :doc:`Multijoueur de haut niveau <../tutorials/networking/high_level_multiplayer>`.
+Mark the following method for remote procedure calls. See :doc:`High-level multiplayer <../tutorials/networking/high_level_multiplayer>`.
 
-Si ``mode`` est défini sur ``"any_peer"``, permet à n'importe quel pair d'appeler cette fonction RPC. Sinon, seul le pair d'autorité est autorisé à l'appeler et ``mode`` doit être conservé comme ``"authority"``. Lors de la configuration de fonctions en RPC avec :ref:`Node.rpc_config()<class_Node_method_rpc_config>`, chacun de ces modes correspond respectivement aux modes RPC :ref:`MultiplayerAPI.RPC_MODE_AUTHORITY<class_MultiplayerAPI_constant_RPC_MODE_AUTHORITY>` et :ref:`MultiplayerAPI.RPC_MODE_ANY_PEER<class_MultiplayerAPI_constant_RPC_MODE_ANY_PEER>`. Voir :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>`. Si un pair qui n'est pas l'autorité tente d'appeler une fonction autorisée uniquement pour l'autorité, la fonction ne sera pas exécutée. Si l'erreur peut être détectée localement (lorsque la configuration RPC est cohérente entre le homologue local et distant), un message d'erreur sera affiché sur le pair expéditeur. Sinon, le pair distant détectera l'erreur et y affichera une erreur.
+If ``mode`` is set as ``"any_peer"``, allows any peer to call this RPC function. Otherwise, only the authority peer is allowed to call it and ``mode`` should be kept as ``"authority"``. When configuring functions as RPCs with :ref:`Node.rpc_config()<class_Node_method_rpc_config>`, each of these modes respectively corresponds to the :ref:`MultiplayerAPI.RPC_MODE_AUTHORITY<class_MultiplayerAPI_constant_RPC_MODE_AUTHORITY>` and :ref:`MultiplayerAPI.RPC_MODE_ANY_PEER<class_MultiplayerAPI_constant_RPC_MODE_ANY_PEER>` RPC modes. See :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>`. If a peer that is not the authority tries to call a function that is only allowed for the authority, the function will not be executed. If the error can be detected locally (when the RPC configuration is consistent between the local and the remote peer), an error message will be displayed on the sender peer. Otherwise, the remote peer will detect the error and print an error there.
 
-Si ``sync`` est défini sur ``"call_remote"``, la fonction ne sera exécutée que sur le pair distant, mais pas localement. Pour exécuter cette fonction localement également, définissez ``sync`` sur ``"call_local"``. Lors de la configuration de fonctions en tant que RPC avec :ref:`Node.rpc_config()<class_Node_method_rpc_config>`, cela équivaut à définir ``call_local`` sur ``true``.
+If ``sync`` is set as ``"call_remote"``, the function will only be executed on the remote peer, but not locally. To run this function locally too, set ``sync`` to ``"call_local"``. When configuring functions as RPCs with :ref:`Node.rpc_config()<class_Node_method_rpc_config>`, this is equivalent to setting ``call_local`` to ``true``.
 
-Les valeurs acceptées par ``transfer_mode`` sont ``"unreliable"``, ``"unreliable_ordered"`` ou ``"reliable"``. Il définit le mode de transfert du :ref:`MultiplayerPeer<class_MultiplayerPeer>` sous-jacent. Voir :ref:`MultiplayerPeer.transfer_mode<class_MultiplayerPeer_property_transfer_mode>`.
+The ``transfer_mode`` accepted values are ``"unreliable"``, ``"unreliable_ordered"``, or ``"reliable"``. It sets the transfer mode of the underlying :ref:`MultiplayerPeer<class_MultiplayerPeer>`. See :ref:`MultiplayerPeer.transfer_mode<class_MultiplayerPeer_property_transfer_mode>`.
 
-Le ``transfer_channel`` définit le canal du :ref:`MultiplayerPeer<class_MultiplayerPeer>` sous-jacent. Voir :ref:`MultiplayerPeer.transfer_channel<class_MultiplayerPeer_property_transfer_channel>`.
+The ``transfer_channel`` defines the channel of the underlying :ref:`MultiplayerPeer<class_MultiplayerPeer>`. See :ref:`MultiplayerPeer.transfer_channel<class_MultiplayerPeer_property_transfer_channel>`.
 
-L'ordre de ``mode``, ``sync`` et ``transfer_mode`` n'a pas d'importance, mais les valeurs liées au même argument ne doivent pas être utilisées plus d'une fois. ``transfer_channel`` doit toujours être le 4ème argument (vous devez spécifier 3 arguments précédents).
+The order of ``mode``, ``sync`` and ``transfer_mode`` does not matter, but values related to the same argument must not be used more than once. ``transfer_channel`` always has to be the 4th argument (you must specify 3 preceding arguments).
 
 ::
 
     @rpc
-    func fn() : pass
+    func fn(): pass
 
     @rpc("any_peer", "unreliable_ordered")
-    func fn_update_pos() : pass
+    func fn_update_pos(): pass
 
-    @rpc("authority", "call_remote", "unreliable", 0) # Équivalent à @rpc
-    func fn_default() : pass
+    @rpc("authority", "call_remote", "reliable", 0) # Equivalent to @rpc
+    func fn_default(): pass
 
-\ **Note :** Les méthodes annotées avec :ref:`@rpc<class_@GDScript_annotation_@rpc>` ne peuvent pas recevoir d'objets qui définissent des paramètres requis dans :ref:`Object._init()<class_Object_private_method__init>`. Voir :ref:`Object._init()<class_Object_private_method__init>` pour plus de détails.
+\ **Note:** Methods annotated with :ref:`@rpc<class_@GDScript_annotation_@rpc>` cannot receive objects which define required parameters in :ref:`Object._init()<class_Object_private_method__init>`. See :ref:`Object._init()<class_Object_private_method__init>` for more details.
 
 .. rst-class:: classref-item-separator
 

@@ -113,9 +113,9 @@ EditorExportPlatformExtension
 
 :ref:`bool<class_bool>` **_can_export**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__can_export>`
 
-Returns ``true`` if the specified ``preset`` is valid and can be exported. Use :ref:`set_config_error()<class_EditorExportPlatformExtension_method_set_config_error>` and :ref:`set_config_missing_templates()<class_EditorExportPlatformExtension_method_set_config_missing_templates>` to set error details.
+Повертає ``true``, якщо вказаний ``preset`` є дійсним і його можна експортувати. Використовуйте :ref:`set_config_error()<class_EditorExportPlatformExtension_method_set_config_error>` та :ref:`set_config_missing_templates()<class_EditorExportPlatformExtension_method_set_config_missing_templates>` для встановлення деталей помилки.
 
-Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_export_configuration>` and :ref:`_has_valid_project_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_project_configuration>` to determine if exporting is possible.
+Звичайні реалізації викликають :ref:`_has_valid_export_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_export_configuration>` та :ref:`_has_valid_project_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_project_configuration>`, щоб визначити, чи можливий експорт.
 
 .. rst-class:: classref-item-separator
 
@@ -461,7 +461,7 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 |void| **_initialize**\ (\ ) |virtual| :ref:`🔗<class_EditorExportPlatformExtension_private_method__initialize>`
 
-Initializes the plugin. Called by the editor when platform is registered.
+Ініціалізує плагін. Викликається редактором під час реєстрації платформи.
 
 .. rst-class:: classref-item-separator
 

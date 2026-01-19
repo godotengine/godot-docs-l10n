@@ -139,7 +139,7 @@ ImporterMesh — это тип :ref:`Resource<class_Resource>`, аналогич
 
 :ref:`ImporterMesh<class_ImporterMesh>` **from_mesh**\ (\ mesh\: :ref:`Mesh<class_Mesh>`\ ) |static| :ref:`🔗<class_ImporterMesh_method_from_mesh>`
 
-Converts the given :ref:`Mesh<class_Mesh>` into an **ImporterMesh** by copying all its surfaces, blend shapes, materials, and metadata into a new **ImporterMesh** object.
+Преобразует заданный :ref:`Mesh<class_Mesh>` в **ImporterMesh**, копируя все её поверхности, формы смешивания, материалы и метаданные в новый объект **ImporterMesh**.
 
 .. rst-class:: classref-item-separator
 

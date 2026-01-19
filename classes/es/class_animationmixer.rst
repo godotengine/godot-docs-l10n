@@ -299,11 +299,11 @@ Un valor de pista :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPD
 
 :ref:`AnimationCallbackModeDiscrete<enum_AnimationMixer_AnimationCallbackModeDiscrete>` **ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS** = ``2``
 
-Always treat the :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` track value as :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>` with :ref:`Animation.INTERPOLATION_NEAREST<class_Animation_constant_INTERPOLATION_NEAREST>`. This is the default behavior for :ref:`AnimationTree<class_AnimationTree>`.
+Trata siempre el valor de la pista :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` como :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>` con :ref:`Animation.INTERPOLATION_NEAREST<class_Animation_constant_INTERPOLATION_NEAREST>`. Este es el comportamiento predeterminado para :ref:`AnimationTree<class_AnimationTree>`.
 
-If a value track has un-interpolatable type key values, it is internally converted to use :ref:`ANIMATION_CALLBACK_MODE_DISCRETE_RECESSIVE<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_DISCRETE_RECESSIVE>` with :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>`.
+Si una pista de valores tiene valores clave de tipo no interpolables, se convierte internamente para utilizar :ref:`ANIMATION_CALLBACK_MODE_DISCRETE_RECESSIVE<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_DISCRETE_RECESSIVE>` con :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>`.
 
-Un-interpolatable type list:
+Lista de tipos no interpolables:
 
 - :ref:`@GlobalScope.TYPE_NIL<class_@GlobalScope_constant_TYPE_NIL>`\ 
 
@@ -321,11 +321,11 @@ Un-interpolatable type list:
 
 - :ref:`@GlobalScope.TYPE_PACKED_BYTE_ARRAY<class_@GlobalScope_constant_TYPE_PACKED_BYTE_ARRAY>`\ 
 
-\ :ref:`@GlobalScope.TYPE_BOOL<class_@GlobalScope_constant_TYPE_BOOL>` and :ref:`@GlobalScope.TYPE_INT<class_@GlobalScope_constant_TYPE_INT>` are treated as :ref:`@GlobalScope.TYPE_FLOAT<class_@GlobalScope_constant_TYPE_FLOAT>` during blending and rounded when the result is retrieved.
+\ :ref:`@GlobalScope.TYPE_BOOL<class_@GlobalScope_constant_TYPE_BOOL>` y :ref:`@GlobalScope.TYPE_INT<class_@GlobalScope_constant_TYPE_INT>` se tratan como :ref:`@GlobalScope.TYPE_FLOAT<class_@GlobalScope_constant_TYPE_FLOAT>` durante la combinación y se redondean cuando se recupera el resultado.
 
-It is same for arrays and vectors with them such as :ref:`@GlobalScope.TYPE_PACKED_INT32_ARRAY<class_@GlobalScope_constant_TYPE_PACKED_INT32_ARRAY>` or :ref:`@GlobalScope.TYPE_VECTOR2I<class_@GlobalScope_constant_TYPE_VECTOR2I>`, they are treated as :ref:`@GlobalScope.TYPE_PACKED_FLOAT32_ARRAY<class_@GlobalScope_constant_TYPE_PACKED_FLOAT32_ARRAY>` or :ref:`@GlobalScope.TYPE_VECTOR2<class_@GlobalScope_constant_TYPE_VECTOR2>`. Also note that for arrays, the size is also interpolated.
+Lo mismo ocurre con las matrices y vectores que las contienen, como :ref:`@GlobalScope.TYPE_PACKED_INT32_ARRAY<class_@GlobalScope_constant_TYPE_PACKED_INT32_ARRAY>` o :ref:`@GlobalScope.TYPE_VECTOR2I<class_@GlobalScope_constant_TYPE_VECTOR2I>`, se tratan como :ref:`@GlobalScope.TYPE_PACKED_FLOAT32_ARRAY<class_@GlobalScope_constant_TYPE_PACKED_FLOAT32_ARRAY>` o :ref:`@GlobalScope.TYPE_VECTOR2<class_@GlobalScope_constant_TYPE_VECTOR2>`. Ten en cuenta también que, en el caso de las matrices, el tamaño también se interpola.
 
-\ :ref:`@GlobalScope.TYPE_STRING<class_@GlobalScope_constant_TYPE_STRING>` and :ref:`@GlobalScope.TYPE_STRING_NAME<class_@GlobalScope_constant_TYPE_STRING_NAME>` are interpolated between character codes and lengths, but note that there is a difference in algorithm between interpolation between keys and interpolation by blending.
+\ :ref:`@GlobalScope.TYPE_STRING<class_@GlobalScope_constant_TYPE_STRING>` y :ref:`@GlobalScope.TYPE_STRING_NAME<class_@GlobalScope_constant_TYPE_STRING_NAME>` se interpolan entre códigos de caracteres y longitudes, pero ten en cuenta que hay una diferencia en el algoritmo entre la interpolación entre claves y la interpolación por mezcla.
 
 .. rst-class:: classref-section-separator
 
@@ -383,11 +383,11 @@ Por ejemplo, si este valor es ``32`` y la animación tiene dos pistas de audio, 
 - |void| **set_callback_mode_discrete**\ (\ value\: :ref:`AnimationCallbackModeDiscrete<enum_AnimationMixer_AnimationCallbackModeDiscrete>`\ )
 - :ref:`AnimationCallbackModeDiscrete<enum_AnimationMixer_AnimationCallbackModeDiscrete>` **get_callback_mode_discrete**\ (\ )
 
-Ordinarily, tracks can be set to :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` to update infrequently, usually when using nearest interpolation.
+Normalmente, las pistas se pueden configurar en :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` para actualizarse con poca frecuencia, normalmente cuando se utiliza la interpolación más cercana.
 
-However, when blending with :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>` several results are considered. The :ref:`callback_mode_discrete<class_AnimationMixer_property_callback_mode_discrete>` specify it explicitly. See also :ref:`AnimationCallbackModeDiscrete<enum_AnimationMixer_AnimationCallbackModeDiscrete>`.
+Sin embargo, al mezclar con :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>` se tienen en cuenta varios resultados. El :ref:`callback_mode_discrete<class_AnimationMixer_property_callback_mode_discrete>` lo especifica explícitamente. Véase también :ref:`AnimationCallbackModeDiscrete<enum_AnimationMixer_AnimationCallbackModeDiscrete>`.
 
-To make the blended results look good, it is recommended to set this to :ref:`ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS>` to update every frame during blending. Other values exist for compatibility and they are fine if there is no blending, but not so, may produce artifacts.
+Para que los resultados mezclados se vean bien, se recomienda establecerlo en :ref:`ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS>` para actualizar cada fotograma durante la mezcla. Existen otros valores por motivos de compatibilidad y están bien si no hay mezcla, pero si no es así, pueden producir artefactos.
 
 .. rst-class:: classref-item-separator
 
@@ -438,17 +438,17 @@ La notificación de proceso en la que se actualizan las animaciones.
 - |void| **set_deterministic**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_deterministic**\ (\ )
 
-If ``true``, the blending uses the deterministic algorithm. The total weight is not normalized and the result is accumulated with an initial value (``0`` or a ``"RESET"`` animation if present).
+Si ``true``, la mezcla utiliza el algoritmo determinista. El peso total no se normaliza y el resultado se acumula con un valor inicial (``0`` o una animación ``"RESET"`` si está presente).
 
-This means that if the total amount of blending is ``0.0``, the result is equal to the ``"RESET"`` animation.
+Esto significa que si la cantidad total de mezcla es ``0.0``, el resultado es igual a la animación ``"RESET"``.
 
-If the number of tracks between the blended animations is different, the animation with the missing track is treated as if it had the initial value.
+Si el número de pistas entre las animaciones mezcladas es diferente, la animación con la pista que falta se trata como si tuviera el valor inicial.
 
-If ``false``, The blend does not use the deterministic algorithm. The total weight is normalized and always ``1.0``. If the number of tracks between the blended animations is different, nothing is done about the animation that is missing a track.
+Si es ``false``, la mezcla no utiliza el algoritmo determinista. El peso total se normaliza y siempre es ``1.0``. Si el número de pistas entre las animaciones mezcladas es diferente, no se hace nada con la animación a la que le falta una pista.
 
-\ **Note:** In :ref:`AnimationTree<class_AnimationTree>`, the blending with :ref:`AnimationNodeAdd2<class_AnimationNodeAdd2>`, :ref:`AnimationNodeAdd3<class_AnimationNodeAdd3>`, :ref:`AnimationNodeSub2<class_AnimationNodeSub2>` or the weight greater than ``1.0`` may produce unexpected results.
+\ **Nota:** En :ref:`AnimationTree<class_AnimationTree>`, la mezcla con :ref:`AnimationNodeAdd2<class_AnimationNodeAdd2>`, :ref:`AnimationNodeAdd3<class_AnimationNodeAdd3>`, :ref:`AnimationNodeSub2<class_AnimationNodeSub2>` o el peso mayor que ``1.0`` puede producir resultados inesperados.
 
-For example, if :ref:`AnimationNodeAdd2<class_AnimationNodeAdd2>` blends two nodes with the amount ``1.0``, then total weight is ``2.0`` but it will be normalized to make the total amount ``1.0`` and the result will be equal to :ref:`AnimationNodeBlend2<class_AnimationNodeBlend2>` with the amount ``0.5``.
+Por ejemplo, si :ref:`AnimationNodeAdd2<class_AnimationNodeAdd2>` mezcla dos nodos con la cantidad ``1.0``, entonces el peso total es ``2.0``, pero se normalizará para que la cantidad total sea ``1.0`` y el resultado será igual a :ref:`AnimationNodeBlend2<class_AnimationNodeBlend2>` con la cantidad ``0.5``.
 
 .. rst-class:: classref-item-separator
 
@@ -758,11 +758,11 @@ In this case, the code can be written as follows:
 
 :ref:`Vector3<class_Vector3>` **get_root_motion_position_accumulator**\ (\ ) |const| :ref:`🔗<class_AnimationMixer_method_get_root_motion_position_accumulator>`
 
-Retrieve the blended value of the position tracks with the :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` as a :ref:`Vector3<class_Vector3>` that can be used elsewhere.
+Recupera el valor combinado de las pistas de posición con :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` como un :ref:`Vector3<class_Vector3>` que se puede utilizar en otros lugares.
 
-This is useful in cases where you want to respect the initial key values of the animation.
+Esto resulta útil en los casos en los que se desea respetar los valores clave iniciales de la animación.
 
-For example, if an animation with only one key ``Vector3(0, 0, 0)`` is played in the previous frame and then an animation with only one key ``Vector3(1, 0, 1)`` is played in the next frame, the difference can be calculated as follows:
+Por ejemplo, si se reproduce una animación con una sola clave ``Vector3(0, 0, 0)`` en el fotograma anterior y luego se reproduce una animación con una sola clave ``Vector3(1, 0, 1)`` en el fotograma siguiente, la diferencia se puede calcular de la siguiente manera:
 
 
 .. tabs::
@@ -781,7 +781,7 @@ For example, if an animation with only one key ``Vector3(0, 0, 0)`` is played in
 
 
 
-However, if the animation loops, an unintended discrete change may occur, so this is only useful for some simple use cases.
+Sin embargo, si la animación se repite, puede producirse un cambio discreto no deseado, por lo que solo resulta útil para algunos casos de uso sencillos.
 
 .. rst-class:: classref-item-separator
 
@@ -823,13 +823,13 @@ El ejemplo más básico es aplicar la rotación a :ref:`CharacterBody3D<class_Ch
 
 :ref:`Quaternion<class_Quaternion>` **get_root_motion_rotation_accumulator**\ (\ ) |const| :ref:`🔗<class_AnimationMixer_method_get_root_motion_rotation_accumulator>`
 
-Retrieve the blended value of the rotation tracks with the :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` as a :ref:`Quaternion<class_Quaternion>` that can be used elsewhere.
+Recupera el valor combinado de las pistas de rotación con :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` como un :ref:`Quaternion<class_Quaternion>` que se puede utilizar en otros lugares.
 
-This is necessary to apply the root motion position correctly, taking rotation into account. See also :ref:`get_root_motion_position()<class_AnimationMixer_method_get_root_motion_position>`.
+Esto es necesario para aplicar correctamente la posición del movimiento raíz, teniendo en cuenta la rotación. Véase también :ref:`get_root_motion_position()<class_AnimationMixer_method_get_root_motion_position>`.
 
-Also, this is useful in cases where you want to respect the initial key values of the animation.
+Además, esto es útil en los casos en los que se desea respetar los valores clave iniciales de la animación.
 
-For example, if an animation with only one key ``Quaternion(0, 0, 0, 1)`` is played in the previous frame and then an animation with only one key ``Quaternion(0, 0.707, 0, 0.707)`` is played in the next frame, the difference can be calculated as follows:
+Por ejemplo, si se reproduce una animación con una sola clave ``Quaternion(0, 0, 0, 1)`` en el fotograma anterior y luego se reproduce una animación con una sola clave ``Quaternion(0, 0.707, 0, 0.707)`` en el fotograma siguiente, la diferencia se puede calcular de la siguiente manera:
 
 
 .. tabs::
@@ -848,7 +848,7 @@ For example, if an animation with only one key ``Quaternion(0, 0, 0, 1)`` is pla
 
 
 
-However, if the animation loops, an unintended discrete change may occur, so this is only useful for some simple use cases.
+Sin embargo, si la animación se repite, puede producirse un cambio discreto no deseado, por lo que solo es útil para algunos casos de uso sencillos.
 
 .. rst-class:: classref-item-separator
 
@@ -896,9 +896,9 @@ El ejemplo más básico es aplicar la escala a :ref:`CharacterBody3D<class_Chara
 
 :ref:`Vector3<class_Vector3>` **get_root_motion_scale_accumulator**\ (\ ) |const| :ref:`🔗<class_AnimationMixer_method_get_root_motion_scale_accumulator>`
 
-Retrieve the blended value of the scale tracks with the :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` as a :ref:`Vector3<class_Vector3>` that can be used elsewhere.
+Recupera el valor combinado de las pistas de escala con :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` como un :ref:`Vector3<class_Vector3>` que se puede utilizar en otros lugares.
 
-For example, if an animation with only one key ``Vector3(1, 1, 1)`` is played in the previous frame and then an animation with only one key ``Vector3(2, 2, 2)`` is played in the next frame, the difference can be calculated as follows:
+Por ejemplo, si se reproduce una animación con una sola clave ``Vector3(1, 1, 1)`` en el fotograma anterior y, a continuación, se reproduce una animación con una sola clave ``Vector3(2, 2, 2)`` en el siguiente fotograma, la diferencia se puede calcular de la siguiente manera:
 
 
 .. tabs::
@@ -917,7 +917,7 @@ For example, if an animation with only one key ``Vector3(1, 1, 1)`` is played in
 
 
 
-However, if the animation loops, an unintended discrete change may occur, so this is only useful for some simple use cases.
+Sin embargo, si la animación se repite, puede producirse un cambio discreto no deseado, por lo que solo resulta útil para algunos casos de uso sencillos.
 
 .. rst-class:: classref-item-separator
 

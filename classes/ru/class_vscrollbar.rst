@@ -59,9 +59,9 @@ VScrollBar
 
 :ref:`int<class_int>` **padding_left** = ``0`` :ref:`🔗<class_VScrollBar_theme_constant_padding_left>`
 
-Padding between the left of the :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` element and the :ref:`ScrollBar.grabber<class_ScrollBar_theme_style_grabber>`.
+Отступ между левым краем элемента :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` и элементом :ref:`ScrollBar.grabber<class_ScrollBar_theme_style_grabber>`.
 
-\ **Note:** To apply vertical padding, modify the top/bottom content margins of :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` instead.
+\ **Примечание:** Чтобы применить вертикальный отступ, измените верхние/нижние поля содержимого элемента :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>`.
 
 .. rst-class:: classref-item-separator
 
@@ -73,9 +73,9 @@ Padding between the left of the :ref:`ScrollBar.scroll<class_ScrollBar_theme_sty
 
 :ref:`int<class_int>` **padding_right** = ``0`` :ref:`🔗<class_VScrollBar_theme_constant_padding_right>`
 
-Padding between the right of the :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` element and the :ref:`ScrollBar.grabber<class_ScrollBar_theme_style_grabber>`.
+Отступ между правым краем элемента :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` и элементом :ref:`ScrollBar.grabber<class_ScrollBar_theme_style_grabber>`.
 
-\ **Note:** To apply vertical padding, modify the top/bottom content margins of :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` instead.
+\ **Примечание:** Чтобы применить вертикальный отступ, измените верхние/нижние поля содержимого элемента :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>`.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

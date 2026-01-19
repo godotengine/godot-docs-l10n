@@ -11,14 +11,14 @@ OpenXRSpatialCapabilityConfigurationBaseHeader
 
 **Успадковано від:** :ref:`OpenXRSpatialCapabilityConfigurationAnchor<class_OpenXRSpatialCapabilityConfigurationAnchor>`, :ref:`OpenXRSpatialCapabilityConfigurationAprilTag<class_OpenXRSpatialCapabilityConfigurationAprilTag>`, :ref:`OpenXRSpatialCapabilityConfigurationAruco<class_OpenXRSpatialCapabilityConfigurationAruco>`, :ref:`OpenXRSpatialCapabilityConfigurationMicroQrCode<class_OpenXRSpatialCapabilityConfigurationMicroQrCode>`, :ref:`OpenXRSpatialCapabilityConfigurationPlaneTracking<class_OpenXRSpatialCapabilityConfigurationPlaneTracking>`, :ref:`OpenXRSpatialCapabilityConfigurationQrCode<class_OpenXRSpatialCapabilityConfigurationQrCode>`
 
-Wrapper base class for OpenXR Spatial Capability Configuration headers.
+Базовий клас-обгортку для заголовків конфігурації просторових можливостей OpenXR.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Wrapper base class for OpenXR Spatial Capability Configuration headers. This class needs to be implemented for each capability configuration structure usable within OpenXR's spatial entities system.
+Базовий клас-обгортка для заголовків конфігурації просторових можливостей OpenXR. Цей клас потрібно реалізувати для кожної структури конфігурації можливостей, що використовується в системі просторових сутностей OpenXR.
 
 .. rst-class:: classref-reftable-group
 
@@ -51,7 +51,7 @@ Wrapper base class for OpenXR Spatial Capability Configuration headers. This cla
 
 :ref:`int<class_int>` **_get_configuration**\ (\ ) |virtual| :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationBaseHeader_private_method__get_configuration>`
 
-Return a pointer (encoded as an ``int64_t``) to a struct holding the spatial capability configuration data. The memory for this struct should remain accessible as long as this object remains instantiated.
+Повертає вказівник (закодований як ``int64_t``) на структуру, що містить дані конфігурації просторових можливостей. Пам'ять для цієї структури повинна залишатися доступною, поки екземпляр цього об'єкта залишається створеним.
 
 .. rst-class:: classref-item-separator
 
@@ -63,7 +63,7 @@ Return a pointer (encoded as an ``int64_t``) to a struct holding the spatial cap
 
 :ref:`bool<class_bool>` **_has_valid_configuration**\ (\ ) |virtual| |const| :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationBaseHeader_private_method__has_valid_configuration>`
 
-Return ``true`` if this object contains a valid configuration that can be retrieved when calling :ref:`_get_configuration()<class_OpenXRSpatialCapabilityConfigurationBaseHeader_private_method__get_configuration>`.
+Повернути ``true``, якщо цей об'єкт містить дійсну конфігурацію, яку можна отримати під час виклику :ref:`_get_configuration()<class_OpenXRSpatialCapabilityConfigurationBaseHeader_private_method__get_configuration>`.
 
 .. rst-class:: classref-item-separator
 
@@ -75,7 +75,7 @@ Return ``true`` if this object contains a valid configuration that can be retrie
 
 :ref:`bool<class_bool>` **has_valid_configuration**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationBaseHeader_method_has_valid_configuration>`
 
-Returns ``true`` if this object contains a valid configuration that can be used when calling :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>`.
+Повертає ``true``, якщо цей об'єкт містить дійсну конфігурацію, яку можна використовувати під час виклику :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>`.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

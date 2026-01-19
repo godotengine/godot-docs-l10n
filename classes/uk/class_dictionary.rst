@@ -440,9 +440,9 @@ Dictionary
 
 :ref:`Dictionary<class_Dictionary>` **duplicate_deep**\ (\ deep_subresources_mode\: :ref:`int<class_int>` = 1\ ) |const| :ref:`🔗<class_Dictionary_method_duplicate_deep>`
 
-Duplicates this dictionary, deeply, like :ref:`duplicate()<class_Dictionary_method_duplicate>` when passing ``true``, with extra control over how subresources are handled.
+Дублює цей словник, глибоко, подібно до :ref:`duplicate()<class_Dictionary_method_duplicate>` при передачі ``true``, з додатковим контролем над обробкою підресурсів.
 
-\ ``deep_subresources_mode`` must be one of the values from :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>`. By default, only internal resources will be duplicated (recursively).
+\ ``deep_subresources_mode`` має бути одним зі значень з :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>`. За замовчуванням (рекурсивно) будуть дублюватися лише внутрішні ресурси.
 
 .. rst-class:: classref-item-separator
 
@@ -889,7 +889,7 @@ Duplicates this dictionary, deeply, like :ref:`duplicate()<class_Dictionary_meth
 
 :ref:`bool<class_bool>` **set**\ (\ key\: :ref:`Variant<class_Variant>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Dictionary_method_set>`
 
-Sets the value of the element at the given ``key`` to the given ``value``. Returns ``true`` if the value is set successfully. Fails and returns ``false`` if the dictionary is read-only, or if ``key`` and ``value`` don't match the dictionary's types. This is the same as using the ``[]`` operator (``dict[key] = value``).
+Встановлює значення елемента за заданим ``key`` рівним заданому ``value``. Повертає ``true``, якщо значення встановлено успішно. Не вдається та повертає ``false``, якщо словник доступний лише для читання або якщо ``key`` та ``value`` не відповідають типам словника. Це те саме, що й використання оператора ``[]`` (``dict[key] = value``).
 
 .. rst-class:: classref-item-separator
 

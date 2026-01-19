@@ -413,7 +413,7 @@ Returns the spatial context for this entity.
 
 :ref:`int<class_int>` **get_spatial_entity_id**\ (\ entity\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_spatial_entity_id>`
 
-Returns the internal ``XrSpatialEntityIdEXT`` associated with the entity.
+Devuelve el nodo ``XrSpatialEntityIdEXT`` asociado con la entidad.
 
 .. rst-class:: classref-item-separator
 

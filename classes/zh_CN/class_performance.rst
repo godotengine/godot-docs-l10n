@@ -79,7 +79,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **TIME_PROCESS** = ``1``
 
-完成一帧所需的时间，单位为秒。\ *越低越好。*
+完成一帧所需的时间，单位为秒。\ *越短越好。*
 
 .. _class_Performance_constant_TIME_PHYSICS_PROCESS:
 
@@ -87,7 +87,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **TIME_PHYSICS_PROCESS** = ``2``
 
-完成一个物理帧所需的时间，单位为秒。\ *越低越好。*
+完成一个物理帧所需的时间，单位为秒。\ *越短越好。*
 
 .. _class_Performance_constant_TIME_NAVIGATION_PROCESS:
 
@@ -95,7 +95,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **TIME_NAVIGATION_PROCESS** = ``3``
 
-完成一个导航步骤的时间，单位为秒。包括导航地图的更新以及代理避障的计算。\ *越低越好。*
+完成一个导航步骤的时间，单位为秒。包括导航地图的更新以及代理避障的计算。\ *越短越好。*
 
 .. _class_Performance_constant_MEMORY_STATIC:
 
@@ -103,7 +103,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **MEMORY_STATIC** = ``4``
 
-当前使用的静态内存，单位为字节。在发布版本中不可用。\ *越低越好。*
+当前使用的静态内存，单位为字节。在发布版本中不可用。\ *越少越好。*
 
 .. _class_Performance_constant_MEMORY_STATIC_MAX:
 
@@ -111,7 +111,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **MEMORY_STATIC_MAX** = ``5``
 
-可用的静态内存。在发布版本中不可用。\ *越低越好。*
+可用的静态内存。在发布版本中不可用。\ *越少越好。*
 
 .. _class_Performance_constant_MEMORY_MESSAGE_BUFFER_MAX:
 
@@ -119,7 +119,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **MEMORY_MESSAGE_BUFFER_MAX** = ``6``
 
-消息队列缓冲区已使用的最大内存量，单位为字节。消息队列用于延迟函数调用和通知。\ *越低越好。*
+消息队列缓冲区曾使用的最大内存量，单位为字节。消息队列用于延迟函数调用和通知。\ *越少越好。*
 
 .. _class_Performance_constant_OBJECT_COUNT:
 
@@ -127,7 +127,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **OBJECT_COUNT** = ``7``
 
-当前实例化的对象数（包括节点）。\ *越低越好。*
+当前已经实例化的对象数（包括节点）。\ *越少越好。*
 
 .. _class_Performance_constant_OBJECT_RESOURCE_COUNT:
 
@@ -135,7 +135,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **OBJECT_RESOURCE_COUNT** = ``8``
 
-当前使用的资源数。\ *越低越好。*
+当前使用的资源数。\ *越少越好。*
 
 .. _class_Performance_constant_OBJECT_NODE_COUNT:
 
@@ -143,7 +143,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **OBJECT_NODE_COUNT** = ``9``
 
-当前在场景树中实例化的节点数。也包括根节点。\ *越低越好。*
+当前已经实例化的在场景树中的节点数。也包括根节点。\ *越少越好。*
 
 .. _class_Performance_constant_OBJECT_ORPHAN_NODE_COUNT:
 
@@ -151,9 +151,9 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **OBJECT_ORPHAN_NODE_COUNT** = ``10``
 
-Number of orphan nodes, i.e. nodes which are not parented to a node of the scene tree. *Lower is better.*\ 
+孤立节点的数量，即父节点不是场景树节点的节点。\ *越少越好。*\ 
 
-\ **Note:** This is only available in debug mode and will always return ``0`` when used in a project exported in release mode.
+\ **注意：**\ 只在调试模式中可用，以发布模式导出的项目中总会返回 ``0``\ 。
 
 .. _class_Performance_constant_RENDER_TOTAL_OBJECTS_IN_FRAME:
 
@@ -161,7 +161,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_TOTAL_OBJECTS_IN_FRAME** = ``11``
 
-在上一个渲染帧中的对象总数。该指标不包括剔除的对象（通过隐藏节点、视锥剔除或遮挡剔除）。\ *越低越好。*
+在上一个渲染帧中的对象总数。该指标不包括剔除的对象（通过隐藏节点、视锥剔除或遮挡剔除）。\ *越少越好。*
 
 .. _class_Performance_constant_RENDER_TOTAL_PRIMITIVES_IN_FRAME:
 
@@ -169,7 +169,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_TOTAL_PRIMITIVES_IN_FRAME** = ``12``
 
-在上一个渲染帧中渲染的顶点或索引的总数。该指标不包括来自被剔除对象的图元（通过隐藏节点、视锥剔除或遮挡剔除）。由于预深度阶段和阴影阶段，图元的数量总是高于场景中的实际顶点数量（通常是原始顶点数量的两倍或三倍）。\ *越低越好。*
+在上一个渲染帧中渲染的顶点或索引的总数。该指标不包括来自被剔除对象的图元（通过隐藏节点、视锥剔除或遮挡剔除）。由于预深度阶段和阴影阶段的影响，图元的数量总是高于场景中的实际顶点数量（典型情况下是原有顶点数量的两倍或三倍）。\ *越少越好。*
 
 .. _class_Performance_constant_RENDER_TOTAL_DRAW_CALLS_IN_FRAME:
 
@@ -177,7 +177,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_TOTAL_DRAW_CALLS_IN_FRAME** = ``13``
 
-在上一个渲染帧中执行的绘制调用的总数。该指标不包括剔除对象（通过隐藏节点、视锥剔除或遮挡剔除），因为它们不会导致绘制调用。\ *越低越好。*
+在上一个渲染帧中执行的绘制调用的总数。该指标不包括剔除对象（通过隐藏节点、视锥剔除或遮挡剔除），因为它们不会导致绘制调用。\ *越少越好。*
 
 .. _class_Performance_constant_RENDER_VIDEO_MEM_USED:
 
@@ -185,7 +185,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_VIDEO_MEM_USED** = ``14``
 
-显存的使用量（纹理和顶点内存之和，单位为字节）。由于该指标还包括其他杂项分配，因此该值始终大于 :ref:`RENDER_TEXTURE_MEM_USED<class_Performance_constant_RENDER_TEXTURE_MEM_USED>` 和 :ref:`RENDER_BUFFER_MEM_USED<class_Performance_constant_RENDER_BUFFER_MEM_USED>` 的总和。\ *越低越好。*
+显存的使用量（纹理和顶点内存之和，单位为字节）。由于该指标还包括其他杂项分配，该值始终大于 :ref:`RENDER_TEXTURE_MEM_USED<class_Performance_constant_RENDER_TEXTURE_MEM_USED>` 和 :ref:`RENDER_BUFFER_MEM_USED<class_Performance_constant_RENDER_BUFFER_MEM_USED>` 之和。\ *越少越好。*
 
 .. _class_Performance_constant_RENDER_TEXTURE_MEM_USED:
 
@@ -193,7 +193,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_TEXTURE_MEM_USED** = ``15``
 
-纹理内存的使用量（单位为字节）。\ *越低越好。*
+纹理内存的使用量（单位为字节）。\ *越少越好。*
 
 .. _class_Performance_constant_RENDER_BUFFER_MEM_USED:
 
@@ -201,7 +201,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_BUFFER_MEM_USED** = ``16``
 
-渲染缓冲区内存的使用量（单位为字节）。\ *越低越好。*
+渲染缓冲区内存的使用量（单位为字节）。\ *越少越好。*
 
 .. _class_Performance_constant_PHYSICS_2D_ACTIVE_OBJECTS:
 
@@ -209,7 +209,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **PHYSICS_2D_ACTIVE_OBJECTS** = ``17``
 
-游戏中活跃的 :ref:`RigidBody2D<class_RigidBody2D>` 节点数。\ *越低越好。*
+游戏中活跃的 :ref:`RigidBody2D<class_RigidBody2D>` 节点数。\ *越少越好。*
 
 .. _class_Performance_constant_PHYSICS_2D_COLLISION_PAIRS:
 
@@ -217,7 +217,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **PHYSICS_2D_COLLISION_PAIRS** = ``18``
 
-2D 物理引擎中碰撞对的数量。\ *越低越好。*
+2D 物理引擎中碰撞对的数量。\ *越少越好。*
 
 .. _class_Performance_constant_PHYSICS_2D_ISLAND_COUNT:
 
@@ -225,7 +225,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **PHYSICS_2D_ISLAND_COUNT** = ``19``
 
-2D 物理引擎中孤岛的数量。\ *越低越好。*
+2D 物理引擎中孤岛的数量。\ *越少越好。*
 
 .. _class_Performance_constant_PHYSICS_3D_ACTIVE_OBJECTS:
 
@@ -233,7 +233,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **PHYSICS_3D_ACTIVE_OBJECTS** = ``20``
 
-游戏中活跃的 :ref:`RigidBody3D<class_RigidBody3D>` 和 :ref:`VehicleBody3D<class_VehicleBody3D>` 节点数。\ *越低越好。*
+游戏中活跃的 :ref:`RigidBody3D<class_RigidBody3D>` 和 :ref:`VehicleBody3D<class_VehicleBody3D>` 节点数。\ *越少越好。*
 
 .. _class_Performance_constant_PHYSICS_3D_COLLISION_PAIRS:
 
@@ -241,7 +241,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **PHYSICS_3D_COLLISION_PAIRS** = ``21``
 
-3D 物理引擎中碰撞对的数量。\ *越低越好。*
+3D 物理引擎中碰撞对的数量。\ *越少越好。*
 
 .. _class_Performance_constant_PHYSICS_3D_ISLAND_COUNT:
 
@@ -249,7 +249,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **PHYSICS_3D_ISLAND_COUNT** = ``22``
 
-3D 物理引擎中孤岛的数量。\ *越低越好。*
+3D 物理引擎中孤岛的数量。\ *越少越好。*
 
 .. _class_Performance_constant_AUDIO_OUTPUT_LATENCY:
 
@@ -257,7 +257,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **AUDIO_OUTPUT_LATENCY** = ``23``
 
-:ref:`AudioServer<class_AudioServer>` 的输出延迟。相当于调用 :ref:`AudioServer.get_output_latency()<class_AudioServer_method_get_output_latency>`\ ，不建议每帧都调用该方法。
+:ref:`AudioServer<class_AudioServer>` 的输出延迟。等同于调用 :ref:`AudioServer.get_output_latency()<class_AudioServer_method_get_output_latency>`\ ，不建议每帧都调用该方法。
 
 .. _class_Performance_constant_NAVIGATION_ACTIVE_MAPS:
 

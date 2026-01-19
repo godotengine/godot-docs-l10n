@@ -9,14 +9,14 @@ OpenXRSpatialQueryResultData
 
 **Успадковує:** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the main query result data.
+Об'єкт для зберігання основних даних результатів запиту.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Object for storing the main query result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`. This must always be the first component requested.
+Об'єкт для зберігання основних даних результату запиту під час виклику :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`. Це завжди має бути перший запитуваний компонент.
 
 .. rst-class:: classref-reftable-group
 
@@ -49,7 +49,7 @@ Object for storing the main query result data when calling :ref:`OpenXRSpatialEn
 
 :ref:`int<class_int>` **get_capacity**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialQueryResultData_method_get_capacity>`
 
-Returns the number of entities that were retrieved.
+Повертає кількість отриманих об'єктів.
 
 .. rst-class:: classref-item-separator
 
@@ -61,7 +61,7 @@ Returns the number of entities that were retrieved.
 
 :ref:`int<class_int>` **get_entity_id**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialQueryResultData_method_get_entity_id>`
 
-Returns the entity id (``XrSpatialEntityIdEXT``) for the entity at this ``index``.
+Повертає ідентифікатор сутності (``XrSpatialEntityIdEXT``) для сутності за адресою ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ Returns the entity id (``XrSpatialEntityIdEXT``) for the entity at this ``index`
 
 :ref:`EntityTrackingState<enum_OpenXRSpatialEntityTracker_EntityTrackingState>` **get_entity_state**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialQueryResultData_method_get_entity_state>`
 
-Returns the entity state for the entity at this ``index``.
+Повертає стан сутності для сутності в цьому стані ``index``.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

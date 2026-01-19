@@ -539,7 +539,7 @@ enum **GLTFComponentType**: :ref:`🔗<enum_GLTFAccessor_GLTFComponentType>`
 
 :ref:`GLTFAccessor<class_GLTFAccessor>` **from_dictionary**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`\ ) |static| :ref:`🔗<class_GLTFAccessor_method_from_dictionary>`
 
-Creates a new GLTFAccessor instance by parsing the given :ref:`Dictionary<class_Dictionary>`.
+Создает новый экземпляр GLTFAccessor путем анализа заданного :ref:`Dictionary<class_Dictionary>`.
 
 .. rst-class:: classref-item-separator
 
@@ -551,7 +551,7 @@ Creates a new GLTFAccessor instance by parsing the given :ref:`Dictionary<class_
 
 :ref:`Dictionary<class_Dictionary>` **to_dictionary**\ (\ ) |const| :ref:`🔗<class_GLTFAccessor_method_to_dictionary>`
 
-Serializes this GLTFAccessor instance into a :ref:`Dictionary<class_Dictionary>`.
+Сериализует этот экземпляр GLTFAccessor в :ref:`Dictionary<class_Dictionary>`.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

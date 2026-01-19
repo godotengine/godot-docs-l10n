@@ -577,21 +577,21 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:
 
 :ref:`Error<enum_@GlobalScope_Error>` **change_scene_to_node**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_SceneTree_method_change_scene_to_node>`
 
-Changes the running scene to the provided :ref:`Node<class_Node>`. Useful when you want to set up the new scene before changing.
+Change la scène en cours d'exécution sans le noeud utilisé. Utile lorsque vous voulez mettre en place une scène avant un changement.
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the ``node`` is ``null``, or :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>` if the ``node`` is already inside the scene tree.
+Renvoie :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` lors du succès, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` si le ``node`` vaut ``null``, ou :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>` si le ``node`` est déjà dans l'arborescence de scène.
 
-\ **Note:** Operations happen in the following order when :ref:`change_scene_to_node()<class_SceneTree_method_change_scene_to_node>` is called:
+\ **Note :** Les opérations se déroulent dans l'ordre suivant quand :ref:`change_scene_to_node()<class_SceneTree_method_change_scene_to_node>` est appelée :
 
-1. The current scene node is immediately removed from the tree. From that point, :ref:`Node.get_tree()<class_Node_method_get_tree>` called on the current (outgoing) scene will return ``null``. :ref:`current_scene<class_SceneTree_property_current_scene>` will be ``null`` too, because the new scene is not available yet.
+1. Le nœud de la scène actuelle est immédiatement retiré de l'arbre. À partir de ce point, appeler :ref:`Node.get_tree()<class_Node_method_get_tree>` sur la scène courante (sortante) renverra ``null``. :ref:`current_scene<class_SceneTree_property_current_scene>` vaudra aussi ``null``, car la nouvelle scène n'est pas encore disponible.
 
-2. At the end of the frame, the formerly current scene, already removed from the tree, will be deleted (freed from memory) and then the new scene node will be added to the tree. :ref:`Node.get_tree()<class_Node_method_get_tree>` and :ref:`current_scene<class_SceneTree_property_current_scene>` will be back to working as usual.
+2. A la fin de la trame, l'ancienne scène actuelle, déjà retirée de l'arbre, sera supprimée (libérée de mémoire) et la nouvelle scène sera instanciée et ajoutée à l'arbre. :ref:`Node.get_tree()<class_Node_method_get_tree>` et :ref:`current_scene<class_SceneTree_property_current_scene>` recommenceront ainsi à fonctionner comme d'habitude.
 
-This ensures that both scenes aren't running at the same time, while still freeing the previous scene in a safe way similar to :ref:`Node.queue_free()<class_Node_method_queue_free>`.
+Cela garantit que les deux scènes ne s'exécutent pas en même temps, tout en libérant quand même la scène précédente d'une manière sécurisée semblable à :ref:`Node.queue_free()<class_Node_method_queue_free>`.
 
-If you want to reliably access the new scene, await the :ref:`scene_changed<class_SceneTree_signal_scene_changed>` signal.
+Si vous voulez accéder de manière fiable à la nouvelle scène, attendez le :ref:`scene_changed<class_SceneTree_signal_scene_changed>` signal .
 
-\ **Warning:** After using this method, the **SceneTree** will take ownership of the node and will free it automatically when changing scene again. Any references you had to that node will become invalid.
+\ **Attention :** Après avoir utilisé cette méthode, le **SceneTree** prendra possession du nœud et le libérera automatiquement lors de la modification de la scène. Toute référence que vous avez eue à ce nœud deviendra invalide.
 
 .. rst-class:: classref-item-separator
 

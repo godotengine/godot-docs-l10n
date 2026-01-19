@@ -479,7 +479,7 @@ enum **ProcessMode**: :ref:`🔗<enum_Node_ProcessMode>`
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_INHERIT** = ``0``
 
-Inherits :ref:`process_mode<class_Node_property_process_mode>` from the node's parent. This is the default for any newly created node.
+Hereda :ref:`process_mode<class_Node_property_process_mode>` del padre del nodo. Este es el valor predeterminado para cualquier nodo recién creado.
 
 .. _class_Node_constant_PROCESS_MODE_PAUSABLE:
 
@@ -487,7 +487,7 @@ Inherits :ref:`process_mode<class_Node_property_process_mode>` from the node's p
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_PAUSABLE** = ``1``
 
-Stops processing when :ref:`SceneTree.paused<class_SceneTree_property_paused>` is ``true``. This is the inverse of :ref:`PROCESS_MODE_WHEN_PAUSED<class_Node_constant_PROCESS_MODE_WHEN_PAUSED>`, and the default for the root node.
+Detiene el procesamiento cuando :ref:`SceneTree.paused<class_SceneTree_property_paused>` es ``true``. Esto es lo opuesto a :ref:`PROCESS_MODE_WHEN_PAUSED<class_Node_constant_PROCESS_MODE_WHEN_PAUSED>`, y el valor predeterminado para el nodo raíz.
 
 .. _class_Node_constant_PROCESS_MODE_WHEN_PAUSED:
 
@@ -495,7 +495,7 @@ Stops processing when :ref:`SceneTree.paused<class_SceneTree_property_paused>` i
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_WHEN_PAUSED** = ``2``
 
-Process **only** when :ref:`SceneTree.paused<class_SceneTree_property_paused>` is ``true``. This is the inverse of :ref:`PROCESS_MODE_PAUSABLE<class_Node_constant_PROCESS_MODE_PAUSABLE>`.
+Procesar **solo** cuando :ref:`SceneTree.paused<class_SceneTree_property_paused>` es ``true``. Esto es lo opuesto a :ref:`PROCESS_MODE_PAUSABLE<class_Node_constant_PROCESS_MODE_PAUSABLE>`.
 
 .. _class_Node_constant_PROCESS_MODE_ALWAYS:
 
@@ -503,7 +503,7 @@ Process **only** when :ref:`SceneTree.paused<class_SceneTree_property_paused>` i
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_ALWAYS** = ``3``
 
-Always process. Keeps processing, ignoring :ref:`SceneTree.paused<class_SceneTree_property_paused>`. This is the inverse of :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`.
+Siempre procesar. Continúa procesando, ignorando :ref:`SceneTree.paused<class_SceneTree_property_paused>`. Esto es lo opuesto a :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`.
 
 .. _class_Node_constant_PROCESS_MODE_DISABLED:
 
@@ -511,7 +511,7 @@ Always process. Keeps processing, ignoring :ref:`SceneTree.paused<class_SceneTre
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_DISABLED** = ``4``
 
-Never process. Completely disables processing, ignoring :ref:`SceneTree.paused<class_SceneTree_property_paused>`. This is the inverse of :ref:`PROCESS_MODE_ALWAYS<class_Node_constant_PROCESS_MODE_ALWAYS>`.
+Nunca procesar. Deshabilita completamente el procesamiento, ignorando :ref:`SceneTree.paused<class_SceneTree_property_paused>`. Esto es lo opuesto a :ref:`PROCESS_MODE_ALWAYS<class_Node_constant_PROCESS_MODE_ALWAYS>`.
 
 .. rst-class:: classref-item-separator
 
@@ -529,7 +529,7 @@ enum **ProcessThreadGroup**: :ref:`🔗<enum_Node_ProcessThreadGroup>`
 
 :ref:`ProcessThreadGroup<enum_Node_ProcessThreadGroup>` **PROCESS_THREAD_GROUP_INHERIT** = ``0``
 
-Process this node based on the thread group mode of the first parent (or grandparent) node that has a thread group mode that is not inherit. See :ref:`process_thread_group<class_Node_property_process_thread_group>` for more information.
+Procesa este nodo basándose en el modo de grupo de hilos del primer nodo padre (o abuelo) que tenga un modo de grupo de hilos que no sea heredado. Véase :ref:`process_thread_group<class_Node_property_process_thread_group>` para más información.
 
 .. _class_Node_constant_PROCESS_THREAD_GROUP_MAIN_THREAD:
 
@@ -537,7 +537,7 @@ Process this node based on the thread group mode of the first parent (or grandpa
 
 :ref:`ProcessThreadGroup<enum_Node_ProcessThreadGroup>` **PROCESS_THREAD_GROUP_MAIN_THREAD** = ``1``
 
-Process this node (and child nodes set to inherit) on the main thread. See :ref:`process_thread_group<class_Node_property_process_thread_group>` for more information.
+Procesa este nodo (y los nodos hijos configurados para heredar) en el hilo principal. Véase :ref:`process_thread_group<class_Node_property_process_thread_group>` para más información.
 
 .. _class_Node_constant_PROCESS_THREAD_GROUP_SUB_THREAD:
 
@@ -545,7 +545,7 @@ Process this node (and child nodes set to inherit) on the main thread. See :ref:
 
 :ref:`ProcessThreadGroup<enum_Node_ProcessThreadGroup>` **PROCESS_THREAD_GROUP_SUB_THREAD** = ``2``
 
-Process this node (and child nodes set to inherit) on a sub-thread. See :ref:`process_thread_group<class_Node_property_process_thread_group>` for more information.
+Procesa este nodo (y los nodos hijos configurados para heredar) en un subhilo. Véase :ref:`process_thread_group<class_Node_property_process_thread_group>` para más información.
 
 .. rst-class:: classref-item-separator
 
@@ -563,7 +563,7 @@ flags **ProcessThreadMessages**: :ref:`🔗<enum_Node_ProcessThreadMessages>`
 
 :ref:`ProcessThreadMessages<enum_Node_ProcessThreadMessages>` **FLAG_PROCESS_THREAD_MESSAGES** = ``1``
 
-Allows this node to process threaded messages created with :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>` right before :ref:`_process()<class_Node_private_method__process>` is called.
+Permite que este nodo procese mensajes multihilo creados con :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>` justo antes de que se llame a :ref:`_process()<class_Node_private_method__process>`.
 
 .. _class_Node_constant_FLAG_PROCESS_THREAD_MESSAGES_PHYSICS:
 
@@ -571,7 +571,7 @@ Allows this node to process threaded messages created with :ref:`call_deferred_t
 
 :ref:`ProcessThreadMessages<enum_Node_ProcessThreadMessages>` **FLAG_PROCESS_THREAD_MESSAGES_PHYSICS** = ``2``
 
-Allows this node to process threaded messages created with :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>` right before :ref:`_physics_process()<class_Node_private_method__physics_process>` is called.
+Permite que este nodo procese mensajes multihilo creados con :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>` justo antes de que se llame a :ref:`_physics_process()<class_Node_private_method__physics_process>`.
 
 .. _class_Node_constant_FLAG_PROCESS_THREAD_MESSAGES_ALL:
 
@@ -579,7 +579,7 @@ Allows this node to process threaded messages created with :ref:`call_deferred_t
 
 :ref:`ProcessThreadMessages<enum_Node_ProcessThreadMessages>` **FLAG_PROCESS_THREAD_MESSAGES_ALL** = ``3``
 
-Allows this node to process threaded messages created with :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>` right before either :ref:`_process()<class_Node_private_method__process>` or :ref:`_physics_process()<class_Node_private_method__physics_process>` are called.
+Permite que este nodo procese mensajes multihilo creados con :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>` justo antes de que se llamen a :ref:`_process()<class_Node_private_method__process>` o :ref:`_physics_process()<class_Node_private_method__physics_process>`.
 
 .. rst-class:: classref-item-separator
 
@@ -597,7 +597,7 @@ enum **PhysicsInterpolationMode**: :ref:`🔗<enum_Node_PhysicsInterpolationMode
 
 :ref:`PhysicsInterpolationMode<enum_Node_PhysicsInterpolationMode>` **PHYSICS_INTERPOLATION_MODE_INHERIT** = ``0``
 
-Inherits :ref:`physics_interpolation_mode<class_Node_property_physics_interpolation_mode>` from the node's parent. This is the default for any newly created node.
+Hereda :ref:`physics_interpolation_mode<class_Node_property_physics_interpolation_mode>` del padre del nodo. Este es el valor por defecto para cualquier nodo recién creado.
 
 .. _class_Node_constant_PHYSICS_INTERPOLATION_MODE_ON:
 
@@ -605,7 +605,7 @@ Inherits :ref:`physics_interpolation_mode<class_Node_property_physics_interpolat
 
 :ref:`PhysicsInterpolationMode<enum_Node_PhysicsInterpolationMode>` **PHYSICS_INTERPOLATION_MODE_ON** = ``1``
 
-Enables physics interpolation for this node and for children set to :ref:`PHYSICS_INTERPOLATION_MODE_INHERIT<class_Node_constant_PHYSICS_INTERPOLATION_MODE_INHERIT>`. This is the default for the root node.
+Habilita la interpolación física para este nodo y para los hijos configurados en :ref:`PHYSICS_INTERPOLATION_MODE_INHERIT<class_Node_constant_PHYSICS_INTERPOLATION_MODE_INHERIT>`. Este es el valor por defecto para el nodo raíz.
 
 .. _class_Node_constant_PHYSICS_INTERPOLATION_MODE_OFF:
 
@@ -613,7 +613,7 @@ Enables physics interpolation for this node and for children set to :ref:`PHYSIC
 
 :ref:`PhysicsInterpolationMode<enum_Node_PhysicsInterpolationMode>` **PHYSICS_INTERPOLATION_MODE_OFF** = ``2``
 
-Disables physics interpolation for this node and for children set to :ref:`PHYSICS_INTERPOLATION_MODE_INHERIT<class_Node_constant_PHYSICS_INTERPOLATION_MODE_INHERIT>`.
+Deshabilita la interpolación física para este nodo y para los hijos configurados en :ref:`PHYSICS_INTERPOLATION_MODE_INHERIT<class_Node_constant_PHYSICS_INTERPOLATION_MODE_INHERIT>`.
 
 .. rst-class:: classref-item-separator
 
@@ -631,7 +631,7 @@ enum **DuplicateFlags**: :ref:`🔗<enum_Node_DuplicateFlags>`
 
 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>` **DUPLICATE_SIGNALS** = ``1``
 
-Duplicate the node's signal connections that are connected with the :ref:`Object.CONNECT_PERSIST<class_Object_constant_CONNECT_PERSIST>` flag.
+Duplica las conexiones de señal del nodo que están conectadas con la bandera :ref:`Object.CONNECT_PERSIST<class_Object_constant_CONNECT_PERSIST>`.
 
 .. _class_Node_constant_DUPLICATE_GROUPS:
 
@@ -647,7 +647,7 @@ Duplica los grupos del nodo.
 
 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>` **DUPLICATE_SCRIPTS** = ``4``
 
-Duplicate the node's script (also overriding the duplicated children's scripts, if combined with :ref:`DUPLICATE_USE_INSTANTIATION<class_Node_constant_DUPLICATE_USE_INSTANTIATION>`).
+Duplica el script del nodo (también sobrescribiendo los scripts de los hijos duplicados, si se combina con :ref:`DUPLICATE_USE_INSTANTIATION<class_Node_constant_DUPLICATE_USE_INSTANTIATION>`).
 
 .. _class_Node_constant_DUPLICATE_USE_INSTANTIATION:
 
@@ -655,7 +655,7 @@ Duplicate the node's script (also overriding the duplicated children's scripts, 
 
 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>` **DUPLICATE_USE_INSTANTIATION** = ``8``
 
-Duplicate using :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`. If the node comes from a scene saved on disk, reuses :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>` as the base for the duplicated node and its children.
+Duplica usando :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`. Si el nodo proviene de una escena guardada en disco, reutiliza :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>` como base para el nodo duplicado y sus hijos.
 
 .. _class_Node_constant_DUPLICATE_INTERNAL_STATE:
 
@@ -663,7 +663,7 @@ Duplicate using :ref:`PackedScene.instantiate()<class_PackedScene_method_instant
 
 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>` **DUPLICATE_INTERNAL_STATE** = ``16``
 
-Duplicate also non-serializable variables (i.e. without :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>`).
+Duplica también las variables no serializables (es decir, sin :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>`).
 
 .. _class_Node_constant_DUPLICATE_DEFAULT:
 
@@ -671,11 +671,11 @@ Duplicate also non-serializable variables (i.e. without :ref:`@GlobalScope.PROPE
 
 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>` **DUPLICATE_DEFAULT** = ``15``
 
-Duplicate using default flags. This constant is useful to add or remove a single flag.
+Duplica usando las banderas por defecto. Esta constante es útil para añadir o quitar una sola bandera.
 
 ::
 
-    # Duplicate non-exported variables.
+    # Duplicar variables no exportadas.
     var dupe = duplicate(DUPLICATE_DEFAULT | DUPLICATE_INTERNAL_STATE)
 
 .. rst-class:: classref-item-separator
@@ -694,7 +694,7 @@ enum **InternalMode**: :ref:`🔗<enum_Node_InternalMode>`
 
 :ref:`InternalMode<enum_Node_InternalMode>` **INTERNAL_MODE_DISABLED** = ``0``
 
-The node will not be internal.
+El nodo no será interno.
 
 .. _class_Node_constant_INTERNAL_MODE_FRONT:
 
@@ -702,7 +702,7 @@ The node will not be internal.
 
 :ref:`InternalMode<enum_Node_InternalMode>` **INTERNAL_MODE_FRONT** = ``1``
 
-The node will be placed at the beginning of the parent's children, before any non-internal sibling.
+El nodo se colocará al principio de los hijos del padre, antes de cualquier hermano no interno.
 
 .. _class_Node_constant_INTERNAL_MODE_BACK:
 
@@ -710,7 +710,7 @@ The node will be placed at the beginning of the parent's children, before any no
 
 :ref:`InternalMode<enum_Node_InternalMode>` **INTERNAL_MODE_BACK** = ``2``
 
-The node will be placed at the end of the parent's children, after any non-internal sibling.
+El nodo se colocará al final de los hijos del padre, después de cualquier hermano no interno.
 
 .. rst-class:: classref-item-separator
 
@@ -728,7 +728,7 @@ enum **AutoTranslateMode**: :ref:`🔗<enum_Node_AutoTranslateMode>`
 
 :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **AUTO_TRANSLATE_MODE_INHERIT** = ``0``
 
-Inherits :ref:`auto_translate_mode<class_Node_property_auto_translate_mode>` from the node's parent. This is the default for any newly created node.
+Hereda :ref:`auto_translate_mode<class_Node_property_auto_translate_mode>` del padre del nodo. Este es el valor por defecto para cualquier nodo recién creado.
 
 .. _class_Node_constant_AUTO_TRANSLATE_MODE_ALWAYS:
 
@@ -736,7 +736,7 @@ Inherits :ref:`auto_translate_mode<class_Node_property_auto_translate_mode>` fro
 
 :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **AUTO_TRANSLATE_MODE_ALWAYS** = ``1``
 
-Always automatically translate. This is the inverse of :ref:`AUTO_TRANSLATE_MODE_DISABLED<class_Node_constant_AUTO_TRANSLATE_MODE_DISABLED>`, and the default for the root node.
+Siempre traducir automáticamente. Esta es la inversa de :ref:`AUTO_TRANSLATE_MODE_DISABLED<class_Node_constant_AUTO_TRANSLATE_MODE_DISABLED>`, y el valor por defecto para el nodo raíz.
 
 .. _class_Node_constant_AUTO_TRANSLATE_MODE_DISABLED:
 
@@ -1077,16 +1077,16 @@ Implemented only on iOS.
 
 **NOTIFICATION_TRANSLATION_CHANGED** = ``2010`` :ref:`🔗<class_Node_constant_NOTIFICATION_TRANSLATION_CHANGED>`
 
-Notification received when translations may have changed. Can be triggered by the user changing the locale, changing :ref:`auto_translate_mode<class_Node_property_auto_translate_mode>` or when the node enters the scene tree. Can be used to respond to language changes, for example to change the UI strings on the fly. Useful when working with the built-in translation support, like :ref:`Object.tr()<class_Object_method_tr>`.
+Notificación recibida cuando las traducciones pueden haber cambiado. Puede ser activada por el usuario al cambiar la configuración regional, al cambiar :ref:`auto_translate_mode<class_Node_property_auto_translate_mode>` o cuando el nodo entra en el árbol de la escena. Puede utilizarse para responder a cambios de idioma, por ejemplo, para cambiar las cadenas de la interfaz de usuario sobre la marcha. Útil cuando se trabaja con el soporte de traducción integrado, como :ref:`Object.tr()<class_Object_method_tr>`.
 
-\ **Note:** This notification is received alongside :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>`, so if you are instantiating a scene, the child nodes will not be initialized yet. You can use it to setup translations for this node, child nodes created from script, or if you want to access child nodes added in the editor, make sure the node is ready using :ref:`is_node_ready()<class_Node_method_is_node_ready>`.
+\ **Nota:** Esta notificación se recibe junto con :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>`, así que si estás instanciando una escena, los nodos hijos aún no estarán inicializados. Puedes usarla para configurar las traducciones de este nodo, de los nodos hijos creados a partir de script, o si quieres acceder a los nodos hijos añadidos en el editor, asegúrate de que el nodo esté listo usando :ref:`is_node_ready()<class_Node_method_is_node_ready>`.
 
 ::
 
     func _notification(what):
         if what == NOTIFICATION_TRANSLATION_CHANGED:
             if not is_node_ready():
-                await ready # Wait until ready signal.
+                await ready # Esperar hasta la señal de ready.
             $Label.text = atr("%d Bananas") % banana_counter
 
 .. _class_Node_constant_NOTIFICATION_WM_ABOUT:
@@ -1095,9 +1095,9 @@ Notification received when translations may have changed. Can be triggered by th
 
 **NOTIFICATION_WM_ABOUT** = ``2011`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_ABOUT>`
 
-Notification received from the OS when a request for "About" information is sent.
+Notificación recibida del sistema operativo cuando se envía una solicitud de información "Acerca de".
 
-Implemented only on macOS.
+Implementado solo en macOS.
 
 .. _class_Node_constant_NOTIFICATION_CRASH:
 
@@ -1105,9 +1105,9 @@ Implemented only on macOS.
 
 **NOTIFICATION_CRASH** = ``2012`` :ref:`🔗<class_Node_constant_NOTIFICATION_CRASH>`
 
-Notification received from Godot's crash handler when the engine is about to crash.
+Notificación recibida del controlador de fallos de Godot cuando el motor está a punto de fallar.
 
-Implemented on desktop platforms, if the crash handler is enabled.
+Implementado en las plataformas de escritorio si el manejador de fallos está habilitado.
 
 .. _class_Node_constant_NOTIFICATION_OS_IME_UPDATE:
 
@@ -1167,7 +1167,7 @@ Implementado en plataformas de escritorio y móviles.
 
 **NOTIFICATION_TEXT_SERVER_CHANGED** = ``2018`` :ref:`🔗<class_Node_constant_NOTIFICATION_TEXT_SERVER_CHANGED>`
 
-Notification received when the :ref:`TextServer<class_TextServer>` is changed.
+Notificación recibida cuando el :ref:`TextServer<class_TextServer>` es cambiado.
 
 .. _class_Node_constant_NOTIFICATION_ACCESSIBILITY_UPDATE:
 
@@ -1175,7 +1175,7 @@ Notification received when the :ref:`TextServer<class_TextServer>` is changed.
 
 **NOTIFICATION_ACCESSIBILITY_UPDATE** = ``3000`` :ref:`🔗<class_Node_constant_NOTIFICATION_ACCESSIBILITY_UPDATE>`
 
-Notification received when an accessibility information update is required.
+Notificación recibida cuando se requiere una actualización de la información de accesibilidad.
 
 .. _class_Node_constant_NOTIFICATION_ACCESSIBILITY_INVALIDATE:
 
@@ -1183,7 +1183,7 @@ Notification received when an accessibility information update is required.
 
 **NOTIFICATION_ACCESSIBILITY_INVALIDATE** = ``3001`` :ref:`🔗<class_Node_constant_NOTIFICATION_ACCESSIBILITY_INVALIDATE>`
 
-Notification received when accessibility elements are invalidated. All node accessibility elements are automatically deleted after receiving this message, therefore all existing references to such elements should be discarded.
+Notificación recibida cuando los elementos de accesibilidad son invalidados. Todos los elementos de accesibilidad del nodo son eliminados automáticamente después de recibir este mensaje, por lo tanto, todas las referencias existentes a dichos elementos deben ser descartadas.
 
 .. rst-class:: classref-section-separator
 
@@ -1281,6 +1281,8 @@ The name of the node. This name must be unique among the siblings (other child n
 The owner of this node. The owner must be an ancestor of this node. When packing the owner node in a :ref:`PackedScene<class_PackedScene>`, all the nodes it owns are also saved with it. See also :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`.
 
 \ **Note:** In the editor, nodes not owned by the scene root are usually not displayed in the Scene dock, and will **not** be saved. To prevent this, remember to set the owner after calling :ref:`add_child()<class_Node_method_add_child>`.
+
+\ **Note:** The owner needs to be the current scene root. See `Instancing scenes <../tutorials/plugins/running_code_in_the_editor.html#instancing-scenes>`__ in the documentation for more information.
 
 .. rst-class:: classref-item-separator
 

@@ -482,7 +482,7 @@ If ``false``, the solver retrieves the bone axis from the bone rest and caches i
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **get_end_bone_direction**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_end_bone_direction>`
 
-Returns the tail direction of the end bone of the bone chain when :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` is ``true``.
+Возвращает направление хвоста конечной кости цепочки костей, когда :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` имеет значение ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -494,7 +494,7 @@ Returns the tail direction of the end bone of the bone chain when :ref:`is_end_b
 
 :ref:`float<class_float>` **get_end_bone_length**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_end_bone_length>`
 
-Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` is ``true``.
+Возвращает длину хвостовой части конечной кости цепочки костей, когда :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` имеет значение ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -674,9 +674,9 @@ Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extend
 
 :ref:`Vector3<class_Vector3>` **get_joint_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_joint_rotation_axis_vector>`
 
-Returns the rotation axis vector for the specified joint in the bone chain. This vector represents the axis around which the joint can rotate. It is determined based on the rotation axis set for the joint.
+Возвращает вектор оси вращения для указанного сустава в костной цепи. Этот вектор представляет ось, вокруг которой может вращаться сустав. Он определяется на основе оси вращения, заданной для сустава.
 
-If :ref:`get_joint_rotation_axis()<class_SpringBoneSimulator3D_method_get_joint_rotation_axis>` is :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, this method returns ``Vector3(0, 0, 0)``.
+Если :ref:`get_joint_rotation_axis()<class_SpringBoneSimulator3D_method_get_joint_rotation_axis>` равен :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, этот метод возвращает ``Vector3(0, 0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -810,7 +810,7 @@ If :ref:`get_rotation_axis()<class_SpringBoneSimulator3D_method_get_rotation_axi
 
 :ref:`bool<class_bool>` **is_end_bone_extended**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_is_end_bone_extended>`
 
-Returns ``true`` if the end bone is extended to have a tail.
+Возвращает ``true``, если конечная кость удлинена и имеет хвост.
 
 .. rst-class:: classref-item-separator
 
@@ -1028,9 +1028,9 @@ Returns ``true`` if the end bone is extended to have a tail.
 
 |void| **set_extend_end_bone**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_extend_end_bone>`
 
-If ``enabled`` is ``true``, the end bone is extended to have a tail.
+Если ``enabled`` равно ``true``, конечная кость удлиняется, образуя хвост.
 
-The extended tail config is allocated to the last element in the joint list. In other words, if you set ``enabled`` to ``false``, the config of the last element in the joint list has no effect in the simulated result.
+Конфигурация расширенного хвоста назначается последнему элементу в списке суставов. Другими словами, если вы установите ``enabled`` в ``false``, конфигурация последнего элемента в списке суставов не повлияет на результат моделирования.
 
 .. rst-class:: classref-item-separator
 
@@ -1160,11 +1160,11 @@ The axes are based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_meth
 
 |void| **set_joint_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, vector\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_joint_rotation_axis_vector>`
 
-Sets the rotation axis vector for the specified joint in the bone chain.
+Задает вектор оси вращения для указанного сустава в костной цепи.
 
-This vector is normalized by an internal process and represents the axis around which the bone chain can rotate.
+Этот вектор нормализуется внутренним процессом и представляет ось, вокруг которой может вращаться костная цепь.
 
-If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
+Если длина вектора равна ``0``, он считается синонимом :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
 
 .. rst-class:: classref-item-separator
 

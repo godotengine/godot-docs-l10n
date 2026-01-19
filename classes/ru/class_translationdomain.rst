@@ -316,7 +316,7 @@ TranslationDomain
 
 :ref:`Array<class_Array>`\[:ref:`Translation<class_Translation>`\] **find_translations**\ (\ locale\: :ref:`String<class_String>`, exact\: :ref:`bool<class_bool>`\ ) |const| :ref:`🔗<class_TranslationDomain_method_find_translations>`
 
-Returns the :ref:`Translation<class_Translation>` instances that match ``locale`` (see :ref:`TranslationServer.compare_locales()<class_TranslationServer_method_compare_locales>`). If ``exact`` is ``true``, only instances whose locale exactly equals ``locale`` will be returned.
+Возвращает экземпляры :ref:`Translation<class_Translation>`, соответствующие ``locale`` (см. :ref:`TranslationServer.compare_locales()<class_TranslationServer_method_compare_locales>`). Если ``exact`` равно ``true``, будут возвращены только экземпляры, локаль которых точно совпадает с ``locale``.
 
 .. rst-class:: classref-item-separator
 
@@ -354,7 +354,7 @@ Returns the :ref:`Translation<class_Translation>` instances that match ``locale`
 
 :ref:`Array<class_Array>`\[:ref:`Translation<class_Translation>`\] **get_translations**\ (\ ) |const| :ref:`🔗<class_TranslationDomain_method_get_translations>`
 
-Returns all available :ref:`Translation<class_Translation>` instances as added by :ref:`add_translation()<class_TranslationDomain_method_add_translation>`.
+Возвращает все доступные экземпляры :ref:`Translation<class_Translation>`, добавленные методом :ref:`add_translation()<class_TranslationDomain_method_add_translation>`.
 
 .. rst-class:: classref-item-separator
 
@@ -366,7 +366,7 @@ Returns all available :ref:`Translation<class_Translation>` instances as added b
 
 :ref:`bool<class_bool>` **has_translation**\ (\ translation\: :ref:`Translation<class_Translation>`\ ) |const| :ref:`🔗<class_TranslationDomain_method_has_translation>`
 
-Returns ``true`` if this translation domain contains the given ``translation``.
+Возвращает ``true``, если этот домен перевода содержит заданный ``translation``.
 
 .. rst-class:: classref-item-separator
 
@@ -378,7 +378,7 @@ Returns ``true`` if this translation domain contains the given ``translation``.
 
 :ref:`bool<class_bool>` **has_translation_for_locale**\ (\ locale\: :ref:`String<class_String>`, exact\: :ref:`bool<class_bool>`\ ) |const| :ref:`🔗<class_TranslationDomain_method_has_translation_for_locale>`
 
-Returns ``true`` if there are any :ref:`Translation<class_Translation>` instances that match ``locale`` (see :ref:`TranslationServer.compare_locales()<class_TranslationServer_method_compare_locales>`). If ``exact`` is ``true``, only instances whose locale exactly equals ``locale`` are considered.
+Возвращает ``true``, если есть экземпляры :ref:`Translation<class_Translation>`, соответствующие ``locale`` (см. :ref:`TranslationServer.compare_locales()<class_TranslationServer_method_compare_locales>`). Если ``exact`` равно ``true``, рассматриваются только экземпляры, локаль которых точно совпадает с ``locale``.
 
 .. rst-class:: classref-item-separator
 

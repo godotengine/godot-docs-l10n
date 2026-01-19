@@ -543,11 +543,13 @@ enum **CellShape**: :ref:`🔗<enum_AStarGrid2D_CellShape>`
 
 :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\] **get_id_path**\ (\ from_id\: :ref:`Vector2i<class_Vector2i>`, to_id\: :ref:`Vector2i<class_Vector2i>`, allow_partial_path\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AStarGrid2D_method_get_id_path>`
 
-返回一个数组，其中包含 AStar2D 在给定点之间找到的路径中的点。数组从路径的起点到终点进行排序。
+Returns an array with the IDs of the points that form the path found by AStar2D between the given points. The array is ordered from the starting point to the ending point of the path.
 
-如果没有通往目标的有效路径并且 ``allow_partial_path`` 为 ``true``\ ，则会返回通往距离目标最近的可达点的路径。
+If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
 
-\ **注意：**\ 如果 ``allow_partial_path`` 为 ``true`` 并且 ``to_id`` 处于禁用状态，搜索耗时可能异常地大。
+If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
+
+\ **Note:** When ``allow_partial_path`` is ``true`` and ``to_id`` is solid the search may take an unusually long time to finish.
 
 .. rst-class:: classref-item-separator
 
@@ -571,13 +573,15 @@ enum **CellShape**: :ref:`🔗<enum_AStarGrid2D_CellShape>`
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_point_path**\ (\ from_id\: :ref:`Vector2i<class_Vector2i>`, to_id\: :ref:`Vector2i<class_Vector2i>`, allow_partial_path\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AStarGrid2D_method_get_point_path>`
 
-返回一个数组，其中包含 **AStarGrid2D** 在给定点之间找到的路径上的点。数组从路径的起点到终点排序。
+Returns an array with the points that are in the path found by **AStarGrid2D** between the given points. The array is ordered from the starting point to the ending point of the path.
 
-如果没有通往目标的有效路径并且 ``allow_partial_path`` 为 ``true``\ ，则会返回通往距离目标最近的可达点的路径。
+If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
 
-\ **注意：**\ 该方法不是线程安全的，同一时间只能有一个 :ref:`Thread<class_Thread>` 使用。请考虑使用 :ref:`Mutex<class_Mutex>` 来确保线程独占访问，避免竞态条件。
+If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
 
-另外，如果 ``allow_partial_path`` 为 ``true`` 并且 ``to_id`` 处于禁用状态，搜索耗时可能异常地大。
+\ **Note:** This method is not thread-safe; it can only be used from a single :ref:`Thread<class_Thread>` at a given time. Consider using :ref:`Mutex<class_Mutex>` to ensure exclusive access to one thread to avoid race conditions.
+
+Additionally, when ``allow_partial_path`` is ``true`` and ``to_id`` is solid the search may take an unusually long time to finish.
 
 .. rst-class:: classref-item-separator
 

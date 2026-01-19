@@ -87,7 +87,7 @@ Para de escuchar.
 
 :ref:`StreamPeerSocket<class_StreamPeerSocket>` **take_socket_connection**\ (\ ) :ref:`🔗<class_SocketServer_method_take_socket_connection>`
 
-If a connection is available, returns a StreamPeerSocket with the connection.
+Si hay una conexión disponible, devuelve un StreamPeerSocket con la conexión.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

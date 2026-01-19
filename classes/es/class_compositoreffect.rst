@@ -16,7 +16,7 @@ Este recurso permite crear un efecto de renderizado personalizado.
 Descripción
 ----------------------
 
-Este recurso define un efecto de renderizado personalizado que se puede aplicar a los :ref:`Viewport<class_Viewport>`\ s a través del :ref:`Environment<class_Environment>` de los viewports. Puedes implementar una retrollamada que se llama durante el renderizado en una etapa dada de la pipeline de renderizado y te permite insertar pases adicionales. Ten en cuenta que esta retrollamada se produce en el hilo de renderizado. CompositorEffect es una clase base abstracta y debe ser extendida para implementar una lógica de renderizado específica.
+Este recurso define un efecto de renderizado personalizado que se puede aplicar a los :ref:`Viewport<class_Viewport>`\ s a través del :ref:`Environment<class_Environment>` de los viewports. Puedes implementar una callback que se llama durante el renderizado en una etapa dada de la pipeline de renderizado y te permite insertar pases adicionales. Ten en cuenta que esta callback se produce en el hilo de renderizado. CompositorEffect es una clase base abstracta y debe ser extendida para implementar una lógica de renderizado específica.
 
 .. rst-class:: classref-introduction-group
 
@@ -82,7 +82,7 @@ enum **EffectCallbackType**: :ref:`🔗<enum_CompositorEffect_EffectCallbackType
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_PRE_OPAQUE** = ``0``
 
-La retrollamada se llama antes de nuestro pase de renderizado opaco, pero después del pre-pase de profundidad (si corresponde).
+La callback se llama antes de nuestro pase de renderizado opaco, pero después del pre-pase de profundidad (si corresponde).
 
 .. _class_CompositorEffect_constant_EFFECT_CALLBACK_TYPE_POST_OPAQUE:
 
@@ -90,7 +90,7 @@ La retrollamada se llama antes de nuestro pase de renderizado opaco, pero despu�
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_POST_OPAQUE** = ``1``
 
-La retrollamada se llama después de nuestro pase de renderizado opaco, pero antes de que se renderice nuestro cielo.
+La callback se llama después de nuestro pase de renderizado opaco, pero antes de que se renderice nuestro cielo.
 
 .. _class_CompositorEffect_constant_EFFECT_CALLBACK_TYPE_POST_SKY:
 
@@ -98,7 +98,7 @@ La retrollamada se llama después de nuestro pase de renderizado opaco, pero ant
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_POST_SKY** = ``2``
 
-La retrollamada se llama después de que se renderice nuestro cielo, pero antes de que se creen nuestros búferes de fondo (y, si está habilitado, antes de la dispersión subsuperficial y/o los reflejos del espacio de pantalla).
+La callback se llama después de que se renderice nuestro cielo, pero antes de que se creen nuestros búferes de fondo (y, si está habilitado, antes de la dispersión subsuperficial y/o los reflejos del espacio de pantalla).
 
 .. _class_CompositorEffect_constant_EFFECT_CALLBACK_TYPE_PRE_TRANSPARENT:
 
@@ -106,7 +106,7 @@ La retrollamada se llama después de que se renderice nuestro cielo, pero antes 
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_PRE_TRANSPARENT** = ``3``
 
-La retrollamada se llama antes de nuestro pase de renderizado transparente, pero después de que se renderice nuestro cielo y hayamos creado nuestros búferes de fondo.
+La callback se llama antes de nuestro pase de renderizado transparente, pero después de que se renderice nuestro cielo y hayamos creado nuestros búferes de fondo.
 
 .. _class_CompositorEffect_constant_EFFECT_CALLBACK_TYPE_POST_TRANSPARENT:
 
@@ -114,7 +114,7 @@ La retrollamada se llama antes de nuestro pase de renderizado transparente, pero
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_POST_TRANSPARENT** = ``4``
 
-La retrollamada se llama después de nuestro pase de renderizado transparente, pero antes de cualquier efecto de post-procesamiento incorporado y de la salida a nuestro objetivo de renderizado.
+La callback se llama después de nuestro pase de renderizado transparente, pero antes de cualquier efecto de post-procesamiento incorporado y de la salida a nuestro objetivo de renderizado.
 
 .. _class_CompositorEffect_constant_EFFECT_CALLBACK_TYPE_MAX:
 
@@ -304,7 +304,7 @@ Descripciones de Métodos
 
 |void| **_render_callback**\ (\ effect_callback_type\: :ref:`int<class_int>`, render_data\: :ref:`RenderData<class_RenderData>`\ ) |virtual| :ref:`🔗<class_CompositorEffect_private_method__render_callback>`
 
-Implementa esta función con tu código de renderizado personalizado. ``effect_callback_type`` siempre debe coincidir con el tipo de retrollamada de efecto que has especificado en :ref:`effect_callback_type<class_CompositorEffect_property_effect_callback_type>`. ``render_data`` proporciona acceso al estado de renderizado, sólo es válido durante el renderizado y no debe ser almacenado.
+Implementa esta función con tu código de renderizado personalizado. ``effect_callback_type`` siempre debe coincidir con el tipo de callback de efecto que has especificado en :ref:`effect_callback_type<class_CompositorEffect_property_effect_callback_type>`. ``render_data`` proporciona acceso al estado de renderizado, sólo es válido durante el renderizado y no debe ser almacenado.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

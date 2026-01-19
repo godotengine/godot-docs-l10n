@@ -16,9 +16,9 @@ Utiliser par l'éditeur pour augmenter ses fonctionnalités.
 Description
 -----------
 
-Plugins are used by the editor to extend functionality. The most common types of plugins are those which edit a given node or resource type, import plugins and export plugins. See also :ref:`EditorScript<class_EditorScript>` to add functions to the editor.
+Les plugins sont utilisés par l'éditeur pour étendre la fonctionnalité. Les types les plus courants de plugins sont ceux qui modifient un nœud donné ou un type de ressource, les plugins d'importation et les plugins d'exportation. Voir aussi :ref:`EditorScript<class_EditorScript>` pour ajouter des fonctions à l'éditeur.
 
-\ **Note:** Some names in this class contain "left" or "right" (e.g. :ref:`DOCK_SLOT_LEFT_UL<class_EditorPlugin_constant_DOCK_SLOT_LEFT_UL>`). These APIs assume left-to-right layout, and would be backwards when using right-to-left layout. These names are kept for compatibility reasons.
+\ **Note :** Certains noms de cette classe contiennent « left» ou « right» (par exemple :ref:`DOCK_SLOT_LEFT_UL<class_EditorPlugin_constant_DOCK_SLOT_LEFT_UL>`). Ces API supposent une mise en page de gauche à droite, et seraient à l'envers lors de l'utilisation de la mise en page de droite à gauche. Ces noms sont conservés pour des raisons de compatibilité.
 
 .. rst-class:: classref-introduction-group
 
@@ -467,7 +467,7 @@ Dock slot, right side, bottom-right (empty in default layout).
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_BOTTOM** = ``8``
 
-Bottom panel.
+Panneau du bas.
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_MAX:
 
@@ -604,7 +604,7 @@ Appelé par le moteur lorsque l'utilisateur active le **EditorPlugin** dans l'on
 
 |void| **_forward_3d_draw_over_viewport**\ (\ viewport_control\: :ref:`Control<class_Control>`\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__forward_3d_draw_over_viewport>`
 
-Called by the engine when the 3D editor's viewport is updated. ``viewport_control`` is an overlay on top of the viewport and it can be used for drawing. You can update the viewport manually by calling :ref:`update_overlays()<class_EditorPlugin_method_update_overlays>`.
+Appelé par le moteur quand la fenêtre d'affiche 3D de l'éditeur est mise à jour. ``viewport_control`` est un overlay au dessus de la fenêtre d'affichage et peut être utilisé pour le dessin. Vous pouvez mettre à jour la fenêtre d'affichage manuellement en appelant :ref:`update_overlays()<class_EditorPlugin_method_update_overlays>`.
 
 
 .. tabs::
@@ -612,12 +612,12 @@ Called by the engine when the 3D editor's viewport is updated. ``viewport_contro
  .. code-tab:: gdscript
 
     func _forward_3d_draw_over_viewport(overlay):
-        # Draw a circle at the cursor's position.
+        # Dessine un cercle sur la position du curseur.
         overlay.draw_circle(overlay.get_local_mouse_position(), 64, Color.WHITE)
 
     func _forward_3d_gui_input(camera, event):
         if event is InputEventMouseMotion:
-            # Redraw the viewport when the cursor is moved.
+            # Redessine la fenêtre d'affichage lorsque le curseur est déplacé.
             update_overlays()
             return EditorPlugin.AFTER_GUI_INPUT_STOP
         return EditorPlugin.AFTER_GUI_INPUT_PASS
@@ -626,7 +626,7 @@ Called by the engine when the 3D editor's viewport is updated. ``viewport_contro
 
     public override void _Forward3DDrawOverViewport(Control viewportControl)
     {
-        // Draw a circle at the cursor's position.
+        // Dessine un cercle sur la position du curseur.
         viewportControl.DrawCircle(viewportControl.GetLocalMousePosition(), 64, Colors.White);
     }
 
@@ -634,7 +634,7 @@ Called by the engine when the 3D editor's viewport is updated. ``viewport_contro
     {
         if (@event is InputEventMouseMotion)
         {
-            // Redraw the viewport when the cursor is moved.
+            // Redessine la fenêtre d'affichage lorsque le curseur est déplacé.
             UpdateOverlays();
             return EditorPlugin.AfterGuiInput.Stop;
         }
@@ -667,20 +667,20 @@ You need to enable calling of this method by using :ref:`set_force_draw_over_for
 
 :ref:`int<class_int>` **_forward_3d_gui_input**\ (\ viewport_camera\: :ref:`Camera3D<class_Camera3D>`, event\: :ref:`InputEvent<class_InputEvent>`\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__forward_3d_gui_input>`
 
-Called when there is a root node in the current edited scene, :ref:`_handles()<class_EditorPlugin_private_method__handles>` is implemented, and an :ref:`InputEvent<class_InputEvent>` happens in the 3D viewport. The return value decides whether the :ref:`InputEvent<class_InputEvent>` is consumed or forwarded to other **EditorPlugin**\ s. See :ref:`AfterGUIInput<enum_EditorPlugin_AfterGUIInput>` for options.
+Appelé lorsqu'il y a un nœud racine dans la scène modifiée actuelle, ``méthode _handles`` est mis en œuvre, et un :ref:`InputEvent<class_InputEvent>` se produit dans la fenêtre d'affichage 3D. La valeur retournée décide si le :ref:`InputEvent<class_InputEvent>` est consommé ou transmis à d'autres **EditorPlugin**. Voir :ref:`AfterGUIInput<enum_EditorPlugin_AfterGUIInput>` pour les options.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Prevents the InputEvent from reaching other Editor classes.
+    # Empêche l'InputEvent d'atteindre d'autres classes d'Éditeur.
     func _forward_3d_gui_input(camera, event):
         return EditorPlugin.AFTER_GUI_INPUT_STOP
 
  .. code-tab:: csharp
 
-    // Prevents the InputEvent from reaching other Editor classes.
+    // Empêche l'InputEvent d'atteindre d'autres classes d'Éditeur.
     public override EditorPlugin.AfterGuiInput _Forward3DGuiInput(Camera3D camera, InputEvent @event)
     {
         return EditorPlugin.AfterGuiInput.Stop;
@@ -688,23 +688,23 @@ Called when there is a root node in the current edited scene, :ref:`_handles()<c
 
 
 
-This method must return :ref:`AFTER_GUI_INPUT_PASS<class_EditorPlugin_constant_AFTER_GUI_INPUT_PASS>` in order to forward the :ref:`InputEvent<class_InputEvent>` to other Editor classes.
+Cette méthode doit retourner :ref:`AFTER_GUI_INPUT_PASS<class_EditorPlugin_constant_AFTER_GUI_INPUT_PASS>` afin de transmettre le :ref:`InputEvent<class_InputEvent>` aux autres classes d'éditeur.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Consumes InputEventMouseMotion and forwards other InputEvent types.
+    # Utilise InputEventMouseMotion et transmets les autres types d'InputEvent.
     func _forward_3d_gui_input(camera, event):
         return EditorPlugin.AFTER_GUI_INPUT_STOP if event is InputEventMouseMotion else EditorPlugin.AFTER_GUI_INPUT_PASS
 
  .. code-tab:: csharp
 
-    // Consumes InputEventMouseMotion and forwards other InputEvent types.
+    // Utilise InputEventMouseMotion et transmets les autres types d'InputEvent..
     public override EditorPlugin.AfterGuiInput _Forward3DGuiInput(Camera3D camera, InputEvent @event)
     {
-        return @event is InputEventMouseMotion ? EditorPlugin.AfterGuiInput.Stop : EditorPlugin.AfterGuiInput.Pass;
+        return @event is InputEventMouseMotion ? EditorPlugin.AfterGuiInput.Stop : EditorPlugin.AfterGuiInput.Pass;
     }
 
 
@@ -719,7 +719,7 @@ This method must return :ref:`AFTER_GUI_INPUT_PASS<class_EditorPlugin_constant_A
 
 |void| **_forward_canvas_draw_over_viewport**\ (\ viewport_control\: :ref:`Control<class_Control>`\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__forward_canvas_draw_over_viewport>`
 
-Called by the engine when the 2D editor's viewport is updated. ``viewport_control`` is an overlay on top of the viewport and it can be used for drawing. You can update the viewport manually by calling :ref:`update_overlays()<class_EditorPlugin_method_update_overlays>`.
+Appelé par le moteur quand la fenêtre d'affiche 2D de l'éditeur est mise à jour. ``viewport_control`` est un overlay sur la fenêtre d'afichage et peut être utilisé pour le dessin. Vous pouvez mettre à jour la fenêtre d'affichage manuellement en appelant :ref:`update_overlays()<class_EditorPlugin_method_update_overlays>`.
 
 
 .. tabs::
@@ -727,12 +727,12 @@ Called by the engine when the 2D editor's viewport is updated. ``viewport_contro
  .. code-tab:: gdscript
 
     func _forward_canvas_draw_over_viewport(overlay):
-        # Draw a circle at the cursor's position.
+        # Dessine un cercle sur la position du curseur.
         overlay.draw_circle(overlay.get_local_mouse_position(), 64, Color.WHITE)
 
     func _forward_canvas_gui_input(event):
         if event is InputEventMouseMotion:
-            # Redraw the viewport when the cursor is moved.
+            # Redessine la fenêtre d'affichage lorsque le curseur est déplacé.
             update_overlays()
             return true
         return false
@@ -741,7 +741,7 @@ Called by the engine when the 2D editor's viewport is updated. ``viewport_contro
 
     public override void _ForwardCanvasDrawOverViewport(Control viewportControl)
     {
-        // Draw a circle at the cursor's position.
+        // Dessine un cercle sur la position du curseur.
         viewportControl.DrawCircle(viewportControl.GetLocalMousePosition(), 64, Colors.White);
     }
 
@@ -749,7 +749,7 @@ Called by the engine when the 2D editor's viewport is updated. ``viewport_contro
     {
         if (@event is InputEventMouseMotion)
         {
-            // Redraw the viewport when the cursor is moved.
+            // Redessine la fenêtre d'affichage lorsque le curseur est déplacé.
             UpdateOverlays();
             return true;
         }
@@ -782,20 +782,20 @@ You need to enable calling of this method by using :ref:`set_force_draw_over_for
 
 :ref:`bool<class_bool>` **_forward_canvas_gui_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__forward_canvas_gui_input>`
 
-Called when there is a root node in the current edited scene, :ref:`_handles()<class_EditorPlugin_private_method__handles>` is implemented, and an :ref:`InputEvent<class_InputEvent>` happens in the 2D viewport. If this method returns ``true``, ``event`` is intercepted by this **EditorPlugin**, otherwise ``event`` is forwarded to other Editor classes.
+Appelé quand il y a un nœud racine dans la scène en cours d’édition, que :ref:`handles()<class_EditorPlugin_method_handles>` est implémenté et qu'un :ref:`InputEvent<class_InputEvent>` est déclenché dans la fenêtre d'affichage 2D. Si cette méthode retourne ``true``, ``event``\ est intercepté par cet **EditorPlugin**, sinon ``event`` est transmis aux autres classes d'éditeur.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Prevents the InputEvent from reaching other Editor classes.
+    # Empêche le InputEvent d’atteindre d'autres classes d'éditeur.
     func _forward_canvas_gui_input(event):
         return true
 
  .. code-tab:: csharp
 
-    // Prevents the InputEvent from reaching other Editor classes.
+    // Empêche le InputEvent d’atteindre d'autres classes d'éditeur.
     public override bool ForwardCanvasGuiInput(InputEvent @event)
     {
         return true;
@@ -803,14 +803,14 @@ Called when there is a root node in the current edited scene, :ref:`_handles()<c
 
 
 
-This method must return ``false`` in order to forward the :ref:`InputEvent<class_InputEvent>` to other Editor classes.
+Cette métode doit retourner ``false `` afin de transmettre le :ref:`InputEvent<class_InputEvent>` à d'autres classes d'éditeur.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Consumes InputEventMouseMotion and forwards other InputEvent types.
+    # Consomme le EventMouseMotion et transmet les autres types d'InputEvent.
     func _forward_canvas_gui_input(event):
         if (event is InputEventMouseMotion):
             return true
@@ -818,7 +818,7 @@ This method must return ``false`` in order to forward the :ref:`InputEvent<class
 
  .. code-tab:: csharp
 
-    // Consumes InputEventMouseMotion and forwards other InputEvent types.
+    // Consomme le EventMouseMotion et transmet les autres types d'InputEvent.
     public override bool _ForwardCanvasGuiInput(InputEvent @event)
     {
         if (@event is InputEventMouseMotion)
@@ -987,9 +987,9 @@ Use :ref:`_set_window_layout()<class_EditorPlugin_private_method__set_window_lay
 
 :ref:`bool<class_bool>` **_handles**\ (\ object\: :ref:`Object<class_Object>`\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__handles>`
 
-Implement this function if your plugin edits a specific type of object (Resource or Node). If you return ``true``, then you will get the functions :ref:`_edit()<class_EditorPlugin_private_method__edit>` and :ref:`_make_visible()<class_EditorPlugin_private_method__make_visible>` called when the editor requests them. If you have declared the methods :ref:`_forward_canvas_gui_input()<class_EditorPlugin_private_method__forward_canvas_gui_input>` and :ref:`_forward_3d_gui_input()<class_EditorPlugin_private_method__forward_3d_gui_input>` these will be called too.
+Implémentez cette fonction si votre plugin modifie un type spécifique d'objet (Ressource ou Nœud). Si vous retournez ``true``, alors vous obtiendrez les fonctions :ref:`_edit()<class_EditorPlugin_private_method__edit>` et :ref:`_make_visible()<class_EditorPlugin_private_method__make_visible>` appelées lorsque l'éditeur les demande. Si vous avez déclaré les méthodes :ref:`_forward_canvas_gui_input()<class_EditorPlugin_private_method__forward_canvas_gui_input>` et :ref:`_forward_3d_gui_input()<class_EditorPlugin_private_method__forward_3d_gui_input>` elles seront également appelées.
 
-\ **Note:** Each plugin should handle only one type of objects at a time. If a plugin handles more types of objects and they are edited at the same time, it will result in errors.
+\ **Note :** Chaque plugin ne doit manipuler qu'un seul type d'objet à la fois. Si un plugin gère plus de types d'objets et qu'ils sont modifiés en même temps, cela entraînera des erreurs.
 
 .. rst-class:: classref-item-separator
 
@@ -1104,13 +1104,13 @@ Restaure l'état enregistré par :ref:`_get_state()<class_EditorPlugin_private_m
 
 |void| **_set_window_layout**\ (\ configuration\: :ref:`ConfigFile<class_ConfigFile>`\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__set_window_layout>`
 
-Restore the plugin GUI layout and data saved by :ref:`_get_window_layout()<class_EditorPlugin_private_method__get_window_layout>`. This method is called for every plugin on editor startup. Use the provided ``configuration`` file to read your saved data.
+Restaurer l'interface graphique du plugin et les données enregistrées par :ref:`_get_window_layout()<class_EditorPlugin_private_method__get_window_layout>`. Cette méthode est appelée pour chaque plugin au démarrage de l'éditeur. Utilisez le fichier ``configuration`` fourni pour lire vos données sauvegardées.
 
 ::
 
     func _set_window_layout(configuration):
         $Window.position = configuration.get_value("MyPlugin", "window_position", Vector2())
-        $Icon.modulate = configuration.get_value("MyPlugin", "icon_color", Color.WHITE)
+        $Icon.modulate = configuration.get_value("MyPlugin", "icon_color", Couleur. WHITE)
 
 .. rst-class:: classref-item-separator
 
@@ -1122,7 +1122,7 @@ Restore the plugin GUI layout and data saved by :ref:`_get_window_layout()<class
 
 |void| **add_autoload_singleton**\ (\ name\: :ref:`String<class_String>`, path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorPlugin_method_add_autoload_singleton>`
 
-Adds a script at ``path`` to the Autoload list as ``name``.
+Ajoute un script à ``path`` à la liste des scripts chargés automatiquement sous le nom ``name``.
 
 .. rst-class:: classref-item-separator
 
@@ -1150,11 +1150,11 @@ Adds a plugin to the context menu. ``slot`` is the context menu where the plugin
 
 **Obsolète :** Use :ref:`add_dock()<class_EditorPlugin_method_add_dock>` instead, with :ref:`EditorDock.default_slot<class_EditorDock_property_default_slot>` set to :ref:`DOCK_SLOT_BOTTOM<class_EditorPlugin_constant_DOCK_SLOT_BOTTOM>`.
 
-Adds a control to the bottom panel (together with Output, Debug, Animation, etc.). Returns a reference to a button that is outside the scene tree. It's up to you to hide/show the button when needed. When your plugin is deactivated, make sure to remove your custom control with :ref:`remove_control_from_bottom_panel()<class_EditorPlugin_method_remove_control_from_bottom_panel>` and free it with :ref:`Node.queue_free()<class_Node_method_queue_free>`.
+Ajoute un contrôle au panneau inférieur (avec Sortie, Debug, Animation, etc.). Retourne une référence à un bouton qui est en dehors de l'arborescence de scène. Vous décidez de cacher / afficher le bouton au besoin. Lorsque votre plugin est désactivé, assurez-vous de supprimer votre commande personnalisée avec :ref:`remove_control_from_bottom_panel()<class_EditorPlugin_method_remove_control_from_bottom_panel>` et de le libérer avec :ref:`Node.queue_free()<class_Node_method_queue_free>`.
 
-\ ``shortcut`` is a shortcut that, when activated, will toggle the bottom panel's visibility. The shortcut object is only set when this control is added to the bottom panel.
+\ ``shortcut`` est un raccourci qui, lorsqu'il est activé, va définir la visibilité du panneau inférieur. L'objet raccourci n'est défini que lorsque ce contrôle est ajouté au panneau inférieur.
 
-\ **Note** See the default editor bottom panel shortcuts in the Editor Settings for inspiration. By convention, they all use :kbd:`Alt` modifier.
+\ **Note** Voir les raccourcis par défaut du panneau de bas de l'éditeur dans l'éditeur Paramètres pour inspiration. Par convention, ils utilisent tous le modificateur :kbd:`Alt`.
 
 .. rst-class:: classref-item-separator
 
@@ -1202,17 +1202,17 @@ Optionally, you can specify a shortcut parameter. When pressed, this shortcut wi
 
 |void| **add_custom_type**\ (\ type\: :ref:`String<class_String>`, base\: :ref:`String<class_String>`, script\: :ref:`Script<class_Script>`, icon\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_EditorPlugin_method_add_custom_type>`
 
-Adds a custom type, which will appear in the list of nodes or resources.
+Ajoute un type personnalisé, qui apparaîtra dans la liste des nœuds ou des ressources.
 
-When a given node or resource is selected, the base type will be instantiated (e.g. "Node3D", "Control", "Resource"), then the script will be loaded and set to this object.
+Lorsqu'un nœud ou une ressource donné est sélectionné, le type de base sera instancié (par exemple "Node3D", "Control", "Ressource"), puis le script sera chargé et défini sur cet objet.
 
-\ **Note:** The base type is the base engine class which this type's class hierarchy inherits, not any custom type parent classes.
+\ **Note :** Le type de base est la classe moteur de base qui hérite de la hiérarchie de classe de ce type, pas de classes parentes de type personnalisé.
 
-You can use the virtual method :ref:`_handles()<class_EditorPlugin_private_method__handles>` to check if your custom object is being edited by checking the script or using the ``is`` keyword.
+Vous pouvez utiliser la méthode virtuelle :ref:`_handles()<class_EditorPlugin_private_method__handles>` pour vérifier si votre objet personnalisé est modifié en vérifiant le script ou en utilisant le mot-clé ``is``.
 
-During run-time, this will be a simple object with a script so this function does not need to be called then.
+Pendant l'exécution, ce sera un objet simple avec un script de sorte que cette fonction n'a pas besoin d'être appelée à ce moment.
 
-\ **Note:** Custom types added this way are not true classes. They are just a helper to create a node with specific script.
+\ **Note :** Les types personnalisés ajoutés de cette façon ne sont pas de vraies classes. Ce ne sont que des assistants pour créer un nœud avec des scripts spécifiques.
 
 .. rst-class:: classref-item-separator
 

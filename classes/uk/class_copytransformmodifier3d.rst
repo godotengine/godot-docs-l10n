@@ -14,27 +14,27 @@ CopyTransformModifier3D
 Опис
 --------
 
-Apply the copied transform of the bone set by :ref:`BoneConstraint3D.set_reference_bone()<class_BoneConstraint3D_method_set_reference_bone>` to the bone set by :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` with processing it with some masks and options.
+Застосуйте скопійоване перетворення набору кісток за допомогою методу :ref:`BoneConstraint3D.set_reference_bone()<class_BoneConstraint3D_method_set_reference_bone>` до набору кісток за допомогою методу :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` з обробкою його деякими масками та опціями.
 
-There are 4 ways to apply the transform, depending on the combination of :ref:`set_relative()<class_CopyTransformModifier3D_method_set_relative>` and :ref:`set_additive()<class_CopyTransformModifier3D_method_set_additive>`.
+Існує 4 способи застосування перетворення, залежно від комбінації методів :ref:`set_relative()<class_CopyTransformModifier3D_method_set_relative>` та :ref:`set_additive()<class_CopyTransformModifier3D_method_set_additive>`.
 
-\ **Relative + Additive:**\ 
+\ **Відносне + Адитивне:**\ 
 
-- Extract reference pose relative to the rest and add it to the apply bone's pose.
+- Витягніть опорну позу відносно решти та додайте її до пози застосованої кістки.
 
-\ **Relative + Not Additive:**\ 
+\ **Відносне + Неадитивне:**\ 
 
-- Extract reference pose relative to the rest and add it to the apply bone's rest.
+- Витягніть опорну позу відносно решти та додайте її до решти застосованої кістки.
 
-\ **Not Relative + Additive:**\ 
+\ **Не відносне + Адитивне:**\ 
 
-- Extract reference pose absolutely and add it to the apply bone's pose.
+- Абсолютно витягніть опорну позу та додайте її до пози застосованої кістки.
 
-\ **Not Relative + Not Additive:**\ 
+\ **Не відносне + Неадитивне:**\ 
 
-- Extract reference pose absolutely and the apply bone's pose is replaced with it.
+- Абсолютно витягніть опорну позу, і поза застосованої кістки замінюється нею.
 
-\ **Note:** Relative option is available only in the case :ref:`BoneConstraint3D.get_reference_type()<class_BoneConstraint3D_method_get_reference_type>` is :ref:`BoneConstraint3D.REFERENCE_TYPE_BONE<class_BoneConstraint3D_constant_REFERENCE_TYPE_BONE>`. See also :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
+ **Примітка:** Відносний параметр доступний лише у випадку, якщо :ref:`BoneConstraint3D.get_reference_type()<class_BoneConstraint3D_method_get_reference_type>` має значення :ref:`BoneConstraint3D.REFERENCE_TYPE_BONE<class_BoneConstraint3D_constant_REFERENCE_TYPE_BONE>`. Див. також :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
 
 .. rst-class:: classref-reftable-group
 

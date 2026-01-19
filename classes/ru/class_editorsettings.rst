@@ -14,13 +14,13 @@ EditorSettings
 Описание
 ----------------
 
-Object that holds the project-independent editor settings. These settings are generally visible in the **Editor > Editor Settings** menu.
+Объект, содержащий независимые от проекта настройки редактора. Эти настройки обычно отображаются в меню **Редактор > Настройки редактора**.
 
-Property names use slash delimiters to distinguish sections. Setting values can be of any :ref:`Variant<class_Variant>` type. It's recommended to use ``snake_case`` for editor settings to be consistent with the Godot editor itself.
+В именах свойств используются разделители в виде косой черты для различения разделов. Значения настроек могут быть любого типа :ref:`Variant<class_Variant>`. Рекомендуется использовать ``snake_case`` для настроек редактора, чтобы они соответствовали самому редактору Godot.
 
-Editor settings are saved automatically when changed.
+Настройки редактора сохраняются автоматически при изменении.
 
-Accessing the settings can be done using the following methods, such as:
+Доступ к настройкам можно получить следующими способами, например:
 
 
 .. tabs::
@@ -28,24 +28,24 @@ Accessing the settings can be done using the following methods, such as:
  .. code-tab:: gdscript
 
     var settings = EditorInterface.get_editor_settings()
-    # `settings.set("some/property", 10)` also works as this class overrides `_set()` internally.
+    # Метод `settings.set("some/property", 10)` также работает, поскольку этот класс внутренне переопределяет метод `_set()`.
     settings.set_setting("some/property", 10)
-    # `settings.get("some/property")` also works as this class overrides `_get()` internally.
+    # Метод `settings.get("some/property")` также работает, поскольку этот класс внутренне переопределяет метод `_get()`.
     settings.get_setting("some/property")
     var list_of_settings = settings.get_property_list()
 
  .. code-tab:: csharp
 
     EditorSettings settings = EditorInterface.Singleton.GetEditorSettings();
-    // `settings.set("some/property", value)` also works as this class overrides `_set()` internally.
+    // Метод `settings.set("some/property", 10)` также работает, поскольку этот класс внутренне переопределяет метод `_set()`.
     settings.SetSetting("some/property", Value);
-    // `settings.get("some/property", value)` also works as this class overrides `_get()` internally.
+    // Метод `settings.get("some/property")` также работает, поскольку этот класс внутренне переопределяет метод `_get()`.
     settings.GetSetting("some/property");
     Godot.Collections.Array<Godot.Collections.Dictionary> listOfSettings = settings.GetPropertyList();
 
 
 
-\ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using :ref:`EditorInterface.get_editor_settings()<class_EditorInterface_method_get_editor_settings>`.
+\ **Примечание:** Этот класс не следует создавать напрямую. Вместо этого обращайтесь к синглтону с помощью :ref:`EditorInterface.get_editor_settings()<class_EditorInterface_method_get_editor_settings>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -101,6 +101,8 @@ Accessing the settings can be done using the following methods, such as:
    | :ref:`bool<class_bool>`                           | :ref:`docks/scene_tree/hide_filtered_out_parents<class_EditorSettings_property_docks/scene_tree/hide_filtered_out_parents>`                                                                                       |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`docks/scene_tree/start_create_dialog_fully_expanded<class_EditorSettings_property_docks/scene_tree/start_create_dialog_fully_expanded>`                                                                     |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`float<class_float>`                         | :ref:`editors/2d/auto_resample_delay<class_EditorSettings_property_editors/2d/auto_resample_delay>`                                                                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                         | :ref:`editors/2d/bone_color1<class_EditorSettings_property_editors/2d/bone_color1>`                                                                                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -211,6 +213,8 @@ Accessing the settings can be done using the following methods, such as:
    | :ref:`Color<class_Color>`                         | :ref:`editors/3d/secondary_grid_color<class_EditorSettings_property_editors/3d/secondary_grid_color>`                                                                                                             |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                         | :ref:`editors/3d/selection_box_color<class_EditorSettings_property_editors/3d/selection_box_color>`                                                                                                               |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                             | :ref:`editors/3d/show_gizmo_during_rotation<class_EditorSettings_property_editors/3d/show_gizmo_during_rotation>`                                                                                                 |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`                         | :ref:`editors/3d_gizmos/gizmo_colors/aabb<class_EditorSettings_property_editors/3d_gizmos/gizmo_colors/aabb>`                                                                                                     |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1326,6 +1330,18 @@ Accessing the settings can be done using the following methods, such as:
 
 ----
 
+.. _class_EditorSettings_property_editors/2d/auto_resample_delay:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **editors/2d/auto_resample_delay** :ref:`🔗<class_EditorSettings_property_editors/2d/auto_resample_delay>`
+
+Задержка для автоматической передискретизации в 2D-редакторе (в секундах).
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorSettings_property_editors/2d/bone_color1:
 
 .. rst-class:: classref-property
@@ -1908,7 +1924,7 @@ Accessing the settings can be done using the following methods, such as:
 
 :ref:`float<class_float>` **editors/3d/navigation_feel/angle_snap_threshold** :ref:`🔗<class_EditorSettings_property_editors/3d/navigation_feel/angle_snap_threshold>`
 
-The angle threshold for snapping camera rotation to 45-degree angles while orbiting with :kbd:`Alt` held.
+Пороговое значение угла, при котором вращение камеры фиксируется на 45 градусах во время вращения с помощью клавиши :kbd:`Alt`, сохраняется.
 
 .. rst-class:: classref-item-separator
 
@@ -2022,6 +2038,18 @@ The angle threshold for snapping camera rotation to 45-degree angles while orbit
 
 ----
 
+.. _class_EditorSettings_property_editors/3d/show_gizmo_during_rotation:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **editors/3d/show_gizmo_during_rotation** :ref:`🔗<class_EditorSettings_property_editors/3d/show_gizmo_during_rotation>`
+
+Если этот флажок установлен, инструмент преобразования остается видимым во время вращения в данном режиме преобразования.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorSettings_property_editors/3d_gizmos/gizmo_colors/aabb:
 
 .. rst-class:: classref-property
@@ -2100,7 +2128,7 @@ The angle threshold for snapping camera rotation to 45-degree angles while orbit
 
 :ref:`Color<class_Color>` **editors/3d_gizmos/gizmo_colors/ik_chain** :ref:`🔗<class_EditorSettings_property_editors/3d_gizmos/gizmo_colors/ik_chain>`
 
-The 3D editor gizmo color for the :ref:`IKModifier3D<class_IKModifier3D>` guides.
+Цветовое оформление элементов управления 3D-редактора для направляющих :ref:`IKModifier3D<class_IKModifier3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2488,9 +2516,9 @@ The 3D editor gizmo color for the :ref:`IKModifier3D<class_IKModifier3D>` guides
 
 :ref:`bool<class_bool>` **editors/animation/insert_at_current_time** :ref:`🔗<class_EditorSettings_property_editors/animation/insert_at_current_time>`
 
-If ``true``, animation keys and markers are inserted at the current time in the animation.
+Если ``true``, то ключевые кадры и маркеры анимации вставляются в текущий момент времени в анимации.
 
-If ``false``, they are inserted at the mouse cursor's position.
+Если ``false``, то они вставляются в позицию курсора мыши.
 
 .. rst-class:: classref-item-separator
 
@@ -3367,9 +3395,9 @@ If ``false``, they are inserted at the mouse cursor's position.
 
 :ref:`bool<class_bool>` **filesystem/on_save/warn_on_saving_large_text_resources** :ref:`🔗<class_EditorSettings_property_filesystem/on_save/warn_on_saving_large_text_resources>`
 
-If ``true``, displays a warning toast message when saving a text-based scene or resource that is larger than 500 KiB on disk. This is typically caused by binary subresources being embedded as text, which results in slow and inefficient conversion to text. This in turn impacts scene saving and loading times.
+Если ``true``, отображается предупреждающее всплывающее сообщение при сохранении текстовой сцены или ресурса размером более 500 Кб на диске. Обычно это происходит из-за того, что бинарные подресурсы встраиваются в текст, что приводит к медленному и неэффективному преобразованию в текст. Это, в свою очередь, влияет на время сохранения и загрузки сцены.
 
-This should usually be resolved by moving the embedded binary subresource to its own binary resource file (``.res`` extension instead of ``.tres``). This is the preferred approach. Alternatively, the entire scene can be saved with the binary ``.scn`` format as opposed to ``.tscn``, but this will make it less friendly to version control systems.
+Обычно эту проблему следует решать, переместив встроенный бинарный подресурс в отдельный бинарный файл ресурса (с расширением ``.res`` вместо ``.tres``). Это предпочтительный подход. В качестве альтернативы, всю сцену можно сохранить в бинарном формате ``.scn`` вместо ``.tscn``, но это сделает его менее удобным для систем контроля версий.
 
 .. rst-class:: classref-item-separator
 
@@ -3421,7 +3449,7 @@ This should usually be resolved by moving the embedded binary subresource to its
 
 :ref:`bool<class_bool>` **filesystem/quick_open_dialog/instant_preview** :ref:`🔗<class_EditorSettings_property_filesystem/quick_open_dialog/instant_preview>`
 
-If ``true``, highlighting a resource will preview it quickly without confirming the selection or closing the dialog.
+Если ``true``, выделение ресурса позволит быстро просмотреть его содержимое без подтверждения выбора или закрытия диалогового окна.
 
 .. rst-class:: classref-item-separator
 
@@ -3515,15 +3543,15 @@ If ``true``, highlighting a resource will preview it quickly without confirming 
 
 :ref:`int<class_int>` **interface/accessibility/accessibility_support** :ref:`🔗<class_EditorSettings_property_interface/accessibility/accessibility_support>`
 
-Editor accessibility support mode:
+Режим поддержки специальных возможностей редактора:
 
-- **Auto** (``0``): Accessibility support is enabled, but updates to the accessibility information are processed only if an assistive app (such as a screen reader or a Braille display) is active (default).
+- **Авто** (``0``): Поддержка специальных возможностей включена, но обновления информации о специальных возможностях обрабатываются только в том случае, если активно вспомогательное приложение (например, программа чтения с экрана или дисплей Брайля) (по умолчанию).
 
-- **Always Active** (``1``): Accessibility support is enabled, and updates to the accessibility information are always processed, regardless of the status of assistive apps.
+- **Всегда активен** (``1``): Поддержка специальных возможностей включена, и обновления информации о специальных возможностях обрабатываются всегда, независимо от состояния вспомогательных приложений.
 
-- **Disabled** (``2``): Accessibility support is fully disabled.
+- **Отключен** (``2``): Поддержка специальных возможностей полностью отключена.
 
-\ **Note:** Accessibility debugging tools, such as Accessibility Insights for Windows, Accessibility Inspector (macOS), or AT-SPI Browser (Linux/BSD), do not count as assistive apps. To test the editor with these tools, use **Always Active**.
+\ **Примечание:** Инструменты отладки специальных возможностей, такие как Accessibility Insights для Windows, Accessibility Inspector (macOS) или AT-SPI Browser (Linux/BSD), не считаются вспомогательными приложениями. Чтобы протестировать редактор с помощью этих инструментов, используйте **Всегда активен**.
 
 .. rst-class:: classref-item-separator
 
@@ -3535,15 +3563,15 @@ Editor accessibility support mode:
 
 :ref:`int<class_int>` **interface/editor/accept_dialog_cancel_ok_buttons** :ref:`🔗<class_EditorSettings_property_interface/editor/accept_dialog_cancel_ok_buttons>`
 
-How to position the Cancel and OK buttons in the editor's :ref:`AcceptDialog<class_AcceptDialog>` windows. Different platforms have different conventions for this, which can be overridden through this setting to avoid accidental clicks when using Godot on multiple platforms.
+Как расположить кнопки «Отмена» и «ОК» в окнах :ref:`AcceptDialog<class_AcceptDialog>` редактора. На разных платформах действуют разные правила, которые можно переопределить с помощью этой настройки, чтобы избежать случайных нажатий при использовании Godot на разных платформах.
 
-- **Auto** follows the platform convention: OK first on Windows, KDE, and LXQt; Cancel first on macOS and other Linux desktop environments.
+- **Авто** следует правилам платформы: сначала «ОК» в Windows, KDE и LXQt; сначала «Отмена» в macOS и других средах рабочего стола Linux.
 
-- **Cancel First** forces the Cancel/OK ordering.
+- **Сначала «Отмена»** принудительно устанавливает порядок «Отмена/ОК».
 
-- **OK First** forces the OK/Cancel ordering.
+- **Сначала «ОК»** принудительно устанавливает порядок «ОК/Отмена».
 
-To check if these buttons are swapped at runtime, use :ref:`DisplayServer.get_swap_cancel_ok()<class_DisplayServer_method_get_swap_cancel_ok>`.
+Чтобы проверить, поменяны ли эти кнопки местами во время выполнения, используйте :ref:`DisplayServer.get_swap_cancel_ok()<class_DisplayServer_method_get_swap_cancel_ok>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3567,7 +3595,7 @@ To check if these buttons are swapped at runtime, use :ref:`DisplayServer.get_sw
 
 :ref:`int<class_int>` **interface/editor/bottom_dock_tab_style** :ref:`🔗<class_EditorSettings_property_interface/editor/bottom_dock_tab_style>`
 
-Tab style of editor docks located at the bottom.
+В нижней части экрана расположены вкладки редактора.
 
 .. rst-class:: classref-item-separator
 
@@ -3691,7 +3719,7 @@ Tab style of editor docks located at the bottom.
 
 :ref:`int<class_int>` **interface/editor/dock_tab_style** :ref:`🔗<class_EditorSettings_property_interface/editor/dock_tab_style>`
 
-Tab style of editor docks, except bottom docks.
+Вкладки используются в панели инструментов редактора, за исключением нижних панелей.
 
 .. rst-class:: classref-item-separator
 
@@ -3703,7 +3731,7 @@ Tab style of editor docks, except bottom docks.
 
 :ref:`float<class_float>` **interface/editor/dragging_hover_wait_seconds** :ref:`🔗<class_EditorSettings_property_interface/editor/dragging_hover_wait_seconds>`
 
-During a drag-and-drop, this is how long to wait over a UI element before it triggers a reaction (e.g. a section unfolds to show nested items).
+При перетаскивании (drag-and-drop) это время ожидания для элемента пользовательского интерфейса, прежде чем он вызовет реакцию (например, развернется раздел, чтобы показать вложенные элементы).
 
 .. rst-class:: classref-item-separator
 
@@ -3715,9 +3743,9 @@ During a drag-and-drop, this is how long to wait over a UI element before it tri
 
 :ref:`String<class_String>` **interface/editor/editor_language** :ref:`🔗<class_EditorSettings_property_interface/editor/editor_language>`
 
-The language to use for the editor interface. If set to **Auto**, the language is automatically determined based on the system locale. See also :ref:`EditorInterface.get_editor_language()<class_EditorInterface_method_get_editor_language>`.
+Язык, используемый для интерфейса редактора. Если установлено значение **Авто**, язык определяется автоматически на основе системной локали. См. также :ref:`EditorInterface.get_editor_language()<class_EditorInterface_method_get_editor_language>`.
 
-Translations are provided by the community. If you spot a mistake, `contribute to editor translations on Weblate! <https://contributing.godotengine.org/en/latest/documentation/translation/index.html>`__
+Переводы предоставляются сообществом. Если вы обнаружили ошибку, `внесите свой вклад в перевод редактора на Weblate! <https://contributing.godotengine.org/en/latest/documentation/translation/index.html>`__
 
 .. rst-class:: classref-item-separator
 
@@ -3903,11 +3931,11 @@ Translations are provided by the community. If you spot a mistake, `contribute t
 
 :ref:`String<class_String>` **interface/editor/main_font_custom_opentype_features** :ref:`🔗<class_EditorSettings_property_interface/editor/main_font_custom_opentype_features>`
 
-List of custom OpenType features to use, if supported by the currently configured main font. Check what OpenType features are supported by your font first.
+Список пользовательских функций OpenType для использования, если они поддерживаются текущим настроенным основным шрифтом. Сначала проверьте, какие функции OpenType поддерживаются вашим шрифтом.
 
-The string should follow the OpenType specification, e.g. ``ss01,tnum,calt=false``. Microsoft's documentation contains a list of `all registered features <https://learn.microsoft.com/en-us/typography/opentype/spec/featurelist>`__.
+Строка должна соответствовать спецификации OpenType, например, ``ss01,tnum,calt=false``. В документации Microsoft содержится список `всех зарегистрированных функций <https://learn.microsoft.com/en-us/typography/opentype/spec/featurelist>`__.
 
-\ **Note:** The default editor main font (`Inter <https://rsms.me/inter>`__) has custom OpenType features in its font file, with ``ss04`` and ``tnum`` enabled and ``calt`` disabled by default. Supported features can be found at its website.
+\ **Примечание:** Основной шрифт редактора по умолчанию (`Inter <https://rsms.me/inter>`__) содержит пользовательские функции OpenType в своем файле шрифта, при этом ``ss04`` и ``tnum`` включены, а ``calt`` отключен по умолчанию. Список поддерживаемых функций можно найти на веб-сайте.
 
 .. rst-class:: classref-item-separator
 
@@ -4305,7 +4333,7 @@ The string should follow the OpenType specification, e.g. ``ss01,tnum,calt=false
 
 :ref:`float<class_float>` **interface/inspector/integer_drag_speed** :ref:`🔗<class_EditorSettings_property_interface/inspector/integer_drag_speed>`
 
-Base speed for increasing/decreasing integer values by dragging them in the inspector.
+Базовая скорость увеличения/уменьшения целочисленных значений путем перетаскивания их в инспекторе.
 
 .. rst-class:: classref-item-separator
 
@@ -4427,7 +4455,7 @@ Base speed for increasing/decreasing integer values by dragging them in the insp
 
 :ref:`bool<class_bool>` **interface/scene_tabs/auto_select_current_scene_file** :ref:`🔗<class_EditorSettings_property_interface/scene_tabs/auto_select_current_scene_file>`
 
-If ``true``, the FileSystem dock will automatically navigate to the currently selected scene tab.
+Если ``true``, панель FileSystem автоматически перейдет к текущей выбранной вкладке сцены.
 
 .. rst-class:: classref-item-separator
 
@@ -4563,7 +4591,7 @@ If ``true``, the FileSystem dock will automatically navigate to the currently se
 
 :ref:`String<class_String>` **interface/theme/color_preset** :ref:`🔗<class_EditorSettings_property_interface/theme/color_preset>`
 
-The editor color preset to use.
+Цветовая схема редактора для использования.
 
 .. rst-class:: classref-item-separator
 
@@ -4623,13 +4651,13 @@ The editor color preset to use.
 
 :ref:`int<class_int>` **interface/theme/draw_relationship_lines** :ref:`🔗<class_EditorSettings_property_interface/theme/draw_relationship_lines>`
 
-What relationship lines to draw in the editor's :ref:`Tree<class_Tree>`-based GUIs (such as the Scene tree dock).
+Какие линии связей отображать в графических интерфейсах редактора на основе дерева :ref:`Tree<class_Tree>` (например, в панели дерева сцены).
 
-- **None** will make it so that no relationship lines are drawn.
+- **None** означает, что линии связей не отображаются.
 
-- **Selected Only** will only draw them for selected items.
+- **Selected Only** отображает их только для выбранных элементов.
 
-- **All** will always draw them for all items.
+- **All** всегда отображает их для всех элементов.
 
 .. rst-class:: classref-item-separator
 
@@ -4709,7 +4737,7 @@ What relationship lines to draw in the editor's :ref:`Tree<class_Tree>`-based GU
 
 :ref:`String<class_String>` **interface/theme/style** :ref:`🔗<class_EditorSettings_property_interface/theme/style>`
 
-The editor theme style to use.
+Стиль оформления редактора для использования.
 
 .. rst-class:: classref-item-separator
 
@@ -4763,9 +4791,9 @@ The editor theme style to use.
 
 :ref:`bool<class_bool>` **interface/touchscreen/enable_touch_optimizations** :ref:`🔗<class_EditorSettings_property_interface/touchscreen/enable_touch_optimizations>`
 
-If ``true``, increases the scrollbar touch area, enables a larger dragger for split containers, and increases PopupMenu vertical separation to improve usability on touchscreen devices.
+Если ``true``, то увеличивается область касания полосы прокрутки, включается более крупный ползунок для разделенных контейнеров и увеличивается вертикальное расстояние между всплывающими меню для улучшения удобства использования на сенсорных устройствах.
 
-\ **Note:** Defaults to ``true`` on touchscreen devices.
+\ **Примечание:** По умолчанию на сенсорных устройствах установлено значение ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -4827,9 +4855,9 @@ If ``true``, increases the scrollbar touch area, enables a larger dragger for sp
 
 :ref:`int<class_int>` **network/connection/network_mode** :ref:`🔗<class_EditorSettings_property_network/connection/network_mode>`
 
-Determines whether online features, such as the Asset Library or update checks, are enabled in the editor. If this is a privacy concern, disabling these online features prevents the editor from making HTTP requests to the Godot website or third-party platforms hosting assets from the Asset Library.
+Определяет, включены ли в редакторе онлайн-функции, такие как библиотека ресурсов или проверка обновлений. Если это вызывает опасения по поводу конфиденциальности, отключение этих онлайн-функций предотвратит отправку редактором HTTP-запросов к веб-сайту Godot или сторонним платформам, размещающим ресурсы из библиотеки ресурсов.
 
-Editor plugins and tool scripts are recommended to follow this setting. However, Godot can't prevent them from violating this rule.
+Рекомендуется, чтобы плагины редактора и скрипты инструментов следовали этой настройке. Однако Godot не может предотвратить нарушение ими этого правила.
 
 .. rst-class:: classref-item-separator
 
@@ -4893,7 +4921,7 @@ Editor plugins and tool scripts are recommended to follow this setting. However,
 
 :ref:`String<class_String>` **network/tls/editor_tls_certificates** :ref:`🔗<class_EditorSettings_property_network/tls/editor_tls_certificates>`
 
-The TLS certificate bundle to use for HTTP requests made within the editor (e.g. from the AssetLib tab). If left empty, the `included Mozilla certificate bundle <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-bundle.crt>`__ will be used.
+Пакет TLS-сертификатов, используемый для HTTP-запросов, выполняемых внутри редактора (например, на вкладке AssetLib). Если оставить поле пустым, будет использоваться `включенный пакет сертификатов Mozilla <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-bundle.crt>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -4931,7 +4959,7 @@ The TLS certificate bundle to use for HTTP requests made within the editor (e.g.
 
 :ref:`int<class_int>` **project_manager/directory_naming_convention** :ref:`🔗<class_EditorSettings_property_project_manager/directory_naming_convention>`
 
-Directory naming convention for the project manager. Options are "No Convention" (project name is directory name), "kebab-case" (default), "snake_case", "camelCase", "PascalCase", or "Title Case".
+Правила именования каталогов для Менеджера проектов. Доступные варианты: "Без правил" (имя проекта совпадает с именем каталога), "kebab-case" (по умолчанию), "snake_case", "camelCase", "PascalCase" или "Title Case".
 
 .. rst-class:: classref-item-separator
 
@@ -5589,7 +5617,7 @@ Directory naming convention for the project manager. Options are "No Convention"
 
 :ref:`bool<class_bool>` **text_editor/behavior/navigation/open_script_when_connecting_signal_to_existing_method** :ref:`🔗<class_EditorSettings_property_text_editor/behavior/navigation/open_script_when_connecting_signal_to_existing_method>`
 
-If ``true``, opens the script editor when connecting a signal to an existing script method from the Signals dock.
+Если ``true``, то при подключении сигнала к существующему методу скрипта из панели «Сигналы» открывается редактор скриптов.
 
 .. rst-class:: classref-item-separator
 
@@ -5701,15 +5729,15 @@ If ``true``, opens the script editor when connecting a signal to an existing scr
 
 :ref:`bool<class_bool>` **text_editor/completion/add_type_hints** :ref:`🔗<class_EditorSettings_property_text_editor/completion/add_type_hints>`
 
-If ``true``, automatically adds :doc:`GDScript static typing <../tutorials/scripting/gdscript/static_typing>` (such as ``-> void`` and ``: int``) in many situations where it's possible to, including when:
+Если ``true``, автоматически добавляется статическая типизация GDScript (например, ``-> void`` и ``: int``) во многих ситуациях, где это возможно, в том числе:
 
-- Accepting a suggestion from code autocompletion;
+- Принятие подсказки автозавершения кода;
 
-- Creating a new script from a template;
+- Создание нового скрипта из шаблона;
 
-- Connecting signals from the Signals dock;
+- Подключение сигналов из панели «Сигналы»;
 
-- Creating variables prefixed with :ref:`@GDScript.@onready<class_@GDScript_annotation_@onready>`, by dropping nodes from the Scene dock into the script editor while holding :kbd:`Ctrl`.
+- Создание переменных с префиксом :ref:`@GDScript.@onready<class_@GDScript_annotation_@onready>` путем перетаскивания узлов из панели «Сцена» в редактор скриптов при удерживании :kbd:`Ctrl`.
 
 .. rst-class:: classref-item-separator
 
@@ -5997,7 +6025,7 @@ If ``true``, automatically adds :doc:`GDScript static typing <../tutorials/scrip
 
 :ref:`bool<class_bool>` **text_editor/script_list/show_members_overview** :ref:`🔗<class_EditorSettings_property_text_editor/script_list/show_members_overview>`
 
-If ``true``, displays an overview of the current script's member functions at the left of the script editor. See also :ref:`text_editor/script_list/sort_members_outline_alphabetically<class_EditorSettings_property_text_editor/script_list/sort_members_outline_alphabetically>`.
+Если ``true``, слева в редакторе скриптов отображается обзор функций-членов текущего скрипта. См. также :ref:`text_editor/script_list/sort_members_outline_alphabetically<class_EditorSettings_property_text_editor/script_list/sort_members_outline_alphabetically>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6607,9 +6635,9 @@ If ``true``, displays an overview of the current script's member functions at th
 
 :ref:`Color<class_Color>` **text_editor/theme/highlighting/string_placeholder_color** :ref:`🔗<class_EditorSettings_property_text_editor/theme/highlighting/string_placeholder_color>`
 
-The script editor's color for string placeholders, such as ``%s`` and ``{_}``. Refer to the :doc:`GDScript format strings documentation <../tutorials/scripting/gdscript/gdscript_format_string>` for more details.
+Цвет редактора скриптов для строковых заполнителей, таких как ``%s`` и ``{_}``. Для получения более подробной информации см. :doc:`документацию по форматированию строк GDScript <../tutorials/scripting/gdscript/gdscript_format_string>`.
 
-\ **Note:** Only the default ``{_}`` placeholder patterns are highlighted for the :ref:`String.format()<class_String_method_format>` method. Custom patterns still appear as plain strings.
+\ **Примечание:** Для метода :ref:`String.format()<class_String_method_format>` подсвечиваются только шаблоны заполнителей по умолчанию ``{_}``. Пользовательские шаблоны по-прежнему отображаются как обычные строки.
 
 .. rst-class:: classref-item-separator
 
@@ -6786,31 +6814,31 @@ The script editor's color for string placeholders, such as ``%s`` and ``{_}``. R
 
 |void| **add_shortcut**\ (\ path\: :ref:`String<class_String>`, shortcut\: :ref:`Shortcut<class_Shortcut>`\ ) :ref:`🔗<class_EditorSettings_method_add_shortcut>`
 
-Adds a ``shortcut`` whose path is specified by ``path``.
+Добавляет ``shortcut``, путь к которому задается параметром ``path``.
 
-The ``path`` determines how the shortcut is organized and displayed in the editor's shortcut settings. The path format affects the display as follows:
+Параметр ``path`` определяет, как ярлык будет организован и отображаться в настройках ярлыков редактора. Формат пути влияет на отображение следующим образом:
 
-- ``"name"`` (no slash): Creates a category named ``name`` with the shortcut displayed as ``name``.
+- ``"name"`` (без косой черты): Создает категорию с именем ``name``, ярлык которой отображается как ``name``.
 
-- ``"category/name"`` (single slash): Displays as ``name`` in the ``category`` section.
+- ``"category/name"`` (с одной косой чертой): Отображается как ``name`` в разделе ``category``.
 
-- ``"category/name/extra"`` (multiple slashes): Extra path components are ignored, so this behaves the same as ``"category/name"``.
+- ``"category/name/extra"`` (с несколькими косыми чертами): Дополнительные компоненты пути игнорируются, поэтому это работает так же, как ``"category/name"``.
 
-\ **Note:** Shortcuts are only saved to the editor settings if they differ from their original/default state. This means empty shortcuts that were originally empty will not persist between editor sessions and must be re-added. If a shortcut with the same ``path`` already exists, this method will update it with the new ``shortcut`` instead of creating a duplicate.
+\ **Примечание:** Ярлыки сохраняются в настройках редактора только в том случае, если они отличаются от своего исходного/стандартного состояния. Это означает, что пустые сочетания клавиш, которые изначально были пустыми, не будут сохраняться между сеансами редактора и должны быть добавлены заново. Если сочетание клавиш с тем же ``path`` уже существует, этот метод обновит его новым ``shortcut`` вместо создания дубликата.
 
 ::
 
-    # Add a custom shortcut for a plugin action.
+    # Добавьте пользовательскую комбинацию клавиш для действия плагина.
     var my_shortcut = Shortcut.new()
     var input_event = InputEventKey.new()
     input_event.keycode = KEY_F5
     input_event.ctrl_pressed = true
     my_shortcut.events.append(input_event)
 
-    # This will appear under the "My Plugin" category as "Reload Data".
+    # Эта функция отобразится в категории "My Plugin" под названием "Reload Data".
     EditorInterface.get_editor_settings().add_shortcut("my_plugin/reload_data", my_shortcut)
 
-    # This will appear under the "Test Action" category as "Test Action".
+    # Это отобразится в категории "Test Action" как "Test Action".
     EditorInterface.get_editor_settings().add_shortcut("test_action", my_shortcut)
 
 .. rst-class:: classref-item-separator
@@ -6907,7 +6935,7 @@ The ``path`` determines how the shortcut is organized and displayed in the edito
 
 :ref:`Shortcut<class_Shortcut>` **get_shortcut**\ (\ path\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_EditorSettings_method_get_shortcut>`
 
-Returns the shortcut specified by ``path``. Tries to find a built-in action if no shortcut with the provided path is found in the shortcut list. If found, adds it to the list and returns it, otherwise returns ``null``.
+Возвращает сочетание клавиш, указанное в ``path``. Пытается найти встроенное действие, если в списке сочетаний клавиш не найдено ни одного сочетания клавиш с указанным путем. Если найдено, добавляет его в список и возвращает, в противном случае возвращает ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -6919,7 +6947,7 @@ Returns the shortcut specified by ``path``. Tries to find a built-in action if n
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_shortcut_list**\ (\ ) :ref:`🔗<class_EditorSettings_method_get_shortcut_list>`
 
-Returns the list of stored shortcut paths.
+Возвращает список сохраненных путей клавиш сочетаний.
 
 .. rst-class:: classref-item-separator
 
@@ -6943,7 +6971,7 @@ Returns the list of stored shortcut paths.
 
 :ref:`bool<class_bool>` **has_shortcut**\ (\ path\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_EditorSettings_method_has_shortcut>`
 
-Returns ``true`` if the shortcut specified by ``path`` exists, ``false`` otherwise.
+Возвращает ``true``, если указанные в ``path`` клавиши сочетания существует, ``false`` в противном случае.
 
 .. rst-class:: classref-item-separator
 
@@ -6955,7 +6983,7 @@ Returns ``true`` if the shortcut specified by ``path`` exists, ``false`` otherwi
 
 :ref:`bool<class_bool>` **is_shortcut**\ (\ path\: :ref:`String<class_String>`, event\: :ref:`InputEvent<class_InputEvent>`\ ) |const| :ref:`🔗<class_EditorSettings_method_is_shortcut>`
 
-Returns ``true`` if the shortcut specified by ``path`` matches the event specified by ``event``, ``false`` otherwise.
+Возвращает ``true``, если указанные в ``path`` клавиши сочетания совпадают с событием, указанным в ``event``, и ``false`` в противном случае.
 
 .. rst-class:: classref-item-separator
 
@@ -6979,7 +7007,7 @@ Returns ``true`` if the shortcut specified by ``path`` matches the event specifi
 
 |void| **remove_shortcut**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorSettings_method_remove_shortcut>`
 
-Removes the shortcut specified by ``path``.
+Удаляет клавиши сочетания, указанные в ``path``.
 
 .. rst-class:: classref-item-separator
 

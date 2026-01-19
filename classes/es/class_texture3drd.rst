@@ -14,7 +14,16 @@ Textura para 3D que está vinculada a una textura creada en el :ref:`RenderingDe
 Descripción
 ----------------------
 
-Esta clase de textura te permite utilizar una textura 3D creada directamente en :ref:`RenderingDevice<class_RenderingDevice>` como textura para materiales, mallas, etc.
+This texture class allows you to use a 3D texture created directly on the :ref:`RenderingDevice<class_RenderingDevice>` as a texture for materials, meshes, etc.
+
+\ **Note:** **Texture3DRD** is intended for low-level usage with :ref:`RenderingDevice<class_RenderingDevice>`. For most use cases, use :ref:`Texture3D<class_Texture3D>` instead.
+
+.. rst-class:: classref-introduction-group
+
+Tutoriales
+--------------------
+
+- `Compute Texture demo <https://godotengine.org/asset-library/asset/2764>`__
 
 .. rst-class:: classref-reftable-group
 
