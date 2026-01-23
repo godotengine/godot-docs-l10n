@@ -5,21 +5,21 @@
 PhysicsTestMotionParameters2D
 =============================
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-為 :ref:`PhysicsServer2D.body_test_motion()<class_PhysicsServer2D_method_body_test_motion>` 提供參數。
+Provides parameters for :ref:`PhysicsServer2D.body_test_motion()<class_PhysicsServer2D_method_body_test_motion>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-更改該物件的運動等屬性可以配置 :ref:`PhysicsServer2D.body_test_motion()<class_PhysicsServer2D_method_body_test_motion>` 的參數。
+By changing various properties of this object, such as the motion, you can configure the parameters for :ref:`PhysicsServer2D.body_test_motion()<class_PhysicsServer2D_method_body_test_motion>`.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ PhysicsTestMotionParameters2D
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_PhysicsTestMotionParameters2D_property_collide_separation_ray:
 
@@ -60,9 +60,9 @@ PhysicsTestMotionParameters2D
 - |void| **set_collide_separation_ray_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_collide_separation_ray_enabled**\ (\ )
 
-如果設定為 ``true``\ ，則 :ref:`PhysicsServer2D.SHAPE_SEPARATION_RAY<class_PhysicsServer2D_constant_SHAPE_SEPARATION_RAY>` 型別的形狀將用於偵測碰撞，並可以停止運動。吸附到地面時很有用。
+If set to ``true``, shapes of type :ref:`PhysicsServer2D.SHAPE_SEPARATION_RAY<class_PhysicsServer2D_constant_SHAPE_SEPARATION_RAY>` are used to detect collisions and can stop the motion. Can be useful when snapping to the ground.
 
-如果設定為 ``false``\ ，則 :ref:`PhysicsServer2D.SHAPE_SEPARATION_RAY<class_PhysicsServer2D_constant_SHAPE_SEPARATION_RAY>` 型別的形狀僅在與其他物體重疊時用於分離。這是分離射線形狀的主要用途。
+If set to ``false``, shapes of type :ref:`PhysicsServer2D.SHAPE_SEPARATION_RAY<class_PhysicsServer2D_constant_SHAPE_SEPARATION_RAY>` are only used for separation when overlapping with other bodies. That's the main use for separation ray shapes.
 
 .. rst-class:: classref-item-separator
 
@@ -79,7 +79,7 @@ PhysicsTestMotionParameters2D
 - |void| **set_exclude_bodies**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **get_exclude_bodies**\ (\ )
 
-可選的物體 :ref:`RID<class_RID>` 陣列，會排除與這些物體的碰撞。請使用 :ref:`CollisionObject2D.get_rid()<class_CollisionObject2D_method_get_rid>` 來獲取與衍生自 :ref:`CollisionObject2D<class_CollisionObject2D>` 的節點關聯的 :ref:`RID<class_RID>`\ 。
+Optional array of body :ref:`RID<class_RID>` to exclude from collision. Use :ref:`CollisionObject2D.get_rid()<class_CollisionObject2D_method_get_rid>` to get the :ref:`RID<class_RID>` associated with a :ref:`CollisionObject2D<class_CollisionObject2D>`-derived node.
 
 .. rst-class:: classref-item-separator
 
@@ -96,7 +96,7 @@ PhysicsTestMotionParameters2D
 - |void| **set_exclude_objects**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`int<class_int>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`int<class_int>`\] **get_exclude_objects**\ (\ )
 
-可選的物件唯一實例 ID 陣列，會排除與這些實例的碰撞。見 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`\ 。
+Optional array of object unique instance ID to exclude from collision. See :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`.
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +113,7 @@ PhysicsTestMotionParameters2D
 - |void| **set_from**\ (\ value\: :ref:`Transform2D<class_Transform2D>`\ )
 - :ref:`Transform2D<class_Transform2D>` **get_from**\ (\ )
 
-運動開始處的全域空間變換。通常設為 :ref:`Node2D.global_transform<class_Node2D_property_global_transform>`\ ，使用目前物體的變換。
+Transform in global space where the motion should start. Usually set to :ref:`Node2D.global_transform<class_Node2D_property_global_transform>` for the current body's transform.
 
 .. rst-class:: classref-item-separator
 
@@ -130,7 +130,7 @@ PhysicsTestMotionParameters2D
 - |void| **set_margin**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_margin**\ (\ )
 
-增加碰撞偵測中涉及的形狀的大小。
+Increases the size of the shapes involved in the collision detection.
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +147,7 @@ PhysicsTestMotionParameters2D
 - |void| **set_motion**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_motion**\ (\ )
 
-運動向量，定義要測試的運動的長度和方向。
+Motion vector to define the length and direction of the motion to test.
 
 .. rst-class:: classref-item-separator
 
@@ -164,16 +164,16 @@ PhysicsTestMotionParameters2D
 - |void| **set_recovery_as_collision_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_recovery_as_collision_enabled**\ (\ )
 
-如果設定為 ``true``\ ，則把恢復階段的穿透彙報為碰撞；使用場景包括 :ref:`CharacterBody2D<class_CharacterBody2D>` 提升地面吸附階段的地面偵測。
+If set to ``true``, any depenetration from the recovery phase is reported as a collision; this is used e.g. by :ref:`CharacterBody2D<class_CharacterBody2D>` for improving floor detection during floor snapping.
 
-如果設定為 ``false``\ ，則只會彙報移動造成的碰撞，一般符合預期行為。
+If set to ``false``, only collisions resulting from the motion are reported, which is generally the desired behavior.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

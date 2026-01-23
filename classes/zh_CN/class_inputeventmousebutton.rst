@@ -8,32 +8,32 @@
 InputEventMouseButton
 =====================
 
-**继承：** :ref:`InputEventMouse<class_InputEventMouse>` **<** :ref:`InputEventWithModifiers<class_InputEventWithModifiers>` **<** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`InputEventMouse<class_InputEventMouse>` **<** :ref:`InputEventWithModifiers<class_InputEventWithModifiers>` **<** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-代表某个鼠标按键被按下或松开。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-存储与鼠标点击事件相关的信息。见 :ref:`Node._input()<class_Node_private_method__input>`\ 。
-
-\ **注意：**\ 在 Wear OS 设备上，旋钮输入会被映射到 :ref:`@GlobalScope.MOUSE_BUTTON_WHEEL_UP<class_@GlobalScope_constant_MOUSE_BUTTON_WHEEL_UP>` 和 :ref:`@GlobalScope.MOUSE_BUTTON_WHEEL_DOWN<class_@GlobalScope_constant_MOUSE_BUTTON_WHEEL_DOWN>`\ 。可以使用 :ref:`ProjectSettings.input_devices/pointing/android/rotary_input_scroll_axis<class_ProjectSettings_property_input_devices/pointing/android/rotary_input_scroll_axis>` 设置将其修改为 :ref:`@GlobalScope.MOUSE_BUTTON_WHEEL_LEFT<class_@GlobalScope_constant_MOUSE_BUTTON_WHEEL_LEFT>` 和 :ref:`@GlobalScope.MOUSE_BUTTON_WHEEL_RIGHT<class_@GlobalScope_constant_MOUSE_BUTTON_WHEEL_RIGHT>`\ 。
+Represents a mouse button being pressed or released.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`使用 InputEvent <../tutorials/inputs/inputevent>`
+Stores information about mouse click events. See :ref:`Node._input()<class_Node_private_method__input>`.
 
-- :doc:`鼠标和输入坐标 <../tutorials/inputs/mouse_and_input_coordinates>`
+\ **Note:** On Wear OS devices, rotary input is mapped to :ref:`@GlobalScope.MOUSE_BUTTON_WHEEL_UP<class_@GlobalScope_constant_MOUSE_BUTTON_WHEEL_UP>` and :ref:`@GlobalScope.MOUSE_BUTTON_WHEEL_DOWN<class_@GlobalScope_constant_MOUSE_BUTTON_WHEEL_DOWN>`. This can be changed to :ref:`@GlobalScope.MOUSE_BUTTON_WHEEL_LEFT<class_@GlobalScope_constant_MOUSE_BUTTON_WHEEL_LEFT>` and :ref:`@GlobalScope.MOUSE_BUTTON_WHEEL_RIGHT<class_@GlobalScope_constant_MOUSE_BUTTON_WHEEL_RIGHT>` with the :ref:`ProjectSettings.input_devices/pointing/android/rotary_input_scroll_axis<class_ProjectSettings_property_input_devices/pointing/android/rotary_input_scroll_axis>` setting.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Using InputEvent <../tutorials/inputs/inputevent>`
+
+- :doc:`Mouse and input coordinates <../tutorials/inputs/mouse_and_input_coordinates>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ InputEventMouseButton
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_InputEventMouseButton_property_button_index:
 
@@ -70,7 +70,7 @@ InputEventMouseButton
 - |void| **set_button_index**\ (\ value\: :ref:`MouseButton<enum_@GlobalScope_MouseButton>`\ )
 - :ref:`MouseButton<enum_@GlobalScope_MouseButton>` **get_button_index**\ (\ )
 
-鼠标按键标识符，\ :ref:`MouseButton<enum_@GlobalScope_MouseButton>` 按钮或按钮滚轮常量。
+The mouse button identifier, one of the :ref:`MouseButton<enum_@GlobalScope_MouseButton>` button or button wheel constants.
 
 .. rst-class:: classref-item-separator
 
@@ -87,7 +87,7 @@ InputEventMouseButton
 - |void| **set_canceled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_canceled**\ (\ )
 
-如果为 ``true``\ ，则鼠标按键事件被取消。
+If ``true``, the mouse button event has been canceled.
 
 .. rst-class:: classref-item-separator
 
@@ -104,7 +104,7 @@ InputEventMouseButton
 - |void| **set_double_click**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_double_click**\ (\ )
 
-如果为 ``true``\ ，则鼠标按键的状态是双击。
+If ``true``, the mouse button's state is a double-click.
 
 .. rst-class:: classref-item-separator
 
@@ -121,7 +121,7 @@ InputEventMouseButton
 - |void| **set_factor**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_factor**\ (\ )
 
-事件的数量（或 delta）。当用于高精度滚动事件时，这表示滚动量（垂直或水平）。这只在一些平台上被支持；报告的灵敏度因平台不同而不同。如果不支持，可能是\ ``0``\ 。
+The amount (or delta) of the event. When used for high-precision scroll events, this indicates the scroll amount (vertical or horizontal). This is only supported on some platforms; the reported sensitivity varies depending on the platform. May be ``0`` if not supported.
 
 .. rst-class:: classref-item-separator
 
@@ -138,14 +138,14 @@ InputEventMouseButton
 - |void| **set_pressed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_pressed**\ (\ )
 
-如果为 ``true``\ ，鼠标按键的状态为按下。如果为 ``false``\ ，鼠标按钮的状态被释放。
+If ``true``, the mouse button's state is pressed. If ``false``, the mouse button's state is released.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

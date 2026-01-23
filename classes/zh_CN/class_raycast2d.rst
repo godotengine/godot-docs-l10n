@@ -5,34 +5,34 @@
 RayCast2D
 =========
 
-**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-2D 空间中的射线，用于查找第一个相交的碰撞物体。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_property_target_position>` 的射线，如果与碰撞对象相交，就能找到路径上距离最近的对象。
-
-要让 **RayCast2D** 忽略某些对象，可以通过将它们加入例外列表，也可以通过让检测汇报忽略 :ref:`Area2D<class_Area2D>`\ （\ :ref:`collide_with_areas<class_RayCast2D_property_collide_with_areas>`\ ）或 :ref:`PhysicsBody2D<class_PhysicsBody2D>`\ （\ :ref:`collide_with_bodies<class_RayCast2D_property_collide_with_bodies>`\ ），还可以通过配置物理层。
-
-\ **RayCast2D** 每一个物理帧都会计算是否相交，且该计算结果会保留到下一个物理帧。如果要立即执行射线投射，或者你想要在同一个物理帧内多次配置 **RayCast2D**\ ，请使用 :ref:`force_raycast_update()<class_RayCast2D_method_force_raycast_update>`\ 。
-
-要扫描 2D 空间中的某个区块，可以使用多个 **RayCast2D** 或使用 :ref:`ShapeCast2D<class_ShapeCast2D>` 去近似该区块。
+A ray in 2D space, used to find the first collision object it intersects.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`发射射线 <../tutorials/physics/ray-casting>`
+A raycast represents a ray from its origin to its :ref:`target_position<class_RayCast2D_property_target_position>` that finds the closest object along its path, if it intersects any.
+
+\ **RayCast2D** can ignore some objects by adding them to an exception list, by making its detection reporting ignore :ref:`Area2D<class_Area2D>`\ s (:ref:`collide_with_areas<class_RayCast2D_property_collide_with_areas>`) or :ref:`PhysicsBody2D<class_PhysicsBody2D>`\ s (:ref:`collide_with_bodies<class_RayCast2D_property_collide_with_bodies>`), or by configuring physics layers.
+
+\ **RayCast2D** calculates intersection every physics frame, and it holds the result until the next physics frame. For an immediate raycast, or if you want to configure a **RayCast2D** multiple times within the same physics frame, use :ref:`force_raycast_update()<class_RayCast2D_method_force_raycast_update>`.
+
+To sweep over a region of 2D space, you can approximate the region with multiple **RayCast2D**\ s or use :ref:`ShapeCast2D<class_ShapeCast2D>`.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Ray-casting <../tutorials/physics/ray-casting>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -55,8 +55,8 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -97,8 +97,8 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_RayCast2D_property_collide_with_areas:
 
@@ -111,7 +111,7 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 - |void| **set_collide_with_areas**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_collide_with_areas_enabled**\ (\ )
 
-如果为 ``true``\ ，则会报告与 :ref:`Area2D<class_Area2D>` 的碰撞。
+If ``true``, collisions with :ref:`Area2D<class_Area2D>`\ s will be reported.
 
 .. rst-class:: classref-item-separator
 
@@ -128,7 +128,7 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 - |void| **set_collide_with_bodies**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_collide_with_bodies_enabled**\ (\ )
 
-如果为 ``true``\ ，则会报告与 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 的碰撞。
+If ``true``, collisions with :ref:`PhysicsBody2D<class_PhysicsBody2D>`\ s will be reported.
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-射线的碰撞遮罩。只能检测到至少启用了一个遮罩中碰撞层的对象。详见文档中的\ `《碰撞层与掩码》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
+The ray's collision mask. Only objects in at least one collision layer enabled in the mask will be detected. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -162,7 +162,7 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_enabled**\ (\ )
 
-如果为 ``true``\ ，将报告碰撞。
+If ``true``, collisions will be reported.
 
 .. rst-class:: classref-item-separator
 
@@ -179,7 +179,7 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 - |void| **set_exclude_parent_body**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_exclude_parent_body**\ (\ )
 
-如果为 ``true``\ ，则射线投射不会汇报与其父节点的碰撞。仅在父节点为 :ref:`CollisionObject2D<class_CollisionObject2D>` 时有效。另见 :ref:`Node.get_parent()<class_Node_method_get_parent>`\ 、\ :ref:`add_exception()<class_RayCast2D_method_add_exception>`\ 。
+If ``true``, this raycast will not report collisions with its parent node. This property only has an effect if the parent node is a :ref:`CollisionObject2D<class_CollisionObject2D>`. See also :ref:`Node.get_parent()<class_Node_method_get_parent>` and :ref:`add_exception()<class_RayCast2D_method_add_exception>`.
 
 .. rst-class:: classref-item-separator
 
@@ -196,7 +196,7 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 - |void| **set_hit_from_inside**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_hit_from_inside_enabled**\ (\ )
 
-如果为 ``true``\ ，射线会在从形状内部开始时检测到命中。在此情况下，碰撞法线将为 ``Vector2(0, 0)``\ 。不会影响凹多边形形状。
+If ``true``, the ray will detect a hit when starting inside shapes. In this case the collision normal will be ``Vector2(0, 0)``. Does not affect concave polygon shapes.
 
 .. rst-class:: classref-item-separator
 
@@ -213,7 +213,7 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 - |void| **set_target_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_target_position**\ (\ )
 
-射线的目的点，相对于射线投射的 :ref:`Node2D.position<class_Node2D_property_position>`\ 。
+The ray's destination point, relative to this raycast's :ref:`Node2D.position<class_Node2D_property_position>`.
 
 .. rst-class:: classref-section-separator
 
@@ -221,8 +221,8 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_RayCast2D_method_add_exception:
 
@@ -230,7 +230,7 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 
 |void| **add_exception**\ (\ node\: :ref:`CollisionObject2D<class_CollisionObject2D>`\ ) :ref:`🔗<class_RayCast2D_method_add_exception>`
 
-添加碰撞例外，这样射线就不会报告与 ``node`` 节点的碰撞。
+Adds a collision exception so the ray does not report collisions with the specified ``node``.
 
 .. rst-class:: classref-item-separator
 
@@ -242,7 +242,7 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 
 |void| **add_exception_rid**\ (\ rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RayCast2D_method_add_exception_rid>`
 
-添加碰撞例外，这样射线就不会报告与指定 :ref:`RID<class_RID>` 的碰撞。
+Adds a collision exception so the ray does not report collisions with the specified :ref:`RID<class_RID>`.
 
 .. rst-class:: classref-item-separator
 
@@ -254,7 +254,7 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 
 |void| **clear_exceptions**\ (\ ) :ref:`🔗<class_RayCast2D_method_clear_exceptions>`
 
-删除此射线的所有碰撞例外。
+Removes all collision exceptions for this ray.
 
 .. rst-class:: classref-item-separator
 
@@ -266,9 +266,9 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 
 |void| **force_raycast_update**\ (\ ) :ref:`🔗<class_RayCast2D_method_force_raycast_update>`
 
-立即更新射线的碰撞信息，不等待下一次的 ``_physics_process`` 调用。例如，请在射线或其父级更改状态后使用该方法。
+Updates the collision information for the ray immediately, without waiting for the next ``_physics_process`` call. Use this method, for example, when the ray or its parent has changed state.
 
-\ **注意：**\ :ref:`enabled<class_RayCast2D_property_enabled>` 不需要为 ``true`` 即可生效。
+\ **Note:** :ref:`enabled<class_RayCast2D_property_enabled>` does not need to be ``true`` for this to work.
 
 .. rst-class:: classref-item-separator
 
@@ -280,9 +280,9 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 
 :ref:`Object<class_Object>` **get_collider**\ (\ ) |const| :ref:`🔗<class_RayCast2D_method_get_collider>`
 
-返回射线相交的第一个物体，如果没有物体与射线相交则返回 ``null``\ （即 :ref:`is_colliding()<class_RayCast2D_method_is_colliding>` 返回 ``false``\ ）。
+Returns the first object that the ray intersects, or ``null`` if no object is intersecting the ray (i.e. :ref:`is_colliding()<class_RayCast2D_method_is_colliding>` returns ``false``).
 
-\ **注意：**\ 该物体不一定是 :ref:`CollisionObject2D<class_CollisionObject2D>`\ 。例如 :ref:`TileMapLayer<class_TileMapLayer>` 相交时，方法返回的就是 :ref:`TileMapLayer<class_TileMapLayer>` 实例。
+\ **Note:** This object is not guaranteed to be a :ref:`CollisionObject2D<class_CollisionObject2D>`. For example, if the ray intersects a :ref:`TileMapLayer<class_TileMapLayer>`, the method will return a :ref:`TileMapLayer<class_TileMapLayer>` instance.
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +294,7 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 
 :ref:`RID<class_RID>` **get_collider_rid**\ (\ ) |const| :ref:`🔗<class_RayCast2D_method_get_collider_rid>`
 
-返回该射线相交的第一个对象的 :ref:`RID<class_RID>`\ ，如果没有对象与该射线相交，则返回空 :ref:`RID<class_RID>`\ （即 :ref:`is_colliding()<class_RayCast2D_method_is_colliding>` 返回 ``false``\ ）。
+Returns the :ref:`RID<class_RID>` of the first object that the ray intersects, or an empty :ref:`RID<class_RID>` if no object is intersecting the ray (i.e. :ref:`is_colliding()<class_RayCast2D_method_is_colliding>` returns ``false``).
 
 .. rst-class:: classref-item-separator
 
@@ -306,25 +306,25 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 
 :ref:`int<class_int>` **get_collider_shape**\ (\ ) |const| :ref:`🔗<class_RayCast2D_method_get_collider_shape>`
 
-返回与射线相交的第一个对象的形状 ID，射线未与任何对象相交时返回 ``0``\ （即 :ref:`is_colliding()<class_RayCast2D_method_is_colliding>` 返回 ``false`` 时）。
+Returns the shape ID of the first object that the ray intersects, or ``0`` if no object is intersecting the ray (i.e. :ref:`is_colliding()<class_RayCast2D_method_is_colliding>` returns ``false``).
 
-要获取相交的形状节点，比如假设目标是 :ref:`CollisionObject2D<class_CollisionObject2D>`\ ，可以使用：
+To get the intersected shape node, for a :ref:`CollisionObject2D<class_CollisionObject2D>` target, use:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var target = get_collider() # 是 CollisionObject2D 节点。
-    var shape_id = get_collider_shape() # 碰撞体中的形状索引。
-    var owner_id = target.shape_find_owner(shape_id) # 碰撞体中的所有者 ID。
+    var target = get_collider() # A CollisionObject2D.
+    var shape_id = get_collider_shape() # The shape index in the collider.
+    var owner_id = target.shape_find_owner(shape_id) # The owner ID in the collider.
     var shape = target.shape_owner_get_owner(owner_id)
 
  .. code-tab:: csharp
 
-    var target = (CollisionObject2D)GetCollider(); // 是 CollisionObject2D 节点。
-    var shapeId = GetColliderShape(); // 碰撞体中的形状索引。
-    var ownerId = target.ShapeFindOwner(shapeId); // 碰撞体中的所有者 ID。
+    var target = (CollisionObject2D)GetCollider(); // A CollisionObject2D.
+    var shapeId = GetColliderShape(); // The shape index in the collider.
+    var ownerId = target.ShapeFindOwner(shapeId); // The owner ID in the collider.
     var shape = target.ShapeOwnerGetOwner(ownerId);
 
 
@@ -339,7 +339,7 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 
 :ref:`bool<class_bool>` **get_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_RayCast2D_method_get_collision_mask_value>`
 
-返回 :ref:`collision_mask<class_RayCast2D_property_collision_mask>` 中是否启用了指定的层，给定的 ``layer_number`` 应在 1 和 32 之间。
+Returns whether or not the specified layer of the :ref:`collision_mask<class_RayCast2D_property_collision_mask>` is enabled, given a ``layer_number`` between 1 and 32.
 
 .. rst-class:: classref-item-separator
 
@@ -351,9 +351,9 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 
 :ref:`Vector2<class_Vector2>` **get_collision_normal**\ (\ ) |const| :ref:`🔗<class_RayCast2D_method_get_collision_normal>`
 
-返回相交对象的形状在碰撞点处的法线，如果射线从该形状内部发出并且 :ref:`hit_from_inside<class_RayCast2D_property_hit_from_inside>` 为 ``true``\ ，则为 ``Vector2(0, 0)``\ 。
+Returns the normal of the intersecting object's shape at the collision point, or ``Vector2(0, 0)`` if the ray starts inside the shape and :ref:`hit_from_inside<class_RayCast2D_property_hit_from_inside>` is ``true``.
 
-\ **注意：**\ 请在调用前检查 :ref:`is_colliding()<class_RayCast2D_method_is_colliding>` 返回的是否为 ``true``\ ，这样返回的法线就是即时有效的。
+\ **Note:** Check that :ref:`is_colliding()<class_RayCast2D_method_is_colliding>` returns ``true`` before calling this method to ensure the returned normal is valid and up-to-date.
 
 .. rst-class:: classref-item-separator
 
@@ -365,9 +365,9 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 
 :ref:`Vector2<class_Vector2>` **get_collision_point**\ (\ ) |const| :ref:`🔗<class_RayCast2D_method_get_collision_point>`
 
-返回全局坐标系中射线与最近的物体相交的碰撞点。如果 :ref:`hit_from_inside<class_RayCast2D_property_hit_from_inside>` 为 ``true`` 并且射线从碰撞形状内部开始，则该函数将返回该射线的原点。
+Returns the collision point at which the ray intersects the closest object, in the global coordinate system. If :ref:`hit_from_inside<class_RayCast2D_property_hit_from_inside>` is ``true`` and the ray starts inside of a collision shape, this function will return the origin point of the ray.
 
-\ **注意：**\ 在调用该方法之前，请检查 :ref:`is_colliding()<class_RayCast2D_method_is_colliding>` 是否返回 ``true``\ ，以确保返回的点有效且最新。
+\ **Note:** Check that :ref:`is_colliding()<class_RayCast2D_method_is_colliding>` returns ``true`` before calling this method to ensure the returned point is valid and up-to-date.
 
 .. rst-class:: classref-item-separator
 
@@ -379,7 +379,7 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 
 :ref:`bool<class_bool>` **is_colliding**\ (\ ) |const| :ref:`🔗<class_RayCast2D_method_is_colliding>`
 
-返回是否有任何对象与射线的向量相交（考虑向量长度）。
+Returns whether any object is intersecting with the ray's vector (considering the vector length).
 
 .. rst-class:: classref-item-separator
 
@@ -391,7 +391,7 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 
 |void| **remove_exception**\ (\ node\: :ref:`CollisionObject2D<class_CollisionObject2D>`\ ) :ref:`🔗<class_RayCast2D_method_remove_exception>`
 
-移除碰撞例外，这样射线就会报告与 ``node`` 节点的碰撞。
+Removes a collision exception so the ray can report collisions with the specified ``node``.
 
 .. rst-class:: classref-item-separator
 
@@ -403,7 +403,7 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 
 |void| **remove_exception_rid**\ (\ rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RayCast2D_method_remove_exception_rid>`
 
-移除碰撞例外，这样射线就会报告与指定的 :ref:`RID<class_RID>` 的碰撞。
+Removes a collision exception so the ray can report collisions with the specified :ref:`RID<class_RID>`.
 
 .. rst-class:: classref-item-separator
 
@@ -415,14 +415,14 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 
 |void| **set_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RayCast2D_method_set_collision_mask_value>`
 
-根据 ``value``\ ，启用或禁用 :ref:`collision_mask<class_RayCast2D_property_collision_mask>` 中指定的层，给定的 ``layer_number`` 应在 1 和 32 之间。
+Based on ``value``, enables or disables the specified layer in the :ref:`collision_mask<class_RayCast2D_property_collision_mask>`, given a ``layer_number`` between 1 and 32.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

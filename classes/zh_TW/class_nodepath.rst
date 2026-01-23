@@ -5,70 +5,70 @@
 NodePath
 ========
 
-一個預先解析的場景樹路徑。
+A pre-parsed scene tree path.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-**NodePath** 這個內建 :ref:`Variant<class_Variant>` 類型用來表示節點階層中指向某節點或屬性的路徑。它設計成能有效率地傳遞給許多內建方法（例如 :ref:`Node.get_node()<class_Node_method_get_node>`\ 、\ :ref:`Object.set_indexed()<class_Object_method_set_indexed>`\ 、\ :ref:`Tween.tween_property()<class_Tween_method_tween_property>` 等），而不需直接依賴所指向的節點或屬性。
+The **NodePath** built-in :ref:`Variant<class_Variant>` type represents a path to a node or property in a hierarchy of nodes. It is designed to be efficiently passed into many built-in methods (such as :ref:`Node.get_node()<class_Node_method_get_node>`, :ref:`Object.set_indexed()<class_Object_method_set_indexed>`, :ref:`Tween.tween_property()<class_Tween_method_tween_property>`, etc.) without a hard dependence on the node or property they point to.
 
-節點路徑以由斜線（\ ``/``\ ）分隔的節點名稱，以及冒號（\ ``:``\ ）分隔的屬性名稱（也稱為「子名稱」）組成的 :ref:`String<class_String>` 來表示。類似檔案系統路徑，特殊節點名稱 ``".."`` 和 ``"."`` 分別代表父節點和當前節點。
+A node path is represented as a :ref:`String<class_String>` composed of slash-separated (``/``) node names and colon-separated (``:``) property names (also called "subnames"). Similar to a filesystem path, ``".."`` and ``"."`` are special node names. They refer to the parent node and the current node, respectively.
 
-以下範例為相對於當前節點的路徑：
-
-::
-
-    ^"A"     # 指向直接子節點 A。
-    ^"A/B"   # 指向 A 的子節點 B。
-    ^"."     # 指向目前節點。
-    ^".."    # 指向父節點。
-    ^"../C"  # 指向兄弟節點 C。
-    ^"../.." # 指向祖父節點。
-
-開頭有斜線則代表絕對路徑，從 :ref:`SceneTree<class_SceneTree>` 開始：
+The following examples are paths relative to the current node:
 
 ::
 
-    ^"/root"            # 指向 SceneTree 的根視窗。
-    ^"/root/Title"      # 可能指向主場景的根節點 "Title"。
-    ^"/root/Global"     # 可能指向自動載入的節點或場景 "Global"。
+    ^"A"     # Points to the direct child A.
+    ^"A/B"   # Points to A's child B.
+    ^"."     # Points to the current node.
+    ^".."    # Points to the parent node.
+    ^"../C"  # Points to the sibling node C.
+    ^"../.." # Points to the grandparent node.
 
-節點路徑也可以指向屬性：
+A leading slash means the path is absolute, and begins from the :ref:`SceneTree<class_SceneTree>`:
 
 ::
 
-    ^":position"           # 指向此物件的位置屬性。
-    ^":position:x"         # 指向此物件位置屬性的 x 軸。
-    ^"Camera3D:rotation:y" # 指向子節點 Camera3D 及其 y 軸旋轉。
-    ^"/root:size:x"        # 指向根視窗的寬度。
+    ^"/root"            # Points to the SceneTree's root Window.
+    ^"/root/Title"      # May point to the main scene's root node named "Title".
+    ^"/root/Global"     # May point to an autoloaded node or scene named "Global".
 
-在某些情況下，指向物件屬性時可以省略開頭的 ``:``\ ，例如 :ref:`Object.set_indexed()<class_Object_method_set_indexed>` 與 :ref:`Tween.tween_property()<class_Tween_method_tween_property>`\ ，這些方法會呼叫 :ref:`get_as_property_path()<class_NodePath_method_get_as_property_path>`\ 。不過，一般建議保留 ``:`` 前綴。
+Despite their name, node paths may also point to a property:
 
-節點路徑無法檢查自身是否有效，也可能指向不存在的節點或屬性，其意義完全取決於使用時的上下文。
+::
 
-通常你不需特別處理 **NodePath** 類型，因為字串會在需要時自動轉換成此類型。不過在某些情境下自行設定節點路徑很方便，例如匯出的 **NodePath** 屬性讓你可以輕鬆在目前編輯的場景中選擇任一節點。當你在場景樹編輯器移動、重新命名或刪除節點時，這些路徑也會自動更新。另見 :ref:`@GDScript.@export_node_path<class_@GDScript_annotation_@export_node_path>`\ 。
+    ^":position"           # Points to this object's position.
+    ^":position:x"         # Points to this object's position in the x axis.
+    ^"Camera3D:rotation:y" # Points to the child Camera3D and its y rotation.
+    ^"/root:size:x"        # Points to the root Window and its width.
 
-另可參考 :ref:`StringName<class_StringName>`\ ，這是一種設計用來優化字串操作的類型。
+In some situations, it's possible to omit the leading ``:`` when pointing to an object's property. As an example, this is the case with :ref:`Object.set_indexed()<class_Object_method_set_indexed>` and :ref:`Tween.tween_property()<class_Tween_method_tween_property>`, as those methods call :ref:`get_as_property_path()<class_NodePath_method_get_as_property_path>` under the hood. However, it's generally recommended to keep the ``:`` prefix.
 
-\ **注意：** 在布林判斷式中，若 **NodePath** 為空（\ ``NodePath("")``\ ），值為 ``false``\ ，否則一律為 ``true``\ 。
+Node paths cannot check whether they are valid and may point to nodes or properties that do not exist. Their meaning depends entirely on the context in which they're used.
+
+You usually do not have to worry about the **NodePath** type, as strings are automatically converted to the type when necessary. There are still times when defining node paths is useful. For example, exported **NodePath** properties allow you to easily select any node within the currently edited scene. They are also automatically updated when moving, renaming or deleting nodes in the scene tree editor. See also :ref:`@GDScript.@export_node_path<class_@GDScript_annotation_@export_node_path>`.
+
+See also :ref:`StringName<class_StringName>`, which is a similar type designed for optimized strings.
+
+\ **Note:** In a boolean context, a **NodePath** will evaluate to ``false`` if it is empty (``NodePath("")``). Otherwise, a **NodePath** will always evaluate to ``true``.
 
 .. note::
 
-	使用 C# 操作此 API 時有顯著差異，詳見 :ref:`doc_c_sharp_differences`。
+	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- `2D 角色扮演遊戲範例 <https://godotengine.org/asset-library/asset/2729>`__
+- `2D Role Playing Game (RPG) Demo <https://godotengine.org/asset-library/asset/2729>`__
 
 .. rst-class:: classref-reftable-group
 
-建構子
-------
+Constructors
+------------
 
 .. table::
    :widths: auto
@@ -83,8 +83,8 @@ NodePath
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -115,8 +115,8 @@ NodePath
 
 .. rst-class:: classref-reftable-group
 
-運算子
-------
+Operators
+---------
 
 .. table::
    :widths: auto
@@ -133,8 +133,8 @@ NodePath
 
 .. rst-class:: classref-descriptions-group
 
-建構子說明
-----------
+Constructor Descriptions
+------------------------
 
 .. _class_NodePath_constructor_NodePath:
 
@@ -142,7 +142,7 @@ NodePath
 
 :ref:`NodePath<class_NodePath>` **NodePath**\ (\ ) :ref:`🔗<class_NodePath_constructor_NodePath>`
 
-建立一個空的 **NodePath**\ 。
+Constructs an empty **NodePath**.
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ NodePath
 
 :ref:`NodePath<class_NodePath>` **NodePath**\ (\ from\: :ref:`NodePath<class_NodePath>`\ )
 
-建立給定 **NodePath** 的複本。
+Constructs a **NodePath** as a copy of the given **NodePath**.
 
 .. rst-class:: classref-item-separator
 
@@ -162,31 +162,32 @@ NodePath
 
 :ref:`NodePath<class_NodePath>` **NodePath**\ (\ from\: :ref:`String<class_String>`\ )
 
-從 :ref:`String<class_String>` 建立一個 **NodePath**\ 。如果字串開頭有斜線則為絕對路徑（見 :ref:`is_absolute()<class_NodePath_method_is_absolute>`\ ）。
+Constructs a **NodePath** from a :ref:`String<class_String>`. The created path is absolute if prefixed with a slash (see :ref:`is_absolute()<class_NodePath_method_is_absolute>`).
 
-在路徑後方可選擇性地加上「子名稱」（subnames），用來指向屬性，也可多層嵌套。
+The "subnames" optionally included after the path to the target node can point to properties, and can also be nested.
 
-以下這些字串都是有效的節點路徑：
+The following strings can be valid node paths:
 
 ::
 
-    # 指向 Sprite2D 節點。
+    # Points to the Sprite2D node.
     "Level/RigidBody2D/Sprite2D"
 
-    # 指向 Sprite2D 節點及其 "texture" 資源。
-    # get_node() 會取得 Sprite2D，get_node_and_resource() 會同時取得 Sprite2D 節點與 "texture" 資源。
+    # Points to the Sprite2D node and its "texture" resource.
+    # get_node() would retrieve the Sprite2D, while get_node_and_resource()
+    # would retrieve both the Sprite2D node and the "texture" resource.
     "Level/RigidBody2D/Sprite2D:texture"
 
-    # 指向 Sprite2D 節點及其 "position" 屬性。
+    # Points to the Sprite2D node and its "position" property.
     "Level/RigidBody2D/Sprite2D:position"
 
-    # 指向 Sprite2D 節點 "position" 屬性的 "x" 分量。
+    # Points to the Sprite2D node and the "x" component of its "position" property.
     "Level/RigidBody2D/Sprite2D:position:x"
 
-    # 絕對路徑（自 SceneTree 起始）指向 RigidBody2D 節點。
+    # Points to the RigidBody2D node as an absolute path beginning from the SceneTree.
     "/root/Level/RigidBody2D"
 
-\ **注意：** 在 GDScript 中，也可以透過在常數字串前加 ``^`` 來轉為節點路徑，\ ``^"path/to/node"`` 等同於 ``NodePath("path/to/node")``\ 。
+\ **Note:** In GDScript, it's also possible to convert a constant string into a node path by prefixing it with ``^``. ``^"path/to/node"`` is equivalent to ``NodePath("path/to/node")``.
 
 .. rst-class:: classref-section-separator
 
@@ -194,8 +195,8 @@ NodePath
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_NodePath_method_get_as_property_path:
 
@@ -203,28 +204,28 @@ NodePath
 
 :ref:`NodePath<class_NodePath>` **get_as_property_path**\ (\ ) |const| :ref:`🔗<class_NodePath_method_get_as_property_path>`
 
-返回一個以冒號字元（\ ``:``\ ）開頭的節點路徑拷貝，將其轉換為沒有節點名稱的純屬性路徑（相對於目前節點）。
+Returns a copy of this node path with a colon character (``:``) prefixed, transforming it to a pure property path with no node names (relative to the current node).
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # node_path 指向名為 "position" 的子節點的 "x" 屬性。
+    # node_path points to the "x" property of the child node named "position".
     var node_path = ^"position:x"
 
-    # property_path 指向目前節點的 "position" 屬性的 "x"。
+    # property_path points to the "position" in the "x" axis of this node.
     var property_path = node_path.get_as_property_path()
-    print(property_path) # 輸出 ":position:x"
+    print(property_path) # Prints ":position:x"
 
  .. code-tab:: csharp
 
-    // nodePath 指向名為 "position" 的子節點的 "x" 屬性。
+    // nodePath points to the "x" property of the child node named "position".
     var nodePath = new NodePath("position:x");
 
-    // propertyPath 指向目前節點的 "position" 屬性的 "x"。
+    // propertyPath points to the "position" in the "x" axis of this node.
     NodePath propertyPath = nodePath.GetAsPropertyPath();
-    GD.Print(propertyPath); // 輸出 ":position:x"
+    GD.Print(propertyPath); // Prints ":position:x"
 
 
 
@@ -238,7 +239,7 @@ NodePath
 
 :ref:`StringName<class_StringName>` **get_concatenated_names**\ (\ ) |const| :ref:`🔗<class_NodePath_method_get_concatenated_names>`
 
-將所有節點名稱以斜線字元（\ ``/``\ ）串接為單一 :ref:`StringName<class_StringName>`\ 。
+Returns all node names concatenated with a slash character (``/``) as a single :ref:`StringName<class_StringName>`.
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +251,7 @@ NodePath
 
 :ref:`StringName<class_StringName>` **get_concatenated_subnames**\ (\ ) |const| :ref:`🔗<class_NodePath_method_get_concatenated_subnames>`
 
-將所有屬性子名稱以冒號字元（\ ``:``\ ）串接為單一 :ref:`StringName<class_StringName>`\ 。
+Returns all property subnames concatenated with a colon character (``:``) as a single :ref:`StringName<class_StringName>`.
 
 
 .. tabs::
@@ -258,12 +259,12 @@ NodePath
  .. code-tab:: gdscript
 
     var node_path = ^"Sprite2D:texture:resource_name"
-    print(node_path.get_concatenated_subnames()) # 輸出 "texture:resource_name"
+    print(node_path.get_concatenated_subnames()) # Prints "texture:resource_name"
 
  .. code-tab:: csharp
 
     var nodePath = new NodePath("Sprite2D:texture:resource_name");
-    GD.Print(nodePath.GetConcatenatedSubnames()); // 輸出 "texture:resource_name"
+    GD.Print(nodePath.GetConcatenatedSubnames()); // Prints "texture:resource_name"
 
 
 
@@ -277,7 +278,7 @@ NodePath
 
 :ref:`StringName<class_StringName>` **get_name**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NodePath_method_get_name>`
 
-返回第 ``idx``\ （從 0 開始）個節點名稱。如果 ``idx`` 超出範圍，會產生錯誤。另見 :ref:`get_subname_count()<class_NodePath_method_get_subname_count>` 與 :ref:`get_name_count()<class_NodePath_method_get_name_count>`\ 。
+Returns the node name indicated by ``idx``, starting from 0. If ``idx`` is out of bounds, an error is generated. See also :ref:`get_subname_count()<class_NodePath_method_get_subname_count>` and :ref:`get_name_count()<class_NodePath_method_get_name_count>`.
 
 
 .. tabs::
@@ -285,16 +286,16 @@ NodePath
  .. code-tab:: gdscript
 
     var sprite_path = NodePath("../RigidBody2D/Sprite2D")
-    print(sprite_path.get_name(0)) # 輸出 ".."
-    print(sprite_path.get_name(1)) # 輸出 "RigidBody2D"
-    print(sprite_path.get_name(2)) # 輸出 "Sprite2D"
+    print(sprite_path.get_name(0)) # Prints ".."
+    print(sprite_path.get_name(1)) # Prints "RigidBody2D"
+    print(sprite_path.get_name(2)) # Prints "Sprite"
 
  .. code-tab:: csharp
 
     var spritePath = new NodePath("../RigidBody2D/Sprite2D");
-    GD.Print(spritePath.GetName(0)); // 輸出 ".."
-    GD.Print(spritePath.GetName(1)); // 輸出 "RigidBody2D"
-    GD.Print(spritePath.GetName(2)); // 輸出 "Sprite2D"
+    GD.Print(spritePath.GetName(0)); // Prints ".."
+    GD.Print(spritePath.GetName(1)); // Prints "PathFollow2D"
+    GD.Print(spritePath.GetName(2)); // Prints "Sprite"
 
 
 
@@ -308,9 +309,9 @@ NodePath
 
 :ref:`int<class_int>` **get_name_count**\ (\ ) |const| :ref:`🔗<class_NodePath_method_get_name_count>`
 
-返回路徑中的節點名稱數量，不包含屬性子名稱。
+Returns the number of node names in the path. Property subnames are not included.
 
-例如，\ ``"../RigidBody2D/Sprite2D:texture"`` 中有 3 個節點名稱。
+For example, ``"../RigidBody2D/Sprite2D:texture"`` contains 3 node names.
 
 .. rst-class:: classref-item-separator
 
@@ -322,7 +323,7 @@ NodePath
 
 :ref:`StringName<class_StringName>` **get_subname**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NodePath_method_get_subname>`
 
-返回第 ``idx``\ （從 0 開始）個屬性名稱（子名稱）。如果 ``idx`` 超出範圍，會產生錯誤。另見 :ref:`get_subname_count()<class_NodePath_method_get_subname_count>`\ 。
+Returns the property name indicated by ``idx``, starting from 0. If ``idx`` is out of bounds, an error is generated. See also :ref:`get_subname_count()<class_NodePath_method_get_subname_count>`.
 
 
 .. tabs::
@@ -330,14 +331,14 @@ NodePath
  .. code-tab:: gdscript
 
     var path_to_name = NodePath("Sprite2D:texture:resource_name")
-    print(path_to_name.get_subname(0)) # 輸出 "texture"
-    print(path_to_name.get_subname(1)) # 輸出 "resource_name"
+    print(path_to_name.get_subname(0)) # Prints "texture"
+    print(path_to_name.get_subname(1)) # Prints "resource_name"
 
  .. code-tab:: csharp
 
     var pathToName = new NodePath("Sprite2D:texture:resource_name");
-    GD.Print(pathToName.GetSubname(0)); // 輸出 "texture"
-    GD.Print(pathToName.GetSubname(1)); // 輸出 "resource_name"
+    GD.Print(pathToName.GetSubname(0)); // Prints "texture"
+    GD.Print(pathToName.GetSubname(1)); // Prints "resource_name"
 
 
 
@@ -351,9 +352,9 @@ NodePath
 
 :ref:`int<class_int>` **get_subname_count**\ (\ ) |const| :ref:`🔗<class_NodePath_method_get_subname_count>`
 
-返回路徑中的屬性名稱（「子名稱」）數量。每個子名稱都位於節點路徑的冒號字元（\ ``:``\ ）之後。
+Returns the number of property names ("subnames") in the path. Each subname in the node path is listed after a colon character (``:``).
 
-例如，\ ``"Level/RigidBody2D/Sprite2D:texture:resource_name"`` 中有 2 個子名稱。
+For example, ``"Level/RigidBody2D/Sprite2D:texture:resource_name"`` contains 2 subnames.
 
 .. rst-class:: classref-item-separator
 
@@ -365,9 +366,9 @@ NodePath
 
 :ref:`int<class_int>` **hash**\ (\ ) |const| :ref:`🔗<class_NodePath_method_hash>`
 
-返回代表節點路徑內容的 32 位元雜湊值。
+Returns the 32-bit hash value representing the node path's contents.
 
-\ **注意：** 由於雜湊碰撞，相同雜湊值的節點路徑\ *不一定*\ 相同，但不同雜湊值的節點路徑一定不同。
+\ **Note:** Node paths with equal hash values are *not* guaranteed to be the same, as a result of hash collisions. Node paths with different hash values are guaranteed to be different.
 
 .. rst-class:: classref-item-separator
 
@@ -379,7 +380,7 @@ NodePath
 
 :ref:`bool<class_bool>` **is_absolute**\ (\ ) |const| :ref:`🔗<class_NodePath_method_is_absolute>`
 
-如果節點路徑是絕對路徑（以斜線字元 ``/`` 開頭，且總是從 :ref:`SceneTree<class_SceneTree>` 起始），則返回 ``true``\ 。這類路徑可用於從根節點可靠地存取其他節點（例如若存在名為 "Global" 的自動載入項，則 ``"/root/Global"``\ ）。
+Returns ``true`` if the node path is absolute. Unlike a relative path, an absolute path is represented by a leading slash character (``/``) and always begins from the :ref:`SceneTree<class_SceneTree>`. It can be used to reliably access nodes from the root node (e.g. ``"/root/Global"`` if an autoload named "Global" exists).
 
 .. rst-class:: classref-item-separator
 
@@ -391,7 +392,7 @@ NodePath
 
 :ref:`bool<class_bool>` **is_empty**\ (\ ) |const| :ref:`🔗<class_NodePath_method_is_empty>`
 
-如果節點路徑是由空字串（\ ``""``\ ）建立，則返回 ``true``\ 。
+Returns ``true`` if the node path has been constructed from an empty :ref:`String<class_String>` (``""``).
 
 .. rst-class:: classref-item-separator
 
@@ -403,11 +404,11 @@ NodePath
 
 :ref:`NodePath<class_NodePath>` **slice**\ (\ begin\: :ref:`int<class_int>`, end\: :ref:`int<class_int>` = 2147483647\ ) |const| :ref:`🔗<class_NodePath_method_slice>`
 
-傳回 **NodePath** 從 ``begin``\ （包含）到 ``end``\ （不包含）的切片，結果為新的 **NodePath**\ 。
+Returns the slice of the **NodePath**, from ``begin`` (inclusive) to ``end`` (exclusive), as a new **NodePath**.
 
-\ ``begin`` 和 ``end`` 的絕對值會限制在 :ref:`get_name_count()<class_NodePath_method_get_name_count>` 與 :ref:`get_subname_count()<class_NodePath_method_get_subname_count>` 的總和範圍內，因此 ``end`` 的預設值會讓切片到路徑結尾（如 ``path.slice(1)`` 相當於 ``path.slice(1, path.get_name_count() + path.get_subname_count())``\ ）。
+The absolute value of ``begin`` and ``end`` will be clamped to the sum of :ref:`get_name_count()<class_NodePath_method_get_name_count>` and :ref:`get_subname_count()<class_NodePath_method_get_subname_count>`, so the default value for ``end`` makes it slice to the end of the **NodePath** by default (i.e. ``path.slice(1)`` is a shorthand for ``path.slice(1, path.get_name_count() + path.get_subname_count())``).
 
-如果 ``begin`` 或 ``end`` 為負值，則代表從 **NodePath** 結尾往前數（如 ``path.slice(0, -2)`` 相當於 ``path.slice(0, path.get_name_count() + path.get_subname_count() - 2)``\ ）。
+If either ``begin`` or ``end`` are negative, they will be relative to the end of the **NodePath** (i.e. ``path.slice(0, -2)`` is a shorthand for ``path.slice(0, path.get_name_count() + path.get_subname_count() - 2)``).
 
 .. rst-class:: classref-section-separator
 
@@ -415,8 +416,8 @@ NodePath
 
 .. rst-class:: classref-descriptions-group
 
-運算子說明
-----------
+Operator Descriptions
+---------------------
 
 .. _class_NodePath_operator_neq_NodePath:
 
@@ -424,7 +425,7 @@ NodePath
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_NodePath_operator_neq_NodePath>`
 
-如果兩個節點路徑不相等，則返回 ``true``\ 。
+Returns ``true`` if two node paths are not equal.
 
 .. rst-class:: classref-item-separator
 
@@ -436,14 +437,14 @@ NodePath
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_NodePath_operator_eq_NodePath>`
 
-如果兩個節點路徑相等，也就是節點名稱與子名稱順序完全一致，則返回 ``true``\ 。
+Returns ``true`` if two node paths are equal, that is, they are composed of the same node names and subnames in the same order.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

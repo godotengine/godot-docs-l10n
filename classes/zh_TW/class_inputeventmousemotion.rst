@@ -5,14 +5,14 @@
 InputEventMouseMotion
 =====================
 
-**繼承：** :ref:`InputEventMouse<class_InputEventMouse>` **<** :ref:`InputEventWithModifiers<class_InputEventWithModifiers>` **<** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`InputEventMouse<class_InputEventMouse>` **<** :ref:`InputEventWithModifiers<class_InputEventWithModifiers>` **<** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-代表滑鼠或筆的移動。
+Represents a mouse or a pen movement.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 Stores information about a mouse or a pen motion. This includes relative position, absolute position, and velocity. See :ref:`Node._input()<class_Node_private_method__input>`.
 
@@ -22,19 +22,19 @@ Stores information about a mouse or a pen motion. This includes relative positio
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`使用 InputEvent <../tutorials/inputs/inputevent>`
+- :doc:`Using InputEvent <../tutorials/inputs/inputevent>`
 
-- :doc:`滑鼠和輸入座標 <../tutorials/inputs/mouse_and_input_coordinates>`
+- :doc:`Mouse and input coordinates <../tutorials/inputs/mouse_and_input_coordinates>`
 
-- `3D 體素示範 <https://godotengine.org/asset-library/asset/2755>`__
+- `3D Voxel Demo <https://godotengine.org/asset-library/asset/2755>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -61,8 +61,8 @@ Stores information about a mouse or a pen motion. This includes relative positio
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_InputEventMouseMotion_property_pen_inverted:
 
@@ -75,9 +75,9 @@ Stores information about a mouse or a pen motion. This includes relative positio
 - |void| **set_pen_inverted**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_pen_inverted**\ (\ )
 
-使用手寫筆的橡皮端時，返回 ``true``\ 。
+Returns ``true`` when using the eraser end of a stylus pen.
 
-\ **注意：**\ 這個屬性在 Linux、macOS 和 Windows 上實作。
+\ **Note:** This property is implemented on Linux, macOS and Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -94,7 +94,7 @@ Stores information about a mouse or a pen motion. This includes relative positio
 - |void| **set_pressure**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pressure**\ (\ )
 
-表示使用者對筆施加的壓力。範圍從 ``0.0`` 到 ``1.0`` 。
+Represents the pressure the user puts on the pen. Ranges from ``0.0`` to ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -172,7 +172,7 @@ The unscaled mouse velocity in pixels per second in screen coordinates. This vel
 - |void| **set_tilt**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_tilt**\ (\ )
 
-代表筆的傾斜角度。正的 X 座標值表示向右傾斜。正的Y座標值表示向使用者自身傾斜。兩個軸的範圍是 ``-1.0`` 到 ``1.0``\ 。
+Represents the angles of tilt of the pen. Positive X-coordinate value indicates a tilt to the right. Positive Y-coordinate value indicates a tilt toward the user. Ranges from ``-1.0`` to ``1.0`` for both axes.
 
 .. rst-class:: classref-item-separator
 
@@ -195,12 +195,12 @@ The mouse velocity in pixels per second.
 
 \ **Note:** Use :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` for mouse aiming using the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

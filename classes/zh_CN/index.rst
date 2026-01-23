@@ -7,11 +7,11 @@
 
 .. _doc_class_reference:
 
-所有类
-======
+All classes
+===========
 
-全局
-====
+Globals
+=======
 
 .. toctree::
     :maxdepth: 1
@@ -20,8 +20,8 @@
     class_@gdscript
     class_@globalscope
 
-节点
-====
+Nodes
+=====
 
 .. toctree::
     :maxdepth: 1
@@ -310,8 +310,8 @@
     class_xrnode3d
     class_xrorigin3d
 
-资源
-====
+Resources
+=========
 
 .. toctree::
     :maxdepth: 1
@@ -734,8 +734,8 @@
     class_worldboundaryshape3d
     class_x509certificate
 
-其他对象
-========
+Other objects
+=============
 
 .. toctree::
     :maxdepth: 1
@@ -1071,8 +1071,8 @@
     class_zippacker
     class_zipreader
 
-编辑器专用
-==========
+Editor-only
+===========
 
 .. toctree::
     :maxdepth: 1
@@ -1137,8 +1137,8 @@
     class_scripteditor
     class_scripteditorbase
 
-变体类型
-========
+Variant types
+=============
 
 .. toctree::
     :maxdepth: 1

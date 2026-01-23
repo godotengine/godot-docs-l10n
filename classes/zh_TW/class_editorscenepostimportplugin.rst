@@ -5,21 +5,21 @@
 EditorScenePostImportPlugin
 ===========================
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用於控制和修改匯入場景的過程的外掛程式。
+Plugin to control and modifying the process of importing a scene.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-這種外掛程式型別的存在是為了修改匯入場景的處理，允許在處理的每個階段更改內容以及新增匯入器選項。
+This plugin type exists to modify the process of importing scenes, allowing to change the content as well as add importer options at every stage of the process.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -54,8 +54,8 @@ EditorScenePostImportPlugin
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_EditorScenePostImportPlugin_InternalImportCategory:
 
@@ -165,8 +165,8 @@ enum **InternalImportCategory**: :ref:`🔗<enum_EditorScenePostImportPlugin_Int
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_EditorScenePostImportPlugin_private_method__get_import_options:
 
@@ -174,7 +174,7 @@ enum **InternalImportCategory**: :ref:`🔗<enum_EditorScenePostImportPlugin_Int
 
 |void| **_get_import_options**\ (\ path\: :ref:`String<class_String>`\ ) |virtual| :ref:`🔗<class_EditorScenePostImportPlugin_private_method__get_import_options>`
 
-覆蓋以新增常規匯入選項。這些將出現在編輯器的主匯入停靠面板中。通過 :ref:`add_import_option()<class_EditorScenePostImportPlugin_method_add_import_option>` 和 :ref:`add_import_option_advanced()<class_EditorScenePostImportPlugin_method_add_import_option_advanced>` 新增選項。
+Override to add general import options. These will appear in the main import dock on the editor. Add options via :ref:`add_import_option()<class_EditorScenePostImportPlugin_method_add_import_option>` and :ref:`add_import_option_advanced()<class_EditorScenePostImportPlugin_method_add_import_option_advanced>`.
 
 .. rst-class:: classref-item-separator
 
@@ -186,7 +186,7 @@ enum **InternalImportCategory**: :ref:`🔗<enum_EditorScenePostImportPlugin_Int
 
 |void| **_get_internal_import_options**\ (\ category\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_EditorScenePostImportPlugin_private_method__get_internal_import_options>`
 
-覆蓋以新增內部匯入選項。這些將出現在 3D 場景匯入對話方塊中。通過 :ref:`add_import_option()<class_EditorScenePostImportPlugin_method_add_import_option>` 和 :ref:`add_import_option_advanced()<class_EditorScenePostImportPlugin_method_add_import_option_advanced>` 新增選項。
+Override to add internal import options. These will appear in the 3D scene import dialog. Add options via :ref:`add_import_option()<class_EditorScenePostImportPlugin_method_add_import_option>` and :ref:`add_import_option_advanced()<class_EditorScenePostImportPlugin_method_add_import_option_advanced>`.
 
 .. rst-class:: classref-item-separator
 
@@ -234,7 +234,7 @@ Should return ``true`` to show the given option, ``false`` to hide the given opt
 
 |void| **_internal_process**\ (\ category\: :ref:`int<class_int>`, base_node\: :ref:`Node<class_Node>`, node\: :ref:`Node<class_Node>`, resource\: :ref:`Resource<class_Resource>`\ ) |virtual| :ref:`🔗<class_EditorScenePostImportPlugin_private_method__internal_process>`
 
-處理給定類別的特定節點或資源。
+Process a specific node or resource for a given category.
 
 .. rst-class:: classref-item-separator
 
@@ -272,7 +272,7 @@ Pre-process may be used to adjust internal import options in the ``"nodes"``, ``
 
 |void| **add_import_option**\ (\ name\: :ref:`String<class_String>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_EditorScenePostImportPlugin_method_add_import_option>`
 
-新增特定的匯入選項（僅限名稱和預設值）。該函式只能從 :ref:`_get_import_options()<class_EditorScenePostImportPlugin_private_method__get_import_options>` 和 :ref:`_get_internal_import_options()<class_EditorScenePostImportPlugin_private_method__get_internal_import_options>` 被呼叫。
+Add a specific import option (name and default value only). This function can only be called from :ref:`_get_import_options()<class_EditorScenePostImportPlugin_private_method__get_import_options>` and :ref:`_get_internal_import_options()<class_EditorScenePostImportPlugin_private_method__get_internal_import_options>`.
 
 .. rst-class:: classref-item-separator
 
@@ -284,7 +284,7 @@ Pre-process may be used to adjust internal import options in the ``"nodes"``, ``
 
 |void| **add_import_option_advanced**\ (\ type\: :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`, name\: :ref:`String<class_String>`, default_value\: :ref:`Variant<class_Variant>`, hint\: :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` = 0, hint_string\: :ref:`String<class_String>` = "", usage_flags\: :ref:`int<class_int>` = 6\ ) :ref:`🔗<class_EditorScenePostImportPlugin_method_add_import_option_advanced>`
 
-新增特定的匯入選項。該函式只能從 :ref:`_get_import_options()<class_EditorScenePostImportPlugin_private_method__get_import_options>` 和 :ref:`_get_internal_import_options()<class_EditorScenePostImportPlugin_private_method__get_internal_import_options>` 被呼叫。
+Add a specific import option. This function can only be called from :ref:`_get_import_options()<class_EditorScenePostImportPlugin_private_method__get_import_options>` and :ref:`_get_internal_import_options()<class_EditorScenePostImportPlugin_private_method__get_internal_import_options>`.
 
 .. rst-class:: classref-item-separator
 
@@ -296,14 +296,14 @@ Pre-process may be used to adjust internal import options in the ``"nodes"``, ``
 
 :ref:`Variant<class_Variant>` **get_option_value**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_EditorScenePostImportPlugin_method_get_option_value>`
 
-查詢選項的值。該函式只能從查詢可見性的函式或處理函式中被呼叫。
+Query the value of an option. This function can only be called from those querying visibility, or processing.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

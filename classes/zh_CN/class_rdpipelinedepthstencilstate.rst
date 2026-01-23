@@ -5,21 +5,21 @@
 RDPipelineDepthStencilState
 ===========================
 
-**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-管线的深度/模板状态（由 :ref:`RenderingDevice<class_RenderingDevice>` 使用）。
+Pipeline depth/stencil state (used by :ref:`RenderingDevice<class_RenderingDevice>`).
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-**RDPipelineDepthStencilState** 控制的是在使用 :ref:`RenderingDevice<class_RenderingDevice>` 对深度和模板进行采样时，如何进行深度和模板的比较。
+**RDPipelineDepthStencilState** controls the way depth and stencil comparisons are performed when sampling those values using :ref:`RenderingDevice<class_RenderingDevice>`.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -74,8 +74,8 @@ RDPipelineDepthStencilState
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_RDPipelineDepthStencilState_property_back_op_compare:
 
@@ -88,7 +88,7 @@ RDPipelineDepthStencilState
 - |void| **set_back_op_compare**\ (\ value\: :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>`\ )
 - :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` **get_back_op_compare**\ (\ )
 
-用于比较前一个背面模板值和 :ref:`back_op_reference<class_RDPipelineDepthStencilState_property_back_op_reference>` 的方法。
+The method used for comparing the previous back stencil value and :ref:`back_op_reference<class_RDPipelineDepthStencilState_property_back_op_reference>`.
 
 .. rst-class:: classref-item-separator
 
@@ -105,7 +105,7 @@ RDPipelineDepthStencilState
 - |void| **set_back_op_compare_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_back_op_compare_mask**\ (\ )
 
-选择将比较背面模板值中的哪些位。
+Selects which bits from the back stencil value will be compared.
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +122,7 @@ RDPipelineDepthStencilState
 - |void| **set_back_op_depth_fail**\ (\ value\: :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>`\ )
 - :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **get_back_op_depth_fail**\ (\ )
 
-对通过模板测试但未通过深度测试的背面像素的模板缓冲区执行的操作。
+The operation to perform on the stencil buffer for back pixels that pass the stencil test but fail the depth test.
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ RDPipelineDepthStencilState
 - |void| **set_back_op_fail**\ (\ value\: :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>`\ )
 - :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **get_back_op_fail**\ (\ )
 
-对未通过模板测试的背面像素的模板缓冲区执行的操作。
+The operation to perform on the stencil buffer for back pixels that fail the stencil test.
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ RDPipelineDepthStencilState
 - |void| **set_back_op_pass**\ (\ value\: :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>`\ )
 - :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **get_back_op_pass**\ (\ )
 
-对通过模板测试的背面像素的模板缓冲区执行的操作。
+The operation to perform on the stencil buffer for back pixels that pass the stencil test.
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +173,7 @@ RDPipelineDepthStencilState
 - |void| **set_back_op_reference**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_back_op_reference**\ (\ )
 
-将与前一个背面模板值进行比较的值。
+The value the previous back stencil value will be compared to.
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ RDPipelineDepthStencilState
 - |void| **set_back_op_write_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_back_op_write_mask**\ (\ )
 
-选择背面模板值中的哪些位将被更改。
+Selects which bits from the back stencil value will be changed.
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ RDPipelineDepthStencilState
 - |void| **set_depth_compare_operator**\ (\ value\: :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>`\ )
 - :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` **get_depth_compare_operator**\ (\ )
 
-用于比较前一个和当前深度值的方法。
+The method used for comparing the previous and current depth values.
 
 .. rst-class:: classref-item-separator
 
@@ -224,7 +224,7 @@ RDPipelineDepthStencilState
 - |void| **set_depth_range_max**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth_range_max**\ (\ )
 
-:ref:`enable_depth_range<class_RDPipelineDepthStencilState_property_enable_depth_range>` 将返回 ``true`` 的最大深度。
+The maximum depth that returns ``true`` for :ref:`enable_depth_range<class_RDPipelineDepthStencilState_property_enable_depth_range>`.
 
 .. rst-class:: classref-item-separator
 
@@ -241,7 +241,7 @@ RDPipelineDepthStencilState
 - |void| **set_depth_range_min**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth_range_min**\ (\ )
 
-:ref:`enable_depth_range<class_RDPipelineDepthStencilState_property_enable_depth_range>` 将返回 ``true`` 的最小深度。
+The minimum depth that returns ``true`` for :ref:`enable_depth_range<class_RDPipelineDepthStencilState_property_enable_depth_range>`.
 
 .. rst-class:: classref-item-separator
 
@@ -258,7 +258,7 @@ RDPipelineDepthStencilState
 - |void| **set_enable_depth_range**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enable_depth_range**\ (\ )
 
-如果为 ``true``\ ，则将测试每个深度值以查看它是否在 :ref:`depth_range_min<class_RDPipelineDepthStencilState_property_depth_range_min>` 和 :ref:`depth_range_max<class_RDPipelineDepthStencilState_property_depth_range_max>` 之间。如果超出这些值，则将其丢弃。
+If ``true``, each depth value will be tested to see if it is between :ref:`depth_range_min<class_RDPipelineDepthStencilState_property_depth_range_min>` and :ref:`depth_range_max<class_RDPipelineDepthStencilState_property_depth_range_max>`. If it is outside of these values, it is discarded.
 
 .. rst-class:: classref-item-separator
 
@@ -275,7 +275,7 @@ RDPipelineDepthStencilState
 - |void| **set_enable_depth_test**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enable_depth_test**\ (\ )
 
-如果为 ``true``\ ，则会启用深度测试，能够让对象根据深度自动被其他对象遮挡。这样对象就能够被其他对象部分遮挡。如果为 ``false``\ ，则对象会按照绘制顺序显示（类似 Godot 的 2D 渲染器）。
+If ``true``, enables depth testing which allows objects to be automatically occluded by other objects based on their depth. This also allows objects to be partially occluded by other objects. If ``false``, objects will appear in the order they were drawn (like in Godot's 2D renderer).
 
 .. rst-class:: classref-item-separator
 
@@ -292,7 +292,7 @@ RDPipelineDepthStencilState
 - |void| **set_enable_depth_write**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enable_depth_write**\ (\ )
 
-如果为 ``true``\ ，则每当深度测试返回 ``true`` 时写入深度缓冲区。仅当 enable_depth_test 也为 ``true`` 时才有效。
+If ``true``, writes to the depth buffer whenever the depth test returns ``true``. Only works when enable_depth_test is also ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -309,7 +309,7 @@ RDPipelineDepthStencilState
 - |void| **set_enable_stencil**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enable_stencil**\ (\ )
 
-如果为 ``true``\ ，则启用模板测试。正面三角形和背面三角形有单独的模板缓冲区。请参阅每个以“front_op”开头和以“back_op”开头的属性。
+If ``true``, enables stencil testing. There are separate stencil buffers for front-facing triangles and back-facing triangles. See properties that begin with "front_op" and properties with "back_op" for each.
 
 .. rst-class:: classref-item-separator
 
@@ -326,7 +326,7 @@ RDPipelineDepthStencilState
 - |void| **set_front_op_compare**\ (\ value\: :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>`\ )
 - :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` **get_front_op_compare**\ (\ )
 
-该方法用于比较前一个正面模板值和 :ref:`front_op_reference<class_RDPipelineDepthStencilState_property_front_op_reference>`\ 。
+The method used for comparing the previous front stencil value and :ref:`front_op_reference<class_RDPipelineDepthStencilState_property_front_op_reference>`.
 
 .. rst-class:: classref-item-separator
 
@@ -343,7 +343,7 @@ RDPipelineDepthStencilState
 - |void| **set_front_op_compare_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_front_op_compare_mask**\ (\ )
 
-选择正面模板值中的哪些位将被比较。
+Selects which bits from the front stencil value will be compared.
 
 .. rst-class:: classref-item-separator
 
@@ -360,7 +360,7 @@ RDPipelineDepthStencilState
 - |void| **set_front_op_depth_fail**\ (\ value\: :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>`\ )
 - :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **get_front_op_depth_fail**\ (\ )
 
-对通过模板测试但未通过深度测试的正面像素的模板缓冲区执行的操作。
+The operation to perform on the stencil buffer for front pixels that pass the stencil test but fail the depth test.
 
 .. rst-class:: classref-item-separator
 
@@ -377,7 +377,7 @@ RDPipelineDepthStencilState
 - |void| **set_front_op_fail**\ (\ value\: :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>`\ )
 - :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **get_front_op_fail**\ (\ )
 
-对模板缓冲区中未通过模板测试的正面像素执行的操作。
+The operation to perform on the stencil buffer for front pixels that fail the stencil test.
 
 .. rst-class:: classref-item-separator
 
@@ -394,7 +394,7 @@ RDPipelineDepthStencilState
 - |void| **set_front_op_pass**\ (\ value\: :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>`\ )
 - :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **get_front_op_pass**\ (\ )
 
-对通过模板测试的正面像素的模板缓冲区执行的操作。
+The operation to perform on the stencil buffer for front pixels that pass the stencil test.
 
 .. rst-class:: classref-item-separator
 
@@ -411,7 +411,7 @@ RDPipelineDepthStencilState
 - |void| **set_front_op_reference**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_front_op_reference**\ (\ )
 
-将与前一个正面模板值进行比较的值。
+The value the previous front stencil value will be compared to.
 
 .. rst-class:: classref-item-separator
 
@@ -428,14 +428,14 @@ RDPipelineDepthStencilState
 - |void| **set_front_op_write_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_front_op_write_mask**\ (\ )
 
-选择正面模板值中的哪些位将被更改。
+Selects which bits from the front stencil value will be changed.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

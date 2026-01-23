@@ -8,21 +8,21 @@
 GridMapEditorPlugin
 ===================
 
-**继承：** :ref:`EditorPlugin<class_EditorPlugin>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`EditorPlugin<class_EditorPlugin>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-:ref:`GridMap<class_GridMap>` 节点的编辑器。
+Editor for :ref:`GridMap<class_GridMap>` nodes.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-GridMapEditorPlugin 提供对 :ref:`GridMap<class_GridMap>` 编辑器功能的访问。
+GridMapEditorPlugin provides access to the :ref:`GridMap<class_GridMap>` editor functionality.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -51,8 +51,8 @@ GridMapEditorPlugin 提供对 :ref:`GridMap<class_GridMap>` 编辑器功能的�
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_GridMapEditorPlugin_method_clear_selection:
 
@@ -60,7 +60,7 @@ GridMapEditorPlugin 提供对 :ref:`GridMap<class_GridMap>` 编辑器功能的�
 
 |void| **clear_selection**\ (\ ) :ref:`🔗<class_GridMapEditorPlugin_method_clear_selection>`
 
-取消选择当前选中的单元格。
+Deselects any currently selected cells.
 
 .. rst-class:: classref-item-separator
 
@@ -72,7 +72,7 @@ GridMapEditorPlugin 提供对 :ref:`GridMap<class_GridMap>` 编辑器功能的�
 
 :ref:`GridMap<class_GridMap>` **get_current_grid_map**\ (\ ) |const| :ref:`🔗<class_GridMapEditorPlugin_method_get_current_grid_map>`
 
-返回网格地图编辑器当前编辑的 :ref:`GridMap<class_GridMap>` 节点。
+Returns the :ref:`GridMap<class_GridMap>` node currently edited by the grid map editor.
 
 .. rst-class:: classref-item-separator
 
@@ -84,7 +84,7 @@ GridMapEditorPlugin 提供对 :ref:`GridMap<class_GridMap>` 编辑器功能的�
 
 :ref:`Array<class_Array>` **get_selected_cells**\ (\ ) |const| :ref:`🔗<class_GridMapEditorPlugin_method_get_selected_cells>`
 
-返回 :ref:`Vector3i<class_Vector3i>` 数组，表示选中单元格的坐标。
+Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the selected cells' coordinates.
 
 .. rst-class:: classref-item-separator
 
@@ -96,9 +96,9 @@ GridMapEditorPlugin 提供对 :ref:`GridMap<class_GridMap>` 编辑器功能的�
 
 :ref:`int<class_int>` **get_selected_palette_item**\ (\ ) |const| :ref:`🔗<class_GridMapEditorPlugin_method_get_selected_palette_item>`
 
-返回网格地图编辑器调色板中选中的 :ref:`MeshLibrary<class_MeshLibrary>` 项目的索引号，未选中项目时返回 ``-1``\ 。
+Returns the index of the selected :ref:`MeshLibrary<class_MeshLibrary>` item in the grid map editor's palette or ``-1`` if no item is selected.
 
-\ **注意：**\ 索引可能与编辑器界面中展示的顺序不一致。
+\ **Note:** The indices might not be in the same order as they appear in the editor's interface.
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ GridMapEditorPlugin 提供对 :ref:`GridMap<class_GridMap>` 编辑器功能的�
 
 :ref:`AABB<class_AABB>` **get_selection**\ (\ ) |const| :ref:`🔗<class_GridMapEditorPlugin_method_get_selection>`
 
-返回当前选中项的单元格坐标边界。请使用 :ref:`has_selection()<class_GridMapEditorPlugin_method_has_selection>` 检查是否存在选中项。
+Returns the cell coordinate bounds of the current selection. Use :ref:`has_selection()<class_GridMapEditorPlugin_method_has_selection>` to check if there is an active selection.
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +122,7 @@ GridMapEditorPlugin 提供对 :ref:`GridMap<class_GridMap>` 编辑器功能的�
 
 :ref:`bool<class_bool>` **has_selection**\ (\ ) |const| :ref:`🔗<class_GridMapEditorPlugin_method_has_selection>`
 
-如果存在选中的单元格，则返回 ``true``\ 。
+Returns ``true`` if there are selected cells.
 
 .. rst-class:: classref-item-separator
 
@@ -134,9 +134,9 @@ GridMapEditorPlugin 提供对 :ref:`GridMap<class_GridMap>` 编辑器功能的�
 
 |void| **set_selected_palette_item**\ (\ item\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GridMapEditorPlugin_method_set_selected_palette_item>`
 
-选中网格地图编辑器调色板中索引号对应的 :ref:`MeshLibrary<class_MeshLibrary>` 项目。如果给定的索引为负数，则不选中任何项目。如果给定值超过最后一个索引，则选中最后一个项目。
+Selects the :ref:`MeshLibrary<class_MeshLibrary>` item with the given index in the grid map editor's palette. If a negative index is given, no item will be selected. If a value greater than the last index is given, the last item will be selected.
 
-\ **注意：**\ 索引可能与编辑器界面中展示的顺序不一致。
+\ **Note:** The indices might not be in the same order as they appear in the editor's interface.
 
 .. rst-class:: classref-item-separator
 
@@ -148,14 +148,14 @@ GridMapEditorPlugin 提供对 :ref:`GridMap<class_GridMap>` 编辑器功能的�
 
 |void| **set_selection**\ (\ begin\: :ref:`Vector3i<class_Vector3i>`, end\: :ref:`Vector3i<class_Vector3i>`\ ) :ref:`🔗<class_GridMapEditorPlugin_method_set_selection>`
 
-选中从 ``begin`` 到 ``end`` 范围内的单元格。
+Selects the cells inside the given bounds from ``begin`` to ``end``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

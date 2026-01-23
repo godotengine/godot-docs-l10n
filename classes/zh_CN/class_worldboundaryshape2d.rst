@@ -5,21 +5,21 @@
 WorldBoundaryShape2D
 ====================
 
-**继承：** :ref:`Shape2D<class_Shape2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Shape2D<class_Shape2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用于物理碰撞的 2D 空间边界（半平面）形状。
+A 2D world boundary (half-plane) shape used for physics collision.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-2D 世界边界形状，应当用于物理用途。\ **WorldBoundaryShape2D** 本质上和无限直线类似，能够强制所有物理体都保持在它的上方。哪个方向是“上方”由该直线的法线确定，这个方向在编辑器中由直线上方的一条段线表示。用例是无限的平坦地面。
+A 2D world boundary shape, intended for use in physics. **WorldBoundaryShape2D** works like an infinite straight line that forces all physics bodies to stay above it. The line's normal determines which direction is considered as "above" and in the editor, the smaller line over it represents this direction. It can for example be used for endless flat floors.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ WorldBoundaryShape2D
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_WorldBoundaryShape2D_property_distance:
 
@@ -50,9 +50,9 @@ WorldBoundaryShape2D
 - |void| **set_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_distance**\ (\ )
 
-从原点到直线的距离，沿 :ref:`normal<class_WorldBoundaryShape2D_property_normal>` 方向（根据其方向和大小）。原点到直线实际距离的绝对值可以用 ``abs(distance) / normal.length()`` 计算。
+The distance from the origin to the line, expressed in terms of :ref:`normal<class_WorldBoundaryShape2D_property_normal>` (according to its direction and magnitude). Actual absolute distance from the origin to the line can be calculated as ``abs(distance) / normal.length()``.
 
-在直线 ``ax + by = d`` 的标量方程中，这是 ``d``\ ，而 ``(a, b)`` 坐标由 :ref:`normal<class_WorldBoundaryShape2D_property_normal>` 属性表示。
+In the scalar equation of the line ``ax + by = d``, this is ``d``, while the ``(a, b)`` coordinates are represented by the :ref:`normal<class_WorldBoundaryShape2D_property_normal>` property.
 
 .. rst-class:: classref-item-separator
 
@@ -69,14 +69,14 @@ WorldBoundaryShape2D
 - |void| **set_normal**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_normal**\ (\ )
 
-该直线的法线，通常是一个单位向量。它的方向表示非碰撞半平面。可以是任意长度，但不能为零。默认为 :ref:`Vector2.UP<class_Vector2_constant_UP>`\ 。
+The line's normal, typically a unit vector. Its direction indicates the non-colliding half-plane. Can be of any length but zero. Defaults to :ref:`Vector2.UP<class_Vector2_constant_UP>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

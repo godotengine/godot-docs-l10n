@@ -5,28 +5,28 @@
 EditorExportPlatformWindows
 ===========================
 
-**继承：** :ref:`EditorExportPlatformPC<class_EditorExportPlatformPC>` **<** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`EditorExportPlatformPC<class_EditorExportPlatformPC>` **<** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Windows 导出器。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的“导出”窗口中，导出器是在添加“Windows”预设时创建的。
+Exporter for Windows.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`为 Windows 导出 <../tutorials/export/exporting_for_windows>`
+The Windows exporter customizes how a Windows build is handled. In the editor's "Export" window, it is created when adding a new "Windows" preset.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Exporting for Windows <../tutorials/export/exporting_for_windows>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -115,8 +115,8 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_EditorExportPlatformWindows_property_application/company_name:
 
@@ -124,7 +124,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **application/company_name** :ref:`🔗<class_EditorExportPlatformWindows_property_application/company_name>`
 
-出品该程序的公司。必填。见 `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__\ 。
+Company that produced the application. Required. See `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **application/console_wrapper_icon** :ref:`🔗<class_EditorExportPlatformWindows_property_application/console_wrapper_icon>`
 
-控制台封装图标文件。如果留空，则依次回退至 :ref:`application/icon<class_EditorExportPlatformWindows_property_application/icon>`\ 、\ :ref:`ProjectSettings.application/config/windows_native_icon<class_ProjectSettings_property_application/config/windows_native_icon>`\ 、\ :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。
+Console wrapper icon file. If left empty, it will fallback to :ref:`application/icon<class_EditorExportPlatformWindows_property_application/icon>`, then to :ref:`ProjectSettings.application/config/windows_native_icon<class_ProjectSettings_property_application/config/windows_native_icon>`, and lastly, :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`.
 
 .. rst-class:: classref-item-separator
 
@@ -148,7 +148,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **application/copyright** :ref:`🔗<class_EditorExportPlatformWindows_property_application/copyright>`
 
-用户可见的捆绑包版权声明。选填。见 `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__\ 。
+Copyright notice for the bundle visible to the user. Optional. See `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -160,7 +160,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`bool<class_bool>` **application/d3d12_agility_sdk_multiarch** :ref:`🔗<class_EditorExportPlatformWindows_property_application/d3d12_agility_sdk_multiarch>`
 
-如果为 ``true`` 并且设置了 :ref:`application/export_d3d12<class_EditorExportPlatformWindows_property_application/export_d3d12>`\ ，则 Agility SDK DLL 将被存储在特定于架构的子目录中。
+If ``true``, and :ref:`application/export_d3d12<class_EditorExportPlatformWindows_property_application/export_d3d12>` is set, the Agility SDK DLLs will be stored in arch-specific subdirectories.
 
 .. rst-class:: classref-item-separator
 
@@ -172,7 +172,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`int<class_int>` **application/export_angle** :ref:`🔗<class_EditorExportPlatformWindows_property_application/export_angle>`
 
-如果设置为 ``1``\ ，ANGLE 库将随导出的应用程序一起导出。如果设置为 ``0``\ ，则仅当 :ref:`ProjectSettings.rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` 被设置为 ``"opengl3_angle"`` 时才会导出 ANGLE 库。
+If set to ``1``, ANGLE libraries are exported with the exported application. If set to ``0``, ANGLE libraries are exported only if :ref:`ProjectSettings.rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` is set to ``"opengl3_angle"``.
 
 .. rst-class:: classref-item-separator
 
@@ -184,7 +184,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`int<class_int>` **application/export_d3d12** :ref:`🔗<class_EditorExportPlatformWindows_property_application/export_d3d12>`
 
-如果设置为 ``1``\ ，Direct3D 12 运行时库（Agility SDK、PIX）将随导出的应用程序一起导出。如果设置为 ``0``\ ，则仅当 :ref:`ProjectSettings.rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>` 被设置为 ``"d3d12"`` 时，才会导出 Direct3D 12 库。
+If set to ``1``, the Direct3D 12 runtime libraries (Agility SDK, PIX) are exported with the exported application. If set to ``0``, Direct3D 12 libraries are exported only if :ref:`ProjectSettings.rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>` is set to ``"d3d12"``.
 
 .. rst-class:: classref-item-separator
 
@@ -196,7 +196,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **application/file_description** :ref:`🔗<class_EditorExportPlatformWindows_property_application/file_description>`
 
-展示给用户的文件说明。必填。见 `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__\ 。
+File description to be presented to users. Required. See `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -208,7 +208,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **application/file_version** :ref:`🔗<class_EditorExportPlatformWindows_property_application/file_version>`
 
-文件的版本号。如果留空，则回退到 :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`\ 。请参阅 `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__\ 。
+Version number of the file. Falls back to :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>` if left empty. See `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **application/icon** :ref:`🔗<class_EditorExportPlatformWindows_property_application/icon>`
 
-应用程序图标文件。如果留空，则会回退至 :ref:`ProjectSettings.application/config/windows_native_icon<class_ProjectSettings_property_application/config/windows_native_icon>`\ ，继而回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。
+Application icon file. If left empty, it will fallback to :ref:`ProjectSettings.application/config/windows_native_icon<class_ProjectSettings_property_application/config/windows_native_icon>`, and then to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`.
 
 .. rst-class:: classref-item-separator
 
@@ -232,7 +232,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`int<class_int>` **application/icon_interpolation** :ref:`🔗<class_EditorExportPlatformWindows_property_application/icon_interpolation>`
 
-用于调整应用程序图标大小的插值方法。
+Interpolation method used to resize application icon.
 
 .. rst-class:: classref-item-separator
 
@@ -244,7 +244,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`bool<class_bool>` **application/modify_resources** :ref:`🔗<class_EditorExportPlatformWindows_property_application/modify_resources>`
 
-如果启用，则会根据 ``application/*`` 中的其他值设置导出后可执行文件的图标和元数据。
+If enabled, icon and metadata of the exported executable is set according to the other ``application/*`` values.
 
 .. rst-class:: classref-item-separator
 
@@ -256,7 +256,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **application/product_name** :ref:`🔗<class_EditorExportPlatformWindows_property_application/product_name>`
 
-应用程序的名称。必填。见 `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__\ 。
+Name of the application. Required. See `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -268,7 +268,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **application/product_version** :ref:`🔗<class_EditorExportPlatformWindows_property_application/product_version>`
 
-用户可见的应用程序版本。如果留空，则回退到 :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`\ 。请参阅 `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__\ 。
+Application version visible to the user. Falls back to :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>` if left empty. See `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -280,7 +280,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **application/trademarks** :ref:`🔗<class_EditorExportPlatformWindows_property_application/trademarks>`
 
-适用于该文件的商标及注册商标。选填。见 `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__\ 。
+Trademarks and registered trademarks that apply to the file. Optional. See `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -292,9 +292,9 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **binary_format/architecture** :ref:`🔗<class_EditorExportPlatformWindows_property_binary_format/architecture>`
 
-应用程序可执行文件的架构。
+Application executable architecture.
 
-支持的架构：\ ``x86_32``\ 、\ ``x86_64``\ 、\ ``arm64``\ 。
+Supported architectures: ``x86_32``, ``x86_64``, and ``arm64``.
 
 .. rst-class:: classref-item-separator
 
@@ -306,7 +306,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`bool<class_bool>` **binary_format/embed_pck** :ref:`🔗<class_EditorExportPlatformWindows_property_binary_format/embed_pck>`
 
-如果为 ``true``\ ，则会将项目资源嵌入到可执行文件中。
+If ``true``, project resources are embedded into the executable.
 
 .. rst-class:: classref-item-separator
 
@@ -318,7 +318,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`PackedStringArray<class_PackedStringArray>` **codesign/custom_options** :ref:`🔗<class_EditorExportPlatformWindows_property_codesign/custom_options>`
 
-要传给代码签名工具的额外命令行参数的数据。见\ `签名工具 <https://learn.microsoft.com/zh-cn/dotnet/framework/tools/signtool-exe>`__\ 。
+Array of the additional command line arguments passed to the code signing tool. See `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -332,7 +332,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **codesign/description** :ref:`🔗<class_EditorExportPlatformWindows_property_codesign/description>`
 
-对被签名内容的描述。见\ `签名工具 <https://learn.microsoft.com/zh-cn/dotnet/framework/tools/signtool-exe>`__\ 。
+Description of the signed content. See `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -344,7 +344,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`int<class_int>` **codesign/digest_algorithm** :ref:`🔗<class_EditorExportPlatformWindows_property_codesign/digest_algorithm>`
 
-创建签名所使用的摘要算法。见\ `签名工具 <https://learn.microsoft.com/zh-cn/dotnet/framework/tools/signtool-exe>`__\ 。
+Digest algorithm to use for creating signature. See `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -356,7 +356,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`bool<class_bool>` **codesign/enable** :ref:`🔗<class_EditorExportPlatformWindows_property_codesign/enable>`
 
-如果为 ``true``\ ，则启用可执行文件签名。
+If ``true``, executable signing is enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -368,9 +368,9 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **codesign/identity** :ref:`🔗<class_EditorExportPlatformWindows_property_codesign/identity>`
 
-用于对可执行文件签名的 PKCS #12 证书文件，或证书的 SHA-1 哈希（如果 :ref:`codesign/identity_type<class_EditorExportPlatformWindows_property_codesign/identity_type>` 为 "Use certificate store"）。见\ `签名工具 <https://learn.microsoft.com/zh-cn/dotnet/framework/tools/signtool-exe>`__\ 。
+PKCS #12 certificate file used to sign executable or certificate SHA-1 hash (if :ref:`codesign/identity_type<class_EditorExportPlatformWindows_property_codesign/identity_type>` is set to "Use certificate store"). See `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
 
-可以使用环境变量 ``GODOT_WINDOWS_CODESIGN_IDENTITY`` 覆盖。
+Can be overridden with the environment variable ``GODOT_WINDOWS_CODESIGN_IDENTITY``.
 
 .. rst-class:: classref-item-separator
 
@@ -382,9 +382,9 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`int<class_int>` **codesign/identity_type** :ref:`🔗<class_EditorExportPlatformWindows_property_codesign/identity_type>`
 
-要使用的身份类型。见\ `签名工具 <https://learn.microsoft.com/zh-cn/dotnet/framework/tools/signtool-exe>`__\ 。
+Type of identity to use. See `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
 
-可以使用环境变量 ``GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE`` 覆盖。
+Can be overridden with the environment variable ``GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE``.
 
 .. rst-class:: classref-item-separator
 
@@ -396,9 +396,9 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **codesign/password** :ref:`🔗<class_EditorExportPlatformWindows_property_codesign/password>`
 
-用于对可执行文件签名的证书文件的密码。见\ `签名工具 <https://learn.microsoft.com/zh-cn/dotnet/framework/tools/signtool-exe>`__\ 。
+Password for the certificate file used to sign executable. See `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
 
-可以使用环境变量 ``GODOT_WINDOWS_CODESIGN_PASSWORD`` 覆盖。
+Can be overridden with the environment variable ``GODOT_WINDOWS_CODESIGN_PASSWORD``.
 
 .. rst-class:: classref-item-separator
 
@@ -410,7 +410,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`bool<class_bool>` **codesign/timestamp** :ref:`🔗<class_EditorExportPlatformWindows_property_codesign/timestamp>`
 
-如果为 ``true``\ ，则会在签名中添加时间戳。见\ `签名工具 <https://learn.microsoft.com/zh-cn/dotnet/framework/tools/signtool-exe>`__\ 。
+If ``true``, time-stamp is added to the signature. See `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -422,7 +422,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **codesign/timestamp_server_url** :ref:`🔗<class_EditorExportPlatformWindows_property_codesign/timestamp_server_url>`
 
-时间戳服务器的 URL。如果留空则使用默认服务器。见\ `签名工具 <https://learn.microsoft.com/zh-cn/dotnet/framework/tools/signtool-exe>`__\ 。
+URL of the time stamp server. If left empty, the default server is used. See `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +434,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **custom_template/debug** :ref:`🔗<class_EditorExportPlatformWindows_property_custom_template/debug>`
 
-到自定义导出模板的路径。如果留空，则默认模板将被使用。
+Path to the custom export template. If left empty, default template is used.
 
 .. rst-class:: classref-item-separator
 
@@ -446,7 +446,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **custom_template/release** :ref:`🔗<class_EditorExportPlatformWindows_property_custom_template/release>`
 
-到自定义导出模板的路径。如果留空，则默认模板将被使用。
+Path to the custom export template. If left empty, default template is used.
 
 .. rst-class:: classref-item-separator
 
@@ -458,7 +458,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`int<class_int>` **debug/export_console_wrapper** :ref:`🔗<class_EditorExportPlatformWindows_property_debug/export_console_wrapper>`
 
-如果为 ``true``\ ，则会在导出主可执行文件的同时导出一个控制台封装可执行文件，能够在运行项目时启用控制台输出。
+If ``true``, a console wrapper executable is exported alongside the main executable, which allows running the project with enabled console output.
 
 .. rst-class:: classref-item-separator
 
@@ -470,9 +470,9 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`bool<class_bool>` **shader_baker/enabled** :ref:`🔗<class_EditorExportPlatformWindows_property_shader_baker/enabled>`
 
-如果为 ``true``\ ，则着色器将被编译并嵌入到应用程序中。此选项仅当使用 Forward+ 或 Mobile 渲染器时才受支持。
+If ``true``, shaders will be compiled and embedded in the application. This option is only supported when using the Forward+ and Mobile renderers.
 
-\ **注意：**\ 导出为专用服务器时，由于不执行渲染，着色器烘焙器将始终被禁用。
+\ **Note:** When exporting as a dedicated server, the shader baker is always disabled since no rendering is performed.
 
 .. rst-class:: classref-item-separator
 
@@ -484,17 +484,17 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **ssh_remote_deploy/cleanup_script** :ref:`🔗<class_EditorExportPlatformWindows_property_ssh_remote_deploy/cleanup_script>`
 
-应用结束时，要在远程主机上执行的脚本代码。
+Script code to execute on the remote host when app is finished.
 
-可以在脚本中使用以下变量：
+The following variables can be used in the script:
 
-- ``{temp_dir}`` - 远程的临时文件夹路径，用于上传应用和脚本。
+- ``{temp_dir}`` - Path of temporary folder on the remote, used to upload app and scripts to.
 
-- ``{archive_name}`` - 包含上传的应用程序的 ZIP 文件的名称。
+- ``{archive_name}`` - Name of the ZIP containing uploaded application.
 
-- ``{exe_name}`` - 应用程序可执行文件的名称。
+- ``{exe_name}`` - Name of application executable.
 
-- ``{cmd_args}`` - 应用程序命令行参数的数组。
+- ``{cmd_args}`` - Array of the command line argument for the application.
 
 .. rst-class:: classref-item-separator
 
@@ -506,7 +506,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`bool<class_bool>` **ssh_remote_deploy/enabled** :ref:`🔗<class_EditorExportPlatformWindows_property_ssh_remote_deploy/enabled>`
 
-启用通过 SSH/SCP 进行远程部署。
+Enables remote deploy using SSH/SCP.
 
 .. rst-class:: classref-item-separator
 
@@ -518,7 +518,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **ssh_remote_deploy/extra_args_scp** :ref:`🔗<class_EditorExportPlatformWindows_property_ssh_remote_deploy/extra_args_scp>`
 
-要传给 SCP 的额外命令行参数的数组。
+Array of the additional command line arguments passed to the SCP.
 
 .. rst-class:: classref-item-separator
 
@@ -530,7 +530,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **ssh_remote_deploy/extra_args_ssh** :ref:`🔗<class_EditorExportPlatformWindows_property_ssh_remote_deploy/extra_args_ssh>`
 
-要传给 SSH 的额外命令行参数的数组。
+Array of the additional command line arguments passed to the SSH.
 
 .. rst-class:: classref-item-separator
 
@@ -542,7 +542,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **ssh_remote_deploy/host** :ref:`🔗<class_EditorExportPlatformWindows_property_ssh_remote_deploy/host>`
 
-远程主机 SSH 用户名及地址，格式为 ``用户名@地址``\ 。
+Remote host SSH user name and address, in ``user@address`` format.
 
 .. rst-class:: classref-item-separator
 
@@ -554,7 +554,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **ssh_remote_deploy/port** :ref:`🔗<class_EditorExportPlatformWindows_property_ssh_remote_deploy/port>`
 
-远程主机 SSH 端口号。
+Remote host SSH port number.
 
 .. rst-class:: classref-item-separator
 
@@ -566,17 +566,17 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`String<class_String>` **ssh_remote_deploy/run_script** :ref:`🔗<class_EditorExportPlatformWindows_property_ssh_remote_deploy/run_script>`
 
-运行应用时，要在远程主机上执行的脚本代码。
+Script code to execute on the remote host when running the app.
 
-可以在脚本中使用以下变量：
+The following variables can be used in the script:
 
-- ``{temp_dir}`` - 远程的临时文件夹路径，用于上传应用和脚本。
+- ``{temp_dir}`` - Path of temporary folder on the remote, used to upload app and scripts to.
 
-- ``{archive_name}`` - 包含上传的应用程序的 ZIP 文件的名称。
+- ``{archive_name}`` - Name of the ZIP containing uploaded application.
 
-- ``{exe_name}`` - 应用程序可执行文件的名称。
+- ``{exe_name}`` - Name of application executable.
 
-- ``{cmd_args}`` - 应用程序命令行参数的数组。
+- ``{cmd_args}`` - Array of the command line argument for the application.
 
 .. rst-class:: classref-item-separator
 
@@ -588,7 +588,7 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`bool<class_bool>` **texture_format/etc2_astc** :ref:`🔗<class_EditorExportPlatformWindows_property_texture_format/etc2_astc>`
 
-如果为 ``true``\ ，则项目中的纹理在导出时使用 ETC2/ASTC 格式。
+If ``true``, project textures are exported in the ETC2/ASTC format.
 
 .. rst-class:: classref-item-separator
 
@@ -600,14 +600,14 @@ Windows 导出器可以自定义 Windows 构建的处理方法。在编辑器的
 
 :ref:`bool<class_bool>` **texture_format/s3tc_bptc** :ref:`🔗<class_EditorExportPlatformWindows_property_texture_format/s3tc_bptc>`
 
-如果为 ``true``\ ，则项目中的纹理在导出时使用 S3TC/BPTC 格式。
+If ``true``, project textures are exported in the S3TC/BPTC format.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

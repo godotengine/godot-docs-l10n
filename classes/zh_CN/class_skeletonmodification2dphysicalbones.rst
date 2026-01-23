@@ -5,23 +5,23 @@
 SkeletonModification2DPhysicalBones
 ===================================
 
-**实验性：** Physical bones may be changed in the future to perform the position update of :ref:`Bone2D<class_Bone2D>` on their own, without needing this resource.
+**Experimental:** Physical bones may be changed in the future to perform the position update of :ref:`Bone2D<class_Bone2D>` on their own, without needing this resource.
 
-**继承：** :ref:`SkeletonModification2D<class_SkeletonModification2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`SkeletonModification2D<class_SkeletonModification2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-将 :ref:`PhysicalBone2D<class_PhysicalBone2D>` 节点的变换应用到 :ref:`Bone2D<class_Bone2D>` 节点的修改器。
+A modification that applies the transforms of :ref:`PhysicalBone2D<class_PhysicalBone2D>` nodes to :ref:`Bone2D<class_Bone2D>` nodes.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-该修改采用 :ref:`PhysicalBone2D<class_PhysicalBone2D>` 节点的变换并将它们应用于 :ref:`Bone2D<class_Bone2D>` 节点。由于链接的 :ref:`PhysicalBone2D<class_PhysicalBone2D>` 节点，这允许 :ref:`Bone2D<class_Bone2D>` 节点对物理做出反应。
+This modification takes the transforms of :ref:`PhysicalBone2D<class_PhysicalBone2D>` nodes and applies them to :ref:`Bone2D<class_Bone2D>` nodes. This allows the :ref:`Bone2D<class_Bone2D>` nodes to react to physics thanks to the linked :ref:`PhysicalBone2D<class_PhysicalBone2D>` nodes.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -32,8 +32,8 @@ SkeletonModification2DPhysicalBones
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ SkeletonModification2DPhysicalBones
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_SkeletonModification2DPhysicalBones_property_physical_bone_chain_length:
 
@@ -70,7 +70,7 @@ SkeletonModification2DPhysicalBones
 - |void| **set_physical_bone_chain_length**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_physical_bone_chain_length**\ (\ )
 
-在这个修改器中链接的 :ref:`PhysicalBone2D<class_PhysicalBone2D>` 节点的数量。
+The number of :ref:`PhysicalBone2D<class_PhysicalBone2D>` nodes linked in this modification.
 
 .. rst-class:: classref-section-separator
 
@@ -78,8 +78,8 @@ SkeletonModification2DPhysicalBones
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_SkeletonModification2DPhysicalBones_method_fetch_physical_bones:
 
@@ -87,7 +87,7 @@ SkeletonModification2DPhysicalBones
 
 |void| **fetch_physical_bones**\ (\ ) :ref:`🔗<class_SkeletonModification2DPhysicalBones_method_fetch_physical_bones>`
 
-清空 :ref:`PhysicalBone2D<class_PhysicalBone2D>` 节点列表，并使用该 :ref:`Skeleton2D<class_Skeleton2D>` 节点的所有 :ref:`PhysicalBone2D<class_PhysicalBone2D>` 子节点填充该列表。
+Empties the list of :ref:`PhysicalBone2D<class_PhysicalBone2D>` nodes and populates it with all :ref:`PhysicalBone2D<class_PhysicalBone2D>` nodes that are children of the :ref:`Skeleton2D<class_Skeleton2D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -99,7 +99,7 @@ SkeletonModification2DPhysicalBones
 
 :ref:`NodePath<class_NodePath>` **get_physical_bone_node**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DPhysicalBones_method_get_physical_bone_node>`
 
-返回位于 ``joint_idx`` 的 :ref:`PhysicalBone2D<class_PhysicalBone2D>` 节点。
+Returns the :ref:`PhysicalBone2D<class_PhysicalBone2D>` node at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -111,9 +111,9 @@ SkeletonModification2DPhysicalBones
 
 |void| **set_physical_bone_node**\ (\ joint_idx\: :ref:`int<class_int>`, physicalbone2d_node\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SkeletonModification2DPhysicalBones_method_set_physical_bone_node>`
 
-设置位于 ``joint_idx`` 的 :ref:`PhysicalBone2D<class_PhysicalBone2D>` 节点。
+Sets the :ref:`PhysicalBone2D<class_PhysicalBone2D>` node at ``joint_idx``.
 
-\ **注意：**\ 这个索引只适用于这个修改器，不是 :ref:`Skeleton2D<class_Skeleton2D>` 使用的骨骼索引。
+\ **Note:** This is just the index used for this modification, not the bone index used in the :ref:`Skeleton2D<class_Skeleton2D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -125,9 +125,9 @@ SkeletonModification2DPhysicalBones
 
 |void| **start_simulation**\ (\ bones\: :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\] = []\ ) :ref:`🔗<class_SkeletonModification2DPhysicalBones_method_start_simulation>`
 
-让 :ref:`PhysicalBone2D<class_PhysicalBone2D>` 节点开始模拟，开始与物理世界进行交互。
+Tell the :ref:`PhysicalBone2D<class_PhysicalBone2D>` nodes to start simulating and interacting with the physics world.
 
-还可以把骨骼名称数组传给这个函数，会导致只有这些名称的 :ref:`PhysicalBone2D<class_PhysicalBone2D>` 节点开始模拟。
+Optionally, an array of bone names can be passed to this function, and that will cause only :ref:`PhysicalBone2D<class_PhysicalBone2D>` nodes with those names to start simulating.
 
 .. rst-class:: classref-item-separator
 
@@ -139,16 +139,16 @@ SkeletonModification2DPhysicalBones
 
 |void| **stop_simulation**\ (\ bones\: :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\] = []\ ) :ref:`🔗<class_SkeletonModification2DPhysicalBones_method_stop_simulation>`
 
-让 :ref:`PhysicalBone2D<class_PhysicalBone2D>` 节点停止模拟，不再与物理世界进行交互。
+Tell the :ref:`PhysicalBone2D<class_PhysicalBone2D>` nodes to stop simulating and interacting with the physics world.
 
-还可以把骨骼名称数组传给这个函数，会导致只有这些名称的 :ref:`PhysicalBone2D<class_PhysicalBone2D>` 节点停止模拟。
+Optionally, an array of bone names can be passed to this function, and that will cause only :ref:`PhysicalBone2D<class_PhysicalBone2D>` nodes with those names to stop simulating.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

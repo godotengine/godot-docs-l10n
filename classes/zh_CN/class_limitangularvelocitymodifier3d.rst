@@ -5,14 +5,14 @@
 LimitAngularVelocityModifier3D
 ==============================
 
-**继承：** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 Limit bone rotation angular velocity.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
 This modifier limits bone rotation angular velocity by comparing poses between previous and current frame.
 
@@ -20,8 +20,8 @@ You can add bone chains by specifying their root and end bones, then add the bon
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ You can add bone chains by specifying their root and end bones, then add the bon
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -72,8 +72,8 @@ You can add bone chains by specifying their root and end bones, then add the bon
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_LimitAngularVelocityModifier3D_property_chain_count:
 
@@ -142,8 +142,8 @@ The maximum angular velocity per second.
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_LimitAngularVelocityModifier3D_method_clear_chains:
 
@@ -163,7 +163,7 @@ Clear all chains.
 
 :ref:`int<class_int>` **get_end_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_LimitAngularVelocityModifier3D_method_get_end_bone>`
 
-返回骨骼链末尾骨骼的索引。
+Returns the end bone index of the bone chain.
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ Clear all chains.
 
 :ref:`String<class_String>` **get_end_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_LimitAngularVelocityModifier3D_method_get_end_bone_name>`
 
-返回骨骼链末尾骨骼的名称。
+Returns the end bone name of the bone chain.
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ Clear all chains.
 
 :ref:`int<class_int>` **get_root_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_LimitAngularVelocityModifier3D_method_get_root_bone>`
 
-返回骨骼链根骨骼的索引。
+Returns the root bone index of the bone chain.
 
 .. rst-class:: classref-item-separator
 
@@ -199,7 +199,7 @@ Clear all chains.
 
 :ref:`String<class_String>` **get_root_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_LimitAngularVelocityModifier3D_method_get_root_bone_name>`
 
-返回骨骼链根骨骼的名称。
+Returns the root bone name of the bone chain.
 
 .. rst-class:: classref-item-separator
 
@@ -223,7 +223,7 @@ Sets the reference pose for angle comparison to the current pose with the influe
 
 |void| **set_end_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_set_end_bone>`
 
-设置骨骼链中末端骨骼的索引。
+Sets the end bone index of the bone chain.
 
 .. rst-class:: classref-item-separator
 
@@ -249,7 +249,7 @@ Sets the end bone name of the bone chain.
 
 |void| **set_root_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_set_root_bone>`
 
-设置骨骼链中根骨骼的索引。
+Sets the root bone index of the bone chain.
 
 .. rst-class:: classref-item-separator
 
@@ -261,14 +261,14 @@ Sets the end bone name of the bone chain.
 
 |void| **set_root_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_set_root_bone_name>`
 
-设置骨骼链中根骨骼的名称。
+Sets the root bone name of the bone chain.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

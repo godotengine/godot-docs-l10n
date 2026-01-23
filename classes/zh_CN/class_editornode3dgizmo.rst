@@ -5,21 +5,21 @@
 EditorNode3DGizmo
 =================
 
-**继承：** :ref:`Node3DGizmo<class_Node3DGizmo>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node3DGizmo<class_Node3DGizmo>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用于编辑 :ref:`Node3D<class_Node3D>` 对象的小工具。
+Gizmo for editing :ref:`Node3D<class_Node3D>` objects.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-可用于为 :ref:`Node3D<class_Node3D>` 对象提供自定义可视化和编辑功能（控柄和子小工具）的小工具。可以被覆盖以创建自定义小工具，但对于简单的小工具而言，通常建议创建 :ref:`EditorNode3DGizmoPlugin<class_EditorNode3DGizmoPlugin>`\ 。
+Gizmo that is used for providing custom visualization and editing (handles and subgizmos) for :ref:`Node3D<class_Node3D>` objects. Can be overridden to create custom gizmos, but for simple gizmos creating an :ref:`EditorNode3DGizmoPlugin<class_EditorNode3DGizmoPlugin>` is usually recommended.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -82,8 +82,8 @@ EditorNode3DGizmo
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_EditorNode3DGizmo_private_method__begin_handle_action:
 
@@ -105,11 +105,11 @@ EditorNode3DGizmo
 
 |void| **_commit_handle**\ (\ id\: :ref:`int<class_int>`, secondary\: :ref:`bool<class_bool>`, restore\: :ref:`Variant<class_Variant>`, cancel\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_EditorNode3DGizmo_private_method__commit_handle>`
 
-覆盖该方法，以提交一个正在编辑的控柄（控柄必须是之前通过 :ref:`add_handles()<class_EditorNode3DGizmo_method_add_handles>` 添加的）。这通常意味着为该修改创建一个 :ref:`UndoRedo<class_UndoRedo>` 动作，将当前控柄值用作“做”，并将 ``restore`` 参数用作“撤销”。
+Override this method to commit a handle being edited (handles must have been previously added by :ref:`add_handles()<class_EditorNode3DGizmo_method_add_handles>`). This usually means creating an :ref:`UndoRedo<class_UndoRedo>` action for the change, using the current handle value as "do" and the ``restore`` argument as "undo".
 
-如果 ``cancel`` 参数为 ``true``\ ，则应直接设置 ``restore`` 值，而不需要任何 :ref:`UndoRedo<class_UndoRedo>` 动作。
+If the ``cancel`` argument is ``true``, the ``restore`` value should be directly set, without any :ref:`UndoRedo<class_UndoRedo>` action.
 
-当提交的控柄为次要控柄时，\ ``secondary`` 参数为 ``true``\ （有关更多信息，请参阅 :ref:`add_handles()<class_EditorNode3DGizmo_method_add_handles>`\ ）。
+The ``secondary`` argument is ``true`` when the committed handle is secondary (see :ref:`add_handles()<class_EditorNode3DGizmo_method_add_handles>` for more information).
 
 .. rst-class:: classref-item-separator
 
@@ -121,9 +121,9 @@ EditorNode3DGizmo
 
 |void| **_commit_subgizmos**\ (\ ids\: :ref:`PackedInt32Array<class_PackedInt32Array>`, restores\: :ref:`Array<class_Array>`\[:ref:`Transform3D<class_Transform3D>`\], cancel\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_EditorNode3DGizmo_private_method__commit_subgizmos>`
 
-覆盖该方法，以提交一组正在编辑的子小工具（参见 :ref:`_subgizmos_intersect_ray()<class_EditorNode3DGizmo_private_method__subgizmos_intersect_ray>` 和 :ref:`_subgizmos_intersect_frustum()<class_EditorNode3DGizmo_private_method__subgizmos_intersect_frustum>`\ ）。这通常意味着为该更改创建一个 :ref:`UndoRedo<class_UndoRedo>` 动作，将当前变换用作“做”，并将 ``restores`` 变换用作“撤消”。
+Override this method to commit a group of subgizmos being edited (see :ref:`_subgizmos_intersect_ray()<class_EditorNode3DGizmo_private_method__subgizmos_intersect_ray>` and :ref:`_subgizmos_intersect_frustum()<class_EditorNode3DGizmo_private_method__subgizmos_intersect_frustum>`). This usually means creating an :ref:`UndoRedo<class_UndoRedo>` action for the change, using the current transforms as "do" and the ``restores`` transforms as "undo".
 
-如果 ``cancel`` 参数为 ``true``\ ，则\ ``restores`` 变换应被直接设置 ，而无需任何 :ref:`UndoRedo<class_UndoRedo>` 动作。
+If the ``cancel`` argument is ``true``, the ``restores`` transforms should be directly set, without any :ref:`UndoRedo<class_UndoRedo>` action.
 
 .. rst-class:: classref-item-separator
 
@@ -135,9 +135,9 @@ EditorNode3DGizmo
 
 :ref:`String<class_String>` **_get_handle_name**\ (\ id\: :ref:`int<class_int>`, secondary\: :ref:`bool<class_bool>`\ ) |virtual| |const| :ref:`🔗<class_EditorNode3DGizmo_private_method__get_handle_name>`
 
-覆盖该方法，以返回编辑的控柄的名称（控柄必须先前通过 :ref:`add_handles()<class_EditorNode3DGizmo_method_add_handles>` 添加的）。可以命名控柄以供用户在编辑时引用。
+Override this method to return the name of an edited handle (handles must have been previously added by :ref:`add_handles()<class_EditorNode3DGizmo_method_add_handles>`). Handles can be named for reference to the user when editing.
 
-当请求的控柄是次要控柄时，\ ``secondary`` 参数为 ``true``\ （有关更多信息，请参阅 :ref:`add_handles()<class_EditorNode3DGizmo_method_add_handles>`\ ）。
+The ``secondary`` argument is ``true`` when the requested handle is secondary (see :ref:`add_handles()<class_EditorNode3DGizmo_method_add_handles>` for more information).
 
 .. rst-class:: classref-item-separator
 
@@ -149,9 +149,9 @@ EditorNode3DGizmo
 
 :ref:`Variant<class_Variant>` **_get_handle_value**\ (\ id\: :ref:`int<class_int>`, secondary\: :ref:`bool<class_bool>`\ ) |virtual| |const| :ref:`🔗<class_EditorNode3DGizmo_private_method__get_handle_value>`
 
-覆盖该方法，以返回一个控柄的当前值。该值将在编辑开始时被请求，并用作 :ref:`_commit_handle()<class_EditorNode3DGizmo_private_method__commit_handle>` 中的 ``restore`` 参数。
+Override this method to return the current value of a handle. This value will be requested at the start of an edit and used as the ``restore`` argument in :ref:`_commit_handle()<class_EditorNode3DGizmo_private_method__commit_handle>`.
 
-当请求的控柄是次要控柄时，\ ``secondary`` 参数为 ``true``\ （有关更多信息，请参阅 :ref:`add_handles()<class_EditorNode3DGizmo_method_add_handles>`\ ）。
+The ``secondary`` argument is ``true`` when the requested handle is secondary (see :ref:`add_handles()<class_EditorNode3DGizmo_method_add_handles>` for more information).
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ EditorNode3DGizmo
 
 :ref:`Transform3D<class_Transform3D>` **_get_subgizmo_transform**\ (\ id\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_EditorNode3DGizmo_private_method__get_subgizmo_transform>`
 
-覆盖该方法，以返回子小工具的当前变换。该变换将在编辑开始时被请求，并用作 :ref:`_commit_subgizmos()<class_EditorNode3DGizmo_private_method__commit_subgizmos>` 中的 ``restore`` 参数。
+Override this method to return the current transform of a subgizmo. This transform will be requested at the start of an edit and used as the ``restore`` argument in :ref:`_commit_subgizmos()<class_EditorNode3DGizmo_private_method__commit_subgizmos>`.
 
 .. rst-class:: classref-item-separator
 
@@ -175,9 +175,9 @@ EditorNode3DGizmo
 
 :ref:`bool<class_bool>` **_is_handle_highlighted**\ (\ id\: :ref:`int<class_int>`, secondary\: :ref:`bool<class_bool>`\ ) |virtual| |const| :ref:`🔗<class_EditorNode3DGizmo_private_method__is_handle_highlighted>`
 
-覆盖该方法，只要给定的控柄应该在编辑器中被高亮显示时就返回 ``true``\ 。
+Override this method to return ``true`` whenever the given handle should be highlighted in the editor.
 
-当请求的控柄是次要控柄时，\ ``secondary`` 参数为 ``true``\ （有关更多信息，请参阅 :ref:`add_handles()<class_EditorNode3DGizmo_method_add_handles>`\ ）。
+The ``secondary`` argument is ``true`` when the requested handle is secondary (see :ref:`add_handles()<class_EditorNode3DGizmo_method_add_handles>` for more information).
 
 .. rst-class:: classref-item-separator
 
@@ -189,7 +189,7 @@ EditorNode3DGizmo
 
 |void| **_redraw**\ (\ ) |virtual| :ref:`🔗<class_EditorNode3DGizmo_private_method__redraw>`
 
-覆盖该方法，每当请求小工具更新时将添加所有小工具元素。通常在该方法的开头调用 :ref:`clear()<class_EditorNode3DGizmo_method_clear>`\ ，然后根据节点的属性添加可视元素。
+Override this method to add all the gizmo elements whenever a gizmo update is requested. It's common to call :ref:`clear()<class_EditorNode3DGizmo_method_clear>` at the beginning of this method and then add visual elements depending on the node's properties.
 
 .. rst-class:: classref-item-separator
 
@@ -201,9 +201,9 @@ EditorNode3DGizmo
 
 |void| **_set_handle**\ (\ id\: :ref:`int<class_int>`, secondary\: :ref:`bool<class_bool>`, camera\: :ref:`Camera3D<class_Camera3D>`, point\: :ref:`Vector2<class_Vector2>`\ ) |virtual| :ref:`🔗<class_EditorNode3DGizmo_private_method__set_handle>`
 
-覆盖该方法，当用户拖动小工具控柄（之前使用 :ref:`add_handles()<class_EditorNode3DGizmo_method_add_handles>` 添加的）时更新节点属性。提供的 ``point`` 是屏幕坐标中的鼠标位置， ``camera`` 可用于将其转换为射线投射。
+Override this method to update the node properties when the user drags a gizmo handle (previously added with :ref:`add_handles()<class_EditorNode3DGizmo_method_add_handles>`). The provided ``point`` is the mouse position in screen coordinates and the ``camera`` can be used to convert it to raycasts.
 
-当编辑的控柄是次要控柄时，\ ``secondary`` 参数为 ``true``\ （有关更多信息，请参阅 :ref:`add_handles()<class_EditorNode3DGizmo_method_add_handles>`\ ）。
+The ``secondary`` argument is ``true`` when the edited handle is secondary (see :ref:`add_handles()<class_EditorNode3DGizmo_method_add_handles>` for more information).
 
 .. rst-class:: classref-item-separator
 
@@ -215,7 +215,7 @@ EditorNode3DGizmo
 
 |void| **_set_subgizmo_transform**\ (\ id\: :ref:`int<class_int>`, transform\: :ref:`Transform3D<class_Transform3D>`\ ) |virtual| :ref:`🔗<class_EditorNode3DGizmo_private_method__set_subgizmo_transform>`
 
-覆盖该方法，以在子小工具编辑期间更新节点属性（参见 :ref:`_subgizmos_intersect_ray()<class_EditorNode3DGizmo_private_method__subgizmos_intersect_ray>` 和 :ref:`_subgizmos_intersect_frustum()<class_EditorNode3DGizmo_private_method__subgizmos_intersect_frustum>`\ ）。\ ``transform`` 是在 :ref:`Node3D<class_Node3D>` 的局部坐标系中给出的。
+Override this method to update the node properties during subgizmo editing (see :ref:`_subgizmos_intersect_ray()<class_EditorNode3DGizmo_private_method__subgizmos_intersect_ray>` and :ref:`_subgizmos_intersect_frustum()<class_EditorNode3DGizmo_private_method__subgizmos_intersect_frustum>`). The ``transform`` is given in the :ref:`Node3D<class_Node3D>`'s local coordinate system.
 
 .. rst-class:: classref-item-separator
 
@@ -227,7 +227,7 @@ EditorNode3DGizmo
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **_subgizmos_intersect_frustum**\ (\ camera\: :ref:`Camera3D<class_Camera3D>`, frustum\: :ref:`Array<class_Array>`\[:ref:`Plane<class_Plane>`\]\ ) |virtual| |const| :ref:`🔗<class_EditorNode3DGizmo_private_method__subgizmos_intersect_frustum>`
 
-覆盖该方法，以允许使用鼠标拖动框选来选择子小工具。给定一个 ``camera`` 和一个 ``frustum``\ ，这个方法应该返回哪些子小工具包含在锥体中。\ ``frustum`` 参数由一个数组组成，其中包含构成选择锥体的所有 :ref:`Plane<class_Plane>`\ 。返回的值应该包含一个唯一的子小工具标识符列表，它可以有任何非负值，并将用于其他虚方法，如 :ref:`_get_subgizmo_transform()<class_EditorNode3DGizmo_private_method__get_subgizmo_transform>` 或 :ref:`_commit_subgizmos()<class_EditorNode3DGizmo_private_method__commit_subgizmos>`\ 。
+Override this method to allow selecting subgizmos using mouse drag box selection. Given a ``camera`` and a ``frustum``, this method should return which subgizmos are contained within the frustum. The ``frustum`` argument consists of an array with all the :ref:`Plane<class_Plane>`\ s that make up the selection frustum. The returned value should contain a list of unique subgizmo identifiers, which can have any non-negative value and will be used in other virtual methods like :ref:`_get_subgizmo_transform()<class_EditorNode3DGizmo_private_method__get_subgizmo_transform>` or :ref:`_commit_subgizmos()<class_EditorNode3DGizmo_private_method__commit_subgizmos>`.
 
 .. rst-class:: classref-item-separator
 
@@ -239,7 +239,7 @@ EditorNode3DGizmo
 
 :ref:`int<class_int>` **_subgizmos_intersect_ray**\ (\ camera\: :ref:`Camera3D<class_Camera3D>`, point\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |const| :ref:`🔗<class_EditorNode3DGizmo_private_method__subgizmos_intersect_ray>`
 
-覆盖该方法，以允许使用鼠标点击选择子小工具。给定屏幕坐标中的 ``camera`` 和 ``point`` 时，该方法应返回应选择哪个子小工具。返回值应该是一个唯一的子小工具标识符，它可以有任何非负值，并将用于其他虚方法，如 :ref:`_get_subgizmo_transform()<class_EditorNode3DGizmo_private_method__get_subgizmo_transform>` 或 :ref:`_commit_subgizmos()<class_EditorNode3DGizmo_private_method__commit_subgizmos>`\ 。
+Override this method to allow selecting subgizmos using mouse clicks. Given a ``camera`` and a ``point`` in screen coordinates, this method should return which subgizmo should be selected. The returned value should be a unique subgizmo identifier, which can have any non-negative value and will be used in other virtual methods like :ref:`_get_subgizmo_transform()<class_EditorNode3DGizmo_private_method__get_subgizmo_transform>` or :ref:`_commit_subgizmos()<class_EditorNode3DGizmo_private_method__commit_subgizmos>`.
 
 .. rst-class:: classref-item-separator
 
@@ -251,7 +251,7 @@ EditorNode3DGizmo
 
 |void| **add_collision_segments**\ (\ segments\: :ref:`PackedVector3Array<class_PackedVector3Array>`\ ) :ref:`🔗<class_EditorNode3DGizmo_method_add_collision_segments>`
 
-将指定的 ``segments`` 添加到小工具的碰撞形状以进行拾取。在 :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>` 期间调用该方法。
+Adds the specified ``segments`` to the gizmo's collision shape for picking. Call this method during :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>`.
 
 .. rst-class:: classref-item-separator
 
@@ -263,7 +263,7 @@ EditorNode3DGizmo
 
 |void| **add_collision_triangles**\ (\ triangles\: :ref:`TriangleMesh<class_TriangleMesh>`\ ) :ref:`🔗<class_EditorNode3DGizmo_method_add_collision_triangles>`
 
-将碰撞三角形添加到小工具以进行拾取。\ :ref:`TriangleMesh<class_TriangleMesh>` 也可以从常规 :ref:`Mesh<class_Mesh>` 生成。在 :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>` 期间调用该方法。
+Adds collision triangles to the gizmo for picking. A :ref:`TriangleMesh<class_TriangleMesh>` can be generated from a regular :ref:`Mesh<class_Mesh>` too. Call this method during :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>`.
 
 .. rst-class:: classref-item-separator
 
@@ -275,11 +275,11 @@ EditorNode3DGizmo
 
 |void| **add_handles**\ (\ handles\: :ref:`PackedVector3Array<class_PackedVector3Array>`, material\: :ref:`Material<class_Material>`, ids\: :ref:`PackedInt32Array<class_PackedInt32Array>`, billboard\: :ref:`bool<class_bool>` = false, secondary\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_EditorNode3DGizmo_method_add_handles>`
 
-添加可用于编辑该小工具的 :ref:`Node3D<class_Node3D>` 属性的一组控柄（点）。\ ``ids`` 参数可用于为每个控柄指定一个自定义的标识符，如果传递了一个空的数组，id 将按照 ``handles`` 参数顺序自动分配。
+Adds a list of handles (points) which can be used to edit the properties of the gizmo's :ref:`Node3D<class_Node3D>`. The ``ids`` argument can be used to specify a custom identifier for each handle, if an empty array is passed, the ids will be assigned automatically from the ``handles`` argument order.
 
-\ ``secondary`` 参数将添加的控柄标记为次要控柄，这意味着它们通常比普通控柄具有更低的选择优先级。当用户按住 Shift 键时，次要控柄将被切换为比普通控柄具有更高的优先级。这种优先级的变化可用于在同一点放置多个控柄，同时仍让用户控制他们的选择。
+The ``secondary`` argument marks the added handles as secondary, meaning they will normally have lower selection priority than regular handles. When the user is holding the shift key secondary handles will switch to have higher priority than regular handles. This change in priority can be used to place multiple handles at the same point while still giving the user control on their selection.
 
-这些虚方法将在编辑这些控柄时被调用。在 :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>` 期间将调用该方法。
+There are virtual methods which will be called upon editing of these handles. Call this method during :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>`.
 
 .. rst-class:: classref-item-separator
 
@@ -291,7 +291,7 @@ EditorNode3DGizmo
 
 |void| **add_lines**\ (\ lines\: :ref:`PackedVector3Array<class_PackedVector3Array>`, material\: :ref:`Material<class_Material>`, billboard\: :ref:`bool<class_bool>` = false, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) :ref:`🔗<class_EditorNode3DGizmo_method_add_lines>`
 
-为小工具添加使用给定材质的线段（一对对点的集合）。线段将用于展示和选择。请在 :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>` 期间调用此方法。
+Adds lines to the gizmo (as sets of 2 points), with a given material. The lines are used for visualizing the gizmo. Call this method during :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>`.
 
 .. rst-class:: classref-item-separator
 
@@ -303,7 +303,7 @@ EditorNode3DGizmo
 
 |void| **add_mesh**\ (\ mesh\: :ref:`Mesh<class_Mesh>`, material\: :ref:`Material<class_Material>` = null, transform\: :ref:`Transform3D<class_Transform3D>` = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0), skeleton\: :ref:`SkinReference<class_SkinReference>` = null\ ) :ref:`🔗<class_EditorNode3DGizmo_method_add_mesh>`
 
-为小工具添加网格，可以指定材质 ``material``\ 、本地变换 ``transform`` 和骨架 ``skeleton``\ 。请在 :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>` 期间调用此方法。
+Adds a mesh to the gizmo with the specified ``material``, local ``transform`` and ``skeleton``. Call this method during :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>`.
 
 .. rst-class:: classref-item-separator
 
@@ -315,7 +315,7 @@ EditorNode3DGizmo
 
 |void| **add_unscaled_billboard**\ (\ material\: :ref:`Material<class_Material>`, default_scale\: :ref:`float<class_float>` = 1, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) :ref:`🔗<class_EditorNode3DGizmo_method_add_unscaled_billboard>`
 
-添加未缩放的公告板，将用于展示和选择。请在 :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>` 期间调用此方法。
+Adds an unscaled billboard for visualization and selection. Call this method during :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>`.
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +327,7 @@ EditorNode3DGizmo
 
 |void| **clear**\ (\ ) :ref:`🔗<class_EditorNode3DGizmo_method_clear>`
 
-移除小工具中的一切，包括网格、碰撞和控柄。
+Removes everything in the gizmo including meshes, collisions and handles.
 
 .. rst-class:: classref-item-separator
 
@@ -339,7 +339,7 @@ EditorNode3DGizmo
 
 :ref:`Node3D<class_Node3D>` **get_node_3d**\ (\ ) |const| :ref:`🔗<class_EditorNode3DGizmo_method_get_node_3d>`
 
-返回与这个小工具关联的 :ref:`Node3D<class_Node3D>` 节点。
+Returns the :ref:`Node3D<class_Node3D>` node associated with this gizmo.
 
 .. rst-class:: classref-item-separator
 
@@ -351,7 +351,7 @@ EditorNode3DGizmo
 
 :ref:`EditorNode3DGizmoPlugin<class_EditorNode3DGizmoPlugin>` **get_plugin**\ (\ ) |const| :ref:`🔗<class_EditorNode3DGizmo_method_get_plugin>`
 
-返回拥有该小工具的 :ref:`EditorNode3DGizmoPlugin<class_EditorNode3DGizmoPlugin>`\ 。可以在使用 :ref:`EditorNode3DGizmoPlugin.get_material()<class_EditorNode3DGizmoPlugin_method_get_material>` 获取材质时使用。
+Returns the :ref:`EditorNode3DGizmoPlugin<class_EditorNode3DGizmoPlugin>` that owns this gizmo. It's useful to retrieve materials using :ref:`EditorNode3DGizmoPlugin.get_material()<class_EditorNode3DGizmoPlugin_method_get_material>`.
 
 .. rst-class:: classref-item-separator
 
@@ -363,7 +363,7 @@ EditorNode3DGizmo
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_subgizmo_selection**\ (\ ) |const| :ref:`🔗<class_EditorNode3DGizmo_method_get_subgizmo_selection>`
 
-返回当前选定的子小工具的列表。可用于在 :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>` 期间高亮显示所选元素。
+Returns a list of the currently selected subgizmos. Can be used to highlight selected elements during :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>`.
 
 .. rst-class:: classref-item-separator
 
@@ -375,7 +375,7 @@ EditorNode3DGizmo
 
 :ref:`bool<class_bool>` **is_subgizmo_selected**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorNode3DGizmo_method_is_subgizmo_selected>`
 
-如果给定的子小工具是当前所选定的，则返回 ``true``\ 。可用于在 :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>` 期间高亮显示所选元素。
+Returns ``true`` if the given subgizmo is currently selected. Can be used to highlight selected elements during :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>`.
 
 .. rst-class:: classref-item-separator
 
@@ -387,7 +387,7 @@ EditorNode3DGizmo
 
 |void| **set_hidden**\ (\ hidden\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorNode3DGizmo_method_set_hidden>`
 
-设置该小工具的隐藏状态。如果为 ``true``\ ，则该小工具将被隐藏。如果为 ``false`` 则会显示。
+Sets the gizmo's hidden state. If ``true``, the gizmo will be hidden. If ``false``, it will be shown.
 
 .. rst-class:: classref-item-separator
 
@@ -399,14 +399,14 @@ EditorNode3DGizmo
 
 |void| **set_node_3d**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_EditorNode3DGizmo_method_set_node_3d>`
 
-设置该小工具参考的 :ref:`Node3D<class_Node3D>` 节点。\ ``node`` 必须继承自 :ref:`Node3D<class_Node3D>`\ 。
+Sets the reference :ref:`Node3D<class_Node3D>` node for the gizmo. ``node`` must inherit from :ref:`Node3D<class_Node3D>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

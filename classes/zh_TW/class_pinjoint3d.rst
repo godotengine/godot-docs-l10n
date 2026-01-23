@@ -5,21 +5,21 @@
 PinJoint3D
 ==========
 
-**繼承：** :ref:`Joint3D<class_Joint3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Joint3D<class_Joint3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-將兩個 3D 物理體通過單點進行連接的物理關節，能夠讓它們自由旋轉。
+A physics joint that attaches two 3D physics bodies at a single point, allowing them to freely rotate.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-將兩個 2D 物理體通過單點進行連接的物理關節，能夠讓它們自由旋轉。例如可以將 :ref:`RigidBody3D<class_RigidBody3D>` 連接到 :ref:`StaticBody3D<class_StaticBody3D>` 上，從而建立鐘擺或蹺蹺板。
+A physics joint that attaches two 3D physics bodies at a single point, allowing them to freely rotate. For example, a :ref:`RigidBody3D<class_RigidBody3D>` can be attached to a :ref:`StaticBody3D<class_StaticBody3D>` to create a pendulum or a seesaw.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ PinJoint3D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -52,8 +52,8 @@ PinJoint3D
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_PinJoint3D_Param:
 
@@ -67,7 +67,7 @@ enum **Param**: :ref:`🔗<enum_PinJoint3D_Param>`
 
 :ref:`Param<enum_PinJoint3D_Param>` **PARAM_BIAS** = ``0``
 
-被釘在一起的物體之間保持位置關係的力，越高越強。
+The force with which the pinned objects stay in positional relation to each other. The higher, the stronger.
 
 .. _class_PinJoint3D_constant_PARAM_DAMPING:
 
@@ -75,7 +75,7 @@ enum **Param**: :ref:`🔗<enum_PinJoint3D_Param>`
 
 :ref:`Param<enum_PinJoint3D_Param>` **PARAM_DAMPING** = ``1``
 
-被釘在一起的物體之間保持共速的力。越高，力越大。
+The force with which the pinned objects stay in velocity relation to each other. The higher, the stronger.
 
 .. _class_PinJoint3D_constant_PARAM_IMPULSE_CLAMP:
 
@@ -83,7 +83,7 @@ enum **Param**: :ref:`🔗<enum_PinJoint3D_Param>`
 
 :ref:`Param<enum_PinJoint3D_Param>` **PARAM_IMPULSE_CLAMP** = ``2``
 
-如果大於 0，則這個值是此 Joint3D 產生的脈衝的最大值。
+If above 0, this value is the maximum value for an impulse that this Joint3D produces.
 
 .. rst-class:: classref-section-separator
 
@@ -91,8 +91,8 @@ enum **Param**: :ref:`🔗<enum_PinJoint3D_Param>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_PinJoint3D_property_params/bias:
 
@@ -105,7 +105,7 @@ enum **Param**: :ref:`🔗<enum_PinJoint3D_Param>`
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_PinJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_PinJoint3D_Param>`\ ) |const|
 
-被釘在一起的物體之間保持位置關係的力，越高越強。
+The force with which the pinned objects stay in positional relation to each other. The higher, the stronger.
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +122,7 @@ enum **Param**: :ref:`🔗<enum_PinJoint3D_Param>`
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_PinJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_PinJoint3D_Param>`\ ) |const|
 
-被釘在一起的物體之間保持共速的力。越高，力越大。
+The force with which the pinned objects stay in velocity relation to each other. The higher, the stronger.
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ enum **Param**: :ref:`🔗<enum_PinJoint3D_Param>`
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_PinJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_PinJoint3D_Param>`\ ) |const|
 
-如果大於 0，則這個值是此 Joint3D 產生的脈衝的最大值。
+If above 0, this value is the maximum value for an impulse that this Joint3D produces.
 
 .. rst-class:: classref-section-separator
 
@@ -147,8 +147,8 @@ enum **Param**: :ref:`🔗<enum_PinJoint3D_Param>`
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_PinJoint3D_method_get_param:
 
@@ -156,7 +156,7 @@ enum **Param**: :ref:`🔗<enum_PinJoint3D_Param>`
 
 :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_PinJoint3D_Param>`\ ) |const| :ref:`🔗<class_PinJoint3D_method_get_param>`
 
-返回指定參數的值。
+Returns the value of the specified parameter.
 
 .. rst-class:: classref-item-separator
 
@@ -168,14 +168,14 @@ enum **Param**: :ref:`🔗<enum_PinJoint3D_Param>`
 
 |void| **set_param**\ (\ param\: :ref:`Param<enum_PinJoint3D_Param>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PinJoint3D_method_set_param>`
 
-設定指定參數的值。
+Sets the value of the specified parameter.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

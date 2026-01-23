@@ -5,25 +5,25 @@
 PacketPeerDTLS
 ==============
 
-**继承：** :ref:`PacketPeer<class_PacketPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`PacketPeer<class_PacketPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-DTLS 数据包客户端。
+DTLS packet peer.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-这个类表示 DTLS 对等体连接。它可以用来连接到 DTLS 服务器，由 :ref:`DTLSServer.take_connection()<class_DTLSServer_method_take_connection>` 返回。
+This class represents a DTLS peer connection. It can be used to connect to a DTLS server, and is returned by :ref:`DTLSServer.take_connection()<class_DTLSServer_method_take_connection>`.
 
-\ **注意：**\ 导出到 Android 时，在导出项目或使用一键部署前，请确保在 Android 导出预设中启用 ``INTERNET`` 权限。否则，任何类型的网络通信都将被 Android 阻止。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
 
-\ **警告：**\ 目前不支持 TLS 证书撤销和证书绑定。只要撤销的证书在其他方面有效，就会被接受。如果这是一个问题，可以使用有效期较短的自动管理证书。
+\ **Warning:** TLS certificate revocation and certificate pinning are currently not supported. Revoked certificates are accepted as long as they are otherwise valid. If this is a concern, you may want to use automatically managed certificates with a short validity period.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ DTLS 数据包客户端。
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_PacketPeerDTLS_Status:
 
@@ -59,7 +59,7 @@ enum **Status**: :ref:`🔗<enum_PacketPeerDTLS_Status>`
 
 :ref:`Status<enum_PacketPeerDTLS_Status>` **STATUS_DISCONNECTED** = ``0``
 
-表示已断开连接的 **PacketPeerDTLS** 的状态。
+A status representing a **PacketPeerDTLS** that is disconnected.
 
 .. _class_PacketPeerDTLS_constant_STATUS_HANDSHAKING:
 
@@ -67,7 +67,7 @@ enum **Status**: :ref:`🔗<enum_PacketPeerDTLS_Status>`
 
 :ref:`Status<enum_PacketPeerDTLS_Status>` **STATUS_HANDSHAKING** = ``1``
 
-表示当前正在与远程对等方进行握手的 **PacketPeerDTLS** 的状态。
+A status representing a **PacketPeerDTLS** that is currently performing the handshake with a remote peer.
 
 .. _class_PacketPeerDTLS_constant_STATUS_CONNECTED:
 
@@ -75,7 +75,7 @@ enum **Status**: :ref:`🔗<enum_PacketPeerDTLS_Status>`
 
 :ref:`Status<enum_PacketPeerDTLS_Status>` **STATUS_CONNECTED** = ``2``
 
-表示连接到远程对等方的 **PacketPeerDTLS** 的状态。
+A status representing a **PacketPeerDTLS** that is connected to a remote peer.
 
 .. _class_PacketPeerDTLS_constant_STATUS_ERROR:
 
@@ -83,7 +83,7 @@ enum **Status**: :ref:`🔗<enum_PacketPeerDTLS_Status>`
 
 :ref:`Status<enum_PacketPeerDTLS_Status>` **STATUS_ERROR** = ``3``
 
-表示处于一般错误状态的 **PacketPeerDTLS** 的状态。
+A status representing a **PacketPeerDTLS** in a generic error state.
 
 .. _class_PacketPeerDTLS_constant_STATUS_ERROR_HOSTNAME_MISMATCH:
 
@@ -91,7 +91,7 @@ enum **Status**: :ref:`🔗<enum_PacketPeerDTLS_Status>`
 
 :ref:`Status<enum_PacketPeerDTLS_Status>` **STATUS_ERROR_HOSTNAME_MISMATCH** = ``4``
 
-显示主机提供的 DTLS 证书域与请求验证的域不匹配的错误状态。
+An error status that shows a mismatch in the DTLS certificate domain presented by the host and the domain requested for validation.
 
 .. rst-class:: classref-section-separator
 
@@ -99,8 +99,8 @@ enum **Status**: :ref:`🔗<enum_PacketPeerDTLS_Status>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_PacketPeerDTLS_method_connect_to_peer:
 
@@ -108,7 +108,7 @@ enum **Status**: :ref:`🔗<enum_PacketPeerDTLS_Status>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **connect_to_peer**\ (\ packet_peer\: :ref:`PacketPeerUDP<class_PacketPeerUDP>`, hostname\: :ref:`String<class_String>`, client_options\: :ref:`TLSOptions<class_TLSOptions>` = null\ ) :ref:`🔗<class_PacketPeerDTLS_method_connect_to_peer>`
 
-连接 ``packet_peer`` 并开始使用底层的 :ref:`PacketPeerUDP<class_PacketPeerUDP>` 进行 DTLS 握手，进行握手时 :ref:`PacketPeerUDP<class_PacketPeerUDP>` 必须已连接（见 :ref:`PacketPeerUDP.connect_to_host()<class_PacketPeerUDP_method_connect_to_host>`\ ）。你还可以指定验证 TLS 连接时使用的 ``client_options``\ 。见 :ref:`TLSOptions.client()<class_TLSOptions_method_client>` 和 :ref:`TLSOptions.client_unsafe()<class_TLSOptions_method_client_unsafe>`\ 。
+Connects a ``packet_peer`` beginning the DTLS handshake using the underlying :ref:`PacketPeerUDP<class_PacketPeerUDP>` which must be connected (see :ref:`PacketPeerUDP.connect_to_host()<class_PacketPeerUDP_method_connect_to_host>`). You can optionally specify the ``client_options`` to be used while verifying the TLS connections. See :ref:`TLSOptions.client()<class_TLSOptions_method_client>` and :ref:`TLSOptions.client_unsafe()<class_TLSOptions_method_client_unsafe>`.
 
 .. rst-class:: classref-item-separator
 
@@ -120,7 +120,7 @@ enum **Status**: :ref:`🔗<enum_PacketPeerDTLS_Status>`
 
 |void| **disconnect_from_peer**\ (\ ) :ref:`🔗<class_PacketPeerDTLS_method_disconnect_from_peer>`
 
-断开此对等体的连接，终止 DTLS 会话。
+Disconnects this peer, terminating the DTLS session.
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ enum **Status**: :ref:`🔗<enum_PacketPeerDTLS_Status>`
 
 :ref:`Status<enum_PacketPeerDTLS_Status>` **get_status**\ (\ ) |const| :ref:`🔗<class_PacketPeerDTLS_method_get_status>`
 
-返回连接的状态。
+Returns the status of the connection.
 
 .. rst-class:: classref-item-separator
 
@@ -144,14 +144,14 @@ enum **Status**: :ref:`🔗<enum_PacketPeerDTLS_Status>`
 
 |void| **poll**\ (\ ) :ref:`🔗<class_PacketPeerDTLS_method_poll>`
 
-轮询连接以检查传入的数据包。经常调用此选项以更新状态并保持连接正常工作。
+Poll the connection to check for incoming packets. Call this frequently to update the status and keep the connection working.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

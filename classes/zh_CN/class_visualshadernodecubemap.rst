@@ -5,21 +5,21 @@
 VisualShaderNodeCubemap
 =======================
 
-**继承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-在可视化着色器图中使用的一种 :ref:`Cubemap<class_Cubemap>` 采样节点。
+A :ref:`Cubemap<class_Cubemap>` sampling node to be used within the visual shader graph.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-在着色器语言中被转换成 ``texture(cubemap, vec3)``\ 。返回一个颜色向量和 Alpha 通道的标量。
+Translated to ``texture(cubemap, vec3)`` in the shader language. Returns a color vector and alpha channel as scalar.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ VisualShaderNodeCubemap
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_VisualShaderNodeCubemap_Source:
 
@@ -53,7 +53,7 @@ enum **Source**: :ref:`🔗<enum_VisualShaderNodeCubemap_Source>`
 
 :ref:`Source<enum_VisualShaderNodeCubemap_Source>` **SOURCE_TEXTURE** = ``0``
 
-使用 :ref:`cube_map<class_VisualShaderNodeCubemap_property_cube_map>` 设置的 :ref:`Cubemap<class_Cubemap>`\ 。如果设置为 :ref:`source<class_VisualShaderNodeCubemap_property_source>`\ ，则会忽略 ``samplerCube`` 端口。
+Use the :ref:`Cubemap<class_Cubemap>` set via :ref:`cube_map<class_VisualShaderNodeCubemap_property_cube_map>`. If this is set to :ref:`source<class_VisualShaderNodeCubemap_property_source>`, the ``samplerCube`` port is ignored.
 
 .. _class_VisualShaderNodeCubemap_constant_SOURCE_PORT:
 
@@ -61,7 +61,7 @@ enum **Source**: :ref:`🔗<enum_VisualShaderNodeCubemap_Source>`
 
 :ref:`Source<enum_VisualShaderNodeCubemap_Source>` **SOURCE_PORT** = ``1``
 
-使用通过 ``samplerCube`` 端口传递的 :ref:`Cubemap<class_Cubemap>` 采样器引用。如果设置为 :ref:`source<class_VisualShaderNodeCubemap_property_source>`\ ，则会忽略 :ref:`cube_map<class_VisualShaderNodeCubemap_property_cube_map>` 纹理。
+Use the :ref:`Cubemap<class_Cubemap>` sampler reference passed via the ``samplerCube`` port. If this is set to :ref:`source<class_VisualShaderNodeCubemap_property_source>`, the :ref:`cube_map<class_VisualShaderNodeCubemap_property_cube_map>` texture is ignored.
 
 .. _class_VisualShaderNodeCubemap_constant_SOURCE_MAX:
 
@@ -69,7 +69,7 @@ enum **Source**: :ref:`🔗<enum_VisualShaderNodeCubemap_Source>`
 
 :ref:`Source<enum_VisualShaderNodeCubemap_Source>` **SOURCE_MAX** = ``2``
 
-代表 :ref:`Source<enum_VisualShaderNodeCubemap_Source>` 枚举的大小。
+Represents the size of the :ref:`Source<enum_VisualShaderNodeCubemap_Source>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -87,7 +87,7 @@ enum **TextureType**: :ref:`🔗<enum_VisualShaderNodeCubemap_TextureType>`
 
 :ref:`TextureType<enum_VisualShaderNodeCubemap_TextureType>` **TYPE_DATA** = ``0``
 
-在uniform声明中未添加提示。
+No hints are added to the uniform declaration.
 
 .. _class_VisualShaderNodeCubemap_constant_TYPE_COLOR:
 
@@ -103,7 +103,7 @@ Adds ``source_color`` as hint to the uniform declaration for proper conversion f
 
 :ref:`TextureType<enum_VisualShaderNodeCubemap_TextureType>` **TYPE_NORMAL_MAP** = ``2``
 
-将 ``hint_normal`` 作为提示添加到 uniform 声明中，该声明在内部将纹理转换为法线贴图。
+Adds ``hint_normal`` as hint to the uniform declaration, which internally converts the texture for proper usage as normal map.
 
 .. _class_VisualShaderNodeCubemap_constant_TYPE_MAX:
 
@@ -111,7 +111,7 @@ Adds ``source_color`` as hint to the uniform declaration for proper conversion f
 
 :ref:`TextureType<enum_VisualShaderNodeCubemap_TextureType>` **TYPE_MAX** = ``3``
 
-代表 :ref:`TextureType<enum_VisualShaderNodeCubemap_TextureType>` 枚举的大小。
+Represents the size of the :ref:`TextureType<enum_VisualShaderNodeCubemap_TextureType>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -119,8 +119,8 @@ Adds ``source_color`` as hint to the uniform declaration for proper conversion f
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_VisualShaderNodeCubemap_property_cube_map:
 
@@ -133,7 +133,7 @@ Adds ``source_color`` as hint to the uniform declaration for proper conversion f
 - |void| **set_cube_map**\ (\ value\: :ref:`TextureLayered<class_TextureLayered>`\ )
 - :ref:`TextureLayered<class_TextureLayered>` **get_cube_map**\ (\ )
 
-当使用 :ref:`SOURCE_TEXTURE<class_VisualShaderNodeCubemap_constant_SOURCE_TEXTURE>` 作为 :ref:`source<class_VisualShaderNodeCubemap_property_source>` 时，要采样的 :ref:`Cubemap<class_Cubemap>` 纹理。
+The :ref:`Cubemap<class_Cubemap>` texture to sample when using :ref:`SOURCE_TEXTURE<class_VisualShaderNodeCubemap_constant_SOURCE_TEXTURE>` as :ref:`source<class_VisualShaderNodeCubemap_property_source>`.
 
 .. rst-class:: classref-item-separator
 
@@ -150,7 +150,7 @@ Adds ``source_color`` as hint to the uniform declaration for proper conversion f
 - |void| **set_source**\ (\ value\: :ref:`Source<enum_VisualShaderNodeCubemap_Source>`\ )
 - :ref:`Source<enum_VisualShaderNodeCubemap_Source>` **get_source**\ (\ )
 
-定义采样应该使用哪个源。
+Defines which source should be used for the sampling.
 
 .. rst-class:: classref-item-separator
 
@@ -167,14 +167,14 @@ Adds ``source_color`` as hint to the uniform declaration for proper conversion f
 - |void| **set_texture_type**\ (\ value\: :ref:`TextureType<enum_VisualShaderNodeCubemap_TextureType>`\ )
 - :ref:`TextureType<enum_VisualShaderNodeCubemap_TextureType>` **get_texture_type**\ (\ )
 
-定义源纹理提供的数据类型。
+Defines the type of data provided by the source texture.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

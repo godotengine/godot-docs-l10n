@@ -5,25 +5,25 @@
 CollisionObject3D
 =================
 
-**繼承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`Area3D<class_Area3D>`, :ref:`PhysicsBody3D<class_PhysicsBody3D>`
+**Inherited By:** :ref:`Area3D<class_Area3D>`, :ref:`PhysicsBody3D<class_PhysicsBody3D>`
 
-3D 物理物件的抽象基底類別。
+Abstract base class for 3D physics objects.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-3D 物理物件的抽象基底類別。\ **CollisionObject3D** 能夠容納任意數量的 :ref:`Shape3D<class_Shape3D>` 用作碰撞形狀。每個形狀必須分配給一個\ *形狀所有者*\ 。形狀所有者不是節點，也不會出現在編輯器中，但可以通過程式碼使用 ``shape_owner_*`` 方法存取。
+Abstract base class for 3D physics objects. **CollisionObject3D** can hold any number of :ref:`Shape3D<class_Shape3D>`\ s for collision. Each shape must be assigned to a *shape owner*. Shape owners are not nodes and do not appear in the editor, but are accessible through code using the ``shape_owner_*`` methods.
 
-\ **警告：**\ 如果使用非均勻縮放，則該節點可能無法按預期工作。建議讓所有軸上的縮放保持一致，可以用對碰撞形狀的調整來代替非均勻縮放。
+\ **Warning:** With a non-uniform scale, this node will likely not behave as expected. It is advised to keep its scale the same on all axes and adjust its collision shape(s) instead.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ CollisionObject3D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -104,8 +104,8 @@ CollisionObject3D
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_CollisionObject3D_signal_input_event:
 
@@ -125,9 +125,9 @@ Emitted when the object receives an unhandled :ref:`InputEvent<class_InputEvent>
 
 **mouse_entered**\ (\ ) :ref:`🔗<class_CollisionObject3D_signal_mouse_entered>`
 
-當滑鼠指標進入該物件的任何形狀時發出。要求 :ref:`input_ray_pickable<class_CollisionObject3D_property_input_ray_pickable>` 為 ``true`` 並且至少設定了一個 :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` 位。
+Emitted when the mouse pointer enters any of this object's shapes. Requires :ref:`input_ray_pickable<class_CollisionObject3D_property_input_ray_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` bit to be set.
 
-\ **注意：**\ 由於缺少連續的碰撞偵測，如果滑鼠移動得足夠快並且 **CollisionObject3D** 的區域很小，則該訊號可能不會按預期的順序發出。如果另一個 **CollisionObject3D** 與所討論的 **CollisionObject3D** 重疊，則也可能不會發出該信號。
+\ **Note:** Due to the lack of continuous collision detection, this signal may not be emitted in the expected order if the mouse moves fast enough and the **CollisionObject3D**'s area is small. This signal may also not be emitted if another **CollisionObject3D** is overlapping the **CollisionObject3D** in question.
 
 .. rst-class:: classref-item-separator
 
@@ -139,9 +139,9 @@ Emitted when the object receives an unhandled :ref:`InputEvent<class_InputEvent>
 
 **mouse_exited**\ (\ ) :ref:`🔗<class_CollisionObject3D_signal_mouse_exited>`
 
-當滑鼠指標離開該物件的所有形狀時發出。要求 :ref:`input_ray_pickable<class_CollisionObject3D_property_input_ray_pickable>` 為 ``true`` 並且至少設定了一個 :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` 位。
+Emitted when the mouse pointer exits all this object's shapes. Requires :ref:`input_ray_pickable<class_CollisionObject3D_property_input_ray_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` bit to be set.
 
-\ **注意：**\ 由於缺少連續的碰撞偵測，如果滑鼠移動得足夠快並且 **CollisionObject3D** 的區域很小，則該訊號可能不會按預期的順序發出。如果另一個 **CollisionObject3D** 與所討論的 **CollisionObject3D** 重疊，則也可能不會發出該信號。
+\ **Note:** Due to the lack of continuous collision detection, this signal may not be emitted in the expected order if the mouse moves fast enough and the **CollisionObject3D**'s area is small. This signal may also not be emitted if another **CollisionObject3D** is overlapping the **CollisionObject3D** in question.
 
 .. rst-class:: classref-section-separator
 
@@ -149,8 +149,8 @@ Emitted when the object receives an unhandled :ref:`InputEvent<class_InputEvent>
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_CollisionObject3D_DisableMode:
 
@@ -164,9 +164,9 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject3D_DisableMode>`
 
 :ref:`DisableMode<enum_CollisionObject3D_DisableMode>` **DISABLE_MODE_REMOVE** = ``0``
 
-當 :ref:`Node.process_mode<class_Node_property_process_mode>` 被設定為 :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>` 時，從物理模擬中移除，停止與此 **CollisionObject3D** 的所有物理互動。
+When :ref:`Node.process_mode<class_Node_property_process_mode>` is set to :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`, remove from the physics simulation to stop all physics interactions with this **CollisionObject3D**.
 
-當該 :ref:`Node<class_Node>` 再次被處理時，會自動重新加入到物理模擬中。
+Automatically re-added to the physics simulation when the :ref:`Node<class_Node>` is processed again.
 
 .. _class_CollisionObject3D_constant_DISABLE_MODE_MAKE_STATIC:
 
@@ -174,9 +174,9 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject3D_DisableMode>`
 
 :ref:`DisableMode<enum_CollisionObject3D_DisableMode>` **DISABLE_MODE_MAKE_STATIC** = ``1``
 
-當 :ref:`Node.process_mode<class_Node_property_process_mode>` 被設定為 :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>` 時，使實體靜態化。不影響 :ref:`Area3D<class_Area3D>`\ 。\ :ref:`PhysicsBody3D<class_PhysicsBody3D>` 在靜態時不會受到力或其他實體的影響。
+When :ref:`Node.process_mode<class_Node_property_process_mode>` is set to :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`, make the body static. Doesn't affect :ref:`Area3D<class_Area3D>`. :ref:`PhysicsBody3D<class_PhysicsBody3D>` can't be affected by forces or other bodies while static.
 
-當該 :ref:`Node<class_Node>` 再次被處理時，自動將 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 設定回其原始模式。
+Automatically set :ref:`PhysicsBody3D<class_PhysicsBody3D>` back to its original mode when the :ref:`Node<class_Node>` is processed again.
 
 .. _class_CollisionObject3D_constant_DISABLE_MODE_KEEP_ACTIVE:
 
@@ -184,7 +184,7 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject3D_DisableMode>`
 
 :ref:`DisableMode<enum_CollisionObject3D_DisableMode>` **DISABLE_MODE_KEEP_ACTIVE** = ``2``
 
-當 :ref:`Node.process_mode<class_Node_property_process_mode>` 被設定為 :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>` 時，不影響物理模擬。
+When :ref:`Node.process_mode<class_Node_property_process_mode>` is set to :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`, do not affect the physics simulation.
 
 .. rst-class:: classref-section-separator
 
@@ -192,8 +192,8 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject3D_DisableMode>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_CollisionObject3D_property_collision_layer:
 
@@ -206,9 +206,9 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject3D_DisableMode>`
 - |void| **set_collision_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_layer**\ (\ )
 
-該 CollisionObject3D **所在的**\ 實體層。碰撞物件可以存在於 32 個不同層中的一層或多層。另見 :ref:`collision_mask<class_CollisionObject3D_property_collision_mask>`\ 。
+The physics layers this CollisionObject3D **is in**. Collision objects can exist in one or more of 32 different layers. See also :ref:`collision_mask<class_CollisionObject3D_property_collision_mask>`.
 
-\ **注意：**\ 只有當物件 B 位於物件 A 掃描的任何層中時，物件 A 才能偵測到與對象 B 的接觸。有關更多資訊，請參閱文件中的\ `《碰撞層和遮罩》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
+\ **Note:** Object A can detect a contact with object B only if object B is in any of the layers that object A scans. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -225,9 +225,9 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject3D_DisableMode>`
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-該 CollisionObject3D **掃描的**\ 實體層。碰撞物件可以掃描 32 個不同層中的一層或多層。另見 :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>`\ 。
+The physics layers this CollisionObject3D **scans**. Collision objects can scan one or more of 32 different layers. See also :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>`.
 
-\ **注意：**\ 只有當物件 B 位於物件 A 掃描的任何層中時，物件 A 才能偵測到與對象 B 的接觸。有關更多資訊，請參閱文件中的\ `《碰撞層和遮罩》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
+\ **Note:** Object A can detect a contact with object B only if object B is in any of the layers that object A scans. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -244,7 +244,7 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject3D_DisableMode>`
 - |void| **set_collision_priority**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_collision_priority**\ (\ )
 
-發生穿透時用於解決碰撞的優先順序。優先順序越高，對物體的穿透度就越低。例如，可以用來防止玩家突破關卡的邊界。
+The priority used to solve colliding when occurring penetration. The higher the priority is, the lower the penetration into the object will be. This can for example be used to prevent the player from breaking through the boundaries of a level.
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,7 @@ Defines the behavior in physics when :ref:`Node.process_mode<class_Node_property
 - |void| **set_capture_input_on_drag**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_capture_input_on_drag**\ (\ )
 
-如果為 ``true``\ ，則當滑鼠拖過其形狀時，\ **CollisionObject3D** 將繼續接收輸入事件。
+If ``true``, the **CollisionObject3D** will continue to receive input events as the mouse is dragged across its shapes.
 
 .. rst-class:: classref-item-separator
 
@@ -295,7 +295,7 @@ Defines the behavior in physics when :ref:`Node.process_mode<class_Node_property
 - |void| **set_ray_pickable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ray_pickable**\ (\ )
 
-如果為 ``true``\ ，則該對象是可拾取的。可拾取的物件可以偵測滑鼠指標的進入/離開，滑鼠位於其中時，就會報告輸入事件。要求至少設定一個 :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` 位。
+If ``true``, this object is pickable. A pickable object can detect the mouse pointer entering/leaving, and if the mouse is inside it, report input events. Requires at least one :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` bit to be set.
 
 .. rst-class:: classref-section-separator
 
@@ -303,8 +303,8 @@ Defines the behavior in physics when :ref:`Node.process_mode<class_Node_property
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_CollisionObject3D_private_method__input_event:
 
@@ -326,7 +326,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 |void| **_mouse_enter**\ (\ ) |virtual| :ref:`🔗<class_CollisionObject3D_private_method__mouse_enter>`
 
-當滑鼠指標進入該實體的任何形狀時呼叫。要求 :ref:`input_ray_pickable<class_CollisionObject3D_property_input_ray_pickable>` 為 ``true`` 並且至少設定一個 :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` 位。請注意，在單個 **CollisionObject3D** 中的不同形狀之間移動，不會導致該函式被呼叫。
+Called when the mouse pointer enters any of this object's shapes. Requires :ref:`input_ray_pickable<class_CollisionObject3D_property_input_ray_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` bit to be set. Note that moving between different shapes within a single **CollisionObject3D** won't cause this function to be called.
 
 .. rst-class:: classref-item-separator
 
@@ -338,7 +338,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 |void| **_mouse_exit**\ (\ ) |virtual| :ref:`🔗<class_CollisionObject3D_private_method__mouse_exit>`
 
-當滑鼠指標離開該實體的所有形狀時呼叫。要求 :ref:`input_ray_pickable<class_CollisionObject3D_property_input_ray_pickable>` 為 ``true`` 並且至少設定一個 :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` 位。請注意，在單個 **CollisionObject3D** 中的不同形狀之間移動，不會導致該函式被呼叫。
+Called when the mouse pointer exits all this object's shapes. Requires :ref:`input_ray_pickable<class_CollisionObject3D_property_input_ray_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` bit to be set. Note that moving between different shapes within a single **CollisionObject3D** won't cause this function to be called.
 
 .. rst-class:: classref-item-separator
 
@@ -350,7 +350,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 :ref:`int<class_int>` **create_shape_owner**\ (\ owner\: :ref:`Object<class_Object>`\ ) :ref:`🔗<class_CollisionObject3D_method_create_shape_owner>`
 
-為給定物件建立一個新的形狀所有者。返回 ``owner_id``\ 的新所有者，供將來引用。
+Creates a new shape owner for the given object. Returns ``owner_id`` of the new owner for future reference.
 
 .. rst-class:: classref-item-separator
 
@@ -362,7 +362,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 :ref:`bool<class_bool>` **get_collision_layer_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject3D_method_get_collision_layer_value>`
 
-返回 :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` 中是否啟用了指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+Returns whether or not the specified layer of the :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` is enabled, given a ``layer_number`` between 1 and 32.
 
 .. rst-class:: classref-item-separator
 
@@ -374,7 +374,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 :ref:`bool<class_bool>` **get_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject3D_method_get_collision_mask_value>`
 
-返回 :ref:`collision_mask<class_CollisionObject3D_property_collision_mask>` 中是否啟用了指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+Returns whether or not the specified layer of the :ref:`collision_mask<class_CollisionObject3D_property_collision_mask>` is enabled, given a ``layer_number`` between 1 and 32.
 
 .. rst-class:: classref-item-separator
 
@@ -386,7 +386,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 :ref:`RID<class_RID>` **get_rid**\ (\ ) |const| :ref:`🔗<class_CollisionObject3D_method_get_rid>`
 
-返回對象的 :ref:`RID<class_RID>`\ 。
+Returns the object's :ref:`RID<class_RID>`.
 
 .. rst-class:: classref-item-separator
 
@@ -398,7 +398,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_shape_owners**\ (\ ) :ref:`🔗<class_CollisionObject3D_method_get_shape_owners>`
 
-返回一個 ``owner_id`` 識別字的 :ref:`Array<class_Array>`\ 。你可以在其他使用 ``owner_id`` 作為參數的方法中使用這些 ID。
+Returns an :ref:`Array<class_Array>` of ``owner_id`` identifiers. You can use these ids in other methods that take ``owner_id`` as an argument.
 
 .. rst-class:: classref-item-separator
 
@@ -410,7 +410,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 :ref:`bool<class_bool>` **is_shape_owner_disabled**\ (\ owner_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject3D_method_is_shape_owner_disabled>`
 
-如果為 ``true``\ ，則禁用形狀所有者及其形狀。
+If ``true``, the shape owner and its shapes are disabled.
 
 .. rst-class:: classref-item-separator
 
@@ -422,7 +422,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 |void| **remove_shape_owner**\ (\ owner_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CollisionObject3D_method_remove_shape_owner>`
 
-移除給定形狀的所有者。
+Removes the given shape owner.
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +434,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 |void| **set_collision_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CollisionObject3D_method_set_collision_layer_value>`
 
-根據 ``value``\ ，啟用或禁用 :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+Based on ``value``, enables or disables the specified layer in the :ref:`collision_layer<class_CollisionObject3D_property_collision_layer>`, given a ``layer_number`` between 1 and 32.
 
 .. rst-class:: classref-item-separator
 
@@ -446,7 +446,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 |void| **set_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CollisionObject3D_method_set_collision_mask_value>`
 
-根據 ``value``\ ，啟用或禁用 :ref:`collision_mask<class_CollisionObject3D_property_collision_mask>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+Based on ``value``, enables or disables the specified layer in the :ref:`collision_mask<class_CollisionObject3D_property_collision_mask>`, given a ``layer_number`` between 1 and 32.
 
 .. rst-class:: classref-item-separator
 
@@ -458,7 +458,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 :ref:`int<class_int>` **shape_find_owner**\ (\ shape_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject3D_method_shape_find_owner>`
 
-返回指定形狀的 ``owner_id``\ 。
+Returns the ``owner_id`` of the given shape.
 
 .. rst-class:: classref-item-separator
 
@@ -470,7 +470,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 |void| **shape_owner_add_shape**\ (\ owner_id\: :ref:`int<class_int>`, shape\: :ref:`Shape3D<class_Shape3D>`\ ) :ref:`🔗<class_CollisionObject3D_method_shape_owner_add_shape>`
 
-向形狀擁有者新增 :ref:`Shape3D<class_Shape3D>`\ 。
+Adds a :ref:`Shape3D<class_Shape3D>` to the shape owner.
 
 .. rst-class:: classref-item-separator
 
@@ -482,7 +482,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 |void| **shape_owner_clear_shapes**\ (\ owner_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CollisionObject3D_method_shape_owner_clear_shapes>`
 
-移除形狀所有者的所有形狀。
+Removes all shapes from the shape owner.
 
 .. rst-class:: classref-item-separator
 
@@ -494,7 +494,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 :ref:`Object<class_Object>` **shape_owner_get_owner**\ (\ owner_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject3D_method_shape_owner_get_owner>`
 
-返回給定形狀所有者的父物件。
+Returns the parent object of the given shape owner.
 
 .. rst-class:: classref-item-separator
 
@@ -506,7 +506,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 :ref:`Shape3D<class_Shape3D>` **shape_owner_get_shape**\ (\ owner_id\: :ref:`int<class_int>`, shape_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject3D_method_shape_owner_get_shape>`
 
-返回形狀所有者中具有給定 ID 的 :ref:`Shape3D<class_Shape3D>`\ 。
+Returns the :ref:`Shape3D<class_Shape3D>` with the given ID from the given shape owner.
 
 .. rst-class:: classref-item-separator
 
@@ -518,7 +518,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 :ref:`int<class_int>` **shape_owner_get_shape_count**\ (\ owner_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject3D_method_shape_owner_get_shape_count>`
 
-返回給定形狀所有者包含的形狀數量。
+Returns the number of shapes the given shape owner contains.
 
 .. rst-class:: classref-item-separator
 
@@ -530,7 +530,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 :ref:`int<class_int>` **shape_owner_get_shape_index**\ (\ owner_id\: :ref:`int<class_int>`, shape_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject3D_method_shape_owner_get_shape_index>`
 
-返回形狀所有者中具有給定 ID 的 :ref:`Shape3D<class_Shape3D>` 的子索引。
+Returns the child index of the :ref:`Shape3D<class_Shape3D>` with the given ID from the given shape owner.
 
 .. rst-class:: classref-item-separator
 
@@ -542,7 +542,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 :ref:`Transform3D<class_Transform3D>` **shape_owner_get_transform**\ (\ owner_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject3D_method_shape_owner_get_transform>`
 
-返回形狀所有者的 :ref:`Transform3D<class_Transform3D>`\ 。
+Returns the shape owner's :ref:`Transform3D<class_Transform3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -554,7 +554,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 |void| **shape_owner_remove_shape**\ (\ owner_id\: :ref:`int<class_int>`, shape_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CollisionObject3D_method_shape_owner_remove_shape>`
 
-從給定的形狀所有者中移除一個形狀。
+Removes a shape from the given shape owner.
 
 .. rst-class:: classref-item-separator
 
@@ -566,7 +566,7 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 |void| **shape_owner_set_disabled**\ (\ owner_id\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CollisionObject3D_method_shape_owner_set_disabled>`
 
-如果為 ``true``\ ，則禁用給定的形狀所有者。
+If ``true``, disables the given shape owner.
 
 .. rst-class:: classref-item-separator
 
@@ -578,14 +578,14 @@ Receives unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``event_position`` is
 
 |void| **shape_owner_set_transform**\ (\ owner_id\: :ref:`int<class_int>`, transform\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_CollisionObject3D_method_shape_owner_set_transform>`
 
-設定給定形狀所有者的 :ref:`Transform3D<class_Transform3D>`\ 。
+Sets the :ref:`Transform3D<class_Transform3D>` of the given shape owner.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

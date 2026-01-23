@@ -5,30 +5,30 @@
 MeshLibrary
 ===========
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-網格庫。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-網格庫包含一個 :ref:`Mesh<class_Mesh>` 資源列表，每個資源都有一個名稱和 ID。每個專案還可以包括碰撞和導覽形狀。這個資源在 :ref:`GridMap<class_GridMap>` 中使用。
+Library of meshes.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- `3D 動力學角色演示 <https://godotengine.org/asset-library/asset/2739>`__
+A library of meshes. Contains a list of :ref:`Mesh<class_Mesh>` resources, each with a name and ID. Each item can also include collision and navigation shapes. This resource is used in :ref:`GridMap<class_GridMap>`.
 
-- `3D 平台跳躍示範 <https://godotengine.org/asset-library/asset/2748>`__
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- `3D Kinematic Character Demo <https://godotengine.org/asset-library/asset/2739>`__
+
+- `3D Platformer Demo <https://godotengine.org/asset-library/asset/2748>`__
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -89,8 +89,8 @@ MeshLibrary
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_MeshLibrary_method_clear:
 
@@ -98,7 +98,7 @@ MeshLibrary
 
 |void| **clear**\ (\ ) :ref:`🔗<class_MeshLibrary_method_clear>`
 
-清除庫。
+Clears the library.
 
 .. rst-class:: classref-item-separator
 
@@ -110,9 +110,9 @@ MeshLibrary
 
 |void| **create_item**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_MeshLibrary_method_create_item>`
 
-使用給定的 ID 在庫中建立一個新項。
+Creates a new item in the library with the given ID.
 
-你可以從 :ref:`get_last_unused_item_id()<class_MeshLibrary_method_get_last_unused_item_id>` 獲取一個未使用的 ID。
+You can get an unused ID from :ref:`get_last_unused_item_id()<class_MeshLibrary_method_get_last_unused_item_id>`.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ Returns the first item with the given name, or ``-1`` if no item is found.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_item_list**\ (\ ) |const| :ref:`🔗<class_MeshLibrary_method_get_item_list>`
 
-返回正在使用的專案 ID 列表。
+Returns the list of item IDs in use.
 
 .. rst-class:: classref-item-separator
 
@@ -148,7 +148,7 @@ Returns the first item with the given name, or ``-1`` if no item is found.
 
 :ref:`Mesh<class_Mesh>` **get_item_mesh**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshLibrary_method_get_item_mesh>`
 
-返回該專案的網格。
+Returns the item's mesh.
 
 .. rst-class:: classref-item-separator
 
@@ -172,7 +172,7 @@ Returns the item's shadow casting mode.
 
 :ref:`Transform3D<class_Transform3D>` **get_item_mesh_transform**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshLibrary_method_get_item_mesh_transform>`
 
-返回套用到專案網格的變換。
+Returns the transform applied to the item's mesh.
 
 .. rst-class:: classref-item-separator
 
@@ -184,7 +184,7 @@ Returns the item's shadow casting mode.
 
 :ref:`String<class_String>` **get_item_name**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshLibrary_method_get_item_name>`
 
-返回該項的名稱。
+Returns the item's name.
 
 .. rst-class:: classref-item-separator
 
@@ -196,7 +196,7 @@ Returns the item's shadow casting mode.
 
 :ref:`int<class_int>` **get_item_navigation_layers**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshLibrary_method_get_item_navigation_layers>`
 
-返回該項的導覽層位元遮罩。
+Returns the item's navigation layers bitmask.
 
 .. rst-class:: classref-item-separator
 
@@ -208,7 +208,7 @@ Returns the item's shadow casting mode.
 
 :ref:`NavigationMesh<class_NavigationMesh>` **get_item_navigation_mesh**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshLibrary_method_get_item_navigation_mesh>`
 
-返回該項的導覽網格。
+Returns the item's navigation mesh.
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ Returns the item's shadow casting mode.
 
 :ref:`Transform3D<class_Transform3D>` **get_item_navigation_mesh_transform**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshLibrary_method_get_item_navigation_mesh_transform>`
 
-返回套用於該項導覽網格的變換。
+Returns the transform applied to the item's navigation mesh.
 
 .. rst-class:: classref-item-separator
 
@@ -232,7 +232,7 @@ Returns the item's shadow casting mode.
 
 :ref:`Texture2D<class_Texture2D>` **get_item_preview**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshLibrary_method_get_item_preview>`
 
-在編輯器中運作時，返回生成的專案預覽（等軸透視中的 3D 算繪）。在一個運作的項目中使用時，返回手動定義的專案預覽，該專案預覽可以使用 :ref:`set_item_preview()<class_MeshLibrary_method_set_item_preview>` 設定。如果在一個運作的專案中，沒有手動設定預覽，則返回一個空的 :ref:`Texture2D<class_Texture2D>`\ 。
+When running in the editor, returns a generated item preview (a 3D rendering in isometric perspective). When used in a running project, returns the manually-defined item preview which can be set using :ref:`set_item_preview()<class_MeshLibrary_method_set_item_preview>`. Returns an empty :ref:`Texture2D<class_Texture2D>` if no preview was manually set in a running project.
 
 .. rst-class:: classref-item-separator
 
@@ -244,9 +244,9 @@ Returns the item's shadow casting mode.
 
 :ref:`Array<class_Array>` **get_item_shapes**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshLibrary_method_get_item_shapes>`
 
-返回某個專案的碰撞形狀。
+Returns an item's collision shapes.
 
-該陣列由每個 :ref:`Shape3D<class_Shape3D>` 後跟其 :ref:`Transform3D<class_Transform3D>` 組成。
+The array consists of each :ref:`Shape3D<class_Shape3D>` followed by its :ref:`Transform3D<class_Transform3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -258,7 +258,7 @@ Returns the item's shadow casting mode.
 
 :ref:`int<class_int>` **get_last_unused_item_id**\ (\ ) |const| :ref:`🔗<class_MeshLibrary_method_get_last_unused_item_id>`
 
-獲取新項未使用的 ID。
+Gets an unused ID for a new item.
 
 .. rst-class:: classref-item-separator
 
@@ -270,7 +270,7 @@ Returns the item's shadow casting mode.
 
 |void| **remove_item**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_MeshLibrary_method_remove_item>`
 
-刪除專案。
+Removes the item.
 
 .. rst-class:: classref-item-separator
 
@@ -282,7 +282,7 @@ Returns the item's shadow casting mode.
 
 |void| **set_item_mesh**\ (\ id\: :ref:`int<class_int>`, mesh\: :ref:`Mesh<class_Mesh>`\ ) :ref:`🔗<class_MeshLibrary_method_set_item_mesh>`
 
-設定該項的網格。
+Sets the item's mesh.
 
 .. rst-class:: classref-item-separator
 
@@ -306,7 +306,7 @@ Sets the item's shadow casting mode to ``shadow_casting_setting``.
 
 |void| **set_item_mesh_transform**\ (\ id\: :ref:`int<class_int>`, mesh_transform\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_MeshLibrary_method_set_item_mesh_transform>`
 
-設定要套用到專案網格的變換。
+Sets the transform to apply to the item's mesh.
 
 .. rst-class:: classref-item-separator
 
@@ -318,9 +318,9 @@ Sets the item's shadow casting mode to ``shadow_casting_setting``.
 
 |void| **set_item_name**\ (\ id\: :ref:`int<class_int>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_MeshLibrary_method_set_item_name>`
 
-設定該項的名稱。
+Sets the item's name.
 
-這個名稱會顯示在編輯器中。稍後還可以使用 :ref:`find_item_by_name()<class_MeshLibrary_method_find_item_by_name>` 來搜尋該項。
+This name is shown in the editor. It can also be used to look up the item later using :ref:`find_item_by_name()<class_MeshLibrary_method_find_item_by_name>`.
 
 .. rst-class:: classref-item-separator
 
@@ -332,7 +332,7 @@ Sets the item's shadow casting mode to ``shadow_casting_setting``.
 
 |void| **set_item_navigation_layers**\ (\ id\: :ref:`int<class_int>`, navigation_layers\: :ref:`int<class_int>`\ ) :ref:`🔗<class_MeshLibrary_method_set_item_navigation_layers>`
 
-設定該項的導覽層位元遮罩。
+Sets the item's navigation layers bitmask.
 
 .. rst-class:: classref-item-separator
 
@@ -344,7 +344,7 @@ Sets the item's shadow casting mode to ``shadow_casting_setting``.
 
 |void| **set_item_navigation_mesh**\ (\ id\: :ref:`int<class_int>`, navigation_mesh\: :ref:`NavigationMesh<class_NavigationMesh>`\ ) :ref:`🔗<class_MeshLibrary_method_set_item_navigation_mesh>`
 
-設定該項的導覽網格。
+Sets the item's navigation mesh.
 
 .. rst-class:: classref-item-separator
 
@@ -356,7 +356,7 @@ Sets the item's shadow casting mode to ``shadow_casting_setting``.
 
 |void| **set_item_navigation_mesh_transform**\ (\ id\: :ref:`int<class_int>`, navigation_mesh\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_MeshLibrary_method_set_item_navigation_mesh_transform>`
 
-設定套用於該項的導覽網格的變換。
+Sets the transform to apply to the item's navigation mesh.
 
 .. rst-class:: classref-item-separator
 
@@ -368,7 +368,7 @@ Sets the item's shadow casting mode to ``shadow_casting_setting``.
 
 |void| **set_item_preview**\ (\ id\: :ref:`int<class_int>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_MeshLibrary_method_set_item_preview>`
 
-在編輯器中設定要用作該項預覽圖示的紋理。
+Sets a texture to use as the item's preview icon in the editor.
 
 .. rst-class:: classref-item-separator
 
@@ -380,16 +380,16 @@ Sets the item's shadow casting mode to ``shadow_casting_setting``.
 
 |void| **set_item_shapes**\ (\ id\: :ref:`int<class_int>`, shapes\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_MeshLibrary_method_set_item_shapes>`
 
-設定某個專案的碰撞形狀。
+Sets an item's collision shapes.
 
-該陣列應由 :ref:`Shape3D<class_Shape3D>` 物件組成，每個物件後跟一個將套用於它的 :ref:`Transform3D<class_Transform3D>`\ 。對於不應具有變換的形狀，請使用 :ref:`Transform3D.IDENTITY<class_Transform3D_constant_IDENTITY>`\ 。
+The array should consist of :ref:`Shape3D<class_Shape3D>` objects, each followed by a :ref:`Transform3D<class_Transform3D>` that will be applied to it. For shapes that should not have a transform, use :ref:`Transform3D.IDENTITY<class_Transform3D_constant_IDENTITY>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

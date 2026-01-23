@@ -5,23 +5,23 @@
 ScriptEditor
 ============
 
-**继承：** :ref:`PanelContainer<class_PanelContainer>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`PanelContainer<class_PanelContainer>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Godot 编辑器的脚本编辑器。
+Godot editor's script editor.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-Godot 编辑器的脚本编辑器。
+Godot editor's script editor.
 
-\ **注意：**\ 这个类不应该被直接实例化。请使用 :ref:`EditorInterface.get_script_editor()<class_EditorInterface_method_get_script_editor>` 来访问这个单例。
+\ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using :ref:`EditorInterface.get_script_editor()<class_EditorInterface_method_get_script_editor>`.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -58,8 +58,8 @@ Godot 编辑器的脚本编辑器。
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_ScriptEditor_signal_editor_script_changed:
 
@@ -67,7 +67,7 @@ Godot 编辑器的脚本编辑器。
 
 **editor_script_changed**\ (\ script\: :ref:`Script<class_Script>`\ ) :ref:`🔗<class_ScriptEditor_signal_editor_script_changed>`
 
-当用户更改活动脚本时发出。参数是新激活的 :ref:`Script<class_Script>`\ 。
+Emitted when user changed active script. Argument is a freshly activated :ref:`Script<class_Script>`.
 
 .. rst-class:: classref-item-separator
 
@@ -79,7 +79,7 @@ Godot 编辑器的脚本编辑器。
 
 **script_close**\ (\ script\: :ref:`Script<class_Script>`\ ) :ref:`🔗<class_ScriptEditor_signal_script_close>`
 
-当编辑器即将关闭活动脚本时发出。参数是将要关闭的 :ref:`Script<class_Script>`\ 。
+Emitted when editor is about to close the active script. Argument is a :ref:`Script<class_Script>` that is going to be closed.
 
 .. rst-class:: classref-section-separator
 
@@ -87,8 +87,8 @@ Godot 编辑器的脚本编辑器。
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_ScriptEditor_method_clear_docs_from_script:
 
@@ -96,9 +96,9 @@ Godot 编辑器的脚本编辑器。
 
 |void| **clear_docs_from_script**\ (\ script\: :ref:`Script<class_Script>`\ ) :ref:`🔗<class_ScriptEditor_method_clear_docs_from_script>`
 
-移除 ``script`` 脚本的文档。
+Removes the documentation for the given ``script``.
 
-\ **注意：**\ 每当脚本发生更改时都应调用该方法，从而保持打开文档的状态为最新。
+\ **Note:** This should be called whenever the script is changed to keep the open documentation state up to date.
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ Godot 编辑器的脚本编辑器。
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_breakpoints**\ (\ ) :ref:`🔗<class_ScriptEditor_method_get_breakpoints>`
 
-返回断点数组。
+Returns array of breakpoints.
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +122,7 @@ Godot 编辑器的脚本编辑器。
 
 :ref:`ScriptEditorBase<class_ScriptEditorBase>` **get_current_editor**\ (\ ) |const| :ref:`🔗<class_ScriptEditor_method_get_current_editor>`
 
-返回用户当前正在编辑的 :ref:`ScriptEditorBase<class_ScriptEditorBase>` 对象。
+Returns the :ref:`ScriptEditorBase<class_ScriptEditorBase>` object that the user is currently editing.
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +134,7 @@ Godot 编辑器的脚本编辑器。
 
 :ref:`Script<class_Script>` **get_current_script**\ (\ ) :ref:`🔗<class_ScriptEditor_method_get_current_script>`
 
-返回当前在编辑器中处于活动状态的 :ref:`Script<class_Script>`\ 。
+Returns a :ref:`Script<class_Script>` that is currently active in editor.
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +146,7 @@ Godot 编辑器的脚本编辑器。
 
 :ref:`Array<class_Array>`\[:ref:`ScriptEditorBase<class_ScriptEditorBase>`\] **get_open_script_editors**\ (\ ) |const| :ref:`🔗<class_ScriptEditor_method_get_open_script_editors>`
 
-返回一个数组，其中包含当前在编辑器中打开的所有 :ref:`ScriptEditorBase<class_ScriptEditorBase>` 对象。
+Returns an array with all :ref:`ScriptEditorBase<class_ScriptEditorBase>` objects which are currently open in editor.
 
 .. rst-class:: classref-item-separator
 
@@ -158,7 +158,7 @@ Godot 编辑器的脚本编辑器。
 
 :ref:`Array<class_Array>`\[:ref:`Script<class_Script>`\] **get_open_scripts**\ (\ ) |const| :ref:`🔗<class_ScriptEditor_method_get_open_scripts>`
 
-返回一个包含当前在编辑器中打开的所有 :ref:`Script<class_Script>` 对象的数组。
+Returns an array with all :ref:`Script<class_Script>` objects which are currently open in editor.
 
 .. rst-class:: classref-item-separator
 
@@ -170,29 +170,29 @@ Godot 编辑器的脚本编辑器。
 
 |void| **goto_help**\ (\ topic\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditor_method_goto_help>`
 
-打开指定主题的帮助。\ ``topic`` 是一个编码字符串，用于控制哪个类、方法、常量、信号、注解、属性或主题项应该被关注。
+Opens help for the given topic. The ``topic`` is an encoded string that controls which class, method, constant, signal, annotation, property, or theme item should be focused.
 
-支持的 ``topic`` 格式包括 ``class_name:class``\ 、\ ``class_method:class:method``\ 、\ ``class_constant:class:constant``\ 、\ ``class_signal:class:signal``\ 、\ ``class_annotation:class:@annotation``\ 、\ ``class_property:class:property`` 和 ``class_theme_item:class:item``\ ，其中 ``class`` 为类名，\ ``method`` 为方法名，\ ``constant`` 为常量名，\ ``signal`` 为信号名，\ ``annotation`` 为注解名，\ ``property`` 为属性名，\ ``item`` 为主题项。
+The supported ``topic`` formats include ``class_name:class``, ``class_method:class:method``, ``class_constant:class:constant``, ``class_signal:class:signal``, ``class_annotation:class:@annotation``, ``class_property:class:property``, and ``class_theme_item:class:item``, where ``class`` is the class name, ``method`` is the method name, ``constant`` is the constant name, ``signal`` is the signal name, ``annotation`` is the annotation name, ``property`` is the property name, and ``item`` is the theme item.
 
 ::
 
-    # 显示 Node 类的帮助。
+    # Shows help for the Node class.
     class_name:Node
-    # 显示全局 min 函数的帮助。
-    # 全局对象可在 `@GlobalScope` 命名空间中访问，如下所示。
+    # Shows help for the global min function.
+    # Global objects are accessible in the `@GlobalScope` namespace, shown here.
     class_method:@GlobalScope:min
-    # 显示 Node 类中 get_viewport 的帮助。
+    # Shows help for get_viewport in the Node class.
     class_method:Node:get_viewport
-    # 显示输入常量 MOUSE_BUTTON_MIDDLE 的帮助。
+    # Shows help for the Input constant MOUSE_BUTTON_MIDDLE.
     class_constant:Input:MOUSE_BUTTON_MIDDLE
-    # 显示 BaseButton 信号 pressed 的帮助。
+    # Shows help for the BaseButton signal pressed.
     class_signal:BaseButton:pressed
-    # 显示 CanvasItem 属性 visible 的帮助。
+    # Shows help for the CanvasItem property visible.
     class_property:CanvasItem:visible
-    # 显示 GDScript 注解 export 的帮助。
-    # 注解应在描述符中以 `@` 符号为前缀，如下所示。
+    # Shows help for the GDScript annotation export.
+    # Annotations should be prefixed with the `@` symbol in the descriptor, as shown here.
     class_annotation:@GDScript:@export
-    # 显示名为 panel_selected 的 GraphNode 主题项的帮助。
+    # Shows help for the GraphNode theme item named panel_selected.
     class_theme_item:GraphNode:panel_selected
 
 .. rst-class:: classref-item-separator
@@ -205,7 +205,7 @@ Godot 编辑器的脚本编辑器。
 
 |void| **goto_line**\ (\ line_number\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ScriptEditor_method_goto_line>`
 
-转到当前脚本中的指定行。
+Goes to the specified line in the current script.
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ Godot 编辑器的脚本编辑器。
 
 |void| **open_script_create_dialog**\ (\ base_name\: :ref:`String<class_String>`, base_path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditor_method_open_script_create_dialog>`
 
-打开创建脚本对话框。脚本将扩展 ``base_name``\ 。文件扩展名可以从 ``base_path`` 中省略，会根据所选择的脚本语言添加。
+Opens the script create dialog. The script will extend ``base_name``. The file extension can be omitted from ``base_path``. It will be added based on the selected scripting language.
 
 .. rst-class:: classref-item-separator
 
@@ -229,9 +229,9 @@ Godot 编辑器的脚本编辑器。
 
 |void| **register_syntax_highlighter**\ (\ syntax_highlighter\: :ref:`EditorSyntaxHighlighter<class_EditorSyntaxHighlighter>`\ ) :ref:`🔗<class_ScriptEditor_method_register_syntax_highlighter>`
 
-向编辑器注册该 :ref:`EditorSyntaxHighlighter<class_EditorSyntaxHighlighter>`\ ，打开的所有脚本都可以使用这个 :ref:`EditorSyntaxHighlighter<class_EditorSyntaxHighlighter>`\ 。
+Registers the :ref:`EditorSyntaxHighlighter<class_EditorSyntaxHighlighter>` to the editor, the :ref:`EditorSyntaxHighlighter<class_EditorSyntaxHighlighter>` will be available on all open scripts.
 
-\ **注意：**\ 不适用于已经打开的脚本。
+\ **Note:** Does not apply to scripts that are already opened.
 
 .. rst-class:: classref-item-separator
 
@@ -243,9 +243,9 @@ Godot 编辑器的脚本编辑器。
 
 |void| **unregister_syntax_highlighter**\ (\ syntax_highlighter\: :ref:`EditorSyntaxHighlighter<class_EditorSyntaxHighlighter>`\ ) :ref:`🔗<class_ScriptEditor_method_unregister_syntax_highlighter>`
 
-从编辑器注销该 :ref:`EditorSyntaxHighlighter<class_EditorSyntaxHighlighter>`\ 。
+Unregisters the :ref:`EditorSyntaxHighlighter<class_EditorSyntaxHighlighter>` from the editor.
 
-\ **注意：**\ 已经打开的脚本仍然适用该 :ref:`EditorSyntaxHighlighter<class_EditorSyntaxHighlighter>`\ 。
+\ **Note:** The :ref:`EditorSyntaxHighlighter<class_EditorSyntaxHighlighter>` will still be applied to scripts that are already opened.
 
 .. rst-class:: classref-item-separator
 
@@ -257,16 +257,16 @@ Godot 编辑器的脚本编辑器。
 
 |void| **update_docs_from_script**\ (\ script\: :ref:`Script<class_Script>`\ ) :ref:`🔗<class_ScriptEditor_method_update_docs_from_script>`
 
-为 ``script`` 脚本更新文档。
+Updates the documentation for the given ``script``.
 
-\ **注意：**\ 每当脚本发生更改时都应调用该方法，从而保持打开文档的状态为最新。
+\ **Note:** This should be called whenever the script is changed to keep the open documentation state up to date.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,8 +5,6 @@
 GraphNode
 =========
 
-**Expérimental :** This class may be changed or removed in future versions.
-
 **Hérite de :** :ref:`GraphElement<class_GraphElement>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 Un conteneur avec des ports de connexion, représentant un nœud dans un :ref:`GraphEdit<class_GraphEdit>`.
@@ -304,7 +302,7 @@ Disables the slot with the given ``slot_index``. This will remove the correspond
 
 :ref:`Color<class_Color>` **get_input_port_color**\ (\ port_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphNode_method_get_input_port_color>`
 
-Returns the :ref:`Color<class_Color>` of the input port with the given ``port_idx``.
+Retourne la :ref:`Color<class_Color>` de la connexion d'entrée au ``port_idx`` donné.
 
 .. rst-class:: classref-item-separator
 
@@ -328,7 +326,7 @@ Returns the number of slots with an enabled input port.
 
 :ref:`Vector2<class_Vector2>` **get_input_port_position**\ (\ port_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphNode_method_get_input_port_position>`
 
-Returns the position of the input port with the given ``port_idx``.
+Retourne la position du port d'entrée avec le ``port_idx`` donné.
 
 .. rst-class:: classref-item-separator
 
@@ -340,7 +338,7 @@ Returns the position of the input port with the given ``port_idx``.
 
 :ref:`int<class_int>` **get_input_port_slot**\ (\ port_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphNode_method_get_input_port_slot>`
 
-Returns the corresponding slot index of the input port with the given ``port_idx``.
+Retourne l'index correspondant du port d'entrée avec le ``port_idx`` donné.
 
 .. rst-class:: classref-item-separator
 

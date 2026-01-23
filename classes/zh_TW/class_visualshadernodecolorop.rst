@@ -5,21 +5,21 @@
 VisualShaderNodeColorOp
 =======================
 
-**繼承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-在視覺化著色器圖中使用的 :ref:`Color<class_Color>` 運算子。
+A :ref:`Color<class_Color>` operator to be used within the visual shader graph.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-將 :ref:`operator<class_VisualShaderNodeColorOp_property_operator>` 套用於兩個顏色輸入。
+Applies :ref:`operator<class_VisualShaderNodeColorOp_property_operator>` to two color inputs.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ VisualShaderNodeColorOp
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_VisualShaderNodeColorOp_Operator:
 
@@ -49,7 +49,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeColorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeColorOp_Operator>` **OP_SCREEN** = ``0``
 
-用以下公式產生螢幕效果。
+Produce a screen effect with the following formula:
 
 ::
 
@@ -61,7 +61,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeColorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeColorOp_Operator>` **OP_DIFFERENCE** = ``1``
 
-用以下公式產生差異效果。
+Produce a difference effect with the following formula:
 
 ::
 
@@ -73,7 +73,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeColorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeColorOp_Operator>` **OP_DARKEN** = ``2``
 
-用以下公式產生變暗效果。
+Produce a darken effect with the following formula:
 
 ::
 
@@ -85,7 +85,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeColorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeColorOp_Operator>` **OP_LIGHTEN** = ``3``
 
-用以下公式產生減淡效果。
+Produce a lighten effect with the following formula:
 
 ::
 
@@ -97,7 +97,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeColorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeColorOp_Operator>` **OP_OVERLAY** = ``4``
 
-用以下公式產生疊加效果。
+Produce an overlay effect with the following formula:
 
 ::
 
@@ -117,7 +117,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeColorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeColorOp_Operator>` **OP_DODGE** = ``5``
 
-用以下公式產生閃避效果。
+Produce a dodge effect with the following formula:
 
 ::
 
@@ -129,7 +129,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeColorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeColorOp_Operator>` **OP_BURN** = ``6``
 
-用以下公式產生燃燒效果。
+Produce a burn effect with the following formula:
 
 ::
 
@@ -141,7 +141,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeColorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeColorOp_Operator>` **OP_SOFT_LIGHT** = ``7``
 
-用以下公式產生柔光效果。
+Produce a soft light effect with the following formula:
 
 ::
 
@@ -161,7 +161,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeColorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeColorOp_Operator>` **OP_HARD_LIGHT** = ``8``
 
-用以下公式產生硬光效果。
+Produce a hard light effect with the following formula:
 
 ::
 
@@ -181,7 +181,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeColorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeColorOp_Operator>` **OP_MAX** = ``9``
 
-代表 :ref:`Operator<enum_VisualShaderNodeColorOp_Operator>` 列舉的大小。
+Represents the size of the :ref:`Operator<enum_VisualShaderNodeColorOp_Operator>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -189,8 +189,8 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeColorOp_Operator>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_VisualShaderNodeColorOp_property_operator:
 
@@ -205,12 +205,12 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeColorOp_Operator>`
 
 An operator to be applied to the inputs.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

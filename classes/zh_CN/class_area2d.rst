@@ -8,38 +8,38 @@
 Area2D
 ======
 
-**继承：** :ref:`CollisionObject2D<class_CollisionObject2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`CollisionObject2D<class_CollisionObject2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-2D 空间中的一个区域，能够检测到其他 :ref:`CollisionObject2D<class_CollisionObject2D>` 的进入或退出。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-**Area2D** 是 2D 空间中的一个区域，由一个或多个 :ref:`CollisionShape2D<class_CollisionShape2D>` 或 :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` 子节点定义，能够检测到其他 :ref:`CollisionObject2D<class_CollisionObject2D>` 进入或退出该区域，同时也会记录哪些碰撞对象尚未退出（即哪些对象与其存在重叠）。
-
-这个节点也可以在局部修改或覆盖物理参数（重力、阻尼），将音频引导至自定义音频总线。
-
-\ **注意：**\ 使用 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 创建的区域和物体可能无法按预期与 **Area2D** 交互，并且可能无法正确发出信号或跟踪对象。
+A region of 2D space that detects other :ref:`CollisionObject2D<class_CollisionObject2D>`\ s entering or exiting it.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`使用 Area2D <../tutorials/physics/using_area_2d>`
+**Area2D** is a region of 2D space defined by one or multiple :ref:`CollisionShape2D<class_CollisionShape2D>` or :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` child nodes. It detects when other :ref:`CollisionObject2D<class_CollisionObject2D>`\ s enter or exit it, and it also keeps track of which collision objects haven't exited it yet (i.e. which one are overlapping it).
 
-- `2D Dodge The Creeps 演示 <https://godotengine.org/asset-library/asset/2712>`__
+This node can also locally alter or override physics parameters (gravity, damping) and route audio to custom audio buses.
 
-- `2D Pong 演示 <https://godotengine.org/asset-library/asset/2728>`__
+\ **Note:** Areas and bodies created with :ref:`PhysicsServer2D<class_PhysicsServer2D>` might not interact as expected with **Area2D**\ s, and might not emit signals or track objects correctly.
 
-- `2D 平台跳跃演示 <https://godotengine.org/asset-library/asset/2727>`__
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Using Area2D <../tutorials/physics/using_area_2d>`
+
+- `2D Dodge The Creeps Demo <https://godotengine.org/asset-library/asset/2712>`__
+
+- `2D Pong Demo <https://godotengine.org/asset-library/asset/2728>`__
+
+- `2D Platformer Demo <https://godotengine.org/asset-library/asset/2727>`__
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -78,8 +78,8 @@ Area2D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -104,8 +104,8 @@ Area2D
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_Area2D_signal_area_entered:
 
@@ -113,7 +113,7 @@ Area2D
 
 **area_entered**\ (\ area\: :ref:`Area2D<class_Area2D>`\ ) :ref:`🔗<class_Area2D_signal_area_entered>`
 
-当接收的 ``area`` 进入此区域时发出。需要 :ref:`monitoring<class_Area2D_property_monitoring>` 被设置为 ``true``\ 。
+Emitted when the received ``area`` enters this area. Requires :ref:`monitoring<class_Area2D_property_monitoring>` to be set to ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ Area2D
 
 **area_exited**\ (\ area\: :ref:`Area2D<class_Area2D>`\ ) :ref:`🔗<class_Area2D_signal_area_exited>`
 
-当接收的 ``area`` 退出此区域时发出。需要 :ref:`monitoring<class_Area2D_property_monitoring>` 被设置为 ``true``\ 。
+Emitted when the received ``area`` exits this area. Requires :ref:`monitoring<class_Area2D_property_monitoring>` to be set to ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -137,18 +137,18 @@ Area2D
 
 **area_shape_entered**\ (\ area_rid\: :ref:`RID<class_RID>`, area\: :ref:`Area2D<class_Area2D>`, area_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area2D_signal_area_shape_entered>`
 
-当收到的 ``area`` 的 :ref:`Shape2D<class_Shape2D>` 进入这个区域的形状时发出。要求 :ref:`monitoring<class_Area2D_property_monitoring>` 被设置为 ``true`` 。
+Emitted when a :ref:`Shape2D<class_Shape2D>` of the received ``area`` enters a shape of this area. Requires :ref:`monitoring<class_Area2D_property_monitoring>` to be set to ``true``.
 
-\ ``local_shape_index`` 和 ``area_shape_index`` 分别包含来自这个区域和另一个区域的交互形状的索引。\ ``area_rid`` 包含另一个区域的 :ref:`RID<class_RID>`\ 。这些值可以与 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 一起使用。
+\ ``local_shape_index`` and ``area_shape_index`` contain indices of the interacting shapes from this area and the other area, respectively. ``area_rid`` contains the :ref:`RID<class_RID>` of the other area. These values can be used with the :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
 
-\ **示例：**\ 根据形状索引获取 :ref:`CollisionShape2D<class_CollisionShape2D>` 节点：
+\ **Example:** Get the :ref:`CollisionShape2D<class_CollisionShape2D>` node from the shape index:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var other_shape_owner = area.shape_find_owner( area_shape_index)
+    var other_shape_owner = area.shape_find_owner(area_shape_index)
     var other_shape_node = area.shape_owner_get_owner(other_shape_owner)
 
     var local_shape_owner = shape_find_owner(local_shape_index)
@@ -166,9 +166,9 @@ Area2D
 
 **area_shape_exited**\ (\ area_rid\: :ref:`RID<class_RID>`, area\: :ref:`Area2D<class_Area2D>`, area_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area2D_signal_area_shape_exited>`
 
-当接收的 ``area`` 的 :ref:`Shape2D<class_Shape2D>` 退出此区域的形状时发出。需要 :ref:`monitoring<class_Area2D_property_monitoring>` 被设置为 ``true``\ 。
+Emitted when a :ref:`Shape2D<class_Shape2D>` of the received ``area`` exits a shape of this area. Requires :ref:`monitoring<class_Area2D_property_monitoring>` to be set to ``true``.
 
-另见 :ref:`area_shape_entered<class_Area2D_signal_area_shape_entered>`\ 。
+See also :ref:`area_shape_entered<class_Area2D_signal_area_shape_entered>`.
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ Area2D
 
 **body_entered**\ (\ body\: :ref:`Node2D<class_Node2D>`\ ) :ref:`🔗<class_Area2D_signal_body_entered>`
 
-当接收到的 ``body`` 进入这个区域时发出的。\ ``body`` 可能是 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 也可能是 :ref:`TileMap<class_TileMap>`\ 。\ :ref:`TileMap<class_TileMap>` 的 :ref:`TileSet<class_TileSet>` 配置了碰撞形状就能够被检测到。需要将 :ref:`monitoring<class_Area2D_property_monitoring>` 设置为 ``true`` 。
+Emitted when the received ``body`` enters this area. ``body`` can be a :ref:`PhysicsBody2D<class_PhysicsBody2D>` or a :ref:`TileMap<class_TileMap>`. :ref:`TileMap<class_TileMap>`\ s are detected if their :ref:`TileSet<class_TileSet>` has collision shapes configured. Requires :ref:`monitoring<class_Area2D_property_monitoring>` to be set to ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ Area2D
 
 **body_exited**\ (\ body\: :ref:`Node2D<class_Node2D>`\ ) :ref:`🔗<class_Area2D_signal_body_exited>`
 
-当接收到的 ``body`` 离开这个区域时发出的。\ ``body`` 可能是 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 也可能是 :ref:`TileMap<class_TileMap>`\ 。\ :ref:`TileMap<class_TileMap>` 的 :ref:`TileSet<class_TileSet>` 配置了碰撞形状就能够被检测到。要求 :ref:`monitoring<class_Area2D_property_monitoring>` 被设置为 ``true`` 。
+Emitted when the received ``body`` exits this area. ``body`` can be a :ref:`PhysicsBody2D<class_PhysicsBody2D>` or a :ref:`TileMap<class_TileMap>`. :ref:`TileMap<class_TileMap>`\ s are detected if their :ref:`TileSet<class_TileSet>` has collision shapes configured. Requires :ref:`monitoring<class_Area2D_property_monitoring>` to be set to ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -204,11 +204,11 @@ Area2D
 
 **body_shape_entered**\ (\ body_rid\: :ref:`RID<class_RID>`, body\: :ref:`Node2D<class_Node2D>`, body_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area2D_signal_body_shape_entered>`
 
-当收到的 ``body`` 的 :ref:`Shape2D<class_Shape2D>` 进入这个区域的形状时发出。\ ``body`` 可能是 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 也可能是 :ref:`TileMap<class_TileMap>`\ 。\ :ref:`TileMap<class_TileMap>` 的 :ref:`TileSet<class_TileSet>` 配置了碰撞形状就能够被检测到。要求 :ref:`monitoring<class_Area2D_property_monitoring>` 被设置为 ``true`` 。
+Emitted when a :ref:`Shape2D<class_Shape2D>` of the received ``body`` enters a shape of this area. ``body`` can be a :ref:`PhysicsBody2D<class_PhysicsBody2D>` or a :ref:`TileMap<class_TileMap>`. :ref:`TileMap<class_TileMap>`\ s are detected if their :ref:`TileSet<class_TileSet>` has collision shapes configured. Requires :ref:`monitoring<class_Area2D_property_monitoring>` to be set to ``true``.
 
-\ ``local_shape_index`` 和 ``body_shape_index`` 分别包含来自这个区域和交互体的交互形状的指数。\ ``body_rid`` 包含体的 :ref:`RID<class_RID>`\ 。这些值可以与 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 一起使用。
+\ ``local_shape_index`` and ``body_shape_index`` contain indices of the interacting shapes from this area and the interacting body, respectively. ``body_rid`` contains the :ref:`RID<class_RID>` of the body. These values can be used with the :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
 
-\ **示例：**\ 根据形状索引获取 :ref:`CollisionShape2D<class_CollisionShape2D>` 节点：
+\ **Example:** Get the :ref:`CollisionShape2D<class_CollisionShape2D>` node from the shape index:
 
 
 .. tabs::
@@ -233,9 +233,9 @@ Area2D
 
 **body_shape_exited**\ (\ body_rid\: :ref:`RID<class_RID>`, body\: :ref:`Node2D<class_Node2D>`, body_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area2D_signal_body_shape_exited>`
 
-当收到的 ``body`` 的 :ref:`Shape2D<class_Shape2D>` 退出这个区域的形状时发出。\ ``body`` 可能是 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 也可能是 :ref:`TileMap<class_TileMap>`\ 。\ :ref:`TileMap<class_TileMap>` 的 :ref:`TileSet<class_TileSet>` 配置了碰撞形状就能够被检测到。要求 :ref:`monitoring<class_Area2D_property_monitoring>` 被设置为 ``true`` 。
+Emitted when a :ref:`Shape2D<class_Shape2D>` of the received ``body`` exits a shape of this area. ``body`` can be a :ref:`PhysicsBody2D<class_PhysicsBody2D>` or a :ref:`TileMap<class_TileMap>`. :ref:`TileMap<class_TileMap>`\ s are detected if their :ref:`TileSet<class_TileSet>` has collision shapes configured. Requires :ref:`monitoring<class_Area2D_property_monitoring>` to be set to ``true``.
 
-另见 :ref:`body_shape_entered<class_Area2D_signal_body_shape_entered>`\ 。
+See also :ref:`body_shape_entered<class_Area2D_signal_body_shape_entered>`.
 
 .. rst-class:: classref-section-separator
 
@@ -243,8 +243,8 @@ Area2D
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_Area2D_SpaceOverride:
 
@@ -258,7 +258,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 
 :ref:`SpaceOverride<enum_Area2D_SpaceOverride>` **SPACE_OVERRIDE_DISABLED** = ``0``
 
-该区域不影响重力/阻尼。
+This area does not affect gravity/damping.
 
 .. _class_Area2D_constant_SPACE_OVERRIDE_COMBINE:
 
@@ -266,7 +266,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 
 :ref:`SpaceOverride<enum_Area2D_SpaceOverride>` **SPACE_OVERRIDE_COMBINE** = ``1``
 
-该区域将其重力/阻尼值加到目前已经计算出的结果上（按 :ref:`priority<class_Area2D_property_priority>` 顺序）。
+This area adds its gravity/damping values to whatever has been calculated so far (in :ref:`priority<class_Area2D_property_priority>` order).
 
 .. _class_Area2D_constant_SPACE_OVERRIDE_COMBINE_REPLACE:
 
@@ -274,7 +274,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 
 :ref:`SpaceOverride<enum_Area2D_SpaceOverride>` **SPACE_OVERRIDE_COMBINE_REPLACE** = ``2``
 
-该区域将其重力/阻尼值加到目前已经计算出的结果上（按 :ref:`priority<class_Area2D_property_priority>` 顺序），将忽略任何较低优先级的区域。
+This area adds its gravity/damping values to whatever has been calculated so far (in :ref:`priority<class_Area2D_property_priority>` order), ignoring any lower priority areas.
 
 .. _class_Area2D_constant_SPACE_OVERRIDE_REPLACE:
 
@@ -282,7 +282,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 
 :ref:`SpaceOverride<enum_Area2D_SpaceOverride>` **SPACE_OVERRIDE_REPLACE** = ``3``
 
-该区域将替换所有重力/阻尼，甚至是默认值，将忽略任何较低优先级的区域。
+This area replaces any gravity/damping, even the defaults, ignoring any lower priority areas.
 
 .. _class_Area2D_constant_SPACE_OVERRIDE_REPLACE_COMBINE:
 
@@ -290,7 +290,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 
 :ref:`SpaceOverride<enum_Area2D_SpaceOverride>` **SPACE_OVERRIDE_REPLACE_COMBINE** = ``4``
 
-该区域将替换目前已经计算出的任何重力/阻尼（按 :ref:`priority<class_Area2D_property_priority>` 顺序），但仍将继续计算其余区域。
+This area replaces any gravity/damping calculated so far (in :ref:`priority<class_Area2D_property_priority>` order), but keeps calculating the rest of the areas.
 
 .. rst-class:: classref-section-separator
 
@@ -298,8 +298,8 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_Area2D_property_angular_damp:
 
@@ -312,9 +312,9 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 - |void| **set_angular_damp**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angular_damp**\ (\ )
 
-物体在此区域停止旋转的速度。代表每秒损失的角速度。
+The rate at which objects stop spinning in this area. Represents the angular velocity lost per second.
 
-关于阻尼的更多细节见 :ref:`ProjectSettings.physics/2d/default_angular_damp<class_ProjectSettings_property_physics/2d/default_angular_damp>`\ 。
+See :ref:`ProjectSettings.physics/2d/default_angular_damp<class_ProjectSettings_property_physics/2d/default_angular_damp>` for more details about damping.
 
 .. rst-class:: classref-item-separator
 
@@ -331,7 +331,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 - |void| **set_angular_damp_space_override_mode**\ (\ value\: :ref:`SpaceOverride<enum_Area2D_SpaceOverride>`\ )
 - :ref:`SpaceOverride<enum_Area2D_SpaceOverride>` **get_angular_damp_space_override_mode**\ (\ )
 
-此区域内的角阻尼计算的覆盖模式。
+Override mode for angular damping calculations within this area.
 
 .. rst-class:: classref-item-separator
 
@@ -348,7 +348,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 - |void| **set_audio_bus_name**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_audio_bus_name**\ (\ )
 
-该区域音频总线的名称。
+The name of the area's audio bus.
 
 .. rst-class:: classref-item-separator
 
@@ -365,7 +365,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 - |void| **set_audio_bus_override**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_overriding_audio_bus**\ (\ )
 
-如果为 ``true``\ ，该区域的音频总线将覆盖默认的音频总线。
+If ``true``, the area's audio bus overrides the default audio bus.
 
 .. rst-class:: classref-item-separator
 
@@ -382,7 +382,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 - |void| **set_gravity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gravity**\ (\ )
 
-该区域的重力强度（以像素每平方秒为单位）。这个值是重力向量的倍数。这对于改变重力大小而不改变其方向很有用。
+The area's gravity intensity (in pixels per second squared). This value multiplies the gravity direction. This is useful to alter the force of gravity without altering its direction.
 
 .. rst-class:: classref-item-separator
 
@@ -399,7 +399,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 - |void| **set_gravity_direction**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_gravity_direction**\ (\ )
 
-该区域的重力向量（未归一化）。
+The area's gravity vector (not normalized).
 
 .. rst-class:: classref-item-separator
 
@@ -416,7 +416,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 - |void| **set_gravity_is_point**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_gravity_a_point**\ (\ )
 
-如果为 ``true``\ ，则从一个点（通过 :ref:`gravity_point_center<class_Area2D_property_gravity_point_center>` 设置）计算重力。参阅 :ref:`gravity_space_override<class_Area2D_property_gravity_space_override>`\ 。
+If ``true``, gravity is calculated from a point (set via :ref:`gravity_point_center<class_Area2D_property_gravity_point_center>`). See also :ref:`gravity_space_override<class_Area2D_property_gravity_space_override>`.
 
 .. rst-class:: classref-item-separator
 
@@ -433,7 +433,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 - |void| **set_gravity_point_center**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_gravity_point_center**\ (\ )
 
-如果重力是一个点（参见 :ref:`gravity_point<class_Area2D_property_gravity_point>`\ ），这将是吸引力点。
+If gravity is a point (see :ref:`gravity_point<class_Area2D_property_gravity_point>`), this will be the point of attraction.
 
 .. rst-class:: classref-item-separator
 
@@ -450,9 +450,9 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 - |void| **set_gravity_point_unit_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gravity_point_unit_distance**\ (\ )
 
-重力强度等于 :ref:`gravity<class_Area2D_property_gravity>` 的距离。例如，在一个半径为 100 像素、表面重力为 4.0 px/s² 的行星上，将 :ref:`gravity<class_Area2D_property_gravity>` 设置为 4.0，将单位距离设置为 100.0。重力将根据平方反比定律衰减，因此在该示例中，距离中心 200 像素处的重力将为 1.0 px/s²（距离的两倍，重力的 1/4），距离 50 像素处为 16.0 px/s²（距离的一半，重力的 4 倍），依此类推。
+The distance at which the gravity strength is equal to :ref:`gravity<class_Area2D_property_gravity>`. For example, on a planet 100 pixels in radius with a surface gravity of 4.0 px/s², set the :ref:`gravity<class_Area2D_property_gravity>` to 4.0 and the unit distance to 100.0. The gravity will have falloff according to the inverse square law, so in the example, at 200 pixels from the center the gravity will be 1.0 px/s² (twice the distance, 1/4th the gravity), at 50 pixels it will be 16.0 px/s² (half the distance, 4x the gravity), and so on.
 
-仅当单位距离为正数时，上述情况才成立。当该属性被设置为 0.0 时，无论距离如何，重力都将保持不变。
+The above is true only when the unit distance is a positive number. When this is set to 0.0, the gravity will be constant regardless of distance.
 
 .. rst-class:: classref-item-separator
 
@@ -469,7 +469,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 - |void| **set_gravity_space_override_mode**\ (\ value\: :ref:`SpaceOverride<enum_Area2D_SpaceOverride>`\ )
 - :ref:`SpaceOverride<enum_Area2D_SpaceOverride>` **get_gravity_space_override_mode**\ (\ )
 
-该区域内重力计算的覆盖模式。
+Override mode for gravity calculations within this area.
 
 .. rst-class:: classref-item-separator
 
@@ -486,9 +486,9 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 - |void| **set_linear_damp**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_linear_damp**\ (\ )
 
-物体在此区域停止运动的速度。代表每秒损失的线速度。
+The rate at which objects stop moving in this area. Represents the linear velocity lost per second.
 
-关于阻尼的更多细节见 :ref:`ProjectSettings.physics/2d/default_linear_damp<class_ProjectSettings_property_physics/2d/default_linear_damp>`\ 。
+See :ref:`ProjectSettings.physics/2d/default_linear_damp<class_ProjectSettings_property_physics/2d/default_linear_damp>` for more details about damping.
 
 .. rst-class:: classref-item-separator
 
@@ -505,7 +505,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 - |void| **set_linear_damp_space_override_mode**\ (\ value\: :ref:`SpaceOverride<enum_Area2D_SpaceOverride>`\ )
 - :ref:`SpaceOverride<enum_Area2D_SpaceOverride>` **get_linear_damp_space_override_mode**\ (\ )
 
-该区域内线性阻尼计算的覆盖模式。
+Override mode for linear damping calculations within this area.
 
 .. rst-class:: classref-item-separator
 
@@ -522,7 +522,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 - |void| **set_monitorable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_monitorable**\ (\ )
 
-如果为 ``true``\ ，其他监测区域可以检测到这个区域。
+If ``true``, other monitoring areas can detect this area.
 
 .. rst-class:: classref-item-separator
 
@@ -539,7 +539,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 - |void| **set_monitoring**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_monitoring**\ (\ )
 
-为 ``true`` 时，该区域能够检测到进入和退出该区域的实体或区域。
+If ``true``, the area detects bodies or areas entering and exiting it.
 
 .. rst-class:: classref-item-separator
 
@@ -556,7 +556,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 - |void| **set_priority**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_priority**\ (\ )
 
-该区域的优先级。将优先处理优先级较高的区域。\ :ref:`World2D<class_World2D>` 的物理始终在所有区域之后处理。
+The area's priority. Higher priority areas are processed first. The :ref:`World2D<class_World2D>`'s physics is always processed last, after all areas.
 
 .. rst-class:: classref-section-separator
 
@@ -564,8 +564,8 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_Area2D_method_get_overlapping_areas:
 
@@ -573,9 +573,9 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 
 :ref:`Array<class_Array>`\[:ref:`Area2D<class_Area2D>`\] **get_overlapping_areas**\ (\ ) |const| :ref:`🔗<class_Area2D_method_get_overlapping_areas>`
 
-返回相交的 **Area2D** 的列表。重叠区域的 :ref:`CollisionObject2D.collision_layer<class_CollisionObject2D_property_collision_layer>` 必须是这个区域 :ref:`CollisionObject2D.collision_mask<class_CollisionObject2D_property_collision_mask>` 的一部分，这样才能被检测到。
+Returns a list of intersecting **Area2D**\ s. The overlapping area's :ref:`CollisionObject2D.collision_layer<class_CollisionObject2D_property_collision_layer>` must be part of this area's :ref:`CollisionObject2D.collision_mask<class_CollisionObject2D_property_collision_mask>` in order to be detected.
 
-出于性能的考虑（所有碰撞都是一起处理的），这个列表会在物理迭代时进行一次修改，而不是在物体被移动后立即修改。可考虑改用信号。
+For performance reasons (collisions are all processed at the same time) this list is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
 
 .. rst-class:: classref-item-separator
 
@@ -587,9 +587,9 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 
 :ref:`Array<class_Array>`\[:ref:`Node2D<class_Node2D>`\] **get_overlapping_bodies**\ (\ ) |const| :ref:`🔗<class_Area2D_method_get_overlapping_bodies>`
 
-返回相交的 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 和 :ref:`TileMap<class_TileMap>`\ 。重叠物体的 :ref:`CollisionObject2D.collision_layer<class_CollisionObject2D_property_collision_layer>` 必须是该区域 :ref:`CollisionObject2D.collision_mask<class_CollisionObject2D_property_collision_mask>` 的一部分，才能被检测到。
+Returns a list of intersecting :ref:`PhysicsBody2D<class_PhysicsBody2D>`\ s and :ref:`TileMap<class_TileMap>`\ s. The overlapping body's :ref:`CollisionObject2D.collision_layer<class_CollisionObject2D_property_collision_layer>` must be part of this area's :ref:`CollisionObject2D.collision_mask<class_CollisionObject2D_property_collision_mask>` in order to be detected.
 
-出于性能原因（所有碰撞都是一起处理的），这个列表只会在每次物理迭代时发生一次更改，不会在对象移动后立即更改。请考虑使用信号。
+For performance reasons (collisions are all processed at the same time) this list is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
 
 .. rst-class:: classref-item-separator
 
@@ -601,9 +601,9 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 
 :ref:`bool<class_bool>` **has_overlapping_areas**\ (\ ) |const| :ref:`🔗<class_Area2D_method_has_overlapping_areas>`
 
-如果与其他 **Area2D** 相交，则返回 ``true``\ ，否则返回 ``false``\ 。重叠区域的 :ref:`CollisionObject2D.collision_layer<class_CollisionObject2D_property_collision_layer>` 必须是该区域 :ref:`CollisionObject2D.collision_mask<class_CollisionObject2D_property_collision_mask>` 的一部分，才能被检测到。
+Returns ``true`` if intersecting any **Area2D**\ s, otherwise returns ``false``. The overlapping area's :ref:`CollisionObject2D.collision_layer<class_CollisionObject2D_property_collision_layer>` must be part of this area's :ref:`CollisionObject2D.collision_mask<class_CollisionObject2D_property_collision_mask>` in order to be detected.
 
-出于性能原因（所有碰撞都是一起处理的），重叠区域的列表只会在每次物理迭代时发生一次更改，不会在对象移动后立即更改。请考虑使用信号。
+For performance reasons (collisions are all processed at the same time) the list of overlapping areas is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
 
 .. rst-class:: classref-item-separator
 
@@ -615,9 +615,9 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 
 :ref:`bool<class_bool>` **has_overlapping_bodies**\ (\ ) |const| :ref:`🔗<class_Area2D_method_has_overlapping_bodies>`
 
-如果与其他 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 或 :ref:`TileMap<class_TileMap>` 相交，则返回 ``true``\ ，否则返回 ``false``\ 。重叠物体的 :ref:`CollisionObject2D.collision_layer<class_CollisionObject2D_property_collision_layer>` 必须是该区域 :ref:`CollisionObject2D.collision_mask<class_CollisionObject2D_property_collision_mask>` 的一部分，才能被检测到。
+Returns ``true`` if intersecting any :ref:`PhysicsBody2D<class_PhysicsBody2D>`\ s or :ref:`TileMap<class_TileMap>`\ s, otherwise returns ``false``. The overlapping body's :ref:`CollisionObject2D.collision_layer<class_CollisionObject2D_property_collision_layer>` must be part of this area's :ref:`CollisionObject2D.collision_mask<class_CollisionObject2D_property_collision_mask>` in order to be detected.
 
-出于性能原因（所有碰撞都是一起处理的），重叠物体的列表只会在每次物理迭代时发生一次更改，不会在对象移动后立即更改。请考虑使用信号。
+For performance reasons (collisions are all processed at the same time) the list of overlapping bodies is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
 
 .. rst-class:: classref-item-separator
 
@@ -629,9 +629,9 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 
 :ref:`bool<class_bool>` **overlaps_area**\ (\ area\: :ref:`Node<class_Node>`\ ) |const| :ref:`🔗<class_Area2D_method_overlaps_area>`
 
-如果给定的 **Area2D** 与此 **Area2D** 相交或重叠，则返回 ``true``\ ，否则返回 ``false``\ 。
+Returns ``true`` if the given **Area2D** intersects or overlaps this **Area2D**, ``false`` otherwise.
 
-\ **注意：**\ 测试结果不反映对象移动后的即时状态。出于性能原因，重叠列表每帧只会在物理迭代前更新一次。请考虑使用信号。
+\ **Note:** The result of this test is not immediate after moving objects. For performance, the list of overlaps is updated once per frame and before the physics step. Consider using signals instead.
 
 .. rst-class:: classref-item-separator
 
@@ -643,18 +643,18 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 
 :ref:`bool<class_bool>` **overlaps_body**\ (\ body\: :ref:`Node<class_Node>`\ ) |const| :ref:`🔗<class_Area2D_method_overlaps_body>`
 
-如果给定的物理物体与此 **Area2D** 相交或重叠，则返回 ``true``\ ，否则返回 ``false``\ 。
+Returns ``true`` if the given physics body intersects or overlaps this **Area2D**, ``false`` otherwise.
 
-\ **注意：**\ 测试结果不反映对象移动后的即时状态。出于性能原因，重叠列表每帧只会在物理迭代前更新一次。请考虑使用信号。
+\ **Note:** The result of this test is not immediate after moving objects. For performance, list of overlaps is updated once per frame and before the physics step. Consider using signals instead.
 
-参数 ``body`` 可以是 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 实例，也可以是 :ref:`TileMap<class_TileMap>` 实例。TileMap 虽然不是物理物体，但会把图块的碰撞形状注册为虚拟物理物体。
+The ``body`` argument can either be a :ref:`PhysicsBody2D<class_PhysicsBody2D>` or a :ref:`TileMap<class_TileMap>` instance. While TileMaps are not physics bodies themselves, they register their tiles with collision shapes as a virtual physics body.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

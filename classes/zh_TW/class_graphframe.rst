@@ -5,16 +5,14 @@
 GraphFrame
 ==========
 
-**實驗性：** This class may be changed or removed in future versions.
-
-**繼承：** :ref:`GraphElement<class_GraphElement>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`GraphElement<class_GraphElement>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 GraphFrame is a special :ref:`GraphElement<class_GraphElement>` that can be used to organize other :ref:`GraphElement<class_GraphElement>`\ s inside a :ref:`GraphEdit<class_GraphEdit>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 GraphFrame is a special :ref:`GraphElement<class_GraphElement>` to which other :ref:`GraphElement<class_GraphElement>`\ s can be attached. It can be configured to automatically resize to enclose all attached :ref:`GraphElement<class_GraphElement>`\ s. If the frame is moved, all the attached :ref:`GraphElement<class_GraphElement>`\ s inside it will be moved as well.
 
@@ -22,8 +20,8 @@ A GraphFrame is always kept behind the connection layer and other :ref:`GraphEle
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -46,8 +44,8 @@ A GraphFrame is always kept behind the connection layer and other :ref:`GraphEle
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -58,8 +56,8 @@ A GraphFrame is always kept behind the connection layer and other :ref:`GraphEle
 
 .. rst-class:: classref-reftable-group
 
-主題屬性
---------
+Theme Properties
+----------------
 
 .. table::
    :widths: auto
@@ -82,8 +80,8 @@ A GraphFrame is always kept behind the connection layer and other :ref:`GraphEle
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_GraphFrame_signal_autoshrink_changed:
 
@@ -99,8 +97,8 @@ Emitted when :ref:`autoshrink_enabled<class_GraphFrame_property_autoshrink_enabl
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_GraphFrame_property_autoshrink_enabled:
 
@@ -206,8 +204,8 @@ Title of the frame.
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_GraphFrame_method_get_titlebar_hbox:
 
@@ -225,8 +223,8 @@ This can be used to add custom controls to the title bar such as option or close
 
 .. rst-class:: classref-descriptions-group
 
-主題屬性說明
-------------
+Theme Property Descriptions
+---------------------------
 
 .. _class_GraphFrame_theme_color_resizer_color:
 
@@ -234,7 +232,7 @@ This can be used to add custom controls to the title bar such as option or close
 
 :ref:`Color<class_Color>` **resizer_color** = ``Color(0.875, 0.875, 0.875, 1)`` :ref:`🔗<class_GraphFrame_theme_color_resizer_color>`
 
-套用於調整尺寸大小圖示的顏色調變。
+The color modulation applied to the resizer icon.
 
 .. rst-class:: classref-item-separator
 
@@ -284,12 +282,12 @@ The :ref:`StyleBox<class_StyleBox>` used for the title bar of the **GraphFrame**
 
 The :ref:`StyleBox<class_StyleBox>` used for the title bar of the **GraphFrame** when it is selected.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

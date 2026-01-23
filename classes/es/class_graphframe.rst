@@ -5,8 +5,6 @@
 GraphFrame
 ==========
 
-**Experimental:** This class may be changed or removed in future versions.
-
 **Hereda:** :ref:`GraphElement<class_GraphElement>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 GraphFrame es un :ref:`GraphElement<class_GraphElement>` especial que se puede utilizar para organizar otros :ref:`GraphElement<class_GraphElement>`\ s dentro de un :ref:`GraphEdit<class_GraphEdit>`.

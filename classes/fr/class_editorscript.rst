@@ -14,13 +14,13 @@ Script de base qui permet d'étendre les fonctionnalités de l'éditeur.
 Description
 -----------
 
-Scripts extending this class and implementing its :ref:`_run()<class_EditorScript_private_method__run>` method can be executed from the Script Editor's **File > Run** menu option (or by pressing :kbd:`Ctrl + Shift + X`) while the editor is running. This is useful for adding custom in-editor functionality to Godot. For more complex additions, consider using :ref:`EditorPlugin<class_EditorPlugin>`\ s instead.
+Les scripts héritant de cette classe et implémentant la méthode :ref:`_run()<class_EditorScript_private_method__run>` peuvent être exécutés depuis l'éditeur de script avec l'option de menu **Fichier > Lancer** (ou avec :kbd:`Ctrl + Shift + X`) quand l'éditeur est lancé. C'est utilise pour ajouter des fonctionnalités personnalisées dans l'éditeur de Godot. Pour des additions plus complexes, préférez plutôt utiliser :ref:`EditorPlugin<class_EditorPlugin>`.
 
-If a script extending this class also has a global class name, it will be included in the editor's command palette.
+Si un script élargissant cette classe a également un nom de classe mondial, il sera inclus dans la palette de commandes de l'éditeur.
 
-\ **Note:** Extending scripts need to have ``tool`` mode enabled.
+\ **Note :** Les scripts doivent activer le mode ``tool`` pour cela.
 
-\ **Example:** Running the following script prints "Hello from the Godot Editor!":
+\ **Exemple :**\ Lancer le script suivant affiche"Bonjour de l'Éditeur Godot!":
 
 
 .. tabs::
@@ -38,7 +38,7 @@ If a script extending this class also has a global class name, it will be includ
     using Godot;
 
     [Tool]
-    public partial class HelloEditor : EditorScript
+    public partial class HelloEditor : EditorScript
     {
         public override void _Run()
         {
@@ -48,7 +48,7 @@ If a script extending this class also has a global class name, it will be includ
 
 
 
-\ **Note:** EditorScript is :ref:`RefCounted<class_RefCounted>`, meaning it is destroyed when nothing references it. This can cause errors during asynchronous operations if there are no references to the script.
+\ **Note :** EditorScript est :ref:`RefCounted<class_RefCounted>`, ce qui signifie qu'il est détruit quand rien ne le mentionne. Cela peut causer des erreurs lors d'opérations asynchrones s'il n'y a aucune référence au script.
 
 .. rst-class:: classref-reftable-group
 

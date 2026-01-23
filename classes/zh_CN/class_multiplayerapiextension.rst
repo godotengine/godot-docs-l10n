@@ -8,18 +8,18 @@
 MultiplayerAPIExtension
 =======================
 
-**继承：** :ref:`MultiplayerAPI<class_MultiplayerAPI>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`MultiplayerAPI<class_MultiplayerAPI>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用于扩展 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 的基类。
+Base class used for extending the :ref:`MultiplayerAPI<class_MultiplayerAPI>`.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-该类可用于通过脚本或扩展来扩展或替换默认的 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 实现。
+This class can be used to extend or replace the default :ref:`MultiplayerAPI<class_MultiplayerAPI>` implementation via script or extensions.
 
-下面的例子通过记录每一个正在进行的 RPC 和为复制而配置的每一个对象，扩展默认的实现（\ :ref:`SceneMultiplayer<class_SceneMultiplayer>`\ ）。
+The following example extend the default implementation (:ref:`SceneMultiplayer<class_SceneMultiplayer>`) by logging every RPC being made, and every object being configured for replication.
 
 
 .. tabs::
@@ -29,11 +29,11 @@ MultiplayerAPIExtension
     extends MultiplayerAPIExtension
     class_name LogMultiplayer
 
-    # 我们想扩展默认的 SceneMultiplayer。
+    # We want to extend the default SceneMultiplayer.
     var base_multiplayer = SceneMultiplayer.new()
 
     func _init():
-        # 仅传递基本信号（复制到 var 以避免循环引用）
+        # Just passthrough base signals (copied to var to avoid cyclic reference)
         var cts = connected_to_server
         var cf = connection_failed
         var sd = server_disconnected
@@ -48,28 +48,28 @@ MultiplayerAPIExtension
     func _poll():
         return base_multiplayer.poll()
 
-    # 记录正在进行的 RPC 并将其转发到默认的多人游戏。
+    # Log RPC being made and forward it to the default multiplayer.
     func _rpc(peer: int, object: Object, method: StringName, args: Array) -> Error:
-        print("获取用于 %d 的 RPC：%s::%s(%s)" % [peer, object, method, args])
+        print("Got RPC for %d: %s::%s(%s)" % [peer, object, method, args])
         return base_multiplayer.rpc(peer, object, method, args)
 
-    # 记录配置添加。例如，根路径（nullptr、NodePath），复制（Node、Spawner|Synchronizer），自定义。
+    # Log configuration add. E.g. root path (nullptr, NodePath), replication (Node, Spawner|Synchronizer), custom.
     func _object_configuration_add(object, config: Variant) -> Error:
         if config is MultiplayerSynchronizer:
-            print("添加用于 %s 的同步配置。同步器：%s" % [object, config])
+            print("Adding synchronization configuration for %s. Synchronizer: %s" % [object, config])
         elif config is MultiplayerSpawner:
-            print("将节点 %s 添加到出生列表。出生器：%s" % [object, config])
+            print("Adding node %s to the spawn list. Spawner: %s" % [object, config])
         return base_multiplayer.object_configuration_add(object, config)
 
-    # 记录配置移除。例如，根路径（nullptr、NodePath），复制（Node、Spawner|Synchronizer），自定义。
+    # Log configuration remove. E.g. root path (nullptr, NodePath), replication (Node, Spawner|Synchronizer), custom.
     func _object_configuration_remove(object, config: Variant) -> Error:
         if config is MultiplayerSynchronizer:
-            print("移除用于 %s 的同步配置。同步器：%s" % [object, config])
+            print("Removing synchronization configuration for %s. Synchronizer: %s" % [object, config])
         elif config is MultiplayerSpawner:
-            print("将节点 %s 从出生列表移除。出生器：%s" % [object, config])
+            print("Removing node %s from the spawn list. Spawner: %s" % [object, config])
         return base_multiplayer.object_configuration_remove(object, config)
 
-    # 这些可以是可选的，但在我们的例子中，我们想要扩展 SceneMultiplayer，所以转发所有内容。
+    # These can be optional, but in our case we want to extend SceneMultiplayer, so forward everything.
     func _set_multiplayer_peer(p_peer: MultiplayerPeer):
         base_multiplayer.multiplayer_peer = p_peer
 
@@ -87,7 +87,7 @@ MultiplayerAPIExtension
 
 
 
-然后在你的主场景或在自动加载中调用 :ref:`SceneTree.set_multiplayer()<class_SceneTree_method_set_multiplayer>`\ ，以开始使用你的自定义 :ref:`MultiplayerAPI<class_MultiplayerAPI>`\ ：
+Then in your main scene or in an autoload call :ref:`SceneTree.set_multiplayer()<class_SceneTree_method_set_multiplayer>` to start using your custom :ref:`MultiplayerAPI<class_MultiplayerAPI>`:
 
 
 .. tabs::
@@ -96,17 +96,17 @@ MultiplayerAPIExtension
 
     # autoload.gd
     func _enter_tree():
-        # 将我们的自定义多人游戏设置为 SceneTree 中的主要的多人游戏。
+        # Sets our custom multiplayer as the main one in SceneTree.
         get_tree().set_multiplayer(LogMultiplayer.new())
 
 
 
-原生扩展也可以在初始化期间，使用 :ref:`MultiplayerAPI.set_default_interface()<class_MultiplayerAPI_method_set_default_interface>` 方法将自己配置为默认实现。
+Native extensions can alternatively use the :ref:`MultiplayerAPI.set_default_interface()<class_MultiplayerAPI_method_set_default_interface>` method during initialization to configure themselves as the default implementation.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -137,8 +137,8 @@ MultiplayerAPIExtension
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_MultiplayerAPIExtension_private_method__get_multiplayer_peer:
 
@@ -146,7 +146,7 @@ MultiplayerAPIExtension
 
 :ref:`MultiplayerPeer<class_MultiplayerPeer>` **_get_multiplayer_peer**\ (\ ) |virtual| :ref:`🔗<class_MultiplayerAPIExtension_private_method__get_multiplayer_peer>`
 
-在检索到 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 时调用。
+Called when the :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` is retrieved.
 
 .. rst-class:: classref-item-separator
 
@@ -158,7 +158,7 @@ MultiplayerAPIExtension
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **_get_peer_ids**\ (\ ) |virtual| |const| :ref:`🔗<class_MultiplayerAPIExtension_private_method__get_peer_ids>`
 
-:ref:`MultiplayerAPI.get_peers()<class_MultiplayerAPI_method_get_peers>` 的回调。
+Callback for :ref:`MultiplayerAPI.get_peers()<class_MultiplayerAPI_method_get_peers>`.
 
 .. rst-class:: classref-item-separator
 
@@ -170,7 +170,7 @@ MultiplayerAPIExtension
 
 :ref:`int<class_int>` **_get_remote_sender_id**\ (\ ) |virtual| |const| :ref:`🔗<class_MultiplayerAPIExtension_private_method__get_remote_sender_id>`
 
-:ref:`MultiplayerAPI.get_remote_sender_id()<class_MultiplayerAPI_method_get_remote_sender_id>` 的回调。
+Callback for :ref:`MultiplayerAPI.get_remote_sender_id()<class_MultiplayerAPI_method_get_remote_sender_id>`.
 
 .. rst-class:: classref-item-separator
 
@@ -182,7 +182,7 @@ MultiplayerAPIExtension
 
 :ref:`int<class_int>` **_get_unique_id**\ (\ ) |virtual| |const| :ref:`🔗<class_MultiplayerAPIExtension_private_method__get_unique_id>`
 
-:ref:`MultiplayerAPI.get_unique_id()<class_MultiplayerAPI_method_get_unique_id>` 的回调。
+Callback for :ref:`MultiplayerAPI.get_unique_id()<class_MultiplayerAPI_method_get_unique_id>`.
 
 .. rst-class:: classref-item-separator
 
@@ -194,7 +194,7 @@ MultiplayerAPIExtension
 
 :ref:`Error<enum_@GlobalScope_Error>` **_object_configuration_add**\ (\ object\: :ref:`Object<class_Object>`, configuration\: :ref:`Variant<class_Variant>`\ ) |virtual| :ref:`🔗<class_MultiplayerAPIExtension_private_method__object_configuration_add>`
 
-:ref:`MultiplayerAPI.object_configuration_add()<class_MultiplayerAPI_method_object_configuration_add>` 的回调。
+Callback for :ref:`MultiplayerAPI.object_configuration_add()<class_MultiplayerAPI_method_object_configuration_add>`.
 
 .. rst-class:: classref-item-separator
 
@@ -206,7 +206,7 @@ MultiplayerAPIExtension
 
 :ref:`Error<enum_@GlobalScope_Error>` **_object_configuration_remove**\ (\ object\: :ref:`Object<class_Object>`, configuration\: :ref:`Variant<class_Variant>`\ ) |virtual| :ref:`🔗<class_MultiplayerAPIExtension_private_method__object_configuration_remove>`
 
-:ref:`MultiplayerAPI.object_configuration_remove()<class_MultiplayerAPI_method_object_configuration_remove>` 的回调。
+Callback for :ref:`MultiplayerAPI.object_configuration_remove()<class_MultiplayerAPI_method_object_configuration_remove>`.
 
 .. rst-class:: classref-item-separator
 
@@ -218,7 +218,7 @@ MultiplayerAPIExtension
 
 :ref:`Error<enum_@GlobalScope_Error>` **_poll**\ (\ ) |virtual| :ref:`🔗<class_MultiplayerAPIExtension_private_method__poll>`
 
-:ref:`MultiplayerAPI.poll()<class_MultiplayerAPI_method_poll>` 的回调。
+Callback for :ref:`MultiplayerAPI.poll()<class_MultiplayerAPI_method_poll>`.
 
 .. rst-class:: classref-item-separator
 
@@ -230,7 +230,7 @@ MultiplayerAPIExtension
 
 :ref:`Error<enum_@GlobalScope_Error>` **_rpc**\ (\ peer\: :ref:`int<class_int>`, object\: :ref:`Object<class_Object>`, method\: :ref:`StringName<class_StringName>`, args\: :ref:`Array<class_Array>`\ ) |virtual| :ref:`🔗<class_MultiplayerAPIExtension_private_method__rpc>`
 
-:ref:`MultiplayerAPI.rpc()<class_MultiplayerAPI_method_rpc>` 的回调。
+Callback for :ref:`MultiplayerAPI.rpc()<class_MultiplayerAPI_method_rpc>`.
 
 .. rst-class:: classref-item-separator
 
@@ -242,14 +242,14 @@ MultiplayerAPIExtension
 
 |void| **_set_multiplayer_peer**\ (\ multiplayer_peer\: :ref:`MultiplayerPeer<class_MultiplayerPeer>`\ ) |virtual| :ref:`🔗<class_MultiplayerAPIExtension_private_method__set_multiplayer_peer>`
 
-在设置 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 时调用。
+Called when the :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` is set.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

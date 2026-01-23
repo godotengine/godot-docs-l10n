@@ -5,18 +5,18 @@
 Tweener
 =======
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`CallbackTweener<class_CallbackTweener>`, :ref:`IntervalTweener<class_IntervalTweener>`, :ref:`MethodTweener<class_MethodTweener>`, :ref:`PropertyTweener<class_PropertyTweener>`, :ref:`SubtweenTweener<class_SubtweenTweener>`
+**Inherited By:** :ref:`CallbackTweener<class_CallbackTweener>`, :ref:`IntervalTweener<class_IntervalTweener>`, :ref:`MethodTweener<class_MethodTweener>`, :ref:`PropertyTweener<class_PropertyTweener>`, :ref:`SubtweenTweener<class_SubtweenTweener>`
 
-:ref:`Tween<class_Tween>` 使用的所有 Tweener（補間器）的抽象類別。
+Abstract class for all Tweeners used by :ref:`Tween<class_Tween>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-Tweener 是執行特定動畫化的工作的物件，例如，在給定的時間，插值一個屬性或呼叫一個方法。\ **Tweener** 不能被手動建立，你需要使用 :ref:`Tween<class_Tween>` 中的專用方法。
+Tweeners are objects that perform a specific animating task, e.g. interpolating a property or calling a method at a given time. A **Tweener** can't be created manually, you need to use a dedicated method from :ref:`Tween<class_Tween>`.
 
 .. rst-class:: classref-section-separator
 
@@ -24,8 +24,8 @@ Tweener 是執行特定動畫化的工作的物件，例如，在給定的時間
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_Tweener_signal_finished:
 
@@ -35,12 +35,12 @@ Tweener 是執行特定動畫化的工作的物件，例如，在給定的時間
 
 Emitted when the **Tweener** has just finished its job or became invalid (e.g. due to a freed object).
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

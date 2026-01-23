@@ -5,20 +5,20 @@
 ZIPReader
 =========
 
-**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-允许读取 ZIP 文件的内容。
+Allows reading the content of a ZIP file.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-该类实现了能够从 ZIP 压缩包中提取各个文件内容的读取器。另见 :ref:`ZIPPacker<class_ZIPPacker>`\ 。
+This class implements a reader that can extract the content of individual files inside a ZIP archive. See also :ref:`ZIPPacker<class_ZIPPacker>`.
 
 ::
 
-    # 读取 ZIP 压缩包中的单个文件。
+    # Read a single file from a ZIP archive.
     func read_zip_file():
         var reader = ZIPReader.new()
         var err = reader.open("user://archive.zip")
@@ -28,27 +28,27 @@ ZIPReader
         reader.close()
         return res
 
-    # 解压 ZIP 压缩包中的所有文件，保持目录结构。
-    # 功能类似于大多数归档文件管理器中的“全部解压”功能。
+    # Extract all files from a ZIP archive, preserving the directories within.
+    # This acts like the "Extract all" functionality from most archive managers.
     func extract_all_from_zip():
         var reader = ZIPReader.new()
         reader.open("res://archive.zip")
 
-        # 解压文件的目标目录（解压前必须存在）。
-        # 不是所有的 ZIP 压缩包都会把所有文件都放在根文件夹中，
-        # 解压后 `root_dir` 中会创建若干文件/文件夹。
+        # Destination directory for the extracted files (this folder must exist before extraction).
+        # Not all ZIP archives put everything in a single root folder,
+        # which means several files/folders may be created in `root_dir` after extraction.
         var root_dir = DirAccess.open("user://")
 
         var files = reader.get_files()
         for file_path in files:
-            # 如果当前条目是目录。
+            # If the current entry is a directory.
             if file_path.ends_with("/"):
                 root_dir.make_dir_recursive(file_path)
                 continue
 
-            # 写入文件内容，需要时自动创建文件夹。
-            # 不是所有 ZIP 压缩包都遵循特定的顺序，这一步的作用是
-            # 防止文件条目出现在文件夹条目之前。
+            # Write file contents, creating folders automatically when needed.
+            # Not all ZIP archives are strictly ordered, so we need to do this in case
+            # the file entry comes before the folder entry.
             root_dir.make_dir_recursive(root_dir.get_current_dir().path_join(file_path).get_base_dir())
             var file = FileAccess.open(root_dir.get_current_dir().path_join(file_path), FileAccess.WRITE)
             var buffer = reader.read_file(file_path)
@@ -56,8 +56,8 @@ ZIPReader
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -82,8 +82,8 @@ ZIPReader
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_ZIPReader_method_close:
 
@@ -91,7 +91,7 @@ ZIPReader
 
 :ref:`Error<enum_@GlobalScope_Error>` **close**\ (\ ) :ref:`🔗<class_ZIPReader_method_close>`
 
-关闭该实例底层所使用的资源。
+Closes the underlying resources used by this instance.
 
 .. rst-class:: classref-item-separator
 
@@ -103,9 +103,9 @@ ZIPReader
 
 :ref:`bool<class_bool>` **file_exists**\ (\ path\: :ref:`String<class_String>`, case_sensitive\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ZIPReader_method_file_exists>`
 
-如果加载的 zip 存档中存在对应的文件，则返回 ``true``\ 。
+Returns ``true`` if the file exists in the loaded zip archive.
 
-必须在 :ref:`open()<class_ZIPReader_method_open>` 之后调用。
+Must be called after :ref:`open()<class_ZIPReader_method_open>`.
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ ZIPReader
 
 :ref:`int<class_int>` **get_compression_level**\ (\ path\: :ref:`String<class_String>`, case_sensitive\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ZIPReader_method_get_compression_level>`
 
-返回加载到的 zip 归档中文件的压缩级别。如果文件不存在或发生其他错误，则返回 ``-1``\ 。必须在 :ref:`open()<class_ZIPReader_method_open>` 后调用。
+Returns the compression level of the file in the loaded zip archive. Returns ``-1`` if the file doesn't exist or any other error occurs. Must be called after :ref:`open()<class_ZIPReader_method_open>`.
 
 .. rst-class:: classref-item-separator
 
@@ -129,9 +129,9 @@ ZIPReader
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_files**\ (\ ) :ref:`🔗<class_ZIPReader_method_get_files>`
 
-返回加载的存档中所有文件的名称列表。
+Returns the list of names of all files in the loaded archive.
 
-必须在 :ref:`open()<class_ZIPReader_method_open>` 之后调用。
+Must be called after :ref:`open()<class_ZIPReader_method_open>`.
 
 .. rst-class:: classref-item-separator
 
@@ -143,7 +143,7 @@ ZIPReader
 
 :ref:`Error<enum_@GlobalScope_Error>` **open**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ZIPReader_method_open>`
 
-打开给定 ``path`` 的压缩文件，并读取其文件索引。
+Opens the zip archive at the given ``path`` and reads its file index.
 
 .. rst-class:: classref-item-separator
 
@@ -155,16 +155,16 @@ ZIPReader
 
 :ref:`PackedByteArray<class_PackedByteArray>` **read_file**\ (\ path\: :ref:`String<class_String>`, case_sensitive\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ZIPReader_method_read_file>`
 
-将加载的 zip 存档中文件的全部内容加载到内存中并返回它。
+Loads the whole content of a file in the loaded zip archive into memory and returns it.
 
-必须在 :ref:`open()<class_ZIPReader_method_open>` 之后调用。
+Must be called after :ref:`open()<class_ZIPReader_method_open>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

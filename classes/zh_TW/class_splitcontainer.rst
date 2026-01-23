@@ -5,30 +5,30 @@
 SplitContainer
 ==============
 
-**繼承：** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`HSplitContainer<class_HSplitContainer>`, :ref:`VSplitContainer<class_VSplitContainer>`
+**Inherited By:** :ref:`HSplitContainer<class_HSplitContainer>`, :ref:`VSplitContainer<class_VSplitContainer>`
 
 A container that arranges child controls horizontally or vertically and provides grabbers for adjusting the split ratios between them.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 A container that arranges child controls horizontally or vertically and creates grabbers between them. The grabbers can be dragged around to change the size relations between the child controls.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`使用容器 <../tutorials/ui/gui_containers>`
+- :doc:`Using Containers <../tutorials/ui/gui_containers>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -59,8 +59,8 @@ A container that arranges child controls horizontally or vertically and creates 
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -75,8 +75,8 @@ A container that arranges child controls horizontally or vertically and creates 
 
 .. rst-class:: classref-reftable-group
 
-主題屬性
---------
+Theme Properties
+----------------
 
 .. table::
    :widths: auto
@@ -115,8 +115,8 @@ A container that arranges child controls horizontally or vertically and creates 
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_SplitContainer_signal_drag_ended:
 
@@ -156,8 +156,8 @@ Emitted when any dragger is dragged by user.
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_SplitContainer_DraggerVisibility:
 
@@ -201,8 +201,8 @@ The split dragger icon is not visible, and the split bar is collapsed to zero th
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_SplitContainer_property_collapsed:
 
@@ -334,7 +334,7 @@ Enables or disables split dragging.
 - |void| **set_split_offset**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_split_offset**\ (\ )
 
-**已棄用：** Use :ref:`split_offsets<class_SplitContainer_property_split_offsets>` instead. The first element of the array is the split offset between the first two children.
+**Deprecated:** Use :ref:`split_offsets<class_SplitContainer_property_split_offsets>` instead. The first element of the array is the split offset between the first two children.
 
 The first element of :ref:`split_offsets<class_SplitContainer_property_split_offsets>`.
 
@@ -393,9 +393,9 @@ If ``true``, a touch-friendly drag handle will be enabled for better usability o
 - |void| **set_vertical**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_vertical**\ (\ )
 
-如果為 ``true``\ ，則該 **SplitContainer** 會垂直排列其子代，而不是水平排列。
+If ``true``, the **SplitContainer** will arrange its children vertically, rather than horizontally.
 
-在使用 :ref:`HSplitContainer<class_HSplitContainer>` 和 :ref:`VSplitContainer<class_VSplitContainer>` 時無法改變。
+Can't be changed when using :ref:`HSplitContainer<class_HSplitContainer>` and :ref:`VSplitContainer<class_VSplitContainer>`.
 
 .. rst-class:: classref-section-separator
 
@@ -403,8 +403,8 @@ If ``true``, a touch-friendly drag handle will be enabled for better usability o
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_SplitContainer_method_clamp_split_offset:
 
@@ -424,7 +424,7 @@ Clamps the :ref:`split_offsets<class_SplitContainer_property_split_offsets>` val
 
 :ref:`Control<class_Control>` **get_drag_area_control**\ (\ ) :ref:`🔗<class_SplitContainer_method_get_drag_area_control>`
 
-**已棄用：** Use the first element of :ref:`get_drag_area_controls()<class_SplitContainer_method_get_drag_area_controls>` instead.
+**Deprecated:** Use the first element of :ref:`get_drag_area_controls()<class_SplitContainer_method_get_drag_area_controls>` instead.
 
 Returns the drag area :ref:`Control<class_Control>`. For example, you can move a pre-configured button into the drag area :ref:`Control<class_Control>` so that it rides along with the split bar. Try setting the :ref:`Button<class_Button>` anchors to ``center`` prior to the ``reparent()`` call.
 
@@ -462,8 +462,8 @@ Returns an :ref:`Array<class_Array>` of the drag area :ref:`Control<class_Contro
 
 .. rst-class:: classref-descriptions-group
 
-主題屬性說明
-------------
+Theme Property Descriptions
+---------------------------
 
 .. _class_SplitContainer_theme_color_touch_dragger_color:
 
@@ -619,12 +619,12 @@ The icon used for the drag handle when :ref:`touch_dragger_enabled<class_SplitCo
 
 Determines the background of the split bar if its thickness is greater than zero.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

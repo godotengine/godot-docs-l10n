@@ -5,23 +5,23 @@
 ResourceFormatSaver
 ===================
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-將特定資源型別保存到檔案。
+Saves a specific resource type to a file.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-當你從編輯器執行此操作或使用 :ref:`ResourceSaver<class_ResourceSaver>` 單例時，引擎可以節省資源。這要歸功於多個 **ResourceFormatSaver**\ ，每個都處理自己的格式並由引擎自動呼叫。
+The engine can save resources when you do it from the editor, or when you use the :ref:`ResourceSaver<class_ResourceSaver>` singleton. This is accomplished thanks to multiple **ResourceFormatSaver**\ s, each handling its own format and called automatically by the engine.
 
-預設情況下，Godot 將資源保存為 ``.tres``\ （基於文字）、\ ``.res``\ （二進位）或其他內建格式，但你可以選擇通過擴充這個類來建立自己的格式。請務必遵守記錄的返回型別和值。你應該給它一個全域類別名稱 ``class_name`` 以便它被註冊。與內建的 ResourceFormatSaver 一樣，它會在保存其識別型別的資源時自動呼叫。你也可以實作一個 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`\ 。
+By default, Godot saves resources as ``.tres`` (text-based), ``.res`` (binary) or another built-in format, but you can choose to create your own format by extending this class. Be sure to respect the documented return types and values. You should give it a global class name with ``class_name`` for it to be registered. Like built-in ResourceFormatSavers, it will be called automatically when saving resources of its recognized type(s). You may also implement a :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ ResourceFormatSaver
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_ResourceFormatSaver_private_method__get_recognized_extensions:
 
@@ -53,7 +53,7 @@ ResourceFormatSaver
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_recognized_extensions**\ (\ resource\: :ref:`Resource<class_Resource>`\ ) |virtual| |const| :ref:`🔗<class_ResourceFormatSaver_private_method__get_recognized_extensions>`
 
-返回可用於保存資源對象的副檔名列表，前提是該資源物件已被識別（見 :ref:`_recognize()<class_ResourceFormatSaver_private_method__recognize>`\ ）。
+Returns the list of extensions available for saving the resource object, provided it is recognized (see :ref:`_recognize()<class_ResourceFormatSaver_private_method__recognize>`).
 
 .. rst-class:: classref-item-separator
 
@@ -65,7 +65,7 @@ ResourceFormatSaver
 
 :ref:`bool<class_bool>` **_recognize**\ (\ resource\: :ref:`Resource<class_Resource>`\ ) |virtual| |const| :ref:`🔗<class_ResourceFormatSaver_private_method__recognize>`
 
-返回此保存程式能否保存給定的資源物件。
+Returns whether the given resource object can be saved by this saver.
 
 .. rst-class:: classref-item-separator
 
@@ -77,9 +77,9 @@ ResourceFormatSaver
 
 :ref:`bool<class_bool>` **_recognize_path**\ (\ resource\: :ref:`Resource<class_Resource>`, path\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_ResourceFormatSaver_private_method__recognize_path>`
 
-如果該saver可以處理給定的保存路徑，則返回\ ``true``\ ，否則返回\ ``false``\ 。
+Returns ``true`` if this saver handles a given save path and ``false`` otherwise.
 
-如果未實作該方法，則預設行為是檢查路徑的副檔名是否在\ :ref:`_get_recognized_extensions()<class_ResourceFormatSaver_private_method__get_recognized_extensions>`\ 提供的範圍內。
+If this method is not implemented, the default behavior returns whether the path's extension is within the ones provided by :ref:`_get_recognized_extensions()<class_ResourceFormatSaver_private_method__get_recognized_extensions>`.
 
 .. rst-class:: classref-item-separator
 
@@ -91,9 +91,9 @@ ResourceFormatSaver
 
 :ref:`Error<enum_@GlobalScope_Error>` **_save**\ (\ resource\: :ref:`Resource<class_Resource>`, path\: :ref:`String<class_String>`, flags\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_ResourceFormatSaver_private_method__save>`
 
-將給定的資源物件保存到目標\ ``path``\ 中的檔中。 ``flags``\ 是一個位掩碼，由\ :ref:`SaverFlags<enum_ResourceSaver_SaverFlags>`\ 常數組成。
+Saves the given resource object to a file at the target ``path``. ``flags`` is a bitmask composed with :ref:`SaverFlags<enum_ResourceSaver_SaverFlags>` constants.
 
-成功時返回\ :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，失敗時返回\ :ref:`Error<enum_@GlobalScope_Error>`\ 常數。
+Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or an :ref:`Error<enum_@GlobalScope_Error>` constant in case of failure.
 
 .. rst-class:: classref-item-separator
 
@@ -105,14 +105,14 @@ ResourceFormatSaver
 
 :ref:`Error<enum_@GlobalScope_Error>` **_set_uid**\ (\ path\: :ref:`String<class_String>`, uid\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_ResourceFormatSaver_private_method__set_uid>`
 
-為給定 ``path`` 處的資源設定新的 UID。成功時返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，失敗時返回 :ref:`Error<enum_@GlobalScope_Error>` 常數。
+Sets a new UID for the resource at the given ``path``. Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or an :ref:`Error<enum_@GlobalScope_Error>` constant in case of failure.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

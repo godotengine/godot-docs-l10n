@@ -5,30 +5,30 @@
 AudioEffectFilter
 =================
 
-**繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>`, :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`, :ref:`AudioEffectHighPassFilter<class_AudioEffectHighPassFilter>`, :ref:`AudioEffectHighShelfFilter<class_AudioEffectHighShelfFilter>`, :ref:`AudioEffectLowPassFilter<class_AudioEffectLowPassFilter>`, :ref:`AudioEffectLowShelfFilter<class_AudioEffectLowShelfFilter>`, :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`
+**Inherited By:** :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>`, :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`, :ref:`AudioEffectHighPassFilter<class_AudioEffectHighPassFilter>`, :ref:`AudioEffectHighShelfFilter<class_AudioEffectHighShelfFilter>`, :ref:`AudioEffectLowPassFilter<class_AudioEffectLowPassFilter>`, :ref:`AudioEffectLowShelfFilter<class_AudioEffectLowShelfFilter>`, :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`
 
-為音訊匯流排新增濾波器。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-允許 :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` 以外的頻率通過。
+Adds a filter to the audio bus.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
+Allows frequencies other than the :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` to pass.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Audio buses <../tutorials/audio/audio_buses>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ AudioEffectFilter
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_AudioEffectFilter_FilterDB:
 
@@ -64,7 +64,7 @@ enum **FilterDB**: :ref:`🔗<enum_AudioEffectFilter_FilterDB>`
 
 :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>` **FILTER_6DB** = ``0``
 
-每八度 6 dB 截止。
+Cutting off at 6dB per octave.
 
 .. _class_AudioEffectFilter_constant_FILTER_12DB:
 
@@ -72,7 +72,7 @@ enum **FilterDB**: :ref:`🔗<enum_AudioEffectFilter_FilterDB>`
 
 :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>` **FILTER_12DB** = ``1``
 
-每八度 12 dB 截止。
+Cutting off at 12dB per octave.
 
 .. _class_AudioEffectFilter_constant_FILTER_18DB:
 
@@ -80,7 +80,7 @@ enum **FilterDB**: :ref:`🔗<enum_AudioEffectFilter_FilterDB>`
 
 :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>` **FILTER_18DB** = ``2``
 
-每八度 18 dB 截止。
+Cutting off at 18dB per octave.
 
 .. _class_AudioEffectFilter_constant_FILTER_24DB:
 
@@ -88,7 +88,7 @@ enum **FilterDB**: :ref:`🔗<enum_AudioEffectFilter_FilterDB>`
 
 :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>` **FILTER_24DB** = ``3``
 
-每八度 24 dB 截止。
+Cutting off at 24dB per octave.
 
 .. rst-class:: classref-section-separator
 
@@ -96,8 +96,8 @@ enum **FilterDB**: :ref:`🔗<enum_AudioEffectFilter_FilterDB>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_AudioEffectFilter_property_cutoff_hz:
 
@@ -110,7 +110,7 @@ enum **FilterDB**: :ref:`🔗<enum_AudioEffectFilter_FilterDB>`
 - |void| **set_cutoff**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_cutoff**\ (\ )
 
-濾波閾值頻率（Hz）。
+Threshold frequency for the filter, in Hz.
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +127,7 @@ enum **FilterDB**: :ref:`🔗<enum_AudioEffectFilter_FilterDB>`
 - |void| **set_db**\ (\ value\: :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>`\ )
 - :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>` **get_db**\ (\ )
 
-截止曲線的斜率（dB/Oct），亦即濾波器階數；階數越高，截止越陡峭。
+Steepness of the cutoff curve in dB per octave, also known as the order of the filter. Higher orders have a more aggressive cutoff.
 
 .. rst-class:: classref-item-separator
 
@@ -144,7 +144,7 @@ enum **FilterDB**: :ref:`🔗<enum_AudioEffectFilter_FilterDB>`
 - |void| **set_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gain**\ (\ )
 
-經濾波後頻率的增益量。
+Gain amount of the frequencies after the filter.
 
 .. rst-class:: classref-item-separator
 
@@ -161,14 +161,14 @@ enum **FilterDB**: :ref:`🔗<enum_AudioEffectFilter_FilterDB>`
 - |void| **set_resonance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_resonance**\ (\ )
 
-靠近截止頻率處的提升量。
+Amount of boost in the frequency range near the cutoff frequency.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

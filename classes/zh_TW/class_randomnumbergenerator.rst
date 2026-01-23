@@ -5,14 +5,14 @@
 RandomNumberGenerator
 =====================
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-提供生成偽亂數的方法。
+Provides methods for generating pseudo-random numbers.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 RandomNumberGenerator is a class for generating pseudo-random numbers. It currently uses `PCG32 <https://www.pcg-random.org/>`__.
 
@@ -28,15 +28,15 @@ To generate a random float number (within a given range) based on a time-depende
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`亂數產生 <../tutorials/math/random_number_generation>`
+- :doc:`Random number generation <../tutorials/math/random_number_generation>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ To generate a random float number (within a given range) based on a time-depende
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -77,8 +77,8 @@ To generate a random float number (within a given range) based on a time-depende
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_RandomNumberGenerator_property_seed:
 
@@ -91,19 +91,19 @@ To generate a random float number (within a given range) based on a time-depende
 - |void| **set_seed**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_seed**\ (\ )
 
-根據給定的種子值初始化亂數產生器狀態。給定的種子將給出一個可重現的偽亂數序列。
+Initializes the random number generator state based on the given seed value. A given seed will give a reproducible sequence of pseudo-random numbers.
 
-\ **注意：**\ RNG 沒有雪崩效應，給定相似的種子可以輸出相似的隨機流。如果種子來自外部，請考慮使用雜湊函式來提高種子品質。
+\ **Note:** The RNG does not have an avalanche effect, and can output similar random streams given similar seeds. Consider using a hash function to improve your seed quality if they're sourced externally.
 
-\ **注意：**\ 設定該屬性會產生改變內部 :ref:`state<class_RandomNumberGenerator_property_state>` 的副作用，因此請確保在修改 :ref:`state<class_RandomNumberGenerator_property_state>` *之前*\ 初始化種子：
+\ **Note:** Setting this property produces a side effect of changing the internal :ref:`state<class_RandomNumberGenerator_property_state>`, so make sure to initialize the seed *before* modifying the :ref:`state<class_RandomNumberGenerator_property_state>`:
 
-\ **注意：**\ 該屬性的預設值是偽隨機的，會在呼叫 :ref:`randomize()<class_RandomNumberGenerator_method_randomize>` 時改變。文檔中記錄的 ``0`` 是預留位置，不是實際的預設種子。
+\ **Note:** The default value of this property is pseudo-random, and changes when calling :ref:`randomize()<class_RandomNumberGenerator_method_randomize>`. The ``0`` value documented here is a placeholder, and not the actual default seed.
 
 ::
 
     var rng = RandomNumberGenerator.new()
     rng.seed = hash("Godot")
-    rng.state = 100 # 恢復到之前保存的一些狀態。
+    rng.state = 100 # Restore to some previously saved state.
 
 .. rst-class:: classref-item-separator
 
@@ -141,8 +141,8 @@ The current state of the random number generator. Save and restore this property
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_RandomNumberGenerator_method_rand_weighted:
 
@@ -178,7 +178,7 @@ Returns a random index with non-uniform weights. Prints an error and returns ``-
 
 :ref:`float<class_float>` **randf**\ (\ ) :ref:`🔗<class_RandomNumberGenerator_method_randf>`
 
-返回在 ``0.0`` 和 ``1.0`` 之間（含端點）的偽隨機浮點數。
+Returns a pseudo-random float between ``0.0`` and ``1.0`` (inclusive).
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ Returns a random index with non-uniform weights. Prints an error and returns ``-
 
 :ref:`float<class_float>` **randf_range**\ (\ from\: :ref:`float<class_float>`, to\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RandomNumberGenerator_method_randf_range>`
 
-返回在 ``from`` 和 ``to`` 之間（含端點）的偽隨機浮點數。
+Returns a pseudo-random float between ``from`` and ``to`` (inclusive).
 
 .. rst-class:: classref-item-separator
 
@@ -216,7 +216,7 @@ Returns a `normally-distributed <https://en.wikipedia.org/wiki/Normal_distributi
 
 :ref:`int<class_int>` **randi**\ (\ ) :ref:`🔗<class_RandomNumberGenerator_method_randi>`
 
-返回在 ``0`` 和 ``4294967295`` 之間（含端點）的偽隨機 32 位不帶正負號的整數。
+Returns a pseudo-random 32-bit unsigned integer between ``0`` and ``4294967295`` (inclusive).
 
 .. rst-class:: classref-item-separator
 
@@ -228,7 +228,7 @@ Returns a `normally-distributed <https://en.wikipedia.org/wiki/Normal_distributi
 
 :ref:`int<class_int>` **randi_range**\ (\ from\: :ref:`int<class_int>`, to\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RandomNumberGenerator_method_randi_range>`
 
-返回在 ``from`` 和 ``to`` 之間（含端點）的偽隨機 32 位不帶正負號的整數。
+Returns a pseudo-random 32-bit signed integer between ``from`` and ``to`` (inclusive).
 
 .. rst-class:: classref-item-separator
 
@@ -242,12 +242,12 @@ Returns a `normally-distributed <https://en.wikipedia.org/wiki/Normal_distributi
 
 Sets up a time-based seed for this **RandomNumberGenerator** instance. Unlike the :ref:`@GlobalScope<class_@GlobalScope>` random number generation functions, different **RandomNumberGenerator** instances can use different seeds.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

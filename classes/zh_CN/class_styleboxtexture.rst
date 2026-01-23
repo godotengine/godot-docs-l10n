@@ -5,21 +5,21 @@
 StyleBoxTexture
 ===============
 
-**继承：** :ref:`StyleBox<class_StyleBox>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`StyleBox<class_StyleBox>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-基于纹理的九宫格 :ref:`StyleBox<class_StyleBox>`\ 。
+A texture-based nine-patch :ref:`StyleBox<class_StyleBox>`.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-基于纹理的九宫格 :ref:`StyleBox<class_StyleBox>`\ ，类似于 :ref:`NinePatchRect<class_NinePatchRect>`\ 。这种样式盒对纹理执行 3×3 缩放，只有中心单元格会被完全拉伸。这样就能够为不同大小的样式盒设计带边框的样式。
+A texture-based nine-patch :ref:`StyleBox<class_StyleBox>`, in a way similar to :ref:`NinePatchRect<class_NinePatchRect>`. This stylebox performs a 3×3 scaling of a texture, where only the center cell is fully stretched. This makes it possible to design bordered styles regardless of the stylebox's size.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ StyleBoxTexture
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -82,8 +82,8 @@ StyleBoxTexture
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_StyleBoxTexture_AxisStretchMode:
 
@@ -97,7 +97,7 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 
 :ref:`AxisStretchMode<enum_StyleBoxTexture_AxisStretchMode>` **AXIS_STRETCH_MODE_STRETCH** = ``0``
 
-拉伸样式盒的纹理。这会导致可见的失真，除非纹理大小与样式盒的大小完美匹配。
+Stretch the stylebox's texture. This results in visible distortion unless the texture size matches the stylebox's size perfectly.
 
 .. _class_StyleBoxTexture_constant_AXIS_STRETCH_MODE_TILE:
 
@@ -105,7 +105,7 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 
 :ref:`AxisStretchMode<enum_StyleBoxTexture_AxisStretchMode>` **AXIS_STRETCH_MODE_TILE** = ``1``
 
-根据九宫格系统，重复样式盒的纹理，以匹配样式盒的大小。
+Repeats the stylebox's texture to match the stylebox's size according to the nine-patch system.
 
 .. _class_StyleBoxTexture_constant_AXIS_STRETCH_MODE_TILE_FIT:
 
@@ -113,7 +113,7 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 
 :ref:`AxisStretchMode<enum_StyleBoxTexture_AxisStretchMode>` **AXIS_STRETCH_MODE_TILE_FIT** = ``2``
 
-根据九宫格系统，重复样式盒的纹理，以匹配样式盒的大小。与 :ref:`AXIS_STRETCH_MODE_TILE<class_StyleBoxTexture_constant_AXIS_STRETCH_MODE_TILE>` 不同，可能会稍微拉伸纹理以使九宫格纹理平铺无缝。
+Repeats the stylebox's texture to match the stylebox's size according to the nine-patch system. Unlike :ref:`AXIS_STRETCH_MODE_TILE<class_StyleBoxTexture_constant_AXIS_STRETCH_MODE_TILE>`, the texture may be slightly stretched to make the nine-patch texture tile seamlessly.
 
 .. rst-class:: classref-section-separator
 
@@ -121,8 +121,8 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_StyleBoxTexture_property_axis_stretch_horizontal:
 
@@ -135,7 +135,7 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 - |void| **set_h_axis_stretch_mode**\ (\ value\: :ref:`AxisStretchMode<enum_StyleBoxTexture_AxisStretchMode>`\ )
 - :ref:`AxisStretchMode<enum_StyleBoxTexture_AxisStretchMode>` **get_h_axis_stretch_mode**\ (\ )
 
-控制如何水平拉伸或平铺样式盒的纹理。
+Controls how the stylebox's texture will be stretched or tiled horizontally.
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 - |void| **set_v_axis_stretch_mode**\ (\ value\: :ref:`AxisStretchMode<enum_StyleBoxTexture_AxisStretchMode>`\ )
 - :ref:`AxisStretchMode<enum_StyleBoxTexture_AxisStretchMode>` **get_v_axis_stretch_mode**\ (\ )
 
-控制如何垂直拉伸或平铺样式盒的纹理。
+Controls how the stylebox's texture will be stretched or tiled vertically.
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 - |void| **set_draw_center**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_draw_center_enabled**\ (\ )
 
-如果为 ``true``\ ，将绘制九宫格纹理的中心图块。
+If ``true``, the nine-patch texture's center tile will be drawn.
 
 .. rst-class:: classref-item-separator
 
@@ -186,7 +186,7 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 - |void| **set_expand_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, size\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_expand_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-绘制时扩展此样式盒的下边距，使其绘制得比请求的大。
+Expands the bottom margin of this style box when drawing, causing it to be drawn larger than requested.
 
 .. rst-class:: classref-item-separator
 
@@ -203,7 +203,7 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 - |void| **set_expand_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, size\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_expand_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-绘制时扩展此样式盒的左边距，使其绘制得比请求的大。
+Expands the left margin of this style box when drawing, causing it to be drawn larger than requested.
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 - |void| **set_expand_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, size\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_expand_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-绘制时扩展此样式盒的右边距，使其绘制得比请求的大。
+Expands the right margin of this style box when drawing, causing it to be drawn larger than requested.
 
 .. rst-class:: classref-item-separator
 
@@ -237,7 +237,7 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 - |void| **set_expand_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, size\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_expand_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-绘制时扩展此样式盒的上边距，使其绘制得比请求的大。
+Expands the top margin of this style box when drawing, causing it to be drawn larger than requested.
 
 .. rst-class:: classref-item-separator
 
@@ -254,7 +254,7 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 - |void| **set_modulate**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_modulate**\ (\ )
 
-绘制此样式盒时用于调制纹理的颜色。
+Modulates the color of the texture when this style box is drawn.
 
 .. rst-class:: classref-item-separator
 
@@ -271,11 +271,11 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 - |void| **set_region_rect**\ (\ value\: :ref:`Rect2<class_Rect2>`\ )
 - :ref:`Rect2<class_Rect2>` **get_region_rect**\ (\ )
 
-:ref:`texture<class_StyleBoxTexture_property_texture>` 中要使用的区域。
+The region to use from the :ref:`texture<class_StyleBoxTexture_property_texture>`.
 
-等价于首先将 :ref:`texture<class_StyleBoxTexture_property_texture>` 包裹在具有相同区域的 :ref:`AtlasTexture<class_AtlasTexture>` 中。
+This is equivalent to first wrapping the :ref:`texture<class_StyleBoxTexture_property_texture>` in an :ref:`AtlasTexture<class_AtlasTexture>` with the same region.
 
-如果为空（\ ``Rect2(0, 0, 0, 0)``\ ），则将使用整个 :ref:`texture<class_StyleBoxTexture_property_texture>`\ 。
+If empty (``Rect2(0, 0, 0, 0)``), the whole :ref:`texture<class_StyleBoxTexture_property_texture>` is used.
 
 .. rst-class:: classref-item-separator
 
@@ -292,7 +292,7 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 - |void| **set_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ )
 
-绘制此样式盒时所使用的纹理。
+The texture to use when drawing this style box.
 
 .. rst-class:: classref-item-separator
 
@@ -309,11 +309,11 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 - |void| **set_texture_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, size\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_texture_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-增加 3×3 StyleBox 的底边距。
+Increases the bottom margin of the 3×3 texture box.
 
-更高的值意味着更多的源纹理被认为是 3×3 box的底边的一部分。
+A higher value means more of the source texture is considered to be part of the bottom border of the 3×3 box.
 
-如果 :ref:`StyleBox.content_margin_bottom<class_StyleBox_property_content_margin_bottom>` 为负值，这个值也是作为后备值使用。
+This is also the value used as fallback for :ref:`StyleBox.content_margin_bottom<class_StyleBox_property_content_margin_bottom>` if it is negative.
 
 .. rst-class:: classref-item-separator
 
@@ -330,11 +330,11 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 - |void| **set_texture_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, size\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_texture_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-增加 3×3 StyleBox 的左边距。
+Increases the left margin of the 3×3 texture box.
 
-较高的值意味着更多的源纹理被认为是 3×3 box左边框的一部分。
+A higher value means more of the source texture is considered to be part of the left border of the 3×3 box.
 
-如果 :ref:`StyleBox.content_margin_left<class_StyleBox_property_content_margin_left>` 为负值，这个值也是作为后备值使用。
+This is also the value used as fallback for :ref:`StyleBox.content_margin_left<class_StyleBox_property_content_margin_left>` if it is negative.
 
 .. rst-class:: classref-item-separator
 
@@ -351,11 +351,11 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 - |void| **set_texture_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, size\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_texture_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-增加 3×3 StyleBox 的右边距。
+Increases the right margin of the 3×3 texture box.
 
-较高的值意味着更多的源纹理被认为是 3×3 box右边框的一部分。
+A higher value means more of the source texture is considered to be part of the right border of the 3×3 box.
 
-如果 :ref:`StyleBox.content_margin_right<class_StyleBox_property_content_margin_right>` 为负值，这个值也是作为后备值使用。
+This is also the value used as fallback for :ref:`StyleBox.content_margin_right<class_StyleBox_property_content_margin_right>` if it is negative.
 
 .. rst-class:: classref-item-separator
 
@@ -372,11 +372,11 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 - |void| **set_texture_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, size\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_texture_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-增加 3×3 StyleBox 的上边距。
+Increases the top margin of the 3×3 texture box.
 
-较高的值意味着更多的源纹理被认为是 3×3 box上边框的一部分。
+A higher value means more of the source texture is considered to be part of the top border of the 3×3 box.
 
-如果 :ref:`StyleBox.content_margin_top<class_StyleBox_property_content_margin_top>` 为负值，这个值也是作为后备值使用。
+This is also the value used as fallback for :ref:`StyleBox.content_margin_top<class_StyleBox_property_content_margin_top>` if it is negative.
 
 .. rst-class:: classref-section-separator
 
@@ -384,8 +384,8 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_StyleBoxTexture_method_get_expand_margin:
 
@@ -393,7 +393,7 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 
 :ref:`float<class_float>` **get_expand_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const| :ref:`🔗<class_StyleBoxTexture_method_get_expand_margin>`
 
-返回指定边 :ref:`Side<enum_@GlobalScope_Side>` 的扩展边距大小。
+Returns the expand margin size of the specified :ref:`Side<enum_@GlobalScope_Side>`.
 
 .. rst-class:: classref-item-separator
 
@@ -405,7 +405,7 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 
 :ref:`float<class_float>` **get_texture_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const| :ref:`🔗<class_StyleBoxTexture_method_get_texture_margin>`
 
-返回指定边 :ref:`Side<enum_@GlobalScope_Side>` 的边距大小。
+Returns the margin size of the specified :ref:`Side<enum_@GlobalScope_Side>`.
 
 .. rst-class:: classref-item-separator
 
@@ -417,7 +417,7 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 
 |void| **set_expand_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, size\: :ref:`float<class_float>`\ ) :ref:`🔗<class_StyleBoxTexture_method_set_expand_margin>`
 
-将指定边 :ref:`Side<enum_@GlobalScope_Side>` 的扩展边距设置为 ``size`` 像素。
+Sets the expand margin to ``size`` pixels for the specified :ref:`Side<enum_@GlobalScope_Side>`.
 
 .. rst-class:: classref-item-separator
 
@@ -429,7 +429,7 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 
 |void| **set_expand_margin_all**\ (\ size\: :ref:`float<class_float>`\ ) :ref:`🔗<class_StyleBoxTexture_method_set_expand_margin_all>`
 
-将所有边的扩展边距都设置为 ``size`` 像素。
+Sets the expand margin to ``size`` pixels for all sides.
 
 .. rst-class:: classref-item-separator
 
@@ -441,7 +441,7 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 
 |void| **set_texture_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, size\: :ref:`float<class_float>`\ ) :ref:`🔗<class_StyleBoxTexture_method_set_texture_margin>`
 
-将指定边 :ref:`Side<enum_@GlobalScope_Side>` 的边距设置为 ``size`` 像素。
+Sets the margin to ``size`` pixels for the specified :ref:`Side<enum_@GlobalScope_Side>`.
 
 .. rst-class:: classref-item-separator
 
@@ -453,14 +453,14 @@ enum **AxisStretchMode**: :ref:`🔗<enum_StyleBoxTexture_AxisStretchMode>`
 
 |void| **set_texture_margin_all**\ (\ size\: :ref:`float<class_float>`\ ) :ref:`🔗<class_StyleBoxTexture_method_set_texture_margin_all>`
 
-将所有边的边距都设置为 ``size`` 像素。
+Sets the margin to ``size`` pixels for all sides.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

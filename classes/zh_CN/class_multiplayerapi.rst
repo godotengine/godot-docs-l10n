@@ -8,29 +8,29 @@
 MultiplayerAPI
 ==============
 
-**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**派生：** :ref:`MultiplayerAPIExtension<class_MultiplayerAPIExtension>`, :ref:`SceneMultiplayer<class_SceneMultiplayer>`
+**Inherited By:** :ref:`MultiplayerAPIExtension<class_MultiplayerAPIExtension>`, :ref:`SceneMultiplayer<class_SceneMultiplayer>`
 
-高阶多人游戏 API 接口。
+High-level multiplayer API interface.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-用于高级多人游戏 API 实现的基类。另见 :ref:`MultiplayerPeer<class_MultiplayerPeer>`\ 。
+Base class for high-level multiplayer API implementations. See also :ref:`MultiplayerPeer<class_MultiplayerPeer>`.
 
-默认情况下，\ :ref:`SceneTree<class_SceneTree>` 引用了这个类的一个实现，并使用它来提供跨整个场景的多人游戏功能（即 RPC）。
+By default, :ref:`SceneTree<class_SceneTree>` has a reference to an implementation of this class and uses it to provide multiplayer capabilities (i.e. RPCs) across the whole scene.
 
-可以通过调用 :ref:`SceneTree.set_multiplayer()<class_SceneTree_method_set_multiplayer>` 方法，覆盖特定树分支使用的 MultiplayerAPI 实例，从而有效地允许在同一场景中同时运行客户端和服务器。
+It is possible to override the MultiplayerAPI instance used by specific tree branches by calling the :ref:`SceneTree.set_multiplayer()<class_SceneTree_method_set_multiplayer>` method, effectively allowing to run both client and server in the same scene.
 
-也可以通过脚本或本地扩展来扩展或替换默认实现。有关扩展的详细信息，请参阅 :ref:`MultiplayerAPIExtension<class_MultiplayerAPIExtension>`\ ；有关默认实现的详细信息，请参阅 :ref:`SceneMultiplayer<class_SceneMultiplayer>`\ 。
+It is also possible to extend or replace the default implementation via scripting or native extensions. See :ref:`MultiplayerAPIExtension<class_MultiplayerAPIExtension>` for details about extensions, :ref:`SceneMultiplayer<class_SceneMultiplayer>` for the details about the default implementation.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -41,8 +41,8 @@ MultiplayerAPI
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -79,8 +79,8 @@ MultiplayerAPI
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_MultiplayerAPI_signal_connected_to_server:
 
@@ -88,7 +88,7 @@ MultiplayerAPI
 
 **connected_to_server**\ (\ ) :ref:`🔗<class_MultiplayerAPI_signal_connected_to_server>`
 
-当此 MultiplayerAPI 的 :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 成功连接到服务器时发出。仅在客户端上发出。
+Emitted when this MultiplayerAPI's :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` successfully connected to a server. Only emitted on clients.
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ MultiplayerAPI
 
 **connection_failed**\ (\ ) :ref:`🔗<class_MultiplayerAPI_signal_connection_failed>`
 
-当此 MultiplayerAPI 的 :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 无法与服务器建立连接时发出。仅在客户端上发出。
+Emitted when this MultiplayerAPI's :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` fails to establish a connection to a server. Only emitted on clients.
 
 .. rst-class:: classref-item-separator
 
@@ -112,7 +112,7 @@ MultiplayerAPI
 
 **peer_connected**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_MultiplayerAPI_signal_peer_connected>`
 
-当此 MultiplayerAPI 的 :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 与新对等体连接时发出。ID 为新对等体的对等体 ID。当某个客户端连接到同一服务器时，其他客户端会收到通知。连接到服务器时，该客户端也会收到此信号，新对等体为服务器（ID 为 1）。
+Emitted when this MultiplayerAPI's :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` connects with a new peer. ID is the peer ID of the new peer. Clients get notified when other clients connect to the same server. Upon connecting to a server, a client also receives this signal for the server (with ID being 1).
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ MultiplayerAPI
 
 **peer_disconnected**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_MultiplayerAPI_signal_peer_disconnected>`
 
-当此 MultiplayerAPI 的 :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 与对等体断开连接时发出。当某个客户端从同一服务器断开连接时，其他客户端会收到通知。
+Emitted when this MultiplayerAPI's :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` disconnects from a peer. Clients get notified when other clients disconnect from the same server.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ MultiplayerAPI
 
 **server_disconnected**\ (\ ) :ref:`🔗<class_MultiplayerAPI_signal_server_disconnected>`
 
-当此 MultiplayerAPI 的 :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 与服务器断开连接时发出。仅在客户端上发出。
+Emitted when this MultiplayerAPI's :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` disconnects from server. Only emitted on clients.
 
 .. rst-class:: classref-section-separator
 
@@ -144,8 +144,8 @@ MultiplayerAPI
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_MultiplayerAPI_RPCMode:
 
@@ -159,7 +159,7 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>` **RPC_MODE_DISABLED** = ``0``
 
-在 :ref:`Node.rpc_config()<class_Node_method_rpc_config>` 中使用，可以为所有 RPC 调用禁用某个方法或属性，使其不可用。所有方法的默认值。
+Used with :ref:`Node.rpc_config()<class_Node_method_rpc_config>` to disable a method or property for all RPC calls, making it unavailable. Default for all methods.
 
 .. _class_MultiplayerAPI_constant_RPC_MODE_ANY_PEER:
 
@@ -167,7 +167,7 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>` **RPC_MODE_ANY_PEER** = ``1``
 
-在 :ref:`Node.rpc_config()<class_Node_method_rpc_config>` 中使用，可以将某个方法设置为能够被任何对等体远程调用。类似于 ``@rpc("any_peer")`` 注解。接受来自所有远程对等体的调用，无论是否为节点的控制者。
+Used with :ref:`Node.rpc_config()<class_Node_method_rpc_config>` to set a method to be callable remotely by any peer. Analogous to the ``@rpc("any_peer")`` annotation. Calls are accepted from all remote peers, no matter if they are node's authority or not.
 
 .. _class_MultiplayerAPI_constant_RPC_MODE_AUTHORITY:
 
@@ -175,7 +175,7 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>` **RPC_MODE_AUTHORITY** = ``2``
 
-在 :ref:`Node.rpc_config()<class_Node_method_rpc_config>` 中使用，可以将某个方法设置为仅能够被当前的多人控制者远程调用（默认为服务器）。类似于 ``@rpc("authority")`` 注解。见 :ref:`Node.set_multiplayer_authority()<class_Node_method_set_multiplayer_authority>`\ 。
+Used with :ref:`Node.rpc_config()<class_Node_method_rpc_config>` to set a method to be callable remotely only by the current multiplayer authority (which is the server by default). Analogous to the ``@rpc("authority")`` annotation. See :ref:`Node.set_multiplayer_authority()<class_Node_method_set_multiplayer_authority>`.
 
 .. rst-class:: classref-section-separator
 
@@ -183,8 +183,8 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_MultiplayerAPI_property_multiplayer_peer:
 
@@ -197,7 +197,7 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 - |void| **set_multiplayer_peer**\ (\ value\: :ref:`MultiplayerPeer<class_MultiplayerPeer>`\ )
 - :ref:`MultiplayerPeer<class_MultiplayerPeer>` **get_multiplayer_peer**\ (\ )
 
-处理 RPC 系统的对等体对象（设置后会启用网络）。根据对等体本身的不同，该 MultiplayerAPI 可能会成为网络服务器（使用 :ref:`is_server()<class_MultiplayerAPI_method_is_server>` 判断）并将根节点的网络模式设置为控制者，也可能会成为普通的客户端对等体。所有子节点默认会继承其网络模式。网络相关事件（连接、断开连接、新客户端）的处理是通过连接 MultiplayerAPI 的信号来完成的。
+The peer object to handle the RPC system (effectively enabling networking when set). Depending on the peer itself, the MultiplayerAPI will become a network server (check with :ref:`is_server()<class_MultiplayerAPI_method_is_server>`) and will set root node's network mode to authority, or it will become a regular client peer. All child nodes are set to inherit the network mode by default. Handling of networking-related events (connection, disconnection, new clients) is done by connecting to MultiplayerAPI's signals.
 
 .. rst-class:: classref-section-separator
 
@@ -205,8 +205,8 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_MultiplayerAPI_method_create_default_interface:
 
@@ -214,7 +214,7 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 :ref:`MultiplayerAPI<class_MultiplayerAPI>` **create_default_interface**\ (\ ) |static| :ref:`🔗<class_MultiplayerAPI_method_create_default_interface>`
 
-返回默认 MultiplayerAPI 的新实例。
+Returns a new instance of the default MultiplayerAPI.
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 :ref:`StringName<class_StringName>` **get_default_interface**\ (\ ) |static| :ref:`🔗<class_MultiplayerAPI_method_get_default_interface>`
 
-返回默认的 MultiplayerAPI 实现类名称。\ :ref:`SceneMultiplayer<class_SceneMultiplayer>` 可用时通常为 ``"SceneMultiplayer"``\ 。见 :ref:`set_default_interface()<class_MultiplayerAPI_method_set_default_interface>`\ 。
+Returns the default MultiplayerAPI implementation class name. This is usually ``"SceneMultiplayer"`` when :ref:`SceneMultiplayer<class_SceneMultiplayer>` is available. See :ref:`set_default_interface()<class_MultiplayerAPI_method_set_default_interface>`.
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_peers**\ (\ ) :ref:`🔗<class_MultiplayerAPI_method_get_peers>`
 
-返回这个 MultiplayerAPI 的 :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 所有已连接对等体的对等体 ID。
+Returns the peer IDs of all connected peers of this MultiplayerAPI's :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -250,9 +250,9 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 :ref:`int<class_int>` **get_remote_sender_id**\ (\ ) :ref:`🔗<class_MultiplayerAPI_method_get_remote_sender_id>`
 
-返回当前正在执行的 RPC 的发送方对等 ID。
+Returns the sender's peer ID for the RPC currently being executed.
 
-\ **注意：**\ 在 RPC 之外调用时，该方法返回 ``0``\ 。因此，当代码延迟执行时（例如使用 GDScript 的 ``await`` 关键字），原始对等 ID 可能会丢失。
+\ **Note:** This method returns ``0`` when called outside of an RPC. As such, the original peer ID may be lost when code execution is delayed (such as with GDScript's ``await`` keyword).
 
 .. rst-class:: classref-item-separator
 
@@ -264,7 +264,7 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 :ref:`int<class_int>` **get_unique_id**\ (\ ) :ref:`🔗<class_MultiplayerAPI_method_get_unique_id>`
 
-返回这个 MultiplayerAPI 的 :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 唯一对等体 ID。
+Returns the unique peer ID of this MultiplayerAPI's :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -276,7 +276,7 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 :ref:`bool<class_bool>` **has_multiplayer_peer**\ (\ ) :ref:`🔗<class_MultiplayerAPI_method_has_multiplayer_peer>`
 
-如果设置了 :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>`\ ，则返回 ``true``\ 。
+Returns ``true`` if there is a :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` set.
 
 .. rst-class:: classref-item-separator
 
@@ -288,7 +288,7 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 :ref:`bool<class_bool>` **is_server**\ (\ ) :ref:`🔗<class_MultiplayerAPI_method_is_server>`
 
-如果这个 MultiplayerAPI 的 :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 有效，且处于服务器模式（监听连接），则返回 ``true``\ 。
+Returns ``true`` if this MultiplayerAPI's :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` is valid and in server mode (listening for connections).
 
 .. rst-class:: classref-item-separator
 
@@ -300,9 +300,9 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **object_configuration_add**\ (\ object\: :ref:`Object<class_Object>`, configuration\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_MultiplayerAPI_method_object_configuration_add>`
 
-通知该 MultiplayerAPI，以添加用于给定 ``object`` 的新的 ``configuration``\ 。该方法在内部被 :ref:`SceneTree<class_SceneTree>` 使用，以配置该 MultiplayerAPI 的根路径（传入 ``null`` 并将一个有效的 :ref:`NodePath<class_NodePath>` 作为 ``configuration``\ ）。该方法可以进一步被 MultiplayerAPI 实现使用，以提供其他功能，有关如何使用它的详细信息，请参阅具体实现（例如 :ref:`SceneMultiplayer<class_SceneMultiplayer>`\ ）。
+Notifies the MultiplayerAPI of a new ``configuration`` for the given ``object``. This method is used internally by :ref:`SceneTree<class_SceneTree>` to configure the root path for this MultiplayerAPI (passing ``null`` and a valid :ref:`NodePath<class_NodePath>` as ``configuration``). This method can be further used by MultiplayerAPI implementations to provide additional features, refer to specific implementation (e.g. :ref:`SceneMultiplayer<class_SceneMultiplayer>`) for details on how they use it.
 
-\ **注意：**\ 当通过 :ref:`MultiplayerAPIExtension<class_MultiplayerAPIExtension>` 扩展或重写 MultiplayerAPI 行为时，该方法最相关。
+\ **Note:** This method is mostly relevant when extending or overriding the MultiplayerAPI behavior via :ref:`MultiplayerAPIExtension<class_MultiplayerAPIExtension>`.
 
 .. rst-class:: classref-item-separator
 
@@ -314,9 +314,9 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **object_configuration_remove**\ (\ object\: :ref:`Object<class_Object>`, configuration\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_MultiplayerAPI_method_object_configuration_remove>`
 
-通知该 MultiplayerAPI，以移除用于给定 ``object`` 的 ``configuration``\ 。该方法在内部被 :ref:`SceneTree<class_SceneTree>` 使用，以配置该 MultiplayerAPI 的根路径（传入 ``null`` 并将一个空的 :ref:`NodePath<class_NodePath>` 作为 ``configuration``\ ）。该方法可以进一步被 MultiplayerAPI 实现使用，以提供其他功能，有关如何使用它的详细信息，请参阅具体实现（例如 :ref:`SceneMultiplayer<class_SceneMultiplayer>`\ ）。
+Notifies the MultiplayerAPI to remove a ``configuration`` for the given ``object``. This method is used internally by :ref:`SceneTree<class_SceneTree>` to configure the root path for this MultiplayerAPI (passing ``null`` and an empty :ref:`NodePath<class_NodePath>` as ``configuration``). This method can be further used by MultiplayerAPI implementations to provide additional features, refer to specific implementation (e.g. :ref:`SceneMultiplayer<class_SceneMultiplayer>`) for details on how they use it.
 
-\ **注意：**\ 当通过 :ref:`MultiplayerAPIExtension<class_MultiplayerAPIExtension>` 扩展或重写 MultiplayerAPI 行为时，该方法最相关。
+\ **Note:** This method is mostly relevant when extending or overriding the MultiplayerAPI behavior via :ref:`MultiplayerAPIExtension<class_MultiplayerAPIExtension>`.
 
 .. rst-class:: classref-item-separator
 
@@ -328,9 +328,9 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **poll**\ (\ ) :ref:`🔗<class_MultiplayerAPI_method_poll>`
 
-用于轮询 MultiplayerAPI 的方法。将 :ref:`SceneTree.multiplayer_poll<class_SceneTree_property_multiplayer_poll>` 设置为 ``false`` 时才需要关心。默认情况下，\ :ref:`SceneTree<class_SceneTree>` 将为你轮询其 MultiplayerAPI。
+Method used for polling the MultiplayerAPI. You only need to worry about this if you set :ref:`SceneTree.multiplayer_poll<class_SceneTree_property_multiplayer_poll>` to ``false``. By default, :ref:`SceneTree<class_SceneTree>` will poll its MultiplayerAPI(s) for you.
 
-\ **注意：**\ 该方法会导致 RPC 被调用，因此它们将在该函数的相同上下文中执行（例如 ``_process``\ 、\ ``physics``\ 、\ :ref:`Thread<class_Thread>`\ ）。
+\ **Note:** This method results in RPCs being called, so they will be executed in the same context of this function (e.g. ``_process``, ``physics``, :ref:`Thread<class_Thread>`).
 
 .. rst-class:: classref-item-separator
 
@@ -342,9 +342,9 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **rpc**\ (\ peer\: :ref:`int<class_int>`, object\: :ref:`Object<class_Object>`, method\: :ref:`StringName<class_StringName>`, arguments\: :ref:`Array<class_Array>` = []\ ) :ref:`🔗<class_MultiplayerAPI_method_rpc>`
 
-向目标对等体 ``peer`` 发送 RPC。会使用提供的参数 ``arguments`` 在远程对象 ``object`` 上调用给定的方法 ``method``\ 。根据实现和 RPC 配置，RPC 可能也可以进行本地调用。见 :ref:`Node.rpc()<class_Node_method_rpc>` 和 :ref:`Node.rpc_config()<class_Node_method_rpc_config>`\ 。
+Sends an RPC to the target ``peer``. The given ``method`` will be called on the remote ``object`` with the provided ``arguments``. The RPC may also be called locally depending on the implementation and RPC configuration. See :ref:`Node.rpc()<class_Node_method_rpc>` and :ref:`Node.rpc_config()<class_Node_method_rpc_config>`.
 
-\ **注意：**\ 请尽量使用 :ref:`Node.rpc()<class_Node_method_rpc>`\ 、\ :ref:`Node.rpc_id()<class_Node_method_rpc_id>` 或 ``my_method.rpc(peer, arg1, arg2, ...)``\ （适用于 GDScript），因为速度更快。这个方法主要用于连同 :ref:`MultiplayerAPIExtension<class_MultiplayerAPIExtension>` 进行多人游戏功能的扩展和替换。
+\ **Note:** Prefer using :ref:`Node.rpc()<class_Node_method_rpc>`, :ref:`Node.rpc_id()<class_Node_method_rpc_id>`, or ``my_method.rpc(peer, arg1, arg2, ...)`` (in GDScript), since they are faster. This method is mostly useful in conjunction with :ref:`MultiplayerAPIExtension<class_MultiplayerAPIExtension>` when extending or replacing the multiplayer capabilities.
 
 .. rst-class:: classref-item-separator
 
@@ -356,14 +356,14 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 |void| **set_default_interface**\ (\ interface_name\: :ref:`StringName<class_StringName>`\ ) |static| :ref:`🔗<class_MultiplayerAPI_method_set_default_interface>`
 
-设置默认的 MultiplayerAPI 实现类。模块和扩展可以使用这个方法来配置引擎启动时 :ref:`SceneTree<class_SceneTree>` 将使用哪个实现。
+Sets the default MultiplayerAPI implementation class. This method can be used by modules and extensions to configure which implementation will be used by :ref:`SceneTree<class_SceneTree>` when the engine starts.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

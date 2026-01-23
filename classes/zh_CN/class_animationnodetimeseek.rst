@@ -5,55 +5,55 @@
 AnimationNodeTimeSeek
 =====================
 
-**继承：** :ref:`AnimationNode<class_AnimationNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`AnimationNode<class_AnimationNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-对时间进行检索的动画节点，在 :ref:`AnimationTree<class_AnimationTree>` 中使用。
+A time-seeking animation node used in :ref:`AnimationTree<class_AnimationTree>`.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-这个动画节点可用于使检索命令发生在动画图的任何次级子节点上。用于从 :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` 的开头或某个特定播放位置开始播放 :ref:`Animation<class_Animation>`\ 。
+This animation node can be used to cause a seek command to happen to any sub-children of the animation graph. Use to play an :ref:`Animation<class_Animation>` from the start or a certain playback position inside the :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
 
-设置时间并更改动画播放后，时间检索节点会在下一个处理帧中将其 ``seek_request`` 值设置为 ``-1.0``\ ，自动进入睡眠模式。
+After setting the time and changing the animation playback, the time seek node automatically goes into sleep mode on the next process frame by setting its ``seek_request`` value to ``-1.0``.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # 从开始处播放子动画。
+    # Play child animation from the start.
     animation_tree.set("parameters/TimeSeek/seek_request", 0.0)
-    # 替代语法（与上述结果相同）。
+    # Alternative syntax (same result as above).
     animation_tree["parameters/TimeSeek/seek_request"] = 0.0
 
-    # 从 12 秒的时间戳开始播放子动画。
+    # Play child animation from 12 second timestamp.
     animation_tree.set("parameters/TimeSeek/seek_request", 12.0)
-    # 替代语法（与上述结果相同）。
+    # Alternative syntax (same result as above).
     animation_tree["parameters/TimeSeek/seek_request"] = 12.0
 
  .. code-tab:: csharp
 
-    // 从开始处播放子动画。
+    // Play child animation from the start.
     animationTree.Set("parameters/TimeSeek/seek_request", 0.0);
 
-    // 从 12 秒的时间戳开始播放子动画。
+    // Play child animation from 12 second timestamp.
     animationTree.Set("parameters/TimeSeek/seek_request", 12.0);
 
 
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
-- :doc:`使用 AnimationTree <../tutorials/animation/animation_tree>`
+- :doc:`Using AnimationTree <../tutorials/animation/animation_tree>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -68,8 +68,8 @@ AnimationNodeTimeSeek
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_AnimationNodeTimeSeek_property_explicit_elapse:
 
@@ -82,14 +82,14 @@ AnimationNodeTimeSeek
 - |void| **set_explicit_elapse**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_explicit_elapse**\ (\ )
 
-如果为 ``true``\ ，某些旨在控制快进快退之间的帧的进程（例如计算根动态或寻找最接近的离散帧）将被执行。
+If ``true``, some processes are executed to handle keys between seeks, such as calculating root motion and finding the nearest discrete key.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,16 +5,16 @@
 AnimationNodeStateMachinePlayback
 =================================
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-提供對 :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>` 的播放控制。
+Provides playback control for an :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-可用於控制以 :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>` 建立的 :ref:`AnimationTree<class_AnimationTree>` 狀態機。使用 ``$AnimationTree.get("parameters/playback")`` 取得。
+Allows control of :ref:`AnimationTree<class_AnimationTree>` state machines created with :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>`. Retrieve with ``$AnimationTree.get("parameters/playback")``.
 
 
 .. tabs::
@@ -33,15 +33,15 @@ AnimationNodeStateMachinePlayback
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`使用 AnimationTree <../tutorials/animation/animation_tree>`
+- :doc:`Using AnimationTree <../tutorials/animation/animation_tree>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -52,8 +52,8 @@ AnimationNodeStateMachinePlayback
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -94,8 +94,8 @@ AnimationNodeStateMachinePlayback
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_AnimationNodeStateMachinePlayback_signal_state_finished:
 
@@ -125,8 +125,8 @@ Emitted when the ``state`` starts playback. If ``state`` is a state machine set 
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_AnimationNodeStateMachinePlayback_method_get_current_length:
 
@@ -134,9 +134,9 @@ Emitted when the ``state`` starts playback. If ``state`` is a state machine set 
 
 :ref:`float<class_float>` **get_current_length**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_get_current_length>`
 
-返回目前狀態的長度。
+Returns the current state length.
 
-\ **注意：** 任何 :ref:`AnimationRootNode<class_AnimationRootNode>` 既可能是節點也可能是動畫，亦即單一狀態內可能含有多段動畫。何者長度優先取決於其內部連線的節點；若轉場未重設，則會返回當下剩餘長度。
+\ **Note:** It is possible that any :ref:`AnimationRootNode<class_AnimationRootNode>` can be nodes as well as animations. This means that there can be multiple animations within a single state. Which animation length has priority depends on the nodes connected inside it. Also, if a transition does not reset, the remaining length at that point will be returned.
 
 .. rst-class:: classref-item-separator
 
@@ -148,9 +148,9 @@ Emitted when the ``state`` starts playback. If ``state`` is a state machine set 
 
 :ref:`StringName<class_StringName>` **get_current_node**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_get_current_node>`
 
-返回目前播放的動畫狀態。
+Returns the currently playing animation state.
 
-\ **注意：** 采用交叉淡入淡出時，淡入開始後目前狀態即會切換為下一狀態。
+\ **Note:** When using a cross-fade, the current state changes to the next state immediately after the cross-fade begins.
 
 .. rst-class:: classref-item-separator
 
@@ -162,7 +162,7 @@ Emitted when the ``state`` starts playback. If ``state`` is a state machine set 
 
 :ref:`float<class_float>` **get_current_play_position**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_get_current_play_position>`
 
-返回目前動畫狀態中的播放位置。
+Returns the playback position within the current animation state.
 
 .. rst-class:: classref-item-separator
 
@@ -186,7 +186,7 @@ Returns the playback state length of the node from :ref:`get_fading_from_node()<
 
 :ref:`StringName<class_StringName>` **get_fading_from_node**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_get_fading_from_node>`
 
-返回目前正淡入淡出的動畫之起始狀態。
+Returns the starting state of currently fading animation.
 
 .. rst-class:: classref-item-separator
 
@@ -234,7 +234,7 @@ Returns the playback position of the current fade animation. Returns ``0`` if no
 
 :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\] **get_travel_path**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_get_travel_path>`
 
-返回內部 A\* 演算法計算出的目前行進路徑。
+Returns the current travel path as computed internally by the A\* algorithm.
 
 .. rst-class:: classref-item-separator
 
@@ -246,7 +246,7 @@ Returns the playback position of the current fade animation. Returns ``0`` if no
 
 :ref:`bool<class_bool>` **is_playing**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_is_playing>`
 
-若有動畫正在播放則返回 ``true``\ 。
+Returns ``true`` if an animation is playing.
 
 .. rst-class:: classref-item-separator
 
@@ -258,7 +258,7 @@ Returns the playback position of the current fade animation. Returns ``0`` if no
 
 |void| **next**\ (\ ) :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_next>`
 
-若因 travel 或自動前進存在下一條路徑，立即自目前狀態轉場至下一狀態。
+If there is a next path by travel or auto advance, immediately transitions from the current state to the next state.
 
 .. rst-class:: classref-item-separator
 
@@ -270,9 +270,9 @@ Returns the playback position of the current fade animation. Returns ``0`` if no
 
 |void| **start**\ (\ node\: :ref:`StringName<class_StringName>`, reset\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_start>`
 
-開始播放指定動畫。
+Starts playing the given animation.
 
-若 ``reset`` 為 ``true``\ ，則從動畫開頭開始播放。
+If ``reset`` is ``true``, the animation is played from the beginning.
 
 .. rst-class:: classref-item-separator
 
@@ -284,7 +284,7 @@ Returns the playback position of the current fade animation. Returns ``0`` if no
 
 |void| **stop**\ (\ ) :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_stop>`
 
-停止目前播放的動畫。
+Stops the currently playing animation.
 
 .. rst-class:: classref-item-separator
 
@@ -296,18 +296,18 @@ Returns the playback position of the current fade animation. Returns ``0`` if no
 
 |void| **travel**\ (\ to_node\: :ref:`StringName<class_StringName>`, reset_on_teleport\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_travel>`
 
-依最短路徑從目前狀態轉場至另一狀態。
+Transitions from the current state to another one, following the shortest path.
 
-若目前狀態與該路徑不連通，將在傳送後播放動畫。
+If the path does not connect from the current state, the animation will play after the state teleports.
 
-若 ``reset_on_teleport`` 為 ``true``\ ，行進導致傳送時會從動畫開頭開始播放。
+If ``reset_on_teleport`` is ``true``, the animation is played from the beginning when the travel cause a teleportation.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

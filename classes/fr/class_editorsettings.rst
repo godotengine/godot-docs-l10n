@@ -1078,7 +1078,7 @@ If ``true``, automatically switches to the **Remote** scene tree when running th
 
 :ref:`bool<class_bool>` **debugger/auto_switch_to_stack_trace** :ref:`🔗<class_EditorSettings_property_debugger/auto_switch_to_stack_trace>`
 
-If ``true``, automatically switches to the **Stack Trace** panel when the debugger hits a breakpoint or steps.
+Si ``true``, passe automatiquement au panneau **Stack Trace** lorsque le débogueur atteint un point d'arrêt ou des étapes.
 
 .. rst-class:: classref-item-separator
 
@@ -2754,7 +2754,7 @@ If ``true``, displays the polygon's previous shape in the 2D polygon editors wit
 
 :ref:`bool<class_bool>` **editors/shader_editor/behavior/files/restore_shaders_on_load** :ref:`🔗<class_EditorSettings_property_editors/shader_editor/behavior/files/restore_shaders_on_load>`
 
-If ``true``, reopens shader files that were open in the shader editor when the project was last closed.
+Si ``true``, ré-ouvre les fichiers de shader qui étaient ouverts dans l'éditeur de shader lorsque le projet a été fermé pour la dernière fois.
 
 .. rst-class:: classref-item-separator
 
@@ -3563,15 +3563,15 @@ Editor accessibility support mode:
 
 :ref:`int<class_int>` **interface/editor/accept_dialog_cancel_ok_buttons** :ref:`🔗<class_EditorSettings_property_interface/editor/accept_dialog_cancel_ok_buttons>`
 
-How to position the Cancel and OK buttons in the editor's :ref:`AcceptDialog<class_AcceptDialog>` windows. Different platforms have different conventions for this, which can be overridden through this setting to avoid accidental clicks when using Godot on multiple platforms.
+Comment positionner les boutons Annuler et OK dans les fenêtres :ref:`AcceptDialog<class_AcceptDialog>` du projet. Différentes plates-formes ont différents comportements standards pour cela, qui peuvent être redéfinis en utilisant ce réglage pour éviter les clics accidentels lors de l'utilisation de Godot sur plusieurs plateformes..
 
-- **Auto** follows the platform convention: OK first on Windows, KDE, and LXQt; Cancel first on macOS and other Linux desktop environments.
+- **Auto** suit la convention de la plateforme : OK d'abord sur Windows, KDE et LXQt, Annuler d'abord sur macOS et les autres environnements de bureau Linux.
 
-- **Cancel First** forces the Cancel/OK ordering.
+- **Cancel First** force l'ordre Annuler/OK.
 
-- **OK First** forces the OK/Cancel ordering.
+- **OK First** force l'ordre OK/Annuler.
 
-To check if these buttons are swapped at runtime, use :ref:`DisplayServer.get_swap_cancel_ok()<class_DisplayServer_method_get_swap_cancel_ok>`.
+Pour vérifier si ces boutons sont échangés lors de l'exécution, utilisez :ref:`DisplayServer.get_swap_cancel_ok()<class_DisplayServer_method_get_swap_cancel_ok>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3743,9 +3743,9 @@ During a drag-and-drop, this is how long to wait over a UI element before it tri
 
 :ref:`String<class_String>` **interface/editor/editor_language** :ref:`🔗<class_EditorSettings_property_interface/editor/editor_language>`
 
-The language to use for the editor interface. If set to **Auto**, the language is automatically determined based on the system locale. See also :ref:`EditorInterface.get_editor_language()<class_EditorInterface_method_get_editor_language>`.
+La langue à utiliser pour l'interface de l'éditeur. Si la langue est définie sur **Auto**, la langue est automatiquement déterminée en fonction de la langue du système. Voir aussi :ref:`EditorInterface.get_editor_language()<class_EditorInterface_method_get_editor_language>`.
 
-Translations are provided by the community. If you spot a mistake, `contribute to editor translations on Weblate! <https://contributing.godotengine.org/en/latest/documentation/translation/index.html>`__
+Les traductions sont fournies par la communauté. Si vous constatez une erreur, `contribuez aux traductions de éditeurs sur Weblate ! <https://contributing.godotengine.org/en/latest/documentation/translation/index.html>`__
 
 .. rst-class:: classref-item-separator
 
@@ -4071,7 +4071,7 @@ This is equivalent to :ref:`ProjectSettings.display/window/subwindows/embed_subw
 
 :ref:`int<class_int>` **interface/editor/tablet_driver** :ref:`🔗<class_EditorSettings_property_interface/editor/tablet_driver>`
 
-Overrides the tablet driver used by the editor.
+Surcharge le pilote de tablette utilisé par l'éditeur.
 
 .. rst-class:: classref-item-separator
 
@@ -4763,9 +4763,9 @@ If ``true``, set accent color based on system settings.
 
 :ref:`bool<class_bool>` **interface/touchscreen/enable_long_press_as_right_click** :ref:`🔗<class_EditorSettings_property_interface/touchscreen/enable_long_press_as_right_click>`
 
-If ``true``, long press on touchscreen is treated as right click.
+Si ``true``, une pression longue sur écran tactile est traitée comme un clic droit.
 
-\ **Note:** Defaults to ``true`` on touchscreen devices.
+\ **Note :** Vaut par défaut ``true`` sur des appareils à écran tactile.
 
 .. rst-class:: classref-item-separator
 
@@ -4791,9 +4791,9 @@ If ``true``, enable two finger pan and scale gestures on touchscreen devices.
 
 :ref:`bool<class_bool>` **interface/touchscreen/enable_touch_optimizations** :ref:`🔗<class_EditorSettings_property_interface/touchscreen/enable_touch_optimizations>`
 
-If ``true``, increases the scrollbar touch area, enables a larger dragger for split containers, and increases PopupMenu vertical separation to improve usability on touchscreen devices.
+Si ``true``, augmente la zone de contact de la barre de défilement, permet un plus grand séparateur de conteneurs partagés, et augmente la séparation verticale du PopupMenu pour améliorer l'utilisabilité des dispositifs à écran tactile.
 
-\ **Note:** Defaults to ``true`` on touchscreen devices.
+\ **Note :** Vaut par défaut ``true`` sur les dispositifs à écran tactile.
 
 .. rst-class:: classref-item-separator
 
@@ -4805,9 +4805,9 @@ If ``true``, increases the scrollbar touch area, enables a larger dragger for sp
 
 :ref:`float<class_float>` **interface/touchscreen/scale_gizmo_handles** :ref:`🔗<class_EditorSettings_property_interface/touchscreen/scale_gizmo_handles>`
 
-Specify the multiplier to apply to the scale for the editor gizmo handles to improve usability on touchscreen devices.
+Spécifie le multiplicateur à appliquer à l'échelle pour les gestionnaires d'éditeur des manipulateurs pour améliorer la prise en main sur les appareils tactiles.
 
-\ **Note:** Defaults to ``1`` on non-touchscreen devices.
+\ **Note :** Vaut par défaut ``1`` sur les dispositifs à écran non tactile.
 
 .. rst-class:: classref-item-separator
 
@@ -4921,7 +4921,7 @@ The port number to use to contact the HTTP and HTTPS proxy in the editor (for th
 
 :ref:`String<class_String>` **network/tls/editor_tls_certificates** :ref:`🔗<class_EditorSettings_property_network/tls/editor_tls_certificates>`
 
-The TLS certificate bundle to use for HTTP requests made within the editor (e.g. from the AssetLib tab). If left empty, the `included Mozilla certificate bundle <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-bundle.crt>`__ will be used.
+Le paquet de certificats TLS à utiliser pour les requêtes HTTP faites au sein de l'éditeur (p. ex. dans l'onglet AssetLib). Si vide, ` le paquet de certificat de Mozilla inclus <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-bundle.crt>`__ sera utilisé.
 
 .. rst-class:: classref-item-separator
 
@@ -5797,7 +5797,7 @@ If ``true`` enables the coloring for some items in the autocompletion suggestion
 
 :ref:`bool<class_bool>` **text_editor/completion/complete_file_paths** :ref:`🔗<class_EditorSettings_property_text_editor/completion/complete_file_paths>`
 
-If ``true``, provides autocompletion suggestions for file paths in methods such as ``load()`` and ``preload()``.
+Si ``true``, fournit des suggestions d'autocomplétion pour les chemins de fichiers dans des méthodes telles que ``load()`` et ``preload()``.
 
 .. rst-class:: classref-item-separator
 
@@ -6863,7 +6863,7 @@ Checks if any settings with the prefix ``setting_prefix`` exist in the set of ch
 
 |void| **erase**\ (\ property\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorSettings_method_erase>`
 
-Erases the setting whose name is specified by ``property``.
+Efface le réglage dont le nom est spécifié par ``property``.
 
 .. rst-class:: classref-item-separator
 
@@ -6899,7 +6899,7 @@ Renvoie la liste des fichiers et répertoires favoris pour ce projet.
 
 :ref:`Variant<class_Variant>` **get_project_metadata**\ (\ section\: :ref:`String<class_String>`, key\: :ref:`String<class_String>`, default\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_EditorSettings_method_get_project_metadata>`
 
-Returns project-specific metadata for the ``section`` and ``key`` specified. If the metadata doesn't exist, ``default`` will be returned instead. See also :ref:`set_project_metadata()<class_EditorSettings_method_set_project_metadata>`.
+Retourne les métadonnées spécifiques au projet pour la ``section`` et\ ``key`` spécifiées. Si les métadonnées n'existent pas, ``default`` sera retourné à la place. Voir aussi :ref:`set_project_metadata()<class_EditorSettings_method_set_project_metadata>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6923,7 +6923,7 @@ Renvoie la liste des dossiers récemment visités dans le dialogue des fichiers 
 
 :ref:`Variant<class_Variant>` **get_setting**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_EditorSettings_method_get_setting>`
 
-Returns the value of the setting specified by ``name``. This is equivalent to using :ref:`Object.get()<class_Object_method_get>` on the EditorSettings instance.
+Retourne la valeur du paramètre spécifié par ``name``. Ceci est équivalent à l'utiliser :ref:`Object.get()<class_Object_method_get>` sur l'instance EditorSettings.
 
 .. rst-class:: classref-item-separator
 
@@ -6959,7 +6959,7 @@ Returns the list of stored shortcut paths.
 
 :ref:`bool<class_bool>` **has_setting**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_EditorSettings_method_has_setting>`
 
-Returns ``true`` if the setting specified by ``name`` exists, ``false`` otherwise.
+Retourne ``true`` si le paramètre spécifié par ``name`` existe, ``false`` autrement.
 
 .. rst-class:: classref-item-separator
 
@@ -6971,7 +6971,7 @@ Returns ``true`` if the setting specified by ``name`` exists, ``false`` otherwis
 
 :ref:`bool<class_bool>` **has_shortcut**\ (\ path\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_EditorSettings_method_has_shortcut>`
 
-Returns ``true`` if the shortcut specified by ``path`` exists, ``false`` otherwise.
+Retourne ``true`` si le paramètre spécifié par ``path`` existe, ``false`` autrement.
 
 .. rst-class:: classref-item-separator
 
@@ -6983,7 +6983,7 @@ Returns ``true`` if the shortcut specified by ``path`` exists, ``false`` otherwi
 
 :ref:`bool<class_bool>` **is_shortcut**\ (\ path\: :ref:`String<class_String>`, event\: :ref:`InputEvent<class_InputEvent>`\ ) |const| :ref:`🔗<class_EditorSettings_method_is_shortcut>`
 
-Returns ``true`` if the shortcut specified by ``path`` matches the event specified by ``event``, ``false`` otherwise.
+Retourne ``true`` si le paramètre spécifié par ``path`` correspond à l'événement spécifié par ``event``, ``false`` autrement.
 
 .. rst-class:: classref-item-separator
 
@@ -7007,7 +7007,7 @@ Marks the passed editor setting as being changed, see :ref:`get_changed_settings
 
 |void| **remove_shortcut**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorSettings_method_remove_shortcut>`
 
-Removes the shortcut specified by ``path``.
+Enlève le raccourci spécifié par ``path``.
 
 .. rst-class:: classref-item-separator
 
@@ -7043,7 +7043,7 @@ Définit la liste des fichiers et dossiers favoris pour ce projet.
 
 |void| **set_initial_value**\ (\ name\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`, update_current\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorSettings_method_set_initial_value>`
 
-Sets the initial value of the setting specified by ``name`` to ``value``. This is used to provide a value for the Revert button in the Editor Settings. If ``update_current`` is ``true``, the setting is reset to ``value`` as well.
+Définit la valeur initiale du réglage spécifié par ``name`` à ``value``. C'est utilisé pour définir une valeur pour le bouton Annuler dans les préférences de l'éditeur. Siparam update_current] vaut\ ``true``, le paramètre est également réinitialisé à ``value``.
 
 .. rst-class:: classref-item-separator
 
@@ -7079,7 +7079,7 @@ Définit une liste des dossiers récemment visités dans le dialogue de fichiers
 
 |void| **set_setting**\ (\ name\: :ref:`String<class_String>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_EditorSettings_method_set_setting>`
 
-Sets the ``value`` of the setting specified by ``name``. This is equivalent to using :ref:`Object.set()<class_Object_method_set>` on the EditorSettings instance.
+Définit la ``value`` du réglage spécifié par ``name``. Ceci équivaut à l'utilisation de :ref:`Object.set()<class_Object_method_set>` sur l'instance EditeurSettings.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

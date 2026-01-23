@@ -5,21 +5,21 @@
 RenderSceneBuffersExtension
 ===========================
 
-**继承：** :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-该类允许在 GDExtension 中实现 RenderSceneBuffer。
+This class allows for a RenderSceneBuffer implementation to be made in GDExtension.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-该类允许在 GDExtension 中实现 RenderSceneBuffer。
+This class allows for a RenderSceneBuffer implementation to be made in GDExtension.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ RenderSceneBuffersExtension
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_RenderSceneBuffersExtension_private_method__configure:
 
@@ -51,7 +51,7 @@ RenderSceneBuffersExtension
 
 |void| **_configure**\ (\ config\: :ref:`RenderSceneBuffersConfiguration<class_RenderSceneBuffersConfiguration>`\ ) |virtual| :ref:`🔗<class_RenderSceneBuffersExtension_private_method__configure>`
 
-在 GDExtension 中实现它来处理视口的（重新）大小调整。
+Implement this in GDExtension to handle the (re)sizing of a viewport.
 
 .. rst-class:: classref-item-separator
 
@@ -63,7 +63,7 @@ RenderSceneBuffersExtension
 
 |void| **_set_anisotropic_filtering_level**\ (\ anisotropic_filtering_level\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_RenderSceneBuffersExtension_private_method__set_anisotropic_filtering_level>`
 
-在 GDExtension 中实现该功能以更改各向异性过滤级别。
+Implement this in GDExtension to change the anisotropic filtering level.
 
 .. rst-class:: classref-item-separator
 
@@ -75,7 +75,7 @@ RenderSceneBuffersExtension
 
 |void| **_set_fsr_sharpness**\ (\ fsr_sharpness\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_RenderSceneBuffersExtension_private_method__set_fsr_sharpness>`
 
-在 GDExtension 中实现该功能以记录新的 FSR 锐度值。
+Implement this in GDExtension to record a new FSR sharpness value.
 
 .. rst-class:: classref-item-separator
 
@@ -87,7 +87,7 @@ RenderSceneBuffersExtension
 
 |void| **_set_texture_mipmap_bias**\ (\ texture_mipmap_bias\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_RenderSceneBuffersExtension_private_method__set_texture_mipmap_bias>`
 
-在 GDExtension 中实现该功能以更改纹理多级渐远纹理偏置。
+Implement this in GDExtension to change the texture mipmap bias.
 
 .. rst-class:: classref-item-separator
 
@@ -99,14 +99,14 @@ RenderSceneBuffersExtension
 
 |void| **_set_use_debanding**\ (\ use_debanding\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_RenderSceneBuffersExtension_private_method__set_use_debanding>`
 
-在 GDExtension 中实现该功能以对去色带标志的更改做出反应。
+Implement this in GDExtension to react to the debanding flag changing.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

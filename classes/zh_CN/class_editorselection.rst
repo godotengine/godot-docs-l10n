@@ -5,23 +5,23 @@
 EditorSelection
 ===============
 
-**继承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-管理编辑器中的 SceneTree 选择。
+Manages the SceneTree selection in the editor.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-这个对象管理编辑器中的 SceneTree 选择。
+This object manages the SceneTree selection in the editor.
 
-\ **注意：**\ 这个类不应该直接实例化。相反，使用\ :ref:`EditorInterface.get_selection()<class_EditorInterface_method_get_selection>`\ 访问单例。
+\ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using :ref:`EditorInterface.get_selection()<class_EditorInterface_method_get_selection>`.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ EditorSelection
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_EditorSelection_signal_selection_changed:
 
@@ -55,7 +55,7 @@ EditorSelection
 
 **selection_changed**\ (\ ) :ref:`🔗<class_EditorSelection_signal_selection_changed>`
 
-更改选择时发出。
+Emitted when the selection changes.
 
 .. rst-class:: classref-section-separator
 
@@ -63,8 +63,8 @@ EditorSelection
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_EditorSelection_method_add_node:
 
@@ -72,9 +72,9 @@ EditorSelection
 
 |void| **add_node**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_EditorSelection_method_add_node>`
 
-将一个节点添加到选择中。
+Adds a node to the selection.
 
-\ **注意：**\ 新选择的节点不会在检查器中自动被编辑。如果你想编辑一个节点，请使用 :ref:`EditorInterface.edit_node()<class_EditorInterface_method_edit_node>`\ 。
+\ **Note:** The newly selected node will not be automatically edited in the inspector. If you want to edit a node, use :ref:`EditorInterface.edit_node()<class_EditorInterface_method_edit_node>`.
 
 .. rst-class:: classref-item-separator
 
@@ -86,7 +86,7 @@ EditorSelection
 
 |void| **clear**\ (\ ) :ref:`🔗<class_EditorSelection_method_clear>`
 
-清除选中项。
+Clear the selection.
 
 .. rst-class:: classref-item-separator
 
@@ -98,7 +98,7 @@ EditorSelection
 
 :ref:`Array<class_Array>`\[:ref:`Node<class_Node>`\] **get_selected_nodes**\ (\ ) :ref:`🔗<class_EditorSelection_method_get_selected_nodes>`
 
-返回所选节点的列表。
+Returns the list of selected nodes.
 
 .. rst-class:: classref-item-separator
 
@@ -110,9 +110,9 @@ EditorSelection
 
 :ref:`Array<class_Array>`\[:ref:`Node<class_Node>`\] **get_top_selected_nodes**\ (\ ) :ref:`🔗<class_EditorSelection_method_get_top_selected_nodes>`
 
-返回仅包含顶层选定节点的列表，不包括任何子节点。适用于执行变换操作（移动、旋转等）。
+Returns the list of top selected nodes only, excluding any children. This is useful for performing transform operations (moving them, rotating, etc.).
 
-例如节点 A 有一个子节点 B、一个同级节点 C，如果选中这三个节点，那么该方法只会返回 A 和 C。更改 A 的全局变换将影响 B 的全局变换，因此不需要单独更改 B。
+For example, if there is a node A with a child B and a sibling C, then selecting all three will cause this method to return only A and C. Changing the global transform of A will affect the global transform of B, so there is no need to change B separately.
 
 .. rst-class:: classref-item-separator
 
@@ -124,9 +124,9 @@ EditorSelection
 
 :ref:`Array<class_Array>`\[:ref:`Node<class_Node>`\] **get_transformable_selected_nodes**\ (\ ) :ref:`🔗<class_EditorSelection_method_get_transformable_selected_nodes>`
 
-**已弃用：** Use :ref:`get_top_selected_nodes()<class_EditorSelection_method_get_top_selected_nodes>` instead.
+**Deprecated:** Use :ref:`get_top_selected_nodes()<class_EditorSelection_method_get_top_selected_nodes>` instead.
 
-返回仅包含顶层选定节点的列表，不包括任何子节点。适用于执行变换操作（移动、旋转等）。见 :ref:`get_top_selected_nodes()<class_EditorSelection_method_get_top_selected_nodes>`\ 。
+Returns the list of top selected nodes only, excluding any children. This is useful for performing transform operations (moving them, rotating, etc.). See :ref:`get_top_selected_nodes()<class_EditorSelection_method_get_top_selected_nodes>`.
 
 .. rst-class:: classref-item-separator
 
@@ -138,14 +138,14 @@ EditorSelection
 
 |void| **remove_node**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_EditorSelection_method_remove_node>`
 
-从选择中删除一个节点。
+Removes a node from the selection.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

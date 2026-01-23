@@ -7,7 +7,7 @@ RDUniform
 
 **Hereda:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Shader uniform (used by :ref:`RenderingDevice<class_RenderingDevice>`).
+Uniforme de shader (utilizada por :ref:`RenderingDevice<class_RenderingDevice>`).
 
 .. rst-class:: classref-introduction-group
 

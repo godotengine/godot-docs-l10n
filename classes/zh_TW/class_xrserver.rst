@@ -5,28 +5,28 @@
 XRServer
 ========
 
-**繼承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-用於 AR 和 VR 功能的服務。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-AR/VR 伺服器是我們“高級虛擬實境”解決方案的核心，負責執行所有處理。
+Server for AR and VR features.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`XR 文件索引 <../tutorials/xr/index>`
+The AR/VR server is the heart of our Advanced and Virtual Reality solution and handles all the processing.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`XR documentation index <../tutorials/xr/index>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -43,8 +43,8 @@ AR/VR 伺服器是我們“高級虛擬實境”解決方案的核心，負責�
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -85,8 +85,8 @@ AR/VR 伺服器是我們“高級虛擬實境”解決方案的核心，負責�
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_XRServer_signal_interface_added:
 
@@ -94,7 +94,7 @@ AR/VR 伺服器是我們“高級虛擬實境”解決方案的核心，負責�
 
 **interface_added**\ (\ interface_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_XRServer_signal_interface_added>`
 
-新增新介面時觸發。
+Emitted when a new interface has been added.
 
 .. rst-class:: classref-item-separator
 
@@ -106,7 +106,7 @@ AR/VR 伺服器是我們“高級虛擬實境”解決方案的核心，負責�
 
 **interface_removed**\ (\ interface_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_XRServer_signal_interface_removed>`
 
-當介面被移除時觸發。
+Emitted when an interface is removed.
 
 .. rst-class:: classref-item-separator
 
@@ -130,7 +130,7 @@ Emitted when the reference frame transform changes.
 
 **tracker_added**\ (\ tracker_name\: :ref:`StringName<class_StringName>`, type\: :ref:`int<class_int>`\ ) :ref:`🔗<class_XRServer_signal_tracker_added>`
 
-當一個新的追蹤器被新增時發出。如果你不使用一個固定數量的控制器，或者如果你將 :ref:`XRAnchor3D<class_XRAnchor3D>` 用於一個 AR 解決方案，請務必對此訊號做出反應，以新增與該新追蹤器相適的 :ref:`XRController3D<class_XRController3D>` 或 :ref:`XRAnchor3D<class_XRAnchor3D>` 節點 。
+Emitted when a new tracker has been added. If you don't use a fixed number of controllers or if you're using :ref:`XRAnchor3D<class_XRAnchor3D>`\ s for an AR solution, it is important to react to this signal to add the appropriate :ref:`XRController3D<class_XRController3D>` or :ref:`XRAnchor3D<class_XRAnchor3D>` nodes related to this new tracker.
 
 .. rst-class:: classref-item-separator
 
@@ -142,7 +142,7 @@ Emitted when the reference frame transform changes.
 
 **tracker_removed**\ (\ tracker_name\: :ref:`StringName<class_StringName>`, type\: :ref:`int<class_int>`\ ) :ref:`🔗<class_XRServer_signal_tracker_removed>`
 
-當一個追蹤器被移除時發出。如此，你應該移除任何 :ref:`XRController3D<class_XRController3D>` 或 :ref:`XRAnchor3D<class_XRAnchor3D>` 點。這不是強制性的，這些節點只是變得不活動，並且當一個新的追蹤器可用時，將再次啟動（即打開一個新的控制器，來代替前一個控制器）。
+Emitted when a tracker is removed. You should remove any :ref:`XRController3D<class_XRController3D>` or :ref:`XRAnchor3D<class_XRAnchor3D>` points if applicable. This is not mandatory, the nodes simply become inactive and will be made active again when a new tracker becomes available (i.e. a new controller is switched on that takes the place of the previous one).
 
 .. rst-class:: classref-item-separator
 
@@ -154,7 +154,7 @@ Emitted when the reference frame transform changes.
 
 **tracker_updated**\ (\ tracker_name\: :ref:`StringName<class_StringName>`, type\: :ref:`int<class_int>`\ ) :ref:`🔗<class_XRServer_signal_tracker_updated>`
 
-當現有追蹤器被更新時發出。如果使用者切換控制器，則可能會發生這種情況。
+Emitted when an existing tracker has been updated. This can happen if the user switches controllers.
 
 .. rst-class:: classref-section-separator
 
@@ -162,8 +162,8 @@ Emitted when the reference frame transform changes.
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_XRServer_TrackerType:
 
@@ -185,7 +185,7 @@ The tracker tracks the location of the player's head. This is usually a location
 
 :ref:`TrackerType<enum_XRServer_TrackerType>` **TRACKER_CONTROLLER** = ``2``
 
-追蹤器追蹤控制器的位置。
+The tracker tracks the location of a controller.
 
 .. _class_XRServer_constant_TRACKER_BASESTATION:
 
@@ -193,7 +193,7 @@ The tracker tracks the location of the player's head. This is usually a location
 
 :ref:`TrackerType<enum_XRServer_TrackerType>` **TRACKER_BASESTATION** = ``4``
 
-追蹤器追蹤基站的位置。
+The tracker tracks the location of a base station.
 
 .. _class_XRServer_constant_TRACKER_ANCHOR:
 
@@ -201,7 +201,7 @@ The tracker tracks the location of the player's head. This is usually a location
 
 :ref:`TrackerType<enum_XRServer_TrackerType>` **TRACKER_ANCHOR** = ``8``
 
-追蹤器追蹤 AR 錨的位置和大小。
+The tracker tracks the location and size of an AR anchor.
 
 .. _class_XRServer_constant_TRACKER_HAND:
 
@@ -233,7 +233,7 @@ The tracker tracks the expressions of a face.
 
 :ref:`TrackerType<enum_XRServer_TrackerType>` **TRACKER_ANY_KNOWN** = ``127``
 
-內部用於篩選任何已知型別的追蹤器。
+Used internally to filter trackers of any known type.
 
 .. _class_XRServer_constant_TRACKER_UNKNOWN:
 
@@ -241,7 +241,7 @@ The tracker tracks the expressions of a face.
 
 :ref:`TrackerType<enum_XRServer_TrackerType>` **TRACKER_UNKNOWN** = ``128``
 
-如果我們尚未設定追蹤器型別，則在內部使用。
+Used internally if we haven't set the tracker type yet.
 
 .. _class_XRServer_constant_TRACKER_ANY:
 
@@ -249,7 +249,7 @@ The tracker tracks the expressions of a face.
 
 :ref:`TrackerType<enum_XRServer_TrackerType>` **TRACKER_ANY** = ``255``
 
-在內部用於選擇所有追蹤器。
+Used internally to select all trackers.
 
 .. rst-class:: classref-item-separator
 
@@ -267,7 +267,7 @@ enum **RotationMode**: :ref:`🔗<enum_XRServer_RotationMode>`
 
 :ref:`RotationMode<enum_XRServer_RotationMode>` **RESET_FULL_ROTATION** = ``0``
 
-完全重設 HMD 的方向。無論使用者在現實世界中看向哪個方向。將在虛擬世界中鎖定視角。
+Fully reset the orientation of the HMD. Regardless of what direction the user is looking to in the real world. The user will look dead ahead in the virtual world.
 
 .. _class_XRServer_constant_RESET_BUT_KEEP_TILT:
 
@@ -275,7 +275,7 @@ enum **RotationMode**: :ref:`🔗<enum_XRServer_RotationMode>`
 
 :ref:`RotationMode<enum_XRServer_RotationMode>` **RESET_BUT_KEEP_TILT** = ``1``
 
-重設方向，但保持裝置的傾斜度。因此，如果我們正在往下看，會繼續往下看，但航向會被重設。
+Resets the orientation but keeps the tilt of the device. So if we're looking down, we keep looking down but heading will be reset.
 
 .. _class_XRServer_constant_DONT_RESET_ROTATION:
 
@@ -283,7 +283,7 @@ enum **RotationMode**: :ref:`🔗<enum_XRServer_RotationMode>`
 
 :ref:`RotationMode<enum_XRServer_RotationMode>` **DONT_RESET_ROTATION** = ``2``
 
-不重設 HMD 的方向，只讓玩家的位置居中。
+Does not reset the orientation of the HMD, only the position of the player gets centered.
 
 .. rst-class:: classref-section-separator
 
@@ -291,8 +291,8 @@ enum **RotationMode**: :ref:`🔗<enum_XRServer_RotationMode>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_XRServer_property_camera_locked_to_origin:
 
@@ -324,7 +324,7 @@ If set to ``true``, the scene will be rendered as if the camera is locked to the
 - |void| **set_primary_interface**\ (\ value\: :ref:`XRInterface<class_XRInterface>`\ )
 - :ref:`XRInterface<class_XRInterface>` **get_primary_interface**\ (\ )
 
-目前綁定到 **XRServer** 的主 :ref:`XRInterface<class_XRInterface>`\ 。
+The primary :ref:`XRInterface<class_XRInterface>` currently bound to the **XRServer**.
 
 .. rst-class:: classref-item-separator
 
@@ -341,9 +341,9 @@ If set to ``true``, the scene will be rendered as if the camera is locked to the
 - |void| **set_world_origin**\ (\ value\: :ref:`Transform3D<class_Transform3D>`\ )
 - :ref:`Transform3D<class_Transform3D>` **get_world_origin**\ (\ )
 
-我們的追蹤空間在虛擬世界中的原點。算繪器會用到這個資訊，根據新的追蹤資料來正確放置相機。
+The current origin of our tracking space in the virtual world. This is used by the renderer to properly position the camera with new tracking data.
 
-\ **注意：**\ 這個屬性由目前的 :ref:`XROrigin3D<class_XROrigin3D>` 節點管理。暴露的目的是方便在 GDExtension 使用。
+\ **Note:** This property is managed by the current :ref:`XROrigin3D<class_XROrigin3D>` node. It is exposed for access from GDExtensions.
 
 .. rst-class:: classref-item-separator
 
@@ -368,8 +368,8 @@ The scale of the game world compared to the real world. By default, most AR/VR p
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_XRServer_method_add_interface:
 
@@ -377,7 +377,7 @@ The scale of the game world compared to the real world. By default, most AR/VR p
 
 |void| **add_interface**\ (\ interface\: :ref:`XRInterface<class_XRInterface>`\ ) :ref:`🔗<class_XRServer_method_add_interface>`
 
-註冊一個 :ref:`XRInterface<class_XRInterface>` 物件。
+Registers an :ref:`XRInterface<class_XRInterface>` object.
 
 .. rst-class:: classref-item-separator
 
@@ -435,7 +435,7 @@ Clears the reference frame that was set by previous calls to :ref:`center_on_hmd
 
 :ref:`XRInterface<class_XRInterface>` **find_interface**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_XRServer_method_find_interface>`
 
-通過名稱 ``name`` 搜尋介面。例如，如果你的專案使用 AR/VR 平臺的功能，你可以通過名稱找到該平臺的介面並初始化。
+Finds an interface by its ``name``. For example, if your project uses capabilities of an AR/VR platform, you can find the interface for that platform by name and initialize it.
 
 .. rst-class:: classref-item-separator
 
@@ -447,7 +447,7 @@ Clears the reference frame that was set by previous calls to :ref:`center_on_hmd
 
 :ref:`Transform3D<class_Transform3D>` **get_hmd_transform**\ (\ ) :ref:`🔗<class_XRServer_method_get_hmd_transform>`
 
-返回主介面的變換。
+Returns the primary interface's transformation.
 
 .. rst-class:: classref-item-separator
 
@@ -459,7 +459,7 @@ Clears the reference frame that was set by previous calls to :ref:`center_on_hmd
 
 :ref:`XRInterface<class_XRInterface>` **get_interface**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_XRServer_method_get_interface>`
 
-返回在介面列表中給定 ``idx`` 索引處註冊的介面。
+Returns the interface registered at the given ``idx`` index in the list of interfaces.
 
 .. rst-class:: classref-item-separator
 
@@ -471,7 +471,7 @@ Clears the reference frame that was set by previous calls to :ref:`center_on_hmd
 
 :ref:`int<class_int>` **get_interface_count**\ (\ ) |const| :ref:`🔗<class_XRServer_method_get_interface_count>`
 
-返回目前在AR/VR服務上註冊的介面數量。如果你的專案支援多個AR/VR平臺，你可以查看可用的介面，並向使用者展示一個選擇，或者簡單地嘗試初始化每個介面，並使用第一個返回 ``true``\ 的介面。
+Returns the number of interfaces currently registered with the AR/VR server. If your project supports multiple AR/VR platforms, you can look through the available interface, and either present the user with a selection or simply try to initialize each interface and use the first one that returns ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -483,7 +483,7 @@ Clears the reference frame that was set by previous calls to :ref:`center_on_hmd
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_interfaces**\ (\ ) |const| :ref:`🔗<class_XRServer_method_get_interfaces>`
 
-返回可用介面的列表，每個介面的ID和名稱。
+Returns a list of available interfaces the ID and name of each interface.
 
 .. rst-class:: classref-item-separator
 
@@ -495,7 +495,7 @@ Clears the reference frame that was set by previous calls to :ref:`center_on_hmd
 
 :ref:`Transform3D<class_Transform3D>` **get_reference_frame**\ (\ ) |const| :ref:`🔗<class_XRServer_method_get_reference_frame>`
 
-返回引用影格的變換。主要在內部使用，並公開以用於 GDExtension 建構介面。
+Returns the reference frame transform. Mostly used internally and exposed for GDExtension build interfaces.
 
 .. rst-class:: classref-item-separator
 
@@ -507,7 +507,7 @@ Clears the reference frame that was set by previous calls to :ref:`center_on_hmd
 
 :ref:`XRTracker<class_XRTracker>` **get_tracker**\ (\ tracker_name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_XRServer_method_get_tracker>`
 
-返回具有給定 ``tracker_name`` 的位置追蹤器。
+Returns the positional tracker with the given ``tracker_name``.
 
 .. rst-class:: classref-item-separator
 
@@ -519,7 +519,7 @@ Clears the reference frame that was set by previous calls to :ref:`center_on_hmd
 
 :ref:`Dictionary<class_Dictionary>` **get_trackers**\ (\ tracker_types\: :ref:`int<class_int>`\ ) :ref:`🔗<class_XRServer_method_get_trackers>`
 
-返回 ``tracker_types`` 的追蹤器字典。
+Returns a dictionary of trackers for ``tracker_types``.
 
 .. rst-class:: classref-item-separator
 
@@ -531,7 +531,7 @@ Clears the reference frame that was set by previous calls to :ref:`center_on_hmd
 
 |void| **remove_interface**\ (\ interface\: :ref:`XRInterface<class_XRInterface>`\ ) :ref:`🔗<class_XRServer_method_remove_interface>`
 
-移除該 ``interface``\ 。
+Removes this ``interface``.
 
 .. rst-class:: classref-item-separator
 
@@ -545,12 +545,12 @@ Clears the reference frame that was set by previous calls to :ref:`center_on_hmd
 
 Removes this ``tracker``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

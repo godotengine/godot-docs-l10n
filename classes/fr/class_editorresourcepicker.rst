@@ -83,7 +83,7 @@ Signaux
 
 **resource_selected**\ (\ resource\: :ref:`Resource<class_Resource>`, inspect\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorResourcePicker_signal_resource_selected>`
 
-Emitted when the resource value was set and user clicked to edit it. When ``inspect`` is ``true``, the signal was caused by the context menu "Edit" or "Inspect" option.
+Émis lorsque la valeur de ressource a été définie et que l'utilisateur a cliqué pour la modifier. Lorsque ``inspect`` vaut ``true``, le signal a été causé par le menu contextuel "Édition" ou par l'option "Inspecter".
 
 .. rst-class:: classref-section-separator
 
@@ -185,9 +185,9 @@ This virtual method can be implemented to handle context menu items not handled 
 
 |void| **_set_create_options**\ (\ menu_node\: :ref:`Object<class_Object>`\ ) |virtual| :ref:`🔗<class_EditorResourcePicker_private_method__set_create_options>`
 
-This virtual method is called when updating the context menu of **EditorResourcePicker**. Implement this method to override the "New ..." items with your own options. ``menu_node`` is a reference to the :ref:`PopupMenu<class_PopupMenu>` node.
+Cette méthode virtuelle est appelée lors de la mise à jour du menu contextuel de **EditorResourcePicker**. Implémenter cette méthode pour remplacer les éléments dans « Nouveau... » par vos propres options. ``menu_node`` est une référence au nœud :ref:`PopupMenu<class_PopupMenu>`.
 
-\ **Note:** Implement :ref:`_handle_menu_selected()<class_EditorResourcePicker_private_method__handle_menu_selected>` to handle these custom items.
+\ **Note :** Implémentez :ref:`_handle_menu_selected()<class_EditorResourcePicker_private_method__handle_menu_selected>` pour traiter ces éléments personnalisés.
 
 .. rst-class:: classref-item-separator
 

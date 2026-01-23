@@ -5,40 +5,40 @@
 Rect2
 =====
 
-使用浮點數座標的 2D 軸對齊邊界框。
+A 2D axis-aligned bounding box using floating-point coordinates.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-**Rect2**\ 內建\ :ref:`Variant<class_Variant>`\ 型別表示二維空間中的軸對齊矩形。它由其\ :ref:`position<class_Rect2_property_position>`\ 和\ :ref:`size<class_Rect2_property_size>`\ 定義，分別是\ :ref:`Vector2<class_Vector2>`\ 。常用於快速重疊測試（參見\ :ref:`intersects()<class_Rect2_method_intersects>`\ ）。雖然\ **Rect2**\ 本身是軸對齊的，但它可以與\ :ref:`Transform2D<class_Transform2D>`\ 組合來表示旋轉或傾斜的矩形。
+The **Rect2** built-in :ref:`Variant<class_Variant>` type represents an axis-aligned rectangle in a 2D space. It is defined by its :ref:`position<class_Rect2_property_position>` and :ref:`size<class_Rect2_property_size>`, which are :ref:`Vector2<class_Vector2>`. It is frequently used for fast overlap tests (see :ref:`intersects()<class_Rect2_method_intersects>`). Although **Rect2** itself is axis-aligned, it can be combined with :ref:`Transform2D<class_Transform2D>` to represent a rotated or skewed rectangle.
 
-對於整數座標，請使用 :ref:`Rect2i<class_Rect2i>`\ 。與 **Rect2** 等效的 3D 是 :ref:`AABB<class_AABB>`\ 。
+For integer coordinates, use :ref:`Rect2i<class_Rect2i>`. The 3D equivalent to **Rect2** is :ref:`AABB<class_AABB>`.
 
-\ **注意：** 不支援 :ref:`size<class_Rect2_property_size>` 的負值。對於負大小，大多數 **Rect2** 方法都無法正常運作。使用 :ref:`abs()<class_Rect2_method_abs>` 取得具有非負大小的等效 **Rect2**\ 。
+\ **Note:** Negative values for :ref:`size<class_Rect2_property_size>` are not supported. With negative size, most **Rect2** methods do not work correctly. Use :ref:`abs()<class_Rect2_method_abs>` to get an equivalent **Rect2** with a non-negative size.
 
-\ **注意：** 在布林本文中，如果\ :ref:`position<class_Rect2_property_position>` 和\ :ref:`size<class_Rect2_property_size>` 均為零（等於\ :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`\ ），則\ **Rect2** 的計算結果為\ ``false`` ）。否則，它的計算結果始終為 ``true``\ 。
+\ **Note:** In a boolean context, a **Rect2** evaluates to ``false`` if both :ref:`position<class_Rect2_property_position>` and :ref:`size<class_Rect2_property_size>` are zero (equal to :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`). Otherwise, it always evaluates to ``true``.
 
 .. note::
 
-	使用 C# 操作此 API 時有顯著差異，詳見 :ref:`doc_c_sharp_differences`。
+	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`數學文件索引 <../tutorials/math/index>`
+- :doc:`Math documentation index <../tutorials/math/index>`
 
-- :doc:`向量數學 <../tutorials/math/vector_math>`
+- :doc:`Vector math <../tutorials/math/vector_math>`
 
-- :doc:`高等向量數學 <../tutorials/math/vectors_advanced>`
+- :doc:`Advanced vector math <../tutorials/math/vectors_advanced>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ Rect2
 
 .. rst-class:: classref-reftable-group
 
-建構子
-------
+Constructors
+------------
 
 .. table::
    :widths: auto
@@ -73,8 +73,8 @@ Rect2
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -115,8 +115,8 @@ Rect2
 
 .. rst-class:: classref-reftable-group
 
-運算子
-------
+Operators
+---------
 
 .. table::
    :widths: auto
@@ -135,8 +135,8 @@ Rect2
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_Rect2_property_end:
 
@@ -144,7 +144,7 @@ Rect2
 
 :ref:`Vector2<class_Vector2>` **end** = ``Vector2(0, 0)`` :ref:`🔗<class_Rect2_property_end>`
 
-終點角。通過 ``position + size`` 計算而來。設定該值會修改大小。
+The ending point. This is usually the bottom-right corner of the rectangle, and is equivalent to ``position + size``. Setting this point affects the :ref:`size<class_Rect2_property_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ Rect2
 
 :ref:`Vector2<class_Vector2>` **position** = ``Vector2(0, 0)`` :ref:`🔗<class_Rect2_property_position>`
 
-相機的位置是固定的，所以左上角總是在原點。
+The origin point. This is usually the top-left corner of the rectangle.
 
 .. rst-class:: classref-item-separator
 
@@ -168,9 +168,9 @@ Rect2
 
 :ref:`Vector2<class_Vector2>` **size** = ``Vector2(0, 0)`` :ref:`🔗<class_Rect2_property_size>`
 
-矩形的寬度和高度，從 :ref:`position<class_Rect2_property_position>` 開始。設定此值也會影響 :ref:`end<class_Rect2_property_end>` 點。
+The rectangle's width and height, starting from :ref:`position<class_Rect2_property_position>`. Setting this value also affects the :ref:`end<class_Rect2_property_end>` point.
 
-\ **注意：**\ 建議將寬度和高度設為非負值，因為Godot中的大多數方法都假設\ :ref:`position<class_Rect2_property_position>`\ 是左上角，\ :ref:`end<class_Rect2_property_end>`\ 是底部-右上角。若要獲得非負大小的等效矩形，請使用\ :ref:`abs()<class_Rect2_method_abs>`\ 。
+\ **Note:** It's recommended setting the width and height to non-negative values, as most methods in Godot assume that the :ref:`position<class_Rect2_property_position>` is the top-left corner, and the :ref:`end<class_Rect2_property_end>` is the bottom-right corner. To get an equivalent rectangle with non-negative size, use :ref:`abs()<class_Rect2_method_abs>`.
 
 .. rst-class:: classref-section-separator
 
@@ -178,8 +178,8 @@ Rect2
 
 .. rst-class:: classref-descriptions-group
 
-建構子說明
-----------
+Constructor Descriptions
+------------------------
 
 .. _class_Rect2_constructor_Rect2:
 
@@ -187,7 +187,7 @@ Rect2
 
 :ref:`Rect2<class_Rect2>` **Rect2**\ (\ ) :ref:`🔗<class_Rect2_constructor_Rect2>`
 
-預設建構 **Rect2**\ ，\ :ref:`position<class_Rect2_property_position>` 和 :ref:`size<class_Rect2_property_size>` 均為預設值（零）。
+Constructs a **Rect2** with its :ref:`position<class_Rect2_property_position>` and :ref:`size<class_Rect2_property_size>` set to :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`.
 
 .. rst-class:: classref-item-separator
 
@@ -197,7 +197,7 @@ Rect2
 
 :ref:`Rect2<class_Rect2>` **Rect2**\ (\ from\: :ref:`Rect2<class_Rect2>`\ )
 
-建構給定 **Rect2** 的副本。
+Constructs a **Rect2** as a copy of the given **Rect2**.
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ Rect2
 
 :ref:`Rect2<class_Rect2>` **Rect2**\ (\ from\: :ref:`Rect2i<class_Rect2i>`\ )
 
-從 :ref:`Rect2i<class_Rect2i>` 建構 **Rect2**\ 。
+Constructs a **Rect2** from a :ref:`Rect2i<class_Rect2i>`.
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ Rect2
 
 :ref:`Rect2<class_Rect2>` **Rect2**\ (\ position\: :ref:`Vector2<class_Vector2>`, size\: :ref:`Vector2<class_Vector2>`\ )
 
-按位置和大小建構 **Rect2**\ 。
+Constructs a **Rect2** by ``position`` and ``size``.
 
 .. rst-class:: classref-item-separator
 
@@ -227,7 +227,7 @@ Rect2
 
 :ref:`Rect2<class_Rect2>` **Rect2**\ (\ x\: :ref:`float<class_float>`, y\: :ref:`float<class_float>`, width\: :ref:`float<class_float>`, height\: :ref:`float<class_float>`\ )
 
-透過將 :ref:`position<class_Rect2_property_position>` 設定為 (``x``, ``y``) 並將其 :ref:`size<class_Rect2_property_size>` 設定為 (``width``, ``height``) 。
+Constructs a **Rect2** by setting its :ref:`position<class_Rect2_property_position>` to (``x``, ``y``), and its :ref:`size<class_Rect2_property_size>` to (``width``, ``height``).
 
 .. rst-class:: classref-section-separator
 
@@ -235,8 +235,8 @@ Rect2
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_Rect2_method_abs:
 
@@ -244,7 +244,7 @@ Rect2
 
 :ref:`Rect2<class_Rect2>` **abs**\ (\ ) |const| :ref:`🔗<class_Rect2_method_abs>`
 
-傳回與此矩形等效的\ **Rect2**\ ，其寬度和高度修改為非負值，其\ :ref:`position<class_Rect2_property_position>`\ 為矩形的左上角。
+Returns a **Rect2** equivalent to this rectangle, with its width and height modified to be non-negative values, and with its :ref:`position<class_Rect2_property_position>` being the top-left corner of the rectangle.
 
 
 .. tabs::
@@ -261,7 +261,7 @@ Rect2
 
 
 
-\ **注意：**\ 當\ :ref:`size<class_Rect2_property_size>`\ 為負數時，建議使用此方法，因為Godot中的大多數其他方法都假設\ :ref:`position<class_Rect2_property_position>`\ 是左上角，\ :ref:`end<class_Rect2_property_end>`\ 是右下角。
+\ **Note:** It's recommended to use this method when :ref:`size<class_Rect2_property_size>` is negative, as most other methods in Godot assume that the :ref:`position<class_Rect2_property_position>` is the top-left corner, and the :ref:`end<class_Rect2_property_end>` is the bottom-right corner.
 
 .. rst-class:: classref-item-separator
 
@@ -273,7 +273,7 @@ Rect2
 
 :ref:`bool<class_bool>` **encloses**\ (\ b\: :ref:`Rect2<class_Rect2>`\ ) |const| :ref:`🔗<class_Rect2_method_encloses>`
 
-如果該 :ref:`Rect2i<class_Rect2i>` 完全包含另一個，則返回 ``true``\ 。
+Returns ``true`` if this rectangle *completely* encloses the ``b`` rectangle.
 
 .. rst-class:: classref-item-separator
 
@@ -316,7 +316,7 @@ Returns a copy of this rectangle expanded to align the edges with the given ``to
 
 :ref:`float<class_float>` **get_area**\ (\ ) |const| :ref:`🔗<class_Rect2_method_get_area>`
 
-返回該 **Rect2** 的面積。另請參閱 :ref:`has_area()<class_Rect2_method_has_area>`\ 。
+Returns the rectangle's area. This is equivalent to ``size.x * size.y``. See also :ref:`has_area()<class_Rect2_method_has_area>`.
 
 .. rst-class:: classref-item-separator
 
@@ -328,7 +328,7 @@ Returns a copy of this rectangle expanded to align the edges with the given ``to
 
 :ref:`Vector2<class_Vector2>` **get_center**\ (\ ) |const| :ref:`🔗<class_Rect2_method_get_center>`
 
-返回該向量的逆向量。與 ``Vector3(1.0 / v.x, 1.0 / v.y, 1.0 / v.z)`` 相同。
+Returns the center point of the rectangle. This is the same as ``position + (size / 2.0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -352,7 +352,7 @@ Returns the vertex's position of this rect that's the farthest in the given dire
 
 :ref:`Rect2<class_Rect2>` **grow**\ (\ amount\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Rect2_method_grow>`
 
-傳回給定的\ ``amount`` 在所有邊上擴充的此矩形的副本。負的\ ``amount`` 會縮小矩形。另請參閱\ :ref:`grow_individual()<class_Rect2_method_grow_individual>` 和\ :ref:`grow_side()<class_Rect2_method_grow_side>`\ 。
+Returns a copy of this rectangle extended on all sides by the given ``amount``. A negative ``amount`` shrinks the rectangle instead. See also :ref:`grow_individual()<class_Rect2_method_grow_individual>` and :ref:`grow_side()<class_Rect2_method_grow_side>`.
 
 
 .. tabs::
@@ -379,7 +379,7 @@ Returns the vertex's position of this rect that's the farthest in the given dire
 
 :ref:`Rect2<class_Rect2>` **grow_individual**\ (\ left\: :ref:`float<class_float>`, top\: :ref:`float<class_float>`, right\: :ref:`float<class_float>`, bottom\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Rect2_method_grow_individual>`
 
-傳回此矩形的副本，其 ``left``\ 、\ ``top``\ 、\ ``right`` 和 ``bottom`` 邊擴充了給定的量。負值會縮小另請參閱\ :ref:`grow()<class_Rect2_method_grow>` 和\ :ref:`grow_side()<class_Rect2_method_grow_side>`\ 。
+Returns a copy of this rectangle with its ``left``, ``top``, ``right``, and ``bottom`` sides extended by the given amounts. Negative values shrink the sides, instead. See also :ref:`grow()<class_Rect2_method_grow>` and :ref:`grow_side()<class_Rect2_method_grow_side>`.
 
 .. rst-class:: classref-item-separator
 
@@ -391,7 +391,7 @@ Returns the vertex's position of this rect that's the farthest in the given dire
 
 :ref:`Rect2<class_Rect2>` **grow_side**\ (\ side\: :ref:`int<class_int>`, amount\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Rect2_method_grow_side>`
 
-傳回此矩形的副本，其 ``side`` 按給定的 ``amount`` 擴充（請參閱 :ref:`Side<enum_@GlobalScope_Side>` 常數）。負數 ``amount`` 會縮小矩形，相反。另請參見 :ref:`grow()<class_Rect2_method_grow>` 和 :ref:`grow_individual()<class_Rect2_method_grow_individual>`\ 。
+Returns a copy of this rectangle with its ``side`` extended by the given ``amount`` (see :ref:`Side<enum_@GlobalScope_Side>` constants). A negative ``amount`` shrinks the rectangle, instead. See also :ref:`grow()<class_Rect2_method_grow>` and :ref:`grow_individual()<class_Rect2_method_grow_individual>`.
 
 .. rst-class:: classref-item-separator
 
@@ -415,9 +415,9 @@ Returns ``true`` if this rectangle has positive width and height. See also :ref:
 
 :ref:`bool<class_bool>` **has_point**\ (\ point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Rect2_method_has_point>`
 
-返回 ``true`` 時，該 **Rect2** 包含此點。依照慣例，\ **Rect2** 的右邊緣和下邊緣是被排除在外的，因此\ **不**\ 包含位於這兩條邊上的點。
+Returns ``true`` if the rectangle contains the given ``point``. By convention, points on the right and bottom edges are **not** included.
 
-\ **注意：**\ 對於\ *大小為負*\ 的 **Rect2**\ ，該方法並不可靠。請使用 :ref:`abs()<class_Rect2_method_abs>` 獲取等價的正數大小矩形再檢查是否包含某個點。
+\ **Note:** This method is not reliable for **Rect2** with a *negative* :ref:`size<class_Rect2_property_size>`. Use :ref:`abs()<class_Rect2_method_abs>` first to get a valid rectangle.
 
 .. rst-class:: classref-item-separator
 
@@ -429,7 +429,7 @@ Returns ``true`` if this rectangle has positive width and height. See also :ref:
 
 :ref:`Rect2<class_Rect2>` **intersection**\ (\ b\: :ref:`Rect2<class_Rect2>`\ ) |const| :ref:`🔗<class_Rect2_method_intersection>`
 
-傳回此矩形與 ``b`` 之間的交集。如果矩形不相交，則傳回空的 **Rect2**\ 。
+Returns the intersection between this rectangle and ``b``. If the rectangles do not intersect, returns an empty **Rect2**.
 
 
 .. tabs::
@@ -450,7 +450,7 @@ Returns ``true`` if this rectangle has positive width and height. See also :ref:
 
 
 
-\ **注意：**\ 如果您只需要知道兩個矩形是否重疊，請改用\ :ref:`intersects()<class_Rect2_method_intersects>`\ 。
+\ **Note:** If you only need to know whether two rectangles are overlapping, use :ref:`intersects()<class_Rect2_method_intersects>`, instead.
 
 .. rst-class:: classref-item-separator
 
@@ -462,7 +462,7 @@ Returns ``true`` if this rectangle has positive width and height. See also :ref:
 
 :ref:`bool<class_bool>` **intersects**\ (\ b\: :ref:`Rect2<class_Rect2>`, include_borders\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Rect2_method_intersects>`
 
-如果該 :ref:`Rect2i<class_Rect2i>` 與 ``b`` 重疊（即至少包含一個共同的點），則返回 ``true``\ 。
+Returns ``true`` if this rectangle overlaps with the ``b`` rectangle. The edges of both rectangles are excluded, unless ``include_borders`` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -486,7 +486,7 @@ Returns ``true`` if this rectangle and ``rect`` are approximately equal, by call
 
 :ref:`bool<class_bool>` **is_finite**\ (\ ) |const| :ref:`🔗<class_Rect2_method_is_finite>`
 
-如果該平面是有限的，則返回 ``true``\ ，判斷方法是在每個分量上呼叫 :ref:`@GlobalScope.is_finite()<class_@GlobalScope_method_is_finite>`\ 。
+Returns ``true`` if this rectangle's values are finite, by calling :ref:`Vector2.is_finite()<class_Vector2_method_is_finite>` on the :ref:`position<class_Rect2_property_position>` and the :ref:`size<class_Rect2_property_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -498,7 +498,7 @@ Returns ``true`` if this rectangle and ``rect`` are approximately equal, by call
 
 :ref:`Rect2<class_Rect2>` **merge**\ (\ b\: :ref:`Rect2<class_Rect2>`\ ) |const| :ref:`🔗<class_Rect2_method_merge>`
 
-傳回包圍此矩形和邊緣周圍的 ``b`` 的 **Rect2**\ 。另請參閱 :ref:`encloses()<class_Rect2_method_encloses>`.
+Returns a **Rect2** that encloses both this rectangle and ``b`` around the edges. See also :ref:`encloses()<class_Rect2_method_encloses>`.
 
 .. rst-class:: classref-section-separator
 
@@ -506,8 +506,8 @@ Returns ``true`` if this rectangle and ``rect`` are approximately equal, by call
 
 .. rst-class:: classref-descriptions-group
 
-運算子說明
-----------
+Operator Descriptions
+---------------------
 
 .. _class_Rect2_operator_neq_Rect2:
 
@@ -515,9 +515,9 @@ Returns ``true`` if this rectangle and ``rect`` are approximately equal, by call
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Rect2<class_Rect2>`\ ) :ref:`🔗<class_Rect2_operator_neq_Rect2>`
 
-如果矩形不相等，則返回 ``true``\ 。
+Returns ``true`` if the :ref:`position<class_Rect2_property_position>` or :ref:`size<class_Rect2_property_size>` of both rectangles are not equal.
 
-\ **注意：**\ 由於浮點數精度誤差，請考慮改用 :ref:`is_equal_approx()<class_Rect2_method_is_equal_approx>`\ ，會更可靠。
+\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Rect2_method_is_equal_approx>` instead, which is more reliable.
 
 .. rst-class:: classref-item-separator
 
@@ -545,16 +545,16 @@ For transforming by inverse of an affine transformation (e.g. with scaling) ``tr
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Rect2<class_Rect2>`\ ) :ref:`🔗<class_Rect2_operator_eq_Rect2>`
 
-如果矩形完全相等，則返回 ``true``\ 。
+Returns ``true`` if both :ref:`position<class_Rect2_property_position>` and :ref:`size<class_Rect2_property_size>` of the rectangles are exactly equal, respectively.
 
-\ **注意：**\ 由於浮點數精度誤差，請考慮改用 :ref:`is_equal_approx()<class_Rect2_method_is_equal_approx>`\ ，會更可靠。
+\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Rect2_method_is_equal_approx>` instead, which is more reliable.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

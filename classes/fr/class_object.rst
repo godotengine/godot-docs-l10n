@@ -277,7 +277,18 @@ Les connexions comptées par référence peuvent être assignées au même :ref:
 
 :ref:`ConnectFlags<enum_Object_ConnectFlags>` **CONNECT_APPEND_SOURCE_OBJECT** = ``16``
 
-L'objet source est automatiquement lié lorsqu'une :ref:`PackedScene<class_PackedScene>` est instanciée. Si ce bit de drapeau est activé, l'objet source sera ajouté juste après les arguments originaux du signal.
+On signal emission, the source object is automatically appended after the original arguments of the signal, regardless of the connected :ref:`Callable<class_Callable>`'s unbinds which affect only the original arguments of the signal (see :ref:`Callable.unbind()<class_Callable_method_unbind>`, :ref:`Callable.get_unbound_arguments_count()<class_Callable_method_get_unbound_arguments_count>`).
+
+::
+
+    extends Object
+
+    signal test_signal
+
+    func test():
+        print(self) # Prints e.g. <Object#35332818393>
+        test_signal.connect(prints.unbind(1), CONNECT_APPEND_SOURCE_OBJECT)
+        test_signal.emit("emit_arg_1", "emit_arg_2") # Prints emit_arg_1 <Object#35332818393>
 
 .. rst-class:: classref-section-separator
 

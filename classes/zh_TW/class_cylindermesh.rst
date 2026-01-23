@@ -5,21 +5,21 @@
 CylinderMesh
 ============
 
-**繼承：** :ref:`PrimitiveMesh<class_PrimitiveMesh>` **<** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`PrimitiveMesh<class_PrimitiveMesh>` **<** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-表示圓柱形 :ref:`PrimitiveMesh<class_PrimitiveMesh>` 的類。
+Class representing a cylindrical :ref:`PrimitiveMesh<class_PrimitiveMesh>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-表示圓柱形 :ref:`PrimitiveMesh<class_PrimitiveMesh>` 的類。通過將 :ref:`top_radius<class_CylinderMesh_property_top_radius>` 或 :ref:`bottom_radius<class_CylinderMesh_property_bottom_radius>` 屬性設定為 ``0.0``\ ，這個類可以用來建立圓錐體。
+Class representing a cylindrical :ref:`PrimitiveMesh<class_PrimitiveMesh>`. This class can be used to create cones by setting either the :ref:`top_radius<class_CylinderMesh_property_top_radius>` or :ref:`bottom_radius<class_CylinderMesh_property_bottom_radius>` properties to ``0.0``.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ CylinderMesh
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_CylinderMesh_property_bottom_radius:
 
@@ -60,7 +60,7 @@ CylinderMesh
 - |void| **set_bottom_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bottom_radius**\ (\ )
 
-圓柱體的底部半徑。如果設定為 ``0.0``\ ，則不會生成底面，呈圓錐狀。另見 :ref:`cap_bottom<class_CylinderMesh_property_cap_bottom>`\ 。
+Bottom radius of the cylinder. If set to ``0.0``, the bottom faces will not be generated, resulting in a conic shape. See also :ref:`cap_bottom<class_CylinderMesh_property_cap_bottom>`.
 
 .. rst-class:: classref-item-separator
 
@@ -77,9 +77,9 @@ CylinderMesh
 - |void| **set_cap_bottom**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_cap_bottom**\ (\ )
 
-如果為 ``true``\ ，則在圓柱體底部生成一個蓋子。這可以設定為 ``false`` 以在相機從未看到蓋子時加速生成和算繪。另見 :ref:`bottom_radius<class_CylinderMesh_property_bottom_radius>`\ 。
+If ``true``, generates a cap at the bottom of the cylinder. This can be set to ``false`` to speed up generation and rendering when the cap is never seen by the camera. See also :ref:`bottom_radius<class_CylinderMesh_property_bottom_radius>`.
 
-\ **注意：**\ 如果 :ref:`bottom_radius<class_CylinderMesh_property_bottom_radius>` 為 ``0.0``\ ，即使 :ref:`cap_bottom<class_CylinderMesh_property_cap_bottom>` 為 ``true``\ ，蓋子生成也會始終被跳過。
+\ **Note:** If :ref:`bottom_radius<class_CylinderMesh_property_bottom_radius>` is ``0.0``, cap generation is always skipped even if :ref:`cap_bottom<class_CylinderMesh_property_cap_bottom>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -96,9 +96,9 @@ CylinderMesh
 - |void| **set_cap_top**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_cap_top**\ (\ )
 
-如果為 ``true``\ ，則在圓柱體頂部生成一個蓋子。這可以設定為 ``false`` 以在相機從未看到蓋子時加速生成和算繪。另見 :ref:`top_radius<class_CylinderMesh_property_top_radius>`\ 。
+If ``true``, generates a cap at the top of the cylinder. This can be set to ``false`` to speed up generation and rendering when the cap is never seen by the camera. See also :ref:`top_radius<class_CylinderMesh_property_top_radius>`.
 
-\ **注意：**\ 如果 :ref:`top_radius<class_CylinderMesh_property_top_radius>` 為 ``0.0``\ ，即使 :ref:`cap_top<class_CylinderMesh_property_cap_top>` 為 ``true``\ ，蓋子生成也會始終被跳過。
+\ **Note:** If :ref:`top_radius<class_CylinderMesh_property_top_radius>` is ``0.0``, cap generation is always skipped even if :ref:`cap_top<class_CylinderMesh_property_cap_top>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +115,7 @@ CylinderMesh
 - |void| **set_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_height**\ (\ )
 
-圓柱體的全高。
+Full height of the cylinder.
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ CylinderMesh
 - |void| **set_radial_segments**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_radial_segments**\ (\ )
 
-圓柱體上的徑向段數。更高的值會生成更細緻的圓柱體或圓錐體，但以性能為代價。
+Number of radial segments on the cylinder. Higher values result in a more detailed cylinder/cone at the cost of performance.
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ CylinderMesh
 - |void| **set_rings**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_rings**\ (\ )
 
-沿圓柱體的高度的邊緣環的數量。除非使用著色器或程式網格工具來更改頂點資料，否則更改 :ref:`rings<class_CylinderMesh_property_rings>` 不會影響顯示，\ :ref:`rings<class_CylinderMesh_property_rings>` 應保持其預設值。較高的值會產生更多的細分，這可用於使用著色器或程式式網格工具建立更平滑的顯示效果，但以性能為代價。
+Number of edge rings along the height of the cylinder. Changing :ref:`rings<class_CylinderMesh_property_rings>` does not have any visual impact unless a shader or procedural mesh tool is used to alter the vertex data. Higher values result in more subdivisions, which can be used to create smoother-looking effects with shaders or procedural mesh tools (at the cost of performance). When not altering the vertex data using a shader or procedural mesh tool, :ref:`rings<class_CylinderMesh_property_rings>` should be kept to its default value.
 
 .. rst-class:: classref-item-separator
 
@@ -166,14 +166,14 @@ CylinderMesh
 - |void| **set_top_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_top_radius**\ (\ )
 
-圓柱體的頂部半徑。如果設定為 ``0.0``\ ，則不會生成頂面，呈圓錐狀。另見 :ref:`cap_top<class_CylinderMesh_property_cap_top>`\ 。
+Top radius of the cylinder. If set to ``0.0``, the top faces will not be generated, resulting in a conic shape. See also :ref:`cap_top<class_CylinderMesh_property_cap_top>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

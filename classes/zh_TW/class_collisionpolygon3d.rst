@@ -5,14 +5,14 @@
 CollisionPolygon3D
 ==================
 
-**繼承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-向 :ref:`CollisionObject3D<class_CollisionObject3D>` 父級提供加厚多邊形形狀（角柱體）的節點。
+A node that provides a thickened polygon shape (a prism) to a :ref:`CollisionObject3D<class_CollisionObject3D>` parent.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 A node that provides a thickened polygon shape (a prism) to a :ref:`CollisionObject3D<class_CollisionObject3D>` parent and allows it to be edited. The polygon can be concave or convex. This can give a detection shape to an :ref:`Area3D<class_Area3D>` or turn a :ref:`PhysicsBody3D<class_PhysicsBody3D>` into a solid object.
 
@@ -20,8 +20,8 @@ A node that provides a thickened polygon shape (a prism) to a :ref:`CollisionObj
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ A node that provides a thickened polygon shape (a prism) to a :ref:`CollisionObj
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_CollisionPolygon3D_property_debug_color:
 
@@ -96,7 +96,7 @@ If ``true``, when the shape is displayed, it will show a solid fill color in add
 - |void| **set_depth**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth**\ (\ )
 
-產生的碰撞沿著與 2D 多邊形垂直的任意方向深入的長度。
+Length that the resulting collision extends in either direction perpendicular to its 2D polygon.
 
 .. rst-class:: classref-item-separator
 
@@ -130,7 +130,7 @@ If ``true``, no collision will be produced. This property should be changed with
 - |void| **set_margin**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_margin**\ (\ )
 
-生成的 :ref:`Shape3D<class_Shape3D>` 的碰撞邊距。詳情見 :ref:`Shape3D.margin<class_Shape3D_property_margin>`\ 。
+The collision margin for the generated :ref:`Shape3D<class_Shape3D>`. See :ref:`Shape3D.margin<class_Shape3D_property_margin>` for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -151,12 +151,12 @@ Array of vertices which define the 2D polygon in the local XY plane.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

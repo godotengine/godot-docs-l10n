@@ -277,7 +277,18 @@ enum **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`ConnectFlags<enum_Object_ConnectFlags>` **CONNECT_APPEND_SOURCE_OBJECT** = ``16``
 
-Вихідний об'єкт автоматично прив'язується, коли створюється екземпляр :ref:`PackedScene<class_PackedScene>`. Якщо цей біт прапорця увімкнено, вихідний об'єкт буде додано одразу після початкових аргументів сигналу.
+On signal emission, the source object is automatically appended after the original arguments of the signal, regardless of the connected :ref:`Callable<class_Callable>`'s unbinds which affect only the original arguments of the signal (see :ref:`Callable.unbind()<class_Callable_method_unbind>`, :ref:`Callable.get_unbound_arguments_count()<class_Callable_method_get_unbound_arguments_count>`).
+
+::
+
+    extends Object
+
+    signal test_signal
+
+    func test():
+        print(self) # Prints e.g. <Object#35332818393>
+        test_signal.connect(prints.unbind(1), CONNECT_APPEND_SOURCE_OBJECT)
+        test_signal.emit("emit_arg_1", "emit_arg_2") # Prints emit_arg_1 <Object#35332818393>
 
 .. rst-class:: classref-section-separator
 

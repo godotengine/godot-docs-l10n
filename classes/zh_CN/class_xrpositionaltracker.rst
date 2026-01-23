@@ -5,34 +5,34 @@
 XRPositionalTracker
 ===================
 
-**继承：** :ref:`XRTracker<class_XRTracker>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`XRTracker<class_XRTracker>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**派生：** :ref:`OpenXRSpatialEntityTracker<class_OpenXRSpatialEntityTracker>`, :ref:`XRBodyTracker<class_XRBodyTracker>`, :ref:`XRControllerTracker<class_XRControllerTracker>`, :ref:`XRHandTracker<class_XRHandTracker>`
+**Inherited By:** :ref:`OpenXRSpatialEntityTracker<class_OpenXRSpatialEntityTracker>`, :ref:`XRBodyTracker<class_XRBodyTracker>`, :ref:`XRControllerTracker<class_XRControllerTracker>`, :ref:`XRHandTracker<class_XRHandTracker>`
 
-追踪对象。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-此对象的一个实例，表示一个被追踪的设备，例如一个控制器或锚点。HMD 没有在此处表示，因为它们是在内部处理的。
-
-当控制器被打开，并且 :ref:`XRInterface<class_XRInterface>` 检测到它们时，该对象的实例会自动被添加到可通过 :ref:`XRServer<class_XRServer>` 访问的活动追踪对象列表中。
-
-\ :ref:`XRNode3D<class_XRNode3D>` 和 :ref:`XRAnchor3D<class_XRAnchor3D>` 都使用这种类型的对象，并且应该在你的项目中使用。位置追踪器只是使这一切正常工作的底层对象。这些大部分都是公开的，以便基于 GDExtension 的接口，可以与它们交互。
+A tracked object.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`XR 文档索引 <../tutorials/xr/index>`
+An instance of this object represents a device that is tracked, such as a controller or anchor point. HMDs aren't represented here as they are handled internally.
+
+As controllers are turned on and the :ref:`XRInterface<class_XRInterface>` detects them, instances of this object are automatically added to this list of active tracking objects accessible through the :ref:`XRServer<class_XRServer>`.
+
+The :ref:`XRNode3D<class_XRNode3D>` and :ref:`XRAnchor3D<class_XRAnchor3D>` both consume objects of this type and should be used in your project. The positional trackers are just under-the-hood objects that make this all work. These are mostly exposed so that GDExtension-based interfaces can interact with them.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`XR documentation index <../tutorials/xr/index>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ XRPositionalTracker
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -71,8 +71,8 @@ XRPositionalTracker
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_XRPositionalTracker_signal_button_pressed:
 
@@ -80,7 +80,7 @@ XRPositionalTracker
 
 **button_pressed**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_XRPositionalTracker_signal_button_pressed>`
 
-当该追踪器上的一个按钮被按下时发出。请注意，许多 XR 运行时允许将其他输入映射到按钮。
+Emitted when a button on this tracker is pressed. Note that many XR runtimes allow other inputs to be mapped to buttons.
 
 .. rst-class:: classref-item-separator
 
@@ -92,7 +92,7 @@ XRPositionalTracker
 
 **button_released**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_XRPositionalTracker_signal_button_released>`
 
-当该追踪器上的一个按钮被释放时发出。
+Emitted when a button on this tracker is released.
 
 .. rst-class:: classref-item-separator
 
@@ -104,7 +104,7 @@ XRPositionalTracker
 
 **input_float_changed**\ (\ name\: :ref:`String<class_String>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_XRPositionalTracker_signal_input_float_changed>`
 
-当此追踪器上的一个触发器或类似输入更改值时发出。
+Emitted when a trigger or similar input on this tracker changes value.
 
 .. rst-class:: classref-item-separator
 
@@ -116,7 +116,7 @@ XRPositionalTracker
 
 **input_vector2_changed**\ (\ name\: :ref:`String<class_String>`, vector\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_XRPositionalTracker_signal_input_vector2_changed>`
 
-当该追踪器上的一个拇指杆或拇指板移动时发出。
+Emitted when a thumbstick or thumbpad on this tracker moves.
 
 .. rst-class:: classref-item-separator
 
@@ -128,7 +128,7 @@ XRPositionalTracker
 
 **pose_changed**\ (\ pose\: :ref:`XRPose<class_XRPose>`\ ) :ref:`🔗<class_XRPositionalTracker_signal_pose_changed>`
 
-当被此追踪器追踪的一个姿势状态发生变化时发出。
+Emitted when the state of a pose tracked by this tracker changes.
 
 .. rst-class:: classref-item-separator
 
@@ -140,7 +140,7 @@ XRPositionalTracker
 
 **pose_lost_tracking**\ (\ pose\: :ref:`XRPose<class_XRPose>`\ ) :ref:`🔗<class_XRPositionalTracker_signal_pose_lost_tracking>`
 
-当被该追踪器追踪的一个姿势停止获取更新的跟踪数据时发出。
+Emitted when a pose tracked by this tracker stops getting updated tracking data.
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ XRPositionalTracker
 
 **profile_changed**\ (\ role\: :ref:`String<class_String>`\ ) :ref:`🔗<class_XRPositionalTracker_signal_profile_changed>`
 
-当我们的追踪器的配置发生变化时发出。
+Emitted when the profile of our tracker changes.
 
 .. rst-class:: classref-section-separator
 
@@ -160,8 +160,8 @@ XRPositionalTracker
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_XRPositionalTracker_TrackerHand:
 
@@ -175,7 +175,7 @@ enum **TrackerHand**: :ref:`🔗<enum_XRPositionalTracker_TrackerHand>`
 
 :ref:`TrackerHand<enum_XRPositionalTracker_TrackerHand>` **TRACKER_HAND_UNKNOWN** = ``0``
 
-手持该追踪器的手是未知的或不适用的。
+The hand this tracker is held in is unknown or not applicable.
 
 .. _class_XRPositionalTracker_constant_TRACKER_HAND_LEFT:
 
@@ -183,7 +183,7 @@ enum **TrackerHand**: :ref:`🔗<enum_XRPositionalTracker_TrackerHand>`
 
 :ref:`TrackerHand<enum_XRPositionalTracker_TrackerHand>` **TRACKER_HAND_LEFT** = ``1``
 
-此跟踪器是左手控制器。
+This tracker is the left hand controller.
 
 .. _class_XRPositionalTracker_constant_TRACKER_HAND_RIGHT:
 
@@ -191,7 +191,7 @@ enum **TrackerHand**: :ref:`🔗<enum_XRPositionalTracker_TrackerHand>`
 
 :ref:`TrackerHand<enum_XRPositionalTracker_TrackerHand>` **TRACKER_HAND_RIGHT** = ``2``
 
-此跟踪器是右手控制器。
+This tracker is the right hand controller.
 
 .. _class_XRPositionalTracker_constant_TRACKER_HAND_MAX:
 
@@ -199,7 +199,7 @@ enum **TrackerHand**: :ref:`🔗<enum_XRPositionalTracker_TrackerHand>`
 
 :ref:`TrackerHand<enum_XRPositionalTracker_TrackerHand>` **TRACKER_HAND_MAX** = ``3``
 
-代表 :ref:`TrackerHand<enum_XRPositionalTracker_TrackerHand>` 枚举的大小。
+Represents the size of the :ref:`TrackerHand<enum_XRPositionalTracker_TrackerHand>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -207,8 +207,8 @@ enum **TrackerHand**: :ref:`🔗<enum_XRPositionalTracker_TrackerHand>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_XRPositionalTracker_property_hand:
 
@@ -221,7 +221,7 @@ enum **TrackerHand**: :ref:`🔗<enum_XRPositionalTracker_TrackerHand>`
 - |void| **set_tracker_hand**\ (\ value\: :ref:`TrackerHand<enum_XRPositionalTracker_TrackerHand>`\ )
 - :ref:`TrackerHand<enum_XRPositionalTracker_TrackerHand>` **get_tracker_hand**\ (\ )
 
-定义此追踪器与哪只手相关。
+Defines which hand this tracker relates to.
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ enum **TrackerHand**: :ref:`🔗<enum_XRPositionalTracker_TrackerHand>`
 - |void| **set_tracker_profile**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_tracker_profile**\ (\ )
 
-与此追踪器关联的配置，取决于接口，但将指示被追踪的控制器类型。
+The profile associated with this tracker, interface dependent but will indicate the type of controller being tracked.
 
 .. rst-class:: classref-section-separator
 
@@ -246,8 +246,8 @@ enum **TrackerHand**: :ref:`🔗<enum_XRPositionalTracker_TrackerHand>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_XRPositionalTracker_method_get_input:
 
@@ -255,9 +255,9 @@ enum **TrackerHand**: :ref:`🔗<enum_XRPositionalTracker_TrackerHand>`
 
 :ref:`Variant<class_Variant>` **get_input**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_XRPositionalTracker_method_get_input>`
 
-**已弃用：** Use through :ref:`XRControllerTracker<class_XRControllerTracker>`.
+**Deprecated:** Use through :ref:`XRControllerTracker<class_XRControllerTracker>`.
 
-返回此追踪器的输入。它可以返回一个布尔值、浮点数或 :ref:`Vector2<class_Vector2>` 值，具体取决于输入是一个按钮、触发器还是拇指杆/拇指板。
+Returns an input for this tracker. It can return a boolean, float or :ref:`Vector2<class_Vector2>` value depending on whether the input is a button, trigger or thumbstick/thumbpad.
 
 .. rst-class:: classref-item-separator
 
@@ -269,7 +269,7 @@ enum **TrackerHand**: :ref:`🔗<enum_XRPositionalTracker_TrackerHand>`
 
 :ref:`XRPose<class_XRPose>` **get_pose**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_XRPositionalTracker_method_get_pose>`
 
-返回绑定 ``name`` 姿势的当前 :ref:`XRPose<class_XRPose>` 状态对象。
+Returns the current :ref:`XRPose<class_XRPose>` state object for the bound ``name`` pose.
 
 .. rst-class:: classref-item-separator
 
@@ -281,7 +281,7 @@ enum **TrackerHand**: :ref:`🔗<enum_XRPositionalTracker_TrackerHand>`
 
 :ref:`bool<class_bool>` **has_pose**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_XRPositionalTracker_method_has_pose>`
 
-如果追踪器可用，并且当前正在追踪绑定的 ``name`` 姿势，则返回 ``true``\ 。
+Returns ``true`` if the tracker is available and is currently tracking the bound ``name`` pose.
 
 .. rst-class:: classref-item-separator
 
@@ -293,7 +293,7 @@ enum **TrackerHand**: :ref:`🔗<enum_XRPositionalTracker_TrackerHand>`
 
 |void| **invalidate_pose**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_XRPositionalTracker_method_invalidate_pose>`
 
-将此姿势标记为无效，我们不会清除最后报告的状态，但如果我们失去追踪，它允许用户决定是否需要隐藏追踪器，或仅保留在其最后一个已知位置。
+Marks this pose as invalid, we don't clear the last reported state but it allows users to decide if trackers need to be hidden if we lose tracking or just remain at their last known position.
 
 .. rst-class:: classref-item-separator
 
@@ -305,9 +305,9 @@ enum **TrackerHand**: :ref:`🔗<enum_XRPositionalTracker_TrackerHand>`
 
 |void| **set_input**\ (\ name\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_XRPositionalTracker_method_set_input>`
 
-**已弃用：** Use through :ref:`XRControllerTracker<class_XRControllerTracker>`.
+**Deprecated:** Use through :ref:`XRControllerTracker<class_XRControllerTracker>`.
 
-更改给定输入的值。此方法由一个 :ref:`XRInterface<class_XRInterface>` 实现调用，不应直接使用。
+Changes the value for the given input. This method is called by an :ref:`XRInterface<class_XRInterface>` implementation and should not be used directly.
 
 .. rst-class:: classref-item-separator
 
@@ -319,14 +319,14 @@ enum **TrackerHand**: :ref:`🔗<enum_XRPositionalTracker_TrackerHand>`
 
 |void| **set_pose**\ (\ name\: :ref:`StringName<class_StringName>`, transform\: :ref:`Transform3D<class_Transform3D>`, linear_velocity\: :ref:`Vector3<class_Vector3>`, angular_velocity\: :ref:`Vector3<class_Vector3>`, tracking_confidence\: :ref:`TrackingConfidence<enum_XRPose_TrackingConfidence>`\ ) :ref:`🔗<class_XRPositionalTracker_method_set_pose>`
 
-设置给定姿势的变换、线速度、角速度和追踪置信度。此方法由一个 :ref:`XRInterface<class_XRInterface>` 实现调用，不应直接使用。
+Sets the transform, linear velocity, angular velocity and tracking confidence for the given pose. This method is called by an :ref:`XRInterface<class_XRInterface>` implementation and should not be used directly.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

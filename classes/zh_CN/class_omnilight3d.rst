@@ -8,34 +8,34 @@
 OmniLight3D
 ===========
 
-**继承：** :ref:`Light3D<class_Light3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Light3D<class_Light3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-全向光，如灯泡或蜡烛。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-全向光是 :ref:`Light3D<class_Light3D>` 的一类，可以向所有方向发射光。光随距离而衰减，该衰减可以通过修改其能量、半径和衰减参数来配置。
-
-\ **注意：**\ 使用移动渲染方式时，每个网格资源上只能显示 8 个全向灯。尝试在单个网格资源上显示 8 个以上的全向灯，将导致全向灯随着相机移动而闪烁。使用 Compatibility 渲染方式时，默认情况下每个网格资源上只能显示 8 个全向灯，但可以通过调整 :ref:`ProjectSettings.rendering/limits/opengl/max_lights_per_object<class_ProjectSettings_property_rendering/limits/opengl/max_lights_per_object>` 来增加。
-
-\ **注意：**\ 当使用 Mobile 或 Compatibility 渲染方法时，全向灯只会正确影响可见性 AABB 与该灯光的 AABB 相交的网格。如果使用了着色器将网格进行了变形，超出了 AABB 的范围，则必须将该网格的 :ref:`GeometryInstance3D.extra_cull_margin<class_GeometryInstance3D_property_extra_cull_margin>` 增大。否则灯光在该网格上可能不可见。
+Omnidirectional light, such as a light bulb or a candle.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`3D 灯光与阴影 <../tutorials/3d/lights_and_shadows>`
+An Omnidirectional light is a type of :ref:`Light3D<class_Light3D>` that emits light in all directions. The light is attenuated by distance and this attenuation can be configured by changing its energy, radius, and attenuation parameters.
 
-- :doc:`伪造全局光照 <../tutorials/3d/global_illumination/faking_global_illumination>`
+\ **Note:** When using the Mobile rendering method, only 8 omni lights can be displayed on each mesh resource. Attempting to display more than 8 omni lights on a single mesh resource will result in omni lights flickering in and out as the camera moves. When using the Compatibility rendering method, only 8 omni lights can be displayed on each mesh resource by default, but this can be increased by adjusting :ref:`ProjectSettings.rendering/limits/opengl/max_lights_per_object<class_ProjectSettings_property_rendering/limits/opengl/max_lights_per_object>`.
+
+\ **Note:** When using the Mobile or Compatibility rendering methods, omni lights will only correctly affect meshes whose visibility AABB intersects with the light's AABB. If using a shader to deform the mesh in a way that makes it go outside its AABB, :ref:`GeometryInstance3D.extra_cull_margin<class_GeometryInstance3D_property_extra_cull_margin>` must be increased on the mesh. Otherwise, the light may not be visible on the mesh.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`3D lights and shadows <../tutorials/3d/lights_and_shadows>`
+
+- :doc:`Faking global illumination <../tutorials/3d/global_illumination/faking_global_illumination>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -58,8 +58,8 @@ OmniLight3D
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_OmniLight3D_ShadowMode:
 
@@ -73,7 +73,7 @@ enum **ShadowMode**: :ref:`🔗<enum_OmniLight3D_ShadowMode>`
 
 :ref:`ShadowMode<enum_OmniLight3D_ShadowMode>` **SHADOW_DUAL_PARABOLOID** = ``0``
 
-将阴影渲染到双抛物面纹理。比 :ref:`SHADOW_CUBE<class_OmniLight3D_constant_SHADOW_CUBE>` 更快，但质量较差。
+Shadows are rendered to a dual-paraboloid texture. Faster than :ref:`SHADOW_CUBE<class_OmniLight3D_constant_SHADOW_CUBE>`, but lower-quality.
 
 .. _class_OmniLight3D_constant_SHADOW_CUBE:
 
@@ -81,7 +81,7 @@ enum **ShadowMode**: :ref:`🔗<enum_OmniLight3D_ShadowMode>`
 
 :ref:`ShadowMode<enum_OmniLight3D_ShadowMode>` **SHADOW_CUBE** = ``1``
 
-将阴影渲染至立方体贴图。比 :ref:`SHADOW_DUAL_PARABOLOID<class_OmniLight3D_constant_SHADOW_DUAL_PARABOLOID>` 更慢，但质量更高。
+Shadows are rendered to a cubemap. Slower than :ref:`SHADOW_DUAL_PARABOLOID<class_OmniLight3D_constant_SHADOW_DUAL_PARABOLOID>`, but higher-quality.
 
 .. rst-class:: classref-section-separator
 
@@ -89,8 +89,8 @@ enum **ShadowMode**: :ref:`🔗<enum_OmniLight3D_ShadowMode>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_OmniLight3D_property_omni_attenuation:
 
@@ -103,13 +103,13 @@ enum **ShadowMode**: :ref:`🔗<enum_OmniLight3D_ShadowMode>`
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-控制全向灯的距离衰减函数。
+Controls the distance attenuation function for omnilights.
 
-值为 ``0.0`` 将在大部分范围内保持恒定亮度，但会平滑地衰减范围边缘的光线。对于物理上准确的灯光，请使用值 ``2.0``\ ，因为它会产生正确的平方反比衰减。
+A value of ``0.0`` will maintain a constant brightness through most of the range, but smoothly attenuate the light at the edge of the range. Use a value of ``2.0`` for physically accurate lights as it results in the proper inverse square attenutation.
 
-\ **注意：**\ 将衰减设置为 ``2.0`` 或更高可能会导致远处的物体接收到的光线最少，即使在范围内也是如此。例如，在 ``4096`` 的范围内，\ ``100`` 单位处的物体会衰减 ``0.0001`` 倍。默认亮度为 ``1``\ ，光线在该距离处不可见。
+\ **Note:** Setting attenuation to ``2.0`` or higher may result in distant objects receiving minimal light, even within range. For example, with a range of ``4096``, an object at ``100`` units is attenuated by a factor of ``0.0001``. With a default brightness of ``1``, the light would not be visible at that distance.
 
-\ **注意：**\ 使用负值或高于 ``10.0`` 的值可能会导致意外结果。
+\ **Note:** Using negative or values higher than ``10.0`` may lead to unexpected results.
 
 .. rst-class:: classref-item-separator
 
@@ -126,9 +126,9 @@ enum **ShadowMode**: :ref:`🔗<enum_OmniLight3D_ShadowMode>`
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-该灯光的半径。请注意，根据使用的 :ref:`omni_attenuation<class_OmniLight3D_property_omni_attenuation>`\ ，有效照明区域可能看起来更小。无论使用 :ref:`omni_attenuation<class_OmniLight3D_property_omni_attenuation>` 为何值，光线永远不会到达该半径之外的任何地方。
+The light's radius. Note that the effectively lit area may appear to be smaller depending on the :ref:`omni_attenuation<class_OmniLight3D_property_omni_attenuation>` in use. No matter the :ref:`omni_attenuation<class_OmniLight3D_property_omni_attenuation>` in use, the light will never reach anything outside this radius.
 
-\ **注意：**\ :ref:`omni_range<class_OmniLight3D_property_omni_range>` 不受 :ref:`Node3D.scale<class_Node3D_property_scale>`\ （无论是该灯光的缩放还是其父节点的缩放）的影响。
+\ **Note:** :ref:`omni_range<class_OmniLight3D_property_omni_range>` is not affected by :ref:`Node3D.scale<class_Node3D_property_scale>` (the light's scale or its parent's scale).
 
 .. rst-class:: classref-item-separator
 
@@ -149,12 +149,12 @@ enum **ShadowMode**: :ref:`🔗<enum_OmniLight3D_ShadowMode>`
 
 	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

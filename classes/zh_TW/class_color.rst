@@ -5,12 +5,12 @@
 Color
 =====
 
-以 RGBA 格式表示的顏色。
+A color represented in RGBA format.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 A color represented in RGBA format by a red (:ref:`r<class_Color_property_r>`), green (:ref:`g<class_Color_property_g>`), blue (:ref:`b<class_Color_property_b>`), and alpha (:ref:`a<class_Color_property_a>`) component. Each component is a 32-bit floating-point value, usually ranging from ``0.0`` to ``1.0``. Some properties (such as :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>`) may support values greater than ``1.0``, for overbright or HDR (High Dynamic Range) colors.
 
@@ -26,23 +26,23 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 .. note::
 
-	使用 C# 操作此 API 時有顯著差異，詳見 :ref:`doc_c_sharp_differences`。
+	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- `2D GD 畫圖演示 <https://godotengine.org/asset-library/asset/2768>`__
+- `2D GD Paint Demo <https://godotengine.org/asset-library/asset/2768>`__
 
 - `Tween Interpolation Demo <https://godotengine.org/asset-library/asset/2733>`__
 
-- `GUI 拖放演示 <https://godotengine.org/asset-library/asset/2767>`__
+- `GUI Drag And Drop Demo <https://godotengine.org/asset-library/asset/2767>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -79,8 +79,8 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 .. rst-class:: classref-reftable-group
 
-建構子
-------
+Constructors
+------------
 
 .. table::
    :widths: auto
@@ -103,8 +103,8 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -165,8 +165,8 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 .. rst-class:: classref-reftable-group
 
-運算子
-------
+Operators
+---------
 
 .. table::
    :widths: auto
@@ -205,8 +205,8 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 .. rst-class:: classref-descriptions-group
 
-常數
-----
+Constants
+---------
 
 .. _class_Color_constant_ALICE_BLUE:
 
@@ -214,7 +214,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **ALICE_BLUE** = ``Color(0.9411765, 0.972549, 1, 1)`` :ref:`🔗<class_Color_constant_ALICE_BLUE>`
 
-愛麗絲藍。
+Alice blue color.
 
 .. _class_Color_constant_ANTIQUE_WHITE:
 
@@ -222,7 +222,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **ANTIQUE_WHITE** = ``Color(0.98039216, 0.92156863, 0.84313726, 1)`` :ref:`🔗<class_Color_constant_ANTIQUE_WHITE>`
 
-古董白。
+Antique white color.
 
 .. _class_Color_constant_AQUA:
 
@@ -230,7 +230,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **AQUA** = ``Color(0, 1, 1, 1)`` :ref:`🔗<class_Color_constant_AQUA>`
 
-水色。
+Aqua color.
 
 .. _class_Color_constant_AQUAMARINE:
 
@@ -238,7 +238,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **AQUAMARINE** = ``Color(0.49803922, 1, 0.83137256, 1)`` :ref:`🔗<class_Color_constant_AQUAMARINE>`
 
-海藍色。
+Aquamarine color.
 
 .. _class_Color_constant_AZURE:
 
@@ -246,7 +246,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **AZURE** = ``Color(0.9411765, 1, 1, 1)`` :ref:`🔗<class_Color_constant_AZURE>`
 
-天藍色。
+Azure color.
 
 .. _class_Color_constant_BEIGE:
 
@@ -254,7 +254,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **BEIGE** = ``Color(0.9607843, 0.9607843, 0.8627451, 1)`` :ref:`🔗<class_Color_constant_BEIGE>`
 
-米黃色。
+Beige color.
 
 .. _class_Color_constant_BISQUE:
 
@@ -262,7 +262,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **BISQUE** = ``Color(1, 0.89411765, 0.76862746, 1)`` :ref:`🔗<class_Color_constant_BISQUE>`
 
-橘黃色。
+Bisque color.
 
 .. _class_Color_constant_BLACK:
 
@@ -270,7 +270,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **BLACK** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_Color_constant_BLACK>`
 
-黑色。在 GDScript 中，這是所有顏色的預設值。
+Black color. In GDScript, this is the default value of any color.
 
 .. _class_Color_constant_BLANCHED_ALMOND:
 
@@ -278,7 +278,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **BLANCHED_ALMOND** = ``Color(1, 0.92156863, 0.8039216, 1)`` :ref:`🔗<class_Color_constant_BLANCHED_ALMOND>`
 
-杏仁白色。
+Blanched almond color.
 
 .. _class_Color_constant_BLUE:
 
@@ -286,7 +286,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **BLUE** = ``Color(0, 0, 1, 1)`` :ref:`🔗<class_Color_constant_BLUE>`
 
-藍色。
+Blue color.
 
 .. _class_Color_constant_BLUE_VIOLET:
 
@@ -294,7 +294,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **BLUE_VIOLET** = ``Color(0.5411765, 0.16862746, 0.8862745, 1)`` :ref:`🔗<class_Color_constant_BLUE_VIOLET>`
 
-藍紫色的顏色。
+Blue violet color.
 
 .. _class_Color_constant_BROWN:
 
@@ -302,7 +302,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **BROWN** = ``Color(0.64705884, 0.16470589, 0.16470589, 1)`` :ref:`🔗<class_Color_constant_BROWN>`
 
-棕色。
+Brown color.
 
 .. _class_Color_constant_BURLYWOOD:
 
@@ -310,7 +310,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **BURLYWOOD** = ``Color(0.87058824, 0.72156864, 0.5294118, 1)`` :ref:`🔗<class_Color_constant_BURLYWOOD>`
 
-硬木色。
+Burlywood color.
 
 .. _class_Color_constant_CADET_BLUE:
 
@@ -318,7 +318,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **CADET_BLUE** = ``Color(0.37254903, 0.61960787, 0.627451, 1)`` :ref:`🔗<class_Color_constant_CADET_BLUE>`
 
-軍服藍。
+Cadet blue color.
 
 .. _class_Color_constant_CHARTREUSE:
 
@@ -326,7 +326,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **CHARTREUSE** = ``Color(0.49803922, 1, 0, 1)`` :ref:`🔗<class_Color_constant_CHARTREUSE>`
 
-黃褐色。
+Chartreuse color.
 
 .. _class_Color_constant_CHOCOLATE:
 
@@ -334,7 +334,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **CHOCOLATE** = ``Color(0.8235294, 0.4117647, 0.11764706, 1)`` :ref:`🔗<class_Color_constant_CHOCOLATE>`
 
-巧克力色。
+Chocolate color.
 
 .. _class_Color_constant_CORAL:
 
@@ -342,7 +342,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **CORAL** = ``Color(1, 0.49803922, 0.3137255, 1)`` :ref:`🔗<class_Color_constant_CORAL>`
 
-珊瑚色。
+Coral color.
 
 .. _class_Color_constant_CORNFLOWER_BLUE:
 
@@ -350,7 +350,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **CORNFLOWER_BLUE** = ``Color(0.39215687, 0.58431375, 0.92941177, 1)`` :ref:`🔗<class_Color_constant_CORNFLOWER_BLUE>`
 
-矢車菊藍色。
+Cornflower blue color.
 
 .. _class_Color_constant_CORNSILK:
 
@@ -358,7 +358,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **CORNSILK** = ``Color(1, 0.972549, 0.8627451, 1)`` :ref:`🔗<class_Color_constant_CORNSILK>`
 
-玉米須色。
+Cornsilk color.
 
 .. _class_Color_constant_CRIMSON:
 
@@ -366,7 +366,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **CRIMSON** = ``Color(0.8627451, 0.078431375, 0.23529412, 1)`` :ref:`🔗<class_Color_constant_CRIMSON>`
 
-緋紅的顏色。
+Crimson color.
 
 .. _class_Color_constant_CYAN:
 
@@ -374,7 +374,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **CYAN** = ``Color(0, 1, 1, 1)`` :ref:`🔗<class_Color_constant_CYAN>`
 
-青色。
+Cyan color.
 
 .. _class_Color_constant_DARK_BLUE:
 
@@ -382,7 +382,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **DARK_BLUE** = ``Color(0, 0, 0.54509807, 1)`` :ref:`🔗<class_Color_constant_DARK_BLUE>`
 
-深藍色。
+Dark blue color.
 
 .. _class_Color_constant_DARK_CYAN:
 
@@ -390,7 +390,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **DARK_CYAN** = ``Color(0, 0.54509807, 0.54509807, 1)`` :ref:`🔗<class_Color_constant_DARK_CYAN>`
 
-深青色。
+Dark cyan color.
 
 .. _class_Color_constant_DARK_GOLDENROD:
 
@@ -398,7 +398,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **DARK_GOLDENROD** = ``Color(0.72156864, 0.5254902, 0.043137256, 1)`` :ref:`🔗<class_Color_constant_DARK_GOLDENROD>`
 
-深色菊科植物的顏色。
+Dark goldenrod color.
 
 .. _class_Color_constant_DARK_GRAY:
 
@@ -406,7 +406,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **DARK_GRAY** = ``Color(0.6627451, 0.6627451, 0.6627451, 1)`` :ref:`🔗<class_Color_constant_DARK_GRAY>`
 
-深灰色。
+Dark gray color.
 
 .. _class_Color_constant_DARK_GREEN:
 
@@ -414,7 +414,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **DARK_GREEN** = ``Color(0, 0.39215687, 0, 1)`` :ref:`🔗<class_Color_constant_DARK_GREEN>`
 
-深綠色。
+Dark green color.
 
 .. _class_Color_constant_DARK_KHAKI:
 
@@ -422,7 +422,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **DARK_KHAKI** = ``Color(0.7411765, 0.7176471, 0.41960785, 1)`` :ref:`🔗<class_Color_constant_DARK_KHAKI>`
 
-深卡其色。
+Dark khaki color.
 
 .. _class_Color_constant_DARK_MAGENTA:
 
@@ -430,7 +430,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **DARK_MAGENTA** = ``Color(0.54509807, 0, 0.54509807, 1)`` :ref:`🔗<class_Color_constant_DARK_MAGENTA>`
 
-深洋紅色。
+Dark magenta color.
 
 .. _class_Color_constant_DARK_OLIVE_GREEN:
 
@@ -438,7 +438,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **DARK_OLIVE_GREEN** = ``Color(0.33333334, 0.41960785, 0.18431373, 1)`` :ref:`🔗<class_Color_constant_DARK_OLIVE_GREEN>`
 
-深橄欖綠色。
+Dark olive green color.
 
 .. _class_Color_constant_DARK_ORANGE:
 
@@ -446,7 +446,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **DARK_ORANGE** = ``Color(1, 0.54901963, 0, 1)`` :ref:`🔗<class_Color_constant_DARK_ORANGE>`
 
-深橙色。
+Dark orange color.
 
 .. _class_Color_constant_DARK_ORCHID:
 
@@ -454,7 +454,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **DARK_ORCHID** = ``Color(0.6, 0.19607843, 0.8, 1)`` :ref:`🔗<class_Color_constant_DARK_ORCHID>`
 
-深色的蘭花色。
+Dark orchid color.
 
 .. _class_Color_constant_DARK_RED:
 
@@ -462,7 +462,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **DARK_RED** = ``Color(0.54509807, 0, 0, 1)`` :ref:`🔗<class_Color_constant_DARK_RED>`
 
-深紅色。
+Dark red color.
 
 .. _class_Color_constant_DARK_SALMON:
 
@@ -470,7 +470,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **DARK_SALMON** = ``Color(0.9137255, 0.5882353, 0.47843137, 1)`` :ref:`🔗<class_Color_constant_DARK_SALMON>`
 
-深鮭魚色。
+Dark salmon color.
 
 .. _class_Color_constant_DARK_SEA_GREEN:
 
@@ -478,7 +478,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **DARK_SEA_GREEN** = ``Color(0.56078434, 0.7372549, 0.56078434, 1)`` :ref:`🔗<class_Color_constant_DARK_SEA_GREEN>`
 
-深海綠色。
+Dark sea green color.
 
 .. _class_Color_constant_DARK_SLATE_BLUE:
 
@@ -486,7 +486,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **DARK_SLATE_BLUE** = ``Color(0.28235295, 0.23921569, 0.54509807, 1)`` :ref:`🔗<class_Color_constant_DARK_SLATE_BLUE>`
 
-深板藍的顏色。
+Dark slate blue color.
 
 .. _class_Color_constant_DARK_SLATE_GRAY:
 
@@ -494,7 +494,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **DARK_SLATE_GRAY** = ``Color(0.18431373, 0.30980393, 0.30980393, 1)`` :ref:`🔗<class_Color_constant_DARK_SLATE_GRAY>`
 
-暗石板灰色。
+Dark slate gray color.
 
 .. _class_Color_constant_DARK_TURQUOISE:
 
@@ -502,7 +502,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **DARK_TURQUOISE** = ``Color(0, 0.80784315, 0.81960785, 1)`` :ref:`🔗<class_Color_constant_DARK_TURQUOISE>`
 
-深綠松石色。
+Dark turquoise color.
 
 .. _class_Color_constant_DARK_VIOLET:
 
@@ -510,7 +510,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **DARK_VIOLET** = ``Color(0.5803922, 0, 0.827451, 1)`` :ref:`🔗<class_Color_constant_DARK_VIOLET>`
 
-深紫羅蘭色。
+Dark violet color.
 
 .. _class_Color_constant_DEEP_PINK:
 
@@ -518,7 +518,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **DEEP_PINK** = ``Color(1, 0.078431375, 0.5764706, 1)`` :ref:`🔗<class_Color_constant_DEEP_PINK>`
 
-深粉色。
+Deep pink color.
 
 .. _class_Color_constant_DEEP_SKY_BLUE:
 
@@ -526,7 +526,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **DEEP_SKY_BLUE** = ``Color(0, 0.7490196, 1, 1)`` :ref:`🔗<class_Color_constant_DEEP_SKY_BLUE>`
 
-深邃的天藍色。
+Deep sky blue color.
 
 .. _class_Color_constant_DIM_GRAY:
 
@@ -534,7 +534,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **DIM_GRAY** = ``Color(0.4117647, 0.4117647, 0.4117647, 1)`` :ref:`🔗<class_Color_constant_DIM_GRAY>`
 
-暗灰色。
+Dim gray color.
 
 .. _class_Color_constant_DODGER_BLUE:
 
@@ -542,7 +542,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **DODGER_BLUE** = ``Color(0.11764706, 0.5647059, 1, 1)`` :ref:`🔗<class_Color_constant_DODGER_BLUE>`
 
-道奇藍色。
+Dodger blue color.
 
 .. _class_Color_constant_FIREBRICK:
 
@@ -550,7 +550,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **FIREBRICK** = ``Color(0.69803923, 0.13333334, 0.13333334, 1)`` :ref:`🔗<class_Color_constant_FIREBRICK>`
 
-耐火磚紅色。
+Firebrick color.
 
 .. _class_Color_constant_FLORAL_WHITE:
 
@@ -558,7 +558,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **FLORAL_WHITE** = ``Color(1, 0.98039216, 0.9411765, 1)`` :ref:`🔗<class_Color_constant_FLORAL_WHITE>`
 
-花白色。
+Floral white color.
 
 .. _class_Color_constant_FOREST_GREEN:
 
@@ -566,7 +566,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **FOREST_GREEN** = ``Color(0.13333334, 0.54509807, 0.13333334, 1)`` :ref:`🔗<class_Color_constant_FOREST_GREEN>`
 
-森林綠色。
+Forest green color.
 
 .. _class_Color_constant_FUCHSIA:
 
@@ -574,7 +574,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **FUCHSIA** = ``Color(1, 0, 1, 1)`` :ref:`🔗<class_Color_constant_FUCHSIA>`
 
-洋紅色。
+Fuchsia color.
 
 .. _class_Color_constant_GAINSBORO:
 
@@ -582,7 +582,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **GAINSBORO** = ``Color(0.8627451, 0.8627451, 0.8627451, 1)`` :ref:`🔗<class_Color_constant_GAINSBORO>`
 
-庚斯伯勒灰色。
+Gainsboro color.
 
 .. _class_Color_constant_GHOST_WHITE:
 
@@ -590,7 +590,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **GHOST_WHITE** = ``Color(0.972549, 0.972549, 1, 1)`` :ref:`🔗<class_Color_constant_GHOST_WHITE>`
 
-幽靈白顏色。
+Ghost white color.
 
 .. _class_Color_constant_GOLD:
 
@@ -598,7 +598,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **GOLD** = ``Color(1, 0.84313726, 0, 1)`` :ref:`🔗<class_Color_constant_GOLD>`
 
-金色。
+Gold color.
 
 .. _class_Color_constant_GOLDENROD:
 
@@ -606,7 +606,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **GOLDENROD** = ``Color(0.85490197, 0.64705884, 0.1254902, 1)`` :ref:`🔗<class_Color_constant_GOLDENROD>`
 
-金菊色。
+Goldenrod color.
 
 .. _class_Color_constant_GRAY:
 
@@ -614,7 +614,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **GRAY** = ``Color(0.74509805, 0.74509805, 0.74509805, 1)`` :ref:`🔗<class_Color_constant_GRAY>`
 
-灰色。
+Gray color.
 
 .. _class_Color_constant_GREEN:
 
@@ -622,7 +622,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **GREEN** = ``Color(0, 1, 0, 1)`` :ref:`🔗<class_Color_constant_GREEN>`
 
-綠色。
+Green color.
 
 .. _class_Color_constant_GREEN_YELLOW:
 
@@ -630,7 +630,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **GREEN_YELLOW** = ``Color(0.6784314, 1, 0.18431373, 1)`` :ref:`🔗<class_Color_constant_GREEN_YELLOW>`
 
-綠黃色。
+Green yellow color.
 
 .. _class_Color_constant_HONEYDEW:
 
@@ -638,7 +638,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **HONEYDEW** = ``Color(0.9411765, 1, 0.9411765, 1)`` :ref:`🔗<class_Color_constant_HONEYDEW>`
 
-蜜露色。
+Honeydew color.
 
 .. _class_Color_constant_HOT_PINK:
 
@@ -646,7 +646,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **HOT_PINK** = ``Color(1, 0.4117647, 0.7058824, 1)`` :ref:`🔗<class_Color_constant_HOT_PINK>`
 
-亮粉色。
+Hot pink color.
 
 .. _class_Color_constant_INDIAN_RED:
 
@@ -654,7 +654,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **INDIAN_RED** = ``Color(0.8039216, 0.36078432, 0.36078432, 1)`` :ref:`🔗<class_Color_constant_INDIAN_RED>`
 
-印度紅色。
+Indian red color.
 
 .. _class_Color_constant_INDIGO:
 
@@ -662,7 +662,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **INDIGO** = ``Color(0.29411766, 0, 0.50980395, 1)`` :ref:`🔗<class_Color_constant_INDIGO>`
 
-靛青色。
+Indigo color.
 
 .. _class_Color_constant_IVORY:
 
@@ -670,7 +670,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **IVORY** = ``Color(1, 1, 0.9411765, 1)`` :ref:`🔗<class_Color_constant_IVORY>`
 
-象牙色。
+Ivory color.
 
 .. _class_Color_constant_KHAKI:
 
@@ -678,7 +678,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **KHAKI** = ``Color(0.9411765, 0.9019608, 0.54901963, 1)`` :ref:`🔗<class_Color_constant_KHAKI>`
 
-卡其色。
+Khaki color.
 
 .. _class_Color_constant_LAVENDER:
 
@@ -686,7 +686,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **LAVENDER** = ``Color(0.9019608, 0.9019608, 0.98039216, 1)`` :ref:`🔗<class_Color_constant_LAVENDER>`
 
-薰衣草色。
+Lavender color.
 
 .. _class_Color_constant_LAVENDER_BLUSH:
 
@@ -694,7 +694,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **LAVENDER_BLUSH** = ``Color(1, 0.9411765, 0.9607843, 1)`` :ref:`🔗<class_Color_constant_LAVENDER_BLUSH>`
 
-薰衣草紫紅色。
+Lavender blush color.
 
 .. _class_Color_constant_LAWN_GREEN:
 
@@ -702,7 +702,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **LAWN_GREEN** = ``Color(0.4862745, 0.9882353, 0, 1)`` :ref:`🔗<class_Color_constant_LAWN_GREEN>`
 
-草坪綠色。
+Lawn green color.
 
 .. _class_Color_constant_LEMON_CHIFFON:
 
@@ -710,7 +710,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **LEMON_CHIFFON** = ``Color(1, 0.98039216, 0.8039216, 1)`` :ref:`🔗<class_Color_constant_LEMON_CHIFFON>`
 
-檸檬雪紡色。
+Lemon chiffon color.
 
 .. _class_Color_constant_LIGHT_BLUE:
 
@@ -718,7 +718,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **LIGHT_BLUE** = ``Color(0.6784314, 0.84705883, 0.9019608, 1)`` :ref:`🔗<class_Color_constant_LIGHT_BLUE>`
 
-淺藍色。
+Light blue color.
 
 .. _class_Color_constant_LIGHT_CORAL:
 
@@ -726,7 +726,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **LIGHT_CORAL** = ``Color(0.9411765, 0.5019608, 0.5019608, 1)`` :ref:`🔗<class_Color_constant_LIGHT_CORAL>`
 
-淺珊瑚色。
+Light coral color.
 
 .. _class_Color_constant_LIGHT_CYAN:
 
@@ -734,7 +734,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **LIGHT_CYAN** = ``Color(0.8784314, 1, 1, 1)`` :ref:`🔗<class_Color_constant_LIGHT_CYAN>`
 
-淡青色。
+Light cyan color.
 
 .. _class_Color_constant_LIGHT_GOLDENROD:
 
@@ -742,7 +742,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **LIGHT_GOLDENROD** = ``Color(0.98039216, 0.98039216, 0.8235294, 1)`` :ref:`🔗<class_Color_constant_LIGHT_GOLDENROD>`
 
-亮金菊黃色。
+Light goldenrod color.
 
 .. _class_Color_constant_LIGHT_GRAY:
 
@@ -750,7 +750,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **LIGHT_GRAY** = ``Color(0.827451, 0.827451, 0.827451, 1)`` :ref:`🔗<class_Color_constant_LIGHT_GRAY>`
 
-淺灰色。
+Light gray color.
 
 .. _class_Color_constant_LIGHT_GREEN:
 
@@ -758,7 +758,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **LIGHT_GREEN** = ``Color(0.5647059, 0.93333334, 0.5647059, 1)`` :ref:`🔗<class_Color_constant_LIGHT_GREEN>`
 
-淺綠色。
+Light green color.
 
 .. _class_Color_constant_LIGHT_PINK:
 
@@ -766,7 +766,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **LIGHT_PINK** = ``Color(1, 0.7137255, 0.75686276, 1)`` :ref:`🔗<class_Color_constant_LIGHT_PINK>`
 
-淺粉色。
+Light pink color.
 
 .. _class_Color_constant_LIGHT_SALMON:
 
@@ -774,7 +774,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **LIGHT_SALMON** = ``Color(1, 0.627451, 0.47843137, 1)`` :ref:`🔗<class_Color_constant_LIGHT_SALMON>`
 
-淺鮭魚色。
+Light salmon color.
 
 .. _class_Color_constant_LIGHT_SEA_GREEN:
 
@@ -782,7 +782,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **LIGHT_SEA_GREEN** = ``Color(0.1254902, 0.69803923, 0.6666667, 1)`` :ref:`🔗<class_Color_constant_LIGHT_SEA_GREEN>`
 
-淺海綠色。
+Light sea green color.
 
 .. _class_Color_constant_LIGHT_SKY_BLUE:
 
@@ -790,7 +790,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **LIGHT_SKY_BLUE** = ``Color(0.5294118, 0.80784315, 0.98039216, 1)`` :ref:`🔗<class_Color_constant_LIGHT_SKY_BLUE>`
 
-淺天藍色。
+Light sky blue color.
 
 .. _class_Color_constant_LIGHT_SLATE_GRAY:
 
@@ -798,7 +798,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **LIGHT_SLATE_GRAY** = ``Color(0.46666667, 0.53333336, 0.6, 1)`` :ref:`🔗<class_Color_constant_LIGHT_SLATE_GRAY>`
 
-淺板岩灰色。
+Light slate gray color.
 
 .. _class_Color_constant_LIGHT_STEEL_BLUE:
 
@@ -806,7 +806,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **LIGHT_STEEL_BLUE** = ``Color(0.6901961, 0.76862746, 0.87058824, 1)`` :ref:`🔗<class_Color_constant_LIGHT_STEEL_BLUE>`
 
-淺鋼藍色。
+Light steel blue color.
 
 .. _class_Color_constant_LIGHT_YELLOW:
 
@@ -814,7 +814,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **LIGHT_YELLOW** = ``Color(1, 1, 0.8784314, 1)`` :ref:`🔗<class_Color_constant_LIGHT_YELLOW>`
 
-淺黃色。
+Light yellow color.
 
 .. _class_Color_constant_LIME:
 
@@ -822,7 +822,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **LIME** = ``Color(0, 1, 0, 1)`` :ref:`🔗<class_Color_constant_LIME>`
 
-青檸色。
+Lime color.
 
 .. _class_Color_constant_LIME_GREEN:
 
@@ -830,7 +830,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **LIME_GREEN** = ``Color(0.19607843, 0.8039216, 0.19607843, 1)`` :ref:`🔗<class_Color_constant_LIME_GREEN>`
 
-石灰綠色。
+Lime green color.
 
 .. _class_Color_constant_LINEN:
 
@@ -838,7 +838,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **LINEN** = ``Color(0.98039216, 0.9411765, 0.9019608, 1)`` :ref:`🔗<class_Color_constant_LINEN>`
 
-亞麻色。
+Linen color.
 
 .. _class_Color_constant_MAGENTA:
 
@@ -846,7 +846,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **MAGENTA** = ``Color(1, 0, 1, 1)`` :ref:`🔗<class_Color_constant_MAGENTA>`
 
-洋紅色。
+Magenta color.
 
 .. _class_Color_constant_MAROON:
 
@@ -854,7 +854,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **MAROON** = ``Color(0.6901961, 0.1882353, 0.3764706, 1)`` :ref:`🔗<class_Color_constant_MAROON>`
 
-栗色。
+Maroon color.
 
 .. _class_Color_constant_MEDIUM_AQUAMARINE:
 
@@ -862,7 +862,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **MEDIUM_AQUAMARINE** = ``Color(0.4, 0.8039216, 0.6666667, 1)`` :ref:`🔗<class_Color_constant_MEDIUM_AQUAMARINE>`
 
-中等海藍寶石色。
+Medium aquamarine color.
 
 .. _class_Color_constant_MEDIUM_BLUE:
 
@@ -870,7 +870,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **MEDIUM_BLUE** = ``Color(0, 0, 0.8039216, 1)`` :ref:`🔗<class_Color_constant_MEDIUM_BLUE>`
 
-中藍色。
+Medium blue color.
 
 .. _class_Color_constant_MEDIUM_ORCHID:
 
@@ -878,7 +878,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **MEDIUM_ORCHID** = ``Color(0.7294118, 0.33333334, 0.827451, 1)`` :ref:`🔗<class_Color_constant_MEDIUM_ORCHID>`
 
-中等蘭色。
+Medium orchid color.
 
 .. _class_Color_constant_MEDIUM_PURPLE:
 
@@ -886,7 +886,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **MEDIUM_PURPLE** = ``Color(0.5764706, 0.4392157, 0.85882354, 1)`` :ref:`🔗<class_Color_constant_MEDIUM_PURPLE>`
 
-中等紫色。
+Medium purple color.
 
 .. _class_Color_constant_MEDIUM_SEA_GREEN:
 
@@ -894,7 +894,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **MEDIUM_SEA_GREEN** = ``Color(0.23529412, 0.7019608, 0.44313726, 1)`` :ref:`🔗<class_Color_constant_MEDIUM_SEA_GREEN>`
 
-中海綠色。
+Medium sea green color.
 
 .. _class_Color_constant_MEDIUM_SLATE_BLUE:
 
@@ -902,7 +902,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **MEDIUM_SLATE_BLUE** = ``Color(0.48235294, 0.40784314, 0.93333334, 1)`` :ref:`🔗<class_Color_constant_MEDIUM_SLATE_BLUE>`
 
-中等板岩藍色。
+Medium slate blue color.
 
 .. _class_Color_constant_MEDIUM_SPRING_GREEN:
 
@@ -910,7 +910,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **MEDIUM_SPRING_GREEN** = ``Color(0, 0.98039216, 0.6039216, 1)`` :ref:`🔗<class_Color_constant_MEDIUM_SPRING_GREEN>`
 
-中等春天綠色。
+Medium spring green color.
 
 .. _class_Color_constant_MEDIUM_TURQUOISE:
 
@@ -918,7 +918,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **MEDIUM_TURQUOISE** = ``Color(0.28235295, 0.81960785, 0.8, 1)`` :ref:`🔗<class_Color_constant_MEDIUM_TURQUOISE>`
 
-中等綠松石色。
+Medium turquoise color.
 
 .. _class_Color_constant_MEDIUM_VIOLET_RED:
 
@@ -926,7 +926,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **MEDIUM_VIOLET_RED** = ``Color(0.78039217, 0.08235294, 0.52156866, 1)`` :ref:`🔗<class_Color_constant_MEDIUM_VIOLET_RED>`
 
-中等紫紅色。
+Medium violet red color.
 
 .. _class_Color_constant_MIDNIGHT_BLUE:
 
@@ -934,7 +934,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **MIDNIGHT_BLUE** = ``Color(0.09803922, 0.09803922, 0.4392157, 1)`` :ref:`🔗<class_Color_constant_MIDNIGHT_BLUE>`
 
-午夜藍色。
+Midnight blue color.
 
 .. _class_Color_constant_MINT_CREAM:
 
@@ -942,7 +942,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **MINT_CREAM** = ``Color(0.9607843, 1, 0.98039216, 1)`` :ref:`🔗<class_Color_constant_MINT_CREAM>`
 
-薄荷奶油色。
+Mint cream color.
 
 .. _class_Color_constant_MISTY_ROSE:
 
@@ -950,7 +950,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **MISTY_ROSE** = ``Color(1, 0.89411765, 0.88235295, 1)`` :ref:`🔗<class_Color_constant_MISTY_ROSE>`
 
-朦朧的玫瑰色。
+Misty rose color.
 
 .. _class_Color_constant_MOCCASIN:
 
@@ -958,7 +958,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **MOCCASIN** = ``Color(1, 0.89411765, 0.70980394, 1)`` :ref:`🔗<class_Color_constant_MOCCASIN>`
 
-鹿皮鞋顏色。
+Moccasin color.
 
 .. _class_Color_constant_NAVAJO_WHITE:
 
@@ -966,7 +966,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **NAVAJO_WHITE** = ``Color(1, 0.87058824, 0.6784314, 1)`` :ref:`🔗<class_Color_constant_NAVAJO_WHITE>`
 
-納瓦白。
+Navajo white color.
 
 .. _class_Color_constant_NAVY_BLUE:
 
@@ -974,7 +974,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **NAVY_BLUE** = ``Color(0, 0, 0.5019608, 1)`` :ref:`🔗<class_Color_constant_NAVY_BLUE>`
 
-藏青色。
+Navy blue color.
 
 .. _class_Color_constant_OLD_LACE:
 
@@ -982,7 +982,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **OLD_LACE** = ``Color(0.99215686, 0.9607843, 0.9019608, 1)`` :ref:`🔗<class_Color_constant_OLD_LACE>`
 
-舊蕾絲色。
+Old lace color.
 
 .. _class_Color_constant_OLIVE:
 
@@ -990,7 +990,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **OLIVE** = ``Color(0.5019608, 0.5019608, 0, 1)`` :ref:`🔗<class_Color_constant_OLIVE>`
 
-橄欖色。
+Olive color.
 
 .. _class_Color_constant_OLIVE_DRAB:
 
@@ -998,7 +998,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **OLIVE_DRAB** = ``Color(0.41960785, 0.5568628, 0.13725491, 1)`` :ref:`🔗<class_Color_constant_OLIVE_DRAB>`
 
-暗淡橄欖色。
+Olive drab color.
 
 .. _class_Color_constant_ORANGE:
 
@@ -1006,7 +1006,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **ORANGE** = ``Color(1, 0.64705884, 0, 1)`` :ref:`🔗<class_Color_constant_ORANGE>`
 
-橙色。
+Orange color.
 
 .. _class_Color_constant_ORANGE_RED:
 
@@ -1014,7 +1014,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **ORANGE_RED** = ``Color(1, 0.27058825, 0, 1)`` :ref:`🔗<class_Color_constant_ORANGE_RED>`
 
-橘紅色。
+Orange red color.
 
 .. _class_Color_constant_ORCHID:
 
@@ -1022,7 +1022,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **ORCHID** = ``Color(0.85490197, 0.4392157, 0.8392157, 1)`` :ref:`🔗<class_Color_constant_ORCHID>`
 
-蘭花色。
+Orchid color.
 
 .. _class_Color_constant_PALE_GOLDENROD:
 
@@ -1030,7 +1030,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **PALE_GOLDENROD** = ``Color(0.93333334, 0.9098039, 0.6666667, 1)`` :ref:`🔗<class_Color_constant_PALE_GOLDENROD>`
 
-淡金色。
+Pale goldenrod color.
 
 .. _class_Color_constant_PALE_GREEN:
 
@@ -1038,7 +1038,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **PALE_GREEN** = ``Color(0.59607846, 0.9843137, 0.59607846, 1)`` :ref:`🔗<class_Color_constant_PALE_GREEN>`
 
-淡綠色。
+Pale green color.
 
 .. _class_Color_constant_PALE_TURQUOISE:
 
@@ -1046,7 +1046,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **PALE_TURQUOISE** = ``Color(0.6862745, 0.93333334, 0.93333334, 1)`` :ref:`🔗<class_Color_constant_PALE_TURQUOISE>`
 
-淡綠松石色。
+Pale turquoise color.
 
 .. _class_Color_constant_PALE_VIOLET_RED:
 
@@ -1054,7 +1054,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **PALE_VIOLET_RED** = ``Color(0.85882354, 0.4392157, 0.5764706, 1)`` :ref:`🔗<class_Color_constant_PALE_VIOLET_RED>`
 
-淡紫紅色。
+Pale violet red color.
 
 .. _class_Color_constant_PAPAYA_WHIP:
 
@@ -1062,7 +1062,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **PAPAYA_WHIP** = ``Color(1, 0.9372549, 0.8352941, 1)`` :ref:`🔗<class_Color_constant_PAPAYA_WHIP>`
 
-木瓜鞭色。
+Papaya whip color.
 
 .. _class_Color_constant_PEACH_PUFF:
 
@@ -1070,7 +1070,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **PEACH_PUFF** = ``Color(1, 0.85490197, 0.7254902, 1)`` :ref:`🔗<class_Color_constant_PEACH_PUFF>`
 
-桃花粉。
+Peach puff color.
 
 .. _class_Color_constant_PERU:
 
@@ -1078,7 +1078,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **PERU** = ``Color(0.8039216, 0.52156866, 0.24705882, 1)`` :ref:`🔗<class_Color_constant_PERU>`
 
-秘魯色。
+Peru color.
 
 .. _class_Color_constant_PINK:
 
@@ -1086,7 +1086,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **PINK** = ``Color(1, 0.7529412, 0.79607844, 1)`` :ref:`🔗<class_Color_constant_PINK>`
 
-粉紅色。
+Pink color.
 
 .. _class_Color_constant_PLUM:
 
@@ -1094,7 +1094,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **PLUM** = ``Color(0.8666667, 0.627451, 0.8666667, 1)`` :ref:`🔗<class_Color_constant_PLUM>`
 
-梅花色。
+Plum color.
 
 .. _class_Color_constant_POWDER_BLUE:
 
@@ -1102,7 +1102,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **POWDER_BLUE** = ``Color(0.6901961, 0.8784314, 0.9019608, 1)`` :ref:`🔗<class_Color_constant_POWDER_BLUE>`
 
-淺藍色。
+Powder blue color.
 
 .. _class_Color_constant_PURPLE:
 
@@ -1110,7 +1110,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **PURPLE** = ``Color(0.627451, 0.1254902, 0.9411765, 1)`` :ref:`🔗<class_Color_constant_PURPLE>`
 
-紫色。
+Purple color.
 
 .. _class_Color_constant_REBECCA_PURPLE:
 
@@ -1118,7 +1118,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **REBECCA_PURPLE** = ``Color(0.4, 0.2, 0.6, 1)`` :ref:`🔗<class_Color_constant_REBECCA_PURPLE>`
 
-麗蓓嘉紫色。
+Rebecca purple color.
 
 .. _class_Color_constant_RED:
 
@@ -1126,7 +1126,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **RED** = ``Color(1, 0, 0, 1)`` :ref:`🔗<class_Color_constant_RED>`
 
-紅色。
+Red color.
 
 .. _class_Color_constant_ROSY_BROWN:
 
@@ -1134,7 +1134,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **ROSY_BROWN** = ``Color(0.7372549, 0.56078434, 0.56078434, 1)`` :ref:`🔗<class_Color_constant_ROSY_BROWN>`
 
-玫瑰棕。
+Rosy brown color.
 
 .. _class_Color_constant_ROYAL_BLUE:
 
@@ -1142,7 +1142,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **ROYAL_BLUE** = ``Color(0.25490198, 0.4117647, 0.88235295, 1)`` :ref:`🔗<class_Color_constant_ROYAL_BLUE>`
 
-寶藍色。
+Royal blue color.
 
 .. _class_Color_constant_SADDLE_BROWN:
 
@@ -1150,7 +1150,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **SADDLE_BROWN** = ``Color(0.54509807, 0.27058825, 0.07450981, 1)`` :ref:`🔗<class_Color_constant_SADDLE_BROWN>`
 
-鞍棕色。
+Saddle brown color.
 
 .. _class_Color_constant_SALMON:
 
@@ -1158,7 +1158,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **SALMON** = ``Color(0.98039216, 0.5019608, 0.44705883, 1)`` :ref:`🔗<class_Color_constant_SALMON>`
 
-鮭魚色。
+Salmon color.
 
 .. _class_Color_constant_SANDY_BROWN:
 
@@ -1166,7 +1166,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **SANDY_BROWN** = ``Color(0.95686275, 0.6431373, 0.3764706, 1)`` :ref:`🔗<class_Color_constant_SANDY_BROWN>`
 
-沙褐色。
+Sandy brown color.
 
 .. _class_Color_constant_SEA_GREEN:
 
@@ -1174,7 +1174,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **SEA_GREEN** = ``Color(0.18039216, 0.54509807, 0.34117648, 1)`` :ref:`🔗<class_Color_constant_SEA_GREEN>`
 
-海綠色。
+Sea green color.
 
 .. _class_Color_constant_SEASHELL:
 
@@ -1182,7 +1182,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **SEASHELL** = ``Color(1, 0.9607843, 0.93333334, 1)`` :ref:`🔗<class_Color_constant_SEASHELL>`
 
-貝殼色。
+Seashell color.
 
 .. _class_Color_constant_SIENNA:
 
@@ -1190,7 +1190,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **SIENNA** = ``Color(0.627451, 0.32156864, 0.1764706, 1)`` :ref:`🔗<class_Color_constant_SIENNA>`
 
-西恩娜色。
+Sienna color.
 
 .. _class_Color_constant_SILVER:
 
@@ -1198,7 +1198,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **SILVER** = ``Color(0.7529412, 0.7529412, 0.7529412, 1)`` :ref:`🔗<class_Color_constant_SILVER>`
 
-銀色。
+Silver color.
 
 .. _class_Color_constant_SKY_BLUE:
 
@@ -1206,7 +1206,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **SKY_BLUE** = ``Color(0.5294118, 0.80784315, 0.92156863, 1)`` :ref:`🔗<class_Color_constant_SKY_BLUE>`
 
-天藍色。
+Sky blue color.
 
 .. _class_Color_constant_SLATE_BLUE:
 
@@ -1214,7 +1214,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **SLATE_BLUE** = ``Color(0.41568628, 0.3529412, 0.8039216, 1)`` :ref:`🔗<class_Color_constant_SLATE_BLUE>`
 
-石板藍色。
+Slate blue color.
 
 .. _class_Color_constant_SLATE_GRAY:
 
@@ -1222,7 +1222,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **SLATE_GRAY** = ``Color(0.4392157, 0.5019608, 0.5647059, 1)`` :ref:`🔗<class_Color_constant_SLATE_GRAY>`
 
-石板灰。
+Slate gray color.
 
 .. _class_Color_constant_SNOW:
 
@@ -1230,7 +1230,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **SNOW** = ``Color(1, 0.98039216, 0.98039216, 1)`` :ref:`🔗<class_Color_constant_SNOW>`
 
-雪白。
+Snow color.
 
 .. _class_Color_constant_SPRING_GREEN:
 
@@ -1238,7 +1238,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **SPRING_GREEN** = ``Color(0, 1, 0.49803922, 1)`` :ref:`🔗<class_Color_constant_SPRING_GREEN>`
 
-春綠。
+Spring green color.
 
 .. _class_Color_constant_STEEL_BLUE:
 
@@ -1246,7 +1246,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **STEEL_BLUE** = ``Color(0.27450982, 0.50980395, 0.7058824, 1)`` :ref:`🔗<class_Color_constant_STEEL_BLUE>`
 
-鋼藍色。
+Steel blue color.
 
 .. _class_Color_constant_TAN:
 
@@ -1254,7 +1254,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **TAN** = ``Color(0.8235294, 0.7058824, 0.54901963, 1)`` :ref:`🔗<class_Color_constant_TAN>`
 
-棕褐色。
+Tan color.
 
 .. _class_Color_constant_TEAL:
 
@@ -1262,7 +1262,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **TEAL** = ``Color(0, 0.5019608, 0.5019608, 1)`` :ref:`🔗<class_Color_constant_TEAL>`
 
-青色。
+Teal color.
 
 .. _class_Color_constant_THISTLE:
 
@@ -1270,7 +1270,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **THISTLE** = ``Color(0.84705883, 0.7490196, 0.84705883, 1)`` :ref:`🔗<class_Color_constant_THISTLE>`
 
-薊色。
+Thistle color.
 
 .. _class_Color_constant_TOMATO:
 
@@ -1278,7 +1278,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **TOMATO** = ``Color(1, 0.3882353, 0.2784314, 1)`` :ref:`🔗<class_Color_constant_TOMATO>`
 
-番茄色。
+Tomato color.
 
 .. _class_Color_constant_TRANSPARENT:
 
@@ -1286,7 +1286,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **TRANSPARENT** = ``Color(1, 1, 1, 0)`` :ref:`🔗<class_Color_constant_TRANSPARENT>`
 
-透明色（Alpha 為零的白色）。
+Transparent color (white with zero alpha).
 
 .. _class_Color_constant_TURQUOISE:
 
@@ -1294,7 +1294,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **TURQUOISE** = ``Color(0.2509804, 0.8784314, 0.8156863, 1)`` :ref:`🔗<class_Color_constant_TURQUOISE>`
 
-松石綠。
+Turquoise color.
 
 .. _class_Color_constant_VIOLET:
 
@@ -1302,7 +1302,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **VIOLET** = ``Color(0.93333334, 0.50980395, 0.93333334, 1)`` :ref:`🔗<class_Color_constant_VIOLET>`
 
-紫羅蘭色。
+Violet color.
 
 .. _class_Color_constant_WEB_GRAY:
 
@@ -1310,7 +1310,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **WEB_GRAY** = ``Color(0.5019608, 0.5019608, 0.5019608, 1)`` :ref:`🔗<class_Color_constant_WEB_GRAY>`
 
-網格灰。
+Web gray color.
 
 .. _class_Color_constant_WEB_GREEN:
 
@@ -1318,7 +1318,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **WEB_GREEN** = ``Color(0, 0.5019608, 0, 1)`` :ref:`🔗<class_Color_constant_WEB_GREEN>`
 
-網路綠。
+Web green color.
 
 .. _class_Color_constant_WEB_MAROON:
 
@@ -1326,7 +1326,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **WEB_MAROON** = ``Color(0.5019608, 0, 0, 1)`` :ref:`🔗<class_Color_constant_WEB_MAROON>`
 
-網路栗。
+Web maroon color.
 
 .. _class_Color_constant_WEB_PURPLE:
 
@@ -1334,7 +1334,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **WEB_PURPLE** = ``Color(0.5019608, 0, 0.5019608, 1)`` :ref:`🔗<class_Color_constant_WEB_PURPLE>`
 
-網路紫。
+Web purple color.
 
 .. _class_Color_constant_WHEAT:
 
@@ -1342,7 +1342,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **WHEAT** = ``Color(0.9607843, 0.87058824, 0.7019608, 1)`` :ref:`🔗<class_Color_constant_WHEAT>`
 
-小麥色。
+Wheat color.
 
 .. _class_Color_constant_WHITE:
 
@@ -1350,7 +1350,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **WHITE** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_Color_constant_WHITE>`
 
-白色。
+White color.
 
 .. _class_Color_constant_WHITE_SMOKE:
 
@@ -1358,7 +1358,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **WHITE_SMOKE** = ``Color(0.9607843, 0.9607843, 0.9607843, 1)`` :ref:`🔗<class_Color_constant_WHITE_SMOKE>`
 
-白煙色。
+White smoke color.
 
 .. _class_Color_constant_YELLOW:
 
@@ -1366,7 +1366,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **YELLOW** = ``Color(1, 1, 0, 1)`` :ref:`🔗<class_Color_constant_YELLOW>`
 
-黃色。
+Yellow color.
 
 .. _class_Color_constant_YELLOW_GREEN:
 
@@ -1374,7 +1374,7 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 **YELLOW_GREEN** = ``Color(0.6039216, 0.8039216, 0.19607843, 1)`` :ref:`🔗<class_Color_constant_YELLOW_GREEN>`
 
-黃綠色。
+Yellow green color.
 
 .. rst-class:: classref-section-separator
 
@@ -1382,8 +1382,8 @@ All physical simulation, such as lighting calculations, and colorimetry transfor
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_Color_property_a:
 
@@ -1405,7 +1405,7 @@ The color's alpha component, typically on the range of 0 to 1. A value of 0 mean
 
 :ref:`int<class_int>` **a8** = ``255`` :ref:`🔗<class_Color_property_a8>`
 
-對 :ref:`a<class_Color_property_a>` 的封裝，使用 0 到 255 的範圍而不是 0 到 1。
+Wrapper for :ref:`a<class_Color_property_a>` that uses the range 0 to 255, instead of 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -1417,7 +1417,7 @@ The color's alpha component, typically on the range of 0 to 1. A value of 0 mean
 
 :ref:`float<class_float>` **b** = ``0.0`` :ref:`🔗<class_Color_property_b>`
 
-顏色的藍色分量，一般在 0 到 1 的範圍內。
+The color's blue component, typically on the range of 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -1429,7 +1429,7 @@ The color's alpha component, typically on the range of 0 to 1. A value of 0 mean
 
 :ref:`int<class_int>` **b8** = ``0`` :ref:`🔗<class_Color_property_b8>`
 
-對 :ref:`b<class_Color_property_b>` 的封裝，使用 0 到 255 的範圍而不是 0 到 1。
+Wrapper for :ref:`b<class_Color_property_b>` that uses the range 0 to 255, instead of 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -1441,7 +1441,7 @@ The color's alpha component, typically on the range of 0 to 1. A value of 0 mean
 
 :ref:`float<class_float>` **g** = ``0.0`` :ref:`🔗<class_Color_property_g>`
 
-顏色的綠色分量，一般在 0 到 1 的範圍內。
+The color's green component, typically on the range of 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -1453,7 +1453,7 @@ The color's alpha component, typically on the range of 0 to 1. A value of 0 mean
 
 :ref:`int<class_int>` **g8** = ``0`` :ref:`🔗<class_Color_property_g8>`
 
-對 :ref:`g<class_Color_property_g>` 的封裝，使用 0 到 255 的範圍而不是 0 到 1。
+Wrapper for :ref:`g<class_Color_property_g>` that uses the range 0 to 255, instead of 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -1465,7 +1465,7 @@ The color's alpha component, typically on the range of 0 to 1. A value of 0 mean
 
 :ref:`float<class_float>` **h** = ``0.0`` :ref:`🔗<class_Color_property_h>`
 
-這個顏色的 HSV 色相，範圍是 0 到 1。
+The HSV hue of this color, on the range 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -1513,7 +1513,7 @@ The OKHSL saturation of this color, on the range 0 to 1.
 
 :ref:`float<class_float>` **r** = ``0.0`` :ref:`🔗<class_Color_property_r>`
 
-顏色的紅色分量，通常在 0 到 1 的範圍內。
+The color's red component, typically on the range of 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -1525,7 +1525,7 @@ The OKHSL saturation of this color, on the range 0 to 1.
 
 :ref:`int<class_int>` **r8** = ``0`` :ref:`🔗<class_Color_property_r8>`
 
-對 :ref:`r<class_Color_property_r>` 的封裝，使用 0 到 255 的範圍而不是 0 到 1。
+Wrapper for :ref:`r<class_Color_property_r>` that uses the range 0 to 255, instead of 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -1537,7 +1537,7 @@ The OKHSL saturation of this color, on the range 0 to 1.
 
 :ref:`float<class_float>` **s** = ``0.0`` :ref:`🔗<class_Color_property_s>`
 
-這個顏色的 HSV 飽和度，範圍為 0 到 1。
+The HSV saturation of this color, on the range 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -1549,7 +1549,7 @@ The OKHSL saturation of this color, on the range 0 to 1.
 
 :ref:`float<class_float>` **v** = ``0.0`` :ref:`🔗<class_Color_property_v>`
 
-這個顏色的 HSV 值（亮度），範圍為 0 至 1。
+The HSV value (brightness) of this color, on the range 0 to 1.
 
 .. rst-class:: classref-section-separator
 
@@ -1557,8 +1557,8 @@ The OKHSL saturation of this color, on the range 0 to 1.
 
 .. rst-class:: classref-descriptions-group
 
-建構子說明
-----------
+Constructor Descriptions
+------------------------
 
 .. _class_Color_constructor_Color:
 
@@ -1578,18 +1578,18 @@ Constructs a default **Color** from opaque black. This is the same as :ref:`BLAC
 
 :ref:`Color<class_Color>` **Color**\ (\ from\: :ref:`Color<class_Color>`, alpha\: :ref:`float<class_float>`\ )
 
-從現有的顏色建構 **Color**\ ，\ :ref:`a<class_Color_property_a>` 設定為給定的 ``alpha`` 值。
+Constructs a **Color** from the existing color, with :ref:`a<class_Color_property_a>` set to the given ``alpha`` value.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var red = Color(Color.RED, 0.2) # 20% 不透明紅色。
+    var red = Color(Color.RED, 0.2) # 20% opaque red.
 
  .. code-tab:: csharp
 
-    var red = new Color(Colors.Red, 0.2f); // 20% 不透明紅色。
+    var red = new Color(Colors.Red, 0.2f); // 20% opaque red.
 
 
 
@@ -1601,7 +1601,7 @@ Constructs a default **Color** from opaque black. This is the same as :ref:`BLAC
 
 :ref:`Color<class_Color>` **Color**\ (\ from\: :ref:`Color<class_Color>`\ )
 
-建構給定 **Color** 的副本。
+Constructs a **Color** as a copy of the given **Color**.
 
 .. rst-class:: classref-item-separator
 
@@ -1611,7 +1611,7 @@ Constructs a default **Color** from opaque black. This is the same as :ref:`BLAC
 
 :ref:`Color<class_Color>` **Color**\ (\ code\: :ref:`String<class_String>`\ )
 
-從 HTML 顏色程式碼或標準化的顏色名稱中建構 **Color**\ 。支援的顏色名稱與常數名相同。
+Constructs a **Color** either from an HTML color code or from a standardized color name. The supported color names are the same as the constants.
 
 .. rst-class:: classref-item-separator
 
@@ -1621,7 +1621,7 @@ Constructs a default **Color** from opaque black. This is the same as :ref:`BLAC
 
 :ref:`Color<class_Color>` **Color**\ (\ code\: :ref:`String<class_String>`, alpha\: :ref:`float<class_float>`\ )
 
-從 HTML 顏色程式碼或標準化的顏色名稱中建構 **Color**\ ，\ ``alpha`` 的範圍為 0.0 到 1.0。支援的顏色名稱與常數名相同。
+Constructs a **Color** either from an HTML color code or from a standardized color name, with ``alpha`` on the range of 0.0 to 1.0. The supported color names are the same as the constants.
 
 .. rst-class:: classref-item-separator
 
@@ -1675,8 +1675,8 @@ Constructs a **Color** from RGBA values, typically between 0.0 and 1.0.
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_Color_method_blend:
 
@@ -1684,22 +1684,22 @@ Constructs a **Color** from RGBA values, typically between 0.0 and 1.0.
 
 :ref:`Color<class_Color>` **blend**\ (\ over\: :ref:`Color<class_Color>`\ ) |const| :ref:`🔗<class_Color_method_blend>`
 
-返回將該顏色混合到給定顏色上所產生的新顏色。在繪畫程式中，你可以將其想像為在該顏色（包括 alpha）上繪製的 ``over`` 顏色。
+Returns a new color resulting from overlaying this color over the given color. In a painting program, you can imagine it as the ``over`` color painted over this color (including alpha).
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var bg = Color(0.0, 1.0, 0.0, 0.5) # 50% 不透明的綠色
-    var fg = Color(1.0, 0.0, 0.0, 0.5) # 50% 不透明的紅色
-    var blended_color = bg.blend(fg) # 75% 不透明的棕色
+    var bg = Color(0.0, 1.0, 0.0, 0.5) # Green with alpha of 50%
+    var fg = Color(1.0, 0.0, 0.0, 0.5) # Red with alpha of 50%
+    var blended_color = bg.blend(fg) # Brown with alpha of 75%
 
  .. code-tab:: csharp
 
-    var bg = new Color(0.0f, 1.0f, 0.0f, 0.5f); // 50% 不透明的綠色
-    var fg = new Color(1.0f, 0.0f, 0.0f, 0.5f); // 50% 不透明的紅色
-    Color blendedColor = bg.Blend(fg); // 75% 不透明的棕色
+    var bg = new Color(0.0f, 1.0f, 0.0f, 0.5f); // Green with alpha of 50%
+    var fg = new Color(1.0f, 0.0f, 0.0f, 0.5f); // Red with alpha of 50%
+    Color blendedColor = bg.Blend(fg); // Brown with alpha of 75%
 
 
 
@@ -1713,7 +1713,7 @@ Constructs a **Color** from RGBA values, typically between 0.0 and 1.0.
 
 :ref:`Color<class_Color>` **clamp**\ (\ min\: :ref:`Color<class_Color>` = Color(0, 0, 0, 0), max\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) |const| :ref:`🔗<class_Color_method_clamp>`
 
-通過在每個分量上運作 :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>`\ ，返回一種新顏色，其中所有分量都被鉗制在 ``min`` 和 ``max`` 的分量之間。
+Returns a new color with all components clamped between the components of ``min`` and ``max``, by running :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>` on each component.
 
 .. rst-class:: classref-item-separator
 
@@ -1725,7 +1725,7 @@ Constructs a **Color** from RGBA values, typically between 0.0 and 1.0.
 
 :ref:`Color<class_Color>` **darkened**\ (\ amount\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Color_method_darkened>`
 
-返回通過指定 ``amount``\ （從 0.0 到 1.0 的比率）使該顏色變暗而產生的新顏色。另見 :ref:`lightened()<class_Color_method_lightened>`\ 。
+Returns a new color resulting from making this color darker by the specified ``amount`` (ratio from 0.0 to 1.0). See also :ref:`lightened()<class_Color_method_lightened>`.
 
 
 .. tabs::
@@ -1733,12 +1733,12 @@ Constructs a **Color** from RGBA values, typically between 0.0 and 1.0.
  .. code-tab:: gdscript
 
     var green = Color(0.0, 1.0, 0.0)
-    var darkgreen = green.darkened(0.2) # 比普通的綠色深 20%
+    var darkgreen = green.darkened(0.2) # 20% darker than regular green
 
  .. code-tab:: csharp
 
     var green = new Color(0.0f, 1.0f, 0.0f);
-    Color darkgreen = green.Darkened(0.2f); // 比普通的綠色深 20%
+    Color darkgreen = green.Darkened(0.2f); // 20% darker than regular green
 
 
 
@@ -1752,7 +1752,7 @@ Constructs a **Color** from RGBA values, typically between 0.0 and 1.0.
 
 :ref:`Color<class_Color>` **from_hsv**\ (\ h\: :ref:`float<class_float>`, s\: :ref:`float<class_float>`, v\: :ref:`float<class_float>`, alpha\: :ref:`float<class_float>` = 1.0\ ) |static| :ref:`🔗<class_Color_method_from_hsv>`
 
-根據 `HSV 配置 <https://zh.wikipedia.org/wiki/HSL%E5%92%8CHSV%E8%89%B2%E5%BD%A9%E7%A9%BA%E9%97%B4>`__\ 建構顏色。色相（\ ``h``\ ）、飽和度（\ ``s``\ ）和值（\ ``v``\ ）通常在 0.0 和 1.0 之間。
+Constructs a color from an `HSV profile <https://en.wikipedia.org/wiki/HSL_and_HSV>`__. The hue (``h``), saturation (``s``), and value (``v``) are typically between 0.0 and 1.0.
 
 
 .. tabs::
@@ -1777,7 +1777,7 @@ Constructs a **Color** from RGBA values, typically between 0.0 and 1.0.
 
 :ref:`Color<class_Color>` **from_ok_hsl**\ (\ h\: :ref:`float<class_float>`, s\: :ref:`float<class_float>`, l\: :ref:`float<class_float>`, alpha\: :ref:`float<class_float>` = 1.0\ ) |static| :ref:`🔗<class_Color_method_from_ok_hsl>`
 
-根據 `OK HSL 配置 <https://bottosson.github.io/posts/colorpicker/>`__\ 構建顏色。色相（\ ``h``\ ）、飽和度（\ ``s``\ ）和亮度（\ ``l``\ ）通常在 0.0 和 1.0 之間。
+Constructs a color from an `OK HSL profile <https://bottosson.github.io/posts/colorpicker/>`__. The hue (``h``), saturation (``s``), and lightness (``l``) are typically between 0.0 and 1.0.
 
 
 .. tabs::
@@ -1909,24 +1909,24 @@ In GDScript and C#, the :ref:`int<class_int>` is best visualized with hexadecima
 
 :ref:`Color<class_Color>` **html**\ (\ rgba\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_Color_method_html>`
 
-從 HTML 十六進位顏色字串 ``rgba`` 返回一個新顏色。\ ``rgba`` 不區分大小寫，可以使用雜湊符號（\ ``#``\ ）作為前綴。
+Returns a new color from ``rgba``, an HTML hexadecimal color string. ``rgba`` is not case-sensitive, and may be prefixed by a hash sign (``#``).
 
-\ ``rgba`` 必須是有效的三位或六位元十六進位顏色字串，並且可以包含 alpha 通道值。如果 ``rgba`` 不包含 alpha 通道值，則套用 alpha 通道值 1.0。如果 ``rgba`` 無效，則返回一個空顏色。
+\ ``rgba`` must be a valid three-digit or six-digit hexadecimal color string, and may contain an alpha channel value. If ``rgba`` does not contain an alpha channel value, an alpha channel value of 1.0 is applied. If ``rgba`` is invalid, returns an empty color.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var blue = Color.html("#0000ff") # blue 為 Color(0.0, 0.0, 1.0, 1.0)
-    var green = Color.html("#0F0")   # green 為 Color(0.0, 1.0, 0.0, 1.0)
-    var col = Color.html("663399cc") # col 為 Color(0.4, 0.2, 0.6, 0.8)
+    var blue = Color.html("#0000ff") # blue is Color(0.0, 0.0, 1.0, 1.0)
+    var green = Color.html("#0F0")   # green is Color(0.0, 1.0, 0.0, 1.0)
+    var col = Color.html("663399cc") # col is Color(0.4, 0.2, 0.6, 0.8)
 
  .. code-tab:: csharp
 
-    var blue = Color.FromHtml("#0000ff"); // blue 為 Color(0.0, 0.0, 1.0, 1.0)
-    var green = Color.FromHtml("#0F0");   // green 為 Color(0.0, 1.0, 0.0, 1.0)
-    var col = Color.FromHtml("663399cc"); // col 為 Color(0.4, 0.2, 0.6, 0.8)
+    var blue = Color.FromHtml("#0000ff"); // blue is Color(0.0, 0.0, 1.0, 1.0)
+    var green = Color.FromHtml("#0F0");   // green is Color(0.0, 1.0, 0.0, 1.0)
+    var col = Color.FromHtml("663399cc"); // col is Color(0.4, 0.2, 0.6, 0.8)
 
 
 
@@ -1940,30 +1940,30 @@ In GDScript and C#, the :ref:`int<class_int>` is best visualized with hexadecima
 
 :ref:`bool<class_bool>` **html_is_valid**\ (\ color\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_Color_method_html_is_valid>`
 
-如果 ``color`` 是一個有效的 HTML 十六進位顏色字串，則返回 ``true``\ 。該字串必須是一個由 3、4、6 或 8 位元數位組成的十六進位值（不區分大小寫），並且可以以井號 (``#``) 作為前綴。該方法與 :ref:`String.is_valid_html_color()<class_String_method_is_valid_html_color>` 相同。
+Returns ``true`` if ``color`` is a valid HTML hexadecimal color string. The string must be a hexadecimal value (case-insensitive) of either 3, 4, 6 or 8 digits, and may be prefixed by a hash sign (``#``). This method is identical to :ref:`String.is_valid_html_color()<class_String_method_is_valid_html_color>`.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    Color.html_is_valid("#55aaFF")   # 返回 true
-    Color.html_is_valid("#55AAFF20") # 返回 true
-    Color.html_is_valid("55AAFF")    # 返回 true
-    Color.html_is_valid("#F2C")      # 返回 true
+    Color.html_is_valid("#55aaFF")   # Returns true
+    Color.html_is_valid("#55AAFF20") # Returns true
+    Color.html_is_valid("55AAFF")    # Returns true
+    Color.html_is_valid("#F2C")      # Returns true
 
-    Color.html_is_valid("#AABBC)     # 返回 false
-    Color.html_is_valid("#55aaFF5")  # 返回 false
+    Color.html_is_valid("#AABBC")    # Returns false
+    Color.html_is_valid("#55aaFF5")  # Returns false
 
  .. code-tab:: csharp
 
-    Color.HtmlIsValid("#55AAFF");   // 返回 true
-    Color.HtmlIsValid("#55AAFF20"); // 返回 true
-    Color.HtmlIsValid("55AAFF");    // 返回 true
-    Color.HtmlIsValid("#F2C");      // 返回 true
+    Color.HtmlIsValid("#55AAFF");   // Returns true
+    Color.HtmlIsValid("#55AAFF20"); // Returns true
+    Color.HtmlIsValid("55AAFF");    // Returns true
+    Color.HtmlIsValid("#F2C");      // Returns true
 
-    Color.HtmlIsValid("#AABBC");    // 返回 false
-    Color.HtmlIsValid("#55aaFF5");  // 返回 false
+    Color.HtmlIsValid("#AABBC");    // Returns false
+    Color.HtmlIsValid("#55aaFF5");  // Returns false
 
 
 
@@ -1977,7 +1977,7 @@ In GDScript and C#, the :ref:`int<class_int>` is best visualized with hexadecima
 
 :ref:`Color<class_Color>` **inverted**\ (\ ) |const| :ref:`🔗<class_Color_method_inverted>`
 
-返回將 :ref:`r<class_Color_property_r>`\ 、\ :ref:`g<class_Color_property_g>`\ 、\ :ref:`b<class_Color_property_b>` 分量翻轉後的顏色（\ ``(1 - r, 1 - g, 1 - b, a)``\ ）。
+Returns the color with its :ref:`r<class_Color_property_r>`, :ref:`g<class_Color_property_g>`, and :ref:`b<class_Color_property_b>` components inverted (``(1 - r, 1 - g, 1 - b, a)``).
 
 
 .. tabs::
@@ -1986,13 +1986,13 @@ In GDScript and C#, the :ref:`int<class_int>` is best visualized with hexadecima
 
     var black = Color.WHITE.inverted()
     var color = Color(0.3, 0.4, 0.9)
-    var inverted_color = color.inverted() # 等價於 `Color(0.7, 0.6, 0.1)`
+    var inverted_color = color.inverted() # Equivalent to `Color(0.7, 0.6, 0.1)`
 
  .. code-tab:: csharp
 
     var black = Colors.White.Inverted();
     var color = new Color(0.3f, 0.4f, 0.9f);
-    Color invertedColor = color.Inverted(); // 等價於 `new Color(0.7f, 0.6f, 0.1f)`
+    Color invertedColor = color.Inverted(); // Equivalent to `new Color(0.7f, 0.6f, 0.1f)`
 
 
 
@@ -2006,7 +2006,7 @@ In GDScript and C#, the :ref:`int<class_int>` is best visualized with hexadecima
 
 :ref:`bool<class_bool>` **is_equal_approx**\ (\ to\: :ref:`Color<class_Color>`\ ) |const| :ref:`🔗<class_Color_method_is_equal_approx>`
 
-如果該顏色和 ``to`` 近似相等，則返回 ``true``\ ，判斷近似相等的方法是通過在每個分量上運作 :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>`\ 。
+Returns ``true`` if this color and ``to`` are approximately equal, by running :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>` on each component.
 
 .. rst-class:: classref-item-separator
 
@@ -2018,7 +2018,7 @@ In GDScript and C#, the :ref:`int<class_int>` is best visualized with hexadecima
 
 :ref:`Color<class_Color>` **lerp**\ (\ to\: :ref:`Color<class_Color>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Color_method_lerp>`
 
-返回將該顏色的分量和 ``to`` 的分量進行線性插值的結果。插值係數 ``weight`` 應該在 0.0 和 1.0 之間（閉區間）。另請參閱 :ref:`@GlobalScope.lerp()<class_@GlobalScope_method_lerp>`\ 。
+Returns the linear interpolation between this color's components and ``to``'s components. The interpolation factor ``weight`` should be between 0.0 and 1.0 (inclusive). See also :ref:`@GlobalScope.lerp()<class_@GlobalScope_method_lerp>`.
 
 
 .. tabs::
@@ -2028,18 +2028,18 @@ In GDScript and C#, the :ref:`int<class_int>` is best visualized with hexadecima
     var red = Color(1.0, 0.0, 0.0)
     var aqua = Color(0.0, 1.0, 0.8)
 
-    red.lerp(aqua, 0.2) # 返回 Color(0.8, 0.2, 0.16)
-    red.lerp(aqua, 0.5) # 返回 Color(0.5, 0.5, 0.4)
-    red.lerp(aqua, 1.0) # 返回 Color(0.0, 1.0, 0.8)
+    red.lerp(aqua, 0.2) # Returns Color(0.8, 0.2, 0.16)
+    red.lerp(aqua, 0.5) # Returns Color(0.5, 0.5, 0.4)
+    red.lerp(aqua, 1.0) # Returns Color(0.0, 1.0, 0.8)
 
  .. code-tab:: csharp
 
     var red = new Color(1.0f, 0.0f, 0.0f);
     var aqua = new Color(0.0f, 1.0f, 0.8f);
 
-    red.Lerp(aqua, 0.2f); // 返回 Color(0.8f, 0.2f, 0.16f)
-    red.Lerp(aqua, 0.5f); // 返回 Color(0.5f, 0.5f, 0.4f)
-    red.Lerp(aqua, 1.0f); // 返回 Color(0.0f, 1.0f, 0.8f)
+    red.Lerp(aqua, 0.2f); // Returns Color(0.8f, 0.2f, 0.16f)
+    red.Lerp(aqua, 0.5f); // Returns Color(0.5f, 0.5f, 0.4f)
+    red.Lerp(aqua, 1.0f); // Returns Color(0.0f, 1.0f, 0.8f)
 
 
 
@@ -2053,7 +2053,7 @@ In GDScript and C#, the :ref:`int<class_int>` is best visualized with hexadecima
 
 :ref:`Color<class_Color>` **lightened**\ (\ amount\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Color_method_lightened>`
 
-返回通過指定 ``amount``\ （從 0.0 到 1.0 的比率）使該顏色變亮而產生的新顏色。另見 :ref:`darkened()<class_Color_method_darkened>`\ 。
+Returns a new color resulting from making this color lighter by the specified ``amount``, which should be a ratio from 0.0 to 1.0. See also :ref:`darkened()<class_Color_method_darkened>`.
 
 
 .. tabs::
@@ -2061,12 +2061,12 @@ In GDScript and C#, the :ref:`int<class_int>` is best visualized with hexadecima
  .. code-tab:: gdscript
 
     var green = Color(0.0, 1.0, 0.0)
-    var light_green = green.lightened(0.2) # 比普通的綠色要淡 20%
+    var light_green = green.lightened(0.2) # 20% lighter than regular green
 
  .. code-tab:: csharp
 
     var green = new Color(0.0f, 1.0f, 0.0f);
-    Color lightGreen = green.Lightened(0.2f); // 比普通的綠色要淡 20%
+    Color lightGreen = green.Lightened(0.2f); // 20% lighter than regular green
 
 
 
@@ -2108,7 +2108,7 @@ Returns a copy of the color that uses linear encoding. This method requires the 
 
 :ref:`int<class_int>` **to_abgr32**\ (\ ) |const| :ref:`🔗<class_Color_method_to_abgr32>`
 
-返回轉換為 ABGR 格式（每個分量為 8 位）的 32 位元整數的顏色。ABGR 是預設 RGBA 格式的反轉版本。
+Returns the color converted to a 32-bit integer in ABGR format (each component is 8 bits). ABGR is the reversed version of the default RGBA format.
 
 
 .. tabs::
@@ -2116,12 +2116,12 @@ Returns a copy of the color that uses linear encoding. This method requires the 
  .. code-tab:: gdscript
 
     var color = Color(1, 0.5, 0.2)
-    print(color.to_abgr32()) # 輸出 4281565439
+    print(color.to_abgr32()) # Prints 4281565439
 
  .. code-tab:: csharp
 
     var color = new Color(1.0f, 0.5f, 0.2f);
-    GD.Print(color.ToAbgr32()); // 輸出 4281565439
+    GD.Print(color.ToAbgr32()); // Prints 4281565439
 
 
 
@@ -2135,7 +2135,7 @@ Returns a copy of the color that uses linear encoding. This method requires the 
 
 :ref:`int<class_int>` **to_abgr64**\ (\ ) |const| :ref:`🔗<class_Color_method_to_abgr64>`
 
-返回轉換為 ABGR 格式（每個分量為 16 位）的 64 位元整數的顏色。ABGR 是預設 RGBA 格式的反轉版本。
+Returns the color converted to a 64-bit integer in ABGR format (each component is 16 bits). ABGR is the reversed version of the default RGBA format.
 
 
 .. tabs::
@@ -2143,12 +2143,12 @@ Returns a copy of the color that uses linear encoding. This method requires the 
  .. code-tab:: gdscript
 
     var color = Color(1, 0.5, 0.2)
-    print(color.to_abgr64()) # 輸出 -225178692812801
+    print(color.to_abgr64()) # Prints -225178692812801
 
  .. code-tab:: csharp
 
     var color = new Color(1.0f, 0.5f, 0.2f);
-    GD.Print(color.ToAbgr64()); // 輸出 -225178692812801
+    GD.Print(color.ToAbgr64()); // Prints -225178692812801
 
 
 
@@ -2162,7 +2162,7 @@ Returns a copy of the color that uses linear encoding. This method requires the 
 
 :ref:`int<class_int>` **to_argb32**\ (\ ) |const| :ref:`🔗<class_Color_method_to_argb32>`
 
-返回轉換為 ARGB 格式（每個分量為 8 位）的 32 位元整數的顏色。ARGB 與 DirectX 更相容。
+Returns the color converted to a 32-bit integer in ARGB format (each component is 8 bits). ARGB is more compatible with DirectX.
 
 
 .. tabs::
@@ -2170,12 +2170,12 @@ Returns a copy of the color that uses linear encoding. This method requires the 
  .. code-tab:: gdscript
 
     var color = Color(1, 0.5, 0.2)
-    print(color.to_argb32()) # 輸出 4294934323
+    print(color.to_argb32()) # Prints 4294934323
 
  .. code-tab:: csharp
 
     var color = new Color(1.0f, 0.5f, 0.2f);
-    GD.Print(color.ToArgb32()); // 輸出 4294934323
+    GD.Print(color.ToArgb32()); // Prints 4294934323
 
 
 
@@ -2189,7 +2189,7 @@ Returns a copy of the color that uses linear encoding. This method requires the 
 
 :ref:`int<class_int>` **to_argb64**\ (\ ) |const| :ref:`🔗<class_Color_method_to_argb64>`
 
-返回轉換為 ARGB 格式（每個分量為 16 位）的 64 位元整數的顏色。ARGB 與 DirectX 更相容。
+Returns the color converted to a 64-bit integer in ARGB format (each component is 16 bits). ARGB is more compatible with DirectX.
 
 
 .. tabs::
@@ -2197,12 +2197,12 @@ Returns a copy of the color that uses linear encoding. This method requires the 
  .. code-tab:: gdscript
 
     var color = Color(1, 0.5, 0.2)
-    print(color.to_argb64()) # 輸出 -2147470541
+    print(color.to_argb64()) # Prints -2147470541
 
  .. code-tab:: csharp
 
     var color = new Color(1.0f, 0.5f, 0.2f);
-    GD.Print(color.ToArgb64()); // 輸出 -2147470541
+    GD.Print(color.ToArgb64()); // Prints -2147470541
 
 
 
@@ -2216,9 +2216,9 @@ Returns a copy of the color that uses linear encoding. This method requires the 
 
 :ref:`String<class_String>` **to_html**\ (\ with_alpha\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Color_method_to_html>`
 
-返回將該顏色轉換為 RGBA 格式的 HTML 十六進位顏色 :ref:`String<class_String>`\ ，不帶（\ ``#``\ ）前綴。
+Returns the color converted to an HTML hexadecimal color :ref:`String<class_String>` in RGBA format, without the hash (``#``) prefix.
 
-將 ``with_alpha`` 設定為 ``false``\ ，會從十六進位字串中排除 alpha，使用 RGB 格式而不是 RGBA 格式。
+Setting ``with_alpha`` to ``false``, excludes alpha from the hexadecimal string, using RGB format instead of RGBA format.
 
 
 .. tabs::
@@ -2226,14 +2226,14 @@ Returns a copy of the color that uses linear encoding. This method requires the 
  .. code-tab:: gdscript
 
     var white = Color(1, 1, 1, 0.5)
-    var with_alpha = white.to_html() # 返回 "ffffff7f"
-    var without_alpha = white.to_html(false) # 返回 "ffffff"
+    var with_alpha = white.to_html() # Returns "ffffff7f"
+    var without_alpha = white.to_html(false) # Returns "ffffff"
 
  .. code-tab:: csharp
 
     var white = new Color(1, 1, 1, 0.5f);
-    string withAlpha = white.ToHtml(); // 返回 "ffffff7f"
-    string withoutAlpha = white.ToHtml(false); // 返回 "ffffff"
+    string withAlpha = white.ToHtml(); // Returns "ffffff7f"
+    string withoutAlpha = white.ToHtml(false); // Returns "ffffff"
 
 
 
@@ -2297,8 +2297,8 @@ Returns the color converted to a 64-bit integer in RGBA format (each component i
 
 .. rst-class:: classref-descriptions-group
 
-運算子說明
-----------
+Operator Descriptions
+---------------------
 
 .. _class_Color_operator_neq_Color:
 
@@ -2306,9 +2306,9 @@ Returns the color converted to a 64-bit integer in RGBA format (each component i
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Color_operator_neq_Color>`
 
-如果顏色不完全相等，則返回 ``true``\ 。
+Returns ``true`` if the colors are not exactly equal.
 
-\ **注意：**\ 由於浮點數精度誤差，請考慮改用 :ref:`is_equal_approx()<class_Color_method_is_equal_approx>`\ ，會更可靠。
+\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Color_method_is_equal_approx>` instead, which is more reliable.
 
 .. rst-class:: classref-item-separator
 
@@ -2320,7 +2320,7 @@ Returns the color converted to a 64-bit integer in RGBA format (each component i
 
 :ref:`Color<class_Color>` **operator ***\ (\ right\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Color_operator_mul_Color>`
 
-將該 **Color** 的每個分量乘以給定 **Color** 的對應分量。
+Multiplies each component of the **Color** by the components of the given **Color**.
 
 .. rst-class:: classref-item-separator
 
@@ -2332,7 +2332,7 @@ Returns the color converted to a 64-bit integer in RGBA format (each component i
 
 :ref:`Color<class_Color>` **operator ***\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Color_operator_mul_float>`
 
-將該 **Color** 的每個分量乘以給定的 :ref:`float<class_float>`\ 。
+Multiplies each component of the **Color** by the given :ref:`float<class_float>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2344,7 +2344,7 @@ Returns the color converted to a 64-bit integer in RGBA format (each component i
 
 :ref:`Color<class_Color>` **operator ***\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Color_operator_mul_int>`
 
-將該 **Color** 的每個分量乘以給定的 :ref:`int<class_int>`\ 。
+Multiplies each component of the **Color** by the given :ref:`int<class_int>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2356,7 +2356,7 @@ Returns the color converted to a 64-bit integer in RGBA format (each component i
 
 :ref:`Color<class_Color>` **operator +**\ (\ right\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Color_operator_sum_Color>`
 
-將該 **Color** 的每個分量加上給定 **Color** 的對應分量。
+Adds each component of the **Color** with the components of the given **Color**.
 
 .. rst-class:: classref-item-separator
 
@@ -2368,7 +2368,7 @@ Returns the color converted to a 64-bit integer in RGBA format (each component i
 
 :ref:`Color<class_Color>` **operator -**\ (\ right\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Color_operator_dif_Color>`
 
-將該 **Color** 的每個分量減去給定 **Color** 的對應分量。
+Subtracts each component of the **Color** by the components of the given **Color**.
 
 .. rst-class:: classref-item-separator
 
@@ -2380,7 +2380,7 @@ Returns the color converted to a 64-bit integer in RGBA format (each component i
 
 :ref:`Color<class_Color>` **operator /**\ (\ right\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Color_operator_div_Color>`
 
-將該 **Color** 的每個分量除以給定 **Color** 的每個分量。
+Divides each component of the **Color** by the components of the given **Color**.
 
 .. rst-class:: classref-item-separator
 
@@ -2392,7 +2392,7 @@ Returns the color converted to a 64-bit integer in RGBA format (each component i
 
 :ref:`Color<class_Color>` **operator /**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Color_operator_div_float>`
 
-將該 **Color** 的每個分量除以給定的 :ref:`float<class_float>`\ 。
+Divides each component of the **Color** by the given :ref:`float<class_float>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2404,7 +2404,7 @@ Returns the color converted to a 64-bit integer in RGBA format (each component i
 
 :ref:`Color<class_Color>` **operator /**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Color_operator_div_int>`
 
-將該 **Color** 的每個分量除以給定的 :ref:`int<class_int>`\ 。
+Divides each component of the **Color** by the given :ref:`int<class_int>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2416,9 +2416,9 @@ Returns the color converted to a 64-bit integer in RGBA format (each component i
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Color_operator_eq_Color>`
 
-如果顏色完全相同，則返回 ``true``\ 。
+Returns ``true`` if the colors are exactly equal.
 
-\ **注意：**\ 由於浮點精度誤差，請考慮改用更可靠的 :ref:`is_equal_approx()<class_Color_method_is_equal_approx>`\ 。
+\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Color_method_is_equal_approx>` instead, which is more reliable.
 
 .. rst-class:: classref-item-separator
 
@@ -2430,7 +2430,7 @@ Returns the color converted to a 64-bit integer in RGBA format (each component i
 
 :ref:`float<class_float>` **operator []**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Color_operator_idx_int>`
 
-使用索引存取顏色分量。\ ``[0]`` 相當於 :ref:`r<class_Color_property_r>`\ ，\ ``[1]`` 相當於 :ref:`g<class_Color_property_g>`\ ，\ ``[2]`` 相當於 :ref:`b<class_Color_property_b>`\ ，\ ``[3]`` 相當於 :ref:`a<class_Color_property_a>`.
+Access color components using their index. ``[0]`` is equivalent to :ref:`r<class_Color_property_r>`, ``[1]`` is equivalent to :ref:`g<class_Color_property_g>`, ``[2]`` is equivalent to :ref:`b<class_Color_property_b>`, and ``[3]`` is equivalent to :ref:`a<class_Color_property_a>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2442,7 +2442,7 @@ Returns the color converted to a 64-bit integer in RGBA format (each component i
 
 :ref:`Color<class_Color>` **operator unary+**\ (\ ) :ref:`🔗<class_Color_operator_unplus>`
 
-返回與 ``+`` 不存在時相同的值。單目 ``+`` 沒有作用，但有時可以使你的程式碼更具可讀性。
+Returns the same value as if the ``+`` was not there. Unary ``+`` does nothing, but sometimes it can make your code more readable.
 
 .. rst-class:: classref-item-separator
 
@@ -2454,14 +2454,14 @@ Returns the color converted to a 64-bit integer in RGBA format (each component i
 
 :ref:`Color<class_Color>` **operator unary-**\ (\ ) :ref:`🔗<class_Color_operator_unminus>`
 
-反轉給定的顏色。這相當於 ``Color.WHITE - c`` 或 ``Color(1 - c.r, 1 - c.g, 1 - c.b, 1 - c.a)``\ 。與 :ref:`inverted()<class_Color_method_inverted>` 不同，\ :ref:`a<class_Color_property_a>` 分量也將被反轉。
+Inverts the given color. This is equivalent to ``Color.WHITE - c`` or ``Color(1 - c.r, 1 - c.g, 1 - c.b, 1 - c.a)``. Unlike with :ref:`inverted()<class_Color_method_inverted>`, the :ref:`a<class_Color_property_a>` component is inverted, too.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

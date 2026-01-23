@@ -5,23 +5,23 @@
 VisualShaderNodeStep
 ====================
 
-**繼承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-在視覺化著色器圖中計算 Step 函式。
+Calculates a Step function within the visual shader graph.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-在著色器語言中轉換成 ``step(edge, x)``\ 。
+Translates to ``step(edge, x)`` in the shader language.
 
-如果 ``x`` 小於 ``edge``\ ，返回 ``0.0``\ ，否則返回 ``1.0``\ 。
+Returns ``0.0`` if ``x`` is smaller than ``edge`` and ``1.0`` otherwise.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ VisualShaderNodeStep
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_VisualShaderNodeStep_OpType:
 
@@ -51,7 +51,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeStep_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeStep_OpType>` **OP_TYPE_SCALAR** = ``0``
 
-浮點數標量型別。
+A floating-point scalar type.
 
 .. _class_VisualShaderNodeStep_constant_OP_TYPE_VECTOR_2D:
 
@@ -59,7 +59,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeStep_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeStep_OpType>` **OP_TYPE_VECTOR_2D** = ``1``
 
-2D 向量型別。
+A 2D vector type.
 
 .. _class_VisualShaderNodeStep_constant_OP_TYPE_VECTOR_2D_SCALAR:
 
@@ -67,7 +67,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeStep_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeStep_OpType>` **OP_TYPE_VECTOR_2D_SCALAR** = ``2``
 
-``x`` 埠使用 2D 向量型別，而 ``edge`` 埠使用浮點數標量型別。
+The ``x`` port uses a 2D vector type, while the ``edge`` port uses a floating-point scalar type.
 
 .. _class_VisualShaderNodeStep_constant_OP_TYPE_VECTOR_3D:
 
@@ -75,7 +75,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeStep_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeStep_OpType>` **OP_TYPE_VECTOR_3D** = ``3``
 
-3D向量型別。
+A 3D vector type.
 
 .. _class_VisualShaderNodeStep_constant_OP_TYPE_VECTOR_3D_SCALAR:
 
@@ -83,7 +83,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeStep_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeStep_OpType>` **OP_TYPE_VECTOR_3D_SCALAR** = ``4``
 
-``x`` 埠使用 3D 向量型別，而 ``edge`` 埠使用浮點數標量型別。
+The ``x`` port uses a 3D vector type, while the ``edge`` port uses a floating-point scalar type.
 
 .. _class_VisualShaderNodeStep_constant_OP_TYPE_VECTOR_4D:
 
@@ -91,7 +91,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeStep_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeStep_OpType>` **OP_TYPE_VECTOR_4D** = ``5``
 
-4D 向量型別。
+A 4D vector type.
 
 .. _class_VisualShaderNodeStep_constant_OP_TYPE_VECTOR_4D_SCALAR:
 
@@ -99,7 +99,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeStep_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeStep_OpType>` **OP_TYPE_VECTOR_4D_SCALAR** = ``6``
 
-``a`` 和 ``b`` 埠使用 4D 向量型別。\ ``weight`` 端口使用標量型別。
+The ``a`` and ``b`` ports use a 4D vector type. The ``weight`` port uses a scalar type.
 
 .. _class_VisualShaderNodeStep_constant_OP_TYPE_MAX:
 
@@ -107,7 +107,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeStep_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeStep_OpType>` **OP_TYPE_MAX** = ``7``
 
-代表 :ref:`OpType<enum_VisualShaderNodeStep_OpType>` 列舉的大小。
+Represents the size of the :ref:`OpType<enum_VisualShaderNodeStep_OpType>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -115,8 +115,8 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeStep_OpType>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_VisualShaderNodeStep_property_op_type:
 
@@ -129,14 +129,14 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeStep_OpType>`
 - |void| **set_op_type**\ (\ value\: :ref:`OpType<enum_VisualShaderNodeStep_OpType>`\ )
 - :ref:`OpType<enum_VisualShaderNodeStep_OpType>` **get_op_type**\ (\ )
 
-運算元和返回值的型別。
+A type of operands and returned value.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

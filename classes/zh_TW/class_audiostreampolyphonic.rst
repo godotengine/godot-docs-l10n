@@ -5,23 +5,23 @@
 AudioStreamPolyphonic
 =====================
 
-**繼承：** :ref:`AudioStream<class_AudioStream>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`AudioStream<class_AudioStream>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-允許使用者透過程式碼隨時播放自訂音訊流，並以單一播放器同時輸出。
+AudioStream that lets the user play custom streams at any time from code, simultaneously using a single player.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-允許使用者透過程式碼隨時以單一播放器播放多條自訂音訊流。
+AudioStream that lets the user play custom streams at any time from code, simultaneously using a single player.
 
-播放控制透過播放器內的 :ref:`AudioStreamPlaybackPolyphonic<class_AudioStreamPlaybackPolyphonic>` 實例完成，可呼叫 :ref:`AudioStreamPlayer.get_stream_playback()<class_AudioStreamPlayer_method_get_stream_playback>`\ 、\ :ref:`AudioStreamPlayer2D.get_stream_playback()<class_AudioStreamPlayer2D_method_get_stream_playback>` 或 :ref:`AudioStreamPlayer3D.get_stream_playback()<class_AudioStreamPlayer3D_method_get_stream_playback>` 取得。僅當這些播放器的 ``stream`` 屬性已設為 **AudioStreamPolyphonic** 時，才能取得該實例。
+Playback control is done via the :ref:`AudioStreamPlaybackPolyphonic<class_AudioStreamPlaybackPolyphonic>` instance set inside the player, which can be obtained via :ref:`AudioStreamPlayer.get_stream_playback()<class_AudioStreamPlayer_method_get_stream_playback>`, :ref:`AudioStreamPlayer2D.get_stream_playback()<class_AudioStreamPlayer2D_method_get_stream_playback>` or :ref:`AudioStreamPlayer3D.get_stream_playback()<class_AudioStreamPlayer3D_method_get_stream_playback>` methods. Obtaining the playback instance is only valid after the ``stream`` property is set as an **AudioStreamPolyphonic** in those players.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ AudioStreamPolyphonic
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_AudioStreamPolyphonic_property_polyphony:
 
@@ -50,14 +50,14 @@ AudioStreamPolyphonic
 - |void| **set_polyphony**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_polyphony**\ (\ )
 
-可同時播放的最大音訊流數量。
+Maximum amount of simultaneous streams that can be played.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

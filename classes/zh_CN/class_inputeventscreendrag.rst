@@ -5,28 +5,28 @@
 InputEventScreenDrag
 ====================
 
-**继承：** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-代表屏幕拖拽事件。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-存放与屏幕拖拽事件相关的信息。见 :ref:`Node._input()<class_Node_private_method__input>`\ 。
+Represents a screen drag event.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`使用 InputEvent <../tutorials/inputs/inputevent>`
+Stores information about screen drag events. See :ref:`Node._input()<class_Node_private_method__input>`.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Using InputEvent <../tutorials/inputs/inputevent>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -57,8 +57,8 @@ InputEventScreenDrag
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_InputEventScreenDrag_property_index:
 
@@ -71,7 +71,7 @@ InputEventScreenDrag
 - |void| **set_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_index**\ (\ )
 
-多次拖动事件中的拖动事件索引。
+The drag event index in the case of a multi-drag event.
 
 .. rst-class:: classref-item-separator
 
@@ -88,7 +88,7 @@ InputEventScreenDrag
 - |void| **set_pen_inverted**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_pen_inverted**\ (\ )
 
-正在使用手写笔的橡皮端时，会返回 ``true``\ 。
+Returns ``true`` when using the eraser end of a stylus pen.
 
 .. rst-class:: classref-item-separator
 
@@ -105,7 +105,7 @@ InputEventScreenDrag
 - |void| **set_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_position**\ (\ )
 
-节点所在视口中的拖动位置，使用该视口的坐标系。
+The drag position in the viewport the node is in, using the coordinate system of this viewport.
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +122,7 @@ InputEventScreenDrag
 - |void| **set_pressure**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pressure**\ (\ )
 
-表示用户对笔施加的压力。范围从 ``0.0`` 到 ``1.0`` 。
+Represents the pressure the user puts on the pen. Ranges from ``0.0`` to ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -139,9 +139,9 @@ InputEventScreenDrag
 - |void| **set_relative**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_relative**\ (\ )
 
-相对于前一位置（上一帧的位置）的拖动位置。
+The drag position relative to the previous position (position at the last frame).
 
-\ **注意：**\ :ref:`relative<class_InputEventScreenDrag_property_relative>` 根据内容缩放系数自动缩放，内容缩放系数由项目的拉伸模式设置定义。这意味着在处理触摸瞄准的脚本中使用 :ref:`relative<class_InputEventScreenDrag_property_relative>` 时，触摸灵敏度将根据分辨率而有所不同。为了避免这种情况，请改用 :ref:`screen_relative<class_InputEventScreenDrag_property_screen_relative>`\ 。
+\ **Note:** :ref:`relative<class_InputEventScreenDrag_property_relative>` is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. This means touch sensitivity will appear different depending on resolution when using :ref:`relative<class_InputEventScreenDrag_property_relative>` in a script that handles touch aiming. To avoid this, use :ref:`screen_relative<class_InputEventScreenDrag_property_screen_relative>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -158,7 +158,7 @@ InputEventScreenDrag
 - |void| **set_screen_relative**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_screen_relative**\ (\ )
 
-相对于屏幕坐标中的上一个位置（上一帧的位置）的未缩放拖动位置。该位置\ *不*\ 根据内容缩放系数或调用 :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>` 进行缩放。无论项目的拉伸模式如何，对于触摸瞄准来说，这都应该优先于 :ref:`relative<class_InputEventScreenDrag_property_relative>`\ 。
+The unscaled drag position relative to the previous position in screen coordinates (position at the last frame). This position is *not* scaled according to the content scale factor or calls to :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`. This should be preferred over :ref:`relative<class_InputEventScreenDrag_property_relative>` for touch aiming regardless of the project's stretch mode.
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ InputEventScreenDrag
 - |void| **set_screen_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_screen_velocity**\ (\ )
 
-屏幕坐标中未缩放的拖动速度（单位为每秒像素数）。该速度\ *不会*\ 根据内容缩放系数或对 :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>` 的调用进行缩放。无论项目的拉伸模式如何，对于触摸瞄准来说，这都应该优先于 :ref:`velocity<class_InputEventScreenDrag_property_velocity>`\ 。
+The unscaled drag velocity in pixels per second in screen coordinates. This velocity is *not* scaled according to the content scale factor or calls to :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`. This should be preferred over :ref:`velocity<class_InputEventScreenDrag_property_velocity>` for touch aiming regardless of the project's stretch mode.
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ InputEventScreenDrag
 - |void| **set_tilt**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_tilt**\ (\ )
 
-代表笔的倾斜角度。正的 X 坐标值表示向右倾斜。正的Y坐标值表示向用户自身倾斜。两个轴的范围是 ``-1.0`` 到 ``1.0``\ 。
+Represents the angles of tilt of the pen. Positive X-coordinate value indicates a tilt to the right. Positive Y-coordinate value indicates a tilt toward the user. Ranges from ``-1.0`` to ``1.0`` for both axes.
 
 .. rst-class:: classref-item-separator
 
@@ -209,16 +209,16 @@ InputEventScreenDrag
 - |void| **set_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_velocity**\ (\ )
 
-拖动速度。
+The drag velocity.
 
-\ **注意：**\ :ref:`velocity<class_InputEventScreenDrag_property_velocity>` 根据内容缩放系数自动缩放，内容缩放系数由项目的拉伸模式设置定义。这意味着在处理触摸瞄准的脚本中使用 :ref:`velocity<class_InputEventScreenDrag_property_velocity>` 时，触摸灵敏度将根据分辨率而表现不同。为了避免这种情况，请改用 :ref:`screen_velocity<class_InputEventScreenDrag_property_screen_velocity>`\ 。
+\ **Note:** :ref:`velocity<class_InputEventScreenDrag_property_velocity>` is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. This means touch sensitivity will appear different depending on resolution when using :ref:`velocity<class_InputEventScreenDrag_property_velocity>` in a script that handles touch aiming. To avoid this, use :ref:`screen_velocity<class_InputEventScreenDrag_property_screen_velocity>` instead.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

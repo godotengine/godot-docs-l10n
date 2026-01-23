@@ -5,30 +5,30 @@
 XRPose
 ======
 
-**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-这个对象包含了跟踪对象姿势相关的所有数据。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-XR 运行时通常可以识别设备上的多个位置，例如空间跟踪的控制器。
-
-XR 运行时会为每个姿势都提供朝向、位置、线速度和角速度。这个对象包含某个姿势的状态。
+This object contains all data related to a pose on a tracked object.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`XR 文档索引 <../tutorials/xr/index>`
+XR runtimes often identify multiple locations on devices such as controllers that are spatially tracked.
+
+Orientation, location, linear velocity and angular velocity are all provided for each pose by the XR runtime. This object contains this state of a pose.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`XR documentation index <../tutorials/xr/index>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ XR 运行时会为每个姿势都提供朝向、位置、线速度和角速度�
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -65,8 +65,8 @@ XR 运行时会为每个姿势都提供朝向、位置、线速度和角速度�
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_XRPose_TrackingConfidence:
 
@@ -80,7 +80,7 @@ enum **TrackingConfidence**: :ref:`🔗<enum_XRPose_TrackingConfidence>`
 
 :ref:`TrackingConfidence<enum_XRPose_TrackingConfidence>` **XR_TRACKING_CONFIDENCE_NONE** = ``0``
 
-此姿势没有可用的追踪信息。
+No tracking information is available for this pose.
 
 .. _class_XRPose_constant_XR_TRACKING_CONFIDENCE_LOW:
 
@@ -88,7 +88,7 @@ enum **TrackingConfidence**: :ref:`🔗<enum_XRPose_TrackingConfidence>`
 
 :ref:`TrackingConfidence<enum_XRPose_TrackingConfidence>` **XR_TRACKING_CONFIDENCE_LOW** = ``1``
 
-追踪信息可能不准确或是估计而来的。例如，对于内向外型追踪，这表示的是控制器可能被（部分）遮挡。
+Tracking information may be inaccurate or estimated. For example, with inside out tracking this would indicate a controller may be (partially) obscured.
 
 .. _class_XRPose_constant_XR_TRACKING_CONFIDENCE_HIGH:
 
@@ -96,7 +96,7 @@ enum **TrackingConfidence**: :ref:`🔗<enum_XRPose_TrackingConfidence>`
 
 :ref:`TrackingConfidence<enum_XRPose_TrackingConfidence>` **XR_TRACKING_CONFIDENCE_HIGH** = ``2``
 
-追踪信息被认为是准确且最新的。
+Tracking information is considered accurate and up to date.
 
 .. rst-class:: classref-section-separator
 
@@ -104,8 +104,8 @@ enum **TrackingConfidence**: :ref:`🔗<enum_XRPose_TrackingConfidence>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_XRPose_property_angular_velocity:
 
@@ -118,7 +118,7 @@ enum **TrackingConfidence**: :ref:`🔗<enum_XRPose_TrackingConfidence>`
 - |void| **set_angular_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_angular_velocity**\ (\ )
 
-该姿势的角速度。
+The angular velocity for this pose.
 
 .. rst-class:: classref-item-separator
 
@@ -135,7 +135,7 @@ enum **TrackingConfidence**: :ref:`🔗<enum_XRPose_TrackingConfidence>`
 - |void| **set_has_tracking_data**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_has_tracking_data**\ (\ )
 
-如果为 ``true``\ ，则我们的追踪数据是最新的。如果为 ``false``\ ，我们将不再接收新的追踪数据，并且我们的状态是最后一个有效状态。
+If ``true`` our tracking data is up to date. If ``false`` we're no longer receiving new tracking data and our state is whatever that last valid state was.
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ enum **TrackingConfidence**: :ref:`🔗<enum_XRPose_TrackingConfidence>`
 - |void| **set_linear_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_linear_velocity**\ (\ )
 
-该姿势的线速度。
+The linear velocity of this pose.
 
 .. rst-class:: classref-item-separator
 
@@ -169,15 +169,15 @@ enum **TrackingConfidence**: :ref:`🔗<enum_XRPose_TrackingConfidence>`
 - |void| **set_name**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_name**\ (\ )
 
-姿势的名称。姿势名称通常派生自用户设置的动作映射。Godot 也针对姿势名称给出了一些建议，希望 :ref:`XRInterface<class_XRInterface>` 能够实现：
+The name of this pose. Usually, this name is derived from an action map set up by the user. Godot also suggests some pose names that :ref:`XRInterface<class_XRInterface>` objects are expected to implement:
 
--``root`` 是根位置，通常用于没有其他节点的被追踪物体。
+- ``root`` is the root location, often used for tracked objects that do not have further nodes.
 
--``aim`` 是控制器的顶端，方向朝外，常用于射线投射。
+- ``aim`` is the tip of a controller with its orientation pointing outwards, often used for raycasts.
 
--``grip`` 是用户持握控制器的位置。
+- ``grip`` is the location where the user grips the controller.
 
--``skeleton`` 是在使用手部跟踪且 XR 运行时提供的动画骨架时，手部网格的根位置。
+- ``skeleton`` is the root location for a hand mesh, when using hand tracking and an animated skeleton is supplied by the XR runtime.
 
 .. rst-class:: classref-item-separator
 
@@ -194,7 +194,7 @@ enum **TrackingConfidence**: :ref:`🔗<enum_XRPose_TrackingConfidence>`
 - |void| **set_tracking_confidence**\ (\ value\: :ref:`TrackingConfidence<enum_XRPose_TrackingConfidence>`\ )
 - :ref:`TrackingConfidence<enum_XRPose_TrackingConfidence>` **get_tracking_confidence**\ (\ )
 
-此姿势的追踪置信度，提供了有关此记录的空间定位准确度的洞察力。
+The tracking confidence for this pose, provides insight on how accurate the spatial positioning of this record is.
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ enum **TrackingConfidence**: :ref:`🔗<enum_XRPose_TrackingConfidence>`
 - |void| **set_transform**\ (\ value\: :ref:`Transform3D<class_Transform3D>`\ )
 - :ref:`Transform3D<class_Transform3D>` **get_transform**\ (\ )
 
-该变换包含由 XR 运行时报告的原点和变换。
+The transform containing the original and transform as reported by the XR runtime.
 
 .. rst-class:: classref-section-separator
 
@@ -219,8 +219,8 @@ enum **TrackingConfidence**: :ref:`🔗<enum_XRPose_TrackingConfidence>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_XRPose_method_get_adjusted_transform:
 
@@ -228,14 +228,14 @@ enum **TrackingConfidence**: :ref:`🔗<enum_XRPose_TrackingConfidence>`
 
 :ref:`Transform3D<class_Transform3D>` **get_adjusted_transform**\ (\ ) |const| :ref:`🔗<class_XRPose_method_get_adjusted_transform>`
 
-返回受到世界缩放和我们参考系影响的 :ref:`transform<class_XRPose_property_transform>`\ 。这是用于放置 :ref:`XRNode3D<class_XRNode3D>` 对象的变换。
+Returns the :ref:`transform<class_XRPose_property_transform>` with world scale and our reference frame applied. This is the transform used to position :ref:`XRNode3D<class_XRNode3D>` objects.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

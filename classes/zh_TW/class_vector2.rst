@@ -9,38 +9,38 @@ A 2D vector using floating-point coordinates.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-包含兩個元素的結構體，可用於代表 2D 座標或任何數值的二元組。
+A 2-element structure that can be used to represent 2D coordinates or any other pair of numeric values.
 
-使用浮點數座標。預設情況下，這些浮點值為 32 位精度，與始終為 64 位的 :ref:`float<class_float>` 並不相同。如果需要雙精度，請在編譯引擎時使用 ``precision=double`` 選項。
+It uses floating-point coordinates. By default, these floating-point values use 32-bit precision, unlike :ref:`float<class_float>` which is always 64-bit. If double precision is needed, compile the engine with the option ``precision=double``.
 
-對應的整數版本見 :ref:`Vector2i<class_Vector2i>`\ 。
+See :ref:`Vector2i<class_Vector2i>` for its integer counterpart.
 
-\ **注意：**\ 在布林語境中，如果 Vector2 等於 ``Vector2(0, 0)`` 則求值結果為 ``false``\ 。否則 Vector2 的求值結果始終為 ``true``\ 。
+\ **Note:** In a boolean context, a Vector2 will evaluate to ``false`` if it's equal to ``Vector2(0, 0)``. Otherwise, a Vector2 will always evaluate to ``true``.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`數學文件索引 <../tutorials/math/index>`
+- :doc:`Math documentation index <../tutorials/math/index>`
 
-- :doc:`向量數學 <../tutorials/math/vector_math>`
+- :doc:`Vector math <../tutorials/math/vector_math>`
 
-- :doc:`高等向量數學 <../tutorials/math/vectors_advanced>`
+- :doc:`Advanced vector math <../tutorials/math/vectors_advanced>`
 
-- `3Blue1Brown《線性代數的本質》 <https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab>`__
+- `3Blue1Brown Essence of Linear Algebra <https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab>`__
 
-- `矩陣變換示範 <https://godotengine.org/asset-library/asset/2787>`__
+- `Matrix Transform Demo <https://godotengine.org/asset-library/asset/2787>`__
 
-- `所有 2D 範例 <https://github.com/godotengine/godot-demo-projects/tree/master/2d>`__
+- `All 2D Demos <https://github.com/godotengine/godot-demo-projects/tree/master/2d>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ A 2D vector using floating-point coordinates.
 
 .. rst-class:: classref-reftable-group
 
-建構子
-------
+Constructors
+------------
 
 .. table::
    :widths: auto
@@ -71,8 +71,8 @@ A 2D vector using floating-point coordinates.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -177,8 +177,8 @@ A 2D vector using floating-point coordinates.
 
 .. rst-class:: classref-reftable-group
 
-運算子
-------
+Operators
+---------
 
 .. table::
    :widths: auto
@@ -227,8 +227,8 @@ A 2D vector using floating-point coordinates.
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_Vector2_Axis:
 
@@ -242,7 +242,7 @@ enum **Axis**: :ref:`🔗<enum_Vector2_Axis>`
 
 :ref:`Axis<enum_Vector2_Axis>` **AXIS_X** = ``0``
 
-X 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_index>` 和 :ref:`min_axis_index()<class_Vector2_method_min_axis_index>` 返回。
+Enumerated value for the X axis. Returned by :ref:`max_axis_index()<class_Vector2_method_max_axis_index>` and :ref:`min_axis_index()<class_Vector2_method_min_axis_index>`.
 
 .. _class_Vector2_constant_AXIS_Y:
 
@@ -250,7 +250,7 @@ X 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 :ref:`Axis<enum_Vector2_Axis>` **AXIS_Y** = ``1``
 
-Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_index>` 和 :ref:`min_axis_index()<class_Vector2_method_min_axis_index>` 返回。
+Enumerated value for the Y axis. Returned by :ref:`max_axis_index()<class_Vector2_method_max_axis_index>` and :ref:`min_axis_index()<class_Vector2_method_min_axis_index>`.
 
 .. rst-class:: classref-section-separator
 
@@ -258,8 +258,8 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 .. rst-class:: classref-descriptions-group
 
-常數
-----
+Constants
+---------
 
 .. _class_Vector2_constant_ZERO:
 
@@ -267,7 +267,7 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 **ZERO** = ``Vector2(0, 0)`` :ref:`🔗<class_Vector2_constant_ZERO>`
 
-零向量，所有分量都設定為 ``0`` 的向量。
+Zero vector, a vector with all components set to ``0``.
 
 .. _class_Vector2_constant_ONE:
 
@@ -275,7 +275,7 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 **ONE** = ``Vector2(1, 1)`` :ref:`🔗<class_Vector2_constant_ONE>`
 
-一向量，所有分量都設定為 ``1`` 的向量。
+One vector, a vector with all components set to ``1``.
 
 .. _class_Vector2_constant_INF:
 
@@ -283,7 +283,7 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 **INF** = ``Vector2(inf, inf)`` :ref:`🔗<class_Vector2_constant_INF>`
 
-無窮大向量，所有分量都設定為 :ref:`@GDScript.INF<class_@GDScript_constant_INF>` 的向量。
+Infinity vector, a vector with all components set to :ref:`@GDScript.INF<class_@GDScript_constant_INF>`.
 
 .. _class_Vector2_constant_LEFT:
 
@@ -291,7 +291,7 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 **LEFT** = ``Vector2(-1, 0)`` :ref:`🔗<class_Vector2_constant_LEFT>`
 
-左單位向量。代表左的方向。
+Left unit vector. Represents the direction of left.
 
 .. _class_Vector2_constant_RIGHT:
 
@@ -299,7 +299,7 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 **RIGHT** = ``Vector2(1, 0)`` :ref:`🔗<class_Vector2_constant_RIGHT>`
 
-右單位向量。代表右的方向。
+Right unit vector. Represents the direction of right.
 
 .. _class_Vector2_constant_UP:
 
@@ -307,7 +307,7 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 **UP** = ``Vector2(0, -1)`` :ref:`🔗<class_Vector2_constant_UP>`
 
-上單位向量。在 2D 中 Y 是向下的，所以這個向量指向 -Y。
+Up unit vector. Y is down in 2D, so this vector points -Y.
 
 .. _class_Vector2_constant_DOWN:
 
@@ -315,7 +315,7 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 **DOWN** = ``Vector2(0, 1)`` :ref:`🔗<class_Vector2_constant_DOWN>`
 
-下單位向量。在 2D 中 Y 是向下的，所以這個向量指向 +Y。
+Down unit vector. Y is down in 2D, so this vector points +Y.
 
 .. rst-class:: classref-section-separator
 
@@ -323,8 +323,8 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_Vector2_property_x:
 
@@ -332,7 +332,7 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 :ref:`float<class_float>` **x** = ``0.0`` :ref:`🔗<class_Vector2_property_x>`
 
-向量的 X 分量。也可以通過使用索引位置 ``[0]`` 存取。
+The vector's X component. Also accessible by using the index position ``[0]``.
 
 .. rst-class:: classref-item-separator
 
@@ -344,7 +344,7 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 :ref:`float<class_float>` **y** = ``0.0`` :ref:`🔗<class_Vector2_property_y>`
 
-向量的 Y 分量。也可以通過使用索引位置 ``[1]`` 存取。
+The vector's Y component. Also accessible by using the index position ``[1]``.
 
 .. rst-class:: classref-section-separator
 
@@ -352,8 +352,8 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 .. rst-class:: classref-descriptions-group
 
-建構子說明
-----------
+Constructor Descriptions
+------------------------
 
 .. _class_Vector2_constructor_Vector2:
 
@@ -361,7 +361,7 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 :ref:`Vector2<class_Vector2>` **Vector2**\ (\ ) :ref:`🔗<class_Vector2_constructor_Vector2>`
 
-建構預設初始化的 **Vector2**\ ，所有分量均為 ``0``\ 。
+Constructs a default-initialized **Vector2** with all components set to ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -371,7 +371,7 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 :ref:`Vector2<class_Vector2>` **Vector2**\ (\ from\: :ref:`Vector2<class_Vector2>`\ )
 
-建構給定 **Vector2** 的副本。
+Constructs a **Vector2** as a copy of the given **Vector2**.
 
 .. rst-class:: classref-item-separator
 
@@ -381,7 +381,7 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 :ref:`Vector2<class_Vector2>` **Vector2**\ (\ from\: :ref:`Vector2i<class_Vector2i>`\ )
 
-從 :ref:`Vector2i<class_Vector2i>` 建構新的 **Vector2**\ 。
+Constructs a new **Vector2** from :ref:`Vector2i<class_Vector2i>`.
 
 .. rst-class:: classref-item-separator
 
@@ -391,7 +391,7 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 :ref:`Vector2<class_Vector2>` **Vector2**\ (\ x\: :ref:`float<class_float>`, y\: :ref:`float<class_float>`\ )
 
-從給定的 ``x`` 和 ``y`` 建構新的 **Vector2**\ 。
+Constructs a new **Vector2** from the given ``x`` and ``y``.
 
 .. rst-class:: classref-section-separator
 
@@ -399,8 +399,8 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_Vector2_method_abs:
 
@@ -408,7 +408,7 @@ Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 :ref:`Vector2<class_Vector2>` **abs**\ (\ ) |const| :ref:`🔗<class_Vector2_method_abs>`
 
-返回一個新向量，其所有分量都是絕對值，即正值。
+Returns a new vector with all components in absolute values (i.e. positive).
 
 .. rst-class:: classref-item-separator
 
@@ -480,7 +480,7 @@ Returns this vector's aspect ratio, which is :ref:`x<class_Vector2_property_x>` 
 
 :ref:`Vector2<class_Vector2>` **bezier_derivative**\ (\ control_1\: :ref:`Vector2<class_Vector2>`, control_2\: :ref:`Vector2<class_Vector2>`, end\: :ref:`Vector2<class_Vector2>`, t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector2_method_bezier_derivative>`
 
-返回\ `貝賽爾曲線 <https://zh.wikipedia.org/zh-cn/%E8%B2%9D%E8%8C%B2%E6%9B%B2%E7%B7%9A>`__\ 上 ``t`` 處的導數，該曲線由此向量和控制點 ``control_1``\ 、\ ``control_2``\ 、終點 ``end`` 定義。
+Returns the derivative at the given ``t`` on the `Bézier curve <https://en.wikipedia.org/wiki/B%C3%A9zier_curve>`__ defined by this vector and the given ``control_1``, ``control_2``, and ``end`` points.
 
 .. rst-class:: classref-item-separator
 
@@ -492,7 +492,7 @@ Returns this vector's aspect ratio, which is :ref:`x<class_Vector2_property_x>` 
 
 :ref:`Vector2<class_Vector2>` **bezier_interpolate**\ (\ control_1\: :ref:`Vector2<class_Vector2>`, control_2\: :ref:`Vector2<class_Vector2>`, end\: :ref:`Vector2<class_Vector2>`, t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector2_method_bezier_interpolate>`
 
-返回\ `貝賽爾曲線 <https://zh.wikipedia.org/zh-cn/%E8%B2%9D%E8%8C%B2%E6%9B%B2%E7%B7%9A>`__\ 上 ``t`` 處的點，該曲線由此向量和控制點 ``control_1``\ 、\ ``control_2``\ 、終點 ``end`` 定義。
+Returns the point at the given ``t`` on the `Bézier curve <https://en.wikipedia.org/wiki/B%C3%A9zier_curve>`__ defined by this vector and the given ``control_1``, ``control_2``, and ``end`` points.
 
 .. rst-class:: classref-item-separator
 
@@ -518,7 +518,7 @@ Returns the vector "bounced off" from a line defined by the given normal ``n`` p
 
 :ref:`Vector2<class_Vector2>` **ceil**\ (\ ) |const| :ref:`🔗<class_Vector2_method_ceil>`
 
-返回一個新向量，所有的分量都是向上四捨五入（正無窮大方向）。
+Returns a new vector with all components rounded up (towards positive infinity).
 
 .. rst-class:: classref-item-separator
 
@@ -530,7 +530,7 @@ Returns the vector "bounced off" from a line defined by the given normal ``n`` p
 
 :ref:`Vector2<class_Vector2>` **clamp**\ (\ min\: :ref:`Vector2<class_Vector2>`, max\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_clamp>`
 
-返回一個新向量，每個分量都使用 :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>` 限制在 ``min`` 和 ``max`` 之間。
+Returns a new vector with all components clamped between the components of ``min`` and ``max``, by running :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>` on each component.
 
 .. rst-class:: classref-item-separator
 
@@ -570,7 +570,7 @@ This is the signed area of the parallelogram formed by the two vectors. If the s
 
 :ref:`Vector2<class_Vector2>` **cubic_interpolate**\ (\ b\: :ref:`Vector2<class_Vector2>`, pre_a\: :ref:`Vector2<class_Vector2>`, post_b\: :ref:`Vector2<class_Vector2>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector2_method_cubic_interpolate>`
 
-返回該向量和 ``b`` 之間進行三次插值 ``weight`` 處的結果，使用 ``pre_a`` 和 ``post_b`` 作為控制柄。\ ``weight`` 在 0.0 到 1.0 的範圍內，代表插值的量。
+Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of 0.0 to 1.0, representing the amount of interpolation.
 
 .. rst-class:: classref-item-separator
 
@@ -610,9 +610,9 @@ Returns the normalized vector pointing from this vector to ``to``.
 
 :ref:`float<class_float>` **distance_squared_to**\ (\ to\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_distance_squared_to>`
 
-返回該向量與 ``to`` 之間的距離的平方。
+Returns the squared distance between this vector and ``to``.
 
-該方法比 :ref:`distance_to()<class_Vector2_method_distance_to>` 運作得更快，因此請在需要比較向量或者用於某些公式的平方距離時，優先使用這個方法。
+This method runs faster than :ref:`distance_to()<class_Vector2_method_distance_to>`, so prefer it if you need to compare vectors or need the squared distance for some formula.
 
 .. rst-class:: classref-item-separator
 
@@ -624,7 +624,7 @@ Returns the normalized vector pointing from this vector to ``to``.
 
 :ref:`float<class_float>` **distance_to**\ (\ to\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_distance_to>`
 
-返回該向量與 ``to`` 之間的距離。
+Returns the distance between this vector and ``to``.
 
 .. rst-class:: classref-item-separator
 
@@ -654,7 +654,7 @@ When using unit (normalized) vectors, the result will always be between ``-1.0``
 
 :ref:`Vector2<class_Vector2>` **floor**\ (\ ) |const| :ref:`🔗<class_Vector2_method_floor>`
 
-返回一個新的向量，所有的向量都被四捨五入，向負無窮大。
+Returns a new vector with all components rounded down (towards negative infinity).
 
 .. rst-class:: classref-item-separator
 
@@ -686,7 +686,7 @@ Creates a **Vector2** rotated to the given ``angle`` in radians. This is equival
 
 :ref:`bool<class_bool>` **is_equal_approx**\ (\ to\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_is_equal_approx>`
 
-如果這個向量與 ``to`` 大致相等，則返回 ``true``\ ，判斷方法是對每個分量執行 :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>`\ 。
+Returns ``true`` if this vector and ``to`` are approximately equal, by running :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>` on each component.
 
 .. rst-class:: classref-item-separator
 
@@ -698,7 +698,7 @@ Creates a **Vector2** rotated to the given ``angle`` in radians. This is equival
 
 :ref:`bool<class_bool>` **is_finite**\ (\ ) |const| :ref:`🔗<class_Vector2_method_is_finite>`
 
-如果該向量無窮，則返回 ``true``\ ，判斷方法是對每個分量呼叫 :ref:`@GlobalScope.is_finite()<class_@GlobalScope_method_is_finite>`\ 。
+Returns ``true`` if this vector is finite, by calling :ref:`@GlobalScope.is_finite()<class_@GlobalScope_method_is_finite>` on each component.
 
 .. rst-class:: classref-item-separator
 
@@ -710,7 +710,7 @@ Creates a **Vector2** rotated to the given ``angle`` in radians. This is equival
 
 :ref:`bool<class_bool>` **is_normalized**\ (\ ) |const| :ref:`🔗<class_Vector2_method_is_normalized>`
 
-如果該向量是正規化的，即長度約等於 1，則返回 ``true``\ 。
+Returns ``true`` if the vector is normalized, i.e. its length is approximately equal to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -722,9 +722,9 @@ Creates a **Vector2** rotated to the given ``angle`` in radians. This is equival
 
 :ref:`bool<class_bool>` **is_zero_approx**\ (\ ) |const| :ref:`🔗<class_Vector2_method_is_zero_approx>`
 
-如果該向量的值大約為零，則返回 ``true``\ ，判斷方法是對每個分量運作 :ref:`@GlobalScope.is_zero_approx()<class_@GlobalScope_method_is_zero_approx>`\ 。
+Returns ``true`` if this vector's values are approximately zero, by running :ref:`@GlobalScope.is_zero_approx()<class_@GlobalScope_method_is_zero_approx>` on each component.
 
-該方法比使用 :ref:`is_equal_approx()<class_Vector2_method_is_equal_approx>` 和零向量比較要快。
+This method is faster than using :ref:`is_equal_approx()<class_Vector2_method_is_equal_approx>` with one value as a zero vector.
 
 .. rst-class:: classref-item-separator
 
@@ -736,7 +736,7 @@ Creates a **Vector2** rotated to the given ``angle`` in radians. This is equival
 
 :ref:`float<class_float>` **length**\ (\ ) |const| :ref:`🔗<class_Vector2_method_length>`
 
-返回這個向量的長度，即大小。
+Returns the length (magnitude) of this vector.
 
 .. rst-class:: classref-item-separator
 
@@ -748,9 +748,9 @@ Creates a **Vector2** rotated to the given ``angle`` in radians. This is equival
 
 :ref:`float<class_float>` **length_squared**\ (\ ) |const| :ref:`🔗<class_Vector2_method_length_squared>`
 
-返回這個向量的平方長度，即平方大小。
+Returns the squared length (squared magnitude) of this vector.
 
-這個方法比 :ref:`length()<class_Vector2_method_length>` 運作得更快，所以如果你需要比較向量或需要一些公式的平方距離時，更喜歡用它。
+This method runs faster than :ref:`length()<class_Vector2_method_length>`, so prefer it if you need to compare vectors or need the squared distance for some formula.
 
 .. rst-class:: classref-item-separator
 
@@ -762,7 +762,7 @@ Creates a **Vector2** rotated to the given ``angle`` in radians. This is equival
 
 :ref:`Vector2<class_Vector2>` **lerp**\ (\ to\: :ref:`Vector2<class_Vector2>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector2_method_lerp>`
 
-返回此向量和 ``to`` 之間，按數量 ``weight`` 線性插值結果。\ ``weight`` 在 ``0.0`` 到 ``1.0`` 的範圍內，代表插值的量。
+Returns the result of the linear interpolation between this vector and ``to`` by amount ``weight``. ``weight`` is on the range of ``0.0`` to ``1.0``, representing the amount of interpolation.
 
 .. rst-class:: classref-item-separator
 
@@ -798,7 +798,7 @@ Returns the component-wise maximum of this and ``with``, equivalent to ``Vector2
 
 :ref:`int<class_int>` **max_axis_index**\ (\ ) |const| :ref:`🔗<class_Vector2_method_max_axis_index>`
 
-返回該向量中最大值的軸。見 ``AXIS_*`` 常數。如果所有分量相等，則該方法返回 :ref:`AXIS_X<class_Vector2_constant_AXIS_X>`\ 。
+Returns the axis of the vector's highest value. See ``AXIS_*`` constants. If all components are equal, this method returns :ref:`AXIS_X<class_Vector2_constant_AXIS_X>`.
 
 .. rst-class:: classref-item-separator
 
@@ -834,7 +834,7 @@ Returns the component-wise minimum of this and ``with``, equivalent to ``Vector2
 
 :ref:`int<class_int>` **min_axis_index**\ (\ ) |const| :ref:`🔗<class_Vector2_method_min_axis_index>`
 
-返回該向量中最小值的軸。見 ``AXIS_*`` 常數。如果所有分量相等，則該方法返回 :ref:`AXIS_Y<class_Vector2_constant_AXIS_Y>`\ 。
+Returns the axis of the vector's lowest value. See ``AXIS_*`` constants. If all components are equal, this method returns :ref:`AXIS_Y<class_Vector2_constant_AXIS_Y>`.
 
 .. rst-class:: classref-item-separator
 
@@ -858,7 +858,7 @@ Returns the component-wise minimum of this and ``with``, equivalent to ``Vector2
 
 :ref:`Vector2<class_Vector2>` **move_toward**\ (\ to\: :ref:`Vector2<class_Vector2>`, delta\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector2_method_move_toward>`
 
-返回一個新向量，該向量朝 ``to`` 移動了固定的量 ``delta``\ 。不會超過最終值。
+Returns a new vector moved toward ``to`` by the fixed ``delta`` amount. Will not go past the final value.
 
 .. rst-class:: classref-item-separator
 
@@ -884,7 +884,7 @@ Returns the result of scaling the vector to unit length. Equivalent to ``v / v.l
 
 :ref:`Vector2<class_Vector2>` **orthogonal**\ (\ ) |const| :ref:`🔗<class_Vector2_method_orthogonal>`
 
-返回一個與原來相比逆時針旋轉 90 度的垂直向量，長度不變。
+Returns a perpendicular vector rotated 90 degrees counter-clockwise compared to the original, with the same length.
 
 .. rst-class:: classref-item-separator
 
@@ -896,7 +896,7 @@ Returns the result of scaling the vector to unit length. Equivalent to ``v / v.l
 
 :ref:`Vector2<class_Vector2>` **posmod**\ (\ mod\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector2_method_posmod>`
 
-返回由該向量的分量與 ``mod`` 執行 :ref:`@GlobalScope.fposmod()<class_@GlobalScope_method_fposmod>` 運算後組成的向量。
+Returns a vector composed of the :ref:`@GlobalScope.fposmod()<class_@GlobalScope_method_fposmod>` of this vector's components and ``mod``.
 
 .. rst-class:: classref-item-separator
 
@@ -908,7 +908,7 @@ Returns the result of scaling the vector to unit length. Equivalent to ``v / v.l
 
 :ref:`Vector2<class_Vector2>` **posmodv**\ (\ modv\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_posmodv>`
 
-返回由該向量的分量與 ``modv`` 的分量執行 :ref:`@GlobalScope.fposmod()<class_@GlobalScope_method_fposmod>` 運算後組成的向量。
+Returns a vector composed of the :ref:`@GlobalScope.fposmod()<class_@GlobalScope_method_fposmod>` of this vector's components and ``modv``'s components.
 
 .. rst-class:: classref-item-separator
 
@@ -948,7 +948,7 @@ Returns the result of reflecting the vector from a line defined by the given dir
 
 :ref:`Vector2<class_Vector2>` **rotated**\ (\ angle\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector2_method_rotated>`
 
-返回將這個向量旋轉 ``angle`` 的結果（單位為弧度）。另見 :ref:`@GlobalScope.deg_to_rad()<class_@GlobalScope_method_deg_to_rad>`\ 。
+Returns the result of rotating this vector by ``angle`` (in radians). See also :ref:`@GlobalScope.deg_to_rad()<class_@GlobalScope_method_deg_to_rad>`.
 
 .. rst-class:: classref-item-separator
 
@@ -960,7 +960,7 @@ Returns the result of reflecting the vector from a line defined by the given dir
 
 :ref:`Vector2<class_Vector2>` **round**\ (\ ) |const| :ref:`🔗<class_Vector2_method_round>`
 
-返回所有分量都被四捨五入為最接近的整數的向量，中間情況向遠離零的方向四捨五入。
+Returns a new vector with all components rounded to the nearest integer, with halfway cases rounded away from zero.
 
 .. rst-class:: classref-item-separator
 
@@ -972,7 +972,7 @@ Returns the result of reflecting the vector from a line defined by the given dir
 
 :ref:`Vector2<class_Vector2>` **sign**\ (\ ) |const| :ref:`🔗<class_Vector2_method_sign>`
 
-返回新的向量，分量如果為正則設為 ``1.0``\ ，如果為負則設為 ``-1.0``\ ，如果為零則設為 ``0.0``\ 。結果與對每個分量呼叫 :ref:`@GlobalScope.sign()<class_@GlobalScope_method_sign>` 一致。
+Returns a new vector with each component set to ``1.0`` if it's positive, ``-1.0`` if it's negative, and ``0.0`` if it's zero. The result is identical to calling :ref:`@GlobalScope.sign()<class_@GlobalScope_method_sign>` on each component.
 
 .. rst-class:: classref-item-separator
 
@@ -984,9 +984,9 @@ Returns the result of reflecting the vector from a line defined by the given dir
 
 :ref:`Vector2<class_Vector2>` **slerp**\ (\ to\: :ref:`Vector2<class_Vector2>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector2_method_slerp>`
 
-返回在這個向量和 ``to`` 之間進行 ``weight`` 的球面線性插值的結果。\ ``weight`` 在 0.0 和 1.0 的範圍內，代表插值的量。
+Returns the result of spherical linear interpolation between this vector and ``to``, by amount ``weight``. ``weight`` is on the range of 0.0 to 1.0, representing the amount of interpolation.
 
-如果輸入向量的長度不同，這個函式也會對長度進行插值處理。對於輸入向量中存在長度為零的向量的特殊情況，這個方法的行為與 :ref:`lerp()<class_Vector2_method_lerp>` 一致。
+This method also handles interpolating the lengths if the input vectors have different lengths. For the special case of one or both input vectors having zero length, this method behaves like :ref:`lerp()<class_Vector2_method_lerp>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1012,7 +1012,7 @@ Returns a new vector resulting from sliding this vector along a line with normal
 
 :ref:`Vector2<class_Vector2>` **snapped**\ (\ step\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_snapped>`
 
-返回新的向量，每個分量都吸附到了與 ``step`` 中對應分量最接近的倍數。也可以用於將分量四捨五入至小數點後的任意位置。
+Returns a new vector with each component snapped to the nearest multiple of the corresponding component in ``step``. This can also be used to round the components to an arbitrary number of decimals.
 
 .. rst-class:: classref-item-separator
 
@@ -1032,8 +1032,8 @@ Returns a new vector with each component snapped to the nearest multiple of ``st
 
 .. rst-class:: classref-descriptions-group
 
-運算子說明
-----------
+Operator Descriptions
+---------------------
 
 .. _class_Vector2_operator_neq_Vector2:
 
@@ -1041,11 +1041,11 @@ Returns a new vector with each component snapped to the nearest multiple of ``st
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Vector2_operator_neq_Vector2>`
 
-如果向量不相等，則返回 ``true``\ 。
+Returns ``true`` if the vectors are not equal.
 
-\ **注意：**\ 由於浮點數精度誤差，請考慮改用 :ref:`is_equal_approx()<class_Vector2_method_is_equal_approx>`\ ，會更可靠。
+\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Vector2_method_is_equal_approx>` instead, which is more reliable.
 
-\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行為與其他向量不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
+\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -1089,7 +1089,7 @@ Multiplies each component of the **Vector2** by the components of the given **Ve
 
 :ref:`Vector2<class_Vector2>` **operator ***\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Vector2_operator_mul_float>`
 
-將該 **Vector2** 的每個分量乘以給定的 :ref:`float<class_float>`\ 。
+Multiplies each component of the **Vector2** by the given :ref:`float<class_float>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1101,7 +1101,7 @@ Multiplies each component of the **Vector2** by the components of the given **Ve
 
 :ref:`Vector2<class_Vector2>` **operator ***\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Vector2_operator_mul_int>`
 
-將該 **Vector2** 的每個分量乘以給定的 :ref:`int<class_int>`\ 。
+Multiplies each component of the **Vector2** by the given :ref:`int<class_int>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1161,7 +1161,7 @@ Divides each component of the **Vector2** by the components of the given **Vecto
 
 :ref:`Vector2<class_Vector2>` **operator /**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Vector2_operator_div_float>`
 
-將該 **Vector2** 的每個分量除以給定的 :ref:`float<class_float>`\ 。
+Divides each component of the **Vector2** by the given :ref:`float<class_float>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1173,7 +1173,7 @@ Divides each component of the **Vector2** by the components of the given **Vecto
 
 :ref:`Vector2<class_Vector2>` **operator /**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Vector2_operator_div_int>`
 
-將該 **Vector2** 的每個分量除以給定的 :ref:`int<class_int>`\ 。
+Divides each component of the **Vector2** by the given :ref:`int<class_int>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1185,9 +1185,9 @@ Divides each component of the **Vector2** by the components of the given **Vecto
 
 :ref:`bool<class_bool>` **operator <**\ (\ right\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Vector2_operator_lt_Vector2>`
 
-比較兩個 **Vector2** 向量，首先檢查左向量的 X 值是否小於 ``right`` 向量的 X 值。如果 X 值完全相等，則用相同的方法檢查兩個向量的 Y 值。該運算子可用於向量排序。
+Compares two **Vector2** vectors by first checking if the X value of the left vector is less than the X value of the ``right`` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors. This operator is useful for sorting vectors.
 
-\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行為與其他向量不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
+\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -1199,9 +1199,9 @@ Divides each component of the **Vector2** by the components of the given **Vecto
 
 :ref:`bool<class_bool>` **operator <=**\ (\ right\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Vector2_operator_lte_Vector2>`
 
-比較兩個 **Vector2** 向量，首先檢查左向量的 X 值是否小於等於 ``right`` 向量的 X 值。如果 X 值完全相等，則用相同的方法檢查兩個向量的 Y 值。該運算子可用於向量排序。
+Compares two **Vector2** vectors by first checking if the X value of the left vector is less than or equal to the X value of the ``right`` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors. This operator is useful for sorting vectors.
 
-\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行為與其他向量不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
+\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -1213,11 +1213,11 @@ Divides each component of the **Vector2** by the components of the given **Vecto
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Vector2_operator_eq_Vector2>`
 
-如果向量完全相等，則返回 ``true``\ 。
+Returns ``true`` if the vectors are exactly equal.
 
-\ **注意：**\ 由於浮點數精度誤差，請考慮改用 :ref:`is_equal_approx()<class_Vector2_method_is_equal_approx>`\ ，會更可靠。
+\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Vector2_method_is_equal_approx>` instead, which is more reliable.
 
-\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行為與其他向量不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
+\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -1229,9 +1229,9 @@ Divides each component of the **Vector2** by the components of the given **Vecto
 
 :ref:`bool<class_bool>` **operator >**\ (\ right\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Vector2_operator_gt_Vector2>`
 
-比較兩個 **Vector2** 向量，首先檢查左向量的 X 值是否大於 ``right`` 向量的 X 值。如果 X 值完全相等，則用相同的方法檢查兩個向量的 Y 值。該運算子可用於向量排序。
+Compares two **Vector2** vectors by first checking if the X value of the left vector is greater than the X value of the ``right`` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors. This operator is useful for sorting vectors.
 
-\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行為與其他向量不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
+\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -1243,9 +1243,9 @@ Divides each component of the **Vector2** by the components of the given **Vecto
 
 :ref:`bool<class_bool>` **operator >=**\ (\ right\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Vector2_operator_gte_Vector2>`
 
-比較兩個 **Vector2** 向量，首先檢查左向量的 X 值是否大於等於 ``right`` 向量的 X 值。如果 X 值完全相等，則用相同的方法檢查兩個向量的 Y 值。該運算子可用於向量排序。
+Compares two **Vector2** vectors by first checking if the X value of the left vector is greater than or equal to the X value of the ``right`` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors. This operator is useful for sorting vectors.
 
-\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行為與其他向量不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
+\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -1257,7 +1257,7 @@ Divides each component of the **Vector2** by the components of the given **Vecto
 
 :ref:`float<class_float>` **operator []**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Vector2_operator_idx_int>`
 
-使用向量分量的 ``index`` 來存取向量分量。\ ``v[0]`` 等價於 ``v.x``\ 、\ ``v[1]`` 等價於 ``v.y``\ 。
+Access vector components using their ``index``. ``v[0]`` is equivalent to ``v.x``, and ``v[1]`` is equivalent to ``v.y``.
 
 .. rst-class:: classref-item-separator
 
@@ -1269,7 +1269,7 @@ Divides each component of the **Vector2** by the components of the given **Vecto
 
 :ref:`Vector2<class_Vector2>` **operator unary+**\ (\ ) :ref:`🔗<class_Vector2_operator_unplus>`
 
-返回與 ``+`` 不存在時相同的值。單目 ``+`` 沒有作用，但有時可以使你的程式碼更具可讀性。
+Returns the same value as if the ``+`` was not there. Unary ``+`` does nothing, but sometimes it can make your code more readable.
 
 .. rst-class:: classref-item-separator
 
@@ -1281,14 +1281,14 @@ Divides each component of the **Vector2** by the components of the given **Vecto
 
 :ref:`Vector2<class_Vector2>` **operator unary-**\ (\ ) :ref:`🔗<class_Vector2_operator_unminus>`
 
-返回該 **Vector2** 的負值。和寫 ``Vector2(-v.x, -v.y)`` 是一樣的。該操作在保持相同幅度的同時，翻轉向量的方向。對於浮點數，零也有正負兩種。
+Returns the negative value of the **Vector2**. This is the same as writing ``Vector2(-v.x, -v.y)``. This operation flips the direction of the vector while keeping the same magnitude. With floats, the number zero can be either positive or negative.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

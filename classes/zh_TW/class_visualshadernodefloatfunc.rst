@@ -5,21 +5,21 @@
 VisualShaderNodeFloatFunc
 =========================
 
-**繼承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-在視覺化著色器圖中使用的浮點數標量函式。
+A scalar floating-point function to be used within the visual shader graph.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-在輸入埠接受一個浮點數標量（\ ``x``\ ）並根據 :ref:`function<class_VisualShaderNodeFloatFunc_property_function>` 對其進行變換。
+Accept a floating-point scalar (``x``) to the input port and transform it according to :ref:`function<class_VisualShaderNodeFloatFunc_property_function>`.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ VisualShaderNodeFloatFunc
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_VisualShaderNodeFloatFunc_Function:
 
@@ -49,7 +49,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_SIN** = ``0``
 
-返回參數的正弦值。在 Godot 著色器語言中，會被翻譯為 ``sin(x)``\ 。
+Returns the sine of the parameter. Translates to ``sin(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_COS:
 
@@ -57,7 +57,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_COS** = ``1``
 
-返回參數的餘弦值。在 Godot 著色器語言中，會被翻譯為 ``cos(x)``\ 。
+Returns the cosine of the parameter. Translates to ``cos(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_TAN:
 
@@ -65,7 +65,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_TAN** = ``2``
 
-返回參數的正切值。在 Godot 著色器語言中，會被翻譯為 ``tan(x)``\ 。
+Returns the tangent of the parameter. Translates to ``tan(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_ASIN:
 
@@ -73,7 +73,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_ASIN** = ``3``
 
-返回參數的反正弦值。在 Godot 著色器語言中，會被翻譯為 ``asin(x)``\ 。
+Returns the arc-sine of the parameter. Translates to ``asin(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_ACOS:
 
@@ -81,7 +81,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_ACOS** = ``4``
 
-返回參數的反餘弦值。在 Godot 著色器語言中，會被翻譯為 ``acos(x)``\ 。
+Returns the arc-cosine of the parameter. Translates to ``acos(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_ATAN:
 
@@ -89,7 +89,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_ATAN** = ``5``
 
-返回參數的反正切值。在 Godot 著色器語言中，會被翻譯為 ``atan(x)``\ 。
+Returns the arc-tangent of the parameter. Translates to ``atan(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_SINH:
 
@@ -97,7 +97,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_SINH** = ``6``
 
-返回參數的雙曲正弦值。在 Godot 著色器語言中，會被翻譯為 ``sinh(x)``\ 。
+Returns the hyperbolic sine of the parameter. Translates to ``sinh(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_COSH:
 
@@ -105,7 +105,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_COSH** = ``7``
 
-返回參數的雙曲餘弦值。在 Godot 著色器語言中，會被翻譯為 ``cosh(x)``\ 。
+Returns the hyperbolic cosine of the parameter. Translates to ``cosh(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_TANH:
 
@@ -113,7 +113,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_TANH** = ``8``
 
-返回參數的雙曲正切值。在 Godot 著色器語言中，會被翻譯為 ``tanh(x)``\ 。
+Returns the hyperbolic tangent of the parameter. Translates to ``tanh(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_LOG:
 
@@ -121,7 +121,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_LOG** = ``9``
 
-返回參數的自然對數。在 Godot 著色器語言中，會被翻譯為 ``log(x)``\ 。
+Returns the natural logarithm of the parameter. Translates to ``log(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_EXP:
 
@@ -129,7 +129,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_EXP** = ``10``
 
-返回該參數的自然指數。在 Godot 著色器語言中，會被翻譯為 ``exp(x)``\ 。
+Returns the natural exponentiation of the parameter. Translates to ``exp(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_SQRT:
 
@@ -137,7 +137,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_SQRT** = ``11``
 
-返回參數的平方根。在 Godot 著色器語言中，會被翻譯為 ``sqrt(x)``\ 。
+Returns the square root of the parameter. Translates to ``sqrt(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_ABS:
 
@@ -145,7 +145,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_ABS** = ``12``
 
-返回參數的絕對值。在 Godot 著色器語言中，會被翻譯為 ``abs(x)``\ 。
+Returns the absolute value of the parameter. Translates to ``abs(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_SIGN:
 
@@ -153,7 +153,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_SIGN** = ``13``
 
-提取參數的符號。在 Godot 著色器語言中，會被翻譯為 ``sign(x)``\ 。
+Extracts the sign of the parameter. Translates to ``sign(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_FLOOR:
 
@@ -161,7 +161,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_FLOOR** = ``14``
 
-搜尋小於或等於參數的最接近的整數。在 Godot 著色器語言中，會被翻譯為 ``floor(x)``\ 。
+Finds the nearest integer less than or equal to the parameter. Translates to ``floor(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_ROUND:
 
@@ -169,7 +169,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_ROUND** = ``15``
 
-搜尋最接近參數的整數。在 Godot 著色器語言中，會被翻譯為 ``round(x)``\ 。
+Finds the nearest integer to the parameter. Translates to ``round(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_CEIL:
 
@@ -177,7 +177,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_CEIL** = ``16``
 
-搜尋大於或等於參數的最接近的整數。在 Godot 著色器語言中，會被翻譯為 ``ceil(x)``\ 。
+Finds the nearest integer that is greater than or equal to the parameter. Translates to ``ceil(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_FRACT:
 
@@ -185,7 +185,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_FRACT** = ``17``
 
-計算參數的小數部分。在 Godot 著色器語言中，會被翻譯為 ``fract(x)``\ 。
+Computes the fractional part of the argument. Translates to ``fract(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_SATURATE:
 
@@ -193,7 +193,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_SATURATE** = ``18``
 
-使用 ``min(max(x, 0.0), 1.0)`` 將值鉗制在 ``0.0`` 和 ``1.0`` 之間。
+Clamps the value between ``0.0`` and ``1.0`` using ``min(max(x, 0.0), 1.0)``.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_NEGATE:
 
@@ -201,7 +201,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_NEGATE** = ``19``
 
-使用 ``-(x)``\ ，對 ``x`` 求反。
+Negates the ``x`` using ``-(x)``.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_ACOSH:
 
@@ -209,7 +209,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_ACOSH** = ``20``
 
-返回參數的反雙曲餘弦值。在 Godot 著色器語言中，會被翻譯為 ``acosh(x)``\ 。
+Returns the arc-hyperbolic-cosine of the parameter. Translates to ``acosh(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_ASINH:
 
@@ -217,7 +217,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_ASINH** = ``21``
 
-返回參數的反雙曲正弦值。在 Godot 著色器語言中，會被翻譯為 ``asinh(x)``\ 。
+Returns the arc-hyperbolic-sine of the parameter. Translates to ``asinh(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_ATANH:
 
@@ -225,7 +225,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_ATANH** = ``22``
 
-返回參數的反雙曲正切值。在 Godot 著色器語言中，會被翻譯為 ``atanh(x)``\ 。
+Returns the arc-hyperbolic-tangent of the parameter. Translates to ``atanh(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_DEGREES:
 
@@ -233,7 +233,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_DEGREES** = ``23``
 
-將弧度數轉換為度數。在 Godot 著色器語言中，會被翻譯為 ``degrees(x)``\ 。
+Convert a quantity in radians to degrees. Translates to ``degrees(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_EXP2:
 
@@ -241,7 +241,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_EXP2** = ``24``
 
-返回 2 的參數次冪。在 Godot 著色器語言中，會被翻譯為 ``exp2(x)``\ 。
+Returns 2 raised by the power of the parameter. Translates to ``exp2(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_INVERSE_SQRT:
 
@@ -249,7 +249,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_INVERSE_SQRT** = ``25``
 
-返回參數平方根的倒數。在 Godot 著色器語言中，會被翻譯為 ``inversesqrt(x)``\ 。
+Returns the inverse of the square root of the parameter. Translates to ``inversesqrt(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_LOG2:
 
@@ -257,7 +257,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_LOG2** = ``26``
 
-返回參數的以 2 為底的對數。在 Godot 著色器語言中，會被翻譯為 ``log2(x)``\ 。
+Returns the base 2 logarithm of the parameter. Translates to ``log2(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_RADIANS:
 
@@ -265,7 +265,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_RADIANS** = ``27``
 
-將度數轉換為弧度。在 Godot 著色器語言中，會被翻譯為 ``radians(x)``\ 。
+Convert a quantity in degrees to radians. Translates to ``radians(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_RECIPROCAL:
 
@@ -273,7 +273,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_RECIPROCAL** = ``28``
 
-求 1 除以 ``x`` 得到的倒數（即 ``1 / x``\ ）。
+Finds reciprocal value of dividing 1 by ``x`` (i.e. ``1 / x``).
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_ROUNDEVEN:
 
@@ -281,7 +281,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_ROUNDEVEN** = ``29``
 
-搜尋最接近參數的偶數。在 Godot 著色器語言中，會被翻譯為 ``roundEven(x)``\ 。
+Finds the nearest even integer to the parameter. Translates to ``roundEven(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_TRUNC:
 
@@ -289,7 +289,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_TRUNC** = ``30``
 
-返回與 ``x`` 的最接近整數的值，其絕對值不大於 ``x`` 絕對值。在 Godot 著色器語言中，會被翻譯為 ``trunc(x)``\ 。
+Returns a value equal to the nearest integer to ``x`` whose absolute value is not larger than the absolute value of ``x``. Translates to ``trunc(x)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_ONEMINUS:
 
@@ -297,7 +297,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_ONEMINUS** = ``31``
 
-從 1 中減去標量 ``x``\ （即 ``1 - x``\ ）。
+Subtracts scalar ``x`` from 1 (i.e. ``1 - x``).
 
 .. _class_VisualShaderNodeFloatFunc_constant_FUNC_MAX:
 
@@ -305,7 +305,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` **FUNC_MAX** = ``32``
 
-代表 :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` 列舉的大小。
+Represents the size of the :ref:`Function<enum_VisualShaderNodeFloatFunc_Function>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -313,8 +313,8 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_VisualShaderNodeFloatFunc_property_function:
 
@@ -329,12 +329,12 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeFloatFunc_Function>`
 
 A function to be applied to the scalar.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

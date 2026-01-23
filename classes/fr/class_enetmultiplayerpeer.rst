@@ -135,7 +135,7 @@ Initialize this :ref:`MultiplayerPeer<class_MultiplayerPeer>` in mesh mode. The 
 
 :ref:`Error<enum_@GlobalScope_Error>` **create_server**\ (\ port\: :ref:`int<class_int>`, max_clients\: :ref:`int<class_int>` = 32, max_channels\: :ref:`int<class_int>` = 0, in_bandwidth\: :ref:`int<class_int>` = 0, out_bandwidth\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ENetMultiplayerPeer_method_create_server>`
 
-Create server that listens to connections via ``port``. The port needs to be an available, unused port between 0 and 65535. Note that ports below 1024 are privileged and may require elevated permissions depending on the platform. To change the interface the server listens on, use :ref:`set_bind_ip()<class_ENetMultiplayerPeer_method_set_bind_ip>`. The default IP is the wildcard ``"*"``, which listens on all available interfaces. ``max_clients`` is the maximum number of clients that are allowed at once, any number up to 4095 may be used, although the achievable number of simultaneous clients may be far lower and depends on the application. For additional details on the bandwidth parameters, see :ref:`create_client()<class_ENetMultiplayerPeer_method_create_client>`. Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if a server was created, :ref:`@GlobalScope.ERR_ALREADY_IN_USE<class_@GlobalScope_constant_ERR_ALREADY_IN_USE>` if this ENetMultiplayerPeer instance already has an open connection (in which case you need to call :ref:`MultiplayerPeer.close()<class_MultiplayerPeer_method_close>` first) or :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>` if the server could not be created.
+Créer un serveur qui écoute les connexions via ``port``. Le port doit être un port disponible et inutilisé entre 0 et 65535. Notez que les ports inférieurs à 1024 sont réservés et peuvent nécessiter des autorisations élevées en fonction de la plateforme. Pour modifier l'interface que le serveur écoute, utilisez :ref:`set_bind_ip()<class_ENetMultiplayerPeer_method_set_bind_ip>`. L'IP par défaut est le joker ``"*"``, qui écoute toutes les interfaces disponibles. ``max_clients`` est le nombre maximum de clients autorisés en même temps, tout nombre jusqu'à 4095 peut être utilisé, même si le nombre possible de clients simultanés peut être beaucoup plus faible et dépend de l'application. Pour plus de détails sur les paramètres de bande passante, voir :ref:`create_client()<class_ENetMultiplayerPeer_method_create_client>`. Retourne :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` si un serveur a été créé, :ref:`@GlobalScope.ERR_ALREADY_IN_USE<class_@GlobalScope_constant_ERR_ALREADY_IN_USE>` si cette instance de ENetMultiplayerPeer a déjà une connexion ouverte (dans cecas vous devez appeler :ref:`MultiplayerPeer.close()<class_MultiplayerPeer_method_close>` d'abord) ou :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>` si le serveur ne peut pas être créé.
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +147,7 @@ Create server that listens to connections via ``port``. The port needs to be an 
 
 :ref:`ENetPacketPeer<class_ENetPacketPeer>` **get_peer**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ENetMultiplayerPeer_method_get_peer>`
 
-Returns the :ref:`ENetPacketPeer<class_ENetPacketPeer>` associated to the given ``id``.
+Retourne le :ref:`ENetPacketPeer<class_ENetPacketPeer>` associé au ``id`` donné.
 
 .. rst-class:: classref-item-separator
 

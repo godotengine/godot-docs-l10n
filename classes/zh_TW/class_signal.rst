@@ -5,12 +5,12 @@
 Signal
 ======
 
-代表 :ref:`Object<class_Object>` 中某個訊號的內建型別。
+A built-in type representing a signal of an :ref:`Object<class_Object>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 **Signal** is a built-in :ref:`Variant<class_Variant>` type that represents a signal of an :ref:`Object<class_Object>` instance. Like all :ref:`Variant<class_Variant>` types, it can be stored in variables and passed to functions. Signals allow all connected :ref:`Callable<class_Callable>`\ s (and by extension their respective objects) to listen and react to events, without directly referencing one another. This keeps the code flexible and easier to manage. You can check whether an :ref:`Object<class_Object>` has a given signal name using :ref:`Object.has_signal()<class_Object_method_has_signal>`.
 
@@ -185,21 +185,21 @@ When calling :ref:`emit()<class_Signal_method_emit>` or :ref:`Object.emit_signal
 
 .. note::
 
-	使用 C# 操作此 API 時有顯著差異，詳見 :ref:`doc_c_sharp_differences`。
+	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`使用訊號 <../getting_started/step_by_step/signals>`
+- :doc:`Using Signals <../getting_started/step_by_step/signals>`
 
-- `GDScript 基礎 <../tutorials/scripting/gdscript/gdscript_basics.html#signals>`__
+- `GDScript Basics <../tutorials/scripting/gdscript/gdscript_basics.html#signals>`__
 
 .. rst-class:: classref-reftable-group
 
-建構子
-------
+Constructors
+------------
 
 .. table::
    :widths: auto
@@ -214,8 +214,8 @@ When calling :ref:`emit()<class_Signal_method_emit>` or :ref:`Object.emit_signal
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -244,8 +244,8 @@ When calling :ref:`emit()<class_Signal_method_emit>` or :ref:`Object.emit_signal
 
 .. rst-class:: classref-reftable-group
 
-運算子
-------
+Operators
+---------
 
 .. table::
    :widths: auto
@@ -262,8 +262,8 @@ When calling :ref:`emit()<class_Signal_method_emit>` or :ref:`Object.emit_signal
 
 .. rst-class:: classref-descriptions-group
 
-建構子說明
-----------
+Constructor Descriptions
+------------------------
 
 .. _class_Signal_constructor_Signal:
 
@@ -271,7 +271,7 @@ When calling :ref:`emit()<class_Signal_method_emit>` or :ref:`Object.emit_signal
 
 :ref:`Signal<class_Signal>` **Signal**\ (\ ) :ref:`🔗<class_Signal_constructor_Signal>`
 
-建構空的 **Signal**\ ，沒有綁定物件和訊號名稱。
+Constructs an empty **Signal** with no object nor signal name bound.
 
 .. rst-class:: classref-item-separator
 
@@ -281,7 +281,7 @@ When calling :ref:`emit()<class_Signal_method_emit>` or :ref:`Object.emit_signal
 
 :ref:`Signal<class_Signal>` **Signal**\ (\ from\: :ref:`Signal<class_Signal>`\ )
 
-建構給定 **Signal** 的副本。
+Constructs a **Signal** as a copy of the given **Signal**.
 
 .. rst-class:: classref-item-separator
 
@@ -299,8 +299,8 @@ Creates a **Signal** object referencing a signal named ``signal`` in the specifi
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_Signal_method_connect:
 
@@ -332,7 +332,7 @@ A signal can only be connected once to the same :ref:`Callable<class_Callable>`.
 
 |void| **disconnect**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_Signal_method_disconnect>`
 
-將該訊號與給定的 :ref:`Callable<class_Callable>` 斷開連接。如果該連接不存在，則會生成錯誤。請使用 :ref:`is_connected()<class_Signal_method_is_connected>` 來確保連接存在。
+Disconnects this signal from the specified :ref:`Callable<class_Callable>`. If the connection does not exist, generates an error. Use :ref:`is_connected()<class_Signal_method_is_connected>` to make sure that the connection exists.
 
 .. rst-class:: classref-item-separator
 
@@ -344,7 +344,7 @@ A signal can only be connected once to the same :ref:`Callable<class_Callable>`.
 
 |void| **emit**\ (\ ...\ ) |vararg| |const| :ref:`🔗<class_Signal_method_emit>`
 
-發出該訊號。與該訊號相連的所有 :ref:`Callable<class_Callable>` 都將被觸發。此方法支援可變數量的參數，所以參數可以用逗號分隔列表的形式傳遞。
+Emits this signal. All :ref:`Callable<class_Callable>`\ s connected to this signal will be triggered. This method supports a variable number of arguments, so parameters can be passed as a comma separated list.
 
 .. rst-class:: classref-item-separator
 
@@ -356,13 +356,13 @@ A signal can only be connected once to the same :ref:`Callable<class_Callable>`.
 
 :ref:`Array<class_Array>` **get_connections**\ (\ ) |const| :ref:`🔗<class_Signal_method_get_connections>`
 
-返回該訊號的連接 :ref:`Array<class_Array>`\ 。連接用 :ref:`Dictionary<class_Dictionary>` 表示，包含三個條目：
+Returns an :ref:`Array<class_Array>` of connections for this signal. Each connection is represented as a :ref:`Dictionary<class_Dictionary>` that contains three entries:
 
-- ``signal`` 是對此訊號的引用。
+- ``signal`` is a reference to this signal;
 
-- ``callable`` 是對連接的 :ref:`Callable<class_Callable>` 的引用。
+- ``callable`` is a reference to the connected :ref:`Callable<class_Callable>`;
 
-- ``flags`` 是 :ref:`ConnectFlags<enum_Object_ConnectFlags>` 的組合。
+- ``flags`` is a combination of :ref:`ConnectFlags<enum_Object_ConnectFlags>`.
 
 .. rst-class:: classref-item-separator
 
@@ -374,7 +374,7 @@ A signal can only be connected once to the same :ref:`Callable<class_Callable>`.
 
 :ref:`StringName<class_StringName>` **get_name**\ (\ ) |const| :ref:`🔗<class_Signal_method_get_name>`
 
-返回該訊號的名稱。
+Returns the name of this signal.
 
 .. rst-class:: classref-item-separator
 
@@ -386,7 +386,7 @@ A signal can only be connected once to the same :ref:`Callable<class_Callable>`.
 
 :ref:`Object<class_Object>` **get_object**\ (\ ) |const| :ref:`🔗<class_Signal_method_get_object>`
 
-返回發出該訊號的物件。
+Returns the object emitting this signal.
 
 .. rst-class:: classref-item-separator
 
@@ -398,7 +398,7 @@ A signal can only be connected once to the same :ref:`Callable<class_Callable>`.
 
 :ref:`int<class_int>` **get_object_id**\ (\ ) |const| :ref:`🔗<class_Signal_method_get_object_id>`
 
-返回發出該訊號的物件的 ID（見 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`\ ）。
+Returns the ID of the object emitting this signal (see :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`).
 
 .. rst-class:: classref-item-separator
 
@@ -422,7 +422,7 @@ Returns ``true`` if any :ref:`Callable<class_Callable>` is connected to this sig
 
 :ref:`bool<class_bool>` **is_connected**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Signal_method_is_connected>`
 
-如果指定的 :ref:`Callable<class_Callable>` 已連接到此訊號，則返回 ``true``\ 。
+Returns ``true`` if the specified :ref:`Callable<class_Callable>` is connected to this signal.
 
 .. rst-class:: classref-item-separator
 
@@ -442,8 +442,8 @@ Returns ``true`` if this **Signal** has no object and the signal name is empty. 
 
 .. rst-class:: classref-descriptions-group
 
-運算子說明
-----------
+Operator Descriptions
+---------------------
 
 .. _class_Signal_operator_neq_Signal:
 
@@ -451,7 +451,7 @@ Returns ``true`` if this **Signal** has no object and the signal name is empty. 
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Signal<class_Signal>`\ ) :ref:`🔗<class_Signal_operator_neq_Signal>`
 
-如果訊號的物件或名稱不同，則返回 ``true``\ 。
+Returns ``true`` if the signals do not share the same object and name.
 
 .. rst-class:: classref-item-separator
 
@@ -463,14 +463,14 @@ Returns ``true`` if this **Signal** has no object and the signal name is empty. 
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Signal<class_Signal>`\ ) :ref:`🔗<class_Signal_operator_eq_Signal>`
 
-如果訊號的物件和名稱相同，則返回 ``true``\ 。
+Returns ``true`` if both signals share the same object and name.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

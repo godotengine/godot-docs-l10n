@@ -124,17 +124,17 @@ Descriptions des propriétés
 - |void| **set_max_fps**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_fps**\ (\ )
 
-The maximum number of frames that can be rendered every second (FPS). A value of ``0`` means the framerate is uncapped.
+Le nombre maximal d'images qui peuvent être rendues chaque seconde (FPS). Une valeur de ``0`` signifie que le framerate n'est pas limité.
 
-Limiting the FPS can be useful to reduce the host machine's power consumption, which reduces heat, noise emissions, and improves battery life.
+Limiter les FPS peut être utile pour réduire la consommation d'énergie de la machine hôte, ce qui réduit la chaleur, les émissions sonores et améliore la durée de vie de la batterie.
 
-If :ref:`ProjectSettings.display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is **Enabled** or **Adaptive**, the setting takes precedence and the max FPS number cannot exceed the monitor's refresh rate. See also :ref:`DisplayServer.screen_get_refresh_rate()<class_DisplayServer_method_screen_get_refresh_rate>`.
+Si :ref:`ProjectSettings.display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` vaut **Enabled** ou **Adaptive**, le paramètre a priorité et le nombre max de FPS ne peut dépasser le taux de rafraîchissement du moniteur. Voir aussi :ref:`DisplayServer.screen_get_refresh_rate()<class_DisplayServer_method_screen_get_refresh_rate>`.
 
-If :ref:`ProjectSettings.display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is **Enabled**, on monitors with variable refresh rate enabled (G-Sync/FreeSync), using an FPS limit a few frames lower than the monitor's refresh rate will `reduce input lag while avoiding tearing <https://blurbusters.com/howto-low-lag-vsync-on/>`__. At higher refresh rates, the difference between the FPS limit and the monitor refresh rate should be increased to ensure frames to account for timing inaccuracies. The optimal formula for the FPS limit value in this scenario is ``r - (r * r) / 3600.0``, where ``r`` is the monitor's refresh rate.
+Si :ref:`ProjectSettings.display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` vaut **Enabled**, sur les moniteurs à taux de rafraîchissement variable (G-Sync/FreeSync), en utilisant une limite de FPS inférieure de quelques images à la vitesse de rafraîchissement du moniteur `réduit l'imput lag tout en évitant les déchirures <https://blurbusters.com/howto-low-lag-vsync-on/>`__. Sur des taux de rafraîchissement plus élevés, il faudrait accroître la différence entre la limite de FPS et le taux de rafraîchissement du moniteur afin de tenir compte des inexactitudes temporelles. La formule optimale pour la valeur limite des FPS dans ce scénario est ``r - (r * r) / 3600.0``, où ``r`` est le taux de rafraîchissement du moniteur.
 
-\ **Note:** The actual number of frames per second may still be below this value if the CPU or GPU cannot keep up with the project's logic and rendering.
+\ **Note :** Le nombre réel d'images par seconde peut encore être inférieur à cette valeur si le CPU ou le GPU ne peut pas respecter la logique et le rendu du projet.
 
-\ **Note:** If :ref:`ProjectSettings.display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is **Disabled**, limiting the FPS to a high value that can be consistently reached on the system can reduce input lag compared to an uncapped framerate. Since this works by ensuring the GPU load is lower than 100%, this latency reduction is only effective in GPU-bottlenecked scenarios, not CPU-bottlenecked scenarios.
+\ **Note :** Si :ref:`ProjectSettings.display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` vaut **Disabled**, limiter les FPS à une valeur élevée qui peut être constamment atteinte sur le système peut réduire l'imput lag par rapport à un framerate non plafonné. Comme cela fonctionne en veillant à ce que la charge GPU soit inférieure à 100%, cette réduction de latence n'est efficace que dans les scénarios limités par le GPU, et non dans les scénarios limités par le CPU.
 
 .. rst-class:: classref-item-separator
 
@@ -191,15 +191,15 @@ How much physics ticks are synchronized with real time. If ``0`` or less, the ti
 - |void| **set_physics_ticks_per_second**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_physics_ticks_per_second**\ (\ )
 
-The number of fixed iterations per second. This controls how often physics simulation and the :ref:`Node._physics_process()<class_Node_private_method__physics_process>` method are run.
+Le nombre d'itérations fixes par seconde. Cela contrôle combien de fois la simulation physique et la méthode :ref:`Node._physics_process()<class_Node_private_method__physics_process>` sont exécutées. 
 
-CPU usage scales approximately with the physics tick rate. However, at very low tick rates (usually below 30), physics behavior can break down. Input can also become less responsive at low tick rates as there can be a gap between input being registered, and the response on the next physics tick. High tick rates give more accurate physics simulation, particularly for fast moving objects. For example, racing games may benefit from increasing the tick rate above the default 60.
+L'utilisation du processeur augmente linéairement avec le taux de tic physique. Cependant, à des taux de tic très faibles (généralement inférieurs à 30), le comportement physique peut se décomposer. L'entrée peut également devenir moins sensible à des taux de tic faibles car il peut y avoir un écart entre l'entrée étant enregistrée, et la réponse sur la prochaine tic de physique. Des taux de tic élevés donnent une simulation physique plus précise, en particulier pour les objets en mouvement rapide. Par exemple, les jeux de course peuvent bénéficier d'augmenter le taux de tics au-dessus du taux par défaut de 60.
 
-See also :ref:`max_fps<class_Engine_property_max_fps>` and :ref:`ProjectSettings.physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`.
+Voir aussi :ref:`max_fps<class_Engine_property_max_fps>` et :ref:`ProjectSettings.physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`.
 
-\ **Note:** Only :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` physics ticks may be simulated per rendered frame at most. If more physics ticks have to be simulated per rendered frame to keep up with rendering, the project will appear to slow down (even if ``delta`` is used consistently in physics calculations). Therefore, it is recommended to also increase :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` if increasing :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` significantly above its default value.
+\ **Note :** Seul les tics physiques :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` peuvent être simulées par trame visuelle rendue au maximum. Si des tics physiques suplémentaires doivent être simulées pour maintenir le rendu, le projet semblera ralentir (même si ``delta`` est utilisé systématiquement dans les calculs de physique). Par conséquent, il est recommandé d'augmenter :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` si vous augmentez :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` significativement au-dessus de sa valeur par défaut.
 
-\ **Note:** Consider enabling :doc:`physics interpolation <../tutorials/physics/interpolation/index>` if you change :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` to a value that is not a multiple of ``60``. Using physics interpolation will avoid jittering when the monitor refresh rate and physics update rate don't exactly match.
+\ **Note:** Envisager d'activer l':doc:`interpolation de la physique <../tutorials/physics/interpolation/index>` si vous changez :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` à une valeur qui n'est pas multiple de ``60``. L'utilisation de l'interpolation de la physique évitera les déchirements lorsque le taux de rafraîchissement du moniteur et le taux de mise à jour de la physique ne correspondent pas exactement.
 
 .. rst-class:: classref-item-separator
 

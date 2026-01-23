@@ -5,16 +5,16 @@
 AESContext
 ==========
 
-**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-提供对原始数据的 AES 加密/解密的访问。
+Provides access to AES encryption/decryption of raw data.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-这个类存放的是进行 AES（Advanced Encryption Standard，高级加密标准）加解密所需的上下文信息。支持 AES-ECB 和 AES-CBC 两种模式。
+This class holds the context information required for encryption and decryption operations with AES (Advanced Encryption Standard). Both AES-ECB and AES-CBC modes are supported.
 
 
 .. tabs::
@@ -26,29 +26,29 @@ AESContext
     var aes = AESContext.new()
 
     func _ready():
-        var key = "My secret key!!!" # 密钥必须是 16 或 32 字节。
-        var data = "My secret text!!" # 数据大小必须是 16 字节的倍数，需要时添加补白。
-        # ECB 加密
+        var key = "My secret key!!!" # Key must be either 16 or 32 bytes.
+        var data = "My secret text!!" # Data size must be multiple of 16 bytes, apply padding if needed.
+        # Encrypt ECB
         aes.start(AESContext.MODE_ECB_ENCRYPT, key.to_utf8_buffer())
         var encrypted = aes.update(data.to_utf8_buffer())
         aes.finish()
-        # ECB 解密
+        # Decrypt ECB
         aes.start(AESContext.MODE_ECB_DECRYPT, key.to_utf8_buffer())
         var decrypted = aes.update(encrypted)
         aes.finish()
-        # ECB 校验
+        # Check ECB
         assert(decrypted == data.to_utf8_buffer())
 
-        var iv = "My secret iv!!!!" # IV 必须是 16 字节。
-        # CBC 加密
+        var iv = "My secret iv!!!!" # IV must be of exactly 16 bytes.
+        # Encrypt CBC
         aes.start(AESContext.MODE_CBC_ENCRYPT, key.to_utf8_buffer(), iv.to_utf8_buffer())
         encrypted = aes.update(data.to_utf8_buffer())
         aes.finish()
-        # CBC 解密
+        # Decrypt CBC
         aes.start(AESContext.MODE_CBC_DECRYPT, key.to_utf8_buffer(), iv.to_utf8_buffer())
         decrypted = aes.update(encrypted)
         aes.finish()
-        # CBC 校验
+        # Check CBC
         assert(decrypted == data.to_utf8_buffer())
 
  .. code-tab:: csharp
@@ -62,29 +62,29 @@ AESContext
 
         public override void _Ready()
         {
-            string key = "My secret key!!!"; // 密钥必须是 16 或 32 字节。
-            string data = "My secret text!!"; // 数据大小必须是 16 字节的倍数，需要时添加补白。
-            // ECB 加密
+            string key = "My secret key!!!"; // Key must be either 16 or 32 bytes.
+            string data = "My secret text!!"; // Data size must be multiple of 16 bytes, apply padding if needed.
+            // Encrypt ECB
             _aes.Start(AesContext.Mode.EcbEncrypt, key.ToUtf8Buffer());
             byte[] encrypted = _aes.Update(data.ToUtf8Buffer());
             _aes.Finish();
-            // ECB 解密
+            // Decrypt ECB
             _aes.Start(AesContext.Mode.EcbDecrypt, key.ToUtf8Buffer());
             byte[] decrypted = _aes.Update(encrypted);
             _aes.Finish();
-            // ECB 校验
+            // Check ECB
             Debug.Assert(decrypted == data.ToUtf8Buffer());
 
-            string iv = "My secret iv!!!!"; // IV 必须是 16 字节。
-            // CBC 加密
+            string iv = "My secret iv!!!!"; // IV must be of exactly 16 bytes.
+            // Encrypt CBC
             _aes.Start(AesContext.Mode.EcbEncrypt, key.ToUtf8Buffer(), iv.ToUtf8Buffer());
             encrypted = _aes.Update(data.ToUtf8Buffer());
             _aes.Finish();
-            // CBC 解密
+            // Decrypt CBC
             _aes.Start(AesContext.Mode.EcbDecrypt, key.ToUtf8Buffer(), iv.ToUtf8Buffer());
             decrypted = _aes.Update(encrypted);
             _aes.Finish();
-            // CBC 校验
+            // Check CBC
             Debug.Assert(decrypted == data.ToUtf8Buffer());
         }
     }
@@ -93,8 +93,8 @@ AESContext
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -115,8 +115,8 @@ AESContext
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_AESContext_Mode:
 
@@ -130,7 +130,7 @@ enum **Mode**: :ref:`🔗<enum_AESContext_Mode>`
 
 :ref:`Mode<enum_AESContext_Mode>` **MODE_ECB_ENCRYPT** = ``0``
 
-AES 电子密码簿加密模式。
+AES electronic codebook encryption mode.
 
 .. _class_AESContext_constant_MODE_ECB_DECRYPT:
 
@@ -138,7 +138,7 @@ AES 电子密码簿加密模式。
 
 :ref:`Mode<enum_AESContext_Mode>` **MODE_ECB_DECRYPT** = ``1``
 
-AES 电子密码簿解密模式。
+AES electronic codebook decryption mode.
 
 .. _class_AESContext_constant_MODE_CBC_ENCRYPT:
 
@@ -146,7 +146,7 @@ AES 电子密码簿解密模式。
 
 :ref:`Mode<enum_AESContext_Mode>` **MODE_CBC_ENCRYPT** = ``2``
 
-AES 密码块链接加密模式。
+AES cipher block chaining encryption mode.
 
 .. _class_AESContext_constant_MODE_CBC_DECRYPT:
 
@@ -154,7 +154,7 @@ AES 密码块链接加密模式。
 
 :ref:`Mode<enum_AESContext_Mode>` **MODE_CBC_DECRYPT** = ``3``
 
-AES 密码块链接解密模式。
+AES cipher block chaining decryption mode.
 
 .. _class_AESContext_constant_MODE_MAX:
 
@@ -162,7 +162,7 @@ AES 密码块链接解密模式。
 
 :ref:`Mode<enum_AESContext_Mode>` **MODE_MAX** = ``4``
 
-模式列举的最大值。
+Maximum value for the mode enum.
 
 .. rst-class:: classref-section-separator
 
@@ -170,8 +170,8 @@ AES 密码块链接解密模式。
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_AESContext_method_finish:
 
@@ -179,7 +179,7 @@ AES 密码块链接解密模式。
 
 |void| **finish**\ (\ ) :ref:`🔗<class_AESContext_method_finish>`
 
-关闭此 AES 上下文，以便可以再次启动它。见 :ref:`start()<class_AESContext_method_start>`\ 。
+Close this AES context so it can be started again. See :ref:`start()<class_AESContext_method_start>`.
 
 .. rst-class:: classref-item-separator
 
@@ -191,9 +191,9 @@ AES 密码块链接解密模式。
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_iv_state**\ (\ ) :ref:`🔗<class_AESContext_method_get_iv_state>`
 
-获取此上下文的当前 IV 状态（调用 :ref:`update()<class_AESContext_method_update>` 时会更新 IV）。通常不需要此函数。
+Get the current IV state for this context (IV gets updated when calling :ref:`update()<class_AESContext_method_update>`). You normally don't need this function.
 
-\ **注意：**\ 仅当上下文以 :ref:`MODE_CBC_ENCRYPT<class_AESContext_constant_MODE_CBC_ENCRYPT>` 或 :ref:`MODE_CBC_DECRYPT<class_AESContext_constant_MODE_CBC_DECRYPT>` 开头时，此函数才有意义。
+\ **Note:** This function only makes sense when the context is started with :ref:`MODE_CBC_ENCRYPT<class_AESContext_constant_MODE_CBC_ENCRYPT>` or :ref:`MODE_CBC_DECRYPT<class_AESContext_constant_MODE_CBC_DECRYPT>`.
 
 .. rst-class:: classref-item-separator
 
@@ -205,7 +205,7 @@ AES 密码块链接解密模式。
 
 :ref:`Error<enum_@GlobalScope_Error>` **start**\ (\ mode\: :ref:`Mode<enum_AESContext_Mode>`, key\: :ref:`PackedByteArray<class_PackedByteArray>`, iv\: :ref:`PackedByteArray<class_PackedByteArray>` = PackedByteArray()\ ) :ref:`🔗<class_AESContext_method_start>`
 
-在给定的 ``mode`` 中启动 AES 上下文。必须始终提供 16 或 32 字节的 ``key``\ ，而仅当 ``mode`` 为 :ref:`MODE_CBC_ENCRYPT<class_AESContext_constant_MODE_CBC_ENCRYPT>` 或 :ref:`MODE_CBC_DECRYPT<class_AESContext_constant_MODE_CBC_DECRYPT>` 时，才需要正好为 16 字节的 ``iv``\ （初始化向量）。
+Start the AES context in the given ``mode``. A ``key`` of either 16 or 32 bytes must always be provided, while an ``iv`` (initialization vector) of exactly 16 bytes, is only needed when ``mode`` is either :ref:`MODE_CBC_ENCRYPT<class_AESContext_constant_MODE_CBC_ENCRYPT>` or :ref:`MODE_CBC_DECRYPT<class_AESContext_constant_MODE_CBC_DECRYPT>`.
 
 .. rst-class:: classref-item-separator
 
@@ -217,16 +217,16 @@ AES 密码块链接解密模式。
 
 :ref:`PackedByteArray<class_PackedByteArray>` **update**\ (\ src\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_AESContext_method_update>`
 
-运行此 AES 上下文所需的操作。将返回包含加密（或解密）给定 ``src`` 结果的 :ref:`PackedByteArray<class_PackedByteArray>` 。有关操作模式，请参阅 :ref:`start()<class_AESContext_method_start>`\ 。
+Run the desired operation for this AES context. Will return a :ref:`PackedByteArray<class_PackedByteArray>` containing the result of encrypting (or decrypting) the given ``src``. See :ref:`start()<class_AESContext_method_start>` for mode of operation.
 
-\ **注意：**\ ``src`` 的大小必须是 16 倍的倍数。如果需要，应用一些填充。
+\ **Note:** The size of ``src`` must be a multiple of 16. Apply some padding if needed.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -287,7 +287,7 @@ Registers a profiler with the given ``name``. See :ref:`EngineProfiler<class_Eng
 
 |void| **remove_breakpoint**\ (\ line\: :ref:`int<class_int>`, source\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_EngineDebugger_method_remove_breakpoint>`
 
-Removes a breakpoint with the given ``source`` and ``line``.
+Enlève un point d'arrêt en lien avec la ``source`` donnée et la ligne ``line``.
 
 .. rst-class:: classref-item-separator
 

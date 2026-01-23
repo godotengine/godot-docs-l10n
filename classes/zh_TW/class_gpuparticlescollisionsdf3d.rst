@@ -5,31 +5,31 @@
 GPUParticlesCollisionSDF3D
 ==========================
 
-**繼承：** :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-烘焙的有符號距離場 3D 粒子吸引器，影響 :ref:`GPUParticles3D<class_GPUParticles3D>` 節點。
+A baked signed distance field 3D particle collision shape affecting :ref:`GPUParticles3D<class_GPUParticles3D>` nodes.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-烘焙的有符號距離場 3D 粒子吸引器，影響 :ref:`GPUParticles3D<class_GPUParticles3D>` 節點。
+A baked signed distance field 3D particle collision shape affecting :ref:`GPUParticles3D<class_GPUParticles3D>` nodes.
 
-有符號的距離場（SDF）允許有效地表示任何形狀的凸面和凹面物件的近似碰撞形狀。它比 :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>` 更靈活，但需要一個烘焙步驟。
+Signed distance fields (SDF) allow for efficiently representing approximate collision shapes for convex and concave objects of any shape. This is more flexible than :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`, but it requires a baking step.
 
-\ **烘焙：**\ 可以通過在編輯器中選擇 **GPUParticlesCollisionSDF3D** 節點，然後點擊 3D 視口頂部的\ **烘焙 SDF**\ ，來烘焙有符號的距離場紋理。\ :ref:`size<class_GPUParticlesCollisionSDF3D_property_size>` 內的任何\ *可見* :ref:`MeshInstance3D<class_MeshInstance3D>`\ ，無論它們的 :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` 如何，都將被考慮用於烘焙。
+\ **Baking:** The signed distance field texture can be baked by selecting the **GPUParticlesCollisionSDF3D** node in the editor, then clicking **Bake SDF** at the top of the 3D viewport. Any *visible* :ref:`MeshInstance3D<class_MeshInstance3D>`\ s within the :ref:`size<class_GPUParticlesCollisionSDF3D_property_size>` will be taken into account for baking, regardless of their :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>`.
 
-\ **注意：**\ 烘焙 **GPUParticlesCollisionSDF3D** 的 :ref:`texture<class_GPUParticlesCollisionSDF3D_property_texture>` 只能在編輯器中進行，因為沒有公開的烘焙方法可用於匯出的遊戲專案中。但是，在匯出的遊戲項目中，仍然可以將預先烘焙的 :ref:`Texture3D<class_Texture3D>` 載入到 :ref:`texture<class_GPUParticlesCollisionSDF3D_property_texture>` 屬性中。
+\ **Note:** Baking a **GPUParticlesCollisionSDF3D**'s :ref:`texture<class_GPUParticlesCollisionSDF3D_property_texture>` is only possible within the editor, as there is no bake method exposed for use in exported projects. However, it's still possible to load pre-baked :ref:`Texture3D<class_Texture3D>`\ s into its :ref:`texture<class_GPUParticlesCollisionSDF3D_property_texture>` property in an exported project.
 
-\ **注意：**\ 在 :ref:`GPUParticles3D<class_GPUParticles3D>` 的處理材質上，\ :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>` 必須是 :ref:`ParticleProcessMaterial.COLLISION_RIGID<class_ParticleProcessMaterial_constant_COLLISION_RIGID>` 或 :ref:`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT<class_ParticleProcessMaterial_constant_COLLISION_HIDE_ON_CONTACT>`\ ，才能使碰撞生效。
+\ **Note:** :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>` must be :ref:`ParticleProcessMaterial.COLLISION_RIGID<class_ParticleProcessMaterial_constant_COLLISION_RIGID>` or :ref:`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT<class_ParticleProcessMaterial_constant_COLLISION_HIDE_ON_CONTACT>` on the :ref:`GPUParticles3D<class_GPUParticles3D>`'s process material for collision to work.
 
-\ **注意：**\ 粒子碰撞只影響 :ref:`GPUParticles3D<class_GPUParticles3D>`\ ，不影響 :ref:`CPUParticles3D<class_CPUParticles3D>`\ 。
+\ **Note:** Particle collision only affects :ref:`GPUParticles3D<class_GPUParticles3D>`, not :ref:`CPUParticles3D<class_CPUParticles3D>`.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -48,8 +48,8 @@ GPUParticlesCollisionSDF3D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -66,8 +66,8 @@ GPUParticlesCollisionSDF3D
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_GPUParticlesCollisionSDF3D_Resolution:
 
@@ -81,7 +81,7 @@ enum **Resolution**: :ref:`🔗<enum_GPUParticlesCollisionSDF3D_Resolution>`
 
 :ref:`Resolution<enum_GPUParticlesCollisionSDF3D_Resolution>` **RESOLUTION_16** = ``0``
 
-烘焙 16×16×16 的有符號距離場。這是最快的選項，但也是最不精確的。
+Bake a 16×16×16 signed distance field. This is the fastest option, but also the least precise.
 
 .. _class_GPUParticlesCollisionSDF3D_constant_RESOLUTION_32:
 
@@ -89,7 +89,7 @@ enum **Resolution**: :ref:`🔗<enum_GPUParticlesCollisionSDF3D_Resolution>`
 
 :ref:`Resolution<enum_GPUParticlesCollisionSDF3D_Resolution>` **RESOLUTION_32** = ``1``
 
-烘焙 32×32×32 的有符號距離場。
+Bake a 32×32×32 signed distance field.
 
 .. _class_GPUParticlesCollisionSDF3D_constant_RESOLUTION_64:
 
@@ -97,7 +97,7 @@ enum **Resolution**: :ref:`🔗<enum_GPUParticlesCollisionSDF3D_Resolution>`
 
 :ref:`Resolution<enum_GPUParticlesCollisionSDF3D_Resolution>` **RESOLUTION_64** = ``2``
 
-烘焙 64×64×64 的有符號距離場。
+Bake a 64×64×64 signed distance field.
 
 .. _class_GPUParticlesCollisionSDF3D_constant_RESOLUTION_128:
 
@@ -105,7 +105,7 @@ enum **Resolution**: :ref:`🔗<enum_GPUParticlesCollisionSDF3D_Resolution>`
 
 :ref:`Resolution<enum_GPUParticlesCollisionSDF3D_Resolution>` **RESOLUTION_128** = ``3``
 
-烘焙 128×128×128 的有符號距離場。
+Bake a 128×128×128 signed distance field.
 
 .. _class_GPUParticlesCollisionSDF3D_constant_RESOLUTION_256:
 
@@ -113,7 +113,7 @@ enum **Resolution**: :ref:`🔗<enum_GPUParticlesCollisionSDF3D_Resolution>`
 
 :ref:`Resolution<enum_GPUParticlesCollisionSDF3D_Resolution>` **RESOLUTION_256** = ``4``
 
-烘焙 256×256×256 的有符號距離場。
+Bake a 256×256×256 signed distance field.
 
 .. _class_GPUParticlesCollisionSDF3D_constant_RESOLUTION_512:
 
@@ -121,7 +121,7 @@ enum **Resolution**: :ref:`🔗<enum_GPUParticlesCollisionSDF3D_Resolution>`
 
 :ref:`Resolution<enum_GPUParticlesCollisionSDF3D_Resolution>` **RESOLUTION_512** = ``5``
 
-烘焙 512×512×512 的有符號距離場。這是最慢的選項，但也是最精確的。
+Bake a 512×512×512 signed distance field. This is the slowest option, but also the most precise.
 
 .. _class_GPUParticlesCollisionSDF3D_constant_RESOLUTION_MAX:
 
@@ -129,7 +129,7 @@ enum **Resolution**: :ref:`🔗<enum_GPUParticlesCollisionSDF3D_Resolution>`
 
 :ref:`Resolution<enum_GPUParticlesCollisionSDF3D_Resolution>` **RESOLUTION_MAX** = ``6``
 
-代表 :ref:`Resolution<enum_GPUParticlesCollisionSDF3D_Resolution>` 列舉的大小。
+Represents the size of the :ref:`Resolution<enum_GPUParticlesCollisionSDF3D_Resolution>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -137,8 +137,8 @@ enum **Resolution**: :ref:`🔗<enum_GPUParticlesCollisionSDF3D_Resolution>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_GPUParticlesCollisionSDF3D_property_bake_mask:
 
@@ -151,7 +151,7 @@ enum **Resolution**: :ref:`🔗<enum_GPUParticlesCollisionSDF3D_Resolution>`
 - |void| **set_bake_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bake_mask**\ (\ )
 
-烘焙粒子碰撞 SDF 時要考慮的可視層。只有其 :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>` 與該 :ref:`bake_mask<class_GPUParticlesCollisionSDF3D_property_bake_mask>` 配對的 :ref:`MeshInstance3D<class_MeshInstance3D>`\ ，才會被包含在生成的粒子碰撞 SDF 中。預設情況下，粒子碰撞 SDF 烘焙會考慮所有物件。
+The visual layers to account for when baking the particle collision SDF. Only :ref:`MeshInstance3D<class_MeshInstance3D>`\ s whose :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>` match with this :ref:`bake_mask<class_GPUParticlesCollisionSDF3D_property_bake_mask>` will be included in the generated particle collision SDF. By default, all objects are taken into account for the particle collision SDF baking.
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ enum **Resolution**: :ref:`🔗<enum_GPUParticlesCollisionSDF3D_Resolution>`
 - |void| **set_resolution**\ (\ value\: :ref:`Resolution<enum_GPUParticlesCollisionSDF3D_Resolution>`\ )
 - :ref:`Resolution<enum_GPUParticlesCollisionSDF3D_Resolution>` **get_resolution**\ (\ )
 
-用於有符號距離場 :ref:`texture<class_GPUParticlesCollisionSDF3D_property_texture>` 的烘焙解析度。必須再次烘焙紋理，才能使 :ref:`resolution<class_GPUParticlesCollisionSDF3D_property_resolution>` 屬性的更改生效。更高的解析度具有更高的性能成本，並且需要更多的時間來烘焙。更高的解析度還會產生更大的烘焙紋理，從而增加 VRAM 和儲存的空間需求。要提高性能並減少烘焙時間，請為表示碰撞的對象使用盡可能低的解析度。
+The bake resolution to use for the signed distance field :ref:`texture<class_GPUParticlesCollisionSDF3D_property_texture>`. The texture must be baked again for changes to the :ref:`resolution<class_GPUParticlesCollisionSDF3D_property_resolution>` property to be effective. Higher resolutions have a greater performance cost and take more time to bake. Higher resolutions also result in larger baked textures, leading to increased VRAM and storage space requirements. To improve performance and reduce bake times, use the lowest resolution possible for the object you're representing the collision of.
 
 .. rst-class:: classref-item-separator
 
@@ -185,7 +185,7 @@ enum **Resolution**: :ref:`🔗<enum_GPUParticlesCollisionSDF3D_Resolution>`
 - |void| **set_size**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_size**\ (\ )
 
-碰撞 SDF 的大小，單位為 3D 單位。為了提高 SDF 品質，應在能覆蓋需要的場景部分的同時，將 :ref:`size<class_GPUParticlesCollisionSDF3D_property_size>` 設定得盡可能小。
+The collision SDF's size in 3D units. To improve SDF quality, the :ref:`size<class_GPUParticlesCollisionSDF3D_property_size>` should be set as small as possible while covering the parts of the scene you need.
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ enum **Resolution**: :ref:`🔗<enum_GPUParticlesCollisionSDF3D_Resolution>`
 - |void| **set_texture**\ (\ value\: :ref:`Texture3D<class_Texture3D>`\ )
 - :ref:`Texture3D<class_Texture3D>` **get_texture**\ (\ )
 
-代表有符號距離場的 3D 紋理。
+The 3D texture representing the signed distance field.
 
 .. rst-class:: classref-item-separator
 
@@ -219,7 +219,7 @@ enum **Resolution**: :ref:`🔗<enum_GPUParticlesCollisionSDF3D_Resolution>`
 - |void| **set_thickness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_thickness**\ (\ )
 
-碰撞形狀的厚度。與其他粒子碰撞器不同，\ **GPUParticlesCollisionSDF3D** 實際上內部是空心的。可以增加 :ref:`thickness<class_GPUParticlesCollisionSDF3D_property_thickness>`\ ，以防止粒子在高速運動、或者當 **GPUParticlesCollisionSDF3D** 移動時，穿過碰撞形狀。
+The collision shape's thickness. Unlike other particle colliders, **GPUParticlesCollisionSDF3D** is actually hollow on the inside. :ref:`thickness<class_GPUParticlesCollisionSDF3D_property_thickness>` can be increased to prevent particles from tunneling through the collision shape at high speeds, or when the **GPUParticlesCollisionSDF3D** is moved.
 
 .. rst-class:: classref-section-separator
 
@@ -227,8 +227,8 @@ enum **Resolution**: :ref:`🔗<enum_GPUParticlesCollisionSDF3D_Resolution>`
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_GPUParticlesCollisionSDF3D_method_get_bake_mask_value:
 
@@ -236,7 +236,7 @@ enum **Resolution**: :ref:`🔗<enum_GPUParticlesCollisionSDF3D_Resolution>`
 
 :ref:`bool<class_bool>` **get_bake_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GPUParticlesCollisionSDF3D_method_get_bake_mask_value>`
 
-返回是否啟用了 :ref:`bake_mask<class_GPUParticlesCollisionSDF3D_property_bake_mask>` 的指定層，該層由給定的一個介於 1 和 32 之間的 ``layer_number`` 指定。
+Returns whether or not the specified layer of the :ref:`bake_mask<class_GPUParticlesCollisionSDF3D_property_bake_mask>` is enabled, given a ``layer_number`` between 1 and 32.
 
 .. rst-class:: classref-item-separator
 
@@ -248,14 +248,14 @@ enum **Resolution**: :ref:`🔗<enum_GPUParticlesCollisionSDF3D_Resolution>`
 
 |void| **set_bake_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_GPUParticlesCollisionSDF3D_method_set_bake_mask_value>`
 
-基於 ``value``\ ，啟用或禁用 :ref:`bake_mask<class_GPUParticlesCollisionSDF3D_property_bake_mask>` 中的指定層，該層由給定的一個介於 1 和 32 之間的 ``layer_number`` 指定。
+Based on ``value``, enables or disables the specified layer in the :ref:`bake_mask<class_GPUParticlesCollisionSDF3D_property_bake_mask>`, given a ``layer_number`` between 1 and 32.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

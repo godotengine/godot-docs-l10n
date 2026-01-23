@@ -67,13 +67,13 @@ By default, it returns ``false``.
 
 :ref:`Texture2D<class_Texture2D>` **_generate**\ (\ resource\: :ref:`Resource<class_Resource>`, size\: :ref:`Vector2i<class_Vector2i>`, metadata\: :ref:`Dictionary<class_Dictionary>`\ ) |virtual| |required| |const| :ref:`🔗<class_EditorResourcePreviewGenerator_private_method__generate>`
 
-Generate a preview from a given resource with the specified size. This must always be implemented.
+Génère un aperçu d'une ressource donnée avec la taille spécifiée. Cette méthode doit toujours être implémenté.
 
-Returning ``null`` is an OK way to fail and let another generator take care.
+Retourner ``null`` est une bonne façon de signaler un échec et laisser un autre générateur s'occuper de l'aperçu.
 
-Care must be taken because this function is always called from a thread (not the main thread).
+Cette opération nécessite de prendre des précautions car cette fonction est toujours appelée à partir d'un fil d'exécution qui n'est pas le principal.
 
-\ ``metadata`` dictionary can be modified to store file-specific metadata that can be used in :ref:`EditorResourceTooltipPlugin._make_tooltip_for_path()<class_EditorResourceTooltipPlugin_private_method__make_tooltip_for_path>` (like image size, sample length etc.).
+Le dictionnaire ``metadata`` peut être modifié pour stocker des méta-data spécifiques au fichier, qui peuvent être utilisées dans :ref:`EditorResourceTooltipPlugin._make_tooltip_for_path()<class_EditorResourceTooltipPlugin_private_method__make_tooltip_for_path>` (comme la taille des images la longueur d'échantillonnage, etc.).
 
 .. rst-class:: classref-item-separator
 
@@ -85,13 +85,13 @@ Care must be taken because this function is always called from a thread (not the
 
 :ref:`Texture2D<class_Texture2D>` **_generate_from_path**\ (\ path\: :ref:`String<class_String>`, size\: :ref:`Vector2i<class_Vector2i>`, metadata\: :ref:`Dictionary<class_Dictionary>`\ ) |virtual| |const| :ref:`🔗<class_EditorResourcePreviewGenerator_private_method__generate_from_path>`
 
-Generate a preview directly from a path with the specified size. Implementing this is optional, as default code will load and call :ref:`_generate()<class_EditorResourcePreviewGenerator_private_method__generate>`.
+Génère un aperçu directement à partir d'un chemin avec la taille spécifiée. L'implémentation est facultative, car le code par défaut va charger et appeler :ref:`_generate()<class_EditorResourcePreviewGenerator_private_method__generate>`.
 
-Returning ``null`` is an OK way to fail and let another generator take care.
+Retourner ``null`` est une bonne façon de signaler un échec et laisser un autre générateur s'occuper de l'aperçu.
 
-Care must be taken because this function is always called from a thread (not the main thread).
+Cette méthode nécessite de prendre des précautions car cette fonction est toujours appelée à partir d'un fil d'exécution qui n'est pas le principal.
 
-\ ``metadata`` dictionary can be modified to store file-specific metadata that can be used in :ref:`EditorResourceTooltipPlugin._make_tooltip_for_path()<class_EditorResourceTooltipPlugin_private_method__make_tooltip_for_path>` (like image size, sample length etc.).
+Le dictionnaire ``metadata`` peut être modifié pour stocker des méta-datas spécifiques au fichier, pouvant être utilisées dans :ref:`EditorResourceTooltipPlugin._make_tooltip_for_path()<class_EditorResourceTooltipPlugin_private_method__make_tooltip_for_path>` (comme la taille de l'image, la longueur d'échantillonnage etc.).
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ By default, it returns ``false``.
 
 :ref:`bool<class_bool>` **_handles**\ (\ type\: :ref:`String<class_String>`\ ) |virtual| |required| |const| :ref:`🔗<class_EditorResourcePreviewGenerator_private_method__handles>`
 
-Returns ``true`` if your generator supports the resource of type ``type``.
+Retourne ``true`` si votre générateur supporte les ressources du type ``type``.
 
 .. rst-class:: classref-item-separator
 

@@ -5,32 +5,32 @@
 EditorPlugin
 ============
 
-**继承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**派生：** :ref:`GridMapEditorPlugin<class_GridMapEditorPlugin>`
+**Inherited By:** :ref:`GridMapEditorPlugin<class_GridMapEditorPlugin>`
 
-由编辑器使用，用于扩展其功能。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-编辑器使用插件来扩展功能。最常见的插件类型是编辑给定的节点或资源类型的插件、导入插件和导出插件。另见 :ref:`EditorScript<class_EditorScript>`\ ，能够向编辑器添加功能。
-
-\ **注意：**\ 这个类中的部分名称中包含“left”和“right”（例如 :ref:`DOCK_SLOT_LEFT_UL<class_EditorPlugin_constant_DOCK_SLOT_LEFT_UL>`\ ）。这些 API 假设的是从左至右的布局，使用从右至左布局时是反的。保留这些名称是出于兼容的原因。
+Used by the editor to extend its functionality.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`编辑器插件文档索引 <../tutorials/plugins/editor/index>`
+Plugins are used by the editor to extend functionality. The most common types of plugins are those which edit a given node or resource type, import plugins and export plugins. See also :ref:`EditorScript<class_EditorScript>` to add functions to the editor.
+
+\ **Note:** Some names in this class contain "left" or "right" (e.g. :ref:`DOCK_SLOT_LEFT_UL<class_EditorPlugin_constant_DOCK_SLOT_LEFT_UL>`). These APIs assume left-to-right layout, and would be backwards when using right-to-left layout. These names are kept for compatibility reasons.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Editor plugins documentation index <../tutorials/plugins/editor/index>`
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -195,8 +195,8 @@ EditorPlugin
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_EditorPlugin_signal_main_screen_changed:
 
@@ -204,7 +204,7 @@ EditorPlugin
 
 **main_screen_changed**\ (\ screen_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorPlugin_signal_main_screen_changed>`
 
-当用户改变工作空间（\ **2D**\ 、\ **3D**\ 、\ **脚本**\ 、\ **游戏**\ 、\ **资产库**\ ）时发出。也适用于由插件定义的自定义屏幕。
+Emitted when user changes the workspace (**2D**, **3D**, **Script**, **Game**, **AssetLib**). Also works with custom screens defined by plugins.
 
 .. rst-class:: classref-item-separator
 
@@ -216,9 +216,9 @@ EditorPlugin
 
 **project_settings_changed**\ (\ ) :ref:`🔗<class_EditorPlugin_signal_project_settings_changed>`
 
-**已弃用：** Use :ref:`ProjectSettings.settings_changed<class_ProjectSettings_signal_settings_changed>` instead.
+**Deprecated:** Use :ref:`ProjectSettings.settings_changed<class_ProjectSettings_signal_settings_changed>` instead.
 
-当任意项目设置发生改变时触发。
+Emitted when any project setting has changed.
 
 .. rst-class:: classref-item-separator
 
@@ -230,7 +230,7 @@ EditorPlugin
 
 **resource_saved**\ (\ resource\: :ref:`Resource<class_Resource>`\ ) :ref:`🔗<class_EditorPlugin_signal_resource_saved>`
 
-给定的资源 ``resource`` 保存到磁盘时发出。另见 :ref:`scene_saved<class_EditorPlugin_signal_scene_saved>`\ 。
+Emitted when the given ``resource`` was saved on disc. See also :ref:`scene_saved<class_EditorPlugin_signal_scene_saved>`.
 
 .. rst-class:: classref-item-separator
 
@@ -242,7 +242,7 @@ EditorPlugin
 
 **scene_changed**\ (\ scene_root\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_EditorPlugin_signal_scene_changed>`
 
-在编辑器中更改场景时发出。该参数将返回刚刚变为活动状态的场景的根节点。如果此场景是新场景且为空，则参数将为 ``null``\ 。
+Emitted when the scene is changed in the editor. The argument will return the root node of the scene that has just become active. If this scene is new and empty, the argument will be ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -254,7 +254,7 @@ EditorPlugin
 
 **scene_closed**\ (\ filepath\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorPlugin_signal_scene_closed>`
 
-当用户关闭场景时发出。参数是被关闭的场景的文件路径。
+Emitted when user closes a scene. The argument is a file path to the closed scene.
 
 .. rst-class:: classref-item-separator
 
@@ -266,7 +266,7 @@ EditorPlugin
 
 **scene_saved**\ (\ filepath\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorPlugin_signal_scene_saved>`
 
-当场景被保存在磁盘上时发出。参数是被保存的场景的文件路径。另见 :ref:`resource_saved<class_EditorPlugin_signal_resource_saved>`\ 。
+Emitted when a scene was saved on disc. The argument is a file path to the saved scene. See also :ref:`resource_saved<class_EditorPlugin_signal_resource_saved>`.
 
 .. rst-class:: classref-section-separator
 
@@ -274,8 +274,8 @@ EditorPlugin
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_EditorPlugin_CustomControlContainer:
 
@@ -289,7 +289,7 @@ enum **CustomControlContainer**: :ref:`🔗<enum_EditorPlugin_CustomControlConta
 
 :ref:`CustomControlContainer<enum_EditorPlugin_CustomControlContainer>` **CONTAINER_TOOLBAR** = ``0``
 
-主编辑器的工具栏，旁边是运行按钮。
+Main editor toolbar, next to play buttons.
 
 .. _class_EditorPlugin_constant_CONTAINER_SPATIAL_EDITOR_MENU:
 
@@ -297,7 +297,7 @@ enum **CustomControlContainer**: :ref:`🔗<enum_EditorPlugin_CustomControlConta
 
 :ref:`CustomControlContainer<enum_EditorPlugin_CustomControlContainer>` **CONTAINER_SPATIAL_EDITOR_MENU** = ``1``
 
-3D 编辑器处于活动状态时出现的工具栏。
+The toolbar that appears when 3D editor is active.
 
 .. _class_EditorPlugin_constant_CONTAINER_SPATIAL_EDITOR_SIDE_LEFT:
 
@@ -305,7 +305,7 @@ enum **CustomControlContainer**: :ref:`🔗<enum_EditorPlugin_CustomControlConta
 
 :ref:`CustomControlContainer<enum_EditorPlugin_CustomControlContainer>` **CONTAINER_SPATIAL_EDITOR_SIDE_LEFT** = ``2``
 
-3D 编辑器的左侧边栏。
+Left sidebar of the 3D editor.
 
 .. _class_EditorPlugin_constant_CONTAINER_SPATIAL_EDITOR_SIDE_RIGHT:
 
@@ -313,7 +313,7 @@ enum **CustomControlContainer**: :ref:`🔗<enum_EditorPlugin_CustomControlConta
 
 :ref:`CustomControlContainer<enum_EditorPlugin_CustomControlContainer>` **CONTAINER_SPATIAL_EDITOR_SIDE_RIGHT** = ``3``
 
-3D 编辑器的右侧边栏。
+Right sidebar of the 3D editor.
 
 .. _class_EditorPlugin_constant_CONTAINER_SPATIAL_EDITOR_BOTTOM:
 
@@ -321,7 +321,7 @@ enum **CustomControlContainer**: :ref:`🔗<enum_EditorPlugin_CustomControlConta
 
 :ref:`CustomControlContainer<enum_EditorPlugin_CustomControlContainer>` **CONTAINER_SPATIAL_EDITOR_BOTTOM** = ``4``
 
-3D 编辑器的底部面板。
+Bottom panel of the 3D editor.
 
 .. _class_EditorPlugin_constant_CONTAINER_CANVAS_EDITOR_MENU:
 
@@ -329,7 +329,7 @@ enum **CustomControlContainer**: :ref:`🔗<enum_EditorPlugin_CustomControlConta
 
 :ref:`CustomControlContainer<enum_EditorPlugin_CustomControlContainer>` **CONTAINER_CANVAS_EDITOR_MENU** = ``5``
 
-2D 编辑器处于活动状态时出现的工具条。
+The toolbar that appears when 2D editor is active.
 
 .. _class_EditorPlugin_constant_CONTAINER_CANVAS_EDITOR_SIDE_LEFT:
 
@@ -337,7 +337,7 @@ enum **CustomControlContainer**: :ref:`🔗<enum_EditorPlugin_CustomControlConta
 
 :ref:`CustomControlContainer<enum_EditorPlugin_CustomControlContainer>` **CONTAINER_CANVAS_EDITOR_SIDE_LEFT** = ``6``
 
-2D 编辑器的左侧边栏。
+Left sidebar of the 2D editor.
 
 .. _class_EditorPlugin_constant_CONTAINER_CANVAS_EDITOR_SIDE_RIGHT:
 
@@ -345,7 +345,7 @@ enum **CustomControlContainer**: :ref:`🔗<enum_EditorPlugin_CustomControlConta
 
 :ref:`CustomControlContainer<enum_EditorPlugin_CustomControlContainer>` **CONTAINER_CANVAS_EDITOR_SIDE_RIGHT** = ``7``
 
-2D 编辑器的右侧边栏。
+Right sidebar of the 2D editor.
 
 .. _class_EditorPlugin_constant_CONTAINER_CANVAS_EDITOR_BOTTOM:
 
@@ -353,7 +353,7 @@ enum **CustomControlContainer**: :ref:`🔗<enum_EditorPlugin_CustomControlConta
 
 :ref:`CustomControlContainer<enum_EditorPlugin_CustomControlContainer>` **CONTAINER_CANVAS_EDITOR_BOTTOM** = ``8``
 
-2D 编辑器的底部面板。
+Bottom panel of the 2D editor.
 
 .. _class_EditorPlugin_constant_CONTAINER_INSPECTOR_BOTTOM:
 
@@ -361,7 +361,7 @@ enum **CustomControlContainer**: :ref:`🔗<enum_EditorPlugin_CustomControlConta
 
 :ref:`CustomControlContainer<enum_EditorPlugin_CustomControlContainer>` **CONTAINER_INSPECTOR_BOTTOM** = ``9``
 
-检查器的底部。
+Bottom section of the inspector.
 
 .. _class_EditorPlugin_constant_CONTAINER_PROJECT_SETTING_TAB_LEFT:
 
@@ -369,7 +369,7 @@ enum **CustomControlContainer**: :ref:`🔗<enum_EditorPlugin_CustomControlConta
 
 :ref:`CustomControlContainer<enum_EditorPlugin_CustomControlContainer>` **CONTAINER_PROJECT_SETTING_TAB_LEFT** = ``10``
 
-项目设置对话框中的选项卡，在其他选项卡的左侧。
+Tab of Project Settings dialog, to the left of other tabs.
 
 .. _class_EditorPlugin_constant_CONTAINER_PROJECT_SETTING_TAB_RIGHT:
 
@@ -377,7 +377,7 @@ enum **CustomControlContainer**: :ref:`🔗<enum_EditorPlugin_CustomControlConta
 
 :ref:`CustomControlContainer<enum_EditorPlugin_CustomControlContainer>` **CONTAINER_PROJECT_SETTING_TAB_RIGHT** = ``11``
 
-项目设置对话框中的选项卡，在其他选项卡的右侧。
+Tab of Project Settings dialog, to the right of other tabs.
 
 .. rst-class:: classref-item-separator
 
@@ -403,7 +403,7 @@ The dock is closed.
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_LEFT_UL** = ``0``
 
-左侧停靠槽的左上（默认布局中为空）。
+Dock slot, left side, upper-left (empty in default layout).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_LEFT_BL:
 
@@ -411,7 +411,7 @@ The dock is closed.
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_LEFT_BL** = ``1``
 
-左侧停靠槽的左下（默认布局中为空）。
+Dock slot, left side, bottom-left (empty in default layout).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_LEFT_UR:
 
@@ -419,7 +419,7 @@ The dock is closed.
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_LEFT_UR** = ``2``
 
-左侧停靠槽的右上（默认布局中为“场景”和“导入”面板）。
+Dock slot, left side, upper-right (in default layout includes Scene and Import docks).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_LEFT_BR:
 
@@ -427,7 +427,7 @@ The dock is closed.
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_LEFT_BR** = ``3``
 
-左侧停靠槽的右下（默认布局中为“文件系统”面板）。
+Dock slot, left side, bottom-right (in default layout includes FileSystem dock).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_RIGHT_UL:
 
@@ -435,7 +435,7 @@ The dock is closed.
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_RIGHT_UL** = ``4``
 
-右侧停靠槽的左上（默认布局中为“检查器”“节点”以及“历史”面板）。
+Dock slot, right side, upper-left (in default layout includes Inspector, Node, and History docks).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_RIGHT_BL:
 
@@ -443,7 +443,7 @@ The dock is closed.
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_RIGHT_BL** = ``5``
 
-右侧停靠槽的左下（默认布局中为空）。
+Dock slot, right side, bottom-left (empty in default layout).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_RIGHT_UR:
 
@@ -451,7 +451,7 @@ The dock is closed.
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_RIGHT_UR** = ``6``
 
-右侧停靠槽的右上（默认布局中为空）。
+Dock slot, right side, upper-right (empty in default layout).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_RIGHT_BR:
 
@@ -459,7 +459,7 @@ The dock is closed.
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_RIGHT_BR** = ``7``
 
-右侧停靠槽的右下（默认布局中为空）。
+Dock slot, right side, bottom-right (empty in default layout).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_BOTTOM:
 
@@ -475,7 +475,7 @@ Bottom panel.
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_MAX** = ``9``
 
-代表 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` 枚举的大小。
+Represents the size of the :ref:`DockSlot<enum_EditorPlugin_DockSlot>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -493,7 +493,7 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`AfterGUIInput<enum_EditorPlugin_AfterGUIInput>` **AFTER_GUI_INPUT_PASS** = ``0``
 
-将该 :ref:`InputEvent<class_InputEvent>` 转发给其他 EditorPlugin。
+Forwards the :ref:`InputEvent<class_InputEvent>` to other EditorPlugins.
 
 .. _class_EditorPlugin_constant_AFTER_GUI_INPUT_STOP:
 
@@ -501,7 +501,7 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`AfterGUIInput<enum_EditorPlugin_AfterGUIInput>` **AFTER_GUI_INPUT_STOP** = ``1``
 
-阻止该 :ref:`InputEvent<class_InputEvent>` 到达其他 Editor 类。
+Prevents the :ref:`InputEvent<class_InputEvent>` from reaching other Editor classes.
 
 .. _class_EditorPlugin_constant_AFTER_GUI_INPUT_CUSTOM:
 
@@ -509,7 +509,7 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`AfterGUIInput<enum_EditorPlugin_AfterGUIInput>` **AFTER_GUI_INPUT_CUSTOM** = ``2``
 
-将该 :ref:`InputEvent<class_InputEvent>` 传递给除主 :ref:`Node3D<class_Node3D>` 插件之外的其他编辑器插件。这可用于防止节点选择更改并且改为使用子小工具。
+Pass the :ref:`InputEvent<class_InputEvent>` to other editor plugins except the main :ref:`Node3D<class_Node3D>` one. This can be used to prevent node selection changes and work with sub-gizmos instead.
 
 .. rst-class:: classref-section-separator
 
@@ -517,8 +517,8 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_EditorPlugin_private_method__apply_changes:
 
@@ -526,9 +526,9 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 |void| **_apply_changes**\ (\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__apply_changes>`
 
-当编辑器将要进行保存项目、切换选项卡等操作时，将调用该方法。它要求插件应用所有暂挂的状态更改以确保一致性。
+This method is called when the editor is about to save the project, switch to another tab, etc. It asks the plugin to apply any pending state changes to ensure consistency.
 
-例如，在着色器编辑器中使用它来使插件将用户编写的着色代码应用于对象。
+This is used, for example, in shader editors to let the plugin know that it must apply the shader code being written by the user to the object.
 
 .. rst-class:: classref-item-separator
 
@@ -540,9 +540,9 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`bool<class_bool>` **_build**\ (\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__build>`
 
-该方法在编辑器即将运行项目时被调用。这样，插件可以在项目运行之前，执行所需的操作。
+This method is called when the editor is about to run the project. The plugin can then perform required operations before the project runs.
 
-该方法必须返回一个布尔值。如果该方法返回 ``false``\ ，则项目将不会运行。运行会立即中止，因此这也会阻止运行所有其他插件的 :ref:`_build()<class_EditorPlugin_private_method__build>` 方法。
+This method must return a boolean. If this method returns ``false``, the project will not run. The run is aborted immediately, so this also prevents all other plugins' :ref:`_build()<class_EditorPlugin_private_method__build>` methods from running.
 
 .. rst-class:: classref-item-separator
 
@@ -554,7 +554,7 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 |void| **_clear**\ (\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__clear>`
 
-清除所有状态，并将正在编辑的对象重置为零。这可确保你的插件不会继续编辑当前存在的节点或来自错误场景的节点。
+Clear all the state and reset the object being edited to zero. This ensures your plugin does not keep editing a currently existing node, or a node from the wrong scene.
 
 .. rst-class:: classref-item-separator
 
@@ -566,7 +566,7 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 |void| **_disable_plugin**\ (\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__disable_plugin>`
 
-当用户在项目设置窗口的插件选项卡中禁用 **EditorPlugin** 时，由引擎调用。
+Called by the engine when the user disables the **EditorPlugin** in the Plugin tab of the project settings window.
 
 .. rst-class:: classref-item-separator
 
@@ -578,9 +578,9 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 |void| **_edit**\ (\ object\: :ref:`Object<class_Object>`\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__edit>`
 
-该函数用于编辑特定对象类型（节点或资源）的插件。它请求编辑器编辑给定的对象。
+This function is used for plugins that edit specific object types (nodes or resources). It requests the editor to edit the given object.
 
-如果该插件刚刚正在编辑一个对象，且它不想再处理任何选定的对象，则 ``object`` 可以为 ``null``\ 。这可用于清理编辑状态。
+\ ``object`` can be ``null`` if the plugin was editing an object, but there is no longer any selected object handled by this plugin. It can be used to cleanup editing state.
 
 .. rst-class:: classref-item-separator
 
@@ -592,7 +592,7 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 |void| **_enable_plugin**\ (\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__enable_plugin>`
 
-当用户在项目设置窗口的插件选项卡中启用该 **EditorPlugin** 时，由引擎调用。
+Called by the engine when the user enables the **EditorPlugin** in the Plugin tab of the project settings window.
 
 .. rst-class:: classref-item-separator
 
@@ -604,7 +604,7 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 |void| **_forward_3d_draw_over_viewport**\ (\ viewport_control\: :ref:`Control<class_Control>`\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__forward_3d_draw_over_viewport>`
 
-当 3D 编辑器的视口更新时由引擎调用。\ ``viewport_control`` 覆盖在视口上方，可以用于绘制。可以通过调用 :ref:`update_overlays()<class_EditorPlugin_method_update_overlays>` 手动更新该视口。
+Called by the engine when the 3D editor's viewport is updated. ``viewport_control`` is an overlay on top of the viewport and it can be used for drawing. You can update the viewport manually by calling :ref:`update_overlays()<class_EditorPlugin_method_update_overlays>`.
 
 
 .. tabs::
@@ -612,12 +612,12 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
  .. code-tab:: gdscript
 
     func _forward_3d_draw_over_viewport(overlay):
-        # 在光标位置画一个圆。
+        # Draw a circle at the cursor's position.
         overlay.draw_circle(overlay.get_local_mouse_position(), 64, Color.WHITE)
 
     func _forward_3d_gui_input(camera, event):
         if event is InputEventMouseMotion:
-            # 当光标被移动时，重绘视口。
+            # Redraw the viewport when the cursor is moved.
             update_overlays()
             return EditorPlugin.AFTER_GUI_INPUT_STOP
         return EditorPlugin.AFTER_GUI_INPUT_PASS
@@ -626,7 +626,7 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
     public override void _Forward3DDrawOverViewport(Control viewportControl)
     {
-        // 在光标位置画一个圆。
+        // Draw a circle at the cursor's position.
         viewportControl.DrawCircle(viewportControl.GetLocalMousePosition(), 64, Colors.White);
     }
 
@@ -634,7 +634,7 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
     {
         if (@event is InputEventMouseMotion)
         {
-            // 当光标被移动时，重绘视口。
+            // Redraw the viewport when the cursor is moved.
             UpdateOverlays();
             return EditorPlugin.AfterGuiInput.Stop;
         }
@@ -653,9 +653,9 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 |void| **_forward_3d_force_draw_over_viewport**\ (\ viewport_control\: :ref:`Control<class_Control>`\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__forward_3d_force_draw_over_viewport>`
 
-该方法与 :ref:`_forward_3d_draw_over_viewport()<class_EditorPlugin_private_method__forward_3d_draw_over_viewport>` 相同，只是它绘制在所有内容之上。当需要一个显示在其他任何内容之上的额外图层时很有用。
+This method is the same as :ref:`_forward_3d_draw_over_viewport()<class_EditorPlugin_private_method__forward_3d_draw_over_viewport>`, except it draws on top of everything. Useful when you need an extra layer that shows over anything else.
 
-需要使用 :ref:`set_force_draw_over_forwarding_enabled()<class_EditorPlugin_method_set_force_draw_over_forwarding_enabled>` 来启用该方法的调用。
+You need to enable calling of this method by using :ref:`set_force_draw_over_forwarding_enabled()<class_EditorPlugin_method_set_force_draw_over_forwarding_enabled>`.
 
 .. rst-class:: classref-item-separator
 
@@ -667,20 +667,20 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`int<class_int>` **_forward_3d_gui_input**\ (\ viewport_camera\: :ref:`Camera3D<class_Camera3D>`, event\: :ref:`InputEvent<class_InputEvent>`\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__forward_3d_gui_input>`
 
-在当前编辑的场景中有根节点时调用，实现 :ref:`_handles()<class_EditorPlugin_private_method__handles>` 并在 3D 视口中产生 :ref:`InputEvent<class_InputEvent>`\ 。返回值决定 :ref:`InputEvent<class_InputEvent>` 是被消费还是被转发给其他 **EditorPlugin**\ 。有关选项，请参阅 :ref:`AfterGUIInput<enum_EditorPlugin_AfterGUIInput>`\ 。
+Called when there is a root node in the current edited scene, :ref:`_handles()<class_EditorPlugin_private_method__handles>` is implemented, and an :ref:`InputEvent<class_InputEvent>` happens in the 3D viewport. The return value decides whether the :ref:`InputEvent<class_InputEvent>` is consumed or forwarded to other **EditorPlugin**\ s. See :ref:`AfterGUIInput<enum_EditorPlugin_AfterGUIInput>` for options.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # 阻止 InputEvent 到达其他编辑类。
+    # Prevents the InputEvent from reaching other Editor classes.
     func _forward_3d_gui_input(camera, event):
         return EditorPlugin.AFTER_GUI_INPUT_STOP
 
  .. code-tab:: csharp
 
-    // 阻止 InputEvent 到达其他编辑类。
+    // Prevents the InputEvent from reaching other Editor classes.
     public override EditorPlugin.AfterGuiInput _Forward3DGuiInput(Camera3D camera, InputEvent @event)
     {
         return EditorPlugin.AfterGuiInput.Stop;
@@ -688,20 +688,20 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 
 
-该方法返回 :ref:`AFTER_GUI_INPUT_PASS<class_EditorPlugin_constant_AFTER_GUI_INPUT_PASS>` 才能将 :ref:`InputEvent<class_InputEvent>` 转发给其他编辑器类。
+This method must return :ref:`AFTER_GUI_INPUT_PASS<class_EditorPlugin_constant_AFTER_GUI_INPUT_PASS>` in order to forward the :ref:`InputEvent<class_InputEvent>` to other Editor classes.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # 消耗 InputEventMouseMotion 并转发其他 InputEvent 类型。
+    # Consumes InputEventMouseMotion and forwards other InputEvent types.
     func _forward_3d_gui_input(camera, event):
         return EditorPlugin.AFTER_GUI_INPUT_STOP if event is InputEventMouseMotion else EditorPlugin.AFTER_GUI_INPUT_PASS
 
  .. code-tab:: csharp
 
-    // 消耗 InputEventMouseMotion 并转发其他 InputEvent 类型。
+    // Consumes InputEventMouseMotion and forwards other InputEvent types.
     public override EditorPlugin.AfterGuiInput _Forward3DGuiInput(Camera3D camera, InputEvent @event)
     {
         return @event is InputEventMouseMotion ? EditorPlugin.AfterGuiInput.Stop : EditorPlugin.AfterGuiInput.Pass;
@@ -719,7 +719,7 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 |void| **_forward_canvas_draw_over_viewport**\ (\ viewport_control\: :ref:`Control<class_Control>`\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__forward_canvas_draw_over_viewport>`
 
-当 2D 编辑器的视口更新时由引擎调用。\ ``viewport_control`` 覆盖在视口上方，可以用于绘制。可以通过调用 :ref:`update_overlays()<class_EditorPlugin_method_update_overlays>` 手动更新该视口。
+Called by the engine when the 2D editor's viewport is updated. ``viewport_control`` is an overlay on top of the viewport and it can be used for drawing. You can update the viewport manually by calling :ref:`update_overlays()<class_EditorPlugin_method_update_overlays>`.
 
 
 .. tabs::
@@ -727,12 +727,12 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
  .. code-tab:: gdscript
 
     func _forward_canvas_draw_over_viewport(overlay):
-        # 在光标位置画一个圆。
+        # Draw a circle at the cursor's position.
         overlay.draw_circle(overlay.get_local_mouse_position(), 64, Color.WHITE)
 
     func _forward_canvas_gui_input(event):
         if event is InputEventMouseMotion:
-            # 当光标被移动时，重绘视口。
+            # Redraw the viewport when the cursor is moved.
             update_overlays()
             return true
         return false
@@ -741,7 +741,7 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
     public override void _ForwardCanvasDrawOverViewport(Control viewportControl)
     {
-        // 在光标位置画一个圆。
+        // Draw a circle at the cursor's position.
         viewportControl.DrawCircle(viewportControl.GetLocalMousePosition(), 64, Colors.White);
     }
 
@@ -749,7 +749,7 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
     {
         if (@event is InputEventMouseMotion)
         {
-            // 当光标被移动时，重绘视口。
+            // Redraw the viewport when the cursor is moved.
             UpdateOverlays();
             return true;
         }
@@ -768,9 +768,9 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 |void| **_forward_canvas_force_draw_over_viewport**\ (\ viewport_control\: :ref:`Control<class_Control>`\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__forward_canvas_force_draw_over_viewport>`
 
-该方法与 :ref:`_forward_canvas_draw_over_viewport()<class_EditorPlugin_private_method__forward_canvas_draw_over_viewport>` 相同，只是它绘制在所有内容之上。当需要一个显示在其他任何内容之上的额外图层时很有用。
+This method is the same as :ref:`_forward_canvas_draw_over_viewport()<class_EditorPlugin_private_method__forward_canvas_draw_over_viewport>`, except it draws on top of everything. Useful when you need an extra layer that shows over anything else.
 
-需要使用 :ref:`set_force_draw_over_forwarding_enabled()<class_EditorPlugin_method_set_force_draw_over_forwarding_enabled>` 来启用该方法的调用。
+You need to enable calling of this method by using :ref:`set_force_draw_over_forwarding_enabled()<class_EditorPlugin_method_set_force_draw_over_forwarding_enabled>`.
 
 .. rst-class:: classref-item-separator
 
@@ -782,20 +782,20 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`bool<class_bool>` **_forward_canvas_gui_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__forward_canvas_gui_input>`
 
-在当前编辑的场景中有根节点时调用，实现 :ref:`_handles()<class_EditorPlugin_private_method__handles>` 并在 2D 视口中产生 :ref:`InputEvent<class_InputEvent>`\ 。如果该方法返回 ``true``\ ，则 **EditorPlugin** 会拦截 ``event``\ ，否则 ``event`` 会转发给其他编辑器类。
+Called when there is a root node in the current edited scene, :ref:`_handles()<class_EditorPlugin_private_method__handles>` is implemented, and an :ref:`InputEvent<class_InputEvent>` happens in the 2D viewport. If this method returns ``true``, ``event`` is intercepted by this **EditorPlugin**, otherwise ``event`` is forwarded to other Editor classes.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # 阻止 InputEvent 到达其他编辑类。
+    # Prevents the InputEvent from reaching other Editor classes.
     func _forward_canvas_gui_input(event):
         return true
 
  .. code-tab:: csharp
 
-    // 阻止 InputEvent 到达其他编辑类。
+    // Prevents the InputEvent from reaching other Editor classes.
     public override bool ForwardCanvasGuiInput(InputEvent @event)
     {
         return true;
@@ -803,14 +803,14 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 
 
-该方法返回 ``false`` 才能将 :ref:`InputEvent<class_InputEvent>` 转发到其他编辑器类。
+This method must return ``false`` in order to forward the :ref:`InputEvent<class_InputEvent>` to other Editor classes.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # 消耗 InputEventMouseMotion 并转发其他 InputEvent 类型。
+    # Consumes InputEventMouseMotion and forwards other InputEvent types.
     func _forward_canvas_gui_input(event):
         if (event is InputEventMouseMotion):
             return true
@@ -818,7 +818,7 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
  .. code-tab:: csharp
 
-    // 消耗 InputEventMouseMotion 并转发其他 InputEvent 类型。
+    // Consumes InputEventMouseMotion and forwards other InputEvent types.
     public override bool _ForwardCanvasGuiInput(InputEvent @event)
     {
         if (@event is InputEventMouseMotion)
@@ -840,7 +840,7 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_breakpoints**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__get_breakpoints>`
 
-该函数用于编辑基于脚本的对象的编辑器。可以返回格式为（\ ``script:line``\ ）的断点的列表，例如：\ ``res://path_to_script.gd:25``\ 。
+This is for editors that edit script-based objects. You can return a list of breakpoints in the format (``script:line``), for example: ``res://path_to_script.gd:25``.
 
 .. rst-class:: classref-item-separator
 
@@ -852,11 +852,11 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`Texture2D<class_Texture2D>` **_get_plugin_icon**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__get_plugin_icon>`
 
-在插件中覆盖该方法，返回插件图标的 :ref:`Texture2D<class_Texture2D>`\ 。
+Override this method in your plugin to return a :ref:`Texture2D<class_Texture2D>` in order to give it an icon.
 
-对于主界面插件而言，图标出现在屏幕顶部，在“2D”“3D”“脚本”“游戏”“资产库”按钮的右侧。
+For main screen plugins, this appears at the top of the screen, to the right of the "2D", "3D", "Script", "Game", and "AssetLib" buttons.
 
-理想情况下，插件图标应为透明背景的白色，大小为 16×16 像素。
+Ideally, the plugin icon should be white with a transparent background and 16×16 pixels in size.
 
 
 .. tabs::
@@ -864,18 +864,18 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
  .. code-tab:: gdscript
 
     func _get_plugin_icon():
-        # 你可以使用自定义的图标：
+        # You can use a custom icon:
         return preload("res://addons/my_plugin/my_plugin_icon.svg")
-        # 或者使用内置的图标：
+        # Or use a built-in icon:
         return EditorInterface.get_editor_theme().get_icon("Node", "EditorIcons")
 
  .. code-tab:: csharp
 
     public override Texture2D _GetPluginIcon()
     {
-        // 你可以使用自定义的图标：
+        // You can use a custom icon:
         return ResourceLoader.Load<Texture2D>("res://addons/my_plugin/my_plugin_icon.svg");
-        // 或者使用内置的图标：
+        // Or use a built-in icon:
         return EditorInterface.Singleton.GetEditorTheme().GetIcon("Node", "EditorIcons");
     }
 
@@ -891,9 +891,9 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`String<class_String>` **_get_plugin_name**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__get_plugin_name>`
 
-在插件中覆盖该方法，提供在 Godot 编辑器中显示时的名称。
+Override this method in your plugin to provide the name of the plugin when displayed in the Godot editor.
 
-对于主屏幕插件，它显示在屏幕顶部，在“2D”“3D”“脚本”“游戏”“资产库”按钮的右侧。
+For main screen plugins, this appears at the top of the screen, to the right of the "2D", "3D", "Script", "Game", and "AssetLib" buttons.
 
 .. rst-class:: classref-item-separator
 
@@ -905,13 +905,13 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`Dictionary<class_Dictionary>` **_get_state**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__get_state>`
 
-覆盖该方法，以提供要保存的状态数据，如视图位置、网格设置、折叠等。这可用于保存场景（再次打开时，保持状态）和切换选项卡（ 选项卡返回时，可以恢复状态）。每个场景的数据会自动被保存在编辑器元数据文件夹中的 ``editstate`` 文件中。如果想为插件存储全局的（独立于场景的）编辑器数据，可以改用 :ref:`_get_window_layout()<class_EditorPlugin_private_method__get_window_layout>`\ 。
+Override this method to provide a state data you want to be saved, like view position, grid settings, folding, etc. This is used when saving the scene (so state is kept when opening it again) and for switching tabs (so state can be restored when the tab returns). This data is automatically saved for each scene in an ``editstate`` file in the editor metadata folder. If you want to store global (scene-independent) editor data for your plugin, you can use :ref:`_get_window_layout()<class_EditorPlugin_private_method__get_window_layout>` instead.
 
-使用 :ref:`_set_state()<class_EditorPlugin_private_method__set_state>` 恢复保存的状态。
+Use :ref:`_set_state()<class_EditorPlugin_private_method__set_state>` to restore your saved state.
 
-\ **注意：**\ 此方法不应该用于保存应随项目保留的重要设置。
+\ **Note:** This method should not be used to save important settings that should persist with the project.
 
-\ **注意：**\ 必须实现 :ref:`_get_plugin_name()<class_EditorPlugin_private_method__get_plugin_name>`\ ，才能正确存储和恢复状态。
+\ **Note:** You must implement :ref:`_get_plugin_name()<class_EditorPlugin_private_method__get_plugin_name>` for the state to be stored and restored correctly.
 
 ::
 
@@ -929,11 +929,11 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`String<class_String>` **_get_unsaved_status**\ (\ for_scene\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__get_unsaved_status>`
 
-覆盖该方法以提供列出未保存更改的自定义消息。编辑器将在退出或关闭场景时调用该方法，并在确认对话框中显示返回的字符串。如果该插件没有未保存的更改，则返回空字符串。
+Override this method to provide a custom message that lists unsaved changes. The editor will call this method when exiting or when closing a scene, and display the returned string in a confirmation dialog. Return empty string if the plugin has no unsaved changes.
 
-关闭场景时，\ ``for_scene`` 是正在关闭的场景的路径。你可以使用它来处理该场景中的内置资源。
+When closing a scene, ``for_scene`` is the path to the scene being closed. You can use it to handle built-in resources in that scene.
 
-如果用户确认保存，将在关闭编辑器之前将调用 :ref:`_save_external_data()<class_EditorPlugin_private_method__save_external_data>`\ 。
+If the user confirms saving, :ref:`_save_external_data()<class_EditorPlugin_private_method__save_external_data>` will be called, before closing the editor.
 
 ::
 
@@ -949,7 +949,7 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
     func _save_external_data():
         unsaved = false
 
-如果该插件没有特定于场景的更改，则可以在关闭场景时忽略这些调用：
+If the plugin has no scene-specific changes, you can ignore the calls when closing scenes:
 
 ::
 
@@ -967,9 +967,9 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 |void| **_get_window_layout**\ (\ configuration\: :ref:`ConfigFile<class_ConfigFile>`\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__get_window_layout>`
 
-覆盖该方法，以提供该插件的 GUI 布局、或想要存储的任何其他数据。这用于在调用 :ref:`queue_save_layout()<class_EditorPlugin_method_queue_save_layout>` 或更改编辑器布局（例如更改停靠面板的位置）时，保存项目的编辑器布局。数据被存储在编辑器元数据目录中的 ``editor_layout.cfg`` 文件中。
+Override this method to provide the GUI layout of the plugin or any other data you want to be stored. This is used to save the project's editor layout when :ref:`queue_save_layout()<class_EditorPlugin_method_queue_save_layout>` is called or the editor layout was changed (for example changing the position of a dock). The data is stored in the ``editor_layout.cfg`` file in the editor metadata directory.
 
-使用 :ref:`_set_window_layout()<class_EditorPlugin_private_method__set_window_layout>` 恢复保存的布局。
+Use :ref:`_set_window_layout()<class_EditorPlugin_private_method__set_window_layout>` to restore your saved layout.
 
 ::
 
@@ -987,9 +987,9 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`bool<class_bool>` **_handles**\ (\ object\: :ref:`Object<class_Object>`\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__handles>`
 
-如果插件会编辑特定类型的对象（资源或节点），则请实现该函数。如果返回 ``true``\ ，则将在编辑器请求时，调用函数 :ref:`_edit()<class_EditorPlugin_private_method__edit>` 和 :ref:`_make_visible()<class_EditorPlugin_private_method__make_visible>`\ 。如果已经声明了方法 :ref:`_forward_canvas_gui_input()<class_EditorPlugin_private_method__forward_canvas_gui_input>` 和 :ref:`_forward_3d_gui_input()<class_EditorPlugin_private_method__forward_3d_gui_input>`\ ，则它们也会被调用。
+Implement this function if your plugin edits a specific type of object (Resource or Node). If you return ``true``, then you will get the functions :ref:`_edit()<class_EditorPlugin_private_method__edit>` and :ref:`_make_visible()<class_EditorPlugin_private_method__make_visible>` called when the editor requests them. If you have declared the methods :ref:`_forward_canvas_gui_input()<class_EditorPlugin_private_method__forward_canvas_gui_input>` and :ref:`_forward_3d_gui_input()<class_EditorPlugin_private_method__forward_3d_gui_input>` these will be called too.
 
-\ **注意：**\ 每个插件一次只应处理一种类型的对象。如果一个插件处理多种类型的对象并且同时编辑这些对象，则会导致错误。
+\ **Note:** Each plugin should handle only one type of objects at a time. If a plugin handles more types of objects and they are edited at the same time, it will result in errors.
 
 .. rst-class:: classref-item-separator
 
@@ -1001,11 +1001,11 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`bool<class_bool>` **_has_main_screen**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__has_main_screen>`
 
-如果这是主屏幕编辑器插件，则返回 ``true``\ （它与 **2D**\ 、\ **3D**\ 、\ **脚本**\ 、\ **游戏**\ 、\ **资产库**\ 一起进入工作区选择器）。
+Returns ``true`` if this is a main screen editor plugin (it goes in the workspace selector together with **2D**, **3D**, **Script**, **Game**, and **AssetLib**).
 
-当该插件的工作区被选中时，其他主屏幕插件将被隐藏，但你的插件不会自动出现。它需要被添加为 :ref:`EditorInterface.get_editor_main_screen()<class_EditorInterface_method_get_editor_main_screen>` 的子节点，并在 :ref:`_make_visible()<class_EditorPlugin_private_method__make_visible>` 中使其可见。
+When the plugin's workspace is selected, other main screen plugins will be hidden, but your plugin will not appear automatically. It needs to be added as a child of :ref:`EditorInterface.get_editor_main_screen()<class_EditorInterface_method_get_editor_main_screen>` and made visible inside :ref:`_make_visible()<class_EditorPlugin_private_method__make_visible>`.
 
-使用 :ref:`_get_plugin_name()<class_EditorPlugin_private_method__get_plugin_name>` 和 :ref:`_get_plugin_icon()<class_EditorPlugin_private_method__get_plugin_icon>` 自定义插件按钮的外观。
+Use :ref:`_get_plugin_name()<class_EditorPlugin_private_method__get_plugin_name>` and :ref:`_get_plugin_icon()<class_EditorPlugin_private_method__get_plugin_icon>` to customize the plugin button's appearance.
 
 ::
 
@@ -1038,9 +1038,9 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 |void| **_make_visible**\ (\ visible\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__make_visible>`
 
-当编辑器被要求变为可见时，该函数将被调用。它用于编辑特定对象类型的插件。
+This function will be called when the editor is requested to become visible. It is used for plugins that edit a specific object type.
 
-请记住，你必须手动管理所有编辑器控件的可见性。
+Remember that you have to manage the visibility of all your editor controls manually.
 
 .. rst-class:: classref-item-separator
 
@@ -1072,7 +1072,7 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **_save_external_data**\ (\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__save_external_data>`
 
-这个方法在编辑器保存项目后或关闭项目时被调用，它要求插件保存编辑的外部场景/资源。
+This method is called after the editor saves the project or when it's closed. It asks the plugin to save edited external scenes/resources.
 
 .. rst-class:: classref-item-separator
 
@@ -1084,9 +1084,9 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **_set_state**\ (\ state\: :ref:`Dictionary<class_Dictionary>`\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__set_state>`
 
-恢复用 :ref:`_get_state()<class_EditorPlugin_private_method__get_state>` 保存的状态。这个方法会在编辑器的当前场景选项卡发生改变时调用。
+Restore the state saved by :ref:`_get_state()<class_EditorPlugin_private_method__get_state>`. This method is called when the current scene tab is changed in the editor.
 
-\ **注意：**\ 你的插件必须实现 :ref:`_get_plugin_name()<class_EditorPlugin_private_method__get_plugin_name>`\ ，否则无法被识别，这个方法也不会被调用。
+\ **Note:** Your plugin must implement :ref:`_get_plugin_name()<class_EditorPlugin_private_method__get_plugin_name>`, otherwise it will not be recognized and this method will not be called.
 
 ::
 
@@ -1104,7 +1104,7 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **_set_window_layout**\ (\ configuration\: :ref:`ConfigFile<class_ConfigFile>`\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__set_window_layout>`
 
-恢复用 :ref:`_get_window_layout()<class_EditorPlugin_private_method__get_window_layout>` 保存的插件 GUI 布局和数据。编辑器启动时会调用每个插件的这个方法。请使用提供的 ``configuration`` 文件读取你保存的数据。
+Restore the plugin GUI layout and data saved by :ref:`_get_window_layout()<class_EditorPlugin_private_method__get_window_layout>`. This method is called for every plugin on editor startup. Use the provided ``configuration`` file to read your saved data.
 
 ::
 
@@ -1122,7 +1122,7 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **add_autoload_singleton**\ (\ name\: :ref:`String<class_String>`, path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorPlugin_method_add_autoload_singleton>`
 
-将 ``path`` 处的脚本作为 ``name`` 添加到自动加载列表中。
+Adds a script at ``path`` to the Autoload list as ``name``.
 
 .. rst-class:: classref-item-separator
 
@@ -1134,9 +1134,9 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **add_context_menu_plugin**\ (\ slot\: :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>`, plugin\: :ref:`EditorContextMenuPlugin<class_EditorContextMenuPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_add_context_menu_plugin>`
 
-将插件添加至上下文菜单。\ ``slot`` 为添加插件的上下文菜单。
+Adds a plugin to the context menu. ``slot`` is the context menu where the plugin will be added.
 
-\ **注意：**\ 插件的实例只能属于单个上下文菜单槽。
+\ **Note:** A plugin instance can belong only to a single context menu slot.
 
 .. rst-class:: classref-item-separator
 
@@ -1148,13 +1148,13 @@ This function is called when an individual scene is about to be played in the ed
 
 :ref:`Button<class_Button>` **add_control_to_bottom_panel**\ (\ control\: :ref:`Control<class_Control>`, title\: :ref:`String<class_String>`, shortcut\: :ref:`Shortcut<class_Shortcut>` = null\ ) :ref:`🔗<class_EditorPlugin_method_add_control_to_bottom_panel>`
 
-**已弃用：** Use :ref:`add_dock()<class_EditorPlugin_method_add_dock>` instead, with :ref:`EditorDock.default_slot<class_EditorDock_property_default_slot>` set to :ref:`DOCK_SLOT_BOTTOM<class_EditorPlugin_constant_DOCK_SLOT_BOTTOM>`.
+**Deprecated:** Use :ref:`add_dock()<class_EditorPlugin_method_add_dock>` instead, with :ref:`EditorDock.default_slot<class_EditorDock_property_default_slot>` set to :ref:`DOCK_SLOT_BOTTOM<class_EditorPlugin_constant_DOCK_SLOT_BOTTOM>`.
 
-将控件添加到底部面板（与输出、调试、动画等面板并列）。返回一个按钮的引用。这个按钮在场景树外，需要你视情况自行隐藏/显示。当插件停用时，请务必使用 :ref:`remove_control_from_bottom_panel()<class_EditorPlugin_method_remove_control_from_bottom_panel>` 移除自定义控件，并使用 :ref:`Node.queue_free()<class_Node_method_queue_free>` 将其释放。
+Adds a control to the bottom panel (together with Output, Debug, Animation, etc.). Returns a reference to a button that is outside the scene tree. It's up to you to hide/show the button when needed. When your plugin is deactivated, make sure to remove your custom control with :ref:`remove_control_from_bottom_panel()<class_EditorPlugin_method_remove_control_from_bottom_panel>` and free it with :ref:`Node.queue_free()<class_Node_method_queue_free>`.
 
-\ ``shortcut`` 为快捷键，激活时将切换底部面板的可见性。此快捷键对象仅在该控件被添加到底部面板时才被设置。
+\ ``shortcut`` is a shortcut that, when activated, will toggle the bottom panel's visibility. The shortcut object is only set when this control is added to the bottom panel.
 
-\ **注意：**\ 请将编辑器设置中默认的底部面板快捷键作为设计参考。按照惯例，它们均使用 :kbd:`Alt` 修饰键。
+\ **Note** See the default editor bottom panel shortcuts in the Editor Settings for inspiration. By convention, they all use :kbd:`Alt` modifier.
 
 .. rst-class:: classref-item-separator
 
@@ -1166,11 +1166,11 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **add_control_to_container**\ (\ container\: :ref:`CustomControlContainer<enum_EditorPlugin_CustomControlContainer>`, control\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_EditorPlugin_method_add_control_to_container>`
 
-将自定义控件添加到编辑器 UI 中的某个容器。
+Adds a custom control to a container in the editor UI.
 
-请记住，必须自己管理你的自定义控件的可见性（并且很可能在添加后隐藏它）。
+Please remember that you have to manage the visibility of your custom controls yourself (and likely hide it after adding it).
 
-当插件被停用时，请确保使用 :ref:`remove_control_from_container()<class_EditorPlugin_method_remove_control_from_container>` 移除自定义控件，并使用 :ref:`Node.queue_free()<class_Node_method_queue_free>` 将其释放。
+When your plugin is deactivated, make sure to remove your custom control with :ref:`remove_control_from_container()<class_EditorPlugin_method_remove_control_from_container>` and free it with :ref:`Node.queue_free()<class_Node_method_queue_free>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1182,15 +1182,15 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **add_control_to_dock**\ (\ slot\: :ref:`DockSlot<enum_EditorPlugin_DockSlot>`, control\: :ref:`Control<class_Control>`, shortcut\: :ref:`Shortcut<class_Shortcut>` = null\ ) :ref:`🔗<class_EditorPlugin_method_add_control_to_dock>`
 
-**已弃用：** Use :ref:`add_dock()<class_EditorPlugin_method_add_dock>` instead.
+**Deprecated:** Use :ref:`add_dock()<class_EditorPlugin_method_add_dock>` instead.
 
-将控件添加到特定的停靠面板槽位。
+Adds the control to a specific dock slot.
 
-如果重新放置了停靠面板，并且只要该插件处于活动状态，编辑器就会在以后的会话中保存停靠面板的位置。
+If the dock is repositioned and as long as the plugin is active, the editor will save the dock position on further sessions.
 
-停用插件后，请确保使用 :ref:`remove_control_from_docks()<class_EditorPlugin_method_remove_control_from_docks>` 移除自定义控件，并使用 :ref:`Node.queue_free()<class_Node_method_queue_free>` 将其释放。
+When your plugin is deactivated, make sure to remove your custom control with :ref:`remove_control_from_docks()<class_EditorPlugin_method_remove_control_from_docks>` and free it with :ref:`Node.queue_free()<class_Node_method_queue_free>`.
 
-你还可以指定快捷键参数。按下该快捷键就会打开并聚焦该面板。
+Optionally, you can specify a shortcut parameter. When pressed, this shortcut will open and focus the dock.
 
 .. rst-class:: classref-item-separator
 
@@ -1202,17 +1202,17 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **add_custom_type**\ (\ type\: :ref:`String<class_String>`, base\: :ref:`String<class_String>`, script\: :ref:`Script<class_Script>`, icon\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_EditorPlugin_method_add_custom_type>`
 
-添加一个自定义类型，它将出现在节点或资源的列表中。
+Adds a custom type, which will appear in the list of nodes or resources.
 
-选择给定的节点或资源时，将实例化基本类型（例如“Node3D”、“Control”、“Resource”），然后脚本将被加载并将其设置为该对象。
+When a given node or resource is selected, the base type will be instantiated (e.g. "Node3D", "Control", "Resource"), then the script will be loaded and set to this object.
 
-\ **注意：**\ 基本类型是该类型的类层次继承的基本引擎类，而不是任何自定义类型的父类。
+\ **Note:** The base type is the base engine class which this type's class hierarchy inherits, not any custom type parent classes.
 
-可以使用虚方法 :ref:`_handles()<class_EditorPlugin_private_method__handles>` 通过检查脚本或使用 ``is`` 关键字来检查你的自定义对象是否正在被编辑。
+You can use the virtual method :ref:`_handles()<class_EditorPlugin_private_method__handles>` to check if your custom object is being edited by checking the script or using the ``is`` keyword.
 
-在运行时，这将是一个带有脚本的简单对象，因此不需要调用该函数。
+During run-time, this will be a simple object with a script so this function does not need to be called then.
 
-\ **注意：**\ 以这种方式添加的自定义类型不是真正的类。它们只是使用特定脚本创建节点的助手。
+\ **Note:** Custom types added this way are not true classes. They are just a helper to create a node with specific script.
 
 .. rst-class:: classref-item-separator
 
@@ -1224,7 +1224,7 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **add_debugger_plugin**\ (\ script\: :ref:`EditorDebuggerPlugin<class_EditorDebuggerPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_add_debugger_plugin>`
 
-将一个 :ref:`Script<class_Script>` 作为调试器插件添加到调试器。该脚本必须扩展 :ref:`EditorDebuggerPlugin<class_EditorDebuggerPlugin>`\ 。
+Adds a :ref:`Script<class_Script>` as debugger plugin to the Debugger. The script must extend :ref:`EditorDebuggerPlugin<class_EditorDebuggerPlugin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1236,9 +1236,9 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **add_dock**\ (\ dock\: :ref:`EditorDock<class_EditorDock>`\ ) :ref:`🔗<class_EditorPlugin_method_add_dock>`
 
-添加一个新的停靠面板。
+Adds a new dock.
 
-当插件停用时，请务必使用 :ref:`remove_dock()<class_EditorPlugin_method_remove_dock>` 移除自定义停靠面板，并使用 :ref:`Node.queue_free()<class_Node_method_queue_free>` 将其释放。
+When your plugin is deactivated, make sure to remove your custom dock with :ref:`remove_dock()<class_EditorPlugin_method_remove_dock>` and free it with :ref:`Node.queue_free()<class_Node_method_queue_free>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1250,7 +1250,7 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **add_export_platform**\ (\ platform\: :ref:`EditorExportPlatform<class_EditorExportPlatform>`\ ) :ref:`🔗<class_EditorPlugin_method_add_export_platform>`
 
-注册新的 :ref:`EditorExportPlatform<class_EditorExportPlatform>`\ 。导出平台提供导出到该平台的功能。
+Registers a new :ref:`EditorExportPlatform<class_EditorExportPlatform>`. Export platforms provides functionality of exporting to the specific platform.
 
 .. rst-class:: classref-item-separator
 
@@ -1262,9 +1262,9 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **add_export_plugin**\ (\ plugin\: :ref:`EditorExportPlugin<class_EditorExportPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_add_export_plugin>`
 
-注册一个新的 :ref:`EditorExportPlugin<class_EditorExportPlugin>`\ 。导出插件是用来在项目被导出时执行任务的。
+Registers a new :ref:`EditorExportPlugin<class_EditorExportPlugin>`. Export plugins are used to perform tasks when the project is being exported.
 
-有关如何注册插件的示例，请参见 :ref:`add_inspector_plugin()<class_EditorPlugin_method_add_inspector_plugin>`\ 。
+See :ref:`add_inspector_plugin()<class_EditorPlugin_method_add_inspector_plugin>` for an example of how to register a plugin.
 
 .. rst-class:: classref-item-separator
 
@@ -1276,13 +1276,13 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **add_import_plugin**\ (\ importer\: :ref:`EditorImportPlugin<class_EditorImportPlugin>`, first_priority\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_EditorPlugin_method_add_import_plugin>`
 
-注册一个新的 :ref:`EditorImportPlugin<class_EditorImportPlugin>`\ 。导入插件用于将自定义的和不受支持的资产，作为一种自定义 :ref:`Resource<class_Resource>` 类型导入。
+Registers a new :ref:`EditorImportPlugin<class_EditorImportPlugin>`. Import plugins are used to import custom and unsupported assets as a custom :ref:`Resource<class_Resource>` type.
 
-如果 ``first_priority`` 是 ``true``\ ，则该新的导入插件被首先插入列表中，并优先于预先存在的插件。
+If ``first_priority`` is ``true``, the new import plugin is inserted first in the list and takes precedence over pre-existing plugins.
 
-\ **注意：**\ 如果要导入自定义 3D 资产格式，请改用 :ref:`add_scene_format_importer_plugin()<class_EditorPlugin_method_add_scene_format_importer_plugin>`\ 。
+\ **Note:** If you want to import custom 3D asset formats use :ref:`add_scene_format_importer_plugin()<class_EditorPlugin_method_add_scene_format_importer_plugin>` instead.
 
-有关如何注册插件的示例，请参见 :ref:`add_inspector_plugin()<class_EditorPlugin_method_add_inspector_plugin>`\ 。
+See :ref:`add_inspector_plugin()<class_EditorPlugin_method_add_inspector_plugin>` for an example of how to register a plugin.
 
 .. rst-class:: classref-item-separator
 
@@ -1294,9 +1294,9 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **add_inspector_plugin**\ (\ plugin\: :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_add_inspector_plugin>`
 
-注册一个新的 :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>`\ 。检查器插件用于扩展 :ref:`EditorInspector<class_EditorInspector>`\ ，并为对象的属性提供自定义配置工具。
+Registers a new :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>`. Inspector plugins are used to extend :ref:`EditorInspector<class_EditorInspector>` and provide custom configuration tools for your object's properties.
 
-\ **注意：**\ 当 **EditorPlugin** 被禁用时，请始终使用 :ref:`remove_inspector_plugin()<class_EditorPlugin_method_remove_inspector_plugin>` 移除已注册的 :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>`\ ，以防止泄漏和意外行为。
+\ **Note:** Always use :ref:`remove_inspector_plugin()<class_EditorPlugin_method_remove_inspector_plugin>` to remove the registered :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>` when your **EditorPlugin** is disabled to prevent leaks and an unexpected behavior.
 
 
 .. tabs::
@@ -1324,9 +1324,9 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **add_node_3d_gizmo_plugin**\ (\ plugin\: :ref:`EditorNode3DGizmoPlugin<class_EditorNode3DGizmoPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_add_node_3d_gizmo_plugin>`
 
-注册一个新的 :ref:`EditorNode3DGizmoPlugin<class_EditorNode3DGizmoPlugin>`\ 。小工具插件用于将自定义小工具添加到 :ref:`Node3D<class_Node3D>` 的 3D 预览视图。
+Registers a new :ref:`EditorNode3DGizmoPlugin<class_EditorNode3DGizmoPlugin>`. Gizmo plugins are used to add custom gizmos to the 3D preview viewport for a :ref:`Node3D<class_Node3D>`.
 
-有关如何注册插件的示例，请参阅 :ref:`add_inspector_plugin()<class_EditorPlugin_method_add_inspector_plugin>`\ 。
+See :ref:`add_inspector_plugin()<class_EditorPlugin_method_add_inspector_plugin>` for an example of how to register a plugin.
 
 .. rst-class:: classref-item-separator
 
@@ -1338,9 +1338,9 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **add_resource_conversion_plugin**\ (\ plugin\: :ref:`EditorResourceConversionPlugin<class_EditorResourceConversionPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_add_resource_conversion_plugin>`
 
-注册一个新的 :ref:`EditorResourceConversionPlugin<class_EditorResourceConversionPlugin>`\ 。资源转换插件用于将自定义资源转换器添加到编辑器检查器。
+Registers a new :ref:`EditorResourceConversionPlugin<class_EditorResourceConversionPlugin>`. Resource conversion plugins are used to add custom resource converters to the editor inspector.
 
-有关如何创建资源转换插件的示例，请参阅 :ref:`EditorResourceConversionPlugin<class_EditorResourceConversionPlugin>`\ 。
+See :ref:`EditorResourceConversionPlugin<class_EditorResourceConversionPlugin>` for an example of how to create a resource conversion plugin.
 
 .. rst-class:: classref-item-separator
 
@@ -1352,9 +1352,9 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **add_scene_format_importer_plugin**\ (\ scene_format_importer\: :ref:`EditorSceneFormatImporter<class_EditorSceneFormatImporter>`, first_priority\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_EditorPlugin_method_add_scene_format_importer_plugin>`
 
-注册一个新的 :ref:`EditorSceneFormatImporter<class_EditorSceneFormatImporter>`\ 。场景导入器用于将自定义格式的 3D 资产导入为场景。
+Registers a new :ref:`EditorSceneFormatImporter<class_EditorSceneFormatImporter>`. Scene importers are used to import custom 3D asset formats as scenes.
 
-如果 ``first_priority`` 为 ``true``\ ，则这个新的导入插件会被插入到列表的首位，优先于预先存在的插件。
+If ``first_priority`` is ``true``, the new import plugin is inserted first in the list and takes precedence over pre-existing plugins.
 
 .. rst-class:: classref-item-separator
 
@@ -1366,9 +1366,9 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **add_scene_post_import_plugin**\ (\ scene_import_plugin\: :ref:`EditorScenePostImportPlugin<class_EditorScenePostImportPlugin>`, first_priority\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_EditorPlugin_method_add_scene_post_import_plugin>`
 
-添加 :ref:`EditorScenePostImportPlugin<class_EditorScenePostImportPlugin>`\ 。这些插件能够在导入对话框中添加新的选项，自定义 3D 资产的导入过程。
+Add an :ref:`EditorScenePostImportPlugin<class_EditorScenePostImportPlugin>`. These plugins allow customizing the import process of 3D assets by adding new options to the import dialogs.
 
-如果 ``first_priority`` 为 ``true``\ ，则这个新的导入插件会被插入到列表的首位，优先于预先存在的插件。
+If ``first_priority`` is ``true``, the new import plugin is inserted first in the list and takes precedence over pre-existing plugins.
 
 .. rst-class:: classref-item-separator
 
@@ -1380,7 +1380,7 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **add_tool_menu_item**\ (\ name\: :ref:`String<class_String>`, callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_EditorPlugin_method_add_tool_menu_item>`
 
-在\ **项目 > 工具**\ 中添加名为 ``name`` 的自定义菜单项。点击时会调用所提供的 ``callable``\ 。
+Adds a custom menu item to **Project > Tools** named ``name``. When clicked, the provided ``callable`` will be called.
 
 .. rst-class:: classref-item-separator
 
@@ -1392,7 +1392,7 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **add_tool_submenu_item**\ (\ name\: :ref:`String<class_String>`, submenu\: :ref:`PopupMenu<class_PopupMenu>`\ ) :ref:`🔗<class_EditorPlugin_method_add_tool_submenu_item>`
 
-在\ **项目 > 工具**\ 中添加名为 ``name`` 的自定义 :ref:`PopupMenu<class_PopupMenu>` 子菜单。请在清理插件时调用 :ref:`remove_tool_menu_item()<class_EditorPlugin_method_remove_tool_menu_item>` 移除该菜单。
+Adds a custom :ref:`PopupMenu<class_PopupMenu>` submenu under **Project > Tools >** ``name``. Use :ref:`remove_tool_menu_item()<class_EditorPlugin_method_remove_tool_menu_item>` on plugin clean up to remove the menu.
 
 .. rst-class:: classref-item-separator
 
@@ -1404,7 +1404,7 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **add_translation_parser_plugin**\ (\ parser\: :ref:`EditorTranslationParserPlugin<class_EditorTranslationParserPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_add_translation_parser_plugin>`
 
-注册一个自定义翻译解析器插件，用于从自定义文件中提取可翻译的字符串。
+Registers a custom translation parser plugin for extracting translatable strings from custom files.
 
 .. rst-class:: classref-item-separator
 
@@ -1416,9 +1416,9 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **add_undo_redo_inspector_hook_callback**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_EditorPlugin_method_add_undo_redo_inspector_hook_callback>`
 
-当在检查器中修改属性时，将一个回调函数挂钩到撤消/重做动作创建中。例如，这允许保存在修改给定属性时可能丢失的其他属性。
+Hooks a callback into the undo/redo action creation when a property is modified in the inspector. This allows, for example, to save other properties that may be lost when a given property is modified.
 
-该回调函数应该有 4 个参数：\ :ref:`Object<class_Object>` ``undo_redo``\ 、\ :ref:`Object<class_Object>` ``modified_object``\ 、\ :ref:`String<class_String>` ``property`` 和 :ref:`Variant<class_Variant>` ``new_value``\ 。它们分别是检查器使用的 :ref:`UndoRedo<class_UndoRedo>` 对象、当前修改的对象、修改的属性的名称和该属性即将采用的新值。
+The callback should have 4 arguments: :ref:`Object<class_Object>` ``undo_redo``, :ref:`Object<class_Object>` ``modified_object``, :ref:`String<class_String>` ``property`` and :ref:`Variant<class_Variant>` ``new_value``. They are, respectively, the :ref:`UndoRedo<class_UndoRedo>` object used by the inspector, the currently modified object, the name of the modified property and the new value the property is about to take.
 
 .. rst-class:: classref-item-separator
 
@@ -1430,9 +1430,9 @@ This function is called when an individual scene is about to be played in the ed
 
 :ref:`EditorInterface<class_EditorInterface>` **get_editor_interface**\ (\ ) :ref:`🔗<class_EditorPlugin_method_get_editor_interface>`
 
-**已弃用：** :ref:`EditorInterface<class_EditorInterface>` is a global singleton and can be accessed directly by its name.
+**Deprecated:** :ref:`EditorInterface<class_EditorInterface>` is a global singleton and can be accessed directly by its name.
 
-返回 :ref:`EditorInterface<class_EditorInterface>` 单例实例。
+Returns the :ref:`EditorInterface<class_EditorInterface>` singleton instance.
 
 .. rst-class:: classref-item-separator
 
@@ -1444,7 +1444,7 @@ This function is called when an individual scene is about to be played in the ed
 
 :ref:`PopupMenu<class_PopupMenu>` **get_export_as_menu**\ (\ ) :ref:`🔗<class_EditorPlugin_method_get_export_as_menu>`
 
-返回\ **场景 > 另存为...**\ 下的 :ref:`PopupMenu<class_PopupMenu>`\ 。
+Returns the :ref:`PopupMenu<class_PopupMenu>` under **Scene > Export As...**.
 
 .. rst-class:: classref-item-separator
 
@@ -1456,7 +1456,7 @@ This function is called when an individual scene is about to be played in the ed
 
 :ref:`String<class_String>` **get_plugin_version**\ (\ ) |const| :ref:`🔗<class_EditorPlugin_method_get_plugin_version>`
 
-提供在 ``plugin.cfg`` 配置文件中声明的插件版本。
+Provide the version of the plugin declared in the ``plugin.cfg`` config file.
 
 .. rst-class:: classref-item-separator
 
@@ -1468,11 +1468,11 @@ This function is called when an individual scene is about to be played in the ed
 
 :ref:`ScriptCreateDialog<class_ScriptCreateDialog>` **get_script_create_dialog**\ (\ ) :ref:`🔗<class_EditorPlugin_method_get_script_create_dialog>`
 
-获取用于创建脚本的编辑器对话框。
+Gets the Editor's dialog used for making scripts.
 
-\ **注意：**\ 用户可以在使用前对其进行配置。
+\ **Note:** Users can configure it before use.
 
-\ **警告：**\ 移除和释放这个节点将使编辑器的一部分失去作用，并可能导致崩溃。
+\ **Warning:** Removing and freeing this node will render a part of the editor useless and may cause a crash.
 
 .. rst-class:: classref-item-separator
 
@@ -1484,7 +1484,7 @@ This function is called when an individual scene is about to be played in the ed
 
 :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>` **get_undo_redo**\ (\ ) :ref:`🔗<class_EditorPlugin_method_get_undo_redo>`
 
-获取撤消/重做对象。编辑器中的大多数操作都是可以撤消的，因此请使用此对象来确保在需要时执行此操作。
+Gets the undo/redo object. Most actions in the editor can be undoable, so use this object to make sure this happens when it's worth it.
 
 .. rst-class:: classref-item-separator
 
@@ -1496,7 +1496,7 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **hide_bottom_panel**\ (\ ) :ref:`🔗<class_EditorPlugin_method_hide_bottom_panel>`
 
-最小化底部面板。
+Minimizes the bottom panel.
 
 .. rst-class:: classref-item-separator
 
@@ -1508,7 +1508,7 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **make_bottom_panel_item_visible**\ (\ item\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_EditorPlugin_method_make_bottom_panel_item_visible>`
 
-使底部面板中的一个特定项目可见。
+Makes a specific item in the bottom panel visible.
 
 .. rst-class:: classref-item-separator
 
@@ -1520,7 +1520,7 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **queue_save_layout**\ (\ ) :ref:`🔗<class_EditorPlugin_method_queue_save_layout>`
 
-排队保存游戏项目的编辑器布局。
+Queue save the project's editor layout.
 
 .. rst-class:: classref-item-separator
 
@@ -1532,7 +1532,7 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **remove_autoload_singleton**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_autoload_singleton>`
 
-从列表中移除自动加载 ``name``\ 。
+Removes an Autoload ``name`` from the list.
 
 .. rst-class:: classref-item-separator
 
@@ -1544,7 +1544,7 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **remove_context_menu_plugin**\ (\ plugin\: :ref:`EditorContextMenuPlugin<class_EditorContextMenuPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_context_menu_plugin>`
 
-移除指定的上下文菜单插件。
+Removes the specified context menu plugin.
 
 .. rst-class:: classref-item-separator
 
@@ -1556,9 +1556,9 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **remove_control_from_bottom_panel**\ (\ control\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_control_from_bottom_panel>`
 
-**已弃用：** Use :ref:`remove_dock()<class_EditorPlugin_method_remove_dock>` instead.
+**Deprecated:** Use :ref:`remove_dock()<class_EditorPlugin_method_remove_dock>` instead.
 
-从底部面板上移除该控件。必须手动调用 :ref:`Node.queue_free()<class_Node_method_queue_free>` 释放该控件。
+Removes the control from the bottom panel. You have to manually :ref:`Node.queue_free()<class_Node_method_queue_free>` the control.
 
 .. rst-class:: classref-item-separator
 
@@ -1570,7 +1570,7 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **remove_control_from_container**\ (\ container\: :ref:`CustomControlContainer<enum_EditorPlugin_CustomControlContainer>`, control\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_control_from_container>`
 
-从指定的容器中移除该控件。必须手动调用 :ref:`Node.queue_free()<class_Node_method_queue_free>` 释放该控件。
+Removes the control from the specified container. You have to manually :ref:`Node.queue_free()<class_Node_method_queue_free>` the control.
 
 .. rst-class:: classref-item-separator
 
@@ -1582,9 +1582,9 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **remove_control_from_docks**\ (\ control\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_control_from_docks>`
 
-**已弃用：** Use :ref:`remove_dock()<class_EditorPlugin_method_remove_dock>` instead.
+**Deprecated:** Use :ref:`remove_dock()<class_EditorPlugin_method_remove_dock>` instead.
 
-从停靠面板中移除该控件。必须手动调用 :ref:`Node.queue_free()<class_Node_method_queue_free>` 释放该控件。
+Removes the control from the dock. You have to manually :ref:`Node.queue_free()<class_Node_method_queue_free>` the control.
 
 .. rst-class:: classref-item-separator
 
@@ -1596,7 +1596,7 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **remove_custom_type**\ (\ type\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_custom_type>`
 
-移除由 :ref:`add_custom_type()<class_EditorPlugin_method_add_custom_type>` 添加的自定义类型。
+Removes a custom type added by :ref:`add_custom_type()<class_EditorPlugin_method_add_custom_type>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1608,7 +1608,7 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **remove_debugger_plugin**\ (\ script\: :ref:`EditorDebuggerPlugin<class_EditorDebuggerPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_debugger_plugin>`
 
-从调试器中移除带有给定脚本的调试器插件。
+Removes the debugger plugin with given script from the Debugger.
 
 .. rst-class:: classref-item-separator
 
@@ -1632,7 +1632,7 @@ Removes ``dock`` from the available docks. You should manually call :ref:`Node.q
 
 |void| **remove_export_platform**\ (\ platform\: :ref:`EditorExportPlatform<class_EditorExportPlatform>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_export_platform>`
 
-移除由 :ref:`add_export_platform()<class_EditorPlugin_method_add_export_platform>` 注册的导出平台。
+Removes an export platform registered by :ref:`add_export_platform()<class_EditorPlugin_method_add_export_platform>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1644,7 +1644,7 @@ Removes ``dock`` from the available docks. You should manually call :ref:`Node.q
 
 |void| **remove_export_plugin**\ (\ plugin\: :ref:`EditorExportPlugin<class_EditorExportPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_export_plugin>`
 
-移除由 :ref:`add_export_plugin()<class_EditorPlugin_method_add_export_plugin>` 注册的导出插件。
+Removes an export plugin registered by :ref:`add_export_plugin()<class_EditorPlugin_method_add_export_plugin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1656,7 +1656,7 @@ Removes ``dock`` from the available docks. You should manually call :ref:`Node.q
 
 |void| **remove_import_plugin**\ (\ importer\: :ref:`EditorImportPlugin<class_EditorImportPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_import_plugin>`
 
-移除由 :ref:`add_import_plugin()<class_EditorPlugin_method_add_import_plugin>` 注册的导入插件。
+Removes an import plugin registered by :ref:`add_import_plugin()<class_EditorPlugin_method_add_import_plugin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1668,7 +1668,7 @@ Removes ``dock`` from the available docks. You should manually call :ref:`Node.q
 
 |void| **remove_inspector_plugin**\ (\ plugin\: :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_inspector_plugin>`
 
-移除由 :ref:`add_inspector_plugin()<class_EditorPlugin_method_add_inspector_plugin>` 注册的检查器插件。
+Removes an inspector plugin registered by :ref:`add_inspector_plugin()<class_EditorPlugin_method_add_inspector_plugin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1680,7 +1680,7 @@ Removes ``dock`` from the available docks. You should manually call :ref:`Node.q
 
 |void| **remove_node_3d_gizmo_plugin**\ (\ plugin\: :ref:`EditorNode3DGizmoPlugin<class_EditorNode3DGizmoPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_node_3d_gizmo_plugin>`
 
-移除由 :ref:`add_node_3d_gizmo_plugin()<class_EditorPlugin_method_add_node_3d_gizmo_plugin>` 注册的小工具插件。
+Removes a gizmo plugin registered by :ref:`add_node_3d_gizmo_plugin()<class_EditorPlugin_method_add_node_3d_gizmo_plugin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1692,7 +1692,7 @@ Removes ``dock`` from the available docks. You should manually call :ref:`Node.q
 
 |void| **remove_resource_conversion_plugin**\ (\ plugin\: :ref:`EditorResourceConversionPlugin<class_EditorResourceConversionPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_resource_conversion_plugin>`
 
-移除由 :ref:`add_resource_conversion_plugin()<class_EditorPlugin_method_add_resource_conversion_plugin>` 注册的资源转换插件。
+Removes a resource conversion plugin registered by :ref:`add_resource_conversion_plugin()<class_EditorPlugin_method_add_resource_conversion_plugin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1704,7 +1704,7 @@ Removes ``dock`` from the available docks. You should manually call :ref:`Node.q
 
 |void| **remove_scene_format_importer_plugin**\ (\ scene_format_importer\: :ref:`EditorSceneFormatImporter<class_EditorSceneFormatImporter>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_scene_format_importer_plugin>`
 
-移除由 :ref:`add_scene_format_importer_plugin()<class_EditorPlugin_method_add_scene_format_importer_plugin>` 注册的场景格式导入器插件。
+Removes a scene format importer registered by :ref:`add_scene_format_importer_plugin()<class_EditorPlugin_method_add_scene_format_importer_plugin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1716,7 +1716,7 @@ Removes ``dock`` from the available docks. You should manually call :ref:`Node.q
 
 |void| **remove_scene_post_import_plugin**\ (\ scene_import_plugin\: :ref:`EditorScenePostImportPlugin<class_EditorScenePostImportPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_scene_post_import_plugin>`
 
-移除由 :ref:`add_scene_post_import_plugin()<class_EditorPlugin_method_add_scene_post_import_plugin>` 注册的 :ref:`EditorScenePostImportPlugin<class_EditorScenePostImportPlugin>`\ 。
+Remove the :ref:`EditorScenePostImportPlugin<class_EditorScenePostImportPlugin>`, added with :ref:`add_scene_post_import_plugin()<class_EditorPlugin_method_add_scene_post_import_plugin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1728,7 +1728,7 @@ Removes ``dock`` from the available docks. You should manually call :ref:`Node.q
 
 |void| **remove_tool_menu_item**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_tool_menu_item>`
 
-从\ **项目 > 工具**\ 中移除名为 ``name`` 的菜单。
+Removes a menu ``name`` from **Project > Tools**.
 
 .. rst-class:: classref-item-separator
 
@@ -1740,7 +1740,7 @@ Removes ``dock`` from the available docks. You should manually call :ref:`Node.q
 
 |void| **remove_translation_parser_plugin**\ (\ parser\: :ref:`EditorTranslationParserPlugin<class_EditorTranslationParserPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_translation_parser_plugin>`
 
-移除由 :ref:`add_translation_parser_plugin()<class_EditorPlugin_method_add_translation_parser_plugin>` 注册的自定义翻译解析器插件。
+Removes a custom translation parser plugin registered by :ref:`add_translation_parser_plugin()<class_EditorPlugin_method_add_translation_parser_plugin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1752,7 +1752,7 @@ Removes ``dock`` from the available docks. You should manually call :ref:`Node.q
 
 |void| **remove_undo_redo_inspector_hook_callback**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_undo_redo_inspector_hook_callback>`
 
-移除由 :ref:`add_undo_redo_inspector_hook_callback()<class_EditorPlugin_method_add_undo_redo_inspector_hook_callback>` 添加的回调。
+Removes a callback previously added by :ref:`add_undo_redo_inspector_hook_callback()<class_EditorPlugin_method_add_undo_redo_inspector_hook_callback>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1764,9 +1764,9 @@ Removes ``dock`` from the available docks. You should manually call :ref:`Node.q
 
 |void| **set_dock_tab_icon**\ (\ control\: :ref:`Control<class_Control>`, icon\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_EditorPlugin_method_set_dock_tab_icon>`
 
-**已弃用：** Use :ref:`EditorDock.dock_icon<class_EditorDock_property_dock_icon>` instead.
+**Deprecated:** Use :ref:`EditorDock.dock_icon<class_EditorDock_property_dock_icon>` instead.
 
-设置停靠面板插槽中给定控件的选项卡图标。设置为 ``null`` 会移除该图标。
+Sets the tab icon for the given control in a dock slot. Setting to ``null`` removes the icon.
 
 .. rst-class:: classref-item-separator
 
@@ -1778,7 +1778,7 @@ Removes ``dock`` from the available docks. You should manually call :ref:`Node.q
 
 |void| **set_force_draw_over_forwarding_enabled**\ (\ ) :ref:`🔗<class_EditorPlugin_method_set_force_draw_over_forwarding_enabled>`
 
-更新视口时，为 2D 编辑器启用 :ref:`_forward_canvas_force_draw_over_viewport()<class_EditorPlugin_private_method__forward_canvas_force_draw_over_viewport>` 的调用，为 3D 编辑器启用 :ref:`_forward_3d_force_draw_over_viewport()<class_EditorPlugin_private_method__forward_3d_force_draw_over_viewport>` 的调用。只需调用该方法一次，它将永久适用于该插件。
+Enables calling of :ref:`_forward_canvas_force_draw_over_viewport()<class_EditorPlugin_private_method__forward_canvas_force_draw_over_viewport>` for the 2D editor and :ref:`_forward_3d_force_draw_over_viewport()<class_EditorPlugin_private_method__forward_3d_force_draw_over_viewport>` for the 3D editor when their viewports are updated. You need to call this method only once and it will work permanently for this plugin.
 
 .. rst-class:: classref-item-separator
 
@@ -1790,7 +1790,7 @@ Removes ``dock`` from the available docks. You should manually call :ref:`Node.q
 
 |void| **set_input_event_forwarding_always_enabled**\ (\ ) :ref:`🔗<class_EditorPlugin_method_set_input_event_forwarding_always_enabled>`
 
-如果始终希望从 3D 视图屏幕在 :ref:`_forward_3d_gui_input()<class_EditorPlugin_private_method__forward_3d_gui_input>` 中接收输入，请使用该方法。如果插件想要在场景中使用射线投射，它可能特别有用。
+Use this method if you always want to receive inputs from 3D view screen inside :ref:`_forward_3d_gui_input()<class_EditorPlugin_private_method__forward_3d_gui_input>`. It might be especially usable if your plugin will want to use raycast in the scene.
 
 .. rst-class:: classref-item-separator
 
@@ -1802,14 +1802,14 @@ Removes ``dock`` from the available docks. You should manually call :ref:`Node.q
 
 :ref:`int<class_int>` **update_overlays**\ (\ ) |const| :ref:`🔗<class_EditorPlugin_method_update_overlays>`
 
-更新 2D 和 3D 编辑器视口的叠加层。会导致方法 :ref:`_forward_canvas_draw_over_viewport()<class_EditorPlugin_private_method__forward_canvas_draw_over_viewport>`\ 、\ :ref:`_forward_canvas_force_draw_over_viewport()<class_EditorPlugin_private_method__forward_canvas_force_draw_over_viewport>`\ 、\ :ref:`_forward_3d_draw_over_viewport()<class_EditorPlugin_private_method__forward_3d_draw_over_viewport>` 和 :ref:`_forward_3d_force_draw_over_viewport()<class_EditorPlugin_private_method__forward_3d_force_draw_over_viewport>` 被调用。
+Updates the overlays of the 2D and 3D editor viewport. Causes methods :ref:`_forward_canvas_draw_over_viewport()<class_EditorPlugin_private_method__forward_canvas_draw_over_viewport>`, :ref:`_forward_canvas_force_draw_over_viewport()<class_EditorPlugin_private_method__forward_canvas_force_draw_over_viewport>`, :ref:`_forward_3d_draw_over_viewport()<class_EditorPlugin_private_method__forward_3d_draw_over_viewport>` and :ref:`_forward_3d_force_draw_over_viewport()<class_EditorPlugin_private_method__forward_3d_force_draw_over_viewport>` to be called.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

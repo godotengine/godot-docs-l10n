@@ -5,23 +5,23 @@
 GLTFCamera
 ==========
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 Represents a glTF camera.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 Represents a camera as defined by the base glTF spec.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`執行時檔案載入與儲存 <../tutorials/io/runtime_file_loading_and_saving>`
+- :doc:`Runtime file loading and saving <../tutorials/io/runtime_file_loading_and_saving>`
 
 - `glTF camera detailed specification <https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-camera>`__
 
@@ -29,8 +29,8 @@ Represents a camera as defined by the base glTF spec.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ Represents a camera as defined by the base glTF spec.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -71,8 +71,8 @@ Represents a camera as defined by the base glTF spec.
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_GLTFCamera_property_depth_far:
 
@@ -161,8 +161,8 @@ The size of the camera. This class and glTF define the camera size magnitude as 
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_GLTFCamera_method_from_dictionary:
 
@@ -170,7 +170,7 @@ The size of the camera. This class and glTF define the camera size magnitude as 
 
 :ref:`GLTFCamera<class_GLTFCamera>` **from_dictionary**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`\ ) |static| :ref:`🔗<class_GLTFCamera_method_from_dictionary>`
 
-通過解析給定的 :ref:`Dictionary<class_Dictionary>` 新建 GLTFCamera 實例。
+Creates a new GLTFCamera instance by parsing the given :ref:`Dictionary<class_Dictionary>`.
 
 .. rst-class:: classref-item-separator
 
@@ -182,7 +182,7 @@ The size of the camera. This class and glTF define the camera size magnitude as 
 
 :ref:`GLTFCamera<class_GLTFCamera>` **from_node**\ (\ camera_node\: :ref:`Camera3D<class_Camera3D>`\ ) |static| :ref:`🔗<class_GLTFCamera_method_from_node>`
 
-從給定的 Godot :ref:`Camera3D<class_Camera3D>` 節點新建 GLTFCamera 實例。
+Create a new GLTFCamera instance from the given Godot :ref:`Camera3D<class_Camera3D>` node.
 
 .. rst-class:: classref-item-separator
 
@@ -194,7 +194,7 @@ The size of the camera. This class and glTF define the camera size magnitude as 
 
 :ref:`Dictionary<class_Dictionary>` **to_dictionary**\ (\ ) |const| :ref:`🔗<class_GLTFCamera_method_to_dictionary>`
 
-將這個 GLTFCamera 實例序列化為 :ref:`Dictionary<class_Dictionary>`\ 。
+Serializes this GLTFCamera instance into a :ref:`Dictionary<class_Dictionary>`.
 
 .. rst-class:: classref-item-separator
 
@@ -206,14 +206,14 @@ The size of the camera. This class and glTF define the camera size magnitude as 
 
 :ref:`Camera3D<class_Camera3D>` **to_node**\ (\ ) |const| :ref:`🔗<class_GLTFCamera_method_to_node>`
 
-將這個 GLTFCamera 實例轉換為 Godot :ref:`Camera3D<class_Camera3D>` 節點。
+Converts this GLTFCamera instance into a Godot :ref:`Camera3D<class_Camera3D>` node.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

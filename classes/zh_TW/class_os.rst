@@ -5,14 +5,14 @@
 OS
 ==
 
-**繼承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-提供對常見作業系統功能的存取。
+Provides access to common operating system functionalities.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 The **OS** class wraps the most common functionalities for communicating with the host operating system, such as the video driver, delays, environment variables, execution of binaries, command line, etc.
 
@@ -20,15 +20,15 @@ The **OS** class wraps the most common functionalities for communicating with th
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
 - `Operating System Testing Demo <https://godotengine.org/asset-library/asset/2789>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -43,8 +43,8 @@ The **OS** class wraps the most common functionalities for communicating with th
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -211,8 +211,8 @@ The **OS** class wraps the most common functionalities for communicating with th
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_OS_RenderingDriver:
 
@@ -226,7 +226,7 @@ enum **RenderingDriver**: :ref:`🔗<enum_OS_RenderingDriver>`
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_VULKAN** = ``0``
 
-Vulkan 算繪驅動。需要支援 Vulkan 1.0，而 Vulkan 1.1 和 1.2 的功能則會在支援時自動使用。
+The Vulkan rendering driver. It requires Vulkan 1.0 support and automatically uses features from Vulkan 1.1 and 1.2 if available.
 
 .. _class_OS_constant_RENDERING_DRIVER_OPENGL3:
 
@@ -234,7 +234,7 @@ Vulkan 算繪驅動。需要支援 Vulkan 1.0，而 Vulkan 1.1 和 1.2 的功能
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_OPENGL3** = ``1``
 
-OpenGL 3 算繪驅動。在桌面平臺上使用 OpenGL 3.3 核心配置，在移動裝置上使用 OpenGL ES 3.0，在 Web 上使用 WebGL 2.0。
+The OpenGL 3 rendering driver. It uses OpenGL 3.3 Core Profile on desktop platforms, OpenGL ES 3.0 on mobile devices, and WebGL 2.0 on Web.
 
 .. _class_OS_constant_RENDERING_DRIVER_D3D12:
 
@@ -382,8 +382,8 @@ Standard I/O device type is unknown.
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_OS_property_delta_smoothing:
 
@@ -444,8 +444,8 @@ The amount of sleeping between frames when the low-processor usage mode is enabl
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_OS_method_add_logger:
 
@@ -1007,9 +1007,9 @@ If you want only the language code and not the fully specified locale from the O
 
 :ref:`String<class_String>` **get_locale_language**\ (\ ) |const| :ref:`🔗<class_OS_method_get_locale_language>`
 
-將主機作業系統區域設定的 2 或 3 個字母的\ `語言程式碼 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`__\ 作為字串返回，該字串應在所有平臺上保持一致。這相當於提取 :ref:`get_locale()<class_OS_method_get_locale>` 字串的 ``language`` 部分。
+Returns the host OS locale's 2 or 3-letter `language code <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`__ as a string which should be consistent on all platforms. This is equivalent to extracting the ``language`` part of the :ref:`get_locale()<class_OS_method_get_locale>` string.
 
-當你不需要有關國家/地區程式碼或變體的附加資訊時，這可用於將完全指定的區域設定字符串縮小為“通用”語言程式碼。例如，對於使用 ``fr_CA`` 語言環境的加拿大法語使用者，這將返回 ``fr``\ 。
+This can be used to narrow down fully specified locale strings to only the "common" language code, when you don't need the additional information about country code or variants. For example, for a French Canadian user with ``fr_CA`` locale, this would return ``fr``.
 
 .. rst-class:: classref-item-separator
 
@@ -1021,9 +1021,9 @@ If you want only the language code and not the fully specified locale from the O
 
 :ref:`int<class_int>` **get_main_thread_id**\ (\ ) |const| :ref:`🔗<class_OS_method_get_main_thread_id>`
 
-返回主執行緒的 ID。請參閱 :ref:`get_thread_caller_id()<class_OS_method_get_thread_caller_id>`\ 。
+Returns the ID of the main thread. See :ref:`get_thread_caller_id()<class_OS_method_get_thread_caller_id>`.
 
-\ **注意：**\ 執行緒 ID 不是確定的，也許會在套用程式重新開機時被重複使用。
+\ **Note:** Thread IDs are not deterministic and may be reused across application restarts.
 
 .. rst-class:: classref-item-separator
 
@@ -1182,7 +1182,7 @@ Returns the number used by the host machine to uniquely identify this applicatio
 
 :ref:`int<class_int>` **get_processor_count**\ (\ ) |const| :ref:`🔗<class_OS_method_get_processor_count>`
 
-返回主機的\ *邏輯* CPU 核心數。對於啟用了超執行緒的 CPU，這個數會比\ *物理* CPU 核心數大。
+Returns the number of *logical* CPU cores available on the host machine. On CPUs with HyperThreading enabled, this number will be greater than the number of *physical* CPU cores.
 
 .. rst-class:: classref-item-separator
 
@@ -1208,7 +1208,7 @@ Returns the full name of the CPU model on the host machine (e.g. ``"Intel(R) Cor
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_restart_on_exit_arguments**\ (\ ) |const| :ref:`🔗<class_OS_method_get_restart_on_exit_arguments>`
 
-返回當專案使用 :ref:`set_restart_on_exit()<class_OS_method_set_restart_on_exit>` 自動重新啟動時，將使用的命令列參數列表。另請參閱 :ref:`is_restart_on_exit_set()<class_OS_method_is_restart_on_exit_set>`\ 。
+Returns the list of command line arguments that will be used when the project automatically restarts using :ref:`set_restart_on_exit()<class_OS_method_set_restart_on_exit>`. See also :ref:`is_restart_on_exit_set()<class_OS_method_is_restart_on_exit_set>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1380,9 +1380,9 @@ Returns the *global* temporary data directory according to the operating system'
 
 :ref:`int<class_int>` **get_thread_caller_id**\ (\ ) |const| :ref:`🔗<class_OS_method_get_thread_caller_id>`
 
-返回目前執行緒的 ID。這可用於紀錄，以簡化多執行緒套用程式的除錯。
+Returns the ID of the current thread. This can be used in logs to ease debugging of multi-threaded applications.
 
-\ **注意：**\ 執行緒 ID 不是確定的，也許會在套用程式重新開機時被重複使用。
+\ **Note:** Thread IDs are not deterministic and may be reused across application restarts.
 
 .. rst-class:: classref-item-separator
 
@@ -1516,9 +1516,9 @@ The second element holds the driver version. For example, on the ``nvidia`` driv
 
 :ref:`bool<class_bool>` **has_environment**\ (\ variable\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_OS_method_has_environment>`
 
-如果名稱為 ``variable`` 的環境變數存在，則返回 ``true``\ 。
+Returns ``true`` if the environment variable with the name ``variable`` exists.
 
-\ **注意：**\ 請仔細檢查 ``variable`` 的大小寫。環境變數名稱在除 Windows 之外的所有平臺上都區分大小寫。
+\ **Note:** Double-check the casing of ``variable``. Environment variable names are case-sensitive on all platforms except Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -1607,7 +1607,7 @@ Returns ``true`` if the child process ID (``pid``) is still running or ``false``
 
 :ref:`bool<class_bool>` **is_restart_on_exit_set**\ (\ ) |const| :ref:`🔗<class_OS_method_is_restart_on_exit_set>`
 
-如果專案因任何原因退出時將自動重新啟動，則返回 ``true``\ ，否則返回 ``false``\ 。另請參閱 :ref:`set_restart_on_exit()<class_OS_method_set_restart_on_exit>` 和 :ref:`get_restart_on_exit_arguments()<class_OS_method_get_restart_on_exit_arguments>`\ 。
+Returns ``true`` if the project will automatically restart when it exits for any reason, ``false`` otherwise. See also :ref:`set_restart_on_exit()<class_OS_method_set_restart_on_exit>` and :ref:`get_restart_on_exit_arguments()<class_OS_method_get_restart_on_exit_arguments>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1633,7 +1633,7 @@ Returns ``true`` if the application is running in the sandbox.
 
 :ref:`bool<class_bool>` **is_stdout_verbose**\ (\ ) |const| :ref:`🔗<class_OS_method_is_stdout_verbose>`
 
-如果引擎是使用 ``--verbose`` 或 ``-v`` 命令列參數執行的，或者如果 :ref:`ProjectSettings.debug/settings/stdout/verbose_stdout<class_ProjectSettings_property_debug/settings/stdout/verbose_stdout>` 為 ``true``\ ，則返回 ``true``\ 。另請參閱 :ref:`@GlobalScope.print_verbose()<class_@GlobalScope_method_print_verbose>`\ 。
+Returns ``true`` if the engine was executed with the ``--verbose`` or ``-v`` command line argument, or if :ref:`ProjectSettings.debug/settings/stdout/verbose_stdout<class_ProjectSettings_property_debug/settings/stdout/verbose_stdout>` is ``true``. See also :ref:`@GlobalScope.print_verbose()<class_@GlobalScope_method_print_verbose>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1842,7 +1842,7 @@ Requests *dangerous* permissions from the OS. Returns ``true`` if permissions ha
 
 |void| **revoke_granted_permissions**\ (\ ) :ref:`🔗<class_OS_method_revoke_granted_permissions>`
 
-在macOS 上（僅限沙盒應用程式），此函式會清除應用程式可存取的使用者選擇的資料夾列表。
+On macOS (sandboxed applications only), this function clears list of user selected folders accessible to the application.
 
 .. rst-class:: classref-item-separator
 
@@ -1854,9 +1854,9 @@ Requests *dangerous* permissions from the OS. Returns ``true`` if permissions ha
 
 |void| **set_environment**\ (\ variable\: :ref:`String<class_String>`, value\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_OS_method_set_environment>`
 
-將環境變數 ``variable`` 的值設定為 ``value``\ 。運作 :ref:`set_environment()<class_OS_method_set_environment>` 後，會為 Godot 程序和任何用 :ref:`execute()<class_OS_method_execute>` 執行的程序設定該環境變數。該環境變數\ *不會*\ 持續存在於 Godot 程序終止後運作的程序中。
+Sets the value of the environment variable ``variable`` to ``value``. The environment variable will be set for the Godot process and any process executed with :ref:`execute()<class_OS_method_execute>` after running :ref:`set_environment()<class_OS_method_set_environment>`. The environment variable will *not* persist to processes run after the Godot process was terminated.
 
-\ **注意：**\ 環境變數的名稱在除 Windows 外的所有平臺上都是區分大小寫的。名稱 ``variable`` 不能為空，也不能包含 ``=`` 字元。在 Windows 上，在環境塊中註冊的 ``variable``\ 、\ ``value``\ 、\ ``=`` 以及 null 終止符的總長度有 32767 個字元的限制。
+\ **Note:** Environment variable names are case-sensitive on all platforms except Windows. The ``variable`` name cannot be empty or include the ``=`` character. On Windows, there is a 32767 characters limit for the combined length of ``variable``, ``value``, and the ``=`` and null terminator characters that will be registered in the environment block.
 
 .. rst-class:: classref-item-separator
 
@@ -1960,12 +1960,12 @@ Removes the given environment variable from the current environment, if it exist
 
 \ **Note:** Environment variable names are case-sensitive on all platforms except Windows.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

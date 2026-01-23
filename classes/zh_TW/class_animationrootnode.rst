@@ -5,42 +5,34 @@
 AnimationRootNode
 =================
 
-**繼承：** :ref:`AnimationNode<class_AnimationNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`AnimationNode<class_AnimationNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`AnimationNodeAnimation<class_AnimationNodeAnimation>`, :ref:`AnimationNodeBlendSpace1D<class_AnimationNodeBlendSpace1D>`, :ref:`AnimationNodeBlendSpace2D<class_AnimationNodeBlendSpace2D>`, :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`, :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>`
+**Inherited By:** :ref:`AnimationNodeAnimation<class_AnimationNodeAnimation>`, :ref:`AnimationNodeBlendSpace1D<class_AnimationNodeBlendSpace1D>`, :ref:`AnimationNodeBlendSpace2D<class_AnimationNodeBlendSpace2D>`, :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`, :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>`
 
-作為包含一段或多段複合動畫之 :ref:`AnimationNode<class_AnimationNode>` 的基底類別。通常用於 :ref:`AnimationTree.tree_root<class_AnimationTree_property_tree_root>`\ 。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-**AnimationRootNode** 是保存完整動畫之 :ref:`AnimationNode<class_AnimationNode>` 的基底類別。完整動畫指 :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` 中 :ref:`AnimationNodeOutput<class_AnimationNodeOutput>` 的輸出，或其他 **AnimationRootNode** 的輸出。可用於 :ref:`AnimationTree.tree_root<class_AnimationTree_property_tree_root>` 或其他 **AnimationRootNode**\ 。
-
-內建根節點範例包括：
-
-• :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`\ ：可透過多種模式混合節點。
-
-• :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>`\ ：以狀態機樣式設定節點間的混合與過渡。
-
-• :ref:`AnimationNodeBlendSpace2D<class_AnimationNodeBlendSpace2D>`\ ：在 **三個** :ref:`AnimationNode<class_AnimationNode>` 之間進行線性混合。
-
-• :ref:`AnimationNodeBlendSpace1D<class_AnimationNodeBlendSpace1D>`\ ：在 **兩個** :ref:`AnimationNode<class_AnimationNode>` 之間進行線性混合。
+Base class for :ref:`AnimationNode<class_AnimationNode>`\ s that hold one or multiple composite animations. Usually used for :ref:`AnimationTree.tree_root<class_AnimationTree_property_tree_root>`.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`使用 AnimationTree <../tutorials/animation/animation_tree>`
+**AnimationRootNode** is a base class for :ref:`AnimationNode<class_AnimationNode>`\ s that hold a complete animation. A complete animation refers to the output of an :ref:`AnimationNodeOutput<class_AnimationNodeOutput>` in an :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` or the output of another **AnimationRootNode**. Used for :ref:`AnimationTree.tree_root<class_AnimationTree_property_tree_root>` or in other **AnimationRootNode**\ s.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+Examples of built-in root nodes include :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` (allows blending nodes between each other using various modes), :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>` (allows to configure blending and transitions between nodes using a state machine pattern), :ref:`AnimationNodeBlendSpace2D<class_AnimationNodeBlendSpace2D>` (allows linear blending between **three** :ref:`AnimationNode<class_AnimationNode>`\ s), :ref:`AnimationNodeBlendSpace1D<class_AnimationNodeBlendSpace1D>` (allows linear blending only between **two** :ref:`AnimationNode<class_AnimationNode>`\ s).
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Using AnimationTree <../tutorials/animation/animation_tree>`
+
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,46 +5,46 @@
 Quaternion
 ==========
 
-代表 3D 旋转的单位四元数。
+A unit quaternion used for representing 3D rotations.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-**Quaternion** 即四元数，是一种内置的 :ref:`Variant<class_Variant>` 类型，这种 4D 数据结构使用\ `哈密顿四元数 <https://zh.wikipedia.org/zh-cn/%E5%9B%9B%E5%85%83%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E6%97%8B%E8%BD%AC>`__\ 来代表旋转。\ :ref:`Basis<class_Basis>` 类型能够同时存储旋转和缩放，而四元数\ *只能*\ 存储旋转。
+The **Quaternion** built-in :ref:`Variant<class_Variant>` type is a 4D data structure that represents rotation in the form of a `Hamilton convention quaternion <https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__. Compared to the :ref:`Basis<class_Basis>` type which can store both rotation and scale, quaternions can *only* store rotation.
 
-\ **Quaternion** 由 4 个浮点分量组成：\ :ref:`w<class_Quaternion_property_w>`\ 、\ :ref:`x<class_Quaternion_property_x>`\ 、\ :ref:`y<class_Quaternion_property_y>`\ 、\ :ref:`z<class_Quaternion_property_z>`\ 。这些分量在内存中非常紧凑，因此部分运算更加高效、造成的浮点数误差也更低。\ :ref:`get_angle()<class_Quaternion_method_get_angle>`\ 、\ :ref:`get_axis()<class_Quaternion_method_get_axis>`\ 、\ :ref:`slerp()<class_Quaternion_method_slerp>` 等方法与 :ref:`Basis<class_Basis>` 中的版本相比也更快。
+A **Quaternion** is composed by 4 floating-point components: :ref:`w<class_Quaternion_property_w>`, :ref:`x<class_Quaternion_property_x>`, :ref:`y<class_Quaternion_property_y>`, and :ref:`z<class_Quaternion_property_z>`. These components are very compact in memory, and because of this some operations are more efficient and less likely to cause floating-point errors. Methods such as :ref:`get_angle()<class_Quaternion_method_get_angle>`, :ref:`get_axis()<class_Quaternion_method_get_axis>`, and :ref:`slerp()<class_Quaternion_method_slerp>` are faster than their :ref:`Basis<class_Basis>` counterparts.
 
-四元数的入门知识请观看 `3Blue1Brown 的这个视频 <https://www.bilibili.com/video/BV1SW411y7W1/>`__\ 。四元数背后的数学原理并不需要理解，因为 Godot 提供了一些辅助方法能够帮你处理相关的情况。其中包含 :ref:`slerp()<class_Quaternion_method_slerp>`\ 、\ :ref:`spherical_cubic_interpolate()<class_Quaternion_method_spherical_cubic_interpolate>` 以及 ``*`` 运算符。
+For a great introduction to quaternions, see `this video by 3Blue1Brown <https://www.youtube.com/watch?v=d4EgbgTm0Bg>`__. You do not need to know the math behind quaternions, as Godot provides several helper methods that handle it for you. These include :ref:`slerp()<class_Quaternion_method_slerp>` and :ref:`spherical_cubic_interpolate()<class_Quaternion_method_spherical_cubic_interpolate>`, as well as the ``*`` operator.
 
-\ **注意：**\ 用于旋转前，必须将四元数归一化（见 :ref:`normalized()<class_Quaternion_method_normalized>`\ ）。
+\ **Note:** Quaternions must be normalized before being used for rotation (see :ref:`normalized()<class_Quaternion_method_normalized>`).
 
-\ **注意：**\ 与 :ref:`Vector2<class_Vector2>` 和 :ref:`Vector3<class_Vector3>` 类似，四元数的分量默认使用的是 32 位精度，而 :ref:`float<class_float>` 则是 64 位。如果需要双精度，请使用 ``precision=double`` 选项编译引擎。
+\ **Note:** Similarly to :ref:`Vector2<class_Vector2>` and :ref:`Vector3<class_Vector3>`, the components of a quaternion use 32-bit precision by default, unlike :ref:`float<class_float>` which is always 64-bit. If double precision is needed, compile the engine with the option ``precision=double``.
 
 .. note::
 
-	通过 C# 使用该 API 时会有显著不同，详见 :ref:`doc_c_sharp_differences`\ 。
+	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
-- `3Blue1Brown 关于四元数的视频 <https://www.youtube.com/watch?v=d4EgbgTm0Bg>`__
+- `3Blue1Brown's video on Quaternions <https://www.youtube.com/watch?v=d4EgbgTm0Bg>`__
 
-- `在线四元数可视化 <https://quaternions.online/>`__
+- `Online Quaternion Visualization <https://quaternions.online/>`__
 
-- `使用 3D 变换 <../tutorials/3d/using_transforms.html#interpolating-with-quaternions>`__
+- `Using 3D transforms <../tutorials/3d/using_transforms.html#interpolating-with-quaternions>`__
 
-- `第三人称射击（TPS）演示 <https://godotengine.org/asset-library/asset/2710>`__
+- `Third Person Shooter (TPS) Demo <https://godotengine.org/asset-library/asset/2710>`__
 
-- `高级四元数可视化 <https://iwatake2222.github.io/rotation_master/rotation_master.html>`__
+- `Advanced Quaternion Visualization <https://iwatake2222.github.io/rotation_master/rotation_master.html>`__
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -61,8 +61,8 @@ Quaternion
 
 .. rst-class:: classref-reftable-group
 
-构造函数
---------
+Constructors
+------------
 
 .. table::
    :widths: auto
@@ -83,8 +83,8 @@ Quaternion
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -131,8 +131,8 @@ Quaternion
 
 .. rst-class:: classref-reftable-group
 
-运算符
-------
+Operators
+---------
 
 .. table::
    :widths: auto
@@ -171,8 +171,8 @@ Quaternion
 
 .. rst-class:: classref-descriptions-group
 
-常量
-----
+Constants
+---------
 
 .. _class_Quaternion_constant_IDENTITY:
 
@@ -180,11 +180,11 @@ Quaternion
 
 **IDENTITY** = ``Quaternion(0, 0, 0, 1)`` :ref:`🔗<class_Quaternion_constant_IDENTITY>`
 
-单位四元数，代表无旋转。这与 :ref:`Basis.IDENTITY<class_Basis_constant_IDENTITY>` 具有相同的旋转。
+The identity quaternion, representing no rotation. This has the same rotation as :ref:`Basis.IDENTITY<class_Basis_constant_IDENTITY>`.
 
-如果一个 :ref:`Vector3<class_Vector3>` 被该四元数旋转（乘以），则它不会改变。
+If a :ref:`Vector3<class_Vector3>` is rotated (multiplied) by this quaternion, it does not change.
 
-\ **注意：**\ 在 GDScript 中，该常量等价于不带任何参数创建 :ref:`Quaternion<class_Quaternion_constructor_Quaternion>`\ 。可以用来让代码更加清晰，并且与 C# 保持一致。
+\ **Note:** In GDScript, this constant is equivalent to creating a :ref:`Quaternion<class_Quaternion_constructor_Quaternion>` without any arguments. It can be used to make your code clearer, and for consistency with C#.
 
 .. rst-class:: classref-section-separator
 
@@ -192,8 +192,8 @@ Quaternion
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_Quaternion_property_w:
 
@@ -201,9 +201,9 @@ Quaternion
 
 :ref:`float<class_float>` **w** = ``1.0`` :ref:`🔗<class_Quaternion_property_w>`
 
-四元数的 W 分量。这是“实数”的部分。
+W component of the quaternion. This is the "real" part.
 
-\ **注意：**\ 四元数分量通常不应被直接操作。
+\ **Note:** Quaternion components should usually not be manipulated directly.
 
 .. rst-class:: classref-item-separator
 
@@ -215,9 +215,9 @@ Quaternion
 
 :ref:`float<class_float>` **x** = ``0.0`` :ref:`🔗<class_Quaternion_property_x>`
 
-四元数的 X 分量。这是沿“虚数” ``i`` 轴的值。
+X component of the quaternion. This is the value along the "imaginary" ``i`` axis.
 
-\ **注意：**\ 四元数分量通常不应被直接操作。
+\ **Note:** Quaternion components should usually not be manipulated directly.
 
 .. rst-class:: classref-item-separator
 
@@ -229,9 +229,9 @@ Quaternion
 
 :ref:`float<class_float>` **y** = ``0.0`` :ref:`🔗<class_Quaternion_property_y>`
 
-四元数的 Y 分量。这是沿“虚数” ``j`` 轴的值。
+Y component of the quaternion. This is the value along the "imaginary" ``j`` axis.
 
-\ **注意：**\ 四元数分量通常不应被直接操作。
+\ **Note:** Quaternion components should usually not be manipulated directly.
 
 .. rst-class:: classref-item-separator
 
@@ -243,9 +243,9 @@ Quaternion
 
 :ref:`float<class_float>` **z** = ``0.0`` :ref:`🔗<class_Quaternion_property_z>`
 
-四元数的 Z 分量。这是沿“虚数” ``k`` 轴的值。
+Z component of the quaternion. This is the value along the "imaginary" ``k`` axis.
 
-\ **注意：**\ 四元数分量通常不应被直接操作。
+\ **Note:** Quaternion components should usually not be manipulated directly.
 
 .. rst-class:: classref-section-separator
 
@@ -253,8 +253,8 @@ Quaternion
 
 .. rst-class:: classref-descriptions-group
 
-构造函数说明
-------------
+Constructor Descriptions
+------------------------
 
 .. _class_Quaternion_constructor_Quaternion:
 
@@ -262,9 +262,9 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **Quaternion**\ (\ ) :ref:`🔗<class_Quaternion_constructor_Quaternion>`
 
-构造与 :ref:`IDENTITY<class_Quaternion_constant_IDENTITY>` 相同的 **Quaternion**\ 。
+Constructs a **Quaternion** identical to :ref:`IDENTITY<class_Quaternion_constant_IDENTITY>`.
 
-\ **注意：**\ 在 C# 中构造的 **Quaternion** 的所有分量都为 ``0.0``\ 。
+\ **Note:** In C#, this constructs a **Quaternion** with all of its components set to ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -274,7 +274,7 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **Quaternion**\ (\ from\: :ref:`Quaternion<class_Quaternion>`\ )
 
-构造给定 **Quaternion** 的副本。
+Constructs a **Quaternion** as a copy of the given **Quaternion**.
 
 .. rst-class:: classref-item-separator
 
@@ -284,7 +284,7 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **Quaternion**\ (\ arc_from\: :ref:`Vector3<class_Vector3>`, arc_to\: :ref:`Vector3<class_Vector3>`\ )
 
-构造一个表示 ``arc_from`` 和 ``arc_to`` 之间最短弧的 **Quaternion**\ 。这些可以想象为与球体表面相交的两个点，球面半径为 ``1.0``\ 。
+Constructs a **Quaternion** representing the shortest arc between ``arc_from`` and ``arc_to``. These can be imagined as two points intersecting a sphere's surface, with a radius of ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +294,7 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **Quaternion**\ (\ axis\: :ref:`Vector3<class_Vector3>`, angle\: :ref:`float<class_float>`\ )
 
-构造一个 **Quaternion**\ ，表示围绕 ``axis`` 旋转给定的 ``angle`` 弧度。该轴必须是一个归一化向量。
+Constructs a **Quaternion** representing rotation around the ``axis`` by the given ``angle``, in radians. The axis must be a normalized vector.
 
 .. rst-class:: classref-item-separator
 
@@ -304,9 +304,9 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **Quaternion**\ (\ from\: :ref:`Basis<class_Basis>`\ )
 
-根据给定的旋转 :ref:`Basis<class_Basis>` 构造一个 **Quaternion**\ 。
+Constructs a **Quaternion** from the given rotation :ref:`Basis<class_Basis>`.
 
-该构造函数比 :ref:`Basis.get_rotation_quaternion()<class_Basis_method_get_rotation_quaternion>` 更快，但给定的基必须是\ *正交归一化的*\ （请参阅 :ref:`Basis.orthonormalized()<class_Basis_method_orthonormalized>`\ ）。否则，构造函数将失败并返回 :ref:`IDENTITY<class_Quaternion_constant_IDENTITY>`\ 。
+This constructor is faster than :ref:`Basis.get_rotation_quaternion()<class_Basis_method_get_rotation_quaternion>`, but the given basis must be *orthonormalized* (see :ref:`Basis.orthonormalized()<class_Basis_method_orthonormalized>`). Otherwise, the constructor fails and returns :ref:`IDENTITY<class_Quaternion_constant_IDENTITY>`.
 
 .. rst-class:: classref-item-separator
 
@@ -316,9 +316,9 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **Quaternion**\ (\ x\: :ref:`float<class_float>`, y\: :ref:`float<class_float>`, z\: :ref:`float<class_float>`, w\: :ref:`float<class_float>`\ )
 
-构造一个由给定值定义的 **Quaternion**\ 。
+Constructs a **Quaternion** defined by the given values.
 
-\ **注意：**\ 只有归一化的四元数才表示旋转；如果这些值没有归一化，则新的 **Quaternion** 将不是有效的旋转。
+\ **Note:** Only normalized quaternions represent rotation; if these values are not normalized, the new **Quaternion** will not be a valid rotation.
 
 .. rst-class:: classref-section-separator
 
@@ -326,8 +326,8 @@ Quaternion
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_Quaternion_method_angle_to:
 
@@ -335,9 +335,9 @@ Quaternion
 
 :ref:`float<class_float>` **angle_to**\ (\ to\: :ref:`Quaternion<class_Quaternion>`\ ) |const| :ref:`🔗<class_Quaternion_method_angle_to>`
 
-返回这个四元数与 ``to`` 之间的角度。这是从一个旋转到另一个旋转所需的角度大小。
+Returns the angle between this quaternion and ``to``. This is the magnitude of the angle you would need to rotate by to get from one to the other.
 
-\ **注意：**\ 该方法的浮点数误差异常地高，因此 ``is_zero_approx`` 等方法的结果不可靠。
+\ **Note:** The magnitude of the floating-point error for this method is abnormally high, so methods such as ``is_zero_approx`` will not work reliably.
 
 .. rst-class:: classref-item-separator
 
@@ -349,9 +349,9 @@ Quaternion
 
 :ref:`float<class_float>` **dot**\ (\ with\: :ref:`Quaternion<class_Quaternion>`\ ) |const| :ref:`🔗<class_Quaternion_method_dot>`
 
-返回该四元数与 ``with`` 的点积。
+Returns the dot product between this quaternion and ``with``.
 
-等价于 ``(quat.x * with.x) + (quat.y * with.y) + (quat.z * with.z) + (quat.w * with.w)``\ 。
+This is equivalent to ``(quat.x * with.x) + (quat.y * with.y) + (quat.z * with.z) + (quat.w * with.w)``.
 
 .. rst-class:: classref-item-separator
 
@@ -363,7 +363,7 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **exp**\ (\ ) |const| :ref:`🔗<class_Quaternion_method_exp>`
 
-返回该四元数的指数。该结果的旋转轴是该四元数的归一化旋转轴，该结果的角度是该四元数的向量部分的长度。
+Returns the exponential of this quaternion. The rotation axis of the result is the normalized rotation axis of this quaternion, the angle of the result is the length of the vector part of this quaternion.
 
 .. rst-class:: classref-item-separator
 
@@ -375,7 +375,7 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **from_euler**\ (\ euler\: :ref:`Vector3<class_Vector3>`\ ) |static| :ref:`🔗<class_Quaternion_method_from_euler>`
 
-从给定的 `欧拉角 <https://en.wikipedia.org/wiki/Euler_angles>`__\ 的 :ref:`Vector3<class_Vector3>` 弧度角构造一个新的 **Quaternion**\ 。该方法始终使用 YXZ 约定（\ :ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`\ ）。
+Constructs a new **Quaternion** from the given :ref:`Vector3<class_Vector3>` of `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians. This method always uses the YXZ convention (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`).
 
 .. rst-class:: classref-item-separator
 
@@ -387,9 +387,9 @@ Quaternion
 
 :ref:`float<class_float>` **get_angle**\ (\ ) |const| :ref:`🔗<class_Quaternion_method_get_angle>`
 
-返回该四元数表示的旋转角度。
+Returns the angle of the rotation represented by this quaternion.
 
-\ **注意：**\ 该四元数必须被归一化。
+\ **Note:** The quaternion must be normalized.
 
 .. rst-class:: classref-item-separator
 
@@ -401,7 +401,7 @@ Quaternion
 
 :ref:`Vector3<class_Vector3>` **get_axis**\ (\ ) |const| :ref:`🔗<class_Quaternion_method_get_axis>`
 
-返回该四元数表示的旋转的旋转轴。
+Returns the rotation axis of the rotation represented by this quaternion.
 
 .. rst-class:: classref-item-separator
 
@@ -413,9 +413,9 @@ Quaternion
 
 :ref:`Vector3<class_Vector3>` **get_euler**\ (\ order\: :ref:`int<class_int>` = 2\ ) |const| :ref:`🔗<class_Quaternion_method_get_euler>`
 
-返回该四元数的旋转作为\ `欧拉角 <https://en.wikipedia.org/wiki/Euler_angles>`__\ 弧度角的 :ref:`Vector3<class_Vector3>`\ 。
+Returns this quaternion's rotation as a :ref:`Vector3<class_Vector3>` of `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians.
 
-每个连续旋转的顺序可以使用 ``order`` 更改（请参阅 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` 常量）。默认情况下，使用 YXZ 约定（\ :ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`\ ）：首先计算 Z（翻滚），然后计算 X（俯仰），最后计算 Y（偏航）。当使用相反的方法 :ref:`from_euler()<class_Quaternion_method_from_euler>` 时，该顺序相反。
+The order of each consecutive rotation can be changed with ``order`` (see :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` constants). By default, the YXZ convention is used (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): Z (roll) is calculated first, then X (pitch), and lastly Y (yaw). When using the opposite method :ref:`from_euler()<class_Quaternion_method_from_euler>`, this order is reversed.
 
 .. rst-class:: classref-item-separator
 
@@ -427,7 +427,7 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **inverse**\ (\ ) |const| :ref:`🔗<class_Quaternion_method_inverse>`
 
-返回该四元数的逆版本，反转除 :ref:`w<class_Quaternion_property_w>` 之外的每个分量的符号。
+Returns the inverse version of this quaternion, inverting the sign of every component except :ref:`w<class_Quaternion_property_w>`.
 
 .. rst-class:: classref-item-separator
 
@@ -439,7 +439,7 @@ Quaternion
 
 :ref:`bool<class_bool>` **is_equal_approx**\ (\ to\: :ref:`Quaternion<class_Quaternion>`\ ) |const| :ref:`🔗<class_Quaternion_method_is_equal_approx>`
 
-如果该四元数和 ``to`` 近似相等，则返回 ``true``\ ，判断方法是通过对每个分量调用 :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>`\ 。
+Returns ``true`` if this quaternion and ``to`` are approximately equal, by calling :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>` on each component.
 
 .. rst-class:: classref-item-separator
 
@@ -451,7 +451,7 @@ Quaternion
 
 :ref:`bool<class_bool>` **is_finite**\ (\ ) |const| :ref:`🔗<class_Quaternion_method_is_finite>`
 
-如果该四元数是有限的，则返回 ``true``\ ，判断方法是在每个分量上调用 :ref:`@GlobalScope.is_finite()<class_@GlobalScope_method_is_finite>`\ 。
+Returns ``true`` if this quaternion is finite, by calling :ref:`@GlobalScope.is_finite()<class_@GlobalScope_method_is_finite>` on each component.
 
 .. rst-class:: classref-item-separator
 
@@ -463,7 +463,7 @@ Quaternion
 
 :ref:`bool<class_bool>` **is_normalized**\ (\ ) |const| :ref:`🔗<class_Quaternion_method_is_normalized>`
 
-如果该四元数已被归一化，则返回 ``true``\ 。另见 :ref:`normalized()<class_Quaternion_method_normalized>`\ 。
+Returns ``true`` if this quaternion is normalized. See also :ref:`normalized()<class_Quaternion_method_normalized>`.
 
 .. rst-class:: classref-item-separator
 
@@ -475,7 +475,7 @@ Quaternion
 
 :ref:`float<class_float>` **length**\ (\ ) |const| :ref:`🔗<class_Quaternion_method_length>`
 
-返回该四元数的长度，也被称为幅度。
+Returns this quaternion's length, also called magnitude.
 
 .. rst-class:: classref-item-separator
 
@@ -487,9 +487,9 @@ Quaternion
 
 :ref:`float<class_float>` **length_squared**\ (\ ) |const| :ref:`🔗<class_Quaternion_method_length_squared>`
 
-返回该四元数的长度的平方。
+Returns this quaternion's length, squared.
 
-\ **注意：**\ 该方法比 :ref:`length()<class_Quaternion_method_length>` 更快，因此如果你只需要比较四元数的长度，则优先使用它。
+\ **Note:** This method is faster than :ref:`length()<class_Quaternion_method_length>`, so prefer it if you only need to compare quaternion lengths.
 
 .. rst-class:: classref-item-separator
 
@@ -501,7 +501,7 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **log**\ (\ ) |const| :ref:`🔗<class_Quaternion_method_log>`
 
-返回该四元数的对数。将该四元数的旋转轴乘以它的旋转角度，并将结果存储在返回的四元数的向量部分（\ :ref:`x<class_Quaternion_property_x>`\ 、\ :ref:`y<class_Quaternion_property_y>` 和 :ref:`z<class_Quaternion_property_z>`\ ）中。返回的四元数的实数部分（\ :ref:`w<class_Quaternion_property_w>`\ ）始终为 ``0.0``\ 。
+Returns the logarithm of this quaternion. Multiplies this quaternion's rotation axis by its rotation angle, and stores the result in the returned quaternion's vector part (:ref:`x<class_Quaternion_property_x>`, :ref:`y<class_Quaternion_property_y>`, and :ref:`z<class_Quaternion_property_z>`). The returned quaternion's real part (:ref:`w<class_Quaternion_property_w>`) is always ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -513,7 +513,7 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **normalized**\ (\ ) |const| :ref:`🔗<class_Quaternion_method_normalized>`
 
-返回该四元数的副本，已归一化，因此其长度为 ``1.0``\ 。另见 :ref:`is_normalized()<class_Quaternion_method_is_normalized>`\ 。
+Returns a copy of this quaternion, normalized so that its length is ``1.0``. See also :ref:`is_normalized()<class_Quaternion_method_is_normalized>`.
 
 .. rst-class:: classref-item-separator
 
@@ -525,7 +525,7 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **slerp**\ (\ to\: :ref:`Quaternion<class_Quaternion>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Quaternion_method_slerp>`
 
-使用 ``to`` 四元数，在给定 ``weight`` 下执行球面线性插值并返回结果。该四元数和 ``to`` 都必须已归一化。
+Performs a spherical-linear interpolation with the ``to`` quaternion, given a ``weight`` and returns the result. Both this quaternion and ``to`` must be normalized.
 
 .. rst-class:: classref-item-separator
 
@@ -537,7 +537,7 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **slerpni**\ (\ to\: :ref:`Quaternion<class_Quaternion>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Quaternion_method_slerpni>`
 
-在给定 ``weight`` 的情况下，使用 ``to`` 四元数执行球面线性插值并返回结果。与 :ref:`slerp()<class_Quaternion_method_slerp>` 不同，该方法不检查旋转路径是否小于 90 度。该四元数和 ``to`` 都必须是归一化的。
+Performs a spherical-linear interpolation with the ``to`` quaternion, given a ``weight`` and returns the result. Unlike :ref:`slerp()<class_Quaternion_method_slerp>`, this method does not check if the rotation path is smaller than 90 degrees. Both this quaternion and ``to`` must be normalized.
 
 .. rst-class:: classref-item-separator
 
@@ -549,7 +549,7 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **spherical_cubic_interpolate**\ (\ b\: :ref:`Quaternion<class_Quaternion>`, pre_a\: :ref:`Quaternion<class_Quaternion>`, post_b\: :ref:`Quaternion<class_Quaternion>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Quaternion_method_spherical_cubic_interpolate>`
 
-在四元数 ``pre_a``\ 、这个向量、\ ``b`` 以及 ``post_b`` 之间按照给定的 ``weight`` 进行球面三次插值。
+Performs a spherical cubic interpolation between quaternions ``pre_a``, this vector, ``b``, and ``post_b``, by the given amount ``weight``.
 
 .. rst-class:: classref-item-separator
 
@@ -561,9 +561,9 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **spherical_cubic_interpolate_in_time**\ (\ b\: :ref:`Quaternion<class_Quaternion>`, pre_a\: :ref:`Quaternion<class_Quaternion>`, post_b\: :ref:`Quaternion<class_Quaternion>`, weight\: :ref:`float<class_float>`, b_t\: :ref:`float<class_float>`, pre_a_t\: :ref:`float<class_float>`, post_b_t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Quaternion_method_spherical_cubic_interpolate_in_time>`
 
-在四元数 ``pre_a``\ 、该向量、\ ``b`` 和 ``post_b`` 之间，按给定量 ``weight`` 执行三次球面插值。
+Performs a spherical cubic interpolation between quaternions ``pre_a``, this vector, ``b``, and ``post_b``, by the given amount ``weight``.
 
-它可以根据时间值执行比 :ref:`spherical_cubic_interpolate()<class_Quaternion_method_spherical_cubic_interpolate>` 更平滑的插值。
+It can perform smoother interpolation than :ref:`spherical_cubic_interpolate()<class_Quaternion_method_spherical_cubic_interpolate>` by the time values.
 
 .. rst-class:: classref-section-separator
 
@@ -571,8 +571,8 @@ Quaternion
 
 .. rst-class:: classref-descriptions-group
 
-运算符说明
-----------
+Operator Descriptions
+---------------------
 
 .. _class_Quaternion_operator_neq_Quaternion:
 
@@ -580,9 +580,9 @@ Quaternion
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_Quaternion_operator_neq_Quaternion>`
 
-如果两个四元数的分量不完全相等，则返回 ``true``\ 。
+Returns ``true`` if the components of both quaternions are not exactly equal.
 
-\ **注意：**\ 由于浮点精度误差，请考虑改用 :ref:`is_equal_approx()<class_Quaternion_method_is_equal_approx>`\ ，这样更可靠。
+\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Quaternion_method_is_equal_approx>` instead, which is more reliable.
 
 .. rst-class:: classref-item-separator
 
@@ -594,7 +594,7 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **operator ***\ (\ right\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_Quaternion_operator_mul_Quaternion>`
 
-组合（相乘）两个四元数。这会由该四元数（父项）旋转 ``right`` 四元数（子项）。
+Composes (multiplies) two quaternions. This rotates the ``right`` quaternion (the child) by this quaternion (the parent).
 
 .. rst-class:: classref-item-separator
 
@@ -606,7 +606,7 @@ Quaternion
 
 :ref:`Vector3<class_Vector3>` **operator ***\ (\ right\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Quaternion_operator_mul_Vector3>`
 
-由该四元数旋转（乘以） ``right`` 向量，返回一个 :ref:`Vector3<class_Vector3>`\ 。
+Rotates (multiplies) the ``right`` vector by this quaternion, returning a :ref:`Vector3<class_Vector3>`.
 
 .. rst-class:: classref-item-separator
 
@@ -618,9 +618,9 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **operator ***\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Quaternion_operator_mul_float>`
 
-将该 **Quaternion** 的每个分量乘以右侧的 :ref:`float<class_float>` 值。
+Multiplies each component of the **Quaternion** by the right :ref:`float<class_float>` value.
 
-该操作本身没有意义，但可以用作更大表达式的一部分。
+This operation is not meaningful on its own, but it can be used as a part of a larger expression.
 
 .. rst-class:: classref-item-separator
 
@@ -632,9 +632,9 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **operator ***\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Quaternion_operator_mul_int>`
 
-将该 **Quaternion** 的每个分量乘以右侧 :ref:`int<class_int>` 值。
+Multiplies each component of the **Quaternion** by the right :ref:`int<class_int>` value.
 
-该操作本身没有意义，但可以用作更大表达式的一部分。
+This operation is not meaningful on its own, but it can be used as a part of a larger expression.
 
 .. rst-class:: classref-item-separator
 
@@ -646,9 +646,9 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **operator +**\ (\ right\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_Quaternion_operator_sum_Quaternion>`
 
-将左侧 **Quaternion** 的每个分量添加到右侧 **Quaternion**\ 。
+Adds each component of the left **Quaternion** to the right **Quaternion**.
 
-该操作本身没有意义，但可以用作更大表达式的一部分，例如用于近似两个相邻旋转之间的中间旋转。
+This operation is not meaningful on its own, but it can be used as a part of a larger expression, such as approximating an intermediate rotation between two nearby rotations.
 
 .. rst-class:: classref-item-separator
 
@@ -660,9 +660,9 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **operator -**\ (\ right\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_Quaternion_operator_dif_Quaternion>`
 
-将左侧 **Quaternion** 的每个分量减去右侧 **Quaternion**\ 。
+Subtracts each component of the left **Quaternion** by the right **Quaternion**.
 
-该操作本身没有意义，但可以用作更大表达式的一部分。
+This operation is not meaningful on its own, but it can be used as a part of a larger expression.
 
 .. rst-class:: classref-item-separator
 
@@ -674,9 +674,9 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **operator /**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Quaternion_operator_div_float>`
 
-将该 **Quaternion** 的每个分量除以右侧 :ref:`float<class_float>` 值。
+Divides each component of the **Quaternion** by the right :ref:`float<class_float>` value.
 
-该操作本身没有意义，但可以用作更大表达式的一部分。
+This operation is not meaningful on its own, but it can be used as a part of a larger expression.
 
 .. rst-class:: classref-item-separator
 
@@ -688,9 +688,9 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **operator /**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Quaternion_operator_div_int>`
 
-将该 **Quaternion** 的每个分量除以右侧的 :ref:`int<class_int>` 值。
+Divides each component of the **Quaternion** by the right :ref:`int<class_int>` value.
 
-该操作本身没有意义，但可以用作更大表达式的一部分。
+This operation is not meaningful on its own, but it can be used as a part of a larger expression.
 
 .. rst-class:: classref-item-separator
 
@@ -702,9 +702,9 @@ Quaternion
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_Quaternion_operator_eq_Quaternion>`
 
-如果两个四元数的分量完全相等，则返回 ``true``\ 。
+Returns ``true`` if the components of both quaternions are exactly equal.
 
-\ **注意：**\ 由于浮点精度误差，请考虑改用 :ref:`is_equal_approx()<class_Quaternion_method_is_equal_approx>`\ ，这样更可靠。
+\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Quaternion_method_is_equal_approx>` instead, which is more reliable.
 
 .. rst-class:: classref-item-separator
 
@@ -716,9 +716,9 @@ Quaternion
 
 :ref:`float<class_float>` **operator []**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Quaternion_operator_idx_int>`
 
-通过索引访问该四元数的每个分量。
+Accesses each component of this quaternion by their index.
 
-索引 ``0`` 与 :ref:`x<class_Quaternion_property_x>` 相同，索引 ``1`` 与 :ref:`y<class_Quaternion_property_y>` 相同，索引 ``2`` 与 :ref:`z<class_Quaternion_property_z>` 相同，索引 ``3`` 与 :ref:`w<class_Quaternion_property_w>` 相同。
+Index ``0`` is the same as :ref:`x<class_Quaternion_property_x>`, index ``1`` is the same as :ref:`y<class_Quaternion_property_y>`, index ``2`` is the same as :ref:`z<class_Quaternion_property_z>`, and index ``3`` is the same as :ref:`w<class_Quaternion_property_w>`.
 
 .. rst-class:: classref-item-separator
 
@@ -730,7 +730,7 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **operator unary+**\ (\ ) :ref:`🔗<class_Quaternion_operator_unplus>`
 
-返回与 ``+`` 不存在时相同的值。单目 ``+`` 没有作用，但有时可以使你的代码更具可读性。
+Returns the same value as if the ``+`` was not there. Unary ``+`` does nothing, but sometimes it can make your code more readable.
 
 .. rst-class:: classref-item-separator
 
@@ -742,14 +742,14 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **operator unary-**\ (\ ) :ref:`🔗<class_Quaternion_operator_unminus>`
 
-返回该 **Quaternion** 的负值。这与将所有分量乘以 ``-1`` 相同。这个操作得到的是代表相同旋转的四元数。
+Returns the negative value of the **Quaternion**. This is the same as multiplying all components by ``-1``. This operation results in a quaternion that represents the same rotation.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

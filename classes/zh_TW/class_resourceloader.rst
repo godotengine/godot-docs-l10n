@@ -5,14 +5,14 @@
 ResourceLoader
 ==============
 
-**繼承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-用於載入資源檔的單例。
+A singleton for loading resource files.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 A singleton used to load resource files from the filesystem.
 
@@ -24,8 +24,8 @@ It uses the many :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` classes
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
 - `Threaded Loading Demo <https://godotengine.org/asset-library/asset/2778>`__
 
@@ -33,8 +33,8 @@ It uses the many :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` classes
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -75,8 +75,8 @@ It uses the many :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` classes
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_ResourceLoader_ThreadLoadStatus:
 
@@ -90,7 +90,7 @@ enum **ThreadLoadStatus**: :ref:`🔗<enum_ResourceLoader_ThreadLoadStatus>`
 
 :ref:`ThreadLoadStatus<enum_ResourceLoader_ThreadLoadStatus>` **THREAD_LOAD_INVALID_RESOURCE** = ``0``
 
-該資源無效，或尚未使用 :ref:`load_threaded_request()<class_ResourceLoader_method_load_threaded_request>` 載入。
+The resource is invalid, or has not been loaded with :ref:`load_threaded_request()<class_ResourceLoader_method_load_threaded_request>`.
 
 .. _class_ResourceLoader_constant_THREAD_LOAD_IN_PROGRESS:
 
@@ -98,7 +98,7 @@ enum **ThreadLoadStatus**: :ref:`🔗<enum_ResourceLoader_ThreadLoadStatus>`
 
 :ref:`ThreadLoadStatus<enum_ResourceLoader_ThreadLoadStatus>` **THREAD_LOAD_IN_PROGRESS** = ``1``
 
-該資源仍在載入中。
+The resource is still being loaded.
 
 .. _class_ResourceLoader_constant_THREAD_LOAD_FAILED:
 
@@ -106,7 +106,7 @@ enum **ThreadLoadStatus**: :ref:`🔗<enum_ResourceLoader_ThreadLoadStatus>`
 
 :ref:`ThreadLoadStatus<enum_ResourceLoader_ThreadLoadStatus>` **THREAD_LOAD_FAILED** = ``2``
 
-載入過程中發生了錯誤，導致失敗。
+Some error occurred during loading and it failed.
 
 .. _class_ResourceLoader_constant_THREAD_LOAD_LOADED:
 
@@ -114,7 +114,7 @@ enum **ThreadLoadStatus**: :ref:`🔗<enum_ResourceLoader_ThreadLoadStatus>`
 
 :ref:`ThreadLoadStatus<enum_ResourceLoader_ThreadLoadStatus>` **THREAD_LOAD_LOADED** = ``3``
 
-資源成功載入，可以通過 :ref:`load_threaded_get()<class_ResourceLoader_method_load_threaded_get>` 存取。
+The resource was loaded successfully and can be accessed via :ref:`load_threaded_get()<class_ResourceLoader_method_load_threaded_get>`.
 
 .. rst-class:: classref-item-separator
 
@@ -172,8 +172,8 @@ Like :ref:`CACHE_MODE_REPLACE<class_ResourceLoader_constant_CACHE_MODE_REPLACE>`
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_ResourceLoader_method_add_resource_format_loader:
 
@@ -181,9 +181,9 @@ Like :ref:`CACHE_MODE_REPLACE<class_ResourceLoader_constant_CACHE_MODE_REPLACE>`
 
 |void| **add_resource_format_loader**\ (\ format_loader\: :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`, at_front\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_ResourceLoader_method_add_resource_format_loader>`
 
-註冊一個新的 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`\ 。ResourceLoader 將會按照 :ref:`load()<class_ResourceLoader_method_load>` 中的描述使用 ResourceFormatLoader。
+Registers a new :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`. The ResourceLoader will use the ResourceFormatLoader as described in :ref:`load()<class_ResourceLoader_method_load>`.
 
-對於用 GDScript 編寫的 ResourceFormatLoader，此方法將隱式執行（詳見 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`\ ）。
+This method is performed implicitly for ResourceFormatLoaders written in GDScript (see :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` for more information).
 
 .. rst-class:: classref-item-separator
 
@@ -248,7 +248,7 @@ Each dependency is a string that can be divided into sections by ``::``. There c
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_recognized_extensions_for_type**\ (\ type\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ResourceLoader_method_get_recognized_extensions_for_type>`
 
-返回資源型別的已識別副檔名列表。
+Returns the list of recognized extensions for a resource type.
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +260,7 @@ Each dependency is a string that can be divided into sections by ``::``. There c
 
 :ref:`int<class_int>` **get_resource_uid**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ResourceLoader_method_get_resource_uid>`
 
-返回與一個給定資源路徑關聯的 ID，如果不存在此類 ID，則返回 ``-1``\ 。
+Returns the ID associated with a given resource path, or ``-1`` when no such ID exists.
 
 .. rst-class:: classref-item-separator
 
@@ -272,9 +272,9 @@ Each dependency is a string that can be divided into sections by ``::``. There c
 
 :ref:`bool<class_bool>` **has_cached**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ResourceLoader_method_has_cached>`
 
-返回給定 ``path`` 的快取資源是否可用。
+Returns whether a cached resource is available for the given ``path``.
 
-一旦引擎載入了資源，它將被快取在記憶體中以加快存取速度，未來呼叫 :ref:`load()<class_ResourceLoader_method_load>` 方法將使用快取版本。可以通過在具有相同路徑的新資源上使用 :ref:`Resource.take_over_path()<class_Resource_method_take_over_path>` 來覆蓋快取資源。
+Once a resource has been loaded by the engine, it is cached in memory for faster access, and future calls to the :ref:`load()<class_ResourceLoader_method_load>` method will use the cached version. The cached resource can be overridden by using :ref:`Resource.take_over_path()<class_Resource_method_take_over_path>` on a new resource for that same path.
 
 .. rst-class:: classref-item-separator
 
@@ -377,7 +377,7 @@ The ``cache_mode`` parameter defines whether and how the cache should be used or
 
 |void| **remove_resource_format_loader**\ (\ format_loader\: :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`\ ) :ref:`🔗<class_ResourceLoader_method_remove_resource_format_loader>`
 
-取消註冊給定的 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`\ 。
+Unregisters the given :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`.
 
 .. rst-class:: classref-item-separator
 
@@ -389,14 +389,14 @@ The ``cache_mode`` parameter defines whether and how the cache should be used or
 
 |void| **set_abort_on_missing_resources**\ (\ abort\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ResourceLoader_method_set_abort_on_missing_resources>`
 
-更改缺少子資源時的行為。預設行為是中止載入。
+Changes the behavior on missing sub-resources. The default behavior is to abort loading.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

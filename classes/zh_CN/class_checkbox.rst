@@ -5,25 +5,25 @@
 CheckBox
 ========
 
-**继承：** :ref:`Button<class_Button>` **<** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Button<class_Button>` **<** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-代表二元选项的按钮。
+A button that represents a binary choice.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-**CheckBox** 允许用户在仅有的两个可能的选项中选择一个。它在功能上类似于 :ref:`CheckButton<class_CheckButton>`\ ，但外观不同。为了遵循既定的 UX 模式，建议在切换而\ **不会**\ 立即对某些内容产生影响时使用 **CheckBox**\ 。例如，切换后只会在按下确认按钮后才执行某些操作时，就可以使用它。
+**CheckBox** allows the user to choose one of only two possible options. It's similar to :ref:`CheckButton<class_CheckButton>` in functionality, but it has a different appearance. To follow established UX patterns, it's recommended to use **CheckBox** when toggling it has **no** immediate effect on something. For example, it could be used when toggling it will only do something once a confirmation button is pressed.
 
-另见 :ref:`BaseButton<class_BaseButton>`\ ，其中包含与该节点相关的通用属性和方法。
+See also :ref:`BaseButton<class_BaseButton>` which contains common properties and methods associated with this node.
 
-当 :ref:`BaseButton.button_group<class_BaseButton_property_button_group>` 指定 :ref:`ButtonGroup<class_ButtonGroup>` 时，\ **CheckBox** 的外观将变为单选按钮，并使用各种 ``radio_*`` 主题属性。
+When :ref:`BaseButton.button_group<class_BaseButton_property_button_group>` specifies a :ref:`ButtonGroup<class_ButtonGroup>`, **CheckBox** changes its appearance to that of a radio button and uses the various ``radio_*`` theme properties.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ CheckBox
 
 .. rst-class:: classref-reftable-group
 
-主题属性
---------
+Theme Properties
+----------------
 
 .. table::
    :widths: auto
@@ -72,8 +72,8 @@ CheckBox
 
 .. rst-class:: classref-descriptions-group
 
-主题属性说明
-------------
+Theme Property Descriptions
+---------------------------
 
 .. _class_CheckBox_theme_color_checkbox_checked_color:
 
@@ -81,7 +81,7 @@ CheckBox
 
 :ref:`Color<class_Color>` **checkbox_checked_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_CheckBox_theme_color_checkbox_checked_color>`
 
-勾选图标的颜色，该 **CheckBox** 被按下时显示。
+The color of the checked icon when the checkbox is pressed.
 
 .. rst-class:: classref-item-separator
 
@@ -93,7 +93,7 @@ CheckBox
 
 :ref:`Color<class_Color>` **checkbox_unchecked_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_CheckBox_theme_color_checkbox_unchecked_color>`
 
-未勾选图标的颜色，该 **CheckBox** 未被按下时显示。
+The color of the unchecked icon when the checkbox is not pressed.
 
 .. rst-class:: classref-item-separator
 
@@ -105,7 +105,7 @@ CheckBox
 
 :ref:`int<class_int>` **check_v_offset** = ``0`` :ref:`🔗<class_CheckBox_theme_constant_check_v_offset>`
 
-渲染勾选图标时使用的垂直偏移量（单位：像素）。
+The vertical offset used when rendering the check icons (in pixels).
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ CheckBox
 
 :ref:`Texture2D<class_Texture2D>` **checked** :ref:`🔗<class_CheckBox_theme_icon_checked>`
 
-勾选图标，该 **CheckBox** 被勾选时显示。
+The check icon to display when the **CheckBox** is checked.
 
 .. rst-class:: classref-item-separator
 
@@ -129,7 +129,7 @@ CheckBox
 
 :ref:`Texture2D<class_Texture2D>` **checked_disabled** :ref:`🔗<class_CheckBox_theme_icon_checked_disabled>`
 
-勾选图标，该 **CheckBox** 被勾选且被禁用时显示。
+The check icon to display when the **CheckBox** is checked and is disabled.
 
 .. rst-class:: classref-item-separator
 
@@ -141,7 +141,7 @@ CheckBox
 
 :ref:`Texture2D<class_Texture2D>` **radio_checked** :ref:`🔗<class_CheckBox_theme_icon_radio_checked>`
 
-勾选图标，该 **CheckBox** 被配置为单选按钮、被勾选时显示。
+The check icon to display when the **CheckBox** is configured as a radio button and is checked.
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ CheckBox
 
 :ref:`Texture2D<class_Texture2D>` **radio_checked_disabled** :ref:`🔗<class_CheckBox_theme_icon_radio_checked_disabled>`
 
-勾选图标，该 **CheckBox** 被配置为单选按钮、被禁用且未勾选时显示。
+The check icon to display when the **CheckBox** is configured as a radio button, is disabled, and is unchecked.
 
 .. rst-class:: classref-item-separator
 
@@ -165,7 +165,7 @@ CheckBox
 
 :ref:`Texture2D<class_Texture2D>` **radio_unchecked** :ref:`🔗<class_CheckBox_theme_icon_radio_unchecked>`
 
-勾选图标，该 **CheckBox** 被配置为单选按钮、未勾选时显示。
+The check icon to display when the **CheckBox** is configured as a radio button and is unchecked.
 
 .. rst-class:: classref-item-separator
 
@@ -177,7 +177,7 @@ CheckBox
 
 :ref:`Texture2D<class_Texture2D>` **radio_unchecked_disabled** :ref:`🔗<class_CheckBox_theme_icon_radio_unchecked_disabled>`
 
-勾选图标，该 **CheckBox** 被配置为单选按钮、被禁用且未勾选时显示。
+The check icon to display when the **CheckBox** is configured as a radio button, is disabled, and is unchecked.
 
 .. rst-class:: classref-item-separator
 
@@ -189,7 +189,7 @@ CheckBox
 
 :ref:`Texture2D<class_Texture2D>` **unchecked** :ref:`🔗<class_CheckBox_theme_icon_unchecked>`
 
-勾选图标，该 **CheckBox** 未勾选时显示。
+The check icon to display when the **CheckBox** is unchecked.
 
 .. rst-class:: classref-item-separator
 
@@ -201,14 +201,14 @@ CheckBox
 
 :ref:`Texture2D<class_Texture2D>` **unchecked_disabled** :ref:`🔗<class_CheckBox_theme_icon_unchecked_disabled>`
 
-勾选图标，该 **CheckBox** 未勾选且被禁用时显示。
+The check icon to display when the **CheckBox** is unchecked and is disabled.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

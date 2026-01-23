@@ -5,38 +5,38 @@
 AnimatableBody3D
 ================
 
-**繼承：** :ref:`StaticBody3D<class_StaticBody3D>` **<** :ref:`PhysicsBody3D<class_PhysicsBody3D>` **<** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`StaticBody3D<class_StaticBody3D>` **<** :ref:`PhysicsBody3D<class_PhysicsBody3D>` **<** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-無法被外力移動的 3D 物理實體；手動移動時會影響途經的其他實體。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-可動畫的 3D 物理實體。雖無法因外力或碰撞而移動，但可透過程式碼、\ :ref:`AnimationMixer<class_AnimationMixer>`\ （\ :ref:`AnimationMixer.callback_mode_process<class_AnimationMixer_property_callback_mode_process>` 設為 :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS>`\ ）、\ :ref:`RemoteTransform3D<class_RemoteTransform3D>` 等方式手動移動。
-
-當 **AnimatableBody3D** 被移動時，系統會估算其線速度與角速度，並用來影響行徑上的其他物理實體，因此特別適合做為移動平台、門等可動物件。
+A 3D physics body that can't be moved by external forces. When moved manually, it affects other bodies in its path.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`物理介紹 <../tutorials/physics/physics_introduction>`
+An animatable 3D physics body. It can't be moved by external forces or contacts, but can be moved manually by other means such as code, :ref:`AnimationMixer<class_AnimationMixer>`\ s (with :ref:`AnimationMixer.callback_mode_process<class_AnimationMixer_property_callback_mode_process>` set to :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS>`), and :ref:`RemoteTransform3D<class_RemoteTransform3D>`.
+
+When **AnimatableBody3D** is moved, its linear and angular velocity are estimated and used to affect other physics bodies in its path. This makes it useful for moving platforms, doors, and other moving objects.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Physics introduction <../tutorials/physics/physics_introduction>`
 
 - :doc:`Troubleshooting physics issues <../tutorials/physics/troubleshooting_physics_issues>`
 
-- `3D 物理測試示範 <https://godotengine.org/asset-library/asset/2747>`__
+- `3D Physics Tests Demo <https://godotengine.org/asset-library/asset/2747>`__
 
-- `第三人稱射擊（TPS）示範 <https://godotengine.org/asset-library/asset/2710>`__
+- `Third Person Shooter (TPS) Demo <https://godotengine.org/asset-library/asset/2710>`__
 
-- `3D 體素示範 <https://godotengine.org/asset-library/asset/2755>`__
+- `3D Voxel Demo <https://godotengine.org/asset-library/asset/2755>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -51,8 +51,8 @@ AnimatableBody3D
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_AnimatableBody3D_property_sync_to_physics:
 
@@ -65,14 +65,14 @@ AnimatableBody3D
 - |void| **set_sync_to_physics**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_sync_to_physics_enabled**\ (\ )
 
-若為 ``true``\ ，此實體的移動將與物理幀同步。當你使用 :ref:`AnimationPlayer<class_AnimationPlayer>` 為移動平台等物件製作移動動畫時很有用。\ **請勿**\ 與 :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>` 函式同時使用。
+If ``true``, the body's movement will be synchronized to the physics frame. This is useful when animating movement via :ref:`AnimationPlayer<class_AnimationPlayer>`, for example on moving platforms. Do **not** use together with :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

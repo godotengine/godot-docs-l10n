@@ -5,25 +5,25 @@
 ExternalTexture
 ===============
 
-**继承：** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-显示外部缓冲区内容的纹理。
+Texture which displays the content of an external buffer.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-显示平台所提供的外部缓冲区的内容。
+Displays the content of an external buffer provided by the platform.
 
-需要 `OES_EGL_image_external <https://registry.khronos.org/OpenGL/extensions/OES/OES_EGL_image_external.txt>`__ 扩展（OpenGL）或 `VK_ANDROID_external_memory_android_hardware_buffer <https://registry.khronos.org/vulkan/specs/1.1-extensions/html/vkspec.html#VK_ANDROID_external_memory_android_hardware_buffer>`__ 扩展（Vulkan）。
+Requires the `OES_EGL_image_external <https://registry.khronos.org/OpenGL/extensions/OES/OES_EGL_image_external.txt>`__ extension (OpenGL) or `VK_ANDROID_external_memory_android_hardware_buffer <https://registry.khronos.org/vulkan/specs/1.1-extensions/html/vkspec.html#VK_ANDROID_external_memory_android_hardware_buffer>`__ extension (Vulkan).
 
-\ **注意：**\ 目前仅在 Android 构建中支持。
+\ **Note:** This is currently only supported in Android builds.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ ExternalTexture
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -54,8 +54,8 @@ ExternalTexture
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_ExternalTexture_property_size:
 
@@ -68,7 +68,7 @@ ExternalTexture
 - |void| **set_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_size**\ (\ )
 
-外部纹理大小。
+External texture size.
 
 .. rst-class:: classref-section-separator
 
@@ -76,8 +76,8 @@ ExternalTexture
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_ExternalTexture_method_get_external_texture_id:
 
@@ -85,9 +85,9 @@ ExternalTexture
 
 :ref:`int<class_int>` **get_external_texture_id**\ (\ ) |const| :ref:`🔗<class_ExternalTexture_method_get_external_texture_id>`
 
-返回外部纹理 ID。
+Returns the external texture ID.
 
-根据你的需求，你可能需要将其传递给平台 API，例如在 Android 上创建 ``android.graphics.SurfaceTexture``\ 。
+Depending on your use case, you may need to pass this to platform APIs, for example, when creating an ``android.graphics.SurfaceTexture`` on Android.
 
 .. rst-class:: classref-item-separator
 
@@ -99,16 +99,16 @@ ExternalTexture
 
 |void| **set_external_buffer_id**\ (\ external_buffer_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ExternalTexture_method_set_external_buffer_id>`
 
-设置外部纹理 ID。
+Sets the external buffer ID.
 
-根据你的需求，你可能需要使用从平台 API 获取的数据调用该方法，例如在 Android 上的 ``SurfaceTexture.getHardwareBuffer()``\ 。
+Depending on your use case, you may need to call this with data received from a platform API, for example, ``SurfaceTexture.getHardwareBuffer()`` on Android.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

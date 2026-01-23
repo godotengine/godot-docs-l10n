@@ -5,14 +5,14 @@
 UPNP
 ====
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-通用隨插即用（UPnP）功能，用於網路裝置的發現、查詢及埠對應。
+Universal Plug and Play (UPnP) functions for network device discovery, querying and port forwarding.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 This class can be used to discover compatible :ref:`UPNPDevice<class_UPNPDevice>`\ s on the local network and execute commands on them, like managing port mappings (for port forwarding/NAT traversal) and querying the local and remote network IP address. Note that methods on this class are synchronous and block the calling thread.
 
@@ -82,8 +82,8 @@ To close a specific port (e.g. after you have finished using it):
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -98,8 +98,8 @@ To close a specific port (e.g. after you have finished using it):
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -134,8 +134,8 @@ To close a specific port (e.g. after you have finished using it):
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_UPNP_UPNPResult:
 
@@ -149,7 +149,7 @@ enum **UPNPResult**: :ref:`🔗<enum_UPNP_UPNPResult>`
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_SUCCESS** = ``0``
 
-UPNP 命令或發現成功。
+UPNP command or discovery was successful.
 
 .. _class_UPNP_constant_UPNP_RESULT_NOT_AUTHORIZED:
 
@@ -157,7 +157,7 @@ UPNP 命令或發現成功。
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_NOT_AUTHORIZED** = ``1``
 
-未授權在 :ref:`UPNPDevice<class_UPNPDevice>` 上使用該命令。當使用者在其路由器上禁用 UPNP 時，可能會被返回。
+Not authorized to use the command on the :ref:`UPNPDevice<class_UPNPDevice>`. May be returned when the user disabled UPNP on their router.
 
 .. _class_UPNP_constant_UPNP_RESULT_PORT_MAPPING_NOT_FOUND:
 
@@ -165,7 +165,7 @@ UPNP 命令或發現成功。
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_PORT_MAPPING_NOT_FOUND** = ``2``
 
-在給定的 :ref:`UPNPDevice<class_UPNPDevice>` 上沒有找到給定埠、協定組合的埠對應。
+No port mapping was found for the given port, protocol combination on the given :ref:`UPNPDevice<class_UPNPDevice>`.
 
 .. _class_UPNP_constant_UPNP_RESULT_INCONSISTENT_PARAMETERS:
 
@@ -173,7 +173,7 @@ UPNP 命令或發現成功。
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_INCONSISTENT_PARAMETERS** = ``3``
 
-參數不一致。
+Inconsistent parameters.
 
 .. _class_UPNP_constant_UPNP_RESULT_NO_SUCH_ENTRY_IN_ARRAY:
 
@@ -189,7 +189,7 @@ No such entry in array. May be returned if a given port, protocol combination is
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_ACTION_FAILED** = ``5``
 
-操作失敗。
+The action failed.
 
 .. _class_UPNP_constant_UPNP_RESULT_SRC_IP_WILDCARD_NOT_PERMITTED:
 
@@ -197,7 +197,7 @@ No such entry in array. May be returned if a given port, protocol combination is
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_SRC_IP_WILDCARD_NOT_PERMITTED** = ``6``
 
-:ref:`UPNPDevice<class_UPNPDevice>` 不允許源 IP 位址的萬用字元值。
+The :ref:`UPNPDevice<class_UPNPDevice>` does not allow wildcard values for the source IP address.
 
 .. _class_UPNP_constant_UPNP_RESULT_EXT_PORT_WILDCARD_NOT_PERMITTED:
 
@@ -205,7 +205,7 @@ No such entry in array. May be returned if a given port, protocol combination is
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_EXT_PORT_WILDCARD_NOT_PERMITTED** = ``7``
 
-:ref:`UPNPDevice<class_UPNPDevice>` 不允許外部埠的萬用字元值。
+The :ref:`UPNPDevice<class_UPNPDevice>` does not allow wildcard values for the external port.
 
 .. _class_UPNP_constant_UPNP_RESULT_INT_PORT_WILDCARD_NOT_PERMITTED:
 
@@ -213,7 +213,7 @@ No such entry in array. May be returned if a given port, protocol combination is
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_INT_PORT_WILDCARD_NOT_PERMITTED** = ``8``
 
-:ref:`UPNPDevice<class_UPNPDevice>` 不允許內部埠的萬用字元值。
+The :ref:`UPNPDevice<class_UPNPDevice>` does not allow wildcard values for the internal port.
 
 .. _class_UPNP_constant_UPNP_RESULT_REMOTE_HOST_MUST_BE_WILDCARD:
 
@@ -221,7 +221,7 @@ No such entry in array. May be returned if a given port, protocol combination is
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_REMOTE_HOST_MUST_BE_WILDCARD** = ``9``
 
-遠端主機值必須是萬用字元。
+The remote host value must be a wildcard.
 
 .. _class_UPNP_constant_UPNP_RESULT_EXT_PORT_MUST_BE_WILDCARD:
 
@@ -229,7 +229,7 @@ No such entry in array. May be returned if a given port, protocol combination is
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_EXT_PORT_MUST_BE_WILDCARD** = ``10``
 
-外部埠值必須是萬用字元。
+The external port value must be a wildcard.
 
 .. _class_UPNP_constant_UPNP_RESULT_NO_PORT_MAPS_AVAILABLE:
 
@@ -237,7 +237,7 @@ No such entry in array. May be returned if a given port, protocol combination is
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_NO_PORT_MAPS_AVAILABLE** = ``11``
 
-沒有可用的埠對應。如果埠對應功能不可用，也可能被返回。
+No port maps are available. May also be returned if port mapping functionality is not available.
 
 .. _class_UPNP_constant_UPNP_RESULT_CONFLICT_WITH_OTHER_MECHANISM:
 
@@ -245,7 +245,7 @@ No such entry in array. May be returned if a given port, protocol combination is
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_CONFLICT_WITH_OTHER_MECHANISM** = ``12``
 
-與其他機制衝突。如果一個埠對應與現有的衝突，可能會被返回，而不是\ :ref:`UPNP_RESULT_CONFLICT_WITH_OTHER_MAPPING<class_UPNP_constant_UPNP_RESULT_CONFLICT_WITH_OTHER_MAPPING>`\ 。
+Conflict with other mechanism. May be returned instead of :ref:`UPNP_RESULT_CONFLICT_WITH_OTHER_MAPPING<class_UPNP_constant_UPNP_RESULT_CONFLICT_WITH_OTHER_MAPPING>` if a port mapping conflicts with an existing one.
 
 .. _class_UPNP_constant_UPNP_RESULT_CONFLICT_WITH_OTHER_MAPPING:
 
@@ -253,7 +253,7 @@ No such entry in array. May be returned if a given port, protocol combination is
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_CONFLICT_WITH_OTHER_MAPPING** = ``13``
 
-與現有的埠對應相衝突。
+Conflict with an existing port mapping.
 
 .. _class_UPNP_constant_UPNP_RESULT_SAME_PORT_VALUES_REQUIRED:
 
@@ -261,7 +261,7 @@ No such entry in array. May be returned if a given port, protocol combination is
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_SAME_PORT_VALUES_REQUIRED** = ``14``
 
-外部和內部埠值必須相同。
+External and internal port values must be the same.
 
 .. _class_UPNP_constant_UPNP_RESULT_ONLY_PERMANENT_LEASE_SUPPORTED:
 
@@ -269,7 +269,7 @@ No such entry in array. May be returned if a given port, protocol combination is
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_ONLY_PERMANENT_LEASE_SUPPORTED** = ``15``
 
-只支援永久租用。在新增埠對應時，不要使用 ``duration`` 參數。
+Only permanent leases are supported. Do not use the ``duration`` parameter when adding port mappings.
 
 .. _class_UPNP_constant_UPNP_RESULT_INVALID_GATEWAY:
 
@@ -277,7 +277,7 @@ No such entry in array. May be returned if a given port, protocol combination is
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_INVALID_GATEWAY** = ``16``
 
-無效閘道。
+Invalid gateway.
 
 .. _class_UPNP_constant_UPNP_RESULT_INVALID_PORT:
 
@@ -285,7 +285,7 @@ No such entry in array. May be returned if a given port, protocol combination is
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_INVALID_PORT** = ``17``
 
-無效埠。
+Invalid port.
 
 .. _class_UPNP_constant_UPNP_RESULT_INVALID_PROTOCOL:
 
@@ -293,7 +293,7 @@ No such entry in array. May be returned if a given port, protocol combination is
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_INVALID_PROTOCOL** = ``18``
 
-無效協議。
+Invalid protocol.
 
 .. _class_UPNP_constant_UPNP_RESULT_INVALID_DURATION:
 
@@ -301,7 +301,7 @@ No such entry in array. May be returned if a given port, protocol combination is
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_INVALID_DURATION** = ``19``
 
-無效持續時間。
+Invalid duration.
 
 .. _class_UPNP_constant_UPNP_RESULT_INVALID_ARGS:
 
@@ -309,7 +309,7 @@ No such entry in array. May be returned if a given port, protocol combination is
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_INVALID_ARGS** = ``20``
 
-無效參數。
+Invalid arguments.
 
 .. _class_UPNP_constant_UPNP_RESULT_INVALID_RESPONSE:
 
@@ -317,7 +317,7 @@ No such entry in array. May be returned if a given port, protocol combination is
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_INVALID_RESPONSE** = ``21``
 
-無效回應。
+Invalid response.
 
 .. _class_UPNP_constant_UPNP_RESULT_INVALID_PARAM:
 
@@ -325,7 +325,7 @@ No such entry in array. May be returned if a given port, protocol combination is
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_INVALID_PARAM** = ``22``
 
-無效參數。
+Invalid parameter.
 
 .. _class_UPNP_constant_UPNP_RESULT_HTTP_ERROR:
 
@@ -333,7 +333,7 @@ No such entry in array. May be returned if a given port, protocol combination is
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_HTTP_ERROR** = ``23``
 
-HTTP 錯誤。
+HTTP error.
 
 .. _class_UPNP_constant_UPNP_RESULT_SOCKET_ERROR:
 
@@ -341,7 +341,7 @@ HTTP 錯誤。
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_SOCKET_ERROR** = ``24``
 
-通訊端錯誤。
+Socket error.
 
 .. _class_UPNP_constant_UPNP_RESULT_MEM_ALLOC_ERROR:
 
@@ -349,7 +349,7 @@ HTTP 錯誤。
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_MEM_ALLOC_ERROR** = ``25``
 
-分配記憶體時出錯。
+Error allocating memory.
 
 .. _class_UPNP_constant_UPNP_RESULT_NO_GATEWAY:
 
@@ -357,7 +357,7 @@ HTTP 錯誤。
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_NO_GATEWAY** = ``26``
 
-沒有可用的閘道。你可能需要先呼叫 :ref:`discover()<class_UPNP_method_discover>` ，否則發現沒有偵測到任何有效的 IGD（InternetGatewayDevices）。
+No gateway available. You may need to call :ref:`discover()<class_UPNP_method_discover>` first, or discovery didn't detect any valid IGDs (InternetGatewayDevices).
 
 .. _class_UPNP_constant_UPNP_RESULT_NO_DEVICES:
 
@@ -365,7 +365,7 @@ HTTP 錯誤。
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_NO_DEVICES** = ``27``
 
-沒有可用的裝置。你可能需要先呼叫 :ref:`discover()<class_UPNP_method_discover>`\ ，或者發現沒有偵測到任何有效的 :ref:`UPNPDevice<class_UPNPDevice>`\ 。
+No devices available. You may need to call :ref:`discover()<class_UPNP_method_discover>` first, or discovery didn't detect any valid :ref:`UPNPDevice<class_UPNPDevice>`\ s.
 
 .. _class_UPNP_constant_UPNP_RESULT_UNKNOWN_ERROR:
 
@@ -373,7 +373,7 @@ HTTP 錯誤。
 
 :ref:`UPNPResult<enum_UPNP_UPNPResult>` **UPNP_RESULT_UNKNOWN_ERROR** = ``28``
 
-未知錯誤。
+Unknown error.
 
 .. rst-class:: classref-section-separator
 
@@ -381,8 +381,8 @@ HTTP 錯誤。
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_UPNP_property_discover_ipv6:
 
@@ -395,7 +395,7 @@ HTTP 錯誤。
 - |void| **set_discover_ipv6**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_discover_ipv6**\ (\ )
 
-如果為 ``true``\ ，則 IPv6 用於 :ref:`UPNPDevice<class_UPNPDevice>` 發現。
+If ``true``, IPv6 is used for :ref:`UPNPDevice<class_UPNPDevice>` discovery.
 
 .. rst-class:: classref-item-separator
 
@@ -412,7 +412,7 @@ HTTP 錯誤。
 - |void| **set_discover_local_port**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_discover_local_port**\ (\ )
 
-如果為 ``0``\ ，系統會自動選擇用於發現的本地埠。如果為 ``1``\ ，將從源埠 1900 進行發現（與目的埠相同）。否則，將使用該值作為埠。
+If ``0``, the local port to use for discovery is chosen automatically by the system. If ``1``, discovery will be done from the source port 1900 (same as destination port). Otherwise, the value will be used as the port.
 
 .. rst-class:: classref-item-separator
 
@@ -429,7 +429,7 @@ HTTP 錯誤。
 - |void| **set_discover_multicast_if**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_discover_multicast_if**\ (\ )
 
-用於發現的多播介面。如果為空，則使用預設的多播介面。
+Multicast interface to use for discovery. Uses the default multicast interface if empty.
 
 .. rst-class:: classref-section-separator
 
@@ -437,8 +437,8 @@ HTTP 錯誤。
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_UPNP_method_add_device:
 
@@ -446,7 +446,7 @@ HTTP 錯誤。
 
 |void| **add_device**\ (\ device\: :ref:`UPNPDevice<class_UPNPDevice>`\ ) :ref:`🔗<class_UPNP_method_add_device>`
 
-將給定的 :ref:`UPNPDevice<class_UPNPDevice>` 新增到已發現裝置的列表中。
+Adds the given :ref:`UPNPDevice<class_UPNPDevice>` to the list of discovered devices.
 
 .. rst-class:: classref-item-separator
 
@@ -458,17 +458,17 @@ HTTP 錯誤。
 
 :ref:`int<class_int>` **add_port_mapping**\ (\ port\: :ref:`int<class_int>`, port_internal\: :ref:`int<class_int>` = 0, desc\: :ref:`String<class_String>` = "", proto\: :ref:`String<class_String>` = "UDP", duration\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_UPNP_method_add_port_mapping>`
 
-新增對應，針對給定的協議 ``proto``\ （\ ``"TCP"`` 或 ``"UDP"``\ ，預設為 UDP），將預設閘道器（見 :ref:`get_gateway()<class_UPNP_method_get_gateway>`\ ）上的外部埠 ``port``\ （在 1 到 65535 之間，不過推薦使用 1024 以上的埠）對應到本機上的內部埠 ``port_internal``\ 。如果該閘道上已經存在給定的埠與協議的組合，這個方法會嘗試進行覆蓋。如果不希望如此，你可以使用 :ref:`get_gateway()<class_UPNP_method_get_gateway>` 手動獲取閘道，獲取到後呼叫其 :ref:`add_port_mapping()<class_UPNP_method_add_port_mapping>` 方法。請注意，使用 UPnP 轉發公認埠（1024 以下）在有些裝置上可能會失敗。
+Adds a mapping to forward the external ``port`` (between 1 and 65535, although recommended to use port 1024 or above) on the default gateway (see :ref:`get_gateway()<class_UPNP_method_get_gateway>`) to the ``port_internal`` on the local machine for the given protocol ``proto`` (either ``"TCP"`` or ``"UDP"``, with UDP being the default). If a port mapping for the given port and protocol combination already exists on that gateway device, this method tries to overwrite it. If that is not desired, you can retrieve the gateway manually with :ref:`get_gateway()<class_UPNP_method_get_gateway>` and call :ref:`add_port_mapping()<class_UPNP_method_add_port_mapping>` on it, if any. Note that forwarding a well-known port (below 1024) with UPnP may fail depending on the device.
 
-如果埠的對應已存在，有些閘道裝置可能會對其進行更新，有些則會因為衝突而拒絕這個命令，尤其當現有埠對應不是由 UPnP 建立的，或者指向的是別的網路位址（或裝置）的時候。
+Depending on the gateway device, if a mapping for that port already exists, it will either be updated or it will refuse this command due to that conflict, especially if the existing mapping for that port wasn't created via UPnP or points to a different network address (or device) than this one.
 
-如果 ``port_internal`` 為 ``0``\ （預設），表示內外部埠相同（使用 ``port`` 的值）。
+If ``port_internal`` is ``0`` (the default), the same port number is used for both the external and the internal port (the ``port`` value).
 
-描述（\ ``desc``\ ）會顯示在一些路由器的管理介面上，可以用來識別新增對應的程序。
+The description (``desc``) is shown in some routers management UIs and can be used to point out which application added the mapping.
 
-對應的租賃時長 ``duration`` 可以通過指定秒數來限定。預設的 ``0`` 表示沒有時長，即永久租賃，有些裝置只支援這種永久租賃。請注意，無論是否永久都只是一種請求，閘道仍然可以隨時移除對應（通常發生在重啟閘道後外部 IP 地址發生變化時，也有些型號會在對應不再活動，即若干分鐘無流量時移除）。如果非 ``0``\ （永久），技術規格所允許的範圍是 ``120``\ （2 分鐘）到 ``86400`` 秒（24 小時）。
+The mapping's lease ``duration`` can be limited by specifying a duration in seconds. The default of ``0`` means no duration, i.e. a permanent lease and notably some devices only support these permanent leases. Note that whether permanent or not, this is only a request and the gateway may still decide at any point to remove the mapping (which usually happens on a reboot of the gateway, when its external IP address changes, or on some models when it detects a port mapping has become inactive, i.e. had no traffic for multiple minutes). If not ``0`` (permanent), the allowed range according to spec is between ``120`` (2 minutes) and ``86400`` seconds (24 hours).
 
-可能的返回值見 :ref:`UPNPResult<enum_UPNP_UPNPResult>`\ 。
+See :ref:`UPNPResult<enum_UPNP_UPNPResult>` for possible return values.
 
 .. rst-class:: classref-item-separator
 
@@ -480,7 +480,7 @@ HTTP 錯誤。
 
 |void| **clear_devices**\ (\ ) :ref:`🔗<class_UPNP_method_clear_devices>`
 
-清除已發現裝置的列表。
+Clears the list of discovered devices.
 
 .. rst-class:: classref-item-separator
 
@@ -492,7 +492,7 @@ HTTP 錯誤。
 
 :ref:`int<class_int>` **delete_port_mapping**\ (\ port\: :ref:`int<class_int>`, proto\: :ref:`String<class_String>` = "UDP"\ ) |const| :ref:`🔗<class_UPNP_method_delete_port_mapping>`
 
-如果預設閘道器上存在對給定埠和協定組合的埠對應，則將其刪除（見 :ref:`get_gateway()<class_UPNP_method_get_gateway>`\ ）。\ ``port`` 必須是 1 和 65535 之間的有效埠，\ ``proto`` 可以是 ``"TCP"`` 或 ``"UDP"``\ 。拒絕的原因可能是對應指向其他位址、埠為公認埠（1024 以下）、對應不是由 UPnP 新增的。可能的返回值見 :ref:`UPNPResult<enum_UPNP_UPNPResult>`\ 。
+Deletes the port mapping for the given port and protocol combination on the default gateway (see :ref:`get_gateway()<class_UPNP_method_get_gateway>`) if one exists. ``port`` must be a valid port between 1 and 65535, ``proto`` can be either ``"TCP"`` or ``"UDP"``. May be refused for mappings pointing to addresses other than this one, for well-known ports (below 1024), or for mappings not added via UPnP. See :ref:`UPNPResult<enum_UPNP_UPNPResult>` for possible return values.
 
 .. rst-class:: classref-item-separator
 
@@ -504,11 +504,11 @@ HTTP 錯誤。
 
 :ref:`int<class_int>` **discover**\ (\ timeout\: :ref:`int<class_int>` = 2000, ttl\: :ref:`int<class_int>` = 2, device_filter\: :ref:`String<class_String>` = "InternetGatewayDevice"\ ) :ref:`🔗<class_UPNP_method_discover>`
 
-發現本地的 :ref:`UPNPDevice<class_UPNPDevice>`\ 。清除先前發現的裝置的列表。
+Discovers local :ref:`UPNPDevice<class_UPNPDevice>`\ s. Clears the list of previously discovered devices.
 
-預設情況下會篩選 IGD（InternetGatewayDevice）型別的裝置，因為這些裝置管理埠轉發。\ ``timeout`` 是等待回應的時間，單位為毫秒。\ ``ttl`` 是生存時間；請在你知道自己在做什麼的時候才碰這個參數。
+Filters for IGD (InternetGatewayDevice) type devices by default, as those manage port forwarding. ``timeout`` is the time to wait for responses in milliseconds. ``ttl`` is the time-to-live; only touch this if you know what you're doing.
 
-可能的返回值見 :ref:`UPNPResult<enum_UPNP_UPNPResult>`\ 。
+See :ref:`UPNPResult<enum_UPNP_UPNPResult>` for possible return values.
 
 .. rst-class:: classref-item-separator
 
@@ -520,7 +520,7 @@ HTTP 錯誤。
 
 :ref:`UPNPDevice<class_UPNPDevice>` **get_device**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_UPNP_method_get_device>`
 
-返回給定 ``index`` 處的 :ref:`UPNPDevice<class_UPNPDevice>`\ 。
+Returns the :ref:`UPNPDevice<class_UPNPDevice>` at the given ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -532,7 +532,7 @@ HTTP 錯誤。
 
 :ref:`int<class_int>` **get_device_count**\ (\ ) |const| :ref:`🔗<class_UPNP_method_get_device_count>`
 
-返回已發現的 :ref:`UPNPDevice<class_UPNPDevice>` 的數量。
+Returns the number of discovered :ref:`UPNPDevice<class_UPNPDevice>`\ s.
 
 .. rst-class:: classref-item-separator
 
@@ -544,7 +544,7 @@ HTTP 錯誤。
 
 :ref:`UPNPDevice<class_UPNPDevice>` **get_gateway**\ (\ ) |const| :ref:`🔗<class_UPNP_method_get_gateway>`
 
-返回預設閘道器。這是第一個發現的\ :ref:`UPNPDevice<class_UPNPDevice>`\ ，也是一個有效的IGD（InternetGatewayDevice）。
+Returns the default gateway. That is the first discovered :ref:`UPNPDevice<class_UPNPDevice>` that is also a valid IGD (InternetGatewayDevice).
 
 .. rst-class:: classref-item-separator
 
@@ -556,7 +556,7 @@ HTTP 錯誤。
 
 :ref:`String<class_String>` **query_external_address**\ (\ ) |const| :ref:`🔗<class_UPNP_method_query_external_address>`
 
-返回預設閘道器的外部 :ref:`IP<class_IP>` 位址字串（見 :ref:`get_gateway()<class_UPNP_method_get_gateway>`\ ）。錯誤時返回空字符串。
+Returns the external :ref:`IP<class_IP>` address of the default gateway (see :ref:`get_gateway()<class_UPNP_method_get_gateway>`) as string. Returns an empty string on error.
 
 .. rst-class:: classref-item-separator
 
@@ -568,7 +568,7 @@ HTTP 錯誤。
 
 |void| **remove_device**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_UPNP_method_remove_device>`
 
-將 ``index`` 處的裝置從已發現的裝置列表中移除。
+Removes the device at ``index`` from the list of discovered devices.
 
 .. rst-class:: classref-item-separator
 
@@ -580,14 +580,14 @@ HTTP 錯誤。
 
 |void| **set_device**\ (\ index\: :ref:`int<class_int>`, device\: :ref:`UPNPDevice<class_UPNPDevice>`\ ) :ref:`🔗<class_UPNP_method_set_device>`
 
-將 ``index`` 處的裝置從已發現的裝置列表中設定為 ``device``\ 。
+Sets the device at ``index`` from the list of discovered devices to ``device``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

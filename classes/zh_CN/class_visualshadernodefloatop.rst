@@ -5,21 +5,21 @@
 VisualShaderNodeFloatOp
 =======================
 
-**继承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-浮点数标量运算符，在可视化着色器图中使用。
+A floating-point scalar operator to be used within the visual shader graph.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-将 :ref:`operator<class_VisualShaderNodeFloatOp_property_operator>` 应用于两个浮点数输入：\ ``a`` 和 ``b``\ 。
+Applies :ref:`operator<class_VisualShaderNodeFloatOp_property_operator>` to two floating-point inputs: ``a`` and ``b``.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ VisualShaderNodeFloatOp
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_VisualShaderNodeFloatOp_Operator:
 
@@ -49,7 +49,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeFloatOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>` **OP_ADD** = ``0``
 
-使用 ``a + b`` 将两个数字相加。
+Sums two numbers using ``a + b``.
 
 .. _class_VisualShaderNodeFloatOp_constant_OP_SUB:
 
@@ -57,7 +57,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeFloatOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>` **OP_SUB** = ``1``
 
-使用 ``a - b`` 将两个数字相减。
+Subtracts two numbers using ``a - b``.
 
 .. _class_VisualShaderNodeFloatOp_constant_OP_MUL:
 
@@ -65,7 +65,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeFloatOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>` **OP_MUL** = ``2``
 
-使用 ``a * b`` 将两个数字相乘。
+Multiplies two numbers using ``a * b``.
 
 .. _class_VisualShaderNodeFloatOp_constant_OP_DIV:
 
@@ -73,7 +73,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeFloatOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>` **OP_DIV** = ``3``
 
-使用 ``a / b`` 将两个数字相除。
+Divides two numbers using ``a / b``.
 
 .. _class_VisualShaderNodeFloatOp_constant_OP_MOD:
 
@@ -81,7 +81,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeFloatOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>` **OP_MOD** = ``4``
 
-计算两个数的余数。在 Godot 着色器语言中，会被翻译为 ``mod(a, b)``\ 。
+Calculates the remainder of two numbers. Translates to ``mod(a, b)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatOp_constant_OP_POW:
 
@@ -89,7 +89,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeFloatOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>` **OP_POW** = ``5``
 
-将 ``a`` 提高到 ``b`` 次幂。在 Godot 着色器语言中，会被翻译为 ``pow(a, b)``\ 。
+Raises the ``a`` to the power of ``b``. Translates to ``pow(a, b)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatOp_constant_OP_MAX:
 
@@ -97,7 +97,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeFloatOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>` **OP_MAX** = ``6``
 
-返回两个数中的较大者。在 Godot 着色器语言中，会被翻译为 ``max(a, b)``\ 。
+Returns the greater of two numbers. Translates to ``max(a, b)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatOp_constant_OP_MIN:
 
@@ -105,7 +105,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeFloatOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>` **OP_MIN** = ``7``
 
-返回两个数中的较小者。在 Godot 着色器语言中，会被翻译为 ``min(a, b)``\ 。
+Returns the lesser of two numbers. Translates to ``min(a, b)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatOp_constant_OP_ATAN2:
 
@@ -113,7 +113,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeFloatOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>` **OP_ATAN2** = ``8``
 
-返回参数的反正切值。在 Godot 着色器语言中，会被翻译为 ``atan(a, b)``\ 。
+Returns the arc-tangent of the parameters. Translates to ``atan(a, b)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatOp_constant_OP_STEP:
 
@@ -121,7 +121,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeFloatOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>` **OP_STEP** = ``9``
 
-通过将 ``b``\ （x）与 ``a``\ （edge）进行比较来生成 step 函数。如果 ``x`` 小于 ``edge`` 则返回 0.0，否则返回 1.0。翻译为 Godot 着色器语言中的 ``step(a, b)``\ 。
+Generates a step function by comparing ``b``\ (x) to ``a``\ (edge). Returns 0.0 if ``x`` is smaller than ``edge`` and otherwise 1.0. Translates to ``step(a, b)`` in the Godot Shader Language.
 
 .. _class_VisualShaderNodeFloatOp_constant_OP_ENUM_SIZE:
 
@@ -129,7 +129,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeFloatOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>` **OP_ENUM_SIZE** = ``10``
 
-代表 :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>` 枚举的大小。
+Represents the size of the :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -137,8 +137,8 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeFloatOp_Operator>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_VisualShaderNodeFloatOp_property_operator:
 
@@ -151,14 +151,14 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeFloatOp_Operator>`
 - |void| **set_operator**\ (\ value\: :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>`\ )
 - :ref:`Operator<enum_VisualShaderNodeFloatOp_Operator>` **get_operator**\ (\ )
 
-要应用于输入的运算符。
+An operator to be applied to the inputs.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

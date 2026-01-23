@@ -5468,7 +5468,7 @@ This can be used to prevent Godot from skipping rendering when no normal windows
 
 :ref:`int<class_int>` **screen_get_dpi**\ (\ screen\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_dpi>`
 
-Retourne la densité en points pour pouce ("dpi") de l'écran spécifié. Renvoie la valeur par défaut spécifique de la plateforme si ``écran param`` est invalide.
+Retourne la densité en points pour pouce ("dpi") de l'écran spécifié. Renvoie la valeur par défaut spécifique de la plateforme si ``screen`` est invalide.
 
 \ **Note :** Une des constantes suivantes peut être utilisée comme ``screen``\  : :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, ou :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`\ 
 
@@ -6148,7 +6148,7 @@ Shows the virtual keyboard if the platform has one.
 
 |void| **warp_mouse**\ (\ position\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_DisplayServer_method_warp_mouse>`
 
-Règle la position du curseur de la souris à la position  par rapport à une origine au coin supérieur gauche de la fenêtre actuellement en focus par le Window Manager.
+Règle la position du curseur de la souris à la ``position`` par rapport à une origine au coin supérieur gauche de la fenêtre actuellement en focus par le Window Manager.
 
 \ **Note :** :ref:`warp_mouse()<class_DisplayServer_method_warp_mouse>` n'est pris en charge que sous Windows, macOS et Linux (X11/Wayland). Il n'a aucun effet sur Android, iOS et Web.
 
@@ -6186,7 +6186,7 @@ Returns ID of the active popup window, or :ref:`INVALID_WINDOW_ID<class_DisplayS
 
 :ref:`int<class_int>` **window_get_attached_instance_id**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_get_attached_instance_id>`
 
-Retourne le :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>` de la ``Fenêtre`` à laquelle ``window_id`` est joint.
+Retourne le :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>` de la fenêtre :ref:`Window<class_Window>` à laquelle ``window_id`` est joint.
 
 .. rst-class:: classref-item-separator
 

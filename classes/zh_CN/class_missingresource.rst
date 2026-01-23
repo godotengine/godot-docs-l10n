@@ -5,23 +5,23 @@
 MissingResource
 ===============
 
-**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-编辑器内部类，用于保存未知资源的数据。
+An internal editor class intended for keeping the data of unrecognized resources.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-这是一种编辑器内部类，用于保存未知类型资源的数据（该类型很有可能是由不再加载的扩展提供的），无法手动实例化，也无法在场景中放置。
+This is an internal editor class intended for keeping data of resources of unknown type (most likely this type was supplied by an extension that is no longer loaded). It can't be manually instantiated or placed in a scene.
 
-\ **警告：**\ 不清楚有什么用就请忽略缺失资源。缺失资源上的已有属性可以在代码中自由修改，无论它们的类型如何。
+\ **Warning:** Ignore missing resources unless you know what you are doing. Existing properties on a missing resource can be freely modified in code, regardless of the type they are intended to be.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ MissingResource
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_MissingResource_property_original_class:
 
@@ -52,7 +52,7 @@ MissingResource
 - |void| **set_original_class**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_original_class**\ (\ )
 
-该资源本来的类名（见 :ref:`Object.get_class()<class_Object_method_get_class>`\ ）。
+The name of the class this resource was supposed to be (see :ref:`Object.get_class()<class_Object_method_get_class>`).
 
 .. rst-class:: classref-item-separator
 
@@ -69,14 +69,14 @@ MissingResource
 - |void| **set_recording_properties**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_recording_properties**\ (\ )
 
-如果设置为 ``true``\ ，则允许使用 :ref:`Object.set()<class_Object_method_set>` 在已有属性之上添加新属性。
+If set to ``true``, allows new properties to be added on top of the existing ones with :ref:`Object.set()<class_Object_method_set>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

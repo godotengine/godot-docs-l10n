@@ -5,14 +5,14 @@
 ConvertTransformModifier3D
 ==========================
 
-**继承：** :ref:`BoneConstraint3D<class_BoneConstraint3D>` **<** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`BoneConstraint3D<class_BoneConstraint3D>` **<** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-对骨骼应用变换的 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`\ ，变换转换自参考骨骼。
+A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` that apply transform to the bone which converted from reference.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
 Apply the copied transform of the bone set by :ref:`BoneConstraint3D.set_reference_bone()<class_BoneConstraint3D_method_set_reference_bone>` to the bone set by :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` about the specific axis with remapping it with some options.
 
@@ -40,8 +40,8 @@ There are 4 ways to apply the transform, depending on the combination of :ref:`s
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -52,8 +52,8 @@ There are 4 ways to apply the transform, depending on the combination of :ref:`s
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -106,8 +106,8 @@ There are 4 ways to apply the transform, depending on the combination of :ref:`s
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_ConvertTransformModifier3D_TransformMode:
 
@@ -121,7 +121,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 :ref:`TransformMode<enum_ConvertTransformModifier3D_TransformMode>` **TRANSFORM_MODE_POSITION** = ``0``
 
-转换时使用位置。传递差值。
+Convert with position. Transfer the difference.
 
 .. _class_ConvertTransformModifier3D_constant_TRANSFORM_MODE_ROTATION:
 
@@ -129,7 +129,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 :ref:`TransformMode<enum_ConvertTransformModifier3D_TransformMode>` **TRANSFORM_MODE_ROTATION** = ``1``
 
-转换时使用旋转。角度是指定轴的翻滚值。
+Convert with rotation. The angle is the roll for the specified axis.
 
 .. _class_ConvertTransformModifier3D_constant_TRANSFORM_MODE_SCALE:
 
@@ -137,7 +137,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 :ref:`TransformMode<enum_ConvertTransformModifier3D_TransformMode>` **TRANSFORM_MODE_SCALE** = ``2``
 
-转换时使用缩放。传递比例而不是差值。
+Convert with scale. Transfers the ratio, not the difference.
 
 .. rst-class:: classref-section-separator
 
@@ -145,8 +145,8 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_ConvertTransformModifier3D_property_setting_count:
 
@@ -159,7 +159,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 - |void| **set_setting_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_setting_count**\ (\ )
 
-修改器中设置的数量。
+The number of settings in the modifier.
 
 .. rst-class:: classref-section-separator
 
@@ -167,8 +167,8 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_ConvertTransformModifier3D_method_get_apply_axis:
 
@@ -176,7 +176,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 :ref:`Axis<enum_Vector3_Axis>` **get_apply_axis**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ConvertTransformModifier3D_method_get_apply_axis>`
 
-返回重映射目标变换的轴。
+Returns the axis of the remapping destination transform.
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 :ref:`float<class_float>` **get_apply_range_max**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ConvertTransformModifier3D_method_get_apply_range_max>`
 
-返回重映射目标范围的最大值。
+Returns the maximum value of the remapping destination range.
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 :ref:`float<class_float>` **get_apply_range_min**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ConvertTransformModifier3D_method_get_apply_range_min>`
 
-返回重映射目标范围的最小值。
+Returns the minimum value of the remapping destination range.
 
 .. rst-class:: classref-item-separator
 
@@ -212,7 +212,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 :ref:`TransformMode<enum_ConvertTransformModifier3D_TransformMode>` **get_apply_transform_mode**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ConvertTransformModifier3D_method_get_apply_transform_mode>`
 
-返回重映射目标变换的操作。
+Returns the operation of the remapping destination transform.
 
 .. rst-class:: classref-item-separator
 
@@ -224,7 +224,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 :ref:`Axis<enum_Vector3_Axis>` **get_reference_axis**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ConvertTransformModifier3D_method_get_reference_axis>`
 
-返回重映射来源变换的轴。
+Returns the axis of the remapping source transform.
 
 .. rst-class:: classref-item-separator
 
@@ -236,7 +236,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 :ref:`float<class_float>` **get_reference_range_max**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ConvertTransformModifier3D_method_get_reference_range_max>`
 
-返回重映射来源范围的最大值。
+Returns the maximum value of the remapping source range.
 
 .. rst-class:: classref-item-separator
 
@@ -248,7 +248,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 :ref:`float<class_float>` **get_reference_range_min**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ConvertTransformModifier3D_method_get_reference_range_min>`
 
-返回重映射来源范围的最小值。
+Returns the minimum value of the remapping source range.
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +260,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 :ref:`TransformMode<enum_ConvertTransformModifier3D_TransformMode>` **get_reference_transform_mode**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ConvertTransformModifier3D_method_get_reference_transform_mode>`
 
-返回重映射来源变换的操作。
+Returns the operation of the remapping source transform.
 
 .. rst-class:: classref-item-separator
 
@@ -272,7 +272,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 :ref:`bool<class_bool>` **is_additive**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ConvertTransformModifier3D_method_is_additive>`
 
-如果索引为 ``index`` 的设置启用了加法选项，则返回 ``true``\ 。
+Returns ``true`` if the additive option is enabled in the setting at ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -284,7 +284,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 :ref:`bool<class_bool>` **is_relative**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ConvertTransformModifier3D_method_is_relative>`
 
-如果索引为 ``index`` 的设置启用了相对选项，则返回 ``true``\ 。
+Returns ``true`` if the relative option is enabled in the setting at ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -296,11 +296,11 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 |void| **set_additive**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_additive>`
 
-将索引为 ``index`` 的设置的叠加选项设置为 ``enabled``\ 。主要影响对 :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` 施加变换的过程。
+Sets additive option in the setting at ``index`` to ``enabled``. This mainly affects the process of applying transform to the :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>`.
 
-如果将 ``enabled`` 设置为 ``true``\ ，则会将处理后的变换叠加到当前应用骨骼的姿势之上。
+If sets ``enabled`` to ``true``, the processed transform is added to the pose of the current apply bone.
 
-如果将 ``enabled`` 设置为 ``false``\ ，则会将当前应用骨骼的姿势替换为处理后的变换。不过如果将 :ref:`set_relative()<class_ConvertTransformModifier3D_method_set_relative>` 设为 ``true``\ ，则该变换是相对于放松姿势的。
+If sets ``enabled`` to ``false``, the pose of the current apply bone is replaced with the processed transform. However, if set :ref:`set_relative()<class_ConvertTransformModifier3D_method_set_relative>` to ``true``, the transform is relative to rest.
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +312,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 |void| **set_apply_axis**\ (\ index\: :ref:`int<class_int>`, axis\: :ref:`Axis<enum_Vector3_Axis>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_apply_axis>`
 
-设置重映射目标变换的轴。
+Sets the axis of the remapping destination transform.
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +324,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 |void| **set_apply_range_max**\ (\ index\: :ref:`int<class_int>`, range_max\: :ref:`float<class_float>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_apply_range_max>`
 
-设置重映射目标范围的最大值。
+Sets the maximum value of the remapping destination range.
 
 .. rst-class:: classref-item-separator
 
@@ -336,7 +336,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 |void| **set_apply_range_min**\ (\ index\: :ref:`int<class_int>`, range_min\: :ref:`float<class_float>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_apply_range_min>`
 
-设置重映射目标范围的最小值。
+Sets the minimum value of the remapping destination range.
 
 .. rst-class:: classref-item-separator
 
@@ -348,7 +348,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 |void| **set_apply_transform_mode**\ (\ index\: :ref:`int<class_int>`, transform_mode\: :ref:`TransformMode<enum_ConvertTransformModifier3D_TransformMode>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_apply_transform_mode>`
 
-设置重映射目标变换的操作。
+Sets the operation of the remapping destination transform.
 
 .. rst-class:: classref-item-separator
 
@@ -360,7 +360,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 |void| **set_reference_axis**\ (\ index\: :ref:`int<class_int>`, axis\: :ref:`Axis<enum_Vector3_Axis>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_reference_axis>`
 
-设置重映射来源变换的轴。
+Sets the axis of the remapping source transform.
 
 .. rst-class:: classref-item-separator
 
@@ -372,7 +372,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 |void| **set_reference_range_max**\ (\ index\: :ref:`int<class_int>`, range_max\: :ref:`float<class_float>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_reference_range_max>`
 
-设置重映射来源范围的最大值。
+Sets the maximum value of the remapping source range.
 
 .. rst-class:: classref-item-separator
 
@@ -384,7 +384,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 |void| **set_reference_range_min**\ (\ index\: :ref:`int<class_int>`, range_min\: :ref:`float<class_float>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_reference_range_min>`
 
-设置重映射来源范围的最小值。
+Sets the minimum value of the remapping source range.
 
 .. rst-class:: classref-item-separator
 
@@ -396,7 +396,7 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 |void| **set_reference_transform_mode**\ (\ index\: :ref:`int<class_int>`, transform_mode\: :ref:`TransformMode<enum_ConvertTransformModifier3D_TransformMode>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_reference_transform_mode>`
 
-设置重映射来源变换的操作。
+Sets the operation of the remapping source transform.
 
 .. rst-class:: classref-item-separator
 
@@ -408,18 +408,18 @@ enum **TransformMode**: :ref:`🔗<enum_ConvertTransformModifier3D_TransformMode
 
 |void| **set_relative**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ConvertTransformModifier3D_method_set_relative>`
 
-将索引为 ``index`` 的设置的相对选项设置为 ``enabled``\ 。
+Sets relative option in the setting at ``index`` to ``enabled``.
 
-如果将 ``enabled`` 设置为 ``true``\ ，则提取并应用的变换是相对于放松姿势的。
+If sets ``enabled`` to ``true``, the extracted and applying transform is relative to the rest.
 
-如果将 ``enabled`` 设置为 ``false``\ ，则提取到的变换是绝对的。
+If sets ``enabled`` to ``false``, the extracted transform is absolute.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

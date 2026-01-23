@@ -5,21 +5,21 @@
 PhysicalBoneSimulator3D
 =======================
 
-**继承：** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-可以作为 :ref:`PhysicalBone3D<class_PhysicalBone3D>` 的父节点，并可以将模拟结果应用到 :ref:`Skeleton3D<class_Skeleton3D>` 的节点。
+Node that can be the parent of :ref:`PhysicalBone3D<class_PhysicalBone3D>` and can apply the simulation results to :ref:`Skeleton3D<class_Skeleton3D>`.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-可以作为 :ref:`PhysicalBone3D<class_PhysicalBone3D>` 的父节点，并可以将模拟结果应用到 :ref:`Skeleton3D<class_Skeleton3D>` 的节点。
+Node that can be the parent of :ref:`PhysicalBone3D<class_PhysicalBone3D>` and can apply the simulation results to :ref:`Skeleton3D<class_Skeleton3D>`.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ PhysicalBoneSimulator3D
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_PhysicalBoneSimulator3D_method_is_simulating_physics:
 
@@ -51,7 +51,7 @@ PhysicalBoneSimulator3D
 
 :ref:`bool<class_bool>` **is_simulating_physics**\ (\ ) |const| :ref:`🔗<class_PhysicalBoneSimulator3D_method_is_simulating_physics>`
 
-返回一个布尔值，指示 **PhysicalBoneSimulator3D** 是否正在运行和模拟。
+Returns a boolean that indicates whether the **PhysicalBoneSimulator3D** is running and simulating.
 
 .. rst-class:: classref-item-separator
 
@@ -63,9 +63,9 @@ PhysicalBoneSimulator3D
 
 |void| **physical_bones_add_collision_exception**\ (\ exception\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicalBoneSimulator3D_method_physical_bones_add_collision_exception>`
 
-向物理骨骼添加一个碰撞例外。
+Adds a collision exception to the physical bone.
 
-就像 :ref:`RigidBody3D<class_RigidBody3D>` 节点一样工作。
+Works just like the :ref:`RigidBody3D<class_RigidBody3D>` node.
 
 .. rst-class:: classref-item-separator
 
@@ -77,9 +77,9 @@ PhysicalBoneSimulator3D
 
 |void| **physical_bones_remove_collision_exception**\ (\ exception\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicalBoneSimulator3D_method_physical_bones_remove_collision_exception>`
 
-移除物理骨骼的一个碰撞例外。
+Removes a collision exception to the physical bone.
 
-就像 :ref:`RigidBody3D<class_RigidBody3D>` 节点一样工作。
+Works just like the :ref:`RigidBody3D<class_RigidBody3D>` node.
 
 .. rst-class:: classref-item-separator
 
@@ -91,9 +91,9 @@ PhysicalBoneSimulator3D
 
 |void| **physical_bones_start_simulation**\ (\ bones\: :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\] = []\ ) :ref:`🔗<class_PhysicalBoneSimulator3D_method_physical_bones_start_simulation>`
 
-让 Skeleton 中的 :ref:`PhysicalBone3D<class_PhysicalBone3D>` 节点开始仿真模拟，对物理世界做出反应。
+Tells the :ref:`PhysicalBone3D<class_PhysicalBone3D>` nodes in the Skeleton to start simulating and reacting to the physics world.
 
-可以传入骨骼名称列表，只对传入的骨骼进行仿真模拟。
+Optionally, a list of bone names can be passed-in, allowing only the passed-in bones to be simulated.
 
 .. rst-class:: classref-item-separator
 
@@ -105,14 +105,14 @@ PhysicalBoneSimulator3D
 
 |void| **physical_bones_stop_simulation**\ (\ ) :ref:`🔗<class_PhysicalBoneSimulator3D_method_physical_bones_stop_simulation>`
 
-让 Skeleton 中的 :ref:`PhysicalBone3D<class_PhysicalBone3D>` 节点停止仿真模拟。
+Tells the :ref:`PhysicalBone3D<class_PhysicalBone3D>` nodes in the Skeleton to stop simulating.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

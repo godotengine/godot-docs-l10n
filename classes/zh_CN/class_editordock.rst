@@ -5,18 +5,18 @@
 EditorDock
 ==========
 
-**实验性：** This class may be changed or removed in future versions.
+**Experimental:** This class may be changed or removed in future versions.
 
-**继承：** :ref:`MarginContainer<class_MarginContainer>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`MarginContainer<class_MarginContainer>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**派生：** :ref:`FileSystemDock<class_FileSystemDock>`
+**Inherited By:** :ref:`FileSystemDock<class_FileSystemDock>`
 
 Dockable container for the editor.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
 EditorDock is a :ref:`Container<class_Container>` node that can be docked in one of the editor's dock slots. Docks are added by plugins to provide space for controls related to an :ref:`EditorPlugin<class_EditorPlugin>`. The editor comes with a few built-in docks, such as the Scene dock, FileSystem dock, etc.
 
@@ -48,15 +48,15 @@ You can add a dock by using :ref:`EditorPlugin.add_dock()<class_EditorPlugin_met
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
 - :doc:`Making plugins <../tutorials/plugins/editor/making_plugins>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -89,8 +89,8 @@ You can add a dock by using :ref:`EditorPlugin.add_dock()<class_EditorPlugin_met
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -115,8 +115,8 @@ You can add a dock by using :ref:`EditorPlugin.add_dock()<class_EditorPlugin_met
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_EditorDock_signal_closed:
 
@@ -132,8 +132,8 @@ Emitted when the dock is closed with the Close button in the context popup, befo
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_EditorDock_DockLayout:
 
@@ -197,7 +197,7 @@ The dock is closed.
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_LEFT_UL** = ``0``
 
-左侧停靠槽的左上（默认布局中为空）。
+Dock slot, left side, upper-left (empty in default layout).
 
 .. _class_EditorDock_constant_DOCK_SLOT_LEFT_BL:
 
@@ -205,7 +205,7 @@ The dock is closed.
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_LEFT_BL** = ``1``
 
-左侧停靠槽的左下（默认布局中为空）。
+Dock slot, left side, bottom-left (empty in default layout).
 
 .. _class_EditorDock_constant_DOCK_SLOT_LEFT_UR:
 
@@ -213,7 +213,7 @@ The dock is closed.
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_LEFT_UR** = ``2``
 
-左侧停靠槽的右上（默认布局中为“场景”和“导入”面板）。
+Dock slot, left side, upper-right (in default layout includes Scene and Import docks).
 
 .. _class_EditorDock_constant_DOCK_SLOT_LEFT_BR:
 
@@ -237,7 +237,7 @@ Dock slot, right side, upper-left (in default layout includes Inspector, Signal,
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_RIGHT_BL** = ``5``
 
-右侧停靠槽的左下（默认布局中为空）。
+Dock slot, right side, bottom-left (empty in default layout).
 
 .. _class_EditorDock_constant_DOCK_SLOT_RIGHT_UR:
 
@@ -245,7 +245,7 @@ Dock slot, right side, upper-left (in default layout includes Inspector, Signal,
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_RIGHT_UR** = ``6``
 
-右侧停靠槽的右上（默认布局中为空）。
+Dock slot, right side, upper-right (empty in default layout).
 
 .. _class_EditorDock_constant_DOCK_SLOT_RIGHT_BR:
 
@@ -253,7 +253,7 @@ Dock slot, right side, upper-left (in default layout includes Inspector, Signal,
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_RIGHT_BR** = ``7``
 
-右侧停靠槽的右下（默认布局中为空）。
+Dock slot, right side, bottom-right (empty in default layout).
 
 .. _class_EditorDock_constant_DOCK_SLOT_BOTTOM:
 
@@ -269,7 +269,7 @@ Bottom panel.
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_MAX** = ``9``
 
-代表 :ref:`DockSlot<enum_EditorDock_DockSlot>` 枚举的大小。
+Represents the size of the :ref:`DockSlot<enum_EditorDock_DockSlot>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -277,8 +277,8 @@ Bottom panel.
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_EditorDock_property_available_layouts:
 
@@ -325,9 +325,9 @@ If ``true``, the dock can be closed with the Close button in the context popup. 
 - |void| **set_default_slot**\ (\ value\: :ref:`DockSlot<enum_EditorDock_DockSlot>`\ )
 - :ref:`DockSlot<enum_EditorDock_DockSlot>` **get_default_slot**\ (\ )
 
-该属性定义了使用 :ref:`EditorPlugin.add_dock()<class_EditorPlugin_method_add_dock>` 方法添加此面板时，所使用的默认停靠槽位。
+The default dock slot used when adding the dock with :ref:`EditorPlugin.add_dock()<class_EditorPlugin_method_add_dock>`.
 
-面板添加后，可被移动至其他槽位，编辑器会自动在不同会话间记住其位置。若移除后重新添加，该面板将被重置至默认槽位。
+After the dock is added, it can be moved to a different slot and the editor will automatically remember its position between sessions. If you remove and re-add the dock, it will be reset to default.
 
 .. rst-class:: classref-item-separator
 
@@ -488,8 +488,8 @@ If ``true``, the dock is not automatically opened or closed when loading an edit
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_EditorDock_private_method__load_layout_from_config:
 
@@ -566,12 +566,12 @@ Opens the dock. It will appear in the last used dock slot. If the dock has no de
 
 \ **Note:** This does not focus the dock. If you want to open and focus the dock, use :ref:`make_visible()<class_EditorDock_method_make_visible>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

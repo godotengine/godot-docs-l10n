@@ -5,16 +5,16 @@
 AudioEffectCompressor
 =====================
 
-**繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-為音訊匯流排新增壓縮效果。
+Adds a compressor audio effect to an audio bus.
 
-壓縮超過指定閾值的聲音，平滑動態並提高整體音量。
+Reduces sounds that exceed a certain threshold level, smooths out the dynamics and increases the overall volume.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 Dynamic range compressor reduces the level of the sound when the amplitude goes over a certain threshold in Decibels. One of the main uses of a compressor is to increase the dynamic range by clipping as little as possible (when sound goes over 0dB).
 
@@ -30,15 +30,15 @@ Compressor has many uses in the mix:
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
+- :doc:`Audio buses <../tutorials/audio/audio_buses>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -65,8 +65,8 @@ Compressor has many uses in the mix:
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_AudioEffectCompressor_property_attack_us:
 
@@ -79,7 +79,7 @@ Compressor has many uses in the mix:
 - |void| **set_attack_us**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_attack_us**\ (\ )
 
-訊號超出門檻時壓縮器的反應時間（µs），可設 20–2000。
+Compressor's reaction time when the signal exceeds the threshold, in microseconds. Value can range from 20 to 2000.
 
 .. rst-class:: classref-item-separator
 
@@ -96,7 +96,7 @@ Compressor has many uses in the mix:
 - |void| **set_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gain**\ (\ )
 
-輸出訊號增益。
+Gain applied to the output signal.
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +113,7 @@ Compressor has many uses in the mix:
 - |void| **set_mix**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mix**\ (\ )
 
-原始訊號與效果訊號的混合比例，0 為全乾、1 為全濕。
+Balance between original signal and effect signal. Value can range from 0 (totally dry) to 1 (totally wet).
 
 .. rst-class:: classref-item-separator
 
@@ -130,7 +130,7 @@ Compressor has many uses in the mix:
 - |void| **set_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ratio**\ (\ )
 
-音訊超過門檻後套用的壓縮比，值越高壓縮越強，可設 1–48。
+Amount of compression applied to the audio once it passes the threshold level. The higher the ratio, the more the loud parts of the audio will be compressed. Value can range from 1 to 48.
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +147,7 @@ Compressor has many uses in the mix:
 - |void| **set_release_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_release_ms**\ (\ )
 
-當訊號跌破門檻後停止壓縮的延遲時間（ms），可設 20–2000。
+Compressor's delay time to stop reducing the signal after the signal level falls below the threshold, in milliseconds. Value can range from 20 to 2000.
 
 .. rst-class:: classref-item-separator
 
@@ -164,7 +164,7 @@ Compressor has many uses in the mix:
 - |void| **set_sidechain**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_sidechain**\ (\ )
 
-使用其他匯流排作門檻偵測以降低本匯流排音量。
+Reduce the sound level using another audio bus for threshold detection.
 
 .. rst-class:: classref-item-separator
 
@@ -181,14 +181,14 @@ Compressor has many uses in the mix:
 - |void| **set_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_threshold**\ (\ )
 
-開始壓縮的門檻（dB），可設 -60 至 0。
+The level above which compression is applied to the audio. Value can range from -60 to 0.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

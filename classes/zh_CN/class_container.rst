@@ -5,30 +5,30 @@
 Container
 =========
 
-**继承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**派生：** :ref:`AspectRatioContainer<class_AspectRatioContainer>`, :ref:`BoxContainer<class_BoxContainer>`, :ref:`CenterContainer<class_CenterContainer>`, :ref:`EditorProperty<class_EditorProperty>`, :ref:`FlowContainer<class_FlowContainer>`, :ref:`FoldableContainer<class_FoldableContainer>`, :ref:`GraphElement<class_GraphElement>`, :ref:`GridContainer<class_GridContainer>`, :ref:`MarginContainer<class_MarginContainer>`, :ref:`PanelContainer<class_PanelContainer>`, :ref:`ScrollContainer<class_ScrollContainer>`, :ref:`SplitContainer<class_SplitContainer>`, :ref:`SubViewportContainer<class_SubViewportContainer>`, :ref:`TabContainer<class_TabContainer>`
+**Inherited By:** :ref:`AspectRatioContainer<class_AspectRatioContainer>`, :ref:`BoxContainer<class_BoxContainer>`, :ref:`CenterContainer<class_CenterContainer>`, :ref:`EditorProperty<class_EditorProperty>`, :ref:`FlowContainer<class_FlowContainer>`, :ref:`FoldableContainer<class_FoldableContainer>`, :ref:`GraphElement<class_GraphElement>`, :ref:`GridContainer<class_GridContainer>`, :ref:`MarginContainer<class_MarginContainer>`, :ref:`PanelContainer<class_PanelContainer>`, :ref:`ScrollContainer<class_ScrollContainer>`, :ref:`SplitContainer<class_SplitContainer>`, :ref:`SubViewportContainer<class_SubViewportContainer>`, :ref:`TabContainer<class_TabContainer>`
 
-所有 GUI 容器的基类。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-所有 GUI 容器的基础节点。\ **Container** 包含其他控件，并自动以某种方式排列它们。可以继承此类来生成自定义的容器类。
+Base class for all GUI containers.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`使用容器 <../tutorials/ui/gui_containers>`
+Base class for all GUI containers. A **Container** automatically arranges its child controls in a certain way. This class can be inherited to make custom container types.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Using Containers <../tutorials/ui/gui_containers>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -39,8 +39,8 @@ Container
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -61,8 +61,8 @@ Container
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_Container_signal_pre_sort_children:
 
@@ -70,7 +70,7 @@ Container
 
 **pre_sort_children**\ (\ ) :ref:`🔗<class_Container_signal_pre_sort_children>`
 
-子节点将要被排序时发出。
+Emitted when children are going to be sorted.
 
 .. rst-class:: classref-item-separator
 
@@ -82,7 +82,7 @@ Container
 
 **sort_children**\ (\ ) :ref:`🔗<class_Container_signal_sort_children>`
 
-需要对子节点进行排序时发出。
+Emitted when sorting the children is needed.
 
 .. rst-class:: classref-section-separator
 
@@ -90,8 +90,8 @@ Container
 
 .. rst-class:: classref-descriptions-group
 
-常量
-----
+Constants
+---------
 
 .. _class_Container_constant_NOTIFICATION_PRE_SORT_CHILDREN:
 
@@ -99,7 +99,7 @@ Container
 
 **NOTIFICATION_PRE_SORT_CHILDREN** = ``50`` :ref:`🔗<class_Container_constant_NOTIFICATION_PRE_SORT_CHILDREN>`
 
-在子节点将要被排序之前通知，以防有事情需要事先处理。
+Notification just before children are going to be sorted, in case there's something to process beforehand.
 
 .. _class_Container_constant_NOTIFICATION_SORT_CHILDREN:
 
@@ -107,7 +107,7 @@ Container
 
 **NOTIFICATION_SORT_CHILDREN** = ``51`` :ref:`🔗<class_Container_constant_NOTIFICATION_SORT_CHILDREN>`
 
-对子节点进行排序时的通知，必须立即服从。
+Notification for when sorting the children, it must be obeyed immediately.
 
 .. rst-class:: classref-section-separator
 
@@ -115,8 +115,8 @@ Container
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_Container_private_method__get_allowed_size_flags_horizontal:
 
@@ -124,9 +124,9 @@ Container
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **_get_allowed_size_flags_horizontal**\ (\ ) |virtual| |const| :ref:`🔗<class_Container_private_method__get_allowed_size_flags_horizontal>`
 
-实现以返回子节点允许的水平 :ref:`SizeFlags<enum_Control_SizeFlags>` 列表。这在技术上并不妨碍任何其他大小标志的使用，如果你的实现需要这样做。这只会限制检查器停靠面板中用户可用的选项。
+Implement to return a list of allowed horizontal :ref:`SizeFlags<enum_Control_SizeFlags>` for child nodes. This doesn't technically prevent the usages of any other size flags, if your implementation requires that. This only limits the options available to the user in the Inspector dock.
 
-\ **注意：**\ 没有大小标志等同于有 :ref:`Control.SIZE_SHRINK_BEGIN<class_Control_constant_SIZE_SHRINK_BEGIN>`\ 。因此，该值始终是隐式允许的。
+\ **Note:** Having no size flags is equal to having :ref:`Control.SIZE_SHRINK_BEGIN<class_Control_constant_SIZE_SHRINK_BEGIN>`. As such, this value is always implicitly allowed.
 
 .. rst-class:: classref-item-separator
 
@@ -138,9 +138,9 @@ Container
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **_get_allowed_size_flags_vertical**\ (\ ) |virtual| |const| :ref:`🔗<class_Container_private_method__get_allowed_size_flags_vertical>`
 
-实现以返回子节点允许的垂直 :ref:`SizeFlags<enum_Control_SizeFlags>` 列表。这在技术上并不妨碍任何其他大小标志的使用，如果你的实现需要这样做。这只会限制检查器停靠面板中用户可用的选项。
+Implement to return a list of allowed vertical :ref:`SizeFlags<enum_Control_SizeFlags>` for child nodes. This doesn't technically prevent the usages of any other size flags, if your implementation requires that. This only limits the options available to the user in the Inspector dock.
 
-\ **注意：**\ 没有大小标志等同于有 :ref:`Control.SIZE_SHRINK_BEGIN<class_Control_constant_SIZE_SHRINK_BEGIN>`\ 。因此，该值始终是隐式允许的。
+\ **Note:** Having no size flags is equal to having :ref:`Control.SIZE_SHRINK_BEGIN<class_Control_constant_SIZE_SHRINK_BEGIN>`. As such, this value is always implicitly allowed.
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ Container
 
 |void| **fit_child_in_rect**\ (\ child\: :ref:`Control<class_Control>`, rect\: :ref:`Rect2<class_Rect2>`\ ) :ref:`🔗<class_Container_method_fit_child_in_rect>`
 
-在给定的矩形中适配子控件。这主要是用于创建自定义容器类的辅助工具。
+Fit a child control in a given rect. This is mainly a helper for creating custom container classes.
 
 .. rst-class:: classref-item-separator
 
@@ -164,14 +164,14 @@ Container
 
 |void| **queue_sort**\ (\ ) :ref:`🔗<class_Container_method_queue_sort>`
 
-将子节点的重排加入队列。虽然会被自动调用，但也可以在需要时手动调用。
+Queue resort of the contained children. This is called automatically anyway, but can be called upon request.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

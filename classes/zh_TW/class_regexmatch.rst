@@ -5,21 +5,21 @@
 RegExMatch
 ==========
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-包含 :ref:`RegEx<class_RegEx>` 搜索的結果。
+Contains the results of a :ref:`RegEx<class_RegEx>` search.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-包含由 :ref:`RegEx.search()<class_RegEx_method_search>` 和 :ref:`RegEx.search_all()<class_RegEx_method_search_all>` 返回的單個 :ref:`RegEx<class_RegEx>` 配對結果。它可以用來搜尋配對的位置和範圍以及它的捕獲組，並且可以提取其子字元串。
+Contains the results of a single :ref:`RegEx<class_RegEx>` match returned by :ref:`RegEx.search()<class_RegEx_method_search>` and :ref:`RegEx.search_all()<class_RegEx_method_search_all>`. It can be used to find the position and range of the match and its capturing groups, and it can extract its substring for you.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ RegExMatch
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ RegExMatch
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_RegExMatch_property_names:
 
@@ -69,7 +69,7 @@ RegExMatch
 
 - :ref:`Dictionary<class_Dictionary>` **get_names**\ (\ )
 
-命名組的字典和它相應的組號。只有被配對的組才被包括在內。如果多個組有相同的名稱，該名稱將指第一個配對的組。
+A dictionary of named groups and its corresponding group number. Only groups that were matched are included. If multiple groups have the same name, that name would refer to the first matching one.
 
 .. rst-class:: classref-item-separator
 
@@ -85,7 +85,7 @@ RegExMatch
 
 - :ref:`PackedStringArray<class_PackedStringArray>` **get_strings**\ (\ )
 
-配對項及其捕獲組的 :ref:`Array<class_Array>`\ 。
+An :ref:`Array<class_Array>` of the match and its capturing groups.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -103,7 +103,7 @@ RegExMatch
 
 - :ref:`String<class_String>` **get_subject**\ (\ )
 
-與搜索模式一起使用的源字串，以找到這個配對結果。
+The source string used with the search pattern to find this matching result.
 
 .. rst-class:: classref-section-separator
 
@@ -111,8 +111,8 @@ RegExMatch
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_RegExMatch_method_get_end:
 
@@ -120,9 +120,9 @@ RegExMatch
 
 :ref:`int<class_int>` **get_end**\ (\ name\: :ref:`Variant<class_Variant>` = 0\ ) |const| :ref:`🔗<class_RegExMatch_method_get_end>`
 
-返回源字串中配對的結束位置。捕獲組的結束位置可以通過提供其組號的整數或其字符串名稱（如果它是一個命名組）來檢索。預設值為 0，指的是整個運算式。
+Returns the end position of the match within the source string. The end position of capturing groups can be retrieved by providing its group number as an integer or its string name (if it's a named group). The default value of 0 refers to the whole pattern.
 
-如果該組沒有配對或不存在，則返回 -1。
+Returns -1 if the group did not match or doesn't exist.
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +134,7 @@ RegExMatch
 
 :ref:`int<class_int>` **get_group_count**\ (\ ) |const| :ref:`🔗<class_RegExMatch_method_get_group_count>`
 
-返回捕獲組的數量。
+Returns the number of capturing groups.
 
 .. rst-class:: classref-item-separator
 
@@ -146,9 +146,9 @@ RegExMatch
 
 :ref:`int<class_int>` **get_start**\ (\ name\: :ref:`Variant<class_Variant>` = 0\ ) |const| :ref:`🔗<class_RegExMatch_method_get_start>`
 
-返回源字串中配對的起始位置。捕獲組的起始位置可以通過提供它的組號作為一個整數或它的字串名稱（如果它是一個命名組）來檢索。預設值為 0，指的是整個表達式。
+Returns the starting position of the match within the source string. The starting position of capturing groups can be retrieved by providing its group number as an integer or its string name (if it's a named group). The default value of 0 refers to the whole pattern.
 
-如果組沒有配對或不存在，返回 -1。
+Returns -1 if the group did not match or doesn't exist.
 
 .. rst-class:: classref-item-separator
 
@@ -160,16 +160,16 @@ RegExMatch
 
 :ref:`String<class_String>` **get_string**\ (\ name\: :ref:`Variant<class_Variant>` = 0\ ) |const| :ref:`🔗<class_RegExMatch_method_get_string>`
 
-返回源字串中配對的子串。捕獲組可以通過提供它的組號作為整數或它的字串名稱（如果它是一個命名組）來檢索。預設值為 0，指的是整個運算式。
+Returns the substring of the match from the source string. Capturing groups can be retrieved by providing its group number as an integer or its string name (if it's a named group). The default value of 0 refers to the whole pattern.
 
-如果組沒有配對或不存在，則返回一個空字串。
+Returns an empty string if the group did not match or doesn't exist.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

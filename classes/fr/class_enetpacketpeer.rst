@@ -518,9 +518,9 @@ Queues a ``packet`` to be sent over the specified ``channel``. See ``FLAG_*`` co
 
 |void| **set_timeout**\ (\ timeout\: :ref:`int<class_int>`, timeout_min\: :ref:`int<class_int>`, timeout_max\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ENetPacketPeer_method_set_timeout>`
 
-Sets the timeout parameters for a peer. The timeout parameters control how and when a peer will timeout from a failure to acknowledge reliable traffic. Timeout values are expressed in milliseconds.
+Définit les paramètres de limite de temps pour un pair. Les paramètres de limite de temps contrôlent comment et quand un pair estimera que le trafic n'est pas assez fiable. Les valeurs de limite de temps sont exprimées en millisecondes.
 
-The ``timeout`` is a factor that, multiplied by a value based on the average round trip time, will determine the timeout limit for a reliable packet. When that limit is reached, the timeout will be doubled, and the peer will be disconnected if that limit has reached ``timeout_min``. The ``timeout_max`` parameter, on the other hand, defines a fixed timeout for which any packet must be acknowledged or the peer will be dropped.
+Le\ ``timeout`` est un facteur qui, multiplié par une valeur basée sur le temps d'envoi moyen, déterminera la limite de temps pour un paquet fiable. Lorsque cette limite est atteinte, la limite de temps sera doublée, et le pair sera déconnecté si cette limite atteint ``timeout_min``. Le paramètre ``timeout_max`` , d'autre part, définit une limite de temps fixe pour lequel tout paquet doit estimé comme fiable, ou alors le pair sera supprimé.
 
 .. rst-class:: classref-item-separator
 

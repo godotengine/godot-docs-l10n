@@ -5,34 +5,34 @@
 InputEventAction
 ================
 
-**繼承：** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-動作的輸入事件型別。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-包含一個通用動作，該動作可以被多種型別的輸入作為目標。動作及其事件可以在\ **項目 > 專案設定**\ 的\ **輸入對應**\ 分頁中設定，也可以使用 :ref:`InputMap<class_InputMap>` 類設置。
-
-\ **注意：**\ 與對應到唯一物理事件的其他 :ref:`InputEvent<class_InputEvent>` 子類別不同，這個虛擬事件不是由引擎發出的。這個類可以用來使用 :ref:`Input.parse_input_event()<class_Input_method_parse_input_event>` 手動發出動作，這樣就能夠在 :ref:`Node._input()<class_Node_private_method__input>` 中接收到這些動作。要檢查物理事件是否與“輸入對應”中的動作相配對，請使用 :ref:`InputEvent.is_action()<class_InputEvent_method_is_action>` 和 :ref:`InputEvent.is_action_pressed()<class_InputEvent_method_is_action_pressed>`\ 。
+An input event type for actions.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- `使用 InputEvent：動作 <../tutorials/inputs/inputevent.html#actions>`__
+Contains a generic action which can be targeted from several types of inputs. Actions and their events can be set in the **Input Map** tab in **Project > Project Settings**, or with the :ref:`InputMap<class_InputMap>` class.
 
-- `2D Dodge The Creeps 範例 <https://godotengine.org/asset-library/asset/2712>`__
+\ **Note:** Unlike the other :ref:`InputEvent<class_InputEvent>` subclasses which map to unique physical events, this virtual one is not emitted by the engine. This class is useful to emit actions manually with :ref:`Input.parse_input_event()<class_Input_method_parse_input_event>`, which are then received in :ref:`Node._input()<class_Node_private_method__input>`. To check if a physical event matches an action from the Input Map, use :ref:`InputEvent.is_action()<class_InputEvent_method_is_action>` and :ref:`InputEvent.is_action_pressed()<class_InputEvent_method_is_action_pressed>`.
 
-- `3D 體素示範 <https://godotengine.org/asset-library/asset/2755>`__
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- `Using InputEvent: Actions <../tutorials/inputs/inputevent.html#actions>`__
+
+- `2D Dodge The Creeps Demo <https://godotengine.org/asset-library/asset/2712>`__
+
+- `3D Voxel Demo <https://godotengine.org/asset-library/asset/2755>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ InputEventAction
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_InputEventAction_property_action:
 
@@ -101,7 +101,7 @@ The real event index in action this event corresponds to (from events defined fo
 - |void| **set_pressed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_pressed**\ (\ )
 
-為 ``true`` 時該動作處於被按下的狀態。為 ``false`` 時該動作處於被釋放狀態。
+If ``true``, the action's state is pressed. If ``false``, the action's state is released.
 
 .. rst-class:: classref-item-separator
 
@@ -118,14 +118,14 @@ The real event index in action this event corresponds to (from events defined fo
 - |void| **set_strength**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_strength**\ (\ )
 
-動作的強度，介於 0 和 1 之間。當 pressed 為 ``false`` 時，該值被視為等於 0。通過將事件強度設定為手柄軸的彎曲或按壓強度，可以仿造模擬手柄的移動事件。
+The action's strength between 0 and 1. This value is considered as equal to 0 if pressed is ``false``. The event strength allows faking analog joypad motion events, by specifying how strongly the joypad axis is bent or pressed.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

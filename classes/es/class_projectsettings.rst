@@ -6997,9 +6997,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to submit a text field.
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_toggle_insert_mode** :ref:`🔗<class_ProjectSettings_property_input/ui_text_toggle_insert_mode>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to toggle *insert mode* in a text field. While in insert mode, inserting new text overrides the character after the cursor, unless the next character is a new line.
+:ref:`InputEventAction<class_InputEventAction>` por defecto para alternar el *modo de inserción* en un campo de texto. Mientras estás en modo de inserción, al insertar texto nuevo se sobrescribe el carácter después del cursor, a menos que el siguiente carácter sea una nueva línea.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` por defecto no pueden eliminarse ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. Sin embargo, los eventos asignados a la acción pueden ser modificados.
 
 .. rst-class:: classref-item-separator
 
@@ -7011,9 +7011,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to toggle *insert mode* 
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_undo** :ref:`🔗<class_ProjectSettings_property_input/ui_undo>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to undo the most recent action.
+:ref:`InputEventAction<class_InputEventAction>` por defecto para deshacer la acción más reciente.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` por defecto no pueden eliminarse ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. Sin embargo, los eventos asignados a la acción pueden ser modificados.
 
 .. rst-class:: classref-item-separator
 
@@ -7025,9 +7025,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to undo the most recent 
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_unicode_start** :ref:`🔗<class_ProjectSettings_property_input/ui_unicode_start>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to start Unicode character hexadecimal code input in a text field.
+:ref:`InputEventAction<class_InputEventAction>` por defecto para iniciar la entrada de código hexadecimal de caracteres Unicode en un campo de texto.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` por defecto no pueden eliminarse ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. Sin embargo, los eventos asignados a la acción pueden ser modificados.
 
 .. rst-class:: classref-item-separator
 

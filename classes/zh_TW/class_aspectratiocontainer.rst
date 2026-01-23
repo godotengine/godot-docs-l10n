@@ -5,28 +5,28 @@
 AspectRatioContainer
 ====================
 
-**繼承：** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-保留子控制項長寬比的容器。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-一種容器類型，會在容器大小改變時自動保持子控制項比例。當容器尺寸為動態，且子節點必須隨之調整大小而又不能失去長寬比時特別實用。
+A container that preserves the proportions of its child controls.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`使用容器 <../tutorials/ui/gui_containers>`
+A container type that arranges its child controls in a way that preserves their proportions automatically when the container is resized. Useful when a container has a dynamic size and the child nodes must adjust their sizes accordingly without losing their aspect ratios.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Using Containers <../tutorials/ui/gui_containers>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -47,8 +47,8 @@ AspectRatioContainer
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_AspectRatioContainer_StretchMode:
 
@@ -62,7 +62,7 @@ enum **StretchMode**: :ref:`🔗<enum_AspectRatioContainer_StretchMode>`
 
 :ref:`StretchMode<enum_AspectRatioContainer_StretchMode>` **STRETCH_WIDTH_CONTROLS_HEIGHT** = ``0``
 
-子控制項的高度會根據容器寬度自動調整。
+The height of child controls is automatically adjusted based on the width of the container.
 
 .. _class_AspectRatioContainer_constant_STRETCH_HEIGHT_CONTROLS_WIDTH:
 
@@ -70,7 +70,7 @@ enum **StretchMode**: :ref:`🔗<enum_AspectRatioContainer_StretchMode>`
 
 :ref:`StretchMode<enum_AspectRatioContainer_StretchMode>` **STRETCH_HEIGHT_CONTROLS_WIDTH** = ``1``
 
-子控制項的寬度會根據容器高度自動調整。
+The width of child controls is automatically adjusted based on the height of the container.
 
 .. _class_AspectRatioContainer_constant_STRETCH_FIT:
 
@@ -78,7 +78,7 @@ enum **StretchMode**: :ref:`🔗<enum_AspectRatioContainer_StretchMode>`
 
 :ref:`StretchMode<enum_AspectRatioContainer_StretchMode>` **STRETCH_FIT** = ``2``
 
-子控制項的邊界矩形會自動調整以符合容器，同時保持長寬比。
+The bounding rectangle of child controls is automatically adjusted to fit inside the container while keeping the aspect ratio.
 
 .. _class_AspectRatioContainer_constant_STRETCH_COVER:
 
@@ -86,9 +86,9 @@ enum **StretchMode**: :ref:`🔗<enum_AspectRatioContainer_StretchMode>`
 
 :ref:`StretchMode<enum_AspectRatioContainer_StretchMode>` **STRETCH_COVER** = ``3``
 
-子控制項的寬度與高度會自動調整，使其邊界矩形在保持長寬比的同時覆蓋整個容器區域。
+The width and height of child controls is automatically adjusted to make their bounding rectangle cover the entire area of the container while keeping the aspect ratio.
 
-當子控制項的邊界矩形超出容器大小，且啟用 :ref:`Control.clip_contents<class_Control_property_clip_contents>` 時，僅會顯示受自身邊界矩形限制的容器區域。
+When the bounding rectangle of child controls exceed the container's size and :ref:`Control.clip_contents<class_Control_property_clip_contents>` is enabled, this allows to show only the container's area restricted by its own bounding rectangle.
 
 .. rst-class:: classref-item-separator
 
@@ -106,7 +106,7 @@ enum **AlignmentMode**: :ref:`🔗<enum_AspectRatioContainer_AlignmentMode>`
 
 :ref:`AlignmentMode<enum_AspectRatioContainer_AlignmentMode>` **ALIGNMENT_BEGIN** = ``0``
 
-將子控制項與容器的起始處（左側或上方）對齊。
+Aligns child controls with the beginning (left or top) of the container.
 
 .. _class_AspectRatioContainer_constant_ALIGNMENT_CENTER:
 
@@ -114,7 +114,7 @@ enum **AlignmentMode**: :ref:`🔗<enum_AspectRatioContainer_AlignmentMode>`
 
 :ref:`AlignmentMode<enum_AspectRatioContainer_AlignmentMode>` **ALIGNMENT_CENTER** = ``1``
 
-將子控制項與容器中心對齊。
+Aligns child controls with the center of the container.
 
 .. _class_AspectRatioContainer_constant_ALIGNMENT_END:
 
@@ -122,7 +122,7 @@ enum **AlignmentMode**: :ref:`🔗<enum_AspectRatioContainer_AlignmentMode>`
 
 :ref:`AlignmentMode<enum_AspectRatioContainer_AlignmentMode>` **ALIGNMENT_END** = ``2``
 
-將子控制項與容器的末端（右側或底部）對齊。
+Aligns child controls with the end (right or bottom) of the container.
 
 .. rst-class:: classref-section-separator
 
@@ -130,8 +130,8 @@ enum **AlignmentMode**: :ref:`🔗<enum_AspectRatioContainer_AlignmentMode>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_AspectRatioContainer_property_alignment_horizontal:
 
@@ -144,7 +144,7 @@ enum **AlignmentMode**: :ref:`🔗<enum_AspectRatioContainer_AlignmentMode>`
 - |void| **set_alignment_horizontal**\ (\ value\: :ref:`AlignmentMode<enum_AspectRatioContainer_AlignmentMode>`\ )
 - :ref:`AlignmentMode<enum_AspectRatioContainer_AlignmentMode>` **get_alignment_horizontal**\ (\ )
 
-指定子控制項的水平相對位置。
+Specifies the horizontal relative position of child controls.
 
 .. rst-class:: classref-item-separator
 
@@ -161,7 +161,7 @@ enum **AlignmentMode**: :ref:`🔗<enum_AspectRatioContainer_AlignmentMode>`
 - |void| **set_alignment_vertical**\ (\ value\: :ref:`AlignmentMode<enum_AspectRatioContainer_AlignmentMode>`\ )
 - :ref:`AlignmentMode<enum_AspectRatioContainer_AlignmentMode>` **get_alignment_vertical**\ (\ )
 
-指定子控制項的垂直相對位置。
+Specifies the vertical relative position of child controls.
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ enum **AlignmentMode**: :ref:`🔗<enum_AspectRatioContainer_AlignmentMode>`
 - |void| **set_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ratio**\ (\ )
 
-對子控制項強制套用的長寬比，為寬度除以高度，其實際效果取決於 :ref:`stretch_mode<class_AspectRatioContainer_property_stretch_mode>`\ 。
+The aspect ratio to enforce on child controls. This is the width divided by the height. The ratio depends on the :ref:`stretch_mode<class_AspectRatioContainer_property_stretch_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -195,14 +195,14 @@ enum **AlignmentMode**: :ref:`🔗<enum_AspectRatioContainer_AlignmentMode>`
 - |void| **set_stretch_mode**\ (\ value\: :ref:`StretchMode<enum_AspectRatioContainer_StretchMode>`\ )
 - :ref:`StretchMode<enum_AspectRatioContainer_StretchMode>` **get_stretch_mode**\ (\ )
 
-用來對齊子控制項的拉伸模式。
+The stretch mode used to align child controls.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

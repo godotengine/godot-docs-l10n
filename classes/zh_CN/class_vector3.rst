@@ -5,42 +5,42 @@
 Vector3
 =======
 
-使用浮点数坐标的 3D 向量。
+A 3D vector using floating-point coordinates.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-包含三个元素的结构体，可用于代表 3D 坐标或任何数值的三元组。
+A 3-element structure that can be used to represent 3D coordinates or any other triplet of numeric values.
 
-使用浮点数坐标。默认情况下，这些浮点值为 32 位精度，与始终为 64 位的 :ref:`float<class_float>` 并不相同。如果需要双精度，请在编译引擎时使用 ``precision=double`` 选项。
+It uses floating-point coordinates. By default, these floating-point values use 32-bit precision, unlike :ref:`float<class_float>` which is always 64-bit. If double precision is needed, compile the engine with the option ``precision=double``.
 
-对应的整数版本见 :ref:`Vector3i<class_Vector3i>`\ 。
+See :ref:`Vector3i<class_Vector3i>` for its integer counterpart.
 
-\ **注意：**\ 在布尔语境中，如果 Vector3 等于 ``Vector3(0, 0, 0)`` 则求值结果为 ``false``\ 。否则 Vector3 的求值结果始终为 ``true``\ 。
+\ **Note:** In a boolean context, a Vector3 will evaluate to ``false`` if it's equal to ``Vector3(0, 0, 0)``. Otherwise, a Vector3 will always evaluate to ``true``.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
-- :doc:`数学文档索引 <../tutorials/math/index>`
+- :doc:`Math documentation index <../tutorials/math/index>`
 
-- :doc:`向量数学 <../tutorials/math/vector_math>`
+- :doc:`Vector math <../tutorials/math/vector_math>`
 
-- :doc:`高等向量数学 <../tutorials/math/vectors_advanced>`
+- :doc:`Advanced vector math <../tutorials/math/vectors_advanced>`
 
-- `3Blue1Brown《线性代数的本质》 <https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab>`__
+- `3Blue1Brown Essence of Linear Algebra <https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab>`__
 
-- `矩阵变换演示 <https://godotengine.org/asset-library/asset/2787>`__
+- `Matrix Transform Demo <https://godotengine.org/asset-library/asset/2787>`__
 
-- `所有 3D 演示 <https://github.com/godotengine/godot-demo-projects/tree/master/3d>`__
+- `All 3D Demos <https://github.com/godotengine/godot-demo-projects/tree/master/3d>`__
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -55,8 +55,8 @@ Vector3
 
 .. rst-class:: classref-reftable-group
 
-构造函数
---------
+Constructors
+------------
 
 .. table::
    :widths: auto
@@ -73,8 +73,8 @@ Vector3
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -179,8 +179,8 @@ Vector3
 
 .. rst-class:: classref-reftable-group
 
-运算符
-------
+Operators
+---------
 
 .. table::
    :widths: auto
@@ -233,8 +233,8 @@ Vector3
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_Vector3_Axis:
 
@@ -248,7 +248,7 @@ enum **Axis**: :ref:`🔗<enum_Vector3_Axis>`
 
 :ref:`Axis<enum_Vector3_Axis>` **AXIS_X** = ``0``
 
-X 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_index>` 和 :ref:`min_axis_index()<class_Vector3_method_min_axis_index>` 返回。
+Enumerated value for the X axis. Returned by :ref:`max_axis_index()<class_Vector3_method_max_axis_index>` and :ref:`min_axis_index()<class_Vector3_method_min_axis_index>`.
 
 .. _class_Vector3_constant_AXIS_Y:
 
@@ -256,7 +256,7 @@ X 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Axis<enum_Vector3_Axis>` **AXIS_Y** = ``1``
 
-Y 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_index>` 和 :ref:`min_axis_index()<class_Vector3_method_min_axis_index>` 返回。
+Enumerated value for the Y axis. Returned by :ref:`max_axis_index()<class_Vector3_method_max_axis_index>` and :ref:`min_axis_index()<class_Vector3_method_min_axis_index>`.
 
 .. _class_Vector3_constant_AXIS_Z:
 
@@ -264,7 +264,7 @@ Y 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Axis<enum_Vector3_Axis>` **AXIS_Z** = ``2``
 
-Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_index>` 和 :ref:`min_axis_index()<class_Vector3_method_min_axis_index>` 返回。
+Enumerated value for the Z axis. Returned by :ref:`max_axis_index()<class_Vector3_method_max_axis_index>` and :ref:`min_axis_index()<class_Vector3_method_min_axis_index>`.
 
 .. rst-class:: classref-section-separator
 
@@ -272,8 +272,8 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 .. rst-class:: classref-descriptions-group
 
-常量
-----
+Constants
+---------
 
 .. _class_Vector3_constant_ZERO:
 
@@ -281,7 +281,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 **ZERO** = ``Vector3(0, 0, 0)`` :ref:`🔗<class_Vector3_constant_ZERO>`
 
-零向量，所有分量都设置为 ``0`` 的向量。
+Zero vector, a vector with all components set to ``0``.
 
 .. _class_Vector3_constant_ONE:
 
@@ -289,7 +289,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 **ONE** = ``Vector3(1, 1, 1)`` :ref:`🔗<class_Vector3_constant_ONE>`
 
-一向量，所有分量都设置为 ``1`` 的向量。
+One vector, a vector with all components set to ``1``.
 
 .. _class_Vector3_constant_INF:
 
@@ -297,7 +297,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 **INF** = ``Vector3(inf, inf, inf)`` :ref:`🔗<class_Vector3_constant_INF>`
 
-无穷大向量，所有分量都设置为 :ref:`@GDScript.INF<class_@GDScript_constant_INF>` 的向量。
+Infinity vector, a vector with all components set to :ref:`@GDScript.INF<class_@GDScript_constant_INF>`.
 
 .. _class_Vector3_constant_LEFT:
 
@@ -305,7 +305,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 **LEFT** = ``Vector3(-1, 0, 0)`` :ref:`🔗<class_Vector3_constant_LEFT>`
 
-左单位向量。代表局部的左方向，全局的西方向。
+Left unit vector. Represents the local direction of left, and the global direction of west.
 
 .. _class_Vector3_constant_RIGHT:
 
@@ -313,7 +313,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 **RIGHT** = ``Vector3(1, 0, 0)`` :ref:`🔗<class_Vector3_constant_RIGHT>`
 
-右单位向量。代表局部的右方向，全局的东方向。
+Right unit vector. Represents the local direction of right, and the global direction of east.
 
 .. _class_Vector3_constant_UP:
 
@@ -321,7 +321,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 **UP** = ``Vector3(0, 1, 0)`` :ref:`🔗<class_Vector3_constant_UP>`
 
-上单位向量。
+Up unit vector.
 
 .. _class_Vector3_constant_DOWN:
 
@@ -329,7 +329,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 **DOWN** = ``Vector3(0, -1, 0)`` :ref:`🔗<class_Vector3_constant_DOWN>`
 
-下单位向量。
+Down unit vector.
 
 .. _class_Vector3_constant_FORWARD:
 
@@ -337,7 +337,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 **FORWARD** = ``Vector3(0, 0, -1)`` :ref:`🔗<class_Vector3_constant_FORWARD>`
 
-向前的单位向量。代表局部的前方，全局的北方。请注意，灯光、相机等的前方和角色等 3D 资产的前方是不同的，后者通常朝向相机。处理 3D 资产空间时，请使用 :ref:`MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>` 等常量。
+Forward unit vector. Represents the local direction of forward, and the global direction of north. Keep in mind that the forward direction for lights, cameras, etc is different from 3D assets like characters, which face towards the camera by convention. Use :ref:`MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>` and similar constants when working in 3D asset space.
 
 .. _class_Vector3_constant_BACK:
 
@@ -345,7 +345,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 **BACK** = ``Vector3(0, 0, 1)`` :ref:`🔗<class_Vector3_constant_BACK>`
 
-向后的单位向量。代表局部的后方，全局的南方。
+Back unit vector. Represents the local direction of back, and the global direction of south.
 
 .. _class_Vector3_constant_MODEL_LEFT:
 
@@ -353,7 +353,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 **MODEL_LEFT** = ``Vector3(1, 0, 0)`` :ref:`🔗<class_Vector3_constant_MODEL_LEFT>`
 
-指向导入后 3D 资产左侧的单位向量。
+Unit vector pointing towards the left side of imported 3D assets.
 
 .. _class_Vector3_constant_MODEL_RIGHT:
 
@@ -361,7 +361,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 **MODEL_RIGHT** = ``Vector3(-1, 0, 0)`` :ref:`🔗<class_Vector3_constant_MODEL_RIGHT>`
 
-指向导入后 3D 资产右侧的单位向量。
+Unit vector pointing towards the right side of imported 3D assets.
 
 .. _class_Vector3_constant_MODEL_TOP:
 
@@ -369,7 +369,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 **MODEL_TOP** = ``Vector3(0, 1, 0)`` :ref:`🔗<class_Vector3_constant_MODEL_TOP>`
 
-指向导入后 3D 资产顶部（上方）的单位向量。
+Unit vector pointing towards the top side (up) of imported 3D assets.
 
 .. _class_Vector3_constant_MODEL_BOTTOM:
 
@@ -377,7 +377,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 **MODEL_BOTTOM** = ``Vector3(0, -1, 0)`` :ref:`🔗<class_Vector3_constant_MODEL_BOTTOM>`
 
-指向导入后 3D 资产底部（下方）的单位向量。
+Unit vector pointing towards the bottom side (down) of imported 3D assets.
 
 .. _class_Vector3_constant_MODEL_FRONT:
 
@@ -385,7 +385,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 **MODEL_FRONT** = ``Vector3(0, 0, 1)`` :ref:`🔗<class_Vector3_constant_MODEL_FRONT>`
 
-指向导入后 3D 资产正面（前方）的单位向量。
+Unit vector pointing towards the front side (facing forward) of imported 3D assets.
 
 .. _class_Vector3_constant_MODEL_REAR:
 
@@ -393,7 +393,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 **MODEL_REAR** = ``Vector3(0, 0, -1)`` :ref:`🔗<class_Vector3_constant_MODEL_REAR>`
 
-指向导入后 3D 资产背面（后方）的单位向量。
+Unit vector pointing towards the rear side (back) of imported 3D assets.
 
 .. rst-class:: classref-section-separator
 
@@ -401,8 +401,8 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_Vector3_property_x:
 
@@ -410,7 +410,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`float<class_float>` **x** = ``0.0`` :ref:`🔗<class_Vector3_property_x>`
 
-向量的 X 分量。也可以通过使用索引位置 ``[0]`` 访问。
+The vector's X component. Also accessible by using the index position ``[0]``.
 
 .. rst-class:: classref-item-separator
 
@@ -422,7 +422,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`float<class_float>` **y** = ``0.0`` :ref:`🔗<class_Vector3_property_y>`
 
-向量的 Y 分量。也可以通过使用索引位置 ``[1]`` 访问。
+The vector's Y component. Also accessible by using the index position ``[1]``.
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +434,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`float<class_float>` **z** = ``0.0`` :ref:`🔗<class_Vector3_property_z>`
 
-向量的 Z 分量。也可以通过使用索引位置 ``[2]`` 访问。
+The vector's Z component. Also accessible by using the index position ``[2]``.
 
 .. rst-class:: classref-section-separator
 
@@ -442,8 +442,8 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 .. rst-class:: classref-descriptions-group
 
-构造函数说明
-------------
+Constructor Descriptions
+------------------------
 
 .. _class_Vector3_constructor_Vector3:
 
@@ -451,7 +451,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **Vector3**\ (\ ) :ref:`🔗<class_Vector3_constructor_Vector3>`
 
-构造默认初始化的 **Vector3**\ ，所有分量都设置为 ``0``\ 。
+Constructs a default-initialized **Vector3** with all components set to ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -461,7 +461,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **Vector3**\ (\ from\: :ref:`Vector3<class_Vector3>`\ )
 
-构造给定 **Vector3** 的副本。
+Constructs a **Vector3** as a copy of the given **Vector3**.
 
 .. rst-class:: classref-item-separator
 
@@ -471,7 +471,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **Vector3**\ (\ from\: :ref:`Vector3i<class_Vector3i>`\ )
 
-从 :ref:`Vector3i<class_Vector3i>` 构造新的 **Vector3**\ 。
+Constructs a new **Vector3** from :ref:`Vector3i<class_Vector3i>`.
 
 .. rst-class:: classref-item-separator
 
@@ -481,7 +481,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **Vector3**\ (\ x\: :ref:`float<class_float>`, y\: :ref:`float<class_float>`, z\: :ref:`float<class_float>`\ )
 
-返回具有给定分量的 **Vector3**\ 。
+Returns a **Vector3** with the given components.
 
 .. rst-class:: classref-section-separator
 
@@ -489,8 +489,8 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_Vector3_method_abs:
 
@@ -498,7 +498,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **abs**\ (\ ) |const| :ref:`🔗<class_Vector3_method_abs>`
 
-返回一个新向量，其所有分量都是绝对值，即正值。
+Returns a new vector with all components in absolute values (i.e. positive).
 
 .. rst-class:: classref-item-separator
 
@@ -510,7 +510,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`float<class_float>` **angle_to**\ (\ to\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_angle_to>`
 
-返回与给定向量的无符号最小角度，单位为弧度。
+Returns the unsigned minimum angle to the given vector, in radians.
 
 .. rst-class:: classref-item-separator
 
@@ -522,7 +522,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **bezier_derivative**\ (\ control_1\: :ref:`Vector3<class_Vector3>`, control_2\: :ref:`Vector3<class_Vector3>`, end\: :ref:`Vector3<class_Vector3>`, t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_bezier_derivative>`
 
-返回\ `贝赛尔曲线 <https://zh.wikipedia.org/zh-cn/%E8%B2%9D%E8%8C%B2%E6%9B%B2%E7%B7%9A>`__\ 上 ``t`` 处的导数，该曲线由此向量和控制点 ``control_1``\ 、\ ``control_2``\ 、终点 ``end`` 定义。
+Returns the derivative at the given ``t`` on the `Bézier curve <https://en.wikipedia.org/wiki/B%C3%A9zier_curve>`__ defined by this vector and the given ``control_1``, ``control_2``, and ``end`` points.
 
 .. rst-class:: classref-item-separator
 
@@ -534,7 +534,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **bezier_interpolate**\ (\ control_1\: :ref:`Vector3<class_Vector3>`, control_2\: :ref:`Vector3<class_Vector3>`, end\: :ref:`Vector3<class_Vector3>`, t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_bezier_interpolate>`
 
-返回\ `贝赛尔曲线 <https://zh.wikipedia.org/zh-cn/%E8%B2%9D%E8%8C%B2%E6%9B%B2%E7%B7%9A>`__\ 上 ``t`` 处的点，该曲线由此向量和控制点 ``control_1``\ 、\ ``control_2``\ 、终点 ``end`` 定义。
+Returns the point at the given ``t`` on the `Bézier curve <https://en.wikipedia.org/wiki/B%C3%A9zier_curve>`__ defined by this vector and the given ``control_1``, ``control_2``, and ``end`` points.
 
 .. rst-class:: classref-item-separator
 
@@ -546,9 +546,9 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **bounce**\ (\ n\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_bounce>`
 
-返回从给定法线 ``n`` 定义的平面“弹起”的向量。
+Returns the vector "bounced off" from a plane defined by the given normal ``n``.
 
-\ **注意：**\ :ref:`bounce()<class_Vector3_method_bounce>` 执行大多数引擎和框架调用 ``reflect()`` 的操作。
+\ **Note:** :ref:`bounce()<class_Vector3_method_bounce>` performs the operation that most engines and frameworks call ``reflect()``.
 
 .. rst-class:: classref-item-separator
 
@@ -560,7 +560,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **ceil**\ (\ ) |const| :ref:`🔗<class_Vector3_method_ceil>`
 
-返回一个新向量，所有的分量都是向上舍入（正无穷大方向）。
+Returns a new vector with all components rounded up (towards positive infinity).
 
 .. rst-class:: classref-item-separator
 
@@ -572,7 +572,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **clamp**\ (\ min\: :ref:`Vector3<class_Vector3>`, max\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_clamp>`
 
-返回一个新向量，每个分量都使用 :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>` 限制在 ``min`` 和 ``max`` 之间。
+Returns a new vector with all components clamped between the components of ``min`` and ``max``, by running :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>` on each component.
 
 .. rst-class:: classref-item-separator
 
@@ -584,7 +584,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **clampf**\ (\ min\: :ref:`float<class_float>`, max\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_clampf>`
 
-返回一个新向量，每个分量都使用 :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>` 限制在 ``min`` 和 ``max`` 之间。
+Returns a new vector with all components clamped between ``min`` and ``max``, by running :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>` on each component.
 
 .. rst-class:: classref-item-separator
 
@@ -596,9 +596,9 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **cross**\ (\ with\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_cross>`
 
-返回该向量与 ``with`` 的叉积。
+Returns the cross product of this vector and ``with``.
 
-这将返回一个垂直于该向量和 ``with`` 的向量，它将是两个向量定义的平面的法向量。由于有两个这样的向量，方向相反，该方法返回由右手坐标系定义的向量。如果这两个向量平行，则返回一个空向量，这使其可用于测试两个向量是否平行。
+This returns a vector perpendicular to both this and ``with``, which would be the normal vector of the plane defined by the two vectors. As there are two such vectors, in opposite directions, this method returns the vector defined by a right-handed coordinate system. If the two vectors are parallel this returns an empty vector, making it useful for testing if two vectors are parallel.
 
 .. rst-class:: classref-item-separator
 
@@ -610,7 +610,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **cubic_interpolate**\ (\ b\: :ref:`Vector3<class_Vector3>`, pre_a\: :ref:`Vector3<class_Vector3>`, post_b\: :ref:`Vector3<class_Vector3>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_cubic_interpolate>`
 
-返回该向量和 ``b`` 之间进行三次插值 ``weight`` 处的结果，使用 ``pre_a`` 和 ``post_b`` 作为控制柄。\ ``weight`` 在 0.0 到 1.0 的范围内，代表插值的量。
+Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of 0.0 to 1.0, representing the amount of interpolation.
 
 .. rst-class:: classref-item-separator
 
@@ -622,9 +622,9 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **cubic_interpolate_in_time**\ (\ b\: :ref:`Vector3<class_Vector3>`, pre_a\: :ref:`Vector3<class_Vector3>`, post_b\: :ref:`Vector3<class_Vector3>`, weight\: :ref:`float<class_float>`, b_t\: :ref:`float<class_float>`, pre_a_t\: :ref:`float<class_float>`, post_b_t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_cubic_interpolate_in_time>`
 
-返回该向量和 ``b`` 之间进行三次插值 ``weight`` 处的结果，使用 ``pre_a`` 和 ``post_b`` 作为控制柄。\ ``weight`` 在 0.0 到 1.0 的范围内，代表插值的量。
+Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of 0.0 to 1.0, representing the amount of interpolation.
 
-通过使用时间值，可以比 :ref:`cubic_interpolate()<class_Vector3_method_cubic_interpolate>` 进行更平滑的插值。
+It can perform smoother interpolation than :ref:`cubic_interpolate()<class_Vector3_method_cubic_interpolate>` by the time values.
 
 .. rst-class:: classref-item-separator
 
@@ -636,7 +636,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **direction_to**\ (\ to\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_direction_to>`
 
-返回从该向量指向 ``to`` 的归一化向量。相当于使用 ``(b - a).normalized()``\ 。
+Returns the normalized vector pointing from this vector to ``to``. This is equivalent to using ``(b - a).normalized()``.
 
 .. rst-class:: classref-item-separator
 
@@ -648,9 +648,9 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`float<class_float>` **distance_squared_to**\ (\ to\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_distance_squared_to>`
 
-返回该向量与 ``to`` 之间的距离的平方。
+Returns the squared distance between this vector and ``to``.
 
-该方法比 :ref:`distance_to()<class_Vector3_method_distance_to>` 运行得更快，因此请在需要比较向量或者用于某些公式的平方距离时，优先使用这个方法。
+This method runs faster than :ref:`distance_to()<class_Vector3_method_distance_to>`, so prefer it if you need to compare vectors or need the squared distance for some formula.
 
 .. rst-class:: classref-item-separator
 
@@ -662,7 +662,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`float<class_float>` **distance_to**\ (\ to\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_distance_to>`
 
-返回该向量与 ``to`` 之间的距离。
+Returns the distance between this vector and ``to``.
 
 .. rst-class:: classref-item-separator
 
@@ -674,13 +674,13 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`float<class_float>` **dot**\ (\ with\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_dot>`
 
-返回该向量与 ``with`` 的点积。可用于比较两个向量之间的夹角。例如，可用于确定敌人是否面向玩家。
+Returns the dot product of this vector and ``with``. This can be used to compare the angle between two vectors. For example, this can be used to determine whether an enemy is facing the player.
 
-直角（90 度）的点积为 ``0``\ ；大于 0 则夹角小于 90 度；小于 0 则夹角大于 90 度。
+The dot product will be ``0`` for a right angle (90 degrees), greater than 0 for angles narrower than 90 degrees and lower than 0 for angles wider than 90 degrees.
 
-使用（归一化的）单位向量时，如果向量朝向相反，则结果始终为 ``-1.0``\ （180 度角）；如果向量方向一致，则结果始终为 ``1.0``\ （0 度角）。
+When using unit (normalized) vectors, the result will always be between ``-1.0`` (180 degree angle) when the vectors are facing opposite directions, and ``1.0`` (0 degree angle) when the vectors are aligned.
 
-\ **注意：**\ ``a.dot(b)`` 等价于 ``b.dot(a)``\ 。
+\ **Note:** ``a.dot(b)`` is equivalent to ``b.dot(a)``.
 
 .. rst-class:: classref-item-separator
 
@@ -692,7 +692,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **floor**\ (\ ) |const| :ref:`🔗<class_Vector3_method_floor>`
 
-返回一个新的向量，所有的向量都被四舍五入，向负无穷大。
+Returns a new vector with all components rounded down (towards negative infinity).
 
 .. rst-class:: classref-item-separator
 
@@ -704,7 +704,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **inverse**\ (\ ) |const| :ref:`🔗<class_Vector3_method_inverse>`
 
-返回该向量的逆向量。与 ``Vector3(1.0 / v.x, 1.0 / v.y, 1.0 / v.z)`` 相同。
+Returns the inverse of the vector. This is the same as ``Vector3(1.0 / v.x, 1.0 / v.y, 1.0 / v.z)``.
 
 .. rst-class:: classref-item-separator
 
@@ -716,7 +716,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`bool<class_bool>` **is_equal_approx**\ (\ to\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_is_equal_approx>`
 
-如果这个向量与 ``to`` 大致相等，则返回 ``true``\ ，判断方法是对每个分量执行 :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>`\ 。
+Returns ``true`` if this vector and ``to`` are approximately equal, by running :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>` on each component.
 
 .. rst-class:: classref-item-separator
 
@@ -728,7 +728,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`bool<class_bool>` **is_finite**\ (\ ) |const| :ref:`🔗<class_Vector3_method_is_finite>`
 
-如果该向量无穷，则返回 ``true``\ ，判断方法是对每个分量调用 :ref:`@GlobalScope.is_finite()<class_@GlobalScope_method_is_finite>`\ 。
+Returns ``true`` if this vector is finite, by calling :ref:`@GlobalScope.is_finite()<class_@GlobalScope_method_is_finite>` on each component.
 
 .. rst-class:: classref-item-separator
 
@@ -740,7 +740,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`bool<class_bool>` **is_normalized**\ (\ ) |const| :ref:`🔗<class_Vector3_method_is_normalized>`
 
-如果该向量是归一化的，即长度约等于 1，则返回 ``true``\ 。
+Returns ``true`` if the vector is normalized, i.e. its length is approximately equal to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -752,9 +752,9 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`bool<class_bool>` **is_zero_approx**\ (\ ) |const| :ref:`🔗<class_Vector3_method_is_zero_approx>`
 
-如果该向量的值大约为零，则返回 ``true``\ ，判断方法是对每个分量运行 :ref:`@GlobalScope.is_zero_approx()<class_@GlobalScope_method_is_zero_approx>`\ 。
+Returns ``true`` if this vector's values are approximately zero, by running :ref:`@GlobalScope.is_zero_approx()<class_@GlobalScope_method_is_zero_approx>` on each component.
 
-该方法比使用 :ref:`is_equal_approx()<class_Vector3_method_is_equal_approx>` 和零向量比较要快。
+This method is faster than using :ref:`is_equal_approx()<class_Vector3_method_is_equal_approx>` with one value as a zero vector.
 
 .. rst-class:: classref-item-separator
 
@@ -766,7 +766,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`float<class_float>` **length**\ (\ ) |const| :ref:`🔗<class_Vector3_method_length>`
 
-返回这个向量的长度，即大小。
+Returns the length (magnitude) of this vector.
 
 .. rst-class:: classref-item-separator
 
@@ -778,9 +778,9 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`float<class_float>` **length_squared**\ (\ ) |const| :ref:`🔗<class_Vector3_method_length_squared>`
 
-返回这个向量的平方长度，即平方大小。
+Returns the squared length (squared magnitude) of this vector.
 
-这个方法比 :ref:`length()<class_Vector3_method_length>` 运行得更快，所以如果你需要比较向量或需要一些公式的平方距离时，更喜欢用它。
+This method runs faster than :ref:`length()<class_Vector3_method_length>`, so prefer it if you need to compare vectors or need the squared distance for some formula.
 
 .. rst-class:: classref-item-separator
 
@@ -792,7 +792,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **lerp**\ (\ to\: :ref:`Vector3<class_Vector3>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_lerp>`
 
-返回此向量和 ``to`` 之间，按数量 ``weight`` 线性插值结果。\ ``weight`` 在 ``0.0`` 到 ``1.0`` 的范围内，代表插值的量。
+Returns the result of the linear interpolation between this vector and ``to`` by amount ``weight``. ``weight`` is on the range of ``0.0`` to ``1.0``, representing the amount of interpolation.
 
 .. rst-class:: classref-item-separator
 
@@ -804,7 +804,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **limit_length**\ (\ length\: :ref:`float<class_float>` = 1.0\ ) |const| :ref:`🔗<class_Vector3_method_limit_length>`
 
-返回应用了最大长度限制的向量，长度被限制到 ``length``\ 。如果向量非有限，则结果未定义。
+Returns the vector with a maximum length by limiting its length to ``length``. If the vector is non-finite, the result is undefined.
 
 .. rst-class:: classref-item-separator
 
@@ -816,7 +816,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **max**\ (\ with\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_max>`
 
-返回自身与 ``with`` 各分量的最大值，等价于 ``Vector3(maxf(x, with.x), maxf(y, with.y), maxf(z, with.z))``\ 。
+Returns the component-wise maximum of this and ``with``, equivalent to ``Vector3(maxf(x, with.x), maxf(y, with.y), maxf(z, with.z))``.
 
 .. rst-class:: classref-item-separator
 
@@ -828,7 +828,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`int<class_int>` **max_axis_index**\ (\ ) |const| :ref:`🔗<class_Vector3_method_max_axis_index>`
 
-返回该向量中最大值的轴。见 ``AXIS_*`` 常量。如果所有分量相等，则该方法返回 :ref:`AXIS_X<class_Vector3_constant_AXIS_X>`\ 。
+Returns the axis of the vector's highest value. See ``AXIS_*`` constants. If all components are equal, this method returns :ref:`AXIS_X<class_Vector3_constant_AXIS_X>`.
 
 .. rst-class:: classref-item-separator
 
@@ -840,7 +840,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **maxf**\ (\ with\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_maxf>`
 
-返回自身与 ``with`` 各分量的最大值，等价于 ``Vector3(maxf(x, with), maxf(y, with), maxf(z, with))``\ 。
+Returns the component-wise maximum of this and ``with``, equivalent to ``Vector3(maxf(x, with), maxf(y, with), maxf(z, with))``.
 
 .. rst-class:: classref-item-separator
 
@@ -852,7 +852,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **min**\ (\ with\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_min>`
 
-返回自身与 ``with`` 各分量的最小值，等价于 ``Vector3(minf(x, with.x), minf(y, with.y), minf(z, with.z))``\ 。
+Returns the component-wise minimum of this and ``with``, equivalent to ``Vector3(minf(x, with.x), minf(y, with.y), minf(z, with.z))``.
 
 .. rst-class:: classref-item-separator
 
@@ -864,7 +864,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`int<class_int>` **min_axis_index**\ (\ ) |const| :ref:`🔗<class_Vector3_method_min_axis_index>`
 
-返回该向量中最小值的轴。见 ``AXIS_*`` 常量。如果所有分量相等，则该方法返回 :ref:`AXIS_Z<class_Vector3_constant_AXIS_Z>`\ 。
+Returns the axis of the vector's lowest value. See ``AXIS_*`` constants. If all components are equal, this method returns :ref:`AXIS_Z<class_Vector3_constant_AXIS_Z>`.
 
 .. rst-class:: classref-item-separator
 
@@ -876,7 +876,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **minf**\ (\ with\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_minf>`
 
-返回自身与 ``with`` 各分量的最小值，等价于 ``Vector3(minf(x, with), minf(y, with), minf(z, with))``\ 。
+Returns the component-wise minimum of this and ``with``, equivalent to ``Vector3(minf(x, with), minf(y, with), minf(z, with))``.
 
 .. rst-class:: classref-item-separator
 
@@ -888,7 +888,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **move_toward**\ (\ to\: :ref:`Vector3<class_Vector3>`, delta\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_move_toward>`
 
-返回一个新向量，该向量朝 ``to`` 移动了固定的量 ``delta``\ 。不会超过最终值。
+Returns a new vector moved toward ``to`` by the fixed ``delta`` amount. Will not go past the final value.
 
 .. rst-class:: classref-item-separator
 
@@ -900,9 +900,9 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **normalized**\ (\ ) |const| :ref:`🔗<class_Vector3_method_normalized>`
 
-返回该向量缩放至单位长度的结果。等价于 ``v / v.length()``\ 。如果 ``v.length() == 0`` 则返回 ``(0, 0, 0)``\ 。另见 :ref:`is_normalized()<class_Vector3_method_is_normalized>`\ 。
+Returns the result of scaling the vector to unit length. Equivalent to ``v / v.length()``. Returns ``(0, 0, 0)`` if ``v.length() == 0``. See also :ref:`is_normalized()<class_Vector3_method_is_normalized>`.
 
-\ **注意：**\ 如果输入向量的长度接近零，则这个函数可能返回不正确的值。
+\ **Note:** This function may return incorrect values if the input vector length is near zero.
 
 .. rst-class:: classref-item-separator
 
@@ -914,7 +914,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **octahedron_decode**\ (\ uv\: :ref:`Vector2<class_Vector2>`\ ) |static| :ref:`🔗<class_Vector3_method_octahedron_decode>`
 
-根据使用 :ref:`octahedron_encode()<class_Vector3_method_octahedron_encode>` 进行八面体压缩后的形式（存储为 :ref:`Vector2<class_Vector2>`\ ）返回 **Vector3**\ 。
+Returns the **Vector3** from an octahedral-compressed form created using :ref:`octahedron_encode()<class_Vector3_method_octahedron_encode>` (stored as a :ref:`Vector2<class_Vector2>`).
 
 .. rst-class:: classref-item-separator
 
@@ -926,11 +926,11 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector2<class_Vector2>` **octahedron_encode**\ (\ ) |const| :ref:`🔗<class_Vector3_method_octahedron_encode>`
 
-将该 **Vector3** 的八面体编码（oct32）形式作为一个 :ref:`Vector2<class_Vector2>` 返回。由于 :ref:`Vector2<class_Vector2>` 占用的内存比 **Vector3** 少 1/3，因此这种压缩形式可用于传递更多的 :ref:`normalized()<class_Vector3_method_normalized>` **Vector3**\ ，而不会增加存储或内存需求。另见 :ref:`octahedron_decode()<class_Vector3_method_octahedron_decode>`\ 。
+Returns the octahedral-encoded (oct32) form of this **Vector3** as a :ref:`Vector2<class_Vector2>`. Since a :ref:`Vector2<class_Vector2>` occupies 1/3 less memory compared to **Vector3**, this form of compression can be used to pass greater amounts of :ref:`normalized()<class_Vector3_method_normalized>` **Vector3**\ s without increasing storage or memory requirements. See also :ref:`octahedron_decode()<class_Vector3_method_octahedron_decode>`.
 
-\ **注意：**\ :ref:`octahedron_encode()<class_Vector3_method_octahedron_encode>` 只能用于 :ref:`normalized()<class_Vector3_method_normalized>` 向量。\ :ref:`octahedron_encode()<class_Vector3_method_octahedron_encode>` *不*\ 检查这个 **Vector3** 是否已归一化，如果该 **Vector3** 没有被归一化，将返回一个不解压缩到原始值的值。
+\ **Note:** :ref:`octahedron_encode()<class_Vector3_method_octahedron_encode>` can only be used for :ref:`normalized()<class_Vector3_method_normalized>` vectors. :ref:`octahedron_encode()<class_Vector3_method_octahedron_encode>` does *not* check whether this **Vector3** is normalized, and will return a value that does not decompress to the original value if the **Vector3** is not normalized.
 
-\ **注意：**\ 八面体压缩是\ *有损的*\ ，尽管视觉差异在现实世界场景中很难被察觉。
+\ **Note:** Octahedral compression is *lossy*, although visual differences are rarely perceptible in real world scenarios.
 
 .. rst-class:: classref-item-separator
 
@@ -942,7 +942,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Basis<class_Basis>` **outer**\ (\ with\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_outer>`
 
-返回与 ``with`` 的外积。
+Returns the outer product with ``with``.
 
 .. rst-class:: classref-item-separator
 
@@ -954,7 +954,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **posmod**\ (\ mod\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_posmod>`
 
-返回由该向量的分量与 ``mod`` 执行 :ref:`@GlobalScope.fposmod()<class_@GlobalScope_method_fposmod>` 运算后组成的向量。
+Returns a vector composed of the :ref:`@GlobalScope.fposmod()<class_@GlobalScope_method_fposmod>` of this vector's components and ``mod``.
 
 .. rst-class:: classref-item-separator
 
@@ -966,7 +966,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **posmodv**\ (\ modv\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_posmodv>`
 
-返回由该向量的分量与 ``modv`` 的分量执行 :ref:`@GlobalScope.fposmod()<class_@GlobalScope_method_fposmod>` 运算后组成的向量。
+Returns a vector composed of the :ref:`@GlobalScope.fposmod()<class_@GlobalScope_method_fposmod>` of this vector's components and ``modv``'s components.
 
 .. rst-class:: classref-item-separator
 
@@ -978,9 +978,9 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **project**\ (\ b\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_project>`
 
-返回将该向量投影到给定的 ``b`` 向量上所得到的新向量。得到的新向量与 ``b`` 平行。另见 :ref:`slide()<class_Vector3_method_slide>`\ 。
+Returns a new vector resulting from projecting this vector onto the given vector ``b``. The resulting new vector is parallel to ``b``. See also :ref:`slide()<class_Vector3_method_slide>`.
 
-\ **注意：**\ 如果 ``b`` 向量为零向量，得到的新向量的分量均为 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`\ 。
+\ **Note:** If the vector ``b`` is a zero vector, the components of the resulting new vector will be :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`.
 
 .. rst-class:: classref-item-separator
 
@@ -992,9 +992,9 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **reflect**\ (\ n\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_reflect>`
 
-返回通过给定法线向量 ``n`` 定义的平面反射向量的结果。
+Returns the result of reflecting the vector through a plane defined by the given normal vector ``n``.
 
-\ **注意：**\ :ref:`reflect()<class_Vector3_method_reflect>` 与其他引擎和框架调用的 ``reflect()`` 不同。在其他引擎中，\ ``reflect()`` 返回由给定平面反射的向量的结果。因此反射穿过给定的法线。而在 Godot 中，反射穿过平面，可以被认为是从法线反弹。另见 :ref:`bounce()<class_Vector3_method_bounce>`\ ，它执行大多数引擎调用的 ``reflect()``\ 。
+\ **Note:** :ref:`reflect()<class_Vector3_method_reflect>` differs from what other engines and frameworks call ``reflect()``. In other engines, ``reflect()`` returns the result of the vector reflected by the given plane. The reflection thus passes through the given normal. While in Godot the reflection passes through the plane and can be thought of as bouncing off the normal. See also :ref:`bounce()<class_Vector3_method_bounce>` which does what most engines call ``reflect()``.
 
 .. rst-class:: classref-item-separator
 
@@ -1006,7 +1006,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **rotated**\ (\ axis\: :ref:`Vector3<class_Vector3>`, angle\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_rotated>`
 
-返回将这个向量围绕给定的轴旋转 ``angle``\ （单位为弧度）的结果。旋转轴必须为归一化的向量。另见 :ref:`@GlobalScope.deg_to_rad()<class_@GlobalScope_method_deg_to_rad>`\ 。
+Returns the result of rotating this vector around a given axis by ``angle`` (in radians). The axis must be a normalized vector. See also :ref:`@GlobalScope.deg_to_rad()<class_@GlobalScope_method_deg_to_rad>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1018,7 +1018,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **round**\ (\ ) |const| :ref:`🔗<class_Vector3_method_round>`
 
-返回所有分量都被四舍五入为最接近的整数的向量，中间情况向远离零的方向舍入。
+Returns a new vector with all components rounded to the nearest integer, with halfway cases rounded away from zero.
 
 .. rst-class:: classref-item-separator
 
@@ -1030,7 +1030,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **sign**\ (\ ) |const| :ref:`🔗<class_Vector3_method_sign>`
 
-返回新的向量，分量如果为正则设为 ``1.0``\ ，如果为负则设为 ``-1.0``\ ，如果为零则设为 ``0.0``\ 。结果与对每个分量调用 :ref:`@GlobalScope.sign()<class_@GlobalScope_method_sign>` 一致。
+Returns a new vector with each component set to ``1.0`` if it's positive, ``-1.0`` if it's negative, and ``0.0`` if it's zero. The result is identical to calling :ref:`@GlobalScope.sign()<class_@GlobalScope_method_sign>` on each component.
 
 .. rst-class:: classref-item-separator
 
@@ -1042,7 +1042,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`float<class_float>` **signed_angle_to**\ (\ to\: :ref:`Vector3<class_Vector3>`, axis\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_signed_angle_to>`
 
-返回给定向量的带符号角度，单位为弧度。从 ``axis`` 指定的一侧看，该角度在逆时针方向时符号为正，在顺时针方向时符号为负。
+Returns the signed angle to the given vector, in radians. The sign of the angle is positive in a counter-clockwise direction and negative in a clockwise direction when viewed from the side specified by the ``axis``.
 
 .. rst-class:: classref-item-separator
 
@@ -1054,9 +1054,9 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **slerp**\ (\ to\: :ref:`Vector3<class_Vector3>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_slerp>`
 
-返回在这个向量和 ``to`` 之间进行 ``weight`` 的球面线性插值的结果。\ ``weight`` 在 0.0 和 1.0 的范围内，代表插值的量。
+Returns the result of spherical linear interpolation between this vector and ``to``, by amount ``weight``. ``weight`` is on the range of 0.0 to 1.0, representing the amount of interpolation.
 
-如果输入向量的长度不同，这个函数也会对长度进行插值处理。对于输入向量中存在长度为零的向量的特殊情况，这个方法的行为与 :ref:`lerp()<class_Vector3_method_lerp>` 一致。
+This method also handles interpolating the lengths if the input vectors have different lengths. For the special case of one or both input vectors having zero length, this method behaves like :ref:`lerp()<class_Vector3_method_lerp>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1068,9 +1068,9 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **slide**\ (\ n\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_slide>`
 
-返回将该向量沿着法线为 ``n`` 的平面滑动所得到的新向量。得到的新向量与 ``n`` 垂直，等价于将该向量减去在 ``n`` 上的投影。另见 :ref:`project()<class_Vector3_method_project>`\ 。
+Returns a new vector resulting from sliding this vector along a plane with normal ``n``. The resulting new vector is perpendicular to ``n``, and is equivalent to this vector minus its projection on ``n``. See also :ref:`project()<class_Vector3_method_project>`.
 
-\ **注意：**\ 向量 ``n`` 必须为归一化的向量。另见 :ref:`normalized()<class_Vector3_method_normalized>`\ 。
+\ **Note:** The vector ``n`` must be normalized. See also :ref:`normalized()<class_Vector3_method_normalized>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1082,7 +1082,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **snapped**\ (\ step\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_snapped>`
 
-返回新的向量，每个分量都吸附到了与 ``step`` 中对应分量最接近的倍数。也可以用于将分量四舍五入至小数点后的任意位置。
+Returns a new vector with each component snapped to the nearest multiple of the corresponding component in ``step``. This can also be used to round the components to an arbitrary number of decimals.
 
 .. rst-class:: classref-item-separator
 
@@ -1094,7 +1094,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **snappedf**\ (\ step\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector3_method_snappedf>`
 
-返回一个新向量，其中每个分量都吸附到 ``step`` 的最接近的倍数。这也可以用于将分量四舍五入为任意数位的小数。
+Returns a new vector with each component snapped to the nearest multiple of ``step``. This can also be used to round the components to an arbitrary number of decimals.
 
 .. rst-class:: classref-section-separator
 
@@ -1102,8 +1102,8 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 .. rst-class:: classref-descriptions-group
 
-运算符说明
-----------
+Operator Descriptions
+---------------------
 
 .. _class_Vector3_operator_neq_Vector3:
 
@@ -1111,11 +1111,11 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Vector3_operator_neq_Vector3>`
 
-如果向量不相等，则返回 ``true``\ 。
+Returns ``true`` if the vectors are not equal.
 
-\ **注意：**\ 由于浮点数精度误差，请考虑改用 :ref:`is_equal_approx()<class_Vector3_method_is_equal_approx>`\ ，会更可靠。
+\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Vector3_method_is_equal_approx>` instead, which is more reliable.
 
-\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行为与其他向量不同。因此，如果包含 NaN，则这个方法的结果可能不准确。
+\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -1127,11 +1127,11 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **operator ***\ (\ right\: :ref:`Basis<class_Basis>`\ ) :ref:`🔗<class_Vector3_operator_mul_Basis>`
 
-假设该基是正交的（即旋转/反射可以，缩放/倾斜则不然），将 **Vector3** 逆向变换（乘以）给定的 :ref:`Basis<class_Basis>` 矩阵。
+Inversely transforms (multiplies) the **Vector3** by the given :ref:`Basis<class_Basis>` matrix, under the assumption that the basis is orthonormal (i.e. rotation/reflection is fine, scaling/skew is not).
 
-\ ``vector * basis`` 性当于 ``basis.transposed() * vector``\ 。请参阅 :ref:`Basis.transposed()<class_Basis_method_transposed>`\ 。
+\ ``vector * basis`` is equivalent to ``basis.transposed() * vector``. See :ref:`Basis.transposed()<class_Basis_method_transposed>`.
 
-对于通过非正交的基的逆进行的变换（例如使用缩放），可以使用 ``basis.inverse() * vector`` 代替。请参阅 :ref:`Basis.inverse()<class_Basis_method_inverse>`\ 。
+For transforming by inverse of a non-orthonormal basis (e.g. with scaling) ``basis.inverse() * vector`` can be used instead. See :ref:`Basis.inverse()<class_Basis_method_inverse>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1143,9 +1143,9 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **operator ***\ (\ right\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_Vector3_operator_mul_Quaternion>`
 
-将 **Vector3** 与给定的 :ref:`Quaternion<class_Quaternion>` 进行逆向变换（相乘）。
+Inversely transforms (multiplies) the **Vector3** by the given :ref:`Quaternion<class_Quaternion>`.
 
-\ ``vector * quaternion`` 相当于 ``quaternion.inverse() * vector``\ 。请参阅 :ref:`Quaternion.inverse()<class_Quaternion_method_inverse>`\ 。
+\ ``vector * quaternion`` is equivalent to ``quaternion.inverse() * vector``. See :ref:`Quaternion.inverse()<class_Quaternion_method_inverse>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1157,11 +1157,11 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **operator ***\ (\ right\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_Vector3_operator_mul_Transform3D>`
 
-假设该变换的基是正交的（即旋转/反射可以，缩放/倾斜不行），将 **Vector3** 逆向变换（乘以）给定的 :ref:`Transform3D<class_Transform3D>` 变换矩阵。
+Inversely transforms (multiplies) the **Vector3** by the given :ref:`Transform3D<class_Transform3D>` transformation matrix, under the assumption that the transformation basis is orthonormal (i.e. rotation/reflection is fine, scaling/skew is not).
 
-\ ``vector * transform`` 相当于 ``transform.inverse() * vector``\ 。请参阅 :ref:`Transform3D.inverse()<class_Transform3D_method_inverse>`\ 。
+\ ``vector * transform`` is equivalent to ``transform.inverse() * vector``. See :ref:`Transform3D.inverse()<class_Transform3D_method_inverse>`.
 
-对于通过仿射变换的逆进行的变换（例如缩放），可以使用 ``transform.affine_inverse() * vector`` 代替。请参阅 :ref:`Transform3D.affine_inverse()<class_Transform3D_method_affine_inverse>`\ 。
+For transforming by inverse of an affine transformation (e.g. with scaling) ``transform.affine_inverse() * vector`` can be used instead. See :ref:`Transform3D.affine_inverse()<class_Transform3D_method_affine_inverse>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1173,11 +1173,11 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **operator ***\ (\ right\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Vector3_operator_mul_Vector3>`
 
-将该 **Vector3** 的每个分量乘以给定 **Vector3** 的对应分量。
+Multiplies each component of the **Vector3** by the components of the given **Vector3**.
 
 ::
 
-    print(Vector3(10, 20, 30) * Vector3(3, 4, 5)) # 输出 (30.0, 80.0, 150.0)
+    print(Vector3(10, 20, 30) * Vector3(3, 4, 5)) # Prints (30.0, 80.0, 150.0)
 
 .. rst-class:: classref-item-separator
 
@@ -1189,7 +1189,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **operator ***\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Vector3_operator_mul_float>`
 
-将该 **Vector3** 的每个分量乘以给定的 :ref:`float<class_float>`\ 。
+Multiplies each component of the **Vector3** by the given :ref:`float<class_float>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1201,7 +1201,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **operator ***\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Vector3_operator_mul_int>`
 
-将该 **Vector3** 的每个分量乘以给定的 :ref:`int<class_int>`\ 。
+Multiplies each component of the **Vector3** by the given :ref:`int<class_int>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1213,11 +1213,11 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **operator +**\ (\ right\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Vector3_operator_sum_Vector3>`
 
-将该 **Vector3** 的每个分量加上给定 **Vector3** 的对应分量。
+Adds each component of the **Vector3** by the components of the given **Vector3**.
 
 ::
 
-    print(Vector3(10, 20, 30) + Vector3(3, 4, 5)) # 输出 (13.0, 24.0, 35.0)
+    print(Vector3(10, 20, 30) + Vector3(3, 4, 5)) # Prints (13.0, 24.0, 35.0)
 
 .. rst-class:: classref-item-separator
 
@@ -1229,11 +1229,11 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **operator -**\ (\ right\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Vector3_operator_dif_Vector3>`
 
-将该 **Vector3** 的每个分量减去给定 **Vector3** 的对应分量。
+Subtracts each component of the **Vector3** by the components of the given **Vector3**.
 
 ::
 
-    print(Vector3(10, 20, 30) - Vector3(3, 4, 5)) # 输出 (7.0, 16.0, 25.0)
+    print(Vector3(10, 20, 30) - Vector3(3, 4, 5)) # Prints (7.0, 16.0, 25.0)
 
 .. rst-class:: classref-item-separator
 
@@ -1245,11 +1245,11 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **operator /**\ (\ right\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Vector3_operator_div_Vector3>`
 
-将该 **Vector3** 的每个分量除以给定 **Vector3** 的对应分量。
+Divides each component of the **Vector3** by the components of the given **Vector3**.
 
 ::
 
-    print(Vector3(10, 20, 30) / Vector3(2, 5, 3)) # 输出 (5.0, 4.0, 10.0)
+    print(Vector3(10, 20, 30) / Vector3(2, 5, 3)) # Prints (5.0, 4.0, 10.0)
 
 .. rst-class:: classref-item-separator
 
@@ -1261,7 +1261,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **operator /**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Vector3_operator_div_float>`
 
-将该 **Vector3** 的每个分量除以给定的 :ref:`float<class_float>`\ 。
+Divides each component of the **Vector3** by the given :ref:`float<class_float>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1273,7 +1273,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **operator /**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Vector3_operator_div_int>`
 
-将该 **Vector3** 的每个分量除以给定的 :ref:`int<class_int>`\ 。
+Divides each component of the **Vector3** by the given :ref:`int<class_int>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1285,9 +1285,9 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`bool<class_bool>` **operator <**\ (\ right\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Vector3_operator_lt_Vector3>`
 
-比较两个 **Vector3** 向量，首先检查左向量的 X 值是否小于 ``right`` 向量的 X 值。如果 X 值完全相等，则用相同的方法检查两个向量的 Y 值、Z 值。该运算符可用于向量排序。
+Compares two **Vector3** vectors by first checking if the X value of the left vector is less than the X value of the ``right`` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors, and then with the Z values. This operator is useful for sorting vectors.
 
-\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行为与其他向量不同。因此，如果包含 NaN，则这个方法的结果可能不准确。
+\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -1299,9 +1299,9 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`bool<class_bool>` **operator <=**\ (\ right\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Vector3_operator_lte_Vector3>`
 
-比较两个 **Vector3** 向量，首先检查左向量的 X 值是否小于等于 ``right`` 向量的 X 值。如果 X 值完全相等，则用相同的方法检查两个向量的 Y 值、Z 值。该运算符可用于向量排序。
+Compares two **Vector3** vectors by first checking if the X value of the left vector is less than or equal to the X value of the ``right`` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors, and then with the Z values. This operator is useful for sorting vectors.
 
-\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行为与其他向量不同。因此，如果包含 NaN，则这个方法的结果可能不准确。
+\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -1313,11 +1313,11 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Vector3_operator_eq_Vector3>`
 
-如果向量完全相等，则返回 ``true``\ 。
+Returns ``true`` if the vectors are exactly equal.
 
-\ **注意：**\ 由于浮点数精度误差，请考虑改用 :ref:`is_equal_approx()<class_Vector3_method_is_equal_approx>`\ ，会更可靠。
+\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Vector3_method_is_equal_approx>` instead, which is more reliable.
 
-\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行为与其他向量不同。因此，如果包含 NaN，则这个方法的结果可能不准确。
+\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -1329,9 +1329,9 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`bool<class_bool>` **operator >**\ (\ right\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Vector3_operator_gt_Vector3>`
 
-比较两个 **Vector3** 向量，首先检查左向量的 X 值是否大于 ``right`` 向量的 X 值。如果 X 值完全相等，则用相同的方法检查两个向量的 Y 值、Z 值。该运算符可用于向量排序。
+Compares two **Vector3** vectors by first checking if the X value of the left vector is greater than the X value of the ``right`` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors, and then with the Z values. This operator is useful for sorting vectors.
 
-\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行为与其他向量不同。因此，如果包含 NaN，则这个方法的结果可能不准确。
+\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -1343,9 +1343,9 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`bool<class_bool>` **operator >=**\ (\ right\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Vector3_operator_gte_Vector3>`
 
-比较两个 **Vector3** 向量，首先检查左向量的 X 值是否大于等于 ``right`` 向量的 X 值。如果 X 值完全相等，则用相同的方法检查两个向量的 Y 值、Z 值。该运算符可用于向量排序。
+Compares two **Vector3** vectors by first checking if the X value of the left vector is greater than or equal to the X value of the ``right`` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors, and then with the Z values. This operator is useful for sorting vectors.
 
-\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行为与其他向量不同。因此，如果包含 NaN，则这个方法的结果可能不准确。
+\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -1357,7 +1357,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`float<class_float>` **operator []**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Vector3_operator_idx_int>`
 
-使用向量分量的 ``index`` 来访问向量分量。\ ``v[0]`` 等价于 ``v.x``\ ，\ ``v[1]`` 等价于 ``v.y``\ ，\ ``v[2]`` 等价于 ``v.z``\ 。
+Access vector components using their ``index``. ``v[0]`` is equivalent to ``v.x``, ``v[1]`` is equivalent to ``v.y``, and ``v[2]`` is equivalent to ``v.z``.
 
 .. rst-class:: classref-item-separator
 
@@ -1369,7 +1369,7 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **operator unary+**\ (\ ) :ref:`🔗<class_Vector3_operator_unplus>`
 
-返回与 ``+`` 不存在时相同的值。单目 ``+`` 没有作用，但有时可以使你的代码更具可读性。
+Returns the same value as if the ``+`` was not there. Unary ``+`` does nothing, but sometimes it can make your code more readable.
 
 .. rst-class:: classref-item-separator
 
@@ -1381,14 +1381,14 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`Vector3<class_Vector3>` **operator unary-**\ (\ ) :ref:`🔗<class_Vector3_operator_unminus>`
 
-返回该 **Vector3** 的负值。和写 ``Vector3(-v.x, -v.y, -v.z)`` 是一样的。该操作在保持相同幅度的同时，翻转向量的方向。对于浮点数，零也有正负两种。
+Returns the negative value of the **Vector3**. This is the same as writing ``Vector3(-v.x, -v.y, -v.z)``. This operation flips the direction of the vector while keeping the same magnitude. With floats, the number zero can be either positive or negative.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

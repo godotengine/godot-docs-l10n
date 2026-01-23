@@ -5,34 +5,34 @@
 AudioServer
 ===========
 
-**繼承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-低階音訊存取的伺服器介面。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-**AudioServer** 為低階音訊存取伺服器介面，負責建立樣本資料（可播放音訊）並透過語音介面進行播放。
+Server interface for low-level audio access.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
+**AudioServer** is a low-level server interface for audio access. It is in charge of creating sample data (playable audio) as well as its playback via a voice interface.
 
-- `音訊裝置切換範例 <https://godotengine.org/asset-library/asset/2758>`__
+.. rst-class:: classref-introduction-group
 
-- `音訊麥克風錄音示範 <https://godotengine.org/asset-library/asset/2760>`__
+Tutorials
+---------
 
-- `音訊頻譜視覺化範例 <https://godotengine.org/asset-library/asset/2762>`__
+- :doc:`Audio buses <../tutorials/audio/audio_buses>`
+
+- `Audio Device Changer Demo <https://godotengine.org/asset-library/asset/2758>`__
+
+- `Audio Microphone Record Demo <https://godotengine.org/asset-library/asset/2760>`__
+
+- `Audio Spectrum Visualizer Demo <https://godotengine.org/asset-library/asset/2762>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ AudioServer
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -161,8 +161,8 @@ AudioServer
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_AudioServer_signal_bus_layout_changed:
 
@@ -170,7 +170,7 @@ AudioServer
 
 **bus_layout_changed**\ (\ ) :ref:`🔗<class_AudioServer_signal_bus_layout_changed>`
 
-當音訊匯流排被新增、刪除或移動時發出。
+Emitted when an audio bus is added, deleted, or moved.
 
 .. rst-class:: classref-item-separator
 
@@ -182,7 +182,7 @@ AudioServer
 
 **bus_renamed**\ (\ bus_index\: :ref:`int<class_int>`, old_name\: :ref:`StringName<class_StringName>`, new_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AudioServer_signal_bus_renamed>`
 
-當索引 ``bus_index`` 的音訊匯流排由 ``old_name`` 重新命名為 ``new_name`` 時發出。
+Emitted when the audio bus at ``bus_index`` is renamed from ``old_name`` to ``new_name``.
 
 .. rst-class:: classref-section-separator
 
@@ -190,8 +190,8 @@ AudioServer
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_AudioServer_SpeakerMode:
 
@@ -205,7 +205,7 @@ enum **SpeakerMode**: :ref:`🔗<enum_AudioServer_SpeakerMode>`
 
 :ref:`SpeakerMode<enum_AudioServer_SpeakerMode>` **SPEAKER_MODE_STEREO** = ``0``
 
-偵測到兩個或更少的揚聲器。
+Two or fewer speakers were detected.
 
 .. _class_AudioServer_constant_SPEAKER_SURROUND_31:
 
@@ -213,7 +213,7 @@ enum **SpeakerMode**: :ref:`🔗<enum_AudioServer_SpeakerMode>`
 
 :ref:`SpeakerMode<enum_AudioServer_SpeakerMode>` **SPEAKER_SURROUND_31** = ``1``
 
-偵測到 3.1 聲道環繞配置。
+A 3.1 channel surround setup was detected.
 
 .. _class_AudioServer_constant_SPEAKER_SURROUND_51:
 
@@ -221,7 +221,7 @@ enum **SpeakerMode**: :ref:`🔗<enum_AudioServer_SpeakerMode>`
 
 :ref:`SpeakerMode<enum_AudioServer_SpeakerMode>` **SPEAKER_SURROUND_51** = ``2``
 
-偵測到 5.1 聲道環繞配置。
+A 5.1 channel surround setup was detected.
 
 .. _class_AudioServer_constant_SPEAKER_SURROUND_71:
 
@@ -229,7 +229,7 @@ enum **SpeakerMode**: :ref:`🔗<enum_AudioServer_SpeakerMode>`
 
 :ref:`SpeakerMode<enum_AudioServer_SpeakerMode>` **SPEAKER_SURROUND_71** = ``3``
 
-偵測到 7.1 聲道環繞配置。
+A 7.1 channel surround setup was detected.
 
 .. rst-class:: classref-item-separator
 
@@ -247,9 +247,9 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 :ref:`PlaybackType<enum_AudioServer_PlaybackType>` **PLAYBACK_TYPE_DEFAULT** = ``0``
 
-**實驗性：** 此常數可能在未來版本中變更或移除。
+**Experimental:** This constant may be changed or removed in future versions.
 
-播放將依 :ref:`ProjectSettings.audio/general/default_playback_type<class_ProjectSettings_property_audio/general/default_playback_type>` 所宣告的類型處理。
+The playback will be considered of the type declared at :ref:`ProjectSettings.audio/general/default_playback_type<class_ProjectSettings_property_audio/general/default_playback_type>`.
 
 .. _class_AudioServer_constant_PLAYBACK_TYPE_STREAM:
 
@@ -257,9 +257,9 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 :ref:`PlaybackType<enum_AudioServer_PlaybackType>` **PLAYBACK_TYPE_STREAM** = ``1``
 
-**實驗性：** 此常數可能在未來版本中變更或移除。
+**Experimental:** This constant may be changed or removed in future versions.
 
-強制將播放視為串流。
+Force the playback to be considered as a stream.
 
 .. _class_AudioServer_constant_PLAYBACK_TYPE_SAMPLE:
 
@@ -267,13 +267,13 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 :ref:`PlaybackType<enum_AudioServer_PlaybackType>` **PLAYBACK_TYPE_SAMPLE** = ``2``
 
-**實驗性：** 此常數可能在未來版本中變更或移除。
+**Experimental:** This constant may be changed or removed in future versions.
 
-強制將播放視為樣本，可降低延遲並提升穩定性（減少爆音風險），但靈活度較低。
+Force the playback to be considered as a sample. This can provide lower latency and more stable playback (with less risk of audio crackling), at the cost of having less flexibility.
 
-\ **注意：**\ 目前僅網頁平台支援此功能。
+\ **Note:** Only currently supported on the web platform.
 
-\ **注意：**\ 當播放被視為樣本時，不支援 :ref:`AudioEffect<class_AudioEffect>`\ 。
+\ **Note:** :ref:`AudioEffect<class_AudioEffect>`\ s are not supported when playback is considered as a sample.
 
 .. _class_AudioServer_constant_PLAYBACK_TYPE_MAX:
 
@@ -281,9 +281,9 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 :ref:`PlaybackType<enum_AudioServer_PlaybackType>` **PLAYBACK_TYPE_MAX** = ``3``
 
-**實驗性：** 此常數可能在未來版本中變更或移除。
+**Experimental:** This constant may be changed or removed in future versions.
 
-代表 :ref:`PlaybackType<enum_AudioServer_PlaybackType>` 列舉的大小。
+Represents the size of the :ref:`PlaybackType<enum_AudioServer_PlaybackType>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -291,8 +291,8 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_AudioServer_property_bus_count:
 
@@ -305,7 +305,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 - |void| **set_bus_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bus_count**\ (\ )
 
-可用音訊匯流排數量。
+Number of available audio buses.
 
 .. rst-class:: classref-item-separator
 
@@ -322,9 +322,9 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 - |void| **set_input_device**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_input_device**\ (\ )
 
-目前音訊輸入裝置名稱（參見 :ref:`get_input_device_list()<class_AudioServer_method_get_input_device_list>`\ ）。當系統具有多個輸入（例如類比、USB、HDMI）時，可藉此選擇輸入裝置；\ ``"Default"`` 會使用系統預設輸入。若設定無效名稱，將還原為 ``"Default"``\ 。
+Name of the current device for audio input (see :ref:`get_input_device_list()<class_AudioServer_method_get_input_device_list>`). On systems with multiple audio inputs (such as analog, USB and HDMI audio), this can be used to select the audio input device. The value ``"Default"`` will record audio on the system-wide default audio input. If an invalid device name is set, the value will be reverted back to ``"Default"``.
 
-\ **注意：**\ 必須將 :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` 設為 ``true`` 才能啟用音訊輸入。隱私與權限相關限制請參閱該設定說明。
+\ **Note:** :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` must be ``true`` for audio input to work. See also that setting's description for caveats related to permissions and operating system privacy settings.
 
 .. rst-class:: classref-item-separator
 
@@ -341,7 +341,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 - |void| **set_output_device**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_output_device**\ (\ )
 
-目前音訊輸出裝置名稱（參見 :ref:`get_output_device_list()<class_AudioServer_method_get_output_device_list>`\ ）。當系統具有多個輸出（例如類比、USB、HDMI）時，可藉此選擇輸出裝置；\ ``"Default"`` 會使用系統預設輸出。若設定無效名稱，將還原為 ``"Default"``\ 。
+Name of the current device for audio output (see :ref:`get_output_device_list()<class_AudioServer_method_get_output_device_list>`). On systems with multiple audio outputs (such as analog, USB and HDMI audio), this can be used to select the audio output device. The value ``"Default"`` will play audio on the system-wide default audio output. If an invalid device name is set, the value will be reverted back to ``"Default"``.
 
 .. rst-class:: classref-item-separator
 
@@ -358,7 +358,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 - |void| **set_playback_speed_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_playback_speed_scale**\ (\ )
 
-調整音訊播放速度比例（如設為 ``0.5`` 則音訊以半速播放）。如需改變整體模擬速度，請參閱 :ref:`Engine.time_scale<class_Engine_property_time_scale>`\ ；兩者彼此獨立。
+Scales the rate at which audio is played (i.e. setting it to ``0.5`` will make the audio be played at half its speed). See also :ref:`Engine.time_scale<class_Engine_property_time_scale>` to affect the general simulation speed, which is independent from :ref:`playback_speed_scale<class_AudioServer_property_playback_speed_scale>`.
 
 .. rst-class:: classref-section-separator
 
@@ -366,8 +366,8 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_AudioServer_method_add_bus:
 
@@ -375,7 +375,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 |void| **add_bus**\ (\ at_position\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_AudioServer_method_add_bus>`
 
-在 ``at_position`` 處新增匯流排。
+Adds a bus at ``at_position``.
 
 .. rst-class:: classref-item-separator
 
@@ -387,7 +387,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 |void| **add_bus_effect**\ (\ bus_idx\: :ref:`int<class_int>`, effect\: :ref:`AudioEffect<class_AudioEffect>`, at_position\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_AudioServer_method_add_bus_effect>`
 
-於索引 ``bus_idx`` 的匯流排上、位置 ``at_position`` 新增 :ref:`AudioEffect<class_AudioEffect>` 效果。
+Adds an :ref:`AudioEffect<class_AudioEffect>` effect to the bus ``bus_idx`` at ``at_position``.
 
 .. rst-class:: classref-item-separator
 
@@ -399,7 +399,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 :ref:`AudioBusLayout<class_AudioBusLayout>` **generate_bus_layout**\ (\ ) |const| :ref:`🔗<class_AudioServer_method_generate_bus_layout>`
 
-使用現有匯流排與效果產生 :ref:`AudioBusLayout<class_AudioBusLayout>`\ 。
+Generates an :ref:`AudioBusLayout<class_AudioBusLayout>` using the available buses and effects.
 
 .. rst-class:: classref-item-separator
 
@@ -411,7 +411,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 :ref:`int<class_int>` **get_bus_channels**\ (\ bus_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioServer_method_get_bus_channels>`
 
-返回索引 ``bus_idx`` 的匯流排通道數。
+Returns the number of channels of the bus at index ``bus_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -423,7 +423,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 :ref:`AudioEffect<class_AudioEffect>` **get_bus_effect**\ (\ bus_idx\: :ref:`int<class_int>`, effect_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioServer_method_get_bus_effect>`
 
-返回索引 ``bus_idx`` 匯流排上位置 ``effect_idx`` 的 :ref:`AudioEffect<class_AudioEffect>`\ 。
+Returns the :ref:`AudioEffect<class_AudioEffect>` at position ``effect_idx`` in bus ``bus_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -435,7 +435,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 :ref:`int<class_int>` **get_bus_effect_count**\ (\ bus_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioServer_method_get_bus_effect_count>`
 
-返回索引 ``bus_idx`` 的匯流排所掛載效果數量。
+Returns the number of effects on the bus at ``bus_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -447,7 +447,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 :ref:`AudioEffectInstance<class_AudioEffectInstance>` **get_bus_effect_instance**\ (\ bus_idx\: :ref:`int<class_int>`, effect_idx\: :ref:`int<class_int>`, channel\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_AudioServer_method_get_bus_effect_instance>`
 
-返回指定匯流排及效果索引（可選通道）的 :ref:`AudioEffectInstance<class_AudioEffectInstance>`\ 。
+Returns the :ref:`AudioEffectInstance<class_AudioEffectInstance>` assigned to the given bus and effect indices (and optionally channel).
 
 .. rst-class:: classref-item-separator
 
@@ -459,7 +459,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 :ref:`int<class_int>` **get_bus_index**\ (\ bus_name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_AudioServer_method_get_bus_index>`
 
-返回名稱為 ``bus_name`` 的匯流排索引；若不存在則返回 ``-1``\ 。
+Returns the index of the bus with the name ``bus_name``. Returns ``-1`` if no bus with the specified name exist.
 
 .. rst-class:: classref-item-separator
 
@@ -471,7 +471,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 :ref:`String<class_String>` **get_bus_name**\ (\ bus_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioServer_method_get_bus_name>`
 
-返回索引 ``bus_idx`` 的匯流排名稱。
+Returns the name of the bus with the index ``bus_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -483,7 +483,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 :ref:`float<class_float>` **get_bus_peak_volume_left_db**\ (\ bus_idx\: :ref:`int<class_int>`, channel\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioServer_method_get_bus_peak_volume_left_db>`
 
-返回匯流排索引 ``bus_idx``\ 、通道索引 ``channel`` 的左聲道峰值音量。
+Returns the peak volume of the left speaker at bus index ``bus_idx`` and channel index ``channel``.
 
 .. rst-class:: classref-item-separator
 
@@ -495,7 +495,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 :ref:`float<class_float>` **get_bus_peak_volume_right_db**\ (\ bus_idx\: :ref:`int<class_int>`, channel\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioServer_method_get_bus_peak_volume_right_db>`
 
-返回匯流排索引 ``bus_idx``\ 、通道索引 ``channel`` 的右聲道峰值音量。
+Returns the peak volume of the right speaker at bus index ``bus_idx`` and channel index ``channel``.
 
 .. rst-class:: classref-item-separator
 
@@ -507,7 +507,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 :ref:`StringName<class_StringName>` **get_bus_send**\ (\ bus_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioServer_method_get_bus_send>`
 
-返回索引 ``bus_idx`` 的匯流排所送出的目標匯流排名稱。
+Returns the name of the bus that the bus at index ``bus_idx`` sends to.
 
 .. rst-class:: classref-item-separator
 
@@ -519,7 +519,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 :ref:`float<class_float>` **get_bus_volume_db**\ (\ bus_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioServer_method_get_bus_volume_db>`
 
-返回索引 ``bus_idx`` 的匯流排音量（dB）。
+Returns the volume of the bus at index ``bus_idx`` in dB.
 
 .. rst-class:: classref-item-separator
 
@@ -531,9 +531,9 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 :ref:`float<class_float>` **get_bus_volume_linear**\ (\ bus_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioServer_method_get_bus_volume_linear>`
 
-以線性值返回索引 ``bus_idx`` 的匯流排音量。
+Returns the volume of the bus at index ``bus_idx`` as a linear value.
 
-\ **注意：**\ 返回值等同於將 :ref:`get_bus_volume_db()<class_AudioServer_method_get_bus_volume_db>` 的結果傳入 :ref:`@GlobalScope.db_to_linear()<class_@GlobalScope_method_db_to_linear>` 的結果。
+\ **Note:** The returned value is equivalent to the result of :ref:`@GlobalScope.db_to_linear()<class_@GlobalScope_method_db_to_linear>` on the result of :ref:`get_bus_volume_db()<class_AudioServer_method_get_bus_volume_db>`.
 
 .. rst-class:: classref-item-separator
 
@@ -545,7 +545,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 :ref:`String<class_String>` **get_driver_name**\ (\ ) |const| :ref:`🔗<class_AudioServer_method_get_driver_name>`
 
-返回目前使用的音訊驅動名稱。預設值取決於作業系統，可透過 ``--audio-driver`` :doc:`指令列參數 <../tutorials/editor/command_line_tutorial>` 覆寫。使用 ``--headless`` 也會自動將音訊驅動設為 ``Dummy``\ 。另見 :ref:`ProjectSettings.audio/driver/driver<class_ProjectSettings_property_audio/driver/driver>`\ 。
+Returns the name of the current audio driver. The default usually depends on the operating system, but may be overridden via the ``--audio-driver`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`. ``--headless`` also automatically sets the audio driver to ``Dummy``. See also :ref:`ProjectSettings.audio/driver/driver<class_ProjectSettings_property_audio/driver/driver>`.
 
 .. rst-class:: classref-item-separator
 
@@ -557,7 +557,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 :ref:`int<class_int>` **get_input_buffer_length_frames**\ (\ ) :ref:`🔗<class_AudioServer_method_get_input_buffer_length_frames>`
 
-**實驗性：** 此方法可能在未來版本中變更或移除。
+**Experimental:** This method may be changed or removed in future versions.
 
 Returns the absolute size of the microphone input buffer. This is set to a multiple of the audio latency and can be used to estimate the minimum rate at which the frames need to be fetched.
 
@@ -571,9 +571,9 @@ Returns the absolute size of the microphone input buffer. This is set to a multi
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_input_device_list**\ (\ ) :ref:`🔗<class_AudioServer_method_get_input_device_list>`
 
-返回系統偵測到的所有音訊輸入裝置名稱。
+Returns the names of all audio input devices detected on the system.
 
-\ **注意：**\ 必須將 :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` 設為 ``true`` 才能啟用音訊輸入。更多權限與作業系統隱私限制請參閱該設定說明。
+\ **Note:** :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` must be ``true`` for audio input to work. See also that setting's description for caveats related to permissions and operating system privacy settings.
 
 .. rst-class:: classref-item-separator
 
@@ -585,7 +585,7 @@ Returns the absolute size of the microphone input buffer. This is set to a multi
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_input_frames**\ (\ frames\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioServer_method_get_input_frames>`
 
-**實驗性：** 此方法可能在未來版本中變更或移除。
+**Experimental:** This method may be changed or removed in future versions.
 
 Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` containing exactly ``frames`` audio samples from the internal microphone buffer if available, otherwise returns an empty :ref:`PackedVector2Array<class_PackedVector2Array>`.
 
@@ -603,7 +603,7 @@ The samples are signed floating-point PCM values between ``-1`` and ``1``.
 
 :ref:`int<class_int>` **get_input_frames_available**\ (\ ) :ref:`🔗<class_AudioServer_method_get_input_frames_available>`
 
-**實驗性：** 此方法可能在未來版本中變更或移除。
+**Experimental:** This method may be changed or removed in future versions.
 
 Returns the number of frames available to read using :ref:`get_input_frames()<class_AudioServer_method_get_input_frames>`.
 
@@ -617,7 +617,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 :ref:`float<class_float>` **get_input_mix_rate**\ (\ ) |const| :ref:`🔗<class_AudioServer_method_get_input_mix_rate>`
 
-返回 **AudioServer** 輸入的取樣率。
+Returns the sample rate at the input of the **AudioServer**.
 
 .. rst-class:: classref-item-separator
 
@@ -629,7 +629,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 :ref:`float<class_float>` **get_mix_rate**\ (\ ) |const| :ref:`🔗<class_AudioServer_method_get_mix_rate>`
 
-返回 **AudioServer** 輸出的取樣率。
+Returns the sample rate at the output of the **AudioServer**.
 
 .. rst-class:: classref-item-separator
 
@@ -641,7 +641,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_output_device_list**\ (\ ) :ref:`🔗<class_AudioServer_method_get_output_device_list>`
 
-返回系統偵測到的所有音訊輸出裝置名稱。
+Returns the names of all audio output devices detected on the system.
 
 .. rst-class:: classref-item-separator
 
@@ -653,9 +653,9 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 :ref:`float<class_float>` **get_output_latency**\ (\ ) |const| :ref:`🔗<class_AudioServer_method_get_output_latency>`
 
-返回音訊驅動的有效輸出延遲。此值基於 :ref:`ProjectSettings.audio/driver/output_latency<class_ProjectSettings_property_audio/driver/output_latency>`\ ，但最終結果會依作業系統與驅動不同而異。
+Returns the audio driver's effective output latency. This is based on :ref:`ProjectSettings.audio/driver/output_latency<class_ProjectSettings_property_audio/driver/output_latency>`, but the exact returned value will differ depending on the operating system and audio driver.
 
-\ **注意：**\ 此呼叫成本較高，請勿於每影格呼叫 :ref:`get_output_latency()<class_AudioServer_method_get_output_latency>`\ 。
+\ **Note:** This can be expensive; it is not recommended to call :ref:`get_output_latency()<class_AudioServer_method_get_output_latency>` every frame.
 
 .. rst-class:: classref-item-separator
 
@@ -667,7 +667,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 :ref:`SpeakerMode<enum_AudioServer_SpeakerMode>` **get_speaker_mode**\ (\ ) |const| :ref:`🔗<class_AudioServer_method_get_speaker_mode>`
 
-返回揚聲器配置。
+Returns the speaker configuration.
 
 .. rst-class:: classref-item-separator
 
@@ -679,7 +679,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 :ref:`float<class_float>` **get_time_since_last_mix**\ (\ ) |const| :ref:`🔗<class_AudioServer_method_get_time_since_last_mix>`
 
-返回距離上次混音的相對時間。
+Returns the relative time since the last mix occurred.
 
 .. rst-class:: classref-item-separator
 
@@ -691,7 +691,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 :ref:`float<class_float>` **get_time_to_next_mix**\ (\ ) |const| :ref:`🔗<class_AudioServer_method_get_time_to_next_mix>`
 
-返回距離下次混音的剩餘時間。
+Returns the relative time until the next mix occurs.
 
 .. rst-class:: classref-item-separator
 
@@ -703,7 +703,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 :ref:`bool<class_bool>` **is_bus_bypassing_effects**\ (\ bus_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioServer_method_is_bus_bypassing_effects>`
 
-若為 ``true``\ ，索引 ``bus_idx`` 的匯流排將繞過所有效果。
+If ``true``, the bus at index ``bus_idx`` is bypassing effects.
 
 .. rst-class:: classref-item-separator
 
@@ -715,7 +715,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 :ref:`bool<class_bool>` **is_bus_effect_enabled**\ (\ bus_idx\: :ref:`int<class_int>`, effect_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioServer_method_is_bus_effect_enabled>`
 
-若為 ``true``\ ，索引 ``bus_idx`` 匯流排上索引 ``effect_idx`` 的效果為啟用狀態。
+If ``true``, the effect at index ``effect_idx`` on the bus at index ``bus_idx`` is enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -727,7 +727,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 :ref:`bool<class_bool>` **is_bus_mute**\ (\ bus_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioServer_method_is_bus_mute>`
 
-若為 ``true``\ ，索引 ``bus_idx`` 的匯流排將被靜音。
+If ``true``, the bus at index ``bus_idx`` is muted.
 
 .. rst-class:: classref-item-separator
 
@@ -739,7 +739,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 :ref:`bool<class_bool>` **is_bus_solo**\ (\ bus_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioServer_method_is_bus_solo>`
 
-若為 ``true``\ ，索引 ``bus_idx`` 的匯流排將進入獨奏模式。
+If ``true``, the bus at index ``bus_idx`` is in solo mode.
 
 .. rst-class:: classref-item-separator
 
@@ -751,11 +751,11 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 :ref:`bool<class_bool>` **is_stream_registered_as_sample**\ (\ stream\: :ref:`AudioStream<class_AudioStream>`\ ) :ref:`🔗<class_AudioServer_method_is_stream_registered_as_sample>`
 
-**實驗性：** 此方法可能在未來版本中變更或移除。
+**Experimental:** This method may be changed or removed in future versions.
 
-若為 ``true``\ ，此串流將被註冊為樣本，播放前無需再註冊。
+If ``true``, the stream is registered as a sample. The engine will not have to register it before playing the sample.
 
-若為 ``false``\ ，播放前必須先註冊；為避免延遲尖峰，可預先呼叫 :ref:`register_stream_as_sample()<class_AudioServer_method_register_stream_as_sample>`\ 。
+If ``false``, the stream will have to be registered before playing it. To prevent lag spikes, register the stream as sample with :ref:`register_stream_as_sample()<class_AudioServer_method_register_stream_as_sample>`.
 
 .. rst-class:: classref-item-separator
 
@@ -767,9 +767,9 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 |void| **lock**\ (\ ) :ref:`🔗<class_AudioServer_method_lock>`
 
-鎖定音訊驅動主迴圈。
+Locks the audio driver's main loop.
 
-\ **注意：**\ 請務必於操作完畢後解鎖。
+\ **Note:** Remember to unlock it afterwards.
 
 .. rst-class:: classref-item-separator
 
@@ -781,7 +781,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 |void| **move_bus**\ (\ index\: :ref:`int<class_int>`, to_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioServer_method_move_bus>`
 
-將匯流排從索引 ``index`` 移至索引 ``to_index``\ 。
+Moves the bus from index ``index`` to index ``to_index``.
 
 .. rst-class:: classref-item-separator
 
@@ -793,11 +793,11 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 |void| **register_stream_as_sample**\ (\ stream\: :ref:`AudioStream<class_AudioStream>`\ ) :ref:`🔗<class_AudioServer_method_register_stream_as_sample>`
 
-**實驗性：** 此方法可能在未來版本中變更或移除。
+**Experimental:** This method may be changed or removed in future versions.
 
-強制將串流註冊為樣本。
+Forces the registration of a stream as a sample.
 
-\ **注意：**\ 在單執行緒版本中呼叫此方法可能造成延遲尖峰。建議於載入資源階段執行，以避免在播放前才註冊造成卡頓。
+\ **Note:** Lag spikes may occur when calling this method, especially on single-threaded builds. It is suggested to call this method while loading assets, where the lag spike could be masked, instead of registering the sample right before it needs to be played.
 
 .. rst-class:: classref-item-separator
 
@@ -809,7 +809,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 |void| **remove_bus**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioServer_method_remove_bus>`
 
-移除索引 ``index`` 的匯流排。
+Removes the bus at index ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -821,7 +821,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 |void| **remove_bus_effect**\ (\ bus_idx\: :ref:`int<class_int>`, effect_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioServer_method_remove_bus_effect>`
 
-自索引 ``bus_idx`` 的匯流排移除索引 ``effect_idx`` 的效果。
+Removes the effect at index ``effect_idx`` from the bus at index ``bus_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -833,7 +833,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 |void| **set_bus_bypass_effects**\ (\ bus_idx\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_AudioServer_method_set_bus_bypass_effects>`
 
-若為 ``true``\ ，索引 ``bus_idx`` 的匯流排將繞過所有效果。
+If ``true``, the bus at index ``bus_idx`` is bypassing effects.
 
 .. rst-class:: classref-item-separator
 
@@ -845,7 +845,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 |void| **set_bus_effect_enabled**\ (\ bus_idx\: :ref:`int<class_int>`, effect_idx\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_AudioServer_method_set_bus_effect_enabled>`
 
-若為 ``true``\ ，索引 ``bus_idx`` 匯流排上索引 ``effect_idx`` 的效果為啟用狀態。
+If ``true``, the effect at index ``effect_idx`` on the bus at index ``bus_idx`` is enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -857,7 +857,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 |void| **set_bus_layout**\ (\ bus_layout\: :ref:`AudioBusLayout<class_AudioBusLayout>`\ ) :ref:`🔗<class_AudioServer_method_set_bus_layout>`
 
-覆寫目前使用的 :ref:`AudioBusLayout<class_AudioBusLayout>`\ 。
+Overwrites the currently used :ref:`AudioBusLayout<class_AudioBusLayout>`.
 
 .. rst-class:: classref-item-separator
 
@@ -869,7 +869,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 |void| **set_bus_mute**\ (\ bus_idx\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_AudioServer_method_set_bus_mute>`
 
-若為 ``true``\ ，索引 ``bus_idx`` 的匯流排將被靜音。
+If ``true``, the bus at index ``bus_idx`` is muted.
 
 .. rst-class:: classref-item-separator
 
@@ -881,7 +881,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 |void| **set_bus_name**\ (\ bus_idx\: :ref:`int<class_int>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AudioServer_method_set_bus_name>`
 
-將索引 ``bus_idx`` 的匯流排名稱設為 ``name``\ 。
+Sets the name of the bus at index ``bus_idx`` to ``name``.
 
 .. rst-class:: classref-item-separator
 
@@ -893,7 +893,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 |void| **set_bus_send**\ (\ bus_idx\: :ref:`int<class_int>`, send\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AudioServer_method_set_bus_send>`
 
-將索引 ``bus_idx`` 匯流排的輸出連接到名為 ``send`` 的匯流排。
+Connects the output of the bus at ``bus_idx`` to the bus named ``send``.
 
 .. rst-class:: classref-item-separator
 
@@ -905,7 +905,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 |void| **set_bus_solo**\ (\ bus_idx\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_AudioServer_method_set_bus_solo>`
 
-若為 ``true``\ ，索引 ``bus_idx`` 的匯流排將進入獨奏模式。
+If ``true``, the bus at index ``bus_idx`` is in solo mode.
 
 .. rst-class:: classref-item-separator
 
@@ -917,7 +917,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 |void| **set_bus_volume_db**\ (\ bus_idx\: :ref:`int<class_int>`, volume_db\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioServer_method_set_bus_volume_db>`
 
-將索引 ``bus_idx`` 的匯流排音量設為 ``volume_db`` dB。
+Sets the volume in decibels of the bus at index ``bus_idx`` to ``volume_db``.
 
 .. rst-class:: classref-item-separator
 
@@ -929,9 +929,9 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 |void| **set_bus_volume_linear**\ (\ bus_idx\: :ref:`int<class_int>`, volume_linear\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioServer_method_set_bus_volume_linear>`
 
-將索引 ``bus_idx`` 的匯流排音量設為線性值 ``volume_linear``\ 。
+Sets the volume as a linear value of the bus at index ``bus_idx`` to ``volume_linear``.
 
-\ **注意：**\ 此方法等同於先將值傳入 :ref:`@GlobalScope.linear_to_db()<class_@GlobalScope_method_linear_to_db>`\ ，再呼叫 :ref:`set_bus_volume_db()<class_AudioServer_method_set_bus_volume_db>`\ 。
+\ **Note:** Using this method is equivalent to calling :ref:`set_bus_volume_db()<class_AudioServer_method_set_bus_volume_db>` with the result of :ref:`@GlobalScope.linear_to_db()<class_@GlobalScope_method_linear_to_db>` on a value.
 
 .. rst-class:: classref-item-separator
 
@@ -943,9 +943,9 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 |void| **set_enable_tagging_used_audio_streams**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_AudioServer_method_set_enable_tagging_used_audio_streams>`
 
-若設為 ``true``\ ，所有 :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` 執行個體將於每次混音時呼叫 :ref:`AudioStreamPlayback._tag_used_streams()<class_AudioStreamPlayback_private_method__tag_used_streams>`\ 。
+If set to ``true``, all instances of :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` will call :ref:`AudioStreamPlayback._tag_used_streams()<class_AudioStreamPlayback_private_method__tag_used_streams>` every mix step.
 
-\ **注意：**\ 編輯器預設啟用此選項，以供外掛進行音訊預覽。
+\ **Note:** This is enabled by default in the editor, as it is used by editor plugins for the audio stream previews.
 
 .. rst-class:: classref-item-separator
 
@@ -957,7 +957,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_input_device_active**\ (\ active\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_AudioServer_method_set_input_device_active>`
 
-**實驗性：** 此方法可能在未來版本中變更或移除。
+**Experimental:** This method may be changed or removed in future versions.
 
 If ``active`` is ``true``, starts the microphone input stream specified by :ref:`input_device<class_AudioServer_property_input_device>` or returns an error if it failed.
 
@@ -973,7 +973,7 @@ If ``active`` is ``false``, stops the input stream if it is running.
 
 |void| **swap_bus_effects**\ (\ bus_idx\: :ref:`int<class_int>`, effect_idx\: :ref:`int<class_int>`, by_effect_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioServer_method_swap_bus_effects>`
 
-交換索引 ``bus_idx`` 匯流排中兩個效果的位置。
+Swaps the position of two effects in bus ``bus_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -985,14 +985,14 @@ If ``active`` is ``false``, stops the input stream if it is running.
 
 |void| **unlock**\ (\ ) :ref:`🔗<class_AudioServer_method_unlock>`
 
-解鎖音訊驅動主迴圈。（鎖定後務必解鎖。）
+Unlocks the audio driver's main loop. (After locking it, you should always unlock it.)
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

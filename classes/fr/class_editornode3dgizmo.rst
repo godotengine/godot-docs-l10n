@@ -135,7 +135,7 @@ If the ``cancel`` argument is ``true``, the ``restores`` transforms should be di
 
 :ref:`String<class_String>` **_get_handle_name**\ (\ id\: :ref:`int<class_int>`, secondary\: :ref:`bool<class_bool>`\ ) |virtual| |const| :ref:`🔗<class_EditorNode3DGizmo_private_method__get_handle_name>`
 
-Surcharger cette méthode pour retourner le nom d'un gestionnaire édité (les gestionnaires doivent avoir été ajoutés précédemment par ``méthode add_handles``). Les gestionnaires peuvent être nommés pour référence à l'utilisateur lors de l'édition.
+Surcharger cette méthode pour retourner le nom d'un gestionnaire édité (les gestionnaires doivent avoir été ajoutés précédemment par :ref:`add_handles()<class_EditorNode3DGizmo_method_add_handles>`). Les gestionnaires peuvent être nommés pour référence à l'utilisateur lors de l'édition.
 
 L'argument ``secondary`` vaut ``true`` lorsque le gestionnaire demandé est secondaire (voir :ref:`add_handles()<class_EditorNode3DGizmo_method_add_handles>` pour plus d'informations).
 
@@ -251,7 +251,7 @@ Override this method to allow selecting subgizmos using mouse clicks. Given a ``
 
 |void| **add_collision_segments**\ (\ segments\: :ref:`PackedVector3Array<class_PackedVector3Array>`\ ) :ref:`🔗<class_EditorNode3DGizmo_method_add_collision_segments>`
 
-Ajoute les ``segments`` spécifiés à la forme de collision du manipulateur pour le ramassage. Appelez cette méthode pendant ``méthode _redraw``.
+Ajoute les ``segments`` spécifiés à la forme de collision du manipulateur pour le ramassage. Appelez cette méthode pendant :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>`.
 
 .. rst-class:: classref-item-separator
 

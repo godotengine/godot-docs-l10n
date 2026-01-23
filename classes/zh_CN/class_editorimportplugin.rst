@@ -5,20 +5,20 @@
 EditorImportPlugin
 ==================
 
-**继承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-在编辑器中注册一个自定义资源导入器。使用该类来解析任何文件，并将其作为新的资源类型导入。
+Registers a custom resource importer in the editor. Use the class to parse any file and import it as a new resource type.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-**EditorImportPlugin** 提供了一种方法来扩展编辑器的资源导入功能。使用它们从自定义文件中导入资源，或为编辑器的现有导入器提供替代方案。
+**EditorImportPlugin**\ s provide a way to extend the editor's resource import functionality. Use them to import resources from custom files or to provide alternatives to the editor's existing importers.
 
-EditorImportPlugin 通过与特定的文件扩展名和资源类型相关联来工作。请参见 :ref:`_get_recognized_extensions()<class_EditorImportPlugin_private_method__get_recognized_extensions>` 和 :ref:`_get_resource_type()<class_EditorImportPlugin_private_method__get_resource_type>`\ 。它们可以选择性地指定一些影响导入过程的导入预设。EditorImportPlugin 负责创建资源并将它们保存在 ``.godot/imported`` 目录中（见 :ref:`ProjectSettings.application/config/use_hidden_project_data_directory<class_ProjectSettings_property_application/config/use_hidden_project_data_directory>`\ ）。
+EditorImportPlugins work by associating with specific file extensions and a resource type. See :ref:`_get_recognized_extensions()<class_EditorImportPlugin_private_method__get_recognized_extensions>` and :ref:`_get_resource_type()<class_EditorImportPlugin_private_method__get_resource_type>`. They may optionally specify some import presets that affect the import process. EditorImportPlugins are responsible for creating the resources and saving them in the ``.godot/imported`` directory (see :ref:`ProjectSettings.application/config/use_hidden_project_data_directory<class_ProjectSettings_property_application/config/use_hidden_project_data_directory>`).
 
-下面是一个 EditorImportPlugin 的示例，它从扩展名为“.special”或“.spec”的文件中导入 :ref:`Mesh<class_Mesh>`\ ：
+Below is an example EditorImportPlugin that imports a :ref:`Mesh<class_Mesh>` from a file with the extension ".special" or ".spec":
 
 
 .. tabs::
@@ -57,7 +57,7 @@ EditorImportPlugin 通过与特定的文件扩展名和资源类型相关联来�
         if file == null:
             return FAILED
         var mesh = ArrayMesh.new()
-        # 使用从“file”中读取的数据填充 Mesh，留作读者的练习。
+        # Fill the Mesh with data read in "file", left as an exercise to the reader.
 
         var filename = save_path + "." + _get_save_extension()
         return ResourceSaver.save(mesh, filename)
@@ -124,7 +124,7 @@ EditorImportPlugin 通过与特定的文件扩展名和资源类型相关联来�
             }
 
             var mesh = new ArrayMesh();
-            // 使用从“file”中读取的数据填充 Mesh，留作读者的练习
+            // Fill the Mesh with data read in "file", left as an exercise to the reader.
             string filename = $"{savePath}.{_GetSaveExtension()}";
             return ResourceSaver.Save(mesh, filename);
         }
@@ -132,19 +132,19 @@ EditorImportPlugin 通过与特定的文件扩展名和资源类型相关联来�
 
 
 
-要使用 **EditorImportPlugin**\ ，请先使用 :ref:`EditorPlugin.add_import_plugin()<class_EditorPlugin_method_add_import_plugin>` 方法注册它。
+To use **EditorImportPlugin**, register it using the :ref:`EditorPlugin.add_import_plugin()<class_EditorPlugin_method_add_import_plugin>` method first.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
-- :doc:`导入插件 <../tutorials/plugins/editor/import_plugins>`
+- :doc:`Import plugins <../tutorials/plugins/editor/import_plugins>`
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -187,8 +187,8 @@ EditorImportPlugin 通过与特定的文件扩展名和资源类型相关联来�
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_EditorImportPlugin_private_method__can_import_threaded:
 
@@ -212,9 +212,9 @@ If not overridden, returns ``false``.
 
 :ref:`int<class_int>` **_get_format_version**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_format_version>`
 
-获取此导入器的格式版本号。当对导入资源的格式进行不兼容的更改时，应递增此版本号。
+Gets the format version of this importer. Increment this version when making incompatible changes to the format of the imported resources.
 
-若未覆写，格式版本号默认为 ``0``\ 。
+If not overridden, the format version is ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ If not overridden, returns ``false``.
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_get_import_options**\ (\ path\: :ref:`String<class_String>`, preset_index\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_import_options>`
 
-获取该索引下预设的选项和默认值。返回一个字典数组，包含以下键名：\ ``name``\ 、\ ``default_value``\ 、\ ``property_hint``\ （可选）、\ ``hint_string``\ （可选）、\ ``usage``\ （可选）。
+Gets the options and default values for the preset at this index. Returns an Array of Dictionaries with the following keys: ``name``, ``default_value``, ``property_hint`` (optional), ``hint_string`` (optional), ``usage`` (optional).
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ If not overridden, returns ``false``.
 
 :ref:`int<class_int>` **_get_import_order**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_import_order>`
 
-获取该导入器在导入资源时的运行顺序。具有\ *较低*\ 导入顺序的导入器将被首先调用，较高值的将被其后调用。使用这个来确保导入器在依赖项已经被导入后执行。默认的导入顺序是 ``0``\ ，除非被指定的导入器重写。参阅 :ref:`ImportOrder<enum_ResourceImporter_ImportOrder>` 了解相关预定义的值。
+Gets the order of this importer to be run when importing resources. Importers with *lower* import orders will be called first, and higher values will be called later. Use this to ensure the importer runs after the dependencies are already imported. The default import order is ``0`` unless overridden by a specific importer. See :ref:`ImportOrder<enum_ResourceImporter_ImportOrder>` for some predefined values.
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ If not overridden, returns ``false``.
 
 :ref:`String<class_String>` **_get_importer_name**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_importer_name>`
 
-获取导入器的唯一名称。
+Gets the unique name of the importer.
 
 .. rst-class:: classref-item-separator
 
@@ -262,7 +262,7 @@ If not overridden, returns ``false``.
 
 :ref:`bool<class_bool>` **_get_option_visibility**\ (\ path\: :ref:`String<class_String>`, option_name\: :ref:`StringName<class_StringName>`, options\: :ref:`Dictionary<class_Dictionary>`\ ) |virtual| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_option_visibility>`
 
-获取名为 ``option_name`` 的导入选项是否应当在“导入”面板中可见。默认实现始终返回 ``true``\ ，即所有选项均可见。主要用于在禁用某个选项时隐藏与其存在依赖关系的选项。
+Gets whether the import option specified by ``option_name`` should be visible in the Import dock. The default implementation always returns ``true``, making all options visible. This is mainly useful for hiding options that depend on others if one of them is disabled.
 
 
 .. tabs::
@@ -270,9 +270,9 @@ If not overridden, returns ``false``.
  .. code-tab:: gdscript
 
     func _get_option_visibility(path, option_name, options):
-        # 只有在压缩模式为“Lossy”时显示 Lossy 质量设置。
+        # Only show the lossy quality setting if the compression mode is set to "Lossy".
         if option_name == "compress/lossy_quality" and options.has("compress/mode"):
-            return int(options["compress/mode"]) == COMPRESS_LOSSY # 这是你设置的常量
+            return int(options["compress/mode"]) == COMPRESS_LOSSY # This is a constant that you set
 
         return true
 
@@ -280,10 +280,10 @@ If not overridden, returns ``false``.
 
     public override bool _GetOptionVisibility(string path, StringName optionName, Godot.Collections.Dictionary options)
     {
-        // 只有在压缩模式为“Lossy”时显示 Lossy 质量设置。
+        // Only show the lossy quality setting if the compression mode is set to "Lossy".
         if (optionName == "compress/lossy_quality" && options.ContainsKey("compress/mode"))
         {
-            return (int)options["compress/mode"] == CompressLossy; // 这是你设置的常量
+            return (int)options["compress/mode"] == CompressLossy; // This is a constant you set
         }
 
         return true;
@@ -301,9 +301,9 @@ If not overridden, returns ``false``.
 
 :ref:`int<class_int>` **_get_preset_count**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_preset_count>`
 
-获取插件定义的初始预设的数量。使用 :ref:`_get_import_options()<class_EditorImportPlugin_private_method__get_import_options>` 获取预设的默认选项，使用 :ref:`_get_preset_name()<class_EditorImportPlugin_private_method__get_preset_name>` 获取预设的名称。
+Gets the number of initial presets defined by the plugin. Use :ref:`_get_import_options()<class_EditorImportPlugin_private_method__get_import_options>` to get the default options for the preset and :ref:`_get_preset_name()<class_EditorImportPlugin_private_method__get_preset_name>` to get the name of the preset.
 
-默认情况下，不提供任何预设。
+By default, there are no presets.
 
 .. rst-class:: classref-item-separator
 
@@ -315,7 +315,7 @@ If not overridden, returns ``false``.
 
 :ref:`String<class_String>` **_get_preset_name**\ (\ preset_index\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_preset_name>`
 
-获取该索引处预设的选项名称。
+Gets the name of the options preset at this index.
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +327,7 @@ If not overridden, returns ``false``.
 
 :ref:`float<class_float>` **_get_priority**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_priority>`
 
-获取该插件对识别的扩展的优先级。优先级越高的插件会被优先选择。默认的优先级是 ``1.0``\ 。
+Gets the priority of this plugin for the recognized extension. Higher priority plugins will be preferred. The default priority is ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -339,7 +339,7 @@ If not overridden, returns ``false``.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_recognized_extensions**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_recognized_extensions>`
 
-获取与该加载器相关联的文件扩展名列表（不区分大小写），例如 ``["obj"]``\ 。
+Gets the list of file extensions to associate with this loader (case-insensitive). e.g. ``["obj"]``.
 
 .. rst-class:: classref-item-separator
 
@@ -351,7 +351,7 @@ If not overridden, returns ``false``.
 
 :ref:`String<class_String>` **_get_resource_type**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_resource_type>`
 
-获取与此加载程序关联的 Godot 资源类型，例如 ``"Mesh"`` 或 ``"Animation"``\ 。
+Gets the Godot resource type associated with this loader. e.g. ``"Mesh"`` or ``"Animation"``.
 
 .. rst-class:: classref-item-separator
 
@@ -363,7 +363,7 @@ If not overridden, returns ``false``.
 
 :ref:`String<class_String>` **_get_save_extension**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_save_extension>`
 
-获取用于在 ``.godot/imported`` 目录中保存此资源的扩展名（请参阅 :ref:`ProjectSettings.application/config/use_hidden_project_data_directory<class_ProjectSettings_property_application/config/use_hidden_project_data_directory>`\ ）。
+Gets the extension used to save this resource in the ``.godot/imported`` directory (see :ref:`ProjectSettings.application/config/use_hidden_project_data_directory<class_ProjectSettings_property_application/config/use_hidden_project_data_directory>`).
 
 .. rst-class:: classref-item-separator
 
@@ -375,7 +375,7 @@ If not overridden, returns ``false``.
 
 :ref:`String<class_String>` **_get_visible_name**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_visible_name>`
 
-获取在导入窗口中显示的名称。你应该选择这个名字作为“导入为”的延续，例如“导入为 Special Mesh”。
+Gets the name to display in the import window. You should choose this name as a continuation to "Import as", e.g. "Import as Special Mesh".
 
 .. rst-class:: classref-item-separator
 
@@ -387,13 +387,13 @@ If not overridden, returns ``false``.
 
 :ref:`Error<enum_@GlobalScope_Error>` **_import**\ (\ source_file\: :ref:`String<class_String>`, save_path\: :ref:`String<class_String>`, options\: :ref:`Dictionary<class_Dictionary>`, platform_variants\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\], gen_files\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\]\ ) |virtual| |required| |const| :ref:`🔗<class_EditorImportPlugin_private_method__import>`
 
-使用导入选项 ``options`` 导入源文件 ``source_file``\ 。如果导入成功应返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，其他值表示失败。
+Imports ``source_file`` with the import ``options`` specified. Should return :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the import is successful, other values indicate failure.
 
-导入的资源应保存至 ``save_path + "." + _get_save_extension()``\ 。如果希望针对某个\ :doc:`特性标签 <../tutorials/export/feature_tags>`\ 优先使用不同的版本，请将该版本的资源保存至 ``save_path + "." + 标签 + "." + _get_save_extension()``\ ，并将该特性标签添加至 ``platform_variants``\ 。
+The imported resource is expected to be saved to ``save_path + "." + _get_save_extension()``. If a different variant is preferred for a :doc:`feature tag <../tutorials/export/feature_tags>`, save the variant to ``save_path + "." + tag + "." + _get_save_extension()`` and add the feature tag to ``platform_variants``.
 
-如果在资源文件系统（\ ``res://``\ ）中生成了额外的资源文件，请将其完整路径添加至 ``gen_files``\ ，从而使编辑器得知这些文件依赖于 ``source_file``\ 。
+If additional resource files are generated in the resource filesystem (``res://``), add their full path to ``gen_files`` so that the editor knows they depend on ``source_file``.
 
-必须覆盖这个方法进行实际的导入工作。覆盖示例见这个类的描述。
+This method must be overridden to do the actual importing work. See this class' description for an example of overriding this method.
 
 .. rst-class:: classref-item-separator
 
@@ -405,14 +405,14 @@ If not overridden, returns ``false``.
 
 :ref:`Error<enum_@GlobalScope_Error>` **append_import_external_resource**\ (\ path\: :ref:`String<class_String>`, custom_options\: :ref:`Dictionary<class_Dictionary>` = {}, custom_importer\: :ref:`String<class_String>` = "", generator_parameters\: :ref:`Variant<class_Variant>` = null\ ) :ref:`🔗<class_EditorImportPlugin_method_append_import_external_resource>`
 
-该函数只能在 :ref:`_import()<class_EditorImportPlugin_private_method__import>` 回调期间调用，它允许从中手动导入资源。当导入的文件生成需要导入的外部资源（例如图像）时，这很有用。“.import”文件的自定义参数可以通过 ``custom_options`` 传递。此外，在多个导入器可以处理一个文件的情况下，可以指定 ``custom_importer`` 以强制使用某个特定的导入器。该函数会执行一次资源导入并立即返回成功或错误代码。\ ``generator_parameters`` 定义可选的额外元数据，这些元数据将作为 ``generator_parameters`` 存储在 ``.import`` 文件的 ``remap`` 小节中，例如存储源数据的一个 md5 散列值。
+This function can only be called during the :ref:`_import()<class_EditorImportPlugin_private_method__import>` callback and it allows manually importing resources from it. This is useful when the imported file generates external resources that require importing (as example, images). Custom parameters for the ".import" file can be passed via the ``custom_options``. Additionally, in cases where multiple importers can handle a file, the ``custom_importer`` can be specified to force a specific one. This function performs a resource import and returns immediately with a success or error code. ``generator_parameters`` defines optional extra metadata which will be stored as ``generator_parameters`` in the ``remap`` section of the ``.import`` file, for example to store a md5 hash of the source data.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

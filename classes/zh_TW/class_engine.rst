@@ -5,21 +5,21 @@
 Engine
 ======
 
-**繼承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-提供對引擎屬性的存取。
+Provides access to engine properties.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 The **Engine** singleton allows you to query and modify the project's run-time parameters, such as frames per second, time scale, and others. It also stores information about the current build of Godot, such as the current version.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ The **Engine** singleton allows you to query and modify the project's run-time p
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -110,8 +110,8 @@ The **Engine** singleton allows you to query and modify the project's run-time p
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_Engine_property_max_fps:
 
@@ -272,8 +272,8 @@ This value affects :ref:`Timer<class_Timer>`, :ref:`SceneTreeTimer<class_SceneTr
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_Engine_method_capture_script_backtraces:
 
@@ -462,7 +462,7 @@ This method can be used to run expensive logic less often without relying on a :
 
 :ref:`float<class_float>` **get_physics_interpolation_fraction**\ (\ ) |const| :ref:`🔗<class_Engine_method_get_physics_interpolation_fraction>`
 
-返回算繪影格時目前物理週期中的分數。可用於實作固定的時間步插值。
+Returns the fraction through the current physics tick we are at the time of rendering the frame. This can be used to implement fixed timestep interpolation.
 
 .. rst-class:: classref-item-separator
 
@@ -523,7 +523,7 @@ Returns an instance of a :ref:`ScriptLanguage<class_ScriptLanguage>` with the gi
 
 :ref:`int<class_int>` **get_script_language_count**\ (\ ) :ref:`🔗<class_Engine_method_get_script_language_count>`
 
-返回可用指令碼語言的數量。請配合 :ref:`get_script_language()<class_Engine_method_get_script_language>` 使用。
+Returns the number of available script languages. Use with :ref:`get_script_language()<class_Engine_method_get_script_language>`.
 
 .. rst-class:: classref-item-separator
 
@@ -787,12 +787,12 @@ Returns:
 
 Removes the singleton registered under ``name``. The singleton object is *not* freed. Only works with user-defined singletons registered with :ref:`register_singleton()<class_Engine_method_register_singleton>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

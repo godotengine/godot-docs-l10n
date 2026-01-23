@@ -14250,7 +14250,7 @@ OIDN використовуватиме прискорення GPU при ная
 
 :ref:`String<class_String>` **xr/openxr/target_api_version** = ``""`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/target_api_version>`
 
-Optionally sets a specific API version of OpenXR to initialize in ``major.minor.patch`` notation. Some XR runtimes gate old behavior behind version checks. This is non-standard OpenXR behavior.
+За потреби встановлює певну версію API OpenXR для ініціалізації в нотації ``major.minor.patch``. Деякі середовища виконання XR ігнорують стару поведінку за перевірками версій. Це нестандартна поведінка OpenXR.
 
 .. rst-class:: classref-item-separator
 

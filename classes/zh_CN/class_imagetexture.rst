@@ -5,16 +5,16 @@
 ImageTexture
 ============
 
-**继承：** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-基于 :ref:`Image<class_Image>` 的 :ref:`Texture2D<class_Texture2D>`\ 。
+A :ref:`Texture2D<class_Texture2D>` based on an :ref:`Image<class_Image>`.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-基于 :ref:`Image<class_Image>` 的 :ref:`Texture2D<class_Texture2D>`\ 。若要显示图像，必须使用 :ref:`create_from_image()<class_ImageTexture_method_create_from_image>` 方法从中创建一个 **ImageTexture**\ ：
+A :ref:`Texture2D<class_Texture2D>` based on an :ref:`Image<class_Image>`. For an image to be displayed, an **ImageTexture** has to be created from it using the :ref:`create_from_image()<class_ImageTexture_method_create_from_image>` method:
 
 ::
 
@@ -22,39 +22,39 @@ ImageTexture
     var texture = ImageTexture.create_from_image(image)
     $Sprite2D.texture = texture
 
-如此一来，便可通过加载编辑器内外部的图像，在运行时动态创建纹理。
+This way, textures can be created at run-time by loading images both from within the editor and externally.
 
-\ **警告：**\ 最好使用 :ref:`@GDScript.load()<class_@GDScript_method_load>` 加载导入的纹理，而不是使用 :ref:`Image.load()<class_Image_method_load>` 从文件系统中动态加载它们，因为后者可能不适用于导出的项目：
+\ **Warning:** Prefer to load imported textures with :ref:`@GDScript.load()<class_@GDScript_method_load>` over loading them from within the filesystem dynamically with :ref:`Image.load()<class_Image_method_load>`, as it may not work in exported projects:
 
 ::
 
     var texture = load("res://icon.svg")
     $Sprite2D.texture = texture
 
-这是因为图像必须首先作为 :ref:`CompressedTexture2D<class_CompressedTexture2D>` 被导入，然后才能被 :ref:`@GDScript.load()<class_@GDScript_method_load>` 加载。若仍希望像加载其他 :ref:`Resource<class_Resource>` 一样加载图像文件，可先将其作为 :ref:`Image<class_Image>` 资源导入，然后使用 :ref:`@GDScript.load()<class_@GDScript_method_load>` 方法正常加载。
+This is because images have to be imported as a :ref:`CompressedTexture2D<class_CompressedTexture2D>` first to be loaded with :ref:`@GDScript.load()<class_@GDScript_method_load>`. If you'd still like to load an image file just like any other :ref:`Resource<class_Resource>`, import it as an :ref:`Image<class_Image>` resource instead, and then load it normally using the :ref:`@GDScript.load()<class_@GDScript_method_load>` method.
 
-\ **注意：**\ 若要从已导入的纹理中重新获得图像，可以使用 :ref:`Texture2D.get_image()<class_Texture2D_method_get_image>`\ ，该方法返回图像的副本：
+\ **Note:** The image can be retrieved from an imported texture using the :ref:`Texture2D.get_image()<class_Texture2D_method_get_image>` method, which returns a copy of the image:
 
 ::
 
     var texture = load("res://icon.svg")
     var image = texture.get_image()
 
-\ **ImageTexture** 并非设计为在编辑器界面内直接操作，其主要用途是通过代码在屏幕上动态渲染图像。如果你需要在编辑器内部程序化生成图像，请考虑将其保存并导入为自定义纹理资源，这需要实现一个新的 :ref:`EditorImportPlugin<class_EditorImportPlugin>`\ 。
+An **ImageTexture** is not meant to be operated from within the editor interface directly, and is mostly useful for rendering images on screen dynamically via code. If you need to generate images procedurally from within the editor, consider saving and importing images as custom texture resources implementing a new :ref:`EditorImportPlugin<class_EditorImportPlugin>`.
 
-\ **注意：**\ 由于图形硬件限制，最大纹理大小为 16384×16384 像素。
+\ **Note:** The maximum texture size is 16384×16384 pixels due to graphics hardware limitations.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
-- :doc:`导入图像 <../tutorials/assets_pipeline/importing_images>`
+- :doc:`Importing images <../tutorials/assets_pipeline/importing_images>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -65,8 +65,8 @@ ImageTexture
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -89,8 +89,8 @@ ImageTexture
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_ImageTexture_method_create_from_image:
 
@@ -98,7 +98,7 @@ ImageTexture
 
 :ref:`ImageTexture<class_ImageTexture>` **create_from_image**\ (\ image\: :ref:`Image<class_Image>`\ ) |static| :ref:`🔗<class_ImageTexture_method_create_from_image>`
 
-创建一个新的 **ImageTexture**\ ，并通过分配和设置来自 :ref:`Image<class_Image>` 的数据来初始化它。
+Creates a new **ImageTexture** and initializes it by allocating and setting the data from an :ref:`Image<class_Image>`.
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ ImageTexture
 
 :ref:`Format<enum_Image_Format>` **get_format**\ (\ ) |const| :ref:`🔗<class_ImageTexture_method_get_format>`
 
-返回该纹理的格式。
+Returns the format of the texture.
 
 .. rst-class:: classref-item-separator
 
@@ -122,9 +122,9 @@ ImageTexture
 
 |void| **set_image**\ (\ image\: :ref:`Image<class_Image>`\ ) :ref:`🔗<class_ImageTexture_method_set_image>`
 
-用新的 :ref:`Image<class_Image>` 替换该纹理的数据。这将为该纹理重新分配新内存。
+Replaces the texture's data with a new :ref:`Image<class_Image>`. This will re-allocate new memory for the texture.
 
-如果要更新图像，但不需要更改其参数（格式、大小），请改用 :ref:`update()<class_ImageTexture_method_update>` 以获得更好的性能。
+If you want to update the image, but don't need to change its parameters (format, size), use :ref:`update()<class_ImageTexture_method_update>` instead for better performance.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ ImageTexture
 
 |void| **set_size_override**\ (\ size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_ImageTexture_method_set_size_override>`
 
-将纹理的大小调整为指定的尺寸。
+Resizes the texture to the specified dimensions.
 
 .. rst-class:: classref-item-separator
 
@@ -148,18 +148,18 @@ ImageTexture
 
 |void| **update**\ (\ image\: :ref:`Image<class_Image>`\ ) :ref:`🔗<class_ImageTexture_method_update>`
 
-用新的 :ref:`Image<class_Image>` 替换该纹理的数据。
+Replaces the texture's data with a new :ref:`Image<class_Image>`.
 
-\ **注意：**\ 该纹理必须使用 :ref:`create_from_image()<class_ImageTexture_method_create_from_image>` 创建或首先使用 :ref:`set_image()<class_ImageTexture_method_set_image>` 方法初始化，然后才能更新。新的图像大小、格式和 mipmap 配置，应与现有纹理的图像配置相匹配。
+\ **Note:** The texture has to be created using :ref:`create_from_image()<class_ImageTexture_method_create_from_image>` or initialized first with the :ref:`set_image()<class_ImageTexture_method_set_image>` method before it can be updated. The new image dimensions, format, and mipmaps configuration should match the existing texture's image configuration.
 
-如果需要频繁更新纹理，请使用该方法而不是 :ref:`set_image()<class_ImageTexture_method_set_image>`\ ，这比每次为一个新纹理分配额外内存要快。
+Use this method over :ref:`set_image()<class_ImageTexture_method_set_image>` if you need to update the texture frequently, which is faster than allocating additional memory for a new texture each time.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

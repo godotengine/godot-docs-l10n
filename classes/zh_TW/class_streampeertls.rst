@@ -5,30 +5,30 @@
 StreamPeerTLS
 =============
 
-**繼承：** :ref:`StreamPeer<class_StreamPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`StreamPeer<class_StreamPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-處理 TLS 連接的流對等體。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-處理 TLS 連接的流對等體。此物件可用於連接到 TLS 伺服器或接受單個 TLS 使用者端連接。
-
-\ **注意：**\ 當匯出到 Android 時，確保在匯出專案或使用一鍵部署之前，在 Android 匯出預設中啟用 ``INTERNET`` 許可權。否則，任何形式的網路通信都會被 Android 阻止。
+A stream peer that handles TLS connections.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`TLS 憑證 <../tutorials/networking/ssl_certificates>`
+A stream peer that handles TLS connections. This object can be used to connect to a TLS server or accept a single TLS client connection.
+
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`TLS certificates <../tutorials/networking/ssl_certificates>`
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ StreamPeerTLS
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_StreamPeerTLS_Status:
 
@@ -68,7 +68,7 @@ enum **Status**: :ref:`🔗<enum_StreamPeerTLS_Status>`
 
 :ref:`Status<enum_StreamPeerTLS_Status>` **STATUS_DISCONNECTED** = ``0``
 
-狀態，表示 **StreamPeerTLS** 已斷開連接。
+A status representing a **StreamPeerTLS** that is disconnected.
 
 .. _class_StreamPeerTLS_constant_STATUS_HANDSHAKING:
 
@@ -76,7 +76,7 @@ enum **Status**: :ref:`🔗<enum_StreamPeerTLS_Status>`
 
 :ref:`Status<enum_StreamPeerTLS_Status>` **STATUS_HANDSHAKING** = ``1``
 
-狀態，表示 **StreamPeerTLS** 處於握手階段。
+A status representing a **StreamPeerTLS** during handshaking.
 
 .. _class_StreamPeerTLS_constant_STATUS_CONNECTED:
 
@@ -84,7 +84,7 @@ enum **Status**: :ref:`🔗<enum_StreamPeerTLS_Status>`
 
 :ref:`Status<enum_StreamPeerTLS_Status>` **STATUS_CONNECTED** = ``2``
 
-狀態，表示 **StreamPeerTLS** 已連接至主機。
+A status representing a **StreamPeerTLS** that is connected to a host.
 
 .. _class_StreamPeerTLS_constant_STATUS_ERROR:
 
@@ -92,7 +92,7 @@ enum **Status**: :ref:`🔗<enum_StreamPeerTLS_Status>`
 
 :ref:`Status<enum_StreamPeerTLS_Status>` **STATUS_ERROR** = ``3``
 
-狀態，表示 **StreamPeerTLS** 處於出錯狀態。
+A status representing a **StreamPeerTLS** in error state.
 
 .. _class_StreamPeerTLS_constant_STATUS_ERROR_HOSTNAME_MISMATCH:
 
@@ -100,7 +100,7 @@ enum **Status**: :ref:`🔗<enum_StreamPeerTLS_Status>`
 
 :ref:`Status<enum_StreamPeerTLS_Status>` **STATUS_ERROR_HOSTNAME_MISMATCH** = ``4``
 
-錯誤狀態，表示主機的 TLS 憑證功能變數名稱與請求驗證的功能變數名稱不配對。
+An error status that shows a mismatch in the TLS certificate domain presented by the host and the domain requested for validation.
 
 .. rst-class:: classref-section-separator
 
@@ -108,8 +108,8 @@ enum **Status**: :ref:`🔗<enum_StreamPeerTLS_Status>`
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_StreamPeerTLS_method_accept_stream:
 
@@ -117,7 +117,7 @@ enum **Status**: :ref:`🔗<enum_StreamPeerTLS_Status>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **accept_stream**\ (\ stream\: :ref:`StreamPeer<class_StreamPeer>`, server_options\: :ref:`TLSOptions<class_TLSOptions>`\ ) :ref:`🔗<class_StreamPeerTLS_method_accept_stream>`
 
-以伺服器的身份接受對等體連接，使用給定的伺服器選項 ``server_options``\ 。見 :ref:`TLSOptions.server()<class_TLSOptions_method_server>`\ 。
+Accepts a peer connection as a server using the given ``server_options``. See :ref:`TLSOptions.server()<class_TLSOptions_method_server>`.
 
 .. rst-class:: classref-item-separator
 
@@ -129,7 +129,7 @@ enum **Status**: :ref:`🔗<enum_StreamPeerTLS_Status>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **connect_to_stream**\ (\ stream\: :ref:`StreamPeer<class_StreamPeer>`, common_name\: :ref:`String<class_String>`, client_options\: :ref:`TLSOptions<class_TLSOptions>` = null\ ) :ref:`🔗<class_StreamPeerTLS_method_connect_to_stream>`
 
-使用底層 :ref:`StreamPeer<class_StreamPeer>` ``stream`` 連接到對等體，並對遠端憑證是否由給定的 ``common_name`` 簽章進行驗證。傳入 ``client_options`` 可以自訂信任的憑證授權，也可以禁用通用名稱驗證。見 :ref:`TLSOptions.client()<class_TLSOptions_method_client>` 和 :ref:`TLSOptions.client_unsafe()<class_TLSOptions_method_client_unsafe>`\ 。
+Connects to a peer using an underlying :ref:`StreamPeer<class_StreamPeer>` ``stream`` and verifying the remote certificate is correctly signed for the given ``common_name``. You can pass the optional ``client_options`` parameter to customize the trusted certification authorities, or disable the common name verification. See :ref:`TLSOptions.client()<class_TLSOptions_method_client>` and :ref:`TLSOptions.client_unsafe()<class_TLSOptions_method_client_unsafe>`.
 
 .. rst-class:: classref-item-separator
 
@@ -141,7 +141,7 @@ enum **Status**: :ref:`🔗<enum_StreamPeerTLS_Status>`
 
 |void| **disconnect_from_stream**\ (\ ) :ref:`🔗<class_StreamPeerTLS_method_disconnect_from_stream>`
 
-與主機斷開連接。
+Disconnects from host.
 
 .. rst-class:: classref-item-separator
 
@@ -165,7 +165,7 @@ Returns the status of the connection.
 
 :ref:`StreamPeer<class_StreamPeer>` **get_stream**\ (\ ) |const| :ref:`🔗<class_StreamPeerTLS_method_get_stream>`
 
-返回底層 :ref:`StreamPeer<class_StreamPeer>` 連接，在 :ref:`accept_stream()<class_StreamPeerTLS_method_accept_stream>` 或 :ref:`connect_to_stream()<class_StreamPeerTLS_method_connect_to_stream>` 中使用。
+Returns the underlying :ref:`StreamPeer<class_StreamPeer>` connection, used in :ref:`accept_stream()<class_StreamPeerTLS_method_accept_stream>` or :ref:`connect_to_stream()<class_StreamPeerTLS_method_connect_to_stream>`.
 
 .. rst-class:: classref-item-separator
 
@@ -177,14 +177,14 @@ Returns the status of the connection.
 
 |void| **poll**\ (\ ) :ref:`🔗<class_StreamPeerTLS_method_poll>`
 
-輪詢連接以檢查傳入的位元組。在 :ref:`StreamPeer.get_available_bytes()<class_StreamPeer_method_get_available_bytes>` 之前呼叫它以使其正常工作。
+Poll the connection to check for incoming bytes. Call this right before :ref:`StreamPeer.get_available_bytes()<class_StreamPeer_method_get_available_bytes>` for it to work properly.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

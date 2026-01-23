@@ -5,21 +5,21 @@
 ScriptEditorBase
 ================
 
-**繼承：** :ref:`VBoxContainer<class_VBoxContainer>` **<** :ref:`BoxContainer<class_BoxContainer>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`VBoxContainer<class_VBoxContainer>` **<** :ref:`BoxContainer<class_BoxContainer>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-用於在 :ref:`ScriptEditor<class_ScriptEditor>` 中編輯腳本的基礎編輯器。
+Base editor for editing scripts in the :ref:`ScriptEditor<class_ScriptEditor>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-用於在 :ref:`ScriptEditor<class_ScriptEditor>` 中編輯腳本的基礎編輯器。不包含文件專案。
+Base editor for editing scripts in the :ref:`ScriptEditor<class_ScriptEditor>`. This does not include documentation items.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ ScriptEditorBase
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_ScriptEditorBase_signal_edited_script_changed:
 
@@ -45,7 +45,7 @@ ScriptEditorBase
 
 **edited_script_changed**\ (\ ) :ref:`🔗<class_ScriptEditorBase_signal_edited_script_changed>`
 
-校驗腳本後發出。
+Emitted after script validation.
 
 .. rst-class:: classref-item-separator
 
@@ -57,7 +57,7 @@ ScriptEditorBase
 
 **go_to_help**\ (\ what\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_go_to_help>`
 
-使用者請求特定的文件頁面時發出。
+Emitted when the user requests a specific documentation page.
 
 .. rst-class:: classref-item-separator
 
@@ -69,7 +69,7 @@ ScriptEditorBase
 
 **go_to_method**\ (\ script\: :ref:`Object<class_Object>`, method\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_go_to_method>`
 
-使用者請求查看腳本中的指定方法時發出，類似於 :ref:`request_open_script_at_line<class_ScriptEditorBase_signal_request_open_script_at_line>`\ 。
+Emitted when the user requests to view a specific method of a script, similar to :ref:`request_open_script_at_line<class_ScriptEditorBase_signal_request_open_script_at_line>`.
 
 .. rst-class:: classref-item-separator
 
@@ -81,7 +81,7 @@ ScriptEditorBase
 
 **name_changed**\ (\ ) :ref:`🔗<class_ScriptEditorBase_signal_name_changed>`
 
-校驗腳本後，或者所編輯資源發生更改時發出。
+Emitted after script validation or when the edited resource has changed.
 
 .. rst-class:: classref-item-separator
 
@@ -93,7 +93,7 @@ ScriptEditorBase
 
 **replace_in_files_requested**\ (\ text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_replace_in_files_requested>`
 
-使用者請求在檔案系統中搜尋與替換文字時發出。
+Emitted when the user request to find and replace text in the file system.
 
 .. rst-class:: classref-item-separator
 
@@ -105,7 +105,7 @@ ScriptEditorBase
 
 **request_help**\ (\ topic\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_request_help>`
 
-使用者請求本文幫助時發出。
+Emitted when the user requests contextual help.
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ ScriptEditorBase
 
 **request_open_script_at_line**\ (\ script\: :ref:`Object<class_Object>`, line\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_request_open_script_at_line>`
 
-使用者請求查看腳本中的指定行時發出，類似於 :ref:`go_to_method<class_ScriptEditorBase_signal_go_to_method>`\ 。
+Emitted when the user requests to view a specific line of a script, similar to :ref:`go_to_method<class_ScriptEditorBase_signal_go_to_method>`.
 
 .. rst-class:: classref-item-separator
 
@@ -129,7 +129,7 @@ ScriptEditorBase
 
 **request_save_history**\ (\ ) :ref:`🔗<class_ScriptEditorBase_signal_request_save_history>`
 
-使用者進行本文跳轉，並且該條目在同一個腳本中時發出。
+Emitted when the user contextual goto and the item is in the same script.
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ Emitted when the user changes current script or moves caret by 10 or more column
 
 **search_in_files_requested**\ (\ text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditorBase_signal_search_in_files_requested>`
 
-使用者請求在檔案系統中搜索文字時發出。
+Emitted when the user request to search text in the file system.
 
 .. rst-class:: classref-section-separator
 
@@ -161,8 +161,8 @@ Emitted when the user changes current script or moves caret by 10 or more column
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_ScriptEditorBase_method_add_syntax_highlighter:
 
@@ -182,14 +182,14 @@ Adds an :ref:`EditorSyntaxHighlighter<class_EditorSyntaxHighlighter>` to the ope
 
 :ref:`Control<class_Control>` **get_base_editor**\ (\ ) |const| :ref:`🔗<class_ScriptEditorBase_method_get_base_editor>`
 
-返回用於編輯腳本的底層 :ref:`Control<class_Control>`\ 。文字腳本對應 :ref:`CodeEdit<class_CodeEdit>`\ 。
+Returns the underlying :ref:`Control<class_Control>` used for editing scripts. For text scripts, this is a :ref:`CodeEdit<class_CodeEdit>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

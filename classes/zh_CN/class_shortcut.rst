@@ -5,20 +5,20 @@
 Shortcut
 ========
 
-**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用于绑定输入的快捷键。
+A shortcut for binding input.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-Shortcut（快捷键，也叫热键）是 :ref:`InputEvent<class_InputEvent>` 资源的容器，常用于通过 :ref:`InputEvent<class_InputEvent>` 与 :ref:`Control<class_Control>` 元素进行交互。
+Shortcuts (also known as hotkeys) are containers of :ref:`InputEvent<class_InputEvent>` resources. They are commonly used to interact with a :ref:`Control<class_Control>` element from an :ref:`InputEvent<class_InputEvent>`.
 
-一个快捷键可以包含多个 :ref:`InputEvent<class_InputEvent>` 资源，因此可以使用多种不同的输入触发某个动作。
+One shortcut can contain multiple :ref:`InputEvent<class_InputEvent>` resources, making it possible to trigger one action with multiple different inputs.
 
-\ **示例：**\ 使用 **Shortcut** 资源捕获 :kbd:`Ctrl + S` 快捷键：
+\ **Example:** Capture the :kbd:`Ctrl + S` shortcut using a **Shortcut** resource:
 
 
 .. tabs::
@@ -32,12 +32,12 @@ Shortcut（快捷键，也叫热键）是 :ref:`InputEvent<class_InputEvent>` �
         var key_event = InputEventKey.new()
         key_event.keycode = KEY_S
         key_event.ctrl_pressed = true
-        key_event.command_or_control_autoremap = true # 在 mac 上将 Ctrl 替换为 Command。
+        key_event.command_or_control_autoremap = true # Swaps Ctrl for Command on Mac.
         save_shortcut.events = [key_event]
 
     func _input(event):
         if save_shortcut.matches_event(event) and event.is_pressed() and not event.is_echo():
-            print("按下了保存快捷键！")
+            print("Save shortcut pressed!")
             get_viewport().set_input_as_handled()
 
  .. code-tab:: csharp
@@ -54,7 +54,7 @@ Shortcut（快捷键，也叫热键）是 :ref:`InputEvent<class_InputEvent>` �
             {
                 Keycode = Key.S,
                 CtrlPressed = true,
-                CommandOrControlAutoremap = true, // 在 mac 上将 Ctrl 替换为 Command。
+                CommandOrControlAutoremap = true, // Swaps Ctrl for Command on Mac.
             };
 
             _saveShortcut.Events = [keyEvent];
@@ -66,7 +66,7 @@ Shortcut（快捷键，也叫热键）是 :ref:`InputEvent<class_InputEvent>` �
                 _saveShortcut.MatchesEvent(@event) &&
                 keyEvent.Pressed && !keyEvent.Echo)
             {
-                GD.Print("按下了保存快捷键！");
+                GD.Print("Save shortcut pressed!");
                 GetViewport().SetInputAsHandled();
             }
         }
@@ -76,8 +76,8 @@ Shortcut（快捷键，也叫热键）是 :ref:`InputEvent<class_InputEvent>` �
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -88,8 +88,8 @@ Shortcut（快捷键，也叫热键）是 :ref:`InputEvent<class_InputEvent>` �
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -108,8 +108,8 @@ Shortcut（快捷键，也叫热键）是 :ref:`InputEvent<class_InputEvent>` �
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_Shortcut_property_events:
 
@@ -122,9 +122,9 @@ Shortcut（快捷键，也叫热键）是 :ref:`InputEvent<class_InputEvent>` �
 - |void| **set_events**\ (\ value\: :ref:`Array<class_Array>`\ )
 - :ref:`Array<class_Array>` **get_events**\ (\ )
 
-快捷键的 :ref:`InputEvent<class_InputEvent>` 数组。
+The shortcut's :ref:`InputEvent<class_InputEvent>` array.
 
-通常使用的 :ref:`InputEvent<class_InputEvent>` 是 :ref:`InputEventKey<class_InputEventKey>`\ ，尽管也可以是任何 :ref:`InputEvent<class_InputEvent>`\ ，包括 :ref:`InputEventAction<class_InputEventAction>`\ 。
+Generally the :ref:`InputEvent<class_InputEvent>` used is an :ref:`InputEventKey<class_InputEventKey>`, though it can be any :ref:`InputEvent<class_InputEvent>`, including an :ref:`InputEventAction<class_InputEventAction>`.
 
 .. rst-class:: classref-section-separator
 
@@ -132,8 +132,8 @@ Shortcut（快捷键，也叫热键）是 :ref:`InputEvent<class_InputEvent>` �
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_Shortcut_method_get_as_text:
 
@@ -141,7 +141,7 @@ Shortcut（快捷键，也叫热键）是 :ref:`InputEvent<class_InputEvent>` �
 
 :ref:`String<class_String>` **get_as_text**\ (\ ) |const| :ref:`🔗<class_Shortcut_method_get_as_text>`
 
-返回该快捷键的第一个有效 :ref:`InputEvent<class_InputEvent>` 的 :ref:`String<class_String>` 形式。
+Returns the shortcut's first valid :ref:`InputEvent<class_InputEvent>` as a :ref:`String<class_String>`.
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ Shortcut（快捷键，也叫热键）是 :ref:`InputEvent<class_InputEvent>` �
 
 :ref:`bool<class_bool>` **has_valid_event**\ (\ ) |const| :ref:`🔗<class_Shortcut_method_has_valid_event>`
 
-返回 :ref:`events<class_Shortcut_property_events>` 是否包含有效的 :ref:`InputEvent<class_InputEvent>`\ 。
+Returns whether :ref:`events<class_Shortcut_property_events>` contains an :ref:`InputEvent<class_InputEvent>` which is valid.
 
 .. rst-class:: classref-item-separator
 
@@ -165,14 +165,14 @@ Shortcut（快捷键，也叫热键）是 :ref:`InputEvent<class_InputEvent>` �
 
 :ref:`bool<class_bool>` **matches_event**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) |const| :ref:`🔗<class_Shortcut_method_matches_event>`
 
-返回 :ref:`events<class_Shortcut_property_events>` 中是否有等于 ``event`` 的 :ref:`InputEvent<class_InputEvent>`\ 。比较事件时使用 :ref:`InputEvent.is_match()<class_InputEvent_method_is_match>`\ 。
+Returns whether any :ref:`InputEvent<class_InputEvent>` in :ref:`events<class_Shortcut_property_events>` equals ``event``. This uses :ref:`InputEvent.is_match()<class_InputEvent_method_is_match>` to compare events.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

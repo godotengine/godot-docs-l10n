@@ -5,14 +5,14 @@
 RayCast2D
 =========
 
-**繼承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 A ray in 2D space, used to find the first collision object it intersects.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 A raycast represents a ray from its origin to its :ref:`target_position<class_RayCast2D_property_target_position>` that finds the closest object along its path, if it intersects any.
 
@@ -24,15 +24,15 @@ To sweep over a region of 2D space, you can approximate the region with multiple
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`發射射線 <../tutorials/physics/ray-casting>`
+- :doc:`Ray-casting <../tutorials/physics/ray-casting>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -55,8 +55,8 @@ To sweep over a region of 2D space, you can approximate the region with multiple
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -97,8 +97,8 @@ To sweep over a region of 2D space, you can approximate the region with multiple
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_RayCast2D_property_collide_with_areas:
 
@@ -111,7 +111,7 @@ To sweep over a region of 2D space, you can approximate the region with multiple
 - |void| **set_collide_with_areas**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_collide_with_areas_enabled**\ (\ )
 
-如果為 ``true``\ ，則會報告與 :ref:`Area2D<class_Area2D>` 的碰撞。
+If ``true``, collisions with :ref:`Area2D<class_Area2D>`\ s will be reported.
 
 .. rst-class:: classref-item-separator
 
@@ -128,7 +128,7 @@ To sweep over a region of 2D space, you can approximate the region with multiple
 - |void| **set_collide_with_bodies**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_collide_with_bodies_enabled**\ (\ )
 
-如果為 ``true``\ ，則會報告與 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 的碰撞。
+If ``true``, collisions with :ref:`PhysicsBody2D<class_PhysicsBody2D>`\ s will be reported.
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ To sweep over a region of 2D space, you can approximate the region with multiple
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-射線的碰撞遮罩。只能偵測到至少啟用了一個遮罩中碰撞層的物件。詳情請參閱文件中的\ `《碰撞層與遮罩》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
+The ray's collision mask. Only objects in at least one collision layer enabled in the mask will be detected. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -162,7 +162,7 @@ To sweep over a region of 2D space, you can approximate the region with multiple
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_enabled**\ (\ )
 
-如果為 ``true``\ ，將報告碰撞。
+If ``true``, collisions will be reported.
 
 .. rst-class:: classref-item-separator
 
@@ -196,7 +196,7 @@ If ``true``, this raycast will not report collisions with its parent node. This 
 - |void| **set_hit_from_inside**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_hit_from_inside_enabled**\ (\ )
 
-如果為 ``true``\ ，射線會在從形狀內部開始時偵測到命中。在此情況下，碰撞法線將為 ``Vector2(0, 0)``\ 。不會影響凹多邊形形狀。
+If ``true``, the ray will detect a hit when starting inside shapes. In this case the collision normal will be ``Vector2(0, 0)``. Does not affect concave polygon shapes.
 
 .. rst-class:: classref-item-separator
 
@@ -221,8 +221,8 @@ The ray's destination point, relative to this raycast's :ref:`Node2D.position<cl
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_RayCast2D_method_add_exception:
 
@@ -242,7 +242,7 @@ Adds a collision exception so the ray does not report collisions with the specif
 
 |void| **add_exception_rid**\ (\ rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RayCast2D_method_add_exception_rid>`
 
-新增碰撞例外，這樣射線就不會報告與指定 :ref:`RID<class_RID>` 的碰撞。
+Adds a collision exception so the ray does not report collisions with the specified :ref:`RID<class_RID>`.
 
 .. rst-class:: classref-item-separator
 
@@ -254,7 +254,7 @@ Adds a collision exception so the ray does not report collisions with the specif
 
 |void| **clear_exceptions**\ (\ ) :ref:`🔗<class_RayCast2D_method_clear_exceptions>`
 
-刪除此射線的所有碰撞例外。
+Removes all collision exceptions for this ray.
 
 .. rst-class:: classref-item-separator
 
@@ -266,9 +266,9 @@ Adds a collision exception so the ray does not report collisions with the specif
 
 |void| **force_raycast_update**\ (\ ) :ref:`🔗<class_RayCast2D_method_force_raycast_update>`
 
-更新射線的碰撞資訊。使用該方法立即更新碰撞資訊，而不是等待下一個 ``_physics_process`` 呼叫，例如，如果射線或其父級已更改狀態。
+Updates the collision information for the ray immediately, without waiting for the next ``_physics_process`` call. Use this method, for example, when the ray or its parent has changed state.
 
-\ **注意：**\ :ref:`enabled<class_RayCast2D_property_enabled>` 不需要為 ``true`` 即可生效。
+\ **Note:** :ref:`enabled<class_RayCast2D_property_enabled>` does not need to be ``true`` for this to work.
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +294,7 @@ Returns the first object that the ray intersects, or ``null`` if no object is in
 
 :ref:`RID<class_RID>` **get_collider_rid**\ (\ ) |const| :ref:`🔗<class_RayCast2D_method_get_collider_rid>`
 
-返回該射線相交的第一個物件的 :ref:`RID<class_RID>`\ ，如果沒有物件與該射線相交，則返回空 :ref:`RID<class_RID>`\ （即 :ref:`is_colliding()<class_RayCast2D_method_is_colliding>` 返回 ``false``\ ）。
+Returns the :ref:`RID<class_RID>` of the first object that the ray intersects, or an empty :ref:`RID<class_RID>` if no object is intersecting the ray (i.e. :ref:`is_colliding()<class_RayCast2D_method_is_colliding>` returns ``false``).
 
 .. rst-class:: classref-item-separator
 
@@ -339,7 +339,7 @@ To get the intersected shape node, for a :ref:`CollisionObject2D<class_Collision
 
 :ref:`bool<class_bool>` **get_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_RayCast2D_method_get_collision_mask_value>`
 
-返回 :ref:`collision_mask<class_RayCast2D_property_collision_mask>` 中是否啟用了指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+Returns whether or not the specified layer of the :ref:`collision_mask<class_RayCast2D_property_collision_mask>` is enabled, given a ``layer_number`` between 1 and 32.
 
 .. rst-class:: classref-item-separator
 
@@ -379,7 +379,7 @@ Returns the collision point at which the ray intersects the closest object, in t
 
 :ref:`bool<class_bool>` **is_colliding**\ (\ ) |const| :ref:`🔗<class_RayCast2D_method_is_colliding>`
 
-返回是否有任何物件與射線的向量相交（考慮向量長度）。
+Returns whether any object is intersecting with the ray's vector (considering the vector length).
 
 .. rst-class:: classref-item-separator
 
@@ -415,14 +415,14 @@ Removes a collision exception so the ray can report collisions with the specifie
 
 |void| **set_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RayCast2D_method_set_collision_mask_value>`
 
-根據 ``value``\ ，啟用或禁用 :ref:`collision_mask<class_RayCast2D_property_collision_mask>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+Based on ``value``, enables or disables the specified layer in the :ref:`collision_mask<class_RayCast2D_property_collision_mask>`, given a ``layer_number`` between 1 and 32.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,30 +5,30 @@
 XRHandTracker
 =============
 
-**继承：** :ref:`XRPositionalTracker<class_XRPositionalTracker>` **<** :ref:`XRTracker<class_XRTracker>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`XRPositionalTracker<class_XRPositionalTracker>` **<** :ref:`XRTracker<class_XRTracker>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-XR 中追踪的手。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-手部跟踪系统将创建该对象的实例并将其添加到 :ref:`XRServer<class_XRServer>`\ 。然后，该跟踪系统将获取骨骼数据，将其转换为 Godot 人形手部骨骼，并将该数据存储在 **XRHandTracker** 对象上。
-
-使用 :ref:`XRHandModifier3D<class_XRHandModifier3D>` 通过手部跟踪数据动画化手部网格。
+A tracked hand in XR.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`XR 文档索引 <../tutorials/xr/index>`
+A hand tracking system will create an instance of this object and add it to the :ref:`XRServer<class_XRServer>`. This tracking system will then obtain skeleton data, convert it to the Godot Humanoid hand skeleton and store this data on the **XRHandTracker** object.
+
+Use :ref:`XRHandModifier3D<class_XRHandModifier3D>` to animate a hand mesh using hand tracking data.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`XR documentation index <../tutorials/xr/index>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ XR 中追踪的手。
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -79,8 +79,8 @@ XR 中追踪的手。
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_XRHandTracker_HandTrackingSource:
 
@@ -94,7 +94,7 @@ enum **HandTrackingSource**: :ref:`🔗<enum_XRHandTracker_HandTrackingSource>`
 
 :ref:`HandTrackingSource<enum_XRHandTracker_HandTrackingSource>` **HAND_TRACKING_SOURCE_UNKNOWN** = ``0``
 
-手部跟踪数据的来源未知。
+The source of hand tracking data is unknown.
 
 .. _class_XRHandTracker_constant_HAND_TRACKING_SOURCE_UNOBSTRUCTED:
 
@@ -102,7 +102,7 @@ enum **HandTrackingSource**: :ref:`🔗<enum_XRHandTracker_HandTrackingSource>`
 
 :ref:`HandTrackingSource<enum_XRHandTracker_HandTrackingSource>` **HAND_TRACKING_SOURCE_UNOBSTRUCTED** = ``1``
 
-手部跟踪数据来源畅通，这意味着使用了准确的手部跟踪方法。其中包括光学手部跟踪、数据手套等。
+The source of hand tracking data is unobstructed, meaning that an accurate method of hand tracking is used. These include optical hand tracking, data gloves, etc.
 
 .. _class_XRHandTracker_constant_HAND_TRACKING_SOURCE_CONTROLLER:
 
@@ -110,7 +110,7 @@ enum **HandTrackingSource**: :ref:`🔗<enum_XRHandTracker_HandTrackingSource>`
 
 :ref:`HandTrackingSource<enum_XRHandTracker_HandTrackingSource>` **HAND_TRACKING_SOURCE_CONTROLLER** = ``2``
 
-手部跟踪数据的来源是控制器，这意味着关节位置是根据控制器输入推断的。
+The source of hand tracking data is a controller, meaning that joint positions are inferred from controller inputs.
 
 .. _class_XRHandTracker_constant_HAND_TRACKING_SOURCE_NOT_TRACKED:
 
@@ -118,7 +118,7 @@ enum **HandTrackingSource**: :ref:`🔗<enum_XRHandTracker_HandTrackingSource>`
 
 :ref:`HandTrackingSource<enum_XRHandTracker_HandTrackingSource>` **HAND_TRACKING_SOURCE_NOT_TRACKED** = ``3``
 
-未跟踪手部跟踪数据，这意味着手部被遮挡，或控制器关闭，或不支持跟踪当前输入类型。
+No hand tracking data is tracked, this either means the hand is obscured, the controller is turned off, or tracking is not supported for the current input type.
 
 .. _class_XRHandTracker_constant_HAND_TRACKING_SOURCE_MAX:
 
@@ -126,7 +126,7 @@ enum **HandTrackingSource**: :ref:`🔗<enum_XRHandTracker_HandTrackingSource>`
 
 :ref:`HandTrackingSource<enum_XRHandTracker_HandTrackingSource>` **HAND_TRACKING_SOURCE_MAX** = ``4``
 
-代表 :ref:`HandTrackingSource<enum_XRHandTracker_HandTrackingSource>` 枚举的大小。
+Represents the size of the :ref:`HandTrackingSource<enum_XRHandTracker_HandTrackingSource>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -144,7 +144,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_PALM** = ``0``
 
-掌关节。
+Palm joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_WRIST:
 
@@ -152,7 +152,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_WRIST** = ``1``
 
-腕关节。
+Wrist joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_THUMB_METACARPAL:
 
@@ -160,7 +160,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_THUMB_METACARPAL** = ``2``
 
-掌骨拇指关节。
+Thumb metacarpal joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_THUMB_PHALANX_PROXIMAL:
 
@@ -168,7 +168,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_THUMB_PHALANX_PROXIMAL** = ``3``
 
-大拇指指骨近端关节。
+Thumb phalanx proximal joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_THUMB_PHALANX_DISTAL:
 
@@ -176,7 +176,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_THUMB_PHALANX_DISTAL** = ``4``
 
-大拇指指骨远端关节。
+Thumb phalanx distal joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_THUMB_TIP:
 
@@ -184,7 +184,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_THUMB_TIP** = ``5``
 
-拇指尖端关节。
+Thumb tip joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_INDEX_FINGER_METACARPAL:
 
@@ -192,7 +192,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_INDEX_FINGER_METACARPAL** = ``6``
 
-食指掌骨关节。
+Index finger metacarpal joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_INDEX_FINGER_PHALANX_PROXIMAL:
 
@@ -200,7 +200,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_INDEX_FINGER_PHALANX_PROXIMAL** = ``7``
 
-食指指骨近端关节。
+Index finger phalanx proximal joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_INDEX_FINGER_PHALANX_INTERMEDIATE:
 
@@ -208,7 +208,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_INDEX_FINGER_PHALANX_INTERMEDIATE** = ``8``
 
-食指指骨中间关节。
+Index finger phalanx intermediate joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_INDEX_FINGER_PHALANX_DISTAL:
 
@@ -216,7 +216,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_INDEX_FINGER_PHALANX_DISTAL** = ``9``
 
-食指指骨远端关节。
+Index finger phalanx distal joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_INDEX_FINGER_TIP:
 
@@ -224,7 +224,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_INDEX_FINGER_TIP** = ``10``
 
-食指指尖关节。
+Index finger tip joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_MIDDLE_FINGER_METACARPAL:
 
@@ -232,7 +232,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_MIDDLE_FINGER_METACARPAL** = ``11``
 
-中指掌骨关节。
+Middle finger metacarpal joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_MIDDLE_FINGER_PHALANX_PROXIMAL:
 
@@ -240,7 +240,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_MIDDLE_FINGER_PHALANX_PROXIMAL** = ``12``
 
-中指指骨近端关节。
+Middle finger phalanx proximal joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_MIDDLE_FINGER_PHALANX_INTERMEDIATE:
 
@@ -248,7 +248,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_MIDDLE_FINGER_PHALANX_INTERMEDIATE** = ``13``
 
-中指指骨中间关节。
+Middle finger phalanx intermediate joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_MIDDLE_FINGER_PHALANX_DISTAL:
 
@@ -256,7 +256,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_MIDDLE_FINGER_PHALANX_DISTAL** = ``14``
 
-中指指骨远端关节。
+Middle finger phalanx distal joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_MIDDLE_FINGER_TIP:
 
@@ -264,7 +264,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_MIDDLE_FINGER_TIP** = ``15``
 
-中指指尖关节。
+Middle finger tip joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_RING_FINGER_METACARPAL:
 
@@ -272,7 +272,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_RING_FINGER_METACARPAL** = ``16``
 
-无名指掌骨关节。
+Ring finger metacarpal joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_RING_FINGER_PHALANX_PROXIMAL:
 
@@ -280,7 +280,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_RING_FINGER_PHALANX_PROXIMAL** = ``17``
 
-无名指指骨近端关节。
+Ring finger phalanx proximal joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_RING_FINGER_PHALANX_INTERMEDIATE:
 
@@ -288,7 +288,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_RING_FINGER_PHALANX_INTERMEDIATE** = ``18``
 
-无名指指骨中间关节。
+Ring finger phalanx intermediate joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_RING_FINGER_PHALANX_DISTAL:
 
@@ -296,7 +296,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_RING_FINGER_PHALANX_DISTAL** = ``19``
 
-无名指指骨远端关节。
+Ring finger phalanx distal joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_RING_FINGER_TIP:
 
@@ -304,7 +304,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_RING_FINGER_TIP** = ``20``
 
-无名指指尖关节。
+Ring finger tip joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_PINKY_FINGER_METACARPAL:
 
@@ -312,7 +312,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_PINKY_FINGER_METACARPAL** = ``21``
 
-小指掌骨关节。
+Pinky finger metacarpal joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_PINKY_FINGER_PHALANX_PROXIMAL:
 
@@ -320,7 +320,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_PINKY_FINGER_PHALANX_PROXIMAL** = ``22``
 
-小指指骨近端关节。
+Pinky finger phalanx proximal joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_PINKY_FINGER_PHALANX_INTERMEDIATE:
 
@@ -328,7 +328,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_PINKY_FINGER_PHALANX_INTERMEDIATE** = ``23``
 
-小指指骨中间关节。
+Pinky finger phalanx intermediate joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_PINKY_FINGER_PHALANX_DISTAL:
 
@@ -336,7 +336,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_PINKY_FINGER_PHALANX_DISTAL** = ``24``
 
-小指指骨远端关节。
+Pinky finger phalanx distal joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_PINKY_FINGER_TIP:
 
@@ -344,7 +344,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_PINKY_FINGER_TIP** = ``25``
 
-小指指尖关节。
+Pinky finger tip joint.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_MAX:
 
@@ -352,7 +352,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_MAX** = ``26``
 
-代表 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` 枚举的大小。
+Represents the size of the :ref:`HandJoint<enum_XRHandTracker_HandJoint>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -370,7 +370,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_XRHandTracker_HandJointFlags>`
 
 :ref:`HandJointFlags<enum_XRHandTracker_HandJointFlags>` **HAND_JOINT_FLAG_ORIENTATION_VALID** = ``1``
 
-手部关节的方向数据有效。
+The hand joint's orientation data is valid.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_FLAG_ORIENTATION_TRACKED:
 
@@ -378,7 +378,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_XRHandTracker_HandJointFlags>`
 
 :ref:`HandJointFlags<enum_XRHandTracker_HandJointFlags>` **HAND_JOINT_FLAG_ORIENTATION_TRACKED** = ``2``
 
-手部关节的方向是主动跟踪的。如果跟踪暂时丢失，则可能无法设置。
+The hand joint's orientation is actively tracked. May not be set if tracking has been temporarily lost.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_FLAG_POSITION_VALID:
 
@@ -386,7 +386,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_XRHandTracker_HandJointFlags>`
 
 :ref:`HandJointFlags<enum_XRHandTracker_HandJointFlags>` **HAND_JOINT_FLAG_POSITION_VALID** = ``4``
 
-手部关节的位置数据有效。
+The hand joint's position data is valid.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_FLAG_POSITION_TRACKED:
 
@@ -394,7 +394,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_XRHandTracker_HandJointFlags>`
 
 :ref:`HandJointFlags<enum_XRHandTracker_HandJointFlags>` **HAND_JOINT_FLAG_POSITION_TRACKED** = ``8``
 
-手部关节的位置是主动跟踪的。如果跟踪暂时丢失，则可能无法设置。
+The hand joint's position is actively tracked. May not be set if tracking has been temporarily lost.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_FLAG_LINEAR_VELOCITY_VALID:
 
@@ -402,7 +402,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_XRHandTracker_HandJointFlags>`
 
 :ref:`HandJointFlags<enum_XRHandTracker_HandJointFlags>` **HAND_JOINT_FLAG_LINEAR_VELOCITY_VALID** = ``16``
 
-手部关节的线速度数据有效。
+The hand joint's linear velocity data is valid.
 
 .. _class_XRHandTracker_constant_HAND_JOINT_FLAG_ANGULAR_VELOCITY_VALID:
 
@@ -410,7 +410,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_XRHandTracker_HandJointFlags>`
 
 :ref:`HandJointFlags<enum_XRHandTracker_HandJointFlags>` **HAND_JOINT_FLAG_ANGULAR_VELOCITY_VALID** = ``32``
 
-手部关节的角速度数据有效。
+The hand joint's angular velocity data is valid.
 
 .. rst-class:: classref-section-separator
 
@@ -418,8 +418,8 @@ flags **HandJointFlags**: :ref:`🔗<enum_XRHandTracker_HandJointFlags>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_XRHandTracker_property_hand_tracking_source:
 
@@ -432,7 +432,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_XRHandTracker_HandJointFlags>`
 - |void| **set_hand_tracking_source**\ (\ value\: :ref:`HandTrackingSource<enum_XRHandTracker_HandTrackingSource>`\ )
 - :ref:`HandTrackingSource<enum_XRHandTracker_HandTrackingSource>` **get_hand_tracking_source**\ (\ )
 
-手部跟踪数据的来源。
+The source of the hand tracking data.
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_XRHandTracker_HandJointFlags>`
 - |void| **set_has_tracking_data**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_has_tracking_data**\ (\ )
 
-如果为 ``true``\ ，则手部跟踪数据有效。
+If ``true``, the hand tracking data is valid.
 
 .. rst-class:: classref-section-separator
 
@@ -457,8 +457,8 @@ flags **HandJointFlags**: :ref:`🔗<enum_XRHandTracker_HandJointFlags>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_XRHandTracker_method_get_hand_joint_angular_velocity:
 
@@ -466,7 +466,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_XRHandTracker_HandJointFlags>`
 
 :ref:`Vector3<class_Vector3>` **get_hand_joint_angular_velocity**\ (\ joint\: :ref:`HandJoint<enum_XRHandTracker_HandJoint>`\ ) |const| :ref:`🔗<class_XRHandTracker_method_get_hand_joint_angular_velocity>`
 
-返回给定手部关节的角速度。
+Returns the angular velocity for the given hand joint.
 
 .. rst-class:: classref-item-separator
 
@@ -478,7 +478,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_XRHandTracker_HandJointFlags>`
 
 |bitfield|\[:ref:`HandJointFlags<enum_XRHandTracker_HandJointFlags>`\] **get_hand_joint_flags**\ (\ joint\: :ref:`HandJoint<enum_XRHandTracker_HandJoint>`\ ) |const| :ref:`🔗<class_XRHandTracker_method_get_hand_joint_flags>`
 
-返回有关给定手部关节的跟踪数据的有效性的标志。
+Returns flags about the validity of the tracking data for the given hand joint.
 
 .. rst-class:: classref-item-separator
 
@@ -490,7 +490,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_XRHandTracker_HandJointFlags>`
 
 :ref:`Vector3<class_Vector3>` **get_hand_joint_linear_velocity**\ (\ joint\: :ref:`HandJoint<enum_XRHandTracker_HandJoint>`\ ) |const| :ref:`🔗<class_XRHandTracker_method_get_hand_joint_linear_velocity>`
 
-返回给定手部关节的线速度。
+Returns the linear velocity for the given hand joint.
 
 .. rst-class:: classref-item-separator
 
@@ -502,7 +502,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_XRHandTracker_HandJointFlags>`
 
 :ref:`float<class_float>` **get_hand_joint_radius**\ (\ joint\: :ref:`HandJoint<enum_XRHandTracker_HandJoint>`\ ) |const| :ref:`🔗<class_XRHandTracker_method_get_hand_joint_radius>`
 
-返回给定手部关节的半径。
+Returns the radius of the given hand joint.
 
 .. rst-class:: classref-item-separator
 
@@ -514,7 +514,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_XRHandTracker_HandJointFlags>`
 
 :ref:`Transform3D<class_Transform3D>` **get_hand_joint_transform**\ (\ joint\: :ref:`HandJoint<enum_XRHandTracker_HandJoint>`\ ) |const| :ref:`🔗<class_XRHandTracker_method_get_hand_joint_transform>`
 
-返回给定手部关节的变换。
+Returns the transform for the given hand joint.
 
 .. rst-class:: classref-item-separator
 
@@ -526,7 +526,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_XRHandTracker_HandJointFlags>`
 
 |void| **set_hand_joint_angular_velocity**\ (\ joint\: :ref:`HandJoint<enum_XRHandTracker_HandJoint>`, angular_velocity\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_XRHandTracker_method_set_hand_joint_angular_velocity>`
 
-设置给定手部关节的角速度。
+Sets the angular velocity for the given hand joint.
 
 .. rst-class:: classref-item-separator
 
@@ -538,7 +538,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_XRHandTracker_HandJointFlags>`
 
 |void| **set_hand_joint_flags**\ (\ joint\: :ref:`HandJoint<enum_XRHandTracker_HandJoint>`, flags\: |bitfield|\[:ref:`HandJointFlags<enum_XRHandTracker_HandJointFlags>`\]\ ) :ref:`🔗<class_XRHandTracker_method_set_hand_joint_flags>`
 
-设置有关给定手部关节的跟踪数据的有效性的标志。
+Sets flags about the validity of the tracking data for the given hand joint.
 
 .. rst-class:: classref-item-separator
 
@@ -550,7 +550,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_XRHandTracker_HandJointFlags>`
 
 |void| **set_hand_joint_linear_velocity**\ (\ joint\: :ref:`HandJoint<enum_XRHandTracker_HandJoint>`, linear_velocity\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_XRHandTracker_method_set_hand_joint_linear_velocity>`
 
-设置给定手部关节的线速度。
+Sets the linear velocity for the given hand joint.
 
 .. rst-class:: classref-item-separator
 
@@ -562,7 +562,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_XRHandTracker_HandJointFlags>`
 
 |void| **set_hand_joint_radius**\ (\ joint\: :ref:`HandJoint<enum_XRHandTracker_HandJoint>`, radius\: :ref:`float<class_float>`\ ) :ref:`🔗<class_XRHandTracker_method_set_hand_joint_radius>`
 
-设置给定手部关节的半径。
+Sets the radius of the given hand joint.
 
 .. rst-class:: classref-item-separator
 
@@ -574,14 +574,14 @@ flags **HandJointFlags**: :ref:`🔗<enum_XRHandTracker_HandJointFlags>`
 
 |void| **set_hand_joint_transform**\ (\ joint\: :ref:`HandJoint<enum_XRHandTracker_HandJoint>`, transform\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_XRHandTracker_method_set_hand_joint_transform>`
 
-设置给定手部关节的变换。
+Sets the transform for the given hand joint.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

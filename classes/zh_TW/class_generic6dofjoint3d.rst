@@ -5,23 +5,23 @@
 Generic6DOFJoint3D
 ==================
 
-**繼承：** :ref:`Joint3D<class_Joint3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Joint3D<class_Joint3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-一種物理關節，允許在兩個 3D 物理物件之間進行複雜的移動和旋轉。
+A physics joint that allows for complex movement and rotation between two 3D physics bodies.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-**Generic6DOFJoint3D**\ （6 Degrees Of Freedom，六自由度）關節允許通過鎖定某些軸的旋轉和平移來實作自訂型別的關節。
+The **Generic6DOFJoint3D** (6 Degrees Of Freedom) joint allows for implementing custom types of joints by locking the rotation and translation of certain axes.
 
-前三個自由度代表物理體的線性運動，後三個自由度代表物理題的角度運動。每個軸都可以進行鎖定或限制。
+The first 3 DOF represent the linear motion of the physics bodies and the last 3 DOF represent the angular motion of the physics bodies. Each axis can be either locked, or limited.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -198,8 +198,8 @@ Generic6DOFJoint3D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -236,8 +236,8 @@ Generic6DOFJoint3D
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_Generic6DOFJoint3D_Param:
 
@@ -251,7 +251,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 :ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_LINEAR_LOWER_LIMIT** = ``0``
 
-軸心點的軸之間的最小差異。
+The minimum difference between the pivot points' axes.
 
 .. _class_Generic6DOFJoint3D_constant_PARAM_LINEAR_UPPER_LIMIT:
 
@@ -259,7 +259,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 :ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_LINEAR_UPPER_LIMIT** = ``1``
 
-軸心點的軸之間的最大差異。
+The maximum difference between the pivot points' axes.
 
 .. _class_Generic6DOFJoint3D_constant_PARAM_LINEAR_LIMIT_SOFTNESS:
 
@@ -267,7 +267,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 :ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_LINEAR_LIMIT_SOFTNESS** = ``2``
 
-適用於跨軸移動的一個係數。值越低，移動的就越慢。
+A factor applied to the movement across the axes. The lower, the slower the movement.
 
 .. _class_Generic6DOFJoint3D_constant_PARAM_LINEAR_RESTITUTION:
 
@@ -275,7 +275,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 :ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_LINEAR_RESTITUTION** = ``3``
 
-軸的運動的恢復量。值越低，動量損失越大。
+The amount of restitution on the axes' movement. The lower, the more momentum gets lost.
 
 .. _class_Generic6DOFJoint3D_constant_PARAM_LINEAR_DAMPING:
 
@@ -283,7 +283,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 :ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_LINEAR_DAMPING** = ``4``
 
-發生在跨軸線性運動的阻尼量。
+The amount of damping that happens at the linear motion across the axes.
 
 .. _class_Generic6DOFJoint3D_constant_PARAM_LINEAR_MOTOR_TARGET_VELOCITY:
 
@@ -291,7 +291,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 :ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_LINEAR_MOTOR_TARGET_VELOCITY** = ``5``
 
-線性馬達將嘗試達到的速度。
+The velocity the linear motor will try to reach.
 
 .. _class_Generic6DOFJoint3D_constant_PARAM_LINEAR_MOTOR_FORCE_LIMIT:
 
@@ -299,7 +299,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 :ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_LINEAR_MOTOR_FORCE_LIMIT** = ``6``
 
-線性馬達在試圖達到速度目標時將施加的最大力。
+The maximum force the linear motor will apply while trying to reach the velocity target.
 
 .. _class_Generic6DOFJoint3D_constant_PARAM_LINEAR_SPRING_STIFFNESS:
 
@@ -343,7 +343,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 :ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_ANGULAR_LOWER_LIMIT** = ``10``
 
-負方向的最小旋轉，以脫離和繞軸旋轉。
+The minimum rotation in negative direction to break loose and rotate around the axes.
 
 .. _class_Generic6DOFJoint3D_constant_PARAM_ANGULAR_UPPER_LIMIT:
 
@@ -351,7 +351,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 :ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_ANGULAR_UPPER_LIMIT** = ``11``
 
-正方向的最小旋轉，以掙脫和繞軸旋轉。
+The minimum rotation in positive direction to break loose and rotate around the axes.
 
 .. _class_Generic6DOFJoint3D_constant_PARAM_ANGULAR_LIMIT_SOFTNESS:
 
@@ -359,7 +359,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 :ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_ANGULAR_LIMIT_SOFTNESS** = ``12``
 
-所有跨軸旋轉的速度。
+The speed of all rotations across the axes.
 
 .. _class_Generic6DOFJoint3D_constant_PARAM_ANGULAR_DAMPING:
 
@@ -367,7 +367,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 :ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_ANGULAR_DAMPING** = ``13``
 
-跨該軸的旋轉阻尼量。值越低，發生的阻尼就越多。
+The amount of rotational damping across the axes. The lower, the more damping occurs.
 
 .. _class_Generic6DOFJoint3D_constant_PARAM_ANGULAR_RESTITUTION:
 
@@ -375,7 +375,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 :ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_ANGULAR_RESTITUTION** = ``14``
 
-在各軸上的旋轉恢復量。值越低，發生的恢復量越大。
+The amount of rotational restitution across the axes. The lower, the more restitution occurs.
 
 .. _class_Generic6DOFJoint3D_constant_PARAM_ANGULAR_FORCE_LIMIT:
 
@@ -383,7 +383,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 :ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_ANGULAR_FORCE_LIMIT** = ``15``
 
-圍繞 Z 軸旋轉時，可能發生的最大力。
+The maximum amount of force that can occur, when rotating around the axes.
 
 .. _class_Generic6DOFJoint3D_constant_PARAM_ANGULAR_ERP:
 
@@ -391,7 +391,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 :ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_ANGULAR_ERP** = ``16``
 
-當跨軸旋轉時，這個誤差容限係數定義了修正的速度被減慢的程度。值越低，旋轉越慢。
+When rotating across the axes, this error tolerance factor defines how much the correction gets slowed down. The lower, the slower.
 
 .. _class_Generic6DOFJoint3D_constant_PARAM_ANGULAR_MOTOR_TARGET_VELOCITY:
 
@@ -399,7 +399,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 :ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_ANGULAR_MOTOR_TARGET_VELOCITY** = ``17``
 
-軸上馬達的目標速度。
+Target speed for the motor at the axes.
 
 .. _class_Generic6DOFJoint3D_constant_PARAM_ANGULAR_MOTOR_FORCE_LIMIT:
 
@@ -407,7 +407,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 :ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_ANGULAR_MOTOR_FORCE_LIMIT** = ``18``
 
-馬達在軸上的最大加速度。
+Maximum acceleration for the motor at the axes.
 
 .. _class_Generic6DOFJoint3D_constant_PARAM_ANGULAR_SPRING_STIFFNESS:
 
@@ -451,7 +451,7 @@ enum **Param**: :ref:`🔗<enum_Generic6DOFJoint3D_Param>`
 
 :ref:`Param<enum_Generic6DOFJoint3D_Param>` **PARAM_MAX** = ``22``
 
-代表 :ref:`Param<enum_Generic6DOFJoint3D_Param>` 列舉的大小。
+Represents the size of the :ref:`Param<enum_Generic6DOFJoint3D_Param>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -469,7 +469,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 :ref:`Flag<enum_Generic6DOFJoint3D_Flag>` **FLAG_ENABLE_LINEAR_LIMIT** = ``0``
 
-如果啟用，在給定範圍內可以進行線性運動。
+If enabled, linear motion is possible within the given limits.
 
 .. _class_Generic6DOFJoint3D_constant_FLAG_ENABLE_ANGULAR_LIMIT:
 
@@ -477,7 +477,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 :ref:`Flag<enum_Generic6DOFJoint3D_Flag>` **FLAG_ENABLE_ANGULAR_LIMIT** = ``1``
 
-如果啟用，在給定的限度內可以進行旋轉運動。
+If enabled, rotational motion is possible within the given limits.
 
 .. _class_Generic6DOFJoint3D_constant_FLAG_ENABLE_LINEAR_SPRING:
 
@@ -509,7 +509,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 :ref:`Flag<enum_Generic6DOFJoint3D_Flag>` **FLAG_ENABLE_MOTOR** = ``4``
 
-如果啟用，則存在跨這些軸的旋轉馬達。
+If enabled, there is a rotational motor across these axes.
 
 .. _class_Generic6DOFJoint3D_constant_FLAG_ENABLE_LINEAR_MOTOR:
 
@@ -517,7 +517,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 :ref:`Flag<enum_Generic6DOFJoint3D_Flag>` **FLAG_ENABLE_LINEAR_MOTOR** = ``5``
 
-如果啟用，則存在跨這些軸的線性馬達。
+If enabled, there is a linear motor across these axes.
 
 .. _class_Generic6DOFJoint3D_constant_FLAG_MAX:
 
@@ -525,7 +525,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 :ref:`Flag<enum_Generic6DOFJoint3D_Flag>` **FLAG_MAX** = ``6``
 
-代表 :ref:`Flag<enum_Generic6DOFJoint3D_Flag>` 列舉的大小。
+Represents the size of the :ref:`Flag<enum_Generic6DOFJoint3D_Flag>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -533,8 +533,8 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_Generic6DOFJoint3D_property_angular_limit_x/damping:
 
@@ -547,9 +547,9 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 - |void| **set_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-跨 X 軸的旋轉阻尼量。
+The amount of rotational damping across the X axis.
 
-越低，來自一側的脈衝到達另一側的時間越長。
+The lower, the longer an impulse from one side takes to travel to the other side.
 
 .. rst-class:: classref-item-separator
 
@@ -566,7 +566,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 - |void| **set_flag_x**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`, value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag_x**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`\ ) |const|
 
-如果為 ``true``\ ，則跨越 X 軸的旋轉將受到限制。
+If ``true``, rotation across the X axis is limited.
 
 .. rst-class:: classref-item-separator
 
@@ -583,7 +583,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 - |void| **set_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-當在X軸上旋轉時，這個誤差容限係數定義了修正的速度被減慢的程度。值越低，旋轉越慢。
+When rotating across the X axis, this error tolerance factor defines how much the correction gets slowed down. The lower, the slower.
 
 .. rst-class:: classref-item-separator
 
@@ -600,7 +600,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 - |void| **set_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-繞 X 軸旋轉時所能產生的最大力。
+The maximum amount of force that can occur, when rotating around the X axis.
 
 .. rst-class:: classref-item-separator
 
@@ -617,7 +617,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 - |void| **set_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-負方向的最小旋轉，以掙脫並圍繞 X 軸旋轉。
+The minimum rotation in negative direction to break loose and rotate around the X axis.
 
 .. rst-class:: classref-item-separator
 
@@ -634,7 +634,7 @@ enum **Flag**: :ref:`🔗<enum_Generic6DOFJoint3D_Flag>`
 - |void| **set_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-X 軸上的旋轉恢復量。值越小，產生的恢復量越大。
+The amount of rotational restitution across the X axis. The lower, the more restitution occurs.
 
 .. rst-class:: classref-item-separator
 
@@ -651,7 +651,7 @@ X 軸上的旋轉恢復量。值越小，產生的恢復量越大。
 - |void| **set_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-跨越 X 軸的所有旋轉的速度。
+The speed of all rotations across the X axis.
 
 .. rst-class:: classref-item-separator
 
@@ -668,7 +668,7 @@ X 軸上的旋轉恢復量。值越小，產生的恢復量越大。
 - |void| **set_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-正方向的最小旋轉，以掙脫並繞 X 軸旋轉。
+The minimum rotation in positive direction to break loose and rotate around the X axis.
 
 .. rst-class:: classref-item-separator
 
@@ -685,7 +685,7 @@ X 軸上的旋轉恢復量。值越小，產生的恢復量越大。
 - |void| **set_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-Y軸上的旋轉阻尼量。值越小，產生的阻尼就越大。
+The amount of rotational damping across the Y axis. The lower, the more damping occurs.
 
 .. rst-class:: classref-item-separator
 
@@ -702,7 +702,7 @@ Y軸上的旋轉阻尼量。值越小，產生的阻尼就越大。
 - |void| **set_flag_y**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`, value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag_y**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`\ ) |const|
 
-如果為 ``true``\ ，則跨越 Y 軸的旋轉將受到限制。
+If ``true``, rotation across the Y axis is limited.
 
 .. rst-class:: classref-item-separator
 
@@ -719,7 +719,7 @@ Y軸上的旋轉阻尼量。值越小，產生的阻尼就越大。
 - |void| **set_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-當在 Y 軸上旋轉時，這個誤差容限係數定義了修正的速度被減慢的程度。值越低，旋轉越慢。
+When rotating across the Y axis, this error tolerance factor defines how much the correction gets slowed down. The lower, the slower.
 
 .. rst-class:: classref-item-separator
 
@@ -736,7 +736,7 @@ Y軸上的旋轉阻尼量。值越小，產生的阻尼就越大。
 - |void| **set_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-圍繞 Y 軸旋轉時，可能發生的最大力。
+The maximum amount of force that can occur, when rotating around the Y axis.
 
 .. rst-class:: classref-item-separator
 
@@ -753,7 +753,7 @@ Y軸上的旋轉阻尼量。值越小，產生的阻尼就越大。
 - |void| **set_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-負方向的最小旋轉，以掙脫並圍繞 Y 軸旋轉。
+The minimum rotation in negative direction to break loose and rotate around the Y axis.
 
 .. rst-class:: classref-item-separator
 
@@ -770,7 +770,7 @@ Y軸上的旋轉阻尼量。值越小，產生的阻尼就越大。
 - |void| **set_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-跨越 Y 軸的旋轉恢復量。越低，發生的恢復量越大。
+The amount of rotational restitution across the Y axis. The lower, the more restitution occurs.
 
 .. rst-class:: classref-item-separator
 
@@ -787,7 +787,7 @@ Y軸上的旋轉阻尼量。值越小，產生的阻尼就越大。
 - |void| **set_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-跨越 Y 軸的所有旋轉的速度。
+The speed of all rotations across the Y axis.
 
 .. rst-class:: classref-item-separator
 
@@ -804,7 +804,7 @@ Y軸上的旋轉阻尼量。值越小，產生的阻尼就越大。
 - |void| **set_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-正方向的最小旋轉，以掙脫並繞 Y 軸旋轉。
+The minimum rotation in positive direction to break loose and rotate around the Y axis.
 
 .. rst-class:: classref-item-separator
 
@@ -821,7 +821,7 @@ Y軸上的旋轉阻尼量。值越小，產生的阻尼就越大。
 - |void| **set_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-跨越 Z 軸的旋轉阻尼量。值越小，產生的阻尼就越大。
+The amount of rotational damping across the Z axis. The lower, the more damping occurs.
 
 .. rst-class:: classref-item-separator
 
@@ -838,7 +838,7 @@ Y軸上的旋轉阻尼量。值越小，產生的阻尼就越大。
 - |void| **set_flag_z**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`, value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag_z**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`\ ) |const|
 
-如果為 ``true``\ ，則跨越 Z 軸的旋轉將受到限制。
+If ``true``, rotation across the Z axis is limited.
 
 .. rst-class:: classref-item-separator
 
@@ -855,7 +855,7 @@ Y軸上的旋轉阻尼量。值越小，產生的阻尼就越大。
 - |void| **set_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-當在 Z 軸上旋轉時，這個誤差容限係數定義了修正的速度被減慢的程度。值越低，旋轉越慢。
+When rotating across the Z axis, this error tolerance factor defines how much the correction gets slowed down. The lower, the slower.
 
 .. rst-class:: classref-item-separator
 
@@ -872,7 +872,7 @@ Y軸上的旋轉阻尼量。值越小，產生的阻尼就越大。
 - |void| **set_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-圍繞 Z 軸旋轉時，可能發生的最角度。
+The maximum amount of force that can occur, when rotating around the Z axis.
 
 .. rst-class:: classref-item-separator
 
@@ -889,7 +889,7 @@ Y軸上的旋轉阻尼量。值越小，產生的阻尼就越大。
 - |void| **set_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-負方向的最小旋轉，以掙脫並圍繞 Z 軸旋轉。
+The minimum rotation in negative direction to break loose and rotate around the Z axis.
 
 .. rst-class:: classref-item-separator
 
@@ -906,7 +906,7 @@ Y軸上的旋轉阻尼量。值越小，產生的阻尼就越大。
 - |void| **set_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-跨越 Z 軸的旋轉恢復量。越低，發生的恢復量越大。
+The amount of rotational restitution across the Z axis. The lower, the more restitution occurs.
 
 .. rst-class:: classref-item-separator
 
@@ -923,7 +923,7 @@ Y軸上的旋轉阻尼量。值越小，產生的阻尼就越大。
 - |void| **set_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-跨越 Z 軸的所有旋轉的速度。
+The speed of all rotations across the Z axis.
 
 .. rst-class:: classref-item-separator
 
@@ -940,7 +940,7 @@ Y軸上的旋轉阻尼量。值越小，產生的阻尼就越大。
 - |void| **set_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-正方向的最小旋轉，並繞 Z 軸旋轉。
+The minimum rotation in positive direction to break loose and rotate around the Z axis.
 
 .. rst-class:: classref-item-separator
 
@@ -957,7 +957,7 @@ Y軸上的旋轉阻尼量。值越小，產生的阻尼就越大。
 - |void| **set_flag_x**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`, value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag_x**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`\ ) |const|
 
-如果為 ``true``\ ，則啟用 X 軸的旋轉馬達。
+If ``true``, a rotating motor at the X axis is enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -974,7 +974,7 @@ Y軸上的旋轉阻尼量。值越小，產生的阻尼就越大。
 - |void| **set_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-在 X 軸旋轉的最大加速度。
+Maximum acceleration for the motor at the X axis.
 
 .. rst-class:: classref-item-separator
 
@@ -991,7 +991,7 @@ Y軸上的旋轉阻尼量。值越小，產生的阻尼就越大。
 - |void| **set_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-X 軸上馬達的目標速度。
+Target speed for the motor at the X axis.
 
 .. rst-class:: classref-item-separator
 
@@ -1008,7 +1008,7 @@ X 軸上馬達的目標速度。
 - |void| **set_flag_y**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`, value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag_y**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`\ ) |const|
 
-如果為 ``true``\ ，則啟用 Y 軸的旋轉馬達。
+If ``true``, a rotating motor at the Y axis is enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -1025,7 +1025,7 @@ X 軸上馬達的目標速度。
 - |void| **set_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-馬達在 X 軸的最大加速度。
+Maximum acceleration for the motor at the Y axis.
 
 .. rst-class:: classref-item-separator
 
@@ -1042,7 +1042,7 @@ X 軸上馬達的目標速度。
 - |void| **set_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-馬達在 Y 軸的目標速度。
+Target speed for the motor at the Y axis.
 
 .. rst-class:: classref-item-separator
 
@@ -1059,7 +1059,7 @@ X 軸上馬達的目標速度。
 - |void| **set_flag_z**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`, value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag_z**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`\ ) |const|
 
-如果為 ``true``\ ，則啟用 Z 軸的旋轉馬達。
+If ``true``, a rotating motor at the Z axis is enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -1076,7 +1076,7 @@ X 軸上馬達的目標速度。
 - |void| **set_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-馬達在 Z 軸的最大加速度。
+Maximum acceleration for the motor at the Z axis.
 
 .. rst-class:: classref-item-separator
 
@@ -1093,7 +1093,7 @@ X 軸上馬達的目標速度。
 - |void| **set_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-Z 軸上馬達的目標速度。
+Target speed for the motor at the Z axis.
 
 .. rst-class:: classref-item-separator
 
@@ -1338,7 +1338,7 @@ Z 軸上馬達的目標速度。
 - |void| **set_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-發生在 X 運動的阻尼量。
+The amount of damping that happens at the X motion.
 
 .. rst-class:: classref-item-separator
 
@@ -1355,7 +1355,7 @@ Z 軸上馬達的目標速度。
 - |void| **set_flag_x**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`, value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag_x**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`\ ) |const|
 
-如果為 ``true``\ ，則跨越 X 軸的線性運動將受到限制。
+If ``true``, the linear motion across the X axis is limited.
 
 .. rst-class:: classref-item-separator
 
@@ -1372,7 +1372,7 @@ Z 軸上馬達的目標速度。
 - |void| **set_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-軸心點的 X 軸之間的最小差異。
+The minimum difference between the pivot points' X axis.
 
 .. rst-class:: classref-item-separator
 
@@ -1389,7 +1389,7 @@ Z 軸上馬達的目標速度。
 - |void| **set_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-X 軸運動的恢復量。越低，動量損失越大。
+The amount of restitution on the X axis movement. The lower, the more momentum gets lost.
 
 .. rst-class:: classref-item-separator
 
@@ -1406,7 +1406,7 @@ X 軸運動的恢復量。越低，動量損失越大。
 - |void| **set_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-套用於 X 軸上移動的一個係數。值越低，移動的就越慢。
+A factor applied to the movement across the X axis. The lower, the slower the movement.
 
 .. rst-class:: classref-item-separator
 
@@ -1423,7 +1423,7 @@ X 軸運動的恢復量。越低，動量損失越大。
 - |void| **set_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-軸心點的 X 軸之間的最大差異。
+The maximum difference between the pivot points' X axis.
 
 .. rst-class:: classref-item-separator
 
@@ -1440,7 +1440,7 @@ X 軸運動的恢復量。越低，動量損失越大。
 - |void| **set_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-發生在 Y 運動的阻尼量。
+The amount of damping that happens at the Y motion.
 
 .. rst-class:: classref-item-separator
 
@@ -1457,7 +1457,7 @@ X 軸運動的恢復量。越低，動量損失越大。
 - |void| **set_flag_y**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`, value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag_y**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`\ ) |const|
 
-如果為 ``true``\ ，則跨越 Y 軸的線性運動將受到限制。
+If ``true``, the linear motion across the Y axis is limited.
 
 .. rst-class:: classref-item-separator
 
@@ -1474,7 +1474,7 @@ X 軸運動的恢復量。越低，動量損失越大。
 - |void| **set_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-軸心點的 Y 軸之間的最小差異。
+The minimum difference between the pivot points' Y axis.
 
 .. rst-class:: classref-item-separator
 
@@ -1491,7 +1491,7 @@ X 軸運動的恢復量。越低，動量損失越大。
 - |void| **set_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-Y 軸運動的恢復量。值越低，動量損失越大。
+The amount of restitution on the Y axis movement. The lower, the more momentum gets lost.
 
 .. rst-class:: classref-item-separator
 
@@ -1508,7 +1508,7 @@ Y 軸運動的恢復量。值越低，動量損失越大。
 - |void| **set_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-套用於 Y 軸上移動的一個係數。值越低，移動的就越慢。
+A factor applied to the movement across the Y axis. The lower, the slower the movement.
 
 .. rst-class:: classref-item-separator
 
@@ -1525,7 +1525,7 @@ Y 軸運動的恢復量。值越低，動量損失越大。
 - |void| **set_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-軸心點的 Y 軸之間的最大差異。
+The maximum difference between the pivot points' Y axis.
 
 .. rst-class:: classref-item-separator
 
@@ -1542,7 +1542,7 @@ Y 軸運動的恢復量。值越低，動量損失越大。
 - |void| **set_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-發生在 Z 運動的阻尼量。
+The amount of damping that happens at the Z motion.
 
 .. rst-class:: classref-item-separator
 
@@ -1559,7 +1559,7 @@ Y 軸運動的恢復量。值越低，動量損失越大。
 - |void| **set_flag_z**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`, value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag_z**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`\ ) |const|
 
-如果為 ``true``\ ，則跨越 Z 軸的線性運動將受到限制。
+If ``true``, the linear motion across the Z axis is limited.
 
 .. rst-class:: classref-item-separator
 
@@ -1576,7 +1576,7 @@ Y 軸運動的恢復量。值越低，動量損失越大。
 - |void| **set_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-軸心點的 Z 軸之間的最小差異。
+The minimum difference between the pivot points' Z axis.
 
 .. rst-class:: classref-item-separator
 
@@ -1593,7 +1593,7 @@ Y 軸運動的恢復量。值越低，動量損失越大。
 - |void| **set_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-Y 軸運動的恢復量。越低，動量損失越大。
+The amount of restitution on the Z axis movement. The lower, the more momentum gets lost.
 
 .. rst-class:: classref-item-separator
 
@@ -1610,7 +1610,7 @@ Y 軸運動的恢復量。越低，動量損失越大。
 - |void| **set_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-適用於跨 Z 軸移動的一個係數。值越低，移動的就越慢。
+A factor applied to the movement across the Z axis. The lower, the slower the movement.
 
 .. rst-class:: classref-item-separator
 
@@ -1627,7 +1627,7 @@ Y 軸運動的恢復量。越低，動量損失越大。
 - |void| **set_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-軸心點的 Z 軸之間的最大差異。
+The maximum difference between the pivot points' Z axis.
 
 .. rst-class:: classref-item-separator
 
@@ -1644,7 +1644,7 @@ Y 軸運動的恢復量。越低，動量損失越大。
 - |void| **set_flag_x**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`, value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag_x**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`\ ) |const|
 
-如果為 ``true``\ ，則 X 軸上存在線性馬達。它將試圖達到目標速度，同時保持在力的限度內。
+If ``true``, then there is a linear motor on the X axis. It will attempt to reach the target velocity while staying within the force limits.
 
 .. rst-class:: classref-item-separator
 
@@ -1661,7 +1661,7 @@ Y 軸運動的恢復量。越低，動量損失越大。
 - |void| **set_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-當嘗試達到目標速度時，線性馬達可以在 X 軸上套用的最大力。
+The maximum force the linear motor can apply on the X axis while trying to reach the target velocity.
 
 .. rst-class:: classref-item-separator
 
@@ -1678,7 +1678,7 @@ Y 軸運動的恢復量。越低，動量損失越大。
 - |void| **set_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_x**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-線性馬達在 X 軸上嘗試達到的速度。
+The speed that the linear motor will attempt to reach on the X axis.
 
 .. rst-class:: classref-item-separator
 
@@ -1695,7 +1695,7 @@ Y 軸運動的恢復量。越低，動量損失越大。
 - |void| **set_flag_y**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`, value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag_y**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`\ ) |const|
 
-如果為 ``true``\ ，則 Y 軸上存在線性馬達。它將試圖達到目標速度，同時保持在力的限度內。
+If ``true``, then there is a linear motor on the Y axis. It will attempt to reach the target velocity while staying within the force limits.
 
 .. rst-class:: classref-item-separator
 
@@ -1712,7 +1712,7 @@ Y 軸運動的恢復量。越低，動量損失越大。
 - |void| **set_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-直線馬達在試圖達到目標速度時可施加在 Y 軸上的最大力。
+The maximum force the linear motor can apply on the Y axis while trying to reach the target velocity.
 
 .. rst-class:: classref-item-separator
 
@@ -1729,7 +1729,7 @@ Y 軸運動的恢復量。越低，動量損失越大。
 - |void| **set_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_y**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-線性馬達在 Y 軸上將會達到的速度。
+The speed that the linear motor will attempt to reach on the Y axis.
 
 .. rst-class:: classref-item-separator
 
@@ -1746,7 +1746,7 @@ Y 軸運動的恢復量。越低，動量損失越大。
 - |void| **set_flag_z**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`, value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag_z**\ (\ flag\: :ref:`Flag<enum_Generic6DOFJoint3D_Flag>`\ ) |const|
 
-如果為 ``true``\ ，則 Z 軸上存在線性馬達。它將試圖達到目標速度，同時保持在力的限度內。
+If ``true``, then there is a linear motor on the Z axis. It will attempt to reach the target velocity while staying within the force limits.
 
 .. rst-class:: classref-item-separator
 
@@ -1763,7 +1763,7 @@ Y 軸運動的恢復量。越低，動量損失越大。
 - |void| **set_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-當試圖達到目標速度時，線性馬達可以在 X 軸上套用的最大力。
+The maximum force the linear motor can apply on the Z axis while trying to reach the target velocity.
 
 .. rst-class:: classref-item-separator
 
@@ -1780,7 +1780,7 @@ Y 軸運動的恢復量。越低，動量損失越大。
 - |void| **set_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_z**\ (\ param\: :ref:`Param<enum_Generic6DOFJoint3D_Param>`\ ) |const|
 
-線性馬達在 Z 軸上試圖達到的速度。
+The speed that the linear motor will attempt to reach on the Z axis.
 
 .. rst-class:: classref-item-separator
 
@@ -2016,8 +2016,8 @@ Y 軸運動的恢復量。越低，動量損失越大。
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_Generic6DOFJoint3D_method_get_flag_x:
 
@@ -2183,12 +2183,12 @@ Y 軸運動的恢復量。越低，動量損失越大。
 
 	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

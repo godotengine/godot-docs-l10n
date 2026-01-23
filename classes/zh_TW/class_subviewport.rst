@@ -5,14 +5,14 @@
 SubViewport
 ===========
 
-**繼承：** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-遊戲世界的介面，不會建立視窗，也不會直接繪製到螢幕上。
+An interface to a game world that doesn't create a window or draw to the screen directly.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 **SubViewport** Isolates a rectangular region of a scene to be displayed independently. This can be used, for example, to display UI in 3D space.
 
@@ -22,29 +22,29 @@ SubViewport
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`使用視口 <../tutorials/rendering/viewports>`
+- :doc:`Using Viewports <../tutorials/rendering/viewports>`
 
-- :doc:`Viewport 和畫布變換 <../tutorials/2d/2d_transforms>`
+- :doc:`Viewport and canvas transforms <../tutorials/2d/2d_transforms>`
 
-- `3D 檢視埠 GUI 範例 <https://godotengine.org/asset-library/asset/2807>`__
+- `GUI in 3D Viewport Demo <https://godotengine.org/asset-library/asset/2807>`__
 
 - `3D in 2D Viewport Demo <https://godotengine.org/asset-library/asset/2804>`__
 
 - `2D in 3D Viewport Demo <https://godotengine.org/asset-library/asset/2803>`__
 
-- `螢幕捕捉演示 <https://godotengine.org/asset-library/asset/2808>`__
+- `Screen Capture Demo <https://godotengine.org/asset-library/asset/2808>`__
 
-- `動態分屏演示 <https://godotengine.org/asset-library/asset/2806>`__
+- `Dynamic Split Screen Demo <https://godotengine.org/asset-library/asset/2806>`__
 
 - `3D Resolution Scaling Demo <https://godotengine.org/asset-library/asset/2805>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -67,8 +67,8 @@ SubViewport
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_SubViewport_ClearMode:
 
@@ -82,7 +82,7 @@ enum **ClearMode**: :ref:`🔗<enum_SubViewport_ClearMode>`
 
 :ref:`ClearMode<enum_SubViewport_ClearMode>` **CLEAR_MODE_ALWAYS** = ``0``
 
-繪製前始終清除算繪目標。
+Always clear the render target before drawing.
 
 .. _class_SubViewport_constant_CLEAR_MODE_NEVER:
 
@@ -90,7 +90,7 @@ enum **ClearMode**: :ref:`🔗<enum_SubViewport_ClearMode>`
 
 :ref:`ClearMode<enum_SubViewport_ClearMode>` **CLEAR_MODE_NEVER** = ``1``
 
-永不清除算繪目標。
+Never clear the render target.
 
 .. _class_SubViewport_constant_CLEAR_MODE_ONCE:
 
@@ -98,7 +98,7 @@ enum **ClearMode**: :ref:`🔗<enum_SubViewport_ClearMode>`
 
 :ref:`ClearMode<enum_SubViewport_ClearMode>` **CLEAR_MODE_ONCE** = ``2``
 
-在下一影格清除算繪目標，然後切換到 :ref:`CLEAR_MODE_NEVER<class_SubViewport_constant_CLEAR_MODE_NEVER>`\ 。
+Clear the render target on the next frame, then switch to :ref:`CLEAR_MODE_NEVER<class_SubViewport_constant_CLEAR_MODE_NEVER>`.
 
 .. rst-class:: classref-item-separator
 
@@ -116,7 +116,7 @@ enum **UpdateMode**: :ref:`🔗<enum_SubViewport_UpdateMode>`
 
 :ref:`UpdateMode<enum_SubViewport_UpdateMode>` **UPDATE_DISABLED** = ``0``
 
-不要更新算繪目標。
+Do not update the render target.
 
 .. _class_SubViewport_constant_UPDATE_ONCE:
 
@@ -124,7 +124,7 @@ enum **UpdateMode**: :ref:`🔗<enum_SubViewport_UpdateMode>`
 
 :ref:`UpdateMode<enum_SubViewport_UpdateMode>` **UPDATE_ONCE** = ``1``
 
-更新算繪目標一次，然後切換到 :ref:`UPDATE_DISABLED<class_SubViewport_constant_UPDATE_DISABLED>`\ 。
+Update the render target once, then switch to :ref:`UPDATE_DISABLED<class_SubViewport_constant_UPDATE_DISABLED>`.
 
 .. _class_SubViewport_constant_UPDATE_WHEN_VISIBLE:
 
@@ -132,7 +132,7 @@ enum **UpdateMode**: :ref:`🔗<enum_SubViewport_UpdateMode>`
 
 :ref:`UpdateMode<enum_SubViewport_UpdateMode>` **UPDATE_WHEN_VISIBLE** = ``2``
 
-僅在算繪目標可見時更新算繪目標。這是預設值。
+Update the render target only when it is visible. This is the default value.
 
 .. _class_SubViewport_constant_UPDATE_WHEN_PARENT_VISIBLE:
 
@@ -140,7 +140,7 @@ enum **UpdateMode**: :ref:`🔗<enum_SubViewport_UpdateMode>`
 
 :ref:`UpdateMode<enum_SubViewport_UpdateMode>` **UPDATE_WHEN_PARENT_VISIBLE** = ``3``
 
-僅在其父級可見時更新算繪目標。
+Update the render target only when its parent is visible.
 
 .. _class_SubViewport_constant_UPDATE_ALWAYS:
 
@@ -148,7 +148,7 @@ enum **UpdateMode**: :ref:`🔗<enum_SubViewport_UpdateMode>`
 
 :ref:`UpdateMode<enum_SubViewport_UpdateMode>` **UPDATE_ALWAYS** = ``4``
 
-始終更新算繪目標。
+Always update the render target.
 
 .. rst-class:: classref-section-separator
 
@@ -156,8 +156,8 @@ enum **UpdateMode**: :ref:`🔗<enum_SubViewport_UpdateMode>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_SubViewport_property_render_target_clear_mode:
 
@@ -170,9 +170,9 @@ enum **UpdateMode**: :ref:`🔗<enum_SubViewport_UpdateMode>`
 - |void| **set_clear_mode**\ (\ value\: :ref:`ClearMode<enum_SubViewport_ClearMode>`\ )
 - :ref:`ClearMode<enum_SubViewport_ClearMode>` **get_clear_mode**\ (\ )
 
-該子視口用作算繪目標時的清除模式。
+The clear mode when the sub-viewport is used as a render target.
 
-\ **注意：**\ 此屬性適用於 2D 用途。
+\ **Note:** This property is intended for 2D usage.
 
 .. rst-class:: classref-item-separator
 
@@ -189,7 +189,7 @@ enum **UpdateMode**: :ref:`🔗<enum_SubViewport_UpdateMode>`
 - |void| **set_update_mode**\ (\ value\: :ref:`UpdateMode<enum_SubViewport_UpdateMode>`\ )
 - :ref:`UpdateMode<enum_SubViewport_UpdateMode>` **get_update_mode**\ (\ )
 
-該子視口用作算繪目標時的更新模式。
+The update mode when the sub-viewport is used as a render target.
 
 .. rst-class:: classref-item-separator
 
@@ -206,9 +206,9 @@ enum **UpdateMode**: :ref:`🔗<enum_SubViewport_UpdateMode>`
 - |void| **set_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_size**\ (\ )
 
-子視口的寬度和高度。必須在兩個維度上設定為大於或等於 2 圖元的值。否則，不會顯示任何內容。
+The width and height of the sub-viewport. Must be set to a value greater than or equal to 2 pixels on both dimensions. Otherwise, nothing will be displayed.
 
-\ **注意：**\ 如果父節點是一個 :ref:`SubViewportContainer<class_SubViewportContainer>`\ ，並且它的 :ref:`SubViewportContainer.stretch<class_SubViewportContainer_property_stretch>` 為 ``true``\ ，則無法手動更改該視口大小。
+\ **Note:** If the parent node is a :ref:`SubViewportContainer<class_SubViewportContainer>` and its :ref:`SubViewportContainer.stretch<class_SubViewportContainer_property_stretch>` is ``true``, the viewport size cannot be changed manually.
 
 .. rst-class:: classref-item-separator
 
@@ -225,7 +225,7 @@ enum **UpdateMode**: :ref:`🔗<enum_SubViewport_UpdateMode>`
 - |void| **set_size_2d_override**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_size_2d_override**\ (\ )
 
-子視口的 2D 尺寸覆蓋。如果寬度或高度為 ``0``\ ，則禁用覆蓋。
+The 2D size override of the sub-viewport. If either the width or height is ``0``, the override is disabled.
 
 .. rst-class:: classref-item-separator
 
@@ -242,14 +242,14 @@ enum **UpdateMode**: :ref:`🔗<enum_SubViewport_UpdateMode>`
 - |void| **set_size_2d_override_stretch**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_size_2d_override_stretch_enabled**\ (\ )
 
-如果為 ``true``\ ，則 2D 尺寸覆蓋也會影響拉伸。
+If ``true``, the 2D size override affects stretch as well.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

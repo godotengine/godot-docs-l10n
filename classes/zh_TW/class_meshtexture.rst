@@ -5,21 +5,21 @@
 MeshTexture
 ===========
 
-**繼承：** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-簡單的紋理，使用一個網格來繪製自己。
+Simple texture that uses a mesh to draw itself.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-簡單的紋理，使用一個網格來繪製自己。它的套用場景有限，因為 Flag 不能更改，而且不支援區域繪製。
+Simple texture that uses a mesh to draw itself. It's limited because flags can't be changed and region drawing is not supported.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ MeshTexture
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_MeshTexture_property_base_texture:
 
@@ -54,7 +54,7 @@ MeshTexture
 - |void| **set_base_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_base_texture**\ (\ )
 
-設定該 Mesh 用來繪製的基礎紋理。
+Sets the base texture that the Mesh will use to draw.
 
 .. rst-class:: classref-item-separator
 
@@ -71,7 +71,7 @@ MeshTexture
 - |void| **set_image_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_image_size**\ (\ )
 
-設定圖像的大小，需要參考。
+Sets the size of the image, needed for reference.
 
 .. rst-class:: classref-item-separator
 
@@ -88,14 +88,14 @@ MeshTexture
 - |void| **set_mesh**\ (\ value\: :ref:`Mesh<class_Mesh>`\ )
 - :ref:`Mesh<class_Mesh>` **get_mesh**\ (\ )
 
-設定用於繪製的網格，該網格必須使用 2D 頂點。
+Sets the mesh used to draw. It must be a mesh using 2D vertices.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

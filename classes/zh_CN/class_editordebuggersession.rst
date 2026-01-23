@@ -5,23 +5,23 @@
 EditorDebuggerSession
 =====================
 
-**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-与编辑器调试器交互的类。
+A class to interact with the editor debugger.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-这个类不能直接实例化，必须通过 :ref:`EditorDebuggerPlugin<class_EditorDebuggerPlugin>` 来获取。
+This class cannot be directly instantiated and must be retrieved via an :ref:`EditorDebuggerPlugin<class_EditorDebuggerPlugin>`.
 
-通过 :ref:`add_session_tab()<class_EditorDebuggerSession_method_add_session_tab>` 可以向会话 UI 添加标签，通过 :ref:`send_message()<class_EditorDebuggerSession_method_send_message>` 可以发送消息，通过 :ref:`toggle_profiler()<class_EditorDebuggerSession_method_toggle_profiler>` 可以切换 :ref:`EngineProfiler<class_EngineProfiler>`\ 。
+You can add tabs to the session UI via :ref:`add_session_tab()<class_EditorDebuggerSession_method_add_session_tab>`, send messages via :ref:`send_message()<class_EditorDebuggerSession_method_send_message>`, and toggle :ref:`EngineProfiler<class_EngineProfiler>`\ s via :ref:`toggle_profiler()<class_EditorDebuggerSession_method_toggle_profiler>`.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ EditorDebuggerSession
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_EditorDebuggerSession_signal_breaked:
 
@@ -59,7 +59,7 @@ EditorDebuggerSession
 
 **breaked**\ (\ can_debug\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorDebuggerSession_signal_breaked>`
 
-当连接的远程实例进入中断状态时发出。如果 ``can_debug`` 为 ``true``\ ，则远程实例将进入调试循环。
+Emitted when the attached remote instance enters a break state. If ``can_debug`` is ``true``, the remote instance will enter the debug loop.
 
 .. rst-class:: classref-item-separator
 
@@ -71,7 +71,7 @@ EditorDebuggerSession
 
 **continued**\ (\ ) :ref:`🔗<class_EditorDebuggerSession_signal_continued>`
 
-当连接的远程实例退出中断状态时触发。
+Emitted when the attached remote instance exits a break state.
 
 .. rst-class:: classref-item-separator
 
@@ -83,7 +83,7 @@ EditorDebuggerSession
 
 **started**\ (\ ) :ref:`🔗<class_EditorDebuggerSession_signal_started>`
 
-当一个远程实例连接到该会话时触发（即该会话成为活动状态）。
+Emitted when a remote instance is attached to this session (i.e. the session becomes active).
 
 .. rst-class:: classref-item-separator
 
@@ -95,7 +95,7 @@ EditorDebuggerSession
 
 **stopped**\ (\ ) :ref:`🔗<class_EditorDebuggerSession_signal_stopped>`
 
-当一个远程实例从该会话中分离出来时（即该会话变为非活动状态）发出。
+Emitted when a remote instance is detached from this session (i.e. the session becomes inactive).
 
 .. rst-class:: classref-section-separator
 
@@ -103,8 +103,8 @@ EditorDebuggerSession
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_EditorDebuggerSession_method_add_session_tab:
 
@@ -112,7 +112,7 @@ EditorDebuggerSession
 
 |void| **add_session_tab**\ (\ control\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_EditorDebuggerSession_method_add_session_tab>`
 
-将控件 ``control`` 添加到调试器底部面板的调试会话 UI 中。\ ``control`` 的节点名称会作为选项卡标题。
+Adds the given ``control`` to the debug session UI in the debugger bottom panel. The ``control``'s node name will be used as the tab title.
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ EditorDebuggerSession
 
 :ref:`bool<class_bool>` **is_active**\ (\ ) :ref:`🔗<class_EditorDebuggerSession_method_is_active>`
 
-如果调试会话附加到了某个远程实例，则返回 ``true``\ 。
+Returns ``true`` if the debug session is currently attached to a remote instance.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ EditorDebuggerSession
 
 :ref:`bool<class_bool>` **is_breaked**\ (\ ) :ref:`🔗<class_EditorDebuggerSession_method_is_breaked>`
 
-如果附加的远程实例正处于调试循环中，则返回 ``true``\ 。
+Returns ``true`` if the attached remote instance is currently in the debug loop.
 
 .. rst-class:: classref-item-separator
 
@@ -148,7 +148,7 @@ EditorDebuggerSession
 
 :ref:`bool<class_bool>` **is_debuggable**\ (\ ) :ref:`🔗<class_EditorDebuggerSession_method_is_debuggable>`
 
-如果附加的远程实例可以调试，则返回 ``true``\ 。
+Returns ``true`` if the attached remote instance can be debugged.
 
 .. rst-class:: classref-item-separator
 
@@ -160,7 +160,7 @@ EditorDebuggerSession
 
 |void| **remove_session_tab**\ (\ control\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_EditorDebuggerSession_method_remove_session_tab>`
 
-将给定的控件 ``control`` 从底部调试器面板的调试会话 UI 中移除。
+Removes the given ``control`` from the debug session UI in the debugger bottom panel.
 
 .. rst-class:: classref-item-separator
 
@@ -172,7 +172,7 @@ EditorDebuggerSession
 
 |void| **send_message**\ (\ message\: :ref:`String<class_String>`, data\: :ref:`Array<class_Array>` = []\ ) :ref:`🔗<class_EditorDebuggerSession_method_send_message>`
 
-向原生实例发送给定的消息 ``message``\ ，还可以传入额外的数据 ``data``\ 。如何获取这些消息见 :ref:`EngineDebugger<class_EngineDebugger>`\ 。
+Sends the given ``message`` to the attached remote instance, optionally passing additionally ``data``. See :ref:`EngineDebugger<class_EngineDebugger>` for how to retrieve those messages.
 
 .. rst-class:: classref-item-separator
 
@@ -184,7 +184,7 @@ EditorDebuggerSession
 
 |void| **set_breakpoint**\ (\ path\: :ref:`String<class_String>`, line\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorDebuggerSession_method_set_breakpoint>`
 
-根据 ``enabled`` 启用或禁用指定的断点，会据此更新“编辑器断点面板”。
+Enables or disables a specific breakpoint based on ``enabled``, updating the Editor Breakpoint Panel accordingly.
 
 .. rst-class:: classref-item-separator
 
@@ -196,14 +196,14 @@ EditorDebuggerSession
 
 |void| **toggle_profiler**\ (\ profiler\: :ref:`String<class_String>`, enable\: :ref:`bool<class_bool>`, data\: :ref:`Array<class_Array>` = []\ ) :ref:`🔗<class_EditorDebuggerSession_method_toggle_profiler>`
 
-在所附加的远程实例上开关给定的 ``profiler``\ ，还可以传入额外的数据 ``data``\ 。详见 :ref:`EngineProfiler<class_EngineProfiler>`\ 。
+Toggle the given ``profiler`` on the attached remote instance, optionally passing additionally ``data``. See :ref:`EngineProfiler<class_EngineProfiler>` for more details.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

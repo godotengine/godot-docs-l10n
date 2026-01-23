@@ -5,23 +5,23 @@
 ResourceSaver
 =============
 
-**繼承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-用於將 :ref:`Resource<class_Resource>` 保存到檔案系統的單例。
+A singleton for saving :ref:`Resource<class_Resource>`\ s to the filesystem.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-用於將資源型別保存到檔案系統的單例。
+A singleton for saving resource types to the filesystem.
 
-它會使用在引擎中註冊的（內建或外掛程式）\ :ref:`ResourceFormatSaver<class_ResourceFormatSaver>` 將資來源資料保存為文本檔案（如 ``.tres`` 或 ``.tscn``\ ）或二進位檔案（如 ``.res`` 或 ``.scn``\ ）。
+It uses the many :ref:`ResourceFormatSaver<class_ResourceFormatSaver>` classes registered in the engine (either built-in or from a plugin) to save resource data to text-based (e.g. ``.tres`` or ``.tscn``) or binary files (e.g. ``.res`` or ``.scn``).
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ ResourceSaver
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_ResourceSaver_SaverFlags:
 
@@ -61,7 +61,7 @@ flags **SaverFlags**: :ref:`🔗<enum_ResourceSaver_SaverFlags>`
 
 :ref:`SaverFlags<enum_ResourceSaver_SaverFlags>` **FLAG_NONE** = ``0``
 
-沒有資源保存選項。
+No resource saving option.
 
 .. _class_ResourceSaver_constant_FLAG_RELATIVE_PATHS:
 
@@ -69,7 +69,7 @@ flags **SaverFlags**: :ref:`🔗<enum_ResourceSaver_SaverFlags>`
 
 :ref:`SaverFlags<enum_ResourceSaver_SaverFlags>` **FLAG_RELATIVE_PATHS** = ``1``
 
-用相對於使用該資源的場景的路徑來保存該資源。
+Save the resource with a path relative to the scene which uses it.
 
 .. _class_ResourceSaver_constant_FLAG_BUNDLE_RESOURCES:
 
@@ -77,7 +77,7 @@ flags **SaverFlags**: :ref:`🔗<enum_ResourceSaver_SaverFlags>`
 
 :ref:`SaverFlags<enum_ResourceSaver_SaverFlags>` **FLAG_BUNDLE_RESOURCES** = ``2``
 
-捆綁外部資源。
+Bundles external resources.
 
 .. _class_ResourceSaver_constant_FLAG_CHANGE_PATH:
 
@@ -85,7 +85,7 @@ flags **SaverFlags**: :ref:`🔗<enum_ResourceSaver_SaverFlags>`
 
 :ref:`SaverFlags<enum_ResourceSaver_SaverFlags>` **FLAG_CHANGE_PATH** = ``4``
 
-更改已保存資源的 :ref:`Resource.resource_path<class_Resource_property_resource_path>` 以配對其新位置。
+Changes the :ref:`Resource.resource_path<class_Resource_property_resource_path>` of the saved resource to match its new location.
 
 .. _class_ResourceSaver_constant_FLAG_OMIT_EDITOR_PROPERTIES:
 
@@ -93,7 +93,7 @@ flags **SaverFlags**: :ref:`🔗<enum_ResourceSaver_SaverFlags>`
 
 :ref:`SaverFlags<enum_ResourceSaver_SaverFlags>` **FLAG_OMIT_EDITOR_PROPERTIES** = ``8``
 
-不要保存編輯器特定的中繼資料（由其 ``__editor`` 前綴標識）。
+Do not save editor-specific metadata (identified by their ``__editor`` prefix).
 
 .. _class_ResourceSaver_constant_FLAG_SAVE_BIG_ENDIAN:
 
@@ -101,7 +101,7 @@ flags **SaverFlags**: :ref:`🔗<enum_ResourceSaver_SaverFlags>`
 
 :ref:`SaverFlags<enum_ResourceSaver_SaverFlags>` **FLAG_SAVE_BIG_ENDIAN** = ``16``
 
-保存為大端序（見 :ref:`FileAccess.big_endian<class_FileAccess_property_big_endian>`\ ）。
+Save as big endian (see :ref:`FileAccess.big_endian<class_FileAccess_property_big_endian>`).
 
 .. _class_ResourceSaver_constant_FLAG_COMPRESS:
 
@@ -109,7 +109,7 @@ flags **SaverFlags**: :ref:`🔗<enum_ResourceSaver_SaverFlags>`
 
 :ref:`SaverFlags<enum_ResourceSaver_SaverFlags>` **FLAG_COMPRESS** = ``32``
 
-在保存時使用 :ref:`FileAccess.COMPRESSION_ZSTD<class_FileAccess_constant_COMPRESSION_ZSTD>` 壓縮資源。僅適用於二進位資源型別。
+Compress the resource on save using :ref:`FileAccess.COMPRESSION_ZSTD<class_FileAccess_constant_COMPRESSION_ZSTD>`. Only available for binary resource types.
 
 .. _class_ResourceSaver_constant_FLAG_REPLACE_SUBRESOURCE_PATHS:
 
@@ -117,7 +117,7 @@ flags **SaverFlags**: :ref:`🔗<enum_ResourceSaver_SaverFlags>`
 
 :ref:`SaverFlags<enum_ResourceSaver_SaverFlags>` **FLAG_REPLACE_SUBRESOURCE_PATHS** = ``64``
 
-接管保存的子資源的路徑（見 :ref:`Resource.take_over_path()<class_Resource_method_take_over_path>`\ ）。
+Take over the paths of the saved subresources (see :ref:`Resource.take_over_path()<class_Resource_method_take_over_path>`).
 
 .. rst-class:: classref-section-separator
 
@@ -125,8 +125,8 @@ flags **SaverFlags**: :ref:`🔗<enum_ResourceSaver_SaverFlags>`
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_ResourceSaver_method_add_resource_format_saver:
 
@@ -134,9 +134,9 @@ flags **SaverFlags**: :ref:`🔗<enum_ResourceSaver_SaverFlags>`
 
 |void| **add_resource_format_saver**\ (\ format_saver\: :ref:`ResourceFormatSaver<class_ResourceFormatSaver>`, at_front\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_ResourceSaver_method_add_resource_format_saver>`
 
-註冊一個新的 :ref:`ResourceFormatSaver<class_ResourceFormatSaver>`\ 。 ResourceSaver 將使用 ResourceFormatSaver，如 :ref:`save()<class_ResourceSaver_method_save>` 中所述。
+Registers a new :ref:`ResourceFormatSaver<class_ResourceFormatSaver>`. The ResourceSaver will use the ResourceFormatSaver as described in :ref:`save()<class_ResourceSaver_method_save>`.
 
-對於用 GDScript 編寫的 ResourceFormatSaver，此方法將隱式執行（詳情見 :ref:`ResourceFormatSaver<class_ResourceFormatSaver>`\ ）。
+This method is performed implicitly for ResourceFormatSavers written in GDScript (see :ref:`ResourceFormatSaver<class_ResourceFormatSaver>` for more information).
 
 .. rst-class:: classref-item-separator
 
@@ -148,7 +148,7 @@ flags **SaverFlags**: :ref:`🔗<enum_ResourceSaver_SaverFlags>`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_recognized_extensions**\ (\ type\: :ref:`Resource<class_Resource>`\ ) :ref:`🔗<class_ResourceSaver_method_get_recognized_extensions>`
 
-返回可用於保存給定型別的資源的擴充列表。
+Returns the list of extensions available for saving a resource of a given type.
 
 .. rst-class:: classref-item-separator
 
@@ -172,7 +172,7 @@ Returns the resource ID for the given path. If ``generate`` is ``true``, a new r
 
 |void| **remove_resource_format_saver**\ (\ format_saver\: :ref:`ResourceFormatSaver<class_ResourceFormatSaver>`\ ) :ref:`🔗<class_ResourceSaver_method_remove_resource_format_saver>`
 
-取消註冊給定的 :ref:`ResourceFormatSaver<class_ResourceFormatSaver>`\ 。
+Unregisters the given :ref:`ResourceFormatSaver<class_ResourceFormatSaver>`.
 
 .. rst-class:: classref-item-separator
 
@@ -206,12 +206,12 @@ Sets the UID of the given ``resource`` path to ``uid``. You can generate a new U
 
 Since resources will normally get a UID automatically, this method is only useful in very specific cases.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

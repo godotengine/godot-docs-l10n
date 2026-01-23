@@ -5,25 +5,25 @@
 EditorExportPlatform
 ====================
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`EditorExportPlatformAndroid<class_EditorExportPlatformAndroid>`, :ref:`EditorExportPlatformAppleEmbedded<class_EditorExportPlatformAppleEmbedded>`, :ref:`EditorExportPlatformExtension<class_EditorExportPlatformExtension>`, :ref:`EditorExportPlatformMacOS<class_EditorExportPlatformMacOS>`, :ref:`EditorExportPlatformPC<class_EditorExportPlatformPC>`, :ref:`EditorExportPlatformWeb<class_EditorExportPlatformWeb>`
+**Inherited By:** :ref:`EditorExportPlatformAndroid<class_EditorExportPlatformAndroid>`, :ref:`EditorExportPlatformAppleEmbedded<class_EditorExportPlatformAppleEmbedded>`, :ref:`EditorExportPlatformExtension<class_EditorExportPlatformExtension>`, :ref:`EditorExportPlatformMacOS<class_EditorExportPlatformMacOS>`, :ref:`EditorExportPlatformPC<class_EditorExportPlatformPC>`, :ref:`EditorExportPlatformWeb<class_EditorExportPlatformWeb>`
 
-標識一個支援的匯出平臺，並在內部提供匯出到該平臺的功能。
+Identifies a supported export platform, and internally provides the functionality of exporting to that platform.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-基礎資源，提供從編輯器將專案的發行建構匯出到平臺的功能。儲存特定於平臺的元數據，例如平臺的名稱和支援的功能，並執行專案、PCK 檔和 ZIP 檔的匯出。使用在專案匯出時提供的平臺匯出範本。
+Base resource that provides the functionality of exporting a release build of a project to a platform, from the editor. Stores platform-specific metadata such as the name and supported features of the platform, and performs the exporting of projects, PCK files, and ZIP files. Uses an export template for the platform provided at the time of project exporting.
 
-在 :ref:`EditorExportPlugin<class_EditorExportPlugin>` 的腳本中用於配置特定於平臺的場景和資源的定制。有關詳細信息，請參閱 :ref:`EditorExportPlugin._begin_customize_scenes()<class_EditorExportPlugin_private_method__begin_customize_scenes>` 和 :ref:`EditorExportPlugin._begin_customize_resources()<class_EditorExportPlugin_private_method__begin_customize_resources>`\ 。
+Used in scripting by :ref:`EditorExportPlugin<class_EditorExportPlugin>` to configure platform-specific customization of scenes and resources. See :ref:`EditorExportPlugin._begin_customize_scenes()<class_EditorExportPlugin_private_method__begin_customize_scenes>` and :ref:`EditorExportPlugin._begin_customize_resources()<class_EditorExportPlugin_private_method__begin_customize_resources>` for more details.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -90,8 +90,8 @@ EditorExportPlatform
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_EditorExportPlatform_ExportMessageType:
 
@@ -187,8 +187,8 @@ Flag is set if the "Visible Navigation" remote debug option is enabled. If set, 
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_EditorExportPlatform_method_add_message:
 
@@ -422,7 +422,7 @@ Returns the type for the message with the given ``index``.
 
 :ref:`String<class_String>` **get_os_name**\ (\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_os_name>`
 
-以友善字串的形式傳回由此\ **EditorExportPlatform** 類別處理的匯出作業系統的名稱。可能的回傳值為\ ``Windows``\ 、\ ``Linux ``\ 、\ ``macOS``\ 、\ ``Android``\ 、\ ``iOS`` 和 ``Web``\ 。
+Returns the name of the export operating system handled by this **EditorExportPlatform** class, as a friendly string. Possible return values are ``Windows``, ``Linux``, ``macOS``, ``Android``, ``iOS``, and ``Web``.
 
 .. rst-class:: classref-item-separator
 
@@ -522,12 +522,12 @@ Executes specified command on the remote host via SSH protocol and returns comma
 
 Executes specified command on the remote host via SSH protocol and returns process ID (on the remote host) without waiting for command to finish.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,14 +5,14 @@
 TileSetScenesCollectionSource
 =============================
 
-**繼承：** :ref:`TileSetSource<class_TileSetSource>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`TileSetSource<class_TileSetSource>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-以圖塊的形式向 :ref:`TileSet<class_TileSet>` 資源暴露一組場景。
+Exposes a set of scenes as tiles for a :ref:`TileSet<class_TileSet>` resource.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 When placed on a :ref:`TileMapLayer<class_TileMapLayer>`, tiles from **TileSetScenesCollectionSource** will automatically instantiate an associated scene at the cell's position in the TileMapLayer.
 
@@ -53,8 +53,8 @@ Use this code if you want to find the scene path at a given tile in :ref:`TileMa
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -89,8 +89,8 @@ Use this code if you want to find the scene path at a given tile in :ref:`TileMa
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_TileSetScenesCollectionSource_method_create_scene_tile:
 
@@ -98,9 +98,9 @@ Use this code if you want to find the scene path at a given tile in :ref:`TileMa
 
 :ref:`int<class_int>` **create_scene_tile**\ (\ packed_scene\: :ref:`PackedScene<class_PackedScene>`, id_override\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TileSetScenesCollectionSource_method_create_scene_tile>`
 
-從給定的場景建立基於場景的圖塊。
+Creates a scene-based tile out of the given scene.
 
-返回新生成的唯一 ID。
+Returns a newly generated unique ID.
 
 .. rst-class:: classref-item-separator
 
@@ -112,7 +112,7 @@ Use this code if you want to find the scene path at a given tile in :ref:`TileMa
 
 :ref:`int<class_int>` **get_next_scene_tile_id**\ (\ ) |const| :ref:`🔗<class_TileSetScenesCollectionSource_method_get_next_scene_tile_id>`
 
-返回後續呼叫 :ref:`create_scene_tile()<class_TileSetScenesCollectionSource_method_create_scene_tile>` 時會返回的場景 ID。
+Returns the scene ID a following call to :ref:`create_scene_tile()<class_TileSetScenesCollectionSource_method_create_scene_tile>` would return.
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ Use this code if you want to find the scene path at a given tile in :ref:`TileMa
 
 :ref:`bool<class_bool>` **get_scene_tile_display_placeholder**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSetScenesCollectionSource_method_get_scene_tile_display_placeholder>`
 
-返回 ID 為 ``id`` 的場景圖塊是否在編輯器中顯示占點陣圖。
+Returns whether the scene tile with ``id`` displays a placeholder in the editor.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ Use this code if you want to find the scene path at a given tile in :ref:`TileMa
 
 :ref:`int<class_int>` **get_scene_tile_id**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSetScenesCollectionSource_method_get_scene_tile_id>`
 
-返回索引為 ``index`` 的場景圖塊的場景圖塊 ID。
+Returns the scene tile ID of the scene tile at ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -148,7 +148,7 @@ Use this code if you want to find the scene path at a given tile in :ref:`TileMa
 
 :ref:`PackedScene<class_PackedScene>` **get_scene_tile_scene**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSetScenesCollectionSource_method_get_scene_tile_scene>`
 
-返回 ID 為 ``id`` 的場景圖塊的 :ref:`PackedScene<class_PackedScene>` 資源。
+Returns the :ref:`PackedScene<class_PackedScene>` resource of scene tile with ``id``.
 
 .. rst-class:: classref-item-separator
 
@@ -160,7 +160,7 @@ Use this code if you want to find the scene path at a given tile in :ref:`TileMa
 
 :ref:`int<class_int>` **get_scene_tiles_count**\ (\ ) :ref:`🔗<class_TileSetScenesCollectionSource_method_get_scene_tiles_count>`
 
-返回該 TileSet 源中場景圖塊的數量。
+Returns the number or scene tiles this TileSet source has.
 
 .. rst-class:: classref-item-separator
 
@@ -172,7 +172,7 @@ Use this code if you want to find the scene path at a given tile in :ref:`TileMa
 
 :ref:`bool<class_bool>` **has_scene_tile_id**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSetScenesCollectionSource_method_has_scene_tile_id>`
 
-返回該 TileSet 源是否包含 ID 為 ``id`` 的場景圖塊。
+Returns whether this TileSet source has a scene tile with ``id``.
 
 .. rst-class:: classref-item-separator
 
@@ -184,7 +184,7 @@ Use this code if you want to find the scene path at a given tile in :ref:`TileMa
 
 |void| **remove_scene_tile**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSetScenesCollectionSource_method_remove_scene_tile>`
 
-移除 ID 為 ``id`` 的場景圖塊。
+Remove the scene tile with ``id``.
 
 .. rst-class:: classref-item-separator
 
@@ -196,7 +196,7 @@ Use this code if you want to find the scene path at a given tile in :ref:`TileMa
 
 |void| **set_scene_tile_display_placeholder**\ (\ id\: :ref:`int<class_int>`, display_placeholder\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TileSetScenesCollectionSource_method_set_scene_tile_display_placeholder>`
 
-設定 ID 為 ``id`` 的場景圖塊是否應該在編輯器中顯示為預留位置。對不可見的場景可能有用。
+Sets whether or not the scene tile with ``id`` should display a placeholder in the editor. This might be useful for scenes that are not visible.
 
 .. rst-class:: classref-item-separator
 
@@ -208,7 +208,7 @@ Use this code if you want to find the scene path at a given tile in :ref:`TileMa
 
 |void| **set_scene_tile_id**\ (\ id\: :ref:`int<class_int>`, new_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSetScenesCollectionSource_method_set_scene_tile_id>`
 
-將場景圖塊的 ID 從 ``id`` 改為 ``new_id``\ 。如果已經存在 ID 為 ``new_id`` 的圖塊則會失敗。
+Changes a scene tile's ID from ``id`` to ``new_id``. This will fail if there is already a tile with an ID equal to ``new_id``.
 
 .. rst-class:: classref-item-separator
 
@@ -222,12 +222,12 @@ Use this code if you want to find the scene path at a given tile in :ref:`TileMa
 
 Assigns a :ref:`PackedScene<class_PackedScene>` resource to the scene tile with ``id``. This will fail if the scene does not extend :ref:`CanvasItem<class_CanvasItem>`, as positioning properties are needed to place the scene on the :ref:`TileMapLayer<class_TileMapLayer>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

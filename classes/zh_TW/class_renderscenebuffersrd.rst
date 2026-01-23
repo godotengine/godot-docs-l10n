@@ -5,14 +5,14 @@
 RenderSceneBuffersRD
 ====================
 
-**繼承：** :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 Render scene buffer implementation for the RenderingDevice based renderers.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 This object manages all 3D rendering buffers for the rendering device based renderers. An instance of this object is created for every viewport that has 3D rendering enabled. See also :ref:`RenderSceneBuffers<class_RenderSceneBuffers>`.
 
@@ -24,8 +24,8 @@ Buffers are only guaranteed to exist during rendering of the viewport.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -92,8 +92,8 @@ Buffers are only guaranteed to exist during rendering of the viewport.
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_RenderSceneBuffersRD_method_clear_context:
 
@@ -101,7 +101,7 @@ Buffers are only guaranteed to exist during rendering of the viewport.
 
 |void| **clear_context**\ (\ context\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_RenderSceneBuffersRD_method_clear_context>`
 
-釋放與這個本文相關的所有緩衝。
+Frees all buffers related to this context.
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +113,7 @@ Buffers are only guaranteed to exist during rendering of the viewport.
 
 :ref:`RID<class_RID>` **create_texture**\ (\ context\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, data_format\: :ref:`DataFormat<enum_RenderingDevice_DataFormat>`, usage_bits\: :ref:`int<class_int>`, texture_samples\: :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>`, size\: :ref:`Vector2i<class_Vector2i>`, layers\: :ref:`int<class_int>`, mipmaps\: :ref:`int<class_int>`, unique\: :ref:`bool<class_bool>`, discardable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderSceneBuffersRD_method_create_texture>`
 
-使用給定的定義建立新紋理，並將其快取在給定的名稱下。如果現有紋理已存在，則將傳回該紋理。
+Create a new texture with the given definition and cache this under the given name. Will return the existing texture if it already exists.
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ Buffers are only guaranteed to exist during rendering of the viewport.
 
 :ref:`RID<class_RID>` **create_texture_from_format**\ (\ context\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, format\: :ref:`RDTextureFormat<class_RDTextureFormat>`, view\: :ref:`RDTextureView<class_RDTextureView>`, unique\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderSceneBuffersRD_method_create_texture_from_format>`
 
-使用給定格式建立新紋理，並在給定名稱下檢視並快取該紋理。如果現有紋理已存在，則傳回該紋理。
+Create a new texture using the given format and view and cache this under the given name. Will return the existing texture if it already exists.
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ Returns the FSR sharpness value used while rendering the 3D content (if :ref:`ge
 
 :ref:`Vector2i<class_Vector2i>` **get_internal_size**\ (\ ) |const| :ref:`🔗<class_RenderSceneBuffersRD_method_get_internal_size>`
 
-傳回預設建立紋理的算繪緩衝區的內部大小（放大前的大小）。
+Returns the internal size of the render buffer (size before upscaling) with which textures are created by default.
 
 .. rst-class:: classref-item-separator
 
@@ -241,7 +241,7 @@ Returns the applied 3D MSAA mode for this viewport.
 
 :ref:`RID<class_RID>` **get_render_target**\ (\ ) |const| :ref:`🔗<class_RenderSceneBuffersRD_method_get_render_target>`
 
-返回與給定頂點關聯的中繼資料。
+Returns the render target associated with this buffers object.
 
 .. rst-class:: classref-item-separator
 
@@ -289,7 +289,7 @@ Returns the target size of the render buffer (size after upscaling).
 
 :ref:`RID<class_RID>` **get_texture**\ (\ context\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_RenderSceneBuffersRD_method_get_texture>`
 
-返回該紋理的寬度，單位為圖元。
+Returns a cached texture with this name.
 
 .. rst-class:: classref-item-separator
 
@@ -301,7 +301,7 @@ Returns the target size of the render buffer (size after upscaling).
 
 :ref:`RDTextureFormat<class_RDTextureFormat>` **get_texture_format**\ (\ context\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_RenderSceneBuffersRD_method_get_texture_format>`
 
-傳回建立快取紋理所使用的紋理格式資訊。
+Returns the texture format information with which a cached texture was created.
 
 .. rst-class:: classref-item-separator
 
@@ -325,7 +325,7 @@ Returns the number of MSAA samples used.
 
 :ref:`RID<class_RID>` **get_texture_slice**\ (\ context\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, layer\: :ref:`int<class_int>`, mipmap\: :ref:`int<class_int>`, layers\: :ref:`int<class_int>`, mipmaps\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderSceneBuffersRD_method_get_texture_slice>`
 
-將指定的字元算繪到字形快取紋理。
+Returns a specific slice (layer or mipmap) for a cached texture.
 
 .. rst-class:: classref-item-separator
 
@@ -337,7 +337,7 @@ Returns the number of MSAA samples used.
 
 :ref:`Vector2i<class_Vector2i>` **get_texture_slice_size**\ (\ context\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, mipmap\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderSceneBuffersRD_method_get_texture_slice_size>`
 
-返回該紋理的大小，單位為圖元。
+Returns the texture size of a given slice of a cached texture.
 
 .. rst-class:: classref-item-separator
 
@@ -349,7 +349,7 @@ Returns the number of MSAA samples used.
 
 :ref:`RID<class_RID>` **get_texture_slice_view**\ (\ context\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, layer\: :ref:`int<class_int>`, mipmap\: :ref:`int<class_int>`, layers\: :ref:`int<class_int>`, mipmaps\: :ref:`int<class_int>`, view\: :ref:`RDTextureView<class_RDTextureView>`\ ) :ref:`🔗<class_RenderSceneBuffersRD_method_get_texture_slice_view>`
 
-傳回快取紋理的切片（圖層或 mipmap）的特定視圖。
+Returns a specific view of a slice (layer or mipmap) for a cached texture.
 
 .. rst-class:: classref-item-separator
 
@@ -373,7 +373,7 @@ Returns ``true`` if debanding is enabled.
 
 :ref:`bool<class_bool>` **get_use_taa**\ (\ ) |const| :ref:`🔗<class_RenderSceneBuffersRD_method_get_use_taa>`
 
-如果啟用 TAA，則返回 ``true``\ 。
+Returns ``true`` if TAA is enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -385,7 +385,7 @@ Returns ``true`` if debanding is enabled.
 
 :ref:`RID<class_RID>` **get_velocity_layer**\ (\ layer\: :ref:`int<class_int>`, msaa\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderSceneBuffersRD_method_get_velocity_layer>`
 
-從我們算繪 3D 內容的速度紋理傳回指定圖層。
+Returns the specified layer from the velocity texture we are rendering 3D content to.
 
 .. rst-class:: classref-item-separator
 
@@ -411,7 +411,7 @@ If ``msaa`` is **true** and MSAA is enabled, this returns the MSAA variant of th
 
 :ref:`int<class_int>` **get_view_count**\ (\ ) |const| :ref:`🔗<class_RenderSceneBuffersRD_method_get_view_count>`
 
-返回關聯視口的視圖數。
+Returns the view count for the associated viewport.
 
 .. rst-class:: classref-item-separator
 
@@ -423,14 +423,14 @@ If ``msaa`` is **true** and MSAA is enabled, this returns the MSAA variant of th
 
 :ref:`bool<class_bool>` **has_texture**\ (\ context\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_RenderSceneBuffersRD_method_has_texture>`
 
-如果存在使用該名稱的緩衝紋理，則返回 ``true``\ 。
+Returns ``true`` if a cached texture exists for this name.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

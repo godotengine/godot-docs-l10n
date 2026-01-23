@@ -5,29 +5,29 @@
 SystemFont
 ==========
 
-**继承：** :ref:`Font<class_Font>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Font<class_Font>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-从系统字体加载的字体。如果未在宿主操作系统上实现，则回退到默认主题字体。
+A font loaded from a system font. Falls back to a default theme font if not implemented on the host OS.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-**SystemFont** 会从系统字体中加载一个字体，该字体是名称能与 :ref:`font_names<class_SystemFont_property_font_names>` 匹配的第一个字体。
+**SystemFont** loads a font from a system font with the first matching name from :ref:`font_names<class_SystemFont_property_font_names>`.
 
-会尝试匹配字体样式，但是并不保证。
+It will attempt to match font style, but it's not guaranteed.
 
-返回的字体可能属于某个字体合集，也可能是设置了 OpenType“字重”“宽度”和/或“斜体”特性的可变字体。
+The returned font might be part of a font collection or be a variable font with OpenType "weight", "width" and/or "italic" features set.
 
-你可以创建系统字体的 :ref:`FontVariation<class_FontVariation>`\ ，以便对其特征进行精细控制。
+You can create :ref:`FontVariation<class_FontVariation>` of the system font for precise control over its features.
 
-\ **注意：**\ 这个类在 iOS、Linux、macOS、Windows 上实现，在其他平台上会回退到默认主题字体。
+\ **Note:** This class is implemented on iOS, Linux, macOS and Windows, on other platforms it will fallback to default theme font.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -74,8 +74,8 @@ SystemFont
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_SystemFont_property_allow_system_fallback:
 
@@ -88,7 +88,7 @@ SystemFont
 - |void| **set_allow_system_fallback**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_allow_system_fallback**\ (\ )
 
-如果设置为 ``true``\ ，则可以自动将系统字体作为回退使用。
+If set to ``true``, system fonts can be automatically used as fallbacks.
 
 .. rst-class:: classref-item-separator
 
@@ -105,7 +105,7 @@ SystemFont
 - |void| **set_antialiasing**\ (\ value\: :ref:`FontAntialiasing<enum_TextServer_FontAntialiasing>`\ )
 - :ref:`FontAntialiasing<enum_TextServer_FontAntialiasing>` **get_antialiasing**\ (\ )
 
-字体抗锯齿模式。
+Font anti-aliasing mode.
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +122,7 @@ SystemFont
 - |void| **set_disable_embedded_bitmaps**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_disable_embedded_bitmaps**\ (\ )
 
-如果为 ``true``\ ，则会禁用内嵌字体位图的加载（仅包含位图的字体以及彩色字体会禁用该属性）。
+If set to ``true``, embedded font bitmap loading is disabled (bitmap-only and color fonts ignore this property).
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ SystemFont
 - |void| **set_font_italic**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_font_italic**\ (\ )
 
-如果设置为 ``true``\ ，则优先使用斜体（italic）或伪斜体（oblique）。
+If set to ``true``, italic or oblique font is preferred.
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ SystemFont
 - |void| **set_font_names**\ (\ value\: :ref:`PackedStringArray<class_PackedStringArray>`\ )
 - :ref:`PackedStringArray<class_PackedStringArray>` **get_font_names**\ (\ )
 
-要搜索的字体家族名称数组，会使用第一个与之匹配的字体。
+Array of font family names to search, first matching font found is used.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -175,7 +175,7 @@ SystemFont
 - |void| **set_font_stretch**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_font_stretch**\ (\ )
 
-字体优先使用的拉伸量，相对于正常宽度。介于 ``50%`` 和 ``200%`` 之间的百分比。
+Preferred font stretch amount, compared to a normal width. A percentage value between ``50%`` and ``200%``.
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ SystemFont
 - |void| **set_font_weight**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_font_weight**\ (\ )
 
-字体优先使用的字重（粗度）。在 ``100...999`` 范围内的值，正常字重为 ``400``\ ，粗体字重为 ``700``\ 。
+Preferred weight (boldness) of the font. A value in the ``100...999`` range, normal font weight is ``400``, bold font weight is ``700``.
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +209,7 @@ SystemFont
 - |void| **set_force_autohinter**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_force_autohinter**\ (\ )
 
-如果设置为 ``true``\ ，则支持自动微调，优先于字体内置微调。
+If set to ``true``, auto-hinting is supported and preferred over font built-in hinting.
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ SystemFont
 - |void| **set_generate_mipmaps**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_generate_mipmaps**\ (\ )
 
-如果设置为 ``true``\ ，则为字体纹理生成 mipmap。
+If set to ``true``, generate mipmaps for the font textures.
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ SystemFont
 - |void| **set_hinting**\ (\ value\: :ref:`Hinting<enum_TextServer_Hinting>`\ )
 - :ref:`Hinting<enum_TextServer_Hinting>` **get_hinting**\ (\ )
 
-字体微调模式。
+Font hinting mode.
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +260,7 @@ SystemFont
 - |void| **set_keep_rounding_remainders**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_keep_rounding_remainders**\ (\ )
 
-如果设置为 ``true``\ ，则将字形与像素边界对齐时会累积舍入余数，确保字形的分布更加均匀。如果启用了次像素定位则该设置无效。
+If set to ``true``, when aligning glyphs to the pixel boundaries rounding remainders are accumulated to ensure more uniform glyph distribution. This setting has no effect if subpixel positioning is enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ SystemFont
 - |void| **set_modulate_color_glyphs**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_modulate_color_glyphs**\ (\ )
 
-如果设为 ``true``\ ，则绘制彩色字形时会应用颜色调制，否则只会对灰度字形应用。
+If set to ``true``, color modulation is applied when drawing colored glyphs, otherwise it's applied to the monochrome glyphs only.
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +294,7 @@ SystemFont
 - |void| **set_msdf_pixel_range**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_msdf_pixel_range**\ (\ )
 
-最小和最大可表示的有符号距离之间的形状周围的范围宽度。如果使用字体轮廓，\ :ref:`msdf_pixel_range<class_SystemFont_property_msdf_pixel_range>` 必须至少设置为最大字体轮廓大小的\ *两倍*\ 。\ :ref:`msdf_pixel_range<class_SystemFont_property_msdf_pixel_range>` 的默认值为 ``16``\ ，允许大小最大到 ``8`` 的轮廓看起来正确。
+The width of the range around the shape between the minimum and maximum representable signed distance. If using font outlines, :ref:`msdf_pixel_range<class_SystemFont_property_msdf_pixel_range>` must be set to at least *twice* the size of the largest font outline. The default :ref:`msdf_pixel_range<class_SystemFont_property_msdf_pixel_range>` value of ``16`` allows outline sizes up to ``8`` to look correct.
 
 .. rst-class:: classref-item-separator
 
@@ -311,7 +311,7 @@ SystemFont
 - |void| **set_msdf_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_msdf_size**\ (\ )
 
-用于生成 MSDF 纹理的源字体大小。较高的值允许更高的精度，但渲染速度较慢并且需要更多内存。只有当注意到字形渲染中明显缺乏精度时，才增加该属性的值。
+Source font size used to generate MSDF textures. Higher values allow for more precision, but are slower to render and require more memory. Only increase this value if you notice a visible lack of precision in glyph rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -328,7 +328,7 @@ SystemFont
 - |void| **set_multichannel_signed_distance_field**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_multichannel_signed_distance_field**\ (\ )
 
-如果设置为 ``true``\ ，则所有大小的字形都将使用从动态字体矢量数据生成的单个多通道带符号距离场渲染。
+If set to ``true``, glyphs of all sizes are rendered using single multichannel signed distance field generated from the dynamic font vector data.
 
 .. rst-class:: classref-item-separator
 
@@ -345,7 +345,7 @@ SystemFont
 - |void| **set_oversampling**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_oversampling**\ (\ )
 
-如果设为正数，则会覆盖使用该字体的视口的过采样系数。见 :ref:`Viewport.oversampling<class_Viewport_property_oversampling>`\ 。该值不会覆盖 ``draw_*`` 方法的 ``oversampling`` 参数。
+If set to a positive value, overrides the oversampling factor of the viewport this font is used in. See :ref:`Viewport.oversampling<class_Viewport_property_oversampling>`. This value doesn't override the ``oversampling`` parameter of ``draw_*`` methods.
 
 .. rst-class:: classref-item-separator
 
@@ -362,14 +362,14 @@ SystemFont
 - |void| **set_subpixel_positioning**\ (\ value\: :ref:`SubpixelPositioning<enum_TextServer_SubpixelPositioning>`\ )
 - :ref:`SubpixelPositioning<enum_TextServer_SubpixelPositioning>` **get_subpixel_positioning**\ (\ )
 
-字体字形的次像素定位模式。次像素定位为较小的字体提供了更清晰的文本和更好的字偶距，但会牺牲内存占用和字体栅格化速度。使用 :ref:`TextServer.SUBPIXEL_POSITIONING_AUTO<class_TextServer_constant_SUBPIXEL_POSITIONING_AUTO>` 可以根据字体大小自动启用。
+Font glyph subpixel positioning mode. Subpixel positioning provides shaper text and better kerning for smaller font sizes, at the cost of memory usage and font rasterization speed. Use :ref:`TextServer.SUBPIXEL_POSITIONING_AUTO<class_TextServer_constant_SUBPIXEL_POSITIONING_AUTO>` to automatically enable it based on the font size.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

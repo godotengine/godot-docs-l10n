@@ -5,30 +5,30 @@
 AnimationNodeStateMachineTransition
 ===================================
 
-**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-:ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>` 中连接两个 :ref:`AnimationRootNode<class_AnimationRootNode>` 的过渡。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-使用 :ref:`AnimationNodeStateMachinePlayback.travel()<class_AnimationNodeStateMachinePlayback_method_travel>` 时生成的路径，仅限于通过 **AnimationNodeStateMachineTransition** 连接的节点。
-
-可以详细设置过渡的时机和条件。
+A transition within an :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>` connecting two :ref:`AnimationRootNode<class_AnimationRootNode>`\ s.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`使用 AnimationTree <../tutorials/animation/animation_tree>`
+The path generated when using :ref:`AnimationNodeStateMachinePlayback.travel()<class_AnimationNodeStateMachinePlayback_method_travel>` is limited to the nodes connected by **AnimationNodeStateMachineTransition**.
+
+You can set the timing and conditions of the transition in detail.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Using AnimationTree <../tutorials/animation/animation_tree>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -59,8 +59,8 @@ AnimationNodeStateMachineTransition
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_AnimationNodeStateMachineTransition_signal_advance_condition_changed:
 
@@ -68,7 +68,7 @@ AnimationNodeStateMachineTransition
 
 **advance_condition_changed**\ (\ ) :ref:`🔗<class_AnimationNodeStateMachineTransition_signal_advance_condition_changed>`
 
-变更 :ref:`advance_condition<class_AnimationNodeStateMachineTransition_property_advance_condition>` 时发出。
+Emitted when :ref:`advance_condition<class_AnimationNodeStateMachineTransition_property_advance_condition>` is changed.
 
 .. rst-class:: classref-section-separator
 
@@ -76,8 +76,8 @@ AnimationNodeStateMachineTransition
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_AnimationNodeStateMachineTransition_SwitchMode:
 
@@ -91,7 +91,7 @@ enum **SwitchMode**: :ref:`🔗<enum_AnimationNodeStateMachineTransition_SwitchM
 
 :ref:`SwitchMode<enum_AnimationNodeStateMachineTransition_SwitchMode>` **SWITCH_MODE_IMMEDIATE** = ``0``
 
-立即切换到下一个状态。当前状态将结束，并混合到新状态的开始。
+Switch to the next state immediately. The current state will end and blend into the beginning of the new one.
 
 .. _class_AnimationNodeStateMachineTransition_constant_SWITCH_MODE_SYNC:
 
@@ -99,7 +99,7 @@ enum **SwitchMode**: :ref:`🔗<enum_AnimationNodeStateMachineTransition_SwitchM
 
 :ref:`SwitchMode<enum_AnimationNodeStateMachineTransition_SwitchMode>` **SWITCH_MODE_SYNC** = ``1``
 
-立即切换到下一个状态，但会将新的状态定位到旧状态的播放位置。
+Switch to the next state immediately, but will seek the new state to the playback position of the old state.
 
 .. _class_AnimationNodeStateMachineTransition_constant_SWITCH_MODE_AT_END:
 
@@ -107,7 +107,7 @@ enum **SwitchMode**: :ref:`🔗<enum_AnimationNodeStateMachineTransition_SwitchM
 
 :ref:`SwitchMode<enum_AnimationNodeStateMachineTransition_SwitchMode>` **SWITCH_MODE_AT_END** = ``2``
 
-等待当前状态播放结束，然后切换到下一个状态动画的开头。
+Wait for the current state playback to end, then switch to the beginning of the next state animation.
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ enum **AdvanceMode**: :ref:`🔗<enum_AnimationNodeStateMachineTransition_Advanc
 
 :ref:`AdvanceMode<enum_AnimationNodeStateMachineTransition_AdvanceMode>` **ADVANCE_MODE_DISABLED** = ``0``
 
-不要使用该过渡。
+Don't use this transition.
 
 .. _class_AnimationNodeStateMachineTransition_constant_ADVANCE_MODE_ENABLED:
 
@@ -133,7 +133,7 @@ enum **AdvanceMode**: :ref:`🔗<enum_AnimationNodeStateMachineTransition_Advanc
 
 :ref:`AdvanceMode<enum_AnimationNodeStateMachineTransition_AdvanceMode>` **ADVANCE_MODE_ENABLED** = ``1``
 
-仅在 :ref:`AnimationNodeStateMachinePlayback.travel()<class_AnimationNodeStateMachinePlayback_method_travel>` 时使用该过渡。
+Only use this transition during :ref:`AnimationNodeStateMachinePlayback.travel()<class_AnimationNodeStateMachinePlayback_method_travel>`.
 
 .. _class_AnimationNodeStateMachineTransition_constant_ADVANCE_MODE_AUTO:
 
@@ -141,7 +141,7 @@ enum **AdvanceMode**: :ref:`🔗<enum_AnimationNodeStateMachineTransition_Advanc
 
 :ref:`AdvanceMode<enum_AnimationNodeStateMachineTransition_AdvanceMode>` **ADVANCE_MODE_AUTO** = ``2``
 
-如果 :ref:`advance_condition<class_AnimationNodeStateMachineTransition_property_advance_condition>` 和 :ref:`advance_expression<class_AnimationNodeStateMachineTransition_property_advance_expression>` 检查为 ``true``\ ，则自动使用该过渡（如果已分配）。
+Automatically use this transition if the :ref:`advance_condition<class_AnimationNodeStateMachineTransition_property_advance_condition>` and :ref:`advance_expression<class_AnimationNodeStateMachineTransition_property_advance_expression>` checks are ``true`` (if assigned).
 
 .. rst-class:: classref-section-separator
 
@@ -149,8 +149,8 @@ enum **AdvanceMode**: :ref:`🔗<enum_AnimationNodeStateMachineTransition_Advanc
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_AnimationNodeStateMachineTransition_property_advance_condition:
 
@@ -163,7 +163,7 @@ enum **AdvanceMode**: :ref:`🔗<enum_AnimationNodeStateMachineTransition_Advanc
 - |void| **set_advance_condition**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_advance_condition**\ (\ )
 
-该条件被设置时打开自动前进。提供的名称将成为 :ref:`AnimationTree<class_AnimationTree>` 上的布尔参数，可以通过代码进行控制（请参阅 `使用 AnimationTree <../tutorials/animation/animation_tree.html#controlling-from-code>`__\ ）。例如，如果 :ref:`AnimationTree.tree_root<class_AnimationTree_property_tree_root>` 是一个 :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>` 并且 :ref:`advance_condition<class_AnimationNodeStateMachineTransition_property_advance_condition>` 被设置为 ``"idle"``\ ：
+Turn on auto advance when this condition is set. The provided name will become a boolean parameter on the :ref:`AnimationTree<class_AnimationTree>` that can be controlled from code (see `Using AnimationTree <../tutorials/animation/animation_tree.html#controlling-from-code>`__). For example, if :ref:`AnimationTree.tree_root<class_AnimationTree_property_tree_root>` is an :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>` and :ref:`advance_condition<class_AnimationNodeStateMachineTransition_property_advance_condition>` is set to ``"idle"``:
 
 
 .. tabs::
@@ -193,7 +193,7 @@ enum **AdvanceMode**: :ref:`🔗<enum_AnimationNodeStateMachineTransition_Advanc
 - |void| **set_advance_expression**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_advance_expression**\ (\ )
 
-将表达式用作状态机过渡的条件。可以为状态之间的切换创建复杂的动画推进条件，并通过直接与脚本代码交互为创建复杂的状态机提供更大的灵活性。
+Use an expression as a condition for state machine transitions. It is possible to create complex animation advance conditions for switching between states and gives much greater flexibility for creating complex state machines by directly interfacing with the script code.
 
 .. rst-class:: classref-item-separator
 
@@ -210,7 +210,7 @@ enum **AdvanceMode**: :ref:`🔗<enum_AnimationNodeStateMachineTransition_Advanc
 - |void| **set_advance_mode**\ (\ value\: :ref:`AdvanceMode<enum_AnimationNodeStateMachineTransition_AdvanceMode>`\ )
 - :ref:`AdvanceMode<enum_AnimationNodeStateMachineTransition_AdvanceMode>` **get_advance_mode**\ (\ )
 
-决定过渡应当被禁用，使用 :ref:`AnimationNodeStateMachinePlayback.travel()<class_AnimationNodeStateMachinePlayback_method_travel>` 时启用，还是在 :ref:`advance_condition<class_AnimationNodeStateMachineTransition_property_advance_condition>` 和 :ref:`advance_expression<class_AnimationNodeStateMachineTransition_property_advance_expression>` 均为 ``true`` 时自动前进（已赋值时）。
+Determines whether the transition should be disabled, enabled when using :ref:`AnimationNodeStateMachinePlayback.travel()<class_AnimationNodeStateMachinePlayback_method_travel>`, or traversed automatically if the :ref:`advance_condition<class_AnimationNodeStateMachineTransition_property_advance_condition>` and :ref:`advance_expression<class_AnimationNodeStateMachineTransition_property_advance_expression>` checks are ``true`` (if assigned).
 
 .. rst-class:: classref-item-separator
 
@@ -227,7 +227,7 @@ enum **AdvanceMode**: :ref:`🔗<enum_AnimationNodeStateMachineTransition_Advanc
 - |void| **set_break_loop_at_end**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_loop_broken_at_end**\ (\ )
 
-如果\ ``true``\ ，则在循环循环结束时中断循环以进行转换，即使动画正在循环。
+If ``true``, breaks the loop at the end of the loop cycle for transition, even if the animation is looping.
 
 .. rst-class:: classref-item-separator
 
@@ -244,7 +244,7 @@ enum **AdvanceMode**: :ref:`🔗<enum_AnimationNodeStateMachineTransition_Advanc
 - |void| **set_priority**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_priority**\ (\ )
 
-当在树中通过 :ref:`AnimationNodeStateMachinePlayback.travel()<class_AnimationNodeStateMachinePlayback_method_travel>` 或将 :ref:`advance_mode<class_AnimationNodeStateMachineTransition_property_advance_mode>` 设置为 :ref:`ADVANCE_MODE_AUTO<class_AnimationNodeStateMachineTransition_constant_ADVANCE_MODE_AUTO>` 行进时，倾向于优先级较低的过渡。
+Lower priority transitions are preferred when travelling through the tree via :ref:`AnimationNodeStateMachinePlayback.travel()<class_AnimationNodeStateMachinePlayback_method_travel>` or :ref:`advance_mode<class_AnimationNodeStateMachineTransition_property_advance_mode>` is set to :ref:`ADVANCE_MODE_AUTO<class_AnimationNodeStateMachineTransition_constant_ADVANCE_MODE_AUTO>`.
 
 .. rst-class:: classref-item-separator
 
@@ -261,7 +261,7 @@ enum **AdvanceMode**: :ref:`🔗<enum_AnimationNodeStateMachineTransition_Advanc
 - |void| **set_reset**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_reset**\ (\ )
 
-如果为 ``true``\ ，切换时目标动画从头开始播放。
+If ``true``, the destination animation is played back from the beginning when switched.
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,7 @@ enum **AdvanceMode**: :ref:`🔗<enum_AnimationNodeStateMachineTransition_Advanc
 - |void| **set_switch_mode**\ (\ value\: :ref:`SwitchMode<enum_AnimationNodeStateMachineTransition_SwitchMode>`\ )
 - :ref:`SwitchMode<enum_AnimationNodeStateMachineTransition_SwitchMode>` **get_switch_mode**\ (\ )
 
-过渡类型。
+The transition type.
 
 .. rst-class:: classref-item-separator
 
@@ -295,7 +295,7 @@ enum **AdvanceMode**: :ref:`🔗<enum_AnimationNodeStateMachineTransition_Advanc
 - |void| **set_xfade_curve**\ (\ value\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_xfade_curve**\ (\ )
 
-缓动曲线可以更好地控制此状态和下一个状态之间的交叉淡入淡出。应为单位 :ref:`Curve<class_Curve>`\ 。
+Ease curve for better control over cross-fade between this state and the next. Should be a unit :ref:`Curve<class_Curve>`.
 
 .. rst-class:: classref-item-separator
 
@@ -312,16 +312,16 @@ enum **AdvanceMode**: :ref:`🔗<enum_AnimationNodeStateMachineTransition_Advanc
 - |void| **set_xfade_time**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_xfade_time**\ (\ )
 
-在该状态和下一个状态之间交叉渐变的时间。
+The time to cross-fade between this state and the next.
 
-\ **注意：**\ :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>` 是在淡入淡出结束后转换当前状态的。只能根据主动画推断精确的剩余时间。将 :ref:`AnimationNodeOutput<class_AnimationNodeOutput>` 视为最上游时，\ :ref:`xfade_time<class_AnimationNodeStateMachineTransition_property_xfade_time>` 不会根据下游增量进行缩放。另见 :ref:`AnimationNodeOneShot.fadeout_time<class_AnimationNodeOneShot_property_fadeout_time>`\ 。
+\ **Note:** :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>` transitions the current state immediately after the start of the fading. The precise remaining time can only be inferred from the main animation. When :ref:`AnimationNodeOutput<class_AnimationNodeOutput>` is considered as the most upstream, so the :ref:`xfade_time<class_AnimationNodeStateMachineTransition_property_xfade_time>` is not scaled depending on the downstream delta. See also :ref:`AnimationNodeOneShot.fadeout_time<class_AnimationNodeOneShot_property_fadeout_time>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

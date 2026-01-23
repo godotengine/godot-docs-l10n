@@ -5,14 +5,14 @@
 PackedScene
 ===========
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-對序列化場景的抽象。
+An abstraction of a serialized scene.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 A simplified interface to a scene file. Provides access to operations and checks that can be performed on the scene resource itself.
 
@@ -98,15 +98,15 @@ Can be used to save a node to a file. When saving, the node as well as all the n
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- `2D 角色扮演遊戲範例 <https://godotengine.org/asset-library/asset/2729>`__
+- `2D Role Playing Game (RPG) Demo <https://godotengine.org/asset-library/asset/2729>`__
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -127,8 +127,8 @@ Can be used to save a node to a file. When saving, the node as well as all the n
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_PackedScene_GenEditState:
 
@@ -142,7 +142,7 @@ enum **GenEditState**: :ref:`🔗<enum_PackedScene_GenEditState>`
 
 :ref:`GenEditState<enum_PackedScene_GenEditState>` **GEN_EDIT_STATE_DISABLED** = ``0``
 
-如果傳遞給 :ref:`instantiate()<class_PackedScene_method_instantiate>`\ ，則會阻止對場景狀態的編輯。
+If passed to :ref:`instantiate()<class_PackedScene_method_instantiate>`, blocks edits to the scene state.
 
 .. _class_PackedScene_constant_GEN_EDIT_STATE_INSTANCE:
 
@@ -150,9 +150,9 @@ enum **GenEditState**: :ref:`🔗<enum_PackedScene_GenEditState>`
 
 :ref:`GenEditState<enum_PackedScene_GenEditState>` **GEN_EDIT_STATE_INSTANCE** = ``1``
 
-如果傳遞給 :ref:`instantiate()<class_PackedScene_method_instantiate>`\ ，則會向本地場景提供本地場景資源。
+If passed to :ref:`instantiate()<class_PackedScene_method_instantiate>`, provides local scene resources to the local scene.
 
-\ **注意：**\ 僅在編輯器建構中可用。
+\ **Note:** Only available in editor builds.
 
 .. _class_PackedScene_constant_GEN_EDIT_STATE_MAIN:
 
@@ -160,9 +160,9 @@ enum **GenEditState**: :ref:`🔗<enum_PackedScene_GenEditState>`
 
 :ref:`GenEditState<enum_PackedScene_GenEditState>` **GEN_EDIT_STATE_MAIN** = ``2``
 
-如果傳遞給 :ref:`instantiate()<class_PackedScene_method_instantiate>`\ ，則會向本地場景提供本地場景資源。只有主場景應該接收主編輯狀態。
+If passed to :ref:`instantiate()<class_PackedScene_method_instantiate>`, provides local scene resources to the local scene. Only the main scene should receive the main edit state.
 
-\ **注意：**\ 僅在編輯器建構中可用。
+\ **Note:** Only available in editor builds.
 
 .. _class_PackedScene_constant_GEN_EDIT_STATE_MAIN_INHERITED:
 
@@ -170,9 +170,9 @@ enum **GenEditState**: :ref:`🔗<enum_PackedScene_GenEditState>`
 
 :ref:`GenEditState<enum_PackedScene_GenEditState>` **GEN_EDIT_STATE_MAIN_INHERITED** = ``3``
 
-與 :ref:`GEN_EDIT_STATE_MAIN<class_PackedScene_constant_GEN_EDIT_STATE_MAIN>` 類似，但適用於場景作為另一個場景的基底類別實例化的情況。
+It's similar to :ref:`GEN_EDIT_STATE_MAIN<class_PackedScene_constant_GEN_EDIT_STATE_MAIN>`, but for the case where the scene is being instantiated to be the base of another one.
 
-\ **注意：**\ 僅在編輯器建構中可用。
+\ **Note:** Only available in editor builds.
 
 .. rst-class:: classref-section-separator
 
@@ -180,8 +180,8 @@ enum **GenEditState**: :ref:`🔗<enum_PackedScene_GenEditState>`
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_PackedScene_method_can_instantiate:
 
@@ -189,7 +189,7 @@ enum **GenEditState**: :ref:`🔗<enum_PackedScene_GenEditState>`
 
 :ref:`bool<class_bool>` **can_instantiate**\ (\ ) |const| :ref:`🔗<class_PackedScene_method_can_instantiate>`
 
-如果場景檔有節點，返回 ``true``\ 。
+Returns ``true`` if the scene file has nodes.
 
 .. rst-class:: classref-item-separator
 
@@ -213,7 +213,7 @@ Returns the :ref:`SceneState<class_SceneState>` representing the scene file cont
 
 :ref:`Node<class_Node>` **instantiate**\ (\ edit_state\: :ref:`GenEditState<enum_PackedScene_GenEditState>` = 0\ ) |const| :ref:`🔗<class_PackedScene_method_instantiate>`
 
-產生實體該場景的節點架構。觸發子場景的產生實體。在根節點上觸發 :ref:`Node.NOTIFICATION_SCENE_INSTANTIATED<class_Node_constant_NOTIFICATION_SCENE_INSTANTIATED>` 通知。
+Instantiates the scene's node hierarchy. Triggers child scene instantiation(s). Triggers a :ref:`Node.NOTIFICATION_SCENE_INSTANTIATED<class_Node_constant_NOTIFICATION_SCENE_INSTANTIATED>` notification on the root node.
 
 .. rst-class:: classref-item-separator
 
@@ -227,12 +227,12 @@ Returns the :ref:`SceneState<class_SceneState>` representing the scene file cont
 
 Packs the ``path`` node, and all owned sub-nodes, into this **PackedScene**. Any existing data will be cleared. See :ref:`Node.owner<class_Node_property_owner>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

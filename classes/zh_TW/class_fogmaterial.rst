@@ -5,23 +5,23 @@
 FogMaterial
 ===========
 
-**繼承：** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-控制體積霧算繪方式的材質，分配到 :ref:`FogVolume<class_FogVolume>`\ 。
+A material that controls how volumetric fog is rendered, to be assigned to a :ref:`FogVolume<class_FogVolume>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-:ref:`FogVolume<class_FogVolume>` 使用的 :ref:`Material<class_Material>` 資源，用於繪製體積效果。
+A :ref:`Material<class_Material>` resource that can be used by :ref:`FogVolume<class_FogVolume>`\ s to draw volumetric effects.
 
-如果你需要更高階的效果，請使用自訂\ :doc:`霧著色器 <../tutorials/shaders/shader_reference/fog_shader>`\ 。
+If you need more advanced effects, use a custom :doc:`fog shader <../tutorials/shaders/shader_reference/fog_shader>`.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ FogMaterial
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_FogMaterial_property_albedo:
 
@@ -60,7 +60,7 @@ FogMaterial
 - |void| **set_albedo**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_albedo**\ (\ )
 
-:ref:`FogVolume<class_FogVolume>` 的單次散射 :ref:`Color<class_Color>`\ 。在內部，\ :ref:`albedo<class_FogMaterial_property_albedo>` 被轉換為單次散射，它與其他 :ref:`FogVolume<class_FogVolume>` 和 :ref:`Environment.volumetric_fog_albedo<class_Environment_property_volumetric_fog_albedo>` 進行相加混合。
+The single-scattering :ref:`Color<class_Color>` of the :ref:`FogVolume<class_FogVolume>`. Internally, :ref:`albedo<class_FogMaterial_property_albedo>` is converted into single-scattering, which is additively blended with other :ref:`FogVolume<class_FogVolume>`\ s and the :ref:`Environment.volumetric_fog_albedo<class_Environment_property_volumetric_fog_albedo>`.
 
 .. rst-class:: classref-item-separator
 
@@ -77,9 +77,9 @@ FogMaterial
 - |void| **set_density**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_density**\ (\ )
 
-:ref:`FogVolume<class_FogVolume>` 的密度。更密集的對象更不透明，但可能會受到看起來像條紋的欠取樣偽影的影響。負值可用於從其他 :ref:`FogVolume<class_FogVolume>` 或全域體積霧中減去霧。
+The density of the :ref:`FogVolume<class_FogVolume>`. Denser objects are more opaque, but may suffer from under-sampling artifacts that look like stripes. Negative values can be used to subtract fog from other :ref:`FogVolume<class_FogVolume>`\ s or global volumetric fog.
 
-\ **注意：**\ 由於精度有限，介於 ``-0.001`` 和 ``0.001``\ （不含）之間的 :ref:`density<class_FogMaterial_property_density>` 值相當於 ``0.0``\ 。這不適用於 :ref:`Environment.volumetric_fog_density<class_Environment_property_volumetric_fog_density>`\ 。
+\ **Note:** Due to limited precision, :ref:`density<class_FogMaterial_property_density>` values between ``-0.001`` and ``0.001`` (exclusive) act like ``0.0``. This does not apply to :ref:`Environment.volumetric_fog_density<class_Environment_property_volumetric_fog_density>`.
 
 .. rst-class:: classref-item-separator
 
@@ -96,7 +96,7 @@ FogMaterial
 - |void| **set_density_texture**\ (\ value\: :ref:`Texture3D<class_Texture3D>`\ )
 - :ref:`Texture3D<class_Texture3D>` **get_density_texture**\ (\ )
 
-用於縮放 :ref:`FogVolume<class_FogVolume>` 的 :ref:`density<class_FogMaterial_property_density>` 的 3D 紋理。這可用於改變 :ref:`FogVolume<class_FogVolume>` 內具有任何靜態模式的霧密度。對於動畫效果，請考慮使用一個自訂的\ :doc:`霧著色器 <../tutorials/shaders/shader_reference/fog_shader>`\ 。
+The 3D texture that is used to scale the :ref:`density<class_FogMaterial_property_density>` of the :ref:`FogVolume<class_FogVolume>`. This can be used to vary fog density within the :ref:`FogVolume<class_FogVolume>` with any kind of static pattern. For animated effects, consider using a custom :doc:`fog shader <../tutorials/shaders/shader_reference/fog_shader>`.
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +113,7 @@ FogMaterial
 - |void| **set_edge_fade**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_edge_fade**\ (\ )
 
-:ref:`FogVolume<class_FogVolume>` 邊緣的硬度。較高的值將導致較軟的邊緣，而較低的值將導致較硬的邊緣。
+The hardness of the edges of the :ref:`FogVolume<class_FogVolume>`. A higher value will result in softer edges, while a lower value will result in harder edges.
 
 .. rst-class:: classref-item-separator
 
@@ -130,7 +130,7 @@ FogMaterial
 - |void| **set_emission**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_emission**\ (\ )
 
-該 :ref:`FogVolume<class_FogVolume>` 發出的光的 :ref:`Color<class_Color>`\ 。發出的光不會在其他物體上投射光或陰影，但可用於獨立於光源調變 :ref:`FogVolume<class_FogVolume>` 的 :ref:`Color<class_Color>`\ 。
+The :ref:`Color<class_Color>` of the light emitted by the :ref:`FogVolume<class_FogVolume>`. Emitted light will not cast light or shadows on other objects, but can be useful for modulating the :ref:`Color<class_Color>` of the :ref:`FogVolume<class_FogVolume>` independently from light sources.
 
 .. rst-class:: classref-item-separator
 
@@ -147,14 +147,14 @@ FogMaterial
 - |void| **set_height_falloff**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_height_falloff**\ (\ )
 
-基於高度的霧，隨著世界空間中高度的增加而降低密度的速度。高的衰減將產生急劇的過渡，而低的衰減將產生更平滑的過渡。\ ``0.0`` 的值會產生均勻密度的霧。高度閾值由關聯的 :ref:`FogVolume<class_FogVolume>` 的高度決定。
+The rate by which the height-based fog decreases in density as height increases in world space. A high falloff will result in a sharp transition, while a low falloff will result in a smoother transition. A value of ``0.0`` results in uniform-density fog. The height threshold is determined by the height of the associated :ref:`FogVolume<class_FogVolume>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

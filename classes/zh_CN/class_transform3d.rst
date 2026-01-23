@@ -5,44 +5,44 @@
 Transform3D
 ===========
 
-代表 3D 变换的 3×4 矩阵。
+A 3×4 matrix representing a 3D transformation.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-**Transform3D** 即 3D 变换，是一种内置的 :ref:`Variant<class_Variant>` 类型，这种 3×4 矩阵代表的是 3D 空间中的变换。变换中包含了一个 :ref:`Basis<class_Basis>`\ ，表示的是旋转、缩放、倾斜。另外变换自身还提供了 :ref:`origin<class_Transform3D_property_origin>`\ ，这样就能够表示平移。
+The **Transform3D** built-in :ref:`Variant<class_Variant>` type is a 3×4 matrix representing a transformation in 3D space. It contains a :ref:`Basis<class_Basis>`, which on its own can represent rotation, scale, and shear. Additionally, combined with its own :ref:`origin<class_Transform3D_property_origin>`, the transform can also represent a translation.
 
-通用的介绍见教程\ :doc:`《矩阵和变换》 <../tutorials/math/matrices_and_transforms>`\ 。
+For a general introduction, see the :doc:`Matrices and transforms <../tutorials/math/matrices_and_transforms>` tutorial.
 
-\ **注意：**\ Godot 使用\ `右手坐标系 <https://zh.wikipedia.org/zh-cn/%E5%8F%B3%E6%89%8B%E5%AE%9A%E5%89%87>`__\ ，这是一种普遍标准。方向方面，\ :ref:`Camera3D<class_Camera3D>` 等内置类型的约定是 -Z 指向前方（+X 为右、+Y 为上、+Z 为后）。其他对象可能使用不同的方向约定。更多信息见教程\ `《3D 资产方向约定》 <../tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__\ 。
+\ **Note:** Godot uses a `right-handed coordinate system <https://en.wikipedia.org/wiki/Right-hand_rule>`__, which is a common standard. For directions, the convention for built-in types like :ref:`Camera3D<class_Camera3D>` is for -Z to point forward (+X is right, +Y is up, and +Z is back). Other objects may use different direction conventions. For more information, see the `3D asset direction conventions <../tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__ tutorial.
 
 .. note::
 
-	通过 C# 使用该 API 时会有显著不同，详见 :ref:`doc_c_sharp_differences`\ 。
+	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
-- :doc:`数学文档索引 <../tutorials/math/index>`
+- :doc:`Math documentation index <../tutorials/math/index>`
 
-- :doc:`矩阵与变换 <../tutorials/math/matrices_and_transforms>`
+- :doc:`Matrices and transforms <../tutorials/math/matrices_and_transforms>`
 
-- :doc:`使用 3D 变换 <../tutorials/3d/using_transforms>`
+- :doc:`Using 3D transforms <../tutorials/3d/using_transforms>`
 
-- `矩阵变换演示 <https://godotengine.org/asset-library/asset/2787>`__
+- `Matrix Transform Demo <https://godotengine.org/asset-library/asset/2787>`__
 
-- `3D 平台跳跃演示 <https://godotengine.org/asset-library/asset/2748>`__
+- `3D Platformer Demo <https://godotengine.org/asset-library/asset/2748>`__
 
-- `2.5D 游戏演示 <https://godotengine.org/asset-library/asset/2783>`__
+- `2.5D Game Demo <https://godotengine.org/asset-library/asset/2783>`__
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -55,8 +55,8 @@ Transform3D
 
 .. rst-class:: classref-reftable-group
 
-构造函数
---------
+Constructors
+------------
 
 .. table::
    :widths: auto
@@ -75,8 +75,8 @@ Transform3D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -111,8 +111,8 @@ Transform3D
 
 .. rst-class:: classref-reftable-group
 
-运算符
-------
+Operators
+---------
 
 .. table::
    :widths: auto
@@ -147,8 +147,8 @@ Transform3D
 
 .. rst-class:: classref-descriptions-group
 
-常量
-----
+Constants
+---------
 
 .. _class_Transform3D_constant_IDENTITY:
 
@@ -156,31 +156,31 @@ Transform3D
 
 **IDENTITY** = ``Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)`` :ref:`🔗<class_Transform3D_constant_IDENTITY>`
 
-单位 **Transform3D**\ 。这是一个没有平移和旋转的变换，缩放为 :ref:`Vector3.ONE<class_Vector3_constant_ONE>`\ 。\ :ref:`basis<class_Transform3D_property_basis>` 等于 :ref:`Basis.IDENTITY<class_Basis_constant_IDENTITY>`\ 。这意味着：
+The identity **Transform3D**. This is a transform with no translation, no rotation, and a scale of :ref:`Vector3.ONE<class_Vector3_constant_ONE>`. Its :ref:`basis<class_Transform3D_property_basis>` is equal to :ref:`Basis.IDENTITY<class_Basis_constant_IDENTITY>`. This also means that:
 
-- :ref:`Basis.x<class_Basis_property_x>` 指向右侧（\ :ref:`Vector3.RIGHT<class_Vector3_constant_RIGHT>`\ ）；
+- Its :ref:`Basis.x<class_Basis_property_x>` points right (:ref:`Vector3.RIGHT<class_Vector3_constant_RIGHT>`);
 
-- :ref:`Basis.y<class_Basis_property_y>` 指向上方（\ :ref:`Vector3.UP<class_Vector3_constant_UP>`\ ）；
+- Its :ref:`Basis.y<class_Basis_property_y>` points up (:ref:`Vector3.UP<class_Vector3_constant_UP>`);
 
-- :ref:`Basis.z<class_Basis_property_z>` 指向后方（\ :ref:`Vector3.BACK<class_Vector3_constant_BACK>`\ ）。
+- Its :ref:`Basis.z<class_Basis_property_z>` points back (:ref:`Vector3.BACK<class_Vector3_constant_BACK>`).
 
 ::
 
     var transform = Transform3D.IDENTITY
     var basis = transform.basis
-    print("| X | Y | Z | 原点")
+    print("| X | Y | Z | Origin")
     print("| %.f | %.f | %.f | %.f" % [basis.x.x, basis.y.x, basis.z.x, transform.origin.x])
     print("| %.f | %.f | %.f | %.f" % [basis.x.y, basis.y.y, basis.z.y, transform.origin.y])
     print("| %.f | %.f | %.f | %.f" % [basis.x.z, basis.y.z, basis.z.z, transform.origin.z])
-    # 输出：
-    # | X | Y | Z | 原点
+    # Prints:
+    # | X | Y | Z | Origin
     # | 1 | 0 | 0 | 0
     # | 0 | 1 | 0 | 0
     # | 0 | 0 | 1 | 0
 
-如果使用该常量变换（相乘）\ :ref:`Vector3<class_Vector3>`\ 、\ :ref:`AABB<class_AABB>`\ 、\ :ref:`Plane<class_Plane>`\ 、\ :ref:`PackedVector3Array<class_PackedVector3Array>` 或其他 **Transform3D**\ ，则不会发生变换。
+If a :ref:`Vector3<class_Vector3>`, an :ref:`AABB<class_AABB>`, a :ref:`Plane<class_Plane>`, a :ref:`PackedVector3Array<class_PackedVector3Array>`, or another **Transform3D** is transformed (multiplied) by this constant, no transformation occurs.
 
-\ **注意：**\ 在 GDScript 中，该常量与不带任何参数创建 :ref:`Transform3D<class_Transform3D_constructor_Transform3D>` 相同。使用该常量可以让你的代码更清晰，并与 C# 保持一致。
+\ **Note:** In GDScript, this constant is equivalent to creating a :ref:`Transform3D<class_Transform3D_constructor_Transform3D>` without any arguments. It can be used to make your code clearer, and for consistency with C#.
 
 .. _class_Transform3D_constant_FLIP_X:
 
@@ -188,7 +188,7 @@ Transform3D
 
 **FLIP_X** = ``Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)`` :ref:`🔗<class_Transform3D_constant_FLIP_X>`
 
-应用了垂直于 YZ 平面镜像操作的 **Transform3D**\ 。其 :ref:`basis<class_Transform3D_property_basis>` 相当于 :ref:`Basis.FLIP_X<class_Basis_constant_FLIP_X>`\ 。
+**Transform3D** with mirroring applied perpendicular to the YZ plane. Its :ref:`basis<class_Transform3D_property_basis>` is equal to :ref:`Basis.FLIP_X<class_Basis_constant_FLIP_X>`.
 
 .. _class_Transform3D_constant_FLIP_Y:
 
@@ -196,7 +196,7 @@ Transform3D
 
 **FLIP_Y** = ``Transform3D(1, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0)`` :ref:`🔗<class_Transform3D_constant_FLIP_Y>`
 
-应用了垂直于 XZ 平面镜像操作的 **Transform3D**\ 。其 :ref:`basis<class_Transform3D_property_basis>` 相当于 :ref:`Basis.FLIP_Y<class_Basis_constant_FLIP_Y>`\ 。
+**Transform3D** with mirroring applied perpendicular to the XZ plane. Its :ref:`basis<class_Transform3D_property_basis>` is equal to :ref:`Basis.FLIP_Y<class_Basis_constant_FLIP_Y>`.
 
 .. _class_Transform3D_constant_FLIP_Z:
 
@@ -204,7 +204,7 @@ Transform3D
 
 **FLIP_Z** = ``Transform3D(1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, 0)`` :ref:`🔗<class_Transform3D_constant_FLIP_Z>`
 
-应用了垂直于 XY 平面镜像操作的 **Transform3D**\ 。其 :ref:`basis<class_Transform3D_property_basis>` 相当于 :ref:`Basis.FLIP_Z<class_Basis_constant_FLIP_Z>`\ 。
+**Transform3D** with mirroring applied perpendicular to the XY plane. Its :ref:`basis<class_Transform3D_property_basis>` is equal to :ref:`Basis.FLIP_Z<class_Basis_constant_FLIP_Z>`.
 
 .. rst-class:: classref-section-separator
 
@@ -212,8 +212,8 @@ Transform3D
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_Transform3D_property_basis:
 
@@ -221,7 +221,7 @@ Transform3D
 
 :ref:`Basis<class_Basis>` **basis** = ``Basis(1, 0, 0, 0, 1, 0, 0, 0, 1)`` :ref:`🔗<class_Transform3D_property_basis>`
 
-该变换的 :ref:`Basis<class_Basis>`\ 。它由 3 个轴（\ :ref:`Basis.x<class_Basis_property_x>`\ 、\ :ref:`Basis.y<class_Basis_property_y>` 和 :ref:`Basis.z<class_Basis_property_z>`\ ）组成。它们共同代表变换的旋转、缩放和倾斜。
+The :ref:`Basis<class_Basis>` of this transform. It is composed by 3 axes (:ref:`Basis.x<class_Basis_property_x>`, :ref:`Basis.y<class_Basis_property_y>`, and :ref:`Basis.z<class_Basis_property_z>`). Together, these represent the transform's rotation, scale, and shear.
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ Transform3D
 
 :ref:`Vector3<class_Vector3>` **origin** = ``Vector3(0, 0, 0)`` :ref:`🔗<class_Transform3D_property_origin>`
 
-该变换的平移偏移量。在 3D 空间中，这可以被看作是位置。
+The translation offset of this transform. In 3D space, this can be seen as the position.
 
 .. rst-class:: classref-section-separator
 
@@ -241,8 +241,8 @@ Transform3D
 
 .. rst-class:: classref-descriptions-group
 
-构造函数说明
-------------
+Constructor Descriptions
+------------------------
 
 .. _class_Transform3D_constructor_Transform3D:
 
@@ -250,9 +250,9 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **Transform3D**\ (\ ) :ref:`🔗<class_Transform3D_constructor_Transform3D>`
 
-构造与 :ref:`IDENTITY<class_Transform3D_constant_IDENTITY>` 相同的 **Transform3D**\ 。
+Constructs a **Transform3D** identical to :ref:`IDENTITY<class_Transform3D_constant_IDENTITY>`.
 
-\ **注意：**\ 在 C# 中构造的 **Transform3D** 的 :ref:`origin<class_Transform3D_property_origin>` 和 :ref:`basis<class_Transform3D_property_basis>` 的所有分量都为 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。
+\ **Note:** In C#, this constructs a **Transform3D** with its :ref:`origin<class_Transform3D_property_origin>` and the components of its :ref:`basis<class_Transform3D_property_basis>` set to :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`.
 
 .. rst-class:: classref-item-separator
 
@@ -262,7 +262,7 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **Transform3D**\ (\ from\: :ref:`Transform3D<class_Transform3D>`\ )
 
-构造给定 **Transform3D** 的副本 **Transform3D**\ 。
+Constructs a **Transform3D** as a copy of the given **Transform3D**.
 
 .. rst-class:: classref-item-separator
 
@@ -272,7 +272,7 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **Transform3D**\ (\ basis\: :ref:`Basis<class_Basis>`, origin\: :ref:`Vector3<class_Vector3>`\ )
 
-根据 :ref:`Basis<class_Basis>` 和 :ref:`Vector3<class_Vector3>` 构造 **Transform3D**\ 。
+Constructs a **Transform3D** from a :ref:`Basis<class_Basis>` and :ref:`Vector3<class_Vector3>`.
 
 .. rst-class:: classref-item-separator
 
@@ -282,7 +282,7 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **Transform3D**\ (\ from\: :ref:`Projection<class_Projection>`\ )
 
-根据 :ref:`Projection<class_Projection>` 构造 **Transform3D**\ 。因为 **Transform3D** 是 3×4 的矩阵，而 :ref:`Projection<class_Projection>` 是 4×4 的矩阵，所以这个操作会削去投影矩阵的最后一行（新的变换中不包含 ``from.x.w``\ 、\ ``from.y.w``\ 、\ ``from.z.w``\ 、\ ``from.w.w``\ ）。
+Constructs a **Transform3D** from a :ref:`Projection<class_Projection>`. Because **Transform3D** is a 3×4 matrix and :ref:`Projection<class_Projection>` is a 4×4 matrix, this operation trims the last row of the projection matrix (``from.x.w``, ``from.y.w``, ``from.z.w``, and ``from.w.w`` are not included in the new transform).
 
 .. rst-class:: classref-item-separator
 
@@ -292,9 +292,9 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **Transform3D**\ (\ x_axis\: :ref:`Vector3<class_Vector3>`, y_axis\: :ref:`Vector3<class_Vector3>`, z_axis\: :ref:`Vector3<class_Vector3>`, origin\: :ref:`Vector3<class_Vector3>`\ )
 
-根据四个 :ref:`Vector3<class_Vector3>` 值（也叫矩阵列）构造 **Transform3D**\ 。
+Constructs a **Transform3D** from four :ref:`Vector3<class_Vector3>` values (also called matrix columns).
 
-前三个参数是 :ref:`basis<class_Transform3D_property_basis>` 的三个轴（\ :ref:`Basis.x<class_Basis_property_x>`\ 、\ :ref:`Basis.y<class_Basis_property_y>`\ 、\ :ref:`Basis.z<class_Basis_property_z>`\ ）。
+The first three arguments are the :ref:`basis<class_Transform3D_property_basis>`'s axes (:ref:`Basis.x<class_Basis_property_x>`, :ref:`Basis.y<class_Basis_property_y>`, and :ref:`Basis.z<class_Basis_property_z>`).
 
 .. rst-class:: classref-section-separator
 
@@ -302,8 +302,8 @@ Transform3D
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_Transform3D_method_affine_inverse:
 
@@ -311,9 +311,9 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **affine_inverse**\ (\ ) |const| :ref:`🔗<class_Transform3D_method_affine_inverse>`
 
-返回该变换的逆版本。与 :ref:`inverse()<class_Transform3D_method_inverse>` 不同，则该方法几乎适用于任何 :ref:`basis<class_Transform3D_property_basis>`\ ，包括非均匀的，但速度较慢。另见 :ref:`Basis.inverse()<class_Basis_method_inverse>`\ 。
+Returns the inverted version of this transform. Unlike :ref:`inverse()<class_Transform3D_method_inverse>`, this method works with almost any :ref:`basis<class_Transform3D_property_basis>`, including non-uniform ones, but is slower. See also :ref:`Basis.inverse()<class_Basis_method_inverse>`.
 
-\ **注意：**\ 为了使该方法正确返回，该变换的 :ref:`basis<class_Transform3D_property_basis>` 需要具有一个不完全是 ``0.0`` 的行列式（见 :ref:`Basis.determinant()<class_Basis_method_determinant>`\ ）。
+\ **Note:** For this method to return correctly, the transform's :ref:`basis<class_Transform3D_property_basis>` needs to have a determinant that is not exactly ``0.0`` (see :ref:`Basis.determinant()<class_Basis_method_determinant>`).
 
 .. rst-class:: classref-item-separator
 
@@ -325,9 +325,9 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **interpolate_with**\ (\ xform\: :ref:`Transform3D<class_Transform3D>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Transform3D_method_interpolate_with>`
 
-返回将该变换和 ``xform`` 按照给定的权重 ``weight`` 进行线性插值结果。
+Returns the result of the linear interpolation between this transform and ``xform`` by the given ``weight``.
 
-\ ``weight`` 应该在 ``0.0`` 到 ``1.0``\ （闭区间）的范围内。允许使用超出这个范围的值，表示进行\ *外插*\ 。
+The ``weight`` should be between ``0.0`` and ``1.0`` (inclusive). Values outside this range are allowed and can be used to perform *extrapolation* instead.
 
 .. rst-class:: classref-item-separator
 
@@ -339,9 +339,9 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **inverse**\ (\ ) |const| :ref:`🔗<class_Transform3D_method_inverse>`
 
-返回\ `该变换的逆版本 <https://zh.wikipedia.org/zh-hans/%E9%9D%9E%E5%A5%87%E5%BC%82%E6%96%B9%E9%98%B5>`__\ 。另见 :ref:`Basis.inverse()<class_Basis_method_inverse>`\ 。
+Returns the `inverted version of this transform <https://en.wikipedia.org/wiki/Invertible_matrix>`__. See also :ref:`Basis.inverse()<class_Basis_method_inverse>`.
 
-\ **注意：**\ 为了使该方法正确返回，该变换的基需要是\ *正交归一化的*\ （见 :ref:`orthonormalized()<class_Transform3D_method_orthonormalized>`\ ）。这意味着该基应该只代表旋转。如果不是，请改用 :ref:`affine_inverse()<class_Transform3D_method_affine_inverse>`\ 。
+\ **Note:** For this method to return correctly, the transform's :ref:`basis<class_Transform3D_property_basis>` needs to be *orthonormal* (see :ref:`orthonormalized()<class_Transform3D_method_orthonormalized>`). That means the basis should only represent a rotation. If it does not, use :ref:`affine_inverse()<class_Transform3D_method_affine_inverse>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -353,7 +353,7 @@ Transform3D
 
 :ref:`bool<class_bool>` **is_equal_approx**\ (\ xform\: :ref:`Transform3D<class_Transform3D>`\ ) |const| :ref:`🔗<class_Transform3D_method_is_equal_approx>`
 
-如果通过在每个分量上运行 :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>`\ ，该变换和 ``xform`` 近似相等，则返回 ``true``\ 。
+Returns ``true`` if this transform and ``xform`` are approximately equal, by running :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>` on each component.
 
 .. rst-class:: classref-item-separator
 
@@ -365,7 +365,7 @@ Transform3D
 
 :ref:`bool<class_bool>` **is_finite**\ (\ ) |const| :ref:`🔗<class_Transform3D_method_is_finite>`
 
-如果该变换是有限的，则返回 ``true``\ ，判断方法是在每个分量上调用 :ref:`@GlobalScope.is_finite()<class_@GlobalScope_method_is_finite>`\ 。
+Returns ``true`` if this transform is finite, by calling :ref:`@GlobalScope.is_finite()<class_@GlobalScope_method_is_finite>` on each component.
 
 .. rst-class:: classref-item-separator
 
@@ -377,11 +377,11 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **looking_at**\ (\ target\: :ref:`Vector3<class_Vector3>`, up\: :ref:`Vector3<class_Vector3>` = Vector3(0, 1, 0), use_model_front\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Transform3D_method_looking_at>`
 
-返回该变换的旋转副本，以便向前轴（-Z）指向 ``target`` 的位置。
+Returns a copy of this transform rotated so that the forward axis (-Z) points towards the ``target`` position.
 
-向上的轴（+Y）在保持与向前的轴垂直的前提下，尽可能接近 ``up`` 向量。最终的变换是标准正交变换。变换中原有的旋转、缩放、偏斜信息会被丢弃。\ ``target`` 和 ``up`` 向量不能为零，不能互相平行，使用全局/父级空间。
+The up axis (+Y) points as close to the ``up`` vector as possible while staying perpendicular to the forward axis. The resulting transform is orthonormalized. The existing rotation, scale, and skew information from the original transform is discarded. The ``target`` and ``up`` vectors cannot be zero, cannot be parallel to each other, and are defined in global/parent space.
 
-如果 ``use_model_front`` 为 ``true``\ ，则会将 +Z 轴（资产正面）作为向前的轴（此时 +X 为左），指向 ``target`` 的位置。默认情况下会将 -Z 轴（相机前方）作为向前的轴（此时 +X 为右）。
+If ``use_model_front`` is ``true``, the +Z axis (asset front) is treated as forward (implies +X is left) and points toward the ``target`` position. By default, the -Z axis (camera forward) is treated as forward (implies +X is right).
 
 .. rst-class:: classref-item-separator
 
@@ -393,7 +393,7 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **orthonormalized**\ (\ ) |const| :ref:`🔗<class_Transform3D_method_orthonormalized>`
 
-返回该变换的副本，其 :ref:`basis<class_Transform3D_property_basis>` 已正交归一化。正交归一化的基既是\ *正交的*\ （轴彼此垂直）又是\ *归一化的*\ （轴长度为 ``1.0``\ ），这也意味着它只能代表旋转。另见 :ref:`Basis.orthonormalized()<class_Basis_method_orthonormalized>`\ 。
+Returns a copy of this transform with its :ref:`basis<class_Transform3D_property_basis>` orthonormalized. An orthonormal basis is both *orthogonal* (the axes are perpendicular to each other) and *normalized* (the axes have a length of ``1.0``), which also means it can only represent a rotation. See also :ref:`Basis.orthonormalized()<class_Basis_method_orthonormalized>`.
 
 .. rst-class:: classref-item-separator
 
@@ -405,13 +405,13 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **rotated**\ (\ axis\: :ref:`Vector3<class_Vector3>`, angle\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Transform3D_method_rotated>`
 
-返回该变换围绕给定 ``axis`` 旋转给定 ``angle``\ （单位为弧度）的副本。
+Returns a copy of this transform rotated around the given ``axis`` by the given ``angle`` (in radians).
 
-\ ``axis`` 必须为归一化的向量（见 :ref:`Vector3.normalized()<class_Vector3_method_normalized>`\ ）。如果 ``angle`` 为正数，则基会围绕轴进行逆时针旋转。
+The ``axis`` must be a normalized vector (see :ref:`Vector3.normalized()<class_Vector3_method_normalized>`). If ``angle`` is positive, the basis is rotated counter-clockwise around the axis.
 
-这个方法的结果和让 ``X`` 变换与相应的旋转变换 ``R`` 从左侧相乘一致，即 ``R * X``\ ，但进行了优化。
+This method is an optimized version of multiplying the given transform ``X`` with a corresponding rotation transform ``R`` from the left, i.e., ``R * X``.
 
-可以视作在全局/父级坐标系中的变换。
+This can be seen as transforming with respect to the global/parent frame.
 
 .. rst-class:: classref-item-separator
 
@@ -423,13 +423,13 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **rotated_local**\ (\ axis\: :ref:`Vector3<class_Vector3>`, angle\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Transform3D_method_rotated_local>`
 
-返回该变换围绕给定 ``axis`` 旋转给定 ``angle``\ （单位为弧度）的副本。
+Returns a copy of this transform rotated around the given ``axis`` by the given ``angle`` (in radians).
 
-\ ``axis`` 必须为归一化的向量，使用变换的局部坐标系。例如，要围绕局部 X 轴旋转请使用 :ref:`Vector3.RIGHT<class_Vector3_constant_RIGHT>`\ 。
+The ``axis`` must be a normalized vector in the transform's local coordinate system. For example, to rotate around the local X-axis, use :ref:`Vector3.RIGHT<class_Vector3_constant_RIGHT>`.
 
-这个方法的结果和让 ``X`` 变换与相应的旋转变换 ``R`` 从右侧相乘一致，即 ``R * X``\ ，但进行了优化。
+This method is an optimized version of multiplying the given transform ``X`` with a corresponding rotation transform ``R`` from the right, i.e., ``X * R``.
 
-可以视作在局部坐标系中的变换。
+This can be seen as transforming with respect to the local frame.
 
 .. rst-class:: classref-item-separator
 
@@ -441,11 +441,11 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **scaled**\ (\ scale\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Transform3D_method_scaled>`
 
-返回该变换按给定的 ``scale`` 系数缩放的副本。
+Returns a copy of this transform scaled by the given ``scale`` factor.
 
-这个方法的结果和让 ``X`` 变换与相应的缩放变换 ``S`` 从左侧相乘一致，即 ``S * X``\ ，但进行了优化。
+This method is an optimized version of multiplying the given transform ``X`` with a corresponding scaling transform ``S`` from the left, i.e., ``S * X``.
 
-可以视作在全局/父级坐标系中的变换。
+This can be seen as transforming with respect to the global/parent frame.
 
 .. rst-class:: classref-item-separator
 
@@ -457,11 +457,11 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **scaled_local**\ (\ scale\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Transform3D_method_scaled_local>`
 
-返回该变换按给定的 ``scale`` 系数缩放的副本。
+Returns a copy of this transform scaled by the given ``scale`` factor.
 
-这个方法的结果和让 ``X`` 变换与相应的缩放变换 ``S`` 从右侧相乘一致，即 ``X * S``\ ，但进行了优化。
+This method is an optimized version of multiplying the given transform ``X`` with a corresponding scaling transform ``S`` from the right, i.e., ``X * S``.
 
-可以视作在局部坐标系中的变换。
+This can be seen as transforming with respect to the local frame.
 
 .. rst-class:: classref-item-separator
 
@@ -473,11 +473,11 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **translated**\ (\ offset\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Transform3D_method_translated>`
 
-返回该变换平移了给定 ``offset`` 的副本。
+Returns a copy of this transform translated by the given ``offset``.
 
-这个方法的结果和让 ``X`` 变换与相应的平移变换 ``T`` 从左侧相乘一致，即 ``T * X``\ ，但进行了优化。
+This method is an optimized version of multiplying the given transform ``X`` with a corresponding translation transform ``T`` from the left, i.e., ``T * X``.
 
-可以视作在全局/父级坐标系中的变换。
+This can be seen as transforming with respect to the global/parent frame.
 
 .. rst-class:: classref-item-separator
 
@@ -489,11 +489,11 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **translated_local**\ (\ offset\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Transform3D_method_translated_local>`
 
-返回该变化平移了给定 ``offset`` 的副本。
+Returns a copy of this transform translated by the given ``offset``.
 
-这个方法的结果和让 ``X`` 变换与相应的平移变换 ``T`` 从右侧相乘一致，即 ``X * T``\ ，但进行了优化。
+This method is an optimized version of multiplying the given transform ``X`` with a corresponding translation transform ``T`` from the right, i.e., ``X * T``.
 
-可以视作在局部坐标系中的变换。
+This can be seen as transforming with respect to the local frame.
 
 .. rst-class:: classref-section-separator
 
@@ -501,8 +501,8 @@ Transform3D
 
 .. rst-class:: classref-descriptions-group
 
-运算符说明
-----------
+Operator Descriptions
+---------------------
 
 .. _class_Transform3D_operator_neq_Transform3D:
 
@@ -510,9 +510,9 @@ Transform3D
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_Transform3D_operator_neq_Transform3D>`
 
-如果两个变换的分量不相等，则返回 ``true``\ 。
+Returns ``true`` if the components of both transforms are not equal.
 
-\ **注意：**\ 由于浮点精度误差，请考虑改用 :ref:`is_equal_approx()<class_Transform3D_method_is_equal_approx>`\ ，这样更可靠。
+\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Transform3D_method_is_equal_approx>` instead, which is more reliable.
 
 .. rst-class:: classref-item-separator
 
@@ -524,7 +524,7 @@ Transform3D
 
 :ref:`AABB<class_AABB>` **operator ***\ (\ right\: :ref:`AABB<class_AABB>`\ ) :ref:`🔗<class_Transform3D_operator_mul_AABB>`
 
-使用该变换矩阵对 :ref:`AABB<class_AABB>` 进行变换（相乘）。
+Transforms (multiplies) the :ref:`AABB<class_AABB>` by this transformation matrix.
 
 .. rst-class:: classref-item-separator
 
@@ -536,9 +536,9 @@ Transform3D
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **operator ***\ (\ right\: :ref:`PackedVector3Array<class_PackedVector3Array>`\ ) :ref:`🔗<class_Transform3D_operator_mul_PackedVector3Array>`
 
-由该变换矩阵变换（乘以）给定 :ref:`PackedVector3Array<class_PackedVector3Array>` 的每个 :ref:`Vector3<class_Vector3>` 元素。
+Transforms (multiplies) every :ref:`Vector3<class_Vector3>` element of the given :ref:`PackedVector3Array<class_PackedVector3Array>` by this transformation matrix.
 
-在较大的数组上，该操作比单独变换每个 :ref:`Vector3<class_Vector3>` 要快得多。
+On larger arrays, this operation is much faster than transforming each :ref:`Vector3<class_Vector3>` individually.
 
 .. rst-class:: classref-item-separator
 
@@ -550,7 +550,7 @@ Transform3D
 
 :ref:`Plane<class_Plane>` **operator ***\ (\ right\: :ref:`Plane<class_Plane>`\ ) :ref:`🔗<class_Transform3D_operator_mul_Plane>`
 
-使用该变换矩阵对 :ref:`Plane<class_Plane>` 进行变换（相乘）。
+Transforms (multiplies) the :ref:`Plane<class_Plane>` by this transformation matrix.
 
 .. rst-class:: classref-item-separator
 
@@ -562,17 +562,17 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **operator ***\ (\ right\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_Transform3D_operator_mul_Transform3D>`
 
-由 ``right`` 变换来变换（乘以）该变换。
+Transforms (multiplies) this transform by the ``right`` transform.
 
-这是父级和子级 :ref:`Node3D<class_Node3D>` 之间执行的操作。
+This is the operation performed between parent and child :ref:`Node3D<class_Node3D>`\ s.
 
-\ **注意：**\ 如果你只需要修改该变换的一个属性，请考虑改用以下方法之一：
+\ **Note:** If you need to only modify one attribute of this transform, consider using one of the following methods, instead:
 
-- 对于平移，请参阅 :ref:`translated()<class_Transform3D_method_translated>` 或 :ref:`translated_local()<class_Transform3D_method_translated_local>`\ 。
+- For translation, see :ref:`translated()<class_Transform3D_method_translated>` or :ref:`translated_local()<class_Transform3D_method_translated_local>`.
 
-- 对于旋转，请参阅 :ref:`rotated()<class_Transform3D_method_rotated>` 或 :ref:`rotated_local()<class_Transform3D_method_rotated_local>`\ 。
+- For rotation, see :ref:`rotated()<class_Transform3D_method_rotated>` or :ref:`rotated_local()<class_Transform3D_method_rotated_local>`.
 
-- 对于缩放，请参阅 :ref:`scaled()<class_Transform3D_method_scaled>` 或 :ref:`scaled_local()<class_Transform3D_method_scaled_local>`\ 。
+- For scale, see :ref:`scaled()<class_Transform3D_method_scaled>` or :ref:`scaled_local()<class_Transform3D_method_scaled_local>`.
 
 .. rst-class:: classref-item-separator
 
@@ -584,7 +584,7 @@ Transform3D
 
 :ref:`Vector3<class_Vector3>` **operator ***\ (\ right\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Transform3D_operator_mul_Vector3>`
 
-使用该变换矩阵对 :ref:`Vector3<class_Vector3>` 进行变换（相乘）。
+Transforms (multiplies) the :ref:`Vector3<class_Vector3>` by this transformation matrix.
 
 .. rst-class:: classref-item-separator
 
@@ -596,7 +596,7 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **operator ***\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Transform3D_operator_mul_float>`
 
-将 **Transform3D** 包括 :ref:`origin<class_Transform3D_property_origin>` 在内的所有分量乘以给定的 :ref:`float<class_float>`\ 。会均匀地影响该变换的缩放，对 :ref:`basis<class_Transform3D_property_basis>` 进行缩放。
+Multiplies all components of the **Transform3D** by the given :ref:`float<class_float>`, including the :ref:`origin<class_Transform3D_property_origin>`. This affects the transform's scale uniformly, scaling the :ref:`basis<class_Transform3D_property_basis>`.
 
 .. rst-class:: classref-item-separator
 
@@ -608,7 +608,7 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **operator ***\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Transform3D_operator_mul_int>`
 
-将 **Transform3D** 包括 :ref:`origin<class_Transform3D_property_origin>` 在内的所有分量乘以给定的 :ref:`int<class_int>`\ 。会均匀地影响该变换的缩放，对 :ref:`basis<class_Transform3D_property_basis>` 进行缩放。
+Multiplies all components of the **Transform3D** by the given :ref:`int<class_int>`, including the :ref:`origin<class_Transform3D_property_origin>`. This affects the transform's scale uniformly, scaling the :ref:`basis<class_Transform3D_property_basis>`.
 
 .. rst-class:: classref-item-separator
 
@@ -620,7 +620,7 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **operator /**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Transform3D_operator_div_float>`
 
-将 **Transform3D** 包括 :ref:`origin<class_Transform3D_property_origin>` 在内的所有分量除以给定的 :ref:`float<class_float>`\ 。会均匀地影响该变换的缩放，对 :ref:`basis<class_Transform3D_property_basis>` 进行缩放。
+Divides all components of the **Transform3D** by the given :ref:`float<class_float>`, including the :ref:`origin<class_Transform3D_property_origin>`. This affects the transform's scale uniformly, scaling the :ref:`basis<class_Transform3D_property_basis>`.
 
 .. rst-class:: classref-item-separator
 
@@ -632,7 +632,7 @@ Transform3D
 
 :ref:`Transform3D<class_Transform3D>` **operator /**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Transform3D_operator_div_int>`
 
-将 **Transform3D** 包括 :ref:`origin<class_Transform3D_property_origin>` 在内的所有分量除以给定的 :ref:`int<class_int>`\ 。会均匀地影响该变换的缩放，对 :ref:`basis<class_Transform3D_property_basis>` 进行缩放。
+Divides all components of the **Transform3D** by the given :ref:`int<class_int>`, including the :ref:`origin<class_Transform3D_property_origin>`. This affects the transform's scale uniformly, scaling the :ref:`basis<class_Transform3D_property_basis>`.
 
 .. rst-class:: classref-item-separator
 
@@ -644,16 +644,16 @@ Transform3D
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_Transform3D_operator_eq_Transform3D>`
 
-如果两个变换的分量完全相等，则返回 ``true``\ 。
+Returns ``true`` if the components of both transforms are exactly equal.
 
-\ **注意：**\ 由于浮点精度误差，请考虑改用 :ref:`is_equal_approx()<class_Transform3D_method_is_equal_approx>`\ ，这样更可靠。
+\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Transform3D_method_is_equal_approx>` instead, which is more reliable.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

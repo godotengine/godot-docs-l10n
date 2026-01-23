@@ -5,21 +5,21 @@
 MeshConvexDecompositionSettings
 ===============================
 
-**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用于 :ref:`Mesh<class_Mesh>` 凸分解操作的参数。
+Parameters to be used with a :ref:`Mesh<class_Mesh>` convex decomposition operation.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-用于 :ref:`Mesh<class_Mesh>` 凸分解操作的参数。
+Parameters to be used with a :ref:`Mesh<class_Mesh>` convex decomposition operation.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -58,8 +58,8 @@ MeshConvexDecompositionSettings
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_MeshConvexDecompositionSettings_Mode:
 
@@ -73,7 +73,7 @@ enum **Mode**: :ref:`🔗<enum_MeshConvexDecompositionSettings_Mode>`
 
 :ref:`Mode<enum_MeshConvexDecompositionSettings_Mode>` **CONVEX_DECOMPOSITION_MODE_VOXEL** = ``0``
 
-常量，表示基于体素的近似凸分解。
+Constant for voxel-based approximate convex decomposition.
 
 .. _class_MeshConvexDecompositionSettings_constant_CONVEX_DECOMPOSITION_MODE_TETRAHEDRON:
 
@@ -81,7 +81,7 @@ enum **Mode**: :ref:`🔗<enum_MeshConvexDecompositionSettings_Mode>`
 
 :ref:`Mode<enum_MeshConvexDecompositionSettings_Mode>` **CONVEX_DECOMPOSITION_MODE_TETRAHEDRON** = ``1``
 
-常量，表示基于四面体的近似凸分解。
+Constant for tetrahedron-based approximate convex decomposition.
 
 .. rst-class:: classref-section-separator
 
@@ -89,8 +89,8 @@ enum **Mode**: :ref:`🔗<enum_MeshConvexDecompositionSettings_Mode>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_MeshConvexDecompositionSettings_property_convex_hull_approximation:
 
@@ -103,7 +103,7 @@ enum **Mode**: :ref:`🔗<enum_MeshConvexDecompositionSettings_Mode>`
 - |void| **set_convex_hull_approximation**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_convex_hull_approximation**\ (\ )
 
-如果为 ``true``\ ，则在计算凸包时使用近似计算。
+If ``true``, uses approximation for computing convex hulls.
 
 .. rst-class:: classref-item-separator
 
@@ -120,7 +120,7 @@ enum **Mode**: :ref:`🔗<enum_MeshConvexDecompositionSettings_Mode>`
 - |void| **set_convex_hull_downsampling**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_convex_hull_downsampling**\ (\ )
 
-控制凸包生成过程的精度，这个过程发生在选择裁剪平面的阶段。范围从 ``1`` 到 ``16``\ 。
+Controls the precision of the convex-hull generation process during the clipping plane selection stage. Ranges from ``1`` to ``16``.
 
 .. rst-class:: classref-item-separator
 
@@ -137,7 +137,7 @@ enum **Mode**: :ref:`🔗<enum_MeshConvexDecompositionSettings_Mode>`
 - |void| **set_max_concavity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_concavity**\ (\ )
 
-最大凹度。范围从 ``0.0`` 到 ``1.0``\ 。
+Maximum concavity. Ranges from ``0.0`` to ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -154,7 +154,7 @@ enum **Mode**: :ref:`🔗<enum_MeshConvexDecompositionSettings_Mode>`
 - |void| **set_max_convex_hulls**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_convex_hulls**\ (\ )
 
-合并操作能够产生的最大凸包数。
+The maximum number of convex hulls to produce from the merge operation.
 
 .. rst-class:: classref-item-separator
 
@@ -171,7 +171,7 @@ enum **Mode**: :ref:`🔗<enum_MeshConvexDecompositionSettings_Mode>`
 - |void| **set_max_num_vertices_per_convex_hull**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_num_vertices_per_convex_hull**\ (\ )
 
-控制单个凸包的最大三角形数。范围从 ``4`` 到 ``1024`` 。
+Controls the maximum number of triangles per convex-hull. Ranges from ``4`` to ``1024``.
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ enum **Mode**: :ref:`🔗<enum_MeshConvexDecompositionSettings_Mode>`
 - |void| **set_min_volume_per_convex_hull**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_min_volume_per_convex_hull**\ (\ )
 
-控制生成凸包的自适应采样。范围从 ``0.0`` 到 ``0.01`` 。
+Controls the adaptive sampling of the generated convex-hulls. Ranges from ``0.0`` to ``0.01``.
 
 .. rst-class:: classref-item-separator
 
@@ -205,7 +205,7 @@ enum **Mode**: :ref:`🔗<enum_MeshConvexDecompositionSettings_Mode>`
 - |void| **set_mode**\ (\ value\: :ref:`Mode<enum_MeshConvexDecompositionSettings_Mode>`\ )
 - :ref:`Mode<enum_MeshConvexDecompositionSettings_Mode>` **get_mode**\ (\ )
 
-近似凸分解的模式。
+Mode for the approximate convex decomposition.
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +222,7 @@ enum **Mode**: :ref:`🔗<enum_MeshConvexDecompositionSettings_Mode>`
 - |void| **set_normalize_mesh**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_normalize_mesh**\ (\ )
 
-如果为 ``true``\ ，则会在应用凸分解前将网格归一化。
+If ``true``, normalizes the mesh before applying the convex decomposition.
 
 .. rst-class:: classref-item-separator
 
@@ -239,7 +239,7 @@ enum **Mode**: :ref:`🔗<enum_MeshConvexDecompositionSettings_Mode>`
 - |void| **set_plane_downsampling**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_plane_downsampling**\ (\ )
 
-控制搜索“最佳”裁剪平面的颗粒度。范围从 ``1`` 到 ``16``\ 。
+Controls the granularity of the search for the "best" clipping plane. Ranges from ``1`` to ``16``.
 
 .. rst-class:: classref-item-separator
 
@@ -256,7 +256,7 @@ enum **Mode**: :ref:`🔗<enum_MeshConvexDecompositionSettings_Mode>`
 - |void| **set_project_hull_vertices**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_project_hull_vertices**\ (\ )
 
-如果为 ``true``\ ，则项目会将凸包顶点输出到该源网格之上，提高结果的浮点数精度。
+If ``true``, projects output convex hull vertices onto the original source mesh to increase floating-point accuracy of the results.
 
 .. rst-class:: classref-item-separator
 
@@ -273,7 +273,7 @@ enum **Mode**: :ref:`🔗<enum_MeshConvexDecompositionSettings_Mode>`
 - |void| **set_resolution**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_resolution**\ (\ )
 
-体素化阶段生成的最大体素数量。
+Maximum number of voxels generated during the voxelization stage.
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ enum **Mode**: :ref:`🔗<enum_MeshConvexDecompositionSettings_Mode>`
 - |void| **set_revolution_axes_clipping_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_revolution_axes_clipping_bias**\ (\ )
 
-控制对沿回转轴裁剪的偏置。范围从 ``0.0`` 到 ``1.0`` 。
+Controls the bias toward clipping along revolution axes. Ranges from ``0.0`` to ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -307,14 +307,14 @@ enum **Mode**: :ref:`🔗<enum_MeshConvexDecompositionSettings_Mode>`
 - |void| **set_symmetry_planes_clipping_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_symmetry_planes_clipping_bias**\ (\ )
 
-控制对沿对称平面裁剪的偏置。范围从 ``0.0`` 到 ``1.0`` 。
+Controls the bias toward clipping along symmetry planes. Ranges from ``0.0`` to ``1.0``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,14 +5,14 @@
 Tween
 =====
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-通過腳本進行通用動畫的羽量級物件，使用 :ref:`Tweener<class_Tweener>`\ 。
+Lightweight object used for general-purpose animation via script, using :ref:`Tweener<class_Tweener>`\ s.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 Tweens are mostly useful for animations requiring a numerical property to be interpolated over a range of values. The name *tween* comes from *in-betweening*, an animation technique where you specify *keyframes* and the computer interpolates the frames that appear between them. Animating something with a **Tween** is called tweening.
 
@@ -142,8 +142,8 @@ Some :ref:`Tweener<class_Tweener>`\ s use transitions and eases. The first accep
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -208,8 +208,8 @@ Some :ref:`Tweener<class_Tweener>`\ s use transitions and eases. The first accep
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_Tween_signal_finished:
 
@@ -217,7 +217,7 @@ Some :ref:`Tweener<class_Tweener>`\ s use transitions and eases. The first accep
 
 **finished**\ (\ ) :ref:`🔗<class_Tween_signal_finished>`
 
-該 **Tween** 完成所有補間時發出。該 **Tween** 設為無限迴圈時不會發出（見 :ref:`set_loops()<class_Tween_method_set_loops>`\ ）。
+Emitted when the **Tween** has finished all tweening. Never emitted when the **Tween** is set to infinite looping (see :ref:`set_loops()<class_Tween_method_set_loops>`).
 
 .. rst-class:: classref-item-separator
 
@@ -229,7 +229,7 @@ Some :ref:`Tweener<class_Tweener>`\ s use transitions and eases. The first accep
 
 **loop_finished**\ (\ loop_count\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Tween_signal_loop_finished>`
 
-完成一次迴圈時觸發（見 :ref:`set_loops()<class_Tween_method_set_loops>`\ ），會提供該迴圈的索引號。這個訊號不會在最後一次迴圈後觸發，這種情況請使用 :ref:`finished<class_Tween_signal_finished>` 代替。
+Emitted when a full loop is complete (see :ref:`set_loops()<class_Tween_method_set_loops>`), providing the loop index. This signal is not emitted after the final loop, use :ref:`finished<class_Tween_signal_finished>` instead for this case.
 
 .. rst-class:: classref-item-separator
 
@@ -241,7 +241,7 @@ Some :ref:`Tweener<class_Tweener>`\ s use transitions and eases. The first accep
 
 **step_finished**\ (\ idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Tween_signal_step_finished>`
 
-完成該 **Tween** 的一步完成後觸發，會提供這一步的索引號。一步指的是單個 :ref:`Tweener<class_Tweener>` 或一組並存執行的 :ref:`Tweener<class_Tweener>`\ 。
+Emitted when one step of the **Tween** is complete, providing the step index. One step is either a single :ref:`Tweener<class_Tweener>` or a group of :ref:`Tweener<class_Tweener>`\ s running in parallel.
 
 .. rst-class:: classref-section-separator
 
@@ -249,8 +249,8 @@ Some :ref:`Tweener<class_Tweener>`\ s use transitions and eases. The first accep
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_Tween_TweenProcessMode:
 
@@ -264,7 +264,7 @@ enum **TweenProcessMode**: :ref:`🔗<enum_Tween_TweenProcessMode>`
 
 :ref:`TweenProcessMode<enum_Tween_TweenProcessMode>` **TWEEN_PROCESS_PHYSICS** = ``0``
 
-該 **Tween** 在每個物理影格之後進行更新（見 :ref:`Node._physics_process()<class_Node_private_method__physics_process>`\ ）。
+The **Tween** updates after each physics frame (see :ref:`Node._physics_process()<class_Node_private_method__physics_process>`).
 
 .. _class_Tween_constant_TWEEN_PROCESS_IDLE:
 
@@ -272,7 +272,7 @@ enum **TweenProcessMode**: :ref:`🔗<enum_Tween_TweenProcessMode>`
 
 :ref:`TweenProcessMode<enum_Tween_TweenProcessMode>` **TWEEN_PROCESS_IDLE** = ``1``
 
-該 **Tween** 在每個處理影格之後進行更新（見 :ref:`Node._process()<class_Node_private_method__process>`\ ）。
+The **Tween** updates after each process frame (see :ref:`Node._process()<class_Node_private_method__process>`).
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ enum **TweenPauseMode**: :ref:`🔗<enum_Tween_TweenPauseMode>`
 
 :ref:`TweenPauseMode<enum_Tween_TweenPauseMode>` **TWEEN_PAUSE_BOUND** = ``0``
 
-如果該 **Tween** 綁定了節點，它將在該節點可以處理時進行處理（見 :ref:`Node.process_mode<class_Node_property_process_mode>`\ ）。否則與 :ref:`TWEEN_PAUSE_STOP<class_Tween_constant_TWEEN_PAUSE_STOP>` 相同。
+If the **Tween** has a bound node, it will process when that node can process (see :ref:`Node.process_mode<class_Node_property_process_mode>`). Otherwise it's the same as :ref:`TWEEN_PAUSE_STOP<class_Tween_constant_TWEEN_PAUSE_STOP>`.
 
 .. _class_Tween_constant_TWEEN_PAUSE_STOP:
 
@@ -298,7 +298,7 @@ enum **TweenPauseMode**: :ref:`🔗<enum_Tween_TweenPauseMode>`
 
 :ref:`TweenPauseMode<enum_Tween_TweenPauseMode>` **TWEEN_PAUSE_STOP** = ``1``
 
-如果 :ref:`SceneTree<class_SceneTree>` 被暫停，則該 **Tween** 也會暫停。
+If :ref:`SceneTree<class_SceneTree>` is paused, the **Tween** will also pause.
 
 .. _class_Tween_constant_TWEEN_PAUSE_PROCESS:
 
@@ -306,7 +306,7 @@ enum **TweenPauseMode**: :ref:`🔗<enum_Tween_TweenPauseMode>`
 
 :ref:`TweenPauseMode<enum_Tween_TweenPauseMode>` **TWEEN_PAUSE_PROCESS** = ``2``
 
-無論 :ref:`SceneTree<class_SceneTree>` 是否被暫停，該 **Tween** 都會處理。
+The **Tween** will process regardless of whether :ref:`SceneTree<class_SceneTree>` is paused.
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +324,7 @@ enum **TransitionType**: :ref:`🔗<enum_Tween_TransitionType>`
 
 :ref:`TransitionType<enum_Tween_TransitionType>` **TRANS_LINEAR** = ``0``
 
-動畫是線性插值的。
+The animation is interpolated linearly.
 
 .. _class_Tween_constant_TRANS_SINE:
 
@@ -332,7 +332,7 @@ enum **TransitionType**: :ref:`🔗<enum_Tween_TransitionType>`
 
 :ref:`TransitionType<enum_Tween_TransitionType>` **TRANS_SINE** = ``1``
 
-動畫使用正弦函式進行插值。
+The animation is interpolated using a sine function.
 
 .. _class_Tween_constant_TRANS_QUINT:
 
@@ -340,7 +340,7 @@ enum **TransitionType**: :ref:`🔗<enum_Tween_TransitionType>`
 
 :ref:`TransitionType<enum_Tween_TransitionType>` **TRANS_QUINT** = ``2``
 
-動畫使用五次（5 次方）函式進行插值。
+The animation is interpolated with a quintic (to the power of 5) function.
 
 .. _class_Tween_constant_TRANS_QUART:
 
@@ -348,7 +348,7 @@ enum **TransitionType**: :ref:`🔗<enum_Tween_TransitionType>`
 
 :ref:`TransitionType<enum_Tween_TransitionType>` **TRANS_QUART** = ``3``
 
-動畫使用四次（4 次方）函式進行插值。
+The animation is interpolated with a quartic (to the power of 4) function.
 
 .. _class_Tween_constant_TRANS_QUAD:
 
@@ -356,7 +356,7 @@ enum **TransitionType**: :ref:`🔗<enum_Tween_TransitionType>`
 
 :ref:`TransitionType<enum_Tween_TransitionType>` **TRANS_QUAD** = ``4``
 
-動畫使用二次（2 次方）函式進行插值。
+The animation is interpolated with a quadratic (to the power of 2) function.
 
 .. _class_Tween_constant_TRANS_EXPO:
 
@@ -364,7 +364,7 @@ enum **TransitionType**: :ref:`🔗<enum_Tween_TransitionType>`
 
 :ref:`TransitionType<enum_Tween_TransitionType>` **TRANS_EXPO** = ``5``
 
-動畫使用指數（x 次方）函式進行插值。
+The animation is interpolated with an exponential (to the power of x) function.
 
 .. _class_Tween_constant_TRANS_ELASTIC:
 
@@ -372,7 +372,7 @@ enum **TransitionType**: :ref:`🔗<enum_Tween_TransitionType>`
 
 :ref:`TransitionType<enum_Tween_TransitionType>` **TRANS_ELASTIC** = ``6``
 
-動畫彈性插值，在邊緣擺動。
+The animation is interpolated with elasticity, wiggling around the edges.
 
 .. _class_Tween_constant_TRANS_CUBIC:
 
@@ -380,7 +380,7 @@ enum **TransitionType**: :ref:`🔗<enum_Tween_TransitionType>`
 
 :ref:`TransitionType<enum_Tween_TransitionType>` **TRANS_CUBIC** = ``7``
 
-動畫使用三次（3 次方）函式進行插值。
+The animation is interpolated with a cubic (to the power of 3) function.
 
 .. _class_Tween_constant_TRANS_CIRC:
 
@@ -388,7 +388,7 @@ enum **TransitionType**: :ref:`🔗<enum_Tween_TransitionType>`
 
 :ref:`TransitionType<enum_Tween_TransitionType>` **TRANS_CIRC** = ``8``
 
-動畫使用平方根的函式進行插值。
+The animation is interpolated with a function using square roots.
 
 .. _class_Tween_constant_TRANS_BOUNCE:
 
@@ -396,7 +396,7 @@ enum **TransitionType**: :ref:`🔗<enum_Tween_TransitionType>`
 
 :ref:`TransitionType<enum_Tween_TransitionType>` **TRANS_BOUNCE** = ``9``
 
-動畫通過在末尾彈跳插值。
+The animation is interpolated by bouncing at the end.
 
 .. _class_Tween_constant_TRANS_BACK:
 
@@ -404,7 +404,7 @@ enum **TransitionType**: :ref:`🔗<enum_Tween_TransitionType>`
 
 :ref:`TransitionType<enum_Tween_TransitionType>` **TRANS_BACK** = ``10``
 
-動畫在末端重播插值。
+The animation is interpolated backing out at ends.
 
 .. _class_Tween_constant_TRANS_SPRING:
 
@@ -412,7 +412,7 @@ enum **TransitionType**: :ref:`🔗<enum_Tween_TransitionType>`
 
 :ref:`TransitionType<enum_Tween_TransitionType>` **TRANS_SPRING** = ``11``
 
-動畫像朝著末尾的彈簧一樣插值。
+The animation is interpolated like a spring towards the end.
 
 .. rst-class:: classref-item-separator
 
@@ -430,7 +430,7 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 :ref:`EaseType<enum_Tween_EaseType>` **EASE_IN** = ``0``
 
-插值開始緩慢，並加速接近結束。
+The interpolation starts slowly and speeds up towards the end.
 
 .. _class_Tween_constant_EASE_OUT:
 
@@ -438,7 +438,7 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 :ref:`EaseType<enum_Tween_EaseType>` **EASE_OUT** = ``1``
 
-插值開始快速，接近結束時減慢。
+The interpolation starts quickly and slows down towards the end.
 
 .. _class_Tween_constant_EASE_IN_OUT:
 
@@ -446,7 +446,7 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 :ref:`EaseType<enum_Tween_EaseType>` **EASE_IN_OUT** = ``2``
 
-:ref:`EASE_IN<class_Tween_constant_EASE_IN>` 和 :ref:`EASE_OUT<class_Tween_constant_EASE_OUT>` 的組合。兩端的插值最慢。
+A combination of :ref:`EASE_IN<class_Tween_constant_EASE_IN>` and :ref:`EASE_OUT<class_Tween_constant_EASE_OUT>`. The interpolation is slowest at both ends.
 
 .. _class_Tween_constant_EASE_OUT_IN:
 
@@ -454,7 +454,7 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 :ref:`EaseType<enum_Tween_EaseType>` **EASE_OUT_IN** = ``3``
 
-:ref:`EASE_IN<class_Tween_constant_EASE_IN>` 和 :ref:`EASE_OUT<class_Tween_constant_EASE_OUT>` 的組合。兩端的插值最快。
+A combination of :ref:`EASE_IN<class_Tween_constant_EASE_IN>` and :ref:`EASE_OUT<class_Tween_constant_EASE_OUT>`. The interpolation is fastest at both ends.
 
 .. rst-class:: classref-section-separator
 
@@ -462,8 +462,8 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_Tween_method_bind_node:
 
@@ -471,9 +471,9 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 :ref:`Tween<class_Tween>` **bind_node**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_Tween_method_bind_node>`
 
-將這個 **Tween** 綁定到給定的 ``node`` 上。\ **Tween** 是由 :ref:`SceneTree<class_SceneTree>` 直接處理的，所以不依賴被動畫的節點運作。將該 **Tween** 綁定到某個 :ref:`Node<class_Node>` 後，該對象不在樹中時該 **Tween** 就會暫停動畫，綁定對象被釋放時該 **Tween** 會被自動銷毀。另外，\ :ref:`TWEEN_PAUSE_BOUND<class_Tween_constant_TWEEN_PAUSE_BOUND>` 會讓暫停行為依賴於綁定的節點。
+Binds this **Tween** with the given ``node``. **Tween**\ s are processed directly by the :ref:`SceneTree<class_SceneTree>`, so they run independently of the animated nodes. When you bind a :ref:`Node<class_Node>` with the **Tween**, the **Tween** will halt the animation when the object is not inside tree and the **Tween** will be automatically killed when the bound object is freed. Also :ref:`TWEEN_PAUSE_BOUND<class_Tween_constant_TWEEN_PAUSE_BOUND>` will make the pausing behavior dependent on the bound node.
 
-使用 :ref:`Node.create_tween()<class_Node_method_create_tween>` 來建立並綁定 **Tween** 更簡單。
+For a shorter way to create and bind a **Tween**, you can use :ref:`Node.create_tween()<class_Node_method_create_tween>`.
 
 .. rst-class:: classref-item-separator
 
@@ -485,7 +485,7 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 :ref:`Tween<class_Tween>` **chain**\ (\ ) :ref:`🔗<class_Tween_method_chain>`
 
-用於在使用 ``true`` 呼叫 :ref:`set_parallel()<class_Tween_method_set_parallel>` 後，將兩個 :ref:`Tweener<class_Tweener>` 串聯。
+Used to chain two :ref:`Tweener<class_Tweener>`\ s after :ref:`set_parallel()<class_Tween_method_set_parallel>` is called with ``true``.
 
 
 .. tabs::
@@ -494,15 +494,15 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
     var tween = create_tween().set_parallel(true)
     tween.tween_property(...)
-    tween.tween_property(...) # 會和上一條並存執行。
-    tween.chain().tween_property(...) # 會在前兩條完成後執行。
+    tween.tween_property(...) # Will run parallelly with above.
+    tween.chain().tween_property(...) # Will run after two above are finished.
 
  .. code-tab:: csharp
 
     Tween tween = CreateTween().SetParallel(true);
     tween.TweenProperty(...);
-    tween.TweenProperty(...); // 會和上一條並存執行。
-    tween.Chain().TweenProperty(...); // 會在前兩條完成後執行。
+    tween.TweenProperty(...); // Will run parallelly with above.
+    tween.Chain().TweenProperty(...); // Will run after two above are finished.
 
 
 
@@ -516,9 +516,9 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 :ref:`bool<class_bool>` **custom_step**\ (\ delta\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Tween_method_custom_step>`
 
-使用給定的差異量秒數 ``delta`` 處理該 **Tween**\ 。最常見的用法是在該 **Tween** 暫停時對其進行手動控制。也可用於立即停止該 **Tween** 的動畫，將 ``delta`` 設得比完整長度更大即可。
+Processes the **Tween** by the given ``delta`` value, in seconds. This is mostly useful for manual control when the **Tween** is paused. It can also be used to end the **Tween** animation immediately, by setting ``delta`` longer than the whole duration of the **Tween** animation.
 
-如果該 **Tween** 仍然有未完成的 :ref:`Tweener<class_Tweener>`\ ，則返回 ``true``\ 。
+Returns ``true`` if the **Tween** still has :ref:`Tweener<class_Tweener>`\ s that haven't finished.
 
 .. rst-class:: classref-item-separator
 
@@ -530,7 +530,7 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 :ref:`int<class_int>` **get_loops_left**\ (\ ) |const| :ref:`🔗<class_Tween_method_get_loops_left>`
 
-返回該 **Tween** 所剩的迴圈數（見 :ref:`set_loops()<class_Tween_method_set_loops>`\ ）。返回 ``-1`` 表示 **Tween** 無限迴圈，返回 ``0`` 表示 **Tween** 已結束。
+Returns the number of remaining loops for this **Tween** (see :ref:`set_loops()<class_Tween_method_set_loops>`). A return value of ``-1`` indicates an infinitely looping **Tween**, and a return value of ``0`` indicates that the **Tween** has already finished.
 
 .. rst-class:: classref-item-separator
 
@@ -542,9 +542,9 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 :ref:`float<class_float>` **get_total_elapsed_time**\ (\ ) |const| :ref:`🔗<class_Tween_method_get_total_elapsed_time>`
 
-返回該 **Tween** 已進行動畫的總時長（即自開始以來經過的時間，不計算暫停等時間），單位為秒。時長會受到 :ref:`set_speed_scale()<class_Tween_method_set_speed_scale>` 影響，\ :ref:`stop()<class_Tween_method_stop>` 會將其重設為 ``0``\ 。
+Returns the total time in seconds the **Tween** has been animating (i.e. the time since it started, not counting pauses etc.). The time is affected by :ref:`set_speed_scale()<class_Tween_method_set_speed_scale>`, and :ref:`stop()<class_Tween_method_stop>` will reset it to ``0``.
 
-\ **注意：**\ 由於時長是由影格的差異量時間累計而來的，該 **Tween** 完成動畫後所返回的時長會比 **Tween** 的實際時長略大。
+\ **Note:** As it results from accumulating frame deltas, the time returned after the **Tween** has finished animating will be slightly greater than the actual **Tween** duration.
 
 .. rst-class:: classref-item-separator
 
@@ -556,17 +556,17 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 :ref:`Variant<class_Variant>` **interpolate_value**\ (\ initial_value\: :ref:`Variant<class_Variant>`, delta_value\: :ref:`Variant<class_Variant>`, elapsed_time\: :ref:`float<class_float>`, duration\: :ref:`float<class_float>`, trans_type\: :ref:`TransitionType<enum_Tween_TransitionType>`, ease_type\: :ref:`EaseType<enum_Tween_EaseType>`\ ) |static| :ref:`🔗<class_Tween_method_interpolate_value>`
 
-不想使用 **Tween** 進行動畫時，可以使用這個方法進行手動插值。與 :ref:`@GlobalScope.lerp()<class_@GlobalScope_method_lerp>` 類似，但支援自訂過渡和緩動。
+This method can be used for manual interpolation of a value, when you don't want **Tween** to do animating for you. It's similar to :ref:`@GlobalScope.lerp()<class_@GlobalScope_method_lerp>`, but with support for custom transition and easing.
 
-\ ``initial_value`` 為插值的起始值。
+\ ``initial_value`` is the starting value of the interpolation.
 
-\ ``delta_value`` 為插值的變化值，即等於 ``final_value - initial_value``\ 。
+\ ``delta_value`` is the change of the value in the interpolation, i.e. it's equal to ``final_value - initial_value``.
 
-\ ``elapsed_time`` 為插值開始後所經過的秒數，用於控制插值的位置。例如，等於 ``duration`` 的一半時，插值後的值位於初始值和最終值的一半。這個值也可以比 ``duration`` 大或者比 0 小，此時會進行外插。
+\ ``elapsed_time`` is the time in seconds that passed after the interpolation started and it's used to control the position of the interpolation. E.g. when it's equal to half of the ``duration``, the interpolated value will be halfway between initial and final values. This value can also be greater than ``duration`` or lower than 0, which will extrapolate the value.
 
-\ ``duration`` 為插值的總時長。
+\ ``duration`` is the total time of the interpolation.
 
-\ **注意：**\ 如果 ``duration`` 等於 ``0``\ ，那麼無論提供的 ``elapsed_time`` 為多少，該方法返回的始終是最終值。
+\ **Note:** If ``duration`` is equal to ``0``, the method will always return the final value, regardless of ``elapsed_time`` provided.
 
 .. rst-class:: classref-item-separator
 
@@ -578,7 +578,7 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 :ref:`bool<class_bool>` **is_running**\ (\ ) :ref:`🔗<class_Tween_method_is_running>`
 
-返回該 **Tween** 目前是否正在執行，即未暫停且未完成。
+Returns whether the **Tween** is currently running, i.e. it wasn't paused and it's not finished.
 
 .. rst-class:: classref-item-separator
 
@@ -590,7 +590,7 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 :ref:`bool<class_bool>` **is_valid**\ (\ ) :ref:`🔗<class_Tween_method_is_valid>`
 
-返回該 **Tween** 是否有效。有效的 **Tween** 是由場景樹包含的 **Tween**\ （即 :ref:`SceneTree.get_processed_tweens()<class_SceneTree_method_get_processed_tweens>` 返回的陣列中包含這個 **Tween**\ ）。\ **Tween** 失效的情況有：補間完成、被銷毀、使用 ``Tween.new()`` 建立。無效的 **Tween** 不能追加 :ref:`Tweener<class_Tweener>`\ 。
+Returns whether the **Tween** is valid. A valid **Tween** is a **Tween** contained by the scene tree (i.e. the array from :ref:`SceneTree.get_processed_tweens()<class_SceneTree_method_get_processed_tweens>` will contain this **Tween**). A **Tween** might become invalid when it has finished tweening, is killed, or when created with ``Tween.new()``. Invalid **Tween**\ s can't have :ref:`Tweener<class_Tweener>`\ s appended.
 
 .. rst-class:: classref-item-separator
 
@@ -602,7 +602,7 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 |void| **kill**\ (\ ) :ref:`🔗<class_Tween_method_kill>`
 
-中止所有補間操作，並使該 **Tween** 無效。
+Aborts all tweening operations and invalidates the **Tween**.
 
 .. rst-class:: classref-item-separator
 
@@ -649,9 +649,9 @@ You can make the **Tween** parallel by default by using :ref:`set_parallel()<cla
 
 |void| **pause**\ (\ ) :ref:`🔗<class_Tween_method_pause>`
 
-暫停補間。可使用 :ref:`play()<class_Tween_method_play>` 恢復動畫。
+Pauses the tweening. The animation can be resumed by using :ref:`play()<class_Tween_method_play>`.
 
-\ **注意：**\ 如果一個Tween被暫停並且沒有綁定到任何節點，它將無限期地存在，直到手動啟動或失效。如果遺失了對此類 Tween 的引用，可以使用 :ref:`SceneTree.get_processed_tweens()<class_SceneTree_method_get_processed_tweens>` 檢索它。
+\ **Note:** If a Tween is paused and not bound to any node, it will exist indefinitely until manually started or invalidated. If you lose a reference to such Tween, you can retrieve it using :ref:`SceneTree.get_processed_tweens()<class_SceneTree_method_get_processed_tweens>`.
 
 .. rst-class:: classref-item-separator
 
@@ -663,7 +663,7 @@ You can make the **Tween** parallel by default by using :ref:`set_parallel()<cla
 
 |void| **play**\ (\ ) :ref:`🔗<class_Tween_method_play>`
 
-恢復已暫停或已停止的 **Tween**\ 。
+Resumes a paused or stopped **Tween**.
 
 .. rst-class:: classref-item-separator
 
@@ -708,11 +708,11 @@ If ``ignore`` is ``true``, the tween will ignore :ref:`Engine.time_scale<class_E
 
 :ref:`Tween<class_Tween>` **set_loops**\ (\ loops\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_Tween_method_set_loops>`
 
-這只該補間序列的重複次數，即 ``set_loops(2)`` 會讓動畫執行兩次。
+Sets the number of times the tweening sequence will be repeated, i.e. ``set_loops(2)`` will run the animation twice.
 
-呼叫這個方法時如果不帶參數，那麼該 **Tween** 會無限執行，直到被 :ref:`kill()<class_Tween_method_kill>` 銷毀、該 **Tween** 綁定的節點被釋放、或者所有進行動畫的物件都被釋放（無法再進行任何動畫）。
+Calling this method without arguments will make the **Tween** run infinitely, until either it is killed with :ref:`kill()<class_Tween_method_kill>`, the **Tween**'s bound node is freed, or all the animated objects have been freed (which makes further animation impossible).
 
-\ **警告：**\ 使用無限迴圈時請一定要加入一些時長/延遲。為了防止遊戲凍結，0 時長的迴圈動畫（例如單個不帶延遲的 :ref:`CallbackTweener<class_CallbackTweener>`\ ）會在迴圈若干次後停止，造成出乎預料的結果。如果 **Tween** 的生命期依賴於某個節點，請一定使用 :ref:`bind_node()<class_Tween_method_bind_node>`\ 。
+\ **Warning:** Make sure to always add some duration/delay when using infinite loops. To prevent the game freezing, 0-duration looped animations (e.g. a single :ref:`CallbackTweener<class_CallbackTweener>` with no delay) are stopped after a small number of loops, which may produce unexpected results. If a **Tween**'s lifetime depends on some node, always use :ref:`bind_node()<class_Tween_method_bind_node>`.
 
 .. rst-class:: classref-item-separator
 
@@ -758,9 +758,9 @@ Default value is :ref:`TWEEN_PAUSE_BOUND<class_Tween_constant_TWEEN_PAUSE_BOUND>
 
 :ref:`Tween<class_Tween>` **set_process_mode**\ (\ mode\: :ref:`TweenProcessMode<enum_Tween_TweenProcessMode>`\ ) :ref:`🔗<class_Tween_method_set_process_mode>`
 
-決定該 **Tween** 應當在處理影格（見 :ref:`Node._process()<class_Node_private_method__process>`\ ）還是物理影格（見 :ref:`Node._physics_process()<class_Node_private_method__physics_process>`\ ）執行。
+Determines whether the **Tween** should run after process frames (see :ref:`Node._process()<class_Node_private_method__process>`) or physics frames (see :ref:`Node._physics_process()<class_Node_private_method__physics_process>`).
 
-預設值為 :ref:`TWEEN_PROCESS_IDLE<class_Tween_constant_TWEEN_PROCESS_IDLE>`\ 。
+Default value is :ref:`TWEEN_PROCESS_IDLE<class_Tween_constant_TWEEN_PROCESS_IDLE>`.
 
 .. rst-class:: classref-item-separator
 
@@ -772,7 +772,7 @@ Default value is :ref:`TWEEN_PAUSE_BOUND<class_Tween_constant_TWEEN_PAUSE_BOUND>
 
 :ref:`Tween<class_Tween>` **set_speed_scale**\ (\ speed\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Tween_method_set_speed_scale>`
 
-補間的速度縮放。影響所有 :ref:`Tweener<class_Tweener>` 及其延遲。
+Scales the speed of tweening. This affects all :ref:`Tweener<class_Tweener>`\ s and their delays.
 
 .. rst-class:: classref-item-separator
 
@@ -1075,12 +1075,12 @@ Creates and appends a :ref:`SubtweenTweener<class_SubtweenTweener>`. This method
 
 \ **Note:** The pause and process modes set by :ref:`set_pause_mode()<class_Tween_method_set_pause_mode>` and :ref:`set_process_mode()<class_Tween_method_set_process_mode>` on ``subtween`` will be overridden by the parent **Tween**'s settings.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

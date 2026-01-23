@@ -5,28 +5,28 @@
 ResourceImporterLayeredTexture
 ==============================
 
-**繼承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-匯入 3 維紋理 (:ref:`Texture3D<class_Texture3D>`)、\ :ref:`Texture2DArray<class_Texture2DArray>`\ 、\ :ref:`Cubemap<class_Cubemap>` 或 :ref:`CubemapArray<class_CubemapArray>`\ 。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-這會匯入 3 維紋理，然後可以在自訂著色器中將其用作 :ref:`FogMaterial<class_FogMaterial>` 密度圖或 :ref:`GPUParticlesAttractorVectorField3D<class_GPUParticlesAttractorVectorField3D>`\ 。另請參閱 :ref:`ResourceImporterTexture<class_ResourceImporterTexture>` 和 :ref:`ResourceImporterTextureAtlas<class_ResourceImporterTextureAtlas>`\ 。
+Imports a 3-dimensional texture (:ref:`Texture3D<class_Texture3D>`), a :ref:`Texture2DArray<class_Texture2DArray>`, a :ref:`Cubemap<class_Cubemap>` or a :ref:`CubemapArray<class_CubemapArray>`.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`匯入圖像 <../tutorials/assets_pipeline/importing_images>`
+This imports a 3-dimensional texture, which can then be used in custom shaders, as a :ref:`FogMaterial<class_FogMaterial>` density map or as a :ref:`GPUParticlesAttractorVectorField3D<class_GPUParticlesAttractorVectorField3D>`. See also :ref:`ResourceImporterTexture<class_ResourceImporterTexture>` and :ref:`ResourceImporterTextureAtlas<class_ResourceImporterTextureAtlas>`.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Importing images <../tutorials/assets_pipeline/importing_images>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -59,8 +59,8 @@ ResourceImporterLayeredTexture
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_ResourceImporterLayeredTexture_property_compress/channel_pack:
 
@@ -86,15 +86,15 @@ Controls how color channels should be used in the imported texture.
 
 :ref:`int<class_int>` **compress/hdr_compression** = ``1`` :ref:`🔗<class_ResourceImporterLayeredTexture_property_compress/hdr_compression>`
 
-控制如何對 HDR 影像執行 VRAM 壓縮。
+Controls how VRAM compression should be performed for HDR images.
 
-\ **停用：**\ 切勿對 HDR 紋理使用 VRAM 壓縮，無論它們是不透明還是透明。相反，紋理會轉換為 RGBE9995（每通道 9 位元 + 5 位元指數 = 每像素 32 位元），以減少與半浮點或單精確度浮點影像格式相比的記憶體使用量。
+\ **Disabled:** Never use VRAM compression for HDR textures, regardless of whether they're opaque or transparent. Instead, the texture is converted to RGBE9995 (9-bits per channel + 5-bit exponent = 32 bits per pixel) to reduce memory usage compared to a half-float or single-precision float image format.
 
-\ **僅不透明：** 僅對不透明 HDR 紋理使用 VRAM 壓縮。這是由於 HDR 格式的限制，因為沒有同時支援透明度的 VRAM 壓縮 HDR 格式。
+\ **Opaque Only:** Only uses VRAM compression for opaque HDR textures. This is due to a limitation of HDR formats, as there is no VRAM-compressed HDR format that supports transparency at the same time.
 
-\ **總是：** 強制 VRAM 壓縮，即使對於具有 Alpha 通道的 HDR 紋理也是如此。為此，在匯入時將丟棄 Alpha 通道。
+\ **Always:** Force VRAM compression even for HDR textures with an alpha channel. To perform this, the alpha channel is discarded on import.
 
-\ **注意：** 僅對 Radiance HDR (``.hdr``) 和 OpenEXR (``.exr``) 影像有效。
+\ **Note:** Only effective on Radiance HDR (``.hdr``) and OpenEXR (``.exr``) images.
 
 .. rst-class:: classref-item-separator
 
@@ -106,11 +106,11 @@ Controls how color channels should be used in the imported texture.
 
 :ref:`bool<class_bool>` **compress/high_quality** = ``false`` :ref:`🔗<class_ResourceImporterLayeredTexture_property_compress/high_quality>`
 
-如果\ ``true``\ ，在桌面平台上使用BPTC 壓縮，在行動平台上使用ASTC 壓縮。使用BPTC 時，BC7 用於SDR 紋理，BC6H 用於HDR紋理。
+If ``true``, uses BPTC compression on desktop platforms and ASTC compression on mobile platforms. When using BPTC, BC7 is used for SDR textures and BC6H is used for HDR textures.
 
-如果 ``false``\ ，則在桌面平台上使用速度更快但品質較低的 S3TC 壓縮，在行動裝置/Web 平台上使用 ETC2。使用 S3TC 時，DXT1 (BC1) 用於不透明紋理，DXT5 (BC3) 用於透明或法線貼圖 (RGTC) 紋理。
+If ``false``, uses the faster but lower-quality S3TC compression on desktop platforms and ETC2 on mobile/web platforms. When using S3TC, DXT1 (BC1) is used for opaque textures and DXT5 (BC3) is used for transparent or normal map (RGTC) textures.
 
-BPTC 和 ASTC 支援 HDR 紋理的 VRAM 壓縮，但 S3TC 和 ETC2 不支援（請參閱\ :ref:`compress/hdr_compression<class_ResourceImporterLayeredTexture_property_compress/hdr_compression>`\ ）。
+BPTC and ASTC support VRAM compression for HDR textures, but S3TC and ETC2 do not (see :ref:`compress/hdr_compression<class_ResourceImporterLayeredTexture_property_compress/hdr_compression>`).
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +122,7 @@ BPTC 和 ASTC 支援 HDR 紋理的 VRAM 壓縮，但 S3TC 和 ETC2 不支援（�
 
 :ref:`float<class_float>` **compress/lossy_quality** = ``0.7`` :ref:`🔗<class_ResourceImporterLayeredTexture_property_compress/lossy_quality>`
 
-使用有損壓縮模式時使用的品質。值越高，品質越好，但檔案大小越大。有損品質不會影響記憶體匯入紋理的使用，僅其在磁碟上的檔案大小。
+The quality to use when using the **Lossy** compression mode. Higher values result in better quality, at the cost of larger file sizes. Lossy quality does not affect memory usage of the imported texture, only its file size on disk.
 
 .. rst-class:: classref-item-separator
 
@@ -134,19 +134,19 @@ BPTC 和 ASTC 支援 HDR 紋理的 VRAM 壓縮，但 S3TC 和 ETC2 不支援（�
 
 :ref:`int<class_int>` **compress/mode** = ``1`` :ref:`🔗<class_ResourceImporterLayeredTexture_property_compress/mode>`
 
-要使用的壓縮模式。每個壓縮模式都提供不同的權衡：
+The compression mode to use. Each compression mode provides a different tradeoff:
 
-\ **無損**\ ：原始品質、高記憶體佔用、高磁碟空間、快速匯入。
+\ **Lossless**: Original quality, high memory usage, high size on disk, fast import.
 
-\ **有損：** 品質降低、記憶體使用率高、磁碟空間小、匯入速度快。
+\ **Lossy:** Reduced quality, high memory usage, low size on disk, fast import.
 
-\ **VRAM 壓縮：** 品質下降、記憶體使用率低、磁碟空間小、匯入速度最慢。僅用於 3D 場景中的紋理，不適用於 2D 元素。
+\ **VRAM Compressed:** Reduced quality, low memory usage, low size on disk, slowest import. Only use for textures in 3D scenes, not for 2D elements.
 
-\ **VRAM 未壓縮：** 原始品質、高記憶體使用率、磁碟大小最大、匯入速度最快。
+\ **VRAM Uncompressed:** Original quality, high memory usage, highest size on disk, fastest import.
 
-\ **Basis Universal：** 品質降低、記憶體使用率低、磁碟大小最小、匯入速度慢。僅用於 3D 場景中的紋理，不適用於 2D 元素。
+\ **Basis Universal:** Reduced quality, low memory usage, lowest size on disk, slow import. Only use for textures in 3D scenes, not for 2D elements.
 
-有關詳細信息，請參閱手冊中的\ `壓縮模式 <../tutorials/assets_pipeline/importing_images.html#compress-mode>`__\ 。
+See `Compress mode <../tutorials/assets_pipeline/importing_images.html#compress-mode>`__ in the manual for more details.
 
 .. rst-class:: classref-item-separator
 
@@ -186,15 +186,15 @@ The UASTC encoding level. Higher values result in better quality but make encodi
 
 :ref:`bool<class_bool>` **mipmaps/generate** = ``true`` :ref:`🔗<class_ResourceImporterLayeredTexture_property_mipmaps/generate>`
 
-如果 ``true``\ ，匯入時會產生較小版本的紋理。例如，64×64 紋理將產生 6 個 mipmap（32×32、16× 16 、8×8、4×4、2×2、1×1）。這有幾個優點：
+If ``true``, smaller versions of the texture are generated on import. For example, a 64×64 texture will generate 6 mipmaps (32×32, 16×16, 8×8, 4×4, 2×2, 1×1). This has several benefits:
 
-- 紋理在遠處（3D 中）或由於 :ref:`Camera2D<class_Camera2D>` 縮放或 :ref:`CanvasItem<class_CanvasItem>` 縮放（2D）而縮小時不會變得顆粒狀。
+- Textures will not become grainy in the distance (in 3D), or if scaled down due to :ref:`Camera2D<class_Camera2D>` zoom or :ref:`CanvasItem<class_CanvasItem>` scale (in 2D).
 
-- 如果紋理顯示在遠處，效能將會提高，因為對原始紋理的較小版本進行取樣速度更快並且需要更少的記憶體頻寬。
+- Performance will improve if the texture is displayed in the distance, since sampling smaller versions of the original texture is faster and requires less memory bandwidth.
 
-mipmap 的缺點是它們使記憶體使用量增加約 33%（對於 :ref:`Texture2DArray<class_Texture2DArray>`\ 、\ :ref:`Cubemap<class_Cubemap>` 和 :ref:`CubemapArray<class_CubemapArray>`\ ）或 14%（對於 :ref:`Texture3D<class_Texture3D>`\ ）。
+The downside of mipmaps is that they increase memory usage by roughly 33% (for :ref:`Texture2DArray<class_Texture2DArray>`, :ref:`Cubemap<class_Cubemap>` and :ref:`CubemapArray<class_CubemapArray>`) or 14% (for :ref:`Texture3D<class_Texture3D>`).
 
-建議在 3D 中啟用 mipmap。但是，在 2D 中，僅當您的專案明顯受益於啟用 mipmap 時才應啟用此功能。如果相機永遠不會顯著縮小，啟用 mipmap 不會有任何好處，但記憶體使用量會增加。
+It's recommended to enable mipmaps in 3D. However, in 2D, this should only be enabled if your project visibly benefits from having mipmaps enabled. If the camera never zooms out significantly, there won't be a benefit to enabling mipmaps but memory usage will increase.
 
 .. rst-class:: classref-item-separator
 
@@ -206,7 +206,7 @@ mipmap 的缺點是它們使記憶體使用量增加約 33%（對於 :ref:`Textu
 
 :ref:`int<class_int>` **mipmaps/limit** = ``-1`` :ref:`🔗<class_ResourceImporterLayeredTexture_property_mipmaps/limit>`
 
-未實作。目前變更後無效。
+Unimplemented. This currently has no effect when changed.
 
 .. rst-class:: classref-item-separator
 
@@ -218,14 +218,14 @@ mipmap 的缺點是它們使記憶體使用量增加約 33%（對於 :ref:`Textu
 
 :ref:`int<class_int>` **slices/arrangement** = ``1`` :ref:`🔗<class_ResourceImporterLayeredTexture_property_slices/arrangement>`
 
-控制立方體貼圖紋理的內部佈局方式。使用高解析度立方體貼圖時，\ **2×3** 和 **3×2**\ 與\ **1×6** 和\ **6×1** 相比，較不容易超出硬體紋理大小限制。
+Controls how the cubemap's texture is internally laid out. When using high-resolution cubemaps, **2×3** and **3×2** are less prone to exceeding hardware texture size limits compared to **1×6** and **6×1**.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

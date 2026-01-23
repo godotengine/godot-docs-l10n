@@ -5,16 +5,16 @@
 InputEventWithModifiers
 =======================
 
-**繼承：** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`InputEventGesture<class_InputEventGesture>`, :ref:`InputEventKey<class_InputEventKey>`, :ref:`InputEventMouse<class_InputEventMouse>`
+**Inherited By:** :ref:`InputEventGesture<class_InputEventGesture>`, :ref:`InputEventKey<class_InputEventKey>`, :ref:`InputEventMouse<class_InputEventMouse>`
 
-受 :kbd:`Shift` 和 :kbd:`Alt` 等修飾鍵影響的輸入事件的抽象基底類別。
+Abstract base class for input events affected by modifier keys like :kbd:`Shift` and :kbd:`Alt`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 Stores information about mouse, keyboard, and touch gesture input events. This includes information about which modifier keys are pressed, such as :kbd:`Shift` or :kbd:`Alt`. See :ref:`Node._input()<class_Node_private_method__input>`.
 
@@ -22,15 +22,15 @@ Stores information about mouse, keyboard, and touch gesture input events. This i
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`使用 InputEvent <../tutorials/inputs/inputevent>`
+- :doc:`Using InputEvent <../tutorials/inputs/inputevent>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ Stores information about mouse, keyboard, and touch gesture input events. This i
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -67,8 +67,8 @@ Stores information about mouse, keyboard, and touch gesture input events. This i
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_InputEventWithModifiers_property_alt_pressed:
 
@@ -81,7 +81,7 @@ Stores information about mouse, keyboard, and touch gesture input events. This i
 - |void| **set_alt_pressed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_alt_pressed**\ (\ )
 
-:kbd:`Alt` 修飾鍵的狀態。
+State of the :kbd:`Alt` modifier.
 
 .. rst-class:: classref-item-separator
 
@@ -98,7 +98,7 @@ Stores information about mouse, keyboard, and touch gesture input events. This i
 - |void| **set_command_or_control_autoremap**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_command_or_control_autoremap**\ (\ )
 
-自動在 macOS 上使用 :kbd:`Meta`\ （\ :kbd:`Command`\ ），在其他平臺上使用 :kbd:`Ctrl`\ 。如果為 ``true``\ ，則無法設定 :ref:`ctrl_pressed<class_InputEventWithModifiers_property_ctrl_pressed>` 和 :ref:`meta_pressed<class_InputEventWithModifiers_property_meta_pressed>`\ 。
+Automatically use :kbd:`Meta` (:kbd:`Cmd`) on macOS and :kbd:`Ctrl` on other platforms. If ``true``, :ref:`ctrl_pressed<class_InputEventWithModifiers_property_ctrl_pressed>` and :ref:`meta_pressed<class_InputEventWithModifiers_property_meta_pressed>` cannot be set.
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +115,7 @@ Stores information about mouse, keyboard, and touch gesture input events. This i
 - |void| **set_ctrl_pressed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ctrl_pressed**\ (\ )
 
-:kbd:`Ctrl` 修飾鍵的狀態。
+State of the :kbd:`Ctrl` modifier.
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ Stores information about mouse, keyboard, and touch gesture input events. This i
 - |void| **set_meta_pressed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_meta_pressed**\ (\ )
 
-:kbd:`Meta` 修飾鍵的狀態。在 Windows 和 Linux 上代表 Windows 鍵（有時在 Linux 上稱為“meta”或“super”鍵）。在 macOS 上代表 Command 鍵。
+State of the :kbd:`Meta` modifier. On Windows and Linux, this represents the Windows key (sometimes called "meta" or "super" on Linux). On macOS, this represents the Command key.
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ Stores information about mouse, keyboard, and touch gesture input events. This i
 - |void| **set_shift_pressed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_shift_pressed**\ (\ )
 
-:kbd:`Shift` 修飾鍵的狀態。
+State of the :kbd:`Shift` modifier.
 
 .. rst-class:: classref-section-separator
 
@@ -157,8 +157,8 @@ Stores information about mouse, keyboard, and touch gesture input events. This i
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_InputEventWithModifiers_method_get_modifiers_mask:
 
@@ -166,7 +166,7 @@ Stores information about mouse, keyboard, and touch gesture input events. This i
 
 |bitfield|\[:ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\] **get_modifiers_mask**\ (\ ) |const| :ref:`🔗<class_InputEventWithModifiers_method_get_modifiers_mask>`
 
-返回修飾鍵的鍵碼組合。
+Returns the keycode combination of modifier keys.
 
 .. rst-class:: classref-item-separator
 
@@ -178,16 +178,16 @@ Stores information about mouse, keyboard, and touch gesture input events. This i
 
 :ref:`bool<class_bool>` **is_command_or_control_pressed**\ (\ ) |const| :ref:`🔗<class_InputEventWithModifiers_method_is_command_or_control_pressed>`
 
-在 macOS 上，如果 :kbd:`Meta`\ （\ :kbd:`Command`\ ）是按下狀態，則返回 ``true`` 。
+On macOS, returns ``true`` if :kbd:`Meta` (:kbd:`Cmd`) is pressed.
 
-在其他平臺上，如果 :kbd:`Ctrl` 是按下狀態，則返回 ``true`` 。
+On other platforms, returns ``true`` if :kbd:`Ctrl` is pressed.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

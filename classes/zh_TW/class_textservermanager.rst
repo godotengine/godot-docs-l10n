@@ -5,23 +5,23 @@
 TextServerManager
 =================
 
-**繼承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-用於管理 :ref:`TextServer<class_TextServer>` 實作的單例。
+A singleton for managing :ref:`TextServer<class_TextServer>` implementations.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-**TextServerManager** 是載入、列舉和切換 :ref:`TextServer<class_TextServer>` 的 API 後端。
+**TextServerManager** is the API backend for loading, enumerating, and switching :ref:`TextServer<class_TextServer>`\ s.
 
-\ **注意：**\ 文字伺服器可以在運作時切換，但會導致所有字形和文字緩衝區失效。請確保在切換之前解除安裝所有控制項、字形和主題。
+\ **Note:** Switching text server at runtime is possible, but will invalidate all fonts and text buffers. Make sure to unload all controls, fonts, and themes before doing so.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ TextServerManager
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_TextServerManager_signal_interface_added:
 
@@ -59,7 +59,7 @@ TextServerManager
 
 **interface_added**\ (\ interface_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_TextServerManager_signal_interface_added>`
 
-新增新介面時觸發。
+Emitted when a new interface has been added.
 
 .. rst-class:: classref-item-separator
 
@@ -71,7 +71,7 @@ TextServerManager
 
 **interface_removed**\ (\ interface_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_TextServerManager_signal_interface_removed>`
 
-當介面被移除時觸發。
+Emitted when an interface is removed.
 
 .. rst-class:: classref-section-separator
 
@@ -79,8 +79,8 @@ TextServerManager
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_TextServerManager_method_add_interface:
 
@@ -88,7 +88,7 @@ TextServerManager
 
 |void| **add_interface**\ (\ interface\: :ref:`TextServer<class_TextServer>`\ ) :ref:`🔗<class_TextServerManager_method_add_interface>`
 
-註冊 :ref:`TextServer<class_TextServer>` 介面。
+Registers a :ref:`TextServer<class_TextServer>` interface.
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ TextServerManager
 
 :ref:`TextServer<class_TextServer>` **find_interface**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServerManager_method_find_interface>`
 
-根據名稱 ``name`` 搜尋介面。
+Finds an interface by its ``name``.
 
 .. rst-class:: classref-item-separator
 
@@ -112,7 +112,7 @@ TextServerManager
 
 :ref:`TextServer<class_TextServer>` **get_interface**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServerManager_method_get_interface>`
 
-返回在給定索引處註冊的介面。
+Returns the interface registered at a given index.
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ TextServerManager
 
 :ref:`int<class_int>` **get_interface_count**\ (\ ) |const| :ref:`🔗<class_TextServerManager_method_get_interface_count>`
 
-返回目前註冊的介面數。
+Returns the number of interfaces currently registered.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ TextServerManager
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_interfaces**\ (\ ) |const| :ref:`🔗<class_TextServerManager_method_get_interfaces>`
 
-返回可用介面的列表，包含每個介面的索引號和名稱。
+Returns a list of available interfaces, with the index and name of each interface.
 
 .. rst-class:: classref-item-separator
 
@@ -148,7 +148,7 @@ TextServerManager
 
 :ref:`TextServer<class_TextServer>` **get_primary_interface**\ (\ ) |const| :ref:`🔗<class_TextServerManager_method_get_primary_interface>`
 
-返回目前使用的主 :ref:`TextServer<class_TextServer>` 介面。
+Returns the primary :ref:`TextServer<class_TextServer>` interface currently in use.
 
 .. rst-class:: classref-item-separator
 
@@ -160,7 +160,7 @@ TextServerManager
 
 |void| **remove_interface**\ (\ interface\: :ref:`TextServer<class_TextServer>`\ ) :ref:`🔗<class_TextServerManager_method_remove_interface>`
 
-移除介面。在移除介面之前，應釋放所有字形和塑形文字的快取。
+Removes an interface. All fonts and shaped text caches should be freed before removing an interface.
 
 .. rst-class:: classref-item-separator
 
@@ -172,14 +172,14 @@ TextServerManager
 
 |void| **set_primary_interface**\ (\ index\: :ref:`TextServer<class_TextServer>`\ ) :ref:`🔗<class_TextServerManager_method_set_primary_interface>`
 
-設定主 :ref:`TextServer<class_TextServer>` 介面。
+Sets the primary :ref:`TextServer<class_TextServer>` interface.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

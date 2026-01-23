@@ -5,27 +5,27 @@
 SkeletonModification2DJiggle
 ============================
 
-**實驗性：** This class may be changed or removed in future versions.
+**Experimental:** This class may be changed or removed in future versions.
 
-**繼承：** :ref:`SkeletonModification2D<class_SkeletonModification2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`SkeletonModification2D<class_SkeletonModification2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-讓 :ref:`Bone2D<class_Bone2D>` 節點在朝某個目標移動的過程中產生搖晃的修改器。
+A modification that jiggles :ref:`Bone2D<class_Bone2D>` nodes as they move towards a target.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-這種修改器會將一系列的骨骼朝某個目標移動，這些骨骼通常稱作骨骼鏈。這種修改器的特點在於，它會為骨骼鏈中的每一個骨骼計算速度和加速度，並使用輸入值運作一段非常羽量級的類物理計算。這樣這些骨骼就能夠越過目標並來回“搖晃”（Jiggle）。根據配置的不同，可以得到類似彈簧的搖晃，也可以得到類似布料的搖晃。
+This modification moves a series of bones, typically called a bone chain, towards a target. What makes this modification special is that it calculates the velocity and acceleration for each bone in the bone chain, and runs a very light physics-like calculation using the inputted values. This allows the bones to overshoot the target and "jiggle" around. It can be configured to act more like a spring, or sway around like cloth might.
 
-這種修改器可用於為頭髮、衣服邊緣等新增額外的運動。可以通過不同的設定控制目標移動時關節的移動方式。
+This modification is useful for adding additional motion to things like hair, the edges of clothing, and more. It has several settings to that allow control over how the joint moves when the target moves.
 
-\ **注意：**\ Jiggle 修改器的 ``jiggle_joints`` 屬性中保存的是資料對象，記錄 Jiggle 鏈中各個關節的資料。這一點與 :ref:`Bone2D<class_Bone2D>` 節點不同！Jiggle 關節保存了 Jiggle 修改器使用的骨骼鏈中各個 :ref:`Bone2D<class_Bone2D>` 所需的資料。
+\ **Note:** The Jiggle modifier has ``jiggle_joints``, which are the data objects that hold the data for each joint in the Jiggle chain. This is different from than :ref:`Bone2D<class_Bone2D>` nodes! Jiggle joints hold the data needed for each :ref:`Bone2D<class_Bone2D>` in the bone chain used by the Jiggle modification.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -48,8 +48,8 @@ SkeletonModification2DJiggle
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -102,8 +102,8 @@ SkeletonModification2DJiggle
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_SkeletonModification2DJiggle_property_damping:
 
@@ -116,7 +116,7 @@ SkeletonModification2DJiggle
 - |void| **set_damping**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_damping**\ (\ )
 
-未被覆蓋時，Jiggle 關節所受到的預設阻尼大小。值約高，所套用的計算得到的速度也就約多。
+The default amount of damping applied to the Jiggle joints, if they are not overridden. Higher values lead to more of the calculated velocity being applied.
 
 .. rst-class:: classref-item-separator
 
@@ -133,7 +133,7 @@ SkeletonModification2DJiggle
 - |void| **set_gravity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_gravity**\ (\ )
 
-未被覆蓋時，Jiggle 關節所受到的預設重力大小。
+The default amount of gravity applied to the Jiggle joints, if they are not overridden.
 
 .. rst-class:: classref-item-separator
 
@@ -150,7 +150,7 @@ SkeletonModification2DJiggle
 - |void| **set_jiggle_data_chain_length**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_jiggle_data_chain_length**\ (\ )
 
-該 Jiggle 修改器中的 Jiggle 關節的數量。
+The amount of Jiggle joints in the Jiggle modification.
 
 .. rst-class:: classref-item-separator
 
@@ -167,7 +167,7 @@ SkeletonModification2DJiggle
 - |void| **set_mass**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mass**\ (\ )
 
-未被覆蓋時，Jiggle 關節所分配的預設品質大小。值約高，移動速度也就約快，超出的距離也就越大。
+The default amount of mass assigned to the Jiggle joints, if they are not overridden. Higher values lead to faster movements and more overshooting.
 
 .. rst-class:: classref-item-separator
 
@@ -184,7 +184,7 @@ SkeletonModification2DJiggle
 - |void| **set_stiffness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_stiffness**\ (\ )
 
-未被覆蓋時，Jiggle 關節所分配的預設剛度大小。值約高越像彈簧，會很快到達正確的位置。
+The default amount of stiffness assigned to the Jiggle joints, if they are not overridden. Higher values act more like springs, quickly moving into the correct position.
 
 .. rst-class:: classref-item-separator
 
@@ -201,7 +201,7 @@ SkeletonModification2DJiggle
 - |void| **set_target_node**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_target_node**\ (\ )
 
-該 Jiggle 修改器目標節點的 NodePath 路徑。這個節點是 Jiggle 鏈所要旋轉至的目標。
+The NodePath to the node that is the target for the Jiggle modification. This node is what the Jiggle chain will attempt to rotate the bone chain to.
 
 .. rst-class:: classref-item-separator
 
@@ -218,7 +218,7 @@ SkeletonModification2DJiggle
 - |void| **set_use_gravity**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_gravity**\ (\ )
 
-假設 Jiggle 關節沒有覆蓋預設設定的前提下，是否應該對這些關節施加重力向量 :ref:`gravity<class_SkeletonModification2DJiggle_property_gravity>`\ 。
+Whether the gravity vector, :ref:`gravity<class_SkeletonModification2DJiggle_property_gravity>`, should be applied to the Jiggle joints, assuming they are not overriding the default settings.
 
 .. rst-class:: classref-section-separator
 
@@ -226,8 +226,8 @@ SkeletonModification2DJiggle
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_SkeletonModification2DJiggle_method_get_collision_mask:
 
@@ -235,7 +235,7 @@ SkeletonModification2DJiggle
 
 :ref:`int<class_int>` **get_collision_mask**\ (\ ) |const| :ref:`🔗<class_SkeletonModification2DJiggle_method_get_collision_mask>`
 
-返回在啟用碰撞時 Jiggle 修改器所使用的碰撞遮罩。
+Returns the collision mask used by the Jiggle modifier when collisions are enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -247,7 +247,7 @@ SkeletonModification2DJiggle
 
 :ref:`NodePath<class_NodePath>` **get_jiggle_joint_bone2d_node**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DJiggle_method_get_jiggle_joint_bone2d_node>`
 
-返回 ``joint_idx`` 處 Jiggle 關節所分配的 :ref:`Bone2D<class_Bone2D>` 節點。
+Returns the :ref:`Bone2D<class_Bone2D>` node assigned to the Jiggle joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -259,7 +259,7 @@ SkeletonModification2DJiggle
 
 :ref:`int<class_int>` **get_jiggle_joint_bone_index**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DJiggle_method_get_jiggle_joint_bone_index>`
 
-返回 ``joint_idx`` 處 Jiggle 關節所分配 :ref:`Bone2D<class_Bone2D>` 節點的索引。
+Returns the index of the :ref:`Bone2D<class_Bone2D>` node assigned to the Jiggle joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -271,7 +271,7 @@ SkeletonModification2DJiggle
 
 :ref:`float<class_float>` **get_jiggle_joint_damping**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DJiggle_method_get_jiggle_joint_damping>`
 
-返回 ``joint_idx`` 處 Jiggle 關節的阻尼大小。
+Returns the amount of damping of the Jiggle joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -283,7 +283,7 @@ SkeletonModification2DJiggle
 
 :ref:`Vector2<class_Vector2>` **get_jiggle_joint_gravity**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DJiggle_method_get_jiggle_joint_gravity>`
 
-返回表示 ``joint_idx`` 處 Jiggle 關節所受到的重力的 :ref:`Vector2<class_Vector2>`\ 。
+Returns a :ref:`Vector2<class_Vector2>` representing the amount of gravity the Jiggle joint at ``joint_idx`` is influenced by.
 
 .. rst-class:: classref-item-separator
 
@@ -295,7 +295,7 @@ SkeletonModification2DJiggle
 
 :ref:`float<class_float>` **get_jiggle_joint_mass**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DJiggle_method_get_jiggle_joint_mass>`
 
-返回 ``joint_idx`` 處 Jiggle 關節的品質大小。
+Returns the amount of mass of the jiggle joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -307,7 +307,7 @@ SkeletonModification2DJiggle
 
 :ref:`bool<class_bool>` **get_jiggle_joint_override**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DJiggle_method_get_jiggle_joint_override>`
 
-返回表示 ``joint_idx`` 處 Jiggle 關節是否覆蓋修改器中定義的預設 Jiggle 關節資料的布林值。
+Returns a boolean that indicates whether the joint at ``joint_idx`` is overriding the default Jiggle joint data defined in the modification.
 
 .. rst-class:: classref-item-separator
 
@@ -319,7 +319,7 @@ SkeletonModification2DJiggle
 
 :ref:`float<class_float>` **get_jiggle_joint_stiffness**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DJiggle_method_get_jiggle_joint_stiffness>`
 
-返回 ``joint_idx`` 處 Jiggle 關節的剛度。
+Returns the stiffness of the Jiggle joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -331,7 +331,7 @@ SkeletonModification2DJiggle
 
 :ref:`bool<class_bool>` **get_jiggle_joint_use_gravity**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DJiggle_method_get_jiggle_joint_use_gravity>`
 
-返回表示 ``joint_idx`` 處 Jiggle 關節是否使用重力的布林值。
+Returns a boolean that indicates whether the joint at ``joint_idx`` is using gravity or not.
 
 .. rst-class:: classref-item-separator
 
@@ -343,7 +343,7 @@ SkeletonModification2DJiggle
 
 :ref:`bool<class_bool>` **get_use_colliders**\ (\ ) |const| :ref:`🔗<class_SkeletonModification2DJiggle_method_get_use_colliders>`
 
-返回 Jiggle 修改器在求解時是否考慮物理碰撞器。
+Returns whether the jiggle modifier is taking physics colliders into account when solving.
 
 .. rst-class:: classref-item-separator
 
@@ -355,7 +355,7 @@ SkeletonModification2DJiggle
 
 |void| **set_collision_mask**\ (\ collision_mask\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SkeletonModification2DJiggle_method_set_collision_mask>`
 
-在 Jiggle 修改器被設為考慮碰撞器時，設定該 Jiggle 修改器所需作出反應的碰撞器的碰撞遮罩。
+Sets the collision mask that the Jiggle modifier will use when reacting to colliders, if the Jiggle modifier is set to take colliders into account.
 
 .. rst-class:: classref-item-separator
 
@@ -367,7 +367,7 @@ SkeletonModification2DJiggle
 
 |void| **set_jiggle_joint_bone2d_node**\ (\ joint_idx\: :ref:`int<class_int>`, bone2d_node\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SkeletonModification2DJiggle_method_set_jiggle_joint_bone2d_node>`
 
-設定 ``joint_idx`` 處 Jiggle 關節所分配的 :ref:`Bone2D<class_Bone2D>` 節點。
+Sets the :ref:`Bone2D<class_Bone2D>` node assigned to the Jiggle joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -379,7 +379,7 @@ SkeletonModification2DJiggle
 
 |void| **set_jiggle_joint_bone_index**\ (\ joint_idx\: :ref:`int<class_int>`, bone_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SkeletonModification2DJiggle_method_set_jiggle_joint_bone_index>`
 
-設定 ``joint_idx`` 處 Jiggle 關節的骨骼索引 ``bone_idx``\ 。如果適用，還會根據所連結骨架提供的資料來更新 Jiggle 關節的 ``bone2d_node``\ 。
+Sets the bone index, ``bone_idx``, of the Jiggle joint at ``joint_idx``. When possible, this will also update the ``bone2d_node`` of the Jiggle joint based on data provided by the linked skeleton.
 
 .. rst-class:: classref-item-separator
 
@@ -391,7 +391,7 @@ SkeletonModification2DJiggle
 
 |void| **set_jiggle_joint_damping**\ (\ joint_idx\: :ref:`int<class_int>`, damping\: :ref:`float<class_float>`\ ) :ref:`🔗<class_SkeletonModification2DJiggle_method_set_jiggle_joint_damping>`
 
-設定 ``joint_idx`` 處 Jiggle 關節的阻尼量。
+Sets the amount of damping of the Jiggle joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -403,7 +403,7 @@ SkeletonModification2DJiggle
 
 |void| **set_jiggle_joint_gravity**\ (\ joint_idx\: :ref:`int<class_int>`, gravity\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_SkeletonModification2DJiggle_method_set_jiggle_joint_gravity>`
 
-設定 ``joint_idx`` 處 Jiggle 關節的重力向量。
+Sets the gravity vector of the Jiggle joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -415,7 +415,7 @@ SkeletonModification2DJiggle
 
 |void| **set_jiggle_joint_mass**\ (\ joint_idx\: :ref:`int<class_int>`, mass\: :ref:`float<class_float>`\ ) :ref:`🔗<class_SkeletonModification2DJiggle_method_set_jiggle_joint_mass>`
 
-設定 ``joint_idx`` 處 Jiggle 關節的品質。
+Sets the of mass of the Jiggle joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -427,7 +427,7 @@ SkeletonModification2DJiggle
 
 |void| **set_jiggle_joint_override**\ (\ joint_idx\: :ref:`int<class_int>`, override\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SkeletonModification2DJiggle_method_set_jiggle_joint_override>`
 
-設定 ``joint_idx`` 處 Jiggle 關節是否應覆蓋預設 Jiggle 關節設定。設定為 ``true`` 會使該關節使用自身的設定，不使用附加至修改器的設定。
+Sets whether the Jiggle joint at ``joint_idx`` should override the default Jiggle joint settings. Setting this to ``true`` will make the joint use its own settings rather than the default ones attached to the modification.
 
 .. rst-class:: classref-item-separator
 
@@ -439,7 +439,7 @@ SkeletonModification2DJiggle
 
 |void| **set_jiggle_joint_stiffness**\ (\ joint_idx\: :ref:`int<class_int>`, stiffness\: :ref:`float<class_float>`\ ) :ref:`🔗<class_SkeletonModification2DJiggle_method_set_jiggle_joint_stiffness>`
 
-設定 ``joint_idx`` 處 Jiggle 關節的剛度。
+Sets the of stiffness of the Jiggle joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -451,7 +451,7 @@ SkeletonModification2DJiggle
 
 |void| **set_jiggle_joint_use_gravity**\ (\ joint_idx\: :ref:`int<class_int>`, use_gravity\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SkeletonModification2DJiggle_method_set_jiggle_joint_use_gravity>`
 
-設定 ``joint_idx`` 處 Jiggle 關節是否應使用重力。
+Sets whether the Jiggle joint at ``joint_idx`` should use gravity.
 
 .. rst-class:: classref-item-separator
 
@@ -463,14 +463,14 @@ SkeletonModification2DJiggle
 
 |void| **set_use_colliders**\ (\ use_colliders\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SkeletonModification2DJiggle_method_set_use_colliders>`
 
-如果為 ``true``\ ，則 Jiggle 修改器將考慮碰撞器，防止它們進入這些碰撞對象。
+If ``true``, the Jiggle modifier will take colliders into account, keeping them from entering into these collision objects.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

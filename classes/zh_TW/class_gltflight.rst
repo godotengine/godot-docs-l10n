@@ -5,30 +5,30 @@
 GLTFLight
 =========
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 Represents a glTF light.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 Represents a light as defined by the ``KHR_lights_punctual`` glTF extension.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`執行時檔案載入與儲存 <../tutorials/io/runtime_file_loading_and_saving>`
+- :doc:`Runtime file loading and saving <../tutorials/io/runtime_file_loading_and_saving>`
 
 - `KHR_lights_punctual glTF extension spec <https://github.com/KhronosGroup/glTF/blob/main/extensions/2.0/Khronos/KHR_lights_punctual>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ Represents a light as defined by the ``KHR_lights_punctual`` glTF extension.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -75,8 +75,8 @@ Represents a light as defined by the ``KHR_lights_punctual`` glTF extension.
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_GLTFLight_property_color:
 
@@ -108,9 +108,9 @@ This value is linear to match glTF, but will be converted to nonlinear sRGB when
 - |void| **set_inner_cone_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_inner_cone_angle**\ (\ )
 
-聚光燈下圓錐體的內角。必須小於等於外錐角。
+The inner angle of the cone in a spotlight. Must be less than or equal to the outer cone angle.
 
-在這個角度內，光線處於全亮狀態。在內錐角和外錐角之間，存在一個從全亮度到零亮度的過渡。建立 Godot :ref:`SpotLight3D<class_SpotLight3D>` 時，內外錐角之間的比率將被來計算光的衰減。
+Within this angle, the light is at full brightness. Between the inner and outer cone angles, there is a transition from full brightness to zero brightness. When creating a Godot :ref:`SpotLight3D<class_SpotLight3D>`, the ratio between the inner and outer cone angles is used to calculate the attenuation of the light.
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +127,7 @@ This value is linear to match glTF, but will be converted to nonlinear sRGB when
 - |void| **set_intensity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_intensity**\ (\ )
 
-光的強度。對於點光和聚光，用燭光（流明/立體光）表示；對於平行光，用勒克斯（流明/平方米）表示。在建立 Godot 燈光時，這個值會被轉換為無單位的乘數。
+The intensity of the light. This is expressed in candelas (lumens per steradian) for point and spot lights, and lux (lumens per m²) for directional lights. When creating a Godot light, this value is converted to a unitless multiplier.
 
 .. rst-class:: classref-item-separator
 
@@ -144,7 +144,7 @@ This value is linear to match glTF, but will be converted to nonlinear sRGB when
 - |void| **set_light_type**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_light_type**\ (\ )
 
-燈光的型別。Godot接受的值有“point”、“spot”、“directional”，分別對應 Godot 的 :ref:`OmniLight3D<class_OmniLight3D>`\ 、\ :ref:`SpotLight3D<class_SpotLight3D>`\ 、\ :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ 。
+The type of the light. The values accepted by Godot are "point", "spot", and "directional", which correspond to Godot's :ref:`OmniLight3D<class_OmniLight3D>`, :ref:`SpotLight3D<class_SpotLight3D>`, and :ref:`DirectionalLight3D<class_DirectionalLight3D>` respectively.
 
 .. rst-class:: classref-item-separator
 
@@ -161,9 +161,9 @@ This value is linear to match glTF, but will be converted to nonlinear sRGB when
 - |void| **set_outer_cone_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_outer_cone_angle**\ (\ )
 
-聚光燈下圓錐體的外角。必須大於等於內錐角。
+The outer angle of the cone in a spotlight. Must be greater than or equal to the inner angle.
 
-在這個角度，光線會下降到零亮度。在內錐角和外錐角之間，存在一個從全亮度到零亮度的過渡。如果這個角度是一個半圓，那麼聚光燈會向所有方向發射。建立一個 Godot :ref:`SpotLight3D<class_SpotLight3D>` 時，外錐角被用作聚光燈的角度。
+At this angle, the light drops off to zero brightness. Between the inner and outer cone angles, there is a transition from full brightness to zero brightness. If this angle is a half turn, then the spotlight emits in all directions. When creating a Godot :ref:`SpotLight3D<class_SpotLight3D>`, the outer cone angle is used as the angle of the spotlight.
 
 .. rst-class:: classref-item-separator
 
@@ -188,8 +188,8 @@ The range of the light, beyond which the light has no effect. glTF lights with n
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_GLTFLight_method_from_dictionary:
 
@@ -197,7 +197,7 @@ The range of the light, beyond which the light has no effect. glTF lights with n
 
 :ref:`GLTFLight<class_GLTFLight>` **from_dictionary**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`\ ) |static| :ref:`🔗<class_GLTFLight_method_from_dictionary>`
 
-通過解析給定的 :ref:`Dictionary<class_Dictionary>` 新建 GLTFLight 實例。
+Creates a new GLTFLight instance by parsing the given :ref:`Dictionary<class_Dictionary>`.
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +209,7 @@ The range of the light, beyond which the light has no effect. glTF lights with n
 
 :ref:`GLTFLight<class_GLTFLight>` **from_node**\ (\ light_node\: :ref:`Light3D<class_Light3D>`\ ) |static| :ref:`🔗<class_GLTFLight_method_from_node>`
 
-從給定的 Godot :ref:`Light3D<class_Light3D>` 節點新建 GLTFLight 實例。
+Create a new GLTFLight instance from the given Godot :ref:`Light3D<class_Light3D>` node.
 
 .. rst-class:: classref-item-separator
 
@@ -249,7 +249,7 @@ The range of the light, beyond which the light has no effect. glTF lights with n
 
 :ref:`Dictionary<class_Dictionary>` **to_dictionary**\ (\ ) |const| :ref:`🔗<class_GLTFLight_method_to_dictionary>`
 
-將這個 GLTFLight 實例序列化為 :ref:`Dictionary<class_Dictionary>`\ 。
+Serializes this GLTFLight instance into a :ref:`Dictionary<class_Dictionary>`.
 
 .. rst-class:: classref-item-separator
 
@@ -261,14 +261,14 @@ The range of the light, beyond which the light has no effect. glTF lights with n
 
 :ref:`Light3D<class_Light3D>` **to_node**\ (\ ) |const| :ref:`🔗<class_GLTFLight_method_to_node>`
 
-將這個 GLTFLight 實例轉換為 Godot :ref:`Light3D<class_Light3D>` 節點。
+Converts this GLTFLight instance into a Godot :ref:`Light3D<class_Light3D>` node.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,29 +5,29 @@
 SpringBoneCollision3D
 =====================
 
-**继承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**派生：** :ref:`SpringBoneCollisionCapsule3D<class_SpringBoneCollisionCapsule3D>`, :ref:`SpringBoneCollisionPlane3D<class_SpringBoneCollisionPlane3D>`, :ref:`SpringBoneCollisionSphere3D<class_SpringBoneCollisionSphere3D>`
+**Inherited By:** :ref:`SpringBoneCollisionCapsule3D<class_SpringBoneCollisionCapsule3D>`, :ref:`SpringBoneCollisionPlane3D<class_SpringBoneCollisionPlane3D>`, :ref:`SpringBoneCollisionSphere3D<class_SpringBoneCollisionSphere3D>`
 
-与 :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` 交互的碰撞的基类。
+A base class of the collision that interacts with :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>`.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-碰撞可以是 :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` 的子节点。不是 :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` 的子节点就没有效果。
+A collision can be a child of :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>`. If it is not a child of :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>`, it has no effect.
 
-碰撞和滑动是在 :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` 的修改过程中按照其碰撞列表的顺序进行的，该顺序由 :ref:`SpringBoneSimulator3D.set_collision_path()<class_SpringBoneSimulator3D_method_set_collision_path>` 设置。如果 :ref:`SpringBoneSimulator3D.are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` 为 ``true``\ ，则顺序与 :ref:`SceneTree<class_SceneTree>` 匹配。
+The colliding and sliding are done in the :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>`'s modification process in order of its collision list which is set by :ref:`SpringBoneSimulator3D.set_collision_path()<class_SpringBoneSimulator3D_method_set_collision_path>`. If :ref:`SpringBoneSimulator3D.are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` is ``true``, the order matches :ref:`SceneTree<class_SceneTree>`.
 
-如果设置了 :ref:`bone<class_SpringBoneCollision3D_property_bone>`\ ，则会与祖级 :ref:`Skeleton3D<class_Skeleton3D>` 的骨骼姿势同步，在 :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` 的修改过程之前作为预处理完成。
+If :ref:`bone<class_SpringBoneCollision3D_property_bone>` is set, it synchronizes with the bone pose of the ancestor :ref:`Skeleton3D<class_Skeleton3D>`, which is done in before the :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>`'s modification process as the pre-process.
 
-\ **警告：**\ 存在缩放的 **SpringBoneCollision3D** 可能产生预料之外的行为。请确保父级 :ref:`Skeleton3D<class_Skeleton3D>` 及其骨骼没有缩放。
+\ **Warning:** A scaled **SpringBoneCollision3D** will likely not behave as expected. Make sure that the parent :ref:`Skeleton3D<class_Skeleton3D>` and its bones are not scaled.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ SpringBoneCollision3D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -60,8 +60,8 @@ SpringBoneCollision3D
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_SpringBoneCollision3D_property_bone:
 
@@ -74,7 +74,7 @@ SpringBoneCollision3D
 - |void| **set_bone**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bone**\ (\ )
 
-所附着骨骼的索引。
+The index of the attached bone.
 
 .. rst-class:: classref-item-separator
 
@@ -91,7 +91,7 @@ SpringBoneCollision3D
 - |void| **set_bone_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_bone_name**\ (\ )
 
-所附着骨骼的名称。
+The name of the attached bone.
 
 .. rst-class:: classref-item-separator
 
@@ -108,7 +108,7 @@ SpringBoneCollision3D
 - |void| **set_position_offset**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_position_offset**\ (\ )
 
-位置的偏移量，相对于 :ref:`Skeleton3D<class_Skeleton3D>` 的 :ref:`bone<class_SpringBoneCollision3D_property_bone>` 姿势位置。
+The offset of the position from :ref:`Skeleton3D<class_Skeleton3D>`'s :ref:`bone<class_SpringBoneCollision3D_property_bone>` pose position.
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ SpringBoneCollision3D
 - |void| **set_rotation_offset**\ (\ value\: :ref:`Quaternion<class_Quaternion>`\ )
 - :ref:`Quaternion<class_Quaternion>` **get_rotation_offset**\ (\ )
 
-旋转的偏移量，相对于 :ref:`Skeleton3D<class_Skeleton3D>` 的 :ref:`bone<class_SpringBoneCollision3D_property_bone>` 姿势旋转。
+The offset of the rotation from :ref:`Skeleton3D<class_Skeleton3D>`'s :ref:`bone<class_SpringBoneCollision3D_property_bone>` pose rotation.
 
 .. rst-class:: classref-section-separator
 
@@ -133,8 +133,8 @@ SpringBoneCollision3D
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_SpringBoneCollision3D_method_get_skeleton:
 
@@ -142,14 +142,14 @@ SpringBoneCollision3D
 
 :ref:`Skeleton3D<class_Skeleton3D>` **get_skeleton**\ (\ ) |const| :ref:`🔗<class_SpringBoneCollision3D_method_get_skeleton>`
 
-获取父级 :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` 的父级 :ref:`Skeleton3D<class_Skeleton3D>` 节点。
+Get parent :ref:`Skeleton3D<class_Skeleton3D>` node of the parent :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` if found.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

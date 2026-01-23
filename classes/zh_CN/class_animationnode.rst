@@ -5,24 +5,24 @@
 AnimationNode
 =============
 
-**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**派生：** :ref:`AnimationNodeExtension<class_AnimationNodeExtension>`, :ref:`AnimationNodeOutput<class_AnimationNodeOutput>`, :ref:`AnimationNodeSync<class_AnimationNodeSync>`, :ref:`AnimationNodeTimeScale<class_AnimationNodeTimeScale>`, :ref:`AnimationNodeTimeSeek<class_AnimationNodeTimeSeek>`, :ref:`AnimationRootNode<class_AnimationRootNode>`
+**Inherited By:** :ref:`AnimationNodeExtension<class_AnimationNodeExtension>`, :ref:`AnimationNodeOutput<class_AnimationNodeOutput>`, :ref:`AnimationNodeSync<class_AnimationNodeSync>`, :ref:`AnimationNodeTimeScale<class_AnimationNodeTimeScale>`, :ref:`AnimationNodeTimeSeek<class_AnimationNodeTimeSeek>`, :ref:`AnimationRootNode<class_AnimationRootNode>`
 
-:ref:`AnimationTree<class_AnimationTree>` 节点的基类。与场景节点无关。
+Base class for :ref:`AnimationTree<class_AnimationTree>` nodes. Not related to scene nodes.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-:ref:`AnimationTree<class_AnimationTree>` 节点的基本资源。通常不会直接使用，不过你可以使用自定义混合公式创建自定义节点。
+Base resource for :ref:`AnimationTree<class_AnimationTree>` nodes. In general, it's not used directly, but you can create custom ones with custom blending formulas.
 
-继承这个类的动画节点主要用于 :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`\ ，否则请使用 :ref:`AnimationRootNode<class_AnimationRootNode>`\ 。
+Inherit this when creating animation nodes mainly for use in :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`, otherwise :ref:`AnimationRootNode<class_AnimationRootNode>` should be used instead.
 
-除 :ref:`AnimationNodeOutput<class_AnimationNodeOutput>` 外，所有节点的时间信息都可以通过只读参数来访问，这些信息是在上一帧处理并存储的。
+You can access the time information as read-only parameter which is processed and stored in the previous frame for all nodes except :ref:`AnimationNodeOutput<class_AnimationNodeOutput>`.
 
-\ **注意：**\ 如果 **AnimationNode** 中存在多个输入，优先使用哪个输入的时间信息取决于 **AnimationNode** 的类型。
+\ **Note:** If multiple inputs exist in the **AnimationNode**, which time information takes precedence depends on the type of **AnimationNode**.
 
 ::
 
@@ -32,15 +32,15 @@ AnimationNode
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
-- :doc:`使用 AnimationTree <../tutorials/animation/animation_tree>`
+- :doc:`Using AnimationTree <../tutorials/animation/animation_tree>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -51,8 +51,8 @@ AnimationNode
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -111,8 +111,8 @@ AnimationNode
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_AnimationNode_signal_animation_node_removed:
 
@@ -120,7 +120,7 @@ AnimationNode
 
 **animation_node_removed**\ (\ object_id\: :ref:`int<class_int>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AnimationNode_signal_animation_node_removed>`
 
-由继承自该类的节点发出，并且当其中一个动画节点移除时具有内部树。发出此信号的动画节点可以是 :ref:`AnimationNodeBlendSpace1D<class_AnimationNodeBlendSpace1D>`\ 、\ :ref:`AnimationNodeBlendSpace2D<class_AnimationNodeBlendSpace2D>`\ 、\ :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>` 和 :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`\ 。
+Emitted by nodes that inherit from this class and that have an internal tree when one of their animation nodes removes. The animation nodes that emit this signal are :ref:`AnimationNodeBlendSpace1D<class_AnimationNodeBlendSpace1D>`, :ref:`AnimationNodeBlendSpace2D<class_AnimationNodeBlendSpace2D>`, :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>`, and :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ AnimationNode
 
 **animation_node_renamed**\ (\ object_id\: :ref:`int<class_int>`, old_name\: :ref:`String<class_String>`, new_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AnimationNode_signal_animation_node_renamed>`
 
-由继承自该类的节点发出，并且当其中一个动画节点名称更改时具有内部树。发出此信号的动画节点可以是 :ref:`AnimationNodeBlendSpace1D<class_AnimationNodeBlendSpace1D>`\ 、\ :ref:`AnimationNodeBlendSpace2D<class_AnimationNodeBlendSpace2D>`\ 、\ :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>` 和 :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`\ 。
+Emitted by nodes that inherit from this class and that have an internal tree when one of their animation node names changes. The animation nodes that emit this signal are :ref:`AnimationNodeBlendSpace1D<class_AnimationNodeBlendSpace1D>`, :ref:`AnimationNodeBlendSpace2D<class_AnimationNodeBlendSpace2D>`, :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>`, and :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
 
 .. rst-class:: classref-item-separator
 
@@ -144,7 +144,7 @@ AnimationNode
 
 **tree_changed**\ (\ ) :ref:`🔗<class_AnimationNode_signal_tree_changed>`
 
-由继承自该类的节点发出，并且当其一个动画节点发生变化时具有内部树。发出此信号的动画节点可以是 :ref:`AnimationNodeBlendSpace1D<class_AnimationNodeBlendSpace1D>`\ 、\ :ref:`AnimationNodeBlendSpace2D<class_AnimationNodeBlendSpace2D>`\ 、\ :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>`\ 、\ :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` 和 :ref:`AnimationNodeTransition<class_AnimationNodeTransition>`\ 。
+Emitted by nodes that inherit from this class and that have an internal tree when one of their animation nodes changes. The animation nodes that emit this signal are :ref:`AnimationNodeBlendSpace1D<class_AnimationNodeBlendSpace1D>`, :ref:`AnimationNodeBlendSpace2D<class_AnimationNodeBlendSpace2D>`, :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>`, :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` and :ref:`AnimationNodeTransition<class_AnimationNodeTransition>`.
 
 .. rst-class:: classref-section-separator
 
@@ -152,8 +152,8 @@ AnimationNode
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_AnimationNode_FilterAction:
 
@@ -167,7 +167,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`FilterAction<enum_AnimationNode_FilterAction>` **FILTER_IGNORE** = ``0``
 
-不要使用筛选功能。
+Do not use filtering.
 
 .. _class_AnimationNode_constant_FILTER_PASS:
 
@@ -175,7 +175,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`FilterAction<enum_AnimationNode_FilterAction>` **FILTER_PASS** = ``1``
 
-与筛选器匹配的路径将被允许通过。
+Paths matching the filter will be allowed to pass.
 
 .. _class_AnimationNode_constant_FILTER_STOP:
 
@@ -183,7 +183,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`FilterAction<enum_AnimationNode_FilterAction>` **FILTER_STOP** = ``2``
 
-与筛选器匹配的路径将被丢弃。
+Paths matching the filter will be discarded.
 
 .. _class_AnimationNode_constant_FILTER_BLEND:
 
@@ -191,7 +191,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`FilterAction<enum_AnimationNode_FilterAction>` **FILTER_BLEND** = ``3``
 
-与筛选器匹配的路径将被混合（根据混合值）。
+Paths matching the filter will be blended (by the blend value).
 
 .. rst-class:: classref-section-separator
 
@@ -199,8 +199,8 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_AnimationNode_property_filter_enabled:
 
@@ -213,7 +213,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 - |void| **set_filter_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_filter_enabled**\ (\ )
 
-如果为 ``true``\ ，则启用筛选功能。
+If ``true``, filtering is enabled.
 
 .. rst-class:: classref-section-separator
 
@@ -221,8 +221,8 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_AnimationNode_private_method__get_caption:
 
@@ -230,7 +230,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`String<class_String>` **_get_caption**\ (\ ) |virtual| |const| :ref:`🔗<class_AnimationNode_private_method__get_caption>`
 
-继承 :ref:`AnimationRootNode<class_AnimationRootNode>` 时，实现这个虚方法可以覆盖这个动画节点的标题文本。
+When inheriting from :ref:`AnimationRootNode<class_AnimationRootNode>`, implement this virtual method to override the text caption for this animation node.
 
 .. rst-class:: classref-item-separator
 
@@ -242,7 +242,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`AnimationNode<class_AnimationNode>` **_get_child_by_name**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |virtual| |const| :ref:`🔗<class_AnimationNode_private_method__get_child_by_name>`
 
-继承 :ref:`AnimationRootNode<class_AnimationRootNode>` 时，实现这个虚方法可以根据名称 ``name`` 来返回对应的子动画节点。
+When inheriting from :ref:`AnimationRootNode<class_AnimationRootNode>`, implement this virtual method to return a child animation node by its ``name``.
 
 .. rst-class:: classref-item-separator
 
@@ -254,7 +254,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`Dictionary<class_Dictionary>` **_get_child_nodes**\ (\ ) |virtual| |const| :ref:`🔗<class_AnimationNode_private_method__get_child_nodes>`
 
-继承 :ref:`AnimationRootNode<class_AnimationRootNode>` 时，实现这个虚方法可以用 ``名称:节点`` 字典的形式按顺序返回所有子动画节点。
+When inheriting from :ref:`AnimationRootNode<class_AnimationRootNode>`, implement this virtual method to return all child animation nodes in order as a ``name: node`` dictionary.
 
 .. rst-class:: classref-item-separator
 
@@ -266,7 +266,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`Variant<class_Variant>` **_get_parameter_default_value**\ (\ parameter\: :ref:`StringName<class_StringName>`\ ) |virtual| |const| :ref:`🔗<class_AnimationNode_private_method__get_parameter_default_value>`
 
-继承 :ref:`AnimationRootNode<class_AnimationRootNode>` 时，实现这个虚方法可以返回参数“\ ``parameter``\ ”的默认值。参数是动画节点的自定义本地存储，资源可以在多个树中重用。
+When inheriting from :ref:`AnimationRootNode<class_AnimationRootNode>`, implement this virtual method to return the default value of a ``parameter``. Parameters are custom local memory used for your animation nodes, given a resource can be reused in multiple trees.
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`Array<class_Array>` **_get_parameter_list**\ (\ ) |virtual| |const| :ref:`🔗<class_AnimationNode_private_method__get_parameter_list>`
 
-继承 :ref:`AnimationRootNode<class_AnimationRootNode>` 时，实现这个虚方法可以返回这个节点的属性列表。参数是动画节点的自定义本地存储，资源可以在多个树中重用。格式与 :ref:`Object.get_property_list()<class_Object_method_get_property_list>` 类似。
+When inheriting from :ref:`AnimationRootNode<class_AnimationRootNode>`, implement this virtual method to return a list of the properties on this animation node. Parameters are custom local memory used for your animation nodes, given a resource can be reused in multiple trees. Format is similar to :ref:`Object.get_property_list()<class_Object_method_get_property_list>`.
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`bool<class_bool>` **_has_filter**\ (\ ) |virtual| |const| :ref:`🔗<class_AnimationNode_private_method__has_filter>`
 
-继承 :ref:`AnimationRootNode<class_AnimationRootNode>` 时，实现这个虚方法可以返回混合树编辑器是否应该在这个动画节点上显示过滤器编辑。
+When inheriting from :ref:`AnimationRootNode<class_AnimationRootNode>`, implement this virtual method to return whether the blend tree editor should display filter editing on this animation node.
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +302,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`bool<class_bool>` **_is_parameter_read_only**\ (\ parameter\: :ref:`StringName<class_StringName>`\ ) |virtual| |const| :ref:`🔗<class_AnimationNode_private_method__is_parameter_read_only>`
 
-继承 :ref:`AnimationRootNode<class_AnimationRootNode>` 时，实现这个虚方法可以返回参数 ``parameter`` 是否只读。参数是动画节点的自定义本地存储，资源可以在多个树中重用。
+When inheriting from :ref:`AnimationRootNode<class_AnimationRootNode>`, implement this virtual method to return whether the ``parameter`` is read-only. Parameters are custom local memory used for your animation nodes, given a resource can be reused in multiple trees.
 
 .. rst-class:: classref-item-separator
 
@@ -314,13 +314,13 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`float<class_float>` **_process**\ (\ time\: :ref:`float<class_float>`, seek\: :ref:`bool<class_bool>`, is_external_seeking\: :ref:`bool<class_bool>`, test_only\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_AnimationNode_private_method__process>`
 
-**已弃用：** Currently this is mostly useless as there is a lack of many APIs to extend AnimationNode by GDScript. It is planned that a more flexible API using structures will be provided in the future.
+**Deprecated:** Currently this is mostly useless as there is a lack of many APIs to extend AnimationNode by GDScript. It is planned that a more flexible API using structures will be provided in the future.
 
-继承 :ref:`AnimationRootNode<class_AnimationRootNode>` 时，实现这个虚方法可以在这个动画节点进行处理时执行代码。参数 ``time`` 是相对增量，除非 ``seek`` 为 ``true``\ ，此时为绝对增量。
+When inheriting from :ref:`AnimationRootNode<class_AnimationRootNode>`, implement this virtual method to run some code when this animation node is processed. The ``time`` parameter is a relative delta, unless ``seek`` is ``true``, in which case it is absolute.
 
-请在此处调用 :ref:`blend_input()<class_AnimationNode_method_blend_input>`\ 、\ :ref:`blend_node()<class_AnimationNode_method_blend_node>` 或 :ref:`blend_animation()<class_AnimationNode_method_blend_animation>` 函数。你也可以使用 :ref:`get_parameter()<class_AnimationNode_method_get_parameter>` 和 :ref:`set_parameter()<class_AnimationNode_method_set_parameter>` 来修改本地存储。
+Here, call the :ref:`blend_input()<class_AnimationNode_method_blend_input>`, :ref:`blend_node()<class_AnimationNode_method_blend_node>` or :ref:`blend_animation()<class_AnimationNode_method_blend_animation>` functions. You can also use :ref:`get_parameter()<class_AnimationNode_method_get_parameter>` and :ref:`set_parameter()<class_AnimationNode_method_set_parameter>` to modify local memory.
 
-这个函数应当返回这个增量。
+This function should return the delta.
 
 .. rst-class:: classref-item-separator
 
@@ -332,7 +332,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`bool<class_bool>` **add_input**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AnimationNode_method_add_input>`
 
-为节点添加一个输入。这只对创建用于 :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` 的动画节点有用。如果添加失败，返回 ``false``\ 。
+Adds an input to the animation node. This is only useful for animation nodes created for use in an :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`. If the addition fails, returns ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -344,9 +344,9 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 |void| **blend_animation**\ (\ animation\: :ref:`StringName<class_StringName>`, time\: :ref:`float<class_float>`, delta\: :ref:`float<class_float>`, seeked\: :ref:`bool<class_bool>`, is_external_seeking\: :ref:`bool<class_bool>`, blend\: :ref:`float<class_float>`, looped_flag\: :ref:`LoopedFlag<enum_Animation_LoopedFlag>` = 0\ ) :ref:`🔗<class_AnimationNode_method_blend_animation>`
 
-按 ``blend`` 量混合一个动画（名称必须在链接的 :ref:`AnimationPlayer<class_AnimationPlayer>` 中有效）。可以传入时间 ``time`` 和增量 ``delta``\ ，以及表示是否发生寻道的 ``seeked``\ 。
+Blends an animation by ``blend`` amount (name must be valid in the linked :ref:`AnimationPlayer<class_AnimationPlayer>`). A ``time`` and ``delta`` may be passed, as well as whether ``seeked`` happened.
 
-\ ``looped_flag`` 在循环后立即由内部处理使用。
+A ``looped_flag`` is used by internal processing immediately after the loop.
 
 .. rst-class:: classref-item-separator
 
@@ -358,7 +358,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`float<class_float>` **blend_input**\ (\ input_index\: :ref:`int<class_int>`, time\: :ref:`float<class_float>`, seek\: :ref:`bool<class_bool>`, is_external_seeking\: :ref:`bool<class_bool>`, blend\: :ref:`float<class_float>`, filter\: :ref:`FilterAction<enum_AnimationNode_FilterAction>` = 0, sync\: :ref:`bool<class_bool>` = true, test_only\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AnimationNode_method_blend_input>`
 
-混合一个输入。这只对为 :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` 创建的动画节点有用。时间参数 ``time`` 是一个相对的增量，除非 ``seek`` 是 ``true``\ ，此时它是绝对的。可以选择传入过滤模式。
+Blends an input. This is only useful for animation nodes created for an :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`. The ``time`` parameter is a relative delta, unless ``seek`` is ``true``, in which case it is absolute. A filter mode may be optionally passed.
 
 .. rst-class:: classref-item-separator
 
@@ -370,7 +370,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`float<class_float>` **blend_node**\ (\ name\: :ref:`StringName<class_StringName>`, node\: :ref:`AnimationNode<class_AnimationNode>`, time\: :ref:`float<class_float>`, seek\: :ref:`bool<class_bool>`, is_external_seeking\: :ref:`bool<class_bool>`, blend\: :ref:`float<class_float>`, filter\: :ref:`FilterAction<enum_AnimationNode_FilterAction>` = 0, sync\: :ref:`bool<class_bool>` = true, test_only\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AnimationNode_method_blend_node>`
 
-混合另一个动画节点（在这个动画节点包含子动画节点的情况下）。这个函数只有在你继承 :ref:`AnimationRootNode<class_AnimationRootNode>` 时才有用，否则编辑器在添加节点时不会显示你的动画节点。
+Blend another animation node (in case this animation node contains child animation nodes). This function is only useful if you inherit from :ref:`AnimationRootNode<class_AnimationRootNode>` instead, otherwise editors will not display your animation node for addition.
 
 .. rst-class:: classref-item-separator
 
@@ -382,7 +382,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`int<class_int>` **find_input**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_AnimationNode_method_find_input>`
 
-返回与名称 ``name`` 相关的输入索引，如果不存在则返回 ``-1``\ 。
+Returns the input index which corresponds to ``name``. If not found, returns ``-1``.
 
 .. rst-class:: classref-item-separator
 
@@ -394,7 +394,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`int<class_int>` **get_input_count**\ (\ ) |const| :ref:`🔗<class_AnimationNode_method_get_input_count>`
 
-这个动画节点的输入数量，只对进入 :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` 的动画节点有用。
+Amount of inputs in this animation node, only useful for animation nodes that go into :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
 
 .. rst-class:: classref-item-separator
 
@@ -406,7 +406,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`String<class_String>` **get_input_name**\ (\ input\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AnimationNode_method_get_input_name>`
 
-通过索引获取输入的名称。
+Gets the name of an input by index.
 
 .. rst-class:: classref-item-separator
 
@@ -418,7 +418,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`Variant<class_Variant>` **get_parameter**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_AnimationNode_method_get_parameter>`
 
-获取一个参数的值。参数是你的动画节点使用的自定义本地内存，给定的资源可以在多个树中重复使用。
+Gets the value of a parameter. Parameters are custom local memory used for your animation nodes, given a resource can be reused in multiple trees.
 
 .. rst-class:: classref-item-separator
 
@@ -430,9 +430,9 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`int<class_int>` **get_processing_animation_tree_instance_id**\ (\ ) |const| :ref:`🔗<class_AnimationNode_method_get_processing_animation_tree_instance_id>`
 
-返回拥有此节点的\ :ref:`AnimationTree<class_AnimationTree>`\ 对象ID。
+Returns the object id of the :ref:`AnimationTree<class_AnimationTree>` that owns this node.
 
-\ **注意：**\ 此方法应仅在\ :ref:`AnimationNodeExtension._process_animation_node()<class_AnimationNodeExtension_private_method__process_animation_node>`\ 方法内部调用，否则将返回一个无效ID。
+\ **Note:** This method should only be called from within the :ref:`AnimationNodeExtension._process_animation_node()<class_AnimationNodeExtension_private_method__process_animation_node>` method, and will return an invalid id otherwise.
 
 .. rst-class:: classref-item-separator
 
@@ -444,7 +444,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`bool<class_bool>` **is_path_filtered**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) |const| :ref:`🔗<class_AnimationNode_method_is_path_filtered>`
 
-如果给定的路径被过滤，则返回 ``true``\ 。
+Returns ``true`` if the given path is filtered.
 
 .. rst-class:: classref-item-separator
 
@@ -456,7 +456,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`bool<class_bool>` **is_process_testing**\ (\ ) |const| :ref:`🔗<class_AnimationNode_method_is_process_testing>`
 
-如果该动画节点正在仅测试模式下处理，则返回 ``true``\ 。
+Returns ``true`` if this animation node is being processed in test-only mode.
 
 .. rst-class:: classref-item-separator
 
@@ -468,7 +468,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 |void| **remove_input**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AnimationNode_method_remove_input>`
 
-移除输入，仅在处于非活动状态时调用此输入。
+Removes an input, call this only when inactive.
 
 .. rst-class:: classref-item-separator
 
@@ -480,7 +480,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 |void| **set_filter_path**\ (\ path\: :ref:`NodePath<class_NodePath>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_AnimationNode_method_set_filter_path>`
 
-添加或移除筛选器的路径。
+Adds or removes a path for the filter.
 
 .. rst-class:: classref-item-separator
 
@@ -492,7 +492,7 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`bool<class_bool>` **set_input_name**\ (\ input\: :ref:`int<class_int>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AnimationNode_method_set_input_name>`
 
-在给定的 ``input`` 索引处设置输入的名称。如果设置失败，返回 ``false``\ 。
+Sets the name of the input at the given ``input`` index. If the setting fails, returns ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -504,14 +504,14 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 |void| **set_parameter**\ (\ name\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_AnimationNode_method_set_parameter>`
 
-设置一个自定义参数。这些参数被用作本地内存，因为资源可以在树或场景中重复使用。
+Sets a custom parameter. These are used as local memory, because resources can be reused across the tree or scenes.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

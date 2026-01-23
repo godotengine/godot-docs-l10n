@@ -192,9 +192,9 @@ Descripciones de Propiedades
 - |void| **set_excluded_regions**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **get_excluded_regions**\ (\ )
 
-The list of region :ref:`RID<class_RID>`\ s that will be excluded from the path query. Use :ref:`NavigationRegion2D.get_rid()<class_NavigationRegion2D_method_get_rid>` to get the :ref:`RID<class_RID>` associated with a :ref:`NavigationRegion2D<class_NavigationRegion2D>` node.
+La lista de :ref:`RID<class_RID>`\ s de región que serán excluidos de la consulta de ruta. Usa :ref:`NavigationRegion2D.get_rid()<class_NavigationRegion2D_method_get_rid>` para obtener el :ref:`RID<class_RID>` asociado a un nodo :ref:`NavigationRegion2D<class_NavigationRegion2D>`.
 
-\ **Note:** The returned array is copied and any changes to it will not update the original property value. To update the value you need to modify the returned array, and then set it to the property again.
+\ **Nota:** El array devuelto es copiado y cualquier cambio en él no actualizará el valor de la propiedad original. Para actualizar el valor, necesitas modificar el array devuelto y luego establecerlo de nuevo en la propiedad.
 
 .. rst-class:: classref-item-separator
 
@@ -211,9 +211,9 @@ The list of region :ref:`RID<class_RID>`\ s that will be excluded from the path 
 - |void| **set_included_regions**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **get_included_regions**\ (\ )
 
-The list of region :ref:`RID<class_RID>`\ s that will be included by the path query. Use :ref:`NavigationRegion2D.get_rid()<class_NavigationRegion2D_method_get_rid>` to get the :ref:`RID<class_RID>` associated with a :ref:`NavigationRegion2D<class_NavigationRegion2D>` node. If left empty all regions are included. If a region ends up being both included and excluded at the same time it will be excluded.
+La lista de :ref:`RID<class_RID>`\ s de región que serán incluidos por la consulta de ruta. Usa :ref:`NavigationRegion2D.get_rid()<class_NavigationRegion2D_method_get_rid>` para obtener el :ref:`RID<class_RID>` asociado a un nodo :ref:`NavigationRegion2D<class_NavigationRegion2D>`. Si se deja vacío, se incluyen todas las regiones. Si una región termina siendo incluida y excluida al mismo tiempo, será excluida.
 
-\ **Note:** The returned array is copied and any changes to it will not update the original property value. To update the value you need to modify the returned array, and then set it to the property again.
+\ **Nota:** El array devuelto es copiado y cualquier cambio en él no actualizará el valor de la propiedad original. Para actualizar el valor, necesitas modificar el array devuelto y luego establecerlo de nuevo en la propiedad.
 
 .. rst-class:: classref-item-separator
 
@@ -247,7 +247,7 @@ El mapa de navegación :ref:`RID<class_RID>` utilizado en la consulta de ruta.
 - |void| **set_metadata_flags**\ (\ value\: |bitfield|\[:ref:`PathMetadataFlags<enum_NavigationPathQueryParameters2D_PathMetadataFlags>`\]\ )
 - |bitfield|\[:ref:`PathMetadataFlags<enum_NavigationPathQueryParameters2D_PathMetadataFlags>`\] **get_metadata_flags**\ (\ )
 
-Additional information to include with the navigation path.
+Información adicional a incluir con la ruta de navegación.
 
 .. rst-class:: classref-item-separator
 
@@ -264,7 +264,7 @@ Additional information to include with the navigation path.
 - |void| **set_navigation_layers**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_navigation_layers**\ (\ )
 
-The navigation layers the query will use (as a bitmask).
+Las capas de navegación que usará la consulta (como una máscara de bits).
 
 .. rst-class:: classref-item-separator
 
@@ -298,7 +298,7 @@ The path postprocessing applied to the raw path corridor found by the :ref:`path
 - |void| **set_path_return_max_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_path_return_max_length**\ (\ )
 
-The maximum allowed length of the returned path in world units. A path will be clipped when going over this length. A value of ``0`` or below counts as disabled.
+La longitud máxima permitida de la ruta devuelta en unidades del mundo. Una ruta se cortará al exceder esta longitud. Un valor de ``0`` o inferior se considera deshabilitado.
 
 .. rst-class:: classref-item-separator
 

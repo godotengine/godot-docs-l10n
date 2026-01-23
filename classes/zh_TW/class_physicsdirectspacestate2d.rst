@@ -5,16 +5,16 @@
 PhysicsDirectSpaceState2D
 =========================
 
-**繼承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`PhysicsDirectSpaceState2DExtension<class_PhysicsDirectSpaceState2DExtension>`
+**Inherited By:** :ref:`PhysicsDirectSpaceState2DExtension<class_PhysicsDirectSpaceState2DExtension>`
 
-提供對 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 中物理空間的直接存取。
+Provides direct access to a physics space in the :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 Provides direct access to a physics space in the :ref:`PhysicsServer2D<class_PhysicsServer2D>`. It's used mainly to do queries against objects and areas residing in a given space.
 
@@ -22,17 +22,17 @@ Provides direct access to a physics space in the :ref:`PhysicsServer2D<class_Phy
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`物理介紹 <../tutorials/physics/physics_introduction>`
+- :doc:`Physics introduction <../tutorials/physics/physics_introduction>`
 
-- :doc:`發射射線 <../tutorials/physics/ray-casting>`
+- :doc:`Ray-casting <../tutorials/physics/ray-casting>`
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -57,8 +57,8 @@ Provides direct access to a physics space in the :ref:`PhysicsServer2D<class_Phy
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_PhysicsDirectSpaceState2D_method_cast_motion:
 
@@ -66,11 +66,11 @@ Provides direct access to a physics space in the :ref:`PhysicsServer2D<class_Phy
 
 :ref:`PackedFloat32Array<class_PackedFloat32Array>` **cast_motion**\ (\ parameters\: :ref:`PhysicsShapeQueryParameters2D<class_PhysicsShapeQueryParameters2D>`\ ) :ref:`🔗<class_PhysicsDirectSpaceState2D_method_cast_motion>`
 
-檢查 :ref:`Shape2D<class_Shape2D>` 能夠在不發生碰撞的情況下移動多遠。包括形狀和運動在內的所有查詢參數都通過 :ref:`PhysicsShapeQueryParameters2D<class_PhysicsShapeQueryParameters2D>` 物件提供。
+Checks how far a :ref:`Shape2D<class_Shape2D>` can move without colliding. All the parameters for the query, including the shape and the motion, are supplied through a :ref:`PhysicsShapeQueryParameters2D<class_PhysicsShapeQueryParameters2D>` object.
 
-返回包含該運動的安全和不安全比例（在 0 和 1 之間）的陣列。安全比例是該運動能夠不發生碰撞的最大分數。不安全比例是發生碰撞所需的最小分數。如果沒有偵測到碰撞，則返回的結果為 ``[1.0, 1.0]``\ 。
+Returns an array with the safe and unsafe proportions (between 0 and 1) of the motion. The safe proportion is the maximum fraction of the motion that can be made without a collision. The unsafe proportion is the minimum fraction of the distance that must be moved for a collision. If no collision is detected a result of ``[1.0, 1.0]`` will be returned.
 
-\ **注意：**\ 該形狀已碰撞的 :ref:`Shape2D<class_Shape2D>` 會被忽略，例如形狀在其內部。請使用 :ref:`collide_shape()<class_PhysicsDirectSpaceState2D_method_collide_shape>` 確定該形狀已碰撞的 :ref:`Shape2D<class_Shape2D>`\ 。
+\ **Note:** Any :ref:`Shape2D<class_Shape2D>`\ s that the shape is already colliding with e.g. inside of, will be ignored. Use :ref:`collide_shape()<class_PhysicsDirectSpaceState2D_method_collide_shape>` to determine the :ref:`Shape2D<class_Shape2D>`\ s that the shape is already colliding with.
 
 .. rst-class:: classref-item-separator
 
@@ -82,9 +82,9 @@ Provides direct access to a physics space in the :ref:`PhysicsServer2D<class_Phy
 
 :ref:`Array<class_Array>`\[:ref:`Vector2<class_Vector2>`\] **collide_shape**\ (\ parameters\: :ref:`PhysicsShapeQueryParameters2D<class_PhysicsShapeQueryParameters2D>`, max_results\: :ref:`int<class_int>` = 32\ ) :ref:`🔗<class_PhysicsDirectSpaceState2D_method_collide_shape>`
 
-檢查通過 :ref:`PhysicsShapeQueryParameters2D<class_PhysicsShapeQueryParameters2D>` 物件給出的一個形狀與該空間的交點。結果陣列包含該形狀與另一個形狀相交處的點的列表。與 :ref:`intersect_shape()<class_PhysicsDirectSpaceState2D_method_intersect_shape>` 一樣，可以限制返回結果的數量以節省處理時間。
+Checks the intersections of a shape, given through a :ref:`PhysicsShapeQueryParameters2D<class_PhysicsShapeQueryParameters2D>` object, against the space. The resulting array contains a list of points where the shape intersects another. Like with :ref:`intersect_shape()<class_PhysicsDirectSpaceState2D_method_intersect_shape>`, the number of returned results can be limited to save processing time.
 
-返回的點是接觸點對的一個列表。對於每一對，第一個是在 :ref:`PhysicsShapeQueryParameters2D<class_PhysicsShapeQueryParameters2D>` 對象中傳遞的形狀，第二個是來自物理空間的碰撞形狀。
+Returned points are a list of pairs of contact points. For each pair the first one is in the shape passed in :ref:`PhysicsShapeQueryParameters2D<class_PhysicsShapeQueryParameters2D>` object, second one is in the collided shape from the physics space.
 
 .. rst-class:: classref-item-separator
 
@@ -122,19 +122,19 @@ If the shape did not intersect anything, then an empty dictionary is returned in
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **intersect_point**\ (\ parameters\: :ref:`PhysicsPointQueryParameters2D<class_PhysicsPointQueryParameters2D>`, max_results\: :ref:`int<class_int>` = 32\ ) :ref:`🔗<class_PhysicsDirectSpaceState2D_method_intersect_point>`
 
-檢查點是否在任何實體形狀內。位置和其他參數通過 :ref:`PhysicsPointQueryParameters2D<class_PhysicsPointQueryParameters2D>` 定義。點所在的形狀在包含具有以下欄位的字典的陣列中返回：
+Checks whether a point is inside any solid shape. Position and other parameters are defined through :ref:`PhysicsPointQueryParameters2D<class_PhysicsPointQueryParameters2D>`. The shapes the point is inside of are returned in an array containing dictionaries with the following fields:
 
-\ ``collider``\ ：碰撞對象。
+\ ``collider``: The colliding object.
 
-\ ``collider_id``\ ：碰撞對象的 ID。
+\ ``collider_id``: The colliding object's ID.
 
-\ ``rid``\ ：相交對象的 :ref:`RID<class_RID>`\ 。
+\ ``rid``: The intersecting object's :ref:`RID<class_RID>`.
 
-\ ``shape``\ ：碰撞形狀的形狀索引。
+\ ``shape``: The shape index of the colliding shape.
 
-可以使用 ``max_results`` 參數限制相交的數量，以減少處理時間。
+The number of intersections can be limited with the ``max_results`` parameter, to reduce the processing time.
 
-\ **注意：**\ 在 ``Segments`` 建構模式下，\ :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>` 和 :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` 不是實體形狀。因此，它們不會被偵測到。
+\ **Note:** :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>`\ s and :ref:`CollisionPolygon2D<class_CollisionPolygon2D>`\ s in ``Segments`` build mode are not solid shapes. Therefore, they will not be detected.
 
 .. rst-class:: classref-item-separator
 
@@ -146,21 +146,21 @@ If the shape did not intersect anything, then an empty dictionary is returned in
 
 :ref:`Dictionary<class_Dictionary>` **intersect_ray**\ (\ parameters\: :ref:`PhysicsRayQueryParameters2D<class_PhysicsRayQueryParameters2D>`\ ) :ref:`🔗<class_PhysicsDirectSpaceState2D_method_intersect_ray>`
 
-與一個給定空間中的一個射線相交。射線位置和其他參數通過 :ref:`PhysicsRayQueryParameters2D<class_PhysicsRayQueryParameters2D>` 定義。返回的物件是一個包含以下欄位的字典：
+Intersects a ray in a given space. Ray position and other parameters are defined through :ref:`PhysicsRayQueryParameters2D<class_PhysicsRayQueryParameters2D>`. The returned object is a dictionary with the following fields:
 
-\ ``collider``\ ：該碰撞對象。
+\ ``collider``: The colliding object.
 
-\ ``collider_id``\ ：該碰撞對象的 ID。
+\ ``collider_id``: The colliding object's ID.
 
-\ ``normal``\ ：在相交點處該對象的表面法線；如果射線從形狀內部開始，並且 :ref:`PhysicsRayQueryParameters2D.hit_from_inside<class_PhysicsRayQueryParameters2D_property_hit_from_inside>` 為 ``true``\ ，則為 ``Vector2(0, 0)``\ 。
+\ ``normal``: The object's surface normal at the intersection point, or ``Vector2(0, 0)`` if the ray starts inside the shape and :ref:`PhysicsRayQueryParameters2D.hit_from_inside<class_PhysicsRayQueryParameters2D_property_hit_from_inside>` is ``true``.
 
-\ ``position``\ ：該相交點。
+\ ``position``: The intersection point.
 
-\ ``rid``\ ：該相交對象的 :ref:`RID<class_RID>`\ 。
+\ ``rid``: The intersecting object's :ref:`RID<class_RID>`.
 
-\ ``shape``\ ：該碰撞形狀的形狀索引。
+\ ``shape``: The shape index of the colliding shape.
 
-如果射線沒有與任何東西相交，則返回一個空字典。
+If the ray did not intersect anything, then an empty dictionary is returned instead.
 
 .. rst-class:: classref-item-separator
 
@@ -172,24 +172,24 @@ If the shape did not intersect anything, then an empty dictionary is returned in
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **intersect_shape**\ (\ parameters\: :ref:`PhysicsShapeQueryParameters2D<class_PhysicsShapeQueryParameters2D>`, max_results\: :ref:`int<class_int>` = 32\ ) :ref:`🔗<class_PhysicsDirectSpaceState2D_method_intersect_shape>`
 
-檢查通過 :ref:`PhysicsShapeQueryParameters2D<class_PhysicsShapeQueryParameters2D>` 物件給出的形狀與空間的交點。相交的形狀會以陣列的形式返回，該陣列包含有以下欄位的字典：
+Checks the intersections of a shape, given through a :ref:`PhysicsShapeQueryParameters2D<class_PhysicsShapeQueryParameters2D>` object, against the space. The intersected shapes are returned in an array containing dictionaries with the following fields:
 
-\ ``collider``\ ：碰撞對象。
+\ ``collider``: The colliding object.
 
-\ ``collider_id``\ ：碰撞對象的 ID。
+\ ``collider_id``: The colliding object's ID.
 
-\ ``rid``\ ：相交對象的\ :ref:`RID<class_RID>`\ 。
+\ ``rid``: The intersecting object's :ref:`RID<class_RID>`.
 
-\ ``shape``\ ：碰撞形狀的形狀索引。
+\ ``shape``: The shape index of the colliding shape.
 
-可以使用 ``max_results`` 參數限制相交的數量，以減少處理時間。
+The number of intersections can be limited with the ``max_results`` parameter, to reduce the processing time.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

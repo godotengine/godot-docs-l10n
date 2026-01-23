@@ -5,21 +5,21 @@
 SpriteFrames
 ============
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-精靈影格庫，用於 AnimatedSprite2D 和 AnimatedSprite3D。
+Sprite frame library for AnimatedSprite2D and AnimatedSprite3D.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-:ref:`AnimatedSprite2D<class_AnimatedSprite2D>` 和 :ref:`AnimatedSprite3D<class_AnimatedSprite3D>` 節點的精靈影格庫。包含影格和用於播放的動畫信息。
+Sprite frame library for an :ref:`AnimatedSprite2D<class_AnimatedSprite2D>` or :ref:`AnimatedSprite3D<class_AnimatedSprite3D>` node. Contains frames and animation data for playback.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -68,8 +68,8 @@ SpriteFrames
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_SpriteFrames_method_add_animation:
 
@@ -77,7 +77,7 @@ SpriteFrames
 
 |void| **add_animation**\ (\ anim\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_SpriteFrames_method_add_animation>`
 
-向庫中新增新動畫 ``anim``\ 。
+Adds a new ``anim`` animation to the library.
 
 .. rst-class:: classref-item-separator
 
@@ -101,7 +101,7 @@ Adds a frame to the ``anim`` animation. If ``at_position`` is ``-1``, the frame 
 
 |void| **clear**\ (\ anim\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_SpriteFrames_method_clear>`
 
-刪除 ``anim`` 動畫中的所有影格。
+Removes all frames from the ``anim`` animation.
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +113,7 @@ Adds a frame to the ``anim`` animation. If ``at_position`` is ``-1``, the frame 
 
 |void| **clear_all**\ (\ ) :ref:`🔗<class_SpriteFrames_method_clear_all>`
 
-移除所有動畫。將建立名為 ``default`` 的空動畫。
+Removes all animations. An empty ``default`` animation will be created.
 
 .. rst-class:: classref-item-separator
 
@@ -137,7 +137,7 @@ Duplicates the animation ``anim_from`` to a new animation named ``anim_to``. Fai
 
 :ref:`bool<class_bool>` **get_animation_loop**\ (\ anim\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_SpriteFrames_method_get_animation_loop>`
 
-當指定的動畫被配置為結束播放後迴圈時，返回 ``true``\ ，否則返回 ``false``\ 。
+Returns ``true`` if the given animation is configured to loop when it finishes playing. Otherwise, returns ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ Duplicates the animation ``anim_from`` to a new animation named ``anim_to``. Fai
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_animation_names**\ (\ ) |const| :ref:`🔗<class_SpriteFrames_method_get_animation_names>`
 
-返回一個包含每個動畫的名稱的陣列。值按字母順序排列。
+Returns an array containing the names associated to each animation. Values are placed in alphabetical order.
 
 .. rst-class:: classref-item-separator
 
@@ -161,7 +161,7 @@ Duplicates the animation ``anim_from`` to a new animation named ``anim_to``. Fai
 
 :ref:`float<class_float>` **get_animation_speed**\ (\ anim\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_SpriteFrames_method_get_animation_speed>`
 
-返回 ``anim`` 動畫的速度，單位為影格每秒。
+Returns the speed in frames per second for the ``anim`` animation.
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +173,7 @@ Duplicates the animation ``anim_from`` to a new animation named ``anim_to``. Fai
 
 :ref:`int<class_int>` **get_frame_count**\ (\ anim\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_SpriteFrames_method_get_frame_count>`
 
-返回 ``anim`` 動畫中的影格數。
+Returns the number of frames for the ``anim`` animation.
 
 .. rst-class:: classref-item-separator
 
@@ -185,13 +185,13 @@ Duplicates the animation ``anim_from`` to a new animation named ``anim_to``. Fai
 
 :ref:`float<class_float>` **get_frame_duration**\ (\ anim\: :ref:`StringName<class_StringName>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpriteFrames_method_get_frame_duration>`
 
-返回 ``anim`` 動畫中 ``idx`` 影格的相對持續時間（預設為 ``1.0``\ ）。例如，持續時間為 ``2.0`` 的影格的顯示長度是持續時間為 ``1.0`` 的影格的兩倍。可以使用如下公式計算某一影格的絕對持續時間（單位為秒）：
+Returns a relative duration of the frame ``idx`` in the ``anim`` animation (defaults to ``1.0``). For example, a frame with a duration of ``2.0`` is displayed twice as long as a frame with a duration of ``1.0``. You can calculate the absolute duration (in seconds) of a frame using the following formula:
 
 ::
 
     absolute_duration = relative_duration / (animation_fps * abs(playing_speed))
 
-在這個例子中，\ ``playing_speed`` 是 :ref:`AnimatedSprite2D.get_playing_speed()<class_AnimatedSprite2D_method_get_playing_speed>` 或 :ref:`AnimatedSprite3D.get_playing_speed()<class_AnimatedSprite3D_method_get_playing_speed>`\ 。
+In this example, ``playing_speed`` refers to either :ref:`AnimatedSprite2D.get_playing_speed()<class_AnimatedSprite2D_method_get_playing_speed>` or :ref:`AnimatedSprite3D.get_playing_speed()<class_AnimatedSprite3D_method_get_playing_speed>`.
 
 .. rst-class:: classref-item-separator
 
@@ -203,7 +203,7 @@ Duplicates the animation ``anim_from`` to a new animation named ``anim_to``. Fai
 
 :ref:`Texture2D<class_Texture2D>` **get_frame_texture**\ (\ anim\: :ref:`StringName<class_StringName>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpriteFrames_method_get_frame_texture>`
 
-返回 ``anim`` 動畫中影格索引為 ``idx`` 的紋理。
+Returns the texture of the frame ``idx`` in the ``anim`` animation.
 
 .. rst-class:: classref-item-separator
 
@@ -215,7 +215,7 @@ Duplicates the animation ``anim_from`` to a new animation named ``anim_to``. Fai
 
 :ref:`bool<class_bool>` **has_animation**\ (\ anim\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_SpriteFrames_method_has_animation>`
 
-如果 ``anim`` 動畫存在，則返回 ``true``\ 。
+Returns ``true`` if the ``anim`` animation exists.
 
 .. rst-class:: classref-item-separator
 
@@ -227,7 +227,7 @@ Duplicates the animation ``anim_from`` to a new animation named ``anim_to``. Fai
 
 |void| **remove_animation**\ (\ anim\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_SpriteFrames_method_remove_animation>`
 
-移除 ``anim`` 動畫。
+Removes the ``anim`` animation.
 
 .. rst-class:: classref-item-separator
 
@@ -239,7 +239,7 @@ Duplicates the animation ``anim_from`` to a new animation named ``anim_to``. Fai
 
 |void| **remove_frame**\ (\ anim\: :ref:`StringName<class_StringName>`, idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SpriteFrames_method_remove_frame>`
 
-移除 ``anim`` 動畫中索引為 ``idx`` 的影格。
+Removes the ``anim`` animation's frame ``idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -251,7 +251,7 @@ Duplicates the animation ``anim_from`` to a new animation named ``anim_to``. Fai
 
 |void| **rename_animation**\ (\ anim\: :ref:`StringName<class_StringName>`, newname\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_SpriteFrames_method_rename_animation>`
 
-將 ``anim`` 動畫的名稱更改為 ``newname``\ 。
+Changes the ``anim`` animation's name to ``newname``.
 
 .. rst-class:: classref-item-separator
 
@@ -263,7 +263,7 @@ Duplicates the animation ``anim_from`` to a new animation named ``anim_to``. Fai
 
 |void| **set_animation_loop**\ (\ anim\: :ref:`StringName<class_StringName>`, loop\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SpriteFrames_method_set_animation_loop>`
 
-如果 ``loop`` 為 ``true``\ ，則 ``anim`` 動畫會在到達結尾時循環，逆序播放時則為到達開頭時迴圈。
+If ``loop`` is ``true``, the ``anim`` animation will loop when it reaches the end, or the start if it is played in reverse.
 
 .. rst-class:: classref-item-separator
 
@@ -275,7 +275,7 @@ Duplicates the animation ``anim_from`` to a new animation named ``anim_to``. Fai
 
 |void| **set_animation_speed**\ (\ anim\: :ref:`StringName<class_StringName>`, fps\: :ref:`float<class_float>`\ ) :ref:`🔗<class_SpriteFrames_method_set_animation_speed>`
 
-設定 ``anim`` 動畫的速度，單位為影格每秒。
+Sets the speed for the ``anim`` animation in frames per second.
 
 .. rst-class:: classref-item-separator
 
@@ -289,12 +289,12 @@ Duplicates the animation ``anim_from`` to a new animation named ``anim_to``. Fai
 
 Sets the ``texture`` and the ``duration`` of the frame ``idx`` in the ``anim`` animation. ``duration`` specifies the relative duration, see :ref:`get_frame_duration()<class_SpriteFrames_method_get_frame_duration>` for details.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

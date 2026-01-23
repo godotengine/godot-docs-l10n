@@ -5,25 +5,25 @@
 TouchScreenButton
 =================
 
-**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-触摸屏设备的按钮，供游戏使用。
+Button for touch screen devices for gameplay use.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-TouchScreenButton 允许你为触摸设备创建屏幕上的按钮。其为游戏使用，比如在必须触摸才能移动的设备。与 :ref:`Button<class_Button>` 不同，TouchScreenButton 原生支持多点触摸。几个 TouchScreenButton 可以通过触摸输入同时被按下。
+TouchScreenButton allows you to create on-screen buttons for touch devices. It's intended for gameplay use, such as a unit you have to touch to move. Unlike :ref:`Button<class_Button>`, TouchScreenButton supports multitouch out of the box. Several TouchScreenButtons can be pressed at the same time with touch input.
 
-这个节点继承自 :ref:`Node2D<class_Node2D>`\ 。与 :ref:`Control<class_Control>` 节点不同，你不能在它上面设置锚点。如果要创建菜单或用户界面，可用 :ref:`Button<class_Button>` 节点代替。为了使按钮节点对触摸事件作出反应，可在项目设置中启用 :ref:`ProjectSettings.input_devices/pointing/emulate_mouse_from_touch<class_ProjectSettings_property_input_devices/pointing/emulate_mouse_from_touch>`\ 。
+This node inherits from :ref:`Node2D<class_Node2D>`. Unlike with :ref:`Control<class_Control>` nodes, you cannot set anchors on it. If you want to create menus or user interfaces, you may want to use :ref:`Button<class_Button>` nodes instead. To make button nodes react to touch events, you can enable :ref:`ProjectSettings.input_devices/pointing/emulate_mouse_from_touch<class_ProjectSettings_property_input_devices/pointing/emulate_mouse_from_touch>` in the Project Settings.
 
-可将 TouchScreenButton 配置为只在触摸设备上可见，有助你同时为桌面和移动设备开发游戏。
+You can configure TouchScreenButton to be visible only on touch devices, helping you develop your game both for desktop and mobile devices.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ TouchScreenButton 允许你为触摸设备创建屏幕上的按钮。其为游�
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -66,8 +66,8 @@ TouchScreenButton 允许你为触摸设备创建屏幕上的按钮。其为游�
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_TouchScreenButton_signal_pressed:
 
@@ -75,7 +75,7 @@ TouchScreenButton 允许你为触摸设备创建屏幕上的按钮。其为游�
 
 **pressed**\ (\ ) :ref:`🔗<class_TouchScreenButton_signal_pressed>`
 
-当按钮被按下时触发，即向下。
+Emitted when the button is pressed (down).
 
 .. rst-class:: classref-item-separator
 
@@ -87,7 +87,7 @@ TouchScreenButton 允许你为触摸设备创建屏幕上的按钮。其为游�
 
 **released**\ (\ ) :ref:`🔗<class_TouchScreenButton_signal_released>`
 
-当按钮被释放时触发，即向上。
+Emitted when the button is released (up).
 
 .. rst-class:: classref-section-separator
 
@@ -95,8 +95,8 @@ TouchScreenButton 允许你为触摸设备创建屏幕上的按钮。其为游�
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_TouchScreenButton_VisibilityMode:
 
@@ -110,7 +110,7 @@ enum **VisibilityMode**: :ref:`🔗<enum_TouchScreenButton_VisibilityMode>`
 
 :ref:`VisibilityMode<enum_TouchScreenButton_VisibilityMode>` **VISIBILITY_ALWAYS** = ``0``
 
-始终可见。
+Always visible.
 
 .. _class_TouchScreenButton_constant_VISIBILITY_TOUCHSCREEN_ONLY:
 
@@ -118,7 +118,7 @@ enum **VisibilityMode**: :ref:`🔗<enum_TouchScreenButton_VisibilityMode>`
 
 :ref:`VisibilityMode<enum_TouchScreenButton_VisibilityMode>` **VISIBILITY_TOUCHSCREEN_ONLY** = ``1``
 
-仅在触摸屏上可以看到。
+Visible on touch screens only.
 
 .. rst-class:: classref-section-separator
 
@@ -126,8 +126,8 @@ enum **VisibilityMode**: :ref:`🔗<enum_TouchScreenButton_VisibilityMode>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_TouchScreenButton_property_action:
 
@@ -140,7 +140,7 @@ enum **VisibilityMode**: :ref:`🔗<enum_TouchScreenButton_VisibilityMode>`
 - |void| **set_action**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_action**\ (\ )
 
-按钮的动作。动作可以用 :ref:`InputEventAction<class_InputEventAction>` 来处理。
+The button's action. Actions can be handled with :ref:`InputEventAction<class_InputEventAction>`.
 
 .. rst-class:: classref-item-separator
 
@@ -157,7 +157,7 @@ enum **VisibilityMode**: :ref:`🔗<enum_TouchScreenButton_VisibilityMode>`
 - |void| **set_bitmask**\ (\ value\: :ref:`BitMap<class_BitMap>`\ )
 - :ref:`BitMap<class_BitMap>` **get_bitmask**\ (\ )
 
-按钮的位掩码。
+The button's bitmask.
 
 .. rst-class:: classref-item-separator
 
@@ -174,9 +174,9 @@ enum **VisibilityMode**: :ref:`🔗<enum_TouchScreenButton_VisibilityMode>`
 - |void| **set_passby_press**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_passby_press_enabled**\ (\ )
 
-如果为 ``true``\ ，只要按下的手指进出按钮，就会发出 :ref:`pressed<class_TouchScreenButton_signal_pressed>` 和 :ref:`released<class_TouchScreenButton_signal_released>` 信号，即使压力开始于按钮的有效区域之外。
+If ``true``, the :ref:`pressed<class_TouchScreenButton_signal_pressed>` and :ref:`released<class_TouchScreenButton_signal_released>` signals are emitted whenever a pressed finger goes in and out of the button, even if the pressure started outside the active area of the button.
 
-\ **注意：**\ 这是一种“pass-by”的按压模式 ，而不是“bypass”。
+\ **Note:** This is a "pass-by" (not "bypass") press mode.
 
 .. rst-class:: classref-item-separator
 
@@ -193,7 +193,7 @@ enum **VisibilityMode**: :ref:`🔗<enum_TouchScreenButton_VisibilityMode>`
 - |void| **set_shape**\ (\ value\: :ref:`Shape2D<class_Shape2D>`\ )
 - :ref:`Shape2D<class_Shape2D>` **get_shape**\ (\ )
 
-该按钮的形状。
+The button's shape.
 
 .. rst-class:: classref-item-separator
 
@@ -210,7 +210,7 @@ enum **VisibilityMode**: :ref:`🔗<enum_TouchScreenButton_VisibilityMode>`
 - |void| **set_shape_centered**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_shape_centered**\ (\ )
 
-如果为 ``true``\ ，按钮的形状会在提供的纹理中居中。如果没有使用纹理，这个属性就没有效果。
+If ``true``, the button's shape is centered in the provided texture. If no texture is used, this property has no effect.
 
 .. rst-class:: classref-item-separator
 
@@ -227,7 +227,7 @@ enum **VisibilityMode**: :ref:`🔗<enum_TouchScreenButton_VisibilityMode>`
 - |void| **set_shape_visible**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_shape_visible**\ (\ )
 
-如果为 ``true``\ ，则该按钮的形状在编辑器中可见。
+If ``true``, the button's shape is visible in the editor.
 
 .. rst-class:: classref-item-separator
 
@@ -244,7 +244,7 @@ enum **VisibilityMode**: :ref:`🔗<enum_TouchScreenButton_VisibilityMode>`
 - |void| **set_texture_normal**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture_normal**\ (\ )
 
-该按钮在正常状态下的纹理。
+The button's texture for the normal state.
 
 .. rst-class:: classref-item-separator
 
@@ -261,7 +261,7 @@ enum **VisibilityMode**: :ref:`🔗<enum_TouchScreenButton_VisibilityMode>`
 - |void| **set_texture_pressed**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture_pressed**\ (\ )
 
-按钮在被按下状态时的纹理。
+The button's texture for the pressed state.
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,7 @@ enum **VisibilityMode**: :ref:`🔗<enum_TouchScreenButton_VisibilityMode>`
 - |void| **set_visibility_mode**\ (\ value\: :ref:`VisibilityMode<enum_TouchScreenButton_VisibilityMode>`\ )
 - :ref:`VisibilityMode<enum_TouchScreenButton_VisibilityMode>` **get_visibility_mode**\ (\ )
 
-按钮的可见性模式。
+The button's visibility mode.
 
 .. rst-class:: classref-section-separator
 
@@ -286,8 +286,8 @@ enum **VisibilityMode**: :ref:`🔗<enum_TouchScreenButton_VisibilityMode>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_TouchScreenButton_method_is_pressed:
 
@@ -295,14 +295,14 @@ enum **VisibilityMode**: :ref:`🔗<enum_TouchScreenButton_VisibilityMode>`
 
 :ref:`bool<class_bool>` **is_pressed**\ (\ ) |const| :ref:`🔗<class_TouchScreenButton_method_is_pressed>`
 
-如果这个按钮当前被按下，则返回 ``true``\ 。
+Returns ``true`` if this button is currently pressed.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

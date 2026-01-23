@@ -5,25 +5,25 @@
 AtlasTexture
 ============
 
-**继承：** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-裁剪其他 Texture2D 的纹理。
+A texture that crops out part of another Texture2D.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-:ref:`Texture2D<class_Texture2D>` 资源，只绘制 :ref:`atlas<class_AtlasTexture_property_atlas>` 纹理中由 :ref:`region<class_AtlasTexture_property_region>` 所定义的那部分区域。还可以设置额外的边距 :ref:`margin<class_AtlasTexture_property_margin>`\ ，适用于进行较小的调整。
+:ref:`Texture2D<class_Texture2D>` resource that draws only part of its :ref:`atlas<class_AtlasTexture_property_atlas>` texture, as defined by the :ref:`region<class_AtlasTexture_property_region>`. An additional :ref:`margin<class_AtlasTexture_property_margin>` can also be set, which is useful for small adjustments.
 
-可以从同一个 :ref:`atlas<class_AtlasTexture_property_atlas>` 中裁剪出多个 **AtlasTexture** 资源。将许多较小的纹理打包成一个单一的大纹理有助于优化视频内存成本和渲染调用。
+Multiple **AtlasTexture** resources can be cropped from the same :ref:`atlas<class_AtlasTexture_property_atlas>`. Packing many smaller textures into a singular large texture helps to optimize video memory costs and render calls.
 
-\ **注意：**\ **AtlasTexture** 不能在 :ref:`AnimatedTexture<class_AnimatedTexture>` 中使用，也无法在 :ref:`TextureRect<class_TextureRect>`\ 、\ :ref:`Sprite2D<class_Sprite2D>` 等节点中正确平铺。要平铺 **AtlasTexture** 请修改 :ref:`region<class_AtlasTexture_property_region>`\ 。
+\ **Note:** **AtlasTexture** cannot be used in an :ref:`AnimatedTexture<class_AnimatedTexture>`, and will not tile properly in nodes such as :ref:`TextureRect<class_TextureRect>` or :ref:`Sprite2D<class_Sprite2D>`. To tile an **AtlasTexture**, modify its :ref:`region<class_AtlasTexture_property_region>` instead.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ AtlasTexture
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_AtlasTexture_property_atlas:
 
@@ -60,7 +60,7 @@ AtlasTexture
 - |void| **set_atlas**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_atlas**\ (\ )
 
-包含该图集的纹理。可以是任何继承自 :ref:`Texture2D<class_Texture2D>` 的类型，包括其他 **AtlasTexture**\ 。
+The texture that contains the atlas. Can be any type inheriting from :ref:`Texture2D<class_Texture2D>`, including another **AtlasTexture**.
 
 .. rst-class:: classref-item-separator
 
@@ -77,7 +77,7 @@ AtlasTexture
 - |void| **set_filter_clip**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_filter_clip**\ (\ )
 
-如果为 ``true``\ ，则 :ref:`region<class_AtlasTexture_property_region>` 之外的区域将被裁剪以避免周围纹理像素的渗色。
+If ``true``, the area outside of the :ref:`region<class_AtlasTexture_property_region>` is clipped to avoid bleeding of the surrounding texture pixels.
 
 .. rst-class:: classref-item-separator
 
@@ -94,7 +94,7 @@ AtlasTexture
 - |void| **set_margin**\ (\ value\: :ref:`Rect2<class_Rect2>`\ )
 - :ref:`Rect2<class_Rect2>` **get_margin**\ (\ )
 
-围绕 :ref:`region<class_AtlasTexture_property_region>` 的边距。对小的调整很有用。如果设置了该属性（编辑器中的“w”和“h”）的 :ref:`Rect2.size<class_Rect2_property_size>`\ ，则绘制的纹理将被调整大小以适合该边距。
+The margin around the :ref:`region<class_AtlasTexture_property_region>`. Useful for small adjustments. If the :ref:`Rect2.size<class_Rect2_property_size>` of this property ("w" and "h" in the editor) is set, the drawn texture is resized to fit within the margin.
 
 .. rst-class:: classref-item-separator
 
@@ -111,16 +111,16 @@ AtlasTexture
 - |void| **set_region**\ (\ value\: :ref:`Rect2<class_Rect2>`\ )
 - :ref:`Rect2<class_Rect2>` **get_region**\ (\ )
 
-用于绘制 :ref:`atlas<class_AtlasTexture_property_atlas>` 的区域。如果区域在任一方向上大小为 ``0``\ ，则该方向会使用 :ref:`atlas<class_AtlasTexture_property_atlas>` 的大小。
+The region used to draw the :ref:`atlas<class_AtlasTexture_property_atlas>`. If either dimension of the region's size is ``0``, the value from :ref:`atlas<class_AtlasTexture_property_atlas>` size will be used for that axis instead.
 
-\ **注意：**\ 图片大小总是整数，所以实际的区域大小会被向下取整。
+\ **Note:** The image size is always an integer, so the actual region size is rounded down.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

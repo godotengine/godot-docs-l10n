@@ -5,16 +5,16 @@
 Translation
 ===========
 
-**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**派生：** :ref:`OptimizedTranslation<class_OptimizedTranslation>`
+**Inherited By:** :ref:`OptimizedTranslation<class_OptimizedTranslation>`
 
-语言翻译，能够将一组字符串映射到对应的翻译。
+A language translation that maps a collection of strings to their individual translations.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
 **Translation** maps a collection of strings to their individual translations, and also provides convenience methods for pluralization.
 
@@ -22,19 +22,19 @@ A **Translation** consists of messages. A message is identified by its context a
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
-- :doc:`将游戏国际化 <../tutorials/i18n/internationalizing_games>`
+- :doc:`Internationalizing games <../tutorials/i18n/internationalizing_games>`
 
-- :doc:`使用 gettext 进行本地化 <../tutorials/i18n/localization_using_gettext>`
+- :doc:`Localization using gettext <../tutorials/i18n/localization_using_gettext>`
 
-- :doc:`区域设置 <../tutorials/i18n/locales>`
+- :doc:`Locales <../tutorials/i18n/locales>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -47,8 +47,8 @@ A **Translation** consists of messages. A message is identified by its context a
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -81,8 +81,8 @@ A **Translation** consists of messages. A message is identified by its context a
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_Translation_property_locale:
 
@@ -95,7 +95,7 @@ A **Translation** consists of messages. A message is identified by its context a
 - |void| **set_locale**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_locale**\ (\ )
 
-翻译的区域设置。
+The locale of the translation.
 
 .. rst-class:: classref-item-separator
 
@@ -122,8 +122,8 @@ If empty or invalid, default plural rules from :ref:`TranslationServer.get_plura
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_Translation_private_method__get_message:
 
@@ -131,7 +131,7 @@ If empty or invalid, default plural rules from :ref:`TranslationServer.get_plura
 
 :ref:`StringName<class_StringName>` **_get_message**\ (\ src_message\: :ref:`StringName<class_StringName>`, context\: :ref:`StringName<class_StringName>`\ ) |virtual| |const| :ref:`🔗<class_Translation_private_method__get_message>`
 
-覆盖 :ref:`get_message()<class_Translation_method_get_message>` 的虚方法。
+Virtual method to override :ref:`get_message()<class_Translation_method_get_message>`.
 
 .. rst-class:: classref-item-separator
 
@@ -143,7 +143,7 @@ If empty or invalid, default plural rules from :ref:`TranslationServer.get_plura
 
 :ref:`StringName<class_StringName>` **_get_plural_message**\ (\ src_message\: :ref:`StringName<class_StringName>`, src_plural_message\: :ref:`StringName<class_StringName>`, n\: :ref:`int<class_int>`, context\: :ref:`StringName<class_StringName>`\ ) |virtual| |const| :ref:`🔗<class_Translation_private_method__get_plural_message>`
 
-覆盖 :ref:`get_plural_message()<class_Translation_method_get_plural_message>` 的虚方法。
+Virtual method to override :ref:`get_plural_message()<class_Translation_method_get_plural_message>`.
 
 .. rst-class:: classref-item-separator
 
@@ -155,9 +155,9 @@ If empty or invalid, default plural rules from :ref:`TranslationServer.get_plura
 
 |void| **add_message**\ (\ src_message\: :ref:`StringName<class_StringName>`, xlated_message\: :ref:`StringName<class_StringName>`, context\: :ref:`StringName<class_StringName>` = &""\ ) :ref:`🔗<class_Translation_method_add_message>`
 
-如果不存在，则添加一条消息，后跟其翻译。
+Adds a message if nonexistent, followed by its translation.
 
-可以使用一个额外的上下文，来指定翻译上下文或区分多义词。
+An additional context could be used to specify the translation context or differentiate polysemic words.
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +183,7 @@ An additional context could be used to specify the translation context or differ
 
 |void| **erase_message**\ (\ src_message\: :ref:`StringName<class_StringName>`, context\: :ref:`StringName<class_StringName>` = &""\ ) :ref:`🔗<class_Translation_method_erase_message>`
 
-删除信息。
+Erases a message.
 
 .. rst-class:: classref-item-separator
 
@@ -195,7 +195,7 @@ An additional context could be used to specify the translation context or differ
 
 :ref:`StringName<class_StringName>` **get_message**\ (\ src_message\: :ref:`StringName<class_StringName>`, context\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Translation_method_get_message>`
 
-返回信息的翻译。
+Returns a message's translation.
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ An additional context could be used to specify the translation context or differ
 
 :ref:`int<class_int>` **get_message_count**\ (\ ) |const| :ref:`🔗<class_Translation_method_get_message_count>`
 
-返回现有信息的数量。
+Returns the number of existing messages.
 
 .. rst-class:: classref-item-separator
 
@@ -245,11 +245,11 @@ Returns the keys of all messages, that is, the context and untranslated strings 
 
 :ref:`StringName<class_StringName>` **get_plural_message**\ (\ src_message\: :ref:`StringName<class_StringName>`, src_plural_message\: :ref:`StringName<class_StringName>`, n\: :ref:`int<class_int>`, context\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Translation_method_get_plural_message>`
 
-返回一条消息涉及复数的翻译。
+Returns a message's translation involving plurals.
 
-数字 ``n`` 是复数对象的数目或数量。它将被用于指导翻译系统为所选语言获取正确的复数形式。
+The number ``n`` is the number or quantity of the plural object. It will be used to guide the translation system to fetch the correct plural form for the selected language.
 
-\ **注意：**\ 仅\ :doc:`基于 gettext 的翻译（PO） <../tutorials/i18n/localization_using_gettext>`\ 支持复数，CSV 不支持。
+\ **Note:** Plurals are only supported in :doc:`gettext-based translations (PO) <../tutorials/i18n/localization_using_gettext>`, not CSV.
 
 .. rst-class:: classref-item-separator
 
@@ -263,12 +263,12 @@ Returns the keys of all messages, that is, the context and untranslated strings 
 
 Returns all the translated strings.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

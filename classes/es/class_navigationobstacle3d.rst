@@ -97,7 +97,7 @@ Descripciones de Propiedades
 - |void| **set_affect_navigation_mesh**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_affect_navigation_mesh**\ (\ )
 
-If enabled and parsed in a navigation mesh baking process the obstacle will discard source geometry inside its :ref:`vertices<class_NavigationObstacle3D_property_vertices>` and :ref:`height<class_NavigationObstacle3D_property_height>` defined shape.
+Si está habilitado y se procesa en un proceso de bakeo de malla de navegación, el obstáculo descartará la geometría de origen dentro de su forma definida por :ref:`vertices<class_NavigationObstacle3D_property_vertices>` y :ref:`height<class_NavigationObstacle3D_property_height>`.
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ Requires :ref:`affect_navigation_mesh<class_NavigationObstacle3D_property_affect
 - |void| **set_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_height**\ (\ )
 
-Sets the obstacle height used in 2D avoidance. 2D avoidance using agent's ignore obstacles that are below or above them.
+Establece la altura del obstáculo utilizada en la evitación 2D. La evitación 2D, al usar agentes, ignora los obstáculos que están por debajo o por encima de ellos.
 
 .. rst-class:: classref-item-separator
 
@@ -203,9 +203,9 @@ Establece el radio de evitación del obstáculo.
 - |void| **set_use_3d_avoidance**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_3d_avoidance**\ (\ )
 
-If ``true`` the obstacle affects 3D avoidance using agent's with obstacle :ref:`radius<class_NavigationObstacle3D_property_radius>`.
+Si ``true``, el obstáculo afecta la evitación 3D usando agentes con :ref:`radius<class_NavigationObstacle3D_property_radius>` del obstáculo.
 
-If ``false`` the obstacle affects 2D avoidance using agent's with both obstacle :ref:`vertices<class_NavigationObstacle3D_property_vertices>` as well as obstacle :ref:`radius<class_NavigationObstacle3D_property_radius>`.
+Si ``false``, el obstáculo afecta la evitación 2D usando agentes con :ref:`vertices<class_NavigationObstacle3D_property_vertices>` del obstáculo, así como con :ref:`radius<class_NavigationObstacle3D_property_radius>` del obstáculo.
 
 .. rst-class:: classref-item-separator
 

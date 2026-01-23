@@ -5,28 +5,28 @@
 VisualShader
 ============
 
-**繼承：** :ref:`Shader<class_Shader>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Shader<class_Shader>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-帶有視覺化編輯器的自訂著色器程式。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-這類提供了一個類似圖形的視覺化編輯器，用於建立\ :ref:`Shader<class_Shader>`\ 。雖然\ **VisualShader** 不需要編碼，但它們與腳本著色器共用相同的邏輯。它們使用\ :ref:`VisualShaderNode<class_VisualShaderNode>` 可以相互連接以控制著色器的流程。視覺著色器圖在幕後轉換為腳本著色器。
+A custom shader program with a visual editor.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`使用視覺化著色器 <../tutorials/shaders/visual_shaders>`
+This class provides a graph-like visual editor for creating a :ref:`Shader<class_Shader>`. Although **VisualShader**\ s do not require coding, they share the same logic with script shaders. They use :ref:`VisualShaderNode<class_VisualShaderNode>`\ s that can be connected to each other to control the flow of the shader. The visual shader graph is converted to a script shader behind the scenes.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Using VisualShaders <../tutorials/shaders/visual_shaders>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -37,8 +37,8 @@ VisualShader
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -91,8 +91,8 @@ VisualShader
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_VisualShader_Type:
 
@@ -106,7 +106,7 @@ enum **Type**: :ref:`🔗<enum_VisualShader_Type>`
 
 :ref:`Type<enum_VisualShader_Type>` **TYPE_VERTEX** = ``0``
 
-頂點著色器，對頂點進行操作。
+A vertex shader, operating on vertices.
 
 .. _class_VisualShader_constant_TYPE_FRAGMENT:
 
@@ -114,7 +114,7 @@ enum **Type**: :ref:`🔗<enum_VisualShader_Type>`
 
 :ref:`Type<enum_VisualShader_Type>` **TYPE_FRAGMENT** = ``1``
 
-片段著色器，對片段（圖元）進行操作。
+A fragment shader, operating on fragments (pixels).
 
 .. _class_VisualShader_constant_TYPE_LIGHT:
 
@@ -122,7 +122,7 @@ enum **Type**: :ref:`🔗<enum_VisualShader_Type>`
 
 :ref:`Type<enum_VisualShader_Type>` **TYPE_LIGHT** = ``2``
 
-用於光線計算的著色器。
+A shader for light calculations.
 
 .. _class_VisualShader_constant_TYPE_START:
 
@@ -130,7 +130,7 @@ enum **Type**: :ref:`🔗<enum_VisualShader_Type>`
 
 :ref:`Type<enum_VisualShader_Type>` **TYPE_START** = ``3``
 
-粒子著色器的“開始”階段所使用的函式。
+A function for the "start" stage of particle shader.
 
 .. _class_VisualShader_constant_TYPE_PROCESS:
 
@@ -138,7 +138,7 @@ enum **Type**: :ref:`🔗<enum_VisualShader_Type>`
 
 :ref:`Type<enum_VisualShader_Type>` **TYPE_PROCESS** = ``4``
 
-粒子著色器的“處理”階段所使用的函式。
+A function for the "process" stage of particle shader.
 
 .. _class_VisualShader_constant_TYPE_COLLIDE:
 
@@ -146,7 +146,7 @@ enum **Type**: :ref:`🔗<enum_VisualShader_Type>`
 
 :ref:`Type<enum_VisualShader_Type>` **TYPE_COLLIDE** = ``5``
 
-粒子著色器的“碰撞”階段所使用的函式（粒子碰撞處理器）。
+A function for the "collide" stage (particle collision handler) of particle shader.
 
 .. _class_VisualShader_constant_TYPE_START_CUSTOM:
 
@@ -154,7 +154,7 @@ enum **Type**: :ref:`🔗<enum_VisualShader_Type>`
 
 :ref:`Type<enum_VisualShader_Type>` **TYPE_START_CUSTOM** = ``6``
 
-粒子著色器的“開始”階段所使用的函式，帶自訂輸出。
+A function for the "start" stage of particle shader, with customized output.
 
 .. _class_VisualShader_constant_TYPE_PROCESS_CUSTOM:
 
@@ -162,7 +162,7 @@ enum **Type**: :ref:`🔗<enum_VisualShader_Type>`
 
 :ref:`Type<enum_VisualShader_Type>` **TYPE_PROCESS_CUSTOM** = ``7``
 
-粒子著色器的“處理”階段所使用的函式，帶自訂輸出。
+A function for the "process" stage of particle shader, with customized output.
 
 .. _class_VisualShader_constant_TYPE_SKY:
 
@@ -170,7 +170,7 @@ enum **Type**: :ref:`🔗<enum_VisualShader_Type>`
 
 :ref:`Type<enum_VisualShader_Type>` **TYPE_SKY** = ``8``
 
-3D 環境中天空的著色器。
+A shader for 3D environment's sky.
 
 .. _class_VisualShader_constant_TYPE_FOG:
 
@@ -178,7 +178,7 @@ enum **Type**: :ref:`🔗<enum_VisualShader_Type>`
 
 :ref:`Type<enum_VisualShader_Type>` **TYPE_FOG** = ``9``
 
-為體積霧貼圖的每個片段體素運作的一種計算著色器。
+A compute shader that runs for each froxel of the volumetric fog map.
 
 .. _class_VisualShader_constant_TYPE_MAX:
 
@@ -186,7 +186,7 @@ enum **Type**: :ref:`🔗<enum_VisualShader_Type>`
 
 :ref:`Type<enum_VisualShader_Type>` **TYPE_MAX** = ``10``
 
-代表 :ref:`Type<enum_VisualShader_Type>` 列舉的大小。
+Represents the size of the :ref:`Type<enum_VisualShader_Type>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ enum **VaryingMode**: :ref:`🔗<enum_VisualShader_VaryingMode>`
 
 :ref:`VaryingMode<enum_VisualShader_VaryingMode>` **VARYING_MODE_VERTEX_TO_FRAG_LIGHT** = ``0``
 
-Varying 從 ``Vertex`` 函式傳到 ``Fragment`` 和 ``Light`` 函式。
+Varying is passed from ``Vertex`` function to ``Fragment`` and ``Light`` functions.
 
 .. _class_VisualShader_constant_VARYING_MODE_FRAG_TO_LIGHT:
 
@@ -212,7 +212,7 @@ Varying 從 ``Vertex`` 函式傳到 ``Fragment`` 和 ``Light`` 函式。
 
 :ref:`VaryingMode<enum_VisualShader_VaryingMode>` **VARYING_MODE_FRAG_TO_LIGHT** = ``1``
 
-Varying 從 ``Fragment`` 函式傳到 ``Light`` 函式。
+Varying is passed from ``Fragment`` function to ``Light`` function.
 
 .. _class_VisualShader_constant_VARYING_MODE_MAX:
 
@@ -220,7 +220,7 @@ Varying 從 ``Fragment`` 函式傳到 ``Light`` 函式。
 
 :ref:`VaryingMode<enum_VisualShader_VaryingMode>` **VARYING_MODE_MAX** = ``2``
 
-代表 :ref:`VaryingMode<enum_VisualShader_VaryingMode>` 列舉的大小。
+Represents the size of the :ref:`VaryingMode<enum_VisualShader_VaryingMode>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ enum **VaryingType**: :ref:`🔗<enum_VisualShader_VaryingType>`
 
 :ref:`VaryingType<enum_VisualShader_VaryingType>` **VARYING_TYPE_FLOAT** = ``0``
 
-Varying 的型別為 :ref:`float<class_float>`\ 。
+Varying is of type :ref:`float<class_float>`.
 
 .. _class_VisualShader_constant_VARYING_TYPE_INT:
 
@@ -246,7 +246,7 @@ Varying 的型別為 :ref:`float<class_float>`\ 。
 
 :ref:`VaryingType<enum_VisualShader_VaryingType>` **VARYING_TYPE_INT** = ``1``
 
-Varying 的型別為 :ref:`int<class_int>`\ 。
+Varying is of type :ref:`int<class_int>`.
 
 .. _class_VisualShader_constant_VARYING_TYPE_UINT:
 
@@ -254,7 +254,7 @@ Varying 的型別為 :ref:`int<class_int>`\ 。
 
 :ref:`VaryingType<enum_VisualShader_VaryingType>` **VARYING_TYPE_UINT** = ``2``
 
-Varying 的型別為無符號 :ref:`int<class_int>`\ 。
+Varying is of type unsigned :ref:`int<class_int>`.
 
 .. _class_VisualShader_constant_VARYING_TYPE_VECTOR_2D:
 
@@ -262,7 +262,7 @@ Varying 的型別為無符號 :ref:`int<class_int>`\ 。
 
 :ref:`VaryingType<enum_VisualShader_VaryingType>` **VARYING_TYPE_VECTOR_2D** = ``3``
 
-Varying 的型別為 :ref:`Vector2<class_Vector2>`\ 。
+Varying is of type :ref:`Vector2<class_Vector2>`.
 
 .. _class_VisualShader_constant_VARYING_TYPE_VECTOR_3D:
 
@@ -270,7 +270,7 @@ Varying 的型別為 :ref:`Vector2<class_Vector2>`\ 。
 
 :ref:`VaryingType<enum_VisualShader_VaryingType>` **VARYING_TYPE_VECTOR_3D** = ``4``
 
-Varying 的型別為 :ref:`Vector3<class_Vector3>`\ 。
+Varying is of type :ref:`Vector3<class_Vector3>`.
 
 .. _class_VisualShader_constant_VARYING_TYPE_VECTOR_4D:
 
@@ -278,7 +278,7 @@ Varying 的型別為 :ref:`Vector3<class_Vector3>`\ 。
 
 :ref:`VaryingType<enum_VisualShader_VaryingType>` **VARYING_TYPE_VECTOR_4D** = ``5``
 
-Varying 的型別為 :ref:`Vector2<class_Vector2>`\ 。
+Varying is of type :ref:`Vector4<class_Vector4>`.
 
 .. _class_VisualShader_constant_VARYING_TYPE_BOOLEAN:
 
@@ -286,7 +286,7 @@ Varying 的型別為 :ref:`Vector2<class_Vector2>`\ 。
 
 :ref:`VaryingType<enum_VisualShader_VaryingType>` **VARYING_TYPE_BOOLEAN** = ``6``
 
-Varying 的型別為 :ref:`bool<class_bool>`\ 。
+Varying is of type :ref:`bool<class_bool>`.
 
 .. _class_VisualShader_constant_VARYING_TYPE_TRANSFORM:
 
@@ -294,7 +294,7 @@ Varying 的型別為 :ref:`bool<class_bool>`\ 。
 
 :ref:`VaryingType<enum_VisualShader_VaryingType>` **VARYING_TYPE_TRANSFORM** = ``7``
 
-Varying 的型別為 :ref:`Transform2D<class_Transform2D>`\ 。
+Varying is of type :ref:`Transform3D<class_Transform3D>`.
 
 .. _class_VisualShader_constant_VARYING_TYPE_MAX:
 
@@ -302,7 +302,7 @@ Varying 的型別為 :ref:`Transform2D<class_Transform2D>`\ 。
 
 :ref:`VaryingType<enum_VisualShader_VaryingType>` **VARYING_TYPE_MAX** = ``8``
 
-代表 :ref:`VaryingType<enum_VisualShader_VaryingType>` 列舉的大小。
+Represents the size of the :ref:`VaryingType<enum_VisualShader_VaryingType>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -310,8 +310,8 @@ Varying 的型別為 :ref:`Transform2D<class_Transform2D>`\ 。
 
 .. rst-class:: classref-descriptions-group
 
-常數
-----
+Constants
+---------
 
 .. _class_VisualShader_constant_NODE_ID_INVALID:
 
@@ -335,8 +335,8 @@ Indicates an output node of **VisualShader**.
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_VisualShader_property_graph_offset:
 
@@ -349,7 +349,7 @@ Indicates an output node of **VisualShader**.
 - |void| **set_graph_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_graph_offset**\ (\ )
 
-**已棄用：** This property does nothing and always equals to zero.
+**Deprecated:** This property does nothing and always equals to zero.
 
 Deprecated.
 
@@ -359,8 +359,8 @@ Deprecated.
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_VisualShader_method_add_node:
 
@@ -368,7 +368,7 @@ Deprecated.
 
 |void| **add_node**\ (\ type\: :ref:`Type<enum_VisualShader_Type>`, node\: :ref:`VisualShaderNode<class_VisualShaderNode>`, position\: :ref:`Vector2<class_Vector2>`, id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_VisualShader_method_add_node>`
 
-向著色器中新增指定的節點 ``node``\ 。
+Adds the specified ``node`` to the shader.
 
 .. rst-class:: classref-item-separator
 
@@ -380,7 +380,7 @@ Deprecated.
 
 |void| **add_varying**\ (\ name\: :ref:`String<class_String>`, mode\: :ref:`VaryingMode<enum_VisualShader_VaryingMode>`, type\: :ref:`VaryingType<enum_VisualShader_VaryingType>`\ ) :ref:`🔗<class_VisualShader_method_add_varying>`
 
-向著色器中新增新的 varying 值節點。
+Adds a new varying value node to the shader.
 
 .. rst-class:: classref-item-separator
 
@@ -404,7 +404,7 @@ Attaches the given node to the given frame.
 
 :ref:`bool<class_bool>` **can_connect_nodes**\ (\ type\: :ref:`Type<enum_VisualShader_Type>`, from_node\: :ref:`int<class_int>`, from_port\: :ref:`int<class_int>`, to_node\: :ref:`int<class_int>`, to_port\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_VisualShader_method_can_connect_nodes>`
 
-如果指定節點和埠可以連接在一起，則返回 ``true``\ 。
+Returns ``true`` if the specified nodes and ports can be connected together.
 
 .. rst-class:: classref-item-separator
 
@@ -416,7 +416,7 @@ Attaches the given node to the given frame.
 
 :ref:`Error<enum_@GlobalScope_Error>` **connect_nodes**\ (\ type\: :ref:`Type<enum_VisualShader_Type>`, from_node\: :ref:`int<class_int>`, from_port\: :ref:`int<class_int>`, to_node\: :ref:`int<class_int>`, to_port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_VisualShader_method_connect_nodes>`
 
-連接指定的節點和埠。
+Connects the specified nodes and ports.
 
 .. rst-class:: classref-item-separator
 
@@ -428,7 +428,7 @@ Attaches the given node to the given frame.
 
 |void| **connect_nodes_forced**\ (\ type\: :ref:`Type<enum_VisualShader_Type>`, from_node\: :ref:`int<class_int>`, from_port\: :ref:`int<class_int>`, to_node\: :ref:`int<class_int>`, to_port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_VisualShader_method_connect_nodes_forced>`
 
-連接指定的節點和埠，即使它們無法連接。這樣的連接是無效的，將不能正常工作。
+Connects the specified nodes and ports, even if they can't be connected. Such connection is invalid and will not function properly.
 
 .. rst-class:: classref-item-separator
 
@@ -452,7 +452,7 @@ Detaches the given node from the frame it is attached to.
 
 |void| **disconnect_nodes**\ (\ type\: :ref:`Type<enum_VisualShader_Type>`, from_node\: :ref:`int<class_int>`, from_port\: :ref:`int<class_int>`, to_node\: :ref:`int<class_int>`, to_port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_VisualShader_method_disconnect_nodes>`
 
-連接指定的節點和埠。
+Connects the specified nodes and ports.
 
 .. rst-class:: classref-item-separator
 
@@ -464,7 +464,7 @@ Detaches the given node from the frame it is attached to.
 
 :ref:`VisualShaderNode<class_VisualShaderNode>` **get_node**\ (\ type\: :ref:`Type<enum_VisualShader_Type>`, id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_VisualShader_method_get_node>`
 
-返回具有指定 ``type`` 和 ``id`` 的著色器節點實例。
+Returns the shader node instance with specified ``type`` and ``id``.
 
 .. rst-class:: classref-item-separator
 
@@ -476,7 +476,7 @@ Detaches the given node from the frame it is attached to.
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_node_connections**\ (\ type\: :ref:`Type<enum_VisualShader_Type>`\ ) |const| :ref:`🔗<class_VisualShader_method_get_node_connections>`
 
-返回具有指定型別的連接節點的列表。
+Returns the list of connected nodes with the specified type.
 
 .. rst-class:: classref-item-separator
 
@@ -488,7 +488,7 @@ Detaches the given node from the frame it is attached to.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_node_list**\ (\ type\: :ref:`Type<enum_VisualShader_Type>`\ ) |const| :ref:`🔗<class_VisualShader_method_get_node_list>`
 
-返回著色器中具有指定型別的所有節點的列表。
+Returns the list of all nodes in the shader with the specified type.
 
 .. rst-class:: classref-item-separator
 
@@ -500,7 +500,7 @@ Detaches the given node from the frame it is attached to.
 
 :ref:`Vector2<class_Vector2>` **get_node_position**\ (\ type\: :ref:`Type<enum_VisualShader_Type>`, id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_VisualShader_method_get_node_position>`
 
-返回指定節點在著色器圖中的位置。
+Returns the position of the specified node within the shader graph.
 
 .. rst-class:: classref-item-separator
 
@@ -512,7 +512,7 @@ Detaches the given node from the frame it is attached to.
 
 :ref:`int<class_int>` **get_valid_node_id**\ (\ type\: :ref:`Type<enum_VisualShader_Type>`\ ) |const| :ref:`🔗<class_VisualShader_method_get_valid_node_id>`
 
-返回能夠加入到著色器圖中的下一個有效節點 ID。
+Returns next valid node ID that can be added to the shader graph.
 
 .. rst-class:: classref-item-separator
 
@@ -524,7 +524,7 @@ Detaches the given node from the frame it is attached to.
 
 :ref:`bool<class_bool>` **has_varying**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_VisualShader_method_has_varying>`
 
-如果著色器中存在名為 ``name`` 的 varying 則返回 ``true``\ 。
+Returns ``true`` if the shader has a varying with the given ``name``.
 
 .. rst-class:: classref-item-separator
 
@@ -536,7 +536,7 @@ Detaches the given node from the frame it is attached to.
 
 :ref:`bool<class_bool>` **is_node_connection**\ (\ type\: :ref:`Type<enum_VisualShader_Type>`, from_node\: :ref:`int<class_int>`, from_port\: :ref:`int<class_int>`, to_node\: :ref:`int<class_int>`, to_port\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_VisualShader_method_is_node_connection>`
 
-如果指定的節點和埠連接存在，返回 ``true``\ 。
+Returns ``true`` if the specified node and port connection exist.
 
 .. rst-class:: classref-item-separator
 
@@ -548,7 +548,7 @@ Detaches the given node from the frame it is attached to.
 
 |void| **remove_node**\ (\ type\: :ref:`Type<enum_VisualShader_Type>`, id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_VisualShader_method_remove_node>`
 
-從著色器中刪除指定的節點。
+Removes the specified node from the shader.
 
 .. rst-class:: classref-item-separator
 
@@ -560,7 +560,7 @@ Detaches the given node from the frame it is attached to.
 
 |void| **remove_varying**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_VisualShader_method_remove_varying>`
 
-返回名為 ``name`` 的 varying 值節點。如果不存在該名稱的節點則輸出錯誤。
+Removes a varying value node with the given ``name``. Prints an error if a node with this name is not found.
 
 .. rst-class:: classref-item-separator
 
@@ -572,7 +572,7 @@ Detaches the given node from the frame it is attached to.
 
 |void| **replace_node**\ (\ type\: :ref:`Type<enum_VisualShader_Type>`, id\: :ref:`int<class_int>`, new_class\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_VisualShader_method_replace_node>`
 
-將指定節點替換為新型別的節點。
+Replaces the specified node with a node of new class type.
 
 .. rst-class:: classref-item-separator
 
@@ -584,7 +584,7 @@ Detaches the given node from the frame it is attached to.
 
 |void| **set_mode**\ (\ mode\: :ref:`Mode<enum_Shader_Mode>`\ ) :ref:`🔗<class_VisualShader_method_set_mode>`
 
-設定該著色器的模式。
+Sets the mode of this shader.
 
 .. rst-class:: classref-item-separator
 
@@ -596,14 +596,14 @@ Detaches the given node from the frame it is attached to.
 
 |void| **set_node_position**\ (\ type\: :ref:`Type<enum_VisualShader_Type>`, id\: :ref:`int<class_int>`, position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_VisualShader_method_set_node_position>`
 
-設定指定節點的位置。
+Sets the position of the specified node.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

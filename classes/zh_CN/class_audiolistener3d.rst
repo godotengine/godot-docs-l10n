@@ -8,21 +8,21 @@
 AudioListener3D
 ===============
 
-**继承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-覆盖听到声音的位置。
+Overrides the location sounds are heard from.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-一旦添加到场景树并使用 :ref:`make_current()<class_AudioListener3D_method_make_current>` 启用，该节点将覆盖听到声音的位置。这可用于从与 :ref:`Camera3D<class_Camera3D>` 不同的位置聆听。
+Once added to the scene tree and enabled using :ref:`make_current()<class_AudioListener3D_method_make_current>`, this node will override the location sounds are heard from. This can be used to listen from a location different from the :ref:`Camera3D<class_Camera3D>`.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -33,8 +33,8 @@ AudioListener3D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -55,8 +55,8 @@ AudioListener3D
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_AudioListener3D_DopplerTracking:
 
@@ -70,7 +70,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioListener3D_DopplerTracking>`
 
 :ref:`DopplerTracking<enum_AudioListener3D_DopplerTracking>` **DOPPLER_TRACKING_DISABLED** = ``0``
 
-禁用\ `多普勒效应 <https://en.wikipedia.org/wiki/Doppler_effect>`__\ 模拟（默认）。
+Disables `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ simulation (default).
 
 .. _class_AudioListener3D_constant_DOPPLER_TRACKING_IDLE_STEP:
 
@@ -78,7 +78,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioListener3D_DopplerTracking>`
 
 :ref:`DopplerTracking<enum_AudioListener3D_DopplerTracking>` **DOPPLER_TRACKING_IDLE_STEP** = ``1``
 
-通过跟踪在 ``_process`` 中改变的物体位置来模拟\ `多普勒效应 <https://zh.wikipedia.org/wiki/%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94>`__\ 。该监听器相对于这些物体的相对速度的变化会影响音频的感知方式（改变音频的 :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>`\ ）。
+Simulate `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ by tracking positions of objects that are changed in ``_process``. Changes in the relative velocity of this listener compared to those objects affect how audio is perceived (changing the audio's :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>`).
 
 .. _class_AudioListener3D_constant_DOPPLER_TRACKING_PHYSICS_STEP:
 
@@ -86,7 +86,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioListener3D_DopplerTracking>`
 
 :ref:`DopplerTracking<enum_AudioListener3D_DopplerTracking>` **DOPPLER_TRACKING_PHYSICS_STEP** = ``2``
 
-通过跟踪在 ``_process`` 中改变的物体位置来模拟\ `多普勒效应 <https://zh.wikipedia.org/wiki/%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94>`__\ 。该监听器相对于这些物体的相对速度的变化会影响音频的感知方式（改变音频的 :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>`\ ）。
+Simulate `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ by tracking positions of objects that are changed in ``_physics_process``. Changes in the relative velocity of this listener compared to those objects affect how audio is perceived (changing the audio's :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>`).
 
 .. rst-class:: classref-section-separator
 
@@ -94,8 +94,8 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioListener3D_DopplerTracking>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_AudioListener3D_property_doppler_tracking:
 
@@ -108,9 +108,9 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioListener3D_DopplerTracking>`
 - |void| **set_doppler_tracking**\ (\ value\: :ref:`DopplerTracking<enum_AudioListener3D_DopplerTracking>`\ )
 - :ref:`DopplerTracking<enum_AudioListener3D_DopplerTracking>` **get_doppler_tracking**\ (\ )
 
-如果不是 :ref:`DOPPLER_TRACKING_DISABLED<class_AudioListener3D_constant_DOPPLER_TRACKING_DISABLED>`\ ，则该监听器将在特定的 ``_process`` 方法中，为变化的对象模拟\ `多普勒效应 <https://zh.wikipedia.org/wiki/%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94>`__\ 。
+If not :ref:`DOPPLER_TRACKING_DISABLED<class_AudioListener3D_constant_DOPPLER_TRACKING_DISABLED>`, this listener will simulate the `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ for objects changed in particular ``_process`` methods.
 
-\ **注意：**\ 多普勒效应仅在 :ref:`AudioStreamPlayer3D.doppler_tracking<class_AudioStreamPlayer3D_property_doppler_tracking>` 未设置为 :ref:`AudioStreamPlayer3D.DOPPLER_TRACKING_DISABLED<class_AudioStreamPlayer3D_constant_DOPPLER_TRACKING_DISABLED>` 时才会在 :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` 上听到。
+\ **Note:** The Doppler effect will only be heard on :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>`\ s if :ref:`AudioStreamPlayer3D.doppler_tracking<class_AudioStreamPlayer3D_property_doppler_tracking>` is not set to :ref:`AudioStreamPlayer3D.DOPPLER_TRACKING_DISABLED<class_AudioStreamPlayer3D_constant_DOPPLER_TRACKING_DISABLED>`.
 
 .. rst-class:: classref-section-separator
 
@@ -118,8 +118,8 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioListener3D_DopplerTracking>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_AudioListener3D_method_clear_current:
 
@@ -127,7 +127,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioListener3D_DopplerTracking>`
 
 |void| **clear_current**\ (\ ) :ref:`🔗<class_AudioListener3D_method_clear_current>`
 
-禁用该监听器，用当前相机的监听器代替。
+Disables the listener to use the current camera's listener instead.
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioListener3D_DopplerTracking>`
 
 :ref:`Transform3D<class_Transform3D>` **get_listener_transform**\ (\ ) |const| :ref:`🔗<class_AudioListener3D_method_get_listener_transform>`
 
-返回该监听器的全局正交归一化 :ref:`Transform3D<class_Transform3D>`\ 。
+Returns the listener's global orthonormalized :ref:`Transform3D<class_Transform3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -151,9 +151,9 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioListener3D_DopplerTracking>`
 
 :ref:`bool<class_bool>` **is_current**\ (\ ) |const| :ref:`🔗<class_AudioListener3D_method_is_current>`
 
-如果使用 :ref:`make_current()<class_AudioListener3D_method_make_current>` 将监听器设为当前，则返回 ``true``\ ，否则返回 ``false``\ 。
+Returns ``true`` if the listener was made current using :ref:`make_current()<class_AudioListener3D_method_make_current>`, ``false`` otherwise.
 
-\ **注意：**\ 场景树中标记为“当前”的 AudioListener3D 可能不止一个，但只会使用最后被设置为当前的那个。
+\ **Note:** There may be more than one AudioListener3D marked as "current" in the scene tree, but only the one that was made current last will be used.
 
 .. rst-class:: classref-item-separator
 
@@ -165,14 +165,14 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioListener3D_DopplerTracking>`
 
 |void| **make_current**\ (\ ) :ref:`🔗<class_AudioListener3D_method_make_current>`
 
-启用该监听器。将覆盖当前相机的监听器。
+Enables the listener. This will override the current camera's listener.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

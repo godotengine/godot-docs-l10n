@@ -5,12 +5,12 @@
 PackedVector2Array
 ==================
 
-:ref:`Vector2<class_Vector2>` 緊縮陣列。
+A packed array of :ref:`Vector2<class_Vector2>`\ s.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 An array specifically designed to hold :ref:`Vector2<class_Vector2>`. Packs data tightly, so it saves memory for large array sizes.
 
@@ -20,19 +20,19 @@ An array specifically designed to hold :ref:`Vector2<class_Vector2>`. Packs data
 
 .. note::
 
-	使用 C# 操作此 API 時有顯著差異，詳見 :ref:`doc_c_sharp_differences`。
+	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- `使用 AStarGrid2D 的網格導航範例 <https://godotengine.org/asset-library/asset/2723>`__
+- `Grid-based Navigation with AStarGrid2D Demo <https://godotengine.org/asset-library/asset/2723>`__
 
 .. rst-class:: classref-reftable-group
 
-建構子
-------
+Constructors
+------------
 
 .. table::
    :widths: auto
@@ -47,8 +47,8 @@ An array specifically designed to hold :ref:`Vector2<class_Vector2>`. Packs data
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -103,8 +103,8 @@ An array specifically designed to hold :ref:`Vector2<class_Vector2>`. Packs data
 
 .. rst-class:: classref-reftable-group
 
-運算子
-------
+Operators
+---------
 
 .. table::
    :widths: auto
@@ -127,8 +127,8 @@ An array specifically designed to hold :ref:`Vector2<class_Vector2>`. Packs data
 
 .. rst-class:: classref-descriptions-group
 
-建構子說明
-----------
+Constructor Descriptions
+------------------------
 
 .. _class_PackedVector2Array_constructor_PackedVector2Array:
 
@@ -136,7 +136,7 @@ An array specifically designed to hold :ref:`Vector2<class_Vector2>`. Packs data
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **PackedVector2Array**\ (\ ) :ref:`🔗<class_PackedVector2Array_constructor_PackedVector2Array>`
 
-建構空的 **PackedVector2Array**\ 。
+Constructs an empty **PackedVector2Array**.
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +146,7 @@ An array specifically designed to hold :ref:`Vector2<class_Vector2>`. Packs data
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **PackedVector2Array**\ (\ from\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ )
 
-建構給定 **PackedVector2Array** 的副本。
+Constructs a **PackedVector2Array** as a copy of the given **PackedVector2Array**.
 
 .. rst-class:: classref-item-separator
 
@@ -156,9 +156,9 @@ An array specifically designed to hold :ref:`Vector2<class_Vector2>`. Packs data
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **PackedVector2Array**\ (\ from\: :ref:`Array<class_Array>`\ )
 
-建構新的 **PackedVector2Array**\ 。也可以傳入需要轉換的通用 :ref:`Array<class_Array>`\ 。
+Constructs a new **PackedVector2Array**. Optionally, you can pass in a generic :ref:`Array<class_Array>` that will be converted.
 
-\ **注意：**\ 使用元素初始化 **PackedVector2Array** 時，必須使用元素為 :ref:`Vector2<class_Vector2>` 的 :ref:`Array<class_Array>` 進行初始化：
+\ **Note:** When initializing a **PackedVector2Array** with elements, it must be initialized with an :ref:`Array<class_Array>` of :ref:`Vector2<class_Vector2>` values:
 
 ::
 
@@ -170,8 +170,8 @@ An array specifically designed to hold :ref:`Vector2<class_Vector2>`. Packs data
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_PackedVector2Array_method_append:
 
@@ -179,7 +179,7 @@ An array specifically designed to hold :ref:`Vector2<class_Vector2>`. Packs data
 
 :ref:`bool<class_bool>` **append**\ (\ value\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_PackedVector2Array_method_append>`
 
-向陣列末尾追加一個元素（\ :ref:`push_back()<class_PackedVector2Array_method_push_back>` 的別名）。
+Appends an element at the end of the array (alias of :ref:`push_back()<class_PackedVector2Array_method_push_back>`).
 
 .. rst-class:: classref-item-separator
 
@@ -191,7 +191,7 @@ An array specifically designed to hold :ref:`Vector2<class_Vector2>`. Packs data
 
 |void| **append_array**\ (\ array\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_PackedVector2Array_method_append_array>`
 
-在該陣列的末尾追加一個 **PackedVector2Array**\ 。
+Appends a **PackedVector2Array** at the end of this array.
 
 .. rst-class:: classref-item-separator
 
@@ -203,11 +203,11 @@ An array specifically designed to hold :ref:`Vector2<class_Vector2>`. Packs data
 
 :ref:`int<class_int>` **bsearch**\ (\ value\: :ref:`Vector2<class_Vector2>`, before\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_PackedVector2Array_method_bsearch>`
 
-使用二分法搜尋已有值的索引（如果該值尚未存在於陣列中，則為保持排序順序的插入索引）。傳遞 ``before`` 說明符是可選的。如果該參數為 ``false``\ ，則返回的索引位於陣列中該值的所有已有的條目之後。
+Finds the index of an existing value (or the insertion index that maintains sorting order, if the value is not yet present in the array) using binary search. Optionally, a ``before`` specifier can be passed. If ``false``, the returned index comes after all existing entries of the value in the array.
 
-\ **注意：**\ 在未排序的陣列上呼叫 :ref:`bsearch()<class_PackedVector2Array_method_bsearch>` 會產生預料之外的行為。
+\ **Note:** Calling :ref:`bsearch()<class_PackedVector2Array_method_bsearch>` on an unsorted array results in unexpected behavior.
 
-\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行為與其他向量不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
+\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -219,7 +219,7 @@ An array specifically designed to hold :ref:`Vector2<class_Vector2>`. Packs data
 
 |void| **clear**\ (\ ) :ref:`🔗<class_PackedVector2Array_method_clear>`
 
-清空陣列。相當於呼叫 :ref:`resize()<class_PackedVector2Array_method_resize>` 時指定大小為 ``0``\ 。
+Clears the array. This is equivalent to using :ref:`resize()<class_PackedVector2Array_method_resize>` with a size of ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -231,9 +231,9 @@ An array specifically designed to hold :ref:`Vector2<class_Vector2>`. Packs data
 
 :ref:`int<class_int>` **count**\ (\ value\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_PackedVector2Array_method_count>`
 
-返回陣列中某個元素出現的次數。
+Returns the number of times an element is in the array.
 
-\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行為與其他向量不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
+\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -245,7 +245,7 @@ An array specifically designed to hold :ref:`Vector2<class_Vector2>`. Packs data
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **duplicate**\ (\ ) |const| :ref:`🔗<class_PackedVector2Array_method_duplicate>`
 
-建立該陣列的副本，並將該副本返回。
+Creates a copy of the array, and returns it.
 
 .. rst-class:: classref-item-separator
 
@@ -271,7 +271,7 @@ Removes the first occurrence of a value from the array and returns ``true``. If 
 
 |void| **fill**\ (\ value\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_PackedVector2Array_method_fill>`
 
-將陣列中的所有元素都設為給定的值。通常與 :ref:`resize()<class_PackedVector2Array_method_resize>` 一起使用，建立給定大小的陣列並初始化元素。
+Assigns the given value to all elements in the array. This can typically be used together with :ref:`resize()<class_PackedVector2Array_method_resize>` to create an array with a given size and initialized elements.
 
 .. rst-class:: classref-item-separator
 
@@ -283,9 +283,9 @@ Removes the first occurrence of a value from the array and returns ``true``. If 
 
 :ref:`int<class_int>` **find**\ (\ value\: :ref:`Vector2<class_Vector2>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PackedVector2Array_method_find>`
 
-在陣列中搜索值並返回其索引，如果未找到則返回 ``-1`` 。可選地，可以傳遞起始搜索索引。
+Searches the array for a value and returns its index or ``-1`` if not found. Optionally, the initial search index can be passed.
 
-\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行為與其他向量不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
+\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -311,9 +311,9 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`bool<class_bool>` **has**\ (\ value\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_PackedVector2Array_method_has>`
 
-如果陣列中包含 ``value``\ ，則返回 ``true``\ 。
+Returns ``true`` if the array contains ``value``.
 
-\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行為與其他向量不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
+\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -325,7 +325,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`int<class_int>` **insert**\ (\ at_index\: :ref:`int<class_int>`, value\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_PackedVector2Array_method_insert>`
 
-在陣列中給定的位置插入一個新元素。這個位置必須是有效的，或者是在陣列的末端（\ ``idx == size()``\ ）。
+Inserts a new element at a given position in the array. The position must be valid, or at the end of the array (``idx == size()``).
 
 .. rst-class:: classref-item-separator
 
@@ -337,7 +337,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`bool<class_bool>` **is_empty**\ (\ ) |const| :ref:`🔗<class_PackedVector2Array_method_is_empty>`
 
-該陣列為空時，返回 ``true``\ 。
+Returns ``true`` if the array is empty.
 
 .. rst-class:: classref-item-separator
 
@@ -349,7 +349,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`bool<class_bool>` **push_back**\ (\ value\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_PackedVector2Array_method_push_back>`
 
-在末尾插入一個 :ref:`Vector2<class_Vector2>`\ 。
+Inserts a :ref:`Vector2<class_Vector2>` at the end.
 
 .. rst-class:: classref-item-separator
 
@@ -361,7 +361,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 |void| **remove_at**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedVector2Array_method_remove_at>`
 
-從陣列中刪除位於索引的元素。
+Removes an element from the array by index.
 
 .. rst-class:: classref-item-separator
 
@@ -387,7 +387,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 |void| **reverse**\ (\ ) :ref:`🔗<class_PackedVector2Array_method_reverse>`
 
-將陣列中的元素逆序排列。
+Reverses the order of the elements in the array.
 
 .. rst-class:: classref-item-separator
 
@@ -399,9 +399,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`int<class_int>` **rfind**\ (\ value\: :ref:`Vector2<class_Vector2>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_PackedVector2Array_method_rfind>`
 
-逆序搜索陣列。還可以傳遞起始搜索位置索引。如果為負，則起始索引被視為相對於數組的結尾。
+Searches the array in reverse order. Optionally, a start search index can be passed. If negative, the start index is considered relative to the end of the array.
 
-\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行為與其他向量不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
+\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -413,7 +413,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 |void| **set**\ (\ index\: :ref:`int<class_int>`, value\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_PackedVector2Array_method_set>`
 
-更改給定索引處的 :ref:`Vector2<class_Vector2>`\ 。
+Changes the :ref:`Vector2<class_Vector2>` at the given index.
 
 .. rst-class:: classref-item-separator
 
@@ -425,7 +425,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`int<class_int>` **size**\ (\ ) |const| :ref:`🔗<class_PackedVector2Array_method_size>`
 
-返回陣列中元素的個數。
+Returns the number of elements in the array.
 
 .. rst-class:: classref-item-separator
 
@@ -437,11 +437,11 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **slice**\ (\ begin\: :ref:`int<class_int>`, end\: :ref:`int<class_int>` = 2147483647\ ) |const| :ref:`🔗<class_PackedVector2Array_method_slice>`
 
-返回該 **PackedVector2Array** 的切片，是從 ``begin``\ （含）到 ``end``\ （不含）的全新 **PackedVector2Array**\ 。
+Returns the slice of the **PackedVector2Array**, from ``begin`` (inclusive) to ``end`` (exclusive), as a new **PackedVector2Array**.
 
-\ ``begin`` 和 ``end`` 的絕對值會按陣列大小進行限制，所以 ``end`` 的預設值會切到陣列大小為止（即 ``arr.slice(1)`` 是 ``arr.slice(1, arr.size())`` 的簡寫）。
+The absolute value of ``begin`` and ``end`` will be clamped to the array size, so the default value for ``end`` makes it slice to the size of the array by default (i.e. ``arr.slice(1)`` is a shorthand for ``arr.slice(1, arr.size())``).
 
-如果 ``begin`` 或 ``end`` 為負，則表示相對於陣列的末尾（即 ``arr.slice(0, -2)`` 是 ``arr.slice(0, arr.size() - 2)`` 的簡寫）。
+If either ``begin`` or ``end`` are negative, they will be relative to the end of the array (i.e. ``arr.slice(0, -2)`` is a shorthand for ``arr.slice(0, arr.size() - 2)``).
 
 .. rst-class:: classref-item-separator
 
@@ -453,9 +453,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 |void| **sort**\ (\ ) :ref:`🔗<class_PackedVector2Array_method_sort>`
 
-昇冪排列陣列中的元素。
+Sorts the elements of the array in ascending order.
 
-\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行為與其他向量不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
+\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -467,7 +467,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_byte_array**\ (\ ) |const| :ref:`🔗<class_PackedVector2Array_method_to_byte_array>`
 
-返回 :ref:`PackedByteArray<class_PackedByteArray>`\ ，每個向量都被編碼為位元組。
+Returns a :ref:`PackedByteArray<class_PackedByteArray>` with each vector encoded as bytes.
 
 .. rst-class:: classref-section-separator
 
@@ -475,8 +475,8 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 .. rst-class:: classref-descriptions-group
 
-運算子說明
-----------
+Operator Descriptions
+---------------------
 
 .. _class_PackedVector2Array_operator_neq_PackedVector2Array:
 
@@ -484,7 +484,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_PackedVector2Array_operator_neq_PackedVector2Array>`
 
-如果陣列內容不同，則返回 ``true``\ 。
+Returns ``true`` if contents of the arrays differ.
 
 .. rst-class:: classref-item-separator
 
@@ -512,7 +512,7 @@ For transforming by inverse of an affine transformation (e.g. with scaling) ``tr
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **operator +**\ (\ right\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_PackedVector2Array_operator_sum_PackedVector2Array>`
 
-返回新的 **PackedVector2Array**\ ，新陣列的內容為此陣列在末尾加上 ``right``\ 。為了提高性能，請考慮改用 :ref:`append_array()<class_PackedVector2Array_method_append_array>`\ 。
+Returns a new **PackedVector2Array** with contents of ``right`` added at the end of this array. For better performance, consider using :ref:`append_array()<class_PackedVector2Array_method_append_array>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -524,7 +524,7 @@ For transforming by inverse of an affine transformation (e.g. with scaling) ``tr
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_PackedVector2Array_operator_eq_PackedVector2Array>`
 
-如果兩個陣列的內容相同，即對應索引號的 :ref:`Vector2<class_Vector2>` 相等，則返回 ``true``\ 。
+Returns ``true`` if contents of both arrays are the same, i.e. they have all equal :ref:`Vector2<class_Vector2>`\ s at the corresponding indices.
 
 .. rst-class:: classref-item-separator
 
@@ -536,14 +536,14 @@ For transforming by inverse of an affine transformation (e.g. with scaling) ``tr
 
 :ref:`Vector2<class_Vector2>` **operator []**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedVector2Array_operator_idx_int>`
 
-返回索引為 ``index`` 的 :ref:`Vector2<class_Vector2>`\ 。負數索引能從末尾開始存取元素。使用陣列範圍外的索引會導致出錯。
+Returns the :ref:`Vector2<class_Vector2>` at index ``index``. Negative indices can be used to access the elements starting from the end. Using index out of array's bounds will result in an error.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,14 +5,14 @@
 CanvasGroup
 ===========
 
-**繼承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-將若干 2D 節點合併至單次繪製操作。
+Merges several 2D nodes into a single draw operation.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 Child :ref:`CanvasItem<class_CanvasItem>` nodes of a **CanvasGroup** are drawn as a single object. It allows to e.g. draw overlapping translucent 2D nodes without causing the overlapping sections to be more opaque than intended (set the :ref:`CanvasItem.self_modulate<class_CanvasItem_property_self_modulate>` property on the **CanvasGroup** to achieve this effect).
 
@@ -39,8 +39,8 @@ Child :ref:`CanvasItem<class_CanvasItem>` nodes of a **CanvasGroup** are drawn a
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -59,8 +59,8 @@ Child :ref:`CanvasItem<class_CanvasItem>` nodes of a **CanvasGroup** are drawn a
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_CanvasGroup_property_clear_margin:
 
@@ -73,7 +73,7 @@ Child :ref:`CanvasItem<class_CanvasItem>` nodes of a **CanvasGroup** are drawn a
 - |void| **set_clear_margin**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_clear_margin**\ (\ )
 
-設定用於擴充該 **CanvasGroup** 清除矩形的邊距大小。會對該 **CanvasGroup** 所使用的後臺緩衝的區域進行擴充。邊距較小時可以減少後臺緩衝的區域大小，從而提升性能，但如果啟用了 :ref:`use_mipmaps<class_CanvasGroup_property_use_mipmaps>`\ ，較小的邊距可能在該 **CanvasGroup** 邊緣造成 mipmap 錯誤。因此，這個值應該儘量調小，但是如果畫布組的邊緣出現問題，就應該將其調大。
+Sets the size of the margin used to expand the clearing rect of this **CanvasGroup**. This expands the area of the backbuffer that will be used by the **CanvasGroup**. A smaller margin will reduce the area of the backbuffer used which can increase performance, however if :ref:`use_mipmaps<class_CanvasGroup_property_use_mipmaps>` is enabled, a small margin may result in mipmap errors at the edge of the **CanvasGroup**. Accordingly, this should be left as small as possible, but should be increased if artifacts appear along the edges of the canvas group.
 
 .. rst-class:: classref-item-separator
 
@@ -90,7 +90,7 @@ Child :ref:`CanvasItem<class_CanvasItem>` nodes of a **CanvasGroup** are drawn a
 - |void| **set_fit_margin**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fit_margin**\ (\ )
 
-設定用於擴充該 **CanvasGroup** 繪圖矩形的邊距大小。確定該 **CanvasGroup** 大小的方法是：首先框定子節點的矩形區域，然後將該矩形按照 :ref:`fit_margin<class_CanvasGroup_property_fit_margin>` 進行擴展。會增大該 **CanvasGroup** 所使用的後臺緩衝的區域，也會增大該 **CanvasGroup** 所覆蓋的面積，兩者都會降低性能。這個值應該儘量調小，僅在需要時調大（例如自定義著色器效果）。
+Sets the size of a margin used to expand the drawable rect of this **CanvasGroup**. The size of the **CanvasGroup** is determined by fitting a rect around its children then expanding that rect by :ref:`fit_margin<class_CanvasGroup_property_fit_margin>`. This increases both the backbuffer area used and the area covered by the **CanvasGroup** both of which can reduce performance. This should be kept as small as possible and should only be expanded when an increased size is needed (e.g. for custom shader effects).
 
 .. rst-class:: classref-item-separator
 
@@ -107,14 +107,14 @@ Child :ref:`CanvasItem<class_CanvasItem>` nodes of a **CanvasGroup** are drawn a
 - |void| **set_use_mipmaps**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_mipmaps**\ (\ )
 
-如果為 ``true``\ ，則會在繪製該 **CanvasGroup** 之前為其後臺緩衝計算 mipmap，附加到該 **CanvasGroup** 的自訂 :ref:`ShaderMaterial<class_ShaderMaterial>` 就可以使用 mipmap。Mipmap 的生成會造成性能消耗，所以應在必要時才啟用。
+If ``true``, calculates mipmaps for the backbuffer before drawing the **CanvasGroup** so that mipmaps can be used in a custom :ref:`ShaderMaterial<class_ShaderMaterial>` attached to the **CanvasGroup**. Generating mipmaps has a performance cost so this should not be enabled unless required.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

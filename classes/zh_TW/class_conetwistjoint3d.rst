@@ -5,21 +5,21 @@
 ConeTwistJoint3D
 ================
 
-**繼承：** :ref:`Joint3D<class_Joint3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Joint3D<class_Joint3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-以類比球窩關節的方式連接兩個 3D 物理物體的物理關節。
+A physics joint that connects two 3D physics bodies in a way that simulates a ball-and-socket joint.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-以類比球窩關節的方式連接兩個 3D 物理物體的物理關節。扭轉軸被初始化為 **ConeTwistJoint3D** 的 X 軸。一旦物理體擺動，扭轉軸將被計算為兩個物理體局部空間中關節的 X 軸的中間值。可用作肩膀、臀部等肢體，也可以用作從天花板蕩下的燈之類的對象。
+A physics joint that connects two 3D physics bodies in a way that simulates a ball-and-socket joint. The twist axis is initiated as the X axis of the **ConeTwistJoint3D**. Once the physics bodies swing, the twist axis is calculated as the middle of the X axes of the joint in the local space of the two physics bodies. Useful for limbs like shoulders and hips, lamps hanging off a ceiling, etc.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ ConeTwistJoint3D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ ConeTwistJoint3D
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_ConeTwistJoint3D_Param:
 
@@ -71,13 +71,13 @@ enum **Param**: :ref:`🔗<enum_ConeTwistJoint3D_Param>`
 
 :ref:`Param<enum_ConeTwistJoint3D_Param>` **PARAM_SWING_SPAN** = ``0``
 
-擺動是圍繞垂直於扭轉軸的軸線，從一邊到另一邊的旋轉。
+Swing is rotation from side to side, around the axis perpendicular to the twist axis.
 
-擺動跨度定義了沿擺動軸旋轉多少不會得到校正。
+The swing span defines, how much rotation will not get corrected along the swing axis.
 
-可以被定義為 **ConeTwistJoint3D** 中的鬆動。
+Could be defined as looseness in the **ConeTwistJoint3D**.
 
-如果低於 0.05，該行為將被鎖定。
+If below 0.05, this behavior is locked.
 
 .. _class_ConeTwistJoint3D_constant_PARAM_TWIST_SPAN:
 
@@ -85,9 +85,9 @@ enum **Param**: :ref:`🔗<enum_ConeTwistJoint3D_Param>`
 
 :ref:`Param<enum_ConeTwistJoint3D_Param>` **PARAM_TWIST_SPAN** = ``1``
 
-扭轉是繞扭轉軸的旋轉，此值定義了關節可以扭轉多遠。
+Twist is the rotation around the twist axis, this value defined how far the joint can twist.
 
-如果低於 0.05，則扭轉被鎖定。
+Twist is locked if below 0.05.
 
 .. _class_ConeTwistJoint3D_constant_PARAM_BIAS:
 
@@ -95,9 +95,9 @@ enum **Param**: :ref:`🔗<enum_ConeTwistJoint3D_Param>`
 
 :ref:`Param<enum_ConeTwistJoint3D_Param>` **PARAM_BIAS** = ``2``
 
-擺動或扭轉的速度。
+The speed with which the swing or twist will take place.
 
-越高，速度越快。
+The higher, the faster.
 
 .. _class_ConeTwistJoint3D_constant_PARAM_SOFTNESS:
 
@@ -105,7 +105,7 @@ enum **Param**: :ref:`🔗<enum_ConeTwistJoint3D_Param>`
 
 :ref:`Param<enum_ConeTwistJoint3D_Param>` **PARAM_SOFTNESS** = ``3``
 
-關節開始扭轉的難易程度。如果太低，則需要更多的力才能開始扭轉關節。
+The ease with which the joint starts to twist. If it's too low, it takes more force to start twisting the joint.
 
 .. _class_ConeTwistJoint3D_constant_PARAM_RELAXATION:
 
@@ -113,7 +113,7 @@ enum **Param**: :ref:`🔗<enum_ConeTwistJoint3D_Param>`
 
 :ref:`Param<enum_ConeTwistJoint3D_Param>` **PARAM_RELAXATION** = ``4``
 
-定義兩側的擺動速度和扭轉速度差異同步的速度。
+Defines, how fast the swing- and twist-speed-difference on both sides gets synced.
 
 .. _class_ConeTwistJoint3D_constant_PARAM_MAX:
 
@@ -121,7 +121,7 @@ enum **Param**: :ref:`🔗<enum_ConeTwistJoint3D_Param>`
 
 :ref:`Param<enum_ConeTwistJoint3D_Param>` **PARAM_MAX** = ``5``
 
-代表 :ref:`Param<enum_ConeTwistJoint3D_Param>` 列舉的大小。
+Represents the size of the :ref:`Param<enum_ConeTwistJoint3D_Param>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -129,8 +129,8 @@ enum **Param**: :ref:`🔗<enum_ConeTwistJoint3D_Param>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_ConeTwistJoint3D_property_bias:
 
@@ -143,9 +143,9 @@ enum **Param**: :ref:`🔗<enum_ConeTwistJoint3D_Param>`
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_ConeTwistJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_ConeTwistJoint3D_Param>`\ ) |const|
 
-擺動或扭轉的速度。
+The speed with which the swing or twist will take place.
 
-越高，速度越快。
+The higher, the faster.
 
 .. rst-class:: classref-item-separator
 
@@ -162,7 +162,7 @@ enum **Param**: :ref:`🔗<enum_ConeTwistJoint3D_Param>`
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_ConeTwistJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_ConeTwistJoint3D_Param>`\ ) |const|
 
-定義兩側的擺動速度和扭轉速度差異同步的速度。
+Defines, how fast the swing- and twist-speed-difference on both sides gets synced.
 
 .. rst-class:: classref-item-separator
 
@@ -179,7 +179,7 @@ enum **Param**: :ref:`🔗<enum_ConeTwistJoint3D_Param>`
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_ConeTwistJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_ConeTwistJoint3D_Param>`\ ) |const|
 
-關節開始扭轉的難易程度。如果太低，則需要更多的力才能開始扭轉關節。
+The ease with which the joint starts to twist. If it's too low, it takes more force to start twisting the joint.
 
 .. rst-class:: classref-item-separator
 
@@ -196,13 +196,13 @@ enum **Param**: :ref:`🔗<enum_ConeTwistJoint3D_Param>`
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_ConeTwistJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_ConeTwistJoint3D_Param>`\ ) |const|
 
-擺動是圍繞垂直於扭轉軸的軸線，從一邊到另一邊的旋轉。
+Swing is rotation from side to side, around the axis perpendicular to the twist axis.
 
-擺動跨度定義了沿擺動軸旋轉多少不會得到校正。
+The swing span defines, how much rotation will not get corrected along the swing axis.
 
-可以被定義為 **ConeTwistJoint3D** 中的鬆動。
+Could be defined as looseness in the **ConeTwistJoint3D**.
 
-如果低於 0.05，該行為將被鎖定。
+If below 0.05, this behavior is locked.
 
 .. rst-class:: classref-item-separator
 
@@ -219,9 +219,9 @@ enum **Param**: :ref:`🔗<enum_ConeTwistJoint3D_Param>`
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_ConeTwistJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_ConeTwistJoint3D_Param>`\ ) |const|
 
-扭轉是繞扭轉軸的旋轉，此值定義了關節可以扭轉多遠。
+Twist is the rotation around the twist axis, this value defined how far the joint can twist.
 
-如果低於 0.05，則扭轉被鎖定。
+Twist is locked if below 0.05.
 
 .. rst-class:: classref-section-separator
 
@@ -229,8 +229,8 @@ enum **Param**: :ref:`🔗<enum_ConeTwistJoint3D_Param>`
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_ConeTwistJoint3D_method_get_param:
 
@@ -238,7 +238,7 @@ enum **Param**: :ref:`🔗<enum_ConeTwistJoint3D_Param>`
 
 :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_ConeTwistJoint3D_Param>`\ ) |const| :ref:`🔗<class_ConeTwistJoint3D_method_get_param>`
 
-返回指定參數的值。
+Returns the value of the specified parameter.
 
 .. rst-class:: classref-item-separator
 
@@ -250,14 +250,14 @@ enum **Param**: :ref:`🔗<enum_ConeTwistJoint3D_Param>`
 
 |void| **set_param**\ (\ param\: :ref:`Param<enum_ConeTwistJoint3D_Param>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_ConeTwistJoint3D_method_set_param>`
 
-設定指定參數的值。
+Sets the value of the specified parameter.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

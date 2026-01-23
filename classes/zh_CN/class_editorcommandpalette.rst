@@ -5,18 +5,18 @@
 EditorCommandPalette
 ====================
 
-**继承：** :ref:`ConfirmationDialog<class_ConfirmationDialog>` **<** :ref:`AcceptDialog<class_AcceptDialog>` **<** :ref:`Window<class_Window>` **<** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`ConfirmationDialog<class_ConfirmationDialog>` **<** :ref:`AcceptDialog<class_AcceptDialog>` **<** :ref:`Window<class_Window>` **<** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Godot 编辑器的命令面板。
+Godot editor's command palette.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-该对象包含所有可用命令及其快捷方式文本。这些命令可以通过 **编辑器 > 命令面板** 菜单访问。
+Object that holds all the available Commands and their shortcuts text. These Commands can be accessed through **Editor > Command Palette** menu.
 
-命令键名使用斜杠分隔符来区分部分，例如：\ ``"example/command1"``\ ，那么 ``example`` 将是部分名称。
+Command key names use slash delimiters to distinguish sections, for example: ``"example/command1"`` then ``example`` will be the section name.
 
 
 .. tabs::
@@ -24,25 +24,25 @@ Godot 编辑器的命令面板。
  .. code-tab:: gdscript
 
     var command_palette = EditorInterface.get_command_palette()
-    # external_command 是将在命令执行时调用的函数。
+    # external_command is a function that will be called with the command is executed.
     var command_callable = Callable(self, "external_command").bind(arguments)
     command_palette.add_command("command", "test/command",command_callable)
 
  .. code-tab:: csharp
 
     EditorCommandPalette commandPalette = EditorInterface.Singleton.GetCommandPalette();
-    // ExternalCommand 是将在命令执行时调用的函数。
+    // ExternalCommand is a function that will be called with the command is executed.
     Callable commandCallable = new Callable(this, MethodName.ExternalCommand);
     commandPalette.AddCommand("command", "test/command", commandCallable)
 
 
 
-\ **注意：**\ 不应直接实例化此类。相反，使用 :ref:`EditorInterface.get_command_palette()<class_EditorInterface_method_get_command_palette>` 访问单例。
+\ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using :ref:`EditorInterface.get_command_palette()<class_EditorInterface_method_get_command_palette>`.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ Godot 编辑器的命令面板。
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -71,8 +71,8 @@ Godot 编辑器的命令面板。
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_EditorCommandPalette_method_add_command:
 
@@ -80,15 +80,15 @@ Godot 编辑器的命令面板。
 
 |void| **add_command**\ (\ command_name\: :ref:`String<class_String>`, key_name\: :ref:`String<class_String>`, binded_callable\: :ref:`Callable<class_Callable>`, shortcut_text\: :ref:`String<class_String>` = "None"\ ) :ref:`🔗<class_EditorCommandPalette_method_add_command>`
 
-向 EditorCommandPalette 添加自定义命令。
+Adds a custom command to EditorCommandPalette.
 
-- ``command_name``\ ：\ :ref:`String<class_String>`\ （\ **Command** 的名称。这会显示给用户。）
+- ``command_name``: :ref:`String<class_String>` (Name of the **Command**. This is displayed to the user.)
 
-- ``key_name``\ ：\ :ref:`String<class_String>`\ （特定 **Command** 的密钥名称。这用于唯一标识 **Command**\ 。）
+- ``key_name``: :ref:`String<class_String>` (Name of the key for a particular **Command**. This is used to uniquely identify the **Command**.)
 
-- ``binded_callable``\ ：\ :ref:`Callable<class_Callable>`\ （\ **Command** 的 Callable。这将在选择 **Command** 时执行。）
+- ``binded_callable``: :ref:`Callable<class_Callable>` (Callable of the **Command**. This will be executed when the **Command** is selected.)
 
-- ``shortcut_text``\ ：\ :ref:`String<class_String>`\ （\ **Command** 的快捷键文本，如果可用。）
+- ``shortcut_text``: :ref:`String<class_String>` (Shortcut text of the **Command** if available.)
 
 .. rst-class:: classref-item-separator
 
@@ -100,16 +100,16 @@ Godot 编辑器的命令面板。
 
 |void| **remove_command**\ (\ key_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorCommandPalette_method_remove_command>`
 
-从 EditorCommandPalette 中删除自定义命令。
+Removes the custom command from EditorCommandPalette.
 
-- ``key_name``: :ref:`String<class_String>` (特定 **Command** 的键名)
+- ``key_name``: :ref:`String<class_String>` (Name of the key for a particular **Command**.)
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

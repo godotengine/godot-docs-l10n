@@ -5,21 +5,21 @@
 VisualShaderNodeParticleMeshEmitter
 ===================================
 
-**繼承：** :ref:`VisualShaderNodeParticleEmitter<class_VisualShaderNodeParticleEmitter>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`VisualShaderNodeParticleEmitter<class_VisualShaderNodeParticleEmitter>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-讓粒子從由 :ref:`Mesh<class_Mesh>` 定義的形狀中發射的視覺化著色器節點。
+A visual shader node that makes particles emitted in a shape defined by a :ref:`Mesh<class_Mesh>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-讓粒子由分配的 :ref:`mesh<class_VisualShaderNodeParticleMeshEmitter_property_mesh>` 的形狀中發射的 :ref:`VisualShaderNodeParticleEmitter<class_VisualShaderNodeParticleEmitter>`\ 。它將從網格的表面發射，可以是全部表面，也可以是某個指定的表面。
+:ref:`VisualShaderNodeParticleEmitter<class_VisualShaderNodeParticleEmitter>` that makes the particles emitted in a shape of the assigned :ref:`mesh<class_VisualShaderNodeParticleMeshEmitter_property_mesh>`. It will emit from the mesh's surfaces, either all or only the specified one.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ VisualShaderNodeParticleMeshEmitter
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_VisualShaderNodeParticleMeshEmitter_property_mesh:
 
@@ -52,7 +52,7 @@ VisualShaderNodeParticleMeshEmitter
 - |void| **set_mesh**\ (\ value\: :ref:`Mesh<class_Mesh>`\ )
 - :ref:`Mesh<class_Mesh>` **get_mesh**\ (\ )
 
-定義發射形狀的 :ref:`Mesh<class_Mesh>`\ 。
+The :ref:`Mesh<class_Mesh>` that defines emission shape.
 
 .. rst-class:: classref-item-separator
 
@@ -69,7 +69,7 @@ VisualShaderNodeParticleMeshEmitter
 - |void| **set_surface_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_surface_index**\ (\ )
 
-發射粒子的表面的索引。\ :ref:`use_all_surfaces<class_VisualShaderNodeParticleMeshEmitter_property_use_all_surfaces>` 必須為 ``false`` 才能生效。
+Index of the surface that emits particles. :ref:`use_all_surfaces<class_VisualShaderNodeParticleMeshEmitter_property_use_all_surfaces>` must be ``false`` for this to take effect.
 
 .. rst-class:: classref-item-separator
 
@@ -86,14 +86,14 @@ VisualShaderNodeParticleMeshEmitter
 - |void| **set_use_all_surfaces**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_use_all_surfaces**\ (\ )
 
-如果為 ``true``\ ，則粒子會從該網格的所有表面上發射。
+If ``true``, the particles will emit from all surfaces of the mesh.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

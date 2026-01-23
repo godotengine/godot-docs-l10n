@@ -5,54 +5,54 @@
 AudioEffectEQ10
 ===============
 
-**繼承：** :ref:`AudioEffectEQ<class_AudioEffectEQ>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`AudioEffectEQ<class_AudioEffectEQ>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-為音訊匯流排新增 10 段等化器，控制 31–16000 Hz 的頻率。
+Adds a 10-band equalizer audio effect to an Audio bus. Gives you control over frequencies from 31 Hz to 16000 Hz.
 
-每段可調整 -60 至 +24 dB。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-頻段：
-
-1：31 Hz
-
-2：62 Hz
-
-3：125 Hz
-
-4：250 Hz
-
-5：500 Hz
-
-6：1000 Hz
-
-7：2000 Hz
-
-8：4000 Hz
-
-9：8000 Hz
-
-10：16000 Hz
-
-另見 :ref:`AudioEffectEQ<class_AudioEffectEQ>`\ 、\ :ref:`AudioEffectEQ6<class_AudioEffectEQ6>`\ 、\ :ref:`AudioEffectEQ21<class_AudioEffectEQ21>`\ 。
+Each frequency can be modulated between -60/+24 dB.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
+Frequency bands:
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+Band 1: 31 Hz
+
+Band 2: 62 Hz
+
+Band 3: 125 Hz
+
+Band 4: 250 Hz
+
+Band 5: 500 Hz
+
+Band 6: 1000 Hz
+
+Band 7: 2000 Hz
+
+Band 8: 4000 Hz
+
+Band 9: 8000 Hz
+
+Band 10: 16000 Hz
+
+See also :ref:`AudioEffectEQ<class_AudioEffectEQ>`, :ref:`AudioEffectEQ6<class_AudioEffectEQ6>`, :ref:`AudioEffectEQ21<class_AudioEffectEQ21>`.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Audio buses <../tutorials/audio/audio_buses>`
+
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

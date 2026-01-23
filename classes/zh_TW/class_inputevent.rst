@@ -5,36 +5,36 @@
 InputEvent
 ==========
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`InputEventAction<class_InputEventAction>`, :ref:`InputEventFromWindow<class_InputEventFromWindow>`, :ref:`InputEventJoypadButton<class_InputEventJoypadButton>`, :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`, :ref:`InputEventMIDI<class_InputEventMIDI>`, :ref:`InputEventShortcut<class_InputEventShortcut>`
+**Inherited By:** :ref:`InputEventAction<class_InputEventAction>`, :ref:`InputEventFromWindow<class_InputEventFromWindow>`, :ref:`InputEventJoypadButton<class_InputEventJoypadButton>`, :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`, :ref:`InputEventMIDI<class_InputEventMIDI>`, :ref:`InputEventShortcut<class_InputEventShortcut>`
 
-輸入事件的抽象基底類別。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-各種輸入事件的抽象基底類別。見 :ref:`Node._input()<class_Node_private_method__input>`\ 。
+Abstract base class for input events.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`使用 InputEvent <../tutorials/inputs/inputevent>`
+Abstract base class of all types of input events. See :ref:`Node._input()<class_Node_private_method__input>`.
 
-- :doc:`Viewport 和畫布變換 <../tutorials/2d/2d_transforms>`
+.. rst-class:: classref-introduction-group
 
-- `2D Dodge The Creeps 範例 <https://godotengine.org/asset-library/asset/2712>`__
+Tutorials
+---------
 
-- `3D 體素示範 <https://godotengine.org/asset-library/asset/2755>`__
+- :doc:`Using InputEvent <../tutorials/inputs/inputevent>`
+
+- :doc:`Viewport and canvas transforms <../tutorials/2d/2d_transforms>`
+
+- `2D Dodge The Creeps Demo <https://godotengine.org/asset-library/asset/2712>`__
+
+- `3D Voxel Demo <https://godotengine.org/asset-library/asset/2755>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ InputEvent
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -85,8 +85,8 @@ InputEvent
 
 .. rst-class:: classref-descriptions-group
 
-常數
-----
+Constants
+---------
 
 .. _class_InputEvent_constant_DEVICE_ID_EMULATION:
 
@@ -102,8 +102,8 @@ Device ID used for emulated mouse input from a touchscreen, or for emulated touc
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_InputEvent_property_device:
 
@@ -126,8 +126,8 @@ The event's device ID.
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_InputEvent_method_accumulate:
 
@@ -135,9 +135,9 @@ The event's device ID.
 
 :ref:`bool<class_bool>` **accumulate**\ (\ with_event\: :ref:`InputEvent<class_InputEvent>`\ ) :ref:`🔗<class_InputEvent_method_accumulate>`
 
-如果給定的輸入事件和這個輸入事件可以相加，則返回 ``true``\ （只針對 :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` 型別的事件）。
+Returns ``true`` if the given input event and this input event can be added together (only for events of type :ref:`InputEventMouseMotion<class_InputEventMouseMotion>`).
 
-給定輸入事件的位置、全域位置和速度將被複製。產生的 ``relative`` 是兩個事件的總和。兩個事件的修飾符必須是相同的。
+The given input event's position, global position and speed will be copied. The resulting ``relative`` is a sum of both events. Both events' modifiers have to be identical.
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ The event's device ID.
 
 :ref:`String<class_String>` **as_text**\ (\ ) |const| :ref:`🔗<class_InputEvent_method_as_text>`
 
-返回事件的 :ref:`String<class_String>` 字串表示。
+Returns a :ref:`String<class_String>` representation of the event.
 
 .. rst-class:: classref-item-separator
 
@@ -161,9 +161,9 @@ The event's device ID.
 
 :ref:`float<class_float>` **get_action_strength**\ (\ action\: :ref:`StringName<class_StringName>`, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_InputEvent_method_get_action_strength>`
 
-根據給定動作的狀態返回 0.0 到 1.0 之間的值。獲取 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` 類型事件的值時很有用。
+Returns a value between 0.0 and 1.0 depending on the given actions' state. Useful for getting the value of events of type :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`.
 
-如果 ``exact_match`` 為 ``false``\ ，它會忽略 :ref:`InputEventKey<class_InputEventKey>` 和 :ref:`InputEventMouseButton<class_InputEventMouseButton>` 事件的額外輸入修飾鍵，以及 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` 事件的方向。
+If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
 
 .. rst-class:: classref-item-separator
 
@@ -175,9 +175,9 @@ The event's device ID.
 
 :ref:`bool<class_bool>` **is_action**\ (\ action\: :ref:`StringName<class_StringName>`, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_InputEvent_method_is_action>`
 
-如果該輸入事件配對任何型別的預定義動作，則返回 ``true``\ 。
+Returns ``true`` if this input event matches a pre-defined action of any type.
 
-如果 ``exact_match`` 為 ``false``\ ，它會忽略 :ref:`InputEventKey<class_InputEventKey>` 和 :ref:`InputEventMouseButton<class_InputEventMouseButton>` 事件的額外輸入修飾鍵，以及 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` 事件的方向。
+If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
 
 .. rst-class:: classref-item-separator
 
@@ -231,7 +231,7 @@ Returns ``true`` if this input event's type is one that can be assigned to an in
 
 :ref:`bool<class_bool>` **is_canceled**\ (\ ) |const| :ref:`🔗<class_InputEvent_method_is_canceled>`
 
-如果這個輸入事件已被取消，則返回 ``true``\ 。
+Returns ``true`` if this input event has been canceled.
 
 .. rst-class:: classref-item-separator
 
@@ -273,9 +273,9 @@ If ``exact_match`` is ``false``, the check ignores additional input modifiers fo
 
 :ref:`bool<class_bool>` **is_pressed**\ (\ ) |const| :ref:`🔗<class_InputEvent_method_is_pressed>`
 
-如果該輸入事件被按下，則返回 ``true``\ 。與 :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` 或 :ref:`InputEventScreenDrag<class_InputEventScreenDrag>` 型別的事件無關。
+Returns ``true`` if this input event is pressed. Not relevant for events of type :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` or :ref:`InputEventScreenDrag<class_InputEventScreenDrag>`.
 
-\ **注意：**\ 由於鍵盤重影，即使按下動作的某個鍵，\ :ref:`is_pressed()<class_InputEvent_method_is_pressed>` 也有可能會返回 ``false``\ 。有關詳細資訊，請參閱文件中的\ `《輸入範例》 <../tutorials/inputs/input_examples.html#keyboard-events>`__\ 。
+\ **Note:** Due to keyboard ghosting, :ref:`is_pressed()<class_InputEvent_method_is_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <../tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -287,7 +287,7 @@ If ``exact_match`` is ``false``, the check ignores additional input modifiers fo
 
 :ref:`bool<class_bool>` **is_released**\ (\ ) |const| :ref:`🔗<class_InputEvent_method_is_released>`
 
-如果該輸入事件是回顯事件，則返回 ``true``\ 。不適用於型別為 :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` 和 :ref:`InputEventScreenDrag<class_InputEventScreenDrag>` 的事件。
+Returns ``true`` if this input event is released. Not relevant for events of type :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` or :ref:`InputEventScreenDrag<class_InputEventScreenDrag>`.
 
 .. rst-class:: classref-item-separator
 
@@ -299,14 +299,14 @@ If ``exact_match`` is ``false``, the check ignores additional input modifiers fo
 
 :ref:`InputEvent<class_InputEvent>` **xformed_by**\ (\ xform\: :ref:`Transform2D<class_Transform2D>`, local_ofs\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) |const| :ref:`🔗<class_InputEvent_method_xformed_by>`
 
-返回給定輸入事件的副本，該副本已被 ``local_ofs`` 偏移並被 ``xform`` 變換。與 :ref:`InputEventMouseButton<class_InputEventMouseButton>`\ 、\ :ref:`InputEventMouseMotion<class_InputEventMouseMotion>`\ 、\ :ref:`InputEventScreenTouch<class_InputEventScreenTouch>`\ 、\ :ref:`InputEventScreenDrag<class_InputEventScreenDrag>`\ 、\ :ref:`InputEventMagnifyGesture<class_InputEventMagnifyGesture>`\ 、和 :ref:`InputEventPanGesture<class_InputEventPanGesture>` 型別的事件相關。
+Returns a copy of the given input event which has been offset by ``local_ofs`` and transformed by ``xform``. Relevant for events of type :ref:`InputEventMouseButton<class_InputEventMouseButton>`, :ref:`InputEventMouseMotion<class_InputEventMouseMotion>`, :ref:`InputEventScreenTouch<class_InputEventScreenTouch>`, :ref:`InputEventScreenDrag<class_InputEventScreenDrag>`, :ref:`InputEventMagnifyGesture<class_InputEventMagnifyGesture>` and :ref:`InputEventPanGesture<class_InputEventPanGesture>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

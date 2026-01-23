@@ -5,23 +5,23 @@
 Curve2D
 =======
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-描述 2D 空間的貝茲曲線。
+Describes a Bézier curve in 2D space.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-該類描述了 2D 空間中的貝茲曲線。它主要用於給 :ref:`Path2D<class_Path2D>` 一個形狀，但也可以手動取樣用於其他目的。
+This class describes a Bézier curve in 2D space. It is mainly used to give a shape to a :ref:`Path2D<class_Path2D>`, but can be manually sampled for other purposes.
 
-它保留了沿曲線的預計算點的快取，以加快進一步的計算。
+It keeps a cache of precalculated points along the curve, to speed up further calculations.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ Curve2D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -86,8 +86,8 @@ Curve2D
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_Curve2D_property_bake_interval:
 
@@ -100,7 +100,7 @@ Curve2D
 - |void| **set_bake_interval**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bake_interval**\ (\ )
 
-相鄰兩個快取點之間的距離，以圖元為單位。改變它將迫使快取在下次呼叫 :ref:`get_baked_points()<class_Curve2D_method_get_baked_points>` 或 :ref:`get_baked_length()<class_Curve2D_method_get_baked_length>` 函式時重新計算。距離越小，快取中的點越多，佔用的記憶體也越多，所以使用時要注意。
+The distance in pixels between two adjacent cached points. Changing it forces the cache to be recomputed the next time the :ref:`get_baked_points()<class_Curve2D_method_get_baked_points>` or :ref:`get_baked_length()<class_Curve2D_method_get_baked_length>` function is called. The smaller the distance, the more points in the cache and the more memory it will consume, so use with care.
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ Curve2D
 - |void| **set_point_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_point_count**\ (\ )
 
-描述該曲線的點的數量。
+The number of points describing the curve.
 
 .. rst-class:: classref-section-separator
 
@@ -125,8 +125,8 @@ Curve2D
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_Curve2D_method_add_point:
 
@@ -134,9 +134,9 @@ Curve2D
 
 |void| **add_point**\ (\ position\: :ref:`Vector2<class_Vector2>`, in\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0), out\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0), index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_Curve2D_method_add_point>`
 
-新增一個具有相對於曲線自身位置的指定 ``position``\ ，且帶有控制點 ``in`` 和 ``out`` 的點。在點列表的末尾追加該新點。
+Adds a point with the specified ``position`` relative to the curve's own position, with control points ``in`` and ``out``. Appends the new point at the end of the point list.
 
-如果給定了 ``index``\ ，則將新點插入到由索引 ``index`` 標識的已有點之前。從 ``index`` 開始的每個已有點，都會在點列表中進一步向下移動。索引必須大於或等於 ``0``\ ，並且不得超過線段中已有點的數量。參見 :ref:`point_count<class_Curve2D_property_point_count>`\ 。
+If ``index`` is given, the new point is inserted before the existing point identified by index ``index``. Every existing point starting from ``index`` is shifted further down the list of points. The index must be greater than or equal to ``0`` and must not exceed the number of existing points in the line. See :ref:`point_count<class_Curve2D_property_point_count>`.
 
 .. rst-class:: classref-item-separator
 
@@ -148,7 +148,7 @@ Curve2D
 
 |void| **clear_points**\ (\ ) :ref:`🔗<class_Curve2D_method_clear_points>`
 
-從曲線中移除所有點。
+Removes all points from the curve.
 
 .. rst-class:: classref-item-separator
 
@@ -160,7 +160,7 @@ Curve2D
 
 :ref:`float<class_float>` **get_baked_length**\ (\ ) |const| :ref:`🔗<class_Curve2D_method_get_baked_length>`
 
-根據快取的點，返回曲線的總長度。給予足夠的密度（見 :ref:`bake_interval<class_Curve2D_property_bake_interval>`\ ），它應該是足夠近似的。
+Returns the total length of the curve, based on the cached points. Given enough density (see :ref:`bake_interval<class_Curve2D_property_bake_interval>`), it should be approximate enough.
 
 .. rst-class:: classref-item-separator
 
@@ -172,7 +172,7 @@ Curve2D
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_baked_points**\ (\ ) |const| :ref:`🔗<class_Curve2D_method_get_baked_points>`
 
-返回快取的點，形式為 :ref:`PackedVector2Array<class_PackedVector2Array>`\ 。
+Returns the cache of points as a :ref:`PackedVector2Array<class_PackedVector2Array>`.
 
 .. rst-class:: classref-item-separator
 
@@ -184,9 +184,9 @@ Curve2D
 
 :ref:`float<class_float>` **get_closest_offset**\ (\ to_point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Curve2D_method_get_closest_offset>`
 
-返回最接近 ``to_point`` 的偏移量。該偏移量被用於 :ref:`sample_baked()<class_Curve2D_method_sample_baked>`\ 。
+Returns the closest offset to ``to_point``. This offset is meant to be used in :ref:`sample_baked()<class_Curve2D_method_sample_baked>`.
 
-\ ``to_point`` 必須在該曲線的局部空間中。
+\ ``to_point`` must be in this curve's local space.
 
 .. rst-class:: classref-item-separator
 
@@ -198,9 +198,9 @@ Curve2D
 
 :ref:`Vector2<class_Vector2>` **get_closest_point**\ (\ to_point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Curve2D_method_get_closest_point>`
 
-返回已烘焙的線段上最接近 ``to_point`` 的點（在曲線的局部空間中）。
+Returns the closest point on baked segments (in curve's local space) to ``to_point``.
 
-\ ``to_point`` 必須在該曲線的局部空間中。
+\ ``to_point`` must be in this curve's local space.
 
 .. rst-class:: classref-item-separator
 
@@ -212,7 +212,7 @@ Curve2D
 
 :ref:`Vector2<class_Vector2>` **get_point_in**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Curve2D_method_get_point_in>`
 
-返回指向頂點 ``idx`` 的控制點的位置。返回的位置是相對於頂點 ``idx`` 的。如果索引越界，則該函式將向控制台發送一個錯誤，並返回 ``(0, 0)``\ 。
+Returns the position of the control point leading to the vertex ``idx``. The returned position is relative to the vertex ``idx``. If the index is out of bounds, the function sends an error to the console, and returns ``(0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -224,7 +224,7 @@ Curve2D
 
 :ref:`Vector2<class_Vector2>` **get_point_out**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Curve2D_method_get_point_out>`
 
-返回離向頂點 ``idx`` 的控制點的位置。返回的位置是相對於頂點 ``idx`` 的。如果索引越界，則該函式將向控制台發送一個錯誤，並返回 ``(0, 0)``\ 。
+Returns the position of the control point leading out of the vertex ``idx``. The returned position is relative to the vertex ``idx``. If the index is out of bounds, the function sends an error to the console, and returns ``(0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -236,7 +236,7 @@ Curve2D
 
 :ref:`Vector2<class_Vector2>` **get_point_position**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Curve2D_method_get_point_position>`
 
-返回頂點的位置 ``idx``\ 。如果索引越界，則該函式將向控制台發送一個錯誤，並返回 ``(0, 0)``\ 。
+Returns the position of the vertex ``idx``. If the index is out of bounds, the function sends an error to the console, and returns ``(0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -248,7 +248,7 @@ Curve2D
 
 |void| **remove_point**\ (\ idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Curve2D_method_remove_point>`
 
-從曲線上刪除點 ``idx``\ 。如果 ``idx`` 越界，則會向控制台發送錯誤資訊。
+Deletes the point ``idx`` from the curve. Sends an error to the console if ``idx`` is out of bounds.
 
 .. rst-class:: classref-item-separator
 
@@ -274,11 +274,11 @@ If ``idx`` is out of bounds it is truncated to the first or last vertex, and ``t
 
 :ref:`Vector2<class_Vector2>` **sample_baked**\ (\ offset\: :ref:`float<class_float>` = 0.0, cubic\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Curve2D_method_sample_baked>`
 
-返回曲線內位於 ``offset`` 位置的一個點，其中 ``offset`` 為沿曲線的像素測量距離。
+Returns a point within the curve at position ``offset``, where ``offset`` is measured as a pixel distance along the curve.
 
-為此，它會找到 ``offset`` 位於其中的兩個快取點，然後對值進行插值。如果 ``cubic`` 被設定為 ``true``\ ，則該插值是立方插值；如果被設定為 ``false``\ ，則該插值是線性插值。
+To do that, it finds the two cached points where the ``offset`` lies between, then interpolates the values. This interpolation is cubic if ``cubic`` is set to ``true``, or linear if set to ``false``.
 
-立方插值往往能更好地跟隨曲線，但線性插值速度更快（而且通常足夠精確）。
+Cubic interpolation tends to follow the curves better, but linear is faster (and often, precise enough).
 
 .. rst-class:: classref-item-separator
 
@@ -311,7 +311,7 @@ Similar to :ref:`sample_baked()<class_Curve2D_method_sample_baked>`, but returns
 
 :ref:`Vector2<class_Vector2>` **samplef**\ (\ fofs\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Curve2D_method_samplef>`
 
-返回頂點 ``fofs`` 的位置。該函式使用 ``fofs`` 的整數部分作為 ``idx``\ ，其小數部分作為 ``t``\ ，呼叫 :ref:`sample()<class_Curve2D_method_sample>`\ 。
+Returns the position at the vertex ``fofs``. It calls :ref:`sample()<class_Curve2D_method_sample>` using the integer part of ``fofs`` as ``idx``, and its fractional part as ``t``.
 
 .. rst-class:: classref-item-separator
 
@@ -323,7 +323,7 @@ Similar to :ref:`sample_baked()<class_Curve2D_method_sample_baked>`, but returns
 
 |void| **set_point_in**\ (\ idx\: :ref:`int<class_int>`, position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Curve2D_method_set_point_in>`
 
-設定通往頂點 ``idx`` 的控制點位置。如果索引超出範圍，函式會向控制台發送錯誤信息。位置相對於頂點。
+Sets the position of the control point leading to the vertex ``idx``. If the index is out of bounds, the function sends an error to the console. The position is relative to the vertex.
 
 .. rst-class:: classref-item-separator
 
@@ -335,7 +335,7 @@ Similar to :ref:`sample_baked()<class_Curve2D_method_sample_baked>`, but returns
 
 |void| **set_point_out**\ (\ idx\: :ref:`int<class_int>`, position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Curve2D_method_set_point_out>`
 
-設定從頂點 ``idx`` 引出的控制點位置。如果索引超出範圍，函式會向控制台發送錯誤資訊。位置相對於頂點。
+Sets the position of the control point leading out of the vertex ``idx``. If the index is out of bounds, the function sends an error to the console. The position is relative to the vertex.
 
 .. rst-class:: classref-item-separator
 
@@ -347,7 +347,7 @@ Similar to :ref:`sample_baked()<class_Curve2D_method_sample_baked>`, but returns
 
 |void| **set_point_position**\ (\ idx\: :ref:`int<class_int>`, position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Curve2D_method_set_point_position>`
 
-設定頂點 ``idx`` 的位置。如果索引超出範圍，函式會向控制台發送錯誤資訊。
+Sets the position for the vertex ``idx``. If the index is out of bounds, the function sends an error to the console.
 
 .. rst-class:: classref-item-separator
 
@@ -359,13 +359,13 @@ Similar to :ref:`sample_baked()<class_Curve2D_method_sample_baked>`, but returns
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **tessellate**\ (\ max_stages\: :ref:`int<class_int>` = 5, tolerance_degrees\: :ref:`float<class_float>` = 4\ ) |const| :ref:`🔗<class_Curve2D_method_tessellate>`
 
-返回沿曲線的點的列表，點的密度由曲率控制。也就是說，彎曲的部分比直的部分有更多的點。
+Returns a list of points along the curve, with a curvature controlled point density. That is, the curvier parts will have more points than the straighter parts.
 
-這種近似會在每個點之間製作直段，然後將這些直段細分，直到得到的形狀足夠相似。
+This approximation makes straight segments between each point, then subdivides those segments until the resulting shape is similar enough.
 
-\ ``max_stages`` 控制曲線段在被認為足夠近似之前可能會面臨多少次細分。每次細分會將曲線段分成兩半，因此預設的 5 個階段可能意味著每個曲線段最多得到 32 個細分。請謹慎增加！
+\ ``max_stages`` controls how many subdivisions a curve segment may face before it is considered approximate enough. Each subdivision splits the segment in half, so the default 5 stages may mean up to 32 subdivisions per curve segment. Increase with care!
 
-\ ``tolerance_degrees`` 控制曲線段在其中點偏離真實曲線的多少度會被細分。
+\ ``tolerance_degrees`` controls how many degrees the midpoint of a segment may deviate from the real curve, before the segment has to be subdivided.
 
 .. rst-class:: classref-item-separator
 
@@ -377,16 +377,16 @@ Similar to :ref:`sample_baked()<class_Curve2D_method_sample_baked>`, but returns
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **tessellate_even_length**\ (\ max_stages\: :ref:`int<class_int>` = 5, tolerance_length\: :ref:`float<class_float>` = 20.0\ ) |const| :ref:`🔗<class_Curve2D_method_tessellate_even_length>`
 
-返回沿曲線的點列表，具有幾乎均勻的密度。\ ``max_stages`` 控制曲線段在被認為足夠近似之前可能面臨多少次細分。每次細分將段分成兩半，因此預設的 5 個階段可能意味著每個曲線段最多 32 個細分。請謹慎增加！
+Returns a list of points along the curve, with almost uniform density. ``max_stages`` controls how many subdivisions a curve segment may face before it is considered approximate enough. Each subdivision splits the segment in half, so the default 5 stages may mean up to 32 subdivisions per curve segment. Increase with care!
 
-\ ``tolerance_length`` 控制在必須細分線段之前兩個相鄰點之間的最大距離。
+\ ``tolerance_length`` controls the maximal distance between two neighboring points, before the segment has to be subdivided.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

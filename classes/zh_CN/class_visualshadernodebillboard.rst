@@ -5,21 +5,21 @@
 VisualShaderNodeBillboard
 =========================
 
-**继承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-在可视化着色器图中，用于控制对象如何面向相机的节点。
+A node that controls how the object faces the camera to be used within the visual shader graph.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-这个节点的输出端口需要连接至 :ref:`VisualShaderNodeOutput<class_VisualShaderNodeOutput>` 的 ``Model View Matrix`` 端口。
+The output port of this node needs to be connected to ``Model View Matrix`` port of :ref:`VisualShaderNodeOutput<class_VisualShaderNodeOutput>`.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ VisualShaderNodeBillboard
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_VisualShaderNodeBillboard_BillboardType:
 
@@ -51,7 +51,7 @@ enum **BillboardType**: :ref:`🔗<enum_VisualShaderNodeBillboard_BillboardType>
 
 :ref:`BillboardType<enum_VisualShaderNodeBillboard_BillboardType>` **BILLBOARD_TYPE_DISABLED** = ``0``
 
-公告板被禁用，该节点不做任何事情。
+Billboarding is disabled and the node does nothing.
 
 .. _class_VisualShaderNodeBillboard_constant_BILLBOARD_TYPE_ENABLED:
 
@@ -59,7 +59,7 @@ enum **BillboardType**: :ref:`🔗<enum_VisualShaderNodeBillboard_BillboardType>
 
 :ref:`BillboardType<enum_VisualShaderNodeBillboard_BillboardType>` **BILLBOARD_TYPE_ENABLED** = ``1``
 
-启用标准公告板算法。
+A standard billboarding algorithm is enabled.
 
 .. _class_VisualShaderNodeBillboard_constant_BILLBOARD_TYPE_FIXED_Y:
 
@@ -67,7 +67,7 @@ enum **BillboardType**: :ref:`🔗<enum_VisualShaderNodeBillboard_BillboardType>
 
 :ref:`BillboardType<enum_VisualShaderNodeBillboard_BillboardType>` **BILLBOARD_TYPE_FIXED_Y** = ``2``
 
-启用围绕 Y 轴旋转的公告板算法。
+A billboarding algorithm to rotate around Y-axis is enabled.
 
 .. _class_VisualShaderNodeBillboard_constant_BILLBOARD_TYPE_PARTICLES:
 
@@ -75,7 +75,7 @@ enum **BillboardType**: :ref:`🔗<enum_VisualShaderNodeBillboard_BillboardType>
 
 :ref:`BillboardType<enum_VisualShaderNodeBillboard_BillboardType>` **BILLBOARD_TYPE_PARTICLES** = ``3``
 
-启用针对粒子设计的公告板算法。
+A billboarding algorithm designed to use on particles is enabled.
 
 .. _class_VisualShaderNodeBillboard_constant_BILLBOARD_TYPE_MAX:
 
@@ -83,7 +83,7 @@ enum **BillboardType**: :ref:`🔗<enum_VisualShaderNodeBillboard_BillboardType>
 
 :ref:`BillboardType<enum_VisualShaderNodeBillboard_BillboardType>` **BILLBOARD_TYPE_MAX** = ``4``
 
-代表 :ref:`BillboardType<enum_VisualShaderNodeBillboard_BillboardType>` 枚举的大小。
+Represents the size of the :ref:`BillboardType<enum_VisualShaderNodeBillboard_BillboardType>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -91,8 +91,8 @@ enum **BillboardType**: :ref:`🔗<enum_VisualShaderNodeBillboard_BillboardType>
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_VisualShaderNodeBillboard_property_billboard_type:
 
@@ -105,7 +105,7 @@ enum **BillboardType**: :ref:`🔗<enum_VisualShaderNodeBillboard_BillboardType>
 - |void| **set_billboard_type**\ (\ value\: :ref:`BillboardType<enum_VisualShaderNodeBillboard_BillboardType>`\ )
 - :ref:`BillboardType<enum_VisualShaderNodeBillboard_BillboardType>` **get_billboard_type**\ (\ )
 
-控制对象如何面对相机。
+Controls how the object faces the camera.
 
 .. rst-class:: classref-item-separator
 
@@ -122,14 +122,14 @@ enum **BillboardType**: :ref:`🔗<enum_VisualShaderNodeBillboard_BillboardType>
 - |void| **set_keep_scale_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_keep_scale_enabled**\ (\ )
 
-如果为 ``true``\ ，则着色器将保持为网格设置的缩放。否则，进行公告板处理时将丢失缩放。
+If ``true``, the shader will keep the scale set for the mesh. Otherwise, the scale is lost when billboarding.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

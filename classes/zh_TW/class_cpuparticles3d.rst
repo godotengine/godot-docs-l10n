@@ -5,30 +5,30 @@
 CPUParticles3D
 ==============
 
-**繼承：** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-基於 CPU 的 3D 粒子發射器。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-基於 CPU 的 3D 粒子節點，可用於建立各種粒子系統、粒子效果。
-
-另見 :ref:`GPUParticles3D<class_GPUParticles3D>`\ ，利用硬體加速提供了相同的功能，但可能無法在較舊的裝置上運作。
+A CPU-based 3D particle emitter.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`粒子系統（3D） <../tutorials/3d/particles/index>`
+CPU-based 3D particle node used to create a variety of particle systems and effects.
+
+See also :ref:`GPUParticles3D<class_GPUParticles3D>`, which provides the same functionality with hardware acceleration, but may not run on older devices.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Particle systems (3D) <../tutorials/3d/particles/index>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -191,8 +191,8 @@ CPUParticles3D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -229,8 +229,8 @@ CPUParticles3D
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_CPUParticles3D_signal_finished:
 
@@ -238,7 +238,7 @@ CPUParticles3D
 
 **finished**\ (\ ) :ref:`🔗<class_CPUParticles3D_signal_finished>`
 
-所有活動粒子完成處理時發出。當 :ref:`one_shot<class_CPUParticles3D_property_one_shot>` 停用時，粒子將連續處理，因此永遠不會發出。
+Emitted when all active particles have finished processing. When :ref:`one_shot<class_CPUParticles3D_property_one_shot>` is disabled, particles will process continuously, so this is never emitted.
 
 .. rst-class:: classref-section-separator
 
@@ -246,8 +246,8 @@ CPUParticles3D
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_CPUParticles3D_DrawOrder:
 
@@ -261,7 +261,7 @@ enum **DrawOrder**: :ref:`🔗<enum_CPUParticles3D_DrawOrder>`
 
 :ref:`DrawOrder<enum_CPUParticles3D_DrawOrder>` **DRAW_ORDER_INDEX** = ``0``
 
-粒子按發射順序繪製。
+Particles are drawn in the order emitted.
 
 .. _class_CPUParticles3D_constant_DRAW_ORDER_LIFETIME:
 
@@ -277,7 +277,7 @@ Particles are drawn in order of remaining lifetime. In other words, the particle
 
 :ref:`DrawOrder<enum_CPUParticles3D_DrawOrder>` **DRAW_ORDER_VIEW_DEPTH** = ``2``
 
-粒子按深度順序繪製。
+Particles are drawn in order of depth.
 
 .. rst-class:: classref-item-separator
 
@@ -295,7 +295,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles3D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles3D_Parameter>` **PARAM_INITIAL_LINEAR_VELOCITY** = ``0``
 
-與 :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` 一起使用，設定初始速度屬性。
+Use with :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` to set initial velocity properties.
 
 .. _class_CPUParticles3D_constant_PARAM_ANGULAR_VELOCITY:
 
@@ -303,7 +303,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles3D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles3D_Parameter>` **PARAM_ANGULAR_VELOCITY** = ``1``
 
-與 :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` 一起使用，設定角速度屬性。
+Use with :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` to set angular velocity properties.
 
 .. _class_CPUParticles3D_constant_PARAM_ORBIT_VELOCITY:
 
@@ -311,7 +311,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles3D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles3D_Parameter>` **PARAM_ORBIT_VELOCITY** = ``2``
 
-與 :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` 一起使用，設定軌道速度屬性。
+Use with :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` to set orbital velocity properties.
 
 .. _class_CPUParticles3D_constant_PARAM_LINEAR_ACCEL:
 
@@ -319,7 +319,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles3D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles3D_Parameter>` **PARAM_LINEAR_ACCEL** = ``3``
 
-與 :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` 一起使用，設定線性加速度屬性。
+Use with :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` to set linear acceleration properties.
 
 .. _class_CPUParticles3D_constant_PARAM_RADIAL_ACCEL:
 
@@ -327,7 +327,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles3D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles3D_Parameter>` **PARAM_RADIAL_ACCEL** = ``4``
 
-與 :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` 一起使用，設定徑向加速度屬性。
+Use with :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` to set radial acceleration properties.
 
 .. _class_CPUParticles3D_constant_PARAM_TANGENTIAL_ACCEL:
 
@@ -335,7 +335,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles3D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles3D_Parameter>` **PARAM_TANGENTIAL_ACCEL** = ``5``
 
-與 :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` 一起使用，設定切向加速度屬性。
+Use with :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` to set tangential acceleration properties.
 
 .. _class_CPUParticles3D_constant_PARAM_DAMPING:
 
@@ -343,7 +343,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles3D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles3D_Parameter>` **PARAM_DAMPING** = ``6``
 
-與 :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` 一起使用，設定阻尼屬性。
+Use with :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` to set damping properties.
 
 .. _class_CPUParticles3D_constant_PARAM_ANGLE:
 
@@ -351,7 +351,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles3D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles3D_Parameter>` **PARAM_ANGLE** = ``7``
 
-與 :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` 一起使用，設定角度屬性。
+Use with :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` to set angle properties.
 
 .. _class_CPUParticles3D_constant_PARAM_SCALE:
 
@@ -359,7 +359,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles3D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles3D_Parameter>` **PARAM_SCALE** = ``8``
 
-與 :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` 一起使用，設定縮放屬性。
+Use with :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` to set scale properties.
 
 .. _class_CPUParticles3D_constant_PARAM_HUE_VARIATION:
 
@@ -367,7 +367,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles3D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles3D_Parameter>` **PARAM_HUE_VARIATION** = ``9``
 
-與 :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` 一起使用，設定色相變化屬性。
+Use with :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` to set hue variation properties.
 
 .. _class_CPUParticles3D_constant_PARAM_ANIM_SPEED:
 
@@ -375,7 +375,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles3D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles3D_Parameter>` **PARAM_ANIM_SPEED** = ``10``
 
-與 :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` 一起使用，設定動畫速度屬性。
+Use with :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` to set animation speed properties.
 
 .. _class_CPUParticles3D_constant_PARAM_ANIM_OFFSET:
 
@@ -383,7 +383,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles3D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles3D_Parameter>` **PARAM_ANIM_OFFSET** = ``11``
 
-與 :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` 一起使用，設定動畫偏移屬性。
+Use with :ref:`set_param_min()<class_CPUParticles3D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles3D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles3D_method_set_param_curve>` to set animation offset properties.
 
 .. _class_CPUParticles3D_constant_PARAM_MAX:
 
@@ -391,7 +391,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles3D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles3D_Parameter>` **PARAM_MAX** = ``12``
 
-代表 :ref:`Parameter<enum_CPUParticles3D_Parameter>` 列舉的大小。
+Represents the size of the :ref:`Parameter<enum_CPUParticles3D_Parameter>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -409,7 +409,7 @@ enum **ParticleFlags**: :ref:`🔗<enum_CPUParticles3D_ParticleFlags>`
 
 :ref:`ParticleFlags<enum_CPUParticles3D_ParticleFlags>` **PARTICLE_FLAG_ALIGN_Y_TO_VELOCITY** = ``0``
 
-與 :ref:`set_particle_flag()<class_CPUParticles3D_method_set_particle_flag>` 一起使用，設定 :ref:`particle_flag_align_y<class_CPUParticles3D_property_particle_flag_align_y>`\ 。
+Use with :ref:`set_particle_flag()<class_CPUParticles3D_method_set_particle_flag>` to set :ref:`particle_flag_align_y<class_CPUParticles3D_property_particle_flag_align_y>`.
 
 .. _class_CPUParticles3D_constant_PARTICLE_FLAG_ROTATE_Y:
 
@@ -417,7 +417,7 @@ enum **ParticleFlags**: :ref:`🔗<enum_CPUParticles3D_ParticleFlags>`
 
 :ref:`ParticleFlags<enum_CPUParticles3D_ParticleFlags>` **PARTICLE_FLAG_ROTATE_Y** = ``1``
 
-與 :ref:`set_particle_flag()<class_CPUParticles3D_method_set_particle_flag>` 一起使用，設定 :ref:`particle_flag_rotate_y<class_CPUParticles3D_property_particle_flag_rotate_y>`\ 。
+Use with :ref:`set_particle_flag()<class_CPUParticles3D_method_set_particle_flag>` to set :ref:`particle_flag_rotate_y<class_CPUParticles3D_property_particle_flag_rotate_y>`.
 
 .. _class_CPUParticles3D_constant_PARTICLE_FLAG_DISABLE_Z:
 
@@ -425,7 +425,7 @@ enum **ParticleFlags**: :ref:`🔗<enum_CPUParticles3D_ParticleFlags>`
 
 :ref:`ParticleFlags<enum_CPUParticles3D_ParticleFlags>` **PARTICLE_FLAG_DISABLE_Z** = ``2``
 
-與 :ref:`set_particle_flag()<class_CPUParticles3D_method_set_particle_flag>` 一起使用，設定\ :ref:`particle_flag_disable_z<class_CPUParticles3D_property_particle_flag_disable_z>`\ 。
+Use with :ref:`set_particle_flag()<class_CPUParticles3D_method_set_particle_flag>` to set :ref:`particle_flag_disable_z<class_CPUParticles3D_property_particle_flag_disable_z>`.
 
 .. _class_CPUParticles3D_constant_PARTICLE_FLAG_MAX:
 
@@ -433,7 +433,7 @@ enum **ParticleFlags**: :ref:`🔗<enum_CPUParticles3D_ParticleFlags>`
 
 :ref:`ParticleFlags<enum_CPUParticles3D_ParticleFlags>` **PARTICLE_FLAG_MAX** = ``3``
 
-代表 :ref:`ParticleFlags<enum_CPUParticles3D_ParticleFlags>` 列舉的大小。
+Represents the size of the :ref:`ParticleFlags<enum_CPUParticles3D_ParticleFlags>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -451,7 +451,7 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles3D_EmissionShape>`
 
 :ref:`EmissionShape<enum_CPUParticles3D_EmissionShape>` **EMISSION_SHAPE_POINT** = ``0``
 
-所有粒子將從單個點發射。
+All particles will be emitted from a single point.
 
 .. _class_CPUParticles3D_constant_EMISSION_SHAPE_SPHERE:
 
@@ -459,7 +459,7 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles3D_EmissionShape>`
 
 :ref:`EmissionShape<enum_CPUParticles3D_EmissionShape>` **EMISSION_SHAPE_SPHERE** = ``1``
 
-粒子將在球體的體積中發射。
+Particles will be emitted in the volume of a sphere.
 
 .. _class_CPUParticles3D_constant_EMISSION_SHAPE_SPHERE_SURFACE:
 
@@ -467,7 +467,7 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles3D_EmissionShape>`
 
 :ref:`EmissionShape<enum_CPUParticles3D_EmissionShape>` **EMISSION_SHAPE_SPHERE_SURFACE** = ``2``
 
-粒子將在球體表面發射。
+Particles will be emitted on the surface of a sphere.
 
 .. _class_CPUParticles3D_constant_EMISSION_SHAPE_BOX:
 
@@ -475,7 +475,7 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles3D_EmissionShape>`
 
 :ref:`EmissionShape<enum_CPUParticles3D_EmissionShape>` **EMISSION_SHAPE_BOX** = ``3``
 
-粒子將在盒子的體積中發射。
+Particles will be emitted in the volume of a box.
 
 .. _class_CPUParticles3D_constant_EMISSION_SHAPE_POINTS:
 
@@ -483,7 +483,7 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles3D_EmissionShape>`
 
 :ref:`EmissionShape<enum_CPUParticles3D_EmissionShape>` **EMISSION_SHAPE_POINTS** = ``4``
 
-粒子將在 :ref:`emission_points<class_CPUParticles3D_property_emission_points>` 中隨機選擇的位置發射。粒子顏色將通過 :ref:`emission_colors<class_CPUParticles3D_property_emission_colors>` 進行調變。
+Particles will be emitted at a position chosen randomly among :ref:`emission_points<class_CPUParticles3D_property_emission_points>`. Particle color will be modulated by :ref:`emission_colors<class_CPUParticles3D_property_emission_colors>`.
 
 .. _class_CPUParticles3D_constant_EMISSION_SHAPE_DIRECTED_POINTS:
 
@@ -491,7 +491,7 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles3D_EmissionShape>`
 
 :ref:`EmissionShape<enum_CPUParticles3D_EmissionShape>` **EMISSION_SHAPE_DIRECTED_POINTS** = ``5``
 
-粒子將在 :ref:`emission_points<class_CPUParticles3D_property_emission_points>` 中隨機選擇的位置發射。粒子的速度和旋轉將基於 :ref:`emission_normals<class_CPUParticles3D_property_emission_normals>` 進行設定。粒子顏色將通過 :ref:`emission_colors<class_CPUParticles3D_property_emission_colors>` 進行調變。
+Particles will be emitted at a position chosen randomly among :ref:`emission_points<class_CPUParticles3D_property_emission_points>`. Particle velocity and rotation will be set based on :ref:`emission_normals<class_CPUParticles3D_property_emission_normals>`. Particle color will be modulated by :ref:`emission_colors<class_CPUParticles3D_property_emission_colors>`.
 
 .. _class_CPUParticles3D_constant_EMISSION_SHAPE_RING:
 
@@ -499,7 +499,7 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles3D_EmissionShape>`
 
 :ref:`EmissionShape<enum_CPUParticles3D_EmissionShape>` **EMISSION_SHAPE_RING** = ``6``
 
-粒子將以環形或圓柱的形式發射出來。
+Particles will be emitted in a ring or cylinder.
 
 .. _class_CPUParticles3D_constant_EMISSION_SHAPE_MAX:
 
@@ -507,7 +507,7 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles3D_EmissionShape>`
 
 :ref:`EmissionShape<enum_CPUParticles3D_EmissionShape>` **EMISSION_SHAPE_MAX** = ``7``
 
-代表 :ref:`EmissionShape<enum_CPUParticles3D_EmissionShape>` 列舉的大小。
+Represents the size of the :ref:`EmissionShape<enum_CPUParticles3D_EmissionShape>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -515,8 +515,8 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles3D_EmissionShape>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_CPUParticles3D_property_amount:
 
@@ -529,7 +529,7 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles3D_EmissionShape>`
 - |void| **set_amount**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_amount**\ (\ )
 
-單個發射週期內發射的粒子數。
+Number of particles emitted in one emission cycle.
 
 .. rst-class:: classref-item-separator
 
@@ -563,7 +563,7 @@ Each particle's rotation will be animated along this :ref:`Curve<class_Curve>`. 
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-最大角度。
+Maximum angle.
 
 .. rst-class:: classref-item-separator
 
@@ -580,7 +580,7 @@ Each particle's rotation will be animated along this :ref:`Curve<class_Curve>`. 
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-最小角度。
+Minimum angle.
 
 .. rst-class:: classref-item-separator
 
@@ -614,7 +614,7 @@ Each particle's angular velocity (rotation speed) will vary along this :ref:`Cur
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-套用於每個粒子的最大初始角速度（旋轉速度），單位：\ *度*\ 每秒。
+Maximum initial angular velocity (rotation speed) applied to each particle in *degrees* per second.
 
 .. rst-class:: classref-item-separator
 
@@ -631,7 +631,7 @@ Each particle's angular velocity (rotation speed) will vary along this :ref:`Cur
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-套用於每個粒子的最小初始角速度（旋轉速度），單位：\ *度*\ 每秒 。
+Minimum initial angular velocity (rotation speed) applied to each particle in *degrees* per second.
 
 .. rst-class:: classref-item-separator
 
@@ -665,7 +665,7 @@ Each particle's animation offset will vary along this :ref:`Curve<class_Curve>`.
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-最大動畫偏移。
+Maximum animation offset.
 
 .. rst-class:: classref-item-separator
 
@@ -682,7 +682,7 @@ Each particle's animation offset will vary along this :ref:`Curve<class_Curve>`.
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-最小動畫偏移。
+Minimum animation offset.
 
 .. rst-class:: classref-item-separator
 
@@ -716,7 +716,7 @@ Each particle's animation speed will vary along this :ref:`Curve<class_Curve>`. 
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-最大粒子動畫速度。
+Maximum particle animation speed.
 
 .. rst-class:: classref-item-separator
 
@@ -733,7 +733,7 @@ Each particle's animation speed will vary along this :ref:`Curve<class_Curve>`. 
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-最小粒子動畫速度。
+Minimum particle animation speed.
 
 .. rst-class:: classref-item-separator
 
@@ -750,9 +750,9 @@ Each particle's animation speed will vary along this :ref:`Curve<class_Curve>`. 
 - |void| **set_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_color**\ (\ )
 
-每個粒子的初始顏色。
+Each particle's initial color.
 
-\ **注意：**\ :ref:`color<class_CPUParticles3D_property_color>` 乘以粒子網格的頂點顏色。要在 :ref:`BaseMaterial3D<class_BaseMaterial3D>` 上產生可見效果，\ :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *必須*\ 為 ``true``\ 。對於 :ref:`ShaderMaterial<class_ShaderMaterial>`\ ，必須在著色器的 ``fragment()`` 函式中插入 ``ALBEDO *= COLOR.rgb;``\ 。否則，\ :ref:`color<class_CPUParticles3D_property_color>` 將沒有可見效果。
+\ **Note:** :ref:`color<class_CPUParticles3D_property_color>` multiplies the particle mesh's vertex colors. To have a visible effect on a :ref:`BaseMaterial3D<class_BaseMaterial3D>`, :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *must* be ``true``. For a :ref:`ShaderMaterial<class_ShaderMaterial>`, ``ALBEDO *= COLOR.rgb;`` must be inserted in the shader's ``fragment()`` function. Otherwise, :ref:`color<class_CPUParticles3D_property_color>` will have no visible effect.
 
 .. rst-class:: classref-item-separator
 
@@ -824,7 +824,7 @@ Damping will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`C
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-最大阻尼。
+Maximum damping.
 
 .. rst-class:: classref-item-separator
 
@@ -841,7 +841,7 @@ Damping will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`C
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-最小阻尼。
+Minimum damping.
 
 .. rst-class:: classref-item-separator
 
@@ -858,7 +858,7 @@ Damping will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`C
 - |void| **set_direction**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_direction**\ (\ )
 
-指定粒子發射方向的單位向量。
+Unit vector specifying the particles' emission direction.
 
 .. rst-class:: classref-item-separator
 
@@ -892,7 +892,7 @@ Particle draw order.
 - |void| **set_emission_box_extents**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_emission_box_extents**\ (\ )
 
-:ref:`emission_shape<class_CPUParticles3D_property_emission_shape>` 被設定為 :ref:`EMISSION_SHAPE_BOX<class_CPUParticles3D_constant_EMISSION_SHAPE_BOX>` 時，該矩形的範圍。
+The rectangle's extents if :ref:`emission_shape<class_CPUParticles3D_property_emission_shape>` is set to :ref:`EMISSION_SHAPE_BOX<class_CPUParticles3D_constant_EMISSION_SHAPE_BOX>`.
 
 .. rst-class:: classref-item-separator
 
@@ -909,9 +909,9 @@ Particle draw order.
 - |void| **set_emission_colors**\ (\ value\: :ref:`PackedColorArray<class_PackedColorArray>`\ )
 - :ref:`PackedColorArray<class_PackedColorArray>` **get_emission_colors**\ (\ )
 
-設定使用 :ref:`EMISSION_SHAPE_POINTS<class_CPUParticles3D_constant_EMISSION_SHAPE_POINTS>` 或 :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_CPUParticles3D_constant_EMISSION_SHAPE_DIRECTED_POINTS>` 時對粒子進行調變的 :ref:`Color<class_Color>`\ 。
+Sets the :ref:`Color<class_Color>`\ s to modulate particles by when using :ref:`EMISSION_SHAPE_POINTS<class_CPUParticles3D_constant_EMISSION_SHAPE_POINTS>` or :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_CPUParticles3D_constant_EMISSION_SHAPE_DIRECTED_POINTS>`.
 
-\ **注意：**\ :ref:`emission_colors<class_CPUParticles3D_property_emission_colors>` 會與粒子網格的頂點顏色相乘。要在 :ref:`BaseMaterial3D<class_BaseMaterial3D>` 上產生可見效果，\ :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *必須*\ 為 ``true``\ 。對於 :ref:`ShaderMaterial<class_ShaderMaterial>`\ ，必須在著色器的 ``fragment()`` 函式中插入 ``ALBEDO *= COLOR.rgb;``\ 。否則 :ref:`emission_colors<class_CPUParticles3D_property_emission_colors>` 不會產生可見效果。
+\ **Note:** :ref:`emission_colors<class_CPUParticles3D_property_emission_colors>` multiplies the particle mesh's vertex colors. To have a visible effect on a :ref:`BaseMaterial3D<class_BaseMaterial3D>`, :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *must* be ``true``. For a :ref:`ShaderMaterial<class_ShaderMaterial>`, ``ALBEDO *= COLOR.rgb;`` must be inserted in the shader's ``fragment()`` function. Otherwise, :ref:`emission_colors<class_CPUParticles3D_property_emission_colors>` will have no visible effect.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
@@ -930,7 +930,7 @@ Particle draw order.
 - |void| **set_emission_normals**\ (\ value\: :ref:`PackedVector3Array<class_PackedVector3Array>`\ )
 - :ref:`PackedVector3Array<class_PackedVector3Array>` **get_emission_normals**\ (\ )
 
-設定使用 :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_CPUParticles3D_constant_EMISSION_SHAPE_DIRECTED_POINTS>` 時粒子發射的方向。
+Sets the direction the particles will be emitted in when using :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_CPUParticles3D_constant_EMISSION_SHAPE_DIRECTED_POINTS>`.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
 
@@ -949,7 +949,7 @@ Particle draw order.
 - |void| **set_emission_points**\ (\ value\: :ref:`PackedVector3Array<class_PackedVector3Array>`\ )
 - :ref:`PackedVector3Array<class_PackedVector3Array>` **get_emission_points**\ (\ )
 
-設定使用 :ref:`EMISSION_SHAPE_POINTS<class_CPUParticles3D_constant_EMISSION_SHAPE_POINTS>` 或 :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_CPUParticles3D_constant_EMISSION_SHAPE_DIRECTED_POINTS>` 時出生粒子的初始位置。
+Sets the initial positions to spawn particles when using :ref:`EMISSION_SHAPE_POINTS<class_CPUParticles3D_constant_EMISSION_SHAPE_POINTS>` or :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_CPUParticles3D_constant_EMISSION_SHAPE_DIRECTED_POINTS>`.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
 
@@ -968,7 +968,7 @@ Particle draw order.
 - |void| **set_emission_ring_axis**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_emission_ring_axis**\ (\ )
 
-使用形為 :ref:`EMISSION_SHAPE_RING<class_CPUParticles3D_constant_EMISSION_SHAPE_RING>` 的發射器時環的軸。
+The axis of the ring when using the emitter :ref:`EMISSION_SHAPE_RING<class_CPUParticles3D_constant_EMISSION_SHAPE_RING>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1004,7 +1004,7 @@ The angle of the cone when using the emitter :ref:`EMISSION_SHAPE_RING<class_CPU
 - |void| **set_emission_ring_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_ring_height**\ (\ )
 
-使用形為 :ref:`EMISSION_SHAPE_RING<class_CPUParticles3D_constant_EMISSION_SHAPE_RING>` 的發射器時環的高度。
+The height of the ring when using the emitter :ref:`EMISSION_SHAPE_RING<class_CPUParticles3D_constant_EMISSION_SHAPE_RING>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1021,7 +1021,7 @@ The angle of the cone when using the emitter :ref:`EMISSION_SHAPE_RING<class_CPU
 - |void| **set_emission_ring_inner_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_ring_inner_radius**\ (\ )
 
-使用形為 :ref:`EMISSION_SHAPE_RING<class_CPUParticles3D_constant_EMISSION_SHAPE_RING>` 的發射器時環的內半徑。
+The inner radius of the ring when using the emitter :ref:`EMISSION_SHAPE_RING<class_CPUParticles3D_constant_EMISSION_SHAPE_RING>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1038,7 +1038,7 @@ The angle of the cone when using the emitter :ref:`EMISSION_SHAPE_RING<class_CPU
 - |void| **set_emission_ring_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_ring_radius**\ (\ )
 
-使用形為 :ref:`EMISSION_SHAPE_RING<class_CPUParticles3D_constant_EMISSION_SHAPE_RING>` 的發射器時環的半徑。
+The radius of the ring when using the emitter :ref:`EMISSION_SHAPE_RING<class_CPUParticles3D_constant_EMISSION_SHAPE_RING>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1072,7 +1072,7 @@ Particles will be emitted inside this region.
 - |void| **set_emission_sphere_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_sphere_radius**\ (\ )
 
-:ref:`EmissionShape<enum_CPUParticles3D_EmissionShape>` 被設定為 :ref:`EMISSION_SHAPE_SPHERE<class_CPUParticles3D_constant_EMISSION_SHAPE_SPHERE>`\ 時，該球體的半徑。
+The sphere's radius if :ref:`EmissionShape<enum_CPUParticles3D_EmissionShape>` is set to :ref:`EMISSION_SHAPE_SPHERE<class_CPUParticles3D_constant_EMISSION_SHAPE_SPHERE>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1089,7 +1089,7 @@ Particles will be emitted inside this region.
 - |void| **set_emitting**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_emitting**\ (\ )
 
-如果 ``true``\ ，則正在發射粒子。\ :ref:`emitting<class_CPUParticles3D_property_emitting>` 可用於啟動和停止粒子發射。但是，如果 :ref:`one_shot<class_CPUParticles3D_property_one_shot>` 為 ``true `` 將\ :ref:`emitting<class_CPUParticles3D_property_emitting>` 設為\ ``true`` 直到所有活動粒子完成處理後才會重新啟動發射週期。一旦所有活動粒子都完成，您可以使用\ :ref:`finished<class_CPUParticles3D_signal_finished>` 訊號來通知粒子完成處理。
+If ``true``, particles are being emitted. :ref:`emitting<class_CPUParticles3D_property_emitting>` can be used to start and stop particles from emitting. However, if :ref:`one_shot<class_CPUParticles3D_property_one_shot>` is ``true`` setting :ref:`emitting<class_CPUParticles3D_property_emitting>` to ``true`` will not restart the emission cycle until after all active particles finish processing. You can use the :ref:`finished<class_CPUParticles3D_signal_finished>` signal to be notified once all active particles finish processing.
 
 .. rst-class:: classref-item-separator
 
@@ -1106,7 +1106,7 @@ Particles will be emitted inside this region.
 - |void| **set_explosiveness_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_explosiveness_ratio**\ (\ )
 
-粒子在單個發射週期中的發射有多急。如果大於 ``0``\ ，則在下一個發射週期開始之前，發射會出現一個間隔。
+How rapidly particles in an emission cycle are emitted. If greater than ``0``, there will be a gap in emissions before the next cycle begins.
 
 .. rst-class:: classref-item-separator
 
@@ -1123,7 +1123,7 @@ Particles will be emitted inside this region.
 - |void| **set_fixed_fps**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_fixed_fps**\ (\ )
 
-粒子系統的畫面播放速率被固定為一個值。例如，將值更改為 2 會使粒子以每秒 2 影格的速度算繪。請注意，這並不會降低粒子系統本身的速度。
+The particle system's frame rate is fixed to a value. For example, changing the value to 2 will make the particles render at 2 frames per second. Note this does not slow down the particle system itself.
 
 .. rst-class:: classref-item-separator
 
@@ -1140,7 +1140,7 @@ Particles will be emitted inside this region.
 - |void| **set_flatness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_flatness**\ (\ )
 
-Y/Z 平面中的 :ref:`spread<class_CPUParticles3D_property_spread>` 數量。值 ``1`` 將粒子限制在 X/Z 平面上。
+Amount of :ref:`spread<class_CPUParticles3D_property_spread>` in Y/Z plane. A value of ``1`` restricts particles to X/Z plane.
 
 .. rst-class:: classref-item-separator
 
@@ -1157,7 +1157,7 @@ Y/Z 平面中的 :ref:`spread<class_CPUParticles3D_property_spread>` 數量。�
 - |void| **set_fractional_delta**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_fractional_delta**\ (\ )
 
-如果為 ``為true``\ ，則使用分數差異量 delta 計算，將具有更平滑的粒子顯示效果。
+If ``true``, results in fractional delta calculation which has a smoother particles display effect.
 
 .. rst-class:: classref-item-separator
 
@@ -1174,7 +1174,7 @@ Y/Z 平面中的 :ref:`spread<class_CPUParticles3D_property_spread>` 數量。�
 - |void| **set_gravity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_gravity**\ (\ )
 
-套用於每個粒子的重力。
+Gravity applied to every particle.
 
 .. rst-class:: classref-item-separator
 
@@ -1208,7 +1208,7 @@ Each particle's hue will vary along this :ref:`Curve<class_Curve>`. Should be a 
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-最大色相變化。
+Maximum hue variation.
 
 .. rst-class:: classref-item-separator
 
@@ -1225,7 +1225,7 @@ Each particle's hue will vary along this :ref:`Curve<class_Curve>`. Should be a 
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-最小色相變化。
+Minimum hue variation.
 
 .. rst-class:: classref-item-separator
 
@@ -1242,7 +1242,7 @@ Each particle's hue will vary along this :ref:`Curve<class_Curve>`. Should be a 
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-初始速度的最大值。
+Maximum value of the initial velocity.
 
 .. rst-class:: classref-item-separator
 
@@ -1259,7 +1259,7 @@ Each particle's hue will vary along this :ref:`Curve<class_Curve>`. Should be a 
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-初始速度的最小值。
+Minimum value of the initial velocity.
 
 .. rst-class:: classref-item-separator
 
@@ -1276,7 +1276,7 @@ Each particle's hue will vary along this :ref:`Curve<class_Curve>`. Should be a 
 - |void| **set_lifetime**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_lifetime**\ (\ )
 
-每個粒子存在的時間。
+Amount of time each particle will exist.
 
 .. rst-class:: classref-item-separator
 
@@ -1293,7 +1293,7 @@ Each particle's hue will vary along this :ref:`Curve<class_Curve>`. Should be a 
 - |void| **set_lifetime_randomness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_lifetime_randomness**\ (\ )
 
-粒子壽命隨機率。
+Particle lifetime randomness ratio.
 
 .. rst-class:: classref-item-separator
 
@@ -1327,7 +1327,7 @@ Each particle's linear acceleration will vary along this :ref:`Curve<class_Curve
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-最大線性加速度。
+Maximum linear acceleration.
 
 .. rst-class:: classref-item-separator
 
@@ -1344,7 +1344,7 @@ Each particle's linear acceleration will vary along this :ref:`Curve<class_Curve
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-最小線性加速度。
+Minimum linear acceleration.
 
 .. rst-class:: classref-item-separator
 
@@ -1361,7 +1361,7 @@ Each particle's linear acceleration will vary along this :ref:`Curve<class_Curve
 - |void| **set_use_local_coordinates**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_local_coordinates**\ (\ )
 
-如果為 ``true``\ ，粒子使用父節點的座標空間（稱為局部座標）。這將導致粒子在移動或旋轉時，沿著 **CPUParticles3D** 節點（及其父節點）移動和旋轉。如果為 ``false``\ ，則粒子使用全域座標；當移動或旋轉時，它們不會沿著 **CPUParticles3D** 節點（及其父節點）移動或旋轉。
+If ``true``, particles use the parent node's coordinate space (known as local coordinates). This will cause particles to move and rotate along the **CPUParticles3D** node (and its parents) when it is moved or rotated. If ``false``, particles use global coordinates; they will not move or rotate along the **CPUParticles3D** node (and its parents) when it is moved or rotated.
 
 .. rst-class:: classref-item-separator
 
@@ -1378,7 +1378,7 @@ Each particle's linear acceleration will vary along this :ref:`Curve<class_Curve
 - |void| **set_mesh**\ (\ value\: :ref:`Mesh<class_Mesh>`\ )
 - :ref:`Mesh<class_Mesh>` **get_mesh**\ (\ )
 
-每個粒子使用的 :ref:`Mesh<class_Mesh>`\ 。如果為 ``null``\ ，則粒子將為球形。
+The :ref:`Mesh<class_Mesh>` used for each particle. If ``null``, particles will be spheres.
 
 .. rst-class:: classref-item-separator
 
@@ -1395,7 +1395,7 @@ Each particle's linear acceleration will vary along this :ref:`Curve<class_Curve
 - |void| **set_one_shot**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_one_shot**\ (\ )
 
-如果為 ``true``\ ，則只發生一個發射週期。如果在某個週期內設定為 ``true``\ ，則發射將在該週期結束時停止。
+If ``true``, only one emission cycle occurs. If set ``true`` during a cycle, emission will stop at the cycle's end.
 
 .. rst-class:: classref-item-separator
 
@@ -1429,7 +1429,7 @@ Each particle's orbital velocity will vary along this :ref:`Curve<class_Curve>`.
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-最大軌道速度。
+Maximum orbit velocity.
 
 .. rst-class:: classref-item-separator
 
@@ -1446,7 +1446,7 @@ Each particle's orbital velocity will vary along this :ref:`Curve<class_Curve>`.
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-最小軌道速度。
+Minimum orbit velocity.
 
 .. rst-class:: classref-item-separator
 
@@ -1463,7 +1463,7 @@ Each particle's orbital velocity will vary along this :ref:`Curve<class_Curve>`.
 - |void| **set_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_CPUParticles3D_ParticleFlags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_CPUParticles3D_ParticleFlags>`\ ) |const|
 
-將粒子的 Y 軸與其速度方向對齊。
+Align Y axis of particle with the direction of its velocity.
 
 .. rst-class:: classref-item-separator
 
@@ -1480,7 +1480,7 @@ Each particle's orbital velocity will vary along this :ref:`Curve<class_Curve>`.
 - |void| **set_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_CPUParticles3D_ParticleFlags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_CPUParticles3D_ParticleFlags>`\ ) |const|
 
-如果為 ``true``\ ，則粒子將不會在 Z 軸上移動。
+If ``true``, particles will not move on the Z axis.
 
 .. rst-class:: classref-item-separator
 
@@ -1497,7 +1497,7 @@ Each particle's orbital velocity will vary along this :ref:`Curve<class_Curve>`.
 - |void| **set_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_CPUParticles3D_ParticleFlags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_CPUParticles3D_ParticleFlags>`\ ) |const|
 
-如果為 ``true``\ ，則粒子繞 Y 軸旋轉 :ref:`angle_min<class_CPUParticles3D_property_angle_min>`\ 。
+If ``true``, particles rotate around Y axis by :ref:`angle_min<class_CPUParticles3D_property_angle_min>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1514,7 +1514,7 @@ Each particle's orbital velocity will vary along this :ref:`Curve<class_Curve>`.
 - |void| **set_pre_process_time**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pre_process_time**\ (\ )
 
-粒子系統啟動時就好像已經運作了這麼多秒一樣。
+Particle system starts as if it had already run for this many seconds.
 
 .. rst-class:: classref-item-separator
 
@@ -1548,7 +1548,7 @@ Each particle's radial acceleration will vary along this :ref:`Curve<class_Curve
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-最大徑向加速度。
+Maximum radial acceleration.
 
 .. rst-class:: classref-item-separator
 
@@ -1565,7 +1565,7 @@ Each particle's radial acceleration will vary along this :ref:`Curve<class_Curve
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-最小徑向加速度。
+Minimum radial acceleration.
 
 .. rst-class:: classref-item-separator
 
@@ -1582,7 +1582,7 @@ Each particle's radial acceleration will vary along this :ref:`Curve<class_Curve
 - |void| **set_randomness_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_randomness_ratio**\ (\ )
 
-發射壽命隨機率。
+Emission lifetime randomness ratio.
 
 .. rst-class:: classref-item-separator
 
@@ -1616,7 +1616,7 @@ Each particle's scale will vary along this :ref:`Curve<class_Curve>`. Should be 
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-最大縮放。
+Maximum scale.
 
 .. rst-class:: classref-item-separator
 
@@ -1633,7 +1633,7 @@ Each particle's scale will vary along this :ref:`Curve<class_Curve>`. Should be 
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-最小縮放。
+Minimum scale.
 
 .. rst-class:: classref-item-separator
 
@@ -1650,7 +1650,7 @@ Each particle's scale will vary along this :ref:`Curve<class_Curve>`. Should be 
 - |void| **set_scale_curve_x**\ (\ value\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_scale_curve_x**\ (\ )
 
-生命週期內，沿 X 軸的縮放曲線。
+Curve for the scale over life, along the x axis.
 
 .. rst-class:: classref-item-separator
 
@@ -1667,7 +1667,7 @@ Each particle's scale will vary along this :ref:`Curve<class_Curve>`. Should be 
 - |void| **set_scale_curve_y**\ (\ value\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_scale_curve_y**\ (\ )
 
-生命週期內，沿 Y 軸的縮放曲線。
+Curve for the scale over life, along the y axis.
 
 .. rst-class:: classref-item-separator
 
@@ -1684,7 +1684,7 @@ Each particle's scale will vary along this :ref:`Curve<class_Curve>`. Should be 
 - |void| **set_scale_curve_z**\ (\ value\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_scale_curve_z**\ (\ )
 
-生命週期內，沿 Z 軸的縮放曲線。
+Curve for the scale over life, along the z axis.
 
 .. rst-class:: classref-item-separator
 
@@ -1718,7 +1718,7 @@ Sets the random seed used by the particle system. Only effective if :ref:`use_fi
 - |void| **set_speed_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_speed_scale**\ (\ )
 
-粒子系統的運作速度的縮放率。\ ``0`` 值可用於暫停粒子。
+Particle system's running speed scaling ratio. A value of ``0`` can be used to pause the particles.
 
 .. rst-class:: classref-item-separator
 
@@ -1735,7 +1735,7 @@ Sets the random seed used by the particle system. Only effective if :ref:`use_fi
 - |void| **set_split_scale**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_split_scale**\ (\ )
 
-如果設定為 ``true``\ ，則可以指定三條不同的縮放曲線，每個縮放軸一條。
+If set to ``true``, three different scale curves can be specified, one per scale axis.
 
 .. rst-class:: classref-item-separator
 
@@ -1752,7 +1752,7 @@ Sets the random seed used by the particle system. Only effective if :ref:`use_fi
 - |void| **set_spread**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_spread**\ (\ )
 
-每個粒子的初始方向範圍為 ``+spread`` 至 ``-spread`` 度。適用於 X/Z 平面和 Y/Z 平面。
+Each particle's initial direction range from ``+spread`` to ``-spread`` degrees. Applied to X/Z plane and Y/Z planes.
 
 .. rst-class:: classref-item-separator
 
@@ -1786,7 +1786,7 @@ Each particle's tangential acceleration will vary along this :ref:`Curve<class_C
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-最大切向加速度。
+Maximum tangent acceleration.
 
 .. rst-class:: classref-item-separator
 
@@ -1803,7 +1803,7 @@ Each particle's tangential acceleration will vary along this :ref:`Curve<class_C
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-最小切向加速度。
+Minimum tangent acceleration.
 
 .. rst-class:: classref-item-separator
 
@@ -1847,8 +1847,8 @@ Grow the box if particles suddenly appear/disappear when the node enters/exits t
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_CPUParticles3D_method_capture_aabb:
 
@@ -1856,7 +1856,7 @@ Grow the box if particles suddenly appear/disappear when the node enters/exits t
 
 :ref:`AABB<class_AABB>` **capture_aabb**\ (\ ) |const| :ref:`🔗<class_CPUParticles3D_method_capture_aabb>`
 
-返回包含目前影格中所有活動粒子的軸對齊邊界框。
+Returns the axis-aligned bounding box that contains all the particles that are active in the current frame.
 
 .. rst-class:: classref-item-separator
 
@@ -1868,7 +1868,7 @@ Grow the box if particles suddenly appear/disappear when the node enters/exits t
 
 |void| **convert_from_particles**\ (\ particles\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_CPUParticles3D_method_convert_from_particles>`
 
-設定該節點的屬性以配對給定的 :ref:`GPUParticles3D<class_GPUParticles3D>` 節點，該給定節點已分配了一個 :ref:`ParticleProcessMaterial<class_ParticleProcessMaterial>`\ 。
+Sets this node's properties to match a given :ref:`GPUParticles3D<class_GPUParticles3D>` node with an assigned :ref:`ParticleProcessMaterial<class_ParticleProcessMaterial>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1880,7 +1880,7 @@ Grow the box if particles suddenly appear/disappear when the node enters/exits t
 
 :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const| :ref:`🔗<class_CPUParticles3D_method_get_param_curve>`
 
-返回由 :ref:`Parameter<enum_CPUParticles3D_Parameter>` 指定的參數的 :ref:`Curve<class_Curve>`\ 。
+Returns the :ref:`Curve<class_Curve>` of the parameter specified by :ref:`Parameter<enum_CPUParticles3D_Parameter>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1892,7 +1892,7 @@ Grow the box if particles suddenly appear/disappear when the node enters/exits t
 
 :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const| :ref:`🔗<class_CPUParticles3D_method_get_param_max>`
 
-返回給定參數的最大值範圍。
+Returns the maximum value range for the given parameter.
 
 .. rst-class:: classref-item-separator
 
@@ -1904,7 +1904,7 @@ Grow the box if particles suddenly appear/disappear when the node enters/exits t
 
 :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const| :ref:`🔗<class_CPUParticles3D_method_get_param_min>`
 
-返回給定參數的最小值範圍。
+Returns the minimum value range for the given parameter.
 
 .. rst-class:: classref-item-separator
 
@@ -1968,7 +1968,7 @@ Sets the :ref:`Curve<class_Curve>` of the parameter specified by :ref:`Parameter
 
 |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_CPUParticles3D_method_set_param_max>`
 
-設定給定參數的最大值。
+Sets the maximum value for the given parameter.
 
 .. rst-class:: classref-item-separator
 
@@ -1980,7 +1980,7 @@ Sets the :ref:`Curve<class_Curve>` of the parameter specified by :ref:`Parameter
 
 |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_CPUParticles3D_method_set_param_min>`
 
-設定給定參數的最小值。
+Sets the minimum value for the given parameter.
 
 .. rst-class:: classref-item-separator
 
@@ -1994,12 +1994,12 @@ Sets the :ref:`Curve<class_Curve>` of the parameter specified by :ref:`Parameter
 
 Enables or disables the given particle flag.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

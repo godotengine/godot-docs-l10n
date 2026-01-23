@@ -5,8 +5,6 @@
 GraphEdit
 =========
 
-**Sperimentale:** This class may be changed or removed in future versions.
-
 **Eredita:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 Un editor per strutture simili a grafici, che utilizza :ref:`GraphNode<class_GraphNode>`.

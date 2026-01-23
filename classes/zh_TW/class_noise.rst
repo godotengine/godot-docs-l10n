@@ -5,27 +5,27 @@
 Noise
 =====
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`FastNoiseLite<class_FastNoiseLite>`
+**Inherited By:** :ref:`FastNoiseLite<class_FastNoiseLite>`
 
-雜訊生成器的抽象基底類別。
+Abstract base class for noise generators.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-該類定義了雜訊生成庫要繼承的介面。
+This class defines the interface for noise generation libraries to inherit from.
 
-為不提供無縫雜訊的庫提供一個預設的 get_seamless_noise() 實作。該函式從 get_image() 請求更大的圖像，反轉該圖像的象限，然後使用額外寬度的條帶在接縫處混合。
+A default :ref:`get_seamless_image()<class_Noise_method_get_seamless_image>` implementation is provided for libraries that do not provide seamless noise. This function requests a larger image from the :ref:`get_image()<class_Noise_method_get_image>` method, reverses the quadrants of the image, then uses the strips of extra width to blend over the seams.
 
-繼承的雜訊類可以選擇性地覆蓋該函式，以提供更優化的演算法。
+Inheriting noise classes can optionally override this function to provide a more optimal algorithm.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ Noise
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_Noise_method_get_image:
 
@@ -65,9 +65,9 @@ Noise
 
 :ref:`Image<class_Image>` **get_image**\ (\ width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, invert\: :ref:`bool<class_bool>` = false, in_3d_space\: :ref:`bool<class_bool>` = false, normalize\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Noise_method_get_image>`
 
-返回包含 2D 雜訊值的 :ref:`Image<class_Image>`\ 。
+Returns an :ref:`Image<class_Image>` containing 2D noise values.
 
-\ **注意：**\ ``normalize`` 為 ``false`` 時，預設實作要求雜訊生成器返回 ``-1.0`` 到 ``1.0`` 之間的值。
+\ **Note:** With ``normalize`` set to ``false``, the default implementation expects the noise generator to return values in the range ``-1.0`` to ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -79,9 +79,9 @@ Noise
 
 :ref:`Array<class_Array>`\[:ref:`Image<class_Image>`\] **get_image_3d**\ (\ width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, depth\: :ref:`int<class_int>`, invert\: :ref:`bool<class_bool>` = false, normalize\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Noise_method_get_image_3d>`
 
-返回包含 3D 雜訊值的 :ref:`Image<class_Image>` 的 :ref:`Array<class_Array>`\ ，用於 :ref:`ImageTexture3D.create()<class_ImageTexture3D_method_create>`\ 。
+Returns an :ref:`Array<class_Array>` of :ref:`Image<class_Image>`\ s containing 3D noise values for use with :ref:`ImageTexture3D.create()<class_ImageTexture3D_method_create>`.
 
-\ **注意：**\ ``normalize`` 為 ``false`` 時，預設實作要求雜訊生成器返回 ``-1.0`` 到 ``1.0`` 之間的值。
+\ **Note:** With ``normalize`` set to ``false``, the default implementation expects the noise generator to return values in the range ``-1.0`` to ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -93,7 +93,7 @@ Noise
 
 :ref:`float<class_float>` **get_noise_1d**\ (\ x\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Noise_method_get_noise_1d>`
 
-返回給定 (x) 座標處的 1D 雜訊值。
+Returns the 1D noise value at the given (x) coordinate.
 
 .. rst-class:: classref-item-separator
 
@@ -105,7 +105,7 @@ Noise
 
 :ref:`float<class_float>` **get_noise_2d**\ (\ x\: :ref:`float<class_float>`, y\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Noise_method_get_noise_2d>`
 
-返回給定位置處的 2D 雜訊值。
+Returns the 2D noise value at the given position.
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ Noise
 
 :ref:`float<class_float>` **get_noise_2dv**\ (\ v\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Noise_method_get_noise_2dv>`
 
-返回給定位置處的 2D 雜訊值。
+Returns the 2D noise value at the given position.
 
 .. rst-class:: classref-item-separator
 
@@ -129,7 +129,7 @@ Noise
 
 :ref:`float<class_float>` **get_noise_3d**\ (\ x\: :ref:`float<class_float>`, y\: :ref:`float<class_float>`, z\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Noise_method_get_noise_3d>`
 
-返回給定位置處的 3D 雜訊值。
+Returns the 3D noise value at the given position.
 
 .. rst-class:: classref-item-separator
 
@@ -141,7 +141,7 @@ Noise
 
 :ref:`float<class_float>` **get_noise_3dv**\ (\ v\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Noise_method_get_noise_3dv>`
 
-返回給定位置處的 3D 雜訊值。
+Returns the 3D noise value at the given position.
 
 .. rst-class:: classref-item-separator
 
@@ -153,9 +153,9 @@ Noise
 
 :ref:`Image<class_Image>` **get_seamless_image**\ (\ width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, invert\: :ref:`bool<class_bool>` = false, in_3d_space\: :ref:`bool<class_bool>` = false, skirt\: :ref:`float<class_float>` = 0.1, normalize\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Noise_method_get_seamless_image>`
 
-返回包含無縫 2D 雜訊值的 :ref:`Image<class_Image>`\ 。
+Returns an :ref:`Image<class_Image>` containing seamless 2D noise values.
 
-\ **注意：**\ ``normalize`` 為 ``false`` 時，預設實作要求雜訊生成器返回 ``-1.0`` 到 ``1.0`` 之間的值。
+\ **Note:** With ``normalize`` set to ``false``, the default implementation expects the noise generator to return values in the range ``-1.0`` to ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -167,16 +167,16 @@ Noise
 
 :ref:`Array<class_Array>`\[:ref:`Image<class_Image>`\] **get_seamless_image_3d**\ (\ width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, depth\: :ref:`int<class_int>`, invert\: :ref:`bool<class_bool>` = false, skirt\: :ref:`float<class_float>` = 0.1, normalize\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Noise_method_get_seamless_image_3d>`
 
-返回包含無縫 3D 雜訊值的 :ref:`Image<class_Image>` 的 :ref:`Array<class_Array>`\ ，用於 :ref:`ImageTexture3D.create()<class_ImageTexture3D_method_create>`\ 。
+Returns an :ref:`Array<class_Array>` of :ref:`Image<class_Image>`\ s containing seamless 3D noise values for use with :ref:`ImageTexture3D.create()<class_ImageTexture3D_method_create>`.
 
-\ **注意：**\ ``normalize`` 為 ``false`` 時，預設實作要求雜訊生成器返回 ``-1.0`` 到 ``1.0`` 之間的值。
+\ **Note:** With ``normalize`` set to ``false``, the default implementation expects the noise generator to return values in the range ``-1.0`` to ``1.0``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

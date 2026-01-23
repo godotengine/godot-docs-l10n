@@ -5,14 +5,14 @@
 GPUParticles3D
 ==============
 
-**繼承：** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-3D 粒子發射器。
+A 3D particle emitter.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 3D particle node used to create a variety of particle systems and effects. **GPUParticles3D** features an emitter that generates some number of particles at a given rate.
 
@@ -20,19 +20,19 @@ Use :ref:`process_material<class_GPUParticles3D_property_process_material>` to a
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`粒子系統（3D） <../tutorials/3d/particles/index>`
+- :doc:`Particle systems (3D) <../tutorials/3d/particles/index>`
 
-- :doc:`用粒子控制數千條魚 <../tutorials/performance/vertex_animation/controlling_thousands_of_fish>`
+- :doc:`Controlling thousands of fish with Particles <../tutorials/performance/vertex_animation/controlling_thousands_of_fish>`
 
-- `第三人稱射擊（TPS）示範 <https://godotengine.org/asset-library/asset/2710>`__
+- `Third Person Shooter (TPS) Demo <https://godotengine.org/asset-library/asset/2710>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -101,8 +101,8 @@ Use :ref:`process_material<class_GPUParticles3D_property_process_material>` to a
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -129,8 +129,8 @@ Use :ref:`process_material<class_GPUParticles3D_property_process_material>` to a
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_GPUParticles3D_signal_finished:
 
@@ -150,8 +150,8 @@ This signal is never emitted when :ref:`one_shot<class_GPUParticles3D_property_o
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_GPUParticles3D_DrawOrder:
 
@@ -165,7 +165,7 @@ enum **DrawOrder**: :ref:`🔗<enum_GPUParticles3D_DrawOrder>`
 
 :ref:`DrawOrder<enum_GPUParticles3D_DrawOrder>` **DRAW_ORDER_INDEX** = ``0``
 
-粒子按發射順序繪製。
+Particles are drawn in the order emitted.
 
 .. _class_GPUParticles3D_constant_DRAW_ORDER_LIFETIME:
 
@@ -189,7 +189,7 @@ Particles are drawn in reverse order of remaining lifetime. In other words, the 
 
 :ref:`DrawOrder<enum_GPUParticles3D_DrawOrder>` **DRAW_ORDER_VIEW_DEPTH** = ``3``
 
-粒子按深度順序繪製。
+Particles are drawn in order of depth.
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ enum **EmitFlags**: :ref:`🔗<enum_GPUParticles3D_EmitFlags>`
 
 :ref:`EmitFlags<enum_GPUParticles3D_EmitFlags>` **EMIT_FLAG_POSITION** = ``1``
 
-粒子在指定位置開始。
+Particle starts at the specified position.
 
 .. _class_GPUParticles3D_constant_EMIT_FLAG_ROTATION_SCALE:
 
@@ -215,7 +215,7 @@ enum **EmitFlags**: :ref:`🔗<enum_GPUParticles3D_EmitFlags>`
 
 :ref:`EmitFlags<enum_GPUParticles3D_EmitFlags>` **EMIT_FLAG_ROTATION_SCALE** = ``2``
 
-粒子以指定的旋轉和縮放開始。
+Particle starts with specified rotation and scale.
 
 .. _class_GPUParticles3D_constant_EMIT_FLAG_VELOCITY:
 
@@ -223,7 +223,7 @@ enum **EmitFlags**: :ref:`🔗<enum_GPUParticles3D_EmitFlags>`
 
 :ref:`EmitFlags<enum_GPUParticles3D_EmitFlags>` **EMIT_FLAG_VELOCITY** = ``4``
 
-粒子從指定的速度向量開始，該向量定義了發射方向和速度。
+Particle starts with the specified velocity vector, which defines the emission direction and speed.
 
 .. _class_GPUParticles3D_constant_EMIT_FLAG_COLOR:
 
@@ -231,7 +231,7 @@ enum **EmitFlags**: :ref:`🔗<enum_GPUParticles3D_EmitFlags>`
 
 :ref:`EmitFlags<enum_GPUParticles3D_EmitFlags>` **EMIT_FLAG_COLOR** = ``8``
 
-粒子以指定的顏色開始。
+Particle starts with specified color.
 
 .. _class_GPUParticles3D_constant_EMIT_FLAG_CUSTOM:
 
@@ -239,7 +239,7 @@ enum **EmitFlags**: :ref:`🔗<enum_GPUParticles3D_EmitFlags>`
 
 :ref:`EmitFlags<enum_GPUParticles3D_EmitFlags>` **EMIT_FLAG_CUSTOM** = ``16``
 
-粒子以指定的 ``CUSTOM`` 資料開始。
+Particle starts with specified ``CUSTOM`` data.
 
 .. rst-class:: classref-item-separator
 
@@ -305,8 +305,8 @@ enum **TransformAlign**: :ref:`🔗<enum_GPUParticles3D_TransformAlign>`
 
 .. rst-class:: classref-descriptions-group
 
-常數
-----
+Constants
+---------
 
 .. _class_GPUParticles3D_constant_MAX_DRAW_PASSES:
 
@@ -314,7 +314,7 @@ enum **TransformAlign**: :ref:`🔗<enum_GPUParticles3D_TransformAlign>`
 
 **MAX_DRAW_PASSES** = ``4`` :ref:`🔗<class_GPUParticles3D_constant_MAX_DRAW_PASSES>`
 
-支援的最大繪製階段數。
+Maximum number of draw passes supported.
 
 .. rst-class:: classref-section-separator
 
@@ -322,8 +322,8 @@ enum **TransformAlign**: :ref:`🔗<enum_GPUParticles3D_TransformAlign>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_GPUParticles3D_property_amount:
 
@@ -412,7 +412,7 @@ Particle draw order.
 - |void| **set_draw_pass_mesh**\ (\ pass\: :ref:`int<class_int>`, mesh\: :ref:`Mesh<class_Mesh>`\ )
 - :ref:`Mesh<class_Mesh>` **get_draw_pass_mesh**\ (\ pass\: :ref:`int<class_int>`\ ) |const|
 
-第一繪製階段所繪製的 :ref:`Mesh<class_Mesh>`\ 。
+:ref:`Mesh<class_Mesh>` that is drawn for the first draw pass.
 
 .. rst-class:: classref-item-separator
 
@@ -429,7 +429,7 @@ Particle draw order.
 - |void| **set_draw_pass_mesh**\ (\ pass\: :ref:`int<class_int>`, mesh\: :ref:`Mesh<class_Mesh>`\ )
 - :ref:`Mesh<class_Mesh>` **get_draw_pass_mesh**\ (\ pass\: :ref:`int<class_int>`\ ) |const|
 
-第二繪製階段所繪製的 :ref:`Mesh<class_Mesh>`\ 。
+:ref:`Mesh<class_Mesh>` that is drawn for the second draw pass.
 
 .. rst-class:: classref-item-separator
 
@@ -446,7 +446,7 @@ Particle draw order.
 - |void| **set_draw_pass_mesh**\ (\ pass\: :ref:`int<class_int>`, mesh\: :ref:`Mesh<class_Mesh>`\ )
 - :ref:`Mesh<class_Mesh>` **get_draw_pass_mesh**\ (\ pass\: :ref:`int<class_int>`\ ) |const|
 
-第三繪製階段所繪製的 :ref:`Mesh<class_Mesh>`\ 。
+:ref:`Mesh<class_Mesh>` that is drawn for the third draw pass.
 
 .. rst-class:: classref-item-separator
 
@@ -463,7 +463,7 @@ Particle draw order.
 - |void| **set_draw_pass_mesh**\ (\ pass\: :ref:`int<class_int>`, mesh\: :ref:`Mesh<class_Mesh>`\ )
 - :ref:`Mesh<class_Mesh>` **get_draw_pass_mesh**\ (\ pass\: :ref:`int<class_int>`\ ) |const|
 
-第四繪製階段所繪製的 :ref:`Mesh<class_Mesh>`\ 。
+:ref:`Mesh<class_Mesh>` that is drawn for the fourth draw pass.
 
 .. rst-class:: classref-item-separator
 
@@ -480,7 +480,7 @@ Particle draw order.
 - |void| **set_draw_passes**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_draw_passes**\ (\ )
 
-算繪粒子時的繪製階段數。
+The number of draw passes when rendering particles.
 
 .. rst-class:: classref-item-separator
 
@@ -537,7 +537,7 @@ If ``true``, particles are being emitted. :ref:`emitting<class_GPUParticles3D_pr
 - |void| **set_explosiveness_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_explosiveness_ratio**\ (\ )
 
-每次發射之間的時間比。如果為 ``0``\ ，則粒子是連續發射的。如果為 ``1``\ ，則所有的粒子都同時發射。
+Time ratio between each emission. If ``0``, particles are emitted continuously. If ``1``, all particles are emitted simultaneously.
 
 .. rst-class:: classref-item-separator
 
@@ -554,7 +554,7 @@ If ``true``, particles are being emitted. :ref:`emitting<class_GPUParticles3D_pr
 - |void| **set_fixed_fps**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_fixed_fps**\ (\ )
 
-粒子系統的畫面播放速率被固定為一個值。例如，將值更改為 2 會使粒子以每秒 2 影格的速度算繪。請注意，這並不會降低粒子系統本身的類比速度。
+The particle system's frame rate is fixed to a value. For example, changing the value to 2 will make the particles render at 2 frames per second. Note this does not slow down the simulation of the particle system itself.
 
 .. rst-class:: classref-item-separator
 
@@ -571,7 +571,7 @@ If ``true``, particles are being emitted. :ref:`emitting<class_GPUParticles3D_pr
 - |void| **set_fractional_delta**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_fractional_delta**\ (\ )
 
-如果為 ``為true``\ ，則使用分數差異量 delta 計算，將具有更平滑的粒子顯示效果。
+If ``true``, results in fractional delta calculation which has a smoother particles display effect.
 
 .. rst-class:: classref-item-separator
 
@@ -607,7 +607,7 @@ Causes all the particles in this node to interpolate towards the end of their li
 - |void| **set_interpolate**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_interpolate**\ (\ )
 
-啟用粒子插值，當\ :ref:`fixed_fps<class_GPUParticles3D_property_fixed_fps>` 低於螢幕更新率時，使粒子運動更平滑。
+Enables particle interpolation, which makes the particle movement smoother when their :ref:`fixed_fps<class_GPUParticles3D_property_fixed_fps>` is lower than the screen refresh rate.
 
 .. rst-class:: classref-item-separator
 
@@ -641,7 +641,7 @@ The amount of time each particle will exist (in seconds). The effective emission
 - |void| **set_use_local_coordinates**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_local_coordinates**\ (\ )
 
-如果為 ``true``\ ，則粒子使用父節點的座標空間（稱為局部座標）。這將導致粒子在移動或旋轉時沿著 **GPUParticles3D** 節點（及其父節點）移動和旋轉。如果為 ``false``\ ，則粒子使用全域座標；當移動或旋轉時，它們不會沿著 **GPUParticles3D** 節點（及其父節點）移動或旋轉。
+If ``true``, particles use the parent node's coordinate space (known as local coordinates). This will cause particles to move and rotate along the **GPUParticles3D** node (and its parents) when it is moved or rotated. If ``false``, particles use global coordinates; they will not move or rotate along the **GPUParticles3D** node (and its parents) when it is moved or rotated.
 
 .. rst-class:: classref-item-separator
 
@@ -694,7 +694,7 @@ Amount of time to preprocess the particles before animation starts. Lets you sta
 - |void| **set_process_material**\ (\ value\: :ref:`Material<class_Material>`\ )
 - :ref:`Material<class_Material>` **get_process_material**\ (\ )
 
-用於處理粒子的 :ref:`Material<class_Material>` 。可以是 :ref:`ParticleProcessMaterial<class_ParticleProcessMaterial>` 或 :ref:`ShaderMaterial<class_ShaderMaterial>` 。
+:ref:`Material<class_Material>` for processing particles. Can be a :ref:`ParticleProcessMaterial<class_ParticleProcessMaterial>` or a :ref:`ShaderMaterial<class_ShaderMaterial>`.
 
 .. rst-class:: classref-item-separator
 
@@ -711,7 +711,7 @@ Amount of time to preprocess the particles before animation starts. Lets you sta
 - |void| **set_randomness_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_randomness_ratio**\ (\ )
 
-發出隨機率。
+Emission randomness ratio.
 
 .. rst-class:: classref-item-separator
 
@@ -745,7 +745,7 @@ Sets the random seed used by the particle system. Only effective if :ref:`use_fi
 - |void| **set_speed_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_speed_scale**\ (\ )
 
-速度縮放比例。\ ``0`` 的值可被用於暫停粒子。
+Speed scaling ratio. A value of ``0`` can be used to pause the particles.
 
 .. rst-class:: classref-item-separator
 
@@ -781,11 +781,11 @@ Path to another **GPUParticles3D** node that will be used as a subemitter (see :
 - |void| **set_trail_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_trail_enabled**\ (\ )
 
-如果為 ``true``\ ，則使用網格蒙皮系統來啟用粒子尾跡。旨在與 :ref:`RibbonTrailMesh<class_RibbonTrailMesh>` 和 :ref:`TubeTrailMesh<class_TubeTrailMesh>` 一起使用。
+If ``true``, enables particle trails using a mesh skinning system. Designed to work with :ref:`RibbonTrailMesh<class_RibbonTrailMesh>` and :ref:`TubeTrailMesh<class_TubeTrailMesh>`.
 
-\ **注意：**\ 還必須在粒子網格的材質上啟用 :ref:`BaseMaterial3D.use_particle_trails<class_BaseMaterial3D_property_use_particle_trails>`\ 。否則，將 :ref:`trail_enabled<class_GPUParticles3D_property_trail_enabled>` 設定為 ``true`` 將無效。
+\ **Note:** :ref:`BaseMaterial3D.use_particle_trails<class_BaseMaterial3D_property_use_particle_trails>` must also be enabled on the particle mesh's material. Otherwise, setting :ref:`trail_enabled<class_GPUParticles3D_property_trail_enabled>` to ``true`` will have no effect.
 
-\ **注意：**\ 與 :ref:`GPUParticles2D<class_GPUParticles2D>` 不同，尾跡部分及其細分的數量是在 :ref:`RibbonTrailMesh<class_RibbonTrailMesh>` 或 :ref:`TubeTrailMesh<class_TubeTrailMesh>` 的屬性中設定的。
+\ **Note:** Unlike :ref:`GPUParticles2D<class_GPUParticles2D>`, the number of trail sections and subdivisions is set in the :ref:`RibbonTrailMesh<class_RibbonTrailMesh>` or the :ref:`TubeTrailMesh<class_TubeTrailMesh>`'s properties.
 
 .. rst-class:: classref-item-separator
 
@@ -802,7 +802,7 @@ Path to another **GPUParticles3D** node that will be used as a subemitter (see :
 - |void| **set_trail_lifetime**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_trail_lifetime**\ (\ )
 
-代表粒子軌跡的時間量（以秒為單位）。僅當 :ref:`trail_enabled<class_GPUParticles3D_property_trail_enabled>` 為 ``true`` 時有效。
+The amount of time the particle's trail should represent (in seconds). Only effective if :ref:`trail_enabled<class_GPUParticles3D_property_trail_enabled>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -867,8 +867,8 @@ Grow the box if particles suddenly appear/disappear when the node enters/exits t
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_GPUParticles3D_method_capture_aabb:
 
@@ -876,7 +876,7 @@ Grow the box if particles suddenly appear/disappear when the node enters/exits t
 
 :ref:`AABB<class_AABB>` **capture_aabb**\ (\ ) |const| :ref:`🔗<class_GPUParticles3D_method_capture_aabb>`
 
-返回包含目前影格中所有活動粒子的軸對齊邊界框。
+Returns the axis-aligned bounding box that contains all the particles that are active in the current frame.
 
 .. rst-class:: classref-item-separator
 
@@ -888,7 +888,7 @@ Grow the box if particles suddenly appear/disappear when the node enters/exits t
 
 |void| **convert_from_particles**\ (\ particles\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_GPUParticles3D_method_convert_from_particles>`
 
-設定該節點的屬性以配對給定的 **GPUParticles3D** 節點，該給定節點已分配了一個 :ref:`ParticleProcessMaterial<class_ParticleProcessMaterial>`\ 。
+Sets this node's properties to match a given :ref:`CPUParticles3D<class_CPUParticles3D>` node.
 
 .. rst-class:: classref-item-separator
 
@@ -916,7 +916,7 @@ The default ParticleProcessMaterial will overwrite ``color`` and use the content
 
 :ref:`Mesh<class_Mesh>` **get_draw_pass_mesh**\ (\ pass\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GPUParticles3D_method_get_draw_pass_mesh>`
 
-返回在索引 ``pass`` 處繪製的 :ref:`Mesh<class_Mesh>` 。
+Returns the :ref:`Mesh<class_Mesh>` that is drawn at index ``pass``.
 
 .. rst-class:: classref-item-separator
 
@@ -958,14 +958,14 @@ If ``keep_seed`` is ``true``, the current random seed will be preserved. Useful 
 
 |void| **set_draw_pass_mesh**\ (\ pass\: :ref:`int<class_int>`, mesh\: :ref:`Mesh<class_Mesh>`\ ) :ref:`🔗<class_GPUParticles3D_method_set_draw_pass_mesh>`
 
-設定在索引 ``pass`` 處繪製的 :ref:`Mesh<class_Mesh>` 。
+Sets the :ref:`Mesh<class_Mesh>` that is drawn at index ``pass``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

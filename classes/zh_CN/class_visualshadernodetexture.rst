@@ -5,21 +5,21 @@
 VisualShaderNodeTexture
 =======================
 
-**继承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-在可视化着色器图中，执行 2D 纹理查找。
+Performs a 2D texture lookup within the visual shader graph.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-对提供的纹理进行查找操作，支持从多个纹理源选择。
+Performs a lookup operation on the provided texture, with support for multiple texture sources to choose from.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ VisualShaderNodeTexture
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_VisualShaderNodeTexture_Source:
 
@@ -53,7 +53,7 @@ enum **Source**: :ref:`🔗<enum_VisualShaderNodeTexture_Source>`
 
 :ref:`Source<enum_VisualShaderNodeTexture_Source>` **SOURCE_TEXTURE** = ``0``
 
-使用给定的纹理作为此函数的参数。
+Use the texture given as an argument for this function.
 
 .. _class_VisualShaderNodeTexture_constant_SOURCE_SCREEN:
 
@@ -61,7 +61,7 @@ enum **Source**: :ref:`🔗<enum_VisualShaderNodeTexture_Source>`
 
 :ref:`Source<enum_VisualShaderNodeTexture_Source>` **SOURCE_SCREEN** = ``1``
 
-使用当前视口的纹理作为源。
+Use the current viewport's texture as the source.
 
 .. _class_VisualShaderNodeTexture_constant_SOURCE_2D_TEXTURE:
 
@@ -69,7 +69,7 @@ enum **Source**: :ref:`🔗<enum_VisualShaderNodeTexture_Source>`
 
 :ref:`Source<enum_VisualShaderNodeTexture_Source>` **SOURCE_2D_TEXTURE** = ``2``
 
-使用该着色器内置纹理中的纹理（例如 :ref:`Sprite2D<class_Sprite2D>` 的纹理）。
+Use the texture from this shader's texture built-in (e.g. a texture of a :ref:`Sprite2D<class_Sprite2D>`).
 
 .. _class_VisualShaderNodeTexture_constant_SOURCE_2D_NORMAL:
 
@@ -77,7 +77,7 @@ enum **Source**: :ref:`🔗<enum_VisualShaderNodeTexture_Source>`
 
 :ref:`Source<enum_VisualShaderNodeTexture_Source>` **SOURCE_2D_NORMAL** = ``3``
 
-使用该着色器内置的法线贴图的纹理。
+Use the texture from this shader's normal map built-in.
 
 .. _class_VisualShaderNodeTexture_constant_SOURCE_DEPTH:
 
@@ -85,7 +85,7 @@ enum **Source**: :ref:`🔗<enum_VisualShaderNodeTexture_Source>`
 
 :ref:`Source<enum_VisualShaderNodeTexture_Source>` **SOURCE_DEPTH** = ``4``
 
-使用在深度预处理过程中捕获的深度纹理。只有在使用深度预处理时才可用（即在空间着色器和 forward_plus 或 gl_compatibility 渲染器中）。
+Use the depth texture captured during the depth prepass. Only available when the depth prepass is used (i.e. in spatial shaders and in the forward_plus or gl_compatibility renderers).
 
 .. _class_VisualShaderNodeTexture_constant_SOURCE_PORT:
 
@@ -93,7 +93,7 @@ enum **Source**: :ref:`🔗<enum_VisualShaderNodeTexture_Source>`
 
 :ref:`Source<enum_VisualShaderNodeTexture_Source>` **SOURCE_PORT** = ``5``
 
-将输入端口中提供的纹理用于此函数。
+Use the texture provided in the input port for this function.
 
 .. _class_VisualShaderNodeTexture_constant_SOURCE_3D_NORMAL:
 
@@ -101,7 +101,7 @@ enum **Source**: :ref:`🔗<enum_VisualShaderNodeTexture_Source>`
 
 :ref:`Source<enum_VisualShaderNodeTexture_Source>` **SOURCE_3D_NORMAL** = ``6``
 
-使用在深度预处理过程中捕获的法线缓冲区。只有在法线粗糙度缓冲区可用时才可用（即在空间着色器和 forward_plus 渲染器中）。
+Use the normal buffer captured during the depth prepass. Only available when the normal-roughness buffer is available (i.e. in spatial shaders and in the forward_plus renderer).
 
 .. _class_VisualShaderNodeTexture_constant_SOURCE_ROUGHNESS:
 
@@ -109,7 +109,7 @@ enum **Source**: :ref:`🔗<enum_VisualShaderNodeTexture_Source>`
 
 :ref:`Source<enum_VisualShaderNodeTexture_Source>` **SOURCE_ROUGHNESS** = ``7``
 
-使用在深度预处理过程中捕获的粗糙度缓冲区。仅当法线粗糙度缓冲区可用时才可用（即在空间着色器和 forward_plus 渲染器中）。
+Use the roughness buffer captured during the depth prepass. Only available when the normal-roughness buffer is available (i.e. in spatial shaders and in the forward_plus renderer).
 
 .. _class_VisualShaderNodeTexture_constant_SOURCE_MAX:
 
@@ -117,7 +117,7 @@ enum **Source**: :ref:`🔗<enum_VisualShaderNodeTexture_Source>`
 
 :ref:`Source<enum_VisualShaderNodeTexture_Source>` **SOURCE_MAX** = ``8``
 
-代表 :ref:`Source<enum_VisualShaderNodeTexture_Source>` 枚举的大小。
+Represents the size of the :ref:`Source<enum_VisualShaderNodeTexture_Source>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -135,7 +135,7 @@ enum **TextureType**: :ref:`🔗<enum_VisualShaderNodeTexture_TextureType>`
 
 :ref:`TextureType<enum_VisualShaderNodeTexture_TextureType>` **TYPE_DATA** = ``0``
 
-在uniform声明中未添加提示。
+No hints are added to the uniform declaration.
 
 .. _class_VisualShaderNodeTexture_constant_TYPE_COLOR:
 
@@ -151,7 +151,7 @@ Adds ``source_color`` as hint to the uniform declaration for proper conversion f
 
 :ref:`TextureType<enum_VisualShaderNodeTexture_TextureType>` **TYPE_NORMAL_MAP** = ``2``
 
-将 ``hint_normal`` 作为提示添加到 uniform 声明中，该声明在内部将纹理转换为法线贴图。
+Adds ``hint_normal`` as hint to the uniform declaration, which internally converts the texture for proper usage as normal map.
 
 .. _class_VisualShaderNodeTexture_constant_TYPE_MAX:
 
@@ -159,7 +159,7 @@ Adds ``source_color`` as hint to the uniform declaration for proper conversion f
 
 :ref:`TextureType<enum_VisualShaderNodeTexture_TextureType>` **TYPE_MAX** = ``3``
 
-代表 :ref:`TextureType<enum_VisualShaderNodeTexture_TextureType>` 枚举的大小。
+Represents the size of the :ref:`TextureType<enum_VisualShaderNodeTexture_TextureType>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -167,8 +167,8 @@ Adds ``source_color`` as hint to the uniform declaration for proper conversion f
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_VisualShaderNodeTexture_property_source:
 
@@ -181,7 +181,7 @@ Adds ``source_color`` as hint to the uniform declaration for proper conversion f
 - |void| **set_source**\ (\ value\: :ref:`Source<enum_VisualShaderNodeTexture_Source>`\ )
 - :ref:`Source<enum_VisualShaderNodeTexture_Source>` **get_source**\ (\ )
 
-决定要查询的源。
+Determines the source for the lookup.
 
 .. rst-class:: classref-item-separator
 
@@ -198,7 +198,7 @@ Adds ``source_color`` as hint to the uniform declaration for proper conversion f
 - |void| **set_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ )
 
-源纹理，如果需要的话，用于选定的\ :ref:`source<class_VisualShaderNodeTexture_property_source>`\ 。
+The source texture, if needed for the selected :ref:`source<class_VisualShaderNodeTexture_property_source>`.
 
 .. rst-class:: classref-item-separator
 
@@ -215,14 +215,14 @@ Adds ``source_color`` as hint to the uniform declaration for proper conversion f
 - |void| **set_texture_type**\ (\ value\: :ref:`TextureType<enum_VisualShaderNodeTexture_TextureType>`\ )
 - :ref:`TextureType<enum_VisualShaderNodeTexture_TextureType>` **get_texture_type**\ (\ )
 
-如果 :ref:`source<class_VisualShaderNodeTexture_property_source>` 为 :ref:`SOURCE_TEXTURE<class_VisualShaderNodeTexture_constant_SOURCE_TEXTURE>`\ ，则指定纹理的类型。
+Specifies the type of the texture if :ref:`source<class_VisualShaderNodeTexture_property_source>` is set to :ref:`SOURCE_TEXTURE<class_VisualShaderNodeTexture_constant_SOURCE_TEXTURE>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

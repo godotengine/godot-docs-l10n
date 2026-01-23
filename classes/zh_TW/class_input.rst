@@ -5,34 +5,34 @@
 Input
 =====
 
-**繼承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-用於處理輸入的單例。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-**Input** 是處理鍵盤按鍵、滑鼠按鈕及移動、遊戲手柄、輸入動作等的單例。動作以及對應的事件可以在\ **專案 > 專案設定**\ 的\ **輸入對應**\ 分頁中設定，也可以使用 :ref:`InputMap<class_InputMap>` 類設定。
-
-\ **注意：**\ **Input** 的方法反映的是全域輸入狀態，不受 :ref:`Control.accept_event()<class_Control_method_accept_event>` 和 :ref:`Viewport.set_input_as_handled()<class_Viewport_method_set_input_as_handled>` 的影響，因為這兩個方法處理的是輸入在 :ref:`SceneTree<class_SceneTree>` 中傳播的方式。
+A singleton for handling inputs.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`輸入文件索引 <../tutorials/inputs/index>`
+The **Input** singleton handles key presses, mouse buttons and movement, gamepads, and input actions. Actions and their events can be set in the **Input Map** tab in **Project > Project Settings**, or with the :ref:`InputMap<class_InputMap>` class.
 
-- `2D Dodge The Creeps 範例 <https://godotengine.org/asset-library/asset/2712>`__
+\ **Note:** **Input**'s methods reflect the global input state and are not affected by :ref:`Control.accept_event()<class_Control_method_accept_event>` or :ref:`Viewport.set_input_as_handled()<class_Viewport_method_set_input_as_handled>`, as those methods only deal with the way input is propagated in the :ref:`SceneTree<class_SceneTree>`.
 
-- `3D 體素示範 <https://godotengine.org/asset-library/asset/2755>`__
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Inputs documentation index <../tutorials/inputs/index>`
+
+- `2D Dodge The Creeps Demo <https://godotengine.org/asset-library/asset/2712>`__
+
+- `3D Voxel Demo <https://godotengine.org/asset-library/asset/2755>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ Input
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -163,8 +163,8 @@ Input
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_Input_signal_joy_connection_changed:
 
@@ -172,7 +172,7 @@ Input
 
 **joy_connection_changed**\ (\ device\: :ref:`int<class_int>`, connected\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Input_signal_joy_connection_changed>`
 
-連接或斷開遊戲手柄裝置時觸發。
+Emitted when a joypad device has been connected or disconnected.
 
 .. rst-class:: classref-section-separator
 
@@ -180,8 +180,8 @@ Input
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_Input_MouseMode:
 
@@ -195,7 +195,7 @@ enum **MouseMode**: :ref:`🔗<enum_Input_MouseMode>`
 
 :ref:`MouseMode<enum_Input_MouseMode>` **MOUSE_MODE_VISIBLE** = ``0``
 
-如果滑鼠游標處於隱藏狀態，則使其可見。
+Makes the mouse cursor visible if it is hidden.
 
 .. _class_Input_constant_MOUSE_MODE_HIDDEN:
 
@@ -203,7 +203,7 @@ enum **MouseMode**: :ref:`🔗<enum_Input_MouseMode>`
 
 :ref:`MouseMode<enum_Input_MouseMode>` **MOUSE_MODE_HIDDEN** = ``1``
 
-如果滑鼠游標是可見的，則使其隱藏。
+Makes the mouse cursor hidden if it is visible.
 
 .. _class_Input_constant_MOUSE_MODE_CAPTURED:
 
@@ -211,9 +211,9 @@ enum **MouseMode**: :ref:`🔗<enum_Input_MouseMode>`
 
 :ref:`MouseMode<enum_Input_MouseMode>` **MOUSE_MODE_CAPTURED** = ``2``
 
-捕獲滑鼠。滑鼠將被隱藏，其位置被鎖定在視窗管理器視窗的中心。
+Captures the mouse. The mouse will be hidden and its position locked at the center of the window manager's window.
 
-\ **注意：**\ 如果你想在這種模式下處理滑鼠的移動，則需要使用 :ref:`InputEventMouseMotion.relative<class_InputEventMouseMotion_property_relative>`\ 。
+\ **Note:** If you want to process the mouse's movement in this mode, you need to use :ref:`InputEventMouseMotion.relative<class_InputEventMouseMotion_property_relative>`.
 
 .. _class_Input_constant_MOUSE_MODE_CONFINED:
 
@@ -221,7 +221,7 @@ enum **MouseMode**: :ref:`🔗<enum_Input_MouseMode>`
 
 :ref:`MouseMode<enum_Input_MouseMode>` **MOUSE_MODE_CONFINED** = ``3``
 
-將滑鼠游標限制在遊戲視窗內，並使其可見。
+Confines the mouse cursor to the game window, and make it visible.
 
 .. _class_Input_constant_MOUSE_MODE_CONFINED_HIDDEN:
 
@@ -229,7 +229,7 @@ enum **MouseMode**: :ref:`🔗<enum_Input_MouseMode>`
 
 :ref:`MouseMode<enum_Input_MouseMode>` **MOUSE_MODE_CONFINED_HIDDEN** = ``4``
 
-將滑鼠游標限制在遊戲視窗內，並使其隱藏。
+Confines the mouse cursor to the game window, and make it hidden.
 
 .. _class_Input_constant_MOUSE_MODE_MAX:
 
@@ -255,7 +255,7 @@ enum **CursorShape**: :ref:`🔗<enum_Input_CursorShape>`
 
 :ref:`CursorShape<enum_Input_CursorShape>` **CURSOR_ARROW** = ``0``
 
-箭頭游標。標準，預設指向游標。
+Arrow cursor. Standard, default pointing cursor.
 
 .. _class_Input_constant_CURSOR_IBEAM:
 
@@ -263,7 +263,7 @@ enum **CursorShape**: :ref:`🔗<enum_Input_CursorShape>`
 
 :ref:`CursorShape<enum_Input_CursorShape>` **CURSOR_IBEAM** = ``1``
 
-I 形游標。通常用於指示點擊滑鼠後文字游標的位置。
+I-beam cursor. Usually used to show where the text cursor will appear when the mouse is clicked.
 
 .. _class_Input_constant_CURSOR_POINTING_HAND:
 
@@ -271,7 +271,7 @@ I 形游標。通常用於指示點擊滑鼠後文字游標的位置。
 
 :ref:`CursorShape<enum_Input_CursorShape>` **CURSOR_POINTING_HAND** = ``2``
 
-指向手形游標。通常用在指示連結或其他可互動項上。
+Pointing hand cursor. Usually used to indicate the pointer is over a link or other interactable item.
 
 .. _class_Input_constant_CURSOR_CROSS:
 
@@ -279,7 +279,7 @@ I 形游標。通常用於指示點擊滑鼠後文字游標的位置。
 
 :ref:`CursorShape<enum_Input_CursorShape>` **CURSOR_CROSS** = ``3``
 
-十字游標。通常出現在可以執行繪製操作或進行選擇的區域上方。
+Cross cursor. Typically appears over regions in which a drawing operation can be performed or for selections.
 
 .. _class_Input_constant_CURSOR_WAIT:
 
@@ -303,9 +303,9 @@ Busy cursor. Indicates that the application is busy performing an operation, and
 
 :ref:`CursorShape<enum_Input_CursorShape>` **CURSOR_DRAG** = ``6``
 
-拖動游標。通常在拖動某物時顯示。
+Drag cursor. Usually displayed when dragging something.
 
-\ **注意：**\ Windows 上沒有拖動游標，因此 :ref:`CURSOR_DRAG<class_Input_constant_CURSOR_DRAG>` 與該平臺的 :ref:`CURSOR_MOVE<class_Input_constant_CURSOR_MOVE>` 相同。
+\ **Note:** Windows lacks a dragging cursor, so :ref:`CURSOR_DRAG<class_Input_constant_CURSOR_DRAG>` is the same as :ref:`CURSOR_MOVE<class_Input_constant_CURSOR_MOVE>` for this platform.
 
 .. _class_Input_constant_CURSOR_CAN_DROP:
 
@@ -313,7 +313,7 @@ Busy cursor. Indicates that the application is busy performing an operation, and
 
 :ref:`CursorShape<enum_Input_CursorShape>` **CURSOR_CAN_DROP** = ``7``
 
-可以放下的游標。通常在拖動東西時顯示，表示可以在目前位置放下。
+Can drop cursor. Usually displayed when dragging something to indicate that it can be dropped at the current position.
 
 .. _class_Input_constant_CURSOR_FORBIDDEN:
 
@@ -321,7 +321,7 @@ Busy cursor. Indicates that the application is busy performing an operation, and
 
 :ref:`CursorShape<enum_Input_CursorShape>` **CURSOR_FORBIDDEN** = ``8``
 
-禁止的游標。表示目前操作是被禁止的（例如，拖動東西時）或某個位置的控制項被禁用。
+Forbidden cursor. Indicates that the current action is forbidden (for example, when dragging something) or that the control at a position is disabled.
 
 .. _class_Input_constant_CURSOR_VSIZE:
 
@@ -329,7 +329,7 @@ Busy cursor. Indicates that the application is busy performing an operation, and
 
 :ref:`CursorShape<enum_Input_CursorShape>` **CURSOR_VSIZE** = ``9``
 
-垂直調整大小的游標。一個雙頭的垂直箭頭。它告訴使用者他們可以垂直地調整視窗或面板的大小。
+Vertical resize mouse cursor. A double-headed vertical arrow. It tells the user they can resize the window or the panel vertically.
 
 .. _class_Input_constant_CURSOR_HSIZE:
 
@@ -337,7 +337,7 @@ Busy cursor. Indicates that the application is busy performing an operation, and
 
 :ref:`CursorShape<enum_Input_CursorShape>` **CURSOR_HSIZE** = ``10``
 
-水平調整尺寸的游標。一個雙頭的水平箭頭。它告訴使用者他們可以水平調整視窗或面板的大小。
+Horizontal resize mouse cursor. A double-headed horizontal arrow. It tells the user they can resize the window or the panel horizontally.
 
 .. _class_Input_constant_CURSOR_BDIAGSIZE:
 
@@ -345,7 +345,7 @@ Busy cursor. Indicates that the application is busy performing an operation, and
 
 :ref:`CursorShape<enum_Input_CursorShape>` **CURSOR_BDIAGSIZE** = ``11``
 
-視窗調整大小的游標。該游標是一個雙頭箭頭，從左下方到右上方。它告訴使用者他們可以在水平和垂直方向上調整視窗或面板的大小。
+Window resize mouse cursor. The cursor is a double-headed arrow that goes from the bottom left to the top right. It tells the user they can resize the window or the panel both horizontally and vertically.
 
 .. _class_Input_constant_CURSOR_FDIAGSIZE:
 
@@ -353,7 +353,7 @@ Busy cursor. Indicates that the application is busy performing an operation, and
 
 :ref:`CursorShape<enum_Input_CursorShape>` **CURSOR_FDIAGSIZE** = ``12``
 
-視窗調整大小的游標。是一個雙頭的箭頭，從左上角到右下角，與 :ref:`CURSOR_BDIAGSIZE<class_Input_constant_CURSOR_BDIAGSIZE>` 相反。它告訴使用者他們可以在水平和垂直方向上調整視窗或面板的大小。
+Window resize mouse cursor. The cursor is a double-headed arrow that goes from the top left to the bottom right, the opposite of :ref:`CURSOR_BDIAGSIZE<class_Input_constant_CURSOR_BDIAGSIZE>`. It tells the user they can resize the window or the panel both horizontally and vertically.
 
 .. _class_Input_constant_CURSOR_MOVE:
 
@@ -361,7 +361,7 @@ Busy cursor. Indicates that the application is busy performing an operation, and
 
 :ref:`CursorShape<enum_Input_CursorShape>` **CURSOR_MOVE** = ``13``
 
-移動游標。表示那些東西可以移動。
+Move cursor. Indicates that something can be moved.
 
 .. _class_Input_constant_CURSOR_VSPLIT:
 
@@ -369,7 +369,7 @@ Busy cursor. Indicates that the application is busy performing an operation, and
 
 :ref:`CursorShape<enum_Input_CursorShape>` **CURSOR_VSPLIT** = ``14``
 
-垂直拆分滑鼠游標。在 Windows 上與 :ref:`CURSOR_VSIZE<class_Input_constant_CURSOR_VSIZE>` 相同。
+Vertical split mouse cursor. On Windows, it's the same as :ref:`CURSOR_VSIZE<class_Input_constant_CURSOR_VSIZE>`.
 
 .. _class_Input_constant_CURSOR_HSPLIT:
 
@@ -377,7 +377,7 @@ Busy cursor. Indicates that the application is busy performing an operation, and
 
 :ref:`CursorShape<enum_Input_CursorShape>` **CURSOR_HSPLIT** = ``15``
 
-水平分割的滑鼠游標。在 Windows 上與 :ref:`CURSOR_HSIZE<class_Input_constant_CURSOR_HSIZE>` 相同。
+Horizontal split mouse cursor. On Windows, it's the same as :ref:`CURSOR_HSIZE<class_Input_constant_CURSOR_HSIZE>`.
 
 .. _class_Input_constant_CURSOR_HELP:
 
@@ -385,7 +385,7 @@ Busy cursor. Indicates that the application is busy performing an operation, and
 
 :ref:`CursorShape<enum_Input_CursorShape>` **CURSOR_HELP** = ``16``
 
-幫助游標。通常是一個問號。
+Help cursor. Usually a question mark.
 
 .. rst-class:: classref-section-separator
 
@@ -393,8 +393,8 @@ Busy cursor. Indicates that the application is busy performing an operation, and
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_Input_property_emulate_mouse_from_touch:
 
@@ -458,11 +458,11 @@ Controls the mouse mode.
 - |void| **set_use_accumulated_input**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_accumulated_input**\ (\ )
 
-如果為 ``true``\ ，則作業系統發送的相似輸入事件將被累積。當輸入累積被啟用時，在影格期間內所有生成的輸入事件，將在影格完成算繪時被合併並行出。因此，這會將每秒輸入方法被呼叫的數量限制為算繪 FPS。
+If ``true``, similar input events sent by the operating system are accumulated. When input accumulation is enabled, all input events generated during a frame will be merged and emitted when the frame is done rendering. Therefore, this limits the number of input method calls per second to the rendering FPS.
 
-輸入累積可以被禁用，以增加 CPU 使用率為代價，獲得稍微更具精確性/反應性的輸入。在需要徒手繪製線條的套用程式中，輸入累積通常應在使用者繪製線條時被禁用，以獲得與實際輸入非常接近的結果。
+Input accumulation can be disabled to get slightly more precise/reactive input at the cost of increased CPU usage. In applications where drawing freehand lines is required, input accumulation should generally be disabled while the user is drawing the line to get results that closely follow the actual input.
 
-\ **注意：**\ 輸入累積預設是\ *啟用的* 。
+\ **Note:** Input accumulation is *enabled* by default.
 
 .. rst-class:: classref-section-separator
 
@@ -470,8 +470,8 @@ Controls the mouse mode.
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_Input_method_action_press:
 
@@ -479,11 +479,11 @@ Controls the mouse mode.
 
 |void| **action_press**\ (\ action\: :ref:`StringName<class_StringName>`, strength\: :ref:`float<class_float>` = 1.0\ ) :ref:`🔗<class_Input_method_action_press>`
 
-這將類比按下指定的按鍵動作。
+This will simulate pressing the specified action.
 
-強度可以用於非布耳運算的動作，它的範圍在 0 到 1 之間，代表給定動作的力度。
+The strength can be used for non-boolean actions, it's ranged between 0 and 1 representing the intensity of the given action.
 
-\ **注意：**\ 這個方法不會引起任何 :ref:`Node._input()<class_Node_private_method__input>` 呼叫。它旨在與 :ref:`is_action_pressed()<class_Input_method_is_action_pressed>` 和 :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` 一起使用。如果你想模擬 ``_input``\ ，請使用 :ref:`parse_input_event()<class_Input_method_parse_input_event>` 代替。
+\ **Note:** This method will not cause any :ref:`Node._input()<class_Node_private_method__input>` calls. It is intended to be used with :ref:`is_action_pressed()<class_Input_method_is_action_pressed>` and :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>`. If you want to simulate ``_input``, use :ref:`parse_input_event()<class_Input_method_parse_input_event>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -495,7 +495,7 @@ Controls the mouse mode.
 
 |void| **action_release**\ (\ action\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Input_method_action_release>`
 
-如果已按下指定操作，那麼將釋放它。
+If the specified action is already pressed, this will release it.
 
 .. rst-class:: classref-item-separator
 
@@ -507,7 +507,7 @@ Controls the mouse mode.
 
 |void| **add_joy_mapping**\ (\ mapping\: :ref:`String<class_String>`, update_existing\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Input_method_add_joy_mapping>`
 
-在對應資料庫中新增新的對應條目（SDL2 格式）。可選更新已連接的裝置。
+Adds a new mapping entry (in SDL2 format) to the mapping database. Optionally update already connected devices.
 
 .. rst-class:: classref-item-separator
 
@@ -519,9 +519,9 @@ Controls the mouse mode.
 
 |void| **flush_buffered_events**\ (\ ) :ref:`🔗<class_Input_method_flush_buffered_events>`
 
-將目前緩衝區內的所有輸入事件發送給遊戲迴圈。這些事件可能是由於累積輸入（\ :ref:`use_accumulated_input<class_Input_property_use_accumulated_input>`\ ）或敏捷輸入更新（\ :ref:`ProjectSettings.input_devices/buffering/agile_event_flushing<class_ProjectSettings_property_input_devices/buffering/agile_event_flushing>`\ ）而被緩衝的結果。
+Sends all input events which are in the current buffer to the game loop. These events may have been buffered as a result of accumulated input (:ref:`use_accumulated_input<class_Input_property_use_accumulated_input>`) or agile input flushing (:ref:`ProjectSettings.input_devices/buffering/agile_event_flushing<class_ProjectSettings_property_input_devices/buffering/agile_event_flushing>`).
 
-引擎已經會在關鍵的執行點執行此操作，至少每影格一次。然而，在你想要精確控制事件處理時間的高級情況下，這可能是有用的。
+The engine will already do this itself at key execution points (at least once per frame). However, this can be useful in advanced cases where you want precise control over the timing of event handling.
 
 .. rst-class:: classref-item-separator
 
@@ -551,9 +551,9 @@ Note this method returns an empty :ref:`Vector3<class_Vector3>` when running fro
 
 :ref:`float<class_float>` **get_action_raw_strength**\ (\ action\: :ref:`StringName<class_StringName>`, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Input_method_get_action_raw_strength>`
 
-返回一個介於 0 和 1 之間的值，表示給定動作的原始強度，忽略動作的死區。在大多數情況下，應該改用 :ref:`get_action_strength()<class_Input_method_get_action_strength>`\ 。
+Returns a value between 0 and 1 representing the raw intensity of the given action, ignoring the action's deadzone. In most cases, you should use :ref:`get_action_strength()<class_Input_method_get_action_strength>` instead.
 
-如果 ``exact_match`` 為 ``false``\ ，它會忽略 :ref:`InputEventKey<class_InputEventKey>` 和 :ref:`InputEventMouseButton<class_InputEventMouseButton>` 事件的額外輸入修飾鍵，以及 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` 事件的方向。
+If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
 
 .. rst-class:: classref-item-separator
 
@@ -579,9 +579,9 @@ If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:
 
 :ref:`float<class_float>` **get_axis**\ (\ negative_action\: :ref:`StringName<class_StringName>`, positive_action\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Input_method_get_axis>`
 
-通過指定兩個動作來獲取軸的輸入，一個是負的，一個是正的。
+Get axis input by specifying two actions, one negative and one positive.
 
-這是 ``Input.get_action_strength("positive_action")-Input.get_action_strength("negative_action")`` 的簡寫。
+This is a shorthand for writing ``Input.get_action_strength("positive_action") - Input.get_action_strength("negative_action")``.
 
 .. rst-class:: classref-item-separator
 
@@ -593,7 +593,7 @@ If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:
 
 :ref:`Array<class_Array>`\[:ref:`int<class_int>`\] **get_connected_joypads**\ (\ ) :ref:`🔗<class_Input_method_get_connected_joypads>`
 
-返回一個 :ref:`Array<class_Array>`\ ，包含目前所有連接手柄的裝置 ID。
+Returns an :ref:`Array<class_Array>` containing the device IDs of all currently connected joypads.
 
 .. rst-class:: classref-item-separator
 
@@ -703,7 +703,7 @@ On Windows, the dictionary can have an additional field:
 
 :ref:`String<class_String>` **get_joy_name**\ (\ device\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Input_method_get_joy_name>`
 
-返回位於指定裝置索引的遊戲手柄名稱，例如 ``PS4 Controller``\ 。Godot 使用 `SDL2 遊戲控制器資料庫 <https://github.com/gabomdq/SDL_GameControllerDB>`__\ 來確定遊戲手柄的名稱。
+Returns the name of the joypad at the specified device index, e.g. ``PS4 Controller``. Godot uses the `SDL2 game controller database <https://github.com/gabomdq/SDL_GameControllerDB>`__ to determine gamepad names.
 
 .. rst-class:: classref-item-separator
 
@@ -715,7 +715,7 @@ On Windows, the dictionary can have an additional field:
 
 :ref:`float<class_float>` **get_joy_vibration_duration**\ (\ device\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Input_method_get_joy_vibration_duration>`
 
-以秒為單位返回目前振動效果的持續時間。
+Returns the duration of the current vibration effect in seconds.
 
 .. rst-class:: classref-item-separator
 
@@ -727,7 +727,7 @@ On Windows, the dictionary can have an additional field:
 
 :ref:`Vector2<class_Vector2>` **get_joy_vibration_strength**\ (\ device\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Input_method_get_joy_vibration_strength>`
 
-返回手柄振動的強度：x 是弱馬達的強度，y 是強馬達的強度。
+Returns the strength of the joypad vibration: x is the strength of the weak motor, and y is the strength of the strong motor.
 
 .. rst-class:: classref-item-separator
 
@@ -751,7 +751,7 @@ Returns the last mouse velocity in screen coordinates. To provide a precise and 
 
 :ref:`Vector2<class_Vector2>` **get_last_mouse_velocity**\ (\ ) :ref:`🔗<class_Input_method_get_last_mouse_velocity>`
 
-返回上次的滑鼠速度。為了提供精確且無抖動的速度，滑鼠速度僅每 0.1 秒計算一次。因此，滑鼠速度將滯後於滑鼠移動。
+Returns the last mouse velocity. To provide a precise and jitter-free velocity, mouse velocity is only calculated every 0.1s. Therefore, mouse velocity will lag mouse movements.
 
 .. rst-class:: classref-item-separator
 
@@ -779,7 +779,7 @@ Returns the magnetic field strength in micro-Tesla for all axes of the device's 
 
 |bitfield|\[:ref:`MouseButtonMask<enum_@GlobalScope_MouseButtonMask>`\] **get_mouse_button_mask**\ (\ ) |const| :ref:`🔗<class_Input_method_get_mouse_button_mask>`
 
-將滑鼠按鍵作為一個位遮罩返回。如果多個滑鼠按鈕同時被按下，則這些位將被加在一起。相當於 :ref:`DisplayServer.mouse_get_button_state()<class_DisplayServer_method_mouse_get_button_state>`\ 。
+Returns mouse buttons as a bitmask. If multiple mouse buttons are pressed at the same time, the bits are added together. Equivalent to :ref:`DisplayServer.mouse_get_button_state()<class_DisplayServer_method_mouse_get_button_state>`.
 
 .. rst-class:: classref-item-separator
 
@@ -791,11 +791,11 @@ Returns the magnetic field strength in micro-Tesla for all axes of the device's 
 
 :ref:`Vector2<class_Vector2>` **get_vector**\ (\ negative_x\: :ref:`StringName<class_StringName>`, positive_x\: :ref:`StringName<class_StringName>`, negative_y\: :ref:`StringName<class_StringName>`, positive_y\: :ref:`StringName<class_StringName>`, deadzone\: :ref:`float<class_float>` = -1.0\ ) |const| :ref:`🔗<class_Input_method_get_vector>`
 
-通過指定正負 X 和 Y 軸的四個動作來獲取輸入向量。
+Gets an input vector by specifying four actions for the positive and negative X and Y axes.
 
-這個方法在獲取向量輸入時很有用，比如從操縱桿、方向盤、箭頭或 WASD。向量的長度被限制為 1，並且有一個圓形的死區，這對於使用向量輸入進行運動很有用。
+This method is useful when getting vector input, such as from a joystick, directional pad, arrows, or WASD. The vector has its length limited to 1 and has a circular deadzone, which is useful for using vector input as movement.
 
-預設情況下，死區根據動作死區的平均值自動計算。然而，你可以把死區覆蓋為任何你想要的值（在 0 到 1 的範圍內）。
+By default, the deadzone is automatically calculated from the average of the action deadzones. However, you can override the deadzone to be whatever you want (on the range of 0 to 1).
 
 .. rst-class:: classref-item-separator
 
@@ -915,7 +915,7 @@ If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:
 
 :ref:`bool<class_bool>` **is_anything_pressed**\ (\ ) |const| :ref:`🔗<class_Input_method_is_anything_pressed>`
 
-如果任何動作、按鍵、遊戲手柄按鈕、或滑鼠按鈕正被按下，則返回 ``true``\ 。如果動作是通過呼叫 :ref:`action_press()<class_Input_method_action_press>` 以通過程式碼來模擬，該方法也將返回 ``true``\ 。
+Returns ``true`` if any action, key, joypad button, or mouse button is being pressed. This will also return ``true`` if any action is simulated via code by calling :ref:`action_press()<class_Input_method_action_press>`.
 
 .. rst-class:: classref-item-separator
 
@@ -939,7 +939,7 @@ Returns ``true`` if you are pressing the joypad button at index ``button``.
 
 :ref:`bool<class_bool>` **is_joy_known**\ (\ device\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Input_method_is_joy_known>`
 
-如果系統知道指定的裝置，則返回 ``true``\ 。這意味著它設定了所有按鈕和軸索引。未知的遊戲手柄預計不會配對這些常數，但仍然可以從中檢索事件。
+Returns ``true`` if the system knows the specified device. This means that it sets all button and axis indices. Unknown joypads are not expected to match these constants, but you can still retrieve events from them.
 
 .. rst-class:: classref-item-separator
 
@@ -951,7 +951,7 @@ Returns ``true`` if you are pressing the joypad button at index ``button``.
 
 :ref:`bool<class_bool>` **is_key_label_pressed**\ (\ keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) |const| :ref:`🔗<class_Input_method_is_key_label_pressed>`
 
-如果正按下印有 ``keycode`` 的鍵，則返回 ``true``\ 。可以傳遞一個 :ref:`Key<enum_@GlobalScope_Key>` 常數或任何 Unicode 字元程式碼。
+Returns ``true`` if you are pressing the key with the ``keycode`` printed on it. You can pass a :ref:`Key<enum_@GlobalScope_Key>` constant or any Unicode character code.
 
 .. rst-class:: classref-item-separator
 
@@ -963,11 +963,11 @@ Returns ``true`` if you are pressing the joypad button at index ``button``.
 
 :ref:`bool<class_bool>` **is_key_pressed**\ (\ keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) |const| :ref:`🔗<class_Input_method_is_key_pressed>`
 
-如果在目前鍵盤配置中正在按該拉丁鍵，則返回 ``true``\ 。可以傳遞一個 :ref:`Key<enum_@GlobalScope_Key>` 常數。
+Returns ``true`` if you are pressing the Latin key in the current keyboard layout. You can pass a :ref:`Key<enum_@GlobalScope_Key>` constant.
 
-只有在非遊戲套用程式中，才推薦使用 :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` 而不是 :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>`\ 。這可確保快捷鍵將根據使用者的鍵盤配置按預期運作，因為在非遊戲套用程式中，鍵盤快捷鍵通常取決於鍵盤配置。如有疑問，請使用 :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>`\ 。
+\ :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` is only recommended over :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` in non-game applications. This ensures that shortcut keys behave as expected depending on the user's keyboard layout, as keyboard shortcuts are generally dependent on the keyboard layout in non-game applications. If in doubt, use :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>`.
 
-\ **注意：**\ 由於鍵盤重影，即使按下動作的某個鍵，\ :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` 也有可能會返回 ``false``\ 。有關詳細資訊，請參閱文件中的\ `《輸入範例》 <../tutorials/inputs/input_examples.html#keyboard-events>`__\ 。
+\ **Note:** Due to keyboard ghosting, :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <../tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -979,7 +979,7 @@ Returns ``true`` if you are pressing the joypad button at index ``button``.
 
 :ref:`bool<class_bool>` **is_mouse_button_pressed**\ (\ button\: :ref:`MouseButton<enum_@GlobalScope_MouseButton>`\ ) |const| :ref:`🔗<class_Input_method_is_mouse_button_pressed>`
 
-如果正在按下由 :ref:`MouseButton<enum_@GlobalScope_MouseButton>` 指定的滑鼠按鈕，則返回 ``true``\ 。
+Returns ``true`` if you are pressing the mouse button specified with :ref:`MouseButton<enum_@GlobalScope_MouseButton>`.
 
 .. rst-class:: classref-item-separator
 
@@ -991,11 +991,11 @@ Returns ``true`` if you are pressing the joypad button at index ``button``.
 
 :ref:`bool<class_bool>` **is_physical_key_pressed**\ (\ keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) |const| :ref:`🔗<class_Input_method_is_physical_key_pressed>`
 
-如果正按下 101/102 鍵美式 QWERTY 鍵盤物理位置上的鍵，則返回 ``true``\ 。可以傳遞一個 :ref:`Key<enum_@GlobalScope_Key>` 常數。
+Returns ``true`` if you are pressing the key in the physical location on the 101/102-key US QWERTY keyboard. You can pass a :ref:`Key<enum_@GlobalScope_Key>` constant.
 
-與 :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` 相比，\ :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` 被推薦用於遊戲內的動作，因為無論使用者的鍵盤配置如何，它都會使 :kbd:`W`/:kbd:`A`/:kbd:`S`/:kbd:`D` 佈局有效。\ :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` 還將確保頂行數字鍵在任何鍵盤配置上有效。如有疑問，請使用 :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>`\ 。
+\ :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` is recommended over :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` for in-game actions, as it will make :kbd:`W`/:kbd:`A`/:kbd:`S`/:kbd:`D` layouts work regardless of the user's keyboard layout. :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` will also ensure that the top row number keys work on any keyboard layout. If in doubt, use :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>`.
 
-\ **注意：**\ 由於鍵盤重影，即使按下動作的某個鍵，\ :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` 也有可能會返回 ``false``\ 。有關詳細資訊，請參閱文件中的\ `《輸入範例》 <../tutorials/inputs/input_examples.html#keyboard-events>`__\ 。
+\ **Note:** Due to keyboard ghosting, :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <../tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -1054,9 +1054,9 @@ On Android, Godot will map to an internal fallback mapping.
 
 |void| **set_accelerometer**\ (\ value\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Input_method_set_accelerometer>`
 
-設定加速度感測器的加速度值。可以用於在沒有硬體感測器的裝置上進行除錯，例如在 PC 上的編輯器中。
+Sets the acceleration value of the accelerometer sensor. Can be used for debugging on devices without a hardware sensor, for example in an editor on a PC.
 
-\ **注意：**\ 這個值在 Android 和 iOS 上可立即被硬體感測器的值所覆蓋。
+\ **Note:** This value can be immediately overwritten by the hardware sensor value on Android and iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1090,11 +1090,11 @@ Sets a custom mouse cursor image, which is only visible inside the game window, 
 
 |void| **set_default_cursor_shape**\ (\ shape\: :ref:`CursorShape<enum_Input_CursorShape>` = 0\ ) :ref:`🔗<class_Input_method_set_default_cursor_shape>`
 
-設定該視口中使用的預設游標形狀，而不是 :ref:`CURSOR_ARROW<class_Input_constant_CURSOR_ARROW>`\ 。
+Sets the default cursor shape to be used in the viewport instead of :ref:`CURSOR_ARROW<class_Input_constant_CURSOR_ARROW>`.
 
-\ **注意：**\ 如果要更改 :ref:`Control<class_Control>` 節點的預設游標形狀，請改用 :ref:`Control.mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>`\ 。
+\ **Note:** If you want to change the default cursor shape for :ref:`Control<class_Control>`'s nodes, use :ref:`Control.mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>` instead.
 
-\ **注意：**\ 這個方法會生成一個 :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` 以立即更新游標。
+\ **Note:** This method generates an :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` to update cursor immediately.
 
 .. rst-class:: classref-item-separator
 
@@ -1106,9 +1106,9 @@ Sets a custom mouse cursor image, which is only visible inside the game window, 
 
 |void| **set_gravity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Input_method_set_gravity>`
 
-設定加速度感測器的重力值。可用於在沒有硬體感測器的裝置上進行除錯，例如在 PC 上的編輯器中。
+Sets the gravity value of the accelerometer sensor. Can be used for debugging on devices without a hardware sensor, for example in an editor on a PC.
 
-\ **注意：**\ 這個值在 Android 和 iOS 上可立即被硬體感測器的值覆蓋。
+\ **Note:** This value can be immediately overwritten by the hardware sensor value on Android and iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1120,9 +1120,9 @@ Sets a custom mouse cursor image, which is only visible inside the game window, 
 
 |void| **set_gyroscope**\ (\ value\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Input_method_set_gyroscope>`
 
-設定陀螺儀感測器的旋轉速率值。可用於在沒有硬體感測器的裝置上進行除錯，例如在 PC 上的編輯器中。
+Sets the value of the rotation rate of the gyroscope sensor. Can be used for debugging on devices without a hardware sensor, for example in an editor on a PC.
 
-\ **注意：**\ 在 Android 和 iOS 上，這個值可立即被硬體感測器的值所覆蓋。
+\ **Note:** This value can be immediately overwritten by the hardware sensor value on Android and iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1150,9 +1150,9 @@ Sets the joypad's LED light, if available, to the specified color. See also :ref
 
 |void| **set_magnetometer**\ (\ value\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Input_method_set_magnetometer>`
 
-設定磁力感測器的磁場值。可用於在沒有硬體感測器的裝置上進行除錯，例如在 PC 上的編輯器中。
+Sets the value of the magnetic field of the magnetometer sensor. Can be used for debugging on devices without a hardware sensor, for example in an editor on a PC.
 
-\ **注意：**\ 在 Android 和 iOS 上，這個值可立即被硬體感測器的值所覆蓋。
+\ **Note:** This value can be immediately overwritten by the hardware sensor value on Android and iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1164,9 +1164,9 @@ Sets the joypad's LED light, if available, to the specified color. See also :ref
 
 :ref:`bool<class_bool>` **should_ignore_device**\ (\ vendor_id\: :ref:`int<class_int>`, product_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_should_ignore_device>`
 
-查詢是否要忽略輸入裝置。可以透過設定環境變數 ``SDL_GAMECONTROLLER_IGNORE_DEVICES`` 來忽略裝置。閱讀 `SDL 檔案 <https://wiki .libsdl.org/SDL2>`__ 以了解更多資訊。
+Queries whether an input device should be ignored or not. Devices can be ignored by setting the environment variable ``SDL_GAMECONTROLLER_IGNORE_DEVICES``. Read the `SDL documentation <https://wiki.libsdl.org/SDL2>`__ for more information.
 
-\ **注意：** 某些第三方工具可以新增忽略裝置列表。例如，\ *SteamInput* 從實體裝置建立虛擬裝置以進行重新對應。為了避免處理相同輸入裝置兩次，原始裝置將新增到忽略列表中。
+\ **Note:** Some 3rd party tools can contribute to the list of ignored devices. For example, *SteamInput* creates virtual devices from physical devices for remapping purposes. To avoid handling the same input device twice, the original device is added to the ignore list.
 
 .. rst-class:: classref-item-separator
 
@@ -1194,7 +1194,7 @@ Starts to vibrate the joypad. Joypads usually come with two rumble motors, a str
 
 |void| **stop_joy_vibration**\ (\ device\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Input_method_stop_joy_vibration>`
 
-停止使用 :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>` 啟動的遊戲手柄的振動。
+Stops the vibration of the joypad started with :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1230,18 +1230,18 @@ Vibrate the handheld device for the specified duration in milliseconds.
 
 |void| **warp_mouse**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Input_method_warp_mouse>`
 
-將滑鼠位置設定為指定的向量，單位為圖元，並相對於目前聚焦的視窗管理器遊戲視窗左上角的原點。
+Sets the mouse position to the specified vector, provided in pixels and relative to an origin at the upper left corner of the currently focused Window Manager game window.
 
-如果 :ref:`MouseMode<enum_Input_MouseMode>` 被設定為 :ref:`MOUSE_MODE_CONFINED<class_Input_constant_MOUSE_MODE_CONFINED>` 或 :ref:`MOUSE_MODE_CONFINED_HIDDEN<class_Input_constant_MOUSE_MODE_CONFINED_HIDDEN>`\ ，則滑鼠位置會被鉗制在螢幕解析度的限制內，或者鉗制在遊戲視窗的限制內。
+Mouse position is clipped to the limits of the screen resolution, or to the limits of the game window if :ref:`MouseMode<enum_Input_MouseMode>` is set to :ref:`MOUSE_MODE_CONFINED<class_Input_constant_MOUSE_MODE_CONFINED>` or :ref:`MOUSE_MODE_CONFINED_HIDDEN<class_Input_constant_MOUSE_MODE_CONFINED_HIDDEN>`.
 
-\ **注意：**\ :ref:`warp_mouse()<class_Input_method_warp_mouse>` 僅支援 Windows、macOS 和 Linux。它對 Android、iOS 和 Web 沒有影響。
+\ **Note:** :ref:`warp_mouse()<class_Input_method_warp_mouse>` is only supported on Windows, macOS and Linux. It has no effect on Android, iOS and Web.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

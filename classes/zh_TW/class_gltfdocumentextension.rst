@@ -5,16 +5,16 @@
 GLTFDocumentExtension
 =====================
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`GLTFDocumentExtensionConvertImporterMesh<class_GLTFDocumentExtensionConvertImporterMesh>`
+**Inherited By:** :ref:`GLTFDocumentExtensionConvertImporterMesh<class_GLTFDocumentExtensionConvertImporterMesh>`
 
-:ref:`GLTFDocument<class_GLTFDocument>` 擴充類。
+:ref:`GLTFDocument<class_GLTFDocument>` extension class.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 Extends the functionality of the :ref:`GLTFDocument<class_GLTFDocument>` class by allowing you to run arbitrary code at various stages of glTF import or export.
 
@@ -24,15 +24,15 @@ To use, make a new class extending GLTFDocumentExtension, override any methods y
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`執行時檔案載入與儲存 <../tutorials/io/runtime_file_loading_and_saving>`
+- :doc:`Runtime file loading and saving <../tutorials/io/runtime_file_loading_and_saving>`
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -91,8 +91,8 @@ To use, make a new class extending GLTFDocumentExtension, override any methods y
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_GLTFDocumentExtension_private_method__convert_scene_node:
 
@@ -216,7 +216,7 @@ Runs when generating a Godot scene node from a GLTFNode. The returned node will 
 
 :ref:`String<class_String>` **_get_image_file_extension**\ (\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__get_image_file_extension>`
 
-傳回用於將映像資料儲存到的檔案副檔名，例如\ ``".png"``\ 。如果已定義，則使用此副檔名時處理圖像，並且圖像保存到單獨的檔案中，圖像位元組將被複製到具有此副檔名的檔案中。如果設定了此選項，則應該有一個\ :ref:`ResourceImporter<class_ResourceImporter>` 類別能夠匯入該檔案。如果未定義或為空時，Godot 會將影像儲存為 PNG 檔案。
+Returns the file extension to use for saving image data into, for example, ``".png"``. If defined, when this extension is used to handle images, and the images are saved to a separate file, the image bytes will be copied to a file with this extension. If this is set, there should be a :ref:`ResourceImporter<class_ResourceImporter>` class able to import the file. If not defined or empty, Godot will save the image into a PNG file.
 
 .. rst-class:: classref-item-separator
 
@@ -228,9 +228,9 @@ Runs when generating a Godot scene node from a GLTFNode. The returned node will 
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_saveable_image_formats**\ (\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__get_saveable_image_formats>`
 
-匯出過程的一部分。此方法在 :ref:`_convert_scene_node()<class_GLTFDocumentExtension_private_method__convert_scene_node>` 之後和 :ref:`_export_node()<class_GLTFDocumentExtension_private_method__export_node>` 之前執行。
+Part of the export process. This method is run after :ref:`_convert_scene_node()<class_GLTFDocumentExtension_private_method__convert_scene_node>` and before :ref:`_export_node()<class_GLTFDocumentExtension_private_method__export_node>`.
 
-傳回可以由此擴充保存/匯出的影像格式的陣列。只有當 :ref:`GLTFDocument<class_GLTFDocument>` 的 :ref:`GLTFDocument.image_format<class_GLTFDocument_property_image_format>` 在此陣列中時，才會選擇此擴充功能作為影像匯出器。如果選擇此 **GLTFDocumentExtension** 作為映像匯出器，則接下來將執行 :ref:`_save_image_at_path()<class_GLTFDocumentExtension_private_method__save_image_at_path>` 或 :ref:`_serialize_image_to_bytes()<class_GLTFDocumentExtension_private_method__serialize_image_to_bytes>` 方法之一，否則接下來將執行 :ref:`_export_node()<class_GLTFDocumentExtension_private_method__export_node>`\ 。如果格式名稱包含 ``"Lossy"``\ ，將顯示有損品質滑桿。
+Returns an array of the image formats that can be saved/exported by this extension. This extension will only be selected as the image exporter if the :ref:`GLTFDocument<class_GLTFDocument>`'s :ref:`GLTFDocument.image_format<class_GLTFDocument_property_image_format>` is in this array. If this **GLTFDocumentExtension** is selected as the image exporter, one of the :ref:`_save_image_at_path()<class_GLTFDocumentExtension_private_method__save_image_at_path>` or :ref:`_serialize_image_to_bytes()<class_GLTFDocumentExtension_private_method__serialize_image_to_bytes>` methods will run next, otherwise :ref:`_export_node()<class_GLTFDocumentExtension_private_method__export_node>` will run next. If the format name contains ``"Lossy"``, the lossy quality slider will be displayed.
 
 .. rst-class:: classref-item-separator
 
@@ -256,9 +256,9 @@ Returns an array of the glTF extensions supported by this GLTFDocumentExtension 
 
 :ref:`Error<enum_@GlobalScope_Error>` **_import_node**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, gltf_node\: :ref:`GLTFNode<class_GLTFNode>`, json\: :ref:`Dictionary<class_Dictionary>`, node\: :ref:`Node<class_Node>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__import_node>`
 
-匯入過程的一部分。該方法在 :ref:`_import_post_parse()<class_GLTFDocumentExtension_private_method__import_post_parse>` 之後 :ref:`_import_post()<class_GLTFDocumentExtension_private_method__import_post>` 之前運作。
+Part of the import process. This method is run after :ref:`_generate_scene_node()<class_GLTFDocumentExtension_private_method__generate_scene_node>` and before :ref:`_import_post()<class_GLTFDocumentExtension_private_method__import_post>`.
 
-該方法可用於對每個生成的 Godot 場景節點進行修改。
+This method can be used to make modifications to each of the generated Godot scene nodes.
 
 .. rst-class:: classref-item-separator
 
@@ -286,9 +286,9 @@ In many cases, ``partial_paths`` will contain the start of a path, allowing the 
 
 :ref:`Error<enum_@GlobalScope_Error>` **_import_post**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, root\: :ref:`Node<class_Node>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__import_post>`
 
-匯入過程的一部分。該方法在最後運作，在匯入過程的所有其他部分之後。
+Part of the import process. This method is run last, after all other parts of the import process.
 
-該方法可用於修改匯入過程生成的最終 Godot 場景。
+This method can be used to modify the final Godot scene generated by the import process.
 
 .. rst-class:: classref-item-separator
 
@@ -356,9 +356,9 @@ Runs when parsing image data from a glTF file. The data could be sourced from a 
 
 :ref:`Error<enum_@GlobalScope_Error>` **_parse_node_extensions**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, gltf_node\: :ref:`GLTFNode<class_GLTFNode>`, extensions\: :ref:`Dictionary<class_Dictionary>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__parse_node_extensions>`
 
-匯入過程的一部分。該方法在 :ref:`_get_supported_extensions()<class_GLTFDocumentExtension_private_method__get_supported_extensions>` 之後和 :ref:`_generate_scene_node()<class_GLTFDocumentExtension_private_method__generate_scene_node>` 之前運作。
+Part of the import process. This method is run after :ref:`_get_supported_extensions()<class_GLTFDocumentExtension_private_method__get_supported_extensions>` and before :ref:`_import_post_parse()<class_GLTFDocumentExtension_private_method__import_post_parse>`.
 
-在解析 GLTFNode 的節點擴充時運作。該方法可用於將擴充 JSON 資料，處理成可被 :ref:`_generate_scene_node()<class_GLTFDocumentExtension_private_method__generate_scene_node>` 使用的格式。該返回值應該是 :ref:`Error<enum_@GlobalScope_Error>` 列舉中的一個成員。
+Runs when parsing the node extensions of a GLTFNode. This method can be used to process the extension JSON data into a format that can be used by :ref:`_generate_scene_node()<class_GLTFDocumentExtension_private_method__generate_scene_node>`. The return value should be a member of the :ref:`Error<enum_@GlobalScope_Error>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -414,16 +414,16 @@ This method must set the image MIME type in the ``image_dict`` with the ``"mimeT
 
 :ref:`Error<enum_@GlobalScope_Error>` **_serialize_texture_json**\ (\ state\: :ref:`GLTFState<class_GLTFState>`, texture_json\: :ref:`Dictionary<class_Dictionary>`, gltf_texture\: :ref:`GLTFTexture<class_GLTFTexture>`, image_format\: :ref:`String<class_String>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__serialize_texture_json>`
 
-匯出過程的一部分。此方法在\ :ref:`_save_image_at_path()<class_GLTFDocumentExtension_private_method__save_image_at_path>` 或\ :ref:`_serialize_image_to_bytes()<class_GLTFDocumentExtension_private_method__serialize_image_to_bytes>` 之後、\ :ref:`_export_node()<class_GLTFDocumentExtension_private_method__export_node>` 之前執行下列情況，此方法僅在下列情況下執行下列情況。 ：選擇 **GLTFDocumentExtension** 作為影像匯出器。
+Part of the export process. This method is run after :ref:`_save_image_at_path()<class_GLTFDocumentExtension_private_method__save_image_at_path>` or :ref:`_serialize_image_to_bytes()<class_GLTFDocumentExtension_private_method__serialize_image_to_bytes>`, and before :ref:`_export_node()<class_GLTFDocumentExtension_private_method__export_node>`. Note that this method only runs when this **GLTFDocumentExtension** is selected as the image exporter.
 
-此方法可用於透過編輯 ``texture_json`` 設定紋理 JSON 的擴充。也必須使用 :ref:`GLTFState.add_used_extension()<class_GLTFState_method_add_used_extension>` 將擴充新增為已用擴充，如果您不提供後備，請務必將 ``required`` 設為 ``true``\ 。
+This method can be used to set up the extensions for the texture JSON by editing ``texture_json``. The extension must also be added as used extension with :ref:`GLTFState.add_used_extension()<class_GLTFState_method_add_used_extension>`, be sure to set ``required`` to ``true`` if you are not providing a fallback.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

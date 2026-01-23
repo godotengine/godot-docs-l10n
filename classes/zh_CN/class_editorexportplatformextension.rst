@@ -5,23 +5,23 @@
 EditorExportPlatformExtension
 =============================
 
-**继承：** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-自定义 :ref:`EditorExportPlatform<class_EditorExportPlatform>` 实现（插件）的基类。
+Base class for custom :ref:`EditorExportPlatform<class_EditorExportPlatform>` implementations (plugins).
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-外部 :ref:`EditorExportPlatform<class_EditorExportPlatform>` 实现应当继承自该类。
+External :ref:`EditorExportPlatform<class_EditorExportPlatform>` implementations should inherit from this class.
 
-要使用 :ref:`EditorExportPlatform<class_EditorExportPlatform>`\ ，请先使用 :ref:`EditorPlugin.add_export_platform()<class_EditorPlugin_method_add_export_platform>` 方法注册。
+To use :ref:`EditorExportPlatform<class_EditorExportPlatform>`, register it using the :ref:`EditorPlugin.add_export_platform()<class_EditorPlugin_method_add_export_platform>` method first.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -104,8 +104,8 @@ EditorExportPlatformExtension
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_EditorExportPlatformExtension_private_method__can_export:
 
@@ -127,7 +127,7 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 |void| **_cleanup**\ (\ ) |virtual| :ref:`🔗<class_EditorExportPlatformExtension_private_method__cleanup>`
 
-注销平台前编辑器会调用该方法。
+Called by the editor before platform is unregistered.
 
 .. rst-class:: classref-item-separator
 
@@ -139,9 +139,9 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`Error<enum_@GlobalScope_Error>` **_export_pack**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`, path\: :ref:`String<class_String>`, flags\: |bitfield|\[:ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>`\]\ ) |virtual| :ref:`🔗<class_EditorExportPlatformExtension_private_method__export_pack>`
 
-使用 ``preset`` 预设在 ``path`` 路径处创建 PCK 包。
+Creates a PCK archive at ``path`` for the specified ``preset``.
 
-在导出对话框中按下“导出 PCK/ZIP”按钮，禁用“导出为补丁”，并选择 PCK 作为文件类型时，将调用该方法。
+This method is called when "Export PCK/ZIP" button is pressed in the export dialog, with "Export as Patch" disabled, and PCK is selected as a file type.
 
 .. rst-class:: classref-item-separator
 
@@ -153,11 +153,11 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`Error<enum_@GlobalScope_Error>` **_export_pack_patch**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`, path\: :ref:`String<class_String>`, patches\: :ref:`PackedStringArray<class_PackedStringArray>`, flags\: |bitfield|\[:ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>`\]\ ) |virtual| :ref:`🔗<class_EditorExportPlatformExtension_private_method__export_pack_patch>`
 
-使用 ``preset`` 预设在路径 ``path`` 处创建补丁 PCK 归档，包含自上次补丁以来发生更改的文件。
+Creates a patch PCK archive at ``path`` for the specified ``preset``, containing only the files that have changed since the last patch.
 
-在导出对话框中按下“导出 PCK/ZIP”按钮，启用“导出为补丁”，并选择 PCK 作为文件类型时，将调用该方法。
+This method is called when "Export PCK/ZIP" button is pressed in the export dialog, with "Export as Patch" enabled, and PCK is selected as a file type.
 
-\ **注意：**\ ``patches`` 中的补丁在调用该方法时已加载 ，仅作为上下文提供。为空时将加载导出预设中定义的补丁。
+\ **Note:** The patches provided in ``patches`` have already been loaded when this method is called and are merely provided as context. When empty the patches defined in the export preset have been loaded instead.
 
 .. rst-class:: classref-item-separator
 
@@ -169,11 +169,11 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`Error<enum_@GlobalScope_Error>` **_export_project**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`, path\: :ref:`String<class_String>`, flags\: |bitfield|\[:ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>`\]\ ) |virtual| |required| :ref:`🔗<class_EditorExportPlatformExtension_private_method__export_project>`
 
-使用 ``preset`` 预设在 ``path`` 路径处创建完整的项目。
+Creates a full project at ``path`` for the specified ``preset``.
 
-在导出对话框中按下“导出”按钮时，将调用该方法。
+This method is called when "Export" button is pressed in the export dialog.
 
-该方法的实现可以调用 :ref:`EditorExportPlatform.save_pack()<class_EditorExportPlatform_method_save_pack>` 或 :ref:`EditorExportPlatform.save_zip()<class_EditorExportPlatform_method_save_zip>` 来使用默认的 PCK/ZIP 导出过程，或者调用 :ref:`EditorExportPlatform.export_project_files()<class_EditorExportPlatform_method_export_project_files>` 并实现自定义回调来处理每个导出的文件。
+This method implementation can call :ref:`EditorExportPlatform.save_pack()<class_EditorExportPlatform_method_save_pack>` or :ref:`EditorExportPlatform.save_zip()<class_EditorExportPlatform_method_save_zip>` to use default PCK/ZIP export process, or calls :ref:`EditorExportPlatform.export_project_files()<class_EditorExportPlatform_method_export_project_files>` and implement custom callback for processing each exported file.
 
 .. rst-class:: classref-item-separator
 
@@ -185,9 +185,9 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`Error<enum_@GlobalScope_Error>` **_export_zip**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`, path\: :ref:`String<class_String>`, flags\: |bitfield|\[:ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>`\]\ ) |virtual| :ref:`🔗<class_EditorExportPlatformExtension_private_method__export_zip>`
 
-使用 ``preset`` 预设在 ``path`` 路径处创建 ZIP 归档。
+Create a ZIP archive at ``path`` for the specified ``preset``.
 
-在导出对话框中按下“导出 PCK/ZIP”按钮，禁用“导出为补丁”，并选择 ZIP 作为文件类型时，将调用该方法。
+This method is called when "Export PCK/ZIP" button is pressed in the export dialog, with "Export as Patch" disabled, and ZIP is selected as a file type.
 
 .. rst-class:: classref-item-separator
 
@@ -199,11 +199,11 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`Error<enum_@GlobalScope_Error>` **_export_zip_patch**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`, path\: :ref:`String<class_String>`, patches\: :ref:`PackedStringArray<class_PackedStringArray>`, flags\: |bitfield|\[:ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>`\]\ ) |virtual| :ref:`🔗<class_EditorExportPlatformExtension_private_method__export_zip_patch>`
 
-使用 ``preset`` 预设在 ``path`` 路径处创建 ZIP 归档，仅包含自上次补丁以来发生更改的文件。
+Create a ZIP archive at ``path`` for the specified ``preset``, containing only the files that have changed since the last patch.
 
-在导出对话框中按下“导出 PCK/ZIP”按钮，启用“导出为补丁”，并选择 ZIP 作为文件类型时，将调用该方法。
+This method is called when "Export PCK/ZIP" button is pressed in the export dialog, with "Export as Patch" enabled, and ZIP is selected as a file type.
 
-\ **注意：**\ ``patches`` 中的补丁在调用该方法时已加载 ，仅作为上下文提供。为空时将加载导出预设中定义的补丁。
+\ **Note:** The patches provided in ``patches`` have already been loaded when this method is called and are merely provided as context. When empty the patches defined in the export preset have been loaded instead.
 
 .. rst-class:: classref-item-separator
 
@@ -215,7 +215,7 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_binary_extensions**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`\ ) |virtual| |required| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_binary_extensions>`
 
-返回完整项目导出所支持的二进制文件扩展名数组。
+Returns array of supported binary extensions for the full project export.
 
 .. rst-class:: classref-item-separator
 
@@ -227,7 +227,7 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`String<class_String>` **_get_debug_protocol**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_debug_protocol>`
 
-返回用于远程调试的协议。默认实现返回 ``tcp://``\ 。
+Returns protocol used for remote debugging. Default implementation return ``tcp://``.
 
 .. rst-class:: classref-item-separator
 
@@ -239,7 +239,7 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`String<class_String>` **_get_device_architecture**\ (\ device\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_device_architecture>`
 
-返回一键部署的设备架构。
+Returns device architecture for one-click deploy.
 
 .. rst-class:: classref-item-separator
 
@@ -251,7 +251,7 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`bool<class_bool>` **_get_export_option_visibility**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, option\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_export_option_visibility>`
 
-验证 ``option`` 并返回指定 ``preset`` 的可见性。默认实现为所有选项都返回 ``true``\ 。
+Validates ``option`` and returns visibility for the specified ``preset``. Default implementation return ``true`` for all options.
 
 .. rst-class:: classref-item-separator
 
@@ -263,7 +263,7 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`String<class_String>` **_get_export_option_warning**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, option\: :ref:`StringName<class_StringName>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_export_option_warning>`
 
-验证 ``option`` 并返回指定 ``preset`` 的警告消息。默认实现为所有选项都返回空字符串。
+Validates ``option`` and returns warning message for the specified ``preset``. Default implementation return empty string for all options.
 
 .. rst-class:: classref-item-separator
 
@@ -275,9 +275,9 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_get_export_options**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_export_options>`
 
-返回属性列表，类型是元素为字典的 :ref:`Array<class_Array>`\ 。每个 :ref:`Dictionary<class_Dictionary>` 都必须至少包含 ``name: StringName`` 和 ``type: Variant.Type`` 两个条目。
+Returns a property list, as an :ref:`Array<class_Array>` of dictionaries. Each :ref:`Dictionary<class_Dictionary>` must at least contain the ``name: StringName`` and ``type: Variant.Type`` entries.
 
-另外还支持如下字段：
+Additionally, the following keys are supported:
 
 - ``hint: PropertyHint``\ 
 
@@ -287,13 +287,13 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 - ``class_name: StringName``\ 
 
-- ``default_value: Variant``\ ，属性的默认值。
+- ``default_value: Variant``, default value of the property.
 
-- ``update_visibility: bool``\ ，如果设为 ``true``\ ，则会在该属性发生更改时为每个属性都调用 :ref:`_get_export_option_visibility()<class_EditorExportPlatformExtension_private_method__get_export_option_visibility>`\ 。
+- ``update_visibility: bool``, if set to ``true``, :ref:`_get_export_option_visibility()<class_EditorExportPlatformExtension_private_method__get_export_option_visibility>` is called for each property when this property is changed.
 
-- ``required: bool``\ ，如果设为 ``true``\ ，则该属性的警告是关键的，解决后才能够实现导出。该值是 :ref:`_has_valid_export_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_export_configuration>` 实现的提示，引擎不直接使用。
+- ``required: bool``, if set to ``true``, this property warnings are critical, and should be resolved to make export possible. This value is a hint for the :ref:`_has_valid_export_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_export_configuration>` implementation, and not used by the engine directly.
 
-另见 :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`\ 。
+See also :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`.
 
 .. rst-class:: classref-item-separator
 
@@ -305,7 +305,7 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`Texture2D<class_Texture2D>` **_get_logo**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_logo>`
 
-返回导出对话框中显示的平台徽标，该徽标应为 32×32 像素，并根据当前编辑器的缩放进行调整（见 :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`\ ）。
+Returns the platform logo displayed in the export dialog. The logo should be 32×32 pixels, adjusted for the current editor scale (see :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`).
 
 .. rst-class:: classref-item-separator
 
@@ -317,7 +317,7 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`String<class_String>` **_get_name**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_name>`
 
-返回导出平台的名称。
+Returns export platform name.
 
 .. rst-class:: classref-item-separator
 
@@ -329,7 +329,7 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`Texture2D<class_Texture2D>` **_get_option_icon**\ (\ device\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_option_icon>`
 
-返回一键部署菜单中指定 ``device`` 设备的条目图标。该图标应为 16×16 像素，并根据当前编辑器的缩放进行调整（见 :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`\ ）。
+Returns the item icon for the specified ``device`` in the one-click deploy menu. The icon should be 16×16 pixels, adjusted for the current editor scale (see :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`).
 
 .. rst-class:: classref-item-separator
 
@@ -341,7 +341,7 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`String<class_String>` **_get_option_label**\ (\ device\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_option_label>`
 
-返回 ``device`` 设备的一键部署菜单项标签。
+Returns one-click deploy menu item label for the specified ``device``.
 
 .. rst-class:: classref-item-separator
 
@@ -353,7 +353,7 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`String<class_String>` **_get_option_tooltip**\ (\ device\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_option_tooltip>`
 
-返回 ``device`` 设备的一键部署菜单项工具提示。
+Returns one-click deploy menu item tooltip for the specified ``device``.
 
 .. rst-class:: classref-item-separator
 
@@ -365,7 +365,7 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`int<class_int>` **_get_options_count**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_options_count>`
 
-返回一键部署菜单中可用的设备（或其他选项）的数量。
+Returns the number of devices (or other options) available in the one-click deploy menu.
 
 .. rst-class:: classref-item-separator
 
@@ -377,7 +377,7 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`String<class_String>` **_get_options_tooltip**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_options_tooltip>`
 
-返回一键部署菜单按钮的工具提示。
+Returns tooltip of the one-click deploy menu button.
 
 .. rst-class:: classref-item-separator
 
@@ -389,7 +389,7 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`String<class_String>` **_get_os_name**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_os_name>`
 
-返回目标操作系统的名称。
+Returns target OS name.
 
 .. rst-class:: classref-item-separator
 
@@ -401,7 +401,7 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_platform_features**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_platform_features>`
 
-返回平台特定功能的数组。
+Returns array of platform specific features.
 
 .. rst-class:: classref-item-separator
 
@@ -413,7 +413,7 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_preset_features**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`\ ) |virtual| |required| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_preset_features>`
 
-返回 ``preset`` 预设对应的平台特定功能的数组。
+Returns array of platform specific features for the specified ``preset``.
 
 .. rst-class:: classref-item-separator
 
@@ -425,7 +425,7 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`Texture2D<class_Texture2D>` **_get_run_icon**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__get_run_icon>`
 
-返回一键部署菜单按钮的图标。该图标应为 16×16 像素，并根据当前编辑器缩放进行调整（见 :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`\ ）。
+Returns the icon of the one-click deploy menu button. The icon should be 16×16 pixels, adjusted for the current editor scale (see :ref:`EditorInterface.get_editor_scale()<class_EditorInterface_method_get_editor_scale>`).
 
 .. rst-class:: classref-item-separator
 
@@ -437,7 +437,7 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`bool<class_bool>` **_has_valid_export_configuration**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`\ ) |virtual| |required| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__has_valid_export_configuration>`
 
-如果导出配置有效，则返回 ``true``\ 。
+Returns ``true`` if export configuration is valid.
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 :ref:`bool<class_bool>` **_has_valid_project_configuration**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`\ ) |virtual| |required| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__has_valid_project_configuration>`
 
-如果项目配置有效，则返回 ``true``\ 。
+Returns ``true`` if project configuration is valid.
 
 .. rst-class:: classref-item-separator
 
@@ -473,7 +473,7 @@ Initializes the plugin. Called by the editor when platform is registered.
 
 :ref:`bool<class_bool>` **_is_executable**\ (\ path\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__is_executable>`
 
-如果指定的文件是目标平台上的有效可执行文件（原生可执行文件或脚本），则返回 ``true``\ 。
+Returns ``true`` if specified file is a valid executable (native executable or script) for the target platform.
 
 .. rst-class:: classref-item-separator
 
@@ -485,7 +485,7 @@ Initializes the plugin. Called by the editor when platform is registered.
 
 :ref:`bool<class_bool>` **_poll_export**\ (\ ) |virtual| :ref:`🔗<class_EditorExportPlatformExtension_private_method__poll_export>`
 
-如果一键部署选项发生更改，编辑器界面需要更新，则返回 ``true``\ 。
+Returns ``true`` if one-click deploy options are changed and editor interface should be updated.
 
 .. rst-class:: classref-item-separator
 
@@ -497,9 +497,9 @@ Initializes the plugin. Called by the editor when platform is registered.
 
 :ref:`Error<enum_@GlobalScope_Error>` **_run**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, device\: :ref:`int<class_int>`, debug_flags\: |bitfield|\[:ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>`\]\ ) |virtual| :ref:`🔗<class_EditorExportPlatformExtension_private_method__run>`
 
-选择 ``device`` 一键部署菜单选项时调用该方法。
+This method is called when ``device`` one-click deploy menu option is selected.
 
-实现时应当将项目导出到临时位置，然后将其上传至 ``device`` 设备并运行，也可以执行与该菜单项相关的其他动作。
+Implementation should export project to a temporary location, upload and run it on the specific ``device``, or perform another action associated with the menu item.
 
 .. rst-class:: classref-item-separator
 
@@ -511,7 +511,7 @@ Initializes the plugin. Called by the editor when platform is registered.
 
 :ref:`bool<class_bool>` **_should_update_export_options**\ (\ ) |virtual| :ref:`🔗<class_EditorExportPlatformExtension_private_method__should_update_export_options>`
 
-如果导出选项列表发生了更改，应当更新预设，则返回 ``true``\ 。
+Returns ``true`` if export options list is changed and presets should be updated.
 
 .. rst-class:: classref-item-separator
 
@@ -523,7 +523,7 @@ Initializes the plugin. Called by the editor when platform is registered.
 
 :ref:`String<class_String>` **get_config_error**\ (\ ) |const| :ref:`🔗<class_EditorExportPlatformExtension_method_get_config_error>`
 
-返回当前配置的错误消息文本。该方法只应在 :ref:`_can_export()<class_EditorExportPlatformExtension_private_method__can_export>`\ 、\ :ref:`_has_valid_export_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_export_configuration>`\ 、\ :ref:`_has_valid_project_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_project_configuration>` 的实现中调用。
+Returns current configuration error message text. This method should be called only from the :ref:`_can_export()<class_EditorExportPlatformExtension_private_method__can_export>`, :ref:`_has_valid_export_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_export_configuration>`, or :ref:`_has_valid_project_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_project_configuration>` implementations.
 
 .. rst-class:: classref-item-separator
 
@@ -535,7 +535,7 @@ Initializes the plugin. Called by the editor when platform is registered.
 
 :ref:`bool<class_bool>` **get_config_missing_templates**\ (\ ) |const| :ref:`🔗<class_EditorExportPlatformExtension_method_get_config_missing_templates>`
 
-如果当前配置缺失导出模板，则返回 ``true``\ 。该方法只应在 :ref:`_can_export()<class_EditorExportPlatformExtension_private_method__can_export>`\ 、\ :ref:`_has_valid_export_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_export_configuration>`\ 、\ :ref:`_has_valid_project_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_project_configuration>` 的实现中调用。
+Returns ``true`` is export templates are missing from the current configuration. This method should be called only from the :ref:`_can_export()<class_EditorExportPlatformExtension_private_method__can_export>`, :ref:`_has_valid_export_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_export_configuration>`, or :ref:`_has_valid_project_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_project_configuration>` implementations.
 
 .. rst-class:: classref-item-separator
 
@@ -547,7 +547,7 @@ Initializes the plugin. Called by the editor when platform is registered.
 
 |void| **set_config_error**\ (\ error_text\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_EditorExportPlatformExtension_method_set_config_error>`
 
-设置当前配置的错误消息文本。该方法只应在 :ref:`_can_export()<class_EditorExportPlatformExtension_private_method__can_export>`\ 、\ :ref:`_has_valid_export_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_export_configuration>`\ 、\ :ref:`_has_valid_project_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_project_configuration>` 的实现中调用。
+Sets current configuration error message text. This method should be called only from the :ref:`_can_export()<class_EditorExportPlatformExtension_private_method__can_export>`, :ref:`_has_valid_export_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_export_configuration>`, or :ref:`_has_valid_project_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_project_configuration>` implementations.
 
 .. rst-class:: classref-item-separator
 
@@ -559,14 +559,14 @@ Initializes the plugin. Called by the editor when platform is registered.
 
 |void| **set_config_missing_templates**\ (\ missing_templates\: :ref:`bool<class_bool>`\ ) |const| :ref:`🔗<class_EditorExportPlatformExtension_method_set_config_missing_templates>`
 
-设为 ``true`` 表示当前配置缺失导出模板 。该方法只应在 :ref:`_can_export()<class_EditorExportPlatformExtension_private_method__can_export>`\ 、\ :ref:`_has_valid_export_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_export_configuration>`\ 、\ :ref:`_has_valid_project_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_project_configuration>` 的实现中调用。
+Set to ``true`` is export templates are missing from the current configuration. This method should be called only from the :ref:`_can_export()<class_EditorExportPlatformExtension_private_method__can_export>`, :ref:`_has_valid_export_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_export_configuration>`, or :ref:`_has_valid_project_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_project_configuration>` implementations.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

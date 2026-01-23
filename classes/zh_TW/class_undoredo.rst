@@ -5,14 +5,14 @@
 UndoRedo
 ========
 
-**繼承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-為實作撤銷和重做操作提供高階介面。
+Provides a high-level interface for implementing undo and redo operations.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 UndoRedo works by registering methods and property changes inside "actions". You can create an action, then provide ways to do and undo this action using function calls and property changes, then commit the action.
 
@@ -117,8 +117,8 @@ If you are registering multiple properties/method which depend on one another, b
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -129,8 +129,8 @@ If you are registering multiple properties/method which depend on one another, b
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -185,8 +185,8 @@ If you are registering multiple properties/method which depend on one another, b
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_UndoRedo_signal_version_changed:
 
@@ -194,7 +194,7 @@ If you are registering multiple properties/method which depend on one another, b
 
 **version_changed**\ (\ ) :ref:`🔗<class_UndoRedo_signal_version_changed>`
 
-當 :ref:`undo()<class_UndoRedo_method_undo>` 或 :ref:`redo()<class_UndoRedo_method_redo>` 被呼叫時呼叫。
+Called when :ref:`undo()<class_UndoRedo_method_undo>` or :ref:`redo()<class_UndoRedo_method_redo>` was called.
 
 .. rst-class:: classref-section-separator
 
@@ -202,8 +202,8 @@ If you are registering multiple properties/method which depend on one another, b
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_UndoRedo_MergeMode:
 
@@ -217,7 +217,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 :ref:`MergeMode<enum_UndoRedo_MergeMode>` **MERGE_DISABLE** = ``0``
 
-使“do”/“undo”操作保持在單獨的動作中。
+Makes "do"/"undo" operations stay in separate actions.
 
 .. _class_UndoRedo_constant_MERGE_ENDS:
 
@@ -241,8 +241,8 @@ Merges this action with the previous one if they have the same name.
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_UndoRedo_property_max_steps:
 
@@ -263,8 +263,8 @@ The maximum number of steps that can be stored in the undo/redo history. If the 
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_UndoRedo_method_add_do_method:
 
@@ -272,7 +272,7 @@ The maximum number of steps that can be stored in the undo/redo history. If the 
 
 |void| **add_do_method**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_UndoRedo_method_add_do_method>`
 
-註冊 :ref:`Callable<class_Callable>`\ ，會在提交動作時呼叫。
+Register a :ref:`Callable<class_Callable>` that will be called when the action is committed.
 
 .. rst-class:: classref-item-separator
 
@@ -284,7 +284,7 @@ The maximum number of steps that can be stored in the undo/redo history. If the 
 
 |void| **add_do_property**\ (\ object\: :ref:`Object<class_Object>`, property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_UndoRedo_method_add_do_property>`
 
-註冊 ``property``\ ，會在提交動作時將其值更改為 ``value``\ 。
+Register a ``property`` that would change its value to ``value`` when the action is committed.
 
 .. rst-class:: classref-item-separator
 
@@ -319,7 +319,7 @@ When the "do" history is deleted, if the object is a :ref:`RefCounted<class_RefC
 
 |void| **add_undo_method**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_UndoRedo_method_add_undo_method>`
 
-註冊 :ref:`Callable<class_Callable>`\ ，會在撤銷動作時呼叫。
+Register a :ref:`Callable<class_Callable>` that will be called when the action is undone.
 
 .. rst-class:: classref-item-separator
 
@@ -331,7 +331,7 @@ When the "do" history is deleted, if the object is a :ref:`RefCounted<class_RefC
 
 |void| **add_undo_property**\ (\ object\: :ref:`Object<class_Object>`, property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_UndoRedo_method_add_undo_property>`
 
-註冊 ``property``\ ，會在撤銷動作時將其值更改為 ``value``\ 。
+Register a ``property`` that would change its value to ``value`` when the action is undone.
 
 .. rst-class:: classref-item-separator
 
@@ -366,9 +366,9 @@ When the "undo" history is deleted, if the object is a :ref:`RefCounted<class_Re
 
 |void| **clear_history**\ (\ increase_version\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_UndoRedo_method_clear_history>`
 
-清除撤銷/重做歷史和相關的引用。
+Clear the undo/redo history and associated references.
 
-將 ``false`` 傳遞給 ``increase_version`` 將防止在清除歷史記錄時增加版本號。
+Passing ``false`` to ``increase_version`` will prevent the version number from increasing when the history is cleared.
 
 .. rst-class:: classref-item-separator
 
@@ -380,7 +380,7 @@ When the "undo" history is deleted, if the object is a :ref:`RefCounted<class_Re
 
 |void| **commit_action**\ (\ execute\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_UndoRedo_method_commit_action>`
 
-提交動作。如果 ``execute`` 為 ``true``\ （預設情況），則會在呼叫此函式時呼叫/設定所有“執行（do）”方法/屬性。
+Commit the action. If ``execute`` is ``true`` (which it is by default), all "do" methods/properties are called/set when this function is called.
 
 .. rst-class:: classref-item-separator
 
@@ -408,7 +408,7 @@ The way undo operation are ordered in actions is dictated by ``backward_undo_ops
 
 |void| **end_force_keep_in_merge_ends**\ (\ ) :ref:`🔗<class_UndoRedo_method_end_force_keep_in_merge_ends>`
 
-停止將操作標記為要處理，即使該動作在 :ref:`MERGE_ENDS<class_UndoRedo_constant_MERGE_ENDS>` 模式下與另一個動作合併。請參閱 :ref:`start_force_keep_in_merge_ends()<class_UndoRedo_method_start_force_keep_in_merge_ends>`\ 。
+Stops marking operations as to be processed even if the action gets merged with another in the :ref:`MERGE_ENDS<class_UndoRedo_constant_MERGE_ENDS>` mode. See :ref:`start_force_keep_in_merge_ends()<class_UndoRedo_method_start_force_keep_in_merge_ends>`.
 
 .. rst-class:: classref-item-separator
 
@@ -420,7 +420,7 @@ The way undo operation are ordered in actions is dictated by ``backward_undo_ops
 
 :ref:`String<class_String>` **get_action_name**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_UndoRedo_method_get_action_name>`
 
-根據索引獲取動作名稱。
+Gets the action name from its index.
 
 .. rst-class:: classref-item-separator
 
@@ -432,7 +432,7 @@ The way undo operation are ordered in actions is dictated by ``backward_undo_ops
 
 :ref:`int<class_int>` **get_current_action**\ (\ ) :ref:`🔗<class_UndoRedo_method_get_current_action>`
 
-獲取目前動作的索引。
+Gets the index of the current action.
 
 .. rst-class:: classref-item-separator
 
@@ -444,7 +444,7 @@ The way undo operation are ordered in actions is dictated by ``backward_undo_ops
 
 :ref:`String<class_String>` **get_current_action_name**\ (\ ) |const| :ref:`🔗<class_UndoRedo_method_get_current_action_name>`
 
-獲取目前動作的名稱，等價於 ``get_action_name(get_current_action())``\ 。
+Gets the name of the current action, equivalent to ``get_action_name(get_current_action())``.
 
 .. rst-class:: classref-item-separator
 
@@ -456,7 +456,7 @@ The way undo operation are ordered in actions is dictated by ``backward_undo_ops
 
 :ref:`int<class_int>` **get_history_count**\ (\ ) :ref:`🔗<class_UndoRedo_method_get_history_count>`
 
-返回歷史中有多少元素。
+Returns how many elements are in the history.
 
 .. rst-class:: classref-item-separator
 
@@ -468,9 +468,9 @@ The way undo operation are ordered in actions is dictated by ``backward_undo_ops
 
 :ref:`int<class_int>` **get_version**\ (\ ) |const| :ref:`🔗<class_UndoRedo_method_get_version>`
 
-獲取版本。每次提交一個新的操作，\ **UndoRedo** 的版本號都會自動增加。
+Gets the version. Every time a new action is committed, the **UndoRedo**'s version number is increased automatically.
 
-這主要用於檢查保存的版本是否發生了更改。
+This is useful mostly to check if something changed from a saved version.
 
 .. rst-class:: classref-item-separator
 
@@ -482,7 +482,7 @@ The way undo operation are ordered in actions is dictated by ``backward_undo_ops
 
 :ref:`bool<class_bool>` **has_redo**\ (\ ) |const| :ref:`🔗<class_UndoRedo_method_has_redo>`
 
-有“重做”動作可用時返回 ``true``\ 。
+Returns ``true`` if a "redo" action is available.
 
 .. rst-class:: classref-item-separator
 
@@ -494,7 +494,7 @@ The way undo operation are ordered in actions is dictated by ``backward_undo_ops
 
 :ref:`bool<class_bool>` **has_undo**\ (\ ) |const| :ref:`🔗<class_UndoRedo_method_has_undo>`
 
-有“撤銷”動作可用時返回 ``true``\ 。
+Returns ``true`` if an "undo" action is available.
 
 .. rst-class:: classref-item-separator
 
@@ -506,7 +506,7 @@ The way undo operation are ordered in actions is dictated by ``backward_undo_ops
 
 :ref:`bool<class_bool>` **is_committing_action**\ (\ ) |const| :ref:`🔗<class_UndoRedo_method_is_committing_action>`
 
-如果 **UndoRedo** 目前正在提交動作，即運作其“do”的方法或屬性變化，則返回 ``true``\ （請參閱 :ref:`commit_action()<class_UndoRedo_method_commit_action>`\ ）。
+Returns ``true`` if the **UndoRedo** is currently committing the action, i.e. running its "do" method or property change (see :ref:`commit_action()<class_UndoRedo_method_commit_action>`).
 
 .. rst-class:: classref-item-separator
 
@@ -518,7 +518,7 @@ The way undo operation are ordered in actions is dictated by ``backward_undo_ops
 
 :ref:`bool<class_bool>` **redo**\ (\ ) :ref:`🔗<class_UndoRedo_method_redo>`
 
-重做上一個動作。
+Redo the last action.
 
 .. rst-class:: classref-item-separator
 
@@ -530,7 +530,7 @@ The way undo operation are ordered in actions is dictated by ``backward_undo_ops
 
 |void| **start_force_keep_in_merge_ends**\ (\ ) :ref:`🔗<class_UndoRedo_method_start_force_keep_in_merge_ends>`
 
-標記要處理的下一個“執行”和“撤銷”操作，即使該動作在 :ref:`MERGE_ENDS<class_UndoRedo_constant_MERGE_ENDS>` 模式下與另一個動作合併。使用 :ref:`end_force_keep_in_merge_ends()<class_UndoRedo_method_end_force_keep_in_merge_ends>` 返回到正常操作。
+Marks the next "do" and "undo" operations to be processed even if the action gets merged with another in the :ref:`MERGE_ENDS<class_UndoRedo_constant_MERGE_ENDS>` mode. Return to normal operation using :ref:`end_force_keep_in_merge_ends()<class_UndoRedo_method_end_force_keep_in_merge_ends>`.
 
 .. rst-class:: classref-item-separator
 
@@ -542,14 +542,14 @@ The way undo operation are ordered in actions is dictated by ``backward_undo_ops
 
 :ref:`bool<class_bool>` **undo**\ (\ ) :ref:`🔗<class_UndoRedo_method_undo>`
 
-撤銷上一個動作。
+Undo the last action.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

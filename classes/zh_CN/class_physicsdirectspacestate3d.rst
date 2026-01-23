@@ -5,34 +5,34 @@
 PhysicsDirectSpaceState3D
 =========================
 
-**继承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-**派生：** :ref:`PhysicsDirectSpaceState3DExtension<class_PhysicsDirectSpaceState3DExtension>`
+**Inherited By:** :ref:`PhysicsDirectSpaceState3DExtension<class_PhysicsDirectSpaceState3DExtension>`
 
-提供对 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 中物理空间的直接访问。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-提供对 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 中物理空间的直接访问。主要用于对驻留在给定空间中的对象和区域进行查询。
-
-\ **注意：**\ 该类不应直接实例化。请使用 :ref:`World3D.direct_space_state<class_World3D_property_direct_space_state>` 获取世界的 3D 物理空间状态。
+Provides direct access to a physics space in the :ref:`PhysicsServer3D<class_PhysicsServer3D>`.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`物理介绍 <../tutorials/physics/physics_introduction>`
+Provides direct access to a physics space in the :ref:`PhysicsServer3D<class_PhysicsServer3D>`. It's used mainly to do queries against objects and areas residing in a given space.
 
-- :doc:`发射射线 <../tutorials/physics/ray-casting>`
+\ **Note:** This class is not meant to be instantiated directly. Use :ref:`World3D.direct_space_state<class_World3D_property_direct_space_state>` to get the world's physics 3D space state.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Physics introduction <../tutorials/physics/physics_introduction>`
+
+- :doc:`Ray-casting <../tutorials/physics/ray-casting>`
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -57,8 +57,8 @@ PhysicsDirectSpaceState3D
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_PhysicsDirectSpaceState3D_method_cast_motion:
 
@@ -66,11 +66,11 @@ PhysicsDirectSpaceState3D
 
 :ref:`PackedFloat32Array<class_PackedFloat32Array>` **cast_motion**\ (\ parameters\: :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>`\ ) :ref:`🔗<class_PhysicsDirectSpaceState3D_method_cast_motion>`
 
-检查 :ref:`Shape3D<class_Shape3D>` 能够在不发生碰撞的情况下移动多远。包括形状和运动在内的所有查询参数都通过 :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>` 对象提供。
+Checks how far a :ref:`Shape3D<class_Shape3D>` can move without colliding. All the parameters for the query, including the shape and the motion, are supplied through a :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>` object.
 
-返回包含该运动的安全和不安全比例（在 0 和 1 之间）的数组。安全比例是该运动能够不发生碰撞的最大分数。不安全比例是发生碰撞所需的最小分数。如果没有检测到碰撞，则返回的结果为 ``[1.0, 1.0]``\ 。
+Returns an array with the safe and unsafe proportions (between 0 and 1) of the motion. The safe proportion is the maximum fraction of the motion that can be made without a collision. The unsafe proportion is the minimum fraction of the distance that must be moved for a collision. If no collision is detected a result of ``[1.0, 1.0]`` will be returned.
 
-\ **注意：**\ 该形状已碰撞的 :ref:`Shape3D<class_Shape3D>` 会被忽略，例如形状在其内部。请使用 :ref:`collide_shape()<class_PhysicsDirectSpaceState3D_method_collide_shape>` 确定该形状已碰撞的 :ref:`Shape3D<class_Shape3D>`\ 。
+\ **Note:** Any :ref:`Shape3D<class_Shape3D>`\ s that the shape is already colliding with e.g. inside of, will be ignored. Use :ref:`collide_shape()<class_PhysicsDirectSpaceState3D_method_collide_shape>` to determine the :ref:`Shape3D<class_Shape3D>`\ s that the shape is already colliding with.
 
 .. rst-class:: classref-item-separator
 
@@ -82,11 +82,11 @@ PhysicsDirectSpaceState3D
 
 :ref:`Array<class_Array>`\[:ref:`Vector3<class_Vector3>`\] **collide_shape**\ (\ parameters\: :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>`, max_results\: :ref:`int<class_int>` = 32\ ) :ref:`🔗<class_PhysicsDirectSpaceState3D_method_collide_shape>`
 
-检查通过 :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>` 对象给出的一个形状与该空间的交点。结果数组包含该形状与另一个形状相交处的点的列表。与 :ref:`intersect_shape()<class_PhysicsDirectSpaceState3D_method_intersect_shape>` 一样，可以限制返回结果的数量以节省处理时间。
+Checks the intersections of a shape, given through a :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>` object, against the space. The resulting array contains a list of points where the shape intersects another. Like with :ref:`intersect_shape()<class_PhysicsDirectSpaceState3D_method_intersect_shape>`, the number of returned results can be limited to save processing time.
 
-返回的点是接触点对的一个列表。对于每一对，第一个是在 :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>` 对象中传递的形状，第二个是来自物理空间的碰撞形状。
+Returned points are a list of pairs of contact points. For each pair the first one is in the shape passed in :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>` object, second one is in the collided shape from the physics space.
 
-\ **注意：**\ 该方法不考虑对象的 ``motion`` 属性。
+\ **Note:** This method does not take into account the ``motion`` property of the object.
 
 .. rst-class:: classref-item-separator
 
@@ -98,23 +98,23 @@ PhysicsDirectSpaceState3D
 
 :ref:`Dictionary<class_Dictionary>` **get_rest_info**\ (\ parameters\: :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>`\ ) :ref:`🔗<class_PhysicsDirectSpaceState3D_method_get_rest_info>`
 
-检查通过 :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>` 对象给出的形状与该空间的交点。如果它与多个形状发生碰撞，则选择最近的一个。返回的对象是一个包含以下字段的字典：
+Checks the intersections of a shape, given through a :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>` object, against the space. If it collides with more than one shape, the nearest one is selected. The returned object is a dictionary containing the following fields:
 
-\ ``collider_id``\ ：该碰撞对象的 ID。
+\ ``collider_id``: The colliding object's ID.
 
-\ ``linear_velocity``\ ：该碰撞对象的速度 :ref:`Vector3<class_Vector3>`\ 。如果对象是一个 :ref:`Area3D<class_Area3D>`\ ，则结果为 ``(0, 0, 0)``\ 。
+\ ``linear_velocity``: The colliding object's velocity :ref:`Vector3<class_Vector3>`. If the object is an :ref:`Area3D<class_Area3D>`, the result is ``(0, 0, 0)``.
 
-\ ``normal``\ ：相交点处查询形状的碰撞法线，法线指向远离相交对象的方向。
+\ ``normal``: The collision normal of the query shape at the intersection point, pointing away from the intersecting object.
 
-\ ``point``\ ：相交点。
+\ ``point``: The intersection point.
 
-\ ``rid``\ ：该相交对象的 :ref:`RID<class_RID>`\ 。
+\ ``rid``: The intersecting object's :ref:`RID<class_RID>`.
 
-\ ``shape``\ ：该碰撞形状的形状索引。
+\ ``shape``: The shape index of the colliding shape.
 
-如果该形状没有与任何东西相交，则返回一个空字典。
+If the shape did not intersect anything, then an empty dictionary is returned instead.
 
-\ **注意：**\ 该方法不考虑对象的 ``motion`` 属性。
+\ **Note:** This method does not take into account the ``motion`` property of the object.
 
 .. rst-class:: classref-item-separator
 
@@ -126,17 +126,17 @@ PhysicsDirectSpaceState3D
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **intersect_point**\ (\ parameters\: :ref:`PhysicsPointQueryParameters3D<class_PhysicsPointQueryParameters3D>`, max_results\: :ref:`int<class_int>` = 32\ ) :ref:`🔗<class_PhysicsDirectSpaceState3D_method_intersect_point>`
 
-检查点是否在任何实体形状内。位置和其他参数通过 :ref:`PhysicsPointQueryParameters3D<class_PhysicsPointQueryParameters3D>` 定义。点所在的形状会以数组的形式返回，该数组包含有以下字段的字典：
+Checks whether a point is inside any solid shape. Position and other parameters are defined through :ref:`PhysicsPointQueryParameters3D<class_PhysicsPointQueryParameters3D>`. The shapes the point is inside of are returned in an array containing dictionaries with the following fields:
 
-\ ``collider``\ ：碰撞对象。
+\ ``collider``: The colliding object.
 
-\ ``collider_id``\ ：碰撞对象的 ID。
+\ ``collider_id``: The colliding object's ID.
 
-\ ``rid``\ ：相交对象的\ :ref:`RID<class_RID>`\ 。
+\ ``rid``: The intersecting object's :ref:`RID<class_RID>`.
 
-\ ``shape``\ ：碰撞形状的形状索引。
+\ ``shape``: The shape index of the colliding shape.
 
-可以使用 ``max_results`` 参数限制相交的数量，以减少处理时间。
+The number of intersections can be limited with the ``max_results`` parameter, to reduce the processing time.
 
 .. rst-class:: classref-item-separator
 
@@ -148,25 +148,25 @@ PhysicsDirectSpaceState3D
 
 :ref:`Dictionary<class_Dictionary>` **intersect_ray**\ (\ parameters\: :ref:`PhysicsRayQueryParameters3D<class_PhysicsRayQueryParameters3D>`\ ) :ref:`🔗<class_PhysicsDirectSpaceState3D_method_intersect_ray>`
 
-在给定空间中检测与射线的相交情况。射线的位置和其他参数由 :ref:`PhysicsRayQueryParameters3D<class_PhysicsRayQueryParameters3D>` 定义。返回的对象是包含以下字段的字典：
+Intersects a ray in a given space. Ray position and other parameters are defined through :ref:`PhysicsRayQueryParameters3D<class_PhysicsRayQueryParameters3D>`. The returned object is a dictionary with the following fields:
 
-\ ``collider``\ ：碰撞到的对象。
+\ ``collider``: The colliding object.
 
-\ ``collider_id``\ ：碰撞到的对象的 ID。
+\ ``collider_id``: The colliding object's ID.
 
-\ ``normal``\ ：该对象表面交点处的法线，如果射线中该形状的内部开始，并且 :ref:`PhysicsRayQueryParameters3D.hit_from_inside<class_PhysicsRayQueryParameters3D_property_hit_from_inside>` 为 ``true``\ ，则为 ``Vector3(0, 0, 0)``\ 。
+\ ``normal``: The object's surface normal at the intersection point, or ``Vector3(0, 0, 0)`` if the ray starts inside the shape and :ref:`PhysicsRayQueryParameters3D.hit_from_inside<class_PhysicsRayQueryParameters3D_property_hit_from_inside>` is ``true``.
 
-\ ``position``\ ：交点。
+\ ``position``: The intersection point.
 
-\ ``face_index``\ ：交点处的面索引。
+\ ``face_index``: The face index at the intersection point.
 
-\ **注意：**\ 只有相交形状是 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` 时才会返回有效值。否则返回 ``-1``\ 。
+\ **Note:** Returns a valid number only if the intersected shape is a :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`. Otherwise, ``-1`` is returned.
 
-\ ``rid``\ ：相交对象的 :ref:`RID<class_RID>`\ 。
+\ ``rid``: The intersecting object's :ref:`RID<class_RID>`.
 
-\ ``shape``\ ：碰撞形状的形状索引。
+\ ``shape``: The shape index of the colliding shape.
 
-如果射线没有发生相交，则返回的是空字典。
+If the ray did not intersect anything, then an empty dictionary is returned instead.
 
 .. rst-class:: classref-item-separator
 
@@ -178,26 +178,26 @@ PhysicsDirectSpaceState3D
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **intersect_shape**\ (\ parameters\: :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>`, max_results\: :ref:`int<class_int>` = 32\ ) :ref:`🔗<class_PhysicsDirectSpaceState3D_method_intersect_shape>`
 
-检查通过 :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>` 对象给出的形状与空间的交点。相交的形状在包含具有以下字段的字典的数组中返回：
+Checks the intersections of a shape, given through a :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>` object, against the space. The intersected shapes are returned in an array containing dictionaries with the following fields:
 
-\ ``collider``\ ：碰撞对象。
+\ ``collider``: The colliding object.
 
-\ ``collider_id``\ ：碰撞对象的 ID。
+\ ``collider_id``: The colliding object's ID.
 
-\ ``rid``\ ：相交对象的 :ref:`RID<class_RID>`\ 。
+\ ``rid``: The intersecting object's :ref:`RID<class_RID>`.
 
-\ ``shape``\ ：碰撞形状的形状索引。
+\ ``shape``: The shape index of the colliding shape.
 
-可以使用 ``max_results`` 参数限制相交的数量，以减少处理时间。
+The number of intersections can be limited with the ``max_results`` parameter, to reduce the processing time.
 
-\ **注意：**\ 该方法不考虑对象的 ``motion`` 属性。
+\ **Note:** This method does not take into account the ``motion`` property of the object.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

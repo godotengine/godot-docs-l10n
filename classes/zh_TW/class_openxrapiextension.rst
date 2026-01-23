@@ -5,42 +5,42 @@
 OpenXRAPIExtension
 ==================
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-使 OpenXR API 可用於 GDExtension。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-**OpenXRAPIExtension** 使 OpenXR 可用於 GDExtension。它透過 :ref:`get_instance_proc_addr()<class_OpenXRAPIExtension_method_get_instance_proc_addr>` 方法向 GDExtension 提供 OpenXR API，並透過 [methodsion API，並透過 [methodsion get_instance get_instance
-
-它還提供了用於查詢 OpenXR 初始化狀態的方法，以及便於透過 GDExtension 使用 API 的輔助方法。
+Makes the OpenXR API available for GDExtension.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- `XrResult 文件 <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__
+**OpenXRAPIExtension** makes OpenXR available for GDExtension. It provides the OpenXR API to GDExtension through the :ref:`get_instance_proc_addr()<class_OpenXRAPIExtension_method_get_instance_proc_addr>` method, and the OpenXR instance through :ref:`get_instance()<class_OpenXRAPIExtension_method_get_instance>`.
 
-- `XrInstance 文件 <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrInstance.html>`__
+It also provides methods for querying the status of OpenXR initialization, and helper methods for ease of use of the API with GDExtension.
 
-- `XrSpace 文件 <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSpace.html>`__
+.. rst-class:: classref-introduction-group
 
-- `XrSession 文件 <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSession.html>`__
+Tutorials
+---------
 
-- `XrSystemId 文件 <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSystemId.html>`__
+- `XrResult documentation <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__
 
-- `xrBeginSession 文件 <https://registry.khronos.org/OpenXR/specs/1.0/man/html/xrBeginSession.html>`__
+- `XrInstance documentation <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrInstance.html>`__
 
-- `XrPosef 文件 <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrPosef.html>`__
+- `XrSpace documentation <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSpace.html>`__
+
+- `XrSession documentation <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSession.html>`__
+
+- `XrSystemId documentation <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSystemId.html>`__
+
+- `xrBeginSession documentation <https://registry.khronos.org/OpenXR/specs/1.0/man/html/xrBeginSession.html>`__
+
+- `XrPosef documentation <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrPosef.html>`__
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -147,8 +147,8 @@ OpenXRAPIExtension
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_OpenXRAPIExtension_OpenXRAlphaBlendModeSupport:
 
@@ -186,8 +186,8 @@ Means that :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_con
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_OpenXRAPIExtension_method_action_get_handle:
 
@@ -219,7 +219,7 @@ Begins a new debug label region, this label will be reported in debug messages f
 
 :ref:`bool<class_bool>` **can_render**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_can_render>`
 
-如果通訊端是打開的，並且在監聽埠，則返回 ``true``\ 。
+Returns ``true`` if OpenXR is initialized for rendering with an XR viewport.
 
 .. rst-class:: classref-item-separator
 
@@ -255,7 +255,7 @@ Returns the :ref:`RID<class_RID>` corresponding to an ``Action`` of a matching n
 
 :ref:`String<class_String>` **get_error_string**\ (\ result\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_error_string>`
 
-回傳給定\ `XrResult <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__.
+Returns an error string for the given `XrResult <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -291,9 +291,9 @@ Returns the `XrInstance <https://registry.khronos.org/OpenXR/specs/1.0/man/html/
 
 :ref:`int<class_int>` **get_instance_proc_addr**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_instance_proc_addr>`
 
-傳回指定名稱的OpenXR函式的函式指針，轉換為整數。如果指定名稱的函式不存在，則該方法傳回\ ``0``\ 。
+Returns the function pointer of the OpenXR function with the specified name, cast to an integer. If the function with the given name does not exist, the method returns ``0``.
 
-\ **注意：** ``openxr/util.h`` 包含用於取得OpenXR 函式的實用宏，例如\ ``GDEXTENSION_INIT_XR_FUNC_V(xrCreateAction)``\ 。
+\ **Note:** ``openxr/util.h`` contains utility macros for acquiring OpenXR functions, e.g. ``GDEXTENSION_INIT_XR_FUNC_V(xrCreateAction)``.
 
 .. rst-class:: classref-item-separator
 
@@ -329,7 +329,7 @@ Returns the version of OpenXR that was initialized. Only valid after the OpenXR 
 
 :ref:`int<class_int>` **get_play_space**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_play_space>`
 
-回傳播放空間，這是一個 `XrSpace <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSpace.html>`__ 轉換為整數。
+Returns the play space, which is an `XrSpace <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSpace.html>`__ cast to an integer.
 
 .. rst-class:: classref-item-separator
 
@@ -395,7 +395,7 @@ Returns the near boundary value of the camera frustum.
 
 :ref:`int<class_int>` **get_session**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_session>`
 
-回傳 OpenXR 會話，它是一個 `XrSession <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSession.html>`__ 轉換為整數。
+Returns the OpenXR session, which is an `XrSession <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSession.html>`__ cast to an integer.
 
 .. rst-class:: classref-item-separator
 
@@ -419,7 +419,7 @@ Returns an array of supported swapchain formats.
 
 :ref:`String<class_String>` **get_swapchain_format_name**\ (\ swapchain_format\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_swapchain_format_name>`
 
-返回指定參數的值。
+Returns the name of the specified swapchain format.
 
 .. rst-class:: classref-item-separator
 
@@ -467,7 +467,7 @@ Returns :ref:`OpenXRAlphaBlendModeSupport<enum_OpenXRAPIExtension_OpenXRAlphaBle
 
 :ref:`bool<class_bool>` **is_initialized**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_is_initialized>`
 
-如果 OpenXR 已初始化，則返回 ``true``\ 。
+Returns ``true`` if OpenXR is initialized.
 
 .. rst-class:: classref-item-separator
 
@@ -479,7 +479,7 @@ Returns :ref:`OpenXRAlphaBlendModeSupport<enum_OpenXRAPIExtension_OpenXRAlphaBle
 
 :ref:`bool<class_bool>` **is_running**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_is_running>`
 
-如果OpenXR 正在運作，則傳回\ ``true`` (`xrBeginSession <https://registry.khronos.org/OpenXR/specs/1.0/man/ html/ xrBeginSession.html>`__ 已成功呼叫並建立了交換鏈）。
+Returns ``true`` if OpenXR is running (`xrBeginSession <https://registry.khronos.org/OpenXR/specs/1.0/man/html/xrBeginSession.html>`__ was successfully called and the swapchains were created).
 
 .. rst-class:: classref-item-separator
 
@@ -491,7 +491,7 @@ Returns :ref:`OpenXRAlphaBlendModeSupport<enum_OpenXRAPIExtension_OpenXRAlphaBle
 
 :ref:`bool<class_bool>` **openxr_is_enabled**\ (\ check_run_in_editor\: :ref:`bool<class_bool>`\ ) |static| :ref:`🔗<class_OpenXRAPIExtension_method_openxr_is_enabled>`
 
-如果啟用 OpenXR，則返回 ``true``\ 。
+Returns ``true`` if OpenXR is enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -701,7 +701,7 @@ Sets the render target of the velocity texture.
 
 :ref:`Transform3D<class_Transform3D>` **transform_from_pose**\ (\ pose\: ``const void*``\ ) :ref:`🔗<class_OpenXRAPIExtension_method_transform_from_pose>`
 
-從 `XrPosef <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrPosef.html>`__.
+Creates a :ref:`Transform3D<class_Transform3D>` from an `XrPosef <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrPosef.html>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -767,14 +767,14 @@ Request the recommended resolution from the OpenXR runtime and update the main s
 
 :ref:`bool<class_bool>` **xr_result**\ (\ result\: :ref:`int<class_int>`, format\: :ref:`String<class_String>`, args\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_xr_result>`
 
-如果提供的 `XrResult <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__\ （轉換為整數）成功則回傳\ ``true``\ 。否則返回 ``false`` 並列印 `XrResult <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__ 轉換為字串，帶有指定的附加資訊。
+Returns ``true`` if the provided `XrResult <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__ (cast to an integer) is successful. Otherwise returns ``false`` and prints the `XrResult <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__ converted to a string, with the specified additional information.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

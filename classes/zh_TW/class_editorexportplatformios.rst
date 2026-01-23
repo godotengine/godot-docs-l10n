@@ -5,23 +5,23 @@
 EditorExportPlatformIOS
 =======================
 
-**繼承：** :ref:`EditorExportPlatformAppleEmbedded<class_EditorExportPlatformAppleEmbedded>` **<** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`EditorExportPlatformAppleEmbedded<class_EditorExportPlatformAppleEmbedded>` **<** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-iOS 匯出器。
+Exporter for iOS.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`為 iOS 匯出 <../tutorials/export/exporting_for_ios>`
+- :doc:`Exporting for iOS <../tutorials/export/exporting_for_ios>`
 
-- :doc:`編輯器外掛程式文件索引 <../tutorials/platform/ios/index>`
+- :doc:`iOS plugins documentation index <../tutorials/platform/ios/index>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -518,8 +518,8 @@ iOS 匯出器。
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_EditorExportPlatformIOS_property_application/additional_plist_content:
 
@@ -544,7 +544,7 @@ Additional data added to the root ``<dict>`` section of the `Info.plist <https:/
 
 :ref:`String<class_String>` **application/app_store_team_id** :ref:`🔗<class_EditorExportPlatformIOS_property_application/app_store_team_id>`
 
-Apple 團隊 ID，唯一的 10 字元的字串。要找到你的團隊 ID，請檢查 Apple 開發者帳戶儀錶板中的“會員詳細資訊”部分，或程式碼簽章憑證的“組織單位”。見 `搜尋你的團隊 ID <https://developer.apple.com/cn/help/account/manage-your-team/locate-your-team-id>`__\ 。
+Apple Team ID, unique 10-character string. To locate your Team ID check "Membership details" section in your Apple developer account dashboard, or "Organizational Unit" of your code signing certificate. See `Locate your Team ID <https://developer.apple.com/help/account/manage-your-team/locate-your-team-id>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -556,7 +556,7 @@ Apple 團隊 ID，唯一的 10 字元的字串。要找到你的團隊 ID，請�
 
 :ref:`String<class_String>` **application/bundle_identifier** :ref:`🔗<class_EditorExportPlatformIOS_property_application/bundle_identifier>`
 
-反向 DNS 格式的唯一套用程式識別字，只能包含字母數位字元（\ ``A-Z``\ 、\ ``a-z`` 和 ``0-9``\ ）、連字號（\ ``-``\ ）和句點（\ ``.``\ ）。
+Unique application identifier in a reverse-DNS format, can only contain alphanumeric characters (``A-Z``, ``a-z``, and ``0-9``), hyphens (``-``), and periods (``.``).
 
 .. rst-class:: classref-item-separator
 
@@ -604,7 +604,7 @@ If ``true``, existing "project name" and "project name.xcodeproj" in the export 
 
 :ref:`int<class_int>` **application/export_method_debug** :ref:`🔗<class_EditorExportPlatformIOS_property_application/export_method_debug>`
 
-套用程式分發目標（除錯匯出）。
+Application distribution target (debug export).
 
 .. rst-class:: classref-item-separator
 
@@ -616,7 +616,7 @@ If ``true``, existing "project name" and "project name.xcodeproj" in the export 
 
 :ref:`int<class_int>` **application/export_method_release** :ref:`🔗<class_EditorExportPlatformIOS_property_application/export_method_release>`
 
-套用程式分發目標（發行匯出）。
+Application distribution target (release export).
 
 .. rst-class:: classref-item-separator
 
@@ -628,7 +628,7 @@ If ``true``, existing "project name" and "project name.xcodeproj" in the export 
 
 :ref:`bool<class_bool>` **application/export_project_only** :ref:`🔗<class_EditorExportPlatformIOS_property_application/export_project_only>`
 
-如果 ``true``\ ，匯出 iOS專案檔案而不建構 XCArchive 或 ``.ipa`` 檔案。如果 ``false``\ ，匯出iOS 專案檔案並同時建置XCArchive 和\ ``.ipa`` 檔案。當Godot 與Fastlane 或其他建置管道結合使用時，您可能需要將其設為\ ``true``\ 。
+If ``true``, exports iOS project files without building an XCArchive or ``.ipa`` file. If ``false``, exports iOS project files and builds an XCArchive and ``.ipa`` file at the same time. When combining Godot with Fastlane or other build pipelines, you may want to set this to ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -640,7 +640,7 @@ If ``true``, existing "project name" and "project name.xcodeproj" in the export 
 
 :ref:`int<class_int>` **application/icon_interpolation** :ref:`🔗<class_EditorExportPlatformIOS_property_application/icon_interpolation>`
 
-用於調整套用程式圖示大小的插值方法。
+Interpolation method used to resize application icon.
 
 .. rst-class:: classref-item-separator
 
@@ -734,7 +734,7 @@ Application version visible to the user. Can only contain numeric characters (``
 
 :ref:`String<class_String>` **application/signature** :ref:`🔗<class_EditorExportPlatformIOS_property_application/signature>`
 
-特定於該組合包的四字元建立者碼。可選的。
+A four-character creator code that is specific to the bundle. Optional.
 
 .. rst-class:: classref-item-separator
 
@@ -746,7 +746,7 @@ Application version visible to the user. Can only contain numeric characters (``
 
 :ref:`int<class_int>` **application/targeted_device_family** :ref:`🔗<class_EditorExportPlatformIOS_property_application/targeted_device_family>`
 
-支援的裝置家族。
+Supported device family.
 
 .. rst-class:: classref-item-separator
 
@@ -772,7 +772,7 @@ Machine-readable application version in the ``major.minor.patch`` format. Can on
 
 :ref:`bool<class_bool>` **architectures/arm64** :ref:`🔗<class_EditorExportPlatformIOS_property_architectures/arm64>`
 
-如果為 ``true``\ ，\ ``arm64`` 二進位檔案將包含在匯出的專案中。
+If ``true``, ``arm64`` binaries are included into exported project.
 
 .. rst-class:: classref-item-separator
 
@@ -784,7 +784,7 @@ Machine-readable application version in the ``major.minor.patch`` format. Can on
 
 :ref:`bool<class_bool>` **capabilities/access_wifi** :ref:`🔗<class_EditorExportPlatformIOS_property_capabilities/access_wifi>`
 
-如果為 ``true``\ ，則啟用與 Wi-Fi 存取相關的網路功能。見 `App 所需的裝置功能 <https://developer.apple.com/cn/support/required-device-capabilities/>`__\ 。
+If ``true``, networking features related to Wi-Fi access are enabled. See `Required Device Capabilities <https://developer.apple.com/support/required-device-capabilities/>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -838,7 +838,7 @@ Enabling this option limits supported devices to: iPhone 15 Pro and newer.
 
 :ref:`String<class_String>` **custom_template/debug** :ref:`🔗<class_EditorExportPlatformIOS_property_custom_template/debug>`
 
-到自訂匯出範本的路徑。如果留空，則預設範本將被使用。
+Path to the custom export template. If left empty, default template is used.
 
 .. rst-class:: classref-item-separator
 
@@ -850,7 +850,7 @@ Enabling this option limits supported devices to: iPhone 15 Pro and newer.
 
 :ref:`String<class_String>` **custom_template/release** :ref:`🔗<class_EditorExportPlatformIOS_property_custom_template/release>`
 
-到自訂匯出範本的路徑。如果留空，則預設範本將被使用。
+Path to the custom export template. If left empty, default template is used.
 
 .. rst-class:: classref-item-separator
 
@@ -915,7 +915,7 @@ Environment for Apple Push Notification service. See `aps-environment <https://d
 
 :ref:`String<class_String>` **icons/app_store_1024x1024** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/app_store_1024x1024>`
 
-App Store 套用程式圖示檔。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+App Store application icon file. If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1095,7 +1095,7 @@ iOS application 64x64 icon file (3x DPI), tinted version. See `App icons <https:
 
 :ref:`String<class_String>` **icons/ipad_152x152** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_152x152>`
 
-iPad 主螢幕套用程式圖示檔（2x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPad (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1131,7 +1131,7 @@ Home screen application icon file on iPad (2x DPI), tinted version. See `App ico
 
 :ref:`String<class_String>` **icons/ipad_167x167** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_167x167>`
 
-iPad 主螢幕套用程式圖示檔（3x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPad (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1167,7 +1167,7 @@ Home screen application icon file on iPad (3x DPI), tinted version. See `App ico
 
 :ref:`String<class_String>` **icons/iphone_120x120** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_120x120>`
 
-iPhone 主螢幕套用程式圖示檔（2x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPhone (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1203,7 +1203,7 @@ Home screen application icon file on iPhone (2x DPI), tinted version. See `App i
 
 :ref:`String<class_String>` **icons/iphone_180x180** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_180x180>`
 
-iPhone 主螢幕套用程式圖示檔（3x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPhone (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1239,7 +1239,7 @@ Home screen application icon file on iPhone (3x DPI), tinted version. See `App i
 
 :ref:`String<class_String>` **icons/notification_40x40** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_40x40>`
 
-iPad 和 iPhone 上的通知圖示檔（2x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1275,7 +1275,7 @@ Notification icon file on iPad and iPhone (2x DPI), tinted version. See `App ico
 
 :ref:`String<class_String>` **icons/notification_60x60** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_60x60>`
 
-iPad 和 iPhone 上的通知圖示檔（3x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPhone (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1311,7 +1311,7 @@ Notification icon file on iPhone (3x DPI), tinted version. See `App icons <https
 
 :ref:`String<class_String>` **icons/notification_76x76** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_76x76>`
 
-iPad 和 iPhone 上的通知圖示檔（2x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1383,7 +1383,7 @@ Notification icon file on iPad and iPhone (3x DPI), tinted version. See `App ico
 
 :ref:`String<class_String>` **icons/settings_58x58** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_58x58>`
 
-iPad 和 iPhone 上的套用程式設定圖示檔（2x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Application settings icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1419,7 +1419,7 @@ Application settings icon file on iPad and iPhone (2x DPI), tinted version. See 
 
 :ref:`String<class_String>` **icons/settings_87x87** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_87x87>`
 
-iPhone 上的套用程式設定圖示檔（3x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Application settings icon file on iPhone (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1455,7 +1455,7 @@ Application settings icon file on iPhone (3x DPI), tinted version. See `App icon
 
 :ref:`String<class_String>` **icons/spotlight_80x80** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_80x80>`
 
-iPad 和 iPhone 上的“聚焦”圖示檔（2x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。見 `App 圖示 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Spotlight icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1539,7 +1539,7 @@ The reasons your app use active keyboard API. See `Describing use of required re
 
 :ref:`String<class_String>` **privacy/camera_usage_description** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/camera_usage_description>`
 
-請求存取裝置相機時顯示的（英文）消息。
+A message displayed when requesting access to the device's camera (in English).
 
 .. rst-class:: classref-item-separator
 
@@ -1551,7 +1551,7 @@ The reasons your app use active keyboard API. See `Describing use of required re
 
 :ref:`Dictionary<class_Dictionary>` **privacy/camera_usage_description_localized** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/camera_usage_description_localized>`
 
-請求存取裝置相機時顯示的（當地語系化）消息。
+A message displayed when requesting access to the device's camera (localized).
 
 .. rst-class:: classref-item-separator
 
@@ -3267,7 +3267,7 @@ The reasons your app use file timestamp/metadata API. See `Describing use of req
 
 :ref:`String<class_String>` **privacy/microphone_usage_description** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/microphone_usage_description>`
 
-請求存取裝置麥克風時顯示的（英文）消息。
+A message displayed when requesting access to the device's microphone (in English).
 
 .. rst-class:: classref-item-separator
 
@@ -3279,7 +3279,7 @@ The reasons your app use file timestamp/metadata API. See `Describing use of req
 
 :ref:`Dictionary<class_Dictionary>` **privacy/microphone_usage_description_localized** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/microphone_usage_description_localized>`
 
-請求存取裝置麥克風時顯示的（當地語系化）消息。
+A message displayed when requesting access to the device's microphone (localized).
 
 .. rst-class:: classref-item-separator
 
@@ -3291,7 +3291,7 @@ The reasons your app use file timestamp/metadata API. See `Describing use of req
 
 :ref:`String<class_String>` **privacy/photolibrary_usage_description** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/photolibrary_usage_description>`
 
-請求存取使用者照片圖庫時顯示的（英文）消息。
+A message displayed when requesting access to the user's photo library (in English).
 
 .. rst-class:: classref-item-separator
 
@@ -3303,7 +3303,7 @@ The reasons your app use file timestamp/metadata API. See `Describing use of req
 
 :ref:`Dictionary<class_Dictionary>` **privacy/photolibrary_usage_description_localized** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/photolibrary_usage_description_localized>`
 
-請求存取使用者照片圖庫時顯示的（當地語系化）消息。
+A message displayed when requesting access to the user's photo library (localized).
 
 .. rst-class:: classref-item-separator
 
@@ -3379,7 +3379,7 @@ If ``true``, shaders will be compiled and embedded in the application. This opti
 
 :ref:`Color<class_Color>` **storyboard/custom_bg_color** :ref:`🔗<class_EditorExportPlatformIOS_property_storyboard/custom_bg_color>`
 
-Storyboard 啟動畫面的自訂背景色。
+A custom background color of the storyboard launch screen.
 
 .. rst-class:: classref-item-separator
 
@@ -3391,7 +3391,7 @@ Storyboard 啟動畫面的自訂背景色。
 
 :ref:`String<class_String>` **storyboard/custom_image@2x** :ref:`🔗<class_EditorExportPlatformIOS_property_storyboard/custom_image@2x>`
 
-套用程式啟動畫面影像檔（2x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>`\ 。
+Application launch screen image file (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3403,7 +3403,7 @@ Storyboard 啟動畫面的自訂背景色。
 
 :ref:`String<class_String>` **storyboard/custom_image@3x** :ref:`🔗<class_EditorExportPlatformIOS_property_storyboard/custom_image@3x>`
 
-套用程式啟動畫面影像檔（3x DPI）。如果留空，則會退回至 :ref:`ProjectSettings.application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>`\ 。
+Application launch screen image file (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3415,7 +3415,7 @@ Storyboard 啟動畫面的自訂背景色。
 
 :ref:`int<class_int>` **storyboard/image_scale_mode** :ref:`🔗<class_EditorExportPlatformIOS_property_storyboard/image_scale_mode>`
 
-啟動畫面圖像縮放模式。
+Launch screen image scaling mode.
 
 .. rst-class:: classref-item-separator
 
@@ -3427,7 +3427,7 @@ Storyboard 啟動畫面的自訂背景色。
 
 :ref:`bool<class_bool>` **storyboard/use_custom_bg_color** :ref:`🔗<class_EditorExportPlatformIOS_property_storyboard/use_custom_bg_color>`
 
-如果為 ``true``\ ，則會將 :ref:`storyboard/custom_bg_color<class_EditorExportPlatformIOS_property_storyboard/custom_bg_color>` 用作啟動螢幕的背景色，否則會使用專案設定 ``application/boot_splash/bg_color``\ 。
+If ``true``, :ref:`storyboard/custom_bg_color<class_EditorExportPlatformIOS_property_storyboard/custom_bg_color>` is used as a launch screen background color, otherwise ``application/boot_splash/bg_color`` project setting is used.
 
 .. rst-class:: classref-item-separator
 
@@ -3439,7 +3439,7 @@ Storyboard 啟動畫面的自訂背景色。
 
 :ref:`bool<class_bool>` **user_data/accessible_from_files_app** :ref:`🔗<class_EditorExportPlatformIOS_property_user_data/accessible_from_files_app>`
 
-如果為 ``true``\ ，套用的“Documents”資料夾可以在“檔”套用中存取。見 `LSSupportsOpeningDocumentsInPlace <https://developer.apple.com/documentation/bundleresources/information_property_list/lssupportsopeningdocumentsinplace>`__\ 。
+If ``true``, the app "Documents" folder can be accessed via "Files" app. See `LSSupportsOpeningDocumentsInPlace <https://developer.apple.com/documentation/bundleresources/information_property_list/lssupportsopeningdocumentsinplace>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3451,14 +3451,14 @@ Storyboard 啟動畫面的自訂背景色。
 
 :ref:`bool<class_bool>` **user_data/accessible_from_itunes_sharing** :ref:`🔗<class_EditorExportPlatformIOS_property_user_data/accessible_from_itunes_sharing>`
 
-如果為 ``true``\ ，套用的“Documents”資料夾可以在 iTunes 檔共用中訪問。見 `UIFileSharingEnabled <https://developer.apple.com/documentation/bundleresources/information_property_list/uifilesharingenabled>`__\ 。
+If ``true``, the app "Documents" folder can be accessed via iTunes file sharing. See `UIFileSharingEnabled <https://developer.apple.com/documentation/bundleresources/information_property_list/uifilesharingenabled>`__.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

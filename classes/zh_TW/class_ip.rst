@@ -8,21 +8,21 @@
 IP
 ==
 
-**繼承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-網際協定（IP）支援函式，如 DNS 解析。
+Internet protocol (IP) support functions such as DNS resolution.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-IP 包含網際協定（IP）的支援函式。TCP/IP 的支援在其他類中（請參閱 :ref:`StreamPeerTCP<class_StreamPeerTCP>` 和 :ref:`TCPServer<class_TCPServer>`\ ）。IP 提供 DNS 主機名稱解析支援，包括阻塞式和線程式。
+IP contains support functions for the Internet Protocol (IP). TCP/IP support is in different classes (see :ref:`StreamPeerTCP<class_StreamPeerTCP>` and :ref:`TCPServer<class_TCPServer>`). IP provides DNS hostname resolution support, both blocking and threaded.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -55,8 +55,8 @@ IP 包含網際協定（IP）的支援函式。TCP/IP 的支援在其他類中�
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_IP_ResolverStatus:
 
@@ -70,7 +70,7 @@ enum **ResolverStatus**: :ref:`🔗<enum_IP_ResolverStatus>`
 
 :ref:`ResolverStatus<enum_IP_ResolverStatus>` **RESOLVER_STATUS_NONE** = ``0``
 
-DNS 主機名稱解析器狀態：無狀態。
+DNS hostname resolver status: No status.
 
 .. _class_IP_constant_RESOLVER_STATUS_WAITING:
 
@@ -78,7 +78,7 @@ DNS 主機名稱解析器狀態：無狀態。
 
 :ref:`ResolverStatus<enum_IP_ResolverStatus>` **RESOLVER_STATUS_WAITING** = ``1``
 
-DNS 主機名稱解析器狀態：正在等待。
+DNS hostname resolver status: Waiting.
 
 .. _class_IP_constant_RESOLVER_STATUS_DONE:
 
@@ -86,7 +86,7 @@ DNS 主機名稱解析器狀態：正在等待。
 
 :ref:`ResolverStatus<enum_IP_ResolverStatus>` **RESOLVER_STATUS_DONE** = ``2``
 
-DNS 主機名稱解析器狀態：完成。
+DNS hostname resolver status: Done.
 
 .. _class_IP_constant_RESOLVER_STATUS_ERROR:
 
@@ -94,7 +94,7 @@ DNS 主機名稱解析器狀態：完成。
 
 :ref:`ResolverStatus<enum_IP_ResolverStatus>` **RESOLVER_STATUS_ERROR** = ``3``
 
-DNS 主機名稱解析器狀態：錯誤。
+DNS hostname resolver status: Error.
 
 .. rst-class:: classref-item-separator
 
@@ -112,7 +112,7 @@ enum **Type**: :ref:`🔗<enum_IP_Type>`
 
 :ref:`Type<enum_IP_Type>` **TYPE_NONE** = ``0``
 
-網址類別型：無。
+Address type: None.
 
 .. _class_IP_constant_TYPE_IPV4:
 
@@ -120,7 +120,7 @@ enum **Type**: :ref:`🔗<enum_IP_Type>`
 
 :ref:`Type<enum_IP_Type>` **TYPE_IPV4** = ``1``
 
-網址類別型：網際協議版本 4（IPv4）。
+Address type: Internet protocol version 4 (IPv4).
 
 .. _class_IP_constant_TYPE_IPV6:
 
@@ -128,7 +128,7 @@ enum **Type**: :ref:`🔗<enum_IP_Type>`
 
 :ref:`Type<enum_IP_Type>` **TYPE_IPV6** = ``2``
 
-網址類別型：網際協議版本 6（IPv6）。
+Address type: Internet protocol version 6 (IPv6).
 
 .. _class_IP_constant_TYPE_ANY:
 
@@ -136,7 +136,7 @@ enum **Type**: :ref:`🔗<enum_IP_Type>`
 
 :ref:`Type<enum_IP_Type>` **TYPE_ANY** = ``3``
 
-網址類別型：任意。
+Address type: Any.
 
 .. rst-class:: classref-section-separator
 
@@ -144,8 +144,8 @@ enum **Type**: :ref:`🔗<enum_IP_Type>`
 
 .. rst-class:: classref-descriptions-group
 
-常數
-----
+Constants
+---------
 
 .. _class_IP_constant_RESOLVER_MAX_QUERIES:
 
@@ -153,7 +153,7 @@ enum **Type**: :ref:`🔗<enum_IP_Type>`
 
 **RESOLVER_MAX_QUERIES** = ``256`` :ref:`🔗<class_IP_constant_RESOLVER_MAX_QUERIES>`
 
-允許的最大併發 DNS 解析器查詢數量，如果超過，則返回 :ref:`RESOLVER_INVALID_ID<class_IP_constant_RESOLVER_INVALID_ID>`\ 。
+Maximum number of concurrent DNS resolver queries allowed, :ref:`RESOLVER_INVALID_ID<class_IP_constant_RESOLVER_INVALID_ID>` is returned if exceeded.
 
 .. _class_IP_constant_RESOLVER_INVALID_ID:
 
@@ -161,7 +161,7 @@ enum **Type**: :ref:`🔗<enum_IP_Type>`
 
 **RESOLVER_INVALID_ID** = ``-1`` :ref:`🔗<class_IP_constant_RESOLVER_INVALID_ID>`
 
-無效的 ID 常數。在超過 :ref:`RESOLVER_MAX_QUERIES<class_IP_constant_RESOLVER_MAX_QUERIES>` 時返回。
+Invalid ID constant. Returned if :ref:`RESOLVER_MAX_QUERIES<class_IP_constant_RESOLVER_MAX_QUERIES>` is exceeded.
 
 .. rst-class:: classref-section-separator
 
@@ -169,8 +169,8 @@ enum **Type**: :ref:`🔗<enum_IP_Type>`
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_IP_method_clear_cache:
 
@@ -178,7 +178,7 @@ enum **Type**: :ref:`🔗<enum_IP_Type>`
 
 |void| **clear_cache**\ (\ hostname\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_IP_method_clear_cache>`
 
-移除所有 ``hostname`` 主機名稱的快取引用。如果沒有給出 ``hostname``\ ，所有快取的 IP 地址將被刪除。
+Removes all of a ``hostname``'s cached references. If no ``hostname`` is given, all cached IP addresses are removed.
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ enum **Type**: :ref:`🔗<enum_IP_Type>`
 
 |void| **erase_resolve_item**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_IP_method_erase_resolve_item>`
 
-從佇列中刪除一個給定的專案 ``id``\ 。這應該被用來在佇列完成後釋放佇列，以便進行更多的查詢。
+Removes a given item ``id`` from the queue. This should be used to free a queue after it has completed to enable more queries to happen.
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ enum **Type**: :ref:`🔗<enum_IP_Type>`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_local_addresses**\ (\ ) |const| :ref:`🔗<class_IP_method_get_local_addresses>`
 
-以陣列形式返回所有使用者的目前 IPv4 和 IPv6 地址。
+Returns all the user's current IPv4 and IPv6 addresses as an array.
 
 .. rst-class:: classref-item-separator
 
@@ -214,17 +214,17 @@ enum **Type**: :ref:`🔗<enum_IP_Type>`
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_local_interfaces**\ (\ ) |const| :ref:`🔗<class_IP_method_get_local_interfaces>`
 
-以陣列形式返回所有網路介面卡。
+Returns all network adapters as an array.
 
-每個適配器都是一個以下形式的字典：
+Each adapter is a dictionary of the form:
 
 ::
 
     {
-        "index":"1", # 介面索引。
-        "name":"eth0", # 介面名稱。
-        "friendly":"Ethernet One", # 友好的名字（可能是空的）。
-        "address":["192.168.1.101"], # 與此介面相關的 IP 位址陣列。
+        "index": "1", # Interface index.
+        "name": "eth0", # Interface name.
+        "friendly": "Ethernet One", # A friendly name (might be empty).
+        "addresses": ["192.168.1.101"], # An array of IP addresses associated to this interface.
     }
 
 .. rst-class:: classref-item-separator
@@ -237,7 +237,7 @@ enum **Type**: :ref:`🔗<enum_IP_Type>`
 
 :ref:`String<class_String>` **get_resolve_item_address**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IP_method_get_resolve_item_address>`
 
-給定佇列 ``id``\ ，返回排隊主機名稱的 IP 位址。出現錯誤或解析尚未發生時返回一個空字串（見 :ref:`get_resolve_item_status()<class_IP_method_get_resolve_item_status>`\ ）。
+Returns a queued hostname's IP address, given its queue ``id``. Returns an empty string on error or if resolution hasn't happened yet (see :ref:`get_resolve_item_status()<class_IP_method_get_resolve_item_status>`).
 
 .. rst-class:: classref-item-separator
 
@@ -249,7 +249,7 @@ enum **Type**: :ref:`🔗<enum_IP_Type>`
 
 :ref:`Array<class_Array>` **get_resolve_item_addresses**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IP_method_get_resolve_item_addresses>`
 
-如果發生錯誤或尚未發生解析，則返回已解析的位址或空陣列（請參閱 :ref:`get_resolve_item_status()<class_IP_method_get_resolve_item_status>`\ ）。
+Returns resolved addresses, or an empty array if an error happened or resolution didn't happen yet (see :ref:`get_resolve_item_status()<class_IP_method_get_resolve_item_status>`).
 
 .. rst-class:: classref-item-separator
 
@@ -261,7 +261,7 @@ enum **Type**: :ref:`🔗<enum_IP_Type>`
 
 :ref:`ResolverStatus<enum_IP_ResolverStatus>` **get_resolve_item_status**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IP_method_get_resolve_item_status>`
 
-給定佇列 ``id``\ ，以 :ref:`ResolverStatus<enum_IP_ResolverStatus>` 常數的形式返回排隊主機名稱的狀態。
+Returns a queued hostname's status as a :ref:`ResolverStatus<enum_IP_ResolverStatus>` constant, given its queue ``id``.
 
 .. rst-class:: classref-item-separator
 
@@ -273,7 +273,7 @@ enum **Type**: :ref:`🔗<enum_IP_Type>`
 
 :ref:`String<class_String>` **resolve_hostname**\ (\ host\: :ref:`String<class_String>`, ip_type\: :ref:`Type<enum_IP_Type>` = 3\ ) :ref:`🔗<class_IP_method_resolve_hostname>`
 
-在解析時返回一個給定的主機名稱的 IPv4 或 IPv6 位址（阻塞型別方法）。返回的地址型別取決於作為 ``ip_type`` 的 :ref:`Type<enum_IP_Type>` 常數。
+Returns a given hostname's IPv4 or IPv6 address when resolved (blocking-type method). The address type returned depends on the :ref:`Type<enum_IP_Type>` constant given as ``ip_type``.
 
 .. rst-class:: classref-item-separator
 
@@ -285,7 +285,7 @@ enum **Type**: :ref:`🔗<enum_IP_Type>`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **resolve_hostname_addresses**\ (\ host\: :ref:`String<class_String>`, ip_type\: :ref:`Type<enum_IP_Type>` = 3\ ) :ref:`🔗<class_IP_method_resolve_hostname_addresses>`
 
-以阻塞方式解析給定的主機名稱。位址作為 IPv4 或 IPv6 的 :ref:`Array<class_Array>` 陣列返回，具體取決於 ``ip_type``\ 。
+Resolves a given hostname in a blocking way. Addresses are returned as an :ref:`Array<class_Array>` of IPv4 or IPv6 addresses depending on ``ip_type``.
 
 .. rst-class:: classref-item-separator
 
@@ -297,14 +297,14 @@ enum **Type**: :ref:`🔗<enum_IP_Type>`
 
 :ref:`int<class_int>` **resolve_hostname_queue_item**\ (\ host\: :ref:`String<class_String>`, ip_type\: :ref:`Type<enum_IP_Type>` = 3\ ) :ref:`🔗<class_IP_method_resolve_hostname_queue_item>`
 
-建立一個佇列專案，根據 :ref:`Type<enum_IP_Type>` 常數 ``ip_type``\ ，將主機名稱解析為 IPv4 或 IPv6 地址。如果成功，則返回佇列 ID，否則返回 :ref:`RESOLVER_INVALID_ID<class_IP_constant_RESOLVER_INVALID_ID>`\ 。
+Creates a queue item to resolve a hostname to an IPv4 or IPv6 address depending on the :ref:`Type<enum_IP_Type>` constant given as ``ip_type``. Returns the queue ID if successful, or :ref:`RESOLVER_INVALID_ID<class_IP_constant_RESOLVER_INVALID_ID>` on error.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

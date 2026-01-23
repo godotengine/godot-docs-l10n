@@ -5,20 +5,20 @@
 RDPipelineColorBlendStateAttachment
 ===================================
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-管線顏色混合狀態附件（由 :ref:`RenderingDevice<class_RenderingDevice>` 使用）。
+Pipeline color blend state attachment (used by :ref:`RenderingDevice<class_RenderingDevice>`).
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-控制使用 :ref:`RenderingDevice<class_RenderingDevice>` 時如何在來源和目標片段之間進行混合。
+Controls how blending between source and destination fragments is performed when using :ref:`RenderingDevice<class_RenderingDevice>`.
 
-以下是常見面向使用者的混合模式在 Godot 的 2D 算繪器中的實作方法，僅供參考：
+For reference, this is how common user-facing blend modes are implemented in Godot's 2D renderer:
 
-\ **混合：**\ 
+\ **Mix:**\ 
 
 ::
 
@@ -31,7 +31,7 @@ RDPipelineColorBlendStateAttachment
     attachment.src_alpha_blend_factor = RenderingDevice.BLEND_FACTOR_ONE
     attachment.dst_alpha_blend_factor = RenderingDevice.BLEND_FACTOR_ONE_MINUS_SRC_ALPHA
 
-\ **加：**\ 
+\ **Add:**\ 
 
 ::
 
@@ -44,7 +44,7 @@ RDPipelineColorBlendStateAttachment
     attachment.src_alpha_blend_factor = RenderingDevice.BLEND_FACTOR_SRC_ALPHA
     attachment.dst_alpha_blend_factor = RenderingDevice.BLEND_FACTOR_ONE
 
-\ **減：**\ 
+\ **Subtract:**\ 
 
 ::
 
@@ -57,7 +57,7 @@ RDPipelineColorBlendStateAttachment
     attachment.src_alpha_blend_factor = RenderingDevice.BLEND_FACTOR_SRC_ALPHA
     attachment.dst_alpha_blend_factor = RenderingDevice.BLEND_FACTOR_ONE
 
-\ **乘：**\ 
+\ **Multiply:**\ 
 
 ::
 
@@ -70,7 +70,7 @@ RDPipelineColorBlendStateAttachment
     attachment.src_alpha_blend_factor = RenderingDevice.BLEND_FACTOR_DST_ALPHA
     attachment.dst_alpha_blend_factor = RenderingDevice.BLEND_FACTOR_ZERO
 
-\ **預乘 Alpha：**\ 
+\ **Pre-multiplied alpha:**\ 
 
 ::
 
@@ -85,8 +85,8 @@ RDPipelineColorBlendStateAttachment
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -117,8 +117,8 @@ RDPipelineColorBlendStateAttachment
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -133,8 +133,8 @@ RDPipelineColorBlendStateAttachment
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_RDPipelineColorBlendStateAttachment_property_alpha_blend_op:
 
@@ -147,7 +147,7 @@ RDPipelineColorBlendStateAttachment
 - |void| **set_alpha_blend_op**\ (\ value\: :ref:`BlendOperation<enum_RenderingDevice_BlendOperation>`\ )
 - :ref:`BlendOperation<enum_RenderingDevice_BlendOperation>` **get_alpha_blend_op**\ (\ )
 
-Alpha 通道使用的混合模式。
+The blend mode to use for the alpha channel.
 
 .. rst-class:: classref-item-separator
 
@@ -164,7 +164,7 @@ Alpha 通道使用的混合模式。
 - |void| **set_color_blend_op**\ (\ value\: :ref:`BlendOperation<enum_RenderingDevice_BlendOperation>`\ )
 - :ref:`BlendOperation<enum_RenderingDevice_BlendOperation>` **get_color_blend_op**\ (\ )
 
-紅、綠、藍通道使用的混合模式。
+The blend mode to use for the red/green/blue color channels.
 
 .. rst-class:: classref-item-separator
 
@@ -181,7 +181,7 @@ Alpha 通道使用的混合模式。
 - |void| **set_dst_alpha_blend_factor**\ (\ value\: :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>`\ )
 - :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **get_dst_alpha_blend_factor**\ (\ )
 
-控制如何根據目標片段確定 Alpha 通道的混合係數。
+Controls how the blend factor for the alpha channel is determined based on the destination's fragments.
 
 .. rst-class:: classref-item-separator
 
@@ -198,7 +198,7 @@ Alpha 通道使用的混合模式。
 - |void| **set_dst_color_blend_factor**\ (\ value\: :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>`\ )
 - :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **get_dst_color_blend_factor**\ (\ )
 
-控制如何根據目標片段確定顏色通道的混合係數。
+Controls how the blend factor for the color channels is determined based on the destination's fragments.
 
 .. rst-class:: classref-item-separator
 
@@ -215,7 +215,7 @@ Alpha 通道使用的混合模式。
 - |void| **set_enable_blend**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enable_blend**\ (\ )
 
-如果為 ``true``\ ，則會根據 :ref:`src_color_blend_factor<class_RDPipelineColorBlendStateAttachment_property_src_color_blend_factor>`\ 、\ :ref:`dst_color_blend_factor<class_RDPipelineColorBlendStateAttachment_property_dst_color_blend_factor>`\ 、\ :ref:`src_alpha_blend_factor<class_RDPipelineColorBlendStateAttachment_property_src_alpha_blend_factor>` 和 :ref:`dst_alpha_blend_factor<class_RDPipelineColorBlendStateAttachment_property_dst_alpha_blend_factor>` 中定義的係數對來源和目標進行混合。同時也會考慮 :ref:`color_blend_op<class_RDPipelineColorBlendStateAttachment_property_color_blend_op>` 和 :ref:`alpha_blend_op<class_RDPipelineColorBlendStateAttachment_property_alpha_blend_op>` 混合模式，\ :ref:`write_r<class_RDPipelineColorBlendStateAttachment_property_write_r>`\ 、\ :ref:`write_g<class_RDPipelineColorBlendStateAttachment_property_write_g>`\ 、\ :ref:`write_b<class_RDPipelineColorBlendStateAttachment_property_write_b>` 和 :ref:`write_a<class_RDPipelineColorBlendStateAttachment_property_write_a>` 則控制的是輸出。
+If ``true``, performs blending between the source and destination according to the factors defined in :ref:`src_color_blend_factor<class_RDPipelineColorBlendStateAttachment_property_src_color_blend_factor>`, :ref:`dst_color_blend_factor<class_RDPipelineColorBlendStateAttachment_property_dst_color_blend_factor>`, :ref:`src_alpha_blend_factor<class_RDPipelineColorBlendStateAttachment_property_src_alpha_blend_factor>` and :ref:`dst_alpha_blend_factor<class_RDPipelineColorBlendStateAttachment_property_dst_alpha_blend_factor>`. The blend modes :ref:`color_blend_op<class_RDPipelineColorBlendStateAttachment_property_color_blend_op>` and :ref:`alpha_blend_op<class_RDPipelineColorBlendStateAttachment_property_alpha_blend_op>` are also taken into account, with :ref:`write_r<class_RDPipelineColorBlendStateAttachment_property_write_r>`, :ref:`write_g<class_RDPipelineColorBlendStateAttachment_property_write_g>`, :ref:`write_b<class_RDPipelineColorBlendStateAttachment_property_write_b>` and :ref:`write_a<class_RDPipelineColorBlendStateAttachment_property_write_a>` controlling the output.
 
 .. rst-class:: classref-item-separator
 
@@ -232,7 +232,7 @@ Alpha 通道使用的混合模式。
 - |void| **set_src_alpha_blend_factor**\ (\ value\: :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>`\ )
 - :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **get_src_alpha_blend_factor**\ (\ )
 
-控制如何根據來源片段確定 Alpha 通道的混合係數。
+Controls how the blend factor for the alpha channel is determined based on the source's fragments.
 
 .. rst-class:: classref-item-separator
 
@@ -249,7 +249,7 @@ Alpha 通道使用的混合模式。
 - |void| **set_src_color_blend_factor**\ (\ value\: :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>`\ )
 - :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **get_src_color_blend_factor**\ (\ )
 
-控制如何根據來源片段確定顏色通道的混合係數。
+Controls how the blend factor for the color channels is determined based on the source's fragments.
 
 .. rst-class:: classref-item-separator
 
@@ -266,7 +266,7 @@ Alpha 通道使用的混合模式。
 - |void| **set_write_a**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_write_a**\ (\ )
 
-如果為 ``true``\ ，則將新的 Alpha 通道寫入最終結果。
+If ``true``, writes the new alpha channel to the final result.
 
 .. rst-class:: classref-item-separator
 
@@ -283,7 +283,7 @@ Alpha 通道使用的混合模式。
 - |void| **set_write_b**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_write_b**\ (\ )
 
-如果為 ``true``\ ，則將新的藍色通道寫入最終結果。
+If ``true``, writes the new blue color channel to the final result.
 
 .. rst-class:: classref-item-separator
 
@@ -300,7 +300,7 @@ Alpha 通道使用的混合模式。
 - |void| **set_write_g**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_write_g**\ (\ )
 
-如果為 ``true``\ ，則將新的綠色通道寫入最終結果。
+If ``true``, writes the new green color channel to the final result.
 
 .. rst-class:: classref-item-separator
 
@@ -317,7 +317,7 @@ Alpha 通道使用的混合模式。
 - |void| **set_write_r**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_write_r**\ (\ )
 
-如果為 ``true``\ ，則將新的紅色通道寫入最終結果。
+If ``true``, writes the new red color channel to the final result.
 
 .. rst-class:: classref-section-separator
 
@@ -325,8 +325,8 @@ Alpha 通道使用的混合模式。
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_RDPipelineColorBlendStateAttachment_method_set_as_mix:
 
@@ -334,14 +334,14 @@ Alpha 通道使用的混合模式。
 
 |void| **set_as_mix**\ (\ ) :ref:`🔗<class_RDPipelineColorBlendStateAttachment_method_set_as_mix>`
 
-使用普通（非預乘）Alpha 進行標準混合混合（mix blending）的簡便方法。這個方法會將 :ref:`enable_blend<class_RDPipelineColorBlendStateAttachment_property_enable_blend>` 設為 ``true``\ ，將 :ref:`src_color_blend_factor<class_RDPipelineColorBlendStateAttachment_property_src_color_blend_factor>` 設為 :ref:`RenderingDevice.BLEND_FACTOR_SRC_ALPHA<class_RenderingDevice_constant_BLEND_FACTOR_SRC_ALPHA>`\ ，將 :ref:`dst_color_blend_factor<class_RDPipelineColorBlendStateAttachment_property_dst_color_blend_factor>` 設為 :ref:`RenderingDevice.BLEND_FACTOR_ONE_MINUS_SRC_ALPHA<class_RenderingDevice_constant_BLEND_FACTOR_ONE_MINUS_SRC_ALPHA>`\ ，將 :ref:`src_alpha_blend_factor<class_RDPipelineColorBlendStateAttachment_property_src_alpha_blend_factor>` 設為 :ref:`RenderingDevice.BLEND_FACTOR_SRC_ALPHA<class_RenderingDevice_constant_BLEND_FACTOR_SRC_ALPHA>`\ ，將 :ref:`dst_alpha_blend_factor<class_RDPipelineColorBlendStateAttachment_property_dst_alpha_blend_factor>` 設為 :ref:`RenderingDevice.BLEND_FACTOR_ONE_MINUS_SRC_ALPHA<class_RenderingDevice_constant_BLEND_FACTOR_ONE_MINUS_SRC_ALPHA>`\ 。
+Convenience method to perform standard mix blending with straight (non-premultiplied) alpha. This sets :ref:`enable_blend<class_RDPipelineColorBlendStateAttachment_property_enable_blend>` to ``true``, :ref:`src_color_blend_factor<class_RDPipelineColorBlendStateAttachment_property_src_color_blend_factor>` to :ref:`RenderingDevice.BLEND_FACTOR_SRC_ALPHA<class_RenderingDevice_constant_BLEND_FACTOR_SRC_ALPHA>`, :ref:`dst_color_blend_factor<class_RDPipelineColorBlendStateAttachment_property_dst_color_blend_factor>` to :ref:`RenderingDevice.BLEND_FACTOR_ONE_MINUS_SRC_ALPHA<class_RenderingDevice_constant_BLEND_FACTOR_ONE_MINUS_SRC_ALPHA>`, :ref:`src_alpha_blend_factor<class_RDPipelineColorBlendStateAttachment_property_src_alpha_blend_factor>` to :ref:`RenderingDevice.BLEND_FACTOR_SRC_ALPHA<class_RenderingDevice_constant_BLEND_FACTOR_SRC_ALPHA>` and :ref:`dst_alpha_blend_factor<class_RDPipelineColorBlendStateAttachment_property_dst_alpha_blend_factor>` to :ref:`RenderingDevice.BLEND_FACTOR_ONE_MINUS_SRC_ALPHA<class_RenderingDevice_constant_BLEND_FACTOR_ONE_MINUS_SRC_ALPHA>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

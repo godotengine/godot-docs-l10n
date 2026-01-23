@@ -5,21 +5,21 @@
 HScrollBar
 ==========
 
-**繼承：** :ref:`ScrollBar<class_ScrollBar>` **<** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`ScrollBar<class_ScrollBar>` **<** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-水平捲軸，從左側（最小）滾動到右側（最大）。
+A horizontal scrollbar that goes from left (min) to right (max).
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-水平捲軸，通常用於為超出控制項可見寬度的內容進行導覽。這是基於 :ref:`Range<class_Range>` 的控件，從左側（最小）滾動到右側（最大）。
+A horizontal scrollbar, typically used to navigate through content that extends beyond the visible width of a control. It is a :ref:`Range<class_Range>`-based control and goes from left (min) to right (max).
 
 .. rst-class:: classref-reftable-group
 
-主題屬性
---------
+Theme Properties
+----------------
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ HScrollBar
 
 .. rst-class:: classref-descriptions-group
 
-主題屬性說明
-------------
+Theme Property Descriptions
+---------------------------
 
 .. _class_HScrollBar_theme_constant_padding_bottom:
 
@@ -63,12 +63,12 @@ Padding between the top of the :ref:`ScrollBar.scroll<class_ScrollBar_theme_styl
 
 \ **Note:** To apply horizontal padding, modify the left/right content margins of :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` instead.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

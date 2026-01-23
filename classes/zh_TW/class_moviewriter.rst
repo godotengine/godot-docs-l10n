@@ -5,14 +5,14 @@
 MovieWriter
 ===========
 
-**繼承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-非即時影片錄製編碼器的抽象類別。
+Abstract class for non-real-time video recording encoders.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 Godot can record videos with non-real-time simulation. Like the ``--fixed-fps`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`, this forces the reported ``delta`` in :ref:`Node._process()<class_Node_private_method__process>` functions to be identical across frames, regardless of how long it actually took to render the frame. This can be used to record high-quality videos with perfect frame pacing regardless of your hardware's capabilities.
 
@@ -36,8 +36,8 @@ If you need to encode to a different format or pipe a stream through third-party
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -64,8 +64,8 @@ If you need to encode to a different format or pipe a stream through third-party
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_MovieWriter_private_method__get_audio_mix_rate:
 
@@ -73,7 +73,7 @@ If you need to encode to a different format or pipe a stream through third-party
 
 :ref:`int<class_int>` **_get_audio_mix_rate**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_MovieWriter_private_method__get_audio_mix_rate>`
 
-當引擎請求用於錄製音訊的音訊取樣速率時呼叫。返回的值必須以 Hz 為單位指定。如果 :ref:`_get_audio_mix_rate()<class_MovieWriter_private_method__get_audio_mix_rate>` 未被重寫，則預設為 48000 Hz。
+Called when the audio sample rate used for recording the audio is requested by the engine. The value returned must be specified in Hz. Defaults to 48000 Hz if :ref:`_get_audio_mix_rate()<class_MovieWriter_private_method__get_audio_mix_rate>` is not overridden.
 
 .. rst-class:: classref-item-separator
 
@@ -85,7 +85,7 @@ If you need to encode to a different format or pipe a stream through third-party
 
 :ref:`SpeakerMode<enum_AudioServer_SpeakerMode>` **_get_audio_speaker_mode**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_MovieWriter_private_method__get_audio_speaker_mode>`
 
-當引擎請求用於錄製音訊的音訊揚聲器模式時呼叫。這可能會影響生成的音訊檔/流中的輸出通道數。如果 :ref:`_get_audio_speaker_mode()<class_MovieWriter_private_method__get_audio_speaker_mode>` 未被重寫，則預設為 :ref:`AudioServer.SPEAKER_MODE_STEREO<class_AudioServer_constant_SPEAKER_MODE_STEREO>`\ 。
+Called when the audio speaker mode used for recording the audio is requested by the engine. This can affect the number of output channels in the resulting audio file/stream. Defaults to :ref:`AudioServer.SPEAKER_MODE_STEREO<class_AudioServer_constant_SPEAKER_MODE_STEREO>` if :ref:`_get_audio_speaker_mode()<class_MovieWriter_private_method__get_audio_speaker_mode>` is not overridden.
 
 .. rst-class:: classref-item-separator
 
@@ -97,13 +97,13 @@ If you need to encode to a different format or pipe a stream through third-party
 
 :ref:`bool<class_bool>` **_handles_file**\ (\ path\: :ref:`String<class_String>`\ ) |virtual| |required| |const| :ref:`🔗<class_MovieWriter_private_method__handles_file>`
 
-當引擎確定該 **MovieWriter** 是否能夠處理位於 ``path`` 的檔時呼叫。如果該 **MovieWriter** 能夠處理給定的檔路徑，則必須返回 ``true``\ ，否則返回 ``false``\ 。通常，\ :ref:`_handles_file()<class_MovieWriter_private_method__handles_file>` 如下被重寫，以允許使用者使用給定檔副檔名，在任何路徑下記錄一個檔：
+Called when the engine determines whether this **MovieWriter** is able to handle the file at ``path``. Must return ``true`` if this **MovieWriter** is able to handle the given file path, ``false`` otherwise. Typically, :ref:`_handles_file()<class_MovieWriter_private_method__handles_file>` is overridden as follows to allow the user to record a file at any path with a given file extension:
 
 ::
 
     func _handles_file(path):
-        # 允許指定一個帶有 `.mkv` 檔副檔名（不區分大小寫）的輸出檔，
-        # 在專案設定中或使用 `--write-movie <path>` 命令列參數。
+        # Allows specifying an output file with a `.mkv` file extension (case-insensitive),
+        # either in the Project Settings or with the `--write-movie <path>` command line argument.
         return path.get_extension().to_lower() == "mkv"
 
 .. rst-class:: classref-item-separator
@@ -116,7 +116,7 @@ If you need to encode to a different format or pipe a stream through third-party
 
 :ref:`Error<enum_@GlobalScope_Error>` **_write_begin**\ (\ movie_size\: :ref:`Vector2i<class_Vector2i>`, fps\: :ref:`int<class_int>`, base_path\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_MovieWriter_private_method__write_begin>`
 
-在引擎開始寫入影片和音訊資料之前呼叫一次。\ ``movie_size`` 是要保存的影片的寬度和高度。\ ``fps`` 是指定的每秒影格數，在專案設定中、或使用 ``--fixed-fps <fps>``\ :doc:`《命令列參數》 <../tutorials/editor/command_line_tutorial>`\ 指定。
+Called once before the engine starts writing video and audio data. ``movie_size`` is the width and height of the video to save. ``fps`` is the number of frames per second specified in the project settings or using the ``--fixed-fps <fps>`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`.
 
 .. rst-class:: classref-item-separator
 
@@ -128,9 +128,9 @@ If you need to encode to a different format or pipe a stream through third-party
 
 |void| **_write_end**\ (\ ) |virtual| |required| :ref:`🔗<class_MovieWriter_private_method__write_end>`
 
-當引擎完成寫入時呼叫。當引擎通過按下視窗管理器的關閉按鈕退出時，或呼叫 :ref:`SceneTree.quit()<class_SceneTree_method_quit>` 時，會發生這種情況。
+Called when the engine finishes writing. This occurs when the engine quits by pressing the window manager's close button, or when :ref:`SceneTree.quit()<class_SceneTree_method_quit>` is called.
 
-\ **注意：**\ 在運作編輯器/專案的終端上，按 :kbd:`Ctrl + C`\ ，\ *不會*\ 導致 :ref:`_write_end()<class_MovieWriter_private_method__write_end>` 被呼叫。
+\ **Note:** Pressing :kbd:`Ctrl + C` on the terminal running the editor/project does *not* result in :ref:`_write_end()<class_MovieWriter_private_method__write_end>` being called.
 
 .. rst-class:: classref-item-separator
 
@@ -142,7 +142,7 @@ If you need to encode to a different format or pipe a stream through third-party
 
 :ref:`Error<enum_@GlobalScope_Error>` **_write_frame**\ (\ frame_image\: :ref:`Image<class_Image>`, audio_frame_block\: ``const void*``\ ) |virtual| |required| :ref:`🔗<class_MovieWriter_private_method__write_frame>`
 
-在每個算繪的影格結束時被呼叫。應寫入 ``frame_image`` 和 ``audio_frame_block`` 函式參數。
+Called at the end of every rendered frame. The ``frame_image`` and ``audio_frame_block`` function arguments should be written to.
 
 .. rst-class:: classref-item-separator
 
@@ -154,16 +154,16 @@ If you need to encode to a different format or pipe a stream through third-party
 
 |void| **add_writer**\ (\ writer\: :ref:`MovieWriter<class_MovieWriter>`\ ) |static| :ref:`🔗<class_MovieWriter_method_add_writer>`
 
-新增一個可供引擎使用的編寫器。可以通過重寫 :ref:`_handles_file()<class_MovieWriter_private_method__handles_file>`\ ，來設定支援的檔案副檔名。
+Adds a writer to be usable by the engine. The supported file extensions can be set by overriding :ref:`_handles_file()<class_MovieWriter_private_method__handles_file>`.
 
-\ **注意：**\ :ref:`add_writer()<class_MovieWriter_method_add_writer>` 必須在引擎初始化期間儘早呼叫才能工作，因為電影編寫被設計為與引擎的其餘部分同時啟動。
+\ **Note:** :ref:`add_writer()<class_MovieWriter_method_add_writer>` must be called early enough in the engine initialization to work, as movie writing is designed to start at the same time as the rest of the engine.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

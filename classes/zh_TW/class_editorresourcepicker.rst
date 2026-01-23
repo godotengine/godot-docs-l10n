@@ -5,25 +5,25 @@
 EditorResourcePicker
 ====================
 
-**繼承：** :ref:`HBoxContainer<class_HBoxContainer>` **<** :ref:`BoxContainer<class_BoxContainer>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`HBoxContainer<class_HBoxContainer>` **<** :ref:`BoxContainer<class_BoxContainer>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`EditorScriptPicker<class_EditorScriptPicker>`
+**Inherited By:** :ref:`EditorScriptPicker<class_EditorScriptPicker>`
 
-Godot 編輯器用於選擇 :ref:`Resource<class_Resource>` 型別屬性的控制項。
+Godot editor's control for selecting :ref:`Resource<class_Resource>` type properties.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-此 :ref:`Control<class_Control>` 節點用於編輯器的屬性屬性檢視器以允許編輯 :ref:`Resource<class_Resource>` 型別屬性。它提供了建立、載入、保存和轉換資源的選項。可以與 :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>` 屬性檢視器外掛程式一起使用以重新建立相同的行為。
+This :ref:`Control<class_Control>` node is used in the editor's Inspector dock to allow editing of :ref:`Resource<class_Resource>` type properties. It provides options for creating, loading, saving and converting resources. Can be used with :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>` to recreate the same behavior.
 
-\ **注意：**\ 這個 :ref:`Control<class_Control>` 不包括資源的任何編輯器，因為編輯是由屬性屬性檢視器本身或子屬性檢視器控制的。
+\ **Note:** This :ref:`Control<class_Control>` does not include any editor for the resource, as editing is controlled by the Inspector dock itself or sub-Inspectors.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ Godot 編輯器用於選擇 :ref:`Resource<class_Resource>` 型別屬性的控�
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -62,8 +62,8 @@ Godot 編輯器用於選擇 :ref:`Resource<class_Resource>` 型別屬性的控�
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_EditorResourcePicker_signal_resource_changed:
 
@@ -71,7 +71,7 @@ Godot 編輯器用於選擇 :ref:`Resource<class_Resource>` 型別屬性的控�
 
 **resource_changed**\ (\ resource\: :ref:`Resource<class_Resource>`\ ) :ref:`🔗<class_EditorResourcePicker_signal_resource_changed>`
 
-當正在編輯的資源改變值時發出。
+Emitted when the value of the edited resource was changed.
 
 .. rst-class:: classref-item-separator
 
@@ -83,7 +83,7 @@ Godot 編輯器用於選擇 :ref:`Resource<class_Resource>` 型別屬性的控�
 
 **resource_selected**\ (\ resource\: :ref:`Resource<class_Resource>`, inspect\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorResourcePicker_signal_resource_selected>`
 
-當資源值被設定，並且使用者點擊它編輯時觸發。當 ``inspect`` 為 ``true`` 時，該訊號是由本文功能表“編輯”或“檢查”選項引起的。
+Emitted when the resource value was set and user clicked to edit it. When ``inspect`` is ``true``, the signal was caused by the context menu "Edit" or "Inspect" option.
 
 .. rst-class:: classref-section-separator
 
@@ -91,8 +91,8 @@ Godot 編輯器用於選擇 :ref:`Resource<class_Resource>` 型別屬性的控�
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_EditorResourcePicker_property_base_type:
 
@@ -105,7 +105,7 @@ Godot 編輯器用於選擇 :ref:`Resource<class_Resource>` 型別屬性的控�
 - |void| **set_base_type**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_base_type**\ (\ )
 
-允許資源型別的基本型別。可以是幾個選項的逗號分離列表。
+The base type of allowed resource types. Can be a comma-separated list of several options.
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +122,7 @@ Godot 編輯器用於選擇 :ref:`Resource<class_Resource>` 型別屬性的控�
 - |void| **set_editable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_editable**\ (\ )
 
-如果為 ``true``\ ，則可以選擇和編輯該值。
+If ``true``, the value can be selected and edited.
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ Godot 編輯器用於選擇 :ref:`Resource<class_Resource>` 型別屬性的控�
 - |void| **set_edited_resource**\ (\ value\: :ref:`Resource<class_Resource>`\ )
 - :ref:`Resource<class_Resource>` **get_edited_resource**\ (\ )
 
-已編輯的資源值。
+The edited resource value.
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ Godot 編輯器用於選擇 :ref:`Resource<class_Resource>` 型別屬性的控�
 - |void| **set_toggle_mode**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_toggle_mode**\ (\ )
 
-如果為 ``true``\ ，帶有資源預覽的主按鈕在切換模式下工作。使用 :ref:`set_toggle_pressed()<class_EditorResourcePicker_method_set_toggle_pressed>` 來手動設定狀態。
+If ``true``, the main button with the resource preview works in the toggle mode. Use :ref:`set_toggle_pressed()<class_EditorResourcePicker_method_set_toggle_pressed>` to manually set the state.
 
 .. rst-class:: classref-section-separator
 
@@ -164,8 +164,8 @@ Godot 編輯器用於選擇 :ref:`Resource<class_Resource>` 型別屬性的控�
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_EditorResourcePicker_private_method__handle_menu_selected:
 
@@ -173,7 +173,7 @@ Godot 編輯器用於選擇 :ref:`Resource<class_Resource>` 型別屬性的控�
 
 :ref:`bool<class_bool>` **_handle_menu_selected**\ (\ id\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_EditorResourcePicker_private_method__handle_menu_selected>`
 
-該虛方法可以被實作，以處理預設未處理的本文功能表專案目。請參閱 :ref:`_set_create_options()<class_EditorResourcePicker_private_method__set_create_options>`\ 。
+This virtual method can be implemented to handle context menu items not handled by default. See :ref:`_set_create_options()<class_EditorResourcePicker_private_method__set_create_options>`.
 
 .. rst-class:: classref-item-separator
 
@@ -185,9 +185,9 @@ Godot 編輯器用於選擇 :ref:`Resource<class_Resource>` 型別屬性的控�
 
 |void| **_set_create_options**\ (\ menu_node\: :ref:`Object<class_Object>`\ ) |virtual| :ref:`🔗<class_EditorResourcePicker_private_method__set_create_options>`
 
-在更新 **EditorResourcePicker** 的本文功能表時呼叫該虛方法。實作該方法以使用你自己的選項覆蓋“新建 ...”專案。\ ``menu_node`` 是對 :ref:`PopupMenu<class_PopupMenu>` 節點的引用。
+This virtual method is called when updating the context menu of **EditorResourcePicker**. Implement this method to override the "New ..." items with your own options. ``menu_node`` is a reference to the :ref:`PopupMenu<class_PopupMenu>` node.
 
-\ **注意：**\ 實作 :ref:`_handle_menu_selected()<class_EditorResourcePicker_private_method__handle_menu_selected>` 來處理這些自訂項。
+\ **Note:** Implement :ref:`_handle_menu_selected()<class_EditorResourcePicker_private_method__handle_menu_selected>` to handle these custom items.
 
 .. rst-class:: classref-item-separator
 
@@ -199,7 +199,7 @@ Godot 編輯器用於選擇 :ref:`Resource<class_Resource>` 型別屬性的控�
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_allowed_types**\ (\ ) |const| :ref:`🔗<class_EditorResourcePicker_method_get_allowed_types>`
 
-返回一個與 :ref:`base_type<class_EditorResourcePicker_property_base_type>` 對應的所有允許的型別和子型別的列表。如果 :ref:`base_type<class_EditorResourcePicker_property_base_type>` 是空，將返回一個空的列表。
+Returns a list of all allowed types and subtypes corresponding to the :ref:`base_type<class_EditorResourcePicker_property_base_type>`. If the :ref:`base_type<class_EditorResourcePicker_property_base_type>` is empty, an empty list is returned.
 
 .. rst-class:: classref-item-separator
 
@@ -211,14 +211,14 @@ Godot 編輯器用於選擇 :ref:`Resource<class_Resource>` 型別屬性的控�
 
 |void| **set_toggle_pressed**\ (\ pressed\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorResourcePicker_method_set_toggle_pressed>`
 
-設定主按鈕的切換模式狀態。只有當 :ref:`toggle_mode<class_EditorResourcePicker_property_toggle_mode>` 被設定為 ``true`` 時才起作用。
+Sets the toggle mode state for the main button. Works only if :ref:`toggle_mode<class_EditorResourcePicker_property_toggle_mode>` is set to ``true``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,23 +5,23 @@
 EditorFeatureProfile
 ====================
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-編輯器功能配置，可用於禁用特定功能。
+An editor feature profile which can be used to disable specific features.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-編輯器功能配置可以用來禁用 Godot 編輯器的特定功能。當禁用時，這些功能將不會出現在編輯器中，從而使編輯器不那麼混亂。這個設定使編輯器更簡潔，在團隊中工作時。例如，遊戲美術和關卡設計師可以使用禁用腳本編輯器的功能配置，以避免意外地對他們不應該編輯的檔進行更改。
+An editor feature profile can be used to disable specific features of the Godot editor. When disabled, the features won't appear in the editor, which makes the editor less cluttered. This is useful in education settings to reduce confusion or when working in a team. For example, artists and level designers could use a feature profile that disables the script editor to avoid accidentally making changes to files they aren't supposed to edit.
 
-要視覺化地管理編輯器功能配置，請使用編輯器視窗頂部的\ **編輯器 >管理功能配置...**\ 。
+To manage editor feature profiles visually, use **Editor > Manage Feature Profiles...** at the top of the editor window.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ EditorFeatureProfile
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_EditorFeatureProfile_Feature:
 
@@ -71,7 +71,7 @@ enum **Feature**: :ref:`🔗<enum_EditorFeatureProfile_Feature>`
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_3D** = ``0``
 
-3D 編輯器。如果禁用此功能，3D 編輯器將不顯示，但 3D 節點仍將顯示在“建立新 Node”對話方塊中。
+The 3D editor. If this feature is disabled, the 3D editor won't display but 3D nodes will still display in the Create New Node dialog.
 
 .. _class_EditorFeatureProfile_constant_FEATURE_SCRIPT:
 
@@ -79,7 +79,7 @@ enum **Feature**: :ref:`🔗<enum_EditorFeatureProfile_Feature>`
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_SCRIPT** = ``1``
 
-腳本分頁，它包含腳本編輯器和類引用流覽器。如果該功能被禁用，腳本分頁將不會顯示。
+The Script tab, which contains the script editor and class reference browser. If this feature is disabled, the Script tab won't display.
 
 .. _class_EditorFeatureProfile_constant_FEATURE_ASSET_LIB:
 
@@ -87,7 +87,7 @@ enum **Feature**: :ref:`🔗<enum_EditorFeatureProfile_Feature>`
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_ASSET_LIB** = ``2``
 
-AssetLib 分頁。如果禁用此功能，則不會顯示 AssetLib 分頁。
+The AssetLib tab. If this feature is disabled, the AssetLib tab won't display.
 
 .. _class_EditorFeatureProfile_constant_FEATURE_SCENE_TREE:
 
@@ -95,7 +95,7 @@ AssetLib 分頁。如果禁用此功能，則不會顯示 AssetLib 分頁。
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_SCENE_TREE** = ``3``
 
-場景樹編輯。如果禁用此功能，場景樹面板仍將可見，但將是唯讀的。
+Scene tree editing. If this feature is disabled, the Scene tree dock will still be visible but will be read-only.
 
 .. _class_EditorFeatureProfile_constant_FEATURE_NODE_DOCK:
 
@@ -103,9 +103,9 @@ AssetLib 分頁。如果禁用此功能，則不會顯示 AssetLib 分頁。
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_NODE_DOCK** = ``4``
 
-**已棄用：** Replaced by the Signals and Groups docks.
+**Deprecated:** Replaced by the Signals and Groups docks.
 
-節點面板。如果此功能被禁用，訊號和組將不可見，也不能從編輯器中修改。
+The Node dock. If this feature is disabled, signals and groups won't be visible and modifiable from the editor.
 
 .. _class_EditorFeatureProfile_constant_FEATURE_FILESYSTEM_DOCK:
 
@@ -113,7 +113,7 @@ AssetLib 分頁。如果禁用此功能，則不會顯示 AssetLib 分頁。
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_FILESYSTEM_DOCK** = ``5``
 
-檔案系統面板。如果禁用此功能，則檔案系統面板將不可見。
+The FileSystem dock. If this feature is disabled, the FileSystem dock won't be visible.
 
 .. _class_EditorFeatureProfile_constant_FEATURE_IMPORT_DOCK:
 
@@ -121,7 +121,7 @@ AssetLib 分頁。如果禁用此功能，則不會顯示 AssetLib 分頁。
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_IMPORT_DOCK** = ``6``
 
-匯入面板。如果禁用此功能，則匯入面板將不可見。
+The Import dock. If this feature is disabled, the Import dock won't be visible.
 
 .. _class_EditorFeatureProfile_constant_FEATURE_HISTORY_DOCK:
 
@@ -129,7 +129,7 @@ AssetLib 分頁。如果禁用此功能，則不會顯示 AssetLib 分頁。
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_HISTORY_DOCK** = ``7``
 
-歷史面板。如果禁用此功能，則歷史面板將不可見。
+The History dock. If this feature is disabled, the History dock won't be visible.
 
 .. _class_EditorFeatureProfile_constant_FEATURE_GAME:
 
@@ -161,7 +161,7 @@ The Groups dock. If this feature is disabled, groups won't be visible and modifi
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_MAX** = ``11``
 
-代表 :ref:`Feature<enum_EditorFeatureProfile_Feature>` 列舉的大小。
+Represents the size of the :ref:`Feature<enum_EditorFeatureProfile_Feature>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -169,8 +169,8 @@ The Groups dock. If this feature is disabled, groups won't be visible and modifi
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_EditorFeatureProfile_method_get_feature_name:
 
@@ -178,7 +178,7 @@ The Groups dock. If this feature is disabled, groups won't be visible and modifi
 
 :ref:`String<class_String>` **get_feature_name**\ (\ feature\: :ref:`Feature<enum_EditorFeatureProfile_Feature>`\ ) :ref:`🔗<class_EditorFeatureProfile_method_get_feature_name>`
 
-返回指定功能 ``feature`` 的人類可讀名稱。
+Returns the specified ``feature``'s human-readable name.
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ The Groups dock. If this feature is disabled, groups won't be visible and modifi
 
 :ref:`bool<class_bool>` **is_class_disabled**\ (\ class_name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_EditorFeatureProfile_method_is_class_disabled>`
 
-如果 ``class_name`` 指定的類被禁用，則返回 ``true``\ 。被禁用時，該類不會出現在“建立 Node”對話方塊中。
+Returns ``true`` if the class specified by ``class_name`` is disabled. When disabled, the class won't appear in the Create New Node dialog.
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ The Groups dock. If this feature is disabled, groups won't be visible and modifi
 
 :ref:`bool<class_bool>` **is_class_editor_disabled**\ (\ class_name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_EditorFeatureProfile_method_is_class_editor_disabled>`
 
-如果對於由 ``class_name`` 指定的類別的編輯已停用，則回傳 ``true``\ 。停用時，該類別仍會顯示在新增節點對話框中，但選取繼承該類別的節點時，屬性檢視器將會是唯讀。
+Returns ``true`` if editing for the class specified by ``class_name`` is disabled. When disabled, the class will still appear in the Create New Node dialog but the Inspector will be read-only when selecting a node that extends the class.
 
 .. rst-class:: classref-item-separator
 
@@ -214,7 +214,7 @@ The Groups dock. If this feature is disabled, groups won't be visible and modifi
 
 :ref:`bool<class_bool>` **is_class_property_disabled**\ (\ class_name\: :ref:`StringName<class_StringName>`, property\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_EditorFeatureProfile_method_is_class_property_disabled>`
 
-如果 ``property`` 在由 ``class_name`` 指定的類別中被停用，則回傳 ``true``\ 。當屬性被停用時，在選取繼承由 ``class_name`` 指定的類別的節點時，它將不會出現在屬性檢視器中。
+Returns ``true`` if ``property`` is disabled in the class specified by ``class_name``. When a property is disabled, it won't appear in the Inspector when selecting a node that extends the class specified by ``class_name``.
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ The Groups dock. If this feature is disabled, groups won't be visible and modifi
 
 :ref:`bool<class_bool>` **is_feature_disabled**\ (\ feature\: :ref:`Feature<enum_EditorFeatureProfile_Feature>`\ ) |const| :ref:`🔗<class_EditorFeatureProfile_method_is_feature_disabled>`
 
-如果 ``feature`` 被禁用，則返回 ``true``\ 。當一個功能被禁用時，它將從編輯器中完全消失。
+Returns ``true`` if the ``feature`` is disabled. When a feature is disabled, it will disappear from the editor entirely.
 
 .. rst-class:: classref-item-separator
 
@@ -238,9 +238,9 @@ The Groups dock. If this feature is disabled, groups won't be visible and modifi
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_from_file**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorFeatureProfile_method_load_from_file>`
 
-從檔案載入編輯器功能設定檔。該檔案必須遵循使用功能設定檔管理員的 **Export** 按鈕或 :ref:`save_to_file()<class_EditorFeatureProfile_method_save_to_file>` 方法取得的 JSON 格式。
+Loads an editor feature profile from a file. The file must follow the JSON format obtained by using the feature profile manager's **Export** button or the :ref:`save_to_file()<class_EditorFeatureProfile_method_save_to_file>` method.
 
-\ **注意：** 透過使用者介面建立的功能設定檔從 ``feature_profiles`` 目錄加載，作為副檔名為 ``.profile`` 的檔案。可以使用\ :ref:`EditorPaths.get_config_dir()<class_EditorPaths_method_get_config_dir>`\ 找到編輯器設定資料夾。
+\ **Note:** Feature profiles created via the user interface are loaded from the ``feature_profiles`` directory, as a file with the ``.profile`` extension. The editor configuration folder can be found by using :ref:`EditorPaths.get_config_dir()<class_EditorPaths_method_get_config_dir>`.
 
 .. rst-class:: classref-item-separator
 
@@ -252,9 +252,9 @@ The Groups dock. If this feature is disabled, groups won't be visible and modifi
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_to_file**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorFeatureProfile_method_save_to_file>`
 
-將編輯器功能設定檔儲存到JSON 格式的檔案。然後可以使用功能設定檔管理器的\ **Import** 按鈕或\ :ref:`load_from_file()<class_EditorFeatureProfile_method_load_from_file>` 方法匯入它。
+Saves the editor feature profile to a file in JSON format. It can then be imported using the feature profile manager's **Import** button or the :ref:`load_from_file()<class_EditorFeatureProfile_method_load_from_file>` method.
 
-\ **注意：** 透過使用者介面建立的功能設定檔會以副檔名為 ``.profile`` 的檔案保存在 ``feature_profiles`` 目錄中。可以使用\ :ref:`EditorPaths.get_config_dir()<class_EditorPaths_method_get_config_dir>`\ 找到編輯器設定資料夾。
+\ **Note:** Feature profiles created via the user interface are saved in the ``feature_profiles`` directory, as a file with the ``.profile`` extension. The editor configuration folder can be found by using :ref:`EditorPaths.get_config_dir()<class_EditorPaths_method_get_config_dir>`.
 
 .. rst-class:: classref-item-separator
 
@@ -266,7 +266,7 @@ The Groups dock. If this feature is disabled, groups won't be visible and modifi
 
 |void| **set_disable_class**\ (\ class_name\: :ref:`StringName<class_StringName>`, disable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorFeatureProfile_method_set_disable_class>`
 
-如果 ``disable`` 為 ``true``\ ，則禁用 ``class_name`` 指定的類。禁用後，該類不會出現在“建立新 Node”對話方塊中。
+If ``disable`` is ``true``, disables the class specified by ``class_name``. When disabled, the class won't appear in the Create New Node dialog.
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ If ``disable`` is ``true``, disables editing for the class specified by ``class_
 
 |void| **set_disable_class_property**\ (\ class_name\: :ref:`StringName<class_StringName>`, property\: :ref:`StringName<class_StringName>`, disable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorFeatureProfile_method_set_disable_class_property>`
 
-如果 ``disable`` 為 ``true``\ ，則停用由 ``class_name`` 指定之類別中 ``property`` 的編輯功能。當一個屬性被停用時，在選取繼承自由 ``class_name`` 指定之類別的節點時，它將不會出現在屬性檢視器中。
+If ``disable`` is ``true``, disables editing for ``property`` in the class specified by ``class_name``. When a property is disabled, it won't appear in the Inspector when selecting a node that extends the class specified by ``class_name``.
 
 .. rst-class:: classref-item-separator
 
@@ -302,14 +302,14 @@ If ``disable`` is ``true``, disables editing for the class specified by ``class_
 
 |void| **set_disable_feature**\ (\ feature\: :ref:`Feature<enum_EditorFeatureProfile_Feature>`, disable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorFeatureProfile_method_set_disable_feature>`
 
-如果 ``disable`` 為 ``true``\ ，則禁用 ``feature`` 中指定的編輯器功能。當一個功能被禁用時，它將從編輯器中完全消失。
+If ``disable`` is ``true``, disables the editor feature specified in ``feature``. When a feature is disabled, it will disappear from the editor entirely.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

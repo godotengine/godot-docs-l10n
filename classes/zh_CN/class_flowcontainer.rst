@@ -5,30 +5,30 @@
 FlowContainer
 =============
 
-**继承：** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**派生：** :ref:`HFlowContainer<class_HFlowContainer>`, :ref:`VFlowContainer<class_VFlowContainer>`
+**Inherited By:** :ref:`HFlowContainer<class_HFlowContainer>`, :ref:`VFlowContainer<class_VFlowContainer>`
 
-将子控件横向或纵向排列并在边界处换行的容器。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-将子控件横向或纵向排列并在边界处换行的容器。类似于书本中文字在一行中写不下以后的换行方式。
+A container that arranges its child controls horizontally or vertically and wraps them around at the borders.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`使用容器 <../tutorials/ui/gui_containers>`
+A container that arranges its child controls horizontally or vertically and wraps them around at the borders. This is similar to how text in a book wraps around when no more words can fit on a line.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Using Containers <../tutorials/ui/gui_containers>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ FlowContainer
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -57,8 +57,8 @@ FlowContainer
 
 .. rst-class:: classref-reftable-group
 
-主题属性
---------
+Theme Properties
+----------------
 
 .. table::
    :widths: auto
@@ -75,8 +75,8 @@ FlowContainer
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_FlowContainer_AlignmentMode:
 
@@ -90,7 +90,7 @@ enum **AlignmentMode**: :ref:`🔗<enum_FlowContainer_AlignmentMode>`
 
 :ref:`AlignmentMode<enum_FlowContainer_AlignmentMode>` **ALIGNMENT_BEGIN** = ``0``
 
-子控件会被排列在该容器的开头，如果是垂直朝向则为顶部，如果是水平朝向则为左侧（RTL 布局时为右侧）。
+The child controls will be arranged at the beginning of the container, i.e. top if orientation is vertical, left if orientation is horizontal (right for RTL layout).
 
 .. _class_FlowContainer_constant_ALIGNMENT_CENTER:
 
@@ -98,7 +98,7 @@ enum **AlignmentMode**: :ref:`🔗<enum_FlowContainer_AlignmentMode>`
 
 :ref:`AlignmentMode<enum_FlowContainer_AlignmentMode>` **ALIGNMENT_CENTER** = ``1``
 
-子控件会在该容器里居中。
+The child controls will be centered in the container.
 
 .. _class_FlowContainer_constant_ALIGNMENT_END:
 
@@ -106,7 +106,7 @@ enum **AlignmentMode**: :ref:`🔗<enum_FlowContainer_AlignmentMode>`
 
 :ref:`AlignmentMode<enum_FlowContainer_AlignmentMode>` **ALIGNMENT_END** = ``2``
 
-子控件会被排列在该容器的末尾，如果是垂直朝向则为底部，如果是水平朝向则为右侧（RTL 布局时为左侧）。
+The child controls will be arranged at the end of the container, i.e. bottom if orientation is vertical, right if orientation is horizontal (left for RTL layout).
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ enum **LastWrapAlignmentMode**: :ref:`🔗<enum_FlowContainer_LastWrapAlignmentM
 
 :ref:`LastWrapAlignmentMode<enum_FlowContainer_LastWrapAlignmentMode>` **LAST_WRAP_ALIGNMENT_INHERIT** = ``0``
 
-最后部分填充的行或列将按照 :ref:`alignment<class_FlowContainer_property_alignment>` 与前一行或前一列对齐。
+The last partially filled row or column will wrap aligned to the previous row or column in accordance with :ref:`alignment<class_FlowContainer_property_alignment>`.
 
 .. _class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_BEGIN:
 
@@ -132,7 +132,7 @@ enum **LastWrapAlignmentMode**: :ref:`🔗<enum_FlowContainer_LastWrapAlignmentM
 
 :ref:`LastWrapAlignmentMode<enum_FlowContainer_LastWrapAlignmentMode>` **LAST_WRAP_ALIGNMENT_BEGIN** = ``1``
 
-最后部分填充的行或列将会与前一行或前一列的开头对齐。
+The last partially filled row or column will wrap aligned to the beginning of the previous row or column.
 
 .. _class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_CENTER:
 
@@ -140,7 +140,7 @@ enum **LastWrapAlignmentMode**: :ref:`🔗<enum_FlowContainer_LastWrapAlignmentM
 
 :ref:`LastWrapAlignmentMode<enum_FlowContainer_LastWrapAlignmentMode>` **LAST_WRAP_ALIGNMENT_CENTER** = ``2``
 
-最后部分填充的行或列将会与前一行或前一列的中心对齐。
+The last partially filled row or column will wrap aligned to the center of the previous row or column.
 
 .. _class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_END:
 
@@ -148,7 +148,7 @@ enum **LastWrapAlignmentMode**: :ref:`🔗<enum_FlowContainer_LastWrapAlignmentM
 
 :ref:`LastWrapAlignmentMode<enum_FlowContainer_LastWrapAlignmentMode>` **LAST_WRAP_ALIGNMENT_END** = ``3``
 
-最后部分填充的行或列将会与前一行或前一列的末尾对齐。
+The last partially filled row or column will wrap aligned to the end of the previous row or column.
 
 .. rst-class:: classref-section-separator
 
@@ -156,8 +156,8 @@ enum **LastWrapAlignmentMode**: :ref:`🔗<enum_FlowContainer_LastWrapAlignmentM
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_FlowContainer_property_alignment:
 
@@ -170,7 +170,7 @@ enum **LastWrapAlignmentMode**: :ref:`🔗<enum_FlowContainer_LastWrapAlignmentM
 - |void| **set_alignment**\ (\ value\: :ref:`AlignmentMode<enum_FlowContainer_AlignmentMode>`\ )
 - :ref:`AlignmentMode<enum_FlowContainer_AlignmentMode>` **get_alignment**\ (\ )
 
-该容器子节点的对齐方式（必须是 :ref:`ALIGNMENT_BEGIN<class_FlowContainer_constant_ALIGNMENT_BEGIN>`\ 、\ :ref:`ALIGNMENT_CENTER<class_FlowContainer_constant_ALIGNMENT_CENTER>`\ 、\ :ref:`ALIGNMENT_END<class_FlowContainer_constant_ALIGNMENT_END>` 之一）。
+The alignment of the container's children (must be one of :ref:`ALIGNMENT_BEGIN<class_FlowContainer_constant_ALIGNMENT_BEGIN>`, :ref:`ALIGNMENT_CENTER<class_FlowContainer_constant_ALIGNMENT_CENTER>`, or :ref:`ALIGNMENT_END<class_FlowContainer_constant_ALIGNMENT_END>`).
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ enum **LastWrapAlignmentMode**: :ref:`🔗<enum_FlowContainer_LastWrapAlignmentM
 - |void| **set_last_wrap_alignment**\ (\ value\: :ref:`LastWrapAlignmentMode<enum_FlowContainer_LastWrapAlignmentMode>`\ )
 - :ref:`LastWrapAlignmentMode<enum_FlowContainer_LastWrapAlignmentMode>` **get_last_wrap_alignment**\ (\ )
 
-最后一个未填满的行/列的对齐方式（必须是 :ref:`LAST_WRAP_ALIGNMENT_INHERIT<class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_INHERIT>`\ 、\ :ref:`LAST_WRAP_ALIGNMENT_BEGIN<class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_BEGIN>`\ 、\ :ref:`LAST_WRAP_ALIGNMENT_CENTER<class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_CENTER>`\ 、\ :ref:`LAST_WRAP_ALIGNMENT_END<class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_END>` 之一）。
+The wrap behavior of the last, partially filled row or column (must be one of :ref:`LAST_WRAP_ALIGNMENT_INHERIT<class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_INHERIT>`, :ref:`LAST_WRAP_ALIGNMENT_BEGIN<class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_BEGIN>`, :ref:`LAST_WRAP_ALIGNMENT_CENTER<class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_CENTER>`, or :ref:`LAST_WRAP_ALIGNMENT_END<class_FlowContainer_constant_LAST_WRAP_ALIGNMENT_END>`).
 
 .. rst-class:: classref-item-separator
 
@@ -204,9 +204,9 @@ enum **LastWrapAlignmentMode**: :ref:`🔗<enum_FlowContainer_LastWrapAlignmentM
 - |void| **set_reverse_fill**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_reverse_fill**\ (\ )
 
-如果为 ``true`` ，则翻转填充方向。水平的 **FlowContainer** 会从下往上一行行填充，垂直的 **FlowContainer** 会从右往左一列列填充。
+If ``true``, reverses fill direction. Horizontal **FlowContainer**\ s will fill rows bottom to top, vertical **FlowContainer**\ s will fill columns right to left.
 
-如果使用的是垂直的 **FlowContainer** 和从右至左的 :ref:`Control.layout_direction<class_Control_property_layout_direction>`\ ，则会从左往右一列列填充。
+When using a vertical **FlowContainer** with a right to left :ref:`Control.layout_direction<class_Control_property_layout_direction>`, columns will fill left to right instead.
 
 .. rst-class:: classref-item-separator
 
@@ -223,9 +223,9 @@ enum **LastWrapAlignmentMode**: :ref:`🔗<enum_FlowContainer_LastWrapAlignmentM
 - |void| **set_vertical**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_vertical**\ (\ )
 
-如果为 ``true``\ ，则 **FlowContainer** 将垂直排列子节点，而不是水平排列。
+If ``true``, the **FlowContainer** will arrange its children vertically, rather than horizontally.
 
-使用 :ref:`HFlowContainer<class_HFlowContainer>` 和 :ref:`VFlowContainer<class_VFlowContainer>` 时不能改变。
+Can't be changed when using :ref:`HFlowContainer<class_HFlowContainer>` and :ref:`VFlowContainer<class_VFlowContainer>`.
 
 .. rst-class:: classref-section-separator
 
@@ -233,8 +233,8 @@ enum **LastWrapAlignmentMode**: :ref:`🔗<enum_FlowContainer_LastWrapAlignmentM
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_FlowContainer_method_get_line_count:
 
@@ -242,7 +242,7 @@ enum **LastWrapAlignmentMode**: :ref:`🔗<enum_FlowContainer_LastWrapAlignmentM
 
 :ref:`int<class_int>` **get_line_count**\ (\ ) |const| :ref:`🔗<class_FlowContainer_method_get_line_count>`
 
-返回当前的行数。
+Returns the current line count.
 
 .. rst-class:: classref-section-separator
 
@@ -250,8 +250,8 @@ enum **LastWrapAlignmentMode**: :ref:`🔗<enum_FlowContainer_LastWrapAlignmentM
 
 .. rst-class:: classref-descriptions-group
 
-主题属性说明
-------------
+Theme Property Descriptions
+---------------------------
 
 .. _class_FlowContainer_theme_constant_h_separation:
 
@@ -259,7 +259,7 @@ enum **LastWrapAlignmentMode**: :ref:`🔗<enum_FlowContainer_LastWrapAlignmentM
 
 :ref:`int<class_int>` **h_separation** = ``4`` :ref:`🔗<class_FlowContainer_theme_constant_h_separation>`
 
-子节点的水平分隔量。
+The horizontal separation of child nodes.
 
 .. rst-class:: classref-item-separator
 
@@ -271,14 +271,14 @@ enum **LastWrapAlignmentMode**: :ref:`🔗<enum_FlowContainer_LastWrapAlignmentM
 
 :ref:`int<class_int>` **v_separation** = ``4`` :ref:`🔗<class_FlowContainer_theme_constant_v_separation>`
 
-子节点的垂直分隔量。
+The vertical separation of child nodes.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

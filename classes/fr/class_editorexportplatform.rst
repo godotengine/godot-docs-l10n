@@ -374,7 +374,7 @@ Returns additional files that should always be exported regardless of preset con
 
 :ref:`String<class_String>` **get_message_category**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_message_category>`
 
-Retourne la catégorie de message pour le message à l'index  donné.
+Retourne la catégorie de message pour le message à l'``index`` donné.
 
 .. rst-class:: classref-item-separator
 

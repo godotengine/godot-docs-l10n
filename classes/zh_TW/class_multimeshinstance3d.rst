@@ -8,34 +8,34 @@
 MultiMeshInstance3D
 ===================
 
-**繼承：** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-產生實體 :ref:`MultiMesh<class_MultiMesh>` 的節點。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-:ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>` 是專用於產生實體基於 :ref:`MultiMesh<class_MultiMesh>` 資源的 :ref:`GeometryInstance3D<class_GeometryInstance3D>` 的節點。
-
-適用於優化大量給定網格實例的算繪（例如森林中的樹木或草叢）。
+Node that instances a :ref:`MultiMesh<class_MultiMesh>`.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`使用 MultiMeshInstance <../tutorials/3d/using_multi_mesh_instance>`
+**MultiMeshInstance3D** is a specialized node to instance :ref:`GeometryInstance3D<class_GeometryInstance3D>`\ s based on a :ref:`MultiMesh<class_MultiMesh>` resource.
 
-- :doc:`使用 MultiMesh 進行優化 <../tutorials/performance/using_multimesh>`
+This is useful to optimize the rendering of a high number of instances of a given mesh (for example trees in a forest or grass strands).
 
-- :doc:`使用 MultiMeshInstance 動畫化數千條魚 <../tutorials/performance/vertex_animation/animating_thousands_of_fish>`
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Using MultiMeshInstance <../tutorials/3d/using_multi_mesh_instance>`
+
+- :doc:`Optimization using MultiMeshes <../tutorials/performance/using_multimesh>`
+
+- :doc:`Animating thousands of fish with MultiMeshInstance <../tutorials/performance/vertex_animation/animating_thousands_of_fish>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ MultiMeshInstance3D
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_MultiMeshInstance3D_property_multimesh:
 
@@ -64,14 +64,14 @@ MultiMeshInstance3D
 - |void| **set_multimesh**\ (\ value\: :ref:`MultiMesh<class_MultiMesh>`\ )
 - :ref:`MultiMesh<class_MultiMesh>` **get_multimesh**\ (\ )
 
-將在 **MultiMeshInstance3D** 的所有實例之間，使用和共用的 :ref:`MultiMesh<class_MultiMesh>` 資源。
+The :ref:`MultiMesh<class_MultiMesh>` resource that will be used and shared among all instances of the **MultiMeshInstance3D**.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

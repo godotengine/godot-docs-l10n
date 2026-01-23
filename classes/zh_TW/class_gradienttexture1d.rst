@@ -5,21 +5,21 @@
 GradientTexture1D
 =================
 
-**繼承：** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-使用從 :ref:`Gradient<class_Gradient>` 獲得的顏色的 1D 紋理。
+A 1D texture that uses colors obtained from a :ref:`Gradient<class_Gradient>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-GradientTexture1D 使用一個 :ref:`Gradient<class_Gradient>` 來填充紋理資料。該漸變紋理將使用從漸變中獲得的顏色從左到右進行填充。這意味著該紋理不一定代表漸變的精確副本，而是以固定步長從漸變中獲得的樣本的插值（見 :ref:`width<class_GradientTexture1D_property_width>`\ ）。另見 :ref:`GradientTexture2D<class_GradientTexture2D>`\ 、\ :ref:`CurveTexture<class_CurveTexture>` 和 :ref:`CurveXYZTexture<class_CurveXYZTexture>`\ 。
+A 1D texture that obtains colors from a :ref:`Gradient<class_Gradient>` to fill the texture data. The texture is filled by sampling the gradient for each pixel. Therefore, the texture does not necessarily represent an exact copy of the gradient, as it may miss some colors if there are not enough pixels. See also :ref:`GradientTexture2D<class_GradientTexture2D>`, :ref:`CurveTexture<class_CurveTexture>` and :ref:`CurveXYZTexture<class_CurveXYZTexture>`.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ GradientTexture1D 使用一個 :ref:`Gradient<class_Gradient>` 來填充紋理�
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_GradientTexture1D_property_gradient:
 
@@ -54,7 +54,7 @@ GradientTexture1D 使用一個 :ref:`Gradient<class_Gradient>` 來填充紋理�
 - |void| **set_gradient**\ (\ value\: :ref:`Gradient<class_Gradient>`\ )
 - :ref:`Gradient<class_Gradient>` **get_gradient**\ (\ )
 
-用於填充紋理的 :ref:`Gradient<class_Gradient>`\ 。
+The :ref:`Gradient<class_Gradient>` used to fill the texture.
 
 .. rst-class:: classref-item-separator
 
@@ -71,7 +71,7 @@ GradientTexture1D 使用一個 :ref:`Gradient<class_Gradient>` 來填充紋理�
 - |void| **set_use_hdr**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_hdr**\ (\ )
 
-如果為 ``true``\ ，則生成的紋理會支援高動態範圍（\ :ref:`Image.FORMAT_RGBAF<class_Image_constant_FORMAT_RGBAF>` 格式）。可以在 :ref:`Environment.glow_enabled<class_Environment_property_glow_enabled>` 為 ``true`` 時實作輝光效果。如果為 ``false``\ ，則生成的紋理會使用低動態範圍；過亮的顏色會被鉗制（\ :ref:`Image.FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>` 格式）。
+If ``true``, the generated texture will support high dynamic range (:ref:`Image.FORMAT_RGBAF<class_Image_constant_FORMAT_RGBAF>` format). This allows for glow effects to work if :ref:`Environment.glow_enabled<class_Environment_property_glow_enabled>` is ``true``. If ``false``, the generated texture will use low dynamic range; overbright colors will be clamped (:ref:`Image.FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>` format).
 
 .. rst-class:: classref-item-separator
 
@@ -88,14 +88,14 @@ GradientTexture1D 使用一個 :ref:`Gradient<class_Gradient>` 來填充紋理�
 - |void| **set_width**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_width**\ (\ )
 
-將從 :ref:`Gradient<class_Gradient>` 中獲得的顏色樣本的數量。
+The number of color samples that will be obtained from the :ref:`Gradient<class_Gradient>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

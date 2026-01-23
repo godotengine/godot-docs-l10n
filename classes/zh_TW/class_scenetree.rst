@@ -5,14 +5,14 @@
 SceneTree
 =========
 
-**繼承：** :ref:`MainLoop<class_MainLoop>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`MainLoop<class_MainLoop>` **<** :ref:`Object<class_Object>`
 
-通過節點層次結構管理遊戲迴圈。
+Manages the game loop via a hierarchy of nodes.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 As one of the most important classes, the **SceneTree** manages the hierarchy of nodes in a scene, as well as scenes themselves. Nodes can be added, fetched and removed. The whole scene tree (and thus the current scene) can be paused. Scenes can be loaded, switched and reloaded.
 
@@ -22,17 +22,17 @@ You can also use the **SceneTree** to organize your nodes into **groups**: every
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
 - :doc:`SceneTree <../tutorials/scripting/scene_tree>`
 
-- :doc:`多解析度 <../tutorials/rendering/multiple_resolutions>`
+- :doc:`Multiple resolutions <../tutorials/rendering/multiple_resolutions>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -63,8 +63,8 @@ You can also use the **SceneTree** to organize your nodes into **groups**: every
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -129,8 +129,8 @@ You can also use the **SceneTree** to organize your nodes into **groups**: every
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_SceneTree_signal_node_added:
 
@@ -249,8 +249,8 @@ Emitted when the :ref:`Node.process_mode<class_Node_property_process_mode>` of a
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_SceneTree_GroupCallFlags:
 
@@ -298,8 +298,8 @@ Call nodes within a group only once, even if the call is executed many times in 
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_SceneTree_property_auto_accept_quit:
 
@@ -312,9 +312,9 @@ Call nodes within a group only once, even if the call is executed many times in 
 - |void| **set_auto_accept_quit**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_auto_accept_quit**\ (\ )
 
-如果為 ``true``\ ，則套用程式會自動接受退出請求。
+If ``true``, the application automatically accepts quitting requests.
 
-移動平臺見 :ref:`quit_on_go_back<class_SceneTree_property_quit_on_go_back>`\ 。
+For mobile platforms, see :ref:`quit_on_go_back<class_SceneTree_property_quit_on_go_back>`.
 
 .. rst-class:: classref-item-separator
 
@@ -350,9 +350,9 @@ The root node of the currently loaded main scene, usually as a direct child of :
 - |void| **set_debug_collisions_hint**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_debugging_collisions_hint**\ (\ )
 
-如果為 ``true``\ ，從編輯器中運作遊戲時會顯示碰撞形狀，方便除錯。
+If ``true``, collision shapes will be visible when running the game from the editor for debugging purposes.
 
-\ **注意：**\ 這個屬性不應在運作時更改。在運作專案時更改 :ref:`debug_collisions_hint<class_SceneTree_property_debug_collisions_hint>` 的值不會有想要的效果。
+\ **Note:** This property is not designed to be changed at run-time. Changing the value of :ref:`debug_collisions_hint<class_SceneTree_property_debug_collisions_hint>` while the project is running will not have the desired effect.
 
 .. rst-class:: classref-item-separator
 
@@ -369,9 +369,9 @@ The root node of the currently loaded main scene, usually as a direct child of :
 - |void| **set_debug_navigation_hint**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_debugging_navigation_hint**\ (\ )
 
-如果為 ``true``\ ，從編輯器中運作遊戲時會顯示導覽多邊形，方便除錯。
+If ``true``, navigation polygons will be visible when running the game from the editor for debugging purposes.
 
-\ **注意：**\ 這個屬性不應在運作時更改。在運作專案時更改 :ref:`debug_navigation_hint<class_SceneTree_property_debug_navigation_hint>` 的值不會有想要的效果。
+\ **Note:** This property is not designed to be changed at run-time. Changing the value of :ref:`debug_navigation_hint<class_SceneTree_property_debug_navigation_hint>` while the project is running will not have the desired effect.
 
 .. rst-class:: classref-item-separator
 
@@ -388,9 +388,9 @@ The root node of the currently loaded main scene, usually as a direct child of :
 - |void| **set_debug_paths_hint**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_debugging_paths_hint**\ (\ )
 
-如果為 ``true``\ ，從編輯器中運作遊戲時，來自 :ref:`Path2D<class_Path2D>` 和 :ref:`Path3D<class_Path3D>` 節點的曲線將可見以進行除錯。
+If ``true``, curves from :ref:`Path2D<class_Path2D>` and :ref:`Path3D<class_Path3D>` nodes will be visible when running the game from the editor for debugging purposes.
 
-\ **注意：**\ 該屬性沒有被設計為在運作時更改。在專案運作時更改 :ref:`debug_paths_hint<class_SceneTree_property_debug_paths_hint>` 的值不會產生預期的效果。
+\ **Note:** This property is not designed to be changed at run-time. Changing the value of :ref:`debug_paths_hint<class_SceneTree_property_debug_paths_hint>` while the project is running will not have the desired effect.
 
 .. rst-class:: classref-item-separator
 
@@ -426,9 +426,9 @@ The root of the scene currently being edited in the editor. This is usually a di
 - |void| **set_multiplayer_poll_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_multiplayer_poll_enabled**\ (\ )
 
-如果為 ``true``\ （預設值），則在 :ref:`process_frame<class_SceneTree_signal_process_frame>` 期間為該 SceneTree 啟用 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 的自動輪詢。
+If ``true`` (default value), enables automatic polling of the :ref:`MultiplayerAPI<class_MultiplayerAPI>` for this SceneTree during :ref:`process_frame<class_SceneTree_signal_process_frame>`.
 
-如果為 ``false``\ ，則需要手動呼叫 :ref:`MultiplayerAPI.poll()<class_MultiplayerAPI_method_poll>` 以處理網路封包並下發 RPC。這允許在一個不同的迴圈（例如物理、執行緒、特定時間步長）中運作 RPC，並在從執行緒存取 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 時進行手動 :ref:`Mutex<class_Mutex>` 保護。
+If ``false``, you need to manually call :ref:`MultiplayerAPI.poll()<class_MultiplayerAPI_method_poll>` to process network packets and deliver RPCs. This allows running RPCs in a different loop (e.g. physics, thread, specific time step) and for manual :ref:`Mutex<class_Mutex>` protection when accessing the :ref:`MultiplayerAPI<class_MultiplayerAPI>` from threads.
 
 .. rst-class:: classref-item-separator
 
@@ -487,9 +487,9 @@ The default value of this property is controlled by :ref:`ProjectSettings.physic
 - |void| **set_quit_on_go_back**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_quit_on_go_back**\ (\ )
 
-如果為 ``true``\ ，則該套用程式會在導覽返回時自動退出（例如在 Android 上使用系統“返回”鍵）。
+If ``true``, the application quits automatically when navigating back (e.g. using the system "Back" button on Android).
 
-禁用這個選項時，如果要處理“返回”按鈕，請使用 :ref:`DisplayServer.WINDOW_EVENT_GO_BACK_REQUEST<class_DisplayServer_constant_WINDOW_EVENT_GO_BACK_REQUEST>`\ 。
+To handle 'Go Back' button when this option is disabled, use :ref:`DisplayServer.WINDOW_EVENT_GO_BACK_REQUEST<class_DisplayServer_constant_WINDOW_EVENT_GO_BACK_REQUEST>`.
 
 .. rst-class:: classref-item-separator
 
@@ -515,8 +515,8 @@ The tree's root :ref:`Window<class_Window>`. This is top-most :ref:`Node<class_N
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_SceneTree_method_call_group:
 
@@ -700,7 +700,7 @@ Returns how many physics process steps have been processed, since the applicatio
 
 :ref:`MultiplayerAPI<class_MultiplayerAPI>` **get_multiplayer**\ (\ for_path\: :ref:`NodePath<class_NodePath>` = NodePath("")\ ) |const| :ref:`🔗<class_SceneTree_method_get_multiplayer>`
 
-搜尋為給定路徑配置的 :ref:`MultiplayerAPI<class_MultiplayerAPI>`\ ，如果不存在，則搜尋父路徑，直到找到一個。如果路徑為空，或沒有找到，則傳回預設值。請請參閱\ :ref:`set_multiplayer()<class_SceneTree_method_set_multiplayer>`\ 。
+Searches for the :ref:`MultiplayerAPI<class_MultiplayerAPI>` configured for the given path, if one does not exist it searches the parent paths until one is found. If the path is empty, or none is found, the default one is returned. See :ref:`set_multiplayer()<class_SceneTree_method_set_multiplayer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -910,14 +910,14 @@ Sets a custom :ref:`MultiplayerAPI<class_MultiplayerAPI>` with the given ``root_
 
 |void| **unload_current_scene**\ (\ ) :ref:`🔗<class_SceneTree_method_unload_current_scene>`
 
-如果目前場景已載入，呼叫此方法將進行解除安裝。
+If a current scene is loaded, calling this method will unload it.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

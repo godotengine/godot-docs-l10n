@@ -5,32 +5,32 @@
 NavigationMesh
 ==============
 
-**實驗性：** This class may be changed or removed in future versions.
+**Experimental:** This class may be changed or removed in future versions.
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用於定義可達區域和障礙物的導覽網格。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-導覽網格是多邊形的集合，用於定義環境中的哪些區域是可以穿越的，説明代理在複雜的空間中尋路。
+A navigation mesh that defines traversable areas and obstacles.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`使用 NavigationMesh <../tutorials/navigation/navigation_using_navigationmeshes>`
+A navigation mesh is a collection of polygons that define which areas of an environment are traversable to aid agents in pathfinding through complicated spaces.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Using NavigationMeshes <../tutorials/navigation/navigation_using_navigationmeshes>`
 
 - `3D Navigation Demo <https://godotengine.org/asset-library/asset/2743>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -87,8 +87,8 @@ NavigationMesh
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -121,8 +121,8 @@ NavigationMesh
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_NavigationMesh_SamplePartitionType:
 
@@ -136,7 +136,7 @@ enum **SamplePartitionType**: :ref:`🔗<enum_NavigationMesh_SamplePartitionType
 
 :ref:`SamplePartitionType<enum_NavigationMesh_SamplePartitionType>` **SAMPLE_PARTITION_WATERSHED** = ``0``
 
-分水嶺分區。如果你預先計算導覽網格，通常是最佳選擇，如果你有大的開放區域，請使用它。
+Watershed partitioning. Generally the best choice if you precompute the navigation mesh, use this if you have large open areas.
 
 .. _class_NavigationMesh_constant_SAMPLE_PARTITION_MONOTONE:
 
@@ -144,7 +144,7 @@ enum **SamplePartitionType**: :ref:`🔗<enum_NavigationMesh_SamplePartitionType
 
 :ref:`SamplePartitionType<enum_NavigationMesh_SamplePartitionType>` **SAMPLE_PARTITION_MONOTONE** = ``1``
 
-單調分區。如果你想要快速生成導覽網格，請使用此選項。
+Monotone partitioning. Use this if you want fast navigation mesh generation.
 
 .. _class_NavigationMesh_constant_SAMPLE_PARTITION_LAYERS:
 
@@ -152,7 +152,7 @@ enum **SamplePartitionType**: :ref:`🔗<enum_NavigationMesh_SamplePartitionType
 
 :ref:`SamplePartitionType<enum_NavigationMesh_SamplePartitionType>` **SAMPLE_PARTITION_LAYERS** = ``2``
 
-層分區。用於具有中小型圖塊的平鋪導覽網格的不錯選擇。
+Layer partitioning. Good choice to use for tiled navigation mesh with medium and small sized tiles.
 
 .. _class_NavigationMesh_constant_SAMPLE_PARTITION_MAX:
 
@@ -160,7 +160,7 @@ enum **SamplePartitionType**: :ref:`🔗<enum_NavigationMesh_SamplePartitionType
 
 :ref:`SamplePartitionType<enum_NavigationMesh_SamplePartitionType>` **SAMPLE_PARTITION_MAX** = ``3``
 
-代表 :ref:`SamplePartitionType<enum_NavigationMesh_SamplePartitionType>` 列舉的大小。
+Represents the size of the :ref:`SamplePartitionType<enum_NavigationMesh_SamplePartitionType>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ enum **ParsedGeometryType**: :ref:`🔗<enum_NavigationMesh_ParsedGeometryType>`
 
 :ref:`ParsedGeometryType<enum_NavigationMesh_ParsedGeometryType>` **PARSED_GEOMETRY_MESH_INSTANCES** = ``0``
 
-將網格實例解析為幾何體。包括 :ref:`MeshInstance3D<class_MeshInstance3D>`\ 、\ :ref:`CSGShape3D<class_CSGShape3D>`\ 、\ :ref:`GridMap<class_GridMap>` 等節點。
+Parses mesh instances as geometry. This includes :ref:`MeshInstance3D<class_MeshInstance3D>`, :ref:`CSGShape3D<class_CSGShape3D>`, and :ref:`GridMap<class_GridMap>` nodes.
 
 .. _class_NavigationMesh_constant_PARSED_GEOMETRY_STATIC_COLLIDERS:
 
@@ -186,7 +186,7 @@ enum **ParsedGeometryType**: :ref:`🔗<enum_NavigationMesh_ParsedGeometryType>`
 
 :ref:`ParsedGeometryType<enum_NavigationMesh_ParsedGeometryType>` **PARSED_GEOMETRY_STATIC_COLLIDERS** = ``1``
 
-將 :ref:`StaticBody3D<class_StaticBody3D>` 碰撞器解析為幾何體。碰撞器應在由 :ref:`geometry_collision_mask<class_NavigationMesh_property_geometry_collision_mask>` 指定的層中。
+Parses :ref:`StaticBody3D<class_StaticBody3D>` colliders as geometry. The collider should be in any of the layers specified by :ref:`geometry_collision_mask<class_NavigationMesh_property_geometry_collision_mask>`.
 
 .. _class_NavigationMesh_constant_PARSED_GEOMETRY_BOTH:
 
@@ -194,7 +194,7 @@ enum **ParsedGeometryType**: :ref:`🔗<enum_NavigationMesh_ParsedGeometryType>`
 
 :ref:`ParsedGeometryType<enum_NavigationMesh_ParsedGeometryType>` **PARSED_GEOMETRY_BOTH** = ``2``
 
-:ref:`PARSED_GEOMETRY_MESH_INSTANCES<class_NavigationMesh_constant_PARSED_GEOMETRY_MESH_INSTANCES>` 和 :ref:`PARSED_GEOMETRY_STATIC_COLLIDERS<class_NavigationMesh_constant_PARSED_GEOMETRY_STATIC_COLLIDERS>`.
+Both :ref:`PARSED_GEOMETRY_MESH_INSTANCES<class_NavigationMesh_constant_PARSED_GEOMETRY_MESH_INSTANCES>` and :ref:`PARSED_GEOMETRY_STATIC_COLLIDERS<class_NavigationMesh_constant_PARSED_GEOMETRY_STATIC_COLLIDERS>`.
 
 .. _class_NavigationMesh_constant_PARSED_GEOMETRY_MAX:
 
@@ -202,7 +202,7 @@ enum **ParsedGeometryType**: :ref:`🔗<enum_NavigationMesh_ParsedGeometryType>`
 
 :ref:`ParsedGeometryType<enum_NavigationMesh_ParsedGeometryType>` **PARSED_GEOMETRY_MAX** = ``3``
 
-代表 :ref:`ParsedGeometryType<enum_NavigationMesh_ParsedGeometryType>` 列舉的大小。
+Represents the size of the :ref:`ParsedGeometryType<enum_NavigationMesh_ParsedGeometryType>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ enum **SourceGeometryMode**: :ref:`🔗<enum_NavigationMesh_SourceGeometryMode>`
 
 :ref:`SourceGeometryMode<enum_NavigationMesh_SourceGeometryMode>` **SOURCE_GEOMETRY_ROOT_NODE_CHILDREN** = ``0``
 
-在根節點的子節點中遞迴掃描幾何體。
+Scans the child nodes of the root node recursively for geometry.
 
 .. _class_NavigationMesh_constant_SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN:
 
@@ -228,7 +228,7 @@ enum **SourceGeometryMode**: :ref:`🔗<enum_NavigationMesh_SourceGeometryMode>`
 
 :ref:`SourceGeometryMode<enum_NavigationMesh_SourceGeometryMode>` **SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN** = ``1``
 
-以遞迴方式掃描組中的節點及其子節點以獲取幾何圖形。該組由 :ref:`geometry_source_group_name<class_NavigationMesh_property_geometry_source_group_name>` 指定。
+Scans nodes in a group and their child nodes recursively for geometry. The group is specified by :ref:`geometry_source_group_name<class_NavigationMesh_property_geometry_source_group_name>`.
 
 .. _class_NavigationMesh_constant_SOURCE_GEOMETRY_GROUPS_EXPLICIT:
 
@@ -236,7 +236,7 @@ enum **SourceGeometryMode**: :ref:`🔗<enum_NavigationMesh_SourceGeometryMode>`
 
 :ref:`SourceGeometryMode<enum_NavigationMesh_SourceGeometryMode>` **SOURCE_GEOMETRY_GROUPS_EXPLICIT** = ``2``
 
-使用一個組中的節點進行幾何運算。該組由 :ref:`geometry_source_group_name<class_NavigationMesh_property_geometry_source_group_name>` 指定。
+Uses nodes in a group for geometry. The group is specified by :ref:`geometry_source_group_name<class_NavigationMesh_property_geometry_source_group_name>`.
 
 .. _class_NavigationMesh_constant_SOURCE_GEOMETRY_MAX:
 
@@ -244,7 +244,7 @@ enum **SourceGeometryMode**: :ref:`🔗<enum_NavigationMesh_SourceGeometryMode>`
 
 :ref:`SourceGeometryMode<enum_NavigationMesh_SourceGeometryMode>` **SOURCE_GEOMETRY_MAX** = ``3``
 
-代表 :ref:`SourceGeometryMode<enum_NavigationMesh_SourceGeometryMode>` 列舉的大小。
+Represents the size of the :ref:`SourceGeometryMode<enum_NavigationMesh_SourceGeometryMode>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -252,8 +252,8 @@ enum **SourceGeometryMode**: :ref:`🔗<enum_NavigationMesh_SourceGeometryMode>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_NavigationMesh_property_agent_height:
 
@@ -266,9 +266,9 @@ enum **SourceGeometryMode**: :ref:`🔗<enum_NavigationMesh_SourceGeometryMode>`
 - |void| **set_agent_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_agent_height**\ (\ )
 
-地板到天花板的最小高度，仍然允許被認為是可行走的地板。
+The minimum floor to ceiling height that will still allow the floor area to be considered walkable.
 
-\ **注意：**\ 烘焙時，這個值會向上取整到最接近的 :ref:`cell_height<class_NavigationMesh_property_cell_height>` 的倍數。
+\ **Note:** While baking, this value will be rounded up to the nearest multiple of :ref:`cell_height<class_NavigationMesh_property_cell_height>`.
 
 .. rst-class:: classref-item-separator
 
@@ -285,9 +285,9 @@ enum **SourceGeometryMode**: :ref:`🔗<enum_NavigationMesh_SourceGeometryMode>`
 - |void| **set_agent_max_climb**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_agent_max_climb**\ (\ )
 
-被認為仍可穿越的最小牆壁高度。
+The minimum ledge height that is considered to still be traversable.
 
-\ **注意：**\ 烘焙時，該值將向下四捨五入到最接近的 :ref:`cell_height<class_NavigationMesh_property_cell_height>` 的倍數。
+\ **Note:** While baking, this value will be rounded down to the nearest multiple of :ref:`cell_height<class_NavigationMesh_property_cell_height>`.
 
 .. rst-class:: classref-item-separator
 
@@ -304,7 +304,7 @@ enum **SourceGeometryMode**: :ref:`🔗<enum_NavigationMesh_SourceGeometryMode>`
 - |void| **set_agent_max_slope**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_agent_max_slope**\ (\ )
 
-認為可行走的最大坡度，單位是度。
+The maximum slope that is considered walkable, in degrees.
 
 .. rst-class:: classref-item-separator
 
@@ -363,7 +363,7 @@ In conjunction with the :ref:`filter_baking_aabb<class_NavigationMesh_property_f
 - |void| **set_cell_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_cell_height**\ (\ )
 
-儲存格高度，用於將導覽網格的頂點在 Y 軸上進行柵格化。必須與導覽地圖的儲存格高度配對。
+The cell height used to rasterize the navigation mesh vertices on the Y axis. Must match with the cell height on the navigation map.
 
 .. rst-class:: classref-item-separator
 
@@ -380,7 +380,7 @@ In conjunction with the :ref:`filter_baking_aabb<class_NavigationMesh_property_f
 - |void| **set_cell_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_cell_size**\ (\ )
 
-儲存格大小，用於將導覽網格的頂點在 XZ 平面上進行柵格化。必須與導覽地圖的單元格大小配對。
+The cell size used to rasterize the navigation mesh vertices on the XZ plane. Must match with the cell size on the navigation map.
 
 .. rst-class:: classref-item-separator
 
@@ -397,7 +397,7 @@ In conjunction with the :ref:`filter_baking_aabb<class_NavigationMesh_property_f
 - |void| **set_detail_sample_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_detail_sample_distance**\ (\ )
 
-生成細分網格時使用的取樣距離，以儲存格為單位。
+The sampling distance to use when generating the detail mesh, in cell unit.
 
 .. rst-class:: classref-item-separator
 
@@ -414,7 +414,7 @@ In conjunction with the :ref:`filter_baking_aabb<class_NavigationMesh_property_f
 - |void| **set_detail_sample_max_error**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_detail_sample_max_error**\ (\ )
 
-細節網格表面應偏離高度場的最大距離，以儲存格為單位。
+The maximum distance the detail mesh surface should deviate from heightfield, in cell unit.
 
 .. rst-class:: classref-item-separator
 
@@ -431,7 +431,7 @@ In conjunction with the :ref:`filter_baking_aabb<class_NavigationMesh_property_f
 - |void| **set_edge_max_error**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_edge_max_error**\ (\ )
 
-簡化輪廓的邊界邊緣偏離原始輪廓的最大距離。
+The maximum distance a simplified contour's border edges should deviate the original raw contour.
 
 .. rst-class:: classref-item-separator
 
@@ -448,9 +448,9 @@ In conjunction with the :ref:`filter_baking_aabb<class_NavigationMesh_property_f
 - |void| **set_edge_max_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_edge_max_length**\ (\ )
 
-沿網格邊界的輪廓的最大允許長度。
+The maximum allowed length for contour edges along the border of the mesh. A value of ``0.0`` disables this feature.
 
-\ **注意：**\ 烘焙時，這個值會向上取整到最接近的 :ref:`cell_size<class_NavigationMesh_property_cell_size>` 的倍數。
+\ **Note:** While baking, this value will be rounded up to the nearest multiple of :ref:`cell_size<class_NavigationMesh_property_cell_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -467,7 +467,7 @@ In conjunction with the :ref:`filter_baking_aabb<class_NavigationMesh_property_f
 - |void| **set_filter_baking_aabb**\ (\ value\: :ref:`AABB<class_AABB>`\ )
 - :ref:`AABB<class_AABB>` **get_filter_baking_aabb**\ (\ )
 
-如果烘焙 :ref:`AABB<class_AABB>` 存在體積，對該導覽網格的烘焙會被限制在其內部區域中。
+If the baking :ref:`AABB<class_AABB>` has a volume the navigation mesh baking will be restricted to its enclosing area.
 
 .. rst-class:: classref-item-separator
 
@@ -484,7 +484,7 @@ In conjunction with the :ref:`filter_baking_aabb<class_NavigationMesh_property_f
 - |void| **set_filter_baking_aabb_offset**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_filter_baking_aabb_offset**\ (\ )
 
-套用於 :ref:`filter_baking_aabb<class_NavigationMesh_property_filter_baking_aabb>` :ref:`AABB<class_AABB>` 的位置偏移量。
+The position offset applied to the :ref:`filter_baking_aabb<class_NavigationMesh_property_filter_baking_aabb>` :ref:`AABB<class_AABB>`.
 
 .. rst-class:: classref-item-separator
 
@@ -501,7 +501,7 @@ In conjunction with the :ref:`filter_baking_aabb<class_NavigationMesh_property_f
 - |void| **set_filter_ledge_spans**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_filter_ledge_spans**\ (\ )
 
-如果為 ``true``\ ，則標記邊緣間的跨度為不可行走。
+If ``true``, marks spans that are ledges as non-walkable.
 
 .. rst-class:: classref-item-separator
 
@@ -518,7 +518,7 @@ In conjunction with the :ref:`filter_baking_aabb<class_NavigationMesh_property_f
 - |void| **set_filter_low_hanging_obstacles**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_filter_low_hanging_obstacles**\ (\ )
 
-如果為 ``true``\ ，如果它們的最大值在可行走鄰域的 :ref:`agent_max_climb<class_NavigationMesh_property_agent_max_climb>` 內，則將不可行走範圍標記為可行走。
+If ``true``, marks non-walkable spans as walkable if their maximum is within :ref:`agent_max_climb<class_NavigationMesh_property_agent_max_climb>` of a walkable neighbor.
 
 .. rst-class:: classref-item-separator
 
@@ -535,7 +535,7 @@ In conjunction with the :ref:`filter_baking_aabb<class_NavigationMesh_property_f
 - |void| **set_filter_walkable_low_height_spans**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_filter_walkable_low_height_spans**\ (\ )
 
-如果為 ``true``\ ，如果跨度上方的間隙小於 :ref:`agent_height<class_NavigationMesh_property_agent_height>`\ ，則將可行走範圍標記為不可行走。
+If ``true``, marks walkable spans as not walkable if the clearance above the span is less than :ref:`agent_height<class_NavigationMesh_property_agent_height>`.
 
 .. rst-class:: classref-item-separator
 
@@ -552,9 +552,9 @@ In conjunction with the :ref:`filter_baking_aabb<class_NavigationMesh_property_f
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-用於掃描靜態碰撞的實體層。
+The physics layers to scan for static colliders.
 
-僅在 :ref:`geometry_parsed_geometry_type<class_NavigationMesh_property_geometry_parsed_geometry_type>` 是 :ref:`PARSED_GEOMETRY_STATIC_COLLIDERS<class_NavigationMesh_constant_PARSED_GEOMETRY_STATIC_COLLIDERS>` 或 :ref:`PARSED_GEOMETRY_BOTH<class_NavigationMesh_constant_PARSED_GEOMETRY_BOTH>` 時才使用。
+Only used when :ref:`geometry_parsed_geometry_type<class_NavigationMesh_property_geometry_parsed_geometry_type>` is :ref:`PARSED_GEOMETRY_STATIC_COLLIDERS<class_NavigationMesh_constant_PARSED_GEOMETRY_STATIC_COLLIDERS>` or :ref:`PARSED_GEOMETRY_BOTH<class_NavigationMesh_constant_PARSED_GEOMETRY_BOTH>`.
 
 .. rst-class:: classref-item-separator
 
@@ -605,9 +605,9 @@ The source of the geometry used when baking.
 - |void| **set_source_group_name**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_source_group_name**\ (\ )
 
-群組的名稱，會在該群組中掃描幾何體。
+The name of the group to scan for geometry.
 
-只有當 :ref:`geometry_source_geometry_mode<class_NavigationMesh_property_geometry_source_geometry_mode>` 是 :ref:`SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN<class_NavigationMesh_constant_SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN>` 或 :ref:`SOURCE_GEOMETRY_GROUPS_EXPLICIT<class_NavigationMesh_constant_SOURCE_GEOMETRY_GROUPS_EXPLICIT>` 時才使用。
+Only used when :ref:`geometry_source_geometry_mode<class_NavigationMesh_property_geometry_source_geometry_mode>` is :ref:`SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN<class_NavigationMesh_constant_SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN>` or :ref:`SOURCE_GEOMETRY_GROUPS_EXPLICIT<class_NavigationMesh_constant_SOURCE_GEOMETRY_GROUPS_EXPLICIT>`.
 
 .. rst-class:: classref-item-separator
 
@@ -624,9 +624,9 @@ The source of the geometry used when baking.
 - |void| **set_region_merge_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_region_merge_size**\ (\ )
 
-如果可能的話，任何小於這個尺寸的區域將與較大的區域合併。
+Any regions with a size smaller than this will be merged with larger regions if possible.
 
-\ **注意：**\ 這個值將被平方來計算儲存格的數量。例如，值為 20 時將把儲存格的數量設為 400。
+\ **Note:** This value will be squared to calculate the number of cells. For example, a value of 20 will set the number of cells to 400.
 
 .. rst-class:: classref-item-separator
 
@@ -643,9 +643,9 @@ The source of the geometry used when baking.
 - |void| **set_region_min_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_region_min_size**\ (\ )
 
-區域被建立所需的最小尺寸。
+The minimum size of a region for it to be created.
 
-\ **注意：**\ 該值將被平方，以計算出允許形成孤島區域的最小單元數。例如，值為 8 時將把儲存格的數量設為 64。
+\ **Note:** This value will be squared to calculate the minimum number of cells allowed to form isolated island areas. For example, a value of 8 will set the number of cells to 64.
 
 .. rst-class:: classref-item-separator
 
@@ -679,7 +679,7 @@ Partitioning algorithm for creating the navigation mesh polys.
 - |void| **set_vertices_per_polygon**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_vertices_per_polygon**\ (\ )
 
-在輪廓到多邊形轉換過程中生成的多邊形允許的最大頂點數。
+The maximum number of vertices allowed for polygons generated during the contour to polygon conversion process.
 
 .. rst-class:: classref-section-separator
 
@@ -687,8 +687,8 @@ Partitioning algorithm for creating the navigation mesh polys.
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_NavigationMesh_method_add_polygon:
 
@@ -696,7 +696,7 @@ Partitioning algorithm for creating the navigation mesh polys.
 
 |void| **add_polygon**\ (\ polygon\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_NavigationMesh_method_add_polygon>`
 
-使用呼叫 :ref:`get_vertices()<class_NavigationMesh_method_get_vertices>` 得到的頂點的索引新增一個多邊形。
+Adds a polygon using the indices of the vertices you get when calling :ref:`get_vertices()<class_NavigationMesh_method_get_vertices>`.
 
 .. rst-class:: classref-item-separator
 
@@ -708,7 +708,7 @@ Partitioning algorithm for creating the navigation mesh polys.
 
 |void| **clear**\ (\ ) :ref:`🔗<class_NavigationMesh_method_clear>`
 
-清除頂點和多邊形索引的內部陣列。
+Clears the internal arrays for vertices and polygon indices.
 
 .. rst-class:: classref-item-separator
 
@@ -720,7 +720,7 @@ Partitioning algorithm for creating the navigation mesh polys.
 
 |void| **clear_polygons**\ (\ ) :ref:`🔗<class_NavigationMesh_method_clear_polygons>`
 
-清除多邊形陣列，但不清除頂點陣列。
+Clears the array of polygons, but it doesn't clear the array of vertices.
 
 .. rst-class:: classref-item-separator
 
@@ -732,9 +732,9 @@ Partitioning algorithm for creating the navigation mesh polys.
 
 |void| **create_from_mesh**\ (\ mesh\: :ref:`Mesh<class_Mesh>`\ ) :ref:`🔗<class_NavigationMesh_method_create_from_mesh>`
 
-通過根據 :ref:`Mesh<class_Mesh>` 設定頂點和索引來初始化導覽網格。
+Initializes the navigation mesh by setting the vertices and indices according to a :ref:`Mesh<class_Mesh>`.
 
-\ **注意：**\ 給定的 ``mesh`` 必須是 :ref:`Mesh.PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>` 型別，並且有一個索引陣列。
+\ **Note:** The given ``mesh`` must be of type :ref:`Mesh.PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>` and have an index array.
 
 .. rst-class:: classref-item-separator
 
@@ -746,7 +746,7 @@ Partitioning algorithm for creating the navigation mesh polys.
 
 :ref:`bool<class_bool>` **get_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NavigationMesh_method_get_collision_mask_value>`
 
-返回是否啟用了 :ref:`geometry_collision_mask<class_NavigationMesh_property_geometry_collision_mask>` 中的指定層，給定的 ``layer_number`` 在 1 和 32 之間。
+Returns whether or not the specified layer of the :ref:`geometry_collision_mask<class_NavigationMesh_property_geometry_collision_mask>` is enabled, given a ``layer_number`` between 1 and 32.
 
 .. rst-class:: classref-item-separator
 
@@ -758,7 +758,7 @@ Partitioning algorithm for creating the navigation mesh polys.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_polygon**\ (\ idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NavigationMesh_method_get_polygon>`
 
-返回建立多邊形的頂點索引，形式為 :ref:`PackedInt32Array<class_PackedInt32Array>`\ 。
+Returns a :ref:`PackedInt32Array<class_PackedInt32Array>` containing the indices of the vertices of a created polygon.
 
 .. rst-class:: classref-item-separator
 
@@ -770,7 +770,7 @@ Partitioning algorithm for creating the navigation mesh polys.
 
 :ref:`int<class_int>` **get_polygon_count**\ (\ ) |const| :ref:`🔗<class_NavigationMesh_method_get_polygon_count>`
 
-返回導覽網格中的多邊形數量。
+Returns the number of polygons in the navigation mesh.
 
 .. rst-class:: classref-item-separator
 
@@ -782,7 +782,7 @@ Partitioning algorithm for creating the navigation mesh polys.
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **get_vertices**\ (\ ) |const| :ref:`🔗<class_NavigationMesh_method_get_vertices>`
 
-返回用於建立該多邊形的所有頂點，形式為 :ref:`PackedVector3Array<class_PackedVector3Array>`\ 。
+Returns a :ref:`PackedVector3Array<class_PackedVector3Array>` containing all the vertices being used to create the polygons.
 
 .. rst-class:: classref-item-separator
 
@@ -794,7 +794,7 @@ Partitioning algorithm for creating the navigation mesh polys.
 
 |void| **set_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationMesh_method_set_collision_mask_value>`
 
-根據 ``value`` 啟用或禁用 :ref:`geometry_collision_mask<class_NavigationMesh_property_geometry_collision_mask>` 中的指定層，給定的 ``layer_number`` 在 1 和 32 之間。
+Based on ``value``, enables or disables the specified layer in the :ref:`geometry_collision_mask<class_NavigationMesh_property_geometry_collision_mask>`, given a ``layer_number`` between 1 and 32.
 
 .. rst-class:: classref-item-separator
 
@@ -806,14 +806,14 @@ Partitioning algorithm for creating the navigation mesh polys.
 
 |void| **set_vertices**\ (\ vertices\: :ref:`PackedVector3Array<class_PackedVector3Array>`\ ) :ref:`🔗<class_NavigationMesh_method_set_vertices>`
 
-設定頂點，可以使用 :ref:`add_polygon()<class_NavigationMesh_method_add_polygon>` 方法對其進行索引，建立多邊形。
+Sets the vertices that can be then indexed to create polygons with the :ref:`add_polygon()<class_NavigationMesh_method_add_polygon>` method.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

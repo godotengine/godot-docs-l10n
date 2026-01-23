@@ -5,36 +5,36 @@
 GPUParticles2D
 ==============
 
-**繼承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-2D 粒子發射器。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-2D 粒子節點，用於建立各種粒子系統和效果。\ **GPUParticles2D** 是一個發射器，特點是以給定的速度生成一定數量的粒子。
-
-使用 :ref:`process_material<class_GPUParticles2D_property_process_material>` 屬性來新增一個配置粒子的外觀和行為的 :ref:`ParticleProcessMaterial<class_ParticleProcessMaterial>`\ 。或者，你可以新增一個套用於所有粒子的 :ref:`ShaderMaterial<class_ShaderMaterial>`\ 。
-
-2D 粒子可以與 :ref:`LightOccluder2D<class_LightOccluder2D>` 節點碰撞（注意：它們不會與 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 節點碰撞）。
+A 2D particle emitter.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`粒子系統（2D） <../tutorials/2d/particle_systems_2d>`
+2D particle node used to create a variety of particle systems and effects. **GPUParticles2D** features an emitter that generates some number of particles at a given rate.
 
-- `2D 粒子演示 <https://godotengine.org/asset-library/asset/2724>`__
+Use the :ref:`process_material<class_GPUParticles2D_property_process_material>` property to add a :ref:`ParticleProcessMaterial<class_ParticleProcessMaterial>` to configure particle appearance and behavior. Alternatively, you can add a :ref:`ShaderMaterial<class_ShaderMaterial>` which will be applied to all particles.
 
-- `2D Dodge The Creeps 演示（玩家身後的拖尾使用的是 GPUParticles2D） <https://godotengine.org/asset-library/asset/2712>`__
+2D particles can optionally collide with :ref:`LightOccluder2D<class_LightOccluder2D>`, but they don't collide with :ref:`PhysicsBody2D<class_PhysicsBody2D>` nodes.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Particle systems (2D) <../tutorials/2d/particle_systems_2d>`
+
+- `2D Particles Demo <https://godotengine.org/asset-library/asset/2724>`__
+
+- `2D Dodge The Creeps Demo (uses GPUParticles2D for the trail behind the player) <https://godotengine.org/asset-library/asset/2712>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -95,8 +95,8 @@ GPUParticles2D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -119,8 +119,8 @@ GPUParticles2D
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_GPUParticles2D_signal_finished:
 
@@ -140,8 +140,8 @@ This signal is never emitted when :ref:`one_shot<class_GPUParticles2D_property_o
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_GPUParticles2D_DrawOrder:
 
@@ -155,7 +155,7 @@ enum **DrawOrder**: :ref:`🔗<enum_GPUParticles2D_DrawOrder>`
 
 :ref:`DrawOrder<enum_GPUParticles2D_DrawOrder>` **DRAW_ORDER_INDEX** = ``0``
 
-粒子按發射順序繪製。
+Particles are drawn in the order emitted.
 
 .. _class_GPUParticles2D_constant_DRAW_ORDER_LIFETIME:
 
@@ -189,7 +189,7 @@ enum **EmitFlags**: :ref:`🔗<enum_GPUParticles2D_EmitFlags>`
 
 :ref:`EmitFlags<enum_GPUParticles2D_EmitFlags>` **EMIT_FLAG_POSITION** = ``1``
 
-粒子在指定位置開始。
+Particle starts at the specified position.
 
 .. _class_GPUParticles2D_constant_EMIT_FLAG_ROTATION_SCALE:
 
@@ -197,7 +197,7 @@ enum **EmitFlags**: :ref:`🔗<enum_GPUParticles2D_EmitFlags>`
 
 :ref:`EmitFlags<enum_GPUParticles2D_EmitFlags>` **EMIT_FLAG_ROTATION_SCALE** = ``2``
 
-粒子以指定的旋轉和縮放開始。
+Particle starts with specified rotation and scale.
 
 .. _class_GPUParticles2D_constant_EMIT_FLAG_VELOCITY:
 
@@ -205,7 +205,7 @@ enum **EmitFlags**: :ref:`🔗<enum_GPUParticles2D_EmitFlags>`
 
 :ref:`EmitFlags<enum_GPUParticles2D_EmitFlags>` **EMIT_FLAG_VELOCITY** = ``4``
 
-粒子從指定的速度向量開始，該向量定義了發射方向和速度。
+Particle starts with the specified velocity vector, which defines the emission direction and speed.
 
 .. _class_GPUParticles2D_constant_EMIT_FLAG_COLOR:
 
@@ -213,7 +213,7 @@ enum **EmitFlags**: :ref:`🔗<enum_GPUParticles2D_EmitFlags>`
 
 :ref:`EmitFlags<enum_GPUParticles2D_EmitFlags>` **EMIT_FLAG_COLOR** = ``8``
 
-粒子以指定的顏色開始。
+Particle starts with specified color.
 
 .. _class_GPUParticles2D_constant_EMIT_FLAG_CUSTOM:
 
@@ -221,7 +221,7 @@ enum **EmitFlags**: :ref:`🔗<enum_GPUParticles2D_EmitFlags>`
 
 :ref:`EmitFlags<enum_GPUParticles2D_EmitFlags>` **EMIT_FLAG_CUSTOM** = ``16``
 
-粒子以指定的 ``CUSTOM`` 資料開始。
+Particle starts with specified ``CUSTOM`` data.
 
 .. rst-class:: classref-section-separator
 
@@ -229,8 +229,8 @@ enum **EmitFlags**: :ref:`🔗<enum_GPUParticles2D_EmitFlags>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_GPUParticles2D_property_amount:
 
@@ -338,7 +338,7 @@ If ``true``, particles are being emitted. :ref:`emitting<class_GPUParticles2D_pr
 - |void| **set_explosiveness_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_explosiveness_ratio**\ (\ )
 
-粒子在單個發射週期中的發射有多急。如果大於 ``0``\ ，則在下一個發射週期開始之前，發射會出現一個間隔。
+How rapidly particles in an emission cycle are emitted. If greater than ``0``, there will be a gap in emissions before the next cycle begins.
 
 .. rst-class:: classref-item-separator
 
@@ -355,7 +355,7 @@ If ``true``, particles are being emitted. :ref:`emitting<class_GPUParticles2D_pr
 - |void| **set_fixed_fps**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_fixed_fps**\ (\ )
 
-粒子系統的畫面播放速率被固定為一個值。例如，將值更改為 2 會使粒子以每秒 2 影格的速度算繪。請注意，這並不會降低粒子系統本身的類比速度。
+The particle system's frame rate is fixed to a value. For example, changing the value to 2 will make the particles render at 2 frames per second. Note this does not slow down the simulation of the particle system itself.
 
 .. rst-class:: classref-item-separator
 
@@ -372,7 +372,7 @@ If ``true``, particles are being emitted. :ref:`emitting<class_GPUParticles2D_pr
 - |void| **set_fractional_delta**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_fractional_delta**\ (\ )
 
-如果為 ``為true``\ ，則使用分數差異量 delta 計算，將具有更平滑的粒子顯示效果。
+If ``true``, results in fractional delta calculation which has a smoother particles display effect.
 
 .. rst-class:: classref-item-separator
 
@@ -408,7 +408,7 @@ Causes all the particles in this node to interpolate towards the end of their li
 - |void| **set_interpolate**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_interpolate**\ (\ )
 
-啟用粒子插值，當\ :ref:`fixed_fps<class_GPUParticles2D_property_fixed_fps>` 低於螢幕更新率時，使粒子運動更平滑。
+Enables particle interpolation, which makes the particle movement smoother when their :ref:`fixed_fps<class_GPUParticles2D_property_fixed_fps>` is lower than the screen refresh rate.
 
 .. rst-class:: classref-item-separator
 
@@ -442,7 +442,7 @@ The amount of time each particle will exist (in seconds). The effective emission
 - |void| **set_use_local_coordinates**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_local_coordinates**\ (\ )
 
-如果為 ``true``\ ，則粒子使用父節點的座標空間（稱為局部座標）。這將導致粒子在移動或旋轉時沿著 **GPUParticles2D** 節點（及其父節點）移動和旋轉。如果為 ``false``\ ，則粒子使用全域座標；當移動或旋轉時，它們不會沿著 **GPUParticles2D** 節點（及其父節點）移動或旋轉。
+If ``true``, particles use the parent node's coordinate space (known as local coordinates). This will cause particles to move and rotate along the **GPUParticles2D** node (and its parents) when it is moved or rotated. If ``false``, particles use global coordinates; they will not move or rotate along the **GPUParticles2D** node (and its parents) when it is moved or rotated.
 
 .. rst-class:: classref-item-separator
 
@@ -459,7 +459,7 @@ The amount of time each particle will exist (in seconds). The effective emission
 - |void| **set_one_shot**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_one_shot**\ (\ )
 
-如果為 ``true``\ ，則只發生一個發射週期。如果在某個週期內設定為 ``true``\ ，則發射將在該週期結束時停止。
+If ``true``, only one emission cycle occurs. If set ``true`` during a cycle, emission will stop at the cycle's end.
 
 .. rst-class:: classref-item-separator
 
@@ -495,7 +495,7 @@ Particle system starts as if it had already run for this many seconds.
 - |void| **set_process_material**\ (\ value\: :ref:`Material<class_Material>`\ )
 - :ref:`Material<class_Material>` **get_process_material**\ (\ )
 
-用於處理粒子的 :ref:`Material<class_Material>` 。可以是 :ref:`ParticleProcessMaterial<class_ParticleProcessMaterial>` 或 :ref:`ShaderMaterial<class_ShaderMaterial>` 。
+:ref:`Material<class_Material>` for processing particles. Can be a :ref:`ParticleProcessMaterial<class_ParticleProcessMaterial>` or a :ref:`ShaderMaterial<class_ShaderMaterial>`.
 
 .. rst-class:: classref-item-separator
 
@@ -512,7 +512,7 @@ Particle system starts as if it had already run for this many seconds.
 - |void| **set_randomness_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_randomness_ratio**\ (\ )
 
-發射壽命隨機率。
+Emission lifetime randomness ratio.
 
 .. rst-class:: classref-item-separator
 
@@ -546,7 +546,7 @@ Sets the random seed used by the particle system. Only effective if :ref:`use_fi
 - |void| **set_speed_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_speed_scale**\ (\ )
 
-粒子系統的運作速度的縮放率。\ ``0`` 值可用於暫停粒子。
+Particle system's running speed scaling ratio. A value of ``0`` can be used to pause the particles.
 
 .. rst-class:: classref-item-separator
 
@@ -601,9 +601,9 @@ Particle texture. If ``null``, particles will be squares with a size of 1×1 pix
 - |void| **set_trail_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_trail_enabled**\ (\ )
 
-如果\ ``true`` ，可以使用網格換膚系統來啟用粒子軌跡。
+If ``true``, enables particle trails using a mesh skinning system.
 
-\ **注意：**\ 與\ :ref:`GPUParticles3D<class_GPUParticles3D>`\ 不同的是，trail sections和subdivisions的數量是通過屬性\ :ref:`trail_sections<class_GPUParticles2D_property_trail_sections>`\ 和\ :ref:`trail_section_subdivisions<class_GPUParticles2D_property_trail_section_subdivisions>`\ 設定的。
+\ **Note:** Unlike :ref:`GPUParticles3D<class_GPUParticles3D>`, the number of trail sections and subdivisions is set with the :ref:`trail_sections<class_GPUParticles2D_property_trail_sections>` and :ref:`trail_section_subdivisions<class_GPUParticles2D_property_trail_section_subdivisions>` properties.
 
 .. rst-class:: classref-item-separator
 
@@ -620,7 +620,7 @@ Particle texture. If ``null``, particles will be squares with a size of 1×1 pix
 - |void| **set_trail_lifetime**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_trail_lifetime**\ (\ )
 
-代表粒子軌跡的時間量（以秒為單位）。僅當 :ref:`trail_enabled<class_GPUParticles2D_property_trail_enabled>` 為 ``true`` 時有效。
+The amount of time the particle's trail should represent (in seconds). Only effective if :ref:`trail_enabled<class_GPUParticles2D_property_trail_enabled>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -637,7 +637,7 @@ Particle texture. If ``null``, particles will be squares with a size of 1×1 pix
 - |void| **set_trail_section_subdivisions**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_trail_section_subdivisions**\ (\ )
 
-用於粒子尾跡算繪的細分數。較高的值可以產生更平滑的尾跡曲線，但由於增加了網格的複雜度，因此會犧牲性能。另見 :ref:`trail_sections<class_GPUParticles2D_property_trail_sections>`\ 。僅當 :ref:`trail_enabled<class_GPUParticles2D_property_trail_enabled>` 為 ``true`` 時有效。
+The number of subdivisions to use for the particle trail rendering. Higher values can result in smoother trail curves, at the cost of performance due to increased mesh complexity. See also :ref:`trail_sections<class_GPUParticles2D_property_trail_sections>`. Only effective if :ref:`trail_enabled<class_GPUParticles2D_property_trail_enabled>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -654,7 +654,7 @@ Particle texture. If ``null``, particles will be squares with a size of 1×1 pix
 - |void| **set_trail_sections**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_trail_sections**\ (\ )
 
-用於粒子軌跡算繪的部分數。較高的值可以產生更平滑的尾跡曲線，但由於增加了網格的複雜度，因此會犧牲性能。另見 :ref:`trail_section_subdivisions<class_GPUParticles2D_property_trail_section_subdivisions>`\ 。僅當 :ref:`trail_enabled<class_GPUParticles2D_property_trail_enabled>` 為 ``true`` 時有效。
+The number of sections to use for the particle trail rendering. Higher values can result in smoother trail curves, at the cost of performance due to increased mesh complexity. See also :ref:`trail_section_subdivisions<class_GPUParticles2D_property_trail_section_subdivisions>`. Only effective if :ref:`trail_enabled<class_GPUParticles2D_property_trail_enabled>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -688,9 +688,9 @@ If ``true``, particles will use the same seed for every simulation using the see
 - |void| **set_visibility_rect**\ (\ value\: :ref:`Rect2<class_Rect2>`\ )
 - :ref:`Rect2<class_Rect2>` **get_visibility_rect**\ (\ )
 
-:ref:`Rect2<class_Rect2>` 確定節點的區域，該區域需要在螢幕上可見才能使粒子系統處於活動狀態。
+The :ref:`Rect2<class_Rect2>` that determines the node's region which needs to be visible on screen for the particle system to be active.
 
-如果當節點進入/退出螢幕時粒子突然出現/消失，則增長矩形。\ :ref:`Rect2<class_Rect2>` 可以通過程式碼或使用 **Particles → Generate Visibility Rect** 編輯器工具生成。
+Grow the rect if particles suddenly appear/disappear when the node enters/exits the screen. The :ref:`Rect2<class_Rect2>` can be grown via code or with the **Particles → Generate Visibility Rect** editor tool.
 
 .. rst-class:: classref-section-separator
 
@@ -698,8 +698,8 @@ If ``true``, particles will use the same seed for every simulation using the see
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_GPUParticles2D_method_capture_rect:
 
@@ -707,9 +707,9 @@ If ``true``, particles will use the same seed for every simulation using the see
 
 :ref:`Rect2<class_Rect2>` **capture_rect**\ (\ ) |const| :ref:`🔗<class_GPUParticles2D_method_capture_rect>`
 
-傳回一個包含所有現有粒子位置的矩形。
+Returns a rectangle containing the positions of all existing particles.
 
-\ **注意：** 當使用執行緒算繪時，此方法會同步算繪執行緒。經常呼叫可能會對效能產生負面影響。
+\ **Note:** When using threaded rendering this method synchronizes the rendering thread. Calling it often may have a negative impact on performance.
 
 .. rst-class:: classref-item-separator
 
@@ -721,7 +721,7 @@ If ``true``, particles will use the same seed for every simulation using the see
 
 |void| **convert_from_particles**\ (\ particles\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_GPUParticles2D_method_convert_from_particles>`
 
-設定該節點的屬性以配對給定的 **GPUParticles2D** 節點，該給定節點已分配了一個 :ref:`ParticleProcessMaterial<class_ParticleProcessMaterial>`\ 。
+Sets this node's properties to match a given :ref:`CPUParticles2D<class_CPUParticles2D>` node.
 
 .. rst-class:: classref-item-separator
 
@@ -769,12 +769,12 @@ Restarts the particle emission cycle, clearing existing particles. To avoid part
 
 If ``keep_seed`` is ``true``, the current random seed will be preserved. Useful for seeking and playback.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

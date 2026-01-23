@@ -5,32 +5,32 @@
 PhysicsDirectBodyState3D
 ========================
 
-**繼承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`PhysicsDirectBodyState3DExtension<class_PhysicsDirectBodyState3DExtension>`
+**Inherited By:** :ref:`PhysicsDirectBodyState3DExtension<class_PhysicsDirectBodyState3DExtension>`
 
-提供對 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 中物理體的直接存取。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-提供對 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 中物理體的直接存取，從而安全地更改物理屬性。該對象會在 :ref:`RigidBody3D<class_RigidBody3D>` 的直接狀態回呼函式中傳遞，目的是為了改變物體的直接狀態。見 :ref:`RigidBody3D._integrate_forces()<class_RigidBody3D_private_method__integrate_forces>`\ 。
+Provides direct access to a physics body in the :ref:`PhysicsServer3D<class_PhysicsServer3D>`.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`物理介紹 <../tutorials/physics/physics_introduction>`
+Provides direct access to a physics body in the :ref:`PhysicsServer3D<class_PhysicsServer3D>`, allowing safe changes to physics properties. This object is passed via the direct state callback of :ref:`RigidBody3D<class_RigidBody3D>`, and is intended for changing the direct state of that body. See :ref:`RigidBody3D._integrate_forces()<class_RigidBody3D_private_method__integrate_forces>`.
 
-- :doc:`發射射線 <../tutorials/physics/ray-casting>`
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Physics introduction <../tutorials/physics/physics_introduction>`
+
+- :doc:`Ray-casting <../tutorials/physics/ray-casting>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -71,8 +71,8 @@ PhysicsDirectBodyState3D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -141,8 +141,8 @@ PhysicsDirectBodyState3D
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_PhysicsDirectBodyState3D_property_angular_velocity:
 
@@ -155,7 +155,7 @@ PhysicsDirectBodyState3D
 - |void| **set_angular_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_angular_velocity**\ (\ )
 
-物體的旋轉速度，單位為\ *弧度*\ 每秒。
+The body's rotational velocity in *radians* per second.
 
 .. rst-class:: classref-item-separator
 
@@ -171,7 +171,7 @@ PhysicsDirectBodyState3D
 
 - :ref:`Vector3<class_Vector3>` **get_center_of_mass**\ (\ )
 
-該物體質心的位置，相對於該物體的中心，使用全域坐標系。
+The body's center of mass position relative to the body's center in the global coordinate system.
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ PhysicsDirectBodyState3D
 
 - :ref:`Vector3<class_Vector3>` **get_center_of_mass_local**\ (\ )
 
-該物體質心的位置，使用該物體的局部坐標系。
+The body's center of mass position in the body's local coordinate system.
 
 .. rst-class:: classref-item-separator
 
@@ -237,7 +237,7 @@ The body's collision mask.
 
 - :ref:`Vector3<class_Vector3>` **get_inverse_inertia**\ (\ )
 
-物體慣性的倒數。
+The inverse of the inertia of the body.
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +253,7 @@ The body's collision mask.
 
 - :ref:`Basis<class_Basis>` **get_inverse_inertia_tensor**\ (\ )
 
-該物體慣性張量的倒數。
+The inverse of the inertia tensor of the body.
 
 .. rst-class:: classref-item-separator
 
@@ -269,7 +269,7 @@ The body's collision mask.
 
 - :ref:`float<class_float>` **get_inverse_mass**\ (\ )
 
-物體品質的倒數。
+The inverse of the mass of the body.
 
 .. rst-class:: classref-item-separator
 
@@ -286,7 +286,7 @@ The body's collision mask.
 - |void| **set_linear_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_linear_velocity**\ (\ )
 
-物體的線速度，單位為單位每秒。
+The body's linear velocity in units per second.
 
 .. rst-class:: classref-item-separator
 
@@ -321,7 +321,7 @@ The body's collision mask.
 - |void| **set_sleep_state**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_sleeping**\ (\ )
 
-如果為 ``true``\ ，則該物體目前處於睡眠狀態（不活動）。
+If ``true``, this body is currently sleeping (not active).
 
 .. rst-class:: classref-item-separator
 
@@ -337,7 +337,7 @@ The body's collision mask.
 
 - :ref:`float<class_float>` **get_step**\ (\ )
 
-用於模擬的時間步長（delta）。
+The timestep (delta) used for the simulation.
 
 .. rst-class:: classref-item-separator
 
@@ -353,7 +353,7 @@ The body's collision mask.
 
 - :ref:`float<class_float>` **get_total_angular_damp**\ (\ )
 
-物體停止轉動的速度，如果沒有任何其他力使它運動。
+The rate at which the body stops rotating, if there are not any other forces moving it.
 
 .. rst-class:: classref-item-separator
 
@@ -369,7 +369,7 @@ The body's collision mask.
 
 - :ref:`Vector3<class_Vector3>` **get_total_gravity**\ (\ )
 
-這個物體上的總重力向量。
+The total gravity vector being currently applied to this body.
 
 .. rst-class:: classref-item-separator
 
@@ -385,7 +385,7 @@ The body's collision mask.
 
 - :ref:`float<class_float>` **get_total_linear_damp**\ (\ )
 
-物體停止運動的速率，如果沒有任何其他力使它運動。
+The rate at which the body stops moving, if there are not any other forces moving it.
 
 .. rst-class:: classref-item-separator
 
@@ -402,7 +402,7 @@ The body's collision mask.
 - |void| **set_transform**\ (\ value\: :ref:`Transform3D<class_Transform3D>`\ )
 - :ref:`Transform3D<class_Transform3D>` **get_transform**\ (\ )
 
-物體的變換矩陣。
+The body's transformation matrix.
 
 .. rst-class:: classref-section-separator
 
@@ -410,8 +410,8 @@ The body's collision mask.
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_PhysicsDirectBodyState3D_method_add_constant_central_force:
 
@@ -419,9 +419,9 @@ The body's collision mask.
 
 |void| **add_constant_central_force**\ (\ force\: :ref:`Vector3<class_Vector3>` = Vector3(0, 0, 0)\ ) :ref:`🔗<class_PhysicsDirectBodyState3D_method_add_constant_central_force>`
 
-在不影響旋轉的情況下，新增一個恒定的定向力，該力會隨著時間的推移而持續施加，直到使用 ``constant_force = Vector3(0, 0, 0)`` 清除。
+Adds a constant directional force without affecting rotation that keeps being applied over time until cleared with ``constant_force = Vector3(0, 0, 0)``.
 
-這相當於在物體的質心處，使用 :ref:`add_constant_force()<class_PhysicsDirectBodyState3D_method_add_constant_force>`\ 。
+This is equivalent to using :ref:`add_constant_force()<class_PhysicsDirectBodyState3D_method_add_constant_force>` at the body's center of mass.
 
 .. rst-class:: classref-item-separator
 
@@ -433,9 +433,9 @@ The body's collision mask.
 
 |void| **add_constant_force**\ (\ force\: :ref:`Vector3<class_Vector3>`, position\: :ref:`Vector3<class_Vector3>` = Vector3(0, 0, 0)\ ) :ref:`🔗<class_PhysicsDirectBodyState3D_method_add_constant_force>`
 
-向實體新增一個恒定的定位力，持續施加，直到用 ``constant_force = Vector3(0, 0, 0)`` 清除。
+Adds a constant positioned force to the body that keeps being applied over time until cleared with ``constant_force = Vector3(0, 0, 0)``.
 
-\ ``position`` 是在全域座標中距實體原點的偏移量。
+\ ``position`` is the offset from the body origin in global coordinates.
 
 .. rst-class:: classref-item-separator
 
@@ -447,7 +447,7 @@ The body's collision mask.
 
 |void| **add_constant_torque**\ (\ torque\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsDirectBodyState3D_method_add_constant_torque>`
 
-在不影響位置的情況下，新增一個恒定的旋轉力，該力會隨著時間的推移而持續施加，直到使用 ``constant_torque = Vector3(0, 0, 0)`` 清除。
+Adds a constant rotational force without affecting position that keeps being applied over time until cleared with ``constant_torque = Vector3(0, 0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -459,9 +459,9 @@ The body's collision mask.
 
 |void| **apply_central_force**\ (\ force\: :ref:`Vector3<class_Vector3>` = Vector3(0, 0, 0)\ ) :ref:`🔗<class_PhysicsDirectBodyState3D_method_apply_central_force>`
 
-施加一個不影響旋轉的定向力。該力是時間相關的，意味著每次物理更新都會施加。
+Applies a directional force without affecting rotation. A force is time dependent and meant to be applied every physics update.
 
-這相當於在物體的質心處，使用 :ref:`apply_force()<class_PhysicsDirectBodyState3D_method_apply_force>`\ 。
+This is equivalent to using :ref:`apply_force()<class_PhysicsDirectBodyState3D_method_apply_force>` at the body's center of mass.
 
 .. rst-class:: classref-item-separator
 
@@ -473,11 +473,11 @@ The body's collision mask.
 
 |void| **apply_central_impulse**\ (\ impulse\: :ref:`Vector3<class_Vector3>` = Vector3(0, 0, 0)\ ) :ref:`🔗<class_PhysicsDirectBodyState3D_method_apply_central_impulse>`
 
-施加一個不影響的旋轉定向脈衝。
+Applies a directional impulse without affecting rotation.
 
-脈衝與時間無關！每影格套用一個脈衝，會產生一個依賴於畫面播放速率的力。出於這個原因，它應該只在模擬一次性影響時使用（否則使用 “_force”函式）。
+An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
 
-這相當於在物體的質心處，使用 :ref:`apply_impulse()<class_PhysicsDirectBodyState3D_method_apply_impulse>`\ 。
+This is equivalent to using :ref:`apply_impulse()<class_PhysicsDirectBodyState3D_method_apply_impulse>` at the body's center of mass.
 
 .. rst-class:: classref-item-separator
 
@@ -489,9 +489,9 @@ The body's collision mask.
 
 |void| **apply_force**\ (\ force\: :ref:`Vector3<class_Vector3>`, position\: :ref:`Vector3<class_Vector3>` = Vector3(0, 0, 0)\ ) :ref:`🔗<class_PhysicsDirectBodyState3D_method_apply_force>`
 
-對實體施加一個定位力。力是時間相關的，意味著每次物理更新都會被施加。
+Applies a positioned force to the body. A force is time dependent and meant to be applied every physics update.
 
-\ ``position`` 是在全域座標中距實體原點的偏移量。
+\ ``position`` is the offset from the body origin in global coordinates.
 
 .. rst-class:: classref-item-separator
 
@@ -503,11 +503,11 @@ The body's collision mask.
 
 |void| **apply_impulse**\ (\ impulse\: :ref:`Vector3<class_Vector3>`, position\: :ref:`Vector3<class_Vector3>` = Vector3(0, 0, 0)\ ) :ref:`🔗<class_PhysicsDirectBodyState3D_method_apply_impulse>`
 
-向實體施加一個定位脈衝。
+Applies a positioned impulse to the body.
 
-脈衝是時間無關的！每影格施加一個脈衝將產生一個依賴於畫面播放速率的力。出於這個原因，它應該只在模擬一次性影響時使用（否則使用“_force”函式）。
+An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
 
-\ ``position`` 是在全域座標中距實體原點的偏移量。
+\ ``position`` is the offset from the body origin in global coordinates.
 
 .. rst-class:: classref-item-separator
 
@@ -519,9 +519,9 @@ The body's collision mask.
 
 |void| **apply_torque**\ (\ torque\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsDirectBodyState3D_method_apply_torque>`
 
-在不影響位置的情況下，施加一個旋轉力。該力是與時間相關的，這意味著每次物理更新時都會被施加。
+Applies a rotational force without affecting position. A force is time dependent and meant to be applied every physics update.
 
-\ **注意：**\ :ref:`inverse_inertia<class_PhysicsDirectBodyState3D_property_inverse_inertia>` 是該函式生效所必需的。要擁有 :ref:`inverse_inertia<class_PhysicsDirectBodyState3D_property_inverse_inertia>`\ ，一個活動的 :ref:`CollisionShape3D<class_CollisionShape3D>` 必須是該節點的子節點，或者可以手動設定 :ref:`inverse_inertia<class_PhysicsDirectBodyState3D_property_inverse_inertia>`\ 。
+\ **Note:** :ref:`inverse_inertia<class_PhysicsDirectBodyState3D_property_inverse_inertia>` is required for this to work. To have :ref:`inverse_inertia<class_PhysicsDirectBodyState3D_property_inverse_inertia>`, an active :ref:`CollisionShape3D<class_CollisionShape3D>` must be a child of the node, or you can manually set :ref:`inverse_inertia<class_PhysicsDirectBodyState3D_property_inverse_inertia>`.
 
 .. rst-class:: classref-item-separator
 
@@ -533,11 +533,11 @@ The body's collision mask.
 
 |void| **apply_torque_impulse**\ (\ impulse\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsDirectBodyState3D_method_apply_torque_impulse>`
 
-在不影響位置的情況下，向實體施加一個旋轉脈衝。
+Applies a rotational impulse to the body without affecting the position.
 
-脈衝是時間無關的！每影格施加一個脈衝將產生一個依賴於畫面播放速率的力。出於這個原因，它應該只在模擬一次性影響時使用（否則使用“_force”函式）。
+An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
 
-\ **注意：**\ :ref:`inverse_inertia<class_PhysicsDirectBodyState3D_property_inverse_inertia>` 是生效所必需的。要擁有 :ref:`inverse_inertia<class_PhysicsDirectBodyState3D_property_inverse_inertia>`\ ，活動的 :ref:`CollisionShape3D<class_CollisionShape3D>` 必須是該節點的子節點，或者可以手動設定 :ref:`inverse_inertia<class_PhysicsDirectBodyState3D_property_inverse_inertia>`\ 。
+\ **Note:** :ref:`inverse_inertia<class_PhysicsDirectBodyState3D_property_inverse_inertia>` is required for this to work. To have :ref:`inverse_inertia<class_PhysicsDirectBodyState3D_property_inverse_inertia>`, an active :ref:`CollisionShape3D<class_CollisionShape3D>` must be a child of the node, or you can manually set :ref:`inverse_inertia<class_PhysicsDirectBodyState3D_property_inverse_inertia>`.
 
 .. rst-class:: classref-item-separator
 
@@ -549,9 +549,9 @@ The body's collision mask.
 
 :ref:`Vector3<class_Vector3>` **get_constant_force**\ (\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState3D_method_get_constant_force>`
 
-返回在每次物理更新期間，施加在該物體上的總恒定位置力。
+Returns the body's total constant positional forces applied during each physics update.
 
-見 :ref:`add_constant_force()<class_PhysicsDirectBodyState3D_method_add_constant_force>` 和 :ref:`add_constant_central_force()<class_PhysicsDirectBodyState3D_method_add_constant_central_force>`\ 。
+See :ref:`add_constant_force()<class_PhysicsDirectBodyState3D_method_add_constant_force>` and :ref:`add_constant_central_force()<class_PhysicsDirectBodyState3D_method_add_constant_central_force>`.
 
 .. rst-class:: classref-item-separator
 
@@ -563,9 +563,9 @@ The body's collision mask.
 
 :ref:`Vector3<class_Vector3>` **get_constant_torque**\ (\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState3D_method_get_constant_torque>`
 
-返回在每次物理更新期間，施加在該物體上的總恒定旋轉力。
+Returns the body's total constant rotational forces applied during each physics update.
 
-見 :ref:`add_constant_torque()<class_PhysicsDirectBodyState3D_method_add_constant_torque>`\ 。
+See :ref:`add_constant_torque()<class_PhysicsDirectBodyState3D_method_add_constant_torque>`.
 
 .. rst-class:: classref-item-separator
 
@@ -577,7 +577,7 @@ The body's collision mask.
 
 :ref:`RID<class_RID>` **get_contact_collider**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState3D_method_get_contact_collider>`
 
-返回該碰撞體的 :ref:`RID<class_RID>`\ 。
+Returns the collider's :ref:`RID<class_RID>`.
 
 .. rst-class:: classref-item-separator
 
@@ -589,7 +589,7 @@ The body's collision mask.
 
 :ref:`int<class_int>` **get_contact_collider_id**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState3D_method_get_contact_collider_id>`
 
-返回該碰撞體的對象 id。
+Returns the collider's object id.
 
 .. rst-class:: classref-item-separator
 
@@ -601,7 +601,7 @@ The body's collision mask.
 
 :ref:`Object<class_Object>` **get_contact_collider_object**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState3D_method_get_contact_collider_object>`
 
-返回碰撞對象。
+Returns the collider object.
 
 .. rst-class:: classref-item-separator
 
@@ -613,7 +613,7 @@ The body's collision mask.
 
 :ref:`Vector3<class_Vector3>` **get_contact_collider_position**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState3D_method_get_contact_collider_position>`
 
-返回該碰撞體上接觸點的位置，使用全域坐標系。
+Returns the position of the contact point on the collider in the global coordinate system.
 
 .. rst-class:: classref-item-separator
 
@@ -625,7 +625,7 @@ The body's collision mask.
 
 :ref:`int<class_int>` **get_contact_collider_shape**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState3D_method_get_contact_collider_shape>`
 
-返回該碰撞體的形狀索引。
+Returns the collider's shape index.
 
 .. rst-class:: classref-item-separator
 
@@ -637,7 +637,7 @@ The body's collision mask.
 
 :ref:`Vector3<class_Vector3>` **get_contact_collider_velocity_at_position**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState3D_method_get_contact_collider_velocity_at_position>`
 
-返回該碰撞體接觸點處的線速度向量。
+Returns the linear velocity vector at the collider's contact point.
 
 .. rst-class:: classref-item-separator
 
@@ -649,9 +649,9 @@ The body's collision mask.
 
 :ref:`int<class_int>` **get_contact_count**\ (\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState3D_method_get_contact_count>`
 
-返回這個物體與其他物體的接觸次數。
+Returns the number of contacts this body has with other bodies.
 
-\ **注意：**\ 預設情況下，除非物體被設為監視接觸，否則會返回 0。見 :ref:`RigidBody3D.contact_monitor<class_RigidBody3D_property_contact_monitor>`\ 。
+\ **Note:** By default, this returns 0 unless bodies are configured to monitor contacts. See :ref:`RigidBody3D.contact_monitor<class_RigidBody3D_property_contact_monitor>`.
 
 .. rst-class:: classref-item-separator
 
@@ -663,7 +663,7 @@ The body's collision mask.
 
 :ref:`Vector3<class_Vector3>` **get_contact_impulse**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState3D_method_get_contact_impulse>`
 
-由接觸產生的脈衝。
+Impulse created by the contact.
 
 .. rst-class:: classref-item-separator
 
@@ -675,7 +675,7 @@ The body's collision mask.
 
 :ref:`Vector3<class_Vector3>` **get_contact_local_normal**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState3D_method_get_contact_local_normal>`
 
-返回接觸點處的局部法線。
+Returns the local normal at the contact point.
 
 .. rst-class:: classref-item-separator
 
@@ -687,7 +687,7 @@ The body's collision mask.
 
 :ref:`Vector3<class_Vector3>` **get_contact_local_position**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState3D_method_get_contact_local_position>`
 
-返回該物體上接觸點的位置，使用全域坐標系。
+Returns the position of the contact point on the body in the global coordinate system.
 
 .. rst-class:: classref-item-separator
 
@@ -699,7 +699,7 @@ The body's collision mask.
 
 :ref:`int<class_int>` **get_contact_local_shape**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState3D_method_get_contact_local_shape>`
 
-返回碰撞的局部坐標系下的形狀索引。
+Returns the local shape index of the collision.
 
 .. rst-class:: classref-item-separator
 
@@ -711,7 +711,7 @@ The body's collision mask.
 
 :ref:`Vector3<class_Vector3>` **get_contact_local_velocity_at_position**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState3D_method_get_contact_local_velocity_at_position>`
 
-返回該物體上接觸點處的線速度向量。
+Returns the linear velocity vector at the body's contact point.
 
 .. rst-class:: classref-item-separator
 
@@ -723,7 +723,7 @@ The body's collision mask.
 
 :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>` **get_space_state**\ (\ ) :ref:`🔗<class_PhysicsDirectBodyState3D_method_get_space_state>`
 
-返回空間的目前狀態，這對查詢很有用。
+Returns the current state of the space, useful for queries.
 
 .. rst-class:: classref-item-separator
 
@@ -735,7 +735,7 @@ The body's collision mask.
 
 :ref:`Vector3<class_Vector3>` **get_velocity_at_local_position**\ (\ local_position\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState3D_method_get_velocity_at_local_position>`
 
-返回給定相對位置的物體速度，包括平移和旋轉。
+Returns the body's velocity at the given relative position, including both translation and rotation.
 
 .. rst-class:: classref-item-separator
 
@@ -759,9 +759,9 @@ Updates the body's linear and angular velocity by applying gravity and damping f
 
 |void| **set_constant_force**\ (\ force\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsDirectBodyState3D_method_set_constant_force>`
 
-設定在每次物理更新期間，施加在該物體上的總恒定位置力。
+Sets the body's total constant positional forces applied during each physics update.
 
-見 :ref:`add_constant_force()<class_PhysicsDirectBodyState3D_method_add_constant_force>` 和 :ref:`add_constant_central_force()<class_PhysicsDirectBodyState3D_method_add_constant_central_force>`\ 。
+See :ref:`add_constant_force()<class_PhysicsDirectBodyState3D_method_add_constant_force>` and :ref:`add_constant_central_force()<class_PhysicsDirectBodyState3D_method_add_constant_central_force>`.
 
 .. rst-class:: classref-item-separator
 
@@ -773,16 +773,16 @@ Updates the body's linear and angular velocity by applying gravity and damping f
 
 |void| **set_constant_torque**\ (\ torque\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsDirectBodyState3D_method_set_constant_torque>`
 
-設定在每次物理更新期間，施加在該物體上的總恒定旋轉力。
+Sets the body's total constant rotational forces applied during each physics update.
 
-見 :ref:`add_constant_torque()<class_PhysicsDirectBodyState3D_method_add_constant_torque>`\ 。
+See :ref:`add_constant_torque()<class_PhysicsDirectBodyState3D_method_add_constant_torque>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

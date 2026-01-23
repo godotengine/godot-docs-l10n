@@ -5,14 +5,14 @@
 ImageTexture
 ============
 
-**繼承：** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-基於 :ref:`Image<class_Image>` 的 :ref:`Texture2D<class_Texture2D>`\ 。
+A :ref:`Texture2D<class_Texture2D>` based on an :ref:`Image<class_Image>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 A :ref:`Texture2D<class_Texture2D>` based on an :ref:`Image<class_Image>`. For an image to be displayed, an **ImageTexture** has to be created from it using the :ref:`create_from_image()<class_ImageTexture_method_create_from_image>` method:
 
@@ -46,15 +46,15 @@ An **ImageTexture** is not meant to be operated from within the editor interface
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`匯入圖像 <../tutorials/assets_pipeline/importing_images>`
+- :doc:`Importing images <../tutorials/assets_pipeline/importing_images>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -65,8 +65,8 @@ An **ImageTexture** is not meant to be operated from within the editor interface
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -89,8 +89,8 @@ An **ImageTexture** is not meant to be operated from within the editor interface
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_ImageTexture_method_create_from_image:
 
@@ -98,7 +98,7 @@ An **ImageTexture** is not meant to be operated from within the editor interface
 
 :ref:`ImageTexture<class_ImageTexture>` **create_from_image**\ (\ image\: :ref:`Image<class_Image>`\ ) |static| :ref:`🔗<class_ImageTexture_method_create_from_image>`
 
-建立一個新的 **ImageTexture**\ ，並通過分配和設定來自 :ref:`Image<class_Image>` 的資料來初始化它。
+Creates a new **ImageTexture** and initializes it by allocating and setting the data from an :ref:`Image<class_Image>`.
 
 .. rst-class:: classref-item-separator
 
@@ -122,9 +122,9 @@ Returns the format of the texture.
 
 |void| **set_image**\ (\ image\: :ref:`Image<class_Image>`\ ) :ref:`🔗<class_ImageTexture_method_set_image>`
 
-用新的 :ref:`Image<class_Image>` 替換該紋理的資料。這將為該紋理重新分配新記憶體。
+Replaces the texture's data with a new :ref:`Image<class_Image>`. This will re-allocate new memory for the texture.
 
-如果要更新圖像，但不需要更改其參數（格式、大小），請改用 :ref:`update()<class_ImageTexture_method_update>` 以獲得更好的性能。
+If you want to update the image, but don't need to change its parameters (format, size), use :ref:`update()<class_ImageTexture_method_update>` instead for better performance.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ Returns the format of the texture.
 
 |void| **set_size_override**\ (\ size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_ImageTexture_method_set_size_override>`
 
-將紋理的大小調整為指定的尺寸。
+Resizes the texture to the specified dimensions.
 
 .. rst-class:: classref-item-separator
 
@@ -148,18 +148,18 @@ Returns the format of the texture.
 
 |void| **update**\ (\ image\: :ref:`Image<class_Image>`\ ) :ref:`🔗<class_ImageTexture_method_update>`
 
-用新的 :ref:`Image<class_Image>` 替換該紋理的資料。
+Replaces the texture's data with a new :ref:`Image<class_Image>`.
 
-\ **注意：**\ 該紋理必須使用 :ref:`create_from_image()<class_ImageTexture_method_create_from_image>` 建立、或首先使用 :ref:`set_image()<class_ImageTexture_method_set_image>` 方法初始化，然後才能更新。新的圖像大小、格式和 mipmaps 配置，應與現有紋理的圖像配置相配對。
+\ **Note:** The texture has to be created using :ref:`create_from_image()<class_ImageTexture_method_create_from_image>` or initialized first with the :ref:`set_image()<class_ImageTexture_method_set_image>` method before it can be updated. The new image dimensions, format, and mipmaps configuration should match the existing texture's image configuration.
 
-如果需要頻繁更新紋理，請使用該方法而不是 :ref:`set_image()<class_ImageTexture_method_set_image>`\ ，這比每次為一個新紋理分配額外記憶體要快。
+Use this method over :ref:`set_image()<class_ImageTexture_method_set_image>` if you need to update the texture frequently, which is faster than allocating additional memory for a new texture each time.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

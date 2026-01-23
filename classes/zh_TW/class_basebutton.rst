@@ -5,23 +5,23 @@
 BaseButton
 ==========
 
-**繼承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`Button<class_Button>`, :ref:`LinkButton<class_LinkButton>`, :ref:`TextureButton<class_TextureButton>`
+**Inherited By:** :ref:`Button<class_Button>`, :ref:`LinkButton<class_LinkButton>`, :ref:`TextureButton<class_TextureButton>`
 
-GUI 按鈕的抽象基底類別。
+Abstract base class for GUI buttons.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-**BaseButton** 是 GUI 按鈕的抽象基底類別，本身不會顯示任何內容。
+**BaseButton** is an abstract base class for GUI buttons. It doesn't display anything by itself.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -52,8 +52,8 @@ GUI 按鈕的抽象基底類別。
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -76,8 +76,8 @@ GUI 按鈕的抽象基底類別。
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_BaseButton_signal_button_down:
 
@@ -85,7 +85,7 @@ GUI 按鈕的抽象基底類別。
 
 **button_down**\ (\ ) :ref:`🔗<class_BaseButton_signal_button_down>`
 
-當開始按住按鈕時發出。
+Emitted when the button starts being held down.
 
 .. rst-class:: classref-item-separator
 
@@ -97,7 +97,7 @@ GUI 按鈕的抽象基底類別。
 
 **button_up**\ (\ ) :ref:`🔗<class_BaseButton_signal_button_up>`
 
-當停止按住按鈕時發出。
+Emitted when the button stops being held down.
 
 .. rst-class:: classref-item-separator
 
@@ -109,9 +109,9 @@ GUI 按鈕的抽象基底類別。
 
 **pressed**\ (\ ) :ref:`🔗<class_BaseButton_signal_pressed>`
 
-當按鈕被切換或按下時發出。若 :ref:`action_mode<class_BaseButton_property_action_mode>` 為 :ref:`ACTION_MODE_BUTTON_PRESS<class_BaseButton_constant_ACTION_MODE_BUTTON_PRESS>`\ ，則在 :ref:`button_down<class_BaseButton_signal_button_down>` 觸發；否則在 :ref:`button_up<class_BaseButton_signal_button_up>` 觸發。
+Emitted when the button is toggled or pressed. This is on :ref:`button_down<class_BaseButton_signal_button_down>` if :ref:`action_mode<class_BaseButton_property_action_mode>` is :ref:`ACTION_MODE_BUTTON_PRESS<class_BaseButton_constant_ACTION_MODE_BUTTON_PRESS>` and on :ref:`button_up<class_BaseButton_signal_button_up>` otherwise.
 
-若需知道按鈕目前的按下狀態（且已啟用 :ref:`toggle_mode<class_BaseButton_property_toggle_mode>`\ ），請改用 :ref:`toggled<class_BaseButton_signal_toggled>`\ 。
+If you need to know the button's pressed state (and :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` is active), use :ref:`toggled<class_BaseButton_signal_toggled>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -123,7 +123,7 @@ GUI 按鈕的抽象基底類別。
 
 **toggled**\ (\ toggled_on\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BaseButton_signal_toggled>`
 
-當按鈕於按下與正常狀態間剛完成切換時發出（僅在 :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` 啟用時）。新狀態會包含於參數 ``toggled_on`` 中。
+Emitted when the button was just toggled between pressed and normal states (only if :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` is active). The new state is contained in the ``toggled_on`` argument.
 
 .. rst-class:: classref-section-separator
 
@@ -131,8 +131,8 @@ GUI 按鈕的抽象基底類別。
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_BaseButton_DrawMode:
 
@@ -146,7 +146,7 @@ enum **DrawMode**: :ref:`🔗<enum_BaseButton_DrawMode>`
 
 :ref:`DrawMode<enum_BaseButton_DrawMode>` **DRAW_NORMAL** = ``0``
 
-按鈕的正常狀態（未按下、未懸停、未切換且已啟用）。
+The normal state (i.e. not pressed, not hovered, not toggled and enabled) of buttons.
 
 .. _class_BaseButton_constant_DRAW_PRESSED:
 
@@ -154,7 +154,7 @@ enum **DrawMode**: :ref:`🔗<enum_BaseButton_DrawMode>`
 
 :ref:`DrawMode<enum_BaseButton_DrawMode>` **DRAW_PRESSED** = ``1``
 
-按鈕被按下的狀態。
+The state of buttons are pressed.
 
 .. _class_BaseButton_constant_DRAW_HOVER:
 
@@ -162,7 +162,7 @@ enum **DrawMode**: :ref:`🔗<enum_BaseButton_DrawMode>`
 
 :ref:`DrawMode<enum_BaseButton_DrawMode>` **DRAW_HOVER** = ``2``
 
-按鈕處於滑鼠懸停的狀態。
+The state of buttons are hovered.
 
 .. _class_BaseButton_constant_DRAW_DISABLED:
 
@@ -170,7 +170,7 @@ enum **DrawMode**: :ref:`🔗<enum_BaseButton_DrawMode>`
 
 :ref:`DrawMode<enum_BaseButton_DrawMode>` **DRAW_DISABLED** = ``3``
 
-按鈕處於停用狀態。
+The state of buttons are disabled.
 
 .. _class_BaseButton_constant_DRAW_HOVER_PRESSED:
 
@@ -178,7 +178,7 @@ enum **DrawMode**: :ref:`🔗<enum_BaseButton_DrawMode>`
 
 :ref:`DrawMode<enum_BaseButton_DrawMode>` **DRAW_HOVER_PRESSED** = ``4``
 
-按鈕同時處於懸停且按下的狀態。
+The state of buttons are both hovered and pressed.
 
 .. rst-class:: classref-item-separator
 
@@ -196,7 +196,7 @@ enum **ActionMode**: :ref:`🔗<enum_BaseButton_ActionMode>`
 
 :ref:`ActionMode<enum_BaseButton_ActionMode>` **ACTION_MODE_BUTTON_PRESS** = ``0``
 
-只需按下即可視為已點擊。
+Require just a press to consider the button clicked.
 
 .. _class_BaseButton_constant_ACTION_MODE_BUTTON_RELEASE:
 
@@ -204,7 +204,7 @@ enum **ActionMode**: :ref:`🔗<enum_BaseButton_ActionMode>`
 
 :ref:`ActionMode<enum_BaseButton_ActionMode>` **ACTION_MODE_BUTTON_RELEASE** = ``1``
 
-需按下後再釋放才算一次點擊。
+Require a press and a subsequent release before considering the button clicked.
 
 .. rst-class:: classref-section-separator
 
@@ -212,8 +212,8 @@ enum **ActionMode**: :ref:`🔗<enum_BaseButton_ActionMode>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_BaseButton_property_action_mode:
 
@@ -226,7 +226,7 @@ enum **ActionMode**: :ref:`🔗<enum_BaseButton_ActionMode>`
 - |void| **set_action_mode**\ (\ value\: :ref:`ActionMode<enum_BaseButton_ActionMode>`\ )
 - :ref:`ActionMode<enum_BaseButton_ActionMode>` **get_action_mode**\ (\ )
 
-決定按鈕被視為已點擊的時機。
+Determines when the button is considered clicked.
 
 .. rst-class:: classref-item-separator
 
@@ -243,9 +243,9 @@ enum **ActionMode**: :ref:`🔗<enum_BaseButton_ActionMode>`
 - |void| **set_button_group**\ (\ value\: :ref:`ButtonGroup<class_ButtonGroup>`\ )
 - :ref:`ButtonGroup<class_ButtonGroup>` **get_button_group**\ (\ )
 
-與此按鈕關聯的 :ref:`ButtonGroup<class_ButtonGroup>`\ ，不要與「節點群組」混淆。
+The :ref:`ButtonGroup<class_ButtonGroup>` associated with the button. Not to be confused with node groups.
 
-\ **注意：** 如果為按鈕指定了 :ref:`ButtonGroup<class_ButtonGroup>`\ ，它將被設定為單選按鈕。
+\ **Note:** The button will be configured as a radio button if a :ref:`ButtonGroup<class_ButtonGroup>` is assigned to it.
 
 .. rst-class:: classref-item-separator
 
@@ -262,9 +262,9 @@ enum **ActionMode**: :ref:`🔗<enum_BaseButton_ActionMode>`
 - |void| **set_button_mask**\ (\ value\: |bitfield|\[:ref:`MouseButtonMask<enum_@GlobalScope_MouseButtonMask>`\]\ )
 - |bitfield|\[:ref:`MouseButtonMask<enum_@GlobalScope_MouseButtonMask>`\] **get_button_mask**\ (\ )
 
-二進位遮罩，用來指定此按鈕要回應哪些滑鼠鍵。
+Binary mask to choose which mouse buttons this button will respond to.
 
-若要同時允許左鍵與右鍵點擊，請使用 ``MOUSE_BUTTON_MASK_LEFT | MOUSE_BUTTON_MASK_RIGHT``\ 。
+To allow both left-click and right-click, use ``MOUSE_BUTTON_MASK_LEFT | MOUSE_BUTTON_MASK_RIGHT``.
 
 .. rst-class:: classref-item-separator
 
@@ -281,9 +281,9 @@ enum **ActionMode**: :ref:`🔗<enum_BaseButton_ActionMode>`
 - |void| **set_pressed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_pressed**\ (\ )
 
-若為 ``true``\ ，表示按鈕處於按下狀態，或在 :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` 啟用時處於切換狀態。僅在 :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` 為 ``true`` 時有效。
+If ``true``, the button's state is pressed. Means the button is pressed down or toggled (if :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` is active). Only works if :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` is ``true``.
 
-\ **注意：** 直接修改 :ref:`button_pressed<class_BaseButton_property_button_pressed>` 會觸發 :ref:`toggled<class_BaseButton_signal_toggled>`\ 。若要在不發出該訊號的情況下改變狀態，請使用 :ref:`set_pressed_no_signal()<class_BaseButton_method_set_pressed_no_signal>`\ 。
+\ **Note:** Changing the value of :ref:`button_pressed<class_BaseButton_property_button_pressed>` will result in :ref:`toggled<class_BaseButton_signal_toggled>` to be emitted. If you want to change the pressed state without emitting that signal, use :ref:`set_pressed_no_signal()<class_BaseButton_method_set_pressed_no_signal>`.
 
 .. rst-class:: classref-item-separator
 
@@ -319,9 +319,9 @@ If ``true``, the button is in disabled state and can't be clicked or toggled.
 - |void| **set_keep_pressed_outside**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_keep_pressed_outside**\ (\ )
 
-若為 ``true``\ ，按下按鈕後即使將游標移出按鈕區域，按鈕仍保持按下狀態。
+If ``true``, the button stays pressed when moving the cursor outside the button while pressing it.
 
-\ **注意：** 此屬性僅影響視覺效果，訊號的觸發時機不受其影響。
+\ **Note:** This property only affects the button's visual appearance. Signals will be emitted at the same moment regardless of this property's value.
 
 .. rst-class:: classref-item-separator
 
@@ -338,7 +338,7 @@ If ``true``, the button is in disabled state and can't be clicked or toggled.
 - |void| **set_shortcut**\ (\ value\: :ref:`Shortcut<class_Shortcut>`\ )
 - :ref:`Shortcut<class_Shortcut>` **get_shortcut**\ (\ )
 
-與此按鈕關聯的 :ref:`Shortcut<class_Shortcut>`\ 。
+:ref:`Shortcut<class_Shortcut>` associated to the button.
 
 .. rst-class:: classref-item-separator
 
@@ -355,7 +355,7 @@ If ``true``, the button is in disabled state and can't be clicked or toggled.
 - |void| **set_shortcut_feedback**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_shortcut_feedback**\ (\ )
 
-若為 ``true``\ ，當其快捷鍵被觸發時，按鈕會短暫反白。若為 ``false`` 且 :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` 為 ``false``\ ，快捷鍵將在無視覺回饋下觸發。
+If ``true``, the button will highlight for a short amount of time when its shortcut is activated. If ``false`` and :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` is ``false``, the shortcut will activate without any visual feedback.
 
 .. rst-class:: classref-item-separator
 
@@ -372,9 +372,9 @@ If ``true``, the button is in disabled state and can't be clicked or toggled.
 - |void| **set_shortcut_in_tooltip**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_shortcut_in_tooltip_enabled**\ (\ )
 
-若為 ``true``\ ，工具提示會自動附加此按鈕的快捷鍵資訊。
+If ``true``, the button will add information about its shortcut in the tooltip.
 
-\ **注意：** 若透過 :ref:`Control._make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>` 自訂了工具提示，此屬性將不會生效。
+\ **Note:** This property does nothing when the tooltip control is customized using :ref:`Control._make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>`.
 
 .. rst-class:: classref-item-separator
 
@@ -391,7 +391,7 @@ If ``true``, the button is in disabled state and can't be clicked or toggled.
 - |void| **set_toggle_mode**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_toggle_mode**\ (\ )
 
-若為 ``true``\ ，按鈕進入切換模式：每次點擊都會在按下／彈起狀態間切換。
+If ``true``, the button is in toggle mode. Makes the button flip state between pressed and unpressed each time its area is clicked.
 
 .. rst-class:: classref-section-separator
 
@@ -399,8 +399,8 @@ If ``true``, the button is in disabled state and can't be clicked or toggled.
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_BaseButton_private_method__pressed:
 
@@ -408,7 +408,7 @@ If ``true``, the button is in disabled state and can't be clicked or toggled.
 
 |void| **_pressed**\ (\ ) |virtual| :ref:`🔗<class_BaseButton_private_method__pressed>`
 
-當按下按鈕時呼叫。如果你需要得知按鈕的按下狀態（且已啟用 :ref:`toggle_mode<class_BaseButton_property_toggle_mode>`\ ），請改用 :ref:`_toggled()<class_BaseButton_private_method__toggled>`\ 。
+Called when the button is pressed. If you need to know the button's pressed state (and :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` is active), use :ref:`_toggled()<class_BaseButton_private_method__toggled>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -420,7 +420,7 @@ If ``true``, the button is in disabled state and can't be clicked or toggled.
 
 |void| **_toggled**\ (\ toggled_on\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_BaseButton_private_method__toggled>`
 
-當按鈕被切換時呼叫（僅在 :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` 啟用時）。
+Called when the button is toggled (only if :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` is active).
 
 .. rst-class:: classref-item-separator
 
@@ -432,7 +432,7 @@ If ``true``, the button is in disabled state and can't be clicked or toggled.
 
 :ref:`DrawMode<enum_BaseButton_DrawMode>` **get_draw_mode**\ (\ ) |const| :ref:`🔗<class_BaseButton_method_get_draw_mode>`
 
-傳回用於繪製按鈕的視覺狀態。通常於覆寫 _draw() 或連接「draw」訊號，實作自訂繪製程式碼時使用。按鈕的視覺狀態由 :ref:`DrawMode<enum_BaseButton_DrawMode>` 列舉定義。
+Returns the visual state used to draw the button. This is useful mainly when implementing your own draw code by either overriding _draw() or connecting to "draw" signal. The visual state of the button is defined by the :ref:`DrawMode<enum_BaseButton_DrawMode>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -444,7 +444,7 @@ If ``true``, the button is in disabled state and can't be clicked or toggled.
 
 :ref:`bool<class_bool>` **is_hovered**\ (\ ) |const| :ref:`🔗<class_BaseButton_method_is_hovered>`
 
-若滑鼠已進入按鈕且尚未離開，則返回 ``true``\ 。
+Returns ``true`` if the mouse has entered the button and has not left it yet.
 
 .. rst-class:: classref-item-separator
 
@@ -456,16 +456,16 @@ If ``true``, the button is in disabled state and can't be clicked or toggled.
 
 |void| **set_pressed_no_signal**\ (\ pressed\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BaseButton_method_set_pressed_no_signal>`
 
-變更按鈕的 :ref:`button_pressed<class_BaseButton_property_button_pressed>` 狀態而不觸發 :ref:`toggled<class_BaseButton_signal_toggled>`\ 。當你只想改變狀態而不送出按下事件（例如在初始化場景時）可使用此方法。僅在 :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` 為 ``true`` 時有效。
+Changes the :ref:`button_pressed<class_BaseButton_property_button_pressed>` state of the button, without emitting :ref:`toggled<class_BaseButton_signal_toggled>`. Use when you just want to change the state of the button without sending the pressed event (e.g. when initializing scene). Only works if :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` is ``true``.
 
-\ **注意：** 這個方法不會將 :ref:`button_group<class_BaseButton_property_button_group>` 內的其他按鈕彈起。
+\ **Note:** This method doesn't unpress other buttons in :ref:`button_group<class_BaseButton_property_button_group>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

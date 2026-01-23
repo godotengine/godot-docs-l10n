@@ -5,32 +5,32 @@
 AudioEffectCapture
 ==================
 
-**繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-即時擷取音訊匯流排的音訊。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-AudioEffectCapture 會將附加匯流排的所有音訊影格複製到其內部環形緩衝區。
-
-程式可透過 :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>` 從該緩衝區取出影格並自行處理，例如擷取 :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>` 資料、實作自訂效果或透過網路傳輸。從麥克風擷取時，樣本格式為雙聲道 32 位元浮點 PCM。
-
-與 :ref:`AudioEffectRecord<class_AudioEffectRecord>` 不同，本效果僅回傳原始樣本，不會封裝成 :ref:`AudioStream<class_AudioStream>`\ 。
+Captures audio from an audio bus in real-time.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
+AudioEffectCapture is an AudioEffect which copies all audio frames from the attached audio effect bus into its internal ring buffer.
+
+Application code should consume these audio frames from this ring buffer using :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>` and process it as needed, for example to capture data from an :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`, implement application-defined effects, or to transmit audio over the network. When capturing audio data from a microphone, the format of the samples will be stereo 32-bit floating-point PCM.
+
+Unlike :ref:`AudioEffectRecord<class_AudioEffectRecord>`, this effect only returns the raw audio samples instead of encoding them into an :ref:`AudioStream<class_AudioStream>`.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Audio buses <../tutorials/audio/audio_buses>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -41,8 +41,8 @@ AudioEffectCapture 會將附加匯流排的所有音訊影格複製到其內部�
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -69,8 +69,8 @@ AudioEffectCapture 會將附加匯流排的所有音訊影格複製到其內部�
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_AudioEffectCapture_property_buffer_length:
 
@@ -83,7 +83,7 @@ AudioEffectCapture 會將附加匯流排的所有音訊影格複製到其內部�
 - |void| **set_buffer_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_buffer_length**\ (\ )
 
-內部環形緩衝區長度（秒）。若已初始化，重新設定將無效。
+Length of the internal ring buffer, in seconds. Setting the buffer length will have no effect if already initialized.
 
 .. rst-class:: classref-section-separator
 
@@ -91,8 +91,8 @@ AudioEffectCapture 會將附加匯流排的所有音訊影格複製到其內部�
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_AudioEffectCapture_method_can_get_buffer:
 
@@ -100,7 +100,7 @@ AudioEffectCapture 會將附加匯流排的所有音訊影格複製到其內部�
 
 :ref:`bool<class_bool>` **can_get_buffer**\ (\ frames\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_can_get_buffer>`
 
-若內部環形緩衝區中至少有 ``frames`` 個影格可讀，則回傳 ``true``\ 。
+Returns ``true`` if at least ``frames`` audio frames are available to read in the internal ring buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -112,9 +112,9 @@ AudioEffectCapture 會將附加匯流排的所有音訊影格複製到其內部�
 
 |void| **clear_buffer**\ (\ ) :ref:`🔗<class_AudioEffectCapture_method_clear_buffer>`
 
-清空內部環形緩衝區。
+Clears the internal ring buffer.
 
-\ **注意：** 擷取過程中呼叫此方法可能導致樣本遺失，播放時會出現爆音。
+\ **Note:** Calling this during a capture can cause the loss of samples which causes popping in the playback.
 
 .. rst-class:: classref-item-separator
 
@@ -126,11 +126,11 @@ AudioEffectCapture 會將附加匯流排的所有音訊影格複製到其內部�
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_buffer**\ (\ frames\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioEffectCapture_method_get_buffer>`
 
-自環形緩衝區取出接下來的 ``frames`` 個音訊樣本。
+Gets the next ``frames`` audio samples from the internal ring buffer.
 
-若資料足夠，回傳含有精確 ``frames`` 個樣本的 :ref:`PackedVector2Array<class_PackedVector2Array>`\ ；否則回傳空陣列。
+Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` containing exactly ``frames`` audio samples if available, or an empty :ref:`PackedVector2Array<class_PackedVector2Array>` if insufficient data was available.
 
-樣本為範圍 ``-1``\ ～\ ``1`` 的有號浮點 PCM，若欲轉為 8 或 16 位整數，需自行縮放（例如 ``v = 0x7fff * samples[0].x``\ ）。
+The samples are signed floating-point PCM between ``-1`` and ``1``. You will have to scale them if you want to use them as 8 or 16-bit integer samples. (``v = 0x7fff * samples[0].x``)
 
 .. rst-class:: classref-item-separator
 
@@ -142,7 +142,7 @@ AudioEffectCapture 會將附加匯流排的所有音訊影格複製到其內部�
 
 :ref:`int<class_int>` **get_buffer_length_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_buffer_length_frames>`
 
-回傳內部環形緩衝區的總大小（影格數）。
+Returns the total size of the internal ring buffer in frames.
 
 .. rst-class:: classref-item-separator
 
@@ -154,7 +154,7 @@ AudioEffectCapture 會將附加匯流排的所有音訊影格複製到其內部�
 
 :ref:`int<class_int>` **get_discarded_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_discarded_frames>`
 
-回傳因緩衝區已滿而被丟棄的影格數。
+Returns the number of audio frames discarded from the audio bus due to full buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +166,7 @@ AudioEffectCapture 會將附加匯流排的所有音訊影格複製到其內部�
 
 :ref:`int<class_int>` **get_frames_available**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_frames_available>`
 
-回傳可透過 :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>` 讀取的影格數。
+Returns the number of frames available to read using :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -178,14 +178,14 @@ AudioEffectCapture 會將附加匯流排的所有音訊影格複製到其內部�
 
 :ref:`int<class_int>` **get_pushed_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_pushed_frames>`
 
-回傳自音訊匯流排寫入的影格總數。
+Returns the number of audio frames inserted from the audio bus.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,28 +5,28 @@
 ResourceImporterBitMap
 ======================
 
-**繼承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-匯入 :ref:`BitMap<class_BitMap>` 資源（布林值的二維陣列）。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-:ref:`BitMap<class_BitMap>` 資源通常用作\ :ref:`TextureButton<class_TextureButton>` 和\ :ref:`TouchScreenButton<class_TouchScreenButton>` 中的點選遮罩。
+Imports a :ref:`BitMap<class_BitMap>` resource (2D array of boolean values).
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`匯入圖像 <../tutorials/assets_pipeline/importing_images>`
+:ref:`BitMap<class_BitMap>` resources are typically used as click masks in :ref:`TextureButton<class_TextureButton>` and :ref:`TouchScreenButton<class_TouchScreenButton>`.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Importing images <../tutorials/assets_pipeline/importing_images>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -43,8 +43,8 @@ ResourceImporterBitMap
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_ResourceImporterBitMap_property_create_from:
 
@@ -52,11 +52,11 @@ ResourceImporterBitMap
 
 :ref:`int<class_int>` **create_from** = ``0`` :ref:`🔗<class_ResourceImporterBitMap_property_create_from>`
 
-用於產生點陣圖的資料來源。
+The data source to use for generating the bitmap.
 
-\ **黑白：** HSV 值大於\ :ref:`threshold<class_ResourceImporterBitMap_property_threshold>`\ 的像素將被視為「已啟用」（位元為\ ``true``\ ）。如果像素低於或等於閾值，則將被視為「停用」（位元為\ ``false``\ ）。
+\ **Black & White:** Pixels whose HSV value is greater than the :ref:`threshold<class_ResourceImporterBitMap_property_threshold>` will be considered as "enabled" (bit is ``true``). If the pixel is lower than or equal to the threshold, it will be considered as "disabled" (bit is ``false``).
 
-\ **Alpha：** Alpha 值大於\ :ref:`threshold<class_ResourceImporterBitMap_property_threshold>`\ 的像素將被視為「啟用」（位元為\ ``true``\ ）。如果像素低於或等於閾值，則將被視為“已停用”（位元為 ``false``\ ）。
+\ **Alpha:** Pixels whose alpha value is greater than the :ref:`threshold<class_ResourceImporterBitMap_property_threshold>` will be considered as "enabled" (bit is ``true``). If the pixel is lower than or equal to the threshold, it will be considered as "disabled" (bit is ``false``).
 
 .. rst-class:: classref-item-separator
 
@@ -68,14 +68,14 @@ ResourceImporterBitMap
 
 :ref:`float<class_float>` **threshold** = ``0.5`` :ref:`🔗<class_ResourceImporterBitMap_property_threshold>`
 
-用於確定哪些位元應視為啟用或停用的閾值。另請參閱\ :ref:`create_from<class_ResourceImporterBitMap_property_create_from>`\ 。
+The threshold to use to determine which bits should be considered enabled or disabled. See also :ref:`create_from<class_ResourceImporterBitMap_property_create_from>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

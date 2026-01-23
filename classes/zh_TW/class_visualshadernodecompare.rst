@@ -5,21 +5,21 @@
 VisualShaderNodeCompare
 =======================
 
-**繼承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-視覺化著色器圖內常見型別的比較函式。
+A comparison function for common types within the visual shader graph.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-通過 :ref:`function<class_VisualShaderNodeCompare_property_function>` 比較 ``a`` 和 ``b`` 的 :ref:`type<class_VisualShaderNodeCompare_property_type>`\ 。返回一個布林標量。在著色器程式碼中轉換成 ``if`` 指令。
+Compares ``a`` and ``b`` of :ref:`type<class_VisualShaderNodeCompare_property_type>` by :ref:`function<class_VisualShaderNodeCompare_property_function>`. Returns a boolean scalar. Translates to ``if`` instruction in shader code.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ VisualShaderNodeCompare
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_VisualShaderNodeCompare_ComparisonType:
 
@@ -53,7 +53,7 @@ enum **ComparisonType**: :ref:`🔗<enum_VisualShaderNodeCompare_ComparisonType>
 
 :ref:`ComparisonType<enum_VisualShaderNodeCompare_ComparisonType>` **CTYPE_SCALAR** = ``0``
 
-浮點標量。
+A floating-point scalar.
 
 .. _class_VisualShaderNodeCompare_constant_CTYPE_SCALAR_INT:
 
@@ -61,7 +61,7 @@ enum **ComparisonType**: :ref:`🔗<enum_VisualShaderNodeCompare_ComparisonType>
 
 :ref:`ComparisonType<enum_VisualShaderNodeCompare_ComparisonType>` **CTYPE_SCALAR_INT** = ``1``
 
-整數標量。
+An integer scalar.
 
 .. _class_VisualShaderNodeCompare_constant_CTYPE_SCALAR_UINT:
 
@@ -69,7 +69,7 @@ enum **ComparisonType**: :ref:`🔗<enum_VisualShaderNodeCompare_ComparisonType>
 
 :ref:`ComparisonType<enum_VisualShaderNodeCompare_ComparisonType>` **CTYPE_SCALAR_UINT** = ``2``
 
-不帶正負號的整數標量。
+An unsigned integer scalar.
 
 .. _class_VisualShaderNodeCompare_constant_CTYPE_VECTOR_2D:
 
@@ -77,7 +77,7 @@ enum **ComparisonType**: :ref:`🔗<enum_VisualShaderNodeCompare_ComparisonType>
 
 :ref:`ComparisonType<enum_VisualShaderNodeCompare_ComparisonType>` **CTYPE_VECTOR_2D** = ``3``
 
-2D 向量型別。
+A 2D vector type.
 
 .. _class_VisualShaderNodeCompare_constant_CTYPE_VECTOR_3D:
 
@@ -85,7 +85,7 @@ enum **ComparisonType**: :ref:`🔗<enum_VisualShaderNodeCompare_ComparisonType>
 
 :ref:`ComparisonType<enum_VisualShaderNodeCompare_ComparisonType>` **CTYPE_VECTOR_3D** = ``4``
 
-3D向量型別。
+A 3D vector type.
 
 .. _class_VisualShaderNodeCompare_constant_CTYPE_VECTOR_4D:
 
@@ -93,7 +93,7 @@ enum **ComparisonType**: :ref:`🔗<enum_VisualShaderNodeCompare_ComparisonType>
 
 :ref:`ComparisonType<enum_VisualShaderNodeCompare_ComparisonType>` **CTYPE_VECTOR_4D** = ``5``
 
-4D 向量型別。
+A 4D vector type.
 
 .. _class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN:
 
@@ -101,7 +101,7 @@ enum **ComparisonType**: :ref:`🔗<enum_VisualShaderNodeCompare_ComparisonType>
 
 :ref:`ComparisonType<enum_VisualShaderNodeCompare_ComparisonType>` **CTYPE_BOOLEAN** = ``6``
 
-布林型別。
+A boolean type.
 
 .. _class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM:
 
@@ -109,7 +109,7 @@ enum **ComparisonType**: :ref:`🔗<enum_VisualShaderNodeCompare_ComparisonType>
 
 :ref:`ComparisonType<enum_VisualShaderNodeCompare_ComparisonType>` **CTYPE_TRANSFORM** = ``7``
 
-變換型別，即 ``mat4``\ 。
+A transform (``mat4``) type.
 
 .. _class_VisualShaderNodeCompare_constant_CTYPE_MAX:
 
@@ -117,7 +117,7 @@ enum **ComparisonType**: :ref:`🔗<enum_VisualShaderNodeCompare_ComparisonType>
 
 :ref:`ComparisonType<enum_VisualShaderNodeCompare_ComparisonType>` **CTYPE_MAX** = ``8``
 
-代表 :ref:`ComparisonType<enum_VisualShaderNodeCompare_ComparisonType>` 列舉的大小。
+Represents the size of the :ref:`ComparisonType<enum_VisualShaderNodeCompare_ComparisonType>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -135,7 +135,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeCompare_Function>`
 
 :ref:`Function<enum_VisualShaderNodeCompare_Function>` **FUNC_EQUAL** = ``0``
 
-相等比較（\ ``a == b``\ ）。
+Comparison for equality (``a == b``).
 
 .. _class_VisualShaderNodeCompare_constant_FUNC_NOT_EQUAL:
 
@@ -143,7 +143,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeCompare_Function>`
 
 :ref:`Function<enum_VisualShaderNodeCompare_Function>` **FUNC_NOT_EQUAL** = ``1``
 
-不等比較（\ ``a != b``\ ）。
+Comparison for inequality (``a != b``).
 
 .. _class_VisualShaderNodeCompare_constant_FUNC_GREATER_THAN:
 
@@ -151,7 +151,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeCompare_Function>`
 
 :ref:`Function<enum_VisualShaderNodeCompare_Function>` **FUNC_GREATER_THAN** = ``2``
 
-大於比較（\ ``a > b``\ ）。如果 :ref:`type<class_VisualShaderNodeCompare_property_type>` 設定為 :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` 或 :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`\ ，則無法使用。
+Comparison for greater than (``a > b``). Cannot be used if :ref:`type<class_VisualShaderNodeCompare_property_type>` set to :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` or :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`.
 
 .. _class_VisualShaderNodeCompare_constant_FUNC_GREATER_THAN_EQUAL:
 
@@ -159,7 +159,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeCompare_Function>`
 
 :ref:`Function<enum_VisualShaderNodeCompare_Function>` **FUNC_GREATER_THAN_EQUAL** = ``3``
 
-大於或等於的比較（\ ``a >= b``\ ）。如果 :ref:`type<class_VisualShaderNodeCompare_property_type>` 設定為 :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` 或 :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`\ ，則無法使用。
+Comparison for greater than or equal (``a >= b``). Cannot be used if :ref:`type<class_VisualShaderNodeCompare_property_type>` set to :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` or :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`.
 
 .. _class_VisualShaderNodeCompare_constant_FUNC_LESS_THAN:
 
@@ -167,7 +167,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeCompare_Function>`
 
 :ref:`Function<enum_VisualShaderNodeCompare_Function>` **FUNC_LESS_THAN** = ``4``
 
-小於比較（\ ``a < b``\ ）。如果 :ref:`type<class_VisualShaderNodeCompare_property_type>` 設定為 :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` 或 :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`\ ，則無法使用。
+Comparison for less than (``a < b``). Cannot be used if :ref:`type<class_VisualShaderNodeCompare_property_type>` set to :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` or :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`.
 
 .. _class_VisualShaderNodeCompare_constant_FUNC_LESS_THAN_EQUAL:
 
@@ -175,7 +175,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeCompare_Function>`
 
 :ref:`Function<enum_VisualShaderNodeCompare_Function>` **FUNC_LESS_THAN_EQUAL** = ``5``
 
-小於或等於的比較（\ ``a <= b``\ ）。如果 :ref:`type<class_VisualShaderNodeCompare_property_type>` 設定為 :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` 或 :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`\ ，則無法使用。
+Comparison for less than or equal (``a <= b``). Cannot be used if :ref:`type<class_VisualShaderNodeCompare_property_type>` set to :ref:`CTYPE_BOOLEAN<class_VisualShaderNodeCompare_constant_CTYPE_BOOLEAN>` or :ref:`CTYPE_TRANSFORM<class_VisualShaderNodeCompare_constant_CTYPE_TRANSFORM>`.
 
 .. _class_VisualShaderNodeCompare_constant_FUNC_MAX:
 
@@ -183,7 +183,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeCompare_Function>`
 
 :ref:`Function<enum_VisualShaderNodeCompare_Function>` **FUNC_MAX** = ``6``
 
-代表 :ref:`Function<enum_VisualShaderNodeCompare_Function>` 列舉的大小。
+Represents the size of the :ref:`Function<enum_VisualShaderNodeCompare_Function>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ The result will be ``true`` if any component in the vector satisfies the compari
 
 :ref:`Condition<enum_VisualShaderNodeCompare_Condition>` **COND_MAX** = ``2``
 
-代表 :ref:`Condition<enum_VisualShaderNodeCompare_Condition>` 列舉的大小。
+Represents the size of the :ref:`Condition<enum_VisualShaderNodeCompare_Condition>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -225,8 +225,8 @@ The result will be ``true`` if any component in the vector satisfies the compari
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_VisualShaderNodeCompare_property_condition:
 
@@ -239,7 +239,7 @@ The result will be ``true`` if any component in the vector satisfies the compari
 - |void| **set_condition**\ (\ value\: :ref:`Condition<enum_VisualShaderNodeCompare_Condition>`\ )
 - :ref:`Condition<enum_VisualShaderNodeCompare_Condition>` **get_condition**\ (\ )
 
-:ref:`type<class_VisualShaderNodeCompare_property_type>` 被設定為 :ref:`CTYPE_VECTOR_3D<class_VisualShaderNodeCompare_constant_CTYPE_VECTOR_3D>` 時套用的額外條件。
+Extra condition which is applied if :ref:`type<class_VisualShaderNodeCompare_property_type>` is set to :ref:`CTYPE_VECTOR_3D<class_VisualShaderNodeCompare_constant_CTYPE_VECTOR_3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -275,12 +275,12 @@ A comparison function.
 
 The type to be used in the comparison.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -6733,7 +6733,7 @@ Una vez que haya terminado con su RID, querrá liberarlo utilizando el método :
 
 :ref:`Variant<class_Variant>` **canvas_item_get_instance_shader_parameter**\ (\ instance\: :ref:`RID<class_RID>`, parameter\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_RenderingServer_method_canvas_item_get_instance_shader_parameter>`
 
-Devuelve el valor del shader uniforme por instancia de la instancia de canvas item especificada. Equivalente a :ref:`CanvasItem.get_instance_shader_parameter()<class_CanvasItem_method_get_instance_shader_parameter>`.
+Returns the value of the per-instance shader uniform from the specified canvas item instance. Equivalent to :ref:`CanvasItem.get_instance_shader_parameter()<class_CanvasItem_method_get_instance_shader_parameter>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6745,7 +6745,7 @@ Devuelve el valor del shader uniforme por instancia de la instancia de canvas it
 
 :ref:`Variant<class_Variant>` **canvas_item_get_instance_shader_parameter_default_value**\ (\ instance\: :ref:`RID<class_RID>`, parameter\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_RenderingServer_method_canvas_item_get_instance_shader_parameter_default_value>`
 
-Devuelve el valor por defecto del shader uniforme por instancia de la instancia de canvas item especificada. Equivalente a :ref:`CanvasItem.get_instance_shader_parameter()<class_CanvasItem_method_get_instance_shader_parameter>`.
+Returns the default value of the per-instance shader uniform from the specified canvas item instance. Equivalent to :ref:`CanvasItem.get_instance_shader_parameter()<class_CanvasItem_method_get_instance_shader_parameter>`.
 
 .. rst-class:: classref-item-separator
 

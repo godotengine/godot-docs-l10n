@@ -8,29 +8,29 @@
 MultiplayerSynchronizer
 =======================
 
-**继承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-将属性从多人游戏权威同步到远程对等体。
+Synchronizes properties from the multiplayer authority to the remote peers.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-默认情况下，\ **MultiplayerSynchronizer** 会将配置的属性同步到所有对等体。
+By default, **MultiplayerSynchronizer** synchronizes configured properties to all peers.
 
-可以使用 :ref:`set_visibility_for()<class_MultiplayerSynchronizer_method_set_visibility_for>` 直接处理可见性，也可以通过 :ref:`add_visibility_filter()<class_MultiplayerSynchronizer_method_add_visibility_filter>` 和 :ref:`update_visibility()<class_MultiplayerSynchronizer_method_update_visibility>` 在需要时进行处理。
+Visibility can be handled directly with :ref:`set_visibility_for()<class_MultiplayerSynchronizer_method_set_visibility_for>` or as-needed with :ref:`add_visibility_filter()<class_MultiplayerSynchronizer_method_add_visibility_filter>` and :ref:`update_visibility()<class_MultiplayerSynchronizer_method_update_visibility>`.
 
-\ :ref:`MultiplayerSpawner<class_MultiplayerSpawner>` 会根据同步器的可见性来处理节点，只要 :ref:`root_path<class_MultiplayerSynchronizer_property_root_path>` 的节点是出生出来的。
+\ :ref:`MultiplayerSpawner<class_MultiplayerSpawner>`\ s will handle nodes according to visibility of synchronizers as long as the node at :ref:`root_path<class_MultiplayerSynchronizer_property_root_path>` was spawned by one.
 
-内部而言，\ **MultiplayerSynchronizer** 使用 :ref:`MultiplayerAPI.object_configuration_add()<class_MultiplayerAPI_method_object_configuration_add>` 来通知同步开始，将位于 :ref:`root_path<class_MultiplayerSynchronizer_property_root_path>` 的 :ref:`Node<class_Node>` 作为 ``object`` 传入、将自己作为 ``configuration`` 传入。使用 :ref:`MultiplayerAPI.object_configuration_remove()<class_MultiplayerAPI_method_object_configuration_remove>` 通知同步结束的方法相同。
+Internally, **MultiplayerSynchronizer** uses :ref:`MultiplayerAPI.object_configuration_add()<class_MultiplayerAPI_method_object_configuration_add>` to notify synchronization start passing the :ref:`Node<class_Node>` at :ref:`root_path<class_MultiplayerSynchronizer_property_root_path>` as the ``object`` and itself as the ``configuration``, and uses :ref:`MultiplayerAPI.object_configuration_remove()<class_MultiplayerAPI_method_object_configuration_remove>` to notify synchronization end in a similar way.
 
-\ **注意：**\ 不支持对 :ref:`Resource<class_Resource>` 等 :ref:`Object<class_Object>` 类型属性进行同步。对等体的唯一属性也无法进行同步，例如 :ref:`Object<class_Object>` 的实例 ID（见 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`\ ）或 :ref:`RID<class_RID>`\ 。
+\ **Note:** Synchronization is not supported for :ref:`Object<class_Object>` type properties, like :ref:`Resource<class_Resource>`. Properties that are unique to each peer, like the instance IDs of :ref:`Object<class_Object>`\ s (see :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`) or :ref:`RID<class_RID>`\ s, will also not work in synchronization.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -51,8 +51,8 @@ MultiplayerSynchronizer
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -75,8 +75,8 @@ MultiplayerSynchronizer
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_MultiplayerSynchronizer_signal_delta_synchronized:
 
@@ -84,7 +84,7 @@ MultiplayerSynchronizer
 
 **delta_synchronized**\ (\ ) :ref:`🔗<class_MultiplayerSynchronizer_signal_delta_synchronized>`
 
-属性发生更新后，该同步器收到新的增量同步状态时发出。
+Emitted when a new delta synchronization state is received by this synchronizer after the properties have been updated.
 
 .. rst-class:: classref-item-separator
 
@@ -96,7 +96,7 @@ MultiplayerSynchronizer
 
 **synchronized**\ (\ ) :ref:`🔗<class_MultiplayerSynchronizer_signal_synchronized>`
 
-属性发生更新后，该同步器收到新的同步状态时发出。
+Emitted when a new synchronization state is received by this synchronizer after the properties have been updated.
 
 .. rst-class:: classref-item-separator
 
@@ -108,7 +108,7 @@ MultiplayerSynchronizer
 
 **visibility_changed**\ (\ for_peer\: :ref:`int<class_int>`\ ) :ref:`🔗<class_MultiplayerSynchronizer_signal_visibility_changed>`
 
-当 ``for_peer`` 的可见性发生更新时发出。见 :ref:`update_visibility()<class_MultiplayerSynchronizer_method_update_visibility>`\ 。
+Emitted when visibility of ``for_peer`` is updated. See :ref:`update_visibility()<class_MultiplayerSynchronizer_method_update_visibility>`.
 
 .. rst-class:: classref-section-separator
 
@@ -116,8 +116,8 @@ MultiplayerSynchronizer
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_MultiplayerSynchronizer_VisibilityUpdateMode:
 
@@ -131,7 +131,7 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 
 :ref:`VisibilityUpdateMode<enum_MultiplayerSynchronizer_VisibilityUpdateMode>` **VISIBILITY_PROCESS_IDLE** = ``0``
 
-可见性过滤器的更新发生在处理帧中（见 :ref:`Node.NOTIFICATION_INTERNAL_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PROCESS>`\ ）。
+Visibility filters are updated during process frames (see :ref:`Node.NOTIFICATION_INTERNAL_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PROCESS>`).
 
 .. _class_MultiplayerSynchronizer_constant_VISIBILITY_PROCESS_PHYSICS:
 
@@ -139,7 +139,7 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 
 :ref:`VisibilityUpdateMode<enum_MultiplayerSynchronizer_VisibilityUpdateMode>` **VISIBILITY_PROCESS_PHYSICS** = ``1``
 
-可见性过滤器的更新发生在物理帧中（见 :ref:`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PHYSICS_PROCESS>`\ ）。
+Visibility filters are updated during physics frames (see :ref:`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PHYSICS_PROCESS>`).
 
 .. _class_MultiplayerSynchronizer_constant_VISIBILITY_PROCESS_NONE:
 
@@ -147,7 +147,7 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 
 :ref:`VisibilityUpdateMode<enum_MultiplayerSynchronizer_VisibilityUpdateMode>` **VISIBILITY_PROCESS_NONE** = ``2``
 
-可见性过滤器不会自动更新，必须通过调用 :ref:`update_visibility()<class_MultiplayerSynchronizer_method_update_visibility>` 手动更新。
+Visibility filters are not updated automatically, and must be updated manually by calling :ref:`update_visibility()<class_MultiplayerSynchronizer_method_update_visibility>`.
 
 .. rst-class:: classref-section-separator
 
@@ -155,8 +155,8 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_MultiplayerSynchronizer_property_delta_interval:
 
@@ -169,7 +169,7 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 - |void| **set_delta_interval**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_delta_interval**\ (\ )
 
-两次增量同步之间的时间间隔。复制设为 :ref:`SceneReplicationConfig.REPLICATION_MODE_ON_CHANGE<class_SceneReplicationConfig_constant_REPLICATION_MODE_ON_CHANGE>` 时使用。如果设置为 ``0.0``\ （默认值）时，每个网络处理帧都会发生增量同步。
+Time interval between delta synchronizations. Used when the replication is set to :ref:`SceneReplicationConfig.REPLICATION_MODE_ON_CHANGE<class_SceneReplicationConfig_constant_REPLICATION_MODE_ON_CHANGE>`. If set to ``0.0`` (the default), delta synchronizations happen every network process frame.
 
 .. rst-class:: classref-item-separator
 
@@ -186,7 +186,7 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 - |void| **set_visibility_public**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_visibility_public**\ (\ )
 
-默认情况下，同步是否应该对所有对等体可见。有关配置细粒度可见性选项的方法，请参阅 :ref:`set_visibility_for()<class_MultiplayerSynchronizer_method_set_visibility_for>` 和 :ref:`add_visibility_filter()<class_MultiplayerSynchronizer_method_add_visibility_filter>`\ 。
+Whether synchronization should be visible to all peers by default. See :ref:`set_visibility_for()<class_MultiplayerSynchronizer_method_set_visibility_for>` and :ref:`add_visibility_filter()<class_MultiplayerSynchronizer_method_add_visibility_filter>` for ways of configuring fine-grained visibility options.
 
 .. rst-class:: classref-item-separator
 
@@ -203,7 +203,7 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 - |void| **set_replication_config**\ (\ value\: :ref:`SceneReplicationConfig<class_SceneReplicationConfig>`\ )
 - :ref:`SceneReplicationConfig<class_SceneReplicationConfig>` **get_replication_config**\ (\ )
 
-包含要同步的属性的资源。
+Resource containing which properties to synchronize.
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 - |void| **set_replication_interval**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_replication_interval**\ (\ )
 
-两次同步之间的时间间隔。复制设置为 :ref:`SceneReplicationConfig.REPLICATION_MODE_ALWAYS<class_SceneReplicationConfig_constant_REPLICATION_MODE_ALWAYS>` 时使用。如果设置为 ``0.0``\ （默认值）时，每个网络处理帧都会发生同步。
+Time interval between synchronizations. Used when the replication is set to :ref:`SceneReplicationConfig.REPLICATION_MODE_ALWAYS<class_SceneReplicationConfig_constant_REPLICATION_MODE_ALWAYS>`. If set to ``0.0`` (the default), synchronizations happen every network process frame.
 
 .. rst-class:: classref-item-separator
 
@@ -237,9 +237,9 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 - |void| **set_root_path**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_root_path**\ (\ )
 
-复制属性相对的节点路径。
+Node path that replicated properties are relative to.
 
-如果 :ref:`root_path<class_MultiplayerSynchronizer_property_root_path>` 是由 :ref:`MultiplayerSpawner<class_MultiplayerSpawner>` 生成的，则该节点也将根据此同步器可见性选项生成和消失。
+If :ref:`root_path<class_MultiplayerSynchronizer_property_root_path>` was spawned by a :ref:`MultiplayerSpawner<class_MultiplayerSpawner>`, the node will be also be spawned and despawned based on this synchronizer visibility options.
 
 .. rst-class:: classref-item-separator
 
@@ -256,7 +256,7 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 - |void| **set_visibility_update_mode**\ (\ value\: :ref:`VisibilityUpdateMode<enum_MultiplayerSynchronizer_VisibilityUpdateMode>`\ )
 - :ref:`VisibilityUpdateMode<enum_MultiplayerSynchronizer_VisibilityUpdateMode>` **get_visibility_update_mode**\ (\ )
 
-指定何时更新可见性过滤器。
+Specifies when visibility filters are updated.
 
 .. rst-class:: classref-section-separator
 
@@ -264,8 +264,8 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_MultiplayerSynchronizer_method_add_visibility_filter:
 
@@ -273,9 +273,9 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 
 |void| **add_visibility_filter**\ (\ filter\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_MultiplayerSynchronizer_method_add_visibility_filter>`
 
-为该同步器添加对等体可见性过滤器。
+Adds a peer visibility filter for this synchronizer.
 
-\ ``filter`` 应该接受对等体 ID :ref:`int<class_int>`\ ，返回 :ref:`bool<class_bool>`\ 。
+\ ``filter`` should take a peer ID :ref:`int<class_int>` and return a :ref:`bool<class_bool>`.
 
 .. rst-class:: classref-item-separator
 
@@ -287,7 +287,7 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 
 :ref:`bool<class_bool>` **get_visibility_for**\ (\ peer\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MultiplayerSynchronizer_method_get_visibility_for>`
 
-查询对等体 ``peer`` 的当前可见性。
+Queries the current visibility for peer ``peer``.
 
 .. rst-class:: classref-item-separator
 
@@ -299,7 +299,7 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 
 |void| **remove_visibility_filter**\ (\ filter\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_MultiplayerSynchronizer_method_remove_visibility_filter>`
 
-从该同步器中移除某个对等体的可见性过滤器。
+Removes a peer visibility filter from this synchronizer.
 
 .. rst-class:: classref-item-separator
 
@@ -311,7 +311,7 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 
 |void| **set_visibility_for**\ (\ peer\: :ref:`int<class_int>`, visible\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_MultiplayerSynchronizer_method_set_visibility_for>`
 
-将 ``peer`` 的可见性设置为 ``visible``\ 。如果 ``peer`` 为 ``0``\ ，则会改为更新 :ref:`public_visibility<class_MultiplayerSynchronizer_property_public_visibility>` 的值。
+Sets the visibility of ``peer`` to ``visible``. If ``peer`` is ``0``, the value of :ref:`public_visibility<class_MultiplayerSynchronizer_property_public_visibility>` will be updated instead.
 
 .. rst-class:: classref-item-separator
 
@@ -323,14 +323,14 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 
 |void| **update_visibility**\ (\ for_peer\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_MultiplayerSynchronizer_method_update_visibility>`
 
-根据可见性过滤器更新 ``for_peer`` 的可见性。如果 ``for_peer`` 为 ``0``\ （默认值），则更新所有对等体的可见性。
+Updates the visibility of ``for_peer`` according to visibility filters. If ``for_peer`` is ``0`` (the default), all peers' visibilties are updated.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

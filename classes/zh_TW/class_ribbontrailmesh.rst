@@ -5,32 +5,32 @@
 RibbonTrailMesh
 ===============
 
-**繼承：** :ref:`PrimitiveMesh<class_PrimitiveMesh>` **<** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`PrimitiveMesh<class_PrimitiveMesh>` **<** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-代表豎直絲帶形狀的 :ref:`PrimitiveMesh<class_PrimitiveMesh>`\ ，絲帶的寬度可變。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-**RibbonTrailMesh** 代表豎直條帶形狀的網格，條帶的寬度可變。條帶由若干扁平或十字形的分節構成，每一節的長度 :ref:`section_length<class_RibbonTrailMesh_property_section_length>` 和分段數 :ref:`section_segments<class_RibbonTrailMesh_property_section_segments>` 都相同。條帶會沿著總長度對 :ref:`curve<class_RibbonTrailMesh_property_curve>` 進行取樣，這樣這條曲線就決定了條帶沿長度的大小。
-
-該基本網格常用於粒子拖尾。
+Represents a straight ribbon-shaped :ref:`PrimitiveMesh<class_PrimitiveMesh>` with variable width.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`3D 粒子拖尾 <../tutorials/3d/particles/trails>`
+**RibbonTrailMesh** represents a straight ribbon-shaped mesh with variable width. The ribbon is composed of a number of flat or cross-shaped sections, each with the same :ref:`section_length<class_RibbonTrailMesh_property_section_length>` and number of :ref:`section_segments<class_RibbonTrailMesh_property_section_segments>`. A :ref:`curve<class_RibbonTrailMesh_property_curve>` is sampled along the total length of the ribbon, meaning that the curve determines the size of the ribbon along its length.
 
-- :doc:`粒子系統（3D） <../tutorials/3d/particles/index>`
+This primitive mesh is usually used for particle trails.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`3D Particle trails <../tutorials/3d/particles/trails>`
+
+- :doc:`Particle systems (3D) <../tutorials/3d/particles/index>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -55,8 +55,8 @@ RibbonTrailMesh
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_RibbonTrailMesh_Shape:
 
@@ -70,7 +70,7 @@ enum **Shape**: :ref:`🔗<enum_RibbonTrailMesh_Shape>`
 
 :ref:`Shape<enum_RibbonTrailMesh_Shape>` **SHAPE_FLAT** = ``0``
 
-將網格指定為單個扁平的面。
+Gives the mesh a single flat face.
 
 .. _class_RibbonTrailMesh_constant_SHAPE_CROSS:
 
@@ -78,7 +78,7 @@ enum **Shape**: :ref:`🔗<enum_RibbonTrailMesh_Shape>`
 
 :ref:`Shape<enum_RibbonTrailMesh_Shape>` **SHAPE_CROSS** = ``1``
 
-將網格指定為兩個互相垂直的面，形成十字形。
+Gives the mesh two perpendicular flat faces, making a cross shape.
 
 .. rst-class:: classref-section-separator
 
@@ -86,8 +86,8 @@ enum **Shape**: :ref:`🔗<enum_RibbonTrailMesh_Shape>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_RibbonTrailMesh_property_curve:
 
@@ -117,7 +117,7 @@ Determines the size of the ribbon along its length. The size of a particular sec
 - |void| **set_section_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_section_length**\ (\ )
 
-條帶中一節的長度。
+The length of a section of the ribbon.
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +134,7 @@ Determines the size of the ribbon along its length. The size of a particular sec
 - |void| **set_section_segments**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_section_segments**\ (\ )
 
-條帶中一節的段數。每一段的大小是根據對 :ref:`curve<class_RibbonTrailMesh_property_curve>` 的取樣確定的。更高的值會生成更細緻的條帶，但以性能為代價。
+The number of segments in a section. The :ref:`curve<class_RibbonTrailMesh_property_curve>` is sampled on each segment to determine its size. Higher values result in a more detailed ribbon at the cost of performance.
 
 .. rst-class:: classref-item-separator
 
@@ -151,7 +151,7 @@ Determines the size of the ribbon along its length. The size of a particular sec
 - |void| **set_sections**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_sections**\ (\ )
 
-條帶中分節的數量。
+The total number of sections on the ribbon.
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ Determines the size of the ribbon along its length. The size of a particular sec
 - |void| **set_shape**\ (\ value\: :ref:`Shape<enum_RibbonTrailMesh_Shape>`\ )
 - :ref:`Shape<enum_RibbonTrailMesh_Shape>` **get_shape**\ (\ )
 
-決定條帶的形狀。
+Determines the shape of the ribbon.
 
 .. rst-class:: classref-item-separator
 
@@ -185,14 +185,14 @@ Determines the size of the ribbon along its length. The size of a particular sec
 - |void| **set_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_size**\ (\ )
 
-條帶的基礎大小。通過將這個大小乘以 :ref:`curve<class_RibbonTrailMesh_property_curve>` 上給定位置對應的值，就可以得到分節上某一段的大小。
+The baseline size of the ribbon. The size of a particular section segment is obtained by multiplying this size by the value of the :ref:`curve<class_RibbonTrailMesh_property_curve>` at the given distance.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

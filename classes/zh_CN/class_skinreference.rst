@@ -5,29 +5,29 @@
 SkinReference
 =============
 
-**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-骨架 RID 的引用计数占位对象，\ :ref:`RenderingServer<class_RenderingServer>` 中会使用该 RID。
+A reference-counted holder object for a skeleton RID used in the :ref:`RenderingServer<class_RenderingServer>`.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-包含来自 :ref:`Skin<class_Skin>` （在特定 :ref:`MeshInstance3D<class_MeshInstance3D>` 上下文中使用）的映射的内部对象，用于引用 RenderingServer 中的骨架 :ref:`RID<class_RID>`\ 。
+An internal object containing a mapping from a :ref:`Skin<class_Skin>` used within the context of a particular :ref:`MeshInstance3D<class_MeshInstance3D>` to refer to the skeleton's :ref:`RID<class_RID>` in the RenderingServer.
 
-另见 :ref:`MeshInstance3D.get_skin_reference()<class_MeshInstance3D_method_get_skin_reference>` 和 :ref:`RenderingServer.instance_attach_skeleton()<class_RenderingServer_method_instance_attach_skeleton>`\ 。
+See also :ref:`MeshInstance3D.get_skin_reference()<class_MeshInstance3D_method_get_skin_reference>` and :ref:`RenderingServer.instance_attach_skeleton()<class_RenderingServer_method_instance_attach_skeleton>`.
 
-请注意，尽管命名相似，但 :ref:`RenderingServer<class_RenderingServer>` 中使用的骨架 RID 与 :ref:`Skeleton3D<class_Skeleton3D>` 节点没有直接的一一对应关系。
+Note that despite the similar naming, the skeleton RID used in the :ref:`RenderingServer<class_RenderingServer>` does not have a direct one-to-one correspondence to a :ref:`Skeleton3D<class_Skeleton3D>` node.
 
-特别是，没有 :ref:`MeshInstance3D<class_MeshInstance3D>` 子节点的 :ref:`Skeleton3D<class_Skeleton3D>` 节点可能对 :ref:`RenderingServer<class_RenderingServer>` 来说是未知的。
+In particular, a :ref:`Skeleton3D<class_Skeleton3D>` node with no :ref:`MeshInstance3D<class_MeshInstance3D>` children may be unknown to the :ref:`RenderingServer<class_RenderingServer>`.
 
-另一方面，具有多个 :ref:`MeshInstance3D<class_MeshInstance3D>` 节点（每个节点都有不同的 :ref:`MeshInstance3D.skin<class_MeshInstance3D_property_skin>` 对象）的 :ref:`Skeleton3D<class_Skeleton3D>` 可能具有多个 SkinReference 实例（因此，有多个骨架 :ref:`RID<class_RID>`\ ）。
+On the other hand, a :ref:`Skeleton3D<class_Skeleton3D>` with multiple :ref:`MeshInstance3D<class_MeshInstance3D>` nodes which each have different :ref:`MeshInstance3D.skin<class_MeshInstance3D_property_skin>` objects may have multiple SkinReference instances (and hence, multiple skeleton :ref:`RID<class_RID>`\ s).
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ SkinReference
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_SkinReference_method_get_skeleton:
 
@@ -53,7 +53,7 @@ SkinReference
 
 :ref:`RID<class_RID>` **get_skeleton**\ (\ ) |const| :ref:`🔗<class_SkinReference_method_get_skeleton>`
 
-返回该 SkinReference 所拥有的 :ref:`RID<class_RID>`\ ，如 :ref:`RenderingServer.skeleton_create()<class_RenderingServer_method_skeleton_create>` 返回的那样。
+Returns the :ref:`RID<class_RID>` owned by this SkinReference, as returned by :ref:`RenderingServer.skeleton_create()<class_RenderingServer_method_skeleton_create>`.
 
 .. rst-class:: classref-item-separator
 
@@ -65,16 +65,16 @@ SkinReference
 
 :ref:`Skin<class_Skin>` **get_skin**\ (\ ) |const| :ref:`🔗<class_SkinReference_method_get_skin>`
 
-返回连接到该 SkinReference 的 :ref:`Skin<class_Skin>`\ 。如果 :ref:`MeshInstance3D<class_MeshInstance3D>` 未分配 :ref:`MeshInstance3D.skin<class_MeshInstance3D_property_skin>`\ ，则这将引用该 :ref:`MeshInstance3D<class_MeshInstance3D>` 拥有的内部默认 :ref:`Skin<class_Skin>`\ 。
+Returns the :ref:`Skin<class_Skin>` connected to this SkinReference. In the case of :ref:`MeshInstance3D<class_MeshInstance3D>` with no :ref:`MeshInstance3D.skin<class_MeshInstance3D_property_skin>` assigned, this will reference an internal default :ref:`Skin<class_Skin>` owned by that :ref:`MeshInstance3D<class_MeshInstance3D>`.
 
-请注意，如果单个 :ref:`Skin<class_Skin>` 由多个 :ref:`Skeleton3D<class_Skeleton3D>` 节点之间的网格共享，则它可能具有多个 **SkinReference**\ 。
+Note that a single :ref:`Skin<class_Skin>` may have more than one **SkinReference** in the case that it is shared by meshes across multiple :ref:`Skeleton3D<class_Skeleton3D>` nodes.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

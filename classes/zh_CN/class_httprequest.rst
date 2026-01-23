@@ -5,24 +5,24 @@
 HTTPRequest
 ===========
 
-**继承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-具有发送 HTTP(S) 请求能力的节点。
+A node with the ability to send HTTP(S) requests.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-一种具有发送 HTTP 请求能力的节点。内部使用 :ref:`HTTPClient<class_HTTPClient>`\ 。
+A node with the ability to send HTTP requests. Uses :ref:`HTTPClient<class_HTTPClient>` internally.
 
-可用于发出 HTTP 请求，即通过 HTTP 下载或上传文件或网络内容。
+Can be used to make HTTP requests, i.e. download or upload files or web content via HTTP.
 
-\ **警告：**\ 请参阅 :ref:`HTTPClient<class_HTTPClient>` 中的注释和警告以了解限制，尤其是有关 TLS 安全性的限制。
+\ **Warning:** See the notes and warnings on :ref:`HTTPClient<class_HTTPClient>` for limitations, especially regarding TLS security.
 
-\ **注意：**\ 导出到 Android 时，在导出项目或使用一键部署前，请确保在 Android 导出预设中启用 ``INTERNET`` 权限。否则，任何类型的网络通信都将被 Android 阻止。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
 
-\ **示例：**\ 联系 REST API 并输出一个返回字段：
+\ **Example:** Contact a REST API and print one of its returned fields:
 
 
 .. tabs::
@@ -30,52 +30,52 @@ HTTPRequest
  .. code-tab:: gdscript
 
     func _ready():
-        # 创建一个 HTTP 请求节点并连接其完成信号。
+        # Create an HTTP request node and connect its completion signal.
         var http_request = HTTPRequest.new()
         add_child(http_request)
         http_request.request_completed.connect(self._http_request_completed)
 
-        # 执行一个 GET 请求。以下 URL 会将写入作为 JSON 返回。
+        # Perform a GET request. The URL below returns JSON as of writing.
         var error = http_request.request("https://httpbin.org/get")
         if error != OK:
-            push_error("在HTTP请求中发生了一个错误。")
+            push_error("An error occurred in the HTTP request.")
 
-        # 执行一个 POST 请求。 以下 URL 会将写入作为 JSON 返回。
-        # 注意：不要使用单个 HTTPRequest 节点同时发出请求。
-        # 下面的代码片段仅供参考。
+        # Perform a POST request. The URL below returns JSON as of writing.
+        # Note: Don't make simultaneous requests using a single HTTPRequest node.
+        # The snippet below is provided for reference only.
         var body = JSON.new().stringify({"name": "Godette"})
         error = http_request.request("https://httpbin.org/post", [], HTTPClient.METHOD_POST, body)
         if error != OK:
-            push_error("在HTTP请求中发生了一个错误。")
+            push_error("An error occurred in the HTTP request.")
 
-    # 当 HTTP 请求完成时调用。
+    # Called when the HTTP request is completed.
     func _http_request_completed(result, response_code, headers, body):
         var json = JSON.new()
         json.parse(body.get_string_from_utf8())
         var response = json.get_data()
 
-        # 将打印 HTTPRequest 节点使用的用户代理字符串（由 httpbin.org 识别）。
+        # Will print the user agent string used by the HTTPRequest node (as recognized by httpbin.org).
         print(response.headers["User-Agent"])
 
  .. code-tab:: csharp
 
     public override void _Ready()
     {
-        // 创建一个 HTTP 请求节点并连接其完成信号。
+        // Create an HTTP request node and connect its completion signal.
         var httpRequest = new HttpRequest();
         AddChild(httpRequest);
         httpRequest.RequestCompleted += HttpRequestCompleted;
 
-        // 执行一个 GET 请求。以下 URL 会将写入作为 JSON 返回。
+        // Perform a GET request. The URL below returns JSON as of writing.
         Error error = httpRequest.Request("https://httpbin.org/get");
         if (error != Error.Ok)
         {
-            GD.PushError("在HTTP请求中发生了一个错误。");
+            GD.PushError("An error occurred in the HTTP request.");
         }
 
-        // 执行一个 POST 请求。 以下 URL 会将写入作为 JSON 返回。
-        // 注意：不要使用单个 HTTPRequest 节点同时发出请求。
-        // 下面的代码片段仅供参考。
+        // Perform a POST request. The URL below returns JSON as of writing.
+        // Note: Don't make simultaneous requests using a single HTTPRequest node.
+        // The snippet below is provided for reference only.
         string body = new Json().Stringify(new Godot.Collections.Dictionary
         {
             { "name", "Godette" }
@@ -83,24 +83,24 @@ HTTPRequest
         error = httpRequest.Request("https://httpbin.org/post", null, HttpClient.Method.Post, body);
         if (error != Error.Ok)
         {
-            GD.PushError("在HTTP请求中发生了一个错误。");
+            GD.PushError("An error occurred in the HTTP request.");
         }
     }
 
-    // 当 HTTP 请求完成时调用。
+    // Called when the HTTP request is completed.
     private void HttpRequestCompleted(long result, long responseCode, string[] headers, byte[] body)
     {
         var json = new Json();
         json.Parse(body.GetStringFromUtf8());
         var response = json.GetData().AsGodotDictionary();
 
-        // 将打印 HTTPRequest 节点使用的用户代理字符串（由 httpbin.org 识别）。
+        // Will print the user agent string used by the HTTPRequest node (as recognized by httpbin.org).
         GD.Print((response["headers"].AsGodotDictionary())["User-Agent"]);
     }
 
 
 
-\ **示例：**\ 使用 **HTTPRequest** 加载并显示图像：
+\ **Example:** Load an image using **HTTPRequest** and display it:
 
 
 .. tabs::
@@ -108,29 +108,29 @@ HTTPRequest
  .. code-tab:: gdscript
 
     func _ready():
-        # 创建一个 HTTP 请求节点并连接其完成信号。
+        # Create an HTTP request node and connect its completion signal.
         var http_request = HTTPRequest.new()
         add_child(http_request)
         http_request.request_completed.connect(self._http_request_completed)
 
-        # 执行一个 HTTP 请求。下面的 URL 将写入作为一个 PNG 图像返回。
+        # Perform the HTTP request. The URL below returns a PNG image as of writing.
         var error = http_request.request("https://placehold.co/512.png")
         if error != OK:
-            push_error("在HTTP请求中发生了一个错误。")
+            push_error("An error occurred in the HTTP request.")
 
-    # 当 HTTP 请求完成时调用。
+    # Called when the HTTP request is completed.
     func _http_request_completed(result, response_code, headers, body):
         if result != HTTPRequest.RESULT_SUCCESS:
-            push_error("无法下载图像。尝试一个不同的图像。")
+            push_error("Image couldn't be downloaded. Try a different image.")
 
         var image = Image.new()
         var error = image.load_png_from_buffer(body)
         if error != OK:
-            push_error("无法加载图像。")
+            push_error("Couldn't load the image.")
 
         var texture = ImageTexture.create_from_image(image)
 
-        # 在 TextureRect 节点中显示图像。
+        # Display the image in a TextureRect node.
         var texture_rect = TextureRect.new()
         add_child(texture_rect)
         texture_rect.texture = texture
@@ -139,36 +139,36 @@ HTTPRequest
 
     public override void _Ready()
     {
-        // 创建一个 HTTP 请求节点并连接其完成信号。
+        // Create an HTTP request node and connect its completion signal.
         var httpRequest = new HttpRequest();
         AddChild(httpRequest);
         httpRequest.RequestCompleted += HttpRequestCompleted;
 
-        // 执行一个 HTTP 请求。下面的 URL 将写入作为一个 PNG 图像返回。
+        // Perform the HTTP request. The URL below returns a PNG image as of writing.
         Error error = httpRequest.Request("https://placehold.co/512.png");
         if (error != Error.Ok)
         {
-            GD.PushError("在HTTP请求中发生了一个错误。");
+            GD.PushError("An error occurred in the HTTP request.");
         }
     }
 
-    // 当 HTTP 请求完成时调用。
+    // Called when the HTTP request is completed.
     private void HttpRequestCompleted(long result, long responseCode, string[] headers, byte[] body)
     {
         if (result != (long)HttpRequest.Result.Success)
         {
-            GD.PushError("无法下载图像。尝试一个不同的图像。");
+            GD.PushError("Image couldn't be downloaded. Try a different image.");
         }
         var image = new Image();
         Error error = image.LoadPngFromBuffer(body);
         if (error != Error.Ok)
         {
-            GD.PushError("无法加载图像。");
+            GD.PushError("Couldn't load the image.");
         }
 
         var texture = ImageTexture.CreateFromImage(image);
 
-        // 在 TextureRect 节点中显示图像。
+        // Display the image in a TextureRect node.
         var textureRect = new TextureRect();
         AddChild(textureRect);
         textureRect.Texture = texture;
@@ -176,21 +176,21 @@ HTTPRequest
 
 
 
-\ **注意：**\ **HTTPRequest** 节点会自动处理响应体的解压缩。除非已经指定了一个，否则 ``Accept-Encoding`` 报头将自动添加到你的每个请求中。任何带有 ``Content-Encoding: gzip`` 报头的响应都将自动解压，并作为未压缩的字节传送给你。
+\ **Note:** **HTTPRequest** nodes will automatically handle decompression of response bodies. An ``Accept-Encoding`` header will be automatically added to each of your requests, unless one is already specified. Any response with a ``Content-Encoding: gzip`` header will automatically be decompressed and delivered to you as uncompressed bytes.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
-- :doc:`发出 HTTP 请求 <../tutorials/networking/http_request_class>`
+- :doc:`Making HTTP requests <../tutorials/networking/http_request_class>`
 
-- :doc:`TLS 证书 <../tutorials/networking/ssl_certificates>`
+- :doc:`TLS certificates <../tutorials/networking/ssl_certificates>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -213,8 +213,8 @@ HTTPRequest
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -245,8 +245,8 @@ HTTPRequest
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_HTTPRequest_signal_request_completed:
 
@@ -254,7 +254,7 @@ HTTPRequest
 
 **request_completed**\ (\ result\: :ref:`int<class_int>`, response_code\: :ref:`int<class_int>`, headers\: :ref:`PackedStringArray<class_PackedStringArray>`, body\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_HTTPRequest_signal_request_completed>`
 
-请求完成时触发。
+Emitted when a request is completed.
 
 .. rst-class:: classref-section-separator
 
@@ -262,8 +262,8 @@ HTTPRequest
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_HTTPRequest_Result:
 
@@ -277,7 +277,7 @@ enum **Result**: :ref:`🔗<enum_HTTPRequest_Result>`
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_SUCCESS** = ``0``
 
-请求成功。
+Request successful.
 
 .. _class_HTTPRequest_constant_RESULT_CHUNKED_BODY_SIZE_MISMATCH:
 
@@ -285,7 +285,7 @@ enum **Result**: :ref:`🔗<enum_HTTPRequest_Result>`
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_CHUNKED_BODY_SIZE_MISMATCH** = ``1``
 
-请求失败，传输的实际数据块大小与预期不符。可能的原因有网络错误、服务器配置问题、数据块编码问题等。
+Request failed due to a mismatch between the expected and actual chunked body size during transfer. Possible causes include network errors, server misconfiguration, or issues with chunked encoding.
 
 .. _class_HTTPRequest_constant_RESULT_CANT_CONNECT:
 
@@ -293,7 +293,7 @@ enum **Result**: :ref:`🔗<enum_HTTPRequest_Result>`
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_CANT_CONNECT** = ``2``
 
-连接时请求失败。
+Request failed while connecting.
 
 .. _class_HTTPRequest_constant_RESULT_CANT_RESOLVE:
 
@@ -301,7 +301,7 @@ enum **Result**: :ref:`🔗<enum_HTTPRequest_Result>`
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_CANT_RESOLVE** = ``3``
 
-解析时请求失败。
+Request failed while resolving.
 
 .. _class_HTTPRequest_constant_RESULT_CONNECTION_ERROR:
 
@@ -309,7 +309,7 @@ enum **Result**: :ref:`🔗<enum_HTTPRequest_Result>`
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_CONNECTION_ERROR** = ``4``
 
-因连接（读写）错误而失败。
+Request failed due to connection (read/write) error.
 
 .. _class_HTTPRequest_constant_RESULT_TLS_HANDSHAKE_ERROR:
 
@@ -317,7 +317,7 @@ enum **Result**: :ref:`🔗<enum_HTTPRequest_Result>`
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_TLS_HANDSHAKE_ERROR** = ``5``
 
-TLS 握手时请求失败。
+Request failed on TLS handshake.
 
 .. _class_HTTPRequest_constant_RESULT_NO_RESPONSE:
 
@@ -325,7 +325,7 @@ TLS 握手时请求失败。
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_NO_RESPONSE** = ``6``
 
-请求（目前还）没有获得相应。
+Request does not have a response (yet).
 
 .. _class_HTTPRequest_constant_RESULT_BODY_SIZE_LIMIT_EXCEEDED:
 
@@ -333,7 +333,7 @@ TLS 握手时请求失败。
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_BODY_SIZE_LIMIT_EXCEEDED** = ``7``
 
-请求超出了大小上限，见 :ref:`body_size_limit<class_HTTPRequest_property_body_size_limit>`\ 。
+Request exceeded its maximum size limit, see :ref:`body_size_limit<class_HTTPRequest_property_body_size_limit>`.
 
 .. _class_HTTPRequest_constant_RESULT_BODY_DECOMPRESS_FAILED:
 
@@ -341,7 +341,7 @@ TLS 握手时请求失败。
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_BODY_DECOMPRESS_FAILED** = ``8``
 
-请求失败，解压响应体出错。可能的原因有压缩格式不支持、压缩格式错误、数据损坏、传输不完整等。
+Request failed due to an error while decompressing the response body. Possible causes include unsupported or incorrect compression format, corrupted data, or incomplete transfer.
 
 .. _class_HTTPRequest_constant_RESULT_REQUEST_FAILED:
 
@@ -349,7 +349,7 @@ TLS 握手时请求失败。
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_REQUEST_FAILED** = ``9``
 
-请求失败（目前未使用）。
+Request failed (currently unused).
 
 .. _class_HTTPRequest_constant_RESULT_DOWNLOAD_FILE_CANT_OPEN:
 
@@ -357,7 +357,7 @@ TLS 握手时请求失败。
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_DOWNLOAD_FILE_CANT_OPEN** = ``10``
 
-HTTPRequest 无法打开下载文件。
+HTTPRequest couldn't open the download file.
 
 .. _class_HTTPRequest_constant_RESULT_DOWNLOAD_FILE_WRITE_ERROR:
 
@@ -365,7 +365,7 @@ HTTPRequest 无法打开下载文件。
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_DOWNLOAD_FILE_WRITE_ERROR** = ``11``
 
-HTTPRequest 无法写入下载文件。
+HTTPRequest couldn't write to the download file.
 
 .. _class_HTTPRequest_constant_RESULT_REDIRECT_LIMIT_REACHED:
 
@@ -373,7 +373,7 @@ HTTPRequest 无法写入下载文件。
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_REDIRECT_LIMIT_REACHED** = ``12``
 
-请求超出了重定向次数上限，见 :ref:`max_redirects<class_HTTPRequest_property_max_redirects>`\ 。
+Request reached its maximum redirect limit, see :ref:`max_redirects<class_HTTPRequest_property_max_redirects>`.
 
 .. _class_HTTPRequest_constant_RESULT_TIMEOUT:
 
@@ -381,7 +381,7 @@ HTTPRequest 无法写入下载文件。
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_TIMEOUT** = ``13``
 
-请求由于超时而失败。如果本就希望请求花费较长的时间，请尝试增大 :ref:`timeout<class_HTTPRequest_property_timeout>`\ ，或将其设为 ``0.0`` 从而完全移除超时。
+Request failed due to a timeout. If you expect requests to take a long time, try increasing the value of :ref:`timeout<class_HTTPRequest_property_timeout>` or setting it to ``0.0`` to remove the timeout completely.
 
 .. rst-class:: classref-section-separator
 
@@ -389,8 +389,8 @@ HTTPRequest 无法写入下载文件。
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_HTTPRequest_property_accept_gzip:
 
@@ -403,13 +403,13 @@ HTTPRequest 无法写入下载文件。
 - |void| **set_accept_gzip**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_accepting_gzip**\ (\ )
 
-如果为 ``true``\ ，这个报头会被添加到每个请求中：\ ``Accept-Encoding: gzip, deflate`` 告诉服务器可以压缩响应正文。
+If ``true``, this header will be added to each request: ``Accept-Encoding: gzip, deflate`` telling servers that it's okay to compress response bodies.
 
-任何声明 ``gzip`` 或 ``deflate`` 的 ``Content-Encoding`` 的响应正文，将被自动解压缩，并且未压缩的字节将通过 :ref:`request_completed<class_HTTPRequest_signal_request_completed>` 被传递。
+Any Response body declaring a ``Content-Encoding`` of either ``gzip`` or ``deflate`` will then be automatically decompressed, and the uncompressed bytes will be delivered via :ref:`request_completed<class_HTTPRequest_signal_request_completed>`.
 
-如果用户指定了自己的 ``Accept-Encoding`` 报头，那么无论 :ref:`accept_gzip<class_HTTPRequest_property_accept_gzip>` 是什么，都不会添加任何报头。
+If the user has specified their own ``Accept-Encoding`` header, then no header will be added regardless of :ref:`accept_gzip<class_HTTPRequest_property_accept_gzip>`.
 
-如果为 ``false``\ ，这将不会添加报头，并且不会对响应正文执行任何解压缩。响应正文的原始字节将通过 :ref:`request_completed<class_HTTPRequest_signal_request_completed>` 返回。
+If ``false`` no header will be added, and no decompression will be performed on response bodies. The raw bytes of the response body will be returned via :ref:`request_completed<class_HTTPRequest_signal_request_completed>`.
 
 .. rst-class:: classref-item-separator
 
@@ -426,7 +426,7 @@ HTTPRequest 无法写入下载文件。
 - |void| **set_body_size_limit**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_body_size_limit**\ (\ )
 
-响应正文的最大允许大小。如果响应正文被压缩，这将用作解压缩的正文的最大允许大小。
+Maximum allowed size for response bodies. If the response body is compressed, this will be used as the maximum allowed size for the decompressed body.
 
 .. rst-class:: classref-item-separator
 
@@ -443,9 +443,9 @@ HTTPRequest 无法写入下载文件。
 - |void| **set_download_chunk_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_download_chunk_size**\ (\ )
 
-使用的缓冲区大小和每次迭代读取的最大字节数。参阅 :ref:`HTTPClient.read_chunk_size<class_HTTPClient_property_read_chunk_size>`\ 。
+The size of the buffer used and maximum bytes to read per iteration. See :ref:`HTTPClient.read_chunk_size<class_HTTPClient_property_read_chunk_size>`.
 
-下载小文件时将其设置为较低的值，以降低内存使用量，但会降低下载速度，例如 4096 表示 4 KiB。
+Set this to a lower value (e.g. 4096 for 4 KiB) when downloading small files to decrease memory usage at the cost of download speeds.
 
 .. rst-class:: classref-item-separator
 
@@ -462,7 +462,7 @@ HTTPRequest 无法写入下载文件。
 - |void| **set_download_file**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_download_file**\ (\ )
 
-要下载到的文件。将任何接收到的文件输出到其中。
+The file to download into. Will output any received file into it.
 
 .. rst-class:: classref-item-separator
 
@@ -479,7 +479,7 @@ HTTPRequest 无法写入下载文件。
 - |void| **set_max_redirects**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_redirects**\ (\ )
 
-允许的最大重定向数。
+Maximum number of allowed redirects.
 
 .. rst-class:: classref-item-separator
 
@@ -515,7 +515,7 @@ For simple requests, such as communication with a REST API, it is recommended to
 - |void| **set_use_threads**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_threads**\ (\ )
 
-为 ``true`` 时，将启用多线程提高性能。
+If ``true``, multithreading is used to improve performance.
 
 .. rst-class:: classref-section-separator
 
@@ -523,8 +523,8 @@ For simple requests, such as communication with a REST API, it is recommended to
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_HTTPRequest_method_cancel_request:
 
@@ -532,7 +532,7 @@ For simple requests, such as communication with a REST API, it is recommended to
 
 |void| **cancel_request**\ (\ ) :ref:`🔗<class_HTTPRequest_method_cancel_request>`
 
-取消当前请求。
+Cancels the current request.
 
 .. rst-class:: classref-item-separator
 
@@ -544,9 +544,9 @@ For simple requests, such as communication with a REST API, it is recommended to
 
 :ref:`int<class_int>` **get_body_size**\ (\ ) |const| :ref:`🔗<class_HTTPRequest_method_get_body_size>`
 
-返回响应体长度。
+Returns the response body length.
 
-\ **注意：**\ 部分 Web 服务器可能不发送响应体长度，此时返回值将为 ``-1``\ 。如果使用分块传输编码，响应体的长度也将为 ``-1``\ 。
+\ **Note:** Some Web servers may not send a body length. In this case, the value returned will be ``-1``. If using chunked transfer encoding, the body length will also be ``-1``.
 
 .. rst-class:: classref-item-separator
 
@@ -558,7 +558,7 @@ For simple requests, such as communication with a REST API, it is recommended to
 
 :ref:`int<class_int>` **get_downloaded_bytes**\ (\ ) |const| :ref:`🔗<class_HTTPRequest_method_get_downloaded_bytes>`
 
-返回该 HTTPRequest 已下载的字节数。
+Returns the number of bytes this HTTPRequest downloaded.
 
 .. rst-class:: classref-item-separator
 
@@ -570,7 +570,7 @@ For simple requests, such as communication with a REST API, it is recommended to
 
 :ref:`Status<enum_HTTPClient_Status>` **get_http_client_status**\ (\ ) |const| :ref:`🔗<class_HTTPRequest_method_get_http_client_status>`
 
-返回内部 :ref:`HTTPClient<class_HTTPClient>` 的当前状态。
+Returns the current status of the underlying :ref:`HTTPClient<class_HTTPClient>`.
 
 .. rst-class:: classref-item-separator
 
@@ -582,13 +582,13 @@ For simple requests, such as communication with a REST API, it is recommended to
 
 :ref:`Error<enum_@GlobalScope_Error>` **request**\ (\ url\: :ref:`String<class_String>`, custom_headers\: :ref:`PackedStringArray<class_PackedStringArray>` = PackedStringArray(), method\: :ref:`Method<enum_HTTPClient_Method>` = 0, request_data\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_HTTPRequest_method_request>`
 
-在底层的 :ref:`HTTPClient<class_HTTPClient>` 上创建请求。如果没有配置错误，它会尝试使用 :ref:`HTTPClient.connect_to_host()<class_HTTPClient_method_connect_to_host>` 连接并将参数传递给 :ref:`HTTPClient.request()<class_HTTPClient_method_request>`\ 。
+Creates request on the underlying :ref:`HTTPClient<class_HTTPClient>`. If there is no configuration errors, it tries to connect using :ref:`HTTPClient.connect_to_host()<class_HTTPClient_method_connect_to_host>` and passes parameters onto :ref:`HTTPClient.request()<class_HTTPClient_method_request>`.
 
-如果成功创建请求，则返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ 。（并不意味着服务器已响应），如果不在树中，则返回 :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>`\ ；如果仍在处理先前的请求，则返回 :ref:`@GlobalScope.ERR_BUSY<class_@GlobalScope_constant_ERR_BUSY>`\ ；如果给定的字符串不是有效的 URL 格式，则返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ ；或者如果不使用线程并且 :ref:`HTTPClient<class_HTTPClient>` 无法连接到主机，则返回 :ref:`@GlobalScope.ERR_CANT_CONNECT<class_@GlobalScope_constant_ERR_CANT_CONNECT>`\ 。
+Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if request is successfully created. (Does not imply that the server has responded), :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>` if not in the tree, :ref:`@GlobalScope.ERR_BUSY<class_@GlobalScope_constant_ERR_BUSY>` if still processing previous request, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if given string is not a valid URL format, or :ref:`@GlobalScope.ERR_CANT_CONNECT<class_@GlobalScope_constant_ERR_CANT_CONNECT>` if not using thread and the :ref:`HTTPClient<class_HTTPClient>` cannot connect to host.
 
-\ **注意：**\ 当 ``method`` 为 :ref:`HTTPClient.METHOD_GET<class_HTTPClient_constant_METHOD_GET>` 时，通过 ``request_data`` 发送的有效载荷可能会被服务器忽略，甚至导致服务器拒绝请求（见 `RFC 7231 第 4.3.1 节 <https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.1>`__\ 了解更多详情）。作为一种变通方法，可以在 URL 中将数据作为查询字符串发送（有关示例，请参见 :ref:`String.uri_encode()<class_String_method_uri_encode>`\ ）。
+\ **Note:** When ``method`` is :ref:`HTTPClient.METHOD_GET<class_HTTPClient_constant_METHOD_GET>`, the payload sent via ``request_data`` might be ignored by the server or even cause the server to reject the request (check `RFC 7231 section 4.3.1 <https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.1>`__ for more details). As a workaround, you can send data as a query string in the URL (see :ref:`String.uri_encode()<class_String_method_uri_encode>` for an example).
 
-\ **注意：**\ 建议使用传输加密（TLS）并避免在 HTTP GET URL 参数中发送敏感信息（例如登录凭据）。考虑改用 HTTP POST 请求或 HTTP 报头来获取此类信息。
+\ **Note:** It's recommended to use transport encryption (TLS) and to avoid sending sensitive information (such as login credentials) in HTTP GET URL parameters. Consider using HTTP POST requests or HTTP headers for such information instead.
 
 .. rst-class:: classref-item-separator
 
@@ -600,9 +600,9 @@ For simple requests, such as communication with a REST API, it is recommended to
 
 :ref:`Error<enum_@GlobalScope_Error>` **request_raw**\ (\ url\: :ref:`String<class_String>`, custom_headers\: :ref:`PackedStringArray<class_PackedStringArray>` = PackedStringArray(), method\: :ref:`Method<enum_HTTPClient_Method>` = 0, request_data_raw\: :ref:`PackedByteArray<class_PackedByteArray>` = PackedByteArray()\ ) :ref:`🔗<class_HTTPRequest_method_request_raw>`
 
-在底层的\ :ref:`HTTPClient<class_HTTPClient>`\ 上创建请求，使用一个原始字节数组作为请求主体。如果没有配置错误，它会尝试使用 :ref:`HTTPClient.connect_to_host()<class_HTTPClient_method_connect_to_host>` 连接并将参数传递给 :ref:`HTTPClient.request()<class_HTTPClient_method_request>`\ 。
+Creates request on the underlying :ref:`HTTPClient<class_HTTPClient>` using a raw array of bytes for the request body. If there is no configuration errors, it tries to connect using :ref:`HTTPClient.connect_to_host()<class_HTTPClient_method_connect_to_host>` and passes parameters onto :ref:`HTTPClient.request()<class_HTTPClient_method_request>`.
 
-如果请求创建成功，则返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ 。（并不意味着服务器已响应），\ :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>` 如果不在树中，\ :ref:`@GlobalScope.ERR_BUSY<class_@GlobalScope_constant_ERR_BUSY>` 如果仍在处理先前的请求，\ :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` 如果给定的字符串不是有效的 URL 格式，或 :ref:`@GlobalScope.ERR_CANT_CONNECT<class_@GlobalScope_constant_ERR_CANT_CONNECT>`\ 如果不使用线程并且 :ref:`HTTPClient<class_HTTPClient>` 无法连接到主机。
+Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if request is successfully created. (Does not imply that the server has responded), :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>` if not in the tree, :ref:`@GlobalScope.ERR_BUSY<class_@GlobalScope_constant_ERR_BUSY>` if still processing previous request, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if given string is not a valid URL format, or :ref:`@GlobalScope.ERR_CANT_CONNECT<class_@GlobalScope_constant_ERR_CANT_CONNECT>` if not using thread and the :ref:`HTTPClient<class_HTTPClient>` cannot connect to host.
 
 .. rst-class:: classref-item-separator
 
@@ -614,9 +614,9 @@ For simple requests, such as communication with a REST API, it is recommended to
 
 |void| **set_http_proxy**\ (\ host\: :ref:`String<class_String>`, port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_HTTPRequest_method_set_http_proxy>`
 
-设置 HTTP 请求使用的代理服务器。
+Sets the proxy server for HTTP requests.
 
-如果 ``host`` 为空或者 ``port`` 为 -1，则会取消设置代理服务器。
+The proxy server is unset if ``host`` is empty or ``port`` is -1.
 
 .. rst-class:: classref-item-separator
 
@@ -628,9 +628,9 @@ For simple requests, such as communication with a REST API, it is recommended to
 
 |void| **set_https_proxy**\ (\ host\: :ref:`String<class_String>`, port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_HTTPRequest_method_set_https_proxy>`
 
-设置 HTTPS 请求使用的代理服务器。
+Sets the proxy server for HTTPS requests.
 
-如果 ``host`` 为空或者 ``port`` 为 -1，则会取消设置代理服务器。
+The proxy server is unset if ``host`` is empty or ``port`` is -1.
 
 .. rst-class:: classref-item-separator
 
@@ -642,14 +642,14 @@ For simple requests, such as communication with a REST API, it is recommended to
 
 |void| **set_tls_options**\ (\ client_options\: :ref:`TLSOptions<class_TLSOptions>`\ ) :ref:`🔗<class_HTTPRequest_method_set_tls_options>`
 
-设置连接到 HTTPS 服务器时使用的 :ref:`TLSOptions<class_TLSOptions>`\ 。见 :ref:`TLSOptions.client()<class_TLSOptions_method_client>`\ 。
+Sets the :ref:`TLSOptions<class_TLSOptions>` to be used when connecting to an HTTPS server. See :ref:`TLSOptions.client()<class_TLSOptions_method_client>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

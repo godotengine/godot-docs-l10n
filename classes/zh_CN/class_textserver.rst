@@ -5,22 +5,22 @@
 TextServer
 ==========
 
-**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**派生：** :ref:`TextServerExtension<class_TextServerExtension>`
+**Inherited By:** :ref:`TextServerExtension<class_TextServerExtension>`
 
-字体管理和文本渲染的服务器接口。
+A server interface for font management and text rendering.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-**TextServer** 即文本服务器，是管理字体、渲染文本的 API 后端。
+**TextServer** is the API backend for managing fonts and rendering text.
 
-\ **注意：**\ 这是底层 API，请考虑改用 :ref:`TextLine<class_TextLine>`\ 、\ :ref:`TextParagraph<class_TextParagraph>`\ 、\ :ref:`Font<class_Font>` 等类。
+\ **Note:** This is a low-level API, consider using :ref:`TextLine<class_TextLine>`, :ref:`TextParagraph<class_TextParagraph>`, and :ref:`Font<class_Font>` classes instead.
 
-这是抽象类，获取当前活动的 **TextServer** 实例请使用如下代码：
+This is an abstract class, so to get the currently active **TextServer** instance, use the following code:
 
 
 .. tabs::
@@ -37,8 +37,8 @@ TextServer
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -523,8 +523,8 @@ TextServer
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_TextServer_FontAntialiasing:
 
@@ -538,7 +538,7 @@ enum **FontAntialiasing**: :ref:`🔗<enum_TextServer_FontAntialiasing>`
 
 :ref:`FontAntialiasing<enum_TextServer_FontAntialiasing>` **FONT_ANTIALIASING_NONE** = ``0``
 
-字体字形栅格化为 1 位的位图。
+Font glyphs are rasterized as 1-bit bitmaps.
 
 .. _class_TextServer_constant_FONT_ANTIALIASING_GRAY:
 
@@ -546,7 +546,7 @@ enum **FontAntialiasing**: :ref:`🔗<enum_TextServer_FontAntialiasing>`
 
 :ref:`FontAntialiasing<enum_TextServer_FontAntialiasing>` **FONT_ANTIALIASING_GRAY** = ``1``
 
-字体字形栅格化为 8 位的灰度抗锯齿位图。
+Font glyphs are rasterized as 8-bit grayscale anti-aliased bitmaps.
 
 .. _class_TextServer_constant_FONT_ANTIALIASING_LCD:
 
@@ -554,11 +554,11 @@ enum **FontAntialiasing**: :ref:`🔗<enum_TextServer_FontAntialiasing>`
 
 :ref:`FontAntialiasing<enum_TextServer_FontAntialiasing>` **FONT_ANTIALIASING_LCD** = ``2``
 
-字体字形针对 LCD 屏幕栅格化。
+Font glyphs are rasterized for LCD screens.
 
-LCD 次像素布局由项目设置 :ref:`ProjectSettings.gui/theme/lcd_subpixel_layout<class_ProjectSettings_property_gui/theme/lcd_subpixel_layout>` 的值决定。
+LCD subpixel layout is determined by the value of the :ref:`ProjectSettings.gui/theme/lcd_subpixel_layout<class_ProjectSettings_property_gui/theme/lcd_subpixel_layout>` setting.
 
-LCD 次像素抗锯齿模式仅适用于在 2D 中渲染横向、无缩放的文本。
+LCD subpixel anti-aliasing mode is suitable only for rendering horizontal, unscaled text in 2D.
 
 .. rst-class:: classref-item-separator
 
@@ -576,7 +576,7 @@ enum **FontLCDSubpixelLayout**: :ref:`🔗<enum_TextServer_FontLCDSubpixelLayout
 
 :ref:`FontLCDSubpixelLayout<enum_TextServer_FontLCDSubpixelLayout>` **FONT_LCD_SUBPIXEL_LAYOUT_NONE** = ``0``
 
-未知或不支持的次像素布局，禁用 LCD 次像素抗锯齿。
+Unknown or unsupported subpixel layout, LCD subpixel antialiasing is disabled.
 
 .. _class_TextServer_constant_FONT_LCD_SUBPIXEL_LAYOUT_HRGB:
 
@@ -584,7 +584,7 @@ enum **FontLCDSubpixelLayout**: :ref:`🔗<enum_TextServer_FontLCDSubpixelLayout
 
 :ref:`FontLCDSubpixelLayout<enum_TextServer_FontLCDSubpixelLayout>` **FONT_LCD_SUBPIXEL_LAYOUT_HRGB** = ``1``
 
-水平 RGB 次像素布局。
+Horizontal RGB subpixel layout.
 
 .. _class_TextServer_constant_FONT_LCD_SUBPIXEL_LAYOUT_HBGR:
 
@@ -592,7 +592,7 @@ enum **FontLCDSubpixelLayout**: :ref:`🔗<enum_TextServer_FontLCDSubpixelLayout
 
 :ref:`FontLCDSubpixelLayout<enum_TextServer_FontLCDSubpixelLayout>` **FONT_LCD_SUBPIXEL_LAYOUT_HBGR** = ``2``
 
-水平 BGR 次像素布局。
+Horizontal BGR subpixel layout.
 
 .. _class_TextServer_constant_FONT_LCD_SUBPIXEL_LAYOUT_VRGB:
 
@@ -600,7 +600,7 @@ enum **FontLCDSubpixelLayout**: :ref:`🔗<enum_TextServer_FontLCDSubpixelLayout
 
 :ref:`FontLCDSubpixelLayout<enum_TextServer_FontLCDSubpixelLayout>` **FONT_LCD_SUBPIXEL_LAYOUT_VRGB** = ``3``
 
-垂直 RGB 次像素布局。
+Vertical RGB subpixel layout.
 
 .. _class_TextServer_constant_FONT_LCD_SUBPIXEL_LAYOUT_VBGR:
 
@@ -608,7 +608,7 @@ enum **FontLCDSubpixelLayout**: :ref:`🔗<enum_TextServer_FontLCDSubpixelLayout
 
 :ref:`FontLCDSubpixelLayout<enum_TextServer_FontLCDSubpixelLayout>` **FONT_LCD_SUBPIXEL_LAYOUT_VBGR** = ``4``
 
-垂直 BGR 次像素布局。
+Vertical BGR subpixel layout.
 
 .. _class_TextServer_constant_FONT_LCD_SUBPIXEL_LAYOUT_MAX:
 
@@ -616,7 +616,7 @@ enum **FontLCDSubpixelLayout**: :ref:`🔗<enum_TextServer_FontLCDSubpixelLayout
 
 :ref:`FontLCDSubpixelLayout<enum_TextServer_FontLCDSubpixelLayout>` **FONT_LCD_SUBPIXEL_LAYOUT_MAX** = ``5``
 
-代表 :ref:`FontLCDSubpixelLayout<enum_TextServer_FontLCDSubpixelLayout>` 枚举的大小。
+Represents the size of the :ref:`FontLCDSubpixelLayout<enum_TextServer_FontLCDSubpixelLayout>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -634,7 +634,7 @@ enum **Direction**: :ref:`🔗<enum_TextServer_Direction>`
 
 :ref:`Direction<enum_TextServer_Direction>` **DIRECTION_AUTO** = ``0``
 
-文本的书写方向由根据内容和当前区域设置确定。
+Text direction is determined based on contents and current locale.
 
 .. _class_TextServer_constant_DIRECTION_LTR:
 
@@ -642,7 +642,7 @@ enum **Direction**: :ref:`🔗<enum_TextServer_Direction>`
 
 :ref:`Direction<enum_TextServer_Direction>` **DIRECTION_LTR** = ``1``
 
-文本从左至右书写。
+Text is written from left to right.
 
 .. _class_TextServer_constant_DIRECTION_RTL:
 
@@ -650,7 +650,7 @@ enum **Direction**: :ref:`🔗<enum_TextServer_Direction>`
 
 :ref:`Direction<enum_TextServer_Direction>` **DIRECTION_RTL** = ``2``
 
-文本从右至左书写。
+Text is written from right to left.
 
 .. _class_TextServer_constant_DIRECTION_INHERITED:
 
@@ -658,7 +658,7 @@ enum **Direction**: :ref:`🔗<enum_TextServer_Direction>`
 
 :ref:`Direction<enum_TextServer_Direction>` **DIRECTION_INHERITED** = ``3``
 
-文本的书写方向与基础字符串书写方向一致。仅用于 BiDi 覆盖。
+Text writing direction is the same as base string writing direction. Used for BiDi override only.
 
 .. rst-class:: classref-item-separator
 
@@ -676,7 +676,7 @@ enum **Orientation**: :ref:`🔗<enum_TextServer_Orientation>`
 
 :ref:`Orientation<enum_TextServer_Orientation>` **ORIENTATION_HORIZONTAL** = ``0``
 
-文本水平书写。
+Text is written horizontally.
 
 .. _class_TextServer_constant_ORIENTATION_VERTICAL:
 
@@ -684,9 +684,9 @@ enum **Orientation**: :ref:`🔗<enum_TextServer_Orientation>`
 
 :ref:`Orientation<enum_TextServer_Orientation>` **ORIENTATION_VERTICAL** = ``1``
 
-从左至右的文本从上到下书写。
+Left to right text is written vertically from top to bottom.
 
-从右至左的文本从下到上书写。
+Right to left text is written vertically from bottom to top.
 
 .. rst-class:: classref-item-separator
 
@@ -704,7 +704,7 @@ flags **JustificationFlag**: :ref:`🔗<enum_TextServer_JustificationFlag>`
 
 :ref:`JustificationFlag<enum_TextServer_JustificationFlag>` **JUSTIFICATION_NONE** = ``0``
 
-不两端对齐文本。
+Do not justify text.
 
 .. _class_TextServer_constant_JUSTIFICATION_KASHIDA:
 
@@ -712,7 +712,7 @@ flags **JustificationFlag**: :ref:`🔗<enum_TextServer_JustificationFlag>`
 
 :ref:`JustificationFlag<enum_TextServer_JustificationFlag>` **JUSTIFICATION_KASHIDA** = ``1``
 
-通过添加和移除 Kashida 来两端对齐文本。
+Justify text by adding and removing kashidas.
 
 .. _class_TextServer_constant_JUSTIFICATION_WORD_BOUND:
 
@@ -720,7 +720,7 @@ flags **JustificationFlag**: :ref:`🔗<enum_TextServer_JustificationFlag>`
 
 :ref:`JustificationFlag<enum_TextServer_JustificationFlag>` **JUSTIFICATION_WORD_BOUND** = ``2``
 
-通过更改单词之间空格的宽度来两端对齐文本。
+Justify text by changing width of the spaces between the words.
 
 .. _class_TextServer_constant_JUSTIFICATION_TRIM_EDGE_SPACES:
 
@@ -728,7 +728,7 @@ flags **JustificationFlag**: :ref:`🔗<enum_TextServer_JustificationFlag>`
 
 :ref:`JustificationFlag<enum_TextServer_JustificationFlag>` **JUSTIFICATION_TRIM_EDGE_SPACES** = ``4``
 
-从两端对齐的文本中移除前缀和后缀的空格。
+Remove trailing and leading spaces from the justified text.
 
 .. _class_TextServer_constant_JUSTIFICATION_AFTER_LAST_TAB:
 
@@ -736,7 +736,7 @@ flags **JustificationFlag**: :ref:`🔗<enum_TextServer_JustificationFlag>`
 
 :ref:`JustificationFlag<enum_TextServer_JustificationFlag>` **JUSTIFICATION_AFTER_LAST_TAB** = ``8``
 
-仅对最后一个制表符之后的文本应用两端对齐。
+Only apply justification to the part of the text after the last tab.
 
 .. _class_TextServer_constant_JUSTIFICATION_CONSTRAIN_ELLIPSIS:
 
@@ -744,7 +744,7 @@ flags **JustificationFlag**: :ref:`🔗<enum_TextServer_JustificationFlag>`
 
 :ref:`JustificationFlag<enum_TextServer_JustificationFlag>` **JUSTIFICATION_CONSTRAIN_ELLIPSIS** = ``16``
 
-使用省略号对修剪行应用对齐。
+Apply justification to the trimmed line with ellipsis.
 
 .. _class_TextServer_constant_JUSTIFICATION_SKIP_LAST_LINE:
 
@@ -752,7 +752,7 @@ flags **JustificationFlag**: :ref:`🔗<enum_TextServer_JustificationFlag>`
 
 :ref:`JustificationFlag<enum_TextServer_JustificationFlag>` **JUSTIFICATION_SKIP_LAST_LINE** = ``32``
 
-段落中的最后一行不应用两端对齐。
+Do not apply justification to the last line of the paragraph.
 
 .. _class_TextServer_constant_JUSTIFICATION_SKIP_LAST_LINE_WITH_VISIBLE_CHARS:
 
@@ -760,7 +760,7 @@ flags **JustificationFlag**: :ref:`🔗<enum_TextServer_JustificationFlag>`
 
 :ref:`JustificationFlag<enum_TextServer_JustificationFlag>` **JUSTIFICATION_SKIP_LAST_LINE_WITH_VISIBLE_CHARS** = ``64``
 
-段落中存在可见字符的最后一行不应用两端对齐（优先于 :ref:`JUSTIFICATION_SKIP_LAST_LINE<class_TextServer_constant_JUSTIFICATION_SKIP_LAST_LINE>`\ ）。
+Do not apply justification to the last line of the paragraph with visible characters (takes precedence over :ref:`JUSTIFICATION_SKIP_LAST_LINE<class_TextServer_constant_JUSTIFICATION_SKIP_LAST_LINE>`).
 
 .. _class_TextServer_constant_JUSTIFICATION_DO_NOT_SKIP_SINGLE_LINE:
 
@@ -768,7 +768,7 @@ flags **JustificationFlag**: :ref:`🔗<enum_TextServer_JustificationFlag>`
 
 :ref:`JustificationFlag<enum_TextServer_JustificationFlag>` **JUSTIFICATION_DO_NOT_SKIP_SINGLE_LINE** = ``128``
 
-始终对只有一行的段落应用两端对齐（忽略 :ref:`JUSTIFICATION_SKIP_LAST_LINE<class_TextServer_constant_JUSTIFICATION_SKIP_LAST_LINE>` 和 :ref:`JUSTIFICATION_SKIP_LAST_LINE_WITH_VISIBLE_CHARS<class_TextServer_constant_JUSTIFICATION_SKIP_LAST_LINE_WITH_VISIBLE_CHARS>`\ ）。
+Always apply justification to the paragraphs with a single line (:ref:`JUSTIFICATION_SKIP_LAST_LINE<class_TextServer_constant_JUSTIFICATION_SKIP_LAST_LINE>` and :ref:`JUSTIFICATION_SKIP_LAST_LINE_WITH_VISIBLE_CHARS<class_TextServer_constant_JUSTIFICATION_SKIP_LAST_LINE_WITH_VISIBLE_CHARS>` are ignored).
 
 .. rst-class:: classref-item-separator
 
@@ -786,7 +786,7 @@ enum **AutowrapMode**: :ref:`🔗<enum_TextServer_AutowrapMode>`
 
 :ref:`AutowrapMode<enum_TextServer_AutowrapMode>` **AUTOWRAP_OFF** = ``0``
 
-自动换行已禁用。
+Autowrap is disabled.
 
 .. _class_TextServer_constant_AUTOWRAP_ARBITRARY:
 
@@ -794,7 +794,7 @@ enum **AutowrapMode**: :ref:`🔗<enum_TextServer_AutowrapMode>`
 
 :ref:`AutowrapMode<enum_TextServer_AutowrapMode>` **AUTOWRAP_ARBITRARY** = ``1``
 
-让文本在节点的边界矩形内自动换行，允许在任意位置断行，在空间非常有限的情况下非常有用。
+Wraps the text inside the node's bounding rectangle by allowing to break lines at arbitrary positions, which is useful when very limited space is available.
 
 .. _class_TextServer_constant_AUTOWRAP_WORD:
 
@@ -802,7 +802,7 @@ enum **AutowrapMode**: :ref:`🔗<enum_TextServer_AutowrapMode>`
 
 :ref:`AutowrapMode<enum_TextServer_AutowrapMode>` **AUTOWRAP_WORD** = ``2``
 
-让文本在节点的边界矩形内自动换行，允许在单词之间进行软换行。
+Wraps the text inside the node's bounding rectangle by soft-breaking between words.
 
 .. _class_TextServer_constant_AUTOWRAP_WORD_SMART:
 
@@ -810,7 +810,7 @@ enum **AutowrapMode**: :ref:`🔗<enum_TextServer_AutowrapMode>`
 
 :ref:`AutowrapMode<enum_TextServer_AutowrapMode>` **AUTOWRAP_WORD_SMART** = ``3``
 
-行为与 :ref:`AUTOWRAP_WORD<class_TextServer_constant_AUTOWRAP_WORD>` 类似，但如果一行的大小无法放下该单词，则会强制断开该单词。
+Behaves similarly to :ref:`AUTOWRAP_WORD<class_TextServer_constant_AUTOWRAP_WORD>`, but force-breaks a word if that single word does not fit in one line.
 
 .. rst-class:: classref-item-separator
 
@@ -828,7 +828,7 @@ flags **LineBreakFlag**: :ref:`🔗<enum_TextServer_LineBreakFlag>`
 
 :ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>` **BREAK_NONE** = ``0``
 
-不换行。
+Do not break the line.
 
 .. _class_TextServer_constant_BREAK_MANDATORY:
 
@@ -836,7 +836,7 @@ flags **LineBreakFlag**: :ref:`🔗<enum_TextServer_LineBreakFlag>`
 
 :ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>` **BREAK_MANDATORY** = ``1``
 
-在强制换行符处换行（例如 ``"\n"``\ ）。
+Break the line at the line mandatory break characters (e.g. ``"\n"``).
 
 .. _class_TextServer_constant_BREAK_WORD_BOUND:
 
@@ -844,7 +844,7 @@ flags **LineBreakFlag**: :ref:`🔗<enum_TextServer_LineBreakFlag>`
 
 :ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>` **BREAK_WORD_BOUND** = ``2``
 
-在单词之间换行。
+Break the line between the words.
 
 .. _class_TextServer_constant_BREAK_GRAPHEME_BOUND:
 
@@ -852,7 +852,7 @@ flags **LineBreakFlag**: :ref:`🔗<enum_TextServer_LineBreakFlag>`
 
 :ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>` **BREAK_GRAPHEME_BOUND** = ``4``
 
-在任何不相连的字素之间换行。
+Break the line between any unconnected graphemes.
 
 .. _class_TextServer_constant_BREAK_ADAPTIVE:
 
@@ -860,7 +860,7 @@ flags **LineBreakFlag**: :ref:`🔗<enum_TextServer_LineBreakFlag>`
 
 :ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>` **BREAK_ADAPTIVE** = ``8``
 
-只应与 :ref:`BREAK_WORD_BOUND<class_TextServer_constant_BREAK_WORD_BOUND>` 一起使用，如果不可能在单词之间换行，则在任何不相连的字素之间换行。
+Should be used only in conjunction with :ref:`BREAK_WORD_BOUND<class_TextServer_constant_BREAK_WORD_BOUND>`, break the line between any unconnected graphemes, if it's impossible to break it between the words.
 
 .. _class_TextServer_constant_BREAK_TRIM_EDGE_SPACES:
 
@@ -868,9 +868,9 @@ flags **LineBreakFlag**: :ref:`🔗<enum_TextServer_LineBreakFlag>`
 
 :ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>` **BREAK_TRIM_EDGE_SPACES** = ``16``
 
-**已弃用：** Use ``BREAK_TRIM_START_EDGE_SPACES | BREAK_TRIM_END_EDGE_SPACES`` instead.
+**Deprecated:** Use ``BREAK_TRIM_START_EDGE_SPACES | BREAK_TRIM_END_EDGE_SPACES`` instead.
 
-移除每一行头尾的空格。
+Remove edge spaces from the broken line segments.
 
 .. _class_TextServer_constant_BREAK_TRIM_INDENT:
 
@@ -878,7 +878,7 @@ flags **LineBreakFlag**: :ref:`🔗<enum_TextServer_LineBreakFlag>`
 
 :ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>` **BREAK_TRIM_INDENT** = ``32``
 
-从第一行之后的所有行中减去第一行的缩进宽度。
+Subtract first line indentation width from all lines after the first one.
 
 .. _class_TextServer_constant_BREAK_TRIM_START_EDGE_SPACES:
 
@@ -886,9 +886,9 @@ flags **LineBreakFlag**: :ref:`🔗<enum_TextServer_LineBreakFlag>`
 
 :ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>` **BREAK_TRIM_START_EDGE_SPACES** = ``64``
 
-自动换行后，移除行首的空格和换行字符。
+Remove spaces and line break characters from the start of broken line segments.
 
-例如将 ``test  \n  next`` 换行后，如果设置该标志则第二段为 ``next``\ ，如果未设置则为 ``  next``\ 。
+E.g, after line breaking, the second segment of the following text ``test  \n  next``, is ``next`` if the flag is set, and ``  next`` if it is not.
 
 .. _class_TextServer_constant_BREAK_TRIM_END_EDGE_SPACES:
 
@@ -896,9 +896,9 @@ flags **LineBreakFlag**: :ref:`🔗<enum_TextServer_LineBreakFlag>`
 
 :ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>` **BREAK_TRIM_END_EDGE_SPACES** = ``128``
 
-自动换行后，移除行尾的空格和换行字符。
+Remove spaces and line break characters from the end of broken line segments.
 
-例如将 ``test  \n  next`` 换行后，如果设置该标志则第一段为 ``test``\ ，如果未设置则为 ``test  \n``\ 。
+E.g, after line breaking, the first segment of the following text ``test  \n  next``, is ``test`` if the flag is set, and ``test  \n`` if it is not.
 
 .. rst-class:: classref-item-separator
 
@@ -916,9 +916,9 @@ enum **VisibleCharactersBehavior**: :ref:`🔗<enum_TextServer_VisibleCharacters
 
 :ref:`VisibleCharactersBehavior<enum_TextServer_VisibleCharactersBehavior>` **VC_CHARS_BEFORE_SHAPING** = ``0``
 
-塑形前截断文本。例如，增加 :ref:`Label.visible_characters<class_Label_property_visible_characters>` 或 :ref:`RichTextLabel.visible_characters<class_RichTextLabel_property_visible_characters>` 的值在视觉上会与输入该文本等价。
+Trims text before the shaping. e.g, increasing :ref:`Label.visible_characters<class_Label_property_visible_characters>` or :ref:`RichTextLabel.visible_characters<class_RichTextLabel_property_visible_characters>` value is visually identical to typing the text.
 
-\ **注意：**\ 该模式下完全不处理截断前的文本，断行和计算大小时也不会考虑。
+\ **Note:** In this mode, trimmed text is not processed at all. It is not accounted for in line breaking and size calculations.
 
 .. _class_TextServer_constant_VC_CHARS_AFTER_SHAPING:
 
@@ -926,7 +926,7 @@ enum **VisibleCharactersBehavior**: :ref:`🔗<enum_TextServer_VisibleCharacters
 
 :ref:`VisibleCharactersBehavior<enum_TextServer_VisibleCharactersBehavior>` **VC_CHARS_AFTER_SHAPING** = ``1``
 
-显示映射到文本开头的前 :ref:`Label.visible_characters<class_Label_property_visible_characters>` 或 :ref:`RichTextLabel.visible_characters<class_RichTextLabel_property_visible_characters>` 个字符的字形。
+Displays glyphs that are mapped to the first :ref:`Label.visible_characters<class_Label_property_visible_characters>` or :ref:`RichTextLabel.visible_characters<class_RichTextLabel_property_visible_characters>` characters from the beginning of the text.
 
 .. _class_TextServer_constant_VC_GLYPHS_AUTO:
 
@@ -934,7 +934,7 @@ enum **VisibleCharactersBehavior**: :ref:`🔗<enum_TextServer_VisibleCharacters
 
 :ref:`VisibleCharactersBehavior<enum_TextServer_VisibleCharactersBehavior>` **VC_GLYPHS_AUTO** = ``2``
 
-显示字形数量由 :ref:`Label.visible_ratio<class_Label_property_visible_ratio>` 或 :ref:`RichTextLabel.visible_ratio<class_RichTextLabel_property_visible_ratio>` 决定，从左至右计数还是从右至左计数由 :ref:`Control.layout_direction<class_Control_property_layout_direction>` 的值决定。
+Displays :ref:`Label.visible_ratio<class_Label_property_visible_ratio>` or :ref:`RichTextLabel.visible_ratio<class_RichTextLabel_property_visible_ratio>` glyphs, starting from the left or from the right, depending on :ref:`Control.layout_direction<class_Control_property_layout_direction>` value.
 
 .. _class_TextServer_constant_VC_GLYPHS_LTR:
 
@@ -942,7 +942,7 @@ enum **VisibleCharactersBehavior**: :ref:`🔗<enum_TextServer_VisibleCharacters
 
 :ref:`VisibleCharactersBehavior<enum_TextServer_VisibleCharactersBehavior>` **VC_GLYPHS_LTR** = ``3``
 
-显示字形数量由 :ref:`Label.visible_ratio<class_Label_property_visible_ratio>` 或 :ref:`RichTextLabel.visible_ratio<class_RichTextLabel_property_visible_ratio>` 决定，从左侧开始计数。
+Displays :ref:`Label.visible_ratio<class_Label_property_visible_ratio>` or :ref:`RichTextLabel.visible_ratio<class_RichTextLabel_property_visible_ratio>` glyphs, starting from the left.
 
 .. _class_TextServer_constant_VC_GLYPHS_RTL:
 
@@ -950,7 +950,7 @@ enum **VisibleCharactersBehavior**: :ref:`🔗<enum_TextServer_VisibleCharacters
 
 :ref:`VisibleCharactersBehavior<enum_TextServer_VisibleCharactersBehavior>` **VC_GLYPHS_RTL** = ``4``
 
-显示字形数量由 :ref:`Label.visible_ratio<class_Label_property_visible_ratio>` 或 :ref:`RichTextLabel.visible_ratio<class_RichTextLabel_property_visible_ratio>` 决定，从右侧开始计数。
+Displays :ref:`Label.visible_ratio<class_Label_property_visible_ratio>` or :ref:`RichTextLabel.visible_ratio<class_RichTextLabel_property_visible_ratio>` glyphs, starting from the right.
 
 .. rst-class:: classref-item-separator
 
@@ -968,7 +968,7 @@ enum **OverrunBehavior**: :ref:`🔗<enum_TextServer_OverrunBehavior>`
 
 :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>` **OVERRUN_NO_TRIMMING** = ``0``
 
-不执行文本修剪。
+No text trimming is performed.
 
 .. _class_TextServer_constant_OVERRUN_TRIM_CHAR:
 
@@ -976,7 +976,7 @@ enum **OverrunBehavior**: :ref:`🔗<enum_TextServer_OverrunBehavior>`
 
 :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>` **OVERRUN_TRIM_CHAR** = ``1``
 
-逐字符修剪文本。
+Trims the text per character.
 
 .. _class_TextServer_constant_OVERRUN_TRIM_WORD:
 
@@ -984,7 +984,7 @@ enum **OverrunBehavior**: :ref:`🔗<enum_TextServer_OverrunBehavior>`
 
 :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>` **OVERRUN_TRIM_WORD** = ``2``
 
-逐单词修剪文本。
+Trims the text per word.
 
 .. _class_TextServer_constant_OVERRUN_TRIM_ELLIPSIS:
 
@@ -992,7 +992,7 @@ enum **OverrunBehavior**: :ref:`🔗<enum_TextServer_OverrunBehavior>`
 
 :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>` **OVERRUN_TRIM_ELLIPSIS** = ``3``
 
-逐字符修剪文本，如果文本修剪后至少有 6 个字符，则会通过添加省略号来表示部分文本已隐藏。
+Trims the text per character and adds an ellipsis to indicate that parts are hidden if trimmed text is 6 characters or longer.
 
 .. _class_TextServer_constant_OVERRUN_TRIM_WORD_ELLIPSIS:
 
@@ -1000,7 +1000,7 @@ enum **OverrunBehavior**: :ref:`🔗<enum_TextServer_OverrunBehavior>`
 
 :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>` **OVERRUN_TRIM_WORD_ELLIPSIS** = ``4``
 
-逐单词修剪文本，如果文本修剪后至少有 6 个字符，则会通过添加省略号来表示部分文本已隐藏。
+Trims the text per word and adds an ellipsis to indicate that parts are hidden if trimmed text is 6 characters or longer.
 
 .. _class_TextServer_constant_OVERRUN_TRIM_ELLIPSIS_FORCE:
 
@@ -1008,7 +1008,7 @@ enum **OverrunBehavior**: :ref:`🔗<enum_TextServer_OverrunBehavior>`
 
 :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>` **OVERRUN_TRIM_ELLIPSIS_FORCE** = ``5``
 
-逐字符修剪文本，通过添加省略号来表示部分文本已隐藏，不考虑文本修剪后的长度。
+Trims the text per character and adds an ellipsis to indicate that parts are hidden regardless of trimmed text length.
 
 .. _class_TextServer_constant_OVERRUN_TRIM_WORD_ELLIPSIS_FORCE:
 
@@ -1016,7 +1016,7 @@ enum **OverrunBehavior**: :ref:`🔗<enum_TextServer_OverrunBehavior>`
 
 :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>` **OVERRUN_TRIM_WORD_ELLIPSIS_FORCE** = ``6``
 
-逐单词修剪文本，通过添加省略号来表示部分文本已隐藏，不考虑文本修剪后的长度。
+Trims the text per word and adds an ellipsis to indicate that parts are hidden regardless of trimmed text length.
 
 .. rst-class:: classref-item-separator
 
@@ -1034,7 +1034,7 @@ flags **TextOverrunFlag**: :ref:`🔗<enum_TextServer_TextOverrunFlag>`
 
 :ref:`TextOverrunFlag<enum_TextServer_TextOverrunFlag>` **OVERRUN_NO_TRIM** = ``0``
 
-不执行修剪。
+No trimming is performed.
 
 .. _class_TextServer_constant_OVERRUN_TRIM:
 
@@ -1042,7 +1042,7 @@ flags **TextOverrunFlag**: :ref:`🔗<enum_TextServer_TextOverrunFlag>`
 
 :ref:`TextOverrunFlag<enum_TextServer_TextOverrunFlag>` **OVERRUN_TRIM** = ``1``
 
-当文本超过给定宽度时，修剪文本。
+Trims the text when it exceeds the given width.
 
 .. _class_TextServer_constant_OVERRUN_TRIM_WORD_ONLY:
 
@@ -1050,7 +1050,7 @@ flags **TextOverrunFlag**: :ref:`🔗<enum_TextServer_TextOverrunFlag>`
 
 :ref:`TextOverrunFlag<enum_TextServer_TextOverrunFlag>` **OVERRUN_TRIM_WORD_ONLY** = ``2``
 
-逐词修剪文本，而不是逐字素修剪文本。
+Trims the text per word instead of per grapheme.
 
 .. _class_TextServer_constant_OVERRUN_ADD_ELLIPSIS:
 
@@ -1058,7 +1058,7 @@ flags **TextOverrunFlag**: :ref:`🔗<enum_TextServer_TextOverrunFlag>`
 
 :ref:`TextOverrunFlag<enum_TextServer_TextOverrunFlag>` **OVERRUN_ADD_ELLIPSIS** = ``4``
 
-决定是否应在文本末尾添加省略号。
+Determines whether an ellipsis should be added at the end of the text.
 
 .. _class_TextServer_constant_OVERRUN_ENFORCE_ELLIPSIS:
 
@@ -1066,7 +1066,7 @@ flags **TextOverrunFlag**: :ref:`🔗<enum_TextServer_TextOverrunFlag>`
 
 :ref:`TextOverrunFlag<enum_TextServer_TextOverrunFlag>` **OVERRUN_ENFORCE_ELLIPSIS** = ``8``
 
-决定是否应在文本末尾强制添加省略号，该省略号无法被隐藏。
+Determines whether the ellipsis at the end of the text is enforced and may not be hidden.
 
 .. _class_TextServer_constant_OVERRUN_JUSTIFICATION_AWARE:
 
@@ -1074,7 +1074,7 @@ flags **TextOverrunFlag**: :ref:`🔗<enum_TextServer_TextOverrunFlag>`
 
 :ref:`TextOverrunFlag<enum_TextServer_TextOverrunFlag>` **OVERRUN_JUSTIFICATION_AWARE** = ``16``
 
-在尝试修剪文本之前考虑文本是否对齐（请参阅 :ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\ ）。
+Accounts for the text being justified before attempting to trim it (see :ref:`JustificationFlag<enum_TextServer_JustificationFlag>`).
 
 .. _class_TextServer_constant_OVERRUN_SHORT_STRING_ELLIPSIS:
 
@@ -1100,7 +1100,7 @@ flags **GraphemeFlag**: :ref:`🔗<enum_TextServer_GraphemeFlag>`
 
 :ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>` **GRAPHEME_IS_VALID** = ``1``
 
-字素由字体支持，并且可以被绘制。
+Grapheme is supported by the font, and can be drawn.
 
 .. _class_TextServer_constant_GRAPHEME_IS_RTL:
 
@@ -1108,7 +1108,7 @@ flags **GraphemeFlag**: :ref:`🔗<enum_TextServer_GraphemeFlag>`
 
 :ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>` **GRAPHEME_IS_RTL** = ``2``
 
-字素是从右至左或从下至上书写的一部分。
+Grapheme is part of right-to-left or bottom-to-top run.
 
 .. _class_TextServer_constant_GRAPHEME_IS_VIRTUAL:
 
@@ -1116,7 +1116,7 @@ flags **GraphemeFlag**: :ref:`🔗<enum_TextServer_GraphemeFlag>`
 
 :ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>` **GRAPHEME_IS_VIRTUAL** = ``4``
 
-字素不是源文本的一部分，而是通过两端对齐过程添加的。
+Grapheme is not part of source text, it was added by justification process.
 
 .. _class_TextServer_constant_GRAPHEME_IS_SPACE:
 
@@ -1124,7 +1124,7 @@ flags **GraphemeFlag**: :ref:`🔗<enum_TextServer_GraphemeFlag>`
 
 :ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>` **GRAPHEME_IS_SPACE** = ``8``
 
-字素是空白字符。
+Grapheme is whitespace.
 
 .. _class_TextServer_constant_GRAPHEME_IS_BREAK_HARD:
 
@@ -1132,7 +1132,7 @@ flags **GraphemeFlag**: :ref:`🔗<enum_TextServer_GraphemeFlag>`
 
 :ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>` **GRAPHEME_IS_BREAK_HARD** = ``16``
 
-字素是强制换行点（例如 ``"\n"``\ ）。
+Grapheme is mandatory break point (e.g. ``"\n"``).
 
 .. _class_TextServer_constant_GRAPHEME_IS_BREAK_SOFT:
 
@@ -1140,7 +1140,7 @@ flags **GraphemeFlag**: :ref:`🔗<enum_TextServer_GraphemeFlag>`
 
 :ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>` **GRAPHEME_IS_BREAK_SOFT** = ``32``
 
-字素是可选换行点（例如空格）。
+Grapheme is optional break point (e.g. space).
 
 .. _class_TextServer_constant_GRAPHEME_IS_TAB:
 
@@ -1148,7 +1148,7 @@ flags **GraphemeFlag**: :ref:`🔗<enum_TextServer_GraphemeFlag>`
 
 :ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>` **GRAPHEME_IS_TAB** = ``64``
 
-字素是制表符。
+Grapheme is the tabulation character.
 
 .. _class_TextServer_constant_GRAPHEME_IS_ELONGATION:
 
@@ -1156,7 +1156,7 @@ flags **GraphemeFlag**: :ref:`🔗<enum_TextServer_GraphemeFlag>`
 
 :ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>` **GRAPHEME_IS_ELONGATION** = ``128``
 
-字素是 Kashida。
+Grapheme is kashida.
 
 .. _class_TextServer_constant_GRAPHEME_IS_PUNCTUATION:
 
@@ -1164,7 +1164,7 @@ flags **GraphemeFlag**: :ref:`🔗<enum_TextServer_GraphemeFlag>`
 
 :ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>` **GRAPHEME_IS_PUNCTUATION** = ``256``
 
-字素是标点符号。
+Grapheme is punctuation character.
 
 .. _class_TextServer_constant_GRAPHEME_IS_UNDERSCORE:
 
@@ -1172,7 +1172,7 @@ flags **GraphemeFlag**: :ref:`🔗<enum_TextServer_GraphemeFlag>`
 
 :ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>` **GRAPHEME_IS_UNDERSCORE** = ``512``
 
-字素是下划线字符。
+Grapheme is underscore character.
 
 .. _class_TextServer_constant_GRAPHEME_IS_CONNECTED:
 
@@ -1180,7 +1180,7 @@ flags **GraphemeFlag**: :ref:`🔗<enum_TextServer_GraphemeFlag>`
 
 :ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>` **GRAPHEME_IS_CONNECTED** = ``1024``
 
-字素与前一个字素相连。在这个字素之前换行是不安全的。
+Grapheme is connected to the previous grapheme. Breaking line before this grapheme is not safe.
 
 .. _class_TextServer_constant_GRAPHEME_IS_SAFE_TO_INSERT_TATWEEL:
 
@@ -1188,7 +1188,7 @@ flags **GraphemeFlag**: :ref:`🔗<enum_TextServer_GraphemeFlag>`
 
 :ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>` **GRAPHEME_IS_SAFE_TO_INSERT_TATWEEL** = ``2048``
 
-在这个字素之前插入 U+0640 以进行伸长是安全的。
+It is safe to insert a U+0640 before this grapheme for elongation.
 
 .. _class_TextServer_constant_GRAPHEME_IS_EMBEDDED_OBJECT:
 
@@ -1196,7 +1196,7 @@ flags **GraphemeFlag**: :ref:`🔗<enum_TextServer_GraphemeFlag>`
 
 :ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>` **GRAPHEME_IS_EMBEDDED_OBJECT** = ``4096``
 
-字素是内嵌对象的对象替换字符。
+Grapheme is an object replacement character for the embedded object.
 
 .. _class_TextServer_constant_GRAPHEME_IS_SOFT_HYPHEN:
 
@@ -1204,7 +1204,7 @@ flags **GraphemeFlag**: :ref:`🔗<enum_TextServer_GraphemeFlag>`
 
 :ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>` **GRAPHEME_IS_SOFT_HYPHEN** = ``8192``
 
-字素是一个软连字符。
+Grapheme is a soft hyphen.
 
 .. rst-class:: classref-item-separator
 
@@ -1222,7 +1222,7 @@ enum **Hinting**: :ref:`🔗<enum_TextServer_Hinting>`
 
 :ref:`Hinting<enum_TextServer_Hinting>` **HINTING_NONE** = ``0``
 
-禁用字体提示（更平滑但不那么清晰）。
+Disables font hinting (smoother but less crisp).
 
 .. _class_TextServer_constant_HINTING_LIGHT:
 
@@ -1230,7 +1230,7 @@ enum **Hinting**: :ref:`🔗<enum_TextServer_Hinting>`
 
 :ref:`Hinting<enum_TextServer_Hinting>` **HINTING_LIGHT** = ``1``
 
-使用浅色字体提示模式。
+Use the light font hinting mode.
 
 .. _class_TextServer_constant_HINTING_NORMAL:
 
@@ -1238,9 +1238,9 @@ enum **Hinting**: :ref:`🔗<enum_TextServer_Hinting>`
 
 :ref:`Hinting<enum_TextServer_Hinting>` **HINTING_NORMAL** = ``2``
 
-使用默认的字体微调模式（更锐利，但平滑度更低）。
+Use the default font hinting mode (crisper but less smooth).
 
-\ **注意：**\ 此处的微调模式会改变字形的水平和垂直度量。应用于等宽字体时，可能会让部分字形的宽度发生变化。
+\ **Note:** This hinting mode changes both horizontal and vertical glyph metrics. If applied to monospace font, some glyphs might have different width.
 
 .. rst-class:: classref-item-separator
 
@@ -1258,7 +1258,7 @@ enum **SubpixelPositioning**: :ref:`🔗<enum_TextServer_SubpixelPositioning>`
 
 :ref:`SubpixelPositioning<enum_TextServer_SubpixelPositioning>` **SUBPIXEL_POSITIONING_DISABLED** = ``0``
 
-将字形的水平位置舍入至整数像素大小，每个字形光栅化一次。
+Glyph horizontal position is rounded to the whole pixel size, each glyph is rasterized once.
 
 .. _class_TextServer_constant_SUBPIXEL_POSITIONING_AUTO:
 
@@ -1266,13 +1266,13 @@ enum **SubpixelPositioning**: :ref:`🔗<enum_TextServer_SubpixelPositioning>`
 
 :ref:`SubpixelPositioning<enum_TextServer_SubpixelPositioning>` **SUBPIXEL_POSITIONING_AUTO** = ``1``
 
-将字形的水平位置根据字体大小进行舍入。
+Glyph horizontal position is rounded based on font size.
 
-- 如果字体大小小于等于 :ref:`SUBPIXEL_POSITIONING_ONE_QUARTER_MAX_SIZE<class_TextServer_constant_SUBPIXEL_POSITIONING_ONE_QUARTER_MAX_SIZE>`\ ，则舍入至四分之一像素大小。
+- To one quarter of the pixel size if font size is smaller or equal to :ref:`SUBPIXEL_POSITIONING_ONE_QUARTER_MAX_SIZE<class_TextServer_constant_SUBPIXEL_POSITIONING_ONE_QUARTER_MAX_SIZE>`.
 
-- 如果字体大小小于等于 :ref:`SUBPIXEL_POSITIONING_ONE_HALF_MAX_SIZE<class_TextServer_constant_SUBPIXEL_POSITIONING_ONE_HALF_MAX_SIZE>`\ ，则舍入至二分之一像素大小。
+- To one half of the pixel size if font size is smaller or equal to :ref:`SUBPIXEL_POSITIONING_ONE_HALF_MAX_SIZE<class_TextServer_constant_SUBPIXEL_POSITIONING_ONE_HALF_MAX_SIZE>`.
 
-- 如果是更大的字体，则舍入至整数像素大小。
+- To the whole pixel size for larger fonts.
 
 .. _class_TextServer_constant_SUBPIXEL_POSITIONING_ONE_HALF:
 
@@ -1280,7 +1280,7 @@ enum **SubpixelPositioning**: :ref:`🔗<enum_TextServer_SubpixelPositioning>`
 
 :ref:`SubpixelPositioning<enum_TextServer_SubpixelPositioning>` **SUBPIXEL_POSITIONING_ONE_HALF** = ``2``
 
-将字形的水平位置舍入至像素大小的一半，每个字形最多光栅化两次。
+Glyph horizontal position is rounded to one half of the pixel size, each glyph is rasterized up to two times.
 
 .. _class_TextServer_constant_SUBPIXEL_POSITIONING_ONE_QUARTER:
 
@@ -1288,7 +1288,7 @@ enum **SubpixelPositioning**: :ref:`🔗<enum_TextServer_SubpixelPositioning>`
 
 :ref:`SubpixelPositioning<enum_TextServer_SubpixelPositioning>` **SUBPIXEL_POSITIONING_ONE_QUARTER** = ``3``
 
-将字形的水平位置舍入至像素大小的四分之一，每个字形最多光栅化四次。
+Glyph horizontal position is rounded to one quarter of the pixel size, each glyph is rasterized up to four times.
 
 .. _class_TextServer_constant_SUBPIXEL_POSITIONING_ONE_HALF_MAX_SIZE:
 
@@ -1296,7 +1296,7 @@ enum **SubpixelPositioning**: :ref:`🔗<enum_TextServer_SubpixelPositioning>`
 
 :ref:`SubpixelPositioning<enum_TextServer_SubpixelPositioning>` **SUBPIXEL_POSITIONING_ONE_HALF_MAX_SIZE** = ``20``
 
-在 :ref:`SUBPIXEL_POSITIONING_AUTO<class_TextServer_constant_SUBPIXEL_POSITIONING_AUTO>` 模式下，次像素定位时使用“二分之一像素”大小的最大字体大小。
+Maximum font size which will use "one half of the pixel" subpixel positioning in :ref:`SUBPIXEL_POSITIONING_AUTO<class_TextServer_constant_SUBPIXEL_POSITIONING_AUTO>` mode.
 
 .. _class_TextServer_constant_SUBPIXEL_POSITIONING_ONE_QUARTER_MAX_SIZE:
 
@@ -1304,7 +1304,7 @@ enum **SubpixelPositioning**: :ref:`🔗<enum_TextServer_SubpixelPositioning>`
 
 :ref:`SubpixelPositioning<enum_TextServer_SubpixelPositioning>` **SUBPIXEL_POSITIONING_ONE_QUARTER_MAX_SIZE** = ``16``
 
-在 :ref:`SUBPIXEL_POSITIONING_AUTO<class_TextServer_constant_SUBPIXEL_POSITIONING_AUTO>` 模式下，次像素定位时使用“四分之一像素”大小的最大字体大小。
+Maximum font size which will use "one quarter of the pixel" subpixel positioning in :ref:`SUBPIXEL_POSITIONING_AUTO<class_TextServer_constant_SUBPIXEL_POSITIONING_AUTO>` mode.
 
 .. rst-class:: classref-item-separator
 
@@ -1322,7 +1322,7 @@ enum **Feature**: :ref:`🔗<enum_TextServer_Feature>`
 
 :ref:`Feature<enum_TextServer_Feature>` **FEATURE_SIMPLE_LAYOUT** = ``1``
 
-TextServer 支持简单排版。
+TextServer supports simple text layouts.
 
 .. _class_TextServer_constant_FEATURE_BIDI_LAYOUT:
 
@@ -1330,7 +1330,7 @@ TextServer 支持简单排版。
 
 :ref:`Feature<enum_TextServer_Feature>` **FEATURE_BIDI_LAYOUT** = ``2``
 
-TextServer 支持双向排版。
+TextServer supports bidirectional text layouts.
 
 .. _class_TextServer_constant_FEATURE_VERTICAL_LAYOUT:
 
@@ -1338,7 +1338,7 @@ TextServer 支持双向排版。
 
 :ref:`Feature<enum_TextServer_Feature>` **FEATURE_VERTICAL_LAYOUT** = ``4``
 
-TextServer 支持垂直布局。
+TextServer supports vertical layouts.
 
 .. _class_TextServer_constant_FEATURE_SHAPING:
 
@@ -1346,7 +1346,7 @@ TextServer 支持垂直布局。
 
 :ref:`Feature<enum_TextServer_Feature>` **FEATURE_SHAPING** = ``8``
 
-TextServer 支持复杂文本塑形。
+TextServer supports complex text shaping.
 
 .. _class_TextServer_constant_FEATURE_KASHIDA_JUSTIFICATION:
 
@@ -1354,7 +1354,7 @@ TextServer 支持复杂文本塑形。
 
 :ref:`Feature<enum_TextServer_Feature>` **FEATURE_KASHIDA_JUSTIFICATION** = ``16``
 
-TextServer 支持使用 kashida 进行两端对齐。
+TextServer supports justification using kashidas.
 
 .. _class_TextServer_constant_FEATURE_BREAK_ITERATORS:
 
@@ -1362,7 +1362,7 @@ TextServer 支持使用 kashida 进行两端对齐。
 
 :ref:`Feature<enum_TextServer_Feature>` **FEATURE_BREAK_ITERATORS** = ``32``
 
-TextServer 支持复杂断行/断词规则（例如基于字典）。
+TextServer supports complex line/word breaking rules (e.g. dictionary based).
 
 .. _class_TextServer_constant_FEATURE_FONT_BITMAP:
 
@@ -1370,7 +1370,7 @@ TextServer 支持复杂断行/断词规则（例如基于字典）。
 
 :ref:`Feature<enum_TextServer_Feature>` **FEATURE_FONT_BITMAP** = ``64``
 
-TextServer 支持加载位图字体。
+TextServer supports loading bitmap fonts.
 
 .. _class_TextServer_constant_FEATURE_FONT_DYNAMIC:
 
@@ -1378,7 +1378,7 @@ TextServer 支持加载位图字体。
 
 :ref:`Feature<enum_TextServer_Feature>` **FEATURE_FONT_DYNAMIC** = ``128``
 
-TextServer 支持加载动态字体（TrueType、OpeType 等）。
+TextServer supports loading dynamic (TrueType, OpeType, etc.) fonts.
 
 .. _class_TextServer_constant_FEATURE_FONT_MSDF:
 
@@ -1386,7 +1386,7 @@ TextServer 支持加载动态字体（TrueType、OpeType 等）。
 
 :ref:`Feature<enum_TextServer_Feature>` **FEATURE_FONT_MSDF** = ``256``
 
-TextServer 支持多通道有符号距离场动态字体的渲染。
+TextServer supports multichannel signed distance field dynamic font rendering.
 
 .. _class_TextServer_constant_FEATURE_FONT_SYSTEM:
 
@@ -1394,7 +1394,7 @@ TextServer 支持多通道有符号距离场动态字体的渲染。
 
 :ref:`Feature<enum_TextServer_Feature>` **FEATURE_FONT_SYSTEM** = ``512``
 
-TextServer 支持加载系统字体。
+TextServer supports loading system fonts.
 
 .. _class_TextServer_constant_FEATURE_FONT_VARIABLE:
 
@@ -1402,7 +1402,7 @@ TextServer 支持加载系统字体。
 
 :ref:`Feature<enum_TextServer_Feature>` **FEATURE_FONT_VARIABLE** = ``1024``
 
-TextServer 支持可变字体。
+TextServer supports variable fonts.
 
 .. _class_TextServer_constant_FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION:
 
@@ -1410,7 +1410,7 @@ TextServer 支持可变字体。
 
 :ref:`Feature<enum_TextServer_Feature>` **FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION** = ``2048``
 
-TextServer 支持依赖于区域设置、上下文敏感的大小写转换。
+TextServer supports locale dependent and context sensitive case conversion.
 
 .. _class_TextServer_constant_FEATURE_USE_SUPPORT_DATA:
 
@@ -1418,7 +1418,7 @@ TextServer 支持依赖于区域设置、上下文敏感的大小写转换。
 
 :ref:`Feature<enum_TextServer_Feature>` **FEATURE_USE_SUPPORT_DATA** = ``4096``
 
-TextServer 的某些功能需要外部数据文件，见 :ref:`load_support_data()<class_TextServer_method_load_support_data>`\ 。
+TextServer require external data file for some features, see :ref:`load_support_data()<class_TextServer_method_load_support_data>`.
 
 .. _class_TextServer_constant_FEATURE_UNICODE_IDENTIFIERS:
 
@@ -1426,7 +1426,7 @@ TextServer 的某些功能需要外部数据文件，见 :ref:`load_support_data
 
 :ref:`Feature<enum_TextServer_Feature>` **FEATURE_UNICODE_IDENTIFIERS** = ``8192``
 
-TextServer 支持 UAX #31 标识符验证，见 :ref:`is_valid_identifier()<class_TextServer_method_is_valid_identifier>`\ 。
+TextServer supports UAX #31 identifier validation, see :ref:`is_valid_identifier()<class_TextServer_method_is_valid_identifier>`.
 
 .. _class_TextServer_constant_FEATURE_UNICODE_SECURITY:
 
@@ -1434,7 +1434,7 @@ TextServer 支持 UAX #31 标识符验证，见 :ref:`is_valid_identifier()<clas
 
 :ref:`Feature<enum_TextServer_Feature>` **FEATURE_UNICODE_SECURITY** = ``16384``
 
-TextServer 支持基于 `Unicode 技术报告 #36 <https://unicode.org/reports/tr36/>`__ 和 `Unicode 技术标准 #39 <https://unicode.org/reports/tr39/>`__ 的欺骗检测功能。
+TextServer supports `Unicode Technical Report #36 <https://unicode.org/reports/tr36/>`__ and `Unicode Technical Standard #39 <https://unicode.org/reports/tr39/>`__ based spoof detection features.
 
 .. rst-class:: classref-item-separator
 
@@ -1452,7 +1452,7 @@ enum **ContourPointTag**: :ref:`🔗<enum_TextServer_ContourPointTag>`
 
 :ref:`ContourPointTag<enum_TextServer_ContourPointTag>` **CONTOUR_CURVE_TAG_ON** = ``1``
 
-轮廓点在曲线上。
+Contour point is on the curve.
 
 .. _class_TextServer_constant_CONTOUR_CURVE_TAG_OFF_CONIC:
 
@@ -1460,7 +1460,7 @@ enum **ContourPointTag**: :ref:`🔗<enum_TextServer_ContourPointTag>`
 
 :ref:`ContourPointTag<enum_TextServer_ContourPointTag>` **CONTOUR_CURVE_TAG_OFF_CONIC** = ``0``
 
-轮廓点不在曲线上，而是作为圆锥（二次）贝塞尔曲线的控制点。
+Contour point isn't on the curve, but serves as a control point for a conic (quadratic) Bézier arc.
 
 .. _class_TextServer_constant_CONTOUR_CURVE_TAG_OFF_CUBIC:
 
@@ -1468,7 +1468,7 @@ enum **ContourPointTag**: :ref:`🔗<enum_TextServer_ContourPointTag>`
 
 :ref:`ContourPointTag<enum_TextServer_ContourPointTag>` **CONTOUR_CURVE_TAG_OFF_CUBIC** = ``2``
 
-轮廓点不在曲线上，而是作为三次贝塞尔曲线的控制点。
+Contour point isn't on the curve, but serves as a control point for a cubic Bézier arc.
 
 .. rst-class:: classref-item-separator
 
@@ -1486,7 +1486,7 @@ enum **SpacingType**: :ref:`🔗<enum_TextServer_SpacingType>`
 
 :ref:`SpacingType<enum_TextServer_SpacingType>` **SPACING_GLYPH** = ``0``
 
-每个字形的间距。
+Spacing for each glyph.
 
 .. _class_TextServer_constant_SPACING_SPACE:
 
@@ -1494,7 +1494,7 @@ enum **SpacingType**: :ref:`🔗<enum_TextServer_SpacingType>`
 
 :ref:`SpacingType<enum_TextServer_SpacingType>` **SPACING_SPACE** = ``1``
 
-空格字符的间距。
+Spacing for the space character.
 
 .. _class_TextServer_constant_SPACING_TOP:
 
@@ -1502,7 +1502,7 @@ enum **SpacingType**: :ref:`🔗<enum_TextServer_SpacingType>`
 
 :ref:`SpacingType<enum_TextServer_SpacingType>` **SPACING_TOP** = ``2``
 
-行顶部的间距。
+Spacing at the top of the line.
 
 .. _class_TextServer_constant_SPACING_BOTTOM:
 
@@ -1510,7 +1510,7 @@ enum **SpacingType**: :ref:`🔗<enum_TextServer_SpacingType>`
 
 :ref:`SpacingType<enum_TextServer_SpacingType>` **SPACING_BOTTOM** = ``3``
 
-行底部的间距。
+Spacing at the bottom of the line.
 
 .. _class_TextServer_constant_SPACING_MAX:
 
@@ -1518,7 +1518,7 @@ enum **SpacingType**: :ref:`🔗<enum_TextServer_SpacingType>`
 
 :ref:`SpacingType<enum_TextServer_SpacingType>` **SPACING_MAX** = ``4``
 
-代表 :ref:`SpacingType<enum_TextServer_SpacingType>` 枚举的大小。
+Represents the size of the :ref:`SpacingType<enum_TextServer_SpacingType>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -1536,7 +1536,7 @@ flags **FontStyle**: :ref:`🔗<enum_TextServer_FontStyle>`
 
 :ref:`FontStyle<enum_TextServer_FontStyle>` **FONT_BOLD** = ``1``
 
-字体为粗体。
+Font is bold.
 
 .. _class_TextServer_constant_FONT_ITALIC:
 
@@ -1544,7 +1544,7 @@ flags **FontStyle**: :ref:`🔗<enum_TextServer_FontStyle>`
 
 :ref:`FontStyle<enum_TextServer_FontStyle>` **FONT_ITALIC** = ``2``
 
-字体为斜体（italic）或伪斜体（oblique）。
+Font is italic or oblique.
 
 .. _class_TextServer_constant_FONT_FIXED_WIDTH:
 
@@ -1552,7 +1552,7 @@ flags **FontStyle**: :ref:`🔗<enum_TextServer_FontStyle>`
 
 :ref:`FontStyle<enum_TextServer_FontStyle>` **FONT_FIXED_WIDTH** = ``4``
 
-字体中有等宽字符。
+Font has fixed-width characters (also known as monospace).
 
 .. rst-class:: classref-item-separator
 
@@ -1570,7 +1570,7 @@ enum **StructuredTextParser**: :ref:`🔗<enum_TextServer_StructuredTextParser>`
 
 :ref:`StructuredTextParser<enum_TextServer_StructuredTextParser>` **STRUCTURED_TEXT_DEFAULT** = ``0``
 
-使用默认的 Unicode BiDi 算法。
+Use default Unicode BiDi algorithm.
 
 .. _class_TextServer_constant_STRUCTURED_TEXT_URI:
 
@@ -1578,7 +1578,7 @@ enum **StructuredTextParser**: :ref:`🔗<enum_TextServer_StructuredTextParser>`
 
 :ref:`StructuredTextParser<enum_TextServer_StructuredTextParser>` **STRUCTURED_TEXT_URI** = ``1``
 
-URI 的 BiDi 覆盖。
+BiDi override for URI.
 
 .. _class_TextServer_constant_STRUCTURED_TEXT_FILE:
 
@@ -1586,7 +1586,7 @@ URI 的 BiDi 覆盖。
 
 :ref:`StructuredTextParser<enum_TextServer_StructuredTextParser>` **STRUCTURED_TEXT_FILE** = ``2``
 
-文件路径的 BiDi 覆盖。
+BiDi override for file path.
 
 .. _class_TextServer_constant_STRUCTURED_TEXT_EMAIL:
 
@@ -1594,7 +1594,7 @@ URI 的 BiDi 覆盖。
 
 :ref:`StructuredTextParser<enum_TextServer_StructuredTextParser>` **STRUCTURED_TEXT_EMAIL** = ``3``
 
-电子邮件的 BiDi 覆盖。
+BiDi override for email.
 
 .. _class_TextServer_constant_STRUCTURED_TEXT_LIST:
 
@@ -1602,7 +1602,7 @@ URI 的 BiDi 覆盖。
 
 :ref:`StructuredTextParser<enum_TextServer_StructuredTextParser>` **STRUCTURED_TEXT_LIST** = ``4``
 
-列表的 BiDi 覆盖。结构化文本选项：列表分隔符 :ref:`String<class_String>`\ 。
+BiDi override for lists. Structured text options: list separator :ref:`String<class_String>`.
 
 .. _class_TextServer_constant_STRUCTURED_TEXT_GDSCRIPT:
 
@@ -1610,7 +1610,7 @@ URI 的 BiDi 覆盖。
 
 :ref:`StructuredTextParser<enum_TextServer_StructuredTextParser>` **STRUCTURED_TEXT_GDSCRIPT** = ``5``
 
-GDScript 的 BiDi 覆盖。
+BiDi override for GDScript.
 
 .. _class_TextServer_constant_STRUCTURED_TEXT_CUSTOM:
 
@@ -1618,7 +1618,7 @@ GDScript 的 BiDi 覆盖。
 
 :ref:`StructuredTextParser<enum_TextServer_StructuredTextParser>` **STRUCTURED_TEXT_CUSTOM** = ``6``
 
-用户定义的结构化文本 BiDi 覆盖函数。
+User defined structured text BiDi override function.
 
 .. rst-class:: classref-item-separator
 
@@ -1636,7 +1636,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 :ref:`FixedSizeScaleMode<enum_TextServer_FixedSizeScaleMode>` **FIXED_SIZE_SCALE_DISABLE** = ``0``
 
-位图字体未被缩放。
+Bitmap font is not scaled.
 
 .. _class_TextServer_constant_FIXED_SIZE_SCALE_INTEGER_ONLY:
 
@@ -1644,7 +1644,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 :ref:`FixedSizeScaleMode<enum_TextServer_FixedSizeScaleMode>` **FIXED_SIZE_SCALE_INTEGER_ONLY** = ``1``
 
-位图字体被缩放至字体固定大小的最接近整数倍。这是像素艺术字体的推荐选项。
+Bitmap font is scaled to the closest integer multiple of the font's fixed size. This is the recommended option for pixel art fonts.
 
 .. _class_TextServer_constant_FIXED_SIZE_SCALE_ENABLED:
 
@@ -1652,7 +1652,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 :ref:`FixedSizeScaleMode<enum_TextServer_FixedSizeScaleMode>` **FIXED_SIZE_SCALE_ENABLED** = ``2``
 
-位图字体被缩放为任意（分数）大小。这是非像素艺术字体的推荐选项。
+Bitmap font is scaled to an arbitrary (fractional) size. This is the recommended option for non-pixel art fonts.
 
 .. rst-class:: classref-section-separator
 
@@ -1660,8 +1660,8 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_TextServer_method_create_font:
 
@@ -1669,7 +1669,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 :ref:`RID<class_RID>` **create_font**\ (\ ) :ref:`🔗<class_TextServer_method_create_font>`
 
-新建空的字体缓存条目资源。要释放生成的资源，请使用 :ref:`free_rid()<class_TextServer_method_free_rid>` 方法。
+Creates a new, empty font cache entry resource. To free the resulting resource, use the :ref:`free_rid()<class_TextServer_method_free_rid>` method.
 
 .. rst-class:: classref-item-separator
 
@@ -1681,7 +1681,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 :ref:`RID<class_RID>` **create_font_linked_variation**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_TextServer_method_create_font_linked_variation>`
 
-创建一个新的已有的字体变体，该字体重用相同的字形缓存和字体数据。要释放生成的资源，请使用 :ref:`free_rid()<class_TextServer_method_free_rid>` 方法。
+Creates a new variation existing font which is reusing the same glyph cache and font data. To free the resulting resource, use the :ref:`free_rid()<class_TextServer_method_free_rid>` method.
 
 .. rst-class:: classref-item-separator
 
@@ -1693,11 +1693,11 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 :ref:`RID<class_RID>` **create_shaped_text**\ (\ direction\: :ref:`Direction<enum_TextServer_Direction>` = 0, orientation\: :ref:`Orientation<enum_TextServer_Orientation>` = 0\ ) :ref:`🔗<class_TextServer_method_create_shaped_text>`
 
-使用给定的方向 ``direction`` 和朝向 ``orientation`` 新建缓冲区，用于复杂排版。要释放生成的缓冲区，请使用 :ref:`free_rid()<class_TextServer_method_free_rid>`\ 方法。
+Creates a new buffer for complex text layout, with the given ``direction`` and ``orientation``. To free the resulting buffer, use :ref:`free_rid()<class_TextServer_method_free_rid>` method.
 
-\ **注意：**\ 如果服务器不支持 :ref:`FEATURE_BIDI_LAYOUT<class_TextServer_constant_FEATURE_BIDI_LAYOUT>` 特性，则会忽略方向（\ :ref:`TextServerAdvanced<class_TextServerAdvanced>` 支持）。
+\ **Note:** Direction is ignored if server does not support :ref:`FEATURE_BIDI_LAYOUT<class_TextServer_constant_FEATURE_BIDI_LAYOUT>` feature (supported by :ref:`TextServerAdvanced<class_TextServerAdvanced>`).
 
-\ **注意：**\ 如果服务器不支持 :ref:`FEATURE_VERTICAL_LAYOUT<class_TextServer_constant_FEATURE_VERTICAL_LAYOUT>` 特性，则会忽略朝向（\ :ref:`TextServerAdvanced<class_TextServerAdvanced>` 支持）。
+\ **Note:** Orientation is ignored if server does not support :ref:`FEATURE_VERTICAL_LAYOUT<class_TextServer_constant_FEATURE_VERTICAL_LAYOUT>` feature (supported by :ref:`TextServerAdvanced<class_TextServerAdvanced>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1709,7 +1709,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 |void| **draw_hex_code_box**\ (\ canvas\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`, pos\: :ref:`Vector2<class_Vector2>`, index\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) |const| :ref:`🔗<class_TextServer_method_draw_hex_code_box>`
 
-绘制显示字符十六进制码的框。用于替换缺失的字符。
+Draws box displaying character hexadecimal code. Used for replacing missing characters.
 
 .. rst-class:: classref-item-separator
 
@@ -1721,9 +1721,9 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 |void| **font_clear_glyphs**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TextServer_method_font_clear_glyphs>`
 
-从缓存条目中移除所有的渲染字形信息。
+Removes all rendered glyph information from the cache entry.
 
-\ **注意：**\ 该函数不会移除与字形关联的纹理，请使用 :ref:`font_remove_texture()<class_TextServer_method_font_remove_texture>` 手动移除。
+\ **Note:** This function will not remove textures associated with the glyphs, use :ref:`font_remove_texture()<class_TextServer_method_font_remove_texture>` to remove them manually.
 
 .. rst-class:: classref-item-separator
 
@@ -1735,7 +1735,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 |void| **font_clear_kerning_map**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextServer_method_font_clear_kerning_map>`
 
-移除所有字距调整覆盖。
+Removes all kerning overrides.
 
 .. rst-class:: classref-item-separator
 
@@ -1747,7 +1747,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 |void| **font_clear_size_cache**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_TextServer_method_font_clear_size_cache>`
 
-从缓存条目中移除所有的字体大小。
+Removes all font sizes from the cache entry.
 
 .. rst-class:: classref-item-separator
 
@@ -1759,7 +1759,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 |void| **font_clear_system_fallback_cache**\ (\ ) :ref:`🔗<class_TextServer_method_font_clear_system_fallback_cache>`
 
-释放所有自动加载的系统字体。
+Frees all automatically loaded system fonts.
 
 .. rst-class:: classref-item-separator
 
@@ -1771,9 +1771,9 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 |void| **font_clear_textures**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TextServer_method_font_clear_textures>`
 
-从字体缓存条目中移除所有的纹理。
+Removes all textures from font cache entry.
 
-\ **注意：**\ 该函数不会移除与纹理关联的字形，请使用 :ref:`font_remove_glyph()<class_TextServer_method_font_remove_glyph>` 手动移除。
+\ **Note:** This function will not remove glyphs associated with the texture, use :ref:`font_remove_glyph()<class_TextServer_method_font_remove_glyph>` to remove them manually.
 
 .. rst-class:: classref-item-separator
 
@@ -1785,11 +1785,11 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 |void| **font_draw_glyph**\ (\ font_rid\: :ref:`RID<class_RID>`, canvas\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`, pos\: :ref:`Vector2<class_Vector2>`, index\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_TextServer_method_font_draw_glyph>`
 
-在画布项中某个位置绘制单个字形，使用的字体为 ``font_rid``\ ，大小为 ``size``\ 。如果 ``oversampling`` 大于零则会用作字体过采样系数，否则使用视口的过采样设置。
+Draws single glyph into a canvas item at the position, using ``font_rid`` at the size ``size``. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
 
-\ **注意：**\ 字形索引是特定于字体的，请使用 :ref:`shaped_text_get_glyphs()<class_TextServer_method_shaped_text_get_glyphs>` 或 :ref:`font_get_glyph_index()<class_TextServer_method_font_get_glyph_index>` 返回的字形索引。
+\ **Note:** Glyph index is specific to the font, use glyphs indices returned by :ref:`shaped_text_get_glyphs()<class_TextServer_method_shaped_text_get_glyphs>` or :ref:`font_get_glyph_index()<class_TextServer_method_font_get_glyph_index>`.
 
-\ **注意：**\ 如果有待渲染的字形，调用这个函数可能会触发纹理缓存的更新。
+\ **Note:** If there are pending glyphs to render, calling this function might trigger the texture cache update.
 
 .. rst-class:: classref-item-separator
 
@@ -1801,11 +1801,11 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 |void| **font_draw_glyph_outline**\ (\ font_rid\: :ref:`RID<class_RID>`, canvas\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`, outline_size\: :ref:`int<class_int>`, pos\: :ref:`Vector2<class_Vector2>`, index\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_TextServer_method_font_draw_glyph_outline>`
 
-在画布项中某个位置绘制单个字形轮廓，使用的字体为 ``font_rid``\ ，大小为 ``size``\ 。如果 ``oversampling`` 大于零则会用作字体过采样系数，否则使用视口的过采样设置。
+Draws single glyph outline of size ``outline_size`` into a canvas item at the position, using ``font_rid`` at the size ``size``. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
 
-\ **注意：**\ 字形索引是特定于字体的，请使用 :ref:`shaped_text_get_glyphs()<class_TextServer_method_shaped_text_get_glyphs>` 或 :ref:`font_get_glyph_index()<class_TextServer_method_font_get_glyph_index>` 返回的字形索引。
+\ **Note:** Glyph index is specific to the font, use glyphs indices returned by :ref:`shaped_text_get_glyphs()<class_TextServer_method_shaped_text_get_glyphs>` or :ref:`font_get_glyph_index()<class_TextServer_method_font_get_glyph_index>`.
 
-\ **注意：**\ 如果有待渲染的字形，调用这个函数可能会触发纹理缓存的更新。
+\ **Note:** If there are pending glyphs to render, calling this function might trigger the texture cache update.
 
 .. rst-class:: classref-item-separator
 
@@ -1817,7 +1817,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 :ref:`FontAntialiasing<enum_TextServer_FontAntialiasing>` **font_get_antialiasing**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_antialiasing>`
 
-返回字体的抗锯齿模式。
+Returns font anti-aliasing mode.
 
 .. rst-class:: classref-item-separator
 
@@ -1829,7 +1829,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 :ref:`float<class_float>` **font_get_ascent**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_ascent>`
 
-返回字体的上升幅度（超出基线的像素数）。
+Returns the font ascent (number of pixels above the baseline).
 
 .. rst-class:: classref-item-separator
 
@@ -1841,7 +1841,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 :ref:`float<class_float>` **font_get_baseline_offset**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_baseline_offset>`
 
-返回额外的基线偏移（作为字体高度的一部分）。
+Returns extra baseline offset (as a fraction of font height).
 
 .. rst-class:: classref-item-separator
 
@@ -1853,7 +1853,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 :ref:`int<class_int>` **font_get_char_from_glyph_index**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`, glyph_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_char_from_glyph_index>`
 
-返回与 ``glyph_index`` 关联的字符码，如果 ``glyph_index`` 无效则返回 ``0``\ 。见 :ref:`font_get_glyph_index()<class_TextServer_method_font_get_glyph_index>`\ 。
+Returns character code associated with ``glyph_index``, or ``0`` if ``glyph_index`` is invalid. See :ref:`font_get_glyph_index()<class_TextServer_method_font_get_glyph_index>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1865,7 +1865,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 :ref:`float<class_float>` **font_get_descent**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_descent>`
 
-返回字体的减少量（低于基线的像素数）。
+Returns the font descent (number of pixels below the baseline).
 
 .. rst-class:: classref-item-separator
 
@@ -1877,7 +1877,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 :ref:`bool<class_bool>` **font_get_disable_embedded_bitmaps**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_disable_embedded_bitmaps>`
 
-返回字体是否仅用了内嵌位图加载。
+Returns whether the font's embedded bitmap loading is disabled.
 
 .. rst-class:: classref-item-separator
 
@@ -1889,7 +1889,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 :ref:`float<class_float>` **font_get_embolden**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_embolden>`
 
-返回字体的加粗力度。
+Returns font embolden strength.
 
 .. rst-class:: classref-item-separator
 
@@ -1901,7 +1901,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 :ref:`int<class_int>` **font_get_face_count**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_face_count>`
 
-返回 TrueType / OpenType 集合中的字体数。
+Returns number of faces in the TrueType / OpenType collection.
 
 .. rst-class:: classref-item-separator
 
@@ -1913,7 +1913,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 :ref:`int<class_int>` **font_get_face_index**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_face_index>`
 
-返回 TrueType / OpenType 集合中的活动字体索引。
+Returns an active face index in the TrueType / OpenType collection.
 
 .. rst-class:: classref-item-separator
 
@@ -1925,7 +1925,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 :ref:`int<class_int>` **font_get_fixed_size**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_fixed_size>`
 
-返回位图字体的固定大小。
+Returns bitmap font fixed size.
 
 .. rst-class:: classref-item-separator
 
@@ -1937,7 +1937,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 :ref:`FixedSizeScaleMode<enum_TextServer_FixedSizeScaleMode>` **font_get_fixed_size_scale_mode**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_fixed_size_scale_mode>`
 
-返回位图字体的缩放模式。
+Returns bitmap font scaling mode.
 
 .. rst-class:: classref-item-separator
 
@@ -1949,7 +1949,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 :ref:`bool<class_bool>` **font_get_generate_mipmaps**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_generate_mipmaps>`
 
-如果启用了字体纹理 mipmap 生成，则返回 ``true``\ 。
+Returns ``true`` if font texture mipmap generation is enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -1961,7 +1961,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 :ref:`float<class_float>` **font_get_global_oversampling**\ (\ ) |const| :ref:`🔗<class_TextServer_method_font_get_global_oversampling>`
 
-**已弃用：** Use :ref:`Viewport<class_Viewport>` oversampling, or the ``oversampling`` argument of the ``draw_*`` methods instead.
+**Deprecated:** Use :ref:`Viewport<class_Viewport>` oversampling, or the ``oversampling`` argument of the ``draw_*`` methods instead.
 
 This method does nothing and always returns ``1.0``.
 
@@ -1975,9 +1975,9 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`Vector2<class_Vector2>` **font_get_glyph_advance**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`, glyph\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_glyph_advance>`
 
-返回字形前进量（下一个字形的偏移量）。
+Returns glyph advance (offset of the next glyph).
 
-\ **注意：**\ 字形轮廓的前进量，与基础字形的前进量相同，不会被保存。
+\ **Note:** Advance for glyphs outlines is the same as the base glyph advance and is not saved.
 
 .. rst-class:: classref-item-separator
 
@@ -1989,23 +1989,23 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`Dictionary<class_Dictionary>` **font_get_glyph_contours**\ (\ font\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_glyph_contours>`
 
-返回字形的轮廓，是一个包含以下内容的 :ref:`Dictionary<class_Dictionary>`\ ：
+Returns outline contours of the glyph as a :ref:`Dictionary<class_Dictionary>` with the following contents:
 
-\ ``points``         - :ref:`PackedVector3Array<class_PackedVector3Array>`\ ，包含轮廓点。\ ``x`` 和 ``y`` 是点的坐标。\ ``z`` 是点的类型，使用 :ref:`ContourPointTag<enum_TextServer_ContourPointTag>` 的值。
+\ ``points``         - :ref:`PackedVector3Array<class_PackedVector3Array>`, containing outline points. ``x`` and ``y`` are point coordinates. ``z`` is the type of the point, using the :ref:`ContourPointTag<enum_TextServer_ContourPointTag>` values.
 
-\ ``contours``       - :ref:`PackedInt32Array<class_PackedInt32Array>`\ ，包含每个轮廓的端点索引。
+\ ``contours``       - :ref:`PackedInt32Array<class_PackedInt32Array>`, containing indices the end points of each contour.
 
-\ ``orientation``    - :ref:`bool<class_bool>`\ ，轮廓方向。如果为 ``true`` 则必须填充顺时针轮廓。
+\ ``orientation``    - :ref:`bool<class_bool>`, contour orientation. If ``true``, clockwise contours must be filled.
 
-- 两个连续的 :ref:`CONTOUR_CURVE_TAG_ON<class_TextServer_constant_CONTOUR_CURVE_TAG_ON>` 点表示一条线段。
+- Two successive :ref:`CONTOUR_CURVE_TAG_ON<class_TextServer_constant_CONTOUR_CURVE_TAG_ON>` points indicate a line segment.
 
-- 在两个 :ref:`CONTOUR_CURVE_TAG_ON<class_TextServer_constant_CONTOUR_CURVE_TAG_ON>` 点之间的一个 :ref:`CONTOUR_CURVE_TAG_OFF_CONIC<class_TextServer_constant_CONTOUR_CURVE_TAG_OFF_CONIC>` 点表示一个一条圆锥（二次）贝塞尔弧。
+- One :ref:`CONTOUR_CURVE_TAG_OFF_CONIC<class_TextServer_constant_CONTOUR_CURVE_TAG_OFF_CONIC>` point between two :ref:`CONTOUR_CURVE_TAG_ON<class_TextServer_constant_CONTOUR_CURVE_TAG_ON>` points indicates a single conic (quadratic) Bézier arc.
 
-- 在两个 :ref:`CONTOUR_CURVE_TAG_ON<class_TextServer_constant_CONTOUR_CURVE_TAG_ON>` 点之间的两个 :ref:`CONTOUR_CURVE_TAG_OFF_CUBIC<class_TextServer_constant_CONTOUR_CURVE_TAG_OFF_CUBIC>` 点表示一个一条三次贝塞尔弧。
+- Two :ref:`CONTOUR_CURVE_TAG_OFF_CUBIC<class_TextServer_constant_CONTOUR_CURVE_TAG_OFF_CUBIC>` points between two :ref:`CONTOUR_CURVE_TAG_ON<class_TextServer_constant_CONTOUR_CURVE_TAG_ON>` points indicate a single cubic Bézier arc.
 
-- 两个连续的 :ref:`CONTOUR_CURVE_TAG_OFF_CONIC<class_TextServer_constant_CONTOUR_CURVE_TAG_OFF_CONIC>` 点表示两条连续的圆锥（二次）贝塞尔弧，中点处存在一个虚拟的 :ref:`CONTOUR_CURVE_TAG_ON<class_TextServer_constant_CONTOUR_CURVE_TAG_ON>` 点。
+- Two successive :ref:`CONTOUR_CURVE_TAG_OFF_CONIC<class_TextServer_constant_CONTOUR_CURVE_TAG_OFF_CONIC>` points indicate two successive conic (quadratic) Bézier arcs with a virtual :ref:`CONTOUR_CURVE_TAG_ON<class_TextServer_constant_CONTOUR_CURVE_TAG_ON>` point at their middle.
 
-- 每个轮廓都是闭合的。轮廓的最后一个点使用轮廓的第一个点作为下一个点，反之亦然。第一个点可以是 :ref:`CONTOUR_CURVE_TAG_OFF_CONIC<class_TextServer_constant_CONTOUR_CURVE_TAG_OFF_CONIC>` 点。
+- Each contour is closed. The last point of a contour uses the first point of a contour as its next point, and vice versa. The first point can be :ref:`CONTOUR_CURVE_TAG_OFF_CONIC<class_TextServer_constant_CONTOUR_CURVE_TAG_OFF_CONIC>` point.
 
 .. rst-class:: classref-item-separator
 
@@ -2017,7 +2017,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`int<class_int>` **font_get_glyph_index**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`, char\: :ref:`int<class_int>`, variation_selector\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_glyph_index>`
 
-返回 ``char`` 的字形索引，可以选择由 ``variation_selector`` 进行修改。见 :ref:`font_get_char_from_glyph_index()<class_TextServer_method_font_get_char_from_glyph_index>`\ 。
+Returns the glyph index of a ``char``, optionally modified by the ``variation_selector``. See :ref:`font_get_char_from_glyph_index()<class_TextServer_method_font_get_char_from_glyph_index>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2029,7 +2029,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **font_get_glyph_list**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_glyph_list>`
 
-返回缓存条目中的已渲染字形列表。
+Returns list of rendered glyphs in the cache entry.
 
 .. rst-class:: classref-item-separator
 
@@ -2041,7 +2041,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`Vector2<class_Vector2>` **font_get_glyph_offset**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`, glyph\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_glyph_offset>`
 
-返回字形的基线偏移量。
+Returns glyph offset from the baseline.
 
 .. rst-class:: classref-item-separator
 
@@ -2053,7 +2053,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`Vector2<class_Vector2>` **font_get_glyph_size**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`, glyph\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_glyph_size>`
 
-返回该字形的大小。
+Returns size of the glyph.
 
 .. rst-class:: classref-item-separator
 
@@ -2065,7 +2065,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`int<class_int>` **font_get_glyph_texture_idx**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`, glyph\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_glyph_texture_idx>`
 
-返回包含该字形的缓存纹理的索引。
+Returns index of the cache texture containing the glyph.
 
 .. rst-class:: classref-item-separator
 
@@ -2077,9 +2077,9 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`RID<class_RID>` **font_get_glyph_texture_rid**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`, glyph\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_glyph_texture_rid>`
 
-返回包含字形的缓存纹理的资源 ID。
+Returns resource ID of the cache texture containing the glyph.
 
-\ **注意：**\ 如果有待渲染的字形，调用此函数可能会触发纹理缓存的更新。
+\ **Note:** If there are pending glyphs to render, calling this function might trigger the texture cache update.
 
 .. rst-class:: classref-item-separator
 
@@ -2091,9 +2091,9 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`Vector2<class_Vector2>` **font_get_glyph_texture_size**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`, glyph\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_glyph_texture_size>`
 
-返回包含字形的缓存纹理的大小。
+Returns size of the cache texture containing the glyph.
 
-\ **注意：**\ 如果有待渲染的字形，调用此函数可能会触发纹理缓存的更新。
+\ **Note:** If there are pending glyphs to render, calling this function might trigger the texture cache update.
 
 .. rst-class:: classref-item-separator
 
@@ -2105,7 +2105,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`Rect2<class_Rect2>` **font_get_glyph_uv_rect**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`, glyph\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_glyph_uv_rect>`
 
-返回包含该字形的缓存纹理中的矩形。
+Returns rectangle in the cache texture containing the glyph.
 
 .. rst-class:: classref-item-separator
 
@@ -2117,7 +2117,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`Hinting<enum_TextServer_Hinting>` **font_get_hinting**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_hinting>`
 
-返回字体微调模式。仅用于动态字体。
+Returns the font hinting mode. Used by dynamic fonts only.
 
 .. rst-class:: classref-item-separator
 
@@ -2129,7 +2129,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`bool<class_bool>` **font_get_keep_rounding_remainders**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_keep_rounding_remainders>`
 
-返回字形位置的舍入行为。如果设为 ``true``\ ，在将字形对齐到像素边界时会累积余数，确保字形分布更加均匀。如果启用了次像素定位，则该设置无效。
+Returns glyph position rounding behavior. If set to ``true``, when aligning glyphs to the pixel boundaries rounding remainders are accumulated to ensure more uniform glyph distribution. This setting has no effect if subpixel positioning is enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -2141,7 +2141,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`Vector2<class_Vector2>` **font_get_kerning**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`, glyph_pair\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_kerning>`
 
-返回字形对的字距调整。
+Returns kerning for the pair of glyphs.
 
 .. rst-class:: classref-item-separator
 
@@ -2153,7 +2153,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\] **font_get_kerning_list**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_kerning_list>`
 
-返回字距调整覆盖的列表。
+Returns list of the kerning overrides.
 
 .. rst-class:: classref-item-separator
 
@@ -2165,7 +2165,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`bool<class_bool>` **font_get_language_support_override**\ (\ font_rid\: :ref:`RID<class_RID>`, language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TextServer_method_font_get_language_support_override>`
 
-如果为 ``language`` 启用了支持覆盖，则返回 ``true``\ 。
+Returns ``true`` if support override is enabled for the ``language``.
 
 .. rst-class:: classref-item-separator
 
@@ -2177,7 +2177,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **font_get_language_support_overrides**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_TextServer_method_font_get_language_support_overrides>`
 
-返回语言支持覆盖的列表。
+Returns list of language support overrides.
 
 .. rst-class:: classref-item-separator
 
@@ -2189,7 +2189,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`int<class_int>` **font_get_msdf_pixel_range**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_msdf_pixel_range>`
 
-返回最小和最大可表示有符号距离之间形状周围范围的宽度。
+Returns the width of the range around the shape between the minimum and maximum representable signed distance.
 
 .. rst-class:: classref-item-separator
 
@@ -2201,7 +2201,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`int<class_int>` **font_get_msdf_size**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_msdf_size>`
 
-返回用于生成 MSDF 纹理的源字体大小。
+Returns source font size used to generate MSDF textures.
 
 .. rst-class:: classref-item-separator
 
@@ -2213,7 +2213,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`String<class_String>` **font_get_name**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_name>`
 
-返回字体家族名称。
+Returns font family name.
 
 .. rst-class:: classref-item-separator
 
@@ -2225,7 +2225,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`Dictionary<class_Dictionary>` **font_get_opentype_feature_overrides**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_opentype_feature_overrides>`
 
-返回字体 OpenType 特性集覆盖。
+Returns font OpenType feature set override.
 
 .. rst-class:: classref-item-separator
 
@@ -2237,7 +2237,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`Dictionary<class_Dictionary>` **font_get_ot_name_strings**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_ot_name_strings>`
 
-返回 OpenType 字体名称字符串的 :ref:`Dictionary<class_Dictionary>`\ （本地化的字体名称、版本、描述、许可信息、示例文本等）。
+Returns :ref:`Dictionary<class_Dictionary>` with OpenType font name strings (localized font names, version, description, license information, sample text, etc.).
 
 .. rst-class:: classref-item-separator
 
@@ -2249,7 +2249,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`float<class_float>` **font_get_oversampling**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_oversampling>`
 
-返回过采样系数覆盖值。如果设为正数，则会覆盖使用该字体的视口的过采样系数。见 :ref:`Viewport.oversampling<class_Viewport_property_oversampling>`\ 。该值不会覆盖 ``draw_*`` 方法的 ``oversampling`` 参数。仅适用于动态字体。
+Returns oversampling factor override. If set to a positive value, overrides the oversampling factor of the viewport this font is used in. See :ref:`Viewport.oversampling<class_Viewport_property_oversampling>`. This value doesn't override the ``oversampling`` parameter of ``draw_*`` methods. Used by dynamic fonts only.
 
 .. rst-class:: classref-item-separator
 
@@ -2261,7 +2261,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`float<class_float>` **font_get_scale**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_scale>`
 
-返回颜色位图字体的缩放系数。
+Returns scaling factor of the color bitmap font.
 
 .. rst-class:: classref-item-separator
 
@@ -2273,7 +2273,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`bool<class_bool>` **font_get_script_support_override**\ (\ font_rid\: :ref:`RID<class_RID>`, script\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TextServer_method_font_get_script_support_override>`
 
-如果为 ``script`` 启用了支持覆盖，则返回 ``true``\ 。
+Returns ``true`` if support override is enabled for the ``script``.
 
 .. rst-class:: classref-item-separator
 
@@ -2285,7 +2285,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **font_get_script_support_overrides**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_TextServer_method_font_get_script_support_overrides>`
 
-返回文字支持覆盖的列表。
+Returns list of script support overrides.
 
 .. rst-class:: classref-item-separator
 
@@ -2297,7 +2297,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **font_get_size_cache_info**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_size_cache_info>`
 
-返回字体缓存信息，每个条目都包含以下字段：\ ``Vector2i size_px`` - 字体大小，单位为像素，\ ``float viewport_oversampling`` - 视口过采样系数，\ ``int glyphs`` - 已渲染的字形数，\ ``int textures`` - 已使用的纹理数，\ ``int textures_size`` - 纹理数据大小，单位为字节。
+Returns font cache information, each entry contains the following fields: ``Vector2i size_px`` - font size in pixels, ``float viewport_oversampling`` - viewport oversampling factor, ``int glyphs`` - number of rendered glyphs, ``int textures`` - number of used textures, ``int textures_size`` - size of texture data in bytes.
 
 .. rst-class:: classref-item-separator
 
@@ -2309,7 +2309,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\] **font_get_size_cache_list**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_size_cache_list>`
 
-返回缓存中字体大小的列表。每个大小都是由字体大小和轮廓大小组成的 :ref:`Vector2i<class_Vector2i>`\ 。
+Returns list of the font sizes in the cache. Each size is :ref:`Vector2i<class_Vector2i>` with font size and outline size.
 
 .. rst-class:: classref-item-separator
 
@@ -2321,7 +2321,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`int<class_int>` **font_get_spacing**\ (\ font_rid\: :ref:`RID<class_RID>`, spacing\: :ref:`SpacingType<enum_TextServer_SpacingType>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_spacing>`
 
-返回 ``spacing`` 的间距，单位为像素（与字体大小无关）。
+Returns the spacing for ``spacing`` in pixels (not relative to the font size).
 
 .. rst-class:: classref-item-separator
 
@@ -2333,7 +2333,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`int<class_int>` **font_get_stretch**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_stretch>`
 
-返回与正常宽度相比的字体拉伸量。一个介于 ``50%`` 和 ``200%`` 之间的百分比值。
+Returns font stretch amount, compared to a normal width. A percentage value between ``50%`` and ``200%``.
 
 .. rst-class:: classref-item-separator
 
@@ -2345,7 +2345,7 @@ This method does nothing and always returns ``1.0``.
 
 |bitfield|\[:ref:`FontStyle<enum_TextServer_FontStyle>`\] **font_get_style**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_style>`
 
-返回字体样式标志。
+Returns font style flags.
 
 .. rst-class:: classref-item-separator
 
@@ -2357,7 +2357,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`String<class_String>` **font_get_style_name**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_style_name>`
 
-返回字体样式名称。
+Returns font style name.
 
 .. rst-class:: classref-item-separator
 
@@ -2369,7 +2369,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`SubpixelPositioning<enum_TextServer_SubpixelPositioning>` **font_get_subpixel_positioning**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_subpixel_positioning>`
 
-返回字体的次像素字形定位模式。
+Returns font subpixel glyph positioning mode.
 
 .. rst-class:: classref-item-separator
 
@@ -2381,7 +2381,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`String<class_String>` **font_get_supported_chars**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_supported_chars>`
 
-返回包含字体中所有可用字符的字符串。
+Returns a string containing all the characters available in the font.
 
 .. rst-class:: classref-item-separator
 
@@ -2393,7 +2393,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **font_get_supported_glyphs**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_supported_glyphs>`
 
-返回包含字体中所有字形索引的数组。
+Returns an array containing all glyph indices in the font.
 
 .. rst-class:: classref-item-separator
 
@@ -2405,7 +2405,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`int<class_int>` **font_get_texture_count**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_texture_count>`
 
-返回字体缓存条目所使用的纹理数。
+Returns number of textures used by font cache entry.
 
 .. rst-class:: classref-item-separator
 
@@ -2417,7 +2417,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`Image<class_Image>` **font_get_texture_image**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`, texture_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_texture_image>`
 
-返回字体缓存纹理图像数据。
+Returns font cache texture image data.
 
 .. rst-class:: classref-item-separator
 
@@ -2429,7 +2429,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **font_get_texture_offsets**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`, texture_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_texture_offsets>`
 
-返回包含字形打包数据的数组。
+Returns array containing glyph packing data.
 
 .. rst-class:: classref-item-separator
 
@@ -2441,7 +2441,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`Transform2D<class_Transform2D>` **font_get_transform**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_transform>`
 
-返回应用于字体轮廓的 2D 变换。
+Returns 2D transform applied to the font outlines.
 
 .. rst-class:: classref-item-separator
 
@@ -2453,7 +2453,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`float<class_float>` **font_get_underline_position**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_underline_position>`
 
-返回基线下方下划线的像素偏移。
+Returns pixel offset of the underline below the baseline.
 
 .. rst-class:: classref-item-separator
 
@@ -2465,7 +2465,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`float<class_float>` **font_get_underline_thickness**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_underline_thickness>`
 
-返回下划线的粗细度，单位为像素。
+Returns thickness of the underline in pixels.
 
 .. rst-class:: classref-item-separator
 
@@ -2477,7 +2477,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`Dictionary<class_Dictionary>` **font_get_variation_coordinates**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_variation_coordinates>`
 
-返回指定字体缓存条目的变体坐标。详见 :ref:`font_supported_variation_list()<class_TextServer_method_font_supported_variation_list>`\ 。
+Returns variation coordinates for the specified font cache entry. See :ref:`font_supported_variation_list()<class_TextServer_method_font_supported_variation_list>` for more info.
 
 .. rst-class:: classref-item-separator
 
@@ -2489,7 +2489,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`int<class_int>` **font_get_weight**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_weight>`
 
-返回该字体的字重（粗度）。一个在 ``100...999`` 范围内的值，正常字体字重为 ``400``\ ，粗体字体字重为 ``700``\ 。
+Returns weight (boldness) of the font. A value in the ``100...999`` range, normal font weight is ``400``, bold font weight is ``700``.
 
 .. rst-class:: classref-item-separator
 
@@ -2501,7 +2501,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`bool<class_bool>` **font_has_char**\ (\ font_rid\: :ref:`RID<class_RID>`, char\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_has_char>`
 
-如果该字体中包含 Unicode 字符 ``char``\ ，则返回 ``true``\ 。
+Returns ``true`` if a Unicode ``char`` is available in the font.
 
 .. rst-class:: classref-item-separator
 
@@ -2513,7 +2513,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`bool<class_bool>` **font_is_allow_system_fallback**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_is_allow_system_fallback>`
 
-如果可以自动使用系统字体作为回退字体，则返回 ``true``\ 。
+Returns ``true`` if system fonts can be automatically used as fallbacks.
 
 .. rst-class:: classref-item-separator
 
@@ -2525,7 +2525,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`bool<class_bool>` **font_is_force_autohinter**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_is_force_autohinter>`
 
-如果自动提示被支持且优先于字体内置提示，则返回 ``true``\ 。仅由动态字体使用。
+Returns ``true`` if auto-hinting is supported and preferred over font built-in hinting. Used by dynamic fonts only.
 
 .. rst-class:: classref-item-separator
 
@@ -2561,7 +2561,7 @@ Returns ``true`` if color modulation is applied when drawing the font's colored 
 
 :ref:`bool<class_bool>` **font_is_multichannel_signed_distance_field**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_is_multichannel_signed_distance_field>`
 
-如果使用从动态字体矢量数据生成的单个多通道有符号距离场渲染所有大小的字形，则返回 ``true``\ 。
+Returns ``true`` if glyphs of all sizes are rendered using single multichannel signed distance field generated from the dynamic font vector data.
 
 .. rst-class:: classref-item-separator
 
@@ -2585,9 +2585,9 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_remove_glyph**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`, glyph\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextServer_method_font_remove_glyph>`
 
-从缓存条目中移除指定的渲染字形信息。
+Removes specified rendered glyph information from the cache entry.
 
-\ **注意：**\ 这个函数不会移除与字形相关的纹理，请使用 :ref:`font_remove_texture()<class_TextServer_method_font_remove_texture>` 手动移除。
+\ **Note:** This function will not remove textures associated with the glyphs, use :ref:`font_remove_texture()<class_TextServer_method_font_remove_texture>` to remove them manually.
 
 .. rst-class:: classref-item-separator
 
@@ -2599,7 +2599,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_remove_kerning**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`, glyph_pair\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TextServer_method_font_remove_kerning>`
 
-移除字形对的字距调整覆盖。
+Removes kerning override for the pair of glyphs.
 
 .. rst-class:: classref-item-separator
 
@@ -2611,7 +2611,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_remove_language_support_override**\ (\ font_rid\: :ref:`RID<class_RID>`, language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TextServer_method_font_remove_language_support_override>`
 
-移除语言支持覆盖。
+Remove language support override.
 
 .. rst-class:: classref-item-separator
 
@@ -2623,7 +2623,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_remove_script_support_override**\ (\ font_rid\: :ref:`RID<class_RID>`, script\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TextServer_method_font_remove_script_support_override>`
 
-移除文字支持覆盖。
+Removes script support override.
 
 .. rst-class:: classref-item-separator
 
@@ -2635,7 +2635,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_remove_size_cache**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TextServer_method_font_remove_size_cache>`
 
-从缓存条目中移除指定的字体大小。
+Removes specified font size from the cache entry.
 
 .. rst-class:: classref-item-separator
 
@@ -2647,9 +2647,9 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_remove_texture**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`, texture_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextServer_method_font_remove_texture>`
 
-从缓存条目中移除指定纹理。
+Removes specified texture from the cache entry.
 
-\ **注意：**\ 这个函数不会移除与纹理关联的字形，请使用 :ref:`font_remove_glyph()<class_TextServer_method_font_remove_glyph>` 手动移除。
+\ **Note:** This function will not remove glyphs associated with the texture, remove them manually, using :ref:`font_remove_glyph()<class_TextServer_method_font_remove_glyph>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2661,7 +2661,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_render_glyph**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`, index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextServer_method_font_render_glyph>`
 
-将指定的字符渲染到字体缓存纹理。
+Renders specified glyph to the font cache texture.
 
 .. rst-class:: classref-item-separator
 
@@ -2673,7 +2673,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_render_range**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`, start\: :ref:`int<class_int>`, end\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextServer_method_font_render_range>`
 
-将范围内的字符渲染到字体缓存纹理。
+Renders the range of characters to the font cache texture.
 
 .. rst-class:: classref-item-separator
 
@@ -2685,7 +2685,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_allow_system_fallback**\ (\ font_rid\: :ref:`RID<class_RID>`, allow_system_fallback\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TextServer_method_font_set_allow_system_fallback>`
 
-如果设置为 ``true``\ ，则可以自动将系统字体作为回退使用。
+If set to ``true``, system fonts can be automatically used as fallbacks.
 
 .. rst-class:: classref-item-separator
 
@@ -2697,7 +2697,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_antialiasing**\ (\ font_rid\: :ref:`RID<class_RID>`, antialiasing\: :ref:`FontAntialiasing<enum_TextServer_FontAntialiasing>`\ ) :ref:`🔗<class_TextServer_method_font_set_antialiasing>`
 
-使用字体抗锯齿模式。
+Sets font anti-aliasing mode.
 
 .. rst-class:: classref-item-separator
 
@@ -2709,7 +2709,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_ascent**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`, ascent\: :ref:`float<class_float>`\ ) :ref:`🔗<class_TextServer_method_font_set_ascent>`
 
-设置字体的升部（基线上方的像素数）。
+Sets the font ascent (number of pixels above the baseline).
 
 .. rst-class:: classref-item-separator
 
@@ -2721,7 +2721,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_baseline_offset**\ (\ font_rid\: :ref:`RID<class_RID>`, baseline_offset\: :ref:`float<class_float>`\ ) :ref:`🔗<class_TextServer_method_font_set_baseline_offset>`
 
-设置额外的基线偏移（作为字体高度的一部分）。
+Sets extra baseline offset (as a fraction of font height).
 
 .. rst-class:: classref-item-separator
 
@@ -2733,7 +2733,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_data**\ (\ font_rid\: :ref:`RID<class_RID>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_TextServer_method_font_set_data>`
 
-设置字体源数据，例如动态字体的源文件内容。
+Sets font source data, e.g contents of the dynamic font source file.
 
 .. rst-class:: classref-item-separator
 
@@ -2745,7 +2745,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_descent**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`, descent\: :ref:`float<class_float>`\ ) :ref:`🔗<class_TextServer_method_font_set_descent>`
 
-设置字体的降部（基线下方的像素数）。
+Sets the font descent (number of pixels below the baseline).
 
 .. rst-class:: classref-item-separator
 
@@ -2757,7 +2757,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_disable_embedded_bitmaps**\ (\ font_rid\: :ref:`RID<class_RID>`, disable_embedded_bitmaps\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TextServer_method_font_set_disable_embedded_bitmaps>`
 
-如果为 ``true``\ ，则会禁用内嵌字体位图的加载（仅包含位图的字体以及彩色字体会禁用该属性）。
+If set to ``true``, embedded font bitmap loading is disabled (bitmap-only and color fonts ignore this property).
 
 .. rst-class:: classref-item-separator
 
@@ -2769,7 +2769,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_embolden**\ (\ font_rid\: :ref:`RID<class_RID>`, strength\: :ref:`float<class_float>`\ ) :ref:`🔗<class_TextServer_method_font_set_embolden>`
 
-设置字体的加粗强度。如果 ``strength`` 不等于零，则会加粗字体轮廓。负值会减小轮廓的粗细度。
+Sets font embolden strength. If ``strength`` is not equal to zero, emboldens the font outlines. Negative values reduce the outline thickness.
 
 .. rst-class:: classref-item-separator
 
@@ -2781,7 +2781,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_face_index**\ (\ font_rid\: :ref:`RID<class_RID>`, face_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextServer_method_font_set_face_index>`
 
-在 TrueType / OpenType 集合中设置活动字体索引。
+Sets an active face index in the TrueType / OpenType collection.
 
 .. rst-class:: classref-item-separator
 
@@ -2793,7 +2793,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_fixed_size**\ (\ font_rid\: :ref:`RID<class_RID>`, fixed_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextServer_method_font_set_fixed_size>`
 
-设置位图字体的固定大小。如果设置为大于零的值，则会为所有字体大小使用相同的缓存条目。
+Sets bitmap font fixed size. If set to value greater than zero, same cache entry will be used for all font sizes.
 
 .. rst-class:: classref-item-separator
 
@@ -2805,7 +2805,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_fixed_size_scale_mode**\ (\ font_rid\: :ref:`RID<class_RID>`, fixed_size_scale_mode\: :ref:`FixedSizeScaleMode<enum_TextServer_FixedSizeScaleMode>`\ ) :ref:`🔗<class_TextServer_method_font_set_fixed_size_scale_mode>`
 
-设置位图字体缩放模式。仅当 ``fixed_size`` 大于零时才使用该属性。
+Sets bitmap font scaling mode. This property is used only if ``fixed_size`` is greater than zero.
 
 .. rst-class:: classref-item-separator
 
@@ -2817,7 +2817,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_force_autohinter**\ (\ font_rid\: :ref:`RID<class_RID>`, force_autohinter\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TextServer_method_font_set_force_autohinter>`
 
-如果设置为 ``true``\ ，则优先使用自动微调，而不是字体的内置微调。
+If set to ``true`` auto-hinting is preferred over font built-in hinting.
 
 .. rst-class:: classref-item-separator
 
@@ -2829,7 +2829,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_generate_mipmaps**\ (\ font_rid\: :ref:`RID<class_RID>`, generate_mipmaps\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TextServer_method_font_set_generate_mipmaps>`
 
-如果设置为 ``true``\ ，则启用字体纹理 mipmap 生成。
+If set to ``true`` font texture mipmap generation is enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -2841,9 +2841,9 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_global_oversampling**\ (\ oversampling\: :ref:`float<class_float>`\ ) :ref:`🔗<class_TextServer_method_font_set_global_oversampling>`
 
-**已弃用：** Use :ref:`Viewport<class_Viewport>` oversampling, or the ``oversampling`` argument of the ``draw_*`` methods instead.
+**Deprecated:** Use :ref:`Viewport<class_Viewport>` oversampling, or the ``oversampling`` argument of the ``draw_*`` methods instead.
 
-这个方法什么也不做。
+This method does nothing.
 
 .. rst-class:: classref-item-separator
 
@@ -2855,9 +2855,9 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_glyph_advance**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`, glyph\: :ref:`int<class_int>`, advance\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_TextServer_method_font_set_glyph_advance>`
 
-设置字形前进量（下一个字形的偏移量）。
+Sets glyph advance (offset of the next glyph).
 
-\ **注意：**\ 字形轮廓的前进量与基础字形的前进量相同，不会被保存。
+\ **Note:** Advance for glyphs outlines is the same as the base glyph advance and is not saved.
 
 .. rst-class:: classref-item-separator
 
@@ -2869,7 +2869,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_glyph_offset**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`, glyph\: :ref:`int<class_int>`, offset\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_TextServer_method_font_set_glyph_offset>`
 
-设置字形相对于基线的偏移量。
+Sets glyph offset from the baseline.
 
 .. rst-class:: classref-item-separator
 
@@ -2881,7 +2881,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_glyph_size**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`, glyph\: :ref:`int<class_int>`, gl_size\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_TextServer_method_font_set_glyph_size>`
 
-设置字形的大小。
+Sets size of the glyph.
 
 .. rst-class:: classref-item-separator
 
@@ -2893,7 +2893,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_glyph_texture_idx**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`, glyph\: :ref:`int<class_int>`, texture_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextServer_method_font_set_glyph_texture_idx>`
 
-设置包含该字形的缓存纹理的索引。
+Sets index of the cache texture containing the glyph.
 
 .. rst-class:: classref-item-separator
 
@@ -2905,7 +2905,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_glyph_uv_rect**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`, glyph\: :ref:`int<class_int>`, uv_rect\: :ref:`Rect2<class_Rect2>`\ ) :ref:`🔗<class_TextServer_method_font_set_glyph_uv_rect>`
 
-设置包含该字形的缓存纹理中，该字形的矩形区域。
+Sets rectangle in the cache texture containing the glyph.
 
 .. rst-class:: classref-item-separator
 
@@ -2917,7 +2917,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_hinting**\ (\ font_rid\: :ref:`RID<class_RID>`, hinting\: :ref:`Hinting<enum_TextServer_Hinting>`\ ) :ref:`🔗<class_TextServer_method_font_set_hinting>`
 
-设置字体微调模式。仅由动态字体使用。
+Sets font hinting mode. Used by dynamic fonts only.
 
 .. rst-class:: classref-item-separator
 
@@ -2929,7 +2929,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_keep_rounding_remainders**\ (\ font_rid\: :ref:`RID<class_RID>`, keep_rounding_remainders\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TextServer_method_font_set_keep_rounding_remainders>`
 
-设置字形位置的舍入行为。如果设为 ``true``\ ，则会将字形与像素边界对齐时的舍入余数进行累积，确保字形分布更为均匀。启用次像素定位时该设置无效。
+Sets glyph position rounding behavior. If set to ``true``, when aligning glyphs to the pixel boundaries rounding remainders are accumulated to ensure more uniform glyph distribution. This setting has no effect if subpixel positioning is enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -2941,7 +2941,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_kerning**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`, glyph_pair\: :ref:`Vector2i<class_Vector2i>`, kerning\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_TextServer_method_font_set_kerning>`
 
-设置字形对的字距调整。
+Sets kerning for the pair of glyphs.
 
 .. rst-class:: classref-item-separator
 
@@ -2953,7 +2953,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_language_support_override**\ (\ font_rid\: :ref:`RID<class_RID>`, language\: :ref:`String<class_String>`, supported\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TextServer_method_font_set_language_support_override>`
 
-为 :ref:`font_is_language_supported()<class_TextServer_method_font_is_language_supported>` 添加覆盖。
+Adds override for :ref:`font_is_language_supported()<class_TextServer_method_font_is_language_supported>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2965,7 +2965,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_modulate_color_glyphs**\ (\ font_rid\: :ref:`RID<class_RID>`, force_autohinter\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TextServer_method_font_set_modulate_color_glyphs>`
 
-如果设为 ``true``\ ，则绘制彩色字形时会应用颜色调制，否则只会对灰度字形应用。
+If set to ``true``, color modulation is applied when drawing colored glyphs, otherwise it's applied to the monochrome glyphs only.
 
 .. rst-class:: classref-item-separator
 
@@ -2977,7 +2977,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_msdf_pixel_range**\ (\ font_rid\: :ref:`RID<class_RID>`, msdf_pixel_range\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextServer_method_font_set_msdf_pixel_range>`
 
-设置最小和最大可表示有符号距离之间形状周围范围的宽度。
+Sets the width of the range around the shape between the minimum and maximum representable signed distance.
 
 .. rst-class:: classref-item-separator
 
@@ -2989,7 +2989,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_msdf_size**\ (\ font_rid\: :ref:`RID<class_RID>`, msdf_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextServer_method_font_set_msdf_size>`
 
-设置用于生成 MSDF 纹理的源字体大小。
+Sets source font size used to generate MSDF textures.
 
 .. rst-class:: classref-item-separator
 
@@ -3001,9 +3001,9 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_multichannel_signed_distance_field**\ (\ font_rid\: :ref:`RID<class_RID>`, msdf\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TextServer_method_font_set_multichannel_signed_distance_field>`
 
-如果设置为 ``true``\ ，则所有大小的字形都使用同一个从动态字体向量数据生成的多通道带符号距离场进行渲染。MSDF 渲染能够使用任意缩放系数显示字体，字体不会变得模糊，字体大小的改变也不会消耗 CPU 的性能（因为字体不再需要在 CPU 上进行光栅化）。缺点是MSDF 无法使用字体微调。缺少字体微调时，锐度可能降低，较小的字体可能不易阅读。
+If set to ``true``, glyphs of all sizes are rendered using single multichannel signed distance field generated from the dynamic font vector data. MSDF rendering allows displaying the font at any scaling factor without blurriness, and without incurring a CPU cost when the font size changes (since the font no longer needs to be rasterized on the CPU). As a downside, font hinting is not available with MSDF. The lack of font hinting may result in less crisp and less readable fonts at small sizes.
 
-\ **注意：**\ MSDF 字体渲染无法正确渲染存在形状重叠的字形。重叠的形状在 OpenType 标准中是无效的，但在很多字体文件中仍然很常见，尤其是经过 Google Fonts 转换后的那些。要避免形状重叠带来的问题，请考虑直接从字体厂商下载字体文件，不要依赖 Google Fonts。
+\ **Note:** MSDF font rendering does not render glyphs with overlapping shapes correctly. Overlapping shapes are not valid per the OpenType standard, but are still commonly found in many font files, especially those converted by Google Fonts. To avoid issues with overlapping glyphs, consider downloading the font file directly from the type foundry instead of relying on Google Fonts.
 
 .. rst-class:: classref-item-separator
 
@@ -3015,7 +3015,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_name**\ (\ font_rid\: :ref:`RID<class_RID>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TextServer_method_font_set_name>`
 
-设置该字体的家族名称。
+Sets the font family name.
 
 .. rst-class:: classref-item-separator
 
@@ -3027,7 +3027,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_opentype_feature_overrides**\ (\ font_rid\: :ref:`RID<class_RID>`, overrides\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_TextServer_method_font_set_opentype_feature_overrides>`
 
-设置字体 OpenType 特性集覆盖。
+Sets font OpenType feature set override.
 
 .. rst-class:: classref-item-separator
 
@@ -3039,7 +3039,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_oversampling**\ (\ font_rid\: :ref:`RID<class_RID>`, oversampling\: :ref:`float<class_float>`\ ) :ref:`🔗<class_TextServer_method_font_set_oversampling>`
 
-如果设为正数，则会覆盖使用该字体的视口的过采样系数。见 :ref:`Viewport.oversampling<class_Viewport_property_oversampling>`\ 。该值不会覆盖 ``draw_*`` 方法的 ``oversampling`` 参数。仅适用于动态字体。
+If set to a positive value, overrides the oversampling factor of the viewport this font is used in. See :ref:`Viewport.oversampling<class_Viewport_property_oversampling>`. This value doesn't override the ``oversampling`` parameter of ``draw_*`` methods. Used by dynamic fonts only.
 
 .. rst-class:: classref-item-separator
 
@@ -3051,7 +3051,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_scale**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`, scale\: :ref:`float<class_float>`\ ) :ref:`🔗<class_TextServer_method_font_set_scale>`
 
-设置彩色位图字体的缩放系数。
+Sets scaling factor of the color bitmap font.
 
 .. rst-class:: classref-item-separator
 
@@ -3063,7 +3063,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_script_support_override**\ (\ font_rid\: :ref:`RID<class_RID>`, script\: :ref:`String<class_String>`, supported\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TextServer_method_font_set_script_support_override>`
 
-为 :ref:`font_is_script_supported()<class_TextServer_method_font_is_script_supported>` 添加覆盖。
+Adds override for :ref:`font_is_script_supported()<class_TextServer_method_font_is_script_supported>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3075,7 +3075,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_spacing**\ (\ font_rid\: :ref:`RID<class_RID>`, spacing\: :ref:`SpacingType<enum_TextServer_SpacingType>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextServer_method_font_set_spacing>`
 
-将 ``spacing`` 的间距设置为 ``value``\ ，单位为像素（与字体大小无关）。
+Sets the spacing for ``spacing`` to ``value`` in pixels (not relative to the font size).
 
 .. rst-class:: classref-item-separator
 
@@ -3087,9 +3087,9 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_stretch**\ (\ font_rid\: :ref:`RID<class_RID>`, weight\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextServer_method_font_set_stretch>`
 
-设置字体相对于普通宽度的拉伸量，是在 ``50%`` 和 ``200%`` 之间的百分比值。
+Sets font stretch amount, compared to a normal width. A percentage value between ``50%`` and ``200%``.
 
-\ **注意：**\ 这个值仅用于匹配字体，不会影响字体的渲染。请改用 :ref:`font_set_face_index()<class_TextServer_method_font_set_face_index>`\ 、\ :ref:`font_set_variation_coordinates()<class_TextServer_method_font_set_variation_coordinates>` 或 :ref:`font_set_transform()<class_TextServer_method_font_set_transform>`\ 。
+\ **Note:** This value is used for font matching only and will not affect font rendering. Use :ref:`font_set_face_index()<class_TextServer_method_font_set_face_index>`, :ref:`font_set_variation_coordinates()<class_TextServer_method_font_set_variation_coordinates>`, or :ref:`font_set_transform()<class_TextServer_method_font_set_transform>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -3101,9 +3101,9 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_style**\ (\ font_rid\: :ref:`RID<class_RID>`, style\: |bitfield|\[:ref:`FontStyle<enum_TextServer_FontStyle>`\]\ ) :ref:`🔗<class_TextServer_method_font_set_style>`
 
-设置字体样式标志。
+Sets the font style flags.
 
-\ **注意：**\ 这个值仅用于匹配字体，不会影响字体的渲染。请改用 :ref:`font_set_face_index()<class_TextServer_method_font_set_face_index>`\ 、\ :ref:`font_set_variation_coordinates()<class_TextServer_method_font_set_variation_coordinates>`\ 、\ :ref:`font_set_embolden()<class_TextServer_method_font_set_embolden>` 或 :ref:`font_set_transform()<class_TextServer_method_font_set_transform>`\ 。
+\ **Note:** This value is used for font matching only and will not affect font rendering. Use :ref:`font_set_face_index()<class_TextServer_method_font_set_face_index>`, :ref:`font_set_variation_coordinates()<class_TextServer_method_font_set_variation_coordinates>`, :ref:`font_set_embolden()<class_TextServer_method_font_set_embolden>`, or :ref:`font_set_transform()<class_TextServer_method_font_set_transform>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -3115,7 +3115,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_style_name**\ (\ font_rid\: :ref:`RID<class_RID>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TextServer_method_font_set_style_name>`
 
-设置字体的样式名称。
+Sets the font style name.
 
 .. rst-class:: classref-item-separator
 
@@ -3127,7 +3127,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_subpixel_positioning**\ (\ font_rid\: :ref:`RID<class_RID>`, subpixel_positioning\: :ref:`SubpixelPositioning<enum_TextServer_SubpixelPositioning>`\ ) :ref:`🔗<class_TextServer_method_font_set_subpixel_positioning>`
 
-设置字体的次像素字形定位模式。
+Sets font subpixel glyph positioning mode.
 
 .. rst-class:: classref-item-separator
 
@@ -3139,7 +3139,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_texture_image**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`, texture_index\: :ref:`int<class_int>`, image\: :ref:`Image<class_Image>`\ ) :ref:`🔗<class_TextServer_method_font_set_texture_image>`
 
-设置字体的缓存纹理图像数据。
+Sets font cache texture image data.
 
 .. rst-class:: classref-item-separator
 
@@ -3151,7 +3151,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_texture_offsets**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`Vector2i<class_Vector2i>`, texture_index\: :ref:`int<class_int>`, offset\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_TextServer_method_font_set_texture_offsets>`
 
-设置包含字形打包数据的数组。
+Sets array containing glyph packing data.
 
 .. rst-class:: classref-item-separator
 
@@ -3163,9 +3163,9 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_transform**\ (\ font_rid\: :ref:`RID<class_RID>`, transform\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_TextServer_method_font_set_transform>`
 
-设置应用于字体轮廓的 2D 变换，可用于倾斜、翻转和旋转字形。
+Sets 2D transform, applied to the font outlines, can be used for slanting, flipping, and rotating glyphs.
 
-例如，要通过倾斜来模拟斜体字体，请应用以下变换 ``Transform2D(1.0, slant, 0.0, 1.0, 0.0, 0.0)``\ 。
+For example, to simulate italic typeface by slanting, apply the following transform ``Transform2D(1.0, slant, 0.0, 1.0, 0.0, 0.0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -3177,7 +3177,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_underline_position**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`, underline_position\: :ref:`float<class_float>`\ ) :ref:`🔗<class_TextServer_method_font_set_underline_position>`
 
-设置基线下方下划线的像素偏移。
+Sets pixel offset of the underline below the baseline.
 
 .. rst-class:: classref-item-separator
 
@@ -3189,7 +3189,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_underline_thickness**\ (\ font_rid\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`, underline_thickness\: :ref:`float<class_float>`\ ) :ref:`🔗<class_TextServer_method_font_set_underline_thickness>`
 
-设置下划线的粗细度，单位为像素。
+Sets thickness of the underline in pixels.
 
 .. rst-class:: classref-item-separator
 
@@ -3201,7 +3201,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_variation_coordinates**\ (\ font_rid\: :ref:`RID<class_RID>`, variation_coordinates\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_TextServer_method_font_set_variation_coordinates>`
 
-为指定的字体缓存条目设置变体坐标。详见 :ref:`font_supported_variation_list()<class_TextServer_method_font_supported_variation_list>`\ 。
+Sets variation coordinates for the specified font cache entry. See :ref:`font_supported_variation_list()<class_TextServer_method_font_supported_variation_list>` for more info.
 
 .. rst-class:: classref-item-separator
 
@@ -3213,9 +3213,9 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **font_set_weight**\ (\ font_rid\: :ref:`RID<class_RID>`, weight\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextServer_method_font_set_weight>`
 
-设置字体的字重（粗度）。字重是在 ``100...999`` 范围内的值，普通字重为 ``400``\ ，粗体字重为 ``700``\ 。
+Sets weight (boldness) of the font. A value in the ``100...999`` range, normal font weight is ``400``, bold font weight is ``700``.
 
-\ **注意：**\ 这个值仅用于匹配字体，不会影响字体的渲染。请改用 :ref:`font_set_face_index()<class_TextServer_method_font_set_face_index>`\ 、\ :ref:`font_set_variation_coordinates()<class_TextServer_method_font_set_variation_coordinates>`\ 、\ :ref:`font_set_embolden()<class_TextServer_method_font_set_embolden>` 或 :ref:`font_set_transform()<class_TextServer_method_font_set_transform>`\ 。
+\ **Note:** This value is used for font matching only and will not affect font rendering. Use :ref:`font_set_face_index()<class_TextServer_method_font_set_face_index>`, :ref:`font_set_variation_coordinates()<class_TextServer_method_font_set_variation_coordinates>`, or :ref:`font_set_embolden()<class_TextServer_method_font_set_embolden>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -3227,7 +3227,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 :ref:`Dictionary<class_Dictionary>` **font_supported_feature_list**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_supported_feature_list>`
 
-返回支持的 OpenType 特性的字典。
+Returns the dictionary of the supported OpenType features.
 
 .. rst-class:: classref-item-separator
 
@@ -3239,7 +3239,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 :ref:`Dictionary<class_Dictionary>` **font_supported_variation_list**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_supported_variation_list>`
 
-返回支持的 OpenType 变体坐标的字典。
+Returns the dictionary of the supported OpenType variation coordinates.
 
 .. rst-class:: classref-item-separator
 
@@ -3251,7 +3251,7 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 :ref:`String<class_String>` **format_number**\ (\ number\: :ref:`String<class_String>`, language\: :ref:`String<class_String>` = ""\ ) |const| :ref:`🔗<class_TextServer_method_format_number>`
 
-**已弃用：** Use :ref:`TranslationServer.format_number()<class_TranslationServer_method_format_number>` instead.
+**Deprecated:** Use :ref:`TranslationServer.format_number()<class_TranslationServer_method_format_number>` instead.
 
 Converts a number from Western Arabic (0..9) to the numeral system used in the given ``language``.
 
@@ -3267,7 +3267,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 |void| **free_rid**\ (\ rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_TextServer_method_free_rid>`
 
-释放由该 **TextServer** 创建的某个对象。
+Frees an object created by this **TextServer**.
 
 .. rst-class:: classref-item-separator
 
@@ -3279,7 +3279,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`int<class_int>` **get_features**\ (\ ) |const| :ref:`🔗<class_TextServer_method_get_features>`
 
-返回文本服务器的功能，见 :ref:`Feature<enum_TextServer_Feature>`\ 。
+Returns text server features, see :ref:`Feature<enum_TextServer_Feature>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3291,7 +3291,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`Vector2<class_Vector2>` **get_hex_code_box_size**\ (\ size\: :ref:`int<class_int>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_get_hex_code_box_size>`
 
-返回替换字符的大小（在无效字符处绘制的带十六进制字符代码的框）。
+Returns size of the replacement character (box with character hexadecimal code that is drawn in place of invalid characters).
 
 .. rst-class:: classref-item-separator
 
@@ -3303,7 +3303,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`String<class_String>` **get_name**\ (\ ) |const| :ref:`🔗<class_TextServer_method_get_name>`
 
-返回该服务器接口的名称。
+Returns the name of the server interface.
 
 .. rst-class:: classref-item-separator
 
@@ -3315,7 +3315,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_support_data**\ (\ ) |const| :ref:`🔗<class_TextServer_method_get_support_data>`
 
-返回默认的 TextServer 数据库（例如 ICU 中断迭代器和字典）。
+Returns default TextServer database (e.g. ICU break iterators and dictionaries).
 
 .. rst-class:: classref-item-separator
 
@@ -3327,7 +3327,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`String<class_String>` **get_support_data_filename**\ (\ ) |const| :ref:`🔗<class_TextServer_method_get_support_data_filename>`
 
-返回默认的 TextServer 数据库（例如 ICU 中断迭代器和字典）文件名。
+Returns default TextServer database (e.g. ICU break iterators and dictionaries) filename.
 
 .. rst-class:: classref-item-separator
 
@@ -3339,7 +3339,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`String<class_String>` **get_support_data_info**\ (\ ) |const| :ref:`🔗<class_TextServer_method_get_support_data_info>`
 
-返回 TextServer 数据库（例如 ICU 中断迭代器和字典）的描述。
+Returns TextServer database (e.g. ICU break iterators and dictionaries) description.
 
 .. rst-class:: classref-item-separator
 
@@ -3351,7 +3351,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`bool<class_bool>` **has**\ (\ rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_TextServer_method_has>`
 
-如果 ``rid`` 是该文本服务器拥有的有效资源，则返回 ``true``\ 。
+Returns ``true`` if ``rid`` is valid resource owned by this text server.
 
 .. rst-class:: classref-item-separator
 
@@ -3363,7 +3363,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`bool<class_bool>` **has_feature**\ (\ feature\: :ref:`Feature<enum_TextServer_Feature>`\ ) |const| :ref:`🔗<class_TextServer_method_has_feature>`
 
-如果服务器支持某个功能，则返回 ``true``\ 。
+Returns ``true`` if the server supports a feature.
 
 .. rst-class:: classref-item-separator
 
@@ -3375,11 +3375,11 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`int<class_int>` **is_confusable**\ (\ string\: :ref:`String<class_String>`, dict\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |const| :ref:`🔗<class_TextServer_method_is_confusable>`
 
-返回 ``dict`` 中可能与 ``string`` 发生视觉混淆的第一个字符串的索引，如果没有找到则返回 ``-1``\ 。
+Returns index of the first string in ``dict`` which is visually confusable with the ``string``, or ``-1`` if none is found.
 
-\ **注意：**\ 这个方法不检测不可见字符，要进行欺骗性检测，请与 :ref:`spoof_check()<class_TextServer_method_spoof_check>` 结合使用。
+\ **Note:** This method doesn't detect invisible characters, for spoof detection use it in combination with :ref:`spoof_check()<class_TextServer_method_spoof_check>`.
 
-\ **注意：**\ 如果该服务器不支持 :ref:`FEATURE_UNICODE_SECURITY<class_TextServer_constant_FEATURE_UNICODE_SECURITY>` 特性，则始终返回 ``-1``\ 。
+\ **Note:** Always returns ``-1`` if the server does not support the :ref:`FEATURE_UNICODE_SECURITY<class_TextServer_constant_FEATURE_UNICODE_SECURITY>` feature.
 
 .. rst-class:: classref-item-separator
 
@@ -3391,7 +3391,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`bool<class_bool>` **is_locale_right_to_left**\ (\ locale\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServer_method_is_locale_right_to_left>`
 
-如果区域设置为从右至左，则返回 ``true``\ 。
+Returns ``true`` if locale is right-to-left.
 
 .. rst-class:: classref-item-separator
 
@@ -3415,23 +3415,23 @@ Returns ``true`` if the locale requires text server support data for line/word b
 
 :ref:`bool<class_bool>` **is_valid_identifier**\ (\ string\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServer_method_is_valid_identifier>`
 
-如果 ``string`` 为有效的标识符，则返回 ``true``\ 。
+Returns ``true`` if ``string`` is a valid identifier.
 
-如果文字服务器支持 :ref:`FEATURE_UNICODE_IDENTIFIERS<class_TextServer_constant_FEATURE_UNICODE_IDENTIFIERS>` 特性，则有效的标识符必须：
+If the text server supports the :ref:`FEATURE_UNICODE_IDENTIFIERS<class_TextServer_constant_FEATURE_UNICODE_IDENTIFIERS>` feature, a valid identifier must:
 
-- 遵循 C 范式。
+- Conform to normalization form C.
 
-- 开头是 XID_Start 类的 Unicode 字符或 ``"_"``\ 。
+- Begin with a Unicode character of class XID_Start or ``"_"``.
 
-- 其他位置可以包含 XID_Continue 类的 Unicode 字符。
+- May contain Unicode characters of class XID_Continue in the other positions.
 
-- 仅使用 UAX #31 推荐的文字（允许混合文字）。
+- Use UAX #31 recommended scripts only (mixed scripts are allowed).
 
-如果不支持 :ref:`FEATURE_UNICODE_IDENTIFIERS<class_TextServer_constant_FEATURE_UNICODE_IDENTIFIERS>` 特性，则有效的标识符必须：
+If the :ref:`FEATURE_UNICODE_IDENTIFIERS<class_TextServer_constant_FEATURE_UNICODE_IDENTIFIERS>` feature is not supported, a valid identifier must:
 
-- 开头是 XID_Start 类的 Unicode 字符或 ``"_"``\ 。
+- Begin with a Unicode character of class XID_Start or ``"_"``.
 
-- 其他位置可以包含 XID_Continue 类的 Unicode 字符。
+- May contain Unicode characters of class XID_Continue in the other positions.
 
 .. rst-class:: classref-item-separator
 
@@ -3443,7 +3443,7 @@ Returns ``true`` if the locale requires text server support data for line/word b
 
 :ref:`bool<class_bool>` **is_valid_letter**\ (\ unicode\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_is_valid_letter>`
 
-如果给定的码位是有效的字母，即属于 Unicode 的“L”分类，则返回 ``true``\ 。
+Returns ``true`` if the given code point is a valid letter, i.e. it belongs to the Unicode category "L".
 
 .. rst-class:: classref-item-separator
 
@@ -3455,9 +3455,9 @@ Returns ``true`` if the locale requires text server support data for line/word b
 
 :ref:`bool<class_bool>` **load_support_data**\ (\ filename\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TextServer_method_load_support_data>`
 
-加载可选的 TextServer 数据库（例如 ICU 断字迭代器和字典）。
+Loads optional TextServer database (e.g. ICU break iterators and dictionaries).
 
-\ **注意：**\ 这个函数应该在使用任何其他 TextServer 函数之前调用，否则不会起任何作用。
+\ **Note:** This function should be called before any other TextServer functions used, otherwise it won't have any effect.
 
 .. rst-class:: classref-item-separator
 
@@ -3481,7 +3481,7 @@ Converts the given readable name of a feature, variation, script, or language to
 
 :ref:`String<class_String>` **parse_number**\ (\ number\: :ref:`String<class_String>`, language\: :ref:`String<class_String>` = ""\ ) |const| :ref:`🔗<class_TextServer_method_parse_number>`
 
-**已弃用：** Use :ref:`TranslationServer.parse_number()<class_TranslationServer_method_parse_number>` instead.
+**Deprecated:** Use :ref:`TranslationServer.parse_number()<class_TranslationServer_method_parse_number>` instead.
 
 Converts ``number`` from the numeral system used in the given ``language`` to Western Arabic (0..9).
 
@@ -3497,7 +3497,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **parse_structured_text**\ (\ parser_type\: :ref:`StructuredTextParser<enum_TextServer_StructuredTextParser>`, args\: :ref:`Array<class_Array>`, text\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServer_method_parse_structured_text>`
 
-BiDi 算法覆盖函数的默认实现。
+Default implementation of the BiDi algorithm override function.
 
 .. rst-class:: classref-item-separator
 
@@ -3509,7 +3509,7 @@ BiDi 算法覆盖函数的默认实现。
 
 :ref:`String<class_String>` **percent_sign**\ (\ language\: :ref:`String<class_String>` = ""\ ) |const| :ref:`🔗<class_TextServer_method_percent_sign>`
 
-**已弃用：** Use :ref:`TranslationServer.get_percent_sign()<class_TranslationServer_method_get_percent_sign>` instead.
+**Deprecated:** Use :ref:`TranslationServer.get_percent_sign()<class_TranslationServer_method_get_percent_sign>` instead.
 
 Returns the percent sign used in the given ``language``.
 
@@ -3525,9 +3525,9 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`bool<class_bool>` **save_support_data**\ (\ filename\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServer_method_save_support_data>`
 
-将可选的 TextServer 数据库（例如 ICU 断字迭代器和字典）保存到文件中。
+Saves optional TextServer database (e.g. ICU break iterators and dictionaries) to the file.
 
-\ **注意：**\ 这个函数在导出项目时会用到，用于包含 TextServer 数据库。
+\ **Note:** This function is used by during project export, to include TextServer database.
 
 .. rst-class:: classref-item-separator
 
@@ -3539,7 +3539,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`int<class_int>` **shaped_get_run_count**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_get_run_count>`
 
-返回缓冲中统一文本行程的个数。
+Returns the number of uniform text runs in the buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -3551,7 +3551,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`Direction<enum_TextServer_Direction>` **shaped_get_run_direction**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_get_run_direction>`
 
-返回索引为 ``index`` 的文本行程（按显示顺序）的方向。
+Returns the direction of the ``index`` text run (in visual order).
 
 .. rst-class:: classref-item-separator
 
@@ -3563,7 +3563,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`RID<class_RID>` **shaped_get_run_font_rid**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_get_run_font_rid>`
 
-返回索引为 ``index`` 的文本行程（按显示顺序）的字体 RID。
+Returns the font RID of the ``index`` text run (in visual order).
 
 .. rst-class:: classref-item-separator
 
@@ -3575,7 +3575,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`int<class_int>` **shaped_get_run_font_size**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_get_run_font_size>`
 
-返回索引为 ``index`` 的文本行程（按显示顺序）的字体大小。
+Returns the font size of the ``index`` text run (in visual order).
 
 .. rst-class:: classref-item-separator
 
@@ -3587,7 +3587,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`String<class_String>` **shaped_get_run_language**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_get_run_language>`
 
-返回索引为 ``index`` 的文本行程（按显示顺序）的语言。
+Returns the language of the ``index`` text run (in visual order).
 
 .. rst-class:: classref-item-separator
 
@@ -3599,7 +3599,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`Variant<class_Variant>` **shaped_get_run_object**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_get_run_object>`
 
-返回索引为 ``index`` 的文本行程（按显示顺序）的内嵌对象。
+Returns the embedded object of the ``index`` text run (in visual order).
 
 .. rst-class:: classref-item-separator
 
@@ -3611,7 +3611,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`Vector2i<class_Vector2i>` **shaped_get_run_range**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_get_run_range>`
 
-返回索引为 ``index`` 的文本行程（按显示顺序）的源文本范围。
+Returns the source text range of the ``index`` text run (in visual order).
 
 .. rst-class:: classref-item-separator
 
@@ -3623,7 +3623,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`String<class_String>` **shaped_get_run_text**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_get_run_text>`
 
-返回索引为 ``index`` 的文本行程（按显示顺序）的源文本。
+Returns the source text of the ``index`` text run (in visual order).
 
 .. rst-class:: classref-item-separator
 
@@ -3635,7 +3635,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`int<class_int>` **shaped_get_span_count**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_get_span_count>`
 
-返回使用 :ref:`shaped_text_add_string()<class_TextServer_method_shaped_text_add_string>` 或 :ref:`shaped_text_add_object()<class_TextServer_method_shaped_text_add_object>` 添加的文本区间的数量。
+Returns number of text spans added using :ref:`shaped_text_add_string()<class_TextServer_method_shaped_text_add_string>` or :ref:`shaped_text_add_object()<class_TextServer_method_shaped_text_add_object>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3647,7 +3647,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`Variant<class_Variant>` **shaped_get_span_embedded_object**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_get_span_embedded_object>`
 
-返回文本内嵌对象的键。
+Returns text embedded object key.
 
 .. rst-class:: classref-item-separator
 
@@ -3659,7 +3659,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`Variant<class_Variant>` **shaped_get_span_meta**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_get_span_meta>`
 
-返回文本区间的元数据。
+Returns text span metadata.
 
 .. rst-class:: classref-item-separator
 
@@ -3671,7 +3671,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`Variant<class_Variant>` **shaped_get_span_object**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_get_span_object>`
 
-返回文本区间内嵌对象的键。
+Returns the text span embedded object key.
 
 .. rst-class:: classref-item-separator
 
@@ -3683,7 +3683,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`String<class_String>` **shaped_get_span_text**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_get_span_text>`
 
-返回文本区间的源文本。
+Returns the text span source text.
 
 .. rst-class:: classref-item-separator
 
@@ -3695,7 +3695,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`String<class_String>` **shaped_get_text**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_get_text>`
 
-返回文本缓冲的源文本，包含对象替换字符。
+Returns the text buffer source text, including object replacement characters.
 
 .. rst-class:: classref-item-separator
 
@@ -3707,7 +3707,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 |void| **shaped_set_span_update_font**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`, fonts\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\], size\: :ref:`int<class_int>`, opentype_features\: :ref:`Dictionary<class_Dictionary>` = {}\ ) :ref:`🔗<class_TextServer_method_shaped_set_span_update_font>`
 
-在不更改文本的情况下，更改文本区间的字体、字体大小和 OpenType 特性。
+Changes text span font, font size, and OpenType features, without changing the text.
 
 .. rst-class:: classref-item-separator
 
@@ -3719,7 +3719,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`bool<class_bool>` **shaped_text_add_object**\ (\ shaped\: :ref:`RID<class_RID>`, key\: :ref:`Variant<class_Variant>`, size\: :ref:`Vector2<class_Vector2>`, inline_align\: :ref:`InlineAlignment<enum_@GlobalScope_InlineAlignment>` = 5, length\: :ref:`int<class_int>` = 1, baseline\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_TextServer_method_shaped_text_add_object>`
 
-向文本缓冲中添加内联对象，\ ``key`` 必须唯一。在文本中，对象使用 ``length`` 个对象替换字符表示。
+Adds inline object to the text buffer, ``key`` must be unique. In the text, object is represented as ``length`` object replacement characters.
 
 .. rst-class:: classref-item-separator
 
@@ -3731,7 +3731,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`bool<class_bool>` **shaped_text_add_string**\ (\ shaped\: :ref:`RID<class_RID>`, text\: :ref:`String<class_String>`, fonts\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\], size\: :ref:`int<class_int>`, opentype_features\: :ref:`Dictionary<class_Dictionary>` = {}, language\: :ref:`String<class_String>` = "", meta\: :ref:`Variant<class_Variant>` = null\ ) :ref:`🔗<class_TextServer_method_shaped_text_add_string>`
 
-添加文本区间和字体，将其绘制到文本缓冲中。
+Adds text span and font to draw it to the text buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -3743,7 +3743,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 |void| **shaped_text_clear**\ (\ rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_TextServer_method_shaped_text_clear>`
 
-清空文本缓冲（移除文本和内联对象）。
+Clears text buffer (removes text and inline objects).
 
 .. rst-class:: classref-item-separator
 
@@ -3755,7 +3755,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`int<class_int>` **shaped_text_closest_character_pos**\ (\ shaped\: :ref:`RID<class_RID>`, pos\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_closest_character_pos>`
 
-返回距离 ``pos`` 最近的组合字符位置。
+Returns composite character position closest to the ``pos``.
 
 .. rst-class:: classref-item-separator
 
@@ -3767,9 +3767,9 @@ If ``language`` is an empty string, the active locale will be used.
 
 |void| **shaped_text_draw**\ (\ shaped\: :ref:`RID<class_RID>`, canvas\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, clip_l\: :ref:`float<class_float>` = -1, clip_r\: :ref:`float<class_float>` = -1, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_draw>`
 
-在画布项的给定位置绘制塑形后的文本，颜色为 ``color``\ 。\ ``pos`` 指定的是基线的最左侧（横向排版）或基线的最顶部（纵向排版）。如果 ``oversampling`` 大于零则会用作字体过采样系数，否则使用视口的过采样设置。
+Draw shaped text into a canvas item at a given position, with ``color``. ``pos`` specifies the leftmost point of the baseline (for horizontal layout) or topmost point of the baseline (for vertical layout). If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
 
-\ ``clip_l`` 和 ``clip_r`` 是相对于 ``pos`` 的偏移量，横向排版时朝右、纵向排版时朝下。如果 ``clip_l`` 非负数，则会裁剪在偏移量之前开始的字形。如果 ``clip_r`` 非负数，则会裁剪在偏移量之后结束的字形。
+\ ``clip_l`` and ``clip_r`` are offsets relative to ``pos``, going to the right in horizontal layout and downward in vertical layout. If ``clip_l`` is not negative, glyphs starting before the offset are clipped. If ``clip_r`` is not negative, glyphs ending after the offset are clipped.
 
 .. rst-class:: classref-item-separator
 
@@ -3781,9 +3781,9 @@ If ``language`` is an empty string, the active locale will be used.
 
 |void| **shaped_text_draw_outline**\ (\ shaped\: :ref:`RID<class_RID>`, canvas\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, clip_l\: :ref:`float<class_float>` = -1, clip_r\: :ref:`float<class_float>` = -1, outline_size\: :ref:`int<class_int>` = 1, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_draw_outline>`
 
-在画布项的给定位置绘制塑形后的文本轮廓，颜色为 ``color``\ 。\ ``pos`` 指定的是基线的最左侧（横向排版）或基线的最顶部（纵向排版）。如果 ``oversampling`` 大于零则会用作字体过采样系数，否则使用视口的过采样设置。
+Draw the outline of the shaped text into a canvas item at a given position, with ``color``. ``pos`` specifies the leftmost point of the baseline (for horizontal layout) or topmost point of the baseline (for vertical layout). If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
 
-\ ``clip_l`` 和 ``clip_r`` 是相对于 ``pos`` 的偏移量，横向排版时朝右、纵向排版时朝下。如果 ``clip_l`` 非负数，则会裁剪在偏移量之前开始的字形。如果 ``clip_r`` 非负数，则会裁剪在偏移量之后结束的字形。
+\ ``clip_l`` and ``clip_r`` are offsets relative to ``pos``, going to the right in horizontal layout and downward in vertical layout. If ``clip_l`` is not negative, glyphs starting before the offset are clipped. If ``clip_r`` is not negative, glyphs ending after the offset are clipped.
 
 .. rst-class:: classref-item-separator
 
@@ -3807,7 +3807,7 @@ Duplicates shaped text buffer.
 
 :ref:`float<class_float>` **shaped_text_fit_to_width**\ (\ shaped\: :ref:`RID<class_RID>`, width\: :ref:`float<class_float>`, justification_flags\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] = 3\ ) :ref:`🔗<class_TextServer_method_shaped_text_fit_to_width>`
 
-两端对齐文本以适合指定宽度，返回新的文本宽度。
+Adjusts text width to fit to specified width, returns new text width.
 
 .. rst-class:: classref-item-separator
 
@@ -3819,9 +3819,9 @@ Duplicates shaped text buffer.
 
 :ref:`float<class_float>` **shaped_text_get_ascent**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_ascent>`
 
-返回文本上高（水平布局基线上方的像素数，或垂直布局基线左侧的像素数）。
+Returns the text ascent (number of pixels above the baseline for horizontal layout or to the left of baseline for vertical).
 
-\ **注意：**\ 如果某些字形偏离基线，则总体上高可能高于字体上高。
+\ **Note:** Overall ascent can be higher than font ascent, if some glyphs are displaced from the baseline.
 
 .. rst-class:: classref-item-separator
 
@@ -3833,7 +3833,7 @@ Duplicates shaped text buffer.
 
 :ref:`Dictionary<class_Dictionary>` **shaped_text_get_carets**\ (\ shaped\: :ref:`RID<class_RID>`, position\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_carets>`
 
-返回与文本中字符偏移 ``position`` 对应的文本光标的形状。返回的光标形状是宽度为 1 像素的矩形。
+Returns shapes of the carets corresponding to the character offset ``position`` in the text. Returned caret shape is 1 pixel wide rectangle.
 
 .. rst-class:: classref-item-separator
 
@@ -3845,7 +3845,7 @@ Duplicates shaped text buffer.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **shaped_text_get_character_breaks**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_character_breaks>`
 
-返回组合字符边界的数组。
+Returns array of the composite character boundaries.
 
 .. rst-class:: classref-item-separator
 
@@ -3857,7 +3857,7 @@ Duplicates shaped text buffer.
 
 :ref:`int<class_int>` **shaped_text_get_custom_ellipsis**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_custom_ellipsis>`
 
-返回文字裁剪时使用的省略字符。
+Returns ellipsis character used for text clipping.
 
 .. rst-class:: classref-item-separator
 
@@ -3869,7 +3869,7 @@ Duplicates shaped text buffer.
 
 :ref:`String<class_String>` **shaped_text_get_custom_punctuation**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_custom_punctuation>`
 
-返回自定义标点字符列表，用于断字。如果被设置为空字符串，则使用服务器的默认值。
+Returns custom punctuation character list, used for word breaking. If set to empty string, server defaults are used.
 
 .. rst-class:: classref-item-separator
 
@@ -3881,9 +3881,9 @@ Duplicates shaped text buffer.
 
 :ref:`float<class_float>` **shaped_text_get_descent**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_descent>`
 
-返回文本下深（水平布局基线下方的像素数，或垂直布局基线右侧的像素数）。
+Returns the text descent (number of pixels below the baseline for horizontal layout or to the right of baseline for vertical).
 
-\ **注意：**\ 如果某些字形偏离基线，则总体下深可能高于字体下深。
+\ **Note:** Overall descent can be higher than font descent, if some glyphs are displaced from the baseline.
 
 .. rst-class:: classref-item-separator
 
@@ -3895,7 +3895,7 @@ Duplicates shaped text buffer.
 
 :ref:`Direction<enum_TextServer_Direction>` **shaped_text_get_direction**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_direction>`
 
-返回文本的方向。
+Returns direction of the text.
 
 .. rst-class:: classref-item-separator
 
@@ -3907,7 +3907,7 @@ Duplicates shaped text buffer.
 
 :ref:`Direction<enum_TextServer_Direction>` **shaped_text_get_dominant_direction_in_range**\ (\ shaped\: :ref:`RID<class_RID>`, start\: :ref:`int<class_int>`, end\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_dominant_direction_in_range>`
 
-返回文本范围内的主要书写方向。
+Returns dominant direction of in the range of text.
 
 .. rst-class:: classref-item-separator
 
@@ -3919,7 +3919,7 @@ Duplicates shaped text buffer.
 
 :ref:`int<class_int>` **shaped_text_get_ellipsis_glyph_count**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_ellipsis_glyph_count>`
 
-返回省略号中的字形数。
+Returns number of glyphs in the ellipsis.
 
 .. rst-class:: classref-item-separator
 
@@ -3931,7 +3931,7 @@ Duplicates shaped text buffer.
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **shaped_text_get_ellipsis_glyphs**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_ellipsis_glyphs>`
 
-返回省略号中的字形数组。
+Returns array of the glyphs in the ellipsis.
 
 .. rst-class:: classref-item-separator
 
@@ -3943,7 +3943,7 @@ Duplicates shaped text buffer.
 
 :ref:`int<class_int>` **shaped_text_get_ellipsis_pos**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_ellipsis_pos>`
 
-返回省略号的位置。
+Returns position of the ellipsis.
 
 .. rst-class:: classref-item-separator
 
@@ -3955,7 +3955,7 @@ Duplicates shaped text buffer.
 
 :ref:`int<class_int>` **shaped_text_get_glyph_count**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_glyph_count>`
 
-返回缓冲区中的字形数。
+Returns number of glyphs in the buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -3967,7 +3967,7 @@ Duplicates shaped text buffer.
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **shaped_text_get_glyphs**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_glyphs>`
 
-返回字形数组，按视觉顺序排序。
+Returns an array of glyphs in the visual order.
 
 .. rst-class:: classref-item-separator
 
@@ -3979,7 +3979,7 @@ Duplicates shaped text buffer.
 
 :ref:`Vector2<class_Vector2>` **shaped_text_get_grapheme_bounds**\ (\ shaped\: :ref:`RID<class_RID>`, pos\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_grapheme_bounds>`
 
-将复合字符的边界返回为距行首的偏移量。
+Returns composite character's bounds as offsets from the start of the line.
 
 .. rst-class:: classref-item-separator
 
@@ -3991,7 +3991,7 @@ Duplicates shaped text buffer.
 
 :ref:`Direction<enum_TextServer_Direction>` **shaped_text_get_inferred_direction**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_inferred_direction>`
 
-返回由 BiDi 算法推断的文本书写方向。
+Returns direction of the text, inferred by the BiDi algorithm.
 
 .. rst-class:: classref-item-separator
 
@@ -4003,7 +4003,7 @@ Duplicates shaped text buffer.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **shaped_text_get_line_breaks**\ (\ shaped\: :ref:`RID<class_RID>`, width\: :ref:`float<class_float>`, start\: :ref:`int<class_int>` = 0, break_flags\: |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\] = 3\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_line_breaks>`
 
-对文本进行断行，返回每一行的字符范围。
+Breaks text to the lines and returns character ranges for each line.
 
 .. rst-class:: classref-item-separator
 
@@ -4015,7 +4015,7 @@ Duplicates shaped text buffer.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **shaped_text_get_line_breaks_adv**\ (\ shaped\: :ref:`RID<class_RID>`, width\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`, start\: :ref:`int<class_int>` = 0, once\: :ref:`bool<class_bool>` = true, break_flags\: |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\] = 3\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_line_breaks_adv>`
 
-将文本拆分为行和列。返回每段的字符范围。
+Breaks text to the lines and columns. Returns character ranges for each segment.
 
 .. rst-class:: classref-item-separator
 
@@ -4027,7 +4027,7 @@ Duplicates shaped text buffer.
 
 :ref:`int<class_int>` **shaped_text_get_object_glyph**\ (\ shaped\: :ref:`RID<class_RID>`, key\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_object_glyph>`
 
-返回内联对象的字形索引。
+Returns the glyph index of the inline object.
 
 .. rst-class:: classref-item-separator
 
@@ -4039,7 +4039,7 @@ Duplicates shaped text buffer.
 
 :ref:`Vector2i<class_Vector2i>` **shaped_text_get_object_range**\ (\ shaped\: :ref:`RID<class_RID>`, key\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_object_range>`
 
-返回内联对象的字符范围。
+Returns the character range of the inline object.
 
 .. rst-class:: classref-item-separator
 
@@ -4051,7 +4051,7 @@ Duplicates shaped text buffer.
 
 :ref:`Rect2<class_Rect2>` **shaped_text_get_object_rect**\ (\ shaped\: :ref:`RID<class_RID>`, key\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_object_rect>`
 
-返回内联对象的边界矩形。
+Returns bounding rectangle of the inline object.
 
 .. rst-class:: classref-item-separator
 
@@ -4063,7 +4063,7 @@ Duplicates shaped text buffer.
 
 :ref:`Array<class_Array>` **shaped_text_get_objects**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_objects>`
 
-返回内联对象的数组。
+Returns array of inline objects.
 
 .. rst-class:: classref-item-separator
 
@@ -4075,7 +4075,7 @@ Duplicates shaped text buffer.
 
 :ref:`Orientation<enum_TextServer_Orientation>` **shaped_text_get_orientation**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_orientation>`
 
-返回文本朝向。
+Returns text orientation.
 
 .. rst-class:: classref-item-separator
 
@@ -4087,7 +4087,7 @@ Duplicates shaped text buffer.
 
 :ref:`RID<class_RID>` **shaped_text_get_parent**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_parent>`
 
-返回子字符串源自哪个父缓冲区。
+Returns the parent buffer from which the substring originates.
 
 .. rst-class:: classref-item-separator
 
@@ -4099,7 +4099,7 @@ Duplicates shaped text buffer.
 
 :ref:`bool<class_bool>` **shaped_text_get_preserve_control**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_preserve_control>`
 
-如果文本缓冲区被配置为显示控制字符，则返回 ``true``\ 。
+Returns ``true`` if text buffer is configured to display control characters.
 
 .. rst-class:: classref-item-separator
 
@@ -4111,9 +4111,9 @@ Duplicates shaped text buffer.
 
 :ref:`bool<class_bool>` **shaped_text_get_preserve_invalid**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_preserve_invalid>`
 
-如果文本缓冲区被配置为在无效字符处显示十六进制代码，则返回 ``true``\ 。
+Returns ``true`` if text buffer is configured to display hexadecimal codes in place of invalid characters.
 
-\ **注意：**\ 如果设置为 ``false``\ ，则在无效字符处不显示任何内容。
+\ **Note:** If set to ``false``, nothing is displayed in place of invalid characters.
 
 .. rst-class:: classref-item-separator
 
@@ -4125,7 +4125,7 @@ Duplicates shaped text buffer.
 
 :ref:`Vector2i<class_Vector2i>` **shaped_text_get_range**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_range>`
 
-返回父缓冲区中子字符串缓冲区的字符范围。
+Returns substring buffer character range in the parent buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -4137,7 +4137,7 @@ Duplicates shaped text buffer.
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **shaped_text_get_selection**\ (\ shaped\: :ref:`RID<class_RID>`, start\: :ref:`int<class_int>`, end\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_selection>`
 
-返回用于指定字符范围的选区矩形。
+Returns selection rectangles for the specified character range.
 
 .. rst-class:: classref-item-separator
 
@@ -4149,7 +4149,7 @@ Duplicates shaped text buffer.
 
 :ref:`Vector2<class_Vector2>` **shaped_text_get_size**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_size>`
 
-返回该文本的大小。
+Returns size of the text.
 
 .. rst-class:: classref-item-separator
 
@@ -4161,7 +4161,7 @@ Duplicates shaped text buffer.
 
 :ref:`int<class_int>` **shaped_text_get_spacing**\ (\ shaped\: :ref:`RID<class_RID>`, spacing\: :ref:`SpacingType<enum_TextServer_SpacingType>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_spacing>`
 
-返回字形或行之间添加的额外间距，单位为像素。
+Returns extra spacing added between glyphs or lines in pixels.
 
 .. rst-class:: classref-item-separator
 
@@ -4173,7 +4173,7 @@ Duplicates shaped text buffer.
 
 :ref:`int<class_int>` **shaped_text_get_trim_pos**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_trim_pos>`
 
-返回超出修剪的位置。
+Returns the position of the overrun trim.
 
 .. rst-class:: classref-item-separator
 
@@ -4185,7 +4185,7 @@ Duplicates shaped text buffer.
 
 :ref:`float<class_float>` **shaped_text_get_underline_position**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_underline_position>`
 
-返回基线下方下划线的像素偏移。
+Returns pixel offset of the underline below the baseline.
 
 .. rst-class:: classref-item-separator
 
@@ -4197,7 +4197,7 @@ Duplicates shaped text buffer.
 
 :ref:`float<class_float>` **shaped_text_get_underline_thickness**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_underline_thickness>`
 
-返回下划线的粗细度。
+Returns thickness of the underline.
 
 .. rst-class:: classref-item-separator
 
@@ -4209,7 +4209,7 @@ Duplicates shaped text buffer.
 
 :ref:`float<class_float>` **shaped_text_get_width**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_width>`
 
-返回文本的宽度（对于水平排版）或高度（对于垂直排版）。
+Returns width (for horizontal layout) or height (for vertical) of the text.
 
 .. rst-class:: classref-item-separator
 
@@ -4221,7 +4221,7 @@ Duplicates shaped text buffer.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **shaped_text_get_word_breaks**\ (\ shaped\: :ref:`RID<class_RID>`, grapheme_flags\: |bitfield|\[:ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>`\] = 264, skip_grapheme_flags\: |bitfield|\[:ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>`\] = 4\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_get_word_breaks>`
 
-将文本分解成单词并返回字符范围的数组。请使用 ``grapheme_flags`` 来设置哪些字符会被用于分解。
+Breaks text into words and returns array of character ranges. Use ``grapheme_flags`` to set what characters are used for breaking.
 
 .. rst-class:: classref-item-separator
 
@@ -4245,7 +4245,7 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 :ref:`bool<class_bool>` **shaped_text_has_visible_chars**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_has_visible_chars>`
 
-如果文本缓冲区存在可显示字符，则返回 ``true``\ 。
+Returns ``true`` if text buffer contains any visible characters.
 
 .. rst-class:: classref-item-separator
 
@@ -4257,7 +4257,7 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 :ref:`int<class_int>` **shaped_text_hit_test_grapheme**\ (\ shaped\: :ref:`RID<class_RID>`, coords\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_hit_test_grapheme>`
 
-返回字素的索引，该字素位于基线上指定像素偏移的位置，如果没有找到，则返回 ``-1``\ 。
+Returns grapheme index at the specified pixel offset at the baseline, or ``-1`` if none is found.
 
 .. rst-class:: classref-item-separator
 
@@ -4269,7 +4269,7 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 :ref:`int<class_int>` **shaped_text_hit_test_position**\ (\ shaped\: :ref:`RID<class_RID>`, coords\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_hit_test_position>`
 
-返回基线处指定像素偏移处的文本光标的偏移量。该函数始终返回一个有效位置。
+Returns caret character offset at the specified pixel offset at the baseline. This function always returns a valid position.
 
 .. rst-class:: classref-item-separator
 
@@ -4281,7 +4281,7 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 :ref:`bool<class_bool>` **shaped_text_is_ready**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_is_ready>`
 
-如果缓冲区成功塑形，则返回 ``true``\ 。
+Returns ``true`` if buffer is successfully shaped.
 
 .. rst-class:: classref-item-separator
 
@@ -4293,7 +4293,7 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 :ref:`int<class_int>` **shaped_text_next_character_pos**\ (\ shaped\: :ref:`RID<class_RID>`, pos\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_next_character_pos>`
 
-返回距离 ``pos`` 最近的组合字符结束位置。
+Returns composite character end position closest to the ``pos``.
 
 .. rst-class:: classref-item-separator
 
@@ -4305,7 +4305,7 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 :ref:`int<class_int>` **shaped_text_next_grapheme_pos**\ (\ shaped\: :ref:`RID<class_RID>`, pos\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_next_grapheme_pos>`
 
-返回距离 ``pos`` 最近的字素结束位置。
+Returns grapheme end position closest to the ``pos``.
 
 .. rst-class:: classref-item-separator
 
@@ -4317,7 +4317,7 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 |void| **shaped_text_overrun_trim_to_width**\ (\ shaped\: :ref:`RID<class_RID>`, width\: :ref:`float<class_float>` = 0, overrun_trim_flags\: |bitfield|\[:ref:`TextOverrunFlag<enum_TextServer_TextOverrunFlag>`\] = 0\ ) :ref:`🔗<class_TextServer_method_shaped_text_overrun_trim_to_width>`
 
-如果文本超出给定宽度，则修剪文本。
+Trims text if it exceeds the given width.
 
 .. rst-class:: classref-item-separator
 
@@ -4329,7 +4329,7 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 :ref:`int<class_int>` **shaped_text_prev_character_pos**\ (\ shaped\: :ref:`RID<class_RID>`, pos\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_prev_character_pos>`
 
-返回距离 ``pos`` 最近的组合字符开始位置。
+Returns composite character start position closest to the ``pos``.
 
 .. rst-class:: classref-item-separator
 
@@ -4341,7 +4341,7 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 :ref:`int<class_int>` **shaped_text_prev_grapheme_pos**\ (\ shaped\: :ref:`RID<class_RID>`, pos\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_prev_grapheme_pos>`
 
-返回距离 ``pos`` 最近的字素开始位置。
+Returns grapheme start position closest to the ``pos``.
 
 .. rst-class:: classref-item-separator
 
@@ -4353,7 +4353,7 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 :ref:`bool<class_bool>` **shaped_text_resize_object**\ (\ shaped\: :ref:`RID<class_RID>`, key\: :ref:`Variant<class_Variant>`, size\: :ref:`Vector2<class_Vector2>`, inline_align\: :ref:`InlineAlignment<enum_@GlobalScope_InlineAlignment>` = 5, baseline\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_TextServer_method_shaped_text_resize_object>`
 
-设置嵌入对象的新大小和对齐方式。
+Sets new size and alignment of embedded object.
 
 .. rst-class:: classref-item-separator
 
@@ -4365,9 +4365,9 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 |void| **shaped_text_set_bidi_override**\ (\ shaped\: :ref:`RID<class_RID>`, override\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_TextServer_method_shaped_text_set_bidi_override>`
 
-覆盖用于结构化文本的 BiDi。
+Overrides BiDi for the structured text.
 
-覆盖范围应覆盖完整的源文本而没有重叠。BiDi 算法将分别被用于每个范围。
+Override ranges should cover full source text without overlaps. BiDi algorithm will be used on each range separately.
 
 .. rst-class:: classref-item-separator
 
@@ -4379,7 +4379,7 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 |void| **shaped_text_set_custom_ellipsis**\ (\ shaped\: :ref:`RID<class_RID>`, char\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextServer_method_shaped_text_set_custom_ellipsis>`
 
-设置文字裁剪时使用的省略字符。
+Sets ellipsis character used for text clipping.
 
 .. rst-class:: classref-item-separator
 
@@ -4391,7 +4391,7 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 |void| **shaped_text_set_custom_punctuation**\ (\ shaped\: :ref:`RID<class_RID>`, punct\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TextServer_method_shaped_text_set_custom_punctuation>`
 
-设置自定义标点字符列表，用于断字。如果被设置为空字符串，则使用服务器的默认值。
+Sets custom punctuation character list, used for word breaking. If set to empty string, server defaults are used.
 
 .. rst-class:: classref-item-separator
 
@@ -4403,9 +4403,9 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 |void| **shaped_text_set_direction**\ (\ shaped\: :ref:`RID<class_RID>`, direction\: :ref:`Direction<enum_TextServer_Direction>` = 0\ ) :ref:`🔗<class_TextServer_method_shaped_text_set_direction>`
 
-设置所需的文本方向。如果设置为 :ref:`DIRECTION_AUTO<class_TextServer_constant_DIRECTION_AUTO>`\ ，方向将根据缓冲区的内容和当前的区域设置来检测。
+Sets desired text direction. If set to :ref:`DIRECTION_AUTO<class_TextServer_constant_DIRECTION_AUTO>`, direction will be detected based on the buffer contents and current locale.
 
-\ **注意：**\ 如果服务器不支持 :ref:`FEATURE_BIDI_LAYOUT<class_TextServer_constant_FEATURE_BIDI_LAYOUT>` 特性，则方向会被忽略（\ :ref:`TextServerAdvanced<class_TextServerAdvanced>` 支持）。
+\ **Note:** Direction is ignored if server does not support :ref:`FEATURE_BIDI_LAYOUT<class_TextServer_constant_FEATURE_BIDI_LAYOUT>` feature (supported by :ref:`TextServerAdvanced<class_TextServerAdvanced>`).
 
 .. rst-class:: classref-item-separator
 
@@ -4417,9 +4417,9 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 |void| **shaped_text_set_orientation**\ (\ shaped\: :ref:`RID<class_RID>`, orientation\: :ref:`Orientation<enum_TextServer_Orientation>` = 0\ ) :ref:`🔗<class_TextServer_method_shaped_text_set_orientation>`
 
-设置所需的文本排版方向。
+Sets desired text orientation.
 
-\ **注意：**\ 如果服务器不支持 :ref:`FEATURE_VERTICAL_LAYOUT<class_TextServer_constant_FEATURE_VERTICAL_LAYOUT>` 功能（由 :ref:`TextServerAdvanced<class_TextServerAdvanced>` 支持），则排版方向将被忽略。
+\ **Note:** Orientation is ignored if server does not support :ref:`FEATURE_VERTICAL_LAYOUT<class_TextServer_constant_FEATURE_VERTICAL_LAYOUT>` feature (supported by :ref:`TextServerAdvanced<class_TextServerAdvanced>`).
 
 .. rst-class:: classref-item-separator
 
@@ -4431,7 +4431,7 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 |void| **shaped_text_set_preserve_control**\ (\ shaped\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TextServer_method_shaped_text_set_preserve_control>`
 
-如果设置为 ``true``\ ，则文本缓冲区将显示控制字符。
+If set to ``true`` text buffer will display control characters.
 
 .. rst-class:: classref-item-separator
 
@@ -4443,7 +4443,7 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 |void| **shaped_text_set_preserve_invalid**\ (\ shaped\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TextServer_method_shaped_text_set_preserve_invalid>`
 
-如果设置为 ``true``\ ，则文本缓冲区会将无效字符显示为十六进制代码，否则不显示任何内容。
+If set to ``true`` text buffer will display invalid characters as hexadecimal codes, otherwise nothing is displayed.
 
 .. rst-class:: classref-item-separator
 
@@ -4455,7 +4455,7 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 |void| **shaped_text_set_spacing**\ (\ shaped\: :ref:`RID<class_RID>`, spacing\: :ref:`SpacingType<enum_TextServer_SpacingType>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextServer_method_shaped_text_set_spacing>`
 
-设置字形之间或行与行之间添加的额外像素间距。
+Sets extra spacing added between glyphs or lines in pixels.
 
 .. rst-class:: classref-item-separator
 
@@ -4467,9 +4467,9 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 :ref:`bool<class_bool>` **shaped_text_shape**\ (\ shaped\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_TextServer_method_shaped_text_shape>`
 
-形状缓冲区（如果未塑形）。如果字符串塑形成功，则返回 ``true``\ 。
+Shapes buffer if it's not shaped. Returns ``true`` if the string is shaped successfully.
 
-\ **注意：**\ 无需手动调用该函数，只要请求其任何输出数据，缓冲区就会自动被塑形。
+\ **Note:** It is not necessary to call this function manually, buffer will be shaped automatically as soon as any of its output data is requested.
 
 .. rst-class:: classref-item-separator
 
@@ -4481,7 +4481,7 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **shaped_text_sort_logical**\ (\ shaped\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_TextServer_method_shaped_text_sort_logical>`
 
-按逻辑顺序返回文本字形。
+Returns text glyphs in the logical order.
 
 .. rst-class:: classref-item-separator
 
@@ -4493,7 +4493,7 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 :ref:`RID<class_RID>` **shaped_text_substr**\ (\ shaped\: :ref:`RID<class_RID>`, start\: :ref:`int<class_int>`, length\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_substr>`
 
-返回 ``shaped`` 文本缓冲区中字符串的子字符串的文本缓冲区（包括内联对象）。
+Returns text buffer for the substring of the text in the ``shaped`` text buffer (including inline objects).
 
 .. rst-class:: classref-item-separator
 
@@ -4505,7 +4505,7 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 :ref:`float<class_float>` **shaped_text_tab_align**\ (\ shaped\: :ref:`RID<class_RID>`, tab_stops\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ) :ref:`🔗<class_TextServer_method_shaped_text_tab_align>`
 
-将塑形文本与给定的制表位对齐。
+Aligns shaped text to the given tab-stops.
 
 .. rst-class:: classref-item-separator
 
@@ -4517,9 +4517,9 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 :ref:`bool<class_bool>` **spoof_check**\ (\ string\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServer_method_spoof_check>`
 
-如果 ``string`` 可能造成读者的混淆，则返回 ``true``\ 。
+Returns ``true`` if ``string`` is likely to be an attempt at confusing the reader.
 
-\ **注意：**\ 如果服务器不支持 :ref:`FEATURE_UNICODE_SECURITY<class_TextServer_constant_FEATURE_UNICODE_SECURITY>` 特性，则始终返回 ``false``\ 。
+\ **Note:** Always returns ``false`` if the server does not support the :ref:`FEATURE_UNICODE_SECURITY<class_TextServer_constant_FEATURE_UNICODE_SECURITY>` feature.
 
 .. rst-class:: classref-item-separator
 
@@ -4531,12 +4531,12 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **string_get_character_breaks**\ (\ string\: :ref:`String<class_String>`, language\: :ref:`String<class_String>` = ""\ ) |const| :ref:`🔗<class_TextServer_method_string_get_character_breaks>`
 
-返回组合字符边界的数组。
+Returns array of the composite character boundaries.
 
 ::
 
     var ts = TextServerManager.get_primary_interface()
-    print(ts.string_get_word_breaks("Test ❤️‍🔥 Test")) # 输出 [1, 2, 3, 4, 5, 9, 10, 11, 12, 13, 14]
+    print(ts.string_get_character_breaks("Test ❤️‍🔥 Test")) # Prints [1, 2, 3, 4, 5, 9, 10, 11, 12, 13, 14]
 
 .. rst-class:: classref-item-separator
 
@@ -4548,19 +4548,19 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **string_get_word_breaks**\ (\ string\: :ref:`String<class_String>`, language\: :ref:`String<class_String>` = "", chars_per_line\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TextServer_method_string_get_word_breaks>`
 
-返回分词边界的数组。返回数组中的元素是单词的起点和终点偏移量。因此，该数组的长度始终为偶数。
+Returns an array of the word break boundaries. Elements in the returned array are the offsets of the start and end of words. Therefore the length of the array is always even.
 
-\ ``chars_per_line`` 大于零时，返回的是分行边界。
+When ``chars_per_line`` is greater than zero, line break boundaries are returned instead.
 
 ::
 
     var ts = TextServerManager.get_primary_interface()
-    # 对应以下子字符串： "The"、"Godot"、"Engine"、"4"
-    print(ts.string_get_word_breaks("The Godot Engine, 4")) # 输出 [0, 3, 4, 9, 10, 16, 18, 19]
-    # 对应以下子字符串："The"、"Godot"、"Engin"、"e, 4"
-    print(ts.string_get_word_breaks("The Godot Engine, 4", "en", 5)) # 输出 [0, 3, 4, 9, 10, 15, 15, 19]
-    # 对应以下子字符串："The Godot"、"Engine, 4"
-    print(ts.string_get_word_breaks("The Godot Engine, 4", "en", 10)) # 输出 [0, 9, 10, 19]
+    # Corresponds to the substrings "The", "Godot", "Engine", and "4".
+    print(ts.string_get_word_breaks("The Godot Engine, 4")) # Prints [0, 3, 4, 9, 10, 16, 18, 19]
+    # Corresponds to the substrings "The", "Godot", "Engin", and "e, 4".
+    print(ts.string_get_word_breaks("The Godot Engine, 4", "en", 5)) # Prints [0, 3, 4, 9, 10, 15, 15, 19]
+    # Corresponds to the substrings "The Godot" and "Engine, 4".
+    print(ts.string_get_word_breaks("The Godot Engine, 4", "en", 10)) # Prints [0, 9, 10, 19]
 
 .. rst-class:: classref-item-separator
 
@@ -4620,9 +4620,9 @@ Returns the string converted to ``UPPERCASE``.
 
 :ref:`String<class_String>` **strip_diacritics**\ (\ string\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServer_method_strip_diacritics>`
 
-从字符串中剥离变音符号。
+Strips diacritics from the string.
 
-\ **注意：**\ 得到的字符串可能比原来的更长，也可能更短。
+\ **Note:** The result may be longer or shorter than the original.
 
 .. rst-class:: classref-item-separator
 
@@ -4636,12 +4636,12 @@ Returns the string converted to ``UPPERCASE``.
 
 Converts the given OpenType tag to the readable name of a feature, variation, script, or language.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

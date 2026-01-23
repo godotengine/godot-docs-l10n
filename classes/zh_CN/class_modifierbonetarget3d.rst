@@ -5,23 +5,23 @@
 ModifierBoneTarget3D
 ====================
 
-**继承：** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-动态复制父级 :ref:`Skeleton3D<class_Skeleton3D>` 中某个骨骼 3D 变换的节点。
+А node that dynamically copies the 3D transform of a bone in its parent :ref:`Skeleton3D<class_Skeleton3D>`.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-这个节点能够选择 :ref:`Skeleton3D<class_Skeleton3D>` 中的某个骨骼并附加到这个骨骼上。这样 **ModifierBoneTarget3D** 节点就能够动态复制所选骨骼的 3D 变换。
+This node selects a bone in a :ref:`Skeleton3D<class_Skeleton3D>` and attaches to it. This means that the **ModifierBoneTarget3D** node will dynamically copy the 3D transform of the selected bone.
 
-功能类似于 :ref:`BoneAttachment3D<class_BoneAttachment3D>`\ ，但是这个节点使用 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 的周期，适合作为其他 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 的目标。
+The functionality is similar to :ref:`BoneAttachment3D<class_BoneAttachment3D>`, but this node adopts the :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` cycle and is intended to be used as another :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`'s target.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ ModifierBoneTarget3D
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_ModifierBoneTarget3D_property_bone:
 
@@ -52,7 +52,7 @@ ModifierBoneTarget3D
 - |void| **set_bone**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bone**\ (\ )
 
-所附着骨骼的索引。
+The index of the attached bone.
 
 .. rst-class:: classref-item-separator
 
@@ -69,14 +69,14 @@ ModifierBoneTarget3D
 - |void| **set_bone_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_bone_name**\ (\ )
 
-所附着骨骼的名称。
+The name of the attached bone.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

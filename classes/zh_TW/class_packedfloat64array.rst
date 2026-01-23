@@ -5,12 +5,12 @@
 PackedFloat64Array
 ==================
 
-64 位元浮點數緊縮陣列。
+A packed array of 64-bit floating-point values.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 An array specifically designed to hold 64-bit floating-point values (double). Packs data tightly, so it saves memory for large array sizes.
 
@@ -22,12 +22,12 @@ If you only need to pack 32-bit floats tightly, see :ref:`PackedFloat32Array<cla
 
 .. note::
 
-	使用 C# 操作此 API 時有顯著差異，詳見 :ref:`doc_c_sharp_differences`。
+	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
 
 .. rst-class:: classref-reftable-group
 
-建構子
-------
+Constructors
+------------
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ If you only need to pack 32-bit floats tightly, see :ref:`PackedFloat32Array<cla
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -98,8 +98,8 @@ If you only need to pack 32-bit floats tightly, see :ref:`PackedFloat32Array<cla
 
 .. rst-class:: classref-reftable-group
 
-運算子
-------
+Operators
+---------
 
 .. table::
    :widths: auto
@@ -120,8 +120,8 @@ If you only need to pack 32-bit floats tightly, see :ref:`PackedFloat32Array<cla
 
 .. rst-class:: classref-descriptions-group
 
-建構子說明
-----------
+Constructor Descriptions
+------------------------
 
 .. _class_PackedFloat64Array_constructor_PackedFloat64Array:
 
@@ -129,7 +129,7 @@ If you only need to pack 32-bit floats tightly, see :ref:`PackedFloat32Array<cla
 
 :ref:`PackedFloat64Array<class_PackedFloat64Array>` **PackedFloat64Array**\ (\ ) :ref:`🔗<class_PackedFloat64Array_constructor_PackedFloat64Array>`
 
-建構空的 **PackedFloat64Array**\ 。
+Constructs an empty **PackedFloat64Array**.
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ If you only need to pack 32-bit floats tightly, see :ref:`PackedFloat32Array<cla
 
 :ref:`PackedFloat64Array<class_PackedFloat64Array>` **PackedFloat64Array**\ (\ from\: :ref:`PackedFloat64Array<class_PackedFloat64Array>`\ )
 
-建構給定 **PackedFloat64Array** 的副本。
+Constructs a **PackedFloat64Array** as a copy of the given **PackedFloat64Array**.
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ If you only need to pack 32-bit floats tightly, see :ref:`PackedFloat32Array<cla
 
 :ref:`PackedFloat64Array<class_PackedFloat64Array>` **PackedFloat64Array**\ (\ from\: :ref:`Array<class_Array>`\ )
 
-建構新 **PackedFloat64Array**\ 。你還可以傳入通用 :ref:`Array<class_Array>` 進行轉換。
+Constructs a new **PackedFloat64Array**. Optionally, you can pass in a generic :ref:`Array<class_Array>` that will be converted.
 
 .. rst-class:: classref-section-separator
 
@@ -157,8 +157,8 @@ If you only need to pack 32-bit floats tightly, see :ref:`PackedFloat32Array<cla
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_PackedFloat64Array_method_append:
 
@@ -166,7 +166,7 @@ If you only need to pack 32-bit floats tightly, see :ref:`PackedFloat32Array<cla
 
 :ref:`bool<class_bool>` **append**\ (\ value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PackedFloat64Array_method_append>`
 
-向陣列末尾追加一個元素（\ :ref:`push_back()<class_PackedFloat64Array_method_push_back>` 的別名）。
+Appends an element at the end of the array (alias of :ref:`push_back()<class_PackedFloat64Array_method_push_back>`).
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ If you only need to pack 32-bit floats tightly, see :ref:`PackedFloat32Array<cla
 
 |void| **append_array**\ (\ array\: :ref:`PackedFloat64Array<class_PackedFloat64Array>`\ ) :ref:`🔗<class_PackedFloat64Array_method_append_array>`
 
-在該陣列的末尾追加一個 **PackedFloat64Array**\ 。
+Appends a **PackedFloat64Array** at the end of this array.
 
 .. rst-class:: classref-item-separator
 
@@ -190,11 +190,11 @@ If you only need to pack 32-bit floats tightly, see :ref:`PackedFloat32Array<cla
 
 :ref:`int<class_int>` **bsearch**\ (\ value\: :ref:`float<class_float>`, before\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_PackedFloat64Array_method_bsearch>`
 
-使用二分法搜尋已有值的索引（如果該值尚未存在於陣列中，則為保持排序順序的插入索引）。傳遞 ``before`` 說明符是可選的。如果該參數為 ``false``\ ，則返回的索引位於陣列中該值的所有已有的條目之後。
+Finds the index of an existing value (or the insertion index that maintains sorting order, if the value is not yet present in the array) using binary search. Optionally, a ``before`` specifier can be passed. If ``false``, the returned index comes after all existing entries of the value in the array.
 
-\ **注意：**\ 在未排序的陣列上呼叫 :ref:`bsearch()<class_PackedFloat64Array_method_bsearch>` 會產生預料之外的行為。
+\ **Note:** Calling :ref:`bsearch()<class_PackedFloat64Array_method_bsearch>` on an unsorted array results in unexpected behavior.
 
-\ **注意：**\ :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 的行為與其他數位不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
+\ **Note:** :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` doesn't behave the same as other numbers. Therefore, the results from this method may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -206,7 +206,7 @@ If you only need to pack 32-bit floats tightly, see :ref:`PackedFloat32Array<cla
 
 |void| **clear**\ (\ ) :ref:`🔗<class_PackedFloat64Array_method_clear>`
 
-清空陣列。相當於呼叫 :ref:`resize()<class_PackedFloat64Array_method_resize>` 時指定大小為 ``0``\ 。
+Clears the array. This is equivalent to using :ref:`resize()<class_PackedFloat64Array_method_resize>` with a size of ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -218,9 +218,9 @@ If you only need to pack 32-bit floats tightly, see :ref:`PackedFloat32Array<cla
 
 :ref:`int<class_int>` **count**\ (\ value\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_PackedFloat64Array_method_count>`
 
-返回陣列中某個元素的出現次數。
+Returns the number of times an element is in the array.
 
-\ **注意：**\ :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 的行為與其他數位不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
+\ **Note:** :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` doesn't behave the same as other numbers. Therefore, the results from this method may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -232,7 +232,7 @@ If you only need to pack 32-bit floats tightly, see :ref:`PackedFloat32Array<cla
 
 :ref:`PackedFloat64Array<class_PackedFloat64Array>` **duplicate**\ (\ ) |const| :ref:`🔗<class_PackedFloat64Array_method_duplicate>`
 
-建立該陣列的副本，並將該副本返回。
+Creates a copy of the array, and returns it.
 
 .. rst-class:: classref-item-separator
 
@@ -258,7 +258,7 @@ Removes the first occurrence of a value from the array and returns ``true``. If 
 
 |void| **fill**\ (\ value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PackedFloat64Array_method_fill>`
 
-將陣列中的所有元素都設為給定的值。通常與 :ref:`resize()<class_PackedFloat64Array_method_resize>` 一起使用，建立給定大小的陣列並初始化元素。
+Assigns the given value to all elements in the array. This can typically be used together with :ref:`resize()<class_PackedFloat64Array_method_resize>` to create an array with a given size and initialized elements.
 
 .. rst-class:: classref-item-separator
 
@@ -270,9 +270,9 @@ Removes the first occurrence of a value from the array and returns ``true``. If 
 
 :ref:`int<class_int>` **find**\ (\ value\: :ref:`float<class_float>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PackedFloat64Array_method_find>`
 
-在陣列中搜索值並返回其索引，如果未找到則返回 ``-1`` 。可選地，可以傳遞起始搜索索引。
+Searches the array for a value and returns its index or ``-1`` if not found. Optionally, the initial search index can be passed.
 
-\ **注意：**\ :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 的行為與其他數位不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
+\ **Note:** :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` doesn't behave the same as other numbers. Therefore, the results from this method may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -298,9 +298,9 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`bool<class_bool>` **has**\ (\ value\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_PackedFloat64Array_method_has>`
 
-如果陣列中包含 ``value``\ ，則返回 ``true``\ 。
+Returns ``true`` if the array contains ``value``.
 
-\ **注意：**\ :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 的行為與其他數位不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
+\ **Note:** :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` doesn't behave the same as other numbers. Therefore, the results from this method may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +312,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`int<class_int>` **insert**\ (\ at_index\: :ref:`int<class_int>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PackedFloat64Array_method_insert>`
 
-在陣列中給定的位置插入一個新元素。這個位置必須是有效的，或者是在陣列的末端（\ ``idx == size()``\ ）。
+Inserts a new element at a given position in the array. The position must be valid, or at the end of the array (``idx == size()``).
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +324,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`bool<class_bool>` **is_empty**\ (\ ) |const| :ref:`🔗<class_PackedFloat64Array_method_is_empty>`
 
-該陣列為空時，返回 ``true``\ 。
+Returns ``true`` if the array is empty.
 
 .. rst-class:: classref-item-separator
 
@@ -336,7 +336,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`bool<class_bool>` **push_back**\ (\ value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PackedFloat64Array_method_push_back>`
 
-在陣列的末尾追加一個元素。
+Appends an element at the end of the array.
 
 .. rst-class:: classref-item-separator
 
@@ -348,7 +348,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 |void| **remove_at**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedFloat64Array_method_remove_at>`
 
-從陣列中刪除位於索引的元素。
+Removes an element from the array by index.
 
 .. rst-class:: classref-item-separator
 
@@ -374,7 +374,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 |void| **reverse**\ (\ ) :ref:`🔗<class_PackedFloat64Array_method_reverse>`
 
-將陣列中的元素逆序排列。
+Reverses the order of the elements in the array.
 
 .. rst-class:: classref-item-separator
 
@@ -386,9 +386,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`int<class_int>` **rfind**\ (\ value\: :ref:`float<class_float>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_PackedFloat64Array_method_rfind>`
 
-逆序搜索陣列。還可以傳遞起始搜索位置索引。如果為負，則起始索引被視為相對於數組的結尾。
+Searches the array in reverse order. Optionally, a start search index can be passed. If negative, the start index is considered relative to the end of the array.
 
-\ **注意：**\ :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 的行為與其他數位不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
+\ **Note:** :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` doesn't behave the same as other numbers. Therefore, the results from this method may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -400,7 +400,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 |void| **set**\ (\ index\: :ref:`int<class_int>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PackedFloat64Array_method_set>`
 
-更改給定索引處的浮點數。
+Changes the float at the given index.
 
 .. rst-class:: classref-item-separator
 
@@ -412,7 +412,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`int<class_int>` **size**\ (\ ) |const| :ref:`🔗<class_PackedFloat64Array_method_size>`
 
-返回陣列中元素的個數。
+Returns the number of elements in the array.
 
 .. rst-class:: classref-item-separator
 
@@ -424,11 +424,11 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`PackedFloat64Array<class_PackedFloat64Array>` **slice**\ (\ begin\: :ref:`int<class_int>`, end\: :ref:`int<class_int>` = 2147483647\ ) |const| :ref:`🔗<class_PackedFloat64Array_method_slice>`
 
-返回該 **PackedFloat64Array** 的切片，是從 ``begin``\ （含）到 ``end``\ （不含）的全新 **PackedFloat64Array**\ 。
+Returns the slice of the **PackedFloat64Array**, from ``begin`` (inclusive) to ``end`` (exclusive), as a new **PackedFloat64Array**.
 
-\ ``begin`` 和 ``end`` 的絕對值會按陣列大小進行限制，所以 ``end`` 的預設值會切到陣列大小為止（即 ``arr.slice(1)`` 是 ``arr.slice(1, arr.size())`` 的簡寫）。
+The absolute value of ``begin`` and ``end`` will be clamped to the array size, so the default value for ``end`` makes it slice to the size of the array by default (i.e. ``arr.slice(1)`` is a shorthand for ``arr.slice(1, arr.size())``).
 
-如果 ``begin`` 或 ``end`` 為負，則表示相對於陣列的末尾（即 ``arr.slice(0, -2)`` 是 ``arr.slice(0, arr.size() - 2)`` 的簡寫）。
+If either ``begin`` or ``end`` are negative, they will be relative to the end of the array (i.e. ``arr.slice(0, -2)`` is a shorthand for ``arr.slice(0, arr.size() - 2)``).
 
 .. rst-class:: classref-item-separator
 
@@ -440,9 +440,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 |void| **sort**\ (\ ) :ref:`🔗<class_PackedFloat64Array_method_sort>`
 
-昇冪排列陣列中的元素。
+Sorts the elements of the array in ascending order.
 
-\ **注意：**\ :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 的行為與其他數位不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
+\ **Note:** :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` doesn't behave the same as other numbers. Therefore, the results from this method may not be accurate if NaNs are included.
 
 .. rst-class:: classref-item-separator
 
@@ -464,8 +464,8 @@ The size of the new array will be ``float64_array.size() * 8``.
 
 .. rst-class:: classref-descriptions-group
 
-運算子說明
-----------
+Operator Descriptions
+---------------------
 
 .. _class_PackedFloat64Array_operator_neq_PackedFloat64Array:
 
@@ -473,7 +473,7 @@ The size of the new array will be ``float64_array.size() * 8``.
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`PackedFloat64Array<class_PackedFloat64Array>`\ ) :ref:`🔗<class_PackedFloat64Array_operator_neq_PackedFloat64Array>`
 
-如果陣列內容不同，則返回 ``true``\ 。
+Returns ``true`` if contents of the arrays differ.
 
 .. rst-class:: classref-item-separator
 
@@ -485,7 +485,7 @@ The size of the new array will be ``float64_array.size() * 8``.
 
 :ref:`PackedFloat64Array<class_PackedFloat64Array>` **operator +**\ (\ right\: :ref:`PackedFloat64Array<class_PackedFloat64Array>`\ ) :ref:`🔗<class_PackedFloat64Array_operator_sum_PackedFloat64Array>`
 
-返回新的 **PackedFloat64Array**\ ，新陣列的內容為此陣列在末尾加上 ``right``\ 。為了提高性能，請考慮改用 :ref:`append_array()<class_PackedFloat64Array_method_append_array>`\ 。
+Returns a new **PackedFloat64Array** with contents of ``right`` added at the end of this array. For better performance, consider using :ref:`append_array()<class_PackedFloat64Array_method_append_array>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -497,7 +497,7 @@ The size of the new array will be ``float64_array.size() * 8``.
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`PackedFloat64Array<class_PackedFloat64Array>`\ ) :ref:`🔗<class_PackedFloat64Array_operator_eq_PackedFloat64Array>`
 
-如果兩個陣列的內容相同，即對應索引號的雙精度浮點數相等，則返回 ``true``\ 。
+Returns ``true`` if contents of both arrays are the same, i.e. they have all equal doubles at the corresponding indices.
 
 .. rst-class:: classref-item-separator
 
@@ -509,14 +509,14 @@ The size of the new array will be ``float64_array.size() * 8``.
 
 :ref:`float<class_float>` **operator []**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedFloat64Array_operator_idx_int>`
 
-返回索引 ``index`` 處的 :ref:`float<class_float>`\ 。負數索引可以從末尾開始存取元素。使用超出陣列範圍的索引會導致出錯。
+Returns the :ref:`float<class_float>` at index ``index``. Negative indices can be used to access the elements starting from the end. Using index out of array's bounds will result in an error.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

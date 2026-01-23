@@ -5,23 +5,23 @@
 StreamPeerTCP
 =============
 
-**继承：** :ref:`StreamPeerSocket<class_StreamPeerSocket>` **<** :ref:`StreamPeer<class_StreamPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`StreamPeerSocket<class_StreamPeerSocket>` **<** :ref:`StreamPeer<class_StreamPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-处理 TCP 连接的流对等体。
+A stream peer that handles TCP connections.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-处理 TCP 连接的流对等体。该对象可用于连接 TCP 服务器，也可以由 TCP 服务器返回。
+A stream peer that handles TCP connections. This object can be used to connect to TCP servers, or also is returned by a TCP server.
 
-\ **注意：**\ 导出到安卓时，在导出项目或使用一键部署之前，请务必在安卓导出预设中，开启 ``INTERNET`` 权限。否则，任何类型的网络通信都将被 Android 阻止。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ StreamPeerTCP
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_StreamPeerTCP_method_bind:
 
@@ -55,9 +55,9 @@ StreamPeerTCP
 
 :ref:`Error<enum_@GlobalScope_Error>` **bind**\ (\ port\: :ref:`int<class_int>`, host\: :ref:`String<class_String>` = "*"\ ) :ref:`🔗<class_StreamPeerTCP_method_bind>`
 
-打开 TCP 套接字，并将其绑定到指定的本地地址。
+Opens the TCP socket, and binds it to the specified local address.
 
-通常不需要这个方法，只是用来强制让后续调用 :ref:`connect_to_host()<class_StreamPeerTCP_method_connect_to_host>` 时使用指定的主机 ``host`` 和端口 ``port`` 作为源地址。会在部分 NAT 打洞技术中用到，也可用于强制设置源网络接口。
+This method is generally not needed, and only used to force the subsequent call to :ref:`connect_to_host()<class_StreamPeerTCP_method_connect_to_host>` to use the specified ``host`` and ``port`` as source address. This can be desired in some NAT punchthrough techniques, or when forcing the source network interface.
 
 .. rst-class:: classref-item-separator
 
@@ -69,7 +69,7 @@ StreamPeerTCP
 
 :ref:`Error<enum_@GlobalScope_Error>` **connect_to_host**\ (\ host\: :ref:`String<class_String>`, port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_StreamPeerTCP_method_connect_to_host>`
 
-连接到指定的 ``host:port`` 对。如果使用的是有效主机名，则会进行解析。成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ 。
+Connects to the specified ``host:port`` pair. A hostname will be resolved if valid. Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success.
 
 .. rst-class:: classref-item-separator
 
@@ -81,7 +81,7 @@ StreamPeerTCP
 
 :ref:`String<class_String>` **get_connected_host**\ (\ ) |const| :ref:`🔗<class_StreamPeerTCP_method_get_connected_host>`
 
-返回该对等体的IP。
+Returns the IP of this peer.
 
 .. rst-class:: classref-item-separator
 
@@ -93,7 +93,7 @@ StreamPeerTCP
 
 :ref:`int<class_int>` **get_connected_port**\ (\ ) |const| :ref:`🔗<class_StreamPeerTCP_method_get_connected_port>`
 
-返回该对等体的端口。
+Returns the port of this peer.
 
 .. rst-class:: classref-item-separator
 
@@ -105,7 +105,7 @@ StreamPeerTCP
 
 :ref:`int<class_int>` **get_local_port**\ (\ ) |const| :ref:`🔗<class_StreamPeerTCP_method_get_local_port>`
 
-返回该对等体绑定到的本地端口。
+Returns the local port to which this peer is bound.
 
 .. rst-class:: classref-item-separator
 
@@ -117,16 +117,16 @@ StreamPeerTCP
 
 |void| **set_no_delay**\ (\ enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_StreamPeerTCP_method_set_no_delay>`
 
-如果 ``enabled`` 为 ``true``\ ，数据包会立即发送。如果 ``enabled`` 为 ``false``\ （默认值），数据包传输将被延迟，并使用\ `纳格算法 <https://zh.wikipedia.org/wiki/%E7%B4%8D%E6%A0%BC%E7%AE%97%E6%B3%95>`__\ 合并。
+If ``enabled`` is ``true``, packets will be sent immediately. If ``enabled`` is ``false`` (the default), packet transfers will be delayed and combined using `Nagle's algorithm <https://en.wikipedia.org/wiki/Nagle%27s_algorithm>`__.
 
-\ **注意：**\ 对于发送大数据包或需要传输大量数据的应用程序，建议将本属性保持禁用，因为启用本属性会减少总体可用带宽。
+\ **Note:** It's recommended to leave this disabled for applications that send large packets or need to transfer a lot of data, as enabling this can decrease the total available bandwidth.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,18 +5,18 @@
 ImmediateMesh
 =============
 
-**继承：** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-为手动创建几何体，而优化的网格。
+Mesh optimized for creating geometry manually.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-针对手动创建几何体优化的网格类型，与 OpenGL 1.x 的立即模式类似。
+A mesh type optimized for creating geometry manually, similar to OpenGL 1.x immediate mode.
 
-以下是生成三角形面的示例：
+Here's a sample on how to generate a triangular face:
 
 
 .. tabs::
@@ -41,19 +41,19 @@ ImmediateMesh
 
 
 
-\ **注意：**\ 使用 **ImmediateMesh** 生成复杂的几何体极其低效。这种网格的设计目的是用来生成经常变化的简单几何体。
+\ **Note:** Generating complex geometries with **ImmediateMesh** is highly inefficient. Instead, it is designed to generate simple geometry that changes often.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
-- :doc:`使用 ImmediateMesh <../tutorials/3d/procedural_geometry/immediatemesh>`
+- :doc:`Using ImmediateMesh <../tutorials/3d/procedural_geometry/immediatemesh>`
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -86,8 +86,8 @@ ImmediateMesh
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_ImmediateMesh_method_clear_surfaces:
 
@@ -95,7 +95,7 @@ ImmediateMesh
 
 |void| **clear_surfaces**\ (\ ) :ref:`🔗<class_ImmediateMesh_method_clear_surfaces>`
 
-清除所有表面。
+Clear all surfaces.
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ ImmediateMesh
 
 |void| **surface_add_vertex**\ (\ vertex\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_ImmediateMesh_method_surface_add_vertex>`
 
-使用先前设置的当前属性，添加一个 3D 顶点。
+Add a 3D vertex using the current attributes previously set.
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ ImmediateMesh
 
 |void| **surface_add_vertex_2d**\ (\ vertex\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_ImmediateMesh_method_surface_add_vertex_2d>`
 
-使用先前设置的当前属性，添加一个 2D 顶点。
+Add a 2D vertex using the current attributes previously set.
 
 .. rst-class:: classref-item-separator
 
@@ -131,7 +131,7 @@ ImmediateMesh
 
 |void| **surface_begin**\ (\ primitive\: :ref:`PrimitiveType<enum_Mesh_PrimitiveType>`, material\: :ref:`Material<class_Material>` = null\ ) :ref:`🔗<class_ImmediateMesh_method_surface_begin>`
 
-开始一个新的表面。
+Begin a new surface.
 
 .. rst-class:: classref-item-separator
 
@@ -143,7 +143,7 @@ ImmediateMesh
 
 |void| **surface_end**\ (\ ) :ref:`🔗<class_ImmediateMesh_method_surface_end>`
 
-结束并提交当前表面。请注意，在该函数被调用之前，创建的表面将不可见。
+End and commit current surface. Note that surface being created will not be visible until this function is called.
 
 .. rst-class:: classref-item-separator
 
@@ -155,7 +155,7 @@ ImmediateMesh
 
 |void| **surface_set_color**\ (\ color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_ImmediateMesh_method_surface_set_color>`
 
-设置将与下一个顶点一起推送的颜色属性。
+Set the color attribute that will be pushed with the next vertex.
 
 .. rst-class:: classref-item-separator
 
@@ -167,7 +167,7 @@ ImmediateMesh
 
 |void| **surface_set_normal**\ (\ normal\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_ImmediateMesh_method_surface_set_normal>`
 
-设置将与下一个顶点一起推送的法线属性。
+Set the normal attribute that will be pushed with the next vertex.
 
 .. rst-class:: classref-item-separator
 
@@ -193,7 +193,7 @@ Set the tangent attribute that will be pushed with the next vertex.
 
 |void| **surface_set_uv**\ (\ uv\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_ImmediateMesh_method_surface_set_uv>`
 
-设置将与下一个顶点一起推送的 UV 属性。
+Set the UV attribute that will be pushed with the next vertex.
 
 .. rst-class:: classref-item-separator
 
@@ -205,14 +205,14 @@ Set the tangent attribute that will be pushed with the next vertex.
 
 |void| **surface_set_uv2**\ (\ uv2\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_ImmediateMesh_method_surface_set_uv2>`
 
-设置将与下一个顶点一起推送的 UV2 属性。
+Set the UV2 attribute that will be pushed with the next vertex.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

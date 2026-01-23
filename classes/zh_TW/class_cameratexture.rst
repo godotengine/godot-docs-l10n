@@ -5,23 +5,23 @@
 CameraTexture
 =============
 
-**繼承：** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-由 :ref:`CameraFeed<class_CameraFeed>` 提供的紋理。
+Texture provided by a :ref:`CameraFeed<class_CameraFeed>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-該紋理可以存取 :ref:`CameraFeed<class_CameraFeed>` 提供的相機紋理。
+This texture gives access to the camera texture provided by a :ref:`CameraFeed<class_CameraFeed>`.
 
-\ **注意：**\ 許多相機提供的都是 YCbCr 圖像，需要在著色器中進行轉換。
+\ **Note:** Many cameras supply YCbCr images which need to be converted in a shader.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ CameraTexture
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_CameraTexture_property_camera_feed_id:
 
@@ -56,7 +56,7 @@ CameraTexture
 - |void| **set_camera_feed_id**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_camera_feed_id**\ (\ )
 
-我們要顯示圖像的 :ref:`CameraFeed<class_CameraFeed>` 的 ID。
+The ID of the :ref:`CameraFeed<class_CameraFeed>` for which we want to display the image.
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ CameraTexture
 - |void| **set_camera_active**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_camera_active**\ (\ )
 
-給予存取 :ref:`CameraFeed<class_CameraFeed>` 的活動屬性的便利屬性。
+Convenience property that gives access to the active property of the :ref:`CameraFeed<class_CameraFeed>`.
 
 .. rst-class:: classref-item-separator
 
@@ -90,14 +90,14 @@ CameraTexture
 - |void| **set_which_feed**\ (\ value\: :ref:`FeedImage<enum_CameraServer_FeedImage>`\ )
 - :ref:`FeedImage<enum_CameraServer_FeedImage>` **get_which_feed**\ (\ )
 
-我們要存取 :ref:`CameraFeed<class_CameraFeed>` 中的哪個圖像，如果相機圖像被分割成 Y 和 CbCr 分量，這一點很重要。
+Which image within the :ref:`CameraFeed<class_CameraFeed>` we want access to, important if the camera image is split in a Y and CbCr component.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

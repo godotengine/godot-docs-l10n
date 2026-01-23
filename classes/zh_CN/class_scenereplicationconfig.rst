@@ -5,14 +5,14 @@
 SceneReplicationConfig
 ======================
 
-**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-配置，能够让 :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>` 对属性进行同步。
+Configuration for properties to synchronize with a :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>`.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -51,8 +51,8 @@ SceneReplicationConfig
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_SceneReplicationConfig_ReplicationMode:
 
@@ -66,7 +66,7 @@ enum **ReplicationMode**: :ref:`🔗<enum_SceneReplicationConfig_ReplicationMode
 
 :ref:`ReplicationMode<enum_SceneReplicationConfig_ReplicationMode>` **REPLICATION_MODE_NEVER** = ``0``
 
-不要让给定的属性保持同步。
+Do not keep the given property synchronized.
 
 .. _class_SceneReplicationConfig_constant_REPLICATION_MODE_ALWAYS:
 
@@ -74,7 +74,7 @@ enum **ReplicationMode**: :ref:`🔗<enum_SceneReplicationConfig_ReplicationMode
 
 :ref:`ReplicationMode<enum_SceneReplicationConfig_ReplicationMode>` **REPLICATION_MODE_ALWAYS** = ``1``
 
-处理时复制给定的属性，会使用不可靠的传输模式持续发送更新。
+Replicate the given property on process by constantly sending updates using unreliable transfer mode.
 
 .. _class_SceneReplicationConfig_constant_REPLICATION_MODE_ON_CHANGE:
 
@@ -82,7 +82,7 @@ enum **ReplicationMode**: :ref:`🔗<enum_SceneReplicationConfig_ReplicationMode
 
 :ref:`ReplicationMode<enum_SceneReplicationConfig_ReplicationMode>` **REPLICATION_MODE_ON_CHANGE** = ``2``
 
-处理时复制给定的属性，会使用可靠的传输模式在值发生变化时发送更新。
+Replicate the given property on process by sending updates using reliable transfer mode when its value changes.
 
 .. rst-class:: classref-section-separator
 
@@ -90,8 +90,8 @@ enum **ReplicationMode**: :ref:`🔗<enum_SceneReplicationConfig_ReplicationMode
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_SceneReplicationConfig_method_add_property:
 
@@ -99,9 +99,9 @@ enum **ReplicationMode**: :ref:`🔗<enum_SceneReplicationConfig_ReplicationMode
 
 |void| **add_property**\ (\ path\: :ref:`NodePath<class_NodePath>`, index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_SceneReplicationConfig_method_add_property>`
 
-将属性添加至同步属性列表，该属性由 ``path`` 指定，还可以传入索引 ``index``\ 。
+Adds the property identified by the given ``path`` to the list of the properties being synchronized, optionally passing an ``index``.
 
-\ **注意：**\ 属性同步的限制详见 :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>`\ 。
+\ **Note:** For details on restrictions and limitations on property synchronization, see :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +113,7 @@ enum **ReplicationMode**: :ref:`🔗<enum_SceneReplicationConfig_ReplicationMode
 
 :ref:`Array<class_Array>`\[:ref:`NodePath<class_NodePath>`\] **get_properties**\ (\ ) |const| :ref:`🔗<class_SceneReplicationConfig_method_get_properties>`
 
-返回同步属性的 :ref:`NodePath<class_NodePath>` 列表。
+Returns a list of synchronized property :ref:`NodePath<class_NodePath>`\ s.
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ enum **ReplicationMode**: :ref:`🔗<enum_SceneReplicationConfig_ReplicationMode
 
 :ref:`bool<class_bool>` **has_property**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) |const| :ref:`🔗<class_SceneReplicationConfig_method_has_property>`
 
-如果已将给定的 ``path`` 配置为同步，则返回 ``true``\ 。
+Returns ``true`` if the given ``path`` is configured for synchronization.
 
 .. rst-class:: classref-item-separator
 
@@ -137,7 +137,7 @@ enum **ReplicationMode**: :ref:`🔗<enum_SceneReplicationConfig_ReplicationMode
 
 :ref:`int<class_int>` **property_get_index**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) |const| :ref:`🔗<class_SceneReplicationConfig_method_property_get_index>`
 
-查找给定 ``path`` 的索引。
+Finds the index of the given ``path``.
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ enum **ReplicationMode**: :ref:`🔗<enum_SceneReplicationConfig_ReplicationMode
 
 :ref:`ReplicationMode<enum_SceneReplicationConfig_ReplicationMode>` **property_get_replication_mode**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SceneReplicationConfig_method_property_get_replication_mode>`
 
-返回给定 ``path`` 标识的属性的复制模式。
+Returns the replication mode for the property identified by the given ``path``.
 
 .. rst-class:: classref-item-separator
 
@@ -161,7 +161,7 @@ enum **ReplicationMode**: :ref:`🔗<enum_SceneReplicationConfig_ReplicationMode
 
 :ref:`bool<class_bool>` **property_get_spawn**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SceneReplicationConfig_method_property_get_spawn>`
 
-返回已将 ``path`` 对应的属性配置为在出生时同步，则返回 ``true``\ 。
+Returns ``true`` if the property identified by the given ``path`` is configured to be synchronized on spawn.
 
 .. rst-class:: classref-item-separator
 
@@ -173,9 +173,9 @@ enum **ReplicationMode**: :ref:`🔗<enum_SceneReplicationConfig_ReplicationMode
 
 :ref:`bool<class_bool>` **property_get_sync**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SceneReplicationConfig_method_property_get_sync>`
 
-**已弃用：** Use :ref:`property_get_replication_mode()<class_SceneReplicationConfig_method_property_get_replication_mode>` instead.
+**Deprecated:** Use :ref:`property_get_replication_mode()<class_SceneReplicationConfig_method_property_get_replication_mode>` instead.
 
-如果给定 ``path`` 标识的属性被配置为在处理时同步，则返回 ``true``\ 。
+Returns ``true`` if the property identified by the given ``path`` is configured to be synchronized on process.
 
 .. rst-class:: classref-item-separator
 
@@ -187,9 +187,9 @@ enum **ReplicationMode**: :ref:`🔗<enum_SceneReplicationConfig_ReplicationMode
 
 :ref:`bool<class_bool>` **property_get_watch**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SceneReplicationConfig_method_property_get_watch>`
 
-**已弃用：** Use :ref:`property_get_replication_mode()<class_SceneReplicationConfig_method_property_get_replication_mode>` instead.
+**Deprecated:** Use :ref:`property_get_replication_mode()<class_SceneReplicationConfig_method_property_get_replication_mode>` instead.
 
-如果给定 ``path`` 标识的属性被配置为在处理期间检测到更改时可靠地同步，则返回 ``true``\ 。
+Returns ``true`` if the property identified by the given ``path`` is configured to be reliably synchronized when changes are detected on process.
 
 .. rst-class:: classref-item-separator
 
@@ -201,7 +201,7 @@ enum **ReplicationMode**: :ref:`🔗<enum_SceneReplicationConfig_ReplicationMode
 
 |void| **property_set_replication_mode**\ (\ path\: :ref:`NodePath<class_NodePath>`, mode\: :ref:`ReplicationMode<enum_SceneReplicationConfig_ReplicationMode>`\ ) :ref:`🔗<class_SceneReplicationConfig_method_property_set_replication_mode>`
 
-为路径为 ``path`` 的属性设置同步模式。
+Sets the synchronization mode for the property identified by the given ``path``.
 
 .. rst-class:: classref-item-separator
 
@@ -213,7 +213,7 @@ enum **ReplicationMode**: :ref:`🔗<enum_SceneReplicationConfig_ReplicationMode
 
 |void| **property_set_spawn**\ (\ path\: :ref:`NodePath<class_NodePath>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SceneReplicationConfig_method_property_set_spawn>`
 
-设置是否将路径为 ``path`` 的属性配置为在出生时同步。
+Sets whether the property identified by the given ``path`` is configured to be synchronized on spawn.
 
 .. rst-class:: classref-item-separator
 
@@ -225,9 +225,9 @@ enum **ReplicationMode**: :ref:`🔗<enum_SceneReplicationConfig_ReplicationMode
 
 |void| **property_set_sync**\ (\ path\: :ref:`NodePath<class_NodePath>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SceneReplicationConfig_method_property_set_sync>`
 
-**已弃用：** Use :ref:`property_set_replication_mode()<class_SceneReplicationConfig_method_property_set_replication_mode>` with :ref:`REPLICATION_MODE_ALWAYS<class_SceneReplicationConfig_constant_REPLICATION_MODE_ALWAYS>` instead.
+**Deprecated:** Use :ref:`property_set_replication_mode()<class_SceneReplicationConfig_method_property_set_replication_mode>` with :ref:`REPLICATION_MODE_ALWAYS<class_SceneReplicationConfig_constant_REPLICATION_MODE_ALWAYS>` instead.
 
-设置给定 ``path`` 标识的属性是否被配置为在处理时同步。
+Sets whether the property identified by the given ``path`` is configured to be synchronized on process.
 
 .. rst-class:: classref-item-separator
 
@@ -239,9 +239,9 @@ enum **ReplicationMode**: :ref:`🔗<enum_SceneReplicationConfig_ReplicationMode
 
 |void| **property_set_watch**\ (\ path\: :ref:`NodePath<class_NodePath>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SceneReplicationConfig_method_property_set_watch>`
 
-**已弃用：** Use :ref:`property_set_replication_mode()<class_SceneReplicationConfig_method_property_set_replication_mode>` with :ref:`REPLICATION_MODE_ON_CHANGE<class_SceneReplicationConfig_constant_REPLICATION_MODE_ON_CHANGE>` instead.
+**Deprecated:** Use :ref:`property_set_replication_mode()<class_SceneReplicationConfig_method_property_set_replication_mode>` with :ref:`REPLICATION_MODE_ON_CHANGE<class_SceneReplicationConfig_constant_REPLICATION_MODE_ON_CHANGE>` instead.
 
-设置给定 ``path`` 标识的属性是否被配置为在处理期间检测到更改时可靠地同步。
+Sets whether the property identified by the given ``path`` is configured to be reliably synchronized when changes are detected on process.
 
 .. rst-class:: classref-item-separator
 
@@ -253,14 +253,14 @@ enum **ReplicationMode**: :ref:`🔗<enum_SceneReplicationConfig_ReplicationMode
 
 |void| **remove_property**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SceneReplicationConfig_method_remove_property>`
 
-从配置中移除属性，该属性由 ``path`` 指定。
+Removes the property identified by the given ``path`` from the configuration.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

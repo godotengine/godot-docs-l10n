@@ -5,48 +5,48 @@
 Variant
 =======
 
-Godot 中最重要的数据类型。
+The most important data type in Godot.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-在计算机编程中，Variant（变体）类是用来存储各种其他类型的类。像 PHP、 Lua、 JavaScript 和 GDScript 这样的动态编程语言喜欢用它们在后端存储变量数据。使用 Variant，属性可以自由地更改值类型。
+In computer programming, a Variant class is a class that is designed to store a variety of other types. Dynamic programming languages like PHP, Lua, JavaScript and GDScript like to use them to store variables' data on the backend. With these Variants, properties are able to change value types freely.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var foo = 2 # foo 是动态类型的整数
-    foo = "现在 foo 是字符串！"
-    foo = RefCounted.new() # foo 是 Object
-    var bar: int = 2 # bar 是静态类型的整数。
-    # bar = "诶呀！我没法让静态类型的变量变成其他类型！"
+    var foo = 2 # foo is dynamically an integer
+    foo = "Now foo is a string!"
+    foo = RefCounted.new() # foo is an Object
+    var bar: int = 2 # bar is a statically typed integer.
+    # bar = "Uh oh! I can't make statically typed variables become a different type!"
 
  .. code-tab:: csharp
 
-    // C# 是静态类型的。变量设置类型后无法改变。你可以用 `var` 关键字让编译器自动推断类型。
-    var foo = 2; // foo 是 32 位整数（int）。请注意，GDScript 中的整数是 64 位的，在 C# 中与之等价的是 `long`。
-    // foo = "foo 过去、现在、将来都是整数，没法变成字符串！";
-    var boo = "boo 是字符串！";
-    var ref = new RefCounted(); // var 非常适合与构造函数配合使用。
+    // C# is statically typed. Once a variable has a type it cannot be changed. You can use the `var` keyword to let the compiler infer the type automatically.
+    var foo = 2; // Foo is a 32-bit integer (int). Be cautious, integers in GDScript are 64-bit and the direct C# equivalent is `long`.
+    // foo = "foo was and will always be an integer. It cannot be turned into a string!";
+    var boo = "Boo is a string!";
+    var ref = new RefCounted(); // var is especially useful when used together with a constructor.
 
-    // Godot 也提供了 Variant 类，类似于一个与所有 Variant 兼容类型的联合体。
-    Variant fooVar = 2; // fooVar 是动态类型的整数（在 Variant 类型中存储为 `long`）。
-    fooVar = "现在 fooVar 是字符串！";
-    fooVar = new RefCounted(); // fooVar 是 GodotObject。
+    // Godot also provides a Variant type that works like a union of all the Variant-compatible types.
+    Variant fooVar = 2; // fooVar is dynamically an integer (stored as a `long` in the Variant type).
+    fooVar = "Now fooVar is a string!";
+    fooVar = new RefCounted(); // fooVar is a GodotObject.
 
 
 
-Godot 在 Variant 中跟踪所有脚本 API 变量。你一直在无意中使用 Variant。某种语言为保持数据类型而执行自己的规则时，那么就是该语言在基础 Variant 脚本 API 上应用了自定义的逻辑。
+Godot tracks all scripting API variables within Variants. Without even realizing it, you use Variants all the time. When a particular language enforces its own rules for keeping data typed, then that language is applying its own custom logic over the base Variant scripting API.
 
-- GDScript 会自动将数值进行包装。默认情况下会将所有数据保存在普通的 Variant 中，也可以选择对变量类型执行自定义的静态类型规则。
+- GDScript automatically wrap values in them. It keeps all data in plain Variants by default and then optionally enforces custom static typing rules on variable types.
 
-- C# 是静态类型的，但是当它需要表示动态值时，就会在需要 Godot 的 Variant 类的地方使用它自己实现的 **Variant** 类型。C# Variant 可以用任意兼容类型隐式赋值，但反之则需要显式类型转换。
+- C# is statically typed, but uses its own implementation of the Variant type in place of Godot's **Variant** class when it needs to represent a dynamic value. C# Variant can be assigned any compatible type implicitly but converting requires an explicit cast.
 
-全局函数 :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>` 返回的是枚举类型的值，表示当前变量中所存储的 Variant 类型（见 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`\ ）。
+The global :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>` function returns the enumerated value of the Variant type stored in the current variable (see :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`).
 
 
 .. tabs::
@@ -56,15 +56,15 @@ Godot 在 Variant 中跟踪所有脚本 API 变量。你一直在无意中使用
     var foo = 2
     match typeof(foo):
         TYPE_NIL:
-            print("foo 为 null")
+            print("foo is null")
         TYPE_INT:
-            print("foo 为整数")
+            print("foo is an integer")
         TYPE_OBJECT:
-            # 请注意，Object 有自己的特殊分类。
-            # 要获取实际的 Object 类型名称，你需要使用 `get_class()` 方法。
-            print("foo is a(n) %s" % foo.get_class()) # 将类名注入格式字符串中。
-            # 请注意，获取到的并不是脚本的 `class_name` 全局名称。
-            # 如果要获取 `class_name`，请改用 `foo.get_script().get_global_name()`。
+            # Note that Objects are their own special category.
+            # To get the name of the underlying Object type, you need the `get_class()` method.
+            print("foo is a(n) %s" % foo.get_class()) # inject the class name into a formatted string.
+            # Note that this does not get the script's `class_name` global identifier.
+            # If the `class_name` is needed, use `foo.get_script().get_global_name()` instead.
 
  .. code-tab:: csharp
 
@@ -72,67 +72,67 @@ Godot 在 Variant 中跟踪所有脚本 API 变量。你一直在无意中使用
     switch (foo.VariantType)
     {
         case Variant.Type.Nil:
-            GD.Print("foo 为 null");
+            GD.Print("foo is null");
             break;
         case Variant.Type.Int:
-            GD.Print("foo 为整数");
+            GD.Print("foo is an integer");
             break;
         case Variant.Type.Object:
-            // 请注意，Object 有自己的特殊分类。
-            // 可以将 Variant 转换为 GodotObject，通过反射获取名称。
+            // Note that Objects are their own special category.
+            // You can convert a Variant to a GodotObject and use reflection to get its name.
             GD.Print($"foo is a(n) {foo.AsGodotObject().GetType().Name}");
             break;
     }
 
 
 
-Variant 只占 20 个字节，可以在其中存储几乎所有的引擎数据类型。Variant 很少用于长期保存信息，主要还是用于通信、编辑、序列化和移动数据。
+A Variant takes up only 20 bytes and can store almost any engine datatype inside of it. Variants are rarely used to hold information for long periods of time. Instead, they are used mainly for communication, editing, serialization and moving data around.
 
-Godot 特别致力于使其 Variant 类尽可能灵活；以使它可被用于各种操作，促进 Godot 所有系统之间的联系。
+Godot has specifically invested in making its Variant class as flexible as possible; so much so that it is used for a multitude of operations to facilitate communication between all of Godot's systems.
 
-Variant：
+A Variant:
 
-- 可以存储几乎任何数据类型。
+- Can store almost any datatype.
 
-- 可以在许多 Variant 之间执行操作。GDScript 使用 Variant 作为其原子/原生数据类型。
+- Can perform operations between many variants. GDScript uses Variant as its atomic/native datatype.
 
-- 可以被哈希，所以可以快速与其他 Variant 进行比较。
+- Can be hashed, so it can be compared quickly to other variants.
 
-- 可以用于数据类型之间的安全转换。
+- Can be used to convert safely between datatypes.
 
-- 可以用来抽象调用方法和它们的参数。Godot 通过 Variant 导出所有函数。
+- Can be used to abstract calling methods and their arguments. Godot exports all its functions through variants.
 
-- 可以用来推迟调用或在线程之间移动数据。
+- Can be used to defer calls or move data between threads.
 
-- 可以序列化为二进制并存储到磁盘，或通过网络传输。
+- Can be serialized as binary and stored to disk, or transferred via network.
 
-- 可以序列化为文本，用于打印数值和可编辑设置项。
+- Can be serialized to text and use it for printing values and editable settings.
 
-- 可以作为一个导出的属性工作，所以编辑器可以通用地进行编辑。
+- Can work as an exported property, so the editor can edit it universally.
 
-- 可以用于字典、数组、解析器等。
+- Can be used for dictionaries, arrays, parsers, etc.
 
-\ **容器（数组和字典）：**\ 它们都是用 Variant 来实现的。\ :ref:`Dictionary<class_Dictionary>` 可以将任何作为键的数据类型匹配到到任何其他数据类型。\ :ref:`Array<class_Array>` 就是持有 Variant 的数组。当然，Variant 也可以在里面再容纳 :ref:`Dictionary<class_Dictionary>` 和 :ref:`Array<class_Array>`\ ，使其更加灵活。
+\ **Containers (Array and Dictionary):** Both are implemented using variants. A :ref:`Dictionary<class_Dictionary>` can match any datatype used as key to any other datatype. An :ref:`Array<class_Array>` just holds an array of Variants. Of course, a Variant can also hold a :ref:`Dictionary<class_Dictionary>` and an :ref:`Array<class_Array>` inside, making it even more flexible.
 
-对容器的修改会修改所有对它的引用。如果需要多线程访问，应该创建 :ref:`Mutex<class_Mutex>` 来对它进行锁定。
+Modifications to a container will modify all references to it. A :ref:`Mutex<class_Mutex>` should be created to lock it if multi-threaded access is desired.
 
 .. note::
 
-	通过 C# 使用该 API 时会有显著不同，详见 :ref:`doc_c_sharp_differences`\ 。
+	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
-- :doc:`Variant 类简介 <../engine_details/architecture/variant_class>`
+- :doc:`Variant class introduction <../engine_details/architecture/variant_class>`
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

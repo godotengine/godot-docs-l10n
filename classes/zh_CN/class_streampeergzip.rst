@@ -5,25 +5,25 @@
 StreamPeerGZIP
 ==============
 
-**实验性：** This class may be changed or removed in future versions.
+**Experimental:** This class may be changed or removed in future versions.
 
-**继承：** :ref:`StreamPeer<class_StreamPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`StreamPeer<class_StreamPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-能够处理 GZIP 和 deflate 压缩/解压缩的流对等体。
+A stream peer that handles GZIP and deflate compression/decompression.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-这个类能够使用 GZIP/deflate 对数据进行流式压缩或解压缩。压缩或解压缩经过网络发送的文件时尤其有用，不必事先分配内存。
+This class allows to compress or decompress data using GZIP/deflate in a streaming fashion. This is particularly useful when compressing or decompressing files that have to be sent through the network without needing to allocate them all in memory.
 
-使用 :ref:`start_compression()<class_StreamPeerGZIP_method_start_compression>`\ （或 :ref:`start_decompression()<class_StreamPeerGZIP_method_start_decompression>`\ ）开启流之后，在这个流上调用 :ref:`StreamPeer.put_partial_data()<class_StreamPeer_method_put_partial_data>` 会对数据进行压缩（或解压缩）并写入内部缓冲区。调用 :ref:`StreamPeer.get_available_bytes()<class_StreamPeer_method_get_available_bytes>` 会返回内部缓冲区中待处理的字节数，\ :ref:`StreamPeer.get_partial_data()<class_StreamPeer_method_get_partial_data>` 会从中获取压缩后（或解压后）的字节。流结束后，你必须调用 :ref:`finish()<class_StreamPeerGZIP_method_finish>` 来确保正确清空内部缓冲区（请务必最后再调用一次 :ref:`StreamPeer.get_available_bytes()<class_StreamPeer_method_get_available_bytes>`\ ，检查此时是否还有需要读取的数据）。
+After starting the stream via :ref:`start_compression()<class_StreamPeerGZIP_method_start_compression>` (or :ref:`start_decompression()<class_StreamPeerGZIP_method_start_decompression>`), calling :ref:`StreamPeer.put_partial_data()<class_StreamPeer_method_put_partial_data>` on this stream will compress (or decompress) the data, writing it to the internal buffer. Calling :ref:`StreamPeer.get_available_bytes()<class_StreamPeer_method_get_available_bytes>` will return the pending bytes in the internal buffer, and :ref:`StreamPeer.get_partial_data()<class_StreamPeer_method_get_partial_data>` will retrieve the compressed (or decompressed) bytes from it. When the stream is over, you must call :ref:`finish()<class_StreamPeerGZIP_method_finish>` to ensure the internal buffer is properly flushed (make sure to call :ref:`StreamPeer.get_available_bytes()<class_StreamPeer_method_get_available_bytes>` on last time to check if more data needs to be read after that).
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ StreamPeerGZIP
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_StreamPeerGZIP_method_clear:
 
@@ -53,7 +53,7 @@ StreamPeerGZIP
 
 |void| **clear**\ (\ ) :ref:`🔗<class_StreamPeerGZIP_method_clear>`
 
-清空该流，重设内部状态。
+Clears this stream, resetting the internal state.
 
 .. rst-class:: classref-item-separator
 
@@ -65,9 +65,9 @@ StreamPeerGZIP
 
 :ref:`Error<enum_@GlobalScope_Error>` **finish**\ (\ ) :ref:`🔗<class_StreamPeerGZIP_method_finish>`
 
-终止该流，对缓冲中剩余的数据块进行压缩。
+Finalizes the stream, compressing any buffered chunk left.
 
-只有在压缩时才能调用。
+You must call it only when you are compressing.
 
 .. rst-class:: classref-item-separator
 
@@ -79,7 +79,7 @@ StreamPeerGZIP
 
 :ref:`Error<enum_@GlobalScope_Error>` **start_compression**\ (\ use_deflate\: :ref:`bool<class_bool>` = false, buffer_size\: :ref:`int<class_int>` = 65535\ ) :ref:`🔗<class_StreamPeerGZIP_method_start_compression>`
 
-开始压缩模式的流，缓冲区大小为 ``buffer_size``\ ，如果 ``use_deflate`` 为 ``true`` 则使用 deflate 而不是 GZIP。
+Start the stream in compression mode with the given ``buffer_size``, if ``use_deflate`` is ``true`` uses deflate instead of GZIP.
 
 .. rst-class:: classref-item-separator
 
@@ -91,14 +91,14 @@ StreamPeerGZIP
 
 :ref:`Error<enum_@GlobalScope_Error>` **start_decompression**\ (\ use_deflate\: :ref:`bool<class_bool>` = false, buffer_size\: :ref:`int<class_int>` = 65535\ ) :ref:`🔗<class_StreamPeerGZIP_method_start_decompression>`
 
-开始解压模式的流，缓冲区大小为 ``buffer_size``\ ，如果 ``use_deflate`` 为 ``true`` 则使用 deflate 而不是 GZIP。
+Start the stream in decompression mode with the given ``buffer_size``, if ``use_deflate`` is ``true`` uses deflate instead of GZIP.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

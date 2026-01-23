@@ -5,20 +5,20 @@
 UDPServer
 =========
 
-**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用于实现 UDP 服务器的辅助类。
+Helper class to implement a UDP server.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-简易服务器，会打开 UDP 套接字，并在收到新数据包时返回已连接的 :ref:`PacketPeerUDP<class_PacketPeerUDP>`\ 。另见 :ref:`PacketPeerUDP.connect_to_host()<class_PacketPeerUDP_method_connect_to_host>`\ 。
+A simple server that opens a UDP socket and returns connected :ref:`PacketPeerUDP<class_PacketPeerUDP>` upon receiving new packets. See also :ref:`PacketPeerUDP.connect_to_host()<class_PacketPeerUDP_method_connect_to_host>`.
 
-服务器启动后（\ :ref:`listen()<class_UDPServer_method_listen>`\ ），你需要调用 :ref:`poll()<class_UDPServer_method_poll>` 按照一定的间隔轮询（例如在 :ref:`Node._process()<class_Node_private_method__process>` 中）才能处理新数据包、将它们传递给合适的 :ref:`PacketPeerUDP<class_PacketPeerUDP>`\ 、获取新连接。
+After starting the server (:ref:`listen()<class_UDPServer_method_listen>`), you will need to :ref:`poll()<class_UDPServer_method_poll>` it at regular intervals (e.g. inside :ref:`Node._process()<class_Node_private_method__process>`) for it to process new packets, delivering them to the appropriate :ref:`PacketPeerUDP<class_PacketPeerUDP>`, and taking new connections.
 
-下面是简单的用法示例：
+Below a small example of how it can be used:
 
 
 .. tabs::
@@ -36,19 +36,19 @@ UDPServer
         server.listen(4242)
 
     func _process(delta):
-        server.poll() # 重要！
+        server.poll() # Important!
         if server.is_connection_available():
             var peer = server.take_connection()
             var packet = peer.get_packet()
-            print("接受对等体：%s:%s" % [peer.get_packet_ip(), peer.get_packet_port()])
-            print("接收到数据：%s" % [packet.get_string_from_utf8()])
-            # 进行回复，这样对方就知道我们收到了消息。
+            print("Accepted peer: %s:%s" % [peer.get_packet_ip(), peer.get_packet_port()])
+            print("Received data: %s" % [packet.get_string_from_utf8()])
+            # Reply so it knows we received the message.
             peer.put_packet(packet)
-            # 保持引用，这样我们就能继续与远程对等体联系。
+            # Keep a reference so we can keep contacting the remote peer.
             peers.append(peer)
 
         for i in range(0, peers.size()):
-            pass # 针对已连接的对等体进行操作。
+            pass # Do something with the connected peers.
 
  .. code-tab:: csharp
 
@@ -68,21 +68,21 @@ UDPServer
 
         public override void _Process(double delta)
         {
-            _server.Poll(); // 重要！
+            _server.Poll(); // Important!
             if (_server.IsConnectionAvailable())
             {
                 PacketPeerUdp peer = _server.TakeConnection();
                 byte[] packet = peer.GetPacket();
-                GD.Print($"接受对等体：{peer.GetPacketIP()}:{peer.GetPacketPort()}");
-                GD.Print($"接收到数据：{packet.GetStringFromUtf8()}");
-                // 进行回复，这样对方就知道我们收到了消息。
+                GD.Print($"Accepted Peer: {peer.GetPacketIP()}:{peer.GetPacketPort()}");
+                GD.Print($"Received Data: {packet.GetStringFromUtf8()}");
+                // Reply so it knows we received the message.
                 peer.PutPacket(packet);
-                // 保持引用，这样我们就能继续与远程对等体联系。
+                // Keep a reference so we can keep contacting the remote peer.
                 _peers.Add(peer);
             }
             foreach (var peer in _peers)
             {
-                // 针对已连接的对等体进行操作。
+                // Do something with the peers.
             }
         }
     }
@@ -106,10 +106,10 @@ UDPServer
 
     func _process(delta):
         if !connected:
-            # 尝试连接服务器
-            udp.put_packet("答案是……42！".to_utf8_buffer())
+            # Try to contact server
+            udp.put_packet("The answer is... 42!".to_utf8_buffer())
         if udp.get_available_packet_count() > 0:
-            print("已连接：%s" % udp.get_packet().get_string_from_utf8())
+            print("Connected: %s" % udp.get_packet().get_string_from_utf8())
             connected = true
 
  .. code-tab:: csharp
@@ -131,12 +131,12 @@ UDPServer
         {
             if (!_connected)
             {
-                // 尝试联系服务器
-                _udp.PutPacket("答案是……42！".ToUtf8Buffer());
+                // Try to contact server
+                _udp.PutPacket("The Answer Is..42!".ToUtf8Buffer());
             }
             if (_udp.GetAvailablePacketCount() > 0)
             {
-                GD.Print($"已连接：{_udp.GetPacket().GetStringFromUtf8()}");
+                GD.Print($"Connected: {_udp.GetPacket().GetStringFromUtf8()}");
                 _connected = true;
             }
         }
@@ -146,8 +146,8 @@ UDPServer
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -158,8 +158,8 @@ UDPServer
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -186,8 +186,8 @@ UDPServer
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_UDPServer_property_max_pending_connections:
 
@@ -200,7 +200,7 @@ UDPServer
 - |void| **set_max_pending_connections**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_pending_connections**\ (\ )
 
-定义最大的待定连接数，在\ :ref:`poll()<class_UDPServer_method_poll>`\ 期间，任何超过该值的新待定连接将被自动放弃。把这个值设置为\ ``0``\ 可以有效地防止任何新的待定连接被接受，例如，当你的所有玩家都连接时。
+Define the maximum number of pending connections, during :ref:`poll()<class_UDPServer_method_poll>`, any new pending connection exceeding that value will be automatically dropped. Setting this value to ``0`` effectively prevents any new pending connection to be accepted (e.g. when all your players have connected).
 
 .. rst-class:: classref-section-separator
 
@@ -208,8 +208,8 @@ UDPServer
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_UDPServer_method_get_local_port:
 
@@ -217,7 +217,7 @@ UDPServer
 
 :ref:`int<class_int>` **get_local_port**\ (\ ) |const| :ref:`🔗<class_UDPServer_method_get_local_port>`
 
-返回该服务器正在监听的本地端口。
+Returns the local port this server is listening to.
 
 .. rst-class:: classref-item-separator
 
@@ -229,7 +229,7 @@ UDPServer
 
 :ref:`bool<class_bool>` **is_connection_available**\ (\ ) |const| :ref:`🔗<class_UDPServer_method_is_connection_available>`
 
-如果在套接字中收到一个具有新地址及端口组合的数据包，则返回 ``true``\ 。
+Returns ``true`` if a packet with a new address/port combination was received on the socket.
 
 .. rst-class:: classref-item-separator
 
@@ -241,7 +241,7 @@ UDPServer
 
 :ref:`bool<class_bool>` **is_listening**\ (\ ) |const| :ref:`🔗<class_UDPServer_method_is_listening>`
 
-如果套接字是打开的，并且在监听端口，则返回 ``true``\ 。
+Returns ``true`` if the socket is open and listening on a port.
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +253,7 @@ UDPServer
 
 :ref:`Error<enum_@GlobalScope_Error>` **listen**\ (\ port\: :ref:`int<class_int>`, bind_address\: :ref:`String<class_String>` = "*"\ ) :ref:`🔗<class_UDPServer_method_listen>`
 
-启动服务器，打开监听给定端口 ``port`` 的 UDP 套接字。还可以指定 ``bind_address``\ ，仅监听发送至该地址的数据包。另见 :ref:`PacketPeerUDP.bind()<class_PacketPeerUDP_method_bind>`\ 。
+Starts the server by opening a UDP socket listening on the given ``port``. You can optionally specify a ``bind_address`` to only listen for packets sent to that address. See also :ref:`PacketPeerUDP.bind()<class_PacketPeerUDP_method_bind>`.
 
 .. rst-class:: classref-item-separator
 
@@ -265,7 +265,7 @@ UDPServer
 
 :ref:`Error<enum_@GlobalScope_Error>` **poll**\ (\ ) :ref:`🔗<class_UDPServer_method_poll>`
 
-定期调用这个方法（例如在 :ref:`Node._process()<class_Node_private_method__process>` 中）处理新数据包。来自已知地址、端口对的数据包将被传递到相应的 :ref:`PacketPeerUDP<class_PacketPeerUDP>`\ ，任何从未知地址、端口对收到的数据包将被添加为待定的连接（见 :ref:`is_connection_available()<class_UDPServer_method_is_connection_available>`\ 、\ :ref:`take_connection()<class_UDPServer_method_take_connection>`\ ）。待定连接的最大数量由 :ref:`max_pending_connections<class_UDPServer_property_max_pending_connections>` 定义。
+Call this method at regular intervals (e.g. inside :ref:`Node._process()<class_Node_private_method__process>`) to process new packets. Any packet from a known address/port pair will be delivered to the appropriate :ref:`PacketPeerUDP<class_PacketPeerUDP>`, while any packet received from an unknown address/port pair will be added as a pending connection (see :ref:`is_connection_available()<class_UDPServer_method_is_connection_available>` and :ref:`take_connection()<class_UDPServer_method_take_connection>`). The maximum number of pending connections is defined via :ref:`max_pending_connections<class_UDPServer_property_max_pending_connections>`.
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ UDPServer
 
 |void| **stop**\ (\ ) :ref:`🔗<class_UDPServer_method_stop>`
 
-停止服务器，如果 UDP 套接字处于打开状态，就关闭它。将关闭所有通过 :ref:`take_connection()<class_UDPServer_method_take_connection>` 接受连接的 :ref:`PacketPeerUDP<class_PacketPeerUDP>`\ （不会通知远程对等体）。
+Stops the server, closing the UDP socket if open. Will close all connected :ref:`PacketPeerUDP<class_PacketPeerUDP>` accepted via :ref:`take_connection()<class_UDPServer_method_take_connection>` (remote peers will not be notified).
 
 .. rst-class:: classref-item-separator
 
@@ -289,14 +289,14 @@ UDPServer
 
 :ref:`PacketPeerUDP<class_PacketPeerUDP>` **take_connection**\ (\ ) :ref:`🔗<class_UDPServer_method_take_connection>`
 
-返回第一个挂起的连接（连接到适当的地址及端口）。如果没有新的连接可用，将返回 ``null``\ 。另见 :ref:`is_connection_available()<class_UDPServer_method_is_connection_available>`\ 、\ :ref:`PacketPeerUDP.connect_to_host()<class_PacketPeerUDP_method_connect_to_host>`\ 。
+Returns the first pending connection (connected to the appropriate address/port). Will return ``null`` if no new connection is available. See also :ref:`is_connection_available()<class_UDPServer_method_is_connection_available>`, :ref:`PacketPeerUDP.connect_to_host()<class_PacketPeerUDP_method_connect_to_host>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

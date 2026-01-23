@@ -5,21 +5,21 @@
 PhysicsTestMotionResult3D
 =========================
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-描述 :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>` 的運動和碰撞結果。
+Describes the motion and collision result from :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-描述 :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>` 的運動和碰撞結果。
+Describes the motion and collision result from :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>`.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -60,8 +60,8 @@ PhysicsTestMotionResult3D
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_PhysicsTestMotionResult3D_method_get_collider:
 
@@ -69,7 +69,7 @@ PhysicsTestMotionResult3D
 
 :ref:`Object<class_Object>` **get_collider**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult3D_method_get_collider>`
 
-如果發生了碰撞，則返回相撞物體所附加的 :ref:`Object<class_Object>`\ ，碰撞物體由碰撞索引指定（預設為最深的碰撞）。見 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`\ 。
+Returns the colliding body's attached :ref:`Object<class_Object>` given a collision index (the deepest collision by default), if a collision occurred.
 
 .. rst-class:: classref-item-separator
 
@@ -81,7 +81,7 @@ PhysicsTestMotionResult3D
 
 :ref:`int<class_int>` **get_collider_id**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult3D_method_get_collider_id>`
 
-如果發生了碰撞，則返回相撞物體所附加 :ref:`Object<class_Object>` 的唯一實例 ID，碰撞物體由碰撞索引指定（預設為最深的碰撞）。見 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`\ 。
+Returns the unique instance ID of the colliding body's attached :ref:`Object<class_Object>` given a collision index (the deepest collision by default), if a collision occurred. See :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`.
 
 .. rst-class:: classref-item-separator
 
@@ -93,7 +93,7 @@ PhysicsTestMotionResult3D
 
 :ref:`RID<class_RID>` **get_collider_rid**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult3D_method_get_collider_rid>`
 
-如果發生了碰撞，則返回相撞物體在 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 中使用的 :ref:`RID<class_RID>`\ ，碰撞物體由碰撞索引指定（預設為最深的碰撞）。見 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`\ 。
+Returns the colliding body's :ref:`RID<class_RID>` used by the :ref:`PhysicsServer3D<class_PhysicsServer3D>` given a collision index (the deepest collision by default), if a collision occurred.
 
 .. rst-class:: classref-item-separator
 
@@ -105,7 +105,7 @@ PhysicsTestMotionResult3D
 
 :ref:`int<class_int>` **get_collider_shape**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult3D_method_get_collider_shape>`
 
-如果發生了碰撞，則返回相撞物體形狀的索引，碰撞物體由碰撞索引指定（預設為最深的碰撞）。見 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`\ 。
+Returns the colliding body's shape index given a collision index (the deepest collision by default), if a collision occurred. See :ref:`CollisionObject3D<class_CollisionObject3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ PhysicsTestMotionResult3D
 
 :ref:`Vector3<class_Vector3>` **get_collider_velocity**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult3D_method_get_collider_velocity>`
 
-如果發生了碰撞，則返回相撞物體的速度。見 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`\ 。
+Returns the colliding body's velocity given a collision index (the deepest collision by default), if a collision occurred.
 
 .. rst-class:: classref-item-separator
 
@@ -129,7 +129,7 @@ PhysicsTestMotionResult3D
 
 :ref:`int<class_int>` **get_collision_count**\ (\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult3D_method_get_collision_count>`
 
-返回偵測到的碰撞次數。
+Returns the number of detected collisions.
 
 .. rst-class:: classref-item-separator
 
@@ -141,7 +141,7 @@ PhysicsTestMotionResult3D
 
 :ref:`float<class_float>` **get_collision_depth**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult3D_method_get_collision_depth>`
 
-如果發生了碰撞，則在給定碰撞索引（預設為最深碰撞）的情況下，返回沿碰撞法線的重疊長度。
+Returns the length of overlap along the collision normal given a collision index (the deepest collision by default), if a collision occurred.
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ PhysicsTestMotionResult3D
 
 :ref:`int<class_int>` **get_collision_local_shape**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult3D_method_get_collision_local_shape>`
 
-如果發生了碰撞，則在給定碰撞索引（預設為最深碰撞）的情況下，返回移動物件的碰撞形狀。
+Returns the moving object's colliding shape given a collision index (the deepest collision by default), if a collision occurred.
 
 .. rst-class:: classref-item-separator
 
@@ -165,7 +165,7 @@ PhysicsTestMotionResult3D
 
 :ref:`Vector3<class_Vector3>` **get_collision_normal**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult3D_method_get_collision_normal>`
 
-如果發生了碰撞，則在給定碰撞索引（預設為最深碰撞）的情況下，返回碰撞物體形狀在碰撞點處的法線。
+Returns the colliding body's shape's normal at the point of collision given a collision index (the deepest collision by default), if a collision occurred.
 
 .. rst-class:: classref-item-separator
 
@@ -177,7 +177,7 @@ PhysicsTestMotionResult3D
 
 :ref:`Vector3<class_Vector3>` **get_collision_point**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult3D_method_get_collision_point>`
 
-如果發生了碰撞，則在給定碰撞索引（預設為最深碰撞）的情況下，返回使用全域座標表示的碰撞點。
+Returns the point of collision in global coordinates given a collision index (the deepest collision by default), if a collision occurred.
 
 .. rst-class:: classref-item-separator
 
@@ -189,7 +189,7 @@ PhysicsTestMotionResult3D
 
 :ref:`float<class_float>` **get_collision_safe_fraction**\ (\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult3D_method_get_collision_safe_fraction>`
 
-返回可以運動但不發生碰撞的最大比例，在 ``0`` 和 ``1`` 之間。
+Returns the maximum fraction of the motion that can occur without a collision, between ``0`` and ``1``.
 
 .. rst-class:: classref-item-separator
 
@@ -201,7 +201,7 @@ PhysicsTestMotionResult3D
 
 :ref:`float<class_float>` **get_collision_unsafe_fraction**\ (\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult3D_method_get_collision_unsafe_fraction>`
 
-如果發生了碰撞，則返回碰撞運動所需的最小摩擦力，在 ``0`` 和 ``1`` 之間。
+Returns the minimum fraction of the motion needed to collide, if a collision occurred, between ``0`` and ``1``.
 
 .. rst-class:: classref-item-separator
 
@@ -213,7 +213,7 @@ PhysicsTestMotionResult3D
 
 :ref:`Vector3<class_Vector3>` **get_remainder**\ (\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult3D_method_get_remainder>`
 
-返回移動對象的剩餘移動向量。
+Returns the moving object's remaining movement vector.
 
 .. rst-class:: classref-item-separator
 
@@ -225,14 +225,14 @@ PhysicsTestMotionResult3D
 
 :ref:`Vector3<class_Vector3>` **get_travel**\ (\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult3D_method_get_travel>`
 
-返回移動物件的在碰撞前的運動。
+Returns the moving object's travel before collision.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

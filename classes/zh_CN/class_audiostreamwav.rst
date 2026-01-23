@@ -5,30 +5,30 @@
 AudioStreamWAV
 ==============
 
-**继承：** :ref:`AudioStream<class_AudioStream>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`AudioStream<class_AudioStream>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-存储从 WAV 文件加载的音频数据。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-AudioStreamWAV 存储从 WAV 文件加载的声音样本。要播放存储的声音，请使用 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`\ （用于非空间定位音频）或 :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>`/:ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>`\ （用于空间定位音频）。声音可以循环播放。
-
-这个类还可用于存储动态生成的 PCM 音频数据。另见 :ref:`AudioStreamGenerator<class_AudioStreamGenerator>` 以了解程序化音频生成。
+Stores audio data loaded from WAV files.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`运行时文件加载与保存 <../tutorials/io/runtime_file_loading_and_saving>`
+AudioStreamWAV stores sound samples loaded from WAV files. To play the stored sound, use an :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` (for non-positional audio) or :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>`/:ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` (for positional audio). The sound can be looped.
+
+This class can also be used to store dynamically-generated PCM audio data. See also :ref:`AudioStreamGenerator<class_AudioStreamGenerator>` for procedural audio generation.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Runtime file loading and saving <../tutorials/io/runtime_file_loading_and_saving>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ AudioStreamWAV 存储从 WAV 文件加载的声音样本。要播放存储的声
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -73,8 +73,8 @@ AudioStreamWAV 存储从 WAV 文件加载的声音样本。要播放存储的声
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_AudioStreamWAV_Format:
 
@@ -88,7 +88,7 @@ enum **Format**: :ref:`🔗<enum_AudioStreamWAV_Format>`
 
 :ref:`Format<enum_AudioStreamWAV_Format>` **FORMAT_8_BITS** = ``0``
 
-8 位 PCM 音频编解码器。
+8-bit PCM audio codec.
 
 .. _class_AudioStreamWAV_constant_FORMAT_16_BITS:
 
@@ -96,7 +96,7 @@ enum **Format**: :ref:`🔗<enum_AudioStreamWAV_Format>`
 
 :ref:`Format<enum_AudioStreamWAV_Format>` **FORMAT_16_BITS** = ``1``
 
-16 位 PCM 音频编解码器。
+16-bit PCM audio codec.
 
 .. _class_AudioStreamWAV_constant_FORMAT_IMA_ADPCM:
 
@@ -104,7 +104,7 @@ enum **Format**: :ref:`🔗<enum_AudioStreamWAV_Format>`
 
 :ref:`Format<enum_AudioStreamWAV_Format>` **FORMAT_IMA_ADPCM** = ``2``
 
-音频按照 IMA ADPCM 进行有损压缩。
+Audio is lossily compressed as IMA ADPCM.
 
 .. _class_AudioStreamWAV_constant_FORMAT_QOA:
 
@@ -112,7 +112,7 @@ enum **Format**: :ref:`🔗<enum_AudioStreamWAV_Format>`
 
 :ref:`Format<enum_AudioStreamWAV_Format>` **FORMAT_QOA** = ``3``
 
-音频按照 `Quite OK Audio <https://qoaformat.org/>`__ 进行有损压缩。
+Audio is lossily compressed as `Quite OK Audio <https://qoaformat.org/>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -130,7 +130,7 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 
 :ref:`LoopMode<enum_AudioStreamWAV_LoopMode>` **LOOP_DISABLED** = ``0``
 
-音频不循环。
+Audio does not loop.
 
 .. _class_AudioStreamWAV_constant_LOOP_FORWARD:
 
@@ -138,7 +138,7 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 
 :ref:`LoopMode<enum_AudioStreamWAV_LoopMode>` **LOOP_FORWARD** = ``1``
 
-音频在 :ref:`loop_begin<class_AudioStreamWAV_property_loop_begin>` 和 :ref:`loop_end<class_AudioStreamWAV_property_loop_end>` 之间循环数据，仅向前播放。
+Audio loops the data between :ref:`loop_begin<class_AudioStreamWAV_property_loop_begin>` and :ref:`loop_end<class_AudioStreamWAV_property_loop_end>`, playing forward only.
 
 .. _class_AudioStreamWAV_constant_LOOP_PINGPONG:
 
@@ -146,7 +146,7 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 
 :ref:`LoopMode<enum_AudioStreamWAV_LoopMode>` **LOOP_PINGPONG** = ``2``
 
-音频在 :ref:`loop_begin<class_AudioStreamWAV_property_loop_begin>` 和 :ref:`loop_end<class_AudioStreamWAV_property_loop_end>` 之间循环数据，来回播放。
+Audio loops the data between :ref:`loop_begin<class_AudioStreamWAV_property_loop_begin>` and :ref:`loop_end<class_AudioStreamWAV_property_loop_end>`, playing back and forth.
 
 .. _class_AudioStreamWAV_constant_LOOP_BACKWARD:
 
@@ -154,7 +154,7 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 
 :ref:`LoopMode<enum_AudioStreamWAV_LoopMode>` **LOOP_BACKWARD** = ``3``
 
-音频在 :ref:`loop_begin<class_AudioStreamWAV_property_loop_begin>` 和 :ref:`loop_end<class_AudioStreamWAV_property_loop_end>` 之间循环数据，仅向后播放。
+Audio loops the data between :ref:`loop_begin<class_AudioStreamWAV_property_loop_begin>` and :ref:`loop_end<class_AudioStreamWAV_property_loop_end>`, playing backward only.
 
 .. rst-class:: classref-section-separator
 
@@ -162,8 +162,8 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_AudioStreamWAV_property_data:
 
@@ -176,11 +176,11 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 - |void| **set_data**\ (\ value\: :ref:`PackedByteArray<class_PackedByteArray>`\ )
 - :ref:`PackedByteArray<class_PackedByteArray>` **get_data**\ (\ )
 
-包含音频的字节数据。
+Contains the audio data in bytes.
 
-\ **注意：**\ 如果 :ref:`format<class_AudioStreamWAV_property_format>` 为 :ref:`FORMAT_8_BITS<class_AudioStreamWAV_constant_FORMAT_8_BITS>`\ ，该属性应为带符号 8 位 PCM 数据。从无符号 8 位 PCM 数据转换时，请将每个字节减去 128。
+\ **Note:** If :ref:`format<class_AudioStreamWAV_property_format>` is set to :ref:`FORMAT_8_BITS<class_AudioStreamWAV_constant_FORMAT_8_BITS>`, this property expects signed 8-bit PCM data. To convert from unsigned 8-bit PCM, subtract 128 from each byte.
 
-\ **注意：**\ 如果 :ref:`format<class_AudioStreamWAV_property_format>` 为 :ref:`FORMAT_QOA<class_AudioStreamWAV_constant_FORMAT_QOA>`\ ，该属性应为完整 QOA 文件的数据。
+\ **Note:** If :ref:`format<class_AudioStreamWAV_property_format>` is set to :ref:`FORMAT_QOA<class_AudioStreamWAV_constant_FORMAT_QOA>`, this property expects data from a full QOA file.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
@@ -199,7 +199,7 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 - |void| **set_format**\ (\ value\: :ref:`Format<enum_AudioStreamWAV_Format>`\ )
 - :ref:`Format<enum_AudioStreamWAV_Format>` **get_format**\ (\ )
 
-音频格式。
+Audio format.
 
 .. rst-class:: classref-item-separator
 
@@ -216,7 +216,7 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 - |void| **set_loop_begin**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_loop_begin**\ (\ )
 
-循环起始点（单位为采样数，相对于该流开头）。
+The loop start point (in number of samples, relative to the beginning of the stream).
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 - |void| **set_loop_end**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_loop_end**\ (\ )
 
-循环结束点（单位为采样数，相对于该流开头）。
+The loop end point (in number of samples, relative to the beginning of the stream).
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 - |void| **set_loop_mode**\ (\ value\: :ref:`LoopMode<enum_AudioStreamWAV_LoopMode>`\ )
 - :ref:`LoopMode<enum_AudioStreamWAV_LoopMode>` **get_loop_mode**\ (\ )
 
-循环模式。
+The loop mode.
 
 .. rst-class:: classref-item-separator
 
@@ -267,11 +267,11 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 - |void| **set_mix_rate**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_mix_rate**\ (\ )
 
-混合这个音频的采样率。更高的数值需要更多的存储空间，但会带来更好的质量。
+The sample rate for mixing this audio. Higher values require more storage space, but result in better quality.
 
-在游戏中，常用的采样率有 ``11025``\ 、\ ``16000``\ 、\ ``22050``\ 、\ ``32000``\ 、\ ``44100``\ 、\ ``48000``\ 。
+In games, common sample rates in use are ``11025``, ``16000``, ``22050``, ``32000``, ``44100``, and ``48000``.
 
-根据\ `奈奎斯特–香农采样定理 <https://zh.wikipedia.org/wiki/%E9%87%87%E6%A0%B7%E5%AE%9A%E7%90%86>`__\ ，当超过 40000 赫兹时，人类的听觉没有质量上的差别（因为大多数人只能听到 ~20000 赫兹，往往更少）。如果你要使用语音等音高较低的声音，则可以使用 ``32000`` 或 ``22050`` 等较低的采样率，不会降低质量。
+According to the `Nyquist-Shannon sampling theorem <https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem>`__, there is no quality difference to human hearing when going past 40,000 Hz (since most humans can only hear up to ~20,000 Hz, often less). If you are using lower-pitched sounds such as voices, lower sample rates such as ``32000`` or ``22050`` may be usable with no loss in quality.
 
 .. rst-class:: classref-item-separator
 
@@ -288,7 +288,7 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 - |void| **set_stereo**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_stereo**\ (\ )
 
-如果为 ``true``\ ，则音频为立体声。
+If ``true``, audio is stereo.
 
 .. rst-class:: classref-item-separator
 
@@ -305,13 +305,13 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 - |void| **set_tags**\ (\ value\: :ref:`Dictionary<class_Dictionary>`\ )
 - :ref:`Dictionary<class_Dictionary>` **get_tags**\ (\ )
 
-如果在 WAV 数据中存在标签，则包含用户定义的标签。
+Contains user-defined tags if found in the WAV data.
 
-常用标签包括标题 ``title``\ 、艺术家 ``artist``\ 、专辑 ``album``\ 、音轨号 ``tracknumber``\ 、日期 ``date``\ （\ ``date`` 没有标准日期格式）。
+Commonly used tags include ``title``, ``artist``, ``album``, ``tracknumber``, and ``date`` (``date`` does not have a standard date format).
 
-\ **注意：**\ 无法\ *保证*\ 每个文件中都有某个标签，因此请考虑键可能不是始终存在。
+\ **Note:** No tag is *guaranteed* to be present in every file, so make sure to account for the keys not always existing.
 
-\ **注意：**\ 目前仅支持使用 ``LIST`` 块并且标识符为 ``INFO`` 的 WAV 文件编码标签。
+\ **Note:** Only WAV files using a ``LIST`` chunk with an identifier of ``INFO`` to encode the tags are currently supported.
 
 .. rst-class:: classref-section-separator
 
@@ -319,8 +319,8 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_AudioStreamWAV_method_load_from_buffer:
 
@@ -328,9 +328,9 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 
 :ref:`AudioStreamWAV<class_AudioStreamWAV>` **load_from_buffer**\ (\ stream_data\: :ref:`PackedByteArray<class_PackedByteArray>`, options\: :ref:`Dictionary<class_Dictionary>` = {}\ ) |static| :ref:`🔗<class_AudioStreamWAV_method_load_from_buffer>`
 
-从给定缓冲区新建 **AudioStreamWAV** 实例。缓冲区中必须包含 WAV 数据。
+Creates a new **AudioStreamWAV** instance from the given buffer. The buffer must contain WAV data.
 
-\ ``options`` 中的键值对与 :ref:`ResourceImporterWAV<class_ResourceImporterWAV>` 的属性对应。\ ``options`` 的用法与 :ref:`load_from_file()<class_AudioStreamWAV_method_load_from_file>` 一致。
+The keys and values of ``options`` match the properties of :ref:`ResourceImporterWAV<class_ResourceImporterWAV>`. The usage of ``options`` is identical to :ref:`load_from_file()<class_AudioStreamWAV_method_load_from_file>`.
 
 .. rst-class:: classref-item-separator
 
@@ -342,11 +342,11 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 
 :ref:`AudioStreamWAV<class_AudioStreamWAV>` **load_from_file**\ (\ path\: :ref:`String<class_String>`, options\: :ref:`Dictionary<class_Dictionary>` = {}\ ) |static| :ref:`🔗<class_AudioStreamWAV_method_load_from_file>`
 
-从给定的文件路径新建 **AudioStreamWAV** 实例。文件必须为 WAV 格式。
+Creates a new **AudioStreamWAV** instance from the given file path. The file must be in WAV format.
 
-\ ``options`` 中的键值对与 :ref:`ResourceImporterWAV<class_ResourceImporterWAV>` 的属性对应。
+The keys and values of ``options`` match the properties of :ref:`ResourceImporterWAV<class_ResourceImporterWAV>`.
 
-\ **示例：**\ 将拖放的第一个文件作为 WAV 加载并播放：
+\ **Example:** Load the first file dropped as a WAV and play it:
 
 ::
 
@@ -373,16 +373,16 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_to_wav**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AudioStreamWAV_method_save_to_wav>`
 
-将 AudioStreamWAV 作为 WAV 文件保存到 ``path``\ 。无法保存 IMA ADPCM 或 Quite OK Audio 格式的样本。
+Saves the AudioStreamWAV as a WAV file to ``path``. Samples with IMA ADPCM or Quite OK Audio formats can't be saved.
 
-\ **注意：**\ 如果缺少 ``.wav`` 扩展名，则会自动将其追加到 ``path``\ 。
+\ **Note:** A ``.wav`` extension is automatically appended to ``path`` if it is missing.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

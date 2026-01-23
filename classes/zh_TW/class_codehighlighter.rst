@@ -5,21 +5,21 @@
 CodeHighlighter
 ===============
 
-**繼承：** :ref:`SyntaxHighlighter<class_SyntaxHighlighter>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`SyntaxHighlighter<class_SyntaxHighlighter>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用於程式碼的語法高亮器。
+A syntax highlighter intended for code.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-通過調整該資源的各種屬性，可以更改 :ref:`TextEdit<class_TextEdit>` 控制項內的字串、注釋、數位、和其他文字圖案的顏色。
+By adjusting various properties of this resource, you can change the colors of strings, comments, numbers, and other text patterns inside a :ref:`TextEdit<class_TextEdit>` control.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ CodeHighlighter
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -84,8 +84,8 @@ CodeHighlighter
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_CodeHighlighter_property_color_regions:
 
@@ -98,7 +98,7 @@ CodeHighlighter
 - |void| **set_color_regions**\ (\ value\: :ref:`Dictionary<class_Dictionary>`\ )
 - :ref:`Dictionary<class_Dictionary>` **get_color_regions**\ (\ )
 
-設定顏色區域。現有區域都將被移除。\ :ref:`Dictionary<class_Dictionary>` 的鍵為該區域的開始鍵和結束鍵，用空格隔開。對應的值為區域的顏色。
+Sets the color regions. All existing regions will be removed. The :ref:`Dictionary<class_Dictionary>` key is the region start and end key, separated by a space. The value is the region color.
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +115,7 @@ CodeHighlighter
 - |void| **set_function_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_function_color**\ (\ )
 
-設定函式的顏色。函式是後跟“(”的非關鍵字字串。
+Sets color for functions. A function is a non-keyword string followed by a '('.
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ CodeHighlighter
 - |void| **set_keyword_colors**\ (\ value\: :ref:`Dictionary<class_Dictionary>`\ )
 - :ref:`Dictionary<class_Dictionary>` **get_keyword_colors**\ (\ )
 
-設定關鍵字的顏色。現有關鍵字都將被移除。\ :ref:`Dictionary<class_Dictionary>` 的鍵為關鍵字。對應的值為關鍵字的顏色。
+Sets the keyword colors. All existing keywords will be removed. The :ref:`Dictionary<class_Dictionary>` key is the keyword. The value is the keyword color.
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ CodeHighlighter
 - |void| **set_member_keyword_colors**\ (\ value\: :ref:`Dictionary<class_Dictionary>`\ )
 - :ref:`Dictionary<class_Dictionary>` **get_member_keyword_colors**\ (\ )
 
-設定成員關鍵字的顏色。現有成員關鍵字都將被移除。\ :ref:`Dictionary<class_Dictionary>` 的鍵為成員關鍵字。對應的值為成員關鍵字的顏色。
+Sets the member keyword colors. All existing member keyword will be removed. The :ref:`Dictionary<class_Dictionary>` key is the member keyword. The value is the member keyword color.
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +166,7 @@ CodeHighlighter
 - |void| **set_member_variable_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_member_variable_color**\ (\ )
 
-設定成員變數的顏色。成員變數是以“.”開頭的非關鍵字、非函式字串。
+Sets color for member variables. A member variable is non-keyword, non-function string proceeded with a '.'.
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +183,7 @@ CodeHighlighter
 - |void| **set_number_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_number_color**\ (\ )
 
-設定數字的顏色。
+Sets the color for numbers.
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ CodeHighlighter
 - |void| **set_symbol_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_symbol_color**\ (\ )
 
-設定符號的顏色。
+Sets the color for symbols.
 
 .. rst-class:: classref-section-separator
 
@@ -208,8 +208,8 @@ CodeHighlighter
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_CodeHighlighter_method_add_color_region:
 
@@ -231,9 +231,9 @@ If ``line_only`` is ``true`` or ``end_key`` is an empty :ref:`String<class_Strin
 
 |void| **add_keyword_color**\ (\ keyword\: :ref:`String<class_String>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_CodeHighlighter_method_add_keyword_color>`
 
-設定關鍵字的顏色。
+Sets the color for a keyword.
 
-關鍵字不能包含除“\_”之外的任何符號。
+The keyword cannot contain any symbols except '\_'.
 
 .. rst-class:: classref-item-separator
 
@@ -245,11 +245,11 @@ If ``line_only`` is ``true`` or ``end_key`` is an empty :ref:`String<class_Strin
 
 |void| **add_member_keyword_color**\ (\ member_keyword\: :ref:`String<class_String>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_CodeHighlighter_method_add_member_keyword_color>`
 
-設定成員關鍵字的顏色。
+Sets the color for a member keyword.
 
-成員關鍵字不能包含除“\_”之外的任何符號。
+The member keyword cannot contain any symbols except '\_'.
 
-如果前面有“.”，則不會高亮顯示。
+It will not be highlighted if preceded by a '.'.
 
 .. rst-class:: classref-item-separator
 
@@ -261,7 +261,7 @@ If ``line_only`` is ``true`` or ``end_key`` is an empty :ref:`String<class_Strin
 
 |void| **clear_color_regions**\ (\ ) :ref:`🔗<class_CodeHighlighter_method_clear_color_regions>`
 
-移除所有顏色區域。
+Removes all color regions.
 
 .. rst-class:: classref-item-separator
 
@@ -273,7 +273,7 @@ If ``line_only`` is ``true`` or ``end_key`` is an empty :ref:`String<class_Strin
 
 |void| **clear_keyword_colors**\ (\ ) :ref:`🔗<class_CodeHighlighter_method_clear_keyword_colors>`
 
-移除所有關鍵字。
+Removes all keywords.
 
 .. rst-class:: classref-item-separator
 
@@ -285,7 +285,7 @@ If ``line_only`` is ``true`` or ``end_key`` is an empty :ref:`String<class_Strin
 
 |void| **clear_member_keyword_colors**\ (\ ) :ref:`🔗<class_CodeHighlighter_method_clear_member_keyword_colors>`
 
-移除所有成員關鍵字。
+Removes all member keywords.
 
 .. rst-class:: classref-item-separator
 
@@ -297,7 +297,7 @@ If ``line_only`` is ``true`` or ``end_key`` is an empty :ref:`String<class_Strin
 
 :ref:`Color<class_Color>` **get_keyword_color**\ (\ keyword\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_CodeHighlighter_method_get_keyword_color>`
 
-返回某個關鍵字的顏色。
+Returns the color for a keyword.
 
 .. rst-class:: classref-item-separator
 
@@ -309,7 +309,7 @@ If ``line_only`` is ``true`` or ``end_key`` is an empty :ref:`String<class_Strin
 
 :ref:`Color<class_Color>` **get_member_keyword_color**\ (\ member_keyword\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_CodeHighlighter_method_get_member_keyword_color>`
 
-返回某個成員關鍵字的顏色。
+Returns the color for a member keyword.
 
 .. rst-class:: classref-item-separator
 
@@ -321,7 +321,7 @@ If ``line_only`` is ``true`` or ``end_key`` is an empty :ref:`String<class_Strin
 
 :ref:`bool<class_bool>` **has_color_region**\ (\ start_key\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_CodeHighlighter_method_has_color_region>`
 
-如果開始鍵存在則返回 ``true``\ ，否則返回 ``false``\ 。
+Returns ``true`` if the start key exists, else ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -333,7 +333,7 @@ If ``line_only`` is ``true`` or ``end_key`` is an empty :ref:`String<class_Strin
 
 :ref:`bool<class_bool>` **has_keyword_color**\ (\ keyword\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_CodeHighlighter_method_has_keyword_color>`
 
-如果關鍵字存在則返回 ``true``\ ，否則返回 ``false``\ 。
+Returns ``true`` if the keyword exists, else ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -345,7 +345,7 @@ If ``line_only`` is ``true`` or ``end_key`` is an empty :ref:`String<class_Strin
 
 :ref:`bool<class_bool>` **has_member_keyword_color**\ (\ member_keyword\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_CodeHighlighter_method_has_member_keyword_color>`
 
-如果成員關鍵字存在則返回 ``true``\ ，否則返回 ``false``\ 。
+Returns ``true`` if the member keyword exists, else ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -357,7 +357,7 @@ If ``line_only`` is ``true`` or ``end_key`` is an empty :ref:`String<class_Strin
 
 |void| **remove_color_region**\ (\ start_key\: :ref:`String<class_String>`\ ) :ref:`🔗<class_CodeHighlighter_method_remove_color_region>`
 
-移除使用該開始鍵的顏色區域。
+Removes the color region that uses that start key.
 
 .. rst-class:: classref-item-separator
 
@@ -369,7 +369,7 @@ If ``line_only`` is ``true`` or ``end_key`` is an empty :ref:`String<class_Strin
 
 |void| **remove_keyword_color**\ (\ keyword\: :ref:`String<class_String>`\ ) :ref:`🔗<class_CodeHighlighter_method_remove_keyword_color>`
 
-移除關鍵字。
+Removes the keyword.
 
 .. rst-class:: classref-item-separator
 
@@ -381,14 +381,14 @@ If ``line_only`` is ``true`` or ``end_key`` is an empty :ref:`String<class_Strin
 
 |void| **remove_member_keyword_color**\ (\ member_keyword\: :ref:`String<class_String>`\ ) :ref:`🔗<class_CodeHighlighter_method_remove_member_keyword_color>`
 
-移除成員關鍵字。
+Removes the member keyword.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

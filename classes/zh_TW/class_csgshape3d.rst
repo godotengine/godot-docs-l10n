@@ -5,16 +5,16 @@
 CSGShape3D
 ==========
 
-**繼承：** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`CSGCombiner3D<class_CSGCombiner3D>`, :ref:`CSGPrimitive3D<class_CSGPrimitive3D>`
+**Inherited By:** :ref:`CSGCombiner3D<class_CSGCombiner3D>`, :ref:`CSGPrimitive3D<class_CSGPrimitive3D>`
 
-CSG 基底類別。
+The CSG base class.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 This is the CSG base class that provides CSG operation support to the various CSG nodes in Godot.
 
@@ -28,15 +28,15 @@ Entire scenes of CSG nodes can be baked to static geometry and exported with the
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`使用 CSG 設計關卡原型 <../tutorials/3d/csg_tools>`
+- :doc:`Prototyping levels with CSG <../tutorials/3d/csg_tools>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -59,8 +59,8 @@ Entire scenes of CSG nodes can be baked to static geometry and exported with the
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -89,8 +89,8 @@ Entire scenes of CSG nodes can be baked to static geometry and exported with the
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_CSGShape3D_Operation:
 
@@ -104,7 +104,7 @@ enum **Operation**: :ref:`🔗<enum_CSGShape3D_Operation>`
 
 :ref:`Operation<enum_CSGShape3D_Operation>` **OPERATION_UNION** = ``0``
 
-合併兩個圖元的幾何體，移除相交的幾何體。
+Geometry of both primitives is merged, intersecting geometry is removed.
 
 .. _class_CSGShape3D_constant_OPERATION_INTERSECTION:
 
@@ -112,7 +112,7 @@ enum **Operation**: :ref:`🔗<enum_CSGShape3D_Operation>`
 
 :ref:`Operation<enum_CSGShape3D_Operation>` **OPERATION_INTERSECTION** = ``1``
 
-僅保留相交的幾何，其餘的將被移除。
+Only intersecting geometry remains, the rest is removed.
 
 .. _class_CSGShape3D_constant_OPERATION_SUBTRACTION:
 
@@ -120,7 +120,7 @@ enum **Operation**: :ref:`🔗<enum_CSGShape3D_Operation>`
 
 :ref:`Operation<enum_CSGShape3D_Operation>` **OPERATION_SUBTRACTION** = ``2``
 
-從第一個形狀減去第二個形狀，留下一個帶有其形狀的凹痕。
+The second shape is subtracted from the first, leaving a dent with its shape.
 
 .. rst-class:: classref-section-separator
 
@@ -128,8 +128,8 @@ enum **Operation**: :ref:`🔗<enum_CSGShape3D_Operation>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_CSGShape3D_property_calculate_tangents:
 
@@ -159,11 +159,11 @@ Calculate tangents for the CSG shape which allows the use of normal and height m
 - |void| **set_collision_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_layer**\ (\ )
 
-這個區域所處的實體層。
+The physics layers this area is in.
 
-可碰撞的物體可以存在於 32 個不同層中的任何一個。這些層的工作就像一個標籤系統，而不是視覺化的。一個可碰撞物體可以使用這些層來選擇它可以與哪些物體碰撞，使用 collision_mask 屬性。
+Collidable objects can exist in any of 32 different layers. These layers work like a tagging system, and are not visual. A collidable can use these layers to select with which objects it can collide, using the collision_mask property.
 
-如果物件 A 在物件 B 所掃描的任何層中，或者物件 B 在物件 A 所掃描的任何層中，就會偵測到接觸。詳情請參閱文件中的\ `《碰撞層與遮罩》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
+A contact is detected if object A is in any of the layers that object B scans, or object B is in any layer scanned by object A. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ Calculate tangents for the CSG shape which allows the use of normal and height m
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-該 CSG 形狀掃描碰撞的實體層。僅當 :ref:`use_collision<class_CSGShape3D_property_use_collision>` 為 ``true`` 時有效。有關更多資訊，請參閱文件中的\ `《碰撞層與遮罩》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
+The physics layers this CSG shape scans for collisions. Only effective if :ref:`use_collision<class_CSGShape3D_property_use_collision>` is ``true``. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -197,7 +197,7 @@ Calculate tangents for the CSG shape which allows the use of normal and height m
 - |void| **set_collision_priority**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_collision_priority**\ (\ )
 
-發生穿透時用於解算碰撞的優先順序。僅當 :ref:`use_collision<class_CSGShape3D_property_use_collision>` 為 ``true`` 時有效。優先順序越高，對對象的穿透力就越低。例如，這可以用來防止玩家突破關卡的邊界。
+The priority used to solve colliding when occurring penetration. Only effective if :ref:`use_collision<class_CSGShape3D_property_use_collision>` is ``true``. The higher the priority is, the lower the penetration into the object will be. This can for example be used to prevent the player from breaking through the boundaries of a level.
 
 .. rst-class:: classref-item-separator
 
@@ -214,7 +214,7 @@ Calculate tangents for the CSG shape which allows the use of normal and height m
 - |void| **set_operation**\ (\ value\: :ref:`Operation<enum_CSGShape3D_Operation>`\ )
 - :ref:`Operation<enum_CSGShape3D_Operation>` **get_operation**\ (\ )
 
-在此形狀上執行的操作。對於第一個 CSG 子節點，將忽略此操作，因為操作是在此節點與該節點父級的上一個子級之間進行的。
+The operation that is performed on this shape. This is ignored for the first CSG child node as the operation is between this node and the previous child of this nodes parent.
 
 .. rst-class:: classref-item-separator
 
@@ -231,7 +231,7 @@ Calculate tangents for the CSG shape which allows the use of normal and height m
 - |void| **set_snap**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_snap**\ (\ )
 
-**已棄用：** The CSG library no longer uses snapping.
+**Deprecated:** The CSG library no longer uses snapping.
 
 This property does nothing.
 
@@ -250,7 +250,7 @@ This property does nothing.
 - |void| **set_use_collision**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_collision**\ (\ )
 
-為我們的 CSG 形狀向物理引擎新增碰撞形狀。這樣行為就始終與靜態物體類似。請注意，即使 CSG 形狀本身被隱藏，碰撞形狀仍處於活動狀態。另見 :ref:`collision_mask<class_CSGShape3D_property_collision_mask>` 和 :ref:`collision_priority<class_CSGShape3D_property_collision_priority>`\ 。
+Adds a collision shape to the physics engine for our CSG shape. This will always act like a static body. Note that the collision shape is still active even if the CSG shape itself is hidden. See also :ref:`collision_mask<class_CSGShape3D_property_collision_mask>` and :ref:`collision_priority<class_CSGShape3D_property_collision_priority>`.
 
 .. rst-class:: classref-section-separator
 
@@ -258,8 +258,8 @@ This property does nothing.
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_CSGShape3D_method_bake_collision_shape:
 
@@ -297,7 +297,7 @@ Returns a baked static :ref:`ArrayMesh<class_ArrayMesh>` of this node's CSG oper
 
 :ref:`bool<class_bool>` **get_collision_layer_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CSGShape3D_method_get_collision_layer_value>`
 
-返回 :ref:`collision_layer<class_CSGShape3D_property_collision_layer>` 中是否啟用了指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+Returns whether or not the specified layer of the :ref:`collision_layer<class_CSGShape3D_property_collision_layer>` is enabled, given a ``layer_number`` between 1 and 32.
 
 .. rst-class:: classref-item-separator
 
@@ -309,7 +309,7 @@ Returns a baked static :ref:`ArrayMesh<class_ArrayMesh>` of this node's CSG oper
 
 :ref:`bool<class_bool>` **get_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CSGShape3D_method_get_collision_mask_value>`
 
-返回 :ref:`collision_mask<class_CSGShape3D_property_collision_mask>` 中是否啟用了指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+Returns whether or not the specified layer of the :ref:`collision_mask<class_CSGShape3D_property_collision_mask>` is enabled, given a ``layer_number`` between 1 and 32.
 
 .. rst-class:: classref-item-separator
 
@@ -335,7 +335,7 @@ Returns an :ref:`Array<class_Array>` with two elements, the first is the :ref:`T
 
 :ref:`bool<class_bool>` **is_root_shape**\ (\ ) |const| :ref:`🔗<class_CSGShape3D_method_is_root_shape>`
 
-如果這是根形狀，因此是算繪的物件，則返回 ``true``\ 。
+Returns ``true`` if this is a root shape and is thus the object that is rendered.
 
 .. rst-class:: classref-item-separator
 
@@ -347,7 +347,7 @@ Returns an :ref:`Array<class_Array>` with two elements, the first is the :ref:`T
 
 |void| **set_collision_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CSGShape3D_method_set_collision_layer_value>`
 
-根據 ``value``\ ，啟用或禁用 :ref:`collision_layer<class_CSGShape3D_property_collision_layer>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+Based on ``value``, enables or disables the specified layer in the :ref:`collision_layer<class_CSGShape3D_property_collision_layer>`, given a ``layer_number`` between 1 and 32.
 
 .. rst-class:: classref-item-separator
 
@@ -359,14 +359,14 @@ Returns an :ref:`Array<class_Array>` with two elements, the first is the :ref:`T
 
 |void| **set_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CSGShape3D_method_set_collision_mask_value>`
 
-根據 ``value``\ ，啟用或禁用 :ref:`collision_mask<class_CSGShape3D_property_collision_mask>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+Based on ``value``, enables or disables the specified layer in the :ref:`collision_mask<class_CSGShape3D_property_collision_mask>`, given a ``layer_number`` between 1 and 32.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,28 +5,28 @@
 GLTFTextureSampler
 ==================
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 Represents a glTF texture sampler
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 Represents a texture sampler as defined by the base glTF spec. Texture samplers in glTF specify how to sample data from the texture's base image, when rendering the texture on an object.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`執行時檔案載入與儲存 <../tutorials/io/runtime_file_loading_and_saving>`
+- :doc:`Runtime file loading and saving <../tutorials/io/runtime_file_loading_and_saving>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -47,8 +47,8 @@ Represents a texture sampler as defined by the base glTF spec. Texture samplers 
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_GLTFTextureSampler_property_mag_filter:
 
@@ -61,7 +61,7 @@ Represents a texture sampler as defined by the base glTF spec. Texture samplers 
 - |void| **set_mag_filter**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_mag_filter**\ (\ )
 
-紋理的放大濾鏡，當紋理在螢幕上看起來比源圖像大時使用。
+Texture's magnification filter, used when texture appears larger on screen than the source image.
 
 .. rst-class:: classref-item-separator
 
@@ -78,7 +78,7 @@ Represents a texture sampler as defined by the base glTF spec. Texture samplers 
 - |void| **set_min_filter**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_min_filter**\ (\ )
 
-紋理的縮小濾鏡，當紋理在螢幕上看起來比源圖像小時使用。
+Texture's minification filter, used when the texture appears smaller on screen than the source image.
 
 .. rst-class:: classref-item-separator
 
@@ -95,7 +95,7 @@ Represents a texture sampler as defined by the base glTF spec. Texture samplers 
 - |void| **set_wrap_s**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_wrap_s**\ (\ )
 
-用於 S 軸（水平）紋理座標的環繞模式。
+Wrapping mode to use for S-axis (horizontal) texture coordinates.
 
 .. rst-class:: classref-item-separator
 
@@ -112,14 +112,14 @@ Represents a texture sampler as defined by the base glTF spec. Texture samplers 
 - |void| **set_wrap_t**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_wrap_t**\ (\ )
 
-用於 T 軸（垂直）紋理座標的環繞模式。
+Wrapping mode to use for T-axis (vertical) texture coordinates.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,28 +5,28 @@
 AudioEffectHardLimiter
 ======================
 
-**继承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-为音频总线添加一个硬限制器音频效果。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-限制器是一种旨在阻止声音超过给定dB阈值的效果。硬限幅器预测音量峰值，并将在峰值超过上限阈值时平滑地应用增益降低，以防止削波和失真。它保留了波形并防止其越过上限阈值。建议在主总线中添加一个作为安全措施，以防止出现突然的音量峰值，并防止由削波引起的失真。
+Adds a hard limiter audio effect to an Audio bus.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`音频总线 <../tutorials/audio/audio_buses>`
+A limiter is an effect designed to disallow sound from going over a given dB threshold. Hard limiters predict volume peaks, and will smoothly apply gain reduction when a peak crosses the ceiling threshold to prevent clipping and distortion. It preserves the waveform and prevents it from crossing the ceiling threshold. Adding one in the Master bus is recommended as a safety measure to prevent sudden volume peaks from occurring, and to prevent distortion caused by clipping.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Audio buses <../tutorials/audio/audio_buses>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ AudioEffectHardLimiter
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_AudioEffectHardLimiter_property_ceiling_db:
 
@@ -59,9 +59,9 @@ AudioEffectHardLimiter
 - |void| **set_ceiling_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ceiling_db**\ (\ )
 
-波形的最大允许值，单位为分贝。此值的范围可以是 ``-24.0`` 到 ``0.0``\ 。
+The waveform's maximum allowed value, in decibels. This value can range from ``-24.0`` to ``0.0``.
 
-默认值为 ``-0.3``\ ，可防止潜在的采样间峰值（ISP）跨越 0 dB，这种情况可能会在一些较旧的硬件上造成轻微失真。
+The default value of ``-0.3`` prevents potential inter-sample peaks (ISP) from crossing over 0 dB, which can cause slight distortion on some older hardware.
 
 .. rst-class:: classref-item-separator
 
@@ -78,7 +78,7 @@ AudioEffectHardLimiter
 - |void| **set_pre_gain_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pre_gain_db**\ (\ )
 
-限制前应用的增益，单位为分贝。
+Gain to apply before limiting, in decibels.
 
 .. rst-class:: classref-item-separator
 
@@ -95,14 +95,14 @@ AudioEffectHardLimiter
 - |void| **set_release**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_release**\ (\ )
 
-增益降低完全释放所需的时间（以秒为单位）。
+Time it takes in seconds for the gain reduction to fully release.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

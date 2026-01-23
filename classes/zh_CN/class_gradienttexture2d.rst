@@ -5,23 +5,23 @@
 GradientTexture2D
 =================
 
-**继承：** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-使用从 :ref:`Gradient<class_Gradient>` 获得的颜色创建图案的 2D 纹理。
+A 2D texture that creates a pattern with colors obtained from a :ref:`Gradient<class_Gradient>`.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-2D 纹理，从 :ref:`Gradient<class_Gradient>` 中获取颜色来填充纹理数据。该纹理能够将颜色过渡转换为不同的图案，例如线性渐变或径向渐变。填充纹理时，默认会从偏移 :ref:`fill_from<class_GradientTexture2D_property_fill_from>` 的位置到偏移 :ref:`fill_to<class_GradientTexture2D_property_fill_to>` 的位置对颜色进行插值，但渐变填充也可以在整张纹理上重复。
+A 2D texture that obtains colors from a :ref:`Gradient<class_Gradient>` to fill the texture data. This texture is able to transform a color transition into different patterns such as a linear or a radial gradient. The texture is filled by interpolating colors starting from :ref:`fill_from<class_GradientTexture2D_property_fill_from>` to :ref:`fill_to<class_GradientTexture2D_property_fill_to>` offsets by default, but the gradient fill can be repeated to cover the entire texture.
 
-渐变是针对每个像素单独采样的，因此不一定代表渐变的精确副本（见 :ref:`width<class_GradientTexture2D_property_width>` 和 :ref:`height<class_GradientTexture2D_property_height>`\ ）。另见 :ref:`GradientTexture1D<class_GradientTexture1D>`\ 、\ :ref:`CurveTexture<class_CurveTexture>`\ 、\ :ref:`CurveXYZTexture<class_CurveXYZTexture>`\ 。
+The gradient is sampled individually for each pixel so it does not necessarily represent an exact copy of the gradient (see :ref:`width<class_GradientTexture2D_property_width>` and :ref:`height<class_GradientTexture2D_property_height>`). See also :ref:`GradientTexture1D<class_GradientTexture1D>`, :ref:`CurveTexture<class_CurveTexture>` and :ref:`CurveXYZTexture<class_CurveXYZTexture>`.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -52,8 +52,8 @@ GradientTexture2D
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_GradientTexture2D_Fill:
 
@@ -67,7 +67,7 @@ enum **Fill**: :ref:`🔗<enum_GradientTexture2D_Fill>`
 
 :ref:`Fill<enum_GradientTexture2D_Fill>` **FILL_LINEAR** = ``0``
 
-颜色按照直线进行线性插值。
+The colors are linearly interpolated in a straight line.
 
 .. _class_GradientTexture2D_constant_FILL_RADIAL:
 
@@ -75,7 +75,7 @@ enum **Fill**: :ref:`🔗<enum_GradientTexture2D_Fill>`
 
 :ref:`Fill<enum_GradientTexture2D_Fill>` **FILL_RADIAL** = ``1``
 
-颜色按照圆形模式进行线性插值。
+The colors are linearly interpolated in a circular pattern.
 
 .. _class_GradientTexture2D_constant_FILL_SQUARE:
 
@@ -83,7 +83,7 @@ enum **Fill**: :ref:`🔗<enum_GradientTexture2D_Fill>`
 
 :ref:`Fill<enum_GradientTexture2D_Fill>` **FILL_SQUARE** = ``2``
 
-颜色按照方形模式进行线性插值。
+The colors are linearly interpolated in a square pattern.
 
 .. rst-class:: classref-item-separator
 
@@ -101,7 +101,7 @@ enum **Repeat**: :ref:`🔗<enum_GradientTexture2D_Repeat>`
 
 :ref:`Repeat<enum_GradientTexture2D_Repeat>` **REPEAT_NONE** = ``0``
 
-渐变填充限制在由 :ref:`fill_from<class_GradientTexture2D_property_fill_from>` 到 :ref:`fill_to<class_GradientTexture2D_property_fill_to>` 的偏移量范围内。
+The gradient fill is restricted to the range defined by :ref:`fill_from<class_GradientTexture2D_property_fill_from>` to :ref:`fill_to<class_GradientTexture2D_property_fill_to>` offsets.
 
 .. _class_GradientTexture2D_constant_REPEAT:
 
@@ -109,7 +109,7 @@ enum **Repeat**: :ref:`🔗<enum_GradientTexture2D_Repeat>`
 
 :ref:`Repeat<enum_GradientTexture2D_Repeat>` **REPEAT** = ``1``
 
-纹理的填充从偏移量 :ref:`fill_from<class_GradientTexture2D_property_fill_from>` 开始到 :ref:`fill_to<class_GradientTexture2D_property_fill_to>`\ ，两个方向都按照相同的模式重复。
+The texture is filled starting from :ref:`fill_from<class_GradientTexture2D_property_fill_from>` to :ref:`fill_to<class_GradientTexture2D_property_fill_to>` offsets, repeating the same pattern in both directions.
 
 .. _class_GradientTexture2D_constant_REPEAT_MIRROR:
 
@@ -117,7 +117,7 @@ enum **Repeat**: :ref:`🔗<enum_GradientTexture2D_Repeat>`
 
 :ref:`Repeat<enum_GradientTexture2D_Repeat>` **REPEAT_MIRROR** = ``2``
 
-纹理的填充从偏移量 :ref:`fill_from<class_GradientTexture2D_property_fill_from>` 开始到 :ref:`fill_to<class_GradientTexture2D_property_fill_to>`\ ，两个方向都按照相同的模式镜像重复。
+The texture is filled starting from :ref:`fill_from<class_GradientTexture2D_property_fill_from>` to :ref:`fill_to<class_GradientTexture2D_property_fill_to>` offsets, mirroring the pattern in both directions.
 
 .. rst-class:: classref-section-separator
 
@@ -125,8 +125,8 @@ enum **Repeat**: :ref:`🔗<enum_GradientTexture2D_Repeat>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_GradientTexture2D_property_fill:
 
@@ -139,7 +139,7 @@ enum **Repeat**: :ref:`🔗<enum_GradientTexture2D_Repeat>`
 - |void| **set_fill**\ (\ value\: :ref:`Fill<enum_GradientTexture2D_Fill>`\ )
 - :ref:`Fill<enum_GradientTexture2D_Fill>` **get_fill**\ (\ )
 
-渐变的填充类型。
+The gradient's fill type.
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ enum **Repeat**: :ref:`🔗<enum_GradientTexture2D_Repeat>`
 - |void| **set_fill_from**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_fill_from**\ (\ )
 
-用于填充纹理的初始偏移量，使用 UV 坐标。
+The initial offset used to fill the texture specified in UV coordinates.
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +173,7 @@ enum **Repeat**: :ref:`🔗<enum_GradientTexture2D_Repeat>`
 - |void| **set_fill_to**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_fill_to**\ (\ )
 
-用于填充纹理的结束偏移量，使用 UV 坐标。
+The final offset used to fill the texture specified in UV coordinates.
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ enum **Repeat**: :ref:`🔗<enum_GradientTexture2D_Repeat>`
 - |void| **set_gradient**\ (\ value\: :ref:`Gradient<class_Gradient>`\ )
 - :ref:`Gradient<class_Gradient>` **get_gradient**\ (\ )
 
-用于填充纹理的 :ref:`Gradient<class_Gradient>`\ 。
+The :ref:`Gradient<class_Gradient>` used to fill the texture.
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ enum **Repeat**: :ref:`🔗<enum_GradientTexture2D_Repeat>`
 - |void| **set_height**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_height**\ (\ )
 
-从 :ref:`Gradient<class_Gradient>` 上获取的垂直颜色采样数，也表示纹理的高度。
+The number of vertical color samples that will be obtained from the :ref:`Gradient<class_Gradient>`, which also represents the texture's height.
 
 .. rst-class:: classref-item-separator
 
@@ -224,7 +224,7 @@ enum **Repeat**: :ref:`🔗<enum_GradientTexture2D_Repeat>`
 - |void| **set_repeat**\ (\ value\: :ref:`Repeat<enum_GradientTexture2D_Repeat>`\ )
 - :ref:`Repeat<enum_GradientTexture2D_Repeat>` **get_repeat**\ (\ )
 
-渐变的重复类型。
+The gradient's repeat type.
 
 .. rst-class:: classref-item-separator
 
@@ -241,7 +241,7 @@ enum **Repeat**: :ref:`🔗<enum_GradientTexture2D_Repeat>`
 - |void| **set_use_hdr**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_hdr**\ (\ )
 
-如果为 ``true``\ ，则生成的纹理会支持高动态范围（\ :ref:`Image.FORMAT_RGBAF<class_Image_constant_FORMAT_RGBAF>` 格式）。可以在 :ref:`Environment.glow_enabled<class_Environment_property_glow_enabled>` 为 ``true`` 时实现辉光效果。如果为 ``false``\ ，则生成的纹理会使用低动态范围；过亮的颜色会被钳制（\ :ref:`Image.FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>` 格式）。
+If ``true``, the generated texture will support high dynamic range (:ref:`Image.FORMAT_RGBAF<class_Image_constant_FORMAT_RGBAF>` format). This allows for glow effects to work if :ref:`Environment.glow_enabled<class_Environment_property_glow_enabled>` is ``true``. If ``false``, the generated texture will use low dynamic range; overbright colors will be clamped (:ref:`Image.FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>` format).
 
 .. rst-class:: classref-item-separator
 
@@ -258,14 +258,14 @@ enum **Repeat**: :ref:`🔗<enum_GradientTexture2D_Repeat>`
 - |void| **set_width**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_width**\ (\ )
 
-从 :ref:`Gradient<class_Gradient>` 上获取的水平颜色采样数，也表示纹理的宽度。
+The number of horizontal color samples that will be obtained from the :ref:`Gradient<class_Gradient>`, which also represents the texture's width.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

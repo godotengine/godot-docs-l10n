@@ -5,34 +5,34 @@
 ConvexPolygonShape3D
 ====================
 
-**繼承：** :ref:`Shape3D<class_Shape3D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Shape3D<class_Shape3D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用於物理碰撞的 3D 凸多面體形狀。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-3D 凸多面體形狀，旨在用於物理。常用來為 :ref:`CollisionShape3D<class_CollisionShape3D>` 提供形狀。
-
-\ **ConvexPolygonShape3D** 是\ *實心*\ 的，與空心的 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` 不同，如果物件完全位於其內部，也能夠偵測到碰撞。因此更適於偵測和物理。
-
-\ **凸分解：**\ 凹多面體可以拆分為多個凸多面體。這樣就能夠讓動態物理體擁有複雜的凹碰撞（以消耗性能為代價），做法是使用多個 **ConvexPolygonShape3D** 節點。要根據網格生成凸分解，請選中 :ref:`MeshInstance3D<class_MeshInstance3D>` 節點，前往出現在視口上方的 **Mesh** 功能表，然後選擇\ **建立多個凸碰撞同級**\ 。或者也可以在腳本中呼叫 :ref:`MeshInstance3D.create_multiple_convex_collisions()<class_MeshInstance3D_method_create_multiple_convex_collisions>`\ ，在運作時執行分解。
-
-\ **性能：**\ **ConvexPolygonShape3D** 檢查碰撞的速度比 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` 要快，但比 :ref:`SphereShape3D<class_SphereShape3D>`\ 、\ :ref:`BoxShape3D<class_BoxShape3D>` 等基本碰撞形狀要慢。通常應該僅限於中等大小的物件，在無法使用基本形狀精確表示碰撞時使用。
+A 3D convex polyhedron shape used for physics collision.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- `3D 物理測試示範 <https://godotengine.org/asset-library/asset/2747>`__
+A 3D convex polyhedron shape, intended for use in physics. Usually used to provide a shape for a :ref:`CollisionShape3D<class_CollisionShape3D>`.
+
+\ **ConvexPolygonShape3D** is *solid*, which means it detects collisions from objects that are fully inside it, unlike :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` which is hollow. This makes it more suitable for both detection and physics.
+
+\ **Convex decomposition:** A concave polyhedron can be split up into several convex polyhedra. This allows dynamic physics bodies to have complex concave collisions (at a performance cost) and can be achieved by using several **ConvexPolygonShape3D** nodes. To generate a convex decomposition from a mesh, select the :ref:`MeshInstance3D<class_MeshInstance3D>` node, go to the **Mesh** menu that appears above the viewport, and choose **Create Multiple Convex Collision Siblings**. Alternatively, :ref:`MeshInstance3D.create_multiple_convex_collisions()<class_MeshInstance3D_method_create_multiple_convex_collisions>` can be called in a script to perform this decomposition at run-time.
+
+\ **Performance:** **ConvexPolygonShape3D** is faster to check collisions against compared to :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`, but it is slower than primitive collision shapes such as :ref:`SphereShape3D<class_SphereShape3D>` and :ref:`BoxShape3D<class_BoxShape3D>`. Its use should generally be limited to medium-sized objects that cannot have their collision accurately represented by primitive shapes.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- `3D Physics Tests Demo <https://godotengine.org/asset-library/asset/2747>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -47,8 +47,8 @@ ConvexPolygonShape3D
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_ConvexPolygonShape3D_property_points:
 
@@ -61,16 +61,16 @@ ConvexPolygonShape3D
 - |void| **set_points**\ (\ value\: :ref:`PackedVector3Array<class_PackedVector3Array>`\ )
 - :ref:`PackedVector3Array<class_PackedVector3Array>` **get_points**\ (\ )
 
-形成凸多邊形的 3D 點列表。
+The list of 3D points forming the convex polygon shape.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

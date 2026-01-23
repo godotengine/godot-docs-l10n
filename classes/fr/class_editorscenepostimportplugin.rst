@@ -210,7 +210,7 @@ Should return ``true`` if the 3D view of the import dialog needs to update when 
 
 :ref:`Variant<class_Variant>` **_get_internal_option_visibility**\ (\ category\: :ref:`int<class_int>`, for_animation\: :ref:`bool<class_bool>`, option\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_EditorScenePostImportPlugin_private_method__get_internal_option_visibility>`
 
-Should return ``true`` to show the given option, ``false`` to hide the given option, or ``null`` to ignore.
+Doit renvoyer ``true`` pour afficher l'option donnée, ``false`` pour cacher l'option donnée, ou ``null`` pour ignorer.
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +222,7 @@ Should return ``true`` to show the given option, ``false`` to hide the given opt
 
 :ref:`Variant<class_Variant>` **_get_option_visibility**\ (\ path\: :ref:`String<class_String>`, for_animation\: :ref:`bool<class_bool>`, option\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_EditorScenePostImportPlugin_private_method__get_option_visibility>`
 
-Should return ``true`` to show the given option, ``false`` to hide the given option, or ``null`` to ignore.
+Doit renvoyer ``true`` pour afficher l'option donnée, ``false`` pour cacher l'option donnée, ou ``null`` pour ignorer.
 
 .. rst-class:: classref-item-separator
 

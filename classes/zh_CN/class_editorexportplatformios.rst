@@ -5,23 +5,23 @@
 EditorExportPlatformIOS
 =======================
 
-**继承：** :ref:`EditorExportPlatformAppleEmbedded<class_EditorExportPlatformAppleEmbedded>` **<** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`EditorExportPlatformAppleEmbedded<class_EditorExportPlatformAppleEmbedded>` **<** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-iOS 导出器。
+Exporter for iOS.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
-- :doc:`为 iOS 导出 <../tutorials/export/exporting_for_ios>`
+- :doc:`Exporting for iOS <../tutorials/export/exporting_for_ios>`
 
-- :doc:`iOS 插件文档索引 <../tutorials/platform/ios/index>`
+- :doc:`iOS plugins documentation index <../tutorials/platform/ios/index>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -518,8 +518,8 @@ iOS 导出器。
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_EditorExportPlatformIOS_property_application/additional_plist_content:
 
@@ -527,7 +527,7 @@ iOS 导出器。
 
 :ref:`String<class_String>` **application/additional_plist_content** :ref:`🔗<class_EditorExportPlatformIOS_property_application/additional_plist_content>`
 
-添加到 `Info.plist <https://developer.apple.com/documentation/bundleresources/information_property_list>`__ 文件的根 ``<dict>`` 部分的其他数据。该值应该是带有键值元素对的 XML 部分，例如：
+Additional data added to the root ``<dict>`` section of the `Info.plist <https://developer.apple.com/documentation/bundleresources/information_property_list>`__ file. The value should be an XML section with pairs of key-value elements, e.g.:
 
 .. code:: text
 
@@ -544,7 +544,7 @@ iOS 导出器。
 
 :ref:`String<class_String>` **application/app_store_team_id** :ref:`🔗<class_EditorExportPlatformIOS_property_application/app_store_team_id>`
 
-Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，请检查 Apple 开发者帐户仪表板中的“会员详细信息”部分，或代码签名证书的“组织单位”。见 `查找你的团队 ID <https://developer.apple.com/cn/help/account/manage-your-team/locate-your-team-id>`__\ 。
+Apple Team ID, unique 10-character string. To locate your Team ID check "Membership details" section in your Apple developer account dashboard, or "Organizational Unit" of your code signing certificate. See `Locate your Team ID <https://developer.apple.com/help/account/manage-your-team/locate-your-team-id>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -556,7 +556,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **application/bundle_identifier** :ref:`🔗<class_EditorExportPlatformIOS_property_application/bundle_identifier>`
 
-反向 DNS 格式的唯一应用程序标识符，只能包含字母数字字符（\ ``A-Z``\ 、\ ``a-z`` 和 ``0-9``\ ）、连字符（\ ``-``\ ）和句点（\ ``.``\ ）。
+Unique application identifier in a reverse-DNS format, can only contain alphanumeric characters (``A-Z``, ``a-z``, and ``0-9``), hyphens (``-``), and periods (``.``).
 
 .. rst-class:: classref-item-separator
 
@@ -568,7 +568,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **application/code_sign_identity_debug** :ref:`🔗<class_EditorExportPlatformIOS_property_application/code_sign_identity_debug>`
 
-用于调试导出的签名身份的“全名”“通用名”或 SHA-1 哈希值。
+The "Full Name", "Common Name", or SHA-1 hash of the signing identity used for debug export.
 
 .. rst-class:: classref-item-separator
 
@@ -580,7 +580,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **application/code_sign_identity_release** :ref:`🔗<class_EditorExportPlatformIOS_property_application/code_sign_identity_release>`
 
-用于发布导出的签名身份的“全名”“通用名”或 SHA-1 哈希值。
+The "Full Name", "Common Name", or SHA-1 hash of the signing identity used for release export.
 
 .. rst-class:: classref-item-separator
 
@@ -592,7 +592,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **application/delete_old_export_files_unconditionally** :ref:`🔗<class_EditorExportPlatformIOS_property_application/delete_old_export_files_unconditionally>`
 
-如果为 ``true``\ ，则导出时将无条件删除导出目标目录中已有的“项目名称”和“项目名称.xcodeproj”。
+If ``true``, existing "project name" and "project name.xcodeproj" in the export destination directory will be unconditionally deleted during export.
 
 .. rst-class:: classref-item-separator
 
@@ -604,7 +604,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`int<class_int>` **application/export_method_debug** :ref:`🔗<class_EditorExportPlatformIOS_property_application/export_method_debug>`
 
-应用程序分发目标（调试导出）。
+Application distribution target (debug export).
 
 .. rst-class:: classref-item-separator
 
@@ -616,7 +616,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`int<class_int>` **application/export_method_release** :ref:`🔗<class_EditorExportPlatformIOS_property_application/export_method_release>`
 
-应用程序分发目标（发布导出）。
+Application distribution target (release export).
 
 .. rst-class:: classref-item-separator
 
@@ -628,7 +628,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **application/export_project_only** :ref:`🔗<class_EditorExportPlatformIOS_property_application/export_project_only>`
 
-如果为 ``true``\ ，则导出 iOS 项目文件而不构建一份 XCArchive 或 ``.ipa`` 文件。如果为 ``false``\ ，则导出 iOS 项目文件并同时构建一份 XCArchive 和 ``.ipa`` 文件。将 Godot 与 Fastlane 或其他构建管道结合使用时，你可能需要将其设置为 ``true``\ 。
+If ``true``, exports iOS project files without building an XCArchive or ``.ipa`` file. If ``false``, exports iOS project files and builds an XCArchive and ``.ipa`` file at the same time. When combining Godot with Fastlane or other build pipelines, you may want to set this to ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -640,7 +640,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`int<class_int>` **application/icon_interpolation** :ref:`🔗<class_EditorExportPlatformIOS_property_application/icon_interpolation>`
 
-用于调整应用程序图标大小的插值方法。
+Interpolation method used to resize application icon.
 
 .. rst-class:: classref-item-separator
 
@@ -652,7 +652,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **application/min_ios_version** :ref:`🔗<class_EditorExportPlatformIOS_property_application/min_ios_version>`
 
-运行该应用程序所需的最低 iOS 版本，格式为 ``主版本号.次版本号.补丁号`` 或 ``主版本号.次版本号``\ ，只能包含数字（\ ``0-9``\ ）和英文句点（\ ``.``\ ）。
+Minimum version of iOS required for this application to run in the ``major.minor.patch`` or ``major.minor`` format, can only contain numeric characters (``0-9``) and periods (``.``).
 
 .. rst-class:: classref-item-separator
 
@@ -664,9 +664,9 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **application/provisioning_profile_specifier_debug** :ref:`🔗<class_EditorExportPlatformIOS_property_application/provisioning_profile_specifier_debug>`
 
-预置描述文件的名称。设置调试时 Xcode 使用的 PROVISIONING_PROFILE_SPECIFIER。\ `用于手动描述 <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__\ 。
+Name of the provisioning profile. Sets Xcode PROVISIONING_PROFILE_SPECIFIER for debug. `Used for manual provisioning <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
 
-可以使用环境变量 ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_DEBUG`` 覆盖。
+Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_DEBUG``.
 
 .. rst-class:: classref-item-separator
 
@@ -678,9 +678,9 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **application/provisioning_profile_specifier_release** :ref:`🔗<class_EditorExportPlatformIOS_property_application/provisioning_profile_specifier_release>`
 
-预置描述文件的名称。设置发布时 Xcode 使用的 PROVISIONING_PROFILE_SPECIFIER。\ `用于手动描述 <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__\ 。
+Name of the provisioning profile. Sets Xcode PROVISIONING_PROFILE_SPECIFIER for release. `Used for manual provisioning <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
 
-可以使用环境变量 ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_RELEASE`` 覆盖。
+Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_RELEASE``.
 
 .. rst-class:: classref-item-separator
 
@@ -692,9 +692,9 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **application/provisioning_profile_uuid_debug** :ref:`🔗<class_EditorExportPlatformIOS_property_application/provisioning_profile_uuid_debug>`
 
-预置描述文件的 UUID。如果留空，则 Xcode 会自动下载或创建一个预置描述文件。见\ `编辑、下载或删除预置描述文件 <https://developer.apple.com/cn/help/account/manage-profiles/edit-download-or-delete-profiles/>`__\ 。
+UUID of the provisioning profile. If left empty, Xcode will download or create a provisioning profile automatically. See `Edit, download, or delete provisioning profiles <https://developer.apple.com/help/account/manage-profiles/edit-download-or-delete-profiles>`__.
 
-可以使用环境变量 ``GODOT_APPLE_PLATFORM_PROVISIONING_PROFILE_UUID_DEBUG`` 覆盖。
+Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROVISIONING_PROFILE_UUID_DEBUG``.
 
 .. rst-class:: classref-item-separator
 
@@ -706,9 +706,9 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **application/provisioning_profile_uuid_release** :ref:`🔗<class_EditorExportPlatformIOS_property_application/provisioning_profile_uuid_release>`
 
-预置描述文件的 UUID。如果留空，则 Xcode 会自动下载或创建一个预置描述文件。见\ `编辑、下载或删除预置描述文件 <https://developer.apple.com/cn/help/account/manage-profiles/edit-download-or-delete-profiles/>`__\ 。
+UUID of the provisioning profile. If left empty, Xcode will download or create a provisioning profile automatically. See `Edit, download, or delete provisioning profiles <https://developer.apple.com/help/account/manage-profiles/edit-download-or-delete-profiles>`__.
 
-可以使用环境变量 ``GODOT_APPLE_PLATFORM_PROVISIONING_PROFILE_UUID_RELEASE`` 覆盖。
+Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROVISIONING_PROFILE_UUID_RELEASE``.
 
 .. rst-class:: classref-item-separator
 
@@ -720,9 +720,9 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **application/short_version** :ref:`🔗<class_EditorExportPlatformIOS_property_application/short_version>`
 
-用户可见的应用程序版本，只能包含数字字符（\ ``0-9``\ ）和句点（\ ``.``\ ）。如果留空，则回退到 :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`\ 。
+Application version visible to the user. Can only contain numeric characters (``0-9``) and periods (``.``). Falls back to :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>` if left empty.
 
-\ **注意：**\ 生成的 Xcode 项目的 *Identity > Version* 会使用这个值。
+\ **Note:** This value is used for the *Identity > Version* value in the generated Xcode project.
 
 .. rst-class:: classref-item-separator
 
@@ -734,7 +734,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **application/signature** :ref:`🔗<class_EditorExportPlatformIOS_property_application/signature>`
 
-特定于该捆绑包的四字符创建者码。可选的。
+A four-character creator code that is specific to the bundle. Optional.
 
 .. rst-class:: classref-item-separator
 
@@ -746,7 +746,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`int<class_int>` **application/targeted_device_family** :ref:`🔗<class_EditorExportPlatformIOS_property_application/targeted_device_family>`
 
-支持的设备家族。
+Supported device family.
 
 .. rst-class:: classref-item-separator
 
@@ -758,9 +758,9 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **application/version** :ref:`🔗<class_EditorExportPlatformIOS_property_application/version>`
 
-机器可读的应用程序版本，采用 ``major.minor.patch`` 格式，只能包含数字字符（\ ``0-9``\ ）和句点（\ ``.``\ ）。该值必须在被推送到 App Store 的每个新版本中递增。如果留空，则回退到 :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`\ 。
+Machine-readable application version in the ``major.minor.patch`` format. Can only contain numeric characters (``0-9``) and periods (``.``). This must be incremented with every new release pushed to the App Store. Falls back to :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>` if left empty.
 
-\ **注意：**\ 生成的 Xcode 项目的 *Identity > Build* 会使用这个值。
+\ **Note:** This value is used for the *Identity > Build* value in the generated Xcode project.
 
 .. rst-class:: classref-item-separator
 
@@ -772,7 +772,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **architectures/arm64** :ref:`🔗<class_EditorExportPlatformIOS_property_architectures/arm64>`
 
-如果为 ``true``\ ，\ ``arm64`` 二进制文件将包含在导出的项目中。
+If ``true``, ``arm64`` binaries are included into exported project.
 
 .. rst-class:: classref-item-separator
 
@@ -784,7 +784,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **capabilities/access_wifi** :ref:`🔗<class_EditorExportPlatformIOS_property_capabilities/access_wifi>`
 
-如果为 ``true``\ ，则启用与 Wi-Fi 访问相关的网络功能。见 `App 所需的设备功能 <https://developer.apple.com/cn/support/required-device-capabilities/>`__\ 。
+If ``true``, networking features related to Wi-Fi access are enabled. See `Required Device Capabilities <https://developer.apple.com/support/required-device-capabilities/>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -796,7 +796,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`PackedStringArray<class_PackedStringArray>` **capabilities/additional** :ref:`🔗<class_EditorExportPlatformIOS_property_capabilities/additional>`
 
-添加到 ``Info.plist`` 文件的 ``UIRequiredDeviceCapabilities`` 数组中的额外数据。
+Additional data added to the ``UIRequiredDeviceCapabilities`` array of the ``Info.plist`` file.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -810,9 +810,9 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **capabilities/performance_a12** :ref:`🔗<class_EditorExportPlatformIOS_property_capabilities/performance_a12>`
 
-需要 A12 Bionic 及更高版本芯片（支持所有 Vulkan 渲染器功能的设备）的图形性能和功能。
+Requires the graphics performance and features of the A12 Bionic and later chips (devices supporting all Vulkan renderer features).
 
-启用该选项会将支持的设备限制为：iPhone XS、iPhone XR、iPad Mini（第 5 代）、iPad Air（第 3 代）、iPad（第 8 代）及更新版本。
+Enabling this option limits supported devices to: iPhone XS, iPhone XR, iPad Mini (5th gen.), iPad Air (3rd gen.), iPad (8th gen), and newer.
 
 .. rst-class:: classref-item-separator
 
@@ -824,9 +824,9 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **capabilities/performance_gaming_tier** :ref:`🔗<class_EditorExportPlatformIOS_property_capabilities/performance_gaming_tier>`
 
-需要 A17 Pro 及更高版本芯片的图形性能和功能。
+Requires the graphics performance and features of the A17 Pro and later chips.
 
-启用该选项将支持的设备限制为：iPhone 15 Pro 及更新版本。
+Enabling this option limits supported devices to: iPhone 15 Pro and newer.
 
 .. rst-class:: classref-item-separator
 
@@ -838,7 +838,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **custom_template/debug** :ref:`🔗<class_EditorExportPlatformIOS_property_custom_template/debug>`
 
-到自定义导出模板的路径。如果留空，则默认模板将被使用。
+Path to the custom export template. If left empty, default template is used.
 
 .. rst-class:: classref-item-separator
 
@@ -850,7 +850,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **custom_template/release** :ref:`🔗<class_EditorExportPlatformIOS_property_custom_template/release>`
 
-到自定义导出模板的路径。如果留空，则默认模板将被使用。
+Path to the custom export template. If left empty, default template is used.
 
 .. rst-class:: classref-item-separator
 
@@ -862,7 +862,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **entitlements/additional** :ref:`🔗<class_EditorExportPlatformIOS_property_entitlements/additional>`
 
-添加到 `.entitlements <https://developer.apple.com/documentation/bundleresources/entitlements>`__ 文件的根 ``<dict>`` 部分的其他数据。该值应该是带有键值元素对的 XML 部分，例如：
+Additional data added to the root ``<dict>`` section of the `.entitlements <https://developer.apple.com/documentation/bundleresources/entitlements>`__ file. The value should be an XML section with pairs of key-value elements, for example:
 
 .. code:: text
 
@@ -879,7 +879,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **entitlements/game_center** :ref:`🔗<class_EditorExportPlatformIOS_property_entitlements/game_center>`
 
-如果为 ``true``\ ，则会允许访问 Game Center 功能。见 `com.apple.developer.game-center <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_developer_game-center>`__\ 。
+If ``true``, allows access to Game Center features. See `com.apple.developer.game-center <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_developer_game-center>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -891,7 +891,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **entitlements/increased_memory_limit** :ref:`🔗<class_EditorExportPlatformIOS_property_entitlements/increased_memory_limit>`
 
-如果为 ``true``\ ，则提示该应用在更高的内存限制下可能表现更好。见 `com.apple.developer.kernel.increased-memory-limit <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_developer_kernel_increased-memory-limit>`__\ 。
+If ``true``, hints that the app might perform better with a higher memory limit. See `com.apple.developer.kernel.increased-memory-limit <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_developer_kernel_increased-memory-limit>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -903,7 +903,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **entitlements/push_notifications** :ref:`🔗<class_EditorExportPlatformIOS_property_entitlements/push_notifications>`
 
-Apple 推送通知服务的环境。见 `aps-environment <https://developer.apple.com/documentation/bundleresources/entitlements/aps-environment>`__\ 。
+Environment for Apple Push Notification service. See `aps-environment <https://developer.apple.com/documentation/bundleresources/entitlements/aps-environment>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -915,7 +915,7 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 :ref:`String<class_String>` **icons/app_store_1024x1024** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/app_store_1024x1024>`
 
-App Store 应用程序图标文件。如果留空，则会回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+App Store application icon file. If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -927,7 +927,7 @@ App Store 应用程序图标文件。如果留空，则会回退至 :ref:`Projec
 
 :ref:`String<class_String>` **icons/app_store_1024x1024_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/app_store_1024x1024_dark>`
 
-App Store 应用程序图标文件，暗色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+App Store application icon file, dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -939,7 +939,7 @@ App Store 应用程序图标文件，暗色版本。见 `App 图标 <https://dev
 
 :ref:`String<class_String>` **icons/app_store_1024x1024_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/app_store_1024x1024_tinted>`
 
-App Store 应用程序图标文件，着色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+App Store application icon file, tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -951,7 +951,7 @@ App Store 应用程序图标文件，着色版本。见 `App 图标 <https://dev
 
 :ref:`String<class_String>` **icons/icon_1024x1024** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/icon_1024x1024>`
 
-用于生成其他图标的基础应用程序图标。如果留空则会回退到 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。见 `App 图标 <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__\ 。
+Base application icon used to generate other icons. If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -963,7 +963,7 @@ App Store 应用程序图标文件，着色版本。见 `App 图标 <https://dev
 
 :ref:`String<class_String>` **icons/icon_1024x1024_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/icon_1024x1024_dark>`
 
-用于生成其他图标的基础应用程序图标，暗色版本。见 `App 图标 <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__\ 。
+Base application icon used to generate other icons, dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -975,7 +975,7 @@ App Store 应用程序图标文件，着色版本。见 `App 图标 <https://dev
 
 :ref:`String<class_String>` **icons/icon_1024x1024_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/icon_1024x1024_tinted>`
 
-用于生成其他图标的基础应用程序图标，着色版本。见 `App 图标 <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__\ 。
+Base application icon used to generate other icons, tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -987,7 +987,7 @@ App Store 应用程序图标文件，着色版本。见 `App 图标 <https://dev
 
 :ref:`String<class_String>` **icons/ios_128x128** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_128x128>`
 
-iOS 应用程序 64x64 图标文件（2x DPI）。如果留空，则会回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+iOS application 64x64 icon file (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -999,7 +999,7 @@ iOS 应用程序 64x64 图标文件（2x DPI）。如果留空，则会回退至
 
 :ref:`String<class_String>` **icons/ios_128x128_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_128x128_dark>`
 
-iOS 应用程序 64x64 图标文件（2x DPI）,暗色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+iOS application 64x64 icon file (2x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1011,7 +1011,7 @@ iOS 应用程序 64x64 图标文件（2x DPI）,暗色版本。见 `App 图标 <
 
 :ref:`String<class_String>` **icons/ios_128x128_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_128x128_tinted>`
 
-iOS 应用程序 64x64 图标文件（2x DPI）,着色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+iOS application 64x64 icon file (2x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1023,7 +1023,7 @@ iOS 应用程序 64x64 图标文件（2x DPI）,着色版本。见 `App 图标 <
 
 :ref:`String<class_String>` **icons/ios_136x136** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_136x136>`
 
-iOS 应用程序 68x68 图标文件（2x DPI）。如果留空，则会回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+iOS application 68x68 icon file (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1035,7 +1035,7 @@ iOS 应用程序 68x68 图标文件（2x DPI）。如果留空，则会回退至
 
 :ref:`String<class_String>` **icons/ios_136x136_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_136x136_dark>`
 
-iOS 应用程序 68x68 图标文件（2x DPI）,暗色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+iOS application 68x68 icon file (2x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1047,7 +1047,7 @@ iOS 应用程序 68x68 图标文件（2x DPI）,暗色版本。见 `App 图标 <
 
 :ref:`String<class_String>` **icons/ios_136x136_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_136x136_tinted>`
 
-iOS 应用程序 68x68 图标文件（2x DPI）,着色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+iOS application 68x68 icon file (2x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1059,7 +1059,7 @@ iOS 应用程序 68x68 图标文件（2x DPI）,着色版本。见 `App 图标 <
 
 :ref:`String<class_String>` **icons/ios_192x192** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_192x192>`
 
-iOS 应用程序 64x64 图标文件（3x DPI）。如果留空，则会回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+iOS application 64x64 icon file (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1071,7 +1071,7 @@ iOS 应用程序 64x64 图标文件（3x DPI）。如果留空，则会回退至
 
 :ref:`String<class_String>` **icons/ios_192x192_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_192x192_dark>`
 
-iOS 应用程序 64x64 图标文件（3x DPI）,暗色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+iOS application 64x64 icon file (3x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1083,7 +1083,7 @@ iOS 应用程序 64x64 图标文件（3x DPI）,暗色版本。见 `App 图标 <
 
 :ref:`String<class_String>` **icons/ios_192x192_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ios_192x192_tinted>`
 
-iOS 应用程序 64x64 图标文件（3x DPI）,着色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+iOS application 64x64 icon file (3x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1095,7 +1095,7 @@ iOS 应用程序 64x64 图标文件（3x DPI）,着色版本。见 `App 图标 <
 
 :ref:`String<class_String>` **icons/ipad_152x152** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_152x152>`
 
-iPad 主屏幕应用程序图标文件（2x DPI）。如果留空，则会回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPad (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1107,7 +1107,7 @@ iPad 主屏幕应用程序图标文件（2x DPI）。如果留空，则会回退
 
 :ref:`String<class_String>` **icons/ipad_152x152_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_152x152_dark>`
 
-iPad 主屏幕应用程序图标文件（2x DPI），暗色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPad (2x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1119,7 +1119,7 @@ iPad 主屏幕应用程序图标文件（2x DPI），暗色版本。见 `App 图
 
 :ref:`String<class_String>` **icons/ipad_152x152_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_152x152_tinted>`
 
-iPad 主屏幕应用程序图标文件（2x DPI），着色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPad (2x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1131,7 +1131,7 @@ iPad 主屏幕应用程序图标文件（2x DPI），着色版本。见 `App 图
 
 :ref:`String<class_String>` **icons/ipad_167x167** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_167x167>`
 
-iPad 主屏幕应用程序图标文件（3x DPI）。如果留空，则会回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPad (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1143,7 +1143,7 @@ iPad 主屏幕应用程序图标文件（3x DPI）。如果留空，则会回退
 
 :ref:`String<class_String>` **icons/ipad_167x167_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_167x167_dark>`
 
-iPad 主屏幕应用程序图标文件（3x DPI），暗色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPad (3x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1155,7 +1155,7 @@ iPad 主屏幕应用程序图标文件（3x DPI），暗色版本。见 `App 图
 
 :ref:`String<class_String>` **icons/ipad_167x167_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/ipad_167x167_tinted>`
 
-iPad 主屏幕应用程序图标文件（3x DPI），着色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPad (3x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1167,7 +1167,7 @@ iPad 主屏幕应用程序图标文件（3x DPI），着色版本。见 `App 图
 
 :ref:`String<class_String>` **icons/iphone_120x120** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_120x120>`
 
-iPhone 主屏幕应用程序图标文件（2x DPI）。如果留空，则会回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPhone (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1179,7 +1179,7 @@ iPhone 主屏幕应用程序图标文件（2x DPI）。如果留空，则会回�
 
 :ref:`String<class_String>` **icons/iphone_120x120_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_120x120_dark>`
 
-iPhone 主屏幕应用程序图标文件（2x DPI），暗色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPhone (2x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1191,7 +1191,7 @@ iPhone 主屏幕应用程序图标文件（2x DPI），暗色版本。见 `App �
 
 :ref:`String<class_String>` **icons/iphone_120x120_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_120x120_tinted>`
 
-iPhone 主屏幕应用程序图标文件（2x DPI），着色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPhone (2x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1203,7 +1203,7 @@ iPhone 主屏幕应用程序图标文件（2x DPI），着色版本。见 `App �
 
 :ref:`String<class_String>` **icons/iphone_180x180** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_180x180>`
 
-iPhone 主屏幕应用程序图标文件（3x DPI）。如果留空，则会回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPhone (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1215,7 +1215,7 @@ iPhone 主屏幕应用程序图标文件（3x DPI）。如果留空，则会回�
 
 :ref:`String<class_String>` **icons/iphone_180x180_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_180x180_dark>`
 
-iPhone 主屏幕应用程序图标文件（3x DPI），暗色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPhone (3x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1227,7 +1227,7 @@ iPhone 主屏幕应用程序图标文件（3x DPI），暗色版本。见 `App �
 
 :ref:`String<class_String>` **icons/iphone_180x180_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/iphone_180x180_tinted>`
 
-iPhone 主屏幕应用程序图标文件（3x DPI），着色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Home screen application icon file on iPhone (3x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1239,7 +1239,7 @@ iPhone 主屏幕应用程序图标文件（3x DPI），着色版本。见 `App �
 
 :ref:`String<class_String>` **icons/notification_40x40** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_40x40>`
 
-iPad 和 iPhone 上的通知图标文件（2x DPI）。如果留空，则会回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1251,7 +1251,7 @@ iPad 和 iPhone 上的通知图标文件（2x DPI）。如果留空，则会回�
 
 :ref:`String<class_String>` **icons/notification_40x40_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_40x40_dark>`
 
-iPad 和 iPhone 上的通知图标文件（2x DPI），暗色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPad and iPhone (2x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1263,7 +1263,7 @@ iPad 和 iPhone 上的通知图标文件（2x DPI），暗色版本。见 `App �
 
 :ref:`String<class_String>` **icons/notification_40x40_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_40x40_tinted>`
 
-iPad 和 iPhone 上的通知图标文件（2x DPI），着色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPad and iPhone (2x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1275,7 +1275,7 @@ iPad 和 iPhone 上的通知图标文件（2x DPI），着色版本。见 `App �
 
 :ref:`String<class_String>` **icons/notification_60x60** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_60x60>`
 
-iPhone 上的通知图标文件（3x DPI）。如果留空，则会回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPhone (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1287,7 +1287,7 @@ iPhone 上的通知图标文件（3x DPI）。如果留空，则会回退至 :re
 
 :ref:`String<class_String>` **icons/notification_60x60_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_60x60_dark>`
 
-iPhone 上的通知图标文件（3x DPI），暗色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPhone (3x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1299,7 +1299,7 @@ iPhone 上的通知图标文件（3x DPI），暗色版本。见 `App 图标 <ht
 
 :ref:`String<class_String>` **icons/notification_60x60_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_60x60_tinted>`
 
-iPhone 上的通知图标文件（3x DPI），着色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPhone (3x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1311,7 +1311,7 @@ iPhone 上的通知图标文件（3x DPI），着色版本。见 `App 图标 <ht
 
 :ref:`String<class_String>` **icons/notification_76x76** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_76x76>`
 
-iPad 和 iPhone 上的通知图标文件（2x DPI）。如果留空，则会回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1323,7 +1323,7 @@ iPad 和 iPhone 上的通知图标文件（2x DPI）。如果留空，则会回�
 
 :ref:`String<class_String>` **icons/notification_76x76_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_76x76_dark>`
 
-iPad 和 iPhone 上的通知图标文件（2x DPI），暗色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPad and iPhone (2x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1335,7 +1335,7 @@ iPad 和 iPhone 上的通知图标文件（2x DPI），暗色版本。见 `App �
 
 :ref:`String<class_String>` **icons/notification_76x76_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_76x76_tinted>`
 
-iPad 和 iPhone 上的通知图标文件（2x DPI），着色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPad and iPhone (2x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1347,7 +1347,7 @@ iPad 和 iPhone 上的通知图标文件（2x DPI），着色版本。见 `App �
 
 :ref:`String<class_String>` **icons/notification_114x114** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_114x114>`
 
-iPad 和 iPhone 上的通知图标文件（3x DPI）。如果留空，则会回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPad and iPhone (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1359,7 +1359,7 @@ iPad 和 iPhone 上的通知图标文件（3x DPI）。如果留空，则会回�
 
 :ref:`String<class_String>` **icons/notification_114x114_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_114x114_dark>`
 
-iPad 和 iPhone 上的通知图标文件（3x DPI），暗色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPad and iPhone (3x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1371,7 +1371,7 @@ iPad 和 iPhone 上的通知图标文件（3x DPI），暗色版本。见 `App �
 
 :ref:`String<class_String>` **icons/notification_114x114_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_114x114_tinted>`
 
-iPad 和 iPhone 上的通知图标文件（3x DPI），着色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Notification icon file on iPad and iPhone (3x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1383,7 +1383,7 @@ iPad 和 iPhone 上的通知图标文件（3x DPI），着色版本。见 `App �
 
 :ref:`String<class_String>` **icons/settings_58x58** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_58x58>`
 
-iPad 和 iPhone 上的应用程序设置图标文件（2x DPI）。如果留空，则会回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Application settings icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1395,7 +1395,7 @@ iPad 和 iPhone 上的应用程序设置图标文件（2x DPI）。如果留空�
 
 :ref:`String<class_String>` **icons/settings_58x58_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_58x58_dark>`
 
-iPad 和 iPhone 上的应用程序设置图标文件（2x DPI），暗色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Application settings icon file on iPad and iPhone (2x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1407,7 +1407,7 @@ iPad 和 iPhone 上的应用程序设置图标文件（2x DPI），暗色版本�
 
 :ref:`String<class_String>` **icons/settings_58x58_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_58x58_tinted>`
 
-iPad 和 iPhone 上的应用程序设置图标文件（2x DPI），着色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Application settings icon file on iPad and iPhone (2x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1419,7 +1419,7 @@ iPad 和 iPhone 上的应用程序设置图标文件（2x DPI），着色版本�
 
 :ref:`String<class_String>` **icons/settings_87x87** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_87x87>`
 
-iPhone 上的应用程序设置图标文件（3x DPI）。如果留空，则会回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Application settings icon file on iPhone (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1431,7 +1431,7 @@ iPhone 上的应用程序设置图标文件（3x DPI）。如果留空，则会�
 
 :ref:`String<class_String>` **icons/settings_87x87_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_87x87_dark>`
 
-iPhone 上的应用程序设置图标文件（3x DPI），暗色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Application settings icon file on iPhone (3x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1443,7 +1443,7 @@ iPhone 上的应用程序设置图标文件（3x DPI），暗色版本。见 `Ap
 
 :ref:`String<class_String>` **icons/settings_87x87_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/settings_87x87_tinted>`
 
-iPhone 上的应用程序设置图标文件（3x DPI），着色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Application settings icon file on iPhone (3x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1455,7 +1455,7 @@ iPhone 上的应用程序设置图标文件（3x DPI），着色版本。见 `Ap
 
 :ref:`String<class_String>` **icons/spotlight_80x80** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_80x80>`
 
-iPad 和 iPhone 上的“聚焦”图标文件（2x DPI）。如果留空，则会回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Spotlight icon file on iPad and iPhone (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1467,7 +1467,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（2x DPI）。如果留空，则�
 
 :ref:`String<class_String>` **icons/spotlight_80x80_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_80x80_dark>`
 
-iPad 和 iPhone 上的“聚焦”图标文件（2x DPI），暗色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Spotlight icon file on iPad and iPhone (2x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1479,7 +1479,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（2x DPI），暗色版本。见 
 
 :ref:`String<class_String>` **icons/spotlight_80x80_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_80x80_tinted>`
 
-iPad 和 iPhone 上的“聚焦”图标文件（2x DPI），着色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Spotlight icon file on iPad and iPhone (2x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1491,7 +1491,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（2x DPI），着色版本。见 
 
 :ref:`String<class_String>` **icons/spotlight_120x120** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_120x120>`
 
-iPad 和 iPhone 上的“聚焦”图标文件（3x DPI）。如果留空，则会回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Spotlight icon file on iPad and iPhone (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1503,7 +1503,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI）。如果留空，则�
 
 :ref:`String<class_String>` **icons/spotlight_120x120_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_120x120_dark>`
 
-iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），暗色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Spotlight icon file on iPad and iPhone (3x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1515,7 +1515,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），暗色版本。见 
 
 :ref:`String<class_String>` **icons/spotlight_120x120_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_120x120_tinted>`
 
-iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+Spotlight icon file on iPad and iPhone (3x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1527,7 +1527,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/active_keyboard_access_reasons** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/active_keyboard_access_reasons>`
 
-你的应用使用活动键盘 API 的原因。请参阅 `描述所需原因 API 的使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__\ 。
+The reasons your app use active keyboard API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1539,7 +1539,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`String<class_String>` **privacy/camera_usage_description** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/camera_usage_description>`
 
-请求访问设备相机时显示的（英文）消息。
+A message displayed when requesting access to the device's camera (in English).
 
 .. rst-class:: classref-item-separator
 
@@ -1551,7 +1551,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`Dictionary<class_Dictionary>` **privacy/camera_usage_description_localized** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/camera_usage_description_localized>`
 
-请求访问设备相机时显示的（本地化）消息。
+A message displayed when requesting access to the device's camera (localized).
 
 .. rst-class:: classref-item-separator
 
@@ -1563,7 +1563,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/advertising_data/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/advertising_data/collected>`
 
-表示你的应用是否会收集广告数据。
+Indicates whether your app collects advertising data.
 
 .. rst-class:: classref-item-separator
 
@@ -1575,7 +1575,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/advertising_data/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/advertising_data/collection_purposes>`
 
-你的应用收集广告数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects advertising data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1587,7 +1587,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/advertising_data/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/advertising_data/linked_to_user>`
 
-表示你的应用是否会将广告数据链接到用户的身份。
+Indicates whether your app links advertising data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1599,7 +1599,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/advertising_data/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/advertising_data/used_for_tracking>`
 
-表示你的应用是否会将广告数据用于追踪。
+Indicates whether your app uses advertising data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1611,7 +1611,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/audio_data/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/audio_data/collected>`
 
-表示你的应用是否会收集音频数据。
+Indicates whether your app collects audio data.
 
 .. rst-class:: classref-item-separator
 
@@ -1623,7 +1623,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/audio_data/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/audio_data/collection_purposes>`
 
-你的应用收集音频数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects audio data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1635,7 +1635,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/audio_data/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/audio_data/linked_to_user>`
 
-表示你的应用是否会将音频数据链接到用户的身份。
+Indicates whether your app links audio data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1647,7 +1647,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/audio_data/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/audio_data/used_for_tracking>`
 
-表示你的应用是否会将音频数据用于追踪。
+Indicates whether your app uses audio data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1659,7 +1659,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/browsing_history/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/browsing_history/collected>`
 
-表示你的应用是否会收集浏览历史。
+Indicates whether your app collects browsing history.
 
 .. rst-class:: classref-item-separator
 
@@ -1671,7 +1671,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/browsing_history/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/browsing_history/collection_purposes>`
 
-你的应用收集浏览历史记录的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects browsing history. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1683,7 +1683,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/browsing_history/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/browsing_history/linked_to_user>`
 
-表示你的应用是否会将浏览历史链接到用户的身份。
+Indicates whether your app links browsing history to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1695,7 +1695,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/browsing_history/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/browsing_history/used_for_tracking>`
 
-表示你的应用是否会将浏览历史用于追踪。
+Indicates whether your app uses browsing history for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1707,7 +1707,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/coarse_location/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/coarse_location/collected>`
 
-表示你的应用是否会收集粗略位置数据。
+Indicates whether your app collects coarse location data.
 
 .. rst-class:: classref-item-separator
 
@@ -1719,7 +1719,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/coarse_location/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/coarse_location/collection_purposes>`
 
-你的应用收集粗略位置数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects coarse location data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1731,7 +1731,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/coarse_location/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/coarse_location/linked_to_user>`
 
-表示你的应用是否会将粗略位置数据链接到用户的身份。
+Indicates whether your app links coarse location data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1743,7 +1743,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/coarse_location/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/coarse_location/used_for_tracking>`
 
-表示你的应用是否会将粗略位置数据用于追踪。
+Indicates whether your app uses coarse location data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1755,7 +1755,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/contacts/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/contacts/collected>`
 
-表示你的应用程序是否收集联系人。
+Indicates whether your app collects contacts.
 
 .. rst-class:: classref-item-separator
 
@@ -1767,7 +1767,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/contacts/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/contacts/collection_purposes>`
 
-你的应用收集联系人的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects contacts. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1779,7 +1779,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/contacts/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/contacts/linked_to_user>`
 
-表示你的应用是否会将通讯录链接到用户的身份。
+Indicates whether your app links contacts to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1791,7 +1791,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/contacts/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/contacts/used_for_tracking>`
 
-表示你的应用是否会将通讯录用于追踪。
+Indicates whether your app uses contacts for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1803,7 +1803,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/crash_data/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/crash_data/collected>`
 
-表示你的应用是否会收集崩溃数据。
+Indicates whether your app collects crash data.
 
 .. rst-class:: classref-item-separator
 
@@ -1815,7 +1815,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/crash_data/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/crash_data/collection_purposes>`
 
-你的应用收集崩溃数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects crash data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1827,7 +1827,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/crash_data/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/crash_data/linked_to_user>`
 
-表示你的应用是否会将崩溃数据链接到用户的身份。
+Indicates whether your app links crash data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1839,7 +1839,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/crash_data/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/crash_data/used_for_tracking>`
 
-表示你的应用是否会将崩溃数据用于追踪。
+Indicates whether your app uses crash data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1851,7 +1851,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/credit_info/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/credit_info/collected>`
 
-表示你的应用程序是否收集信用信息。
+Indicates whether your app collects credit information.
 
 .. rst-class:: classref-item-separator
 
@@ -1863,7 +1863,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/credit_info/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/credit_info/collection_purposes>`
 
-你的应用收集信用信息的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects credit information. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1875,7 +1875,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/credit_info/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/credit_info/linked_to_user>`
 
-表示你的应用是否会将信用信息链接到用户的身份。
+Indicates whether your app links credit information to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1887,7 +1887,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/credit_info/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/credit_info/used_for_tracking>`
 
-表示你的应用是否会将信用信息用于追踪。
+Indicates whether your app uses credit information for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1899,7 +1899,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/customer_support/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/customer_support/collected>`
 
-表示你的应用是否会收集客户支持数据。
+Indicates whether your app collects customer support data.
 
 .. rst-class:: classref-item-separator
 
@@ -1911,7 +1911,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/customer_support/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/customer_support/collection_purposes>`
 
-你的应用程序收集客户支持数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects customer support data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1923,7 +1923,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/customer_support/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/customer_support/linked_to_user>`
 
-表示你的应用程序是否将客户支持数据链接到用户身份。
+Indicates whether your app links customer support data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1935,7 +1935,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/customer_support/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/customer_support/used_for_tracking>`
 
-表示你的应用是否使用客户支持数据进行跟踪。
+Indicates whether your app uses customer support data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1947,7 +1947,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/device_id/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/device_id/collected>`
 
-表示你的应用是否会收集设备 ID。
+Indicates whether your app collects device IDs.
 
 .. rst-class:: classref-item-separator
 
@@ -1959,7 +1959,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/device_id/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/device_id/collection_purposes>`
 
-你的应用收集设备 ID 的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects device IDs. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1971,7 +1971,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/device_id/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/device_id/linked_to_user>`
 
-表示你的应用是否会将设备 ID 链接到用户的身份。
+Indicates whether your app links device IDs to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1983,7 +1983,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/device_id/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/device_id/used_for_tracking>`
 
-表示你的应用是否会将设备 ID 链接用于追踪。
+Indicates whether your app uses device IDs for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1995,7 +1995,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/email_address/collected>`
 
-表示你的应用是否会收集电子邮件地址。
+Indicates whether your app collects email address.
 
 .. rst-class:: classref-item-separator
 
@@ -2007,7 +2007,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/email_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/email_address/collection_purposes>`
 
-你的应用程序收集电子邮件地址的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects email address. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2019,7 +2019,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/email_address/linked_to_user>`
 
-表示你的应用是否会将电子邮件地址链接到用户的身份。
+Indicates whether your app links email address to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2031,7 +2031,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/email_address/used_for_tracking>`
 
-表示你的应用是否会将电子邮件地址用于追踪。
+Indicates whether your app uses email address for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2043,7 +2043,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/emails_or_text_messages/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/emails_or_text_messages/collected>`
 
-表示你的应用是否会收集电子邮件或短信。
+Indicates whether your app collects emails or text messages.
 
 .. rst-class:: classref-item-separator
 
@@ -2055,7 +2055,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/emails_or_text_messages/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/emails_or_text_messages/collection_purposes>`
 
-你的应用程序收集电子邮件或短信的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects emails or text messages. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2067,7 +2067,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/emails_or_text_messages/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/emails_or_text_messages/linked_to_user>`
 
-表示你的应用是否会将电子邮件或短信链接到用户的身份。
+Indicates whether your app links emails or text messages to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2079,7 +2079,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/emails_or_text_messages/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/emails_or_text_messages/used_for_tracking>`
 
-表示你的应用是否会将电子邮件或短信用于追踪。
+Indicates whether your app uses emails or text messages for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2091,7 +2091,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/environment_scanning/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/environment_scanning/collected>`
 
-表示你的应用是否会收集环境扫描数据。
+Indicates whether your app collects environment scanning data.
 
 .. rst-class:: classref-item-separator
 
@@ -2103,7 +2103,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/environment_scanning/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/environment_scanning/collection_purposes>`
 
-你的应用程序收集环境扫描数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects environment scanning data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2115,7 +2115,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/environment_scanning/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/environment_scanning/linked_to_user>`
 
-表示你的应用是否会将环境扫描数据链接到用户的身份。
+Indicates whether your app links environment scanning data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2127,7 +2127,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/environment_scanning/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/environment_scanning/used_for_tracking>`
 
-表示你的应用是否会将环境扫描数据用于追踪。
+Indicates whether your app uses environment scanning data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2139,7 +2139,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/fitness/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/fitness/collected>`
 
-表示你的应用是否会收集健身和锻炼数据。
+Indicates whether your app collects fitness and exercise data.
 
 .. rst-class:: classref-item-separator
 
@@ -2151,7 +2151,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/fitness/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/fitness/collection_purposes>`
 
-你的应用收集健身和锻炼数据的原因。见\ `《在隐私清单中描述数据用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects fitness and exercise data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2163,7 +2163,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/fitness/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/fitness/linked_to_user>`
 
-表示你的应用是否会将健身和锻炼数据链接到用户的身份。
+Indicates whether your app links fitness and exercise data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2175,7 +2175,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/fitness/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/fitness/used_for_tracking>`
 
-表示你的应用是否会将健身和锻炼数据用于追踪。
+Indicates whether your app uses fitness and exercise data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2187,7 +2187,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/gameplay_content/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/gameplay_content/collected>`
 
-表示你的应用是否会收集游戏内容。
+Indicates whether your app collects gameplay content.
 
 .. rst-class:: classref-item-separator
 
@@ -2199,7 +2199,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/gameplay_content/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/gameplay_content/collection_purposes>`
 
-你的应用程序收集游戏内容的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects gameplay content. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2211,7 +2211,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/gameplay_content/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/gameplay_content/linked_to_user>`
 
-表示你的应用是否会将游戏内容链接到用户的身份。
+Indicates whether your app links gameplay content to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2223,7 +2223,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/gameplay_content/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/gameplay_content/used_for_tracking>`
 
-表示你的应用是否会将游戏内容用于追踪。
+Indicates whether your app uses gameplay content for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2235,7 +2235,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/hands/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/hands/collected>`
 
-表示你的应用是否会收集用户的手部结构和手部移动。
+Indicates whether your app collects user's hand structure and hand movements.
 
 .. rst-class:: classref-item-separator
 
@@ -2247,7 +2247,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/hands/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/hands/collection_purposes>`
 
-你的应用收集用户的手部结构和手部移动的原因。见\ `《在隐私清单中描述数据用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects user's hand structure and hand movements. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2259,7 +2259,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/hands/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/hands/linked_to_user>`
 
-表示你的应用是否会将用户的手部结构和手部移动链接到用户的身份。
+Indicates whether your app links user's hand structure and hand movements to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2271,7 +2271,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/hands/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/hands/used_for_tracking>`
 
-表示你的应用是否会将用户的手部结构和手部移动用于追踪。
+Indicates whether your app uses user's hand structure and hand movements for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2283,7 +2283,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/head/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/head/collected>`
 
-表示你的应用是否会收集用户的头部移动。
+Indicates whether your app collects user's head movement.
 
 .. rst-class:: classref-item-separator
 
@@ -2295,7 +2295,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/head/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/head/collection_purposes>`
 
-你的应用程序收集用户头部运动的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects user's head movement. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2307,7 +2307,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/head/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/head/linked_to_user>`
 
-表示你的应用是否会将用户的头部移动链接到用户的身份。
+Indicates whether your app links user's head movement to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2319,7 +2319,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/head/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/head/used_for_tracking>`
 
-表示你的应用是否会将用户的头部移动用于追踪。
+Indicates whether your app uses user's head movement for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2331,7 +2331,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/health/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/health/collected>`
 
-表示你的应用是否会收集健康和医学数据。
+Indicates whether your app collects health and medical data.
 
 .. rst-class:: classref-item-separator
 
@@ -2343,7 +2343,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/health/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/health/collection_purposes>`
 
-你的应用收集健康和医学数据的原因。见\ `《在隐私清单中描述数据用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects health and medical data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2355,7 +2355,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/health/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/health/linked_to_user>`
 
-表示你的应用是否会将健康和医学数据链接到用户的身份。
+Indicates whether your app links health and medical data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2367,7 +2367,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/health/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/health/used_for_tracking>`
 
-表示你的应用是否会将健康和医学数据用于追踪。
+Indicates whether your app uses health and medical data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2379,7 +2379,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/name/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/name/collected>`
 
-表示你的应用是否会收集用户的姓名。
+Indicates whether your app collects user's name.
 
 .. rst-class:: classref-item-separator
 
@@ -2391,7 +2391,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/name/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/name/collection_purposes>`
 
-你的应用程序收集用户姓名的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects user's name. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2403,7 +2403,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/name/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/name/linked_to_user>`
 
-表示你的应用是否会将用户的姓名链接到用户的身份。
+Indicates whether your app links user's name to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2415,7 +2415,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/name/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/name/used_for_tracking>`
 
-表示你的应用是否会将用户的姓名用于追踪。
+Indicates whether your app uses user's name for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2427,7 +2427,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_contact_info/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_contact_info/collected>`
 
-表示你的应用程序是否收集任何其他联系信息。
+Indicates whether your app collects any other contact information.
 
 .. rst-class:: classref-item-separator
 
@@ -2439,7 +2439,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/other_contact_info/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_contact_info/collection_purposes>`
 
-你的应用收程序集任何其他联系信息的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects any other contact information. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2451,7 +2451,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_contact_info/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_contact_info/linked_to_user>`
 
-表示你的应用是否会将任何其他联系信息链接到用户的身份。
+Indicates whether your app links any other contact information to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2463,7 +2463,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_contact_info/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_contact_info/used_for_tracking>`
 
-表示你的应用是否会将任何其他联系信息用于追踪。
+Indicates whether your app uses any other contact information for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2475,7 +2475,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_data_types/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_data_types/collected>`
 
-表示你的应用是否会收集任何其它数据。
+Indicates whether your app collects any other data.
 
 .. rst-class:: classref-item-separator
 
@@ -2487,7 +2487,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/other_data_types/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_data_types/collection_purposes>`
 
-你的应用程序收集任何其他数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects any other data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2499,7 +2499,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_data_types/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_data_types/linked_to_user>`
 
-表示你的应用是否会将任何其它数据链接到用户的身份。
+Indicates whether your app links any other data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2511,7 +2511,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_data_types/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_data_types/used_for_tracking>`
 
-表示你的应用是否会将任何其它数据用于追踪。
+Indicates whether your app uses any other data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2523,7 +2523,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_diagnostic_data/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_diagnostic_data/collected>`
 
-表示你的应用是否会收集任何其它诊断数据。
+Indicates whether your app collects any other diagnostic data.
 
 .. rst-class:: classref-item-separator
 
@@ -2535,7 +2535,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/other_diagnostic_data/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_diagnostic_data/collection_purposes>`
 
-你的应用程序收集任何其他诊断数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects any other diagnostic data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2547,7 +2547,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_diagnostic_data/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_diagnostic_data/linked_to_user>`
 
-表示你的应用是否会将任何其它诊断数据链接到用户的身份。
+Indicates whether your app links any other diagnostic data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2559,7 +2559,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_diagnostic_data/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_diagnostic_data/used_for_tracking>`
 
-表示你的应用是否会将任何其它诊断数据用于追踪。
+Indicates whether your app uses any other diagnostic data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2571,7 +2571,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_financial_info/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_financial_info/collected>`
 
-表示你的应用程序是否收集任何其他财务信息。
+Indicates whether your app collects any other financial information.
 
 .. rst-class:: classref-item-separator
 
@@ -2583,7 +2583,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/other_financial_info/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_financial_info/collection_purposes>`
 
-你的应用程序收集任何其他财务信息的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects any other financial information. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2595,7 +2595,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_financial_info/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_financial_info/linked_to_user>`
 
-表示你的应用是否会将任何其它财务信息链接到用户的身份。
+Indicates whether your app links any other financial information to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2607,7 +2607,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_financial_info/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_financial_info/used_for_tracking>`
 
-表示你的应用是否会将任何其它财务信息用于追踪。
+Indicates whether your app uses any other financial information for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2619,7 +2619,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_usage_data/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_usage_data/collected>`
 
-表示你的应用是否会收集任何其它使用数据。
+Indicates whether your app collects any other usage data.
 
 .. rst-class:: classref-item-separator
 
@@ -2631,7 +2631,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/other_usage_data/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_usage_data/collection_purposes>`
 
-你的应用程序收集任何其他使用数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects any other usage data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2643,7 +2643,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_usage_data/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_usage_data/linked_to_user>`
 
-表示你的应用是否会将任何其它使用数据链接到用户的身份。
+Indicates whether your app links any other usage data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2655,7 +2655,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_usage_data/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_usage_data/used_for_tracking>`
 
-表示你的应用是否会将任何其它使用数据用于追踪。
+Indicates whether your app uses any other usage data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2667,7 +2667,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_user_content/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_user_content/collected>`
 
-表示你的应用是否会收集任何其它用户生成内容。
+Indicates whether your app collects any other user generated content.
 
 .. rst-class:: classref-item-separator
 
@@ -2679,7 +2679,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/other_user_content/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_user_content/collection_purposes>`
 
-你的应用程序收集任何其他用户生成内容的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects any other user generated content. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2691,7 +2691,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_user_content/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_user_content/linked_to_user>`
 
-表示你的应用是否会将任何其它用户生成内容链接到用户的身份。
+Indicates whether your app links any other user generated content to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2703,7 +2703,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_user_content/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_user_content/used_for_tracking>`
 
-表示你的应用是否会将任何其它用户生成内容用于追踪。
+Indicates whether your app uses any other user generated content for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2715,7 +2715,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/payment_info/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/payment_info/collected>`
 
-表示你的应用程序是否收集支付信息。
+Indicates whether your app collects payment information.
 
 .. rst-class:: classref-item-separator
 
@@ -2727,7 +2727,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/payment_info/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/payment_info/collection_purposes>`
 
-你的应用程序收集支付信息的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects payment information. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2739,7 +2739,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/payment_info/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/payment_info/linked_to_user>`
 
-表示你的应用是否会将支付信息链接到用户的身份。
+Indicates whether your app links payment information to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2751,7 +2751,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/payment_info/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/payment_info/used_for_tracking>`
 
-表示你的应用是否会将支付信息用于追踪。
+Indicates whether your app uses payment information for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2763,7 +2763,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/performance_data/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/performance_data/collected>`
 
-表示你的应用程序是否收集性能数据。
+Indicates whether your app collects performance data.
 
 .. rst-class:: classref-item-separator
 
@@ -2775,7 +2775,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/performance_data/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/performance_data/collection_purposes>`
 
-你的应用收集性能数据的原因。见\ `《在隐私清单中描述数据用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects performance data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2787,7 +2787,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/performance_data/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/performance_data/linked_to_user>`
 
-表示你的应用是否会将性能数据链接到用户的身份。
+Indicates whether your app links performance data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2799,7 +2799,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/performance_data/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/performance_data/used_for_tracking>`
 
-表示你的应用是否会将性能数据用于追踪。
+Indicates whether your app uses performance data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2811,7 +2811,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/phone_number/collected>`
 
-表示你的应用是否会收集电话号码。
+Indicates whether your app collects phone number.
 
 .. rst-class:: classref-item-separator
 
@@ -2823,7 +2823,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/phone_number/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/phone_number/collection_purposes>`
 
-你的应用程序收集电话号码的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects phone number. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2835,7 +2835,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/phone_number/linked_to_user>`
 
-表示你的应用是否会将电话号码链接到用户的身份。
+Indicates whether your app links phone number to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2847,7 +2847,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/phone_number/used_for_tracking>`
 
-表示你的应用是否会将电话号码用于追踪。
+Indicates whether your app uses phone number for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2859,7 +2859,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/photos_or_videos/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/photos_or_videos/collected>`
 
-表示你的应用程序是否收集照片或视频。
+Indicates whether your app collects photos or videos.
 
 .. rst-class:: classref-item-separator
 
@@ -2871,7 +2871,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/photos_or_videos/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/photos_or_videos/collection_purposes>`
 
-你的应用程序收集照片或视频的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects photos or videos. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2883,7 +2883,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/photos_or_videos/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/photos_or_videos/linked_to_user>`
 
-表示你的应用是否会将照片或视频链接到用户的身份。
+Indicates whether your app links photos or videos to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2895,7 +2895,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/photos_or_videos/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/photos_or_videos/used_for_tracking>`
 
-表示你的应用是否会将照片或视频用于追踪。
+Indicates whether your app uses photos or videos for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2907,7 +2907,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/physical_address/collected>`
 
-表示你的应用是否会收集实际住址。
+Indicates whether your app collects physical address.
 
 .. rst-class:: classref-item-separator
 
@@ -2919,7 +2919,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/physical_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/physical_address/collection_purposes>`
 
-你的应用收集实际住址的原因。见\ `《在隐私清单中描述数据用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects physical address. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2931,7 +2931,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/physical_address/linked_to_user>`
 
-表示你的应用是否会将实际住址链接到用户的身份。
+Indicates whether your app links physical address to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2943,7 +2943,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/physical_address/used_for_tracking>`
 
-表示你的应用是否会将实际住址用于追踪。
+Indicates whether your app uses physical address for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2955,7 +2955,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/precise_location/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/precise_location/collected>`
 
-表示你的应用是否会收集精确位置数据。
+Indicates whether your app collects precise location data.
 
 .. rst-class:: classref-item-separator
 
@@ -2967,7 +2967,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/precise_location/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/precise_location/collection_purposes>`
 
-你的应用程序收集精确位置数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects precise location data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2979,7 +2979,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/precise_location/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/precise_location/linked_to_user>`
 
-表示你的应用是否会将精确位置数据链接到用户的身份。
+Indicates whether your app links precise location data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2991,7 +2991,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/precise_location/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/precise_location/used_for_tracking>`
 
-表示你的应用是否会将精确位置数据用于追踪。
+Indicates whether your app uses precise location data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -3003,7 +3003,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/product_interaction/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/product_interaction/collected>`
 
-表示你的应用是否会收集产品互动数据。
+Indicates whether your app collects product interaction data.
 
 .. rst-class:: classref-item-separator
 
@@ -3015,7 +3015,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/product_interaction/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/product_interaction/collection_purposes>`
 
-你的应用程序收集产品互动数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects product interaction data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3027,7 +3027,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/product_interaction/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/product_interaction/linked_to_user>`
 
-表示你的应用是否会将产品互动数据链接到用户的身份。
+Indicates whether your app links product interaction data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -3039,7 +3039,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/product_interaction/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/product_interaction/used_for_tracking>`
 
-表示你的应用是否会将产品互动数据用于追踪。
+Indicates whether your app uses product interaction data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -3051,7 +3051,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/purchase_history/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/purchase_history/collected>`
 
-表示你的应用是否会收集购买历史。
+Indicates whether your app collects purchase history.
 
 .. rst-class:: classref-item-separator
 
@@ -3063,7 +3063,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/purchase_history/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/purchase_history/collection_purposes>`
 
-你的应用收集购买历史的原因。见\ `《在隐私清单中描述数据用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects purchase history. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3075,7 +3075,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/purchase_history/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/purchase_history/linked_to_user>`
 
-表示你的应用是否会将购买历史链接到用户的身份。
+Indicates whether your app links purchase history to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -3087,7 +3087,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/purchase_history/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/purchase_history/used_for_tracking>`
 
-表示你的应用是否会将购买历史用于追踪。
+Indicates whether your app uses purchase history for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -3099,7 +3099,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/search_history/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/search_history/collected>`
 
-表示你的应用程序是否收集搜索历史记录。
+Indicates whether your app collects search history.
 
 .. rst-class:: classref-item-separator
 
@@ -3111,7 +3111,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/search_history/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/search_history/collection_purposes>`
 
-你的应用程序收集搜索历史的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects search history. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3123,7 +3123,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/search_history/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/search_history/linked_to_user>`
 
-表示你的应用是否会将搜索历史链接到用户的身份。
+Indicates whether your app links search history to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -3135,7 +3135,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/search_history/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/search_history/used_for_tracking>`
 
-表示你的应用是否会将搜索历史用于追踪。
+Indicates whether your app uses search history for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -3147,7 +3147,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/sensitive_info/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/sensitive_info/collected>`
 
-表示你的应用程序是否收集敏感的用户信息。
+Indicates whether your app collects sensitive user information.
 
 .. rst-class:: classref-item-separator
 
@@ -3159,7 +3159,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/sensitive_info/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/sensitive_info/collection_purposes>`
 
-你的应用程序收集敏感用户信息的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects sensitive user information. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3171,7 +3171,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/sensitive_info/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/sensitive_info/linked_to_user>`
 
-表示你的 app 是否会将敏感用户信息链接到用户的身份上。
+Indicates whether your app links sensitive user information to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -3183,7 +3183,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/sensitive_info/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/sensitive_info/used_for_tracking>`
 
-表示你的 app 是否会将敏感用户信息用于跟踪。
+Indicates whether your app uses sensitive user information for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -3195,7 +3195,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/user_id/collected** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/user_id/collected>`
 
-表示你的 app 是否会收集用户 ID。
+Indicates whether your app collects user IDs.
 
 .. rst-class:: classref-item-separator
 
@@ -3207,7 +3207,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/collected_data/user_id/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/user_id/collection_purposes>`
 
-你的 app 收集用户 ID 的原因。见\ `《在隐私清单中描述数据用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects user IDs. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3219,7 +3219,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/user_id/linked_to_user** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/user_id/linked_to_user>`
 
-表示你的 app 是否会将用户 ID 链接到用户的身份上。
+Indicates whether your app links user IDs to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -3231,7 +3231,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/collected_data/user_id/used_for_tracking** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/user_id/used_for_tracking>`
 
-表示你的 app 是否会将用户 ID 用于跟踪。
+Indicates whether your app uses user IDs for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -3243,7 +3243,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/disk_space_access_reasons** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/disk_space_access_reasons>`
 
-你的 app 使用磁盘空间清理 API 的原因。见\ `《描述使用需要原因的 API 的用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__\ 。
+The reasons your app use free disk space API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3255,7 +3255,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/file_timestamp_access_reasons** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/file_timestamp_access_reasons>`
 
-你的 app 使用文件时间戳/元数据 API 的原因。见\ `《描述使用需要原因的 API 的用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__\ 。
+The reasons your app use file timestamp/metadata API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3267,7 +3267,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`String<class_String>` **privacy/microphone_usage_description** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/microphone_usage_description>`
 
-请求访问设备麦克风时显示的（英文）消息。
+A message displayed when requesting access to the device's microphone (in English).
 
 .. rst-class:: classref-item-separator
 
@@ -3279,7 +3279,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`Dictionary<class_Dictionary>` **privacy/microphone_usage_description_localized** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/microphone_usage_description_localized>`
 
-请求访问设备麦克风时显示的（本地化）消息。
+A message displayed when requesting access to the device's microphone (localized).
 
 .. rst-class:: classref-item-separator
 
@@ -3291,7 +3291,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`String<class_String>` **privacy/photolibrary_usage_description** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/photolibrary_usage_description>`
 
-请求访问用户照片图库时显示的（英文）消息。
+A message displayed when requesting access to the user's photo library (in English).
 
 .. rst-class:: classref-item-separator
 
@@ -3303,7 +3303,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`Dictionary<class_Dictionary>` **privacy/photolibrary_usage_description_localized** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/photolibrary_usage_description_localized>`
 
-请求访问用户照片图库时显示的（本地化）消息。
+A message displayed when requesting access to the user's photo library (localized).
 
 .. rst-class:: classref-item-separator
 
@@ -3315,7 +3315,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/system_boot_time_access_reasons** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/system_boot_time_access_reasons>`
 
-你的 app 使用系统启动时间/绝对时间 API 的原因。见\ `《描述使用需要原因的 API 的用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__\ 。
+The reasons your app use system boot time / absolute time API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3327,7 +3327,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`PackedStringArray<class_PackedStringArray>` **privacy/tracking_domains** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/tracking_domains>`
 
-你的应用程序连接到的参与跟踪的互联网域列表。请参阅 `隐私清单文件 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files>`__\ 。
+The list of internet domains your app connects to that engage in tracking. See `Privacy manifest files <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files>`__.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -3341,7 +3341,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **privacy/tracking_enabled** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/tracking_enabled>`
 
-表示你的应用程序是否使用数据进行跟踪。请参阅 `隐私清单文件 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files>`__\ 。
+Indicates whether your app uses data for tracking. See `Privacy manifest files <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3353,7 +3353,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`int<class_int>` **privacy/user_defaults_access_reasons** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/user_defaults_access_reasons>`
 
-你的 app 使用用户默认值 API 的原因。见\ `《描述使用需要原因的 API 的用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__\ 。
+The reasons your app use user defaults API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3365,9 +3365,9 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **shader_baker/enabled** :ref:`🔗<class_EditorExportPlatformIOS_property_shader_baker/enabled>`
 
-如果为 ``true``\ ，则着色器将被编译并嵌入到应用程序中。此选项仅当使用 Forward+ 或 Mobile 渲染器时才受支持。
+If ``true``, shaders will be compiled and embedded in the application. This option is only supported when using the Forward+ or Mobile renderers.
 
-\ **注意：**\ 导出为专用服务器时，由于不执行渲染，着色器烘焙器将始终被禁用。
+\ **Note:** When exporting as a dedicated server, the shader baker is always disabled since no rendering is performed.
 
 .. rst-class:: classref-item-separator
 
@@ -3379,7 +3379,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`Color<class_Color>` **storyboard/custom_bg_color** :ref:`🔗<class_EditorExportPlatformIOS_property_storyboard/custom_bg_color>`
 
-Storyboard 启动屏幕的自定义背景色。
+A custom background color of the storyboard launch screen.
 
 .. rst-class:: classref-item-separator
 
@@ -3391,7 +3391,7 @@ Storyboard 启动屏幕的自定义背景色。
 
 :ref:`String<class_String>` **storyboard/custom_image@2x** :ref:`🔗<class_EditorExportPlatformIOS_property_storyboard/custom_image@2x>`
 
-应用程序启动屏幕图像文件（2x DPI）。如果留空，则会回退至 :ref:`ProjectSettings.application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>`\ 。
+Application launch screen image file (2x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3403,7 +3403,7 @@ Storyboard 启动屏幕的自定义背景色。
 
 :ref:`String<class_String>` **storyboard/custom_image@3x** :ref:`🔗<class_EditorExportPlatformIOS_property_storyboard/custom_image@3x>`
 
-应用程序启动屏幕图像文件（3x DPI）。如果留空，则会回退至 :ref:`ProjectSettings.application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>`\ 。
+Application launch screen image file (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3415,7 +3415,7 @@ Storyboard 启动屏幕的自定义背景色。
 
 :ref:`int<class_int>` **storyboard/image_scale_mode** :ref:`🔗<class_EditorExportPlatformIOS_property_storyboard/image_scale_mode>`
 
-启动屏幕图像缩放模式。
+Launch screen image scaling mode.
 
 .. rst-class:: classref-item-separator
 
@@ -3427,7 +3427,7 @@ Storyboard 启动屏幕的自定义背景色。
 
 :ref:`bool<class_bool>` **storyboard/use_custom_bg_color** :ref:`🔗<class_EditorExportPlatformIOS_property_storyboard/use_custom_bg_color>`
 
-如果为 ``true``\ ，则会将 :ref:`storyboard/custom_bg_color<class_EditorExportPlatformIOS_property_storyboard/custom_bg_color>` 用作启动屏幕的背景色，否则会使用项目设置 ``application/boot_splash/bg_color``\ 。
+If ``true``, :ref:`storyboard/custom_bg_color<class_EditorExportPlatformIOS_property_storyboard/custom_bg_color>` is used as a launch screen background color, otherwise ``application/boot_splash/bg_color`` project setting is used.
 
 .. rst-class:: classref-item-separator
 
@@ -3439,7 +3439,7 @@ Storyboard 启动屏幕的自定义背景色。
 
 :ref:`bool<class_bool>` **user_data/accessible_from_files_app** :ref:`🔗<class_EditorExportPlatformIOS_property_user_data/accessible_from_files_app>`
 
-如果为 ``true``\ ，应用的“Documents”文件夹可以在“文件”应用中访问。见 `LSSupportsOpeningDocumentsInPlace <https://developer.apple.com/documentation/bundleresources/information_property_list/lssupportsopeningdocumentsinplace>`__\ 。
+If ``true``, the app "Documents" folder can be accessed via "Files" app. See `LSSupportsOpeningDocumentsInPlace <https://developer.apple.com/documentation/bundleresources/information_property_list/lssupportsopeningdocumentsinplace>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3451,14 +3451,14 @@ Storyboard 启动屏幕的自定义背景色。
 
 :ref:`bool<class_bool>` **user_data/accessible_from_itunes_sharing** :ref:`🔗<class_EditorExportPlatformIOS_property_user_data/accessible_from_itunes_sharing>`
 
-如果为 ``true``\ ，应用的“Documents”文件夹可以在 iTunes 文件共享中访问。见 `UIFileSharingEnabled <https://developer.apple.com/documentation/bundleresources/information_property_list/uifilesharingenabled>`__\ 。
+If ``true``, the app "Documents" folder can be accessed via iTunes file sharing. See `UIFileSharingEnabled <https://developer.apple.com/documentation/bundleresources/information_property_list/uifilesharingenabled>`__.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

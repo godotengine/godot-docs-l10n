@@ -5,30 +5,30 @@
 NavigationLink2D
 ================
 
-**實驗性：** This class may be changed or removed in future versions.
+**Experimental:** This class may be changed or removed in future versions.
 
-**繼承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-連接兩個位於 :ref:`NavigationRegion2D<class_NavigationRegion2D>` 上的位置的連結，導覽時能夠讓代理走這個鏈接。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-連接兩個位於 :ref:`NavigationRegion2D<class_NavigationRegion2D>` 上的位置的連結，導覽時能夠讓代理走這個鏈接。這兩個位置可以在同一個 :ref:`NavigationRegion2D<class_NavigationRegion2D>` 上，也可以是在兩個不同的區塊上。連結可以用來表達沿著導覽多邊形表面行進以外的導覽方法，例如滑鎖、傳送、跳過溝壑等等。
+A link between two positions on :ref:`NavigationRegion2D<class_NavigationRegion2D>`\ s that agents can be routed through.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`使用 NavigationLink <../tutorials/navigation/navigation_using_navigationlinks>`
+A link between two positions on :ref:`NavigationRegion2D<class_NavigationRegion2D>`\ s that agents can be routed through. These positions can be on the same :ref:`NavigationRegion2D<class_NavigationRegion2D>` or on two different ones. Links are useful to express navigation methods other than traveling along the surface of the navigation polygon, such as ziplines, teleporters, or gaps that can be jumped across.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Using NavigationLinks <../tutorials/navigation/navigation_using_navigationlinks>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -51,8 +51,8 @@ NavigationLink2D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -83,8 +83,8 @@ NavigationLink2D
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_NavigationLink2D_property_bidirectional:
 
@@ -97,7 +97,7 @@ NavigationLink2D
 - |void| **set_bidirectional**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_bidirectional**\ (\ )
 
-返回這個連接是可以雙向通行，還是只能從 :ref:`start_position<class_NavigationLink2D_property_start_position>` 通向 :ref:`end_position<class_NavigationLink2D_property_end_position>`\ 。
+Whether this link can be traveled in both directions or only from :ref:`start_position<class_NavigationLink2D_property_start_position>` to :ref:`end_position<class_NavigationLink2D_property_end_position>`.
 
 .. rst-class:: classref-item-separator
 
@@ -114,7 +114,7 @@ NavigationLink2D
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_enabled**\ (\ )
 
-該連結目前是否處於活動狀態。如果為 ``false`` ，則 :ref:`NavigationServer2D.map_get_path()<class_NavigationServer2D_method_map_get_path>` 會忽略這個連結。
+Whether this link is currently active. If ``false``, :ref:`NavigationServer2D.map_get_path()<class_NavigationServer2D_method_map_get_path>` will ignore this link.
 
 .. rst-class:: classref-item-separator
 
@@ -131,11 +131,11 @@ NavigationLink2D
 - |void| **set_end_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_end_position**\ (\ )
 
-連結的結束位置。
+Ending position of the link.
 
-連結會搜索導覽網格中最接近這個位置的多邊形，並將自身與該多邊形相關聯。
+This position will search out the nearest polygon in the navigation mesh to attach to.
 
-連結搜索的距離由 :ref:`NavigationServer2D.map_set_link_connection_radius()<class_NavigationServer2D_method_map_set_link_connection_radius>` 控制。
+The distance the link will search is controlled by :ref:`NavigationServer2D.map_set_link_connection_radius()<class_NavigationServer2D_method_map_set_link_connection_radius>`.
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ NavigationLink2D
 - |void| **set_enter_cost**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_enter_cost**\ (\ )
 
-當尋路從其他地區的導覽網格進入該連結時，\ :ref:`enter_cost<class_NavigationLink2D_property_enter_cost>` 會加到路徑距離中，用於確定最短路徑。
+When pathfinding enters this link from another regions navigation mesh the :ref:`enter_cost<class_NavigationLink2D_property_enter_cost>` value is added to the path distance for determining the shortest path.
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ NavigationLink2D
 - |void| **set_navigation_layers**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_navigation_layers**\ (\ )
 
-決定連結所屬導覽層的位元域。使用 :ref:`NavigationServer2D.map_get_path()<class_NavigationServer2D_method_map_get_path>` 請求路徑時會檢查這些導覽層。
+A bitfield determining all navigation layers the link belongs to. These navigation layers will be checked when requesting a path with :ref:`NavigationServer2D.map_get_path()<class_NavigationServer2D_method_map_get_path>`.
 
 .. rst-class:: classref-item-separator
 
@@ -186,11 +186,11 @@ NavigationLink2D
 - |void| **set_start_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_start_position**\ (\ )
 
-連結的起始位置。
+Starting position of the link.
 
-連結會搜索導覽網格中最接近這個位置的多邊形，並將自身與該多邊形相關聯。
+This position will search out the nearest polygon in the navigation mesh to attach to.
 
-連結搜索的距離由 :ref:`NavigationServer2D.map_set_link_connection_radius()<class_NavigationServer2D_method_map_set_link_connection_radius>` 控制。
+The distance the link will search is controlled by :ref:`NavigationServer2D.map_set_link_connection_radius()<class_NavigationServer2D_method_map_set_link_connection_radius>`.
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ NavigationLink2D
 - |void| **set_travel_cost**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_travel_cost**\ (\ )
 
-當尋路沿著該連結移動時，移動距離會和 :ref:`travel_cost<class_NavigationLink2D_property_travel_cost>` 相乘，用於確定最短路徑。
+When pathfinding moves along the link the traveled distance is multiplied with :ref:`travel_cost<class_NavigationLink2D_property_travel_cost>` for determining the shortest path.
 
 .. rst-class:: classref-section-separator
 
@@ -215,8 +215,8 @@ NavigationLink2D
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_NavigationLink2D_method_get_global_end_position:
 
@@ -224,7 +224,7 @@ NavigationLink2D
 
 :ref:`Vector2<class_Vector2>` **get_global_end_position**\ (\ ) |const| :ref:`🔗<class_NavigationLink2D_method_get_global_end_position>`
 
-返回該連結的 :ref:`end_position<class_NavigationLink2D_property_end_position>` 的全域位置。
+Returns the :ref:`end_position<class_NavigationLink2D_property_end_position>` that is relative to the link as a global position.
 
 .. rst-class:: classref-item-separator
 
@@ -236,7 +236,7 @@ NavigationLink2D
 
 :ref:`Vector2<class_Vector2>` **get_global_start_position**\ (\ ) |const| :ref:`🔗<class_NavigationLink2D_method_get_global_start_position>`
 
-返回該連結的 :ref:`start_position<class_NavigationLink2D_property_start_position>` 的全域位置。
+Returns the :ref:`start_position<class_NavigationLink2D_property_start_position>` that is relative to the link as a global position.
 
 .. rst-class:: classref-item-separator
 
@@ -248,7 +248,7 @@ NavigationLink2D
 
 :ref:`bool<class_bool>` **get_navigation_layer_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NavigationLink2D_method_get_navigation_layer_value>`
 
-返回 :ref:`navigation_layers<class_NavigationLink2D_property_navigation_layers>` 位元遮罩中指定的層是否啟用，給定的 ``layer_number`` 應在 1 和 32 之間。
+Returns whether or not the specified layer of the :ref:`navigation_layers<class_NavigationLink2D_property_navigation_layers>` bitmask is enabled, given a ``layer_number`` between 1 and 32.
 
 .. rst-class:: classref-item-separator
 
@@ -284,7 +284,7 @@ Returns the :ref:`RID<class_RID>` of this link on the :ref:`NavigationServer2D<c
 
 |void| **set_global_end_position**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_NavigationLink2D_method_set_global_end_position>`
 
-設定該連結的 :ref:`end_position<class_NavigationLink2D_property_end_position>` 的全域位置。
+Sets the :ref:`end_position<class_NavigationLink2D_property_end_position>` that is relative to the link from a global ``position``.
 
 .. rst-class:: classref-item-separator
 
@@ -296,7 +296,7 @@ Returns the :ref:`RID<class_RID>` of this link on the :ref:`NavigationServer2D<c
 
 |void| **set_global_start_position**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_NavigationLink2D_method_set_global_start_position>`
 
-設定該連結的 :ref:`start_position<class_NavigationLink2D_property_start_position>` 的全域位置。
+Sets the :ref:`start_position<class_NavigationLink2D_property_start_position>` that is relative to the link from a global ``position``.
 
 .. rst-class:: classref-item-separator
 
@@ -308,7 +308,7 @@ Returns the :ref:`RID<class_RID>` of this link on the :ref:`NavigationServer2D<c
 
 |void| **set_navigation_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationLink2D_method_set_navigation_layer_value>`
 
-根據 ``value``\ ，啟用或禁用 :ref:`navigation_layers<class_NavigationLink2D_property_navigation_layers>` 位元遮罩中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+Based on ``value``, enables or disables the specified layer in the :ref:`navigation_layers<class_NavigationLink2D_property_navigation_layers>` bitmask, given a ``layer_number`` between 1 and 32.
 
 .. rst-class:: classref-item-separator
 
@@ -322,12 +322,12 @@ Returns the :ref:`RID<class_RID>` of this link on the :ref:`NavigationServer2D<c
 
 Sets the :ref:`RID<class_RID>` of the navigation map this link should use. By default the link will automatically join the :ref:`World2D<class_World2D>` default navigation map so this function is only required to override the default map.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

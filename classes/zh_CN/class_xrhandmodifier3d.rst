@@ -5,32 +5,32 @@
 XRHandModifier3D
 ================
 
-**继承：** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-用于从 :ref:`XRHandTracker<class_XRHandTracker>` 数据驱动手部网格的节点。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-该节点使用来自 :ref:`XRHandTracker<class_XRHandTracker>` 的手部跟踪数据来设置手部网格的骨架。
-
-通过创建由相同 :ref:`XRHandTracker<class_XRHandTracker>` 驱动的手部网格的 :ref:`XRNode3D<class_XRNode3D>` 祖先来定位手部。
-
-当将手部跟踪位置数据应用于骨架时，它会根据 :ref:`Skeleton3D.motion_scale<class_Skeleton3D_property_motion_scale>` 进行缩放，可用于调整跟踪的手部以匹配手部模型的缩放。
+A node for driving hand meshes from :ref:`XRHandTracker<class_XRHandTracker>` data.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`XR 文档索引 <../tutorials/xr/index>`
+This node uses hand tracking data from an :ref:`XRHandTracker<class_XRHandTracker>` to pose the skeleton of a hand mesh.
+
+Positioning of hands is performed by creating an :ref:`XRNode3D<class_XRNode3D>` ancestor of the hand mesh driven by the same :ref:`XRHandTracker<class_XRHandTracker>`.
+
+The hand tracking position-data is scaled by :ref:`Skeleton3D.motion_scale<class_Skeleton3D_property_motion_scale>` when applied to the skeleton, which can be used to adjust the tracked hand to match the scale of the hand model.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`XR documentation index <../tutorials/xr/index>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -47,8 +47,8 @@ XRHandModifier3D
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_XRHandModifier3D_BoneUpdate:
 
@@ -62,7 +62,7 @@ enum **BoneUpdate**: :ref:`🔗<enum_XRHandModifier3D_BoneUpdate>`
 
 :ref:`BoneUpdate<enum_XRHandModifier3D_BoneUpdate>` **BONE_UPDATE_FULL** = ``0``
 
-骨架的骨骼完全更新（位置和旋转）以匹配跟踪的骨骼。
+The skeleton's bones are fully updated (both position and rotation) to match the tracked bones.
 
 .. _class_XRHandModifier3D_constant_BONE_UPDATE_ROTATION_ONLY:
 
@@ -70,7 +70,7 @@ enum **BoneUpdate**: :ref:`🔗<enum_XRHandModifier3D_BoneUpdate>`
 
 :ref:`BoneUpdate<enum_XRHandModifier3D_BoneUpdate>` **BONE_UPDATE_ROTATION_ONLY** = ``1``
 
-骨架的骨骼仅旋转以与跟踪的骨骼对齐，从而保留骨骼长度。
+The skeleton's bones are only rotated to align with the tracked bones, preserving bone length.
 
 .. _class_XRHandModifier3D_constant_BONE_UPDATE_MAX:
 
@@ -78,7 +78,7 @@ enum **BoneUpdate**: :ref:`🔗<enum_XRHandModifier3D_BoneUpdate>`
 
 :ref:`BoneUpdate<enum_XRHandModifier3D_BoneUpdate>` **BONE_UPDATE_MAX** = ``2``
 
-代表 :ref:`BoneUpdate<enum_XRHandModifier3D_BoneUpdate>` 枚举的大小。
+Represents the size of the :ref:`BoneUpdate<enum_XRHandModifier3D_BoneUpdate>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -86,8 +86,8 @@ enum **BoneUpdate**: :ref:`🔗<enum_XRHandModifier3D_BoneUpdate>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_XRHandModifier3D_property_bone_update:
 
@@ -100,7 +100,7 @@ enum **BoneUpdate**: :ref:`🔗<enum_XRHandModifier3D_BoneUpdate>`
 - |void| **set_bone_update**\ (\ value\: :ref:`BoneUpdate<enum_XRHandModifier3D_BoneUpdate>`\ )
 - :ref:`BoneUpdate<enum_XRHandModifier3D_BoneUpdate>` **get_bone_update**\ (\ )
 
-指定要在骨骼上执行的更新类型。
+Specifies the type of updates to perform on the bones.
 
 .. rst-class:: classref-item-separator
 
@@ -117,14 +117,14 @@ enum **BoneUpdate**: :ref:`🔗<enum_XRHandModifier3D_BoneUpdate>`
 - |void| **set_hand_tracker**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_hand_tracker**\ (\ )
 
-向 :ref:`XRServer<class_XRServer>` 注册的 :ref:`XRHandTracker<class_XRHandTracker>` 的名称，可以从中获取手部跟踪数据。
+The name of the :ref:`XRHandTracker<class_XRHandTracker>` registered with :ref:`XRServer<class_XRServer>` to obtain the hand tracking data from.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

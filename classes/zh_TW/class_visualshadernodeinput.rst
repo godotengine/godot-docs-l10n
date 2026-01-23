@@ -5,28 +5,28 @@
 VisualShaderNodeInput
 =====================
 
-**繼承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-在視覺化著色器圖中，代表輸入著色器參數。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-提供對著色器可用的輸入變數（內建）的存取。關於每種著色器型別的可用內建變數列表，請參閱著色器參考（查看\ ``教學``\ 部分的連結）。
+Represents the input shader parameter within the visual shader graph.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`著色參考索引 <../tutorials/shaders/shader_reference/index>`
+Gives access to input variables (built-ins) available for the shader. See the shading reference for the list of available built-ins for each shader type (check ``Tutorials`` section for link).
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Shading reference index <../tutorials/shaders/shader_reference/index>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -37,8 +37,8 @@ VisualShaderNodeInput
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ VisualShaderNodeInput
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_VisualShaderNodeInput_signal_input_type_changed:
 
@@ -62,7 +62,7 @@ VisualShaderNodeInput
 
 **input_type_changed**\ (\ ) :ref:`🔗<class_VisualShaderNodeInput_signal_input_type_changed>`
 
-通過 :ref:`input_name<class_VisualShaderNodeInput_property_input_name>` 更改輸入時發出。
+Emitted when input is changed via :ref:`input_name<class_VisualShaderNodeInput_property_input_name>`.
 
 .. rst-class:: classref-section-separator
 
@@ -70,8 +70,8 @@ VisualShaderNodeInput
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_VisualShaderNodeInput_property_input_name:
 
@@ -84,7 +84,7 @@ VisualShaderNodeInput
 - |void| **set_input_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_input_name**\ (\ )
 
-小寫風格的輸入常數之一，例如："vertex"（\ ``VERTEX``\ ）或 "point_size"（\ ``POINT_SIZE``\ ）。
+One of the several input constants in lower-case style like: "vertex" (``VERTEX``) or "point_size" (``POINT_SIZE``).
 
 .. rst-class:: classref-section-separator
 
@@ -92,8 +92,8 @@ VisualShaderNodeInput
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_VisualShaderNodeInput_method_get_input_real_name:
 
@@ -101,14 +101,14 @@ VisualShaderNodeInput
 
 :ref:`String<class_String>` **get_input_real_name**\ (\ ) |const| :ref:`🔗<class_VisualShaderNodeInput_method_get_input_real_name>`
 
-返回目前常數名稱翻譯至 Godot 著色器語言後的名稱。例如，如果 :ref:`input_name<class_VisualShaderNodeInput_property_input_name>` 等於 ``"albedo"``\ ，則返回 ``"ALBEDO"``\ 。
+Returns a translated name of the current constant in the Godot Shader Language. E.g. ``"ALBEDO"`` if the :ref:`input_name<class_VisualShaderNodeInput_property_input_name>` equal to ``"albedo"``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

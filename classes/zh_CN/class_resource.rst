@@ -5,38 +5,38 @@
 Resource
 ========
 
-**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**派生：** :ref:`Animation<class_Animation>`, :ref:`AnimationLibrary<class_AnimationLibrary>`, :ref:`AnimationNode<class_AnimationNode>`, :ref:`AnimationNodeStateMachinePlayback<class_AnimationNodeStateMachinePlayback>`, :ref:`AnimationNodeStateMachineTransition<class_AnimationNodeStateMachineTransition>`, :ref:`AudioBusLayout<class_AudioBusLayout>`, :ref:`AudioEffect<class_AudioEffect>`, :ref:`AudioStream<class_AudioStream>`, :ref:`BitMap<class_BitMap>`, :ref:`BoneMap<class_BoneMap>`, :ref:`ButtonGroup<class_ButtonGroup>`, :ref:`CameraAttributes<class_CameraAttributes>`, :ref:`ColorPalette<class_ColorPalette>`, :ref:`Compositor<class_Compositor>`, :ref:`CompositorEffect<class_CompositorEffect>`, :ref:`CryptoKey<class_CryptoKey>`, :ref:`Curve<class_Curve>`, :ref:`Curve2D<class_Curve2D>`, :ref:`Curve3D<class_Curve3D>`, :ref:`EditorNode3DGizmoPlugin<class_EditorNode3DGizmoPlugin>`, :ref:`EditorSettings<class_EditorSettings>`, :ref:`Environment<class_Environment>`, :ref:`FoldableGroup<class_FoldableGroup>`, :ref:`Font<class_Font>`, :ref:`GDExtension<class_GDExtension>`, :ref:`GLTFAccessor<class_GLTFAccessor>`, :ref:`GLTFAnimation<class_GLTFAnimation>`, :ref:`GLTFBufferView<class_GLTFBufferView>`, :ref:`GLTFCamera<class_GLTFCamera>`, :ref:`GLTFDocument<class_GLTFDocument>`, :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>`, :ref:`GLTFLight<class_GLTFLight>`, :ref:`GLTFMesh<class_GLTFMesh>`, :ref:`GLTFNode<class_GLTFNode>`, :ref:`GLTFPhysicsBody<class_GLTFPhysicsBody>`, :ref:`GLTFPhysicsShape<class_GLTFPhysicsShape>`, :ref:`GLTFSkeleton<class_GLTFSkeleton>`, :ref:`GLTFSkin<class_GLTFSkin>`, :ref:`GLTFSpecGloss<class_GLTFSpecGloss>`, :ref:`GLTFState<class_GLTFState>`, :ref:`GLTFTexture<class_GLTFTexture>`, :ref:`GLTFTextureSampler<class_GLTFTextureSampler>`, :ref:`Gradient<class_Gradient>`, :ref:`Image<class_Image>`, :ref:`ImporterMesh<class_ImporterMesh>`, :ref:`InputEvent<class_InputEvent>`, :ref:`JointLimitation3D<class_JointLimitation3D>`, :ref:`JSON<class_JSON>`, :ref:`LabelSettings<class_LabelSettings>`, :ref:`LightmapGIData<class_LightmapGIData>`, :ref:`Material<class_Material>`, :ref:`Mesh<class_Mesh>`, :ref:`MeshLibrary<class_MeshLibrary>`, :ref:`MissingResource<class_MissingResource>`, :ref:`MultiMesh<class_MultiMesh>`, :ref:`NavigationMesh<class_NavigationMesh>`, :ref:`NavigationMeshSourceGeometryData2D<class_NavigationMeshSourceGeometryData2D>`, :ref:`NavigationMeshSourceGeometryData3D<class_NavigationMeshSourceGeometryData3D>`, :ref:`NavigationPolygon<class_NavigationPolygon>`, :ref:`Noise<class_Noise>`, :ref:`Occluder3D<class_Occluder3D>`, :ref:`OccluderPolygon2D<class_OccluderPolygon2D>`, :ref:`OggPacketSequence<class_OggPacketSequence>`, :ref:`OpenXRAction<class_OpenXRAction>`, :ref:`OpenXRActionMap<class_OpenXRActionMap>`, :ref:`OpenXRActionSet<class_OpenXRActionSet>`, :ref:`OpenXRBindingModifier<class_OpenXRBindingModifier>`, :ref:`OpenXRHapticBase<class_OpenXRHapticBase>`, :ref:`OpenXRInteractionProfile<class_OpenXRInteractionProfile>`, :ref:`OpenXRIPBinding<class_OpenXRIPBinding>`, :ref:`PackedDataContainer<class_PackedDataContainer>`, :ref:`PackedScene<class_PackedScene>`, :ref:`PhysicsMaterial<class_PhysicsMaterial>`, :ref:`PolygonPathFinder<class_PolygonPathFinder>`, :ref:`RDShaderFile<class_RDShaderFile>`, :ref:`RDShaderSPIRV<class_RDShaderSPIRV>`, :ref:`RichTextEffect<class_RichTextEffect>`, :ref:`SceneReplicationConfig<class_SceneReplicationConfig>`, :ref:`Script<class_Script>`, :ref:`Shader<class_Shader>`, :ref:`ShaderInclude<class_ShaderInclude>`, :ref:`Shape2D<class_Shape2D>`, :ref:`Shape3D<class_Shape3D>`, :ref:`Shortcut<class_Shortcut>`, :ref:`SkeletonModification2D<class_SkeletonModification2D>`, :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`, :ref:`SkeletonProfile<class_SkeletonProfile>`, :ref:`Skin<class_Skin>`, :ref:`Sky<class_Sky>`, :ref:`SpriteFrames<class_SpriteFrames>`, :ref:`StyleBox<class_StyleBox>`, :ref:`SyntaxHighlighter<class_SyntaxHighlighter>`, :ref:`Texture<class_Texture>`, :ref:`Theme<class_Theme>`, :ref:`TileMapPattern<class_TileMapPattern>`, :ref:`TileSet<class_TileSet>`, :ref:`TileSetSource<class_TileSetSource>`, :ref:`Translation<class_Translation>`, :ref:`VideoStream<class_VideoStream>`, :ref:`VideoStreamPlayback<class_VideoStreamPlayback>`, :ref:`VisualShaderNode<class_VisualShaderNode>`, :ref:`VoxelGIData<class_VoxelGIData>`, :ref:`World2D<class_World2D>`, :ref:`World3D<class_World3D>`, :ref:`X509Certificate<class_X509Certificate>`
+**Inherited By:** :ref:`Animation<class_Animation>`, :ref:`AnimationLibrary<class_AnimationLibrary>`, :ref:`AnimationNode<class_AnimationNode>`, :ref:`AnimationNodeStateMachinePlayback<class_AnimationNodeStateMachinePlayback>`, :ref:`AnimationNodeStateMachineTransition<class_AnimationNodeStateMachineTransition>`, :ref:`AudioBusLayout<class_AudioBusLayout>`, :ref:`AudioEffect<class_AudioEffect>`, :ref:`AudioStream<class_AudioStream>`, :ref:`BitMap<class_BitMap>`, :ref:`BoneMap<class_BoneMap>`, :ref:`ButtonGroup<class_ButtonGroup>`, :ref:`CameraAttributes<class_CameraAttributes>`, :ref:`ColorPalette<class_ColorPalette>`, :ref:`Compositor<class_Compositor>`, :ref:`CompositorEffect<class_CompositorEffect>`, :ref:`CryptoKey<class_CryptoKey>`, :ref:`Curve<class_Curve>`, :ref:`Curve2D<class_Curve2D>`, :ref:`Curve3D<class_Curve3D>`, :ref:`EditorNode3DGizmoPlugin<class_EditorNode3DGizmoPlugin>`, :ref:`EditorSettings<class_EditorSettings>`, :ref:`Environment<class_Environment>`, :ref:`FoldableGroup<class_FoldableGroup>`, :ref:`Font<class_Font>`, :ref:`GDExtension<class_GDExtension>`, :ref:`GLTFAccessor<class_GLTFAccessor>`, :ref:`GLTFAnimation<class_GLTFAnimation>`, :ref:`GLTFBufferView<class_GLTFBufferView>`, :ref:`GLTFCamera<class_GLTFCamera>`, :ref:`GLTFDocument<class_GLTFDocument>`, :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>`, :ref:`GLTFLight<class_GLTFLight>`, :ref:`GLTFMesh<class_GLTFMesh>`, :ref:`GLTFNode<class_GLTFNode>`, :ref:`GLTFPhysicsBody<class_GLTFPhysicsBody>`, :ref:`GLTFPhysicsShape<class_GLTFPhysicsShape>`, :ref:`GLTFSkeleton<class_GLTFSkeleton>`, :ref:`GLTFSkin<class_GLTFSkin>`, :ref:`GLTFSpecGloss<class_GLTFSpecGloss>`, :ref:`GLTFState<class_GLTFState>`, :ref:`GLTFTexture<class_GLTFTexture>`, :ref:`GLTFTextureSampler<class_GLTFTextureSampler>`, :ref:`Gradient<class_Gradient>`, :ref:`Image<class_Image>`, :ref:`ImporterMesh<class_ImporterMesh>`, :ref:`InputEvent<class_InputEvent>`, :ref:`JointLimitation3D<class_JointLimitation3D>`, :ref:`JSON<class_JSON>`, :ref:`LabelSettings<class_LabelSettings>`, :ref:`LightmapGIData<class_LightmapGIData>`, :ref:`Material<class_Material>`, :ref:`Mesh<class_Mesh>`, :ref:`MeshLibrary<class_MeshLibrary>`, :ref:`MissingResource<class_MissingResource>`, :ref:`MultiMesh<class_MultiMesh>`, :ref:`NavigationMesh<class_NavigationMesh>`, :ref:`NavigationMeshSourceGeometryData2D<class_NavigationMeshSourceGeometryData2D>`, :ref:`NavigationMeshSourceGeometryData3D<class_NavigationMeshSourceGeometryData3D>`, :ref:`NavigationPolygon<class_NavigationPolygon>`, :ref:`Noise<class_Noise>`, :ref:`Occluder3D<class_Occluder3D>`, :ref:`OccluderPolygon2D<class_OccluderPolygon2D>`, :ref:`OggPacketSequence<class_OggPacketSequence>`, :ref:`OpenXRAction<class_OpenXRAction>`, :ref:`OpenXRActionMap<class_OpenXRActionMap>`, :ref:`OpenXRActionSet<class_OpenXRActionSet>`, :ref:`OpenXRBindingModifier<class_OpenXRBindingModifier>`, :ref:`OpenXRHapticBase<class_OpenXRHapticBase>`, :ref:`OpenXRInteractionProfile<class_OpenXRInteractionProfile>`, :ref:`OpenXRIPBinding<class_OpenXRIPBinding>`, :ref:`PackedDataContainer<class_PackedDataContainer>`, :ref:`PackedScene<class_PackedScene>`, :ref:`PhysicsMaterial<class_PhysicsMaterial>`, :ref:`PolygonPathFinder<class_PolygonPathFinder>`, :ref:`RDShaderFile<class_RDShaderFile>`, :ref:`RDShaderSPIRV<class_RDShaderSPIRV>`, :ref:`RichTextEffect<class_RichTextEffect>`, :ref:`SceneReplicationConfig<class_SceneReplicationConfig>`, :ref:`Script<class_Script>`, :ref:`Shader<class_Shader>`, :ref:`ShaderInclude<class_ShaderInclude>`, :ref:`Shape2D<class_Shape2D>`, :ref:`Shape3D<class_Shape3D>`, :ref:`Shortcut<class_Shortcut>`, :ref:`SkeletonModification2D<class_SkeletonModification2D>`, :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`, :ref:`SkeletonProfile<class_SkeletonProfile>`, :ref:`Skin<class_Skin>`, :ref:`Sky<class_Sky>`, :ref:`SpriteFrames<class_SpriteFrames>`, :ref:`StyleBox<class_StyleBox>`, :ref:`SyntaxHighlighter<class_SyntaxHighlighter>`, :ref:`Texture<class_Texture>`, :ref:`Theme<class_Theme>`, :ref:`TileMapPattern<class_TileMapPattern>`, :ref:`TileSet<class_TileSet>`, :ref:`TileSetSource<class_TileSetSource>`, :ref:`Translation<class_Translation>`, :ref:`VideoStream<class_VideoStream>`, :ref:`VideoStreamPlayback<class_VideoStreamPlayback>`, :ref:`VisualShaderNode<class_VisualShaderNode>`, :ref:`VoxelGIData<class_VoxelGIData>`, :ref:`World2D<class_World2D>`, :ref:`World3D<class_World3D>`, :ref:`X509Certificate<class_X509Certificate>`
 
-可序列化对象的基类。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-资源是所有 Godot 特定资源类型的基类，主要作为数据容器。因为资源继承自 :ref:`RefCounted<class_RefCounted>`\ ，所以进行了引用计数，不再使用时会被释放。资源也可以嵌套到其他资源里、保存到磁盘上。\ :ref:`PackedScene<class_PackedScene>` 也是一种资源，它是 Godot 项目中最常用的 :ref:`Object<class_Object>` 之一，独特的能力是可以将若干 :ref:`Node<class_Node>` 保存起来、随意进行实例化。
-
-在 GDScript 中，可以根据 :ref:`resource_path<class_Resource_property_resource_path>` 从磁盘上加载资源，使用 :ref:`@GDScript.load()<class_@GDScript_method_load>` 或 :ref:`@GDScript.preload()<class_@GDScript_method_preload>` 即可。
-
-引擎会维护所有已加载资源的全局缓存，可以根据路径引用资源（见 :ref:`ResourceLoader.has_cached()<class_ResourceLoader_method_has_cached>`\ ）。资源会在首次加载时缓存，所有引用释放后就会从缓存中移除。如果缓存中存在某个资源，那么后续使用其路径进行加载的时候返回的就是缓存中的引用。
-
-\ **注意：**\ 在 C# 中，资源不再被使用后并不会立即被释放。相反，垃圾回收将定期运行，并释放不再使用的资源。这意味着未使用的资源在被删除之前会在内存中保留一段时间。
+Base class for serializable objects.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`资源 <../tutorials/scripting/resources>`
+Resource is the base class for all Godot-specific resource types, serving primarily as data containers. Since they inherit from :ref:`RefCounted<class_RefCounted>`, resources are reference-counted and freed when no longer in use. They can also be nested within other resources, and saved on disk. :ref:`PackedScene<class_PackedScene>`, one of the most common :ref:`Object<class_Object>`\ s in a Godot project, is also a resource, uniquely capable of storing and instantiating the :ref:`Node<class_Node>`\ s it contains as many times as desired.
 
-- :doc:`何时以及如何避免为任何事情使用节点 <../tutorials/best_practices/node_alternatives>`
+In GDScript, resources can loaded from disk by their :ref:`resource_path<class_Resource_property_resource_path>` using :ref:`@GDScript.load()<class_@GDScript_method_load>` or :ref:`@GDScript.preload()<class_@GDScript_method_preload>`.
+
+The engine keeps a global cache of all loaded resources, referenced by paths (see :ref:`ResourceLoader.has_cached()<class_ResourceLoader_method_has_cached>`). A resource will be cached when loaded for the first time and removed from cache once all references are released. When a resource is cached, subsequent loads using its path will return the cached reference.
+
+\ **Note:** In C#, resources will not be freed instantly after they are no longer in use. Instead, garbage collection will run periodically and will free resources that are no longer in use. This means that unused resources will remain in memory for a while before being removed.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Resources <../tutorials/scripting/resources>`
+
+- :doc:`When and how to avoid using nodes for everything <../tutorials/best_practices/node_alternatives>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ Resource
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -101,8 +101,8 @@ Resource
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_Resource_signal_changed:
 
@@ -110,9 +110,9 @@ Resource
 
 **changed**\ (\ ) :ref:`🔗<class_Resource_signal_changed>`
 
-当资源发生更改时发出信号，通常是当其属性之一被修改时。另见 :ref:`emit_changed()<class_Resource_method_emit_changed>` 。
+Emitted when the resource changes, usually when one of its properties is modified. See also :ref:`emit_changed()<class_Resource_method_emit_changed>`.
 
-\ **注意：**\ 自定义资源的属性不会自动发出此信号。如有必要，需要创建一个 setter 来触发。
+\ **Note:** This signal is not emitted automatically for properties of custom resources. If necessary, a setter needs to be created to emit the signal.
 
 .. rst-class:: classref-item-separator
 
@@ -124,9 +124,9 @@ Resource
 
 **setup_local_to_scene_requested**\ (\ ) :ref:`🔗<class_Resource_signal_setup_local_to_scene_requested>`
 
-**已弃用：** This signal is only emitted when the resource is created. Override :ref:`_setup_local_to_scene()<class_Resource_private_method__setup_local_to_scene>` instead.
+**Deprecated:** This signal is only emitted when the resource is created. Override :ref:`_setup_local_to_scene()<class_Resource_private_method__setup_local_to_scene>` instead.
 
-由新复制的 :ref:`resource_local_to_scene<class_Resource_property_resource_local_to_scene>` 为 ``true`` 的资源发出。
+Emitted by a newly duplicated resource with :ref:`resource_local_to_scene<class_Resource_property_resource_local_to_scene>` set to ``true``.
 
 .. rst-class:: classref-section-separator
 
@@ -134,8 +134,8 @@ Resource
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_Resource_DeepDuplicateMode:
 
@@ -149,7 +149,7 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 
 :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>` **DEEP_DUPLICATE_NONE** = ``0``
 
-完全不复制子资源。即使在深层复制时也很有用，因为可以在复制所有数组和字典的同时，仍然指向原始资源。
+No subresorces at all are duplicated. This is useful even in a deep duplication to have all the arrays and dictionaries duplicated but still pointing to the original resources.
 
 .. _class_Resource_constant_DEEP_DUPLICATE_INTERNAL:
 
@@ -157,7 +157,7 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 
 :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>` **DEEP_DUPLICATE_INTERNAL** = ``1``
 
-仅复制不具备路径的子资源以及使用场景本地化路径的子资源。
+Only subresources without a path or with a scene-local path will be duplicated.
 
 .. _class_Resource_constant_DEEP_DUPLICATE_ALL:
 
@@ -165,7 +165,7 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 
 :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>` **DEEP_DUPLICATE_ALL** = ``2``
 
-复制所有子资源，即便使用的是非本地路径。换句话说，即便是单独保存的大型资源也会复制。
+Every subresource found will be duplicated, even if it has a non-local path. In other words, even potentially big resources stored separately will be duplicated.
 
 .. rst-class:: classref-section-separator
 
@@ -173,8 +173,8 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_Resource_property_resource_local_to_scene:
 
@@ -187,9 +187,9 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 - |void| **set_local_to_scene**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_local_to_scene**\ (\ )
 
-如果为 ``true``\ ，则该资源会为使用它的所有场景的每个实例重复创建。在运行时，在某个场景中对该资源的修改不会影响其他实例（见 :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`\ ）。
+If ``true``, the resource is duplicated for each instance of all scenes using it. At run-time, the resource can be modified in one scene without affecting other instances (see :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`).
 
-\ **注意：**\ 运行时，在已创建副本的资源上修改该属性不会有效果。
+\ **Note:** Changing this property at run-time has no effect on already created duplicate resources.
 
 .. rst-class:: classref-item-separator
 
@@ -206,9 +206,9 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 - |void| **set_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_name**\ (\ )
 
-这个资源的可选名称。定义后会在“检查器”面板中显示这个值来代表该资源。对于内置脚本，该名称会在脚本编辑器中作为选项卡名称的一部分显示。
+An optional name for this resource. When defined, its value is displayed to represent the resource in the Inspector dock. For built-in scripts, the name is displayed as part of the tab name in the script editor.
 
-\ **注意：**\ 某些资源格式不支持资源名称。仍然可以在编辑器中或通过代码设置名称，但重新加载资源时该名称将会丢失。例如，只有内置的脚本可以有资源名称，而存储在单独文件中的脚本则不能。
+\ **Note:** Some resource formats do not support resource names. You can still set the name in the editor or via code, but it will be lost when the resource is reloaded. For example, only built-in scripts can have a resource name, while scripts stored in separate files cannot.
 
 .. rst-class:: classref-item-separator
 
@@ -225,9 +225,9 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 - |void| **set_path**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_path**\ (\ )
 
-该资源的唯一路径。如果已被保存到磁盘，该值将是其文件路径。如果该资源仅包含在某一个场景中，该值将是 :ref:`PackedScene<class_PackedScene>` 的文件路径后加上一个唯一标识符。
+The unique path to this resource. If it has been saved to disk, the value will be its filepath. If the resource is exclusively contained within a scene, the value will be the :ref:`PackedScene<class_PackedScene>`'s filepath, followed by a unique identifier.
 
-\ **注意：**\ 如果之前已经加载了具有相同路径的资源，手动设置该属性可能会失败。如果有必要，请使用 :ref:`take_over_path()<class_Resource_method_take_over_path>`\ 。
+\ **Note:** Setting this property manually may fail if a resource with the same path has already been previously loaded. If necessary, use :ref:`take_over_path()<class_Resource_method_take_over_path>`.
 
 .. rst-class:: classref-item-separator
 
@@ -244,13 +244,13 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 - |void| **set_scene_unique_id**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_scene_unique_id**\ (\ )
 
-相对于该资源场景的唯一标识，若留空，则当该资源保存在 :ref:`PackedScene<class_PackedScene>` 中时，会自动生成 ID；若资源不在场景中，则该属性默认为空。
+A unique identifier relative to the this resource's scene. If left empty, the ID is automatically generated when this resource is saved inside a :ref:`PackedScene<class_PackedScene>`. If the resource is not inside a scene, this property is empty by default.
 
-\ **注意：**\ 保存 :ref:`PackedScene<class_PackedScene>` 时，若同一场景中的多个资源使用相同 ID，则只有场景层级中最早的资源保留原 ID，其他资源从 :ref:`generate_scene_unique_id()<class_Resource_method_generate_scene_unique_id>` 中分配新 ID。
+\ **Note:** When the :ref:`PackedScene<class_PackedScene>` is saved, if multiple resources in the same scene use the same ID, only the earliest resource in the scene hierarchy keeps the original ID. The other resources are assigned new IDs from :ref:`generate_scene_unique_id()<class_Resource_method_generate_scene_unique_id>`.
 
-\ **注意：**\ 设置该属性不会发出 :ref:`changed<class_Resource_signal_changed>` 信号。
+\ **Note:** Setting this property does not emit the :ref:`changed<class_Resource_signal_changed>` signal.
 
-\ **警告：**\ 设置时，ID 只能由字母、数字和下划线组成，否则会失败，且默认为一个随机生成的 ID。
+\ **Warning:** When setting, the ID must only consist of letters, numbers, and underscores. Otherwise, it will fail and default to a randomly generated ID.
 
 .. rst-class:: classref-section-separator
 
@@ -258,8 +258,8 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_Resource_private_method__get_rid:
 
@@ -267,7 +267,7 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 
 :ref:`RID<class_RID>` **_get_rid**\ (\ ) |virtual| |const| :ref:`🔗<class_Resource_private_method__get_rid>`
 
-可以覆盖此方法，从而在调用 :ref:`get_rid()<class_Resource_method_get_rid>` 时返回自定义 :ref:`RID<class_RID>`\ 。
+Override this method to return a custom :ref:`RID<class_RID>` when :ref:`get_rid()<class_Resource_method_get_rid>` is called.
 
 .. rst-class:: classref-item-separator
 
@@ -279,7 +279,7 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 
 |void| **_reset_state**\ (\ ) |virtual| :ref:`🔗<class_Resource_private_method__reset_state>`
 
-如果资源在未导出的属性中存储状态，例如通过 :ref:`Object._validate_property()<class_Object_private_method__validate_property>` 或 :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>` 存储，则必须实现该方法进行状态的清空。
+For resources that store state in non-exported properties, such as via :ref:`Object._validate_property()<class_Object_private_method__validate_property>` or :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`, this method must be implemented to clear them.
 
 .. rst-class:: classref-item-separator
 
@@ -291,7 +291,7 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 
 |void| **_set_path_cache**\ (\ path\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_Resource_private_method__set_path_cache>`
 
-可以覆盖此方法，从而在对象的 :ref:`set_path_cache()<class_Resource_method_set_path_cache>` 被调用后执行额外的逻辑。
+Override this method to execute additional logic after :ref:`set_path_cache()<class_Resource_method_set_path_cache>` is called on this object.
 
 .. rst-class:: classref-item-separator
 
@@ -303,9 +303,9 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 
 |void| **_setup_local_to_scene**\ (\ ) |virtual| :ref:`🔗<class_Resource_private_method__setup_local_to_scene>`
 
-如果原始资源的 :ref:`resource_local_to_scene<class_Resource_property_resource_local_to_scene>` 被设置为 ``true``\ ，则覆盖该方法可以自定义从 :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>` 创建的新复制的资源。
+Override this method to customize the newly duplicated resource created from :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`, if the original's :ref:`resource_local_to_scene<class_Resource_property_resource_local_to_scene>` is set to ``true``.
 
-\ **示例：**\ 为实例化场景中的每个本地资源设置随机 ``damage`` 值：
+\ **Example:** Set a random ``damage`` value to every local resource from an instantiated scene:
 
 ::
 
@@ -326,21 +326,21 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 
 :ref:`Resource<class_Resource>` **duplicate**\ (\ deep\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Resource_method_duplicate>`
 
-制作该资源的副本，返回资源中，\ ``export`` 的属性以及 :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` 的属性都会从原始资源中复制。
+Duplicates this resource, returning a new resource with its ``export``\ ed or :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` properties copied from the original.
 
-如果 ``deep`` 为 ``false``\ ，则会返回\ **浅拷贝**\ ：嵌套的 :ref:`Array<class_Array>`\ 、\ :ref:`Dictionary<class_Dictionary>`\ 、\ **Resource** 属性不会发生复制，与原资源共享。
+If ``deep`` is ``false``, a **shallow** copy is returned: nested :ref:`Array<class_Array>`, :ref:`Dictionary<class_Dictionary>`, and **Resource** properties are not duplicated and are shared with the original resource.
 
-如果 ``deep`` 为 ``true``\ ，则会返回\ **深拷贝**\ ：嵌套的数组、字典和紧缩数组都会发生（递归）复制。内部的 **Resource** 只会在本地时进行复制，类似于对 :ref:`duplicate_deep()<class_Resource_method_duplicate_deep>` 使用 :ref:`DEEP_DUPLICATE_INTERNAL<class_Resource_constant_DEEP_DUPLICATE_INTERNAL>`\ 。
+If ``deep`` is ``true``, a **deep** copy is returned: all nested arrays, dictionaries, and packed arrays are also duplicated (recursively). Any **Resource** found inside will only be duplicated if it's local, like :ref:`DEEP_DUPLICATE_INTERNAL<class_Resource_constant_DEEP_DUPLICATE_INTERNAL>` used with :ref:`duplicate_deep()<class_Resource_method_duplicate_deep>`.
 
-例外如下：
+The following exceptions apply:
 
-- 带有 :ref:`@GlobalScope.PROPERTY_USAGE_ALWAYS_DUPLICATE<class_@GlobalScope_constant_PROPERTY_USAGE_ALWAYS_DUPLICATE>` 标志的子资源属性始终会被复制（是否递归取决于 ``deep``\ ）。
+- Subresource properties with the :ref:`@GlobalScope.PROPERTY_USAGE_ALWAYS_DUPLICATE<class_@GlobalScope_constant_PROPERTY_USAGE_ALWAYS_DUPLICATE>` flag are always duplicated (recursively or not, depending on ``deep``).
 
-- 带有 :ref:`@GlobalScope.PROPERTY_USAGE_NEVER_DUPLICATE<class_@GlobalScope_constant_PROPERTY_USAGE_NEVER_DUPLICATE>` 标志的子资源属性始终不会被复制。
+- Subresource properties with the :ref:`@GlobalScope.PROPERTY_USAGE_NEVER_DUPLICATE<class_@GlobalScope_constant_PROPERTY_USAGE_NEVER_DUPLICATE>` flag are never duplicated.
 
-\ **注意：**\ 对于自定义资源，如果定义 :ref:`Object._init()<class_Object_private_method__init>` 时使用了必填的参数，则此方法会失败。
+\ **Note:** For custom resources, this method will fail if :ref:`Object._init()<class_Object_private_method__init>` has been defined with required parameters.
 
-\ **注意：**\ 复制时如果将 ``deep`` 设置为 ``true``\ ，则在复制过程中发现的每个资源，包括调用该方法的资源，都只会发生一次复制，在副本中可以对其存在多次引用。例如你复制的资源 A 里正好对资源 B 存在两个引用，那么新的资源 A' 就会引用新的资源 B' 两次。
+\ **Note:** When duplicating with ``deep`` set to ``true``, each resource found, including the one on which this method is called, will be only duplicated once and referenced as many times as needed in the duplicate. For instance, if you are duplicating resource A that happens to have resource B referenced twice, you'll get a new resource A' referencing a new resource B' twice.
 
 .. rst-class:: classref-item-separator
 
@@ -364,9 +364,9 @@ Duplicates this resource, deeply, like :ref:`duplicate()<class_Resource_method_d
 
 |void| **emit_changed**\ (\ ) :ref:`🔗<class_Resource_method_emit_changed>`
 
-发出 :ref:`changed<class_Resource_signal_changed>` 更改信号。某些内置资源会自动调用此方法。
+Emits the :ref:`changed<class_Resource_signal_changed>` signal. This method is called automatically for some built-in resources.
 
-\ **注意：**\ 对于自定义资源，推荐在发生任何有意义的变化时都调用此方法，例如修改属性时。这样能够保证依赖于此资源的自定义 :ref:`Object<class_Object>` 能够正确更新其属性。
+\ **Note:** For custom resources, it's recommended to call this method whenever a meaningful change occurs, such as a modified property. This ensures that custom :ref:`Object<class_Object>`\ s depending on the resource are properly updated.
 
 ::
 
@@ -386,7 +386,7 @@ Duplicates this resource, deeply, like :ref:`duplicate()<class_Resource_method_d
 
 :ref:`String<class_String>` **generate_scene_unique_id**\ (\ ) |static| :ref:`🔗<class_Resource_method_generate_scene_unique_id>`
 
-根据当前日期、时间和随机值，为要包含在 :ref:`PackedScene<class_PackedScene>` 中的资源生成唯一标识符。返回的字符串仅由字母（\ ``a`` 到 ``y``\ ）和数字（\ ``0`` 到 ``8``\ ）组成。另见 :ref:`resource_scene_unique_id<class_Resource_property_resource_scene_unique_id>`\ 。
+Generates a unique identifier for a resource to be contained inside a :ref:`PackedScene<class_PackedScene>`, based on the current date, time, and a random value. The returned string is only composed of letters (``a`` to ``y``) and numbers (``0`` to ``8``). See also :ref:`resource_scene_unique_id<class_Resource_property_resource_scene_unique_id>`.
 
 .. rst-class:: classref-item-separator
 
@@ -398,9 +398,9 @@ Duplicates this resource, deeply, like :ref:`duplicate()<class_Resource_method_d
 
 :ref:`String<class_String>` **get_id_for_path**\ (\ path\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_Resource_method_get_id_for_path>`
 
-根据场景唯一 ID 的内部缓存，返回位于 ``path`` 的场景中该资源的 ID。如果没有对应的条目则返回空字符串。适用于扩展 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` 和 :ref:`ResourceFormatSaver<class_ResourceFormatSaver>` 实现对版本控制系统友好的自定义资源格式时保持场景唯一 ID 一致。
+From the internal cache for scene-unique IDs, returns the ID of this resource for the scene at ``path``. If there is no entry, an empty string is returned. Useful to keep scene-unique IDs the same when implementing a VCS-friendly custom resource format by extending :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` and :ref:`ResourceFormatSaver<class_ResourceFormatSaver>`.
 
-\ **注意：**\ 该方法仅在运行于编辑器上下文时实现。运行时返回空字符串。
+\ **Note:** This method is only implemented when running in an editor context. At runtime, it returns an empty string.
 
 .. rst-class:: classref-item-separator
 
@@ -412,7 +412,7 @@ Duplicates this resource, deeply, like :ref:`duplicate()<class_Resource_method_d
 
 :ref:`Node<class_Node>` **get_local_scene**\ (\ ) |const| :ref:`🔗<class_Resource_method_get_local_scene>`
 
-如果 :ref:`resource_local_to_scene<class_Resource_property_resource_local_to_scene>` 为 ``true``\ ，并且该资源是从 :ref:`PackedScene<class_PackedScene>` 实例中加载的，则返回使用该资源的场景的根 :ref:`Node<class_Node>`\ 。否则返回 ``null``\ 。
+If :ref:`resource_local_to_scene<class_Resource_property_resource_local_to_scene>` is set to ``true`` and the resource has been loaded from a :ref:`PackedScene<class_PackedScene>` instantiation, returns the root :ref:`Node<class_Node>` of the scene where this resource is used. Otherwise, returns ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -424,7 +424,7 @@ Duplicates this resource, deeply, like :ref:`duplicate()<class_Resource_method_d
 
 :ref:`RID<class_RID>` **get_rid**\ (\ ) |const| :ref:`🔗<class_Resource_method_get_rid>`
 
-返回该资源的 :ref:`RID<class_RID>`\ （或者空的 RID）。许多资源（如 :ref:`Texture2D<class_Texture2D>`\ 、\ :ref:`Mesh<class_Mesh>` 等）是存储在服务器（\ :ref:`DisplayServer<class_DisplayServer>`\ 、\ :ref:`RenderingServer<class_RenderingServer>` 等）中的资源的高级抽象，所以这个函数将返回原始的 :ref:`RID<class_RID>`\ 。
+Returns the :ref:`RID<class_RID>` of this resource (or an empty RID). Many resources (such as :ref:`Texture2D<class_Texture2D>`, :ref:`Mesh<class_Mesh>`, and so on) are high-level abstractions of resources stored in a specialized server (:ref:`DisplayServer<class_DisplayServer>`, :ref:`RenderingServer<class_RenderingServer>`, etc.), so this function will return the original :ref:`RID<class_RID>`.
 
 .. rst-class:: classref-item-separator
 
@@ -436,7 +436,7 @@ Duplicates this resource, deeply, like :ref:`duplicate()<class_Resource_method_d
 
 :ref:`bool<class_bool>` **is_built_in**\ (\ ) |const| :ref:`🔗<class_Resource_method_is_built_in>`
 
-如果资源是作为其他资源文件中的一部分保存到磁盘上的，则返回 ``true``\ 。
+Returns ``true`` if the resource is saved on disk as a part of another resource's file.
 
 .. rst-class:: classref-item-separator
 
@@ -448,7 +448,7 @@ Duplicates this resource, deeply, like :ref:`duplicate()<class_Resource_method_d
 
 |void| **reset_state**\ (\ ) :ref:`🔗<class_Resource_method_reset_state>`
 
-清空资源中未导出的属性。另见 :ref:`_reset_state()<class_Resource_private_method__reset_state>`\ 。适合在通过扩展 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` 和 :ref:`ResourceFormatSaver<class_ResourceFormatSaver>` 实现自定义资源格式时使用。
+Makes the resource clear its non-exported properties. See also :ref:`_reset_state()<class_Resource_private_method__reset_state>`. Useful when implementing a custom resource format by extending :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` and :ref:`ResourceFormatSaver<class_ResourceFormatSaver>`.
 
 .. rst-class:: classref-item-separator
 
@@ -460,9 +460,9 @@ Duplicates this resource, deeply, like :ref:`duplicate()<class_Resource_method_d
 
 |void| **set_id_for_path**\ (\ path\: :ref:`String<class_String>`, id\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Resource_method_set_id_for_path>`
 
-场景唯一 ID 的内部缓存，针对位于 ``path`` 的场景将该资源的 ID 设置为 ``id``\ 。如果 ``id`` 为空，则会清空 ``path`` 对应的缓存条目。适用于扩展 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` 和 :ref:`ResourceFormatSaver<class_ResourceFormatSaver>` 实现对版本控制系统友好的自定义资源格式时保持场景唯一 ID 一致。
+In the internal cache for scene-unique IDs, sets the ID of this resource to ``id`` for the scene at ``path``. If ``id`` is empty, the cache entry for ``path`` is cleared. Useful to keep scene-unique IDs the same when implementing a VCS-friendly custom resource format by extending :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` and :ref:`ResourceFormatSaver<class_ResourceFormatSaver>`.
 
-\ **注意：**\ 该方法仅在运行于编辑器上下文时实现。
+\ **Note:** This method is only implemented when running in an editor context.
 
 .. rst-class:: classref-item-separator
 
@@ -474,7 +474,7 @@ Duplicates this resource, deeply, like :ref:`duplicate()<class_Resource_method_d
 
 |void| **set_path_cache**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Resource_method_set_path_cache>`
 
-将资源的路径设置为 ``path``\ ，不涉及资源缓存。适用于扩展 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` 和 :ref:`ResourceFormatSaver<class_ResourceFormatSaver>` 实现自定义资源格式时处理 :ref:`CacheMode<enum_ResourceFormatLoader_CacheMode>` 的值。
+Sets the resource's path to ``path`` without involving the resource cache. Useful for handling :ref:`CacheMode<enum_ResourceFormatLoader_CacheMode>` values when implementing a custom resource format by extending :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` and :ref:`ResourceFormatSaver<class_ResourceFormatSaver>`.
 
 .. rst-class:: classref-item-separator
 
@@ -486,9 +486,9 @@ Duplicates this resource, deeply, like :ref:`duplicate()<class_Resource_method_d
 
 |void| **setup_local_to_scene**\ (\ ) :ref:`🔗<class_Resource_method_setup_local_to_scene>`
 
-**已弃用：** This method should only be called internally.
+**Deprecated:** This method should only be called internally.
 
-调用 :ref:`_setup_local_to_scene()<class_Resource_private_method__setup_local_to_scene>`\ 。如果 :ref:`resource_local_to_scene<class_Resource_property_resource_local_to_scene>` 为 ``true``\ ，则场景实例中新复制的资源会自动从 :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>` 中调用该方法。
+Calls :ref:`_setup_local_to_scene()<class_Resource_private_method__setup_local_to_scene>`. If :ref:`resource_local_to_scene<class_Resource_property_resource_local_to_scene>` is set to ``true``, this method is automatically called from :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>` by the newly duplicated resource within the scene instance.
 
 .. rst-class:: classref-item-separator
 
@@ -500,14 +500,14 @@ Duplicates this resource, deeply, like :ref:`duplicate()<class_Resource_method_d
 
 |void| **take_over_path**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Resource_method_take_over_path>`
 
-将 :ref:`resource_path<class_Resource_property_resource_path>` 设置为 ``path``\ ，可能会覆盖这个路径对应的已有缓存条目。后续尝试通过路径加载覆盖后的资源时，会返回这个资源。
+Sets the :ref:`resource_path<class_Resource_property_resource_path>` to ``path``, potentially overriding an existing cache entry for this path. Further attempts to load an overridden resource by path will instead return this resource.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

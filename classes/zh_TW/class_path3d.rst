@@ -5,23 +5,23 @@
 Path3D
 ======
 
-**繼承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-包含 :ref:`PathFollow3D<class_PathFollow3D>` 節點要跟隨的的一條 :ref:`Curve3D<class_Curve3D>` 路徑。
+Contains a :ref:`Curve3D<class_Curve3D>` path for :ref:`PathFollow3D<class_PathFollow3D>` nodes to follow.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-可以讓 :ref:`PathFollow3D<class_PathFollow3D>` 子節點沿著 :ref:`Curve3D<class_Curve3D>` 移動。有關用法的更多資訊見 :ref:`PathFollow3D<class_PathFollow3D>`\ 。
+Can have :ref:`PathFollow3D<class_PathFollow3D>` child nodes moving along the :ref:`Curve3D<class_Curve3D>`. See :ref:`PathFollow3D<class_PathFollow3D>` for more information on the usage.
 
-注意，該路徑被認為是相對於移動的節點（\ :ref:`PathFollow3D<class_PathFollow3D>` 的子節點）。因此，該曲線通常應以零向量 ``(0, 0, 0)`` 開始。
+Note that the path is considered as relative to the moved nodes (children of :ref:`PathFollow3D<class_PathFollow3D>`). As such, the curve should usually start with a zero vector ``(0, 0, 0)``.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ Path3D
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_Path3D_signal_curve_changed:
 
@@ -47,7 +47,7 @@ Path3D
 
 **curve_changed**\ (\ ) :ref:`🔗<class_Path3D_signal_curve_changed>`
 
-當 :ref:`curve<class_Path3D_property_curve>` 改變時觸發。
+Emitted when the :ref:`curve<class_Path3D_property_curve>` changes.
 
 .. rst-class:: classref-item-separator
 
@@ -67,8 +67,8 @@ Emitted when the :ref:`debug_custom_color<class_Path3D_property_debug_custom_col
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_Path3D_property_curve:
 
@@ -81,7 +81,7 @@ Emitted when the :ref:`debug_custom_color<class_Path3D_property_debug_custom_col
 - |void| **set_curve**\ (\ value\: :ref:`Curve3D<class_Curve3D>`\ )
 - :ref:`Curve3D<class_Curve3D>` **get_curve**\ (\ )
 
-描述路徑的 :ref:`Curve3D<class_Curve3D>`\ 。
+A :ref:`Curve3D<class_Curve3D>` describing the path.
 
 .. rst-class:: classref-item-separator
 
@@ -100,12 +100,12 @@ Emitted when the :ref:`debug_custom_color<class_Path3D_property_debug_custom_col
 
 The custom color used to draw the path in the editor. If set to :ref:`Color.BLACK<class_Color_constant_BLACK>` (as by default), the color set in :ref:`ProjectSettings.debug/shapes/paths/geometry_color<class_ProjectSettings_property_debug/shapes/paths/geometry_color>` is used.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

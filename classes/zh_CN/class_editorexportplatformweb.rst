@@ -5,32 +5,32 @@
 EditorExportPlatformWeb
 =======================
 
-**继承：** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Web 导出器。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-Web 导出器能够自定义 web 构建的处理方式。在编辑器的“导出”窗口中，添加“Web”预设时会创建这个导出器。
-
-\ **注意：**\ Web 上的 Godot 是在一个 ``<canvas>`` 标签中渲染的。这个画布是作为程序的主 :ref:`Window<class_Window>` 使用的，但是一般没有办法手动调整位置和大小。
+Exporter for the Web.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`为 Web 导出 <../tutorials/export/exporting_for_web>`
+The Web exporter customizes how a web build is handled. In the editor's "Export" window, it is created when adding a new "Web" preset.
 
-- :doc:`网页文档索引 <../tutorials/platform/web/index>`
+\ **Note:** Godot on Web is rendered inside a ``<canvas>`` tag. Normally, the canvas cannot be positioned or resized manually, but otherwise acts as the main :ref:`Window<class_Window>` of the application.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Exporting for the Web <../tutorials/export/exporting_for_web>`
+
+- :doc:`Web documentation index <../tutorials/platform/web/index>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -89,8 +89,8 @@ Web 导出器能够自定义 web 构建的处理方式。在编辑器的“导�
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_EditorExportPlatformWeb_property_custom_template/debug:
 
@@ -98,7 +98,7 @@ Web 导出器能够自定义 web 构建的处理方式。在编辑器的“导�
 
 :ref:`String<class_String>` **custom_template/debug** :ref:`🔗<class_EditorExportPlatformWeb_property_custom_template/debug>`
 
-用于调试构建的自定义导出模板的文件路径。如果留空，则默认模板将被使用。
+File path to the custom export template used for debug builds. If left empty, the default template is used.
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ Web 导出器能够自定义 web 构建的处理方式。在编辑器的“导�
 
 :ref:`String<class_String>` **custom_template/release** :ref:`🔗<class_EditorExportPlatformWeb_property_custom_template/release>`
 
-用于发布版本的自定义导出模板的文件路径。如果留空，则默认模板将被使用。
+File path to the custom export template used for release builds. If left empty, the default template is used.
 
 .. rst-class:: classref-item-separator
 
@@ -122,13 +122,13 @@ Web 导出器能够自定义 web 构建的处理方式。在编辑器的“导�
 
 :ref:`int<class_int>` **html/canvas_resize_policy** :ref:`🔗<class_EditorExportPlatformWeb_property_html/canvas_resize_policy>`
 
-决定 Godot 应如何调整画布的大小。
+Determines how the canvas should be resized by Godot.
 
-- **None：**\ 画布不会自动调整大小。
+- **None:** The canvas is not automatically resized.
 
-- **Project：**\ 画布的大小由 :ref:`ProjectSettings<class_ProjectSettings>` 决定。
+- **Project:** The size of the canvas is dependent on the :ref:`ProjectSettings<class_ProjectSettings>`.
 
-- **Adaptive：**\ 画布自动调整到尽可能覆盖 Web 页面的大小。
+- **Adaptive:** The canvas is automatically resized to fit as much of the web page as possible.
 
 .. rst-class:: classref-item-separator
 
@@ -140,9 +140,9 @@ Web 导出器能够自定义 web 构建的处理方式。在编辑器的“导�
 
 :ref:`String<class_String>` **html/custom_html_shell** :ref:`🔗<class_EditorExportPlatformWeb_property_html/custom_html_shell>`
 
-包裹导出后 Web 构建的自定义 HTML 页面。留空时使用默认的 HTML 壳。
+The custom HTML page that wraps the exported web build. If left empty, the default HTML shell is used.
 
-详见教程\ :doc:`《自定义 HTML5 壳》 <../tutorials/platform/web/customizing_html5_shell>`\ 。
+For more information, see the :doc:`Customizing HTML5 Shell <../tutorials/platform/web/customizing_html5_shell>` tutorial.
 
 .. rst-class:: classref-item-separator
 
@@ -154,9 +154,9 @@ Web 导出器能够自定义 web 构建的处理方式。在编辑器的“导�
 
 :ref:`bool<class_bool>` **html/experimental_virtual_keyboard** :ref:`🔗<class_EditorExportPlatformWeb_property_html/experimental_virtual_keyboard>`
 
-**实验性：** 未来版本中可能会修改或移除该属性。
+**Experimental:** This property may be changed or removed in future versions.
 
-如果为 ``true``\ ，则将对虚拟键盘的支持嵌入到网页中，在触摸屏设备上会在必要时显示。
+If ``true``, embeds support for a virtual keyboard into the web page, which is shown when necessary on touchscreen devices.
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ Web 导出器能够自定义 web 构建的处理方式。在编辑器的“导�
 
 :ref:`bool<class_bool>` **html/export_icon** :ref:`🔗<class_EditorExportPlatformWeb_property_html/export_icon>`
 
-如果为 ``true``\ ，则项目图标将用作该应用程序网页的图标。
+If ``true``, the project icon will be used as the favicon for this application's web page.
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ Web 导出器能够自定义 web 构建的处理方式。在编辑器的“导�
 
 :ref:`bool<class_bool>` **html/focus_canvas_on_start** :ref:`🔗<class_EditorExportPlatformWeb_property_html/focus_canvas_on_start>`
 
-如果为 ``true``\ ，则浏览器窗口已经获得焦点，且一旦加载应用程序时，画布就会获得焦点。
+If ``true``, the canvas will be focused as soon as the application is loaded, if the browser window is already in focus.
 
 .. rst-class:: classref-item-separator
 
@@ -192,9 +192,9 @@ Web 导出器能够自定义 web 构建的处理方式。在编辑器的“导�
 
 :ref:`String<class_String>` **html/head_include** :ref:`🔗<class_EditorExportPlatformWeb_property_html/head_include>`
 
-要在 ``<head>`` 中额外添加的 HTML 标签，例如 ``<meta>`` 标签。
+Additional HTML tags to include inside the ``<head>``, such as ``<meta>`` tags.
 
-\ **注意：**\ ``<title>`` 标签无须自行添加，会根据项目名称自动添加。
+\ **Note:** You do not need to add a ``<title>`` tag, as it is automatically included based on the project's name.
 
 .. rst-class:: classref-item-separator
 
@@ -206,7 +206,7 @@ Web 导出器能够自定义 web 构建的处理方式。在编辑器的“导�
 
 :ref:`Color<class_Color>` **progressive_web_app/background_color** :ref:`🔗<class_EditorExportPlatformWeb_property_progressive_web_app/background_color>`
 
-Web 应用程序后面使用的背景颜色。
+The background color used behind the web application.
 
 .. rst-class:: classref-item-separator
 
@@ -218,15 +218,15 @@ Web 应用程序后面使用的背景颜色。
 
 :ref:`int<class_int>` **progressive_web_app/display** :ref:`🔗<class_EditorExportPlatformWeb_property_progressive_web_app/display>`
 
-用于该渐进式 Web 应用程序的 `显示模式 <https://developer.mozilla.org/en-US/docs/Web/Manifest/display/>`__\ 。不同的浏览器和平台的行为可能不同。
+The `display mode <https://developer.mozilla.org/en-US/docs/Web/Manifest/display/>`__ to use for this progressive web application. Different browsers and platforms may not behave the same.
 
-- **全屏：**\ 全屏显示应用程序并隐藏所有浏览器的 UI 元素。
+- **Fullscreen:** Displays the app in fullscreen and hides all of the browser's UI elements.
 
-- **独立：**\ 在单独的窗口中显示应用程序并隐藏所有浏览器的 UI 元素。
+- **Standalone:** Displays the app in a separate window and hides all of the browser's UI elements.
 
-- **最小 UI：**\ 在单独的窗口中显示应用程序，并且仅显示浏览器的 UI 元素以进行导航。
+- **Minimal UI:** Displays the app in a separate window and only shows the browser's UI elements for navigation.
 
-- **浏览器：**\ 将应用程序显示为普通网页。
+- **Browser:** Displays the app as a normal web page.
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ Web 应用程序后面使用的背景颜色。
 
 :ref:`bool<class_bool>` **progressive_web_app/enabled** :ref:`🔗<class_EditorExportPlatformWeb_property_progressive_web_app/enabled>`
 
-如果为 ``true``\ ，则会将该 Web 构建设置为 `渐进式网络应用程序 <https://zh.wikipedia.org/zh-cn/%E6%B8%90%E8%BF%9B%E5%BC%8F%E7%BD%91%E7%BB%9C%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F>`__\ （PWA）。
+If ``true``, turns this web build into a `progressive web application <https://en.wikipedia.org/wiki/Progressive_web_app>`__ (PWA).
 
 .. rst-class:: classref-item-separator
 
@@ -250,9 +250,9 @@ Web 应用程序后面使用的背景颜色。
 
 :ref:`bool<class_bool>` **progressive_web_app/ensure_cross_origin_isolation_headers** :ref:`🔗<class_EditorExportPlatformWeb_property_progressive_web_app/ensure_cross_origin_isolation_headers>`
 
-启用后，渐进式 Web 应用程序将确保每个请求都具有跨源隔离标头（COEP/COOP）。
+When enabled, the progressive web app will make sure that each request has cross-origin isolation headers (COEP/COOP).
 
-这可以简化设置以服务导出的游戏。
+This can simplify the setup to serve the exported game.
 
 .. rst-class:: classref-item-separator
 
@@ -264,9 +264,9 @@ Web 应用程序后面使用的背景颜色。
 
 :ref:`String<class_String>` **progressive_web_app/icon_144x144** :ref:`🔗<class_EditorExportPlatformWeb_property_progressive_web_app/icon_144x144>`
 
-该 Web 应用程序的最小图标的文件路径。如果未定义，则默认为项目图标。
+File path to the smallest icon for this web application. If not defined, defaults to the project icon.
 
-\ **注意：**\ 如果图标不是 144×144，则它将自动调整大小以适应最终构建。
+\ **Note:** If the icon is not 144×144, it will be automatically resized for the final build.
 
 .. rst-class:: classref-item-separator
 
@@ -278,9 +278,9 @@ Web 应用程序后面使用的背景颜色。
 
 :ref:`String<class_String>` **progressive_web_app/icon_180x180** :ref:`🔗<class_EditorExportPlatformWeb_property_progressive_web_app/icon_180x180>`
 
-该 Web 应用程序的小图标的文件路径。如果未定义，则默认为项目图标。
+File path to the small icon for this web application. If not defined, defaults to the project icon.
 
-\ **注意：**\ 如果图标不是 180×180，则它将自动调整大小以适应最终构建。
+\ **Note:** If the icon is not 180×180, it will be automatically resized for the final build.
 
 .. rst-class:: classref-item-separator
 
@@ -292,9 +292,9 @@ Web 应用程序后面使用的背景颜色。
 
 :ref:`String<class_String>` **progressive_web_app/icon_512x512** :ref:`🔗<class_EditorExportPlatformWeb_property_progressive_web_app/icon_512x512>`
 
-该 Web 应用程序的最小图标的文件路径。如果未定义，则默认为项目图标。
+File path to the largest icon for this web application. If not defined, defaults to the project icon.
 
-\ **注意：**\ 如果图标不是 512×512，则它将自动调整大小以适应最终构建。
+\ **Note:** If the icon is not 512×512, it will be automatically resized for the final build.
 
 .. rst-class:: classref-item-separator
 
@@ -306,7 +306,7 @@ Web 应用程序后面使用的背景颜色。
 
 :ref:`String<class_String>` **progressive_web_app/offline_page** :ref:`🔗<class_EditorExportPlatformWeb_property_progressive_web_app/offline_page>`
 
-如果托管该页面的服务器不可用，则显示该页面。该页面保存在客户端的机器中。
+The page to display, should the server hosting the page not be available. This page is saved in the client's machine.
 
 .. rst-class:: classref-item-separator
 
@@ -318,13 +318,13 @@ Web 应用程序后面使用的背景颜色。
 
 :ref:`int<class_int>` **progressive_web_app/orientation** :ref:`🔗<class_EditorExportPlatformWeb_property_progressive_web_app/orientation>`
 
-通过移动设备运行 Web 应用程序时要使用的方向。
+The orientation to use when the web application is run through a mobile device.
 
-- **任意：**\ 不强制方向。
+- **Any:** No orientation is forced.
 
-- **横向：**\ 强制水平布局（宽度大于高度）。
+- **Landscape:** Forces a horizontal layout (wider than it is taller).
 
-- **纵向：**\ 强制垂直布局（高度大于宽度）。
+- **Portrait:** Forces a vertical layout (taller than it is wider).
 
 .. rst-class:: classref-item-separator
 
@@ -336,9 +336,9 @@ Web 应用程序后面使用的背景颜色。
 
 :ref:`int<class_int>` **threads/emscripten_pool_size** :ref:`🔗<class_EditorExportPlatformWeb_property_threads/emscripten_pool_size>`
 
-Emscripten 在启动时分配的线程数。较小的值将分配较少的线程，消耗较少的系统资源，但可能会面临池中线程用完的风险，需要在运行时分配更多线程，可能导致死锁。
+The number of threads that emscripten will allocate at startup. A smaller value will allocate fewer threads and consume fewer system resources, but you may run the risk of running out of threads in the pool and needing to allocate more threads at run time which may cause a deadlock.
 
-\ **注意：**\ 一些浏览器对可分配的线程数量有严格的限制，因此最好谨慎行事，保持较低的线程数。
+\ **Note:** Some browsers have a hard cap on the number of threads that can be allocated, so it is best to be cautious and keep this number low.
 
 .. rst-class:: classref-item-separator
 
@@ -350,9 +350,9 @@ Emscripten 在启动时分配的线程数。较小的值将分配较少的线程
 
 :ref:`int<class_int>` **threads/godot_pool_size** :ref:`🔗<class_EditorExportPlatformWeb_property_threads/godot_pool_size>`
 
-覆盖 :ref:`WorkerThreadPool<class_WorkerThreadPool>` 的默认大小。该设置在 :ref:`ProjectSettings.threading/worker_pool/max_threads<class_ProjectSettings_property_threading/worker_pool/max_threads>` 设为 ``-1``\ （默认）时生效。该大小必须小于 :ref:`threads/emscripten_pool_size<class_EditorExportPlatformWeb_property_threads/emscripten_pool_size>`\ ，否则可能造成死锁。
+Override for the default size of the :ref:`WorkerThreadPool<class_WorkerThreadPool>`. This setting is used when :ref:`ProjectSettings.threading/worker_pool/max_threads<class_ProjectSettings_property_threading/worker_pool/max_threads>` size is set to ``-1`` (which it is by default). This size must be smaller than :ref:`threads/emscripten_pool_size<class_EditorExportPlatformWeb_property_threads/emscripten_pool_size>` otherwise deadlocks may occur.
 
-在使用线程时，该大小需足以容纳依赖专用线程的特性，例如 :ref:`ProjectSettings.physics/2d/run_on_separate_thread<class_ProjectSettings_property_physics/2d/run_on_separate_thread>` 和 :ref:`ProjectSettings.rendering/driver/threads/thread_model<class_ProjectSettings_property_rendering/driver/threads/thread_model>`\ 。通常，建议确保此值至少为 ``4``\ ，并且至少比 :ref:`threads/emscripten_pool_size<class_EditorExportPlatformWeb_property_threads/emscripten_pool_size>` 小 ``2`` 或 ``3``\ 。
+When using threads, this size needs to be large enough to accommodate features that rely on having a dedicated thread like :ref:`ProjectSettings.physics/2d/run_on_separate_thread<class_ProjectSettings_property_physics/2d/run_on_separate_thread>` or :ref:`ProjectSettings.rendering/driver/threads/thread_model<class_ProjectSettings_property_rendering/driver/threads/thread_model>`. In general, it is best to ensure that this is at least ``4`` and is at least ``2`` or ``3`` less than :ref:`threads/emscripten_pool_size<class_EditorExportPlatformWeb_property_threads/emscripten_pool_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -364,7 +364,7 @@ Emscripten 在启动时分配的线程数。较小的值将分配较少的线程
 
 :ref:`bool<class_bool>` **variant/extensions_support** :ref:`🔗<class_EditorExportPlatformWeb_property_variant/extensions_support>`
 
-如果为 ``true``\ ，则启用对该 Web 构建的 :ref:`GDExtension<class_GDExtension>` 支持。
+If ``true`` enables :ref:`GDExtension<class_GDExtension>` support for this web build.
 
 .. rst-class:: classref-item-separator
 
@@ -376,9 +376,9 @@ Emscripten 在启动时分配的线程数。较小的值将分配较少的线程
 
 :ref:`bool<class_bool>` **variant/thread_support** :ref:`🔗<class_EditorExportPlatformWeb_property_variant/thread_support>`
 
-如果为 ``true``\ ，则导出的游戏将支持多线程。多线程支持要求\ `网站支持“跨源隔离” <https://web.dev/articles/coop-coep>`__\ ，设置起来可能比较麻烦，并且可能会由于安全原因而受到限制（例如无法与第三方网站通信）。
+If ``true``, the exported game will support threads. It requires `a "cross-origin isolated" website <https://web.dev/articles/coop-coep>`__, which may be difficult to set up and is limited for security reasons (such as not being able to communicate with third-party websites).
 
-如果为 ``false``\ ，则导出的游戏将不支持多线程。因此，游戏会更容易出现性能和音频问题，但只要求在 HTTPS 网站上运行。
+If ``false``, the exported game will not support threads. As a result, it is more prone to performance and audio issues, but will only require to be run on an HTTPS website.
 
 .. rst-class:: classref-item-separator
 
@@ -390,7 +390,7 @@ Emscripten 在启动时分配的线程数。较小的值将分配较少的线程
 
 :ref:`bool<class_bool>` **vram_texture_compression/for_desktop** :ref:`🔗<class_EditorExportPlatformWeb_property_vram_texture_compression/for_desktop>`
 
-如果为 ``true``\ ，则允许通过 S3TC/BPTC 算法针对桌面优化纹理。
+If ``true``, allows textures to be optimized for desktop through the S3TC/BPTC algorithm.
 
 .. rst-class:: classref-item-separator
 
@@ -402,14 +402,14 @@ Emscripten 在启动时分配的线程数。较小的值将分配较少的线程
 
 :ref:`bool<class_bool>` **vram_texture_compression/for_mobile** :ref:`🔗<class_EditorExportPlatformWeb_property_vram_texture_compression/for_mobile>`
 
-如果为 ``true``\ ，则允许通过 ETC2/ASTC 算法针对移动设备优化纹理。
+If ``true`` allows textures to be optimized for mobile through the ETC2/ASTC algorithm.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -8,34 +8,34 @@
 MultiplayerPeer
 ===============
 
-**繼承：** :ref:`PacketPeer<class_PacketPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`PacketPeer<class_PacketPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`ENetMultiplayerPeer<class_ENetMultiplayerPeer>`, :ref:`MultiplayerPeerExtension<class_MultiplayerPeerExtension>`, :ref:`OfflineMultiplayerPeer<class_OfflineMultiplayerPeer>`, :ref:`WebRTCMultiplayerPeer<class_WebRTCMultiplayerPeer>`, :ref:`WebSocketMultiplayerPeer<class_WebSocketMultiplayerPeer>`
+**Inherited By:** :ref:`ENetMultiplayerPeer<class_ENetMultiplayerPeer>`, :ref:`MultiplayerPeerExtension<class_MultiplayerPeerExtension>`, :ref:`OfflineMultiplayerPeer<class_OfflineMultiplayerPeer>`, :ref:`WebRTCMultiplayerPeer<class_WebRTCMultiplayerPeer>`, :ref:`WebSocketMultiplayerPeer<class_WebSocketMultiplayerPeer>`
 
-特化 :ref:`PacketPeer<class_PacketPeer>` 的抽象類別，\ :ref:`MultiplayerAPI<class_MultiplayerAPI>` 會用到。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-管理與一個或多個作為伺服器或使用者端的遠端對等體的連接，並為每個對等體分配唯一的 ID。另請參閱 :ref:`MultiplayerAPI<class_MultiplayerAPI>`\ 。
-
-\ **注意：**\ :ref:`MultiplayerAPI<class_MultiplayerAPI>` 協議是一個實作細節，並不打算由非 Godot 伺服器使用。它可能會更改，恕不另行通知。
-
-\ **注意：**\ 當匯出到 Android 時，在匯出專案或使用一鍵部署之前，確保在 Android 匯出預設中啟用了 ``INTERNET`` 許可權。否則，任何型別的網路通信都會被安卓阻止。
+Abstract class for specialized :ref:`PacketPeer<class_PacketPeer>`\ s used by the :ref:`MultiplayerAPI<class_MultiplayerAPI>`.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`高級多人遊戲 <../tutorials/networking/high_level_multiplayer>`
+Manages the connection with one or more remote peers acting as server or client and assigning unique IDs to each of them. See also :ref:`MultiplayerAPI<class_MultiplayerAPI>`.
+
+\ **Note:** The :ref:`MultiplayerAPI<class_MultiplayerAPI>` protocol is an implementation detail and isn't meant to be used by non-Godot servers. It may change without notice.
+
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`High-level multiplayer <../tutorials/networking/high_level_multiplayer>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ MultiplayerPeer
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -86,8 +86,8 @@ MultiplayerPeer
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_MultiplayerPeer_signal_peer_connected:
 
@@ -95,7 +95,7 @@ MultiplayerPeer
 
 **peer_connected**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_MultiplayerPeer_signal_peer_connected>`
 
-遠端對等體連接時發出。
+Emitted when a remote peer connects.
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ MultiplayerPeer
 
 **peer_disconnected**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_MultiplayerPeer_signal_peer_disconnected>`
 
-遠端對等體斷開連接時發出。
+Emitted when a remote peer has disconnected.
 
 .. rst-class:: classref-section-separator
 
@@ -115,8 +115,8 @@ MultiplayerPeer
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_MultiplayerPeer_ConnectionStatus:
 
@@ -130,7 +130,7 @@ enum **ConnectionStatus**: :ref:`🔗<enum_MultiplayerPeer_ConnectionStatus>`
 
 :ref:`ConnectionStatus<enum_MultiplayerPeer_ConnectionStatus>` **CONNECTION_DISCONNECTED** = ``0``
 
-該 MultiplayerPeer 已斷開連接。
+The MultiplayerPeer is disconnected.
 
 .. _class_MultiplayerPeer_constant_CONNECTION_CONNECTING:
 
@@ -138,7 +138,7 @@ enum **ConnectionStatus**: :ref:`🔗<enum_MultiplayerPeer_ConnectionStatus>`
 
 :ref:`ConnectionStatus<enum_MultiplayerPeer_ConnectionStatus>` **CONNECTION_CONNECTING** = ``1``
 
-該 MultiplayerPeer 正在連接到伺服器。
+The MultiplayerPeer is currently connecting to a server.
 
 .. _class_MultiplayerPeer_constant_CONNECTION_CONNECTED:
 
@@ -146,7 +146,7 @@ enum **ConnectionStatus**: :ref:`🔗<enum_MultiplayerPeer_ConnectionStatus>`
 
 :ref:`ConnectionStatus<enum_MultiplayerPeer_ConnectionStatus>` **CONNECTION_CONNECTED** = ``2``
 
-該 MultiplayerPeer 已連接。
+This MultiplayerPeer is connected.
 
 .. rst-class:: classref-item-separator
 
@@ -164,7 +164,7 @@ enum **TransferMode**: :ref:`🔗<enum_MultiplayerPeer_TransferMode>`
 
 :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>` **TRANSFER_MODE_UNRELIABLE** = ``0``
 
-封包不被確認，對丟失的封包不進行重發嘗試。封包可以以任何順序到達。可能比 :ref:`TRANSFER_MODE_UNRELIABLE_ORDERED<class_MultiplayerPeer_constant_TRANSFER_MODE_UNRELIABLE_ORDERED>` 快。用於非關鍵資料，並注意考慮順序是否重要。
+Packets are not acknowledged, no resend attempts are made for lost packets. Packets may arrive in any order. Potentially faster than :ref:`TRANSFER_MODE_UNRELIABLE_ORDERED<class_MultiplayerPeer_constant_TRANSFER_MODE_UNRELIABLE_ORDERED>`. Use for non-critical data, and always consider whether the order matters.
 
 .. _class_MultiplayerPeer_constant_TRANSFER_MODE_UNRELIABLE_ORDERED:
 
@@ -172,7 +172,7 @@ enum **TransferMode**: :ref:`🔗<enum_MultiplayerPeer_TransferMode>`
 
 :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>` **TRANSFER_MODE_UNRELIABLE_ORDERED** = ``1``
 
-封包不被確認，對丟失的封包不進行重發嘗試。封包按其發送順序接收。有可能比 :ref:`TRANSFER_MODE_RELIABLE<class_MultiplayerPeer_constant_TRANSFER_MODE_RELIABLE>` 快。用於非關鍵資料或由於重發嘗試而遲遲不能收到的資料，例如運動和位置資料。
+Packets are not acknowledged, no resend attempts are made for lost packets. Packets are received in the order they were sent in. Potentially faster than :ref:`TRANSFER_MODE_RELIABLE<class_MultiplayerPeer_constant_TRANSFER_MODE_RELIABLE>`. Use for non-critical data or data that would be outdated if received late due to resend attempt(s) anyway, for example movement and positional data.
 
 .. _class_MultiplayerPeer_constant_TRANSFER_MODE_RELIABLE:
 
@@ -180,7 +180,7 @@ enum **TransferMode**: :ref:`🔗<enum_MultiplayerPeer_TransferMode>`
 
 :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>` **TRANSFER_MODE_RELIABLE** = ``2``
 
-封包必須被接收，並應進行重發嘗試，直到封包被確認。封包必須按照其發送的順序接收。最可靠的傳輸模式，但由於開銷很大，可能是最慢的。用於必須按順序傳輸和到達的關鍵資料，例如觸發的能力或聊天資訊。仔細考慮資訊是否真的是關鍵的，並儘量少用。
+Packets must be received and resend attempts should be made until the packets are acknowledged. Packets must be received in the order they were sent in. Most reliable transfer mode, but potentially the slowest due to the overhead. Use for critical data that must be transmitted and arrive in order, for example an ability being triggered or a chat message. Consider carefully if the information really is critical, and use sparingly.
 
 .. rst-class:: classref-section-separator
 
@@ -188,8 +188,8 @@ enum **TransferMode**: :ref:`🔗<enum_MultiplayerPeer_TransferMode>`
 
 .. rst-class:: classref-descriptions-group
 
-常數
-----
+Constants
+---------
 
 .. _class_MultiplayerPeer_constant_TARGET_PEER_BROADCAST:
 
@@ -197,7 +197,7 @@ enum **TransferMode**: :ref:`🔗<enum_MultiplayerPeer_TransferMode>`
 
 **TARGET_PEER_BROADCAST** = ``0`` :ref:`🔗<class_MultiplayerPeer_constant_TARGET_PEER_BROADCAST>`
 
-將封包發送至所有已連接的對等體。
+Packets are sent to all connected peers.
 
 .. _class_MultiplayerPeer_constant_TARGET_PEER_SERVER:
 
@@ -205,7 +205,7 @@ enum **TransferMode**: :ref:`🔗<enum_MultiplayerPeer_TransferMode>`
 
 **TARGET_PEER_SERVER** = ``1`` :ref:`🔗<class_MultiplayerPeer_constant_TARGET_PEER_SERVER>`
 
-將封包發送至作為伺服器的遠端對等體。
+Packets are sent to the remote peer acting as server.
 
 .. rst-class:: classref-section-separator
 
@@ -213,8 +213,8 @@ enum **TransferMode**: :ref:`🔗<enum_MultiplayerPeer_TransferMode>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_MultiplayerPeer_property_refuse_new_connections:
 
@@ -227,7 +227,7 @@ enum **TransferMode**: :ref:`🔗<enum_MultiplayerPeer_TransferMode>`
 - |void| **set_refuse_new_connections**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_refusing_new_connections**\ (\ )
 
-如果為 ``true``\ ，則這個 **MultiplayerPeer** 拒絕新的連接。
+If ``true``, this **MultiplayerPeer** refuses new connections.
 
 .. rst-class:: classref-item-separator
 
@@ -244,9 +244,9 @@ enum **TransferMode**: :ref:`🔗<enum_MultiplayerPeer_TransferMode>`
 - |void| **set_transfer_channel**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_transfer_channel**\ (\ )
 
-用於發送封包的通道。許多網路 API，例如 ENet 和 WebRTC，允許建立多個獨立的通道，這些通道的行為在某種程度上類似於單獨的連接。這意味著可靠資料只會阻止該通道上其他封包的傳遞，並且排序將僅與正在發送封包的通道有關。使用不同的通道發送\ **不同且獨立的**\ 狀態更新，是優化快節奏遊戲的網路使用和減少延遲的常用方法。
+The channel to use to send packets. Many network APIs such as ENet and WebRTC allow the creation of multiple independent channels which behaves, in a way, like separate connections. This means that reliable data will only block delivery of other packets on that channel, and ordering will only be in respect to the channel the packet is being sent on. Using different channels to send **different and independent** state updates is a common way to optimize network usage and decrease latency in fast-paced games.
 
-\ **注意：**\ 預設通道（\ ``0``\ ）實際上作為 3 個獨立的通道工作（每種 :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>` 一個），因此預設情況下，\ :ref:`TRANSFER_MODE_RELIABLE<class_MultiplayerPeer_constant_TRANSFER_MODE_RELIABLE>` 和 :ref:`TRANSFER_MODE_UNRELIABLE_ORDERED<class_MultiplayerPeer_constant_TRANSFER_MODE_UNRELIABLE_ORDERED>` 不會相互互動。請參閱特定的網路 API 文件（例如 ENet 或 WebRTC），以瞭解如何正確地設置通道。
+\ **Note:** The default channel (``0``) actually works as 3 separate channels (one for each :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>`) so that :ref:`TRANSFER_MODE_RELIABLE<class_MultiplayerPeer_constant_TRANSFER_MODE_RELIABLE>` and :ref:`TRANSFER_MODE_UNRELIABLE_ORDERED<class_MultiplayerPeer_constant_TRANSFER_MODE_UNRELIABLE_ORDERED>` does not interact with each other by default. Refer to the specific network API documentation (e.g. ENet or WebRTC) to learn how to set up channels correctly.
 
 .. rst-class:: classref-item-separator
 
@@ -271,8 +271,8 @@ The manner in which to send packets to the target peer. See the :ref:`set_target
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_MultiplayerPeer_method_close:
 
@@ -280,7 +280,7 @@ The manner in which to send packets to the target peer. See the :ref:`set_target
 
 |void| **close**\ (\ ) :ref:`🔗<class_MultiplayerPeer_method_close>`
 
-立即關閉多人對等體，返回到 :ref:`CONNECTION_DISCONNECTED<class_MultiplayerPeer_constant_CONNECTION_DISCONNECTED>` 狀態。已連接的對等體將被丟棄，不會發出 :ref:`peer_disconnected<class_MultiplayerPeer_signal_peer_disconnected>`\ 。
+Immediately close the multiplayer peer returning to the state :ref:`CONNECTION_DISCONNECTED<class_MultiplayerPeer_constant_CONNECTION_DISCONNECTED>`. Connected peers will be dropped without emitting :ref:`peer_disconnected<class_MultiplayerPeer_signal_peer_disconnected>`.
 
 .. rst-class:: classref-item-separator
 
@@ -292,7 +292,7 @@ The manner in which to send packets to the target peer. See the :ref:`set_target
 
 |void| **disconnect_peer**\ (\ peer\: :ref:`int<class_int>`, force\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_MultiplayerPeer_method_disconnect_peer>`
 
-斷開給定的 ``peer`` 與該主機的連接。如果 ``force`` 為 ``true``\ ，則不會為該對等體發出 :ref:`peer_disconnected<class_MultiplayerPeer_signal_peer_disconnected>` 訊號。
+Disconnects the given ``peer`` from this host. If ``force`` is ``true`` the :ref:`peer_disconnected<class_MultiplayerPeer_signal_peer_disconnected>` signal will not be emitted for this peer.
 
 .. rst-class:: classref-item-separator
 
@@ -304,7 +304,7 @@ The manner in which to send packets to the target peer. See the :ref:`set_target
 
 :ref:`int<class_int>` **generate_unique_id**\ (\ ) |const| :ref:`🔗<class_MultiplayerPeer_method_generate_unique_id>`
 
-返回隨機生成的整數，可用作網路唯一 ID。
+Returns a randomly generated integer that can be used as a network unique ID.
 
 .. rst-class:: classref-item-separator
 
@@ -328,7 +328,7 @@ Returns the current state of the connection.
 
 :ref:`int<class_int>` **get_packet_channel**\ (\ ) |const| :ref:`🔗<class_MultiplayerPeer_method_get_packet_channel>`
 
-返回下一個可用封包被接收使用的通道。請參閱 :ref:`PacketPeer.get_available_packet_count()<class_PacketPeer_method_get_available_packet_count>`\ 。
+Returns the channel over which the next available packet was received. See :ref:`PacketPeer.get_available_packet_count()<class_PacketPeer_method_get_available_packet_count>`.
 
 .. rst-class:: classref-item-separator
 
@@ -352,7 +352,7 @@ Returns the transfer mode the remote peer used to send the next available packet
 
 :ref:`int<class_int>` **get_packet_peer**\ (\ ) |const| :ref:`🔗<class_MultiplayerPeer_method_get_packet_peer>`
 
-返回發送下一個可用封包的 **MultiplayerPeer** 的 ID。見 :ref:`PacketPeer.get_available_packet_count()<class_PacketPeer_method_get_available_packet_count>`\ 。
+Returns the ID of the **MultiplayerPeer** who sent the next available packet. See :ref:`PacketPeer.get_available_packet_count()<class_PacketPeer_method_get_available_packet_count>`.
 
 .. rst-class:: classref-item-separator
 
@@ -364,7 +364,7 @@ Returns the transfer mode the remote peer used to send the next available packet
 
 :ref:`int<class_int>` **get_unique_id**\ (\ ) |const| :ref:`🔗<class_MultiplayerPeer_method_get_unique_id>`
 
-返回該 **MultiplayerPeer** 的 ID。
+Returns the ID of this **MultiplayerPeer**.
 
 .. rst-class:: classref-item-separator
 
@@ -388,7 +388,7 @@ Returns ``true`` if the server can act as a relay in the current configuration. 
 
 |void| **poll**\ (\ ) :ref:`🔗<class_MultiplayerPeer_method_poll>`
 
-等待最多 1 秒以接收一個新的網路事件。
+Waits up to 1 second to receive a new network event.
 
 .. rst-class:: classref-item-separator
 
@@ -400,16 +400,16 @@ Returns ``true`` if the server can act as a relay in the current configuration. 
 
 |void| **set_target_peer**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_MultiplayerPeer_method_set_target_peer>`
 
-設定封包將被發送至的對等體。
+Sets the peer to which packets will be sent.
 
-\ ``id`` 可以是以下之一：\ :ref:`TARGET_PEER_BROADCAST<class_MultiplayerPeer_constant_TARGET_PEER_BROADCAST>`\ ，以發送到所有連接的對等體；\ :ref:`TARGET_PEER_SERVER<class_MultiplayerPeer_constant_TARGET_PEER_SERVER>`\ ，以發送到充當伺服器的對等體；一個有效的對等體 ID ，以發送到那個特定的對等體；一個負的對等體 ID，以發送到除那個對等體以外的所有對等體。預設情況下，目標對等體是 :ref:`TARGET_PEER_BROADCAST<class_MultiplayerPeer_constant_TARGET_PEER_BROADCAST>`\ 。
+The ``id`` can be one of: :ref:`TARGET_PEER_BROADCAST<class_MultiplayerPeer_constant_TARGET_PEER_BROADCAST>` to send to all connected peers, :ref:`TARGET_PEER_SERVER<class_MultiplayerPeer_constant_TARGET_PEER_SERVER>` to send to the peer acting as server, a valid peer ID to send to that specific peer, a negative peer ID to send to all peers except that one. By default, the target peer is :ref:`TARGET_PEER_BROADCAST<class_MultiplayerPeer_constant_TARGET_PEER_BROADCAST>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

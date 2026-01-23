@@ -5,18 +5,18 @@
 JavaClassWrapper
 ================
 
-**继承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-提供对 Java 原生接口的访问。
+Provides access to the Java Native Interface.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-JavaClassWrapper 单例为 Godot 应用程序提供了一种通过 `Java 原生接口 <https://developer.android.com/training/articles/perf-jni>`__\ （JNI）发送和接收数据的方法。
+The JavaClassWrapper singleton provides a way for the Godot application to send and receive data through the `Java Native Interface <https://developer.android.com/training/articles/perf-jni>`__ (JNI).
 
-\ **注意：**\ 该单例仅适用于 Android 版本。
+\ **Note:** This singleton is only available in Android builds.
 
 ::
 
@@ -28,19 +28,19 @@ JavaClassWrapper 单例为 Godot 应用程序提供了一种通过 `Java 原生�
 
     print(datetime.format(formatter))
 
-\ **警告：**\ 调用 Java 方法时，请确保使用 :ref:`get_exception()<class_JavaClassWrapper_method_get_exception>` 检查该方法是否抛出了异常。
+\ **Warning:** When calling Java methods, be sure to check :ref:`get_exception()<class_JavaClassWrapper_method_get_exception>` to check if the method threw an exception.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
-- :doc:`与 Android API 的集成 <../tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin>`
+- :doc:`Integrating with Android APIs <../tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin>`
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -57,8 +57,8 @@ JavaClassWrapper 单例为 Godot 应用程序提供了一种通过 `Java 原生�
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_JavaClassWrapper_method_get_exception:
 
@@ -66,9 +66,9 @@ JavaClassWrapper 单例为 Godot 应用程序提供了一种通过 `Java 原生�
 
 :ref:`JavaObject<class_JavaObject>` **get_exception**\ (\ ) :ref:`🔗<class_JavaClassWrapper_method_get_exception>`
 
-返回最近一次调用 Java 类时产生的 Java 异常。如果没有产生异常则返回 ``null``\ 。
+Returns the Java exception from the last call into a Java class. If there was no exception, it will return ``null``.
 
-\ **注意：**\ 该方法仅在 Android 上有效。该方法在其他平台上始终返回 ``null``\ 。
+\ **Note:** This method only works on Android. On every other platform, this method will always return ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -80,25 +80,25 @@ JavaClassWrapper 单例为 Godot 应用程序提供了一种通过 `Java 原生�
 
 :ref:`JavaClass<class_JavaClass>` **wrap**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_JavaClassWrapper_method_wrap>`
 
-包装 Java 中定义的类，返回 Godot 可以与之交互的 :ref:`Object<class_Object>` 类型 :ref:`JavaClass<class_JavaClass>`\ 。
+Wraps a class defined in Java, and returns it as a :ref:`JavaClass<class_JavaClass>` :ref:`Object<class_Object>` type that Godot can interact with.
 
-包装内部（嵌套）类时请使用 ``$`` 分隔，不要用 ``.``\ 。例如 **WindowManager.LayoutParams** 类应使用 ``JavaClassWrapper.wrap("android.view.WindowManager$LayoutParams")`` 进行包装。
+When wrapping inner (nested) classes, use ``$`` instead of ``.`` to separate them. For example, ``JavaClassWrapper.wrap("android.view.WindowManager$LayoutParams")`` wraps the **WindowManager.LayoutParams** class.
 
-\ **注意：**\ 调用构造函数请调用与类同名的方法。例如：
+\ **Note:** To invoke a constructor, call a method with the same name as the class. For example:
 
 ::
 
     var Intent = JavaClassWrapper.wrap("android.content.Intent")
     var intent = Intent.Intent()
 
-\ **注意：**\ 该方法仅适用于 Android，在其他所有平台上都不会执行任何操作，返回的是空的 :ref:`JavaClass<class_JavaClass>`\ 。
+\ **Note:** This method only works on Android. On every other platform, this method does nothing and returns an empty :ref:`JavaClass<class_JavaClass>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

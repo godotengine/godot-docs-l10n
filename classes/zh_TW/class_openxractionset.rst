@@ -5,23 +5,23 @@
 OpenXRActionSet
 ===============
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-:ref:`OpenXRAction<class_OpenXRAction>` 資源的合集，構成動作集。
+Collection of :ref:`OpenXRAction<class_OpenXRAction>` resources that make up an action set.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-OpenXR 中的動作集定義了一組可以均勻啟動的動作。這允許遊戲在需要不同輸入或需要重新解釋輸入的不同狀態之間輕鬆切換。例如，我們可以有一個在功能表打開時處於活動狀態的動作集，一個在玩家自由走動時處於活動狀態的動作集，以及一個在玩家控制車輛時處於活動狀態的動作集。
+Action sets in OpenXR define a collection of actions that can be activated in unison. This allows games to easily change between different states that require different inputs or need to reinterpret inputs. For instance we could have an action set that is active when a menu is open, an action set that is active when the player is freely walking around and an action set that is active when the player is controlling a vehicle.
 
-動作集可以包含具有相同名稱的相同動作，如果這些動作集同時處於活動狀態，則具有最高優先順序的動作集定義了哪個綁定是活動的。
+Action sets can contain the same action with the same name, if such action sets are active at the same time the action set with the highest priority defines which binding is active.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ OpenXR 中的動作集定義了一組可以均勻啟動的動作。這允許遊�
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ OpenXR 中的動作集定義了一組可以均勻啟動的動作。這允許遊�
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_OpenXRActionSet_property_actions:
 
@@ -70,7 +70,7 @@ OpenXR 中的動作集定義了一組可以均勻啟動的動作。這允許遊�
 - |void| **set_actions**\ (\ value\: :ref:`Array<class_Array>`\ )
 - :ref:`Array<class_Array>` **get_actions**\ (\ )
 
-該動作集中動作的合集。
+Collection of actions for this action set.
 
 .. rst-class:: classref-item-separator
 
@@ -87,7 +87,7 @@ OpenXR 中的動作集定義了一組可以均勻啟動的動作。這允許遊�
 - |void| **set_localized_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_localized_name**\ (\ )
 
-該動作集的當地語系化名稱。
+The localized name of this action set.
 
 .. rst-class:: classref-item-separator
 
@@ -104,7 +104,7 @@ OpenXR 中的動作集定義了一組可以均勻啟動的動作。這允許遊�
 - |void| **set_priority**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_priority**\ (\ )
 
-該動作集的優先順序。
+The priority for this action set.
 
 .. rst-class:: classref-section-separator
 
@@ -112,8 +112,8 @@ OpenXR 中的動作集定義了一組可以均勻啟動的動作。這允許遊�
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_OpenXRActionSet_method_add_action:
 
@@ -121,7 +121,7 @@ OpenXR 中的動作集定義了一組可以均勻啟動的動作。這允許遊�
 
 |void| **add_action**\ (\ action\: :ref:`OpenXRAction<class_OpenXRAction>`\ ) :ref:`🔗<class_OpenXRActionSet_method_add_action>`
 
-向該動作集中新增某個動作。
+Add an action to this action set.
 
 .. rst-class:: classref-item-separator
 
@@ -133,7 +133,7 @@ OpenXR 中的動作集定義了一組可以均勻啟動的動作。這允許遊�
 
 :ref:`int<class_int>` **get_action_count**\ (\ ) |const| :ref:`🔗<class_OpenXRActionSet_method_get_action_count>`
 
-獲取該動作集中動作的數量。
+Retrieve the number of actions in our action set.
 
 .. rst-class:: classref-item-separator
 
@@ -145,14 +145,14 @@ OpenXR 中的動作集定義了一組可以均勻啟動的動作。這允許遊�
 
 |void| **remove_action**\ (\ action\: :ref:`OpenXRAction<class_OpenXRAction>`\ ) :ref:`🔗<class_OpenXRActionSet_method_remove_action>`
 
-從該動作集中移除某個動作。
+Remove an action from this action set.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

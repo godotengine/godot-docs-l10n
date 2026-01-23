@@ -5,30 +5,30 @@
 ResourceImporterWAV
 ===================
 
-**继承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-导入 WAV 音频文件，用于播放。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-WAV 是未经压缩的格式，能够提供比 Ogg Vorbis 和 MP3 更高的质量。解压时的 CPU 开销也最低。因此即便在低端设备上，也能够同时播放大量的 WAV 声音。
-
-默认情况下，Godot 使用有损的 Quite OK Audio 压缩导入 WAV 文件。可以通过设置 :ref:`compress/mode<class_ResourceImporterWAV_property_compress/mode>` 属性来更改。
+Imports a WAV audio file for playback.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`导入音频样本 <../tutorials/assets_pipeline/importing_audio_samples>`
+WAV is an uncompressed format, which can provide higher quality compared to Ogg Vorbis and MP3. It also has the lowest CPU cost to decode. This means high numbers of WAV sounds can be played at the same time, even on low-end devices.
+
+By default, Godot imports WAV files using the lossy Quite OK Audio compression. You may change this by setting the :ref:`compress/mode<class_ResourceImporterWAV_property_compress/mode>` property.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Importing audio samples <../tutorials/assets_pipeline/importing_audio_samples>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -61,8 +61,8 @@ WAV 是未经压缩的格式，能够提供比 Ogg Vorbis 和 MP3 更高的质�
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_ResourceImporterWAV_property_compress/mode:
 
@@ -70,13 +70,13 @@ WAV 是未经压缩的格式，能够提供比 Ogg Vorbis 和 MP3 更高的质�
 
 :ref:`int<class_int>` **compress/mode** = ``2`` :ref:`🔗<class_ResourceImporterWAV_property_compress/mode>`
 
-导入时使用的压缩模式。
+The compression mode to use on import.
 
-- **PCM (Uncompressed)：**\ 导入音频数据，不进行压缩，保持尽可能高的质量。CPU 开销最低，但内存占用最高。
+- **PCM (Uncompressed):** Imports audio data without any form of compression, preserving the highest possible quality. It has the lowest CPU cost, but the highest memory usage.
 
-- **IMA ADPCM：**\ 导入时进行快速有损压缩，显著降低质量，但是 CPU 开销和内存占用都较低。不支持跳转，仅支持 Forward 循环模式。
+- **IMA ADPCM:** Applies fast, lossy compression during import, noticeably decreasing the quality, but with low CPU cost and memory usage. Does not support seeking and only Forward loop mode is supported.
 
-- **\ `Quite OK Audio <https://qoaformat.org/>`__\ ：**\ 导入时也会进行有损压缩，CPU 开销比 IMA ADPCM 略高，但是质量要高很多，内存占用也最低。
+- **\ `Quite OK Audio <https://qoaformat.org/>`__:** Also applies lossy compression on import, having a slightly higher CPU cost compared to IMA ADPCM, but much higher quality and the lowest memory usage.
 
 .. rst-class:: classref-item-separator
 
@@ -88,7 +88,7 @@ WAV 是未经压缩的格式，能够提供比 Ogg Vorbis 和 MP3 更高的质�
 
 :ref:`int<class_int>` **edit/loop_begin** = ``0`` :ref:`🔗<class_ResourceImporterWAV_property_edit/loop_begin>`
 
-循环起始点，\ :ref:`edit/loop_mode<class_ResourceImporterWAV_property_edit/loop_mode>` 为 **Forward**\ 、\ **Ping-Pong**\ 、或 **Backward** 时使用。设置的是音频文件开始之后的采样数。
+The begin loop point to use when :ref:`edit/loop_mode<class_ResourceImporterWAV_property_edit/loop_mode>` is **Forward**, **Ping-Pong**, or **Backward**. This is set in samples after the beginning of the audio file.
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ WAV 是未经压缩的格式，能够提供比 Ogg Vorbis 和 MP3 更高的质�
 
 :ref:`int<class_int>` **edit/loop_end** = ``-1`` :ref:`🔗<class_ResourceImporterWAV_property_edit/loop_end>`
 
-循环结束点，\ :ref:`edit/loop_mode<class_ResourceImporterWAV_property_edit/loop_mode>` 为 **Forward**\ 、\ **Ping-Pong**\ 、或 **Backward** 时使用。设置的是音频文件开始之后的采样数。\ ``-1`` 表示使用音频文件的末尾作为循环结束点。
+The end loop point to use when :ref:`edit/loop_mode<class_ResourceImporterWAV_property_edit/loop_mode>` is **Forward**, **Ping-Pong**, or **Backward**. This is set in samples after the beginning of the audio file. A value of ``-1`` uses the end of the audio file as the end loop point.
 
 .. rst-class:: classref-item-separator
 
@@ -112,19 +112,19 @@ WAV 是未经压缩的格式，能够提供比 Ogg Vorbis 和 MP3 更高的质�
 
 :ref:`int<class_int>` **edit/loop_mode** = ``0`` :ref:`🔗<class_ResourceImporterWAV_property_edit/loop_mode>`
 
-控制音频如何循环。
+Controls how audio should loop.
 
-- **Detect From WAV：**\ 使用 WAV 元数据中的循环信息。
+- **Detect From WAV:** Uses loop information from the WAV metadata.
 
-- **Disabled：**\ 不循环音频，即便元数据显示该文件应该在播放时循环。
+- **Disabled:** Don't loop audio, even if the metadata indicates the file playback should loop.
 
-- **Forward：**\ 标准音频循环。从头开始正向播放音频至 :ref:`edit/loop_end<class_ResourceImporterWAV_property_edit/loop_end>`\ ，然后回到 :ref:`edit/loop_begin<class_ResourceImporterWAV_property_edit/loop_begin>` 再进行重复。
+- **Forward:** Standard audio looping. Plays the audio forward from the beginning to :ref:`edit/loop_end<class_ResourceImporterWAV_property_edit/loop_end>`, then returns to :ref:`edit/loop_begin<class_ResourceImporterWAV_property_edit/loop_begin>` and repeats.
 
-- **Ping-Pong：**\ 正向播放音频至 :ref:`edit/loop_end<class_ResourceImporterWAV_property_edit/loop_end>`\ ，然后逆向播放至 :ref:`edit/loop_begin<class_ResourceImporterWAV_property_edit/loop_begin>`\ ，再重复这一循环。
+- **Ping-Pong:** Plays the audio forward until :ref:`edit/loop_end<class_ResourceImporterWAV_property_edit/loop_end>`, then backwards to :ref:`edit/loop_begin<class_ResourceImporterWAV_property_edit/loop_begin>`, repeating this cycle.
 
-- **Backward：**\ 从 :ref:`edit/loop_end<class_ResourceImporterWAV_property_edit/loop_end>` 至 :ref:`edit/loop_begin<class_ResourceImporterWAV_property_edit/loop_begin>` 逆向播放音频，再进行重复。
+- **Backward:** Plays the audio backwards from :ref:`edit/loop_end<class_ResourceImporterWAV_property_edit/loop_end>` to :ref:`edit/loop_begin<class_ResourceImporterWAV_property_edit/loop_begin>`, then repeats.
 
-\ **注意：**\ 在 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` 中，循环音频到达音频文件末尾时不会发出 :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` 信号，因为音频会无限循环播放。
+\ **Note:** In :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, the :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` signal won't be emitted for looping audio when it reaches the end of the audio file, as the audio will keep playing indefinitely.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ WAV 是未经压缩的格式，能够提供比 Ogg Vorbis 和 MP3 更高的质�
 
 :ref:`bool<class_bool>` **edit/normalize** = ``false`` :ref:`🔗<class_ResourceImporterWAV_property_edit/normalize>`
 
-如果为 ``true``\ ，则会将音频音量进行归一化，让最高音量等于 0 dB。启用后，音频听起来会更响，具体取决于原始的最高音量。
+If ``true``, normalize the audio volume so that its peak volume is equal to 0 dB. When enabled, normalization will make audio sound louder depending on its original peak volume.
 
 .. rst-class:: classref-item-separator
 
@@ -148,7 +148,7 @@ WAV 是未经压缩的格式，能够提供比 Ogg Vorbis 和 MP3 更高的质�
 
 :ref:`bool<class_bool>` **edit/trim** = ``false`` :ref:`🔗<class_ResourceImporterWAV_property_edit/trim>`
 
-如果为 ``true``\ ，则会自动修剪掉音频开头和结尾处归一化后低于 -50 dB 的部分（见 :ref:`edit/normalize<class_ResourceImporterWAV_property_edit/normalize>`\ ）。这样就能够避免出现文件开头和结尾出现空白的情况，这种情况会占用不必要的文件大小，同时也会在播放时导致延迟。修剪时还会使用 500 个采样进行淡入/淡出，避免产生爆音。
+If ``true``, automatically trim the beginning and end of the audio if it's lower than -50 dB after normalization (see :ref:`edit/normalize<class_ResourceImporterWAV_property_edit/normalize>`). This prevents having files with silence at the beginning or end, which increases their size unnecessarily and adds latency to the moment they are played back. A fade-in/fade-out period of 500 samples is also used during trimming to avoid audible pops.
 
 .. rst-class:: classref-item-separator
 
@@ -160,9 +160,9 @@ WAV 是未经压缩的格式，能够提供比 Ogg Vorbis 和 MP3 更高的质�
 
 :ref:`bool<class_bool>` **force/8_bit** = ``false`` :ref:`🔗<class_ResourceImporterWAV_property_force/8_bit>`
 
-如果为 ``true``\ ，则会在源文件至少为 16 位时，强制让导入的音频使用 8 位量化。
+If ``true``, forces the imported audio to use 8-bit quantization if the source file is 16-bit or higher.
 
-通常不建议启用，因为 8 位量化会显著降低音质。如果你需要让文件大小更小，请考虑改用 Ogg Vorbis 或 MP3 音频。
+Enabling this is generally not recommended, as 8-bit quantization decreases audio quality significantly. If you need smaller file sizes, consider using Ogg Vorbis or MP3 audio instead.
 
 .. rst-class:: classref-item-separator
 
@@ -174,9 +174,9 @@ WAV 是未经压缩的格式，能够提供比 Ogg Vorbis 和 MP3 更高的质�
 
 :ref:`bool<class_bool>` **force/max_rate** = ``false`` :ref:`🔗<class_ResourceImporterWAV_property_force/max_rate>`
 
-如果设成比 ``0`` 大的值，则会强制让音频的采样率降低至小于等于 :ref:`force/max_rate_hz<class_ResourceImporterWAV_property_force/max_rate_hz>` 的值。
+If set to a value greater than ``0``, forces the audio's sample rate to be reduced to a value lower than or equal to the value specified in :ref:`force/max_rate_hz<class_ResourceImporterWAV_property_force/max_rate_hz>`.
 
-可以让部分声音在不影响音质的同时降低文件大小，具体取决于声音的内容。详见\ `《最佳实践》 <../tutorials/assets_pipeline/importing_audio_samples.html#doc-importing-audio-samples-best-practices>`__\ 。
+This can decrease file size noticeably on certain sounds, without impacting quality depending on the actual sound's contents. See `Best practices <../tutorials/assets_pipeline/importing_audio_samples.html#doc-importing-audio-samples-best-practices>`__ for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ WAV 是未经压缩的格式，能够提供比 Ogg Vorbis 和 MP3 更高的质�
 
 :ref:`float<class_float>` **force/max_rate_hz** = ``44100`` :ref:`🔗<class_ResourceImporterWAV_property_force/max_rate_hz>`
 
-导入音频采样的频率限制（单位为赫兹）。仅当 :ref:`force/max_rate<class_ResourceImporterWAV_property_force/max_rate>` 为 ``true`` 时有效。
+The frequency to limit the imported audio sample to (in Hz). Only effective if :ref:`force/max_rate<class_ResourceImporterWAV_property_force/max_rate>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -200,14 +200,14 @@ WAV 是未经压缩的格式，能够提供比 Ogg Vorbis 和 MP3 更高的质�
 
 :ref:`bool<class_bool>` **force/mono** = ``false`` :ref:`🔗<class_ResourceImporterWAV_property_force/mono>`
 
-如果为 ``true``\ ，则会在源文件为立体声时，强制让导入的音频使用单声道。将两个声道合并能够将文件大小降低 50%。
+If ``true``, forces the imported audio to be mono if the source file is stereo. This decreases the file size by 50% by merging the two channels into one.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

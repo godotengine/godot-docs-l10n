@@ -5,22 +5,22 @@
 EditorDebuggerPlugin
 ====================
 
-**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-实现调试器插件的基类。
+A base class to implement debugger plugins.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-编辑器调试器插件 **EditorDebuggerPlugin** 提供了与调试器的编辑器端相关的函数。
+**EditorDebuggerPlugin** provides functions related to the editor side of the debugger.
 
-要与调试器交互，必须将这个类的实例通过 :ref:`EditorPlugin.add_debugger_plugin()<class_EditorPlugin_method_add_debugger_plugin>` 添加至编辑器。
+To interact with the debugger, an instance of this class must be added to the editor via :ref:`EditorPlugin.add_debugger_plugin()<class_EditorPlugin_method_add_debugger_plugin>`.
 
-添加完成后，会针对该插件可用的每一个编辑器调试器会话 :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` 回调一次 :ref:`_setup_session()<class_EditorDebuggerPlugin_private_method__setup_session>`\ ，后续有新的会话也会进行回调（这些会话在此阶段可能尚未激活）。
+Once added, the :ref:`_setup_session()<class_EditorDebuggerPlugin_private_method__setup_session>` callback will be called for every :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` available to the plugin, and when new ones are created (the sessions may be inactive during this stage).
 
-你可以通过 :ref:`get_sessions()<class_EditorDebuggerPlugin_method_get_sessions>` 获取所有可用的 :ref:`EditorDebuggerSession<class_EditorDebuggerSession>`\ ，也可以通过 :ref:`get_session()<class_EditorDebuggerPlugin_method_get_session>` 获取特定的会话。
+You can retrieve the available :ref:`EditorDebuggerSession<class_EditorDebuggerSession>`\ s via :ref:`get_sessions()<class_EditorDebuggerPlugin_method_get_sessions>` or get a specific one via :ref:`get_session()<class_EditorDebuggerPlugin_method_get_session>`.
 
 
 .. tabs::
@@ -33,7 +33,7 @@ EditorDebuggerPlugin
     class ExampleEditorDebugger extends EditorDebuggerPlugin:
 
         func _has_capture(capture):
-            # 如果想要处理带有“my_plugin:”前缀的消息则返回 true。
+            # Return true if you wish to handle messages with the prefix "my_plugin:".
             return capture == "my_plugin"
 
         func _capture(message, data, session_id):
@@ -43,14 +43,14 @@ EditorDebuggerPlugin
             return false
 
         func _setup_session(session_id):
-            # 在调试器会话 UI 中添加新的选项卡，其中包含一个标签。
+            # Add a new tab in the debugger session UI containing a label.
             var label = Label.new()
-            label.name = "Example plugin" # 会显示为选项卡标题
-            label.text = "示例插件"
+            label.name = "Example plugin" # Will be used as the tab title.
+            label.text = "Example plugin"
             var session = get_session(session_id)
-            # 监听会话开始和停止信号。
-            session.started.connect(func (): print("会话已开始"))
-            session.stopped.connect(func (): print("会话已停止"))
+            # Listens to the session started and stopped signals.
+            session.started.connect(func (): print("Session started"))
+            session.stopped.connect(func (): print("Session stopped"))
             session.add_session_tab(label)
 
     var debugger = ExampleEditorDebugger.new()
@@ -63,7 +63,7 @@ EditorDebuggerPlugin
 
 
 
-要在运行的游戏中连接，请使用 :ref:`EngineDebugger<class_EngineDebugger>` 单例：
+To connect on the running game side, use the :ref:`EngineDebugger<class_EngineDebugger>` singleton:
 
 
 .. tabs::
@@ -77,20 +77,20 @@ EditorDebuggerPlugin
         EngineDebugger.send_message("my_plugin:ping", ["test"])
 
     func _capture(message, data):
-        # 请注意这里不使用“my_plugin:”前缀。
+        # Note that the "my_plugin:" prefix is not used here.
         if message == "echo":
-            prints("收到回响：", data)
+            prints("Echo received:", data)
             return true
         return false
 
 
 
-\ **注意：**\ 游戏运行时，在\ *编辑器中调用* :ref:`@GlobalScope.print()<class_@GlobalScope_method_print>` 等函数不会输出任何内容，“输出日志”中只会输出游戏中的消息。
+\ **Note:** While the game is running, :ref:`@GlobalScope.print()<class_@GlobalScope_method_print>` and similar functions *called in the editor* do not print anything, the Output Log prints only game messages.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -119,8 +119,8 @@ EditorDebuggerPlugin
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_EditorDebuggerPlugin_private_method__breakpoint_set_in_tree:
 
@@ -128,7 +128,7 @@ EditorDebuggerPlugin
 
 |void| **_breakpoint_set_in_tree**\ (\ script\: :ref:`Script<class_Script>`, line\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_EditorDebuggerPlugin_private_method__breakpoint_set_in_tree>`
 
-覆盖此方法以便在编辑器中设置断点时收到通知。
+Override this method to be notified when a breakpoint is set in the editor.
 
 .. rst-class:: classref-item-separator
 
@@ -140,7 +140,7 @@ EditorDebuggerPlugin
 
 |void| **_breakpoints_cleared_in_tree**\ (\ ) |virtual| :ref:`🔗<class_EditorDebuggerPlugin_private_method__breakpoints_cleared_in_tree>`
 
-覆盖此方法以便当编辑器中所有断点被清除时收到通知。
+Override this method to be notified when all breakpoints are cleared in the editor.
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ EditorDebuggerPlugin
 
 :ref:`bool<class_bool>` **_capture**\ (\ message\: :ref:`String<class_String>`, data\: :ref:`Array<class_Array>`, session_id\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_EditorDebuggerPlugin_private_method__capture>`
 
-覆盖此方法以处理传入的消息。\ ``session_id`` 是接收到消息的 :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` 的 ID，可以通过 :ref:`get_session()<class_EditorDebuggerPlugin_method_get_session>` 获取会话。能够识别消息时，该方法应返回 ``true``\ 。
+Override this method to process incoming messages. The ``session_id`` is the ID of the :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` that received the ``message``. Use :ref:`get_session()<class_EditorDebuggerPlugin_method_get_session>` to retrieve the session. This method should return ``true`` if the message is recognized.
 
 .. rst-class:: classref-item-separator
 
@@ -164,7 +164,7 @@ EditorDebuggerPlugin
 
 |void| **_goto_script_line**\ (\ script\: :ref:`Script<class_Script>`, line\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_EditorDebuggerPlugin_private_method__goto_script_line>`
 
-覆盖此方法，当在调试器断点面板中单击断点行时收到通知。
+Override this method to be notified when a breakpoint line has been clicked in the debugger breakpoint panel.
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +176,7 @@ EditorDebuggerPlugin
 
 :ref:`bool<class_bool>` **_has_capture**\ (\ capture\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_EditorDebuggerPlugin_private_method__has_capture>`
 
-覆盖此方法以启用从调试器接收消息。如果 ``capture`` 为“my_message”，则会将所有以“my_message:”开头的消息传递给 :ref:`_capture()<class_EditorDebuggerPlugin_private_method__capture>` 方法。
+Override this method to enable receiving messages from the debugger. If ``capture`` is "my_message" then messages starting with "my_message:" will be passed to the :ref:`_capture()<class_EditorDebuggerPlugin_private_method__capture>` method.
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ EditorDebuggerPlugin
 
 |void| **_setup_session**\ (\ session_id\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_EditorDebuggerPlugin_private_method__setup_session>`
 
-覆盖此方法，以在每次新建 :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` 时收到通知。请注意，在此阶段会话可能处于非活动状态。
+Override this method to be notified whenever a new :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` is created. Note that the session may be inactive during this stage.
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ EditorDebuggerPlugin
 
 :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` **get_session**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_EditorDebuggerPlugin_method_get_session>`
 
-返回具有给定 ``id`` 的 :ref:`EditorDebuggerSession<class_EditorDebuggerSession>`\ 。
+Returns the :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` with the given ``id``.
 
 .. rst-class:: classref-item-separator
 
@@ -212,16 +212,16 @@ EditorDebuggerPlugin
 
 :ref:`Array<class_Array>` **get_sessions**\ (\ ) :ref:`🔗<class_EditorDebuggerPlugin_method_get_sessions>`
 
-返回该调试器插件当前可用的 :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` 数组。
+Returns an array of :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` currently available to this debugger plugin.
 
-\ **注意：**\ 数组中的会话可能处于非活动状态，请通过 :ref:`EditorDebuggerSession.is_active()<class_EditorDebuggerSession_method_is_active>` 检查它们的状态。
+\ **Note:** Sessions in the array may be inactive, check their state via :ref:`EditorDebuggerSession.is_active()<class_EditorDebuggerSession_method_is_active>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

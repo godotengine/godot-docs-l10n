@@ -5,25 +5,25 @@
 PanoramaSkyMaterial
 ===================
 
-**繼承：** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-提供\ :ref:`Sky<class_Sky>`\ 特殊紋理的材質，通常是 HDR 全景圖。
+A material that provides a special texture to a :ref:`Sky<class_Sky>`, usually an HDR panorama.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-在 :ref:`Environment<class_Environment>` 中引用的用於繪製背景的資源。全景天空的功能類似於其他引擎的天空盒，區別在於它使用的是等距圓柱投影的天空貼圖而不是立方體貼圖。
+A resource referenced in a :ref:`Sky<class_Sky>` that is used to draw a background. **PanoramaSkyMaterial** functions similar to skyboxes in other engines, except it uses an equirectangular sky map instead of a :ref:`Cubemap<class_Cubemap>`.
 
-強烈建議使用 HDR 全景圖，能夠得到準確、高品質的反射。為此，Godot 支援 Radiance HDR（\ ``.hdr``\ ）和 OpenEXR（\ ``.exr``\ ）圖像格式。
+Using an HDR panorama is strongly recommended for accurate, high-quality reflections. Godot supports the Radiance HDR (``.hdr``) and OpenEXR (``.exr``) image formats for this purpose.
 
-你可以使用\ `這個工具 <https://danilw.github.io/GLSL-howto/cubemap_to_panorama_js/cubemap_to_panorama.html>`__\ 將立方體貼圖轉換為等距圓柱投影的天空貼圖。
+You can use `this tool <https://danilw.github.io/GLSL-howto/cubemap_to_panorama_js/cubemap_to_panorama.html>`__ to convert a cubemap to an equirectangular sky map.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ PanoramaSkyMaterial
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_PanoramaSkyMaterial_property_energy_multiplier:
 
@@ -56,7 +56,7 @@ PanoramaSkyMaterial
 - |void| **set_energy_multiplier**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_energy_multiplier**\ (\ )
 
-天空整體亮度的乘數。數值越高，天空就越亮。
+The sky's overall brightness multiplier. Higher values result in a brighter sky.
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ PanoramaSkyMaterial
 - |void| **set_filtering_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_filtering_enabled**\ (\ )
 
-布林值，用於確定背景紋理是否應被篩選。
+A boolean value to determine if the background texture should be filtered or not.
 
 .. rst-class:: classref-item-separator
 
@@ -90,14 +90,14 @@ PanoramaSkyMaterial
 - |void| **set_panorama**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_panorama**\ (\ )
 
-套用於該 **PanoramaSkyMaterial** 的 :ref:`Texture2D<class_Texture2D>`\ 。
+:ref:`Texture2D<class_Texture2D>` to be applied to the **PanoramaSkyMaterial**.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

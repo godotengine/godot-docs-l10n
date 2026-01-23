@@ -5,38 +5,38 @@
 Semaphore
 =========
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-同步機制，用於控制對 :ref:`Thread<class_Thread>` 之間共用資源的存取。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-同步機制，用於控制對 :ref:`Thread<class_Thread>` 之間共用資源的存取。建立時初始化為零。二元版本見 :ref:`Mutex<class_Mutex>`\ 。
-
-\ **警告：**\ 訊號量必須謹慎使用，防止鎖死。
-
-\ **警告：**\ 為了確保作業系統能夠執行正確的清理（避免當機和思索），必須滿足以下條件：
-
-- **Semaphore** 的引用計數變為零，導致銷毀時，沒有執行緒在等待該訊號量。
-
-- :ref:`Thread<class_Thread>` 的引用計數變為零，導致銷毀時，沒有在等待任何訊號量。
+A synchronization mechanism used to control access to a shared resource by :ref:`Thread<class_Thread>`\ s.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`使用多執行緒 <../tutorials/performance/using_multiple_threads>`
+A synchronization semaphore that can be used to synchronize multiple :ref:`Thread<class_Thread>`\ s. Initialized to zero on creation. For a binary version, see :ref:`Mutex<class_Mutex>`.
 
-- :doc:`執行緒安全的 API <../tutorials/performance/thread_safe_apis>`
+\ **Warning:** Semaphores must be used carefully to avoid deadlocks.
+
+\ **Warning:** To guarantee that the operating system is able to perform proper cleanup (no crashes, no deadlocks), these conditions must be met:
+
+- When a **Semaphore**'s reference count reaches zero and it is therefore destroyed, no threads must be waiting on it.
+
+- When a :ref:`Thread<class_Thread>`'s reference count reaches zero and it is therefore destroyed, it must not be waiting on any semaphore.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Using multiple threads <../tutorials/performance/using_multiple_threads>`
+
+- :doc:`Thread-safe APIs <../tutorials/performance/thread_safe_apis>`
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -55,8 +55,8 @@ Semaphore
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_Semaphore_method_post:
 
@@ -76,7 +76,7 @@ Lowers the **Semaphore**, allowing one thread in, or more if ``count`` is specif
 
 :ref:`bool<class_bool>` **try_wait**\ (\ ) :ref:`🔗<class_Semaphore_method_try_wait>`
 
-與 :ref:`wait()<class_Semaphore_method_wait>` 類似，但不會阻塞，所以如果值為零，則會立即失敗並返回 ``false``\ 。如果非零，則返回 ``true`` 以報告成功。
+Like :ref:`wait()<class_Semaphore_method_wait>`, but won't block, so if the value is zero, fails immediately and returns ``false``. If non-zero, it returns ``true`` to report success.
 
 .. rst-class:: classref-item-separator
 
@@ -88,14 +88,14 @@ Lowers the **Semaphore**, allowing one thread in, or more if ``count`` is specif
 
 |void| **wait**\ (\ ) :ref:`🔗<class_Semaphore_method_wait>`
 
-等待該 **Semaphore**\ ，如果它的值為零，則阻塞到變為非零為止。
+Waits for the **Semaphore**, if its value is zero, blocks until non-zero.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

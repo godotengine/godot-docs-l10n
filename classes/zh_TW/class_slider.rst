@@ -5,23 +5,23 @@
 Slider
 ======
 
-**繼承：** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`HSlider<class_HSlider>`, :ref:`VSlider<class_VSlider>`
+**Inherited By:** :ref:`HSlider<class_HSlider>`, :ref:`VSlider<class_VSlider>`
 
-滑桿的抽象基底類別。
+Abstract base class for sliders.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-滑桿的抽象基底類別，通過將抓取器（滑桿）沿水平軸或垂直軸移動類調整取值。滑桿是基於 :ref:`Range<class_Range>` 的控制項。
+Abstract base class for sliders, used to adjust a value by moving a grabber along a horizontal or vertical axis. Sliders are :ref:`Range<class_Range>`-based controls.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ Slider
 
 .. rst-class:: classref-reftable-group
 
-主題屬性
---------
+Theme Properties
+----------------
 
 .. table::
    :widths: auto
@@ -78,8 +78,8 @@ Slider
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_Slider_signal_drag_ended:
 
@@ -107,8 +107,8 @@ Emitted when the grabber starts being dragged. This is emitted before the corres
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_Slider_TickPosition:
 
@@ -154,8 +154,8 @@ Places the ticks at the center of the slider.
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_Slider_property_editable:
 
@@ -168,7 +168,7 @@ Places the ticks at the center of the slider.
 - |void| **set_editable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_editable**\ (\ )
 
-如果為 ``true``\ ，則滑動條可以互動。如果為 ``false``\ ，則只能通過程式碼更改該值。
+If ``true``, the slider can be interacted with. If ``false``, the value can be changed only by code.
 
 .. rst-class:: classref-item-separator
 
@@ -185,7 +185,7 @@ Places the ticks at the center of the slider.
 - |void| **set_scrollable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_scrollable**\ (\ )
 
-如果為 ``true``\ ，則可以使用滑鼠滾輪更改該值。
+If ``true``, the value can be changed using the mouse wheel.
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ Places the ticks at the center of the slider.
 - |void| **set_ticks**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_ticks**\ (\ )
 
-滑動條上顯示的刻度線數量，包括邊界刻度線。刻度是均勻分佈的數值標記。
+Number of ticks displayed on the slider, including border ticks. Ticks are uniformly-distributed value markers.
 
 .. rst-class:: classref-item-separator
 
@@ -219,7 +219,7 @@ Places the ticks at the center of the slider.
 - |void| **set_ticks_on_borders**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_ticks_on_borders**\ (\ )
 
-如果為 ``true``\ ，則滑動條將顯示最小值和最大值的刻度。
+If ``true``, the slider will display ticks for minimum and maximum values.
 
 .. rst-class:: classref-item-separator
 
@@ -244,8 +244,8 @@ Sets the position of the ticks. See :ref:`TickPosition<enum_Slider_TickPosition>
 
 .. rst-class:: classref-descriptions-group
 
-主題屬性說明
-------------
+Theme Property Descriptions
+---------------------------
 
 .. _class_Slider_theme_constant_center_grabber:
 
@@ -253,7 +253,7 @@ Sets the position of the ticks. See :ref:`TickPosition<enum_Slider_TickPosition>
 
 :ref:`int<class_int>` **center_grabber** = ``0`` :ref:`🔗<class_Slider_theme_constant_center_grabber>`
 
-布林常數。如果為 ``1``\ ，則會忽略抓取器紋理的大小，根據其中心位置將其縮放到捲軸的邊界。
+Boolean constant. If ``1``, the grabber texture size will be ignored and it will fit within slider's bounds based only on its center position.
 
 .. rst-class:: classref-item-separator
 
@@ -289,7 +289,7 @@ Vertical or horizontal offset of the ticks. The offset is reversed for top or le
 
 :ref:`Texture2D<class_Texture2D>` **grabber** :ref:`🔗<class_Slider_theme_icon_grabber>`
 
-用作拖動條的紋理（可拖動的元素）。
+The texture for the grabber (the draggable element).
 
 .. rst-class:: classref-item-separator
 
@@ -301,7 +301,7 @@ Vertical or horizontal offset of the ticks. The offset is reversed for top or le
 
 :ref:`Texture2D<class_Texture2D>` **grabber_disabled** :ref:`🔗<class_Slider_theme_icon_grabber_disabled>`
 
-抓取器禁用時的材質。
+The texture for the grabber when it's disabled.
 
 .. rst-class:: classref-item-separator
 
@@ -313,7 +313,7 @@ Vertical or horizontal offset of the ticks. The offset is reversed for top or le
 
 :ref:`Texture2D<class_Texture2D>` **grabber_highlight** :ref:`🔗<class_Slider_theme_icon_grabber_highlight>`
 
-抓取器獲得焦點時的材質。
+The texture for the grabber when it's focused.
 
 .. rst-class:: classref-item-separator
 
@@ -325,7 +325,7 @@ Vertical or horizontal offset of the ticks. The offset is reversed for top or le
 
 :ref:`Texture2D<class_Texture2D>` **tick** :ref:`🔗<class_Slider_theme_icon_tick>`
 
-刻度的紋理。當 :ref:`tick_count<class_Slider_property_tick_count>` 大於 0 時可見。
+The texture for the ticks, visible when :ref:`tick_count<class_Slider_property_tick_count>` is greater than 0.
 
 .. rst-class:: classref-item-separator
 
@@ -363,12 +363,12 @@ The background of the area to the left or bottom of the grabber that displays wh
 
 The background for the whole slider. Affects the height or width of the :ref:`grabber_area<class_Slider_theme_style_grabber_area>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

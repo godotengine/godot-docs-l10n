@@ -5,29 +5,29 @@
 SceneMultiplayer
 ================
 
-**繼承：** :ref:`MultiplayerAPI<class_MultiplayerAPI>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`MultiplayerAPI<class_MultiplayerAPI>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-高階多人遊戲 API 實作。
+High-level multiplayer API implementation.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-這個類是 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 的預設實作，用於在 Godot 引擎中提供多人遊戲功能。
+This class is the default implementation of :ref:`MultiplayerAPI<class_MultiplayerAPI>`, used to provide multiplayer functionalities in Godot Engine.
 
-該實作通過 :ref:`Node.rpc()<class_Node_method_rpc>` 和 :ref:`Node.rpc_id()<class_Node_method_rpc_id>` 來支援 RPC，需要向 :ref:`MultiplayerAPI.rpc()<class_MultiplayerAPI_method_rpc>` 傳遞一個 :ref:`Node<class_Node>`\ （傳入其他物件型別會導致失敗）。
+This implementation supports RPCs via :ref:`Node.rpc()<class_Node_method_rpc>` and :ref:`Node.rpc_id()<class_Node_method_rpc_id>` and requires :ref:`MultiplayerAPI.rpc()<class_MultiplayerAPI_method_rpc>` to be passed a :ref:`Node<class_Node>` (it will fail for other object types).
 
-該實作還提供了 :ref:`SceneTree<class_SceneTree>` 複製功能，使用的是 :ref:`MultiplayerSpawner<class_MultiplayerSpawner>` 和 :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>` 節點，以及 :ref:`SceneReplicationConfig<class_SceneReplicationConfig>` 資源，。
+This implementation additionally provide :ref:`SceneTree<class_SceneTree>` replication via the :ref:`MultiplayerSpawner<class_MultiplayerSpawner>` and :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>` nodes, and the :ref:`SceneReplicationConfig<class_SceneReplicationConfig>` resource.
 
-\ **注意：**\ 高階多人遊戲 API 協議屬於實作細節，並不打算提供給非 Godot 伺服器使用。對協議的更改可能不會進行提前通知。
+\ **Note:** The high-level multiplayer API protocol is an implementation detail and isn't meant to be used by non-Godot servers. It may change without notice.
 
-\ **注意：**\ 匯出到 Android 時，在匯出專案或使用一鍵部署之前，請務必在安卓導出預設中開啟 ``INTERNET`` 許可權。否則，任何型別的網路通信都將被 Android 阻止。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -52,8 +52,8 @@ SceneMultiplayer
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -78,8 +78,8 @@ SceneMultiplayer
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_SceneMultiplayer_signal_peer_authenticating:
 
@@ -87,7 +87,7 @@ SceneMultiplayer
 
 **peer_authenticating**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SceneMultiplayer_signal_peer_authenticating>`
 
-當此 MultiplayerAPI 的 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 連接到一個新對等體並設定有效的 :ref:`auth_callback<class_SceneMultiplayer_property_auth_callback>` 時，將發出此訊號。在這種情況下，只有在呼叫 :ref:`complete_auth()<class_SceneMultiplayer_method_complete_auth>` 並傳遞給定的對等體 ``id`` 時，才會發出 :ref:`MultiplayerAPI.peer_connected<class_MultiplayerAPI_signal_peer_connected>`\ 。在此狀態下，該對等體不會包含在 :ref:`MultiplayerAPI.get_peers()<class_MultiplayerAPI_method_get_peers>` 返回的列表中（但會包含在 :ref:`get_authenticating_peers()<class_SceneMultiplayer_method_get_authenticating_peers>` 返回的列表中），且只會發送和接收身份驗證資料。有關發送身份驗證資料的資訊，請參閱 :ref:`send_auth()<class_SceneMultiplayer_method_send_auth>`\ 。
+Emitted when this MultiplayerAPI's :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` connects to a new peer and a valid :ref:`auth_callback<class_SceneMultiplayer_property_auth_callback>` is set. In this case, the :ref:`MultiplayerAPI.peer_connected<class_MultiplayerAPI_signal_peer_connected>` will not be emitted until :ref:`complete_auth()<class_SceneMultiplayer_method_complete_auth>` is called with given peer ``id``. While in this state, the peer will not be included in the list returned by :ref:`MultiplayerAPI.get_peers()<class_MultiplayerAPI_method_get_peers>` (but in the one returned by :ref:`get_authenticating_peers()<class_SceneMultiplayer_method_get_authenticating_peers>`), and only authentication data will be sent or received. See :ref:`send_auth()<class_SceneMultiplayer_method_send_auth>` for sending authentication data.
 
 .. rst-class:: classref-item-separator
 
@@ -99,7 +99,7 @@ SceneMultiplayer
 
 **peer_authentication_failed**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SceneMultiplayer_signal_peer_authentication_failed>`
 
-當這個 MultiplayerAPI 的 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 與另一個尚未完成授權的對等體斷開連接時觸發。見 :ref:`peer_authenticating<class_SceneMultiplayer_signal_peer_authenticating>`\ 。
+Emitted when this MultiplayerAPI's :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` disconnects from a peer for which authentication had not yet completed. See :ref:`peer_authenticating<class_SceneMultiplayer_signal_peer_authenticating>`.
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ SceneMultiplayer
 
 **peer_packet**\ (\ id\: :ref:`int<class_int>`, packet\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_SceneMultiplayer_signal_peer_packet>`
 
-當這個 MultiplayerAPI 的 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 收到帶有自定義資料（見 :ref:`send_bytes()<class_SceneMultiplayer_method_send_bytes>`\ ）的 ``packet`` 時發出。ID 是發送封包的對等體的對等體 ID。
+Emitted when this MultiplayerAPI's :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` receives a ``packet`` with custom data (see :ref:`send_bytes()<class_SceneMultiplayer_method_send_bytes>`). ID is the peer ID of the peer that sent the packet.
 
 .. rst-class:: classref-section-separator
 
@@ -119,8 +119,8 @@ SceneMultiplayer
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_SceneMultiplayer_property_allow_object_decoding:
 
@@ -133,9 +133,9 @@ SceneMultiplayer
 - |void| **set_allow_object_decoding**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_object_decoding_allowed**\ (\ )
 
-如果為 ``true``\ ，則 MultiplayerAPI 將允許在遠端程式呼叫期間對對象進行編碼和解碼。
+If ``true``, the MultiplayerAPI will allow encoding and decoding of object during RPCs.
 
-\ **警告：**\ 反序列化的物件可能包含要執行的程式碼。如果序列化的物件來自不受信任的來源，請勿使用此選項，以避免潛在的安全威脅，例如遠端程式碼執行。
+\ **Warning:** Deserialized objects can contain code which gets executed. Do not use this option if the serialized object comes from untrusted sources to avoid potential security threat such as remote code execution.
 
 .. rst-class:: classref-item-separator
 
@@ -186,7 +186,7 @@ If set to a value greater than ``0.0``, the maximum duration in seconds peers ca
 - |void| **set_max_delta_packet_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_delta_packet_size**\ (\ )
 
-差異量封包的最大大小。值越大，單影格能夠收到完整更新的幾率就越大，但造成網路擁堵的幾率也越大（網路延遲、斷線等）。見 :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>`\ 。
+Maximum size of each delta packet. Higher values increase the chance of receiving full updates in a single frame, but also the chance of causing networking congestion (higher latency, disconnections). See :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -203,7 +203,7 @@ If set to a value greater than ``0.0``, the maximum duration in seconds peers ca
 - |void| **set_max_sync_packet_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_sync_packet_size**\ (\ )
 
-同步封包的最大大小。值越大，單影格能夠收到完整更新的幾率就越大，但丟包的幾率也越大。見 :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>`\ 。
+Maximum size of each synchronization packet. Higher values increase the chance of receiving full updates in a single frame, but also the chance of packet loss. See :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ If set to a value greater than ``0.0``, the maximum duration in seconds peers ca
 - |void| **set_refuse_new_connections**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_refusing_new_connections**\ (\ )
 
-如果為 ``true``\ ，則 MultiplayerAPI 的 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 將拒絕新的傳入連接。
+If ``true``, the MultiplayerAPI's :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` refuses new incoming connections.
 
 .. rst-class:: classref-item-separator
 
@@ -237,9 +237,9 @@ If set to a value greater than ``0.0``, the maximum duration in seconds peers ca
 - |void| **set_root_path**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_root_path**\ (\ )
 
-用於 RPC 和複製的根路徑。將使用相對路徑，而不是絕對路徑，來搜尋 RPC 應該在其上被執行的節點。
+The root path to use for RPCs and replication. Instead of an absolute path, a relative path will be used to find the node upon which the RPC should be executed.
 
-這有效地允許場景樹的不同分支，由不同的 MultiplayerAPI 管理，例如允許在同一場景中，同時運作使用者端和伺服器。
+This effectively allows to have different branches of the scene tree to be managed by different MultiplayerAPI, allowing for example to run both client and server in the same scene.
 
 .. rst-class:: classref-item-separator
 
@@ -256,11 +256,11 @@ If set to a value greater than ``0.0``, the maximum duration in seconds peers ca
 - |void| **set_server_relay_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_server_relay_enabled**\ (\ )
 
-啟用或禁用伺服器功能，該功能通知使用者端其他對等體的連接/斷開，並在它們之間轉發消息。當此選項為 ``false`` 時，使用者端將不會自動收到其他對等體的通知，也無法通過伺服器向它們發送封包。
+Enable or disable the server feature that notifies clients of other peers' connection/disconnection, and relays messages between them. When this option is ``false``, clients won't be automatically notified of other peers and won't be able to send them packets through the server.
 
-\ **注意：**\ 在其他對等體連接時更改此選項可能會導致意外行為。
+\ **Note:** Changing this option while other peers are connected may lead to unexpected behaviors.
 
-\ **注意：**\ 對該功能的支援可能取決於目前的 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 配置。請參閱 :ref:`MultiplayerPeer.is_server_relay_supported()<class_MultiplayerPeer_method_is_server_relay_supported>`\ 。
+\ **Note:** Support for this feature may depend on the current :ref:`MultiplayerPeer<class_MultiplayerPeer>` configuration. See :ref:`MultiplayerPeer.is_server_relay_supported()<class_MultiplayerPeer_method_is_server_relay_supported>`.
 
 .. rst-class:: classref-section-separator
 
@@ -268,8 +268,8 @@ If set to a value greater than ``0.0``, the maximum duration in seconds peers ca
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_SceneMultiplayer_method_clear:
 
@@ -277,7 +277,7 @@ If set to a value greater than ``0.0``, the maximum duration in seconds peers ca
 
 |void| **clear**\ (\ ) :ref:`🔗<class_SceneMultiplayer_method_clear>`
 
-清除目前 SceneMultiplayer 的網路狀態（除非你知道你在做什麼，否則不應該呼叫這個函式）。
+Clears the current SceneMultiplayer network state (you shouldn't call this unless you know what you are doing).
 
 .. rst-class:: classref-item-separator
 
@@ -289,9 +289,9 @@ If set to a value greater than ``0.0``, the maximum duration in seconds peers ca
 
 :ref:`Error<enum_@GlobalScope_Error>` **complete_auth**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SceneMultiplayer_method_complete_auth>`
 
-完成對由 ``id`` 標識的遠端對等體的身份驗證步驟。遠端端也完成身份驗證之後，將會為這個對等體發出 :ref:`MultiplayerAPI.peer_connected<class_MultiplayerAPI_signal_peer_connected>` 訊號。不會再從此對等體接收到身份驗證消息。
+Mark the authentication step as completed for the remote peer identified by ``id``. The :ref:`MultiplayerAPI.peer_connected<class_MultiplayerAPI_signal_peer_connected>` signal will be emitted for this peer once the remote side also completes the authentication. No further authentication messages are expected to be received from this peer.
 
-如果對等體在完成身份驗證之前斷開連接，無論是由於網路問題、\ :ref:`auth_timeout<class_SceneMultiplayer_property_auth_timeout>` 過期還是手動呼叫 :ref:`disconnect_peer()<class_SceneMultiplayer_method_disconnect_peer>`\ ，都會發出 :ref:`peer_authentication_failed<class_SceneMultiplayer_signal_peer_authentication_failed>` 訊號，而不是 :ref:`MultiplayerAPI.peer_disconnected<class_MultiplayerAPI_signal_peer_disconnected>` 訊號。
+If a peer disconnects before completing authentication, either due to a network issue, the :ref:`auth_timeout<class_SceneMultiplayer_property_auth_timeout>` expiring, or manually calling :ref:`disconnect_peer()<class_SceneMultiplayer_method_disconnect_peer>`, the :ref:`peer_authentication_failed<class_SceneMultiplayer_signal_peer_authentication_failed>` signal will be emitted instead of :ref:`MultiplayerAPI.peer_disconnected<class_MultiplayerAPI_signal_peer_disconnected>`.
 
 .. rst-class:: classref-item-separator
 
@@ -303,7 +303,7 @@ If set to a value greater than ``0.0``, the maximum duration in seconds peers ca
 
 |void| **disconnect_peer**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SceneMultiplayer_method_disconnect_peer>`
 
-斷開由 ``id`` 標識的對等體的連接，將其從連接的對等體列表中移除，並關閉與它的底層連接。
+Disconnects the peer identified by ``id``, removing it from the list of connected peers, and closing the underlying connection with it.
 
 .. rst-class:: classref-item-separator
 
@@ -315,7 +315,7 @@ If set to a value greater than ``0.0``, the maximum duration in seconds peers ca
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_authenticating_peers**\ (\ ) :ref:`🔗<class_SceneMultiplayer_method_get_authenticating_peers>`
 
-返回目前嘗試使用此 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 進行身份驗證的對等方的 ID。
+Returns the IDs of the peers currently trying to authenticate with this :ref:`MultiplayerAPI<class_MultiplayerAPI>`.
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +327,7 @@ If set to a value greater than ``0.0``, the maximum duration in seconds peers ca
 
 :ref:`Error<enum_@GlobalScope_Error>` **send_auth**\ (\ id\: :ref:`int<class_int>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_SceneMultiplayer_method_send_auth>`
 
-將指定的 ``data`` 作為身份驗證消息的一部分發送到由 ``id`` 標識的遠端對等方。這可用於驗證對等方，並控制何時發出 :ref:`MultiplayerAPI.peer_connected<class_MultiplayerAPI_signal_peer_connected>`\ （並接受遠端對等方作為連接的對等方之一）。
+Sends the specified ``data`` to the remote peer identified by ``id`` as part of an authentication message. This can be used to authenticate peers, and control when :ref:`MultiplayerAPI.peer_connected<class_MultiplayerAPI_signal_peer_connected>` is emitted (and the remote peer accepted as one of the connected peers).
 
 .. rst-class:: classref-item-separator
 
@@ -339,14 +339,14 @@ If set to a value greater than ``0.0``, the maximum duration in seconds peers ca
 
 :ref:`Error<enum_@GlobalScope_Error>` **send_bytes**\ (\ bytes\: :ref:`PackedByteArray<class_PackedByteArray>`, id\: :ref:`int<class_int>` = 0, mode\: :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>` = 2, channel\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_SceneMultiplayer_method_send_bytes>`
 
-向由 ``id`` 標識的特定對等體發送給定的原始位元組 ``bytes``\ （見 :ref:`MultiplayerPeer.set_target_peer()<class_MultiplayerPeer_method_set_target_peer>`\ ）。預設 ID 為 ``0``\ ，即廣播到所有對等體。
+Sends the given raw ``bytes`` to a specific peer identified by ``id`` (see :ref:`MultiplayerPeer.set_target_peer()<class_MultiplayerPeer_method_set_target_peer>`). Default ID is ``0``, i.e. broadcast to all peers.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

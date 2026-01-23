@@ -5,14 +5,14 @@
 JSON
 ====
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用於建立和解析 JSON 資料的輔助類。
+Helper class for creating and parsing JSON data.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 The **JSON** class enables all data types to be converted to and from a JSON string. This is useful for serializing data, e.g. to save to a file or send over the network.
 
@@ -56,8 +56,8 @@ Alternatively, you can parse strings using the static :ref:`parse_string()<class
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -68,8 +68,8 @@ Alternatively, you can parse strings using the static :ref:`parse_string()<class
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -98,8 +98,8 @@ Alternatively, you can parse strings using the static :ref:`parse_string()<class
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_JSON_property_data:
 
@@ -112,7 +112,7 @@ Alternatively, you can parse strings using the static :ref:`parse_string()<class
 - |void| **set_data**\ (\ value\: :ref:`Variant<class_Variant>`\ )
 - :ref:`Variant<class_Variant>` **get_data**\ (\ )
 
-包含解析到的 JSON 資料，型別為 :ref:`Variant<class_Variant>`\ 。
+Contains the parsed JSON data in :ref:`Variant<class_Variant>` form.
 
 .. rst-class:: classref-section-separator
 
@@ -120,8 +120,8 @@ Alternatively, you can parse strings using the static :ref:`parse_string()<class
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_JSON_method_from_native:
 
@@ -150,7 +150,7 @@ You can convert a native value to a JSON string like this:
 
 :ref:`int<class_int>` **get_error_line**\ (\ ) |const| :ref:`🔗<class_JSON_method_get_error_line>`
 
-如果上一次呼叫 :ref:`parse()<class_JSON_method_parse>` 成功，則返回 ``0``\ ，否則返回解析失敗的行號。
+Returns ``0`` if the last call to :ref:`parse()<class_JSON_method_parse>` was successful, or the line number where the parse failed.
 
 .. rst-class:: classref-item-separator
 
@@ -162,7 +162,7 @@ You can convert a native value to a JSON string like this:
 
 :ref:`String<class_String>` **get_error_message**\ (\ ) |const| :ref:`🔗<class_JSON_method_get_error_message>`
 
-如果上一次呼叫 :ref:`parse()<class_JSON_method_parse>` 成功，則返回空字串，否則返回失敗時的錯誤消息。
+Returns an empty string if the last call to :ref:`parse()<class_JSON_method_parse>` was successful, or the error message if it failed.
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ The optional ``keep_text`` argument instructs the parser to keep a copy of the o
 
 :ref:`Variant<class_Variant>` **parse_string**\ (\ json_string\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_JSON_method_parse_string>`
 
-試圖解析提供的 ``json_string``\ ，並返回解析後的資料。如果解析失敗，返回 ``null``\ 。
+Attempts to parse the ``json_string`` provided and returns the parsed data. Returns ``null`` if parse failed.
 
 .. rst-class:: classref-item-separator
 
@@ -286,12 +286,12 @@ You can convert a JSON string back to a native value like this:
     func decode_data(string, allow_objects = false):
         return JSON.to_native(JSON.parse_string(string), allow_objects)
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,23 +5,23 @@
 CurveXYZTexture
 ===============
 
-**继承：** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-一维纹理，红、绿、蓝通道分别对应 3 条曲线上的点。
+A 1D texture where the red, green, and blue color channels correspond to points on 3 curves.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-一维纹理，红、绿、蓝通道分别对应 3 条单位 :ref:`Curve<class_Curve>` 资源上的点。与使用单独的 :ref:`CurveTexture<class_CurveTexture>` 相比，可以简化将曲线保存为图像文件的任务。
+A 1D texture where the red, green, and blue color channels correspond to points on 3 unit :ref:`Curve<class_Curve>` resources. Compared to using separate :ref:`CurveTexture<class_CurveTexture>`\ s, this further simplifies the task of saving curves as image files.
 
-如果你只需要在单张纹理中存储一条曲线，请改用 :ref:`CurveTexture<class_CurveTexture>`\ 。另见 :ref:`GradientTexture1D<class_GradientTexture1D>` 和 :ref:`GradientTexture2D<class_GradientTexture2D>`\ 。
+If you only need to store one curve within a single texture, use :ref:`CurveTexture<class_CurveTexture>` instead. See also :ref:`GradientTexture1D<class_GradientTexture1D>` and :ref:`GradientTexture2D<class_GradientTexture2D>`.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ CurveXYZTexture
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_CurveXYZTexture_property_curve_x:
 
@@ -58,7 +58,7 @@ CurveXYZTexture
 - |void| **set_curve_x**\ (\ value\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_curve_x**\ (\ )
 
-渲染到该纹理红色通道上的 :ref:`Curve<class_Curve>`\ 。应当为单位 :ref:`Curve<class_Curve>`\ 。
+The :ref:`Curve<class_Curve>` that is rendered onto the texture's red channel. Should be a unit :ref:`Curve<class_Curve>`.
 
 .. rst-class:: classref-item-separator
 
@@ -75,7 +75,7 @@ CurveXYZTexture
 - |void| **set_curve_y**\ (\ value\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_curve_y**\ (\ )
 
-渲染到该纹理绿色通道上的 :ref:`Curve<class_Curve>`\ 。应当为单位 :ref:`Curve<class_Curve>`\ 。
+The :ref:`Curve<class_Curve>` that is rendered onto the texture's green channel. Should be a unit :ref:`Curve<class_Curve>`.
 
 .. rst-class:: classref-item-separator
 
@@ -92,7 +92,7 @@ CurveXYZTexture
 - |void| **set_curve_z**\ (\ value\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_curve_z**\ (\ )
 
-渲染到该纹理蓝色通道上的 :ref:`Curve<class_Curve>`\ 。应当为单位 :ref:`Curve<class_Curve>`\ 。
+The :ref:`Curve<class_Curve>` that is rendered onto the texture's blue channel. Should be a unit :ref:`Curve<class_Curve>`.
 
 .. rst-class:: classref-item-separator
 
@@ -109,14 +109,14 @@ CurveXYZTexture
 - |void| **set_width**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_width**\ (\ )
 
-纹理宽度（单位为像素）。较大的值能够更好地表示高频数据（例如方向的突变），但会增加生成时间和内存占用。
+The width of the texture (in pixels). Higher values make it possible to represent high-frequency data better (such as sudden direction changes), at the cost of increased generation time and memory usage.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

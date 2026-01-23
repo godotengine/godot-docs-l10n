@@ -5,23 +5,23 @@
 PhysicsServer3DManager
 ======================
 
-**繼承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-用於管理 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 實作的單例。
+A singleton for managing :ref:`PhysicsServer3D<class_PhysicsServer3D>` implementations.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-**PhysicsServer3DManager** 是用於註冊 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 實作、設定預設實作的 API。
+**PhysicsServer3DManager** is the API for registering :ref:`PhysicsServer3D<class_PhysicsServer3D>` implementations and for setting the default implementation.
 
-\ **注意：**\ 無法在運作時切換物理伺服器。這個類只在啟動時在伺服器初始化級別使用，可能由 Godot 本身使用，也可能由 GDExtension 使用。
+\ **Note:** It is not possible to switch physics servers at runtime. This class is only used on startup at the server initialization level, by Godot itself and possibly by GDExtensions.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ PhysicsServer3DManager
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_PhysicsServer3DManager_method_register_server:
 
@@ -47,7 +47,7 @@ PhysicsServer3DManager
 
 |void| **register_server**\ (\ name\: :ref:`String<class_String>`, create_callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_PhysicsServer3DManager_method_register_server>`
 
-註冊 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 實作，傳入名稱 ``name`` 和返回 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 對象的 :ref:`Callable<class_Callable>`\ 。
+Register a :ref:`PhysicsServer3D<class_PhysicsServer3D>` implementation by passing a ``name`` and a :ref:`Callable<class_Callable>` that returns a :ref:`PhysicsServer3D<class_PhysicsServer3D>` object.
 
 .. rst-class:: classref-item-separator
 
@@ -59,14 +59,14 @@ PhysicsServer3DManager
 
 |void| **set_default_server**\ (\ name\: :ref:`String<class_String>`, priority\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer3DManager_method_set_default_server>`
 
-如果優先順序 ``priority`` 比目前預設實作的優先順序高，則將由名稱 ``name`` 標識的 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 實作設定為預設實作。
+Set the default :ref:`PhysicsServer3D<class_PhysicsServer3D>` implementation to the one identified by ``name``, if ``priority`` is greater than the priority of the current default implementation.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,36 +5,36 @@
 AudioStream
 ===========
 
-**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**派生：** :ref:`AudioStreamGenerator<class_AudioStreamGenerator>`, :ref:`AudioStreamInteractive<class_AudioStreamInteractive>`, :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`, :ref:`AudioStreamMP3<class_AudioStreamMP3>`, :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`, :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>`, :ref:`AudioStreamPolyphonic<class_AudioStreamPolyphonic>`, :ref:`AudioStreamRandomizer<class_AudioStreamRandomizer>`, :ref:`AudioStreamSynchronized<class_AudioStreamSynchronized>`, :ref:`AudioStreamWAV<class_AudioStreamWAV>`
+**Inherited By:** :ref:`AudioStreamGenerator<class_AudioStreamGenerator>`, :ref:`AudioStreamInteractive<class_AudioStreamInteractive>`, :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`, :ref:`AudioStreamMP3<class_AudioStreamMP3>`, :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`, :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>`, :ref:`AudioStreamPolyphonic<class_AudioStreamPolyphonic>`, :ref:`AudioStreamRandomizer<class_AudioStreamRandomizer>`, :ref:`AudioStreamSynchronized<class_AudioStreamSynchronized>`, :ref:`AudioStreamWAV<class_AudioStreamWAV>`
 
-音频流的基类。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-音频流的基类。音频流用于播放音效和音乐，支持 WAV（通过 :ref:`AudioStreamWAV<class_AudioStreamWAV>`\ ）和 Ogg（通过 :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`\ ）文件格式。
+Base class for audio streams.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`音频流 <../tutorials/audio/audio_streams>`
+Base class for audio streams. Audio streams are used for sound effects and music playback, and support WAV (via :ref:`AudioStreamWAV<class_AudioStreamWAV>`) and Ogg (via :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`) file formats.
 
-- `音频生成器演示 <https://godotengine.org/asset-library/asset/2759>`__
+.. rst-class:: classref-introduction-group
 
-- `音频麦克风录音演示 <https://godotengine.org/asset-library/asset/2760>`__
+Tutorials
+---------
 
-- `音频频谱可视化演示 <https://godotengine.org/asset-library/asset/2762>`__
+- :doc:`Audio streams <../tutorials/audio/audio_streams>`
+
+- `Audio Generator Demo <https://godotengine.org/asset-library/asset/2759>`__
+
+- `Audio Microphone Record Demo <https://godotengine.org/asset-library/asset/2760>`__
+
+- `Audio Spectrum Visualizer Demo <https://godotengine.org/asset-library/asset/2762>`__
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -79,8 +79,8 @@ AudioStream
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_AudioStream_signal_parameter_list_changed:
 
@@ -88,7 +88,7 @@ AudioStream
 
 **parameter_list_changed**\ (\ ) :ref:`🔗<class_AudioStream_signal_parameter_list_changed>`
 
-当参数列表改变时被发出以通知的信号。
+Signal to be emitted to notify when the parameter list changed.
 
 .. rst-class:: classref-section-separator
 
@@ -96,8 +96,8 @@ AudioStream
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_AudioStream_private_method__get_bar_beats:
 
@@ -105,7 +105,7 @@ AudioStream
 
 :ref:`int<class_int>` **_get_bar_beats**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioStream_private_method__get_bar_beats>`
 
-覆盖该方法，返回音频流的节拍数。
+Override this method to return the bar beats of this stream.
 
 .. rst-class:: classref-item-separator
 
@@ -117,9 +117,9 @@ AudioStream
 
 :ref:`int<class_int>` **_get_beat_count**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioStream_private_method__get_beat_count>`
 
-可覆盖的方法。应返回该音频流的总节拍数。由引擎用来确定每个节拍的位置。
+Overridable method. Should return the total number of beats of this audio stream. Used by the engine to determine the position of every beat.
 
-理想情况下，返回值应基于流的采样率（例如，\ :ref:`AudioStreamWAV.mix_rate<class_AudioStreamWAV_property_mix_rate>`\ ）。
+Ideally, the returned value should be based off the stream's sample rate (:ref:`AudioStreamWAV.mix_rate<class_AudioStreamWAV_property_mix_rate>`, for example).
 
 .. rst-class:: classref-item-separator
 
@@ -131,9 +131,9 @@ AudioStream
 
 :ref:`float<class_float>` **_get_bpm**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioStream_private_method__get_bpm>`
 
-可覆盖的方法。应返回该音频流的节奏，以每分钟节拍数（BPM）为单位。由引擎用来确定每个节拍的位置。
+Overridable method. Should return the tempo of this audio stream, in beats per minute (BPM). Used by the engine to determine the position of every beat.
 
-理想情况下，返回值应基于流的采样率（例如，\ :ref:`AudioStreamWAV.mix_rate<class_AudioStreamWAV_property_mix_rate>`\ ）。
+Ideally, the returned value should be based off the stream's sample rate (:ref:`AudioStreamWAV.mix_rate<class_AudioStreamWAV_property_mix_rate>`, for example).
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ AudioStream
 
 :ref:`float<class_float>` **_get_length**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioStream_private_method__get_length>`
 
-覆盖此方法以自定义 :ref:`get_length()<class_AudioStream_method_get_length>` 所返回的值，应该返回这个音频流的长度，单位为秒。
+Override this method to customize the returned value of :ref:`get_length()<class_AudioStream_method_get_length>`. Should return the length of this audio stream, in seconds.
 
 .. rst-class:: classref-item-separator
 
@@ -157,7 +157,7 @@ AudioStream
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_get_parameter_list**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioStream_private_method__get_parameter_list>`
 
-返回该流的可控制参数。该数组包含具有属性信息描述格式的字典（请参阅 :ref:`Object.get_property_list()<class_Object_method_get_property_list>`\ ）。此外，必须将该参数的默认值添加到 “default_value” 字段中的每个字典中。
+Return the controllable parameters of this stream. This array contains dictionaries with a property info description format (see :ref:`Object.get_property_list()<class_Object_method_get_property_list>`). Additionally, the default value for this parameter must be added tho each dictionary in "default_value" field.
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ AudioStream
 
 :ref:`String<class_String>` **_get_stream_name**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioStream_private_method__get_stream_name>`
 
-覆盖该方法，以自定义分配给该音频流的名称。未被引擎使用。
+Override this method to customize the name assigned to this audio stream. Unused by the engine.
 
 .. rst-class:: classref-item-separator
 
@@ -181,9 +181,9 @@ AudioStream
 
 :ref:`Dictionary<class_Dictionary>` **_get_tags**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioStream_private_method__get_tags>`
 
-覆盖该方法，自定义音频流的标签。应当返回字符串构成的 :ref:`Dictionary<class_Dictionary>`\ ，标签为键，对应的内容为值。
+Override this method to customize the tags for this audio stream. Should return a :ref:`Dictionary<class_Dictionary>` of strings with the tag as the key and its content as the value.
 
-常用标签包括标题 ``title``\ 、艺术家 ``artist``\ 、专辑 ``album``\ 、音轨号 ``tracknumber``\ 、日期 ``date``\ 。
+Commonly used tags include ``title``, ``artist``, ``album``, ``tracknumber``, and ``date``.
 
 .. rst-class:: classref-item-separator
 
@@ -195,7 +195,7 @@ AudioStream
 
 :ref:`bool<class_bool>` **_has_loop**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioStream_private_method__has_loop>`
 
-覆盖该方法，如果音频流中存在循环，则返回 ``true``\ 。
+Override this method to return ``true`` if this stream has a loop.
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ AudioStream
 
 :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` **_instantiate_playback**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_AudioStream_private_method__instantiate_playback>`
 
-覆盖该方法可以自定义 :ref:`instantiate_playback()<class_AudioStream_method_instantiate_playback>` 的返回值。应该返回一个在播放流（例如通过 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`\ ）时创建的新的 :ref:`AudioStreamPlayback<class_AudioStreamPlayback>`\ 。
+Override this method to customize the returned value of :ref:`instantiate_playback()<class_AudioStream_method_instantiate_playback>`. Should return a new :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` created when the stream is played (such as by an :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`).
 
 .. rst-class:: classref-item-separator
 
@@ -219,7 +219,7 @@ AudioStream
 
 :ref:`bool<class_bool>` **_is_monophonic**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioStream_private_method__is_monophonic>`
 
-覆盖该方法以自定义 :ref:`is_monophonic()<class_AudioStream_method_is_monophonic>` 的返回值。如果该音频流仅支持一个通道，则应返回 ``true``\ 。
+Override this method to customize the returned value of :ref:`is_monophonic()<class_AudioStream_method_is_monophonic>`. Should return ``true`` if this audio stream only supports one channel.
 
 .. rst-class:: classref-item-separator
 
@@ -231,9 +231,9 @@ AudioStream
 
 :ref:`bool<class_bool>` **can_be_sampled**\ (\ ) |const| :ref:`🔗<class_AudioStream_method_can_be_sampled>`
 
-**实验性：** 未来版本中可能会修改或移除该方法。
+**Experimental:** This method may be changed or removed in future versions.
 
-返回当前 **AudioStream** 是否可以用作样本。仅可对静态流进行采样。
+Returns if the current **AudioStream** can be used as a sample. Only static streams can be sampled.
 
 .. rst-class:: classref-item-separator
 
@@ -245,9 +245,9 @@ AudioStream
 
 :ref:`AudioSample<class_AudioSample>` **generate_sample**\ (\ ) |const| :ref:`🔗<class_AudioStream_method_generate_sample>`
 
-**实验性：** 未来版本中可能会修改或移除该方法。
+**Experimental:** This method may be changed or removed in future versions.
 
-根据当前流生成 :ref:`AudioSample<class_AudioSample>`\ 。
+Generates an :ref:`AudioSample<class_AudioSample>` based on the current stream.
 
 .. rst-class:: classref-item-separator
 
@@ -259,7 +259,7 @@ AudioStream
 
 :ref:`float<class_float>` **get_length**\ (\ ) |const| :ref:`🔗<class_AudioStream_method_get_length>`
 
-返回音频流的长度，单位为秒。如果是 :ref:`AudioStreamRandomizer<class_AudioStreamRandomizer>`\ ，则返回最近一次播放的音频流的长度。如果音频流的长度无限（如 :ref:`AudioStreamGenerator<class_AudioStreamGenerator>` 和 :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`\ ）则返回 ``0.0``\ 。
+Returns the length of the audio stream in seconds. If this stream is an :ref:`AudioStreamRandomizer<class_AudioStreamRandomizer>`, returns the length of the last played stream. If this stream has an indefinite length (such as for :ref:`AudioStreamGenerator<class_AudioStreamGenerator>` and :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`), returns ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -271,7 +271,7 @@ AudioStream
 
 :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` **instantiate_playback**\ (\ ) :ref:`🔗<class_AudioStream_method_instantiate_playback>`
 
-返回一个新创建的 :ref:`AudioStreamPlayback<class_AudioStreamPlayback>`\ ，用于播放该音频流。当想要扩展 :ref:`_instantiate_playback()<class_AudioStream_private_method__instantiate_playback>`\ ，但从一个内部持有的 AudioStream 子资源调用 :ref:`instantiate_playback()<class_AudioStream_method_instantiate_playback>` 时很有用。在 ``AudioStreamRandomPitch::instantiate_playback`` 的源代码中可以找到这方面的示例。
+Returns a newly created :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` intended to play this audio stream. Useful for when you want to extend :ref:`_instantiate_playback()<class_AudioStream_private_method__instantiate_playback>` but call :ref:`instantiate_playback()<class_AudioStream_method_instantiate_playback>` from an internally held AudioStream subresource. An example of this can be found in the source code for ``AudioStreamRandomPitch::instantiate_playback``.
 
 .. rst-class:: classref-item-separator
 
@@ -283,7 +283,7 @@ AudioStream
 
 :ref:`bool<class_bool>` **is_meta_stream**\ (\ ) |const| :ref:`🔗<class_AudioStream_method_is_meta_stream>`
 
-如果该流是其他流的集合，则返回 ``true``\ ，否则返回 ``false``\ 。
+Returns ``true`` if the stream is a collection of other streams, ``false`` otherwise.
 
 .. rst-class:: classref-item-separator
 
@@ -295,14 +295,14 @@ AudioStream
 
 :ref:`bool<class_bool>` **is_monophonic**\ (\ ) |const| :ref:`🔗<class_AudioStream_method_is_monophonic>`
 
-如果该音频流仅支持一个通道（\ *单声道*\ ），则返回 ``true``\ ；如果音频流支持两个或多个通道（\ *复调*\ ），则返回 ``false``\ 。
+Returns ``true`` if this audio stream only supports one channel (*monophony*), or ``false`` if the audio stream supports two or more channels (*polyphony*).
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

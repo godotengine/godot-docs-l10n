@@ -5,21 +5,21 @@
 LabelSettings
 =============
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-提供能夠在 :ref:`Label<class_Label>` 中自訂文字的常見設定。
+Provides common settings to customize the text in a :ref:`Label<class_Label>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-**LabelSettings** 是一種提供在 :ref:`Label<class_Label>` 中自訂文字的常見設定的資源。優先於 :ref:`Control.theme<class_Control_property_theme>` 中定義的屬性。該資源可以在多個標籤之間共用，可以隨時替換，因此可以方便、靈活地設定文字樣式。
+**LabelSettings** is a resource that provides common settings to customize the text in a :ref:`Label<class_Label>`. It will take priority over the properties defined in :ref:`Control.theme<class_Control_property_theme>`. The resource can be shared between multiple labels and changed on the fly, so it's convenient and flexible way to setup text style.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -52,8 +52,8 @@ LabelSettings
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -98,8 +98,8 @@ LabelSettings
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_LabelSettings_property_font:
 
@@ -112,7 +112,7 @@ LabelSettings
 - |void| **set_font**\ (\ value\: :ref:`Font<class_Font>`\ )
 - :ref:`Font<class_Font>` **get_font**\ (\ )
 
-文字使用的 :ref:`Font<class_Font>`\ 。
+:ref:`Font<class_Font>` used for the text.
 
 .. rst-class:: classref-item-separator
 
@@ -129,7 +129,7 @@ LabelSettings
 - |void| **set_font_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_font_color**\ (\ )
 
-文字的顏色。
+Color of the text.
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +146,7 @@ LabelSettings
 - |void| **set_font_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_font_size**\ (\ )
 
-文字的大小。
+Size of the text.
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_outline_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_outline_color**\ (\ )
 
-輪廓的顏色。
+The color of the outline.
 
 .. rst-class:: classref-item-separator
 
@@ -197,7 +197,7 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_outline_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_outline_size**\ (\ )
 
-文字輪廓大小。
+Text outline size.
 
 .. rst-class:: classref-item-separator
 
@@ -231,7 +231,7 @@ Vertical space between paragraphs. Added on top of :ref:`line_spacing<class_Labe
 - |void| **set_shadow_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_shadow_color**\ (\ )
 
-陰影效果的顏色。如果 Alpha 為 ``0`` ，則不會繪製陰影。
+Color of the shadow effect. If alpha is ``0``, no shadow will be drawn.
 
 .. rst-class:: classref-item-separator
 
@@ -248,7 +248,7 @@ Vertical space between paragraphs. Added on top of :ref:`line_spacing<class_Labe
 - |void| **set_shadow_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_shadow_offset**\ (\ )
 
-陰影效果的偏移，單位為圖元。
+Offset of the shadow effect, in pixels.
 
 .. rst-class:: classref-item-separator
 
@@ -265,7 +265,7 @@ Vertical space between paragraphs. Added on top of :ref:`line_spacing<class_Labe
 - |void| **set_shadow_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_shadow_size**\ (\ )
 
-陰影效果的大小。
+Size of the shadow effect.
 
 .. rst-class:: classref-item-separator
 
@@ -307,8 +307,8 @@ The number of stacked shadows.
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_LabelSettings_method_add_stacked_outline:
 
@@ -498,12 +498,12 @@ Sets the offset of the stacked shadow identified by the given ``index`` to ``off
 
 Sets the outline size of the stacked shadow identified by the given ``index`` to ``size``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

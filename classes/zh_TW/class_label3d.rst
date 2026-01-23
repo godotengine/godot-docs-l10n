@@ -8,28 +8,28 @@
 Label3D
 =======
 
-**繼承：** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-用於在 3D 空間顯示純文字的節點。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-用於在 3D 空間顯示純文字的節點。通過調整該節點的各種屬性，可以配置文字外觀、是否面朝相機等功能。
+A node for displaying plain text in 3D space.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`3D 文字 <../tutorials/3d/3d_text>`
+A node for displaying plain text in 3D space. By adjusting various properties of this node, you can configure things such as the text's appearance and whether it always faces the camera.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`3D text <../tutorials/3d/3d_text>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -108,8 +108,8 @@ Label3D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -128,8 +128,8 @@ Label3D
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_Label3D_DrawFlags:
 
@@ -143,7 +143,7 @@ enum **DrawFlags**: :ref:`🔗<enum_Label3D_DrawFlags>`
 
 :ref:`DrawFlags<enum_Label3D_DrawFlags>` **FLAG_SHADED** = ``0``
 
-如果打開，環境中的燈光會影響該標籤。
+If set, lights in the environment affect the label.
 
 .. _class_Label3D_constant_FLAG_DOUBLE_SIDED:
 
@@ -151,7 +151,7 @@ enum **DrawFlags**: :ref:`🔗<enum_Label3D_DrawFlags>`
 
 :ref:`DrawFlags<enum_Label3D_DrawFlags>` **FLAG_DOUBLE_SIDED** = ``1``
 
-如果打開，從後面也可以看到文字。如果不打開，從後面看該文字是不可見的。
+If set, text can be seen from the back as well. If not, the text is invisible when looking at it from behind.
 
 .. _class_Label3D_constant_FLAG_DISABLE_DEPTH_TEST:
 
@@ -159,7 +159,7 @@ enum **DrawFlags**: :ref:`🔗<enum_Label3D_DrawFlags>`
 
 :ref:`DrawFlags<enum_Label3D_DrawFlags>` **FLAG_DISABLE_DEPTH_TEST** = ``2``
 
-禁用深度測試，所以這個物件被畫在所有其他物件的上面。但是，在繪製順序中，在它之後繪製的物件可能會覆蓋它。
+Disables the depth test, so this object is drawn on top of all others. However, objects drawn after it in the draw order may cover it.
 
 .. _class_Label3D_constant_FLAG_FIXED_SIZE:
 
@@ -167,7 +167,7 @@ enum **DrawFlags**: :ref:`🔗<enum_Label3D_DrawFlags>`
 
 :ref:`DrawFlags<enum_Label3D_DrawFlags>` **FLAG_FIXED_SIZE** = ``3``
 
-標籤會根據深度進行縮放，從而在螢幕上始終以相同的大小顯示。
+Label is scaled by depth so that it always appears the same size on screen.
 
 .. _class_Label3D_constant_FLAG_MAX:
 
@@ -175,7 +175,7 @@ enum **DrawFlags**: :ref:`🔗<enum_Label3D_DrawFlags>`
 
 :ref:`DrawFlags<enum_Label3D_DrawFlags>` **FLAG_MAX** = ``4``
 
-代表 :ref:`DrawFlags<enum_Label3D_DrawFlags>` 列舉的大小。
+Represents the size of the :ref:`DrawFlags<enum_Label3D_DrawFlags>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -193,7 +193,7 @@ enum **AlphaCutMode**: :ref:`🔗<enum_Label3D_AlphaCutMode>`
 
 :ref:`AlphaCutMode<enum_Label3D_AlphaCutMode>` **ALPHA_CUT_DISABLED** = ``0``
 
-該模式會執行標準的 Alpha 混合。它可以顯示半透明區域，但當多個透明材質重疊時，可能會出現透明度排序問題。\ :ref:`GeometryInstance3D.cast_shadow<class_GeometryInstance3D_property_cast_shadow>` 在使用該透明模式時無效；\ **Label3D** 永遠不會投射陰影。
+This mode performs standard alpha blending. It can display translucent areas, but transparency sorting issues may be visible when multiple transparent materials are overlapping. :ref:`GeometryInstance3D.cast_shadow<class_GeometryInstance3D_property_cast_shadow>` has no effect when this transparency mode is used; the **Label3D** will never cast shadows.
 
 .. _class_Label3D_constant_ALPHA_CUT_DISCARD:
 
@@ -201,11 +201,11 @@ enum **AlphaCutMode**: :ref:`🔗<enum_Label3D_AlphaCutMode>`
 
 :ref:`AlphaCutMode<enum_Label3D_AlphaCutMode>` **ALPHA_CUT_DISCARD** = ``1``
 
-該模式僅允許完全透明、或完全不透明的圖元。除非啟用了某種形式的螢幕空間抗鋸齒（請參閱 :ref:`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`\ ），否則會看到粗糙的邊緣。該模式也被稱為 *Alpha 測試* 或 *1 位透明度*\ 。
+This mode only allows fully transparent or fully opaque pixels. Harsh edges will be visible unless some form of screen-space antialiasing is enabled (see :ref:`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`). This mode is also known as *alpha testing* or *1-bit transparency*.
 
-\ **注意：**\ 該模式可能會出現抗鋸齒字形和輪廓問題，請嘗試調整 :ref:`alpha_scissor_threshold<class_Label3D_property_alpha_scissor_threshold>` 或使用 MSDF 字形。
+\ **Note:** This mode might have issues with anti-aliased fonts and outlines, try adjusting :ref:`alpha_scissor_threshold<class_Label3D_property_alpha_scissor_threshold>` or using MSDF font.
 
-\ **注意：**\ 當使用具有重疊字形的文字（例如草書）時，該模式可能會在正文和輪廓之間，出現透明度排序問題。
+\ **Note:** When using text with overlapping glyphs (e.g., cursive scripts), this mode might have transparency sorting issues between the main text and the outline.
 
 .. _class_Label3D_constant_ALPHA_CUT_OPAQUE_PREPASS:
 
@@ -213,9 +213,9 @@ enum **AlphaCutMode**: :ref:`🔗<enum_Label3D_AlphaCutMode>`
 
 :ref:`AlphaCutMode<enum_Label3D_AlphaCutMode>` **ALPHA_CUT_OPAQUE_PREPASS** = ``2``
 
-這個模式會在深度預處理時繪製完全不透明的圖元。比 :ref:`ALPHA_CUT_DISABLED<class_Label3D_constant_ALPHA_CUT_DISABLED>` 或 :ref:`ALPHA_CUT_DISCARD<class_Label3D_constant_ALPHA_CUT_DISCARD>` 要慢，但能夠對半透明區域和平滑邊緣進行正確的排序。
+This mode draws fully opaque pixels in the depth prepass. This is slower than :ref:`ALPHA_CUT_DISABLED<class_Label3D_constant_ALPHA_CUT_DISABLED>` or :ref:`ALPHA_CUT_DISCARD<class_Label3D_constant_ALPHA_CUT_DISCARD>`, but it allows displaying translucent areas and smooth edges while using proper sorting.
 
-\ **注意：**\ 文字中存在重疊的字形時（例如手寫體），這個模式可能會造成主文字和輪廓的透明度排序問題。
+\ **Note:** When using text with overlapping glyphs (e.g., cursive scripts), this mode might have transparency sorting issues between the main text and the outline.
 
 .. _class_Label3D_constant_ALPHA_CUT_HASH:
 
@@ -223,7 +223,7 @@ enum **AlphaCutMode**: :ref:`🔗<enum_Label3D_AlphaCutMode>`
 
 :ref:`AlphaCutMode<enum_Label3D_AlphaCutMode>` **ALPHA_CUT_HASH** = ``3``
 
-該模式繪製時會截斷所有低於空間確定性閾值的值，其餘值將保持不透明。
+This mode draws cuts off all values below a spatially-deterministic threshold, the rest will remain opaque.
 
 .. rst-class:: classref-section-separator
 
@@ -231,8 +231,8 @@ enum **AlphaCutMode**: :ref:`🔗<enum_Label3D_AlphaCutMode>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_Label3D_property_alpha_antialiasing_edge:
 
@@ -245,7 +245,7 @@ enum **AlphaCutMode**: :ref:`🔗<enum_Label3D_AlphaCutMode>`
 - |void| **set_alpha_antialiasing_edge**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_alpha_antialiasing_edge**\ (\ )
 
-在 Alpha 通道上套用抗鋸齒的臨界值。
+Threshold at which antialiasing will be applied on the alpha channel.
 
 .. rst-class:: classref-item-separator
 
@@ -262,7 +262,7 @@ enum **AlphaCutMode**: :ref:`🔗<enum_Label3D_AlphaCutMode>`
 - |void| **set_alpha_antialiasing**\ (\ value\: :ref:`AlphaAntiAliasing<enum_BaseMaterial3D_AlphaAntiAliasing>`\ )
 - :ref:`AlphaAntiAliasing<enum_BaseMaterial3D_AlphaAntiAliasing>` **get_alpha_antialiasing**\ (\ )
 
-要套用的 Alpha 抗鋸齒類型。
+The type of alpha antialiasing to apply.
 
 .. rst-class:: classref-item-separator
 
@@ -296,7 +296,7 @@ The alpha cutting mode to use for the sprite.
 - |void| **set_alpha_hash_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_alpha_hash_scale**\ (\ )
 
-Alpha Hash 的雜湊比例，建議值介於 ``0`` 與 ``2`` 之間。
+The hashing scale for Alpha Hash. Recommended values between ``0`` and ``2``.
 
 .. rst-class:: classref-item-separator
 
@@ -313,7 +313,7 @@ Alpha Hash 的雜湊比例，建議值介於 ``0`` 與 ``2`` 之間。
 - |void| **set_alpha_scissor_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_alpha_scissor_threshold**\ (\ )
 
-Alpha 裁剪丟棄數值的閾值。
+Threshold at which the alpha scissor will discard values.
 
 .. rst-class:: classref-item-separator
 
@@ -381,7 +381,7 @@ The billboard mode to use for the label.
 - |void| **set_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_Label3D_DrawFlags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_Label3D_DrawFlags>`\ ) |const|
 
-如果為 ``true``\ ，則從後面也可以看到文字，如果為 ``false``\ ，則從後面看它是不可見的。
+If ``true``, text can be seen from the back as well, if ``false``, it is invisible when looking at it from behind.
 
 .. rst-class:: classref-item-separator
 
@@ -415,7 +415,7 @@ If ``true``, the label is rendered at the same size regardless of distance. The 
 - |void| **set_font**\ (\ value\: :ref:`Font<class_Font>`\ )
 - :ref:`Font<class_Font>` **get_font**\ (\ )
 
-用於顯示文字的字形配置。
+Font configuration used to display text.
 
 .. rst-class:: classref-item-separator
 
@@ -432,9 +432,9 @@ If ``true``, the label is rendered at the same size regardless of distance. The 
 - |void| **set_font_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_font_size**\ (\ )
 
-**Label3D** 文字的字形大小。為了讓字形在近距離時看起來更細膩，可增加 :ref:`font_size<class_Label3D_property_font_size>`\ ，同時減小 :ref:`pixel_size<class_Label3D_property_pixel_size>`\ 。
+Font size of the **Label3D**'s text. To make the font look more detailed when up close, increase :ref:`font_size<class_Label3D_property_font_size>` while decreasing :ref:`pixel_size<class_Label3D_property_pixel_size>` at the same time.
 
-較大的字形大小需要更多時間來算繪新字元，這可能會導致在遊戲過程中卡頓。
+Higher font sizes require more time to render new characters, which can cause stuttering during gameplay.
 
 .. rst-class:: classref-item-separator
 
@@ -519,7 +519,7 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_modulate**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_modulate**\ (\ )
 
-該 **Label3D** 的文字顏色 :ref:`Color<class_Color>`\ 。
+Text :ref:`Color<class_Color>` of the **Label3D**.
 
 .. rst-class:: classref-item-separator
 
@@ -536,7 +536,7 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_Label3D_DrawFlags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_Label3D_DrawFlags>`\ ) |const|
 
-若設為 ``true``\ ，將停用深度測試，物件依繪製順序顯示。
+If ``true``, depth testing is disabled and the object will be drawn in render order.
 
 .. rst-class:: classref-item-separator
 
@@ -553,7 +553,7 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset**\ (\ )
 
-文字繪製偏移（單位為圖元）。
+The text drawing offset (in pixels).
 
 .. rst-class:: classref-item-separator
 
@@ -570,7 +570,7 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_outline_modulate**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_outline_modulate**\ (\ )
 
-文字輪廓的色調。
+The tint of text outline.
 
 .. rst-class:: classref-item-separator
 
@@ -587,11 +587,11 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_outline_render_priority**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_outline_render_priority**\ (\ )
 
-設定文字輪廓的算繪優先順序。優先順序高的物體將被排序在優先順序低的物體前面。
+Sets the render priority for the text outline. Higher priority objects will be sorted in front of lower priority objects.
 
-\ **注意：**\ 僅在 :ref:`alpha_cut<class_Label3D_property_alpha_cut>` 為 :ref:`ALPHA_CUT_DISABLED<class_Label3D_constant_ALPHA_CUT_DISABLED>`\ （預設值）時適用。
+\ **Note:** This only applies if :ref:`alpha_cut<class_Label3D_property_alpha_cut>` is set to :ref:`ALPHA_CUT_DISABLED<class_Label3D_constant_ALPHA_CUT_DISABLED>` (default value).
 
-\ **注意：**\ 僅適用於透明物體的排序。這不會影響透明物體相對於不透明物體的排序方式。這是因為不透明物件不被排序，而透明物件則從後往前排序（取決於優先順序）。
+\ **Note:** This only applies to sorting of transparent objects. This will not impact how transparent objects are sorted relative to opaque objects. This is because opaque objects are not sorted, while transparent objects are sorted from back to front (subject to priority).
 
 .. rst-class:: classref-item-separator
 
@@ -608,7 +608,7 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_outline_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_outline_size**\ (\ )
 
-文字輪廓大小。
+Text outline size.
 
 .. rst-class:: classref-item-separator
 
@@ -625,7 +625,7 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_pixel_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pixel_size**\ (\ )
 
-標籤中一個圖元寬度對應縮放至的 3D 大小。要讓字形在較近距離時也能夠看到細節，請在減小 :ref:`pixel_size<class_Label3D_property_pixel_size>` 的同時增大 :ref:`font_size<class_Label3D_property_font_size>`\ 。
+The size of one pixel's width on the label to scale it in 3D. To make the font look more detailed when up close, increase :ref:`font_size<class_Label3D_property_font_size>` while decreasing :ref:`pixel_size<class_Label3D_property_pixel_size>` at the same time.
 
 .. rst-class:: classref-item-separator
 
@@ -642,11 +642,11 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_render_priority**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_render_priority**\ (\ )
 
-設定文字的算繪優先順序。優先順序高的物體將被排序在優先順序低的物體前面。
+Sets the render priority for the text. Higher priority objects will be sorted in front of lower priority objects.
 
-\ **注意：**\ 僅在 :ref:`alpha_cut<class_Label3D_property_alpha_cut>` 為 :ref:`ALPHA_CUT_DISABLED<class_Label3D_constant_ALPHA_CUT_DISABLED>`\ （預設值）時適用。
+\ **Note:** This only applies if :ref:`alpha_cut<class_Label3D_property_alpha_cut>` is set to :ref:`ALPHA_CUT_DISABLED<class_Label3D_constant_ALPHA_CUT_DISABLED>` (default value).
 
-\ **注意：**\ 僅適用於透明物體的排序。這不會影響透明物體相對於不透明物體的排序方式。這是因為不透明物件不被排序，而透明物件則從後往前排序（取決於優先順序）。
+\ **Note:** This only applies to sorting of transparent objects. This will not impact how transparent objects are sorted relative to opaque objects. This is because opaque objects are not sorted, while transparent objects are sorted from back to front (subject to priority).
 
 .. rst-class:: classref-item-separator
 
@@ -663,7 +663,7 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_Label3D_DrawFlags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_Label3D_DrawFlags>`\ ) |const|
 
-如果為 ``true``\ ，則 :ref:`Environment<class_Environment>` 中的 :ref:`Light3D<class_Light3D>` 會影響該標籤。
+If ``true``, the :ref:`Light3D<class_Light3D>` in the :ref:`Environment<class_Environment>` has effects on the label.
 
 .. rst-class:: classref-item-separator
 
@@ -680,7 +680,7 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_structured_text_bidi_override**\ (\ value\: :ref:`StructuredTextParser<enum_TextServer_StructuredTextParser>`\ )
 - :ref:`StructuredTextParser<enum_TextServer_StructuredTextParser>` **get_structured_text_bidi_override**\ (\ )
 
-為結構化文字設定 BiDi 演算法覆蓋。
+Set BiDi algorithm override for the structured text.
 
 .. rst-class:: classref-item-separator
 
@@ -697,7 +697,7 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_structured_text_bidi_override_options**\ (\ value\: :ref:`Array<class_Array>`\ )
 - :ref:`Array<class_Array>` **get_structured_text_bidi_override_options**\ (\ )
 
-設定 BiDi 覆蓋的附加選項。
+Set additional options for BiDi override.
 
 .. rst-class:: classref-item-separator
 
@@ -714,7 +714,7 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_text**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_text**\ (\ )
 
-要在螢幕上顯示的文字。
+The text to display on screen.
 
 .. rst-class:: classref-item-separator
 
@@ -731,7 +731,7 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_text_direction**\ (\ value\: :ref:`Direction<enum_TextServer_Direction>`\ )
 - :ref:`Direction<enum_TextServer_Direction>` **get_text_direction**\ (\ )
 
-基礎文字書寫方向。
+Base text writing direction.
 
 .. rst-class:: classref-item-separator
 
@@ -765,7 +765,7 @@ Filter flags for the texture.
 - |void| **set_uppercase**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_uppercase**\ (\ )
 
-如果為 ``true``\ ，所有文字都將顯示為大寫。
+If ``true``, all the text displays as UPPERCASE.
 
 .. rst-class:: classref-item-separator
 
@@ -799,7 +799,7 @@ Controls the text's vertical alignment. Supports top, center, and bottom.
 - |void| **set_width**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_width**\ (\ )
 
-文字寬度（單位為圖元），用於自動換行和填充對齊。
+Text width (in pixels), used for autowrap and fill alignment.
 
 .. rst-class:: classref-section-separator
 
@@ -807,8 +807,8 @@ Controls the text's vertical alignment. Supports top, center, and bottom.
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_Label3D_method_generate_triangle_mesh:
 
@@ -816,7 +816,7 @@ Controls the text's vertical alignment. Supports top, center, and bottom.
 
 :ref:`TriangleMesh<class_TriangleMesh>` **generate_triangle_mesh**\ (\ ) |const| :ref:`🔗<class_Label3D_method_generate_triangle_mesh>`
 
-返回使用該標籤的頂點組成的 :ref:`TriangleMesh<class_TriangleMesh>`\ ，遵循目前的配置（例如 :ref:`pixel_size<class_Label3D_property_pixel_size>`\ ）。
+Returns a :ref:`TriangleMesh<class_TriangleMesh>` with the label's vertices following its current configuration (such as its :ref:`pixel_size<class_Label3D_property_pixel_size>`).
 
 .. rst-class:: classref-item-separator
 
@@ -828,7 +828,7 @@ Controls the text's vertical alignment. Supports top, center, and bottom.
 
 :ref:`bool<class_bool>` **get_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_Label3D_DrawFlags>`\ ) |const| :ref:`🔗<class_Label3D_method_get_draw_flag>`
 
-返回指定旗標的值。
+Returns the value of the specified flag.
 
 .. rst-class:: classref-item-separator
 
@@ -842,12 +842,12 @@ Controls the text's vertical alignment. Supports top, center, and bottom.
 
 If ``true``, the specified ``flag`` will be enabled.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

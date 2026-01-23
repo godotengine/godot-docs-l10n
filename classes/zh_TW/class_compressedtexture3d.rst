@@ -5,25 +5,25 @@
 CompressedTexture3D
 ===================
 
-**繼承：** :ref:`Texture3D<class_Texture3D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Texture3D<class_Texture3D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-三維紋理，可選擇壓縮。
+Texture with 3 dimensions, optionally compressed.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-**CompressedTexture3D** 是 :ref:`ImageTexture3D<class_ImageTexture3D>` 的 VRAM 壓縮對應物。\ **CompressedTexture3D** 檔案的檔案副檔名為 ``.ctex3d``\ 。這種檔案格式是 Godot 內部使用的；它是通過匯入系統匯入其他圖像格式建立的。
+**CompressedTexture3D** is the VRAM-compressed counterpart of :ref:`ImageTexture3D<class_ImageTexture3D>`. The file extension for **CompressedTexture3D** files is ``.ctex3d``. This file format is internal to Godot; it is created by importing other image formats with the import system.
 
-\ **CompressedTexture3D** 使用 VRAM 壓縮，這可以在算繪紋理時減少 GPU 的記憶體使用量。這也縮短了載入時間，因為與使用無失真壓縮的紋理相比，VRAM 壓縮的紋理載入速度更快。VRAM 壓縮會表現出明顯的偽影，並且它旨在用於 3D 算繪，而不是 2D。
+\ **CompressedTexture3D** uses VRAM compression, which allows to reduce memory usage on the GPU when rendering the texture. This also improves loading times, as VRAM-compressed textures are faster to load compared to textures using lossless compression. VRAM compression can exhibit noticeable artifacts and is intended to be used for 3D rendering, not 2D.
 
-有關 3D 紋理的一般描述，請參閱 :ref:`Texture3D<class_Texture3D>`\ 。
+See :ref:`Texture3D<class_Texture3D>` for a general description of 3D textures.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ CompressedTexture3D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ CompressedTexture3D
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_CompressedTexture3D_property_load_path:
 
@@ -64,7 +64,7 @@ CompressedTexture3D
 - :ref:`Error<enum_@GlobalScope_Error>` **load**\ (\ path\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_load_path**\ (\ )
 
-該 **CompressedTexture3D** 的檔路徑，指向 ``.ctex3d`` 檔案。
+The **CompressedTexture3D**'s file path to a ``.ctex3d`` file.
 
 .. rst-class:: classref-section-separator
 
@@ -72,8 +72,8 @@ CompressedTexture3D
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_CompressedTexture3D_method_load:
 
@@ -81,14 +81,14 @@ CompressedTexture3D
 
 :ref:`Error<enum_@GlobalScope_Error>` **load**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_CompressedTexture3D_method_load>`
 
-從指定的路徑 ``path`` 載入紋理。
+Loads the texture from the specified ``path``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

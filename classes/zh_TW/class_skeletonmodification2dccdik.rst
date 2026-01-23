@@ -5,29 +5,29 @@
 SkeletonModification2DCCDIK
 ===========================
 
-**實驗性：** This class may be changed or removed in future versions.
+**Experimental:** This class may be changed or removed in future versions.
 
-**繼承：** :ref:`SkeletonModification2D<class_SkeletonModification2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`SkeletonModification2D<class_SkeletonModification2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-使用 CCDIK 操縱一系列骨骼到達某個 2D 目標的修改器。
+A modification that uses CCDIK to manipulate a series of bones to reach a target in 2D.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-這種 :ref:`SkeletonModification2D<class_SkeletonModification2D>` 使用的是名為迴圈座標下降逆向運動學（Cyclic Coordinate Descent Inverse Kinematics）的演算法，即 CCDIK，能夠對 :ref:`Skeleton2D<class_Skeleton2D>` 中的一條骨骼鏈進行操作，從而抵達指定的目標。
+This :ref:`SkeletonModification2D<class_SkeletonModification2D>` uses an algorithm called Cyclic Coordinate Descent Inverse Kinematics, or CCDIK, to manipulate a chain of bones in a :ref:`Skeleton2D<class_Skeleton2D>` so it reaches a defined target.
 
-CCDIK 的工作原理是讓一組骨骼圍繞單一軸旋轉，這組骨骼通常稱作“骨骼鏈”。每根骨骼的尖端都會轉向目標（預設），這樣整條骨骼鏈就能夠正確旋轉，從而抵達目標。因為這些骨骼都只圍繞單一軸進行旋轉，CCDIK 看起來\ *能夠*\ 比其他 IK 解算器更加機械。
+CCDIK works by rotating a set of bones, typically called a "bone chain", on a single axis. Each bone is rotated to face the target from the tip (by default), which over a chain of bones allow it to rotate properly to reach the target. Because the bones only rotate on a single axis, CCDIK *can* look more robotic than other IK solvers.
 
-\ **注意：**\ CCDIK 修改器具有關節屬性 ``ccdik_joints``\ ，裡面是存放 CCDIK 鏈中各個關節資料的資料物件。關節和骨骼是兩碼事！CCDIK 關節存放的是 CCDIK 所使用的骨骼鏈中每根骨骼所需的資料。
+\ **Note:** The CCDIK modifier has ``ccdik_joints``, which are the data objects that hold the data for each joint in the CCDIK chain. This is different from a bone! CCDIK joints hold the data needed for each bone in the bone chain used by CCDIK.
 
-CCDIK 還完全支援角度約束，能夠對求解過程進行更多控制。
+CCDIK also fully supports angle constraints, allowing for more control over how a solution is met.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ CCDIK 還完全支援角度約束，能夠對求解過程進行更多控制。
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -84,8 +84,8 @@ CCDIK 還完全支援角度約束，能夠對求解過程進行更多控制。
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_SkeletonModification2DCCDIK_property_ccdik_data_chain_length:
 
@@ -98,7 +98,7 @@ CCDIK 還完全支援角度約束，能夠對求解過程進行更多控制。
 - |void| **set_ccdik_data_chain_length**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_ccdik_data_chain_length**\ (\ )
 
-CCDIK 修改中 CCDIK 關節的數量。
+The number of CCDIK joints in the CCDIK modification.
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +115,7 @@ CCDIK 修改中 CCDIK 關節的數量。
 - |void| **set_target_node**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_target_node**\ (\ )
 
-作為 CCDIK 修改目標的節點的 NodePath。該節點是 CCDIK 鏈會嘗試將該骨骼鏈旋轉到的節點。
+The NodePath to the node that is the target for the CCDIK modification. This node is what the CCDIK chain will attempt to rotate the bone chain to.
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ CCDIK 修改中 CCDIK 關節的數量。
 - |void| **set_tip_node**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_tip_node**\ (\ )
 
-該 CCDIK 鏈的結束位置。通常，這應該是一個 :ref:`Bone2D<class_Bone2D>` 節點的一個子節點，被附加到 CCDIK 鏈中的最終 :ref:`Bone2D<class_Bone2D>` 上。
+The end position of the CCDIK chain. Typically, this should be a child of a :ref:`Bone2D<class_Bone2D>` node attached to the final :ref:`Bone2D<class_Bone2D>` in the CCDIK chain.
 
 .. rst-class:: classref-section-separator
 
@@ -140,8 +140,8 @@ CCDIK 修改中 CCDIK 關節的數量。
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_SkeletonModification2DCCDIK_method_get_ccdik_joint_bone2d_node:
 
@@ -149,7 +149,7 @@ CCDIK 修改中 CCDIK 關節的數量。
 
 :ref:`NodePath<class_NodePath>` **get_ccdik_joint_bone2d_node**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DCCDIK_method_get_ccdik_joint_bone2d_node>`
 
-返回分配給位於 ``joint_idx`` 的 CCDIK 關節的 :ref:`Bone2D<class_Bone2D>` 節點。
+Returns the :ref:`Bone2D<class_Bone2D>` node assigned to the CCDIK joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -161,7 +161,7 @@ CCDIK 修改中 CCDIK 關節的數量。
 
 :ref:`int<class_int>` **get_ccdik_joint_bone_index**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DCCDIK_method_get_ccdik_joint_bone_index>`
 
-返回分配給位於 ``joint_idx`` 的 CCDIK 關節的 :ref:`Bone2D<class_Bone2D>` 節點的索引。
+Returns the index of the :ref:`Bone2D<class_Bone2D>` node assigned to the CCDIK joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +173,7 @@ CCDIK 修改中 CCDIK 關節的數量。
 
 :ref:`bool<class_bool>` **get_ccdik_joint_constraint_angle_invert**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DCCDIK_method_get_ccdik_joint_constraint_angle_invert>`
 
-返回索引為 ``joint_idx`` 的 CCDIK 關節是否使用反向關節約束。詳見 :ref:`set_ccdik_joint_constraint_angle_invert()<class_SkeletonModification2DCCDIK_method_set_ccdik_joint_constraint_angle_invert>`\ 。
+Returns whether the CCDIK joint at ``joint_idx`` uses an inverted joint constraint. See :ref:`set_ccdik_joint_constraint_angle_invert()<class_SkeletonModification2DCCDIK_method_set_ccdik_joint_constraint_angle_invert>` for details.
 
 .. rst-class:: classref-item-separator
 
@@ -185,7 +185,7 @@ CCDIK 修改中 CCDIK 關節的數量。
 
 :ref:`float<class_float>` **get_ccdik_joint_constraint_angle_max**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DCCDIK_method_get_ccdik_joint_constraint_angle_max>`
 
-返回索引為 ``joint_idx`` 的關節的最大角約束。
+Returns the maximum angle constraint for the joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -197,7 +197,7 @@ CCDIK 修改中 CCDIK 關節的數量。
 
 :ref:`float<class_float>` **get_ccdik_joint_constraint_angle_min**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DCCDIK_method_get_ccdik_joint_constraint_angle_min>`
 
-返回索引為 ``joint_idx`` 的關節的最小角約束。
+Returns the minimum angle constraint for the joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +209,7 @@ CCDIK 修改中 CCDIK 關節的數量。
 
 :ref:`bool<class_bool>` **get_ccdik_joint_enable_constraint**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DCCDIK_method_get_ccdik_joint_enable_constraint>`
 
-返回索引為 ``joint_idx`` 的 CCDIK 關節是否啟用角度約束。
+Returns whether angle constraints on the CCDIK joint at ``joint_idx`` are enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -221,7 +221,7 @@ CCDIK 修改中 CCDIK 關節的數量。
 
 :ref:`bool<class_bool>` **get_ccdik_joint_rotate_from_joint**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DCCDIK_method_get_ccdik_joint_rotate_from_joint>`
 
-返回位於 ``joint_idx`` 的關節是從該關節旋轉，\ ``true``\ ，還是從尖端旋轉，\ ``false``\ 。預設是從尖端旋轉。
+Returns whether the joint at ``joint_idx`` is set to rotate from the joint, ``true``, or to rotate from the tip, ``false``. The default is to rotate from the tip.
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ CCDIK 修改中 CCDIK 關節的數量。
 
 |void| **set_ccdik_joint_bone2d_node**\ (\ joint_idx\: :ref:`int<class_int>`, bone2d_nodepath\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SkeletonModification2DCCDIK_method_set_ccdik_joint_bone2d_node>`
 
-設定分配給位於 ``joint_idx`` 的 CCDIK 關節的 :ref:`Bone2D<class_Bone2D>` 節點。
+Sets the :ref:`Bone2D<class_Bone2D>` node assigned to the CCDIK joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -245,7 +245,7 @@ CCDIK 修改中 CCDIK 關節的數量。
 
 |void| **set_ccdik_joint_bone_index**\ (\ joint_idx\: :ref:`int<class_int>`, bone_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SkeletonModification2DCCDIK_method_set_ccdik_joint_bone_index>`
 
-設定位於 ``joint_idx`` 的 CCDIK 關節的骨骼索引 ``joint_idx``\ 。可能時，還會根據所連結的骨架提供的資訊來更新 CCDIK 關節的 ``bone2d_node``\ 。
+Sets the bone index, ``bone_idx``, of the CCDIK joint at ``joint_idx``. When possible, this will also update the ``bone2d_node`` of the CCDIK joint based on data provided by the linked skeleton.
 
 .. rst-class:: classref-item-separator
 
@@ -257,9 +257,9 @@ CCDIK 修改中 CCDIK 關節的數量。
 
 |void| **set_ccdik_joint_constraint_angle_invert**\ (\ joint_idx\: :ref:`int<class_int>`, invert\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SkeletonModification2DCCDIK_method_set_ccdik_joint_constraint_angle_invert>`
 
-設定索引為 ``joint_idx`` 的 CCDIK 關節是否使用反向關節約束。
+Sets whether the CCDIK joint at ``joint_idx`` uses an inverted joint constraint.
 
-反向關節約束只會將該 CCDIK 關節的角度約束在輸入的最大最小角度範圍\ *之外*\ 。因此，它被稱為反向關節約束，因為它將關節約束在輸入值的外部。
+An inverted joint constraint only constraints the CCDIK joint to the angles *outside of* the inputted minimum and maximum angles. For this reason, it is referred to as an inverted joint constraint, as it constraints the joint to the outside of the inputted values.
 
 .. rst-class:: classref-item-separator
 
@@ -271,7 +271,7 @@ CCDIK 修改中 CCDIK 關節的數量。
 
 |void| **set_ccdik_joint_constraint_angle_max**\ (\ joint_idx\: :ref:`int<class_int>`, angle_max\: :ref:`float<class_float>`\ ) :ref:`🔗<class_SkeletonModification2DCCDIK_method_set_ccdik_joint_constraint_angle_max>`
 
-設定索引為 ``joint_idx`` 的關節的最大角約束。
+Sets the maximum angle constraint for the joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -283,7 +283,7 @@ CCDIK 修改中 CCDIK 關節的數量。
 
 |void| **set_ccdik_joint_constraint_angle_min**\ (\ joint_idx\: :ref:`int<class_int>`, angle_min\: :ref:`float<class_float>`\ ) :ref:`🔗<class_SkeletonModification2DCCDIK_method_set_ccdik_joint_constraint_angle_min>`
 
-設定索引為 ``joint_idx`` 的關節的最小角約束。
+Sets the minimum angle constraint for the joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -295,7 +295,7 @@ CCDIK 修改中 CCDIK 關節的數量。
 
 |void| **set_ccdik_joint_enable_constraint**\ (\ joint_idx\: :ref:`int<class_int>`, enable_constraint\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SkeletonModification2DCCDIK_method_set_ccdik_joint_enable_constraint>`
 
-決定是否啟用 ``joint_idx`` 處 CCDIK 關節上的角度約束。為 ``true`` 時將啟用約束，在求解時納入考慮範圍。
+Determines whether angle constraints on the CCDIK joint at ``joint_idx`` are enabled. When ``true``, constraints will be enabled and taken into account when solving.
 
 .. rst-class:: classref-item-separator
 
@@ -307,14 +307,14 @@ CCDIK 修改中 CCDIK 關節的數量。
 
 |void| **set_ccdik_joint_rotate_from_joint**\ (\ joint_idx\: :ref:`int<class_int>`, rotate_from_joint\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SkeletonModification2DCCDIK_method_set_ccdik_joint_rotate_from_joint>`
 
-設定位於 ``joint_idx`` 的關節是設為從關節旋轉，\ ``true``\ ，還是從尖端旋轉，\ ``false``\ 。
+Sets whether the joint at ``joint_idx`` is set to rotate from the joint, ``true``, or to rotate from the tip, ``false``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

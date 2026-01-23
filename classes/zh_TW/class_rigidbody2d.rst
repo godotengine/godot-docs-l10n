@@ -5,16 +5,16 @@
 RigidBody2D
 ===========
 
-**繼承：** :ref:`PhysicsBody2D<class_PhysicsBody2D>` **<** :ref:`CollisionObject2D<class_CollisionObject2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`PhysicsBody2D<class_PhysicsBody2D>` **<** :ref:`CollisionObject2D<class_CollisionObject2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`PhysicalBone2D<class_PhysicalBone2D>`
+**Inherited By:** :ref:`PhysicalBone2D<class_PhysicalBone2D>`
 
-由物理模擬進行移動的 2D 物理體。
+A 2D physics body that is moved by a physics simulation.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 **RigidBody2D** implements full 2D physics. It cannot be controlled directly, instead, you must apply forces to it (gravity, impulses, etc.), and the physics simulation will calculate the resulting movement, rotation, react to collisions, and affect other physics bodies in its path.
 
@@ -30,21 +30,21 @@ If you need to override the default physics behavior, you can write a custom for
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`物理介紹 <../tutorials/physics/physics_introduction>`
+- :doc:`Physics introduction <../tutorials/physics/physics_introduction>`
 
 - :doc:`Troubleshooting physics issues <../tutorials/physics/troubleshooting_physics_issues>`
 
-- `2D 物理平臺跳躍演示 <https://godotengine.org/asset-library/asset/2725>`__
+- `2D Physics Platformer Demo <https://godotengine.org/asset-library/asset/2725>`__
 
-- `產生實體演示 <https://godotengine.org/asset-library/asset/2716>`__
+- `Instancing Demo <https://godotengine.org/asset-library/asset/2716>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -99,8 +99,8 @@ If you need to override the default physics behavior, you can write a custom for
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -139,8 +139,8 @@ If you need to override the default physics behavior, you can write a custom for
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_RigidBody2D_signal_body_entered:
 
@@ -148,9 +148,9 @@ If you need to override the default physics behavior, you can write a custom for
 
 **body_entered**\ (\ body\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_RigidBody2D_signal_body_entered>`
 
-當與另一個 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 或 :ref:`TileMap<class_TileMap>` 發生碰撞時發出。需要將 :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>` 設定為 ``true``\ ，並將 :ref:`max_contacts_reported<class_RigidBody2D_property_max_contacts_reported>` 設定得足夠高以偵測所有碰撞。如果 :ref:`TileSet<class_TileSet>` 具有碰撞 :ref:`Shape2D<class_Shape2D>`\ ，則 :ref:`TileMap<class_TileMap>` 將被偵測。
+Emitted when a collision with another :ref:`PhysicsBody2D<class_PhysicsBody2D>` or :ref:`TileMap<class_TileMap>` occurs. Requires :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>` to be set to ``true`` and :ref:`max_contacts_reported<class_RigidBody2D_property_max_contacts_reported>` to be set high enough to detect all the collisions. :ref:`TileMap<class_TileMap>`\ s are detected if the :ref:`TileSet<class_TileSet>` has Collision :ref:`Shape2D<class_Shape2D>`\ s.
 
-\ ``body`` 是其他 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 或 :ref:`TileMap<class_TileMap>` 的 :ref:`Node<class_Node>`\ ，如果該節點存在於樹中。
+\ ``body`` the :ref:`Node<class_Node>`, if it exists in the tree, of the other :ref:`PhysicsBody2D<class_PhysicsBody2D>` or :ref:`TileMap<class_TileMap>`.
 
 .. rst-class:: classref-item-separator
 
@@ -162,9 +162,9 @@ If you need to override the default physics behavior, you can write a custom for
 
 **body_exited**\ (\ body\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_RigidBody2D_signal_body_exited>`
 
-當與另一個 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 或 :ref:`TileMap<class_TileMap>` 的碰撞結束時發出。需要將 :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>` 設定為 ``true``\ ，並將 :ref:`max_contacts_reported<class_RigidBody2D_property_max_contacts_reported>` 設定得足夠高以偵測所有碰撞。如果 :ref:`TileSet<class_TileSet>` 具有碰撞 :ref:`Shape2D<class_Shape2D>`\ ，則 :ref:`TileMap<class_TileMap>` 將被偵測。
+Emitted when the collision with another :ref:`PhysicsBody2D<class_PhysicsBody2D>` or :ref:`TileMap<class_TileMap>` ends. Requires :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>` to be set to ``true`` and :ref:`max_contacts_reported<class_RigidBody2D_property_max_contacts_reported>` to be set high enough to detect all the collisions. :ref:`TileMap<class_TileMap>`\ s are detected if the :ref:`TileSet<class_TileSet>` has Collision :ref:`Shape2D<class_Shape2D>`\ s.
 
-\ ``body`` 是其他 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 或 :ref:`TileMap<class_TileMap>` 的 :ref:`Node<class_Node>`\ ，如果該節點存在於樹中。
+\ ``body`` the :ref:`Node<class_Node>`, if it exists in the tree, of the other :ref:`PhysicsBody2D<class_PhysicsBody2D>` or :ref:`TileMap<class_TileMap>`.
 
 .. rst-class:: classref-item-separator
 
@@ -176,15 +176,15 @@ If you need to override the default physics behavior, you can write a custom for
 
 **body_shape_entered**\ (\ body_rid\: :ref:`RID<class_RID>`, body\: :ref:`Node<class_Node>`, body_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RigidBody2D_signal_body_shape_entered>`
 
-當該 RigidBody2D 的一個 :ref:`Shape2D<class_Shape2D>` 與另一個 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 或 :ref:`TileMap<class_TileMap>` 的 :ref:`Shape2D<class_Shape2D>` 碰撞時發出。需要將 :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>` 設定為 ``true``\ ，並將 :ref:`max_contacts_reported<class_RigidBody2D_property_max_contacts_reported>` 設定得足夠高以偵測所有碰撞。如果 :ref:`TileSet<class_TileSet>` 具有 Collision :ref:`Shape2D<class_Shape2D>`\ ，則 :ref:`TileMap<class_TileMap>` 會被偵測到。
+Emitted when one of this RigidBody2D's :ref:`Shape2D<class_Shape2D>`\ s collides with another :ref:`PhysicsBody2D<class_PhysicsBody2D>` or :ref:`TileMap<class_TileMap>`'s :ref:`Shape2D<class_Shape2D>`\ s. Requires :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>` to be set to ``true`` and :ref:`max_contacts_reported<class_RigidBody2D_property_max_contacts_reported>` to be set high enough to detect all the collisions. :ref:`TileMap<class_TileMap>`\ s are detected if the :ref:`TileSet<class_TileSet>` has Collision :ref:`Shape2D<class_Shape2D>`\ s.
 
-\ ``body_rid`` 由 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 使用的其他 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 或 :ref:`TileSet<class_TileSet>` 的 :ref:`CollisionObject2D<class_CollisionObject2D>` 的 :ref:`RID<class_RID>`\ 。
+\ ``body_rid`` the :ref:`RID<class_RID>` of the other :ref:`PhysicsBody2D<class_PhysicsBody2D>` or :ref:`TileSet<class_TileSet>`'s :ref:`CollisionObject2D<class_CollisionObject2D>` used by the :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
 
-\ ``body`` 其他 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 或 :ref:`TileMap<class_TileMap>` 的 :ref:`Node<class_Node>`\ ，如果該節點存在於樹中。
+\ ``body`` the :ref:`Node<class_Node>`, if it exists in the tree, of the other :ref:`PhysicsBody2D<class_PhysicsBody2D>` or :ref:`TileMap<class_TileMap>`.
 
-\ ``body_shape_index`` 由 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 使用的其他 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 或 :ref:`TileMap<class_TileMap>` 的 :ref:`Shape2D<class_Shape2D>` 的索引。該 :ref:`CollisionShape2D<class_CollisionShape2D>` 節點可以使用 ``body.shape_owner_get_owner(body.shape_find_owner(body_shape_index))`` 獲取。
+\ ``body_shape_index`` the index of the :ref:`Shape2D<class_Shape2D>` of the other :ref:`PhysicsBody2D<class_PhysicsBody2D>` or :ref:`TileMap<class_TileMap>` used by the :ref:`PhysicsServer2D<class_PhysicsServer2D>`. Get the :ref:`CollisionShape2D<class_CollisionShape2D>` node with ``body.shape_owner_get_owner(body.shape_find_owner(body_shape_index))``.
 
-\ ``local_shape_index`` 由 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 使用的該 RigidBody2D 的 :ref:`Shape2D<class_Shape2D>` 的索引。該 :ref:`CollisionShape2D<class_CollisionShape2D>` 節點可以使用 ``self.shape_owner_get_owner(self.shape_find_owner(local_shape_index))`` 獲取。
+\ ``local_shape_index`` the index of the :ref:`Shape2D<class_Shape2D>` of this RigidBody2D used by the :ref:`PhysicsServer2D<class_PhysicsServer2D>`. Get the :ref:`CollisionShape2D<class_CollisionShape2D>` node with ``self.shape_owner_get_owner(self.shape_find_owner(local_shape_index))``.
 
 .. rst-class:: classref-item-separator
 
@@ -196,15 +196,15 @@ If you need to override the default physics behavior, you can write a custom for
 
 **body_shape_exited**\ (\ body_rid\: :ref:`RID<class_RID>`, body\: :ref:`Node<class_Node>`, body_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RigidBody2D_signal_body_shape_exited>`
 
-當該 RigidBody2D 的一個 :ref:`Shape2D<class_Shape2D>` 與另一個 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 或 :ref:`TileMap<class_TileMap>` 的 :ref:`Shape2D<class_Shape2D>` 之間的碰撞結束時發出。需要將 :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>` 設定為 ``true``\ ，並將 :ref:`max_contacts_reported<class_RigidBody2D_property_max_contacts_reported>` 設定得足夠高以偵測所有碰撞。如果 :ref:`TileSet<class_TileSet>` 具有 Collision :ref:`Shape2D<class_Shape2D>`\ ，則 :ref:`TileMap<class_TileMap>` 會被偵測到。
+Emitted when the collision between one of this RigidBody2D's :ref:`Shape2D<class_Shape2D>`\ s and another :ref:`PhysicsBody2D<class_PhysicsBody2D>` or :ref:`TileMap<class_TileMap>`'s :ref:`Shape2D<class_Shape2D>`\ s ends. Requires :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>` to be set to ``true`` and :ref:`max_contacts_reported<class_RigidBody2D_property_max_contacts_reported>` to be set high enough to detect all the collisions. :ref:`TileMap<class_TileMap>`\ s are detected if the :ref:`TileSet<class_TileSet>` has Collision :ref:`Shape2D<class_Shape2D>`\ s.
 
-\ ``body_rid`` 由 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 使用的其他 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 或 :ref:`TileSet<class_TileSet>` 的 :ref:`CollisionObject2D<class_CollisionObject2D>` 的 :ref:`RID<class_RID>`\ 。
+\ ``body_rid`` the :ref:`RID<class_RID>` of the other :ref:`PhysicsBody2D<class_PhysicsBody2D>` or :ref:`TileSet<class_TileSet>`'s :ref:`CollisionObject2D<class_CollisionObject2D>` used by the :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
 
-\ ``body`` 其他 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 或 :ref:`TileMap<class_TileMap>` 的 :ref:`Node<class_Node>`\ ，如果該節點存在於樹中。
+\ ``body`` the :ref:`Node<class_Node>`, if it exists in the tree, of the other :ref:`PhysicsBody2D<class_PhysicsBody2D>` or :ref:`TileMap<class_TileMap>`.
 
-\ ``body_shape_index`` 由 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 使用的其他 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 或 :ref:`TileMap<class_TileMap>` 的 :ref:`Shape2D<class_Shape2D>` 的索引。該 :ref:`CollisionShape2D<class_CollisionShape2D>` 節點可以使用 ``body.shape_owner_get_owner(body.shape_find_owner(body_shape_index))`` 獲取。
+\ ``body_shape_index`` the index of the :ref:`Shape2D<class_Shape2D>` of the other :ref:`PhysicsBody2D<class_PhysicsBody2D>` or :ref:`TileMap<class_TileMap>` used by the :ref:`PhysicsServer2D<class_PhysicsServer2D>`. Get the :ref:`CollisionShape2D<class_CollisionShape2D>` node with ``body.shape_owner_get_owner(body.shape_find_owner(body_shape_index))``.
 
-\ ``local_shape_index`` 由 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 使用的該 RigidBody2D 的 :ref:`Shape2D<class_Shape2D>` 的索引。該 :ref:`CollisionShape2D<class_CollisionShape2D>` 節點可以使用 ``self.shape_owner_get_owner(self.shape_find_owner(local_shape_index))`` 獲取。
+\ ``local_shape_index`` the index of the :ref:`Shape2D<class_Shape2D>` of this RigidBody2D used by the :ref:`PhysicsServer2D<class_PhysicsServer2D>`. Get the :ref:`CollisionShape2D<class_CollisionShape2D>` node with ``self.shape_owner_get_owner(self.shape_find_owner(local_shape_index))``.
 
 .. rst-class:: classref-item-separator
 
@@ -216,9 +216,9 @@ If you need to override the default physics behavior, you can write a custom for
 
 **sleeping_state_changed**\ (\ ) :ref:`🔗<class_RigidBody2D_signal_sleeping_state_changed>`
 
-當物理引擎改變物體的睡眠狀態時發出。
+Emitted when the physics engine changes the body's sleeping state.
 
-\ **注意：**\ 改變 :ref:`sleeping<class_RigidBody2D_property_sleeping>` 的值不會觸發這個訊號。只有當物理引擎改變了睡眠狀態或者使用了 ``emit_signal("sleeping_state_changed")`` 時，它才會被發出。
+\ **Note:** Changing the value :ref:`sleeping<class_RigidBody2D_property_sleeping>` will not trigger this signal. It is only emitted if the sleeping state is changed by the physics engine or ``emit_signal("sleeping_state_changed")`` is used.
 
 .. rst-class:: classref-section-separator
 
@@ -226,8 +226,8 @@ If you need to override the default physics behavior, you can write a custom for
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_RigidBody2D_FreezeMode:
 
@@ -241,7 +241,7 @@ enum **FreezeMode**: :ref:`🔗<enum_RigidBody2D_FreezeMode>`
 
 :ref:`FreezeMode<enum_RigidBody2D_FreezeMode>` **FREEZE_MODE_STATIC** = ``0``
 
-靜態物體凍結模式（預設）。物體不受重力和力的影響。它只能由使用者的程式碼移動，並且其他物體沿其路徑運動時，不會與之發生碰撞。
+Static body freeze mode (default). The body is not affected by gravity and forces. It can be only moved by user code and doesn't collide with other bodies along its path.
 
 .. _class_RigidBody2D_constant_FREEZE_MODE_KINEMATIC:
 
@@ -249,7 +249,7 @@ enum **FreezeMode**: :ref:`🔗<enum_RigidBody2D_FreezeMode>`
 
 :ref:`FreezeMode<enum_RigidBody2D_FreezeMode>` **FREEZE_MODE_KINEMATIC** = ``1``
 
-運動物體的凍結模式。類似於 :ref:`FREEZE_MODE_STATIC<class_RigidBody2D_constant_FREEZE_MODE_STATIC>` ，但是在移動時會與其路徑上的其他物體發生碰撞。適用於需要動畫的凍結物體。
+Kinematic body freeze mode. Similar to :ref:`FREEZE_MODE_STATIC<class_RigidBody2D_constant_FREEZE_MODE_STATIC>`, but collides with other bodies along its path when moved. Useful for a frozen body that needs to be animated.
 
 .. rst-class:: classref-item-separator
 
@@ -267,7 +267,7 @@ enum **CenterOfMassMode**: :ref:`🔗<enum_RigidBody2D_CenterOfMassMode>`
 
 :ref:`CenterOfMassMode<enum_RigidBody2D_CenterOfMassMode>` **CENTER_OF_MASS_MODE_AUTO** = ``0``
 
-在此模式下，該物體的質心將基於其形狀自動計算。此處的前提是各個形狀的原點也是對應的質心。
+In this mode, the body's center of mass is calculated automatically based on its shapes. This assumes that the shapes' origins are also their center of mass.
 
 .. _class_RigidBody2D_constant_CENTER_OF_MASS_MODE_CUSTOM:
 
@@ -275,7 +275,7 @@ enum **CenterOfMassMode**: :ref:`🔗<enum_RigidBody2D_CenterOfMassMode>`
 
 :ref:`CenterOfMassMode<enum_RigidBody2D_CenterOfMassMode>` **CENTER_OF_MASS_MODE_CUSTOM** = ``1``
 
-在此模式下，物體的質心通過 :ref:`center_of_mass<class_RigidBody2D_property_center_of_mass>` 設定。預設為物體的原點位元置。
+In this mode, the body's center of mass is set through :ref:`center_of_mass<class_RigidBody2D_property_center_of_mass>`. Defaults to the body's origin position.
 
 .. rst-class:: classref-item-separator
 
@@ -293,7 +293,7 @@ enum **DampMode**: :ref:`🔗<enum_RigidBody2D_DampMode>`
 
 :ref:`DampMode<enum_RigidBody2D_DampMode>` **DAMP_MODE_COMBINE** = ``0``
 
-在這種模式下，物體的阻尼值將被加到區域中設定的任何值或預設值。
+In this mode, the body's damping value is added to any value set in areas or the default value.
 
 .. _class_RigidBody2D_constant_DAMP_MODE_REPLACE:
 
@@ -301,7 +301,7 @@ enum **DampMode**: :ref:`🔗<enum_RigidBody2D_DampMode>`
 
 :ref:`DampMode<enum_RigidBody2D_DampMode>` **DAMP_MODE_REPLACE** = ``1``
 
-在這種模式下，物體的阻尼值將替換掉區域中設定的任何值或預設值。
+In this mode, the body's damping value replaces any value set in areas or the default value.
 
 .. rst-class:: classref-item-separator
 
@@ -319,7 +319,7 @@ enum **CCDMode**: :ref:`🔗<enum_RigidBody2D_CCDMode>`
 
 :ref:`CCDMode<enum_RigidBody2D_CCDMode>` **CCD_MODE_DISABLED** = ``0``
 
-禁用連續碰撞偵測。這是偵測物體碰撞的最快方法，但可能會錯過小型、快速移動的物體。
+Continuous collision detection disabled. This is the fastest way to detect body collisions, but can miss small, fast-moving objects.
 
 .. _class_RigidBody2D_constant_CCD_MODE_CAST_RAY:
 
@@ -327,7 +327,7 @@ enum **CCDMode**: :ref:`🔗<enum_RigidBody2D_CCDMode>`
 
 :ref:`CCDMode<enum_RigidBody2D_CCDMode>` **CCD_MODE_CAST_RAY** = ``1``
 
-使用射線投射啟用連續碰撞偵測。這比形狀投射快，但精度較低。
+Continuous collision detection enabled using raycasting. This is faster than shapecasting but less precise.
 
 .. _class_RigidBody2D_constant_CCD_MODE_CAST_SHAPE:
 
@@ -335,7 +335,7 @@ enum **CCDMode**: :ref:`🔗<enum_RigidBody2D_CCDMode>`
 
 :ref:`CCDMode<enum_RigidBody2D_CCDMode>` **CCD_MODE_CAST_SHAPE** = ``2``
 
-使用形狀投射啟用連續碰撞偵測。這是最慢的 CCD 方法，也是最精確的。
+Continuous collision detection enabled using shapecasting. This is the slowest CCD method and the most precise.
 
 .. rst-class:: classref-section-separator
 
@@ -343,8 +343,8 @@ enum **CCDMode**: :ref:`🔗<enum_RigidBody2D_CCDMode>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_RigidBody2D_property_angular_damp:
 
@@ -393,7 +393,7 @@ Defines how :ref:`angular_damp<class_RigidBody2D_property_angular_damp>` is appl
 - |void| **set_angular_velocity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angular_velocity**\ (\ )
 
-物體的旋轉速度，單位為\ *弧度*\ 每秒。
+The body's rotational velocity in *radians* per second.
 
 .. rst-class:: classref-item-separator
 
@@ -410,7 +410,7 @@ Defines how :ref:`angular_damp<class_RigidBody2D_property_angular_damp>` is appl
 - |void| **set_can_sleep**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_able_to_sleep**\ (\ )
 
-如果為 ``true``\ ，則物體未運動時可以進入睡眠模式。見 :ref:`sleeping<class_RigidBody2D_property_sleeping>` 。
+If ``true``, the body can enter sleep mode when there is no movement. See :ref:`sleeping<class_RigidBody2D_property_sleeping>`.
 
 .. rst-class:: classref-item-separator
 
@@ -463,9 +463,9 @@ Defines the way the body's center of mass is set.
 - |void| **set_constant_force**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_constant_force**\ (\ )
 
-在每個物理更新期間施加到物體的總恒定位置的力。
+The body's total constant positional forces applied during each physics update.
 
-見 :ref:`add_constant_force()<class_RigidBody2D_method_add_constant_force>` 和 :ref:`add_constant_central_force()<class_RigidBody2D_method_add_constant_central_force>` 。
+See :ref:`add_constant_force()<class_RigidBody2D_method_add_constant_force>` and :ref:`add_constant_central_force()<class_RigidBody2D_method_add_constant_central_force>`.
 
 .. rst-class:: classref-item-separator
 
@@ -482,9 +482,9 @@ Defines the way the body's center of mass is set.
 - |void| **set_constant_torque**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_constant_torque**\ (\ )
 
-在每個物理更新期間施加的物體的總恒定旋轉力。
+The body's total constant rotational forces applied during each physics update.
 
-見 :ref:`add_constant_torque()<class_RigidBody2D_method_add_constant_torque>` 。
+See :ref:`add_constant_torque()<class_RigidBody2D_method_add_constant_torque>`.
 
 .. rst-class:: classref-item-separator
 
@@ -501,9 +501,9 @@ Defines the way the body's center of mass is set.
 - |void| **set_contact_monitor**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_contact_monitor_enabled**\ (\ )
 
-如果為 ``true``\ ，則該 RigidBody2D 將在與其他物體碰撞時發出訊號。
+If ``true``, the RigidBody2D will emit signals when it collides with another body.
 
-\ **注意：**\ 預設情況下，報告的最大接觸數被設定為 0，表示不會記錄任何內容，見 :ref:`max_contacts_reported<class_RigidBody2D_property_max_contacts_reported>`\ 。
+\ **Note:** By default the maximum contacts reported is set to 0, meaning nothing will be recorded, see :ref:`max_contacts_reported<class_RigidBody2D_property_max_contacts_reported>`.
 
 .. rst-class:: classref-item-separator
 
@@ -615,11 +615,11 @@ Multiplies the gravity applied to the body. The body's gravity is calculated fro
 - |void| **set_inertia**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_inertia**\ (\ )
 
-該物體的慣性力矩。與品質類似，但適用於旋轉：用於確定需要施加多少扭矩才能讓該物體旋轉。通常會自動根據品質和形狀計算慣性力矩，但這個屬性能夠讓你設定自訂的值。
+The body's moment of inertia. This is like mass, but for rotation: it determines how much torque it takes to rotate the body. The moment of inertia is usually computed automatically from the mass and the shapes, but this property allows you to set a custom value.
 
-設定為 ``0`` 時，會自動計算慣性（預設值）。
+If set to ``0``, inertia is automatically computed (default value).
 
-\ **注意：**\ 自動計算出慣性後，這個值不會改變。請使用 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 獲取計算出的慣性。
+\ **Note:** This value does not change when inertia is automatically computed. Use :ref:`PhysicsServer2D<class_PhysicsServer2D>` to get the computed inertia.
 
 
 .. tabs::
@@ -698,7 +698,7 @@ Defines how :ref:`linear_damp<class_RigidBody2D_property_linear_damp>` is applie
 - |void| **set_linear_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_linear_velocity**\ (\ )
 
-該實體的線速度，單位為圖元每秒。可以偶爾使用，但是\ **不要每一影格都去設定**\ ，因為物理可能在另一個執行緒中運作，並且以不同的間隔。使用 :ref:`_integrate_forces()<class_RigidBody2D_private_method__integrate_forces>` 作為你的程序迴圈，以精確控制物體狀態。
+The body's linear velocity in pixels per second. Can be used sporadically, but **don't set this every frame**, because physics may run in another thread and runs at a different granularity. Use :ref:`_integrate_forces()<class_RigidBody2D_private_method__integrate_forces>` as your process loop for precise control of the body state.
 
 .. rst-class:: classref-item-separator
 
@@ -715,7 +715,7 @@ Defines how :ref:`linear_damp<class_RigidBody2D_property_linear_damp>` is applie
 - |void| **set_lock_rotation_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_lock_rotation_enabled**\ (\ )
 
-如果為 ``true``\ ，則該物體不能旋轉。重力和力只施加線性運動。
+If ``true``, the body cannot rotate. Gravity and forces only apply linear movement.
 
 .. rst-class:: classref-item-separator
 
@@ -732,7 +732,7 @@ Defines how :ref:`linear_damp<class_RigidBody2D_property_linear_damp>` is applie
 - |void| **set_mass**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mass**\ (\ )
 
-此實體的質量。
+The body's mass.
 
 .. rst-class:: classref-item-separator
 
@@ -749,9 +749,9 @@ Defines how :ref:`linear_damp<class_RigidBody2D_property_linear_damp>` is applie
 - |void| **set_max_contacts_reported**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_contacts_reported**\ (\ )
 
-將記錄的最大接觸點數。需要一個大於 0 的值，並將 :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>` 設定為 ``true`` 以開始註冊接觸。使用 :ref:`get_contact_count()<class_RigidBody2D_method_get_contact_count>` 檢索計數或使用 :ref:`get_colliding_bodies()<class_RigidBody2D_method_get_colliding_bodies>` 檢索已發生碰撞的物體。
+The maximum number of contacts that will be recorded. Requires a value greater than 0 and :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>` to be set to ``true`` to start to register contacts. Use :ref:`get_contact_count()<class_RigidBody2D_method_get_contact_count>` to retrieve the count or :ref:`get_colliding_bodies()<class_RigidBody2D_method_get_colliding_bodies>` to retrieve bodies that have been collided with.
 
-\ **注意：**\ 接觸點的數量不同於碰撞的數量。平行邊之間的碰撞將導致兩個接觸點（每個端點一個），平行面之間的碰撞將導致四個接觸點（每個角落一個）。
+\ **Note:** The number of contacts is different from the number of collisions. Collisions between parallel edges will result in two contacts (one at each end), and collisions between parallel faces will result in four contacts (one at each corner).
 
 .. rst-class:: classref-item-separator
 
@@ -768,9 +768,9 @@ Defines how :ref:`linear_damp<class_RigidBody2D_property_linear_damp>` is applie
 - |void| **set_physics_material_override**\ (\ value\: :ref:`PhysicsMaterial<class_PhysicsMaterial>`\ )
 - :ref:`PhysicsMaterial<class_PhysicsMaterial>` **get_physics_material_override**\ (\ )
 
-物體的物理材質。
+The physics material override for the body.
 
-如果為該屬性指定了一種材質，則將使用該材質代替任何其他物理材質，例如繼承的材質。
+If a material is assigned to this property, it will be used instead of any other physics material, such as an inherited one.
 
 .. rst-class:: classref-item-separator
 
@@ -787,7 +787,7 @@ Defines how :ref:`linear_damp<class_RigidBody2D_property_linear_damp>` is applie
 - |void| **set_sleeping**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_sleeping**\ (\ )
 
-如果為 ``true`` ，該剛體將不會移動，也不會計算受力，直到被另一個物體喚醒，例如通過碰撞或使用 :ref:`apply_impulse()<class_RigidBody2D_method_apply_impulse>` 或 :ref:`apply_force()<class_RigidBody2D_method_apply_force>` 方法。
+If ``true``, the body will not move and will not calculate forces until woken up by another body through, for example, a collision, or by using the :ref:`apply_impulse()<class_RigidBody2D_method_apply_impulse>` or :ref:`apply_force()<class_RigidBody2D_method_apply_force>` methods.
 
 .. rst-class:: classref-section-separator
 
@@ -795,8 +795,8 @@ Defines how :ref:`linear_damp<class_RigidBody2D_property_linear_damp>` is applie
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_RigidBody2D_private_method__integrate_forces:
 
@@ -816,9 +816,9 @@ Called during physics processing, allowing you to read and safely modify the sim
 
 |void| **add_constant_central_force**\ (\ force\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_RigidBody2D_method_add_constant_central_force>`
 
-在不影響旋轉的情況下，新增一個定向的恒定力，該力會隨著時間的推移而持續施加，直到使用 ``constant_force = Vector2(0, 0)`` 清除。
+Adds a constant directional force without affecting rotation that keeps being applied over time until cleared with ``constant_force = Vector2(0, 0)``.
 
-這相當於在物體的質心處，使用 :ref:`add_constant_force()<class_RigidBody2D_method_add_constant_force>`\ 。
+This is equivalent to using :ref:`add_constant_force()<class_RigidBody2D_method_add_constant_force>` at the body's center of mass.
 
 .. rst-class:: classref-item-separator
 
@@ -830,9 +830,9 @@ Called during physics processing, allowing you to read and safely modify the sim
 
 |void| **add_constant_force**\ (\ force\: :ref:`Vector2<class_Vector2>`, position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_RigidBody2D_method_add_constant_force>`
 
-向實體新增一個恒定的定位力，持續施加，直到用 ``constant_force = Vector2(0, 0)`` 清除。
+Adds a constant positioned force to the body that keeps being applied over time until cleared with ``constant_force = Vector2(0, 0)``.
 
-\ ``position`` 是在全域座標中距實體原點的偏移量。
+\ ``position`` is the offset from the body origin in global coordinates.
 
 .. rst-class:: classref-item-separator
 
@@ -844,7 +844,7 @@ Called during physics processing, allowing you to read and safely modify the sim
 
 |void| **add_constant_torque**\ (\ torque\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RigidBody2D_method_add_constant_torque>`
 
-新增一個恒定的旋轉力矩，而不影響位置，該力會隨著時間的推移不斷施加，直到使用 ``constant_torque = 0`` 清除。
+Adds a constant rotational force without affecting position that keeps being applied over time until cleared with ``constant_torque = 0``.
 
 .. rst-class:: classref-item-separator
 
@@ -856,9 +856,9 @@ Called during physics processing, allowing you to read and safely modify the sim
 
 |void| **apply_central_force**\ (\ force\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_RigidBody2D_method_apply_central_force>`
 
-施加一個不影響旋轉的定向力。該力是時間相關的，意味著每次物理更新都會施加。
+Applies a directional force without affecting rotation. A force is time dependent and meant to be applied every physics update.
 
-這相當於在物體的質心處，使用 :ref:`apply_force()<class_RigidBody2D_method_apply_force>`\ 。
+This is equivalent to using :ref:`apply_force()<class_RigidBody2D_method_apply_force>` at the body's center of mass.
 
 .. rst-class:: classref-item-separator
 
@@ -870,11 +870,11 @@ Called during physics processing, allowing you to read and safely modify the sim
 
 |void| **apply_central_impulse**\ (\ impulse\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_RigidBody2D_method_apply_central_impulse>`
 
-施加一個不影響的旋轉定向脈衝。
+Applies a directional impulse without affecting rotation.
 
-脈衝與時間無關！每影格套用一個脈衝，會產生一個依賴於畫面播放速率的力。出於這個原因，它應該只在模擬一次性影響時使用（否則使用 “_force”函式）。
+An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
 
-這相當於在物體的質心處，使用 :ref:`apply_impulse()<class_RigidBody2D_method_apply_impulse>`\ 。
+This is equivalent to using :ref:`apply_impulse()<class_RigidBody2D_method_apply_impulse>` at the body's center of mass.
 
 .. rst-class:: classref-item-separator
 
@@ -886,9 +886,9 @@ Called during physics processing, allowing you to read and safely modify the sim
 
 |void| **apply_force**\ (\ force\: :ref:`Vector2<class_Vector2>`, position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_RigidBody2D_method_apply_force>`
 
-對實體施加一個定位力。力是時間相關的，意味著每次物理更新都會被施加。
+Applies a positioned force to the body. A force is time dependent and meant to be applied every physics update.
 
-\ ``position`` 是在全域座標中距實體原點的偏移量。
+\ ``position`` is the offset from the body origin in global coordinates.
 
 .. rst-class:: classref-item-separator
 
@@ -900,11 +900,11 @@ Called during physics processing, allowing you to read and safely modify the sim
 
 |void| **apply_impulse**\ (\ impulse\: :ref:`Vector2<class_Vector2>`, position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_RigidBody2D_method_apply_impulse>`
 
-向實體施加一個定位脈衝。
+Applies a positioned impulse to the body.
 
-脈衝是時間無關的！每影格施加一個脈衝將產生一個依賴於畫面播放速率的力。出於這個原因，它應該只在模擬一次性影響時使用（否則使用“_force”函式）。
+An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
 
-\ ``position`` 是在全域座標中距實體原點的偏移量。
+\ ``position`` is the offset from the body origin in global coordinates.
 
 .. rst-class:: classref-item-separator
 
@@ -916,9 +916,9 @@ Called during physics processing, allowing you to read and safely modify the sim
 
 |void| **apply_torque**\ (\ torque\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RigidBody2D_method_apply_torque>`
 
-施加旋轉力但不影響位置。力是與時間相關的，應該每次物理更新時都要進行施加。
+Applies a rotational force without affecting position. A force is time dependent and meant to be applied every physics update.
 
-\ **注意：**\ 有 :ref:`inertia<class_RigidBody2D_property_inertia>` 才能正常工作。要讓 :ref:`inertia<class_RigidBody2D_property_inertia>` 存在，必須有一個 :ref:`CollisionShape2D<class_CollisionShape2D>` 作為該節點的子節點，或者你也可以手動設定 :ref:`inertia<class_RigidBody2D_property_inertia>`\ 。
+\ **Note:** :ref:`inertia<class_RigidBody2D_property_inertia>` is required for this to work. To have :ref:`inertia<class_RigidBody2D_property_inertia>`, an active :ref:`CollisionShape2D<class_CollisionShape2D>` must be a child of the node, or you can manually set :ref:`inertia<class_RigidBody2D_property_inertia>`.
 
 .. rst-class:: classref-item-separator
 
@@ -930,11 +930,11 @@ Called during physics processing, allowing you to read and safely modify the sim
 
 |void| **apply_torque_impulse**\ (\ torque\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RigidBody2D_method_apply_torque_impulse>`
 
-在不影響位置的情況下，向實體施加一個旋轉脈衝。
+Applies a rotational impulse to the body without affecting the position.
 
-脈衝是時間無關的！每影格施加一個脈衝將產生依賴於畫面播放速率的力。出於這個原因，它應該只在模擬一次性影響時使用（否則使用“_force”函式）。
+An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
 
-\ **注意：**\ 需要 :ref:`inertia<class_RigidBody2D_property_inertia>` 才能發揮作用。要具有 :ref:`inertia<class_RigidBody2D_property_inertia>`\ ，活動的 :ref:`CollisionShape2D<class_CollisionShape2D>` 必須是該節點的一個子節點，或者可以手動設定 :ref:`inertia<class_RigidBody2D_property_inertia>`\ 。
+\ **Note:** :ref:`inertia<class_RigidBody2D_property_inertia>` is required for this to work. To have :ref:`inertia<class_RigidBody2D_property_inertia>`, an active :ref:`CollisionShape2D<class_CollisionShape2D>` must be a child of the node, or you can manually set :ref:`inertia<class_RigidBody2D_property_inertia>`.
 
 .. rst-class:: classref-item-separator
 
@@ -946,9 +946,9 @@ Called during physics processing, allowing you to read and safely modify the sim
 
 :ref:`Array<class_Array>`\[:ref:`Node2D<class_Node2D>`\] **get_colliding_bodies**\ (\ ) |const| :ref:`🔗<class_RigidBody2D_method_get_colliding_bodies>`
 
-返回與此物體發生碰撞的物體的列表。需要將 :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>` 設定為 ``true``\ ，並將 :ref:`max_contacts_reported<class_RigidBody2D_property_max_contacts_reported>` 設定足夠高以偵測所有碰撞。
+Returns a list of the bodies colliding with this one. Requires :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>` to be set to ``true`` and :ref:`max_contacts_reported<class_RigidBody2D_property_max_contacts_reported>` to be set high enough to detect all the collisions.
 
-\ **注意：**\ 此測試的結果不會立即在移動物體後得出。為了提高性能，碰撞列表每影格更新一次，且在物理步驟之前進行。可考慮改用訊號來代替。
+\ **Note:** The result of this test is not immediate after moving objects. For performance, list of collisions is updated once per frame and before the physics step. Consider using signals instead.
 
 .. rst-class:: classref-item-separator
 
@@ -960,9 +960,9 @@ Called during physics processing, allowing you to read and safely modify the sim
 
 :ref:`int<class_int>` **get_contact_count**\ (\ ) |const| :ref:`🔗<class_RigidBody2D_method_get_contact_count>`
 
-返回此物體與其他物體的接觸數。預設情況下，除非配置監視接觸的物體（見 :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>`\ ），否則返回 0。
+Returns the number of contacts this body has with other bodies. By default, this returns 0 unless bodies are configured to monitor contacts (see :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>`).
 
-\ **注意：**\ 要獲取正在碰撞的物體，請使用 :ref:`get_colliding_bodies()<class_RigidBody2D_method_get_colliding_bodies>`\ 。
+\ **Note:** To retrieve the colliding bodies, use :ref:`get_colliding_bodies()<class_RigidBody2D_method_get_colliding_bodies>`.
 
 .. rst-class:: classref-item-separator
 
@@ -974,14 +974,14 @@ Called during physics processing, allowing you to read and safely modify the sim
 
 |void| **set_axis_velocity**\ (\ axis_velocity\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_RigidBody2D_method_set_axis_velocity>`
 
-設定物體在給定軸上的速度。給定向量軸上的速度將設定為給定向量長度。這對於跳躍行為很有用。
+Sets the body's velocity on the given axis. The velocity in the given vector axis will be set as the given vector length. This is useful for jumping behavior.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

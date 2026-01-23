@@ -8,28 +8,28 @@
 PointLight2D
 ============
 
-**继承：** :ref:`Light2D<class_Light2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Light2D<class_Light2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-位置性 2D 光源。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-在 2D 环境中投射光线。此灯的形状由（通常为灰度）纹理定义。
+Positional 2D light source.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`2D 灯光和阴影 <../tutorials/2d/2d_lights_and_shadows>`
+Casts light in a 2D environment. This light's shape is defined by a (usually grayscale) texture.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`2D lights and shadows <../tutorials/2d/2d_lights_and_shadows>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ PointLight2D
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_PointLight2D_property_height:
 
@@ -64,7 +64,7 @@ PointLight2D
 - |void| **set_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_height**\ (\ )
 
-灯光的高度。与 2D 法线贴图一起使用。单位为像素，例如：如果高度为 100，那么它能够照亮 100 像素远且与该平面成 45° 角的对象。
+The height of the light. Used with 2D normal mapping. The units are in pixels, e.g. if the height is 100, then it will illuminate an object 100 pixels away at a 45° angle to the plane.
 
 .. rst-class:: classref-item-separator
 
@@ -81,7 +81,7 @@ PointLight2D
 - |void| **set_texture_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_texture_offset**\ (\ )
 
-灯光的 :ref:`texture<class_PointLight2D_property_texture>` 的偏移量。
+The offset of the light's :ref:`texture<class_PointLight2D_property_texture>`.
 
 .. rst-class:: classref-item-separator
 
@@ -98,7 +98,7 @@ PointLight2D
 - |void| **set_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ )
 
-用于该灯光外观的 :ref:`Texture2D<class_Texture2D>`\ 。
+:ref:`Texture2D<class_Texture2D>` used for the light's appearance.
 
 .. rst-class:: classref-item-separator
 
@@ -115,14 +115,14 @@ PointLight2D
 - |void| **set_texture_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_texture_scale**\ (\ )
 
-:ref:`texture<class_PointLight2D_property_texture>` 的缩放系数。
+The :ref:`texture<class_PointLight2D_property_texture>`'s scale factor.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

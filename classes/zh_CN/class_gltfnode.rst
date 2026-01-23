@@ -5,32 +5,32 @@
 GLTFNode
 ========
 
-**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-glTF 节点类。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-代表 glTF 节点。glTF 节点中可以包含名称、变换、子节点（glTF 节点）以及其他专门的属性（由各自不同的类表示）。
-
-glTF 节点通常存在于表示 glTF 文件中的所有数据的 :ref:`GLTFState<class_GLTFState>` 内部。大多数 GLTFNode 的属性都是 glTF 文件中其他数据的索引。你可以使用 :ref:`get_additional_data()<class_GLTFNode_method_get_additional_data>` 和 :ref:`set_additional_data()<class_GLTFNode_method_set_additional_data>` 来添加额外的属性，扩展 glTF 节点。
+glTF node class.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`运行时文件加载与保存 <../tutorials/io/runtime_file_loading_and_saving>`
+Represents a glTF node. glTF nodes may have names, transforms, children (other glTF nodes), and more specialized properties (represented by their own classes).
 
-- `glTF 场景和节点规格 <https://github.com/KhronosGroup/glTF-Tutorials/blob/master/gltfTutorial/gltfTutorial_004_ScenesNodes.md">`__
+glTF nodes generally exist inside of :ref:`GLTFState<class_GLTFState>` which represents all data of a glTF file. Most of GLTFNode's properties are indices of other data in the glTF file. You can extend a glTF node with additional properties by using :ref:`get_additional_data()<class_GLTFNode_method_get_additional_data>` and :ref:`set_additional_data()<class_GLTFNode_method_set_additional_data>`.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Runtime file loading and saving <../tutorials/io/runtime_file_loading_and_saving>`
+
+- `glTF scene and node spec <https://github.com/KhronosGroup/glTF-Tutorials/blob/master/gltfTutorial/gltfTutorial_004_ScenesNodes.md">`__
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -67,8 +67,8 @@ glTF 节点通常存在于表示 glTF 文件中的所有数据的 :ref:`GLTFStat
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -89,8 +89,8 @@ glTF 节点通常存在于表示 glTF 文件中的所有数据的 :ref:`GLTFStat
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_GLTFNode_property_camera:
 
@@ -103,7 +103,7 @@ glTF 节点通常存在于表示 glTF 文件中的所有数据的 :ref:`GLTFStat
 - |void| **set_camera**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_camera**\ (\ )
 
-如果该 glTF 节点是一个相机，则 :ref:`GLTFState<class_GLTFState>` 中 :ref:`GLTFCamera<class_GLTFCamera>` 的索引将描述该相机的属性。如果为 ``-1``\ ，则该节点不是相机。
+If this glTF node is a camera, the index of the :ref:`GLTFCamera<class_GLTFCamera>` in the :ref:`GLTFState<class_GLTFState>` that describes the camera's properties. If ``-1``, this node is not a camera.
 
 .. rst-class:: classref-item-separator
 
@@ -120,7 +120,7 @@ glTF 节点通常存在于表示 glTF 文件中的所有数据的 :ref:`GLTFStat
 - |void| **set_children**\ (\ value\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ )
 - :ref:`PackedInt32Array<class_PackedInt32Array>` **get_children**\ (\ )
 
-:ref:`GLTFState<class_GLTFState>` 中子节点的索引。如果该 glTF 节点没有子节点，则这将是一个空数组。
+The indices of the child nodes in the :ref:`GLTFState<class_GLTFState>`. If this glTF node has no children, this will be an empty array.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
@@ -139,7 +139,7 @@ glTF 节点通常存在于表示 glTF 文件中的所有数据的 :ref:`GLTFStat
 - |void| **set_height**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_height**\ (\ )
 
-该节点在节点层次结构中的深度。根节点的高度为 0，其子节点的高度为 1，依此类推。如果为 -1，则尚未计算高度。
+How deep into the node hierarchy this node is. A root node will have a height of 0, its children will have a height of 1, and so on. If -1, the height has not been calculated.
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ glTF 节点通常存在于表示 glTF 文件中的所有数据的 :ref:`GLTFStat
 - |void| **set_light**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_light**\ (\ )
 
-如果该 glTF 节点是一盏灯，则 :ref:`GLTFState<class_GLTFState>` 中 :ref:`GLTFLight<class_GLTFLight>` 的索引将描述该灯的属性。如果为 -1，则该节点不是灯。
+If this glTF node is a light, the index of the :ref:`GLTFLight<class_GLTFLight>` in the :ref:`GLTFState<class_GLTFState>` that describes the light's properties. If -1, this node is not a light.
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +173,7 @@ glTF 节点通常存在于表示 glTF 文件中的所有数据的 :ref:`GLTFStat
 - |void| **set_mesh**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_mesh**\ (\ )
 
-如果该 glTF 节点是网格，则 :ref:`GLTFState<class_GLTFState>` 中 :ref:`GLTFMesh<class_GLTFMesh>` 的索引将描述该网格的属性。如果为 -1，则该节点不是网格。
+If this glTF node is a mesh, the index of the :ref:`GLTFMesh<class_GLTFMesh>` in the :ref:`GLTFState<class_GLTFState>` that describes the mesh's properties. If -1, this node is not a mesh.
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ glTF 节点通常存在于表示 glTF 文件中的所有数据的 :ref:`GLTFStat
 - |void| **set_original_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_original_name**\ (\ )
 
-节点的原名。
+The original name of the node.
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ glTF 节点通常存在于表示 glTF 文件中的所有数据的 :ref:`GLTFStat
 - |void| **set_parent**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_parent**\ (\ )
 
-:ref:`GLTFState<class_GLTFState>` 中父节点的索引。如果为 -1，则该节点为根节点。
+The index of the parent node in the :ref:`GLTFState<class_GLTFState>`. If -1, this node is a root node.
 
 .. rst-class:: classref-item-separator
 
@@ -224,7 +224,7 @@ glTF 节点通常存在于表示 glTF 文件中的所有数据的 :ref:`GLTFStat
 - |void| **set_position**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_position**\ (\ )
 
-该 glTF 节点相对于其父节点的位置。
+The position of the glTF node relative to its parent.
 
 .. rst-class:: classref-item-separator
 
@@ -241,7 +241,7 @@ glTF 节点通常存在于表示 glTF 文件中的所有数据的 :ref:`GLTFStat
 - |void| **set_rotation**\ (\ value\: :ref:`Quaternion<class_Quaternion>`\ )
 - :ref:`Quaternion<class_Quaternion>` **get_rotation**\ (\ )
 
-该 glTF 节点相对于其父节点的旋转。
+The rotation of the glTF node relative to its parent.
 
 .. rst-class:: classref-item-separator
 
@@ -258,7 +258,7 @@ glTF 节点通常存在于表示 glTF 文件中的所有数据的 :ref:`GLTFStat
 - |void| **set_scale**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_scale**\ (\ )
 
-该 glTF 节点相对于其父节点的缩放。
+The scale of the glTF node relative to its parent.
 
 .. rst-class:: classref-item-separator
 
@@ -275,7 +275,7 @@ glTF 节点通常存在于表示 glTF 文件中的所有数据的 :ref:`GLTFStat
 - |void| **set_skeleton**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_skeleton**\ (\ )
 
-如果该 glTF 节点具有骨架，则 :ref:`GLTFState<class_GLTFState>` 中的 :ref:`GLTFSkeleton<class_GLTFSkeleton>` 的索引将描述骨架的属性。如果为 -1，则该节点没有骨架。
+If this glTF node has a skeleton, the index of the :ref:`GLTFSkeleton<class_GLTFSkeleton>` in the :ref:`GLTFState<class_GLTFState>` that describes the skeleton's properties. If -1, this node does not have a skeleton.
 
 .. rst-class:: classref-item-separator
 
@@ -292,7 +292,7 @@ glTF 节点通常存在于表示 glTF 文件中的所有数据的 :ref:`GLTFStat
 - |void| **set_skin**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_skin**\ (\ )
 
-如果该 glTF 节点有皮肤，则 :ref:`GLTFState<class_GLTFState>` 中的 :ref:`GLTFSkin<class_GLTFSkin>` 的索引将描述皮肤的属性。如果为 -1，则该节点没有皮肤。
+If this glTF node has a skin, the index of the :ref:`GLTFSkin<class_GLTFSkin>` in the :ref:`GLTFState<class_GLTFState>` that describes the skin's properties. If -1, this node does not have a skin.
 
 .. rst-class:: classref-item-separator
 
@@ -326,7 +326,7 @@ If ``true``, the GLTF node is visible. If ``false``, the GLTF node is not visibl
 - |void| **set_xform**\ (\ value\: :ref:`Transform3D<class_Transform3D>`\ )
 - :ref:`Transform3D<class_Transform3D>` **get_xform**\ (\ )
 
-glTF 节点相对于其父节点的变换。由于通常首选位置、旋转和缩放属性，因此不使用该属性。
+The transform of the glTF node relative to its parent. This property is usually unused since the position, rotation, and scale properties are preferred.
 
 .. rst-class:: classref-section-separator
 
@@ -334,8 +334,8 @@ glTF 节点相对于其父节点的变换。由于通常首选位置、旋转和
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_GLTFNode_method_append_child_index:
 
@@ -343,7 +343,7 @@ glTF 节点相对于其父节点的变换。由于通常首选位置、旋转和
 
 |void| **append_child_index**\ (\ child_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GLTFNode_method_append_child_index>`
 
-将给定的子节点索引附加到 :ref:`children<class_GLTFNode_property_children>` 数组。
+Appends the given child node index to the :ref:`children<class_GLTFNode_property_children>` array.
 
 .. rst-class:: classref-item-separator
 
@@ -355,9 +355,9 @@ glTF 节点相对于其父节点的变换。由于通常首选位置、旋转和
 
 :ref:`Variant<class_Variant>` **get_additional_data**\ (\ extension_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_GLTFNode_method_get_additional_data>`
 
-在这个 **GLTFNode** 实例中获取额外的任意数据。这可以用来保持 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 类中每个节点的状态数据，这很重要，因为它们是无状态的。
+Gets additional arbitrary data in this **GLTFNode** instance. This can be used to keep per-node state data in :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` classes, which is important because they are stateless.
 
-参数应该是 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 的名字（不必与 glTF 文件中的扩展名相匹配），而该返回值可以是你设置的任何值。如果没有设置任何值，则返回值为 ``null``\ 。
+The argument should be the :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` name (does not have to match the extension name in the glTF file), and the return value can be anything you set. If nothing was set, the return value is ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -369,9 +369,9 @@ glTF 节点相对于其父节点的变换。由于通常首选位置、旋转和
 
 :ref:`NodePath<class_NodePath>` **get_scene_node_path**\ (\ gltf_state\: :ref:`GLTFState<class_GLTFState>`, handle_skeletons\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_GLTFNode_method_get_scene_node_path>`
 
-返回该 GLTF 节点导入后在 Godot 场景树中的 :ref:`NodePath<class_NodePath>`\ 。这在使用 :ref:`GLTFObjectModelProperty<class_GLTFObjectModelProperty>` 导入 glTF 对象模型指针时非常有用，可以处理 ``KHR_animation_pointer``\ 、\ ``KHR_interactivity`` 等扩展。
+Returns the :ref:`NodePath<class_NodePath>` that this GLTF node will have in the Godot scene tree after being imported. This is useful when importing glTF object model pointers with :ref:`GLTFObjectModelProperty<class_GLTFObjectModelProperty>`, for handling extensions such as ``KHR_animation_pointer`` or ``KHR_interactivity``.
 
-如果 ``handle_skeletons`` 为 ``true``\ ，则会正确解析骨骼 glTF 节点的路径。例如为 ``false`` 时为 ``^"A/B/C/Bone1/Bone2/Bone3"`` 的路径在为 ``true`` 时会变成 ``^"A/B/C/Skeleton3D:Bone3"``\ 。
+If ``handle_skeletons`` is ``true``, paths to skeleton bone glTF nodes will be resolved properly. For example, a path that would be ``^"A/B/C/Bone1/Bone2/Bone3"`` if ``false`` will become ``^"A/B/C/Skeleton3D:Bone3"``.
 
 .. rst-class:: classref-item-separator
 
@@ -383,16 +383,16 @@ glTF 节点相对于其父节点的变换。由于通常首选位置、旋转和
 
 |void| **set_additional_data**\ (\ extension_name\: :ref:`StringName<class_StringName>`, additional_data\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_GLTFNode_method_set_additional_data>`
 
-在这个 **GLTFNode** 实例中设置额外的任意数据。这可以用来保持 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 类中每个节点的状态数据，这很重要，因为它们是无状态的。
+Sets additional arbitrary data in this **GLTFNode** instance. This can be used to keep per-node state data in :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` classes, which is important because they are stateless.
 
-第一个参数应该是 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 的名字（不必与 glTF 文件中的扩展名相匹配），第二个参数可以是任何你想要的东西。
+The first argument should be the :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` name (does not have to match the extension name in the glTF file), and the second argument can be anything you want.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

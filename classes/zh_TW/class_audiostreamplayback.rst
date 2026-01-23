@@ -5,30 +5,30 @@
 AudioStreamPlayback
 ===================
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`AudioStreamPlaybackInteractive<class_AudioStreamPlaybackInteractive>`, :ref:`AudioStreamPlaybackPlaylist<class_AudioStreamPlaybackPlaylist>`, :ref:`AudioStreamPlaybackPolyphonic<class_AudioStreamPlaybackPolyphonic>`, :ref:`AudioStreamPlaybackResampled<class_AudioStreamPlaybackResampled>`, :ref:`AudioStreamPlaybackSynchronized<class_AudioStreamPlaybackSynchronized>`
+**Inherited By:** :ref:`AudioStreamPlaybackInteractive<class_AudioStreamPlaybackInteractive>`, :ref:`AudioStreamPlaybackPlaylist<class_AudioStreamPlaybackPlaylist>`, :ref:`AudioStreamPlaybackPolyphonic<class_AudioStreamPlaybackPolyphonic>`, :ref:`AudioStreamPlaybackResampled<class_AudioStreamPlaybackResampled>`, :ref:`AudioStreamPlaybackSynchronized<class_AudioStreamPlaybackSynchronized>`
 
-用於播放音訊的元類。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-可播放、循環及暫停音訊。使用方式請參閱 :ref:`AudioStream<class_AudioStream>` 與 :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`\ 。
+Meta class for playing back audio.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- `音訊產生器範例 <https://godotengine.org/asset-library/asset/2759>`__
+Can play, loop, pause a scroll through audio. See :ref:`AudioStream<class_AudioStream>` and :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>` for usage.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- `Audio Generator Demo <https://godotengine.org/asset-library/asset/2759>`__
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -79,8 +79,8 @@ AudioStreamPlayback
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_AudioStreamPlayback_private_method__get_loop_count:
 
@@ -88,7 +88,7 @@ AudioStreamPlayback
 
 :ref:`int<class_int>` **_get_loop_count**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioStreamPlayback_private_method__get_loop_count>`
 
-可覆寫的方法。應回傳此音訊流已循環的次數。大多數內建播放通常回傳 ``0``\ 。
+Overridable method. Should return how many times this audio stream has looped. Most built-in playbacks always return ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ AudioStreamPlayback
 
 :ref:`Variant<class_Variant>` **_get_parameter**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |virtual| |const| :ref:`🔗<class_AudioStreamPlayback_private_method__get_parameter>`
 
-依名稱回傳播放參數的目前值（參見 :ref:`AudioStream._get_parameter_list()<class_AudioStream_private_method__get_parameter_list>`\ ）。
+Return the current value of a playback parameter by name (see :ref:`AudioStream._get_parameter_list()<class_AudioStream_private_method__get_parameter_list>`).
 
 .. rst-class:: classref-item-separator
 
@@ -112,7 +112,7 @@ AudioStreamPlayback
 
 :ref:`float<class_float>` **_get_playback_position**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_AudioStreamPlayback_private_method__get_playback_position>`
 
-可覆寫的方法。應回傳音訊流目前的播放進度（秒）。
+Overridable method. Should return the current progress along the audio stream, in seconds.
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ AudioStreamPlayback
 
 :ref:`bool<class_bool>` **_is_playing**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_AudioStreamPlayback_private_method__is_playing>`
 
-可覆寫的方法。若此播放實例處於啟動並正在播放音訊流時，應回傳 ``true``\ 。
+Overridable method. Should return ``true`` if this playback is active and playing its audio stream.
 
 .. rst-class:: classref-item-separator
 
@@ -136,9 +136,9 @@ AudioStreamPlayback
 
 :ref:`int<class_int>` **_mix**\ (\ buffer\: ``AudioFrame*``, rate_scale\: :ref:`float<class_float>`, frames\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_AudioStreamPlayback_private_method__mix>`
 
-重寫此方法以自訂混音行為，即便播放未啟動也會呼叫。
+Override this method to customize how the audio stream is mixed. This method is called even if the playback is not active.
 
-\ **注意：** 在 GDScript 或 C# 中覆寫此方法並無實際用途；僅 GDExtension 可以利用。
+\ **Note:** It is not useful to override this method in GDScript or C#. Only GDExtension can take advantage of it.
 
 .. rst-class:: classref-item-separator
 
@@ -150,7 +150,7 @@ AudioStreamPlayback
 
 |void| **_seek**\ (\ position\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_AudioStreamPlayback_private_method__seek>`
 
-重寫此方法以自訂在尋位至指定 ``position`` 時的行為，例如由 :ref:`AudioStreamPlayer.seek()<class_AudioStreamPlayer_method_seek>` 觸發。
+Override this method to customize what happens when seeking this audio stream at the given ``position``, such as by calling :ref:`AudioStreamPlayer.seek()<class_AudioStreamPlayer_method_seek>`.
 
 .. rst-class:: classref-item-separator
 
@@ -162,7 +162,7 @@ AudioStreamPlayback
 
 |void| **_set_parameter**\ (\ name\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) |virtual| :ref:`🔗<class_AudioStreamPlayback_private_method__set_parameter>`
 
-依名稱設定播放參數的目前值（參見 :ref:`AudioStream._get_parameter_list()<class_AudioStream_private_method__get_parameter_list>`\ ）。
+Set the current value of a playback parameter by name (see :ref:`AudioStream._get_parameter_list()<class_AudioStream_private_method__get_parameter_list>`).
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ AudioStreamPlayback
 
 |void| **_start**\ (\ from_pos\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_AudioStreamPlayback_private_method__start>`
 
-重寫此方法以自訂播放自指定位置開始（例如呼叫 :ref:`AudioStreamPlayer.play()<class_AudioStreamPlayer_method_play>`\ ）時的行為。
+Override this method to customize what happens when the playback starts at the given position, such as by calling :ref:`AudioStreamPlayer.play()<class_AudioStreamPlayer_method_play>`.
 
 .. rst-class:: classref-item-separator
 
@@ -186,7 +186,7 @@ AudioStreamPlayback
 
 |void| **_stop**\ (\ ) |virtual| |required| :ref:`🔗<class_AudioStreamPlayback_private_method__stop>`
 
-重寫此方法以自訂停止播放（例如呼叫 :ref:`AudioStreamPlayer.stop()<class_AudioStreamPlayer_method_stop>`\ ）時的行為。
+Override this method to customize what happens when the playback is stopped, such as by calling :ref:`AudioStreamPlayer.stop()<class_AudioStreamPlayer_method_stop>`.
 
 .. rst-class:: classref-item-separator
 
@@ -198,7 +198,7 @@ AudioStreamPlayback
 
 |void| **_tag_used_streams**\ (\ ) |virtual| :ref:`🔗<class_AudioStreamPlayback_private_method__tag_used_streams>`
 
-可覆寫的方法。當播放啟動且 :ref:`AudioServer.set_enable_tagging_used_audio_streams()<class_AudioServer_method_set_enable_tagging_used_audio_streams>` 為 ``true`` 時，每次混音都會呼叫。編輯器外掛可透過此方法標記音訊流當前位置並於預覽中顯示。
+Overridable method. Called whenever the audio stream is mixed if the playback is active and :ref:`AudioServer.set_enable_tagging_used_audio_streams()<class_AudioServer_method_set_enable_tagging_used_audio_streams>` has been set to ``true``. Editor plugins may use this method to "tag" the current position along the audio stream and display it in a preview.
 
 .. rst-class:: classref-item-separator
 
@@ -210,7 +210,7 @@ AudioStreamPlayback
 
 :ref:`int<class_int>` **get_loop_count**\ (\ ) |const| :ref:`🔗<class_AudioStreamPlayback_method_get_loop_count>`
 
-回傳此串流已循環的次數。
+Returns the number of times the stream has looped.
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +222,7 @@ AudioStreamPlayback
 
 :ref:`float<class_float>` **get_playback_position**\ (\ ) |const| :ref:`🔗<class_AudioStreamPlayback_method_get_playback_position>`
 
-回傳串流目前的位置（秒）。
+Returns the current position in the stream, in seconds.
 
 .. rst-class:: classref-item-separator
 
@@ -234,9 +234,9 @@ AudioStreamPlayback
 
 :ref:`AudioSamplePlayback<class_AudioSamplePlayback>` **get_sample_playback**\ (\ ) |const| :ref:`🔗<class_AudioStreamPlayback_method_get_sample_playback>`
 
-**實驗性：** 此方法可能在未來版本中變更或移除。
+**Experimental:** This method may be changed or removed in future versions.
 
-回傳與此 **AudioStreamPlayback** 關聯、用於播放此串流取樣的 :ref:`AudioSamplePlayback<class_AudioSamplePlayback>`\ 。
+Returns the :ref:`AudioSamplePlayback<class_AudioSamplePlayback>` associated with this **AudioStreamPlayback** for playing back the audio sample of this stream.
 
 .. rst-class:: classref-item-separator
 
@@ -248,7 +248,7 @@ AudioStreamPlayback
 
 :ref:`bool<class_bool>` **is_playing**\ (\ ) |const| :ref:`🔗<class_AudioStreamPlayback_method_is_playing>`
 
-若串流正在播放則回傳 ``true``\ 。
+Returns ``true`` if the stream is playing.
 
 .. rst-class:: classref-item-separator
 
@@ -260,11 +260,11 @@ AudioStreamPlayback
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **mix_audio**\ (\ rate_scale\: :ref:`float<class_float>`, frames\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioStreamPlayback_method_mix_audio>`
 
-自目前位置起，依 ``rate_scale`` 速度混音最多 ``frames`` 個影格並推進串流。
+Mixes up to ``frames`` of audio from the stream from the current position, at a rate of ``rate_scale``, advancing the stream.
 
-回傳的 :ref:`PackedVector2Array<class_PackedVector2Array>` 中，每個元素包含該影格左右聲道的音量。
+Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` where each element holds the left and right channel volume levels of each frame.
 
-\ **注意：** 實際回傳的影格數可能少於要求值，請使用回傳陣列的長度做後續處理。
+\ **Note:** Can return fewer frames than requested, make sure to use the size of the return value.
 
 .. rst-class:: classref-item-separator
 
@@ -276,7 +276,7 @@ AudioStreamPlayback
 
 |void| **seek**\ (\ time\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_AudioStreamPlayback_method_seek>`
 
-將串流尋位至指定 ``time``\ （秒）。
+Seeks the stream at the given ``time``, in seconds.
 
 .. rst-class:: classref-item-separator
 
@@ -288,9 +288,9 @@ AudioStreamPlayback
 
 |void| **set_sample_playback**\ (\ playback_sample\: :ref:`AudioSamplePlayback<class_AudioSamplePlayback>`\ ) :ref:`🔗<class_AudioStreamPlayback_method_set_sample_playback>`
 
-**實驗性：** 此方法可能在未來版本中變更或移除。
+**Experimental:** This method may be changed or removed in future versions.
 
-將 :ref:`AudioSamplePlayback<class_AudioSamplePlayback>` 關聯到此 **AudioStreamPlayback** 以播放該串流的取樣。
+Associates :ref:`AudioSamplePlayback<class_AudioSamplePlayback>` to this **AudioStreamPlayback** for playing back the audio sample of this stream.
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +302,7 @@ AudioStreamPlayback
 
 |void| **start**\ (\ from_pos\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_AudioStreamPlayback_method_start>`
 
-自指定的 ``from_pos``\ （秒）開始播放串流。
+Starts the stream from the given ``from_pos``, in seconds.
 
 .. rst-class:: classref-item-separator
 
@@ -314,14 +314,14 @@ AudioStreamPlayback
 
 |void| **stop**\ (\ ) :ref:`🔗<class_AudioStreamPlayback_method_stop>`
 
-停止串流播放。
+Stops the stream.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

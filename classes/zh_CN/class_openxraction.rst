@@ -5,27 +5,27 @@
 OpenXRAction
 ============
 
-**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-OpenXR 动作。
+An OpenXR action.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-该资源定义了一个 OpenXR 动作。动作可用于输入（按钮、操纵杆、触发器等）和输出（触觉）。
+This resource defines an OpenXR action. Actions can be used both for inputs (buttons, joysticks, triggers, etc.) and outputs (haptics).
 
-只要有可能，OpenXR 就会在动作类型和输入类型之间执行自动转换。因此，如果触发器被按下，则绑定到一个布尔动作的模拟触发器将返回 ``false``\ ，如果完全按下则返回 ``true``\ 。
+OpenXR performs automatic conversion between action type and input type whenever possible. An analog trigger bound to a boolean action will thus return ``false`` if the trigger is depressed and ``true`` if pressed fully.
 
-动作并不被直接绑定到特定设备，相反，OpenXR 识别了有限数量的顶级路径，这些路径按用途识别设备。我们可以通过这些顶级路径来限制一个动作可以被绑定到哪些设备上。例如，一个只应用于手持控制器的动作，可以具有与其关联的顶级路径“/user/hand/left”和“/user/hand/right”。有关顶级路径的详细信息，请参阅 OpenXR 规范中的\ `保留路径部分 <https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#semantic-path-reserved>`__\ 。
+Actions are not directly bound to specific devices, instead OpenXR recognizes a limited number of top level paths that identify devices by usage. We can restrict which devices an action can be bound to by these top level paths. For instance an action that should only be used for hand held controllers can have the top level paths "/user/hand/left" and "/user/hand/right" associated with them. See the `reserved path section in the OpenXR specification <https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#semantic-path-reserved>`__ for more info on the top level paths.
 
-注意，资源的名字是用来注册动作的。
+Note that the name of the resource is used to register the action with.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ OpenXR 动作。
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_OpenXRAction_ActionType:
 
@@ -59,7 +59,7 @@ enum **ActionType**: :ref:`🔗<enum_OpenXRAction_ActionType>`
 
 :ref:`ActionType<enum_OpenXRAction_ActionType>` **OPENXR_ACTION_BOOL** = ``0``
 
-该动作提供布尔值。
+This action provides a boolean value.
 
 .. _class_OpenXRAction_constant_OPENXR_ACTION_FLOAT:
 
@@ -67,7 +67,7 @@ enum **ActionType**: :ref:`🔗<enum_OpenXRAction_ActionType>`
 
 :ref:`ActionType<enum_OpenXRAction_ActionType>` **OPENXR_ACTION_FLOAT** = ``1``
 
-该动作提供 ``0.0`` 和 ``1.0`` 之间的浮点值，用于扳机等模拟输入。
+This action provides a float value between ``0.0`` and ``1.0`` for any analog input such as triggers.
 
 .. _class_OpenXRAction_constant_OPENXR_ACTION_VECTOR2:
 
@@ -75,7 +75,7 @@ enum **ActionType**: :ref:`🔗<enum_OpenXRAction_ActionType>`
 
 :ref:`ActionType<enum_OpenXRAction_ActionType>` **OPENXR_ACTION_VECTOR2** = ``2``
 
-该动作提供 :ref:`Vector2<class_Vector2>` 值，可以和嵌入式控制板与操纵杆绑定。
+This action provides a :ref:`Vector2<class_Vector2>` value and can be bound to embedded trackpads and joysticks.
 
 .. _class_OpenXRAction_constant_OPENXR_ACTION_POSE:
 
@@ -95,8 +95,8 @@ enum **ActionType**: :ref:`🔗<enum_OpenXRAction_ActionType>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_OpenXRAction_property_action_type:
 
@@ -109,7 +109,7 @@ enum **ActionType**: :ref:`🔗<enum_OpenXRAction_ActionType>`
 - |void| **set_action_type**\ (\ value\: :ref:`ActionType<enum_OpenXRAction_ActionType>`\ )
 - :ref:`ActionType<enum_OpenXRAction_ActionType>` **get_action_type**\ (\ )
 
-动作的类型。
+The type of action.
 
 .. rst-class:: classref-item-separator
 
@@ -126,7 +126,7 @@ enum **ActionType**: :ref:`🔗<enum_OpenXRAction_ActionType>`
 - |void| **set_localized_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_localized_name**\ (\ )
 
-该动作的本地化描述。
+The localized description of this action.
 
 .. rst-class:: classref-item-separator
 
@@ -143,16 +143,16 @@ enum **ActionType**: :ref:`🔗<enum_OpenXRAction_ActionType>`
 - |void| **set_toplevel_paths**\ (\ value\: :ref:`PackedStringArray<class_PackedStringArray>`\ )
 - :ref:`PackedStringArray<class_PackedStringArray>` **get_toplevel_paths**\ (\ )
 
-该动作所能绑定到的顶级路径的合集。
+A collections of toplevel paths to which this action can be bound.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

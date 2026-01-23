@@ -5,21 +5,21 @@
 StyleBoxLine
 ============
 
-**繼承：** :ref:`StyleBox<class_StyleBox>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`StyleBox<class_StyleBox>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-顯示一條線的 :ref:`StyleBox<class_StyleBox>`\ ，可以給定顏色和粗細。
+A :ref:`StyleBox<class_StyleBox>` that displays a single line of a given color and thickness.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-顯示一條線的 :ref:`StyleBox<class_StyleBox>`\ ，可以給定顏色和粗細。可以是橫線也可以是分隔號。可用作分隔符。
+A :ref:`StyleBox<class_StyleBox>` that displays a single line of a given color and thickness. The line can be either horizontal or vertical. Useful for separators.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ StyleBoxLine
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_StyleBoxLine_property_color:
 
@@ -56,7 +56,7 @@ StyleBoxLine
 - |void| **set_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_color**\ (\ )
 
-線的顏色。
+The line's color.
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ StyleBoxLine
 - |void| **set_grow_begin**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_grow_begin**\ (\ )
 
-線將在 **StyleBoxLine** 的邊界之前延伸的圖元數。如果設定為負值，則該線將從 **StyleBoxLine** 的邊界內開始。
+The number of pixels the line will extend before the **StyleBoxLine**'s bounds. If set to a negative value, the line will begin inside the **StyleBoxLine**'s bounds.
 
 .. rst-class:: classref-item-separator
 
@@ -90,7 +90,7 @@ StyleBoxLine
 - |void| **set_grow_end**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_grow_end**\ (\ )
 
-線將超出 **StyleBoxLine** 邊界的圖元數。如果設定為負值，則該線將在 **StyleBoxLine** 的邊界內結束。
+The number of pixels the line will extend past the **StyleBoxLine**'s bounds. If set to a negative value, the line will end inside the **StyleBoxLine**'s bounds.
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ StyleBoxLine
 - |void| **set_thickness**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_thickness**\ (\ )
 
-線條的粗細（以圖元為單位）。
+The line's thickness in pixels.
 
 .. rst-class:: classref-item-separator
 
@@ -124,14 +124,14 @@ StyleBoxLine
 - |void| **set_vertical**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_vertical**\ (\ )
 
-如果為 ``true``\ ，則該線將是垂直的。如果 ``false``\ ，該線將是水平的。
+If ``true``, the line will be vertical. If ``false``, the line will be horizontal.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

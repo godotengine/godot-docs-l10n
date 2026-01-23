@@ -5,18 +5,18 @@
 FontVariation
 =============
 
-**继承：** :ref:`Font<class_Font>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Font<class_Font>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-字体的变体，提供额外的设置。
+A variation of a font with additional settings.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-提供 OpenType 变体，模拟的粗体/斜体，以及 OpenType 特性和额外间距等额外的字体设置。
+Provides OpenType variations, simulated bold / slant, and additional font settings like OpenType features and extra spacing.
 
-要使用模拟的粗体变体：
+To use simulated bold font variant:
 
 
 .. tabs::
@@ -39,7 +39,7 @@ FontVariation
 
 
 
-要设置多个变体轴的坐标：
+To set the coordinate of multiple variation axes:
 
 ::
 
@@ -50,8 +50,8 @@ FontVariation
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -82,8 +82,8 @@ FontVariation
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -98,8 +98,8 @@ FontVariation
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_FontVariation_property_base_font:
 
@@ -112,7 +112,7 @@ FontVariation
 - |void| **set_base_font**\ (\ value\: :ref:`Font<class_Font>`\ )
 - :ref:`Font<class_Font>` **get_base_font**\ (\ )
 
-用于创建变体的基础字体。如果未设置，则使用默认的 :ref:`Theme<class_Theme>` 字体。
+Base font used to create a variation. If not set, default :ref:`Theme<class_Theme>` font is used.
 
 .. rst-class:: classref-item-separator
 
@@ -129,7 +129,7 @@ FontVariation
 - |void| **set_baseline_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_baseline_offset**\ (\ )
 
-额外的基线偏移（作为字体高度的一部分）。
+Extra baseline offset (as a fraction of font height).
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +146,7 @@ FontVariation
 - |void| **set_opentype_features**\ (\ value\: :ref:`Dictionary<class_Dictionary>`\ )
 - :ref:`Dictionary<class_Dictionary>` **get_opentype_features**\ (\ )
 
-一组 OpenType 功能标签。更多信息：\ `OpenType 功能标签 <https://docs.microsoft.com/en-us/typography/opentype/spec/featuretags>`__\ 。
+A set of OpenType feature tags. More info: `OpenType feature tags <https://docs.microsoft.com/en-us/typography/opentype/spec/featuretags>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ FontVariation
 - |void| **set_spacing**\ (\ spacing\: :ref:`SpacingType<enum_TextServer_SpacingType>`, value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_spacing**\ (\ )
 
-行底部的额外间距，单位为像素。
+Extra spacing at the bottom of the line in pixels.
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ FontVariation
 - |void| **set_spacing**\ (\ spacing\: :ref:`SpacingType<enum_TextServer_SpacingType>`, value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_spacing**\ (\ )
 
-图形字形之间的额外间距。
+Extra spacing between graphical glyphs.
 
 .. rst-class:: classref-item-separator
 
@@ -197,7 +197,7 @@ FontVariation
 - |void| **set_spacing**\ (\ spacing\: :ref:`SpacingType<enum_TextServer_SpacingType>`, value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_spacing**\ (\ )
 
-空格字形的额外宽度。
+Extra width of the space glyphs.
 
 .. rst-class:: classref-item-separator
 
@@ -214,7 +214,7 @@ FontVariation
 - |void| **set_spacing**\ (\ spacing\: :ref:`SpacingType<enum_TextServer_SpacingType>`, value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_spacing**\ (\ )
 
-行顶部的额外间距，单位为像素。
+Extra spacing at the top of the line in pixels.
 
 .. rst-class:: classref-item-separator
 
@@ -231,9 +231,9 @@ FontVariation
 - |void| **set_variation_embolden**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_variation_embolden**\ (\ )
 
-如果不等于零，则加粗字体轮廓。负值会减小轮廓厚度。
+If is not equal to zero, emboldens the font outlines. Negative values reduce the outline thickness.
 
-\ **注意：**\ 加粗字体可能有自相交的轮廓，这将阻止 MSDF 字体和 :ref:`TextMesh<class_TextMesh>` 正常工作。
+\ **Note:** Emboldened fonts might have self-intersecting outlines, which will prevent MSDF fonts and :ref:`TextMesh<class_TextMesh>` from working correctly.
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ FontVariation
 - |void| **set_variation_face_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_variation_face_index**\ (\ )
 
-在 TrueType / OpenType 集合文件中的活动字体索引。
+Active face index in the TrueType / OpenType collection file.
 
 .. rst-class:: classref-item-separator
 
@@ -267,11 +267,11 @@ FontVariation
 - |void| **set_variation_opentype**\ (\ value\: :ref:`Dictionary<class_Dictionary>`\ )
 - :ref:`Dictionary<class_Dictionary>` **get_variation_opentype**\ (\ )
 
-字体 OpenType 变体坐标。详见：\ `OpenType 变体标签 <https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg>`__\ 。
+Font OpenType variation coordinates. More info: `OpenType variation tags <https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg>`__.
 
-\ **注意：**\ 这个 :ref:`Dictionary<class_Dictionary>` 使用 OpenType 标签作为键。变体轴既可以用标签来标识（\ :ref:`int<class_int>`\ ，例如 ``0x77678674``\ ），也可以用名称来标识（\ :ref:`String<class_String>`\ ，例如 ``wght``\ ）。有些轴可以通过多个名称来访问。例如，\ ``wght`` 和 ``weight`` 引用的是同一个轴。而标签则是唯一的。要在名称和标签之间转换，请使用 :ref:`TextServer.name_to_tag()<class_TextServer_method_name_to_tag>` 和 :ref:`TextServer.tag_to_name()<class_TextServer_method_tag_to_name>`\ 。
+\ **Note:** This :ref:`Dictionary<class_Dictionary>` uses OpenType tags as keys. Variation axes can be identified both by tags (:ref:`int<class_int>`, e.g. ``0x77678674``) and names (:ref:`String<class_String>`, e.g. ``wght``). Some axes might be accessible by multiple names. For example, ``wght`` refers to the same axis as ``weight``. Tags on the other hand are unique. To convert between names and tags, use :ref:`TextServer.name_to_tag()<class_TextServer_method_name_to_tag>` and :ref:`TextServer.tag_to_name()<class_TextServer_method_tag_to_name>`.
 
-\ **注意：**\ 要获取字体的可用变体轴，请使用 :ref:`Font.get_supported_variation_list()<class_Font_method_get_supported_variation_list>`\ 。
+\ **Note:** To get available variation axes of a font, use :ref:`Font.get_supported_variation_list()<class_Font_method_get_supported_variation_list>`.
 
 .. rst-class:: classref-item-separator
 
@@ -288,9 +288,9 @@ FontVariation
 - |void| **set_variation_transform**\ (\ value\: :ref:`Transform2D<class_Transform2D>`\ )
 - :ref:`Transform2D<class_Transform2D>` **get_variation_transform**\ (\ )
 
-应用于字体轮廓的 2D 变换，可用于倾斜、翻转和旋转字形。
+2D transform, applied to the font outlines, can be used for slanting, flipping and rotating glyphs.
 
-例如，要通过倾斜来模拟斜体字体，请应用以下变换 ``Transform2D(1.0, slant, 0.0, 1.0, 0.0, 0.0)``\ 。
+For example, to simulate italic typeface by slanting, apply the following transform ``Transform2D(1.0, slant, 0.0, 1.0, 0.0, 0.0)``.
 
 .. rst-class:: classref-section-separator
 
@@ -298,8 +298,8 @@ FontVariation
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_FontVariation_method_set_spacing:
 
@@ -307,14 +307,14 @@ FontVariation
 
 |void| **set_spacing**\ (\ spacing\: :ref:`SpacingType<enum_TextServer_SpacingType>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FontVariation_method_set_spacing>`
 
-将 ``spacing`` 的间距设置为 ``value``\ ，单位为像素（与字体大小无关）。
+Sets the spacing for ``spacing`` to ``value`` in pixels (not relative to the font size).
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,29 +5,29 @@
 Time
 ====
 
-**继承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-用于处理时间数据的单例。
+A singleton for working with time data.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-Time 单例可以转换各种不同格式的时间，也可以从系统获取时间信息。
+The Time singleton allows converting time between various formats and also getting time information from the system.
 
-这个类尽可能多地符合了 ISO 8601 标准。所有日期都遵循“外推格里历”。因此 ``1582-10-15`` 的前一天是 ``1582-10-14``\ ，而不是 ``1582-10-04``\ 。公元 1 年的前一年（即公元前 1 年）是数字 ``0``\ ，再往前的一年（公元前 2 年）是 ``-1``\ ，以此类推。
+This class conforms with as many of the ISO 8601 standards as possible. All dates follow the Proleptic Gregorian calendar. As such, the day before ``1582-10-15`` is ``1582-10-14``, not ``1582-10-04``. The year before 1 AD (aka 1 BC) is number ``0``, with the year before that (2 BC) being ``-1``, etc.
 
-转换方法假设“时区相同”，不会自动处理时区或 DST（夏令时）的转换。不会对闰秒进行处理，如果需要必须手动处理。“Z”等后缀也没有处理，你需要进行手动剥除。
+Conversion methods assume "the same timezone", and do not handle timezone conversions or DST automatically. Leap seconds are also not handled, they must be done manually if desired. Suffixes such as "Z" are not handled, you need to strip them away manually.
 
-从系统获取时间信息时，时间可能是本地时间或 UTC 时间，取决于 ``utc`` 参数。不过 :ref:`get_unix_time_from_system()<class_Time_method_get_unix_time_from_system>` 方法始终使用 UTC，因为返回的是从 `Unix 时间原点 <https://zh.wikipedia.org/zh-cn/UNIX%E6%97%B6%E9%97%B4>`__\ 起经过的秒数。
+When getting time information from the system, the time can either be in the local timezone or UTC depending on the ``utc`` parameter. However, the :ref:`get_unix_time_from_system()<class_Time_method_get_unix_time_from_system>` method always uses UTC as it returns the seconds passed since the `Unix epoch <https://en.wikipedia.org/wiki/Unix_time>`__.
 
-\ **重要：**\ ``_from_system`` 系列方法使用的是系统始终，用户可以自行设置。\ **千万不要**\ 使用该方法进行精确的时间计算，因为计算结果可能受到用户或操作系统的自动调整的影响。精确时间的计算\ **请始终使用** :ref:`get_ticks_usec()<class_Time_method_get_ticks_usec>` 或 :ref:`get_ticks_msec()<class_Time_method_get_ticks_msec>`\ ，可以保证单调性（即不会变小）。
+\ **Important:** The ``_from_system`` methods use the system clock that the user can manually set. **Never use** this method for precise time calculation since its results are subject to automatic adjustments by the user or the operating system. **Always use** :ref:`get_ticks_usec()<class_Time_method_get_ticks_usec>` or :ref:`get_ticks_msec()<class_Time_method_get_ticks_msec>` for precise time calculation instead, since they are guaranteed to be monotonic (i.e. never decrease).
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -82,8 +82,8 @@ Time 单例可以转换各种不同格式的时间，也可以从系统获取时
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_Time_Month:
 
@@ -97,7 +97,7 @@ enum **Month**: :ref:`🔗<enum_Time_Month>`
 
 :ref:`Month<enum_Time_Month>` **MONTH_JANUARY** = ``1``
 
-一月份，使用数字 ``01`` 表示。
+The month of January, represented numerically as ``01``.
 
 .. _class_Time_constant_MONTH_FEBRUARY:
 
@@ -105,7 +105,7 @@ enum **Month**: :ref:`🔗<enum_Time_Month>`
 
 :ref:`Month<enum_Time_Month>` **MONTH_FEBRUARY** = ``2``
 
-二月份，使用数字 ``02`` 表示。
+The month of February, represented numerically as ``02``.
 
 .. _class_Time_constant_MONTH_MARCH:
 
@@ -113,7 +113,7 @@ enum **Month**: :ref:`🔗<enum_Time_Month>`
 
 :ref:`Month<enum_Time_Month>` **MONTH_MARCH** = ``3``
 
-三月份，使用数字 ``03`` 表示。
+The month of March, represented numerically as ``03``.
 
 .. _class_Time_constant_MONTH_APRIL:
 
@@ -121,7 +121,7 @@ enum **Month**: :ref:`🔗<enum_Time_Month>`
 
 :ref:`Month<enum_Time_Month>` **MONTH_APRIL** = ``4``
 
-四月份，使用数字 ``04`` 表示。
+The month of April, represented numerically as ``04``.
 
 .. _class_Time_constant_MONTH_MAY:
 
@@ -129,7 +129,7 @@ enum **Month**: :ref:`🔗<enum_Time_Month>`
 
 :ref:`Month<enum_Time_Month>` **MONTH_MAY** = ``5``
 
-五月份，使用数字 ``05`` 表示。
+The month of May, represented numerically as ``05``.
 
 .. _class_Time_constant_MONTH_JUNE:
 
@@ -137,7 +137,7 @@ enum **Month**: :ref:`🔗<enum_Time_Month>`
 
 :ref:`Month<enum_Time_Month>` **MONTH_JUNE** = ``6``
 
-六月份，使用数字 ``06`` 表示。
+The month of June, represented numerically as ``06``.
 
 .. _class_Time_constant_MONTH_JULY:
 
@@ -145,7 +145,7 @@ enum **Month**: :ref:`🔗<enum_Time_Month>`
 
 :ref:`Month<enum_Time_Month>` **MONTH_JULY** = ``7``
 
-七月份，使用数字 ``07`` 表示。
+The month of July, represented numerically as ``07``.
 
 .. _class_Time_constant_MONTH_AUGUST:
 
@@ -153,7 +153,7 @@ enum **Month**: :ref:`🔗<enum_Time_Month>`
 
 :ref:`Month<enum_Time_Month>` **MONTH_AUGUST** = ``8``
 
-八月份，使用数字 ``08`` 表示。
+The month of August, represented numerically as ``08``.
 
 .. _class_Time_constant_MONTH_SEPTEMBER:
 
@@ -161,7 +161,7 @@ enum **Month**: :ref:`🔗<enum_Time_Month>`
 
 :ref:`Month<enum_Time_Month>` **MONTH_SEPTEMBER** = ``9``
 
-九月份，使用数字 ``09`` 表示。
+The month of September, represented numerically as ``09``.
 
 .. _class_Time_constant_MONTH_OCTOBER:
 
@@ -169,7 +169,7 @@ enum **Month**: :ref:`🔗<enum_Time_Month>`
 
 :ref:`Month<enum_Time_Month>` **MONTH_OCTOBER** = ``10``
 
-十月份，使用数字 ``10`` 表示。
+The month of October, represented numerically as ``10``.
 
 .. _class_Time_constant_MONTH_NOVEMBER:
 
@@ -177,7 +177,7 @@ enum **Month**: :ref:`🔗<enum_Time_Month>`
 
 :ref:`Month<enum_Time_Month>` **MONTH_NOVEMBER** = ``11``
 
-十一月份，使用数字 ``11`` 表示。
+The month of November, represented numerically as ``11``.
 
 .. _class_Time_constant_MONTH_DECEMBER:
 
@@ -185,7 +185,7 @@ enum **Month**: :ref:`🔗<enum_Time_Month>`
 
 :ref:`Month<enum_Time_Month>` **MONTH_DECEMBER** = ``12``
 
-十二月份，使用数字 ``12`` 表示。
+The month of December, represented numerically as ``12``.
 
 .. rst-class:: classref-item-separator
 
@@ -203,7 +203,7 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`Weekday<enum_Time_Weekday>` **WEEKDAY_SUNDAY** = ``0``
 
-星期日，使用数字 ``0`` 表示。
+The day of the week Sunday, represented numerically as ``0``.
 
 .. _class_Time_constant_WEEKDAY_MONDAY:
 
@@ -211,7 +211,7 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`Weekday<enum_Time_Weekday>` **WEEKDAY_MONDAY** = ``1``
 
-星期一，使用数字 ``1`` 表示。
+The day of the week Monday, represented numerically as ``1``.
 
 .. _class_Time_constant_WEEKDAY_TUESDAY:
 
@@ -219,7 +219,7 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`Weekday<enum_Time_Weekday>` **WEEKDAY_TUESDAY** = ``2``
 
-星期二，使用数字 ``2`` 表示。
+The day of the week Tuesday, represented numerically as ``2``.
 
 .. _class_Time_constant_WEEKDAY_WEDNESDAY:
 
@@ -227,7 +227,7 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`Weekday<enum_Time_Weekday>` **WEEKDAY_WEDNESDAY** = ``3``
 
-星期三，使用数字 ``3`` 表示。
+The day of the week Wednesday, represented numerically as ``3``.
 
 .. _class_Time_constant_WEEKDAY_THURSDAY:
 
@@ -235,7 +235,7 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`Weekday<enum_Time_Weekday>` **WEEKDAY_THURSDAY** = ``4``
 
-星期四，使用数字 ``4`` 表示。
+The day of the week Thursday, represented numerically as ``4``.
 
 .. _class_Time_constant_WEEKDAY_FRIDAY:
 
@@ -243,7 +243,7 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`Weekday<enum_Time_Weekday>` **WEEKDAY_FRIDAY** = ``5``
 
-星期五，使用数字 ``5`` 表示。
+The day of the week Friday, represented numerically as ``5``.
 
 .. _class_Time_constant_WEEKDAY_SATURDAY:
 
@@ -251,7 +251,7 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`Weekday<enum_Time_Weekday>` **WEEKDAY_SATURDAY** = ``6``
 
-星期六，使用数字 ``6`` 表示。
+The day of the week Saturday, represented numerically as ``6``.
 
 .. rst-class:: classref-section-separator
 
@@ -259,8 +259,8 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_Time_method_get_date_dict_from_system:
 
@@ -268,9 +268,9 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`Dictionary<class_Dictionary>` **get_date_dict_from_system**\ (\ utc\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Time_method_get_date_dict_from_system>`
 
-以字典的形式返回当前时间，包含的键为：\ ``year``\ 、\ ``month``\ 、\ ``day`` 和 ``weekday``\ 。
+Returns the current date as a dictionary of keys: ``year``, ``month``, ``day``, and ``weekday``.
 
-当 ``utc`` 为 ``false`` 时，返回的是系统的本地时间，否则为 UTC 时间。
+The returned values are in the system's local time when ``utc`` is ``false``, otherwise they are in UTC.
 
 .. rst-class:: classref-item-separator
 
@@ -282,7 +282,7 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`Dictionary<class_Dictionary>` **get_date_dict_from_unix_time**\ (\ unix_time_val\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Time_method_get_date_dict_from_unix_time>`
 
-将给定的 Unix 时间戳转换为字典，包含的键为：\ ``year``\ 、\ ``month``\ 、\ ``day``\ 、\ ``weekday``\ 。
+Converts the given Unix timestamp to a dictionary of keys: ``year``, ``month``, ``day``, and ``weekday``.
 
 .. rst-class:: classref-item-separator
 
@@ -294,9 +294,9 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`String<class_String>` **get_date_string_from_system**\ (\ utc\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Time_method_get_date_string_from_system>`
 
-以 ISO 8601 日期字符串的形式返回当前日期（YYYY-MM-DD）。
+Returns the current date as an ISO 8601 date string (YYYY-MM-DD).
 
-当 ``utc`` 为 ``false`` 时，返回的是系统的本地时间，否则为 UTC 时间。
+The returned values are in the system's local time when ``utc`` is ``false``, otherwise they are in UTC.
 
 .. rst-class:: classref-item-separator
 
@@ -308,7 +308,7 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`String<class_String>` **get_date_string_from_unix_time**\ (\ unix_time_val\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Time_method_get_date_string_from_unix_time>`
 
-将给定的 Unix 时间戳转换为 ISO 8601 日期字符串（YYYY-MM-DD）。
+Converts the given Unix timestamp to an ISO 8601 date string (YYYY-MM-DD).
 
 .. rst-class:: classref-item-separator
 
@@ -320,11 +320,11 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`Dictionary<class_Dictionary>` **get_datetime_dict_from_datetime_string**\ (\ datetime\: :ref:`String<class_String>`, weekday\: :ref:`bool<class_bool>`\ ) |const| :ref:`🔗<class_Time_method_get_datetime_dict_from_datetime_string>`
 
-将给定的 ISO 8601 日期和时间字符串（YYYY-MM-DDTHH:MM:SS）转换为字典，包含的键为：\ ``year``\ 、\ ``month``\ 、\ ``day``\ 、\ ``weekday``\ 、\ ``hour``\ 、\ ``minute``\ 、\ ``second``\ 。
+Converts the given ISO 8601 date and time string (YYYY-MM-DDTHH:MM:SS) to a dictionary of keys: ``year``, ``month``, ``day``, ``weekday``, ``hour``, ``minute``, and ``second``.
 
-当 ``weekday`` 为 ``false`` 时，不包含 ``weekday`` 记录（计算花费相对较大）。
+If ``weekday`` is ``false``, then the ``weekday`` entry is excluded (the calculation is relatively expensive).
 
-\ **注意：**\ 时间字符串中的小数会被静默忽略。
+\ **Note:** Any decimal fraction in the time string will be ignored silently.
 
 .. rst-class:: classref-item-separator
 
@@ -336,7 +336,7 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`Dictionary<class_Dictionary>` **get_datetime_dict_from_system**\ (\ utc\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Time_method_get_datetime_dict_from_system>`
 
-以字典形式返回当前日期，包含的键为：\ ``year``\ 、\ ``month``\ 、\ ``day``\ 、\ ``weekday``\ 、\ ``hour``\ 、\ ``minute``\ 、\ ``second`` 以及 ``dst``\ （夏令时，Daylight Savings Time）。
+Returns the current date as a dictionary of keys: ``year``, ``month``, ``day``, ``weekday``, ``hour``, ``minute``, ``second``, and ``dst`` (Daylight Savings Time).
 
 .. rst-class:: classref-item-separator
 
@@ -348,9 +348,9 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`Dictionary<class_Dictionary>` **get_datetime_dict_from_unix_time**\ (\ unix_time_val\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Time_method_get_datetime_dict_from_unix_time>`
 
-将给定的 Unix 时间戳转换为字典，包含的键为：\ ``year``\ 、\ ``month``\ 、\ ``day``\ 、\ ``weekday``\ 、\ ``hour``\ 、\ ``minute`` 和 ``second``\ 。
+Converts the given Unix timestamp to a dictionary of keys: ``year``, ``month``, ``day``, ``weekday``, ``hour``, ``minute``, and ``second``.
 
-如果 Unix 时间戳是当前时间，则返回的字典值将与 :ref:`get_datetime_dict_from_system()<class_Time_method_get_datetime_dict_from_system>` 相同，夏令时除外，因为它无法根据纪元确定。
+The returned Dictionary's values will be the same as the :ref:`get_datetime_dict_from_system()<class_Time_method_get_datetime_dict_from_system>` if the Unix timestamp is the current time, with the exception of Daylight Savings Time as it cannot be determined from the epoch.
 
 .. rst-class:: classref-item-separator
 
@@ -362,13 +362,13 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`String<class_String>` **get_datetime_string_from_datetime_dict**\ (\ datetime\: :ref:`Dictionary<class_Dictionary>`, use_space\: :ref:`bool<class_bool>`\ ) |const| :ref:`🔗<class_Time_method_get_datetime_string_from_datetime_dict>`
 
-将给定的时间值字典转换为 ISO 8601 日期和时间字符串（YYYY-MM-DDTHH:MM:SS）。
+Converts the given dictionary of keys to an ISO 8601 date and time string (YYYY-MM-DDTHH:MM:SS).
 
-给定的字典可以包含以下键：\ ``year``\ 、\ ``month``\ 、\ ``day``\ 、\ ``hour``\ 、\ ``minute``\ 、\ ``second``\ 。其他的记录（包括 ``dst``\ ）都会被忽略。
+The given dictionary can be populated with the following keys: ``year``, ``month``, ``day``, ``hour``, ``minute``, and ``second``. Any other entries (including ``dst``) are ignored.
 
-字典为空时将返回 ``0``\ 。如果省略了部分键，默认使用 Unix 纪元时间戳 0（1970-01-01 的 00:00:00）的对应部分。
+If the dictionary is empty, ``0`` is returned. If some keys are omitted, they default to the equivalent values for the Unix epoch timestamp 0 (1970-01-01 at 00:00:00).
 
-当 ``use_space`` 为 ``true`` 时，将使用空格代替中间的字母 T。
+If ``use_space`` is ``true``, the date and time bits are separated by an empty space character instead of the letter T.
 
 .. rst-class:: classref-item-separator
 
@@ -380,11 +380,11 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`String<class_String>` **get_datetime_string_from_system**\ (\ utc\: :ref:`bool<class_bool>` = false, use_space\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Time_method_get_datetime_string_from_system>`
 
-以 ISO 8601 日期和时间字符串的形式返回当前日期和时间（YYYY-MM-DDTHH:MM:SS）。
+Returns the current date and time as an ISO 8601 date and time string (YYYY-MM-DDTHH:MM:SS).
 
-当 ``utc`` 为 ``false`` 时，返回的是系统的本地时间，否则为 UTC 时间。
+The returned values are in the system's local time when ``utc`` is ``false``, otherwise they are in UTC.
 
-当 ``use_space`` 为 ``true`` 时，将使用空格代替中间的字母 T。
+If ``use_space`` is ``true``, the date and time bits are separated by an empty space character instead of the letter T.
 
 .. rst-class:: classref-item-separator
 
@@ -396,9 +396,9 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`String<class_String>` **get_datetime_string_from_unix_time**\ (\ unix_time_val\: :ref:`int<class_int>`, use_space\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Time_method_get_datetime_string_from_unix_time>`
 
-将给定的 Unix 时间戳转换为 ISO 8601 日期和时间字符串（YYYY-MM-DDTHH:MM:SS）。
+Converts the given Unix timestamp to an ISO 8601 date and time string (YYYY-MM-DDTHH:MM:SS).
 
-当 ``use_space`` 为 ``true`` 时，将使用空格代替中间的字母 T。
+If ``use_space`` is ``true``, the date and time bits are separated by an empty space character instead of the letter T.
 
 .. rst-class:: classref-item-separator
 
@@ -410,7 +410,7 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`String<class_String>` **get_offset_string_from_offset_minutes**\ (\ offset_minutes\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Time_method_get_offset_string_from_offset_minutes>`
 
-将给定的时区偏移分钟数转换为时区偏移字符串。例如，-480 返回 "-08:00"、345 返回 "+05:45"、0 返回 "+00:00"。
+Converts the given timezone offset in minutes to a timezone offset string. For example, -480 returns "-08:00", 345 returns "+05:45", and 0 returns "+00:00".
 
 .. rst-class:: classref-item-separator
 
@@ -422,9 +422,9 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`int<class_int>` **get_ticks_msec**\ (\ ) |const| :ref:`🔗<class_Time_method_get_ticks_msec>`
 
-返回从引擎启动开始所经过的时间，单位为毫秒。
+Returns the amount of time passed in milliseconds since the engine started.
 
-始终为正数或 0，使用 64 位值（会在约 5 亿年后绕回）。
+Will always be positive or 0 and uses a 64-bit value (it will wrap after roughly 500 million years).
 
 .. rst-class:: classref-item-separator
 
@@ -436,9 +436,9 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`int<class_int>` **get_ticks_usec**\ (\ ) |const| :ref:`🔗<class_Time_method_get_ticks_usec>`
 
-返回从引擎启动开始所经过的时间，单位为微秒。
+Returns the amount of time passed in microseconds since the engine started.
 
-始终为正数或 0，使用 64 位值（会在约 50 万年后绕回）。
+Will always be positive or 0 and uses a 64-bit value (it will wrap after roughly half a million years).
 
 .. rst-class:: classref-item-separator
 
@@ -450,9 +450,9 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`Dictionary<class_Dictionary>` **get_time_dict_from_system**\ (\ utc\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Time_method_get_time_dict_from_system>`
 
-以字典的形式返回当前时间，包含的键为：\ ``hour``\ 、\ ``minute``\ 、\ ``second``\ 。
+Returns the current time as a dictionary of keys: ``hour``, ``minute``, and ``second``.
 
-当 ``utc`` 为 ``false`` 时，返回的是系统的本地时间，否则为 UTC 时间。
+The returned values are in the system's local time when ``utc`` is ``false``, otherwise they are in UTC.
 
 .. rst-class:: classref-item-separator
 
@@ -464,7 +464,7 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`Dictionary<class_Dictionary>` **get_time_dict_from_unix_time**\ (\ unix_time_val\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Time_method_get_time_dict_from_unix_time>`
 
-将给定的时间转换为字典，包含的键为：时 ``hour``\ 、分 ``minute``\ 、秒 ``second``\ 。
+Converts the given time to a dictionary of keys: ``hour``, ``minute``, and ``second``.
 
 .. rst-class:: classref-item-separator
 
@@ -476,9 +476,9 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`String<class_String>` **get_time_string_from_system**\ (\ utc\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Time_method_get_time_string_from_system>`
 
-以 ISO 8601 时间字符串的形式返回当前时间（HH:MM:SS）。
+Returns the current time as an ISO 8601 time string (HH:MM:SS).
 
-当 ``utc`` 为 ``false`` 时，返回的是系统的本地时间，否则为 UTC 时间。
+The returned values are in the system's local time when ``utc`` is ``false``, otherwise they are in UTC.
 
 .. rst-class:: classref-item-separator
 
@@ -490,7 +490,7 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`String<class_String>` **get_time_string_from_unix_time**\ (\ unix_time_val\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Time_method_get_time_string_from_unix_time>`
 
-将给定的 Unix 时间戳转换为 ISO 8601 时间字符串（HH:MM:SS）。
+Converts the given Unix timestamp to an ISO 8601 time string (HH:MM:SS).
 
 .. rst-class:: classref-item-separator
 
@@ -502,11 +502,11 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`Dictionary<class_Dictionary>` **get_time_zone_from_system**\ (\ ) |const| :ref:`🔗<class_Time_method_get_time_zone_from_system>`
 
-以字典的形式返回当前时区，包含的键为：\ ``bias`` 和 ``name``\ 。
+Returns the current time zone as a dictionary of keys: ``bias`` and ``name``.
 
-- ``bias`` 是相对于 UTC 的偏移量，单位为分钟，因为并不是所有时区与 UTC 的时间差都是整数倍小时。
+- ``bias`` is the offset from UTC in minutes, since not all time zones are multiples of an hour from UTC.
 
-- ``name`` 是时区的本地化名称，取决于当前用户的操作系统区域设置。
+- ``name`` is the localized name of the time zone, according to the OS locale settings of the current user.
 
 .. rst-class:: classref-item-separator
 
@@ -518,15 +518,15 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`int<class_int>` **get_unix_time_from_datetime_dict**\ (\ datetime\: :ref:`Dictionary<class_Dictionary>`\ ) |const| :ref:`🔗<class_Time_method_get_unix_time_from_datetime_dict>`
 
-将时间值字典转换为 Unix 时间戳。
+Converts a dictionary of time values to a Unix timestamp.
 
-给定的字典可以包含以下键：\ ``year``\ 、\ ``month``\ 、\ ``day``\ 、\ ``hour``\ 、\ ``minute``\ 、\ ``second``\ 。其他的记录（包括 ``dst``\ ）都会被忽略。
+The given dictionary can be populated with the following keys: ``year``, ``month``, ``day``, ``hour``, ``minute``, and ``second``. Any other entries (including ``dst``) are ignored.
 
-字典为空时将返回 ``0``\ 。如果省略了部分键，默认使用 Unix 纪元时间戳 0（1970-01-01 的 00:00:00）的对应部分。
+If the dictionary is empty, ``0`` is returned. If some keys are omitted, they default to the equivalent values for the Unix epoch timestamp 0 (1970-01-01 at 00:00:00).
 
-你可以将 :ref:`get_datetime_dict_from_unix_time()<class_Time_method_get_datetime_dict_from_unix_time>` 的输出直接传给本函数，得到的就是最初的输入。
+You can pass the output from :ref:`get_datetime_dict_from_unix_time()<class_Time_method_get_datetime_dict_from_unix_time>` directly into this function and get the same as what was put in.
 
-\ **注意：**\ Unix 时间戳通常是 UTC 的。本方法不会做任何时区转换，所以时间戳的时区与给定的日期时间字典相同。
+\ **Note:** Unix timestamps are often in UTC. This method does not do any timezone conversion, so the timestamp will be in the same timezone as the given datetime dictionary.
 
 .. rst-class:: classref-item-separator
 
@@ -538,11 +538,11 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`int<class_int>` **get_unix_time_from_datetime_string**\ (\ datetime\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_Time_method_get_unix_time_from_datetime_string>`
 
-将给定的 ISO 8601 日期和/或时间字符串转换为 Unix 时间戳。字符串中可以只包含日期、只包含时间，也可以两者都包含。
+Converts the given ISO 8601 date and/or time string to a Unix timestamp. The string can contain a date only, a time only, or both.
 
-\ **注意：**\ Unix 时间戳通常是 UTC 的。本方法不会做任何时区转换，所以时间戳的时区与给定的日期时间字符串相同。
+\ **Note:** Unix timestamps are often in UTC. This method does not do any timezone conversion, so the timestamp will be in the same timezone as the given datetime string.
 
-\ **注意：**\ 时间字符串中的小数会被静默忽略。
+\ **Note:** Any decimal fraction in the time string will be ignored silently.
 
 .. rst-class:: classref-item-separator
 
@@ -554,16 +554,16 @@ enum **Weekday**: :ref:`🔗<enum_Time_Weekday>`
 
 :ref:`float<class_float>` **get_unix_time_from_system**\ (\ ) |const| :ref:`🔗<class_Time_method_get_unix_time_from_system>`
 
-返回当前的 Unix 时间戳，以秒为单位，基于 UTC 系统时间。本方法由操作系统实现，返回的时间总是 UTC 的。Unix 时间戳是从 `Unix 时间原点 <https://zh.wikipedia.org/zh-cn/UNIX%E6%97%B6%E9%97%B4>`__ 1970-01-01 的 00:00:00 起经过的秒数。
+Returns the current Unix timestamp in seconds based on the system time in UTC. This method is implemented by the operating system and always returns the time in UTC. The Unix timestamp is the number of seconds passed since 1970-01-01 at 00:00:00, the `Unix epoch <https://en.wikipedia.org/wiki/Unix_time>`__.
 
-\ **注意：**\ 与其他使用整数时间戳的方法不同，这个方法返回的是 :ref:`float<class_float>` 类型的时间戳，可以表示比秒更高的精度。
+\ **Note:** Unlike other methods that use integer timestamps, this method returns the timestamp as a :ref:`float<class_float>` for sub-second precision.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,21 +5,21 @@
 Sky
 ===
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-使用 :ref:`Material<class_Material>` 定義 3D 環境的背景。
+Defines a 3D environment's background by using a :ref:`Material<class_Material>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-**Sky** 類使用 :ref:`Material<class_Material>` 來繪製背景，會更新反射/輻照度立方體貼圖。
+The **Sky** class uses a :ref:`Material<class_Material>` to render a 3D environment's background and the light it emits by updating the reflection/radiance cubemaps.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ Sky
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_Sky_RadianceSize:
 
@@ -53,7 +53,7 @@ enum **RadianceSize**: :ref:`🔗<enum_Sky_RadianceSize>`
 
 :ref:`RadianceSize<enum_Sky_RadianceSize>` **RADIANCE_SIZE_32** = ``0``
 
-輻照度紋理尺寸為 32×32 圖元。
+Radiance texture size is 32×32 pixels.
 
 .. _class_Sky_constant_RADIANCE_SIZE_64:
 
@@ -61,7 +61,7 @@ enum **RadianceSize**: :ref:`🔗<enum_Sky_RadianceSize>`
 
 :ref:`RadianceSize<enum_Sky_RadianceSize>` **RADIANCE_SIZE_64** = ``1``
 
-輻照度紋理尺寸為 64×64 圖元。
+Radiance texture size is 64×64 pixels.
 
 .. _class_Sky_constant_RADIANCE_SIZE_128:
 
@@ -69,7 +69,7 @@ enum **RadianceSize**: :ref:`🔗<enum_Sky_RadianceSize>`
 
 :ref:`RadianceSize<enum_Sky_RadianceSize>` **RADIANCE_SIZE_128** = ``2``
 
-輻照度紋理尺寸為128×128圖元。
+Radiance texture size is 128×128 pixels.
 
 .. _class_Sky_constant_RADIANCE_SIZE_256:
 
@@ -77,7 +77,7 @@ enum **RadianceSize**: :ref:`🔗<enum_Sky_RadianceSize>`
 
 :ref:`RadianceSize<enum_Sky_RadianceSize>` **RADIANCE_SIZE_256** = ``3``
 
-輻照度紋理尺寸為 256×256 圖元。
+Radiance texture size is 256×256 pixels.
 
 .. _class_Sky_constant_RADIANCE_SIZE_512:
 
@@ -85,7 +85,7 @@ enum **RadianceSize**: :ref:`🔗<enum_Sky_RadianceSize>`
 
 :ref:`RadianceSize<enum_Sky_RadianceSize>` **RADIANCE_SIZE_512** = ``4``
 
-輻照度紋理尺寸為 512×512 圖元。
+Radiance texture size is 512×512 pixels.
 
 .. _class_Sky_constant_RADIANCE_SIZE_1024:
 
@@ -93,7 +93,7 @@ enum **RadianceSize**: :ref:`🔗<enum_Sky_RadianceSize>`
 
 :ref:`RadianceSize<enum_Sky_RadianceSize>` **RADIANCE_SIZE_1024** = ``5``
 
-輻照度紋理尺寸為 1024×1024 圖元。
+Radiance texture size is 1024×1024 pixels.
 
 .. _class_Sky_constant_RADIANCE_SIZE_2048:
 
@@ -101,7 +101,7 @@ enum **RadianceSize**: :ref:`🔗<enum_Sky_RadianceSize>`
 
 :ref:`RadianceSize<enum_Sky_RadianceSize>` **RADIANCE_SIZE_2048** = ``6``
 
-輻照度紋理尺寸為 2048×2048 圖元。
+Radiance texture size is 2048×2048 pixels.
 
 .. _class_Sky_constant_RADIANCE_SIZE_MAX:
 
@@ -109,7 +109,7 @@ enum **RadianceSize**: :ref:`🔗<enum_Sky_RadianceSize>`
 
 :ref:`RadianceSize<enum_Sky_RadianceSize>` **RADIANCE_SIZE_MAX** = ``7``
 
-代表 :ref:`RadianceSize<enum_Sky_RadianceSize>` 列舉的大小。
+Represents the size of the :ref:`RadianceSize<enum_Sky_RadianceSize>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +127,7 @@ enum **ProcessMode**: :ref:`🔗<enum_Sky_ProcessMode>`
 
 :ref:`ProcessMode<enum_Sky_ProcessMode>` **PROCESS_MODE_AUTOMATIC** = ``0``
 
-根據天空著色器自動選擇合適的處理模式。如果著色器使用 ``TIME`` 或 ``POSITION``\ ，這將使用 :ref:`PROCESS_MODE_REALTIME<class_Sky_constant_PROCESS_MODE_REALTIME>`\ 。如果著色器使用任何 ``LIGHT_*`` 變數或任何自訂 uniform，這將使用 :ref:`PROCESS_MODE_INCREMENTAL<class_Sky_constant_PROCESS_MODE_INCREMENTAL>`\ 。否則，這預設為 :ref:`PROCESS_MODE_QUALITY<class_Sky_constant_PROCESS_MODE_QUALITY>`\ 。
+Automatically selects the appropriate process mode based on your sky shader. If your shader uses ``TIME`` or ``POSITION``, this will use :ref:`PROCESS_MODE_REALTIME<class_Sky_constant_PROCESS_MODE_REALTIME>`. If your shader uses any of the ``LIGHT_*`` variables or any custom uniforms, this uses :ref:`PROCESS_MODE_INCREMENTAL<class_Sky_constant_PROCESS_MODE_INCREMENTAL>`. Otherwise, this defaults to :ref:`PROCESS_MODE_QUALITY<class_Sky_constant_PROCESS_MODE_QUALITY>`.
 
 .. _class_Sky_constant_PROCESS_MODE_QUALITY:
 
@@ -135,7 +135,7 @@ enum **ProcessMode**: :ref:`🔗<enum_Sky_ProcessMode>`
 
 :ref:`ProcessMode<enum_Sky_ProcessMode>` **PROCESS_MODE_QUALITY** = ``1``
 
-使用高品質重要性取樣處理輻照度貼圖。得到的結果通常比 :ref:`PROCESS_MODE_REALTIME<class_Sky_constant_PROCESS_MODE_REALTIME>` 的品質更高，但需要花費更多的時間來生成。如果你計畫在運行時修改天空，則不應使用。如果你發現反射不夠模糊，出現了火花或者螢火蟲，請嘗試增大 :ref:`ProjectSettings.rendering/reflections/sky_reflections/ggx_samples<class_ProjectSettings_property_rendering/reflections/sky_reflections/ggx_samples>`\ 。
+Uses high quality importance sampling to process the radiance map. In general, this results in much higher quality than :ref:`PROCESS_MODE_REALTIME<class_Sky_constant_PROCESS_MODE_REALTIME>` but takes much longer to generate. This should not be used if you plan on changing the sky at runtime. If you are finding that the reflection is not blurry enough and is showing sparkles or fireflies, try increasing :ref:`ProjectSettings.rendering/reflections/sky_reflections/ggx_samples<class_ProjectSettings_property_rendering/reflections/sky_reflections/ggx_samples>`.
 
 .. _class_Sky_constant_PROCESS_MODE_INCREMENTAL:
 
@@ -143,7 +143,7 @@ enum **ProcessMode**: :ref:`🔗<enum_Sky_ProcessMode>`
 
 :ref:`ProcessMode<enum_Sky_ProcessMode>` **PROCESS_MODE_INCREMENTAL** = ``2``
 
-使用與 :ref:`PROCESS_MODE_QUALITY<class_Sky_constant_PROCESS_MODE_QUALITY>` 相同的高品質重要性取樣來處理輻照度貼圖，但更新會佔用幾影格。影格數由 :ref:`ProjectSettings.rendering/reflections/sky_reflections/roughness_layers<class_ProjectSettings_property_rendering/reflections/sky_reflections/roughness_layers>` 決定。當需要最高品質的輻照度貼圖，但天空更新緩慢時，請使用該選項。
+Uses the same high quality importance sampling to process the radiance map as :ref:`PROCESS_MODE_QUALITY<class_Sky_constant_PROCESS_MODE_QUALITY>`, but updates over several frames. The number of frames is determined by :ref:`ProjectSettings.rendering/reflections/sky_reflections/roughness_layers<class_ProjectSettings_property_rendering/reflections/sky_reflections/roughness_layers>`. Use this when you need highest quality radiance maps, but have a sky that updates slowly.
 
 .. _class_Sky_constant_PROCESS_MODE_REALTIME:
 
@@ -151,9 +151,9 @@ enum **ProcessMode**: :ref:`🔗<enum_Sky_ProcessMode>`
 
 :ref:`ProcessMode<enum_Sky_ProcessMode>` **PROCESS_MODE_REALTIME** = ``3``
 
-使用快速篩選演算法處理輻射度貼圖。一般來說，這會導致品質較低，但執行時間會大大加快。如果需要更好的品質，但仍需要每影格更新天空，請考慮開啟 :ref:`ProjectSettings.rendering/reflections/sky_reflections/fast_filter_high_quality<class_ProjectSettings_property_rendering/reflections/sky_reflections/fast_filter_high_quality>`\ 。
+Uses the fast filtering algorithm to process the radiance map. In general this results in lower quality, but substantially faster run times. If you need better quality, but still need to update the sky every frame, consider turning on :ref:`ProjectSettings.rendering/reflections/sky_reflections/fast_filter_high_quality<class_ProjectSettings_property_rendering/reflections/sky_reflections/fast_filter_high_quality>`.
 
-\ **注意：**\ 快速篩選演算法被限制為 256x256 立方體貼圖，因此必須將 :ref:`radiance_size<class_Sky_property_radiance_size>` 設定為 :ref:`RADIANCE_SIZE_256<class_Sky_constant_RADIANCE_SIZE_256>`\ 。否則會輸出警告並忽略覆蓋的輻射度大小。
+\ **Note:** The fast filtering algorithm is limited to 256×256 cubemaps, so :ref:`radiance_size<class_Sky_property_radiance_size>` must be set to :ref:`RADIANCE_SIZE_256<class_Sky_constant_RADIANCE_SIZE_256>`. Otherwise, a warning is printed and the overridden radiance size is ignored.
 
 .. rst-class:: classref-section-separator
 
@@ -161,8 +161,8 @@ enum **ProcessMode**: :ref:`🔗<enum_Sky_ProcessMode>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_Sky_property_process_mode:
 
@@ -211,14 +211,14 @@ The **Sky**'s radiance map size. The higher the radiance map size, the more deta
 - |void| **set_material**\ (\ value\: :ref:`Material<class_Material>`\ )
 - :ref:`Material<class_Material>` **get_material**\ (\ )
 
-用於繪製該背景的 :ref:`Material<class_Material>`\ 。可以是 :ref:`PanoramaSkyMaterial<class_PanoramaSkyMaterial>`\ 、\ :ref:`ProceduralSkyMaterial<class_ProceduralSkyMaterial>`\ 、\ :ref:`PhysicalSkyMaterial<class_PhysicalSkyMaterial>`\ ，如果你想使用自訂著色器也可以是 :ref:`ShaderMaterial<class_ShaderMaterial>`\ 。
+:ref:`Material<class_Material>` used to draw the background. Can be :ref:`PanoramaSkyMaterial<class_PanoramaSkyMaterial>`, :ref:`ProceduralSkyMaterial<class_ProceduralSkyMaterial>`, :ref:`PhysicalSkyMaterial<class_PhysicalSkyMaterial>`, or even a :ref:`ShaderMaterial<class_ShaderMaterial>` if you want to use your own custom shader.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

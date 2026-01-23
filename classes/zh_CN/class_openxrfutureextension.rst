@@ -5,21 +5,21 @@
 OpenXRFutureExtension
 =====================
 
-**继承：** :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>` **<** :ref:`Object<class_Object>`
 
-OpenXR Future 扩展，允许使用异步 API。
+The OpenXR Future extension allows for asynchronous APIs to be used.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-这是 OpenXR 中支持的扩展，能够让其他 OpenXR 扩展启动异步函数，在函数完成后获取回调。不应在 GDScript 中使用，但可以在 GDExtension 中访问。
+This is a support extension in OpenXR that allows other OpenXR extensions to start asynchronous functions and get a callback after this function finishes. It is not intended for consumption within GDScript but can be accessed from GDExtension.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ OpenXR Future 扩展，允许使用异步 API。
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_OpenXRFutureExtension_method_cancel_future:
 
@@ -47,7 +47,7 @@ OpenXR Future 扩展，允许使用异步 API。
 
 |void| **cancel_future**\ (\ future\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRFutureExtension_method_cancel_future>`
 
-取消正在进行中的 future。\ ``future`` 必须是此前启动异步函数 API 所返回的 ``XrFutureEXT`` 值。
+Cancels an in-progress future. ``future`` must be an ``XrFutureEXT`` value previously returned by an API that started an asynchronous function.
 
 .. rst-class:: classref-item-separator
 
@@ -59,7 +59,7 @@ OpenXR Future 扩展，允许使用异步 API。
 
 :ref:`bool<class_bool>` **is_active**\ (\ ) |const| :ref:`🔗<class_OpenXRFutureExtension_method_is_active>`
 
-如果 future 在所使用的 OpenXR 运行时中可用，则返回 ``true``\ 。该函数仅在 OpenXR 已被初始化后返回有效值。
+Returns ``true`` if futures are available in the OpenXR runtime used. This function will only return a usable result after OpenXR has been initialized.
 
 .. rst-class:: classref-item-separator
 
@@ -71,26 +71,26 @@ OpenXR Future 扩展，允许使用异步 API。
 
 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` **register_future**\ (\ future\: :ref:`int<class_int>`, on_success\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_OpenXRFutureExtension_method_register_future>`
 
-注册 OpenXR Future 对象，用于监视完成情况。\ ``future`` 必须是此前启动异步函数 API 所返回的 ``XrFutureEXT`` 值。
+Register an OpenXR Future object so we monitor for completion. ``future`` must be an ``XrFutureEXT`` value previously returned by an API that started an asynchronous function.
 
-你还可以指定 ``on_success``\ ，会在 future 成功完成时调用。
+You can optionally specify ``on_success``, it will be invoked on successful completion of the future.
 
-你也可以用返回的 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` 对象来 ``await`` 它的 :ref:`OpenXRFutureResult.completed<class_OpenXRFutureResult_signal_completed>` 信号。
+Or you can use the returned :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` object to ``await`` its :ref:`OpenXRFutureResult.completed<class_OpenXRFutureResult_signal_completed>` signal.
 
 ::
 
     var future_result = OpenXRFutureExtension.register_future(future)
     await future_result.completed
     if future_result.get_status() == OpenXRFutureResult.RESULT_FINISHED:
-        # 处理成功的情况
+        # Handle your success
         pass
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -8,21 +8,21 @@
 BoneAttachment3D
 ================
 
-**繼承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-對父級 :ref:`Skeleton3D<class_Skeleton3D>` 中某個骨骼的 3D 變換進行複製或覆蓋的節點。
+А node that dynamically copies or overrides the 3D transform of a bone in its parent :ref:`Skeleton3D<class_Skeleton3D>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-這個節點能夠選中 :ref:`Skeleton3D<class_Skeleton3D>` 中的某個骨骼並附加到這個骨骼上。這樣 **BoneAttachment3D** 節點就能夠動態複製或覆蓋所選骨骼的 3D 變換。
+This node selects a bone in a :ref:`Skeleton3D<class_Skeleton3D>` and attaches to it. This means that the **BoneAttachment3D** node will either dynamically copy or override the 3D transform of the selected bone.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -43,8 +43,8 @@ BoneAttachment3D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -61,8 +61,8 @@ BoneAttachment3D
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_BoneAttachment3D_property_bone_idx:
 
@@ -75,7 +75,7 @@ BoneAttachment3D
 - |void| **set_bone_idx**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bone_idx**\ (\ )
 
-所附著骨骼的索引。
+The index of the attached bone.
 
 .. rst-class:: classref-item-separator
 
@@ -92,7 +92,7 @@ BoneAttachment3D
 - |void| **set_bone_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_bone_name**\ (\ )
 
-所附著骨骼的名稱。
+The name of the attached bone.
 
 .. rst-class:: classref-item-separator
 
@@ -153,8 +153,8 @@ Whether the **BoneAttachment3D** node will use an external :ref:`Skeleton3D<clas
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_BoneAttachment3D_method_get_skeleton:
 
@@ -176,12 +176,12 @@ Returns the parent or external :ref:`Skeleton3D<class_Skeleton3D>` node if it ex
 
 A function that is called automatically when the :ref:`Skeleton3D<class_Skeleton3D>` is updated. This function is where the **BoneAttachment3D** node updates its position so it is correctly bound when it is *not* set to override the bone pose.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

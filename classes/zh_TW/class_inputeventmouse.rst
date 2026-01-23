@@ -5,30 +5,30 @@
 InputEventMouse
 ===============
 
-**繼承：** :ref:`InputEventWithModifiers<class_InputEventWithModifiers>` **<** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`InputEventWithModifiers<class_InputEventWithModifiers>` **<** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`InputEventMouseButton<class_InputEventMouseButton>`, :ref:`InputEventMouseMotion<class_InputEventMouseMotion>`
+**Inherited By:** :ref:`InputEventMouseButton<class_InputEventMouseButton>`, :ref:`InputEventMouseMotion<class_InputEventMouseMotion>`
 
-滑鼠事件的基本輸入事件型別。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-儲存與滑鼠事件相關的通用資訊。
+Base input event type for mouse events.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`使用 InputEvent <../tutorials/inputs/inputevent>`
+Stores general information about mouse events.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Using InputEvent <../tutorials/inputs/inputevent>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -47,8 +47,8 @@ InputEventMouse
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_InputEventMouse_property_button_mask:
 
@@ -61,7 +61,7 @@ InputEventMouse
 - |void| **set_button_mask**\ (\ value\: |bitfield|\[:ref:`MouseButtonMask<enum_@GlobalScope_MouseButtonMask>`\]\ )
 - |bitfield|\[:ref:`MouseButtonMask<enum_@GlobalScope_MouseButtonMask>`\] **get_button_mask**\ (\ )
 
-滑鼠按鍵遮罩識別字，\ :ref:`MouseButton<enum_@GlobalScope_MouseButton>` 按鈕遮罩或將其按位元組合。
+The mouse button mask identifier, one of or a bitwise combination of the :ref:`MouseButton<enum_@GlobalScope_MouseButton>` button masks.
 
 .. rst-class:: classref-item-separator
 
@@ -78,9 +78,9 @@ InputEventMouse
 - |void| **set_global_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_global_position**\ (\ )
 
-在 :ref:`Node._input()<class_Node_private_method__input>` 或 :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>` 中獲取時，返回根 :ref:`Viewport<class_Viewport>` 中滑鼠的位置，使用根 :ref:`Viewport<class_Viewport>` 的坐標系。
+When received in :ref:`Node._input()<class_Node_private_method__input>` or :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>`, returns the mouse's position in the root :ref:`Viewport<class_Viewport>` using the coordinate system of the root :ref:`Viewport<class_Viewport>`.
 
-在 :ref:`Control._gui_input()<class_Control_private_method__gui_input>` 中獲取時，返回該 :ref:`Control<class_Control>` 所在的 :ref:`CanvasLayer<class_CanvasLayer>` 中滑鼠的位置，使用該 :ref:`CanvasLayer<class_CanvasLayer>` 的坐標系。
+When received in :ref:`Control._gui_input()<class_Control_private_method__gui_input>`, returns the mouse's position in the :ref:`CanvasLayer<class_CanvasLayer>` that the :ref:`Control<class_Control>` is in using the coordinate system of the :ref:`CanvasLayer<class_CanvasLayer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -97,16 +97,16 @@ InputEventMouse
 - |void| **set_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_position**\ (\ )
 
-在 :ref:`Node._input()<class_Node_private_method__input>` 或 :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>` 中獲取時，返回該 :ref:`Node<class_Node>` 所在 :ref:`Viewport<class_Viewport>` 中滑鼠的位置，使用該 :ref:`Viewport<class_Viewport>` 的坐標系。
+When received in :ref:`Node._input()<class_Node_private_method__input>` or :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>`, returns the mouse's position in the :ref:`Viewport<class_Viewport>` this :ref:`Node<class_Node>` is in using the coordinate system of this :ref:`Viewport<class_Viewport>`.
 
-在 :ref:`Control._gui_input()<class_Control_private_method__gui_input>` 中獲取時，返回該 :ref:`Control<class_Control>` 中滑鼠的位置，使用該 :ref:`Control<class_Control>` 的坐標系。
+When received in :ref:`Control._gui_input()<class_Control_private_method__gui_input>`, returns the mouse's position in the :ref:`Control<class_Control>` using the local coordinate system of the :ref:`Control<class_Control>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

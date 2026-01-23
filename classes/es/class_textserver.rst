@@ -2757,7 +2757,7 @@ Establece el descenso de la fuente (número de píxeles por debajo de la línea 
 
 |void| **font_set_disable_embedded_bitmaps**\ (\ font_rid\: :ref:`RID<class_RID>`, disable_embedded_bitmaps\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TextServer_method_font_set_disable_embedded_bitmaps>`
 
-If set to ``true``, embedded font bitmap loading is disabled (bitmap-only and color fonts ignore this property).
+Si se establece en ``true``, la carga de mapas de bits de fuentes incrustados se desactiva (las fuentes solo de mapa de bits y de color ignoran esta propiedad).
 
 .. rst-class:: classref-item-separator
 

@@ -5,30 +5,30 @@
 CapsuleShape3D
 ==============
 
-**继承：** :ref:`Shape3D<class_Shape3D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Shape3D<class_Shape3D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用于物理碰撞的 3D 胶囊形状。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-3D 胶囊形状，旨在用于物理学。通常用于为 :ref:`CollisionShape3D<class_CollisionShape3D>` 提供形状。
-
-\ **性能：**\ **CapsuleShape3D** 可以快速检查碰撞。比 :ref:`CylinderShape3D<class_CylinderShape3D>` 快，但比 :ref:`SphereShape3D<class_SphereShape3D>` 和 :ref:`BoxShape3D<class_BoxShape3D>` 慢。
+A 3D capsule shape used for physics collision.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- `3D 物理测试演示 <https://godotengine.org/asset-library/asset/2747>`__
+A 3D capsule shape, intended for use in physics. Usually used to provide a shape for a :ref:`CollisionShape3D<class_CollisionShape3D>`.
+
+\ **Performance:** **CapsuleShape3D** is fast to check collisions against. It is faster than :ref:`CylinderShape3D<class_CylinderShape3D>`, but slower than :ref:`SphereShape3D<class_SphereShape3D>` and :ref:`BoxShape3D<class_BoxShape3D>`.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- `3D Physics Tests Demo <https://godotengine.org/asset-library/asset/2747>`__
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -47,8 +47,8 @@ CapsuleShape3D
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_CapsuleShape3D_property_height:
 
@@ -61,9 +61,9 @@ CapsuleShape3D
 - |void| **set_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_height**\ (\ )
 
-胶囊体的总高度，包括半球。
+The capsule's full height, including the hemispheres.
 
-\ **注意：**\ 胶囊体的 :ref:`height<class_CapsuleShape3D_property_height>` 必须至少为其 :ref:`radius<class_CapsuleShape3D_property_radius>` 的两倍。否则，胶囊体将变为球体。如果 :ref:`height<class_CapsuleShape3D_property_height>` 小于 :ref:`radius<class_CapsuleShape3D_property_radius>` 的两倍，则属性将调整为有效值。
+\ **Note:** The :ref:`height<class_CapsuleShape3D_property_height>` of a capsule must be at least twice its :ref:`radius<class_CapsuleShape3D_property_radius>`. Otherwise, the capsule becomes a sphere. If the :ref:`height<class_CapsuleShape3D_property_height>` is less than twice the :ref:`radius<class_CapsuleShape3D_property_radius>`, the properties adjust to a valid value.
 
 .. rst-class:: classref-item-separator
 
@@ -80,7 +80,7 @@ CapsuleShape3D
 - |void| **set_mid_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mid_height**\ (\ )
 
-胶囊的高度，不包括两个半球。这是胶囊中间圆柱部分的高度，即两个半球球心之间的距离。这是对 :ref:`height<class_CapsuleShape3D_property_height>` 的封装。
+The capsule's height, excluding the hemispheres. This is the height of the central cylindrical part in the middle of the capsule, and is the distance between the centers of the two hemispheres. This is a wrapper for :ref:`height<class_CapsuleShape3D_property_height>`.
 
 .. rst-class:: classref-item-separator
 
@@ -97,16 +97,16 @@ CapsuleShape3D
 - |void| **set_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_radius**\ (\ )
 
-胶囊体的半径。
+The capsule's radius.
 
-\ **注意：**\ 胶囊体的 :ref:`radius<class_CapsuleShape3D_property_radius>` 不能大于其 :ref:`height<class_CapsuleShape3D_property_height>` 的一半。否则，胶囊体将变为球体。如果 :ref:`radius<class_CapsuleShape3D_property_radius>` 大于 :ref:`height<class_CapsuleShape3D_property_height>` 的一半，则属性将调整为有效值。
+\ **Note:** The :ref:`radius<class_CapsuleShape3D_property_radius>` of a capsule cannot be greater than half of its :ref:`height<class_CapsuleShape3D_property_height>`. Otherwise, the capsule becomes a sphere. If the :ref:`radius<class_CapsuleShape3D_property_radius>` is greater than half of the :ref:`height<class_CapsuleShape3D_property_height>`, the properties adjust to a valid value.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

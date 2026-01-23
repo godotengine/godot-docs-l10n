@@ -5,40 +5,40 @@
 AudioEffectCompressor
 =====================
 
-**继承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-为音频总线添加压缩音频效果。
+Adds a compressor audio effect to an audio bus.
 
-减少超过一定阈值水平的声音，平滑动态，增加整体音量。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-动态范围压缩器在振幅超过一定的阈值（以分贝为单位）时，降低声音的电平。压缩器的主要用途之一是通过尽可能少的削波（当声音超过 0dB 时）来增加动态范围。
-
-压缩器在混音中的用途很多。
-
-- 在主总线上压缩整个输出（虽然 :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>` 可能更好些）。
-
-- 在声音通道中，以确保它们听起来尽可能的平衡。
-
-- 侧链。这可以降低与另一条音频总线侧链的声音级别，以进行阈值检测。这种技术在视频游戏混音中很常见，以音乐和SFX的级别，从而声音被听到。
-
-- 通过使用更宽的冲攻来突出瞬态，使效果听起来更有冲击力。
+Reduces sounds that exceed a certain threshold level, smooths out the dynamics and increases the overall volume.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`音频总线 <../tutorials/audio/audio_buses>`
+Dynamic range compressor reduces the level of the sound when the amplitude goes over a certain threshold in Decibels. One of the main uses of a compressor is to increase the dynamic range by clipping as little as possible (when sound goes over 0dB).
+
+Compressor has many uses in the mix:
+
+- In the Master bus to compress the whole output (although an :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>` is probably better).
+
+- In voice channels to ensure they sound as balanced as possible.
+
+- Sidechained. This can reduce the sound level sidechained with another audio bus for threshold detection. This technique is common in video game mixing to the level of music and SFX while voices are being heard.
+
+- Accentuates transients by using a wider attack, making effects sound more punchy.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Audio buses <../tutorials/audio/audio_buses>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -65,8 +65,8 @@ AudioEffectCompressor
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_AudioEffectCompressor_property_attack_us:
 
@@ -79,7 +79,7 @@ AudioEffectCompressor
 - |void| **set_attack_us**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_attack_us**\ (\ )
 
-当信号超过阈值时，压缩器的反应时间，以微秒为单位。数值范围从 20 到 2000。
+Compressor's reaction time when the signal exceeds the threshold, in microseconds. Value can range from 20 to 2000.
 
 .. rst-class:: classref-item-separator
 
@@ -96,7 +96,7 @@ AudioEffectCompressor
 - |void| **set_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gain**\ (\ )
 
-应用于输出信号的增益。
+Gain applied to the output signal.
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +113,7 @@ AudioEffectCompressor
 - |void| **set_mix**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mix**\ (\ )
 
-原始信号和效果信号之间的平衡。数值范围从 0（完全干燥）到 1（完全浸润）。
+Balance between original signal and effect signal. Value can range from 0 (totally dry) to 1 (totally wet).
 
 .. rst-class:: classref-item-separator
 
@@ -130,7 +130,7 @@ AudioEffectCompressor
 - |void| **set_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ratio**\ (\ )
 
-音频通过阈值级别后，应用于音频的压缩量。比率越高，音频的大声部分将被压缩。数值范围从 1 到 48。
+Amount of compression applied to the audio once it passes the threshold level. The higher the ratio, the more the loud parts of the audio will be compressed. Value can range from 1 to 48.
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +147,7 @@ AudioEffectCompressor
 - |void| **set_release_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_release_ms**\ (\ )
 
-压缩器在信号电平低于阈值后，停止降低信号的延迟时间，以毫秒为单位。取值范围为 20 到 2000。
+Compressor's delay time to stop reducing the signal after the signal level falls below the threshold, in milliseconds. Value can range from 20 to 2000.
 
 .. rst-class:: classref-item-separator
 
@@ -164,7 +164,7 @@ AudioEffectCompressor
 - |void| **set_sidechain**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_sidechain**\ (\ )
 
-使用另一条音频总线进行阈值检测，降低声音级别。
+Reduce the sound level using another audio bus for threshold detection.
 
 .. rst-class:: classref-item-separator
 
@@ -181,14 +181,14 @@ AudioEffectCompressor
 - |void| **set_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_threshold**\ (\ )
 
-超过该电平，压缩将应用于音频。值的范围可以从 -60 到 0。
+The level above which compression is applied to the audio. Value can range from -60 to 0.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

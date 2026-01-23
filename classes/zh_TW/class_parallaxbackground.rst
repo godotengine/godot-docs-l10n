@@ -5,25 +5,25 @@
 ParallaxBackground
 ==================
 
-**已棄用：** Use the :ref:`Parallax2D<class_Parallax2D>` node instead.
+**Deprecated:** Use the :ref:`Parallax2D<class_Parallax2D>` node instead.
 
-**繼承：** :ref:`CanvasLayer<class_CanvasLayer>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`CanvasLayer<class_CanvasLayer>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-用於建立視差滾動背景的節點。
+A node used to create a parallax scrolling background.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-ParallaxBackground 使用一個或多個 :ref:`ParallaxLayer<class_ParallaxLayer>` 子節點來建立視差效果。每個 :ref:`ParallaxLayer<class_ParallaxLayer>` 可以使用 :ref:`ParallaxLayer.motion_offset<class_ParallaxLayer_property_motion_offset>` 以不同的速度移動。這在 2D 遊戲中可以創造一種深度錯覺。如果沒有與 :ref:`Camera2D<class_Camera2D>` 一起使用，你必須手動計算 :ref:`scroll_offset<class_ParallaxBackground_property_scroll_offset>`\ 。
+A ParallaxBackground uses one or more :ref:`ParallaxLayer<class_ParallaxLayer>` child nodes to create a parallax effect. Each :ref:`ParallaxLayer<class_ParallaxLayer>` can move at a different speed using :ref:`ParallaxLayer.motion_offset<class_ParallaxLayer_property_motion_offset>`. This creates an illusion of depth in a 2D game. If not used with a :ref:`Camera2D<class_Camera2D>`, you must manually calculate the :ref:`scroll_offset<class_ParallaxBackground_property_scroll_offset>`.
 
-\ **注意：**\ 每個 **ParallaxBackground** 都是在各自的 :ref:`Viewport<class_Viewport>` 中繪製的，無法在不同 :ref:`Viewport<class_Viewport>` 之間共用，見 :ref:`CanvasLayer.custom_viewport<class_CanvasLayer_property_custom_viewport>`\ 。在分屏遊戲等使用多個 :ref:`Viewport<class_Viewport>` 的場景下，你需要每個需要繪製的 :ref:`Viewport<class_Viewport>` 建立單獨的 **ParallaxBackground**\ 。
+\ **Note:** Each **ParallaxBackground** is drawn on one specific :ref:`Viewport<class_Viewport>` and cannot be shared between multiple :ref:`Viewport<class_Viewport>`\ s, see :ref:`CanvasLayer.custom_viewport<class_CanvasLayer_property_custom_viewport>`. When using multiple :ref:`Viewport<class_Viewport>`\ s, for example in a split-screen game, you need create an individual **ParallaxBackground** for each :ref:`Viewport<class_Viewport>` you want it to be drawn on.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ ParallaxBackground 使用一個或多個 :ref:`ParallaxLayer<class_ParallaxLayer
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_ParallaxBackground_property_scroll_base_offset:
 
@@ -64,7 +64,7 @@ ParallaxBackground 使用一個或多個 :ref:`ParallaxLayer<class_ParallaxLayer
 - |void| **set_scroll_base_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_scroll_base_offset**\ (\ )
 
-所有 :ref:`ParallaxLayer<class_ParallaxLayer>` 子元素的基本位置偏移。
+The base position offset for all :ref:`ParallaxLayer<class_ParallaxLayer>` children.
 
 .. rst-class:: classref-item-separator
 
@@ -81,7 +81,7 @@ ParallaxBackground 使用一個或多個 :ref:`ParallaxLayer<class_ParallaxLayer
 - |void| **set_scroll_base_scale**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_scroll_base_scale**\ (\ )
 
-所有 :ref:`ParallaxLayer<class_ParallaxLayer>` 子元素的基本移動比例。
+The base motion scale for all :ref:`ParallaxLayer<class_ParallaxLayer>` children.
 
 .. rst-class:: classref-item-separator
 
@@ -98,7 +98,7 @@ ParallaxBackground 使用一個或多個 :ref:`ParallaxLayer<class_ParallaxLayer
 - |void| **set_ignore_camera_zoom**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ignore_camera_zoom**\ (\ )
 
-為 ``true`` 時，\ :ref:`ParallaxLayer<class_ParallaxLayer>` 子元素將不受相機縮放級別的影響。
+If ``true``, elements in :ref:`ParallaxLayer<class_ParallaxLayer>` child aren't affected by the zoom level of the camera.
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +115,7 @@ ParallaxBackground 使用一個或多個 :ref:`ParallaxLayer<class_ParallaxLayer
 - |void| **set_limit_begin**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_limit_begin**\ (\ )
 
-開始滾動的左上角限制。如果相機超出這個限制，背景將停止滾動。必須低於 :ref:`scroll_limit_end<class_ParallaxBackground_property_scroll_limit_end>` 才能工作。
+Top-left limits for scrolling to begin. If the camera is outside of this limit, the background will stop scrolling. Must be lower than :ref:`scroll_limit_end<class_ParallaxBackground_property_scroll_limit_end>` to work.
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ ParallaxBackground 使用一個或多個 :ref:`ParallaxLayer<class_ParallaxLayer
 - |void| **set_limit_end**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_limit_end**\ (\ )
 
-右下角限制滾動結束。如果相機超出這個限制，背景將停止滾動。必須高於 :ref:`scroll_limit_begin<class_ParallaxBackground_property_scroll_limit_begin>` 才能工作。
+Bottom-right limits for scrolling to end. If the camera is outside of this limit, the background will stop scrolling. Must be higher than :ref:`scroll_limit_begin<class_ParallaxBackground_property_scroll_limit_begin>` to work.
 
 .. rst-class:: classref-item-separator
 
@@ -149,14 +149,14 @@ ParallaxBackground 使用一個或多個 :ref:`ParallaxLayer<class_ParallaxLayer
 - |void| **set_scroll_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_scroll_offset**\ (\ )
 
-視差背景的滾動值。使用 :ref:`Camera2D<class_Camera2D>` 時會自動計算，但也可用於手動管理無相機時的滾動。
+The ParallaxBackground's scroll value. Calculated automatically when using a :ref:`Camera2D<class_Camera2D>`, but can be used to manually manage scrolling when no camera is present.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

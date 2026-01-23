@@ -94,9 +94,9 @@ Vérifiez si la ressource a changé, si oui, elle sera invalidée et le signal c
 
 |void| **queue_edited_resource_preview**\ (\ resource\: :ref:`Resource<class_Resource>`, receiver\: :ref:`Object<class_Object>`, receiver_func\: :ref:`StringName<class_StringName>`, userdata\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_EditorResourcePreview_method_queue_edited_resource_preview>`
 
-Queue the ``resource`` being edited for preview. Once the preview is ready, the ``receiver``'s ``receiver_func`` will be called. The ``receiver_func`` must take the following four arguments: :ref:`String<class_String>` path, :ref:`Texture2D<class_Texture2D>` preview, :ref:`Texture2D<class_Texture2D>` thumbnail_preview, :ref:`Variant<class_Variant>` userdata. ``userdata`` can be anything, and will be returned when ``receiver_func`` is called.
+Met la ``resource`` modifiée en attente pour être prévisualisée. Une fois la prévisualisation prête, la méthode ``receiver_func`` du ``receiver`` sera appelée. Le ``receiver_func`` doit prendre les quatre arguments suivants : le chemin ("path") :ref:`String<class_String>`, la :ref:`Texture<class_Texture>` de l'aperçu ("preview"), la :ref:`Texture<class_Texture>` de la vignette ("thumbnail_preview") et les données personnées ("userdata") sous forme de :ref:`Variant<class_Variant>`. ``userdata`` peut contenir n'importe quel type de données, et sera retourné quand ``receiver_func`` sera appelé.
 
-\ **Note:** If it was not possible to create the preview the ``receiver_func`` will still be called, but the preview will be ``null``.
+\ **Note :** S'il n'était pas possible de créer la prévisualisation, ``receiver_func`` sera toujours appelé, mais la prévisualisation sera ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -108,9 +108,9 @@ Queue the ``resource`` being edited for preview. Once the preview is ready, the 
 
 |void| **queue_resource_preview**\ (\ path\: :ref:`String<class_String>`, receiver\: :ref:`Object<class_Object>`, receiver_func\: :ref:`StringName<class_StringName>`, userdata\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_EditorResourcePreview_method_queue_resource_preview>`
 
-Queue a resource file located at ``path`` for preview. Once the preview is ready, the ``receiver``'s ``receiver_func`` will be called. The ``receiver_func`` must take the following four arguments: :ref:`String<class_String>` path, :ref:`Texture2D<class_Texture2D>` preview, :ref:`Texture2D<class_Texture2D>` thumbnail_preview, :ref:`Variant<class_Variant>` userdata. ``userdata`` can be anything, and will be returned when ``receiver_func`` is called.
+Met le fichier de ressource situé à ``path`` en attente pour être prévisualisé. Une fois la prévisualisation prête, la méthode ``receiver_func`` du ``receiver`` sera appelée. Le ``receiver_func`` doit prendre les quatre arguments suivants : le chemin ("path") :ref:`String<class_String>`, la :ref:`Texture<class_Texture>` de l'aperçu ("preview"), la :ref:`Texture<class_Texture>` de la vignette ("thumbnail_preview") et les données personnées ("userdata") sous forme de :ref:`Variant<class_Variant>`. ``userdata`` peut contenir n'importe quel type de données, et sera retourné quand\ ``receiver_func`` sera appelé.
 
-\ **Note:** If it was not possible to create the preview the ``receiver_func`` will still be called, but the preview will be ``null``.
+\ **Note :** S'il n'était pas possible de créer la prévisualisation, ``receiver_func`` sera toujours appelé, mais la prévisualisation sera ``null``.
 
 .. rst-class:: classref-item-separator
 

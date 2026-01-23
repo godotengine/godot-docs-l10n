@@ -5,54 +5,54 @@
 Node
 ====
 
-**继承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-**派生：** :ref:`AnimationMixer<class_AnimationMixer>`, :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, :ref:`CanvasItem<class_CanvasItem>`, :ref:`CanvasLayer<class_CanvasLayer>`, :ref:`EditorFileSystem<class_EditorFileSystem>`, :ref:`EditorPlugin<class_EditorPlugin>`, :ref:`EditorResourcePreview<class_EditorResourcePreview>`, :ref:`HTTPRequest<class_HTTPRequest>`, :ref:`InstancePlaceholder<class_InstancePlaceholder>`, :ref:`MissingNode<class_MissingNode>`, :ref:`MultiplayerSpawner<class_MultiplayerSpawner>`, :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>`, :ref:`NavigationAgent2D<class_NavigationAgent2D>`, :ref:`NavigationAgent3D<class_NavigationAgent3D>`, :ref:`Node3D<class_Node3D>`, :ref:`ResourcePreloader<class_ResourcePreloader>`, :ref:`ShaderGlobalsOverride<class_ShaderGlobalsOverride>`, :ref:`StatusIndicator<class_StatusIndicator>`, :ref:`Timer<class_Timer>`, :ref:`Viewport<class_Viewport>`, :ref:`WorldEnvironment<class_WorldEnvironment>`
+**Inherited By:** :ref:`AnimationMixer<class_AnimationMixer>`, :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, :ref:`CanvasItem<class_CanvasItem>`, :ref:`CanvasLayer<class_CanvasLayer>`, :ref:`EditorFileSystem<class_EditorFileSystem>`, :ref:`EditorPlugin<class_EditorPlugin>`, :ref:`EditorResourcePreview<class_EditorResourcePreview>`, :ref:`HTTPRequest<class_HTTPRequest>`, :ref:`InstancePlaceholder<class_InstancePlaceholder>`, :ref:`MissingNode<class_MissingNode>`, :ref:`MultiplayerSpawner<class_MultiplayerSpawner>`, :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>`, :ref:`NavigationAgent2D<class_NavigationAgent2D>`, :ref:`NavigationAgent3D<class_NavigationAgent3D>`, :ref:`Node3D<class_Node3D>`, :ref:`ResourcePreloader<class_ResourcePreloader>`, :ref:`ShaderGlobalsOverride<class_ShaderGlobalsOverride>`, :ref:`StatusIndicator<class_StatusIndicator>`, :ref:`Timer<class_Timer>`, :ref:`Viewport<class_Viewport>`, :ref:`WorldEnvironment<class_WorldEnvironment>`
 
-所有场景对象的基类。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-节点是 Godot 的基本单元。它们可以成为另一个节点的子节点，从而形成树状排列。一个给定的节点可以包含任意数量的节点作为子节点，但要求所有同级节点（即该节点的直接子节点）的名称唯一。
-
-由节点构成的树被称为\ *场景*\ 。场景可以被保存到磁盘上，然后实例化到其他场景中。这为 Godot 项目的架构和数据模型提供了极大的灵活性。
-
-\ **场景树：**\ :ref:`SceneTree<class_SceneTree>` 包含着当前活动的节点树。当一个节点被添加到场景树时，它将收到 :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` 通知，并触发其 :ref:`_enter_tree()<class_Node_private_method__enter_tree>` 回调。子节点总是在其父节点\ *之后*\ 被添加，亦即父节点的 :ref:`_enter_tree()<class_Node_private_method__enter_tree>` 回调将在其子节点之前被触发。
-
-当所有的节点都被添加到场景树后，它们会收到 :ref:`NOTIFICATION_READY<class_Node_constant_NOTIFICATION_READY>` 通知，并触发各自的 :ref:`_ready()<class_Node_private_method__ready>` 回调。对于成组的节点，\ :ref:`_ready()<class_Node_private_method__ready>` 回调的调用顺序是反向的：从子节点开始向上到父节点。
-
-这意味着，当向场景树中添加一个节点树时，其回调方法的触发顺序如下：父节点的 :ref:`_enter_tree()<class_Node_private_method__enter_tree>`\ 、子节点的 :ref:`_enter_tree()<class_Node_private_method__enter_tree>`\ 、子节点的 :ref:`_ready()<class_Node_private_method__ready>`\ ，最后是父节点的 :ref:`_ready()<class_Node_private_method__ready>`\ （递归适用于整个新增的节点树）。
-
-\ **处理：**\ 节点可以覆盖“处理”状态，以便在每一帧上都收到回调要求它们进行处理（做一些事情）。普通处理（回调 :ref:`_process()<class_Node_private_method__process>`\ ，可以使用 :ref:`set_process()<class_Node_method_set_process>` 开关）会尽可能频繁地执行，并且取决于帧率。所以处理时间 *delta*\ （单位为秒）会作为参数传入。物理处理（回调 :ref:`_physics_process()<class_Node_private_method__physics_process>`\ ，可以使用 :ref:`set_physics_process()<class_Node_method_set_physics_process>` 开关）每秒执行固定的次数（默认为 60 次），适用于物理引擎相关的代码。
-
-节点还可以处理输入事件。如果 :ref:`_input()<class_Node_private_method__input>` 存在，程序每次收到输入时都会去调用它。但在许多情况下，这么做开销太大（除非是用于简单的项目），用 :ref:`_unhandled_input()<class_Node_private_method__unhandled_input>` 函数可能更合适；该函数仅在输入事件未被其他节点（通常是 GUI :ref:`Control<class_Control>` 节点）处理时才会被调用，从而确保节点只接收到它应该处理的事件。
-
-为了追踪场景的层次结构（尤其是在将场景实例化到其他场景中时），可以用 :ref:`owner<class_Node_property_owner>` 属性为节点设置一个“所有者”。这可以记录谁实例化了哪个节点。不过，这主要用于编写编辑器和工具。
-
-最后，当使用 :ref:`Object.free()<class_Object_method_free>` 或 :ref:`queue_free()<class_Node_method_queue_free>` 释放一个节点时，它也会释放其所有的子节点。
-
-\ **分组：**\ 节点可以被添加到任意数量的分组中，以方便管理。例如，你可以根据自己游戏的需要来创建类似“敌人”或“收集品”这样的分组。见 :ref:`add_to_group()<class_Node_method_add_to_group>`\ 、\ :ref:`is_in_group()<class_Node_method_is_in_group>` 和 :ref:`remove_from_group()<class_Node_method_remove_from_group>`\ 。之后，你可以获取分组内的所有节点，对它们进行迭代，甚至是通过 :ref:`SceneTree<class_SceneTree>` 中的方法对整个分组调用方法。
-
-\ **节点的网络编程：**\ 在连接服务器（或自行创建服务器，见 :ref:`ENetMultiplayerPeer<class_ENetMultiplayerPeer>`\ ）之后，可以使用内置的 RPC（远程过程调用）系统进行网络通信。在调用 :ref:`rpc()<class_Node_method_rpc>` 时传入方法名，就可以在本地和所有已连接的对等体上调用指定的方法（对等体=客户端和接受连接的服务器）。为了识别接收 RPC 调用的节点，Godot 将使用节点的 :ref:`NodePath<class_NodePath>`\ （因此请确保所有对等体上的节点名称相同）。另外，请参阅高级网络教程和相应的演示。
-
-\ **注意：**\ ``script`` 属性属于 :ref:`Object<class_Object>` 类，而非 **Node**\ 。该属性的暴露方式和大多数属性不同，但它确实有自己的 setter 和 getter（见 :ref:`Object.set_script()<class_Object_method_set_script>` 和 :ref:`Object.get_script()<class_Object_method_get_script>`\ ）。
+Base class for all scene objects.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`节点与场景 <../getting_started/step_by_step/nodes_and_scenes>`
+Nodes are Godot's building blocks. They can be assigned as the child of another node, resulting in a tree arrangement. A given node can contain any number of nodes as children with the requirement that all siblings (direct children of a node) should have unique names.
 
-- `所有演示 <https://github.com/godotengine/godot-demo-projects/>`__
+A tree of nodes is called a *scene*. Scenes can be saved to the disk and then instantiated into other scenes. This allows for very high flexibility in the architecture and data model of Godot projects.
+
+\ **Scene tree:** The :ref:`SceneTree<class_SceneTree>` contains the active tree of nodes. When a node is added to the scene tree, it receives the :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` notification and its :ref:`_enter_tree()<class_Node_private_method__enter_tree>` callback is triggered. Child nodes are always added *after* their parent node, i.e. the :ref:`_enter_tree()<class_Node_private_method__enter_tree>` callback of a parent node will be triggered before its child's.
+
+Once all nodes have been added in the scene tree, they receive the :ref:`NOTIFICATION_READY<class_Node_constant_NOTIFICATION_READY>` notification and their respective :ref:`_ready()<class_Node_private_method__ready>` callbacks are triggered. For groups of nodes, the :ref:`_ready()<class_Node_private_method__ready>` callback is called in reverse order, starting with the children and moving up to the parent nodes.
+
+This means that when adding a node to the scene tree, the following order will be used for the callbacks: :ref:`_enter_tree()<class_Node_private_method__enter_tree>` of the parent, :ref:`_enter_tree()<class_Node_private_method__enter_tree>` of the children, :ref:`_ready()<class_Node_private_method__ready>` of the children and finally :ref:`_ready()<class_Node_private_method__ready>` of the parent (recursively for the entire scene tree).
+
+\ **Processing:** Nodes can override the "process" state, so that they receive a callback on each frame requesting them to process (do something). Normal processing (callback :ref:`_process()<class_Node_private_method__process>`, toggled with :ref:`set_process()<class_Node_method_set_process>`) happens as fast as possible and is dependent on the frame rate, so the processing time *delta* (in seconds) is passed as an argument. Physics processing (callback :ref:`_physics_process()<class_Node_private_method__physics_process>`, toggled with :ref:`set_physics_process()<class_Node_method_set_physics_process>`) happens a fixed number of times per second (60 by default) and is useful for code related to the physics engine.
+
+Nodes can also process input events. When present, the :ref:`_input()<class_Node_private_method__input>` function will be called for each input that the program receives. In many cases, this can be overkill (unless used for simple projects), and the :ref:`_unhandled_input()<class_Node_private_method__unhandled_input>` function might be preferred; it is called when the input event was not handled by anyone else (typically, GUI :ref:`Control<class_Control>` nodes), ensuring that the node only receives the events that were meant for it.
+
+To keep track of the scene hierarchy (especially when instantiating scenes into other scenes), an "owner" can be set for the node with the :ref:`owner<class_Node_property_owner>` property. This keeps track of who instantiated what. This is mostly useful when writing editors and tools, though.
+
+Finally, when a node is freed with :ref:`Object.free()<class_Object_method_free>` or :ref:`queue_free()<class_Node_method_queue_free>`, it will also free all its children.
+
+\ **Groups:** Nodes can be added to as many groups as you want to be easy to manage, you could create groups like "enemies" or "collectables" for example, depending on your game. See :ref:`add_to_group()<class_Node_method_add_to_group>`, :ref:`is_in_group()<class_Node_method_is_in_group>` and :ref:`remove_from_group()<class_Node_method_remove_from_group>`. You can then retrieve all nodes in these groups, iterate them and even call methods on groups via the methods on :ref:`SceneTree<class_SceneTree>`.
+
+\ **Networking with nodes:** After connecting to a server (or making one, see :ref:`ENetMultiplayerPeer<class_ENetMultiplayerPeer>`), it is possible to use the built-in RPC (remote procedure call) system to communicate over the network. By calling :ref:`rpc()<class_Node_method_rpc>` with a method name, it will be called locally and in all connected peers (peers = clients and the server that accepts connections). To identify which node receives the RPC call, Godot will use its :ref:`NodePath<class_NodePath>` (make sure node names are the same on all peers). Also, take a look at the high-level networking tutorial and corresponding demos.
+
+\ **Note:** The ``script`` property is part of the :ref:`Object<class_Object>` class, not **Node**. It isn't exposed like most properties but does have a setter and getter (see :ref:`Object.set_script()<class_Object_method_set_script>` and :ref:`Object.get_script()<class_Object_method_get_script>`).
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Nodes and scenes <../getting_started/step_by_step/nodes_and_scenes>`
+
+- `All Demos <https://github.com/godotengine/godot-demo-projects/>`__
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -89,8 +89,8 @@ Node
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -315,8 +315,8 @@ Node
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_Node_signal_child_entered_tree:
 
@@ -324,9 +324,9 @@ Node
 
 **child_entered_tree**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_Node_signal_child_entered_tree>`
 
-当子节点 ``node`` 进入 :ref:`SceneTree<class_SceneTree>` 时触发，通常是因为该节点进入了树（参见 :ref:`tree_entered<class_Node_signal_tree_entered>`\ ），或者 :ref:`add_child()<class_Node_method_add_child>` 已被调用。
+Emitted when the child ``node`` enters the :ref:`SceneTree<class_SceneTree>`, usually because this node entered the tree (see :ref:`tree_entered<class_Node_signal_tree_entered>`), or :ref:`add_child()<class_Node_method_add_child>` has been called.
 
-该信号在子节点自己的 :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` 和 :ref:`tree_entered<class_Node_signal_tree_entered>` *之后*\ 触发。
+This signal is emitted *after* the child node's own :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` and :ref:`tree_entered<class_Node_signal_tree_entered>`.
 
 .. rst-class:: classref-item-separator
 
@@ -338,9 +338,9 @@ Node
 
 **child_exiting_tree**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_Node_signal_child_exiting_tree>`
 
-当子节点 ``node`` 即将退出 :ref:`SceneTree<class_SceneTree>` 时发出，通常是因为该节点正在退出树（请参阅 :ref:`tree_exiting<class_Node_signal_tree_exiting>`\ ），或者因为子节点 ``node`` 正在被移除或释放。
+Emitted when the child ``node`` is about to exit the :ref:`SceneTree<class_SceneTree>`, usually because this node is exiting the tree (see :ref:`tree_exiting<class_Node_signal_tree_exiting>`), or because the child ``node`` is being removed or freed.
 
-当收到该信号时，子节点 ``node`` 仍然可以在树内访问。该信号在子节点自己的 :ref:`tree_exiting<class_Node_signal_tree_exiting>` 和 :ref:`NOTIFICATION_EXIT_TREE<class_Node_constant_NOTIFICATION_EXIT_TREE>` *之后*\ 触发。
+When this signal is received, the child ``node`` is still accessible inside the tree. This signal is emitted *after* the child node's own :ref:`tree_exiting<class_Node_signal_tree_exiting>` and :ref:`NOTIFICATION_EXIT_TREE<class_Node_constant_NOTIFICATION_EXIT_TREE>`.
 
 .. rst-class:: classref-item-separator
 
@@ -352,7 +352,7 @@ Node
 
 **child_order_changed**\ (\ ) :ref:`🔗<class_Node_signal_child_order_changed>`
 
-子节点列表发生改变时发出。发生在添加、移动、移除子节点时。
+Emitted when the list of children is changed. This happens when child nodes are added, moved or removed.
 
 .. rst-class:: classref-item-separator
 
@@ -364,7 +364,7 @@ Node
 
 **editor_description_changed**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_Node_signal_editor_description_changed>`
 
-当节点的编辑器描述字段更改时发出。
+Emitted when the node's editor description field changed.
 
 .. rst-class:: classref-item-separator
 
@@ -376,7 +376,7 @@ Node
 
 **editor_state_changed**\ (\ ) :ref:`🔗<class_Node_signal_editor_state_changed>`
 
-该节点与编辑器相关的属性发生更改时发出。仅在编辑器中发出。
+Emitted when an attribute of the node that is relevant to the editor is changed. Only emitted in the editor.
 
 .. rst-class:: classref-item-separator
 
@@ -388,7 +388,7 @@ Node
 
 **ready**\ (\ ) :ref:`🔗<class_Node_signal_ready>`
 
-在 :ref:`_ready()<class_Node_private_method__ready>` 被调用后，当节点被视为就绪时发出。
+Emitted when the node is considered ready, after :ref:`_ready()<class_Node_private_method__ready>` is called.
 
 .. rst-class:: classref-item-separator
 
@@ -400,7 +400,7 @@ Node
 
 **renamed**\ (\ ) :ref:`🔗<class_Node_signal_renamed>`
 
-节点位于场景树中，在节点的 :ref:`name<class_Node_property_name>` 更改时发出。
+Emitted when the node's :ref:`name<class_Node_property_name>` is changed, if the node is inside the tree.
 
 .. rst-class:: classref-item-separator
 
@@ -412,9 +412,9 @@ Node
 
 **replacing_by**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_Node_signal_replacing_by>`
 
-当该节点被 ``node`` 替换时触发，见 :ref:`replace_by()<class_Node_method_replace_by>`\ 。
+Emitted when this node is being replaced by the ``node``, see :ref:`replace_by()<class_Node_method_replace_by>`.
 
-这个信号的触发时机在 ``node`` 被添加为原父节点的子节点\ *之后*\ ，但是在所有原子节点重设父节点为 ``node`` *之前*\ 。
+This signal is emitted *after* ``node`` has been added as a child of the original parent node, but *before* all original child nodes have been reparented to ``node``.
 
 .. rst-class:: classref-item-separator
 
@@ -426,9 +426,9 @@ Node
 
 **tree_entered**\ (\ ) :ref:`🔗<class_Node_signal_tree_entered>`
 
-当该节点进入树时触发。
+Emitted when the node enters the tree.
 
-这个信号会在相关的 :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` 通知\ *之后*\ 触发。
+This signal is emitted *after* the related :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` notification.
 
 .. rst-class:: classref-item-separator
 
@@ -440,9 +440,9 @@ Node
 
 **tree_exited**\ (\ ) :ref:`🔗<class_Node_signal_tree_exited>`
 
-节点退出树并且不再活动后发出。
+Emitted after the node exits the tree and is no longer active.
 
-该信号会在相关的 :ref:`NOTIFICATION_EXIT_TREE<class_Node_constant_NOTIFICATION_EXIT_TREE>` 通知\ *之后*\ 发出。
+This signal is emitted *after* the related :ref:`NOTIFICATION_EXIT_TREE<class_Node_constant_NOTIFICATION_EXIT_TREE>` notification.
 
 .. rst-class:: classref-item-separator
 
@@ -454,9 +454,9 @@ Node
 
 **tree_exiting**\ (\ ) :ref:`🔗<class_Node_signal_tree_exiting>`
 
-当节点即将退出树时发出。节点仍然有效。因此，这是反初始化（如果愿意，也可以称之为“析构函数”）的正确位置。
+Emitted when the node is just about to exit the tree. The node is still valid. As such, this is the right place for de-initialization (or a "destructor", if you will).
 
-该信号会在节点的 :ref:`_exit_tree()<class_Node_private_method__exit_tree>` *之后*\ 和相关的 :ref:`NOTIFICATION_EXIT_TREE<class_Node_constant_NOTIFICATION_EXIT_TREE>` *之前*\ 发出。
+This signal is emitted *after* the node's :ref:`_exit_tree()<class_Node_private_method__exit_tree>`, and *before* the related :ref:`NOTIFICATION_EXIT_TREE<class_Node_constant_NOTIFICATION_EXIT_TREE>`.
 
 .. rst-class:: classref-section-separator
 
@@ -464,8 +464,8 @@ Node
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_Node_ProcessMode:
 
@@ -479,7 +479,7 @@ enum **ProcessMode**: :ref:`🔗<enum_Node_ProcessMode>`
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_INHERIT** = ``0``
 
-从该节点的父节点继承 :ref:`process_mode<class_Node_property_process_mode>`\ 。这是任何新创建的节点的默认设置。
+Inherits :ref:`process_mode<class_Node_property_process_mode>` from the node's parent. This is the default for any newly created node.
 
 .. _class_Node_constant_PROCESS_MODE_PAUSABLE:
 
@@ -487,7 +487,7 @@ enum **ProcessMode**: :ref:`🔗<enum_Node_ProcessMode>`
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_PAUSABLE** = ``1``
 
-当 :ref:`SceneTree.paused<class_SceneTree_property_paused>` 为 ``true`` 时停止处理。这是 :ref:`PROCESS_MODE_WHEN_PAUSED<class_Node_constant_PROCESS_MODE_WHEN_PAUSED>` 的逆，也是根节点的默认值。
+Stops processing when :ref:`SceneTree.paused<class_SceneTree_property_paused>` is ``true``. This is the inverse of :ref:`PROCESS_MODE_WHEN_PAUSED<class_Node_constant_PROCESS_MODE_WHEN_PAUSED>`, and the default for the root node.
 
 .. _class_Node_constant_PROCESS_MODE_WHEN_PAUSED:
 
@@ -495,7 +495,7 @@ enum **ProcessMode**: :ref:`🔗<enum_Node_ProcessMode>`
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_WHEN_PAUSED** = ``2``
 
-**仅**\ 当 :ref:`SceneTree.paused<class_SceneTree_property_paused>` 为 ``true`` 时处理。与 :ref:`PROCESS_MODE_PAUSABLE<class_Node_constant_PROCESS_MODE_PAUSABLE>` 相反。
+Process **only** when :ref:`SceneTree.paused<class_SceneTree_property_paused>` is ``true``. This is the inverse of :ref:`PROCESS_MODE_PAUSABLE<class_Node_constant_PROCESS_MODE_PAUSABLE>`.
 
 .. _class_Node_constant_PROCESS_MODE_ALWAYS:
 
@@ -503,7 +503,7 @@ enum **ProcessMode**: :ref:`🔗<enum_Node_ProcessMode>`
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_ALWAYS** = ``3``
 
-始终处理。忽略 :ref:`SceneTree.paused<class_SceneTree_property_paused>` 的取值，保持处理。与 :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>` 相反。
+Always process. Keeps processing, ignoring :ref:`SceneTree.paused<class_SceneTree_property_paused>`. This is the inverse of :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`.
 
 .. _class_Node_constant_PROCESS_MODE_DISABLED:
 
@@ -511,7 +511,7 @@ enum **ProcessMode**: :ref:`🔗<enum_Node_ProcessMode>`
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_DISABLED** = ``4``
 
-从不处理。完全禁用处理，忽略 :ref:`SceneTree.paused<class_SceneTree_property_paused>`\ 。与 :ref:`PROCESS_MODE_ALWAYS<class_Node_constant_PROCESS_MODE_ALWAYS>` 相反。
+Never process. Completely disables processing, ignoring :ref:`SceneTree.paused<class_SceneTree_property_paused>`. This is the inverse of :ref:`PROCESS_MODE_ALWAYS<class_Node_constant_PROCESS_MODE_ALWAYS>`.
 
 .. rst-class:: classref-item-separator
 
@@ -529,7 +529,7 @@ enum **ProcessThreadGroup**: :ref:`🔗<enum_Node_ProcessThreadGroup>`
 
 :ref:`ProcessThreadGroup<enum_Node_ProcessThreadGroup>` **PROCESS_THREAD_GROUP_INHERIT** = ``0``
 
-根据第一个具有非继承线程组模式的父节点（或祖父节点）的线程组模式来处理该节点。详见 :ref:`process_thread_group<class_Node_property_process_thread_group>`\ 。
+Process this node based on the thread group mode of the first parent (or grandparent) node that has a thread group mode that is not inherit. See :ref:`process_thread_group<class_Node_property_process_thread_group>` for more information.
 
 .. _class_Node_constant_PROCESS_THREAD_GROUP_MAIN_THREAD:
 
@@ -537,7 +537,7 @@ enum **ProcessThreadGroup**: :ref:`🔗<enum_Node_ProcessThreadGroup>`
 
 :ref:`ProcessThreadGroup<enum_Node_ProcessThreadGroup>` **PROCESS_THREAD_GROUP_MAIN_THREAD** = ``1``
 
-在主线程上处理该节点（以及设为继承的子节点）。详见 :ref:`process_thread_group<class_Node_property_process_thread_group>`\ 。
+Process this node (and child nodes set to inherit) on the main thread. See :ref:`process_thread_group<class_Node_property_process_thread_group>` for more information.
 
 .. _class_Node_constant_PROCESS_THREAD_GROUP_SUB_THREAD:
 
@@ -545,7 +545,7 @@ enum **ProcessThreadGroup**: :ref:`🔗<enum_Node_ProcessThreadGroup>`
 
 :ref:`ProcessThreadGroup<enum_Node_ProcessThreadGroup>` **PROCESS_THREAD_GROUP_SUB_THREAD** = ``2``
 
-在子线程上处理该节点（以及设为继承的子节点）。详见 :ref:`process_thread_group<class_Node_property_process_thread_group>`\ 。
+Process this node (and child nodes set to inherit) on a sub-thread. See :ref:`process_thread_group<class_Node_property_process_thread_group>` for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -563,7 +563,7 @@ flags **ProcessThreadMessages**: :ref:`🔗<enum_Node_ProcessThreadMessages>`
 
 :ref:`ProcessThreadMessages<enum_Node_ProcessThreadMessages>` **FLAG_PROCESS_THREAD_MESSAGES** = ``1``
 
-允许该节点在调用 :ref:`_process()<class_Node_private_method__process>` 前处理 :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>` 创建的多线程消息。
+Allows this node to process threaded messages created with :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>` right before :ref:`_process()<class_Node_private_method__process>` is called.
 
 .. _class_Node_constant_FLAG_PROCESS_THREAD_MESSAGES_PHYSICS:
 
@@ -571,7 +571,7 @@ flags **ProcessThreadMessages**: :ref:`🔗<enum_Node_ProcessThreadMessages>`
 
 :ref:`ProcessThreadMessages<enum_Node_ProcessThreadMessages>` **FLAG_PROCESS_THREAD_MESSAGES_PHYSICS** = ``2``
 
-允许该节点在调用 :ref:`_physics_process()<class_Node_private_method__physics_process>` 前处理 :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>` 创建的多线程消息。
+Allows this node to process threaded messages created with :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>` right before :ref:`_physics_process()<class_Node_private_method__physics_process>` is called.
 
 .. _class_Node_constant_FLAG_PROCESS_THREAD_MESSAGES_ALL:
 
@@ -579,7 +579,7 @@ flags **ProcessThreadMessages**: :ref:`🔗<enum_Node_ProcessThreadMessages>`
 
 :ref:`ProcessThreadMessages<enum_Node_ProcessThreadMessages>` **FLAG_PROCESS_THREAD_MESSAGES_ALL** = ``3``
 
-允许该节点在调用 :ref:`_process()<class_Node_private_method__process>` 或 :ref:`_physics_process()<class_Node_private_method__physics_process>` 之前，处理使用 :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>` 创建的线程消息。
+Allows this node to process threaded messages created with :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>` right before either :ref:`_process()<class_Node_private_method__process>` or :ref:`_physics_process()<class_Node_private_method__physics_process>` are called.
 
 .. rst-class:: classref-item-separator
 
@@ -597,7 +597,7 @@ enum **PhysicsInterpolationMode**: :ref:`🔗<enum_Node_PhysicsInterpolationMode
 
 :ref:`PhysicsInterpolationMode<enum_Node_PhysicsInterpolationMode>` **PHYSICS_INTERPOLATION_MODE_INHERIT** = ``0``
 
-从该节点的父节点继承 :ref:`physics_interpolation_mode<class_Node_property_physics_interpolation_mode>`\ 。这是任何新创建的节点的默认设置。
+Inherits :ref:`physics_interpolation_mode<class_Node_property_physics_interpolation_mode>` from the node's parent. This is the default for any newly created node.
 
 .. _class_Node_constant_PHYSICS_INTERPOLATION_MODE_ON:
 
@@ -605,7 +605,7 @@ enum **PhysicsInterpolationMode**: :ref:`🔗<enum_Node_PhysicsInterpolationMode
 
 :ref:`PhysicsInterpolationMode<enum_Node_PhysicsInterpolationMode>` **PHYSICS_INTERPOLATION_MODE_ON** = ``1``
 
-为该节点以及设置为 :ref:`PHYSICS_INTERPOLATION_MODE_INHERIT<class_Node_constant_PHYSICS_INTERPOLATION_MODE_INHERIT>` 的子节点启用物理插值。这是根节点的默认设置。
+Enables physics interpolation for this node and for children set to :ref:`PHYSICS_INTERPOLATION_MODE_INHERIT<class_Node_constant_PHYSICS_INTERPOLATION_MODE_INHERIT>`. This is the default for the root node.
 
 .. _class_Node_constant_PHYSICS_INTERPOLATION_MODE_OFF:
 
@@ -613,7 +613,7 @@ enum **PhysicsInterpolationMode**: :ref:`🔗<enum_Node_PhysicsInterpolationMode
 
 :ref:`PhysicsInterpolationMode<enum_Node_PhysicsInterpolationMode>` **PHYSICS_INTERPOLATION_MODE_OFF** = ``2``
 
-禁用该节点以及设置为 :ref:`PHYSICS_INTERPOLATION_MODE_INHERIT<class_Node_constant_PHYSICS_INTERPOLATION_MODE_INHERIT>` 的子节点的物理插值。
+Disables physics interpolation for this node and for children set to :ref:`PHYSICS_INTERPOLATION_MODE_INHERIT<class_Node_constant_PHYSICS_INTERPOLATION_MODE_INHERIT>`.
 
 .. rst-class:: classref-item-separator
 
@@ -631,7 +631,7 @@ enum **DuplicateFlags**: :ref:`🔗<enum_Node_DuplicateFlags>`
 
 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>` **DUPLICATE_SIGNALS** = ``1``
 
-复制节点的信号连接中使用 :ref:`Object.CONNECT_PERSIST<class_Object_constant_CONNECT_PERSIST>` 标志连接的那些连接。
+Duplicate the node's signal connections that are connected with the :ref:`Object.CONNECT_PERSIST<class_Object_constant_CONNECT_PERSIST>` flag.
 
 .. _class_Node_constant_DUPLICATE_GROUPS:
 
@@ -639,7 +639,7 @@ enum **DuplicateFlags**: :ref:`🔗<enum_Node_DuplicateFlags>`
 
 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>` **DUPLICATE_GROUPS** = ``2``
 
-复制节点的分组。
+Duplicate the node's groups.
 
 .. _class_Node_constant_DUPLICATE_SCRIPTS:
 
@@ -647,7 +647,7 @@ enum **DuplicateFlags**: :ref:`🔗<enum_Node_DuplicateFlags>`
 
 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>` **DUPLICATE_SCRIPTS** = ``4``
 
-复制该节点的脚本（与 :ref:`DUPLICATE_USE_INSTANTIATION<class_Node_constant_DUPLICATE_USE_INSTANTIATION>` 组合时，也会覆盖复制的子节点的脚本）。
+Duplicate the node's script (also overriding the duplicated children's scripts, if combined with :ref:`DUPLICATE_USE_INSTANTIATION<class_Node_constant_DUPLICATE_USE_INSTANTIATION>`).
 
 .. _class_Node_constant_DUPLICATE_USE_INSTANTIATION:
 
@@ -655,7 +655,7 @@ enum **DuplicateFlags**: :ref:`🔗<enum_Node_DuplicateFlags>`
 
 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>` **DUPLICATE_USE_INSTANTIATION** = ``8``
 
-使用 :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>` 进行复制。如果该节点来自磁盘上保存的场景，则会重用 :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>` 作为该节点及其子节点副本的基础。
+Duplicate using :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`. If the node comes from a scene saved on disk, reuses :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>` as the base for the duplicated node and its children.
 
 .. _class_Node_constant_DUPLICATE_INTERNAL_STATE:
 
@@ -694,7 +694,7 @@ enum **InternalMode**: :ref:`🔗<enum_Node_InternalMode>`
 
 :ref:`InternalMode<enum_Node_InternalMode>` **INTERNAL_MODE_DISABLED** = ``0``
 
-该节点不是内部节点。
+The node will not be internal.
 
 .. _class_Node_constant_INTERNAL_MODE_FRONT:
 
@@ -702,7 +702,7 @@ enum **InternalMode**: :ref:`🔗<enum_Node_InternalMode>`
 
 :ref:`InternalMode<enum_Node_InternalMode>` **INTERNAL_MODE_FRONT** = ``1``
 
-该节点将被放置在父节点的子节点开头，位于所有非内部同级节点之前。
+The node will be placed at the beginning of the parent's children, before any non-internal sibling.
 
 .. _class_Node_constant_INTERNAL_MODE_BACK:
 
@@ -710,7 +710,7 @@ enum **InternalMode**: :ref:`🔗<enum_Node_InternalMode>`
 
 :ref:`InternalMode<enum_Node_InternalMode>` **INTERNAL_MODE_BACK** = ``2``
 
-该节点将被放置在父节点的子节点末尾，位于所有非内部同级节点之后。
+The node will be placed at the end of the parent's children, after any non-internal sibling.
 
 .. rst-class:: classref-item-separator
 
@@ -728,7 +728,7 @@ enum **AutoTranslateMode**: :ref:`🔗<enum_Node_AutoTranslateMode>`
 
 :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **AUTO_TRANSLATE_MODE_INHERIT** = ``0``
 
-从该节点的父节点继承 :ref:`auto_translate_mode<class_Node_property_auto_translate_mode>`\ 。这是任何新创建的节点的默认设置。
+Inherits :ref:`auto_translate_mode<class_Node_property_auto_translate_mode>` from the node's parent. This is the default for any newly created node.
 
 .. _class_Node_constant_AUTO_TRANSLATE_MODE_ALWAYS:
 
@@ -736,7 +736,7 @@ enum **AutoTranslateMode**: :ref:`🔗<enum_Node_AutoTranslateMode>`
 
 :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **AUTO_TRANSLATE_MODE_ALWAYS** = ``1``
 
-始终自动翻译。和 :ref:`AUTO_TRANSLATE_MODE_DISABLED<class_Node_constant_AUTO_TRANSLATE_MODE_DISABLED>` 相反，是根节点的默认值。
+Always automatically translate. This is the inverse of :ref:`AUTO_TRANSLATE_MODE_DISABLED<class_Node_constant_AUTO_TRANSLATE_MODE_DISABLED>`, and the default for the root node.
 
 .. _class_Node_constant_AUTO_TRANSLATE_MODE_DISABLED:
 
@@ -754,8 +754,8 @@ String parsing for translation template generation will be skipped for this node
 
 .. rst-class:: classref-descriptions-group
 
-常量
-----
+Constants
+---------
 
 .. _class_Node_constant_NOTIFICATION_ENTER_TREE:
 
@@ -763,9 +763,9 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_ENTER_TREE** = ``10`` :ref:`🔗<class_Node_constant_NOTIFICATION_ENTER_TREE>`
 
-当节点进入 :ref:`SceneTree<class_SceneTree>` 时收到的通知。请参阅 :ref:`_enter_tree()<class_Node_private_method__enter_tree>`\ 。
+Notification received when the node enters a :ref:`SceneTree<class_SceneTree>`. See :ref:`_enter_tree()<class_Node_private_method__enter_tree>`.
 
-该通知会在相关 :ref:`tree_entered<class_Node_signal_tree_entered>` 信号\ *之前*\ 收到。
+This notification is received *before* the related :ref:`tree_entered<class_Node_signal_tree_entered>` signal.
 
 .. _class_Node_constant_NOTIFICATION_EXIT_TREE:
 
@@ -773,11 +773,11 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_EXIT_TREE** = ``11`` :ref:`🔗<class_Node_constant_NOTIFICATION_EXIT_TREE>`
 
-当节点即将退出 :ref:`SceneTree<class_SceneTree>` 时收到的通知。请参阅 :ref:`_exit_tree()<class_Node_private_method__exit_tree>`\ 。
+Notification received when the node is about to exit a :ref:`SceneTree<class_SceneTree>`. See :ref:`_exit_tree()<class_Node_private_method__exit_tree>`.
 
-该通知会在相关的 :ref:`tree_exiting<class_Node_signal_tree_exiting>` 信号\ *之后*\ 收到。
+This notification is received *after* the related :ref:`tree_exiting<class_Node_signal_tree_exiting>` signal.
 
-该通知会以反向顺序发送。
+This notification is sent in reversed order.
 
 .. _class_Node_constant_NOTIFICATION_MOVED_IN_PARENT:
 
@@ -785,7 +785,7 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_MOVED_IN_PARENT** = ``12`` :ref:`🔗<class_Node_constant_NOTIFICATION_MOVED_IN_PARENT>`
 
-**已弃用：** This notification is no longer sent by the engine. Use :ref:`NOTIFICATION_CHILD_ORDER_CHANGED<class_Node_constant_NOTIFICATION_CHILD_ORDER_CHANGED>` instead.
+**Deprecated:** This notification is no longer sent by the engine. Use :ref:`NOTIFICATION_CHILD_ORDER_CHANGED<class_Node_constant_NOTIFICATION_CHILD_ORDER_CHANGED>` instead.
 
 
 
@@ -795,7 +795,7 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_READY** = ``13`` :ref:`🔗<class_Node_constant_NOTIFICATION_READY>`
 
-当该节点就绪时接收到通知。见 :ref:`_ready()<class_Node_private_method__ready>`\ 。
+Notification received when the node is ready. See :ref:`_ready()<class_Node_private_method__ready>`.
 
 .. _class_Node_constant_NOTIFICATION_PAUSED:
 
@@ -803,7 +803,7 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_PAUSED** = ``14`` :ref:`🔗<class_Node_constant_NOTIFICATION_PAUSED>`
 
-当节点暂停时收到的通知。请参阅 :ref:`process_mode<class_Node_property_process_mode>`\ 。
+Notification received when the node is paused. See :ref:`process_mode<class_Node_property_process_mode>`.
 
 .. _class_Node_constant_NOTIFICATION_UNPAUSED:
 
@@ -811,7 +811,7 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_UNPAUSED** = ``15`` :ref:`🔗<class_Node_constant_NOTIFICATION_UNPAUSED>`
 
-当节点取消暂停时收到的通知。请参阅 :ref:`process_mode<class_Node_property_process_mode>`\ 。
+Notification received when the node is unpaused. See :ref:`process_mode<class_Node_property_process_mode>`.
 
 .. _class_Node_constant_NOTIFICATION_PHYSICS_PROCESS:
 
@@ -819,7 +819,7 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_PHYSICS_PROCESS** = ``16`` :ref:`🔗<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>`
 
-当 :ref:`is_physics_processing()<class_Node_method_is_physics_processing>` 返回 ``true`` 时，每个物理帧都会从场景树收到的通知。请参阅 :ref:`_physics_process()<class_Node_private_method__physics_process>`\ 。
+Notification received from the tree every physics frame when :ref:`is_physics_processing()<class_Node_method_is_physics_processing>` returns ``true``. See :ref:`_physics_process()<class_Node_private_method__physics_process>`.
 
 .. _class_Node_constant_NOTIFICATION_PROCESS:
 
@@ -827,7 +827,7 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_PROCESS** = ``17`` :ref:`🔗<class_Node_constant_NOTIFICATION_PROCESS>`
 
-当 :ref:`is_processing()<class_Node_method_is_processing>` 返回 ``true`` 时，每个渲染帧从场景树收到的通知。请参阅 :ref:`_process()<class_Node_private_method__process>`\ 。
+Notification received from the tree every rendered frame when :ref:`is_processing()<class_Node_method_is_processing>` returns ``true``. See :ref:`_process()<class_Node_private_method__process>`.
 
 .. _class_Node_constant_NOTIFICATION_PARENTED:
 
@@ -835,9 +835,9 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_PARENTED** = ``18`` :ref:`🔗<class_Node_constant_NOTIFICATION_PARENTED>`
 
-当节点被设置为另一个节点的子节点时收到的通知（请参阅 :ref:`add_child()<class_Node_method_add_child>` 和 :ref:`add_sibling()<class_Node_method_add_sibling>`\ ）。
+Notification received when the node is set as a child of another node (see :ref:`add_child()<class_Node_method_add_child>` and :ref:`add_sibling()<class_Node_method_add_sibling>`).
 
-\ **注意：**\ 这并\ *不*\ 意味着该节点进入了 :ref:`SceneTree<class_SceneTree>`\ 。
+\ **Note:** This does *not* mean that the node entered the :ref:`SceneTree<class_SceneTree>`.
 
 .. _class_Node_constant_NOTIFICATION_UNPARENTED:
 
@@ -845,9 +845,9 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_UNPARENTED** = ``19`` :ref:`🔗<class_Node_constant_NOTIFICATION_UNPARENTED>`
 
-当父节点在该节点上调用 :ref:`remove_child()<class_Node_method_remove_child>` 时收到的通知。
+Notification received when the parent node calls :ref:`remove_child()<class_Node_method_remove_child>` on this node.
 
-\ **注意：**\ 这并\ *不*\ 意味着该节点退出了 :ref:`SceneTree<class_SceneTree>`\ 。
+\ **Note:** This does *not* mean that the node exited the :ref:`SceneTree<class_SceneTree>`.
 
 .. _class_Node_constant_NOTIFICATION_SCENE_INSTANTIATED:
 
@@ -855,7 +855,7 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_SCENE_INSTANTIATED** = ``20`` :ref:`🔗<class_Node_constant_NOTIFICATION_SCENE_INSTANTIATED>`
 
-当 :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>` 完成时，\ *仅*\ 被新实例化的场景根节点收到的通知。
+Notification received *only* by the newly instantiated scene root node, when :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>` is completed.
 
 .. _class_Node_constant_NOTIFICATION_DRAG_BEGIN:
 
@@ -863,11 +863,11 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_DRAG_BEGIN** = ``21`` :ref:`🔗<class_Node_constant_NOTIFICATION_DRAG_BEGIN>`
 
-当拖拽操作开始时收到的通知。所有节点都会收到此通知，而不仅仅是被拖动的节点。
+Notification received when a drag operation begins. All nodes receive this notification, not only the dragged one.
 
-可以通过拖动提供拖动数据的 :ref:`Control<class_Control>`\ （见 :ref:`Control._get_drag_data()<class_Control_private_method__get_drag_data>`\ ），或使用 :ref:`Control.force_drag()<class_Control_method_force_drag>` 来触发。
+Can be triggered either by dragging a :ref:`Control<class_Control>` that provides drag data (see :ref:`Control._get_drag_data()<class_Control_private_method__get_drag_data>`) or using :ref:`Control.force_drag()<class_Control_method_force_drag>`.
 
-请使用 :ref:`Viewport.gui_get_drag_data()<class_Viewport_method_gui_get_drag_data>` 获取拖动数据。
+Use :ref:`Viewport.gui_get_drag_data()<class_Viewport_method_gui_get_drag_data>` to get the dragged data.
 
 .. _class_Node_constant_NOTIFICATION_DRAG_END:
 
@@ -875,9 +875,9 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_DRAG_END** = ``22`` :ref:`🔗<class_Node_constant_NOTIFICATION_DRAG_END>`
 
-当拖拽操作结束时收到的通知。
+Notification received when a drag operation ends.
 
-请使用 :ref:`Viewport.gui_is_drag_successful()<class_Viewport_method_gui_is_drag_successful>` 检查拖放是否成功。
+Use :ref:`Viewport.gui_is_drag_successful()<class_Viewport_method_gui_is_drag_successful>` to check if the drag succeeded.
 
 .. _class_Node_constant_NOTIFICATION_PATH_RENAMED:
 
@@ -885,7 +885,7 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_PATH_RENAMED** = ``23`` :ref:`🔗<class_Node_constant_NOTIFICATION_PATH_RENAMED>`
 
-当该节点的 :ref:`name<class_Node_property_name>` 或其祖先节点之一的 :ref:`name<class_Node_property_name>` 更改时收到的通知。当节点从 :ref:`SceneTree<class_SceneTree>` 中移除时，\ *不会*\ 收到该通知。
+Notification received when the node's :ref:`name<class_Node_property_name>` or one of its ancestors' :ref:`name<class_Node_property_name>` is changed. This notification is *not* received when the node is removed from the :ref:`SceneTree<class_SceneTree>`.
 
 .. _class_Node_constant_NOTIFICATION_CHILD_ORDER_CHANGED:
 
@@ -893,7 +893,7 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_CHILD_ORDER_CHANGED** = ``24`` :ref:`🔗<class_Node_constant_NOTIFICATION_CHILD_ORDER_CHANGED>`
 
-子节点列表发生更改时收到的通知。子节点发生添加、移动、删除时列表会发生更改。
+Notification received when the list of children is changed. This happens when child nodes are added, moved or removed.
 
 .. _class_Node_constant_NOTIFICATION_INTERNAL_PROCESS:
 
@@ -901,7 +901,7 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_INTERNAL_PROCESS** = ``25`` :ref:`🔗<class_Node_constant_NOTIFICATION_INTERNAL_PROCESS>`
 
-当 :ref:`is_processing_internal()<class_Node_method_is_processing_internal>` 返回 ``true`` 时，每个渲染帧都会从树中收到的通知。
+Notification received from the tree every rendered frame when :ref:`is_processing_internal()<class_Node_method_is_processing_internal>` returns ``true``.
 
 .. _class_Node_constant_NOTIFICATION_INTERNAL_PHYSICS_PROCESS:
 
@@ -909,7 +909,7 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_INTERNAL_PHYSICS_PROCESS** = ``26`` :ref:`🔗<class_Node_constant_NOTIFICATION_INTERNAL_PHYSICS_PROCESS>`
 
-当 :ref:`is_physics_processing_internal()<class_Node_method_is_physics_processing_internal>` 返回 ``true`` 时，每个物理帧都会从树中收到的通知。
+Notification received from the tree every physics frame when :ref:`is_physics_processing_internal()<class_Node_method_is_physics_processing_internal>` returns ``true``.
 
 .. _class_Node_constant_NOTIFICATION_POST_ENTER_TREE:
 
@@ -917,7 +917,7 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_POST_ENTER_TREE** = ``27`` :ref:`🔗<class_Node_constant_NOTIFICATION_POST_ENTER_TREE>`
 
-当该节点进入树时，刚好在可能收到 :ref:`NOTIFICATION_READY<class_Node_constant_NOTIFICATION_READY>` 之前，收到的通知。与后者不同的是，它在节点每次进入树时都会发送，而不是只发送一次。
+Notification received when the node enters the tree, just before :ref:`NOTIFICATION_READY<class_Node_constant_NOTIFICATION_READY>` may be received. Unlike the latter, it is sent every time the node enters tree, not just once.
 
 .. _class_Node_constant_NOTIFICATION_DISABLED:
 
@@ -925,7 +925,7 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_DISABLED** = ``28`` :ref:`🔗<class_Node_constant_NOTIFICATION_DISABLED>`
 
-当该节点被禁用时收到的通知。见 :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`\ 。
+Notification received when the node is disabled. See :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`.
 
 .. _class_Node_constant_NOTIFICATION_ENABLED:
 
@@ -933,7 +933,7 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_ENABLED** = ``29`` :ref:`🔗<class_Node_constant_NOTIFICATION_ENABLED>`
 
-当该节点被禁用后又再次被启用时收到的通知。见 :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`\ 。
+Notification received when the node is enabled again after being disabled. See :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`.
 
 .. _class_Node_constant_NOTIFICATION_RESET_PHYSICS_INTERPOLATION:
 
@@ -941,7 +941,7 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_RESET_PHYSICS_INTERPOLATION** = ``2001`` :ref:`🔗<class_Node_constant_NOTIFICATION_RESET_PHYSICS_INTERPOLATION>`
 
-当调用了该节点或其祖先节点的 :ref:`reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>` 时收到的通知。
+Notification received when :ref:`reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>` is called on the node or its ancestors.
 
 .. _class_Node_constant_NOTIFICATION_EDITOR_PRE_SAVE:
 
@@ -949,7 +949,7 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_EDITOR_PRE_SAVE** = ``9001`` :ref:`🔗<class_Node_constant_NOTIFICATION_EDITOR_PRE_SAVE>`
 
-在编辑器中保存有节点的场景之前收到的通知。这个通知只在 Godot 编辑器中发送，不会出现在导出的项目中。
+Notification received right before the scene with the node is saved in the editor. This notification is only sent in the Godot editor and will not occur in exported projects.
 
 .. _class_Node_constant_NOTIFICATION_EDITOR_POST_SAVE:
 
@@ -957,7 +957,7 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_EDITOR_POST_SAVE** = ``9002`` :ref:`🔗<class_Node_constant_NOTIFICATION_EDITOR_POST_SAVE>`
 
-在编辑器中保存有节点的场景后立即收到通知。这个通知只在 Godot 编辑器中发送，在导出的项目中不会出现。
+Notification received right after the scene with the node is saved in the editor. This notification is only sent in the Godot editor and will not occur in exported projects.
 
 .. _class_Node_constant_NOTIFICATION_WM_MOUSE_ENTER:
 
@@ -965,9 +965,9 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_WM_MOUSE_ENTER** = ``1002`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_MOUSE_ENTER>`
 
-鼠标进入窗口时收到的通知。
+Notification received when the mouse enters the window.
 
-为内嵌窗口实现，并在桌面和 Web 平台上实现。
+Implemented for embedded windows and on desktop and web platforms.
 
 .. _class_Node_constant_NOTIFICATION_WM_MOUSE_EXIT:
 
@@ -975,9 +975,9 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_WM_MOUSE_EXIT** = ``1003`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_MOUSE_EXIT>`
 
-鼠标离开窗口时收到的通知。
+Notification received when the mouse leaves the window.
 
-为内嵌窗口实现，并在桌面和 Web 平台上实现。
+Implemented for embedded windows and on desktop and web platforms.
 
 .. _class_Node_constant_NOTIFICATION_WM_WINDOW_FOCUS_IN:
 
@@ -985,9 +985,9 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_WM_WINDOW_FOCUS_IN** = ``1004`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_WINDOW_FOCUS_IN>`
 
-当节点的 :ref:`Window<class_Window>` 祖先获得焦点时从操作系统收到的通知。这可能是同一引擎实例的两个窗口之间的焦点变化，也可能是从操作系统桌面或第三方应用程序切换到游戏的某个窗口的焦点变化（在这种情况下，还会收到 :ref:`NOTIFICATION_APPLICATION_FOCUS_IN<class_Node_constant_NOTIFICATION_APPLICATION_FOCUS_IN>`\ ）。
+Notification received from the OS when the node's :ref:`Window<class_Window>` ancestor is focused. This may be a change of focus between two windows of the same engine instance, or from the OS desktop or a third-party application to a window of the game (in which case :ref:`NOTIFICATION_APPLICATION_FOCUS_IN<class_Node_constant_NOTIFICATION_APPLICATION_FOCUS_IN>` is also received).
 
-\ :ref:`Window<class_Window>` 节点会在获得焦点时收到该通知。
+A :ref:`Window<class_Window>` node receives this notification when it is focused.
 
 .. _class_Node_constant_NOTIFICATION_WM_WINDOW_FOCUS_OUT:
 
@@ -995,9 +995,9 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_WM_WINDOW_FOCUS_OUT** = ``1005`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_WINDOW_FOCUS_OUT>`
 
-当节点的 :ref:`Window<class_Window>` 祖先失去焦点时从操作系统收到的通知。这可能是同一引擎实例的两个窗口之间的焦点变化，也可能是从游戏的某一窗口切换到操作系统桌面或第三方应用程序的焦点变化（在这种情况下，还会收到 :ref:`NOTIFICATION_APPLICATION_FOCUS_OUT<class_Node_constant_NOTIFICATION_APPLICATION_FOCUS_OUT>`\ ）。
+Notification received from the OS when the node's :ref:`Window<class_Window>` ancestor is defocused. This may be a change of focus between two windows of the same engine instance, or from a window of the game to the OS desktop or a third-party application (in which case :ref:`NOTIFICATION_APPLICATION_FOCUS_OUT<class_Node_constant_NOTIFICATION_APPLICATION_FOCUS_OUT>` is also received).
 
-\ :ref:`Window<class_Window>` 节点会在失去焦点时收到该通知。
+A :ref:`Window<class_Window>` node receives this notification when it is defocused.
 
 .. _class_Node_constant_NOTIFICATION_WM_CLOSE_REQUEST:
 
@@ -1005,9 +1005,9 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_WM_CLOSE_REQUEST** = ``1006`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_CLOSE_REQUEST>`
 
-当发出关闭请求时，从操作系统收到的通知（例如使用“关闭”按钮或按下 :kbd:`Alt + F4` 关闭窗口时）。
+Notification received from the OS when a close request is sent (e.g. closing the window with a "Close" button or :kbd:`Alt + F4`).
 
-在桌面平台上实现。
+Implemented on desktop platforms.
 
 .. _class_Node_constant_NOTIFICATION_WM_GO_BACK_REQUEST:
 
@@ -1015,9 +1015,9 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_WM_GO_BACK_REQUEST** = ``1007`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_GO_BACK_REQUEST>`
 
-当一个返回请求发出时，从操作系统收到的通知（例如在 Android 系统上按下“返回”按钮）。
+Notification received from the OS when a go back request is sent (e.g. pressing the "Back" button on Android).
 
-仅在 Android 上实现。
+Implemented only on Android.
 
 .. _class_Node_constant_NOTIFICATION_WM_SIZE_CHANGED:
 
@@ -1025,9 +1025,9 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_WM_SIZE_CHANGED** = ``1008`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_SIZE_CHANGED>`
 
-当窗口大小被调整时收到的通知。
+Notification received when the window is resized.
 
-\ **注意：**\ 只有调整大小的 :ref:`Window<class_Window>` 节点才会收到该通知，并且不会传播到子节点。
+\ **Note:** Only the resized :ref:`Window<class_Window>` node receives this notification, and it's not propagated to the child nodes.
 
 .. _class_Node_constant_NOTIFICATION_WM_DPI_CHANGE:
 
@@ -1035,7 +1035,7 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_WM_DPI_CHANGE** = ``1009`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_DPI_CHANGE>`
 
-当屏幕的每英寸点数（DPI）比例发生更改时，从操作系统收到的通知。仅在 macOS 上实现。
+Notification received from the OS when the screen's dots per inch (DPI) scale is changed. Only implemented on macOS.
 
 .. _class_Node_constant_NOTIFICATION_VP_MOUSE_ENTER:
 
@@ -1043,7 +1043,7 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_VP_MOUSE_ENTER** = ``1010`` :ref:`🔗<class_Node_constant_NOTIFICATION_VP_MOUSE_ENTER>`
 
-当鼠标指针进入 :ref:`Viewport<class_Viewport>` 的可见区域时收到的通知，可见区域指没有被其他 :ref:`Control<class_Control>` 和 :ref:`Window<class_Window>` 遮挡的区域，并且需要 :ref:`Viewport.gui_disable_input<class_Viewport_property_gui_disable_input>` 为 ``false``\ ，与当前是否持有焦点无关。
+Notification received when the mouse cursor enters the :ref:`Viewport<class_Viewport>`'s visible area, that is not occluded behind other :ref:`Control<class_Control>`\ s or :ref:`Window<class_Window>`\ s, provided its :ref:`Viewport.gui_disable_input<class_Viewport_property_gui_disable_input>` is ``false`` and regardless if it's currently focused or not.
 
 .. _class_Node_constant_NOTIFICATION_VP_MOUSE_EXIT:
 
@@ -1051,7 +1051,7 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_VP_MOUSE_EXIT** = ``1011`` :ref:`🔗<class_Node_constant_NOTIFICATION_VP_MOUSE_EXIT>`
 
-当鼠标指针离开 :ref:`Viewport<class_Viewport>` 的可见区域时收到的通知，可见区域指没有被其他 :ref:`Control<class_Control>` 和 :ref:`Window<class_Window>` 遮挡的区域，并且需要 :ref:`Viewport.gui_disable_input<class_Viewport_property_gui_disable_input>` 为 ``false``\ ，与当前是否持有焦点无关。
+Notification received when the mouse cursor leaves the :ref:`Viewport<class_Viewport>`'s visible area, that is not occluded behind other :ref:`Control<class_Control>`\ s or :ref:`Window<class_Window>`\ s, provided its :ref:`Viewport.gui_disable_input<class_Viewport_property_gui_disable_input>` is ``false`` and regardless if it's currently focused or not.
 
 .. _class_Node_constant_NOTIFICATION_WM_POSITION_CHANGED:
 
@@ -1059,7 +1059,7 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_WM_POSITION_CHANGED** = ``1012`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_POSITION_CHANGED>`
 
-窗口移动时收到的通知。
+Notification received when the window is moved.
 
 .. _class_Node_constant_NOTIFICATION_OS_MEMORY_WARNING:
 
@@ -1067,9 +1067,9 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_OS_MEMORY_WARNING** = ``2009`` :ref:`🔗<class_Node_constant_NOTIFICATION_OS_MEMORY_WARNING>`
 
-当应用程序超过其分配的内存时，从操作系统收到的通知。
+Notification received from the OS when the application is exceeding its allocated memory.
 
-仅在 iOS 上被实现。
+Implemented only on iOS.
 
 .. _class_Node_constant_NOTIFICATION_TRANSLATION_CHANGED:
 
@@ -1077,16 +1077,16 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_TRANSLATION_CHANGED** = ``2010`` :ref:`🔗<class_Node_constant_NOTIFICATION_TRANSLATION_CHANGED>`
 
-翻译可能发生改变时收到的通知。用户更改区域设置、更改 :ref:`auto_translate_mode<class_Node_property_auto_translate_mode>`\ 、节点进入场景树时都会触发该通知。可以用来对语言的更改作出反应，例如动态更改 UI 字符串。使用 :ref:`Object.tr()<class_Object_method_tr>` 等内置翻译支持时很有用。
+Notification received when translations may have changed. Can be triggered by the user changing the locale, changing :ref:`auto_translate_mode<class_Node_property_auto_translate_mode>` or when the node enters the scene tree. Can be used to respond to language changes, for example to change the UI strings on the fly. Useful when working with the built-in translation support, like :ref:`Object.tr()<class_Object_method_tr>`.
 
-\ **注意：**\ 该通知是和 :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` 一起收到的，因此在实例化场景时，子节点尚未初始化。你可以用它设置该节点的翻译和用脚本创建的子节点的翻译，如果想要访问在编辑器中添加的子节点，请使用 :ref:`is_node_ready()<class_Node_method_is_node_ready>` 确保该节点已就绪。
+\ **Note:** This notification is received alongside :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>`, so if you are instantiating a scene, the child nodes will not be initialized yet. You can use it to setup translations for this node, child nodes created from script, or if you want to access child nodes added in the editor, make sure the node is ready using :ref:`is_node_ready()<class_Node_method_is_node_ready>`.
 
 ::
 
     func _notification(what):
         if what == NOTIFICATION_TRANSLATION_CHANGED:
             if not is_node_ready():
-                await ready # 等待就绪信号。
+                await ready # Wait until ready signal.
             $Label.text = atr("%d Bananas") % banana_counter
 
 .. _class_Node_constant_NOTIFICATION_WM_ABOUT:
@@ -1095,9 +1095,9 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_WM_ABOUT** = ``2011`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_ABOUT>`
 
-当发出“关于”信息请求时，从操作系统收到的通知。
+Notification received from the OS when a request for "About" information is sent.
 
-仅在 macOS 上被实现。
+Implemented only on macOS.
 
 .. _class_Node_constant_NOTIFICATION_CRASH:
 
@@ -1105,9 +1105,9 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_CRASH** = ``2012`` :ref:`🔗<class_Node_constant_NOTIFICATION_CRASH>`
 
-当引擎即将崩溃时，从Godot的崩溃处理程序收到的通知。
+Notification received from Godot's crash handler when the engine is about to crash.
 
-如果崩溃处理程序被启用，则在桌面平台上被实现。
+Implemented on desktop platforms, if the crash handler is enabled.
 
 .. _class_Node_constant_NOTIFICATION_OS_IME_UPDATE:
 
@@ -1125,9 +1125,9 @@ Implemented on desktop and web platforms.
 
 **NOTIFICATION_APPLICATION_RESUMED** = ``2014`` :ref:`🔗<class_Node_constant_NOTIFICATION_APPLICATION_RESUMED>`
 
-当应用程序恢复时，从操作系统收到的通知。
+Notification received from the OS when the application is resumed.
 
-具体针对 Android 和 iOS 平台。
+Specific to the Android and iOS platforms.
 
 .. _class_Node_constant_NOTIFICATION_APPLICATION_PAUSED:
 
@@ -1135,11 +1135,11 @@ Implemented on desktop and web platforms.
 
 **NOTIFICATION_APPLICATION_PAUSED** = ``2015`` :ref:`🔗<class_Node_constant_NOTIFICATION_APPLICATION_PAUSED>`
 
-应用程序暂停时从操作系统收到的通知。
+Notification received from the OS when the application is paused.
 
-特定于 Android 和 iOS 平台。
+Specific to the Android and iOS platforms.
 
-\ **注意：**\ 在 iOS 上，你只有大约 5 秒时间来完成由该信号启动的任务。如果你超过了该分配，则 iOS 将终止该应用程序而不是暂停它。
+\ **Note:** On iOS, you only have approximately 5 seconds to finish a task started by this signal. If you go over this allotment, iOS will kill the app instead of pausing it.
 
 .. _class_Node_constant_NOTIFICATION_APPLICATION_FOCUS_IN:
 
@@ -1147,9 +1147,9 @@ Implemented on desktop and web platforms.
 
 **NOTIFICATION_APPLICATION_FOCUS_IN** = ``2016`` :ref:`🔗<class_Node_constant_NOTIFICATION_APPLICATION_FOCUS_IN>`
 
-当应用程序获得焦点时从操作系统收到的通知，即焦点将从操作系统桌面或第三方应用程序更改为 Godot 实例的任何一个打开窗口时。
+Notification received from the OS when the application is focused, i.e. when changing the focus from the OS desktop or a thirdparty application to any open window of the Godot instance.
 
-在桌面和移动平台上实现。
+Implemented on desktop and mobile platforms.
 
 .. _class_Node_constant_NOTIFICATION_APPLICATION_FOCUS_OUT:
 
@@ -1157,9 +1157,9 @@ Implemented on desktop and web platforms.
 
 **NOTIFICATION_APPLICATION_FOCUS_OUT** = ``2017`` :ref:`🔗<class_Node_constant_NOTIFICATION_APPLICATION_FOCUS_OUT>`
 
-当应用程序失去焦点时从操作系统收到通知，即焦点将从 Godot 实例的任何一个打开窗口，更改为操作系统桌面或第三方应用程序时。
+Notification received from the OS when the application is defocused, i.e. when changing the focus from any open window of the Godot instance to the OS desktop or a thirdparty application.
 
-在桌面和移动平台上实现。
+Implemented on desktop and mobile platforms.
 
 .. _class_Node_constant_NOTIFICATION_TEXT_SERVER_CHANGED:
 
@@ -1167,7 +1167,7 @@ Implemented on desktop and web platforms.
 
 **NOTIFICATION_TEXT_SERVER_CHANGED** = ``2018`` :ref:`🔗<class_Node_constant_NOTIFICATION_TEXT_SERVER_CHANGED>`
 
-:ref:`TextServer<class_TextServer>` 被更改时收到的通知。
+Notification received when the :ref:`TextServer<class_TextServer>` is changed.
 
 .. _class_Node_constant_NOTIFICATION_ACCESSIBILITY_UPDATE:
 
@@ -1175,7 +1175,7 @@ Implemented on desktop and web platforms.
 
 **NOTIFICATION_ACCESSIBILITY_UPDATE** = ``3000`` :ref:`🔗<class_Node_constant_NOTIFICATION_ACCESSIBILITY_UPDATE>`
 
-无障碍信息需要更新时收到的通知。
+Notification received when an accessibility information update is required.
 
 .. _class_Node_constant_NOTIFICATION_ACCESSIBILITY_INVALIDATE:
 
@@ -1183,7 +1183,7 @@ Implemented on desktop and web platforms.
 
 **NOTIFICATION_ACCESSIBILITY_INVALIDATE** = ``3001`` :ref:`🔗<class_Node_constant_NOTIFICATION_ACCESSIBILITY_INVALIDATE>`
 
-无障碍元素失效时收到的通知。收到该消息后，会自动删除节点的无障碍元素，所以应当丢弃现有的对此类元素的引用。
+Notification received when accessibility elements are invalidated. All node accessibility elements are automatically deleted after receiving this message, therefore all existing references to such elements should be discarded.
 
 .. rst-class:: classref-section-separator
 
@@ -1191,8 +1191,8 @@ Implemented on desktop and web platforms.
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_Node_property_auto_translate_mode:
 
@@ -1224,7 +1224,7 @@ Defines if any text should automatically change to its translated version depend
 - |void| **set_editor_description**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_editor_description**\ (\ )
 
-节点的可选描述。在编辑器“场景”面板中的该节点上悬停时，会作为工具提示显示。
+An optional description to the node. It will be displayed as a tooltip when hovering over the node in the editor's Scene dock.
 
 .. rst-class:: classref-item-separator
 
@@ -1240,9 +1240,9 @@ Defines if any text should automatically change to its translated version depend
 
 - :ref:`MultiplayerAPI<class_MultiplayerAPI>` **get_multiplayer**\ (\ )
 
-与该节点关联的 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 实例。见 :ref:`SceneTree.get_multiplayer()<class_SceneTree_method_get_multiplayer>`\ 。
+The :ref:`MultiplayerAPI<class_MultiplayerAPI>` instance associated with this node. See :ref:`SceneTree.get_multiplayer()<class_SceneTree_method_get_multiplayer>`.
 
-\ **注意：**\ 将节点重命名或者在树中移动都不会将 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 移动至新的路径，你需要手动进行更新。
+\ **Note:** Renaming the node, or moving it in the tree, will not move the :ref:`MultiplayerAPI<class_MultiplayerAPI>` to the new path, you will have to update this manually.
 
 .. rst-class:: classref-item-separator
 
@@ -1259,9 +1259,9 @@ Defines if any text should automatically change to its translated version depend
 - |void| **set_name**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_name**\ (\ )
 
-该节点的名称。该名称在同级节点（来自同一父节点的其他子节点）中必须是唯一的。当设置为已有同级节点的名称时，该节点将会自动重命名。
+The name of the node. This name must be unique among the siblings (other child nodes from the same parent). When set to an existing sibling's name, the node is automatically renamed.
 
-\ **注意：**\ 更改名称时，以下字符将被替换为下划线：（\ ``.`` ``:`` ``@`` ``/`` ``"`` ``%``\ ）。特别是，\ ``@`` 字符是为自动生成的名称保留的。另见 :ref:`String.validate_node_name()<class_String_method_validate_node_name>`\ 。
+\ **Note:** When changing the name, the following characters will be replaced with an underscore: (``.`` ``:`` ``@`` ``/`` ``"`` ``%``). In particular, the ``@`` character is reserved for auto-generated names. See also :ref:`String.validate_node_name()<class_String_method_validate_node_name>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1299,13 +1299,13 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 - |void| **set_physics_interpolation_mode**\ (\ value\: :ref:`PhysicsInterpolationMode<enum_Node_PhysicsInterpolationMode>`\ )
 - :ref:`PhysicsInterpolationMode<enum_Node_PhysicsInterpolationMode>` **get_physics_interpolation_mode**\ (\ )
 
-节点所使用的物理插值模式。仅在 :ref:`ProjectSettings.physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>` 或 :ref:`SceneTree.physics_interpolation<class_SceneTree_property_physics_interpolation>` 为 ``true`` 时生效。
+The physics interpolation mode to use for this node. Only effective if :ref:`ProjectSettings.physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>` or :ref:`SceneTree.physics_interpolation<class_SceneTree_property_physics_interpolation>` is ``true``.
 
-节点默认继承父节点的物理插值模式。该属性可以为各个节点单独启用或禁用物理插值，使其独立于父节点的物理插值模式。
+By default, nodes inherit the physics interpolation mode from their parent. This property can enable or disable physics interpolation individually for each node, regardless of their parents' physics interpolation mode.
 
-\ **注意：**\ :ref:`VehicleWheel3D<class_VehicleWheel3D>` 等部分节点默认禁用物理插值，因为它们有自己的解决方案。
+\ **Note:** Some node types like :ref:`VehicleWheel3D<class_VehicleWheel3D>` have physics interpolation disabled by default, as they rely on their own custom solution.
 
-\ **注意：**\ 远距离传送节点时，建议在移动节点\ *之后*\ 通过 :ref:`reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>` 临时禁用插值，避免出现在新旧位置之间的视觉过渡。
+\ **Note:** When teleporting a node to a distant position, it's recommended to temporarily disable interpolation with :ref:`reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>` *after* moving the node. This avoids creating a visual streak between the old and new positions.
 
 .. rst-class:: classref-item-separator
 
@@ -1322,7 +1322,7 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 - |void| **set_process_mode**\ (\ value\: :ref:`ProcessMode<enum_Node_ProcessMode>`\ )
 - :ref:`ProcessMode<enum_Node_ProcessMode>` **get_process_mode**\ (\ )
 
-该节点的处理行为。要检查该节点是否能够在当前模式下进行处理，请使用 :ref:`can_process()<class_Node_method_can_process>`\ 。
+The node's processing behavior. To check if the node can process in its current mode, use :ref:`can_process()<class_Node_method_can_process>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1339,7 +1339,7 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 - |void| **set_physics_process_priority**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_physics_process_priority**\ (\ )
 
-与 :ref:`process_priority<class_Node_property_process_priority>` 类似，但是作用于 :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>`\ 、\ :ref:`_physics_process()<class_Node_private_method__physics_process>` 以及 :ref:`NOTIFICATION_INTERNAL_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PHYSICS_PROCESS>`\ 。
+Similar to :ref:`process_priority<class_Node_property_process_priority>` but for :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>`, :ref:`_physics_process()<class_Node_private_method__physics_process>`, or :ref:`NOTIFICATION_INTERNAL_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PHYSICS_PROCESS>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1356,7 +1356,7 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 - |void| **set_process_priority**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_process_priority**\ (\ )
 
-该节点的处理回调（\ :ref:`_process()<class_Node_private_method__process>`\ 、\ :ref:`_physics_process()<class_Node_private_method__physics_process>` 和 :ref:`NOTIFICATION_INTERNAL_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PROCESS>`\ ）执行顺序。无论树顺序如何，优先级值\ *较低*\ 的节点将先调用其处理回调。
+The node's execution order of the process callbacks (:ref:`_process()<class_Node_private_method__process>`, :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>`, and :ref:`NOTIFICATION_INTERNAL_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PROCESS>`). Nodes whose priority value is *lower* call their process callbacks first, regardless of tree order.
 
 .. rst-class:: classref-item-separator
 
@@ -1373,13 +1373,13 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 - |void| **set_process_thread_group**\ (\ value\: :ref:`ProcessThreadGroup<enum_Node_ProcessThreadGroup>`\ )
 - :ref:`ProcessThreadGroup<enum_Node_ProcessThreadGroup>` **get_process_thread_group**\ (\ )
 
-设置这个节点的处理线程组（基本上就是在主线程还是子线程中接收 :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>`\ 、\ :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>`\ 、\ :ref:`_process()<class_Node_private_method__process>`\ 、\ :ref:`_physics_process()<class_Node_private_method__physics_process>` 以及这些回调的内部版本）。
+Set the process thread group for this node (basically, whether it receives :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>`, :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>`, :ref:`_process()<class_Node_private_method__process>` or :ref:`_physics_process()<class_Node_private_method__physics_process>` (and the internal versions) on the main thread or in a sub-thread.
 
-默认情况下线程组为 :ref:`PROCESS_THREAD_GROUP_INHERIT<class_Node_constant_PROCESS_THREAD_GROUP_INHERIT>`\ ，表示这个节点所属的线程组与父节点一致。同一线程组中的节点会一起处理，独立于其他线程组（由 :ref:`process_thread_group_order<class_Node_property_process_thread_group_order>` 决定）。如果设为 :ref:`PROCESS_THREAD_GROUP_SUB_THREAD<class_Node_constant_PROCESS_THREAD_GROUP_SUB_THREAD>`\ ，则该线程组会在子线程（非主线程）中执行，而如果设为 :ref:`PROCESS_THREAD_GROUP_MAIN_THREAD<class_Node_constant_PROCESS_THREAD_GROUP_MAIN_THREAD>` 就会在主线程中处理。如果父节点和先祖节点都没有设置为非继承，则该节点属于\ *默认线程组*\ 。默认分组在主线程中处理，分组顺序为 0。
+By default, the thread group is :ref:`PROCESS_THREAD_GROUP_INHERIT<class_Node_constant_PROCESS_THREAD_GROUP_INHERIT>`, which means that this node belongs to the same thread group as the parent node. The thread groups means that nodes in a specific thread group will process together, separate to other thread groups (depending on :ref:`process_thread_group_order<class_Node_property_process_thread_group_order>`). If the value is set is :ref:`PROCESS_THREAD_GROUP_SUB_THREAD<class_Node_constant_PROCESS_THREAD_GROUP_SUB_THREAD>`, this thread group will occur on a sub thread (not the main thread), otherwise if set to :ref:`PROCESS_THREAD_GROUP_MAIN_THREAD<class_Node_constant_PROCESS_THREAD_GROUP_MAIN_THREAD>` it will process on the main thread. If there is not a parent or grandparent node set to something other than inherit, the node will belong to the *default thread group*. This default group will process on the main thread and its group order is 0.
 
-在子线程中处理时，禁止访问不属于该线程组的节点的大多数函数（调试模式下会报错）。请使用 :ref:`Object.call_deferred()<class_Object_method_call_deferred>`\ 、\ :ref:`call_thread_safe()<class_Node_method_call_thread_safe>`\ 、\ :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>` 等方法与主线程（或其他线程组）通信。
+During processing in a sub-thread, accessing most functions in nodes outside the thread group is forbidden (and it will result in an error in debug mode). Use :ref:`Object.call_deferred()<class_Object_method_call_deferred>`, :ref:`call_thread_safe()<class_Node_method_call_thread_safe>`, :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>` and the likes in order to communicate from the thread groups to the main thread (or to other thread groups).
 
-为了更好地理解线程组，你可以认为非 :ref:`PROCESS_THREAD_GROUP_INHERIT<class_Node_constant_PROCESS_THREAD_GROUP_INHERIT>` 的节点都会将设为继承的子节点（以及后续子孙节点）纳入它的处理线程组。这样该分组中的节点就会一起处理，包括包含它们的节点。
+To better understand process thread groups, the idea is that any node set to any other value than :ref:`PROCESS_THREAD_GROUP_INHERIT<class_Node_constant_PROCESS_THREAD_GROUP_INHERIT>` will include any child (and grandchild) nodes set to inherit into its process thread group. This means that the processing of all the nodes in the group will happen together, at the same time as the node including them.
 
 .. rst-class:: classref-item-separator
 
@@ -1396,7 +1396,7 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 - |void| **set_process_thread_group_order**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_process_thread_group_order**\ (\ )
 
-修改处理线程组的顺序。顺序取值较小的分组会在较大的分组前处理。例如，可以让大量的节点先在子线程中处理，然后再让另一组节点在主线程中获取它们的处理结果。
+Change the process thread group order. Groups with a lesser order will process before groups with a greater order. This is useful when a large amount of nodes process in sub thread and, afterwards, another group wants to collect their result in the main thread, as an example.
 
 .. rst-class:: classref-item-separator
 
@@ -1413,7 +1413,7 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 - |void| **set_process_thread_messages**\ (\ value\: |bitfield|\[:ref:`ProcessThreadMessages<enum_Node_ProcessThreadMessages>`\]\ )
 - |bitfield|\[:ref:`ProcessThreadMessages<enum_Node_ProcessThreadMessages>`\] **get_process_thread_messages**\ (\ )
 
-设置当前线程组是否处理消息（在线程上调用 :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>`\ ），以及是否需要在常规处理和物理处理回调中接收消息。
+Set whether the current thread group will process messages (calls to :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>` on threads), and whether it wants to receive them during regular process or physics process callbacks.
 
 .. rst-class:: classref-item-separator
 
@@ -1430,7 +1430,7 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 - |void| **set_scene_file_path**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_scene_file_path**\ (\ )
 
-原始场景的文件路径（如果节点已从 :ref:`PackedScene<class_PackedScene>` 文件完成实例化）。只有场景根节点包含该文件路径。
+The original scene's file path, if the node has been instantiated from a :ref:`PackedScene<class_PackedScene>` file. Only scene root nodes contains this.
 
 .. rst-class:: classref-item-separator
 
@@ -1447,9 +1447,9 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 - |void| **set_unique_name_in_owner**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_unique_name_in_owner**\ (\ )
 
-如果为 ``true``\ ，则可以从共享相同 :ref:`owner<class_Node_property_owner>` 的任意节点或从 :ref:`owner<class_Node_property_owner>` 本身访问该节点，并可在 :ref:`get_node()<class_Node_method_get_node>` 中使用特殊的 ``%Name`` 语法。
+If ``true``, the node can be accessed from any node sharing the same :ref:`owner<class_Node_property_owner>` or from the :ref:`owner<class_Node_property_owner>` itself, with special ``%Name`` syntax in :ref:`get_node()<class_Node_method_get_node>`.
 
-\ **注意：**\ 如果具有相同 :ref:`owner<class_Node_property_owner>` 的另一个节点与该节点共享相同的 :ref:`name<class_Node_property_name>`\ ，则另一个节点将不可再作为唯一节点名称进行访问。
+\ **Note:** If another node with the same :ref:`owner<class_Node_property_owner>` shares the same :ref:`name<class_Node_property_name>` as this node, the other node will no longer be accessible as unique.
 
 .. rst-class:: classref-section-separator
 
@@ -1457,8 +1457,8 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_Node_private_method__enter_tree:
 
@@ -1466,9 +1466,9 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 
 |void| **_enter_tree**\ (\ ) |virtual| :ref:`🔗<class_Node_private_method__enter_tree>`
 
-当节点进入 :ref:`SceneTree<class_SceneTree>` 时调用（例如实例化时、场景改变时或者在脚本中调用 :ref:`add_child()<class_Node_method_add_child>` 后）。如果节点有子节点，则首先调用它的 :ref:`_enter_tree()<class_Node_private_method__enter_tree>` 回调函数，然后再调用子节点的回调函数。
+Called when the node enters the :ref:`SceneTree<class_SceneTree>` (e.g. upon instantiating, scene changing, or after calling :ref:`add_child()<class_Node_method_add_child>` in a script). If the node has children, its :ref:`_enter_tree()<class_Node_private_method__enter_tree>` callback will be called first, and then that of the children.
 
-对应于 :ref:`Object._notification()<class_Object_private_method__notification>` 中的 :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` 通知。
+Corresponds to the :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` notification in :ref:`Object._notification()<class_Object_private_method__notification>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1480,9 +1480,9 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 
 |void| **_exit_tree**\ (\ ) |virtual| :ref:`🔗<class_Node_private_method__exit_tree>`
 
-当节点即将离开 :ref:`SceneTree<class_SceneTree>` 时被调用（例如，在释放、场景改变或在脚本中调用 :ref:`remove_child()<class_Node_method_remove_child>` 后）。如果该节点有子节点，它的 :ref:`_exit_tree()<class_Node_private_method__exit_tree>` 回调将在所有子节点离开树后被最后调用。
+Called when the node is about to leave the :ref:`SceneTree<class_SceneTree>` (e.g. upon freeing, scene changing, or after calling :ref:`remove_child()<class_Node_method_remove_child>` in a script). If the node has children, its :ref:`_exit_tree()<class_Node_private_method__exit_tree>` callback will be called last, after all its children have left the tree.
 
-对应于 :ref:`Object._notification()<class_Object_private_method__notification>` 中的 :ref:`NOTIFICATION_EXIT_TREE<class_Node_constant_NOTIFICATION_EXIT_TREE>` 通知和 :ref:`tree_exiting<class_Node_signal_tree_exiting>` 信号。要在节点已经离开活动树时得到通知，请连接到 :ref:`tree_exited<class_Node_signal_tree_exited>`\ 。
+Corresponds to the :ref:`NOTIFICATION_EXIT_TREE<class_Node_constant_NOTIFICATION_EXIT_TREE>` notification in :ref:`Object._notification()<class_Object_private_method__notification>` and signal :ref:`tree_exiting<class_Node_signal_tree_exiting>`. To get notified when the node has already left the active tree, connect to the :ref:`tree_exited<class_Node_signal_tree_exited>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1494,9 +1494,9 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_accessibility_configuration_warnings**\ (\ ) |virtual| |const| :ref:`🔗<class_Node_private_method__get_accessibility_configuration_warnings>`
 
-如果覆盖的脚本是 ``tool`` 脚本，并且在编辑器设置中启用了无障碍警告，那么该方法返回的数组中的元素就会作为警告显示在“场景”面板中。
+The elements in the array returned from this method are displayed as warnings in the Scene dock if the script that overrides it is a ``tool`` script, and accessibility warnings are enabled in the editor settings.
 
-返回空数组不会产生警告。
+Returning an empty array produces no warnings.
 
 .. rst-class:: classref-item-separator
 
@@ -1508,11 +1508,11 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_configuration_warnings**\ (\ ) |virtual| |const| :ref:`🔗<class_Node_private_method__get_configuration_warnings>`
 
-如果覆盖这个方法的脚本是 ``tool`` 脚本，那么这个函数所返回的数组中的元素会在“场景”面板中显示为警告。
+The elements in the array returned from this method are displayed as warnings in the Scene dock if the script that overrides it is a ``tool`` script.
 
-返回空数组不会生成警告。
+Returning an empty array produces no warnings.
 
-这个节点的警告需要更新时，请调用 :ref:`update_configuration_warnings()<class_Node_method_update_configuration_warnings>`\ 。
+Call :ref:`update_configuration_warnings()<class_Node_method_update_configuration_warnings>` when the warnings need to be updated for this node.
 
 ::
 
@@ -1523,7 +1523,7 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 
     func _get_configuration_warnings():
         if energy < 0:
-            return ["Energy 必须大于等于 0。"]
+            return ["Energy must be 0 or greater."]
         else:
             return []
 
@@ -1537,7 +1537,7 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 
 :ref:`RID<class_RID>` **_get_focused_accessibility_element**\ (\ ) |virtual| |const| :ref:`🔗<class_Node_private_method__get_focused_accessibility_element>`
 
-在无障碍信息更新期间调用，确定当前聚焦的子元素，应当返回子元素的 RID 或 :ref:`get_accessibility_element()<class_Node_method_get_accessibility_element>` 的返回值。
+Called during accessibility information updates to determine the currently focused sub-element, should return a sub-element RID or the value returned by :ref:`get_accessibility_element()<class_Node_method_get_accessibility_element>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1549,15 +1549,15 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 
 |void| **_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) |virtual| :ref:`🔗<class_Node_private_method__input>`
 
-有输入事件时会被调用。输入事件会沿节点树向上传播，直到有节点将其消耗。
+Called when there is an input event. The input event propagates up through the node tree until a node consumes it.
 
-只有在启用输入处理时才会被调用，如果该方法被重写则会自动启用，可以使用 :ref:`set_process_input()<class_Node_method_set_process_input>` 进行切换。
+It is only called if input processing is enabled, which is done automatically if this method is overridden, and can be toggled with :ref:`set_process_input()<class_Node_method_set_process_input>`.
 
-要消耗输入事件，阻止它进一步传播到其他节点，可以调用 :ref:`Viewport.set_input_as_handled()<class_Viewport_method_set_input_as_handled>`\ 。
+To consume the input event and stop it propagating further to other nodes, :ref:`Viewport.set_input_as_handled()<class_Viewport_method_set_input_as_handled>` can be called.
 
-对于游戏输入，\ :ref:`_unhandled_input()<class_Node_private_method__unhandled_input>` 和 :ref:`_unhandled_key_input()<class_Node_private_method__unhandled_key_input>` 通常更适合，因为它们允许 GUI 首先拦截事件。
+For gameplay input, :ref:`_unhandled_input()<class_Node_private_method__unhandled_input>` and :ref:`_unhandled_key_input()<class_Node_private_method__unhandled_key_input>` are usually a better fit as they allow the GUI to intercept the events first.
 
-\ **注意：**\ 仅当该节点存在于场景树中时（即不是孤立节点），此方法才会被调用。
+\ **Note:** This method is only called if the node is present in the scene tree (i.e. if it's not an orphan).
 
 .. rst-class:: classref-item-separator
 
@@ -1569,17 +1569,17 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 
 |void| **_physics_process**\ (\ delta\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_Node_private_method__physics_process>`
 
-每个物理周期调用一次，允许节点将其逻辑与物理周期同步。\ ``delta`` 是物理周期之间的逻辑时间（单位为秒），等于 :ref:`Engine.time_scale<class_Engine_property_time_scale>` / :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`\ 。
+Called once on each physics tick, and allows Nodes to synchronize their logic with physics ticks. ``delta`` is the logical time between physics ticks in seconds and is equal to :ref:`Engine.time_scale<class_Engine_property_time_scale>` / :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`.
 
-启用该节点的物理处理后才会调用该方法，覆盖该方法后会自动启用，可以使用 :ref:`set_physics_process()<class_Node_method_set_physics_process>` 开关。
+It is only called if physics processing is enabled for this Node, which is done automatically if this method is overridden, and can be toggled with :ref:`set_physics_process()<class_Node_method_set_physics_process>`.
 
-处理按照 :ref:`process_physics_priority<class_Node_property_process_physics_priority>` 的顺序进行，优先级取值越低越先调用。优先级相同的节点按照树顺序处理，即编辑器中从上到下的顺序（也叫前序遍历）。
+Processing happens in order of :ref:`process_physics_priority<class_Node_property_process_physics_priority>`, lower priority values are called first. Nodes with the same priority are processed in tree order, or top to bottom as seen in the editor (also known as pre-order traversal).
 
-对应 :ref:`Object._notification()<class_Object_private_method__notification>` 中的 :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>` 通知。
+Corresponds to the :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>` notification in :ref:`Object._notification()<class_Object_private_method__notification>`.
 
-\ **注意：**\ 节点位于场景树中才会调用该方法（即不能是孤立节点）。
+\ **Note:** This method is only called if the node is present in the scene tree (i.e. if it's not an orphan).
 
-\ **注意：**\ 累计的 ``delta`` 可能与现实世界的秒数有所不同。
+\ **Note:** Accumulated ``delta`` may diverge from real world seconds.
 
 .. rst-class:: classref-item-separator
 
@@ -1591,21 +1591,21 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 
 |void| **_process**\ (\ delta\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_Node_private_method__process>`
 
-在渲染之前以及物理周期处理完之后，在每个空闲帧上调用。\ ``delta`` 是帧之间的时间（单位为秒）。
+Called on each idle frame, prior to rendering, and after physics ticks have been processed. ``delta`` is the time between frames in seconds.
 
-启用该节点的处理后才会调用该方法，覆盖该方法后会自动启用，可以使用 :ref:`set_process()<class_Node_method_set_process>` 开关。
+It is only called if processing is enabled for this Node, which is done automatically if this method is overridden, and can be toggled with :ref:`set_process()<class_Node_method_set_process>`.
 
-处理按照 :ref:`process_priority<class_Node_property_process_priority>` 的顺序进行，优先级取值越低越先调用。优先级相同的节点按照树顺序处理，即编辑器中从上到下的顺序（也叫前序遍历）。
+Processing happens in order of :ref:`process_priority<class_Node_property_process_priority>`, lower priority values are called first. Nodes with the same priority are processed in tree order, or top to bottom as seen in the editor (also known as pre-order traversal).
 
-对应 :ref:`Object._notification()<class_Object_private_method__notification>` 中的 :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>` 通知。
+Corresponds to the :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>` notification in :ref:`Object._notification()<class_Object_private_method__notification>`.
 
-\ **注意：**\ 节点位于场景树中才会调用该方法（即不能是孤立节点）。
+\ **Note:** This method is only called if the node is present in the scene tree (i.e. if it's not an orphan).
 
-\ **注意：**\ 当引擎运行困难且帧率降低时，\ ``delta`` 会增加。当 ``delta`` 增加时，其最大值为 :ref:`Engine.time_scale<class_Engine_property_time_scale>` \* :ref:`Engine.max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` / :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`\ 。因此，累积的 ``delta`` 可能无法代表真实世界时间。
+\ **Note:** When the engine is struggling and the frame rate is lowered, ``delta`` will increase. When ``delta`` is increased, it's capped at a maximum of :ref:`Engine.time_scale<class_Engine_property_time_scale>` \* :ref:`Engine.max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` / :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`. As a result, accumulated ``delta`` may not represent real world time.
 
-\ **注意：**\ 当启用 ``--fixed-fps`` 或引擎在 Movie Maker 模式（参见 :ref:`MovieWriter<class_MovieWriter>`\ ）下运行时，无论渲染该帧花费了多少时间，处理 ``delta`` 对每一帧来说始终都是相同的。
+\ **Note:** When ``--fixed-fps`` is enabled or the engine is running in Movie Maker mode (see :ref:`MovieWriter<class_MovieWriter>`), process ``delta`` will always be the same for every frame, regardless of how much time the frame took to render.
 
-\ **注意：**\ 如果项目启用了 :ref:`OS.delta_smoothing<class_OS_property_delta_smoothing>` 功能，则帧增量可能会通过它进行后期处理。
+\ **Note:** Frame delta may be post-processed by :ref:`OS.delta_smoothing<class_OS_property_delta_smoothing>` if this is enabled for the project.
 
 .. rst-class:: classref-item-separator
 
@@ -1617,13 +1617,13 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 
 |void| **_ready**\ (\ ) |virtual| :ref:`🔗<class_Node_private_method__ready>`
 
-当节点“就绪”时被调用，即当节点及其子节点都已经进入场景树时。如果该节点有子节点，将首先触发子节点的 :ref:`_ready()<class_Node_private_method__ready>` 回调，稍后父节点将收到就绪通知。
+Called when the node is "ready", i.e. when both the node and its children have entered the scene tree. If the node has children, their :ref:`_ready()<class_Node_private_method__ready>` callbacks get triggered first, and the parent node will receive the ready notification afterwards.
 
-对应 :ref:`Object._notification()<class_Object_private_method__notification>` 中的 :ref:`NOTIFICATION_READY<class_Node_constant_NOTIFICATION_READY>` 通知。另见用于变量的 ``@onready`` 注解。
+Corresponds to the :ref:`NOTIFICATION_READY<class_Node_constant_NOTIFICATION_READY>` notification in :ref:`Object._notification()<class_Object_private_method__notification>`. See also the ``@onready`` annotation for variables.
 
-通常用于初始化。对于更早的初始化，可以使用 :ref:`Object._init()<class_Object_private_method__init>`\ 。另见 :ref:`_enter_tree()<class_Node_private_method__enter_tree>`\ 。
+Usually used for initialization. For even earlier initialization, :ref:`Object._init()<class_Object_private_method__init>` may be used. See also :ref:`_enter_tree()<class_Node_private_method__enter_tree>`.
 
-\ **注意：**\ 该方法对于每个节点可能仅调用一次。从场景树中移除一个节点后，并再次添加该节点时，将\ **不**\ 会第二次调用 :ref:`_ready()<class_Node_private_method__ready>`\ 。这时可以通过使用 :ref:`request_ready()<class_Node_method_request_ready>`\ ，它可以在再次添加节点之前的任何地方被调用。
+\ **Note:** This method may be called only once for each node. After removing a node from the scene tree and adding it again, :ref:`_ready()<class_Node_private_method__ready>` will **not** be called a second time. This can be bypassed by requesting another call with :ref:`request_ready()<class_Node_method_request_ready>`, which may be called anywhere before adding the node again.
 
 .. rst-class:: classref-item-separator
 
@@ -1635,15 +1635,15 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 
 |void| **_shortcut_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) |virtual| :ref:`🔗<class_Node_private_method__shortcut_input>`
 
-当 :ref:`InputEventKey<class_InputEventKey>`\ 、\ :ref:`InputEventShortcut<class_InputEventShortcut>` 或 :ref:`InputEventJoypadButton<class_InputEventJoypadButton>` 没有被 :ref:`_input()<class_Node_private_method__input>` 以及任何 GUI :ref:`Control<class_Control>` 项消耗时调用。这是在 :ref:`_unhandled_key_input()<class_Node_private_method__unhandled_key_input>` 和 :ref:`_unhandled_input()<class_Node_private_method__unhandled_input>` 之前调用的。输入事件通过节点树向上传播，直到某个节点将其消耗。
+Called when an :ref:`InputEventKey<class_InputEventKey>`, :ref:`InputEventShortcut<class_InputEventShortcut>`, or :ref:`InputEventJoypadButton<class_InputEventJoypadButton>` hasn't been consumed by :ref:`_input()<class_Node_private_method__input>` or any GUI :ref:`Control<class_Control>` item. It is called before :ref:`_unhandled_key_input()<class_Node_private_method__unhandled_key_input>` and :ref:`_unhandled_input()<class_Node_private_method__unhandled_input>`. The input event propagates up through the node tree until a node consumes it.
 
-快捷键处理处于启用状态时才会调用该方法。如果该方法被覆盖，就会自动启用快捷键处理，可以使用 :ref:`set_process_shortcut_input()<class_Node_method_set_process_shortcut_input>` 进行开关。
+It is only called if shortcut processing is enabled, which is done automatically if this method is overridden, and can be toggled with :ref:`set_process_shortcut_input()<class_Node_method_set_process_shortcut_input>`.
 
-要消耗输入事件并阻止其进一步传播到其他节点，可以调用 :ref:`Viewport.set_input_as_handled()<class_Viewport_method_set_input_as_handled>`\ 。
+To consume the input event and stop it propagating further to other nodes, :ref:`Viewport.set_input_as_handled()<class_Viewport_method_set_input_as_handled>` can be called.
 
-该方法可用于处理快捷键。如果是常规的 GUI 事件，请改用 :ref:`_input()<class_Node_private_method__input>`\ 。游戏事件通常应该使用 :ref:`_unhandled_input()<class_Node_private_method__unhandled_input>` 或 :ref:`_unhandled_key_input()<class_Node_private_method__unhandled_key_input>` 处理。
+This method can be used to handle shortcuts. For generic GUI events, use :ref:`_input()<class_Node_private_method__input>` instead. Gameplay events should usually be handled with either :ref:`_unhandled_input()<class_Node_private_method__unhandled_input>` or :ref:`_unhandled_key_input()<class_Node_private_method__unhandled_key_input>`.
 
-\ **注意：**\ 仅当该节点存在于场景树中（即它不是一个孤立节点）时，该方法才会被调用。
+\ **Note:** This method is only called if the node is present in the scene tree (i.e. if it's not orphan).
 
 .. rst-class:: classref-item-separator
 
@@ -1655,15 +1655,15 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 
 |void| **_unhandled_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) |virtual| :ref:`🔗<class_Node_private_method__unhandled_input>`
 
-当一个 :ref:`InputEvent<class_InputEvent>` 尚未被 :ref:`_input()<class_Node_private_method__input>` 或任何 GUI :ref:`Control<class_Control>` 项消耗时调用。这是在 :ref:`_shortcut_input()<class_Node_private_method__shortcut_input>` 和 :ref:`_unhandled_key_input()<class_Node_private_method__unhandled_key_input>` 之后调用的。输入事件通过节点树向上传播，直到一个节点消耗它。
+Called when an :ref:`InputEvent<class_InputEvent>` hasn't been consumed by :ref:`_input()<class_Node_private_method__input>` or any GUI :ref:`Control<class_Control>` item. It is called after :ref:`_shortcut_input()<class_Node_private_method__shortcut_input>` and after :ref:`_unhandled_key_input()<class_Node_private_method__unhandled_key_input>`. The input event propagates up through the node tree until a node consumes it.
 
-只有在未处理的输入处理被启用时，才会被调用，如果该方法被重写，则会自动被调用，并且可以使用 :ref:`set_process_unhandled_input()<class_Node_method_set_process_unhandled_input>` 进行切换。
+It is only called if unhandled input processing is enabled, which is done automatically if this method is overridden, and can be toggled with :ref:`set_process_unhandled_input()<class_Node_method_set_process_unhandled_input>`.
 
-要消耗输入事件，并阻止它进一步传播到其他节点，可以调用 :ref:`Viewport.set_input_as_handled()<class_Viewport_method_set_input_as_handled>`\ 。
+To consume the input event and stop it propagating further to other nodes, :ref:`Viewport.set_input_as_handled()<class_Viewport_method_set_input_as_handled>` can be called.
 
-对于游戏输入，这个方法通常比 :ref:`_input()<class_Node_private_method__input>` 更合适，因为 GUI 事件需要更高的优先级。对于键盘快捷键，请考虑改用 :ref:`_shortcut_input()<class_Node_private_method__shortcut_input>`\ ，因为是在这个方法之前调用的。最后，如果要处理键盘事件，那么出于性能方面的原因请考虑使用 :ref:`_unhandled_key_input()<class_Node_private_method__unhandled_key_input>`\ 。
+For gameplay input, this method is usually a better fit than :ref:`_input()<class_Node_private_method__input>`, as GUI events need a higher priority. For keyboard shortcuts, consider using :ref:`_shortcut_input()<class_Node_private_method__shortcut_input>` instead, as it is called before this method. Finally, to handle keyboard events, consider using :ref:`_unhandled_key_input()<class_Node_private_method__unhandled_key_input>` for performance reasons.
 
-\ **注意：**\ 仅当该节点存在于场景树中（即不是孤立节点）时，该方法才会被调用。
+\ **Note:** This method is only called if the node is present in the scene tree (i.e. if it's not an orphan).
 
 .. rst-class:: classref-item-separator
 
@@ -1675,17 +1675,17 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 
 |void| **_unhandled_key_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) |virtual| :ref:`🔗<class_Node_private_method__unhandled_key_input>`
 
-当 :ref:`InputEventKey<class_InputEventKey>` 没有被 :ref:`_input()<class_Node_private_method__input>` 或任何 GUI :ref:`Control<class_Control>` 项目消耗时调用。这是在 :ref:`_shortcut_input()<class_Node_private_method__shortcut_input>` 之后、\ :ref:`_unhandled_input()<class_Node_private_method__unhandled_input>` 之前调用的。输入事件通过节点树向上传播，直到某个节点将其消耗。
+Called when an :ref:`InputEventKey<class_InputEventKey>` hasn't been consumed by :ref:`_input()<class_Node_private_method__input>` or any GUI :ref:`Control<class_Control>` item. It is called after :ref:`_shortcut_input()<class_Node_private_method__shortcut_input>` but before :ref:`_unhandled_input()<class_Node_private_method__unhandled_input>`. The input event propagates up through the node tree until a node consumes it.
 
-只有在启用了未处理按键输入处理时才会被调用，如果覆盖了这个方法就会自动启用，并且可以用 :ref:`set_process_unhandled_key_input()<class_Node_method_set_process_unhandled_key_input>` 来开关。
+It is only called if unhandled key input processing is enabled, which is done automatically if this method is overridden, and can be toggled with :ref:`set_process_unhandled_key_input()<class_Node_method_set_process_unhandled_key_input>`.
 
-要消耗输入事件并阻止它进一步传播到其他节点，可以调用 :ref:`Viewport.set_input_as_handled()<class_Viewport_method_set_input_as_handled>`\ 。
+To consume the input event and stop it propagating further to other nodes, :ref:`Viewport.set_input_as_handled()<class_Viewport_method_set_input_as_handled>` can be called.
 
-在处理快捷键后，此方法可用于使用 :kbd:`Alt`\ 、\ :kbd:`Alt + Ctrl` 和 :kbd:`Alt + Shift` 修饰符处理 Unicode 字符输入。
+This method can be used to handle Unicode character input with :kbd:`Alt`, :kbd:`Alt + Ctrl`, and :kbd:`Alt + Shift` modifiers, after shortcuts were handled.
 
-对于游戏输入，这和 :ref:`_unhandled_input()<class_Node_private_method__unhandled_input>` 通常比 :ref:`_input()<class_Node_private_method__input>` 更适合，因为应该先处理 GUI 事件。该方法的性能也比 :ref:`_unhandled_input()<class_Node_private_method__unhandled_input>` 更好，因为 :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` 等无关事件会被自动过滤。
+For gameplay input, this and :ref:`_unhandled_input()<class_Node_private_method__unhandled_input>` are usually a better fit than :ref:`_input()<class_Node_private_method__input>`, as GUI events should be handled first. This method also performs better than :ref:`_unhandled_input()<class_Node_private_method__unhandled_input>`, since unrelated events such as :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` are automatically filtered. For shortcuts, consider using :ref:`_shortcut_input()<class_Node_private_method__shortcut_input>` instead.
 
-\ **注意：**\ 只有当节点存在于场景树中（即不是孤立节点）时，该方法才会被调用。
+\ **Note:** This method is only called if the node is present in the scene tree (i.e. if it's not an orphan).
 
 .. rst-class:: classref-item-separator
 
@@ -1697,13 +1697,13 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 
 |void| **add_child**\ (\ node\: :ref:`Node<class_Node>`, force_readable_name\: :ref:`bool<class_bool>` = false, internal\: :ref:`InternalMode<enum_Node_InternalMode>` = 0\ ) :ref:`🔗<class_Node_method_add_child>`
 
-将 ``node`` 添加为子节点。节点可以有任意数量的子节点，但子节点的名称必须唯一。删除父节点时会自动删除子节点，因此可以通过删除最顶层的节点来删除整个场景。
+Adds a child ``node``. Nodes can have any number of children, but every child must have a unique name. Child nodes are automatically deleted when the parent node is deleted, so an entire scene can be removed by deleting its topmost node.
 
-如果 ``force_readable_name`` 为 ``true``\ ，则将提高所添加的 ``node`` 的可读性。如果尚未命名，\ ``node`` 将重命名为它的类型，如果存在 :ref:`name<class_Node_property_name>` 相同的同级节点，则会添加合适的数字后缀。这个操作很慢。因此，建议将其保留为 ``false``\ ，在这两种情况下会分配包含 ``@`` 的虚设名称。
+If ``force_readable_name`` is ``true``, improves the readability of the added ``node``. If not named, the ``node`` is renamed to its type, and if it shares :ref:`name<class_Node_property_name>` with a sibling, a number is suffixed more appropriately. This operation is very slow. As such, it is recommended leaving this to ``false``, which assigns a dummy name featuring ``@`` in both situations.
 
-如果 ``internal`` 不同于 :ref:`INTERNAL_MODE_DISABLED<class_Node_constant_INTERNAL_MODE_DISABLED>`\ ，则该子节点将被添加为内部节点。\ :ref:`get_children()<class_Node_method_get_children>` 等方法会忽略这些节点，除非它们的参数 ``include_internal`` 为 ``true``\ 。这种功能的设计初衷是对用户隐藏内部节点，这样用户就不会意外删除或修改这些节点。部分 GUI 节点会使用这个功能，例如 :ref:`ColorPicker<class_ColorPicker>`\ 。
+If ``internal`` is different than :ref:`INTERNAL_MODE_DISABLED<class_Node_constant_INTERNAL_MODE_DISABLED>`, the child will be added as internal node. These nodes are ignored by methods like :ref:`get_children()<class_Node_method_get_children>`, unless their parameter ``include_internal`` is ``true``. It also prevents these nodes being duplicated with their parent. The intended usage is to hide the internal nodes from the user, so the user won't accidentally delete or modify them. Used by some GUI nodes, e.g. :ref:`ColorPicker<class_ColorPicker>`.
 
-\ **注意：**\ 如果 ``node`` 已经有父节点，则该方法会失败。请先使用 :ref:`remove_child()<class_Node_method_remove_child>` 将 ``node`` 从其当前父节点中移除。例如：
+\ **Note:** If ``node`` already has a parent, this method will fail. Use :ref:`remove_child()<class_Node_method_remove_child>` first to remove ``node`` from its current parent. For example:
 
 
 .. tabs::
@@ -1726,9 +1726,9 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 
 
 
-如果你需要将子节点添加到子节点列表中特定节点的下方，请使用 :ref:`add_sibling()<class_Node_method_add_sibling>` 而不是该方法。
+If you need the child node to be added below a specific node in the list of children, use :ref:`add_sibling()<class_Node_method_add_sibling>` instead of this method.
 
-\ **注意：**\ 如果想让子节点持久化到某个 :ref:`PackedScene<class_PackedScene>` 的，除了调用 :ref:`add_child()<class_Node_method_add_child>` 之外，还必须设置 :ref:`owner<class_Node_property_owner>`\ 。通常在\ :doc:`工具脚本 <../tutorials/plugins/running_code_in_the_editor>`\ 和\ :doc:`编辑器插件 <../tutorials/plugins/editor/index>`\ 中会用到。如果在没有设置 :ref:`owner<class_Node_property_owner>`\ ，只调用了 :ref:`add_child()<class_Node_method_add_child>`\ ，则新添加的 **Node** 在场景树中将不可见，但在 2D/3D 视图中却是可见的。
+\ **Note:** If you want a child to be persisted to a :ref:`PackedScene<class_PackedScene>`, you must set :ref:`owner<class_Node_property_owner>` in addition to calling :ref:`add_child()<class_Node_method_add_child>`. This is typically relevant for :doc:`tool scripts <../tutorials/plugins/running_code_in_the_editor>` and :doc:`editor plugins <../tutorials/plugins/editor/index>`. If :ref:`add_child()<class_Node_method_add_child>` is called without setting :ref:`owner<class_Node_property_owner>`, the newly added **Node** will not be visible in the scene tree, though it will be visible in the 2D/3D view.
 
 .. rst-class:: classref-item-separator
 
@@ -1740,13 +1740,13 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 
 |void| **add_sibling**\ (\ sibling\: :ref:`Node<class_Node>`, force_readable_name\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Node_method_add_sibling>`
 
-将一个 ``sibling`` 节点添加到该节点的父节点，并将该添加的同级节点移动到该节点的正下方。
+Adds a ``sibling`` node to this node's parent, and moves the added sibling right below this node.
 
-如果 ``force_readable_name`` 为 ``true``\ ，则提高添加的 ``sibling`` 的可读性。如果没有命名，\ ``sibling`` 将被重命名为它的类型，如果它与一个同级节点共享 :ref:`name<class_Node_property_name>`\ ，则添加一个更合适的数字后缀。这个操作很慢。因此，建议将其保留为 ``false``\ ，这会在两种情况下分配一个以 ``@`` 为特色的虚设名称。
+If ``force_readable_name`` is ``true``, improves the readability of the added ``sibling``. If not named, the ``sibling`` is renamed to its type, and if it shares :ref:`name<class_Node_property_name>` with a sibling, a number is suffixed more appropriately. This operation is very slow. As such, it is recommended leaving this to ``false``, which assigns a dummy name featuring ``@`` in both situations.
 
-如果不需要将该子节点添加到子列表中特定节点的下方，请使用 :ref:`add_child()<class_Node_method_add_child>` 而不是该方法。
+Use :ref:`add_child()<class_Node_method_add_child>` instead of this method if you don't need the child node to be added below a specific node in the list of children.
 
-\ **注意：**\ 如果这个节点是内部的，则添加的同级节点也将是内部的（参见 :ref:`add_child()<class_Node_method_add_child>` 的 ``internal`` 参数）。
+\ **Note:** If this node is internal, the added sibling will be internal too (see :ref:`add_child()<class_Node_method_add_child>`'s ``internal`` parameter).
 
 .. rst-class:: classref-item-separator
 
@@ -1776,13 +1776,13 @@ If ``persistent`` is ``true``, the group will be stored when saved inside a :ref
 
 :ref:`String<class_String>` **atr**\ (\ message\: :ref:`String<class_String>`, context\: :ref:`StringName<class_StringName>` = ""\ ) |const| :ref:`🔗<class_Node_method_atr>`
 
-翻译一条 ``message``\ ，该翻译使用项目设置中配置的翻译目录。可指定额外的 ``context`` 来辅助翻译。请注意，大多数 :ref:`Control<class_Control>` 节点会自动翻译其上的字符串，因此该方法主要用于格式化字符串或自定义绘制的文本。
+Translates a ``message``, using the translation catalogs configured in the Project Settings. Further ``context`` can be specified to help with the translation. Note that most :ref:`Control<class_Control>` nodes automatically translate their strings, so this method is mostly useful for formatted strings or custom drawn text.
 
-该方法的工作方式与 :ref:`Object.tr()<class_Object_method_tr>` 相同，但额外遵循 :ref:`auto_translate_mode<class_Node_property_auto_translate_mode>` 状态。
+This method works the same as :ref:`Object.tr()<class_Object_method_tr>`, with the addition of respecting the :ref:`auto_translate_mode<class_Node_property_auto_translate_mode>` state.
 
-若 :ref:`Object.can_translate_messages()<class_Object_method_can_translate_messages>` 为 ``false``\ ，或者无可用的翻译，则该方法将原样返回 ``message``\ 。见 :ref:`Object.set_message_translation()<class_Object_method_set_message_translation>`\ 。
+If :ref:`Object.can_translate_messages()<class_Object_method_can_translate_messages>` is ``false``, or no translation is available, this method returns the ``message`` without changes. See :ref:`Object.set_message_translation()<class_Object_method_set_message_translation>`.
 
-详细示例请见\ :doc:`国际化游戏 <../tutorials/i18n/internationalizing_games>`\ 。
+For detailed examples, see :doc:`Internationalizing games <../tutorials/i18n/internationalizing_games>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1794,17 +1794,17 @@ If ``persistent`` is ``true``, the group will be stored when saved inside a :ref
 
 :ref:`String<class_String>` **atr_n**\ (\ message\: :ref:`String<class_String>`, plural_message\: :ref:`StringName<class_StringName>`, n\: :ref:`int<class_int>`, context\: :ref:`StringName<class_StringName>` = ""\ ) |const| :ref:`🔗<class_Node_method_atr_n>`
 
-使用项目设置中配置的翻译目录，翻译一条 ``message`` 或 ``plural_message``\ 。可以进一步指定 ``context`` 来帮助翻译。
+Translates a ``message`` or ``plural_message``, using the translation catalogs configured in the Project Settings. Further ``context`` can be specified to help with the translation.
 
-该方法的工作方式与 :ref:`Object.tr_n()<class_Object_method_tr_n>` 相同，此外还遵循 :ref:`auto_translate_mode<class_Node_property_auto_translate_mode>` 状态。
+This method works the same as :ref:`Object.tr_n()<class_Object_method_tr_n>`, with the addition of respecting the :ref:`auto_translate_mode<class_Node_property_auto_translate_mode>` state.
 
-如果 :ref:`Object.can_translate_messages()<class_Object_method_can_translate_messages>` 为 ``false``\ ，或者没有翻译可用，则该方法将返回 ``message`` 或 ``plural_message``\ ，而不做任何更改。请参阅 :ref:`Object.set_message_translation()<class_Object_method_set_message_translation>`\ 。
+If :ref:`Object.can_translate_messages()<class_Object_method_can_translate_messages>` is ``false``, or no translation is available, this method returns ``message`` or ``plural_message``, without changes. See :ref:`Object.set_message_translation()<class_Object_method_set_message_translation>`.
 
-\ ``n`` 是消息主题的数字或数量。它被翻译系统用来获取当前语言的正确复数形式。
+The ``n`` is the number, or amount, of the message's subject. It is used by the translation system to fetch the correct plural form for the current language.
 
-有关详细示例，请参阅\ :doc:`《使用 gettext 进行本地化》 <../tutorials/i18n/localization_using_gettext>`\ 。
+For detailed examples, see :doc:`Localization using gettext <../tutorials/i18n/localization_using_gettext>`.
 
-\ **注意：**\ 负数和 :ref:`float<class_float>` 数字可能不适用于某些可数科目。建议使用 :ref:`atr()<class_Node_method_atr>` 处理这些情况。
+\ **Note:** Negative and :ref:`float<class_float>` numbers may not properly apply to some countable subjects. It's recommended to handle these cases with :ref:`atr()<class_Node_method_atr>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1816,7 +1816,7 @@ If ``persistent`` is ``true``, the group will be stored when saved inside a :ref
 
 :ref:`Variant<class_Variant>` **call_deferred_thread_group**\ (\ method\: :ref:`StringName<class_StringName>`, ...\ ) |vararg| :ref:`🔗<class_Node_method_call_deferred_thread_group>`
 
-这个函数类似于 :ref:`Object.call_deferred()<class_Object_method_call_deferred>`\ ，但是会在处理节点线程组时进行调用。如果节点线程组在子线程中处理，那么调用就会在该线程中进行，时机为 :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>` 和 :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>`\ 、\ :ref:`_process()<class_Node_private_method__process>` 和 :ref:`_physics_process()<class_Node_private_method__physics_process>`\ ，或者对应的内部版本之前。
+This function is similar to :ref:`Object.call_deferred()<class_Object_method_call_deferred>` except that the call will take place when the node thread group is processed. If the node thread group processes in sub-threads, then the call will be done on that thread, right before :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>` or :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>`, the :ref:`_process()<class_Node_private_method__process>` or :ref:`_physics_process()<class_Node_private_method__physics_process>` or their internal versions are called.
 
 .. rst-class:: classref-item-separator
 
@@ -1828,7 +1828,7 @@ If ``persistent`` is ``true``, the group will be stored when saved inside a :ref
 
 :ref:`Variant<class_Variant>` **call_thread_safe**\ (\ method\: :ref:`StringName<class_StringName>`, ...\ ) |vararg| :ref:`🔗<class_Node_method_call_thread_safe>`
 
-这个函数能够确保调用成功，无论是否从线程中调用。如果是从不允许调用该函数的线程中调用的，那么调用就会变成延迟调用。否则就会直接调用。
+This function ensures that the calling of this function will succeed, no matter whether it's being done from a thread or not. If called from a thread that is not allowed to call the function, the call will become deferred. Otherwise, the call will go through directly.
 
 .. rst-class:: classref-item-separator
 
@@ -1840,7 +1840,7 @@ If ``persistent`` is ``true``, the group will be stored when saved inside a :ref
 
 :ref:`bool<class_bool>` **can_auto_translate**\ (\ ) |const| :ref:`🔗<class_Node_method_can_auto_translate>`
 
-如果该节点能够根据当前区域设置自动翻译消息，则返回 ``true``\ 。见 :ref:`auto_translate_mode<class_Node_property_auto_translate_mode>`\ 、\ :ref:`atr()<class_Node_method_atr>`\ 、\ :ref:`atr_n()<class_Node_method_atr_n>`\ 。
+Returns ``true`` if this node can automatically translate messages depending on the current locale. See :ref:`auto_translate_mode<class_Node_property_auto_translate_mode>`, :ref:`atr()<class_Node_method_atr>`, and :ref:`atr_n()<class_Node_method_atr_n>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1852,19 +1852,19 @@ If ``persistent`` is ``true``, the group will be stored when saved inside a :ref
 
 :ref:`bool<class_bool>` **can_process**\ (\ ) |const| :ref:`🔗<class_Node_method_can_process>`
 
-如果节点可以接收 :ref:`SceneTree<class_SceneTree>` 和 :ref:`Viewport<class_Viewport>` 的处理通知和输入回调（\ :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>`\ 、\ :ref:`_input()<class_Node_private_method__input>` 等）则返回 ``true``\ 。返回值取决于 :ref:`process_mode<class_Node_property_process_mode>`\ ：
+Returns ``true`` if the node can receive processing notifications and input callbacks (:ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>`, :ref:`_input()<class_Node_private_method__input>`, etc.) from the :ref:`SceneTree<class_SceneTree>` and :ref:`Viewport<class_Viewport>`. The returned value depends on :ref:`process_mode<class_Node_property_process_mode>`:
 
-- 如果设为 :ref:`PROCESS_MODE_PAUSABLE<class_Node_constant_PROCESS_MODE_PAUSABLE>`\ ，则会在游戏处理时返回 ``true``\ ，即 :ref:`SceneTree.paused<class_SceneTree_property_paused>` 为 ``false`` 的情况；
+- If set to :ref:`PROCESS_MODE_PAUSABLE<class_Node_constant_PROCESS_MODE_PAUSABLE>`, returns ``true`` when the game is processing, i.e. :ref:`SceneTree.paused<class_SceneTree_property_paused>` is ``false``;
 
-- 如果设为 :ref:`PROCESS_MODE_WHEN_PAUSED<class_Node_constant_PROCESS_MODE_WHEN_PAUSED>`\ ，则会在游戏暂停时返回 ``true``\ ，即 :ref:`SceneTree.paused<class_SceneTree_property_paused>` 为 ``true`` 的情况；
+- If set to :ref:`PROCESS_MODE_WHEN_PAUSED<class_Node_constant_PROCESS_MODE_WHEN_PAUSED>`, returns ``true`` when the game is paused, i.e. :ref:`SceneTree.paused<class_SceneTree_property_paused>` is ``true``;
 
-- 如果设为 :ref:`PROCESS_MODE_ALWAYS<class_Node_constant_PROCESS_MODE_ALWAYS>`\ ，则始终返回 ``true``\ ；
+- If set to :ref:`PROCESS_MODE_ALWAYS<class_Node_constant_PROCESS_MODE_ALWAYS>`, always returns ``true``;
 
-- 如果设为 :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`\ ，则始终返回 ``false``\ ；
+- If set to :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`, always returns ``false``;
 
-- 如果设为 :ref:`PROCESS_MODE_INHERIT<class_Node_constant_PROCESS_MODE_INHERIT>`\ ，则会根据父节点的 :ref:`process_mode<class_Node_property_process_mode>` 决定返回值。
+- If set to :ref:`PROCESS_MODE_INHERIT<class_Node_constant_PROCESS_MODE_INHERIT>`, use the parent node's :ref:`process_mode<class_Node_property_process_mode>` to determine the result.
 
-如果节点不在场景树中，则无论 :ref:`process_mode<class_Node_property_process_mode>` 是什么都返回 ``false``\ 。
+If the node is not inside the tree, returns ``false`` no matter the value of :ref:`process_mode<class_Node_property_process_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1876,9 +1876,9 @@ If ``persistent`` is ``true``, the group will be stored when saved inside a :ref
 
 :ref:`Tween<class_Tween>` **create_tween**\ (\ ) :ref:`🔗<class_Node_method_create_tween>`
 
-新建 :ref:`Tween<class_Tween>` 并将其绑定到这个节点。
+Creates a new :ref:`Tween<class_Tween>` and binds it to this node.
 
-与如下操作等价：
+This is the equivalent of doing:
 
 
 .. tabs::
@@ -1893,9 +1893,9 @@ If ``persistent`` is ``true``, the group will be stored when saved inside a :ref
 
 
 
-该 Tween 将在下一个处理帧或物理帧时自动开始（取决于 :ref:`TweenProcessMode<enum_Tween_TweenProcessMode>`\ ）。有关绑定到节点的 Tween 的更多信息，请参阅 :ref:`Tween.bind_node()<class_Tween_method_bind_node>`\ 。
+The Tween will start automatically on the next process frame or physics frame (depending on :ref:`TweenProcessMode<enum_Tween_TweenProcessMode>`). See :ref:`Tween.bind_node()<class_Tween_method_bind_node>` for more info on Tweens bound to nodes.
 
-\ **注意：**\ 当节点不在 :ref:`SceneTree<class_SceneTree>` 内部时，该方法仍然可以使用。在使用自定义 :ref:`MainLoop<class_MainLoop>` 的极少数情况下，它可能会失败。
+\ **Note:** The method can still be used when the node is not inside :ref:`SceneTree<class_SceneTree>`. It can fail in an unlikely case of using a custom :ref:`MainLoop<class_MainLoop>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1923,15 +1923,15 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`Node<class_Node>` **find_child**\ (\ pattern\: :ref:`String<class_String>`, recursive\: :ref:`bool<class_bool>` = true, owned\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Node_method_find_child>`
 
-查找该节点的后代节点中，其 :ref:`name<class_Node_property_name>` 与 ``pattern`` 匹配的第一个节点。如果找不到匹配项，则返回 ``null``\ 。匹配是通过 :ref:`String.match()<class_String_method_match>` 针对节点名称完成的，而\ *不*\ 是针对其路径。因此，它区分大小写，\ ``"*"`` 匹配零个或多个字符，\ ``"?"`` 匹配任意单个字符。
+Finds the first descendant of this node whose :ref:`name<class_Node_property_name>` matches ``pattern``, returning ``null`` if no match is found. The matching is done against node names, *not* their paths, through :ref:`String.match()<class_String_method_match>`. As such, it is case-sensitive, ``"*"`` matches zero or more characters, and ``"?"`` matches any single character.
 
-如果 ``recursive`` 为 ``false``\ ，则仅检查该节点的直接子节点。节点按树顺序检查，因此首先检查该节点的第一个直接子节点，然后检查它自己的直接子节点，依此类推；然后移动到第二个直接子节点，依此类推。内部子级也包含在该搜索中（请参阅 :ref:`add_child()<class_Node_method_add_child>` 中的 ``internal`` 参数）。
+If ``recursive`` is ``false``, only this node's direct children are checked. Nodes are checked in tree order, so this node's first direct child is checked first, then its own direct children, etc., before moving to the second direct child, and so on. Internal children are also included in the search (see ``internal`` parameter in :ref:`add_child()<class_Node_method_add_child>`).
 
-如果 ``owned`` 为 ``true``\ ，则仅检查具有有效 :ref:`owner<class_Node_property_owner>` 节点的后代。
+If ``owned`` is ``true``, only descendants with a valid :ref:`owner<class_Node_property_owner>` node are checked.
 
-\ **注意：**\ 该方法可能非常慢。考虑将找到的节点的引用存储在变量中。或者，使用唯一名称调用 :ref:`get_node()<class_Node_method_get_node>`\ （请参阅 :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`\ ）。
+\ **Note:** This method can be very slow. Consider storing a reference to the found node in a variable. Alternatively, use :ref:`get_node()<class_Node_method_get_node>` with unique names (see :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`).
 
-\ **注意：**\ 要查找匹配一个模式或类类型的所有后代节点，请参阅 :ref:`find_children()<class_Node_method_find_children>`\ 。
+\ **Note:** To find all descendant nodes matching a pattern or a class type, see :ref:`find_children()<class_Node_method_find_children>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1943,17 +1943,17 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`Array<class_Array>`\[:ref:`Node<class_Node>`\] **find_children**\ (\ pattern\: :ref:`String<class_String>`, type\: :ref:`String<class_String>` = "", recursive\: :ref:`bool<class_bool>` = true, owned\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Node_method_find_children>`
 
-查找该节点的后代节点中，其名称与 ``pattern`` 匹配的所有节点。如果找不到匹配项，则返回空 :ref:`Array<class_Array>`\ 。匹配是通过 :ref:`String.match()<class_String_method_match>` 针对节点名称完成的，而\ *不*\ 是针对其路径。因此，它区分大小写，\ ``"*"`` 匹配零个或多个字符，\ ``"?"`` 匹配任意单个字符。
+Finds all descendants of this node whose names match ``pattern``, returning an empty :ref:`Array<class_Array>` if no match is found. The matching is done against node names, *not* their paths, through :ref:`String.match()<class_String_method_match>`. As such, it is case-sensitive, ``"*"`` matches zero or more characters, and ``"?"`` matches any single character.
 
-如果 ``type`` 不为空，则仅包含从 ``type`` 继承的后代节点（请参阅 :ref:`Object.is_class()<class_Object_method_is_class>`\ ）。
+If ``type`` is not empty, only ancestors inheriting from ``type`` are included (see :ref:`Object.is_class()<class_Object_method_is_class>`).
 
-如果 ``recursive`` 为 ``false``\ ，则仅检查该节点的直接子节点。节点按树顺序检查，因此首先检查该节点的第一个直接子节点，然后检查它自己的直接子节点，依此类推；然后移动到第二个直接子节点，依此类推。内部子级也包含在该搜索中（请参阅 :ref:`add_child()<class_Node_method_add_child>` 中的 ``internal`` 参数）。
+If ``recursive`` is ``false``, only this node's direct children are checked. Nodes are checked in tree order, so this node's first direct child is checked first, then its own direct children, etc., before moving to the second direct child, and so on. Internal children are also included in the search (see ``internal`` parameter in :ref:`add_child()<class_Node_method_add_child>`).
 
-如果 ``owned`` 为 ``true``\ ，则仅检查具有有效 :ref:`owner<class_Node_property_owner>` 节点的后代。
+If ``owned`` is ``true``, only descendants with a valid :ref:`owner<class_Node_property_owner>` node are checked.
 
-\ **注意：**\ 该方法可能非常慢。考虑将找到的节点的引用存储在变量中。
+\ **Note:** This method can be very slow. Consider storing references to the found nodes in a variable.
 
-\ **注意：**\ 如果只想查找匹配一个模式的单个后代节点，请参阅 :ref:`find_child()<class_Node_method_find_child>`\ 。
+\ **Note:** To find a single descendant node matching a pattern, see :ref:`find_child()<class_Node_method_find_child>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1965,9 +1965,9 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`Node<class_Node>` **find_parent**\ (\ pattern\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_Node_method_find_parent>`
 
-查找该节点的祖先节点中，其 :ref:`name<class_Node_property_name>` 与 ``pattern`` 匹配的第一个节点。如果找不到匹配项，则返回 ``null``\ 。匹配是通过 :ref:`String.match()<class_String_method_match>` 完成的。因此，它区分大小写，\ ``"*"`` 匹配零个或多个字符，\ ``"?"`` 匹配任意单个字符。另见 :ref:`find_child()<class_Node_method_find_child>` 和 :ref:`find_children()<class_Node_method_find_children>`\ 。
+Finds the first ancestor of this node whose :ref:`name<class_Node_property_name>` matches ``pattern``, returning ``null`` if no match is found. The matching is done through :ref:`String.match()<class_String_method_match>`. As such, it is case-sensitive, ``"*"`` matches zero or more characters, and ``"?"`` matches any single character. See also :ref:`find_child()<class_Node_method_find_child>` and :ref:`find_children()<class_Node_method_find_children>`.
 
-\ **注意：** 由于该方法在场景树中向上遍历，因此在大型、深度嵌套的节点中可能会很慢。考虑将找到的节点的引用存储在变量中。或者，使用唯一名称调用 :ref:`get_node()<class_Node_method_get_node>`\ （请参阅 :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`\ ）。
+\ **Note:** As this method walks upwards in the scene tree, it can be slow in large, deeply nested nodes. Consider storing a reference to the found node in a variable. Alternatively, use :ref:`get_node()<class_Node_method_get_node>` with unique names (see :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1979,9 +1979,9 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`RID<class_RID>` **get_accessibility_element**\ (\ ) |const| :ref:`🔗<class_Node_method_get_accessibility_element>`
 
-返回主要无障碍元素 RID。
+Returns main accessibility element RID.
 
-\ **注意：**\ 该方法只应在无障碍信息更新时调用（\ :ref:`NOTIFICATION_ACCESSIBILITY_UPDATE<class_Node_constant_NOTIFICATION_ACCESSIBILITY_UPDATE>`\ ）。
+\ **Note:** This method should be called only during accessibility information updates (:ref:`NOTIFICATION_ACCESSIBILITY_UPDATE<class_Node_constant_NOTIFICATION_ACCESSIBILITY_UPDATE>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1993,21 +1993,21 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`Node<class_Node>` **get_child**\ (\ idx\: :ref:`int<class_int>`, include_internal\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Node_method_get_child>`
 
-通过索引获取子节点。每个子节点都有一个相对于其同级节点的索引（见 :ref:`get_index()<class_Node_method_get_index>`\ ）。第一个子节点位于索引 0 处。负值也可用于从列表末尾开始。该方法可以与 :ref:`get_child_count()<class_Node_method_get_child_count>` 结合使用来迭代该节点的子节点。如果给定索引处不存在子节点，则该方法返回 ``null`` 并生成一个错误。
+Fetches a child node by its index. Each child node has an index relative to its siblings (see :ref:`get_index()<class_Node_method_get_index>`). The first child is at index 0. Negative values can also be used to start from the end of the list. This method can be used in combination with :ref:`get_child_count()<class_Node_method_get_child_count>` to iterate over this node's children. If no child exists at the given index, this method returns ``null`` and an error is generated.
 
-如果 ``include_internal`` 为 ``false``\ ，则忽略内部子节点（见 :ref:`add_child()<class_Node_method_add_child>` 的 ``internal`` 参数）。
+If ``include_internal`` is ``false``, internal children are ignored (see :ref:`add_child()<class_Node_method_add_child>`'s ``internal`` parameter).
 
 ::
 
-    # 假设以下是该节点的子节点（按顺序）：
-    # 第一、中间、最后。
+    # Assuming the following are children of this node, in order:
+    # First, Middle, Last.
 
-    var a = get_child(0).name  # a 是 “第一”
-    var b = get_child(1).name  # b 是 “中间”
-    var b = get_child(2).name  # b 是 “最后”
-    var c = get_child(-1).name # c 是 “最后”
+    var a = get_child(0).name  # a is "First"
+    var b = get_child(1).name  # b is "Middle"
+    var b = get_child(2).name  # b is "Last"
+    var c = get_child(-1).name # c is "Last"
 
-\ **注意：**\ 要通过 :ref:`NodePath<class_NodePath>` 获取节点，请使用 :ref:`get_node()<class_Node_method_get_node>`\ 。
+\ **Note:** To fetch a node by :ref:`NodePath<class_NodePath>`, use :ref:`get_node()<class_Node_method_get_node>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2019,9 +2019,9 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`int<class_int>` **get_child_count**\ (\ include_internal\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Node_method_get_child_count>`
 
-返回该节点的子节点的数量。
+Returns the number of children of this node.
 
-如果 ``include_internal`` 为 ``false`` ，则不计算内部子节点（见 :ref:`add_child()<class_Node_method_add_child>` 的 ``internal`` 参数）。
+If ``include_internal`` is ``false``, internal children are not counted (see :ref:`add_child()<class_Node_method_add_child>`'s ``internal`` parameter).
 
 .. rst-class:: classref-item-separator
 
@@ -2033,9 +2033,9 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`Array<class_Array>`\[:ref:`Node<class_Node>`\] **get_children**\ (\ include_internal\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Node_method_get_children>`
 
-返回该节点的所有子节点到一个 :ref:`Array<class_Array>` 内。
+Returns all children of this node inside an :ref:`Array<class_Array>`.
 
-如果 ``include_internal`` 为 ``false``\ ，则从返回的数组中排除内部子节点（见 :ref:`add_child()<class_Node_method_add_child>` 的 ``internal`` 参数）。
+If ``include_internal`` is ``false``, excludes internal children from the returned array (see :ref:`add_child()<class_Node_method_add_child>`'s ``internal`` parameter).
 
 .. rst-class:: classref-item-separator
 
@@ -2047,18 +2047,18 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\] **get_groups**\ (\ ) |const| :ref:`🔗<class_Node_method_get_groups>`
 
-返回该节点已被添加到的分组的名称的 :ref:`Array<class_Array>`\ 。
+Returns an :ref:`Array<class_Array>` of group names that the node has been added to.
 
-\ **注意：**\ 为了提高性能，\ *不*\ 保证分组名称的顺序，并且在项目运行之间可能会有所不同。因此，不要依赖分组顺序。
+\ **Note:** To improve performance, the order of group names is *not* guaranteed and may vary between project runs. Therefore, do not rely on the group order.
 
-\ **注意：**\ 该方法还可能返回一些以下划线（\ ``_``\ ）开头的分组名称。这些名称被引擎内部使用。为避免冲突，请勿使用以下划线开头的自定义分组。要排除内部分组，请参阅以下代码片段：
+\ **Note:** This method may also return some group names starting with an underscore (``_``). These are internally used by the engine. To avoid conflicts, do not use custom groups starting with underscores. To exclude internal groups, see the following code snippet:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # 仅存储节点的非内部分组（作为一个 StringNames 数组）。
+    # Stores the node's non-internal groups only (as an array of StringNames).
     var non_internal_groups = []
     for group in get_groups():
         if not str(group).begins_with("_"):
@@ -2066,7 +2066,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
  .. code-tab:: csharp
 
-    // 仅存储节点的非内部分组（作为一个 StringNames 列表）。
+    // Stores the node's non-internal groups only (as a List of StringNames).
     List<string> nonInternalGroups = new List<string>();
     foreach (string group in GetGroups())
     {
@@ -2086,9 +2086,9 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`int<class_int>` **get_index**\ (\ include_internal\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Node_method_get_index>`
 
-返回该节点在其同级节点中的顺序。第一个节点的索引是 ``0``\ 。另见 :ref:`get_child()<class_Node_method_get_child>`\ 。
+Returns this node's order among its siblings. The first node's index is ``0``. See also :ref:`get_child()<class_Node_method_get_child>`.
 
-如果 ``include_internal`` 为 ``false``\ ，则返回的索引会忽略内部子节点。第一个非内部子节点的索引为 ``0``\ （见 :ref:`add_child()<class_Node_method_add_child>` 的 ``internal`` 参数）。
+If ``include_internal`` is ``false``, returns the index ignoring internal children. The first, non-internal child will have an index of ``0`` (see :ref:`add_child()<class_Node_method_add_child>`'s ``internal`` parameter).
 
 .. rst-class:: classref-item-separator
 
@@ -2100,7 +2100,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`Window<class_Window>` **get_last_exclusive_window**\ (\ ) |const| :ref:`🔗<class_Node_method_get_last_exclusive_window>`
 
-返回包含该节点的 :ref:`Window<class_Window>`\ ，或者是从包含该节点的窗口开始的窗口链中最近的独占子项。
+Returns the :ref:`Window<class_Window>` that contains this node, or the last exclusive child in a chain of windows starting with the one that contains this node.
 
 .. rst-class:: classref-item-separator
 
@@ -2112,7 +2112,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`int<class_int>` **get_multiplayer_authority**\ (\ ) |const| :ref:`🔗<class_Node_method_get_multiplayer_authority>`
 
-返回这个节点多人游戏控制者的对等体 ID。见 :ref:`set_multiplayer_authority()<class_Node_method_set_multiplayer_authority>`\ 。
+Returns the peer ID of the multiplayer authority for this node. See :ref:`set_multiplayer_authority()<class_Node_method_set_multiplayer_authority>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2124,16 +2124,16 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`Node<class_Node>` **get_node**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) |const| :ref:`🔗<class_Node_method_get_node>`
 
-获取一个节点。\ :ref:`NodePath<class_NodePath>` 可以是到一个节点的相对路径（从该节点开始）或绝对路径（从 :ref:`SceneTree.root<class_SceneTree_property_root>` 开始）。如果 ``path`` 未指向一个有效节点，则会生成错误并返回 ``null``\ 。尝试访问返回值上的方法将导致\ *“尝试在一个 null 实例上调用 <method>。”*\ 错误。
+Fetches a node. The :ref:`NodePath<class_NodePath>` can either be a relative path (from this node), or an absolute path (from the :ref:`SceneTree.root<class_SceneTree_property_root>`) to a node. If ``path`` does not point to a valid node, generates an error and returns ``null``. Attempts to access methods on the return value will result in an *"Attempt to call <method> on a null instance."* error.
 
-\ **注意：**\ 通过绝对路径获取，仅在节点位于场景树内部时有效（参见 :ref:`is_inside_tree()<class_Node_method_is_inside_tree>`\ ）。
+\ **Note:** Fetching by absolute path only works when the node is inside the scene tree (see :ref:`is_inside_tree()<class_Node_method_is_inside_tree>`).
 
-\ **示例：**\ 假设从以下树内的 Character 节点调用该方法：
+\ **Example:** Assume this method is called from the Character node, inside the following tree:
 
 .. code:: text
 
      ┖╴root
-        ┠╴Character（你在这里！）
+        ┠╴Character (you are here!)
         ┃  ┠╴Sword
         ┃  ┖╴Backpack
         ┃     ┖╴Dagger
@@ -2143,7 +2143,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
            ┠╴Mosquito
            ┖╴Goblin
 
-以下调用将返回一个有效节点：
+The following calls will return a valid node:
 
 
 .. tabs::
@@ -2174,15 +2174,15 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`Array<class_Array>` **get_node_and_resource**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_Node_method_get_node_and_resource>`
 
-获取节点及其由 :ref:`NodePath<class_NodePath>` 子名指定的嵌套最深的资源。返回一个大小为 ``3`` 的 :ref:`Array<class_Array>`\ ，其中：
+Fetches a node and its most nested resource as specified by the :ref:`NodePath<class_NodePath>`'s subname. Returns an :ref:`Array<class_Array>` of size ``3`` where:
 
-- 元素 ``0`` 是 **Node**\ ，如果找不到则为 ``null``\ ；
+- Element ``0`` is the **Node**, or ``null`` if not found;
 
-- 元素 ``1`` 是子名中最后嵌套的 :ref:`Resource<class_Resource>`\ ，如果找不到则为 ``null``\ ；
+- Element ``1`` is the subname's last nested :ref:`Resource<class_Resource>`, or ``null`` if not found;
 
-- 元素 ``2`` 是剩余的 :ref:`NodePath<class_NodePath>`\ ，引用一个已有的非 :ref:`Resource<class_Resource>` 属性（见 :ref:`Object.get_indexed()<class_Object_method_get_indexed>`\ ）。
+- Element ``2`` is the remaining :ref:`NodePath<class_NodePath>`, referring to an existing, non-:ref:`Resource<class_Resource>` property (see :ref:`Object.get_indexed()<class_Object_method_get_indexed>`).
 
-\ **示例：**\ 假设子节点的 :ref:`Sprite2D.texture<class_Sprite2D_property_texture>` 已被分配了一个 :ref:`AtlasTexture<class_AtlasTexture>`\ ：
+\ **Example:** Assume that the child's :ref:`Sprite2D.texture<class_Sprite2D_property_texture>` has been assigned an :ref:`AtlasTexture<class_AtlasTexture>`:
 
 
 .. tabs::
@@ -2190,36 +2190,36 @@ Duplicates the node, returning a new node with all of its properties, signals, g
  .. code-tab:: gdscript
 
     var a = get_node_and_resource("Area2D/Sprite2D")
-    print(a[0].name) # 输出 Sprite2D
-    print(a[1])      # 输出 <null>
-    print(a[2])      # 输出 ^""
+    print(a[0].name) # Prints Sprite2D
+    print(a[1])      # Prints <null>
+    print(a[2])      # Prints ^""
 
     var b = get_node_and_resource("Area2D/Sprite2D:texture:atlas")
-    print(b[0].name)        # 输出 Sprite2D
-    print(b[1].get_class()) # 输出 AtlasTexture
-    print(b[2])             # 输出 ^""
+    print(b[0].name)        # Prints Sprite2D
+    print(b[1].get_class()) # Prints AtlasTexture
+    print(b[2])             # Prints ^""
 
     var c = get_node_and_resource("Area2D/Sprite2D:texture:atlas:region")
-    print(c[0].name)        # 输出 Sprite2D
-    print(c[1].get_class()) # 输出 AtlasTexture
-    print(c[2])             # 输出 ^":region"
+    print(c[0].name)        # Prints Sprite2D
+    print(c[1].get_class()) # Prints AtlasTexture
+    print(c[2])             # Prints ^":region"
 
  .. code-tab:: csharp
 
     var a = GetNodeAndResource(NodePath("Area2D/Sprite2D"));
-    GD.Print(a[0].Name); // 输出 Sprite2D
-    GD.Print(a[1]);      // 输出 <null>
-    GD.Print(a[2]);      // 输出 ^"
+    GD.Print(a[0].Name); // Prints Sprite2D
+    GD.Print(a[1]);      // Prints <null>
+    GD.Print(a[2]);      // Prints ^"
 
     var b = GetNodeAndResource(NodePath("Area2D/Sprite2D:texture:atlas"));
-    GD.Print(b[0].name);        // 输出 Sprite2D
-    GD.Print(b[1].get_class()); // 输出 AtlasTexture
-    GD.Print(b[2]);             // 输出 ^""
+    GD.Print(b[0].name);        // Prints Sprite2D
+    GD.Print(b[1].get_class()); // Prints AtlasTexture
+    GD.Print(b[2]);             // Prints ^""
 
     var c = GetNodeAndResource(NodePath("Area2D/Sprite2D:texture:atlas:region"));
-    GD.Print(c[0].name);        // 输出 Sprite2D
-    GD.Print(c[1].get_class()); // 输出 AtlasTexture
-    GD.Print(c[2]);             // 输出 ^":region"
+    GD.Print(c[0].name);        // Prints Sprite2D
+    GD.Print(c[1].get_class()); // Prints AtlasTexture
+    GD.Print(c[2]);             // Prints ^":region"
 
 
 
@@ -2233,7 +2233,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`Node<class_Node>` **get_node_or_null**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) |const| :ref:`🔗<class_Node_method_get_node_or_null>`
 
-通过 :ref:`NodePath<class_NodePath>` 获取节点。类似于 :ref:`get_node()<class_Node_method_get_node>`\ ，但在 ``path`` 没有指向有效节点时不会生成错误。
+Fetches a node by :ref:`NodePath<class_NodePath>`. Similar to :ref:`get_node()<class_Node_method_get_node>`, but does not generate an error if ``path`` does not point to a valid node.
 
 .. rst-class:: classref-item-separator
 
@@ -2245,9 +2245,9 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`Variant<class_Variant>` **get_node_rpc_config**\ (\ ) |const| :ref:`🔗<class_Node_method_get_node_rpc_config>`
 
-返回一个 :ref:`Dictionary<class_Dictionary>`\ ，将方法名称映射到为对应的 RPC 配置，这些配置使用 :ref:`rpc_config()<class_Node_method_rpc_config>` 定义。
+Returns a :ref:`Dictionary<class_Dictionary>` mapping method names to their RPC configuration defined for this node using :ref:`rpc_config()<class_Node_method_rpc_config>`.
 
-\ **注意：**\ 该方法只会返回通过 :ref:`rpc_config()<class_Node_method_rpc_config>` 分配的 RPC 配置。获取由 :ref:`Script<class_Script>` 定义的 RPC 见 :ref:`Script.get_rpc_config()<class_Script_method_get_rpc_config>`\ 。
+\ **Note:** This method only returns the RPC configuration assigned via :ref:`rpc_config()<class_Node_method_rpc_config>`. See :ref:`Script.get_rpc_config()<class_Script_method_get_rpc_config>` to retrieve the RPCs defined by the :ref:`Script<class_Script>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2259,9 +2259,9 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`Array<class_Array>`\[:ref:`int<class_int>`\] **get_orphan_node_ids**\ (\ ) |static| :ref:`🔗<class_Node_method_get_orphan_node_ids>`
 
-返回所有孤立节点（\ :ref:`SceneTree<class_SceneTree>` 之外的节点）的对象 ID。适用于调试。
+Returns object IDs of all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). Used for debugging.
 
-\ **注意：**\ :ref:`get_orphan_node_ids()<class_Node_method_get_orphan_node_ids>` 仅适用于调试构建版本。在以发布模式导出的项目中，\ :ref:`get_orphan_node_ids()<class_Node_method_get_orphan_node_ids>` 会返回空数组。
+\ **Note:** :ref:`get_orphan_node_ids()<class_Node_method_get_orphan_node_ids>` only works in debug builds. When called in a project exported in release mode, :ref:`get_orphan_node_ids()<class_Node_method_get_orphan_node_ids>` will return an empty array.
 
 .. rst-class:: classref-item-separator
 
@@ -2273,7 +2273,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`Node<class_Node>` **get_parent**\ (\ ) |const| :ref:`🔗<class_Node_method_get_parent>`
 
-返回该节点的父节点，如果该节点没有父节点，则返回 ``null``\ 。
+Returns this node's parent node, or ``null`` if the node doesn't have a parent.
 
 .. rst-class:: classref-item-separator
 
@@ -2285,7 +2285,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`NodePath<class_NodePath>` **get_path**\ (\ ) |const| :ref:`🔗<class_Node_method_get_path>`
 
-返回该节点相对于 :ref:`SceneTree.root<class_SceneTree_property_root>` 的绝对路径。如果该节点不在场景树内部，则该方法失败并返回空的 :ref:`NodePath<class_NodePath>`\ 。
+Returns the node's absolute path, relative to the :ref:`SceneTree.root<class_SceneTree_property_root>`. If the node is not inside the scene tree, this method fails and returns an empty :ref:`NodePath<class_NodePath>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2297,11 +2297,11 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`NodePath<class_NodePath>` **get_path_to**\ (\ node\: :ref:`Node<class_Node>`, use_unique_path\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Node_method_get_path_to>`
 
-返回从该节点到指定节点 ``node`` 的相对 :ref:`NodePath<class_NodePath>`\ 。这两个节点都必须在同一个 :ref:`SceneTree<class_SceneTree>` 或场景层次结构中，否则该方法将失败并返回一个空的 :ref:`NodePath<class_NodePath>`\ 。
+Returns the relative :ref:`NodePath<class_NodePath>` from this node to the specified ``node``. Both nodes must be in the same :ref:`SceneTree<class_SceneTree>` or scene hierarchy, otherwise this method fails and returns an empty :ref:`NodePath<class_NodePath>`.
 
-如果 ``use_unique_path`` 为 ``true``\ ，则返回考虑该节点唯一名称的最短路径（请参阅 :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`\ ）。
+If ``use_unique_path`` is ``true``, returns the shortest path accounting for this node's unique name (see :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`).
 
-\ **注意：**\ 如果你获取了从唯一节点开始的相对路径，则由于添加了唯一节点的名称，该路径可能比普通的相对路径长。
+\ **Note:** If you get a relative path which starts from a unique node, the path may be longer than a normal relative path, due to the addition of the unique node's name.
 
 .. rst-class:: classref-item-separator
 
@@ -2313,9 +2313,9 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`float<class_float>` **get_physics_process_delta_time**\ (\ ) |const| :ref:`🔗<class_Node_method_get_physics_process_delta_time>`
 
-返回自上次物理回调以来经过的时间（单位为秒）。这个值与 :ref:`_physics_process()<class_Node_private_method__physics_process>` 的 ``delta`` 参数相同，运行时通常是一致的，除非 :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` 发生了变化。另见 :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>`\ 。
+Returns the time elapsed (in seconds) since the last physics callback. This value is identical to :ref:`_physics_process()<class_Node_private_method__physics_process>`'s ``delta`` parameter, and is often consistent at run-time, unless :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` is changed. See also :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>`.
 
-\ **注意：**\ 如果运行的帧率低于 :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` / :ref:`Engine.max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` FPS，则返回的值将会比预期的要大。这是为了避免发生“死亡螺旋”的情况，此时每帧的物理步骤数量会不断增加，导致性能急剧下降。这种行为会影响 :ref:`_process()<class_Node_private_method__process>` 和 :ref:`_physics_process()<class_Node_private_method__physics_process>`\ 。因此，请避免根据 ``delta`` 来测量真实世界的秒数。请使用 :ref:`Time<class_Time>` 单例的方法来实现此目的，例如 :ref:`Time.get_ticks_usec()<class_Time_method_get_ticks_usec>`\ 。
+\ **Note:** The returned value will be larger than expected if running at a framerate lower than :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` / :ref:`Engine.max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` FPS. This is done to avoid "spiral of death" scenarios where performance would plummet due to an ever-increasing number of physics steps per frame. This behavior affects both :ref:`_process()<class_Node_private_method__process>` and :ref:`_physics_process()<class_Node_private_method__physics_process>`. As a result, avoid using ``delta`` for time measurements in real-world seconds. Use the :ref:`Time<class_Time>` singleton's methods for this purpose instead, such as :ref:`Time.get_ticks_usec()<class_Time_method_get_ticks_usec>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2327,9 +2327,9 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`float<class_float>` **get_process_delta_time**\ (\ ) |const| :ref:`🔗<class_Node_method_get_process_delta_time>`
 
-返回自上次处理回调以来经过的时间（单位为秒）。这个值与 :ref:`_process()<class_Node_private_method__process>` 的 ``delta`` 参数相同，每一帧都可能发生变化。另见 :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>`\ 。
+Returns the time elapsed (in seconds) since the last process callback. This value is identical to :ref:`_process()<class_Node_private_method__process>`'s ``delta`` parameter, and may vary from frame to frame. See also :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>`.
 
-\ **注意：**\ 如果运行的帧率低于 :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` / :ref:`Engine.max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` FPS，则返回的值将会比预期的要大。这是为了避免发生“死亡螺旋”的情况，此时每帧的物理步骤数量会不断增加，导致性能急剧下降。这种行为会影响 :ref:`_process()<class_Node_private_method__process>` 和 :ref:`_physics_process()<class_Node_private_method__physics_process>`\ 。因此，请避免根据 ``delta`` 来测量真实世界的秒数。请使用 :ref:`Time<class_Time>` 单例的方法来实现此目的，例如 :ref:`Time.get_ticks_usec()<class_Time_method_get_ticks_usec>`\ 。
+\ **Note:** The returned value will be larger than expected if running at a framerate lower than :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` / :ref:`Engine.max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` FPS. This is done to avoid "spiral of death" scenarios where performance would plummet due to an ever-increasing number of physics steps per frame. This behavior affects both :ref:`_process()<class_Node_private_method__process>` and :ref:`_physics_process()<class_Node_private_method__physics_process>`. As a result, avoid using ``delta`` for time measurements in real-world seconds. Use the :ref:`Time<class_Time>` singleton's methods for this purpose instead, such as :ref:`Time.get_ticks_usec()<class_Time_method_get_ticks_usec>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2341,7 +2341,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **get_scene_instance_load_placeholder**\ (\ ) |const| :ref:`🔗<class_Node_method_get_scene_instance_load_placeholder>`
 
-如果该节点是一个实例加载占位符，则返回 ``true``\ 。见 :ref:`InstancePlaceholder<class_InstancePlaceholder>` 和 :ref:`set_scene_instance_load_placeholder()<class_Node_method_set_scene_instance_load_placeholder>`\ 。
+Returns ``true`` if this node is an instance load placeholder. See :ref:`InstancePlaceholder<class_InstancePlaceholder>` and :ref:`set_scene_instance_load_placeholder()<class_Node_method_set_scene_instance_load_placeholder>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2353,7 +2353,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`SceneTree<class_SceneTree>` **get_tree**\ (\ ) |const| :ref:`🔗<class_Node_method_get_tree>`
 
-返回包含该节点的 :ref:`SceneTree<class_SceneTree>`\ 。如果该节点不在场景树内，则会生成错误并返回 ``null``\ 。另见 :ref:`is_inside_tree()<class_Node_method_is_inside_tree>`\ 。
+Returns the :ref:`SceneTree<class_SceneTree>` that contains this node. If this node is not inside the tree, generates an error and returns ``null``. See also :ref:`is_inside_tree()<class_Node_method_is_inside_tree>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2365,9 +2365,9 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`String<class_String>` **get_tree_string**\ (\ ) :ref:`🔗<class_Node_method_get_tree_string>`
 
-将树以 :ref:`String<class_String>` 的形式返回。主要用于调试。这个版本显示相对于当前节点的路径，适合复制/粘贴到 :ref:`get_node()<class_Node_method_get_node>` 函数中。也可以用于游戏中的 UI/UX。
+Returns the tree as a :ref:`String<class_String>`. Used mainly for debugging purposes. This version displays the path relative to the current node, and is good for copy/pasting into the :ref:`get_node()<class_Node_method_get_node>` function. It also can be used in game UI/UX.
 
-示例输出：
+May print, for example:
 
 .. code:: text
 
@@ -2388,9 +2388,9 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`String<class_String>` **get_tree_string_pretty**\ (\ ) :ref:`🔗<class_Node_method_get_tree_string_pretty>`
 
-类似于 :ref:`get_tree_string()<class_Node_method_get_tree_string>`\ ，会将树以 :ref:`String<class_String>` 的形式返回。这个版本使用的是一种更加图形化的呈现方式，类似于在“场景”面板中显示的内容。非常适合检查较大的树。
+Similar to :ref:`get_tree_string()<class_Node_method_get_tree_string>`, this returns the tree as a :ref:`String<class_String>`. This version displays a more graphical representation similar to what is displayed in the Scene Dock. It is useful for inspecting larger trees.
 
-输出示例：
+May print, for example:
 
 .. code:: text
 
@@ -2411,7 +2411,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`Viewport<class_Viewport>` **get_viewport**\ (\ ) |const| :ref:`🔗<class_Node_method_get_viewport>`
 
-如果节点位于场景树内部，则返回该节点最近的 :ref:`Viewport<class_Viewport>` 祖先。否则，返回 ``null``\ 。
+Returns the node's closest :ref:`Viewport<class_Viewport>` ancestor, if the node is inside the tree. Otherwise, returns ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -2423,7 +2423,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`Window<class_Window>` **get_window**\ (\ ) |const| :ref:`🔗<class_Node_method_get_window>`
 
-返回包含该节点的 :ref:`Window<class_Window>`\ 。如果该节点在主窗口中，则相当于获取根节点（\ ``get_tree().get_root()``\ ）。
+Returns the :ref:`Window<class_Window>` that contains this node. If the node is in the main window, this is equivalent to getting the root node (``get_tree().get_root()``).
 
 .. rst-class:: classref-item-separator
 
@@ -2435,7 +2435,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **has_node**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) |const| :ref:`🔗<class_Node_method_has_node>`
 
-如果 ``path`` 指向一个有效节点，则返回 ``true``\ 。另见 :ref:`get_node()<class_Node_method_get_node>`\ 。
+Returns ``true`` if the ``path`` points to a valid node. See also :ref:`get_node()<class_Node_method_get_node>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2447,7 +2447,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **has_node_and_resource**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) |const| :ref:`🔗<class_Node_method_has_node_and_resource>`
 
-如果 ``path`` 指向一个有效的节点，并且它的子名称指向一个有效的 :ref:`Resource<class_Resource>`\ ，例如 ``Area2D/CollisionShape2D:shape``\ ，则返回 ``true``\ 。不考虑非 :ref:`Resource<class_Resource>` 类型（例如节点或其他 :ref:`Variant<class_Variant>` 类型）的属性。另见 :ref:`get_node_and_resource()<class_Node_method_get_node_and_resource>`\ 。
+Returns ``true`` if ``path`` points to a valid node and its subnames point to a valid :ref:`Resource<class_Resource>`, e.g. ``Area2D/CollisionShape2D:shape``. Properties that are not :ref:`Resource<class_Resource>` types (such as nodes or other :ref:`Variant<class_Variant>` types) are not considered. See also :ref:`get_node_and_resource()<class_Node_method_get_node_and_resource>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2459,7 +2459,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **is_ancestor_of**\ (\ node\: :ref:`Node<class_Node>`\ ) |const| :ref:`🔗<class_Node_method_is_ancestor_of>`
 
-如果给定的 ``node`` 是该节点的直接或间接子节点，则返回 ``true``\ 。
+Returns ``true`` if the given ``node`` is a direct or indirect child of this node.
 
 .. rst-class:: classref-item-separator
 
@@ -2471,7 +2471,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **is_displayed_folded**\ (\ ) |const| :ref:`🔗<class_Node_method_is_displayed_folded>`
 
-如果该节点在“场景”面板中被折叠，则返回 ``true``\ 。该方法旨在用于编辑器插件和工具。另见 :ref:`set_display_folded()<class_Node_method_set_display_folded>`\ 。
+Returns ``true`` if the node is folded (collapsed) in the Scene dock. This method is intended to be used in editor plugins and tools. See also :ref:`set_display_folded()<class_Node_method_set_display_folded>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2483,7 +2483,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **is_editable_instance**\ (\ node\: :ref:`Node<class_Node>`\ ) |const| :ref:`🔗<class_Node_method_is_editable_instance>`
 
-如果 ``node`` 具有相对于该节点启用的可编辑子节点，则返回 ``true``\ 。该方法旨在用于编辑器插件和工具。另见 :ref:`set_editable_instance()<class_Node_method_set_editable_instance>`\ 。
+Returns ``true`` if ``node`` has editable children enabled relative to this node. This method is intended to be used in editor plugins and tools. See also :ref:`set_editable_instance()<class_Node_method_set_editable_instance>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2495,7 +2495,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **is_greater_than**\ (\ node\: :ref:`Node<class_Node>`\ ) |const| :ref:`🔗<class_Node_method_is_greater_than>`
 
-如果给定的 ``node`` 在场景层次结构中出现得比该节点晚，则返回 ``true``\ 。晚出现的节点通常晚处理。
+Returns ``true`` if the given ``node`` occurs later in the scene hierarchy than this node. A node occurring later is usually processed last.
 
 .. rst-class:: classref-item-separator
 
@@ -2507,7 +2507,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **is_in_group**\ (\ group\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Node_method_is_in_group>`
 
-如果该节点已被添加到给定的 ``group``\ ，则返回 ``true``\ 。请参阅 :ref:`add_to_group()<class_Node_method_add_to_group>` 和 :ref:`remove_from_group()<class_Node_method_remove_from_group>`\ 。另见描述中的注释以及 :ref:`SceneTree<class_SceneTree>` 的分组方法。
+Returns ``true`` if this node has been added to the given ``group``. See :ref:`add_to_group()<class_Node_method_add_to_group>` and :ref:`remove_from_group()<class_Node_method_remove_from_group>`. See also notes in the description, and the :ref:`SceneTree<class_SceneTree>`'s group methods.
 
 .. rst-class:: classref-item-separator
 
@@ -2519,7 +2519,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **is_inside_tree**\ (\ ) |const| :ref:`🔗<class_Node_method_is_inside_tree>`
 
-如果该节点当前在 :ref:`SceneTree<class_SceneTree>` 中，返回 ``true``\ 。另见 :ref:`get_tree()<class_Node_method_get_tree>`\ 。
+Returns ``true`` if this node is currently inside a :ref:`SceneTree<class_SceneTree>`. See also :ref:`get_tree()<class_Node_method_get_tree>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2531,7 +2531,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **is_multiplayer_authority**\ (\ ) |const| :ref:`🔗<class_Node_method_is_multiplayer_authority>`
 
-如果本地系统为这个节点的多人游戏控制者，则返回 ``true``\ 。
+Returns ``true`` if the local system is the multiplayer authority of this node.
 
 .. rst-class:: classref-item-separator
 
@@ -2543,9 +2543,9 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **is_node_ready**\ (\ ) |const| :ref:`🔗<class_Node_method_is_node_ready>`
 
-如果该节点已就绪，则返回 ``true``\ ，即该节点位于场景树中，并且所有子项均已初始化。
+Returns ``true`` if the node is ready, i.e. it's inside scene tree and all its children are initialized.
 
-\ :ref:`request_ready()<class_Node_method_request_ready>` 会将其重置回 ``false``\ 。
+\ :ref:`request_ready()<class_Node_method_request_ready>` resets it back to ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -2557,7 +2557,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **is_part_of_edited_scene**\ (\ ) |const| :ref:`🔗<class_Node_method_is_part_of_edited_scene>`
 
-如果该节点是编辑器中当前打开场景的一部分，则返回 ``true``\ 。
+Returns ``true`` if the node is part of the scene currently opened in the editor.
 
 .. rst-class:: classref-item-separator
 
@@ -2569,9 +2569,9 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **is_physics_interpolated**\ (\ ) |const| :ref:`🔗<class_Node_method_is_physics_interpolated>`
 
-如果该节点启用了物理插值，则返回 ``true``\ （请参阅 :ref:`physics_interpolation_mode<class_Node_property_physics_interpolation_mode>`\ ）。
+Returns ``true`` if physics interpolation is enabled for this node (see :ref:`physics_interpolation_mode<class_Node_property_physics_interpolation_mode>`).
 
-\ **注意：**\ 仅当同时设置了标志\ **并且**\ 在 :ref:`SceneTree<class_SceneTree>` 中启用了物理插值时，插值才会处于活动状态。可以使用 :ref:`is_physics_interpolated_and_enabled()<class_Node_method_is_physics_interpolated_and_enabled>` 进行测试。
+\ **Note:** Interpolation will only be active if both the flag is set **and** physics interpolation is enabled within the :ref:`SceneTree<class_SceneTree>`. This can be tested using :ref:`is_physics_interpolated_and_enabled()<class_Node_method_is_physics_interpolated_and_enabled>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2583,11 +2583,11 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **is_physics_interpolated_and_enabled**\ (\ ) |const| :ref:`🔗<class_Node_method_is_physics_interpolated_and_enabled>`
 
-如果物理插值已启用（请参阅 :ref:`physics_interpolation_mode<class_Node_property_physics_interpolation_mode>`\ ）\ **并且**\ 已在 :ref:`SceneTree<class_SceneTree>` 中启用，则返回 ``true``\ 。
+Returns ``true`` if physics interpolation is enabled (see :ref:`physics_interpolation_mode<class_Node_property_physics_interpolation_mode>`) **and** enabled in the :ref:`SceneTree<class_SceneTree>`.
 
-这是 :ref:`is_physics_interpolated()<class_Node_method_is_physics_interpolated>` 的便捷版本，它还检查物理插值是否已全局启用。
+This is a convenience version of :ref:`is_physics_interpolated()<class_Node_method_is_physics_interpolated>` that also checks whether physics interpolation is enabled globally.
 
-请参阅 :ref:`SceneTree.physics_interpolation<class_SceneTree_property_physics_interpolation>` 和 :ref:`ProjectSettings.physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>`\ 。
+See :ref:`SceneTree.physics_interpolation<class_SceneTree_property_physics_interpolation>` and :ref:`ProjectSettings.physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2599,7 +2599,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **is_physics_processing**\ (\ ) |const| :ref:`🔗<class_Node_method_is_physics_processing>`
 
-如果启用了物理处理，返回 ``true``\ （见 :ref:`set_physics_process()<class_Node_method_set_physics_process>`\ ）。
+Returns ``true`` if physics processing is enabled (see :ref:`set_physics_process()<class_Node_method_set_physics_process>`).
 
 .. rst-class:: classref-item-separator
 
@@ -2611,7 +2611,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **is_physics_processing_internal**\ (\ ) |const| :ref:`🔗<class_Node_method_is_physics_processing_internal>`
 
-如果内部物理处理被启用，返回 ``true``\ （见 :ref:`set_physics_process_internal()<class_Node_method_set_physics_process_internal>`\ ）。
+Returns ``true`` if internal physics processing is enabled (see :ref:`set_physics_process_internal()<class_Node_method_set_physics_process_internal>`).
 
 .. rst-class:: classref-item-separator
 
@@ -2623,7 +2623,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **is_processing**\ (\ ) |const| :ref:`🔗<class_Node_method_is_processing>`
 
-如果开启了处理，返回 ``true``\ （见 :ref:`set_process()<class_Node_method_set_process>`\ ）。
+Returns ``true`` if processing is enabled (see :ref:`set_process()<class_Node_method_set_process>`).
 
 .. rst-class:: classref-item-separator
 
@@ -2635,7 +2635,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **is_processing_input**\ (\ ) |const| :ref:`🔗<class_Node_method_is_processing_input>`
 
-如果节点正在处理输入，则返回 ``true``\ （见 :ref:`set_process_input()<class_Node_method_set_process_input>`\ ）。
+Returns ``true`` if the node is processing input (see :ref:`set_process_input()<class_Node_method_set_process_input>`).
 
 .. rst-class:: classref-item-separator
 
@@ -2647,7 +2647,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **is_processing_internal**\ (\ ) |const| :ref:`🔗<class_Node_method_is_processing_internal>`
 
-如果启用了内部处理，则返回 ``true``\ （见 :ref:`set_process_internal()<class_Node_method_set_process_internal>`\ ）。
+Returns ``true`` if internal processing is enabled (see :ref:`set_process_internal()<class_Node_method_set_process_internal>`).
 
 .. rst-class:: classref-item-separator
 
@@ -2659,7 +2659,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **is_processing_shortcut_input**\ (\ ) |const| :ref:`🔗<class_Node_method_is_processing_shortcut_input>`
 
-如果节点正在处理快捷键，则返回 ``true``\ （见 :ref:`set_process_shortcut_input()<class_Node_method_set_process_shortcut_input>`\ ）。
+Returns ``true`` if the node is processing shortcuts (see :ref:`set_process_shortcut_input()<class_Node_method_set_process_shortcut_input>`).
 
 .. rst-class:: classref-item-separator
 
@@ -2671,7 +2671,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **is_processing_unhandled_input**\ (\ ) |const| :ref:`🔗<class_Node_method_is_processing_unhandled_input>`
 
-如果节点正在处理未被处理的输入，则返回 ``true``\ （见 :ref:`set_process_unhandled_input()<class_Node_method_set_process_unhandled_input>`\ ）。
+Returns ``true`` if the node is processing unhandled input (see :ref:`set_process_unhandled_input()<class_Node_method_set_process_unhandled_input>`).
 
 .. rst-class:: classref-item-separator
 
@@ -2683,7 +2683,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`bool<class_bool>` **is_processing_unhandled_key_input**\ (\ ) |const| :ref:`🔗<class_Node_method_is_processing_unhandled_key_input>`
 
-如果节点正在处理未被处理的键输入，则返回 ``true``\ （见 :ref:`set_process_unhandled_key_input()<class_Node_method_set_process_unhandled_key_input>`\ ）。
+Returns ``true`` if the node is processing unhandled key input (see :ref:`set_process_unhandled_key_input()<class_Node_method_set_process_unhandled_key_input>`).
 
 .. rst-class:: classref-item-separator
 
@@ -2695,9 +2695,9 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 |void| **move_child**\ (\ child_node\: :ref:`Node<class_Node>`, to_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Node_method_move_child>`
 
-将 ``child_node`` 移动到给定索引。节点的索引是其同级节点之间的顺序。如果 ``to_index`` 为负，则索引从列表末尾开始计数。另见 :ref:`get_child()<class_Node_method_get_child>` 和 :ref:`get_index()<class_Node_method_get_index>`\ 。
+Moves ``child_node`` to the given index. A node's index is the order among its siblings. If ``to_index`` is negative, the index is counted from the end of the list. See also :ref:`get_child()<class_Node_method_get_child>` and :ref:`get_index()<class_Node_method_get_index>`.
 
-\ **注意：**\ 几个引擎回调（\ :ref:`_ready()<class_Node_private_method__ready>`\ 、\ :ref:`_process()<class_Node_private_method__process>` 等）和通过 :ref:`propagate_notification()<class_Node_method_propagate_notification>` 发送的通知的处理顺序受树顺序的影响。\ :ref:`CanvasItem<class_CanvasItem>` 节点也按树顺序渲染。另见\ :ref:`process_priority<class_Node_property_process_priority>`\ 。
+\ **Note:** The processing order of several engine callbacks (:ref:`_ready()<class_Node_private_method__ready>`, :ref:`_process()<class_Node_private_method__process>`, etc.) and notifications sent through :ref:`propagate_notification()<class_Node_method_propagate_notification>` is affected by tree order. :ref:`CanvasItem<class_CanvasItem>` nodes are also rendered in tree order. See also :ref:`process_priority<class_Node_property_process_priority>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2709,7 +2709,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 |void| **notify_deferred_thread_group**\ (\ what\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Node_method_notify_deferred_thread_group>`
 
-类似于 :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>`\ ，但针对的是通知。
+Similar to :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>`, but for notifications.
 
 .. rst-class:: classref-item-separator
 
@@ -2721,7 +2721,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 |void| **notify_thread_safe**\ (\ what\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Node_method_notify_thread_safe>`
 
-类似于 :ref:`call_thread_safe()<class_Node_method_call_thread_safe>`\ ，但针对的是通知。
+Similar to :ref:`call_thread_safe()<class_Node_method_call_thread_safe>`, but for notifications.
 
 .. rst-class:: classref-item-separator
 
@@ -2747,9 +2747,9 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **print_tree**\ (\ ) :ref:`🔗<class_Node_method_print_tree>`
 
-将该节点及其子节点打印到标准输出，会进行递归操作。该节点可以不在树中。这个方法输出的是相对于当前节点的路径，适合复制/粘贴到 :ref:`get_node()<class_Node_method_get_node>` 函数中。另见 :ref:`print_tree_pretty()<class_Node_method_print_tree_pretty>`\ 。
+Prints the node and its children to the console, recursively. The node does not have to be inside the tree. This method outputs :ref:`NodePath<class_NodePath>`\ s relative to this node, and is good for copy/pasting into :ref:`get_node()<class_Node_method_get_node>`. See also :ref:`print_tree_pretty()<class_Node_method_print_tree_pretty>`.
 
-示例输出：
+May print, for example:
 
 .. code:: text
 
@@ -2770,9 +2770,9 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **print_tree_pretty**\ (\ ) :ref:`🔗<class_Node_method_print_tree_pretty>`
 
-递归地将节点及其子节点打印到控制台。节点不必位于场景树中。类似于 :ref:`print_tree()<class_Node_method_print_tree>`\ ，但图形表示看起来像编辑器的“场景”面板中显示的内容。利于检查较大的树。
+Prints the node and its children to the console, recursively. The node does not have to be inside the tree. Similar to :ref:`print_tree()<class_Node_method_print_tree>`, but the graphical representation looks like what is displayed in the editor's Scene dock. It is useful for inspecting larger trees.
 
-输出示例：
+May print, for example:
 
 .. code:: text
 
@@ -2793,9 +2793,9 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **propagate_call**\ (\ method\: :ref:`StringName<class_StringName>`, args\: :ref:`Array<class_Array>` = [], parent_first\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Node_method_propagate_call>`
 
-在该节点上并递归地在其所有子节点上，调用给定的 ``method`` 名称，并将 ``args`` 作为参数传递。
+Calls the given ``method`` name, passing ``args`` as arguments, on this node and all of its children, recursively.
 
-如果 ``parent_first`` 参数为 ``true``\ ，则该方法将首先在该节点上调用，然后在其所有子节点上调用。如果为 ``false``\ ，则子节点的方法将首先被调用。
+If ``parent_first`` is ``true``, the method is called on this node first, then on all of its children. If ``false``, the children's methods are called first.
 
 .. rst-class:: classref-item-separator
 
@@ -2807,7 +2807,7 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **propagate_notification**\ (\ what\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Node_method_propagate_notification>`
 
-在该节点上并递归地在其所有子节点上，使用 ``what`` 调用 :ref:`Object.notification()<class_Object_method_notification>`\ 。
+Calls :ref:`Object.notification()<class_Object_method_notification>` with ``what`` on this node and all of its children, recursively.
 
 .. rst-class:: classref-item-separator
 
@@ -2819,7 +2819,7 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **queue_accessibility_update**\ (\ ) :ref:`🔗<class_Node_method_queue_accessibility_update>`
 
-将该节点的无障碍信息更新加入队列。
+Queues an accessibility information update for this node.
 
 .. rst-class:: classref-item-separator
 
@@ -2831,11 +2831,11 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **queue_free**\ (\ ) :ref:`🔗<class_Node_method_queue_free>`
 
-将该节点加入队列以在当前帧末尾删除。被删除时，其所有子节点也将被删除，并且对该节点及其子节点的所有引用都将变得无效。
+Queues this node to be deleted at the end of the current frame. When deleted, all of its children are deleted as well, and all references to the node and its children become invalid.
 
-与 :ref:`Object.free()<class_Object_method_free>` 不同，该节点不会被立即删除，并且它在被删除前仍然可以访问。多次调用 :ref:`queue_free()<class_Node_method_queue_free>` 也是安全的。使用 :ref:`Object.is_queued_for_deletion()<class_Object_method_is_queued_for_deletion>` 检查节点是否会在该帧末尾删除。
+Unlike with :ref:`Object.free()<class_Object_method_free>`, the node is not deleted instantly, and it can still be accessed before deletion. It is also safe to call :ref:`queue_free()<class_Node_method_queue_free>` multiple times. Use :ref:`Object.is_queued_for_deletion()<class_Object_method_is_queued_for_deletion>` to check if the node will be deleted at the end of the frame.
 
-\ **注意：**\ 该节点只会在所有其他已延迟的调用完成后释放。使用该方法并不总会和通过 :ref:`Object.call_deferred()<class_Object_method_call_deferred>` 调用 :ref:`Object.free()<class_Object_method_free>` 相同。
+\ **Note:** The node will only be freed after all other deferred calls are finished. Using this method is not always the same as calling :ref:`Object.free()<class_Object_method_free>` through :ref:`Object.call_deferred()<class_Object_method_call_deferred>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2847,9 +2847,9 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **remove_child**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_Node_method_remove_child>`
 
-移除子节点 ``node``\ 。\ **不会**\ 删除 ``node`` 及其子节点。删除节点见 :ref:`queue_free()<class_Node_method_queue_free>`\ 。
+Removes a child ``node``. The ``node``, along with its children, are **not** deleted. To delete a node, see :ref:`queue_free()<class_Node_method_queue_free>`.
 
-\ **注意：**\ 当本节点位于场景树中时，如果移除节点 ``node``\ （或其后代节点）导致该节点的 :ref:`owner<class_Node_property_owner>` 不再是其祖先（见 :ref:`is_ancestor_of()<class_Node_method_is_ancestor_of>`\ ），则本方法会将其 :ref:`owner<class_Node_property_owner>` 设置为 ``null``\ 。
+\ **Note:** When this node is inside the tree, this method sets the :ref:`owner<class_Node_property_owner>` of the removed ``node`` (or its descendants) to ``null``, if their :ref:`owner<class_Node_property_owner>` is no longer an ancestor (see :ref:`is_ancestor_of()<class_Node_method_is_ancestor_of>`).
 
 .. rst-class:: classref-item-separator
 
@@ -2861,7 +2861,7 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **remove_from_group**\ (\ group\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Node_method_remove_from_group>`
 
-从给定的 ``group`` 中移除该节点。如果该节点不在 ``group`` 中，则不执行任何操作。另见描述中的注释以及 :ref:`SceneTree<class_SceneTree>` 的分组方法。
+Removes the node from the given ``group``. Does nothing if the node is not in the ``group``. See also notes in the description, and the :ref:`SceneTree<class_SceneTree>`'s group methods.
 
 .. rst-class:: classref-item-separator
 
@@ -2873,9 +2873,9 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **reparent**\ (\ new_parent\: :ref:`Node<class_Node>`, keep_global_transform\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_Node_method_reparent>`
 
-将这个 **Node** 的父节点更改为 ``new_parent``\ 。该节点需要已经有一个父节点。如果该节点的所有者仍然可以从新位置访问（即，该节点在操作后仍然是新父节点的后代），则该节点的 :ref:`owner<class_Node_property_owner>` 将被保留。
+Changes the parent of this **Node** to the ``new_parent``. The node needs to already have a parent. The node's :ref:`owner<class_Node_property_owner>` is preserved if its owner is still reachable from the new location (i.e., the node is still a descendant of the new parent after the operation).
 
-如果 ``keep_global_transform`` 为 ``true``\ ，则会在支持时保持该节点的全局变换。\ :ref:`Node2D<class_Node2D>`\ 、\ :ref:`Node3D<class_Node3D>`\ 、\ :ref:`Control<class_Control>` 支持这个参数（但 :ref:`Control<class_Control>` 只会保留位置）。
+If ``keep_global_transform`` is ``true``, the node's global transform will be preserved if supported. :ref:`Node2D<class_Node2D>`, :ref:`Node3D<class_Node3D>` and :ref:`Control<class_Control>` support this argument (but :ref:`Control<class_Control>` keeps only position).
 
 .. rst-class:: classref-item-separator
 
@@ -2887,11 +2887,11 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **replace_by**\ (\ node\: :ref:`Node<class_Node>`, keep_groups\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Node_method_replace_by>`
 
-将该节点替换为给定的 ``node``\ 。该节点的所有子节点都会被移动到 ``node``\ 。
+Replaces this node by the given ``node``. All children of this node are moved to ``node``.
 
-如果 ``keep_groups`` 为 ``true``\ ，则 ``node`` 将被添加到被替换节点所在的相同分组中（请参阅 :ref:`add_to_group()<class_Node_method_add_to_group>`\ ）。
+If ``keep_groups`` is ``true``, the ``node`` is added to the same groups that the replaced node is in (see :ref:`add_to_group()<class_Node_method_add_to_group>`).
 
-\ **警告：**\ 被替换的节点已从树中移除，但\ **未**\ 被删除。为了防止内存泄漏，请将该节点的引用存储在变量中，或使用 :ref:`Object.free()<class_Object_method_free>`\ 。
+\ **Warning:** The replaced node is removed from the tree, but it is **not** deleted. To prevent memory leaks, store a reference to the node in a variable, or use :ref:`Object.free()<class_Object_method_free>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2903,9 +2903,9 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **request_ready**\ (\ ) :ref:`🔗<class_Node_method_request_ready>`
 
-请求在该节点下次进入树时再次调用 :ref:`_ready()<class_Node_private_method__ready>`\ 。\ **不**\ 会立即调用 :ref:`_ready()<class_Node_private_method__ready>`\ 。
+Requests :ref:`_ready()<class_Node_private_method__ready>` to be called again the next time the node enters the tree. Does **not** immediately call :ref:`_ready()<class_Node_private_method__ready>`.
 
-\ **注意：**\ 该方法只影响当前节点。如果该节点的子节点也需要请求就绪，则需要为每个子节点调用该方法。当节点及其子节点再次进入树时，\ :ref:`_ready()<class_Node_private_method__ready>` 回调的顺序将与正常情况相同。
+\ **Note:** This method only affects the current node. If the node's children also need to request ready, this method needs to be called for each one of them. When the node and its children enter the tree again, the order of :ref:`_ready()<class_Node_private_method__ready>` callbacks will be the same as normal.
 
 .. rst-class:: classref-item-separator
 
@@ -2917,13 +2917,13 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **reset_physics_interpolation**\ (\ ) :ref:`🔗<class_Node_method_reset_physics_interpolation>`
 
-当物理插值处于活动状态时，将节点移动到完全不同的变换（例如放置在关卡内）可能会导致可见故障，因为对象在物理刻度内从旧位置渲染移动到新位置。
+When physics interpolation is active, moving a node to a radically different transform (such as placement within a level) can result in a visible glitch as the object is rendered moving from the old to new position over the physics tick.
 
-可以通过调用该方法来防止该故障，该方法会暂时禁用插值，直到物理刻度完成。
+That glitch can be prevented by calling this method, which temporarily disables interpolation until the physics tick is complete.
 
-节点和所有子节点将递归接收通知 :ref:`NOTIFICATION_RESET_PHYSICS_INTERPOLATION<class_Node_constant_NOTIFICATION_RESET_PHYSICS_INTERPOLATION>`\ 。
+The notification :ref:`NOTIFICATION_RESET_PHYSICS_INTERPOLATION<class_Node_constant_NOTIFICATION_RESET_PHYSICS_INTERPOLATION>` will be received by the node and all children recursively.
 
-\ **注意：**\ 应在移动节点\ **之后**\ 而不是之前调用该函数。
+\ **Note:** This function should be called **after** moving the node, rather than before.
 
 .. rst-class:: classref-item-separator
 
@@ -2935,11 +2935,11 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 :ref:`Error<enum_@GlobalScope_Error>` **rpc**\ (\ method\: :ref:`StringName<class_StringName>`, ...\ ) |vararg| :ref:`🔗<class_Node_method_rpc>`
 
-将给定 ``method`` 的远程过程调用请求发送到网络（和本地）上的对等体，并将额外参数发送给 RPC 调用的方法。该调用请求只会被具有相同 :ref:`NodePath<class_NodePath>` 的节点接收，该节点包括完全相同的 :ref:`name<class_Node_property_name>`\ 。行为取决于给定 ``method`` 的 RPC 配置（请参阅 :ref:`rpc_config()<class_Node_method_rpc_config>` 和 :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>`\ ）。默认情况下，方法不会暴露给 RPC。
+Sends a remote procedure call request for the given ``method`` to peers on the network (and locally), sending additional arguments to the method called by the RPC. The call request will only be received by nodes with the same :ref:`NodePath<class_NodePath>`, including the exact same :ref:`name<class_Node_property_name>`. Behavior depends on the RPC configuration for the given ``method`` (see :ref:`rpc_config()<class_Node_method_rpc_config>` and :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>`). By default, methods are not exposed to RPCs.
 
-如果调用成功，则返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果 ``method`` 中传递的参数不匹配，则返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ ；如果无法获取节点的 :ref:`multiplayer<class_Node_property_multiplayer>`\ （例如当该节点不在树中），则返回 :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>`\ ；如果 :ref:`multiplayer<class_Node_property_multiplayer>` 的连接不可用，则返回 :ref:`@GlobalScope.ERR_CONNECTION_ERROR<class_@GlobalScope_constant_ERR_CONNECTION_ERROR>`\ 。
+May return :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the call is successful, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the arguments passed in the ``method`` do not match, :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>` if the node's :ref:`multiplayer<class_Node_property_multiplayer>` cannot be fetched (such as when the node is not inside the tree), :ref:`@GlobalScope.ERR_CONNECTION_ERROR<class_@GlobalScope_constant_ERR_CONNECTION_ERROR>` if :ref:`multiplayer<class_Node_property_multiplayer>`'s connection is not available.
 
-\ **注意：**\ 只有在收到来自 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 的 :ref:`MultiplayerAPI.connected_to_server<class_MultiplayerAPI_signal_connected_to_server>` 信号后，才能在客户端上安全地使用 RPC。还需要跟踪连接状态，可通过 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 信号（如 :ref:`MultiplayerAPI.server_disconnected<class_MultiplayerAPI_signal_server_disconnected>`\ ）或通过检查（\ ``get_multiplayer().peer.get_connection_status() == CONNECTION_CONNECTED``\ ）来跟踪。
+\ **Note:** You can only safely use RPCs on clients after you received the :ref:`MultiplayerAPI.connected_to_server<class_MultiplayerAPI_signal_connected_to_server>` signal from the :ref:`MultiplayerAPI<class_MultiplayerAPI>`. You also need to keep track of the connection state, either by the :ref:`MultiplayerAPI<class_MultiplayerAPI>` signals like :ref:`MultiplayerAPI.server_disconnected<class_MultiplayerAPI_signal_server_disconnected>` or by checking (``get_multiplayer().peer.get_connection_status() == CONNECTION_CONNECTED``).
 
 .. rst-class:: classref-item-separator
 
@@ -2951,17 +2951,17 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **rpc_config**\ (\ method\: :ref:`StringName<class_StringName>`, config\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Node_method_rpc_config>`
 
-更改给定 ``method`` 的 RPC 配置。\ ``config`` 应该是 ``null`` 以禁用该功能（默认情况下），或者是包含以下条目的 :ref:`Dictionary<class_Dictionary>`\ ：
+Changes the RPC configuration for the given ``method``. ``config`` should either be ``null`` to disable the feature (as by default), or a :ref:`Dictionary<class_Dictionary>` containing the following entries:
 
-- ``rpc_mode``\ ：见 :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>`\ ；
+- ``rpc_mode``: see :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>`;
 
-- ``transfer_mode``\ ：见 :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>`\ ；
+- ``transfer_mode``: see :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>`;
 
-- ``call_local``\ ：如果为 ``true``\ ，该方法也将会在本地调用；
+- ``call_local``: if ``true``, the method will also be called locally;
 
-- ``channel``\ ：一个 :ref:`int<class_int>` 表示启用了发送 RPC 的通道。
+- ``channel``: an :ref:`int<class_int>` representing the channel to send the RPC on.
 
-\ **注意：**\ 在 GDScript 中，该方法对应 :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>` 注解，并传递各种参数（\ ``@rpc(any)``\ 、\ ``@rpc(authority)``\ ……）。 另见 :doc:`高级多人游戏 <../tutorials/networking/high_level_multiplayer>` 教程。
+\ **Note:** In GDScript, this method corresponds to the :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>` annotation, with various parameters passed (``@rpc(any)``, ``@rpc(authority)``...). See also the :doc:`high-level multiplayer <../tutorials/networking/high_level_multiplayer>` tutorial.
 
 .. rst-class:: classref-item-separator
 
@@ -2973,9 +2973,9 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 :ref:`Error<enum_@GlobalScope_Error>` **rpc_id**\ (\ peer_id\: :ref:`int<class_int>`, method\: :ref:`StringName<class_StringName>`, ...\ ) |vararg| :ref:`🔗<class_Node_method_rpc_id>`
 
-将 :ref:`rpc()<class_Node_method_rpc>` 发送到由 ``peer_id`` 标识的特定对等体（请参阅 :ref:`MultiplayerPeer.set_target_peer()<class_MultiplayerPeer_method_set_target_peer>`\ ）。
+Sends a :ref:`rpc()<class_Node_method_rpc>` to a specific peer identified by ``peer_id`` (see :ref:`MultiplayerPeer.set_target_peer()<class_MultiplayerPeer_method_set_target_peer>`).
 
-如果调用成功，则返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果 ``method`` 中传递的参数不匹配，则返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ ；如果无法获取节点的 :ref:`multiplayer<class_Node_property_multiplayer>`\ （例如当节点不在场景树中），则返回 :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>`\ ；如果 :ref:`multiplayer<class_Node_property_multiplayer>` 的连接不可用，则返回 :ref:`@GlobalScope.ERR_CONNECTION_ERROR<class_@GlobalScope_constant_ERR_CONNECTION_ERROR>`\ 。
+May return :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the call is successful, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the arguments passed in the ``method`` do not match, :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>` if the node's :ref:`multiplayer<class_Node_property_multiplayer>` cannot be fetched (such as when the node is not inside the tree), :ref:`@GlobalScope.ERR_CONNECTION_ERROR<class_@GlobalScope_constant_ERR_CONNECTION_ERROR>` if :ref:`multiplayer<class_Node_property_multiplayer>`'s connection is not available.
 
 .. rst-class:: classref-item-separator
 
@@ -2987,7 +2987,7 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **set_deferred_thread_group**\ (\ property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Node_method_set_deferred_thread_group>`
 
-类似于 :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>`\ ，但针对的是设置属性。
+Similar to :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>`, but for setting properties.
 
 .. rst-class:: classref-item-separator
 
@@ -2999,7 +2999,7 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **set_display_folded**\ (\ fold\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Node_method_set_display_folded>`
 
-如果设置为 ``true``\ ，则节点将在场景面板中显示为被折叠。结果，它的所有子节点都被隐藏了。该方法旨在用于编辑器插件和工具脚本，但它也适用于发布构建版本。另见 :ref:`is_displayed_folded()<class_Node_method_is_displayed_folded>`\ 。
+If set to ``true``, the node appears folded in the Scene dock. As a result, all of its children are hidden. This method is intended to be used in editor plugins and tools, but it also works in release builds. See also :ref:`is_displayed_folded()<class_Node_method_is_displayed_folded>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3011,7 +3011,7 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **set_editable_instance**\ (\ node\: :ref:`Node<class_Node>`, is_editable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Node_method_set_editable_instance>`
 
-设置为 ``true`` 以允许 ``node`` 拥有的所有节点在场景面板中可用且可编辑，即使它们的 :ref:`owner<class_Node_property_owner>` 不是场景根。该方法旨在用于编辑器插件和工具脚本，但它也适用于发布构建版本。另见 :ref:`is_editable_instance()<class_Node_method_is_editable_instance>`\ 。
+Set to ``true`` to allow all nodes owned by ``node`` to be available, and editable, in the Scene dock, even if their :ref:`owner<class_Node_property_owner>` is not the scene root. This method is intended to be used in editor plugins and tools, but it also works in release builds. See also :ref:`is_editable_instance()<class_Node_method_is_editable_instance>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3023,11 +3023,11 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **set_multiplayer_authority**\ (\ id\: :ref:`int<class_int>`, recursive\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_Node_method_set_multiplayer_authority>`
 
-将该节点的多人游戏控制方设置为具有给定对等体 ``id`` 的对等体。多人游戏控制方是对网络上的节点具有控制权限的对等体。默认为对等体 ID 1（服务器）。利于与 :ref:`rpc_config()<class_Node_method_rpc_config>` 和 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 结合使用。
+Sets the node's multiplayer authority to the peer with the given peer ``id``. The multiplayer authority is the peer that has authority over the node on the network. Defaults to peer ID 1 (the server). Useful in conjunction with :ref:`rpc_config()<class_Node_method_rpc_config>` and the :ref:`MultiplayerAPI<class_MultiplayerAPI>`.
 
-如果 ``recursive`` 为 ``true``\ ，则该节点的所有子节点将递归地将给定的对等体设置为控制方。
+If ``recursive`` is ``true``, the given peer is recursively set as the authority for all children of this node.
 
-\ **警告：**\ 这\ **不会**\ 自动将新的控制方复制给其他对等体。是否这样做由开发者负责。可以使用 :ref:`MultiplayerSpawner.spawn_function<class_MultiplayerSpawner_property_spawn_function>`\ 、RPC 或 :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>` 复制新控制方的信息。此外，父节点的控制方\ **不会**\ 传播给新添加的子节点。
+\ **Warning:** This does **not** automatically replicate the new authority to other peers. It is the developer's responsibility to do so. You may replicate the new authority's information using :ref:`MultiplayerSpawner.spawn_function<class_MultiplayerSpawner_property_spawn_function>`, an RPC, or a :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>`. Furthermore, the parent's authority does **not** propagate to newly added children.
 
 .. rst-class:: classref-item-separator
 
@@ -3039,9 +3039,9 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **set_physics_process**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Node_method_set_physics_process>`
 
-如果设置为 ``true``\ ，则启用物理（固定帧率）处理。当一个节点正在被处理时，它将以固定的（通常是 60 FPS，请参阅 :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` 以更改）时间间隔，接收一个 :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>`\ （如果存在 :ref:`_physics_process()<class_Node_private_method__physics_process>` 回调，该回调将被调用）。
+If set to ``true``, enables physics (fixed framerate) processing. When a node is being processed, it will receive a :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>` at a fixed (usually 60 FPS, see :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` to change) interval (and the :ref:`_physics_process()<class_Node_private_method__physics_process>` callback will be called if it exists).
 
-\ **注意：**\ 如果 :ref:`_physics_process()<class_Node_private_method__physics_process>` 被覆盖，它将在 :ref:`_ready()<class_Node_private_method__ready>` 被调用之前自动启用。
+\ **Note:** If :ref:`_physics_process()<class_Node_private_method__physics_process>` is overridden, this will be automatically enabled before :ref:`_ready()<class_Node_private_method__ready>` is called.
 
 .. rst-class:: classref-item-separator
 
@@ -3053,9 +3053,9 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **set_physics_process_internal**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Node_method_set_physics_process_internal>`
 
-如果设置为 ``true``\ ，则启用该节点的内部物理。内部物理处理独立于正常的 :ref:`_physics_process()<class_Node_private_method__physics_process>` 调用而发生，并且由某些节点内部使用以确保正常工作，即使节点暂停或物理处理因脚本而禁用（\ :ref:`set_physics_process()<class_Node_method_set_physics_process>`\ ）也是如此。
+If set to ``true``, enables internal physics for this node. Internal physics processing happens in isolation from the normal :ref:`_physics_process()<class_Node_private_method__physics_process>` calls and is used by some nodes internally to guarantee proper functioning even if the node is paused or physics processing is disabled for scripting (:ref:`set_physics_process()<class_Node_method_set_physics_process>`).
 
-\ **警告：**\ 内置节点依靠内部处理来实现其内部逻辑。禁用它是不安全的，并且可能会导致意外行为。请在你知道自己正在做什么时使用该方法。
+\ **Warning:** Built-in nodes rely on internal processing for their internal logic. Disabling it is unsafe and may lead to unexpected behavior. Use this method if you know what you are doing.
 
 .. rst-class:: classref-item-separator
 
@@ -3067,11 +3067,11 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **set_process**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Node_method_set_process>`
 
-如果设置为 ``true``\ ，则启用帧处理。当一个节点正在被处理时，它将在每个绘制的帧上收到一个 :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>`\ （如果存在 :ref:`_process()<class_Node_private_method__process>` 回调，该回调将被调用）。
+If set to ``true``, enables processing. When a node is being processed, it will receive a :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>` on every drawn frame (and the :ref:`_process()<class_Node_private_method__process>` callback will be called if it exists).
 
-\ **注意：**\ 如果 :ref:`_process()<class_Node_private_method__process>` 被覆盖，它将在 :ref:`_ready()<class_Node_private_method__ready>` 被调用之前自动启用。
+\ **Note:** If :ref:`_process()<class_Node_private_method__process>` is overridden, this will be automatically enabled before :ref:`_ready()<class_Node_private_method__ready>` is called.
 
-\ **注意：**\ 该方法仅影响 :ref:`_process()<class_Node_private_method__process>` 回调，即对 :ref:`_physics_process()<class_Node_private_method__physics_process>` 等其他回调没有影响。如果要禁用节点的所有处理，请将 :ref:`process_mode<class_Node_property_process_mode>` 设置为 :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`\ 。
+\ **Note:** This method only affects the :ref:`_process()<class_Node_private_method__process>` callback, i.e. it has no effect on other callbacks like :ref:`_physics_process()<class_Node_private_method__physics_process>`. If you want to disable all processing for the node, set :ref:`process_mode<class_Node_property_process_mode>` to :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3083,9 +3083,9 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **set_process_input**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Node_method_set_process_input>`
 
-如果设为 ``true``\ ，则会启用输入处理。
+If set to ``true``, enables input processing.
 
-\ **注意：**\ 如果覆盖了 :ref:`_input()<class_Node_private_method__input>`\ ，则会在调用 :ref:`_ready()<class_Node_private_method__ready>` 前自动启用。\ :ref:`Button<class_Button>`\ 、\ :ref:`TextEdit<class_TextEdit>` 等 GUI 控件也会自动启用输入处理。
+\ **Note:** If :ref:`_input()<class_Node_private_method__input>` is overridden, this will be automatically enabled before :ref:`_ready()<class_Node_private_method__ready>` is called. Input processing is also already enabled for GUI controls, such as :ref:`Button<class_Button>` and :ref:`TextEdit<class_TextEdit>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3097,9 +3097,9 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **set_process_internal**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Node_method_set_process_internal>`
 
-如果设置为 ``true``\ ，则启用该节点的内部处理。内部处理独立于正常的 :ref:`_process()<class_Node_private_method__process>` 调用而发生，并且由某些节点在内部使用以保证正常运行，即使节点已暂停或处理因脚本而禁用（\ :ref:`set_process()<class_Node_method_set_process>`\ ）也是如此。
+If set to ``true``, enables internal processing for this node. Internal processing happens in isolation from the normal :ref:`_process()<class_Node_private_method__process>` calls and is used by some nodes internally to guarantee proper functioning even if the node is paused or processing is disabled for scripting (:ref:`set_process()<class_Node_method_set_process>`).
 
-\ **警告：**\ 内置节点依靠内部处理来实现其内部逻辑。禁用它是不安全的，并且可能会导致意外行为。请在你知道自己正在做什么时使用该方法。
+\ **Warning:** Built-in nodes rely on internal processing for their internal logic. Disabling it is unsafe and may lead to unexpected behavior. Use this method if you know what you are doing.
 
 .. rst-class:: classref-item-separator
 
@@ -3111,9 +3111,9 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **set_process_shortcut_input**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Node_method_set_process_shortcut_input>`
 
-如果设置为 ``true``\ ，则启用该节点的快捷键处理。
+If set to ``true``, enables shortcut processing for this node.
 
-\ **注意：**\ 如果 :ref:`_shortcut_input()<class_Node_private_method__shortcut_input>` 被覆盖，则它将在 :ref:`_ready()<class_Node_private_method__ready>` 被调用之前自动启用。
+\ **Note:** If :ref:`_shortcut_input()<class_Node_private_method__shortcut_input>` is overridden, this will be automatically enabled before :ref:`_ready()<class_Node_private_method__ready>` is called.
 
 .. rst-class:: classref-item-separator
 
@@ -3125,9 +3125,9 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **set_process_unhandled_input**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Node_method_set_process_unhandled_input>`
 
-如果设置为 ``true``\ ，则启用未处理的输入处理。它使节点能够接收所有以前没有处理的输入（通常是由 :ref:`Control<class_Control>` 处理的）。
+If set to ``true``, enables unhandled input processing. It enables the node to receive all input that was not previously handled (usually by a :ref:`Control<class_Control>`).
 
-\ **注意：**\ 如果 :ref:`_unhandled_input()<class_Node_private_method__unhandled_input>` 被覆盖，则它将在 :ref:`_ready()<class_Node_private_method__ready>` 被调用之前自动启用。对于 GUI 控件，例如 :ref:`Button<class_Button>` 和 :ref:`TextEdit<class_TextEdit>`\ ，则未处理的输入处理也早已启用。
+\ **Note:** If :ref:`_unhandled_input()<class_Node_private_method__unhandled_input>` is overridden, this will be automatically enabled before :ref:`_ready()<class_Node_private_method__ready>` is called. Unhandled input processing is also already enabled for GUI controls, such as :ref:`Button<class_Button>` and :ref:`TextEdit<class_TextEdit>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3139,9 +3139,9 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **set_process_unhandled_key_input**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Node_method_set_process_unhandled_key_input>`
 
-如果设置为 ``true``\ ，则启用未处理的按键输入处理。
+If set to ``true``, enables unhandled key input processing.
 
-\ **注意：**\ 如果 :ref:`_unhandled_key_input()<class_Node_private_method__unhandled_key_input>` 被覆盖，则它将在 :ref:`_ready()<class_Node_private_method__ready>` 被调用之前自动启用。
+\ **Note:** If :ref:`_unhandled_key_input()<class_Node_private_method__unhandled_key_input>` is overridden, this will be automatically enabled before :ref:`_ready()<class_Node_private_method__ready>` is called.
 
 .. rst-class:: classref-item-separator
 
@@ -3153,7 +3153,7 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **set_scene_instance_load_placeholder**\ (\ load_placeholder\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Node_method_set_scene_instance_load_placeholder>`
 
-如果设置为 ``true``\ ，则当从 :ref:`PackedScene<class_PackedScene>` 打包和实例化时，节点将变为 :ref:`InstancePlaceholder<class_InstancePlaceholder>`\ 。另见 :ref:`get_scene_instance_load_placeholder()<class_Node_method_get_scene_instance_load_placeholder>`\ 。
+If set to ``true``, the node becomes an :ref:`InstancePlaceholder<class_InstancePlaceholder>` when packed and instantiated from a :ref:`PackedScene<class_PackedScene>`. See also :ref:`get_scene_instance_load_placeholder()<class_Node_method_get_scene_instance_load_placeholder>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3165,7 +3165,7 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **set_thread_safe**\ (\ property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Node_method_set_thread_safe>`
 
-类似于 :ref:`call_thread_safe()<class_Node_method_call_thread_safe>`\ ，但用于设置属性。
+Similar to :ref:`call_thread_safe()<class_Node_method_call_thread_safe>`, but for setting properties.
 
 .. rst-class:: classref-item-separator
 
@@ -3177,9 +3177,9 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **set_translation_domain_inherited**\ (\ ) :ref:`🔗<class_Node_method_set_translation_domain_inherited>`
 
-使该节点继承父节点的翻译域。如果该节点无父节点，则会使用主翻译域。
+Makes this node inherit the translation domain from its parent node. If this node has no parent, the main translation domain will be used.
 
-这是所有节点的默认行为。调用 :ref:`Object.set_translation_domain()<class_Object_method_set_translation_domain>` 会禁用该行为。
+This is the default behavior for all nodes. Calling :ref:`Object.set_translation_domain()<class_Object_method_set_translation_domain>` disables this behavior.
 
 .. rst-class:: classref-item-separator
 
@@ -3191,14 +3191,14 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **update_configuration_warnings**\ (\ ) :ref:`🔗<class_Node_method_update_configuration_warnings>`
 
-刷新场景面板中为该节点显示的警告。使用 :ref:`_get_configuration_warnings()<class_Node_private_method__get_configuration_warnings>` 自定义要显示的警告消息。
+Refreshes the warnings displayed for this node in the Scene dock. Use :ref:`_get_configuration_warnings()<class_Node_private_method__get_configuration_warnings>` to customize the warning messages to display.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -8,30 +8,30 @@
 PhysicalBone3D
 ==============
 
-**继承：** :ref:`PhysicsBody3D<class_PhysicsBody3D>` **<** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`PhysicsBody3D<class_PhysicsBody3D>` **<** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-用于让 :ref:`Skeleton3D<class_Skeleton3D>` 中的骨骼对物理作出反应的物理体。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-**PhysicalBone3D** 节点是一个物理体，可用于使 :ref:`Skeleton3D<class_Skeleton3D>` 中的骨骼对物理做出反应。
-
-\ **注意：**\ 为了通过射线投射检测物理骨骼，父级 :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>` 的 :ref:`SkeletonModifier3D.active<class_SkeletonModifier3D_property_active>` 属性必须为 ``true``\ ，并且 :ref:`Skeleton3D<class_Skeleton3D>` 的骨骼必须正确分配给 **PhysicalBone3D**\ ；这意味着 :ref:`get_bone_id()<class_PhysicalBone3D_method_get_bone_id>` 应该返回一个有效的 id（\ ``>= 0``\ ）。
+A physics body used to make bones in a :ref:`Skeleton3D<class_Skeleton3D>` react to physics.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
+
+The **PhysicalBone3D** node is a physics body that can be used to make bones in a :ref:`Skeleton3D<class_Skeleton3D>` react to physics.
+
+\ **Note:** In order to detect physical bones with raycasts, the :ref:`SkeletonModifier3D.active<class_SkeletonModifier3D_property_active>` property of the parent :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>` must be ``true`` and the :ref:`Skeleton3D<class_Skeleton3D>`'s bone must be assigned to **PhysicalBone3D** correctly; it means that :ref:`get_bone_id()<class_PhysicalBone3D_method_get_bone_id>` should return a valid id (``>= 0``).
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
 
 - :doc:`Ragdoll System <../tutorials/physics/ragdoll_system>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -72,8 +72,8 @@ PhysicalBone3D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -98,8 +98,8 @@ PhysicalBone3D
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_PhysicalBone3D_DampMode:
 
@@ -113,7 +113,7 @@ enum **DampMode**: :ref:`🔗<enum_PhysicalBone3D_DampMode>`
 
 :ref:`DampMode<enum_PhysicalBone3D_DampMode>` **DAMP_MODE_COMBINE** = ``0``
 
-在这种模式下，物体的阻尼值将被加到区域中设置的任何值或默认值。
+In this mode, the body's damping value is added to any value set in areas or the default value.
 
 .. _class_PhysicalBone3D_constant_DAMP_MODE_REPLACE:
 
@@ -121,7 +121,7 @@ enum **DampMode**: :ref:`🔗<enum_PhysicalBone3D_DampMode>`
 
 :ref:`DampMode<enum_PhysicalBone3D_DampMode>` **DAMP_MODE_REPLACE** = ``1``
 
-在这种模式下，物体的阻尼值将替换掉区域中设置的任何值或默认值。
+In this mode, the body's damping value replaces any value set in areas or the default value.
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ enum **JointType**: :ref:`🔗<enum_PhysicalBone3D_JointType>`
 
 :ref:`JointType<enum_PhysicalBone3D_JointType>` **JOINT_TYPE_NONE** = ``0``
 
-PhysicsBone3D 未应用任何关节。
+No joint is applied to the PhysicsBone3D.
 
 .. _class_PhysicalBone3D_constant_JOINT_TYPE_PIN:
 
@@ -147,7 +147,7 @@ PhysicsBone3D 未应用任何关节。
 
 :ref:`JointType<enum_PhysicalBone3D_JointType>` **JOINT_TYPE_PIN** = ``1``
 
-PhysicsBone3D 应用了钉固关节。
+A pin joint is applied to the PhysicsBone3D.
 
 .. _class_PhysicalBone3D_constant_JOINT_TYPE_CONE:
 
@@ -155,7 +155,7 @@ PhysicsBone3D 应用了钉固关节。
 
 :ref:`JointType<enum_PhysicalBone3D_JointType>` **JOINT_TYPE_CONE** = ``2``
 
-PhysicsBone3D 应用了锥形关节。
+A cone joint is applied to the PhysicsBone3D.
 
 .. _class_PhysicalBone3D_constant_JOINT_TYPE_HINGE:
 
@@ -163,7 +163,7 @@ PhysicsBone3D 应用了锥形关节。
 
 :ref:`JointType<enum_PhysicalBone3D_JointType>` **JOINT_TYPE_HINGE** = ``3``
 
-PhysicsBone3D 应用了铰链关节。
+A hinge joint is applied to the PhysicsBone3D.
 
 .. _class_PhysicalBone3D_constant_JOINT_TYPE_SLIDER:
 
@@ -171,7 +171,7 @@ PhysicsBone3D 应用了铰链关节。
 
 :ref:`JointType<enum_PhysicalBone3D_JointType>` **JOINT_TYPE_SLIDER** = ``4``
 
-PhysicsBone3D 应用了滑杆关节。
+A slider joint is applied to the PhysicsBone3D.
 
 .. _class_PhysicalBone3D_constant_JOINT_TYPE_6DOF:
 
@@ -179,7 +179,7 @@ PhysicsBone3D 应用了滑杆关节。
 
 :ref:`JointType<enum_PhysicalBone3D_JointType>` **JOINT_TYPE_6DOF** = ``5``
 
-PhysicsBone3D 应用了六自由度关节。
+A 6 degrees of freedom joint is applied to the PhysicsBone3D.
 
 .. rst-class:: classref-section-separator
 
@@ -187,8 +187,8 @@ PhysicsBone3D 应用了六自由度关节。
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_PhysicalBone3D_property_angular_damp:
 
@@ -201,9 +201,9 @@ PhysicsBone3D 应用了六自由度关节。
 - |void| **set_angular_damp**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angular_damp**\ (\ )
 
-阻碍物体的旋转。默认情况下，物体将使用项目设置 :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>`\ ，或物体所在的 :ref:`Area3D<class_Area3D>` 中设置的任何覆盖值。取决于 :ref:`angular_damp_mode<class_PhysicalBone3D_property_angular_damp_mode>`\ ，可以设置 :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>` 以增加或替换物体的阻尼值。
+Damps the body's rotation. By default, the body will use the :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` project setting or any value override set by an :ref:`Area3D<class_Area3D>` the body is in. Depending on :ref:`angular_damp_mode<class_PhysicalBone3D_property_angular_damp_mode>`, you can set :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>` to be added to or to replace the body's damping value.
 
-有关阻尼的更多详细信息，请参阅 :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>`\ 。
+See :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` for more details about damping.
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ PhysicsBone3D 应用了六自由度关节。
 - |void| **set_angular_damp_mode**\ (\ value\: :ref:`DampMode<enum_PhysicalBone3D_DampMode>`\ )
 - :ref:`DampMode<enum_PhysicalBone3D_DampMode>` **get_angular_damp_mode**\ (\ )
 
-定义如何应用 :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>`\ 。
+Defines how :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>` is applied.
 
 .. rst-class:: classref-item-separator
 
@@ -237,7 +237,7 @@ PhysicsBone3D 应用了六自由度关节。
 - |void| **set_angular_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_angular_velocity**\ (\ )
 
-该 PhysicalBone3D 的旋转速度，以每秒\ *弧度*\ 为单位。
+The PhysicalBone3D's rotational velocity in *radians* per second.
 
 .. rst-class:: classref-item-separator
 
@@ -254,7 +254,7 @@ PhysicsBone3D 应用了六自由度关节。
 - |void| **set_body_offset**\ (\ value\: :ref:`Transform3D<class_Transform3D>`\ )
 - :ref:`Transform3D<class_Transform3D>` **get_body_offset**\ (\ )
 
-设置该物体的变换。
+Sets the body's transform.
 
 .. rst-class:: classref-item-separator
 
@@ -271,9 +271,9 @@ PhysicsBone3D 应用了六自由度关节。
 - |void| **set_bounce**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bounce**\ (\ )
 
-身体的反弹力。值范围从 ``0`` （无反弹）到 ``1``\ （完全反弹）。
+The body's bounciness. Values range from ``0`` (no bounce) to ``1`` (full bounciness).
 
-\ **注意：**\ 即使将 :ref:`bounce<class_PhysicalBone3D_property_bounce>` 设置为 ``1.0``\ ，由于线性和角度阻尼，一些能量也会随着时间的推移而损失。要让 **PhysicalBone3D** 随时间推移保留其所有能量，请将 :ref:`bounce<class_PhysicalBone3D_property_bounce>` 设置为 ``1.0``\ 、\ :ref:`linear_damp_mode<class_PhysicalBone3D_property_linear_damp_mode>` 设置为 :ref:`DAMP_MODE_REPLACE<class_PhysicalBone3D_constant_DAMP_MODE_REPLACE>`\ 、\ :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` 设置为 ``0.0``\ 、\ :ref:`angular_damp_mode<class_PhysicalBone3D_property_angular_damp_mode>` 设置为 :ref:`DAMP_MODE_REPLACE<class_PhysicalBone3D_constant_DAMP_MODE_REPLACE>`\ 、并将 :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>` 设置为 ``0.0``\ 。
+\ **Note:** Even with :ref:`bounce<class_PhysicalBone3D_property_bounce>` set to ``1.0``, some energy will be lost over time due to linear and angular damping. To have a **PhysicalBone3D** that preserves all its energy over time, set :ref:`bounce<class_PhysicalBone3D_property_bounce>` to ``1.0``, :ref:`linear_damp_mode<class_PhysicalBone3D_property_linear_damp_mode>` to :ref:`DAMP_MODE_REPLACE<class_PhysicalBone3D_constant_DAMP_MODE_REPLACE>`, :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` to ``0.0``, :ref:`angular_damp_mode<class_PhysicalBone3D_property_angular_damp_mode>` to :ref:`DAMP_MODE_REPLACE<class_PhysicalBone3D_constant_DAMP_MODE_REPLACE>`, and :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>` to ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ PhysicsBone3D 应用了六自由度关节。
 - |void| **set_can_sleep**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_able_to_sleep**\ (\ )
 
-如果为 ``true``\ ，则会在不移动时停用该物体，所以它在被外力唤醒前不会参与模拟。
+If ``true``, the body is deactivated when there is no movement, so it will not take part in the simulation until it is awakened by an external force.
 
 .. rst-class:: classref-item-separator
 
@@ -307,9 +307,9 @@ PhysicsBone3D 应用了六自由度关节。
 - |void| **set_use_custom_integrator**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_custom_integrator**\ (\ )
 
-如果为 ``true``\ ，则该物体的标准力积分（如重力或阻尼）将被禁用。除了碰撞响应之外，如果覆盖了 :ref:`_integrate_forces()<class_PhysicalBone3D_private_method__integrate_forces>` 方法，则物体将仅按照该方法确定的方式移动。
+If ``true``, the standard force integration (like gravity or damping) will be disabled for this body. Other than collision response, the body will only move as determined by the :ref:`_integrate_forces()<class_PhysicalBone3D_private_method__integrate_forces>` method, if that virtual method is overridden.
 
-设置该属性将在内部调用方法 :ref:`PhysicsServer3D.body_set_omit_force_integration()<class_PhysicsServer3D_method_body_set_omit_force_integration>`\ 。
+Setting this property will call the method :ref:`PhysicsServer3D.body_set_omit_force_integration()<class_PhysicsServer3D_method_body_set_omit_force_integration>` internally.
 
 .. rst-class:: classref-item-separator
 
@@ -326,7 +326,7 @@ PhysicsBone3D 应用了六自由度关节。
 - |void| **set_friction**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_friction**\ (\ )
 
-该物体的摩擦，从 ``0``\ （无摩擦）到 ``1``\ （最大摩擦）。
+The body's friction, from ``0`` (frictionless) to ``1`` (max friction).
 
 .. rst-class:: classref-item-separator
 
@@ -343,7 +343,7 @@ PhysicsBone3D 应用了六自由度关节。
 - |void| **set_gravity_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gravity_scale**\ (\ )
 
-与 :ref:`ProjectSettings.physics/3d/default_gravity<class_ProjectSettings_property_physics/3d/default_gravity>` 相乘，得到该物体的重力。例如取值为 ``1.0`` 就是正常重力，\ ``2.0`` 就是双倍重力，\ ``0.5`` 会让应用到这个对象的重力减半。
+This is multiplied by :ref:`ProjectSettings.physics/3d/default_gravity<class_ProjectSettings_property_physics/3d/default_gravity>` to produce this body's gravity. For example, a value of ``1.0`` will apply normal gravity, ``2.0`` will apply double the gravity, and ``0.5`` will apply half the gravity to this body.
 
 .. rst-class:: classref-item-separator
 
@@ -360,7 +360,7 @@ PhysicsBone3D 应用了六自由度关节。
 - |void| **set_joint_offset**\ (\ value\: :ref:`Transform3D<class_Transform3D>`\ )
 - :ref:`Transform3D<class_Transform3D>` **get_joint_offset**\ (\ )
 
-设置该关节的变换。
+Sets the joint's transform.
 
 .. rst-class:: classref-item-separator
 
@@ -377,7 +377,7 @@ PhysicsBone3D 应用了六自由度关节。
 - |void| **set_joint_rotation**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_joint_rotation**\ (\ )
 
-设置该关节的旋转，单位为弧度。
+Sets the joint's rotation in radians.
 
 .. rst-class:: classref-item-separator
 
@@ -394,7 +394,7 @@ PhysicsBone3D 应用了六自由度关节。
 - |void| **set_joint_type**\ (\ value\: :ref:`JointType<enum_PhysicalBone3D_JointType>`\ )
 - :ref:`JointType<enum_PhysicalBone3D_JointType>` **get_joint_type**\ (\ )
 
-设置关节类型。
+Sets the joint type.
 
 .. rst-class:: classref-item-separator
 
@@ -411,9 +411,9 @@ PhysicsBone3D 应用了六自由度关节。
 - |void| **set_linear_damp**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_linear_damp**\ (\ )
 
-阻碍物体的运动。默认情况下，物体将使用 :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>`\ ，或物体所在的 :ref:`Area3D<class_Area3D>` 中设置的任何覆盖值。取决于 :ref:`linear_damp_mode<class_PhysicalBone3D_property_linear_damp_mode>`\ ，可以设置 :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` 以增加或替换物体的阻尼值。
+Damps the body's movement. By default, the body will use :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>` or any value override set by an :ref:`Area3D<class_Area3D>` the body is in. Depending on :ref:`linear_damp_mode<class_PhysicalBone3D_property_linear_damp_mode>`, :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` may be added to or replace the body's damping value.
 
-有关阻尼的更多详细信息，请参阅 :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>`\ 。
+See :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>` for more details about damping.
 
 .. rst-class:: classref-item-separator
 
@@ -430,7 +430,7 @@ PhysicsBone3D 应用了六自由度关节。
 - |void| **set_linear_damp_mode**\ (\ value\: :ref:`DampMode<enum_PhysicalBone3D_DampMode>`\ )
 - :ref:`DampMode<enum_PhysicalBone3D_DampMode>` **get_linear_damp_mode**\ (\ )
 
-定义如何应用 :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>`\ 。
+Defines how :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` is applied.
 
 .. rst-class:: classref-item-separator
 
@@ -447,7 +447,7 @@ PhysicsBone3D 应用了六自由度关节。
 - |void| **set_linear_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_linear_velocity**\ (\ )
 
-物体的线速度，单位为单位每秒。可以偶尔使用，但是\ **不要每一帧都设置它**\ ，因为物理可能在另一个线程中运行，并且以不同的间隔。使用 :ref:`_integrate_forces()<class_PhysicalBone3D_private_method__integrate_forces>` 作为你的进程循环，以精确控制物体状态。
+The body's linear velocity in units per second. Can be used sporadically, but **don't set this every frame**, because physics may run in another thread and runs at a different granularity. Use :ref:`_integrate_forces()<class_PhysicalBone3D_private_method__integrate_forces>` as your process loop for precise control of the body state.
 
 .. rst-class:: classref-item-separator
 
@@ -464,7 +464,7 @@ PhysicsBone3D 应用了六自由度关节。
 - |void| **set_mass**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mass**\ (\ )
 
-实体的质量。
+The body's mass.
 
 .. rst-class:: classref-section-separator
 
@@ -472,8 +472,8 @@ PhysicsBone3D 应用了六自由度关节。
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_PhysicalBone3D_private_method__integrate_forces:
 
@@ -481,7 +481,7 @@ PhysicsBone3D 应用了六自由度关节。
 
 |void| **_integrate_forces**\ (\ state\: :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>`\ ) |virtual| :ref:`🔗<class_PhysicalBone3D_private_method__integrate_forces>`
 
-在物理处理过程中被调用，允许你读取并安全地修改对象的模拟状态。默认情况下，它在标准力积分之前调用，但 :ref:`custom_integrator<class_PhysicalBone3D_property_custom_integrator>` 属性允许你禁用标准力积分并对物体进行完全自定义的力积分。
+Called during physics processing, allowing you to read and safely modify the simulation state for the object. By default, it is called before the standard force integration, but the :ref:`custom_integrator<class_PhysicalBone3D_property_custom_integrator>` property allows you to disable the standard force integration and do fully custom force integration for a body.
 
 .. rst-class:: classref-item-separator
 
@@ -493,11 +493,11 @@ PhysicsBone3D 应用了六自由度关节。
 
 |void| **apply_central_impulse**\ (\ impulse\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicalBone3D_method_apply_central_impulse>`
 
-施加不影响旋转的定向冲量。
+Applies a directional impulse without affecting rotation.
 
-冲量与时间无关！每帧都应用冲量会产生依赖于帧率的力。因此只应该用于模拟一次性冲击（否则请使用“_integrate_forces”函数）。
+An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_integrate_forces" functions otherwise).
 
-等价于在物体的质心处使用 :ref:`apply_impulse()<class_PhysicalBone3D_method_apply_impulse>`\ 。
+This is equivalent to using :ref:`apply_impulse()<class_PhysicalBone3D_method_apply_impulse>` at the body's center of mass.
 
 .. rst-class:: classref-item-separator
 
@@ -509,11 +509,11 @@ PhysicsBone3D 应用了六自由度关节。
 
 |void| **apply_impulse**\ (\ impulse\: :ref:`Vector3<class_Vector3>`, position\: :ref:`Vector3<class_Vector3>` = Vector3(0, 0, 0)\ ) :ref:`🔗<class_PhysicalBone3D_method_apply_impulse>`
 
-施加不影响旋转的定位冲量。
+Applies a positioned impulse to the PhysicsBone3D.
 
-冲量与时间无关！每帧都应用冲量会产生依赖于帧率的力。因此只应该用于模拟一次性冲击（否则请使用“_integrate_forces”函数）。
+An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_integrate_forces" functions otherwise).
 
-等价于在物体的质心处使用 :ref:`apply_impulse()<class_PhysicalBone3D_method_apply_impulse>`\ 。
+\ ``position`` is the offset from the PhysicsBone3D origin in global coordinates.
 
 .. rst-class:: classref-item-separator
 
@@ -525,7 +525,7 @@ PhysicsBone3D 应用了六自由度关节。
 
 :ref:`int<class_int>` **get_bone_id**\ (\ ) |const| :ref:`🔗<class_PhysicalBone3D_method_get_bone_id>`
 
-返回 PhysicsBone3D 的唯一标识符。
+Returns the unique identifier of the PhysicsBone3D.
 
 .. rst-class:: classref-item-separator
 
@@ -537,7 +537,7 @@ PhysicsBone3D 应用了六自由度关节。
 
 :ref:`bool<class_bool>` **get_simulate_physics**\ (\ ) :ref:`🔗<class_PhysicalBone3D_method_get_simulate_physics>`
 
-如果 PhysicsBone3D 允许进行物理模拟，则返回 ``true``\ 。
+Returns ``true`` if the PhysicsBone3D is allowed to simulate physics.
 
 .. rst-class:: classref-item-separator
 
@@ -549,14 +549,14 @@ PhysicsBone3D 应用了六自由度关节。
 
 :ref:`bool<class_bool>` **is_simulating_physics**\ (\ ) :ref:`🔗<class_PhysicalBone3D_method_is_simulating_physics>`
 
-如果 PhysicsBone3D 正在进行物理模拟，则返回 ``true``\ 。
+Returns ``true`` if the PhysicsBone3D is currently simulating physics.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

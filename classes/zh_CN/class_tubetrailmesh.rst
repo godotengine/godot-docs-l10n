@@ -5,32 +5,32 @@
 TubeTrailMesh
 =============
 
-**继承：** :ref:`PrimitiveMesh<class_PrimitiveMesh>` **<** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`PrimitiveMesh<class_PrimitiveMesh>` **<** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-代表直管状的 :ref:`PrimitiveMesh<class_PrimitiveMesh>`\ ，宽度可变。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-**TubeTrailMesh** 代表直管状的网格，宽度可变。管身由若干圆柱形分区构成，每个分区的长度 :ref:`section_length<class_TubeTrailMesh_property_section_length>` 和环数 :ref:`section_rings<class_TubeTrailMesh_property_section_rings>` 都是一致的。会沿着管身的总长度对 :ref:`curve<class_TubeTrailMesh_property_curve>` 采样，这样该曲线就确定了管子半径沿长度的变化方式。
-
-这个基本网格通常用于粒子拖尾。
+Represents a straight tube-shaped :ref:`PrimitiveMesh<class_PrimitiveMesh>` with variable width.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`3D 粒子拖尾 <../tutorials/3d/particles/trails>`
+**TubeTrailMesh** represents a straight tube-shaped mesh with variable width. The tube is composed of a number of cylindrical sections, each with the same :ref:`section_length<class_TubeTrailMesh_property_section_length>` and number of :ref:`section_rings<class_TubeTrailMesh_property_section_rings>`. A :ref:`curve<class_TubeTrailMesh_property_curve>` is sampled along the total length of the tube, meaning that the curve determines the radius of the tube along its length.
 
-- :doc:`粒子系统（3D） <../tutorials/3d/particles/index>`
+This primitive mesh is usually used for particle trails.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`3D Particle trails <../tutorials/3d/particles/trails>`
+
+- :doc:`Particle systems (3D) <../tutorials/3d/particles/index>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -59,8 +59,8 @@ TubeTrailMesh
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_TubeTrailMesh_property_cap_bottom:
 
@@ -73,7 +73,7 @@ TubeTrailMesh
 - |void| **set_cap_bottom**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_cap_bottom**\ (\ )
 
-如果为 ``true`` ，则在管子的底部生成盖子。如果相机永远不可能见到盖子，那么设置为 ``false`` 可以加快生成和渲染的速度。
+If ``true``, generates a cap at the bottom of the tube. This can be set to ``false`` to speed up generation and rendering when the cap is never seen by the camera.
 
 .. rst-class:: classref-item-separator
 
@@ -90,7 +90,7 @@ TubeTrailMesh
 - |void| **set_cap_top**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_cap_top**\ (\ )
 
-如果为 ``true`` ，则在管子的顶部生成盖子。如果相机永远不可能见到盖子，那么设置为 ``false`` 可以加快生成和渲染的速度。
+If ``true``, generates a cap at the top of the tube. This can be set to ``false`` to speed up generation and rendering when the cap is never seen by the camera.
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ TubeTrailMesh
 - |void| **set_curve**\ (\ value\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_curve**\ (\ )
 
-确定管身半径沿长度的变化方式。将基础 :ref:`radius<class_TubeTrailMesh_property_radius>` 与给定距离下该曲线的取值相乘，就得到了某个分区中某个环的半径。小于 ``0`` 的值会让面进行正反翻转。应当为单位 :ref:`Curve<class_Curve>`\ 。
+Determines the radius of the tube along its length. The radius of a particular section ring is obtained by multiplying the baseline :ref:`radius<class_TubeTrailMesh_property_radius>` by the value of this curve at the given distance. For values smaller than ``0``, the faces will be inverted. Should be a unit :ref:`Curve<class_Curve>`.
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ TubeTrailMesh
 - |void| **set_radial_steps**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_radial_steps**\ (\ )
 
-管身的面数。例如，取值 ``5`` 表示管身为五边形。值越高，管身细节越高，代价是牺牲性能。
+The number of sides on the tube. For example, a value of ``5`` means the tube will be pentagonal. Higher values result in a more detailed tube at the cost of performance.
 
 .. rst-class:: classref-item-separator
 
@@ -141,7 +141,7 @@ TubeTrailMesh
 - |void| **set_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_radius**\ (\ )
 
-管身的基础半径。将该半径与给定距离下 :ref:`curve<class_TubeTrailMesh_property_curve>` 的取值相乘，就得到了某个分区中某个环的半径。
+The baseline radius of the tube. The radius of a particular section ring is obtained by multiplying this radius by the value of the :ref:`curve<class_TubeTrailMesh_property_curve>` at the given distance.
 
 .. rst-class:: classref-item-separator
 
@@ -158,7 +158,7 @@ TubeTrailMesh
 - |void| **set_section_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_section_length**\ (\ )
 
-管身分区的长度。
+The length of a section of the tube.
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ TubeTrailMesh
 - |void| **set_section_rings**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_section_rings**\ (\ )
 
-分区中环的数量。每个环都会对 :ref:`curve<class_TubeTrailMesh_property_curve>` 进行采样，从而决定其半径。值越高，管身细节越高，代价是牺牲性能。
+The number of rings in a section. The :ref:`curve<class_TubeTrailMesh_property_curve>` is sampled on each ring to determine its radius. Higher values result in a more detailed tube at the cost of performance.
 
 .. rst-class:: classref-item-separator
 
@@ -192,14 +192,14 @@ TubeTrailMesh
 - |void| **set_sections**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_sections**\ (\ )
 
-管身分区总数。
+The total number of sections on the tube.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

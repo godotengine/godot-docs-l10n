@@ -5,31 +5,31 @@
 TileSetSource
 =============
 
-**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**派生：** :ref:`TileSetAtlasSource<class_TileSetAtlasSource>`, :ref:`TileSetScenesCollectionSource<class_TileSetScenesCollectionSource>`
+**Inherited By:** :ref:`TileSetAtlasSource<class_TileSetAtlasSource>`, :ref:`TileSetScenesCollectionSource<class_TileSetScenesCollectionSource>`
 
-向 :ref:`TileSet<class_TileSet>` 资源暴露一组图块。
+Exposes a set of tiles for a :ref:`TileSet<class_TileSet>` resource.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-向 :ref:`TileSet<class_TileSet>` 资源暴露一组图块。
+Exposes a set of tiles for a :ref:`TileSet<class_TileSet>` resource.
 
-源中的图块具有索引，索引为两个 ID，分别是坐标 ID（类型为 Vector2i）和备选 ID（类型为 int），名称反映了在 :ref:`TileSetAtlasSource<class_TileSetAtlasSource>` 中的使用方法。
+Tiles in a source are indexed with two IDs, coordinates ID (of type Vector2i) and an alternative ID (of type int), named according to their use in the :ref:`TileSetAtlasSource<class_TileSetAtlasSource>` class.
 
-根据 TileSet 源类型的不同，对这些 ID 的值可能有不同的限制，这就是 **TileSetSource** 基类仅暴露了 getter 的原因。
+Depending on the TileSet source type, those IDs might have restrictions on their values, this is why the base **TileSetSource** class only exposes getters for them.
 
-要遍历 TileSetSource 中暴露的所有图块，你可以首先使用 :ref:`get_tiles_count()<class_TileSetSource_method_get_tiles_count>` 和 :ref:`get_tile_id()<class_TileSetSource_method_get_tile_id>` 遍历坐标 ID，然后使用 :ref:`get_alternative_tiles_count()<class_TileSetSource_method_get_alternative_tiles_count>` 和 :ref:`get_alternative_tile_id()<class_TileSetSource_method_get_alternative_tile_id>` 遍历备选 ID。
+You can iterate over all tiles exposed by a TileSetSource by first iterating over coordinates IDs using :ref:`get_tiles_count()<class_TileSetSource_method_get_tiles_count>` and :ref:`get_tile_id()<class_TileSetSource_method_get_tile_id>`, then over alternative IDs using :ref:`get_alternative_tiles_count()<class_TileSetSource_method_get_alternative_tiles_count>` and :ref:`get_alternative_tile_id()<class_TileSetSource_method_get_alternative_tile_id>`.
 
-\ **警告：**\ 同一个 **TileSetSource** 不能同时属于两个 TileSet。对第二个 :ref:`TileSet<class_TileSet>` 调用 :ref:`TileSet.add_source()<class_TileSet_method_add_source>` 会在第一个 TileSet 中移除该源。
+\ **Warning:** **TileSetSource** can only be added to one TileSet at the same time. Calling :ref:`TileSet.add_source()<class_TileSet_method_add_source>` on a second :ref:`TileSet<class_TileSet>` will remove the source from the first one.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -54,8 +54,8 @@ TileSetSource
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_TileSetSource_method_get_alternative_tile_id:
 
@@ -63,7 +63,7 @@ TileSetSource
 
 :ref:`int<class_int>` **get_alternative_tile_id**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSetSource_method_get_alternative_tile_id>`
 
-返回坐标 ID 为 ``atlas_coords`` 的图块的索引为 ``index`` 的备选 ID。
+Returns the alternative ID for the tile with coordinates ID ``atlas_coords`` at index ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -75,11 +75,11 @@ TileSetSource
 
 :ref:`int<class_int>` **get_alternative_tiles_count**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetSource_method_get_alternative_tiles_count>`
 
-返回坐标 ID 为 ``atlas_coords`` 的图块的备选图块数量。
+Returns the number of alternatives tiles for the coordinates ID ``atlas_coords``.
 
-\ :ref:`TileSetAtlasSource<class_TileSetAtlasSource>` 返回的数量至少为 1，因为备选列表中始终存在 ID 为 0 的基础图块。
+For :ref:`TileSetAtlasSource<class_TileSetAtlasSource>`, this always return at least 1, as the base tile with ID 0 is always part of the alternatives list.
 
-如果给定的坐标处没有图块，则返回 -1。
+Returns -1 if there is not tile at the given coords.
 
 .. rst-class:: classref-item-separator
 
@@ -91,7 +91,7 @@ TileSetSource
 
 :ref:`Vector2i<class_Vector2i>` **get_tile_id**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSetSource_method_get_tile_id>`
 
-返回索引为 ``index`` 的图块的图块坐标 ID。
+Returns the tile coordinates ID of the tile with index ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ TileSetSource
 
 :ref:`int<class_int>` **get_tiles_count**\ (\ ) |const| :ref:`🔗<class_TileSetSource_method_get_tiles_count>`
 
-返回该图集源中定义的图块数量（不含备选图块）。
+Returns how many tiles this atlas source defines (not including alternative tiles).
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +115,7 @@ TileSetSource
 
 :ref:`bool<class_bool>` **has_alternative_tile**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, alternative_tile\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSetSource_method_has_alternative_tile>`
 
-返回位于坐标 ``atlas_coords`` 的基础图块是否存在 ID 为 ``alternative_tile`` 的备选图块。
+Returns if the base tile at coordinates ``atlas_coords`` has an alternative with ID ``alternative_tile``.
 
 .. rst-class:: classref-item-separator
 
@@ -127,14 +127,14 @@ TileSetSource
 
 :ref:`bool<class_bool>` **has_tile**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetSource_method_has_tile>`
 
-返回该图集中是否存在坐标 ID 为 ``atlas_coords`` 的图块。
+Returns if this atlas has a tile with coordinates ID ``atlas_coords``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

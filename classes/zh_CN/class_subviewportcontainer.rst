@@ -5,25 +5,25 @@
 SubViewportContainer
 ====================
 
-**继承：** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-用于显示 :ref:`SubViewport<class_SubViewport>` 内容的容器。
+A container used for displaying the contents of a :ref:`SubViewport<class_SubViewport>`.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-显示其 :ref:`SubViewport<class_SubViewport>` 子节点内容的容器。除非启用 :ref:`stretch<class_SubViewportContainer_property_stretch>`\ ，否则会使用 :ref:`SubViewport<class_SubViewport>` 的大小作为最小尺寸。
+A container that displays the contents of underlying :ref:`SubViewport<class_SubViewport>` child nodes. It uses the combined size of the :ref:`SubViewport<class_SubViewport>`\ s as minimum size, unless :ref:`stretch<class_SubViewportContainer_property_stretch>` is enabled.
 
-\ **注意：**\ 更改 **SubViewportContainer** 的 :ref:`Control.scale<class_Control_property_scale>`\ ，将导致其内容出现扭曲。要更改其视觉大小，并且不造成失真，请改为调整节点的边距（如果还不在容器中）。
+\ **Note:** Changing a **SubViewportContainer**'s :ref:`Control.scale<class_Control_property_scale>` will cause its contents to appear distorted. To change its visual size without causing distortion, adjust the node's margins instead (if it's not already in a container).
 
-\ **注意：**\ 该 **SubViewportContainer** 会将鼠标进入和鼠标退出通知转发到子视口。
+\ **Note:** The **SubViewportContainer** forwards mouse-enter and mouse-exit notifications to its sub-viewports.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ SubViewportContainer
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ SubViewportContainer
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_SubViewportContainer_property_mouse_target:
 
@@ -70,11 +70,11 @@ SubViewportContainer
 - |void| **set_mouse_target**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_mouse_target_enabled**\ (\ )
 
-配置 **SubViewportContainer** 或其 :ref:`SubViewport<class_SubViewport>` 子节点中的 :ref:`Control<class_Control>` 节点是否应作为鼠标相关功能的目标，例如在拖放操作中识别放置目标或悬停的 :ref:`Control<class_Control>` 节点的光标形状。
+Configure, if either the **SubViewportContainer** or alternatively the :ref:`Control<class_Control>` nodes of its :ref:`SubViewport<class_SubViewport>` children should be available as targets of mouse-related functionalities, like identifying the drop target in drag-and-drop operations or cursor shape of hovered :ref:`Control<class_Control>` node.
 
-如果为 ``false``\ ，则视其 :ref:`SubViewport<class_SubViewport>` 子节点中的 :ref:`Control<class_Control>` 节点为目标。
+If ``false``, the :ref:`Control<class_Control>` nodes inside its :ref:`SubViewport<class_SubViewport>` children are considered as targets.
 
-如果为 ``true``\ ，则视 **SubViewportContainer** 本身为目标。
+If ``true``, the **SubViewportContainer** itself will be considered as a target.
 
 .. rst-class:: classref-item-separator
 
@@ -91,9 +91,9 @@ SubViewportContainer
 - |void| **set_stretch**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_stretch_enabled**\ (\ )
 
-如果为 ``true``\ ，子视口将自动调整为该控件的大小。
+If ``true``, the sub-viewport will be automatically resized to the control's size.
 
-\ **注意：**\ 如果为 ``true``\ ，则会禁止手动改变其子节点的 :ref:`SubViewport.size<class_SubViewport_property_size>`\ 。
+\ **Note:** If ``true``, this will prohibit changing :ref:`SubViewport.size<class_SubViewport_property_size>` of its children manually.
 
 .. rst-class:: classref-item-separator
 
@@ -110,11 +110,11 @@ SubViewportContainer
 - |void| **set_stretch_shrink**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_stretch_shrink**\ (\ )
 
-将子视口的有效分辨率除以该值，同时保持比例。可以用来加速渲染。
+Divides the sub-viewport's effective resolution by this value while preserving its scale. This can be used to speed up rendering.
 
-例如子视口的大小为 1280×720，当 :ref:`stretch_shrink<class_SubViewportContainer_property_stretch_shrink>` 被设置为 ``2`` 时，将以 640×360 渲染，同时在该容器中占据相同大小。
+For example, a 1280×720 sub-viewport with :ref:`stretch_shrink<class_SubViewportContainer_property_stretch_shrink>` set to ``2`` will be rendered at 640×360 while occupying the same size in the container.
 
-\ **注意：**\ :ref:`stretch<class_SubViewportContainer_property_stretch>` 必须为 ``true``\ ，才能使此属性生效。
+\ **Note:** :ref:`stretch<class_SubViewportContainer_property_stretch>` must be ``true`` for this property to work.
 
 .. rst-class:: classref-section-separator
 
@@ -122,8 +122,8 @@ SubViewportContainer
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_SubViewportContainer_private_method__propagate_input_event:
 
@@ -131,16 +131,16 @@ SubViewportContainer
 
 :ref:`bool<class_bool>` **_propagate_input_event**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) |virtual| |const| :ref:`🔗<class_SubViewportContainer_private_method__propagate_input_event>`
 
-**实验性：** 未来版本中可能会修改或移除该方法。
+**Experimental:** This method may be changed or removed in future versions.
 
-由用户实现的虚方法。如果它返回 ``true``\ ，则 ``event`` 将被传播到 :ref:`SubViewport<class_SubViewport>` 子级。如果返回 ``false``\ ，则传播不会发生。如果未实现该功能，则所有事件都会被传播到子视口。
+Virtual method to be implemented by the user. If it returns ``true``, the ``event`` is propagated to :ref:`SubViewport<class_SubViewport>` children. Propagation doesn't happen if it returns ``false``. If the function is not implemented, all events are propagated to SubViewports.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -329,7 +329,7 @@ Contenido del archivo fuente de la fuente dinámica.
 - |void| **set_disable_embedded_bitmaps**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_disable_embedded_bitmaps**\ (\ )
 
-If set to ``true``, embedded font bitmap loading is disabled (bitmap-only and color fonts ignore this property).
+Si se establece en ``true``, la carga de mapas de bits de fuentes incrustados se desactiva (las fuentes solo de mapa de bits y de color ignoran esta propiedad).
 
 .. rst-class:: classref-item-separator
 

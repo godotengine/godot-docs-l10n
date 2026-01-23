@@ -5,30 +5,30 @@
 NavigationPathQueryResult2D
 ===========================
 
-**實驗性：** This class may be changed or removed in future versions.
+**Experimental:** This class may be changed or removed in future versions.
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-代表 2D 尋路查詢的結果。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-這個類儲存的是向 :ref:`NavigationServer2D<class_NavigationServer2D>` 進行 2D 導覽路徑查詢的結果。
+Represents the result of a 2D pathfinding query.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`使用 NavigationPathQueryObject <../tutorials/navigation/navigation_using_navigationpathqueryobjects>`
+This class stores the result of a 2D navigation path query from the :ref:`NavigationServer2D<class_NavigationServer2D>`.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Using NavigationPathQueryObjects <../tutorials/navigation/navigation_using_navigationpathqueryobjects>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -47,8 +47,8 @@ NavigationPathQueryResult2D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -63,8 +63,8 @@ NavigationPathQueryResult2D
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_NavigationPathQueryResult2D_PathSegmentType:
 
@@ -78,7 +78,7 @@ enum **PathSegmentType**: :ref:`🔗<enum_NavigationPathQueryResult2D_PathSegmen
 
 :ref:`PathSegmentType<enum_NavigationPathQueryResult2D_PathSegmentType>` **PATH_SEGMENT_TYPE_REGION** = ``0``
 
-這一段路徑穿過了某個地區。
+This segment of the path goes through a region.
 
 .. _class_NavigationPathQueryResult2D_constant_PATH_SEGMENT_TYPE_LINK:
 
@@ -86,7 +86,7 @@ enum **PathSegmentType**: :ref:`🔗<enum_NavigationPathQueryResult2D_PathSegmen
 
 :ref:`PathSegmentType<enum_NavigationPathQueryResult2D_PathSegmentType>` **PATH_SEGMENT_TYPE_LINK** = ``1``
 
-這一段路徑穿過了某個連結。
+This segment of the path goes through a link.
 
 .. rst-class:: classref-section-separator
 
@@ -94,8 +94,8 @@ enum **PathSegmentType**: :ref:`🔗<enum_NavigationPathQueryResult2D_PathSegmen
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_NavigationPathQueryResult2D_property_path:
 
@@ -108,7 +108,7 @@ enum **PathSegmentType**: :ref:`🔗<enum_NavigationPathQueryResult2D_PathSegmen
 - |void| **set_path**\ (\ value\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ )
 - :ref:`PackedVector2Array<class_PackedVector2Array>` **get_path**\ (\ )
 
-導覽查詢的路徑陣列結果。所有的路徑陣列位置都使用全域座標。未自訂查詢參數時，與 :ref:`NavigationServer2D.map_get_path()<class_NavigationServer2D_method_map_get_path>` 返回的路徑相同。
+The resulting path array from the navigation query. All path array positions are in global coordinates. Without customized query parameters this is the same path as returned by :ref:`NavigationServer2D.map_get_path()<class_NavigationServer2D_method_map_get_path>`.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
@@ -144,7 +144,7 @@ Returns the length of the path.
 - |void| **set_path_owner_ids**\ (\ value\: :ref:`PackedInt64Array<class_PackedInt64Array>`\ )
 - :ref:`PackedInt64Array<class_PackedInt64Array>` **get_path_owner_ids**\ (\ )
 
-管理路徑上的各個點所經過的地區和連結的 :ref:`Object<class_Object>` 的 ``ObjectID``\ 。
+The ``ObjectID``\ s of the :ref:`Object<class_Object>`\ s which manage the regions and links each point of the path goes through.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt64Array<class_PackedInt64Array>` for more details.
 
@@ -163,7 +163,7 @@ Returns the length of the path.
 - |void| **set_path_rids**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **get_path_rids**\ (\ )
 
-路徑上的各個點所經過的地區和連結的 :ref:`RID<class_RID>`\ 。
+The :ref:`RID<class_RID>`\ s of the regions and links that each point of the path goes through.
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ Returns the length of the path.
 - |void| **set_path_types**\ (\ value\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ )
 - :ref:`PackedInt32Array<class_PackedInt32Array>` **get_path_types**\ (\ )
 
-路徑上的各個點所經過的導覽圖元型別（地區或連結）。
+The type of navigation primitive (region or link) that each point of the path goes through.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
@@ -190,8 +190,8 @@ Returns the length of the path.
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_NavigationPathQueryResult2D_method_reset:
 
@@ -199,14 +199,14 @@ Returns the length of the path.
 
 |void| **reset**\ (\ ) :ref:`🔗<class_NavigationPathQueryResult2D_method_reset>`
 
-將結果物件重設為其初始狀態。這對於在多次查詢中重複使用該物件是很有用的。
+Reset the result object to its initial state. This is useful to reuse the object across multiple queries.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

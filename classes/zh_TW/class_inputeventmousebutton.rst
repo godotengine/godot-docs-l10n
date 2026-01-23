@@ -8,14 +8,14 @@
 InputEventMouseButton
 =====================
 
-**繼承：** :ref:`InputEventMouse<class_InputEventMouse>` **<** :ref:`InputEventWithModifiers<class_InputEventWithModifiers>` **<** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`InputEventMouse<class_InputEventMouse>` **<** :ref:`InputEventWithModifiers<class_InputEventWithModifiers>` **<** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-代表某個滑鼠按鍵被按下或鬆開。
+Represents a mouse button being pressed or released.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 Stores information about mouse click events. See :ref:`Node._input()<class_Node_private_method__input>`.
 
@@ -23,17 +23,17 @@ Stores information about mouse click events. See :ref:`Node._input()<class_Node_
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`使用 InputEvent <../tutorials/inputs/inputevent>`
+- :doc:`Using InputEvent <../tutorials/inputs/inputevent>`
 
-- :doc:`滑鼠和輸入座標 <../tutorials/inputs/mouse_and_input_coordinates>`
+- :doc:`Mouse and input coordinates <../tutorials/inputs/mouse_and_input_coordinates>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ Stores information about mouse click events. See :ref:`Node._input()<class_Node_
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_InputEventMouseButton_property_button_index:
 
@@ -70,7 +70,7 @@ Stores information about mouse click events. See :ref:`Node._input()<class_Node_
 - |void| **set_button_index**\ (\ value\: :ref:`MouseButton<enum_@GlobalScope_MouseButton>`\ )
 - :ref:`MouseButton<enum_@GlobalScope_MouseButton>` **get_button_index**\ (\ )
 
-滑鼠按鍵識別字，\ :ref:`MouseButton<enum_@GlobalScope_MouseButton>` 按鈕或按鈕滾輪常數。
+The mouse button identifier, one of the :ref:`MouseButton<enum_@GlobalScope_MouseButton>` button or button wheel constants.
 
 .. rst-class:: classref-item-separator
 
@@ -87,7 +87,7 @@ Stores information about mouse click events. See :ref:`Node._input()<class_Node_
 - |void| **set_canceled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_canceled**\ (\ )
 
-如果為 ``true``\ ，則滑鼠按鍵事件被取消。
+If ``true``, the mouse button event has been canceled.
 
 .. rst-class:: classref-item-separator
 
@@ -104,7 +104,7 @@ Stores information about mouse click events. See :ref:`Node._input()<class_Node_
 - |void| **set_double_click**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_double_click**\ (\ )
 
-如果為 ``true``\ ，則滑鼠按鍵的狀態是按兩下。
+If ``true``, the mouse button's state is a double-click.
 
 .. rst-class:: classref-item-separator
 
@@ -121,7 +121,7 @@ Stores information about mouse click events. See :ref:`Node._input()<class_Node_
 - |void| **set_factor**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_factor**\ (\ )
 
-事件的數量（或 delta）。當用於高精度滾動事件時，這表示滾動量（垂直或水平）。這只在一些平臺上被支援；報告的靈敏度因平臺不同而不同。如果不支援，可能是\ ``0``\ 。
+The amount (or delta) of the event. When used for high-precision scroll events, this indicates the scroll amount (vertical or horizontal). This is only supported on some platforms; the reported sensitivity varies depending on the platform. May be ``0`` if not supported.
 
 .. rst-class:: classref-item-separator
 
@@ -138,14 +138,14 @@ Stores information about mouse click events. See :ref:`Node._input()<class_Node_
 - |void| **set_pressed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_pressed**\ (\ )
 
-如果為 ``true``\ ，滑鼠按鍵的狀態為按下。如果為 ``false``\ ，鼠標按鈕的狀態被釋放。
+If ``true``, the mouse button's state is pressed. If ``false``, the mouse button's state is released.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

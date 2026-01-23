@@ -8,27 +8,27 @@
 MarginContainer
 ===============
 
-**繼承：** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`EditorDock<class_EditorDock>`
+**Inherited By:** :ref:`EditorDock<class_EditorDock>`
 
-在子控制項周圍保留邊距的容器。
+A container that keeps a margin around its child controls.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-**MarginContainer** 會為子控制項的各條邊加上可調整的邊距。是在所有子項周圍新增邊距，而不是在它們各自周圍新增邊距。要控制 **MarginContainer** 的邊距，請使用下列 ``margin_*`` 主題屬性。
+**MarginContainer** adds an adjustable margin on each side of its child controls. The margins are added around all children, not around each individual one. To control the **MarginContainer**'s margins, use the ``margin_*`` theme properties listed below.
 
-\ **注意：**\ 邊距大小是主題覆蓋項，而不是普通的屬性。如果想要通過程式碼更改，應使用以下範例：
+\ **Note:** The margin sizes are theme overrides, not normal properties. This is an example of how to change them in code:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # 這段程式碼範例要求目前腳本擴充的是 MarginContainer。
+    # This code sample assumes the current script is extending MarginContainer.
     var margin_value = 100
     add_theme_constant_override("margin_top", margin_value)
     add_theme_constant_override("margin_left", margin_value)
@@ -37,7 +37,7 @@ MarginContainer
 
  .. code-tab:: csharp
 
-    // 這段程式碼範例要求目前腳本擴充的是 MarginContainer。
+    // This code sample assumes the current script is extending MarginContainer.
     int marginValue = 100;
     AddThemeConstantOverride("margin_top", marginValue);
     AddThemeConstantOverride("margin_left", marginValue);
@@ -48,15 +48,15 @@ MarginContainer
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`使用容器 <../tutorials/ui/gui_containers>`
+- :doc:`Using Containers <../tutorials/ui/gui_containers>`
 
 .. rst-class:: classref-reftable-group
 
-主題屬性
---------
+Theme Properties
+----------------
 
 .. table::
    :widths: auto
@@ -77,8 +77,8 @@ MarginContainer
 
 .. rst-class:: classref-descriptions-group
 
-主題屬性說明
-------------
+Theme Property Descriptions
+---------------------------
 
 .. _class_MarginContainer_theme_constant_margin_bottom:
 
@@ -124,12 +124,12 @@ Offsets towards the inside direct children of the container by this amount of pi
 
 Offsets towards the inside direct children of the container by this amount of pixels from the top.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

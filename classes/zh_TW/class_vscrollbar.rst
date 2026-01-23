@@ -5,21 +5,21 @@
 VScrollBar
 ==========
 
-**繼承：** :ref:`ScrollBar<class_ScrollBar>` **<** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`ScrollBar<class_ScrollBar>` **<** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-垂直捲動條，從頂部（最小）滾動到底部（最大）。
+A vertical scrollbar that goes from top (min) to bottom (max).
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-垂直捲動條，通常用於為超出控制項可見高度的內容進行導覽。這是基於 :ref:`Range<class_Range>` 的控件，從頂部（最小）滾動到底部（最大）。注意，滾動方向和 :ref:`VSlider<class_VSlider>` 相反。
+A vertical scrollbar, typically used to navigate through content that extends beyond the visible height of a control. It is a :ref:`Range<class_Range>`-based control and goes from top (min) to bottom (max). Note that this direction is the opposite of :ref:`VSlider<class_VSlider>`'s.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -32,8 +32,8 @@ VScrollBar
 
 .. rst-class:: classref-reftable-group
 
-主題屬性
---------
+Theme Properties
+----------------
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ VScrollBar
 
 .. rst-class:: classref-descriptions-group
 
-主題屬性說明
-------------
+Theme Property Descriptions
+---------------------------
 
 .. _class_VScrollBar_theme_constant_padding_left:
 
@@ -77,12 +77,12 @@ Padding between the right of the :ref:`ScrollBar.scroll<class_ScrollBar_theme_st
 
 \ **Note:** To apply vertical padding, modify the top/bottom content margins of :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` instead.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

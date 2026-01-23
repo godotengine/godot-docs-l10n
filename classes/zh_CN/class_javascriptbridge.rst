@@ -5,30 +5,30 @@
 JavaScriptBridge
 ================
 
-**继承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-单例，在 Web 导出中将引擎与浏览器的 JavaScript 上下文连接。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-JavaScriptBridge 单例仅在 Web 导出中实现。它用于访问浏览器的 JavaScript 上下文。这允许与嵌入页面或调用第三方 JavaScript API 进行交互。
-
-\ **注意：**\ 可以在构建时禁用该单例以提高安全性。默认情况下，启用 JavaScriptBridge 单例。官方导出模板也启用了 JavaScriptBridge 单例。有关详细信息，请参阅文档中的\ :doc:`《为 Web 平台编译》 <../engine_details/development/compiling/compiling_for_web>`\ 。
+Singleton that connects the engine with the browser's JavaScript context in Web export.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`JavaScriptBridge 单例 <../tutorials/platform/web/javascript_bridge>`
+The JavaScriptBridge singleton is implemented only in the Web export. It's used to access the browser's JavaScript context. This allows interaction with embedding pages or calling third-party JavaScript APIs.
+
+\ **Note:** This singleton can be disabled at build-time to improve security. By default, the JavaScriptBridge singleton is enabled. Official export templates also have the JavaScriptBridge singleton enabled. See :doc:`Compiling for the Web <../engine_details/development/compiling/compiling_for_web>` in the documentation for more information.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`The JavaScriptBridge singleton <../tutorials/platform/web/javascript_bridge>`
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -61,8 +61,8 @@ JavaScriptBridge 单例仅在 Web 导出中实现。它用于访问浏览器的 
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_JavaScriptBridge_signal_pwa_update_available:
 
@@ -70,7 +70,7 @@ JavaScriptBridge 单例仅在 Web 导出中实现。它用于访问浏览器的 
 
 **pwa_update_available**\ (\ ) :ref:`🔗<class_JavaScriptBridge_signal_pwa_update_available>`
 
-在检测到该渐进式网络应用程序的更新，但因为存在活动的较早版本而等待激活时触发。要强制立即执行更新，请参阅 :ref:`pwa_update()<class_JavaScriptBridge_method_pwa_update>`\ 。
+Emitted when an update for this progressive web app has been detected but is waiting to be activated because a previous version is active. See :ref:`pwa_update()<class_JavaScriptBridge_method_pwa_update>` to force the update to take place immediately.
 
 .. rst-class:: classref-section-separator
 
@@ -78,8 +78,8 @@ JavaScriptBridge 单例仅在 Web 导出中实现。它用于访问浏览器的 
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_JavaScriptBridge_method_create_callback:
 
@@ -87,9 +87,9 @@ JavaScriptBridge 单例仅在 Web 导出中实现。它用于访问浏览器的 
 
 :ref:`JavaScriptObject<class_JavaScriptObject>` **create_callback**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_JavaScriptBridge_method_create_callback>`
 
-创建一个对 :ref:`Callable<class_Callable>` 的引用，JavaScript 可以用它作为回调。回调前必须保持引用，否则无法调用。用法见 :ref:`JavaScriptObject<class_JavaScriptObject>`\ 。
+Creates a reference to a :ref:`Callable<class_Callable>` that can be used as a callback by JavaScript. The reference must be kept until the callback happens, or it won't be called at all. See :ref:`JavaScriptObject<class_JavaScriptObject>` for usage.
 
-\ **注意：**\ 回调函数必须只能接受单一 :ref:`Array<class_Array>` 参数，是转换成数组后的 JavaScript `参数对象 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments>`__\ 。
+\ **Note:** The callback function must take exactly one :ref:`Array<class_Array>` argument, which is going to be the JavaScript `arguments object <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments>`__ converted to an array.
 
 .. rst-class:: classref-item-separator
 
@@ -101,7 +101,7 @@ JavaScriptBridge 单例仅在 Web 导出中实现。它用于访问浏览器的 
 
 :ref:`Variant<class_Variant>` **create_object**\ (\ object\: :ref:`String<class_String>`, ...\ ) |vararg| :ref:`🔗<class_JavaScriptBridge_method_create_object>`
 
-使用 ``new`` 构造函数创建一个新的 JavaScript 对象。\ ``object`` 必须是 JavaScript ``window`` 的有效属性。有关用法，请参阅 :ref:`JavaScriptObject<class_JavaScriptObject>`\ 。
+Creates a new JavaScript object using the ``new`` constructor. The ``object`` must a valid property of the JavaScript ``window``. See :ref:`JavaScriptObject<class_JavaScriptObject>` for usage.
 
 .. rst-class:: classref-item-separator
 
@@ -113,13 +113,13 @@ JavaScriptBridge 单例仅在 Web 导出中实现。它用于访问浏览器的 
 
 |void| **download_buffer**\ (\ buffer\: :ref:`PackedByteArray<class_PackedByteArray>`, name\: :ref:`String<class_String>`, mime\: :ref:`String<class_String>` = "application/octet-stream"\ ) :ref:`🔗<class_JavaScriptBridge_method_download_buffer>`
 
-提示用户下载一个包含指定 ``buffer`` 的文件。该文件将具有给定的 ``name`` 和 ``mime`` 类型。
+Prompts the user to download a file containing the specified ``buffer``. The file will have the given ``name`` and ``mime`` type.
 
-\ **注意：**\ 浏览器可能会覆盖根据文件 ``name`` 的扩展名提供的 `MIME 类型 <https://en.wikipedia.org/wiki/Media_type>`__\ 。
+\ **Note:** The browser may override the `MIME type <https://en.wikipedia.org/wiki/Media_type>`__ provided based on the file ``name``'s extension.
 
-\ **注意：**\ 如果 :ref:`download_buffer()<class_JavaScriptBridge_method_download_buffer>` 不是从用户交互（例如按钮点击）中调用的，浏览器可能会阻止下载。
+\ **Note:** Browsers might block the download if :ref:`download_buffer()<class_JavaScriptBridge_method_download_buffer>` is not being called from a user interaction (e.g. button click).
 
-\ **注意：**\ 如果快速连续发出多个下载请求，浏览器可能会要求用户同意或阻止下载。
+\ **Note:** Browsers might ask the user for permission or block the download if multiple download requests are made in a quick succession.
 
 .. rst-class:: classref-item-separator
 
@@ -131,9 +131,9 @@ JavaScriptBridge 单例仅在 Web 导出中实现。它用于访问浏览器的 
 
 :ref:`Variant<class_Variant>` **eval**\ (\ code\: :ref:`String<class_String>`, use_global_execution_context\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_JavaScriptBridge_method_eval>`
 
-在浏览器窗口中将字符串 ``code`` 作为 JavaScript 代码执行。这是对实际的全局 JavaScript 函数 ``eval()`` 的调用。
+Execute the string ``code`` as JavaScript code within the browser window. This is a call to the actual global JavaScript function ``eval()``.
 
-如果 ``use_global_execution_context`` 为 ``true``\ ，则代码将在全局执行上下文中被求值。否则，它将在引擎运行时环境中的函数的执行上下文中进行求值。
+If ``use_global_execution_context`` is ``true``, the code will be evaluated in the global execution context. Otherwise, it is evaluated in the execution context of a function within the engine's runtime environment.
 
 .. rst-class:: classref-item-separator
 
@@ -145,9 +145,9 @@ JavaScriptBridge 单例仅在 Web 导出中实现。它用于访问浏览器的 
 
 |void| **force_fs_sync**\ (\ ) :ref:`🔗<class_JavaScriptBridge_method_force_fs_sync>`
 
-强制同步持久化文件系统（当启用时）。
+Force synchronization of the persistent file system (when enabled).
 
-\ **注意：**\ 这仅对不能使用 :ref:`FileAccess<class_FileAccess>` 写入文件的模块或扩展有用。
+\ **Note:** This is only useful for modules or extensions that can't use :ref:`FileAccess<class_FileAccess>` to write files.
 
 .. rst-class:: classref-item-separator
 
@@ -159,7 +159,7 @@ JavaScriptBridge 单例仅在 Web 导出中实现。它用于访问浏览器的 
 
 :ref:`JavaScriptObject<class_JavaScriptObject>` **get_interface**\ (\ interface\: :ref:`String<class_String>`\ ) :ref:`🔗<class_JavaScriptBridge_method_get_interface>`
 
-返回一个可以被脚本使用的 JavaScript 对象的接口。\ ``interface`` 必须是 JavaScript ``window`` 的有效属性。回调必须接受单个 :ref:`Array<class_Array>` 参数，它将包含 JavaScript ``arguments``\ 。有关用法，请参阅 :ref:`JavaScriptObject<class_JavaScriptObject>`\ 。
+Returns an interface to a JavaScript object that can be used by scripts. The ``interface`` must be a valid property of the JavaScript ``window``. The callback must accept a single :ref:`Array<class_Array>` argument, which will contain the JavaScript ``arguments``. See :ref:`JavaScriptObject<class_JavaScriptObject>` for usage.
 
 .. rst-class:: classref-item-separator
 
@@ -171,7 +171,7 @@ JavaScriptBridge 单例仅在 Web 导出中实现。它用于访问浏览器的 
 
 :ref:`bool<class_bool>` **is_js_buffer**\ (\ javascript_object\: :ref:`JavaScriptObject<class_JavaScriptObject>`\ ) :ref:`🔗<class_JavaScriptBridge_method_is_js_buffer>`
 
-如果给定的 ``javascript_object`` 为 `[code]ArrayBuffer[/code] <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer>`__\ 、\ `[code]DataView[/code] <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView>`__ 或某种\ `类型化数组对象 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray>`__\ 类型，则返回 ``true``\ 。
+Returns ``true`` if the given ``javascript_object`` is of type `[code]ArrayBuffer[/code] <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer>`__, `[code]DataView[/code] <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView>`__, or one of the many `typed array objects <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +183,7 @@ JavaScriptBridge 单例仅在 Web 导出中实现。它用于访问浏览器的 
 
 :ref:`PackedByteArray<class_PackedByteArray>` **js_buffer_to_packed_byte_array**\ (\ javascript_buffer\: :ref:`JavaScriptObject<class_JavaScriptObject>`\ ) :ref:`🔗<class_JavaScriptBridge_method_js_buffer_to_packed_byte_array>`
 
-以 :ref:`PackedByteArray<class_PackedByteArray>` 的形式返回 ``javascript_buffer`` 中内容的副本。另见 :ref:`is_js_buffer()<class_JavaScriptBridge_method_is_js_buffer>`\ 。
+Returns a copy of ``javascript_buffer``'s contents as a :ref:`PackedByteArray<class_PackedByteArray>`. See also :ref:`is_js_buffer()<class_JavaScriptBridge_method_is_js_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -195,9 +195,9 @@ JavaScriptBridge 单例仅在 Web 导出中实现。它用于访问浏览器的 
 
 :ref:`bool<class_bool>` **pwa_needs_update**\ (\ ) |const| :ref:`🔗<class_JavaScriptBridge_method_pwa_needs_update>`
 
-如果该渐进式网络应用程序有新版本等待激活，则返回 ``true``\ 。
+Returns ``true`` if a new version of the progressive web app is waiting to be activated.
 
-\ **注意：**\ 只在导出为渐进式网络应用程序（Progressive Web App）时相关。
+\ **Note:** Only relevant when exported as a Progressive Web App.
 
 .. rst-class:: classref-item-separator
 
@@ -209,18 +209,18 @@ JavaScriptBridge 单例仅在 Web 导出中实现。它用于访问浏览器的 
 
 :ref:`Error<enum_@GlobalScope_Error>` **pwa_update**\ (\ ) :ref:`🔗<class_JavaScriptBridge_method_pwa_update>`
 
-执行该渐进式网络应用程序的在线更新。强制安装新版本并重新载入该页面。
+Performs the live update of the progressive web app. Forcing the new version to be installed and the page to be reloaded.
 
-\ **注意：**\ 你的应用程序将\ **在所有浏览器标签页中重新载入**\ 。
+\ **Note:** Your application will be **reloaded in all browser tabs**.
 
-\ **注意：**\ 只在导出为渐进式网络应用程序（Progressive Web App）且 :ref:`pwa_needs_update()<class_JavaScriptBridge_method_pwa_needs_update>` 返回 ``true`` 时相关。
+\ **Note:** Only relevant when exported as a Progressive Web App and :ref:`pwa_needs_update()<class_JavaScriptBridge_method_pwa_needs_update>` returns ``true``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

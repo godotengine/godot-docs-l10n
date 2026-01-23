@@ -5,28 +5,28 @@
 ShaderInclude
 =============
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-著色器程式碼片段，能夠在 :ref:`Shader<class_Shader>` 中使用 ``#include`` 引入。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-著色器標頭檔，保存時使用 ``.gdshaderinc`` 副檔名。這個類能夠用於定義自訂著色器程式碼片段，在 :ref:`Shader<class_Shader>` 中可以使用前置處理器指令 ``#include`` 加上檔路徑引入（例如 ``#include "res://shader_lib.gdshaderinc"``\ ）。程式碼片段本身不必是有效的著色器。
+A snippet of shader code to be included in a :ref:`Shader<class_Shader>` with ``#include``.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`著色器前置處理器 <../tutorials/shaders/shader_reference/shader_preprocessor>`
+A shader include file, saved with the ``.gdshaderinc`` extension. This class allows you to define a custom shader snippet that can be included in a :ref:`Shader<class_Shader>` by using the preprocessor directive ``#include``, followed by the file path (e.g. ``#include "res://shader_lib.gdshaderinc"``). The snippet doesn't have to be a valid shader on its own.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Shader preprocessor <../tutorials/shaders/shader_reference/shader_preprocessor>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -41,8 +41,8 @@ ShaderInclude
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_ShaderInclude_property_code:
 
@@ -55,14 +55,14 @@ ShaderInclude
 - |void| **set_code**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_code**\ (\ )
 
-返回著色器標頭檔的程式碼。返回的文字是使用者所編寫的內容，不是內部使用的完整生成的程式碼。
+Returns the code of the shader include file. The returned text is what the user has written, not the full generated code used internally.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

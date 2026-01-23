@@ -5,16 +5,16 @@
 PCKPacker
 =========
 
-**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-创建可以加载到正在运行的项目中的包。
+Creates packages that can be loaded into a running project.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-**PCKPacker** 可以创建打包文件，项目运行时可以使用 :ref:`ProjectSettings.load_resource_pack()<class_ProjectSettings_method_load_resource_pack>` 来加载打包文件。
+The **PCKPacker** is used to create packages that can be loaded into a running project using :ref:`ProjectSettings.load_resource_pack()<class_ProjectSettings_method_load_resource_pack>`.
 
 
 .. tabs::
@@ -35,14 +35,14 @@ PCKPacker
 
 
 
-上面的例子中，\ **PCKPacker** 创建了打包文件 ``test.pck``\ ，但后将名为 ``text.txt`` 的文件添加到了包的根目录。
+The above **PCKPacker** creates package ``test.pck``, then adds a file named ``text.txt`` at the root of the package.
 
-\ **注意：**\ PCK 是 Godot 自有的打包文件格式。要创建任何程序都能够读取的 ZIP 压缩包，请改用 :ref:`ZIPPacker<class_ZIPPacker>`\ 。
+\ **Note:** PCK is Godot's own pack file format. To create ZIP archives that can be read by any program, use :ref:`ZIPPacker<class_ZIPPacker>` instead.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -63,8 +63,8 @@ PCKPacker
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_PCKPacker_method_add_file:
 
@@ -72,7 +72,7 @@ PCKPacker
 
 :ref:`Error<enum_@GlobalScope_Error>` **add_file**\ (\ target_path\: :ref:`String<class_String>`, source_path\: :ref:`String<class_String>`, encrypt\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PCKPacker_method_add_file>`
 
-将 ``source_path`` 文件添加到当前 PCK 包的内部路径 ``target_path`` 处。\ ``target_path`` 不必写 ``res://`` 前缀，内部会将其去除。文件内容会立即写入到 PCK 中。
+Adds the ``source_path`` file to the current PCK package at the ``target_path`` internal path. The ``res://`` prefix for ``target_path`` is optional and stripped internally. File content is immediately written to the PCK.
 
 .. rst-class:: classref-item-separator
 
@@ -84,7 +84,7 @@ PCKPacker
 
 :ref:`Error<enum_@GlobalScope_Error>` **add_file_removal**\ (\ target_path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_PCKPacker_method_add_file_removal>`
 
-注册移除 PCK 内部路径 ``target_path`` 处的文件。主要用于补丁。如果位于该路径的文件已从之前的 PCK 加载，则会被移除。\ ``target_path`` 不必写 ``res://`` 前缀，内部会将其去除。
+Registers a file removal of the ``target_path`` internal path to the PCK. This is mainly used for patches. If the file at this path has been loaded from a previous PCK, it will be removed. The ``res://`` prefix for ``target_path`` is optional and stripped internally.
 
 .. rst-class:: classref-item-separator
 
@@ -96,9 +96,9 @@ PCKPacker
 
 :ref:`Error<enum_@GlobalScope_Error>` **flush**\ (\ verbose\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PCKPacker_method_flush>`
 
-写入文件目录并关闭 PCK。如果 ``verbose`` 为 ``true``\ ，则会将文件列表输出在控制台，方便调试。
+Writes the file directory and closes the PCK. If ``verbose`` is ``true``, a list of files added will be printed to the console for easier debugging.
 
-\ **注意：**\ **PCKPacker** 被释放时会自动刷新，释放发生在离开作用域或被赋值为 ``null`` 时。在 C# 中，使用完后必须弃置该引用，可以使用 ``using`` 语句或直接调用 ``Dispose`` 方法。
+\ **Note:** **PCKPacker** will automatically flush when it's freed, which happens when it goes out of scope or when it gets assigned with ``null``. In C# the reference must be disposed after use, either with the ``using`` statement or by calling the ``Dispose`` method directly.
 
 .. rst-class:: classref-item-separator
 
@@ -110,14 +110,14 @@ PCKPacker
 
 :ref:`Error<enum_@GlobalScope_Error>` **pck_start**\ (\ pck_path\: :ref:`String<class_String>`, alignment\: :ref:`int<class_int>` = 32, key\: :ref:`String<class_String>` = "0000000000000000000000000000000000000000000000000000000000000000", encrypt_directory\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PCKPacker_method_pck_start>`
 
-在文件路径 ``pck_path`` 处新建 PCK 文件。不会自动添加 ``.pck`` 文件扩展名，因此 ``pck_path`` 中应包含该扩展名（即使扩展名不是必需的）。
+Creates a new PCK file at the file path ``pck_path``. The ``.pck`` file extension isn't added automatically, so it should be part of ``pck_path`` (even though it's not required).
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

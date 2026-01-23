@@ -5,32 +5,32 @@
 ResourceImporterBMFont
 ======================
 
-**继承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-导入 BMFont（\ ``.fnt``\ ）格式的位图字体。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-BMFont 格式是由 `BMFont <https://www.angelcode.com/products/bmfont/>`__ 程序创建的格式。也存在许多与 BMFont 兼容的程序，例如 `BMGlyph <https://www.bmglyph.com/>`__\ 。
-
-与 :ref:`ResourceImporterImageFont<class_ResourceImporterImageFont>` 相比，\ **ResourceImporterBMFont** 能够支持不同字形宽高的位图字体。
-
-另见 :ref:`ResourceImporterDynamicFont<class_ResourceImporterDynamicFont>`\ 。
+Imports a bitmap font in the BMFont (``.fnt``) format.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- `位图字体——使用字体 <../tutorials/ui/gui_using_fonts.html#bitmap-fonts>`__
+The BMFont format is a format created by the `BMFont <https://www.angelcode.com/products/bmfont/>`__ program. Many BMFont-compatible programs also exist, like `BMGlyph <https://www.bmglyph.com/>`__.
+
+Compared to :ref:`ResourceImporterImageFont<class_ResourceImporterImageFont>`, **ResourceImporterBMFont** supports bitmap fonts with varying glyph widths/heights.
+
+See also :ref:`ResourceImporterDynamicFont<class_ResourceImporterDynamicFont>`.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- `Bitmap fonts - Using fonts <../tutorials/ui/gui_using_fonts.html#bitmap-fonts>`__
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ BMFont 格式是由 `BMFont <https://www.angelcode.com/products/bmfont/>`__ 程�
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_ResourceImporterBMFont_property_compress:
 
@@ -58,7 +58,7 @@ BMFont 格式是由 `BMFont <https://www.angelcode.com/products/bmfont/>`__ 程�
 
 :ref:`bool<class_bool>` **compress** = ``true`` :ref:`🔗<class_ResourceImporterBMFont_property_compress>`
 
-如果为 ``true``\ ，则会对得到的字体使用无损压缩。
+If ``true``, uses lossless compression for the resulting font.
 
 .. rst-class:: classref-item-separator
 
@@ -70,7 +70,7 @@ BMFont 格式是由 `BMFont <https://www.angelcode.com/products/bmfont/>`__ 程�
 
 :ref:`Array<class_Array>` **fallbacks** = ``[]`` :ref:`🔗<class_ResourceImporterBMFont_property_fallbacks>`
 
-回退字体列表，在这个位图字体中未找到某个字形时使用。优先尝试靠前的字体。
+List of font fallbacks to use if a glyph isn't found in this bitmap font. Fonts at the beginning of the array are attempted first.
 
 .. rst-class:: classref-item-separator
 
@@ -82,14 +82,14 @@ BMFont 格式是由 `BMFont <https://www.angelcode.com/products/bmfont/>`__ 程�
 
 :ref:`int<class_int>` **scaling_mode** = ``2`` :ref:`🔗<class_ResourceImporterBMFont_property_scaling_mode>`
 
-字体缩放模式。
+Font scaling mode.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

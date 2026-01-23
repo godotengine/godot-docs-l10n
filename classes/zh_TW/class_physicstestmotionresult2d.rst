@@ -5,21 +5,21 @@
 PhysicsTestMotionResult2D
 =========================
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-描述 :ref:`PhysicsServer2D.body_test_motion()<class_PhysicsServer2D_method_body_test_motion>` 的運動和碰撞結果。
+Describes the motion and collision result from :ref:`PhysicsServer2D.body_test_motion()<class_PhysicsServer2D_method_body_test_motion>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-描述 :ref:`PhysicsServer2D.body_test_motion()<class_PhysicsServer2D_method_body_test_motion>` 的運動和碰撞結果。
+Describes the motion and collision result from :ref:`PhysicsServer2D.body_test_motion()<class_PhysicsServer2D_method_body_test_motion>`.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -58,8 +58,8 @@ PhysicsTestMotionResult2D
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_PhysicsTestMotionResult2D_method_get_collider:
 
@@ -67,7 +67,7 @@ PhysicsTestMotionResult2D
 
 :ref:`Object<class_Object>` **get_collider**\ (\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult2D_method_get_collider>`
 
-如果發生了碰撞，則返回相撞物體所附加的 :ref:`Object<class_Object>`\ 。
+Returns the colliding body's attached :ref:`Object<class_Object>`, if a collision occurred.
 
 .. rst-class:: classref-item-separator
 
@@ -79,7 +79,7 @@ PhysicsTestMotionResult2D
 
 :ref:`int<class_int>` **get_collider_id**\ (\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult2D_method_get_collider_id>`
 
-如果發生了碰撞，則返回相撞物體所附加 :ref:`Object<class_Object>` 的唯一實例 ID。見 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`\ 。
+Returns the unique instance ID of the colliding body's attached :ref:`Object<class_Object>`, if a collision occurred. See :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`.
 
 .. rst-class:: classref-item-separator
 
@@ -91,7 +91,7 @@ PhysicsTestMotionResult2D
 
 :ref:`RID<class_RID>` **get_collider_rid**\ (\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult2D_method_get_collider_rid>`
 
-如果發生了碰撞，則返回相撞物體在 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 中使用的 :ref:`RID<class_RID>`\ 。
+Returns the colliding body's :ref:`RID<class_RID>` used by the :ref:`PhysicsServer2D<class_PhysicsServer2D>`, if a collision occurred.
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ PhysicsTestMotionResult2D
 
 :ref:`int<class_int>` **get_collider_shape**\ (\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult2D_method_get_collider_shape>`
 
-如果發生了碰撞，則返回相撞物體形狀的索引。見 :ref:`CollisionObject2D<class_CollisionObject2D>`\ 。
+Returns the colliding body's shape index, if a collision occurred. See :ref:`CollisionObject2D<class_CollisionObject2D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +115,7 @@ PhysicsTestMotionResult2D
 
 :ref:`Vector2<class_Vector2>` **get_collider_velocity**\ (\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult2D_method_get_collider_velocity>`
 
-如果發生了碰撞，則返回相撞物體的速度。
+Returns the colliding body's velocity, if a collision occurred.
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +127,7 @@ PhysicsTestMotionResult2D
 
 :ref:`float<class_float>` **get_collision_depth**\ (\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult2D_method_get_collision_depth>`
 
-如果發生了碰撞，則返回沿碰撞法線的重疊長度。
+Returns the length of overlap along the collision normal, if a collision occurred.
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ PhysicsTestMotionResult2D
 
 :ref:`int<class_int>` **get_collision_local_shape**\ (\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult2D_method_get_collision_local_shape>`
 
-如果發生了碰撞，則返回移動物件的碰撞形狀。
+Returns the moving object's colliding shape, if a collision occurred.
 
 .. rst-class:: classref-item-separator
 
@@ -151,7 +151,7 @@ PhysicsTestMotionResult2D
 
 :ref:`Vector2<class_Vector2>` **get_collision_normal**\ (\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult2D_method_get_collision_normal>`
 
-如果發生了碰撞，則返回碰撞物體形狀在碰撞點處的法線。
+Returns the colliding body's shape's normal at the point of collision, if a collision occurred.
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ PhysicsTestMotionResult2D
 
 :ref:`Vector2<class_Vector2>` **get_collision_point**\ (\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult2D_method_get_collision_point>`
 
-如果發生了碰撞，則返回使用全域座標表示的碰撞點。
+Returns the point of collision in global coordinates, if a collision occurred.
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ PhysicsTestMotionResult2D
 
 :ref:`float<class_float>` **get_collision_safe_fraction**\ (\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult2D_method_get_collision_safe_fraction>`
 
-返回可以運動但不發生碰撞的最大比例，在 ``0`` 和 ``1`` 之間。
+Returns the maximum fraction of the motion that can occur without a collision, between ``0`` and ``1``.
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ PhysicsTestMotionResult2D
 
 :ref:`float<class_float>` **get_collision_unsafe_fraction**\ (\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult2D_method_get_collision_unsafe_fraction>`
 
-如果發生了碰撞，則返回碰撞運動所需的最小摩擦力，在 ``0`` 和 ``1`` 之間。
+Returns the minimum fraction of the motion needed to collide, if a collision occurred, between ``0`` and ``1``.
 
 .. rst-class:: classref-item-separator
 
@@ -199,7 +199,7 @@ PhysicsTestMotionResult2D
 
 :ref:`Vector2<class_Vector2>` **get_remainder**\ (\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult2D_method_get_remainder>`
 
-返回移動對象的剩餘移動向量。
+Returns the moving object's remaining movement vector.
 
 .. rst-class:: classref-item-separator
 
@@ -211,14 +211,14 @@ PhysicsTestMotionResult2D
 
 :ref:`Vector2<class_Vector2>` **get_travel**\ (\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult2D_method_get_travel>`
 
-返回移動物件的在碰撞前的運動。
+Returns the moving object's travel before collision.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

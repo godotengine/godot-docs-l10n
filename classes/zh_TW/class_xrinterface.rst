@@ -5,32 +5,32 @@
 XRInterface
 ===========
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`MobileVRInterface<class_MobileVRInterface>`, :ref:`OpenXRInterface<class_OpenXRInterface>`, :ref:`WebXRInterface<class_WebXRInterface>`, :ref:`XRInterfaceExtension<class_XRInterfaceExtension>`
+**Inherited By:** :ref:`MobileVRInterface<class_MobileVRInterface>`, :ref:`OpenXRInterface<class_OpenXRInterface>`, :ref:`WebXRInterface<class_WebXRInterface>`, :ref:`XRInterfaceExtension<class_XRInterfaceExtension>`
 
-XR 介面實作的基底類別。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-需要實作該類以使 Godot 可以使用 AR 或 VR 平臺，並且這些應作為 C++ 模組或 GDExtension 模組實作。部分介面公開給 GDScript，因此可以偵測、啟用和配置 AR 或 VR 平臺。
-
-介面應該以這樣一種方式編寫，只要簡單地啟用它們就會提供一個工作設定。可以通過 :ref:`XRServer<class_XRServer>` 查詢可用的介面。
+Base class for an XR interface implementation.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`XR 文件索引 <../tutorials/xr/index>`
+This class needs to be implemented to make an AR or VR platform available to Godot and these should be implemented as C++ modules or GDExtension modules. Part of the interface is exposed to GDScript so you can detect, enable and configure an AR or VR platform.
+
+Interfaces should be written in such a way that simply enabling them will give us a working setup. You can query the available interfaces through :ref:`XRServer<class_XRServer>`.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`XR documentation index <../tutorials/xr/index>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -47,8 +47,8 @@ XR 介面實作的基底類別。
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -105,8 +105,8 @@ XR 介面實作的基底類別。
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_XRInterface_signal_play_area_changed:
 
@@ -114,7 +114,7 @@ XR 介面實作的基底類別。
 
 **play_area_changed**\ (\ mode\: :ref:`int<class_int>`\ ) :ref:`🔗<class_XRInterface_signal_play_area_changed>`
 
-當遊玩區域改變時發出。這可能是玩家重設邊界、進入新的遊玩區域、更改遊玩區域模式、重設其頭戴式裝置方向，或者世界比例改變的結果。
+Emitted when the play area is changed. This can be a result of the player resetting the boundary or entering a new play area, the player changing the play area mode, the world scale changing or the player resetting their headset orientation.
 
 .. rst-class:: classref-section-separator
 
@@ -122,8 +122,8 @@ XR 介面實作的基底類別。
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_XRInterface_Capabilities:
 
@@ -137,7 +137,7 @@ enum **Capabilities**: :ref:`🔗<enum_XRInterface_Capabilities>`
 
 :ref:`Capabilities<enum_XRInterface_Capabilities>` **XR_NONE** = ``0``
 
-沒有 XR 功能。
+No XR capabilities.
 
 .. _class_XRInterface_constant_XR_MONO:
 
@@ -145,7 +145,7 @@ enum **Capabilities**: :ref:`🔗<enum_XRInterface_Capabilities>`
 
 :ref:`Capabilities<enum_XRInterface_Capabilities>` **XR_MONO** = ``1``
 
-此介面可以與正常的算繪輸出一起工作（非基於 HMD 的 AR）。
+This interface can work with normal rendering output (non-HMD based AR).
 
 .. _class_XRInterface_constant_XR_STEREO:
 
@@ -153,7 +153,7 @@ enum **Capabilities**: :ref:`🔗<enum_XRInterface_Capabilities>`
 
 :ref:`Capabilities<enum_XRInterface_Capabilities>` **XR_STEREO** = ``2``
 
-該介面支援立體算繪。
+This interface supports stereoscopic rendering.
 
 .. _class_XRInterface_constant_XR_QUAD:
 
@@ -161,7 +161,7 @@ enum **Capabilities**: :ref:`🔗<enum_XRInterface_Capabilities>`
 
 :ref:`Capabilities<enum_XRInterface_Capabilities>` **XR_QUAD** = ``4``
 
-該介面支援四邊形算繪（Godot 尚不支援）。
+This interface supports quad rendering (not yet supported by Godot).
 
 .. _class_XRInterface_constant_XR_VR:
 
@@ -169,7 +169,7 @@ enum **Capabilities**: :ref:`🔗<enum_XRInterface_Capabilities>`
 
 :ref:`Capabilities<enum_XRInterface_Capabilities>` **XR_VR** = ``8``
 
-該介面支援 VR。
+This interface supports VR.
 
 .. _class_XRInterface_constant_XR_AR:
 
@@ -177,7 +177,7 @@ enum **Capabilities**: :ref:`🔗<enum_XRInterface_Capabilities>`
 
 :ref:`Capabilities<enum_XRInterface_Capabilities>` **XR_AR** = ``16``
 
-該介面支援 AR（影片背景和真實世界追蹤）。
+This interface supports AR (video background and real world tracking).
 
 .. _class_XRInterface_constant_XR_EXTERNAL:
 
@@ -185,7 +185,7 @@ enum **Capabilities**: :ref:`🔗<enum_XRInterface_Capabilities>`
 
 :ref:`Capabilities<enum_XRInterface_Capabilities>` **XR_EXTERNAL** = ``32``
 
-該介面輸出至外部裝置。如果使用的是主視口，則螢幕上的輸出是未經修改的左眼或右眼緩衝區（如果視口大小未更改至與 :ref:`get_render_target_size()<class_XRInterface_method_get_render_target_size>` 相同的縱橫比，則會進行拉伸）。使用單獨的視口節點能夠將主視口讓出來做別的事情。
+This interface outputs to an external device. If the main viewport is used, the on screen output is an unmodified buffer of either the left or right eye (stretched if the viewport size is not changed to the same aspect ratio of :ref:`get_render_target_size()<class_XRInterface_method_get_render_target_size>`). Using a separate viewport node frees up the main viewport for other purposes.
 
 .. rst-class:: classref-item-separator
 
@@ -203,7 +203,7 @@ enum **TrackingStatus**: :ref:`🔗<enum_XRInterface_TrackingStatus>`
 
 :ref:`TrackingStatus<enum_XRInterface_TrackingStatus>` **XR_NORMAL_TRACKING** = ``0``
 
-追蹤行為符合預期。
+Tracking is behaving as expected.
 
 .. _class_XRInterface_constant_XR_EXCESSIVE_MOTION:
 
@@ -211,7 +211,7 @@ enum **TrackingStatus**: :ref:`🔗<enum_XRInterface_TrackingStatus>`
 
 :ref:`TrackingStatus<enum_XRInterface_TrackingStatus>` **XR_EXCESSIVE_MOTION** = ``1``
 
-過度運動會阻礙追蹤（玩家的移動速度大於追蹤的速度）。
+Tracking is hindered by excessive motion (the player is moving faster than tracking can keep up).
 
 .. _class_XRInterface_constant_XR_INSUFFICIENT_FEATURES:
 
@@ -219,7 +219,7 @@ enum **TrackingStatus**: :ref:`🔗<enum_XRInterface_TrackingStatus>`
 
 :ref:`TrackingStatus<enum_XRInterface_TrackingStatus>` **XR_INSUFFICIENT_FEATURES** = ``2``
 
-追蹤受到功能不足的阻礙，太暗（對於基於相機的追蹤），玩家被阻礙等。
+Tracking is hindered by insufficient features, it's too dark (for camera-based tracking), player is blocked, etc.
 
 .. _class_XRInterface_constant_XR_UNKNOWN_TRACKING:
 
@@ -227,7 +227,7 @@ enum **TrackingStatus**: :ref:`🔗<enum_XRInterface_TrackingStatus>`
 
 :ref:`TrackingStatus<enum_XRInterface_TrackingStatus>` **XR_UNKNOWN_TRACKING** = ``3``
 
-我們不知道追蹤的狀態，或者這個介面未提供回饋。
+We don't know the status of the tracking or this interface does not provide feedback.
 
 .. _class_XRInterface_constant_XR_NOT_TRACKING:
 
@@ -235,7 +235,7 @@ enum **TrackingStatus**: :ref:`🔗<enum_XRInterface_TrackingStatus>`
 
 :ref:`TrackingStatus<enum_XRInterface_TrackingStatus>` **XR_NOT_TRACKING** = ``4``
 
-追蹤功能失效（相機未插電或被遮擋、燈塔關閉，等等）。
+Tracking is not functional (camera not plugged in or obscured, lighthouses turned off, etc.).
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +253,7 @@ enum **PlayAreaMode**: :ref:`🔗<enum_XRInterface_PlayAreaMode>`
 
 :ref:`PlayAreaMode<enum_XRInterface_PlayAreaMode>` **XR_PLAY_AREA_UNKNOWN** = ``0``
 
-遊玩區域模式未設定或不可用。
+Play area mode not set or not available.
 
 .. _class_XRInterface_constant_XR_PLAY_AREA_3DOF:
 
@@ -261,7 +261,7 @@ enum **PlayAreaMode**: :ref:`🔗<enum_XRInterface_PlayAreaMode>`
 
 :ref:`PlayAreaMode<enum_XRInterface_PlayAreaMode>` **XR_PLAY_AREA_3DOF** = ``1``
 
-遊玩區域僅支援方向追蹤，不支援位置追蹤，區域以玩家為中心。
+Play area only supports orientation tracking, no positional tracking, area will center around player.
 
 .. _class_XRInterface_constant_XR_PLAY_AREA_SITTING:
 
@@ -269,7 +269,7 @@ enum **PlayAreaMode**: :ref:`🔗<enum_XRInterface_PlayAreaMode>`
 
 :ref:`PlayAreaMode<enum_XRInterface_PlayAreaMode>` **XR_PLAY_AREA_SITTING** = ``2``
 
-玩家處於坐姿，提供有限的位置追蹤，玩家周圍有固定的防護。
+Player is in seated position, limited positional tracking, fixed guardian around player.
 
 .. _class_XRInterface_constant_XR_PLAY_AREA_ROOMSCALE:
 
@@ -277,7 +277,7 @@ enum **PlayAreaMode**: :ref:`🔗<enum_XRInterface_PlayAreaMode>`
 
 :ref:`PlayAreaMode<enum_XRInterface_PlayAreaMode>` **XR_PLAY_AREA_ROOMSCALE** = ``3``
 
-玩家可以自由移動，提供完整的位置追蹤。
+Player is free to move around, full positional tracking.
 
 .. _class_XRInterface_constant_XR_PLAY_AREA_STAGE:
 
@@ -311,7 +311,7 @@ enum **EnvironmentBlendMode**: :ref:`🔗<enum_XRInterface_EnvironmentBlendMode>
 
 :ref:`EnvironmentBlendMode<enum_XRInterface_EnvironmentBlendMode>` **XR_ENV_BLEND_MODE_OPAQUE** = ``0``
 
-不透明混合模式。通常用於 VR 裝置。
+Opaque blend mode. This is typically used for VR devices.
 
 .. _class_XRInterface_constant_XR_ENV_BLEND_MODE_ADDITIVE:
 
@@ -319,7 +319,7 @@ enum **EnvironmentBlendMode**: :ref:`🔗<enum_XRInterface_EnvironmentBlendMode>
 
 :ref:`EnvironmentBlendMode<enum_XRInterface_EnvironmentBlendMode>` **XR_ENV_BLEND_MODE_ADDITIVE** = ``1``
 
-加法混合模式。通常用於帶有穿透功能的 AR 或 VR 裝置。
+Additive blend mode. This is typically used for AR devices or VR devices with passthrough.
 
 .. _class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND:
 
@@ -327,7 +327,7 @@ enum **EnvironmentBlendMode**: :ref:`🔗<enum_XRInterface_EnvironmentBlendMode>
 
 :ref:`EnvironmentBlendMode<enum_XRInterface_EnvironmentBlendMode>` **XR_ENV_BLEND_MODE_ALPHA_BLEND** = ``2``
 
-Alpha 混合模式。通常用於帶有穿透功能的 AR 或 VR 裝置。Alpha 通道控制穿透的可見程度。Alpha 為 0.0 表示穿透可見、該圖元處於加法模式。Alpha 為 1.0 表示穿透不可見，該圖元處於不透明模式。
+Alpha blend mode. This is typically used for AR or VR devices with passthrough capabilities. The alpha channel controls how much of the passthrough is visible. Alpha of 0.0 means the passthrough is visible and this pixel works in ADDITIVE mode. Alpha of 1.0 means that the passthrough is not visible and this pixel works in OPAQUE mode.
 
 .. rst-class:: classref-item-separator
 
@@ -369,8 +369,8 @@ The texture format is the same as expected by the Vulkan ``VK_EXT_fragment_densi
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_XRInterface_property_ar_is_anchor_detection_enabled:
 
@@ -383,7 +383,7 @@ The texture format is the same as expected by the Vulkan ``VK_EXT_fragment_densi
 - |void| **set_anchor_detection_is_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_anchor_detection_is_enabled**\ (\ )
 
-在 AR 介面上，如果啟用錨點偵測，則為 ``true``\ 。
+On an AR interface, ``true`` if anchor detection is enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -400,7 +400,7 @@ The texture format is the same as expected by the Vulkan ``VK_EXT_fragment_densi
 - :ref:`bool<class_bool>` **set_environment_blend_mode**\ (\ mode\: :ref:`EnvironmentBlendMode<enum_XRInterface_EnvironmentBlendMode>`\ )
 - :ref:`EnvironmentBlendMode<enum_XRInterface_EnvironmentBlendMode>` **get_environment_blend_mode**\ (\ )
 
-指定 XR 應如何融入環境。這特定於某些 AR 和直通裝置，其中相機影像由 XR 合成器混合。
+Specify how XR should blend in the environment. This is specific to certain AR and passthrough devices where camera images are blended in by the XR compositor.
 
 .. rst-class:: classref-item-separator
 
@@ -417,7 +417,7 @@ The texture format is the same as expected by the Vulkan ``VK_EXT_fragment_densi
 - |void| **set_primary**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_primary**\ (\ )
 
-``true`` 如果這是個主介面。
+``true`` if this is the primary interface.
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +434,7 @@ The texture format is the same as expected by the Vulkan ``VK_EXT_fragment_densi
 - :ref:`bool<class_bool>` **set_play_area_mode**\ (\ mode\: :ref:`PlayAreaMode<enum_XRInterface_PlayAreaMode>`\ )
 - :ref:`PlayAreaMode<enum_XRInterface_PlayAreaMode>` **get_play_area_mode**\ (\ )
 
-該介面的遊玩區域模式。
+The play area mode for this interface.
 
 .. rst-class:: classref-section-separator
 
@@ -442,8 +442,8 @@ The texture format is the same as expected by the Vulkan ``VK_EXT_fragment_densi
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_XRInterface_method_get_camera_feed_id:
 
@@ -451,7 +451,7 @@ The texture format is the same as expected by the Vulkan ``VK_EXT_fragment_densi
 
 :ref:`int<class_int>` **get_camera_feed_id**\ (\ ) :ref:`🔗<class_XRInterface_method_get_camera_feed_id>`
 
-如果這是一個需要顯示相機畫面作為背景的 AR 介面，此方法返回該介面的 :ref:`CameraServer<class_CameraServer>` 中的畫面 ID。
+If this is an AR interface that requires displaying a camera feed as the background, this method returns the feed ID in the :ref:`CameraServer<class_CameraServer>` for this interface.
 
 .. rst-class:: classref-item-separator
 
@@ -463,7 +463,7 @@ The texture format is the same as expected by the Vulkan ``VK_EXT_fragment_densi
 
 :ref:`int<class_int>` **get_capabilities**\ (\ ) |const| :ref:`🔗<class_XRInterface_method_get_capabilities>`
 
-返回 :ref:`Capabilities<enum_XRInterface_Capabilities>` 標籤的組合，提供關於這個介面功能的資訊。
+Returns a combination of :ref:`Capabilities<enum_XRInterface_Capabilities>` flags providing information about the capabilities of this interface.
 
 .. rst-class:: classref-item-separator
 
@@ -499,7 +499,7 @@ Returns an array of vectors that represent the physical play area mapped to the 
 
 :ref:`Projection<class_Projection>` **get_projection_for_view**\ (\ view\: :ref:`int<class_int>`, aspect\: :ref:`float<class_float>`, near\: :ref:`float<class_float>`, far\: :ref:`float<class_float>`\ ) :ref:`🔗<class_XRInterface_method_get_projection_for_view>`
 
-返回視圖/眼睛的投影矩陣。
+Returns the projection matrix for a view/eye.
 
 .. rst-class:: classref-item-separator
 
@@ -511,7 +511,7 @@ Returns an array of vectors that represent the physical play area mapped to the 
 
 :ref:`Vector2<class_Vector2>` **get_render_target_size**\ (\ ) :ref:`🔗<class_XRInterface_method_get_render_target_size>`
 
-返回在VR平臺套用鏡頭失真等內容之前算繪的中間結果的解析度。
+Returns the resolution at which we should render our intermediate results before things like lens distortion are applied by the VR platform.
 
 .. rst-class:: classref-item-separator
 
@@ -523,7 +523,7 @@ Returns an array of vectors that represent the physical play area mapped to the 
 
 :ref:`Array<class_Array>` **get_supported_environment_blend_modes**\ (\ ) :ref:`🔗<class_XRInterface_method_get_supported_environment_blend_modes>`
 
-返回支援的環境混合模式陣列，見 :ref:`EnvironmentBlendMode<enum_XRInterface_EnvironmentBlendMode>`\ 。
+Returns the an array of supported environment blend modes, see :ref:`EnvironmentBlendMode<enum_XRInterface_EnvironmentBlendMode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -535,9 +535,9 @@ Returns an array of vectors that represent the physical play area mapped to the 
 
 :ref:`Dictionary<class_Dictionary>` **get_system_info**\ (\ ) :ref:`🔗<class_XRInterface_method_get_system_info>`
 
-返回包含額外系統資訊的 :ref:`Dictionary<class_Dictionary>`\ 。介面應該返回 ``XRRuntimeName`` 和 ``XRRuntimeVersion``\ ，表示所使用的 XR 運作時資訊。還可以額外提供關於特定介面的條目。
+Returns a :ref:`Dictionary<class_Dictionary>` with extra system info. Interfaces are expected to return ``XRRuntimeName`` and ``XRRuntimeVersion`` providing info about the used XR runtime. Additional entries may be provided specific to an interface.
 
-\ **注意：**\ 這個資訊可能只在成功呼叫 :ref:`initialize()<class_XRInterface_method_initialize>` 後可用。
+\ **Note:**\ This information may only be available after :ref:`initialize()<class_XRInterface_method_initialize>` was successfully called.
 
 .. rst-class:: classref-item-separator
 
@@ -549,7 +549,7 @@ Returns an array of vectors that represent the physical play area mapped to the 
 
 :ref:`TrackingStatus<enum_XRInterface_TrackingStatus>` **get_tracking_status**\ (\ ) |const| :ref:`🔗<class_XRInterface_method_get_tracking_status>`
 
-如果支援，返回我們的追蹤狀態。這將使你能夠向使用者回饋，是否存在位置追蹤的問題。
+If supported, returns the status of our tracking. This will allow you to provide feedback to the user whether there are issues with positional tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -561,11 +561,11 @@ Returns an array of vectors that represent the physical play area mapped to the 
 
 :ref:`Transform3D<class_Transform3D>` **get_transform_for_view**\ (\ view\: :ref:`int<class_int>`, cam_transform\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_XRInterface_method_get_transform_for_view>`
 
-返回視圖/眼睛的變換。
+Returns the transform for a view/eye.
 
-\ ``view`` 是視圖/眼睛的索引。
+\ ``view`` is the view/eye index.
 
-\ ``cam_transform`` 是將裝置座標對應至場景座標的變換，通常是目前 XROrigin3D 的 :ref:`Node3D.global_transform<class_Node3D_property_global_transform>`\ 。
+\ ``cam_transform`` is the transform that maps device coordinates to scene coordinates, typically the :ref:`Node3D.global_transform<class_Node3D_property_global_transform>` of the current XROrigin3D.
 
 .. rst-class:: classref-item-separator
 
@@ -577,7 +577,7 @@ Returns an array of vectors that represent the physical play area mapped to the 
 
 :ref:`int<class_int>` **get_view_count**\ (\ ) :ref:`🔗<class_XRInterface_method_get_view_count>`
 
-返回該裝置算繪所需的視圖數量。1 代表單目平面視圖，2 代表雙目立體視圖。
+Returns the number of views that need to be rendered for this device. 1 for Monoscopic, 2 for Stereoscopic.
 
 .. rst-class:: classref-item-separator
 
@@ -589,15 +589,15 @@ Returns an array of vectors that represent the physical play area mapped to the 
 
 :ref:`bool<class_bool>` **initialize**\ (\ ) :ref:`🔗<class_XRInterface_method_initialize>`
 
-呼叫它來初始化這個介面。被初始化的第一個介面被識別為主介面，它將用於算繪輸出。
+Call this to initialize this interface. The first interface that is initialized is identified as the primary interface and it will be used for rendering output.
 
-初始化想要使用的介面後，需要啟用視口的 AR/VR 模式，並且算繪應該開始。
+After initializing the interface you want to use you then need to enable the AR/VR mode of a viewport and rendering should commence.
 
-\ **注意：**\ 對於任何使用 Godot 主輸出的裝置，例如移動 VR，必須在主視口上啟用 XR 模式。
+\ **Note:** You must enable the XR mode on the main viewport for any device that uses the main output of Godot, such as for mobile VR.
 
-如果為處理自己輸出的平臺（例如 OpenVR）執行該操作，則 Godot 將只顯示一隻眼睛而不會在螢幕上失真。或者，可以將單獨的視口節點新增到場景並在該視口上啟用 AR/VR。它將被用於輸出到 HMD，讓你可以在主視窗中自由地做任何你喜歡的事情，例如使用單獨的相機作為旁觀者相機或算繪完全不同的東西。
+If you do this for a platform that handles its own output (such as OpenVR) Godot will show just one eye without distortion on screen. Alternatively, you can add a separate viewport node to your scene and enable AR/VR on that viewport. It will be used to output to the HMD, leaving you free to do anything you like in the main window, such as using a separate camera as a spectator camera or rendering something completely different.
 
-雖然目前未使用，但可以啟動其他介面。如果想追蹤來自其他平臺的控制器，可能會希望這樣做。但是，此時只有一個介面可以算繪到 HMD。
+While currently not used, you can activate additional interfaces. You may wish to do this if you want to track controllers from other platforms. However, at this point in time only one interface can render to an HMD.
 
 .. rst-class:: classref-item-separator
 
@@ -609,7 +609,7 @@ Returns an array of vectors that represent the physical play area mapped to the 
 
 :ref:`bool<class_bool>` **is_initialized**\ (\ ) |const| :ref:`🔗<class_XRInterface_method_is_initialized>`
 
-如果這個介面已初始化，則返回 ``true``\ 。
+Returns ``true`` if this interface has been initialized.
 
 .. rst-class:: classref-item-separator
 
@@ -621,7 +621,7 @@ Returns an array of vectors that represent the physical play area mapped to the 
 
 :ref:`bool<class_bool>` **is_passthrough_enabled**\ (\ ) :ref:`🔗<class_XRInterface_method_is_passthrough_enabled>`
 
-**已棄用：** Check if :ref:`environment_blend_mode<class_XRInterface_property_environment_blend_mode>` is :ref:`XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>`, instead.
+**Deprecated:** Check if :ref:`environment_blend_mode<class_XRInterface_property_environment_blend_mode>` is :ref:`XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>`, instead.
 
 Returns ``true`` if passthrough is enabled.
 
@@ -635,7 +635,7 @@ Returns ``true`` if passthrough is enabled.
 
 :ref:`bool<class_bool>` **is_passthrough_supported**\ (\ ) :ref:`🔗<class_XRInterface_method_is_passthrough_supported>`
 
-**已棄用：** Check that :ref:`XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>` is supported using :ref:`get_supported_environment_blend_modes()<class_XRInterface_method_get_supported_environment_blend_modes>`, instead.
+**Deprecated:** Check that :ref:`XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>` is supported using :ref:`get_supported_environment_blend_modes()<class_XRInterface_method_get_supported_environment_blend_modes>`, instead.
 
 Returns ``true`` if this interface supports passthrough.
 
@@ -693,11 +693,11 @@ Sets the active play area mode, will return ``false`` if the mode can't be used 
 
 :ref:`bool<class_bool>` **start_passthrough**\ (\ ) :ref:`🔗<class_XRInterface_method_start_passthrough>`
 
-**已棄用：** Set the :ref:`environment_blend_mode<class_XRInterface_property_environment_blend_mode>` to :ref:`XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>`, instead.
+**Deprecated:** Set the :ref:`environment_blend_mode<class_XRInterface_property_environment_blend_mode>` to :ref:`XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>`, instead.
 
-啟動穿透，如果無法啟動則會返回 ``false``\ 。
+Starts passthrough, will return ``false`` if passthrough couldn't be started.
 
-\ **注意：**\ XR 所使用的視口必須有透明背景，否則穿透可能無法正確算繪。
+\ **Note:** The viewport used for XR must have a transparent background, otherwise passthrough may not properly render.
 
 .. rst-class:: classref-item-separator
 
@@ -709,9 +709,9 @@ Sets the active play area mode, will return ``false`` if the mode can't be used 
 
 |void| **stop_passthrough**\ (\ ) :ref:`🔗<class_XRInterface_method_stop_passthrough>`
 
-**已棄用：** Set the :ref:`environment_blend_mode<class_XRInterface_property_environment_blend_mode>` to :ref:`XR_ENV_BLEND_MODE_OPAQUE<class_XRInterface_constant_XR_ENV_BLEND_MODE_OPAQUE>`, instead.
+**Deprecated:** Set the :ref:`environment_blend_mode<class_XRInterface_property_environment_blend_mode>` to :ref:`XR_ENV_BLEND_MODE_OPAQUE<class_XRInterface_constant_XR_ENV_BLEND_MODE_OPAQUE>`, instead.
 
-停止穿透。
+Stops passthrough.
 
 .. rst-class:: classref-item-separator
 
@@ -723,7 +723,7 @@ Sets the active play area mode, will return ``false`` if the mode can't be used 
 
 :ref:`bool<class_bool>` **supports_play_area_mode**\ (\ mode\: :ref:`PlayAreaMode<enum_XRInterface_PlayAreaMode>`\ ) :ref:`🔗<class_XRInterface_method_supports_play_area_mode>`
 
-請呼叫這個方法來查詢此介面是否支援給定的遊玩區域模式。
+Call this to find out if a given play area mode is supported by this interface.
 
 .. rst-class:: classref-item-separator
 
@@ -759,14 +759,14 @@ Triggers a haptic pulse on a device associated with this interface.
 
 |void| **uninitialize**\ (\ ) :ref:`🔗<class_XRInterface_method_uninitialize>`
 
-關閉介面。
+Turns the interface off.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

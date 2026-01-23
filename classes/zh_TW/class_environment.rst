@@ -5,14 +5,14 @@
 Environment
 ===========
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-定義算繪選項的資源，用於環境節點（例如 :ref:`WorldEnvironment<class_WorldEnvironment>`\ ）。
+Resource for environment nodes (like :ref:`WorldEnvironment<class_WorldEnvironment>`) that define multiple rendering options.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 Resource for environment nodes (like :ref:`WorldEnvironment<class_WorldEnvironment>`) that define multiple environment operations (such as background :ref:`Sky<class_Sky>` or :ref:`Color<class_Color>`, ambient light, fog, depth-of-field...). These parameters affect the final render of the scene. The order of these operations is:
 
@@ -28,21 +28,21 @@ Resource for environment nodes (like :ref:`WorldEnvironment<class_WorldEnvironme
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`環境和後期處理 <../tutorials/3d/environment_and_post_processing>`
+- :doc:`Environment and post-processing <../tutorials/3d/environment_and_post_processing>`
 
-- :doc:`高動態範圍光照 <../tutorials/3d/high_dynamic_range>`
+- :doc:`High dynamic range lighting <../tutorials/3d/high_dynamic_range>`
 
-- `3D 材質測試演示 <https://godotengine.org/asset-library/asset/2742>`__
+- `3D Material Testers Demo <https://godotengine.org/asset-library/asset/2742>`__
 
-- `第三人稱射擊（TPS）示範 <https://godotengine.org/asset-library/asset/2710>`__
+- `Third Person Shooter (TPS) Demo <https://godotengine.org/asset-library/asset/2710>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -251,8 +251,8 @@ Resource for environment nodes (like :ref:`WorldEnvironment<class_WorldEnvironme
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -269,8 +269,8 @@ Resource for environment nodes (like :ref:`WorldEnvironment<class_WorldEnvironme
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_Environment_BGMode:
 
@@ -284,7 +284,7 @@ enum **BGMode**: :ref:`🔗<enum_Environment_BGMode>`
 
 :ref:`BGMode<enum_Environment_BGMode>` **BG_CLEAR_COLOR** = ``0``
 
-使用 :ref:`ProjectSettings.rendering/environment/defaults/default_clear_color<class_ProjectSettings_property_rendering/environment/defaults/default_clear_color>` 中定義的清除顏色來清除背景。
+Clears the background using the clear color defined in :ref:`ProjectSettings.rendering/environment/defaults/default_clear_color<class_ProjectSettings_property_rendering/environment/defaults/default_clear_color>`.
 
 .. _class_Environment_constant_BG_COLOR:
 
@@ -292,7 +292,7 @@ enum **BGMode**: :ref:`🔗<enum_Environment_BGMode>`
 
 :ref:`BGMode<enum_Environment_BGMode>` **BG_COLOR** = ``1``
 
-使用自訂的清除顏色來清除背景。
+Clears the background using a custom clear color.
 
 .. _class_Environment_constant_BG_SKY:
 
@@ -300,7 +300,7 @@ enum **BGMode**: :ref:`🔗<enum_Environment_BGMode>`
 
 :ref:`BGMode<enum_Environment_BGMode>` **BG_SKY** = ``2``
 
-在背景中顯示使用者自訂的天空。
+Displays a user-defined sky in the background.
 
 .. _class_Environment_constant_BG_CANVAS:
 
@@ -308,7 +308,7 @@ enum **BGMode**: :ref:`🔗<enum_Environment_BGMode>`
 
 :ref:`BGMode<enum_Environment_BGMode>` **BG_CANVAS** = ``3``
 
-在背景中顯示 :ref:`CanvasLayer<class_CanvasLayer>`\ 。
+Displays a :ref:`CanvasLayer<class_CanvasLayer>` in the background.
 
 .. _class_Environment_constant_BG_KEEP:
 
@@ -316,7 +316,7 @@ enum **BGMode**: :ref:`🔗<enum_Environment_BGMode>`
 
 :ref:`BGMode<enum_Environment_BGMode>` **BG_KEEP** = ``4``
 
-在螢幕上保留在背景中繪製的每個圖元。這是最快的背景模式，但它只能安全地用在完全室內的場景（沒有可見的天空或天空反射）。如果在背景可見的場景中啟用，則移動相機時，將看到“鬼影蹤跡”偽影。
+Keeps on screen every pixel drawn in the background. This is the fastest background mode, but it can only be safely used in fully-interior scenes (no visible sky or sky reflections). If enabled in a scene where the background is visible, "ghost trail" artifacts will be visible when moving the camera.
 
 .. _class_Environment_constant_BG_CAMERA_FEED:
 
@@ -324,7 +324,7 @@ enum **BGMode**: :ref:`🔗<enum_Environment_BGMode>`
 
 :ref:`BGMode<enum_Environment_BGMode>` **BG_CAMERA_FEED** = ``5``
 
-在背景中顯示相機源。
+Displays a camera feed in the background.
 
 .. _class_Environment_constant_BG_MAX:
 
@@ -332,7 +332,7 @@ enum **BGMode**: :ref:`🔗<enum_Environment_BGMode>`
 
 :ref:`BGMode<enum_Environment_BGMode>` **BG_MAX** = ``6``
 
-代表 :ref:`BGMode<enum_Environment_BGMode>` 列舉的大小。
+Represents the size of the :ref:`BGMode<enum_Environment_BGMode>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -350,7 +350,7 @@ enum **AmbientSource**: :ref:`🔗<enum_Environment_AmbientSource>`
 
 :ref:`AmbientSource<enum_Environment_AmbientSource>` **AMBIENT_SOURCE_BG** = ``0``
 
-從指定為背景的任何來源收集環境光。
+Gather ambient light from whichever source is specified as the background.
 
 .. _class_Environment_constant_AMBIENT_SOURCE_DISABLED:
 
@@ -358,7 +358,7 @@ enum **AmbientSource**: :ref:`🔗<enum_Environment_AmbientSource>`
 
 :ref:`AmbientSource<enum_Environment_AmbientSource>` **AMBIENT_SOURCE_DISABLED** = ``1``
 
-禁用環境光。這比 :ref:`AMBIENT_SOURCE_SKY<class_Environment_constant_AMBIENT_SOURCE_SKY>` 提供了輕微的性能提升。
+Disable ambient light. This provides a slight performance boost over :ref:`AMBIENT_SOURCE_SKY<class_Environment_constant_AMBIENT_SOURCE_SKY>`.
 
 .. _class_Environment_constant_AMBIENT_SOURCE_COLOR:
 
@@ -366,7 +366,7 @@ enum **AmbientSource**: :ref:`🔗<enum_Environment_AmbientSource>`
 
 :ref:`AmbientSource<enum_Environment_AmbientSource>` **AMBIENT_SOURCE_COLOR** = ``2``
 
-為環境光指定特定的 :ref:`Color<class_Color>`\ 。與 :ref:`AMBIENT_SOURCE_SKY<class_Environment_constant_AMBIENT_SOURCE_SKY>` 相比，這提供了輕微的性能提升。
+Specify a specific :ref:`Color<class_Color>` for ambient light. This provides a slight performance boost over :ref:`AMBIENT_SOURCE_SKY<class_Environment_constant_AMBIENT_SOURCE_SKY>`.
 
 .. _class_Environment_constant_AMBIENT_SOURCE_SKY:
 
@@ -374,7 +374,7 @@ enum **AmbientSource**: :ref:`🔗<enum_Environment_AmbientSource>`
 
 :ref:`AmbientSource<enum_Environment_AmbientSource>` **AMBIENT_SOURCE_SKY** = ``3``
 
-無論背景如何，都從 :ref:`Sky<class_Sky>` 收集環境光。
+Gather ambient light from the :ref:`Sky<class_Sky>` regardless of what the background is.
 
 .. rst-class:: classref-item-separator
 
@@ -392,7 +392,7 @@ enum **ReflectionSource**: :ref:`🔗<enum_Environment_ReflectionSource>`
 
 :ref:`ReflectionSource<enum_Environment_ReflectionSource>` **REFLECTION_SOURCE_BG** = ``0``
 
-使用背景進行反射。
+Use the background for reflections.
 
 .. _class_Environment_constant_REFLECTION_SOURCE_DISABLED:
 
@@ -400,7 +400,7 @@ enum **ReflectionSource**: :ref:`🔗<enum_Environment_ReflectionSource>`
 
 :ref:`ReflectionSource<enum_Environment_ReflectionSource>` **REFLECTION_SOURCE_DISABLED** = ``1``
 
-禁用反射。與其他選項相比，這提供了輕微的性能提升。
+Disable reflections. This provides a slight performance boost over other options.
 
 .. _class_Environment_constant_REFLECTION_SOURCE_SKY:
 
@@ -408,7 +408,7 @@ enum **ReflectionSource**: :ref:`🔗<enum_Environment_ReflectionSource>`
 
 :ref:`ReflectionSource<enum_Environment_ReflectionSource>` **REFLECTION_SOURCE_SKY** = ``2``
 
-無論背景如何，都使用 :ref:`Sky<class_Sky>` 進行反射。
+Use the :ref:`Sky<class_Sky>` for reflections regardless of what the background is.
 
 .. rst-class:: classref-item-separator
 
@@ -556,7 +556,7 @@ enum **SDFGIYScale**: :ref:`🔗<enum_Environment_SDFGIYScale>`
 
 :ref:`SDFGIYScale<enum_Environment_SDFGIYScale>` **SDFGI_Y_SCALE_50_PERCENT** = ``0``
 
-在 Y（垂直）軸上對 SDFGI 使用 50% 的縮放。SDFGI 儲存格將比它們的寬度短兩倍。這允許提供更多的 GI 細節，並減少薄地板和天花板的漏光。這通常是垂直度不高的場景的最佳選擇。
+Use 50% scale for SDFGI on the Y (vertical) axis. SDFGI cells will be twice as short as they are wide. This allows providing increased GI detail and reduced light leaking with thin floors and ceilings. This is usually the best choice for scenes that don't feature much verticality.
 
 .. _class_Environment_constant_SDFGI_Y_SCALE_75_PERCENT:
 
@@ -564,7 +564,7 @@ enum **SDFGIYScale**: :ref:`🔗<enum_Environment_SDFGIYScale>`
 
 :ref:`SDFGIYScale<enum_Environment_SDFGIYScale>` **SDFGI_Y_SCALE_75_PERCENT** = ``1``
 
-在 Y（垂直）軸上為 SDFGI 使用 75% 的縮放。這是 50% 和 100% SDFGI Y 縮放之間的平衡。
+Use 75% scale for SDFGI on the Y (vertical) axis. This is a balance between the 50% and 100% SDFGI Y scales.
 
 .. _class_Environment_constant_SDFGI_Y_SCALE_100_PERCENT:
 
@@ -572,7 +572,7 @@ enum **SDFGIYScale**: :ref:`🔗<enum_Environment_SDFGIYScale>`
 
 :ref:`SDFGIYScale<enum_Environment_SDFGIYScale>` **SDFGI_Y_SCALE_100_PERCENT** = ``2``
 
-在 Y（垂直）軸上為 SDFGI 使用 100% 的縮放。SDFGI 儲存格將與寬度一樣高。這通常是高度垂直場景的最佳選擇。不利之處在於，薄地板和天花板可能會導致漏光更加明顯。
+Use 100% scale for SDFGI on the Y (vertical) axis. SDFGI cells will be as tall as they are wide. This is usually the best choice for highly vertical scenes. The downside is that light leaking may become more noticeable with thin floors and ceilings.
 
 .. rst-class:: classref-section-separator
 
@@ -580,8 +580,8 @@ enum **SDFGIYScale**: :ref:`🔗<enum_Environment_SDFGIYScale>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_Environment_property_adjustment_brightness:
 
@@ -679,7 +679,7 @@ Applies a simple saturation adjustment to the rendered image after tonemaping. W
 - |void| **set_ambient_light_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_ambient_light_color**\ (\ )
 
-環境光的 :ref:`Color<class_Color>`\ 。僅當 :ref:`ambient_light_sky_contribution<class_Environment_property_ambient_light_sky_contribution>` 低於 ``1.0``\ （不包括）時，才有效。
+The ambient light's :ref:`Color<class_Color>`. Only effective if :ref:`ambient_light_sky_contribution<class_Environment_property_ambient_light_sky_contribution>` is lower than ``1.0`` (exclusive).
 
 .. rst-class:: classref-item-separator
 
@@ -696,7 +696,7 @@ Applies a simple saturation adjustment to the rendered image after tonemaping. W
 - |void| **set_ambient_light_energy**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ambient_light_energy**\ (\ )
 
-環境光的能量。值越高，光線越強。僅當 :ref:`ambient_light_sky_contribution<class_Environment_property_ambient_light_sky_contribution>` 低於 ``1.0``\ （不包括）時，才有效。
+The ambient light's energy. The higher the value, the stronger the light. Only effective if :ref:`ambient_light_sky_contribution<class_Environment_property_ambient_light_sky_contribution>` is lower than ``1.0`` (exclusive).
 
 .. rst-class:: classref-item-separator
 
@@ -713,9 +713,9 @@ Applies a simple saturation adjustment to the rendered image after tonemaping. W
 - |void| **set_ambient_light_sky_contribution**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ambient_light_sky_contribution**\ (\ )
 
-定義天空給場景帶來的光照量。值為 ``0.0`` 表示天空的發光對場景照明沒有影響，因此所有的環境照明都由環境光提供。相反，值為 ``1.0`` 表示\ *所有*\ 影響場景的光線都由天空提供，因此環境光參數對場景沒有影響。
+Defines the amount of light that the sky brings on the scene. A value of ``0.0`` means that the sky's light emission has no effect on the scene illumination, thus all ambient illumination is provided by the ambient light. On the contrary, a value of ``1.0`` means that *all* the light that affects the scene is provided by the sky, thus the ambient light parameter has no effect on the scene.
 
-\ **注意：**\ 內部會將 :ref:`ambient_light_sky_contribution<class_Environment_property_ambient_light_sky_contribution>` 限制在 ``0.0`` 到 ``1.0`` 之間（閉區間）。
+\ **Note:** :ref:`ambient_light_sky_contribution<class_Environment_property_ambient_light_sky_contribution>` is internally clamped between ``0.0`` and ``1.0`` (inclusive).
 
 .. rst-class:: classref-item-separator
 
@@ -732,7 +732,7 @@ Applies a simple saturation adjustment to the rendered image after tonemaping. W
 - |void| **set_ambient_source**\ (\ value\: :ref:`AmbientSource<enum_Environment_AmbientSource>`\ )
 - :ref:`AmbientSource<enum_Environment_AmbientSource>` **get_ambient_source**\ (\ )
 
-環境光源，用於算繪材質和全域照明。
+The ambient light source to use for rendering materials and global illumination.
 
 .. rst-class:: classref-item-separator
 
@@ -749,7 +749,7 @@ Applies a simple saturation adjustment to the rendered image after tonemaping. W
 - |void| **set_camera_feed_id**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_camera_feed_id**\ (\ )
 
-在背景中顯示的相機源的 ID。
+The ID of the camera feed to show in the background.
 
 .. rst-class:: classref-item-separator
 
@@ -766,7 +766,7 @@ Applies a simple saturation adjustment to the rendered image after tonemaping. W
 - |void| **set_canvas_max_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_canvas_max_layer**\ (\ )
 
-要顯示的最大圖層 ID。只有在使用 :ref:`BG_CANVAS<class_Environment_constant_BG_CANVAS>` 背景模式時有效。
+The maximum layer ID to display. Only effective when using the :ref:`BG_CANVAS<class_Environment_constant_BG_CANVAS>` background mode.
 
 .. rst-class:: classref-item-separator
 
@@ -783,7 +783,7 @@ Applies a simple saturation adjustment to the rendered image after tonemaping. W
 - |void| **set_bg_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_bg_color**\ (\ )
 
-場景中清除區域顯示的 :ref:`Color<class_Color>`\ 。僅在使用 :ref:`BG_COLOR<class_Environment_constant_BG_COLOR>` 背景模式時有效。
+The :ref:`Color<class_Color>` displayed for clear areas of the scene. Only effective when using the :ref:`BG_COLOR<class_Environment_constant_BG_COLOR>` background mode.
 
 .. rst-class:: classref-item-separator
 
@@ -800,7 +800,7 @@ Applies a simple saturation adjustment to the rendered image after tonemaping. W
 - |void| **set_bg_energy_multiplier**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bg_energy_multiplier**\ (\ )
 
-背景能量的倍數。增加可以使背景更亮，減少可以使背景更暗。
+Multiplier for background energy. Increase to make background brighter, decrease to make background dimmer.
 
 .. rst-class:: classref-item-separator
 
@@ -817,7 +817,7 @@ Applies a simple saturation adjustment to the rendered image after tonemaping. W
 - |void| **set_bg_intensity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bg_intensity**\ (\ )
 
-背景的亮度，單位是尼特（坎德拉/平方米）。僅當啟用 :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` 時使用。預設值大致相當於正午時分的天空。
+Luminance of background measured in nits (candela per square meter). Only used when :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` is enabled. The default value is roughly equivalent to the sky at midday.
 
 .. rst-class:: classref-item-separator
 
@@ -944,7 +944,7 @@ The fog's depth end distance from the camera. If this value is set to ``0``, it 
 - |void| **set_fog_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_fog_enabled**\ (\ )
 
-如果為 ``true``\ ，則啟用霧效果。
+If ``true``, fog effects are enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -961,7 +961,7 @@ The fog's depth end distance from the camera. If this value is set to ``0``, it 
 - |void| **set_fog_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fog_height**\ (\ )
 
-高度霧效果開始的高度。
+The height at which the height fog effect begins.
 
 .. rst-class:: classref-item-separator
 
@@ -978,7 +978,7 @@ The fog's depth end distance from the camera. If this value is set to ``0``, it 
 - |void| **set_fog_height_density**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fog_height_density**\ (\ )
 
-用於隨著高度降低而增加霧的密度。要使霧隨著高度增加而增加，請使用負值。
+The density used to increase fog as height decreases. To make fog increase as height increases, use a negative value.
 
 .. rst-class:: classref-item-separator
 
@@ -995,7 +995,7 @@ The fog's depth end distance from the camera. If this value is set to ``0``, it 
 - |void| **set_fog_light_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_fog_light_color**\ (\ )
 
-霧的顏色。
+The fog's color.
 
 .. rst-class:: classref-item-separator
 
@@ -1012,7 +1012,7 @@ The fog's depth end distance from the camera. If this value is set to ``0``, it 
 - |void| **set_fog_light_energy**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fog_light_energy**\ (\ )
 
-霧的亮度。值越高，霧越亮。
+The fog's brightness. Higher values result in brighter fog.
 
 .. rst-class:: classref-item-separator
 
@@ -1046,9 +1046,9 @@ The fog mode.
 - |void| **set_fog_sky_affect**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fog_sky_affect**\ (\ )
 
-非體積霧影響天空時使用的係數。\ ``1.0`` 表示霧可以完全遮蔽天空。較低的值會減少霧對天空算繪的影響，\ ``0.0`` 完全不影響天空的算繪。
+The factor to use when affecting the sky with non-volumetric fog. ``1.0`` means that fog can fully obscure the sky. Lower values reduce the impact of fog on sky rendering, with ``0.0`` not affecting sky rendering at all.
 
-\ **注意：**\ 如果 :ref:`fog_aerial_perspective<class_Environment_property_fog_aerial_perspective>` 為 ``1.0``\ ，\ :ref:`fog_sky_affect<class_Environment_property_fog_sky_affect>` 不會有視覺效果。
+\ **Note:** :ref:`fog_sky_affect<class_Environment_property_fog_sky_affect>` has no visual effect if :ref:`fog_aerial_perspective<class_Environment_property_fog_aerial_perspective>` is ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -1065,7 +1065,7 @@ The fog mode.
 - |void| **set_fog_sun_scatter**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fog_sun_scatter**\ (\ )
 
-如果設定為 ``0.0`` 以上，則根據視角以霧色算繪場景的定向光。這可以用來給人一種太陽正在“穿透”霧的印象。
+If set above ``0.0``, renders the scene's directional light(s) in the fog color depending on the view angle. This can be used to give the impression that the sun is "piercing" through the fog.
 
 .. rst-class:: classref-item-separator
 
@@ -1101,7 +1101,7 @@ The glow blending mode.
 - |void| **set_glow_bloom**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_glow_bloom**\ (\ )
 
-泛光的強度。如果設定為大於 ``0`` 的值，則將在比 :ref:`glow_hdr_threshold<class_Environment_property_glow_hdr_threshold>` 成員更暗的區域中顯示輝光。
+The bloom's intensity. If set to a value higher than ``0``, this will make glow visible in areas darker than the :ref:`glow_hdr_threshold<class_Environment_property_glow_hdr_threshold>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1139,7 +1139,7 @@ If ``true``, the glow effect is enabled. This simulates real world atmosphere an
 - |void| **set_glow_hdr_luminance_cap**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_glow_hdr_luminance_cap**\ (\ )
 
-HDR 輝光的較高閾值。比這個閾值更亮的區域將被限制，以達到輝光效果的目的。
+The higher threshold of the HDR glow. Areas brighter than this threshold will be clamped for the purposes of the glow effect.
 
 .. rst-class:: classref-item-separator
 
@@ -1173,7 +1173,7 @@ Smooths the transition between values that are below and above :ref:`glow_hdr_th
 - |void| **set_glow_hdr_bleed_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_glow_hdr_bleed_threshold**\ (\ )
 
-HDR 輝光的下限閾值。當使用 Mobile 算繪方法時（僅支援較低的動態範圍，最大為 ``2.0``\ ），需要低於 ``1.0`` 才能看到輝光。在這種情況下取 ``0.9`` 可以達到不錯的效果。在 2D 中使用輝光時也需要降低到 ``1.0`` 以下，因為 2D 算繪使用 SDR。
+The lower threshold of the HDR glow. When using the Mobile rendering method (which only supports a lower dynamic range up to ``2.0``), this may need to be below ``1.0`` for glow to be visible. A value of ``0.9`` works well in this case. This value also needs to be decreased below ``1.0`` when using glow in 2D, as 2D rendering is performed in SDR.
 
 .. rst-class:: classref-item-separator
 
@@ -1439,7 +1439,7 @@ The strength that is used when blurring across the screen to generate the glow e
 - |void| **set_reflection_source**\ (\ value\: :ref:`ReflectionSource<enum_Environment_ReflectionSource>`\ )
 - :ref:`ReflectionSource<enum_Environment_ReflectionSource>` **get_reflection_source**\ (\ )
 
-反射（鏡面反射）光源。
+The reflected (specular) light source.
 
 .. rst-class:: classref-item-separator
 
@@ -1456,11 +1456,11 @@ The strength that is used when blurring across the screen to generate the glow e
 - |void| **set_sdfgi_bounce_feedback**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_sdfgi_bounce_feedback**\ (\ )
 
-使用 SDFGI 時，每次從表面反彈時套用於光的能量倍增器。大於 ``0.0`` 的值將模擬多次反彈，從而產生更逼真的外觀。增加 :ref:`sdfgi_bounce_feedback<class_Environment_property_sdfgi_bounce_feedback>` 通常對性能沒有影響。另見 :ref:`sdfgi_energy<class_Environment_property_sdfgi_energy>`\ 。
+The energy multiplier applied to light every time it bounces from a surface when using SDFGI. Values greater than ``0.0`` will simulate multiple bounces, resulting in a more realistic appearance. Increasing :ref:`sdfgi_bounce_feedback<class_Environment_property_sdfgi_bounce_feedback>` generally has no performance impact. See also :ref:`sdfgi_energy<class_Environment_property_sdfgi_energy>`.
 
-\ **注意：**\ 大於 ``0.5`` 的值會導致無限的回饋迴圈，應避免在具有明亮材質的場景中使用。
+\ **Note:** Values greater than ``0.5`` can cause infinite feedback loops and should be avoided in scenes with bright materials.
 
-\ **注意：**\ 如果 :ref:`sdfgi_bounce_feedback<class_Environment_property_sdfgi_bounce_feedback>` 為 ``0.0``\ ，間接照明會在反射中表現出來，因為光只會反彈一次。
+\ **Note:** If :ref:`sdfgi_bounce_feedback<class_Environment_property_sdfgi_bounce_feedback>` is ``0.0``, indirect lighting will not be represented in reflections as light will only bounce one time.
 
 .. rst-class:: classref-item-separator
 
@@ -1477,7 +1477,7 @@ The strength that is used when blurring across the screen to generate the glow e
 - |void| **set_sdfgi_cascade0_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_sdfgi_cascade0_distance**\ (\ )
 
-**注意：**\ 該屬性被連結到 :ref:`sdfgi_min_cell_size<class_Environment_property_sdfgi_min_cell_size>` 和 :ref:`sdfgi_max_distance<class_Environment_property_sdfgi_max_distance>`\ 。更改其值也會自動更改這些屬性。
+**Note:** This property is linked to :ref:`sdfgi_min_cell_size<class_Environment_property_sdfgi_min_cell_size>` and :ref:`sdfgi_max_distance<class_Environment_property_sdfgi_max_distance>`. Changing its value will automatically change those properties as well.
 
 .. rst-class:: classref-item-separator
 
@@ -1494,7 +1494,7 @@ The strength that is used when blurring across the screen to generate the glow e
 - |void| **set_sdfgi_cascades**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_sdfgi_cascades**\ (\ )
 
-用於 SDFGI 的級聯數（1 到 8 之間）。更高的級聯數會以性能為代價，允許在更遠的地方顯示 SDFGI，同時保持近距離的細節。在小型關卡上使用 SDFGI 時，通常 :ref:`sdfgi_cascades<class_Environment_property_sdfgi_cascades>` 可以被降低到 ``1`` 和 ``4`` 之間以提高性能。
+The number of cascades to use for SDFGI (between 1 and 8). A higher number of cascades allows displaying SDFGI further away while preserving detail up close, at the cost of performance. When using SDFGI on small-scale levels, :ref:`sdfgi_cascades<class_Environment_property_sdfgi_cascades>` can often be decreased between ``1`` and ``4`` to improve performance.
 
 .. rst-class:: classref-item-separator
 
@@ -1511,13 +1511,13 @@ The strength that is used when blurring across the screen to generate the glow e
 - |void| **set_sdfgi_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_sdfgi_enabled**\ (\ )
 
-如果為 ``true``\ ，則為將 :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` 設定為 :ref:`GeometryInstance3D.GI_MODE_STATIC<class_GeometryInstance3D_constant_GI_MODE_STATIC>` 的網格，啟用有符號距離場全域照明（即 SDFGI）。SDFGI 是一種即時全域照明技術，適用於程式生成和使用者建構的關卡，包括在遊戲過程中建立幾何體的情況。有符號距離場會在相機移動時自動圍繞相機生成。支援動態光，但不支援動態遮擋物和自發光表面。
+If ``true``, enables signed distance field global illumination for meshes that have their :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` set to :ref:`GeometryInstance3D.GI_MODE_STATIC<class_GeometryInstance3D_constant_GI_MODE_STATIC>`. SDFGI is a real-time global illumination technique that works well with procedurally generated and user-built levels, including in situations where geometry is created during gameplay. The signed distance field is automatically generated around the camera as it moves. Dynamic lights are supported, but dynamic occluders and emissive surfaces are not.
 
-\ **注意：**\ SDFGI 只支援 Forward+ 算繪方式，不支援 Mobile 或 Compatibility。
+\ **Note:** SDFGI is only supported in the Forward+ rendering method, not Mobile or Compatibility.
 
-\ **性能：**\ SDFGI 對 GPU 的要求比較高，不適合集成顯卡等低端硬體（可以考慮 :ref:`LightmapGI<class_LightmapGI>`\ ）。要提高 SDFGI 性能，請在專案設定中啟用 :ref:`ProjectSettings.rendering/global_illumination/gi/use_half_resolution<class_ProjectSettings_property_rendering/global_illumination/gi/use_half_resolution>`\ 。
+\ **Performance:** SDFGI is relatively demanding on the GPU and is not suited to low-end hardware such as integrated graphics (consider :ref:`LightmapGI<class_LightmapGI>` instead). To improve SDFGI performance, enable :ref:`ProjectSettings.rendering/global_illumination/gi/use_half_resolution<class_ProjectSettings_property_rendering/global_illumination/gi/use_half_resolution>` in the Project Settings.
 
-\ **注意：**\ 網格應該有足夠厚的壁以避免漏光（避免單面壁）。對於內部關卡，將關卡幾何體放入一個足夠大的盒子中，並橋接迴圈邊以閉合網格。
+\ **Note:** Meshes should have sufficiently thick walls to avoid light leaks (avoid one-sided walls). For interior levels, enclose your level geometry in a sufficiently large box and bridge the loops to close the mesh.
 
 .. rst-class:: classref-item-separator
 
@@ -1534,7 +1534,7 @@ The strength that is used when blurring across the screen to generate the glow e
 - |void| **set_sdfgi_energy**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_sdfgi_energy**\ (\ )
 
-用於 SDFGI 的能量乘數。較高的值將導致更亮的間接照明和反射。另見 :ref:`sdfgi_bounce_feedback<class_Environment_property_sdfgi_bounce_feedback>`\ 。
+The energy multiplier to use for SDFGI. Higher values will result in brighter indirect lighting and reflections. See also :ref:`sdfgi_bounce_feedback<class_Environment_property_sdfgi_bounce_feedback>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1551,9 +1551,9 @@ The strength that is used when blurring across the screen to generate the glow e
 - |void| **set_sdfgi_max_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_sdfgi_max_distance**\ (\ )
 
-SDFGI 可見的最大距離。超出該距離，環境照明或其他 GI 來源（例如 :ref:`ReflectionProbe<class_ReflectionProbe>`\ ）將用作後備。
+The maximum distance at which SDFGI is visible. Beyond this distance, environment lighting or other sources of GI such as :ref:`ReflectionProbe<class_ReflectionProbe>` will be used as a fallback.
 
-\ **注意：**\ 該屬性被連結到 :ref:`sdfgi_min_cell_size<class_Environment_property_sdfgi_min_cell_size>` 和 :ref:`sdfgi_cascade0_distance<class_Environment_property_sdfgi_cascade0_distance>`\ 。更改其值，也會自動更改這些屬性。
+\ **Note:** This property is linked to :ref:`sdfgi_min_cell_size<class_Environment_property_sdfgi_min_cell_size>` and :ref:`sdfgi_cascade0_distance<class_Environment_property_sdfgi_cascade0_distance>`. Changing its value will automatically change those properties as well.
 
 .. rst-class:: classref-item-separator
 
@@ -1570,9 +1570,9 @@ SDFGI 可見的最大距離。超出該距離，環境照明或其他 GI 來源�
 - |void| **set_sdfgi_min_cell_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_sdfgi_min_cell_size**\ (\ )
 
-用於最接近的 SDFGI 級聯的像元大小（以 3D 單位表示）。較低的值允許 SDFGI 近距離更精確，但代價是 SDFGI 更新要求更高。當相機快速移動時，這可能會導致卡頓。較高的值允許 SDFGI 覆蓋更多的範圍，同時也降低了 SDFGI 更新對性能的影響。
+The cell size to use for the closest SDFGI cascade (in 3D units). Lower values allow SDFGI to be more precise up close, at the cost of making SDFGI updates more demanding. This can cause stuttering when the camera moves fast. Higher values allow SDFGI to cover more ground, while also reducing the performance impact of SDFGI updates.
 
-\ **注意：**\ 該屬性被連結到 :ref:`sdfgi_max_distance<class_Environment_property_sdfgi_max_distance>` 和 :ref:`sdfgi_cascade0_distance<class_Environment_property_sdfgi_cascade0_distance>`\ 。更改其值也會自動更改這些屬性。
+\ **Note:** This property is linked to :ref:`sdfgi_max_distance<class_Environment_property_sdfgi_max_distance>` and :ref:`sdfgi_cascade0_distance<class_Environment_property_sdfgi_cascade0_distance>`. Changing its value will automatically change those properties as well.
 
 .. rst-class:: classref-item-separator
 
@@ -1589,7 +1589,7 @@ SDFGI 可見的最大距離。超出該距離，環境照明或其他 GI 來源�
 - |void| **set_sdfgi_normal_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_sdfgi_normal_bias**\ (\ )
 
-用於 SDFGI 探查的正常偏差。增加此值可以減少傾斜表面上的可見條紋偽影，但會增加漏光。
+The normal bias to use for SDFGI probes. Increasing this value can reduce visible streaking artifacts on sloped surfaces, at the cost of increased light leaking.
 
 .. rst-class:: classref-item-separator
 
@@ -1606,7 +1606,7 @@ SDFGI 可見的最大距離。超出該距離，環境照明或其他 GI 來源�
 - |void| **set_sdfgi_probe_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_sdfgi_probe_bias**\ (\ )
 
-用於 SDFGI 探查的恒定偏差。增加此值可以減少傾斜表面上的可見條紋偽影，但會增加漏光。
+The constant bias to use for SDFGI probes. Increasing this value can reduce visible streaking artifacts on sloped surfaces, at the cost of increased light leaking.
 
 .. rst-class:: classref-item-separator
 
@@ -1623,7 +1623,7 @@ SDFGI 可見的最大距離。超出該距離，環境照明或其他 GI 來源�
 - |void| **set_sdfgi_read_sky_light**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_sdfgi_reading_sky_light**\ (\ )
 
-如果為 ``true``\ ，則 SDFGI 會考慮環境光照。對於室內場景，這應該被設定為 ``false``\ 。
+If ``true``, SDFGI takes the environment lighting into account. This should be set to ``false`` for interior scenes.
 
 .. rst-class:: classref-item-separator
 
@@ -1640,7 +1640,7 @@ SDFGI 可見的最大距離。超出該距離，環境照明或其他 GI 來源�
 - |void| **set_sdfgi_use_occlusion**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_sdfgi_using_occlusion**\ (\ )
 
-如果為 ``true``\ ，SDFGI 使用遮擋偵測方法來減少漏光。然而，遮擋可能會在某些位置引入暗斑，這在大多數戶外場景中可能是不希望的。\ :ref:`sdfgi_use_occlusion<class_Environment_property_sdfgi_use_occlusion>` 對性能有影響，只應在需要時啟用。
+If ``true``, SDFGI uses an occlusion detection approach to reduce light leaking. Occlusion may however introduce dark blotches in certain spots, which may be undesired in mostly outdoor scenes. :ref:`sdfgi_use_occlusion<class_Environment_property_sdfgi_use_occlusion>` has a performance impact and should only be enabled when needed.
 
 .. rst-class:: classref-item-separator
 
@@ -1657,7 +1657,7 @@ SDFGI 可見的最大距離。超出該距離，環境照明或其他 GI 來源�
 - |void| **set_sdfgi_y_scale**\ (\ value\: :ref:`SDFGIYScale<enum_Environment_SDFGIYScale>`\ )
 - :ref:`SDFGIYScale<enum_Environment_SDFGIYScale>` **get_sdfgi_y_scale**\ (\ )
 
-用於 SDFGI 儲存格的 Y 縮放。較低的值將導致 SDFGI 儲存格在 Y 軸上更緊密地堆積在一起。這用於在品質和覆蓋大量垂直地面之間取得平衡。\ :ref:`sdfgi_y_scale<class_Environment_property_sdfgi_y_scale>` 應該根據場景的垂直程度（以及相機在 Y 軸上移動的速度）來設定。
+The Y scale to use for SDFGI cells. Lower values will result in SDFGI cells being packed together more closely on the Y axis. This is used to balance between quality and covering a lot of vertical ground. :ref:`sdfgi_y_scale<class_Environment_property_sdfgi_y_scale>` should be set depending on how vertical your scene is (and how fast your camera may move on the Y axis).
 
 .. rst-class:: classref-item-separator
 
@@ -1674,7 +1674,7 @@ SDFGI 可見的最大距離。超出該距離，環境照明或其他 GI 來源�
 - |void| **set_sky**\ (\ value\: :ref:`Sky<class_Sky>`\ )
 - :ref:`Sky<class_Sky>` **get_sky**\ (\ )
 
-該 **Environment** 所使用的 :ref:`Sky<class_Sky>` 資源。
+The :ref:`Sky<class_Sky>` resource used for this **Environment**.
 
 .. rst-class:: classref-item-separator
 
@@ -1691,7 +1691,7 @@ SDFGI 可見的最大距離。超出該距離，環境照明或其他 GI 來源�
 - |void| **set_sky_custom_fov**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_sky_custom_fov**\ (\ )
 
-如果被設定為大於 ``0.0`` 的值，則會覆蓋用於天空算繪的視野。如果被設置為 ``0.0``\ ，則使用與目前 :ref:`Camera3D<class_Camera3D>` 相同的 FOV 進行天空算繪。
+If set to a value greater than ``0.0``, overrides the field of view to use for sky rendering. If set to ``0.0``, the same FOV as the current :ref:`Camera3D<class_Camera3D>` is used for sky rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -1708,7 +1708,7 @@ SDFGI 可見的最大距離。超出該距離，環境照明或其他 GI 來源�
 - |void| **set_sky_rotation**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_sky_rotation**\ (\ )
 
-用於天空算繪的旋轉。
+The rotation to use for sky rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -1725,7 +1725,7 @@ SDFGI 可見的最大距離。超出該距離，環境照明或其他 GI 來源�
 - |void| **set_ssao_ao_channel_affect**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssao_ao_channel_affect**\ (\ )
 
-定義了AO紋理的材質的螢幕空間環境遮擋強度。高於\ ``0``\ 的值將使SSAO效果在AO紋理變暗的區域可見。
+The screen-space ambient occlusion intensity on materials that have an AO texture defined. Values higher than ``0`` will make the SSAO effect visible in areas darkened by AO textures.
 
 .. rst-class:: classref-item-separator
 
@@ -1742,7 +1742,7 @@ SDFGI 可見的最大距離。超出該距離，環境照明或其他 GI 來源�
 - |void| **set_ssao_detail**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssao_detail**\ (\ )
 
-設定螢幕空間環境遮蔽效果的附加細節級別的強度。高的值會使細節傳遞更加突出，但它可能會導致最終圖像中出現鋸齒。
+Sets the strength of the additional level of detail for the screen-space ambient occlusion effect. A high value makes the detail pass more prominent, but it may contribute to aliasing in your final image.
 
 .. rst-class:: classref-item-separator
 
@@ -1778,7 +1778,7 @@ If ``true``, the screen-space ambient occlusion effect is enabled. This darkens 
 - |void| **set_ssao_horizon**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssao_horizon**\ (\ )
 
-用於考慮表面上給定點是否被遮擋的閾值，表示為與地平線的角度，對應到 ``0.0-1.0`` 範圍。\ ``1.0`` 的值不會導致遮蔽。
+The threshold for considering whether a given point on a surface is occluded or not represented as an angle from the horizon mapped into the ``0.0-1.0`` range. A value of ``1.0`` results in no occlusion.
 
 .. rst-class:: classref-item-separator
 
@@ -1795,7 +1795,7 @@ If ``true``, the screen-space ambient occlusion effect is enabled. This darkens 
 - |void| **set_ssao_intensity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssao_intensity**\ (\ )
 
-主要螢幕空間的環境光遮蔽強度。用作螢幕空間環境光遮蔽效果的乘數。較高的值會導致較暗的遮蔽。
+The primary screen-space ambient occlusion intensity. Acts as a multiplier for the screen-space ambient occlusion effect. A higher value results in darker occlusion.
 
 .. rst-class:: classref-item-separator
 
@@ -1812,7 +1812,7 @@ If ``true``, the screen-space ambient occlusion effect is enabled. This darkens 
 - |void| **set_ssao_direct_light_affect**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssao_direct_light_affect**\ (\ )
 
-直射光下的螢幕空間環境光遮蔽強度。在現實生活中，環境遮擋只適用於間接光，也就是說在直射光下無法看到其效果。高於\ ``0``\ 的數值將使SSAO效果在直射光下可見。
+The screen-space ambient occlusion intensity in direct light. In real life, ambient occlusion only applies to indirect light, which means its effects can't be seen in direct light. Values higher than ``0`` will make the SSAO effect visible in direct light.
 
 .. rst-class:: classref-item-separator
 
@@ -1829,7 +1829,7 @@ If ``true``, the screen-space ambient occlusion effect is enabled. This darkens 
 - |void| **set_ssao_power**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssao_power**\ (\ )
 
-光遮蔽的分佈。更高的值會導致更暗的光遮蔽，類似於 :ref:`ssao_intensity<class_Environment_property_ssao_intensity>`\ ，但衰減更劇烈。
+The distribution of occlusion. A higher value results in darker occlusion, similar to :ref:`ssao_intensity<class_Environment_property_ssao_intensity>`, but with a sharper falloff.
 
 .. rst-class:: classref-item-separator
 
@@ -1846,7 +1846,7 @@ If ``true``, the screen-space ambient occlusion effect is enabled. This darkens 
 - |void| **set_ssao_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssao_radius**\ (\ )
 
-計算螢幕空間環境光遮蔽時，物件可以相互遮蔽的距離。較高的值將導致以性能和品質為代價的更遠距離的光遮蔽。
+The distance at which objects can occlude each other when calculating screen-space ambient occlusion. Higher values will result in occlusion over a greater distance at the cost of performance and quality.
 
 .. rst-class:: classref-item-separator
 
@@ -1863,7 +1863,7 @@ If ``true``, the screen-space ambient occlusion effect is enabled. This darkens 
 - |void| **set_ssao_sharpness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssao_sharpness**\ (\ )
 
-允許螢幕空間環境光遮蔽效果，在物件邊緣上模糊的量。設定太高，會導致對象邊緣出現鋸齒。設定太低，會使對象邊緣顯得模糊。
+The amount that the screen-space ambient occlusion effect is allowed to blur over the edges of objects. Setting too high will result in aliasing around the edges of objects. Setting too low will make object edges appear blurry.
 
 .. rst-class:: classref-item-separator
 
@@ -1880,9 +1880,9 @@ If ``true``, the screen-space ambient occlusion effect is enabled. This darkens 
 - |void| **set_ssil_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ssil_enabled**\ (\ )
 
-如果為 ``true``\ ，則啟用螢幕空間間接照明效果。螢幕空間間接照明是一種間接照明形式，它允許漫射光在附近的物體之間反射。螢幕空間間接照明與螢幕空間環境光遮蔽的工作方式非常相似，因為它只影響有限的範圍。它旨在與 SDFGI 或 :ref:`VoxelGI<class_VoxelGI>` 等適當的全域照明形式一起使用。螢幕空間間接光照不受單個光源 :ref:`Light3D.light_indirect_energy<class_Light3D_property_light_indirect_energy>` 的影響。
+If ``true``, the screen-space indirect lighting effect is enabled. Screen space indirect lighting is a form of indirect lighting that allows diffuse light to bounce between nearby objects. Screen-space indirect lighting works very similarly to screen-space ambient occlusion, in that it only affects a limited range. It is intended to be used along with a form of proper global illumination like SDFGI or :ref:`VoxelGI<class_VoxelGI>`. Screen-space indirect lighting is not affected by individual light's :ref:`Light3D.light_indirect_energy<class_Light3D_property_light_indirect_energy>`.
 
-\ **注意：**\ SSIL 只支援 Forward+ 算繪方式，不支援 Mobile 或 Compatibility。
+\ **Note:** SSIL is only supported in the Forward+ rendering method, not Mobile or Compatibility.
 
 .. rst-class:: classref-item-separator
 
@@ -1899,7 +1899,7 @@ If ``true``, the screen-space ambient occlusion effect is enabled. This darkens 
 - |void| **set_ssil_intensity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssil_intensity**\ (\ )
 
-螢幕空間間接照明效果的亮度倍增器。更高的值會產生更亮的光。
+The brightness multiplier for the screen-space indirect lighting effect. A higher value will result in brighter light.
 
 .. rst-class:: classref-item-separator
 
@@ -1916,7 +1916,7 @@ If ``true``, the screen-space ambient occlusion effect is enabled. This darkens 
 - |void| **set_ssil_normal_rejection**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssil_normal_rejection**\ (\ )
 
-計算螢幕空間間接照明時，使用的法線拋棄量。法線拋棄使用給定樣本點的法線，來拋棄遠離目前圖元的樣本。當只有物體的一側被照亮時，為了避免漏光法線拋棄是必要的。但是，如果需要漏光，則可以禁用法線拋棄，例如當場景主要包含自發光對象，且其發光面從相機無法看到時。
+Amount of normal rejection used when calculating screen-space indirect lighting. Normal rejection uses the normal of a given sample point to reject samples that are facing away from the current pixel. Normal rejection is necessary to avoid light leaking when only one side of an object is illuminated. However, normal rejection can be disabled if light leaking is desirable, such as when the scene mostly contains emissive objects that emit light from faces that cannot be seen from the camera.
 
 .. rst-class:: classref-item-separator
 
@@ -1933,7 +1933,7 @@ If ``true``, the screen-space ambient occlusion effect is enabled. This darkens 
 - |void| **set_ssil_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssil_radius**\ (\ )
 
-使用螢幕空間間接照明效果時，反射光可以傳播的距離。較大的值，會導致光線在場景中進一步反彈，但可能會導致取樣不足的偽影，看起來像光源周圍的長尖峰。
+The distance that bounced lighting can travel when using the screen space indirect lighting effect. A larger value will result in light bouncing further in a scene, but may result in under-sampling artifacts which look like long spikes surrounding light sources.
 
 .. rst-class:: classref-item-separator
 
@@ -1950,7 +1950,7 @@ If ``true``, the screen-space ambient occlusion effect is enabled. This darkens 
 - |void| **set_ssil_sharpness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssil_sharpness**\ (\ )
 
-允許螢幕空間間接照明效果，在物件邊緣上模糊的量。設定太高，會導致物件邊緣出現鋸齒。設定太低，會使對象邊緣顯得模糊。
+The amount that the screen-space indirect lighting effect is allowed to blur over the edges of objects. Setting too high will result in aliasing around the edges of objects. Setting too low will make object edges appear blurry.
 
 .. rst-class:: classref-item-separator
 
@@ -1967,7 +1967,7 @@ If ``true``, the screen-space ambient occlusion effect is enabled. This darkens 
 - |void| **set_ssr_depth_tolerance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssr_depth_tolerance**\ (\ )
 
-螢幕空間反射的深度公差。
+The depth tolerance for screen-space reflections.
 
 .. rst-class:: classref-item-separator
 
@@ -1984,11 +1984,11 @@ If ``true``, the screen-space ambient occlusion effect is enabled. This darkens 
 - |void| **set_ssr_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ssr_enabled**\ (\ )
 
-如果 ``true``\ ，則啟用螢幕空間反射。螢幕空間反射比體素全域光照 (VoxelGI) 或反射探針 (ReflectionProbe) 的反射更精確，但速度較慢，且無法反射被其他物體遮蔽的表面。
+If ``true``, screen-space reflections are enabled. Screen-space reflections are more accurate than reflections from :ref:`VoxelGI<class_VoxelGI>`\ s or :ref:`ReflectionProbe<class_ReflectionProbe>`\ s, but are slower and can't reflect surfaces occluded by others.
 
-\ **注意：** 螢幕空間反射僅在 Forward+ 渲染模式下受支持，不支援行動端或相容模式。
+\ **Note:** SSR is only supported in the Forward+ rendering method, not Mobile or Compatibility.
 
-\ **注意：** 螢幕空間反射不支援具有透明背景的視窗（\ :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` 為 ``true``\ ）。
+\ **Note:** SSR is not supported on viewports that have a transparent background (where :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` is ``true``).
 
 .. rst-class:: classref-item-separator
 
@@ -2005,7 +2005,7 @@ If ``true``, the screen-space ambient occlusion effect is enabled. This darkens 
 - |void| **set_ssr_fade_in**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssr_fade_in**\ (\ )
 
-螢幕空間反射的淡入距離。影響從反射材質到螢幕空間反射的區域。只有正值有效（負值將被鉗制為 ``0.0``\ ）。
+The fade-in distance for screen-space reflections. Affects the area from the reflected material to the screen-space reflection. Only positive values are valid (negative values will be clamped to ``0.0``).
 
 .. rst-class:: classref-item-separator
 
@@ -2022,7 +2022,7 @@ If ``true``, the screen-space ambient occlusion effect is enabled. This darkens 
 - |void| **set_ssr_fade_out**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssr_fade_out**\ (\ )
 
-螢幕空間反射的淡出距離。影響從螢幕空間反射到“全域”反射的區域。只有正值有效（負值將被鉗制為 ``0.0``\ ）。
+The fade-out distance for screen-space reflections. Affects the area from the screen-space reflection to the "global" reflection. Only positive values are valid (negative values will be clamped to ``0.0``).
 
 .. rst-class:: classref-item-separator
 
@@ -2039,7 +2039,7 @@ If ``true``, the screen-space ambient occlusion effect is enabled. This darkens 
 - |void| **set_ssr_max_steps**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_ssr_max_steps**\ (\ )
 
-螢幕空間反射的最大步數。數值越高，速度越慢。
+The maximum number of steps for screen-space reflections. Higher values are slower.
 
 .. rst-class:: classref-item-separator
 
@@ -2147,7 +2147,7 @@ The white reference value for tonemapping, which indicates where bright white is
 - |void| **set_volumetric_fog_albedo**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_volumetric_fog_albedo**\ (\ )
 
-與燈光互動時體積霧的 :ref:`Color<class_Color>`\ 。當煙霧的反照率顏色更暗時，薄霧和霧的反照率顏色接近 ``Color(1, 1, 1, 1)``\ 。
+The :ref:`Color<class_Color>` of the volumetric fog when interacting with lights. Mist and fog have an albedo close to ``Color(1, 1, 1, 1)`` while smoke has a darker albedo.
 
 .. rst-class:: classref-item-separator
 
@@ -2164,9 +2164,9 @@ The white reference value for tonemapping, which indicates where bright white is
 - |void| **set_volumetric_fog_ambient_inject**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volumetric_fog_ambient_inject**\ (\ )
 
-衡量體積霧中使用的環境光的強度。值為 ``0.0`` ，意味著環境光不會影響體積霧。當 :ref:`volumetric_fog_ambient_inject<class_Environment_property_volumetric_fog_ambient_inject>` 設定高於 ``0.0`` 時，會有一個小的性能成本。
+Scales the strength of ambient light used in the volumetric fog. A value of ``0.0`` means that ambient light will not impact the volumetric fog. :ref:`volumetric_fog_ambient_inject<class_Environment_property_volumetric_fog_ambient_inject>` has a small performance cost when set above ``0.0``.
 
-\ **注意：**\ 如果 :ref:`volumetric_fog_density<class_Environment_property_volumetric_fog_density>` 為 ``0.0``\ ，或 :ref:`volumetric_fog_albedo<class_Environment_property_volumetric_fog_albedo>` 是全黑的顏色，則該屬性沒有可見效果。
+\ **Note:** This has no visible effect if :ref:`volumetric_fog_density<class_Environment_property_volumetric_fog_density>` is ``0.0`` or if :ref:`volumetric_fog_albedo<class_Environment_property_volumetric_fog_albedo>` is a fully black color.
 
 .. rst-class:: classref-item-separator
 
@@ -2183,7 +2183,7 @@ The white reference value for tonemapping, which indicates where bright white is
 - |void| **set_volumetric_fog_anisotropy**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volumetric_fog_anisotropy**\ (\ )
 
-散射光穿過體積霧時的方向。接近 ``1.0`` 的值意味著幾乎所有的光都是向前散射的。接近 ``0.0`` 的值表示光在所有方向上均勻散射。接近 ``-1.0`` 的值表示光主要向後散射。霧和薄霧會稍微向前散射光，而煙霧則向各個方向均勻散射光。
+The direction of scattered light as it goes through the volumetric fog. A value close to ``1.0`` means almost all light is scattered forward. A value close to ``0.0`` means light is scattered equally in all directions. A value close to ``-1.0`` means light is scattered mostly backward. Fog and mist scatter light slightly forward, while smoke scatters light equally in all directions.
 
 .. rst-class:: classref-item-separator
 
@@ -2200,11 +2200,11 @@ The white reference value for tonemapping, which indicates where bright white is
 - |void| **set_volumetric_fog_density**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volumetric_fog_density**\ (\ )
 
-體積霧的基本\ *指數*\ 密度。將其設定為希望全域擁有的最低密度。\ :ref:`FogVolume<class_FogVolume>` 可用於增加或減少特定區域的密度。霧算繪如同在現實生活中一樣是指數式的。
+The base *exponential* density of the volumetric fog. Set this to the lowest density you want to have globally. :ref:`FogVolume<class_FogVolume>`\ s can be used to add to or subtract from this density in specific areas. Fog rendering is exponential as in real life.
 
-\ ``0.0`` 的值會禁用全域體積霧，同時允許 :ref:`FogVolume<class_FogVolume>` 在特定區域顯示體積霧。
+A value of ``0.0`` disables global volumetric fog while allowing :ref:`FogVolume<class_FogVolume>`\ s to display volumetric fog in specific areas.
 
-要使體積霧作為一種體積\ *照明*\ 解決方案，請將 :ref:`volumetric_fog_density<class_Environment_property_volumetric_fog_density>` 設定為最低的非零值（\ ``0.0001``\ ），然後將燈光的 :ref:`Light3D.light_volumetric_fog_energy<class_Light3D_property_light_volumetric_fog_energy>` 增加到 ``10000`` 和 ``100000`` 之間的值，以補償極低的密度。
+To make volumetric fog work as a volumetric *lighting* solution, set :ref:`volumetric_fog_density<class_Environment_property_volumetric_fog_density>` to the lowest non-zero value (``0.0001``) then increase lights' :ref:`Light3D.light_volumetric_fog_energy<class_Light3D_property_light_volumetric_fog_energy>` to values between ``10000`` and ``100000`` to compensate for the very low density.
 
 .. rst-class:: classref-item-separator
 
@@ -2221,7 +2221,7 @@ The white reference value for tonemapping, which indicates where bright white is
 - |void| **set_volumetric_fog_detail_spread**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volumetric_fog_detail_spread**\ (\ )
 
-視錐體素緩衝區長度的大小分佈。較高的值會壓縮更靠近相機的視錐體素，並將更多細節放置在更靠近相機的位置。
+The distribution of size down the length of the froxel buffer. A higher value compresses the froxels closer to the camera and places more detail closer to the camera.
 
 .. rst-class:: classref-item-separator
 
@@ -2238,7 +2238,7 @@ The white reference value for tonemapping, which indicates where bright white is
 - |void| **set_volumetric_fog_emission**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_volumetric_fog_emission**\ (\ )
 
-從體積霧發出的光。即使有自發光，體積霧也不會將光投射到其他表面上。自發光對於建立環境顏色很有用。由於體積霧效果僅使用單次散射，因此霧往往需要一點點自發光來柔化刺眼的陰影。
+The emitted light from the volumetric fog. Even with emission, volumetric fog will not cast light onto other surfaces. Emission is useful to establish an ambient color. As the volumetric fog effect uses single-scattering only, fog tends to need a little bit of emission to soften the harsh shadows.
 
 .. rst-class:: classref-item-separator
 
@@ -2255,7 +2255,7 @@ The white reference value for tonemapping, which indicates where bright white is
 - |void| **set_volumetric_fog_emission_energy**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volumetric_fog_emission_energy**\ (\ )
 
-從體積霧發出的光的亮度。
+The brightness of the emitted light from the volumetric fog.
 
 .. rst-class:: classref-item-separator
 
@@ -2272,9 +2272,9 @@ The white reference value for tonemapping, which indicates where bright white is
 - |void| **set_volumetric_fog_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_volumetric_fog_enabled**\ (\ )
 
-啟用體積霧效果。體積霧使用與螢幕對齊的視錐體素緩衝區，來計算短至中等範圍內的精確體積散射。體積霧與 :ref:`FogVolume<class_FogVolume>` 和燈光互動，以計算局部和全域的霧。體積霧使用一個基於消光、散射、和自發光的 PBR 單一散射模型，它以密度、反照率、和自發光的形式暴露給使用者。
+Enables the volumetric fog effect. Volumetric fog uses a screen-aligned froxel buffer to calculate accurate volumetric scattering in the short to medium range. Volumetric fog interacts with :ref:`FogVolume<class_FogVolume>`\ s and lights to calculate localized and global fog. Volumetric fog uses a PBR single-scattering model based on extinction, scattering, and emission which it exposes to users as density, albedo, and emission.
 
-\ **注意：**\ 體積霧只支援 Forward+ 算繪方式，不支援移動和相容模式。
+\ **Note:** Volumetric fog is only supported in the Forward+ rendering method, not Mobile or Compatibility.
 
 .. rst-class:: classref-item-separator
 
@@ -2291,11 +2291,11 @@ The white reference value for tonemapping, which indicates where bright white is
 - |void| **set_volumetric_fog_gi_inject**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volumetric_fog_gi_inject**\ (\ )
 
-衡量體積霧的反照率顏色中使用的全域照明的強度。值為\ ``0.0`` ，意味著全局照明不會影響體積霧。當 :ref:`volumetric_fog_gi_inject<class_Environment_property_volumetric_fog_gi_inject>` 設定高於\ ``0.0`` 時，會有很小的性能成本。
+Scales the strength of Global Illumination used in the volumetric fog's albedo color. A value of ``0.0`` means that Global Illumination will not impact the volumetric fog. :ref:`volumetric_fog_gi_inject<class_Environment_property_volumetric_fog_gi_inject>` has a small performance cost when set above ``0.0``.
 
-\ **注意：**\ 如果 :ref:`volumetric_fog_density<class_Environment_property_volumetric_fog_density>` 為 ``0.0``\ ，或 :ref:`volumetric_fog_albedo<class_Environment_property_volumetric_fog_albedo>` 是全黑的顏色，則該選項沒有可見效果。
+\ **Note:** This has no visible effect if :ref:`volumetric_fog_density<class_Environment_property_volumetric_fog_density>` is ``0.0`` or if :ref:`volumetric_fog_albedo<class_Environment_property_volumetric_fog_albedo>` is a fully black color.
 
-\ **注意：**\ 在使用 :ref:`volumetric_fog_gi_inject<class_Environment_property_volumetric_fog_gi_inject>` 時，只有 :ref:`VoxelGI<class_VoxelGI>` 和 SDFGI（\ :ref:`sdfgi_enabled<class_Environment_property_sdfgi_enabled>`\ ）會被考慮到。來自 :ref:`LightmapGI<class_LightmapGI>`\ 、\ :ref:`ReflectionProbe<class_ReflectionProbe>` 和 SSIL（參見 :ref:`ssil_enabled<class_Environment_property_ssil_enabled>`\ ）的全域照明將被體積霧所忽略。
+\ **Note:** Only :ref:`VoxelGI<class_VoxelGI>` and SDFGI (:ref:`sdfgi_enabled<class_Environment_property_sdfgi_enabled>`) are taken into account when using :ref:`volumetric_fog_gi_inject<class_Environment_property_volumetric_fog_gi_inject>`. Global illumination from :ref:`LightmapGI<class_LightmapGI>`, :ref:`ReflectionProbe<class_ReflectionProbe>` and SSIL (see :ref:`ssil_enabled<class_Environment_property_ssil_enabled>`) will be ignored by volumetric fog.
 
 .. rst-class:: classref-item-separator
 
@@ -2312,7 +2312,7 @@ The white reference value for tonemapping, which indicates where bright white is
 - |void| **set_volumetric_fog_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volumetric_fog_length**\ (\ )
 
-計算體積霧的距離。增加以在更大範圍內計算霧，減少以在不需要長範圍時新增更多細節。為了獲得最佳品質的霧，請將其保持在盡可能低的水平。另請參閱 :ref:`ProjectSettings.rendering/environment/volumetric_fog/volume_depth<class_ProjectSettings_property_rendering/environment/volumetric_fog/volume_depth>`\ 。
+The distance over which the volumetric fog is computed. Increase to compute fog over a greater range, decrease to add more detail when a long range is not needed. For best quality fog, keep this as low as possible. See also :ref:`ProjectSettings.rendering/environment/volumetric_fog/volume_depth<class_ProjectSettings_property_rendering/environment/volumetric_fog/volume_depth>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2329,9 +2329,9 @@ The white reference value for tonemapping, which indicates where bright white is
 - |void| **set_volumetric_fog_sky_affect**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volumetric_fog_sky_affect**\ (\ )
 
-使用體積霧影響天空時使用的係數。\ ``1.0``\ 表示體積霧可以完全遮蔽天空。較低的值會減少體積霧對天空算繪的影響，\ ``0.0`` 根本不會影響天空的算繪。
+The factor to use when affecting the sky with volumetric fog. ``1.0`` means that volumetric fog can fully obscure the sky. Lower values reduce the impact of volumetric fog on sky rendering, with ``0.0`` not affecting sky rendering at all.
 
-\ **注意：**\ 即使 :ref:`volumetric_fog_density<class_Environment_property_volumetric_fog_density>` 為 ``0.0``\ ，\ :ref:`volumetric_fog_sky_affect<class_Environment_property_volumetric_fog_sky_affect>` 也會影響 :ref:`FogVolume<class_FogVolume>`\ 。如果發現 :ref:`FogVolume<class_FogVolume>` 在仰望天空時正在消失，請將 :ref:`volumetric_fog_sky_affect<class_Environment_property_volumetric_fog_sky_affect>` 設置為 ``1.0``\ 。
+\ **Note:** :ref:`volumetric_fog_sky_affect<class_Environment_property_volumetric_fog_sky_affect>` also affects :ref:`FogVolume<class_FogVolume>`\ s, even if :ref:`volumetric_fog_density<class_Environment_property_volumetric_fog_density>` is ``0.0``. If you notice :ref:`FogVolume<class_FogVolume>`\ s are disappearing when looking towards the sky, set :ref:`volumetric_fog_sky_affect<class_Environment_property_volumetric_fog_sky_affect>` to ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -2348,7 +2348,7 @@ The white reference value for tonemapping, which indicates where bright white is
 - |void| **set_volumetric_fog_temporal_reprojection_amount**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volumetric_fog_temporal_reprojection_amount**\ (\ )
 
-將最後一影格與目前影格混合的量。更高的數值會導致體積霧更平滑，但會使“重影”變得更糟。更低的值會減少重影，但會導致每影格時間抖動變得可見。
+The amount by which to blend the last frame with the current frame. A higher number results in smoother volumetric fog, but makes "ghosting" much worse. A lower value reduces ghosting but can result in the per-frame temporal jitter becoming visible.
 
 .. rst-class:: classref-item-separator
 
@@ -2365,7 +2365,7 @@ The white reference value for tonemapping, which indicates where bright white is
 - |void| **set_volumetric_fog_temporal_reprojection_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_volumetric_fog_temporal_reprojection_enabled**\ (\ )
 
-在體積霧中啟用時間重投影。時間重投影將目前影格的體積霧與上一影格的體積霧混合，以平滑鋸齒狀的邊緣。性能成本最小；但是，它會導致移動 :ref:`FogVolume<class_FogVolume>` 和 :ref:`Light3D<class_Light3D>` 時“重影”，並在它們身後留下痕跡。啟用時間重投影時，儘量避免將 :ref:`FogVolume<class_FogVolume>` 或 :ref:`Light3D<class_Light3D>` 移動得太快。短暫的動態光照效果應將 :ref:`Light3D.light_volumetric_fog_energy<class_Light3D_property_light_volumetric_fog_energy>` 設定為 ``0.0`` 以避免重影。
+Enables temporal reprojection in the volumetric fog. Temporal reprojection blends the current frame's volumetric fog with the last frame's volumetric fog to smooth out jagged edges. The performance cost is minimal; however, it leads to moving :ref:`FogVolume<class_FogVolume>`\ s and :ref:`Light3D<class_Light3D>`\ s "ghosting" and leaving a trail behind them. When temporal reprojection is enabled, try to avoid moving :ref:`FogVolume<class_FogVolume>`\ s or :ref:`Light3D<class_Light3D>`\ s too fast. Short-lived dynamic lighting effects should have :ref:`Light3D.light_volumetric_fog_energy<class_Light3D_property_light_volumetric_fog_energy>` set to ``0.0`` to avoid ghosting.
 
 .. rst-class:: classref-section-separator
 
@@ -2373,8 +2373,8 @@ The white reference value for tonemapping, which indicates where bright white is
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_Environment_method_get_glow_level:
 
@@ -2382,7 +2382,7 @@ The white reference value for tonemapping, which indicates where bright white is
 
 :ref:`float<class_float>` **get_glow_level**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Environment_method_get_glow_level>`
 
-返回輝光級別 ``idx`` 的強度。
+Returns the intensity of the glow level ``idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -2394,14 +2394,14 @@ The white reference value for tonemapping, which indicates where bright white is
 
 |void| **set_glow_level**\ (\ idx\: :ref:`int<class_int>`, intensity\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Environment_method_set_glow_level>`
 
-設定輝光級別 ``idx`` 的強度。大於 ``0.0`` 時啟用該級別。每個級別都依賴於前一個級別。這意味著啟用較高的輝光等級會減慢輝光效果的算繪速度，即使之前的等級沒有啟用。
+Sets the intensity of the glow level ``idx``. A value above ``0.0`` enables the level. Each level relies on the previous level. This means that enabling higher glow levels will slow down the glow effect rendering, even if previous levels aren't enabled.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

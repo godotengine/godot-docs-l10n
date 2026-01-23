@@ -5,25 +5,25 @@
 VisualShaderNodeExpression
 ==========================
 
-**繼承：** :ref:`VisualShaderNodeGroupBase<class_VisualShaderNodeGroupBase>` **<** :ref:`VisualShaderNodeResizableBase<class_VisualShaderNodeResizableBase>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`VisualShaderNodeGroupBase<class_VisualShaderNodeGroupBase>` **<** :ref:`VisualShaderNodeResizableBase<class_VisualShaderNodeResizableBase>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`VisualShaderNodeGlobalExpression<class_VisualShaderNodeGlobalExpression>`
+**Inherited By:** :ref:`VisualShaderNodeGlobalExpression<class_VisualShaderNodeGlobalExpression>`
 
-用Godot著色語言編寫的自訂視覺化著色器圖形運算式。
+A custom visual shader graph expression written in Godot Shading Language.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-自訂 Godot 著色器語言運算式，有自訂數量的輸入和輸出埠。
+Custom Godot Shading Language expression, with a custom number of input and output ports.
 
-所提供的程式碼會直接注入到著色器圖中配對的著色器函式中（\ ``vertex``\ 、\ ``fragment`` 或 ``light``\ ），所以不能用於宣告函式、varying、uniform 或全域常數。這種全域定義見 :ref:`VisualShaderNodeGlobalExpression<class_VisualShaderNodeGlobalExpression>`\ 。
+The provided code is directly injected into the graph's matching shader function (``vertex``, ``fragment``, or ``light``), so it cannot be used to declare functions, varyings, uniforms, or global constants. See :ref:`VisualShaderNodeGlobalExpression<class_VisualShaderNodeGlobalExpression>` for such global definitions.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ VisualShaderNodeExpression
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_VisualShaderNodeExpression_property_expression:
 
@@ -52,14 +52,14 @@ VisualShaderNodeExpression
 - |void| **set_expression**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_expression**\ (\ )
 
-Godot 著色器語言中的運算式，它將被注入到圖形配對的著色器函式（\ ``vertex``\ 、\ ``fragment`` 或 ``light``\ ）的開頭，因此不能用於宣告函式、varying、uniform 或全域常數。
+An expression in Godot Shading Language, which will be injected at the start of the graph's matching shader function (``vertex``, ``fragment``, or ``light``), and thus cannot be used to declare functions, varyings, uniforms, or global constants.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

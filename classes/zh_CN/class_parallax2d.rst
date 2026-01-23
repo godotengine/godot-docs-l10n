@@ -5,30 +5,30 @@
 Parallax2D
 ==========
 
-**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-用于创建视差滚动背景的节点。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-**Parallax2D** 可用于创造视差效果。使用 :ref:`scroll_scale<class_Parallax2D_property_scroll_scale>` 可以在相机移动时，以不同的相对速度移动，这样就在 2D 游戏中创造出了深度的错觉。如果需要手动滚动，也可以使用 :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>` 忽略 :ref:`Camera2D<class_Camera2D>` 的位置。
-
-\ **注意：**\ 如果 :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>` 为 ``false`` 或者修改了 :ref:`screen_offset<class_Parallax2D_property_screen_offset>`\ ，那么该节点进入场景树后发生的任何位移都会被覆盖。
+A node used to create a parallax scrolling background.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`2D 视差 <../tutorials/2d/2d_parallax>`
+A **Parallax2D** is used to create a parallax effect. It can move at a different speed relative to the camera movement using :ref:`scroll_scale<class_Parallax2D_property_scroll_scale>`. This creates an illusion of depth in a 2D game. If manual scrolling is desired, the :ref:`Camera2D<class_Camera2D>` position can be ignored with :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>`.
+
+\ **Note:** Any changes to this node's position made after it enters the scene tree will be overridden if :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>` is ``false`` or :ref:`screen_offset<class_Parallax2D_property_screen_offset>` is modified.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`2D Parallax <../tutorials/2d/2d_parallax>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -63,8 +63,8 @@ Parallax2D
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_Parallax2D_property_autoscroll:
 
@@ -77,7 +77,7 @@ Parallax2D
 - |void| **set_autoscroll**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_autoscroll**\ (\ )
 
-偏移量自动滚动的速度，单位为像素每秒。
+Velocity at which the offset scrolls automatically, in pixels per second.
 
 .. rst-class:: classref-item-separator
 
@@ -94,7 +94,7 @@ Parallax2D
 - |void| **set_follow_viewport**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_follow_viewport**\ (\ )
 
-如果为 ``true``\ ，则会根据当前相机的位置对 **Parallax2D** 进行偏移。如果 **Parallax2D** 所处的 :ref:`CanvasLayer<class_CanvasLayer>` 与当前相机不同，也可以使用 :ref:`CanvasLayer.follow_viewport_enabled<class_CanvasLayer_property_follow_viewport_enabled>` 进行匹配。
+If ``true``, this **Parallax2D** is offset by the current camera's position. If the **Parallax2D** is in a :ref:`CanvasLayer<class_CanvasLayer>` separate from the current camera, it may be desired to match the value with :ref:`CanvasLayer.follow_viewport_enabled<class_CanvasLayer_property_follow_viewport_enabled>`.
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ Parallax2D
 - |void| **set_ignore_camera_scroll**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ignore_camera_scroll**\ (\ )
 
-如果为 ``true``\ ，则 **Parallax2D** 的位置不受相机位置的影响。
+If ``true``, **Parallax2D**'s position is not affected by the position of the camera.
 
 .. rst-class:: classref-item-separator
 
@@ -128,7 +128,7 @@ Parallax2D
 - |void| **set_limit_begin**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_limit_begin**\ (\ )
 
-开始滚动的左上角限制。如果相机超出这个限制，\ **Parallax2D** 将停止滚动。必须低于 :ref:`limit_end<class_Parallax2D_property_limit_end>` 减去视口大小才能正常工作。
+Top-left limits for scrolling to begin. If the camera is outside of this limit, the **Parallax2D** stops scrolling. Must be lower than :ref:`limit_end<class_Parallax2D_property_limit_end>` minus the viewport size to work.
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ Parallax2D
 - |void| **set_limit_end**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_limit_end**\ (\ )
 
-滚动结束的右下角限制。如果相机超出这个限制，\ **Parallax2D** 将停止滚动。必须高于 :ref:`limit_begin<class_Parallax2D_property_limit_begin>` 和视口大小的总和才能工作。
+Bottom-right limits for scrolling to end. If the camera is outside of this limit, the **Parallax2D** will stop scrolling. Must be higher than :ref:`limit_begin<class_Parallax2D_property_limit_begin>` and the viewport size combined to work.
 
 .. rst-class:: classref-item-separator
 
@@ -162,7 +162,7 @@ Parallax2D
 - |void| **set_repeat_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_repeat_size**\ (\ )
 
-根据这个值将每个子节点的 :ref:`Texture2D<class_Texture2D>` 进行重复和偏移。滚动时该节点的位置会发生循环，取值大于屏幕尺寸时就会造成背景无限滚动的错觉。某个轴如果为 ``0``\ ，则 :ref:`Texture2D<class_Texture2D>` 不会重复。
+Repeats the :ref:`Texture2D<class_Texture2D>` of each of this node's children and offsets them by this value. When scrolling, the node's position loops, giving the illusion of an infinite scrolling background if the values are larger than the screen size. If an axis is set to ``0``, the :ref:`Texture2D<class_Texture2D>` will not be repeated.
 
 .. rst-class:: classref-item-separator
 
@@ -179,7 +179,7 @@ Parallax2D
 - |void| **set_repeat_times**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_repeat_times**\ (\ )
 
-覆盖纹理重复的次数。每个纹理副本都会相对于前一个往后挪 :ref:`repeat_size<class_Parallax2D_property_repeat_size>`\ 。适用于相机远离的情况。
+Overrides the amount of times the texture repeats. Each texture copy spreads evenly from the original by :ref:`repeat_size<class_Parallax2D_property_repeat_size>`. Useful for when zooming out with a camera.
 
 .. rst-class:: classref-item-separator
 
@@ -196,7 +196,7 @@ Parallax2D
 - |void| **set_screen_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_screen_offset**\ (\ )
 
-用于滚动 **Parallax2D** 的偏移量。\ :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>` 为 ``false`` 时这个值会自动更新。
+Offset used to scroll this **Parallax2D**. This value is updated automatically unless :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -213,9 +213,9 @@ Parallax2D
 - |void| **set_scroll_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_scroll_offset**\ (\ )
 
-**Parallax2D** 的偏移量。与 :ref:`screen_offset<class_Parallax2D_property_screen_offset>` 和 :ref:`Node2D.position<class_Node2D_property_position>` 类似，但是不会被覆盖。
+The **Parallax2D**'s offset. Similar to :ref:`screen_offset<class_Parallax2D_property_screen_offset>` and :ref:`Node2D.position<class_Node2D_property_position>`, but will not be overridden.
 
-\ **注意：**\ 如果 :ref:`repeat_size<class_Parallax2D_property_repeat_size>` 大于 ``0``\ ，则这个值会发生循环。
+\ **Note:** Values will loop if :ref:`repeat_size<class_Parallax2D_property_repeat_size>` is set higher than ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -232,16 +232,16 @@ Parallax2D
 - |void| **set_scroll_scale**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_scroll_scale**\ (\ )
 
-**Parallax2D** 最终偏移量的乘数。可用于模拟相对于相机的距离。
+Multiplier to the final **Parallax2D**'s offset. Can be used to simulate distance from the camera.
 
-例如，\ ``1`` 的值表示滚动速度与相机相同。大于 ``1`` 的值表示滚动速度更快，使物体看起来更近。小于 ``1`` 的值表示滚动速度更慢，使物体看起来更远，而 ``0`` 的值表示物体完全停止。
+For example, a value of ``1`` scrolls at the same speed as the camera. A value greater than ``1`` scrolls faster, making objects appear closer. Less than ``1`` scrolls slower, making objects appear further, and a value of ``0`` stops the objects completely.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

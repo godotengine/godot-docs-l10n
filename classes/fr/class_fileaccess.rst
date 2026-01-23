@@ -14,9 +14,9 @@ Provides methods for file reading and writing operations.
 Description
 -----------
 
-This class can be used to permanently store data in the user device's file system and to read from it. This is useful for storing game save data or player configuration files.
+Cette classe peut être implémentée pour stocker de manière permanente des données dans le système de fichier de l'appareil de l'utilisateur, et pour en lire. C'est utile pour stocker des données de sauvegardes ou des fichiers de configuration de jeux.
 
-\ **Example:** How to write and read from a file. The file named ``"save_game.dat"`` will be stored in the user data folder, as specified in the :doc:`Data paths <../tutorials/io/data_paths>` documentation:
+\ **Example:** Comment écrire et lire dans un fichier. Le fichier nommé ``"save_game.dat"`` sera stocké dans le dossier "data" de l'utilisateur, comme indiqué dans la :doc:`Data paths <../tutorials/io/data_paths>` documentation :
 
 
 .. tabs::
@@ -49,13 +49,13 @@ This class can be used to permanently store data in the user device's file syste
 
 
 
-A **FileAccess** instance has its own file cursor, which is the position in bytes in the file where the next read/write operation will occur. Functions such as :ref:`get_8()<class_FileAccess_method_get_8>`, :ref:`get_16()<class_FileAccess_method_get_16>`, :ref:`store_8()<class_FileAccess_method_store_8>`, and :ref:`store_16()<class_FileAccess_method_store_16>` will move the file cursor forward by the number of bytes read/written. The file cursor can be moved to a specific position using :ref:`seek()<class_FileAccess_method_seek>` or :ref:`seek_end()<class_FileAccess_method_seek_end>`, and its position can be retrieved using :ref:`get_position()<class_FileAccess_method_get_position>`.
+Une instance de **FileAccess** a son propre curseur de fichier, qui est la position en bytes dans le fichier ou la prochaine opération de lecture/écriture aura lieu. Les fonctions telles que :ref:`get_8()<class_FileAccess_method_get_8>`, :ref:`get_16()<class_FileAccess_method_get_16>`, :ref:`store_8()<class_FileAccess_method_store_8>`, et\ :ref:`store_16()<class_FileAccess_method_store_16>` déplaceront le curseur de fichier en avant du nombre de bytes lus/écrits. Le curseur de fichier peut être déplacé à une position spécifiée en utilisant la :ref:`seek()<class_FileAccess_method_seek>` ou\ :ref:`seek_end()<class_FileAccess_method_seek_end>`, et sa position peut être récupérée en utilisant :ref:`get_position()<class_FileAccess_method_get_position>`.
 
-A **FileAccess** instance will close its file when the instance is freed. Since it inherits :ref:`RefCounted<class_RefCounted>`, this happens automatically when it is no longer in use. :ref:`close()<class_FileAccess_method_close>` can be called to close it earlier. In C#, the reference must be disposed manually, which can be done with the ``using`` statement or by calling the ``Dispose`` method directly.
+Une instance de **FileAccess** est fermée lorsque sont instance est libérée. Étant donné qu'elle hérite de :ref:`RefCounted<class_RefCounted>`, cette opération est réalisée automatiquement lorsqu'elle n'est plus utilisée. :ref:`close()<class_FileAccess_method_close>` peut être appelée pour la fermer plus tôt. En C#, la référence peut être supprimée manuellement, ce qui peut être réalisé avec l'instruction ``using`` ou en appelant la méthode ``Dispose`` directement.
 
-\ **Note:** To access project resources once exported, it is recommended to use :ref:`ResourceLoader<class_ResourceLoader>` instead of **FileAccess**, as some files are converted to engine-specific formats and their original source files might not be present in the exported PCK package. If using **FileAccess**, make sure the file is included in the export by changing its import mode to **Keep File (exported as is)** in the Import dock, or, for files where this option is not available, change the non-resource export filter in the Export dialog to include the file's extension (e.g. ``*.txt``).
+\ **Note:** Pour accéder aux ressources du projet une fois exporté, il est recommandé d'utiliser :ref:`ResourceLoader<class_ResourceLoader>` au lieu de **FileAccess**, car certains fichiers sont convertis en formats spécifiques au moteur et leurs fichiers sources originaux pourraient ne pas être présents dans le paquet PCK exporté. Si vous utilisez **FileAccess**, assurez-vous que le fichier est inclus dans l'exportation en changeant son mode d'importation à **Keep File (exported as is)** dans le dock d'importation, ou, pour les fichiers où cette option n'est pas disponible, modifiez le filtre d'exportation non-ressource dans le dialogue Exporter pour inclure l'extension du fichier (e.g. ``*.txt``).
 
-\ **Note:** Files are automatically closed only if the process exits "normally" (such as by clicking the window manager's close button or pressing :kbd:`Alt + F4`). If you stop the project execution by pressing :kbd:`F8` while the project is running, the file won't be closed as the game process will be killed. You can work around this by calling :ref:`flush()<class_FileAccess_method_flush>` at regular intervals.
+\ **Note : ** Les fichiers sont automatiquement fermés seulement si le processus termine « normalement » (comme en cliquant sur le bouton de fermeture du gestionnaire de fenêtre ou en appuyant sur :kbd:`Alt + F4`). Si vous arrêtez l'exécution du projet en appuyant sur :kbd:`F8` pendant que le projet est en cours d'exécution, le fichier ne sera pas fermé car le processus de jeu sera arrêté. Vous pouvez contourner cela en appelant :ref:`flush()<class_FileAccess_method_flush>` à intervalles réguliers.
 
 .. rst-class:: classref-introduction-group
 
@@ -809,9 +809,9 @@ Returns the next 16 bits from the file as a half-precision floating-point number
 
 :ref:`bool<class_bool>` **get_hidden_attribute**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_hidden_attribute>`
 
-Returns ``true`` if the **hidden** attribute is set on the file at the given path.
+Retourne ``true`` si l'attribut **hidden** est défini sur le fichier du chemin donné.
 
-\ **Note:** This method is implemented on iOS, BSD, macOS, and Windows.
+\ **Note :** Cette méthode est disponible sur iOS, BSD, macOS et Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -935,9 +935,9 @@ Returns the file cursor's position in bytes from the beginning of the file. This
 
 :ref:`bool<class_bool>` **get_read_only_attribute**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_read_only_attribute>`
 
-Returns ``true`` if the **read only** attribute is set on the file at the given path.
+Retourne ``true`` si l'attribut **read only** est défini sur le fichier sur le chemin donné.
 
-\ **Note:** This method is implemented on iOS, BSD, macOS, and Windows.
+\ **Note:** Cette méthode est implémentée sur iOS, BSD, macOS et Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -975,7 +975,7 @@ Returns an SHA-256 :ref:`String<class_String>` representing the file at the give
 
 :ref:`int<class_int>` **get_size**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_size>`
 
-Returns the size of the file at the given path, in bytes, or ``-1`` on error.
+Renvoie la taille du fichier sur le chemin donné, en bytes, ou ``-1`` en cas d'erreur.
 
 .. rst-class:: classref-item-separator
 
@@ -1187,9 +1187,9 @@ Writes file extended attribute with name ``attribute_name`` as a UTF-8 encoded s
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_hidden_attribute**\ (\ file\: :ref:`String<class_String>`, hidden\: :ref:`bool<class_bool>`\ ) |static| :ref:`🔗<class_FileAccess_method_set_hidden_attribute>`
 
-Sets file **hidden** attribute.
+Ajoute l'attribut **hidden** au fichier.
 
-\ **Note:** This method is implemented on iOS, BSD, macOS, and Windows.
+\ **Note :** Cette méthode est implémentée sur OS, BSD, macOS, et Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -1201,9 +1201,9 @@ Sets file **hidden** attribute.
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_read_only_attribute**\ (\ file\: :ref:`String<class_String>`, ro\: :ref:`bool<class_bool>`\ ) |static| :ref:`🔗<class_FileAccess_method_set_read_only_attribute>`
 
-Sets file **read only** attribute.
+Ajoute l'attribut **read only** au fichier
 
-\ **Note:** This method is implemented on iOS, BSD, macOS, and Windows.
+\ **Note :** Cette méthode est implémentée sur iOS, BSD, macOS, et Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -1229,13 +1229,13 @@ Sets file UNIX permissions.
 
 :ref:`bool<class_bool>` **store_8**\ (\ value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FileAccess_method_store_8>`
 
-Stores an integer as 8 bits in the file. This advances the file cursor by 1 byte. Returns ``true`` if the operation is successful.
+Enregistre un entier sur 8 bits dans le fichier. Cela avance le curseur de fichier de 8 bytes. Retourne ``true`` si l'opération est réussie.
 
-\ **Note:** The ``value`` should lie in the interval ``[0, 255]``. Any other value will overflow and wrap around.
+\ **Note :** La ``value`` doit se situer dans l'intervalle ``[0, 255]``. Toute autre valeur va déborder et boucler.
 
-\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
+\ **Note :** Si une erreur survient, la valeur résultante de l'indicateur de position du fichier est indéterminée.
 
-To store a signed integer, use :ref:`store_64()<class_FileAccess_method_store_64>`, or convert it manually (see :ref:`store_16()<class_FileAccess_method_store_16>` for an example).
+Pour stocker un entier signé, utilisez :ref:`store_64()<class_FileAccess_method_store_64>` ou convertissez-le manuellement (voir :ref:`store_16()<class_FileAccess_method_store_16>` pour un exemple).
 
 .. rst-class:: classref-item-separator
 
@@ -1247,13 +1247,13 @@ To store a signed integer, use :ref:`store_64()<class_FileAccess_method_store_64
 
 :ref:`bool<class_bool>` **store_16**\ (\ value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FileAccess_method_store_16>`
 
-Stores an integer as 16 bits in the file. This advances the file cursor by 2 bytes. Returns ``true`` if the operation is successful.
+Enregistre un entier au format 16 bits dans le fichier. Cette opération avance le curseur de fichier de 2 bytes. Retourne ``true`` si l'opération est réussie.
 
-\ **Note:** The ``value`` should lie in the interval ``[0, 2^16 - 1]``. Any other value will overflow and wrap around.
+\ **Note :** La ``value`` doit entre dans l'intervalle ``[0, 2^16 - 1]``. Toute autre valeur dépassera et sera alors réduite à cet intervalle.
 
-\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
+\ **Note:** Si une erreur se produit, la valeur résultante de l'indicateur de position du fichier est indéterminée.
 
-To store a signed integer, use :ref:`store_64()<class_FileAccess_method_store_64>` or store a signed integer from the interval ``[-2^15, 2^15 - 1]`` (i.e. keeping one bit for the signedness) and compute its sign manually when reading. For example:
+Pour stocker un entier signé, utilisez :ref:`store_64()<class_FileAccess_method_store_64>` ou stockez un entier signé à partir de l'intervalle ``[-2^15, 2^15 - 1]`` (c.-à-d. garder un bit pour la signature) et calculer son signe manuellement lors de la lecture. Par exemple :
 
 
 .. tabs::

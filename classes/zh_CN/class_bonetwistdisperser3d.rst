@@ -5,14 +5,14 @@
 BoneTwistDisperser3D
 ====================
 
-**继承：** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 A node that propagates and disperses the child bone's twist to the parent bones.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
 This **BoneTwistDisperser3D** allows for smooth twist interpolation between multiple bones by dispersing the end bone's twist to the parents. This only changes the twist without changing the global position of each joint.
 
@@ -22,8 +22,8 @@ This is useful for smoothly twisting bones in combination with :ref:`CopyTransfo
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ This is useful for smoothly twisting bones in combination with :ref:`CopyTransfo
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -110,8 +110,8 @@ This is useful for smoothly twisting bones in combination with :ref:`CopyTransfo
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_BoneTwistDisperser3D_DisperseMode:
 
@@ -125,7 +125,7 @@ enum **DisperseMode**: :ref:`🔗<enum_BoneTwistDisperser3D_DisperseMode>`
 
 :ref:`DisperseMode<enum_BoneTwistDisperser3D_DisperseMode>` **DISPERSE_MODE_EVEN** = ``0``
 
-分配数值，使其从 ``0.0`` 到 ``1.0`` 单调递增，并确保所有权重相等。例如，如果有五个关节，从根骨骼开始的数值将依次为 ``0.2``\ 、\ ``0.4``\ 、\ ``0.6``\ 、\ ``0.8`` 和 ``1.0``\ 。
+Assign amounts so that they monotonically increase from ``0.0`` to ``1.0``, ensuring all weights are equal. For example, with five joints, the amounts would be ``0.2``, ``0.4``, ``0.6``, ``0.8``, and ``1.0`` starting from the root bone.
 
 .. _class_BoneTwistDisperser3D_constant_DISPERSE_MODE_WEIGHTED:
 
@@ -151,8 +151,8 @@ When :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_BoneTwistDisperser3D_property_mutable_bone_axes:
 
@@ -184,7 +184,7 @@ If ``false``, the solver retrieves the bone axis from the bone rest and caches i
 - |void| **set_setting_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_setting_count**\ (\ )
 
-设置的数量。
+The number of settings.
 
 .. rst-class:: classref-section-separator
 
@@ -192,8 +192,8 @@ If ``false``, the solver retrieves the bone axis from the bone rest and caches i
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_BoneTwistDisperser3D_method_clear_settings:
 
@@ -201,7 +201,7 @@ If ``false``, the solver retrieves the bone axis from the bone rest and caches i
 
 |void| **clear_settings**\ (\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_clear_settings>`
 
-清空所有设置。
+Clears all settings.
 
 .. rst-class:: classref-item-separator
 
@@ -237,7 +237,7 @@ Returns whether to use automatic amount assignment or to allow manual assignment
 
 :ref:`int<class_int>` **get_end_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_end_bone>`
 
-返回骨骼链末尾骨骼的索引。
+Returns the end bone index of the bone chain.
 
 .. rst-class:: classref-item-separator
 
@@ -261,7 +261,7 @@ Returns the tail direction of the end bone of the bone chain when :ref:`is_end_b
 
 :ref:`String<class_String>` **get_end_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_end_bone_name>`
 
-返回骨骼链末尾骨骼的名称。
+Returns the end bone name of the bone chain.
 
 .. rst-class:: classref-item-separator
 
@@ -273,7 +273,7 @@ Returns the tail direction of the end bone of the bone chain when :ref:`is_end_b
 
 :ref:`int<class_int>` **get_joint_bone**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_joint_bone>`
 
-返回骨骼链关节列表中位于 ``joint`` 的骨骼的索引。
+Returns the bone index at ``joint`` in the bone chain's joint list.
 
 .. rst-class:: classref-item-separator
 
@@ -285,7 +285,7 @@ Returns the tail direction of the end bone of the bone chain when :ref:`is_end_b
 
 :ref:`String<class_String>` **get_joint_bone_name**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_joint_bone_name>`
 
-返回骨骼链关节列表中位于 ``joint`` 的骨骼的名称。
+Returns the bone name at ``joint`` in the bone chain's joint list.
 
 .. rst-class:: classref-item-separator
 
@@ -297,7 +297,7 @@ Returns the tail direction of the end bone of the bone chain when :ref:`is_end_b
 
 :ref:`int<class_int>` **get_joint_count**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_joint_count>`
 
-返回骨骼链关节列表中的关节数量。
+Returns the joint count of the bone chain's joint list.
 
 .. rst-class:: classref-item-separator
 
@@ -349,7 +349,7 @@ This bone is either the end of the chain or its parent, depending on :ref:`is_en
 
 :ref:`int<class_int>` **get_root_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_root_bone>`
 
-返回骨骼链根骨骼的索引。
+Returns the root bone index of the bone chain.
 
 .. rst-class:: classref-item-separator
 
@@ -361,7 +361,7 @@ This bone is either the end of the chain or its parent, depending on :ref:`is_en
 
 :ref:`String<class_String>` **get_root_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_root_bone_name>`
 
-返回骨骼链根骨骼的名称。
+Returns the root bone name of the bone chain.
 
 .. rst-class:: classref-item-separator
 
@@ -445,7 +445,7 @@ Sets whether to use automatic amount assignment or to allow manual assignment.
 
 |void| **set_end_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_end_bone>`
 
-设置骨骼链中末端骨骼的索引。
+Sets the end bone index of the bone chain.
 
 .. rst-class:: classref-item-separator
 
@@ -457,7 +457,7 @@ Sets whether to use automatic amount assignment or to allow manual assignment.
 
 |void| **set_end_bone_direction**\ (\ index\: :ref:`int<class_int>`, bone_direction\: :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_end_bone_direction>`
 
-当 :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>` 为 ``true`` 时，设置骨骼链中末端骨骼的尾部方向。
+Sets the end bone tail direction of the bone chain when :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -483,9 +483,9 @@ Sets the end bone name of the bone chain.
 
 |void| **set_extend_end_bone**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_extend_end_bone>`
 
-如果 ``enabled`` 为 ``true``\ ，则会延伸末端骨骼形成尾部。
+If ``enabled`` is ``true``, the end bone is extended to have a tail.
 
-如果 ``enabled`` 为 ``false``\ ，则 :ref:`get_reference_bone()<class_BoneTwistDisperser3D_method_get_reference_bone>` 会成为末端骨骼的父骨骼，并使用到末端骨骼的向量作为扭转轴。
+If ``enabled`` is ``false``, :ref:`get_reference_bone()<class_BoneTwistDisperser3D_method_get_reference_bone>` becomes a parent of the end bone and it uses the vector to the end bone as a twist axis.
 
 .. rst-class:: classref-item-separator
 
@@ -509,7 +509,7 @@ Sets the twist amount at ``joint`` in the bone chain's joint list when :ref:`get
 
 |void| **set_root_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_root_bone>`
 
-设置骨骼链中根骨骼的索引。
+Sets the root bone index of the bone chain.
 
 .. rst-class:: classref-item-separator
 
@@ -521,7 +521,7 @@ Sets the twist amount at ``joint`` in the bone chain's joint list when :ref:`get
 
 |void| **set_root_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_root_bone_name>`
 
-设置骨骼链中根骨骼的名称。
+Sets the root bone name of the bone chain.
 
 .. rst-class:: classref-item-separator
 
@@ -565,12 +565,12 @@ Sets the position at which to divide the segment between joints for weight assig
 
 For example, when ``weight_position`` is ``0.5``, if two bone segments with a length of ``1.0`` exist between three joints, weights are assigned to each joint from root to end at ratios of ``0.5``, ``1.0``, and ``0.5``. Then amounts become ``0.25``, ``0.75``, and ``1.0`` respectively.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

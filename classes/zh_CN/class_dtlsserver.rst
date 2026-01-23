@@ -5,18 +5,18 @@
 DTLSServer
 ==========
 
-**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-实现 DTLS 服务器的辅助类。
+Helper class to implement a DTLS server.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-该类用于存储 DTLS 服务器的状态。在 :ref:`setup()<class_DTLSServer_method_setup>` 之后，它将连接的 :ref:`PacketPeerUDP<class_PacketPeerUDP>` 转换为 :ref:`PacketPeerDTLS<class_PacketPeerDTLS>`\ ，通过 :ref:`take_connection()<class_DTLSServer_method_take_connection>` 接受它们作为 DTLS 客户端。在底层，这个类用于存储服务器的 DTLS 状态和 cookie。为什么需要状态和 cookie 的原因不在本文档的范围内。
+This class is used to store the state of a DTLS server. Upon :ref:`setup()<class_DTLSServer_method_setup>` it converts connected :ref:`PacketPeerUDP<class_PacketPeerUDP>` to :ref:`PacketPeerDTLS<class_PacketPeerDTLS>` accepting them via :ref:`take_connection()<class_DTLSServer_method_take_connection>` as DTLS clients. Under the hood, this class is used to store the DTLS state and cookies of the server. The reason of why the state and cookies are needed is outside of the scope of this documentation.
 
-下面是一个如何使用它的小例子：
+Below a small example of how to use it:
 
 
 .. tabs::
@@ -32,8 +32,8 @@ DTLSServer
 
     func _ready():
         server.listen(4242)
-        var key = load("key.key") # 你的私钥。
-        var cert = load("cert.crt") # 你的 X509 证书。
+        var key = load("key.key") # Your private key.
+        var cert = load("cert.crt") # Your X509 certificate.
         dtls.setup(TlsOptions.server(key, cert))
 
     func _process(delta):
@@ -41,16 +41,16 @@ DTLSServer
             var peer = server.take_connection()
             var dtls_peer = dtls.take_connection(peer)
             if dtls_peer.get_status() != PacketPeerDTLS.STATUS_HANDSHAKING:
-                continue # 由于 cookie 交换，50% 的连接会失败，这是正常现象。
-            print("对等体已连接！")
+                continue # It is normal that 50% of the connections fails due to cookie exchange.
+            print("Peer connected!")
             peers.append(dtls_peer)
 
         for p in peers:
-            p.poll() # 必须轮询以更新状态。
+            p.poll() # Must poll to update the state.
             if p.get_status() == PacketPeerDTLS.STATUS_CONNECTED:
                 while p.get_available_packet_count() > 0:
-                    print("从客户端收到消息：%s" % p.get_packet().get_string_from_utf8())
-                    p.put_packet("你好 DTLS 客户端".to_utf8_buffer())
+                    print("Received message from client: %s" % p.get_packet().get_string_from_utf8())
+                    p.put_packet("Hello DTLS client".to_utf8_buffer())
 
  .. code-tab:: csharp
 
@@ -66,8 +66,8 @@ DTLSServer
         public override void _Ready()
         {
             _server.Listen(4242);
-            var key = GD.Load<CryptoKey>("key.key"); // 你的私钥。
-            var cert = GD.Load<X509Certificate>("cert.crt"); // 你的 X509 证书。
+            var key = GD.Load<CryptoKey>("key.key"); // Your private key.
+            var cert = GD.Load<X509Certificate>("cert.crt"); // Your X509 certificate.
             _dtls.Setup(TlsOptions.Server(key, cert));
         }
 
@@ -79,21 +79,21 @@ DTLSServer
                 PacketPeerDtls dtlsPeer = _dtls.TakeConnection(peer);
                 if (dtlsPeer.GetStatus() != PacketPeerDtls.Status.Handshaking)
                 {
-                    continue; // 由于 cookie 交换，50% 的连接会失败，这是正常现象。
+                    continue; // It is normal that 50% of the connections fails due to cookie exchange.
                 }
-                GD.Print("对等体已连接！");
+                GD.Print("Peer connected!");
                 _peers.Add(dtlsPeer);
             }
 
             foreach (var p in _peers)
             {
-                p.Poll(); // 必须轮询以更新状态。
+                p.Poll(); // Must poll to update the state.
                 if (p.GetStatus() == PacketPeerDtls.Status.Connected)
                 {
                     while (p.GetAvailablePacketCount() > 0)
                     {
-                        GD.Print($"从客户端收到消息：{p.GetPacket().GetStringFromUtf8()}");
-                        p.PutPacket("你好 DTLS 客户端".ToUtf8Buffer());
+                        GD.Print($"Received Message From Client: {p.GetPacket().GetStringFromUtf8()}");
+                        p.PutPacket("Hello DTLS Client".ToUtf8Buffer());
                     }
                 }
             }
@@ -116,16 +116,16 @@ DTLSServer
 
     func _ready():
         udp.connect_to_host("127.0.0.1", 4242)
-        dtls.connect_to_peer(udp, false) # 生产环境中请使用 true 进行证书校验！
+        dtls.connect_to_peer(udp, false) # Use true in production for certificate validation!
 
     func _process(delta):
         dtls.poll()
         if dtls.get_status() == PacketPeerDTLS.STATUS_CONNECTED:
             if !connected:
-                # 尝试联系服务器
-                dtls.put_packet("回应是… 42！".to_utf8_buffer())
+                # Try to contact server
+                dtls.put_packet("The answer is... 42!".to_utf8_buffer())
             while dtls.get_available_packet_count() > 0:
-                print("已连接：%s" % dtls.get_packet().get_string_from_utf8())
+                print("Connected: %s" % dtls.get_packet().get_string_from_utf8())
                 connected = true
 
  .. code-tab:: csharp
@@ -143,7 +143,7 @@ DTLSServer
         public override void _Ready()
         {
             _udp.ConnectToHost("127.0.0.1", 4242);
-            _dtls.ConnectToPeer(_udp, validateCerts: false); // 生产环境中请使用 true 进行证书校验！
+            _dtls.ConnectToPeer(_udp, validateCerts: false); // Use true in production for certificate validation!
         }
 
         public override void _Process(double delta)
@@ -153,12 +153,12 @@ DTLSServer
             {
                 if (!_connected)
                 {
-                    // 尝试联系服务器
-                    _dtls.PutPacket("回应是… 42！".ToUtf8Buffer());
+                    // Try to contact server
+                    _dtls.PutPacket("The Answer Is..42!".ToUtf8Buffer());
                 }
                 while (_dtls.GetAvailablePacketCount() > 0)
                 {
-                    GD.Print($"已连接：{_dtls.GetPacket().GetStringFromUtf8()}");
+                    GD.Print($"Connected: {_dtls.GetPacket().GetStringFromUtf8()}");
                     _connected = true;
                 }
             }
@@ -169,8 +169,8 @@ DTLSServer
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -187,8 +187,8 @@ DTLSServer
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_DTLSServer_method_setup:
 
@@ -196,7 +196,7 @@ DTLSServer
 
 :ref:`Error<enum_@GlobalScope_Error>` **setup**\ (\ server_options\: :ref:`TLSOptions<class_TLSOptions>`\ ) :ref:`🔗<class_DTLSServer_method_setup>`
 
-设置 DTLS 服务器以使用给定的 ``server_options``\ 。请参阅 :ref:`TLSOptions.server()<class_TLSOptions_method_server>`\ 。
+Setup the DTLS server to use the given ``server_options``. See :ref:`TLSOptions.server()<class_TLSOptions_method_server>`.
 
 .. rst-class:: classref-item-separator
 
@@ -208,16 +208,16 @@ DTLSServer
 
 :ref:`PacketPeerDTLS<class_PacketPeerDTLS>` **take_connection**\ (\ udp_peer\: :ref:`PacketPeerUDP<class_PacketPeerUDP>`\ ) :ref:`🔗<class_DTLSServer_method_take_connection>`
 
-尝试与给定 ``udp_peer`` 启动 DTLS 握手，必须已连接到该 ``udp_peer``\ （请参阅 :ref:`PacketPeerUDP.connect_to_host()<class_PacketPeerUDP_method_connect_to_host>`\ ）。
+Try to initiate the DTLS handshake with the given ``udp_peer`` which must be already connected (see :ref:`PacketPeerUDP.connect_to_host()<class_PacketPeerUDP_method_connect_to_host>`).
 
-\ **注意：**\ 必须检查返回的 PacketPeerUDP 的状态是否为 :ref:`PacketPeerDTLS.STATUS_HANDSHAKING<class_PacketPeerDTLS_constant_STATUS_HANDSHAKING>`\ ，因为正常情况下，50% 的新连接会因为 cookie 交换而无效。
+\ **Note:** You must check that the state of the return PacketPeerUDP is :ref:`PacketPeerDTLS.STATUS_HANDSHAKING<class_PacketPeerDTLS_constant_STATUS_HANDSHAKING>`, as it is normal that 50% of the new connections will be invalid due to cookie exchange.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

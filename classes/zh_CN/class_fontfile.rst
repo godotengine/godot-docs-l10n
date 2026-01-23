@@ -5,34 +5,34 @@
 FontFile
 ========
 
-**继承：** :ref:`Font<class_Font>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Font<class_Font>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-存放字体源数据和预渲染字形的缓存，从动态字体或位图字体导入。
+Holds font source data and prerendered glyph cache, imported from a dynamic or a bitmap font.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-**FontFile** 包含了一组字形，代表从字体文件中导入的 Unicode 字符，还包含了光栅化字形的缓存，以及一组备用的回退 :ref:`Font<class_Font>`\ 。
+**FontFile** contains a set of glyphs to represent Unicode characters imported from a font file, as well as a cache of rasterized glyphs, and a set of fallback :ref:`Font<class_Font>`\ s to use.
 
-要访问字体的 OpenType 变体，创建模拟的粗体/斜体版本，或者绘制文本行，请使用 :ref:`FontVariation<class_FontVariation>`\ 。
+Use :ref:`FontVariation<class_FontVariation>` to access specific OpenType variation of the font, create simulated bold / slanted version, and draw lines of text.
 
-要进行更复杂的文本处理，请将 :ref:`FontVariation<class_FontVariation>` 与 :ref:`TextLine<class_TextLine>` 或 :ref:`TextParagraph<class_TextParagraph>` 结合使用。
+For more complex text processing, use :ref:`FontVariation<class_FontVariation>` in conjunction with :ref:`TextLine<class_TextLine>` or :ref:`TextParagraph<class_TextParagraph>`.
 
-支持的字体格式：
+Supported font formats:
 
-- 动态字体导入器：TrueType（.ttf）、TrueType 合集（.ttc）、OpenType（.otf）、OpenType 合集（.otc）、WOFF（.woff）、WOFF2（.woff2）、Type 1（.pfb，.pfm）。
+- Dynamic font importer: TrueType (.ttf), TrueType collection (.ttc), OpenType (.otf), OpenType collection (.otc), WOFF (.woff), WOFF2 (.woff2), Type 1 (.pfb, .pfm).
 
-- 位图字体导入器：AngelCode BMFont（.fnt，.font），支持文本和二进制（版本 3）格式变体。
+- Bitmap font importer: AngelCode BMFont (.fnt, .font), text and binary (version 3) format variants.
 
-- 等宽图像字体导入器：所有支持的图像格式。
+- Monospace image font importer: All supported image formats.
 
-\ **注意：**\ 字符（character）是一种表示某个项目（字母、数字等）的抽象符号。
+\ **Note:** A character is a symbol that represents an item (letter, digit etc.) in an abstract way.
 
-\ **注意：**\ 字形（glphy）是一种位图或形状，用于根据上下文绘制一个或多个字符。字形索引绑定的是某个字体数据源。
+\ **Note:** A glyph is a bitmap or a shape used to draw one or more characters in a context-dependent manner. Glyph indices are bound to the specific font data source.
 
-\ **注意：**\ 如果所有字体数据源都不包含字符串中某个字符的字形，那么该字符就会被替换为一个中间是对应十六进制码的方框。
+\ **Note:** If none of the font data sources contain glyphs for a character used in a string, the character in question will be replaced with a box displaying its hexadecimal code.
 
 
 .. tabs::
@@ -53,15 +53,15 @@ FontFile
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
-- :doc:`运行时文件加载与保存 <../tutorials/io/runtime_file_loading_and_saving>`
+- :doc:`Runtime file loading and saving <../tutorials/io/runtime_file_loading_and_saving>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -114,8 +114,8 @@ FontFile
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -262,8 +262,8 @@ FontFile
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_FontFile_property_allow_system_fallback:
 
@@ -276,7 +276,7 @@ FontFile
 - |void| **set_allow_system_fallback**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_allow_system_fallback**\ (\ )
 
-如果设置为 ``true``\ ，则可以自动将系统字体作为回退使用。
+If set to ``true``, system fonts can be automatically used as fallbacks.
 
 .. rst-class:: classref-item-separator
 
@@ -293,7 +293,7 @@ FontFile
 - |void| **set_antialiasing**\ (\ value\: :ref:`FontAntialiasing<enum_TextServer_FontAntialiasing>`\ )
 - :ref:`FontAntialiasing<enum_TextServer_FontAntialiasing>` **get_antialiasing**\ (\ )
 
-字体抗锯齿模式。
+Font anti-aliasing mode.
 
 .. rst-class:: classref-item-separator
 
@@ -310,7 +310,7 @@ FontFile
 - |void| **set_data**\ (\ value\: :ref:`PackedByteArray<class_PackedByteArray>`\ )
 - :ref:`PackedByteArray<class_PackedByteArray>` **get_data**\ (\ )
 
-动态字体源文件的内容。
+Contents of the dynamic font source file.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
@@ -329,7 +329,7 @@ FontFile
 - |void| **set_disable_embedded_bitmaps**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_disable_embedded_bitmaps**\ (\ )
 
-如果为 ``true``\ ，则会禁用内嵌字体位图的加载（仅包含位图的字体以及彩色字体会禁用该属性）。
+If set to ``true``, embedded font bitmap loading is disabled (bitmap-only and color fonts ignore this property).
 
 .. rst-class:: classref-item-separator
 
@@ -346,7 +346,7 @@ FontFile
 - |void| **set_fixed_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_fixed_size**\ (\ )
 
-字体大小，仅用于位图字体。
+Font size, used only for the bitmap fonts.
 
 .. rst-class:: classref-item-separator
 
@@ -363,7 +363,7 @@ FontFile
 - |void| **set_fixed_size_scale_mode**\ (\ value\: :ref:`FixedSizeScaleMode<enum_TextServer_FixedSizeScaleMode>`\ )
 - :ref:`FixedSizeScaleMode<enum_TextServer_FixedSizeScaleMode>` **get_fixed_size_scale_mode**\ (\ )
 
-缩放模式，只有 :ref:`fixed_size<class_FontFile_property_fixed_size>` 大于零的位图字体会使用。
+Scaling mode, used only for the bitmap fonts with :ref:`fixed_size<class_FontFile_property_fixed_size>` greater than zero.
 
 .. rst-class:: classref-item-separator
 
@@ -380,7 +380,7 @@ FontFile
 - |void| **set_font_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_font_name**\ (\ )
 
-字体家族名称。
+Font family name.
 
 .. rst-class:: classref-item-separator
 
@@ -397,7 +397,7 @@ FontFile
 - |void| **set_font_stretch**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_font_stretch**\ (\ )
 
-与正常宽度相比的字体的拉伸量。 一个介于 ``50%`` 和 ``200%`` 之间的百分比值。
+Font stretch amount, compared to a normal width. A percentage value between ``50%`` and ``200%``.
 
 .. rst-class:: classref-item-separator
 
@@ -414,7 +414,7 @@ FontFile
 - |void| **set_font_style**\ (\ value\: |bitfield|\[:ref:`FontStyle<enum_TextServer_FontStyle>`\]\ )
 - |bitfield|\[:ref:`FontStyle<enum_TextServer_FontStyle>`\] **get_font_style**\ (\ )
 
-字体样式标志。
+Font style flags.
 
 .. rst-class:: classref-item-separator
 
@@ -431,7 +431,7 @@ FontFile
 - |void| **set_font_weight**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_font_weight**\ (\ )
 
-该字体的字重（粗度）。一个在 ``100...999`` 范围内的值，正常字体字重为 ``400``\ ，粗体字体字重为 ``700``\ 。
+Weight (boldness) of the font. A value in the ``100...999`` range, normal font weight is ``400``, bold font weight is ``700``.
 
 .. rst-class:: classref-item-separator
 
@@ -448,7 +448,7 @@ FontFile
 - |void| **set_force_autohinter**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_force_autohinter**\ (\ )
 
-如果设置为 ``true``\ ，则支持自动提示并且优先于字体内置提示。仅由动态字体使用（MSDF 字体不支持提示）。
+If set to ``true``, auto-hinting is supported and preferred over font built-in hinting. Used by dynamic fonts only (MSDF fonts don't support hinting).
 
 .. rst-class:: classref-item-separator
 
@@ -465,7 +465,7 @@ FontFile
 - |void| **set_generate_mipmaps**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_generate_mipmaps**\ (\ )
 
-如果设置为 ``true``\ ，则为字体纹理生成 mipmap。
+If set to ``true``, generate mipmaps for the font textures.
 
 .. rst-class:: classref-item-separator
 
@@ -482,7 +482,7 @@ FontFile
 - |void| **set_hinting**\ (\ value\: :ref:`Hinting<enum_TextServer_Hinting>`\ )
 - :ref:`Hinting<enum_TextServer_Hinting>` **get_hinting**\ (\ )
 
-字体微调模式。仅由动态字体使用。
+Font hinting mode. Used by dynamic fonts only.
 
 .. rst-class:: classref-item-separator
 
@@ -499,7 +499,7 @@ FontFile
 - |void| **set_keep_rounding_remainders**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_keep_rounding_remainders**\ (\ )
 
-如果设置为 ``true``\ ，则将字形与像素边界对齐时会累积舍入余数，确保字形的分布更加均匀。如果启用了次像素定位则该设置无效。
+If set to ``true``, when aligning glyphs to the pixel boundaries rounding remainders are accumulated to ensure more uniform glyph distribution. This setting has no effect if subpixel positioning is enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -516,7 +516,7 @@ FontFile
 - |void| **set_modulate_color_glyphs**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_modulate_color_glyphs**\ (\ )
 
-如果设为 ``true``\ ，则绘制彩色字形时会应用颜色调制，否则只会对灰度字形应用。
+If set to ``true``, color modulation is applied when drawing colored glyphs, otherwise it's applied to the monochrome glyphs only.
 
 .. rst-class:: classref-item-separator
 
@@ -533,7 +533,7 @@ FontFile
 - |void| **set_msdf_pixel_range**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_msdf_pixel_range**\ (\ )
 
-最小和最大可表示的有符号距离之间的形状周围的范围宽度。如果使用字体轮廓，\ :ref:`msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必须至少设置为最大字体轮廓大小的\ *两倍*\ 。\ :ref:`msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 的默认值为 ``16``\ ，允许大小最大到 ``8`` 的轮廓看起来正确。
+The width of the range around the shape between the minimum and maximum representable signed distance. If using font outlines, :ref:`msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` must be set to at least *twice* the size of the largest font outline. The default :ref:`msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` value of ``16`` allows outline sizes up to ``8`` to look correct.
 
 .. rst-class:: classref-item-separator
 
@@ -550,7 +550,7 @@ FontFile
 - |void| **set_msdf_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_msdf_size**\ (\ )
 
-用于生成 MSDF 纹理的源字体大小。较高的值允许更高的精度，但渲染速度较慢并且需要更多内存。只有当注意到字形渲染中明显缺乏精度时，才增加该属性的值。
+Source font size used to generate MSDF textures. Higher values allow for more precision, but are slower to render and require more memory. Only increase this value if you notice a visible lack of precision in glyph rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -567,11 +567,11 @@ FontFile
 - |void| **set_multichannel_signed_distance_field**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_multichannel_signed_distance_field**\ (\ )
 
-如果被设置为 ``true``\ ，则所有大小的字形进行渲染时，都使用从动态字体矢量数据中生成的单个多通道带符号距离场（MSDF）。由于这种方法不依赖于在每次字体大小发生变化时，对字体进行栅格化，因此可以实时调整字体大小而不会造成任何性能损失。对于按比例缩小的 :ref:`Control<class_Control>`\ （或从远距离查看的 :ref:`Label3D<class_Label3D>`\ ），文本也不会看起来有颗粒感。有一个缺点，MSDF 不提供字体提示。缺少字体提示可能会导致大小较小的字体的清晰度和可读性较差。
+If set to ``true``, glyphs of all sizes are rendered using single multichannel signed distance field (MSDF) generated from the dynamic font vector data. Since this approach does not rely on rasterizing the font every time its size changes, this allows for resizing the font in real-time without any performance penalty. Text will also not look grainy for :ref:`Control<class_Control>`\ s that are scaled down (or for :ref:`Label3D<class_Label3D>`\ s viewed from a long distance). As a downside, font hinting is not available with MSDF. The lack of font hinting may result in less crisp and less readable fonts at small sizes.
 
-\ **注意：**\ 如果使用字体轮廓，\ :ref:`msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必须至少设置为最大字体轮廓大小的\ *两倍*\ 。
+\ **Note:** If using font outlines, :ref:`msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` must be set to at least *twice* the size of the largest font outline.
 
-\ **注意：**\ MSDF 字体渲染不能正确渲染具有重叠形状的字形。根据 OpenType 标准，重叠形状是无效的，但在许多字体文件中仍然很常见，尤其是那些由 Google 字体转换的字体文件。为避免字形重叠的问题，请考虑直接从字体开发公司下载字体文件，而不是依赖 Google 字体。
+\ **Note:** MSDF font rendering does not render glyphs with overlapping shapes correctly. Overlapping shapes are not valid per the OpenType standard, but are still commonly found in many font files, especially those converted by Google Fonts. To avoid issues with overlapping glyphs, consider downloading the font file directly from the type foundry instead of relying on Google Fonts.
 
 .. rst-class:: classref-item-separator
 
@@ -588,7 +588,7 @@ FontFile
 - |void| **set_opentype_feature_overrides**\ (\ value\: :ref:`Dictionary<class_Dictionary>`\ )
 - :ref:`Dictionary<class_Dictionary>` **get_opentype_feature_overrides**\ (\ )
 
-字体 OpenType 特性集覆盖。
+Font OpenType feature set override.
 
 .. rst-class:: classref-item-separator
 
@@ -605,7 +605,7 @@ FontFile
 - |void| **set_oversampling**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_oversampling**\ (\ )
 
-如果设为正数，则会覆盖使用该字体的视口的过采样系数。见 :ref:`Viewport.oversampling<class_Viewport_property_oversampling>`\ 。该值不会覆盖 ``draw_*`` 方法的 ``oversampling`` 参数。
+If set to a positive value, overrides the oversampling factor of the viewport this font is used in. See :ref:`Viewport.oversampling<class_Viewport_property_oversampling>`. This value doesn't override the ``oversampling`` parameter of ``draw_*`` methods.
 
 .. rst-class:: classref-item-separator
 
@@ -622,7 +622,7 @@ FontFile
 - |void| **set_font_style_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_font_style_name**\ (\ )
 
-字体样式名称。
+Font style name.
 
 .. rst-class:: classref-item-separator
 
@@ -639,7 +639,7 @@ FontFile
 - |void| **set_subpixel_positioning**\ (\ value\: :ref:`SubpixelPositioning<enum_TextServer_SubpixelPositioning>`\ )
 - :ref:`SubpixelPositioning<enum_TextServer_SubpixelPositioning>` **get_subpixel_positioning**\ (\ )
 
-字体字形的子像素定位模式。子像素定位为较小的字体提供了更清晰的文本和更好的字距调整，但代价是更高的内存占用和更低的字体光栅化速度。使用 :ref:`TextServer.SUBPIXEL_POSITIONING_AUTO<class_TextServer_constant_SUBPIXEL_POSITIONING_AUTO>` 来根据字体大小自动启用它。
+Font glyph subpixel positioning mode. Subpixel positioning provides shaper text and better kerning for smaller font sizes, at the cost of higher memory usage and lower font rasterization speed. Use :ref:`TextServer.SUBPIXEL_POSITIONING_AUTO<class_TextServer_constant_SUBPIXEL_POSITIONING_AUTO>` to automatically enable it based on the font size.
 
 .. rst-class:: classref-section-separator
 
@@ -647,8 +647,8 @@ FontFile
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_FontFile_method_clear_cache:
 
@@ -656,7 +656,7 @@ FontFile
 
 |void| **clear_cache**\ (\ ) :ref:`🔗<class_FontFile_method_clear_cache>`
 
-移除所有字体缓存条目。
+Removes all font cache entries.
 
 .. rst-class:: classref-item-separator
 
@@ -668,9 +668,9 @@ FontFile
 
 |void| **clear_glyphs**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_FontFile_method_clear_glyphs>`
 
-从字体缓存条目中，移除所有渲染的字形信息。
+Removes all rendered glyph information from the cache entry.
 
-\ **注意：**\ 该函数不会移除与字形相关的纹理，请使用 :ref:`remove_texture()<class_FontFile_method_remove_texture>` 手动移除它们。
+\ **Note:** This function will not remove textures associated with the glyphs, use :ref:`remove_texture()<class_FontFile_method_remove_texture>` to remove them manually.
 
 .. rst-class:: classref-item-separator
 
@@ -682,7 +682,7 @@ FontFile
 
 |void| **clear_kerning_map**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FontFile_method_clear_kerning_map>`
 
-移除所有字距调整覆盖。
+Removes all kerning overrides.
 
 .. rst-class:: classref-item-separator
 
@@ -694,7 +694,7 @@ FontFile
 
 |void| **clear_size_cache**\ (\ cache_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FontFile_method_clear_size_cache>`
 
-从缓存条目中移除所有的字体大小。
+Removes all font sizes from the cache entry.
 
 .. rst-class:: classref-item-separator
 
@@ -706,9 +706,9 @@ FontFile
 
 |void| **clear_textures**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_FontFile_method_clear_textures>`
 
-从字体缓存条目中，移除所有纹理。
+Removes all textures from font cache entry.
 
-\ **注意：**\ 该函数不会移除与纹理相关的字形，请使用 :ref:`remove_glyph()<class_FontFile_method_remove_glyph>` 手动移除它们。
+\ **Note:** This function will not remove glyphs associated with the texture, use :ref:`remove_glyph()<class_FontFile_method_remove_glyph>` to remove them manually.
 
 .. rst-class:: classref-item-separator
 
@@ -720,7 +720,7 @@ FontFile
 
 :ref:`float<class_float>` **get_cache_ascent**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_cache_ascent>`
 
-返回字体的上升幅度（超出基线的像素数）。
+Returns the font ascent (number of pixels above the baseline).
 
 .. rst-class:: classref-item-separator
 
@@ -732,7 +732,7 @@ FontFile
 
 :ref:`int<class_int>` **get_cache_count**\ (\ ) |const| :ref:`🔗<class_FontFile_method_get_cache_count>`
 
-返回字体缓存条目的数量。
+Returns number of the font cache entries.
 
 .. rst-class:: classref-item-separator
 
@@ -744,7 +744,7 @@ FontFile
 
 :ref:`float<class_float>` **get_cache_descent**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_cache_descent>`
 
-返回字体的减少量（低于基线的像素数）。
+Returns the font descent (number of pixels below the baseline).
 
 .. rst-class:: classref-item-separator
 
@@ -756,7 +756,7 @@ FontFile
 
 :ref:`float<class_float>` **get_cache_scale**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_cache_scale>`
 
-返回颜色位图字体的缩放系数。
+Returns scaling factor of the color bitmap font.
 
 .. rst-class:: classref-item-separator
 
@@ -768,7 +768,7 @@ FontFile
 
 :ref:`float<class_float>` **get_cache_underline_position**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_cache_underline_position>`
 
-返回基线下方下划线的像素偏移。
+Returns pixel offset of the underline below the baseline.
 
 .. rst-class:: classref-item-separator
 
@@ -780,7 +780,7 @@ FontFile
 
 :ref:`float<class_float>` **get_cache_underline_thickness**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_cache_underline_thickness>`
 
-返回下划线的粗细度，单位为像素。
+Returns thickness of the underline in pixels.
 
 .. rst-class:: classref-item-separator
 
@@ -792,7 +792,7 @@ FontFile
 
 :ref:`int<class_int>` **get_char_from_glyph_index**\ (\ size\: :ref:`int<class_int>`, glyph_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_char_from_glyph_index>`
 
-返回与 ``glyph_index`` 关联的字符代码，如果 ``glyph_index`` 无效则返回 ``0``\ 。见 :ref:`get_glyph_index()<class_FontFile_method_get_glyph_index>`\ 。
+Returns character code associated with ``glyph_index``, or ``0`` if ``glyph_index`` is invalid. See :ref:`get_glyph_index()<class_FontFile_method_get_glyph_index>`.
 
 .. rst-class:: classref-item-separator
 
@@ -804,7 +804,7 @@ FontFile
 
 :ref:`float<class_float>` **get_embolden**\ (\ cache_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_embolden>`
 
-返回加粗强度，如果不等于零，则加粗字体轮廓。负值会减小轮廓粗细。
+Returns embolden strength, if is not equal to zero, emboldens the font outlines. Negative values reduce the outline thickness.
 
 .. rst-class:: classref-item-separator
 
@@ -816,7 +816,7 @@ FontFile
 
 :ref:`float<class_float>` **get_extra_baseline_offset**\ (\ cache_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_extra_baseline_offset>`
 
-返回额外的基线偏移（作为字体高度的一部分）。
+Returns extra baseline offset (as a fraction of font height).
 
 .. rst-class:: classref-item-separator
 
@@ -828,7 +828,7 @@ FontFile
 
 :ref:`int<class_int>` **get_extra_spacing**\ (\ cache_index\: :ref:`int<class_int>`, spacing\: :ref:`SpacingType<enum_TextServer_SpacingType>`\ ) |const| :ref:`🔗<class_FontFile_method_get_extra_spacing>`
 
-返回 ``spacing`` 的间距，单位为像素（与字体大小无关）。
+Returns spacing for ``spacing`` in pixels (not relative to the font size).
 
 .. rst-class:: classref-item-separator
 
@@ -840,7 +840,7 @@ FontFile
 
 :ref:`int<class_int>` **get_face_index**\ (\ cache_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_face_index>`
 
-返回 TrueType / OpenType 集合中的活动字体索引。
+Returns an active face index in the TrueType / OpenType collection.
 
 .. rst-class:: classref-item-separator
 
@@ -852,9 +852,9 @@ FontFile
 
 :ref:`Vector2<class_Vector2>` **get_glyph_advance**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`, glyph\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_glyph_advance>`
 
-返回字形前进量（下一个字形的偏移量）。
+Returns glyph advance (offset of the next glyph).
 
-\ **注意：**\ 字形轮廓的前进量，与基础字形的前进量相同，不会被保存。
+\ **Note:** Advance for glyphs outlines is the same as the base glyph advance and is not saved.
 
 .. rst-class:: classref-item-separator
 
@@ -866,7 +866,7 @@ FontFile
 
 :ref:`int<class_int>` **get_glyph_index**\ (\ size\: :ref:`int<class_int>`, char\: :ref:`int<class_int>`, variation_selector\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_glyph_index>`
 
-返回 ``char`` 的字形索引，可以用 ``variation_selector`` 修改。
+Returns the glyph index of a ``char``, optionally modified by the ``variation_selector``.
 
 .. rst-class:: classref-item-separator
 
@@ -878,7 +878,7 @@ FontFile
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_glyph_list**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_FontFile_method_get_glyph_list>`
 
-返回缓存条目中的已渲染字形列表。
+Returns list of rendered glyphs in the cache entry.
 
 .. rst-class:: classref-item-separator
 
@@ -890,7 +890,7 @@ FontFile
 
 :ref:`Vector2<class_Vector2>` **get_glyph_offset**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`, glyph\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_glyph_offset>`
 
-返回字形的基线偏移量。
+Returns glyph offset from the baseline.
 
 .. rst-class:: classref-item-separator
 
@@ -902,7 +902,7 @@ FontFile
 
 :ref:`Vector2<class_Vector2>` **get_glyph_size**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`, glyph\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_glyph_size>`
 
-返回字形大小。
+Returns glyph size.
 
 .. rst-class:: classref-item-separator
 
@@ -914,7 +914,7 @@ FontFile
 
 :ref:`int<class_int>` **get_glyph_texture_idx**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`, glyph\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_glyph_texture_idx>`
 
-返回包含该字形的缓存纹理的索引。
+Returns index of the cache texture containing the glyph.
 
 .. rst-class:: classref-item-separator
 
@@ -926,7 +926,7 @@ FontFile
 
 :ref:`Rect2<class_Rect2>` **get_glyph_uv_rect**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`, glyph\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_glyph_uv_rect>`
 
-返回包含该字形的缓存纹理中的矩形。
+Returns rectangle in the cache texture containing the glyph.
 
 .. rst-class:: classref-item-separator
 
@@ -938,7 +938,7 @@ FontFile
 
 :ref:`Vector2<class_Vector2>` **get_kerning**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`, glyph_pair\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_FontFile_method_get_kerning>`
 
-返回字形对的字距调整。
+Returns kerning for the pair of glyphs.
 
 .. rst-class:: classref-item-separator
 
@@ -950,7 +950,7 @@ FontFile
 
 :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\] **get_kerning_list**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_kerning_list>`
 
-返回字距调整覆盖的列表。
+Returns list of the kerning overrides.
 
 .. rst-class:: classref-item-separator
 
@@ -962,7 +962,7 @@ FontFile
 
 :ref:`bool<class_bool>` **get_language_support_override**\ (\ language\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_FontFile_method_get_language_support_override>`
 
-如果为 ``language`` 启用了支持覆盖，则返回 ``true``\ 。
+Returns ``true`` if support override is enabled for the ``language``.
 
 .. rst-class:: classref-item-separator
 
@@ -974,7 +974,7 @@ FontFile
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_language_support_overrides**\ (\ ) |const| :ref:`🔗<class_FontFile_method_get_language_support_overrides>`
 
-返回语言支持覆盖的列表。
+Returns list of language support overrides.
 
 .. rst-class:: classref-item-separator
 
@@ -986,7 +986,7 @@ FontFile
 
 :ref:`bool<class_bool>` **get_script_support_override**\ (\ script\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_FontFile_method_get_script_support_override>`
 
-如果为 ``script`` 启用了支持覆盖，则返回 ``true``\ 。
+Returns ``true`` if support override is enabled for the ``script``.
 
 .. rst-class:: classref-item-separator
 
@@ -998,7 +998,7 @@ FontFile
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_script_support_overrides**\ (\ ) |const| :ref:`🔗<class_FontFile_method_get_script_support_overrides>`
 
-返回文字支持覆盖的列表。
+Returns list of script support overrides.
 
 .. rst-class:: classref-item-separator
 
@@ -1010,7 +1010,7 @@ FontFile
 
 :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\] **get_size_cache_list**\ (\ cache_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_size_cache_list>`
 
-返回缓存中字体大小的列表。每个大小都是由字体大小和轮廓大小组成的 :ref:`Vector2i<class_Vector2i>`\ 。
+Returns list of the font sizes in the cache. Each size is :ref:`Vector2i<class_Vector2i>` with font size and outline size.
 
 .. rst-class:: classref-item-separator
 
@@ -1022,7 +1022,7 @@ FontFile
 
 :ref:`int<class_int>` **get_texture_count**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_FontFile_method_get_texture_count>`
 
-返回字体缓存条目所使用的纹理数。
+Returns number of textures used by font cache entry.
 
 .. rst-class:: classref-item-separator
 
@@ -1034,7 +1034,7 @@ FontFile
 
 :ref:`Image<class_Image>` **get_texture_image**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`, texture_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_texture_image>`
 
-返回字体缓存纹理图像的副本。
+Returns a copy of the font cache texture image.
 
 .. rst-class:: classref-item-separator
 
@@ -1046,7 +1046,7 @@ FontFile
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_texture_offsets**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`, texture_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_texture_offsets>`
 
-返回包含字形打包数据的数组副本。
+Returns a copy of the array containing glyph packing data.
 
 .. rst-class:: classref-item-separator
 
@@ -1058,7 +1058,7 @@ FontFile
 
 :ref:`Transform2D<class_Transform2D>` **get_transform**\ (\ cache_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_transform>`
 
-返回应用于字体轮廓的 2D 变换，可用于倾斜、翻转和旋转字形。
+Returns 2D transform, applied to the font outlines, can be used for slanting, flipping and rotating glyphs.
 
 .. rst-class:: classref-item-separator
 
@@ -1070,7 +1070,7 @@ FontFile
 
 :ref:`Dictionary<class_Dictionary>` **get_variation_coordinates**\ (\ cache_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FontFile_method_get_variation_coordinates>`
 
-返回指定字体缓存条目的变体坐标。有关详细信息，请参阅 :ref:`Font.get_supported_variation_list()<class_Font_method_get_supported_variation_list>`\ 。
+Returns variation coordinates for the specified font cache entry. See :ref:`Font.get_supported_variation_list()<class_Font_method_get_supported_variation_list>` for more info.
 
 .. rst-class:: classref-item-separator
 
@@ -1082,9 +1082,9 @@ FontFile
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_bitmap_font**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FontFile_method_load_bitmap_font>`
 
-从文件 ``path`` 中加载一个 AngelCode BMFont (.fnt, .font) 位图字体。
+Loads an AngelCode BMFont (.fnt, .font) bitmap font from file ``path``.
 
-\ **警告：**\ 该方法只能在编辑器中或需要在运行时加载外部字体的情况下使用，例如位于 ``user://`` 目录的字体。
+\ **Warning:** This method should only be used in the editor or in cases when you need to load external fonts at run-time, such as fonts located at the ``user://`` directory.
 
 .. rst-class:: classref-item-separator
 
@@ -1096,9 +1096,9 @@ FontFile
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_dynamic_font**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FontFile_method_load_dynamic_font>`
 
-从文件 ``path`` 中加载 TrueType（.ttf）、OpenType（.otf）、WOFF（.woff）、WOFF2（.woff2）或 Type 1（.pfb、.pfm）动态字体。
+Loads a TrueType (.ttf), OpenType (.otf), WOFF (.woff), WOFF2 (.woff2) or Type 1 (.pfb, .pfm) dynamic font from file ``path``.
 
-\ **警告：**\ 该方法只能在编辑器中或需要在运行时加载外部字体的情况下使用，例如位于 ``user://`` 目录的字体。
+\ **Warning:** This method should only be used in the editor or in cases when you need to load external fonts at run-time, such as fonts located at the ``user://`` directory.
 
 .. rst-class:: classref-item-separator
 
@@ -1110,7 +1110,7 @@ FontFile
 
 |void| **remove_cache**\ (\ cache_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FontFile_method_remove_cache>`
 
-删除指定的字体缓存条目。
+Removes specified font cache entry.
 
 .. rst-class:: classref-item-separator
 
@@ -1122,9 +1122,9 @@ FontFile
 
 |void| **remove_glyph**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`, glyph\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FontFile_method_remove_glyph>`
 
-从缓存条目中移除指定的渲染的字形信息。
+Removes specified rendered glyph information from the cache entry.
 
-\ **注意：**\ 该函数不会移除与字形相关的纹理，请使用 :ref:`remove_texture()<class_FontFile_method_remove_texture>` 手动移除它们。
+\ **Note:** This function will not remove textures associated with the glyphs, use :ref:`remove_texture()<class_FontFile_method_remove_texture>` to remove them manually.
 
 .. rst-class:: classref-item-separator
 
@@ -1136,7 +1136,7 @@ FontFile
 
 |void| **remove_kerning**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`, glyph_pair\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_FontFile_method_remove_kerning>`
 
-移除字形对的字距调整覆盖。
+Removes kerning override for the pair of glyphs.
 
 .. rst-class:: classref-item-separator
 
@@ -1148,7 +1148,7 @@ FontFile
 
 |void| **remove_language_support_override**\ (\ language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FontFile_method_remove_language_support_override>`
 
-移除语言支持覆盖。
+Remove language support override.
 
 .. rst-class:: classref-item-separator
 
@@ -1160,7 +1160,7 @@ FontFile
 
 |void| **remove_script_support_override**\ (\ script\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FontFile_method_remove_script_support_override>`
 
-移除文字支持覆盖。
+Removes script support override.
 
 .. rst-class:: classref-item-separator
 
@@ -1172,7 +1172,7 @@ FontFile
 
 |void| **remove_size_cache**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_FontFile_method_remove_size_cache>`
 
-从缓存条目中移除指定的字体大小。
+Removes specified font size from the cache entry.
 
 .. rst-class:: classref-item-separator
 
@@ -1184,9 +1184,9 @@ FontFile
 
 |void| **remove_texture**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`, texture_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FontFile_method_remove_texture>`
 
-从缓存条目中移除指定的纹理。
+Removes specified texture from the cache entry.
 
-\ **注意：**\ 该函数不会移除与纹理相关的字形，请使用 :ref:`remove_glyph()<class_FontFile_method_remove_glyph>` 手动移除它们。
+\ **Note:** This function will not remove glyphs associated with the texture. Remove them manually using :ref:`remove_glyph()<class_FontFile_method_remove_glyph>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1198,7 +1198,7 @@ FontFile
 
 |void| **render_glyph**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`, index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FontFile_method_render_glyph>`
 
-将指定的字符渲染到字体缓存纹理。
+Renders specified glyph to the font cache texture.
 
 .. rst-class:: classref-item-separator
 
@@ -1210,7 +1210,7 @@ FontFile
 
 |void| **render_range**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`, start\: :ref:`int<class_int>`, end\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FontFile_method_render_range>`
 
-将范围内的字符渲染到字体缓存纹理。
+Renders the range of characters to the font cache texture.
 
 .. rst-class:: classref-item-separator
 
@@ -1222,7 +1222,7 @@ FontFile
 
 |void| **set_cache_ascent**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`, ascent\: :ref:`float<class_float>`\ ) :ref:`🔗<class_FontFile_method_set_cache_ascent>`
 
-设置字体的升部（基线上方的像素数）。
+Sets the font ascent (number of pixels above the baseline).
 
 .. rst-class:: classref-item-separator
 
@@ -1234,7 +1234,7 @@ FontFile
 
 |void| **set_cache_descent**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`, descent\: :ref:`float<class_float>`\ ) :ref:`🔗<class_FontFile_method_set_cache_descent>`
 
-设置字体的降部（基线下方的像素数）。
+Sets the font descent (number of pixels below the baseline).
 
 .. rst-class:: classref-item-separator
 
@@ -1246,7 +1246,7 @@ FontFile
 
 |void| **set_cache_scale**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`, scale\: :ref:`float<class_float>`\ ) :ref:`🔗<class_FontFile_method_set_cache_scale>`
 
-设置彩色位图字体的缩放系数。
+Sets scaling factor of the color bitmap font.
 
 .. rst-class:: classref-item-separator
 
@@ -1258,7 +1258,7 @@ FontFile
 
 |void| **set_cache_underline_position**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`, underline_position\: :ref:`float<class_float>`\ ) :ref:`🔗<class_FontFile_method_set_cache_underline_position>`
 
-设置基线下方下划线的像素偏移。
+Sets pixel offset of the underline below the baseline.
 
 .. rst-class:: classref-item-separator
 
@@ -1270,7 +1270,7 @@ FontFile
 
 |void| **set_cache_underline_thickness**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`, underline_thickness\: :ref:`float<class_float>`\ ) :ref:`🔗<class_FontFile_method_set_cache_underline_thickness>`
 
-设置下划线的粗细度，单位为像素。
+Sets thickness of the underline in pixels.
 
 .. rst-class:: classref-item-separator
 
@@ -1282,7 +1282,7 @@ FontFile
 
 |void| **set_embolden**\ (\ cache_index\: :ref:`int<class_int>`, strength\: :ref:`float<class_float>`\ ) :ref:`🔗<class_FontFile_method_set_embolden>`
 
-设置加粗强度，如果不等于零，则会加粗字体的轮廓。负值会减小轮廓的厚度。
+Sets embolden strength, if is not equal to zero, emboldens the font outlines. Negative values reduce the outline thickness.
 
 .. rst-class:: classref-item-separator
 
@@ -1294,7 +1294,7 @@ FontFile
 
 |void| **set_extra_baseline_offset**\ (\ cache_index\: :ref:`int<class_int>`, baseline_offset\: :ref:`float<class_float>`\ ) :ref:`🔗<class_FontFile_method_set_extra_baseline_offset>`
 
-设置额外的基线偏移（作为字体高度的一部分）。
+Sets extra baseline offset (as a fraction of font height).
 
 .. rst-class:: classref-item-separator
 
@@ -1306,7 +1306,7 @@ FontFile
 
 |void| **set_extra_spacing**\ (\ cache_index\: :ref:`int<class_int>`, spacing\: :ref:`SpacingType<enum_TextServer_SpacingType>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FontFile_method_set_extra_spacing>`
 
-将 ``spacing`` 的间距设置为 ``value``\ ，单位为像素（与字体大小无关）。
+Sets the spacing for ``spacing`` to ``value`` in pixels (not relative to the font size).
 
 .. rst-class:: classref-item-separator
 
@@ -1318,7 +1318,7 @@ FontFile
 
 |void| **set_face_index**\ (\ cache_index\: :ref:`int<class_int>`, face_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FontFile_method_set_face_index>`
 
-在 TrueType / OpenType 集合中设置活动字体索引。
+Sets an active face index in the TrueType / OpenType collection.
 
 .. rst-class:: classref-item-separator
 
@@ -1330,9 +1330,9 @@ FontFile
 
 |void| **set_glyph_advance**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`, glyph\: :ref:`int<class_int>`, advance\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_FontFile_method_set_glyph_advance>`
 
-设置字形前进量（下一个字形的偏移量）。
+Sets glyph advance (offset of the next glyph).
 
-\ **注意：**\ 字形轮廓的前进量与基础字形的前进量相同，不会被保存。
+\ **Note:** Advance for glyphs outlines is the same as the base glyph advance and is not saved.
 
 .. rst-class:: classref-item-separator
 
@@ -1344,7 +1344,7 @@ FontFile
 
 |void| **set_glyph_offset**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`, glyph\: :ref:`int<class_int>`, offset\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_FontFile_method_set_glyph_offset>`
 
-设置字形相对于基线的偏移量。
+Sets glyph offset from the baseline.
 
 .. rst-class:: classref-item-separator
 
@@ -1356,7 +1356,7 @@ FontFile
 
 |void| **set_glyph_size**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`, glyph\: :ref:`int<class_int>`, gl_size\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_FontFile_method_set_glyph_size>`
 
-设置字形大小。
+Sets glyph size.
 
 .. rst-class:: classref-item-separator
 
@@ -1368,7 +1368,7 @@ FontFile
 
 |void| **set_glyph_texture_idx**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`, glyph\: :ref:`int<class_int>`, texture_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FontFile_method_set_glyph_texture_idx>`
 
-设置包含该字形的缓存纹理的索引。
+Sets index of the cache texture containing the glyph.
 
 .. rst-class:: classref-item-separator
 
@@ -1380,7 +1380,7 @@ FontFile
 
 |void| **set_glyph_uv_rect**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`, glyph\: :ref:`int<class_int>`, uv_rect\: :ref:`Rect2<class_Rect2>`\ ) :ref:`🔗<class_FontFile_method_set_glyph_uv_rect>`
 
-设置包含该字形的缓存纹理中，该字形的矩形区域。
+Sets rectangle in the cache texture containing the glyph.
 
 .. rst-class:: classref-item-separator
 
@@ -1392,7 +1392,7 @@ FontFile
 
 |void| **set_kerning**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`, glyph_pair\: :ref:`Vector2i<class_Vector2i>`, kerning\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_FontFile_method_set_kerning>`
 
-设置字形对的字距调整。
+Sets kerning for the pair of glyphs.
 
 .. rst-class:: classref-item-separator
 
@@ -1404,7 +1404,7 @@ FontFile
 
 |void| **set_language_support_override**\ (\ language\: :ref:`String<class_String>`, supported\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_FontFile_method_set_language_support_override>`
 
-为 :ref:`Font.is_language_supported()<class_Font_method_is_language_supported>` 添加覆盖。
+Adds override for :ref:`Font.is_language_supported()<class_Font_method_is_language_supported>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1416,7 +1416,7 @@ FontFile
 
 |void| **set_script_support_override**\ (\ script\: :ref:`String<class_String>`, supported\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_FontFile_method_set_script_support_override>`
 
-为 :ref:`Font.is_script_supported()<class_Font_method_is_script_supported>` 添加覆盖。
+Adds override for :ref:`Font.is_script_supported()<class_Font_method_is_script_supported>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1428,7 +1428,7 @@ FontFile
 
 |void| **set_texture_image**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`, texture_index\: :ref:`int<class_int>`, image\: :ref:`Image<class_Image>`\ ) :ref:`🔗<class_FontFile_method_set_texture_image>`
 
-设置字体缓存纹理图像。
+Sets font cache texture image.
 
 .. rst-class:: classref-item-separator
 
@@ -1440,7 +1440,7 @@ FontFile
 
 |void| **set_texture_offsets**\ (\ cache_index\: :ref:`int<class_int>`, size\: :ref:`Vector2i<class_Vector2i>`, texture_index\: :ref:`int<class_int>`, offset\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_FontFile_method_set_texture_offsets>`
 
-设置包含字形打包数据的数组。
+Sets array containing glyph packing data.
 
 .. rst-class:: classref-item-separator
 
@@ -1452,7 +1452,7 @@ FontFile
 
 |void| **set_transform**\ (\ cache_index\: :ref:`int<class_int>`, transform\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_FontFile_method_set_transform>`
 
-设置应用于字体轮廓的 2D 变换，可用于倾斜、翻转、旋转字形。
+Sets 2D transform, applied to the font outlines, can be used for slanting, flipping, and rotating glyphs.
 
 .. rst-class:: classref-item-separator
 
@@ -1464,14 +1464,14 @@ FontFile
 
 |void| **set_variation_coordinates**\ (\ cache_index\: :ref:`int<class_int>`, variation_coordinates\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_FontFile_method_set_variation_coordinates>`
 
-为指定的字体缓存条目设置变体坐标。有关详细信息，请参阅 :ref:`Font.get_supported_variation_list()<class_Font_method_get_supported_variation_list>`\ 。
+Sets variation coordinates for the specified font cache entry. See :ref:`Font.get_supported_variation_list()<class_Font_method_get_supported_variation_list>` for more info.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

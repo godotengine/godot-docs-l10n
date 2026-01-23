@@ -5,23 +5,23 @@
 VisualInstance3D
 ================
 
-**繼承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`Decal<class_Decal>`, :ref:`FogVolume<class_FogVolume>`, :ref:`GeometryInstance3D<class_GeometryInstance3D>`, :ref:`GPUParticlesAttractor3D<class_GPUParticlesAttractor3D>`, :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>`, :ref:`Light3D<class_Light3D>`, :ref:`LightmapGI<class_LightmapGI>`, :ref:`OccluderInstance3D<class_OccluderInstance3D>`, :ref:`OpenXRVisibilityMask<class_OpenXRVisibilityMask>`, :ref:`ReflectionProbe<class_ReflectionProbe>`, :ref:`RootMotionView<class_RootMotionView>`, :ref:`VisibleOnScreenNotifier3D<class_VisibleOnScreenNotifier3D>`, :ref:`VoxelGI<class_VoxelGI>`
+**Inherited By:** :ref:`Decal<class_Decal>`, :ref:`FogVolume<class_FogVolume>`, :ref:`GeometryInstance3D<class_GeometryInstance3D>`, :ref:`GPUParticlesAttractor3D<class_GPUParticlesAttractor3D>`, :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>`, :ref:`Light3D<class_Light3D>`, :ref:`LightmapGI<class_LightmapGI>`, :ref:`OccluderInstance3D<class_OccluderInstance3D>`, :ref:`OpenXRVisibilityMask<class_OpenXRVisibilityMask>`, :ref:`ReflectionProbe<class_ReflectionProbe>`, :ref:`RootMotionView<class_RootMotionView>`, :ref:`VisibleOnScreenNotifier3D<class_VisibleOnScreenNotifier3D>`, :ref:`VoxelGI<class_VoxelGI>`
 
-所有可視 3D 節點的父節點。
+Parent of all visual 3D nodes.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-**VisualInstance3D** 可用於將資源連接到視覺表示。所有的視覺化 3D 節點都繼承自 **VisualInstance3D**\ 。一般來說，你不應該直接存取 **VisualInstance3D** 的屬性，因為它們是由繼承自 **VisualInstance3D** 的節點存取和管理的。\ **VisualInstance3D** 是 :ref:`RenderingServer<class_RenderingServer>` 實例的節點表示。
+The **VisualInstance3D** is used to connect a resource to a visual representation. All visual 3D nodes inherit from the **VisualInstance3D**. In general, you should not access the **VisualInstance3D** properties directly as they are accessed and managed by the nodes that inherit from **VisualInstance3D**. **VisualInstance3D** is the node representation of the :ref:`RenderingServer<class_RenderingServer>` instance.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ VisualInstance3D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -64,8 +64,8 @@ VisualInstance3D
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_VisualInstance3D_property_layers:
 
@@ -78,15 +78,15 @@ VisualInstance3D
 - |void| **set_layer_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_layer_mask**\ (\ )
 
-繪製該 **VisualInstance3D** 的算繪層。
+The render layer(s) this **VisualInstance3D** is drawn on.
 
-\ :ref:`Camera3D<class_Camera3D>` 的剔除遮罩包含該 **VisualInstance3D** 所設定的任何算繪層時，該物件才在該相機中可見。
+This object will only be visible for :ref:`Camera3D<class_Camera3D>`\ s whose cull mask includes any of the render layers this **VisualInstance3D** is set to.
 
-對於 :ref:`Light3D<class_Light3D>`\ ，可以用於控制指定的燈光能夠影響哪些 **VisualInstance3D**\ 。對於 :ref:`GPUParticles3D<class_GPUParticles3D>`\ ，可以用於控制哪些粒子受到吸引器的影響。對於 :ref:`Decal<class_Decal>`\ ，可以用於控制哪些 **VisualInstance3D** 受到指定裝飾的影響。
+For :ref:`Light3D<class_Light3D>`\ s, this can be used to control which **VisualInstance3D**\ s are affected by a specific light. For :ref:`GPUParticles3D<class_GPUParticles3D>`, this can be used to control which particles are effected by a specific attractor. For :ref:`Decal<class_Decal>`\ s, this can be used to control which **VisualInstance3D**\ s are affected by a specific decal.
 
-要在腳本中更加方便地調整 :ref:`layers<class_VisualInstance3D_property_layers>`\ ，請使用 :ref:`get_layer_mask_value()<class_VisualInstance3D_method_get_layer_mask_value>` 和 :ref:`set_layer_mask_value()<class_VisualInstance3D_method_set_layer_mask_value>`\ 。
+To adjust :ref:`layers<class_VisualInstance3D_property_layers>` more easily using a script, use :ref:`get_layer_mask_value()<class_VisualInstance3D_method_get_layer_mask_value>` and :ref:`set_layer_mask_value()<class_VisualInstance3D_method_set_layer_mask_value>`.
 
-\ **注意：**\ :ref:`VoxelGI<class_VoxelGI>`\ 、SDFGI、\ :ref:`LightmapGI<class_LightmapGI>` 在確定全域光照影響時始終會考慮所有算繪層。如果不希望這樣，請將網格的 :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` 設定為 :ref:`GeometryInstance3D.GI_MODE_DISABLED<class_GeometryInstance3D_constant_GI_MODE_DISABLED>`\ ，將燈光的 :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>` 設定為 :ref:`Light3D.BAKE_DISABLED<class_Light3D_constant_BAKE_DISABLED>`\ ，這樣就能從全域光照中剔除。
+\ **Note:** :ref:`VoxelGI<class_VoxelGI>`, SDFGI and :ref:`LightmapGI<class_LightmapGI>` will always take all layers into account to determine what contributes to global illumination. If this is an issue, set :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` to :ref:`GeometryInstance3D.GI_MODE_DISABLED<class_GeometryInstance3D_constant_GI_MODE_DISABLED>` for meshes and :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>` to :ref:`Light3D.BAKE_DISABLED<class_Light3D_constant_BAKE_DISABLED>` for lights to exclude them from global illumination.
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ VisualInstance3D
 - |void| **set_sorting_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_sorting_offset**\ (\ )
 
-按深度排序時該 **VisualInstance3D** 的深度將調整的量。使用與引擎相同的單位（通常是米）。將其調整為更高的值，將使 **VisualInstance3D** 可靠地繪製在位於同一位置的其他 **VisualInstance3D** 之上。為確保它始終繪製在它周圍的其他物件之上（不位於同一位置），請將值設定為大於該 **VisualInstance3D** 與附近其他 **VisualInstance3D** 之間的距離值。
+The amount by which the depth of this **VisualInstance3D** will be adjusted when sorting by depth. Uses the same units as the engine (which are typically meters). Adjusting it to a higher value will make the **VisualInstance3D** reliably draw on top of other **VisualInstance3D**\ s that are otherwise positioned at the same spot. To ensure it always draws on top of other objects around it (not positioned at the same spot), set the value to be greater than the distance between this **VisualInstance3D** and the other nearby **VisualInstance3D**\ s.
 
 .. rst-class:: classref-item-separator
 
@@ -120,9 +120,9 @@ VisualInstance3D
 - |void| **set_sorting_use_aabb_center**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_sorting_use_aabb_center**\ (\ )
 
-如果為 ``true``\ ，則該物件會根據其 :ref:`AABB<class_AABB>` 中心點排序。否則會根據其全局位置排序。
+If ``true``, the object is sorted based on the :ref:`AABB<class_AABB>` center. The object will be sorted based on the global position otherwise.
 
-對 3D 模型而言，根據 :ref:`AABB<class_AABB>` 的中心點排序一般更為精確。使用 :ref:`GPUParticles3D<class_GPUParticles3D>` 和 :ref:`CPUParticles3D<class_CPUParticles3D>` 時，根據位置排序能夠更好地控制繪製順序。
+The :ref:`AABB<class_AABB>` center based sorting is generally more accurate for 3D models. The position based sorting instead allows to better control the drawing order when working with :ref:`GPUParticles3D<class_GPUParticles3D>` and :ref:`CPUParticles3D<class_CPUParticles3D>`.
 
 .. rst-class:: classref-section-separator
 
@@ -130,8 +130,8 @@ VisualInstance3D
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_VisualInstance3D_private_method__get_aabb:
 
@@ -153,7 +153,7 @@ VisualInstance3D
 
 :ref:`AABB<class_AABB>` **get_aabb**\ (\ ) |const| :ref:`🔗<class_VisualInstance3D_method_get_aabb>`
 
-返回此 **VisualInstance3D** 的 :ref:`AABB<class_AABB>`\ （也叫邊界框）。
+Returns the :ref:`AABB<class_AABB>` (also known as the bounding box) for this **VisualInstance3D**.
 
 .. rst-class:: classref-item-separator
 
@@ -165,7 +165,7 @@ VisualInstance3D
 
 :ref:`RID<class_RID>` **get_base**\ (\ ) |const| :ref:`🔗<class_VisualInstance3D_method_get_base>`
 
-返回與此 **VisualInstance3D** 相關聯的資源的 RID。例如，如果該節點是 :ref:`MeshInstance3D<class_MeshInstance3D>`\ ，則會返回相關聯的 :ref:`Mesh<class_Mesh>` 的 RID。
+Returns the RID of the resource associated with this **VisualInstance3D**. For example, if the Node is a :ref:`MeshInstance3D<class_MeshInstance3D>`, this will return the RID of the associated :ref:`Mesh<class_Mesh>`.
 
 .. rst-class:: classref-item-separator
 
@@ -177,7 +177,7 @@ VisualInstance3D
 
 :ref:`RID<class_RID>` **get_instance**\ (\ ) |const| :ref:`🔗<class_VisualInstance3D_method_get_instance>`
 
-返回這個實例的 RID。這個 RID 與 :ref:`RenderingServer.instance_create()<class_RenderingServer_method_instance_create>` 返回的 RID 相同。如果你想為這個 **VisualInstance3D** 直接呼叫 :ref:`RenderingServer<class_RenderingServer>` 函數，就需要這個 RID。
+Returns the RID of this instance. This RID is the same as the RID returned by :ref:`RenderingServer.instance_create()<class_RenderingServer_method_instance_create>`. This RID is needed if you want to call :ref:`RenderingServer<class_RenderingServer>` functions directly on this **VisualInstance3D**.
 
 .. rst-class:: classref-item-separator
 
@@ -189,7 +189,7 @@ VisualInstance3D
 
 :ref:`bool<class_bool>` **get_layer_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_VisualInstance3D_method_get_layer_mask_value>`
 
-返回是否啟用了 :ref:`layers<class_VisualInstance3D_property_layers>` 的指定層，該層由一個介於 1 和 20 之間的 ``layer_number`` 指定。
+Returns whether or not the specified layer of the :ref:`layers<class_VisualInstance3D_property_layers>` is enabled, given a ``layer_number`` between 1 and 20.
 
 .. rst-class:: classref-item-separator
 
@@ -201,7 +201,7 @@ VisualInstance3D
 
 |void| **set_base**\ (\ base\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_VisualInstance3D_method_set_base>`
 
-設定由該 **VisualInstance3D** 產生實體的資源，這將改變引擎在底層對該 **VisualInstance3D** 的處理方式。相當於 :ref:`RenderingServer.instance_set_base()<class_RenderingServer_method_instance_set_base>`\ 。
+Sets the resource that is instantiated by this **VisualInstance3D**, which changes how the engine handles the **VisualInstance3D** under the hood. Equivalent to :ref:`RenderingServer.instance_set_base()<class_RenderingServer_method_instance_set_base>`.
 
 .. rst-class:: classref-item-separator
 
@@ -213,14 +213,14 @@ VisualInstance3D
 
 |void| **set_layer_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_VisualInstance3D_method_set_layer_mask_value>`
 
-基於 ``value``\ ，啟用或禁用 :ref:`layers<class_VisualInstance3D_property_layers>` 中的指定層，該層由一個介於 1 和 20 之間的給定 ``layer_number`` 指定。
+Based on ``value``, enables or disables the specified layer in the :ref:`layers<class_VisualInstance3D_property_layers>`, given a ``layer_number`` between 1 and 20.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

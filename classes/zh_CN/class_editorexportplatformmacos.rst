@@ -5,23 +5,23 @@
 EditorExportPlatformMacOS
 =========================
 
-**继承：** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-macOS 导出器。
+Exporter for macOS.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
-- :doc:`为 macOS 导出 <../tutorials/export/exporting_for_macos>`
+- :doc:`Exporting for macOS <../tutorials/export/exporting_for_macos>`
 
-- :doc:`在 macOS 上运行 Godot 应用 <../tutorials//export/running_on_macos>`
+- :doc:`Running Godot apps on macOS <../tutorials//export/running_on_macos>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -508,8 +508,8 @@ macOS 导出器。
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_EditorExportPlatformMacOS_property_application/additional_plist_content:
 
@@ -517,7 +517,7 @@ macOS 导出器。
 
 :ref:`String<class_String>` **application/additional_plist_content** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/additional_plist_content>`
 
-添加到 `Info.plist <https://developer.apple.com/documentation/bundleresources/information_property_list>`__ 文件的根 ``<dict>`` 部分的其他数据。该值应该是带有键值元素对的 XML 部分，例如：
+Additional data added to the root ``<dict>`` section of the `Info.plist <https://developer.apple.com/documentation/bundleresources/information_property_list>`__ file. The value should be an XML section with pairs of key-value elements, e.g.:
 
 .. code:: text
 
@@ -534,7 +534,7 @@ macOS 导出器。
 
 :ref:`String<class_String>` **application/app_category** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/app_category>`
 
-App Store 的应用程序分类。
+Application category for the App Store.
 
 .. rst-class:: classref-item-separator
 
@@ -546,7 +546,7 @@ App Store 的应用程序分类。
 
 :ref:`String<class_String>` **application/bundle_identifier** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/bundle_identifier>`
 
-反向 DNS 格式的唯一应用程序标识符，只能包含字母数字字符（\ ``A-Z``\ 、\ ``a-z`` 和 ``0-9``\ ）、连字符（\ ``-``\ ）和句点（\ ``.``\ ）。
+Unique application identifier in a reverse-DNS format, can only contain alphanumeric characters (``A-Z``, ``a-z``, and ``0-9``), hyphens (``-``), and periods (``.``).
 
 .. rst-class:: classref-item-separator
 
@@ -558,7 +558,7 @@ App Store 的应用程序分类。
 
 :ref:`String<class_String>` **application/copyright** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/copyright>`
 
-捆绑包的（英文）版权声明，用户可见。
+Copyright notice for the bundle visible to the user (in English).
 
 .. rst-class:: classref-item-separator
 
@@ -570,7 +570,7 @@ App Store 的应用程序分类。
 
 :ref:`Dictionary<class_Dictionary>` **application/copyright_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/copyright_localized>`
 
-捆绑包的（本地化）版权声明，用户可见。
+Copyright notice for the bundle visible to the user (localized).
 
 .. rst-class:: classref-item-separator
 
@@ -582,7 +582,7 @@ App Store 的应用程序分类。
 
 :ref:`int<class_int>` **application/export_angle** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/export_angle>`
 
-如果设置为 ``1``\ ，ANGLE 库将随导出的应用程序一起导出。如果设置为 ``0``\ ，则仅当 :ref:`ProjectSettings.rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` 被设置为 ``"opengl3_angle"`` 时才会导出 ANGLE 库。
+If set to ``1``, ANGLE libraries are exported with the exported application. If set to ``0``, ANGLE libraries are exported only if :ref:`ProjectSettings.rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` is set to ``"opengl3_angle"``.
 
 .. rst-class:: classref-item-separator
 
@@ -594,7 +594,7 @@ App Store 的应用程序分类。
 
 :ref:`String<class_String>` **application/icon** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/icon>`
 
-应用程序图标文件。如果留空，则会回退至 :ref:`ProjectSettings.application/config/macos_native_icon<class_ProjectSettings_property_application/config/macos_native_icon>`\ ，继而回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。
+Application icon file. If left empty, it will fallback to :ref:`ProjectSettings.application/config/macos_native_icon<class_ProjectSettings_property_application/config/macos_native_icon>`, and then to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`.
 
 .. rst-class:: classref-item-separator
 
@@ -606,7 +606,7 @@ App Store 的应用程序分类。
 
 :ref:`int<class_int>` **application/icon_interpolation** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/icon_interpolation>`
 
-用于调整应用程序图标大小的插值方法。
+Interpolation method used to resize application icon.
 
 .. rst-class:: classref-item-separator
 
@@ -634,7 +634,7 @@ macOS 26 Liquid Glass icon source file. Use `Icon Composer <https://developer.ap
 
 :ref:`String<class_String>` **application/min_macos_version_arm64** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/min_macos_version_arm64>`
 
-在 Apple Silicon 设备上运行该应用程序所需的最低 macOS 版本，格式为 ``主版本号.次版本号.补丁号`` 或 ``主版本号.次版本号``\ ，只能包含数字（\ ``0-9``\ ）和英文句点（\ ``.``\ ）。
+Minimum version of macOS required for this application to run on Apple Silicon Macs, in the ``major.minor.patch`` or ``major.minor`` format, can only contain numeric characters (``0-9``) and periods (``.``).
 
 .. rst-class:: classref-item-separator
 
@@ -646,7 +646,7 @@ macOS 26 Liquid Glass icon source file. Use `Icon Composer <https://developer.ap
 
 :ref:`String<class_String>` **application/min_macos_version_x86_64** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/min_macos_version_x86_64>`
 
-在 Intel 设备上运行该应用程序所需的最低 macOS 版本，格式为 ``主版本号.次版本号.补丁号`` 或 ``主版本号.次版本号``\ ，只能包含数字（\ ``0-9``\ ）和英文句点（\ ``.``\ ）。
+Minimum version of macOS required for this application to run on Intel Macs, in the ``major.minor.patch`` or ``major.minor`` format, can only contain numeric characters (``0-9``) and periods (``.``).
 
 .. rst-class:: classref-item-separator
 
@@ -658,9 +658,9 @@ macOS 26 Liquid Glass icon source file. Use `Icon Composer <https://developer.ap
 
 :ref:`String<class_String>` **application/short_version** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/short_version>`
 
-用户可见的应用程序版本，只能包含数字字符（\ ``0-9``\ ）和句点（\ ``.``\ ）。如果留空，则回退到 :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`\ 。
+Application version visible to the user. Can only contain numeric characters (``0-9``) and periods (``.``). Falls back to :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>` if left empty.
 
-\ **注意：**\ 生成的 Xcode 项目的 *Identity > Version* 会使用这个值。
+\ **Note:** This value is used for the *Identity > Version* value in the generated Xcode project.
 
 .. rst-class:: classref-item-separator
 
@@ -672,7 +672,7 @@ macOS 26 Liquid Glass icon source file. Use `Icon Composer <https://developer.ap
 
 :ref:`String<class_String>` **application/signature** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/signature>`
 
-特定于该捆绑包的四字符创建者码。可选的。
+A four-character creator code that is specific to the bundle. Optional.
 
 .. rst-class:: classref-item-separator
 
@@ -684,9 +684,9 @@ macOS 26 Liquid Glass icon source file. Use `Icon Composer <https://developer.ap
 
 :ref:`String<class_String>` **application/version** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/version>`
 
-机器可读的应用程序版本，采用 ``major.minor.patch`` 格式，只能包含数字字符（\ ``0-9``\ ）和句点（\ ``.``\ ）。该值必须在被推送到 App Store 的每个新版本中递增。如果留空，则回退到 :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`\ 。
+Machine-readable application version in the ``major.minor.patch`` format. Can only contain numeric characters (``0-9``) and periods (``.``). This must be incremented with every new release pushed to the App Store. Falls back to :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>` if left empty.
 
-\ **注意：**\ 生成的 Xcode 项目的 *Identity > Build* 会使用这个值。
+\ **Note:** This value is used for the *Identity > Build* value in the generated Xcode project.
 
 .. rst-class:: classref-item-separator
 
@@ -698,11 +698,11 @@ macOS 26 Liquid Glass icon source file. Use `Icon Composer <https://developer.ap
 
 :ref:`String<class_String>` **binary_format/architecture** :ref:`🔗<class_EditorExportPlatformMacOS_property_binary_format/architecture>`
 
-应用程序可执行文件的架构。
+Application executable architecture.
 
-支持的架构有：\ ``x86_64``\ 、\ ``arm64``\ 、\ ``universal``\ （\ ``x86_64 + arm64``\ ）。
+Supported architectures: ``x86_64``, ``arm64``, and ``universal`` (``x86_64 + arm64``).
 
-官方导出模板中只包含 ``universal`` 的二进制文件。
+Official export templates include ``universal`` binaries only.
 
 .. rst-class:: classref-item-separator
 
@@ -714,7 +714,7 @@ macOS 26 Liquid Glass icon source file. Use `Icon Composer <https://developer.ap
 
 :ref:`String<class_String>` **codesign/apple_team_id** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/apple_team_id>`
 
-Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，请检查 Apple 开发者帐户仪表板中的“会员详细信息”部分，或代码签名证书的“组织单位”。见 `查找你的团队 ID <https://developer.apple.com/cn/help/account/manage-your-team/locate-your-team-id>`__\ 。
+Apple Team ID, unique 10-character string. To locate your Team ID check "Membership details" section in your Apple developer account dashboard, or "Organizational Unit" of your code signing certificate. See `Locate your Team ID <https://developer.apple.com/help/account/manage-your-team/locate-your-team-id>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -726,9 +726,9 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **codesign/certificate_file** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/certificate_file>`
 
-用于对 ``.app`` 捆绑包进行签名的 PKCS #12 证书文件。
+PKCS #12 certificate file used to sign ``.app`` bundle.
 
-可以使用环境变量 ``GODOT_MACOS_CODESIGN_CERTIFICATE_FILE`` 覆盖。
+Can be overridden with the environment variable ``GODOT_MACOS_CODESIGN_CERTIFICATE_FILE``.
 
 .. rst-class:: classref-item-separator
 
@@ -740,9 +740,9 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **codesign/certificate_password** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/certificate_password>`
 
-用于对 ``.app`` 捆绑包进行签名的证书文件的密码。
+Password for the certificate file used to sign ``.app`` bundle.
 
-可以使用环境变量 ``GODOT_MACOS_CODESIGN_CERTIFICATE_PASSWORD`` 覆盖。
+Can be overridden with the environment variable ``GODOT_MACOS_CODESIGN_CERTIFICATE_PASSWORD``.
 
 .. rst-class:: classref-item-separator
 
@@ -754,7 +754,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`int<class_int>` **codesign/codesign** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/codesign>`
 
-用于代码签名的工具。
+Tool to use for code signing.
 
 .. rst-class:: classref-item-separator
 
@@ -766,7 +766,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`PackedStringArray<class_PackedStringArray>` **codesign/custom_options** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/custom_options>`
 
-要额外传给代码签名工具的命令行参数的数组。
+Array of the additional command line arguments passed to the code signing tool.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -780,7 +780,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **codesign/entitlements/additional** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/additional>`
 
-添加到 `.entitlements <https://developer.apple.com/documentation/bundleresources/entitlements>`__ 文件的根 ``<dict>`` 部分的其他数据。该值应该是带有键值元素对的 XML 部分，例如：
+Additional data added to the root ``<dict>`` section of the `.entitlements <https://developer.apple.com/documentation/bundleresources/entitlements>`__ file. The value should be an XML section with pairs of key-value elements, for example:
 
 .. code:: text
 
@@ -797,7 +797,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **codesign/entitlements/address_book** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/address_book>`
 
-启用后允许访问用户地址簿中的联系人，如果启用，还应该在 :ref:`privacy/address_book_usage_description<class_EditorExportPlatformMacOS_property_privacy/address_book_usage_description>` 选项中提供用途信息。请参阅 `com.apple.security.personal-information.addressbook <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_addressbook>`__\ 。
+Enable to allow access to contacts in the user's address book, if it's enabled you should also provide usage message in the :ref:`privacy/address_book_usage_description<class_EditorExportPlatformMacOS_property_privacy/address_book_usage_description>` option. See `com.apple.security.personal-information.addressbook <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_addressbook>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -809,7 +809,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **codesign/entitlements/allow_dyld_environment_variables** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/allow_dyld_environment_variables>`
 
-允许应用使用动态链接器环境变量注入代码。如果你使用的插件使用了动态或自我修改的原生代码，请根据该插件文档中的说明启用。见 `com.apple.security.cs.allow-dyld-environment-variables <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-dyld-environment-variables>`__\ 。
+Allows app to use dynamic linker environment variables to inject code. If you are using add-ons with dynamic or self-modifying native code, enable them according to the add-on documentation. See `com.apple.security.cs.allow-dyld-environment-variables <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-dyld-environment-variables>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -821,7 +821,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **codesign/entitlements/allow_jit_code_execution** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/allow_jit_code_execution>`
 
-允许创建可写可执行内存，用于 JIT 代码。如果你使用的插件使用了动态或自我修改的原生代码，请根据该插件文档中的说明启用。见 `com.apple.security.cs.allow-jit <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-jit>`__\ 。
+Allows creating writable and executable memory for JIT code. If you are using add-ons with dynamic or self-modifying native code, enable them according to the add-on documentation. See `com.apple.security.cs.allow-jit <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-jit>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -833,7 +833,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **codesign/entitlements/allow_unsigned_executable_memory** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/allow_unsigned_executable_memory>`
 
-允许创建可写可执行内存，不受 JIT 限制。如果你使用的插件使用了动态或自我修改的原生代码，请根据该插件文档中的说明启用。见 `com.apple.security.cs.allow-unsigned-executable-memory <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-unsigned-executable-memory>`__\ 。
+Allows creating writable and executable memory without JIT restrictions. If you are using add-ons with dynamic or self-modifying native code, enable them according to the add-on documentation. See `com.apple.security.cs.allow-unsigned-executable-memory <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-unsigned-executable-memory>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -845,7 +845,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **codesign/entitlements/app_sandbox/device_bluetooth** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/device_bluetooth>`
 
-启用后能够允许应用与蓝牙设备交互。使用无线控制器时，必须拥有这项权利。见 `com.apple.security.device.bluetooth <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_bluetooth>`__\ 。
+Enable to allow app to interact with Bluetooth devices. This entitlement is required to use wireless controllers. See `com.apple.security.device.bluetooth <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_bluetooth>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -857,7 +857,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **codesign/entitlements/app_sandbox/device_usb** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/device_usb>`
 
-启用后能够允许应用与 USB 设备交互。使用有线控制器时，必须拥有这项权利。见 `com.apple.security.device.usb <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_usb>`__\ 。
+Enable to allow app to interact with USB devices. This entitlement is required to use wired controllers. See `com.apple.security.device.usb <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_usb>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -869,9 +869,9 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **codesign/entitlements/app_sandbox/enabled** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/enabled>`
 
-启用 App Sandbox 应用沙盒。App Sandbox 能够限制对用户数据、网络以及设备的访问。沙盒应用无法访问文件系统中的大部分区域，无法使用自定义文件对话框，也无法执行 .app 捆绑包之外的二进制文件。见 `App Sandbox <https://developer.apple.com/documentation/security/app_sandbox>`__\ 。
+Enables App Sandbox. The App Sandbox restricts access to user data, networking, and devices. Sandboxed apps can't access most of the file system, can't use custom file dialogs and execute binaries outside the .app bundle. See `App Sandbox <https://developer.apple.com/documentation/security/app_sandbox>`__.
 
-\ **注意：**\ 通过 App Store 分发应用时必须启用 App Sandbox。
+\ **Note:** To distribute an app through the App Store, you must enable the App Sandbox.
 
 .. rst-class:: classref-item-separator
 
@@ -883,7 +883,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`int<class_int>` **codesign/entitlements/app_sandbox/files_downloads** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/files_downloads>`
 
-允许对用户“下载”文件夹的读写访问。见 `com.apple.security.files.downloads.read-write <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_files_downloads_read-write>`__\ 。
+Allows read or write access to the user's "Downloads" folder. See `com.apple.security.files.downloads.read-write <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_files_downloads_read-write>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -895,7 +895,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`int<class_int>` **codesign/entitlements/app_sandbox/files_movies** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/files_movies>`
 
-允许对用户“影片”文件夹的读写访问。见 `com.apple.security.files.movies.read-write <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_assets_movies_read-write>`__\ 。
+Allows read or write access to the user's "Movies" folder. See `com.apple.security.files.movies.read-write <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_assets_movies_read-write>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -907,7 +907,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`int<class_int>` **codesign/entitlements/app_sandbox/files_music** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/files_music>`
 
-允许对用户“音乐”文件夹的读写访问。见 `com.apple.security.files.music.read-write <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_assets_music_read-write>`__\ 。
+Allows read or write access to the user's "Music" folder. See `com.apple.security.files.music.read-write <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_assets_music_read-write>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -919,7 +919,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`int<class_int>` **codesign/entitlements/app_sandbox/files_pictures** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/files_pictures>`
 
-允许对用户“图片”文件夹的读写访问。见 `com.apple.security.files.pictures.read-write <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_assets_pictures_read-write>`__\ 。
+Allows read or write access to the user's "Pictures" folder. See `com.apple.security.files.pictures.read-write <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_assets_pictures_read-write>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -931,7 +931,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`int<class_int>` **codesign/entitlements/app_sandbox/files_user_selected** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/files_user_selected>`
 
-允许对用户使用原生文件对话框选择的位置进行读或写访问。请参阅 `com.apple.security.files.user-selected.read-write <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_files_user-selected_read-write>`__\ 。
+Allows read or write access to the locations the user has selected using a native file dialog. See `com.apple.security.files.user-selected.read-write <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_files_user-selected_read-write>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -943,7 +943,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`Array<class_Array>` **codesign/entitlements/app_sandbox/helper_executables** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/helper_executables>`
 
-要嵌入应用捆绑包的辅助可执行文件列表。沙盒应用仅限于执行这些可执行文件。见 `Embedding a command-line tool in a sandboxed app <https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app>`__\ 。
+List of helper executables to embedded to the app bundle. Sandboxed app are limited to execute only these executable. See `Embedding a command-line tool in a sandboxed app <https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -955,7 +955,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **codesign/entitlements/app_sandbox/network_client** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/network_client>`
 
-启用后允许应用建立出站的网络连接。见 `com.apple.security.network.client <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_network_client>`__\ 。
+Enable to allow app to establish outgoing network connections. See `com.apple.security.network.client <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_network_client>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -967,7 +967,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **codesign/entitlements/app_sandbox/network_server** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/network_server>`
 
-启用后允许应用监听入站的网络连接。见 `com.apple.security.network.server <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_network_server>`__\ 。
+Enable to allow app to listen for incoming network connections. See `com.apple.security.network.server <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_network_server>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -979,7 +979,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **codesign/entitlements/apple_events** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/apple_events>`
 
-启用后允许应用向其他应用发送 Apple 事件。见 `com.apple.security.automation.apple-events <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_automation_apple-events>`__\ 。
+Enable to allow app to send Apple events to other apps. See `com.apple.security.automation.apple-events <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_automation_apple-events>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -991,7 +991,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **codesign/entitlements/audio_input** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/audio_input>`
 
-需要使用麦克风或其他音频输入源时启用，启用时还应在 :ref:`privacy/microphone_usage_description<class_EditorExportPlatformMacOS_property_privacy/microphone_usage_description>` 选项中提供用途信息。请参阅 `com.apple.security.device.audio-input <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_audio-input>`__\ 。
+Enable if you need to use the microphone or other audio input sources, if it's enabled you should also provide usage message in the :ref:`privacy/microphone_usage_description<class_EditorExportPlatformMacOS_property_privacy/microphone_usage_description>` option. See `com.apple.security.device.audio-input <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_audio-input>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1003,7 +1003,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **codesign/entitlements/calendars** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/calendars>`
 
-启用后允许访问用户的日历，启用时还应在 :ref:`privacy/calendar_usage_description<class_EditorExportPlatformMacOS_property_privacy/calendar_usage_description>` 选项中提供用途信息。请参阅 `com.apple.security.personal-information.calendars <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_calendars>`__\ 。
+Enable to allow access to the user's calendar, if it's enabled you should also provide usage message in the :ref:`privacy/calendar_usage_description<class_EditorExportPlatformMacOS_property_privacy/calendar_usage_description>` option. See `com.apple.security.personal-information.calendars <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_calendars>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1015,7 +1015,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **codesign/entitlements/camera** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/camera>`
 
-需要使用相机时启用，启用时还应在 :ref:`privacy/camera_usage_description<class_EditorExportPlatformMacOS_property_privacy/camera_usage_description>` 选项中提供用途信息。请参阅 `com.apple.security.device.camera <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_camera>`__\ 。
+Enable if you need to use the camera, if it's enabled you should also provide usage message in the :ref:`privacy/camera_usage_description<class_EditorExportPlatformMacOS_property_privacy/camera_usage_description>` option. See `com.apple.security.device.camera <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_camera>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1027,7 +1027,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **codesign/entitlements/custom_file** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/custom_file>`
 
-自定义权利 ``.plist`` 文件，如果指定，则会忽略导出配置中的其他权利。
+Custom entitlements ``.plist`` file, if specified the rest of entitlements in the export config are ignored.
 
 .. rst-class:: classref-item-separator
 
@@ -1039,7 +1039,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **codesign/entitlements/debugging** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/debugging>`
 
-临时启用这个权利就可以对导出的应用使用原生调试器（GDB、LLDB）。生产导出应该禁用这项权利。见 `Embedding a command-line tool in a sandboxed app <https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app>`__\ 。
+You can temporarily enable this entitlement to use native debugger (GDB, LLDB) with the exported app. This entitlement should be disabled for production export. See `Embedding a command-line tool in a sandboxed app <https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1051,7 +1051,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **codesign/entitlements/disable_library_validation** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/disable_library_validation>`
 
-允许应用加载任意库和框架（没有使用与主可执行文件相同的团队 ID 进行签名，也没有经过 Apple 的签名）。如果你使用了 GDExtension 插件或 ad-hoc 签名，或者想要支持用户提供的外部插件，请启用该选项。见 `com.apple.security.cs.disable-library-validation <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_disable-library-validation>`__\ 。
+Allows app to load arbitrary libraries and frameworks (not signed with the same Team ID as the main executable or by Apple). Enable it if you are using GDExtension add-ons or ad-hoc signing, or want to support user-provided external add-ons. See `com.apple.security.cs.disable-library-validation <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_disable-library-validation>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1063,7 +1063,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **codesign/entitlements/location** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/location>`
 
-需要使用位置服务中的位置信息时启用，启用时还应在 :ref:`privacy/location_usage_description<class_EditorExportPlatformMacOS_property_privacy/location_usage_description>` 选项中提供用途信息。请参阅 `com.apple.security.personal-information.location <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_location>`__\ 。
+Enable if you need to use location information from Location Services, if it's enabled you should also provide usage message in the :ref:`privacy/location_usage_description<class_EditorExportPlatformMacOS_property_privacy/location_usage_description>` option. See `com.apple.security.personal-information.location <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_location>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1075,7 +1075,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **codesign/entitlements/photos_library** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/photos_library>`
 
-启用后允许访问用户的照片库，启用时还应在 :ref:`privacy/photos_library_usage_description<class_EditorExportPlatformMacOS_property_privacy/photos_library_usage_description>` 选项中提供用途消息。请参阅 `com.apple.security.personal-information.photos-library <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_photos-library>`__\ 。
+Enable to allow access to the user's Photos library, if it's enabled you should also provide usage message in the :ref:`privacy/photos_library_usage_description<class_EditorExportPlatformMacOS_property_privacy/photos_library_usage_description>` option. See `com.apple.security.personal-information.photos-library <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_photos-library>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1087,7 +1087,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **codesign/identity** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/identity>`
 
-用于对 ``.app`` 捆绑包进行签名的签名身份的“全名”“通用名”或 SHA-1 哈希。
+The "Full Name", "Common Name" or SHA-1 hash of the signing identity used to sign ``.app`` bundle.
 
 .. rst-class:: classref-item-separator
 
@@ -1099,7 +1099,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **codesign/installer_identity** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/installer_identity>`
 
-用于对通过 App Store 分发的 ``.pkg`` 安装器进行签名的签名身份的“全名”“通用名”或 SHA-1 哈希，使用 ``3rd Party Mac Developer Installer: Name.`` 身份。
+The "Full Name", "Common Name" or SHA-1 hash of the signing identity used to sign ``.pkg`` installer package for App Store distribution, use ``3rd Party Mac Developer Installer: Name.`` identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1111,9 +1111,9 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **codesign/provisioning_profile** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/provisioning_profile>`
 
-从 Apple 开发者账户控制面板下载到的预置描述文件。见 `编辑、下载或删除预置描述文件 <https://developer.apple.com/cn/help/account/manage-profiles/edit-download-or-delete-profiles/>`__\ 。
+Provisioning profile file downloaded from Apple developer account dashboard. See `Edit, download, or delete provisioning profiles <https://developer.apple.com/help/account/manage-profiles/edit-download-or-delete-profiles>`__.
 
-可以使用环境变量 ``GODOT_MACOS_CODESIGN_PROVISIONING_PROFILE`` 覆盖。
+Can be overridden with the environment variable ``GODOT_MACOS_CODESIGN_PROVISIONING_PROFILE``.
 
 .. rst-class:: classref-item-separator
 
@@ -1125,7 +1125,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **custom_template/debug** :ref:`🔗<class_EditorExportPlatformMacOS_property_custom_template/debug>`
 
-到自定义导出模板的路径。如果留空，则默认模板将被使用。
+Path to the custom export template. If left empty, default template is used.
 
 .. rst-class:: classref-item-separator
 
@@ -1137,7 +1137,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **custom_template/release** :ref:`🔗<class_EditorExportPlatformMacOS_property_custom_template/release>`
 
-到自定义导出模板的路径。如果留空，则默认模板将被使用。
+Path to the custom export template. If left empty, default template is used.
 
 .. rst-class:: classref-item-separator
 
@@ -1149,7 +1149,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`int<class_int>` **debug/export_console_wrapper** :ref:`🔗<class_EditorExportPlatformMacOS_property_debug/export_console_wrapper>`
 
-启用后，会在导出后的应用程序旁创建一个封装程序，可以用来以带命令行输出的形式运行该应用程序。
+If enabled, a wrapper that can be used to run the application with console output is created alongside the exported application.
 
 .. rst-class:: classref-item-separator
 
@@ -1161,7 +1161,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **display/high_res** :ref:`🔗<class_EditorExportPlatformMacOS_property_display/high_res>`
 
-如果为 ``true``\ ，则应用程序使用原生显示器分辨率渲染，否则始终使用 loDPI 分辨率渲染，必要时由操作系统放大。
+If ``true``, the application is rendered at native display resolution, otherwise it is always rendered at loDPI resolution and upscaled by OS when required.
 
 .. rst-class:: classref-item-separator
 
@@ -1173,7 +1173,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`int<class_int>` **export/distribution_type** :ref:`🔗<class_EditorExportPlatformMacOS_property_export/distribution_type>`
 
-应用程序分发目标。
+Application distribution target.
 
 .. rst-class:: classref-item-separator
 
@@ -1185,9 +1185,9 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`String<class_String>` **notarization/api_key** :ref:`🔗<class_EditorExportPlatformMacOS_property_notarization/api_key>`
 
-Apple App Store Connect API 发行者密钥文件。
+Apple App Store Connect API issuer key file.
 
-可以使用环境变量 ``GODOT_MACOS_NOTARIZATION_API_KEY`` 覆盖。
+Can be overridden with the environment variable ``GODOT_MACOS_NOTARIZATION_API_KEY``.
 
 .. rst-class:: classref-item-separator
 
@@ -1199,9 +1199,9 @@ Apple App Store Connect API 发行者密钥文件。
 
 :ref:`String<class_String>` **notarization/api_key_id** :ref:`🔗<class_EditorExportPlatformMacOS_property_notarization/api_key_id>`
 
-Apple App Store Connect API 发行者密钥 ID。
+Apple App Store Connect API issuer key ID.
 
-可以使用环境变量 ``GODOT_MACOS_NOTARIZATION_API_KEY_ID`` 覆盖。
+Can be overridden with the environment variable ``GODOT_MACOS_NOTARIZATION_API_KEY_ID``.
 
 .. rst-class:: classref-item-separator
 
@@ -1213,9 +1213,9 @@ Apple App Store Connect API 发行者密钥 ID。
 
 :ref:`String<class_String>` **notarization/api_uuid** :ref:`🔗<class_EditorExportPlatformMacOS_property_notarization/api_uuid>`
 
-Apple App Store Connect API 发行者 UUID。
+Apple App Store Connect API issuer UUID.
 
-可以使用环境变量 ``GODOT_MACOS_NOTARIZATION_API_UUID`` 覆盖。
+Can be overridden with the environment variable ``GODOT_MACOS_NOTARIZATION_API_UUID``.
 
 .. rst-class:: classref-item-separator
 
@@ -1227,9 +1227,9 @@ Apple App Store Connect API 发行者 UUID。
 
 :ref:`String<class_String>` **notarization/apple_id_name** :ref:`🔗<class_EditorExportPlatformMacOS_property_notarization/apple_id_name>`
 
-Apple ID 账户名（邮箱地址）。
+Apple ID account name (email address).
 
-可以使用环境变量 ``GODOT_MACOS_NOTARIZATION_APPLE_ID_NAME`` 覆盖。
+Can be overridden with the environment variable ``GODOT_MACOS_NOTARIZATION_APPLE_ID_NAME``.
 
 .. rst-class:: classref-item-separator
 
@@ -1241,9 +1241,9 @@ Apple ID 账户名（邮箱地址）。
 
 :ref:`String<class_String>` **notarization/apple_id_password** :ref:`🔗<class_EditorExportPlatformMacOS_property_notarization/apple_id_password>`
 
-Apple ID 针对应用的密码。
+Apple ID app-specific password.
 
-可以使用环境变量 ``GODOT_MACOS_NOTARIZATION_APPLE_ID_PASSWORD`` 覆盖。
+Can be overridden with the environment variable ``GODOT_MACOS_NOTARIZATION_APPLE_ID_PASSWORD``.
 
 .. rst-class:: classref-item-separator
 
@@ -1255,7 +1255,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **notarization/notarization** :ref:`🔗<class_EditorExportPlatformMacOS_property_notarization/notarization>`
 
-用于公证的工具。
+Tool to use for notarization.
 
 .. rst-class:: classref-item-separator
 
@@ -1267,7 +1267,7 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **privacy/address_book_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/address_book_usage_description>`
 
-请求访问用户的联系人时显示的（英文）消息。
+A message displayed when requesting access to the user's contacts (in English).
 
 .. rst-class:: classref-item-separator
 
@@ -1279,7 +1279,7 @@ Apple ID 针对应用的密码。
 
 :ref:`Dictionary<class_Dictionary>` **privacy/address_book_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/address_book_usage_description_localized>`
 
-请求访问用户的联系人时显示的（本地化）消息。
+A message displayed when requesting access to the user's contacts (localized).
 
 .. rst-class:: classref-item-separator
 
@@ -1291,7 +1291,7 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **privacy/calendar_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/calendar_usage_description>`
 
-请求访问用户的日历数据时显示的（英文）消息。
+A message displayed when requesting access to the user's calendar data (in English).
 
 .. rst-class:: classref-item-separator
 
@@ -1303,7 +1303,7 @@ Apple ID 针对应用的密码。
 
 :ref:`Dictionary<class_Dictionary>` **privacy/calendar_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/calendar_usage_description_localized>`
 
-请求访问用户的日历数据时显示的（本地化）消息。
+A message displayed when requesting access to the user's calendar data (localized).
 
 .. rst-class:: classref-item-separator
 
@@ -1315,7 +1315,7 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **privacy/camera_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/camera_usage_description>`
 
-请求访问设备相机时显示的（英文）消息。
+A message displayed when requesting access to the device's camera (in English).
 
 .. rst-class:: classref-item-separator
 
@@ -1327,7 +1327,7 @@ Apple ID 针对应用的密码。
 
 :ref:`Dictionary<class_Dictionary>` **privacy/camera_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/camera_usage_description_localized>`
 
-请求访问设备相机时显示的（本地化）消息。
+A message displayed when requesting access to the device's camera (localized).
 
 .. rst-class:: classref-item-separator
 
@@ -1339,7 +1339,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/advertising_data/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/advertising_data/collected>`
 
-表示你的应用是否会收集广告数据。
+Indicates whether your app collects advertising data.
 
 .. rst-class:: classref-item-separator
 
@@ -1351,7 +1351,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/advertising_data/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/advertising_data/collection_purposes>`
 
-你的应用收集广告数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects advertising data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1363,7 +1363,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/advertising_data/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/advertising_data/linked_to_user>`
 
-表示你的应用是否会将广告数据链接到用户的身份。
+Indicates whether your app links advertising data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1375,7 +1375,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/advertising_data/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/advertising_data/used_for_tracking>`
 
-表示你的应用是否会将广告数据用于追踪。
+Indicates whether your app uses advertising data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1387,7 +1387,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/audio_data/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/audio_data/collected>`
 
-表示你的应用是否会收集音频数据。
+Indicates whether your app collects audio data.
 
 .. rst-class:: classref-item-separator
 
@@ -1399,7 +1399,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/audio_data/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/audio_data/collection_purposes>`
 
-你的应用收集音频数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects audio data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1411,7 +1411,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/audio_data/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/audio_data/linked_to_user>`
 
-表示你的应用是否会将音频数据链接到用户的身份。
+Indicates whether your app links audio data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1423,7 +1423,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/audio_data/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/audio_data/used_for_tracking>`
 
-表示你的应用是否会将音频数据用于追踪。
+Indicates whether your app uses audio data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1435,7 +1435,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/browsing_history/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/browsing_history/collected>`
 
-表示你的应用是否会收集浏览历史。
+Indicates whether your app collects browsing history.
 
 .. rst-class:: classref-item-separator
 
@@ -1447,7 +1447,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/browsing_history/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/browsing_history/collection_purposes>`
 
-你的应用收集浏览历史记录的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects browsing history. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1459,7 +1459,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/browsing_history/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/browsing_history/linked_to_user>`
 
-表示你的应用是否会将浏览历史链接到用户的身份。
+Indicates whether your app links browsing history to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1471,7 +1471,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/browsing_history/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/browsing_history/used_for_tracking>`
 
-表示你的应用是否会将浏览历史用于追踪。
+Indicates whether your app uses browsing history for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1483,7 +1483,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/coarse_location/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/coarse_location/collected>`
 
-表示你的应用是否会收集粗略位置数据。
+Indicates whether your app collects coarse location data.
 
 .. rst-class:: classref-item-separator
 
@@ -1495,7 +1495,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/coarse_location/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/coarse_location/collection_purposes>`
 
-你的应用收集粗略位置数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects coarse location data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1507,7 +1507,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/coarse_location/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/coarse_location/linked_to_user>`
 
-表示你的应用是否会将粗略位置数据链接到用户的身份。
+Indicates whether your app links coarse location data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1519,7 +1519,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/coarse_location/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/coarse_location/used_for_tracking>`
 
-表示你的应用是否会将粗略位置数据用于追踪。
+Indicates whether your app uses coarse location data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1531,7 +1531,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/contacts/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/contacts/collected>`
 
-表示你的应用程序是否收集联系人。
+Indicates whether your app collects contacts.
 
 .. rst-class:: classref-item-separator
 
@@ -1543,7 +1543,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/contacts/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/contacts/collection_purposes>`
 
-你的应用收集联系人的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects contacts. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1555,7 +1555,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/contacts/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/contacts/linked_to_user>`
 
-表示你的应用是否会将通讯录链接到用户的身份。
+Indicates whether your app links contacts to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1567,7 +1567,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/contacts/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/contacts/used_for_tracking>`
 
-表示你的应用是否会将通讯录用于追踪。
+Indicates whether your app uses contacts for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1579,7 +1579,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/crash_data/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/crash_data/collected>`
 
-表示你的应用是否会收集崩溃数据。
+Indicates whether your app collects crash data.
 
 .. rst-class:: classref-item-separator
 
@@ -1591,7 +1591,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/crash_data/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/crash_data/collection_purposes>`
 
-你的应用收集崩溃数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects crash data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1603,7 +1603,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/crash_data/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/crash_data/linked_to_user>`
 
-表示你的应用是否会将崩溃数据链接到用户的身份。
+Indicates whether your app links crash data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1615,7 +1615,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/crash_data/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/crash_data/used_for_tracking>`
 
-表示你的应用是否会将崩溃数据用于追踪。
+Indicates whether your app uses crash data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1627,7 +1627,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/credit_info/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/credit_info/collected>`
 
-表示你的应用程序是否收集信用信息。
+Indicates whether your app collects credit information.
 
 .. rst-class:: classref-item-separator
 
@@ -1639,7 +1639,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/credit_info/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/credit_info/collection_purposes>`
 
-你的应用收集信用信息的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects credit information. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1651,7 +1651,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/credit_info/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/credit_info/linked_to_user>`
 
-表示你的应用是否会将信用信息链接到用户的身份。
+Indicates whether your app links credit information to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1663,7 +1663,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/credit_info/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/credit_info/used_for_tracking>`
 
-表示你的应用是否会将信用信息用于追踪。
+Indicates whether your app uses credit information for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1675,7 +1675,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/customer_support/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/customer_support/collected>`
 
-表示你的应用是否会收集客户支持数据。
+Indicates whether your app collects customer support data.
 
 .. rst-class:: classref-item-separator
 
@@ -1687,7 +1687,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/customer_support/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/customer_support/collection_purposes>`
 
-你的应用程序收集客户支持数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects customer support data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1699,7 +1699,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/customer_support/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/customer_support/linked_to_user>`
 
-表示你的应用程序是否将客户支持数据链接到用户身份。
+Indicates whether your app links customer support data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1711,7 +1711,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/customer_support/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/customer_support/used_for_tracking>`
 
-表示你的应用是否使用客户支持数据进行跟踪。
+Indicates whether your app uses customer support data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1723,7 +1723,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/device_id/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/device_id/collected>`
 
-表示你的应用是否会收集设备 ID。
+Indicates whether your app collects device IDs.
 
 .. rst-class:: classref-item-separator
 
@@ -1735,7 +1735,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/device_id/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/device_id/collection_purposes>`
 
-你的应用收集设备 ID 的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects device IDs. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1747,7 +1747,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/device_id/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/device_id/linked_to_user>`
 
-表示你的应用是否会将设备 ID 链接到用户的身份。
+Indicates whether your app links device IDs to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1759,7 +1759,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/device_id/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/device_id/used_for_tracking>`
 
-表示你的应用是否会将设备 ID 链接用于追踪。
+Indicates whether your app uses device IDs for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1771,7 +1771,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/email_address/collected>`
 
-表示你的应用是否会收集电子邮件地址。
+Indicates whether your app collects email address.
 
 .. rst-class:: classref-item-separator
 
@@ -1783,7 +1783,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/email_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/email_address/collection_purposes>`
 
-你的应用程序收集电子邮件地址的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects email address. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1795,7 +1795,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/email_address/linked_to_user>`
 
-表示你的应用是否会将电子邮件地址链接到用户的身份。
+Indicates whether your app links email address to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1807,7 +1807,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/email_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/email_address/used_for_tracking>`
 
-表示你的应用是否会将电子邮件地址用于追踪。
+Indicates whether your app uses email address for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1819,7 +1819,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/emails_or_text_messages/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/emails_or_text_messages/collected>`
 
-表示你的应用是否会收集电子邮件或短信。
+Indicates whether your app collects emails or text messages.
 
 .. rst-class:: classref-item-separator
 
@@ -1831,7 +1831,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/emails_or_text_messages/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/emails_or_text_messages/collection_purposes>`
 
-你的应用程序收集电子邮件或短信的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects emails or text messages. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1843,7 +1843,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/emails_or_text_messages/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/emails_or_text_messages/linked_to_user>`
 
-表示你的应用是否会将电子邮件或短信链接到用户的身份。
+Indicates whether your app links emails or text messages to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1855,7 +1855,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/emails_or_text_messages/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/emails_or_text_messages/used_for_tracking>`
 
-表示你的应用是否会将电子邮件或短信用于追踪。
+Indicates whether your app uses emails or text messages for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1867,7 +1867,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/environment_scanning/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/environment_scanning/collected>`
 
-表示你的应用是否会收集环境扫描数据。
+Indicates whether your app collects environment scanning data.
 
 .. rst-class:: classref-item-separator
 
@@ -1879,7 +1879,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/environment_scanning/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/environment_scanning/collection_purposes>`
 
-你的应用程序收集环境扫描数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects environment scanning data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1891,7 +1891,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/environment_scanning/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/environment_scanning/linked_to_user>`
 
-表示你的应用是否会将环境扫描数据链接到用户的身份。
+Indicates whether your app links environment scanning data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1903,7 +1903,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/environment_scanning/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/environment_scanning/used_for_tracking>`
 
-表示你的应用是否会将环境扫描数据用于追踪。
+Indicates whether your app uses environment scanning data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1915,7 +1915,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/fitness/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/fitness/collected>`
 
-表示你的应用是否会收集健身和锻炼数据。
+Indicates whether your app collects fitness and exercise data.
 
 .. rst-class:: classref-item-separator
 
@@ -1927,7 +1927,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/fitness/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/fitness/collection_purposes>`
 
-你的应用收集健身和锻炼数据的原因。见\ `《在隐私清单中描述数据用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects fitness and exercise data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1939,7 +1939,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/fitness/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/fitness/linked_to_user>`
 
-表示你的应用是否会将健身和锻炼数据链接到用户的身份。
+Indicates whether your app links fitness and exercise data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1951,7 +1951,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/fitness/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/fitness/used_for_tracking>`
 
-表示你的应用是否会将健身和锻炼数据用于追踪。
+Indicates whether your app uses fitness and exercise data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -1963,7 +1963,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/gameplay_content/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/gameplay_content/collected>`
 
-表示你的应用是否会收集游戏内容。
+Indicates whether your app collects gameplay content.
 
 .. rst-class:: classref-item-separator
 
@@ -1975,7 +1975,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/gameplay_content/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/gameplay_content/collection_purposes>`
 
-你的应用程序收集游戏内容的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects gameplay content. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1987,7 +1987,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/gameplay_content/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/gameplay_content/linked_to_user>`
 
-表示你的应用是否会将游戏内容链接到用户的身份。
+Indicates whether your app links gameplay content to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -1999,7 +1999,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/gameplay_content/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/gameplay_content/used_for_tracking>`
 
-表示你的应用是否会将游戏内容用于追踪。
+Indicates whether your app uses gameplay content for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2011,7 +2011,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/hands/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/hands/collected>`
 
-表示你的应用是否会收集用户的手部结构和手部移动。
+Indicates whether your app collects user's hand structure and hand movements.
 
 .. rst-class:: classref-item-separator
 
@@ -2023,7 +2023,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/hands/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/hands/collection_purposes>`
 
-你的应用收集用户的手部结构和手部移动的原因。见\ `《在隐私清单中描述数据用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects user's hand structure and hand movements. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2035,7 +2035,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/hands/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/hands/linked_to_user>`
 
-表示你的应用是否会将用户的手部结构和手部移动链接到用户的身份。
+Indicates whether your app links user's hand structure and hand movements to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2047,7 +2047,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/hands/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/hands/used_for_tracking>`
 
-表示你的应用是否会将用户的手部结构和手部移动用于追踪。
+Indicates whether your app uses user's hand structure and hand movements for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2059,7 +2059,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/head/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/head/collected>`
 
-表示你的应用是否会收集用户的头部移动。
+Indicates whether your app collects user's head movement.
 
 .. rst-class:: classref-item-separator
 
@@ -2071,7 +2071,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/head/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/head/collection_purposes>`
 
-你的应用程序收集用户头部运动的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects user's head movement. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2083,7 +2083,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/head/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/head/linked_to_user>`
 
-表示你的应用是否会将用户的头部移动链接到用户的身份。
+Indicates whether your app links user's head movement to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2095,7 +2095,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/head/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/head/used_for_tracking>`
 
-表示你的应用是否会将用户的头部移动用于追踪。
+Indicates whether your app uses user's head movement for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2107,7 +2107,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/health/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/health/collected>`
 
-表示你的应用是否会收集健康和医学数据。
+Indicates whether your app collects health and medical data.
 
 .. rst-class:: classref-item-separator
 
@@ -2119,7 +2119,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/health/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/health/collection_purposes>`
 
-你的应用收集健康和医学数据的原因。见\ `《在隐私清单中描述数据用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects health and medical data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2131,7 +2131,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/health/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/health/linked_to_user>`
 
-表示你的应用是否会将健康和医学数据链接到用户的身份。
+Indicates whether your app links health and medical data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2143,7 +2143,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/health/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/health/used_for_tracking>`
 
-表示你的应用是否会将健康和医学数据用于追踪。
+Indicates whether your app uses health and medical data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2155,7 +2155,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/name/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/name/collected>`
 
-表示你的应用是否会收集用户的姓名。
+Indicates whether your app collects user's name.
 
 .. rst-class:: classref-item-separator
 
@@ -2167,7 +2167,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/name/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/name/collection_purposes>`
 
-你的应用程序收集用户姓名的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects user's name. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2179,7 +2179,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/name/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/name/linked_to_user>`
 
-表示你的应用是否会将用户的姓名链接到用户的身份。
+Indicates whether your app links user's name to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2191,7 +2191,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/name/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/name/used_for_tracking>`
 
-表示你的应用是否会将用户的姓名用于追踪。
+Indicates whether your app uses user's name for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2203,7 +2203,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_contact_info/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_contact_info/collected>`
 
-表示你的应用程序是否收集任何其他联系信息。
+Indicates whether your app collects any other contact information.
 
 .. rst-class:: classref-item-separator
 
@@ -2215,7 +2215,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/other_contact_info/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_contact_info/collection_purposes>`
 
-你的应用收程序集任何其他联系信息的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects any other contact information. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2227,7 +2227,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_contact_info/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_contact_info/linked_to_user>`
 
-表示你的应用是否会将任何其他联系信息链接到用户的身份。
+Indicates whether your app links any other contact information to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2239,7 +2239,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_contact_info/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_contact_info/used_for_tracking>`
 
-表示你的应用是否会将任何其他联系信息用于追踪。
+Indicates whether your app uses any other contact information for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2251,7 +2251,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_data_types/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_data_types/collected>`
 
-表示你的应用是否会收集任何其它数据。
+Indicates whether your app collects any other data.
 
 .. rst-class:: classref-item-separator
 
@@ -2263,7 +2263,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/other_data_types/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_data_types/collection_purposes>`
 
-你的应用程序收集任何其他数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects any other data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2275,7 +2275,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_data_types/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_data_types/linked_to_user>`
 
-表示你的应用是否会将任何其它数据链接到用户的身份。
+Indicates whether your app links any other data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2287,7 +2287,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_data_types/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_data_types/used_for_tracking>`
 
-表示你的应用是否会将任何其它数据用于追踪。
+Indicates whether your app uses any other data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2299,7 +2299,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_diagnostic_data/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_diagnostic_data/collected>`
 
-表示你的应用是否会收集任何其它诊断数据。
+Indicates whether your app collects any other diagnostic data.
 
 .. rst-class:: classref-item-separator
 
@@ -2311,7 +2311,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/other_diagnostic_data/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_diagnostic_data/collection_purposes>`
 
-你的应用程序收集任何其他诊断数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects any other diagnostic data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2323,7 +2323,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_diagnostic_data/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_diagnostic_data/linked_to_user>`
 
-表示你的应用是否会将任何其它诊断数据链接到用户的身份。
+Indicates whether your app links any other diagnostic data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2335,7 +2335,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_diagnostic_data/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_diagnostic_data/used_for_tracking>`
 
-表示你的应用是否会将任何其它诊断数据用于追踪。
+Indicates whether your app uses any other diagnostic data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2347,7 +2347,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_financial_info/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_financial_info/collected>`
 
-表示你的应用程序是否收集任何其他财务信息。
+Indicates whether your app collects any other financial information.
 
 .. rst-class:: classref-item-separator
 
@@ -2359,7 +2359,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/other_financial_info/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_financial_info/collection_purposes>`
 
-你的应用程序收集任何其他财务信息的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects any other financial information. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2371,7 +2371,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_financial_info/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_financial_info/linked_to_user>`
 
-表示你的应用是否会将任何其它财务信息链接到用户的身份。
+Indicates whether your app links any other financial information to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2383,7 +2383,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_financial_info/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_financial_info/used_for_tracking>`
 
-表示你的应用是否会将任何其它财务信息用于追踪。
+Indicates whether your app uses any other financial information for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2395,7 +2395,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_usage_data/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_usage_data/collected>`
 
-表示你的应用是否会收集任何其它使用数据。
+Indicates whether your app collects any other usage data.
 
 .. rst-class:: classref-item-separator
 
@@ -2407,7 +2407,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/other_usage_data/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_usage_data/collection_purposes>`
 
-你的应用程序收集任何其他使用数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects any other usage data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2419,7 +2419,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_usage_data/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_usage_data/linked_to_user>`
 
-表示你的应用是否会将任何其它使用数据链接到用户的身份。
+Indicates whether your app links any other usage data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2431,7 +2431,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_usage_data/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_usage_data/used_for_tracking>`
 
-表示你的应用是否会将任何其它使用数据用于追踪。
+Indicates whether your app uses any other usage data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2443,7 +2443,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_user_content/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_user_content/collected>`
 
-表示你的应用是否会收集任何其它用户生成内容。
+Indicates whether your app collects any other user generated content.
 
 .. rst-class:: classref-item-separator
 
@@ -2455,7 +2455,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/other_user_content/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_user_content/collection_purposes>`
 
-你的应用程序收集任何其他用户生成内容的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects any other user generated content. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2467,7 +2467,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_user_content/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_user_content/linked_to_user>`
 
-表示你的应用是否会将任何其它用户生成内容链接到用户的身份。
+Indicates whether your app links any other user generated content to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2479,7 +2479,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/other_user_content/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_user_content/used_for_tracking>`
 
-表示你的应用是否会将任何其它用户生成内容用于追踪。
+Indicates whether your app uses any other user generated content for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2491,7 +2491,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/payment_info/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/payment_info/collected>`
 
-表示你的应用程序是否收集支付信息。
+Indicates whether your app collects payment information.
 
 .. rst-class:: classref-item-separator
 
@@ -2503,7 +2503,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/payment_info/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/payment_info/collection_purposes>`
 
-你的应用程序收集支付信息的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects payment information. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2515,7 +2515,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/payment_info/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/payment_info/linked_to_user>`
 
-表示你的应用是否会将支付信息链接到用户的身份。
+Indicates whether your app links payment information to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2527,7 +2527,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/payment_info/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/payment_info/used_for_tracking>`
 
-表示你的应用是否会将支付信息用于追踪。
+Indicates whether your app uses payment information for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2539,7 +2539,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/performance_data/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/performance_data/collected>`
 
-表示你的应用程序是否收集性能数据。
+Indicates whether your app collects performance data.
 
 .. rst-class:: classref-item-separator
 
@@ -2551,7 +2551,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/performance_data/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/performance_data/collection_purposes>`
 
-你的应用收集性能数据的原因。见\ `《在隐私清单中描述数据用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects performance data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2563,7 +2563,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/performance_data/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/performance_data/linked_to_user>`
 
-表示你的应用是否会将性能数据链接到用户的身份。
+Indicates whether your app links performance data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2575,7 +2575,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/performance_data/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/performance_data/used_for_tracking>`
 
-表示你的应用是否会将性能数据用于追踪。
+Indicates whether your app uses performance data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2587,7 +2587,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/phone_number/collected>`
 
-表示你的应用是否会收集电话号码。
+Indicates whether your app collects phone number.
 
 .. rst-class:: classref-item-separator
 
@@ -2599,7 +2599,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/phone_number/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/phone_number/collection_purposes>`
 
-你的应用程序收集电话号码的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects phone number. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2611,7 +2611,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/phone_number/linked_to_user>`
 
-表示你的应用是否会将电话号码链接到用户的身份。
+Indicates whether your app links phone number to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2623,7 +2623,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/phone_number/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/phone_number/used_for_tracking>`
 
-表示你的应用是否会将电话号码用于追踪。
+Indicates whether your app uses phone number for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2635,7 +2635,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/photos_or_videos/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/photos_or_videos/collected>`
 
-表示你的应用程序是否收集照片或视频。
+Indicates whether your app collects photos or videos.
 
 .. rst-class:: classref-item-separator
 
@@ -2647,7 +2647,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/photos_or_videos/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/photos_or_videos/collection_purposes>`
 
-你的应用程序收集照片或视频的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects photos or videos. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2659,7 +2659,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/photos_or_videos/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/photos_or_videos/linked_to_user>`
 
-表示你的应用是否会将照片或视频链接到用户的身份。
+Indicates whether your app links photos or videos to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2671,7 +2671,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/photos_or_videos/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/photos_or_videos/used_for_tracking>`
 
-表示你的应用是否会将照片或视频用于追踪。
+Indicates whether your app uses photos or videos for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2683,7 +2683,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/physical_address/collected>`
 
-表示你的应用是否会收集实际住址。
+Indicates whether your app collects physical address.
 
 .. rst-class:: classref-item-separator
 
@@ -2695,7 +2695,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/physical_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/physical_address/collection_purposes>`
 
-你的应用收集实际住址的原因。见\ `《在隐私清单中描述数据用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects physical address. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2707,7 +2707,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/physical_address/linked_to_user>`
 
-表示你的应用是否会将实际住址链接到用户的身份。
+Indicates whether your app links physical address to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2719,7 +2719,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/physical_address/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/physical_address/used_for_tracking>`
 
-表示你的应用是否会将实际住址用于追踪。
+Indicates whether your app uses physical address for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2731,7 +2731,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/precise_location/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/precise_location/collected>`
 
-表示你的应用是否会收集精确位置数据。
+Indicates whether your app collects precise location data.
 
 .. rst-class:: classref-item-separator
 
@@ -2743,7 +2743,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/precise_location/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/precise_location/collection_purposes>`
 
-你的应用程序收集精确位置数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects precise location data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2755,7 +2755,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/precise_location/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/precise_location/linked_to_user>`
 
-表示你的应用是否会将精确位置数据链接到用户的身份。
+Indicates whether your app links precise location data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2767,7 +2767,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/precise_location/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/precise_location/used_for_tracking>`
 
-表示你的应用是否会将精确位置数据用于追踪。
+Indicates whether your app uses precise location data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2779,7 +2779,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/product_interaction/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/product_interaction/collected>`
 
-表示你的应用是否会收集产品互动数据。
+Indicates whether your app collects product interaction data.
 
 .. rst-class:: classref-item-separator
 
@@ -2791,7 +2791,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/product_interaction/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/product_interaction/collection_purposes>`
 
-你的应用程序收集产品互动数据的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects product interaction data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2803,7 +2803,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/product_interaction/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/product_interaction/linked_to_user>`
 
-表示你的应用是否会将产品互动数据链接到用户的身份。
+Indicates whether your app links product interaction data to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2815,7 +2815,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/product_interaction/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/product_interaction/used_for_tracking>`
 
-表示你的应用是否会将产品互动数据用于追踪。
+Indicates whether your app uses product interaction data for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2827,7 +2827,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/purchase_history/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/purchase_history/collected>`
 
-表示你的应用是否会收集购买历史。
+Indicates whether your app collects purchase history.
 
 .. rst-class:: classref-item-separator
 
@@ -2839,7 +2839,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/purchase_history/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/purchase_history/collection_purposes>`
 
-你的应用收集购买历史的原因。见\ `《在隐私清单中描述数据用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects purchase history. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2851,7 +2851,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/purchase_history/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/purchase_history/linked_to_user>`
 
-表示你的应用是否会将购买历史链接到用户的身份。
+Indicates whether your app links purchase history to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2863,7 +2863,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/purchase_history/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/purchase_history/used_for_tracking>`
 
-表示你的应用是否会将购买历史用于追踪。
+Indicates whether your app uses purchase history for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2875,7 +2875,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/search_history/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/search_history/collected>`
 
-表示你的应用程序是否收集搜索历史记录。
+Indicates whether your app collects search history.
 
 .. rst-class:: classref-item-separator
 
@@ -2887,7 +2887,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/search_history/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/search_history/collection_purposes>`
 
-你的应用程序收集搜索历史的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects search history. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2899,7 +2899,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/search_history/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/search_history/linked_to_user>`
 
-表示你的应用是否会将搜索历史链接到用户的身份。
+Indicates whether your app links search history to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2911,7 +2911,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/search_history/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/search_history/used_for_tracking>`
 
-表示你的应用是否会将搜索历史用于追踪。
+Indicates whether your app uses search history for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2923,7 +2923,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/sensitive_info/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/sensitive_info/collected>`
 
-表示你的应用程序是否收集敏感的用户信息。
+Indicates whether your app collects sensitive user information.
 
 .. rst-class:: classref-item-separator
 
@@ -2935,7 +2935,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/sensitive_info/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/sensitive_info/collection_purposes>`
 
-你的应用程序收集敏感用户信息的原因。请参阅 `描述隐私清单中的数据使用 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects sensitive user information. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2947,7 +2947,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/sensitive_info/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/sensitive_info/linked_to_user>`
 
-表示你的 app 是否会将敏感用户信息链接到用户的身份上。
+Indicates whether your app links sensitive user information to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -2959,7 +2959,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/sensitive_info/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/sensitive_info/used_for_tracking>`
 
-表示你的 app 是否会将敏感用户信息用于跟踪。
+Indicates whether your app uses sensitive user information for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -2971,7 +2971,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/user_id/collected** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/user_id/collected>`
 
-表示你的 app 是否会收集用户 ID。
+Indicates whether your app collects user IDs.
 
 .. rst-class:: classref-item-separator
 
@@ -2983,7 +2983,7 @@ Apple ID 针对应用的密码。
 
 :ref:`int<class_int>` **privacy/collected_data/user_id/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/user_id/collection_purposes>`
 
-你的 app 收集用户 ID 的原因。见\ `《在隐私清单中描述数据用途》 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__\ 。
+The reasons your app collects user IDs. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2995,7 +2995,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/user_id/linked_to_user** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/user_id/linked_to_user>`
 
-表示你的 app 是否会将用户 ID 链接到用户的身份上。
+Indicates whether your app links user IDs to the user's identity.
 
 .. rst-class:: classref-item-separator
 
@@ -3007,7 +3007,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/collected_data/user_id/used_for_tracking** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/user_id/used_for_tracking>`
 
-表示你的 app 是否会将用户 ID 用于跟踪。
+Indicates whether your app uses user IDs for tracking.
 
 .. rst-class:: classref-item-separator
 
@@ -3019,7 +3019,7 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **privacy/desktop_folder_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/desktop_folder_usage_description>`
 
-请求访问用户的“桌面”文件夹时显示的（英文）消息。
+A message displayed when requesting access to the user's "Desktop" folder (in English).
 
 .. rst-class:: classref-item-separator
 
@@ -3031,7 +3031,7 @@ Apple ID 针对应用的密码。
 
 :ref:`Dictionary<class_Dictionary>` **privacy/desktop_folder_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/desktop_folder_usage_description_localized>`
 
-请求访问用户的“桌面”文件夹时显示的（本地化）消息。
+A message displayed when requesting access to the user's "Desktop" folder (localized).
 
 .. rst-class:: classref-item-separator
 
@@ -3043,7 +3043,7 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **privacy/documents_folder_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/documents_folder_usage_description>`
 
-请求访问用户的“文档”文件夹时显示的（英文）消息。
+A message displayed when requesting access to the user's "Documents" folder (in English).
 
 .. rst-class:: classref-item-separator
 
@@ -3055,7 +3055,7 @@ Apple ID 针对应用的密码。
 
 :ref:`Dictionary<class_Dictionary>` **privacy/documents_folder_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/documents_folder_usage_description_localized>`
 
-请求访问用户的“文档”文件夹时显示的（本地化）消息。
+A message displayed when requesting access to the user's "Documents" folder (localized).
 
 .. rst-class:: classref-item-separator
 
@@ -3067,7 +3067,7 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **privacy/downloads_folder_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/downloads_folder_usage_description>`
 
-请求访问用户的“下载”文件夹时显示的（英文）消息。
+A message displayed when requesting access to the user's "Downloads" folder (in English).
 
 .. rst-class:: classref-item-separator
 
@@ -3079,7 +3079,7 @@ Apple ID 针对应用的密码。
 
 :ref:`Dictionary<class_Dictionary>` **privacy/downloads_folder_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/downloads_folder_usage_description_localized>`
 
-请求访问用户的“下载”文件夹时显示的（本地化）消息。
+A message displayed when requesting access to the user's "Downloads" folder (localized).
 
 .. rst-class:: classref-item-separator
 
@@ -3091,7 +3091,7 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **privacy/location_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/location_usage_description>`
 
-请求访问用户的位置信息时显示的（英文）消息。
+A message displayed when requesting access to the user's location information (in English).
 
 .. rst-class:: classref-item-separator
 
@@ -3103,7 +3103,7 @@ Apple ID 针对应用的密码。
 
 :ref:`Dictionary<class_Dictionary>` **privacy/location_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/location_usage_description_localized>`
 
-请求访问用户的位置信息时显示的（本地化）消息。
+A message displayed when requesting access to the user's location information (localized).
 
 .. rst-class:: classref-item-separator
 
@@ -3115,7 +3115,7 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **privacy/microphone_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/microphone_usage_description>`
 
-请求访问设备麦克风时显示的（英文）消息。
+A message displayed when requesting access to the device's microphone (in English).
 
 .. rst-class:: classref-item-separator
 
@@ -3127,7 +3127,7 @@ Apple ID 针对应用的密码。
 
 :ref:`Dictionary<class_Dictionary>` **privacy/microphone_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/microphone_usage_description_localized>`
 
-请求访问设备麦克风时显示的（本地化）消息。
+A message displayed when requesting access to the device's microphone (localized).
 
 .. rst-class:: classref-item-separator
 
@@ -3139,7 +3139,7 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **privacy/network_volumes_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/network_volumes_usage_description>`
 
-请求访问用户的网络驱动器时显示的（英文）消息。
+A message displayed when requesting access to the user's network drives (in English).
 
 .. rst-class:: classref-item-separator
 
@@ -3151,7 +3151,7 @@ Apple ID 针对应用的密码。
 
 :ref:`Dictionary<class_Dictionary>` **privacy/network_volumes_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/network_volumes_usage_description_localized>`
 
-请求访问用户的网络驱动器时显示的（本地化）消息。
+A message displayed when requesting access to the user's network drives (localized).
 
 .. rst-class:: classref-item-separator
 
@@ -3163,7 +3163,7 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **privacy/photos_library_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/photos_library_usage_description>`
 
-请求访问用户照片图库时显示的（英文）消息。
+A message displayed when requesting access to the user's photo library (in English).
 
 .. rst-class:: classref-item-separator
 
@@ -3175,7 +3175,7 @@ Apple ID 针对应用的密码。
 
 :ref:`Dictionary<class_Dictionary>` **privacy/photos_library_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/photos_library_usage_description_localized>`
 
-请求访问用户照片图库时显示的（本地化）消息。
+A message displayed when requesting access to the user's photo library (localized).
 
 .. rst-class:: classref-item-separator
 
@@ -3187,7 +3187,7 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **privacy/removable_volumes_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/removable_volumes_usage_description>`
 
-请求访问用户的可移除驱动器时显示的（英文）消息。
+A message displayed when requesting access to the user's removable drives (in English).
 
 .. rst-class:: classref-item-separator
 
@@ -3199,7 +3199,7 @@ Apple ID 针对应用的密码。
 
 :ref:`Dictionary<class_Dictionary>` **privacy/removable_volumes_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/removable_volumes_usage_description_localized>`
 
-请求访问用户的可移除驱动器时显示的（本地化）消息。
+A message displayed when requesting access to the user's removable drives (localized).
 
 .. rst-class:: classref-item-separator
 
@@ -3211,7 +3211,7 @@ Apple ID 针对应用的密码。
 
 :ref:`PackedStringArray<class_PackedStringArray>` **privacy/tracking_domains** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/tracking_domains>`
 
-你的应用程序连接到的参与跟踪的互联网域列表。请参阅 `隐私清单文件 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files>`__\ 。
+The list of internet domains your app connects to that engage in tracking. See `Privacy manifest files <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files>`__.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -3225,7 +3225,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **privacy/tracking_enabled** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/tracking_enabled>`
 
-表示你的应用程序是否使用数据进行跟踪。请参阅 `隐私清单文件 <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files>`__\ 。
+Indicates whether your app uses data for tracking. See `Privacy manifest files <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3237,9 +3237,9 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **shader_baker/enabled** :ref:`🔗<class_EditorExportPlatformMacOS_property_shader_baker/enabled>`
 
-如果为 ``true``\ ，则着色器将被编译并嵌入到应用程序中。此选项仅当使用 Forward+ 或 Mobile 渲染器时才受支持。
+If ``true``, shaders will be compiled and embedded in the application. This option is only supported when using the Forward+ or Mobile renderers.
 
-\ **注意：**\ 导出为专用服务器时，由于不执行渲染，着色器烘焙器将始终被禁用。
+\ **Note:** When exporting as a dedicated server, the shader baker is always disabled since no rendering is performed.
 
 .. rst-class:: classref-item-separator
 
@@ -3251,17 +3251,17 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **ssh_remote_deploy/cleanup_script** :ref:`🔗<class_EditorExportPlatformMacOS_property_ssh_remote_deploy/cleanup_script>`
 
-应用结束时，要在远程主机上执行的脚本代码。
+Script code to execute on the remote host when app is finished.
 
-可以在脚本中使用以下变量：
+The following variables can be used in the script:
 
-- ``{temp_dir}`` - 远程的临时文件夹路径，用于上传应用和脚本。
+- ``{temp_dir}`` - Path of temporary folder on the remote, used to upload app and scripts to.
 
-- ``{archive_name}`` - 包含上传的应用程序的 ZIP 文件的名称。
+- ``{archive_name}`` - Name of the ZIP containing uploaded application.
 
-- ``{exe_name}`` - 应用程序可执行文件的名称。
+- ``{exe_name}`` - Name of application executable.
 
-- ``{cmd_args}`` - 应用程序命令行参数的数组。
+- ``{cmd_args}`` - Array of the command line argument for the application.
 
 .. rst-class:: classref-item-separator
 
@@ -3273,7 +3273,7 @@ Apple ID 针对应用的密码。
 
 :ref:`bool<class_bool>` **ssh_remote_deploy/enabled** :ref:`🔗<class_EditorExportPlatformMacOS_property_ssh_remote_deploy/enabled>`
 
-启用通过 SSH/SCP 进行远程部署。
+Enables remote deploy using SSH/SCP.
 
 .. rst-class:: classref-item-separator
 
@@ -3285,7 +3285,7 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **ssh_remote_deploy/extra_args_scp** :ref:`🔗<class_EditorExportPlatformMacOS_property_ssh_remote_deploy/extra_args_scp>`
 
-要传给 SCP 的额外命令行参数的数组。
+Array of the additional command line arguments passed to the SCP.
 
 .. rst-class:: classref-item-separator
 
@@ -3297,7 +3297,7 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **ssh_remote_deploy/extra_args_ssh** :ref:`🔗<class_EditorExportPlatformMacOS_property_ssh_remote_deploy/extra_args_ssh>`
 
-要传给 SSH 的额外命令行参数的数组。
+Array of the additional command line arguments passed to the SSH.
 
 .. rst-class:: classref-item-separator
 
@@ -3309,7 +3309,7 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **ssh_remote_deploy/host** :ref:`🔗<class_EditorExportPlatformMacOS_property_ssh_remote_deploy/host>`
 
-远程主机 SSH 用户名及地址，格式为 ``用户名@地址``\ 。
+Remote host SSH user name and address, in ``user@address`` format.
 
 .. rst-class:: classref-item-separator
 
@@ -3321,7 +3321,7 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **ssh_remote_deploy/port** :ref:`🔗<class_EditorExportPlatformMacOS_property_ssh_remote_deploy/port>`
 
-远程主机 SSH 端口号。
+Remote host SSH port number.
 
 .. rst-class:: classref-item-separator
 
@@ -3333,17 +3333,17 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **ssh_remote_deploy/run_script** :ref:`🔗<class_EditorExportPlatformMacOS_property_ssh_remote_deploy/run_script>`
 
-运行应用时，要在远程主机上执行的脚本代码。
+Script code to execute on the remote host when running the app.
 
-可以在脚本中使用以下变量：
+The following variables can be used in the script:
 
-- ``{temp_dir}`` - 远程的临时文件夹路径，用于上传应用和脚本。
+- ``{temp_dir}`` - Path of temporary folder on the remote, used to upload app and scripts to.
 
-- ``{archive_name}`` - 包含上传的应用程序的 ZIP 文件的名称。
+- ``{archive_name}`` - Name of the ZIP containing uploaded application.
 
-- ``{exe_name}`` - 应用程序可执行文件的名称。
+- ``{exe_name}`` - Name of application executable.
 
-- ``{cmd_args}`` - 应用程序命令行参数的数组。
+- ``{cmd_args}`` - Array of the command line argument for the application.
 
 .. rst-class:: classref-item-separator
 
@@ -3355,7 +3355,7 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **xcode/platform_build** :ref:`🔗<class_EditorExportPlatformMacOS_property_xcode/platform_build>`
 
-构建应用程序可执行文件所使用的 macOS 构建号。
+macOS build number used to build application executable.
 
 .. rst-class:: classref-item-separator
 
@@ -3367,7 +3367,7 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **xcode/sdk_build** :ref:`🔗<class_EditorExportPlatformMacOS_property_xcode/sdk_build>`
 
-构建应用程序可执行文件所使用的 macOS SDK 构建号。
+macOS SDK build number used to build application executable.
 
 .. rst-class:: classref-item-separator
 
@@ -3379,7 +3379,7 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **xcode/sdk_name** :ref:`🔗<class_EditorExportPlatformMacOS_property_xcode/sdk_name>`
 
-构建应用程序可执行文件所使用的 macOS SDK 名称。
+macOS SDK name used to build application executable.
 
 .. rst-class:: classref-item-separator
 
@@ -3391,7 +3391,7 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **xcode/sdk_version** :ref:`🔗<class_EditorExportPlatformMacOS_property_xcode/sdk_version>`
 
-构建应用程序可执行文件所使用的 macOS SDK 版本，格式为 ``主版本号.次版本号``\ 。
+macOS SDK version used to build application executable in the ``major.minor`` format.
 
 .. rst-class:: classref-item-separator
 
@@ -3403,7 +3403,7 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **xcode/xcode_build** :ref:`🔗<class_EditorExportPlatformMacOS_property_xcode/xcode_build>`
 
-构建应用程序可执行文件所使用的 Xcode 构建号。
+Xcode build number used to build application executable.
 
 .. rst-class:: classref-item-separator
 
@@ -3415,14 +3415,14 @@ Apple ID 针对应用的密码。
 
 :ref:`String<class_String>` **xcode/xcode_version** :ref:`🔗<class_EditorExportPlatformMacOS_property_xcode/xcode_version>`
 
-构建应用程序可执行文件所使用的 Xcode 版本。
+Xcode version used to build application executable.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

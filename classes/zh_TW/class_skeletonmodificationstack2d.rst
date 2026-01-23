@@ -5,27 +5,27 @@
 SkeletonModificationStack2D
 ===========================
 
-**實驗性：** This class may be changed or removed in future versions.
+**Experimental:** This class may be changed or removed in future versions.
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-存放 :ref:`SkeletonModification2D<class_SkeletonModification2D>` 堆疊的資源。
+A resource that holds a stack of :ref:`SkeletonModification2D<class_SkeletonModification2D>`\ s.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-該資源由 Skeleton 使用，並持有一個 :ref:`SkeletonModification2D<class_SkeletonModification2D>` 堆疊。
+This resource is used by the Skeleton and holds a stack of :ref:`SkeletonModification2D<class_SkeletonModification2D>`\ s.
 
-這控制了修改的順序以及它們的套用方式。修改順序對於全身 IK 設定尤為重要，因為需要以正確的循序執行修改以獲得所需的結果。例如，想在人形骨骼的手臂\ *之前*\ 對脊柱執行一個修改。
+This controls the order of the modifications and how they are applied. Modification order is especially important for full-body IK setups, as you need to execute the modifications in the correct order to get the desired results. For example, you want to execute a modification on the spine *before* the arms on a humanoid skeleton.
 
-該資源還控制所有修改被套用於 :ref:`Skeleton2D<class_Skeleton2D>` 的強度。
+This resource also controls how strongly all of the modifications are applied to the :ref:`Skeleton2D<class_Skeleton2D>`.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ SkeletonModificationStack2D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -72,8 +72,8 @@ SkeletonModificationStack2D
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_SkeletonModificationStack2D_property_enabled:
 
@@ -86,7 +86,7 @@ SkeletonModificationStack2D
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enabled**\ (\ )
 
-如果為 ``true``\ ，則會呼叫該堆疊中的修改器。這是通過 :ref:`Skeleton2D<class_Skeleton2D>` 節點自動處理的。
+If ``true``, the modification's in the stack will be called. This is handled automatically through the :ref:`Skeleton2D<class_Skeleton2D>` node.
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ SkeletonModificationStack2D
 - |void| **set_modification_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_modification_count**\ (\ )
 
-堆疊中修改器的數量。
+The number of modifications in the stack.
 
 .. rst-class:: classref-item-separator
 
@@ -120,7 +120,7 @@ SkeletonModificationStack2D
 - |void| **set_strength**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_strength**\ (\ )
 
-堆疊中修改的插值強度。\ ``0`` 的值將使修改不被套用，\ ``0.5`` 的強度將套用一半，\ ``1`` 的強度將允許修改被完全套用並覆蓋 :ref:`Skeleton2D<class_Skeleton2D>` :ref:`Bone2D<class_Bone2D>` 姿勢。
+The interpolation strength of the modifications in stack. A value of ``0`` will make it where the modifications are not applied, a strength of ``0.5`` will be half applied, and a strength of ``1`` will allow the modifications to be fully applied and override the :ref:`Skeleton2D<class_Skeleton2D>` :ref:`Bone2D<class_Bone2D>` poses.
 
 .. rst-class:: classref-section-separator
 
@@ -128,8 +128,8 @@ SkeletonModificationStack2D
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_SkeletonModificationStack2D_method_add_modification:
 
@@ -137,7 +137,7 @@ SkeletonModificationStack2D
 
 |void| **add_modification**\ (\ modification\: :ref:`SkeletonModification2D<class_SkeletonModification2D>`\ ) :ref:`🔗<class_SkeletonModificationStack2D_method_add_modification>`
 
-將傳入的 :ref:`SkeletonModification2D<class_SkeletonModification2D>` 入堆疊。
+Adds the passed-in :ref:`SkeletonModification2D<class_SkeletonModification2D>` to the stack.
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ SkeletonModificationStack2D
 
 |void| **delete_modification**\ (\ mod_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SkeletonModificationStack2D_method_delete_modification>`
 
-如果存在，則刪除位於索引位置 ``mod_idx`` 的 :ref:`SkeletonModification2D<class_SkeletonModification2D>`\ 。
+Deletes the :ref:`SkeletonModification2D<class_SkeletonModification2D>` at the index position ``mod_idx``, if it exists.
 
 .. rst-class:: classref-item-separator
 
@@ -161,7 +161,7 @@ SkeletonModificationStack2D
 
 |void| **enable_all_modifications**\ (\ enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SkeletonModificationStack2D_method_enable_all_modifications>`
 
-啟用堆疊中的所有 :ref:`SkeletonModification2D<class_SkeletonModification2D>`\ 。
+Enables all :ref:`SkeletonModification2D<class_SkeletonModification2D>`\ s in the stack.
 
 .. rst-class:: classref-item-separator
 
@@ -173,9 +173,9 @@ SkeletonModificationStack2D
 
 |void| **execute**\ (\ delta\: :ref:`float<class_float>`, execution_mode\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SkeletonModificationStack2D_method_execute>`
 
-使用傳入的執行模式 ``execution_mode`` 執行堆疊中的所有 :ref:`SkeletonModification2D<class_SkeletonModification2D>`\ ，從索引 ``0`` 執行到 :ref:`modification_count<class_SkeletonModificationStack2D_property_modification_count>`\ 。
+Executes all of the :ref:`SkeletonModification2D<class_SkeletonModification2D>`\ s in the stack that use the same execution mode as the passed-in ``execution_mode``, starting from index ``0`` to :ref:`modification_count<class_SkeletonModificationStack2D_property_modification_count>`.
 
-\ **注意：**\ 根據修改器的不同，結果可能會因修改器順序的不同而不同。例如，對脊柱的修改應該在對手臂的修改之前執行，這樣才能得到正確的結果。
+\ **Note:** The order of the modifications can matter depending on the modifications. For example, modifications on a spine should operate before modifications on the arms in order to get proper results.
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ SkeletonModificationStack2D
 
 :ref:`bool<class_bool>` **get_is_setup**\ (\ ) |const| :ref:`🔗<class_SkeletonModificationStack2D_method_get_is_setup>`
 
-返回一個布林值，指示該修改堆疊是否已被設定並可以執行。
+Returns a boolean that indicates whether the modification stack is setup and can execute.
 
 .. rst-class:: classref-item-separator
 
@@ -199,7 +199,7 @@ SkeletonModificationStack2D
 
 :ref:`SkeletonModification2D<class_SkeletonModification2D>` **get_modification**\ (\ mod_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModificationStack2D_method_get_modification>`
 
-返回傳入索引 ``mod_idx`` 處的 :ref:`SkeletonModification2D<class_SkeletonModification2D>`\ 。
+Returns the :ref:`SkeletonModification2D<class_SkeletonModification2D>` at the passed-in index, ``mod_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ SkeletonModificationStack2D
 
 :ref:`Skeleton2D<class_Skeleton2D>` **get_skeleton**\ (\ ) |const| :ref:`🔗<class_SkeletonModificationStack2D_method_get_skeleton>`
 
-返回 SkeletonModification2D 綁定到的 :ref:`Skeleton2D<class_Skeleton2D>` 節點。
+Returns the :ref:`Skeleton2D<class_Skeleton2D>` node that the SkeletonModificationStack2D is bound to.
 
 .. rst-class:: classref-item-separator
 
@@ -223,7 +223,7 @@ SkeletonModificationStack2D
 
 |void| **set_modification**\ (\ mod_idx\: :ref:`int<class_int>`, modification\: :ref:`SkeletonModification2D<class_SkeletonModification2D>`\ ) :ref:`🔗<class_SkeletonModificationStack2D_method_set_modification>`
 
-將位於 ``mod_idx`` 的修改器設定為傳入的 ``modification``\ 。
+Sets the modification at ``mod_idx`` to the passed-in modification, ``modification``.
 
 .. rst-class:: classref-item-separator
 
@@ -235,14 +235,14 @@ SkeletonModificationStack2D
 
 |void| **setup**\ (\ ) :ref:`🔗<class_SkeletonModificationStack2D_method_setup>`
 
-設定該修改堆疊以便它可以執行。該函式應由 :ref:`Skeleton2D<class_Skeleton2D>` 呼叫，除非知道自己在做什麼，否則不應被手動呼叫。
+Sets up the modification stack so it can execute. This function should be called by :ref:`Skeleton2D<class_Skeleton2D>` and shouldn't be manually called unless you know what you are doing.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

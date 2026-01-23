@@ -5,14 +5,14 @@
 CollisionPolygon2D
 ==================
 
-**繼承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-向 :ref:`CollisionObject2D<class_CollisionObject2D>` 父級提供多邊形形狀的節點。
+A node that provides a polygon shape to a :ref:`CollisionObject2D<class_CollisionObject2D>` parent.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 A node that provides a polygon shape to a :ref:`CollisionObject2D<class_CollisionObject2D>` parent and allows it to be edited. The polygon can be concave or convex. This can give a detection shape to an :ref:`Area2D<class_Area2D>`, turn a :ref:`PhysicsBody2D<class_PhysicsBody2D>` into a solid object, or give a hollow shape to a :ref:`StaticBody2D<class_StaticBody2D>`.
 
@@ -20,8 +20,8 @@ A node that provides a polygon shape to a :ref:`CollisionObject2D<class_Collisio
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ A node that provides a polygon shape to a :ref:`CollisionObject2D<class_Collisio
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_CollisionPolygon2D_BuildMode:
 
@@ -59,7 +59,7 @@ enum **BuildMode**: :ref:`🔗<enum_CollisionPolygon2D_BuildMode>`
 
 :ref:`BuildMode<enum_CollisionPolygon2D_BuildMode>` **BUILD_SOLIDS** = ``0``
 
-碰撞包含多邊形及其內部區域。在這個模式下，該節點的效果與使用若干 :ref:`ConvexPolygonShape2D<class_ConvexPolygonShape2D>` 節點相同，其中的每個節點都包含該多邊形凸分解後的凸形狀（但不會有使用多個節點的負擔）。
+Collisions will include the polygon and its contained area. In this mode the node has the same effect as several :ref:`ConvexPolygonShape2D<class_ConvexPolygonShape2D>` nodes, one for each convex shape in the convex decomposition of the polygon (but without the overhead of multiple nodes).
 
 .. _class_CollisionPolygon2D_constant_BUILD_SEGMENTS:
 
@@ -67,7 +67,7 @@ enum **BuildMode**: :ref:`🔗<enum_CollisionPolygon2D_BuildMode>`
 
 :ref:`BuildMode<enum_CollisionPolygon2D_BuildMode>` **BUILD_SEGMENTS** = ``1``
 
-碰撞經包含多邊形的邊緣。在這個模式下，該節點的效果與單個由若干線段組成的 :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>` 相同，其中（第一條以後的）每條線段都從上一條的終點開始，最後一條線段在第一條的起點結束（構成閉合但中空的多邊形）。
+Collisions will only include the polygon edges. In this mode the node has the same effect as a single :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>` made of segments, with the restriction that each segment (after the first one) starts where the previous one ends, and the last one ends where the first one starts (forming a closed but hollow polygon).
 
 .. rst-class:: classref-section-separator
 
@@ -75,8 +75,8 @@ enum **BuildMode**: :ref:`🔗<enum_CollisionPolygon2D_BuildMode>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_CollisionPolygon2D_property_build_mode:
 
@@ -123,9 +123,9 @@ If ``true``, no collisions will be detected. This property should be changed wit
 - |void| **set_one_way_collision**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_one_way_collision_enabled**\ (\ )
 
-如果為 ``true``\ ，則只有面朝上的邊緣才會與其他物件發生碰撞，方向是相對於 **CollisionPolygon2D** 的旋轉而言的。
+If ``true``, only edges that face up, relative to **CollisionPolygon2D**'s rotation, will collide with other objects.
 
-\ **注意：**\ 如果這個 **CollisionPolygon2D** 是 :ref:`Area2D<class_Area2D>` 節點的子節點，則這個屬性無效。
+\ **Note:** This property has no effect if this **CollisionPolygon2D** is a child of an :ref:`Area2D<class_Area2D>` node.
 
 .. rst-class:: classref-item-separator
 
@@ -142,7 +142,7 @@ If ``true``, no collisions will be detected. This property should be changed wit
 - |void| **set_one_way_collision_margin**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_one_way_collision_margin**\ (\ )
 
-用於單向碰撞的邊距（以圖元為單位）。較高的值將使形狀更厚，並且對於以高速進入多邊形的對撞機來說效果更好。
+The margin used for one-way collision (in pixels). Higher values will make the shape thicker, and work better for colliders that enter the polygon at a high velocity.
 
 .. rst-class:: classref-item-separator
 
@@ -165,12 +165,12 @@ The polygon's list of vertices. Each point will be connected to the next, and th
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

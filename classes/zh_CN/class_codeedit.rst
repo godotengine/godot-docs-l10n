@@ -5,23 +5,23 @@
 CodeEdit
 ========
 
-**继承：** :ref:`TextEdit<class_TextEdit>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`TextEdit<class_TextEdit>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-多行文本编辑器，针对编辑代码而设计。
+A multiline text editor designed for editing code.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-CodeEdit 是一种专门用于编辑纯文本代码文件的 :ref:`TextEdit<class_TextEdit>`\ 。它包含了许多代码编辑器中的常见功能，如行号、折行、代码补全、缩进管理以及字符串/注释管理。
+CodeEdit is a specialized :ref:`TextEdit<class_TextEdit>` designed for editing plain text code files. It has many features commonly found in code editors such as line numbers, line folding, code completion, indent management, and string/comment management.
 
-\ **注意：**\ 无论使用什么区域设置，\ **CodeEdit** 默认总是使用从左至右的文本方向来正确显示源代码。
+\ **Note:** Regardless of locale, **CodeEdit** will by default always use left-to-right text direction to correctly display source code.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -78,8 +78,8 @@ CodeEdit 是一种专门用于编辑纯文本代码文件的 :ref:`TextEdit<clas
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -232,8 +232,8 @@ CodeEdit 是一种专门用于编辑纯文本代码文件的 :ref:`TextEdit<clas
 
 .. rst-class:: classref-reftable-group
 
-主题属性
---------
+Theme Properties
+----------------
 
 .. table::
    :widths: auto
@@ -298,8 +298,8 @@ CodeEdit 是一种专门用于编辑纯文本代码文件的 :ref:`TextEdit<clas
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_CodeEdit_signal_breakpoint_toggled:
 
@@ -307,7 +307,7 @@ CodeEdit 是一种专门用于编辑纯文本代码文件的 :ref:`TextEdit<clas
 
 **breakpoint_toggled**\ (\ line\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CodeEdit_signal_breakpoint_toggled>`
 
-为某一行添加或移除断点时触发。如果通过退格键移除该行，则会在原行处触发一次信号。
+Emitted when a breakpoint is added or removed from a line. If the line is removed via backspace, a signal is emitted at the old line.
 
 .. rst-class:: classref-item-separator
 
@@ -319,7 +319,7 @@ CodeEdit 是一种专门用于编辑纯文本代码文件的 :ref:`TextEdit<clas
 
 **code_completion_requested**\ (\ ) :ref:`🔗<class_CodeEdit_signal_code_completion_requested>`
 
-在用户请求代码补全时发出。如果 :ref:`_request_code_completion()<class_CodeEdit_private_method__request_code_completion>` 被覆盖或者 :ref:`code_completion_enabled<class_CodeEdit_property_code_completion_enabled>` 为 ``false``\ ，则不会发送该信号。
+Emitted when the user requests code completion. This signal will not be sent if :ref:`_request_code_completion()<class_CodeEdit_private_method__request_code_completion>` is overridden or :ref:`code_completion_enabled<class_CodeEdit_property_code_completion_enabled>` is ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -331,9 +331,9 @@ CodeEdit 是一种专门用于编辑纯文本代码文件的 :ref:`TextEdit<clas
 
 **symbol_hovered**\ (\ symbol\: :ref:`String<class_String>`, line\: :ref:`int<class_int>`, column\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CodeEdit_signal_symbol_hovered>`
 
-当用户在符号上悬停时发出。该信号与 :ref:`Control.mouse_entered<class_Control_signal_mouse_entered>` 不同，不会立即发出，而是需要光标在符号上停留 :ref:`ProjectSettings.gui/timers/tooltip_delay_sec<class_ProjectSettings_property_gui/timers/tooltip_delay_sec>` 秒。
+Emitted when the user hovers over a symbol. Unlike :ref:`Control.mouse_entered<class_Control_signal_mouse_entered>`, this signal is not emitted immediately, but when the cursor is over the symbol for :ref:`ProjectSettings.gui/timers/tooltip_delay_sec<class_ProjectSettings_property_gui/timers/tooltip_delay_sec>` seconds.
 
-\ **注意：**\ :ref:`symbol_tooltip_on_hover<class_CodeEdit_property_symbol_tooltip_on_hover>` 为 ``true`` 时才会发出该信号。
+\ **Note:** :ref:`symbol_tooltip_on_hover<class_CodeEdit_property_symbol_tooltip_on_hover>` must be ``true`` for this signal to be emitted.
 
 .. rst-class:: classref-item-separator
 
@@ -345,7 +345,7 @@ CodeEdit 是一种专门用于编辑纯文本代码文件的 :ref:`TextEdit<clas
 
 **symbol_lookup**\ (\ symbol\: :ref:`String<class_String>`, line\: :ref:`int<class_int>`, column\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CodeEdit_signal_symbol_lookup>`
 
-用户点击有效符号时发出。
+Emitted when the user has clicked on a valid symbol.
 
 .. rst-class:: classref-item-separator
 
@@ -357,9 +357,9 @@ CodeEdit 是一种专门用于编辑纯文本代码文件的 :ref:`TextEdit<clas
 
 **symbol_validate**\ (\ symbol\: :ref:`String<class_String>`\ ) :ref:`🔗<class_CodeEdit_signal_symbol_validate>`
 
-用户将鼠标悬停在符号上时发出。应该通过调用 :ref:`set_symbol_lookup_word_as_valid()<class_CodeEdit_method_set_symbol_lookup_word_as_valid>` 对该符号进行验证和响应。
+Emitted when the user hovers over a symbol. The symbol should be validated and responded to, by calling :ref:`set_symbol_lookup_word_as_valid()<class_CodeEdit_method_set_symbol_lookup_word_as_valid>`.
 
-\ **注意：**\ :ref:`symbol_lookup_on_click<class_CodeEdit_property_symbol_lookup_on_click>` 必须为 ``true`` 才会发出该信号。
+\ **Note:** :ref:`symbol_lookup_on_click<class_CodeEdit_property_symbol_lookup_on_click>` must be ``true`` for this signal to be emitted.
 
 .. rst-class:: classref-section-separator
 
@@ -367,8 +367,8 @@ CodeEdit 是一种专门用于编辑纯文本代码文件的 :ref:`TextEdit<clas
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_CodeEdit_CodeCompletionKind:
 
@@ -382,7 +382,7 @@ enum **CodeCompletionKind**: :ref:`🔗<enum_CodeEdit_CodeCompletionKind>`
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_CLASS** = ``0``
 
-将该选项标记为类。
+Marks the option as a class.
 
 .. _class_CodeEdit_constant_KIND_FUNCTION:
 
@@ -390,7 +390,7 @@ enum **CodeCompletionKind**: :ref:`🔗<enum_CodeEdit_CodeCompletionKind>`
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_FUNCTION** = ``1``
 
-将该选项标记为函数。
+Marks the option as a function.
 
 .. _class_CodeEdit_constant_KIND_SIGNAL:
 
@@ -398,7 +398,7 @@ enum **CodeCompletionKind**: :ref:`🔗<enum_CodeEdit_CodeCompletionKind>`
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_SIGNAL** = ``2``
 
-将该选项标记为 Godot 信号。
+Marks the option as a Godot signal.
 
 .. _class_CodeEdit_constant_KIND_VARIABLE:
 
@@ -406,7 +406,7 @@ enum **CodeCompletionKind**: :ref:`🔗<enum_CodeEdit_CodeCompletionKind>`
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_VARIABLE** = ``3``
 
-将该选项标记为变量。
+Marks the option as a variable.
 
 .. _class_CodeEdit_constant_KIND_MEMBER:
 
@@ -414,7 +414,7 @@ enum **CodeCompletionKind**: :ref:`🔗<enum_CodeEdit_CodeCompletionKind>`
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_MEMBER** = ``4``
 
-将该选项标记为成员。
+Marks the option as a member.
 
 .. _class_CodeEdit_constant_KIND_ENUM:
 
@@ -422,7 +422,7 @@ enum **CodeCompletionKind**: :ref:`🔗<enum_CodeEdit_CodeCompletionKind>`
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_ENUM** = ``5``
 
-将该选项标记为枚举条目。
+Marks the option as an enum entry.
 
 .. _class_CodeEdit_constant_KIND_CONSTANT:
 
@@ -430,7 +430,7 @@ enum **CodeCompletionKind**: :ref:`🔗<enum_CodeEdit_CodeCompletionKind>`
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_CONSTANT** = ``6``
 
-将该选项标记为常量。
+Marks the option as a constant.
 
 .. _class_CodeEdit_constant_KIND_NODE_PATH:
 
@@ -438,7 +438,7 @@ enum **CodeCompletionKind**: :ref:`🔗<enum_CodeEdit_CodeCompletionKind>`
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_NODE_PATH** = ``7``
 
-将该选项标记为 Godot 节点路径。
+Marks the option as a Godot node path.
 
 .. _class_CodeEdit_constant_KIND_FILE_PATH:
 
@@ -446,7 +446,7 @@ enum **CodeCompletionKind**: :ref:`🔗<enum_CodeEdit_CodeCompletionKind>`
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_FILE_PATH** = ``8``
 
-将该选项标记为文件路径。
+Marks the option as a file path.
 
 .. _class_CodeEdit_constant_KIND_PLAIN_TEXT:
 
@@ -454,7 +454,7 @@ enum **CodeCompletionKind**: :ref:`🔗<enum_CodeEdit_CodeCompletionKind>`
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_PLAIN_TEXT** = ``9``
 
-将该选项标记为未分类或纯文本。
+Marks the option as unclassified or plain text.
 
 .. rst-class:: classref-item-separator
 
@@ -472,7 +472,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_CodeEdit_CodeCompletionLocation
 
 :ref:`CodeCompletionLocation<enum_CodeEdit_CodeCompletionLocation>` **LOCATION_LOCAL** = ``0``
 
-该选项是相对于代码补全查询位置的 - 例如局部变量。位置的后续值表示选项来自外部类，确切的值表示它们的距离（就内部类而言）。
+The option is local to the location of the code completion query - e.g. a local variable. Subsequent value of location represent options from the outer class, the exact value represent how far they are (in terms of inner classes).
 
 .. _class_CodeEdit_constant_LOCATION_PARENT_MASK:
 
@@ -480,7 +480,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_CodeEdit_CodeCompletionLocation
 
 :ref:`CodeCompletionLocation<enum_CodeEdit_CodeCompletionLocation>` **LOCATION_PARENT_MASK** = ``256``
 
-该选项来自于所在的类或父类，相对于代码补全查询的位置。请使用类的深度进行按位 OR（或）运算（例如 ``0`` 表示当前类，\ ``1`` 表示父类，\ ``2`` 表示父类的父类等），从而在当前类或父类中存储选项的深度。
+The option is from the containing class or a parent class, relative to the location of the code completion query. Perform a bitwise OR with the class depth (e.g. ``0`` for the local class, ``1`` for the parent, ``2`` for the grandparent, etc.) to store the depth of an option in the class or a parent class.
 
 .. _class_CodeEdit_constant_LOCATION_OTHER_USER_CODE:
 
@@ -488,7 +488,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_CodeEdit_CodeCompletionLocation
 
 :ref:`CodeCompletionLocation<enum_CodeEdit_CodeCompletionLocation>` **LOCATION_OTHER_USER_CODE** = ``512``
 
-该选项来自用户代码，不是局部，也不是派生类（例如自动加载单例）。
+The option is from user code which is not local and not in a derived class (e.g. Autoload Singletons).
 
 .. _class_CodeEdit_constant_LOCATION_OTHER:
 
@@ -496,7 +496,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_CodeEdit_CodeCompletionLocation
 
 :ref:`CodeCompletionLocation<enum_CodeEdit_CodeCompletionLocation>` **LOCATION_OTHER** = ``1024``
 
-该选项来自其他引擎代码，未被其他枚举常量覆盖 - 例如内置类。
+The option is from other engine code, not covered by the other enum constants - e.g. built-in classes.
 
 .. rst-class:: classref-section-separator
 
@@ -504,8 +504,8 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_CodeEdit_CodeCompletionLocation
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_CodeEdit_property_auto_brace_completion_enabled:
 
@@ -518,7 +518,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_CodeEdit_CodeCompletionLocation
 - |void| **set_auto_brace_completion_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_auto_brace_completion_enabled**\ (\ )
 
-如果为 ``true``\ ，则当左括号被键入或被自动补全插入时，使用 :ref:`auto_brace_completion_pairs<class_CodeEdit_property_auto_brace_completion_pairs>` 自动插入右括号。对左括号使用退格键时，也会自动移除右括号。
+If ``true``, uses :ref:`auto_brace_completion_pairs<class_CodeEdit_property_auto_brace_completion_pairs>` to automatically insert the closing brace when the opening brace is inserted by typing or autocompletion. Also automatically removes the closing brace when using backspace on the opening brace.
 
 .. rst-class:: classref-item-separator
 
@@ -535,7 +535,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_CodeEdit_CodeCompletionLocation
 - |void| **set_highlight_matching_braces_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_highlight_matching_braces_enabled**\ (\ )
 
-如果为 ``true``\ ，则当光标在一对括号中任何一个的位置时，使用 :ref:`auto_brace_completion_pairs<class_CodeEdit_property_auto_brace_completion_pairs>` 将其高亮。配对的括号将添加下划线。如果无法配对，则会使用 :ref:`brace_mismatch_color<class_CodeEdit_theme_color_brace_mismatch_color>` 着色。
+If ``true``, highlights brace pairs when the caret is on either one, using :ref:`auto_brace_completion_pairs<class_CodeEdit_property_auto_brace_completion_pairs>`. If matching, the pairs will be underlined. If a brace is unmatched, it is colored with :ref:`brace_mismatch_color<class_CodeEdit_theme_color_brace_mismatch_color>`.
 
 .. rst-class:: classref-item-separator
 
@@ -552,7 +552,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_CodeEdit_CodeCompletionLocation
 - |void| **set_auto_brace_completion_pairs**\ (\ value\: :ref:`Dictionary<class_Dictionary>`\ )
 - :ref:`Dictionary<class_Dictionary>` **get_auto_brace_completion_pairs**\ (\ )
 
-将括号对设置为自动补全。字典元素中，键是左括号、值是对应的右括号。括号是由符号构成的 :ref:`String<class_String>`\ 。见 :ref:`auto_brace_completion_enabled<class_CodeEdit_property_auto_brace_completion_enabled>` 和 :ref:`auto_brace_completion_highlight_matching<class_CodeEdit_property_auto_brace_completion_highlight_matching>`\ 。
+Sets the brace pairs to be autocompleted. For each entry in the dictionary, the key is the opening brace and the value is the closing brace that matches it. A brace is a :ref:`String<class_String>` made of symbols. See :ref:`auto_brace_completion_enabled<class_CodeEdit_property_auto_brace_completion_enabled>` and :ref:`auto_brace_completion_highlight_matching<class_CodeEdit_property_auto_brace_completion_highlight_matching>`.
 
 .. rst-class:: classref-item-separator
 
@@ -569,7 +569,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_CodeEdit_CodeCompletionLocation
 - |void| **set_code_completion_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_code_completion_enabled**\ (\ )
 
-如果为 ``true``\ ，则 :ref:`ProjectSettings.input/ui_text_completion_query<class_ProjectSettings_property_input/ui_text_completion_query>` 动作会请求进行代码补全。处理请求见 :ref:`_request_code_completion()<class_CodeEdit_private_method__request_code_completion>` 或 :ref:`code_completion_requested<class_CodeEdit_signal_code_completion_requested>`\ 。
+If ``true``, the :ref:`ProjectSettings.input/ui_text_completion_query<class_ProjectSettings_property_input/ui_text_completion_query>` action requests code completion. To handle it, see :ref:`_request_code_completion()<class_CodeEdit_private_method__request_code_completion>` or :ref:`code_completion_requested<class_CodeEdit_signal_code_completion_requested>`.
 
 .. rst-class:: classref-item-separator
 
@@ -586,7 +586,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_CodeEdit_CodeCompletionLocation
 - |void| **set_code_completion_prefixes**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`String<class_String>`\] **get_code_completion_prefixes**\ (\ )
 
-设置将触发代码补全的前缀。
+Sets prefixes that will trigger code completion.
 
 .. rst-class:: classref-item-separator
 
@@ -603,7 +603,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_CodeEdit_CodeCompletionLocation
 - |void| **set_comment_delimiters**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`String<class_String>`\] **get_comment_delimiters**\ (\ )
 
-设置注释分隔符。将删除所有的现有注释分隔符。
+Sets the comment delimiters. All existing comment delimiters will be removed.
 
 .. rst-class:: classref-item-separator
 
@@ -620,7 +620,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_CodeEdit_CodeCompletionLocation
 - |void| **set_string_delimiters**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`String<class_String>`\] **get_string_delimiters**\ (\ )
 
-设置字符串分隔符。将删除所有的现有字符串分隔符。
+Sets the string delimiters. All existing string delimiters will be removed.
 
 .. rst-class:: classref-item-separator
 
@@ -637,7 +637,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_CodeEdit_CodeCompletionLocation
 - |void| **set_draw_bookmarks_gutter**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_drawing_bookmarks_gutter**\ (\ )
 
-如果为 ``true``\ ，则在边栏中绘制书签。该边栏与断点和执行行共享。见 :ref:`set_line_as_bookmarked()<class_CodeEdit_method_set_line_as_bookmarked>`.
+If ``true``, bookmarks are drawn in the gutter. This gutter is shared with breakpoints and executing lines. See :ref:`set_line_as_bookmarked()<class_CodeEdit_method_set_line_as_bookmarked>`.
 
 .. rst-class:: classref-item-separator
 
@@ -654,7 +654,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_CodeEdit_CodeCompletionLocation
 - |void| **set_draw_breakpoints_gutter**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_drawing_breakpoints_gutter**\ (\ )
 
-如果为 ``true``\ ，则在边栏中绘制断点。该边栏与书签和执行行共享。点击边栏会开关对应行的断点，见 :ref:`set_line_as_breakpoint()<class_CodeEdit_method_set_line_as_breakpoint>`.
+If ``true``, breakpoints are drawn in the gutter. This gutter is shared with bookmarks and executing lines. Clicking the gutter will toggle the breakpoint for the line, see :ref:`set_line_as_breakpoint()<class_CodeEdit_method_set_line_as_breakpoint>`.
 
 .. rst-class:: classref-item-separator
 
@@ -671,7 +671,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_CodeEdit_CodeCompletionLocation
 - |void| **set_draw_executing_lines_gutter**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_drawing_executing_lines_gutter**\ (\ )
 
-如果为 ``true``\ ，则在边栏中绘制执行行。该边栏与断点和书签共享。见 :ref:`set_line_as_executing()<class_CodeEdit_method_set_line_as_executing>`.
+If ``true``, executing lines are marked in the gutter. This gutter is shared with breakpoints and bookmarks. See :ref:`set_line_as_executing()<class_CodeEdit_method_set_line_as_executing>`.
 
 .. rst-class:: classref-item-separator
 
@@ -688,7 +688,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_CodeEdit_CodeCompletionLocation
 - |void| **set_draw_fold_gutter**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_drawing_fold_gutter**\ (\ )
 
-如果为 ``true``\ ，则会绘制折叠栏。该边栏会为每个能够折叠的行绘制 :ref:`can_fold_code_region<class_CodeEdit_theme_icon_can_fold_code_region>` 图标（见 :ref:`can_fold_line()<class_CodeEdit_method_can_fold_line>`\ ），已折叠的行则绘制 :ref:`folded_code_region<class_CodeEdit_theme_icon_folded_code_region>` 图标（见 :ref:`is_line_folded()<class_CodeEdit_method_is_line_folded>`\ ）。点击这些图标可以开关折叠状态，见 :ref:`toggle_foldable_line()<class_CodeEdit_method_toggle_foldable_line>`\ 。\ :ref:`line_folding<class_CodeEdit_property_line_folding>` 为 ``true`` 才会显示图标。
+If ``true``, the fold gutter is drawn. In this gutter, the :ref:`can_fold_code_region<class_CodeEdit_theme_icon_can_fold_code_region>` icon is drawn for each foldable line (see :ref:`can_fold_line()<class_CodeEdit_method_can_fold_line>`) and the :ref:`folded_code_region<class_CodeEdit_theme_icon_folded_code_region>` icon is drawn for each folded line (see :ref:`is_line_folded()<class_CodeEdit_method_is_line_folded>`). These icons can be clicked to toggle the fold state, see :ref:`toggle_foldable_line()<class_CodeEdit_method_toggle_foldable_line>`. :ref:`line_folding<class_CodeEdit_property_line_folding>` must be ``true`` to show icons.
 
 .. rst-class:: classref-item-separator
 
@@ -705,7 +705,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_CodeEdit_CodeCompletionLocation
 - |void| **set_draw_line_numbers**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_draw_line_numbers_enabled**\ (\ )
 
-如果为 ``true``\ ，则会绘制行号栏。行号从 ``1`` 开始，逐行递增。在行号栏中点击并拖动会选中整行文本。
+If ``true``, the line number gutter is drawn. Line numbers start at ``1`` and are incremented for each line of text. Clicking and dragging in the line number gutter will select entire lines of text.
 
 .. rst-class:: classref-item-separator
 
@@ -739,7 +739,7 @@ The minimum width in digits reserved for the line number gutter.
 - |void| **set_line_numbers_zero_padded**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_line_numbers_zero_padded**\ (\ )
 
-如果为 ``true``\ ，在边栏中绘制的行号会根据总行数用零填充。\ :ref:`gutters_draw_line_numbers<class_CodeEdit_property_gutters_draw_line_numbers>` 须为 ``true``\ 。
+If ``true``, line numbers drawn in the gutter are zero padded based on the total line count. Requires :ref:`gutters_draw_line_numbers<class_CodeEdit_property_gutters_draw_line_numbers>` to be set to ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -756,7 +756,7 @@ The minimum width in digits reserved for the line number gutter.
 - |void| **set_auto_indent_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_auto_indent_enabled**\ (\ )
 
-如果为 ``true``\ ，添加新行并且存在 :ref:`indent_automatic_prefixes<class_CodeEdit_property_indent_automatic_prefixes>` 中的前缀时会自动插入一级额外的缩进。如果存在括号对中的左括号，就会将对应的右括号移动到新的一行（见 :ref:`auto_brace_completion_pairs<class_CodeEdit_property_auto_brace_completion_pairs>`\ ）。
+If ``true``, an extra indent is automatically inserted when a new line is added and a prefix in :ref:`indent_automatic_prefixes<class_CodeEdit_property_indent_automatic_prefixes>` is found. If a brace pair opening key is found, the matching closing brace will be moved to another new line (see :ref:`auto_brace_completion_pairs<class_CodeEdit_property_auto_brace_completion_pairs>`).
 
 .. rst-class:: classref-item-separator
 
@@ -773,7 +773,7 @@ The minimum width in digits reserved for the line number gutter.
 - |void| **set_auto_indent_prefixes**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`String<class_String>`\] **get_auto_indent_prefixes**\ (\ )
 
-触发自动缩进的前缀。\ :ref:`indent_automatic<class_CodeEdit_property_indent_automatic>` 为 ``true`` 时使用。
+Prefixes to trigger an automatic indent. Used when :ref:`indent_automatic<class_CodeEdit_property_indent_automatic>` is set to ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -790,7 +790,7 @@ The minimum width in digits reserved for the line number gutter.
 - |void| **set_indent_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_indent_size**\ (\ )
 
-制表缩进的大小（按一次 :kbd:`Tab`\ ），以字符为单位。如果启用 :ref:`indent_use_spaces<class_CodeEdit_property_indent_use_spaces>`\ ，则代表使用的空格数。
+Size of the tabulation indent (one :kbd:`Tab` press) in characters. If :ref:`indent_use_spaces<class_CodeEdit_property_indent_use_spaces>` is enabled the number of spaces to use.
 
 .. rst-class:: classref-item-separator
 
@@ -807,7 +807,7 @@ The minimum width in digits reserved for the line number gutter.
 - |void| **set_indent_using_spaces**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_indent_using_spaces**\ (\ )
 
-使用空格代替制表符进行缩进。
+Use spaces instead of tabs for indentation.
 
 .. rst-class:: classref-item-separator
 
@@ -824,7 +824,7 @@ The minimum width in digits reserved for the line number gutter.
 - |void| **set_line_folding_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_line_folding_enabled**\ (\ )
 
-如果为 ``true``\ ，则可以折叠行。否则 :ref:`fold_line()<class_CodeEdit_method_fold_line>` 等与行折叠相关的方法将无法工作，并且 :ref:`can_fold_line()<class_CodeEdit_method_can_fold_line>` 将始终返回 ``false``\ 。见 :ref:`gutters_draw_fold_gutter<class_CodeEdit_property_gutters_draw_fold_gutter>`\ 。
+If ``true``, lines can be folded. Otherwise, line folding methods like :ref:`fold_line()<class_CodeEdit_method_fold_line>` will not work and :ref:`can_fold_line()<class_CodeEdit_method_can_fold_line>` will always return ``false``. See :ref:`gutters_draw_fold_gutter<class_CodeEdit_property_gutters_draw_fold_gutter>`.
 
 .. rst-class:: classref-item-separator
 
@@ -841,7 +841,7 @@ The minimum width in digits reserved for the line number gutter.
 - |void| **set_line_length_guidelines**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`int<class_int>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`int<class_int>`\] **get_line_length_guidelines**\ (\ )
 
-在提供的列上绘制垂直线。第一个条目被认为是主要的硬参考线，会绘制得更显眼。
+Draws vertical lines at the provided columns. The first entry is considered a main hard guideline and is drawn more prominently.
 
 .. rst-class:: classref-item-separator
 
@@ -858,7 +858,7 @@ The minimum width in digits reserved for the line number gutter.
 - |void| **set_symbol_lookup_on_click_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_symbol_lookup_on_click_enabled**\ (\ )
 
-设置当来自 :ref:`symbol_validate<class_CodeEdit_signal_symbol_validate>` 的验证词被点击时，应发出 :ref:`symbol_lookup<class_CodeEdit_signal_symbol_lookup>`\ 。
+Set when a validated word from :ref:`symbol_validate<class_CodeEdit_signal_symbol_validate>` is clicked, the :ref:`symbol_lookup<class_CodeEdit_signal_symbol_lookup>` should be emitted.
 
 .. rst-class:: classref-item-separator
 
@@ -875,7 +875,7 @@ The minimum width in digits reserved for the line number gutter.
 - |void| **set_symbol_tooltip_on_hover_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_symbol_tooltip_on_hover_enabled**\ (\ )
 
-如果为 ``true``\ ，则悬停在单词上时会发出 :ref:`symbol_hovered<class_CodeEdit_signal_symbol_hovered>` 信号。
+If ``true``, the :ref:`symbol_hovered<class_CodeEdit_signal_symbol_hovered>` signal is emitted when hovering over a word.
 
 .. rst-class:: classref-section-separator
 
@@ -883,8 +883,8 @@ The minimum width in digits reserved for the line number gutter.
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_CodeEdit_private_method__confirm_code_completion:
 
@@ -892,7 +892,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **_confirm_code_completion**\ (\ replace\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_CodeEdit_private_method__confirm_code_completion>`
 
-覆盖此方法以定义所选条目应如何插入。如果 ``replace`` 为 ``true``\ ，任何现有的文本都应该被替换。
+Override this method to define how the selected entry should be inserted. If ``replace`` is ``true``, any existing text should be replaced.
 
 .. rst-class:: classref-item-separator
 
@@ -904,9 +904,9 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_filter_code_completion_candidates**\ (\ candidates\: :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\]\ ) |virtual| |const| :ref:`🔗<class_CodeEdit_private_method__filter_code_completion_candidates>`
 
-覆盖此方法以确定应该显示 ``candidates`` 中的哪些项。
+Override this method to define what items in ``candidates`` should be displayed.
 
-参数 ``candidates`` 和返回值都是一个 :ref:`Array<class_Array>` 的 :ref:`Dictionary<class_Dictionary>`\ ，而 :ref:`Dictionary<class_Dictionary>` 的键值，详见 :ref:`get_code_completion_option()<class_CodeEdit_method_get_code_completion_option>`\ 。
+Both ``candidates`` and the return is an :ref:`Array<class_Array>` of :ref:`Dictionary<class_Dictionary>`, see :ref:`get_code_completion_option()<class_CodeEdit_method_get_code_completion_option>` for :ref:`Dictionary<class_Dictionary>` content.
 
 .. rst-class:: classref-item-separator
 
@@ -918,7 +918,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **_request_code_completion**\ (\ force\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_CodeEdit_private_method__request_code_completion>`
 
-覆盖此方法以定义当用户请求代码完成时发生的情况。如果 ``force`` 为 ``true``\ ，会绕过任何检查。
+Override this method to define what happens when the user requests code completion. If ``force`` is ``true``, any checks should be bypassed.
 
 .. rst-class:: classref-item-separator
 
@@ -930,9 +930,9 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **add_auto_brace_completion_pair**\ (\ start_key\: :ref:`String<class_String>`, end_key\: :ref:`String<class_String>`\ ) :ref:`🔗<class_CodeEdit_method_add_auto_brace_completion_pair>`
 
-添加一对括号。
+Adds a brace pair.
 
-开始和结束键都必须是符号。只有开始键必须是唯一的。
+Both the start and end keys must be symbols. Only the start key has to be unique.
 
 .. rst-class:: classref-item-separator
 
@@ -944,11 +944,11 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **add_code_completion_option**\ (\ type\: :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>`, display_text\: :ref:`String<class_String>`, insert_text\: :ref:`String<class_String>`, text_color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), icon\: :ref:`Resource<class_Resource>` = null, value\: :ref:`Variant<class_Variant>` = null, location\: :ref:`int<class_int>` = 1024\ ) :ref:`🔗<class_CodeEdit_method_add_code_completion_option>`
 
-向自动补全菜单的潜在候选队列提交条目。请调用 :ref:`update_code_completion_options()<class_CodeEdit_method_update_code_completion_options>` 来更新列表。
+Submits an item to the queue of potential candidates for the autocomplete menu. Call :ref:`update_code_completion_options()<class_CodeEdit_method_update_code_completion_options>` to update the list.
 
-\ ``location`` 指示的是该选项相对于代码补全请求位置的位置。这个值如何设置见 :ref:`CodeCompletionLocation<enum_CodeEdit_CodeCompletionLocation>`\ 。
+\ ``location`` indicates location of the option relative to the location of the code completion query. See :ref:`CodeCompletionLocation<enum_CodeEdit_CodeCompletionLocation>` for how to set this value.
 
-\ **注意：**\ 这个列表将替换所有当前候选。
+\ **Note:** This list will replace all current candidates.
 
 .. rst-class:: classref-item-separator
 
@@ -960,9 +960,9 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **add_comment_delimiter**\ (\ start_key\: :ref:`String<class_String>`, end_key\: :ref:`String<class_String>`, line_only\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CodeEdit_method_add_comment_delimiter>`
 
-添加从 ``start_key`` 到 ``end_key`` 的注释分隔符。两个键都应该是符号，并且 ``start_key`` 不得与其他分隔符共享。
+Adds a comment delimiter from ``start_key`` to ``end_key``. Both keys should be symbols, and ``start_key`` must not be shared with other delimiters.
 
-如果 ``line_only`` 为 ``true`` 或 ``end_key`` 为空 :ref:`String<class_String>`\ ，则该区块不会延续到下一行。
+If ``line_only`` is ``true`` or ``end_key`` is an empty :ref:`String<class_String>`, the region does not carry over to the next line.
 
 .. rst-class:: classref-item-separator
 
@@ -974,9 +974,9 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **add_string_delimiter**\ (\ start_key\: :ref:`String<class_String>`, end_key\: :ref:`String<class_String>`, line_only\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CodeEdit_method_add_string_delimiter>`
 
-定义从 ``start_key`` 到 ``end_key`` 的字符串分隔符。两个键都应该是符号，并且 ``start_key`` 不得与其他分隔符共享。
+Defines a string delimiter from ``start_key`` to ``end_key``. Both keys should be symbols, and ``start_key`` must not be shared with other delimiters.
 
-如果 ``line_only`` 为 ``true`` 或 ``end_key`` 为空 :ref:`String<class_String>`\ ，则该区块不会延续到下一行。
+If ``line_only`` is ``true`` or ``end_key`` is an empty :ref:`String<class_String>`, the region does not carry over to the next line.
 
 .. rst-class:: classref-item-separator
 
@@ -988,7 +988,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`bool<class_bool>` **can_fold_line**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_can_fold_line>`
 
-如果给定的行可折叠则返回 ``true``\ 。可折叠的情况有：这一行是有效代码区块的开头（见 :ref:`get_code_region_start_tag()<class_CodeEdit_method_get_code_region_start_tag>`\ ），这一行是注释或字符串块的开头，以及后续非空行的缩进程度更高（见 :ref:`TextEdit.get_indent_level()<class_TextEdit_method_get_indent_level>`\ ）。
+Returns ``true`` if the given line is foldable. A line is foldable if it is the start of a valid code region (see :ref:`get_code_region_start_tag()<class_CodeEdit_method_get_code_region_start_tag>`), if it is the start of a comment or string block, or if the next non-empty line is more indented (see :ref:`TextEdit.get_indent_level()<class_TextEdit_method_get_indent_level>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1000,7 +1000,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **cancel_code_completion**\ (\ ) :ref:`🔗<class_CodeEdit_method_cancel_code_completion>`
 
-取消自动补全菜单。
+Cancels the autocomplete menu.
 
 .. rst-class:: classref-item-separator
 
@@ -1012,7 +1012,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **clear_bookmarked_lines**\ (\ ) :ref:`🔗<class_CodeEdit_method_clear_bookmarked_lines>`
 
-清除所有书签行。
+Clears all bookmarked lines.
 
 .. rst-class:: classref-item-separator
 
@@ -1024,7 +1024,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **clear_breakpointed_lines**\ (\ ) :ref:`🔗<class_CodeEdit_method_clear_breakpointed_lines>`
 
-清除所有断点行。
+Clears all breakpointed lines.
 
 .. rst-class:: classref-item-separator
 
@@ -1036,7 +1036,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **clear_comment_delimiters**\ (\ ) :ref:`🔗<class_CodeEdit_method_clear_comment_delimiters>`
 
-移除所有注释分隔符。
+Removes all comment delimiters.
 
 .. rst-class:: classref-item-separator
 
@@ -1048,7 +1048,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **clear_executing_lines**\ (\ ) :ref:`🔗<class_CodeEdit_method_clear_executing_lines>`
 
-清除所有已执行的行。
+Clears all executed lines.
 
 .. rst-class:: classref-item-separator
 
@@ -1060,7 +1060,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **clear_string_delimiters**\ (\ ) :ref:`🔗<class_CodeEdit_method_clear_string_delimiters>`
 
-移除所有字符串分隔符。
+Removes all string delimiters.
 
 .. rst-class:: classref-item-separator
 
@@ -1072,7 +1072,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **confirm_code_completion**\ (\ replace\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CodeEdit_method_confirm_code_completion>`
 
-将选定的条目插入到文本中。如果 ``replace`` 为 ``true``\ ，任何现有的文本都会被替换，而不是被合并。
+Inserts the selected entry into the text. If ``replace`` is ``true``, any existing text is replaced rather than merged.
 
 .. rst-class:: classref-item-separator
 
@@ -1084,9 +1084,9 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **convert_indent**\ (\ from_line\: :ref:`int<class_int>` = -1, to_line\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_CodeEdit_method_convert_indent>`
 
-将 ``from_line`` 和 ``to_line`` 之间的行缩进，转换为 :ref:`indent_use_spaces<class_CodeEdit_property_indent_use_spaces>` 设置的制表符或空格。
+Converts the indents of lines between ``from_line`` and ``to_line`` to tabs or spaces as set by :ref:`indent_use_spaces<class_CodeEdit_property_indent_use_spaces>`.
 
-值均为 ``-1`` 将转换整个文本。
+Values of ``-1`` convert the entire text.
 
 .. rst-class:: classref-item-separator
 
@@ -1098,13 +1098,13 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **create_code_region**\ (\ ) :ref:`🔗<class_CodeEdit_method_create_code_region>`
 
-使用选区创建一个新的代码区块。必须至少定义一个单行注释分隔符（见 :ref:`add_comment_delimiter()<class_CodeEdit_method_add_comment_delimiter>`\ ）。
+Creates a new code region with the selection. At least one single line comment delimiter have to be defined (see :ref:`add_comment_delimiter()<class_CodeEdit_method_add_comment_delimiter>`).
 
-代码区块是代码的一部分，它在折叠时会高亮显示，且可以帮助组织脚本。
+A code region is a part of code that is highlighted when folded and can help organize your script.
 
-代码区块的开始和结束标记可以被自定义（见 :ref:`set_code_region_tags()<class_CodeEdit_method_set_code_region_tags>`\ ）。
+Code region start and end tags can be customized (see :ref:`set_code_region_tags()<class_CodeEdit_method_set_code_region_tags>`).
 
-代码区块使用开始和结束标记（默认情况下分别为 ``region`` 和 ``endregion``\ ）进行分隔，前面有一个行注释分隔符。（例如 ``#region`` 和 ``#endregion``\ ）
+Code regions are delimited using start and end tags (respectively ``region`` and ``endregion`` by default) preceded by one line comment delimiter. (eg. ``#region`` and ``#endregion``)
 
 .. rst-class:: classref-item-separator
 
@@ -1116,7 +1116,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **delete_lines**\ (\ ) :ref:`🔗<class_CodeEdit_method_delete_lines>`
 
-删除所选行以及有光标停留的行。
+Deletes all lines that are selected or have a caret on them.
 
 .. rst-class:: classref-item-separator
 
@@ -1128,7 +1128,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **do_indent**\ (\ ) :ref:`🔗<class_CodeEdit_method_do_indent>`
 
-如果没有选中内容，则在光标处插入缩进。否则会将所选行缩进一级，与 :ref:`indent_lines()<class_CodeEdit_method_indent_lines>` 类似。等价于 :ref:`ProjectSettings.input/ui_text_indent<class_ProjectSettings_property_input/ui_text_indent>` 动作。所使用的缩进字符取决于 :ref:`indent_use_spaces<class_CodeEdit_property_indent_use_spaces>` 和 :ref:`indent_size<class_CodeEdit_property_indent_size>`\ 。
+If there is no selection, indentation is inserted at the caret. Otherwise, the selected lines are indented like :ref:`indent_lines()<class_CodeEdit_method_indent_lines>`. Equivalent to the :ref:`ProjectSettings.input/ui_text_indent<class_ProjectSettings_property_input/ui_text_indent>` action. The indentation characters used depend on :ref:`indent_use_spaces<class_CodeEdit_property_indent_use_spaces>` and :ref:`indent_size<class_CodeEdit_property_indent_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1140,7 +1140,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **duplicate_lines**\ (\ ) :ref:`🔗<class_CodeEdit_method_duplicate_lines>`
 
-复制当前使用任何文本光标选择的所有行。无论文本光标位于行内的哪个位置，复制当前行所在的整行。
+Duplicates all lines currently selected with any caret. Duplicates the entire line beneath the current one no matter where the caret is within the line.
 
 .. rst-class:: classref-item-separator
 
@@ -1152,7 +1152,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **duplicate_selection**\ (\ ) :ref:`🔗<class_CodeEdit_method_duplicate_selection>`
 
-制作所有选中文本的副本并制作所有光标所在行的副本。
+Duplicates all selected text and duplicates all lines with a caret on them.
 
 .. rst-class:: classref-item-separator
 
@@ -1164,7 +1164,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **fold_all_lines**\ (\ ) :ref:`🔗<class_CodeEdit_method_fold_all_lines>`
 
-折叠所有可能被折叠的行（参见 :ref:`can_fold_line()<class_CodeEdit_method_can_fold_line>`\ ）。
+Folds all lines that are possible to be folded (see :ref:`can_fold_line()<class_CodeEdit_method_can_fold_line>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1176,7 +1176,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **fold_line**\ (\ line\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CodeEdit_method_fold_line>`
 
-如果可能，折叠给定的行（参见 :ref:`can_fold_line()<class_CodeEdit_method_can_fold_line>`\ ）。
+Folds the given line, if possible (see :ref:`can_fold_line()<class_CodeEdit_method_can_fold_line>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1188,7 +1188,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`String<class_String>` **get_auto_brace_completion_close_key**\ (\ open_key\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_CodeEdit_method_get_auto_brace_completion_close_key>`
 
-获取 ``open_key`` 相匹配的括号自动闭合键。
+Gets the matching auto brace close key for ``open_key``.
 
 .. rst-class:: classref-item-separator
 
@@ -1200,7 +1200,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_bookmarked_lines**\ (\ ) |const| :ref:`🔗<class_CodeEdit_method_get_bookmarked_lines>`
 
-获取所有书签行。
+Gets all bookmarked lines.
 
 .. rst-class:: classref-item-separator
 
@@ -1212,7 +1212,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_breakpointed_lines**\ (\ ) |const| :ref:`🔗<class_CodeEdit_method_get_breakpointed_lines>`
 
-获取所有断点行。
+Gets all breakpointed lines.
 
 .. rst-class:: classref-item-separator
 
@@ -1224,19 +1224,19 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Dictionary<class_Dictionary>` **get_code_completion_option**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_get_code_completion_option>`
 
-获取在 ``index`` 处的补全选项。返回的 :ref:`Dictionary<class_Dictionary>` 有以下键值。
+Gets the completion option at ``index``. The return :ref:`Dictionary<class_Dictionary>` has the following key-values:
 
-\ ``kind``\ ：\ :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>`\ 
+\ ``kind``: :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>`\ 
 
-\ ``display_text`` ：在自动补全菜单上显示的文本。
+\ ``display_text``: Text that is shown on the autocomplete menu.
 
-\ ``insert_text`` ：当选中这个选项时要插入的文本。
+\ ``insert_text``: Text that is to be inserted when this item is selected.
 
-\ ``font_color``\ ：自动补全菜单上文本的颜色。
+\ ``font_color``: Color of the text on the autocomplete menu.
 
-\ ``icon`` ：在自动补全菜单上绘制的图标。
+\ ``icon``: Icon to draw on the autocomplete menu.
 
-\ ``default_value``\ ：符号的值。
+\ ``default_value``: Value of the symbol.
 
 .. rst-class:: classref-item-separator
 
@@ -1248,7 +1248,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_code_completion_options**\ (\ ) |const| :ref:`🔗<class_CodeEdit_method_get_code_completion_options>`
 
-获取所有补全选项，返回值见 :ref:`get_code_completion_option()<class_CodeEdit_method_get_code_completion_option>`\ 。
+Gets all completion options, see :ref:`get_code_completion_option()<class_CodeEdit_method_get_code_completion_option>` for return content.
 
 .. rst-class:: classref-item-separator
 
@@ -1260,7 +1260,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`int<class_int>` **get_code_completion_selected_index**\ (\ ) |const| :ref:`🔗<class_CodeEdit_method_get_code_completion_selected_index>`
 
-获取当前已选定补全项的索引。
+Gets the index of the current selected completion option.
 
 .. rst-class:: classref-item-separator
 
@@ -1272,7 +1272,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`String<class_String>` **get_code_region_end_tag**\ (\ ) |const| :ref:`🔗<class_CodeEdit_method_get_code_region_end_tag>`
 
-返回代码区块结束标签（不带注释分隔符）。
+Returns the code region end tag (without comment delimiter).
 
 .. rst-class:: classref-item-separator
 
@@ -1284,7 +1284,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`String<class_String>` **get_code_region_start_tag**\ (\ ) |const| :ref:`🔗<class_CodeEdit_method_get_code_region_start_tag>`
 
-返回代码区块开始标签（不带注释分隔符）。
+Returns the code region start tag (without comment delimiter).
 
 .. rst-class:: classref-item-separator
 
@@ -1296,7 +1296,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`String<class_String>` **get_delimiter_end_key**\ (\ delimiter_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_get_delimiter_end_key>`
 
-获取字符串或注释块索引的结束键。
+Gets the end key for a string or comment region index.
 
 .. rst-class:: classref-item-separator
 
@@ -1308,7 +1308,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Vector2<class_Vector2>` **get_delimiter_end_position**\ (\ line\: :ref:`int<class_int>`, column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_get_delimiter_end_position>`
 
-如果 ``line`` ``column`` 是在一个字符串或注释中，则返回该区域的结束位置。如果不在或未找到结束位置，则 :ref:`Vector2<class_Vector2>` 的两个值都将是 ``-1`` 。
+If ``line`` ``column`` is in a string or comment, returns the end position of the region. If not or no end could be found, both :ref:`Vector2<class_Vector2>` values will be ``-1``.
 
 .. rst-class:: classref-item-separator
 
@@ -1320,7 +1320,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`String<class_String>` **get_delimiter_start_key**\ (\ delimiter_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_get_delimiter_start_key>`
 
-获取字符串或注释块索引的开始键。
+Gets the start key for a string or comment region index.
 
 .. rst-class:: classref-item-separator
 
@@ -1332,7 +1332,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Vector2<class_Vector2>` **get_delimiter_start_position**\ (\ line\: :ref:`int<class_int>`, column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_get_delimiter_start_position>`
 
-如果 ``line`` ``column`` 是在一个字符串或注释中，则返回该区域的起始位置。如果不在或未找到开始位置，则 :ref:`Vector2<class_Vector2>` 的两个值都将是 ``-1`` 。
+If ``line`` ``column`` is in a string or comment, returns the start position of the region. If not or no start could be found, both :ref:`Vector2<class_Vector2>` values will be ``-1``.
 
 .. rst-class:: classref-item-separator
 
@@ -1344,7 +1344,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_executing_lines**\ (\ ) |const| :ref:`🔗<class_CodeEdit_method_get_executing_lines>`
 
-获取所有正在执行的行。
+Gets all executing lines.
 
 .. rst-class:: classref-item-separator
 
@@ -1356,7 +1356,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Array<class_Array>`\[:ref:`int<class_int>`\] **get_folded_lines**\ (\ ) |const| :ref:`🔗<class_CodeEdit_method_get_folded_lines>`
 
-返回当前所有折叠的行。
+Returns all lines that are currently folded.
 
 .. rst-class:: classref-item-separator
 
@@ -1368,7 +1368,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`String<class_String>` **get_text_for_code_completion**\ (\ ) |const| :ref:`🔗<class_CodeEdit_method_get_text_for_code_completion>`
 
-返回在文本光标位置带有 ``0xFFFF`` 字符的全文。
+Returns the full text with char ``0xFFFF`` at the caret location.
 
 .. rst-class:: classref-item-separator
 
@@ -1380,7 +1380,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`String<class_String>` **get_text_for_symbol_lookup**\ (\ ) |const| :ref:`🔗<class_CodeEdit_method_get_text_for_symbol_lookup>`
 
-返回在鼠标光标处带有 ``0xFFFF`` 字符的全文。
+Returns the full text with char ``0xFFFF`` at the cursor location.
 
 .. rst-class:: classref-item-separator
 
@@ -1392,7 +1392,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`String<class_String>` **get_text_with_cursor_char**\ (\ line\: :ref:`int<class_int>`, column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_get_text_with_cursor_char>`
 
-返回在指定位置带有 ``0xFFFF`` 字符的全文。
+Returns the full text with char ``0xFFFF`` at the specified location.
 
 .. rst-class:: classref-item-separator
 
@@ -1404,7 +1404,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`bool<class_bool>` **has_auto_brace_completion_close_key**\ (\ close_key\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_CodeEdit_method_has_auto_brace_completion_close_key>`
 
-如果关闭键 ``close_key`` 存在，则返回 ``true``\ 。
+Returns ``true`` if close key ``close_key`` exists.
 
 .. rst-class:: classref-item-separator
 
@@ -1416,7 +1416,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`bool<class_bool>` **has_auto_brace_completion_open_key**\ (\ open_key\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_CodeEdit_method_has_auto_brace_completion_open_key>`
 
-如果打开键 ``open_key`` 存在，则返回 ``true``\ 。
+Returns ``true`` if open key ``open_key`` exists.
 
 .. rst-class:: classref-item-separator
 
@@ -1428,7 +1428,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`bool<class_bool>` **has_comment_delimiter**\ (\ start_key\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_CodeEdit_method_has_comment_delimiter>`
 
-如果注释的 ``start_key`` 存在，返回 ``true`` 。
+Returns ``true`` if comment ``start_key`` exists.
 
 .. rst-class:: classref-item-separator
 
@@ -1440,7 +1440,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`bool<class_bool>` **has_string_delimiter**\ (\ start_key\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_CodeEdit_method_has_string_delimiter>`
 
-如果字符串的 ``start_key`` 存在，返回 ``true`` 。
+Returns ``true`` if string ``start_key`` exists.
 
 .. rst-class:: classref-item-separator
 
@@ -1452,7 +1452,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **indent_lines**\ (\ ) :ref:`🔗<class_CodeEdit_method_indent_lines>`
 
-缩进所有选中的行或光标所在的行。使用空格还是制表符取决于 :ref:`indent_use_spaces<class_CodeEdit_property_indent_use_spaces>`\ 。见 :ref:`unindent_lines()<class_CodeEdit_method_unindent_lines>`\ 。
+Indents all lines that are selected or have a caret on them. Uses spaces or a tab depending on :ref:`indent_use_spaces<class_CodeEdit_property_indent_use_spaces>`. See :ref:`unindent_lines()<class_CodeEdit_method_unindent_lines>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1464,7 +1464,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`int<class_int>` **is_in_comment**\ (\ line\: :ref:`int<class_int>`, column\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_CodeEdit_method_is_in_comment>`
 
-如果 ``line`` ``column`` 在一条注释中，则返回分隔符索引。如果没有提供 ``column``\ ，且整个 ``line`` 是一条注释，则将返回分隔符索引。否则返回 ``-1``\ 。
+Returns delimiter index if ``line`` ``column`` is in a comment. If ``column`` is not provided, will return delimiter index if the entire ``line`` is a comment. Otherwise ``-1``.
 
 .. rst-class:: classref-item-separator
 
@@ -1476,7 +1476,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`int<class_int>` **is_in_string**\ (\ line\: :ref:`int<class_int>`, column\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_CodeEdit_method_is_in_string>`
 
-如果 ``line`` ``column`` 在一条字符串中，则返回分隔符索引。如果没有提供 ``column``\ ，且整个 ``line`` 是一个字符串，则将返回分隔符索引。否则返回 ``-1``\ 。
+Returns the delimiter index if ``line`` ``column`` is in a string. If ``column`` is not provided, will return the delimiter index if the entire ``line`` is a string. Otherwise ``-1``.
 
 .. rst-class:: classref-item-separator
 
@@ -1488,7 +1488,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`bool<class_bool>` **is_line_bookmarked**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_is_line_bookmarked>`
 
-如果给定的行设置了书签，则返回 ``true``\ 。见 :ref:`set_line_as_bookmarked()<class_CodeEdit_method_set_line_as_bookmarked>`\ 。
+Returns ``true`` if the given line is bookmarked. See :ref:`set_line_as_bookmarked()<class_CodeEdit_method_set_line_as_bookmarked>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1500,7 +1500,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`bool<class_bool>` **is_line_breakpointed**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_is_line_breakpointed>`
 
-如果给定的行设置了断点，则返回 ``true``\ 。见 :ref:`set_line_as_breakpoint()<class_CodeEdit_method_set_line_as_breakpoint>`\ 。
+Returns ``true`` if the given line is breakpointed. See :ref:`set_line_as_breakpoint()<class_CodeEdit_method_set_line_as_breakpoint>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1512,7 +1512,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`bool<class_bool>` **is_line_code_region_end**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_is_line_code_region_end>`
 
-如果给定的行是代码区块的结尾，则返回 ``true``\ 。见 :ref:`set_code_region_tags()<class_CodeEdit_method_set_code_region_tags>`\ 。
+Returns ``true`` if the given line is a code region end. See :ref:`set_code_region_tags()<class_CodeEdit_method_set_code_region_tags>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1524,7 +1524,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`bool<class_bool>` **is_line_code_region_start**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_is_line_code_region_start>`
 
-如果给定的行是代码区块的开头，则返回 ``true``\ 。见 :ref:`set_code_region_tags()<class_CodeEdit_method_set_code_region_tags>`\ 。
+Returns ``true`` if the given line is a code region start. See :ref:`set_code_region_tags()<class_CodeEdit_method_set_code_region_tags>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1536,7 +1536,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`bool<class_bool>` **is_line_executing**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_is_line_executing>`
 
-如果给定的行被标记为正在执行，则返回 ``true``\ 。见 :ref:`set_line_as_executing()<class_CodeEdit_method_set_line_as_executing>`\ 。
+Returns ``true`` if the given line is marked as executing. See :ref:`set_line_as_executing()<class_CodeEdit_method_set_line_as_executing>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1548,7 +1548,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`bool<class_bool>` **is_line_folded**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_is_line_folded>`
 
-如果给定的行已折叠，则返回 ``true``\ 。见 :ref:`fold_line()<class_CodeEdit_method_fold_line>`\ 。
+Returns ``true`` if the given line is folded. See :ref:`fold_line()<class_CodeEdit_method_fold_line>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1560,7 +1560,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **move_lines_down**\ (\ ) :ref:`🔗<class_CodeEdit_method_move_lines_down>`
 
-将所选行以及有光标停留的行向下移动。
+Moves all lines down that are selected or have a caret on them.
 
 .. rst-class:: classref-item-separator
 
@@ -1572,7 +1572,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **move_lines_up**\ (\ ) :ref:`🔗<class_CodeEdit_method_move_lines_up>`
 
-将所选行以及有光标停留的行向上移动。
+Moves all lines up that are selected or have a caret on them.
 
 .. rst-class:: classref-item-separator
 
@@ -1584,7 +1584,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **remove_comment_delimiter**\ (\ start_key\: :ref:`String<class_String>`\ ) :ref:`🔗<class_CodeEdit_method_remove_comment_delimiter>`
 
-移除带有 ``start_key`` 的注释分隔符。
+Removes the comment delimiter with ``start_key``.
 
 .. rst-class:: classref-item-separator
 
@@ -1596,7 +1596,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **remove_string_delimiter**\ (\ start_key\: :ref:`String<class_String>`\ ) :ref:`🔗<class_CodeEdit_method_remove_string_delimiter>`
 
-移除带有 ``start_key`` 的字符串分隔符。
+Removes the string delimiter with ``start_key``.
 
 .. rst-class:: classref-item-separator
 
@@ -1608,7 +1608,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **request_code_completion**\ (\ force\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CodeEdit_method_request_code_completion>`
 
-发出 :ref:`code_completion_requested<class_CodeEdit_signal_code_completion_requested>`\ ，如果 ``force`` 为 ``true`` 则会绕过所有检查。否则，将检查光标是否在一个词中或在一个前缀的前面。如果当前所有选项都是文件路径、节点路径或信号类型，将忽略该请求。
+Emits :ref:`code_completion_requested<class_CodeEdit_signal_code_completion_requested>`, if ``force`` is ``true`` will bypass all checks. Otherwise will check that the caret is in a word or in front of a prefix. Will ignore the request if all current options are of type file path, node path, or signal.
 
 .. rst-class:: classref-item-separator
 
@@ -1620,7 +1620,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **set_code_completion_selected_index**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CodeEdit_method_set_code_completion_selected_index>`
 
-设置当前选定的补全选项。
+Sets the current selected completion option.
 
 .. rst-class:: classref-item-separator
 
@@ -1632,7 +1632,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **set_code_hint**\ (\ code_hint\: :ref:`String<class_String>`\ ) :ref:`🔗<class_CodeEdit_method_set_code_hint>`
 
-设置代码提示文本。传递一个空字符串来清除。
+Sets the code hint text. Pass an empty string to clear.
 
 .. rst-class:: classref-item-separator
 
@@ -1644,7 +1644,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **set_code_hint_draw_below**\ (\ draw_below\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CodeEdit_method_set_code_hint_draw_below>`
 
-如果为 ``true``\ ，则会在主光标下方绘制代码提示。如果为 ``false``\ ，则会在主光标上方绘制代码提示。见 :ref:`set_code_hint()<class_CodeEdit_method_set_code_hint>`\ 。
+If ``true``, the code hint will draw below the main caret. If ``false``, the code hint will draw above the main caret. See :ref:`set_code_hint()<class_CodeEdit_method_set_code_hint>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1656,7 +1656,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **set_code_region_tags**\ (\ start\: :ref:`String<class_String>` = "region", end\: :ref:`String<class_String>` = "endregion"\ ) :ref:`🔗<class_CodeEdit_method_set_code_region_tags>`
 
-设置代码区块的开始和结束标签（不含注释分隔符）。
+Sets the code region start and end tags (without comment delimiter).
 
 .. rst-class:: classref-item-separator
 
@@ -1668,7 +1668,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **set_line_as_bookmarked**\ (\ line\: :ref:`int<class_int>`, bookmarked\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CodeEdit_method_set_line_as_bookmarked>`
 
-为给定的行设置书签。如果为 ``true`` 并且 :ref:`gutters_draw_bookmarks<class_CodeEdit_property_gutters_draw_bookmarks>` 为 ``true``\ ，则会在边栏中为该行绘制 :ref:`bookmark<class_CodeEdit_theme_icon_bookmark>` 图标。见 :ref:`get_bookmarked_lines()<class_CodeEdit_method_get_bookmarked_lines>` 和 :ref:`is_line_bookmarked()<class_CodeEdit_method_is_line_bookmarked>`\ 。
+Sets the given line as bookmarked. If ``true`` and :ref:`gutters_draw_bookmarks<class_CodeEdit_property_gutters_draw_bookmarks>` is ``true``, draws the :ref:`bookmark<class_CodeEdit_theme_icon_bookmark>` icon in the gutter for this line. See :ref:`get_bookmarked_lines()<class_CodeEdit_method_get_bookmarked_lines>` and :ref:`is_line_bookmarked()<class_CodeEdit_method_is_line_bookmarked>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1680,7 +1680,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **set_line_as_breakpoint**\ (\ line\: :ref:`int<class_int>`, breakpointed\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CodeEdit_method_set_line_as_breakpoint>`
 
-为给定的行设置断点。如果为 ``true`` 并且 :ref:`gutters_draw_breakpoints_gutter<class_CodeEdit_property_gutters_draw_breakpoints_gutter>` 为 ``true``\ ，则会在边栏中为该行绘制 :ref:`breakpoint<class_CodeEdit_theme_icon_breakpoint>` 图标。见 :ref:`get_breakpointed_lines()<class_CodeEdit_method_get_breakpointed_lines>` 和 :ref:`is_line_breakpointed()<class_CodeEdit_method_is_line_breakpointed>`\ 。
+Sets the given line as a breakpoint. If ``true`` and :ref:`gutters_draw_breakpoints_gutter<class_CodeEdit_property_gutters_draw_breakpoints_gutter>` is ``true``, draws the :ref:`breakpoint<class_CodeEdit_theme_icon_breakpoint>` icon in the gutter for this line. See :ref:`get_breakpointed_lines()<class_CodeEdit_method_get_breakpointed_lines>` and :ref:`is_line_breakpointed()<class_CodeEdit_method_is_line_breakpointed>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1692,7 +1692,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **set_line_as_executing**\ (\ line\: :ref:`int<class_int>`, executing\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CodeEdit_method_set_line_as_executing>`
 
-将给定的行设置为正在执行。如果为 ``true`` 并且 :ref:`gutters_draw_executing_lines<class_CodeEdit_property_gutters_draw_executing_lines>` 为 ``true``\ ，则会在边栏中为该行绘制 :ref:`executing_line<class_CodeEdit_theme_icon_executing_line>` 图标。见 :ref:`get_executing_lines()<class_CodeEdit_method_get_executing_lines>` 和 :ref:`is_line_executing()<class_CodeEdit_method_is_line_executing>`\ 。
+Sets the given line as executing. If ``true`` and :ref:`gutters_draw_executing_lines<class_CodeEdit_property_gutters_draw_executing_lines>` is ``true``, draws the :ref:`executing_line<class_CodeEdit_theme_icon_executing_line>` icon in the gutter for this line. See :ref:`get_executing_lines()<class_CodeEdit_method_get_executing_lines>` and :ref:`is_line_executing()<class_CodeEdit_method_is_line_executing>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1704,7 +1704,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **set_symbol_lookup_word_as_valid**\ (\ valid\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CodeEdit_method_set_symbol_lookup_word_as_valid>`
 
-将 :ref:`symbol_validate<class_CodeEdit_signal_symbol_validate>` 发出的符号设置为有效查找。
+Sets the symbol emitted by :ref:`symbol_validate<class_CodeEdit_signal_symbol_validate>` as a valid lookup.
 
 .. rst-class:: classref-item-separator
 
@@ -1716,7 +1716,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **toggle_foldable_line**\ (\ line\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CodeEdit_method_toggle_foldable_line>`
 
-在给定行切换代码块的折叠。
+Toggle the folding of the code block at the given line.
 
 .. rst-class:: classref-item-separator
 
@@ -1728,7 +1728,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **toggle_foldable_lines_at_carets**\ (\ ) :ref:`🔗<class_CodeEdit_method_toggle_foldable_lines_at_carets>`
 
-在所有带有光标的行上切换代码块的折叠。
+Toggle the folding of the code block on all lines with a caret on them.
 
 .. rst-class:: classref-item-separator
 
@@ -1740,7 +1740,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **unfold_all_lines**\ (\ ) :ref:`🔗<class_CodeEdit_method_unfold_all_lines>`
 
-展开所有已折叠的行。
+Unfolds all lines that are folded.
 
 .. rst-class:: classref-item-separator
 
@@ -1752,7 +1752,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **unfold_line**\ (\ line\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CodeEdit_method_unfold_line>`
 
-如果给定的行处于折叠状态，或被隐藏在折叠行下，则展开该行。
+Unfolds the given line if it is folded or if it is hidden under a folded line.
 
 .. rst-class:: classref-item-separator
 
@@ -1764,7 +1764,7 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **unindent_lines**\ (\ ) :ref:`🔗<class_CodeEdit_method_unindent_lines>`
 
-将所选行或光标所在行取消一级缩进。会根据 :ref:`indent_use_spaces<class_CodeEdit_property_indent_use_spaces>` 决定使用空格还是制表符。等价于 :ref:`ProjectSettings.input/ui_text_dedent<class_ProjectSettings_property_input/ui_text_dedent>` 动作。见 :ref:`indent_lines()<class_CodeEdit_method_indent_lines>`\ 。
+Unindents all lines that are selected or have a caret on them. Uses spaces or a tab depending on :ref:`indent_use_spaces<class_CodeEdit_property_indent_use_spaces>`. Equivalent to the :ref:`ProjectSettings.input/ui_text_dedent<class_ProjectSettings_property_input/ui_text_dedent>` action. See :ref:`indent_lines()<class_CodeEdit_method_indent_lines>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1776,9 +1776,9 @@ The minimum width in digits reserved for the line number gutter.
 
 |void| **update_code_completion_options**\ (\ force\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CodeEdit_method_update_code_completion_options>`
 
-提交所有用 :ref:`add_code_completion_option()<class_CodeEdit_method_add_code_completion_option>` 添加的补全选项。如果 ``force`` 是 ``true``\ ，将尝试强制弹出自动补全菜单 。
+Submits all completion options added with :ref:`add_code_completion_option()<class_CodeEdit_method_add_code_completion_option>`. Will try to force the autocomplete menu to popup, if ``force`` is ``true``.
 
-\ **注意：**\ 这将取代所有当前的候补选项。
+\ **Note:** This will replace all current candidates.
 
 .. rst-class:: classref-section-separator
 
@@ -1786,8 +1786,8 @@ The minimum width in digits reserved for the line number gutter.
 
 .. rst-class:: classref-descriptions-group
 
-主题属性说明
-------------
+Theme Property Descriptions
+---------------------------
 
 .. _class_CodeEdit_theme_color_bookmark_color:
 
@@ -1795,7 +1795,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Color<class_Color>` **bookmark_color** = ``Color(0.5, 0.64, 1, 0.8)`` :ref:`🔗<class_CodeEdit_theme_color_bookmark_color>`
 
-书签图标的 :ref:`Color<class_Color>`\ ，用于标记了书签的行。
+:ref:`Color<class_Color>` of the bookmark icon for bookmarked lines.
 
 .. rst-class:: classref-item-separator
 
@@ -1807,7 +1807,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Color<class_Color>` **brace_mismatch_color** = ``Color(1, 0.2, 0.2, 1)`` :ref:`🔗<class_CodeEdit_theme_color_brace_mismatch_color>`
 
-用于高亮不匹配括号文本的 :ref:`Color<class_Color>`\ 。
+:ref:`Color<class_Color>` of the text to highlight mismatched braces.
 
 .. rst-class:: classref-item-separator
 
@@ -1819,7 +1819,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Color<class_Color>` **breakpoint_color** = ``Color(0.9, 0.29, 0.3, 1)`` :ref:`🔗<class_CodeEdit_theme_color_breakpoint_color>`
 
-书签行的断点图标的 :ref:`Color<class_Color>`\ 。
+:ref:`Color<class_Color>` of the breakpoint icon for bookmarked lines.
 
 .. rst-class:: classref-item-separator
 
@@ -1831,7 +1831,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Color<class_Color>` **code_folding_color** = ``Color(0.8, 0.8, 0.8, 0.8)`` :ref:`🔗<class_CodeEdit_theme_color_code_folding_color>`
 
-所有与折叠行相关的图标的 :ref:`Color<class_Color>`\ 。
+:ref:`Color<class_Color>` for all icons related to line folding.
 
 .. rst-class:: classref-item-separator
 
@@ -1843,7 +1843,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Color<class_Color>` **completion_background_color** = ``Color(0.17, 0.16, 0.2, 1)`` :ref:`🔗<class_CodeEdit_theme_color_completion_background_color>`
 
-设置代码补全弹出窗口的背景色 :ref:`Color<class_Color>`\ 。
+Sets the background :ref:`Color<class_Color>` for the code completion popup.
 
 .. rst-class:: classref-item-separator
 
@@ -1855,7 +1855,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Color<class_Color>` **completion_existing_color** = ``Color(0.87, 0.87, 0.87, 0.13)`` :ref:`🔗<class_CodeEdit_theme_color_completion_existing_color>`
 
-用于匹配代码补全选项中的文本的背景高亮的 :ref:`Color<class_Color>`\ 。
+Background highlight :ref:`Color<class_Color>` for matching text in code completion options.
 
 .. rst-class:: classref-item-separator
 
@@ -1867,7 +1867,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Color<class_Color>` **completion_scroll_color** = ``Color(1, 1, 1, 0.29)`` :ref:`🔗<class_CodeEdit_theme_color_completion_scroll_color>`
 
-代码补全弹出窗口中滚动条的 :ref:`Color<class_Color>`\ 。
+:ref:`Color<class_Color>` of the scrollbar in the code completion popup.
 
 .. rst-class:: classref-item-separator
 
@@ -1879,7 +1879,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Color<class_Color>` **completion_scroll_hovered_color** = ``Color(1, 1, 1, 0.4)`` :ref:`🔗<class_CodeEdit_theme_color_completion_scroll_hovered_color>`
 
-代码补全弹出窗口中滚动条在悬停状态的 :ref:`Color<class_Color>`\ 。
+:ref:`Color<class_Color>` of the scrollbar in the code completion popup when hovered.
 
 .. rst-class:: classref-item-separator
 
@@ -1891,7 +1891,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Color<class_Color>` **completion_selected_color** = ``Color(0.26, 0.26, 0.27, 1)`` :ref:`🔗<class_CodeEdit_theme_color_completion_selected_color>`
 
-代码补全弹出窗口中，当前选定选项的背景高亮的 :ref:`Color<class_Color>`\ 。
+Background highlight :ref:`Color<class_Color>` for the current selected option item in the code completion popup.
 
 .. rst-class:: classref-item-separator
 
@@ -1903,7 +1903,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Color<class_Color>` **executing_line_color** = ``Color(0.98, 0.89, 0.27, 1)`` :ref:`🔗<class_CodeEdit_theme_color_executing_line_color>`
 
-执行行执行图标的 :ref:`Color<class_Color>`\ 。
+:ref:`Color<class_Color>` of the executing icon for executing lines.
 
 .. rst-class:: classref-item-separator
 
@@ -1915,7 +1915,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Color<class_Color>` **folded_code_region_color** = ``Color(0.68, 0.46, 0.77, 0.2)`` :ref:`🔗<class_CodeEdit_theme_color_folded_code_region_color>`
 
-折叠代码区块的背景行高亮 :ref:`Color<class_Color>`\ 。
+:ref:`Color<class_Color>` of background line highlight for folded code region.
 
 .. rst-class:: classref-item-separator
 
@@ -1927,7 +1927,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Color<class_Color>` **line_length_guideline_color** = ``Color(0.3, 0.5, 0.8, 0.1)`` :ref:`🔗<class_CodeEdit_theme_color_line_length_guideline_color>`
 
-主行长度参考线的 :ref:`Color<class_Color>`\ ，次要参考线将应用 50% 的 Alpha。
+:ref:`Color<class_Color>` of the main line length guideline, secondary guidelines will have 50% alpha applied.
 
 .. rst-class:: classref-item-separator
 
@@ -1939,7 +1939,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Color<class_Color>` **line_number_color** = ``Color(0.67, 0.67, 0.67, 0.4)`` :ref:`🔗<class_CodeEdit_theme_color_line_number_color>`
 
-设置行号的颜色 :ref:`Color<class_Color>`\ 。
+Sets the :ref:`Color<class_Color>` of line numbers.
 
 .. rst-class:: classref-item-separator
 
@@ -1951,7 +1951,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`int<class_int>` **completion_lines** = ``7`` :ref:`🔗<class_CodeEdit_theme_constant_completion_lines>`
 
-同时在代码补全弹出窗口中显示的最大选项数。
+Max number of options to display in the code completion popup at any one time.
 
 .. rst-class:: classref-item-separator
 
@@ -1963,7 +1963,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`int<class_int>` **completion_max_width** = ``50`` :ref:`🔗<class_CodeEdit_theme_constant_completion_max_width>`
 
-代码补全弹出窗口中选项的最大宽度。超过此长度的选项将被截断。
+Max width of options in the code completion popup. Options longer than this will be cut off.
 
 .. rst-class:: classref-item-separator
 
@@ -1975,7 +1975,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`int<class_int>` **completion_scroll_width** = ``6`` :ref:`🔗<class_CodeEdit_theme_constant_completion_scroll_width>`
 
-代码补全弹出窗口中滚动条的宽度。
+Width of the scrollbar in the code completion popup.
 
 .. rst-class:: classref-item-separator
 
@@ -1987,7 +1987,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Texture2D<class_Texture2D>` **bookmark** :ref:`🔗<class_CodeEdit_theme_icon_bookmark>`
 
-设置书签行的自定义 :ref:`Texture2D<class_Texture2D>`\ ，会在书签栏中绘制。
+Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the bookmark gutter for bookmarked lines.
 
 .. rst-class:: classref-item-separator
 
@@ -1999,7 +1999,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Texture2D<class_Texture2D>` **breakpoint** :ref:`🔗<class_CodeEdit_theme_icon_breakpoint>`
 
-设置断点行的自定义 :ref:`Texture2D<class_Texture2D>`\ ，会在断点栏中绘制。
+Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the breakpoint gutter for breakpointed lines.
 
 .. rst-class:: classref-item-separator
 
@@ -2011,7 +2011,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Texture2D<class_Texture2D>` **can_fold** :ref:`🔗<class_CodeEdit_theme_icon_can_fold>`
 
-设置可折叠行的自定义 :ref:`Texture2D<class_Texture2D>`\ ，会在折叠行栏中绘制。
+Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the line folding gutter when a line can be folded.
 
 .. rst-class:: classref-item-separator
 
@@ -2023,7 +2023,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Texture2D<class_Texture2D>` **can_fold_code_region** :ref:`🔗<class_CodeEdit_theme_icon_can_fold_code_region>`
 
-设置一个自定义 :ref:`Texture2D<class_Texture2D>`\ ，以在代码区块可以折叠时在行折叠栏中绘制。
+Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the line folding gutter when a code region can be folded.
 
 .. rst-class:: classref-item-separator
 
@@ -2035,7 +2035,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Texture2D<class_Texture2D>` **completion_color_bg** :ref:`🔗<class_CodeEdit_theme_icon_completion_color_bg>`
 
-自动补全时颜色预览框的背景面板（颜色半透明时可见）。
+Background panel for the color preview box in autocompletion (visible when the color is translucent).
 
 .. rst-class:: classref-item-separator
 
@@ -2047,7 +2047,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Texture2D<class_Texture2D>` **executing_line** :ref:`🔗<class_CodeEdit_theme_icon_executing_line>`
 
-执行行的图标，会在执行栏中绘制。
+Icon to draw in the executing gutter for executing lines.
 
 .. rst-class:: classref-item-separator
 
@@ -2059,7 +2059,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Texture2D<class_Texture2D>` **folded** :ref:`🔗<class_CodeEdit_theme_icon_folded>`
 
-设置一个自定义 :ref:`Texture2D<class_Texture2D>`\ ，以在行被折叠且可以展开时，在行折叠边栏中绘制。
+Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the line folding gutter when a line is folded and can be unfolded.
 
 .. rst-class:: classref-item-separator
 
@@ -2071,7 +2071,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Texture2D<class_Texture2D>` **folded_code_region** :ref:`🔗<class_CodeEdit_theme_icon_folded_code_region>`
 
-设置一个自定义 :ref:`Texture2D<class_Texture2D>`\ ，以在代码区块被折叠且可以展开时，在行折叠边栏中绘制。
+Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the line folding gutter when a code region is folded and can be unfolded.
 
 .. rst-class:: classref-item-separator
 
@@ -2083,7 +2083,7 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`Texture2D<class_Texture2D>` **folded_eol_icon** :ref:`🔗<class_CodeEdit_theme_icon_folded_eol_icon>`
 
-设置要绘制在折叠行末尾的一个自定义 :ref:`Texture2D<class_Texture2D>`\ 。
+Sets a custom :ref:`Texture2D<class_Texture2D>` to draw at the end of a folded line.
 
 .. rst-class:: classref-item-separator
 
@@ -2095,14 +2095,14 @@ The minimum width in digits reserved for the line number gutter.
 
 :ref:`StyleBox<class_StyleBox>` **completion** :ref:`🔗<class_CodeEdit_theme_style_completion>`
 
-用于代码补全弹窗的 :ref:`StyleBox<class_StyleBox>`\ 。
+:ref:`StyleBox<class_StyleBox>` for the code completion popup.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,18 +5,18 @@
 EditorInterface
 ===============
 
-**继承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-Godot 编辑器的接口。
+Godot editor's interface.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-**EditorInterface** 允许控制 Godot 编辑器的窗口，包括自定义窗口，保存和重新加载场景，渲染网格预览，检查和编辑资源和对象，并提供对 :ref:`EditorSettings<class_EditorSettings>` ， :ref:`EditorFileSystem<class_EditorFileSystem>` ， :ref:`EditorResourcePreview<class_EditorResourcePreview>` ， :ref:`ScriptEditor<class_ScriptEditor>` ，编辑器视口以及场景信息的访问。
+**EditorInterface** gives you control over Godot editor's window. It allows customizing the window, saving and (re-)loading scenes, rendering mesh previews, inspecting and editing resources and objects, and provides access to :ref:`EditorSettings<class_EditorSettings>`, :ref:`EditorFileSystem<class_EditorFileSystem>`, :ref:`EditorResourcePreview<class_EditorResourcePreview>`, :ref:`ScriptEditor<class_ScriptEditor>`, the editor viewport, and information about scenes.
 
-\ **注意：** 这个类不应该被直接实例化。而是，直接通过名称访问单例。
+\ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton directly by its name.
 
 
 .. tabs::
@@ -27,15 +27,15 @@ Godot 编辑器的接口。
 
  .. code-tab:: csharp
 
-    // 在 C# 中，可以通过静态 Singleton 属性来访问。
+    // In C# you can access it via the static Singleton property.
     EditorSettings settings = EditorInterface.Singleton.GetEditorSettings();
 
 
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -48,8 +48,8 @@ Godot 编辑器的接口。
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -194,8 +194,8 @@ Godot 编辑器的接口。
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_EditorInterface_property_distraction_free_mode:
 
@@ -208,7 +208,7 @@ Godot 编辑器的接口。
 - |void| **set_distraction_free_mode**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_distraction_free_mode_enabled**\ (\ )
 
-如果为 ``true``\ ，将启用专注模式，该模式会隐藏侧边面板，增加主视图的可用空间。
+If ``true``, enables distraction-free mode which hides side docks to increase the space available for the main view.
 
 .. rst-class:: classref-item-separator
 
@@ -225,7 +225,7 @@ Godot 编辑器的接口。
 - |void| **set_movie_maker_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_movie_maker_enabled**\ (\ )
 
-如果为 ``true``\ ，则编辑器启用了 Movie Maker 模式。详见 :ref:`MovieWriter<class_MovieWriter>`\ 。
+If ``true``, the Movie Maker mode is enabled in the editor. See :ref:`MovieWriter<class_MovieWriter>` for more information.
 
 .. rst-class:: classref-section-separator
 
@@ -233,8 +233,8 @@ Godot 编辑器的接口。
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_EditorInterface_method_add_root_node:
 
@@ -242,7 +242,7 @@ Godot 编辑器的接口。
 
 |void| **add_root_node**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_EditorInterface_method_add_root_node>`
 
-使 ``node`` 成为当前打开的场景的根。仅当场景为空时才有效。如果 ``node`` 是场景实例，则会创建一个继承场景。
+Makes ``node`` root of the currently opened scene. Only works if the scene is empty. If the ``node`` is a scene instance, an inheriting scene will be created.
 
 .. rst-class:: classref-item-separator
 
@@ -254,7 +254,7 @@ Godot 编辑器的接口。
 
 :ref:`Error<enum_@GlobalScope_Error>` **close_scene**\ (\ ) :ref:`🔗<class_EditorInterface_method_close_scene>`
 
-关闭当前活动的场景，关闭过程中忽略未保存的更改。成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，如果没有可关闭的场景则返回 :ref:`@GlobalScope.ERR_DOES_NOT_EXIST<class_@GlobalScope_constant_ERR_DOES_NOT_EXIST>`\ 。
+Closes the currently active scene, discarding any pending changes in the process. Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success or :ref:`@GlobalScope.ERR_DOES_NOT_EXIST<class_@GlobalScope_constant_ERR_DOES_NOT_EXIST>` if there is no scene to close.
 
 .. rst-class:: classref-item-separator
 
@@ -266,7 +266,7 @@ Godot 编辑器的接口。
 
 |void| **edit_node**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_EditorInterface_method_edit_node>`
 
-编辑给定的 :ref:`Node<class_Node>`\ 。如果该节点在场景树内，将被选中。
+Edits the given :ref:`Node<class_Node>`. The node will be also selected if it's inside the scene tree.
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,7 @@ Godot 编辑器的接口。
 
 |void| **edit_resource**\ (\ resource\: :ref:`Resource<class_Resource>`\ ) :ref:`🔗<class_EditorInterface_method_edit_resource>`
 
-编辑给定的 :ref:`Resource<class_Resource>`\ 。如果该资源是 :ref:`Script<class_Script>`\ ，你还可以使用 :ref:`edit_script()<class_EditorInterface_method_edit_script>` 编辑，指定行列位置。
+Edits the given :ref:`Resource<class_Resource>`. If the resource is a :ref:`Script<class_Script>` you can also edit it with :ref:`edit_script()<class_EditorInterface_method_edit_script>` to specify the line and column position.
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ Godot 编辑器的接口。
 
 |void| **edit_script**\ (\ script\: :ref:`Script<class_Script>`, line\: :ref:`int<class_int>` = -1, column\: :ref:`int<class_int>` = 0, grab_focus\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_EditorInterface_method_edit_script>`
 
-编辑给定的 :ref:`Script<class_Script>`\ 。还可以指定所打开脚本的行和列。打开脚本所使用的编辑器是由用户为该脚本的语言所配置，可能是外部编辑器。
+Edits the given :ref:`Script<class_Script>`. The line and column on which to open the script can also be specified. The script will be open with the user-configured editor for the script's language which may be an external editor.
 
 .. rst-class:: classref-item-separator
 
@@ -302,9 +302,9 @@ Godot 编辑器的接口。
 
 :ref:`Control<class_Control>` **get_base_control**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_base_control>`
 
-返回 Godot 编辑器窗口的主容器。例如，你可以用它来检索容器的大小并相应地放置你的控件。
+Returns the main container of Godot editor's window. For example, you can use it to retrieve the size of the container and place your controls accordingly.
 
-\ **警告：**\ 删除和释放这个节点将使编辑器失效，并可能导致崩溃。
+\ **Warning:** Removing and freeing this node will render the editor useless and may cause a crash.
 
 .. rst-class:: classref-item-separator
 
@@ -316,9 +316,9 @@ Godot 编辑器的接口。
 
 :ref:`EditorCommandPalette<class_EditorCommandPalette>` **get_command_palette**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_command_palette>`
 
-返回编辑器的 :ref:`EditorCommandPalette<class_EditorCommandPalette>` 实例。
+Returns the editor's :ref:`EditorCommandPalette<class_EditorCommandPalette>` instance.
 
-\ **警告：**\ 删除和释放此节点，将使编辑器的一部分失去作用，并可能导致崩溃。
+\ **Warning:** Removing and freeing this node will render a part of the editor useless and may cause a crash.
 
 .. rst-class:: classref-item-separator
 
@@ -330,7 +330,7 @@ Godot 编辑器的接口。
 
 :ref:`String<class_String>` **get_current_directory**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_current_directory>`
 
-返回 :ref:`FileSystemDock<class_FileSystemDock>` 中当前正在查看的目录。如果选择了一个文件，则将使用 :ref:`String.get_base_dir()<class_String_method_get_base_dir>` 返回其基本目录。
+Returns the current directory being viewed in the :ref:`FileSystemDock<class_FileSystemDock>`. If a file is selected, its base directory will be returned using :ref:`String.get_base_dir()<class_String_method_get_base_dir>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -342,11 +342,11 @@ Godot 编辑器的接口。
 
 :ref:`String<class_String>` **get_current_feature_profile**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_current_feature_profile>`
 
-返回当前激活的功能配置文件的名称。如果默认配置文件当前处于活动状态，则返回空字符串。
+Returns the name of the currently activated feature profile. If the default profile is currently active, an empty string is returned instead.
 
-为了获取对 :ref:`EditorFeatureProfile<class_EditorFeatureProfile>` 的引用，你必须使用 :ref:`EditorFeatureProfile.load_from_file()<class_EditorFeatureProfile_method_load_from_file>` 加载该功能配置文件。
+In order to get a reference to the :ref:`EditorFeatureProfile<class_EditorFeatureProfile>`, you must load the feature profile using :ref:`EditorFeatureProfile.load_from_file()<class_EditorFeatureProfile_method_load_from_file>`.
 
-\ **注意：**\ 通过用户界面创建的功能配置文件将从 ``feature_profiles`` 目录中的扩展名为 ``.profile`` 的文件加载。可以使用 :ref:`EditorPaths.get_config_dir()<class_EditorPaths_method_get_config_dir>` 找到编辑器配置文件夹。
+\ **Note:** Feature profiles created via the user interface are loaded from the ``feature_profiles`` directory, as a file with the ``.profile`` extension. The editor configuration folder can be found by using :ref:`EditorPaths.get_config_dir()<class_EditorPaths_method_get_config_dir>`.
 
 .. rst-class:: classref-item-separator
 
@@ -358,7 +358,7 @@ Godot 编辑器的接口。
 
 :ref:`String<class_String>` **get_current_path**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_current_path>`
 
-返回在 :ref:`FileSystemDock<class_FileSystemDock>` 中查看的当前路径。
+Returns the current path being viewed in the :ref:`FileSystemDock<class_FileSystemDock>`.
 
 .. rst-class:: classref-item-separator
 
@@ -370,7 +370,7 @@ Godot 编辑器的接口。
 
 :ref:`Node<class_Node>` **get_edited_scene_root**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_edited_scene_root>`
 
-返回正在编辑的（当前）场景的根 :ref:`Node<class_Node>`\ 。
+Returns the edited (current) scene's root :ref:`Node<class_Node>`.
 
 .. rst-class:: classref-item-separator
 
@@ -394,11 +394,11 @@ Returns the language currently used for the editor interface.
 
 :ref:`VBoxContainer<class_VBoxContainer>` **get_editor_main_screen**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_editor_main_screen>`
 
-返回负责主屏幕插件和工具的编辑器控件。将其与实现了 :ref:`EditorPlugin._has_main_screen()<class_EditorPlugin_private_method__has_main_screen>` 的插件一起使用。
+Returns the editor control responsible for main screen plugins and tools. Use it with plugins that implement :ref:`EditorPlugin._has_main_screen()<class_EditorPlugin_private_method__has_main_screen>`.
 
-\ **注意：**\ 该节点是一个 :ref:`VBoxContainer<class_VBoxContainer>`\ ，这意味着如果向其添加 :ref:`Control<class_Control>` 子节点，则需要将子节点的 :ref:`Control.size_flags_vertical<class_Control_property_size_flags_vertical>` 设置为 :ref:`Control.SIZE_EXPAND_FILL<class_Control_constant_SIZE_EXPAND_FILL>`\ ，以使其使用全部可用空间。
+\ **Note:** This node is a :ref:`VBoxContainer<class_VBoxContainer>`, which means that if you add a :ref:`Control<class_Control>` child to it, you need to set the child's :ref:`Control.size_flags_vertical<class_Control_property_size_flags_vertical>` to :ref:`Control.SIZE_EXPAND_FILL<class_Control_constant_SIZE_EXPAND_FILL>` to make it use the full available space.
 
-\ **警告：**\ 移除和释放这个节点将使编辑器的一部分失去作用，并可能导致崩溃。
+\ **Warning:** Removing and freeing this node will render a part of the editor useless and may cause a crash.
 
 .. rst-class:: classref-item-separator
 
@@ -410,7 +410,7 @@ Returns the language currently used for the editor interface.
 
 :ref:`EditorPaths<class_EditorPaths>` **get_editor_paths**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_editor_paths>`
 
-返回 :ref:`EditorPaths<class_EditorPaths>` 单例。
+Returns the :ref:`EditorPaths<class_EditorPaths>` singleton.
 
 .. rst-class:: classref-item-separator
 
@@ -422,9 +422,9 @@ Returns the language currently used for the editor interface.
 
 :ref:`float<class_float>` **get_editor_scale**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_editor_scale>`
 
-返回编辑器 UI 的实际缩放（\ ``1.0`` 表示缩放为 100%）。可以用来调整由插件添加的用户 UI 的位置和尺寸。
+Returns the actual scale of the editor UI (``1.0`` being 100% scale). This can be used to adjust position and dimensions of the UI added by plugins.
 
-\ **注意：**\ 这个值是通过 :ref:`EditorSettings.interface/editor/display_scale<class_EditorSettings_property_interface/editor/display_scale>` 和 :ref:`EditorSettings.interface/editor/custom_display_scale<class_EditorSettings_property_interface/editor/custom_display_scale>` 来设置。编辑器必须重新启动才能正确应用这些变化。
+\ **Note:** This value is set via the :ref:`EditorSettings.interface/editor/display_scale<class_EditorSettings_property_interface/editor/display_scale>` and :ref:`EditorSettings.interface/editor/custom_display_scale<class_EditorSettings_property_interface/editor/custom_display_scale>` settings. The editor must be restarted for changes to be properly applied.
 
 .. rst-class:: classref-item-separator
 
@@ -436,7 +436,7 @@ Returns the language currently used for the editor interface.
 
 :ref:`EditorSettings<class_EditorSettings>` **get_editor_settings**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_editor_settings>`
 
-返回编辑器的 :ref:`EditorSettings<class_EditorSettings>` 实例。
+Returns the editor's :ref:`EditorSettings<class_EditorSettings>` instance.
 
 .. rst-class:: classref-item-separator
 
@@ -448,9 +448,9 @@ Returns the language currently used for the editor interface.
 
 :ref:`Theme<class_Theme>` **get_editor_theme**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_editor_theme>`
 
-返回编辑器的 :ref:`Theme<class_Theme>`\ 。
+Returns the editor's :ref:`Theme<class_Theme>`.
 
-\ **注意：**\ 创建自定义编辑器 UI 时，请优先直接通过 GUI 节点的 ``get_theme_*`` 方法来访问主题项目。
+\ **Note:** When creating custom editor UI, prefer accessing theme items directly from your GUI nodes using the ``get_theme_*`` methods.
 
 .. rst-class:: classref-item-separator
 
@@ -462,7 +462,7 @@ Returns the language currently used for the editor interface.
 
 :ref:`EditorToaster<class_EditorToaster>` **get_editor_toaster**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_editor_toaster>`
 
-返回编辑器的 :ref:`EditorToaster<class_EditorToaster>`\ 。
+Returns the editor's :ref:`EditorToaster<class_EditorToaster>`.
 
 .. rst-class:: classref-item-separator
 
@@ -474,7 +474,7 @@ Returns the language currently used for the editor interface.
 
 :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>` **get_editor_undo_redo**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_editor_undo_redo>`
 
-返回编辑器的 :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>`\ 。
+Returns the editor's :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>`.
 
 .. rst-class:: classref-item-separator
 
@@ -486,7 +486,7 @@ Returns the language currently used for the editor interface.
 
 :ref:`SubViewport<class_SubViewport>` **get_editor_viewport_2d**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_editor_viewport_2d>`
 
-返回 2D 编辑器 :ref:`SubViewport<class_SubViewport>`\ 。视口中没有相机。视图是直接进行变换的，可以使用 :ref:`Viewport.global_canvas_transform<class_Viewport_property_global_canvas_transform>` 访问。
+Returns the 2D editor :ref:`SubViewport<class_SubViewport>`. It does not have a camera. Instead, the view transforms are done directly and can be accessed with :ref:`Viewport.global_canvas_transform<class_Viewport_property_global_canvas_transform>`.
 
 .. rst-class:: classref-item-separator
 
@@ -498,7 +498,7 @@ Returns the language currently used for the editor interface.
 
 :ref:`SubViewport<class_SubViewport>` **get_editor_viewport_3d**\ (\ idx\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_EditorInterface_method_get_editor_viewport_3d>`
 
-返回指定的 3D 编辑器 :ref:`SubViewport<class_SubViewport>`\ ，编号从 ``0`` 到 ``3``\ 。可以通过 :ref:`Viewport.get_camera_3d()<class_Viewport_method_get_camera_3d>` 访问视口中的活动编辑器相机。
+Returns the specified 3D editor :ref:`SubViewport<class_SubViewport>`, from ``0`` to ``3``. The viewport can be used to access the active editor cameras with :ref:`Viewport.get_camera_3d()<class_Viewport_method_get_camera_3d>`.
 
 .. rst-class:: classref-item-separator
 
@@ -510,9 +510,9 @@ Returns the language currently used for the editor interface.
 
 :ref:`FileSystemDock<class_FileSystemDock>` **get_file_system_dock**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_file_system_dock>`
 
-返回编辑器的文件系统面板 :ref:`FileSystemDock<class_FileSystemDock>` 实例。
+Returns the editor's :ref:`FileSystemDock<class_FileSystemDock>` instance.
 
-\ **警告：**\ 移除和释放此节点将使编辑器的一部分失去作用，并可能导致崩溃。
+\ **Warning:** Removing and freeing this node will render a part of the editor useless and may cause a crash.
 
 .. rst-class:: classref-item-separator
 
@@ -524,9 +524,9 @@ Returns the language currently used for the editor interface.
 
 :ref:`EditorInspector<class_EditorInspector>` **get_inspector**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_inspector>`
 
-返回编辑器的属性检查器 :ref:`EditorInspector<class_EditorInspector>`\ 实例。
+Returns the editor's :ref:`EditorInspector<class_EditorInspector>` instance.
 
-\ **警告：**\ 删除和释放这个节点将使编辑器的一部分失去作用，并可能导致崩溃。
+\ **Warning:** Removing and freeing this node will render a part of the editor useless and may cause a crash.
 
 .. rst-class:: classref-item-separator
 
@@ -574,7 +574,7 @@ Returns the amount of units the 3D editor's translation snapping is set to.
 
 :ref:`Array<class_Array>`\[:ref:`Node<class_Node>`\] **get_open_scene_roots**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_open_scene_roots>`
 
-返回包含当前所有已打开场景的根节点的数组。
+Returns an array with references to the root nodes of the currently opened scenes.
 
 .. rst-class:: classref-item-separator
 
@@ -586,7 +586,7 @@ Returns the amount of units the 3D editor's translation snapping is set to.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_open_scenes**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_open_scenes>`
 
-返回包含当前所有已打开场景的文件路径的数组。
+Returns an array with the file paths of the currently opened scenes.
 
 .. rst-class:: classref-item-separator
 
@@ -598,7 +598,7 @@ Returns the amount of units the 3D editor's translation snapping is set to.
 
 :ref:`String<class_String>` **get_playing_scene**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_playing_scene>`
 
-返回正在播放的场景名称。如果当前没有场景正在播放，返回一个空字符串。
+Returns the name of the scene that is being played. If no scene is currently being played, returns an empty string.
 
 .. rst-class:: classref-item-separator
 
@@ -610,7 +610,7 @@ Returns the amount of units the 3D editor's translation snapping is set to.
 
 :ref:`EditorFileSystem<class_EditorFileSystem>` **get_resource_filesystem**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_resource_filesystem>`
 
-返回编辑器的 :ref:`EditorFileSystem<class_EditorFileSystem>` 实例。
+Returns the editor's :ref:`EditorFileSystem<class_EditorFileSystem>` instance.
 
 .. rst-class:: classref-item-separator
 
@@ -622,7 +622,7 @@ Returns the amount of units the 3D editor's translation snapping is set to.
 
 :ref:`EditorResourcePreview<class_EditorResourcePreview>` **get_resource_previewer**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_resource_previewer>`
 
-返回编辑器的 :ref:`EditorResourcePreview<class_EditorResourcePreview>` 实例。
+Returns the editor's :ref:`EditorResourcePreview<class_EditorResourcePreview>` instance.
 
 .. rst-class:: classref-item-separator
 
@@ -634,9 +634,9 @@ Returns the amount of units the 3D editor's translation snapping is set to.
 
 :ref:`ScriptEditor<class_ScriptEditor>` **get_script_editor**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_script_editor>`
 
-返回编辑器的脚本编辑器 :ref:`ScriptEditor<class_ScriptEditor>` 实例。
+Returns the editor's :ref:`ScriptEditor<class_ScriptEditor>` instance.
 
-\ **警告：**\ 删除和释放这个节点将使编辑器的一部分失去作用，并可能导致崩溃。
+\ **Warning:** Removing and freeing this node will render a part of the editor useless and may cause a crash.
 
 .. rst-class:: classref-item-separator
 
@@ -648,7 +648,7 @@ Returns the amount of units the 3D editor's translation snapping is set to.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_selected_paths**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_selected_paths>`
 
-返回一个包含了 :ref:`FileSystemDock<class_FileSystemDock>` 中当前所选文件（和目录）路径的数组。
+Returns an array containing the paths of the currently selected files (and directories) in the :ref:`FileSystemDock<class_FileSystemDock>`.
 
 .. rst-class:: classref-item-separator
 
@@ -660,7 +660,7 @@ Returns the amount of units the 3D editor's translation snapping is set to.
 
 :ref:`EditorSelection<class_EditorSelection>` **get_selection**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_selection>`
 
-返回编辑器的 :ref:`EditorSelection<class_EditorSelection>` 实例。
+Returns the editor's :ref:`EditorSelection<class_EditorSelection>` instance.
 
 .. rst-class:: classref-item-separator
 
@@ -672,7 +672,7 @@ Returns the amount of units the 3D editor's translation snapping is set to.
 
 |void| **inspect_object**\ (\ object\: :ref:`Object<class_Object>`, for_property\: :ref:`String<class_String>` = "", inspector_only\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_EditorInterface_method_inspect_object>`
 
-在编辑器的检查器面板中显示给定 ``object`` 的属性。如果 ``inspector_only`` 为 ``true`` ，插件将不会试图编辑 ``object``\ 。
+Shows the given property on the given ``object`` in the editor's Inspector dock. If ``inspector_only`` is ``true``, plugins will not attempt to edit ``object``.
 
 .. rst-class:: classref-item-separator
 
@@ -684,13 +684,13 @@ Returns the amount of units the 3D editor's translation snapping is set to.
 
 :ref:`bool<class_bool>` **is_multi_window_enabled**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_is_multi_window_enabled>`
 
-如果编辑器启用了多窗口支持，则返回 ``true``\ 。以下所有条件\ *都满足*\ 时才会启用多窗口支持：
+Returns ``true`` if multiple window support is enabled in the editor. Multiple window support is enabled if *all* of these statements are true:
 
-- :ref:`EditorSettings.interface/multi_window/enable<class_EditorSettings_property_interface/multi_window/enable>` 为 ``true``\ 。
+- :ref:`EditorSettings.interface/multi_window/enable<class_EditorSettings_property_interface/multi_window/enable>` is ``true``.
 
-- :ref:`EditorSettings.interface/editor/single_window_mode<class_EditorSettings_property_interface/editor/single_window_mode>` 为 ``false``\ 。
+- :ref:`EditorSettings.interface/editor/single_window_mode<class_EditorSettings_property_interface/editor/single_window_mode>` is ``false``.
 
-- :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>` 为 ``false``\ 。如果平台是 Web 等不支持多窗口的平台，或者使用了 ``--single-window`` :doc:`命令行参数 <../tutorials/editor/command_line_tutorial>`\ ，则强制为 ``true``\ 。
+- :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>` is ``false``. This is forced to ``true`` on platforms that don't support multiple windows such as Web, or when the ``--single-window`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>` is used.
 
 .. rst-class:: classref-item-separator
 
@@ -726,7 +726,7 @@ Returns ``true`` if the object has been marked as edited through :ref:`set_objec
 
 :ref:`bool<class_bool>` **is_playing_scene**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_is_playing_scene>`
 
-如果场景正在播放，返回 ``true``\ ，否则返回 ``false``\ 。暂停的场景将被视为正在播放。
+Returns ``true`` if a scene is currently being played, ``false`` otherwise. Paused scenes are considered as being played.
 
 .. rst-class:: classref-item-separator
 
@@ -738,7 +738,7 @@ Returns ``true`` if the object has been marked as edited through :ref:`set_objec
 
 :ref:`bool<class_bool>` **is_plugin_enabled**\ (\ plugin\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_EditorInterface_method_is_plugin_enabled>`
 
-如果启用了指定的 ``plugin``\ ，则返回 ``true``\ 。插件名称与其目录名称相同。
+Returns ``true`` if the specified ``plugin`` is enabled. The plugin name is the same as its directory name.
 
 .. rst-class:: classref-item-separator
 
@@ -750,7 +750,7 @@ Returns ``true`` if the object has been marked as edited through :ref:`set_objec
 
 :ref:`Array<class_Array>`\[:ref:`Texture2D<class_Texture2D>`\] **make_mesh_previews**\ (\ meshes\: :ref:`Array<class_Array>`\[:ref:`Mesh<class_Mesh>`\], preview_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_EditorInterface_method_make_mesh_previews>`
 
-将以给定大小渲染的网格预览返回为元素类型为 :ref:`Texture2D<class_Texture2D>` 的一个 :ref:`Array<class_Array>`\ 。
+Returns mesh previews rendered at the given size as an :ref:`Array<class_Array>` of :ref:`Texture2D<class_Texture2D>`\ s.
 
 .. rst-class:: classref-item-separator
 
@@ -762,7 +762,7 @@ Returns ``true`` if the object has been marked as edited through :ref:`set_objec
 
 |void| **mark_scene_as_unsaved**\ (\ ) :ref:`🔗<class_EditorInterface_method_mark_scene_as_unsaved>`
 
-将当前场景选项卡标记为未保存。
+Marks the current scene tab as unsaved.
 
 .. rst-class:: classref-item-separator
 
@@ -774,7 +774,7 @@ Returns ``true`` if the object has been marked as edited through :ref:`set_objec
 
 |void| **open_scene_from_path**\ (\ scene_filepath\: :ref:`String<class_String>`, set_inherited\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_EditorInterface_method_open_scene_from_path>`
 
-打开位于给定路径的场景。如果 ``set_inherited`` 为 ``true``\ ，则会创建新的继承场景。
+Opens the scene at the given path. If ``set_inherited`` is ``true``, creates a new inherited scene.
 
 .. rst-class:: classref-item-separator
 
@@ -786,7 +786,7 @@ Returns ``true`` if the object has been marked as edited through :ref:`set_objec
 
 |void| **play_current_scene**\ (\ ) :ref:`🔗<class_EditorInterface_method_play_current_scene>`
 
-播放当前活动的场景。
+Plays the currently active scene.
 
 .. rst-class:: classref-item-separator
 
@@ -798,7 +798,7 @@ Returns ``true`` if the object has been marked as edited through :ref:`set_objec
 
 |void| **play_custom_scene**\ (\ scene_filepath\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInterface_method_play_custom_scene>`
 
-播放文件路径所指定的场景。
+Plays the scene specified by its filepath.
 
 .. rst-class:: classref-item-separator
 
@@ -810,7 +810,7 @@ Returns ``true`` if the object has been marked as edited through :ref:`set_objec
 
 |void| **play_main_scene**\ (\ ) :ref:`🔗<class_EditorInterface_method_play_main_scene>`
 
-播放主场景。
+Plays the main scene.
 
 .. rst-class:: classref-item-separator
 
@@ -822,7 +822,7 @@ Returns ``true`` if the object has been marked as edited through :ref:`set_objec
 
 |void| **popup_create_dialog**\ (\ callback\: :ref:`Callable<class_Callable>`, base_type\: :ref:`StringName<class_StringName>` = "", current_type\: :ref:`String<class_String>` = "", dialog_title\: :ref:`String<class_String>` = "", type_blocklist\: :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\] = []\ ) :ref:`🔗<class_EditorInterface_method_popup_create_dialog>`
 
-**实验性：** 未来版本中可能会修改或移除该方法。
+**Experimental:** This method may be changed or removed in future versions.
 
 Pops up an editor dialog for creating an object.
 
@@ -848,9 +848,9 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
 |void| **popup_dialog**\ (\ dialog\: :ref:`Window<class_Window>`, rect\: :ref:`Rect2i<class_Rect2i>` = Rect2i(0, 0, 0, 0)\ ) :ref:`🔗<class_EditorInterface_method_popup_dialog>`
 
-使用 :ref:`Window.popup_exclusive()<class_Window_method_popup_exclusive>` 在编辑器 UI 中弹出 ``dialog``\ 。该对话框目前必须没有父级，否则该方法失败。
+Pops up the ``dialog`` in the editor UI with :ref:`Window.popup_exclusive()<class_Window_method_popup_exclusive>`. The dialog must have no current parent, otherwise the method fails.
 
-另见 :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>`\ 。
+See also :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>`.
 
 .. rst-class:: classref-item-separator
 
@@ -862,9 +862,9 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
 |void| **popup_dialog_centered**\ (\ dialog\: :ref:`Window<class_Window>`, minsize\: :ref:`Vector2i<class_Vector2i>` = Vector2i(0, 0)\ ) :ref:`🔗<class_EditorInterface_method_popup_dialog_centered>`
 
-使用 :ref:`Window.popup_exclusive_centered()<class_Window_method_popup_exclusive_centered>` 在编辑器 UI 中弹出 ``dialog``\ 。该对话框目前必须没有父级，否则该方法失败。
+Pops up the ``dialog`` in the editor UI with :ref:`Window.popup_exclusive_centered()<class_Window_method_popup_exclusive_centered>`. The dialog must have no current parent, otherwise the method fails.
 
-另见 :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>`\ 。
+See also :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>`.
 
 .. rst-class:: classref-item-separator
 
@@ -876,9 +876,9 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
 |void| **popup_dialog_centered_clamped**\ (\ dialog\: :ref:`Window<class_Window>`, minsize\: :ref:`Vector2i<class_Vector2i>` = Vector2i(0, 0), fallback_ratio\: :ref:`float<class_float>` = 0.75\ ) :ref:`🔗<class_EditorInterface_method_popup_dialog_centered_clamped>`
 
-使用 :ref:`Window.popup_exclusive_centered_clamped()<class_Window_method_popup_exclusive_centered_clamped>` 在编辑器 UI 中弹出 ``dialog``\ 。该对话框目前必须没有父级，否则该方法失败。
+Pops up the ``dialog`` in the editor UI with :ref:`Window.popup_exclusive_centered_clamped()<class_Window_method_popup_exclusive_centered_clamped>`. The dialog must have no current parent, otherwise the method fails.
 
-另见 :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>`\ 。
+See also :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>`.
 
 .. rst-class:: classref-item-separator
 
@@ -890,9 +890,9 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
 |void| **popup_dialog_centered_ratio**\ (\ dialog\: :ref:`Window<class_Window>`, ratio\: :ref:`float<class_float>` = 0.8\ ) :ref:`🔗<class_EditorInterface_method_popup_dialog_centered_ratio>`
 
-使用 :ref:`Window.popup_exclusive_centered_ratio()<class_Window_method_popup_exclusive_centered_ratio>` 在编辑器 UI 中弹出 ``dialog``\ 。该对话框目前必须没有父级，否则该方法失败。
+Pops up the ``dialog`` in the editor UI with :ref:`Window.popup_exclusive_centered_ratio()<class_Window_method_popup_exclusive_centered_ratio>`. The dialog must have no current parent, otherwise the method fails.
 
-另见 :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>`\ 。
+See also :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>`.
 
 .. rst-class:: classref-item-separator
 
@@ -904,7 +904,7 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
 |void| **popup_method_selector**\ (\ object\: :ref:`Object<class_Object>`, callback\: :ref:`Callable<class_Callable>`, current_value\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_EditorInterface_method_popup_method_selector>`
 
-弹出编辑器对话框，用于选择 ``object`` 的方法。\ ``callback`` 回调必须接受单个 :ref:`String<class_String>` 类型的参数，其中包含的是所选方法的名称，取消对话框时则为空。如果提供了 ``current_value`` 且对应方法存在，则会在方法列表中自动选中该方法。
+Pops up an editor dialog for selecting a method from ``object``. The ``callback`` must take a single argument of type :ref:`String<class_String>` which will contain the name of the selected method or be empty if the dialog is canceled. If ``current_value`` is provided, the method will be selected automatically in the method list, if it exists.
 
 .. rst-class:: classref-item-separator
 
@@ -916,9 +916,9 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
 |void| **popup_node_selector**\ (\ callback\: :ref:`Callable<class_Callable>`, valid_types\: :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\] = [], current_value\: :ref:`Node<class_Node>` = null\ ) :ref:`🔗<class_EditorInterface_method_popup_node_selector>`
 
-弹出编辑器对话框，用于选择所编辑场景中的 :ref:`Node<class_Node>`\ 。\ ``callback`` 必须接受单个类型为 :ref:`NodePath<class_NodePath>` 的参数。调用回调时会传入所选 :ref:`NodePath<class_NodePath>`\ ，取消对话框时则为空路径 ``^""``\ 。如果提供了 ``valid_types``\ ，则对话框只会显示与所列 Node 类型匹配的 Node。
+Pops up an editor dialog for selecting a :ref:`Node<class_Node>` from the edited scene. The ``callback`` must take a single argument of type :ref:`NodePath<class_NodePath>`. It is called on the selected :ref:`NodePath<class_NodePath>` or the empty path ``^""`` if the dialog is canceled. If ``valid_types`` is provided, the dialog will only show Nodes that match one of the listed Node types. If ``current_value`` is provided, the Node will be automatically selected in the tree, if it exists.
 
-\ **示例：**\ 节点首次加入场景树时显示节点选择对话框：
+\ **Example:** Display the node selection dialog as soon as this node is added to the tree for the first time:
 
 ::
 
@@ -928,9 +928,9 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
     func _on_node_selected(node_path):
         if node_path.is_empty():
-            print("节点选择已取消")
+            print("node selection canceled")
         else:
-            print("选中 ", node_path)
+            print("selected ", node_path)
 
 .. rst-class:: classref-item-separator
 
@@ -942,7 +942,7 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
 |void| **popup_property_selector**\ (\ object\: :ref:`Object<class_Object>`, callback\: :ref:`Callable<class_Callable>`, type_filter\: :ref:`PackedInt32Array<class_PackedInt32Array>` = PackedInt32Array(), current_value\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_EditorInterface_method_popup_property_selector>`
 
-弹出编辑器对话框，用于选择 ``object`` 的属性。\ ``callback`` 必须接受单个类型为 :ref:`NodePath<class_NodePath>` 的参数。调用回调时会传入所选属性路径（见 :ref:`NodePath.get_as_property_path()<class_NodePath_method_get_as_property_path>`\ ），取消对话框时则为空路径 ``^""``\ 。如果提供了 ``type_filter``\ ，则对话框只会显示与所列 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` 值匹配的属性。
+Pops up an editor dialog for selecting properties from ``object``. The ``callback`` must take a single argument of type :ref:`NodePath<class_NodePath>`. It is called on the selected property path (see :ref:`NodePath.get_as_property_path()<class_NodePath_method_get_as_property_path>`) or the empty path ``^""`` if the dialog is canceled. If ``type_filter`` is provided, the dialog will only show properties that match one of the listed :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` values. If ``current_value`` is provided, the property will be selected automatically in the property list, if it exists.
 
 ::
 
@@ -952,9 +952,9 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
     func _on_property_selected(property_path):
         if property_path.is_empty():
-            print("属性选择已取消")
+            print("property selection canceled")
         else:
-            print("选中 ", property_path)
+            print("selected ", property_path)
 
 .. rst-class:: classref-item-separator
 
@@ -966,7 +966,7 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
 |void| **popup_quick_open**\ (\ callback\: :ref:`Callable<class_Callable>`, base_types\: :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\] = []\ ) :ref:`🔗<class_EditorInterface_method_popup_quick_open>`
 
-弹出编辑器对话框，用于快速选择资源文件。\ ``callback`` 回调必须接受单个 :ref:`String<class_String>` 类型的参数，其中包含的是所选资源的路径，取消对话框时则为空。如果提供了 ``base_types``\ ，则对话框中只会显示与这些类型相匹配的资源。仅支持派生自 :ref:`Resource<class_Resource>` 的类型。
+Pops up an editor dialog for quick selecting a resource file. The ``callback`` must take a single argument of type :ref:`String<class_String>` which will contain the path of the selected resource or be empty if the dialog is canceled. If ``base_types`` is provided, the dialog will only show resources that match these types. Only types deriving from :ref:`Resource<class_Resource>` are supported.
 
 .. rst-class:: classref-item-separator
 
@@ -978,7 +978,7 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
 |void| **reload_scene_from_path**\ (\ scene_filepath\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInterface_method_reload_scene_from_path>`
 
-重新加载给定路径的场景。
+Reloads the scene at the given path.
 
 .. rst-class:: classref-item-separator
 
@@ -990,7 +990,7 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
 |void| **restart_editor**\ (\ save\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_EditorInterface_method_restart_editor>`
 
-重启编辑器。编辑器会关闭，然后再打开相同项目。如果 ``save`` 为 ``true``\ ，则重启前会保存项目。
+Restarts the editor. This closes the editor and then opens the same project. If ``save`` is ``true``, the project will be saved before restarting.
 
 .. rst-class:: classref-item-separator
 
@@ -1002,7 +1002,7 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
 |void| **save_all_scenes**\ (\ ) :ref:`🔗<class_EditorInterface_method_save_all_scenes>`
 
-保存编辑器中打开的所有场景。
+Saves all opened scenes in the editor.
 
 .. rst-class:: classref-item-separator
 
@@ -1014,7 +1014,7 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_scene**\ (\ ) :ref:`🔗<class_EditorInterface_method_save_scene>`
 
-保存当前活动场景。返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` 或 :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`\ 。
+Saves the currently active scene. Returns either :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` or :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1026,7 +1026,7 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
 |void| **save_scene_as**\ (\ path\: :ref:`String<class_String>`, with_preview\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_EditorInterface_method_save_scene_as>`
 
-将当前活动的场景保存为位于 ``path`` 的文件。
+Saves the currently active scene as a file at ``path``.
 
 .. rst-class:: classref-item-separator
 
@@ -1038,7 +1038,7 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
 |void| **select_file**\ (\ file\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInterface_method_select_file>`
 
-在文件系统面板中选中文件，路径由 ``file`` 提供。
+Selects the file, with the path provided by ``file``, in the FileSystem dock.
 
 .. rst-class:: classref-item-separator
 
@@ -1050,11 +1050,11 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
 |void| **set_current_feature_profile**\ (\ profile_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInterface_method_set_current_feature_profile>`
 
-使用给定的 ``profile_name`` 选择并激活指定的功能配置文件。将 ``profile_name`` 设置为空字符串以重置为默认功能配置文件。
+Selects and activates the specified feature profile with the given ``profile_name``. Set ``profile_name`` to an empty string to reset to the default feature profile.
 
-可以使用 :ref:`EditorFeatureProfile<class_EditorFeatureProfile>` 类以编程方式创建功能配置文件。
+A feature profile can be created programmatically using the :ref:`EditorFeatureProfile<class_EditorFeatureProfile>` class.
 
-\ **注意：**\ 激活的功能配置文件必须位于 ``feature_profiles`` 目录中，且该文件的扩展名为 ``.profile``\ 。如果找不到配置文件，则会发生错误。可以使用 :ref:`EditorPaths.get_config_dir()<class_EditorPaths_method_get_config_dir>` 找到编辑器配置文件夹。
+\ **Note:** The feature profile that gets activated must be located in the ``feature_profiles`` directory, as a file with the ``.profile`` extension. If a profile could not be found, an error occurs. The editor configuration folder can be found by using :ref:`EditorPaths.get_config_dir()<class_EditorPaths_method_get_config_dir>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1066,7 +1066,7 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
 |void| **set_main_screen_editor**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInterface_method_set_main_screen_editor>`
 
-将编辑器的当前主屏幕设置为 ``name`` 中指定的屏幕。\ ``name`` 必须与相关选项卡的文本完全匹配（默认选项卡为 ``2D``\ 、\ ``3D``\ 、\ ``Script``\ 、\ ``Game``\ 、\ ``AssetLib``\ ）。
+Sets the editor's current main screen to the one specified in ``name``. ``name`` must match the title of the tab in question exactly (e.g. ``2D``, ``3D``, ``Script``, ``Game``, or ``AssetLib`` for default tabs).
 
 .. rst-class:: classref-item-separator
 
@@ -1094,7 +1094,7 @@ If ``edited`` is ``true``, the object is marked as edited.
 
 |void| **set_plugin_enabled**\ (\ plugin\: :ref:`String<class_String>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorInterface_method_set_plugin_enabled>`
 
-设置插件的启用状态。插件名称与其目录名称相同。
+Sets the enabled status of a plugin. The plugin name is the same as its directory name.
 
 .. rst-class:: classref-item-separator
 
@@ -1106,14 +1106,14 @@ If ``edited`` is ``true``, the object is marked as edited.
 
 |void| **stop_playing_scene**\ (\ ) :ref:`🔗<class_EditorInterface_method_stop_playing_scene>`
 
-停止当前正在播放的场景。
+Stops the scene that is currently playing.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

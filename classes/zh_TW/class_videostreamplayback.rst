@@ -5,21 +5,21 @@
 VideoStreamPlayback
 ===================
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-:ref:`VideoStream<class_VideoStream>` 使用的內部類，用於管理其在 :ref:`VideoStreamPlayer<class_VideoStreamPlayer>` 中的播放狀態。
+Internal class used by :ref:`VideoStream<class_VideoStream>` to manage playback state when played from a :ref:`VideoStreamPlayer<class_VideoStreamPlayer>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-該類旨在被具有 :ref:`VideoStream<class_VideoStream>` 自訂實作的影片解碼器擴充所覆蓋。
+This class is intended to be overridden by video decoder extensions with custom implementations of :ref:`VideoStream<class_VideoStream>`.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -60,8 +60,8 @@ VideoStreamPlayback
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_VideoStreamPlayback_private_method__get_channels:
 
@@ -69,7 +69,7 @@ VideoStreamPlayback
 
 :ref:`int<class_int>` **_get_channels**\ (\ ) |virtual| |const| :ref:`🔗<class_VideoStreamPlayback_private_method__get_channels>`
 
-返回音訊通道的數量。
+Returns the number of audio channels.
 
 .. rst-class:: classref-item-separator
 
@@ -81,7 +81,7 @@ VideoStreamPlayback
 
 :ref:`float<class_float>` **_get_length**\ (\ ) |virtual| |const| :ref:`🔗<class_VideoStreamPlayback_private_method__get_length>`
 
-影片時長已知時返回影片時長，未知時返回 0。
+Returns the video duration in seconds, if known, or 0 if unknown.
 
 .. rst-class:: classref-item-separator
 
@@ -93,7 +93,7 @@ VideoStreamPlayback
 
 :ref:`int<class_int>` **_get_mix_rate**\ (\ ) |virtual| |const| :ref:`🔗<class_VideoStreamPlayback_private_method__get_mix_rate>`
 
-返回用於混音的音訊取樣速率。
+Returns the audio sample rate used for mixing.
 
 .. rst-class:: classref-item-separator
 
@@ -105,7 +105,7 @@ VideoStreamPlayback
 
 :ref:`float<class_float>` **_get_playback_position**\ (\ ) |virtual| |const| :ref:`🔗<class_VideoStreamPlayback_private_method__get_playback_position>`
 
-返回目前播放時間戳記。獲取 :ref:`VideoStreamPlayer.stream_position<class_VideoStreamPlayer_property_stream_position>` 時會被調用。
+Return the current playback timestamp. Called in response to the :ref:`VideoStreamPlayer.stream_position<class_VideoStreamPlayer_property_stream_position>` getter.
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ VideoStreamPlayback
 
 :ref:`Texture2D<class_Texture2D>` **_get_texture**\ (\ ) |virtual| |const| :ref:`🔗<class_VideoStreamPlayback_private_method__get_texture>`
 
-分配一個 :ref:`Texture2D<class_Texture2D>`\ ，解碼得到的影片影格會在其中繪製。
+Allocates a :ref:`Texture2D<class_Texture2D>` in which decoded video frames will be drawn.
 
 .. rst-class:: classref-item-separator
 
@@ -129,7 +129,7 @@ VideoStreamPlayback
 
 :ref:`bool<class_bool>` **_is_paused**\ (\ ) |virtual| |const| :ref:`🔗<class_VideoStreamPlayback_private_method__is_paused>`
 
-返回暫停狀態，由 :ref:`_set_paused()<class_VideoStreamPlayback_private_method__set_paused>` 設定。
+Returns the paused status, as set by :ref:`_set_paused()<class_VideoStreamPlayback_private_method__set_paused>`.
 
 .. rst-class:: classref-item-separator
 
@@ -141,7 +141,7 @@ VideoStreamPlayback
 
 :ref:`bool<class_bool>` **_is_playing**\ (\ ) |virtual| |const| :ref:`🔗<class_VideoStreamPlayback_private_method__is_playing>`
 
-返回由呼叫 :ref:`_play()<class_VideoStreamPlayback_private_method__play>` 和 :ref:`_stop()<class_VideoStreamPlayback_private_method__stop>` 決定的播放狀態。
+Returns the playback state, as determined by calls to :ref:`_play()<class_VideoStreamPlayback_private_method__play>` and :ref:`_stop()<class_VideoStreamPlayback_private_method__stop>`.
 
 .. rst-class:: classref-item-separator
 
@@ -165,7 +165,7 @@ Called in response to :ref:`VideoStreamPlayer.autoplay<class_VideoStreamPlayer_p
 
 |void| **_seek**\ (\ time\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_VideoStreamPlayback_private_method__seek>`
 
-檢索至第 ``time`` 秒。設定 :ref:`VideoStreamPlayer.stream_position<class_VideoStreamPlayer_property_stream_position>` 時會被呼叫。
+Seeks to ``time`` seconds. Called in response to the :ref:`VideoStreamPlayer.stream_position<class_VideoStreamPlayer_property_stream_position>` setter.
 
 .. rst-class:: classref-item-separator
 
@@ -177,7 +177,7 @@ Called in response to :ref:`VideoStreamPlayer.autoplay<class_VideoStreamPlayer_p
 
 |void| **_set_audio_track**\ (\ idx\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_VideoStreamPlayback_private_method__set_audio_track>`
 
-選擇 ``idx`` 音軌。播放開始時，或者設定 :ref:`VideoStreamPlayer.audio_track<class_VideoStreamPlayer_property_audio_track>` 時會被呼叫。
+Select the audio track ``idx``. Called when playback starts, and in response to the :ref:`VideoStreamPlayer.audio_track<class_VideoStreamPlayer_property_audio_track>` setter.
 
 .. rst-class:: classref-item-separator
 
@@ -189,7 +189,7 @@ Called in response to :ref:`VideoStreamPlayer.autoplay<class_VideoStreamPlayer_p
 
 |void| **_set_paused**\ (\ paused\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_VideoStreamPlayback_private_method__set_paused>`
 
-設定影片播放的暫停狀態。\ :ref:`_is_paused()<class_VideoStreamPlayback_private_method__is_paused>` 必須返回 ``paused``\ 。設定 :ref:`VideoStreamPlayer.paused<class_VideoStreamPlayer_property_paused>` 時會被呼叫。
+Set the paused status of video playback. :ref:`_is_paused()<class_VideoStreamPlayback_private_method__is_paused>` must return ``paused``. Called in response to the :ref:`VideoStreamPlayer.paused<class_VideoStreamPlayer_property_paused>` setter.
 
 .. rst-class:: classref-item-separator
 
@@ -225,14 +225,14 @@ Ticks video playback for ``delta`` seconds. Called every frame as long as both :
 
 :ref:`int<class_int>` **mix_audio**\ (\ num_frames\: :ref:`int<class_int>`, buffer\: :ref:`PackedFloat32Array<class_PackedFloat32Array>` = PackedFloat32Array(), offset\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_VideoStreamPlayback_method_mix_audio>`
 
-從陣列中的索引 ``offset`` 開始，從 ``buffer`` 算繪 ``num_frames`` 個音訊影格（每影格 :ref:`_get_channels()<class_VideoStreamPlayback_private_method__get_channels>` 個浮點數）。返回算繪的音訊影格數，如果出錯則返回 -1。
+Render ``num_frames`` audio frames (of :ref:`_get_channels()<class_VideoStreamPlayback_private_method__get_channels>` floats each) from ``buffer``, starting from index ``offset`` in the array. Returns the number of audio frames rendered, or -1 on error.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

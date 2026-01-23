@@ -5,21 +5,21 @@
 VisualShaderNodeFloatParameter
 ==============================
 
-**继承：** :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-标量浮点数参数，在可视化着色器图中使用。
+A scalar float parameter to be used within the visual shader graph.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-翻译为着色器语言中的 ``uniform float``\ 。
+Translated to ``uniform float`` in the shader language.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ VisualShaderNodeFloatParameter
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_VisualShaderNodeFloatParameter_Hint:
 
@@ -59,7 +59,7 @@ enum **Hint**: :ref:`🔗<enum_VisualShaderNodeFloatParameter_Hint>`
 
 :ref:`Hint<enum_VisualShaderNodeFloatParameter_Hint>` **HINT_NONE** = ``0``
 
-不使用提示。
+No hint used.
 
 .. _class_VisualShaderNodeFloatParameter_constant_HINT_RANGE:
 
@@ -67,7 +67,7 @@ enum **Hint**: :ref:`🔗<enum_VisualShaderNodeFloatParameter_Hint>`
 
 :ref:`Hint<enum_VisualShaderNodeFloatParameter_Hint>` **HINT_RANGE** = ``1``
 
-标量值的范围提示，会将可能的输入限制在 :ref:`min<class_VisualShaderNodeFloatParameter_property_min>` 和 :ref:`max<class_VisualShaderNodeFloatParameter_property_max>` 之间。会被翻译为着色器代码中的 ``hint_range(min, max)``\ 。
+A range hint for scalar value, which limits possible input values between :ref:`min<class_VisualShaderNodeFloatParameter_property_min>` and :ref:`max<class_VisualShaderNodeFloatParameter_property_max>`. Translated to ``hint_range(min, max)`` in shader code.
 
 .. _class_VisualShaderNodeFloatParameter_constant_HINT_RANGE_STEP:
 
@@ -75,7 +75,7 @@ enum **Hint**: :ref:`🔗<enum_VisualShaderNodeFloatParameter_Hint>`
 
 :ref:`Hint<enum_VisualShaderNodeFloatParameter_Hint>` **HINT_RANGE_STEP** = ``2``
 
-标量值的范围提示，带步长，会将可能的输入限制在 :ref:`min<class_VisualShaderNodeFloatParameter_property_min>` 和 :ref:`max<class_VisualShaderNodeFloatParameter_property_max>` 之间，步长（增量）为 :ref:`step<class_VisualShaderNodeFloatParameter_property_step>`\ 。会被翻译为着色器代码中的 ``hint_range(min, max, step)``\ 。
+A range hint for scalar value with step, which limits possible input values between :ref:`min<class_VisualShaderNodeFloatParameter_property_min>` and :ref:`max<class_VisualShaderNodeFloatParameter_property_max>`, with a step (increment) of :ref:`step<class_VisualShaderNodeFloatParameter_property_step>`). Translated to ``hint_range(min, max, step)`` in shader code.
 
 .. _class_VisualShaderNodeFloatParameter_constant_HINT_MAX:
 
@@ -83,7 +83,7 @@ enum **Hint**: :ref:`🔗<enum_VisualShaderNodeFloatParameter_Hint>`
 
 :ref:`Hint<enum_VisualShaderNodeFloatParameter_Hint>` **HINT_MAX** = ``3``
 
-代表 :ref:`Hint<enum_VisualShaderNodeFloatParameter_Hint>` 枚举的大小。
+Represents the size of the :ref:`Hint<enum_VisualShaderNodeFloatParameter_Hint>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -91,8 +91,8 @@ enum **Hint**: :ref:`🔗<enum_VisualShaderNodeFloatParameter_Hint>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_VisualShaderNodeFloatParameter_property_default_value:
 
@@ -105,7 +105,7 @@ enum **Hint**: :ref:`🔗<enum_VisualShaderNodeFloatParameter_Hint>`
 - |void| **set_default_value**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_default_value**\ (\ )
 
-该着色器内部分配的默认值。
+A default value to be assigned within the shader.
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +122,7 @@ enum **Hint**: :ref:`🔗<enum_VisualShaderNodeFloatParameter_Hint>`
 - |void| **set_default_value_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_default_value_enabled**\ (\ )
 
-启用 :ref:`default_value<class_VisualShaderNodeFloatParameter_property_default_value>`\ 。
+Enables usage of the :ref:`default_value<class_VisualShaderNodeFloatParameter_property_default_value>`.
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ enum **Hint**: :ref:`🔗<enum_VisualShaderNodeFloatParameter_Hint>`
 - |void| **set_hint**\ (\ value\: :ref:`Hint<enum_VisualShaderNodeFloatParameter_Hint>`\ )
 - :ref:`Hint<enum_VisualShaderNodeFloatParameter_Hint>` **get_hint**\ (\ )
 
-对 uniform 应用的提示，控制通过检查器所能设置的值。
+A hint applied to the uniform, which controls the values it can take when set through the Inspector.
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ enum **Hint**: :ref:`🔗<enum_VisualShaderNodeFloatParameter_Hint>`
 - |void| **set_max**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max**\ (\ )
 
-范围提示的最小值。会在 :ref:`hint<class_VisualShaderNodeFloatParameter_property_hint>` 为 :ref:`HINT_RANGE<class_VisualShaderNodeFloatParameter_constant_HINT_RANGE>` 或 :ref:`HINT_RANGE_STEP<class_VisualShaderNodeFloatParameter_constant_HINT_RANGE_STEP>` 时使用。
+Minimum value for range hints. Used if :ref:`hint<class_VisualShaderNodeFloatParameter_property_hint>` is set to :ref:`HINT_RANGE<class_VisualShaderNodeFloatParameter_constant_HINT_RANGE>` or :ref:`HINT_RANGE_STEP<class_VisualShaderNodeFloatParameter_constant_HINT_RANGE_STEP>`.
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +173,7 @@ enum **Hint**: :ref:`🔗<enum_VisualShaderNodeFloatParameter_Hint>`
 - |void| **set_min**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_min**\ (\ )
 
-范围提示的最大值。会在 :ref:`hint<class_VisualShaderNodeFloatParameter_property_hint>` 为 :ref:`HINT_RANGE<class_VisualShaderNodeFloatParameter_constant_HINT_RANGE>` 或 :ref:`HINT_RANGE_STEP<class_VisualShaderNodeFloatParameter_constant_HINT_RANGE_STEP>` 时使用。
+Maximum value for range hints. Used if :ref:`hint<class_VisualShaderNodeFloatParameter_property_hint>` is set to :ref:`HINT_RANGE<class_VisualShaderNodeFloatParameter_constant_HINT_RANGE>` or :ref:`HINT_RANGE_STEP<class_VisualShaderNodeFloatParameter_constant_HINT_RANGE_STEP>`.
 
 .. rst-class:: classref-item-separator
 
@@ -190,14 +190,14 @@ enum **Hint**: :ref:`🔗<enum_VisualShaderNodeFloatParameter_Hint>`
 - |void| **set_step**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_step**\ (\ )
 
-带步长（增量）的范围提示的步长值。会在 :ref:`hint<class_VisualShaderNodeFloatParameter_property_hint>` 为 :ref:`HINT_RANGE_STEP<class_VisualShaderNodeFloatParameter_constant_HINT_RANGE_STEP>` 时使用。
+Step (increment) value for the range hint with step. Used if :ref:`hint<class_VisualShaderNodeFloatParameter_property_hint>` is set to :ref:`HINT_RANGE_STEP<class_VisualShaderNodeFloatParameter_constant_HINT_RANGE_STEP>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

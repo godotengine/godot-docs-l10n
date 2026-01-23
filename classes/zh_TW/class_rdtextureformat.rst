@@ -5,21 +5,21 @@
 RDTextureFormat
 ===============
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-紋理格式（由 :ref:`RenderingDevice<class_RenderingDevice>` 使用）。
+Texture format (used by :ref:`RenderingDevice<class_RenderingDevice>`).
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-這個物件由 :ref:`RenderingDevice<class_RenderingDevice>` 使用。
+This object is used by :ref:`RenderingDevice<class_RenderingDevice>`.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ RDTextureFormat
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -68,8 +68,8 @@ RDTextureFormat
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_RDTextureFormat_property_array_layers:
 
@@ -82,7 +82,7 @@ RDTextureFormat
 - |void| **set_array_layers**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_array_layers**\ (\ )
 
-紋理的層數。僅適用於 2D 紋理陣列。
+The number of layers in the texture. Only relevant for 2D texture arrays.
 
 .. rst-class:: classref-item-separator
 
@@ -99,7 +99,7 @@ RDTextureFormat
 - |void| **set_depth**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_depth**\ (\ )
 
-紋理的深度（單位為圖元）。2D 紋理始終為 ``1``\ 。
+The texture's depth (in pixels). This is always ``1`` for 2D textures.
 
 .. rst-class:: classref-item-separator
 
@@ -116,7 +116,7 @@ RDTextureFormat
 - |void| **set_format**\ (\ value\: :ref:`DataFormat<enum_RenderingDevice_DataFormat>`\ )
 - :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **get_format**\ (\ )
 
-紋理的圖元資料格式。
+The texture's pixel data format.
 
 .. rst-class:: classref-item-separator
 
@@ -133,7 +133,7 @@ RDTextureFormat
 - |void| **set_height**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_height**\ (\ )
 
-紋理的高度（單位為圖元）。
+The texture's height (in pixels).
 
 .. rst-class:: classref-item-separator
 
@@ -186,7 +186,7 @@ The texture will be used as the destination of a resolve operation.
 - |void| **set_mipmaps**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_mipmaps**\ (\ )
 
-紋理中可用的 mipmap 數。
+The number of mipmaps available in the texture.
 
 .. rst-class:: classref-item-separator
 
@@ -203,7 +203,7 @@ The texture will be used as the destination of a resolve operation.
 - |void| **set_samples**\ (\ value\: :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>`\ )
 - :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` **get_samples**\ (\ )
 
-對紋理進行取樣時所使用的樣本數。
+The number of samples used when sampling the texture.
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ The texture will be used as the destination of a resolve operation.
 - |void| **set_texture_type**\ (\ value\: :ref:`TextureType<enum_RenderingDevice_TextureType>`\ )
 - :ref:`TextureType<enum_RenderingDevice_TextureType>` **get_texture_type**\ (\ )
 
-紋理型別。
+The texture type.
 
 .. rst-class:: classref-item-separator
 
@@ -237,7 +237,7 @@ The texture will be used as the destination of a resolve operation.
 - |void| **set_usage_bits**\ (\ value\: |bitfield|\[:ref:`TextureUsageBits<enum_RenderingDevice_TextureUsageBits>`\]\ )
 - |bitfield|\[:ref:`TextureUsageBits<enum_RenderingDevice_TextureUsageBits>`\] **get_usage_bits**\ (\ )
 
-紋理的用途位，決定使用該紋理時能做什麼。
+The texture's usage bits, which determine what can be done using the texture.
 
 .. rst-class:: classref-item-separator
 
@@ -254,7 +254,7 @@ The texture will be used as the destination of a resolve operation.
 - |void| **set_width**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_width**\ (\ )
 
-紋理的寬度（單位為圖元）。
+The texture's width (in pixels).
 
 .. rst-class:: classref-section-separator
 
@@ -262,8 +262,8 @@ The texture will be used as the destination of a resolve operation.
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_RDTextureFormat_method_add_shareable_format:
 
@@ -285,12 +285,12 @@ Adds ``format`` as a valid format for the corresponding :ref:`RDTextureView<clas
 
 Removes ``format`` from the list of valid formats that the corresponding :ref:`RDTextureView<class_RDTextureView>`'s :ref:`RDTextureView.format_override<class_RDTextureView_property_format_override>` property can be set to.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

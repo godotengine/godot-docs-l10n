@@ -5,28 +5,28 @@
 AnimatedSprite3D
 ================
 
-**繼承：** :ref:`SpriteBase3D<class_SpriteBase3D>` **<** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`SpriteBase3D<class_SpriteBase3D>` **<** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-3D 世界中的 2D 精靈節點，可使用多張 2D 紋理做動畫。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-**AnimatedSprite3D** 與 :ref:`Sprite3D<class_Sprite3D>` 節點類似，但會使用多張紋理作為動畫 :ref:`sprite_frames<class_AnimatedSprite3D_property_sprite_frames>`\ 。動畫使用 :ref:`SpriteFrames<class_SpriteFrames>` 資源建立，可匯入影像檔（或資料夾）提供影格，並可在編輯器下方的 SpriteFrames 面板中設定。
+2D sprite node in 3D world, that can use multiple 2D textures for animation.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`2D 精靈動畫（亦適用於 3D） <../tutorials/2d/2d_sprite_animation>`
+**AnimatedSprite3D** is similar to the :ref:`Sprite3D<class_Sprite3D>` node, except it carries multiple textures as animation :ref:`sprite_frames<class_AnimatedSprite3D_property_sprite_frames>`. Animations are created using a :ref:`SpriteFrames<class_SpriteFrames>` resource, which allows you to import image files (or a folder containing said files) to provide the animation frames for the sprite. The :ref:`SpriteFrames<class_SpriteFrames>` resource can be configured in the editor via the SpriteFrames bottom panel.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`2D Sprite animation (also applies to 3D) <../tutorials/2d/2d_sprite_animation>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -47,8 +47,8 @@ AnimatedSprite3D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -75,8 +75,8 @@ AnimatedSprite3D
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_AnimatedSprite3D_signal_animation_changed:
 
@@ -84,7 +84,7 @@ AnimatedSprite3D
 
 **animation_changed**\ (\ ) :ref:`🔗<class_AnimatedSprite3D_signal_animation_changed>`
 
-當 :ref:`animation<class_AnimatedSprite3D_property_animation>` 發生變更時觸發。
+Emitted when :ref:`animation<class_AnimatedSprite3D_property_animation>` changes.
 
 .. rst-class:: classref-item-separator
 
@@ -96,9 +96,9 @@ AnimatedSprite3D
 
 **animation_finished**\ (\ ) :ref:`🔗<class_AnimatedSprite3D_signal_animation_finished>`
 
-當動畫播放至結束（倒放則為起點）時觸發，並會暫停播放。
+Emitted when the animation reaches the end, or the start if it is played in reverse. When the animation finishes, it pauses the playback.
 
-\ **注意：** 若動畫為循環播放則不會發出此訊號。
+\ **Note:** This signal is not emitted if an animation is looping.
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ AnimatedSprite3D
 
 **animation_looped**\ (\ ) :ref:`🔗<class_AnimatedSprite3D_signal_animation_looped>`
 
-動畫進入下一次循環時觸發。
+Emitted when the animation loops.
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +122,7 @@ AnimatedSprite3D
 
 **frame_changed**\ (\ ) :ref:`🔗<class_AnimatedSprite3D_signal_frame_changed>`
 
-當 :ref:`frame<class_AnimatedSprite3D_property_frame>` 改變時觸發。
+Emitted when :ref:`frame<class_AnimatedSprite3D_property_frame>` changes.
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +134,7 @@ AnimatedSprite3D
 
 **sprite_frames_changed**\ (\ ) :ref:`🔗<class_AnimatedSprite3D_signal_sprite_frames_changed>`
 
-當 :ref:`sprite_frames<class_AnimatedSprite3D_property_sprite_frames>` 變更時觸發。
+Emitted when :ref:`sprite_frames<class_AnimatedSprite3D_property_sprite_frames>` changes.
 
 .. rst-class:: classref-section-separator
 
@@ -142,8 +142,8 @@ AnimatedSprite3D
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_AnimatedSprite3D_property_animation:
 
@@ -156,7 +156,7 @@ AnimatedSprite3D
 - |void| **set_animation**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_animation**\ (\ )
 
-當前動畫來自 :ref:`sprite_frames<class_AnimatedSprite3D_property_sprite_frames>` 資源。若此值變更，\ :ref:`frame<class_AnimatedSprite3D_property_frame>` 與 :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>` 均會被重設。
+The current animation from the :ref:`sprite_frames<class_AnimatedSprite3D_property_sprite_frames>` resource. If this value is changed, the :ref:`frame<class_AnimatedSprite3D_property_frame>` counter and the :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>` are reset.
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +173,7 @@ AnimatedSprite3D
 - |void| **set_autoplay**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_autoplay**\ (\ )
 
-場景載入時要播放的動畫鍵名。
+The key of the animation to play when the scene loads.
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ AnimatedSprite3D
 - |void| **set_frame**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_frame**\ (\ )
 
-顯示的動畫影格索引。設定此屬性會同時重設 :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>`\ ；若不希望如此，請改用 :ref:`set_frame_and_progress()<class_AnimatedSprite3D_method_set_frame_and_progress>`\ 。
+The displayed animation frame's index. Setting this property also resets :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>`. If this is not desired, use :ref:`set_frame_and_progress()<class_AnimatedSprite3D_method_set_frame_and_progress>`.
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ AnimatedSprite3D
 - |void| **set_frame_progress**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_frame_progress**\ (\ )
 
-從當前影格過渡到下一影格的進度值，範圍為 ``0.0``\ –\ ``1.0``\ 。若動畫倒放，則值會從 ``1.0`` 遞減至 ``0.0``\ 。
+The progress value between ``0.0`` and ``1.0`` until the current frame transitions to the next frame. If the animation is playing backwards, the value transitions from ``1.0`` to ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -224,9 +224,9 @@ AnimatedSprite3D
 - |void| **set_speed_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_speed_scale**\ (\ )
 
-速度倍率。值為 ``1`` 時以正常速度播放；\ ``0.5`` 為半速；\ ``2`` 為兩倍速。
+The speed scaling ratio. For example, if this value is ``1``, then the animation plays at normal speed. If it's ``0.5``, then it plays at half speed. If it's ``2``, then it plays at double speed.
 
-若為負值則反向播放；若為 ``0`` 則動畫停止推進。
+If set to a negative value, the animation is played in reverse. If set to ``0``, the animation will not advance.
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ AnimatedSprite3D
 - |void| **set_sprite_frames**\ (\ value\: :ref:`SpriteFrames<class_SpriteFrames>`\ )
 - :ref:`SpriteFrames<class_SpriteFrames>` **get_sprite_frames**\ (\ )
 
-包含動畫的 :ref:`SpriteFrames<class_SpriteFrames>` 資源，並可進行載入、編輯、清除、唯一化與儲存等操作。
+The :ref:`SpriteFrames<class_SpriteFrames>` resource containing the animation(s). Allows you the option to load, edit, clear, make unique and save the states of the :ref:`SpriteFrames<class_SpriteFrames>` resource.
 
 .. rst-class:: classref-section-separator
 
@@ -251,8 +251,8 @@ AnimatedSprite3D
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_AnimatedSprite3D_method_get_playing_speed:
 
@@ -260,9 +260,9 @@ AnimatedSprite3D
 
 :ref:`float<class_float>` **get_playing_speed**\ (\ ) |const| :ref:`🔗<class_AnimatedSprite3D_method_get_playing_speed>`
 
-回傳目前動畫的實際播放速度，若未播放則為 ``0``\ 。此速度為 :ref:`speed_scale<class_AnimatedSprite3D_property_speed_scale>` 與呼叫 :ref:`play()<class_AnimatedSprite3D_method_play>` 時指定的 ``custom_speed`` 相乘所得。
+Returns the actual playing speed of current animation or ``0`` if not playing. This speed is the :ref:`speed_scale<class_AnimatedSprite3D_property_speed_scale>` property multiplied by ``custom_speed`` argument specified when calling the :ref:`play()<class_AnimatedSprite3D_method_play>` method.
 
-若動畫以倒放方式播放，則回傳負值。
+Returns a negative value if the current animation is playing backwards.
 
 .. rst-class:: classref-item-separator
 
@@ -274,7 +274,7 @@ AnimatedSprite3D
 
 :ref:`bool<class_bool>` **is_playing**\ (\ ) |const| :ref:`🔗<class_AnimatedSprite3D_method_is_playing>`
 
-若動畫正在播放（即使 :ref:`speed_scale<class_AnimatedSprite3D_property_speed_scale>` 或 ``custom_speed`` 為 ``0``\ ），則回傳 ``true``\ 。
+Returns ``true`` if an animation is currently playing (even if :ref:`speed_scale<class_AnimatedSprite3D_property_speed_scale>` and/or ``custom_speed`` are ``0``).
 
 .. rst-class:: classref-item-separator
 
@@ -286,9 +286,9 @@ AnimatedSprite3D
 
 |void| **pause**\ (\ ) :ref:`🔗<class_AnimatedSprite3D_method_pause>`
 
-暫停目前正在播放的動畫。系統會保留 :ref:`frame<class_AnimatedSprite3D_property_frame>` 與 :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>`\ ，若在無參數下呼叫 :ref:`play()<class_AnimatedSprite3D_method_play>` 或 :ref:`play_backwards()<class_AnimatedSprite3D_method_play_backwards>`\ ，將自當前位置續播。
+Pauses the currently playing animation. The :ref:`frame<class_AnimatedSprite3D_property_frame>` and :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>` will be kept and calling :ref:`play()<class_AnimatedSprite3D_method_play>` or :ref:`play_backwards()<class_AnimatedSprite3D_method_play_backwards>` without arguments will resume the animation from the current playback position.
 
-另請參閱 :ref:`stop()<class_AnimatedSprite3D_method_stop>`\ 。
+See also :ref:`stop()<class_AnimatedSprite3D_method_stop>`.
 
 .. rst-class:: classref-item-separator
 
@@ -300,9 +300,9 @@ AnimatedSprite3D
 
 |void| **play**\ (\ name\: :ref:`StringName<class_StringName>` = &"", custom_speed\: :ref:`float<class_float>` = 1.0, from_end\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AnimatedSprite3D_method_play>`
 
-播放鍵名為 ``name`` 的動畫。若 ``custom_speed`` 為負數且 ``from_end`` 為 ``true``\ ，將倒放動畫（等同於呼叫 :ref:`play_backwards()<class_AnimatedSprite3D_method_play_backwards>`\ ）。
+Plays the animation with key ``name``. If ``custom_speed`` is negative and ``from_end`` is ``true``, the animation will play backwards (which is equivalent to calling :ref:`play_backwards()<class_AnimatedSprite3D_method_play_backwards>`).
 
-若以相同 ``name`` 或未指定 ``name`` 呼叫此方法，則已暫停的動畫會續播。
+If this method is called with that same animation ``name``, or with no ``name`` parameter, the assigned animation will resume playing if it was paused.
 
 .. rst-class:: classref-item-separator
 
@@ -314,9 +314,9 @@ AnimatedSprite3D
 
 |void| **play_backwards**\ (\ name\: :ref:`StringName<class_StringName>` = &""\ ) :ref:`🔗<class_AnimatedSprite3D_method_play_backwards>`
 
-倒放鍵名為 ``name`` 的動畫。
+Plays the animation with key ``name`` in reverse.
 
-此方法相當於使用 ``custom_speed = -1.0``\ 、\ ``from_end = true`` 呼叫 :ref:`play()<class_AnimatedSprite3D_method_play>`\ ，詳情請參考該方法說明。
+This method is a shorthand for :ref:`play()<class_AnimatedSprite3D_method_play>` with ``custom_speed = -1.0`` and ``from_end = true``, so see its description for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -328,9 +328,9 @@ AnimatedSprite3D
 
 |void| **set_frame_and_progress**\ (\ frame\: :ref:`int<class_int>`, progress\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AnimatedSprite3D_method_set_frame_and_progress>`
 
-同時將 :ref:`frame<class_AnimatedSprite3D_property_frame>` 與 :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>` 設為指定值。與直接設定 :ref:`frame<class_AnimatedSprite3D_property_frame>` 不同，此方法不會自動將 :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>` 重設為 ``0.0``\ 。
+Sets :ref:`frame<class_AnimatedSprite3D_property_frame>` and :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>` to the given values. Unlike setting :ref:`frame<class_AnimatedSprite3D_property_frame>`, this method does not reset the :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>` to ``0.0`` implicitly.
 
-\ **範例：** 在保留現有 :ref:`frame<class_AnimatedSprite3D_property_frame>` 與 :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>` 的情況下切換動畫：
+\ **Example:** Change the animation while keeping the same :ref:`frame<class_AnimatedSprite3D_property_frame>` and :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>`:
 
 
 .. tabs::
@@ -354,14 +354,14 @@ AnimatedSprite3D
 
 |void| **stop**\ (\ ) :ref:`🔗<class_AnimatedSprite3D_method_stop>`
 
-停止目前動畫。動畫位置將重設為 ``0``\ ，且 ``custom_speed`` 亦重設為 ``1.0``\ 。另請參閱 :ref:`pause()<class_AnimatedSprite3D_method_pause>`\ 。
+Stops the currently playing animation. The animation position is reset to ``0`` and the ``custom_speed`` is reset to ``1.0``. See also :ref:`pause()<class_AnimatedSprite3D_method_pause>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

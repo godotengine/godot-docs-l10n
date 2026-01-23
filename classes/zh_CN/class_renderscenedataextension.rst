@@ -5,21 +5,21 @@
 RenderSceneDataExtension
 ========================
 
-**继承：** :ref:`RenderSceneData<class_RenderSceneData>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RenderSceneData<class_RenderSceneData>` **<** :ref:`Object<class_Object>`
 
-该类允许在 GDExtension 中实现 RenderSceneData。
+This class allows for a RenderSceneData implementation to be made in GDExtension.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-该类允许在 GDExtension 中实现 RenderSceneData。
+This class allows for a RenderSceneData implementation to be made in GDExtension.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ RenderSceneDataExtension
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_RenderSceneDataExtension_private_method__get_cam_projection:
 
@@ -53,7 +53,7 @@ RenderSceneDataExtension
 
 :ref:`Projection<class_Projection>` **_get_cam_projection**\ (\ ) |virtual| |const| :ref:`🔗<class_RenderSceneDataExtension_private_method__get_cam_projection>`
 
-在 GDExtension 中实现时请返回相机的 :ref:`Projection<class_Projection>`\ 。
+Implement this in GDExtension to return the camera :ref:`Projection<class_Projection>`.
 
 .. rst-class:: classref-item-separator
 
@@ -65,7 +65,7 @@ RenderSceneDataExtension
 
 :ref:`Transform3D<class_Transform3D>` **_get_cam_transform**\ (\ ) |virtual| |const| :ref:`🔗<class_RenderSceneDataExtension_private_method__get_cam_transform>`
 
-在 GDExtension 中实现时请返回相机的 :ref:`Transform3D<class_Transform3D>`\ 。
+Implement this in GDExtension to return the camera :ref:`Transform3D<class_Transform3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -77,7 +77,7 @@ RenderSceneDataExtension
 
 :ref:`RID<class_RID>` **_get_uniform_buffer**\ (\ ) |virtual| |const| :ref:`🔗<class_RenderSceneDataExtension_private_method__get_uniform_buffer>`
 
-在 GDExtension 中实现时请返回 Uniform 缓冲的 :ref:`RID<class_RID>`\ ，这个缓冲中包含了 UBO 形式的场景数据。
+Implement this in GDExtension to return the :ref:`RID<class_RID>` of the uniform buffer containing the scene data as a UBO.
 
 .. rst-class:: classref-item-separator
 
@@ -89,7 +89,7 @@ RenderSceneDataExtension
 
 :ref:`int<class_int>` **_get_view_count**\ (\ ) |virtual| |const| :ref:`🔗<class_RenderSceneDataExtension_private_method__get_view_count>`
 
-在 GDExtension 中实现时请返回视图数量。
+Implement this in GDExtension to return the view count.
 
 .. rst-class:: classref-item-separator
 
@@ -101,7 +101,7 @@ RenderSceneDataExtension
 
 :ref:`Vector3<class_Vector3>` **_get_view_eye_offset**\ (\ view\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_RenderSceneDataExtension_private_method__get_view_eye_offset>`
 
-在 GDExtension 中实现时请返回 ``view`` 视图的眼部偏移量。
+Implement this in GDExtension to return the eye offset for the given ``view``.
 
 .. rst-class:: classref-item-separator
 
@@ -113,14 +113,14 @@ RenderSceneDataExtension
 
 :ref:`Projection<class_Projection>` **_get_view_projection**\ (\ view\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_RenderSceneDataExtension_private_method__get_view_projection>`
 
-在 GDExtension 中实现时请返回 ``view`` 视图的视图 :ref:`Projection<class_Projection>`\ 。
+Implement this in GDExtension to return the view :ref:`Projection<class_Projection>` for the given ``view``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

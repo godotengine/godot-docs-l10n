@@ -251,7 +251,7 @@ If ``increase_version`` is ``true``, the undo history version will be increased,
 
 |void| **commit_action**\ (\ execute\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_EditorUndoRedoManager_method_commit_action>`
 
-Commits the action. If ``execute`` is ``true`` (default), all "do" methods/properties are called/set when this function is called.
+Exécute l'action. Si ``execute`` vaut ``true`` (valeur par défaut), toutes les méthodes/propriétés "do" sont appelées/définies lorsque cette fonction est appelée.
 
 .. rst-class:: classref-item-separator
 
@@ -263,15 +263,15 @@ Commits the action. If ``execute`` is ``true`` (default), all "do" methods/prope
 
 |void| **create_action**\ (\ name\: :ref:`String<class_String>`, merge_mode\: :ref:`MergeMode<enum_UndoRedo_MergeMode>` = 0, custom_context\: :ref:`Object<class_Object>` = null, backward_undo_ops\: :ref:`bool<class_bool>` = false, mark_unsaved\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_EditorUndoRedoManager_method_create_action>`
 
-Create a new action. After this is called, do all your calls to :ref:`add_do_method()<class_EditorUndoRedoManager_method_add_do_method>`, :ref:`add_undo_method()<class_EditorUndoRedoManager_method_add_undo_method>`, :ref:`add_do_property()<class_EditorUndoRedoManager_method_add_do_property>`, and :ref:`add_undo_property()<class_EditorUndoRedoManager_method_add_undo_property>`, then commit the action with :ref:`commit_action()<class_EditorUndoRedoManager_method_commit_action>`.
+Crée une nouvelle action. Après cet appel, faites tous vos appels à :ref:`add_do_method()<class_EditorUndoRedoManager_method_add_do_method>`, :ref:`add_undo_method()<class_EditorUndoRedoManager_method_add_undo_method>`, :ref:`add_do_property()<class_EditorUndoRedoManager_method_add_do_property>`, et :ref:`add_undo_property()<class_EditorUndoRedoManager_method_add_undo_property>`, puis engagez l'action avec :ref:`commit_action()<class_EditorUndoRedoManager_method_commit_action>`.
 
-The way actions are merged is dictated by the ``merge_mode`` argument.
+La façon dont les actions sont fusionnées est dictée par l'argument ``merge_mode``.
 
-If ``custom_context`` object is provided, it will be used for deducing target history (instead of using the first operation).
+Si l'objet ``custom_context`` est fourni, il sera utilisé pour déduire l'historique cible (au lieu d'utiliser la première opération).
 
-The way undo operation are ordered in actions is dictated by ``backward_undo_ops``. When ``backward_undo_ops`` is ``false`` undo option are ordered in the same order they were added. Which means the first operation to be added will be the first to be undone.
+La façon dont les opération "undo" sont ordonnées dans les actions est dictée par ``backward_undo_ops``. Lorsque ``backward_undo_ops`` vaut ``false``\ les options "undo" sont ordonnées dans le même ordre qu'elles ont été ajoutées. Ce qui signifie que la première opération à être ajoutée sera la première à être défaite.
 
-If ``mark_unsaved`` is ``false``, the action will not mark the history as unsaved. This is useful for example for actions that change a selection, or a setting that will be saved automatically. Otherwise, this should be left to ``true`` if the action requires saving by the user or if it can cause data loss when left unsaved.
+Si ``mark_unsaved`` vaut\ ``false``, l'action ne marquera pas l'historique comme non sauvegardée. Ceci est utile par exemple pour les actions qui modifient une sélection, ou un réglage qui sera sauvegardé automatiquement. Sinon, cela devrait être laissé à ``true`` si l'action nécessite une sauvegarde par l'utilisateur ou si elle peut causer une perte de données lorsqu'elle est laissée non sauvegardée.
 
 .. rst-class:: classref-item-separator
 

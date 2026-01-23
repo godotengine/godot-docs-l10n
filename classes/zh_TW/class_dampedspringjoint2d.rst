@@ -5,21 +5,21 @@
 DampedSpringJoint2D
 ===================
 
-**繼承：** :ref:`Joint2D<class_Joint2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Joint2D<class_Joint2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-通過類似彈簧的力連接兩個 2D 物理物體的物理關節。
+A physics joint that connects two 2D physics bodies with a spring-like force.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 A physics joint that connects two 2D physics bodies with a spring-like force. This behaves like a spring that always wants to stretch to a given length.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ A physics joint that connects two 2D physics bodies with a spring-like force. Th
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_DampedSpringJoint2D_property_damping:
 
@@ -71,7 +71,7 @@ The spring joint's damping ratio. A value between ``0`` and ``1``. When the two 
 - |void| **set_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_length**\ (\ )
 
-彈簧關節的最大長度。兩個連接體不能超過這個值。
+The spring joint's maximum length. The two attached bodies cannot stretch it past this value.
 
 .. rst-class:: classref-item-separator
 
@@ -88,7 +88,7 @@ The spring joint's damping ratio. A value between ``0`` and ``1``. When the two 
 - |void| **set_rest_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_rest_length**\ (\ )
 
-當連接到彈簧關節的機構移動時，它們會拉伸或擠壓它。關節總是嘗試向這個長度調整。
+When the bodies attached to the spring joint move they stretch or squash it. The joint always tries to resize towards this length.
 
 .. rst-class:: classref-item-separator
 
@@ -105,14 +105,14 @@ The spring joint's damping ratio. A value between ``0`` and ``1``. When the two 
 - |void| **set_stiffness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_stiffness**\ (\ )
 
-該值越大，連接在關節上的機構變形越小。關節對各機構施加一個相反的力，即剛度乘以與其靜止長度的大小差的乘積。
+The higher the value, the less the bodies attached to the joint will deform it. The joint applies an opposing force to the bodies, the product of the stiffness multiplied by the size difference from its resting length.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

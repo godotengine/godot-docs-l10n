@@ -5,30 +5,30 @@
 CSGPolygon3D
 ============
 
-**繼承：** :ref:`CSGPrimitive3D<class_CSGPrimitive3D>` **<** :ref:`CSGShape3D<class_CSGShape3D>` **<** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`CSGPrimitive3D<class_CSGPrimitive3D>` **<** :ref:`CSGShape3D<class_CSGShape3D>` **<** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-拉伸 2D 多邊形形狀以建立 3D 網格。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-擠出一組 2D 點，以快速輕鬆地建立各種 3D 網格。另請參閱 :ref:`CSGMesh3D<class_CSGMesh3D>`\ ，以瞭解將 3D 網格用作 CSG 節點。
-
-\ **注意：**\ CSG 節點旨在用於關卡原型設計。與使用 :ref:`PrimitiveMesh<class_PrimitiveMesh>` 建立 :ref:`MeshInstance3D<class_MeshInstance3D>` 相比，建立 CSG 節點具有顯著的 CPU 成本。在另一個 CSG 節點中，移動一個 CSG 節點，也會大量消耗 CPU，因此在遊戲過程中，應該避免這種情況。
+Extrudes a 2D polygon shape to create a 3D mesh.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`使用 CSG 設計關卡原型 <../tutorials/3d/csg_tools>`
+An array of 2D points is extruded to quickly and easily create a variety of 3D meshes. See also :ref:`CSGMesh3D<class_CSGMesh3D>` for using 3D meshes as CSG nodes.
+
+\ **Note:** CSG nodes are intended to be used for level prototyping. Creating CSG nodes has a significant CPU cost compared to creating a :ref:`MeshInstance3D<class_MeshInstance3D>` with a :ref:`PrimitiveMesh<class_PrimitiveMesh>`. Moving a CSG node within another CSG node also has a significant CPU cost, so it should be avoided during gameplay.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Prototyping levels with CSG <../tutorials/3d/csg_tools>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -75,8 +75,8 @@ CSGPolygon3D
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_CSGPolygon3D_Mode:
 
@@ -90,7 +90,7 @@ enum **Mode**: :ref:`🔗<enum_CSGPolygon3D_Mode>`
 
 :ref:`Mode<enum_CSGPolygon3D_Mode>` **MODE_DEPTH** = ``0``
 
-:ref:`polygon<class_CSGPolygon3D_property_polygon>` 形狀沿負 Z 軸擠出。
+The :ref:`polygon<class_CSGPolygon3D_property_polygon>` shape is extruded along the negative Z axis.
 
 .. _class_CSGPolygon3D_constant_MODE_SPIN:
 
@@ -98,7 +98,7 @@ enum **Mode**: :ref:`🔗<enum_CSGPolygon3D_Mode>`
 
 :ref:`Mode<enum_CSGPolygon3D_Mode>` **MODE_SPIN** = ``1``
 
-:ref:`polygon<class_CSGPolygon3D_property_polygon>` 形狀通過圍繞 Y 軸旋轉來擠出。
+The :ref:`polygon<class_CSGPolygon3D_property_polygon>` shape is extruded by rotating it around the Y axis.
 
 .. _class_CSGPolygon3D_constant_MODE_PATH:
 
@@ -106,7 +106,7 @@ enum **Mode**: :ref:`🔗<enum_CSGPolygon3D_Mode>`
 
 :ref:`Mode<enum_CSGPolygon3D_Mode>` **MODE_PATH** = ``2``
 
-:ref:`polygon<class_CSGPolygon3D_property_polygon>` 形狀沿 :ref:`path_node<class_CSGPolygon3D_property_path_node>` 中指定的 :ref:`Path3D<class_Path3D>` 擠出。
+The :ref:`polygon<class_CSGPolygon3D_property_polygon>` shape is extruded along the :ref:`Path3D<class_Path3D>` specified in :ref:`path_node<class_CSGPolygon3D_property_path_node>`.
 
 .. rst-class:: classref-item-separator
 
@@ -124,9 +124,9 @@ enum **PathRotation**: :ref:`🔗<enum_CSGPolygon3D_PathRotation>`
 
 :ref:`PathRotation<enum_CSGPolygon3D_PathRotation>` **PATH_ROTATION_POLYGON** = ``0``
 
-:ref:`polygon<class_CSGPolygon3D_property_polygon>` 形狀不會被旋轉。
+The :ref:`polygon<class_CSGPolygon3D_property_polygon>` shape is not rotated.
 
-\ **注意：**\ 要求路徑的 Z 座標不斷減少，以確保可行的形狀。
+\ **Note:** Requires the path Z coordinates to continually decrease to ensure viable shapes.
 
 .. _class_CSGPolygon3D_constant_PATH_ROTATION_PATH:
 
@@ -134,9 +134,9 @@ enum **PathRotation**: :ref:`🔗<enum_CSGPolygon3D_PathRotation>`
 
 :ref:`PathRotation<enum_CSGPolygon3D_PathRotation>` **PATH_ROTATION_PATH** = ``1``
 
-:ref:`polygon<class_CSGPolygon3D_property_polygon>` 形狀沿路徑旋轉，但並不繞路徑軸旋轉。
+The :ref:`polygon<class_CSGPolygon3D_property_polygon>` shape is rotated along the path, but it is not rotated around the path axis.
 
-\ **注意：**\ 需要路徑的 Z 座標不斷減小，以確保可行的形狀。
+\ **Note:** Requires the path Z coordinates to continually decrease to ensure viable shapes.
 
 .. _class_CSGPolygon3D_constant_PATH_ROTATION_PATH_FOLLOW:
 
@@ -144,7 +144,7 @@ enum **PathRotation**: :ref:`🔗<enum_CSGPolygon3D_PathRotation>`
 
 :ref:`PathRotation<enum_CSGPolygon3D_PathRotation>` **PATH_ROTATION_PATH_FOLLOW** = ``2``
 
-:ref:`polygon<class_CSGPolygon3D_property_polygon>` 多邊形的形狀跟隨路徑及其圍繞路徑軸的旋轉。
+The :ref:`polygon<class_CSGPolygon3D_property_polygon>` shape follows the path and its rotations around the path axis.
 
 .. rst-class:: classref-item-separator
 
@@ -162,7 +162,7 @@ enum **PathIntervalType**: :ref:`🔗<enum_CSGPolygon3D_PathIntervalType>`
 
 :ref:`PathIntervalType<enum_CSGPolygon3D_PathIntervalType>` **PATH_INTERVAL_DISTANCE** = ``0``
 
-當 :ref:`mode<class_CSGPolygon3D_property_mode>` 被設定為 :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>` 時，\ :ref:`path_interval<class_CSGPolygon3D_property_path_interval>` 將決定路徑的每個間隔將被擠出的距離，單位為米。
+When :ref:`mode<class_CSGPolygon3D_property_mode>` is set to :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>`, :ref:`path_interval<class_CSGPolygon3D_property_path_interval>` will determine the distance, in meters, each interval of the path will extrude.
 
 .. _class_CSGPolygon3D_constant_PATH_INTERVAL_SUBDIVIDE:
 
@@ -170,7 +170,7 @@ enum **PathIntervalType**: :ref:`🔗<enum_CSGPolygon3D_PathIntervalType>`
 
 :ref:`PathIntervalType<enum_CSGPolygon3D_PathIntervalType>` **PATH_INTERVAL_SUBDIVIDE** = ``1``
 
-當 :ref:`mode<class_CSGPolygon3D_property_mode>` 被設定為 :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>`\ 時，\ :ref:`path_interval<class_CSGPolygon3D_property_path_interval>` 將沿著路徑細分多邊形。
+When :ref:`mode<class_CSGPolygon3D_property_mode>` is set to :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>`, :ref:`path_interval<class_CSGPolygon3D_property_path_interval>` will subdivide the polygons along the path.
 
 .. rst-class:: classref-section-separator
 
@@ -178,8 +178,8 @@ enum **PathIntervalType**: :ref:`🔗<enum_CSGPolygon3D_PathIntervalType>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_CSGPolygon3D_property_depth:
 
@@ -192,7 +192,7 @@ enum **PathIntervalType**: :ref:`🔗<enum_CSGPolygon3D_PathIntervalType>`
 - |void| **set_depth**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth**\ (\ )
 
-當 :ref:`mode<class_CSGPolygon3D_property_mode>` 為 :ref:`MODE_DEPTH<class_CSGPolygon3D_constant_MODE_DEPTH>` 時，擠出的深度。
+When :ref:`mode<class_CSGPolygon3D_property_mode>` is :ref:`MODE_DEPTH<class_CSGPolygon3D_constant_MODE_DEPTH>`, the depth of the extrusion.
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +209,7 @@ enum **PathIntervalType**: :ref:`🔗<enum_CSGPolygon3D_PathIntervalType>`
 - |void| **set_material**\ (\ value\: :ref:`Material<class_Material>`\ )
 - :ref:`Material<class_Material>` **get_material**\ (\ )
 
-用於生成的網格的材質。UV 將材質的上半部分對應到擠出形狀（U 沿著擠出的長度，V 圍繞 :ref:`polygon<class_CSGPolygon3D_property_polygon>` 的輪廓），左下四分之一對應到前端面，右下四分之一對應到後端面。
+Material to use for the resulting mesh. The UV maps the top half of the material to the extruded shape (U along the length of the extrusions and V around the outline of the :ref:`polygon<class_CSGPolygon3D_property_polygon>`), the bottom-left quarter to the front end face, and the bottom-right quarter to the back end face.
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ enum **PathIntervalType**: :ref:`🔗<enum_CSGPolygon3D_PathIntervalType>`
 - |void| **set_mode**\ (\ value\: :ref:`Mode<enum_CSGPolygon3D_Mode>`\ )
 - :ref:`Mode<enum_CSGPolygon3D_Mode>` **get_mode**\ (\ )
 
-用於擠出 :ref:`polygon<class_CSGPolygon3D_property_polygon>` 的 :ref:`mode<class_CSGPolygon3D_property_mode>` 。
+The :ref:`mode<class_CSGPolygon3D_property_mode>` used to extrude the :ref:`polygon<class_CSGPolygon3D_property_polygon>`.
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ enum **PathIntervalType**: :ref:`🔗<enum_CSGPolygon3D_PathIntervalType>`
 - |void| **set_path_continuous_u**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_path_continuous_u**\ (\ )
 
-當 :ref:`mode<class_CSGPolygon3D_property_mode>` 為\ :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>` 時，預設情況下，\ :ref:`material<class_CSGPolygon3D_property_material>` 的上半部分會沿著擠出形狀的整個長度被拉伸。如果為 ``false``\ ，擠出的每一步都會重複材質的上半部分。
+When :ref:`mode<class_CSGPolygon3D_property_mode>` is :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>`, by default, the top half of the :ref:`material<class_CSGPolygon3D_property_material>` is stretched along the entire length of the extruded shape. If ``false`` the top half of the material is repeated every step of the extrusion.
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +260,7 @@ enum **PathIntervalType**: :ref:`🔗<enum_CSGPolygon3D_PathIntervalType>`
 - |void| **set_path_interval**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_path_interval**\ (\ )
 
-當 :ref:`mode<class_CSGPolygon3D_property_mode>` 為 :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>` 時，路徑間隔或路徑點比例擠出。
+When :ref:`mode<class_CSGPolygon3D_property_mode>` is :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>`, the path interval or ratio of path points to extrusions.
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ enum **PathIntervalType**: :ref:`🔗<enum_CSGPolygon3D_PathIntervalType>`
 - |void| **set_path_interval_type**\ (\ value\: :ref:`PathIntervalType<enum_CSGPolygon3D_PathIntervalType>`\ )
 - :ref:`PathIntervalType<enum_CSGPolygon3D_PathIntervalType>` **get_path_interval_type**\ (\ )
 
-當 :ref:`mode<class_CSGPolygon3D_property_mode>` 為 :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>` 時，這將確定間隔是按距離（\ :ref:`PATH_INTERVAL_DISTANCE<class_CSGPolygon3D_constant_PATH_INTERVAL_DISTANCE>`\ ）還是細分分數（\ :ref:`PATH_INTERVAL_SUBDIVIDE<class_CSGPolygon3D_constant_PATH_INTERVAL_SUBDIVIDE>`\ ）。
+When :ref:`mode<class_CSGPolygon3D_property_mode>` is :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>`, this will determine if the interval should be by distance (:ref:`PATH_INTERVAL_DISTANCE<class_CSGPolygon3D_constant_PATH_INTERVAL_DISTANCE>`) or subdivision fractions (:ref:`PATH_INTERVAL_SUBDIVIDE<class_CSGPolygon3D_constant_PATH_INTERVAL_SUBDIVIDE>`).
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +294,7 @@ enum **PathIntervalType**: :ref:`🔗<enum_CSGPolygon3D_PathIntervalType>`
 - |void| **set_path_joined**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_path_joined**\ (\ )
 
-當 :ref:`mode<class_CSGPolygon3D_property_mode>` 為 :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>` 時，如果 ``true`` 路徑的兩端會被連接起來，在路徑的最後一個點和第一個點之間新增擠出。
+When :ref:`mode<class_CSGPolygon3D_property_mode>` is :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>`, if ``true`` the ends of the path are joined, by adding an extrusion between the last and first points of the path.
 
 .. rst-class:: classref-item-separator
 
@@ -311,7 +311,7 @@ enum **PathIntervalType**: :ref:`🔗<enum_CSGPolygon3D_PathIntervalType>`
 - |void| **set_path_local**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_path_local**\ (\ )
 
-當 :ref:`mode<class_CSGPolygon3D_property_mode>` 為 :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>` 時，如果為 ``true``\ ，則該 **CSGPolygon3D** 的 :ref:`Transform3D<class_Transform3D>` 將被用作擠出的起點，而非 :ref:`path_node<class_CSGPolygon3D_property_path_node>` 的 :ref:`Transform3D<class_Transform3D>`\ 。
+When :ref:`mode<class_CSGPolygon3D_property_mode>` is :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>`, if ``true`` the :ref:`Transform3D<class_Transform3D>` of the **CSGPolygon3D** is used as the starting point for the extrusions, not the :ref:`Transform3D<class_Transform3D>` of the :ref:`path_node<class_CSGPolygon3D_property_path_node>`.
 
 .. rst-class:: classref-item-separator
 
@@ -328,7 +328,7 @@ enum **PathIntervalType**: :ref:`🔗<enum_CSGPolygon3D_PathIntervalType>`
 - |void| **set_path_node**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_path_node**\ (\ )
 
-當 :ref:`mode<class_CSGPolygon3D_property_mode>` 為 :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>` 時，用於擠出 :ref:`polygon<class_CSGPolygon3D_property_polygon>` 的 :ref:`Path3D<class_Path3D>` 物件的位置。
+When :ref:`mode<class_CSGPolygon3D_property_mode>` is :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>`, the location of the :ref:`Path3D<class_Path3D>` object used to extrude the :ref:`polygon<class_CSGPolygon3D_property_polygon>`.
 
 .. rst-class:: classref-item-separator
 
@@ -379,7 +379,7 @@ When :ref:`mode<class_CSGPolygon3D_property_mode>` is :ref:`MODE_PATH<class_CSGP
 - |void| **set_path_simplify_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_path_simplify_angle**\ (\ )
 
-當 :ref:`mode<class_CSGPolygon3D_property_mode>` 為 :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>` 時，小於此角度的擠出將合併在一起以減少多邊形數量。
+When :ref:`mode<class_CSGPolygon3D_property_mode>` is :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>`, extrusions that are less than this angle, will be merged together to reduce polygon count.
 
 .. rst-class:: classref-item-separator
 
@@ -396,7 +396,7 @@ When :ref:`mode<class_CSGPolygon3D_property_mode>` is :ref:`MODE_PATH<class_CSGP
 - |void| **set_path_u_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_path_u_distance**\ (\ )
 
-當 :ref:`mode<class_CSGPolygon3D_property_mode>` 為 :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>` 時，這是紋理座標沿著路徑的距離，以米為單位，將進行平鋪。當設定為 0 時，紋理座標將與幾何圖形完全配對，沒有平鋪。
+When :ref:`mode<class_CSGPolygon3D_property_mode>` is :ref:`MODE_PATH<class_CSGPolygon3D_constant_MODE_PATH>`, this is the distance along the path, in meters, the texture coordinates will tile. When set to 0, texture coordinates will match geometry exactly with no tiling.
 
 .. rst-class:: classref-item-separator
 
@@ -413,9 +413,9 @@ When :ref:`mode<class_CSGPolygon3D_property_mode>` is :ref:`MODE_PATH<class_CSGP
 - |void| **set_polygon**\ (\ value\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ )
 - :ref:`PackedVector2Array<class_PackedVector2Array>` **get_polygon**\ (\ )
 
-頂點陣列，用於定義要擠出的 2D 多邊形。需要包含 3 個或更多頂點，可以是凸多邊形也可以是凹多邊形。該多邊形中\ *不能*\ 存在相交的邊。否則，三角形化會失敗，不會生成任何網格。
+The point array that defines the 2D polygon that is extruded. This can be a convex or concave polygon with 3 or more points. The polygon must *not* have any intersecting edges. Otherwise, triangulation will fail and no mesh will be generated.
 
-\ **注意：**\ 如果 :ref:`polygon<class_CSGPolygon3D_property_polygon>` 中只定義了 1 個或 2 個頂點，則不會生成網格。
+\ **Note:** If only 1 or 2 points are defined in :ref:`polygon<class_CSGPolygon3D_property_polygon>`, no mesh will be generated.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
@@ -434,7 +434,7 @@ When :ref:`mode<class_CSGPolygon3D_property_mode>` is :ref:`MODE_PATH<class_CSGP
 - |void| **set_smooth_faces**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_smooth_faces**\ (\ )
 
-如果為 ``true``\ ，則對擠出套用平滑著色。
+If ``true``, applies smooth shading to the extrusions.
 
 .. rst-class:: classref-item-separator
 
@@ -451,7 +451,7 @@ When :ref:`mode<class_CSGPolygon3D_property_mode>` is :ref:`MODE_PATH<class_CSGP
 - |void| **set_spin_degrees**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_spin_degrees**\ (\ )
 
-當 :ref:`mode<class_CSGPolygon3D_property_mode>` 為 :ref:`MODE_SPIN<class_CSGPolygon3D_constant_MODE_SPIN>`\ ，\ :ref:`polygon<class_CSGPolygon3D_property_polygon>` 在擠出時旋轉的總度數。
+When :ref:`mode<class_CSGPolygon3D_property_mode>` is :ref:`MODE_SPIN<class_CSGPolygon3D_constant_MODE_SPIN>`, the total number of degrees the :ref:`polygon<class_CSGPolygon3D_property_polygon>` is rotated when extruding.
 
 .. rst-class:: classref-item-separator
 
@@ -468,14 +468,14 @@ When :ref:`mode<class_CSGPolygon3D_property_mode>` is :ref:`MODE_PATH<class_CSGP
 - |void| **set_spin_sides**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_spin_sides**\ (\ )
 
-:ref:`mode<class_CSGPolygon3D_property_mode>` 為 :ref:`MODE_SPIN<class_CSGPolygon3D_constant_MODE_SPIN>` 時，擠出的次數。
+When :ref:`mode<class_CSGPolygon3D_property_mode>` is :ref:`MODE_SPIN<class_CSGPolygon3D_constant_MODE_SPIN>`, the number of extrusions made.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

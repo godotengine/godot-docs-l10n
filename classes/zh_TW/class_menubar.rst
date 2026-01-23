@@ -5,21 +5,21 @@
 MenuBar
 =======
 
-**繼承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 A horizontal menu bar that creates a menu for each :ref:`PopupMenu<class_PopupMenu>` child.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 A horizontal menu bar that creates a menu for each :ref:`PopupMenu<class_PopupMenu>` child. New items are created by adding :ref:`PopupMenu<class_PopupMenu>`\ s to this node. Item title is determined by :ref:`Window.title<class_Window_property_title>`, or node name if :ref:`Window.title<class_Window_property_title>` is empty. Item title can be overridden using :ref:`set_menu_title()<class_MenuBar_method_set_menu_title>`.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ A horizontal menu bar that creates a menu for each :ref:`PopupMenu<class_PopupMe
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -76,8 +76,8 @@ A horizontal menu bar that creates a menu for each :ref:`PopupMenu<class_PopupMe
 
 .. rst-class:: classref-reftable-group
 
-主題屬性
---------
+Theme Properties
+----------------
 
 .. table::
    :widths: auto
@@ -132,8 +132,8 @@ A horizontal menu bar that creates a menu for each :ref:`PopupMenu<class_PopupMe
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_MenuBar_property_flat:
 
@@ -146,7 +146,7 @@ A horizontal menu bar that creates a menu for each :ref:`PopupMenu<class_PopupMe
 - |void| **set_flat**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_flat**\ (\ )
 
-扁平的 **MenuBar**\ ，不顯示專案裝飾。
+Flat **MenuBar** don't display item decoration.
 
 .. rst-class:: classref-item-separator
 
@@ -218,7 +218,7 @@ Position order in the global menu to insert **MenuBar** items at. All menu items
 - |void| **set_switch_on_hover**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_switch_on_hover**\ (\ )
 
-如果為 ``true``\ ，當游標懸停在功能表專案上方時，將關閉目前的 :ref:`PopupMenu<class_PopupMenu>` 並打開另一個。
+If ``true``, when the cursor hovers above menu item, it will close the current :ref:`PopupMenu<class_PopupMenu>` and open the other one.
 
 .. rst-class:: classref-item-separator
 
@@ -235,7 +235,7 @@ Position order in the global menu to insert **MenuBar** items at. All menu items
 - |void| **set_text_direction**\ (\ value\: :ref:`TextDirection<enum_Control_TextDirection>`\ )
 - :ref:`TextDirection<enum_Control_TextDirection>` **get_text_direction**\ (\ )
 
-基礎文字書寫方向。
+Base text writing direction.
 
 .. rst-class:: classref-section-separator
 
@@ -243,8 +243,8 @@ Position order in the global menu to insert **MenuBar** items at. All menu items
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_MenuBar_method_get_menu_count:
 
@@ -252,7 +252,7 @@ Position order in the global menu to insert **MenuBar** items at. All menu items
 
 :ref:`int<class_int>` **get_menu_count**\ (\ ) |const| :ref:`🔗<class_MenuBar_method_get_menu_count>`
 
-返回功能表專案的數量。
+Returns number of menu items.
 
 .. rst-class:: classref-item-separator
 
@@ -264,7 +264,7 @@ Position order in the global menu to insert **MenuBar** items at. All menu items
 
 :ref:`PopupMenu<class_PopupMenu>` **get_menu_popup**\ (\ menu\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MenuBar_method_get_menu_popup>`
 
-返回與功能表專案關聯的 :ref:`PopupMenu<class_PopupMenu>`\ 。
+Returns :ref:`PopupMenu<class_PopupMenu>` associated with menu item.
 
 .. rst-class:: classref-item-separator
 
@@ -276,7 +276,7 @@ Position order in the global menu to insert **MenuBar** items at. All menu items
 
 :ref:`String<class_String>` **get_menu_title**\ (\ menu\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MenuBar_method_get_menu_title>`
 
-返回功能表專案的標題。
+Returns menu item title.
 
 .. rst-class:: classref-item-separator
 
@@ -288,7 +288,7 @@ Position order in the global menu to insert **MenuBar** items at. All menu items
 
 :ref:`String<class_String>` **get_menu_tooltip**\ (\ menu\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MenuBar_method_get_menu_tooltip>`
 
-返回功能表專案的工具提示。
+Returns menu item tooltip.
 
 .. rst-class:: classref-item-separator
 
@@ -336,7 +336,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 |void| **set_disable_shortcuts**\ (\ disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_MenuBar_method_set_disable_shortcuts>`
 
-如果為 ``true``\ ，快捷方式將被禁用，無法用於觸發按鈕。
+If ``true``, shortcuts are disabled and cannot be used to trigger the button.
 
 .. rst-class:: classref-item-separator
 
@@ -348,7 +348,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 |void| **set_menu_disabled**\ (\ menu\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_MenuBar_method_set_menu_disabled>`
 
-為 ``true`` 時，功能表專案為禁用狀態。
+If ``true``, menu item is disabled.
 
 .. rst-class:: classref-item-separator
 
@@ -360,7 +360,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 |void| **set_menu_hidden**\ (\ menu\: :ref:`int<class_int>`, hidden\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_MenuBar_method_set_menu_hidden>`
 
-為 ``true`` 時，功能表專案為隱藏狀態。
+If ``true``, menu item is hidden.
 
 .. rst-class:: classref-item-separator
 
@@ -372,7 +372,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 |void| **set_menu_title**\ (\ menu\: :ref:`int<class_int>`, title\: :ref:`String<class_String>`\ ) :ref:`🔗<class_MenuBar_method_set_menu_title>`
 
-設定功能表專案的標題。
+Sets menu item title.
 
 .. rst-class:: classref-item-separator
 
@@ -384,7 +384,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 |void| **set_menu_tooltip**\ (\ menu\: :ref:`int<class_int>`, tooltip\: :ref:`String<class_String>`\ ) :ref:`🔗<class_MenuBar_method_set_menu_tooltip>`
 
-設定功能表專案的工具提示。
+Sets menu item tooltip.
 
 .. rst-class:: classref-section-separator
 
@@ -392,8 +392,8 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 .. rst-class:: classref-descriptions-group
 
-主題屬性說明
-------------
+Theme Property Descriptions
+---------------------------
 
 .. _class_MenuBar_theme_color_font_color:
 
@@ -401,7 +401,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`Color<class_Color>` **font_color** = ``Color(0.875, 0.875, 0.875, 1)`` :ref:`🔗<class_MenuBar_theme_color_font_color>`
 
-功能表專案的預設文字 :ref:`Color<class_Color>`\ 。
+Default text :ref:`Color<class_Color>` of the menu item.
 
 .. rst-class:: classref-item-separator
 
@@ -413,7 +413,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`Color<class_Color>` **font_disabled_color** = ``Color(0.875, 0.875, 0.875, 0.5)`` :ref:`🔗<class_MenuBar_theme_color_font_disabled_color>`
 
-功能表專案處於禁用狀態時使用的文字 :ref:`Color<class_Color>`\ 。
+Text :ref:`Color<class_Color>` used when the menu item is disabled.
 
 .. rst-class:: classref-item-separator
 
@@ -425,7 +425,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`Color<class_Color>` **font_focus_color** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_MenuBar_theme_color_font_focus_color>`
 
-功能表專案處於聚焦狀態時使用的文字 :ref:`Color<class_Color>`\ 。只替換按鈕的正常文字顏色。禁用、懸停和按下狀態優先於這個顏色。
+Text :ref:`Color<class_Color>` used when the menu item is focused. Only replaces the normal text color of the menu item. Disabled, hovered, and pressed states take precedence over this color.
 
 .. rst-class:: classref-item-separator
 
@@ -437,7 +437,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`Color<class_Color>` **font_hover_color** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_MenuBar_theme_color_font_hover_color>`
 
-功能表專案處於懸停狀態時使用的文字 :ref:`Color<class_Color>`\ 。
+Text :ref:`Color<class_Color>` used when the menu item is being hovered.
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`Color<class_Color>` **font_hover_pressed_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_MenuBar_theme_color_font_hover_pressed_color>`
 
-功能表專案處於懸停且按下狀態時使用的文字 :ref:`Color<class_Color>`\ 。
+Text :ref:`Color<class_Color>` used when the menu item is being hovered and pressed.
 
 .. rst-class:: classref-item-separator
 
@@ -461,7 +461,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`Color<class_Color>` **font_outline_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_MenuBar_theme_color_font_outline_color>`
 
-功能表專案文字輪廓的色調。
+The tint of text outline of the menu item.
 
 .. rst-class:: classref-item-separator
 
@@ -473,7 +473,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`Color<class_Color>` **font_pressed_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_MenuBar_theme_color_font_pressed_color>`
 
-功能表專案處於按下狀態時使用的文字 :ref:`Color<class_Color>`\ 。
+Text :ref:`Color<class_Color>` used when the menu item is being pressed.
 
 .. rst-class:: classref-item-separator
 
@@ -485,7 +485,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`int<class_int>` **h_separation** = ``4`` :ref:`🔗<class_MenuBar_theme_constant_h_separation>`
 
-功能表專案之間的水平距離。
+The horizontal space between menu items.
 
 .. rst-class:: classref-item-separator
 
@@ -497,9 +497,9 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`int<class_int>` **outline_size** = ``0`` :ref:`🔗<class_MenuBar_theme_constant_outline_size>`
 
-文字輪廓的大小。
+The size of the text outline.
 
-\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_MenuBar_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓算繪才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
+\ **Note:** If using a font with :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` enabled, its :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` must be set to at least *twice* the value of :ref:`outline_size<class_MenuBar_theme_constant_outline_size>` for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
 
 .. rst-class:: classref-item-separator
 
@@ -511,7 +511,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`Font<class_Font>` **font** :ref:`🔗<class_MenuBar_theme_font_font>`
 
-功能表專案文字的字形 :ref:`Font<class_Font>`\ 。
+:ref:`Font<class_Font>` of the menu item's text.
 
 .. rst-class:: classref-item-separator
 
@@ -523,7 +523,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`int<class_int>` **font_size** :ref:`🔗<class_MenuBar_theme_font_size_font_size>`
 
-功能表專案文字的字形大小。
+Font size of the menu item's text.
 
 .. rst-class:: classref-item-separator
 
@@ -535,7 +535,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`StyleBox<class_StyleBox>` **disabled** :ref:`🔗<class_MenuBar_theme_style_disabled>`
 
-功能表專案處於禁用狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ 。
+:ref:`StyleBox<class_StyleBox>` used when the menu item is disabled.
 
 .. rst-class:: classref-item-separator
 
@@ -547,7 +547,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`StyleBox<class_StyleBox>` **disabled_mirrored** :ref:`🔗<class_MenuBar_theme_style_disabled_mirrored>`
 
-該 :ref:`OptionButton<class_OptionButton>` 處於禁用狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ （用於從右至左佈局）。
+:ref:`StyleBox<class_StyleBox>` used when the menu item is disabled (for right-to-left layouts).
 
 .. rst-class:: classref-item-separator
 
@@ -559,7 +559,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`StyleBox<class_StyleBox>` **hover** :ref:`🔗<class_MenuBar_theme_style_hover>`
 
-功能表專案處於懸停狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ 。
+:ref:`StyleBox<class_StyleBox>` used when the menu item is being hovered.
 
 .. rst-class:: classref-item-separator
 
@@ -571,7 +571,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`StyleBox<class_StyleBox>` **hover_mirrored** :ref:`🔗<class_MenuBar_theme_style_hover_mirrored>`
 
-該 :ref:`OptionButton<class_OptionButton>` 處於懸停狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ （用於從右至左佈局）。
+:ref:`StyleBox<class_StyleBox>` used when the menu item is being hovered (for right-to-left layouts).
 
 .. rst-class:: classref-item-separator
 
@@ -583,7 +583,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`StyleBox<class_StyleBox>` **hover_pressed** :ref:`🔗<class_MenuBar_theme_style_hover_pressed>`
 
-功能表專案處於按下狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ 。
+:ref:`StyleBox<class_StyleBox>` used when the menu item is being pressed and hovered at the same time.
 
 .. rst-class:: classref-item-separator
 
@@ -595,7 +595,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`StyleBox<class_StyleBox>` **hover_pressed_mirrored** :ref:`🔗<class_MenuBar_theme_style_hover_pressed_mirrored>`
 
-該 :ref:`OptionButton<class_OptionButton>` 處於按下狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ （用於從右至左佈局）。
+:ref:`StyleBox<class_StyleBox>` used when the menu item is being pressed and hovered at the same time (for right-to-left layouts).
 
 .. rst-class:: classref-item-separator
 
@@ -607,7 +607,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`StyleBox<class_StyleBox>` **normal** :ref:`🔗<class_MenuBar_theme_style_normal>`
 
-功能表專案的預設 :ref:`StyleBox<class_StyleBox>`\ 。
+Default :ref:`StyleBox<class_StyleBox>` for the menu item.
 
 .. rst-class:: classref-item-separator
 
@@ -619,7 +619,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`StyleBox<class_StyleBox>` **normal_mirrored** :ref:`🔗<class_MenuBar_theme_style_normal_mirrored>`
 
-該 :ref:`OptionButton<class_OptionButton>` 的預設 :ref:`StyleBox<class_StyleBox>`\ （用於從右至左佈局）。
+Default :ref:`StyleBox<class_StyleBox>` for the menu item (for right-to-left layouts).
 
 .. rst-class:: classref-item-separator
 
@@ -631,7 +631,7 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`StyleBox<class_StyleBox>` **pressed** :ref:`🔗<class_MenuBar_theme_style_pressed>`
 
-功能表專案處於按下狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ 。
+:ref:`StyleBox<class_StyleBox>` used when the menu item is being pressed.
 
 .. rst-class:: classref-item-separator
 
@@ -643,14 +643,14 @@ Returns ``true`` if the current system's global menu is supported and used by th
 
 :ref:`StyleBox<class_StyleBox>` **pressed_mirrored** :ref:`🔗<class_MenuBar_theme_style_pressed_mirrored>`
 
-該 :ref:`OptionButton<class_OptionButton>` 處於按下狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ （用於從右至左佈局）。
+:ref:`StyleBox<class_StyleBox>` used when the menu item is being pressed (for right-to-left layouts).
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

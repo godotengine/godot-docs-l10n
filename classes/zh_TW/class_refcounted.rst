@@ -5,16 +5,16 @@
 RefCounted
 ==========
 
-**繼承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`AESContext<class_AESContext>`, :ref:`AStar2D<class_AStar2D>`, :ref:`AStar3D<class_AStar3D>`, :ref:`AStarGrid2D<class_AStarGrid2D>`, :ref:`AudioEffectInstance<class_AudioEffectInstance>`, :ref:`AudioSample<class_AudioSample>`, :ref:`AudioSamplePlayback<class_AudioSamplePlayback>`, :ref:`AudioStreamPlayback<class_AudioStreamPlayback>`, :ref:`CameraFeed<class_CameraFeed>`, :ref:`CharFXTransform<class_CharFXTransform>`, :ref:`ConfigFile<class_ConfigFile>`, :ref:`Crypto<class_Crypto>`, :ref:`DirAccess<class_DirAccess>`, :ref:`DTLSServer<class_DTLSServer>`, :ref:`EditorContextMenuPlugin<class_EditorContextMenuPlugin>`, :ref:`EditorDebuggerPlugin<class_EditorDebuggerPlugin>`, :ref:`EditorDebuggerSession<class_EditorDebuggerSession>`, :ref:`EditorExportPlatform<class_EditorExportPlatform>`, :ref:`EditorExportPlugin<class_EditorExportPlugin>`, :ref:`EditorExportPreset<class_EditorExportPreset>`, :ref:`EditorFeatureProfile<class_EditorFeatureProfile>`, :ref:`EditorFileSystemImportFormatSupportQuery<class_EditorFileSystemImportFormatSupportQuery>`, :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>`, :ref:`EditorResourceConversionPlugin<class_EditorResourceConversionPlugin>`, :ref:`EditorResourcePreviewGenerator<class_EditorResourcePreviewGenerator>`, :ref:`EditorResourceTooltipPlugin<class_EditorResourceTooltipPlugin>`, :ref:`EditorSceneFormatImporter<class_EditorSceneFormatImporter>`, :ref:`EditorScenePostImport<class_EditorScenePostImport>`, :ref:`EditorScenePostImportPlugin<class_EditorScenePostImportPlugin>`, :ref:`EditorScript<class_EditorScript>`, :ref:`EditorTranslationParserPlugin<class_EditorTranslationParserPlugin>`, :ref:`EncodedObjectAsID<class_EncodedObjectAsID>`, :ref:`ENetConnection<class_ENetConnection>`, :ref:`EngineProfiler<class_EngineProfiler>`, :ref:`Expression<class_Expression>`, :ref:`FileAccess<class_FileAccess>`, :ref:`GLTFObjectModelProperty<class_GLTFObjectModelProperty>`, :ref:`HashingContext<class_HashingContext>`, :ref:`HMACContext<class_HMACContext>`, :ref:`HTTPClient<class_HTTPClient>`, :ref:`ImageFormatLoader<class_ImageFormatLoader>`, :ref:`JavaClass<class_JavaClass>`, :ref:`JavaObject<class_JavaObject>`, :ref:`JavaScriptObject<class_JavaScriptObject>`, :ref:`KinematicCollision2D<class_KinematicCollision2D>`, :ref:`KinematicCollision3D<class_KinematicCollision3D>`, :ref:`Lightmapper<class_Lightmapper>`, :ref:`Logger<class_Logger>`, :ref:`MeshConvexDecompositionSettings<class_MeshConvexDecompositionSettings>`, :ref:`MeshDataTool<class_MeshDataTool>`, :ref:`MultiplayerAPI<class_MultiplayerAPI>`, :ref:`Mutex<class_Mutex>`, :ref:`NavigationPathQueryParameters2D<class_NavigationPathQueryParameters2D>`, :ref:`NavigationPathQueryParameters3D<class_NavigationPathQueryParameters3D>`, :ref:`NavigationPathQueryResult2D<class_NavigationPathQueryResult2D>`, :ref:`NavigationPathQueryResult3D<class_NavigationPathQueryResult3D>`, :ref:`Node3DGizmo<class_Node3DGizmo>`, :ref:`OggPacketSequencePlayback<class_OggPacketSequencePlayback>`, :ref:`OpenXRAPIExtension<class_OpenXRAPIExtension>`, :ref:`OpenXRFutureResult<class_OpenXRFutureResult>`, :ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>`, :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`, :ref:`OpenXRStructureBase<class_OpenXRStructureBase>`, :ref:`PackedDataContainerRef<class_PackedDataContainerRef>`, :ref:`PacketPeer<class_PacketPeer>`, :ref:`PCKPacker<class_PCKPacker>`, :ref:`PhysicsPointQueryParameters2D<class_PhysicsPointQueryParameters2D>`, :ref:`PhysicsPointQueryParameters3D<class_PhysicsPointQueryParameters3D>`, :ref:`PhysicsRayQueryParameters2D<class_PhysicsRayQueryParameters2D>`, :ref:`PhysicsRayQueryParameters3D<class_PhysicsRayQueryParameters3D>`, :ref:`PhysicsShapeQueryParameters2D<class_PhysicsShapeQueryParameters2D>`, :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>`, :ref:`PhysicsTestMotionParameters2D<class_PhysicsTestMotionParameters2D>`, :ref:`PhysicsTestMotionParameters3D<class_PhysicsTestMotionParameters3D>`, :ref:`PhysicsTestMotionResult2D<class_PhysicsTestMotionResult2D>`, :ref:`PhysicsTestMotionResult3D<class_PhysicsTestMotionResult3D>`, :ref:`RandomNumberGenerator<class_RandomNumberGenerator>`, :ref:`RDAttachmentFormat<class_RDAttachmentFormat>`, :ref:`RDFramebufferPass<class_RDFramebufferPass>`, :ref:`RDPipelineColorBlendState<class_RDPipelineColorBlendState>`, :ref:`RDPipelineColorBlendStateAttachment<class_RDPipelineColorBlendStateAttachment>`, :ref:`RDPipelineDepthStencilState<class_RDPipelineDepthStencilState>`, :ref:`RDPipelineMultisampleState<class_RDPipelineMultisampleState>`, :ref:`RDPipelineRasterizationState<class_RDPipelineRasterizationState>`, :ref:`RDPipelineSpecializationConstant<class_RDPipelineSpecializationConstant>`, :ref:`RDSamplerState<class_RDSamplerState>`, :ref:`RDShaderSource<class_RDShaderSource>`, :ref:`RDTextureFormat<class_RDTextureFormat>`, :ref:`RDTextureView<class_RDTextureView>`, :ref:`RDUniform<class_RDUniform>`, :ref:`RDVertexAttribute<class_RDVertexAttribute>`, :ref:`RegEx<class_RegEx>`, :ref:`RegExMatch<class_RegExMatch>`, :ref:`RenderSceneBuffers<class_RenderSceneBuffers>`, :ref:`RenderSceneBuffersConfiguration<class_RenderSceneBuffersConfiguration>`, :ref:`Resource<class_Resource>`, :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`, :ref:`ResourceFormatSaver<class_ResourceFormatSaver>`, :ref:`ResourceImporter<class_ResourceImporter>`, :ref:`SceneState<class_SceneState>`, :ref:`SceneTreeTimer<class_SceneTreeTimer>`, :ref:`ScriptBacktrace<class_ScriptBacktrace>`, :ref:`Semaphore<class_Semaphore>`, :ref:`SkinReference<class_SkinReference>`, :ref:`SocketServer<class_SocketServer>`, :ref:`StreamPeer<class_StreamPeer>`, :ref:`SurfaceTool<class_SurfaceTool>`, :ref:`TextLine<class_TextLine>`, :ref:`TextParagraph<class_TextParagraph>`, :ref:`TextServer<class_TextServer>`, :ref:`Thread<class_Thread>`, :ref:`TLSOptions<class_TLSOptions>`, :ref:`TranslationDomain<class_TranslationDomain>`, :ref:`TriangleMesh<class_TriangleMesh>`, :ref:`Tween<class_Tween>`, :ref:`Tweener<class_Tweener>`, :ref:`UDPServer<class_UDPServer>`, :ref:`UPNP<class_UPNP>`, :ref:`UPNPDevice<class_UPNPDevice>`, :ref:`WeakRef<class_WeakRef>`, :ref:`WebRTCPeerConnection<class_WebRTCPeerConnection>`, :ref:`XMLParser<class_XMLParser>`, :ref:`XRInterface<class_XRInterface>`, :ref:`XRPose<class_XRPose>`, :ref:`XRTracker<class_XRTracker>`, :ref:`ZIPPacker<class_ZIPPacker>`, :ref:`ZIPReader<class_ZIPReader>`
+**Inherited By:** :ref:`AESContext<class_AESContext>`, :ref:`AStar2D<class_AStar2D>`, :ref:`AStar3D<class_AStar3D>`, :ref:`AStarGrid2D<class_AStarGrid2D>`, :ref:`AudioEffectInstance<class_AudioEffectInstance>`, :ref:`AudioSample<class_AudioSample>`, :ref:`AudioSamplePlayback<class_AudioSamplePlayback>`, :ref:`AudioStreamPlayback<class_AudioStreamPlayback>`, :ref:`CameraFeed<class_CameraFeed>`, :ref:`CharFXTransform<class_CharFXTransform>`, :ref:`ConfigFile<class_ConfigFile>`, :ref:`Crypto<class_Crypto>`, :ref:`DirAccess<class_DirAccess>`, :ref:`DTLSServer<class_DTLSServer>`, :ref:`EditorContextMenuPlugin<class_EditorContextMenuPlugin>`, :ref:`EditorDebuggerPlugin<class_EditorDebuggerPlugin>`, :ref:`EditorDebuggerSession<class_EditorDebuggerSession>`, :ref:`EditorExportPlatform<class_EditorExportPlatform>`, :ref:`EditorExportPlugin<class_EditorExportPlugin>`, :ref:`EditorExportPreset<class_EditorExportPreset>`, :ref:`EditorFeatureProfile<class_EditorFeatureProfile>`, :ref:`EditorFileSystemImportFormatSupportQuery<class_EditorFileSystemImportFormatSupportQuery>`, :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>`, :ref:`EditorResourceConversionPlugin<class_EditorResourceConversionPlugin>`, :ref:`EditorResourcePreviewGenerator<class_EditorResourcePreviewGenerator>`, :ref:`EditorResourceTooltipPlugin<class_EditorResourceTooltipPlugin>`, :ref:`EditorSceneFormatImporter<class_EditorSceneFormatImporter>`, :ref:`EditorScenePostImport<class_EditorScenePostImport>`, :ref:`EditorScenePostImportPlugin<class_EditorScenePostImportPlugin>`, :ref:`EditorScript<class_EditorScript>`, :ref:`EditorTranslationParserPlugin<class_EditorTranslationParserPlugin>`, :ref:`EncodedObjectAsID<class_EncodedObjectAsID>`, :ref:`ENetConnection<class_ENetConnection>`, :ref:`EngineProfiler<class_EngineProfiler>`, :ref:`Expression<class_Expression>`, :ref:`FileAccess<class_FileAccess>`, :ref:`GLTFObjectModelProperty<class_GLTFObjectModelProperty>`, :ref:`HashingContext<class_HashingContext>`, :ref:`HMACContext<class_HMACContext>`, :ref:`HTTPClient<class_HTTPClient>`, :ref:`ImageFormatLoader<class_ImageFormatLoader>`, :ref:`JavaClass<class_JavaClass>`, :ref:`JavaObject<class_JavaObject>`, :ref:`JavaScriptObject<class_JavaScriptObject>`, :ref:`KinematicCollision2D<class_KinematicCollision2D>`, :ref:`KinematicCollision3D<class_KinematicCollision3D>`, :ref:`Lightmapper<class_Lightmapper>`, :ref:`Logger<class_Logger>`, :ref:`MeshConvexDecompositionSettings<class_MeshConvexDecompositionSettings>`, :ref:`MeshDataTool<class_MeshDataTool>`, :ref:`MultiplayerAPI<class_MultiplayerAPI>`, :ref:`Mutex<class_Mutex>`, :ref:`NavigationPathQueryParameters2D<class_NavigationPathQueryParameters2D>`, :ref:`NavigationPathQueryParameters3D<class_NavigationPathQueryParameters3D>`, :ref:`NavigationPathQueryResult2D<class_NavigationPathQueryResult2D>`, :ref:`NavigationPathQueryResult3D<class_NavigationPathQueryResult3D>`, :ref:`Node3DGizmo<class_Node3DGizmo>`, :ref:`OggPacketSequencePlayback<class_OggPacketSequencePlayback>`, :ref:`OpenXRAPIExtension<class_OpenXRAPIExtension>`, :ref:`OpenXRFutureResult<class_OpenXRFutureResult>`, :ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>`, :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`, :ref:`OpenXRStructureBase<class_OpenXRStructureBase>`, :ref:`PackedDataContainerRef<class_PackedDataContainerRef>`, :ref:`PacketPeer<class_PacketPeer>`, :ref:`PCKPacker<class_PCKPacker>`, :ref:`PhysicsPointQueryParameters2D<class_PhysicsPointQueryParameters2D>`, :ref:`PhysicsPointQueryParameters3D<class_PhysicsPointQueryParameters3D>`, :ref:`PhysicsRayQueryParameters2D<class_PhysicsRayQueryParameters2D>`, :ref:`PhysicsRayQueryParameters3D<class_PhysicsRayQueryParameters3D>`, :ref:`PhysicsShapeQueryParameters2D<class_PhysicsShapeQueryParameters2D>`, :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>`, :ref:`PhysicsTestMotionParameters2D<class_PhysicsTestMotionParameters2D>`, :ref:`PhysicsTestMotionParameters3D<class_PhysicsTestMotionParameters3D>`, :ref:`PhysicsTestMotionResult2D<class_PhysicsTestMotionResult2D>`, :ref:`PhysicsTestMotionResult3D<class_PhysicsTestMotionResult3D>`, :ref:`RandomNumberGenerator<class_RandomNumberGenerator>`, :ref:`RDAttachmentFormat<class_RDAttachmentFormat>`, :ref:`RDFramebufferPass<class_RDFramebufferPass>`, :ref:`RDPipelineColorBlendState<class_RDPipelineColorBlendState>`, :ref:`RDPipelineColorBlendStateAttachment<class_RDPipelineColorBlendStateAttachment>`, :ref:`RDPipelineDepthStencilState<class_RDPipelineDepthStencilState>`, :ref:`RDPipelineMultisampleState<class_RDPipelineMultisampleState>`, :ref:`RDPipelineRasterizationState<class_RDPipelineRasterizationState>`, :ref:`RDPipelineSpecializationConstant<class_RDPipelineSpecializationConstant>`, :ref:`RDSamplerState<class_RDSamplerState>`, :ref:`RDShaderSource<class_RDShaderSource>`, :ref:`RDTextureFormat<class_RDTextureFormat>`, :ref:`RDTextureView<class_RDTextureView>`, :ref:`RDUniform<class_RDUniform>`, :ref:`RDVertexAttribute<class_RDVertexAttribute>`, :ref:`RegEx<class_RegEx>`, :ref:`RegExMatch<class_RegExMatch>`, :ref:`RenderSceneBuffers<class_RenderSceneBuffers>`, :ref:`RenderSceneBuffersConfiguration<class_RenderSceneBuffersConfiguration>`, :ref:`Resource<class_Resource>`, :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`, :ref:`ResourceFormatSaver<class_ResourceFormatSaver>`, :ref:`ResourceImporter<class_ResourceImporter>`, :ref:`SceneState<class_SceneState>`, :ref:`SceneTreeTimer<class_SceneTreeTimer>`, :ref:`ScriptBacktrace<class_ScriptBacktrace>`, :ref:`Semaphore<class_Semaphore>`, :ref:`SkinReference<class_SkinReference>`, :ref:`SocketServer<class_SocketServer>`, :ref:`StreamPeer<class_StreamPeer>`, :ref:`SurfaceTool<class_SurfaceTool>`, :ref:`TextLine<class_TextLine>`, :ref:`TextParagraph<class_TextParagraph>`, :ref:`TextServer<class_TextServer>`, :ref:`Thread<class_Thread>`, :ref:`TLSOptions<class_TLSOptions>`, :ref:`TranslationDomain<class_TranslationDomain>`, :ref:`TriangleMesh<class_TriangleMesh>`, :ref:`Tween<class_Tween>`, :ref:`Tweener<class_Tweener>`, :ref:`UDPServer<class_UDPServer>`, :ref:`UPNP<class_UPNP>`, :ref:`UPNPDevice<class_UPNPDevice>`, :ref:`WeakRef<class_WeakRef>`, :ref:`WebRTCPeerConnection<class_WebRTCPeerConnection>`, :ref:`XMLParser<class_XMLParser>`, :ref:`XRInterface<class_XRInterface>`, :ref:`XRPose<class_XRPose>`, :ref:`XRTracker<class_XRTracker>`, :ref:`ZIPPacker<class_ZIPPacker>`, :ref:`ZIPReader<class_ZIPReader>`
 
-引用計數物件的基底類別。
+Base class for reference-counted objects.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 Base class for any object that keeps a reference count. :ref:`Resource<class_Resource>` and many other helper objects inherit this class.
 
@@ -28,15 +28,15 @@ In the vast majority of use cases, instantiating and using **RefCounted**-derive
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`何時以及如何避免為任何事情使用節點 <../tutorials/best_practices/node_alternatives>`
+- :doc:`When and how to avoid using nodes for everything <../tutorials/best_practices/node_alternatives>`
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -57,8 +57,8 @@ In the vast majority of use cases, instantiating and using **RefCounted**-derive
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_RefCounted_method_get_reference_count:
 
@@ -66,7 +66,7 @@ In the vast majority of use cases, instantiating and using **RefCounted**-derive
 
 :ref:`int<class_int>` **get_reference_count**\ (\ ) |const| :ref:`🔗<class_RefCounted_method_get_reference_count>`
 
-返回目前的引用計數。
+Returns the current reference count.
 
 .. rst-class:: classref-item-separator
 
@@ -78,9 +78,9 @@ In the vast majority of use cases, instantiating and using **RefCounted**-derive
 
 :ref:`bool<class_bool>` **init_ref**\ (\ ) :ref:`🔗<class_RefCounted_method_init_ref>`
 
-初始化內部引用計數器。只有在你真的知道你在做什麼的時候才使用這個。
+Initializes the internal reference counter. Use this only if you really know what you are doing.
 
-返回初始化是否成功。
+Returns whether the initialization was successful.
 
 .. rst-class:: classref-item-separator
 
@@ -92,9 +92,9 @@ In the vast majority of use cases, instantiating and using **RefCounted**-derive
 
 :ref:`bool<class_bool>` **reference**\ (\ ) :ref:`🔗<class_RefCounted_method_reference>`
 
-內部引用差異量計數器。只有在你真的知道你在做什麼的時候才使用這個。
+Increments the internal reference counter. Use this only if you really know what you are doing.
 
-如果差異量成功，返回 ``true``\ ，否則返回 ``false``\ 。
+Returns ``true`` if the increment was successful, ``false`` otherwise.
 
 .. rst-class:: classref-item-separator
 
@@ -110,12 +110,12 @@ Decrements the internal reference counter. Use this only if you really know what
 
 Returns ``true`` if the object should be freed after the decrement, ``false`` otherwise.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

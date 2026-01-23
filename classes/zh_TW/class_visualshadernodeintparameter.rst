@@ -5,21 +5,21 @@
 VisualShaderNodeIntParameter
 ============================
 
-**繼承：** :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-:ref:`int<class_int>` 型別著色器參數（uniform）的視覺化著色器節點。
+A visual shader node for shader parameter (uniform) of type :ref:`int<class_int>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-:ref:`int<class_int>` 型別的 :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>`\ 。可以自訂能夠接受的值的範圍。
+A :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>` of type :ref:`int<class_int>`. Offers additional customization for range of accepted values.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ VisualShaderNodeIntParameter
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_VisualShaderNodeIntParameter_Hint:
 
@@ -61,7 +61,7 @@ enum **Hint**: :ref:`🔗<enum_VisualShaderNodeIntParameter_Hint>`
 
 :ref:`Hint<enum_VisualShaderNodeIntParameter_Hint>` **HINT_NONE** = ``0``
 
-參數的取值沒有約束。
+The parameter will not constrain its value.
 
 .. _class_VisualShaderNodeIntParameter_constant_HINT_RANGE:
 
@@ -69,7 +69,7 @@ enum **Hint**: :ref:`🔗<enum_VisualShaderNodeIntParameter_Hint>`
 
 :ref:`Hint<enum_VisualShaderNodeIntParameter_Hint>` **HINT_RANGE** = ``1``
 
-參數的取值必須在指定的 :ref:`min<class_VisualShaderNodeIntParameter_property_min>`/:ref:`max<class_VisualShaderNodeIntParameter_property_max>` 範圍內。
+The parameter's value must be within the specified :ref:`min<class_VisualShaderNodeIntParameter_property_min>`/:ref:`max<class_VisualShaderNodeIntParameter_property_max>` range.
 
 .. _class_VisualShaderNodeIntParameter_constant_HINT_RANGE_STEP:
 
@@ -77,7 +77,7 @@ enum **Hint**: :ref:`🔗<enum_VisualShaderNodeIntParameter_Hint>`
 
 :ref:`Hint<enum_VisualShaderNodeIntParameter_Hint>` **HINT_RANGE_STEP** = ``2``
 
-參數的取值必須在指定的範圍內，值與值之間的步長為給定的 :ref:`step<class_VisualShaderNodeIntParameter_property_step>`\ 。
+The parameter's value must be within the specified range, with the given :ref:`step<class_VisualShaderNodeIntParameter_property_step>` between values.
 
 .. _class_VisualShaderNodeIntParameter_constant_HINT_ENUM:
 
@@ -93,7 +93,7 @@ The parameter uses an enum to associate preset values to names in the editor.
 
 :ref:`Hint<enum_VisualShaderNodeIntParameter_Hint>` **HINT_MAX** = ``4``
 
-代表 :ref:`Hint<enum_VisualShaderNodeIntParameter_Hint>` 列舉的大小。
+Represents the size of the :ref:`Hint<enum_VisualShaderNodeIntParameter_Hint>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -101,8 +101,8 @@ The parameter uses an enum to associate preset values to names in the editor.
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_VisualShaderNodeIntParameter_property_default_value:
 
@@ -115,7 +115,7 @@ The parameter uses an enum to associate preset values to names in the editor.
 - |void| **set_default_value**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_default_value**\ (\ )
 
-這個參數的預設值，外部沒有設值時使用。必須啟用 :ref:`default_value_enabled<class_VisualShaderNodeIntParameter_property_default_value_enabled>`\ ；否則預設為 ``0``\ 。
+Default value of this parameter, which will be used if not set externally. :ref:`default_value_enabled<class_VisualShaderNodeIntParameter_property_default_value_enabled>` must be enabled; defaults to ``0`` otherwise.
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ The parameter uses an enum to associate preset values to names in the editor.
 - |void| **set_default_value_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_default_value_enabled**\ (\ )
 
-如果為 ``true``\ ，則該節點有自訂預設值。
+If ``true``, the node will have a custom default value.
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ The names used for the enum select in the editor. :ref:`hint<class_VisualShaderN
 - |void| **set_hint**\ (\ value\: :ref:`Hint<enum_VisualShaderNodeIntParameter_Hint>`\ )
 - :ref:`Hint<enum_VisualShaderNodeIntParameter_Hint>` **get_hint**\ (\ )
 
-該節點的範圍提示。請用它來自訂有效的參數範圍。
+Range hint of this node. Use it to customize valid parameter range.
 
 .. rst-class:: classref-item-separator
 
@@ -185,7 +185,7 @@ The names used for the enum select in the editor. :ref:`hint<class_VisualShaderN
 - |void| **set_max**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max**\ (\ )
 
-這個參數所能接受的最大值。\ :ref:`hint<class_VisualShaderNodeIntParameter_property_hint>` 必須為 :ref:`HINT_RANGE<class_VisualShaderNodeIntParameter_constant_HINT_RANGE>` 或 :ref:`HINT_RANGE_STEP<class_VisualShaderNodeIntParameter_constant_HINT_RANGE_STEP>` 才會生效。
+The maximum value this parameter can take. :ref:`hint<class_VisualShaderNodeIntParameter_property_hint>` must be either :ref:`HINT_RANGE<class_VisualShaderNodeIntParameter_constant_HINT_RANGE>` or :ref:`HINT_RANGE_STEP<class_VisualShaderNodeIntParameter_constant_HINT_RANGE_STEP>` for this to take effect.
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ The names used for the enum select in the editor. :ref:`hint<class_VisualShaderN
 - |void| **set_min**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_min**\ (\ )
 
-這個參數所能接受的最小值。\ :ref:`hint<class_VisualShaderNodeIntParameter_property_hint>` 必須為 :ref:`HINT_RANGE<class_VisualShaderNodeIntParameter_constant_HINT_RANGE>` 或 :ref:`HINT_RANGE_STEP<class_VisualShaderNodeIntParameter_constant_HINT_RANGE_STEP>` 才會生效。
+The minimum value this parameter can take. :ref:`hint<class_VisualShaderNodeIntParameter_property_hint>` must be either :ref:`HINT_RANGE<class_VisualShaderNodeIntParameter_constant_HINT_RANGE>` or :ref:`HINT_RANGE_STEP<class_VisualShaderNodeIntParameter_constant_HINT_RANGE_STEP>` for this to take effect.
 
 .. rst-class:: classref-item-separator
 
@@ -219,14 +219,14 @@ The names used for the enum select in the editor. :ref:`hint<class_VisualShaderN
 - |void| **set_step**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_step**\ (\ )
 
-參數值之間的步長。迫使參數成為給定值的倍數。\ :ref:`hint<class_VisualShaderNodeIntParameter_property_hint>` 必須為 :ref:`HINT_RANGE_STEP<class_VisualShaderNodeIntParameter_constant_HINT_RANGE_STEP>` 才能生效。
+The step between parameter's values. Forces the parameter to be a multiple of the given value. :ref:`hint<class_VisualShaderNodeIntParameter_property_hint>` must be :ref:`HINT_RANGE_STEP<class_VisualShaderNodeIntParameter_constant_HINT_RANGE_STEP>` for this to take effect.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

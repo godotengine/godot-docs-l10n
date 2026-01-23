@@ -5,23 +5,23 @@
 Font
 ====
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`FontFile<class_FontFile>`, :ref:`FontVariation<class_FontVariation>`, :ref:`SystemFont<class_SystemFont>`
+**Inherited By:** :ref:`FontFile<class_FontFile>`, :ref:`FontVariation<class_FontVariation>`, :ref:`SystemFont<class_SystemFont>`
 
-字形和字形變體的抽象基底類別。
+Abstract base class for fonts and font variations.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-各種字形型別的抽象基底類別。提供了繪製文字以及內省字形字元的方法。
+Abstract base class for different font types. It has methods for drawing text and font character introspection.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -32,8 +32,8 @@ Font
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -110,8 +110,8 @@ Font
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_Font_property_fallbacks:
 
@@ -124,7 +124,9 @@ Font
 - |void| **set_fallbacks**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`Font<class_Font>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`Font<class_Font>`\] **get_fallbacks**\ (\ )
 
-如果在該 :ref:`FontVariation<class_FontVariation>` 中找不到字形，則用作替代的退回 **Font** 陣列。如果沒有設定，則使用 :ref:`FontVariation.base_font<class_FontVariation_property_base_font>` 的退回字形。
+Array of fallback **Font**\ s to use as a substitute if a glyph is not found in this current **Font**.
+
+If this array is empty in a :ref:`FontVariation<class_FontVariation>`, the :ref:`FontVariation.base_font<class_FontVariation_property_base_font>`'s fallbacks are used instead.
 
 .. rst-class:: classref-section-separator
 
@@ -132,8 +134,8 @@ Font
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_Font_method_draw_char:
 
@@ -225,7 +227,7 @@ See also :ref:`CanvasItem.draw_string_outline()<class_CanvasItem_method_draw_str
 
 :ref:`RID<class_RID>` **find_variation**\ (\ variation_coordinates\: :ref:`Dictionary<class_Dictionary>`, face_index\: :ref:`int<class_int>` = 0, strength\: :ref:`float<class_float>` = 0.0, transform\: :ref:`Transform2D<class_Transform2D>` = Transform2D(1, 0, 0, 1, 0, 0), spacing_top\: :ref:`int<class_int>` = 0, spacing_bottom\: :ref:`int<class_int>` = 0, spacing_space\: :ref:`int<class_int>` = 0, spacing_glyph\: :ref:`int<class_int>` = 0, baseline_offset\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_Font_method_find_variation>`
 
-返回特定變體的字形快取的 :ref:`TextServer<class_TextServer>` RID。
+Returns :ref:`TextServer<class_TextServer>` RID of the font cache for specific variation.
 
 .. rst-class:: classref-item-separator
 
@@ -237,9 +239,9 @@ See also :ref:`CanvasItem.draw_string_outline()<class_CanvasItem_method_draw_str
 
 :ref:`float<class_float>` **get_ascent**\ (\ font_size\: :ref:`int<class_int>` = 16\ ) |const| :ref:`🔗<class_Font_method_get_ascent>`
 
-返回平均上高（基線以上的圖元數）。
+Returns the average font ascent (number of pixels above the baseline).
 
-\ **注意：**\ 字串的實際上高是本文相關的，並且可能與該函式返回的值有很大不同。僅將其用作粗略估計（例如作為空行的上高）。
+\ **Note:** Real ascent of the string is context-dependent and can be significantly different from the value returned by this function. Use it only as rough estimate (e.g. as the ascent of empty line).
 
 .. rst-class:: classref-item-separator
 
@@ -265,9 +267,9 @@ Returns the size of a character. Does not take kerning into account.
 
 :ref:`float<class_float>` **get_descent**\ (\ font_size\: :ref:`int<class_int>` = 16\ ) |const| :ref:`🔗<class_Font_method_get_descent>`
 
-返回平均下深（基線以下的圖元數）。
+Returns the average font descent (number of pixels below the baseline).
 
-\ **注意：**\ 字串的真實下深是依賴於本文的，並且可能與此函式返回的值有很大不同。僅將其用作粗略估計（例如作為空行的下深）。
+\ **Note:** Real descent of the string is context-dependent and can be significantly different from the value returned by this function. Use it only as rough estimate (e.g. as the descent of empty line).
 
 .. rst-class:: classref-item-separator
 
@@ -279,7 +281,7 @@ Returns the size of a character. Does not take kerning into account.
 
 :ref:`int<class_int>` **get_face_count**\ (\ ) |const| :ref:`🔗<class_Font_method_get_face_count>`
 
-返回 TrueType / OpenType 集合中的字形數。
+Returns number of faces in the TrueType / OpenType collection.
 
 .. rst-class:: classref-item-separator
 
@@ -291,7 +293,7 @@ Returns the size of a character. Does not take kerning into account.
 
 :ref:`String<class_String>` **get_font_name**\ (\ ) |const| :ref:`🔗<class_Font_method_get_font_name>`
 
-返回字形家族名稱。
+Returns font family name.
 
 .. rst-class:: classref-item-separator
 
@@ -303,7 +305,7 @@ Returns the size of a character. Does not take kerning into account.
 
 :ref:`int<class_int>` **get_font_stretch**\ (\ ) |const| :ref:`🔗<class_Font_method_get_font_stretch>`
 
-返回與正常寬度相比的字形拉伸量。一個介於 ``50%`` 和 ``200%`` 之間的百分比值。
+Returns font stretch amount, compared to a normal width. A percentage value between ``50%`` and ``200%``.
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +329,7 @@ Returns font style flags.
 
 :ref:`String<class_String>` **get_font_style_name**\ (\ ) |const| :ref:`🔗<class_Font_method_get_font_style_name>`
 
-返回字形樣式名稱。
+Returns font style name.
 
 .. rst-class:: classref-item-separator
 
@@ -339,7 +341,7 @@ Returns font style flags.
 
 :ref:`int<class_int>` **get_font_weight**\ (\ ) |const| :ref:`🔗<class_Font_method_get_font_weight>`
 
-返回該字形的字重（粗度）。一個在 ``100...999`` 範圍內的值，正常字形字重為 ``400``\ ，粗體字形字重為 ``700``\ 。
+Returns weight (boldness) of the font. A value in the ``100...999`` range, normal font weight is ``400``, bold font weight is ``700``.
 
 .. rst-class:: classref-item-separator
 
@@ -351,9 +353,9 @@ Returns font style flags.
 
 :ref:`float<class_float>` **get_height**\ (\ font_size\: :ref:`int<class_int>` = 16\ ) |const| :ref:`🔗<class_Font_method_get_height>`
 
-返回總的平均字形高度（上高加下深），單位為圖元。
+Returns the total average font height (ascent plus descent) in pixels.
 
-\ **注意：**\ 字串的實際高度取決於本文，並且可能與該函式返回的值有很大差異。僅將其用作粗略估計（例如作為空行的高度）。
+\ **Note:** Real height of the string is context-dependent and can be significantly different from the value returned by this function. Use it only as rough estimate (e.g. as the height of empty line).
 
 .. rst-class:: classref-item-separator
 
@@ -365,9 +367,9 @@ Returns font style flags.
 
 :ref:`Vector2<class_Vector2>` **get_multiline_string_size**\ (\ text\: :ref:`String<class_String>`, alignment\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` = 0, width\: :ref:`float<class_float>` = -1, font_size\: :ref:`int<class_int>` = 16, max_lines\: :ref:`int<class_int>` = -1, brk_flags\: |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\] = 3, justification_flags\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] = 3, direction\: :ref:`Direction<enum_TextServer_Direction>` = 0, orientation\: :ref:`Orientation<enum_TextServer_Orientation>` = 0\ ) |const| :ref:`🔗<class_Font_method_get_multiline_string_size>`
 
-返回分割成行的字串的邊界框的大小，將字距調整和前進量考慮在內。
+Returns the size of a bounding box of a string broken into the lines, taking kerning and advance into account.
 
-另見 :ref:`draw_multiline_string()<class_Font_method_draw_multiline_string>`\ 。
+See also :ref:`draw_multiline_string()<class_Font_method_draw_multiline_string>`.
 
 .. rst-class:: classref-item-separator
 
@@ -379,7 +381,7 @@ Returns font style flags.
 
 :ref:`Dictionary<class_Dictionary>` **get_opentype_features**\ (\ ) |const| :ref:`🔗<class_Font_method_get_opentype_features>`
 
-返回一組 OpenType 功能標籤。更多資訊：\ `OpenType 功能標籤 <https://docs.microsoft.com/en-us/typography/opentype/spec/featuretags>`__\ 。
+Returns a set of OpenType feature tags. More info: `OpenType feature tags <https://docs.microsoft.com/en-us/typography/opentype/spec/featuretags>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -391,7 +393,7 @@ Returns font style flags.
 
 :ref:`Dictionary<class_Dictionary>` **get_ot_name_strings**\ (\ ) |const| :ref:`🔗<class_Font_method_get_ot_name_strings>`
 
-返回 OpenType 字形名稱字串的 :ref:`Dictionary<class_Dictionary>`\ （當地語系化的字形名稱、版本、描述、許可資訊、範例文字等）。
+Returns :ref:`Dictionary<class_Dictionary>` with OpenType font name strings (localized font names, version, description, license information, sample text, etc.).
 
 .. rst-class:: classref-item-separator
 
@@ -403,7 +405,7 @@ Returns font style flags.
 
 :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **get_rids**\ (\ ) |const| :ref:`🔗<class_Font_method_get_rids>`
 
-返回有效 **Font** :ref:`RID<class_RID>` 的 :ref:`Array<class_Array>`\ ，可以將其傳給 :ref:`TextServer<class_TextServer>` 的方法。
+Returns :ref:`Array<class_Array>` of valid **Font** :ref:`RID<class_RID>`\ s, which can be passed to the :ref:`TextServer<class_TextServer>` methods.
 
 .. rst-class:: classref-item-separator
 
@@ -427,9 +429,9 @@ Returns the amount of spacing for the given ``spacing`` type.
 
 :ref:`Vector2<class_Vector2>` **get_string_size**\ (\ text\: :ref:`String<class_String>`, alignment\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` = 0, width\: :ref:`float<class_float>` = -1, font_size\: :ref:`int<class_int>` = 16, justification_flags\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] = 3, direction\: :ref:`Direction<enum_TextServer_Direction>` = 0, orientation\: :ref:`Orientation<enum_TextServer_Orientation>` = 0\ ) |const| :ref:`🔗<class_Font_method_get_string_size>`
 
-返回一個單行字串的邊界框的大小，考慮字距調整、提前量和子圖元定位。另見 :ref:`get_multiline_string_size()<class_Font_method_get_multiline_string_size>` 和 :ref:`draw_string()<class_Font_method_draw_string>`\ 。
+Returns the size of a bounding box of a single-line string, taking kerning, advance and subpixel positioning into account. See also :ref:`get_multiline_string_size()<class_Font_method_get_multiline_string_size>` and :ref:`draw_string()<class_Font_method_draw_string>`.
 
-例如，要獲取單行 Label 所顯示的字串大小，請使用：
+For example, to get the string size as displayed by a single-line Label, use:
 
 
 .. tabs::
@@ -445,9 +447,9 @@ Returns the amount of spacing for the given ``spacing`` type.
 
 
 
-\ **注意：**\ 由於 :ref:`get_string_size()<class_Font_method_get_string_size>` 考慮了字距調整、提前量和子圖元定位元，因此對字串的子字串使用單獨的 :ref:`get_string_size()<class_Font_method_get_string_size>` 呼叫，然後將結果加在一起，將返回與對完整字串使用單個 :ref:`get_string_size()<class_Font_method_get_string_size>` 呼叫的返回值不同的結果 。
+\ **Note:** Since kerning, advance and subpixel positioning are taken into account by :ref:`get_string_size()<class_Font_method_get_string_size>`, using separate :ref:`get_string_size()<class_Font_method_get_string_size>` calls on substrings of a string then adding the results together will return a different result compared to using a single :ref:`get_string_size()<class_Font_method_get_string_size>` call on the full string.
 
-\ **注意：**\ 字串的實際高度取決於本文，並且可能與 :ref:`get_height()<class_Font_method_get_height>` 返回的值有很大不同。
+\ **Note:** Real height of the string is context-dependent and can be significantly different from the value returned by :ref:`get_height()<class_Font_method_get_height>`.
 
 .. rst-class:: classref-item-separator
 
@@ -459,9 +461,9 @@ Returns the amount of spacing for the given ``spacing`` type.
 
 :ref:`String<class_String>` **get_supported_chars**\ (\ ) |const| :ref:`🔗<class_Font_method_get_supported_chars>`
 
-返回一個包含字形中所有可用字元的字串。
+Returns a string containing all the characters available in the font.
 
-如果給定字元被包含在多個字形資料來源中，則它在返回的字串中只出現一次。
+If a given character is included in more than one font data source, it appears only once in the returned string.
 
 .. rst-class:: classref-item-separator
 
@@ -473,7 +475,7 @@ Returns the amount of spacing for the given ``spacing`` type.
 
 :ref:`Dictionary<class_Dictionary>` **get_supported_feature_list**\ (\ ) |const| :ref:`🔗<class_Font_method_get_supported_feature_list>`
 
-返回字形支援的 OpenType 功能列表。
+Returns list of OpenType features supported by font.
 
 .. rst-class:: classref-item-separator
 
@@ -513,9 +515,9 @@ To print available variation axes of a variable font:
 
 :ref:`float<class_float>` **get_underline_position**\ (\ font_size\: :ref:`int<class_int>` = 16\ ) |const| :ref:`🔗<class_Font_method_get_underline_position>`
 
-返回基線下方底線的平均圖元偏移。
+Returns average pixel offset of the underline below the baseline.
 
-\ **注意：**\ 字串的實際底線位置取決於本文，並且可能與該函式返回的值有很大不同。僅將其用作粗略估計。
+\ **Note:** Real underline position of the string is context-dependent and can be significantly different from the value returned by this function. Use it only as rough estimate.
 
 .. rst-class:: classref-item-separator
 
@@ -527,9 +529,9 @@ To print available variation axes of a variable font:
 
 :ref:`float<class_float>` **get_underline_thickness**\ (\ font_size\: :ref:`int<class_int>` = 16\ ) |const| :ref:`🔗<class_Font_method_get_underline_thickness>`
 
-返回底線的平均粗細。
+Returns average thickness of the underline.
 
-\ **注意：**\ 字串的實際底線粗細取決於本文，並且可能與該函式返回的值有很大不同。僅將其用作粗略估計。
+\ **Note:** Real underline thickness of the string is context-dependent and can be significantly different from the value returned by this function. Use it only as rough estimate.
 
 .. rst-class:: classref-item-separator
 
@@ -541,7 +543,7 @@ To print available variation axes of a variable font:
 
 :ref:`bool<class_bool>` **has_char**\ (\ char\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Font_method_has_char>`
 
-如果該字形中包含 Unicode 字元 ``char``\ ，則返回 ``true``\ 。
+Returns ``true`` if a Unicode ``char`` is available in the font.
 
 .. rst-class:: classref-item-separator
 
@@ -577,14 +579,14 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 |void| **set_cache_capacity**\ (\ single_line\: :ref:`int<class_int>`, multi_line\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Font_method_set_cache_capacity>`
 
-為 ``draw_*`` 方法設定 LRU 快取容量。
+Sets LRU cache capacity for ``draw_*`` methods.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

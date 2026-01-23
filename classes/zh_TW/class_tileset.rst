@@ -5,14 +5,14 @@
 TileSet
 =======
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Tilemap 的圖塊庫。
+Tile library for tilemaps.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 A TileSet is a library of tiles for a :ref:`TileMapLayer<class_TileMapLayer>`. A TileSet handles a list of :ref:`TileSetSource<class_TileSetSource>`, each of them storing a set of tiles.
 
@@ -28,27 +28,27 @@ See the functions to add new layers for more information.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`使用 Tilemap <../tutorials/2d/using_tilemaps>`
+- :doc:`Using Tilemaps <../tutorials/2d/using_tilemaps>`
 
-- `2D 平台範例 <https://godotengine.org/asset-library/asset/2727>`__
+- `2D Platformer Demo <https://godotengine.org/asset-library/asset/2727>`__
 
-- `2D 等軸演示 <https://godotengine.org/asset-library/asset/2718>`__
+- `2D Isometric Demo <https://godotengine.org/asset-library/asset/2718>`__
 
-- `2D 六邊形演示 <https://godotengine.org/asset-library/asset/2717>`__
+- `2D Hexagonal Demo <https://godotengine.org/asset-library/asset/2717>`__
 
 - `2D Grid-based Navigation with AStarGrid2D Demo <https://godotengine.org/asset-library/asset/2723>`__
 
-- `2D 角色扮演遊戲範例 <https://godotengine.org/asset-library/asset/2729>`__
+- `2D Role Playing Game (RPG) Demo <https://godotengine.org/asset-library/asset/2729>`__
 
-- `2D 運動學角色演示 <https://godotengine.org/asset-library/asset/2719>`__
+- `2D Kinematic Character Demo <https://godotengine.org/asset-library/asset/2719>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -67,8 +67,8 @@ See the functions to add new layers for more information.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -239,8 +239,8 @@ See the functions to add new layers for more information.
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_TileSet_TileShape:
 
@@ -254,7 +254,7 @@ enum **TileShape**: :ref:`🔗<enum_TileSet_TileShape>`
 
 :ref:`TileShape<enum_TileSet_TileShape>` **TILE_SHAPE_SQUARE** = ``0``
 
-矩形圖塊形狀。
+Rectangular tile shape.
 
 .. _class_TileSet_constant_TILE_SHAPE_ISOMETRIC:
 
@@ -272,7 +272,7 @@ Diamond tile shape (for isometric look).
 
 :ref:`TileShape<enum_TileSet_TileShape>` **TILE_SHAPE_HALF_OFFSET_SQUARE** = ``2``
 
-矩形圖塊形狀，每隔一行/列偏移半個圖塊。
+Rectangular tile shape with one row/column out of two offset by half a tile.
 
 .. _class_TileSet_constant_TILE_SHAPE_HEXAGON:
 
@@ -280,7 +280,7 @@ Diamond tile shape (for isometric look).
 
 :ref:`TileShape<enum_TileSet_TileShape>` **TILE_SHAPE_HEXAGON** = ``3``
 
-六邊形圖塊形狀。
+Hexagonal tile shape.
 
 .. rst-class:: classref-item-separator
 
@@ -298,7 +298,7 @@ enum **TileLayout**: :ref:`🔗<enum_TileSet_TileLayout>`
 
 :ref:`TileLayout<enum_TileSet_TileLayout>` **TILE_LAYOUT_STACKED** = ``0``
 
-圖塊座標佈局，兩個軸與對應的局部水平軸和垂直軸保持一致。
+Tile coordinates layout where both axis stay consistent with their respective local horizontal and vertical axis.
 
 .. _class_TileSet_constant_TILE_LAYOUT_STACKED_OFFSET:
 
@@ -306,7 +306,7 @@ enum **TileLayout**: :ref:`🔗<enum_TileSet_TileLayout>`
 
 :ref:`TileLayout<enum_TileSet_TileLayout>` **TILE_LAYOUT_STACKED_OFFSET** = ``1``
 
-與 :ref:`TILE_LAYOUT_STACKED<class_TileSet_constant_TILE_LAYOUT_STACKED>` 相同，但第一個半偏移偏向負方向，而不是正方向。
+Same as :ref:`TILE_LAYOUT_STACKED<class_TileSet_constant_TILE_LAYOUT_STACKED>`, but the first half-offset is negative instead of positive.
 
 .. _class_TileSet_constant_TILE_LAYOUT_STAIRS_RIGHT:
 
@@ -314,7 +314,7 @@ enum **TileLayout**: :ref:`🔗<enum_TileSet_TileLayout>`
 
 :ref:`TileLayout<enum_TileSet_TileLayout>` **TILE_LAYOUT_STAIRS_RIGHT** = ``2``
 
-圖塊座標佈局，水平軸保持水平，垂直軸朝向右下方。
+Tile coordinates layout where the horizontal axis stay horizontal, and the vertical one goes down-right.
 
 .. _class_TileSet_constant_TILE_LAYOUT_STAIRS_DOWN:
 
@@ -322,7 +322,7 @@ enum **TileLayout**: :ref:`🔗<enum_TileSet_TileLayout>`
 
 :ref:`TileLayout<enum_TileSet_TileLayout>` **TILE_LAYOUT_STAIRS_DOWN** = ``3``
 
-圖塊座標佈局，垂直軸保持垂直，水平軸朝向右下方。
+Tile coordinates layout where the vertical axis stay vertical, and the horizontal one goes down-right.
 
 .. _class_TileSet_constant_TILE_LAYOUT_DIAMOND_RIGHT:
 
@@ -330,7 +330,7 @@ enum **TileLayout**: :ref:`🔗<enum_TileSet_TileLayout>`
 
 :ref:`TileLayout<enum_TileSet_TileLayout>` **TILE_LAYOUT_DIAMOND_RIGHT** = ``4``
 
-圖塊座標佈局，水平軸朝向右上方，垂直軸朝向右下方。
+Tile coordinates layout where the horizontal axis goes up-right, and the vertical one goes down-right.
 
 .. _class_TileSet_constant_TILE_LAYOUT_DIAMOND_DOWN:
 
@@ -338,7 +338,7 @@ enum **TileLayout**: :ref:`🔗<enum_TileSet_TileLayout>`
 
 :ref:`TileLayout<enum_TileSet_TileLayout>` **TILE_LAYOUT_DIAMOND_DOWN** = ``5``
 
-圖塊座標佈局，水平軸朝向右下方，垂直軸朝向左下方。
+Tile coordinates layout where the horizontal axis goes down-right, and the vertical one goes down-left.
 
 .. rst-class:: classref-item-separator
 
@@ -356,7 +356,7 @@ enum **TileOffsetAxis**: :ref:`🔗<enum_TileSet_TileOffsetAxis>`
 
 :ref:`TileOffsetAxis<enum_TileSet_TileOffsetAxis>` **TILE_OFFSET_AXIS_HORIZONTAL** = ``0``
 
-水平半偏移。
+Horizontal half-offset.
 
 .. _class_TileSet_constant_TILE_OFFSET_AXIS_VERTICAL:
 
@@ -364,7 +364,7 @@ enum **TileOffsetAxis**: :ref:`🔗<enum_TileSet_TileOffsetAxis>`
 
 :ref:`TileOffsetAxis<enum_TileSet_TileOffsetAxis>` **TILE_OFFSET_AXIS_VERTICAL** = ``1``
 
-垂直半偏移。
+Vertical half-offset.
 
 .. rst-class:: classref-item-separator
 
@@ -382,7 +382,7 @@ enum **CellNeighbor**: :ref:`🔗<enum_TileSet_CellNeighbor>`
 
 :ref:`CellNeighbor<enum_TileSet_CellNeighbor>` **CELL_NEIGHBOR_RIGHT_SIDE** = ``0``
 
-右側相鄰儲存格。
+Neighbor on the right side.
 
 .. _class_TileSet_constant_CELL_NEIGHBOR_RIGHT_CORNER:
 
@@ -390,7 +390,7 @@ enum **CellNeighbor**: :ref:`🔗<enum_TileSet_CellNeighbor>`
 
 :ref:`CellNeighbor<enum_TileSet_CellNeighbor>` **CELL_NEIGHBOR_RIGHT_CORNER** = ``1``
 
-右角相鄰儲存格。
+Neighbor in the right corner.
 
 .. _class_TileSet_constant_CELL_NEIGHBOR_BOTTOM_RIGHT_SIDE:
 
@@ -398,7 +398,7 @@ enum **CellNeighbor**: :ref:`🔗<enum_TileSet_CellNeighbor>`
 
 :ref:`CellNeighbor<enum_TileSet_CellNeighbor>` **CELL_NEIGHBOR_BOTTOM_RIGHT_SIDE** = ``2``
 
-右下側相鄰儲存格。
+Neighbor on the bottom right side.
 
 .. _class_TileSet_constant_CELL_NEIGHBOR_BOTTOM_RIGHT_CORNER:
 
@@ -406,7 +406,7 @@ enum **CellNeighbor**: :ref:`🔗<enum_TileSet_CellNeighbor>`
 
 :ref:`CellNeighbor<enum_TileSet_CellNeighbor>` **CELL_NEIGHBOR_BOTTOM_RIGHT_CORNER** = ``3``
 
-右下角相鄰儲存格。
+Neighbor in the bottom right corner.
 
 .. _class_TileSet_constant_CELL_NEIGHBOR_BOTTOM_SIDE:
 
@@ -414,7 +414,7 @@ enum **CellNeighbor**: :ref:`🔗<enum_TileSet_CellNeighbor>`
 
 :ref:`CellNeighbor<enum_TileSet_CellNeighbor>` **CELL_NEIGHBOR_BOTTOM_SIDE** = ``4``
 
-下側相鄰儲存格。
+Neighbor on the bottom side.
 
 .. _class_TileSet_constant_CELL_NEIGHBOR_BOTTOM_CORNER:
 
@@ -422,7 +422,7 @@ enum **CellNeighbor**: :ref:`🔗<enum_TileSet_CellNeighbor>`
 
 :ref:`CellNeighbor<enum_TileSet_CellNeighbor>` **CELL_NEIGHBOR_BOTTOM_CORNER** = ``5``
 
-下角相鄰儲存格。
+Neighbor in the bottom corner.
 
 .. _class_TileSet_constant_CELL_NEIGHBOR_BOTTOM_LEFT_SIDE:
 
@@ -430,7 +430,7 @@ enum **CellNeighbor**: :ref:`🔗<enum_TileSet_CellNeighbor>`
 
 :ref:`CellNeighbor<enum_TileSet_CellNeighbor>` **CELL_NEIGHBOR_BOTTOM_LEFT_SIDE** = ``6``
 
-左下側相鄰儲存格。
+Neighbor on the bottom left side.
 
 .. _class_TileSet_constant_CELL_NEIGHBOR_BOTTOM_LEFT_CORNER:
 
@@ -438,7 +438,7 @@ enum **CellNeighbor**: :ref:`🔗<enum_TileSet_CellNeighbor>`
 
 :ref:`CellNeighbor<enum_TileSet_CellNeighbor>` **CELL_NEIGHBOR_BOTTOM_LEFT_CORNER** = ``7``
 
-左下角相鄰儲存格。
+Neighbor in the bottom left corner.
 
 .. _class_TileSet_constant_CELL_NEIGHBOR_LEFT_SIDE:
 
@@ -446,7 +446,7 @@ enum **CellNeighbor**: :ref:`🔗<enum_TileSet_CellNeighbor>`
 
 :ref:`CellNeighbor<enum_TileSet_CellNeighbor>` **CELL_NEIGHBOR_LEFT_SIDE** = ``8``
 
-左側相鄰儲存格。
+Neighbor on the left side.
 
 .. _class_TileSet_constant_CELL_NEIGHBOR_LEFT_CORNER:
 
@@ -454,7 +454,7 @@ enum **CellNeighbor**: :ref:`🔗<enum_TileSet_CellNeighbor>`
 
 :ref:`CellNeighbor<enum_TileSet_CellNeighbor>` **CELL_NEIGHBOR_LEFT_CORNER** = ``9``
 
-左角相鄰儲存格。
+Neighbor in the left corner.
 
 .. _class_TileSet_constant_CELL_NEIGHBOR_TOP_LEFT_SIDE:
 
@@ -462,7 +462,7 @@ enum **CellNeighbor**: :ref:`🔗<enum_TileSet_CellNeighbor>`
 
 :ref:`CellNeighbor<enum_TileSet_CellNeighbor>` **CELL_NEIGHBOR_TOP_LEFT_SIDE** = ``10``
 
-左上側相鄰儲存格。
+Neighbor on the top left side.
 
 .. _class_TileSet_constant_CELL_NEIGHBOR_TOP_LEFT_CORNER:
 
@@ -470,7 +470,7 @@ enum **CellNeighbor**: :ref:`🔗<enum_TileSet_CellNeighbor>`
 
 :ref:`CellNeighbor<enum_TileSet_CellNeighbor>` **CELL_NEIGHBOR_TOP_LEFT_CORNER** = ``11``
 
-左上角相鄰儲存格。
+Neighbor in the top left corner.
 
 .. _class_TileSet_constant_CELL_NEIGHBOR_TOP_SIDE:
 
@@ -478,7 +478,7 @@ enum **CellNeighbor**: :ref:`🔗<enum_TileSet_CellNeighbor>`
 
 :ref:`CellNeighbor<enum_TileSet_CellNeighbor>` **CELL_NEIGHBOR_TOP_SIDE** = ``12``
 
-上側相鄰儲存格。
+Neighbor on the top side.
 
 .. _class_TileSet_constant_CELL_NEIGHBOR_TOP_CORNER:
 
@@ -486,7 +486,7 @@ enum **CellNeighbor**: :ref:`🔗<enum_TileSet_CellNeighbor>`
 
 :ref:`CellNeighbor<enum_TileSet_CellNeighbor>` **CELL_NEIGHBOR_TOP_CORNER** = ``13``
 
-上角相鄰儲存格。
+Neighbor in the top corner.
 
 .. _class_TileSet_constant_CELL_NEIGHBOR_TOP_RIGHT_SIDE:
 
@@ -494,7 +494,7 @@ enum **CellNeighbor**: :ref:`🔗<enum_TileSet_CellNeighbor>`
 
 :ref:`CellNeighbor<enum_TileSet_CellNeighbor>` **CELL_NEIGHBOR_TOP_RIGHT_SIDE** = ``14``
 
-右上側相鄰儲存格。
+Neighbor on the top right side.
 
 .. _class_TileSet_constant_CELL_NEIGHBOR_TOP_RIGHT_CORNER:
 
@@ -502,7 +502,7 @@ enum **CellNeighbor**: :ref:`🔗<enum_TileSet_CellNeighbor>`
 
 :ref:`CellNeighbor<enum_TileSet_CellNeighbor>` **CELL_NEIGHBOR_TOP_RIGHT_CORNER** = ``15``
 
-右上角相鄰儲存格。
+Neighbor in the top right corner.
 
 .. rst-class:: classref-item-separator
 
@@ -520,7 +520,7 @@ enum **TerrainMode**: :ref:`🔗<enum_TileSet_TerrainMode>`
 
 :ref:`TerrainMode<enum_TileSet_TerrainMode>` **TERRAIN_MODE_MATCH_CORNERS_AND_SIDES** = ``0``
 
-要求與相鄰圖塊地形的角和邊都配對。
+Requires both corners and side to match with neighboring tiles' terrains.
 
 .. _class_TileSet_constant_TERRAIN_MODE_MATCH_CORNERS:
 
@@ -528,7 +528,7 @@ enum **TerrainMode**: :ref:`🔗<enum_TileSet_TerrainMode>`
 
 :ref:`TerrainMode<enum_TileSet_TerrainMode>` **TERRAIN_MODE_MATCH_CORNERS** = ``1``
 
-要求與相鄰圖塊地形的角相配對。
+Requires corners to match with neighboring tiles' terrains.
 
 .. _class_TileSet_constant_TERRAIN_MODE_MATCH_SIDES:
 
@@ -536,7 +536,7 @@ enum **TerrainMode**: :ref:`🔗<enum_TileSet_TerrainMode>`
 
 :ref:`TerrainMode<enum_TileSet_TerrainMode>` **TERRAIN_MODE_MATCH_SIDES** = ``2``
 
-要求與相鄰圖塊地形的邊相配對。
+Requires sides to match with neighboring tiles' terrains.
 
 .. rst-class:: classref-section-separator
 
@@ -544,8 +544,8 @@ enum **TerrainMode**: :ref:`🔗<enum_TileSet_TerrainMode>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_TileSet_property_tile_layout:
 
@@ -575,7 +575,7 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 - |void| **set_tile_offset_axis**\ (\ value\: :ref:`TileOffsetAxis<enum_TileSet_TileOffsetAxis>`\ )
 - :ref:`TileOffsetAxis<enum_TileSet_TileOffsetAxis>` **get_tile_offset_axis**\ (\ )
 
-對於所有半偏移形狀（等軸、六邊形和半偏移正方形），確定偏移軸。
+For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), determines the offset axis.
 
 .. rst-class:: classref-item-separator
 
@@ -592,7 +592,7 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 - |void| **set_tile_shape**\ (\ value\: :ref:`TileShape<enum_TileSet_TileShape>`\ )
 - :ref:`TileShape<enum_TileSet_TileShape>` **get_tile_shape**\ (\ )
 
-圖塊的形狀。
+The tile shape.
 
 .. rst-class:: classref-item-separator
 
@@ -609,7 +609,7 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 - |void| **set_tile_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_tile_size**\ (\ )
 
-圖塊的大小，單位為圖元。無論圖塊是什麼形狀，這個大小對應的都是圖塊形狀的包圍矩形。因此，這是合集所需的最小儲存格大小。
+The tile size, in pixels. For all tile shapes, this size corresponds to the encompassing rectangle of the tile shape. This is thus the minimal cell size required in an atlas.
 
 .. rst-class:: classref-item-separator
 
@@ -626,7 +626,7 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 - |void| **set_uv_clipping**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_uv_clipping**\ (\ )
 
-算繪圖塊時啟用/禁用 UV 裁剪。
+Enables/Disable uv clipping when rendering the tiles.
 
 .. rst-class:: classref-section-separator
 
@@ -634,8 +634,8 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_TileSet_method_add_custom_data_layer:
 
@@ -643,9 +643,9 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 
 |void| **add_custom_data_layer**\ (\ to_position\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TileSet_method_add_custom_data_layer>`
 
-在 TileSet 中新增自訂資料層，放置到陣列中的 ``to_position`` 位置。如果 ``to_position`` 為 -1，則會將其新增到陣列的末尾。
+Adds a custom data layer to the TileSet at the given position ``to_position`` in the array. If ``to_position`` is -1, adds it at the end of the array.
 
-自訂資料層能夠為合集圖塊分配自訂屬性。
+Custom data layers allow assigning custom properties to atlas tiles.
 
 .. rst-class:: classref-item-separator
 
@@ -657,9 +657,9 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 
 |void| **add_navigation_layer**\ (\ to_position\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TileSet_method_add_navigation_layer>`
 
-在 TileSet 中新增導覽層，放置到陣列中的 ``to_position`` 位置。如果 ``to_position`` 為 -1，則會將其新增到陣列的末尾。
+Adds a navigation layer to the TileSet at the given position ``to_position`` in the array. If ``to_position`` is -1, adds it at the end of the array.
 
-導覽層能夠為合集圖塊分配導覽區域。
+Navigation layers allow assigning a navigable area to atlas tiles.
 
 .. rst-class:: classref-item-separator
 
@@ -671,9 +671,9 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 
 |void| **add_occlusion_layer**\ (\ to_position\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TileSet_method_add_occlusion_layer>`
 
-在 TileSet 中新增遮擋層，放置到陣列中的 ``to_position`` 位置。如果 ``to_position`` 為 -1，則會將其新增到陣列的末尾。
+Adds an occlusion layer to the TileSet at the given position ``to_position`` in the array. If ``to_position`` is -1, adds it at the end of the array.
 
-遮擋層能夠為合集圖塊分配遮擋多邊形。
+Occlusion layers allow assigning occlusion polygons to atlas tiles.
 
 .. rst-class:: classref-item-separator
 
@@ -685,7 +685,7 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 
 :ref:`int<class_int>` **add_pattern**\ (\ pattern\: :ref:`TileMapPattern<class_TileMapPattern>`, index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TileSet_method_add_pattern>`
 
-新增儲存在 TileSet 資源中的 :ref:`TileMapPattern<class_TileMapPattern>`\ 。如果提供了 ``index``\ ，則會插入到給定的位置。
+Adds a :ref:`TileMapPattern<class_TileMapPattern>` to be stored in the TileSet resource. If provided, insert it at the given ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -697,9 +697,9 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 
 |void| **add_physics_layer**\ (\ to_position\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TileSet_method_add_physics_layer>`
 
-在 TileSet 中新增實體層，放置到陣列中的 ``to_position`` 位置。如果 ``to_position`` 為 -1，則會將其新增到陣列的末尾。
+Adds a physics layer to the TileSet at the given position ``to_position`` in the array. If ``to_position`` is -1, adds it at the end of the array.
 
-實體層能夠為合集圖塊分配碰撞多邊形。
+Physics layers allow assigning collision polygons to atlas tiles.
 
 .. rst-class:: classref-item-separator
 
@@ -711,11 +711,11 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 
 :ref:`int<class_int>` **add_source**\ (\ source\: :ref:`TileSetSource<class_TileSetSource>`, atlas_source_id_override\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TileSet_method_add_source>`
 
-在 TileSet 中新增 :ref:`TileSetSource<class_TileSetSource>`\ 。如果 ``atlas_source_id_override`` 不為 -1，則還會設定其源 ID。否則會自動生成唯一識別碼。
+Adds a :ref:`TileSetSource<class_TileSetSource>` to the TileSet. If ``atlas_source_id_override`` is not -1, also set its source ID. Otherwise, a unique identifier is automatically generated.
 
-函式返回新增的源 ID，如果無法新增源則返回 -1。
+The function returns the added source ID or -1 if the source could not be added.
 
-\ **警告：**\ 同一個源不能同時屬於兩個 TileSet。如果新增的源已經附加到其他 **TileSet**\ ，則會在該那個 TileSet 中移除。
+\ **Warning:** A source cannot belong to two TileSets at the same time. If the added source was attached to another **TileSet**, it will be removed from that one.
 
 .. rst-class:: classref-item-separator
 
@@ -727,7 +727,7 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 
 |void| **add_terrain**\ (\ terrain_set\: :ref:`int<class_int>`, to_position\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TileSet_method_add_terrain>`
 
-在 TileSet 的 ``terrain_set`` 地形集中新增新的地形，放置到陣列中的 ``to_position`` 位置。如果 ``to_position`` 為 -1，則會將其新增到陣列的末尾。
+Adds a new terrain to the given terrain set ``terrain_set`` at the given position ``to_position`` in the array. If ``to_position`` is -1, adds it at the end of the array.
 
 .. rst-class:: classref-item-separator
 
@@ -739,7 +739,7 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 
 |void| **add_terrain_set**\ (\ to_position\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TileSet_method_add_terrain_set>`
 
-在 TileSet 新增新的地形集，放置到陣列中的 ``to_position`` 位置。如果 ``to_position`` 為 -1，則會將其新增到陣列的末尾。
+Adds a new terrain set at the given position ``to_position`` in the array. If ``to_position`` is -1, adds it at the end of the array.
 
 .. rst-class:: classref-item-separator
 
@@ -751,7 +751,7 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 
 |void| **cleanup_invalid_tile_proxies**\ (\ ) :ref:`🔗<class_TileSet_method_cleanup_invalid_tile_proxies>`
 
-清除指向無效圖塊的圖塊代理。
+Clears tile proxies pointing to invalid tiles.
 
 .. rst-class:: classref-item-separator
 
@@ -763,7 +763,7 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 
 |void| **clear_tile_proxies**\ (\ ) :ref:`🔗<class_TileSet_method_clear_tile_proxies>`
 
-清除所有圖塊代理。
+Clears all tile proxies.
 
 .. rst-class:: classref-item-separator
 
@@ -775,9 +775,9 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 
 :ref:`Array<class_Array>` **get_alternative_level_tile_proxy**\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, alternative_from\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_get_alternative_level_tile_proxy>`
 
-返回給定識別字的備選級代理。返回的陣列包含三個代理的目標識別字（源 ID、合集坐標 ID 和備選圖塊 ID）。
+Returns the alternative-level proxy for the given identifiers. The returned array contains the three proxie's target identifiers (source ID, atlas coords ID and alternative tile ID).
 
-如果該 TileSet 沒有給定識別字的代理，則返回空陣列。
+If the TileSet has no proxy for the given identifiers, returns an empty Array.
 
 .. rst-class:: classref-item-separator
 
@@ -789,9 +789,9 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 
 :ref:`Array<class_Array>` **get_coords_level_tile_proxy**\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TileSet_method_get_coords_level_tile_proxy>`
 
-返回給定識別字的座標級代理。返回的陣列包含代理的兩個目標識別字（源 ID 和合集座標 ID）。
+Returns the coordinate-level proxy for the given identifiers. The returned array contains the two target identifiers of the proxy (source ID and atlas coordinates ID).
 
-如果該 TileSet 沒有給定識別字的代理，則返回空陣列。
+If the TileSet has no proxy for the given identifiers, returns an empty Array.
 
 .. rst-class:: classref-item-separator
 
@@ -803,7 +803,7 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 
 :ref:`int<class_int>` **get_custom_data_layer_by_name**\ (\ layer_name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TileSet_method_get_custom_data_layer_by_name>`
 
-返回自訂資料層的索引，該自訂資料層由名稱表示。
+Returns the index of the custom data layer identified by the given name.
 
 .. rst-class:: classref-item-separator
 
@@ -815,7 +815,7 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 
 :ref:`String<class_String>` **get_custom_data_layer_name**\ (\ layer_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSet_method_get_custom_data_layer_name>`
 
-返回自訂資料層的名稱，該自訂資料層由索引表示。
+Returns the name of the custom data layer identified by the given index.
 
 .. rst-class:: classref-item-separator
 
@@ -827,7 +827,7 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 
 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` **get_custom_data_layer_type**\ (\ layer_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSet_method_get_custom_data_layer_type>`
 
-返回自訂資料層的型別，該自訂資料層由索引表示。
+Returns the type of the custom data layer identified by the given index.
 
 .. rst-class:: classref-item-separator
 
@@ -839,7 +839,7 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 
 :ref:`int<class_int>` **get_custom_data_layers_count**\ (\ ) |const| :ref:`🔗<class_TileSet_method_get_custom_data_layers_count>`
 
-返回自訂資料層的數量。
+Returns the custom data layers count.
 
 .. rst-class:: classref-item-separator
 
@@ -851,7 +851,7 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 
 :ref:`bool<class_bool>` **get_navigation_layer_layer_value**\ (\ layer_index\: :ref:`int<class_int>`, layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSet_method_get_navigation_layer_layer_value>`
 
-返回由給定的 ``layer_index`` 標識的 TileSet 導覽資料層是否啟用了指定的導航層，導覽層 ``layer_number`` 在 1 和 32 之間。
+Returns whether or not the specified navigation layer of the TileSet navigation data layer identified by the given ``layer_index`` is enabled, given a navigation_layers ``layer_number`` between 1 and 32.
 
 .. rst-class:: classref-item-separator
 
@@ -863,7 +863,7 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 
 :ref:`int<class_int>` **get_navigation_layer_layers**\ (\ layer_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSet_method_get_navigation_layer_layers>`
 
-返回給定 TileSet 導覽層的（導覽伺服器中的）導覽層。
+Returns the navigation layers (as in the Navigation server) of the given TileSet navigation layer.
 
 .. rst-class:: classref-item-separator
 
@@ -875,7 +875,7 @@ For all half-offset shapes (Isometric, Hexagonal and Half-Offset square), change
 
 :ref:`int<class_int>` **get_navigation_layers_count**\ (\ ) |const| :ref:`🔗<class_TileSet_method_get_navigation_layers_count>`
 
-返回導覽層的數量。
+Returns the navigation layers count.
 
 .. rst-class:: classref-item-separator
 
@@ -899,7 +899,7 @@ Returns a new unused source ID. This generated ID is the same that a call to :re
 
 :ref:`int<class_int>` **get_occlusion_layer_light_mask**\ (\ layer_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSet_method_get_occlusion_layer_light_mask>`
 
-返回遮擋層的光照遮罩。
+Returns the light mask of the occlusion layer.
 
 .. rst-class:: classref-item-separator
 
@@ -911,7 +911,7 @@ Returns a new unused source ID. This generated ID is the same that a call to :re
 
 :ref:`bool<class_bool>` **get_occlusion_layer_sdf_collision**\ (\ layer_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSet_method_get_occlusion_layer_sdf_collision>`
 
-返回這個層的遮擋器是否使用 ``sdf_collision``\ 。
+Returns if the occluders from this layer use ``sdf_collision``.
 
 .. rst-class:: classref-item-separator
 
@@ -923,7 +923,7 @@ Returns a new unused source ID. This generated ID is the same that a call to :re
 
 :ref:`int<class_int>` **get_occlusion_layers_count**\ (\ ) |const| :ref:`🔗<class_TileSet_method_get_occlusion_layers_count>`
 
-返回遮擋層的數量。
+Returns the occlusion layers count.
 
 .. rst-class:: classref-item-separator
 
@@ -935,7 +935,7 @@ Returns a new unused source ID. This generated ID is the same that a call to :re
 
 :ref:`TileMapPattern<class_TileMapPattern>` **get_pattern**\ (\ index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TileSet_method_get_pattern>`
 
-返回給定 ``index`` 處的 :ref:`TileMapPattern<class_TileMapPattern>`\ 。
+Returns the :ref:`TileMapPattern<class_TileMapPattern>` at the given ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -947,7 +947,7 @@ Returns a new unused source ID. This generated ID is the same that a call to :re
 
 :ref:`int<class_int>` **get_patterns_count**\ (\ ) :ref:`🔗<class_TileSet_method_get_patterns_count>`
 
-返回此圖塊集處理的 :ref:`TileMapPattern<class_TileMapPattern>` 的數量。
+Returns the number of :ref:`TileMapPattern<class_TileMapPattern>` this tile set handles.
 
 .. rst-class:: classref-item-separator
 
@@ -959,7 +959,7 @@ Returns a new unused source ID. This generated ID is the same that a call to :re
 
 :ref:`int<class_int>` **get_physics_layer_collision_layer**\ (\ layer_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSet_method_get_physics_layer_collision_layer>`
 
-返回給定 TileSet 實體層中的物體所在的（物理伺服器中的）碰撞層。
+Returns the collision layer (as in the physics server) bodies on the given TileSet's physics layer are in.
 
 .. rst-class:: classref-item-separator
 
@@ -971,7 +971,7 @@ Returns a new unused source ID. This generated ID is the same that a call to :re
 
 :ref:`int<class_int>` **get_physics_layer_collision_mask**\ (\ layer_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSet_method_get_physics_layer_collision_mask>`
 
-返回給定 TileSet 實體層中物體的碰撞遮罩。
+Returns the collision mask of bodies on the given TileSet's physics layer.
 
 .. rst-class:: classref-item-separator
 
@@ -995,7 +995,7 @@ Returns the collision priority of bodies on the given TileSet's physics layer.
 
 :ref:`PhysicsMaterial<class_PhysicsMaterial>` **get_physics_layer_physics_material**\ (\ layer_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSet_method_get_physics_layer_physics_material>`
 
-返回給定 TileSet 實體層中物體的碰撞材質。
+Returns the physics material of bodies on the given TileSet's physics layer.
 
 .. rst-class:: classref-item-separator
 
@@ -1007,7 +1007,7 @@ Returns the collision priority of bodies on the given TileSet's physics layer.
 
 :ref:`int<class_int>` **get_physics_layers_count**\ (\ ) |const| :ref:`🔗<class_TileSet_method_get_physics_layers_count>`
 
-返回實體層的數量。
+Returns the physics layers count.
 
 .. rst-class:: classref-item-separator
 
@@ -1019,7 +1019,7 @@ Returns the collision priority of bodies on the given TileSet's physics layer.
 
 :ref:`TileSetSource<class_TileSetSource>` **get_source**\ (\ source_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSet_method_get_source>`
 
-返回 ID 為 ``source_id`` 的 :ref:`TileSetSource<class_TileSetSource>`\ 。
+Returns the :ref:`TileSetSource<class_TileSetSource>` with ID ``source_id``.
 
 .. rst-class:: classref-item-separator
 
@@ -1031,7 +1031,7 @@ Returns the collision priority of bodies on the given TileSet's physics layer.
 
 :ref:`int<class_int>` **get_source_count**\ (\ ) |const| :ref:`🔗<class_TileSet_method_get_source_count>`
 
-返回該 TileSet 中 :ref:`TileSetSource<class_TileSetSource>` 的數量。
+Returns the number of :ref:`TileSetSource<class_TileSetSource>` in this TileSet.
 
 .. rst-class:: classref-item-separator
 
@@ -1043,7 +1043,7 @@ Returns the collision priority of bodies on the given TileSet's physics layer.
 
 :ref:`int<class_int>` **get_source_id**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSet_method_get_source_id>`
 
-返回索引為 ``index`` 的源的源 ID。
+Returns the source ID for source with index ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1055,9 +1055,9 @@ Returns the collision priority of bodies on the given TileSet's physics layer.
 
 :ref:`int<class_int>` **get_source_level_tile_proxy**\ (\ source_from\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_get_source_level_tile_proxy>`
 
-返回給定源識別字的源級別代理。
+Returns the source-level proxy for the given source identifier.
 
-如果 TileSet 沒有給定識別字的代理，則返回 -1。
+If the TileSet has no proxy for the given identifier, returns -1.
 
 .. rst-class:: classref-item-separator
 
@@ -1069,7 +1069,7 @@ Returns the collision priority of bodies on the given TileSet's physics layer.
 
 :ref:`Color<class_Color>` **get_terrain_color**\ (\ terrain_set\: :ref:`int<class_int>`, terrain_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSet_method_get_terrain_color>`
 
-返回地形的顏色。
+Returns a terrain's color.
 
 .. rst-class:: classref-item-separator
 
@@ -1081,7 +1081,7 @@ Returns the collision priority of bodies on the given TileSet's physics layer.
 
 :ref:`String<class_String>` **get_terrain_name**\ (\ terrain_set\: :ref:`int<class_int>`, terrain_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSet_method_get_terrain_name>`
 
-返回地形的名稱。
+Returns a terrain's name.
 
 .. rst-class:: classref-item-separator
 
@@ -1093,7 +1093,7 @@ Returns the collision priority of bodies on the given TileSet's physics layer.
 
 :ref:`TerrainMode<enum_TileSet_TerrainMode>` **get_terrain_set_mode**\ (\ terrain_set\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSet_method_get_terrain_set_mode>`
 
-返回地形集模式。
+Returns a terrain set mode.
 
 .. rst-class:: classref-item-separator
 
@@ -1105,7 +1105,7 @@ Returns the collision priority of bodies on the given TileSet's physics layer.
 
 :ref:`int<class_int>` **get_terrain_sets_count**\ (\ ) |const| :ref:`🔗<class_TileSet_method_get_terrain_sets_count>`
 
-返回地形集的數量。
+Returns the terrain sets count.
 
 .. rst-class:: classref-item-separator
 
@@ -1117,7 +1117,7 @@ Returns the collision priority of bodies on the given TileSet's physics layer.
 
 :ref:`int<class_int>` **get_terrains_count**\ (\ terrain_set\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSet_method_get_terrains_count>`
 
-返回給定地形集中的地形數。
+Returns the number of terrains in the given terrain set.
 
 .. rst-class:: classref-item-separator
 
@@ -1129,7 +1129,7 @@ Returns the collision priority of bodies on the given TileSet's physics layer.
 
 :ref:`bool<class_bool>` **has_alternative_level_tile_proxy**\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, alternative_from\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_has_alternative_level_tile_proxy>`
 
-返回給定的識別字是否存在備選級別的代理。
+Returns if there is an alternative-level proxy for the given identifiers.
 
 .. rst-class:: classref-item-separator
 
@@ -1141,7 +1141,7 @@ Returns the collision priority of bodies on the given TileSet's physics layer.
 
 :ref:`bool<class_bool>` **has_coords_level_tile_proxy**\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TileSet_method_has_coords_level_tile_proxy>`
 
-返回給定的識別字是否存在座標級別的代理。
+Returns if there is a coodinates-level proxy for the given identifiers.
 
 .. rst-class:: classref-item-separator
 
@@ -1165,7 +1165,7 @@ Returns if there is a custom data layer named ``layer_name``.
 
 :ref:`bool<class_bool>` **has_source**\ (\ source_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSet_method_has_source>`
 
-返回該 TileSet 中是否存在給定源 ID 的源。
+Returns if this TileSet has a source for the given source ID.
 
 .. rst-class:: classref-item-separator
 
@@ -1177,7 +1177,7 @@ Returns if there is a custom data layer named ``layer_name``.
 
 :ref:`bool<class_bool>` **has_source_level_tile_proxy**\ (\ source_from\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_has_source_level_tile_proxy>`
 
-返回給定的源 ID 是否存在源級別的代理。
+Returns if there is a source-level proxy for the given source ID.
 
 .. rst-class:: classref-item-separator
 
@@ -1189,11 +1189,11 @@ Returns if there is a custom data layer named ``layer_name``.
 
 :ref:`Array<class_Array>` **map_tile_proxy**\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, alternative_from\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSet_method_map_tile_proxy>`
 
-根據配置的代理，將提供的識別字對應到一組新的識別字。返回的是由源 ID、合集坐標 ID 和備選圖塊 ID 這三個元素構成的 Array。
+According to the configured proxies, maps the provided identifiers to a new set of identifiers. The source ID, atlas coordinates ID and alternative tile ID are returned as a 3 elements Array.
 
-這個函式首先搜尋配對的備選級代理，然後是座標級代理，然後是源級代理。
+This function first look for matching alternative-level proxies, then coordinates-level proxies, then source-level proxies.
 
-如果未找到與提供的識別字對應的代理，則返回與用作參數的值相同的值。
+If no proxy corresponding to provided identifiers are found, returns the same values the ones used as arguments.
 
 .. rst-class:: classref-item-separator
 
@@ -1205,7 +1205,7 @@ Returns if there is a custom data layer named ``layer_name``.
 
 |void| **move_custom_data_layer**\ (\ layer_index\: :ref:`int<class_int>`, to_position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_move_custom_data_layer>`
 
-將索引為 ``layer_index`` 的自訂資料層移動到陣列中給定的 ``to_position`` 位置。還會更新相應的合集圖塊。
+Moves the custom data layer at index ``layer_index`` to the given position ``to_position`` in the array. Also updates the atlas tiles accordingly.
 
 .. rst-class:: classref-item-separator
 
@@ -1217,7 +1217,7 @@ Returns if there is a custom data layer named ``layer_name``.
 
 |void| **move_navigation_layer**\ (\ layer_index\: :ref:`int<class_int>`, to_position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_move_navigation_layer>`
 
-將索引為 ``layer_index`` 的導覽層移動到陣列中給定的 ``to_position`` 位置。還會更新相應的合集圖塊。
+Moves the navigation layer at index ``layer_index`` to the given position ``to_position`` in the array. Also updates the atlas tiles accordingly.
 
 .. rst-class:: classref-item-separator
 
@@ -1229,7 +1229,7 @@ Returns if there is a custom data layer named ``layer_name``.
 
 |void| **move_occlusion_layer**\ (\ layer_index\: :ref:`int<class_int>`, to_position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_move_occlusion_layer>`
 
-將索引為 ``layer_index`` 的遮擋層移動到陣列中給定的 ``to_position`` 位置。還會更新相應的合集圖塊。
+Moves the occlusion layer at index ``layer_index`` to the given position ``to_position`` in the array. Also updates the atlas tiles accordingly.
 
 .. rst-class:: classref-item-separator
 
@@ -1241,7 +1241,7 @@ Returns if there is a custom data layer named ``layer_name``.
 
 |void| **move_physics_layer**\ (\ layer_index\: :ref:`int<class_int>`, to_position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_move_physics_layer>`
 
-將索引為 ``layer_index`` 的實體層移動到陣列中給定的 ``to_position`` 位置。還會更新相應的合集圖塊。
+Moves the physics layer at index ``layer_index`` to the given position ``to_position`` in the array. Also updates the atlas tiles accordingly.
 
 .. rst-class:: classref-item-separator
 
@@ -1253,7 +1253,7 @@ Returns if there is a custom data layer named ``layer_name``.
 
 |void| **move_terrain**\ (\ terrain_set\: :ref:`int<class_int>`, terrain_index\: :ref:`int<class_int>`, to_position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_move_terrain>`
 
-將地形集 ``terrain_set`` 中索引為 ``terrain_index`` 的地形移動到陣列中給定的 ``to_position`` 位置。還會更新相應的合集圖塊。
+Moves the terrain at index ``terrain_index`` for terrain set ``terrain_set`` to the given position ``to_position`` in the array. Also updates the atlas tiles accordingly.
 
 .. rst-class:: classref-item-separator
 
@@ -1265,7 +1265,7 @@ Returns if there is a custom data layer named ``layer_name``.
 
 |void| **move_terrain_set**\ (\ terrain_set\: :ref:`int<class_int>`, to_position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_move_terrain_set>`
 
-將索引為 ``terrain_set`` 的地形集移動到陣列中給定的 ``to_position`` 位置。還會更新相應的合集圖塊。
+Moves the terrain set at index ``terrain_set`` to the given position ``to_position`` in the array. Also updates the atlas tiles accordingly.
 
 .. rst-class:: classref-item-separator
 
@@ -1277,7 +1277,7 @@ Returns if there is a custom data layer named ``layer_name``.
 
 |void| **remove_alternative_level_tile_proxy**\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, alternative_from\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_remove_alternative_level_tile_proxy>`
 
-移除具有給定識別字的備選級別代理。
+Removes an alternative-level proxy for the given identifiers.
 
 .. rst-class:: classref-item-separator
 
@@ -1289,7 +1289,7 @@ Returns if there is a custom data layer named ``layer_name``.
 
 |void| **remove_coords_level_tile_proxy**\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TileSet_method_remove_coords_level_tile_proxy>`
 
-移除具有給定識別字的座標級別代理。
+Removes a coordinates-level proxy for the given identifiers.
 
 .. rst-class:: classref-item-separator
 
@@ -1301,7 +1301,7 @@ Returns if there is a custom data layer named ``layer_name``.
 
 |void| **remove_custom_data_layer**\ (\ layer_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_remove_custom_data_layer>`
 
-移除索引為 ``layer_index`` 的自訂資料層。也會相應地更新合集中的圖塊。
+Removes the custom data layer at index ``layer_index``. Also updates the atlas tiles accordingly.
 
 .. rst-class:: classref-item-separator
 
@@ -1313,7 +1313,7 @@ Returns if there is a custom data layer named ``layer_name``.
 
 |void| **remove_navigation_layer**\ (\ layer_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_remove_navigation_layer>`
 
-移除索引為 ``layer_index`` 的導覽層。也會相應地更新合集中的圖塊。
+Removes the navigation layer at index ``layer_index``. Also updates the atlas tiles accordingly.
 
 .. rst-class:: classref-item-separator
 
@@ -1325,7 +1325,7 @@ Returns if there is a custom data layer named ``layer_name``.
 
 |void| **remove_occlusion_layer**\ (\ layer_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_remove_occlusion_layer>`
 
-移除索引為 ``layer_index`` 的遮擋層。也會相應地更新合集中的圖塊。
+Removes the occlusion layer at index ``layer_index``. Also updates the atlas tiles accordingly.
 
 .. rst-class:: classref-item-separator
 
@@ -1337,7 +1337,7 @@ Returns if there is a custom data layer named ``layer_name``.
 
 |void| **remove_pattern**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_remove_pattern>`
 
-移除給定索引處的 :ref:`TileMapPattern<class_TileMapPattern>`\ 。
+Remove the :ref:`TileMapPattern<class_TileMapPattern>` at the given index.
 
 .. rst-class:: classref-item-separator
 
@@ -1349,7 +1349,7 @@ Returns if there is a custom data layer named ``layer_name``.
 
 |void| **remove_physics_layer**\ (\ layer_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_remove_physics_layer>`
 
-移除索引為 ``layer_index`` 的實體層。也會更新合集中的相應圖塊。
+Removes the physics layer at index ``layer_index``. Also updates the atlas tiles accordingly.
 
 .. rst-class:: classref-item-separator
 
@@ -1361,7 +1361,7 @@ Returns if there is a custom data layer named ``layer_name``.
 
 |void| **remove_source**\ (\ source_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_remove_source>`
 
-移除具有給定源 ID 的源。
+Removes the source with the given source ID.
 
 .. rst-class:: classref-item-separator
 
@@ -1373,7 +1373,7 @@ Returns if there is a custom data layer named ``layer_name``.
 
 |void| **remove_source_level_tile_proxy**\ (\ source_from\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_remove_source_level_tile_proxy>`
 
-移除源級別的圖塊代理。
+Removes a source-level tile proxy.
 
 .. rst-class:: classref-item-separator
 
@@ -1385,7 +1385,7 @@ Returns if there is a custom data layer named ``layer_name``.
 
 |void| **remove_terrain**\ (\ terrain_set\: :ref:`int<class_int>`, terrain_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_remove_terrain>`
 
-移除給定地形集 ``terrain_set`` 中索引為 ``terrain_index`` 的地形。也會相應地更新合集中的圖塊。
+Removes the terrain at index ``terrain_index`` in the given terrain set ``terrain_set``. Also updates the atlas tiles accordingly.
 
 .. rst-class:: classref-item-separator
 
@@ -1397,7 +1397,7 @@ Returns if there is a custom data layer named ``layer_name``.
 
 |void| **remove_terrain_set**\ (\ terrain_set\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_remove_terrain_set>`
 
-移除索引為 ``terrain_set`` 的地形集。也會相應地更新合集中的圖塊。
+Removes the terrain set at index ``terrain_set``. Also updates the atlas tiles accordingly.
 
 .. rst-class:: classref-item-separator
 
@@ -1437,7 +1437,7 @@ Proxied tiles can be automatically replaced in TileMapLayer nodes using the edit
 
 |void| **set_custom_data_layer_name**\ (\ layer_index\: :ref:`int<class_int>`, layer_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TileSet_method_set_custom_data_layer_name>`
 
-設定由給定索引標識的自訂資料層的名稱。名稱是層的識別字，因此如果名稱已被使用就會失敗並報告有錯。
+Sets the name of the custom data layer identified by the given index. Names are identifiers of the layer therefore if the name is already taken it will fail and raise an error.
 
 .. rst-class:: classref-item-separator
 
@@ -1449,7 +1449,7 @@ Proxied tiles can be automatically replaced in TileMapLayer nodes using the edit
 
 |void| **set_custom_data_layer_type**\ (\ layer_index\: :ref:`int<class_int>`, layer_type\: :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`\ ) :ref:`🔗<class_TileSet_method_set_custom_data_layer_type>`
 
-設定自訂資料層的型別，該自訂資料層由索引表示。
+Sets the type of the custom data layer identified by the given index.
 
 .. rst-class:: classref-item-separator
 
@@ -1461,7 +1461,7 @@ Proxied tiles can be automatically replaced in TileMapLayer nodes using the edit
 
 |void| **set_navigation_layer_layer_value**\ (\ layer_index\: :ref:`int<class_int>`, layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TileSet_method_set_navigation_layer_layer_value>`
 
-根據 ``value``\ ，啟用或禁用 TileSet 導覽資料層中指定的導覽層，導覽資料層由給定的 ``layer_index`` 標識，給定的 ``layer_number`` 應在 1 和 32 之間。
+Based on ``value``, enables or disables the specified navigation layer of the TileSet navigation data layer identified by the given ``layer_index``, given a navigation_layers ``layer_number`` between 1 and 32.
 
 .. rst-class:: classref-item-separator
 
@@ -1473,7 +1473,7 @@ Proxied tiles can be automatically replaced in TileMapLayer nodes using the edit
 
 |void| **set_navigation_layer_layers**\ (\ layer_index\: :ref:`int<class_int>`, layers\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_set_navigation_layer_layers>`
 
-設定給定 TileSet 導覽層中導覽區域的導覽層（導覽伺服器中使用）。
+Sets the navigation layers (as in the navigation server) for navigation regions in the given TileSet navigation layer.
 
 .. rst-class:: classref-item-separator
 
@@ -1485,7 +1485,7 @@ Proxied tiles can be automatically replaced in TileMapLayer nodes using the edit
 
 |void| **set_occlusion_layer_light_mask**\ (\ layer_index\: :ref:`int<class_int>`, light_mask\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_set_occlusion_layer_light_mask>`
 
-設定給定 TileSet 遮擋層中遮擋器的遮擋層（算繪伺服器中使用）。
+Sets the occlusion layer (as in the rendering server) for occluders in the given TileSet occlusion layer.
 
 .. rst-class:: classref-item-separator
 
@@ -1497,7 +1497,7 @@ Proxied tiles can be automatically replaced in TileMapLayer nodes using the edit
 
 |void| **set_occlusion_layer_sdf_collision**\ (\ layer_index\: :ref:`int<class_int>`, sdf_collision\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TileSet_method_set_occlusion_layer_sdf_collision>`
 
-啟用或禁用給定 TileSet 遮擋層中遮擋器的 SDF 碰撞。
+Enables or disables SDF collision for occluders in the given TileSet occlusion layer.
 
 .. rst-class:: classref-item-separator
 
@@ -1545,7 +1545,7 @@ Sets the collision priority for bodies in the given TileSet physics layer.
 
 |void| **set_physics_layer_physics_material**\ (\ layer_index\: :ref:`int<class_int>`, physics_material\: :ref:`PhysicsMaterial<class_PhysicsMaterial>`\ ) :ref:`🔗<class_TileSet_method_set_physics_layer_physics_material>`
 
-設定給定 TileSet 實體層中物體的物理材質。
+Sets the physics material for bodies in the given TileSet physics layer.
 
 .. rst-class:: classref-item-separator
 
@@ -1557,7 +1557,7 @@ Sets the collision priority for bodies in the given TileSet physics layer.
 
 |void| **set_source_id**\ (\ source_id\: :ref:`int<class_int>`, new_source_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_set_source_id>`
 
-更改源的 ID。
+Changes a source's ID.
 
 .. rst-class:: classref-item-separator
 
@@ -1583,7 +1583,7 @@ Proxied tiles can be automatically replaced in TileMapLayer nodes using the edit
 
 |void| **set_terrain_color**\ (\ terrain_set\: :ref:`int<class_int>`, terrain_index\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_TileSet_method_set_terrain_color>`
 
-設定地形的顏色。該顏色用於在 TileSet 編輯器中區分不同的地形。
+Sets a terrain's color. This color is used for identifying the different terrains in the TileSet editor.
 
 .. rst-class:: classref-item-separator
 
@@ -1595,7 +1595,7 @@ Proxied tiles can be automatically replaced in TileMapLayer nodes using the edit
 
 |void| **set_terrain_name**\ (\ terrain_set\: :ref:`int<class_int>`, terrain_index\: :ref:`int<class_int>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TileSet_method_set_terrain_name>`
 
-設定地形的名稱。
+Sets a terrain's name.
 
 .. rst-class:: classref-item-separator
 
@@ -1607,14 +1607,14 @@ Proxied tiles can be automatically replaced in TileMapLayer nodes using the edit
 
 |void| **set_terrain_set_mode**\ (\ terrain_set\: :ref:`int<class_int>`, mode\: :ref:`TerrainMode<enum_TileSet_TerrainMode>`\ ) :ref:`🔗<class_TileSet_method_set_terrain_set_mode>`
 
-設定地形模式。每種模式決定了圖塊形狀的哪一個位被用來配對相鄰圖塊的地形。
+Sets a terrain mode. Each mode determines which bits of a tile shape is used to match the neighboring tiles' terrains.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

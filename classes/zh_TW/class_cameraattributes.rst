@@ -5,29 +5,29 @@
 CameraAttributes
 ================
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`CameraAttributesPhysical<class_CameraAttributesPhysical>`, :ref:`CameraAttributesPractical<class_CameraAttributesPractical>`
+**Inherited By:** :ref:`CameraAttributesPhysical<class_CameraAttributesPhysical>`, :ref:`CameraAttributesPractical<class_CameraAttributesPractical>`
 
-相機設定的父類。
+Parent class for camera settings.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-控制相機的特定屬性，如景深和曝光覆蓋。
+Controls camera-specific attributes such as depth of field and exposure override.
 
-當在 :ref:`WorldEnvironment<class_WorldEnvironment>` 中使用時，它提供了曝光、自動曝光、以及景深的預設設置，這些設定將由所有沒有自己的 **CameraAttributes** 的相機使用，包括編輯器相機。當在 :ref:`Camera3D<class_Camera3D>` 中使用時，它將覆蓋 :ref:`WorldEnvironment<class_WorldEnvironment>` 中設定的任何 **CameraAttributes**\ 。當在 :ref:`VoxelGI<class_VoxelGI>` 或 :ref:`LightmapGI<class_LightmapGI>` 中使用時，將只會使用曝光設置。
+When used in a :ref:`WorldEnvironment<class_WorldEnvironment>` it provides default settings for exposure, auto-exposure, and depth of field that will be used by all cameras without their own **CameraAttributes**, including the editor camera. When used in a :ref:`Camera3D<class_Camera3D>` it will override any **CameraAttributes** set in the :ref:`WorldEnvironment<class_WorldEnvironment>`. When used in :ref:`VoxelGI<class_VoxelGI>` or :ref:`LightmapGI<class_LightmapGI>`, only the exposure settings will be used.
 
-另請參閱 :ref:`Environment<class_Environment>` 瞭解一般的 3D 環境設定。
+See also :ref:`Environment<class_Environment>` for general 3D environment settings.
 
-這是一個由 :ref:`CameraAttributesPhysical<class_CameraAttributesPhysical>` 和 :ref:`CameraAttributesPractical<class_CameraAttributesPractical>` 繼承的純虛類。
+This is a pure virtual class that is inherited by :ref:`CameraAttributesPhysical<class_CameraAttributesPhysical>` and :ref:`CameraAttributesPractical<class_CameraAttributesPractical>`.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ CameraAttributes
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_CameraAttributes_property_auto_exposure_enabled:
 
@@ -64,7 +64,7 @@ CameraAttributes
 - |void| **set_auto_exposure_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_auto_exposure_enabled**\ (\ )
 
-如果為 ``true``\ ，啟用場景算繪器的色調對應自動曝光模式。如果為 ``true``\ ，算繪器將自動確定曝光設定，以適應場景的照明和觀察到的光線。
+If ``true``, enables the tonemapping auto exposure mode of the scene renderer. If ``true``, the renderer will automatically determine the exposure setting to adapt to the scene's illumination and the observed light.
 
 .. rst-class:: classref-item-separator
 
@@ -81,7 +81,7 @@ CameraAttributes
 - |void| **set_auto_exposure_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_auto_exposure_scale**\ (\ )
 
-自動曝光效果的比例。影響自動曝光的強度。
+The scale of the auto exposure effect. Affects the intensity of auto exposure.
 
 .. rst-class:: classref-item-separator
 
@@ -98,7 +98,7 @@ CameraAttributes
 - |void| **set_auto_exposure_speed**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_auto_exposure_speed**\ (\ )
 
-自動曝光效果的速度。影響相機執行自動曝光所需的時間。
+The speed of the auto exposure effect. Affects the time needed for the camera to perform auto exposure.
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +115,7 @@ CameraAttributes
 - |void| **set_exposure_multiplier**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_exposure_multiplier**\ (\ )
 
-曝光量的乘數。較高的值會產生較亮的圖像。
+Multiplier for the exposure amount. A higher value results in a brighter image.
 
 .. rst-class:: classref-item-separator
 
@@ -138,12 +138,12 @@ If :ref:`auto_exposure_enabled<class_CameraAttributes_property_auto_exposure_ena
 
 \ **Note:** Only available when :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` is enabled.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

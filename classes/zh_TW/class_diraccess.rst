@@ -8,14 +8,14 @@
 DirAccess
 =========
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-提供管理目錄及其內容的方法。
+Provides methods for managing directories and their content.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 This class is used to manage directories and their content, even outside of the project folder.
 
@@ -88,15 +88,15 @@ Keep in mind that file names may change or be remapped after export. If you want
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`檔案系統 <../tutorials/scripting/filesystem>`
+- :doc:`File system <../tutorials/scripting/filesystem>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -109,8 +109,8 @@ Keep in mind that file names may change or be remapped after export. If you want
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -197,8 +197,8 @@ Keep in mind that file names may change or be remapped after export. If you want
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_DirAccess_property_include_hidden:
 
@@ -211,9 +211,9 @@ Keep in mind that file names may change or be remapped after export. If you want
 - |void| **set_include_hidden**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_include_hidden**\ (\ )
 
-如果為 ``true``\ ，則在導覽目錄時包含隱藏檔。
+If ``true``, hidden files are included when navigating the directory.
 
-影響 :ref:`list_dir_begin()<class_DirAccess_method_list_dir_begin>`\ 、\ :ref:`get_directories()<class_DirAccess_method_get_directories>`\ 、\ :ref:`get_files()<class_DirAccess_method_get_files>`\ 。
+Affects :ref:`list_dir_begin()<class_DirAccess_method_list_dir_begin>`, :ref:`get_directories()<class_DirAccess_method_get_directories>` and :ref:`get_files()<class_DirAccess_method_get_files>`.
 
 .. rst-class:: classref-item-separator
 
@@ -230,9 +230,9 @@ Keep in mind that file names may change or be remapped after export. If you want
 - |void| **set_include_navigational**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_include_navigational**\ (\ )
 
-如果為 ``true``\ ，則在導覽目錄時包含 ``.`` 和 ``..``\ 。
+If ``true``, ``.`` and ``..`` are included when navigating the directory.
 
-影響 :ref:`list_dir_begin()<class_DirAccess_method_list_dir_begin>` 和 :ref:`get_directories()<class_DirAccess_method_get_directories>`\ 。
+Affects :ref:`list_dir_begin()<class_DirAccess_method_list_dir_begin>` and :ref:`get_directories()<class_DirAccess_method_get_directories>`.
 
 .. rst-class:: classref-section-separator
 
@@ -240,8 +240,8 @@ Keep in mind that file names may change or be remapped after export. If you want
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_DirAccess_method_change_dir:
 
@@ -265,11 +265,11 @@ Returns one of the :ref:`Error<enum_@GlobalScope_Error>` code constants (:ref:`@
 
 :ref:`Error<enum_@GlobalScope_Error>` **copy**\ (\ from\: :ref:`String<class_String>`, to\: :ref:`String<class_String>`, chmod_flags\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_DirAccess_method_copy>`
 
-將 ``from`` 檔複製到 ``to`` 目標位置。兩個參數都應該是檔的路徑，可以是相對路徑，也可以是絕對路徑。如果目的檔案存在並且沒有存取保護，則它將被覆蓋。
+Copies the ``from`` file to the ``to`` destination. Both arguments should be paths to files, either relative or absolute. If the destination file exists and is not access-protected, it will be overwritten.
 
-如果 ``chmod_flags`` 不同於 ``-1``\ ，且如果在目前作業系統上可用，目標路徑的 Unix 許可權將設定為提供的值。
+If ``chmod_flags`` is different than ``-1``, the Unix permissions for the destination path will be set to the provided value, if available on the current operating system.
 
-返回 :ref:`Error<enum_@GlobalScope_Error>` 錯誤碼常數之一（成功時為 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
+Returns one of the :ref:`Error<enum_@GlobalScope_Error>` code constants (:ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success).
 
 .. rst-class:: classref-item-separator
 
@@ -281,7 +281,7 @@ Returns one of the :ref:`Error<enum_@GlobalScope_Error>` code constants (:ref:`@
 
 :ref:`Error<enum_@GlobalScope_Error>` **copy_absolute**\ (\ from\: :ref:`String<class_String>`, to\: :ref:`String<class_String>`, chmod_flags\: :ref:`int<class_int>` = -1\ ) |static| :ref:`🔗<class_DirAccess_method_copy_absolute>`
 
-靜態版本的 :ref:`copy()<class_DirAccess_method_copy>`\ 。僅支援絕對路徑。
+Static version of :ref:`copy()<class_DirAccess_method_copy>`. Supports only absolute paths.
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +327,7 @@ Returns ``null`` if opening the directory failed. You can use :ref:`get_open_err
 
 :ref:`bool<class_bool>` **current_is_dir**\ (\ ) |const| :ref:`🔗<class_DirAccess_method_current_is_dir>`
 
-返回上一次 :ref:`get_next()<class_DirAccess_method_get_next>` 呼叫處理的目前專案是否為目錄（\ ``.`` 和 ``.`` 屬於目錄）。
+Returns whether the current item processed with the last :ref:`get_next()<class_DirAccess_method_get_next>` call is a directory (``.`` and ``..`` are considered directories).
 
 .. rst-class:: classref-item-separator
 
@@ -383,7 +383,7 @@ For a static equivalent, use :ref:`FileAccess.file_exists()<class_FileAccess_met
 
 :ref:`String<class_String>` **get_current_dir**\ (\ include_drive\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_DirAccess_method_get_current_dir>`
 
-返回目前打開目錄的絕對路徑（例如 ``res://資料夾`` 或 ``C:\tmp\資料夾``\ ）。
+Returns the absolute path to the currently opened directory (e.g. ``res://folder`` or ``C:\tmp\folder``).
 
 .. rst-class:: classref-item-separator
 
@@ -395,7 +395,7 @@ For a static equivalent, use :ref:`FileAccess.file_exists()<class_FileAccess_met
 
 :ref:`int<class_int>` **get_current_drive**\ (\ ) :ref:`🔗<class_DirAccess_method_get_current_drive>`
 
-返回目前打開目錄的驅動器索引。要將返回的索引轉換為驅動器名稱，請參閱 :ref:`get_drive_name()<class_DirAccess_method_get_drive_name>`\ 。
+Returns the currently opened directory's drive index. See :ref:`get_drive_name()<class_DirAccess_method_get_drive_name>` to convert returned index to the name of the drive.
 
 .. rst-class:: classref-item-separator
 
@@ -477,11 +477,11 @@ On other platforms, or if the requested drive does not exist, the method returns
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_files**\ (\ ) :ref:`🔗<class_DirAccess_method_get_files>`
 
-返回目錄內容的檔案名 :ref:`PackedStringArray<class_PackedStringArray>`\ ，不含目錄。該陣列按字母排序。
+Returns a :ref:`PackedStringArray<class_PackedStringArray>` containing filenames of the directory contents, excluding directories. The array is sorted alphabetically.
 
-受 :ref:`include_hidden<class_DirAccess_property_include_hidden>` 的影響。
+Affected by :ref:`include_hidden<class_DirAccess_property_include_hidden>`.
 
-\ **注意：**\ 在匯出後的專案中對 ``res://`` 使用時，只會返回確實在 PCK 的給定資料夾中存在的檔案。在實踐中，匯入後的資源是存放在頂層的 ``.godot`` 資料夾中的，因此只會返回 ``*.gd`` 和 ``*.import`` 檔的路徑（以及 ``project.godot`` 或者 ``project.binary`` 和專案圖示等檔）。匯出後的專案中，返回的列表也會因為 :ref:`ProjectSettings.editor/export/convert_text_resources_to_binary<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>` 是否為 ``true`` 而變化。
+\ **Note:** When used on a ``res://`` path in an exported project, only the files actually included in the PCK at the given folder level are returned. In practice, this means that since imported resources are stored in a top-level ``.godot/`` folder, only paths to ``*.gd`` and ``*.import`` files are returned (plus a few files such as ``project.godot`` or ``project.binary`` and the project icon). In an exported project, the list of returned files will also vary depending on whether :ref:`ProjectSettings.editor/export/convert_text_resources_to_binary<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -523,9 +523,9 @@ Returns file system type name of the current directory's disk. Returned values a
 
 :ref:`String<class_String>` **get_next**\ (\ ) :ref:`🔗<class_DirAccess_method_get_next>`
 
-返回目前的目錄中的下一個元素（檔或目錄）。
+Returns the next element (file or directory) in the current directory.
 
-返回的是檔或目錄的名稱（不是完整路徑）。完全處理完流之後，該方法會返回空 :ref:`String<class_String>` 並自動將流關閉（即此時不必再呼叫 :ref:`list_dir_end()<class_DirAccess_method_list_dir_end>`\ ）。
+The name of the file or directory is returned (and not its full path). Once the stream has been fully processed, the method returns an empty :ref:`String<class_String>` and closes the stream automatically (i.e. :ref:`list_dir_end()<class_DirAccess_method_list_dir_end>` would not be mandatory in such a case).
 
 .. rst-class:: classref-item-separator
 
@@ -537,7 +537,7 @@ Returns file system type name of the current directory's disk. Returned values a
 
 :ref:`Error<enum_@GlobalScope_Error>` **get_open_error**\ (\ ) |static| :ref:`🔗<class_DirAccess_method_get_open_error>`
 
-返回目前執行緒中最後一次 :ref:`open()<class_DirAccess_method_open>` 呼叫的結果。
+Returns the result of the last :ref:`open()<class_DirAccess_method_open>` call in the current thread.
 
 .. rst-class:: classref-item-separator
 
@@ -549,7 +549,7 @@ Returns file system type name of the current directory's disk. Returned values a
 
 :ref:`int<class_int>` **get_space_left**\ (\ ) :ref:`🔗<class_DirAccess_method_get_space_left>`
 
-返回目前的目錄所在磁片的可用空間，單位為位元組。如果該平臺查詢可用空間的方法失敗，則返回 ``0``\ 。
+Returns the available space on the current directory's disk, in bytes. Returns ``0`` if the platform-specific method to query the available space fails.
 
 .. rst-class:: classref-item-separator
 
@@ -615,11 +615,11 @@ Returns ``true`` if the file or directory is a symbolic link, directory junction
 
 :ref:`Error<enum_@GlobalScope_Error>` **list_dir_begin**\ (\ ) :ref:`🔗<class_DirAccess_method_list_dir_begin>`
 
-初始化流，用於使用 :ref:`get_next()<class_DirAccess_method_get_next>` 函式列出所有檔和目錄，如果需要還會關閉目前打開的流。處理完流之後，一般應使用 :ref:`list_dir_end()<class_DirAccess_method_list_dir_end>` 關閉。
+Initializes the stream used to list all files and directories using the :ref:`get_next()<class_DirAccess_method_get_next>` function, closing the currently opened stream if needed. Once the stream has been processed, it should typically be closed with :ref:`list_dir_end()<class_DirAccess_method_list_dir_end>`.
 
-受 :ref:`include_hidden<class_DirAccess_property_include_hidden>` 和 :ref:`include_navigational<class_DirAccess_property_include_navigational>` 的影響。
+Affected by :ref:`include_hidden<class_DirAccess_property_include_hidden>` and :ref:`include_navigational<class_DirAccess_property_include_navigational>`.
 
-\ **注意：**\ 該方法返回的檔和目錄順序是不確定的，不同作業系統也可能不同。如果你想要獲取按字母排序的檔或資料夾列表，請使用 :ref:`get_files()<class_DirAccess_method_get_files>` 或 :ref:`get_directories()<class_DirAccess_method_get_directories>`\ 。
+\ **Note:** The order of files and directories returned by this method is not deterministic, and can vary between operating systems. If you want a list of all files or folders sorted alphabetically, use :ref:`get_files()<class_DirAccess_method_get_files>` or :ref:`get_directories()<class_DirAccess_method_get_directories>`.
 
 .. rst-class:: classref-item-separator
 
@@ -631,7 +631,7 @@ Returns ``true`` if the file or directory is a symbolic link, directory junction
 
 |void| **list_dir_end**\ (\ ) :ref:`🔗<class_DirAccess_method_list_dir_end>`
 
-關閉用 :ref:`list_dir_begin()<class_DirAccess_method_list_dir_begin>` 打開的目前流（並不關注是否已經用 :ref:`get_next()<class_DirAccess_method_get_next>` 完成處理）。
+Closes the current stream opened with :ref:`list_dir_begin()<class_DirAccess_method_list_dir_begin>` (whether it has been fully processed with :ref:`get_next()<class_DirAccess_method_get_next>` does not matter).
 
 .. rst-class:: classref-item-separator
 
@@ -643,9 +643,9 @@ Returns ``true`` if the file or directory is a symbolic link, directory junction
 
 :ref:`Error<enum_@GlobalScope_Error>` **make_dir**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DirAccess_method_make_dir>`
 
-建立目錄。參數可以相對於目前的目錄，也可以是絕對路徑。目標目錄應該位於已經存在的目錄中（遞迴建立完整的路徑請參閱 :ref:`make_dir_recursive()<class_DirAccess_method_make_dir_recursive>`\ ）。
+Creates a directory. The argument can be relative to the current directory, or an absolute path. The target directory should be placed in an already existing directory (to create the full path recursively, see :ref:`make_dir_recursive()<class_DirAccess_method_make_dir_recursive>`).
 
-返回 :ref:`Error<enum_@GlobalScope_Error>` 錯誤碼常數（成功時為 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
+Returns one of the :ref:`Error<enum_@GlobalScope_Error>` code constants (:ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success).
 
 .. rst-class:: classref-item-separator
 
@@ -657,7 +657,7 @@ Returns ``true`` if the file or directory is a symbolic link, directory junction
 
 :ref:`Error<enum_@GlobalScope_Error>` **make_dir_absolute**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_DirAccess_method_make_dir_absolute>`
 
-靜態版本的 :ref:`make_dir()<class_DirAccess_method_make_dir>`\ 。僅支援絕對路徑。
+Static version of :ref:`make_dir()<class_DirAccess_method_make_dir>`. Supports only absolute paths.
 
 .. rst-class:: classref-item-separator
 
@@ -669,9 +669,9 @@ Returns ``true`` if the file or directory is a symbolic link, directory junction
 
 :ref:`Error<enum_@GlobalScope_Error>` **make_dir_recursive**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DirAccess_method_make_dir_recursive>`
 
-遞迴呼叫 :ref:`make_dir()<class_DirAccess_method_make_dir>` 方法，建立目標目錄及其路徑中所有必要的中間目錄。參數可以相對於目前的目錄，也可以是絕對路徑。
+Creates a target directory and all necessary intermediate directories in its path, by calling :ref:`make_dir()<class_DirAccess_method_make_dir>` recursively. The argument can be relative to the current directory, or an absolute path.
 
-返回 :ref:`Error<enum_@GlobalScope_Error>` 錯誤碼常數（成功時為 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
+Returns one of the :ref:`Error<enum_@GlobalScope_Error>` code constants (:ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success).
 
 .. rst-class:: classref-item-separator
 
@@ -683,7 +683,7 @@ Returns ``true`` if the file or directory is a symbolic link, directory junction
 
 :ref:`Error<enum_@GlobalScope_Error>` **make_dir_recursive_absolute**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_DirAccess_method_make_dir_recursive_absolute>`
 
-靜態版本的 :ref:`make_dir_recursive()<class_DirAccess_method_make_dir_recursive>`\ 。僅支援絕對路徑。
+Static version of :ref:`make_dir_recursive()<class_DirAccess_method_make_dir_recursive>`. Supports only absolute paths.
 
 .. rst-class:: classref-item-separator
 
@@ -695,9 +695,9 @@ Returns ``true`` if the file or directory is a symbolic link, directory junction
 
 :ref:`DirAccess<class_DirAccess>` **open**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_DirAccess_method_open>`
 
-新建 **DirAccess** 物件並打開檔案系統中的某個現存目錄。\ ``path`` 參數可以是在專案樹中（\ ``res://folder``\ ）、使用者目錄中（\ ``user://folder``\ ），也可以是使用者檔案系統的絕對路徑（例如 ``/tmp/folder`` 或 ``C:\tmp\folder``\ ）。
+Creates a new **DirAccess** object and opens an existing directory of the filesystem. The ``path`` argument can be within the project tree (``res://folder``), the user directory (``user://folder``) or an absolute path of the user filesystem (e.g. ``/tmp/folder`` or ``C:\tmp\folder``).
 
-如果打開目錄失敗，則返回 ``null``\ 。你可以使用 :ref:`get_open_error()<class_DirAccess_method_get_open_error>` 來查看發生的錯誤。
+Returns ``null`` if opening the directory failed. You can use :ref:`get_open_error()<class_DirAccess_method_get_open_error>` to check the error that occurred.
 
 .. rst-class:: classref-item-separator
 
@@ -723,11 +723,11 @@ Returns target of the symbolic link.
 
 :ref:`Error<enum_@GlobalScope_Error>` **remove**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DirAccess_method_remove>`
 
-將目的檔案或空目錄永久刪除。參數可以相對於目前的目錄，也可以是絕對路徑。如果目標目錄非空，則操作失敗。
+Permanently deletes the target file or an empty directory. The argument can be relative to the current directory, or an absolute path. If the target directory is not empty, the operation will fail.
 
-如果你不想永久刪除該檔/目錄，請改用 :ref:`OS.move_to_trash()<class_OS_method_move_to_trash>`\ 。
+If you don't want to delete the file/directory permanently, use :ref:`OS.move_to_trash()<class_OS_method_move_to_trash>` instead.
 
-返回 :ref:`Error<enum_@GlobalScope_Error>` 錯誤碼常數（成功時為 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
+Returns one of the :ref:`Error<enum_@GlobalScope_Error>` code constants (:ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success).
 
 .. rst-class:: classref-item-separator
 
@@ -739,7 +739,7 @@ Returns target of the symbolic link.
 
 :ref:`Error<enum_@GlobalScope_Error>` **remove_absolute**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_DirAccess_method_remove_absolute>`
 
-靜態版本的 :ref:`remove()<class_DirAccess_method_remove>`\ 。僅支援絕對路徑。
+Static version of :ref:`remove()<class_DirAccess_method_remove>`. Supports only absolute paths.
 
 .. rst-class:: classref-item-separator
 
@@ -751,9 +751,9 @@ Returns target of the symbolic link.
 
 :ref:`Error<enum_@GlobalScope_Error>` **rename**\ (\ from\: :ref:`String<class_String>`, to\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DirAccess_method_rename>`
 
-將 ``from`` 檔或目錄重命名為（移動至）\ ``to`` 目標。兩個參數都應該是檔或目錄的路徑，可以是相對路徑也可以是絕對路徑。如果目的檔案或目錄已存在，並且沒有防寫，則會被覆蓋。
+Renames (move) the ``from`` file or directory to the ``to`` destination. Both arguments should be paths to files or directories, either relative or absolute. If the destination file or directory exists and is not access-protected, it will be overwritten.
 
-返回 :ref:`Error<enum_@GlobalScope_Error>` 錯誤碼常數（成功時為 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
+Returns one of the :ref:`Error<enum_@GlobalScope_Error>` code constants (:ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success).
 
 .. rst-class:: classref-item-separator
 
@@ -765,14 +765,14 @@ Returns target of the symbolic link.
 
 :ref:`Error<enum_@GlobalScope_Error>` **rename_absolute**\ (\ from\: :ref:`String<class_String>`, to\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_DirAccess_method_rename_absolute>`
 
-靜態版本的 :ref:`rename()<class_DirAccess_method_rename>`\ 。僅支援絕對路徑。
+Static version of :ref:`rename()<class_DirAccess_method_rename>`. Supports only absolute paths.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

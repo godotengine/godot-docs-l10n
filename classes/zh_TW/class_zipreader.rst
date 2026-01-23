@@ -5,14 +5,14 @@
 ZIPReader
 =========
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 Allows reading the content of a ZIP file.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 This class implements a reader that can extract the content of individual files inside a ZIP archive. See also :ref:`ZIPPacker<class_ZIPPacker>`.
 
@@ -56,8 +56,8 @@ This class implements a reader that can extract the content of individual files 
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -82,8 +82,8 @@ This class implements a reader that can extract the content of individual files 
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_ZIPReader_method_close:
 
@@ -91,7 +91,7 @@ This class implements a reader that can extract the content of individual files 
 
 :ref:`Error<enum_@GlobalScope_Error>` **close**\ (\ ) :ref:`🔗<class_ZIPReader_method_close>`
 
-關閉該實例底層所使用的資源。
+Closes the underlying resources used by this instance.
 
 .. rst-class:: classref-item-separator
 
@@ -103,9 +103,9 @@ This class implements a reader that can extract the content of individual files 
 
 :ref:`bool<class_bool>` **file_exists**\ (\ path\: :ref:`String<class_String>`, case_sensitive\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ZIPReader_method_file_exists>`
 
-如果載入的 zip 存檔中存在對應的檔，則返回 ``true``\ 。
+Returns ``true`` if the file exists in the loaded zip archive.
 
-必須在 :ref:`open()<class_ZIPReader_method_open>` 之後呼叫。
+Must be called after :ref:`open()<class_ZIPReader_method_open>`.
 
 .. rst-class:: classref-item-separator
 
@@ -129,9 +129,9 @@ Returns the compression level of the file in the loaded zip archive. Returns ``-
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_files**\ (\ ) :ref:`🔗<class_ZIPReader_method_get_files>`
 
-返回載入的存檔中所有檔的名稱列表。
+Returns the list of names of all files in the loaded archive.
 
-必須在 :ref:`open()<class_ZIPReader_method_open>` 之後呼叫。
+Must be called after :ref:`open()<class_ZIPReader_method_open>`.
 
 .. rst-class:: classref-item-separator
 
@@ -143,7 +143,7 @@ Returns the compression level of the file in the loaded zip archive. Returns ``-
 
 :ref:`Error<enum_@GlobalScope_Error>` **open**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ZIPReader_method_open>`
 
-打開給定 ``path`` 的壓縮檔，並讀取其檔索引。
+Opens the zip archive at the given ``path`` and reads its file index.
 
 .. rst-class:: classref-item-separator
 
@@ -155,16 +155,16 @@ Returns the compression level of the file in the loaded zip archive. Returns ``-
 
 :ref:`PackedByteArray<class_PackedByteArray>` **read_file**\ (\ path\: :ref:`String<class_String>`, case_sensitive\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ZIPReader_method_read_file>`
 
-將載入的 zip 存檔中檔的全部內容載入到記憶體中並返回它。
+Loads the whole content of a file in the loaded zip archive into memory and returns it.
 
-必須在 :ref:`open()<class_ZIPReader_method_open>` 之後呼叫。
+Must be called after :ref:`open()<class_ZIPReader_method_open>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

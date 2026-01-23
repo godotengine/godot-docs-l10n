@@ -5,21 +5,21 @@
 Sprite3D
 ========
 
-**继承：** :ref:`SpriteBase3D<class_SpriteBase3D>` **<** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`SpriteBase3D<class_SpriteBase3D>` **<** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-3D 世界中的 2D 精灵节点。
+2D sprite node in a 3D world.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-在 3D 环境中显示 2D 纹理的节点。显示的纹理可以是来自较大图集纹理的区域，也可以是来自精灵表动画的帧。另见 :ref:`SpriteBase3D<class_SpriteBase3D>`\ ，定义有公告板模式等属性。
+A node that displays a 2D texture in a 3D environment. The texture displayed can be a region from a larger atlas texture, or a frame from a sprite sheet animation. See also :ref:`SpriteBase3D<class_SpriteBase3D>` where properties such as the billboard mode are defined.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ Sprite3D
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_Sprite3D_signal_frame_changed:
 
@@ -55,7 +55,7 @@ Sprite3D
 
 **frame_changed**\ (\ ) :ref:`🔗<class_Sprite3D_signal_frame_changed>`
 
-当 :ref:`frame<class_Sprite3D_property_frame>` 更改时发出。
+Emitted when the :ref:`frame<class_Sprite3D_property_frame>` changes.
 
 .. rst-class:: classref-item-separator
 
@@ -67,7 +67,7 @@ Sprite3D
 
 **texture_changed**\ (\ ) :ref:`🔗<class_Sprite3D_signal_texture_changed>`
 
-当 :ref:`texture<class_Sprite3D_property_texture>` 更改时发出。
+Emitted when the :ref:`texture<class_Sprite3D_property_texture>` changes.
 
 .. rst-class:: classref-section-separator
 
@@ -75,8 +75,8 @@ Sprite3D
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_Sprite3D_property_frame:
 
@@ -89,7 +89,7 @@ Sprite3D
 - |void| **set_frame**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_frame**\ (\ )
 
-当前显示的精灵表中的帧。\ :ref:`hframes<class_Sprite3D_property_hframes>` 和 :ref:`vframes<class_Sprite3D_property_vframes>` 必须大于 1。\ :ref:`hframes<class_Sprite3D_property_hframes>` 或 :ref:`vframes<class_Sprite3D_property_vframes>` 发生变化时会自动调整该属性，让它在视觉上保持指向同一帧（同一行、同一列）。 如果无法保持，则会重置为 ``0``\ 。
+Current frame to display from sprite sheet. :ref:`hframes<class_Sprite3D_property_hframes>` or :ref:`vframes<class_Sprite3D_property_vframes>` must be greater than 1. This property is automatically adjusted when :ref:`hframes<class_Sprite3D_property_hframes>` or :ref:`vframes<class_Sprite3D_property_vframes>` are changed to keep pointing to the same visual frame (same column and row). If that's impossible, this value is reset to ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -106,7 +106,7 @@ Sprite3D
 - |void| **set_frame_coords**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_frame_coords**\ (\ )
 
-显示的帧在精灵表中的坐标。这是 :ref:`frame<class_Sprite3D_property_frame>` 属性的别名。\ :ref:`vframes<class_Sprite3D_property_vframes>` 或 :ref:`hframes<class_Sprite3D_property_hframes>` 必须大于 1。
+Coordinates of the frame to display from sprite sheet. This is as an alias for the :ref:`frame<class_Sprite3D_property_frame>` property. :ref:`hframes<class_Sprite3D_property_hframes>` or :ref:`vframes<class_Sprite3D_property_vframes>` must be greater than 1.
 
 .. rst-class:: classref-item-separator
 
@@ -123,7 +123,7 @@ Sprite3D
 - |void| **set_hframes**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_hframes**\ (\ )
 
-精灵表中的列数。该属性发生变化时会对 :ref:`frame<class_Sprite3D_property_frame>` 进行调整，在视觉上维持相同的帧（同一行、同一列）。如果无法维持，则会将 :ref:`frame<class_Sprite3D_property_frame>` 重置为 ``0``\ 。
+The number of columns in the sprite sheet. When this property is changed, :ref:`frame<class_Sprite3D_property_frame>` is adjusted so that the same visual frame is maintained (same row and column). If that's impossible, :ref:`frame<class_Sprite3D_property_frame>` is reset to ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -140,7 +140,7 @@ Sprite3D
 - |void| **set_region_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_region_enabled**\ (\ )
 
-如果为 ``true``\ ，则该精灵会使用 :ref:`region_rect<class_Sprite3D_property_region_rect>`\ ，只显示纹理中的指定部分。
+If ``true``, the sprite will use :ref:`region_rect<class_Sprite3D_property_region_rect>` and display only the specified part of its texture.
 
 .. rst-class:: classref-item-separator
 
@@ -157,7 +157,7 @@ Sprite3D
 - |void| **set_region_rect**\ (\ value\: :ref:`Rect2<class_Rect2>`\ )
 - :ref:`Rect2<class_Rect2>` **get_region_rect**\ (\ )
 
-要显示的图集纹理区域。\ :ref:`region_enabled<class_Sprite3D_property_region_enabled>` 必须是 ``true``\ 。
+The region of the atlas texture to display. :ref:`region_enabled<class_Sprite3D_property_region_enabled>` must be ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ Sprite3D
 - |void| **set_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ )
 
-要绘制的 :ref:`Texture2D<class_Texture2D>` 对象。如果使用 :ref:`GeometryInstance3D.material_override<class_GeometryInstance3D_property_material_override>`\ ，则这个属性会被覆盖。仍会使用尺寸信息。
+:ref:`Texture2D<class_Texture2D>` object to draw. If :ref:`GeometryInstance3D.material_override<class_GeometryInstance3D_property_material_override>` is used, this will be overridden. The size information is still used.
 
 .. rst-class:: classref-item-separator
 
@@ -191,14 +191,14 @@ Sprite3D
 - |void| **set_vframes**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_vframes**\ (\ )
 
-精灵表中的行数。该属性发生变化时会对 :ref:`frame<class_Sprite3D_property_frame>` 进行调整，在视觉上维持相同的帧（同一行、同一列）。如果无法维持，则会将 :ref:`frame<class_Sprite3D_property_frame>` 重置为 ``0``\ 。
+The number of rows in the sprite sheet. When this property is changed, :ref:`frame<class_Sprite3D_property_frame>` is adjusted so that the same visual frame is maintained (same row and column). If that's impossible, :ref:`frame<class_Sprite3D_property_frame>` is reset to ``0``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

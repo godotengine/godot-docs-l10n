@@ -5,14 +5,14 @@
 ProceduralSkyMaterial
 =====================
 
-**繼承：** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-以圖塊的形式向 :ref:`TileSet<class_TileSet>` 資源暴露一組場景。
+A material that defines a simple sky for a :ref:`Sky<class_Sky>` resource.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 **ProceduralSkyMaterial** provides a way to create an effective background quickly by defining procedural parameters for the sun, the sky and the ground. The sky and ground are defined by a main color, a color at the horizon, and an easing curve to interpolate between them. Suns are described by a position in the sky, a color, and a max angle from the sun at which the easing curve ends. The max angle therefore defines the size of the sun in the sky.
 
@@ -22,8 +22,8 @@ ProceduralSkyMaterial
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -64,8 +64,8 @@ ProceduralSkyMaterial
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_ProceduralSkyMaterial_property_energy_multiplier:
 
@@ -78,7 +78,7 @@ ProceduralSkyMaterial
 - |void| **set_energy_multiplier**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_energy_multiplier**\ (\ )
 
-天空整體亮度的乘數。數值越高，天空就越亮。
+The sky's overall brightness multiplier. Higher values result in a brighter sky.
 
 .. rst-class:: classref-item-separator
 
@@ -95,7 +95,7 @@ ProceduralSkyMaterial
 - |void| **set_ground_bottom_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_ground_bottom_color**\ (\ )
 
-地面底部的顏色。會與 :ref:`ground_horizon_color<class_ProceduralSkyMaterial_property_ground_horizon_color>` 混合。
+Color of the ground at the bottom. Blends with :ref:`ground_horizon_color<class_ProceduralSkyMaterial_property_ground_horizon_color>`.
 
 .. rst-class:: classref-item-separator
 
@@ -112,7 +112,7 @@ ProceduralSkyMaterial
 - |void| **set_ground_curve**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ground_curve**\ (\ )
 
-從 :ref:`ground_horizon_color<class_ProceduralSkyMaterial_property_ground_horizon_color>` 漸變到 :ref:`ground_bottom_color<class_ProceduralSkyMaterial_property_ground_bottom_color>` 的速度。
+How quickly the :ref:`ground_horizon_color<class_ProceduralSkyMaterial_property_ground_horizon_color>` fades into the :ref:`ground_bottom_color<class_ProceduralSkyMaterial_property_ground_bottom_color>`.
 
 .. rst-class:: classref-item-separator
 
@@ -129,7 +129,7 @@ ProceduralSkyMaterial
 - |void| **set_ground_energy_multiplier**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ground_energy_multiplier**\ (\ )
 
-地面顏色的乘數。值越高，地面越亮。
+Multiplier for ground color. A higher value will make the ground brighter.
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +146,7 @@ ProceduralSkyMaterial
 - |void| **set_ground_horizon_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_ground_horizon_color**\ (\ )
 
-地面在地平線處的顏色。會與 :ref:`ground_bottom_color<class_ProceduralSkyMaterial_property_ground_bottom_color>` 混合。
+Color of the ground at the horizon. Blends with :ref:`ground_bottom_color<class_ProceduralSkyMaterial_property_ground_bottom_color>`.
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ ProceduralSkyMaterial
 - |void| **set_sky_cover**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_sky_cover**\ (\ )
 
-要使用的天空覆蓋紋理。這個紋理必須使用一個等角投影（類似於\ :ref:`PanoramaSkyMaterial<class_PanoramaSkyMaterial>`\ ）。 該紋理的顏色將被\ *新增*\ 到現有的天空顏色中，並將乘以 :ref:`sky_energy_multiplier<class_ProceduralSkyMaterial_property_sky_energy_multiplier>` 和 :ref:`sky_cover_modulate<class_ProceduralSkyMaterial_property_sky_cover_modulate>`\ 。這主要適用於顯示夜晚的星星，但也可以用來顯示白天或夜晚的雲彩（具有非物理精確性的外觀）。
+The sky cover texture to use. This texture must use an equirectangular projection (similar to :ref:`PanoramaSkyMaterial<class_PanoramaSkyMaterial>`). The texture's colors will be *added* to the existing sky color, and will be multiplied by :ref:`sky_energy_multiplier<class_ProceduralSkyMaterial_property_sky_energy_multiplier>` and :ref:`sky_cover_modulate<class_ProceduralSkyMaterial_property_sky_cover_modulate>`. This is mainly suited to displaying stars at night, but it can also be used to display clouds at day or night (with a non-physically-accurate look).
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ ProceduralSkyMaterial
 - |void| **set_sky_cover_modulate**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_sky_cover_modulate**\ (\ )
 
-套用於 :ref:`sky_cover<class_ProceduralSkyMaterial_property_sky_cover>` 紋理的色調。可用於改變天空覆蓋的顏色或不透明度，不受天空能量的影響，對於晝夜轉換或天氣轉換很有用。只有在 :ref:`sky_cover<class_ProceduralSkyMaterial_property_sky_cover>` 中定義了紋理時才有效。
+The tint to apply to the :ref:`sky_cover<class_ProceduralSkyMaterial_property_sky_cover>` texture. This can be used to change the sky cover's colors or opacity independently of the sky energy, which is useful for day/night or weather transitions. Only effective if a texture is defined in :ref:`sky_cover<class_ProceduralSkyMaterial_property_sky_cover>`.
 
 .. rst-class:: classref-item-separator
 
@@ -197,7 +197,7 @@ ProceduralSkyMaterial
 - |void| **set_sky_curve**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_sky_curve**\ (\ )
 
-從 :ref:`sky_horizon_color<class_ProceduralSkyMaterial_property_sky_horizon_color>` 漸變到 :ref:`sky_top_color<class_ProceduralSkyMaterial_property_sky_top_color>` 的速度。
+How quickly the :ref:`sky_horizon_color<class_ProceduralSkyMaterial_property_sky_horizon_color>` fades into the :ref:`sky_top_color<class_ProceduralSkyMaterial_property_sky_top_color>`.
 
 .. rst-class:: classref-item-separator
 
@@ -214,7 +214,7 @@ ProceduralSkyMaterial
 - |void| **set_sky_energy_multiplier**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_sky_energy_multiplier**\ (\ )
 
-天空顏色的倍數。值越高天空越亮。
+Multiplier for sky color. A higher value will make the sky brighter.
 
 .. rst-class:: classref-item-separator
 
@@ -231,7 +231,7 @@ ProceduralSkyMaterial
 - |void| **set_sky_horizon_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_sky_horizon_color**\ (\ )
 
-天空在地平線處的顏色。會與 :ref:`sky_top_color<class_ProceduralSkyMaterial_property_sky_top_color>` 混合。
+Color of the sky at the horizon. Blends with :ref:`sky_top_color<class_ProceduralSkyMaterial_property_sky_top_color>`.
 
 .. rst-class:: classref-item-separator
 
@@ -248,7 +248,7 @@ ProceduralSkyMaterial
 - |void| **set_sky_top_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_sky_top_color**\ (\ )
 
-天空在頂部的顏色。會與 :ref:`sky_horizon_color<class_ProceduralSkyMaterial_property_sky_horizon_color>` 混合。
+Color of the sky at the top. Blends with :ref:`sky_horizon_color<class_ProceduralSkyMaterial_property_sky_horizon_color>`.
 
 .. rst-class:: classref-item-separator
 
@@ -265,7 +265,7 @@ ProceduralSkyMaterial
 - |void| **set_sun_angle_max**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_sun_angle_max**\ (\ )
 
-太陽完全淡出消失的位置與太陽中心的距離。
+Distance from center of sun where it fades out completely.
 
 .. rst-class:: classref-item-separator
 
@@ -282,7 +282,7 @@ ProceduralSkyMaterial
 - |void| **set_sun_curve**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_sun_curve**\ (\ )
 
-在太陽圓盤邊緣和 :ref:`sun_angle_max<class_ProceduralSkyMaterial_property_sun_angle_max>` 之間，太陽消失得有多快。
+How quickly the sun fades away between the edge of the sun disk and :ref:`sun_angle_max<class_ProceduralSkyMaterial_property_sun_angle_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -299,14 +299,14 @@ ProceduralSkyMaterial
 - |void| **set_use_debanding**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_debanding**\ (\ )
 
-如果為 ``true``\ ，則啟用去色帶。去色帶會增加少量噪點，這有助於減少天空中顏色的平滑變化而出現的色帶。
+If ``true``, enables debanding. Debanding adds a small amount of noise which helps reduce banding that appears from the smooth changes in color in the sky.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

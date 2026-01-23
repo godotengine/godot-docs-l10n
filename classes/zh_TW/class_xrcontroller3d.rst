@@ -5,14 +5,14 @@
 XRController3D
 ==============
 
-**繼承：** :ref:`XRNode3D<class_XRNode3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`XRNode3D<class_XRNode3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 A 3D node representing a spatially-tracked controller.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 This is a helper 3D node that is linked to the tracking of controllers. It also offers several handy passthroughs to the state of buttons and such on the controllers.
 
@@ -24,15 +24,15 @@ The current :ref:`XRInterface<class_XRInterface>` defines the names of inputs. I
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`XR 文件索引 <../tutorials/xr/index>`
+- :doc:`XR documentation index <../tutorials/xr/index>`
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -55,8 +55,8 @@ The current :ref:`XRInterface<class_XRInterface>` defines the names of inputs. I
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_XRController3D_signal_button_pressed:
 
@@ -64,7 +64,7 @@ The current :ref:`XRInterface<class_XRInterface>` defines the names of inputs. I
 
 **button_pressed**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_XRController3D_signal_button_pressed>`
 
-當該控制器上的一個按鈕被按下時觸發。
+Emitted when a button on this controller is pressed.
 
 .. rst-class:: classref-item-separator
 
@@ -76,7 +76,7 @@ The current :ref:`XRInterface<class_XRInterface>` defines the names of inputs. I
 
 **button_released**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_XRController3D_signal_button_released>`
 
-當該控制器上的一個按鈕被釋放時觸發。
+Emitted when a button on this controller is released.
 
 .. rst-class:: classref-item-separator
 
@@ -88,7 +88,7 @@ The current :ref:`XRInterface<class_XRInterface>` defines the names of inputs. I
 
 **input_float_changed**\ (\ name\: :ref:`String<class_String>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_XRController3D_signal_input_float_changed>`
 
-當該控制器上的觸發器或類似輸入更改值時發出。
+Emitted when a trigger or similar input on this controller changes value.
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ The current :ref:`XRInterface<class_XRInterface>` defines the names of inputs. I
 
 **input_vector2_changed**\ (\ name\: :ref:`String<class_String>`, value\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_XRController3D_signal_input_vector2_changed>`
 
-當該控制器上的拇指杆或拇指板被移動時發出。
+Emitted when a thumbstick or thumbpad on this controller is moved.
 
 .. rst-class:: classref-item-separator
 
@@ -120,8 +120,8 @@ Emitted when the interaction profile on this controller is changed.
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_XRController3D_method_get_float:
 
@@ -187,12 +187,12 @@ Returns ``true`` if the button with the given ``name`` is pressed.
 
 \ **Note:** The current :ref:`XRInterface<class_XRInterface>` defines the ``name`` for each input. In the case of OpenXR, these are the names of actions in the current action set.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

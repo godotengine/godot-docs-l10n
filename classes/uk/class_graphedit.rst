@@ -5,8 +5,6 @@
 GraphEdit
 =========
 
-**Експериментальний:** This class may be changed or removed in future versions.
-
 **Успадковує:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 Редактор графоподібних структур із використанням :ref:`GraphNode<class_GraphNode>`.

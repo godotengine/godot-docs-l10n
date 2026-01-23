@@ -5,21 +5,21 @@
 VisualShaderNodeRemap
 =====================
 
-**繼承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-remap 函式的視覺化著色器節點。
+A visual shader node for remap function.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-Remap 函式將輸入範圍變換到輸出範圍。例如你可以將 ``0..1`` 裡的值變到 ``-2..2`` 裡。詳見 :ref:`@GlobalScope.remap()<class_@GlobalScope_method_remap>`\ 。
+Remap will transform the input range into output range, e.g. you can change a ``0..1`` value to ``-2..2`` etc. See :ref:`@GlobalScope.remap()<class_@GlobalScope_method_remap>` for more details.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ Remap 函式將輸入範圍變換到輸出範圍。例如你可以將 ``0..1`` �
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_VisualShaderNodeRemap_OpType:
 
@@ -49,7 +49,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeRemap_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeRemap_OpType>` **OP_TYPE_SCALAR** = ``0``
 
-浮點數標量型別。
+A floating-point scalar type.
 
 .. _class_VisualShaderNodeRemap_constant_OP_TYPE_VECTOR_2D:
 
@@ -57,7 +57,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeRemap_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeRemap_OpType>` **OP_TYPE_VECTOR_2D** = ``1``
 
-2D 向量型別。
+A 2D vector type.
 
 .. _class_VisualShaderNodeRemap_constant_OP_TYPE_VECTOR_2D_SCALAR:
 
@@ -73,7 +73,7 @@ The ``value`` port uses a 2D vector type, while the ``input min``, ``input max``
 
 :ref:`OpType<enum_VisualShaderNodeRemap_OpType>` **OP_TYPE_VECTOR_3D** = ``3``
 
-3D向量型別。
+A 3D vector type.
 
 .. _class_VisualShaderNodeRemap_constant_OP_TYPE_VECTOR_3D_SCALAR:
 
@@ -89,7 +89,7 @@ The ``value`` port uses a 3D vector type, while the ``input min``, ``input max``
 
 :ref:`OpType<enum_VisualShaderNodeRemap_OpType>` **OP_TYPE_VECTOR_4D** = ``5``
 
-4D 向量型別。
+A 4D vector type.
 
 .. _class_VisualShaderNodeRemap_constant_OP_TYPE_VECTOR_4D_SCALAR:
 
@@ -105,7 +105,7 @@ The ``value`` port uses a 4D vector type, while the ``input min``, ``input max``
 
 :ref:`OpType<enum_VisualShaderNodeRemap_OpType>` **OP_TYPE_MAX** = ``7``
 
-代表 :ref:`OpType<enum_VisualShaderNodeRemap_OpType>` 列舉的大小。
+Represents the size of the :ref:`OpType<enum_VisualShaderNodeRemap_OpType>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -113,8 +113,8 @@ The ``value`` port uses a 4D vector type, while the ``input min``, ``input max``
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_VisualShaderNodeRemap_property_op_type:
 
@@ -131,12 +131,12 @@ The ``value`` port uses a 4D vector type, while the ``input min``, ``input max``
 
 	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

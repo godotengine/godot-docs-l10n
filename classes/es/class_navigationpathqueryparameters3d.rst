@@ -247,7 +247,7 @@ El mapa de navegación :ref:`RID<class_RID>` utilizado en la consulta de ruta.
 - |void| **set_metadata_flags**\ (\ value\: |bitfield|\[:ref:`PathMetadataFlags<enum_NavigationPathQueryParameters3D_PathMetadataFlags>`\]\ )
 - |bitfield|\[:ref:`PathMetadataFlags<enum_NavigationPathQueryParameters3D_PathMetadataFlags>`\] **get_metadata_flags**\ (\ )
 
-Additional information to include with the navigation path.
+Información adicional a incluir con la ruta de navegación.
 
 .. rst-class:: classref-item-separator
 
@@ -264,7 +264,7 @@ Additional information to include with the navigation path.
 - |void| **set_navigation_layers**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_navigation_layers**\ (\ )
 
-The navigation layers the query will use (as a bitmask).
+Las capas de navegación que usará la consulta (como una máscara de bits).
 
 .. rst-class:: classref-item-separator
 
@@ -298,7 +298,7 @@ The path postprocessing applied to the raw path corridor found by the :ref:`path
 - |void| **set_path_return_max_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_path_return_max_length**\ (\ )
 
-The maximum allowed length of the returned path in world units. A path will be clipped when going over this length. A value of ``0`` or below counts as disabled.
+La longitud máxima permitida de la ruta devuelta en unidades del mundo. Una ruta se cortará al exceder esta longitud. Un valor de ``0`` o inferior se considera deshabilitado.
 
 .. rst-class:: classref-item-separator
 

@@ -5,30 +5,30 @@
 PolygonOccluder3D
 =================
 
-**继承：** :ref:`Occluder3D<class_Occluder3D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Occluder3D<class_Occluder3D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-平面 2D 多边形形状，用于 :ref:`OccluderInstance3D<class_OccluderInstance3D>` 的遮挡剔除。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-**PolygonOccluder3D** 储存的是多边形形状，可用于引擎的遮挡剔除系统。在编辑器中选中具有 **PolygonOccluder3D** 的 :ref:`OccluderInstance3D<class_OccluderInstance3D>` 时，3D 视口的顶部会出现用于添加/移除顶点的编辑器。所有的顶点都必须在相同的 2D 平面中放置，也就是说，使用单个 **PolygonOccluder3D** 是无法任意创建 3D 形状的。要将任意 3D 形状作为遮挡器，请改用 :ref:`ArrayOccluder3D<class_ArrayOccluder3D>` 或 :ref:`OccluderInstance3D<class_OccluderInstance3D>` 的烘焙功能。
-
-设置遮挡剔除的步骤见 :ref:`OccluderInstance3D<class_OccluderInstance3D>` 的文档。
+Flat 2D polygon shape for use with occlusion culling in :ref:`OccluderInstance3D<class_OccluderInstance3D>`.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`遮挡剔除 <../tutorials/3d/occlusion_culling>`
+**PolygonOccluder3D** stores a polygon shape that can be used by the engine's occlusion culling system. When an :ref:`OccluderInstance3D<class_OccluderInstance3D>` with a **PolygonOccluder3D** is selected in the editor, an editor will appear at the top of the 3D viewport so you can add/remove points. All points must be placed on the same 2D plane, which means it is not possible to create arbitrary 3D shapes with a single **PolygonOccluder3D**. To use arbitrary 3D shapes as occluders, use :ref:`ArrayOccluder3D<class_ArrayOccluder3D>` or :ref:`OccluderInstance3D<class_OccluderInstance3D>`'s baking feature instead.
+
+See :ref:`OccluderInstance3D<class_OccluderInstance3D>`'s documentation for instructions on setting up occlusion culling.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Occlusion culling <../tutorials/3d/occlusion_culling>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -43,8 +43,8 @@ PolygonOccluder3D
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_PolygonOccluder3D_property_polygon:
 
@@ -57,18 +57,18 @@ PolygonOccluder3D
 - |void| **set_polygon**\ (\ value\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ )
 - :ref:`PackedVector2Array<class_PackedVector2Array>` **get_polygon**\ (\ )
 
-用于遮挡剔除的多边形。既可以是凸多边形，也可以是凹多边形，但只有让顶点的数量尽可能地少，才能够让性能最大化。
+The polygon to use for occlusion culling. The polygon can be convex or concave, but it should have as few points as possible to maximize performance.
 
-多边形必须\ *不存在*\ 相交的线。否则三角形化会失败（同时会输出错误信息）。
+The polygon must *not* have intersecting lines. Otherwise, triangulation will fail (with an error message printed).
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

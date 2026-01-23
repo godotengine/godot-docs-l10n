@@ -5,25 +5,25 @@
 IntervalTweener
 ===============
 
-**继承：** :ref:`Tweener<class_Tweener>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Tweener<class_Tweener>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-在 :ref:`Tween<class_Tween>` 动画中创建空闲间隔。
+Creates an idle interval in a :ref:`Tween<class_Tween>` animation.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-**IntervalTweener** 可用于在补间序列中制作延迟。更多用法信息请参阅 :ref:`Tween.tween_interval()<class_Tween_method_tween_interval>`\ 。
+**IntervalTweener** is used to make delays in a tweening sequence. See :ref:`Tween.tween_interval()<class_Tween_method_tween_interval>` for more usage information.
 
-\ **注意：**\ 创建 **IntervalTweener** 的唯一正确方法是 :ref:`Tween.tween_interval()<class_Tween_method_tween_interval>`\ 。任何手动创建的 **IntervalTweener** 都无法正常工作。
+\ **Note:** :ref:`Tween.tween_interval()<class_Tween_method_tween_interval>` is the only correct way to create **IntervalTweener**. Any **IntervalTweener** created manually will not function correctly.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

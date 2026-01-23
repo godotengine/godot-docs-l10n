@@ -5,21 +5,21 @@
 TabBar
 ======
 
-**继承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-提供水平选项卡栏的控件。
+A control that provides a horizontal bar with tabs.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-提供水平选项卡栏的控件。类似于 :ref:`TabContainer<class_TabContainer>`\ ，但只负责绘制选项卡，不与子节点互动。
+A control that provides a horizontal bar with tabs. Similar to :ref:`TabContainer<class_TabContainer>` but is only in charge of drawing tabs, not interacting with children.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -58,8 +58,8 @@ TabBar
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -132,8 +132,8 @@ TabBar
 
 .. rst-class:: classref-reftable-group
 
-主题属性
---------
+Theme Properties
+----------------
 
 .. table::
    :widths: auto
@@ -206,8 +206,8 @@ TabBar
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_TabBar_signal_active_tab_rearranged:
 
@@ -215,7 +215,7 @@ TabBar
 
 **active_tab_rearranged**\ (\ idx_to\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_signal_active_tab_rearranged>`
 
-通过鼠标拖动重新排列活动选项卡时发出。见 :ref:`drag_to_rearrange_enabled<class_TabBar_property_drag_to_rearrange_enabled>`\ 。
+Emitted when the active tab is rearranged via mouse drag. See :ref:`drag_to_rearrange_enabled<class_TabBar_property_drag_to_rearrange_enabled>`.
 
 .. rst-class:: classref-item-separator
 
@@ -227,7 +227,7 @@ TabBar
 
 **tab_button_pressed**\ (\ tab\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_signal_tab_button_pressed>`
 
-选项卡的右侧按钮被按下时发出。见 :ref:`set_tab_button_icon()<class_TabBar_method_set_tab_button_icon>`\ 。
+Emitted when a tab's right button is pressed. See :ref:`set_tab_button_icon()<class_TabBar_method_set_tab_button_icon>`.
 
 .. rst-class:: classref-item-separator
 
@@ -239,7 +239,7 @@ TabBar
 
 **tab_changed**\ (\ tab\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_signal_tab_changed>`
 
-切换到另一个选项卡时发出。
+Emitted when switching to another tab.
 
 .. rst-class:: classref-item-separator
 
@@ -251,7 +251,7 @@ TabBar
 
 **tab_clicked**\ (\ tab\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_signal_tab_clicked>`
 
-单击选项卡时发出，即使它是当前选项卡。
+Emitted when a tab is clicked, even if it is the current tab.
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ Emitted when a tab's close button is pressed or, if :ref:`close_with_middle_mous
 
 **tab_hovered**\ (\ tab\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_signal_tab_hovered>`
 
-当鼠标悬停选项卡时发出。
+Emitted when a tab is hovered by the mouse.
 
 .. rst-class:: classref-item-separator
 
@@ -314,7 +314,7 @@ Emitted when a tab is right-clicked.
 
 **tab_selected**\ (\ tab\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_signal_tab_selected>`
 
-通过点击、定向输入或脚本选中某个选项卡时发出，即便该选项卡本来就是当前选项卡。
+Emitted when a tab is selected via click, directional input, or script, even if it is the current tab.
 
 .. rst-class:: classref-section-separator
 
@@ -322,8 +322,8 @@ Emitted when a tab is right-clicked.
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_TabBar_AlignmentMode:
 
@@ -361,7 +361,7 @@ Aligns tabs to the right.
 
 :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **ALIGNMENT_MAX** = ``3``
 
-代表 :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` 枚举的大小。
+Represents the size of the :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -379,7 +379,7 @@ enum **CloseButtonDisplayPolicy**: :ref:`🔗<enum_TabBar_CloseButtonDisplayPoli
 
 :ref:`CloseButtonDisplayPolicy<enum_TabBar_CloseButtonDisplayPolicy>` **CLOSE_BUTTON_SHOW_NEVER** = ``0``
 
-永远不会显示关闭按钮。
+Never show the close buttons.
 
 .. _class_TabBar_constant_CLOSE_BUTTON_SHOW_ACTIVE_ONLY:
 
@@ -387,7 +387,7 @@ enum **CloseButtonDisplayPolicy**: :ref:`🔗<enum_TabBar_CloseButtonDisplayPoli
 
 :ref:`CloseButtonDisplayPolicy<enum_TabBar_CloseButtonDisplayPolicy>` **CLOSE_BUTTON_SHOW_ACTIVE_ONLY** = ``1``
 
-仅在当前活动选项卡上显示关闭按钮。
+Only show the close button on the currently active tab.
 
 .. _class_TabBar_constant_CLOSE_BUTTON_SHOW_ALWAYS:
 
@@ -395,7 +395,7 @@ enum **CloseButtonDisplayPolicy**: :ref:`🔗<enum_TabBar_CloseButtonDisplayPoli
 
 :ref:`CloseButtonDisplayPolicy<enum_TabBar_CloseButtonDisplayPolicy>` **CLOSE_BUTTON_SHOW_ALWAYS** = ``2``
 
-在所有选项卡上显示关闭按钮。
+Show the close button on all tabs.
 
 .. _class_TabBar_constant_CLOSE_BUTTON_MAX:
 
@@ -403,7 +403,7 @@ enum **CloseButtonDisplayPolicy**: :ref:`🔗<enum_TabBar_CloseButtonDisplayPoli
 
 :ref:`CloseButtonDisplayPolicy<enum_TabBar_CloseButtonDisplayPolicy>` **CLOSE_BUTTON_MAX** = ``3``
 
-代表 :ref:`CloseButtonDisplayPolicy<enum_TabBar_CloseButtonDisplayPolicy>` 枚举的大小。
+Represents the size of the :ref:`CloseButtonDisplayPolicy<enum_TabBar_CloseButtonDisplayPolicy>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -411,8 +411,8 @@ enum **CloseButtonDisplayPolicy**: :ref:`🔗<enum_TabBar_CloseButtonDisplayPoli
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_TabBar_property_clip_tabs:
 
@@ -425,7 +425,7 @@ enum **CloseButtonDisplayPolicy**: :ref:`🔗<enum_TabBar_CloseButtonDisplayPoli
 - |void| **set_clip_tabs**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_clip_tabs**\ (\ )
 
-如果为 ``true``\ ，则会隐藏超出该节点宽度的选项卡，改为显示两个导航按钮。否则，会更新该节点的最小尺寸，让所有选项卡均可见。
+If ``true``, tabs overflowing this node's width will be hidden, displaying two navigation buttons instead. Otherwise, this node's minimum size is updated so that all tabs are visible.
 
 .. rst-class:: classref-item-separator
 
@@ -459,7 +459,7 @@ If ``true``, middle-clicking on a tab will emit the :ref:`tab_close_pressed<clas
 - |void| **set_current_tab**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_current_tab**\ (\ )
 
-当前选中选项卡的索引号。\ ``-1`` 表示没有选中任何选项卡，只有在 :ref:`deselect_enabled<class_TabBar_property_deselect_enabled>` 为 ``true`` 或所有选项卡都处于隐藏或禁用状态下才能够设置。
+The index of the current selected tab. A value of ``-1`` means that no tab is selected and can only be set when :ref:`deselect_enabled<class_TabBar_property_deselect_enabled>` is ``true`` or if all tabs are hidden or disabled.
 
 .. rst-class:: classref-item-separator
 
@@ -476,7 +476,7 @@ If ``true``, middle-clicking on a tab will emit the :ref:`tab_close_pressed<clas
 - |void| **set_deselect_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_deselect_enabled**\ (\ )
 
-如果为 ``true``\ ，则所有选项卡都可以被取消选择，不选中任何选项卡。单击当前选项卡取消选中。
+If ``true``, all tabs can be deselected so that no tab is selected. Click on the current tab to deselect it.
 
 .. rst-class:: classref-item-separator
 
@@ -493,7 +493,7 @@ If ``true``, middle-clicking on a tab will emit the :ref:`tab_close_pressed<clas
 - |void| **set_drag_to_rearrange_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_drag_to_rearrange_enabled**\ (\ )
 
-如果为 ``true``\ ，可以通过鼠标拖动重新排列选项卡。
+If ``true``, tabs can be rearranged with mouse drag.
 
 .. rst-class:: classref-item-separator
 
@@ -510,7 +510,7 @@ If ``true``, middle-clicking on a tab will emit the :ref:`tab_close_pressed<clas
 - |void| **set_max_tab_width**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_tab_width**\ (\ )
 
-设置所有选项卡应被限制的最大宽度。如果设置为 ``0``\ ，则无限制。
+Sets the maximum width which all tabs should be limited to. Unlimited if set to ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -527,7 +527,7 @@ If ``true``, middle-clicking on a tab will emit the :ref:`tab_close_pressed<clas
 - |void| **set_scroll_to_selected**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_scroll_to_selected**\ (\ )
 
-如果为 ``true``\ ，则会更改选项卡偏移量，从而保持当前选中的选项卡可见。
+If ``true``, the tab offset will be changed to keep the currently selected tab visible.
 
 .. rst-class:: classref-item-separator
 
@@ -544,7 +544,7 @@ If ``true``, middle-clicking on a tab will emit the :ref:`tab_close_pressed<clas
 - |void| **set_scrolling_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_scrolling_enabled**\ (\ )
 
-如果为 ``true``\ ，鼠标的滚轮可用于导航滚动视图。
+if ``true``, the mouse's scroll wheel can be used to navigate the scroll view.
 
 .. rst-class:: classref-item-separator
 
@@ -561,7 +561,7 @@ If ``true``, middle-clicking on a tab will emit the :ref:`tab_close_pressed<clas
 - |void| **set_select_with_rmb**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_select_with_rmb**\ (\ )
 
-如果为 ``true``\ ，启用鼠标右键选择选项卡。
+If ``true``, enables selecting a tab with the right mouse button.
 
 .. rst-class:: classref-item-separator
 
@@ -612,7 +612,7 @@ The horizontal alignment of the tabs.
 - |void| **set_tab_close_display_policy**\ (\ value\: :ref:`CloseButtonDisplayPolicy<enum_TabBar_CloseButtonDisplayPolicy>`\ )
 - :ref:`CloseButtonDisplayPolicy<enum_TabBar_CloseButtonDisplayPolicy>` **get_tab_close_display_policy**\ (\ )
 
-选项卡上显示关闭按钮的时机。
+When the close button will appear on the tabs.
 
 .. rst-class:: classref-item-separator
 
@@ -629,7 +629,7 @@ The horizontal alignment of the tabs.
 - |void| **set_tab_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_tab_count**\ (\ )
 
-选项卡栏中当前的选项卡数量。
+The number of tabs currently in the bar.
 
 .. rst-class:: classref-item-separator
 
@@ -646,9 +646,9 @@ The horizontal alignment of the tabs.
 - |void| **set_tabs_rearrange_group**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_tabs_rearrange_group**\ (\ )
 
-具有相同重新排列组 ID 的 **TabBar** 将允许在它们之间拖动选项卡。使用 :ref:`drag_to_rearrange_enabled<class_TabBar_property_drag_to_rearrange_enabled>` 启用拖动。
+**TabBar**\ s with the same rearrange group ID will allow dragging the tabs between them. Enable drag with :ref:`drag_to_rearrange_enabled<class_TabBar_property_drag_to_rearrange_enabled>`.
 
-将该属性设置为 ``-1`` 将禁用 **TabBar** 之间的重新排列。
+Setting this to ``-1`` will disable rearranging between **TabBar**\ s.
 
 .. rst-class:: classref-section-separator
 
@@ -656,8 +656,8 @@ The horizontal alignment of the tabs.
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_TabBar_method_add_tab:
 
@@ -665,7 +665,7 @@ The horizontal alignment of the tabs.
 
 |void| **add_tab**\ (\ title\: :ref:`String<class_String>` = "", icon\: :ref:`Texture2D<class_Texture2D>` = null\ ) :ref:`🔗<class_TabBar_method_add_tab>`
 
-添加新选项卡。
+Adds a new tab.
 
 .. rst-class:: classref-item-separator
 
@@ -677,7 +677,7 @@ The horizontal alignment of the tabs.
 
 |void| **clear_tabs**\ (\ ) :ref:`🔗<class_TabBar_method_clear_tabs>`
 
-清空所有选项卡。
+Clears all tabs.
 
 .. rst-class:: classref-item-separator
 
@@ -689,7 +689,7 @@ The horizontal alignment of the tabs.
 
 |void| **ensure_tab_visible**\ (\ idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_method_ensure_tab_visible>`
 
-移动滚动视图，使标签可见。
+Moves the scroll view to make the tab visible.
 
 .. rst-class:: classref-item-separator
 
@@ -701,7 +701,7 @@ The horizontal alignment of the tabs.
 
 :ref:`bool<class_bool>` **get_offset_buttons_visible**\ (\ ) |const| :ref:`🔗<class_TabBar_method_get_offset_buttons_visible>`
 
-如果偏移按钮（所有选项卡没有足够空间时出现的按钮）可见，则返回 ``true``\ 。
+Returns ``true`` if the offset buttons (the ones that appear when there's not enough space for all tabs) are visible.
 
 .. rst-class:: classref-item-separator
 
@@ -713,7 +713,7 @@ The horizontal alignment of the tabs.
 
 :ref:`int<class_int>` **get_previous_tab**\ (\ ) |const| :ref:`🔗<class_TabBar_method_get_previous_tab>`
 
-返回上一个活动选项卡的索引。
+Returns the previously active tab index.
 
 .. rst-class:: classref-item-separator
 
@@ -725,7 +725,7 @@ The horizontal alignment of the tabs.
 
 :ref:`Texture2D<class_Texture2D>` **get_tab_button_icon**\ (\ tab_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TabBar_method_get_tab_button_icon>`
 
-返回索引 ``tab_idx`` 处选项卡右侧按钮的图标，如果该按钮没有图标，则返回 ``null``\ 。
+Returns the icon for the right button of the tab at index ``tab_idx`` or ``null`` if the right button has no icon.
 
 .. rst-class:: classref-item-separator
 
@@ -737,7 +737,7 @@ The horizontal alignment of the tabs.
 
 :ref:`Texture2D<class_Texture2D>` **get_tab_icon**\ (\ tab_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TabBar_method_get_tab_icon>`
 
-返回索引 ``tab_idx`` 处选项卡的图标，如果该选项卡没有图标，则返回 ``null``\ 。
+Returns the icon for the tab at index ``tab_idx`` or ``null`` if the tab has no icon.
 
 .. rst-class:: classref-item-separator
 
@@ -749,7 +749,7 @@ The horizontal alignment of the tabs.
 
 :ref:`int<class_int>` **get_tab_icon_max_width**\ (\ tab_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TabBar_method_get_tab_icon_max_width>`
 
-设置索引为 ``tab_idx`` 处选项卡所允许的最大图标宽度。
+Returns the maximum allowed width of the icon for the tab at index ``tab_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -761,7 +761,7 @@ The horizontal alignment of the tabs.
 
 :ref:`int<class_int>` **get_tab_idx_at_point**\ (\ point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_TabBar_method_get_tab_idx_at_point>`
 
-返回位于局部坐标 ``point`` 处的选项卡的索引。如果该点在控件边界之外或查询位置没有选项卡，则返回 ``-1``\ 。
+Returns the index of the tab at local coordinates ``point``. Returns ``-1`` if the point is outside the control boundaries or if there's no tab at the queried position.
 
 .. rst-class:: classref-item-separator
 
@@ -773,7 +773,7 @@ The horizontal alignment of the tabs.
 
 :ref:`String<class_String>` **get_tab_language**\ (\ tab_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TabBar_method_get_tab_language>`
 
-返回选项卡标题的语言代码。
+Returns tab title language code.
 
 .. rst-class:: classref-item-separator
 
@@ -785,7 +785,7 @@ The horizontal alignment of the tabs.
 
 :ref:`Variant<class_Variant>` **get_tab_metadata**\ (\ tab_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TabBar_method_get_tab_metadata>`
 
-返回索引为 ``tab_idx`` 的选项卡的元数据的值，由 :ref:`set_tab_metadata()<class_TabBar_method_set_tab_metadata>` 设置。如果之前没有设置元数据，则默认返回 ``null``\ 。
+Returns the metadata value set to the tab at index ``tab_idx`` using :ref:`set_tab_metadata()<class_TabBar_method_set_tab_metadata>`. If no metadata was previously set, returns ``null`` by default.
 
 .. rst-class:: classref-item-separator
 
@@ -797,7 +797,7 @@ The horizontal alignment of the tabs.
 
 :ref:`int<class_int>` **get_tab_offset**\ (\ ) |const| :ref:`🔗<class_TabBar_method_get_tab_offset>`
 
-返回向左偏移的隐藏选项卡的数量。
+Returns the number of hidden tabs offsetted to the left.
 
 .. rst-class:: classref-item-separator
 
@@ -809,7 +809,7 @@ The horizontal alignment of the tabs.
 
 :ref:`Rect2<class_Rect2>` **get_tab_rect**\ (\ tab_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TabBar_method_get_tab_rect>`
 
-返回带有局部位置和大小的选项卡 :ref:`Rect2<class_Rect2>`\ 。
+Returns tab :ref:`Rect2<class_Rect2>` with local position and size.
 
 .. rst-class:: classref-item-separator
 
@@ -821,7 +821,7 @@ The horizontal alignment of the tabs.
 
 :ref:`TextDirection<enum_Control_TextDirection>` **get_tab_text_direction**\ (\ tab_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TabBar_method_get_tab_text_direction>`
 
-返回选项卡标题文本的基础书写方向。
+Returns tab title text base writing direction.
 
 .. rst-class:: classref-item-separator
 
@@ -833,7 +833,7 @@ The horizontal alignment of the tabs.
 
 :ref:`String<class_String>` **get_tab_title**\ (\ tab_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TabBar_method_get_tab_title>`
 
-返回索引 ``tab_idx`` 处的选项卡的标题。
+Returns the title of the tab at index ``tab_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -845,7 +845,7 @@ The horizontal alignment of the tabs.
 
 :ref:`String<class_String>` **get_tab_tooltip**\ (\ tab_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TabBar_method_get_tab_tooltip>`
 
-返回索引 ``tab_idx`` 处的选项卡的工具提示文本。
+Returns the tooltip text of the tab at index ``tab_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -857,7 +857,7 @@ The horizontal alignment of the tabs.
 
 :ref:`bool<class_bool>` **is_tab_disabled**\ (\ tab_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TabBar_method_is_tab_disabled>`
 
-如果索引 ``tab_idx`` 处的选项卡被禁用，则返回 ``true``\ 。
+Returns ``true`` if the tab at index ``tab_idx`` is disabled.
 
 .. rst-class:: classref-item-separator
 
@@ -869,7 +869,7 @@ The horizontal alignment of the tabs.
 
 :ref:`bool<class_bool>` **is_tab_hidden**\ (\ tab_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TabBar_method_is_tab_hidden>`
 
-如果索引 ``tab_idx`` 处的选项卡被隐藏，则返回 ``true``\ 。
+Returns ``true`` if the tab at index ``tab_idx`` is hidden.
 
 .. rst-class:: classref-item-separator
 
@@ -881,7 +881,7 @@ The horizontal alignment of the tabs.
 
 |void| **move_tab**\ (\ from\: :ref:`int<class_int>`, to\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_method_move_tab>`
 
-将选项卡从 ``from`` 移动到 ``to``\ 。
+Moves a tab from ``from`` to ``to``.
 
 .. rst-class:: classref-item-separator
 
@@ -893,7 +893,7 @@ The horizontal alignment of the tabs.
 
 |void| **remove_tab**\ (\ tab_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_method_remove_tab>`
 
-删除索引 ``tab_idx`` 处的选项卡。
+Removes the tab at index ``tab_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -905,7 +905,7 @@ The horizontal alignment of the tabs.
 
 :ref:`bool<class_bool>` **select_next_available**\ (\ ) :ref:`🔗<class_TabBar_method_select_next_available>`
 
-选择索引大于当前所选选项卡索引的第一个可用选项卡。如果选项卡选择发生改变，则返回 ``true``\ 。
+Selects the first available tab with greater index than the currently selected. Returns ``true`` if tab selection changed.
 
 .. rst-class:: classref-item-separator
 
@@ -917,7 +917,7 @@ The horizontal alignment of the tabs.
 
 :ref:`bool<class_bool>` **select_previous_available**\ (\ ) :ref:`🔗<class_TabBar_method_select_previous_available>`
 
-选择索引低于当前所选选项卡索引的第一个可用选项卡。如果选项卡选择发生改变，则返回 ``true``\ 。
+Selects the first available tab with lower index than the currently selected. Returns ``true`` if tab selection changed.
 
 .. rst-class:: classref-item-separator
 
@@ -929,7 +929,7 @@ The horizontal alignment of the tabs.
 
 |void| **set_tab_button_icon**\ (\ tab_idx\: :ref:`int<class_int>`, icon\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_TabBar_method_set_tab_button_icon>`
 
-设置索引为 ``tab_idx`` 的选项卡按钮的图标 ``icon``\ （位于右侧，在关闭按钮之前），会将该按钮设为可见且可点击（见 :ref:`tab_button_pressed<class_TabBar_signal_tab_button_pressed>`\ ）。给定 ``null`` 值会隐藏该按钮。
+Sets an ``icon`` for the button of the tab at index ``tab_idx`` (located to the right, before the close button), making it visible and clickable (See :ref:`tab_button_pressed<class_TabBar_signal_tab_button_pressed>`). Giving it a ``null`` value will hide the button.
 
 .. rst-class:: classref-item-separator
 
@@ -941,7 +941,7 @@ The horizontal alignment of the tabs.
 
 |void| **set_tab_disabled**\ (\ tab_idx\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TabBar_method_set_tab_disabled>`
 
-如果 ``disabled`` 为 ``true``\ ，则禁用索引 ``tab_idx`` 处的选项卡，使其不可交互。
+If ``disabled`` is ``true``, disables the tab at index ``tab_idx``, making it non-interactable.
 
 .. rst-class:: classref-item-separator
 
@@ -953,7 +953,7 @@ The horizontal alignment of the tabs.
 
 |void| **set_tab_hidden**\ (\ tab_idx\: :ref:`int<class_int>`, hidden\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TabBar_method_set_tab_hidden>`
 
-如果 ``hidden`` 为 ``true``\ ，则隐藏索引 ``tab_idx`` 处的选项卡，使其从选项卡区域消失。
+If ``hidden`` is ``true``, hides the tab at index ``tab_idx``, making it disappear from the tab area.
 
 .. rst-class:: classref-item-separator
 
@@ -965,7 +965,7 @@ The horizontal alignment of the tabs.
 
 |void| **set_tab_icon**\ (\ tab_idx\: :ref:`int<class_int>`, icon\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_TabBar_method_set_tab_icon>`
 
-设置索引 ``tab_idx`` 处的选项卡的图标。
+Sets an ``icon`` for the tab at index ``tab_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -977,7 +977,7 @@ The horizontal alignment of the tabs.
 
 |void| **set_tab_icon_max_width**\ (\ tab_idx\: :ref:`int<class_int>`, width\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_method_set_tab_icon_max_width>`
 
-设置索引为 ``tab_idx`` 处选项卡所允许的最大图标宽度。这是在图标的默认大小和 :ref:`icon_max_width<class_TabBar_theme_constant_icon_max_width>` 的基础上的限制。高度会根据图标的长宽比调整。
+Sets the maximum allowed width of the icon for the tab at index ``tab_idx``. This limit is applied on top of the default size of the icon and on top of :ref:`icon_max_width<class_TabBar_theme_constant_icon_max_width>`. The height is adjusted according to the icon's ratio.
 
 .. rst-class:: classref-item-separator
 
@@ -1001,7 +1001,7 @@ Sets the language code of the title for the tab at index ``tab_idx`` to ``langua
 
 |void| **set_tab_metadata**\ (\ tab_idx\: :ref:`int<class_int>`, metadata\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_TabBar_method_set_tab_metadata>`
 
-为 ``tab_idx`` 的选项卡设置元数据的值，之后可以使用 :ref:`get_tab_metadata()<class_TabBar_method_get_tab_metadata>` 获取。
+Sets the metadata value for the tab at index ``tab_idx``, which can be retrieved later using :ref:`get_tab_metadata()<class_TabBar_method_get_tab_metadata>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1013,7 +1013,7 @@ Sets the language code of the title for the tab at index ``tab_idx`` to ``langua
 
 |void| **set_tab_text_direction**\ (\ tab_idx\: :ref:`int<class_int>`, direction\: :ref:`TextDirection<enum_Control_TextDirection>`\ ) :ref:`🔗<class_TabBar_method_set_tab_text_direction>`
 
-设置选项卡标题的基础书写方向。
+Sets tab title base writing direction.
 
 .. rst-class:: classref-item-separator
 
@@ -1025,7 +1025,7 @@ Sets the language code of the title for the tab at index ``tab_idx`` to ``langua
 
 |void| **set_tab_title**\ (\ tab_idx\: :ref:`int<class_int>`, title\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TabBar_method_set_tab_title>`
 
-设置索引 ``tab_idx`` 处的选项卡的标题 ``title``\ 。
+Sets a ``title`` for the tab at index ``tab_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -1037,9 +1037,9 @@ Sets the language code of the title for the tab at index ``tab_idx`` to ``langua
 
 |void| **set_tab_tooltip**\ (\ tab_idx\: :ref:`int<class_int>`, tooltip\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TabBar_method_set_tab_tooltip>`
 
-设置索引 ``tab_idx`` 处的选项卡的工具提示 ``tooltip``\ 。
+Sets a ``tooltip`` for tab at index ``tab_idx``.
 
-\ **注意：**\ 默认情况下，如果 ``tooltip`` 为空而选项卡文本发生了裁剪（选项卡无法完整显示所有字符），那么就会将标题作为工具提示显示。要隐藏工具提示，请将 ``tooltip`` 文本设置为 ``" "``\ 。
+\ **Note:** By default, if the ``tooltip`` is empty and the tab text is truncated (not all characters fit into the tab), the title will be displayed as a tooltip. To hide the tooltip, assign ``" "`` as the ``tooltip`` text.
 
 .. rst-class:: classref-section-separator
 
@@ -1047,8 +1047,8 @@ Sets the language code of the title for the tab at index ``tab_idx`` to ``langua
 
 .. rst-class:: classref-descriptions-group
 
-主题属性说明
-------------
+Theme Property Descriptions
+---------------------------
 
 .. _class_TabBar_theme_color_drop_mark_color:
 
@@ -1056,7 +1056,7 @@ Sets the language code of the title for the tab at index ``tab_idx`` to ``langua
 
 :ref:`Color<class_Color>` **drop_mark_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_drop_mark_color>`
 
-:ref:`drop_mark<class_TabBar_theme_icon_drop_mark>` 图标的调制颜色。
+Modulation color for the :ref:`drop_mark<class_TabBar_theme_icon_drop_mark>` icon.
 
 .. rst-class:: classref-item-separator
 
@@ -1068,7 +1068,7 @@ Sets the language code of the title for the tab at index ``tab_idx`` to ``langua
 
 :ref:`Color<class_Color>` **font_disabled_color** = ``Color(0.875, 0.875, 0.875, 0.5)`` :ref:`🔗<class_TabBar_theme_color_font_disabled_color>`
 
-禁用选项卡的字体颜色。
+Font color of disabled tabs.
 
 .. rst-class:: classref-item-separator
 
@@ -1080,7 +1080,7 @@ Sets the language code of the title for the tab at index ``tab_idx`` to ``langua
 
 :ref:`Color<class_Color>` **font_hovered_color** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_TabBar_theme_color_font_hovered_color>`
 
-当前悬停选项卡的字体颜色。不适用于选中的选项卡。
+Font color of the currently hovered tab. Does not apply to the selected tab.
 
 .. rst-class:: classref-item-separator
 
@@ -1092,7 +1092,7 @@ Sets the language code of the title for the tab at index ``tab_idx`` to ``langua
 
 :ref:`Color<class_Color>` **font_outline_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_TabBar_theme_color_font_outline_color>`
 
-选项卡名称的文本轮廓的色调。
+The tint of text outline of the tab name.
 
 .. rst-class:: classref-item-separator
 
@@ -1104,7 +1104,7 @@ Sets the language code of the title for the tab at index ``tab_idx`` to ``langua
 
 :ref:`Color<class_Color>` **font_selected_color** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_TabBar_theme_color_font_selected_color>`
 
-当前所选选项卡的字体颜色。
+Font color of the currently selected tab.
 
 .. rst-class:: classref-item-separator
 
@@ -1116,7 +1116,7 @@ Sets the language code of the title for the tab at index ``tab_idx`` to ``langua
 
 :ref:`Color<class_Color>` **font_unselected_color** = ``Color(0.7, 0.7, 0.7, 1)`` :ref:`🔗<class_TabBar_theme_color_font_unselected_color>`
 
-其他未被选中的选项卡的字体颜色。
+Font color of the other, unselected tabs.
 
 .. rst-class:: classref-item-separator
 
@@ -1176,7 +1176,7 @@ Icon color of the other, unselected tabs.
 
 :ref:`int<class_int>` **h_separation** = ``4`` :ref:`🔗<class_TabBar_theme_constant_h_separation>`
 
-选项卡内元素之间的水平分隔。
+The horizontal separation between the elements inside tabs.
 
 .. rst-class:: classref-item-separator
 
@@ -1200,7 +1200,7 @@ During a drag-and-drop, this is how many milliseconds to wait before switching t
 
 :ref:`int<class_int>` **icon_max_width** = ``0`` :ref:`🔗<class_TabBar_theme_constant_icon_max_width>`
 
-选项卡图标所允许的最大宽度。这个限制应用在该图标默认大小之上，但是应用在 :ref:`set_tab_icon_max_width()<class_TabBar_method_set_tab_icon_max_width>` 所设置的值之前。高度会根据图标比例调整。
+The maximum allowed width of the tab's icon. This limit is applied on top of the default size of the icon, but before the value set with :ref:`set_tab_icon_max_width()<class_TabBar_method_set_tab_icon_max_width>`. The height is adjusted according to the icon's ratio.
 
 .. rst-class:: classref-item-separator
 
@@ -1212,9 +1212,9 @@ During a drag-and-drop, this is how many milliseconds to wait before switching t
 
 :ref:`int<class_int>` **outline_size** = ``0`` :ref:`🔗<class_TabBar_theme_constant_outline_size>`
 
-选项卡文字轮廓的大小。
+The size of the tab text outline.
 
-\ **注意：**\ 如果使用启用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字体，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必须至少设置为 :ref:`outline_size<class_TabBar_theme_constant_outline_size>` 的\ *两倍*\ ，轮廓渲染才能看起来正确。否则，轮廓可能会比预期的更早被切断。
+\ **Note:** If using a font with :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` enabled, its :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` must be set to at least *twice* the value of :ref:`outline_size<class_TabBar_theme_constant_outline_size>` for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
 
 .. rst-class:: classref-item-separator
 
@@ -1226,7 +1226,7 @@ During a drag-and-drop, this is how many milliseconds to wait before switching t
 
 :ref:`int<class_int>` **tab_separation** = ``0`` :ref:`🔗<class_TabBar_theme_constant_tab_separation>`
 
-选项卡栏中选项卡的间距。
+The space between tabs in the tab bar.
 
 .. rst-class:: classref-item-separator
 
@@ -1238,7 +1238,7 @@ During a drag-and-drop, this is how many milliseconds to wait before switching t
 
 :ref:`Font<class_Font>` **font** :ref:`🔗<class_TabBar_theme_font_font>`
 
-用于绘制选项卡名称的字体。
+The font used to draw tab names.
 
 .. rst-class:: classref-item-separator
 
@@ -1250,7 +1250,7 @@ During a drag-and-drop, this is how many milliseconds to wait before switching t
 
 :ref:`int<class_int>` **font_size** :ref:`🔗<class_TabBar_theme_font_size_font_size>`
 
-选项卡名称的字体大小。
+Font size of the tab names.
 
 .. rst-class:: classref-item-separator
 
@@ -1262,7 +1262,7 @@ During a drag-and-drop, this is how many milliseconds to wait before switching t
 
 :ref:`Texture2D<class_Texture2D>` **close** :ref:`🔗<class_TabBar_theme_icon_close>`
 
-关闭按钮的图标（见 :ref:`tab_close_display_policy<class_TabBar_property_tab_close_display_policy>`\ ）。
+The icon for the close button (see :ref:`tab_close_display_policy<class_TabBar_property_tab_close_display_policy>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1274,7 +1274,7 @@ During a drag-and-drop, this is how many milliseconds to wait before switching t
 
 :ref:`Texture2D<class_Texture2D>` **decrement** :ref:`🔗<class_TabBar_theme_icon_decrement>`
 
-左边的箭头按钮的图标，当有太多的标签无法容纳在容器的宽度内时出现。当该按钮被禁用时（即第一个标签是可见的），它显示为半透明的。
+Icon for the left arrow button that appears when there are too many tabs to fit in the container width. When the button is disabled (i.e. the first tab is visible), it appears semi-transparent.
 
 .. rst-class:: classref-item-separator
 
@@ -1286,7 +1286,7 @@ During a drag-and-drop, this is how many milliseconds to wait before switching t
 
 :ref:`Texture2D<class_Texture2D>` **decrement_highlight** :ref:`🔗<class_TabBar_theme_icon_decrement_highlight>`
 
-当标签太多无法适应容器宽度时出现的左箭头按钮图标。当鼠标悬停在按钮上时使用。
+Icon for the left arrow button that appears when there are too many tabs to fit in the container width. Used when the button is being hovered with the cursor.
 
 .. rst-class:: classref-item-separator
 
@@ -1298,7 +1298,7 @@ During a drag-and-drop, this is how many milliseconds to wait before switching t
 
 :ref:`Texture2D<class_Texture2D>` **drop_mark** :ref:`🔗<class_TabBar_theme_icon_drop_mark>`
 
-图标，用于指示拖动的选项卡将被放置到哪里（见 :ref:`drag_to_rearrange_enabled<class_TabBar_property_drag_to_rearrange_enabled>`\ ）。
+Icon shown to indicate where a dragged tab is gonna be dropped (see :ref:`drag_to_rearrange_enabled<class_TabBar_property_drag_to_rearrange_enabled>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1310,7 +1310,7 @@ During a drag-and-drop, this is how many milliseconds to wait before switching t
 
 :ref:`Texture2D<class_Texture2D>` **increment** :ref:`🔗<class_TabBar_theme_icon_increment>`
 
-右箭头按钮的图标，当有太多的标签无法容纳在容器的宽度内时出现。当该按钮被禁用时（即最后一个标签是可见的），它显示为半透明的。
+Icon for the right arrow button that appears when there are too many tabs to fit in the container width. When the button is disabled (i.e. the last tab is visible) it appears semi-transparent.
 
 .. rst-class:: classref-item-separator
 
@@ -1322,7 +1322,7 @@ During a drag-and-drop, this is how many milliseconds to wait before switching t
 
 :ref:`Texture2D<class_Texture2D>` **increment_highlight** :ref:`🔗<class_TabBar_theme_icon_increment_highlight>`
 
-当标签太多无法适应容器宽度时出现的右箭头按钮图标。当鼠标悬停在按钮上时使用。
+Icon for the right arrow button that appears when there are too many tabs to fit in the container width. Used when the button is being hovered with the cursor.
 
 .. rst-class:: classref-item-separator
 
@@ -1334,7 +1334,7 @@ During a drag-and-drop, this is how many milliseconds to wait before switching t
 
 :ref:`StyleBox<class_StyleBox>` **button_highlight** :ref:`🔗<class_TabBar_theme_style_button_highlight>`
 
-选项卡和关闭按钮的背景，处于鼠标悬停状态时使用。
+Background of the tab and close buttons when they're being hovered with the cursor.
 
 .. rst-class:: classref-item-separator
 
@@ -1346,7 +1346,7 @@ During a drag-and-drop, this is how many milliseconds to wait before switching t
 
 :ref:`StyleBox<class_StyleBox>` **button_pressed** :ref:`🔗<class_TabBar_theme_style_button_pressed>`
 
-选项卡和关闭按钮的背景，处于按下状态时使用。
+Background of the tab and close buttons when it's being pressed.
 
 .. rst-class:: classref-item-separator
 
@@ -1358,7 +1358,7 @@ During a drag-and-drop, this is how many milliseconds to wait before switching t
 
 :ref:`StyleBox<class_StyleBox>` **tab_disabled** :ref:`🔗<class_TabBar_theme_style_tab_disabled>`
 
-选项卡处于禁用状态时的样式。
+The style of disabled tabs.
 
 .. rst-class:: classref-item-separator
 
@@ -1370,7 +1370,7 @@ During a drag-and-drop, this is how many milliseconds to wait before switching t
 
 :ref:`StyleBox<class_StyleBox>` **tab_focus** :ref:`🔗<class_TabBar_theme_style_tab_focus>`
 
-该 **TabBar** 处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。\ :ref:`tab_focus<class_TabBar_theme_style_tab_focus>` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保基础 :ref:`StyleBox<class_StyleBox>` 仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于可访问性的原因，不建议这样做。
+:ref:`StyleBox<class_StyleBox>` used when the **TabBar** is focused. The :ref:`tab_focus<class_TabBar_theme_style_tab_focus>` :ref:`StyleBox<class_StyleBox>` is displayed *over* the base :ref:`StyleBox<class_StyleBox>` of the selected tab, so a partially transparent :ref:`StyleBox<class_StyleBox>` should be used to ensure the base :ref:`StyleBox<class_StyleBox>` remains visible. A :ref:`StyleBox<class_StyleBox>` that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
 
 .. rst-class:: classref-item-separator
 
@@ -1382,9 +1382,9 @@ During a drag-and-drop, this is how many milliseconds to wait before switching t
 
 :ref:`StyleBox<class_StyleBox>` **tab_hovered** :ref:`🔗<class_TabBar_theme_style_tab_hovered>`
 
-当前悬停选项卡的样式。不适用于选择的选项卡。
+The style of the currently hovered tab. Does not apply to the selected tab.
 
-\ **注意：**\ 该样式将以至少与 :ref:`tab_unselected<class_TabBar_theme_style_tab_unselected>` 相同的宽度绘制。
+\ **Note:** This style will be drawn with the same width as :ref:`tab_unselected<class_TabBar_theme_style_tab_unselected>` at minimum.
 
 .. rst-class:: classref-item-separator
 
@@ -1396,7 +1396,7 @@ During a drag-and-drop, this is how many milliseconds to wait before switching t
 
 :ref:`StyleBox<class_StyleBox>` **tab_selected** :ref:`🔗<class_TabBar_theme_style_tab_selected>`
 
-当前选中的选项卡的样式。
+The style of the currently selected tab.
 
 .. rst-class:: classref-item-separator
 
@@ -1408,14 +1408,14 @@ During a drag-and-drop, this is how many milliseconds to wait before switching t
 
 :ref:`StyleBox<class_StyleBox>` **tab_unselected** :ref:`🔗<class_TabBar_theme_style_tab_unselected>`
 
-其他未被选中的选项卡的样式。
+The style of the other, unselected tabs.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

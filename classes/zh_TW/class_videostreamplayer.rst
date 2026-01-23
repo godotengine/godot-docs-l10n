@@ -5,14 +5,14 @@
 VideoStreamPlayer
 =================
 
-**繼承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-用於播放影片的控制項。
+A control used for video playback.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 A control used for playback of :ref:`VideoStream<class_VideoStream>` resources.
 
@@ -22,15 +22,15 @@ Supported video formats are `Ogg Theora <https://www.theora.org/>`__ (``.ogv``, 
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`播放影片 <../tutorials/animation/playing_videos>`
+- :doc:`Playing videos <../tutorials/animation/playing_videos>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -63,8 +63,8 @@ Supported video formats are `Ogg Theora <https://www.theora.org/>`__ (``.ogv``, 
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -89,8 +89,8 @@ Supported video formats are `Ogg Theora <https://www.theora.org/>`__ (``.ogv``, 
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_VideoStreamPlayer_signal_finished:
 
@@ -98,7 +98,7 @@ Supported video formats are `Ogg Theora <https://www.theora.org/>`__ (``.ogv``, 
 
 **finished**\ (\ ) :ref:`🔗<class_VideoStreamPlayer_signal_finished>`
 
-播放結束時觸發。
+Emitted when playback is finished.
 
 .. rst-class:: classref-section-separator
 
@@ -106,8 +106,8 @@ Supported video formats are `Ogg Theora <https://www.theora.org/>`__ (``.ogv``, 
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_VideoStreamPlayer_property_audio_track:
 
@@ -120,7 +120,7 @@ Supported video formats are `Ogg Theora <https://www.theora.org/>`__ (``.ogv``, 
 - |void| **set_audio_track**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_audio_track**\ (\ )
 
-要播放的嵌入式音軌。
+The embedded audio track to play.
 
 .. rst-class:: classref-item-separator
 
@@ -137,7 +137,7 @@ Supported video formats are `Ogg Theora <https://www.theora.org/>`__ (``.ogv``, 
 - |void| **set_autoplay**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_autoplay**\ (\ )
 
-如果為 ``true``\ ，當場景載入時開始播放。
+If ``true``, playback starts when the scene loads.
 
 .. rst-class:: classref-item-separator
 
@@ -154,7 +154,7 @@ Supported video formats are `Ogg Theora <https://www.theora.org/>`__ (``.ogv``, 
 - |void| **set_buffering_msec**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_buffering_msec**\ (\ )
 
-播放時儲存在緩衝區的時間，以毫秒計。
+Amount of time in milliseconds to store in buffer while playing.
 
 .. rst-class:: classref-item-separator
 
@@ -171,7 +171,7 @@ Supported video formats are `Ogg Theora <https://www.theora.org/>`__ (``.ogv``, 
 - |void| **set_bus**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_bus**\ (\ )
 
-用於聲音播放的音訊匯流排。
+Audio bus to use for sound playback.
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ Supported video formats are `Ogg Theora <https://www.theora.org/>`__ (``.ogv``, 
 - |void| **set_expand**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_expand**\ (\ )
 
-如果為 ``true``\ ，影片會縮放到控制項的尺寸。否則，控制項的最小尺寸將被自動調整以配對影片流的尺寸。
+If ``true``, the video scales to the control size. Otherwise, the control minimum size will be automatically adjusted to match the video stream's dimensions.
 
 .. rst-class:: classref-item-separator
 
@@ -205,7 +205,7 @@ Supported video formats are `Ogg Theora <https://www.theora.org/>`__ (``.ogv``, 
 - |void| **set_loop**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_loop**\ (\ )
 
-如果為 ``true``\ ，當流到達末尾時將自動迴圈。
+If ``true``, the video restarts when it reaches its end.
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +222,7 @@ Supported video formats are `Ogg Theora <https://www.theora.org/>`__ (``.ogv``, 
 - |void| **set_paused**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_paused**\ (\ )
 
-如果為 ``true``\ ，則暫停影片。
+If ``true``, the video is paused.
 
 .. rst-class:: classref-item-separator
 
@@ -256,7 +256,7 @@ The stream's current speed scale. ``1.0`` is the normal speed, while ``2.0`` is 
 - |void| **set_stream**\ (\ value\: :ref:`VideoStream<class_VideoStream>`\ )
 - :ref:`VideoStream<class_VideoStream>` **get_stream**\ (\ )
 
-指定的影片流。支援的格式見描述。
+The assigned video stream. See description for supported formats.
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ The current position of the stream, in seconds.
 - |void| **set_volume**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volume**\ (\ )
 
-音訊音量為線性值。
+Audio volume as a linear value.
 
 .. rst-class:: classref-item-separator
 
@@ -307,7 +307,7 @@ The current position of the stream, in seconds.
 - |void| **set_volume_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volume_db**\ (\ )
 
-音訊音量，單位是 dB。
+Audio volume in dB.
 
 .. rst-class:: classref-section-separator
 
@@ -315,8 +315,8 @@ The current position of the stream, in seconds.
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_VideoStreamPlayer_method_get_stream_length:
 
@@ -336,7 +336,7 @@ The length of the current stream, in seconds.
 
 :ref:`String<class_String>` **get_stream_name**\ (\ ) |const| :ref:`🔗<class_VideoStreamPlayer_method_get_stream_name>`
 
-返回影片流的名稱，如果沒有指定影片流，則返回 ``"<No Stream>"``\ 。
+Returns the video stream's name, or ``"<No Stream>"`` if no video stream is assigned.
 
 .. rst-class:: classref-item-separator
 
@@ -348,7 +348,7 @@ The length of the current stream, in seconds.
 
 :ref:`Texture2D<class_Texture2D>` **get_video_texture**\ (\ ) |const| :ref:`🔗<class_VideoStreamPlayer_method_get_video_texture>`
 
-將目前影格作為 :ref:`Texture2D<class_Texture2D>` 返回。
+Returns the current frame as a :ref:`Texture2D<class_Texture2D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -360,9 +360,9 @@ The length of the current stream, in seconds.
 
 :ref:`bool<class_bool>` **is_playing**\ (\ ) |const| :ref:`🔗<class_VideoStreamPlayer_method_is_playing>`
 
-如果影片正在播放，返回 ``true``\ 。
+Returns ``true`` if the video is playing.
 
-\ **注意：**\ 如果在播放過程中暫停，影片仍被認為在播放。
+\ **Note:** The video is still considered playing if paused during playback.
 
 .. rst-class:: classref-item-separator
 
@@ -374,7 +374,7 @@ The length of the current stream, in seconds.
 
 |void| **play**\ (\ ) :ref:`🔗<class_VideoStreamPlayer_method_play>`
 
-從頭開始播放影片。如果影片處於暫停狀態，不會取消暫停。
+Starts the video playback from the beginning. If the video is paused, this will not unpause the video.
 
 .. rst-class:: classref-item-separator
 
@@ -386,16 +386,16 @@ The length of the current stream, in seconds.
 
 |void| **stop**\ (\ ) :ref:`🔗<class_VideoStreamPlayer_method_stop>`
 
-停止影片播放並將影片流位置設定為 0。
+Stops the video playback and sets the stream position to 0.
 
-\ **注意：**\ 雖然影片流位置將被設定為 0，但影片流的第一影格不會成為目前影格。
+\ **Note:** Although the stream position will be set to 0, the first frame of the video stream won't become the current frame.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

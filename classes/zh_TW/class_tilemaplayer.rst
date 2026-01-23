@@ -5,14 +5,14 @@
 TileMapLayer
 ============
 
-**繼承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-基於 2D 圖塊的地圖節點。
+Node for 2D tile-based maps.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 Node for 2D tile-based maps. A **TileMapLayer** uses a :ref:`TileSet<class_TileSet>` which contain a list of tiles which are used to create grid-based maps. Unlike the :ref:`TileMap<class_TileMap>` node, which is deprecated, **TileMapLayer** has only one layer of tiles. You can use several **TileMapLayer** to achieve the same result as a :ref:`TileMap<class_TileMap>` node.
 
@@ -24,29 +24,29 @@ To force an update earlier on, call :ref:`update_internals()<class_TileMapLayer_
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`使用 Tilemap <../tutorials/2d/using_tilemaps>`
+- :doc:`Using Tilemaps <../tutorials/2d/using_tilemaps>`
 
-- `2D 平台範例 <https://godotengine.org/asset-library/asset/2727>`__
+- `2D Platformer Demo <https://godotengine.org/asset-library/asset/2727>`__
 
-- `2D 等軸演示 <https://godotengine.org/asset-library/asset/2718>`__
+- `2D Isometric Demo <https://godotengine.org/asset-library/asset/2718>`__
 
-- `2D 六邊形演示 <https://godotengine.org/asset-library/asset/2717>`__
+- `2D Hexagonal Demo <https://godotengine.org/asset-library/asset/2717>`__
 
 - `2D Grid-based Navigation with AStarGrid2D Demo <https://godotengine.org/asset-library/asset/2723>`__
 
-- `2D 角色扮演遊戲範例 <https://godotengine.org/asset-library/asset/2729>`__
+- `2D Role Playing Game (RPG) Demo <https://godotengine.org/asset-library/asset/2729>`__
 
-- `2D 運動學角色演示 <https://godotengine.org/asset-library/asset/2719>`__
+- `2D Kinematic Character Demo <https://godotengine.org/asset-library/asset/2719>`__
 
 - `2D Dynamic TileMap Layers Demo <https://godotengine.org/asset-library/asset/2713>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -81,8 +81,8 @@ To force an update earlier on, call :ref:`update_internals()<class_TileMapLayer_
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -159,8 +159,8 @@ To force an update earlier on, call :ref:`update_internals()<class_TileMapLayer_
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_TileMapLayer_signal_changed:
 
@@ -178,8 +178,8 @@ Emitted when this **TileMapLayer**'s properties changes. This includes modified 
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_TileMapLayer_DebugVisibilityMode:
 
@@ -217,8 +217,8 @@ Always show the collisions or navigation debug shapes.
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_TileMapLayer_property_collision_enabled:
 
@@ -453,8 +453,8 @@ This Y-sort origin value is added to each tile's Y-sort origin value. This allow
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_TileMapLayer_private_method__tile_data_runtime_update:
 
@@ -522,7 +522,7 @@ Should return ``true`` if the tile at coordinates ``coords`` requires a runtime 
 
 |void| **clear**\ (\ ) :ref:`🔗<class_TileMapLayer_method_clear>`
 
-清除所有儲存格。
+Clears all cells.
 
 .. rst-class:: classref-item-separator
 
@@ -644,7 +644,7 @@ By default this returns the default :ref:`World2D<class_World2D>` navigation map
 
 :ref:`Vector2i<class_Vector2i>` **get_neighbor_cell**\ (\ coords\: :ref:`Vector2i<class_Vector2i>`, neighbor\: :ref:`CellNeighbor<enum_TileSet_CellNeighbor>`\ ) |const| :ref:`🔗<class_TileMapLayer_method_get_neighbor_cell>`
 
-返回與位於座標 ``coords`` 的儲存格相鄰的儲存格，方向由 ``neighbor`` 表示。這個方法會考慮 TileMap 的不同佈局。
+Returns the neighboring cell to the one at coordinates ``coords``, identified by the ``neighbor`` direction. This method takes into account the different layouts a TileMap can take.
 
 .. rst-class:: classref-item-separator
 
@@ -768,7 +768,7 @@ Returns ``true`` if the cell at coordinates ``coords`` is transposed. The result
 
 :ref:`Vector2i<class_Vector2i>` **local_to_map**\ (\ local_position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_TileMapLayer_method_local_to_map>`
 
-返回包含給定 ``local_position`` 的儲存格地圖座標。如果 ``local_position`` 使用全域座標，請考慮在傳入這個方法前使用 :ref:`Node2D.to_local()<class_Node2D_method_to_local>`\ 。另見 :ref:`map_to_local()<class_TileMapLayer_method_map_to_local>`\ 。
+Returns the map coordinates of the cell containing the given ``local_position``. If ``local_position`` is in global coordinates, consider using :ref:`Node2D.to_local()<class_Node2D_method_to_local>` before passing it to this method. See also :ref:`map_to_local()<class_TileMapLayer_method_map_to_local>`.
 
 .. rst-class:: classref-item-separator
 
@@ -904,12 +904,12 @@ However, for performance reasons, those updates are batched and delayed to the e
 
 \ **Warning:** Updating the **TileMapLayer** is computationally expensive and may impact performance. Try to limit the number of updates and how many tiles they impact.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

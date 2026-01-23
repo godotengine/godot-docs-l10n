@@ -5,28 +5,28 @@
 CharFXTransform
 ===============
 
-**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-控制单个字符在 :ref:`RichTextEffect<class_RichTextEffect>` 中的显示方式。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-通过在此对象上设置各种属性，可以控制单个字符在 :ref:`RichTextEffect<class_RichTextEffect>` 中的显示方式。
+Controls how an individual character will be displayed in a :ref:`RichTextEffect<class_RichTextEffect>`.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`RichTextLabel 中的 BBCode <../tutorials/ui/bbcode_in_richtextlabel>`
+By setting various properties on this object, you can control how individual characters will be displayed in a :ref:`RichTextEffect<class_RichTextEffect>`.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`BBCode in RichTextLabel <../tutorials/ui/bbcode_in_richtextlabel>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -65,8 +65,8 @@ CharFXTransform
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_CharFXTransform_property_color:
 
@@ -79,7 +79,7 @@ CharFXTransform
 - |void| **set_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_color**\ (\ )
 
-绘制字符所用的颜色。
+The color the character will be drawn with.
 
 .. rst-class:: classref-item-separator
 
@@ -96,9 +96,9 @@ CharFXTransform
 - |void| **set_elapsed_time**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_elapsed_time**\ (\ )
 
-自 :ref:`RichTextLabel<class_RichTextLabel>` 被添加到场景树以来经过的时间（单位：秒）。时间在 :ref:`RichTextLabel<class_RichTextLabel>` 暂停时停止（参见 :ref:`Node.process_mode<class_Node_property_process_mode>`\ ）。在 :ref:`RichTextLabel<class_RichTextLabel>` 中的文本改变时重置。
+The time elapsed since the :ref:`RichTextLabel<class_RichTextLabel>` was added to the scene tree (in seconds). Time stops when the :ref:`RichTextLabel<class_RichTextLabel>` is paused (see :ref:`Node.process_mode<class_Node_property_process_mode>`). Resets when the text in the :ref:`RichTextLabel<class_RichTextLabel>` is changed.
 
-\ **注意：**\ 当 :ref:`RichTextLabel<class_RichTextLabel>` 被隐藏时，时间仍在流逝。
+\ **Note:** Time still passes while the :ref:`RichTextLabel<class_RichTextLabel>` is hidden.
 
 .. rst-class:: classref-item-separator
 
@@ -115,9 +115,9 @@ CharFXTransform
 - |void| **set_environment**\ (\ value\: :ref:`Dictionary<class_Dictionary>`\ )
 - :ref:`Dictionary<class_Dictionary>` **get_environment**\ (\ )
 
-包含在开头的 BBCode 标记中传递的参数。默认情况下，参数是字符串。如果它们的内容与 :ref:`bool<class_bool>`\ 、\ :ref:`int<class_int>`\ 、\ :ref:`float<class_float>` 之类的类型匹配，它们将被自动转换。格式为 ``#rrggbb`` 或 ``#rgb`` 的颜色代码将转换为不透明的 :ref:`Color<class_Color>`\ 。字符串参数即使使用引号也不能包含空格。如果存在，引号也将出现在最终字符串中。
+Contains the arguments passed in the opening BBCode tag. By default, arguments are strings; if their contents match a type such as :ref:`bool<class_bool>`, :ref:`int<class_int>` or :ref:`float<class_float>`, they will be converted automatically. Color codes in the form ``#rrggbb`` or ``#rgb`` will be converted to an opaque :ref:`Color<class_Color>`. String arguments may not contain spaces, even if they're quoted. If present, quotes will also be present in the final string.
 
-例如，开头的 BBCode 标签 ``[example foo = hello bar = true baz = 42 color =＃ffffff]`` 将映射到以下 :ref:`Dictionary<class_Dictionary>`\ ：
+For example, the opening BBCode tag ``[example foo=hello bar=true baz=42 color=#ffffff]`` will map to the following :ref:`Dictionary<class_Dictionary>`:
 
 ::
 
@@ -138,9 +138,9 @@ CharFXTransform
 - |void| **set_font**\ (\ value\: :ref:`RID<class_RID>`\ )
 - :ref:`RID<class_RID>` **get_font**\ (\ )
 
-渲染字形所用字体的 :ref:`TextServer<class_TextServer>` RID，该值可以通过 ``TextServer.font_*`` 方法来检索字体信息。
+:ref:`TextServer<class_TextServer>` RID of the font used to render glyph, this value can be used with ``TextServer.font_*`` methods to retrieve font information.
 
-\ **注意：**\ 只读。设置该属性不影响绘制。
+\ **Note:** Read-only. Setting this property won't affect drawing.
 
 .. rst-class:: classref-item-separator
 
@@ -157,9 +157,9 @@ CharFXTransform
 - |void| **set_glyph_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_glyph_count**\ (\ )
 
-字素簇中的字形数量。该值在簇的第一个字形中设置。
+Number of glyphs in the grapheme cluster. This value is set in the first glyph of a cluster.
 
-\ **注意：**\ 只读。设置该属性不会影响绘制。
+\ **Note:** Read-only. Setting this property won't affect drawing.
 
 .. rst-class:: classref-item-separator
 
@@ -176,9 +176,9 @@ CharFXTransform
 - |void| **set_glyph_flags**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_glyph_flags**\ (\ )
 
-字形标志。详见 :ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>`\ 。
+Glyph flags. See :ref:`GraphemeFlag<enum_TextServer_GraphemeFlag>` for more info.
 
-\ **注意：**\ 只读。设置该属性不会影响绘制。
+\ **Note:** Read-only. Setting this property won't affect drawing.
 
 .. rst-class:: classref-item-separator
 
@@ -195,7 +195,7 @@ CharFXTransform
 - |void| **set_glyph_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_glyph_index**\ (\ )
 
-特定于 :ref:`font<class_CharFXTransform_property_font>` 的字形索引。如果你想替换该字形，请使用 :ref:`font<class_CharFXTransform_property_font>` 调用 :ref:`TextServer.font_get_glyph_index()<class_TextServer_method_font_get_glyph_index>` 获取单个字符的新字形索引。
+Glyph index specific to the :ref:`font<class_CharFXTransform_property_font>`. If you want to replace this glyph, use :ref:`TextServer.font_get_glyph_index()<class_TextServer_method_font_get_glyph_index>` with :ref:`font<class_CharFXTransform_property_font>` to get a new glyph index for a single character.
 
 .. rst-class:: classref-item-separator
 
@@ -212,7 +212,7 @@ CharFXTransform
 - |void| **set_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset**\ (\ )
 
-绘制字符的位置偏移量（单位：像素）。
+The position offset the character will be drawn with (in pixels).
 
 .. rst-class:: classref-item-separator
 
@@ -229,9 +229,9 @@ CharFXTransform
 - |void| **set_outline**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_outline**\ (\ )
 
-如果为 ``true``\ ，则调用 FX 变换进行轮廓绘制。
+If ``true``, FX transform is called for outline drawing.
 
-\ **注意：**\ 只读。设置该属性不会影响绘制。
+\ **Note:** Read-only. Setting this property won't affect drawing.
 
 .. rst-class:: classref-item-separator
 
@@ -248,9 +248,9 @@ CharFXTransform
 - |void| **set_range**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_range**\ (\ )
 
-该字符串中的绝对字符范围，对应于字形。
+Absolute character range in the string, corresponding to the glyph.
 
-\ **注意：**\ 只读。设置该属性不会影响绘制。
+\ **Note:** Read-only. Setting this property won't affect drawing.
 
 .. rst-class:: classref-item-separator
 
@@ -267,9 +267,9 @@ CharFXTransform
 - |void| **set_relative_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_relative_index**\ (\ )
 
-该字形的字符偏移量，相对于当前 :ref:`RichTextEffect<class_RichTextEffect>` 自定义块。
+The character offset of the glyph, relative to the current :ref:`RichTextEffect<class_RichTextEffect>` custom block.
 
-\ **注意：**\ 只读。设置该属性不会影响绘制。
+\ **Note:** Read-only. Setting this property won't affect drawing.
 
 .. rst-class:: classref-item-separator
 
@@ -286,7 +286,7 @@ CharFXTransform
 - |void| **set_transform**\ (\ value\: :ref:`Transform2D<class_Transform2D>`\ )
 - :ref:`Transform2D<class_Transform2D>` **get_transform**\ (\ )
 
-当前字形的当前变换。可以被覆盖（例如根据曲线来确定位置和旋转）。你还可以修改现有值，在其他效果的基础上应用变换。
+The current transform of the current glyph. It can be overridden (for example, by driving the position and rotation from a curve). You can also alter the existing value to apply transforms on top of other effects.
 
 .. rst-class:: classref-item-separator
 
@@ -303,14 +303,14 @@ CharFXTransform
 - |void| **set_visibility**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_visible**\ (\ )
 
-如果为 ``true``\ ，将绘制字符。如果为 ``false``\ ，则隐藏字符。隐藏字符周围的字符将回流以占用隐藏字符的空间。如果不希望这样做，可以将它们的 :ref:`color<class_CharFXTransform_property_color>` 设置为\ ``Color(1, 1, 1, 0)``\ 。
+If ``true``, the character will be drawn. If ``false``, the character will be hidden. Characters around hidden characters will reflow to take the space of hidden characters. If this is not desired, set their :ref:`color<class_CharFXTransform_property_color>` to ``Color(1, 1, 1, 0)`` instead.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

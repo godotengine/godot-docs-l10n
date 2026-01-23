@@ -5,29 +5,29 @@
 Performance
 ===========
 
-**繼承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-公開與性能相關的資料。
+Exposes performance-related data.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-該類提供對許多與性能相關的不同監視器的存取，例如記憶體使用情況、繪製呼叫、和 FPS。這些值與編輯器的\ **除錯器**\ 面板中的\ **監視**\ 分頁中顯示的值相同。通過使用該類的 :ref:`get_monitor()<class_Performance_method_get_monitor>` 方法，你可以從程式碼中存取該資料。
+This class provides access to a number of different monitors related to performance, such as memory usage, draw calls, and FPS. These are the same as the values displayed in the **Monitor** tab in the editor's **Debugger** panel. By using the :ref:`get_monitor()<class_Performance_method_get_monitor>` method of this class, you can access this data from your code.
 
-可以使用 :ref:`add_custom_monitor()<class_Performance_method_add_custom_monitor>` 方法新增自訂監視器。在編輯器的\ **除錯器**\ 面板的\ **監視**\ 分頁中，自訂監視器可以與內建監視器一起使用。
+You can add custom monitors using the :ref:`add_custom_monitor()<class_Performance_method_add_custom_monitor>` method. Custom monitors are available in **Monitor** tab in the editor's **Debugger** panel together with built-in monitors.
 
-\ **注意：**\ 某些內建監視器僅在除錯模式下可用，並且在以發行模式匯出的專案中使用時，將始終返回 ``0``\ 。
+\ **Note:** Some of the built-in monitors are only available in debug mode and will always return ``0`` when used in a project exported in release mode.
 
-\ **注意：**\ 出於性能原因，某些內建監視器不會即時更新，所以在更改之間可能會有長達 1 秒的延遲。
+\ **Note:** Some of the built-in monitors are not updated in real-time for performance reasons, so there may be a delay of up to 1 second between changes.
 
-\ **注意：**\ 自訂監視器不支援負值。負值被鉗制為 0。
+\ **Note:** Custom monitors do not support negative values. Negative values are clamped to 0.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ Performance
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_Performance_Monitor:
 
@@ -71,7 +71,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **TIME_FPS** = ``0``
 
-上一秒算繪的影格數。該指標每秒僅更新一次，與查詢頻率無關。\ *越高越好。*
+The number of frames rendered in the last second. This metric is only updated once per second, even if queried more often. *Higher is better.*
 
 .. _class_Performance_constant_TIME_PROCESS:
 
@@ -79,7 +79,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **TIME_PROCESS** = ``1``
 
-完成一影格所需的時間，單位為秒。\ *越低越好。*
+Time it took to complete one frame, in seconds. *Lower is better.*
 
 .. _class_Performance_constant_TIME_PHYSICS_PROCESS:
 
@@ -87,7 +87,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **TIME_PHYSICS_PROCESS** = ``2``
 
-完成一個物理影格所需的時間，單位為秒。\ *越低越好。*
+Time it took to complete one physics frame, in seconds. *Lower is better.*
 
 .. _class_Performance_constant_TIME_NAVIGATION_PROCESS:
 
@@ -95,7 +95,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **TIME_NAVIGATION_PROCESS** = ``3``
 
-完成一個導覽步驟的時間，單位為秒。包括導覽地圖的更新以及代理避障的計算。\ *越低越好。*
+Time it took to complete one navigation step, in seconds. This includes navigation map updates as well as agent avoidance calculations. *Lower is better.*
 
 .. _class_Performance_constant_MEMORY_STATIC:
 
@@ -103,7 +103,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **MEMORY_STATIC** = ``4``
 
-目前使用的靜態記憶體，單位為位元組。在發行版本中不可用。\ *越低越好。*
+Static memory currently used, in bytes. Not available in release builds. *Lower is better.*
 
 .. _class_Performance_constant_MEMORY_STATIC_MAX:
 
@@ -111,7 +111,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **MEMORY_STATIC_MAX** = ``5``
 
-可用的靜態記憶體。在發行版本中不可用。\ *越低越好。*
+Available static memory. Not available in release builds. *Lower is better.*
 
 .. _class_Performance_constant_MEMORY_MESSAGE_BUFFER_MAX:
 
@@ -119,7 +119,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **MEMORY_MESSAGE_BUFFER_MAX** = ``6``
 
-訊息佇列緩衝區已使用的最大記憶體量，單位為位元組。訊息佇列用於延遲函式呼叫和通知。\ *越低越好。*
+Largest amount of memory the message queue buffer has used, in bytes. The message queue is used for deferred functions calls and notifications. *Lower is better.*
 
 .. _class_Performance_constant_OBJECT_COUNT:
 
@@ -127,7 +127,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **OBJECT_COUNT** = ``7``
 
-目前產生實體的對象數（包括節點）。\ *越低越好。*
+Number of objects currently instantiated (including nodes). *Lower is better.*
 
 .. _class_Performance_constant_OBJECT_RESOURCE_COUNT:
 
@@ -135,7 +135,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **OBJECT_RESOURCE_COUNT** = ``8``
 
-目前使用的資源數。\ *越低越好。*
+Number of resources currently used. *Lower is better.*
 
 .. _class_Performance_constant_OBJECT_NODE_COUNT:
 
@@ -143,7 +143,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **OBJECT_NODE_COUNT** = ``9``
 
-目前在場景樹中產生實體的節點數。也包括根節點。\ *越低越好。*
+Number of nodes currently instantiated in the scene tree. This also includes the root node. *Lower is better.*
 
 .. _class_Performance_constant_OBJECT_ORPHAN_NODE_COUNT:
 
@@ -161,7 +161,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_TOTAL_OBJECTS_IN_FRAME** = ``11``
 
-在上一個算繪影格中的物件總數。該指標不包括剔除的對象（通過隱藏節點、視錐剔除、或遮擋剔除）。\ *越低越好。*
+The total number of objects in the last rendered frame. This metric doesn't include culled objects (either via hiding nodes, frustum culling or occlusion culling). *Lower is better.*
 
 .. _class_Performance_constant_RENDER_TOTAL_PRIMITIVES_IN_FRAME:
 
@@ -169,7 +169,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_TOTAL_PRIMITIVES_IN_FRAME** = ``12``
 
-在上一個算繪影格中算繪的頂點或索引的總數。該指標不包括來自被剔除對象的圖元（通過隱藏節點、視錐剔除、或遮擋剔除）。由於預深度階段和陰影階段，圖元的數量總是高於場景中的實際頂點數量（通常是原始頂點數量的兩倍或三倍）。\ *越低越好。*
+The total number of vertices or indices rendered in the last rendered frame. This metric doesn't include primitives from culled objects (either via hiding nodes, frustum culling or occlusion culling). Due to the depth prepass and shadow passes, the number of primitives is always higher than the actual number of vertices in the scene (typically double or triple the original vertex count). *Lower is better.*
 
 .. _class_Performance_constant_RENDER_TOTAL_DRAW_CALLS_IN_FRAME:
 
@@ -177,7 +177,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_TOTAL_DRAW_CALLS_IN_FRAME** = ``13``
 
-在上一個算繪影格中執行的繪製呼叫的總數。該指標不包括剔除對象（通過隱藏節點、視錐剔除、或遮擋剔除），因為它們不會導致繪製呼叫。\ *越低越好。*
+The total number of draw calls performed in the last rendered frame. This metric doesn't include culled objects (either via hiding nodes, frustum culling or occlusion culling), since they do not result in draw calls. *Lower is better.*
 
 .. _class_Performance_constant_RENDER_VIDEO_MEM_USED:
 
@@ -185,7 +185,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_VIDEO_MEM_USED** = ``14``
 
-顯存的使用量（紋理和頂點記憶體之和，單位為位元組）。由於該指標還包括其他雜項分配，因此該值始終大於 :ref:`RENDER_TEXTURE_MEM_USED<class_Performance_constant_RENDER_TEXTURE_MEM_USED>` 和 :ref:`RENDER_BUFFER_MEM_USED<class_Performance_constant_RENDER_BUFFER_MEM_USED>` 的總和。\ *越低越好。*
+The amount of video memory used (texture and vertex memory combined, in bytes). Since this metric also includes miscellaneous allocations, this value is always greater than the sum of :ref:`RENDER_TEXTURE_MEM_USED<class_Performance_constant_RENDER_TEXTURE_MEM_USED>` and :ref:`RENDER_BUFFER_MEM_USED<class_Performance_constant_RENDER_BUFFER_MEM_USED>`. *Lower is better.*
 
 .. _class_Performance_constant_RENDER_TEXTURE_MEM_USED:
 
@@ -193,7 +193,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_TEXTURE_MEM_USED** = ``15``
 
-紋理記憶體的使用量（單位為位元組）。\ *越低越好。*
+The amount of texture memory used (in bytes). *Lower is better.*
 
 .. _class_Performance_constant_RENDER_BUFFER_MEM_USED:
 
@@ -201,7 +201,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_BUFFER_MEM_USED** = ``16``
 
-算繪緩衝區記憶體的使用量（單位為位元組）。\ *越低越好。*
+The amount of render buffer memory used (in bytes). *Lower is better.*
 
 .. _class_Performance_constant_PHYSICS_2D_ACTIVE_OBJECTS:
 
@@ -209,7 +209,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **PHYSICS_2D_ACTIVE_OBJECTS** = ``17``
 
-遊戲中活躍的 :ref:`RigidBody2D<class_RigidBody2D>` 節點數。\ *越低越好。*
+Number of active :ref:`RigidBody2D<class_RigidBody2D>` nodes in the game. *Lower is better.*
 
 .. _class_Performance_constant_PHYSICS_2D_COLLISION_PAIRS:
 
@@ -217,7 +217,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **PHYSICS_2D_COLLISION_PAIRS** = ``18``
 
-2D 物理引擎中碰撞對的數量。\ *越低越好。*
+Number of collision pairs in the 2D physics engine. *Lower is better.*
 
 .. _class_Performance_constant_PHYSICS_2D_ISLAND_COUNT:
 
@@ -225,7 +225,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **PHYSICS_2D_ISLAND_COUNT** = ``19``
 
-2D 物理引擎中孤島的數量。\ *越低越好。*
+Number of islands in the 2D physics engine. *Lower is better.*
 
 .. _class_Performance_constant_PHYSICS_3D_ACTIVE_OBJECTS:
 
@@ -233,7 +233,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **PHYSICS_3D_ACTIVE_OBJECTS** = ``20``
 
-遊戲中活躍的 :ref:`RigidBody3D<class_RigidBody3D>` 和 :ref:`VehicleBody3D<class_VehicleBody3D>` 節點數。\ *越低越好。*
+Number of active :ref:`RigidBody3D<class_RigidBody3D>` and :ref:`VehicleBody3D<class_VehicleBody3D>` nodes in the game. *Lower is better.*
 
 .. _class_Performance_constant_PHYSICS_3D_COLLISION_PAIRS:
 
@@ -241,7 +241,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **PHYSICS_3D_COLLISION_PAIRS** = ``21``
 
-3D 物理引擎中碰撞對的數量。\ *越低越好。*
+Number of collision pairs in the 3D physics engine. *Lower is better.*
 
 .. _class_Performance_constant_PHYSICS_3D_ISLAND_COUNT:
 
@@ -249,7 +249,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **PHYSICS_3D_ISLAND_COUNT** = ``22``
 
-3D 物理引擎中孤島的數量。\ *越低越好。*
+Number of islands in the 3D physics engine. *Lower is better.*
 
 .. _class_Performance_constant_AUDIO_OUTPUT_LATENCY:
 
@@ -257,7 +257,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **AUDIO_OUTPUT_LATENCY** = ``23``
 
-:ref:`AudioServer<class_AudioServer>`\ 的輸出延遲。相當於呼叫\ :ref:`AudioServer.get_output_latency()<class_AudioServer_method_get_output_latency>`\ ，不建議每影格呼叫方法。
+Output latency of the :ref:`AudioServer<class_AudioServer>`. Equivalent to calling :ref:`AudioServer.get_output_latency()<class_AudioServer_method_get_output_latency>`, it is not recommended to call this every frame.
 
 .. _class_Performance_constant_NAVIGATION_ACTIVE_MAPS:
 
@@ -473,7 +473,7 @@ Number of active navigation maps in the :ref:`NavigationServer3D<class_Navigatio
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_3D_REGION_COUNT** = ``50``
 
-:ref:`NavigationServer3D<class_NavigationServer3D>` 中活動導覽地區的數量。
+Number of active navigation regions in the :ref:`NavigationServer3D<class_NavigationServer3D>`.
 
 .. _class_Performance_constant_NAVIGATION_3D_AGENT_COUNT:
 
@@ -481,7 +481,7 @@ Number of active navigation maps in the :ref:`NavigationServer3D<class_Navigatio
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_3D_AGENT_COUNT** = ``51``
 
-:ref:`NavigationServer3D<class_NavigationServer3D>` 中正在處理避障的活動導覽代理的數量。
+Number of active navigation agents processing avoidance in the :ref:`NavigationServer3D<class_NavigationServer3D>`.
 
 .. _class_Performance_constant_NAVIGATION_3D_LINK_COUNT:
 
@@ -489,7 +489,7 @@ Number of active navigation maps in the :ref:`NavigationServer3D<class_Navigatio
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_3D_LINK_COUNT** = ``52``
 
-:ref:`NavigationServer3D<class_NavigationServer3D>` 中活動導覽連結的數量。
+Number of active navigation links in the :ref:`NavigationServer3D<class_NavigationServer3D>`.
 
 .. _class_Performance_constant_NAVIGATION_3D_POLYGON_COUNT:
 
@@ -497,7 +497,7 @@ Number of active navigation maps in the :ref:`NavigationServer3D<class_Navigatio
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_3D_POLYGON_COUNT** = ``53``
 
-:ref:`NavigationServer3D<class_NavigationServer3D>` 中導覽網格多邊形的數量。
+Number of navigation mesh polygons in the :ref:`NavigationServer3D<class_NavigationServer3D>`.
 
 .. _class_Performance_constant_NAVIGATION_3D_EDGE_COUNT:
 
@@ -505,7 +505,7 @@ Number of active navigation maps in the :ref:`NavigationServer3D<class_Navigatio
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_3D_EDGE_COUNT** = ``54``
 
-:ref:`NavigationServer3D<class_NavigationServer3D>` 中導覽網格多邊形邊緣的數量。
+Number of navigation mesh polygon edges in the :ref:`NavigationServer3D<class_NavigationServer3D>`.
 
 .. _class_Performance_constant_NAVIGATION_3D_EDGE_MERGE_COUNT:
 
@@ -513,7 +513,7 @@ Number of active navigation maps in the :ref:`NavigationServer3D<class_Navigatio
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_3D_EDGE_MERGE_COUNT** = ``55``
 
-:ref:`NavigationServer3D<class_NavigationServer3D>` 中由於邊鍵重疊而被合併的導覽網格多邊形的邊的數量。
+Number of navigation mesh polygon edges that were merged due to edge key overlap in the :ref:`NavigationServer3D<class_NavigationServer3D>`.
 
 .. _class_Performance_constant_NAVIGATION_3D_EDGE_CONNECTION_COUNT:
 
@@ -521,7 +521,7 @@ Number of active navigation maps in the :ref:`NavigationServer3D<class_Navigatio
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_3D_EDGE_CONNECTION_COUNT** = ``56``
 
-:ref:`NavigationServer3D<class_NavigationServer3D>` 中由邊緣接近而被認為已連接的多邊形的邊的數量。
+Number of polygon edges that are considered connected by edge proximity :ref:`NavigationServer3D<class_NavigationServer3D>`.
 
 .. _class_Performance_constant_NAVIGATION_3D_EDGE_FREE_COUNT:
 
@@ -529,7 +529,7 @@ Number of active navigation maps in the :ref:`NavigationServer3D<class_Navigatio
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_3D_EDGE_FREE_COUNT** = ``57``
 
-:ref:`NavigationServer3D<class_NavigationServer3D>` 中無法合併的導覽網格多邊形的邊的數量。這些邊仍然可以通過邊緣接近或使用連結而被連接。
+Number of navigation mesh polygon edges that could not be merged in the :ref:`NavigationServer3D<class_NavigationServer3D>`. The edges still may be connected by edge proximity or with links.
 
 .. _class_Performance_constant_NAVIGATION_3D_OBSTACLE_COUNT:
 
@@ -545,7 +545,7 @@ Number of active navigation obstacles in the :ref:`NavigationServer3D<class_Navi
 
 :ref:`Monitor<enum_Performance_Monitor>` **MONITOR_MAX** = ``59``
 
-代表 :ref:`Monitor<enum_Performance_Monitor>` 列舉的大小。
+Represents the size of the :ref:`Monitor<enum_Performance_Monitor>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -595,8 +595,8 @@ Monitor output is formatted as a percentage. Submitted values should represent a
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_Performance_method_add_custom_monitor:
 
@@ -604,7 +604,7 @@ Monitor output is formatted as a percentage. Submitted values should represent a
 
 |void| **add_custom_monitor**\ (\ id\: :ref:`StringName<class_StringName>`, callable\: :ref:`Callable<class_Callable>`, arguments\: :ref:`Array<class_Array>` = [], type\: :ref:`MonitorType<enum_Performance_MonitorType>` = 0\ ) :ref:`🔗<class_Performance_method_add_custom_monitor>`
 
-新增一個名為 ``id`` 的自訂監視器。可以在 ``id`` 中使用斜線分隔符號指定監視器的類別（例如：\ ``"Game/NumberOfNPCs"``\ ）。如果有多個斜線分隔符，則使用預設的類別。預設類別是 ``"Custom"``\ 。如果給定的 ``id`` 已經存在，則列印一個錯誤。
+Adds a custom monitor with the name ``id``. You can specify the category of the monitor using slash delimiters in ``id`` (for example: ``"Game/NumberOfNPCs"``). If there is more than one slash delimiter, then the default category is used. The default category is ``"Custom"``. Prints an error if given ``id`` is already present.
 
 
 .. tabs::
@@ -614,18 +614,18 @@ Monitor output is formatted as a percentage. Submitted values should represent a
     func _ready():
         var monitor_value = Callable(self, "get_monitor_value")
 
-        # 將名稱為“MyName”的監視器新增到類別“MyCategory”。
+        # Adds monitor with name "MyName" to category "MyCategory".
         Performance.add_custom_monitor("MyCategory/MyMonitor", monitor_value)
 
-        # 將名稱為“MyName”的監視器新增到類別“Custom”。
-        # 注意：“MyCategory/MyMonitor”和“MyMonitor”同名但不同 ID，所以程式碼有效。
+        # Adds monitor with name "MyName" to category "Custom".
+        # Note: "MyCategory/MyMonitor" and "MyMonitor" have same name but different IDs, so the code is valid.
         Performance.add_custom_monitor("MyMonitor", monitor_value)
 
-        # 將名稱為“MyName”的監視器新增到類別“Custom”。
-        # 注意：“MyMonitor”和“Custom/MyMonitor”名稱相同，類別相同，但 ID 不同，所以程式碼有效。
+        # Adds monitor with name "MyName" to category "Custom".
+        # Note: "MyMonitor" and "Custom/MyMonitor" have same name and same category but different IDs, so the code is valid.
         Performance.add_custom_monitor("Custom/MyMonitor", monitor_value)
 
-        # 將名稱為“MyCategoryOne/MyCategoryTwo/MyMonitor”的監視器新增到類別“Custom”。
+        # Adds monitor with name "MyCategoryOne/MyCategoryTwo/MyMonitor" to category "Custom".
         Performance.add_custom_monitor("MyCategoryOne/MyCategoryTwo/MyMonitor", monitor_value)
 
     func get_monitor_value():
@@ -637,17 +637,17 @@ Monitor output is formatted as a percentage. Submitted values should represent a
     {
         var monitorValue = new Callable(this, MethodName.GetMonitorValue);
 
-        // 將名稱為“MyName”的監視器新增到類別“MyCategory”。
+        // Adds monitor with name "MyName" to category "MyCategory".
         Performance.AddCustomMonitor("MyCategory/MyMonitor", monitorValue);
-        // 將名稱為“MyName”的監視器新增到類別“Custom”。
-        // 注意：“MyCategory/MyMonitor”和“MyMonitor”同名但不同 ID，所以程式碼有效。
+        // Adds monitor with name "MyName" to category "Custom".
+        // Note: "MyCategory/MyMonitor" and "MyMonitor" have same name but different ids so the code is valid.
         Performance.AddCustomMonitor("MyMonitor", monitorValue);
 
-        // 將名稱為“MyName”的監視器新增到類別“Custom”。
-        // 注意：“MyMonitor”和“Custom/MyMonitor”名稱相同，類別相同，但 ID 不同，所以程式碼有效。
+        // Adds monitor with name "MyName" to category "Custom".
+        // Note: "MyMonitor" and "Custom/MyMonitor" have same name and same category but different ids so the code is valid.
         Performance.AddCustomMonitor("Custom/MyMonitor", monitorValue);
 
-        // 將名稱為“MyCategoryOne/MyCategoryTwo/MyMonitor”的監視器新增到類別“Custom”。
+        // Adds monitor with name "MyCategoryOne/MyCategoryTwo/MyMonitor" to category "Custom".
         Performance.AddCustomMonitor("MyCategoryOne/MyCategoryTwo/MyMonitor", monitorValue);
     }
 
@@ -658,9 +658,9 @@ Monitor output is formatted as a percentage. Submitted values should represent a
 
 
 
-除錯器呼叫可呼叫物件來獲取自訂監視器的值。可呼叫物件必須返回一個零或正整數或浮點數。
+The debugger calls the callable to get the value of custom monitor. The callable must return a zero or positive integer or floating-point number.
 
-使用參數陣列中提供的參數來呼叫可呼叫物件。
+Callables are called with arguments supplied in argument array.
 
 .. rst-class:: classref-item-separator
 
@@ -672,7 +672,7 @@ Monitor output is formatted as a percentage. Submitted values should represent a
 
 :ref:`Variant<class_Variant>` **get_custom_monitor**\ (\ id\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Performance_method_get_custom_monitor>`
 
-返回具有給定 ``id`` 的自訂監視器的值。呼叫這個可呼叫物件以獲取自訂監視器的值。另請參閱 :ref:`has_custom_monitor()<class_Performance_method_has_custom_monitor>`\ 。如果給定的 ``id`` 不存在，則列印一個錯誤。
+Returns the value of custom monitor with given ``id``. The callable is called to get the value of custom monitor. See also :ref:`has_custom_monitor()<class_Performance_method_has_custom_monitor>`. Prints an error if the given ``id`` is absent.
 
 .. rst-class:: classref-item-separator
 
@@ -684,7 +684,7 @@ Monitor output is formatted as a percentage. Submitted values should represent a
 
 :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\] **get_custom_monitor_names**\ (\ ) :ref:`🔗<class_Performance_method_get_custom_monitor_names>`
 
-以一個 :ref:`Array<class_Array>`\ ，返回活動自訂監視器的名稱。
+Returns the names of active custom monitors in an :ref:`Array<class_Array>`.
 
 .. rst-class:: classref-item-separator
 
@@ -708,22 +708,22 @@ Returns the :ref:`MonitorType<enum_Performance_MonitorType>` values of active cu
 
 :ref:`float<class_float>` **get_monitor**\ (\ monitor\: :ref:`Monitor<enum_Performance_Monitor>`\ ) |const| :ref:`🔗<class_Performance_method_get_monitor>`
 
-返回任一可用的內建監視器的值。應該提供任一 :ref:`Monitor<enum_Performance_Monitor>` 常數作為參數，如下所示：
+Returns the value of one of the available built-in monitors. You should provide one of the :ref:`Monitor<enum_Performance_Monitor>` constants as the argument, like this:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    print(Performance.get_monitor(Performance.TIME_FPS)) # 將 FPS 列印到控制台。
+    print(Performance.get_monitor(Performance.TIME_FPS)) # Prints the FPS to the console.
 
  .. code-tab:: csharp
 
-    GD.Print(Performance.GetMonitor(Performance.Monitor.TimeFps)); // 將 FPS 列印到控制台。
+    GD.Print(Performance.GetMonitor(Performance.Monitor.TimeFps)); // Prints the FPS to the console.
 
 
 
-請參閱 :ref:`get_custom_monitor()<class_Performance_method_get_custom_monitor>`\ ，以查詢自訂效能監視器的值。
+See :ref:`get_custom_monitor()<class_Performance_method_get_custom_monitor>` to query custom performance monitors' values.
 
 .. rst-class:: classref-item-separator
 
@@ -735,7 +735,7 @@ Returns the :ref:`MonitorType<enum_Performance_MonitorType>` values of active cu
 
 :ref:`int<class_int>` **get_monitor_modification_time**\ (\ ) :ref:`🔗<class_Performance_method_get_monitor_modification_time>`
 
-返回自訂監視器被新增/刪除時的最後一個刻度（自引擎啟動以來的微秒數）。當該監視器更新時，它被設定為 :ref:`Time.get_ticks_usec()<class_Time_method_get_ticks_usec>`\ 。
+Returns the last tick in which custom monitor was added/removed (in microseconds since the engine started). This is set to :ref:`Time.get_ticks_usec()<class_Time_method_get_ticks_usec>` when the monitor is updated.
 
 .. rst-class:: classref-item-separator
 
@@ -747,7 +747,7 @@ Returns the :ref:`MonitorType<enum_Performance_MonitorType>` values of active cu
 
 :ref:`bool<class_bool>` **has_custom_monitor**\ (\ id\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Performance_method_has_custom_monitor>`
 
-如果存在具有給定 ``id`` 的自訂監視器，則返回 ``true``\ ，否則返回 ``false``\ 。
+Returns ``true`` if custom monitor with the given ``id`` is present, ``false`` otherwise.
 
 .. rst-class:: classref-item-separator
 
@@ -759,14 +759,14 @@ Returns the :ref:`MonitorType<enum_Performance_MonitorType>` values of active cu
 
 |void| **remove_custom_monitor**\ (\ id\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Performance_method_remove_custom_monitor>`
 
-移除具有給定 ``id`` 的自訂監視器。如果給定的 ``id`` 已經不存在，則列印一個錯誤。
+Removes the custom monitor with given ``id``. Prints an error if the given ``id`` is already absent.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -616,9 +616,9 @@ Ajoute une bibliothèque statique depuis ``path`` au projet de plateforme intég
 
 Ajoute un fichier personnalisé à exporter. ``path`` est le chemin virtuel qui peut être utilisé pour charger le fichier, ``file`` représente les données binaires du fichier. 
 
-Quand appelée au sein de :ref:`_export_file et lorsque [param remap()<class_EditorExportPlugin_private_method__export_file et lorsque [param remap>` est ``true``, le fichier ne sera pas exporté, mais sera remplacé par une référence à ce fichier. ``remap`` est ignoré quand appelé dans d'autres endroits.
+Quand appelée au sein de :ref:`_export_file()<class_EditorExportPlugin_private_method__export_file>` et lorsque ``remap`` est ``true``, le fichier ne sera pas exporté, mais sera remplacé par une référence à ce fichier. ``remap`` est ignoré quand appelé dans d'autres endroits.
 
-\ ``file`` ne sera pas importé, alors envisagez d'utiliser ``méthode _customize_resource`` pour remapper les ressources importées.
+\ ``file`` ne sera pas importé, alors envisagez d'utiliser :ref:`_customize_resource()<class_EditorExportPlugin_private_method__customize_resource>` pour remapper les ressources importées.
 
 .. rst-class:: classref-item-separator
 

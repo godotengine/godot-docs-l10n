@@ -5,23 +5,23 @@
 TranslationDomain
 =================
 
-**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-独立的 :ref:`Translation<class_Translation>` 资源合集。
+A self-contained collection of :ref:`Translation<class_Translation>` resources.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-**TranslationDomain** 即翻译域，是一种独立的 :ref:`Translation<class_Translation>` 资源合集。可以向其中添加和删除翻译。
+**TranslationDomain** is a self-contained collection of :ref:`Translation<class_Translation>` resources. Translations can be added to or removed from it.
 
-如果你想处理的是主翻译域，使用 :ref:`TranslationServer<class_TranslationServer>` 上的封装方法更方便。
+If you're working with the main translation domain, it is more convenient to use the wrap methods on :ref:`TranslationServer<class_TranslationServer>`.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ TranslationDomain
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -90,8 +90,8 @@ TranslationDomain
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_TranslationDomain_property_enabled:
 
@@ -104,7 +104,7 @@ TranslationDomain
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_enabled**\ (\ )
 
-如果为 ``true``\ ，则启用翻译。否则 :ref:`translate()<class_TranslationDomain_method_translate>` 和 :ref:`translate_plural()<class_TranslationDomain_method_translate_plural>` 会返回未经修改的输入消息，忽略当前区域设置。
+If ``true``, translation is enabled. Otherwise, :ref:`translate()<class_TranslationDomain_method_translate>` and :ref:`translate_plural()<class_TranslationDomain_method_translate_plural>` will return the input message unchanged regardless of the current locale.
 
 .. rst-class:: classref-item-separator
 
@@ -121,9 +121,9 @@ TranslationDomain
 - |void| **set_pseudolocalization_accents_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_pseudolocalization_accents_enabled**\ (\ )
 
-伪本地化时将所有字符替换为对应的带重音的版本。
+Replace all characters with their accented variants during pseudolocalization.
 
-\ **注意：**\ 更新该属性不会自动更新场景树中的文本。请在完成修改伪本地化相关选项后，手动传播 :ref:`MainLoop.NOTIFICATION_TRANSLATION_CHANGED<class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED>` 通知。
+\ **Note:** Updating this property does not automatically update texts in the scene tree. Please propagate the :ref:`MainLoop.NOTIFICATION_TRANSLATION_CHANGED<class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED>` notification manually after you have finished modifying pseudolocalization related options.
 
 .. rst-class:: classref-item-separator
 
@@ -140,9 +140,9 @@ TranslationDomain
 - |void| **set_pseudolocalization_double_vowels_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_pseudolocalization_double_vowels_enabled**\ (\ )
 
-伪本地化时重复元音字母，用于模拟因本地化导致文本变长的效果。
+Double vowels in strings during pseudolocalization to simulate the lengthening of text due to localization.
 
-\ **注意：**\ 更新该属性不会自动更新场景树中的文本。请在完成修改伪本地化相关选项后，手动传播 :ref:`MainLoop.NOTIFICATION_TRANSLATION_CHANGED<class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED>` 通知。
+\ **Note:** Updating this property does not automatically update texts in the scene tree. Please propagate the :ref:`MainLoop.NOTIFICATION_TRANSLATION_CHANGED<class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED>` notification manually after you have finished modifying pseudolocalization related options.
 
 .. rst-class:: classref-item-separator
 
@@ -159,9 +159,9 @@ TranslationDomain
 - |void| **set_pseudolocalization_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_pseudolocalization_enabled**\ (\ )
 
-如果为 ``true``\ ，则为项目启用伪本地化。可以用来发现未翻译的字符串，也可以用来发现将项目本地化为字符串比源语言更长的语言时可能出现的布局问题。
+If ``true``, enables pseudolocalization for the project. This can be used to spot untranslatable strings or layout issues that may occur once the project is localized to languages that have longer strings than the source language.
 
-\ **注意：**\ 更新该属性不会自动更新场景树中的文本。请在完成修改伪本地化相关选项后，手动传播 :ref:`MainLoop.NOTIFICATION_TRANSLATION_CHANGED<class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED>` 通知。
+\ **Note:** Updating this property does not automatically update texts in the scene tree. Please propagate the :ref:`MainLoop.NOTIFICATION_TRANSLATION_CHANGED<class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED>` notification manually after you have finished modifying pseudolocalization related options.
 
 .. rst-class:: classref-item-separator
 
@@ -178,9 +178,9 @@ TranslationDomain
 - |void| **set_pseudolocalization_expansion_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pseudolocalization_expansion_ratio**\ (\ )
 
-伪本地化时使用的扩展率。\ ``0.3`` 会将字符串的长度增加 30%，对于大多数实际情况而言足够了。
+The expansion ratio to use during pseudolocalization. A value of ``0.3`` is sufficient for most practical purposes, and will increase the length of each string by 30%.
 
-\ **注意：**\ 更新该属性不会自动更新场景树中的文本。请在完成修改伪本地化相关选项后，手动传播 :ref:`MainLoop.NOTIFICATION_TRANSLATION_CHANGED<class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED>` 通知。
+\ **Note:** Updating this property does not automatically update texts in the scene tree. Please propagate the :ref:`MainLoop.NOTIFICATION_TRANSLATION_CHANGED<class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED>` notification manually after you have finished modifying pseudolocalization related options.
 
 .. rst-class:: classref-item-separator
 
@@ -197,9 +197,9 @@ TranslationDomain
 - |void| **set_pseudolocalization_fake_bidi_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_pseudolocalization_fake_bidi_enabled**\ (\ )
 
-如果为 ``true``\ ，则在启用伪本地化时模拟双向（从右至左）文本。可以用来发现将项目本地化为阿拉伯语和希伯来语等 RTL 语言时可能出现的 RTL 布局和 UI 镜像问题。
+If ``true``, emulate bidirectional (right-to-left) text when pseudolocalization is enabled. This can be used to spot issues with RTL layout and UI mirroring that will crop up if the project is localized to RTL languages such as Arabic or Hebrew.
 
-\ **注意：**\ 更新该属性不会自动更新场景树中的文本。请在完成修改伪本地化相关选项后，手动传播 :ref:`MainLoop.NOTIFICATION_TRANSLATION_CHANGED<class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED>` 通知。
+\ **Note:** Updating this property does not automatically update texts in the scene tree. Please propagate the :ref:`MainLoop.NOTIFICATION_TRANSLATION_CHANGED<class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED>` notification manually after you have finished modifying pseudolocalization related options.
 
 .. rst-class:: classref-item-separator
 
@@ -216,9 +216,9 @@ TranslationDomain
 - |void| **set_pseudolocalization_override_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_pseudolocalization_override_enabled**\ (\ )
 
-将字符串中的所有字符都替换为 ``*``\ 。可用于发现无法本地化的字符串。
+Replace all characters in the string with ``*``. Useful for finding non-localizable strings.
 
-\ **注意：**\ 更新该属性不会自动更新场景树中的文本。请在完成修改伪本地化相关选项后，手动传播 :ref:`MainLoop.NOTIFICATION_TRANSLATION_CHANGED<class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED>` 通知。
+\ **Note:** Updating this property does not automatically update texts in the scene tree. Please propagate the :ref:`MainLoop.NOTIFICATION_TRANSLATION_CHANGED<class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED>` notification manually after you have finished modifying pseudolocalization related options.
 
 .. rst-class:: classref-item-separator
 
@@ -235,9 +235,9 @@ TranslationDomain
 - |void| **set_pseudolocalization_prefix**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_pseudolocalization_prefix**\ (\ )
 
-在伪本地化字符串前添加的前缀。
+Prefix that will be prepended to the pseudolocalized string.
 
-\ **注意：**\ 更新该属性不会自动更新场景树中的文本。请在完成修改伪本地化相关选项后，手动传播 :ref:`MainLoop.NOTIFICATION_TRANSLATION_CHANGED<class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED>` 通知。
+\ **Note:** Updating this property does not automatically update texts in the scene tree. Please propagate the :ref:`MainLoop.NOTIFICATION_TRANSLATION_CHANGED<class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED>` notification manually after you have finished modifying pseudolocalization related options.
 
 .. rst-class:: classref-item-separator
 
@@ -254,9 +254,9 @@ TranslationDomain
 - |void| **set_pseudolocalization_skip_placeholders_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_pseudolocalization_skip_placeholders_enabled**\ (\ )
 
-伪本地化时跳过 ``%s`` 或 ``%f`` 等用于字符串格式化的占位符。可用于识别需要额外的控制字符才能正确显示的字符串。
+Skip placeholders for string formatting like ``%s`` or ``%f`` during pseudolocalization. Useful to identify strings which need additional control characters to display correctly.
 
-\ **注意：**\ 更新该属性不会自动更新场景树中的文本。请在完成修改伪本地化相关选项后，手动传播 :ref:`MainLoop.NOTIFICATION_TRANSLATION_CHANGED<class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED>` 通知。
+\ **Note:** Updating this property does not automatically update texts in the scene tree. Please propagate the :ref:`MainLoop.NOTIFICATION_TRANSLATION_CHANGED<class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED>` notification manually after you have finished modifying pseudolocalization related options.
 
 .. rst-class:: classref-item-separator
 
@@ -273,9 +273,9 @@ TranslationDomain
 - |void| **set_pseudolocalization_suffix**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_pseudolocalization_suffix**\ (\ )
 
-在伪本地化字符串后添加的后缀。
+Suffix that will be appended to the pseudolocalized string.
 
-\ **注意：**\ 更新该属性不会自动更新场景树中的文本。请在完成修改伪本地化相关选项后，手动传播 :ref:`MainLoop.NOTIFICATION_TRANSLATION_CHANGED<class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED>` 通知。
+\ **Note:** Updating this property does not automatically update texts in the scene tree. Please propagate the :ref:`MainLoop.NOTIFICATION_TRANSLATION_CHANGED<class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED>` notification manually after you have finished modifying pseudolocalization related options.
 
 .. rst-class:: classref-section-separator
 
@@ -283,8 +283,8 @@ TranslationDomain
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_TranslationDomain_method_add_translation:
 
@@ -292,7 +292,7 @@ TranslationDomain
 
 |void| **add_translation**\ (\ translation\: :ref:`Translation<class_Translation>`\ ) :ref:`🔗<class_TranslationDomain_method_add_translation>`
 
-添加翻译。
+Adds a translation.
 
 .. rst-class:: classref-item-separator
 
@@ -304,7 +304,7 @@ TranslationDomain
 
 |void| **clear**\ (\ ) :ref:`🔗<class_TranslationDomain_method_clear>`
 
-移除所有翻译。
+Removes all translations.
 
 .. rst-class:: classref-item-separator
 
@@ -328,7 +328,7 @@ Returns the :ref:`Translation<class_Translation>` instances that match ``locale`
 
 :ref:`String<class_String>` **get_locale_override**\ (\ ) |const| :ref:`🔗<class_TranslationDomain_method_get_locale_override>`
 
-返回翻译域的区域设置覆盖项。如果禁用区域设置覆盖则返回空字符串。
+Returns the locale override of the domain. Returns an empty string if locale override is disabled.
 
 .. rst-class:: classref-item-separator
 
@@ -340,9 +340,9 @@ Returns the :ref:`Translation<class_Translation>` instances that match ``locale`
 
 :ref:`Translation<class_Translation>` **get_translation_object**\ (\ locale\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TranslationDomain_method_get_translation_object>`
 
-**已弃用：** Use :ref:`find_translations()<class_TranslationDomain_method_find_translations>` instead.
+**Deprecated:** Use :ref:`find_translations()<class_TranslationDomain_method_find_translations>` instead.
 
-返回与 ``locale`` 最为匹配的 :ref:`Translation<class_Translation>` 实例。如果没有能够匹配的翻译则返回 ``null``\ 。
+Returns the :ref:`Translation<class_Translation>` instance that best matches ``locale``. Returns ``null`` if there are no matches.
 
 .. rst-class:: classref-item-separator
 
@@ -390,7 +390,7 @@ Returns ``true`` if there are any :ref:`Translation<class_Translation>` instance
 
 :ref:`StringName<class_StringName>` **pseudolocalize**\ (\ message\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_TranslationDomain_method_pseudolocalize>`
 
-根据传入的 ``message`` 返回伪本地化字符串。
+Returns the pseudolocalized string based on the ``message`` passed in.
 
 .. rst-class:: classref-item-separator
 
@@ -402,7 +402,7 @@ Returns ``true`` if there are any :ref:`Translation<class_Translation>` instance
 
 |void| **remove_translation**\ (\ translation\: :ref:`Translation<class_Translation>`\ ) :ref:`🔗<class_TranslationDomain_method_remove_translation>`
 
-移除给定的翻译。
+Removes the given translation.
 
 .. rst-class:: classref-item-separator
 
@@ -414,11 +414,11 @@ Returns ``true`` if there are any :ref:`Translation<class_Translation>` instance
 
 |void| **set_locale_override**\ (\ locale\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TranslationDomain_method_set_locale_override>`
 
-设置翻译域的区域设置覆盖项。
+Sets the locale override of the domain.
 
-如果 ``locale`` 为空字符串则禁用区域设置覆盖。否则会将 ``locale`` 进行标准化，匹配已知区域设置（例如 ``en-US`` 会与 ``en_US`` 匹配）。
+If ``locale`` is an empty string, locale override is disabled. Otherwise, ``locale`` will be standardized to match known locales (e.g. ``en-US`` would be matched to ``en_US``).
 
-\ **注意：**\ 调用该方法不会自动更新场景树中的文本。请手动传播 :ref:`MainLoop.NOTIFICATION_TRANSLATION_CHANGED<class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED>` 信号。
+\ **Note:** Calling this method does not automatically update texts in the scene tree. Please propagate the :ref:`MainLoop.NOTIFICATION_TRANSLATION_CHANGED<class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED>` signal manually.
 
 .. rst-class:: classref-item-separator
 
@@ -430,7 +430,7 @@ Returns ``true`` if there are any :ref:`Translation<class_Translation>` instance
 
 :ref:`StringName<class_StringName>` **translate**\ (\ message\: :ref:`StringName<class_StringName>`, context\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_TranslationDomain_method_translate>`
 
-返回当前区域设置下，与给定消息和上下文对应的翻译。
+Returns the current locale's translation for the given message and context.
 
 .. rst-class:: classref-item-separator
 
@@ -442,16 +442,16 @@ Returns ``true`` if there are any :ref:`Translation<class_Translation>` instance
 
 :ref:`StringName<class_StringName>` **translate_plural**\ (\ message\: :ref:`StringName<class_StringName>`, message_plural\: :ref:`StringName<class_StringName>`, n\: :ref:`int<class_int>`, context\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_TranslationDomain_method_translate_plural>`
 
-返回当前区域设置下，与给定消息、复数消息和上下文对应的翻译。
+Returns the current locale's translation for the given message, plural message and context.
 
-数字 ``n`` 是复数对象的数量。翻译系统会根据这个数字来针对所选语言获取正确的复数形式。
+The number ``n`` is the number or quantity of the plural object. It will be used to guide the translation system to fetch the correct plural form for the selected language.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

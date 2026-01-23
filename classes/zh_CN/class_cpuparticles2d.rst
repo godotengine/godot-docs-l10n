@@ -5,30 +5,30 @@
 CPUParticles2D
 ==============
 
-**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-基于 CPU 的 2D 粒子发射器。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-基于 CPU 的 2D 粒子节点，可用于创建各种粒子系统、粒子效果。
-
-另见 :ref:`GPUParticles2D<class_GPUParticles2D>`\ ，利用硬件加速提供了相同的功能，但可能无法在较旧的设备上运行。
+A CPU-based 2D particle emitter.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`粒子系统（2D） <../tutorials/2d/particle_systems_2d>`
+CPU-based 2D particle node used to create a variety of particle systems and effects.
+
+See also :ref:`GPUParticles2D<class_GPUParticles2D>`, which provides the same functionality with hardware acceleration, but may not run on older devices.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Particle systems (2D) <../tutorials/2d/particle_systems_2d>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -177,8 +177,8 @@ CPUParticles2D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -213,8 +213,8 @@ CPUParticles2D
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_CPUParticles2D_signal_finished:
 
@@ -222,7 +222,7 @@ CPUParticles2D
 
 **finished**\ (\ ) :ref:`🔗<class_CPUParticles2D_signal_finished>`
 
-当所有活动粒子完成处理时发出。当 :ref:`one_shot<class_CPUParticles2D_property_one_shot>` 被禁用时，粒子将连续处理，因此它永远不会触发。
+Emitted when all active particles have finished processing. When :ref:`one_shot<class_CPUParticles2D_property_one_shot>` is disabled, particles will process continuously, so this is never emitted.
 
 .. rst-class:: classref-section-separator
 
@@ -230,8 +230,8 @@ CPUParticles2D
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_CPUParticles2D_DrawOrder:
 
@@ -245,7 +245,7 @@ enum **DrawOrder**: :ref:`🔗<enum_CPUParticles2D_DrawOrder>`
 
 :ref:`DrawOrder<enum_CPUParticles2D_DrawOrder>` **DRAW_ORDER_INDEX** = ``0``
 
-粒子按发射顺序绘制。
+Particles are drawn in the order emitted.
 
 .. _class_CPUParticles2D_constant_DRAW_ORDER_LIFETIME:
 
@@ -253,7 +253,7 @@ enum **DrawOrder**: :ref:`🔗<enum_CPUParticles2D_DrawOrder>`
 
 :ref:`DrawOrder<enum_CPUParticles2D_DrawOrder>` **DRAW_ORDER_LIFETIME** = ``1``
 
-粒子按照剩余寿命的顺序绘制。换句话说，寿命最长的粒子被绘制在前面。
+Particles are drawn in order of remaining lifetime. In other words, the particle with the highest lifetime is drawn at the front.
 
 .. rst-class:: classref-item-separator
 
@@ -271,7 +271,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles2D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles2D_Parameter>` **PARAM_INITIAL_LINEAR_VELOCITY** = ``0``
 
-与 :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` 一起使用，设置初始速度属性。
+Use with :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` to set initial velocity properties.
 
 .. _class_CPUParticles2D_constant_PARAM_ANGULAR_VELOCITY:
 
@@ -279,7 +279,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles2D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles2D_Parameter>` **PARAM_ANGULAR_VELOCITY** = ``1``
 
-与 :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` 一起使用，设置角速度属性。
+Use with :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` to set angular velocity properties.
 
 .. _class_CPUParticles2D_constant_PARAM_ORBIT_VELOCITY:
 
@@ -287,7 +287,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles2D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles2D_Parameter>` **PARAM_ORBIT_VELOCITY** = ``2``
 
-与 :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` 一起使用，设置轨道速度属性。
+Use with :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` to set orbital velocity properties.
 
 .. _class_CPUParticles2D_constant_PARAM_LINEAR_ACCEL:
 
@@ -295,7 +295,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles2D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles2D_Parameter>` **PARAM_LINEAR_ACCEL** = ``3``
 
-与 :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` 一起使用，设置线性加速度属性。
+Use with :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` to set linear acceleration properties.
 
 .. _class_CPUParticles2D_constant_PARAM_RADIAL_ACCEL:
 
@@ -303,7 +303,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles2D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles2D_Parameter>` **PARAM_RADIAL_ACCEL** = ``4``
 
-与 :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` 一起使用，设置径向加速度属性。
+Use with :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` to set radial acceleration properties.
 
 .. _class_CPUParticles2D_constant_PARAM_TANGENTIAL_ACCEL:
 
@@ -311,7 +311,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles2D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles2D_Parameter>` **PARAM_TANGENTIAL_ACCEL** = ``5``
 
-与 :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` 一起使用，设置切向加速度属性。
+Use with :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` to set tangential acceleration properties.
 
 .. _class_CPUParticles2D_constant_PARAM_DAMPING:
 
@@ -319,7 +319,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles2D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles2D_Parameter>` **PARAM_DAMPING** = ``6``
 
-与 :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` 一起使用，设置阻尼属性。
+Use with :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` to set damping properties.
 
 .. _class_CPUParticles2D_constant_PARAM_ANGLE:
 
@@ -327,7 +327,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles2D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles2D_Parameter>` **PARAM_ANGLE** = ``7``
 
-与 :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` 一起使用，设置角度属性。
+Use with :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` to set angle properties.
 
 .. _class_CPUParticles2D_constant_PARAM_SCALE:
 
@@ -335,7 +335,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles2D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles2D_Parameter>` **PARAM_SCALE** = ``8``
 
-与 :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` 一起使用，设置缩放属性。
+Use with :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` to set scale properties.
 
 .. _class_CPUParticles2D_constant_PARAM_HUE_VARIATION:
 
@@ -343,7 +343,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles2D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles2D_Parameter>` **PARAM_HUE_VARIATION** = ``9``
 
-与 :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` 一起使用，设置色相变化属性。
+Use with :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` to set hue variation properties.
 
 .. _class_CPUParticles2D_constant_PARAM_ANIM_SPEED:
 
@@ -351,7 +351,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles2D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles2D_Parameter>` **PARAM_ANIM_SPEED** = ``10``
 
-与 :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` 一起使用，设置动画速度属性。
+Use with :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` to set animation speed properties.
 
 .. _class_CPUParticles2D_constant_PARAM_ANIM_OFFSET:
 
@@ -359,7 +359,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles2D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles2D_Parameter>` **PARAM_ANIM_OFFSET** = ``11``
 
-与 :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`\ 、\ :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` 一起使用，设置动画偏移属性。
+Use with :ref:`set_param_min()<class_CPUParticles2D_method_set_param_min>`, :ref:`set_param_max()<class_CPUParticles2D_method_set_param_max>`, and :ref:`set_param_curve()<class_CPUParticles2D_method_set_param_curve>` to set animation offset properties.
 
 .. _class_CPUParticles2D_constant_PARAM_MAX:
 
@@ -367,7 +367,7 @@ enum **Parameter**: :ref:`🔗<enum_CPUParticles2D_Parameter>`
 
 :ref:`Parameter<enum_CPUParticles2D_Parameter>` **PARAM_MAX** = ``12``
 
-代表 :ref:`Parameter<enum_CPUParticles2D_Parameter>` 枚举的大小。
+Represents the size of the :ref:`Parameter<enum_CPUParticles2D_Parameter>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -385,7 +385,7 @@ enum **ParticleFlags**: :ref:`🔗<enum_CPUParticles2D_ParticleFlags>`
 
 :ref:`ParticleFlags<enum_CPUParticles2D_ParticleFlags>` **PARTICLE_FLAG_ALIGN_Y_TO_VELOCITY** = ``0``
 
-与 :ref:`set_particle_flag()<class_CPUParticles2D_method_set_particle_flag>` 一起使用，设置 :ref:`particle_flag_align_y<class_CPUParticles2D_property_particle_flag_align_y>`\ 。
+Use with :ref:`set_particle_flag()<class_CPUParticles2D_method_set_particle_flag>` to set :ref:`particle_flag_align_y<class_CPUParticles2D_property_particle_flag_align_y>`.
 
 .. _class_CPUParticles2D_constant_PARTICLE_FLAG_ROTATE_Y:
 
@@ -393,7 +393,7 @@ enum **ParticleFlags**: :ref:`🔗<enum_CPUParticles2D_ParticleFlags>`
 
 :ref:`ParticleFlags<enum_CPUParticles2D_ParticleFlags>` **PARTICLE_FLAG_ROTATE_Y** = ``1``
 
-为了与 3D 粒子节点保持一致而存在，在 2D 中不被使用。
+Present for consistency with 3D particle nodes, not used in 2D.
 
 .. _class_CPUParticles2D_constant_PARTICLE_FLAG_DISABLE_Z:
 
@@ -401,7 +401,7 @@ enum **ParticleFlags**: :ref:`🔗<enum_CPUParticles2D_ParticleFlags>`
 
 :ref:`ParticleFlags<enum_CPUParticles2D_ParticleFlags>` **PARTICLE_FLAG_DISABLE_Z** = ``2``
 
-为了与 3D 粒子节点保持一致而存在，在 2D 中不被使用。
+Present for consistency with 3D particle nodes, not used in 2D.
 
 .. _class_CPUParticles2D_constant_PARTICLE_FLAG_MAX:
 
@@ -409,7 +409,7 @@ enum **ParticleFlags**: :ref:`🔗<enum_CPUParticles2D_ParticleFlags>`
 
 :ref:`ParticleFlags<enum_CPUParticles2D_ParticleFlags>` **PARTICLE_FLAG_MAX** = ``3``
 
-代表 :ref:`ParticleFlags<enum_CPUParticles2D_ParticleFlags>` 枚举的大小。
+Represents the size of the :ref:`ParticleFlags<enum_CPUParticles2D_ParticleFlags>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -427,7 +427,7 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles2D_EmissionShape>`
 
 :ref:`EmissionShape<enum_CPUParticles2D_EmissionShape>` **EMISSION_SHAPE_POINT** = ``0``
 
-所有粒子将从单个点发射。
+All particles will be emitted from a single point.
 
 .. _class_CPUParticles2D_constant_EMISSION_SHAPE_SPHERE:
 
@@ -435,7 +435,7 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles2D_EmissionShape>`
 
 :ref:`EmissionShape<enum_CPUParticles2D_EmissionShape>` **EMISSION_SHAPE_SPHERE** = ``1``
 
-粒子将在扁平化到二维的球体内发射。
+Particles will be emitted in the volume of a sphere flattened to two dimensions.
 
 .. _class_CPUParticles2D_constant_EMISSION_SHAPE_SPHERE_SURFACE:
 
@@ -443,7 +443,7 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles2D_EmissionShape>`
 
 :ref:`EmissionShape<enum_CPUParticles2D_EmissionShape>` **EMISSION_SHAPE_SPHERE_SURFACE** = ``2``
 
-粒子将在扁平化到二维的球面上发射。
+Particles will be emitted on the surface of a sphere flattened to two dimensions.
 
 .. _class_CPUParticles2D_constant_EMISSION_SHAPE_RECTANGLE:
 
@@ -451,7 +451,7 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles2D_EmissionShape>`
 
 :ref:`EmissionShape<enum_CPUParticles2D_EmissionShape>` **EMISSION_SHAPE_RECTANGLE** = ``3``
 
-粒子将在矩形区域内发射。
+Particles will be emitted in the area of a rectangle.
 
 .. _class_CPUParticles2D_constant_EMISSION_SHAPE_POINTS:
 
@@ -459,7 +459,7 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles2D_EmissionShape>`
 
 :ref:`EmissionShape<enum_CPUParticles2D_EmissionShape>` **EMISSION_SHAPE_POINTS** = ``4``
 
-粒子将在 :ref:`emission_points<class_CPUParticles2D_property_emission_points>` 中随机选择的位置发射。粒子颜色将通过 :ref:`emission_colors<class_CPUParticles2D_property_emission_colors>` 进行调制。
+Particles will be emitted at a position chosen randomly among :ref:`emission_points<class_CPUParticles2D_property_emission_points>`. Particle color will be modulated by :ref:`emission_colors<class_CPUParticles2D_property_emission_colors>`.
 
 .. _class_CPUParticles2D_constant_EMISSION_SHAPE_DIRECTED_POINTS:
 
@@ -467,7 +467,7 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles2D_EmissionShape>`
 
 :ref:`EmissionShape<enum_CPUParticles2D_EmissionShape>` **EMISSION_SHAPE_DIRECTED_POINTS** = ``5``
 
-粒子将在 :ref:`emission_points<class_CPUParticles2D_property_emission_points>` 中随机选择的位置发射。粒子的速度和旋转将基于 :ref:`emission_normals<class_CPUParticles2D_property_emission_normals>` 进行设置。粒子颜色将通过 :ref:`emission_colors<class_CPUParticles2D_property_emission_colors>` 进行调制。
+Particles will be emitted at a position chosen randomly among :ref:`emission_points<class_CPUParticles2D_property_emission_points>`. Particle velocity and rotation will be set based on :ref:`emission_normals<class_CPUParticles2D_property_emission_normals>`. Particle color will be modulated by :ref:`emission_colors<class_CPUParticles2D_property_emission_colors>`.
 
 .. _class_CPUParticles2D_constant_EMISSION_SHAPE_RING:
 
@@ -483,7 +483,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 
 :ref:`EmissionShape<enum_CPUParticles2D_EmissionShape>` **EMISSION_SHAPE_MAX** = ``7``
 
-代表 :ref:`EmissionShape<enum_CPUParticles2D_EmissionShape>` 枚举的大小。
+Represents the size of the :ref:`EmissionShape<enum_CPUParticles2D_EmissionShape>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -491,8 +491,8 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_CPUParticles2D_property_amount:
 
@@ -505,7 +505,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_amount**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_amount**\ (\ )
 
-单个发射周期内发射的粒子数。
+Number of particles emitted in one emission cycle.
 
 .. rst-class:: classref-item-separator
 
@@ -522,7 +522,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-每个粒子的旋转将沿着这个 :ref:`Curve<class_Curve>` 进行动画。应当为单位 :ref:`Curve<class_Curve>`\ 。
+Each particle's rotation will be animated along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
 
 .. rst-class:: classref-item-separator
 
@@ -539,7 +539,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-应用于每个粒子的最大初始旋转，单位：度。
+Maximum initial rotation applied to each particle, in degrees.
 
 .. rst-class:: classref-item-separator
 
@@ -556,7 +556,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-:ref:`angle_max<class_CPUParticles2D_property_angle_max>` 的对应最小值。
+Minimum equivalent of :ref:`angle_max<class_CPUParticles2D_property_angle_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -573,7 +573,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-每个粒子的角速度将沿着这条 :ref:`Curve<class_Curve>` 变化。应当为单位 :ref:`Curve<class_Curve>`\ 。
+Each particle's angular velocity will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
 
 .. rst-class:: classref-item-separator
 
@@ -590,7 +590,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-应用于每个粒子的最大初始角速度（旋转速度），单位：\ *度*\ 每秒。
+Maximum initial angular velocity (rotation speed) applied to each particle in *degrees* per second.
 
 .. rst-class:: classref-item-separator
 
@@ -607,7 +607,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-:ref:`angular_velocity_max<class_CPUParticles2D_property_angular_velocity_max>` 的对应最小值。
+Minimum equivalent of :ref:`angular_velocity_max<class_CPUParticles2D_property_angular_velocity_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -624,7 +624,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-每个粒子的动画偏移将沿着这个 :ref:`Curve<class_Curve>` 变化。应当为单位 :ref:`Curve<class_Curve>`\ 。
+Each particle's animation offset will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
 
 .. rst-class:: classref-item-separator
 
@@ -641,7 +641,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-与纹理中的帧索引相对应的最大动画偏移量。\ ``0`` 是第一帧，\ ``1`` 是最后一帧。参见 :ref:`CanvasItemMaterial.particles_animation<class_CanvasItemMaterial_property_particles_animation>`\ 。
+Maximum animation offset that corresponds to frame index in the texture. ``0`` is the first frame, ``1`` is the last one. See :ref:`CanvasItemMaterial.particles_animation<class_CanvasItemMaterial_property_particles_animation>`.
 
 .. rst-class:: classref-item-separator
 
@@ -658,7 +658,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-:ref:`anim_offset_max<class_CPUParticles2D_property_anim_offset_max>` 的对应最小值。
+Minimum equivalent of :ref:`anim_offset_max<class_CPUParticles2D_property_anim_offset_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -675,7 +675,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-每个粒子的动画速度将沿着这个 :ref:`Curve<class_Curve>` 变化。应当为单位 :ref:`Curve<class_Curve>`\ 。
+Each particle's animation speed will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
 
 .. rst-class:: classref-item-separator
 
@@ -692,9 +692,9 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-最大粒子动画速度。\ ``1`` 的动画速度是指粒子在生命周期内会做完整的 ``0`` 到 ``1`` 的偏移循环，\ ``2`` 则表示 ``2`` 个循环，如此等等。
+Maximum particle animation speed. Animation speed of ``1`` means that the particles will make full ``0`` to ``1`` offset cycle during lifetime, ``2`` means ``2`` cycles etc.
 
-当动画速度大于 ``1`` 时，如果希望动画重复，请记住启用 :ref:`CanvasItemMaterial.particles_anim_loop<class_CanvasItemMaterial_property_particles_anim_loop>` 属性。
+With animation speed greater than ``1``, remember to enable :ref:`CanvasItemMaterial.particles_anim_loop<class_CanvasItemMaterial_property_particles_anim_loop>` property if you want the animation to repeat.
 
 .. rst-class:: classref-item-separator
 
@@ -711,7 +711,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-:ref:`anim_speed_max<class_CPUParticles2D_property_anim_speed_max>` 的对应最小值。
+Minimum equivalent of :ref:`anim_speed_max<class_CPUParticles2D_property_anim_speed_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -728,7 +728,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_color**\ (\ )
 
-每个粒子的初始颜色。如果定义了 :ref:`texture<class_CPUParticles2D_property_texture>`\ ，它将乘以该颜色。
+Each particle's initial color. If :ref:`texture<class_CPUParticles2D_property_texture>` is defined, it will be multiplied by this color.
 
 .. rst-class:: classref-item-separator
 
@@ -745,7 +745,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_color_initial_ramp**\ (\ value\: :ref:`Gradient<class_Gradient>`\ )
 - :ref:`Gradient<class_Gradient>` **get_color_initial_ramp**\ (\ )
 
-每个粒子的初始颜色将沿着这个 :ref:`Gradient<class_Gradient>` 变化（与 :ref:`color<class_CPUParticles2D_property_color>` 相乘）。
+Each particle's initial color will vary along this :ref:`Gradient<class_Gradient>` (multiplied with :ref:`color<class_CPUParticles2D_property_color>`).
 
 .. rst-class:: classref-item-separator
 
@@ -762,7 +762,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_color_ramp**\ (\ value\: :ref:`Gradient<class_Gradient>`\ )
 - :ref:`Gradient<class_Gradient>` **get_color_ramp**\ (\ )
 
-每个粒子的颜色将在其生命周期中沿着这个 :ref:`Gradient<class_Gradient>` 变化（与 :ref:`color<class_CPUParticles2D_property_color>` 相乘）。
+Each particle's color will vary along this :ref:`Gradient<class_Gradient>` over its lifetime (multiplied with :ref:`color<class_CPUParticles2D_property_color>`).
 
 .. rst-class:: classref-item-separator
 
@@ -779,7 +779,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-阻尼将沿着这个 :ref:`Curve<class_Curve>` 变化。应当为单位 :ref:`Curve<class_Curve>`\ 。
+Damping will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
 
 .. rst-class:: classref-item-separator
 
@@ -796,7 +796,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-粒子失去速度的最大速率。例如 ``100`` 的值表示粒子将在 ``1`` 秒内，速度从 ``100`` 变为 ``0``\ 。
+The maximum rate at which particles lose velocity. For example value of ``100`` means that the particle will go from ``100`` velocity to ``0`` in ``1`` second.
 
 .. rst-class:: classref-item-separator
 
@@ -813,7 +813,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-:ref:`damping_max<class_CPUParticles2D_property_damping_max>` 的对应最小值。
+Minimum equivalent of :ref:`damping_max<class_CPUParticles2D_property_damping_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -830,7 +830,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_direction**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_direction**\ (\ )
 
-指定粒子发射方向的单位向量。
+Unit vector specifying the particles' emission direction.
 
 .. rst-class:: classref-item-separator
 
@@ -847,7 +847,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_draw_order**\ (\ value\: :ref:`DrawOrder<enum_CPUParticles2D_DrawOrder>`\ )
 - :ref:`DrawOrder<enum_CPUParticles2D_DrawOrder>` **get_draw_order**\ (\ )
 
-粒子绘制顺序。
+Particle draw order.
 
 .. rst-class:: classref-item-separator
 
@@ -864,7 +864,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_emission_colors**\ (\ value\: :ref:`PackedColorArray<class_PackedColorArray>`\ )
 - :ref:`PackedColorArray<class_PackedColorArray>` **get_emission_colors**\ (\ )
 
-设置使用 :ref:`EMISSION_SHAPE_POINTS<class_CPUParticles2D_constant_EMISSION_SHAPE_POINTS>` 或 :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_CPUParticles2D_constant_EMISSION_SHAPE_DIRECTED_POINTS>` 时对粒子进行调制的 :ref:`Color<class_Color>`\ 。
+Sets the :ref:`Color<class_Color>`\ s to modulate particles by when using :ref:`EMISSION_SHAPE_POINTS<class_CPUParticles2D_constant_EMISSION_SHAPE_POINTS>` or :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_CPUParticles2D_constant_EMISSION_SHAPE_DIRECTED_POINTS>`.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
@@ -883,7 +883,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_emission_normals**\ (\ value\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ )
 - :ref:`PackedVector2Array<class_PackedVector2Array>` **get_emission_normals**\ (\ )
 
-设置使用 :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_CPUParticles2D_constant_EMISSION_SHAPE_DIRECTED_POINTS>` 时粒子发射的方向。
+Sets the direction the particles will be emitted in when using :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_CPUParticles2D_constant_EMISSION_SHAPE_DIRECTED_POINTS>`.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
@@ -902,7 +902,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_emission_points**\ (\ value\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ )
 - :ref:`PackedVector2Array<class_PackedVector2Array>` **get_emission_points**\ (\ )
 
-设置使用 :ref:`EMISSION_SHAPE_POINTS<class_CPUParticles2D_constant_EMISSION_SHAPE_POINTS>` 或 :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_CPUParticles2D_constant_EMISSION_SHAPE_DIRECTED_POINTS>` 时出生粒子的初始位置。
+Sets the initial positions to spawn particles when using :ref:`EMISSION_SHAPE_POINTS<class_CPUParticles2D_constant_EMISSION_SHAPE_POINTS>` or :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_CPUParticles2D_constant_EMISSION_SHAPE_DIRECTED_POINTS>`.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
@@ -921,7 +921,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_emission_rect_extents**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_emission_rect_extents**\ (\ )
 
-:ref:`emission_shape<class_CPUParticles2D_property_emission_shape>` 被设置为 :ref:`EMISSION_SHAPE_RECTANGLE<class_CPUParticles2D_constant_EMISSION_SHAPE_RECTANGLE>` 时，该矩形的范围。
+The rectangle's extents if :ref:`emission_shape<class_CPUParticles2D_property_emission_shape>` is set to :ref:`EMISSION_SHAPE_RECTANGLE<class_CPUParticles2D_constant_EMISSION_SHAPE_RECTANGLE>`.
 
 .. rst-class:: classref-item-separator
 
@@ -972,7 +972,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_emission_shape**\ (\ value\: :ref:`EmissionShape<enum_CPUParticles2D_EmissionShape>`\ )
 - :ref:`EmissionShape<enum_CPUParticles2D_EmissionShape>` **get_emission_shape**\ (\ )
 
-粒子将在该区域内发射。
+Particles will be emitted inside this region.
 
 .. rst-class:: classref-item-separator
 
@@ -989,7 +989,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_emission_sphere_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_sphere_radius**\ (\ )
 
-:ref:`emission_shape<class_CPUParticles2D_property_emission_shape>` 被设置为 :ref:`EMISSION_SHAPE_SPHERE<class_CPUParticles2D_constant_EMISSION_SHAPE_SPHERE>` 时，该球体的半径。
+The sphere's radius if :ref:`emission_shape<class_CPUParticles2D_property_emission_shape>` is set to :ref:`EMISSION_SHAPE_SPHERE<class_CPUParticles2D_constant_EMISSION_SHAPE_SPHERE>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1006,7 +1006,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_emitting**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_emitting**\ (\ )
 
-如果为 ``true``\ ，则正在发射粒子。\ :ref:`emitting<class_CPUParticles2D_property_emitting>` 可用于启动和停止粒子发射。但是，如果 :ref:`one_shot<class_CPUParticles2D_property_one_shot>` 为 ``true``\ ，则将 :ref:`emitting<class_CPUParticles2D_property_emitting>` 设置为 ``true`` 将不会重新启动该发射循环，直到所有活动粒子完成处理为止。一旦所有活动粒子完成处理，你可以使用 :ref:`finished<class_CPUParticles2D_signal_finished>` 信号来收取通知。
+If ``true``, particles are being emitted. :ref:`emitting<class_CPUParticles2D_property_emitting>` can be used to start and stop particles from emitting. However, if :ref:`one_shot<class_CPUParticles2D_property_one_shot>` is ``true`` setting :ref:`emitting<class_CPUParticles2D_property_emitting>` to ``true`` will not restart the emission cycle until after all active particles finish processing. You can use the :ref:`finished<class_CPUParticles2D_signal_finished>` signal to be notified once all active particles finish processing.
 
 .. rst-class:: classref-item-separator
 
@@ -1023,7 +1023,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_explosiveness_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_explosiveness_ratio**\ (\ )
 
-粒子在单个发射周期中的发射有多急。如果大于 ``0``\ ，则在下一个发射周期开始之前，发射会出现一个间隔。
+How rapidly particles in an emission cycle are emitted. If greater than ``0``, there will be a gap in emissions before the next cycle begins.
 
 .. rst-class:: classref-item-separator
 
@@ -1040,7 +1040,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_fixed_fps**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_fixed_fps**\ (\ )
 
-粒子系统的帧速率被固定为一个值。例如，将值更改为 2 会使粒子以每秒 2 帧的速度渲染。请注意，这并不会降低粒子系统本身的模拟速度。
+The particle system's frame rate is fixed to a value. For example, changing the value to 2 will make the particles render at 2 frames per second. Note this does not slow down the simulation of the particle system itself.
 
 .. rst-class:: classref-item-separator
 
@@ -1057,7 +1057,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_fractional_delta**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_fractional_delta**\ (\ )
 
-如果为 ``为true``\ ，则使用分数增量 delta 计算，将具有更平滑的粒子显示效果。
+If ``true``, results in fractional delta calculation which has a smoother particles display effect.
 
 .. rst-class:: classref-item-separator
 
@@ -1074,7 +1074,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_gravity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_gravity**\ (\ )
 
-应用于每个粒子的重力。
+Gravity applied to every particle.
 
 .. rst-class:: classref-item-separator
 
@@ -1091,7 +1091,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-每个粒子的色相将沿着这个 :ref:`Curve<class_Curve>` 变化。应当为单位 :ref:`Curve<class_Curve>`\ 。
+Each particle's hue will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1108,7 +1108,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-应用于每个粒子的最大初始色相变化。会改变粒子颜色的色相。
+Maximum initial hue variation applied to each particle. It will shift the particle color's hue.
 
 .. rst-class:: classref-item-separator
 
@@ -1125,7 +1125,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-:ref:`hue_variation_max<class_CPUParticles2D_property_hue_variation_max>` 的对应最小值。
+Minimum equivalent of :ref:`hue_variation_max<class_CPUParticles2D_property_hue_variation_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1142,7 +1142,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-每个粒子的最大初始速度大小。方向来自 :ref:`direction<class_CPUParticles2D_property_direction>` 和 :ref:`spread<class_CPUParticles2D_property_spread>`\ 。
+Maximum initial velocity magnitude for each particle. Direction comes from :ref:`direction<class_CPUParticles2D_property_direction>` and :ref:`spread<class_CPUParticles2D_property_spread>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1159,7 +1159,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-:ref:`initial_velocity_max<class_CPUParticles2D_property_initial_velocity_max>` 的对应最小值。
+Minimum equivalent of :ref:`initial_velocity_max<class_CPUParticles2D_property_initial_velocity_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1176,7 +1176,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_lifetime**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_lifetime**\ (\ )
 
-每个粒子存在的时间。
+Amount of time each particle will exist.
 
 .. rst-class:: classref-item-separator
 
@@ -1193,7 +1193,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_lifetime_randomness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_lifetime_randomness**\ (\ )
 
-粒子寿命随机率。
+Particle lifetime randomness ratio.
 
 .. rst-class:: classref-item-separator
 
@@ -1210,7 +1210,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-每个粒子的线性加速度将沿着这个 :ref:`Curve<class_Curve>` 变化。应当为单位 :ref:`Curve<class_Curve>`\ 。
+Each particle's linear acceleration will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1227,7 +1227,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-在运动方向上应用于每个粒子的最大线性加速度。
+Maximum linear acceleration applied to each particle in the direction of motion.
 
 .. rst-class:: classref-item-separator
 
@@ -1244,7 +1244,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-:ref:`linear_accel_max<class_CPUParticles2D_property_linear_accel_max>` 的对应最小值。
+Minimum equivalent of :ref:`linear_accel_max<class_CPUParticles2D_property_linear_accel_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1261,7 +1261,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_use_local_coordinates**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_local_coordinates**\ (\ )
 
-如果为 ``true``\ ，粒子使用父节点的坐标空间（称为局部坐标）。这将导致粒子在移动或旋转时，沿着 **CPUParticles2D** 节点（及其父节点）移动和旋转。如果为 ``false``\ ，则粒子使用全局坐标；当移动或旋转时，它们不会沿着 **CPUParticles2D** 节点（及其父节点）移动或旋转。
+If ``true``, particles use the parent node's coordinate space (known as local coordinates). This will cause particles to move and rotate along the **CPUParticles2D** node (and its parents) when it is moved or rotated. If ``false``, particles use global coordinates; they will not move or rotate along the **CPUParticles2D** node (and its parents) when it is moved or rotated.
 
 .. rst-class:: classref-item-separator
 
@@ -1278,7 +1278,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_one_shot**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_one_shot**\ (\ )
 
-如果为 ``true``\ ，则只发生一个发射周期。如果在某个周期内设置为 ``true``\ ，则发射将在该周期结束时停止。
+If ``true``, only one emission cycle occurs. If set ``true`` during a cycle, emission will stop at the cycle's end.
 
 .. rst-class:: classref-item-separator
 
@@ -1295,7 +1295,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-每个粒子的轨道速度将沿着这个 :ref:`Curve<class_Curve>` 变化。应当为单位 :ref:`Curve<class_Curve>`\ 。
+Each particle's orbital velocity will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1312,7 +1312,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-应用于每个粒子的最大轨道速度。使粒子围绕原点旋转。以每秒围绕原点的完整旋转数指定。
+Maximum orbital velocity applied to each particle. Makes the particles circle around origin. Specified in number of full rotations around origin per second.
 
 .. rst-class:: classref-item-separator
 
@@ -1329,7 +1329,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-:ref:`orbit_velocity_max<class_CPUParticles2D_property_orbit_velocity_max>` 的对应最小值。
+Minimum equivalent of :ref:`orbit_velocity_max<class_CPUParticles2D_property_orbit_velocity_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1346,7 +1346,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_CPUParticles2D_ParticleFlags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_CPUParticles2D_ParticleFlags>`\ ) |const|
 
-将粒子的 Y 轴与其速度方向对齐。
+Align Y axis of particle with the direction of its velocity.
 
 .. rst-class:: classref-item-separator
 
@@ -1363,7 +1363,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_pre_process_time**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pre_process_time**\ (\ )
 
-粒子系统启动时就好像已经运行了这么多秒一样。
+Particle system starts as if it had already run for this many seconds.
 
 .. rst-class:: classref-item-separator
 
@@ -1380,7 +1380,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-每个粒子的径向加速度将沿着这个 :ref:`Curve<class_Curve>` 变化。应当为单位 :ref:`Curve<class_Curve>`\ 。
+Each particle's radial acceleration will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1397,7 +1397,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-应用于每个粒子的最大径向加速度。使粒子加速远离原点；或如果为负，则加速靠近原点。
+Maximum radial acceleration applied to each particle. Makes particle accelerate away from the origin or towards it if negative.
 
 .. rst-class:: classref-item-separator
 
@@ -1414,7 +1414,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-:ref:`radial_accel_max<class_CPUParticles2D_property_radial_accel_max>` 的对应最小值。
+Minimum equivalent of :ref:`radial_accel_max<class_CPUParticles2D_property_radial_accel_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1431,7 +1431,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_randomness_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_randomness_ratio**\ (\ )
 
-发射寿命随机率。
+Emission lifetime randomness ratio.
 
 .. rst-class:: classref-item-separator
 
@@ -1448,7 +1448,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-每个粒子的缩放将沿着这个 :ref:`Curve<class_Curve>` 变化。应当为单位 :ref:`Curve<class_Curve>`\ 。
+Each particle's scale will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1465,7 +1465,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-应用于每个粒子的最大初始缩放。
+Maximum initial scale applied to each particle.
 
 .. rst-class:: classref-item-separator
 
@@ -1482,7 +1482,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-:ref:`scale_amount_max<class_CPUParticles2D_property_scale_amount_max>` 的对应最小值。
+Minimum equivalent of :ref:`scale_amount_max<class_CPUParticles2D_property_scale_amount_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1499,9 +1499,9 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_scale_curve_x**\ (\ value\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_scale_curve_x**\ (\ )
 
-每个粒子的水平缩放将沿着这个 :ref:`Curve<class_Curve>` 变化。应当为单位 :ref:`Curve<class_Curve>`\ 。
+Each particle's horizontal scale will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
 
-必须启用 :ref:`split_scale<class_CPUParticles2D_property_split_scale>`\ 。
+\ :ref:`split_scale<class_CPUParticles2D_property_split_scale>` must be enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -1518,9 +1518,9 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_scale_curve_y**\ (\ value\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_scale_curve_y**\ (\ )
 
-每个粒子的垂直缩放将沿着这个 :ref:`Curve<class_Curve>` 变化。应当为单位 :ref:`Curve<class_Curve>`\ 。
+Each particle's vertical scale will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
 
-必须启用 :ref:`split_scale<class_CPUParticles2D_property_split_scale>`\ 。
+\ :ref:`split_scale<class_CPUParticles2D_property_split_scale>` must be enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -1537,7 +1537,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_seed**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_seed**\ (\ )
 
-设置粒子系统所使用的随机数种子。仅在 :ref:`use_fixed_seed<class_CPUParticles2D_property_use_fixed_seed>` 为 ``true`` 时有效。
+Sets the random seed used by the particle system. Only effective if :ref:`use_fixed_seed<class_CPUParticles2D_property_use_fixed_seed>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -1554,7 +1554,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_speed_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_speed_scale**\ (\ )
 
-粒子系统的运行速度的缩放率。\ ``0`` 值可用于暂停粒子。
+Particle system's running speed scaling ratio. A value of ``0`` can be used to pause the particles.
 
 .. rst-class:: classref-item-separator
 
@@ -1571,7 +1571,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_split_scale**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_split_scale**\ (\ )
 
-如果为 ``true``\ ，缩放曲线将被拆分成 x 和 y 分量。见 :ref:`scale_curve_x<class_CPUParticles2D_property_scale_curve_x>` 和 :ref:`scale_curve_y<class_CPUParticles2D_property_scale_curve_y>`\ 。
+If ``true``, the scale curve will be split into x and y components. See :ref:`scale_curve_x<class_CPUParticles2D_property_scale_curve_x>` and :ref:`scale_curve_y<class_CPUParticles2D_property_scale_curve_y>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1588,7 +1588,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_spread**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_spread**\ (\ )
 
-每个粒子的初始方向范围，从 ``+spread`` 度到 ``-spread`` 度。
+Each particle's initial direction range from ``+spread`` to ``-spread`` degrees.
 
 .. rst-class:: classref-item-separator
 
@@ -1605,7 +1605,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-每个粒子的切向加速度将沿着这个 :ref:`Curve<class_Curve>` 变化。应当为单位 :ref:`Curve<class_Curve>`\ 。
+Each particle's tangential acceleration will vary along this :ref:`Curve<class_Curve>`. Should be a unit :ref:`Curve<class_Curve>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1622,7 +1622,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-应用于每个粒子的最大切向加速度。切向加速度垂直于粒子的速度，从而使粒子产生涡旋运动。
+Maximum tangential acceleration applied to each particle. Tangential acceleration is perpendicular to the particle's velocity giving the particles a swirling motion.
 
 .. rst-class:: classref-item-separator
 
@@ -1639,7 +1639,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const|
 
-:ref:`tangential_accel_max<class_CPUParticles2D_property_tangential_accel_max>` 的对应最小值。
+Minimum equivalent of :ref:`tangential_accel_max<class_CPUParticles2D_property_tangential_accel_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1656,7 +1656,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ )
 
-粒子纹理。如果为 ``null``\ ，则粒子将为正方形。
+Particle texture. If ``null``, particles will be squares.
 
 .. rst-class:: classref-item-separator
 
@@ -1673,7 +1673,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_use_fixed_seed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_fixed_seed**\ (\ )
 
-如果为 ``true``\ ，则每次模拟中粒子会使用 :ref:`seed<class_CPUParticles2D_property_seed>` 中定义的种子。适用于需要在重放时保持视觉效果一致的情况，例如使用 Movie Maker 模式时。
+If ``true``, particles will use the same seed for every simulation using the seed defined in :ref:`seed<class_CPUParticles2D_property_seed>`. This is useful for situations where the visual outcome should be consistent across replays, for example when using Movie Maker mode.
 
 .. rst-class:: classref-section-separator
 
@@ -1681,8 +1681,8 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_CPUParticles2D_method_convert_from_particles:
 
@@ -1690,7 +1690,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 
 |void| **convert_from_particles**\ (\ particles\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_CPUParticles2D_method_convert_from_particles>`
 
-设置该节点的属性以匹配给定的 :ref:`GPUParticles2D<class_GPUParticles2D>` 节点，该给定节点已分配了一个 :ref:`ParticleProcessMaterial<class_ParticleProcessMaterial>`\ 。
+Sets this node's properties to match a given :ref:`GPUParticles2D<class_GPUParticles2D>` node with an assigned :ref:`ParticleProcessMaterial<class_ParticleProcessMaterial>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1702,7 +1702,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 
 :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const| :ref:`🔗<class_CPUParticles2D_method_get_param_curve>`
 
-返回由 :ref:`Parameter<enum_CPUParticles2D_Parameter>` 指定的参数的 :ref:`Curve<class_Curve>`\ 。
+Returns the :ref:`Curve<class_Curve>` of the parameter specified by :ref:`Parameter<enum_CPUParticles2D_Parameter>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1714,7 +1714,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 
 :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const| :ref:`🔗<class_CPUParticles2D_method_get_param_max>`
 
-返回给定参数的最大值范围。
+Returns the maximum value range for the given parameter.
 
 .. rst-class:: classref-item-separator
 
@@ -1726,7 +1726,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 
 :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`\ ) |const| :ref:`🔗<class_CPUParticles2D_method_get_param_min>`
 
-返回给定参数的最小值范围。
+Returns the minimum value range for the given parameter.
 
 .. rst-class:: classref-item-separator
 
@@ -1738,7 +1738,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 
 :ref:`bool<class_bool>` **get_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_CPUParticles2D_ParticleFlags>`\ ) |const| :ref:`🔗<class_CPUParticles2D_method_get_particle_flag>`
 
-返回给定粒子标志的启用状态。
+Returns the enabled state of the given particle flag.
 
 .. rst-class:: classref-item-separator
 
@@ -1750,9 +1750,9 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 
 |void| **request_particles_process**\ (\ process_time\: :ref:`float<class_float>`\ ) :ref:`🔗<class_CPUParticles2D_method_request_particles_process>`
 
-请求让粒子在一帧中使用额外的处理时间进行处理。
+Requests the particles to process for extra process time during a single frame.
 
-适用于粒子回放，需要与 :ref:`use_fixed_seed<class_CPUParticles2D_property_use_fixed_seed>` 配合使用，或者调用 :ref:`restart()<class_CPUParticles2D_method_restart>` 时将 ``keep_seed`` 参数设为 ``true``\ 。
+Useful for particle playback, if used in combination with :ref:`use_fixed_seed<class_CPUParticles2D_property_use_fixed_seed>` or by calling :ref:`restart()<class_CPUParticles2D_method_restart>` with parameter ``keep_seed`` set to ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -1764,9 +1764,9 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 
 |void| **restart**\ (\ keep_seed\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CPUParticles2D_method_restart>`
 
-重启粒子发射器。
+Restarts the particle emitter.
 
-如果 ``keep_seed`` 为 ``true``\ ，则会保留当前的随机数种子。适用于跳转和播放。
+If ``keep_seed`` is ``true``, the current random seed will be preserved. Useful for seeking and playback.
 
 .. rst-class:: classref-item-separator
 
@@ -1778,7 +1778,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 
 |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ ) :ref:`🔗<class_CPUParticles2D_method_set_param_curve>`
 
-设置 :ref:`Parameter<enum_CPUParticles2D_Parameter>` 指定的参数的 :ref:`Curve<class_Curve>`\ 。应当为单位 :ref:`Curve<class_Curve>`\ 。
+Sets the :ref:`Curve<class_Curve>` of the parameter specified by :ref:`Parameter<enum_CPUParticles2D_Parameter>`. Should be a unit :ref:`Curve<class_Curve>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1790,7 +1790,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 
 |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_CPUParticles2D_method_set_param_max>`
 
-设置给定参数的最大值。
+Sets the maximum value for the given parameter.
 
 .. rst-class:: classref-item-separator
 
@@ -1802,7 +1802,7 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 
 |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_CPUParticles2D_Parameter>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_CPUParticles2D_method_set_param_min>`
 
-设置给定参数的最小值。
+Sets the minimum value for the given parameter.
 
 .. rst-class:: classref-item-separator
 
@@ -1814,14 +1814,14 @@ The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 
 |void| **set_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_CPUParticles2D_ParticleFlags>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CPUParticles2D_method_set_particle_flag>`
 
-启用或禁用给定的粒子标志。
+Enables or disables the given particle flag.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

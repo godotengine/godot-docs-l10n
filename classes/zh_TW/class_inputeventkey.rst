@@ -5,32 +5,32 @@
 InputEventKey
 =============
 
-**繼承：** :ref:`InputEventWithModifiers<class_InputEventWithModifiers>` **<** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`InputEventWithModifiers<class_InputEventWithModifiers>` **<** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-代表鍵盤上的某個按鍵被按下或鬆開。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-鍵盤上的按鍵操作對應的輸入事件。支援按鍵按下、釋放和 :ref:`echo<class_InputEventKey_property_echo>` 事件。還可以在 :ref:`Node._unhandled_key_input()<class_Node_private_method__unhandled_key_input>` 收到。
-
-\ **注意：**\ 從鍵盤上接收的事件通常設定了所有屬性。事件對應應該只設定 :ref:`keycode<class_InputEventKey_property_keycode>`\ 、\ :ref:`physical_keycode<class_InputEventKey_property_physical_keycode>`\ 、\ :ref:`unicode<class_InputEventKey_property_unicode>` 的其中之一。
-
-比較事件時，將按以下優先順序檢查屬性——\ :ref:`keycode<class_InputEventKey_property_keycode>`\ 、\ :ref:`physical_keycode<class_InputEventKey_property_physical_keycode>`\ 、\ :ref:`unicode<class_InputEventKey_property_unicode>`\ 。有一個配對就會認為事件相等。
+Represents a key on a keyboard being pressed or released.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`使用 InputEvent <../tutorials/inputs/inputevent>`
+An input event for keys on a keyboard. Supports key presses, key releases and :ref:`echo<class_InputEventKey_property_echo>` events. It can also be received in :ref:`Node._unhandled_key_input()<class_Node_private_method__unhandled_key_input>`.
+
+\ **Note:** Events received from the keyboard usually have all properties set. Event mappings should have only one of the :ref:`keycode<class_InputEventKey_property_keycode>`, :ref:`physical_keycode<class_InputEventKey_property_physical_keycode>` or :ref:`unicode<class_InputEventKey_property_unicode>` set.
+
+When events are compared, properties are checked in the following priority - :ref:`keycode<class_InputEventKey_property_keycode>`, :ref:`physical_keycode<class_InputEventKey_property_physical_keycode>` and :ref:`unicode<class_InputEventKey_property_unicode>`. Events with the first matching value will be considered equal.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Using InputEvent <../tutorials/inputs/inputevent>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ InputEventKey
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -81,8 +81,8 @@ InputEventKey
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_InputEventKey_property_echo:
 
@@ -231,7 +231,7 @@ To get a human-readable representation of the **InputEventKey**, use :ref:`OS.ge
 - |void| **set_pressed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_pressed**\ (\ )
 
-如果為 ``true``\ ，按鍵的狀態是被按下。如果為 ``false``\ ，該鍵的狀態被釋放。
+If ``true``, the key's state is pressed. If ``false``, the key's state is released.
 
 .. rst-class:: classref-item-separator
 
@@ -258,8 +258,8 @@ The key Unicode character code (when relevant), shifted by modifier keys. Unicod
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_InputEventKey_method_as_text_key_label:
 
@@ -267,7 +267,7 @@ The key Unicode character code (when relevant), shifted by modifier keys. Unicod
 
 :ref:`String<class_String>` **as_text_key_label**\ (\ ) |const| :ref:`🔗<class_InputEventKey_method_as_text_key_label>`
 
-返回該事件 :ref:`key_label<class_InputEventKey_property_key_label>` 及修飾鍵的 :ref:`String<class_String>` 字串表示。
+Returns a :ref:`String<class_String>` representation of the event's :ref:`key_label<class_InputEventKey_property_key_label>` and modifiers.
 
 .. rst-class:: classref-item-separator
 
@@ -279,7 +279,7 @@ The key Unicode character code (when relevant), shifted by modifier keys. Unicod
 
 :ref:`String<class_String>` **as_text_keycode**\ (\ ) |const| :ref:`🔗<class_InputEventKey_method_as_text_keycode>`
 
-返回該事件 :ref:`keycode<class_InputEventKey_property_keycode>` 及修飾鍵的 :ref:`String<class_String>` 字串表示。
+Returns a :ref:`String<class_String>` representation of the event's :ref:`keycode<class_InputEventKey_property_keycode>` and modifiers.
 
 .. rst-class:: classref-item-separator
 
@@ -303,7 +303,7 @@ Returns a :ref:`String<class_String>` representation of the event's :ref:`locati
 
 :ref:`String<class_String>` **as_text_physical_keycode**\ (\ ) |const| :ref:`🔗<class_InputEventKey_method_as_text_physical_keycode>`
 
-返回該事件 :ref:`physical_keycode<class_InputEventKey_property_physical_keycode>` 及修飾鍵的 :ref:`String<class_String>` 字串表示。
+Returns a :ref:`String<class_String>` representation of the event's :ref:`physical_keycode<class_InputEventKey_property_physical_keycode>` and modifiers.
 
 .. rst-class:: classref-item-separator
 
@@ -315,9 +315,9 @@ Returns a :ref:`String<class_String>` representation of the event's :ref:`locati
 
 :ref:`Key<enum_@GlobalScope_Key>` **get_key_label_with_modifiers**\ (\ ) |const| :ref:`🔗<class_InputEventKey_method_get_key_label_with_modifiers>`
 
-返回與修飾鍵，例如 :kbd:`Shift` 或 :kbd:`Alt` 組合的當地語系化鍵標籤。另見 :ref:`InputEventWithModifiers<class_InputEventWithModifiers>`\ 。
+Returns the localized key label combined with modifier keys such as :kbd:`Shift` or :kbd:`Alt`. See also :ref:`InputEventWithModifiers<class_InputEventWithModifiers>`.
 
-要獲得帶有修飾鍵的 **InputEventKey** 的人類可讀表示，請使用 ``OS.get_keycode_string(event.get_key_label_with_modifiers())``\ ，其中 ``event`` 是 **InputEventKey**\ 。
+To get a human-readable representation of the **InputEventKey** with modifiers, use ``OS.get_keycode_string(event.get_key_label_with_modifiers())`` where ``event`` is the **InputEventKey**.
 
 .. rst-class:: classref-item-separator
 
@@ -329,9 +329,9 @@ Returns a :ref:`String<class_String>` representation of the event's :ref:`locati
 
 :ref:`Key<enum_@GlobalScope_Key>` **get_keycode_with_modifiers**\ (\ ) |const| :ref:`🔗<class_InputEventKey_method_get_keycode_with_modifiers>`
 
-返回與 :kbd:`Shift` 或 :kbd:`Alt` 等修飾鍵組合的拉丁鍵碼。另見 :ref:`InputEventWithModifiers<class_InputEventWithModifiers>`\ 。
+Returns the Latin keycode combined with modifier keys such as :kbd:`Shift` or :kbd:`Alt`. See also :ref:`InputEventWithModifiers<class_InputEventWithModifiers>`.
 
-要獲得帶有修飾鍵的 **InputEventKey** 的人類可讀表示，請使用 ``OS.get_keycode_string(event.get_keycode_with_modifiers())``\ ，其中 ``event`` 是 **InputEventKey**\ 。
+To get a human-readable representation of the **InputEventKey** with modifiers, use ``OS.get_keycode_string(event.get_keycode_with_modifiers())`` where ``event`` is the **InputEventKey**.
 
 .. rst-class:: classref-item-separator
 
@@ -343,16 +343,16 @@ Returns a :ref:`String<class_String>` representation of the event's :ref:`locati
 
 :ref:`Key<enum_@GlobalScope_Key>` **get_physical_keycode_with_modifiers**\ (\ ) |const| :ref:`🔗<class_InputEventKey_method_get_physical_keycode_with_modifiers>`
 
-返回與諸如 :kbd:`Shift` 或 :kbd:`Alt` 的修飾鍵組合的物理鍵碼。另請參閱 :ref:`InputEventWithModifiers<class_InputEventWithModifiers>`\ 。
+Returns the physical keycode combined with modifier keys such as :kbd:`Shift` or :kbd:`Alt`. See also :ref:`InputEventWithModifiers<class_InputEventWithModifiers>`.
 
-要獲得帶有修飾符的 **InputEventKey** 的人類可讀表示，請使用 ``OS.get_keycode_string(event.get_physical_keycode_with_modifiers())``\ ，其中 ``event`` 是 **InputEventKey**\ 。
+To get a human-readable representation of the **InputEventKey** with modifiers, use ``OS.get_keycode_string(event.get_physical_keycode_with_modifiers())`` where ``event`` is the **InputEventKey**.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

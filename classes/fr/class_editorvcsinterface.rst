@@ -255,7 +255,7 @@ Creates a new remote destination with name ``remote_name`` and points it to ``re
 
 |void| **_discard_file**\ (\ file_path\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__discard_file>`
 
-Discards the changes made in a file present at ``file_path``.
+Ignore les modifications faites dans le fichier à l'emplacement ``file_path``.
 
 .. rst-class:: classref-item-separator
 
@@ -483,7 +483,7 @@ Unstages the file present at ``file_path`` from the staged area to the unstaged 
 
 :ref:`Dictionary<class_Dictionary>` **add_diff_hunks_into_diff_file**\ (\ diff_file\: :ref:`Dictionary<class_Dictionary>`, diff_hunks\: :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\]\ ) :ref:`🔗<class_EditorVCSInterface_method_add_diff_hunks_into_diff_file>`
 
-Helper function to add an array of ``diff_hunks`` into a ``diff_file``.
+Assistant de fonction pour ajouter un tableau de ``diff_hunks`` dans un ``diff_file``.
 
 .. rst-class:: classref-item-separator
 
@@ -495,7 +495,7 @@ Helper function to add an array of ``diff_hunks`` into a ``diff_file``.
 
 :ref:`Dictionary<class_Dictionary>` **add_line_diffs_into_diff_hunk**\ (\ diff_hunk\: :ref:`Dictionary<class_Dictionary>`, line_diffs\: :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\]\ ) :ref:`🔗<class_EditorVCSInterface_method_add_line_diffs_into_diff_hunk>`
 
-Helper function to add an array of ``line_diffs`` into a ``diff_hunk``.
+Assistant de fonction pour ajouter un tableau de ``line_diffs`` dans un ``diff_hunk``.
 
 .. rst-class:: classref-item-separator
 
@@ -507,7 +507,7 @@ Helper function to add an array of ``line_diffs`` into a ``diff_hunk``.
 
 :ref:`Dictionary<class_Dictionary>` **create_commit**\ (\ msg\: :ref:`String<class_String>`, author\: :ref:`String<class_String>`, id\: :ref:`String<class_String>`, unix_timestamp\: :ref:`int<class_int>`, offset_minutes\: :ref:`int<class_int>`\ ) :ref:`🔗<class_EditorVCSInterface_method_create_commit>`
 
-Helper function to create a commit :ref:`Dictionary<class_Dictionary>` item. ``msg`` is the commit message of the commit. ``author`` is a single human-readable string containing all the author's details, e.g. the email and name configured in the VCS. ``id`` is the identifier of the commit, in whichever format your VCS may provide an identifier to commits. ``unix_timestamp`` is the UTC Unix timestamp of when the commit was created. ``offset_minutes`` is the timezone offset in minutes, recorded from the system timezone where the commit was created.
+Une fonction d'aide pour créer un :ref:`Dictionary<class_Dictionary>` des données d'un commit. ``msg`` est le message de commit. ``author`` est une simple chaîne intelligible contenant tous les détails de l'auteur, par exemple son e-mail et le nom comme configurés dans le VCS. ``id`` est le code de hachage du commit, dans le format préféré de votre VCS pour fournir un identifiant unique pour chaque commit. ``unix_timestamp`` est l'horodatage Unix basé sur UTC de la date de création de la commit. ``offset_minutes`` est le décalage horaire par rapport à UTC, en minutes, enregistré depuis la zone horaire du système lors de la création du commit.
 
 .. rst-class:: classref-item-separator
 

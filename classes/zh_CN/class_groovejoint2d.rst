@@ -5,21 +5,21 @@
 GrooveJoint2D
 =============
 
-**继承：** :ref:`Joint2D<class_Joint2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Joint2D<class_Joint2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-将两个物理体的运动限制在某个固定轴上的物理关节。
+A physics joint that restricts the movement of two 2D physics bodies to a fixed axis.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-将两个物理体的运动限制在某个固定轴上的物理关节。例如代表活塞基底的 :ref:`StaticBody2D<class_StaticBody2D>` 可以附加至代表能够上下移动的活塞头的 :ref:`RigidBody2D<class_RigidBody2D>` 之上。
+A physics joint that restricts the movement of two 2D physics bodies to a fixed axis. For example, a :ref:`StaticBody2D<class_StaticBody2D>` representing a piston base can be attached to a :ref:`RigidBody2D<class_RigidBody2D>` representing the piston head, moving up and down.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ GrooveJoint2D
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_GrooveJoint2D_property_initial_offset:
 
@@ -50,7 +50,7 @@ GrooveJoint2D
 - |void| **set_initial_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_initial_offset**\ (\ )
 
-这个物体B的初始锚点位置，由关键的原点和沿关节Y轴（沿着沟槽）的局部偏移 :ref:`initial_offset<class_GrooveJoint2D_property_initial_offset>` 定义。
+The body B's initial anchor position defined by the joint's origin and a local offset :ref:`initial_offset<class_GrooveJoint2D_property_initial_offset>` along the joint's Y axis (along the groove).
 
 .. rst-class:: classref-item-separator
 
@@ -67,14 +67,14 @@ GrooveJoint2D
 - |void| **set_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_length**\ (\ )
 
-沟槽的长度。沟槽是从关键原点沿着关节局部 Y 轴朝向 :ref:`length<class_GrooveJoint2D_property_length>` 。
+The groove's length. The groove is from the joint's origin towards :ref:`length<class_GrooveJoint2D_property_length>` along the joint's local Y axis.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

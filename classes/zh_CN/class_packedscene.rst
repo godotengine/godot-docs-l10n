@@ -5,92 +5,92 @@
 PackedScene
 ===========
 
-**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-对序列化场景的抽象。
+An abstraction of a serialized scene.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-场景文件的简化接口。提供可以对场景资源本身进行的操作和检查。
+A simplified interface to a scene file. Provides access to operations and checks that can be performed on the scene resource itself.
 
-可以用来将某个节点保存到文件中。保存时，会将该节点和它所拥有的所有节点一起保存（见 :ref:`Node.owner<class_Node_property_owner>` 属性）。
+Can be used to save a node to a file. When saving, the node as well as all the nodes it owns get saved (see :ref:`Node.owner<class_Node_property_owner>` property).
 
-\ **注意：**\ 该节点不必自我拥有。
+\ **Note:** The node doesn't need to own itself.
 
-\ **示例：**\ 加载已保存的场景：
+\ **Example:** Load a saved scene:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # 如果路径在编译期不可知，请使用 load() 而不是 preload()。
+    # Use load() instead of preload() if the path isn't known at compile-time.
     var scene = preload("res://scene.tscn").instantiate()
-    # 将该节点添加为脚本附加节点的子节点。
+    # Add the node as a child of the node the script is attached to.
     add_child(scene)
 
  .. code-tab:: csharp
 
-    // C# 没有 preload，所以你使用的永远是 ResourceLoader.Load<PackedScene>()。
+    // C# has no preload, so you have to always use ResourceLoader.Load<PackedScene>().
     var scene = ResourceLoader.Load<PackedScene>("res://scene.tscn").Instantiate();
-    // 将该节点添加为脚本附加节点的子节点。
+    // Add the node as a child of the node the script is attached to.
     AddChild(scene);
 
 
 
-\ **示例：**\ 保存不同所有者的节点。下面的例子会创建 3 个对象：\ :ref:`Node2D<class_Node2D>`\ （\ ``node``\ ）、\ :ref:`RigidBody2D<class_RigidBody2D>`\ （\ ``body``\ ）、\ :ref:`CollisionObject2D<class_CollisionObject2D>`\ （\ ``collision``)）。\ ``node`` 的下一级是 ``body``\ ，再下一级是 ``collision``\ 。只有 ``body`` 被 ``node`` 拥有，因此 :ref:`pack()<class_PackedScene_method_pack>` 只会保存两个节点，不会保存 ``collision``\ 。
+\ **Example:** Save a node with different owners. The following example creates 3 objects: :ref:`Node2D<class_Node2D>` (``node``), :ref:`RigidBody2D<class_RigidBody2D>` (``body``) and :ref:`CollisionObject2D<class_CollisionObject2D>` (``collision``). ``collision`` is a child of ``body`` which is a child of ``node``. Only ``body`` is owned by ``node`` and :ref:`pack()<class_PackedScene_method_pack>` will therefore only save those two nodes, but not ``collision``.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # 创建对象。
+    # Create the objects.
     var node = Node2D.new()
     var body = RigidBody2D.new()
     var collision = CollisionShape2D.new()
 
-    # 创建对象架构。
+    # Create the object hierarchy.
     body.add_child(collision)
     node.add_child(body)
 
-    # 修改 `body` 的拥有者，但不修改 `collision` 的拥有者。
+    # Change owner of `body`, but not of `collision`.
     body.owner = node
     var scene = PackedScene.new()
 
-    # 只会打包 `node` 和 `body`。
+    # Only `node` and `body` are now packed.
     var result = scene.pack(node)
     if result == OK:
         var error = ResourceSaver.save(scene, "res://path/name.tscn")  # Or "user://..."
         if error != OK:
-            push_error("将场景保存到磁盘时出错。")
+            push_error("An error occurred while saving the scene to disk.")
 
  .. code-tab:: csharp
 
-    // 创建对象。
+    // Create the objects.
     var node = new Node2D();
     var body = new RigidBody2D();
     var collision = new CollisionShape2D();
 
-    // 创建对象架构。
+    // Create the object hierarchy.
     body.AddChild(collision);
     node.AddChild(body);
 
-    // 修改 `body` 的拥有者，但不修改 `collision` 的拥有者。
+    // Change owner of `body`, but not of `collision`.
     body.Owner = node;
     var scene = new PackedScene();
 
-    // 只会打包 `node` 和 `body`。
+    // Only `node` and `body` are now packed.
     Error result = scene.Pack(node);
     if (result == Error.Ok)
     {
         Error error = ResourceSaver.Save(scene, "res://path/name.tscn"); // Or "user://..."
         if (error != Error.Ok)
         {
-            GD.PushError("将场景保存到磁盘时出错。");
+            GD.PushError("An error occurred while saving the scene to disk.");
         }
     }
 
@@ -98,15 +98,15 @@ PackedScene
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
-- `2D 角色扮演游戏（RPG）演示 <https://godotengine.org/asset-library/asset/2729>`__
+- `2D Role Playing Game (RPG) Demo <https://godotengine.org/asset-library/asset/2729>`__
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -127,8 +127,8 @@ PackedScene
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_PackedScene_GenEditState:
 
@@ -142,7 +142,7 @@ enum **GenEditState**: :ref:`🔗<enum_PackedScene_GenEditState>`
 
 :ref:`GenEditState<enum_PackedScene_GenEditState>` **GEN_EDIT_STATE_DISABLED** = ``0``
 
-如果传递给 :ref:`instantiate()<class_PackedScene_method_instantiate>`\ ，则会阻止对场景状态的编辑。
+If passed to :ref:`instantiate()<class_PackedScene_method_instantiate>`, blocks edits to the scene state.
 
 .. _class_PackedScene_constant_GEN_EDIT_STATE_INSTANCE:
 
@@ -150,9 +150,9 @@ enum **GenEditState**: :ref:`🔗<enum_PackedScene_GenEditState>`
 
 :ref:`GenEditState<enum_PackedScene_GenEditState>` **GEN_EDIT_STATE_INSTANCE** = ``1``
 
-如果传递给 :ref:`instantiate()<class_PackedScene_method_instantiate>`\ ，则会向本地场景提供本地场景资源。
+If passed to :ref:`instantiate()<class_PackedScene_method_instantiate>`, provides local scene resources to the local scene.
 
-\ **注意：**\ 仅在编辑器构建中可用。
+\ **Note:** Only available in editor builds.
 
 .. _class_PackedScene_constant_GEN_EDIT_STATE_MAIN:
 
@@ -160,9 +160,9 @@ enum **GenEditState**: :ref:`🔗<enum_PackedScene_GenEditState>`
 
 :ref:`GenEditState<enum_PackedScene_GenEditState>` **GEN_EDIT_STATE_MAIN** = ``2``
 
-如果传递给 :ref:`instantiate()<class_PackedScene_method_instantiate>`\ ，则会向本地场景提供本地场景资源。只有主场景应该接收主编辑状态。
+If passed to :ref:`instantiate()<class_PackedScene_method_instantiate>`, provides local scene resources to the local scene. Only the main scene should receive the main edit state.
 
-\ **注意：**\ 仅在编辑器构建中可用。
+\ **Note:** Only available in editor builds.
 
 .. _class_PackedScene_constant_GEN_EDIT_STATE_MAIN_INHERITED:
 
@@ -170,9 +170,9 @@ enum **GenEditState**: :ref:`🔗<enum_PackedScene_GenEditState>`
 
 :ref:`GenEditState<enum_PackedScene_GenEditState>` **GEN_EDIT_STATE_MAIN_INHERITED** = ``3``
 
-与 :ref:`GEN_EDIT_STATE_MAIN<class_PackedScene_constant_GEN_EDIT_STATE_MAIN>` 类似，但适用于场景作为另一个场景的基类实例化的情况。
+It's similar to :ref:`GEN_EDIT_STATE_MAIN<class_PackedScene_constant_GEN_EDIT_STATE_MAIN>`, but for the case where the scene is being instantiated to be the base of another one.
 
-\ **注意：**\ 仅在编辑器构建中可用。
+\ **Note:** Only available in editor builds.
 
 .. rst-class:: classref-section-separator
 
@@ -180,8 +180,8 @@ enum **GenEditState**: :ref:`🔗<enum_PackedScene_GenEditState>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_PackedScene_method_can_instantiate:
 
@@ -189,7 +189,7 @@ enum **GenEditState**: :ref:`🔗<enum_PackedScene_GenEditState>`
 
 :ref:`bool<class_bool>` **can_instantiate**\ (\ ) |const| :ref:`🔗<class_PackedScene_method_can_instantiate>`
 
-如果场景文件有节点，返回 ``true``\ 。
+Returns ``true`` if the scene file has nodes.
 
 .. rst-class:: classref-item-separator
 
@@ -201,7 +201,7 @@ enum **GenEditState**: :ref:`🔗<enum_PackedScene_GenEditState>`
 
 :ref:`SceneState<class_SceneState>` **get_state**\ (\ ) |const| :ref:`🔗<class_PackedScene_method_get_state>`
 
-返回代表场景文件内容的 :ref:`SceneState<class_SceneState>`\ 。
+Returns the :ref:`SceneState<class_SceneState>` representing the scene file contents.
 
 .. rst-class:: classref-item-separator
 
@@ -213,7 +213,7 @@ enum **GenEditState**: :ref:`🔗<enum_PackedScene_GenEditState>`
 
 :ref:`Node<class_Node>` **instantiate**\ (\ edit_state\: :ref:`GenEditState<enum_PackedScene_GenEditState>` = 0\ ) |const| :ref:`🔗<class_PackedScene_method_instantiate>`
 
-实例化该场景的节点架构。触发子场景的实例化。在根节点上触发 :ref:`Node.NOTIFICATION_SCENE_INSTANTIATED<class_Node_constant_NOTIFICATION_SCENE_INSTANTIATED>` 通知。
+Instantiates the scene's node hierarchy. Triggers child scene instantiation(s). Triggers a :ref:`Node.NOTIFICATION_SCENE_INSTANTIATED<class_Node_constant_NOTIFICATION_SCENE_INSTANTIATED>` notification on the root node.
 
 .. rst-class:: classref-item-separator
 
@@ -225,14 +225,14 @@ enum **GenEditState**: :ref:`🔗<enum_PackedScene_GenEditState>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **pack**\ (\ path\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_PackedScene_method_pack>`
 
-将 ``path`` 节点及其所有子节点打包到该 **PackedScene** 中。所有现有数据都将被清除。请参阅 :ref:`Node.owner<class_Node_property_owner>`\ 。
+Packs the ``path`` node, and all owned sub-nodes, into this **PackedScene**. Any existing data will be cleared. See :ref:`Node.owner<class_Node_property_owner>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,14 +5,14 @@
 InstancePlaceholder
 ===================
 
-**繼承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-:ref:`PackedScene<class_PackedScene>` 根 :ref:`Node<class_Node>` 的預留位置。
+Placeholder for the root :ref:`Node<class_Node>` of a :ref:`PackedScene<class_PackedScene>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 Turning on the option **Load As Placeholder** for an instantiated scene in the editor causes it to be replaced by an **InstancePlaceholder** when running the game, this will not replace the node in the editor. This makes it possible to delay actually loading the scene until calling :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>`. This is useful to avoid loading large scenes all at once by loading parts of it selectively.
 
@@ -20,8 +20,8 @@ Turning on the option **Load As Placeholder** for an instantiated scene in the e
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ Turning on the option **Load As Placeholder** for an instantiated scene in the e
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_InstancePlaceholder_method_create_instance:
 
@@ -49,9 +49,9 @@ Turning on the option **Load As Placeholder** for an instantiated scene in the e
 
 :ref:`Node<class_Node>` **create_instance**\ (\ replace\: :ref:`bool<class_bool>` = false, custom_scene\: :ref:`PackedScene<class_PackedScene>` = null\ ) :ref:`🔗<class_InstancePlaceholder_method_create_instance>`
 
-呼叫這個方法會實際載入節點。建立的節點會被放置在場景樹中該 **InstancePlaceholder** 的\ *上方*\ 。出於方便的考慮，還會返回該 :ref:`Node<class_Node>` 的引用。
+Call this method to actually load in the node. The created node will be placed as a sibling *above* the **InstancePlaceholder** in the scene tree. The :ref:`Node<class_Node>`'s reference is also returned for convenience.
 
-\ **注意：**\ :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>` 不是執行緒安全的。從執行緒中呼叫時請使用 :ref:`Object.call_deferred()<class_Object_method_call_deferred>`\ 。
+\ **Note:** :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>` is not thread-safe. Use :ref:`Object.call_deferred()<class_Object_method_call_deferred>` if calling from a thread.
 
 .. rst-class:: classref-item-separator
 
@@ -63,7 +63,7 @@ Turning on the option **Load As Placeholder** for an instantiated scene in the e
 
 :ref:`String<class_String>` **get_instance_path**\ (\ ) |const| :ref:`🔗<class_InstancePlaceholder_method_get_instance_path>`
 
-獲取呼叫 :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>` 時預設載入的 :ref:`PackedScene<class_PackedScene>` 資源檔的路徑。不是執行緒安全的。如果從執行緒呼叫，請使用 :ref:`Object.call_deferred()<class_Object_method_call_deferred>`\ 。
+Gets the path to the :ref:`PackedScene<class_PackedScene>` resource file that is loaded by default when calling :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>`. Not thread-safe. Use :ref:`Object.call_deferred()<class_Object_method_call_deferred>` if calling from a thread.
 
 .. rst-class:: classref-item-separator
 
@@ -75,16 +75,16 @@ Turning on the option **Load As Placeholder** for an instantiated scene in the e
 
 :ref:`Dictionary<class_Dictionary>` **get_stored_values**\ (\ with_order\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_InstancePlaceholder_method_get_stored_values>`
 
-返回在呼叫 :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>` 時會套用到節點上的屬性列表。
+Returns the list of properties that will be applied to the node when :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>` is called.
 
-如果 ``with_order`` 為 ``true``\ ，會在字典中加入 ``.order`` 欄位（注意有個前綴的點）。這個 ``.order`` 欄位是屬性名稱 :ref:`String<class_String>` 的 :ref:`Array<class_Array>`\ ，指定屬性的套用順序（索引為 0 的是第一個）。
+If ``with_order`` is ``true``, a key named ``.order`` (note the leading period) is added to the dictionary. This ``.order`` key is an :ref:`Array<class_Array>` of :ref:`String<class_String>` property names specifying the order in which properties will be applied (with index 0 being the first).
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

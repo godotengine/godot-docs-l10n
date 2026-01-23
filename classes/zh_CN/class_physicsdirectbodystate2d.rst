@@ -5,32 +5,32 @@
 PhysicsDirectBodyState2D
 ========================
 
-**继承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-**派生：** :ref:`PhysicsDirectBodyState2DExtension<class_PhysicsDirectBodyState2DExtension>`
+**Inherited By:** :ref:`PhysicsDirectBodyState2DExtension<class_PhysicsDirectBodyState2DExtension>`
 
-提供对 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 中物理体的直接访问。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-提供对 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 中物理体的直接访问，从而安全地更改物理属性。该对象会在 :ref:`RigidBody2D<class_RigidBody2D>` 的直接状态回调中传递，目的是为了改变物体的直接状态。见 :ref:`RigidBody2D._integrate_forces()<class_RigidBody2D_private_method__integrate_forces>`\ 。
+Provides direct access to a physics body in the :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`物理介绍 <../tutorials/physics/physics_introduction>`
+Provides direct access to a physics body in the :ref:`PhysicsServer2D<class_PhysicsServer2D>`, allowing safe changes to physics properties. This object is passed via the direct state callback of :ref:`RigidBody2D<class_RigidBody2D>`, and is intended for changing the direct state of that body. See :ref:`RigidBody2D._integrate_forces()<class_RigidBody2D_private_method__integrate_forces>`.
 
-- :doc:`发射射线 <../tutorials/physics/ray-casting>`
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Physics introduction <../tutorials/physics/physics_introduction>`
+
+- :doc:`Ray-casting <../tutorials/physics/ray-casting>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -67,8 +67,8 @@ PhysicsDirectBodyState2D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -137,8 +137,8 @@ PhysicsDirectBodyState2D
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_PhysicsDirectBodyState2D_property_angular_velocity:
 
@@ -151,7 +151,7 @@ PhysicsDirectBodyState2D
 - |void| **set_angular_velocity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angular_velocity**\ (\ )
 
-物体的旋转速度，单位为\ *弧度*\ 每秒。
+The body's rotational velocity in *radians* per second.
 
 .. rst-class:: classref-item-separator
 
@@ -167,7 +167,7 @@ PhysicsDirectBodyState2D
 
 - :ref:`Vector2<class_Vector2>` **get_center_of_mass**\ (\ )
 
-该物体质心的位置，相对于该物体的中心，使用全局坐标系。
+The body's center of mass position relative to the body's center in the global coordinate system.
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +183,7 @@ PhysicsDirectBodyState2D
 
 - :ref:`Vector2<class_Vector2>` **get_center_of_mass_local**\ (\ )
 
-该物体质心的位置，使用该物体的局部坐标系。
+The body's center of mass position in the body's local coordinate system.
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ PhysicsDirectBodyState2D
 - |void| **set_collision_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_layer**\ (\ )
 
-物体的碰撞层。
+The body's collision layer.
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ PhysicsDirectBodyState2D
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-物体的碰撞遮罩。
+The body's collision mask.
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ PhysicsDirectBodyState2D
 
 - :ref:`float<class_float>` **get_inverse_inertia**\ (\ )
 
-物体惯性的倒数。
+The inverse of the inertia of the body.
 
 .. rst-class:: classref-item-separator
 
@@ -249,7 +249,7 @@ PhysicsDirectBodyState2D
 
 - :ref:`float<class_float>` **get_inverse_mass**\ (\ )
 
-物体质量的倒数。
+The inverse of the mass of the body.
 
 .. rst-class:: classref-item-separator
 
@@ -266,7 +266,7 @@ PhysicsDirectBodyState2D
 - |void| **set_linear_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_linear_velocity**\ (\ )
 
-物体的线性速度，单位为像素每秒。
+The body's linear velocity in pixels per second.
 
 .. rst-class:: classref-item-separator
 
@@ -283,7 +283,7 @@ PhysicsDirectBodyState2D
 - |void| **set_sleep_state**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_sleeping**\ (\ )
 
-如果为 ``true``\ ，则该物体当前处于睡眠状态（不活动）。
+If ``true``, this body is currently sleeping (not active).
 
 .. rst-class:: classref-item-separator
 
@@ -299,7 +299,7 @@ PhysicsDirectBodyState2D
 
 - :ref:`float<class_float>` **get_step**\ (\ )
 
-用于模拟的时间步长（delta）。
+The timestep (delta) used for the simulation.
 
 .. rst-class:: classref-item-separator
 
@@ -315,7 +315,7 @@ PhysicsDirectBodyState2D
 
 - :ref:`float<class_float>` **get_total_angular_damp**\ (\ )
 
-物体停止转动的速度，如果没有任何其他力使它运动。
+The rate at which the body stops rotating, if there are not any other forces moving it.
 
 .. rst-class:: classref-item-separator
 
@@ -331,7 +331,7 @@ PhysicsDirectBodyState2D
 
 - :ref:`Vector2<class_Vector2>` **get_total_gravity**\ (\ )
 
-这个物体上的总重力向量。
+The total gravity vector being currently applied to this body.
 
 .. rst-class:: classref-item-separator
 
@@ -347,7 +347,7 @@ PhysicsDirectBodyState2D
 
 - :ref:`float<class_float>` **get_total_linear_damp**\ (\ )
 
-物体停止运动的速率，如果没有任何其他力使它运动。
+The rate at which the body stops moving, if there are not any other forces moving it.
 
 .. rst-class:: classref-item-separator
 
@@ -364,7 +364,7 @@ PhysicsDirectBodyState2D
 - |void| **set_transform**\ (\ value\: :ref:`Transform2D<class_Transform2D>`\ )
 - :ref:`Transform2D<class_Transform2D>` **get_transform**\ (\ )
 
-物体的变换矩阵。
+The body's transformation matrix.
 
 .. rst-class:: classref-section-separator
 
@@ -372,8 +372,8 @@ PhysicsDirectBodyState2D
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_PhysicsDirectBodyState2D_method_add_constant_central_force:
 
@@ -381,9 +381,9 @@ PhysicsDirectBodyState2D
 
 |void| **add_constant_central_force**\ (\ force\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_PhysicsDirectBodyState2D_method_add_constant_central_force>`
 
-在不影响旋转的情况下，添加一个定向的恒定力，该力会随着时间的推移而持续施加，直到使用 ``constant_force = Vector2(0, 0)`` 清除。
+Adds a constant directional force without affecting rotation that keeps being applied over time until cleared with ``constant_force = Vector2(0, 0)``.
 
-这相当于在物体的质心处，使用 :ref:`add_constant_force()<class_PhysicsDirectBodyState2D_method_add_constant_force>`\ 。
+This is equivalent to using :ref:`add_constant_force()<class_PhysicsDirectBodyState2D_method_add_constant_force>` at the body's center of mass.
 
 .. rst-class:: classref-item-separator
 
@@ -395,9 +395,9 @@ PhysicsDirectBodyState2D
 
 |void| **add_constant_force**\ (\ force\: :ref:`Vector2<class_Vector2>`, position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_PhysicsDirectBodyState2D_method_add_constant_force>`
 
-向实体添加一个恒定的定位力，持续施加，直到用 ``constant_force = Vector2(0, 0)`` 清除。
+Adds a constant positioned force to the body that keeps being applied over time until cleared with ``constant_force = Vector2(0, 0)``.
 
-\ ``position`` 是在全局坐标中距实体原点的偏移量。
+\ ``position`` is the offset from the body origin in global coordinates.
 
 .. rst-class:: classref-item-separator
 
@@ -409,7 +409,7 @@ PhysicsDirectBodyState2D
 
 |void| **add_constant_torque**\ (\ torque\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsDirectBodyState2D_method_add_constant_torque>`
 
-添加一个恒定的旋转力矩，而不影响位置，该力会随着时间的推移不断施加，直到使用 ``constant_torque = 0`` 清除。
+Adds a constant rotational force without affecting position that keeps being applied over time until cleared with ``constant_torque = 0``.
 
 .. rst-class:: classref-item-separator
 
@@ -421,9 +421,9 @@ PhysicsDirectBodyState2D
 
 |void| **apply_central_force**\ (\ force\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_PhysicsDirectBodyState2D_method_apply_central_force>`
 
-施加一个不影响旋转的定向力。该力是时间相关的，意味着每次物理更新都会施加。
+Applies a directional force without affecting rotation. A force is time dependent and meant to be applied every physics update.
 
-这相当于在物体的质心处，使用 :ref:`apply_force()<class_PhysicsDirectBodyState2D_method_apply_force>`\ 。
+This is equivalent to using :ref:`apply_force()<class_PhysicsDirectBodyState2D_method_apply_force>` at the body's center of mass.
 
 .. rst-class:: classref-item-separator
 
@@ -435,11 +435,11 @@ PhysicsDirectBodyState2D
 
 |void| **apply_central_impulse**\ (\ impulse\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_PhysicsDirectBodyState2D_method_apply_central_impulse>`
 
-施加一个不影响的旋转定向冲量。
+Applies a directional impulse without affecting rotation.
 
-冲量与时间无关！每帧应用一个冲量，会产生一个依赖于帧速率的力。出于这个原因，它应该只在模拟一次性影响时使用（否则使用 “_force”函数）。
+An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
 
-这相当于在物体的质心处，使用 :ref:`apply_impulse()<class_PhysicsDirectBodyState2D_method_apply_impulse>`\ 。
+This is equivalent to using :ref:`apply_impulse()<class_PhysicsDirectBodyState2D_method_apply_impulse>` at the body's center of mass.
 
 .. rst-class:: classref-item-separator
 
@@ -451,9 +451,9 @@ PhysicsDirectBodyState2D
 
 |void| **apply_force**\ (\ force\: :ref:`Vector2<class_Vector2>`, position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_PhysicsDirectBodyState2D_method_apply_force>`
 
-对实体施加一个定位力。力是时间相关的，意味着每次物理更新都会被施加。
+Applies a positioned force to the body. A force is time dependent and meant to be applied every physics update.
 
-\ ``position`` 是在全局坐标中距实体原点的偏移量。
+\ ``position`` is the offset from the body origin in global coordinates.
 
 .. rst-class:: classref-item-separator
 
@@ -465,11 +465,11 @@ PhysicsDirectBodyState2D
 
 |void| **apply_impulse**\ (\ impulse\: :ref:`Vector2<class_Vector2>`, position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_PhysicsDirectBodyState2D_method_apply_impulse>`
 
-向实体施加一个定位冲量。
+Applies a positioned impulse to the body.
 
-冲量是时间无关的！每帧施加一个冲量将产生一个依赖于帧速率的力。出于这个原因，它应该只在模拟一次性影响时使用（否则使用“_force”函数）。
+An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
 
-\ ``position`` 是在全局坐标中距实体原点的偏移量。
+\ ``position`` is the offset from the body origin in global coordinates.
 
 .. rst-class:: classref-item-separator
 
@@ -481,9 +481,9 @@ PhysicsDirectBodyState2D
 
 |void| **apply_torque**\ (\ torque\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsDirectBodyState2D_method_apply_torque>`
 
-在不影响位置的情况下施加一个旋转力。力是时间相关的，这意味着每次物理更新都会被施加。
+Applies a rotational force without affecting position. A force is time dependent and meant to be applied every physics update.
 
-\ **注意：**\ :ref:`inverse_inertia<class_PhysicsDirectBodyState2D_property_inverse_inertia>` 是生效所必需的。要拥有 :ref:`inverse_inertia<class_PhysicsDirectBodyState2D_property_inverse_inertia>`\ ，活动的 :ref:`CollisionShape2D<class_CollisionShape2D>` 必须是该节点的子节点，或者可以手动设置 :ref:`inverse_inertia<class_PhysicsDirectBodyState2D_property_inverse_inertia>`\ 。
+\ **Note:** :ref:`inverse_inertia<class_PhysicsDirectBodyState2D_property_inverse_inertia>` is required for this to work. To have :ref:`inverse_inertia<class_PhysicsDirectBodyState2D_property_inverse_inertia>`, an active :ref:`CollisionShape2D<class_CollisionShape2D>` must be a child of the node, or you can manually set :ref:`inverse_inertia<class_PhysicsDirectBodyState2D_property_inverse_inertia>`.
 
 .. rst-class:: classref-item-separator
 
@@ -495,11 +495,11 @@ PhysicsDirectBodyState2D
 
 |void| **apply_torque_impulse**\ (\ impulse\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsDirectBodyState2D_method_apply_torque_impulse>`
 
-在不影响位置的情况下，向实体施加一个旋转冲量。
+Applies a rotational impulse to the body without affecting the position.
 
-冲量是时间无关的！每帧施加一个冲量将产生一个依赖于帧速率的力。出于这个原因，它应该只在模拟一次性影响时使用（否则使用“_force”函数）。
+An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
 
-\ **注意：**\ :ref:`inverse_inertia<class_PhysicsDirectBodyState2D_property_inverse_inertia>` 是生效所必需的。要拥有 :ref:`inverse_inertia<class_PhysicsDirectBodyState2D_property_inverse_inertia>`\ ，活动的 :ref:`CollisionShape2D<class_CollisionShape2D>` 必须是该节点的一个子节点，或者可以手动设置 :ref:`inverse_inertia<class_PhysicsDirectBodyState2D_property_inverse_inertia>`\ 。
+\ **Note:** :ref:`inverse_inertia<class_PhysicsDirectBodyState2D_property_inverse_inertia>` is required for this to work. To have :ref:`inverse_inertia<class_PhysicsDirectBodyState2D_property_inverse_inertia>`, an active :ref:`CollisionShape2D<class_CollisionShape2D>` must be a child of the node, or you can manually set :ref:`inverse_inertia<class_PhysicsDirectBodyState2D_property_inverse_inertia>`.
 
 .. rst-class:: classref-item-separator
 
@@ -511,9 +511,9 @@ PhysicsDirectBodyState2D
 
 :ref:`Vector2<class_Vector2>` **get_constant_force**\ (\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_constant_force>`
 
-返回在每次物理更新期间，施加在该物体上的总恒定位置力。
+Returns the body's total constant positional forces applied during each physics update.
 
-见 :ref:`add_constant_force()<class_PhysicsDirectBodyState2D_method_add_constant_force>` 和 :ref:`add_constant_central_force()<class_PhysicsDirectBodyState2D_method_add_constant_central_force>`\ 。
+See :ref:`add_constant_force()<class_PhysicsDirectBodyState2D_method_add_constant_force>` and :ref:`add_constant_central_force()<class_PhysicsDirectBodyState2D_method_add_constant_central_force>`.
 
 .. rst-class:: classref-item-separator
 
@@ -525,9 +525,9 @@ PhysicsDirectBodyState2D
 
 :ref:`float<class_float>` **get_constant_torque**\ (\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_constant_torque>`
 
-返回在每次物理更新期间，施加在该物体上的总恒定旋转力。
+Returns the body's total constant rotational forces applied during each physics update.
 
-见 :ref:`add_constant_torque()<class_PhysicsDirectBodyState2D_method_add_constant_torque>`\ 。
+See :ref:`add_constant_torque()<class_PhysicsDirectBodyState2D_method_add_constant_torque>`.
 
 .. rst-class:: classref-item-separator
 
@@ -539,7 +539,7 @@ PhysicsDirectBodyState2D
 
 :ref:`RID<class_RID>` **get_contact_collider**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_contact_collider>`
 
-返回该碰撞体的 :ref:`RID<class_RID>`\ 。
+Returns the collider's :ref:`RID<class_RID>`.
 
 .. rst-class:: classref-item-separator
 
@@ -551,7 +551,7 @@ PhysicsDirectBodyState2D
 
 :ref:`int<class_int>` **get_contact_collider_id**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_contact_collider_id>`
 
-返回该碰撞体的对象 id。
+Returns the collider's object id.
 
 .. rst-class:: classref-item-separator
 
@@ -563,7 +563,7 @@ PhysicsDirectBodyState2D
 
 :ref:`Object<class_Object>` **get_contact_collider_object**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_contact_collider_object>`
 
-返回该碰撞体对象。这取决于它是如何创建的（如果是被作为场景节点创建的，那么将返回场景节点）。
+Returns the collider object. This depends on how it was created (will return a scene node if such was used to create it).
 
 .. rst-class:: classref-item-separator
 
@@ -575,7 +575,7 @@ PhysicsDirectBodyState2D
 
 :ref:`Vector2<class_Vector2>` **get_contact_collider_position**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_contact_collider_position>`
 
-返回该碰撞体上接触点的位置，使用全局坐标系。
+Returns the position of the contact point on the collider in the global coordinate system.
 
 .. rst-class:: classref-item-separator
 
@@ -587,7 +587,7 @@ PhysicsDirectBodyState2D
 
 :ref:`int<class_int>` **get_contact_collider_shape**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_contact_collider_shape>`
 
-返回该碰撞体的形状索引。
+Returns the collider's shape index.
 
 .. rst-class:: classref-item-separator
 
@@ -599,7 +599,7 @@ PhysicsDirectBodyState2D
 
 :ref:`Vector2<class_Vector2>` **get_contact_collider_velocity_at_position**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_contact_collider_velocity_at_position>`
 
-返回该碰撞体上接触点处的速度向量。
+Returns the velocity vector at the collider's contact point.
 
 .. rst-class:: classref-item-separator
 
@@ -611,9 +611,9 @@ PhysicsDirectBodyState2D
 
 :ref:`int<class_int>` **get_contact_count**\ (\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_contact_count>`
 
-返回这个物体与其他物体的接触次数。
+Returns the number of contacts this body has with other bodies.
 
-\ **注意：**\ 默认情况下，除非物体被设为监视接触者，否则返回 0。见 :ref:`RigidBody2D.contact_monitor<class_RigidBody2D_property_contact_monitor>`\ 。
+\ **Note:** By default, this returns 0 unless bodies are configured to monitor contacts. See :ref:`RigidBody2D.contact_monitor<class_RigidBody2D_property_contact_monitor>`.
 
 .. rst-class:: classref-item-separator
 
@@ -625,7 +625,7 @@ PhysicsDirectBodyState2D
 
 :ref:`Vector2<class_Vector2>` **get_contact_impulse**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_contact_impulse>`
 
-返回接触造成的冲量。
+Returns the impulse created by the contact.
 
 .. rst-class:: classref-item-separator
 
@@ -637,7 +637,7 @@ PhysicsDirectBodyState2D
 
 :ref:`Vector2<class_Vector2>` **get_contact_local_normal**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_contact_local_normal>`
 
-返回接触点处的局部法线。
+Returns the local normal at the contact point.
 
 .. rst-class:: classref-item-separator
 
@@ -649,7 +649,7 @@ PhysicsDirectBodyState2D
 
 :ref:`Vector2<class_Vector2>` **get_contact_local_position**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_contact_local_position>`
 
-返回该物体上接触点的位置，使用全局坐标系。
+Returns the position of the contact point on the body in the global coordinate system.
 
 .. rst-class:: classref-item-separator
 
@@ -661,7 +661,7 @@ PhysicsDirectBodyState2D
 
 :ref:`int<class_int>` **get_contact_local_shape**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_contact_local_shape>`
 
-返回碰撞的局部坐标系下的形状索引。
+Returns the local shape index of the collision.
 
 .. rst-class:: classref-item-separator
 
@@ -673,7 +673,7 @@ PhysicsDirectBodyState2D
 
 :ref:`Vector2<class_Vector2>` **get_contact_local_velocity_at_position**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_contact_local_velocity_at_position>`
 
-返回该物体上接触点处的速度向量。
+Returns the velocity vector at the body's contact point.
 
 .. rst-class:: classref-item-separator
 
@@ -685,7 +685,7 @@ PhysicsDirectBodyState2D
 
 :ref:`PhysicsDirectSpaceState2D<class_PhysicsDirectSpaceState2D>` **get_space_state**\ (\ ) :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_space_state>`
 
-返回空间的当前状态，这对查询很有用。
+Returns the current state of the space, useful for queries.
 
 .. rst-class:: classref-item-separator
 
@@ -697,7 +697,7 @@ PhysicsDirectBodyState2D
 
 :ref:`Vector2<class_Vector2>` **get_velocity_at_local_position**\ (\ local_position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_velocity_at_local_position>`
 
-返回给定相对位置的物体速度，包括平移和旋转。
+Returns the body's velocity at the given relative position, including both translation and rotation.
 
 .. rst-class:: classref-item-separator
 
@@ -709,7 +709,7 @@ PhysicsDirectBodyState2D
 
 |void| **integrate_forces**\ (\ ) :ref:`🔗<class_PhysicsDirectBodyState2D_method_integrate_forces>`
 
-通过应用相当于一个物理刻度的重力和阻尼来更新物体的线速度和角速度。
+Updates the body's linear and angular velocity by applying gravity and damping for the equivalent of one physics tick.
 
 .. rst-class:: classref-item-separator
 
@@ -721,9 +721,9 @@ PhysicsDirectBodyState2D
 
 |void| **set_constant_force**\ (\ force\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_PhysicsDirectBodyState2D_method_set_constant_force>`
 
-设置在每次物理更新期间，施加在该物体上的总恒定位置力。
+Sets the body's total constant positional forces applied during each physics update.
 
-见 :ref:`add_constant_force()<class_PhysicsDirectBodyState2D_method_add_constant_force>` 和 :ref:`add_constant_central_force()<class_PhysicsDirectBodyState2D_method_add_constant_central_force>`\ 。
+See :ref:`add_constant_force()<class_PhysicsDirectBodyState2D_method_add_constant_force>` and :ref:`add_constant_central_force()<class_PhysicsDirectBodyState2D_method_add_constant_central_force>`.
 
 .. rst-class:: classref-item-separator
 
@@ -735,16 +735,16 @@ PhysicsDirectBodyState2D
 
 |void| **set_constant_torque**\ (\ torque\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsDirectBodyState2D_method_set_constant_torque>`
 
-设置在每次物理更新期间，施加在该物体上的总恒定旋转力。
+Sets the body's total constant rotational forces applied during each physics update.
 
-见 :ref:`add_constant_torque()<class_PhysicsDirectBodyState2D_method_add_constant_torque>`\ 。
+See :ref:`add_constant_torque()<class_PhysicsDirectBodyState2D_method_add_constant_torque>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

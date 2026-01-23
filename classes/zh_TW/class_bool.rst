@@ -5,16 +5,16 @@
 bool
 ====
 
-內建布林型別。
+A built-in boolean type.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-**bool** 是內建 :ref:`Variant<class_Variant>` 型別，只能儲存兩個值之一：\ ``true`` 或 ``false``\ 你可以把它想像成一個可以打開或關閉的開關，或者是一個可以是1或0的二進制數字。
+The **bool** is a built-in :ref:`Variant<class_Variant>` type that may only store one of two values: ``true`` or ``false``. You can imagine it as a switch that can be either turned on or off, or as a binary digit that can either be 1 or 0.
 
-布林值可以直接用在\ ``if``\ 和其他條件敘述：
+Booleans can be directly used in ``if``, and other conditional statements:
 
 
 .. tabs::
@@ -33,9 +33,11 @@ bool
         LaunchBullet();
     }
 
-所有比較運算子都傳回布林值（\ ``==``\ 、\ ``>``\ 、\ ``<=`` 等） 。因此，沒有必要比較布林值本身。您不需要新增 ``== true`` 或 ``== false``\ 。
 
-布林值可以與邏輯運算子 ``and``\ 、\ ``or``\ 、\ ``not`` 組合來建立複雜的條件：
+
+All comparison operators return booleans (``==``, ``>``, ``<=``, etc.). As such, it is not necessary to compare booleans themselves. You do not need to add ``== true`` or ``== false``.
+
+Booleans can be combined with the logical operators ``and``, ``or``, ``not`` to create complex conditions:
 
 
 .. tabs::
@@ -62,14 +64,14 @@ bool
 
 
 
-\ **注意：** 在現代程式語言中，邏輯運算子依序求值。如果剩餘條件的結果對最終值沒有影響，則將跳過所有剩餘條件。這個概念被稱為\ `短路評估 <https://en.wikipedia.org/wiki/Short-Circuit_evaluation>`__\ ，可用於避免在某些性能關鍵的情況下評估昂貴的條件。
+\ **Note:** In modern programming languages, logical operators are evaluated in order. All remaining conditions are skipped if their result would have no effect on the final value. This concept is known as `short-circuit evaluation <https://en.wikipedia.org/wiki/Short-circuit_evaluation>`__ and can be useful to avoid evaluating expensive conditions in some performance-critical cases.
 
-\ **注意：** 依照慣例，傳回布林值的內建方法和屬性通常定義為是非問題、單一形容詞或類似的（\ :ref:`String.is_empty()<class_String_method_is_empty>`\ 、\ :ref:`Node.can_process()<class_Node_method_can_process>`\ 、 :ref:`Camera2D.enabled<class_Camera2D_property_enabled>`\ 等）。
+\ **Note:** By convention, built-in methods and properties that return booleans are usually defined as yes-no questions, single adjectives, or similar (:ref:`String.is_empty()<class_String_method_is_empty>`, :ref:`Node.can_process()<class_Node_method_can_process>`, :ref:`Camera2D.enabled<class_Camera2D_property_enabled>`, etc.).
 
 .. rst-class:: classref-reftable-group
 
-建構子
-------
+Constructors
+------------
 
 .. table::
    :widths: auto
@@ -86,8 +88,8 @@ bool
 
 .. rst-class:: classref-reftable-group
 
-運算子
-------
+Operators
+---------
 
 .. table::
    :widths: auto
@@ -108,8 +110,8 @@ bool
 
 .. rst-class:: classref-descriptions-group
 
-建構子說明
-----------
+Constructor Descriptions
+------------------------
 
 .. _class_bool_constructor_bool:
 
@@ -117,7 +119,7 @@ bool
 
 :ref:`bool<class_bool>` **bool**\ (\ ) :ref:`🔗<class_bool_constructor_bool>`
 
-建構設為 ``0`` 的 :ref:`int<class_int>`\ 。
+Constructs a **bool** set to ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +129,7 @@ bool
 
 :ref:`bool<class_bool>` **bool**\ (\ from\: :ref:`bool<class_bool>`\ )
 
-建構給定 **bool** 的副本。
+Constructs a **bool** as a copy of the given **bool**.
 
 .. rst-class:: classref-item-separator
 
@@ -137,7 +139,7 @@ bool
 
 :ref:`bool<class_bool>` **bool**\ (\ from\: :ref:`float<class_float>`\ )
 
-將 :ref:`float<class_float>` 值轉換為布林值。如果傳入 ``0.0``\ ，本方法將返回 ``false``\ ，傳入其他值則返回 ``true``\ 。
+Cast a :ref:`float<class_float>` value to a boolean value. Returns ``false`` if ``from`` is equal to ``0.0`` (including ``-0.0``), and ``true`` for all other values (including :ref:`@GDScript.INF<class_@GDScript_constant_INF>` and :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`).
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +149,7 @@ bool
 
 :ref:`bool<class_bool>` **bool**\ (\ from\: :ref:`int<class_int>`\ )
 
-將 :ref:`int<class_int>` 值轉換為布林值。如果傳入 ``0``\ ，本方法將返回 ``false``\ ，傳入其他值則返回 ``true``\ 。
+Cast an :ref:`int<class_int>` value to a boolean value. Returns ``false`` if ``from`` is equal to ``0``, and ``true`` for all other values.
 
 .. rst-class:: classref-section-separator
 
@@ -155,8 +157,8 @@ bool
 
 .. rst-class:: classref-descriptions-group
 
-運算子說明
-----------
+Operator Descriptions
+---------------------
 
 .. _class_bool_operator_neq_bool:
 
@@ -164,7 +166,7 @@ bool
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_neq_bool>`
 
-如果兩個布林值不同，即一個是 ``true``\ ，另一個是 ``false``\ ，則返回 ``true``\ 。
+Returns ``true`` if the two booleans are not equal. That is, one is ``true`` and the other is ``false``. This operation can be seen as a logical XOR.
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +178,7 @@ bool
 
 :ref:`bool<class_bool>` **operator <**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_lt_bool>`
 
-如果左運算元為 ``false`` 且右運算元為 ``true``\ ，則返回 ``true``\ 。
+Returns ``true`` if the left operand is ``false`` and the right operand is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +190,7 @@ bool
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_eq_bool>`
 
-如果兩個布林值相等，即都為 ``true`` 或都為 ``false``\ ，則返回 ``true``\ 。
+Returns ``true`` if the two booleans are equal. That is, both are ``true`` or both are ``false``. This operation can be seen as a logical EQ or XNOR.
 
 .. rst-class:: classref-item-separator
 
@@ -200,14 +202,14 @@ bool
 
 :ref:`bool<class_bool>` **operator >**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_gt_bool>`
 
-如果左運算元為 ``true`` 且右運算元為 ``false``\ ，則返回 ``true``\ 。
+Returns ``true`` if the left operand is ``true`` and the right operand is ``false``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

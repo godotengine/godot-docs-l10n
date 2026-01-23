@@ -5,25 +5,21 @@
 ParticleProcessMaterial
 =======================
 
-**繼承：** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-:ref:`GPUParticles3D<class_GPUParticles3D>` 和 :ref:`GPUParticles2D<class_GPUParticles2D>` 節點的粒子屬性。
+Holds a particle configuration for :ref:`GPUParticles2D<class_GPUParticles2D>` or :ref:`GPUParticles3D<class_GPUParticles3D>` nodes.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-ParticleProcessMaterial 定義了粒子的屬性和行為。\ :ref:`GPUParticles3D<class_GPUParticles3D>` 和 :ref:`GPUParticles2D<class_GPUParticles2D>` 發射器節點的 ``process_material`` 會使用這個材質。
-
-這種材質的有些屬性是在粒子發射時套用的，有些則會在粒子的生命週期中不斷套用按照 :ref:`CurveTexture<class_CurveTexture>` 變化的值。
-
-粒子動畫僅在 :ref:`GPUParticles2D<class_GPUParticles2D>` 中可用。使用時請為粒子節點分配 :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` 並啟用其 :ref:`CanvasItemMaterial.particles_animation<class_CanvasItemMaterial_property_particles_animation>`\ 。
+**ParticleProcessMaterial** defines particle properties and behavior. It is used in the ``process_material`` of the :ref:`GPUParticles2D<class_GPUParticles2D>` and :ref:`GPUParticles3D<class_GPUParticles3D>` nodes. Some of this material's properties are applied to each particle when emitted, while others can have a :ref:`CurveTexture<class_CurveTexture>` or a :ref:`GradientTexture1D<class_GradientTexture1D>` applied to vary numerical or color values over the lifetime of the particle.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -224,8 +220,8 @@ ParticleProcessMaterial 定義了粒子的屬性和行為。\ :ref:`GPUParticles
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -258,8 +254,8 @@ ParticleProcessMaterial 定義了粒子的屬性和行為。\ :ref:`GPUParticles
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_ParticleProcessMaterial_signal_emission_shape_changed:
 
@@ -277,8 +273,8 @@ Emitted when this material's emission shape is changed in any way. This includes
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_ParticleProcessMaterial_Parameter:
 
@@ -292,7 +288,7 @@ enum **Parameter**: :ref:`🔗<enum_ParticleProcessMaterial_Parameter>`
 
 :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` **PARAM_INITIAL_LINEAR_VELOCITY** = ``0``
 
-與 :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>` 和 :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` 一起使用，設定初始速度屬性。
+Use with :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`, :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>`, and :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` to set initial velocity properties.
 
 .. _class_ParticleProcessMaterial_constant_PARAM_ANGULAR_VELOCITY:
 
@@ -300,7 +296,7 @@ enum **Parameter**: :ref:`🔗<enum_ParticleProcessMaterial_Parameter>`
 
 :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` **PARAM_ANGULAR_VELOCITY** = ``1``
 
-與 :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>` 和 :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` 一起使用，設定角速度屬性。
+Use with :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`, :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>`, and :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` to set angular velocity properties.
 
 .. _class_ParticleProcessMaterial_constant_PARAM_ORBIT_VELOCITY:
 
@@ -308,7 +304,7 @@ enum **Parameter**: :ref:`🔗<enum_ParticleProcessMaterial_Parameter>`
 
 :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` **PARAM_ORBIT_VELOCITY** = ``2``
 
-與 :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>` 和 :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` 一起使用，設定軌道速度屬性。
+Use with :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`, :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>`, and :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` to set orbital velocity properties.
 
 .. _class_ParticleProcessMaterial_constant_PARAM_LINEAR_ACCEL:
 
@@ -316,7 +312,7 @@ enum **Parameter**: :ref:`🔗<enum_ParticleProcessMaterial_Parameter>`
 
 :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` **PARAM_LINEAR_ACCEL** = ``3``
 
-與 :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>` 和 :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` 一起使用，設定線速度屬性。
+Use with :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`, :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>`, and :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` to set linear acceleration properties.
 
 .. _class_ParticleProcessMaterial_constant_PARAM_RADIAL_ACCEL:
 
@@ -324,7 +320,7 @@ enum **Parameter**: :ref:`🔗<enum_ParticleProcessMaterial_Parameter>`
 
 :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` **PARAM_RADIAL_ACCEL** = ``4``
 
-與 :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>` 和 :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` 一起使用，設定徑向加速度屬性。
+Use with :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`, :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>`, and :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` to set radial acceleration properties.
 
 .. _class_ParticleProcessMaterial_constant_PARAM_TANGENTIAL_ACCEL:
 
@@ -332,7 +328,7 @@ enum **Parameter**: :ref:`🔗<enum_ParticleProcessMaterial_Parameter>`
 
 :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` **PARAM_TANGENTIAL_ACCEL** = ``5``
 
-與 :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>` 和 :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` 一起使用，設定切向加速度屬性。
+Use with :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`, :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>`, and :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` to set tangential acceleration properties.
 
 .. _class_ParticleProcessMaterial_constant_PARAM_DAMPING:
 
@@ -340,7 +336,7 @@ enum **Parameter**: :ref:`🔗<enum_ParticleProcessMaterial_Parameter>`
 
 :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` **PARAM_DAMPING** = ``6``
 
-與 :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>` 和 :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` 一起使用，設定阻尼屬性。
+Use with :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`, :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>`, and :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` to set damping properties.
 
 .. _class_ParticleProcessMaterial_constant_PARAM_ANGLE:
 
@@ -348,7 +344,7 @@ enum **Parameter**: :ref:`🔗<enum_ParticleProcessMaterial_Parameter>`
 
 :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` **PARAM_ANGLE** = ``7``
 
-與 :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>` 和 :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` 一起使用，設定角度屬性。
+Use with :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`, :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>`, and :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` to set angle properties.
 
 .. _class_ParticleProcessMaterial_constant_PARAM_SCALE:
 
@@ -356,7 +352,7 @@ enum **Parameter**: :ref:`🔗<enum_ParticleProcessMaterial_Parameter>`
 
 :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` **PARAM_SCALE** = ``8``
 
-與 :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>` 和 :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` 一起使用，設定縮放屬性。
+Use with :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`, :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>`, and :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` to set scale properties.
 
 .. _class_ParticleProcessMaterial_constant_PARAM_HUE_VARIATION:
 
@@ -364,7 +360,7 @@ enum **Parameter**: :ref:`🔗<enum_ParticleProcessMaterial_Parameter>`
 
 :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` **PARAM_HUE_VARIATION** = ``9``
 
-與 :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>` 和 :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` 一起使用，設定色相變化屬性。
+Use with :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`, :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>`, and :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` to set hue variation properties.
 
 .. _class_ParticleProcessMaterial_constant_PARAM_ANIM_SPEED:
 
@@ -372,7 +368,7 @@ enum **Parameter**: :ref:`🔗<enum_ParticleProcessMaterial_Parameter>`
 
 :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` **PARAM_ANIM_SPEED** = ``10``
 
-與 :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>` 和 :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` 一起使用，設定動畫速度屬性。
+Use with :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`, :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>`, and :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` to set animation speed properties.
 
 .. _class_ParticleProcessMaterial_constant_PARAM_ANIM_OFFSET:
 
@@ -380,7 +376,7 @@ enum **Parameter**: :ref:`🔗<enum_ParticleProcessMaterial_Parameter>`
 
 :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` **PARAM_ANIM_OFFSET** = ``11``
 
-與 :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`\ 、\ :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>` 和 :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` 一起使用，設定動畫偏移屬性。
+Use with :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>`, :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>`, and :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` to set animation offset properties.
 
 .. _class_ParticleProcessMaterial_constant_PARAM_RADIAL_VELOCITY:
 
@@ -412,7 +408,7 @@ Use with :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_mi
 
 :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` **PARAM_MAX** = ``18``
 
-代表 :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` 列舉的大小。
+Represents the size of the :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` enum.
 
 .. _class_ParticleProcessMaterial_constant_PARAM_TURB_VEL_INFLUENCE:
 
@@ -420,7 +416,7 @@ Use with :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_mi
 
 :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` **PARAM_TURB_VEL_INFLUENCE** = ``13``
 
-與 :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>` 和 :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>` 一起使用，以設定湍流對每個粒子速度的最小和最大影響。
+Use with :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>` and :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>` to set the turbulence minimum und maximum influence on each particles velocity.
 
 .. _class_ParticleProcessMaterial_constant_PARAM_TURB_INIT_DISPLACEMENT:
 
@@ -428,7 +424,7 @@ Use with :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_mi
 
 :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` **PARAM_TURB_INIT_DISPLACEMENT** = ``14``
 
-與 :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>` 和 :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>` 一起使用，以設定粒子出生位置的湍流最小和最大位移。
+Use with :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_min>` and :ref:`set_param_max()<class_ParticleProcessMaterial_method_set_param_max>` to set the turbulence minimum and maximum displacement of the particles spawn position.
 
 .. _class_ParticleProcessMaterial_constant_PARAM_TURB_INFLUENCE_OVER_LIFE:
 
@@ -436,7 +432,7 @@ Use with :ref:`set_param_min()<class_ParticleProcessMaterial_method_set_param_mi
 
 :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` **PARAM_TURB_INFLUENCE_OVER_LIFE** = ``12``
 
-與 :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` 一起使用，以設定湍流對粒子壽命的影響。
+Use with :ref:`set_param_texture()<class_ParticleProcessMaterial_method_set_param_texture>` to set the turbulence influence over the particles life time.
 
 .. rst-class:: classref-item-separator
 
@@ -454,7 +450,7 @@ enum **ParticleFlags**: :ref:`🔗<enum_ParticleProcessMaterial_ParticleFlags>`
 
 :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>` **PARTICLE_FLAG_ALIGN_Y_TO_VELOCITY** = ``0``
 
-與 :ref:`set_particle_flag()<class_ParticleProcessMaterial_method_set_particle_flag>` 一起使用，設定 :ref:`particle_flag_align_y<class_ParticleProcessMaterial_property_particle_flag_align_y>`\ 。
+Use with :ref:`set_particle_flag()<class_ParticleProcessMaterial_method_set_particle_flag>` to set :ref:`particle_flag_align_y<class_ParticleProcessMaterial_property_particle_flag_align_y>`.
 
 .. _class_ParticleProcessMaterial_constant_PARTICLE_FLAG_ROTATE_Y:
 
@@ -462,7 +458,7 @@ enum **ParticleFlags**: :ref:`🔗<enum_ParticleProcessMaterial_ParticleFlags>`
 
 :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>` **PARTICLE_FLAG_ROTATE_Y** = ``1``
 
-與 :ref:`set_particle_flag()<class_ParticleProcessMaterial_method_set_particle_flag>` 一起使用，設定 :ref:`particle_flag_rotate_y<class_ParticleProcessMaterial_property_particle_flag_rotate_y>`\ 。
+Use with :ref:`set_particle_flag()<class_ParticleProcessMaterial_method_set_particle_flag>` to set :ref:`particle_flag_rotate_y<class_ParticleProcessMaterial_property_particle_flag_rotate_y>`.
 
 .. _class_ParticleProcessMaterial_constant_PARTICLE_FLAG_DISABLE_Z:
 
@@ -470,7 +466,7 @@ enum **ParticleFlags**: :ref:`🔗<enum_ParticleProcessMaterial_ParticleFlags>`
 
 :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>` **PARTICLE_FLAG_DISABLE_Z** = ``2``
 
-與 :ref:`set_particle_flag()<class_ParticleProcessMaterial_method_set_particle_flag>` 一起使用，設定\ :ref:`particle_flag_disable_z<class_ParticleProcessMaterial_property_particle_flag_disable_z>`\ 。
+Use with :ref:`set_particle_flag()<class_ParticleProcessMaterial_method_set_particle_flag>` to set :ref:`particle_flag_disable_z<class_ParticleProcessMaterial_property_particle_flag_disable_z>`.
 
 .. _class_ParticleProcessMaterial_constant_PARTICLE_FLAG_DAMPING_AS_FRICTION:
 
@@ -490,7 +486,7 @@ enum **ParticleFlags**: :ref:`🔗<enum_ParticleProcessMaterial_ParticleFlags>`
 
 :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>` **PARTICLE_FLAG_MAX** = ``4``
 
-代表 :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>` 列舉的大小。
+Represents the size of the :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -508,7 +504,7 @@ enum **EmissionShape**: :ref:`🔗<enum_ParticleProcessMaterial_EmissionShape>`
 
 :ref:`EmissionShape<enum_ParticleProcessMaterial_EmissionShape>` **EMISSION_SHAPE_POINT** = ``0``
 
-所有粒子將從單個點發射。
+All particles will be emitted from a single point.
 
 .. _class_ParticleProcessMaterial_constant_EMISSION_SHAPE_SPHERE:
 
@@ -516,7 +512,7 @@ enum **EmissionShape**: :ref:`🔗<enum_ParticleProcessMaterial_EmissionShape>`
 
 :ref:`EmissionShape<enum_ParticleProcessMaterial_EmissionShape>` **EMISSION_SHAPE_SPHERE** = ``1``
 
-粒子將在球體的體積中發射。
+Particles will be emitted in the volume of a sphere.
 
 .. _class_ParticleProcessMaterial_constant_EMISSION_SHAPE_SPHERE_SURFACE:
 
@@ -524,7 +520,7 @@ enum **EmissionShape**: :ref:`🔗<enum_ParticleProcessMaterial_EmissionShape>`
 
 :ref:`EmissionShape<enum_ParticleProcessMaterial_EmissionShape>` **EMISSION_SHAPE_SPHERE_SURFACE** = ``2``
 
-粒子將在球體表面發射。
+Particles will be emitted on the surface of a sphere.
 
 .. _class_ParticleProcessMaterial_constant_EMISSION_SHAPE_BOX:
 
@@ -532,7 +528,7 @@ enum **EmissionShape**: :ref:`🔗<enum_ParticleProcessMaterial_EmissionShape>`
 
 :ref:`EmissionShape<enum_ParticleProcessMaterial_EmissionShape>` **EMISSION_SHAPE_BOX** = ``3``
 
-粒子將在盒子的體積中發射。
+Particles will be emitted in the volume of a box.
 
 .. _class_ParticleProcessMaterial_constant_EMISSION_SHAPE_POINTS:
 
@@ -540,7 +536,7 @@ enum **EmissionShape**: :ref:`🔗<enum_ParticleProcessMaterial_EmissionShape>`
 
 :ref:`EmissionShape<enum_ParticleProcessMaterial_EmissionShape>` **EMISSION_SHAPE_POINTS** = ``4``
 
-粒子將在 :ref:`emission_point_texture<class_ParticleProcessMaterial_property_emission_point_texture>` 上隨機取樣點所決定的位置發射。粒子顏色將由 :ref:`emission_color_texture<class_ParticleProcessMaterial_property_emission_color_texture>` 調節。
+Particles will be emitted at a position determined by sampling a random point on the :ref:`emission_point_texture<class_ParticleProcessMaterial_property_emission_point_texture>`. Particle color will be modulated by :ref:`emission_color_texture<class_ParticleProcessMaterial_property_emission_color_texture>`.
 
 .. _class_ParticleProcessMaterial_constant_EMISSION_SHAPE_DIRECTED_POINTS:
 
@@ -548,7 +544,7 @@ enum **EmissionShape**: :ref:`🔗<enum_ParticleProcessMaterial_EmissionShape>`
 
 :ref:`EmissionShape<enum_ParticleProcessMaterial_EmissionShape>` **EMISSION_SHAPE_DIRECTED_POINTS** = ``5``
 
-粒子將在 :ref:`emission_point_texture<class_ParticleProcessMaterial_property_emission_point_texture>` 上隨機取樣點所決定的位置發射。粒子速度和旋轉將基於 :ref:`emission_normal_texture<class_ParticleProcessMaterial_property_emission_normal_texture>` 進行設定。粒子顏色將由 :ref:`emission_color_texture<class_ParticleProcessMaterial_property_emission_color_texture>` 調節。
+Particles will be emitted at a position determined by sampling a random point on the :ref:`emission_point_texture<class_ParticleProcessMaterial_property_emission_point_texture>`. Particle velocity and rotation will be set based on :ref:`emission_normal_texture<class_ParticleProcessMaterial_property_emission_normal_texture>`. Particle color will be modulated by :ref:`emission_color_texture<class_ParticleProcessMaterial_property_emission_color_texture>`.
 
 .. _class_ParticleProcessMaterial_constant_EMISSION_SHAPE_RING:
 
@@ -556,7 +552,7 @@ enum **EmissionShape**: :ref:`🔗<enum_ParticleProcessMaterial_EmissionShape>`
 
 :ref:`EmissionShape<enum_ParticleProcessMaterial_EmissionShape>` **EMISSION_SHAPE_RING** = ``6``
 
-粒子將以環形或圓柱的形式發射出來。
+Particles will be emitted in a ring or cylinder.
 
 .. _class_ParticleProcessMaterial_constant_EMISSION_SHAPE_MAX:
 
@@ -564,7 +560,7 @@ enum **EmissionShape**: :ref:`🔗<enum_ParticleProcessMaterial_EmissionShape>`
 
 :ref:`EmissionShape<enum_ParticleProcessMaterial_EmissionShape>` **EMISSION_SHAPE_MAX** = ``7``
 
-代表 :ref:`EmissionShape<enum_ParticleProcessMaterial_EmissionShape>` 列舉的大小。
+Represents the size of the :ref:`EmissionShape<enum_ParticleProcessMaterial_EmissionShape>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -642,7 +638,7 @@ enum **SubEmitterMode**: :ref:`🔗<enum_ParticleProcessMaterial_SubEmitterMode>
 
 :ref:`SubEmitterMode<enum_ParticleProcessMaterial_SubEmitterMode>` **SUB_EMITTER_MAX** = ``5``
 
-代表 :ref:`SubEmitterMode<enum_ParticleProcessMaterial_SubEmitterMode>` 列舉的大小。
+Represents the size of the :ref:`SubEmitterMode<enum_ParticleProcessMaterial_SubEmitterMode>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -660,7 +656,7 @@ enum **CollisionMode**: :ref:`🔗<enum_ParticleProcessMaterial_CollisionMode>`
 
 :ref:`CollisionMode<enum_ParticleProcessMaterial_CollisionMode>` **COLLISION_DISABLED** = ``0``
 
-粒子沒有碰撞。粒子會穿過 :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` 節點。
+No collision for particles. Particles will go through :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` nodes.
 
 .. _class_ParticleProcessMaterial_constant_COLLISION_RIGID:
 
@@ -668,7 +664,7 @@ enum **CollisionMode**: :ref:`🔗<enum_ParticleProcessMaterial_CollisionMode>`
 
 :ref:`CollisionMode<enum_ParticleProcessMaterial_CollisionMode>` **COLLISION_RIGID** = ``1``
 
-為使用 :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` 節點的粒子設定 :ref:`RigidBody3D<class_RigidBody3D>` 風格的碰撞。
+:ref:`RigidBody3D<class_RigidBody3D>`-style collision for particles using :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` nodes.
 
 .. _class_ParticleProcessMaterial_constant_COLLISION_HIDE_ON_CONTACT:
 
@@ -676,7 +672,7 @@ enum **CollisionMode**: :ref:`🔗<enum_ParticleProcessMaterial_CollisionMode>`
 
 :ref:`CollisionMode<enum_ParticleProcessMaterial_CollisionMode>` **COLLISION_HIDE_ON_CONTACT** = ``2``
 
-與 :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` 節點碰撞時立即隱藏粒子。可以和使用 :ref:`COLLISION_RIGID<class_ParticleProcessMaterial_constant_COLLISION_RIGID>` 碰撞模式的子發射器組合，在撞擊時將父粒子“替換”為子發射器。
+Hide particles instantly when colliding with a :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` node. This can be combined with a subemitter that uses the :ref:`COLLISION_RIGID<class_ParticleProcessMaterial_constant_COLLISION_RIGID>` collision mode to "replace" the parent particle with the subemitter on impact.
 
 .. _class_ParticleProcessMaterial_constant_COLLISION_MAX:
 
@@ -684,7 +680,7 @@ enum **CollisionMode**: :ref:`🔗<enum_ParticleProcessMaterial_CollisionMode>`
 
 :ref:`CollisionMode<enum_ParticleProcessMaterial_CollisionMode>` **COLLISION_MAX** = ``3``
 
-代表 :ref:`CollisionMode<enum_ParticleProcessMaterial_CollisionMode>` 列舉的大小。
+Represents the size of the :ref:`CollisionMode<enum_ParticleProcessMaterial_CollisionMode>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -692,8 +688,8 @@ enum **CollisionMode**: :ref:`🔗<enum_ParticleProcessMaterial_CollisionMode>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_ParticleProcessMaterial_property_alpha_curve:
 
@@ -725,7 +721,7 @@ The alpha value of each particle's color will be multiplied by this :ref:`CurveT
 - |void| **set_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-每個粒子的旋轉將沿著這個 :ref:`CurveTexture<class_CurveTexture>` 動畫。
+Each particle's rotation will be animated along this :ref:`CurveTexture<class_CurveTexture>`.
 
 .. rst-class:: classref-item-separator
 
@@ -742,9 +738,9 @@ The alpha value of each particle's color will be multiplied by this :ref:`CurveT
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-套用於每個粒子的最大初始旋轉，以度為單位。
+Maximum initial rotation applied to each particle, in degrees.
 
-僅在 :ref:`particle_flag_disable_z<class_ParticleProcessMaterial_property_particle_flag_disable_z>` 或 :ref:`particle_flag_rotate_y<class_ParticleProcessMaterial_property_particle_flag_rotate_y>` 為 ``true``\ ，或 :ref:`BaseMaterial3D<class_BaseMaterial3D>` 使用 :ref:`BaseMaterial3D.BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>` 繪製粒子時套用。
+Only applied when :ref:`particle_flag_disable_z<class_ParticleProcessMaterial_property_particle_flag_disable_z>` or :ref:`particle_flag_rotate_y<class_ParticleProcessMaterial_property_particle_flag_rotate_y>` are ``true`` or the :ref:`BaseMaterial3D<class_BaseMaterial3D>` being used to draw the particle is using :ref:`BaseMaterial3D.BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>`.
 
 .. rst-class:: classref-item-separator
 
@@ -761,7 +757,7 @@ The alpha value of each particle's color will be multiplied by this :ref:`CurveT
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-:ref:`angle_max<class_ParticleProcessMaterial_property_angle_max>` 的對應最小值。
+Minimum equivalent of :ref:`angle_max<class_ParticleProcessMaterial_property_angle_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -778,7 +774,7 @@ The alpha value of each particle's color will be multiplied by this :ref:`CurveT
 - |void| **set_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-在每個粒子生命週期內，其角速度（旋轉速度）將沿著此 :ref:`CurveTexture<class_CurveTexture>` 變化。
+Each particle's angular velocity (rotation speed) will vary along this :ref:`CurveTexture<class_CurveTexture>` over its lifetime.
 
 .. rst-class:: classref-item-separator
 
@@ -795,9 +791,9 @@ The alpha value of each particle's color will be multiplied by this :ref:`CurveT
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-套用於每個粒子的最大初始角速度（旋轉速度），以\ *度*\ 每秒為單位。
+Maximum initial angular velocity (rotation speed) applied to each particle in *degrees* per second.
 
-僅在 :ref:`particle_flag_disable_z<class_ParticleProcessMaterial_property_particle_flag_disable_z>` 或 :ref:`particle_flag_rotate_y<class_ParticleProcessMaterial_property_particle_flag_rotate_y>` 為 ``true``\ ，或 :ref:`BaseMaterial3D<class_BaseMaterial3D>` 使用 :ref:`BaseMaterial3D.BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>` 繪製粒子時套用。
+Only applied when :ref:`particle_flag_disable_z<class_ParticleProcessMaterial_property_particle_flag_disable_z>` or :ref:`particle_flag_rotate_y<class_ParticleProcessMaterial_property_particle_flag_rotate_y>` are ``true`` or the :ref:`BaseMaterial3D<class_BaseMaterial3D>` being used to draw the particle is using :ref:`BaseMaterial3D.BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>`.
 
 .. rst-class:: classref-item-separator
 
@@ -814,7 +810,7 @@ The alpha value of each particle's color will be multiplied by this :ref:`CurveT
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-:ref:`angular_velocity_max<class_ParticleProcessMaterial_property_angular_velocity_max>` 的對應最小值。
+Minimum equivalent of :ref:`angular_velocity_max<class_ParticleProcessMaterial_property_angular_velocity_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -831,7 +827,7 @@ The alpha value of each particle's color will be multiplied by this :ref:`CurveT
 - |void| **set_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-每個粒子的動畫偏移將沿著這個 :ref:`CurveTexture<class_CurveTexture>` 變化。
+Each particle's animation offset will vary along this :ref:`CurveTexture<class_CurveTexture>`.
 
 .. rst-class:: classref-item-separator
 
@@ -848,7 +844,7 @@ The alpha value of each particle's color will be multiplied by this :ref:`CurveT
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-與紋理中的影格索引相對應的最大動畫偏移量。\ ``0`` 是第一影格，\ ``1`` 是最後一影格。參見 :ref:`CanvasItemMaterial.particles_animation<class_CanvasItemMaterial_property_particles_animation>`\ 。
+Maximum animation offset that corresponds to frame index in the texture. ``0`` is the first frame, ``1`` is the last one. See :ref:`CanvasItemMaterial.particles_animation<class_CanvasItemMaterial_property_particles_animation>`.
 
 .. rst-class:: classref-item-separator
 
@@ -865,7 +861,7 @@ The alpha value of each particle's color will be multiplied by this :ref:`CurveT
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-:ref:`anim_offset_max<class_ParticleProcessMaterial_property_anim_offset_max>` 的對應最小值。
+Minimum equivalent of :ref:`anim_offset_max<class_ParticleProcessMaterial_property_anim_offset_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -882,7 +878,7 @@ The alpha value of each particle's color will be multiplied by this :ref:`CurveT
 - |void| **set_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-每個粒子的動畫速度將沿著這個 :ref:`CurveTexture<class_CurveTexture>` 變化。
+Each particle's animation speed will vary along this :ref:`CurveTexture<class_CurveTexture>`.
 
 .. rst-class:: classref-item-separator
 
@@ -899,9 +895,9 @@ The alpha value of each particle's color will be multiplied by this :ref:`CurveT
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-最大粒子動畫速度。\ ``1`` 的動畫速度是指粒子在生命週期內會做完整的 ``0`` 到 ``1`` 的偏移迴圈，\ ``2`` 則表示 ``2`` 個迴圈，如此等等。
+Maximum particle animation speed. Animation speed of ``1`` means that the particles will make full ``0`` to ``1`` offset cycle during lifetime, ``2`` means ``2`` cycles etc.
 
-當動畫速度大於 ``1`` 時，如果希望動畫重複，請記住啟用 :ref:`CanvasItemMaterial.particles_anim_loop<class_CanvasItemMaterial_property_particles_anim_loop>` 屬性。
+With animation speed greater than ``1``, remember to enable :ref:`CanvasItemMaterial.particles_anim_loop<class_CanvasItemMaterial_property_particles_anim_loop>` property if you want the animation to repeat.
 
 .. rst-class:: classref-item-separator
 
@@ -918,7 +914,7 @@ The alpha value of each particle's color will be multiplied by this :ref:`CurveT
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-:ref:`anim_speed_max<class_ParticleProcessMaterial_property_anim_speed_max>` 的對應最小值。
+Minimum equivalent of :ref:`anim_speed_max<class_ParticleProcessMaterial_property_anim_speed_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -952,7 +948,7 @@ If ``true``, interaction with particle attractors is enabled. In 3D, attraction 
 - |void| **set_collision_bounce**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_collision_bounce**\ (\ )
 
-粒子的彈性。值範圍從 ``0``\ （無彈跳）到 ``1``\ （完全彈跳）。僅當 :ref:`collision_mode<class_ParticleProcessMaterial_property_collision_mode>` 為 :ref:`COLLISION_RIGID<class_ParticleProcessMaterial_constant_COLLISION_RIGID>` 時有效。
+The particles' bounciness. Values range from ``0`` (no bounce) to ``1`` (full bounciness). Only effective if :ref:`collision_mode<class_ParticleProcessMaterial_property_collision_mode>` is :ref:`COLLISION_RIGID<class_ParticleProcessMaterial_constant_COLLISION_RIGID>`.
 
 .. rst-class:: classref-item-separator
 
@@ -969,7 +965,7 @@ If ``true``, interaction with particle attractors is enabled. In 3D, attraction 
 - |void| **set_collision_friction**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_collision_friction**\ (\ )
 
-粒子的摩擦。值範圍從 ``0``\ （無摩擦）到 ``1``\ （最大摩擦）。
+The particles' friction. Values range from ``0`` (frictionless) to ``1`` (maximum friction). Only effective if :ref:`collision_mode<class_ParticleProcessMaterial_property_collision_mode>` is :ref:`COLLISION_RIGID<class_ParticleProcessMaterial_constant_COLLISION_RIGID>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1024,9 +1020,9 @@ If ``true``, :ref:`GPUParticles3D.collision_base_size<class_GPUParticles3D_prope
 - |void| **set_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_color**\ (\ )
 
-每個粒子的初始顏色。如果定義了 :ref:`GPUParticles2D<class_GPUParticles2D>` 的 ``texture``\ ，它將乘以該顏色。
+Each particle's initial color. If the :ref:`GPUParticles2D<class_GPUParticles2D>`'s ``texture`` is defined, it will be multiplied by this color.
 
-\ **注意：**\ :ref:`color<class_ParticleProcessMaterial_property_color>` 乘以粒子網格的頂點顏色。要在 :ref:`BaseMaterial3D<class_BaseMaterial3D>` 上產生可見效果，\ :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *必須*\ 為 ``true``\ 。對於 :ref:`ShaderMaterial<class_ShaderMaterial>`\ ，必須在著色器的 ``fragment()`` 函式中插入 ``ALBEDO *= COLOR.rgb;``\ 。否則，\ :ref:`color<class_ParticleProcessMaterial_property_color>` 將沒有可見效果。
+\ **Note:** :ref:`color<class_ParticleProcessMaterial_property_color>` multiplies the particle mesh's vertex colors. To have a visible effect on a :ref:`BaseMaterial3D<class_BaseMaterial3D>`, :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *must* be ``true``. For a :ref:`ShaderMaterial<class_ShaderMaterial>`, ``ALBEDO *= COLOR.rgb;`` must be inserted in the shader's ``fragment()`` function. Otherwise, :ref:`color<class_ParticleProcessMaterial_property_color>` will have no visible effect.
 
 .. rst-class:: classref-item-separator
 
@@ -1043,9 +1039,9 @@ If ``true``, :ref:`GPUParticles3D.collision_base_size<class_GPUParticles3D_prope
 - |void| **set_color_initial_ramp**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_color_initial_ramp**\ (\ )
 
-每個粒子的初始顏色將沿著該 :ref:`GradientTexture1D<class_GradientTexture1D>`\ （乘以 :ref:`color<class_ParticleProcessMaterial_property_color>`\ ）而變化。
+Each particle's initial color will vary along this :ref:`GradientTexture1D<class_GradientTexture1D>` (multiplied with :ref:`color<class_ParticleProcessMaterial_property_color>`).
 
-\ **注意：**\ :ref:`color_initial_ramp<class_ParticleProcessMaterial_property_color_initial_ramp>` 乘以粒子網格的頂點顏色。要在 :ref:`BaseMaterial3D<class_BaseMaterial3D>` 上產生可見效果，\ :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *必須*\ 為 ``true``\ 。對於 :ref:`ShaderMaterial<class_ShaderMaterial>`\ ，必須在著色器的 ``fragment()`` 函式中插入 ``ALBEDO *= COLOR.rgb;``\ 。否則，\ :ref:`color_initial_ramp<class_ParticleProcessMaterial_property_color_initial_ramp>` 將沒有可見效果。
+\ **Note:** :ref:`color_initial_ramp<class_ParticleProcessMaterial_property_color_initial_ramp>` multiplies the particle mesh's vertex colors. To have a visible effect on a :ref:`BaseMaterial3D<class_BaseMaterial3D>`, :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *must* be ``true``. For a :ref:`ShaderMaterial<class_ShaderMaterial>`, ``ALBEDO *= COLOR.rgb;`` must be inserted in the shader's ``fragment()`` function. Otherwise, :ref:`color_initial_ramp<class_ParticleProcessMaterial_property_color_initial_ramp>` will have no visible effect.
 
 .. rst-class:: classref-item-separator
 
@@ -1062,9 +1058,9 @@ If ``true``, :ref:`GPUParticles3D.collision_base_size<class_GPUParticles3D_prope
 - |void| **set_color_ramp**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_color_ramp**\ (\ )
 
-每個粒子的顏色將在其生命週期內沿該 :ref:`GradientTexture1D<class_GradientTexture1D>` 變化（乘以 :ref:`color<class_ParticleProcessMaterial_property_color>`\ ）。
+Each particle's color will vary along this :ref:`GradientTexture1D<class_GradientTexture1D>` over its lifetime (multiplied with :ref:`color<class_ParticleProcessMaterial_property_color>`).
 
-\ **注意：**\ :ref:`color_ramp<class_ParticleProcessMaterial_property_color_ramp>` 乘以粒子網格的頂點顏色。要在 :ref:`BaseMaterial3D<class_BaseMaterial3D>` 上產生可見效果，\ :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *必須*\ 為 ``true``\ 。對於 :ref:`ShaderMaterial<class_ShaderMaterial>`\ ，必須在著色器的 ``fragment()`` 函式中插入 ``ALBEDO *= COLOR.rgb;``\ 。否則，\ :ref:`color_ramp<class_ParticleProcessMaterial_property_color_ramp>` 將沒有可見效果。
+\ **Note:** :ref:`color_ramp<class_ParticleProcessMaterial_property_color_ramp>` multiplies the particle mesh's vertex colors. To have a visible effect on a :ref:`BaseMaterial3D<class_BaseMaterial3D>`, :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *must* be ``true``. For a :ref:`ShaderMaterial<class_ShaderMaterial>`, ``ALBEDO *= COLOR.rgb;`` must be inserted in the shader's ``fragment()`` function. Otherwise, :ref:`color_ramp<class_ParticleProcessMaterial_property_color_ramp>` will have no visible effect.
 
 .. rst-class:: classref-item-separator
 
@@ -1081,7 +1077,7 @@ If ``true``, :ref:`GPUParticles3D.collision_base_size<class_GPUParticles3D_prope
 - |void| **set_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-阻尼將沿著這個 :ref:`CurveTexture<class_CurveTexture>` 變化。
+Damping will vary along this :ref:`CurveTexture<class_CurveTexture>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1098,7 +1094,7 @@ If ``true``, :ref:`GPUParticles3D.collision_base_size<class_GPUParticles3D_prope
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-粒子失去速度的最大速率。例如 ``100`` 的值表示粒子將在 ``1`` 秒內，速度從 ``100`` 變為 ``0``\ 。
+The maximum rate at which particles lose velocity. For example value of ``100`` means that the particle will go from ``100`` velocity to ``0`` in ``1`` second.
 
 .. rst-class:: classref-item-separator
 
@@ -1115,7 +1111,7 @@ If ``true``, :ref:`GPUParticles3D.collision_base_size<class_GPUParticles3D_prope
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-:ref:`damping_max<class_ParticleProcessMaterial_property_damping_max>` 的對應最小值。
+Minimum equivalent of :ref:`damping_max<class_ParticleProcessMaterial_property_damping_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1132,7 +1128,7 @@ If ``true``, :ref:`GPUParticles3D.collision_base_size<class_GPUParticles3D_prope
 - |void| **set_direction**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_direction**\ (\ )
 
-指定粒子發射方向的單位向量。
+Unit vector specifying the particles' emission direction.
 
 .. rst-class:: classref-item-separator
 
@@ -1225,9 +1221,9 @@ The box's extents if :ref:`emission_shape<class_ParticleProcessMaterial_property
 - |void| **set_emission_color_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_emission_color_texture**\ (\ )
 
-粒子顏色將被調變，調變使用的顏色將通過對該紋理在與 :ref:`emission_point_texture<class_ParticleProcessMaterial_property_emission_point_texture>` 相同的點處進行取樣來確定。
+Particle color will be modulated by color determined by sampling this texture at the same point as the :ref:`emission_point_texture<class_ParticleProcessMaterial_property_emission_point_texture>`.
 
-\ **注意：**\ :ref:`emission_color_texture<class_ParticleProcessMaterial_property_emission_color_texture>` 乘以粒子網格的頂點顏色。要在 :ref:`BaseMaterial3D<class_BaseMaterial3D>` 上產生可見效果，\ :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *必須*\ 為 ``true``\ 。對於 :ref:`ShaderMaterial<class_ShaderMaterial>`\ ，必須在著色器的 ``fragment()`` 函式中插入 ``ALBEDO *= COLOR.rgb;``\ 。否則，\ :ref:`emission_color_texture<class_ParticleProcessMaterial_property_emission_color_texture>` 將沒有可見效果。
+\ **Note:** :ref:`emission_color_texture<class_ParticleProcessMaterial_property_emission_color_texture>` multiplies the particle mesh's vertex colors. To have a visible effect on a :ref:`BaseMaterial3D<class_BaseMaterial3D>`, :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *must* be ``true``. For a :ref:`ShaderMaterial<class_ShaderMaterial>`, ``ALBEDO *= COLOR.rgb;`` must be inserted in the shader's ``fragment()`` function. Otherwise, :ref:`emission_color_texture<class_ParticleProcessMaterial_property_emission_color_texture>` will have no visible effect.
 
 .. rst-class:: classref-item-separator
 
@@ -1263,7 +1259,7 @@ Each particle's color will be multiplied by this :ref:`CurveTexture<class_CurveT
 - |void| **set_emission_normal_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_emission_normal_texture**\ (\ )
 
-粒子的速度和旋轉將通過在與\ :ref:`emission_point_texture<class_ParticleProcessMaterial_property_emission_point_texture>`\ 相同的點上對該紋理進行取樣來設定。僅在\ :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_DIRECTED_POINTS>`\ 中使用。可以通過選擇工具列中 "粒子 "工具下的 "從網格/節點建立發射點"，從網格或節點自動創建。
+Particle velocity and rotation will be set by sampling this texture at the same point as the :ref:`emission_point_texture<class_ParticleProcessMaterial_property_emission_point_texture>`. Used only in :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_DIRECTED_POINTS>`. Can be created automatically from mesh or node by selecting "Create Emission Points from Mesh/Node" under the "Particles" tool in the toolbar.
 
 .. rst-class:: classref-item-separator
 
@@ -1297,7 +1293,7 @@ The number of emission points if :ref:`emission_shape<class_ParticleProcessMater
 - |void| **set_emission_point_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_emission_point_texture**\ (\ )
 
-粒子將被發射到由隨機取樣紋理所決定的位置。與\ :ref:`EMISSION_SHAPE_POINTS<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_POINTS>`\ 和\ :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_DIRECTED_POINTS>`\ 一起使用。可以通過選擇工具列中的“粒子”工具下的“從網格/節點中建立發射點”自動建立網格或節點。
+Particles will be emitted at positions determined by sampling this texture at a random position. Used with :ref:`EMISSION_SHAPE_POINTS<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_POINTS>` and :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_DIRECTED_POINTS>`. Can be created automatically from mesh or node by selecting "Create Emission Points from Mesh/Node" under the "Particles" tool in the toolbar.
 
 .. rst-class:: classref-item-separator
 
@@ -1314,7 +1310,7 @@ The number of emission points if :ref:`emission_shape<class_ParticleProcessMater
 - |void| **set_emission_ring_axis**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_emission_ring_axis**\ (\ )
 
-使用形為 :ref:`EMISSION_SHAPE_RING<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_RING>` 的發射器時環的軸。
+The axis of the ring when using the emitter :ref:`EMISSION_SHAPE_RING<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_RING>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1350,7 +1346,7 @@ The angle of the cone when using the emitter :ref:`EMISSION_SHAPE_RING<class_Par
 - |void| **set_emission_ring_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_ring_height**\ (\ )
 
-使用形為 :ref:`EMISSION_SHAPE_RING<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_RING>` 的發射器時環的高度。
+The height of the ring when using the emitter :ref:`EMISSION_SHAPE_RING<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_RING>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1367,7 +1363,7 @@ The angle of the cone when using the emitter :ref:`EMISSION_SHAPE_RING<class_Par
 - |void| **set_emission_ring_inner_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_ring_inner_radius**\ (\ )
 
-使用形為 :ref:`EMISSION_SHAPE_RING<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_RING>` 的發射器時環的內半徑。
+The inner radius of the ring when using the emitter :ref:`EMISSION_SHAPE_RING<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_RING>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1384,7 +1380,7 @@ The angle of the cone when using the emitter :ref:`EMISSION_SHAPE_RING<class_Par
 - |void| **set_emission_ring_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_ring_radius**\ (\ )
 
-使用形為 :ref:`EMISSION_SHAPE_RING<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_RING>` 的發射器時環的半徑。
+The radius of the ring when using the emitter :ref:`EMISSION_SHAPE_RING<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_RING>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1452,7 +1448,7 @@ The scale of the :ref:`emission_shape<class_ParticleProcessMaterial_property_emi
 - |void| **set_emission_sphere_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_sphere_radius**\ (\ )
 
-:ref:`emission_shape<class_ParticleProcessMaterial_property_emission_shape>` 被設定為 :ref:`EMISSION_SHAPE_SPHERE<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_SPHERE>` 時，該球體的半徑。
+The sphere's radius if :ref:`emission_shape<class_ParticleProcessMaterial_property_emission_shape>` is set to :ref:`EMISSION_SHAPE_SPHERE<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_SPHERE>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1469,7 +1465,7 @@ The scale of the :ref:`emission_shape<class_ParticleProcessMaterial_property_emi
 - |void| **set_flatness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_flatness**\ (\ )
 
-沿 Y 軸的 :ref:`spread<class_ParticleProcessMaterial_property_spread>` 量。
+Amount of :ref:`spread<class_ParticleProcessMaterial_property_spread>` along the Y axis.
 
 .. rst-class:: classref-item-separator
 
@@ -1486,7 +1482,7 @@ The scale of the :ref:`emission_shape<class_ParticleProcessMaterial_property_emi
 - |void| **set_gravity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_gravity**\ (\ )
 
-套用於每個粒子的重力。
+Gravity applied to every particle.
 
 .. rst-class:: classref-item-separator
 
@@ -1503,7 +1499,7 @@ The scale of the :ref:`emission_shape<class_ParticleProcessMaterial_property_emi
 - |void| **set_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-每個粒子的色調將沿著這個 :ref:`CurveTexture<class_CurveTexture>` 變化。
+Each particle's hue will vary along this :ref:`CurveTexture<class_CurveTexture>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1520,7 +1516,7 @@ The scale of the :ref:`emission_shape<class_ParticleProcessMaterial_property_emi
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-套用於每個粒子的最大初始色相變化。會改變粒子顏色的色相。
+Maximum initial hue variation applied to each particle. It will shift the particle color's hue.
 
 .. rst-class:: classref-item-separator
 
@@ -1537,7 +1533,7 @@ The scale of the :ref:`emission_shape<class_ParticleProcessMaterial_property_emi
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-:ref:`hue_variation_max<class_ParticleProcessMaterial_property_hue_variation_max>` 的對應最小值。
+Minimum equivalent of :ref:`hue_variation_max<class_ParticleProcessMaterial_property_hue_variation_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1571,7 +1567,7 @@ Percentage of the velocity of the respective :ref:`GPUParticles2D<class_GPUParti
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-每個粒子的最大初始速度大小。方向來自 :ref:`direction<class_ParticleProcessMaterial_property_direction>` 和 :ref:`spread<class_ParticleProcessMaterial_property_spread>`\ 。
+Maximum initial velocity magnitude for each particle. Direction comes from :ref:`direction<class_ParticleProcessMaterial_property_direction>` and :ref:`spread<class_ParticleProcessMaterial_property_spread>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1588,7 +1584,7 @@ Percentage of the velocity of the respective :ref:`GPUParticles2D<class_GPUParti
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-:ref:`initial_velocity_max<class_ParticleProcessMaterial_property_initial_velocity_max>` 的對應最小值。
+Minimum equivalent of :ref:`initial_velocity_max<class_ParticleProcessMaterial_property_initial_velocity_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1605,7 +1601,7 @@ Percentage of the velocity of the respective :ref:`GPUParticles2D<class_GPUParti
 - |void| **set_lifetime_randomness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_lifetime_randomness**\ (\ )
 
-粒子壽命隨機比率。粒子壽命的公式為 ``lifetime * (1.0 - randf() * lifetime_randomness)``\ 。例如 :ref:`lifetime_randomness<class_ParticleProcessMaterial_property_lifetime_randomness>` 為 ``0.4`` 時，壽命會被縮放為原本的 ``0.6`` 到 ``1.0`` 倍。
+Particle lifetime randomness ratio. The equation for the lifetime of a particle is ``lifetime * (1.0 - randf() * lifetime_randomness)``. For example, a :ref:`lifetime_randomness<class_ParticleProcessMaterial_property_lifetime_randomness>` of ``0.4`` scales the lifetime between ``0.6`` to ``1.0`` of its original value.
 
 .. rst-class:: classref-item-separator
 
@@ -1622,7 +1618,7 @@ Percentage of the velocity of the respective :ref:`GPUParticles2D<class_GPUParti
 - |void| **set_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-每個粒子的線性加速度將沿著這個 :ref:`CurveTexture<class_CurveTexture>` 變化。
+Each particle's linear acceleration will vary along this :ref:`CurveTexture<class_CurveTexture>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1639,7 +1635,7 @@ Percentage of the velocity of the respective :ref:`GPUParticles2D<class_GPUParti
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-在運動方向上套用於每個粒子的最大線性加速度。
+Maximum linear acceleration applied to each particle in the direction of motion.
 
 .. rst-class:: classref-item-separator
 
@@ -1656,7 +1652,7 @@ Percentage of the velocity of the respective :ref:`GPUParticles2D<class_GPUParti
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-:ref:`linear_accel_max<class_ParticleProcessMaterial_property_linear_accel_max>` 的對應最小值。
+Minimum equivalent of :ref:`linear_accel_max<class_ParticleProcessMaterial_property_linear_accel_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1732,7 +1728,7 @@ Minimum equivalent of :ref:`orbit_velocity_max<class_ParticleProcessMaterial_pro
 - |void| **set_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>`\ ) |const|
 
-將粒子的 Y 軸與其速度方向對齊。
+Align Y axis of particle with the direction of its velocity.
 
 .. rst-class:: classref-item-separator
 
@@ -1766,7 +1762,7 @@ Changes the behavior of the damping properties from a linear deceleration to a d
 - |void| **set_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>`\ ) |const|
 
-如果為 ``true``\ ，則粒子將不會在 z 軸上移動。
+If ``true``, particles will not move on the z axis.
 
 .. rst-class:: classref-item-separator
 
@@ -1783,7 +1779,7 @@ Changes the behavior of the damping properties from a linear deceleration to a d
 - |void| **set_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>`\ ) |const|
 
-如果為 ``true``\ ，則粒子繞 Y 軸旋轉 :ref:`angle_min<class_ParticleProcessMaterial_property_angle_min>`\ 。
+If ``true``, particles rotate around Y axis by :ref:`angle_min<class_ParticleProcessMaterial_property_angle_min>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1800,7 +1796,7 @@ Changes the behavior of the damping properties from a linear deceleration to a d
 - |void| **set_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-每個粒子的徑向加速度將沿著這個 :ref:`CurveTexture<class_CurveTexture>` 變化。
+Each particle's radial acceleration will vary along this :ref:`CurveTexture<class_CurveTexture>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1817,7 +1813,7 @@ Changes the behavior of the damping properties from a linear deceleration to a d
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-套用於每個粒子的最大徑向加速度。使粒子加速遠離原點；或如果為負，則加速靠近原點。
+Maximum radial acceleration applied to each particle. Makes particle accelerate away from the origin or towards it if negative.
 
 .. rst-class:: classref-item-separator
 
@@ -1834,7 +1830,7 @@ Changes the behavior of the damping properties from a linear deceleration to a d
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-:ref:`radial_accel_max<class_ParticleProcessMaterial_property_radial_accel_max>` 的對應最小值。
+Minimum equivalent of :ref:`radial_accel_max<class_ParticleProcessMaterial_property_radial_accel_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1925,7 +1921,7 @@ Each particle's scale will vary along this :ref:`CurveTexture<class_CurveTexture
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-套用於每個粒子的最大初始縮放。
+Maximum initial scale applied to each particle.
 
 .. rst-class:: classref-item-separator
 
@@ -1942,7 +1938,7 @@ Each particle's scale will vary along this :ref:`CurveTexture<class_CurveTexture
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-:ref:`scale_max<class_ParticleProcessMaterial_property_scale_max>` 對應的最小值。
+Minimum equivalent of :ref:`scale_max<class_ParticleProcessMaterial_property_scale_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2014,7 +2010,7 @@ Minimum velocity value reference for :ref:`scale_over_velocity_curve<class_Parti
 - |void| **set_spread**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_spread**\ (\ )
 
-每個粒子的初始方向範圍，從 ``+spread`` 度到 ``-spread`` 度。
+Each particle's initial direction range from ``+spread`` to ``-spread`` degrees.
 
 .. rst-class:: classref-item-separator
 
@@ -2141,7 +2137,7 @@ The particle subemitter mode (see :ref:`GPUParticles2D.sub_emitter<class_GPUPart
 - |void| **set_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-每個粒子的切向加速度將沿著這個 :ref:`CurveTexture<class_CurveTexture>` 變化。
+Each particle's tangential acceleration will vary along this :ref:`CurveTexture<class_CurveTexture>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2158,7 +2154,7 @@ The particle subemitter mode (see :ref:`GPUParticles2D.sub_emitter<class_GPUPart
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-套用於每個粒子的最大切向加速度。切向加速度垂直於粒子的速度，從而使粒子產生渦旋運動。
+Maximum tangential acceleration applied to each particle. Tangential acceleration is perpendicular to the particle's velocity giving the particles a swirling motion.
 
 .. rst-class:: classref-item-separator
 
@@ -2175,7 +2171,7 @@ The particle subemitter mode (see :ref:`GPUParticles2D.sub_emitter<class_GPUPart
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-:ref:`tangential_accel_max<class_ParticleProcessMaterial_property_tangential_accel_max>` 的對應最小值。
+Minimum equivalent of :ref:`tangential_accel_max<class_ParticleProcessMaterial_property_tangential_accel_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2192,9 +2188,9 @@ The particle subemitter mode (see :ref:`GPUParticles2D.sub_emitter<class_GPUPart
 - |void| **set_turbulence_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_turbulence_enabled**\ (\ )
 
-如果為 ``true``\ ，則為粒子系統啟用湍流。湍流可以（基於 3D 雜訊圖案）根據粒子的位置來改變粒子的移動。在 3D 中，可以用 :ref:`GPUParticlesAttractorVectorField3D<class_GPUParticlesAttractorVectorField3D>` 和 :ref:`NoiseTexture3D<class_NoiseTexture3D>` 作為世界空間湍流的平替，能夠讓不同粒子系統作出相同的反應。
+If ``true``, enables turbulence for the particle system. Turbulence can be used to vary particle movement according to its position (based on a 3D noise pattern). In 3D, :ref:`GPUParticlesAttractorVectorField3D<class_GPUParticlesAttractorVectorField3D>` with :ref:`NoiseTexture3D<class_NoiseTexture3D>` can be used as an alternative to turbulence that works in world space and with multiple particle systems reacting in the same way.
 
-\ **注意：**\ 啟用湍流對於 GPU 有較高的性能消耗。請最多只對少量粒子系統啟用湍流，以移動/Web 平臺作為目標時請考慮禁用湍流。
+\ **Note:** Enabling turbulence has a high performance cost on the GPU. Only enable turbulence on a few particle systems at once at most, and consider disabling it when targeting mobile/web platforms.
 
 .. rst-class:: classref-item-separator
 
@@ -2211,9 +2207,9 @@ The particle subemitter mode (see :ref:`GPUParticles2D.sub_emitter<class_GPUPart
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-對每個粒子的最大湍流影響。
+Maximum turbulence influence on each particle.
 
-對每個粒子的實際湍流影響量，計算為介於 :ref:`turbulence_influence_min<class_ParticleProcessMaterial_property_turbulence_influence_min>` 和 :ref:`turbulence_influence_max<class_ParticleProcessMaterial_property_turbulence_influence_max>` 之間的一個隨機值，並乘以來自 :ref:`turbulence_influence_over_life<class_ParticleProcessMaterial_property_turbulence_influence_over_life>` 的湍流影響量。
+The actual amount of turbulence influence on each particle is calculated as a random value between :ref:`turbulence_influence_min<class_ParticleProcessMaterial_property_turbulence_influence_min>` and :ref:`turbulence_influence_max<class_ParticleProcessMaterial_property_turbulence_influence_max>` and multiplied by the amount of turbulence influence from :ref:`turbulence_influence_over_life<class_ParticleProcessMaterial_property_turbulence_influence_over_life>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2230,9 +2226,9 @@ The particle subemitter mode (see :ref:`GPUParticles2D.sub_emitter<class_GPUPart
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-對每個粒子的最小湍流影響。
+Minimum turbulence influence on each particle.
 
-對每個粒子的實際湍流影響量，計算為介於 :ref:`turbulence_influence_min<class_ParticleProcessMaterial_property_turbulence_influence_min>` 和 :ref:`turbulence_influence_max<class_ParticleProcessMaterial_property_turbulence_influence_max>` 之間的一個隨機值，並乘以來自 :ref:`turbulence_influence_over_life<class_ParticleProcessMaterial_property_turbulence_influence_over_life>` 的湍流影響量。
+The actual amount of turbulence influence on each particle is calculated as a random value between :ref:`turbulence_influence_min<class_ParticleProcessMaterial_property_turbulence_influence_min>` and :ref:`turbulence_influence_max<class_ParticleProcessMaterial_property_turbulence_influence_max>` and multiplied by the amount of turbulence influence from :ref:`turbulence_influence_over_life<class_ParticleProcessMaterial_property_turbulence_influence_over_life>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2249,7 +2245,7 @@ The particle subemitter mode (see :ref:`GPUParticles2D.sub_emitter<class_GPUPart
 - |void| **set_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-每個粒子的湍流量，將在其生命週期內沿這條 :ref:`CurveTexture<class_CurveTexture>` 受到影響。
+Each particle's amount of turbulence will be influenced along this :ref:`CurveTexture<class_CurveTexture>` over its life time.
 
 .. rst-class:: classref-item-separator
 
@@ -2266,9 +2262,9 @@ The particle subemitter mode (see :ref:`GPUParticles2D.sub_emitter<class_GPUPart
 - |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-湍流對每個粒子出生位置的最大位移。
+Maximum displacement of each particle's spawn position by the turbulence.
 
-實際位移量將是基礎湍流乘以一個介於 :ref:`turbulence_initial_displacement_min<class_ParticleProcessMaterial_property_turbulence_initial_displacement_min>` 和 :ref:`turbulence_initial_displacement_max<class_ParticleProcessMaterial_property_turbulence_initial_displacement_max>` 之間的隨機值的係數。
+The actual amount of displacement will be a factor of the underlying turbulence multiplied by a random value between :ref:`turbulence_initial_displacement_min<class_ParticleProcessMaterial_property_turbulence_initial_displacement_min>` and :ref:`turbulence_initial_displacement_max<class_ParticleProcessMaterial_property_turbulence_initial_displacement_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2285,9 +2281,9 @@ The particle subemitter mode (see :ref:`GPUParticles2D.sub_emitter<class_GPUPart
 - |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const|
 
-湍流對每個粒子出生位置的最小位移。
+Minimum displacement of each particle's spawn position by the turbulence.
 
-實際位移量將是基礎湍流乘以一個介於 :ref:`turbulence_initial_displacement_min<class_ParticleProcessMaterial_property_turbulence_initial_displacement_min>` 和 :ref:`turbulence_initial_displacement_max<class_ParticleProcessMaterial_property_turbulence_initial_displacement_max>` 之間的隨機值的係數。
+The actual amount of displacement will be a factor of the underlying turbulence multiplied by a random value between :ref:`turbulence_initial_displacement_min<class_ParticleProcessMaterial_property_turbulence_initial_displacement_min>` and :ref:`turbulence_initial_displacement_max<class_ParticleProcessMaterial_property_turbulence_initial_displacement_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2304,9 +2300,9 @@ The particle subemitter mode (see :ref:`GPUParticles2D.sub_emitter<class_GPUPart
 - |void| **set_turbulence_noise_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_turbulence_noise_scale**\ (\ )
 
-該值控制湍流雜訊圖案的整體比例/頻率。
+This value controls the overall scale/frequency of the turbulence noise pattern.
 
-小的比例會產生更小的特徵具有更多細節，而高的比例會產生具有更大特徵的更平滑的雜訊。
+A small scale will result in smaller features with more detail while a high scale will result in smoother noise with larger features.
 
 .. rst-class:: classref-item-separator
 
@@ -2323,9 +2319,9 @@ The particle subemitter mode (see :ref:`GPUParticles2D.sub_emitter<class_GPUPart
 - |void| **set_turbulence_noise_speed**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_turbulence_noise_speed**\ (\ )
 
-湍流場的滾動速度。設定的是圖案隨時間移動的方向趨勢。
+A scrolling velocity for the turbulence field. This sets a directional trend for the pattern to move in over time.
 
-預設值 ``Vector3(0, 0, 0)`` 會將滾動關閉。
+The default value of ``Vector3(0, 0, 0)`` turns off the scrolling.
 
 .. rst-class:: classref-item-separator
 
@@ -2342,9 +2338,9 @@ The particle subemitter mode (see :ref:`GPUParticles2D.sub_emitter<class_GPUPart
 - |void| **set_turbulence_noise_speed_random**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_turbulence_noise_speed_random**\ (\ )
 
-湍流場的原地變化率。會決定雜訊圖案隨時間變化的快慢。
+The in-place rate of change of the turbulence field. This defines how quickly the noise pattern varies over time.
 
-值為 0.0 時得到的是固定的圖案。
+A value of 0.0 will result in a fixed pattern.
 
 .. rst-class:: classref-item-separator
 
@@ -2361,7 +2357,7 @@ The particle subemitter mode (see :ref:`GPUParticles2D.sub_emitter<class_GPUPart
 - |void| **set_turbulence_noise_strength**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_turbulence_noise_strength**\ (\ )
 
-湍流雜訊強度。增加此值將導致更強烈、對比度更高的雜訊圖案。
+The turbulence noise strength. Increasing this will result in a stronger, more contrasting, flow pattern.
 
 .. rst-class:: classref-item-separator
 
@@ -2403,8 +2399,8 @@ A pivot point used to calculate radial and orbital velocity of particles.
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_ParticleProcessMaterial_method_get_param:
 
@@ -2426,7 +2422,7 @@ The ``x`` component of the returned vector corresponds to minimum and the ``y`` 
 
 :ref:`float<class_float>` **get_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const| :ref:`🔗<class_ParticleProcessMaterial_method_get_param_max>`
 
-返回給定參數的最大值範圍。
+Returns the maximum value range for the given parameter.
 
 .. rst-class:: classref-item-separator
 
@@ -2438,7 +2434,7 @@ The ``x`` component of the returned vector corresponds to minimum and the ``y`` 
 
 :ref:`float<class_float>` **get_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const| :ref:`🔗<class_ParticleProcessMaterial_method_get_param_min>`
 
-返回給定參數的最小值範圍。
+Returns the minimum value range for the given parameter.
 
 .. rst-class:: classref-item-separator
 
@@ -2450,7 +2446,7 @@ The ``x`` component of the returned vector corresponds to minimum and the ``y`` 
 
 :ref:`Texture2D<class_Texture2D>` **get_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`\ ) |const| :ref:`🔗<class_ParticleProcessMaterial_method_get_param_texture>`
 
-返回指定參數所使用的 :ref:`Texture2D<class_Texture2D>`\ 。
+Returns the :ref:`Texture2D<class_Texture2D>` used by the specified parameter.
 
 .. rst-class:: classref-item-separator
 
@@ -2488,7 +2484,7 @@ The ``x`` component of the argument vector corresponds to minimum and the ``y`` 
 
 |void| **set_param_max**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_ParticleProcessMaterial_method_set_param_max>`
 
-設定給定參數的最大值範圍。
+Sets the maximum value range for the given parameter.
 
 .. rst-class:: classref-item-separator
 
@@ -2500,7 +2496,7 @@ The ``x`` component of the argument vector corresponds to minimum and the ``y`` 
 
 |void| **set_param_min**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_ParticleProcessMaterial_method_set_param_min>`
 
-設定給定參數的最小值範圍。
+Sets the minimum value range for the given parameter.
 
 .. rst-class:: classref-item-separator
 
@@ -2512,7 +2508,7 @@ The ``x`` component of the argument vector corresponds to minimum and the ``y`` 
 
 |void| **set_param_texture**\ (\ param\: :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_ParticleProcessMaterial_method_set_param_texture>`
 
-為指定的 :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` 設定 :ref:`Texture2D<class_Texture2D>`\ 。
+Sets the :ref:`Texture2D<class_Texture2D>` for the specified :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2526,12 +2522,12 @@ The ``x`` component of the argument vector corresponds to minimum and the ``y`` 
 
 Sets the ``particle_flag`` to ``enable``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,30 +5,30 @@
 CompositorEffect
 ================
 
-**实验性：** The implementation may change as more of the rendering internals are exposed over time.
+**Experimental:** The implementation may change as more of the rendering internals are exposed over time.
 
-**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用于创建自定义渲染效果的资源。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-这种资源定义的是自定义渲染效果，可以通过视口的 :ref:`Environment<class_Environment>` 应用到 :ref:`Viewport<class_Viewport>` 上。可以实现在渲染管道的给定阶段进行渲染期间调用的回调，并允许插入其他阶段。请注意，该回调是在渲染线程上执行的。CompositorEffect 是抽象基类，实现特定的渲染逻辑必须对该类进行扩展。
+This resource allows for creating a custom rendering effect.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`合成器 <../tutorials/rendering/compositor>`
+This resource defines a custom rendering effect that can be applied to :ref:`Viewport<class_Viewport>`\ s through the viewports' :ref:`Environment<class_Environment>`. You can implement a callback that is called during rendering at a given stage of the rendering pipeline and allows you to insert additional passes. Note that this callback happens on the rendering thread. CompositorEffect is an abstract base class and must be extended to implement specific rendering logic.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`The Compositor <../tutorials/rendering/compositor>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -51,8 +51,8 @@ CompositorEffect
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -67,8 +67,8 @@ CompositorEffect
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_CompositorEffect_EffectCallbackType:
 
@@ -82,7 +82,7 @@ enum **EffectCallbackType**: :ref:`🔗<enum_CompositorEffect_EffectCallbackType
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_PRE_OPAQUE** = ``0``
 
-回调在不透明渲染阶段之前调用，但在深度前置阶段之后（如果适用）。
+The callback is called before our opaque rendering pass, but after depth prepass (if applicable).
 
 .. _class_CompositorEffect_constant_EFFECT_CALLBACK_TYPE_POST_OPAQUE:
 
@@ -90,7 +90,7 @@ enum **EffectCallbackType**: :ref:`🔗<enum_CompositorEffect_EffectCallbackType
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_POST_OPAQUE** = ``1``
 
-回调在不透明渲染阶段之后调用，但在渲染天空之前。
+The callback is called after our opaque rendering pass, but before our sky is rendered.
 
 .. _class_CompositorEffect_constant_EFFECT_CALLBACK_TYPE_POST_SKY:
 
@@ -98,7 +98,7 @@ enum **EffectCallbackType**: :ref:`🔗<enum_CompositorEffect_EffectCallbackType
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_POST_SKY** = ``2``
 
-回调在渲染天空之后调用，但在创建后台缓冲之前（如果启用，则在次表面散射和/或屏幕空间反射之前）。
+The callback is called after our sky is rendered, but before our back buffers are created (and if enabled, before subsurface scattering and/or screen space reflections).
 
 .. _class_CompositorEffect_constant_EFFECT_CALLBACK_TYPE_PRE_TRANSPARENT:
 
@@ -106,7 +106,7 @@ enum **EffectCallbackType**: :ref:`🔗<enum_CompositorEffect_EffectCallbackType
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_PRE_TRANSPARENT** = ``3``
 
-回调在透明渲染阶段之前调用，但在渲染天空和创建后台缓冲区之后。
+The callback is called before our transparent rendering pass, but after our sky is rendered and we've created our back buffers.
 
 .. _class_CompositorEffect_constant_EFFECT_CALLBACK_TYPE_POST_TRANSPARENT:
 
@@ -114,7 +114,7 @@ enum **EffectCallbackType**: :ref:`🔗<enum_CompositorEffect_EffectCallbackType
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_POST_TRANSPARENT** = ``4``
 
-回调在透明渲染阶段之后调用，但在内置后期效果和输出到渲染目标之前。
+The callback is called after our transparent rendering pass, but before any built-in post-processing effects and output to our render target.
 
 .. _class_CompositorEffect_constant_EFFECT_CALLBACK_TYPE_MAX:
 
@@ -122,7 +122,7 @@ enum **EffectCallbackType**: :ref:`🔗<enum_CompositorEffect_EffectCallbackType
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_MAX** = ``5``
 
-代表 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` 枚举的大小。
+Represents the size of the :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -130,8 +130,8 @@ enum **EffectCallbackType**: :ref:`🔗<enum_CompositorEffect_EffectCallbackType
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_CompositorEffect_property_access_resolved_color:
 
@@ -144,9 +144,9 @@ enum **EffectCallbackType**: :ref:`🔗<enum_CompositorEffect_EffectCallbackType
 - |void| **set_access_resolved_color**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_access_resolved_color**\ (\ )
 
-如果为 ``true`` 并且启用了 MSAA，则会在执行该效果之前触发颜色缓冲的解析。
+If ``true`` and MSAA is enabled, this will trigger a color buffer resolve before the effect is run.
 
-\ **注意：**\ 要在 :ref:`_render_callback()<class_CompositorEffect_private_method__render_callback>` 中访问解析后的缓冲，请使用：
+\ **Note:** In :ref:`_render_callback()<class_CompositorEffect_private_method__render_callback>`, to access the resolved buffer use:
 
 ::
 
@@ -168,9 +168,9 @@ enum **EffectCallbackType**: :ref:`🔗<enum_CompositorEffect_EffectCallbackType
 - |void| **set_access_resolved_depth**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_access_resolved_depth**\ (\ )
 
-如果为 ``true`` 并且启用了 MSAA，则会在执行该效果之前触发深度缓冲的解析。
+If ``true`` and MSAA is enabled, this will trigger a depth buffer resolve before the effect is run.
 
-\ **注意：**\ 要在 :ref:`_render_callback()<class_CompositorEffect_private_method__render_callback>` 中访问解析后的缓冲，请使用：
+\ **Note:** In :ref:`_render_callback()<class_CompositorEffect_private_method__render_callback>`, to access the resolved buffer use:
 
 ::
 
@@ -192,7 +192,7 @@ enum **EffectCallbackType**: :ref:`🔗<enum_CompositorEffect_EffectCallbackType
 - |void| **set_effect_callback_type**\ (\ value\: :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>`\ )
 - :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **get_effect_callback_type**\ (\ )
 
-实现的效果类型，决定在渲染的哪个阶段调用回调。
+The type of effect that is implemented, determines at what stage of rendering the callback is called.
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +209,7 @@ enum **EffectCallbackType**: :ref:`🔗<enum_CompositorEffect_EffectCallbackType
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enabled**\ (\ )
 
-如果为 ``true``\ ，则该渲染效果会应用到所有相关视口。
+If ``true`` this rendering effect is applied to any viewport it is added to.
 
 .. rst-class:: classref-item-separator
 
@@ -226,9 +226,9 @@ enum **EffectCallbackType**: :ref:`🔗<enum_CompositorEffect_EffectCallbackType
 - |void| **set_needs_motion_vectors**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_needs_motion_vectors**\ (\ )
 
-如果为 ``true``\ ，则会在不透明渲染状态下触发运动向量的计算。
+If ``true`` this triggers motion vectors being calculated during the opaque render state.
 
-\ **注意：**\ 要在 :ref:`_render_callback()<class_CompositorEffect_private_method__render_callback>` 中访问运动向量缓冲，请使用：
+\ **Note:** In :ref:`_render_callback()<class_CompositorEffect_private_method__render_callback>`, to access the motion vector buffer use:
 
 ::
 
@@ -250,16 +250,16 @@ enum **EffectCallbackType**: :ref:`🔗<enum_CompositorEffect_EffectCallbackType
 - |void| **set_needs_normal_roughness**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_needs_normal_roughness**\ (\ )
 
-如果为 ``true``\ ，则会在深度预阶段中输出法线和粗糙度数据，仅适用于 Forward+ 渲染器。
+If ``true`` this triggers normal and roughness data to be output during our depth pre-pass, only applicable for the Forward+ renderer.
 
-\ **注意：**\ 在 :ref:`_render_callback()<class_CompositorEffect_private_method__render_callback>` 中访问粗糙度缓冲：
+\ **Note:** In :ref:`_render_callback()<class_CompositorEffect_private_method__render_callback>`, to access the roughness buffer use:
 
 ::
 
     var render_scene_buffers = render_data.get_render_scene_buffers()
     var roughness_buffer = render_scene_buffers.get_texture("forward_clustered", "normal_roughness")
 
-原始的法线和粗糙度缓冲使用优化格式存储，与空间着色器中的格式不同。对缓冲采样时必须应用转换函数。请使用从\ `这里 <https://github.com/godotengine/godot/blob/da5f39889f155658cef7f7ec3cc1abb94e17d815/servers/rendering/renderer_rd/shaders/forward_clustered/scene_forward_clustered_inc.glsl#L334-L341>`__\ 复制的函数：
+The raw normal and roughness buffer is stored in an optimized format, different than the one available in Spatial shaders. When sampling the buffer, a conversion function must be applied. Use this function, copied from `here <https://github.com/godotengine/godot/blob/da5f39889f155658cef7f7ec3cc1abb94e17d815/servers/rendering/renderer_rd/shaders/forward_clustered/scene_forward_clustered_inc.glsl#L334-L341>`__:
 
 ::
 
@@ -287,7 +287,7 @@ enum **EffectCallbackType**: :ref:`🔗<enum_CompositorEffect_EffectCallbackType
 - |void| **set_needs_separate_specular**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_needs_separate_specular**\ (\ )
 
-如果为 ``true``\ ，则会触发镜面反射数据渲染至独立缓冲，在应用效果后进行混合，仅适用于 Forward+ 渲染器。
+If ``true`` this triggers specular data being rendered to a separate buffer and combined after effects have been applied, only applicable for the Forward+ renderer.
 
 .. rst-class:: classref-section-separator
 
@@ -295,8 +295,8 @@ enum **EffectCallbackType**: :ref:`🔗<enum_CompositorEffect_EffectCallbackType
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_CompositorEffect_private_method__render_callback:
 
@@ -304,14 +304,14 @@ enum **EffectCallbackType**: :ref:`🔗<enum_CompositorEffect_EffectCallbackType
 
 |void| **_render_callback**\ (\ effect_callback_type\: :ref:`int<class_int>`, render_data\: :ref:`RenderData<class_RenderData>`\ ) |virtual| :ref:`🔗<class_CompositorEffect_private_method__render_callback>`
 
-请使用自定义的渲染代码实现该方法。\ ``effect_callback_type`` 应当与 :ref:`effect_callback_type<class_CompositorEffect_property_effect_callback_type>` 中指定的效果回调类型一致。可以通过 ``render_data`` 访问渲染状态，这个状态只有在渲染时有效，不应该存储。
+Implement this function with your custom rendering code. ``effect_callback_type`` should always match the effect callback type you've specified in :ref:`effect_callback_type<class_CompositorEffect_property_effect_callback_type>`. ``render_data`` provides access to the rendering state, it is only valid during rendering and should not be stored.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

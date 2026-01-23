@@ -5,14 +5,14 @@
 GLTFObjectModelProperty
 =======================
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 Describes how to access a property as defined in the glTF object model.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 GLTFObjectModelProperty defines a mapping between a property in the glTF object model and a NodePath in the Godot scene tree. This can be used to animate properties in a glTF file using the ``KHR_animation_pointer`` extension, or to access them through an engine-agnostic script such as a behavior graph as defined by the ``KHR_interactivity`` extension.
 
@@ -22,8 +22,8 @@ The glTF property is identified by JSON pointer(s) stored in :ref:`json_pointers
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
 - `GLTF Object Model <https://github.com/KhronosGroup/glTF/blob/main/specification/2.0/ObjectModel.adoc>`__
 
@@ -31,8 +31,8 @@ The glTF property is identified by JSON pointer(s) stored in :ref:`json_pointers
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ The glTF property is identified by JSON pointer(s) stored in :ref:`json_pointers
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -79,8 +79,8 @@ The glTF property is identified by JSON pointer(s) stored in :ref:`json_pointers
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_GLTFObjectModelProperty_GLTFObjectModelType:
 
@@ -182,8 +182,8 @@ Object model type "int". Represented in the glTF JSON as a number, and encoded i
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_GLTFObjectModelProperty_property_gltf_to_godot_expression:
 
@@ -291,8 +291,8 @@ The type of data stored in the Godot property. This is the type of the property 
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_GLTFObjectModelProperty_method_append_node_path:
 
@@ -362,12 +362,12 @@ Returns ``true`` if :ref:`node_paths<class_GLTFObjectModelProperty_property_node
 
 Sets the :ref:`variant_type<class_GLTFObjectModelProperty_property_variant_type>` and :ref:`object_model_type<class_GLTFObjectModelProperty_property_object_model_type>` properties. This is a convenience method to set both properties at once, since they are almost always known at the same time. This method should be called once. Calling it again with the same values will have no effect.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

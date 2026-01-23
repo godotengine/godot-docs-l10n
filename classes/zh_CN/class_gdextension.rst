@@ -5,32 +5,32 @@
 GDExtension
 ===========
 
-**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-GDExtension 的原生库。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-**GDExtension** 资源类型代表一个\ `共享库 <https://en.wikipedia.org/wiki/Shared_library>`__\ ，它可以扩展引擎的功能。\ :ref:`GDExtensionManager<class_GDExtensionManager>` 单例负责加载、重新加载和卸载 **GDExtension** 资源。
-
-\ **注意：**\ GDExtension 本身不是脚本语言，与 :ref:`GDScript<class_GDScript>` 资源没有关系。
+A native library for GDExtension.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`GDExtension 概述 <../tutorials/scripting/gdextension/what_is_gdextension>`
+The **GDExtension** resource type represents a `shared library <https://en.wikipedia.org/wiki/Shared_library>`__ which can expand the functionality of the engine. The :ref:`GDExtensionManager<class_GDExtensionManager>` singleton is responsible for loading, reloading, and unloading **GDExtension** resources.
 
-- :doc:`C++ 的 GDExtension 示例 <../tutorials/scripting/cpp/gdextension_cpp_example>`
+\ **Note:** GDExtension itself is not a scripting language and has no relation to :ref:`GDScript<class_GDScript>` resources.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`GDExtension overview <../tutorials/scripting/gdextension/what_is_gdextension>`
+
+- :doc:`GDExtension example in C++ <../tutorials/scripting/cpp/gdextension_cpp_example>`
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -47,8 +47,8 @@ GDExtension 的原生库。
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_GDExtension_InitializationLevel:
 
@@ -62,7 +62,7 @@ enum **InitializationLevel**: :ref:`🔗<enum_GDExtension_InitializationLevel>`
 
 :ref:`InitializationLevel<enum_GDExtension_InitializationLevel>` **INITIALIZATION_LEVEL_CORE** = ``0``
 
-该库与引擎的核心功能同时初始化。
+The library is initialized at the same time as the core features of the engine.
 
 .. _class_GDExtension_constant_INITIALIZATION_LEVEL_SERVERS:
 
@@ -70,7 +70,7 @@ enum **InitializationLevel**: :ref:`🔗<enum_GDExtension_InitializationLevel>`
 
 :ref:`InitializationLevel<enum_GDExtension_InitializationLevel>` **INITIALIZATION_LEVEL_SERVERS** = ``1``
 
-该库与引擎的服务器（例如 :ref:`RenderingServer<class_RenderingServer>` 或 :ref:`PhysicsServer3D<class_PhysicsServer3D>`\ ）同时初始化。
+The library is initialized at the same time as the engine's servers (such as :ref:`RenderingServer<class_RenderingServer>` or :ref:`PhysicsServer3D<class_PhysicsServer3D>`).
 
 .. _class_GDExtension_constant_INITIALIZATION_LEVEL_SCENE:
 
@@ -78,7 +78,7 @@ enum **InitializationLevel**: :ref:`🔗<enum_GDExtension_InitializationLevel>`
 
 :ref:`InitializationLevel<enum_GDExtension_InitializationLevel>` **INITIALIZATION_LEVEL_SCENE** = ``2``
 
-该库与引擎的场景相关类同时初始化。
+The library is initialized at the same time as the engine's scene-related classes.
 
 .. _class_GDExtension_constant_INITIALIZATION_LEVEL_EDITOR:
 
@@ -86,7 +86,7 @@ enum **InitializationLevel**: :ref:`🔗<enum_GDExtension_InitializationLevel>`
 
 :ref:`InitializationLevel<enum_GDExtension_InitializationLevel>` **INITIALIZATION_LEVEL_EDITOR** = ``3``
 
-该库与引擎的编辑器类同时初始化。仅在编辑器中加载 GDExtension 时发生。
+The library is initialized at the same time as the engine's editor classes. Only happens when loading the GDExtension in the editor.
 
 .. rst-class:: classref-section-separator
 
@@ -94,8 +94,8 @@ enum **InitializationLevel**: :ref:`🔗<enum_GDExtension_InitializationLevel>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_GDExtension_method_get_minimum_library_initialization_level:
 
@@ -103,7 +103,7 @@ enum **InitializationLevel**: :ref:`🔗<enum_GDExtension_InitializationLevel>`
 
 :ref:`InitializationLevel<enum_GDExtension_InitializationLevel>` **get_minimum_library_initialization_level**\ (\ ) |const| :ref:`🔗<class_GDExtension_method_get_minimum_library_initialization_level>`
 
-返回正确初始化该扩展所需的最低级别（请参阅 :ref:`InitializationLevel<enum_GDExtension_InitializationLevel>` 枚举）。
+Returns the lowest level required for this extension to be properly initialized (see the :ref:`InitializationLevel<enum_GDExtension_InitializationLevel>` enum).
 
 .. rst-class:: classref-item-separator
 
@@ -115,14 +115,14 @@ enum **InitializationLevel**: :ref:`🔗<enum_GDExtension_InitializationLevel>`
 
 :ref:`bool<class_bool>` **is_library_open**\ (\ ) |const| :ref:`🔗<class_GDExtension_method_is_library_open>`
 
-如果该扩展的库已被打开，则返回 ``true``\ 。
+Returns ``true`` if this extension's library has been opened.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

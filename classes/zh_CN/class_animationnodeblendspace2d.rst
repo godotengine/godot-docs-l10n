@@ -5,34 +5,34 @@
 AnimationNodeBlendSpace2D
 =========================
 
-**继承：** :ref:`AnimationRootNode<class_AnimationRootNode>` **<** :ref:`AnimationNode<class_AnimationNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`AnimationRootNode<class_AnimationRootNode>` **<** :ref:`AnimationNode<class_AnimationNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-一组放置在 2D 坐标上的 :ref:`AnimationRootNode<class_AnimationRootNode>`\ ，在三个相邻节点之间交叉淡化。被 :ref:`AnimationTree<class_AnimationTree>` 使用。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-:ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` 使用的资源。
-
-\ **AnimationNodeBlendSpace2D** 代表放置 :ref:`AnimationRootNode<class_AnimationRootNode>` 的虚拟 2D 空间。输出的是使用 :ref:`Vector2<class_Vector2>` 权重对相邻的三个动画进行线性混合的结果。此处的“相邻”指的是构成包含当前值的三角形的三个 :ref:`AnimationRootNode<class_AnimationRootNode>`\ 。
-
-你可以使用 :ref:`add_blend_point()<class_AnimationNodeBlendSpace2D_method_add_blend_point>` 向混合空间中添加顶点，将 :ref:`auto_triangles<class_AnimationNodeBlendSpace2D_property_auto_triangles>` 设为 ``true`` 可以将其自动三角形化。否则，请使用 :ref:`add_triangle()<class_AnimationNodeBlendSpace2D_method_add_triangle>` 和 :ref:`remove_triangle()<class_AnimationNodeBlendSpace2D_method_remove_triangle>` 手动对混合空间进行三角形化。
+A set of :ref:`AnimationRootNode<class_AnimationRootNode>`\ s placed on 2D coordinates, crossfading between the three adjacent ones. Used by :ref:`AnimationTree<class_AnimationTree>`.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`使用 AnimationTree <../tutorials/animation/animation_tree>`
+A resource used by :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
 
-- `第三人称射击（TPS）演示 <https://godotengine.org/asset-library/asset/2710>`__
+\ **AnimationNodeBlendSpace2D** represents a virtual 2D space on which :ref:`AnimationRootNode<class_AnimationRootNode>`\ s are placed. Outputs the linear blend of the three adjacent animations using a :ref:`Vector2<class_Vector2>` weight. Adjacent in this context means the three :ref:`AnimationRootNode<class_AnimationRootNode>`\ s making up the triangle that contains the current value.
+
+You can add vertices to the blend space with :ref:`add_blend_point()<class_AnimationNodeBlendSpace2D_method_add_blend_point>` and automatically triangulate it by setting :ref:`auto_triangles<class_AnimationNodeBlendSpace2D_property_auto_triangles>` to ``true``. Otherwise, use :ref:`add_triangle()<class_AnimationNodeBlendSpace2D_method_add_triangle>` and :ref:`remove_triangle()<class_AnimationNodeBlendSpace2D_method_remove_triangle>` to triangulate the blend space by hand.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Using AnimationTree <../tutorials/animation/animation_tree>`
+
+- `Third Person Shooter (TPS) Demo <https://godotengine.org/asset-library/asset/2710>`__
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -57,8 +57,8 @@ AnimationNodeBlendSpace2D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -93,8 +93,8 @@ AnimationNodeBlendSpace2D
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_AnimationNodeBlendSpace2D_signal_triangles_updated:
 
@@ -102,7 +102,7 @@ AnimationNodeBlendSpace2D
 
 **triangles_updated**\ (\ ) :ref:`🔗<class_AnimationNodeBlendSpace2D_signal_triangles_updated>`
 
-每当创建、移除混合空间的三角形，或当其中一个顶点改变位置时发出。
+Emitted every time the blend space's triangles are created, removed, or when one of their vertices changes position.
 
 .. rst-class:: classref-section-separator
 
@@ -110,8 +110,8 @@ AnimationNodeBlendSpace2D
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_AnimationNodeBlendSpace2D_BlendMode:
 
@@ -125,7 +125,7 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 
 :ref:`BlendMode<enum_AnimationNodeBlendSpace2D_BlendMode>` **BLEND_MODE_INTERPOLATED** = ``0``
 
-动画之间的插值是线性的。
+The interpolation between animations is linear.
 
 .. _class_AnimationNodeBlendSpace2D_constant_BLEND_MODE_DISCRETE:
 
@@ -133,7 +133,7 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 
 :ref:`BlendMode<enum_AnimationNodeBlendSpace2D_BlendMode>` **BLEND_MODE_DISCRETE** = ``1``
 
-混合空间播放混合位置最接近的动画节点的动画。可用于逐帧的 2D 动画。
+The blend space plays the animation of the animation node which blending position is closest to. Useful for frame-by-frame 2D animations.
 
 .. _class_AnimationNodeBlendSpace2D_constant_BLEND_MODE_DISCRETE_CARRY:
 
@@ -141,7 +141,7 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 
 :ref:`BlendMode<enum_AnimationNodeBlendSpace2D_BlendMode>` **BLEND_MODE_DISCRETE_CARRY** = ``2``
 
-类似于 :ref:`BLEND_MODE_DISCRETE<class_AnimationNodeBlendSpace2D_constant_BLEND_MODE_DISCRETE>`\ ，但在最后一个动画的播放位置开始新的动画。
+Similar to :ref:`BLEND_MODE_DISCRETE<class_AnimationNodeBlendSpace2D_constant_BLEND_MODE_DISCRETE>`, but starts the new animation at the last animation's playback position.
 
 .. rst-class:: classref-section-separator
 
@@ -149,8 +149,8 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_AnimationNodeBlendSpace2D_property_auto_triangles:
 
@@ -163,7 +163,7 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 - |void| **set_auto_triangles**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_auto_triangles**\ (\ )
 
-如果为 ``true``\ ，混合空间会自动进行三角测量。每次使用 :ref:`add_blend_point()<class_AnimationNodeBlendSpace2D_method_add_blend_point>` 和 :ref:`remove_blend_point()<class_AnimationNodeBlendSpace2D_method_remove_blend_point>` 添加或移除点时，网格都会更新。
+If ``true``, the blend space is triangulated automatically. The mesh updates every time you add or remove points with :ref:`add_blend_point()<class_AnimationNodeBlendSpace2D_method_add_blend_point>` and :ref:`remove_blend_point()<class_AnimationNodeBlendSpace2D_method_remove_blend_point>`.
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 - |void| **set_blend_mode**\ (\ value\: :ref:`BlendMode<enum_AnimationNodeBlendSpace2D_BlendMode>`\ )
 - :ref:`BlendMode<enum_AnimationNodeBlendSpace2D_BlendMode>` **get_blend_mode**\ (\ )
 
-控制动画之间的插值。
+Controls the interpolation between animations.
 
 .. rst-class:: classref-item-separator
 
@@ -197,7 +197,7 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 - |void| **set_max_space**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_max_space**\ (\ )
 
-用于点的位置的混合空间的 X 轴和 Y 轴的上限。请参阅 :ref:`add_blend_point()<class_AnimationNodeBlendSpace2D_method_add_blend_point>`\ 。
+The blend space's X and Y axes' upper limit for the points' position. See :ref:`add_blend_point()<class_AnimationNodeBlendSpace2D_method_add_blend_point>`.
 
 .. rst-class:: classref-item-separator
 
@@ -214,7 +214,7 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 - |void| **set_min_space**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_min_space**\ (\ )
 
-用于点的位置的混合空间的 X 轴和 Y 轴的下限。请参阅 :ref:`add_blend_point()<class_AnimationNodeBlendSpace2D_method_add_blend_point>`\ 。
+The blend space's X and Y axes' lower limit for the points' position. See :ref:`add_blend_point()<class_AnimationNodeBlendSpace2D_method_add_blend_point>`.
 
 .. rst-class:: classref-item-separator
 
@@ -231,7 +231,7 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 - |void| **set_snap**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_snap**\ (\ )
 
-移动点时要吸附到的位置增量。
+Position increment to snap to when moving a point.
 
 .. rst-class:: classref-item-separator
 
@@ -248,9 +248,9 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 - |void| **set_use_sync**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_sync**\ (\ )
 
-如果为 ``false``\ ，则当混合值为 ``0`` 时，停止混合动画的帧。
+If ``false``, the blended animations' frame are stopped when the blend value is ``0``.
 
-如果为 ``true``\ ，则强制混合动画以前进帧。
+If ``true``, forcing the blended animations to advance frame.
 
 .. rst-class:: classref-item-separator
 
@@ -267,7 +267,7 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 - |void| **set_x_label**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_x_label**\ (\ )
 
-混合空间 X 轴的名称。
+Name of the blend space's X axis.
 
 .. rst-class:: classref-item-separator
 
@@ -284,7 +284,7 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 - |void| **set_y_label**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_y_label**\ (\ )
 
-混合空间 Y 轴的名称。
+Name of the blend space's Y axis.
 
 .. rst-class:: classref-section-separator
 
@@ -292,8 +292,8 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_AnimationNodeBlendSpace2D_method_add_blend_point:
 
@@ -301,7 +301,7 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 
 |void| **add_blend_point**\ (\ node\: :ref:`AnimationRootNode<class_AnimationRootNode>`, pos\: :ref:`Vector2<class_Vector2>`, at_index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_AnimationNodeBlendSpace2D_method_add_blend_point>`
 
-在 ``pos`` 设定的位置添加一个代表 ``node`` 的新点。你可以使用 ``at_index`` 参数将其插入到特定的索引中。如果使用 ``at_index`` 的默认值，这个点会被插入到混合点数组的末尾。
+Adds a new point that represents a ``node`` at the position set by ``pos``. You can insert it at a specific index using the ``at_index`` argument. If you use the default value for ``at_index``, the point is inserted at the end of the blend points array.
 
 .. rst-class:: classref-item-separator
 
@@ -313,7 +313,7 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 
 |void| **add_triangle**\ (\ x\: :ref:`int<class_int>`, y\: :ref:`int<class_int>`, z\: :ref:`int<class_int>`, at_index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_AnimationNodeBlendSpace2D_method_add_triangle>`
 
-使用三个点 ``x``\ 、\ ``y`` 和 ``z`` 创建一个新三角形。三角形可以重叠。可以使用 ``at_index`` 参数在特定索引处插入三角形。如果使用 ``at_index`` 的默认值，该点将插入到混合点数组的末尾。
+Creates a new triangle using three points ``x``, ``y``, and ``z``. Triangles can overlap. You can insert the triangle at a specific index using the ``at_index`` argument. If you use the default value for ``at_index``, the point is inserted at the end of the blend points array.
 
 .. rst-class:: classref-item-separator
 
@@ -325,7 +325,7 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 
 :ref:`int<class_int>` **get_blend_point_count**\ (\ ) |const| :ref:`🔗<class_AnimationNodeBlendSpace2D_method_get_blend_point_count>`
 
-返回混合空间中的点的数量。
+Returns the number of points in the blend space.
 
 .. rst-class:: classref-item-separator
 
@@ -337,7 +337,7 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 
 :ref:`AnimationRootNode<class_AnimationRootNode>` **get_blend_point_node**\ (\ point\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AnimationNodeBlendSpace2D_method_get_blend_point_node>`
 
-返回索引 ``point`` 处的点所引用的 :ref:`AnimationRootNode<class_AnimationRootNode>`\ 。
+Returns the :ref:`AnimationRootNode<class_AnimationRootNode>` referenced by the point at index ``point``.
 
 .. rst-class:: classref-item-separator
 
@@ -349,7 +349,7 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 
 :ref:`Vector2<class_Vector2>` **get_blend_point_position**\ (\ point\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AnimationNodeBlendSpace2D_method_get_blend_point_position>`
 
-返回索引 ``point`` 处的点的位置。
+Returns the position of the point at index ``point``.
 
 .. rst-class:: classref-item-separator
 
@@ -361,7 +361,7 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 
 :ref:`int<class_int>` **get_triangle_count**\ (\ ) |const| :ref:`🔗<class_AnimationNodeBlendSpace2D_method_get_triangle_count>`
 
-返回混合空间中三角形的数量。
+Returns the number of triangles in the blend space.
 
 .. rst-class:: classref-item-separator
 
@@ -373,7 +373,7 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 
 :ref:`int<class_int>` **get_triangle_point**\ (\ triangle\: :ref:`int<class_int>`, point\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AnimationNodeBlendSpace2D_method_get_triangle_point>`
 
-返回索引 ``point`` 处的点在索引 ``triangle`` 的三角形中的位置。
+Returns the position of the point at index ``point`` in the triangle of index ``triangle``.
 
 .. rst-class:: classref-item-separator
 
@@ -385,7 +385,7 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 
 |void| **remove_blend_point**\ (\ point\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AnimationNodeBlendSpace2D_method_remove_blend_point>`
 
-从混合空间中移除索引 ``point`` 处的点。
+Removes the point at index ``point`` from the blend space.
 
 .. rst-class:: classref-item-separator
 
@@ -397,7 +397,7 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 
 |void| **remove_triangle**\ (\ triangle\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AnimationNodeBlendSpace2D_method_remove_triangle>`
 
-从混合空间中移除索引 ``triangle`` 处的三角形。
+Removes the triangle at index ``triangle`` from the blend space.
 
 .. rst-class:: classref-item-separator
 
@@ -409,7 +409,7 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 
 |void| **set_blend_point_node**\ (\ point\: :ref:`int<class_int>`, node\: :ref:`AnimationRootNode<class_AnimationRootNode>`\ ) :ref:`🔗<class_AnimationNodeBlendSpace2D_method_set_blend_point_node>`
 
-更改索引 ``point`` 处的点所引用的 :ref:`AnimationNode<class_AnimationNode>`\ 。
+Changes the :ref:`AnimationNode<class_AnimationNode>` referenced by the point at index ``point``.
 
 .. rst-class:: classref-item-separator
 
@@ -421,14 +421,14 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_BlendMode>`
 
 |void| **set_blend_point_position**\ (\ point\: :ref:`int<class_int>`, pos\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_AnimationNodeBlendSpace2D_method_set_blend_point_position>`
 
-更新混合空间中索引 ``point`` 处的点的位置。
+Updates the position of the point at index ``point`` in the blend space.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,36 +5,36 @@
 StaticBody2D
 ============
 
-**继承：** :ref:`PhysicsBody2D<class_PhysicsBody2D>` **<** :ref:`CollisionObject2D<class_CollisionObject2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`PhysicsBody2D<class_PhysicsBody2D>` **<** :ref:`CollisionObject2D<class_CollisionObject2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**派生：** :ref:`AnimatableBody2D<class_AnimatableBody2D>`
+**Inherited By:** :ref:`AnimatableBody2D<class_AnimatableBody2D>`
 
-无法被外力移动的 2D 物理物体。手动移动时不会影响路径上的其他物体。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-静态 2D 物理体。无法因外力或接触而移动，但可以通过代码、\ :ref:`AnimationMixer<class_AnimationMixer>`\ （\ :ref:`AnimationMixer.callback_mode_process<class_AnimationMixer_property_callback_mode_process>` 设为 :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS>`\ ）、\ :ref:`RemoteTransform2D<class_RemoteTransform2D>` 等方法手动移动。
-
-\ **StaticBody2D** 发生移动时，是传送到新位置上的，不会影响路径上的其他物理体。如果不想要这样的行为，请改用 :ref:`AnimatableBody2D<class_AnimatableBody2D>`\ 。
-
-\ **StaticBody2D** 常用于完全静态的地板、墙壁等对象，也可以用于传送带、圆形回转平台等移动的表面（使用 :ref:`constant_linear_velocity<class_StaticBody2D_property_constant_linear_velocity>` 和 :ref:`constant_angular_velocity<class_StaticBody2D_property_constant_angular_velocity>`\ ）。
+A 2D physics body that can't be moved by external forces. When moved manually, it doesn't affect other bodies in its path.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`物理介绍 <../tutorials/physics/physics_introduction>`
+A static 2D physics body. It can't be moved by external forces or contacts, but can be moved manually by other means such as code, :ref:`AnimationMixer<class_AnimationMixer>`\ s (with :ref:`AnimationMixer.callback_mode_process<class_AnimationMixer_property_callback_mode_process>` set to :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS>`), and :ref:`RemoteTransform2D<class_RemoteTransform2D>`.
 
-- :doc:`排查物理问题 <../tutorials/physics/troubleshooting_physics_issues>`
+When **StaticBody2D** is moved, it is teleported to its new position without affecting other physics bodies in its path. If this is not desired, use :ref:`AnimatableBody2D<class_AnimatableBody2D>` instead.
+
+\ **StaticBody2D** is useful for completely static objects like floors and walls, as well as moving surfaces like conveyor belts and circular revolving platforms (by using :ref:`constant_linear_velocity<class_StaticBody2D_property_constant_linear_velocity>` and :ref:`constant_angular_velocity<class_StaticBody2D_property_constant_angular_velocity>`).
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Physics introduction <../tutorials/physics/physics_introduction>`
+
+- :doc:`Troubleshooting physics issues <../tutorials/physics/troubleshooting_physics_issues>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ StaticBody2D
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_StaticBody2D_property_constant_angular_velocity:
 
@@ -67,7 +67,7 @@ StaticBody2D
 - |void| **set_constant_angular_velocity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_constant_angular_velocity**\ (\ )
 
-该物体的恒定角速度。不会旋转该物体，但会影响接触的物体，就好像这个物体正在旋转一样。
+The body's constant angular velocity. This does not rotate the body, but affects touching bodies, as if it were rotating.
 
 .. rst-class:: classref-item-separator
 
@@ -84,7 +84,7 @@ StaticBody2D
 - |void| **set_constant_linear_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_constant_linear_velocity**\ (\ )
 
-该物体的恒定线速度。不会移动该物体，但会影响接触的物体，就好像这个物体正在移动一样。
+The body's constant linear velocity. This does not move the body, but affects touching bodies, as if it were moving.
 
 .. rst-class:: classref-item-separator
 
@@ -101,16 +101,16 @@ StaticBody2D
 - |void| **set_physics_material_override**\ (\ value\: :ref:`PhysicsMaterial<class_PhysicsMaterial>`\ )
 - :ref:`PhysicsMaterial<class_PhysicsMaterial>` **get_physics_material_override**\ (\ )
 
-物体的物理材质。
+The physics material override for the body.
 
-如果为该属性指定了一种材质，则将使用该材质代替任何其他物理材质，例如继承的材质。
+If a material is assigned to this property, it will be used instead of any other physics material, such as an inherited one.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,30 +5,30 @@
 AnimationNodeBlendTree
 ======================
 
-**继承：** :ref:`AnimationRootNode<class_AnimationRootNode>` **<** :ref:`AnimationNode<class_AnimationNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`AnimationRootNode<class_AnimationRootNode>` **<** :ref:`AnimationNode<class_AnimationNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用于复杂动画的许多类型 :ref:`AnimationNode<class_AnimationNode>` 的子树。由 :ref:`AnimationTree<class_AnimationTree>` 使用。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-这个动画节点可以包含任何其他类型动画节点的子树，例如 :ref:`AnimationNodeTransition<class_AnimationNodeTransition>`\ 、\ :ref:`AnimationNodeBlend2<class_AnimationNodeBlend2>`\ 、\ :ref:`AnimationNodeBlend3<class_AnimationNodeBlend3>`\ 、\ :ref:`AnimationNodeOneShot<class_AnimationNodeOneShot>` 等。这是最常用的动画节点根之一。
-
-默认会创建一个名为 ``output`` 的 :ref:`AnimationNodeOutput<class_AnimationNodeOutput>` 节点。
+A sub-tree of many type :ref:`AnimationNode<class_AnimationNode>`\ s used for complex animations. Used by :ref:`AnimationTree<class_AnimationTree>`.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`使用 AnimationTree <../tutorials/animation/animation_tree>`
+This animation node may contain a sub-tree of any other type animation nodes, such as :ref:`AnimationNodeTransition<class_AnimationNodeTransition>`, :ref:`AnimationNodeBlend2<class_AnimationNodeBlend2>`, :ref:`AnimationNodeBlend3<class_AnimationNodeBlend3>`, :ref:`AnimationNodeOneShot<class_AnimationNodeOneShot>`, etc. This is one of the most commonly used animation node roots.
+
+An :ref:`AnimationNodeOutput<class_AnimationNodeOutput>` node named ``output`` is created by default.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Using AnimationTree <../tutorials/animation/animation_tree>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -39,8 +39,8 @@ AnimationNodeBlendTree
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -73,8 +73,8 @@ AnimationNodeBlendTree
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_AnimationNodeBlendTree_signal_node_changed:
 
@@ -82,7 +82,7 @@ AnimationNodeBlendTree
 
 **node_changed**\ (\ node_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationNodeBlendTree_signal_node_changed>`
 
-当输入端口信息发生更改时发出。
+Emitted when the input port information is changed.
 
 .. rst-class:: classref-section-separator
 
@@ -90,8 +90,8 @@ AnimationNodeBlendTree
 
 .. rst-class:: classref-descriptions-group
 
-常量
-----
+Constants
+---------
 
 .. _class_AnimationNodeBlendTree_constant_CONNECTION_OK:
 
@@ -99,7 +99,7 @@ AnimationNodeBlendTree
 
 **CONNECTION_OK** = ``0`` :ref:`🔗<class_AnimationNodeBlendTree_constant_CONNECTION_OK>`
 
-连接成功。
+The connection was successful.
 
 .. _class_AnimationNodeBlendTree_constant_CONNECTION_ERROR_NO_INPUT:
 
@@ -107,7 +107,7 @@ AnimationNodeBlendTree
 
 **CONNECTION_ERROR_NO_INPUT** = ``1`` :ref:`🔗<class_AnimationNodeBlendTree_constant_CONNECTION_ERROR_NO_INPUT>`
 
-输入节点为 ``null``\ 。
+The input node is ``null``.
 
 .. _class_AnimationNodeBlendTree_constant_CONNECTION_ERROR_NO_INPUT_INDEX:
 
@@ -115,7 +115,7 @@ AnimationNodeBlendTree
 
 **CONNECTION_ERROR_NO_INPUT_INDEX** = ``2`` :ref:`🔗<class_AnimationNodeBlendTree_constant_CONNECTION_ERROR_NO_INPUT_INDEX>`
 
-指定的输入端口超出范围。
+The specified input port is out of range.
 
 .. _class_AnimationNodeBlendTree_constant_CONNECTION_ERROR_NO_OUTPUT:
 
@@ -123,7 +123,7 @@ AnimationNodeBlendTree
 
 **CONNECTION_ERROR_NO_OUTPUT** = ``3`` :ref:`🔗<class_AnimationNodeBlendTree_constant_CONNECTION_ERROR_NO_OUTPUT>`
 
-输出节点为 ``null``\ 。
+The output node is ``null``.
 
 .. _class_AnimationNodeBlendTree_constant_CONNECTION_ERROR_SAME_NODE:
 
@@ -131,7 +131,7 @@ AnimationNodeBlendTree
 
 **CONNECTION_ERROR_SAME_NODE** = ``4`` :ref:`🔗<class_AnimationNodeBlendTree_constant_CONNECTION_ERROR_SAME_NODE>`
 
-输入和输出节点相同。
+Input and output nodes are the same.
 
 .. _class_AnimationNodeBlendTree_constant_CONNECTION_ERROR_CONNECTION_EXISTS:
 
@@ -139,7 +139,7 @@ AnimationNodeBlendTree
 
 **CONNECTION_ERROR_CONNECTION_EXISTS** = ``5`` :ref:`🔗<class_AnimationNodeBlendTree_constant_CONNECTION_ERROR_CONNECTION_EXISTS>`
 
-指定的连接已经存在。
+The specified connection already exists.
 
 .. rst-class:: classref-section-separator
 
@@ -147,8 +147,8 @@ AnimationNodeBlendTree
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_AnimationNodeBlendTree_property_graph_offset:
 
@@ -161,7 +161,7 @@ AnimationNodeBlendTree
 - |void| **set_graph_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_graph_offset**\ (\ )
 
-所有子动画节点的全局偏移量。
+The global offset of all sub animation nodes.
 
 .. rst-class:: classref-section-separator
 
@@ -169,8 +169,8 @@ AnimationNodeBlendTree
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_AnimationNodeBlendTree_method_add_node:
 
@@ -178,7 +178,7 @@ AnimationNodeBlendTree
 
 |void| **add_node**\ (\ name\: :ref:`StringName<class_StringName>`, node\: :ref:`AnimationNode<class_AnimationNode>`, position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_AnimationNodeBlendTree_method_add_node>`
 
-在给定的位置 ``position`` 添加一个 :ref:`AnimationNode<class_AnimationNode>`\ 。\ ``name`` 用于后续识别该创建的子动画节点。
+Adds an :ref:`AnimationNode<class_AnimationNode>` at the given ``position``. The ``name`` is used to identify the created sub animation node later.
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ AnimationNodeBlendTree
 
 |void| **connect_node**\ (\ input_node\: :ref:`StringName<class_StringName>`, input_index\: :ref:`int<class_int>`, output_node\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationNodeBlendTree_method_connect_node>`
 
-连接一个 :ref:`AnimationNode<class_AnimationNode>` 的输出作为另一个 :ref:`AnimationNode<class_AnimationNode>` 的输入，连接在 ``input_index`` 指定的输入端口。
+Connects the output of an :ref:`AnimationNode<class_AnimationNode>` as input for another :ref:`AnimationNode<class_AnimationNode>`, at the input port specified by ``input_index``.
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ AnimationNodeBlendTree
 
 |void| **disconnect_node**\ (\ input_node\: :ref:`StringName<class_StringName>`, input_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AnimationNodeBlendTree_method_disconnect_node>`
 
-断开连接到指定输入端的动画节点。
+Disconnects the animation node connected to the specified input.
 
 .. rst-class:: classref-item-separator
 
@@ -214,7 +214,7 @@ AnimationNodeBlendTree
 
 :ref:`AnimationNode<class_AnimationNode>` **get_node**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_AnimationNodeBlendTree_method_get_node>`
 
-返回名称为 ``name`` 的子动画节点。
+Returns the sub animation node with the specified ``name``.
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ AnimationNodeBlendTree
 
 :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\] **get_node_list**\ (\ ) |const| :ref:`🔗<class_AnimationNodeBlendTree_method_get_node_list>`
 
-返回包含该混合树中所有子动画节点名称的列表。
+Returns a list containing the names of all sub animation nodes in this blend tree.
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ AnimationNodeBlendTree
 
 :ref:`Vector2<class_Vector2>` **get_node_position**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_AnimationNodeBlendTree_method_get_node_position>`
 
-返回名称为 ``name`` 的子动画节点的位置。
+Returns the position of the sub animation node with the specified ``name``.
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ AnimationNodeBlendTree
 
 :ref:`bool<class_bool>` **has_node**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_AnimationNodeBlendTree_method_has_node>`
 
-如果存在名称为 ``name`` 的动画子节点，则返回 ``true``\ 。
+Returns ``true`` if a sub animation node with specified ``name`` exists.
 
 .. rst-class:: classref-item-separator
 
@@ -262,7 +262,7 @@ AnimationNodeBlendTree
 
 |void| **remove_node**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationNodeBlendTree_method_remove_node>`
 
-移除一个子动画节点。
+Removes a sub animation node.
 
 .. rst-class:: classref-item-separator
 
@@ -274,7 +274,7 @@ AnimationNodeBlendTree
 
 |void| **rename_node**\ (\ name\: :ref:`StringName<class_StringName>`, new_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationNodeBlendTree_method_rename_node>`
 
-更改子动画节点的名称。
+Changes the name of a sub animation node.
 
 .. rst-class:: classref-item-separator
 
@@ -286,14 +286,14 @@ AnimationNodeBlendTree
 
 |void| **set_node_position**\ (\ name\: :ref:`StringName<class_StringName>`, position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_AnimationNodeBlendTree_method_set_node_position>`
 
-修改子动画节点的位置。
+Modifies the position of a sub animation node.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

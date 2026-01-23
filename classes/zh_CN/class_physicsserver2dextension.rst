@@ -5,23 +5,23 @@
 PhysicsServer2DExtension
 ========================
 
-**继承：** :ref:`PhysicsServer2D<class_PhysicsServer2D>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`PhysicsServer2D<class_PhysicsServer2D>` **<** :ref:`Object<class_Object>`
 
-提供覆盖后可以用来创建自定义 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 实现的虚方法。
+Provides virtual methods that can be overridden to create custom :ref:`PhysicsServer2D<class_PhysicsServer2D>` implementations.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-这个类扩展自 :ref:`PhysicsServer2D<class_PhysicsServer2D>`\ ，提供可额外的可覆盖虚方法。覆盖这些方法后，就不会调用物理服务器内部方法，而是调用这些覆盖后的方法。
+This class extends :ref:`PhysicsServer2D<class_PhysicsServer2D>` by providing additional virtual methods that can be overridden. When these methods are overridden, they will be called instead of the internal methods of the physics server.
 
-旨在用于 GDExtension，用于创建自定义 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 实现。
+Intended for use with GDExtension to create custom implementations of :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -314,8 +314,8 @@ PhysicsServer2DExtension
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_PhysicsServer2DExtension_private_method__area_add_shape:
 
@@ -323,7 +323,7 @@ PhysicsServer2DExtension
 
 |void| **_area_add_shape**\ (\ area\: :ref:`RID<class_RID>`, shape\: :ref:`RID<class_RID>`, transform\: :ref:`Transform2D<class_Transform2D>`, disabled\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_add_shape>`
 
-:ref:`PhysicsServer2D.area_add_shape()<class_PhysicsServer2D_method_area_add_shape>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_add_shape()<class_PhysicsServer2D_method_area_add_shape>`.
 
 .. rst-class:: classref-item-separator
 
@@ -335,7 +335,7 @@ PhysicsServer2DExtension
 
 |void| **_area_attach_canvas_instance_id**\ (\ area\: :ref:`RID<class_RID>`, id\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_attach_canvas_instance_id>`
 
-:ref:`PhysicsServer2D.area_attach_canvas_instance_id()<class_PhysicsServer2D_method_area_attach_canvas_instance_id>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_attach_canvas_instance_id()<class_PhysicsServer2D_method_area_attach_canvas_instance_id>`.
 
 .. rst-class:: classref-item-separator
 
@@ -347,7 +347,7 @@ PhysicsServer2DExtension
 
 |void| **_area_attach_object_instance_id**\ (\ area\: :ref:`RID<class_RID>`, id\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_attach_object_instance_id>`
 
-:ref:`PhysicsServer2D.area_attach_object_instance_id()<class_PhysicsServer2D_method_area_attach_object_instance_id>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_attach_object_instance_id()<class_PhysicsServer2D_method_area_attach_object_instance_id>`.
 
 .. rst-class:: classref-item-separator
 
@@ -359,7 +359,7 @@ PhysicsServer2DExtension
 
 |void| **_area_clear_shapes**\ (\ area\: :ref:`RID<class_RID>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_clear_shapes>`
 
-:ref:`PhysicsServer2D.area_clear_shapes()<class_PhysicsServer2D_method_area_clear_shapes>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_clear_shapes()<class_PhysicsServer2D_method_area_clear_shapes>`.
 
 .. rst-class:: classref-item-separator
 
@@ -371,7 +371,7 @@ PhysicsServer2DExtension
 
 :ref:`RID<class_RID>` **_area_create**\ (\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_create>`
 
-:ref:`PhysicsServer2D.area_create()<class_PhysicsServer2D_method_area_create>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_create()<class_PhysicsServer2D_method_area_create>`.
 
 .. rst-class:: classref-item-separator
 
@@ -383,7 +383,7 @@ PhysicsServer2DExtension
 
 :ref:`int<class_int>` **_area_get_canvas_instance_id**\ (\ area\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_get_canvas_instance_id>`
 
-:ref:`PhysicsServer2D.area_get_canvas_instance_id()<class_PhysicsServer2D_method_area_get_canvas_instance_id>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_get_canvas_instance_id()<class_PhysicsServer2D_method_area_get_canvas_instance_id>`.
 
 .. rst-class:: classref-item-separator
 
@@ -395,7 +395,7 @@ PhysicsServer2DExtension
 
 :ref:`int<class_int>` **_area_get_collision_layer**\ (\ area\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_get_collision_layer>`
 
-:ref:`PhysicsServer2D.area_get_collision_layer()<class_PhysicsServer2D_method_area_get_collision_layer>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_get_collision_layer()<class_PhysicsServer2D_method_area_get_collision_layer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -407,7 +407,7 @@ PhysicsServer2DExtension
 
 :ref:`int<class_int>` **_area_get_collision_mask**\ (\ area\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_get_collision_mask>`
 
-:ref:`PhysicsServer2D.area_get_collision_mask()<class_PhysicsServer2D_method_area_get_collision_mask>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_get_collision_mask()<class_PhysicsServer2D_method_area_get_collision_mask>`.
 
 .. rst-class:: classref-item-separator
 
@@ -419,7 +419,7 @@ PhysicsServer2DExtension
 
 :ref:`int<class_int>` **_area_get_object_instance_id**\ (\ area\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_get_object_instance_id>`
 
-:ref:`PhysicsServer2D.area_get_object_instance_id()<class_PhysicsServer2D_method_area_get_object_instance_id>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_get_object_instance_id()<class_PhysicsServer2D_method_area_get_object_instance_id>`.
 
 .. rst-class:: classref-item-separator
 
@@ -431,7 +431,7 @@ PhysicsServer2DExtension
 
 :ref:`Variant<class_Variant>` **_area_get_param**\ (\ area\: :ref:`RID<class_RID>`, param\: :ref:`AreaParameter<enum_PhysicsServer2D_AreaParameter>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_get_param>`
 
-:ref:`PhysicsServer2D.area_get_param()<class_PhysicsServer2D_method_area_get_param>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_get_param()<class_PhysicsServer2D_method_area_get_param>`.
 
 .. rst-class:: classref-item-separator
 
@@ -443,7 +443,7 @@ PhysicsServer2DExtension
 
 :ref:`RID<class_RID>` **_area_get_shape**\ (\ area\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_get_shape>`
 
-:ref:`PhysicsServer2D.area_get_shape()<class_PhysicsServer2D_method_area_get_shape>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_get_shape()<class_PhysicsServer2D_method_area_get_shape>`.
 
 .. rst-class:: classref-item-separator
 
@@ -455,7 +455,7 @@ PhysicsServer2DExtension
 
 :ref:`int<class_int>` **_area_get_shape_count**\ (\ area\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_get_shape_count>`
 
-:ref:`PhysicsServer2D.area_get_shape_count()<class_PhysicsServer2D_method_area_get_shape_count>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_get_shape_count()<class_PhysicsServer2D_method_area_get_shape_count>`.
 
 .. rst-class:: classref-item-separator
 
@@ -467,7 +467,7 @@ PhysicsServer2DExtension
 
 :ref:`Transform2D<class_Transform2D>` **_area_get_shape_transform**\ (\ area\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_get_shape_transform>`
 
-:ref:`PhysicsServer2D.area_get_shape_transform()<class_PhysicsServer2D_method_area_get_shape_transform>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_get_shape_transform()<class_PhysicsServer2D_method_area_get_shape_transform>`.
 
 .. rst-class:: classref-item-separator
 
@@ -479,7 +479,7 @@ PhysicsServer2DExtension
 
 :ref:`RID<class_RID>` **_area_get_space**\ (\ area\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_get_space>`
 
-:ref:`PhysicsServer2D.area_get_space()<class_PhysicsServer2D_method_area_get_space>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_get_space()<class_PhysicsServer2D_method_area_get_space>`.
 
 .. rst-class:: classref-item-separator
 
@@ -491,7 +491,7 @@ PhysicsServer2DExtension
 
 :ref:`Transform2D<class_Transform2D>` **_area_get_transform**\ (\ area\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_get_transform>`
 
-:ref:`PhysicsServer2D.area_get_transform()<class_PhysicsServer2D_method_area_get_transform>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_get_transform()<class_PhysicsServer2D_method_area_get_transform>`.
 
 .. rst-class:: classref-item-separator
 
@@ -503,7 +503,7 @@ PhysicsServer2DExtension
 
 |void| **_area_remove_shape**\ (\ area\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_remove_shape>`
 
-:ref:`PhysicsServer2D.area_remove_shape()<class_PhysicsServer2D_method_area_remove_shape>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_remove_shape()<class_PhysicsServer2D_method_area_remove_shape>`.
 
 .. rst-class:: classref-item-separator
 
@@ -515,7 +515,7 @@ PhysicsServer2DExtension
 
 |void| **_area_set_area_monitor_callback**\ (\ area\: :ref:`RID<class_RID>`, callback\: :ref:`Callable<class_Callable>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_set_area_monitor_callback>`
 
-:ref:`PhysicsServer2D.area_set_area_monitor_callback()<class_PhysicsServer2D_method_area_set_area_monitor_callback>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_set_area_monitor_callback()<class_PhysicsServer2D_method_area_set_area_monitor_callback>`.
 
 .. rst-class:: classref-item-separator
 
@@ -527,7 +527,7 @@ PhysicsServer2DExtension
 
 |void| **_area_set_collision_layer**\ (\ area\: :ref:`RID<class_RID>`, layer\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_set_collision_layer>`
 
-:ref:`PhysicsServer2D.area_set_collision_layer()<class_PhysicsServer2D_method_area_set_collision_layer>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_set_collision_layer()<class_PhysicsServer2D_method_area_set_collision_layer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -539,7 +539,7 @@ PhysicsServer2DExtension
 
 |void| **_area_set_collision_mask**\ (\ area\: :ref:`RID<class_RID>`, mask\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_set_collision_mask>`
 
-:ref:`PhysicsServer2D.area_set_collision_mask()<class_PhysicsServer2D_method_area_set_collision_mask>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_set_collision_mask()<class_PhysicsServer2D_method_area_set_collision_mask>`.
 
 .. rst-class:: classref-item-separator
 
@@ -551,7 +551,7 @@ PhysicsServer2DExtension
 
 |void| **_area_set_monitor_callback**\ (\ area\: :ref:`RID<class_RID>`, callback\: :ref:`Callable<class_Callable>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_set_monitor_callback>`
 
-:ref:`PhysicsServer2D.area_set_monitor_callback()<class_PhysicsServer2D_method_area_set_monitor_callback>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_set_monitor_callback()<class_PhysicsServer2D_method_area_set_monitor_callback>`.
 
 .. rst-class:: classref-item-separator
 
@@ -563,7 +563,7 @@ PhysicsServer2DExtension
 
 |void| **_area_set_monitorable**\ (\ area\: :ref:`RID<class_RID>`, monitorable\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_set_monitorable>`
 
-:ref:`PhysicsServer2D.area_set_monitorable()<class_PhysicsServer2D_method_area_set_monitorable>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_set_monitorable()<class_PhysicsServer2D_method_area_set_monitorable>`.
 
 .. rst-class:: classref-item-separator
 
@@ -575,7 +575,7 @@ PhysicsServer2DExtension
 
 |void| **_area_set_param**\ (\ area\: :ref:`RID<class_RID>`, param\: :ref:`AreaParameter<enum_PhysicsServer2D_AreaParameter>`, value\: :ref:`Variant<class_Variant>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_set_param>`
 
-:ref:`PhysicsServer2D.area_set_param()<class_PhysicsServer2D_method_area_set_param>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_set_param()<class_PhysicsServer2D_method_area_set_param>`.
 
 .. rst-class:: classref-item-separator
 
@@ -587,9 +587,9 @@ PhysicsServer2DExtension
 
 |void| **_area_set_pickable**\ (\ area\: :ref:`RID<class_RID>`, pickable\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_set_pickable>`
 
-如果设置为 ``true``\ ，则允许具有给定 :ref:`RID<class_RID>` 的区域在鼠标光标悬停在其上时检测鼠标输入。
+If set to ``true``, allows the area with the given :ref:`RID<class_RID>` to detect mouse inputs when the mouse cursor is hovering on it.
 
-\ :ref:`PhysicsServer2D<class_PhysicsServer2D>` 内部 ``area_set_pickable`` 方法的可覆盖版本。对应于 :ref:`CollisionObject2D.input_pickable<class_CollisionObject2D_property_input_pickable>`\ 。
+Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``area_set_pickable`` method. Corresponds to :ref:`CollisionObject2D.input_pickable<class_CollisionObject2D_property_input_pickable>`.
 
 .. rst-class:: classref-item-separator
 
@@ -601,7 +601,7 @@ PhysicsServer2DExtension
 
 |void| **_area_set_shape**\ (\ area\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`, shape\: :ref:`RID<class_RID>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_set_shape>`
 
-:ref:`PhysicsServer2D.area_set_shape()<class_PhysicsServer2D_method_area_set_shape>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_set_shape()<class_PhysicsServer2D_method_area_set_shape>`.
 
 .. rst-class:: classref-item-separator
 
@@ -613,7 +613,7 @@ PhysicsServer2DExtension
 
 |void| **_area_set_shape_disabled**\ (\ area\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_set_shape_disabled>`
 
-:ref:`PhysicsServer2D.area_set_shape_disabled()<class_PhysicsServer2D_method_area_set_shape_disabled>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_set_shape_disabled()<class_PhysicsServer2D_method_area_set_shape_disabled>`.
 
 .. rst-class:: classref-item-separator
 
@@ -625,7 +625,7 @@ PhysicsServer2DExtension
 
 |void| **_area_set_shape_transform**\ (\ area\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`, transform\: :ref:`Transform2D<class_Transform2D>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_set_shape_transform>`
 
-:ref:`PhysicsServer2D.area_set_shape_transform()<class_PhysicsServer2D_method_area_set_shape_transform>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_set_shape_transform()<class_PhysicsServer2D_method_area_set_shape_transform>`.
 
 .. rst-class:: classref-item-separator
 
@@ -637,7 +637,7 @@ PhysicsServer2DExtension
 
 |void| **_area_set_space**\ (\ area\: :ref:`RID<class_RID>`, space\: :ref:`RID<class_RID>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_set_space>`
 
-:ref:`PhysicsServer2D.area_set_space()<class_PhysicsServer2D_method_area_set_space>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_set_space()<class_PhysicsServer2D_method_area_set_space>`.
 
 .. rst-class:: classref-item-separator
 
@@ -649,7 +649,7 @@ PhysicsServer2DExtension
 
 |void| **_area_set_transform**\ (\ area\: :ref:`RID<class_RID>`, transform\: :ref:`Transform2D<class_Transform2D>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__area_set_transform>`
 
-:ref:`PhysicsServer2D.area_set_transform()<class_PhysicsServer2D_method_area_set_transform>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.area_set_transform()<class_PhysicsServer2D_method_area_set_transform>`.
 
 .. rst-class:: classref-item-separator
 
@@ -661,7 +661,7 @@ PhysicsServer2DExtension
 
 |void| **_body_add_collision_exception**\ (\ body\: :ref:`RID<class_RID>`, excepted_body\: :ref:`RID<class_RID>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_add_collision_exception>`
 
-:ref:`PhysicsServer2D.body_add_collision_exception()<class_PhysicsServer2D_method_body_add_collision_exception>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_add_collision_exception()<class_PhysicsServer2D_method_body_add_collision_exception>`.
 
 .. rst-class:: classref-item-separator
 
@@ -673,7 +673,7 @@ PhysicsServer2DExtension
 
 |void| **_body_add_constant_central_force**\ (\ body\: :ref:`RID<class_RID>`, force\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_add_constant_central_force>`
 
-:ref:`PhysicsServer2D.body_add_constant_central_force()<class_PhysicsServer2D_method_body_add_constant_central_force>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_add_constant_central_force()<class_PhysicsServer2D_method_body_add_constant_central_force>`.
 
 .. rst-class:: classref-item-separator
 
@@ -685,7 +685,7 @@ PhysicsServer2DExtension
 
 |void| **_body_add_constant_force**\ (\ body\: :ref:`RID<class_RID>`, force\: :ref:`Vector2<class_Vector2>`, position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_add_constant_force>`
 
-:ref:`PhysicsServer2D.body_add_constant_force()<class_PhysicsServer2D_method_body_add_constant_force>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_add_constant_force()<class_PhysicsServer2D_method_body_add_constant_force>`.
 
 .. rst-class:: classref-item-separator
 
@@ -697,7 +697,7 @@ PhysicsServer2DExtension
 
 |void| **_body_add_constant_torque**\ (\ body\: :ref:`RID<class_RID>`, torque\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_add_constant_torque>`
 
-:ref:`PhysicsServer2D.body_add_constant_torque()<class_PhysicsServer2D_method_body_add_constant_torque>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_add_constant_torque()<class_PhysicsServer2D_method_body_add_constant_torque>`.
 
 .. rst-class:: classref-item-separator
 
@@ -709,7 +709,7 @@ PhysicsServer2DExtension
 
 |void| **_body_add_shape**\ (\ body\: :ref:`RID<class_RID>`, shape\: :ref:`RID<class_RID>`, transform\: :ref:`Transform2D<class_Transform2D>`, disabled\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_add_shape>`
 
-:ref:`PhysicsServer2D.body_add_shape()<class_PhysicsServer2D_method_body_add_shape>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_add_shape()<class_PhysicsServer2D_method_body_add_shape>`.
 
 .. rst-class:: classref-item-separator
 
@@ -721,7 +721,7 @@ PhysicsServer2DExtension
 
 |void| **_body_apply_central_force**\ (\ body\: :ref:`RID<class_RID>`, force\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_apply_central_force>`
 
-:ref:`PhysicsServer2D.body_apply_central_force()<class_PhysicsServer2D_method_body_apply_central_force>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_apply_central_force()<class_PhysicsServer2D_method_body_apply_central_force>`.
 
 .. rst-class:: classref-item-separator
 
@@ -733,7 +733,7 @@ PhysicsServer2DExtension
 
 |void| **_body_apply_central_impulse**\ (\ body\: :ref:`RID<class_RID>`, impulse\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_apply_central_impulse>`
 
-:ref:`PhysicsServer2D.body_apply_central_impulse()<class_PhysicsServer2D_method_body_apply_central_impulse>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_apply_central_impulse()<class_PhysicsServer2D_method_body_apply_central_impulse>`.
 
 .. rst-class:: classref-item-separator
 
@@ -745,7 +745,7 @@ PhysicsServer2DExtension
 
 |void| **_body_apply_force**\ (\ body\: :ref:`RID<class_RID>`, force\: :ref:`Vector2<class_Vector2>`, position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_apply_force>`
 
-:ref:`PhysicsServer2D.body_apply_force()<class_PhysicsServer2D_method_body_apply_force>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_apply_force()<class_PhysicsServer2D_method_body_apply_force>`.
 
 .. rst-class:: classref-item-separator
 
@@ -757,7 +757,7 @@ PhysicsServer2DExtension
 
 |void| **_body_apply_impulse**\ (\ body\: :ref:`RID<class_RID>`, impulse\: :ref:`Vector2<class_Vector2>`, position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_apply_impulse>`
 
-:ref:`PhysicsServer2D.body_apply_impulse()<class_PhysicsServer2D_method_body_apply_impulse>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_apply_impulse()<class_PhysicsServer2D_method_body_apply_impulse>`.
 
 .. rst-class:: classref-item-separator
 
@@ -769,7 +769,7 @@ PhysicsServer2DExtension
 
 |void| **_body_apply_torque**\ (\ body\: :ref:`RID<class_RID>`, torque\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_apply_torque>`
 
-:ref:`PhysicsServer2D.body_apply_torque()<class_PhysicsServer2D_method_body_apply_torque>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_apply_torque()<class_PhysicsServer2D_method_body_apply_torque>`.
 
 .. rst-class:: classref-item-separator
 
@@ -781,7 +781,7 @@ PhysicsServer2DExtension
 
 |void| **_body_apply_torque_impulse**\ (\ body\: :ref:`RID<class_RID>`, impulse\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_apply_torque_impulse>`
 
-:ref:`PhysicsServer2D.body_apply_torque_impulse()<class_PhysicsServer2D_method_body_apply_torque_impulse>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_apply_torque_impulse()<class_PhysicsServer2D_method_body_apply_torque_impulse>`.
 
 .. rst-class:: classref-item-separator
 
@@ -793,7 +793,7 @@ PhysicsServer2DExtension
 
 |void| **_body_attach_canvas_instance_id**\ (\ body\: :ref:`RID<class_RID>`, id\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_attach_canvas_instance_id>`
 
-:ref:`PhysicsServer2D.body_attach_canvas_instance_id()<class_PhysicsServer2D_method_body_attach_canvas_instance_id>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_attach_canvas_instance_id()<class_PhysicsServer2D_method_body_attach_canvas_instance_id>`.
 
 .. rst-class:: classref-item-separator
 
@@ -805,7 +805,7 @@ PhysicsServer2DExtension
 
 |void| **_body_attach_object_instance_id**\ (\ body\: :ref:`RID<class_RID>`, id\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_attach_object_instance_id>`
 
-:ref:`PhysicsServer2D.body_attach_object_instance_id()<class_PhysicsServer2D_method_body_attach_object_instance_id>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_attach_object_instance_id()<class_PhysicsServer2D_method_body_attach_object_instance_id>`.
 
 .. rst-class:: classref-item-separator
 
@@ -817,7 +817,7 @@ PhysicsServer2DExtension
 
 |void| **_body_clear_shapes**\ (\ body\: :ref:`RID<class_RID>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_clear_shapes>`
 
-:ref:`PhysicsServer2D.body_clear_shapes()<class_PhysicsServer2D_method_body_clear_shapes>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_clear_shapes()<class_PhysicsServer2D_method_body_clear_shapes>`.
 
 .. rst-class:: classref-item-separator
 
@@ -829,9 +829,9 @@ PhysicsServer2DExtension
 
 :ref:`bool<class_bool>` **_body_collide_shape**\ (\ body\: :ref:`RID<class_RID>`, body_shape\: :ref:`int<class_int>`, shape\: :ref:`RID<class_RID>`, shape_xform\: :ref:`Transform2D<class_Transform2D>`, motion\: :ref:`Vector2<class_Vector2>`, results\: ``void*``, result_max\: :ref:`int<class_int>`, result_count\: ``int32_t*``\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_collide_shape>`
 
-给定一个 ``body``\ 、一个 ``shape`` 及其各自的参数，如果两者之间发生碰撞，该方法应返回 ``true``\ ，并在 ``results`` 中传递其他详细信息。
+Given a ``body``, a ``shape``, and their respective parameters, this method should return ``true`` if a collision between the two would occur, with additional details passed in ``results``.
 
-\ :ref:`PhysicsServer2D<class_PhysicsServer2D>` 内部 ``shape_collide`` 方法的可覆盖版本。对应于 :ref:`PhysicsDirectSpaceState2D.collide_shape()<class_PhysicsDirectSpaceState2D_method_collide_shape>`\ 。
+Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``shape_collide`` method. Corresponds to :ref:`PhysicsDirectSpaceState2D.collide_shape()<class_PhysicsDirectSpaceState2D_method_collide_shape>`.
 
 .. rst-class:: classref-item-separator
 
@@ -843,7 +843,7 @@ PhysicsServer2DExtension
 
 :ref:`RID<class_RID>` **_body_create**\ (\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_create>`
 
-:ref:`PhysicsServer2D.body_create()<class_PhysicsServer2D_method_body_create>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_create()<class_PhysicsServer2D_method_body_create>`.
 
 .. rst-class:: classref-item-separator
 
@@ -855,7 +855,7 @@ PhysicsServer2DExtension
 
 :ref:`int<class_int>` **_body_get_canvas_instance_id**\ (\ body\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_get_canvas_instance_id>`
 
-:ref:`PhysicsServer2D.body_get_canvas_instance_id()<class_PhysicsServer2D_method_body_get_canvas_instance_id>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_get_canvas_instance_id()<class_PhysicsServer2D_method_body_get_canvas_instance_id>`.
 
 .. rst-class:: classref-item-separator
 
@@ -867,9 +867,9 @@ PhysicsServer2DExtension
 
 :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **_body_get_collision_exceptions**\ (\ body\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_get_collision_exceptions>`
 
-返回所有添加为给定 ``body`` 的碰撞例外的物体的 :ref:`RID<class_RID>`\ 。另见 :ref:`_body_add_collision_exception()<class_PhysicsServer2DExtension_private_method__body_add_collision_exception>` 和 :ref:`_body_remove_collision_exception()<class_PhysicsServer2DExtension_private_method__body_remove_collision_exception>`\ 。
+Returns the :ref:`RID<class_RID>`\ s of all bodies added as collision exceptions for the given ``body``. See also :ref:`_body_add_collision_exception()<class_PhysicsServer2DExtension_private_method__body_add_collision_exception>` and :ref:`_body_remove_collision_exception()<class_PhysicsServer2DExtension_private_method__body_remove_collision_exception>`.
 
-\ :ref:`PhysicsServer2D<class_PhysicsServer2D>` 的内部 ``body_get_collision_exceptions`` 方法的可覆盖版本。对应于 :ref:`PhysicsBody2D.get_collision_exceptions()<class_PhysicsBody2D_method_get_collision_exceptions>`\ 。
+Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``body_get_collision_exceptions`` method. Corresponds to :ref:`PhysicsBody2D.get_collision_exceptions()<class_PhysicsBody2D_method_get_collision_exceptions>`.
 
 .. rst-class:: classref-item-separator
 
@@ -881,7 +881,7 @@ PhysicsServer2DExtension
 
 :ref:`int<class_int>` **_body_get_collision_layer**\ (\ body\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_get_collision_layer>`
 
-:ref:`PhysicsServer2D.body_get_collision_layer()<class_PhysicsServer2D_method_body_get_collision_layer>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_get_collision_layer()<class_PhysicsServer2D_method_body_get_collision_layer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -893,7 +893,7 @@ PhysicsServer2DExtension
 
 :ref:`int<class_int>` **_body_get_collision_mask**\ (\ body\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_get_collision_mask>`
 
-:ref:`PhysicsServer2D.body_get_collision_mask()<class_PhysicsServer2D_method_body_get_collision_mask>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_get_collision_mask()<class_PhysicsServer2D_method_body_get_collision_mask>`.
 
 .. rst-class:: classref-item-separator
 
@@ -905,7 +905,7 @@ PhysicsServer2DExtension
 
 :ref:`float<class_float>` **_body_get_collision_priority**\ (\ body\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_get_collision_priority>`
 
-:ref:`PhysicsServer2D.body_get_collision_priority()<class_PhysicsServer2D_method_body_get_collision_priority>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_get_collision_priority()<class_PhysicsServer2D_method_body_get_collision_priority>`.
 
 .. rst-class:: classref-item-separator
 
@@ -917,7 +917,7 @@ PhysicsServer2DExtension
 
 :ref:`Vector2<class_Vector2>` **_body_get_constant_force**\ (\ body\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_get_constant_force>`
 
-:ref:`PhysicsServer2D.body_get_constant_force()<class_PhysicsServer2D_method_body_get_constant_force>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_get_constant_force()<class_PhysicsServer2D_method_body_get_constant_force>`.
 
 .. rst-class:: classref-item-separator
 
@@ -929,7 +929,7 @@ PhysicsServer2DExtension
 
 :ref:`float<class_float>` **_body_get_constant_torque**\ (\ body\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_get_constant_torque>`
 
-:ref:`PhysicsServer2D.body_get_constant_torque()<class_PhysicsServer2D_method_body_get_constant_torque>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_get_constant_torque()<class_PhysicsServer2D_method_body_get_constant_torque>`.
 
 .. rst-class:: classref-item-separator
 
@@ -941,9 +941,9 @@ PhysicsServer2DExtension
 
 :ref:`float<class_float>` **_body_get_contacts_reported_depth_threshold**\ (\ body\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_get_contacts_reported_depth_threshold>`
 
-:ref:`PhysicsServer2D<class_PhysicsServer2D>` 内部 ``body_get_contacts_reported_depth_threshold`` 方法的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``body_get_contacts_reported_depth_threshold`` method.
 
-\ **注意：**\ Godot 的默认物理实现目前未使用该方法。
+\ **Note:** This method is currently unused by Godot's default physics implementation.
 
 .. rst-class:: classref-item-separator
 
@@ -955,7 +955,7 @@ PhysicsServer2DExtension
 
 :ref:`CCDMode<enum_PhysicsServer2D_CCDMode>` **_body_get_continuous_collision_detection_mode**\ (\ body\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_get_continuous_collision_detection_mode>`
 
-:ref:`PhysicsServer2D.body_get_continuous_collision_detection_mode()<class_PhysicsServer2D_method_body_get_continuous_collision_detection_mode>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_get_continuous_collision_detection_mode()<class_PhysicsServer2D_method_body_get_continuous_collision_detection_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -967,7 +967,7 @@ PhysicsServer2DExtension
 
 :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` **_body_get_direct_state**\ (\ body\: :ref:`RID<class_RID>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_get_direct_state>`
 
-:ref:`PhysicsServer2D.body_get_direct_state()<class_PhysicsServer2D_method_body_get_direct_state>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_get_direct_state()<class_PhysicsServer2D_method_body_get_direct_state>`.
 
 .. rst-class:: classref-item-separator
 
@@ -979,7 +979,7 @@ PhysicsServer2DExtension
 
 :ref:`int<class_int>` **_body_get_max_contacts_reported**\ (\ body\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_get_max_contacts_reported>`
 
-:ref:`PhysicsServer2D.body_get_max_contacts_reported()<class_PhysicsServer2D_method_body_get_max_contacts_reported>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_get_max_contacts_reported()<class_PhysicsServer2D_method_body_get_max_contacts_reported>`.
 
 .. rst-class:: classref-item-separator
 
@@ -991,7 +991,7 @@ PhysicsServer2DExtension
 
 :ref:`BodyMode<enum_PhysicsServer2D_BodyMode>` **_body_get_mode**\ (\ body\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_get_mode>`
 
-:ref:`PhysicsServer2D.body_get_mode()<class_PhysicsServer2D_method_body_get_mode>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_get_mode()<class_PhysicsServer2D_method_body_get_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1003,7 +1003,7 @@ PhysicsServer2DExtension
 
 :ref:`int<class_int>` **_body_get_object_instance_id**\ (\ body\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_get_object_instance_id>`
 
-:ref:`PhysicsServer2D.body_get_object_instance_id()<class_PhysicsServer2D_method_body_get_object_instance_id>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_get_object_instance_id()<class_PhysicsServer2D_method_body_get_object_instance_id>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1015,7 +1015,7 @@ PhysicsServer2DExtension
 
 :ref:`Variant<class_Variant>` **_body_get_param**\ (\ body\: :ref:`RID<class_RID>`, param\: :ref:`BodyParameter<enum_PhysicsServer2D_BodyParameter>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_get_param>`
 
-:ref:`PhysicsServer2D.body_get_param()<class_PhysicsServer2D_method_body_get_param>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_get_param()<class_PhysicsServer2D_method_body_get_param>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1027,7 +1027,7 @@ PhysicsServer2DExtension
 
 :ref:`RID<class_RID>` **_body_get_shape**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_get_shape>`
 
-:ref:`PhysicsServer2D.body_get_shape()<class_PhysicsServer2D_method_body_get_shape>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_get_shape()<class_PhysicsServer2D_method_body_get_shape>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1039,7 +1039,7 @@ PhysicsServer2DExtension
 
 :ref:`int<class_int>` **_body_get_shape_count**\ (\ body\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_get_shape_count>`
 
-:ref:`PhysicsServer2D.body_get_shape_count()<class_PhysicsServer2D_method_body_get_shape_count>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_get_shape_count()<class_PhysicsServer2D_method_body_get_shape_count>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1051,7 +1051,7 @@ PhysicsServer2DExtension
 
 :ref:`Transform2D<class_Transform2D>` **_body_get_shape_transform**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_get_shape_transform>`
 
-:ref:`PhysicsServer2D.body_get_shape_transform()<class_PhysicsServer2D_method_body_get_shape_transform>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_get_shape_transform()<class_PhysicsServer2D_method_body_get_shape_transform>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1063,7 +1063,7 @@ PhysicsServer2DExtension
 
 :ref:`RID<class_RID>` **_body_get_space**\ (\ body\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_get_space>`
 
-:ref:`PhysicsServer2D.body_get_space()<class_PhysicsServer2D_method_body_get_space>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_get_space()<class_PhysicsServer2D_method_body_get_space>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1075,7 +1075,7 @@ PhysicsServer2DExtension
 
 :ref:`Variant<class_Variant>` **_body_get_state**\ (\ body\: :ref:`RID<class_RID>`, state\: :ref:`BodyState<enum_PhysicsServer2D_BodyState>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_get_state>`
 
-:ref:`PhysicsServer2D.body_get_state()<class_PhysicsServer2D_method_body_get_state>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_get_state()<class_PhysicsServer2D_method_body_get_state>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1087,7 +1087,7 @@ PhysicsServer2DExtension
 
 :ref:`bool<class_bool>` **_body_is_omitting_force_integration**\ (\ body\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_is_omitting_force_integration>`
 
-:ref:`PhysicsServer2D.body_is_omitting_force_integration()<class_PhysicsServer2D_method_body_is_omitting_force_integration>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_is_omitting_force_integration()<class_PhysicsServer2D_method_body_is_omitting_force_integration>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1099,7 +1099,7 @@ PhysicsServer2DExtension
 
 |void| **_body_remove_collision_exception**\ (\ body\: :ref:`RID<class_RID>`, excepted_body\: :ref:`RID<class_RID>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_remove_collision_exception>`
 
-:ref:`PhysicsServer2D.body_remove_collision_exception()<class_PhysicsServer2D_method_body_remove_collision_exception>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_remove_collision_exception()<class_PhysicsServer2D_method_body_remove_collision_exception>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1111,7 +1111,7 @@ PhysicsServer2DExtension
 
 |void| **_body_remove_shape**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_remove_shape>`
 
-:ref:`PhysicsServer2D.body_remove_shape()<class_PhysicsServer2D_method_body_remove_shape>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_remove_shape()<class_PhysicsServer2D_method_body_remove_shape>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1123,7 +1123,7 @@ PhysicsServer2DExtension
 
 |void| **_body_reset_mass_properties**\ (\ body\: :ref:`RID<class_RID>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_reset_mass_properties>`
 
-:ref:`PhysicsServer2D.body_reset_mass_properties()<class_PhysicsServer2D_method_body_reset_mass_properties>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_reset_mass_properties()<class_PhysicsServer2D_method_body_reset_mass_properties>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1135,7 +1135,7 @@ PhysicsServer2DExtension
 
 |void| **_body_set_axis_velocity**\ (\ body\: :ref:`RID<class_RID>`, axis_velocity\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_set_axis_velocity>`
 
-:ref:`PhysicsServer2D.body_set_axis_velocity()<class_PhysicsServer2D_method_body_set_axis_velocity>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_set_axis_velocity()<class_PhysicsServer2D_method_body_set_axis_velocity>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1147,7 +1147,7 @@ PhysicsServer2DExtension
 
 |void| **_body_set_collision_layer**\ (\ body\: :ref:`RID<class_RID>`, layer\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_set_collision_layer>`
 
-:ref:`PhysicsServer2D.body_set_collision_layer()<class_PhysicsServer2D_method_body_set_collision_layer>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_set_collision_layer()<class_PhysicsServer2D_method_body_set_collision_layer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1159,7 +1159,7 @@ PhysicsServer2DExtension
 
 |void| **_body_set_collision_mask**\ (\ body\: :ref:`RID<class_RID>`, mask\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_set_collision_mask>`
 
-:ref:`PhysicsServer2D.body_set_collision_mask()<class_PhysicsServer2D_method_body_set_collision_mask>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_set_collision_mask()<class_PhysicsServer2D_method_body_set_collision_mask>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1171,7 +1171,7 @@ PhysicsServer2DExtension
 
 |void| **_body_set_collision_priority**\ (\ body\: :ref:`RID<class_RID>`, priority\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_set_collision_priority>`
 
-:ref:`PhysicsServer2D.body_set_collision_priority()<class_PhysicsServer2D_method_body_set_collision_priority>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_set_collision_priority()<class_PhysicsServer2D_method_body_set_collision_priority>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1183,7 +1183,7 @@ PhysicsServer2DExtension
 
 |void| **_body_set_constant_force**\ (\ body\: :ref:`RID<class_RID>`, force\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_set_constant_force>`
 
-:ref:`PhysicsServer2D.body_set_constant_force()<class_PhysicsServer2D_method_body_set_constant_force>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_set_constant_force()<class_PhysicsServer2D_method_body_set_constant_force>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1195,7 +1195,7 @@ PhysicsServer2DExtension
 
 |void| **_body_set_constant_torque**\ (\ body\: :ref:`RID<class_RID>`, torque\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_set_constant_torque>`
 
-:ref:`PhysicsServer2D.body_set_constant_torque()<class_PhysicsServer2D_method_body_set_constant_torque>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_set_constant_torque()<class_PhysicsServer2D_method_body_set_constant_torque>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1207,9 +1207,9 @@ PhysicsServer2DExtension
 
 |void| **_body_set_contacts_reported_depth_threshold**\ (\ body\: :ref:`RID<class_RID>`, threshold\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_set_contacts_reported_depth_threshold>`
 
-:ref:`PhysicsServer2D<class_PhysicsServer2D>` 内部 ``body_set_contacts_reported_depth_threshold`` 方法的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``body_set_contacts_reported_depth_threshold`` method.
 
-\ **注意：**\ Godot 的默认物理实现目前未使用该方法。
+\ **Note:** This method is currently unused by Godot's default physics implementation.
 
 .. rst-class:: classref-item-separator
 
@@ -1221,7 +1221,7 @@ PhysicsServer2DExtension
 
 |void| **_body_set_continuous_collision_detection_mode**\ (\ body\: :ref:`RID<class_RID>`, mode\: :ref:`CCDMode<enum_PhysicsServer2D_CCDMode>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_set_continuous_collision_detection_mode>`
 
-:ref:`PhysicsServer2D.body_set_continuous_collision_detection_mode()<class_PhysicsServer2D_method_body_set_continuous_collision_detection_mode>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_set_continuous_collision_detection_mode()<class_PhysicsServer2D_method_body_set_continuous_collision_detection_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1233,7 +1233,7 @@ PhysicsServer2DExtension
 
 |void| **_body_set_force_integration_callback**\ (\ body\: :ref:`RID<class_RID>`, callable\: :ref:`Callable<class_Callable>`, userdata\: :ref:`Variant<class_Variant>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_set_force_integration_callback>`
 
-:ref:`PhysicsServer2D.body_set_force_integration_callback()<class_PhysicsServer2D_method_body_set_force_integration_callback>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_set_force_integration_callback()<class_PhysicsServer2D_method_body_set_force_integration_callback>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1245,7 +1245,7 @@ PhysicsServer2DExtension
 
 |void| **_body_set_max_contacts_reported**\ (\ body\: :ref:`RID<class_RID>`, amount\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_set_max_contacts_reported>`
 
-:ref:`PhysicsServer2D.body_set_max_contacts_reported()<class_PhysicsServer2D_method_body_set_max_contacts_reported>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_set_max_contacts_reported()<class_PhysicsServer2D_method_body_set_max_contacts_reported>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1257,7 +1257,7 @@ PhysicsServer2DExtension
 
 |void| **_body_set_mode**\ (\ body\: :ref:`RID<class_RID>`, mode\: :ref:`BodyMode<enum_PhysicsServer2D_BodyMode>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_set_mode>`
 
-:ref:`PhysicsServer2D.body_set_mode()<class_PhysicsServer2D_method_body_set_mode>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_set_mode()<class_PhysicsServer2D_method_body_set_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1269,7 +1269,7 @@ PhysicsServer2DExtension
 
 |void| **_body_set_omit_force_integration**\ (\ body\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_set_omit_force_integration>`
 
-:ref:`PhysicsServer2D.body_set_omit_force_integration()<class_PhysicsServer2D_method_body_set_omit_force_integration>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_set_omit_force_integration()<class_PhysicsServer2D_method_body_set_omit_force_integration>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1281,7 +1281,7 @@ PhysicsServer2DExtension
 
 |void| **_body_set_param**\ (\ body\: :ref:`RID<class_RID>`, param\: :ref:`BodyParameter<enum_PhysicsServer2D_BodyParameter>`, value\: :ref:`Variant<class_Variant>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_set_param>`
 
-:ref:`PhysicsServer2D.body_set_param()<class_PhysicsServer2D_method_body_set_param>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_set_param()<class_PhysicsServer2D_method_body_set_param>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1293,9 +1293,9 @@ PhysicsServer2DExtension
 
 |void| **_body_set_pickable**\ (\ body\: :ref:`RID<class_RID>`, pickable\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_set_pickable>`
 
-如果设置为 ``true``\ ，则允许具有给定 :ref:`RID<class_RID>` 的物体在鼠标光标悬停在其上时检测鼠标输入。
+If set to ``true``, allows the body with the given :ref:`RID<class_RID>` to detect mouse inputs when the mouse cursor is hovering on it.
 
-\ :ref:`PhysicsServer2D<class_PhysicsServer2D>` 内部 ``body_set_pickable`` 方法的可覆盖版本。对应于 :ref:`CollisionObject2D.input_pickable<class_CollisionObject2D_property_input_pickable>`\ 。
+Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``body_set_pickable`` method. Corresponds to :ref:`CollisionObject2D.input_pickable<class_CollisionObject2D_property_input_pickable>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1307,7 +1307,7 @@ PhysicsServer2DExtension
 
 |void| **_body_set_shape**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`, shape\: :ref:`RID<class_RID>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_set_shape>`
 
-:ref:`PhysicsServer2D.body_set_shape()<class_PhysicsServer2D_method_body_set_shape>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_set_shape()<class_PhysicsServer2D_method_body_set_shape>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1319,7 +1319,7 @@ PhysicsServer2DExtension
 
 |void| **_body_set_shape_as_one_way_collision**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`, margin\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_set_shape_as_one_way_collision>`
 
-:ref:`PhysicsServer2D.body_set_shape_as_one_way_collision()<class_PhysicsServer2D_method_body_set_shape_as_one_way_collision>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_set_shape_as_one_way_collision()<class_PhysicsServer2D_method_body_set_shape_as_one_way_collision>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1331,7 +1331,7 @@ PhysicsServer2DExtension
 
 |void| **_body_set_shape_disabled**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_set_shape_disabled>`
 
-:ref:`PhysicsServer2D.body_set_shape_disabled()<class_PhysicsServer2D_method_body_set_shape_disabled>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_set_shape_disabled()<class_PhysicsServer2D_method_body_set_shape_disabled>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1343,7 +1343,7 @@ PhysicsServer2DExtension
 
 |void| **_body_set_shape_transform**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`, transform\: :ref:`Transform2D<class_Transform2D>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_set_shape_transform>`
 
-:ref:`PhysicsServer2D.body_set_shape_transform()<class_PhysicsServer2D_method_body_set_shape_transform>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_set_shape_transform()<class_PhysicsServer2D_method_body_set_shape_transform>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1355,7 +1355,7 @@ PhysicsServer2DExtension
 
 |void| **_body_set_space**\ (\ body\: :ref:`RID<class_RID>`, space\: :ref:`RID<class_RID>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_set_space>`
 
-:ref:`PhysicsServer2D.body_set_space()<class_PhysicsServer2D_method_body_set_space>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_set_space()<class_PhysicsServer2D_method_body_set_space>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1367,7 +1367,7 @@ PhysicsServer2DExtension
 
 |void| **_body_set_state**\ (\ body\: :ref:`RID<class_RID>`, state\: :ref:`BodyState<enum_PhysicsServer2D_BodyState>`, value\: :ref:`Variant<class_Variant>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_set_state>`
 
-:ref:`PhysicsServer2D.body_set_state()<class_PhysicsServer2D_method_body_set_state>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_set_state()<class_PhysicsServer2D_method_body_set_state>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1379,9 +1379,9 @@ PhysicsServer2DExtension
 
 |void| **_body_set_state_sync_callback**\ (\ body\: :ref:`RID<class_RID>`, callable\: :ref:`Callable<class_Callable>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_set_state_sync_callback>`
 
-在循环的同步阶段，在调用 :ref:`_step()<class_PhysicsServer2DExtension_private_method__step>` 之前，分配 ``body`` 来调用给定的 ``callable``\ 。另见 :ref:`_sync()<class_PhysicsServer2DExtension_private_method__sync>`\ 。
+Assigns the ``body`` to call the given ``callable`` during the synchronization phase of the loop, before :ref:`_step()<class_PhysicsServer2DExtension_private_method__step>` is called. See also :ref:`_sync()<class_PhysicsServer2DExtension_private_method__sync>`.
 
-\ :ref:`PhysicsServer2D.body_set_state_sync_callback()<class_PhysicsServer2D_method_body_set_state_sync_callback>` 方法的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.body_set_state_sync_callback()<class_PhysicsServer2D_method_body_set_state_sync_callback>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1393,7 +1393,7 @@ PhysicsServer2DExtension
 
 :ref:`bool<class_bool>` **_body_test_motion**\ (\ body\: :ref:`RID<class_RID>`, from\: :ref:`Transform2D<class_Transform2D>`, motion\: :ref:`Vector2<class_Vector2>`, margin\: :ref:`float<class_float>`, collide_separation_ray\: :ref:`bool<class_bool>`, recovery_as_collision\: :ref:`bool<class_bool>`, result\: ``PhysicsServer2DExtensionMotionResult*``\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_test_motion>`
 
-:ref:`PhysicsServer2D.body_test_motion()<class_PhysicsServer2D_method_body_test_motion>` 的可覆盖版本。与暴露的实现不同，该方法不会通过 :ref:`PhysicsTestMotionParameters2D<class_PhysicsTestMotionParameters2D>` 接受所有参数。
+Overridable version of :ref:`PhysicsServer2D.body_test_motion()<class_PhysicsServer2D_method_body_test_motion>`. Unlike the exposed implementation, this method does not receive all of the arguments inside a :ref:`PhysicsTestMotionParameters2D<class_PhysicsTestMotionParameters2D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1405,7 +1405,7 @@ PhysicsServer2DExtension
 
 :ref:`RID<class_RID>` **_capsule_shape_create**\ (\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__capsule_shape_create>`
 
-:ref:`PhysicsServer2D.capsule_shape_create()<class_PhysicsServer2D_method_capsule_shape_create>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.capsule_shape_create()<class_PhysicsServer2D_method_capsule_shape_create>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1417,7 +1417,7 @@ PhysicsServer2DExtension
 
 :ref:`RID<class_RID>` **_circle_shape_create**\ (\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__circle_shape_create>`
 
-:ref:`PhysicsServer2D.circle_shape_create()<class_PhysicsServer2D_method_circle_shape_create>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.circle_shape_create()<class_PhysicsServer2D_method_circle_shape_create>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1429,7 +1429,7 @@ PhysicsServer2DExtension
 
 :ref:`RID<class_RID>` **_concave_polygon_shape_create**\ (\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__concave_polygon_shape_create>`
 
-:ref:`PhysicsServer2D.concave_polygon_shape_create()<class_PhysicsServer2D_method_concave_polygon_shape_create>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.concave_polygon_shape_create()<class_PhysicsServer2D_method_concave_polygon_shape_create>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1441,7 +1441,7 @@ PhysicsServer2DExtension
 
 :ref:`RID<class_RID>` **_convex_polygon_shape_create**\ (\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__convex_polygon_shape_create>`
 
-:ref:`PhysicsServer2D.convex_polygon_shape_create()<class_PhysicsServer2D_method_convex_polygon_shape_create>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.convex_polygon_shape_create()<class_PhysicsServer2D_method_convex_polygon_shape_create>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1453,7 +1453,7 @@ PhysicsServer2DExtension
 
 :ref:`float<class_float>` **_damped_spring_joint_get_param**\ (\ joint\: :ref:`RID<class_RID>`, param\: :ref:`DampedSpringParam<enum_PhysicsServer2D_DampedSpringParam>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__damped_spring_joint_get_param>`
 
-:ref:`PhysicsServer2D.damped_spring_joint_get_param()<class_PhysicsServer2D_method_damped_spring_joint_get_param>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.damped_spring_joint_get_param()<class_PhysicsServer2D_method_damped_spring_joint_get_param>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1465,7 +1465,7 @@ PhysicsServer2DExtension
 
 |void| **_damped_spring_joint_set_param**\ (\ joint\: :ref:`RID<class_RID>`, param\: :ref:`DampedSpringParam<enum_PhysicsServer2D_DampedSpringParam>`, value\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__damped_spring_joint_set_param>`
 
-:ref:`PhysicsServer2D.damped_spring_joint_set_param()<class_PhysicsServer2D_method_damped_spring_joint_set_param>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.damped_spring_joint_set_param()<class_PhysicsServer2D_method_damped_spring_joint_set_param>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1477,9 +1477,9 @@ PhysicsServer2DExtension
 
 |void| **_end_sync**\ (\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__end_sync>`
 
-调用该方法表示物理服务器已停止同步。它处于循环的迭代/物理阶段，即使在单独的线程上运行也可以访问物理对象。另见 :ref:`_sync()<class_PhysicsServer2DExtension_private_method__sync>`\ 。
+Called to indicate that the physics server has stopped synchronizing. It is in the loop's iteration/physics phase, and can access physics objects even if running on a separate thread. See also :ref:`_sync()<class_PhysicsServer2DExtension_private_method__sync>`.
 
-\ :ref:`PhysicsServer2D<class_PhysicsServer2D>` 的内部 ``end_sync`` 方法的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``end_sync`` method.
 
 .. rst-class:: classref-item-separator
 
@@ -1491,9 +1491,9 @@ PhysicsServer2DExtension
 
 |void| **_finish**\ (\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__finish>`
 
-当主循环结束时调用以关闭物理服务器。另见 :ref:`MainLoop._finalize()<class_MainLoop_private_method__finalize>` 和 :ref:`_init()<class_PhysicsServer2DExtension_private_method__init>`\ 。
+Called when the main loop finalizes to shut down the physics server. See also :ref:`MainLoop._finalize()<class_MainLoop_private_method__finalize>` and :ref:`_init()<class_PhysicsServer2DExtension_private_method__init>`.
 
-\ :ref:`PhysicsServer2D<class_PhysicsServer2D>` 的内部 ``finish`` 方法的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``finish`` method.
 
 .. rst-class:: classref-item-separator
 
@@ -1505,9 +1505,9 @@ PhysicsServer2DExtension
 
 |void| **_flush_queries**\ (\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__flush_queries>`
 
-:ref:`_step()<class_PhysicsServer2DExtension_private_method__step>` 之前的每个物理步骤期间调用来处理所有剩余查询。
+Called every physics step before :ref:`_step()<class_PhysicsServer2DExtension_private_method__step>` to process all remaining queries.
 
-\ :ref:`PhysicsServer2D<class_PhysicsServer2D>` 的内部 ``flush_queries`` 方法的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``flush_queries`` method.
 
 .. rst-class:: classref-item-separator
 
@@ -1519,7 +1519,7 @@ PhysicsServer2DExtension
 
 |void| **_free_rid**\ (\ rid\: :ref:`RID<class_RID>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__free_rid>`
 
-:ref:`PhysicsServer2D.free_rid()<class_PhysicsServer2D_method_free_rid>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.free_rid()<class_PhysicsServer2D_method_free_rid>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1531,7 +1531,7 @@ PhysicsServer2DExtension
 
 :ref:`int<class_int>` **_get_process_info**\ (\ process_info\: :ref:`ProcessInfo<enum_PhysicsServer2D_ProcessInfo>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__get_process_info>`
 
-:ref:`PhysicsServer2D.get_process_info()<class_PhysicsServer2D_method_get_process_info>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.get_process_info()<class_PhysicsServer2D_method_get_process_info>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1543,9 +1543,9 @@ PhysicsServer2DExtension
 
 |void| **_init**\ (\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__init>`
 
-在主循环初始化并创建该物理服务器的新实例时调用。另见 :ref:`MainLoop._initialize()<class_MainLoop_private_method__initialize>` 和 :ref:`_finish()<class_PhysicsServer2DExtension_private_method__finish>`\ 。
+Called when the main loop is initialized and creates a new instance of this physics server. See also :ref:`MainLoop._initialize()<class_MainLoop_private_method__initialize>` and :ref:`_finish()<class_PhysicsServer2DExtension_private_method__finish>`.
 
-\ :ref:`PhysicsServer2D<class_PhysicsServer2D>` 的内部 ``init`` 方法的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``init`` method.
 
 .. rst-class:: classref-item-separator
 
@@ -1557,9 +1557,9 @@ PhysicsServer2DExtension
 
 :ref:`bool<class_bool>` **_is_flushing_queries**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__is_flushing_queries>`
 
-当物理服务器正在处理查询时，应返回 ``true`` 的可覆盖方法。另见 :ref:`_flush_queries()<class_PhysicsServer2DExtension_private_method__flush_queries>`\ 。
+Overridable method that should return ``true`` when the physics server is processing queries. See also :ref:`_flush_queries()<class_PhysicsServer2DExtension_private_method__flush_queries>`.
 
-\ :ref:`PhysicsServer2D<class_PhysicsServer2D>` 内部 ``is_flushing_queries`` 方法的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``is_flushing_queries`` method.
 
 .. rst-class:: classref-item-separator
 
@@ -1571,7 +1571,7 @@ PhysicsServer2DExtension
 
 |void| **_joint_clear**\ (\ joint\: :ref:`RID<class_RID>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__joint_clear>`
 
-:ref:`PhysicsServer2D.joint_clear()<class_PhysicsServer2D_method_joint_clear>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.joint_clear()<class_PhysicsServer2D_method_joint_clear>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1583,7 +1583,7 @@ PhysicsServer2DExtension
 
 :ref:`RID<class_RID>` **_joint_create**\ (\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__joint_create>`
 
-:ref:`PhysicsServer2D.joint_create()<class_PhysicsServer2D_method_joint_create>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.joint_create()<class_PhysicsServer2D_method_joint_create>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1595,7 +1595,7 @@ PhysicsServer2DExtension
 
 |void| **_joint_disable_collisions_between_bodies**\ (\ joint\: :ref:`RID<class_RID>`, disable\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__joint_disable_collisions_between_bodies>`
 
-:ref:`PhysicsServer2D.joint_disable_collisions_between_bodies()<class_PhysicsServer2D_method_joint_disable_collisions_between_bodies>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.joint_disable_collisions_between_bodies()<class_PhysicsServer2D_method_joint_disable_collisions_between_bodies>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1607,7 +1607,7 @@ PhysicsServer2DExtension
 
 :ref:`float<class_float>` **_joint_get_param**\ (\ joint\: :ref:`RID<class_RID>`, param\: :ref:`JointParam<enum_PhysicsServer2D_JointParam>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__joint_get_param>`
 
-:ref:`PhysicsServer2D.joint_get_param()<class_PhysicsServer2D_method_joint_get_param>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.joint_get_param()<class_PhysicsServer2D_method_joint_get_param>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1619,7 +1619,7 @@ PhysicsServer2DExtension
 
 :ref:`JointType<enum_PhysicsServer2D_JointType>` **_joint_get_type**\ (\ joint\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__joint_get_type>`
 
-:ref:`PhysicsServer2D.joint_get_type()<class_PhysicsServer2D_method_joint_get_type>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.joint_get_type()<class_PhysicsServer2D_method_joint_get_type>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1631,7 +1631,7 @@ PhysicsServer2DExtension
 
 :ref:`bool<class_bool>` **_joint_is_disabled_collisions_between_bodies**\ (\ joint\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__joint_is_disabled_collisions_between_bodies>`
 
-:ref:`PhysicsServer2D.joint_is_disabled_collisions_between_bodies()<class_PhysicsServer2D_method_joint_is_disabled_collisions_between_bodies>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.joint_is_disabled_collisions_between_bodies()<class_PhysicsServer2D_method_joint_is_disabled_collisions_between_bodies>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1643,7 +1643,7 @@ PhysicsServer2DExtension
 
 |void| **_joint_make_damped_spring**\ (\ joint\: :ref:`RID<class_RID>`, anchor_a\: :ref:`Vector2<class_Vector2>`, anchor_b\: :ref:`Vector2<class_Vector2>`, body_a\: :ref:`RID<class_RID>`, body_b\: :ref:`RID<class_RID>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__joint_make_damped_spring>`
 
-:ref:`PhysicsServer2D.joint_make_damped_spring()<class_PhysicsServer2D_method_joint_make_damped_spring>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.joint_make_damped_spring()<class_PhysicsServer2D_method_joint_make_damped_spring>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1655,7 +1655,7 @@ PhysicsServer2DExtension
 
 |void| **_joint_make_groove**\ (\ joint\: :ref:`RID<class_RID>`, a_groove1\: :ref:`Vector2<class_Vector2>`, a_groove2\: :ref:`Vector2<class_Vector2>`, b_anchor\: :ref:`Vector2<class_Vector2>`, body_a\: :ref:`RID<class_RID>`, body_b\: :ref:`RID<class_RID>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__joint_make_groove>`
 
-:ref:`PhysicsServer2D.joint_make_groove()<class_PhysicsServer2D_method_joint_make_groove>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.joint_make_groove()<class_PhysicsServer2D_method_joint_make_groove>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1667,7 +1667,7 @@ PhysicsServer2DExtension
 
 |void| **_joint_make_pin**\ (\ joint\: :ref:`RID<class_RID>`, anchor\: :ref:`Vector2<class_Vector2>`, body_a\: :ref:`RID<class_RID>`, body_b\: :ref:`RID<class_RID>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__joint_make_pin>`
 
-:ref:`PhysicsServer2D.joint_make_pin()<class_PhysicsServer2D_method_joint_make_pin>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.joint_make_pin()<class_PhysicsServer2D_method_joint_make_pin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1679,7 +1679,7 @@ PhysicsServer2DExtension
 
 |void| **_joint_set_param**\ (\ joint\: :ref:`RID<class_RID>`, param\: :ref:`JointParam<enum_PhysicsServer2D_JointParam>`, value\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__joint_set_param>`
 
-:ref:`PhysicsServer2D.joint_set_param()<class_PhysicsServer2D_method_joint_set_param>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.joint_set_param()<class_PhysicsServer2D_method_joint_set_param>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1691,7 +1691,7 @@ PhysicsServer2DExtension
 
 :ref:`bool<class_bool>` **_pin_joint_get_flag**\ (\ joint\: :ref:`RID<class_RID>`, flag\: :ref:`PinJointFlag<enum_PhysicsServer2D_PinJointFlag>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__pin_joint_get_flag>`
 
-:ref:`PhysicsServer2D.pin_joint_get_flag()<class_PhysicsServer2D_method_pin_joint_get_flag>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.pin_joint_get_flag()<class_PhysicsServer2D_method_pin_joint_get_flag>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1703,7 +1703,7 @@ PhysicsServer2DExtension
 
 :ref:`float<class_float>` **_pin_joint_get_param**\ (\ joint\: :ref:`RID<class_RID>`, param\: :ref:`PinJointParam<enum_PhysicsServer2D_PinJointParam>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__pin_joint_get_param>`
 
-:ref:`PhysicsServer2D.pin_joint_get_param()<class_PhysicsServer2D_method_pin_joint_get_param>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.pin_joint_get_param()<class_PhysicsServer2D_method_pin_joint_get_param>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1715,7 +1715,7 @@ PhysicsServer2DExtension
 
 |void| **_pin_joint_set_flag**\ (\ joint\: :ref:`RID<class_RID>`, flag\: :ref:`PinJointFlag<enum_PhysicsServer2D_PinJointFlag>`, enabled\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__pin_joint_set_flag>`
 
-:ref:`PhysicsServer2D.pin_joint_set_flag()<class_PhysicsServer2D_method_pin_joint_set_flag>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.pin_joint_set_flag()<class_PhysicsServer2D_method_pin_joint_set_flag>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1727,7 +1727,7 @@ PhysicsServer2DExtension
 
 |void| **_pin_joint_set_param**\ (\ joint\: :ref:`RID<class_RID>`, param\: :ref:`PinJointParam<enum_PhysicsServer2D_PinJointParam>`, value\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__pin_joint_set_param>`
 
-:ref:`PhysicsServer2D.pin_joint_set_param()<class_PhysicsServer2D_method_pin_joint_set_param>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.pin_joint_set_param()<class_PhysicsServer2D_method_pin_joint_set_param>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1739,7 +1739,7 @@ PhysicsServer2DExtension
 
 :ref:`RID<class_RID>` **_rectangle_shape_create**\ (\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__rectangle_shape_create>`
 
-:ref:`PhysicsServer2D.rectangle_shape_create()<class_PhysicsServer2D_method_rectangle_shape_create>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.rectangle_shape_create()<class_PhysicsServer2D_method_rectangle_shape_create>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1751,7 +1751,7 @@ PhysicsServer2DExtension
 
 :ref:`RID<class_RID>` **_segment_shape_create**\ (\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__segment_shape_create>`
 
-:ref:`PhysicsServer2D.segment_shape_create()<class_PhysicsServer2D_method_segment_shape_create>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.segment_shape_create()<class_PhysicsServer2D_method_segment_shape_create>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1763,7 +1763,7 @@ PhysicsServer2DExtension
 
 :ref:`RID<class_RID>` **_separation_ray_shape_create**\ (\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__separation_ray_shape_create>`
 
-:ref:`PhysicsServer2D.separation_ray_shape_create()<class_PhysicsServer2D_method_separation_ray_shape_create>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.separation_ray_shape_create()<class_PhysicsServer2D_method_separation_ray_shape_create>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1775,7 +1775,7 @@ PhysicsServer2DExtension
 
 |void| **_set_active**\ (\ active\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__set_active>`
 
-:ref:`PhysicsServer2D.set_active()<class_PhysicsServer2D_method_set_active>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.set_active()<class_PhysicsServer2D_method_set_active>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1787,9 +1787,9 @@ PhysicsServer2DExtension
 
 :ref:`bool<class_bool>` **_shape_collide**\ (\ shape_A\: :ref:`RID<class_RID>`, xform_A\: :ref:`Transform2D<class_Transform2D>`, motion_A\: :ref:`Vector2<class_Vector2>`, shape_B\: :ref:`RID<class_RID>`, xform_B\: :ref:`Transform2D<class_Transform2D>`, motion_B\: :ref:`Vector2<class_Vector2>`, results\: ``void*``, result_max\: :ref:`int<class_int>`, result_count\: ``int32_t*``\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__shape_collide>`
 
-给定两个形状及其参数，如果两者之间发生碰撞，则应返回 ``true``\ ，并在 ``results`` 中传递其他详细信息。
+Given two shapes and their parameters, should return ``true`` if a collision between the two would occur, with additional details passed in ``results``.
 
-\ :ref:`PhysicsServer2D<class_PhysicsServer2D>` 内部 ``shape_collide`` 方法的可覆盖版本。对应于 :ref:`PhysicsDirectSpaceState2D.collide_shape()<class_PhysicsDirectSpaceState2D_method_collide_shape>`\ 。
+Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``shape_collide`` method. Corresponds to :ref:`PhysicsDirectSpaceState2D.collide_shape()<class_PhysicsDirectSpaceState2D_method_collide_shape>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1801,9 +1801,9 @@ PhysicsServer2DExtension
 
 :ref:`float<class_float>` **_shape_get_custom_solver_bias**\ (\ shape\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__shape_get_custom_solver_bias>`
 
-应返回给定 ``shape`` 的自定义解算器偏差，该偏差定义了当涉及该形状时，物体在接触时被迫分离的程度。
+Should return the custom solver bias of the given ``shape``, which defines how much bodies are forced to separate on contact when this shape is involved.
 
-\ :ref:`PhysicsServer2D<class_PhysicsServer2D>` 的内部 ``shape_get_custom_solver_bias`` 方法的可覆盖版本。对应于 :ref:`Shape2D.custom_solver_bias<class_Shape2D_property_custom_solver_bias>`\ 。
+Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``shape_get_custom_solver_bias`` method. Corresponds to :ref:`Shape2D.custom_solver_bias<class_Shape2D_property_custom_solver_bias>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1815,7 +1815,7 @@ PhysicsServer2DExtension
 
 :ref:`Variant<class_Variant>` **_shape_get_data**\ (\ shape\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__shape_get_data>`
 
-:ref:`PhysicsServer2D.shape_get_data()<class_PhysicsServer2D_method_shape_get_data>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.shape_get_data()<class_PhysicsServer2D_method_shape_get_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1827,7 +1827,7 @@ PhysicsServer2DExtension
 
 :ref:`ShapeType<enum_PhysicsServer2D_ShapeType>` **_shape_get_type**\ (\ shape\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__shape_get_type>`
 
-:ref:`PhysicsServer2D.shape_get_type()<class_PhysicsServer2D_method_shape_get_type>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.shape_get_type()<class_PhysicsServer2D_method_shape_get_type>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1839,9 +1839,9 @@ PhysicsServer2DExtension
 
 |void| **_shape_set_custom_solver_bias**\ (\ shape\: :ref:`RID<class_RID>`, bias\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__shape_set_custom_solver_bias>`
 
-应为给定的 ``shape`` 设置自定义解算器偏差。它定义了接触时物体被迫分离的程度。
+Should set the custom solver bias for the given ``shape``. It defines how much bodies are forced to separate on contact.
 
-\ :ref:`PhysicsServer2D<class_PhysicsServer2D>` 内部 ``shape_get_custom_solver_bias`` 方法的可覆盖版本。对应于 :ref:`Shape2D.custom_solver_bias<class_Shape2D_property_custom_solver_bias>`\ 。
+Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``shape_get_custom_solver_bias`` method. Corresponds to :ref:`Shape2D.custom_solver_bias<class_Shape2D_property_custom_solver_bias>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1853,7 +1853,7 @@ PhysicsServer2DExtension
 
 |void| **_shape_set_data**\ (\ shape\: :ref:`RID<class_RID>`, data\: :ref:`Variant<class_Variant>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__shape_set_data>`
 
-:ref:`PhysicsServer2D.shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.shape_set_data()<class_PhysicsServer2D_method_shape_set_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1865,7 +1865,7 @@ PhysicsServer2DExtension
 
 :ref:`RID<class_RID>` **_space_create**\ (\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__space_create>`
 
-:ref:`PhysicsServer2D.space_create()<class_PhysicsServer2D_method_space_create>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.space_create()<class_PhysicsServer2D_method_space_create>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1877,9 +1877,9 @@ PhysicsServer2DExtension
 
 :ref:`int<class_int>` **_space_get_contact_count**\ (\ space\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__space_get_contact_count>`
 
-应返回在给定的 ``space`` 中最后一个物理步骤期间发生了多少次接触。另见 :ref:`_space_get_contacts()<class_PhysicsServer2DExtension_private_method__space_get_contacts>` 和 :ref:`_space_set_debug_contacts()<class_PhysicsServer2DExtension_private_method__space_set_debug_contacts>`\ 。
+Should return how many contacts have occurred during the last physics step in the given ``space``. See also :ref:`_space_get_contacts()<class_PhysicsServer2DExtension_private_method__space_get_contacts>` and :ref:`_space_set_debug_contacts()<class_PhysicsServer2DExtension_private_method__space_set_debug_contacts>`.
 
-\ :ref:`PhysicsServer2D<class_PhysicsServer2D>` 的内部 ``space_get_contact_count`` 方法的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``space_get_contact_count`` method.
 
 .. rst-class:: classref-item-separator
 
@@ -1891,9 +1891,9 @@ PhysicsServer2DExtension
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **_space_get_contacts**\ (\ space\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__space_get_contacts>`
 
-应返回给定 ``space`` 中上一个物理步骤中发生的所有接触的位置。另见 :ref:`_space_get_contact_count()<class_PhysicsServer2DExtension_private_method__space_get_contact_count>` 和 :ref:`_space_set_debug_contacts()<class_PhysicsServer2DExtension_private_method__space_set_debug_contacts>`\ 。
+Should return the positions of all contacts that have occurred during the last physics step in the given ``space``. See also :ref:`_space_get_contact_count()<class_PhysicsServer2DExtension_private_method__space_get_contact_count>` and :ref:`_space_set_debug_contacts()<class_PhysicsServer2DExtension_private_method__space_set_debug_contacts>`.
 
-\ :ref:`PhysicsServer2D<class_PhysicsServer2D>` 的内部 ``space_get_contacts`` 方法的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``space_get_contacts`` method.
 
 .. rst-class:: classref-item-separator
 
@@ -1905,7 +1905,7 @@ PhysicsServer2DExtension
 
 :ref:`PhysicsDirectSpaceState2D<class_PhysicsDirectSpaceState2D>` **_space_get_direct_state**\ (\ space\: :ref:`RID<class_RID>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__space_get_direct_state>`
 
-:ref:`PhysicsServer2D.space_get_direct_state()<class_PhysicsServer2D_method_space_get_direct_state>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.space_get_direct_state()<class_PhysicsServer2D_method_space_get_direct_state>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1917,7 +1917,7 @@ PhysicsServer2DExtension
 
 :ref:`float<class_float>` **_space_get_param**\ (\ space\: :ref:`RID<class_RID>`, param\: :ref:`SpaceParameter<enum_PhysicsServer2D_SpaceParameter>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__space_get_param>`
 
-:ref:`PhysicsServer2D.space_get_param()<class_PhysicsServer2D_method_space_get_param>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.space_get_param()<class_PhysicsServer2D_method_space_get_param>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1929,7 +1929,7 @@ PhysicsServer2DExtension
 
 :ref:`bool<class_bool>` **_space_is_active**\ (\ space\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsServer2DExtension_private_method__space_is_active>`
 
-:ref:`PhysicsServer2D.space_is_active()<class_PhysicsServer2D_method_space_is_active>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.space_is_active()<class_PhysicsServer2D_method_space_is_active>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1941,7 +1941,7 @@ PhysicsServer2DExtension
 
 |void| **_space_set_active**\ (\ space\: :ref:`RID<class_RID>`, active\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__space_set_active>`
 
-:ref:`PhysicsServer2D.space_set_active()<class_PhysicsServer2D_method_space_set_active>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.space_set_active()<class_PhysicsServer2D_method_space_set_active>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1953,9 +1953,9 @@ PhysicsServer2DExtension
 
 |void| **_space_set_debug_contacts**\ (\ space\: :ref:`RID<class_RID>`, max_contacts\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__space_set_debug_contacts>`
 
-内部使用以允许给定的 ``space`` 存储接触点，最多可达 ``max_contacts``\ 。当 :ref:`SceneTree.debug_collisions_hint<class_SceneTree_property_debug_collisions_hint>` 为 ``true`` 时，或通过在编辑器中勾选“可见碰撞形状”，将自动为主 :ref:`World2D<class_World2D>` 的空间设置该设置。仅适用于调试构建。
+Used internally to allow the given ``space`` to store contact points, up to ``max_contacts``. This is automatically set for the main :ref:`World2D<class_World2D>`'s space when :ref:`SceneTree.debug_collisions_hint<class_SceneTree_property_debug_collisions_hint>` is ``true``, or by checking "Visible Collision Shapes" in the editor. Only works in debug builds.
 
-\ :ref:`PhysicsServer2D<class_PhysicsServer2D>` 的内部 ``space_set_debug_contacts`` 方法的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``space_set_debug_contacts`` method.
 
 .. rst-class:: classref-item-separator
 
@@ -1967,7 +1967,7 @@ PhysicsServer2DExtension
 
 |void| **_space_set_param**\ (\ space\: :ref:`RID<class_RID>`, param\: :ref:`SpaceParameter<enum_PhysicsServer2D_SpaceParameter>`, value\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__space_set_param>`
 
-:ref:`PhysicsServer2D.space_set_param()<class_PhysicsServer2D_method_space_set_param>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.space_set_param()<class_PhysicsServer2D_method_space_set_param>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1979,9 +1979,9 @@ PhysicsServer2DExtension
 
 |void| **_step**\ (\ step\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__step>`
 
-每个物理步骤期间调用来处理物理模拟。\ ``step`` 是自上一个物理步骤以来经过的时间，单位为秒。通常与 :ref:`Node.get_physics_process_delta_time()<class_Node_method_get_physics_process_delta_time>` 的返回值相同。
+Called every physics step to process the physics simulation. ``step`` is the time elapsed since the last physics step, in seconds. It is usually the same as the value returned by :ref:`Node.get_physics_process_delta_time()<class_Node_method_get_physics_process_delta_time>`.
 
-\ :ref:`PhysicsServer2D<class_PhysicsServer2D>` 的内部 ``step`` 方法的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``step`` method.
 
 .. rst-class:: classref-item-separator
 
@@ -1993,9 +1993,9 @@ PhysicsServer2DExtension
 
 |void| **_sync**\ (\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__sync>`
 
-调用该方法表示物理服务器正在同步，如果在单独的线程上运行则无法访问物理状态。另见 :ref:`_end_sync()<class_PhysicsServer2DExtension_private_method__end_sync>`\ 。
+Called to indicate that the physics server is synchronizing and cannot access physics states if running on a separate thread. See also :ref:`_end_sync()<class_PhysicsServer2DExtension_private_method__end_sync>`.
 
-\ :ref:`PhysicsServer2D<class_PhysicsServer2D>` 的内部 ``sync`` 方法的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``sync`` method.
 
 .. rst-class:: classref-item-separator
 
@@ -2007,7 +2007,7 @@ PhysicsServer2DExtension
 
 :ref:`RID<class_RID>` **_world_boundary_shape_create**\ (\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__world_boundary_shape_create>`
 
-:ref:`PhysicsServer2D.world_boundary_shape_create()<class_PhysicsServer2D_method_world_boundary_shape_create>` 的可覆盖版本。
+Overridable version of :ref:`PhysicsServer2D.world_boundary_shape_create()<class_PhysicsServer2D_method_world_boundary_shape_create>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2019,7 +2019,7 @@ PhysicsServer2DExtension
 
 :ref:`bool<class_bool>` **body_test_motion_is_excluding_body**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2DExtension_method_body_test_motion_is_excluding_body>`
 
-如果具有指定 :ref:`RID<class_RID>` 的物体被排除在 :ref:`_body_test_motion()<class_PhysicsServer2DExtension_private_method__body_test_motion>` 之外，则返回 ``true``\ 。另见 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`\ 。
+Returns ``true`` if the body with the given :ref:`RID<class_RID>` is being excluded from :ref:`_body_test_motion()<class_PhysicsServer2DExtension_private_method__body_test_motion>`. See also :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2031,14 +2031,14 @@ PhysicsServer2DExtension
 
 :ref:`bool<class_bool>` **body_test_motion_is_excluding_object**\ (\ object\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsServer2DExtension_method_body_test_motion_is_excluding_object>`
 
-如果具有指定实例 ID 的对象被排除在 :ref:`_body_test_motion()<class_PhysicsServer2DExtension_private_method__body_test_motion>` 之外，则返回 ``true``\ 。另见 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`\ 。
+Returns ``true`` if the object with the given instance ID is being excluded from :ref:`_body_test_motion()<class_PhysicsServer2DExtension_private_method__body_test_motion>`. See also :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

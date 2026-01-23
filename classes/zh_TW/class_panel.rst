@@ -5,30 +5,30 @@
 Panel
 =====
 
-**繼承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-顯示 :ref:`StyleBox<class_StyleBox>` 的 GUI 控制項。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-**Panel** 是一種顯示 :ref:`StyleBox<class_StyleBox>` 的 GUI 控制項。另見 :ref:`PanelContainer<class_PanelContainer>`\ 。
+A GUI control that displays a :ref:`StyleBox<class_StyleBox>`.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- `2D 角色扮演遊戲範例 <https://godotengine.org/asset-library/asset/2729>`__
+**Panel** is a GUI control that displays a :ref:`StyleBox<class_StyleBox>`. See also :ref:`PanelContainer<class_PanelContainer>`.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- `2D Role Playing Game (RPG) Demo <https://godotengine.org/asset-library/asset/2729>`__
 
 - `Hierarchical Finite State Machine Demo <https://godotengine.org/asset-library/asset/2714>`__
 
 .. rst-class:: classref-reftable-group
 
-主題屬性
---------
+Theme Properties
+----------------
 
 .. table::
    :widths: auto
@@ -43,8 +43,8 @@ Panel
 
 .. rst-class:: classref-descriptions-group
 
-主題屬性說明
-------------
+Theme Property Descriptions
+---------------------------
 
 .. _class_Panel_theme_style_panel:
 
@@ -52,14 +52,14 @@ Panel
 
 :ref:`StyleBox<class_StyleBox>` **panel** :ref:`🔗<class_Panel_theme_style_panel>`
 
-該控制項的 :ref:`StyleBox<class_StyleBox>`\ 。
+The :ref:`StyleBox<class_StyleBox>` of this control.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

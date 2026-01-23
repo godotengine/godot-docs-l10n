@@ -5,30 +5,30 @@
 XRPose
 ======
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-這個物件包含了追蹤物件姿勢相關的所有資料。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-XR 運作時通常可以識別裝置上的多個位置，例如空間追蹤的控制器。
-
-XR 運作時會為每個姿勢都提供朝向、位置、線速度和角速度。這個物件包含某個姿勢的狀態。
+This object contains all data related to a pose on a tracked object.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`XR 文件索引 <../tutorials/xr/index>`
+XR runtimes often identify multiple locations on devices such as controllers that are spatially tracked.
+
+Orientation, location, linear velocity and angular velocity are all provided for each pose by the XR runtime. This object contains this state of a pose.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`XR documentation index <../tutorials/xr/index>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ XR 運作時會為每個姿勢都提供朝向、位置、線速度和角速度�
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -65,8 +65,8 @@ XR 運作時會為每個姿勢都提供朝向、位置、線速度和角速度�
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_XRPose_TrackingConfidence:
 
@@ -80,7 +80,7 @@ enum **TrackingConfidence**: :ref:`🔗<enum_XRPose_TrackingConfidence>`
 
 :ref:`TrackingConfidence<enum_XRPose_TrackingConfidence>` **XR_TRACKING_CONFIDENCE_NONE** = ``0``
 
-此姿勢沒有可用的追蹤資訊。
+No tracking information is available for this pose.
 
 .. _class_XRPose_constant_XR_TRACKING_CONFIDENCE_LOW:
 
@@ -88,7 +88,7 @@ enum **TrackingConfidence**: :ref:`🔗<enum_XRPose_TrackingConfidence>`
 
 :ref:`TrackingConfidence<enum_XRPose_TrackingConfidence>` **XR_TRACKING_CONFIDENCE_LOW** = ``1``
 
-追蹤資訊可能不準確或是估計而來的。例如，對於內向外型追蹤，這表示的是控制器可能被（部分）遮擋。
+Tracking information may be inaccurate or estimated. For example, with inside out tracking this would indicate a controller may be (partially) obscured.
 
 .. _class_XRPose_constant_XR_TRACKING_CONFIDENCE_HIGH:
 
@@ -104,8 +104,8 @@ Tracking information is considered accurate and up to date.
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_XRPose_property_angular_velocity:
 
@@ -118,7 +118,7 @@ Tracking information is considered accurate and up to date.
 - |void| **set_angular_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_angular_velocity**\ (\ )
 
-該姿勢的角速度。
+The angular velocity for this pose.
 
 .. rst-class:: classref-item-separator
 
@@ -135,7 +135,7 @@ Tracking information is considered accurate and up to date.
 - |void| **set_has_tracking_data**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_has_tracking_data**\ (\ )
 
-如果為 ``true``\ ，則我們的追蹤資料是最新的。如果為 ``false``\ ，我們將不再接收新的追蹤資料，並且我們的狀態是最後一個有效狀態。
+If ``true`` our tracking data is up to date. If ``false`` we're no longer receiving new tracking data and our state is whatever that last valid state was.
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ Tracking information is considered accurate and up to date.
 - |void| **set_linear_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_linear_velocity**\ (\ )
 
-該姿勢的線速度。
+The linear velocity of this pose.
 
 .. rst-class:: classref-item-separator
 
@@ -194,7 +194,7 @@ The name of this pose. Usually, this name is derived from an action map set up b
 - |void| **set_tracking_confidence**\ (\ value\: :ref:`TrackingConfidence<enum_XRPose_TrackingConfidence>`\ )
 - :ref:`TrackingConfidence<enum_XRPose_TrackingConfidence>` **get_tracking_confidence**\ (\ )
 
-此姿勢的追蹤置信度，提供了有關此記錄的空間定位準確度的洞察力。
+The tracking confidence for this pose, provides insight on how accurate the spatial positioning of this record is.
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ The name of this pose. Usually, this name is derived from an action map set up b
 - |void| **set_transform**\ (\ value\: :ref:`Transform3D<class_Transform3D>`\ )
 - :ref:`Transform3D<class_Transform3D>` **get_transform**\ (\ )
 
-該變換包含由 XR 運作時報告的原點和變換。
+The transform containing the original and transform as reported by the XR runtime.
 
 .. rst-class:: classref-section-separator
 
@@ -219,8 +219,8 @@ The name of this pose. Usually, this name is derived from an action map set up b
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_XRPose_method_get_adjusted_transform:
 
@@ -228,14 +228,14 @@ The name of this pose. Usually, this name is derived from an action map set up b
 
 :ref:`Transform3D<class_Transform3D>` **get_adjusted_transform**\ (\ ) |const| :ref:`🔗<class_XRPose_method_get_adjusted_transform>`
 
-返回受到世界縮放和我們參考系影響的 :ref:`transform<class_XRPose_property_transform>`\ 。這是用於放置 :ref:`XRNode3D<class_XRNode3D>` 對象的變換。
+Returns the :ref:`transform<class_XRPose_property_transform>` with world scale and our reference frame applied. This is the transform used to position :ref:`XRNode3D<class_XRNode3D>` objects.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

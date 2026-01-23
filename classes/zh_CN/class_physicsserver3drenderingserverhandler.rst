@@ -5,14 +5,14 @@
 PhysicsServer3DRenderingServerHandler
 =====================================
 
-**继承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-用于为 :ref:`PhysicsServer3DExtension._soft_body_update_rendering_server()<class_PhysicsServer3DExtension_private_method__soft_body_update_rendering_server>` 提供柔体渲染处理器的类。
+A class used to provide :ref:`PhysicsServer3DExtension._soft_body_update_rendering_server()<class_PhysicsServer3DExtension_private_method__soft_body_update_rendering_server>` with a rendering handler for soft bodies.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -37,8 +37,8 @@ PhysicsServer3DRenderingServerHandler
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_PhysicsServer3DRenderingServerHandler_private_method__set_aabb:
 
@@ -46,7 +46,7 @@ PhysicsServer3DRenderingServerHandler
 
 |void| **_set_aabb**\ (\ aabb\: :ref:`AABB<class_AABB>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer3DRenderingServerHandler_private_method__set_aabb>`
 
-由 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 调用以设置 :ref:`SoftBody3D<class_SoftBody3D>` 的边界框。
+Called by the :ref:`PhysicsServer3D<class_PhysicsServer3D>` to set the bounding box for the :ref:`SoftBody3D<class_SoftBody3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -58,9 +58,9 @@ PhysicsServer3DRenderingServerHandler
 
 |void| **_set_normal**\ (\ vertex_id\: :ref:`int<class_int>`, normal\: :ref:`Vector3<class_Vector3>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer3DRenderingServerHandler_private_method__set_normal>`
 
-由 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 调用，以在 ``vertex_id`` 指定的索引处设置 :ref:`SoftBody3D<class_SoftBody3D>` 顶点的法线。
+Called by the :ref:`PhysicsServer3D<class_PhysicsServer3D>` to set the normal for the :ref:`SoftBody3D<class_SoftBody3D>` vertex at the index specified by ``vertex_id``.
 
-\ **注意：**\ 在 Godot 4.2 之前，\ ``normal`` 参数的类型为 ``const void*``\ 。
+\ **Note:** The ``normal`` parameter used to be of type ``const void*`` prior to Godot 4.2.
 
 .. rst-class:: classref-item-separator
 
@@ -72,9 +72,9 @@ PhysicsServer3DRenderingServerHandler
 
 |void| **_set_vertex**\ (\ vertex_id\: :ref:`int<class_int>`, vertex\: :ref:`Vector3<class_Vector3>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer3DRenderingServerHandler_private_method__set_vertex>`
 
-由 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 调用，以在 ``vertex_id`` 指定的索引处设置 :ref:`SoftBody3D<class_SoftBody3D>` 顶点的位置。
+Called by the :ref:`PhysicsServer3D<class_PhysicsServer3D>` to set the position for the :ref:`SoftBody3D<class_SoftBody3D>` vertex at the index specified by ``vertex_id``.
 
-\ **注意：**\ 在 Godot 4.2 之前，\ ``vertex`` 参数的类型为 ``const void*``\ 。
+\ **Note:** The ``vertex`` parameter used to be of type ``const void*`` prior to Godot 4.2.
 
 .. rst-class:: classref-item-separator
 
@@ -86,7 +86,7 @@ PhysicsServer3DRenderingServerHandler
 
 |void| **set_aabb**\ (\ aabb\: :ref:`AABB<class_AABB>`\ ) :ref:`🔗<class_PhysicsServer3DRenderingServerHandler_method_set_aabb>`
 
-设置该 :ref:`SoftBody3D<class_SoftBody3D>` 的边界框。
+Sets the bounding box for the :ref:`SoftBody3D<class_SoftBody3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -98,7 +98,7 @@ PhysicsServer3DRenderingServerHandler
 
 |void| **set_normal**\ (\ vertex_id\: :ref:`int<class_int>`, normal\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsServer3DRenderingServerHandler_method_set_normal>`
 
-在由 ``vertex_id`` 指定的索引处设置该 :ref:`SoftBody3D<class_SoftBody3D>` 顶点的法线。
+Sets the normal for the :ref:`SoftBody3D<class_SoftBody3D>` vertex at the index specified by ``vertex_id``.
 
 .. rst-class:: classref-item-separator
 
@@ -110,14 +110,14 @@ PhysicsServer3DRenderingServerHandler
 
 |void| **set_vertex**\ (\ vertex_id\: :ref:`int<class_int>`, vertex\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsServer3DRenderingServerHandler_method_set_vertex>`
 
-在由 ``vertex_id`` 指定的索引处设置该 :ref:`SoftBody3D<class_SoftBody3D>` 顶点的位置。
+Sets the position for the :ref:`SoftBody3D<class_SoftBody3D>` vertex at the index specified by ``vertex_id``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

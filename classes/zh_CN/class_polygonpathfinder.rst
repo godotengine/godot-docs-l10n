@@ -5,7 +5,7 @@
 PolygonPathFinder
 =================
 
-**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 .. container:: contribute
 
@@ -13,8 +13,8 @@ PolygonPathFinder
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -43,8 +43,8 @@ PolygonPathFinder
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_PolygonPathFinder_method_find_path:
 
@@ -122,7 +122,7 @@ PolygonPathFinder
 
 :ref:`bool<class_bool>` **is_point_inside**\ (\ point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_PolygonPathFinder_method_is_point_inside>`
 
-如果 ``point`` 在多边形区域内部，则返回 ``true``\ 。
+Returns ``true`` if ``point`` falls inside the polygon area.
 
 
 .. tabs::
@@ -133,8 +133,8 @@ PolygonPathFinder
     var points = [Vector2(0.0, 0.0), Vector2(1.0, 0.0), Vector2(0.0, 1.0)]
     var connections = [0, 1, 1, 2, 2, 0]
     polygon_path_finder.setup(points, connections)
-    print(polygon_path_finder.is_point_inside(Vector2(0.2, 0.2))) # 输出 true
-    print(polygon_path_finder.is_point_inside(Vector2(1.0, 1.0))) # 输出 false
+    print(polygon_path_finder.is_point_inside(Vector2(0.2, 0.2))) # Prints true
+    print(polygon_path_finder.is_point_inside(Vector2(1.0, 1.0))) # Prints false
 
  .. code-tab:: csharp
 
@@ -147,8 +147,8 @@ PolygonPathFinder
     ];
     int[] connections = [0, 1, 1, 2, 2, 0];
     polygonPathFinder.Setup(points, connections);
-    GD.Print(polygonPathFinder.IsPointInside(new Vector2(0.2f, 0.2f))); // 输出 True
-    GD.Print(polygonPathFinder.IsPointInside(new Vector2(1.0f, 1.0f))); // 输出 False
+    GD.Print(polygonPathFinder.IsPointInside(new Vector2(0.2f, 0.2f))); // Prints True
+    GD.Print(polygonPathFinder.IsPointInside(new Vector2(1.0f, 1.0f))); // Prints False
 
 
 
@@ -176,9 +176,9 @@ PolygonPathFinder
 
 |void| **setup**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, connections\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_PolygonPathFinder_method_setup>`
 
-使用两个数组设置 **PolygonPathFinder**\ ：点数组中定义了多边形的顶点，索引数组则决定了多边形的边。
+Sets up **PolygonPathFinder** with an array of points that define the vertices of the polygon, and an array of indices that determine the edges of the polygon.
 
-\ ``connections`` 的长度必须为偶数，为奇数时会返回错误。
+The length of ``connections`` must be even, returns an error if odd.
 
 
 .. tabs::
@@ -204,12 +204,12 @@ PolygonPathFinder
 
 
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

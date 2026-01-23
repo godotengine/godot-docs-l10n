@@ -5,23 +5,23 @@
 NavigationMeshSourceGeometryData2D
 ==================================
 
-**实验性：** This class may be changed or removed in future versions.
+**Experimental:** This class may be changed or removed in future versions.
 
-**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-存放解析所得的源几何体数据的容器，用于导航网格的烘焙。
+Container for parsed source geometry data used in navigation mesh baking.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-存放解析所得的源几何体数据的容器，用于导航网格的烘焙。
+Container for parsed source geometry data used in navigation mesh baking.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -66,8 +66,8 @@ NavigationMeshSourceGeometryData2D
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_NavigationMeshSourceGeometryData2D_method_add_obstruction_outline:
 
@@ -75,7 +75,7 @@ NavigationMeshSourceGeometryData2D
 
 |void| **add_obstruction_outline**\ (\ shape_outline\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_add_obstruction_outline>`
 
-添加形状的轮廓点作为遮挡区域。
+Adds the outline points of a shape as obstructed area.
 
 .. rst-class:: classref-item-separator
 
@@ -87,7 +87,7 @@ NavigationMeshSourceGeometryData2D
 
 |void| **add_projected_obstruction**\ (\ vertices\: :ref:`PackedVector2Array<class_PackedVector2Array>`, carve\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_add_projected_obstruction>`
 
-将投影的障碍物形状添加到源几何体。如果 ``carve`` 为 ``true``\ ，则雕刻的形状将不会受到导航网格烘焙过程的额外偏移（例如代理半径）的影响。
+Adds a projected obstruction shape to the source geometry. If ``carve`` is ``true`` the carved shape will not be affected by additional offsets (e.g. agent radius) of the navigation mesh baking process.
 
 .. rst-class:: classref-item-separator
 
@@ -99,7 +99,7 @@ NavigationMeshSourceGeometryData2D
 
 |void| **add_traversable_outline**\ (\ shape_outline\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_add_traversable_outline>`
 
-添加形状的轮廓点作为可遍历区域。
+Adds the outline points of a shape as traversable area.
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ NavigationMeshSourceGeometryData2D
 
 |void| **append_obstruction_outlines**\ (\ obstruction_outlines\: :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\]\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_append_obstruction_outlines>`
 
-在已有障碍物轮廓数组的末尾追加另一个 ``obstruction_outlines`` 数组。
+Appends another array of ``obstruction_outlines`` at the end of the existing obstruction outlines array.
 
 .. rst-class:: classref-item-separator
 
@@ -123,7 +123,7 @@ NavigationMeshSourceGeometryData2D
 
 |void| **append_traversable_outlines**\ (\ traversable_outlines\: :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\]\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_append_traversable_outlines>`
 
-在已有可遍历轮廓数组的末尾追加另一个 ``traversable_outlines`` 数组。
+Appends another array of ``traversable_outlines`` at the end of the existing traversable outlines array.
 
 .. rst-class:: classref-item-separator
 
@@ -135,7 +135,7 @@ NavigationMeshSourceGeometryData2D
 
 |void| **clear**\ (\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_clear>`
 
-清除内部数据。
+Clears the internal data.
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +147,7 @@ NavigationMeshSourceGeometryData2D
 
 |void| **clear_projected_obstructions**\ (\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_clear_projected_obstructions>`
 
-清除所有投射的障碍物。
+Clears all projected obstructions.
 
 .. rst-class:: classref-item-separator
 
@@ -159,7 +159,7 @@ NavigationMeshSourceGeometryData2D
 
 :ref:`Rect2<class_Rect2>` **get_bounds**\ (\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_get_bounds>`
 
-返回覆盖所有存储几何数据的轴对齐边界框。边界在调用该函数时计算，缓存至几何体发生后续变化。
+Returns an axis-aligned bounding box that covers all the stored geometry data. The bounds are calculated when calling this function with the result cached until further geometry changes are made.
 
 .. rst-class:: classref-item-separator
 
@@ -171,7 +171,7 @@ NavigationMeshSourceGeometryData2D
 
 :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\] **get_obstruction_outlines**\ (\ ) |const| :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_get_obstruction_outlines>`
 
-返回所有遮挡区域轮廓数组。
+Returns all the obstructed area outlines arrays.
 
 .. rst-class:: classref-item-separator
 
@@ -183,11 +183,11 @@ NavigationMeshSourceGeometryData2D
 
 :ref:`Array<class_Array>` **get_projected_obstructions**\ (\ ) |const| :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_get_projected_obstructions>`
 
-将投影的障碍物作为字典的 :ref:`Array<class_Array>` 返回。每个 :ref:`Dictionary<class_Dictionary>` 包含以下条目：
+Returns the projected obstructions as an :ref:`Array<class_Array>` of dictionaries. Each :ref:`Dictionary<class_Dictionary>` contains the following entries:
 
-- ``vertices`` - 定义投影形状轮廓点的 :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ 。
+- ``vertices`` - A :ref:`PackedFloat32Array<class_PackedFloat32Array>` that defines the outline points of the projected shape.
 
-- ``carve`` - 定义投影形状如何影响导航网格烘焙的 :ref:`bool<class_bool>`\ 。如果为 ``true``\ ，则投影形状不会受到额外偏移的影响，例如代理半径。
+- ``carve`` - A :ref:`bool<class_bool>` that defines how the projected shape affects the navigation mesh baking. If ``true`` the projected shape will not be affected by addition offsets, e.g. agent radius.
 
 .. rst-class:: classref-item-separator
 
@@ -199,7 +199,7 @@ NavigationMeshSourceGeometryData2D
 
 :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\] **get_traversable_outlines**\ (\ ) |const| :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_get_traversable_outlines>`
 
-返回所有可遍历区域轮廓数组。
+Returns all the traversable area outlines arrays.
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ NavigationMeshSourceGeometryData2D
 
 :ref:`bool<class_bool>` **has_data**\ (\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_has_data>`
 
-当解析的源几何数据存在时，返回 ``true``\ 。
+Returns ``true`` when parsed source geometry data exists.
 
 .. rst-class:: classref-item-separator
 
@@ -223,7 +223,7 @@ NavigationMeshSourceGeometryData2D
 
 |void| **merge**\ (\ other_geometry\: :ref:`NavigationMeshSourceGeometryData2D<class_NavigationMeshSourceGeometryData2D>`\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_merge>`
 
-将其他 **NavigationMeshSourceGeometryData2D** 的几何体数据添加到导航网格烘焙数据。
+Adds the geometry data of another **NavigationMeshSourceGeometryData2D** to the navigation mesh baking data.
 
 .. rst-class:: classref-item-separator
 
@@ -235,7 +235,7 @@ NavigationMeshSourceGeometryData2D
 
 |void| **set_obstruction_outlines**\ (\ obstruction_outlines\: :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\]\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_set_obstruction_outlines>`
 
-设置所有遮挡区域轮廓数组。
+Sets all the obstructed area outlines arrays.
 
 .. rst-class:: classref-item-separator
 
@@ -247,7 +247,7 @@ NavigationMeshSourceGeometryData2D
 
 |void| **set_projected_obstructions**\ (\ projected_obstructions\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_set_projected_obstructions>`
 
-使用包含以下键值对的字典数组设置投影障碍物：
+Sets the projected obstructions with an Array of Dictionaries with the following key value pairs:
 
 
 .. tabs::
@@ -269,14 +269,14 @@ NavigationMeshSourceGeometryData2D
 
 |void| **set_traversable_outlines**\ (\ traversable_outlines\: :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\]\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_set_traversable_outlines>`
 
-设置所有可遍历区域轮廓数组。
+Sets all the traversable area outlines arrays.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

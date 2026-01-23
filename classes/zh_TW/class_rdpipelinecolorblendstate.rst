@@ -5,21 +5,21 @@
 RDPipelineColorBlendState
 =========================
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-管線顏色混合狀態（由 :ref:`RenderingDevice<class_RenderingDevice>` 使用）。
+Pipeline color blend state (used by :ref:`RenderingDevice<class_RenderingDevice>`).
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-這個物件由 :ref:`RenderingDevice<class_RenderingDevice>` 使用。
+This object is used by :ref:`RenderingDevice<class_RenderingDevice>`.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ RDPipelineColorBlendState
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_RDPipelineColorBlendState_property_attachments:
 
@@ -54,7 +54,7 @@ RDPipelineColorBlendState
 - |void| **set_attachments**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`RDPipelineColorBlendStateAttachment<class_RDPipelineColorBlendStateAttachment>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`RDPipelineColorBlendStateAttachment<class_RDPipelineColorBlendStateAttachment>`\] **get_attachments**\ (\ )
 
-要混合的附件。
+The attachments that are blended together.
 
 .. rst-class:: classref-item-separator
 
@@ -71,7 +71,7 @@ RDPipelineColorBlendState
 - |void| **set_blend_constant**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_blend_constant**\ (\ )
 
-要進行混合的顏色常數。另見 :ref:`RenderingDevice.draw_list_set_blend_constants()<class_RenderingDevice_method_draw_list_set_blend_constants>`\ 。
+The constant color to blend with. See also :ref:`RenderingDevice.draw_list_set_blend_constants()<class_RenderingDevice_method_draw_list_set_blend_constants>`.
 
 .. rst-class:: classref-item-separator
 
@@ -88,7 +88,7 @@ RDPipelineColorBlendState
 - |void| **set_enable_logic_op**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enable_logic_op**\ (\ )
 
-如果為 ``true``\ ，則執行 :ref:`logic_op<class_RDPipelineColorBlendState_property_logic_op>` 中定義的邏輯運算。
+If ``true``, performs the logic operation defined in :ref:`logic_op<class_RDPipelineColorBlendState_property_logic_op>`.
 
 .. rst-class:: classref-item-separator
 
@@ -105,14 +105,14 @@ RDPipelineColorBlendState
 - |void| **set_logic_op**\ (\ value\: :ref:`LogicOperation<enum_RenderingDevice_LogicOperation>`\ )
 - :ref:`LogicOperation<enum_RenderingDevice_LogicOperation>` **get_logic_op**\ (\ )
 
-混合時執行的邏輯運算。僅在 :ref:`enable_logic_op<class_RDPipelineColorBlendState_property_enable_logic_op>` 為 ``true`` 時有效。
+The logic operation to perform for blending. Only effective if :ref:`enable_logic_op<class_RDPipelineColorBlendState_property_enable_logic_op>` is ``true``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

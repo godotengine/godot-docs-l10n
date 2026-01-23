@@ -396,7 +396,7 @@ Returns the language currently used for the editor interface.
 
 Retourne le contrôle de l'éditeur responsable des plugins et outils d'écran principal. Utilisez-le avec des plugins qui implémentent :ref:`EditorPlugin._has_main_screen()<class_EditorPlugin_private_method__has_main_screen>`.
 
-\ **Note :** Ce nœud est un :ref:`VBoxContainer<class_VBoxContainer>`, ce qui signifie que si vous lui ajoutez un :ref:`Control<class_Control>` fils, vous devez définir le :ref:`Control.size_flags_vertical<class_Control_property_size_flags_vertical>` du fils à :ref:`Control. SIZE_EXPAND_FILL<class_Control_constant_ SIZE_EXPAND_FILL>` pour le faire utiliser tout l'espace disponible.
+\ **Note :** Ce nœud est un :ref:`VBoxContainer<class_VBoxContainer>`, ce qui signifie que si vous lui ajoutez un :ref:`Control<class_Control>` fils, vous devez définir le :ref:`Control.size_flags_vertical<class_Control_property_size_flags_vertical>` du fils à :ref:`Control.SIZE_EXPAND_FILL<class_Control_constant_SIZE_EXPAND_FILL>` pour le faire utiliser tout l'espace disponible.
 
 \ **Avertissement :** La suppression et la libération de ce nœud rend une partie de l'éditeur inutile et peut causer un crash.
 

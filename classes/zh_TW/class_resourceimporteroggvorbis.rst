@@ -5,32 +5,32 @@
 ResourceImporterOggVorbis
 =========================
 
-**繼承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-匯入 Ogg Vorbis 音訊檔案以供播放。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-Ogg Vorbis 為有損音訊格式，在相同位元率下相較於 :ref:`ResourceImporterMP3<class_ResourceImporterMP3>` 可提供更佳音質。
-
-大多數情況下建議使用 Ogg Vorbis 而非 MP3。若僅有 MP3 音源且無更高品質來源，則應直接使用 MP3 以避免再次經過有損壓縮。
-
-Ogg Vorbis 解碼所需的 CPU 資源多於 :ref:`ResourceImporterWAV<class_ResourceImporterWAV>`\ 。若需同時播放大量聲音，特別是在低階裝置上，建議對那些聲音改用 WAV。
+Imports an Ogg Vorbis audio file for playback.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`匯入音訊樣本 <../tutorials/assets_pipeline/importing_audio_samples>`
+Ogg Vorbis is a lossy audio format, with better audio quality compared to :ref:`ResourceImporterMP3<class_ResourceImporterMP3>` at a given bitrate.
+
+In most cases, it's recommended to use Ogg Vorbis over MP3. However, if you're using an MP3 sound source with no higher quality source available, then it's recommended to use the MP3 file directly to avoid double lossy compression.
+
+Ogg Vorbis requires more CPU to decode than :ref:`ResourceImporterWAV<class_ResourceImporterWAV>`. If you need to play a lot of simultaneous sounds, it's recommended to use WAV for those sounds instead, especially if targeting low-end devices.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Importing audio samples <../tutorials/assets_pipeline/importing_audio_samples>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ Ogg Vorbis 解碼所需的 CPU 資源多於 :ref:`ResourceImporterWAV<class_Reso
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -67,8 +67,8 @@ Ogg Vorbis 解碼所需的 CPU 資源多於 :ref:`ResourceImporterWAV<class_Reso
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_ResourceImporterOggVorbis_property_bar_beats:
 
@@ -76,9 +76,9 @@ Ogg Vorbis 解碼所需的 CPU 資源多於 :ref:`ResourceImporterWAV<class_Reso
 
 :ref:`int<class_int>` **bar_beats** = ``4`` :ref:`🔗<class_ResourceImporterOggVorbis_property_bar_beats>`
 
-音軌中每一拍所包含的小節數。僅對欲使用互動式音樂功能的樂曲有意義，與音效無關。
+The number of bars within a single beat in the audio track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
 
-\ **進階匯入設定** 對話方塊提供了更方便的 :ref:`bar_beats<class_ResourceImporterOggVorbis_property_bar_beats>` 編輯器，可讓你在不重新匯入音訊的情況下預覽變更。
+A more convenient editor for :ref:`bar_beats<class_ResourceImporterOggVorbis_property_bar_beats>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 .. rst-class:: classref-item-separator
 
@@ -90,9 +90,9 @@ Ogg Vorbis 解碼所需的 CPU 資源多於 :ref:`ResourceImporterWAV<class_Reso
 
 :ref:`int<class_int>` **beat_count** = ``0`` :ref:`🔗<class_ResourceImporterOggVorbis_property_beat_count>`
 
-音軌的拍數。僅對欲使用互動式音樂功能的樂曲有意義，與音效無關。
+The beat count of the audio track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
 
-\ **進階匯入設定** 對話方塊提供了更方便的 :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>` 編輯器，可讓你在不重新匯入音訊的情況下預覽變更。
+A more convenient editor for :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 .. rst-class:: classref-item-separator
 
@@ -104,9 +104,9 @@ Ogg Vorbis 解碼所需的 CPU 資源多於 :ref:`ResourceImporterWAV<class_Reso
 
 :ref:`float<class_float>` **bpm** = ``0`` :ref:`🔗<class_ResourceImporterOggVorbis_property_bpm>`
 
-音軌的每分鐘拍數（BPM），應與創作此曲時使用的 BPM 相同。僅對欲使用互動式音樂功能的樂曲有意義，與音效無關。
+The beats per minute of the audio track. This should match the BPM measure that was used to compose the track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
 
-\ **進階匯入設定** 對話方塊提供了更方便的 :ref:`bpm<class_ResourceImporterOggVorbis_property_bpm>` 編輯器，可讓你在不重新匯入音訊的情況下預覽變更。
+A more convenient editor for :ref:`bpm<class_ResourceImporterOggVorbis_property_bpm>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 .. rst-class:: classref-item-separator
 
@@ -118,9 +118,9 @@ Ogg Vorbis 解碼所需的 CPU 資源多於 :ref:`ResourceImporterWAV<class_Reso
 
 :ref:`bool<class_bool>` **loop** = ``false`` :ref:`🔗<class_ResourceImporterOggVorbis_property_loop>`
 
-啟用後，音訊播放至結尾時會自動從開頭重新開始播放。
+If enabled, the audio will begin playing at the beginning after playback ends by reaching the end of the audio.
 
-\ **注意：** 在 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` 中，對於循環播放的音訊，播放到檔案末端時不會觸發 :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` 訊號，因為音訊會持續播放。
+\ **Note:** In :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, the :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` signal won't be emitted for looping audio when it reaches the end of the audio file, as the audio will keep playing indefinitely.
 
 .. rst-class:: classref-item-separator
 
@@ -132,11 +132,11 @@ Ogg Vorbis 解碼所需的 CPU 資源多於 :ref:`ResourceImporterWAV<class_Reso
 
 :ref:`float<class_float>` **loop_offset** = ``0`` :ref:`🔗<class_ResourceImporterOggVorbis_property_loop_offset>`
 
-決定當播放到結尾後，音訊從何處開始迴圈。可僅重複音訊檔案的某一段，對部分環境音效或音樂十分實用。此值以秒為單位，從音訊開頭算起；\ ``0.0`` 代表整個檔案皆迴圈。
+Determines where audio will start to loop after playback reaches the end of the audio. This can be used to only loop a part of the audio file, which is useful for some ambient sounds or music. The value is determined in seconds relative to the beginning of the audio. A value of ``0.0`` will loop the entire audio file.
 
-僅當 :ref:`loop<class_ResourceImporterOggVorbis_property_loop>` 為 ``true`` 時生效。
+Only has an effect if :ref:`loop<class_ResourceImporterOggVorbis_property_loop>` is ``true``.
 
-\ **進階匯入設定** 對話方塊提供了更方便的 :ref:`loop_offset<class_ResourceImporterOggVorbis_property_loop_offset>` 編輯器，可讓你在不重新匯入音訊的情況下預覽變更。
+A more convenient editor for :ref:`loop_offset<class_ResourceImporterOggVorbis_property_loop_offset>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 .. rst-class:: classref-section-separator
 
@@ -144,8 +144,8 @@ Ogg Vorbis 解碼所需的 CPU 資源多於 :ref:`ResourceImporterWAV<class_Reso
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_ResourceImporterOggVorbis_method_load_from_buffer:
 
@@ -153,9 +153,9 @@ Ogg Vorbis 解碼所需的 CPU 資源多於 :ref:`ResourceImporterWAV<class_Reso
 
 :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>` **load_from_buffer**\ (\ stream_data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) |static| :ref:`🔗<class_ResourceImporterOggVorbis_method_load_from_buffer>`
 
-**已棄用：** Use :ref:`AudioStreamOggVorbis.load_from_buffer()<class_AudioStreamOggVorbis_method_load_from_buffer>` instead.
+**Deprecated:** Use :ref:`AudioStreamOggVorbis.load_from_buffer()<class_AudioStreamOggVorbis_method_load_from_buffer>` instead.
 
-從指定的緩衝區建立新的 :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>` 實例。緩衝區必須包含 Ogg Vorbis 資料。
+Creates a new :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>` instance from the given buffer. The buffer must contain Ogg Vorbis data.
 
 .. rst-class:: classref-item-separator
 
@@ -167,16 +167,16 @@ Ogg Vorbis 解碼所需的 CPU 資源多於 :ref:`ResourceImporterWAV<class_Reso
 
 :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>` **load_from_file**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_ResourceImporterOggVorbis_method_load_from_file>`
 
-**已棄用：** Use :ref:`AudioStreamOggVorbis.load_from_file()<class_AudioStreamOggVorbis_method_load_from_file>` instead.
+**Deprecated:** Use :ref:`AudioStreamOggVorbis.load_from_file()<class_AudioStreamOggVorbis_method_load_from_file>` instead.
 
-從指定的檔案路徑建立新的 :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>` 實例。該檔案必須為 Ogg Vorbis 格式。
+Creates a new :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>` instance from the given file path. The file must be in Ogg Vorbis format.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

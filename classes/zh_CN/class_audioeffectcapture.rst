@@ -5,32 +5,32 @@
 AudioEffectCapture
 ==================
 
-**继承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-从音频总线上实时捕捉音频。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-AudioEffectCapture 是一种 AudioEffect，可将所有音频帧从附加的音频效果总线复制到其内部的环形缓冲区中。
-
-应用程序代码应使用 :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>` 从该环形缓冲区中消耗这些音频帧，并根据需要对其进行处理，例如从 :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>` 捕获数据，实现应用程序定义的效果，或通过网络传输音频。从麦克风捕获音频数据时，样本格式将为立体声 32 位浮点 PCM。
-
-与 :ref:`AudioEffectRecord<class_AudioEffectRecord>` 不同，该效果仅返回原始音频样本，而不是将它们编码到 :ref:`AudioStream<class_AudioStream>` 中。
+Captures audio from an audio bus in real-time.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`音频总线 <../tutorials/audio/audio_buses>`
+AudioEffectCapture is an AudioEffect which copies all audio frames from the attached audio effect bus into its internal ring buffer.
+
+Application code should consume these audio frames from this ring buffer using :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>` and process it as needed, for example to capture data from an :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`, implement application-defined effects, or to transmit audio over the network. When capturing audio data from a microphone, the format of the samples will be stereo 32-bit floating-point PCM.
+
+Unlike :ref:`AudioEffectRecord<class_AudioEffectRecord>`, this effect only returns the raw audio samples instead of encoding them into an :ref:`AudioStream<class_AudioStream>`.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Audio buses <../tutorials/audio/audio_buses>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -41,8 +41,8 @@ AudioEffectCapture 是一种 AudioEffect，可将所有音频帧从附加的音�
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -69,8 +69,8 @@ AudioEffectCapture 是一种 AudioEffect，可将所有音频帧从附加的音�
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_AudioEffectCapture_property_buffer_length:
 
@@ -83,7 +83,7 @@ AudioEffectCapture 是一种 AudioEffect，可将所有音频帧从附加的音�
 - |void| **set_buffer_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_buffer_length**\ (\ )
 
-内部环形缓冲区的长度，单位为秒。如果已经初始化，设置缓冲区长度将没有效果。
+Length of the internal ring buffer, in seconds. Setting the buffer length will have no effect if already initialized.
 
 .. rst-class:: classref-section-separator
 
@@ -91,8 +91,8 @@ AudioEffectCapture 是一种 AudioEffect，可将所有音频帧从附加的音�
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_AudioEffectCapture_method_can_get_buffer:
 
@@ -100,7 +100,7 @@ AudioEffectCapture 是一种 AudioEffect，可将所有音频帧从附加的音�
 
 :ref:`bool<class_bool>` **can_get_buffer**\ (\ frames\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_can_get_buffer>`
 
-如果内部环形缓冲区中至少有 ``frames`` 个音频帧可供读取，则返回 ``true``\ 。
+Returns ``true`` if at least ``frames`` audio frames are available to read in the internal ring buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -112,9 +112,9 @@ AudioEffectCapture 是一种 AudioEffect，可将所有音频帧从附加的音�
 
 |void| **clear_buffer**\ (\ ) :ref:`🔗<class_AudioEffectCapture_method_clear_buffer>`
 
-清空内部环形缓冲。
+Clears the internal ring buffer.
 
-\ **注意：**\ 捕获时调用这个方法可能造成样本的丢失，导致播放时产生噪音。
+\ **Note:** Calling this during a capture can cause the loss of samples which causes popping in the playback.
 
 .. rst-class:: classref-item-separator
 
@@ -126,11 +126,11 @@ AudioEffectCapture 是一种 AudioEffect，可将所有音频帧从附加的音�
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_buffer**\ (\ frames\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioEffectCapture_method_get_buffer>`
 
-从内部环形缓冲区获取后续 ``frames`` 个音频样本。
+Gets the next ``frames`` audio samples from the internal ring buffer.
 
-如果足够的话，则返回一个恰好包含 ``frames`` 个音频样本的 :ref:`PackedVector2Array<class_PackedVector2Array>`\ ；如果可用数据不足，则返回一个空的 :ref:`PackedVector2Array<class_PackedVector2Array>`\ 。
+Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` containing exactly ``frames`` audio samples if available, or an empty :ref:`PackedVector2Array<class_PackedVector2Array>` if insufficient data was available.
 
-样本是有符号浮点 PCM，在 ``-1`` 和 ``1`` 之间。如果想要作为 8 位或 16 位整型样本使用则需要进行缩放。（\ ``v = 0x7fff * samples[0].x``\ ）
+The samples are signed floating-point PCM between ``-1`` and ``1``. You will have to scale them if you want to use them as 8 or 16-bit integer samples. (``v = 0x7fff * samples[0].x``)
 
 .. rst-class:: classref-item-separator
 
@@ -142,7 +142,7 @@ AudioEffectCapture 是一种 AudioEffect，可将所有音频帧从附加的音�
 
 :ref:`int<class_int>` **get_buffer_length_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_buffer_length_frames>`
 
-返回内部环形缓冲区的总大小，以帧为单位。
+Returns the total size of the internal ring buffer in frames.
 
 .. rst-class:: classref-item-separator
 
@@ -154,7 +154,7 @@ AudioEffectCapture 是一种 AudioEffect，可将所有音频帧从附加的音�
 
 :ref:`int<class_int>` **get_discarded_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_discarded_frames>`
 
-返回由于缓冲区满而从音频总线上丢弃的音频帧的数量。
+Returns the number of audio frames discarded from the audio bus due to full buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +166,7 @@ AudioEffectCapture 是一种 AudioEffect，可将所有音频帧从附加的音�
 
 :ref:`int<class_int>` **get_frames_available**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_frames_available>`
 
-返回可使用 :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>` 读取的帧数。
+Returns the number of frames available to read using :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -178,14 +178,14 @@ AudioEffectCapture 是一种 AudioEffect，可将所有音频帧从附加的音�
 
 :ref:`int<class_int>` **get_pushed_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_pushed_frames>`
 
-返回从音频总线插入的音频帧的数量。
+Returns the number of audio frames inserted from the audio bus.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,20 +5,20 @@
 UndoRedo
 ========
 
-**继承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-为实现撤销和重做操作提供高阶接口。
+Provides a high-level interface for implementing undo and redo operations.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-UndoRedo 的原理是在“动作”中注册方法和属性的变化。你可以创建一个动作，然后提供执行（do）和撤销（undo）这个动作需要进行的函数调用和属性更改，然后提交该动作。
+UndoRedo works by registering methods and property changes inside "actions". You can create an action, then provide ways to do and undo this action using function calls and property changes, then commit the action.
 
-动作提交后就会执行所有 ``do_*`` 方法。如果使用 :ref:`undo()<class_UndoRedo_method_undo>` 方法，那么就会执行 ``undo_*`` 方法。如果使用 :ref:`redo()<class_UndoRedo_method_redo>` 方法，那么就会再次执行所有 ``do_*`` 方法。
+When an action is committed, all of the ``do_*`` methods will run. If the :ref:`undo()<class_UndoRedo_method_undo>` method is used, the ``undo_*`` methods will run. If the :ref:`redo()<class_UndoRedo_method_redo>` method is used, once again, all of the ``do_*`` methods will run.
 
-以下是添加动作的示例：
+Here's an example on how to add an action:
 
 
 .. tabs::
@@ -28,14 +28,14 @@ UndoRedo 的原理是在“动作”中注册方法和属性的变化。你可�
     var undo_redo = UndoRedo.new()
 
     func do_something():
-        pass # 在此处编写你的代码。
+        pass # Put your code here.
 
     func undo_something():
-        pass # 在此处编写恢复“do_something()”里所做事情的代码。
+        pass # Put here the code that reverts what's done by "do_something()".
 
     func _on_my_button_pressed():
         var node = get_node("MyNode2D")
-        undo_redo.create_action("移动节点")
+        undo_redo.create_action("Move the node")
         undo_redo.add_do_method(do_something)
         undo_redo.add_undo_method(undo_something)
         undo_redo.add_do_property(node, "position", Vector2(100, 100))
@@ -53,18 +53,18 @@ UndoRedo 的原理是在“动作”中注册方法和属性的变化。你可�
 
     public void DoSomething()
     {
-        // 在此处编写你的代码。
+        // Put your code here.
     }
 
     public void UndoSomething()
     {
-        // 在此处编写恢复“DoSomething()”里所做事情的代码。
+        // Put here the code that reverts what's done by "DoSomething()".
     }
 
     private void OnMyButtonPressed()
     {
         var node = GetNode<Node2D>("MyNode2D");
-        _undoRedo.CreateAction("移动节点");
+        _undoRedo.CreateAction("Move the node");
         _undoRedo.AddDoMethod(new Callable(this, MethodName.DoSomething));
         _undoRedo.AddUndoMethod(new Callable(this, MethodName.UndoSomething));
         _undoRedo.AddDoProperty(node, "position", new Vector2(100, 100));
@@ -74,20 +74,20 @@ UndoRedo 的原理是在“动作”中注册方法和属性的变化。你可�
 
 
 
-调用 ``add_(un)do_*`` 方法之前，你需要先调用 :ref:`create_action()<class_UndoRedo_method_create_action>`\ 。调用之后则需要调用 :ref:`commit_action()<class_UndoRedo_method_commit_action>`\ 。
+Before calling any of the ``add_(un)do_*`` methods, you need to first call :ref:`create_action()<class_UndoRedo_method_create_action>`. Afterwards you need to call :ref:`commit_action()<class_UndoRedo_method_commit_action>`.
 
-如果你不需要注册方法，则可以将 :ref:`add_do_method()<class_UndoRedo_method_add_do_method>` 和 :ref:`add_undo_method()<class_UndoRedo_method_add_undo_method>` 省去；属性同理。你也可以注册多个方法/属性。
+If you don't need to register a method, you can leave :ref:`add_do_method()<class_UndoRedo_method_add_do_method>` and :ref:`add_undo_method()<class_UndoRedo_method_add_undo_method>` out; the same goes for properties. You can also register more than one method/property.
 
-如果你要制作 :ref:`EditorPlugin<class_EditorPlugin>`\ ，希望集成编辑器的撤销历史，请改用 :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>`\ 。
+If you are making an :ref:`EditorPlugin<class_EditorPlugin>` and want to integrate into the editor's undo history, use :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>` instead.
 
-如果你所注册的不同属性/方法之间有相互依赖，请注意默认情况下撤销操作的调用顺序和添加顺序是一致的。因此请不要将 do 操作和 undo 操作写在一起，最好还是和下面一样 do 和 do 一起写，undo 和 undo 一起写。
+If you are registering multiple properties/method which depend on one another, be aware that by default undo operation are called in the same order they have been added. Therefore instead of grouping do operation with their undo operations it is better to group do on one side and undo on the other as shown below.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    undo_redo.create_action("添加对象")
+    undo_redo.create_action("Add object")
 
     # DO
     undo_redo.add_do_method(_create_object)
@@ -101,7 +101,7 @@ UndoRedo 的原理是在“动作”中注册方法和属性的变化。你可�
 
  .. code-tab:: csharp
 
-    _undo_redo.CreateAction("添加对象");
+    _undo_redo.CreateAction("Add object");
 
     // DO
     _undo_redo.AddDoMethod(new Callable(this, MethodName.CreateObject));
@@ -117,8 +117,8 @@ UndoRedo 的原理是在“动作”中注册方法和属性的变化。你可�
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -129,8 +129,8 @@ UndoRedo 的原理是在“动作”中注册方法和属性的变化。你可�
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -185,8 +185,8 @@ UndoRedo 的原理是在“动作”中注册方法和属性的变化。你可�
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_UndoRedo_signal_version_changed:
 
@@ -194,7 +194,7 @@ UndoRedo 的原理是在“动作”中注册方法和属性的变化。你可�
 
 **version_changed**\ (\ ) :ref:`🔗<class_UndoRedo_signal_version_changed>`
 
-当 :ref:`undo()<class_UndoRedo_method_undo>` 或 :ref:`redo()<class_UndoRedo_method_redo>` 被调用时调用。
+Called when :ref:`undo()<class_UndoRedo_method_undo>` or :ref:`redo()<class_UndoRedo_method_redo>` was called.
 
 .. rst-class:: classref-section-separator
 
@@ -202,8 +202,8 @@ UndoRedo 的原理是在“动作”中注册方法和属性的变化。你可�
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_UndoRedo_MergeMode:
 
@@ -217,7 +217,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 :ref:`MergeMode<enum_UndoRedo_MergeMode>` **MERGE_DISABLE** = ``0``
 
-使“do”/“undo”操作保持在单独的动作中。
+Makes "do"/"undo" operations stay in separate actions.
 
 .. _class_UndoRedo_constant_MERGE_ENDS:
 
@@ -225,7 +225,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 :ref:`MergeMode<enum_UndoRedo_MergeMode>` **MERGE_ENDS** = ``1``
 
-如果当前动作与上一个动作的名称相同，则将两者合并。仅保留第一个动作的“undo”操作和最后一个动作的“do”操作。适用于对单个值的连续更改。
+Merges this action with the previous one if they have the same name. Keeps only the first action's "undo" operations and the last action's "do" operations. Useful for sequential changes to a single value.
 
 .. _class_UndoRedo_constant_MERGE_ALL:
 
@@ -233,7 +233,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 :ref:`MergeMode<enum_UndoRedo_MergeMode>` **MERGE_ALL** = ``2``
 
-如果当前动作与上一个动作的名称相同，则将两者合并。
+Merges this action with the previous one if they have the same name.
 
 .. rst-class:: classref-section-separator
 
@@ -241,8 +241,8 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_UndoRedo_property_max_steps:
 
@@ -255,7 +255,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 - |void| **set_max_steps**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_steps**\ (\ )
 
-撤销/重做历史中能够存储的最大步数。如果存储的步数超出了这个限制，就会将最早的步骤从历史中移除，无法再通过调用 :ref:`undo()<class_UndoRedo_method_undo>` 到达。小于等于 ``0`` 表示没有限制。
+The maximum number of steps that can be stored in the undo/redo history. If the number of stored steps exceeds this limit, older steps are removed from history and can no longer be reached by calling :ref:`undo()<class_UndoRedo_method_undo>`. A value of ``0`` or lower means no limit.
 
 .. rst-class:: classref-section-separator
 
@@ -263,8 +263,8 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_UndoRedo_method_add_do_method:
 
@@ -272,7 +272,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 |void| **add_do_method**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_UndoRedo_method_add_do_method>`
 
-注册 :ref:`Callable<class_Callable>`\ ，会在提交动作时调用。
+Register a :ref:`Callable<class_Callable>` that will be called when the action is committed.
 
 .. rst-class:: classref-item-separator
 
@@ -284,7 +284,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 |void| **add_do_property**\ (\ object\: :ref:`Object<class_Object>`, property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_UndoRedo_method_add_do_property>`
 
-注册 ``property``\ ，会在提交动作时将其值更改为 ``value``\ 。
+Register a ``property`` that would change its value to ``value`` when the action is committed.
 
 .. rst-class:: classref-item-separator
 
@@ -296,14 +296,14 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 |void| **add_do_reference**\ (\ object\: :ref:`Object<class_Object>`\ ) :ref:`🔗<class_UndoRedo_method_add_do_reference>`
 
-注册对象的引用，删除“do”历史时会擦除该引用。适用于“do”动作添加的对象和“undo”动作移除的对象。
+Register a reference to an object that will be erased if the "do" history is deleted. This is useful for objects added by the "do" action and removed by the "undo" action.
 
-删除“do”历史时，如果该对象为 :ref:`RefCounted<class_RefCounted>`\ ，则会解除引用。否则会执行释放。请勿用于资源。
+When the "do" history is deleted, if the object is a :ref:`RefCounted<class_RefCounted>`, it will be unreferenced. Otherwise, it will be freed. Do not use for resources.
 
 ::
 
     var node = Node2D.new()
-    undo_redo.create_action("添加节点")
+    undo_redo.create_action("Add node")
     undo_redo.add_do_method(add_child.bind(node))
     undo_redo.add_do_reference(node)
     undo_redo.add_undo_method(remove_child.bind(node))
@@ -319,7 +319,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 |void| **add_undo_method**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_UndoRedo_method_add_undo_method>`
 
-注册 :ref:`Callable<class_Callable>`\ ，会在撤销动作时调用。
+Register a :ref:`Callable<class_Callable>` that will be called when the action is undone.
 
 .. rst-class:: classref-item-separator
 
@@ -331,7 +331,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 |void| **add_undo_property**\ (\ object\: :ref:`Object<class_Object>`, property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_UndoRedo_method_add_undo_property>`
 
-注册 ``property``\ ，会在撤销动作时将其值更改为 ``value``\ 。
+Register a ``property`` that would change its value to ``value`` when the action is undone.
 
 .. rst-class:: classref-item-separator
 
@@ -343,14 +343,14 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 |void| **add_undo_reference**\ (\ object\: :ref:`Object<class_Object>`\ ) :ref:`🔗<class_UndoRedo_method_add_undo_reference>`
 
-注册对象的引用，删除“undo”历史时会擦除该引用。适用于“undo”动作添加的对象和“do”动作移除的对象。
+Register a reference to an object that will be erased if the "undo" history is deleted. This is useful for objects added by the "undo" action and removed by the "do" action.
 
-删除“undo”历史时，如果该对象为 :ref:`RefCounted<class_RefCounted>`\ ，则会解除引用。否则会执行释放。请勿用于资源。
+When the "undo" history is deleted, if the object is a :ref:`RefCounted<class_RefCounted>`, it will be unreferenced. Otherwise, it will be freed. Do not use for resources.
 
 ::
 
     var node = $Node2D
-    undo_redo.create_action("移除节点")
+    undo_redo.create_action("Remove node")
     undo_redo.add_do_method(remove_child.bind(node))
     undo_redo.add_undo_method(add_child.bind(node))
     undo_redo.add_undo_reference(node)
@@ -366,9 +366,9 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 |void| **clear_history**\ (\ increase_version\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_UndoRedo_method_clear_history>`
 
-清除撤销/重做历史和相关的引用。
+Clear the undo/redo history and associated references.
 
-将 ``false`` 传递给 ``increase_version`` 将防止在清除历史记录时增加版本号。
+Passing ``false`` to ``increase_version`` will prevent the version number from increasing when the history is cleared.
 
 .. rst-class:: classref-item-separator
 
@@ -380,7 +380,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 |void| **commit_action**\ (\ execute\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_UndoRedo_method_commit_action>`
 
-提交动作。如果 ``execute`` 为 ``true``\ （默认情况），则会在调用此函数时调用/设置所有“执行（do）”方法/属性。
+Commit the action. If ``execute`` is ``true`` (which it is by default), all "do" methods/properties are called/set when this function is called.
 
 .. rst-class:: classref-item-separator
 
@@ -392,11 +392,11 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 |void| **create_action**\ (\ name\: :ref:`String<class_String>`, merge_mode\: :ref:`MergeMode<enum_UndoRedo_MergeMode>` = 0, backward_undo_ops\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_UndoRedo_method_create_action>`
 
-创建一个新的动作。调用后，请执行所有你需要的 :ref:`add_do_method()<class_UndoRedo_method_add_do_method>`\ 、\ :ref:`add_undo_method()<class_UndoRedo_method_add_undo_method>`\ 、\ :ref:`add_do_property()<class_UndoRedo_method_add_do_property>` 和 :ref:`add_undo_property()<class_UndoRedo_method_add_undo_property>` 调用，然后再用 :ref:`commit_action()<class_UndoRedo_method_commit_action>` 提交这个动作。
+Create a new action. After this is called, do all your calls to :ref:`add_do_method()<class_UndoRedo_method_add_do_method>`, :ref:`add_undo_method()<class_UndoRedo_method_add_undo_method>`, :ref:`add_do_property()<class_UndoRedo_method_add_do_property>`, and :ref:`add_undo_property()<class_UndoRedo_method_add_undo_property>`, then commit the action with :ref:`commit_action()<class_UndoRedo_method_commit_action>`.
 
-动作的合并方式由 ``merge_mode`` 决定。
+The way actions are merged is dictated by ``merge_mode``.
 
-动作中撤销操作的顺序由 ``backward_undo_ops`` 决定。\ ``backward_undo_ops`` 为 ``false`` 时，撤销选项的顺序和添加顺序一致。也就是说，先添加的操作会先撤销。
+The way undo operation are ordered in actions is dictated by ``backward_undo_ops``. When ``backward_undo_ops`` is ``false`` undo option are ordered in the same order they were added. Which means the first operation to be added will be the first to be undone.
 
 .. rst-class:: classref-item-separator
 
@@ -408,7 +408,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 |void| **end_force_keep_in_merge_ends**\ (\ ) :ref:`🔗<class_UndoRedo_method_end_force_keep_in_merge_ends>`
 
-停止将操作标记为要处理，即使该动作在 :ref:`MERGE_ENDS<class_UndoRedo_constant_MERGE_ENDS>` 模式下与另一个动作合并。请参阅 :ref:`start_force_keep_in_merge_ends()<class_UndoRedo_method_start_force_keep_in_merge_ends>`\ 。
+Stops marking operations as to be processed even if the action gets merged with another in the :ref:`MERGE_ENDS<class_UndoRedo_constant_MERGE_ENDS>` mode. See :ref:`start_force_keep_in_merge_ends()<class_UndoRedo_method_start_force_keep_in_merge_ends>`.
 
 .. rst-class:: classref-item-separator
 
@@ -420,7 +420,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 :ref:`String<class_String>` **get_action_name**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_UndoRedo_method_get_action_name>`
 
-根据索引获取动作名称。
+Gets the action name from its index.
 
 .. rst-class:: classref-item-separator
 
@@ -432,7 +432,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 :ref:`int<class_int>` **get_current_action**\ (\ ) :ref:`🔗<class_UndoRedo_method_get_current_action>`
 
-获取当前动作的索引。
+Gets the index of the current action.
 
 .. rst-class:: classref-item-separator
 
@@ -444,7 +444,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 :ref:`String<class_String>` **get_current_action_name**\ (\ ) |const| :ref:`🔗<class_UndoRedo_method_get_current_action_name>`
 
-获取当前动作的名称，等价于 ``get_action_name(get_current_action())``\ 。
+Gets the name of the current action, equivalent to ``get_action_name(get_current_action())``.
 
 .. rst-class:: classref-item-separator
 
@@ -456,7 +456,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 :ref:`int<class_int>` **get_history_count**\ (\ ) :ref:`🔗<class_UndoRedo_method_get_history_count>`
 
-返回历史中有多少元素。
+Returns how many elements are in the history.
 
 .. rst-class:: classref-item-separator
 
@@ -468,9 +468,9 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 :ref:`int<class_int>` **get_version**\ (\ ) |const| :ref:`🔗<class_UndoRedo_method_get_version>`
 
-获取版本。每次提交一个新的操作，\ **UndoRedo** 的版本号都会自动增加。
+Gets the version. Every time a new action is committed, the **UndoRedo**'s version number is increased automatically.
 
-这主要用于检查保存的版本是否发生了更改。
+This is useful mostly to check if something changed from a saved version.
 
 .. rst-class:: classref-item-separator
 
@@ -482,7 +482,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 :ref:`bool<class_bool>` **has_redo**\ (\ ) |const| :ref:`🔗<class_UndoRedo_method_has_redo>`
 
-有“重做”动作可用时返回 ``true``\ 。
+Returns ``true`` if a "redo" action is available.
 
 .. rst-class:: classref-item-separator
 
@@ -494,7 +494,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 :ref:`bool<class_bool>` **has_undo**\ (\ ) |const| :ref:`🔗<class_UndoRedo_method_has_undo>`
 
-有“撤销”动作可用时返回 ``true``\ 。
+Returns ``true`` if an "undo" action is available.
 
 .. rst-class:: classref-item-separator
 
@@ -506,7 +506,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 :ref:`bool<class_bool>` **is_committing_action**\ (\ ) |const| :ref:`🔗<class_UndoRedo_method_is_committing_action>`
 
-如果 **UndoRedo** 当前正在提交动作，即运行其“do”的方法或属性变化，则返回 ``true``\ （请参阅 :ref:`commit_action()<class_UndoRedo_method_commit_action>`\ ）。
+Returns ``true`` if the **UndoRedo** is currently committing the action, i.e. running its "do" method or property change (see :ref:`commit_action()<class_UndoRedo_method_commit_action>`).
 
 .. rst-class:: classref-item-separator
 
@@ -518,7 +518,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 :ref:`bool<class_bool>` **redo**\ (\ ) :ref:`🔗<class_UndoRedo_method_redo>`
 
-重做上一个动作。
+Redo the last action.
 
 .. rst-class:: classref-item-separator
 
@@ -530,7 +530,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 |void| **start_force_keep_in_merge_ends**\ (\ ) :ref:`🔗<class_UndoRedo_method_start_force_keep_in_merge_ends>`
 
-标记要处理的下一个“执行”和“撤消”操作，即使该动作在 :ref:`MERGE_ENDS<class_UndoRedo_constant_MERGE_ENDS>` 模式下与另一个动作合并。使用 :ref:`end_force_keep_in_merge_ends()<class_UndoRedo_method_end_force_keep_in_merge_ends>` 返回到正常操作。
+Marks the next "do" and "undo" operations to be processed even if the action gets merged with another in the :ref:`MERGE_ENDS<class_UndoRedo_constant_MERGE_ENDS>` mode. Return to normal operation using :ref:`end_force_keep_in_merge_ends()<class_UndoRedo_method_end_force_keep_in_merge_ends>`.
 
 .. rst-class:: classref-item-separator
 
@@ -542,14 +542,14 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 :ref:`bool<class_bool>` **undo**\ (\ ) :ref:`🔗<class_UndoRedo_method_undo>`
 
-撤销上一个动作。
+Undo the last action.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

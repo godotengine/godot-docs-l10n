@@ -5,25 +5,25 @@
 JavaClass
 =========
 
-**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-代表来自 Java 原生接口的类。
+Represents a class from the Java Native Interface.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-代表 Java 原生接口中的类，由 :ref:`JavaClassWrapper.wrap()<class_JavaClassWrapper_method_wrap>` 返回。
+Represents a class from the Java Native Interface. It is returned from :ref:`JavaClassWrapper.wrap()<class_JavaClassWrapper_method_wrap>`.
 
-\ **注意：**\ 该类仅适用于 Android。该类在其他平台上不执行任何操作。
+\ **Note:** This class only works on Android. On any other platform, this class does nothing.
 
-\ **注意：**\ 请勿与 :ref:`JavaScriptObject<class_JavaScriptObject>` 混淆。
+\ **Note:** This class is not to be confused with :ref:`JavaScriptObject<class_JavaScriptObject>`.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ JavaClass
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_JavaClass_method_get_java_class_name:
 
@@ -53,7 +53,7 @@ JavaClass
 
 :ref:`String<class_String>` **get_java_class_name**\ (\ ) |const| :ref:`🔗<class_JavaClass_method_get_java_class_name>`
 
-返回 Java 类名。
+Returns the Java class name.
 
 .. rst-class:: classref-item-separator
 
@@ -65,7 +65,7 @@ JavaClass
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_java_method_list**\ (\ ) |const| :ref:`🔗<class_JavaClass_method_get_java_method_list>`
 
-返回该对象的 Java 方法及签名，类型为元素为字典的数组，格式与 :ref:`Object.get_method_list()<class_Object_method_get_method_list>` 相同。
+Returns the object's Java methods and their signatures as an :ref:`Array<class_Array>` of dictionaries, in the same format as :ref:`Object.get_method_list()<class_Object_method_get_method_list>`.
 
 .. rst-class:: classref-item-separator
 
@@ -77,7 +77,7 @@ JavaClass
 
 :ref:`JavaClass<class_JavaClass>` **get_java_parent_class**\ (\ ) |const| :ref:`🔗<class_JavaClass_method_get_java_parent_class>`
 
-返回代表该类的 Java 父类的 **JavaClass**\ 。
+Returns a **JavaClass** representing the Java parent class of this class.
 
 .. rst-class:: classref-item-separator
 
@@ -91,12 +91,12 @@ JavaClass
 
 Returns ``true`` if the given ``method`` name exists in the object's Java methods.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

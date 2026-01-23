@@ -5,23 +5,23 @@
 ImageTexture3D
 ==============
 
-**繼承：** :ref:`Texture3D<class_Texture3D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Texture3D<class_Texture3D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-具有 3 個維度的紋理。
+Texture with 3 dimensions.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-**ImageTexture3D** 是一種具有寬度、高度、和深度的三維 :ref:`ImageTexture<class_ImageTexture>`\ 。另請參閱 :ref:`ImageTextureLayered<class_ImageTextureLayered>`\ 。
+**ImageTexture3D** is a 3-dimensional :ref:`ImageTexture<class_ImageTexture>` that has a width, height, and depth. See also :ref:`ImageTextureLayered<class_ImageTextureLayered>`.
 
-3D 紋理通常用於儲存 :ref:`FogMaterial<class_FogMaterial>` 的密度圖、\ :ref:`Environment<class_Environment>` 的色彩校正 LUT、\ :ref:`GPUParticlesAttractorVectorField3D<class_GPUParticlesAttractorVectorField3D>` 的向量場、和 :ref:`GPUParticlesCollisionSDF3D<class_GPUParticlesCollisionSDF3D>` 的碰撞圖。3D 紋理也可用於自訂著色器。
+3D textures are typically used to store density maps for :ref:`FogMaterial<class_FogMaterial>`, color correction LUTs for :ref:`Environment<class_Environment>`, vector fields for :ref:`GPUParticlesAttractorVectorField3D<class_GPUParticlesAttractorVectorField3D>` and collision maps for :ref:`GPUParticlesCollisionSDF3D<class_GPUParticlesCollisionSDF3D>`. 3D textures can also be used in custom shaders.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ ImageTexture3D
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_ImageTexture3D_method_create:
 
@@ -59,14 +59,14 @@ Creates the **ImageTexture3D** with specified ``format``, ``width``, ``height``,
 
 |void| **update**\ (\ data\: :ref:`Array<class_Array>`\[:ref:`Image<class_Image>`\]\ ) :ref:`🔗<class_ImageTexture3D_method_update>`
 
-將紋理的現有資料替換為 ``data`` 中指定的圖層。\ ``data`` 的大小必須與用於 :ref:`create()<class_ImageTexture3D_method_create>` 的參數一致。換句話說，不能通過呼叫 :ref:`update()<class_ImageTexture3D_method_update>` 來調整紋理的大小或改變其格式。
+Replaces the texture's existing data with the layers specified in ``data``. The size of ``data`` must match the parameters that were used for :ref:`create()<class_ImageTexture3D_method_create>`. In other words, the texture cannot be resized or have its format changed by calling :ref:`update()<class_ImageTexture3D_method_update>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

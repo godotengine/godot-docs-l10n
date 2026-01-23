@@ -5,21 +5,21 @@
 OpenXRRenderModelExtension
 ==========================
 
-**继承：** :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>` **<** :ref:`Object<class_Object>`
 
-这个类实现了 OpenXR 渲染模型扩展。
+This class implements the OpenXR Render Model Extension.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-这个类实现了 OpenXR 渲染模型扩展，启用后会维护活动渲染模型列表，提供渲染模型数据接口。
+This class implements the OpenXR Render Model Extension, if enabled it will maintain a list of active render models and provides an interface to the render model data.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -58,8 +58,8 @@ OpenXRRenderModelExtension
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_OpenXRRenderModelExtension_signal_render_model_added:
 
@@ -67,7 +67,7 @@ OpenXRRenderModelExtension
 
 **render_model_added**\ (\ render_model\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRRenderModelExtension_signal_render_model_added>`
 
-添加新的渲染模型时发出。
+Emitted when a new render model is added.
 
 .. rst-class:: classref-item-separator
 
@@ -79,7 +79,7 @@ OpenXRRenderModelExtension
 
 **render_model_removed**\ (\ render_model\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRRenderModelExtension_signal_render_model_removed>`
 
-移除渲染模型时发出。
+Emitted when a render model is removed.
 
 .. rst-class:: classref-item-separator
 
@@ -91,7 +91,7 @@ OpenXRRenderModelExtension
 
 **render_model_top_level_path_changed**\ (\ render_model\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRRenderModelExtension_signal_render_model_top_level_path_changed>`
 
-与渲染模型关联的顶层路径发生改变时发出。
+Emitted when the top level path associated with a render model changed.
 
 .. rst-class:: classref-section-separator
 
@@ -99,8 +99,8 @@ OpenXRRenderModelExtension
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_OpenXRRenderModelExtension_method_is_active:
 
@@ -108,9 +108,9 @@ OpenXRRenderModelExtension
 
 :ref:`bool<class_bool>` **is_active**\ (\ ) |const| :ref:`🔗<class_OpenXRRenderModelExtension_method_is_active>`
 
-如果支持且已启用 OpenXR 的渲染模型，则返回 ``true``\ 。
+Returns ``true`` if OpenXR's render model extension is supported and enabled.
 
-\ **注意：**\ 这仅在 OpenXR 已被初始化后返回一个有效值。
+\ **Note:** This only returns a valid value after OpenXR has been initialized.
 
 .. rst-class:: classref-item-separator
 
@@ -122,9 +122,9 @@ OpenXRRenderModelExtension
 
 :ref:`RID<class_RID>` **render_model_create**\ (\ render_model_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRRenderModelExtension_method_render_model_create>`
 
-在 OpenXR 中使用渲染模型 ID 创建一个渲染模型对象。
+Creates a render model object within OpenXR using a render model id.
 
-\ **注意：**\ 该函数是为提供渲染模型 ID 的依赖 OpenXR 扩展公开的，以便与渲染模型扩展一起使用。
+\ **Note:** This function is exposed for dependent OpenXR extensions that provide render model ids to be used with the render model extension.
 
 .. rst-class:: classref-item-separator
 
@@ -136,9 +136,9 @@ OpenXRRenderModelExtension
 
 |void| **render_model_destroy**\ (\ render_model\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRRenderModelExtension_method_render_model_destroy>`
 
-销毁在 OpenXR 中之前使用 :ref:`render_model_create()<class_OpenXRRenderModelExtension_method_render_model_create>` 创建的渲染模型对象。
+Destroys a render model object within OpenXR that was previously created with :ref:`render_model_create()<class_OpenXRRenderModelExtension_method_render_model_create>`.
 
-\ **注意：**\ 该函数是为提供渲染模型 ID 的依赖 OpenXR 扩展公开的，以便与渲染模型扩展一起使用。
+\ **Note:** This function is exposed for dependent OpenXR extensions that provide render model ids to be used with the render model extension.
 
 .. rst-class:: classref-item-separator
 
@@ -150,7 +150,7 @@ OpenXRRenderModelExtension
 
 :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **render_model_get_all**\ (\ ) :ref:`🔗<class_OpenXRRenderModelExtension_method_render_model_get_all>`
 
-返回已向该扩展注册的所有当前活动的渲染模型数组。
+Returns an array of all currently active render models registered with this extension.
 
 .. rst-class:: classref-item-separator
 
@@ -162,7 +162,7 @@ OpenXRRenderModelExtension
 
 :ref:`int<class_int>` **render_model_get_animatable_node_count**\ (\ render_model\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRRenderModelExtension_method_render_model_get_animatable_node_count>`
 
-返回该渲染模型中包含的可动画节点数。
+Returns the number of animatable nodes this render model has.
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ OpenXRRenderModelExtension
 
 :ref:`String<class_String>` **render_model_get_animatable_node_name**\ (\ render_model\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRRenderModelExtension_method_render_model_get_animatable_node_name>`
 
-返回给定可动画节点的名称。
+Returns the name of the given animatable node.
 
 .. rst-class:: classref-item-separator
 
@@ -186,7 +186,7 @@ OpenXRRenderModelExtension
 
 :ref:`Transform3D<class_Transform3D>` **render_model_get_animatable_node_transform**\ (\ render_model\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRRenderModelExtension_method_render_model_get_animatable_node_transform>`
 
-返回可动画节点的当前局部变换。每帧都会更新。
+Returns the current local transform for an animatable node. This is updated every frame.
 
 .. rst-class:: classref-item-separator
 
@@ -198,7 +198,7 @@ OpenXRRenderModelExtension
 
 :ref:`TrackingConfidence<enum_XRPose_TrackingConfidence>` **render_model_get_confidence**\ (\ render_model\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRRenderModelExtension_method_render_model_get_confidence>`
 
-返回渲染模型跟踪数据的跟踪置信度。
+Returns the tracking confidence of the tracking data for the render model.
 
 .. rst-class:: classref-item-separator
 
@@ -210,7 +210,7 @@ OpenXRRenderModelExtension
 
 :ref:`Transform3D<class_Transform3D>` **render_model_get_root_transform**\ (\ render_model\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRRenderModelExtension_method_render_model_get_root_transform>`
 
-返回渲染模型的根变换。这是跟踪的位置，相对于 :ref:`XROrigin3D<class_XROrigin3D>` 节点。
+Returns the root transform of a render model. This is the tracked position relative to our :ref:`XROrigin3D<class_XROrigin3D>` node.
 
 .. rst-class:: classref-item-separator
 
@@ -222,9 +222,9 @@ OpenXRRenderModelExtension
 
 :ref:`PackedStringArray<class_PackedStringArray>` **render_model_get_subaction_paths**\ (\ render_model\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRRenderModelExtension_method_render_model_get_subaction_paths>`
 
-返回 ``render_model`` 的活动子动作路径列表。
+Returns a list of active subaction paths for this ``render_model``.
 
-\ **注意：**\ 如果与动作绑定的设备与建议的交互绑定不同，则返回的信息显示的是与该设备模拟的交互绑定相关的路径。
+\ **Note:** If different devices are bound to your actions than available in suggested interaction bindings, this information shows paths related to the interaction bindings being mimicked by that device.
 
 .. rst-class:: classref-item-separator
 
@@ -236,7 +236,7 @@ OpenXRRenderModelExtension
 
 :ref:`String<class_String>` **render_model_get_top_level_path**\ (\ render_model\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRRenderModelExtension_method_render_model_get_top_level_path>`
 
-返回与 ``render_model`` 关联的顶级路径。如果提供了该信息，则可以识别渲染模型是否与玩家的手或其他身体部位相关联。
+Returns the top level path associated with this ``render_model``. If provided this identifies whether the render model is associated with the player's hands or other body part.
 
 .. rst-class:: classref-item-separator
 
@@ -248,7 +248,7 @@ OpenXRRenderModelExtension
 
 :ref:`bool<class_bool>` **render_model_is_animatable_node_visible**\ (\ render_model\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRRenderModelExtension_method_render_model_is_animatable_node_visible>`
 
-如果动画节点应当可见，则返回 ``true``\ 。
+Returns ``true`` if this animatable node should be visible.
 
 .. rst-class:: classref-item-separator
 
@@ -260,14 +260,14 @@ OpenXRRenderModelExtension
 
 :ref:`Node3D<class_Node3D>` **render_model_new_scene_instance**\ (\ render_model\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRRenderModelExtension_method_render_model_new_scene_instance>`
 
-返回包含显示渲染模型所需的所有 :ref:`MeshInstance3D<class_MeshInstance3D>` 的子场景实例。
+Returns an instance of a subscene that contains all :ref:`MeshInstance3D<class_MeshInstance3D>` nodes that allow you to visualize the render model.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

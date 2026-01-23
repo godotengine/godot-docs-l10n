@@ -5,23 +5,23 @@
 KinematicCollision3D
 ====================
 
-**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-存放移动 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 所产生的碰撞数据。
+Holds collision data from the movement of a :ref:`PhysicsBody3D<class_PhysicsBody3D>`.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-存放移动 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 所产生的碰撞数据，通常是由 :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>` 产生的。移动 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 时，它会在检测到与另一个实体发生碰撞时停止。检测到碰撞时就会返回 **KinematicCollision3D** 对象。
+Holds collision data from the movement of a :ref:`PhysicsBody3D<class_PhysicsBody3D>`, usually from :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`. When a :ref:`PhysicsBody3D<class_PhysicsBody3D>` is moved, it stops if it detects a collision with another body. If a collision is detected, a **KinematicCollision3D** object is returned.
 
-碰撞数据包括碰撞对象、剩余运动和碰撞位置。可以使用该数据进行碰撞的自定义响应。
+The collision data includes the colliding object, the remaining motion, and the collision position. This data can be used to determine a custom response to the collision.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -62,8 +62,8 @@ KinematicCollision3D
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_KinematicCollision3D_method_get_angle:
 
@@ -71,7 +71,7 @@ KinematicCollision3D
 
 :ref:`float<class_float>` **get_angle**\ (\ collision_index\: :ref:`int<class_int>` = 0, up_direction\: :ref:`Vector3<class_Vector3>` = Vector3(0, 1, 0)\ ) |const| :ref:`🔗<class_KinematicCollision3D_method_get_angle>`
 
-根据 ``up_direction`` 返回碰撞角度，默认为 :ref:`Vector3.UP<class_Vector3_constant_UP>`\ 。该值始终为正。
+Returns the collision angle according to ``up_direction``, which is :ref:`Vector3.UP<class_Vector3_constant_UP>` by default. This value is always positive.
 
 .. rst-class:: classref-item-separator
 
@@ -83,7 +83,7 @@ KinematicCollision3D
 
 :ref:`Object<class_Object>` **get_collider**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_KinematicCollision3D_method_get_collider>`
 
-给定碰撞索引（默认情况下最深的碰撞），返回该碰撞实体所附加的 :ref:`Object<class_Object>`\ 。
+Returns the colliding body's attached :ref:`Object<class_Object>` given a collision index (the deepest collision by default).
 
 .. rst-class:: classref-item-separator
 
@@ -95,7 +95,7 @@ KinematicCollision3D
 
 :ref:`int<class_int>` **get_collider_id**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_KinematicCollision3D_method_get_collider_id>`
 
-给定碰撞索引（默认情况下最深的碰撞），返回该碰撞实体所附加的 :ref:`Object<class_Object>` 的唯一实例 ID。请参阅 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`\ 。
+Returns the unique instance ID of the colliding body's attached :ref:`Object<class_Object>` given a collision index (the deepest collision by default). See :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`.
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ KinematicCollision3D
 
 :ref:`RID<class_RID>` **get_collider_rid**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_KinematicCollision3D_method_get_collider_rid>`
 
-给定碰撞索引（默认情况下最深的碰撞），返回被 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 使用的碰撞实体的 :ref:`RID<class_RID>`\ 。
+Returns the colliding body's :ref:`RID<class_RID>` used by the :ref:`PhysicsServer3D<class_PhysicsServer3D>` given a collision index (the deepest collision by default).
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ KinematicCollision3D
 
 :ref:`Object<class_Object>` **get_collider_shape**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_KinematicCollision3D_method_get_collider_shape>`
 
-给定碰撞索引（默认情况下最深的碰撞），返回该碰撞实体的形状。
+Returns the colliding body's shape given a collision index (the deepest collision by default).
 
 .. rst-class:: classref-item-separator
 
@@ -131,7 +131,7 @@ KinematicCollision3D
 
 :ref:`int<class_int>` **get_collider_shape_index**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_KinematicCollision3D_method_get_collider_shape_index>`
 
-给定碰撞索引（默认情况下最深的碰撞），返回该碰撞实体的形状索引。请参阅 :ref:`CollisionObject3D<class_CollisionObject3D>`\ 。
+Returns the colliding body's shape index given a collision index (the deepest collision by default). See :ref:`CollisionObject3D<class_CollisionObject3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -143,7 +143,7 @@ KinematicCollision3D
 
 :ref:`Vector3<class_Vector3>` **get_collider_velocity**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_KinematicCollision3D_method_get_collider_velocity>`
 
-给定碰撞索引（默认情况下最深的碰撞），返回该碰撞实体的速度。
+Returns the colliding body's velocity given a collision index (the deepest collision by default).
 
 .. rst-class:: classref-item-separator
 
@@ -155,7 +155,7 @@ KinematicCollision3D
 
 :ref:`int<class_int>` **get_collision_count**\ (\ ) |const| :ref:`🔗<class_KinematicCollision3D_method_get_collision_count>`
 
-返回检测到的碰撞次数。
+Returns the number of detected collisions.
 
 .. rst-class:: classref-item-separator
 
@@ -167,7 +167,7 @@ KinematicCollision3D
 
 :ref:`float<class_float>` **get_depth**\ (\ ) |const| :ref:`🔗<class_KinematicCollision3D_method_get_depth>`
 
-返回该碰撞物体沿碰撞法线覆盖的长度。
+Returns the colliding body's length of overlap along the collision normal.
 
 .. rst-class:: classref-item-separator
 
@@ -179,7 +179,7 @@ KinematicCollision3D
 
 :ref:`Object<class_Object>` **get_local_shape**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_KinematicCollision3D_method_get_local_shape>`
 
-给定碰撞索引（默认情况下最深的碰撞），返回移动的对象的碰撞形状。
+Returns the moving object's colliding shape given a collision index (the deepest collision by default).
 
 .. rst-class:: classref-item-separator
 
@@ -191,7 +191,7 @@ KinematicCollision3D
 
 :ref:`Vector3<class_Vector3>` **get_normal**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_KinematicCollision3D_method_get_normal>`
 
-给定碰撞索引（默认情况下最深的碰撞），返回在碰撞点处该碰撞实体的形状的法线。
+Returns the colliding body's shape's normal at the point of collision given a collision index (the deepest collision by default).
 
 .. rst-class:: classref-item-separator
 
@@ -203,7 +203,7 @@ KinematicCollision3D
 
 :ref:`Vector3<class_Vector3>` **get_position**\ (\ collision_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_KinematicCollision3D_method_get_position>`
 
-给定碰撞索引（默认情况下最深的碰撞），返回以全局坐标表示的碰撞点。
+Returns the point of collision in global coordinates given a collision index (the deepest collision by default).
 
 .. rst-class:: classref-item-separator
 
@@ -215,7 +215,7 @@ KinematicCollision3D
 
 :ref:`Vector3<class_Vector3>` **get_remainder**\ (\ ) |const| :ref:`🔗<class_KinematicCollision3D_method_get_remainder>`
 
-返回移动对象的剩余移动向量。
+Returns the moving object's remaining movement vector.
 
 .. rst-class:: classref-item-separator
 
@@ -227,14 +227,14 @@ KinematicCollision3D
 
 :ref:`Vector3<class_Vector3>` **get_travel**\ (\ ) |const| :ref:`🔗<class_KinematicCollision3D_method_get_travel>`
 
-返回移动对象的在碰撞前的运动。
+Returns the moving object's travel before collision.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

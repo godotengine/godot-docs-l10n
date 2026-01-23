@@ -5,21 +5,21 @@
 RDTextureFormat
 ===============
 
-**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-纹理格式（由 :ref:`RenderingDevice<class_RenderingDevice>` 使用）。
+Texture format (used by :ref:`RenderingDevice<class_RenderingDevice>`).
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-这个对象由 :ref:`RenderingDevice<class_RenderingDevice>` 使用。
+This object is used by :ref:`RenderingDevice<class_RenderingDevice>`.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ RDTextureFormat
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -68,8 +68,8 @@ RDTextureFormat
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_RDTextureFormat_property_array_layers:
 
@@ -82,7 +82,7 @@ RDTextureFormat
 - |void| **set_array_layers**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_array_layers**\ (\ )
 
-纹理的层数。仅适用于 2D 纹理数组。
+The number of layers in the texture. Only relevant for 2D texture arrays.
 
 .. rst-class:: classref-item-separator
 
@@ -99,7 +99,7 @@ RDTextureFormat
 - |void| **set_depth**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_depth**\ (\ )
 
-纹理的深度（单位为像素）。2D 纹理始终为 ``1``\ 。
+The texture's depth (in pixels). This is always ``1`` for 2D textures.
 
 .. rst-class:: classref-item-separator
 
@@ -116,7 +116,7 @@ RDTextureFormat
 - |void| **set_format**\ (\ value\: :ref:`DataFormat<enum_RenderingDevice_DataFormat>`\ )
 - :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **get_format**\ (\ )
 
-纹理的像素数据格式。
+The texture's pixel data format.
 
 .. rst-class:: classref-item-separator
 
@@ -133,7 +133,7 @@ RDTextureFormat
 - |void| **set_height**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_height**\ (\ )
 
-纹理的高度（单位为像素）。
+The texture's height (in pixels).
 
 .. rst-class:: classref-item-separator
 
@@ -150,9 +150,9 @@ RDTextureFormat
 - |void| **set_is_discardable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_is_discardable**\ (\ )
 
-如果纹理可丢弃，则帧与帧之间不需要保留其内容。该标志仅在纹理作为绘制列表中的目标时相关。
+If a texture is discardable, its contents do not need to be preserved between frames. This flag is only relevant when the texture is used as target in a draw list.
 
-\ :ref:`RenderingDevice<class_RenderingDevice>` 会使用该信息来判断纹理的内容是否可丢弃，进而消除不必要的内存写入、提升性能。
+This information is used by :ref:`RenderingDevice<class_RenderingDevice>` to figure out if a texture's contents can be discarded, eliminating unnecessary writes to memory and boosting performance.
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ RDTextureFormat
 - |void| **set_is_resolve_buffer**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_is_resolve_buffer**\ (\ )
 
-该纹理将用作解析操作的目标。
+The texture will be used as the destination of a resolve operation.
 
 .. rst-class:: classref-item-separator
 
@@ -186,7 +186,7 @@ RDTextureFormat
 - |void| **set_mipmaps**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_mipmaps**\ (\ )
 
-纹理中可用的 mipmap 数。
+The number of mipmaps available in the texture.
 
 .. rst-class:: classref-item-separator
 
@@ -203,7 +203,7 @@ RDTextureFormat
 - |void| **set_samples**\ (\ value\: :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>`\ )
 - :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` **get_samples**\ (\ )
 
-对纹理进行采样时所使用的样本数。
+The number of samples used when sampling the texture.
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ RDTextureFormat
 - |void| **set_texture_type**\ (\ value\: :ref:`TextureType<enum_RenderingDevice_TextureType>`\ )
 - :ref:`TextureType<enum_RenderingDevice_TextureType>` **get_texture_type**\ (\ )
 
-纹理类型。
+The texture type.
 
 .. rst-class:: classref-item-separator
 
@@ -237,7 +237,7 @@ RDTextureFormat
 - |void| **set_usage_bits**\ (\ value\: |bitfield|\[:ref:`TextureUsageBits<enum_RenderingDevice_TextureUsageBits>`\]\ )
 - |bitfield|\[:ref:`TextureUsageBits<enum_RenderingDevice_TextureUsageBits>`\] **get_usage_bits**\ (\ )
 
-纹理的用途位，决定使用该纹理时能做什么。
+The texture's usage bits, which determine what can be done using the texture.
 
 .. rst-class:: classref-item-separator
 
@@ -254,7 +254,7 @@ RDTextureFormat
 - |void| **set_width**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_width**\ (\ )
 
-纹理的宽度（单位为像素）。
+The texture's width (in pixels).
 
 .. rst-class:: classref-section-separator
 
@@ -262,8 +262,8 @@ RDTextureFormat
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_RDTextureFormat_method_add_shareable_format:
 
@@ -271,7 +271,7 @@ RDTextureFormat
 
 |void| **add_shareable_format**\ (\ format\: :ref:`DataFormat<enum_RenderingDevice_DataFormat>`\ ) :ref:`🔗<class_RDTextureFormat_method_add_shareable_format>`
 
-将 ``format`` 添加为相应 :ref:`RDTextureView<class_RDTextureView>` 的 :ref:`RDTextureView.format_override<class_RDTextureView_property_format_override>` 属性的有效格式。如果将格式作为可共享格式添加，那么也必须添加主 :ref:`format<class_RDTextureFormat_property_format>`\ 。
+Adds ``format`` as a valid format for the corresponding :ref:`RDTextureView<class_RDTextureView>`'s :ref:`RDTextureView.format_override<class_RDTextureView_property_format_override>` property. If any format is added as shareable, then the main :ref:`format<class_RDTextureFormat_property_format>` must also be added.
 
 .. rst-class:: classref-item-separator
 
@@ -283,14 +283,14 @@ RDTextureFormat
 
 |void| **remove_shareable_format**\ (\ format\: :ref:`DataFormat<enum_RenderingDevice_DataFormat>`\ ) :ref:`🔗<class_RDTextureFormat_method_remove_shareable_format>`
 
-从相应 :ref:`RDTextureView<class_RDTextureView>` 的 :ref:`RDTextureView.format_override<class_RDTextureView_property_format_override>` 属性可以设置的有效格式列表中移除 ``format``\ 。
+Removes ``format`` from the list of valid formats that the corresponding :ref:`RDTextureView<class_RDTextureView>`'s :ref:`RDTextureView.format_override<class_RDTextureView_property_format_override>` property can be set to.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

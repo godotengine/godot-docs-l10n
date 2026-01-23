@@ -5,16 +5,16 @@
 OpenXRExtensionWrapper
 ======================
 
-**继承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-**派生：** :ref:`OpenXRAndroidThreadSettingsExtension<class_OpenXRAndroidThreadSettingsExtension>`, :ref:`OpenXRExtensionWrapperExtension<class_OpenXRExtensionWrapperExtension>`, :ref:`OpenXRFrameSynthesisExtension<class_OpenXRFrameSynthesisExtension>`, :ref:`OpenXRFutureExtension<class_OpenXRFutureExtension>`, :ref:`OpenXRRenderModelExtension<class_OpenXRRenderModelExtension>`, :ref:`OpenXRSpatialAnchorCapability<class_OpenXRSpatialAnchorCapability>`, :ref:`OpenXRSpatialEntityExtension<class_OpenXRSpatialEntityExtension>`, :ref:`OpenXRSpatialMarkerTrackingCapability<class_OpenXRSpatialMarkerTrackingCapability>`, :ref:`OpenXRSpatialPlaneTrackingCapability<class_OpenXRSpatialPlaneTrackingCapability>`
+**Inherited By:** :ref:`OpenXRAndroidThreadSettingsExtension<class_OpenXRAndroidThreadSettingsExtension>`, :ref:`OpenXRExtensionWrapperExtension<class_OpenXRExtensionWrapperExtension>`, :ref:`OpenXRFrameSynthesisExtension<class_OpenXRFrameSynthesisExtension>`, :ref:`OpenXRFutureExtension<class_OpenXRFutureExtension>`, :ref:`OpenXRRenderModelExtension<class_OpenXRRenderModelExtension>`, :ref:`OpenXRSpatialAnchorCapability<class_OpenXRSpatialAnchorCapability>`, :ref:`OpenXRSpatialEntityExtension<class_OpenXRSpatialEntityExtension>`, :ref:`OpenXRSpatialMarkerTrackingCapability<class_OpenXRSpatialMarkerTrackingCapability>`, :ref:`OpenXRSpatialPlaneTrackingCapability<class_OpenXRSpatialPlaneTrackingCapability>`
 
-允许使用 GDExtension 实现 OpenXR 扩展。
+Allows implementing OpenXR extensions with GDExtension.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
 **OpenXRExtensionWrapper** allows implementing OpenXR extensions with GDExtension. The extension should be registered with :ref:`register_extension_wrapper()<class_OpenXRExtensionWrapper_method_register_extension_wrapper>`.
 
@@ -30,8 +30,8 @@ Any virtual methods that run on the render thread will be noted below.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -136,8 +136,8 @@ Any virtual methods that run on the render thread will be noted below.
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_OpenXRExtensionWrapper_private_method__get_composition_layer:
 
@@ -209,7 +209,7 @@ Returns a :ref:`Dictionary<class_Dictionary>` of OpenXR extensions related to th
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_suggested_tracker_names**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__get_suggested_tracker_names>`
 
-返回扩展包装器中使用的位置跟踪器名称的 :ref:`PackedStringArray<class_PackedStringArray>`\ 。
+Returns a :ref:`PackedStringArray<class_PackedStringArray>` of positional tracker names that are used within the extension wrapper.
 
 .. rst-class:: classref-item-separator
 
@@ -235,7 +235,7 @@ Gets an array of :ref:`Dictionary<class_Dictionary>`\ s that represent propertie
 
 :ref:`Dictionary<class_Dictionary>` **_get_viewport_composition_layer_extension_property_defaults**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_property_defaults>`
 
-获取一个 :ref:`Dictionary<class_Dictionary>`\ ，其中包含 :ref:`_get_viewport_composition_layer_extension_properties()<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_properties>` 返回的属性的默认值。
+Gets a :ref:`Dictionary<class_Dictionary>` containing the default values for the properties returned by :ref:`_get_viewport_composition_layer_extension_properties()<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_properties>`.
 
 .. rst-class:: classref-item-separator
 
@@ -261,7 +261,7 @@ Called before the OpenXR instance is created.
 
 :ref:`bool<class_bool>` **_on_event_polled**\ (\ event\: ``const void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_event_polled>`
 
-当有 OpenXR 事件需要处理时调用。实现时，如果事件已被处理，则返回 ``true``\ ，否则返回 ``false``\ 。
+Called when there is an OpenXR event to process. When implementing, return ``true`` if the event was handled, return ``false`` otherwise.
 
 .. rst-class:: classref-item-separator
 
@@ -359,7 +359,7 @@ Called right before the XR viewports begin their rendering step.
 
 |void| **_on_process**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_process>`
 
-作为 OpenXR 进程处理的一部分调用。这发生在主循环的一般和物理处理步进之前。在该步进中，控制器数据被查询并可供游戏逻辑使用。
+Called as part of the OpenXR process handling. This happens right before general and physics processing steps of the main loop. During this step controller data is queried and made available to game logic.
 
 .. rst-class:: classref-item-separator
 
@@ -371,9 +371,9 @@ Called right before the XR viewports begin their rendering step.
 
 |void| **_on_register_metadata**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_register_metadata>`
 
-允许扩展注册额外的控制器元数据。即使 OpenXR API 未被构造，也会调用该函数，因为元数据需要可供编辑器使用。
+Allows extensions to register additional controller metadata. This function is called even when the OpenXR API is not constructed as the metadata needs to be available to the editor.
 
-扩展还应该提供元数据，无论主机系统是否支持它们。控制器数据用于为可以访问相关硬件的用户设置动作映射。
+Extensions should also provide metadata regardless of whether they are supported on the host system. The controller data is used to setup action maps for users who may have access to the relevant hardware.
 
 .. rst-class:: classref-item-separator
 
@@ -413,7 +413,7 @@ Called right before the OpenXR session is destroyed.
 
 |void| **_on_state_exiting**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_state_exiting>`
 
-当 OpenXR 会话状态被更改为退出时调用。
+Called when the OpenXR session state is changed to exiting.
 
 .. rst-class:: classref-item-separator
 
@@ -425,7 +425,7 @@ Called right before the OpenXR session is destroyed.
 
 |void| **_on_state_focused**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_state_focused>`
 
-当 OpenXR 会话状态被更改为聚焦时调用。该状态是游戏运行时的活动状态。
+Called when the OpenXR session state is changed to focused. This state is the active state when the game runs.
 
 .. rst-class:: classref-item-separator
 
@@ -437,7 +437,7 @@ Called right before the OpenXR session is destroyed.
 
 |void| **_on_state_idle**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_state_idle>`
 
-当 OpenXR 会话状态被更改为空闲时调用。
+Called when the OpenXR session state is changed to idle.
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ Called right before the OpenXR session is destroyed.
 
 |void| **_on_state_loss_pending**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_state_loss_pending>`
 
-当 OpenXR 会话状态被更改为丢失挂起时调用。
+Called when the OpenXR session state is changed to loss pending.
 
 .. rst-class:: classref-item-separator
 
@@ -461,7 +461,7 @@ Called right before the OpenXR session is destroyed.
 
 |void| **_on_state_ready**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_state_ready>`
 
-当 OpenXR 会话状态被更改为就绪时调用。这意味着 OpenXR 已准备好建立会话。
+Called when the OpenXR session state is changed to ready. This means OpenXR is ready to set up the session.
 
 .. rst-class:: classref-item-separator
 
@@ -473,7 +473,7 @@ Called right before the OpenXR session is destroyed.
 
 |void| **_on_state_stopping**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_state_stopping>`
 
-当 OpenXR 会话状态被更改为停止时调用。
+Called when the OpenXR session state is changed to stopping.
 
 .. rst-class:: classref-item-separator
 
@@ -485,7 +485,7 @@ Called right before the OpenXR session is destroyed.
 
 |void| **_on_state_synchronized**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_state_synchronized>`
 
-当 OpenXR 会话状态被更改为同步时调用。当应用程序失去焦点时，OpenXR 也会返回到该状态。
+Called when the OpenXR session state is changed to synchronized. OpenXR also returns to this state when the application loses focus.
 
 .. rst-class:: classref-item-separator
 
@@ -497,7 +497,7 @@ Called right before the OpenXR session is destroyed.
 
 |void| **_on_state_visible**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_state_visible>`
 
-当 OpenXR 会话状态被更改为可见时调用。这意味着 OpenXR 现在已准备好接收帧。
+Called when the OpenXR session state is changed to visible. This means OpenXR is now ready to receive frames.
 
 .. rst-class:: classref-item-separator
 
@@ -509,7 +509,7 @@ Called right before the OpenXR session is destroyed.
 
 |void| **_on_sync_actions**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_sync_actions>`
 
-当 OpenXR 执行完动作同步时调用。
+Called when OpenXR has performed its action sync.
 
 .. rst-class:: classref-item-separator
 
@@ -521,9 +521,9 @@ Called right before the OpenXR session is destroyed.
 
 |void| **_on_viewport_composition_layer_destroyed**\ (\ layer\: ``const void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_viewport_composition_layer_destroyed>`
 
-当通过 :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>` 创建的合成层被销毁时调用。
+Called when a composition layer created via :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>` is destroyed.
 
-\ ``layer`` 是指向 ``XrCompositionLayerBaseHeader`` 结构的指针。
+\ ``layer`` is a pointer to an ``XrCompositionLayerBaseHeader`` struct.
 
 .. rst-class:: classref-item-separator
 
@@ -739,7 +739,7 @@ Add additional data structures to composition layers created by :ref:`OpenXRComp
 
 :ref:`OpenXRAPIExtension<class_OpenXRAPIExtension>` **get_openxr_api**\ (\ ) :ref:`🔗<class_OpenXRExtensionWrapper_method_get_openxr_api>`
 
-返回创建的 :ref:`OpenXRAPIExtension<class_OpenXRAPIExtension>`\ ，可用于访问 OpenXR API。
+Returns the created :ref:`OpenXRAPIExtension<class_OpenXRAPIExtension>`, which can be used to access the OpenXR API.
 
 .. rst-class:: classref-item-separator
 
@@ -755,12 +755,12 @@ Registers the extension. This should happen at core module initialization level.
 
 \ **Note:** This cannot be called once OpenXR has been initialized.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

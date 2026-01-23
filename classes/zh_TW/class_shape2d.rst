@@ -5,32 +5,32 @@
 Shape2D
 =======
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`CapsuleShape2D<class_CapsuleShape2D>`, :ref:`CircleShape2D<class_CircleShape2D>`, :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>`, :ref:`ConvexPolygonShape2D<class_ConvexPolygonShape2D>`, :ref:`RectangleShape2D<class_RectangleShape2D>`, :ref:`SegmentShape2D<class_SegmentShape2D>`, :ref:`SeparationRayShape2D<class_SeparationRayShape2D>`, :ref:`WorldBoundaryShape2D<class_WorldBoundaryShape2D>`
+**Inherited By:** :ref:`CapsuleShape2D<class_CapsuleShape2D>`, :ref:`CircleShape2D<class_CircleShape2D>`, :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>`, :ref:`ConvexPolygonShape2D<class_ConvexPolygonShape2D>`, :ref:`RectangleShape2D<class_RectangleShape2D>`, :ref:`SegmentShape2D<class_SegmentShape2D>`, :ref:`SeparationRayShape2D<class_SeparationRayShape2D>`, :ref:`WorldBoundaryShape2D<class_WorldBoundaryShape2D>`
 
-用於物理碰撞的 2D 形狀的抽象基底類別。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-所有 2D 形狀的抽象基底類別，針對物理使用設計。
-
-\ **性能：**\ 對圖元形狀進行碰撞偵測很快，尤其是 :ref:`CircleShape2D<class_CircleShape2D>`\ 。\ :ref:`ConvexPolygonShape2D<class_ConvexPolygonShape2D>` 較慢，\ :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>` 最慢。
+Abstract base class for 2D shapes used for physics collision.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`物理介紹 <../tutorials/physics/physics_introduction>`
+Abstract base class for all 2D shapes, intended for use in physics.
+
+\ **Performance:** Primitive shapes, especially :ref:`CircleShape2D<class_CircleShape2D>`, are fast to check collisions against. :ref:`ConvexPolygonShape2D<class_ConvexPolygonShape2D>` is slower, and :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>` is the slowest.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Physics introduction <../tutorials/physics/physics_introduction>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -41,8 +41,8 @@ Shape2D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -67,8 +67,8 @@ Shape2D
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_Shape2D_property_custom_solver_bias:
 
@@ -81,9 +81,9 @@ Shape2D
 - |void| **set_custom_solver_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_custom_solver_bias**\ (\ )
 
-該形狀的的自訂求解器偏差。定義了強制接觸分離涉及到這個形狀時，物體會做出多大的反應。
+The shape's custom solver bias. Defines how much bodies react to enforce contact separation when this shape is involved.
 
-設為 ``0.0`` 時，使用的預設值為 :ref:`ProjectSettings.physics/2d/solver/default_contact_bias<class_ProjectSettings_property_physics/2d/solver/default_contact_bias>`\ 。
+When set to ``0``, the default value from :ref:`ProjectSettings.physics/2d/solver/default_contact_bias<class_ProjectSettings_property_physics/2d/solver/default_contact_bias>` is used.
 
 .. rst-class:: classref-section-separator
 
@@ -91,8 +91,8 @@ Shape2D
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_Shape2D_method_collide:
 
@@ -100,9 +100,9 @@ Shape2D
 
 :ref:`bool<class_bool>` **collide**\ (\ local_xform\: :ref:`Transform2D<class_Transform2D>`, with_shape\: :ref:`Shape2D<class_Shape2D>`, shape_xform\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_Shape2D_method_collide>`
 
-如果該形狀與另一個形狀發生碰撞，返回 ``true``\ 。
+Returns ``true`` if this shape is colliding with another.
 
-本方法需要該形狀的變換矩陣（\ ``local_xform``\ ）、要檢查與該形狀碰撞的形狀（\ ``with_shape``\ ）、以及那個形狀的變換矩陣（\ ``shape_xform``\ ）。
+This method needs the transformation matrix for this shape (``local_xform``), the shape to check collisions with (``with_shape``), and the transformation matrix of that shape (``shape_xform``).
 
 .. rst-class:: classref-item-separator
 
@@ -114,13 +114,13 @@ Shape2D
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **collide_and_get_contacts**\ (\ local_xform\: :ref:`Transform2D<class_Transform2D>`, with_shape\: :ref:`Shape2D<class_Shape2D>`, shape_xform\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_Shape2D_method_collide_and_get_contacts>`
 
-返回該形狀與另一形狀接觸的接觸點對的列表。
+Returns a list of contact point pairs where this shape touches another.
 
-如果不存在碰撞，則返回的列表為空。否則，返回的列表中包含的是成對排列的接觸點，在該形狀邊界上的點和 ``with_shape`` 邊界上的點之間交替排列。
+If there are no collisions, the returned list is empty. Otherwise, the returned list contains contact points arranged in pairs, with entries alternating between points on the boundary of this shape and points on the boundary of ``with_shape``.
 
-有了碰撞對 A 和 B，就可以通過 ``(B - A).normalized()`` 計算碰撞法線，通過 ``(B - A).length()`` 計算碰撞深度。這些資訊通常用於分離形狀，在碰撞求解器中比較常見。
+A collision pair A, B can be used to calculate the collision normal with ``(B - A).normalized()``, and the collision depth with ``(B - A).length()``. This information is typically used to separate shapes, particularly in collision solvers.
 
-這個方法需要用到該形狀的變換矩陣（\ ``local_xform``\ ）、要檢查與該形狀是否碰撞的形狀（\ ``with_shape``\ ）、以及那個形狀的變換矩陣（\ ``shape_xform``\ ）。
+This method needs the transformation matrix for this shape (``local_xform``), the shape to check collisions with (``with_shape``), and the transformation matrix of that shape (``shape_xform``).
 
 .. rst-class:: classref-item-separator
 
@@ -132,9 +132,9 @@ Shape2D
 
 :ref:`bool<class_bool>` **collide_with_motion**\ (\ local_xform\: :ref:`Transform2D<class_Transform2D>`, local_motion\: :ref:`Vector2<class_Vector2>`, with_shape\: :ref:`Shape2D<class_Shape2D>`, shape_xform\: :ref:`Transform2D<class_Transform2D>`, shape_motion\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Shape2D_method_collide_with_motion>`
 
-返回套用給定的運動後，這個形狀是否會與另一個形狀發生碰撞。
+Returns whether this shape would collide with another, if a given movement was applied.
 
-這個方法需要這個形狀的變換矩陣（\ ``local_xform``\ ），要在這個形狀上測試的運動（\ ``local_motion``\ ），檢查碰撞的形狀（\ ``with_shape``\ ），那個形狀的變換矩陣（\ ``shape_xform``\ ），以及用於測試其他物體的運動（\ ``shape_motion``\ ）。
+This method needs the transformation matrix for this shape (``local_xform``), the movement to test on this shape (``local_motion``), the shape to check collisions with (``with_shape``), the transformation matrix of that shape (``shape_xform``), and the movement to test onto the other object (``shape_motion``).
 
 .. rst-class:: classref-item-separator
 
@@ -146,13 +146,13 @@ Shape2D
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **collide_with_motion_and_get_contacts**\ (\ local_xform\: :ref:`Transform2D<class_Transform2D>`, local_motion\: :ref:`Vector2<class_Vector2>`, with_shape\: :ref:`Shape2D<class_Shape2D>`, shape_xform\: :ref:`Transform2D<class_Transform2D>`, shape_motion\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Shape2D_method_collide_with_motion_and_get_contacts>`
 
-返回如果套用了給定的移動後，該形狀將接觸另一形狀的接觸點對列表。
+Returns a list of contact point pairs where this shape would touch another, if a given movement was applied.
 
-如果不存在碰撞，則返回的列表為空。否則，返回的列表中包含的是成對排列的接觸點，在該形狀邊界上的點和 ``with_shape`` 邊界上的點之間會交替出現。
+If there would be no collisions, the returned list is empty. Otherwise, the returned list contains contact points arranged in pairs, with entries alternating between points on the boundary of this shape and points on the boundary of ``with_shape``.
 
-有了碰撞對 A 和 B，就可以通過 ``(B - A).normalized()`` 計算碰撞法線，通過 ``(B - A).length()`` 計算碰撞深度。這些資訊通常用於分離形狀，在碰撞求解器中比較常見。
+A collision pair A, B can be used to calculate the collision normal with ``(B - A).normalized()``, and the collision depth with ``(B - A).length()``. This information is typically used to separate shapes, particularly in collision solvers.
 
-本方法需要用到該形狀的變換矩陣（\ ``local_xform``\ ）、要在該形狀上測試的運動（\ ``local_motion``\ ）、要檢查與該形狀是否碰撞的形狀（\ ``with_shape``\ ）、那個形狀的變換矩陣（\ ``shape_xform``\ ）、以及要在其他形狀上測試的運動（\ ``shape_motion``\ ）。
+This method needs the transformation matrix for this shape (``local_xform``), the movement to test on this shape (``local_motion``), the shape to check collisions with (``with_shape``), the transformation matrix of that shape (``shape_xform``), and the movement to test onto the other object (``shape_motion``).
 
 .. rst-class:: classref-item-separator
 
@@ -164,7 +164,7 @@ Shape2D
 
 |void| **draw**\ (\ canvas_item\: :ref:`RID<class_RID>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Shape2D_method_draw>`
 
-用 :ref:`RenderingServer<class_RenderingServer>` API 在 :ref:`CanvasItem<class_CanvasItem>` 上繪製實體形狀，並填充指定的顏色 ``color``\ 。確切的繪製方法是每個形狀特有的，無法配置。
+Draws a solid shape onto a :ref:`CanvasItem<class_CanvasItem>` with the :ref:`RenderingServer<class_RenderingServer>` API filled with the specified ``color``. The exact drawing method is specific for each shape and cannot be configured.
 
 .. rst-class:: classref-item-separator
 
@@ -176,14 +176,14 @@ Shape2D
 
 :ref:`Rect2<class_Rect2>` **get_rect**\ (\ ) |const| :ref:`🔗<class_Shape2D_method_get_rect>`
 
-返回代表形狀邊界的 :ref:`Rect2<class_Rect2>`\ 。
+Returns a :ref:`Rect2<class_Rect2>` representing the shapes boundary.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

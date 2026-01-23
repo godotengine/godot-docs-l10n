@@ -5,25 +5,25 @@
 BoxMesh
 =======
 
-**继承：** :ref:`PrimitiveMesh<class_PrimitiveMesh>` **<** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`PrimitiveMesh<class_PrimitiveMesh>` **<** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-生成轴对齐盒 :ref:`PrimitiveMesh<class_PrimitiveMesh>`\ 。
+Generate an axis-aligned box :ref:`PrimitiveMesh<class_PrimitiveMesh>`.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-生成轴对齐盒 :ref:`PrimitiveMesh<class_PrimitiveMesh>`\ 。
+Generate an axis-aligned box :ref:`PrimitiveMesh<class_PrimitiveMesh>`.
 
-这个盒子的 UV 布局是以 3×2 的方式排列的，允许单独对每个面进行贴图。要在所有的面上应用相同的纹理，请将材质的 UV 属性改为 ``Vector3(3, 2, 1)``\ 。这样做等价于在顶点着色器中添加 ``UV *= vec2(3.0, 2.0)``\ 。
+The box's UV layout is arranged in a 3×2 layout that allows texturing each face individually. To apply the same texture on all faces, change the material's UV property to ``Vector3(3, 2, 1)``. This is equivalent to adding ``UV *= vec2(3.0, 2.0)`` in a vertex shader.
 
-\ **注意：**\ 当使用很大且有纹理的 **BoxMesh** 时（例如作为地板），你可能会发现 UV 偶尔抖动的问题，这取决于相机的角度。要解决此问题，请增加 :ref:`subdivide_depth<class_BoxMesh_property_subdivide_depth>`\ 、\ :ref:`subdivide_height<class_BoxMesh_property_subdivide_height>` 和 :ref:`subdivide_width<class_BoxMesh_property_subdivide_width>`\ ，直到你不再注意到 UV 抖动。
+\ **Note:** When using a large textured **BoxMesh** (e.g. as a floor), you may stumble upon UV jittering issues depending on the camera angle. To solve this, increase :ref:`subdivide_depth<class_BoxMesh_property_subdivide_depth>`, :ref:`subdivide_height<class_BoxMesh_property_subdivide_height>` and :ref:`subdivide_width<class_BoxMesh_property_subdivide_width>` until you no longer notice UV jittering.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ BoxMesh
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_BoxMesh_property_size:
 
@@ -58,7 +58,7 @@ BoxMesh
 - |void| **set_size**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_size**\ (\ )
 
-该盒子的宽度、高度和深度。
+The box's width, height and depth.
 
 .. rst-class:: classref-item-separator
 
@@ -75,7 +75,7 @@ BoxMesh
 - |void| **set_subdivide_depth**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_subdivide_depth**\ (\ )
 
-沿 Z 轴插入的额外边缘环的数量。
+Number of extra edge loops inserted along the Z axis.
 
 .. rst-class:: classref-item-separator
 
@@ -92,7 +92,7 @@ BoxMesh
 - |void| **set_subdivide_height**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_subdivide_height**\ (\ )
 
-沿 Y 轴插入的额外边缘环的数量。
+Number of extra edge loops inserted along the Y axis.
 
 .. rst-class:: classref-item-separator
 
@@ -109,14 +109,14 @@ BoxMesh
 - |void| **set_subdivide_width**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_subdivide_width**\ (\ )
 
-沿 X 轴插入的额外边缘环的数量。
+Number of extra edge loops inserted along the X axis.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -587,7 +587,7 @@ Draw property as selected. Used by the inspector.
 
 |void| **set_bottom_editor**\ (\ editor\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_EditorProperty_method_set_bottom_editor>`
 
-Puts the ``editor`` control below the property label. The control must be previously added using :ref:`Node.add_child()<class_Node_method_add_child>`.
+Place le contrôle ``editor`` sous le label de la propriété. Le contrôle doit d'abord être ajouté avec :ref:`Node.add_child()<class_Node_method_add_child>`.
 
 .. rst-class:: classref-item-separator
 

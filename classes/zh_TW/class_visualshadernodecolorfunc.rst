@@ -5,21 +5,21 @@
 VisualShaderNodeColorFunc
 =========================
 
-**繼承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-:ref:`Color<class_Color>` 函式，在視覺化著色器圖中使用。
+A :ref:`Color<class_Color>` function to be used within the visual shader graph.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-接受一個 :ref:`Color<class_Color>` 到輸入埠，並根據 :ref:`function<class_VisualShaderNodeColorFunc_property_function>` 對其進行轉換。
+Accept a :ref:`Color<class_Color>` to the input port and transform it according to :ref:`function<class_VisualShaderNodeColorFunc_property_function>`.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ VisualShaderNodeColorFunc
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_VisualShaderNodeColorFunc_Function:
 
@@ -49,7 +49,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeColorFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeColorFunc_Function>` **FUNC_GRAYSCALE** = ``0``
 
-使用以下公式將顏色轉換為灰度。
+Converts the color to grayscale using the following formula:
 
 ::
 
@@ -65,7 +65,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeColorFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeColorFunc_Function>` **FUNC_HSV2RGB** = ``1``
 
-將 HSV 向量轉換為等效的 RGB 向量。
+Converts HSV vector to RGB equivalent.
 
 .. _class_VisualShaderNodeColorFunc_constant_FUNC_RGB2HSV:
 
@@ -73,7 +73,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeColorFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeColorFunc_Function>` **FUNC_RGB2HSV** = ``2``
 
-將 RGB 向量轉換為等效的 HSV 向量。
+Converts RGB vector to HSV equivalent.
 
 .. _class_VisualShaderNodeColorFunc_constant_FUNC_SEPIA:
 
@@ -81,7 +81,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeColorFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeColorFunc_Function>` **FUNC_SEPIA** = ``3``
 
-使用以下公式套用棕褐色調效果。
+Applies sepia tone effect using the following formula:
 
 ::
 
@@ -138,7 +138,7 @@ The Compatibility renderer uses a simpler formula:
 
 :ref:`Function<enum_VisualShaderNodeColorFunc_Function>` **FUNC_MAX** = ``6``
 
-代表 :ref:`Function<enum_VisualShaderNodeColorFunc_Function>` 列舉的大小。
+Represents the size of the :ref:`Function<enum_VisualShaderNodeColorFunc_Function>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -146,8 +146,8 @@ The Compatibility renderer uses a simpler formula:
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_VisualShaderNodeColorFunc_property_function:
 
@@ -162,12 +162,12 @@ The Compatibility renderer uses a simpler formula:
 
 A function to be applied to the input color.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

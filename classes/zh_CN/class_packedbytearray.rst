@@ -5,27 +5,27 @@
 PackedByteArray
 ===============
 
-字节紧缩数组。
+A packed array of bytes.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-专门设计用于保存字节的数组。紧缩数组紧密打包数据，因此可为大型数组节省内存。
+An array specifically designed to hold bytes. Packs data tightly, so it saves memory for large array sizes.
 
-\ **PackedByteArray** 还提供了将各种类型编码为字节/从字节解码的方法。值的编码方式是实现细节，在与外部应用程序交互时不应依赖它。
+\ **PackedByteArray** also provides methods to encode/decode various types to/from bytes. The way values are encoded is an implementation detail and shouldn't be relied upon when interacting with external apps.
 
-\ **注意：**\ 紧缩数组始终通过引用传递。要获取可以独立于原始数组进行修改的数组副本，请使用 :ref:`duplicate()<class_PackedByteArray_method_duplicate>`\ 。内置属性和方法\ *并非*\ 如此，它们返回的是紧缩数组的副本，对其进行修改\ *不会*\ 影响原值。更新此类内置属性请修改返回的数组，然后将其重新赋值给该属性。
+\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedByteArray_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
 
 .. note::
 
-	通过 C# 使用该 API 时会有显著不同，详见 :ref:`doc_c_sharp_differences`\ 。
+	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
 
 .. rst-class:: classref-reftable-group
 
-构造函数
---------
+Constructors
+------------
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ PackedByteArray
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -188,8 +188,8 @@ PackedByteArray
 
 .. rst-class:: classref-reftable-group
 
-运算符
-------
+Operators
+---------
 
 .. table::
    :widths: auto
@@ -210,8 +210,8 @@ PackedByteArray
 
 .. rst-class:: classref-descriptions-group
 
-构造函数说明
-------------
+Constructor Descriptions
+------------------------
 
 .. _class_PackedByteArray_constructor_PackedByteArray:
 
@@ -219,7 +219,7 @@ PackedByteArray
 
 :ref:`PackedByteArray<class_PackedByteArray>` **PackedByteArray**\ (\ ) :ref:`🔗<class_PackedByteArray_constructor_PackedByteArray>`
 
-构造空的 **PackedByteArray**\ 。
+Constructs an empty **PackedByteArray**.
 
 .. rst-class:: classref-item-separator
 
@@ -229,7 +229,7 @@ PackedByteArray
 
 :ref:`PackedByteArray<class_PackedByteArray>` **PackedByteArray**\ (\ from\: :ref:`PackedByteArray<class_PackedByteArray>`\ )
 
-构造给定 **PackedByteArray** 的副本。
+Constructs a **PackedByteArray** as a copy of the given **PackedByteArray**.
 
 .. rst-class:: classref-item-separator
 
@@ -239,7 +239,7 @@ PackedByteArray
 
 :ref:`PackedByteArray<class_PackedByteArray>` **PackedByteArray**\ (\ from\: :ref:`Array<class_Array>`\ )
 
-构造新 **PackedByteArray**\ 。你还可以传入通用 :ref:`Array<class_Array>` 进行转换。
+Constructs a new **PackedByteArray**. Optionally, you can pass in a generic :ref:`Array<class_Array>` that will be converted.
 
 .. rst-class:: classref-section-separator
 
@@ -247,8 +247,8 @@ PackedByteArray
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_PackedByteArray_method_append:
 
@@ -256,7 +256,7 @@ PackedByteArray
 
 :ref:`bool<class_bool>` **append**\ (\ value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_append>`
 
-向数组末尾追加一个元素（\ :ref:`push_back()<class_PackedByteArray_method_push_back>` 的别名）。
+Appends an element at the end of the array (alias of :ref:`push_back()<class_PackedByteArray_method_push_back>`).
 
 .. rst-class:: classref-item-separator
 
@@ -268,7 +268,7 @@ PackedByteArray
 
 |void| **append_array**\ (\ array\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_PackedByteArray_method_append_array>`
 
-在该数组的末尾追加一个 **PackedByteArray**\ 。
+Appends a **PackedByteArray** at the end of this array.
 
 .. rst-class:: classref-item-separator
 
@@ -280,9 +280,9 @@ PackedByteArray
 
 :ref:`int<class_int>` **bsearch**\ (\ value\: :ref:`int<class_int>`, before\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_PackedByteArray_method_bsearch>`
 
-使用二进法查找已有值的索引（如果该值尚未存在于数组中，则为保持排序顺序的插入索引）。传递 ``before`` 说明符是可选的。如果该参数为 ``false``\ ，则返回的索引位于数组中该值的所有已有的条目之后。
+Finds the index of an existing value (or the insertion index that maintains sorting order, if the value is not yet present in the array) using binary search. Optionally, a ``before`` specifier can be passed. If ``false``, the returned index comes after all existing entries of the value in the array.
 
-\ **注意：**\ 在未排序的数组上调用 :ref:`bsearch()<class_PackedByteArray_method_bsearch>` 会产生预料之外的行为。
+\ **Note:** Calling :ref:`bsearch()<class_PackedByteArray_method_bsearch>` on an unsorted array results in unexpected behavior.
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +294,7 @@ PackedByteArray
 
 |void| **bswap16**\ (\ offset\: :ref:`int<class_int>` = 0, count\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_PackedByteArray_method_bswap16>`
 
-对数组中从偏移量为 ``offset`` 处开始的 ``count`` 个 16 位段落进行字节顺序交换的操作。交换是原地进行的。如果 ``count`` 小于零，则会处理到数组结尾为止，如果处理的数据大小不是 2 的倍数，则处理的最后一个 16 位段落之后的字节不会发生修改。
+Swaps the byte order of ``count`` 16-bit segments of the array starting at ``offset``. Swap is done in-place. If ``count`` is less than zero, all segments to the end of array are processed, if processed data size is not a multiple of 2, the byte after the last processed 16-bit segment is not modified.
 
 .. rst-class:: classref-item-separator
 
@@ -306,7 +306,7 @@ PackedByteArray
 
 |void| **bswap32**\ (\ offset\: :ref:`int<class_int>` = 0, count\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_PackedByteArray_method_bswap32>`
 
-对数组中从偏移量为 ``offset`` 处开始的 ``count`` 个 32 位段落进行字节顺序交换的操作。交换是原地进行的。如果 ``count`` 小于零，则会处理到数组结尾为止，如果处理的数据大小不是 4 的倍数，则处理的最后一个 32 位段落之后的字节不会发生修改。
+Swaps the byte order of ``count`` 32-bit segments of the array starting at ``offset``. Swap is done in-place. If ``count`` is less than zero, all segments to the end of array are processed, if processed data size is not a multiple of 4, bytes after the last processed 32-bit segment are not modified.
 
 .. rst-class:: classref-item-separator
 
@@ -318,7 +318,7 @@ PackedByteArray
 
 |void| **bswap64**\ (\ offset\: :ref:`int<class_int>` = 0, count\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_PackedByteArray_method_bswap64>`
 
-对数组中从偏移量为 ``offset`` 处开始的 ``count`` 个 64 位段落进行字节顺序交换的操作。交换是原地进行的。如果 ``count`` 小于零，则会处理到数组结尾为止，如果处理的数据大小不是 8 的倍数，则处理的最后一个 64 位段落之后的字节不会发生修改。
+Swaps the byte order of ``count`` 64-bit segments of the array starting at ``offset``. Swap is done in-place. If ``count`` is less than zero, all segments to the end of array are processed, if processed data size is not a multiple of 8, bytes after the last processed 64-bit segment are not modified.
 
 .. rst-class:: classref-item-separator
 
@@ -330,7 +330,7 @@ PackedByteArray
 
 |void| **clear**\ (\ ) :ref:`🔗<class_PackedByteArray_method_clear>`
 
-清空数组。相当于调用 :ref:`resize()<class_PackedByteArray_method_resize>` 时指定大小为 ``0``\ 。
+Clears the array. This is equivalent to using :ref:`resize()<class_PackedByteArray_method_resize>` with a size of ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -342,7 +342,7 @@ PackedByteArray
 
 :ref:`PackedByteArray<class_PackedByteArray>` **compress**\ (\ compression_mode\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PackedByteArray_method_compress>`
 
-返回新的 **PackedByteArray**\ ，其中的数据已压缩。请将压缩模式设置为 :ref:`CompressionMode<enum_FileAccess_CompressionMode>` 常量。
+Returns a new **PackedByteArray** with the data compressed. Set the compression mode using one of :ref:`CompressionMode<enum_FileAccess_CompressionMode>`'s constants.
 
 .. rst-class:: classref-item-separator
 
@@ -354,7 +354,7 @@ PackedByteArray
 
 :ref:`int<class_int>` **count**\ (\ value\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedByteArray_method_count>`
 
-返回元素在数组中出现的次数。
+Returns the number of times an element is in the array.
 
 .. rst-class:: classref-item-separator
 
@@ -366,7 +366,7 @@ PackedByteArray
 
 :ref:`float<class_float>` **decode_double**\ (\ byte_offset\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedByteArray_method_decode_double>`
 
-将字节序列解码为 64 位浮点数，起始位置字节偏移量为 ``byte_offset``\ 。字节数不足时会失败。如果无法解码有效的数字，则返回 ``0.0``\ 。
+Decodes a 64-bit floating-point number from the bytes starting at ``byte_offset``. Fails if the byte count is insufficient. Returns ``0.0`` if a valid number can't be decoded.
 
 .. rst-class:: classref-item-separator
 
@@ -378,7 +378,7 @@ PackedByteArray
 
 :ref:`float<class_float>` **decode_float**\ (\ byte_offset\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedByteArray_method_decode_float>`
 
-将字节序列解码为 32 位浮点数，起始位置字节偏移量为 ``byte_offset``\ 。字节数不足时会失败。如果无法解码有效的数字，则返回 ``0.0``\ 。
+Decodes a 32-bit floating-point number from the bytes starting at ``byte_offset``. Fails if the byte count is insufficient. Returns ``0.0`` if a valid number can't be decoded.
 
 .. rst-class:: classref-item-separator
 
@@ -390,7 +390,7 @@ PackedByteArray
 
 :ref:`float<class_float>` **decode_half**\ (\ byte_offset\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedByteArray_method_decode_half>`
 
-将字节序列解码为 16 位浮点数，起始位置字节偏移量为 ``byte_offset``\ 。字节数不足时会失败。如果无法解码有效的数字，则返回 ``0.0``\ 。
+Decodes a 16-bit floating-point number from the bytes starting at ``byte_offset``. Fails if the byte count is insufficient. Returns ``0.0`` if a valid number can't be decoded.
 
 .. rst-class:: classref-item-separator
 
@@ -402,7 +402,7 @@ PackedByteArray
 
 :ref:`int<class_int>` **decode_s8**\ (\ byte_offset\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedByteArray_method_decode_s8>`
 
-将字节序列解码为 8 位有符号整数，起始位置字节偏移量为 ``byte_offset``\ 。字节数不足时会失败。如果无法解码有效的数字，则返回 ``0.0``\ 。
+Decodes a 8-bit signed integer number from the bytes starting at ``byte_offset``. Fails if the byte count is insufficient. Returns ``0`` if a valid number can't be decoded.
 
 .. rst-class:: classref-item-separator
 
@@ -414,7 +414,7 @@ PackedByteArray
 
 :ref:`int<class_int>` **decode_s16**\ (\ byte_offset\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedByteArray_method_decode_s16>`
 
-将字节序列解码为 16 位有符号整数，起始位置字节偏移量为 ``byte_offset``\ 。字节数不足时会失败。如果无法解码有效的数字，则返回 ``0.0``\ 。
+Decodes a 16-bit signed integer number from the bytes starting at ``byte_offset``. Fails if the byte count is insufficient. Returns ``0`` if a valid number can't be decoded.
 
 .. rst-class:: classref-item-separator
 
@@ -426,7 +426,7 @@ PackedByteArray
 
 :ref:`int<class_int>` **decode_s32**\ (\ byte_offset\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedByteArray_method_decode_s32>`
 
-将字节序列解码为 32 位有符号整数，起始位置字节偏移量为 ``byte_offset``\ 。字节数不足时会失败。如果无法解码有效的数字，则返回 ``0.0``\ 。
+Decodes a 32-bit signed integer number from the bytes starting at ``byte_offset``. Fails if the byte count is insufficient. Returns ``0`` if a valid number can't be decoded.
 
 .. rst-class:: classref-item-separator
 
@@ -438,7 +438,7 @@ PackedByteArray
 
 :ref:`int<class_int>` **decode_s64**\ (\ byte_offset\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedByteArray_method_decode_s64>`
 
-将字节序列解码为 64 位有符号整数，起始位置字节偏移量为 ``byte_offset``\ 。字节数不足时会失败。如果无法解码有效的数字，则返回 ``0.0``\ 。
+Decodes a 64-bit signed integer number from the bytes starting at ``byte_offset``. Fails if the byte count is insufficient. Returns ``0`` if a valid number can't be decoded.
 
 .. rst-class:: classref-item-separator
 
@@ -450,7 +450,7 @@ PackedByteArray
 
 :ref:`int<class_int>` **decode_u8**\ (\ byte_offset\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedByteArray_method_decode_u8>`
 
-将字节序列解码为 8 位无符号整数，起始位置字节偏移量为 ``byte_offset``\ 。字节数不足时会失败。如果无法解码有效的数字，则返回 ``0.0``\ 。
+Decodes a 8-bit unsigned integer number from the bytes starting at ``byte_offset``. Fails if the byte count is insufficient. Returns ``0`` if a valid number can't be decoded.
 
 .. rst-class:: classref-item-separator
 
@@ -462,7 +462,7 @@ PackedByteArray
 
 :ref:`int<class_int>` **decode_u16**\ (\ byte_offset\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedByteArray_method_decode_u16>`
 
-将字节序列解码为 16 位无符号整数，起始位置字节偏移量为 ``byte_offset``\ 。字节数不足时会失败。如果无法解码有效的数字，则返回 ``0.0``\ 。
+Decodes a 16-bit unsigned integer number from the bytes starting at ``byte_offset``. Fails if the byte count is insufficient. Returns ``0`` if a valid number can't be decoded.
 
 .. rst-class:: classref-item-separator
 
@@ -474,7 +474,7 @@ PackedByteArray
 
 :ref:`int<class_int>` **decode_u32**\ (\ byte_offset\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedByteArray_method_decode_u32>`
 
-将字节序列解码为 32 位无符号整数，起始位置字节偏移量为 ``byte_offset``\ 。字节数不足时会失败。如果无法解码有效的数字，则返回 ``0.0``\ 。
+Decodes a 32-bit unsigned integer number from the bytes starting at ``byte_offset``. Fails if the byte count is insufficient. Returns ``0`` if a valid number can't be decoded.
 
 .. rst-class:: classref-item-separator
 
@@ -486,7 +486,7 @@ PackedByteArray
 
 :ref:`int<class_int>` **decode_u64**\ (\ byte_offset\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedByteArray_method_decode_u64>`
 
-将字节序列解码为 64 位无符号整数，起始位置字节偏移量为 ``byte_offset``\ 。字节数不足时会失败。如果无法解码有效的数字，则返回 ``0.0``\ 。
+Decodes a 64-bit unsigned integer number from the bytes starting at ``byte_offset``. Fails if the byte count is insufficient. Returns ``0`` if a valid number can't be decoded.
 
 .. rst-class:: classref-item-separator
 
@@ -498,7 +498,7 @@ PackedByteArray
 
 :ref:`Variant<class_Variant>` **decode_var**\ (\ byte_offset\: :ref:`int<class_int>`, allow_objects\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_PackedByteArray_method_decode_var>`
 
-将字节序列解码为 :ref:`Variant<class_Variant>`\ ，起始位置字节偏移量为 ``byte_offset``\ 。如果无法解码有效的变体，或者其值派生自 :ref:`Object<class_Object>` 而 ``allow_objects`` 为 ``false``\ ，则返回 ``null``\ 。
+Decodes a :ref:`Variant<class_Variant>` from the bytes starting at ``byte_offset``. Returns ``null`` if a valid variant can't be decoded or the value is :ref:`Object<class_Object>`-derived and ``allow_objects`` is ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -510,7 +510,7 @@ PackedByteArray
 
 :ref:`int<class_int>` **decode_var_size**\ (\ byte_offset\: :ref:`int<class_int>`, allow_objects\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_PackedByteArray_method_decode_var_size>`
 
-将字节序列解码为 :ref:`Variant<class_Variant>` 的大小，起始位置字节偏移量为 ``byte_offset``\ 。要求起始位置后至少有 4 个字节的数据，否则会失败。
+Decodes a size of a :ref:`Variant<class_Variant>` from the bytes starting at ``byte_offset``. Requires at least 4 bytes of data starting at the offset, otherwise fails.
 
 .. rst-class:: classref-item-separator
 
@@ -522,9 +522,9 @@ PackedByteArray
 
 :ref:`PackedByteArray<class_PackedByteArray>` **decompress**\ (\ buffer_size\: :ref:`int<class_int>`, compression_mode\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PackedByteArray_method_decompress>`
 
-返回新的 **PackedByteArray**\ ，其中的数据已解压。请将 ``buffer_size`` 设置为数据解压后的大小。请将压缩模式设置为 :ref:`CompressionMode<enum_FileAccess_CompressionMode>` 常量。
+Returns a new **PackedByteArray** with the data decompressed. Set ``buffer_size`` to the size of the uncompressed data. Set the compression mode using one of :ref:`CompressionMode<enum_FileAccess_CompressionMode>`'s constants.
 
-\ **注意：**\ 不保证解压缩可以处理未经 Godot 压缩的数据，例如，如果使用 deflate 压缩模式压缩的数据缺少校验和或标头。
+\ **Note:** Decompression is not guaranteed to work with data not compressed by Godot, for example if data compressed with the deflate compression mode lacks a checksum or header.
 
 .. rst-class:: classref-item-separator
 
@@ -536,13 +536,13 @@ PackedByteArray
 
 :ref:`PackedByteArray<class_PackedByteArray>` **decompress_dynamic**\ (\ max_output_size\: :ref:`int<class_int>`, compression_mode\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PackedByteArray_method_decompress_dynamic>`
 
-返回新的 **PackedByteArray**\ ，其中的数据已解压。请将压缩模式设置为 :ref:`CompressionMode<enum_FileAccess_CompressionMode>` 常量。\ **这个方法只接受 brotli、gzip 和 deflate 压缩模式。**\ 
+Returns a new **PackedByteArray** with the data decompressed. Set the compression mode using one of :ref:`CompressionMode<enum_FileAccess_CompressionMode>`'s constants. **This method only accepts brotli, gzip, and deflate compression modes.**\ 
 
-这个方法可能比 :ref:`decompress()<class_PackedByteArray_method_decompress>` 慢，因为在解压时可能需要多次重新分配输出缓冲区，而 :ref:`decompress()<class_PackedByteArray_method_decompress>` 则在一开始就知道输出缓冲区的大小。
+This method is potentially slower than :ref:`decompress()<class_PackedByteArray_method_decompress>`, as it may have to re-allocate its output buffer multiple times while decompressing, whereas :ref:`decompress()<class_PackedByteArray_method_decompress>` knows it's output buffer size from the beginning.
 
-GZIP 的最大压缩率为 1032:1，这意味着较小的压缩后负载很有可能解压出非常巨大的输出。为了防止这种情况，你可以通过 ``max_output_size`` 提供允许这个函数分配的最大字节数。传入 -1 则不限制输出。传入正数且解压超过该字节数时，会返回错误。
+GZIP has a maximal compression ratio of 1032:1, meaning it's very possible for a small compressed payload to decompress to a potentially very large output. To guard against this, you may provide a maximum size this function is allowed to allocate in bytes via ``max_output_size``. Passing -1 will allow for unbounded output. If any positive value is passed, and the decompression exceeds that amount in bytes, then an error will be returned.
 
-\ **注意：**\ 不保证解压缩可以处理未经 Godot 压缩的数据，例如，如果使用 deflate 压缩模式压缩的数据缺少校验和或标头。
+\ **Note:** Decompression is not guaranteed to work with data not compressed by Godot, for example if data compressed with the deflate compression mode lacks a checksum or header.
 
 .. rst-class:: classref-item-separator
 
@@ -554,7 +554,7 @@ GZIP 的最大压缩率为 1032:1，这意味着较小的压缩后负载很有�
 
 :ref:`PackedByteArray<class_PackedByteArray>` **duplicate**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_duplicate>`
 
-创建该数组的副本，并将该副本返回。
+Creates a copy of the array, and returns it.
 
 .. rst-class:: classref-item-separator
 
@@ -566,7 +566,7 @@ GZIP 的最大压缩率为 1032:1，这意味着较小的压缩后负载很有�
 
 |void| **encode_double**\ (\ byte_offset\: :ref:`int<class_int>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PackedByteArray_method_encode_double>`
 
-将 64 位浮点数编码为字节序列，起始位置字节偏移量为 ``byte_offset``\ 。从偏移量位置开始，该数组必须还分配有至少 8 个字节的空间。
+Encodes a 64-bit floating-point number as bytes at the index of ``byte_offset`` bytes. The array must have at least 8 bytes of allocated space, starting at the offset.
 
 .. rst-class:: classref-item-separator
 
@@ -578,7 +578,7 @@ GZIP 的最大压缩率为 1032:1，这意味着较小的压缩后负载很有�
 
 |void| **encode_float**\ (\ byte_offset\: :ref:`int<class_int>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PackedByteArray_method_encode_float>`
 
-将 32 位浮点数编码为字节序列，起始位置字节偏移量为 ``byte_offset``\ 。从偏移量位置开始，该数组必须还分配有至少 4 个字节的空间。
+Encodes a 32-bit floating-point number as bytes at the index of ``byte_offset`` bytes. The array must have at least 4 bytes of space, starting at the offset.
 
 .. rst-class:: classref-item-separator
 
@@ -590,7 +590,7 @@ GZIP 的最大压缩率为 1032:1，这意味着较小的压缩后负载很有�
 
 |void| **encode_half**\ (\ byte_offset\: :ref:`int<class_int>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PackedByteArray_method_encode_half>`
 
-将 16 位浮点数编码为字节序列，起始位置字节偏移量为 ``byte_offset``\ 。从偏移量位置开始，该数组必须还分配有至少 2 个字节的空间。
+Encodes a 16-bit floating-point number as bytes at the index of ``byte_offset`` bytes. The array must have at least 2 bytes of space, starting at the offset.
 
 .. rst-class:: classref-item-separator
 
@@ -602,7 +602,7 @@ GZIP 的最大压缩率为 1032:1，这意味着较小的压缩后负载很有�
 
 |void| **encode_s8**\ (\ byte_offset\: :ref:`int<class_int>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_encode_s8>`
 
-将 8 位有符号整数编码为字节序列，起始位置字节偏移量为 ``byte_offset``\ 。从偏移量位置开始，该数组必须还分配有至少 1 个字节的空间。
+Encodes a 8-bit signed integer number (signed byte) at the index of ``byte_offset`` bytes. The array must have at least 1 byte of space, starting at the offset.
 
 .. rst-class:: classref-item-separator
 
@@ -614,7 +614,7 @@ GZIP 的最大压缩率为 1032:1，这意味着较小的压缩后负载很有�
 
 |void| **encode_s16**\ (\ byte_offset\: :ref:`int<class_int>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_encode_s16>`
 
-将 16 位有符号整数编码为字节序列，起始位置字节偏移量为 ``byte_offset``\ 。从偏移量位置开始，该数组必须还分配有至少 2 个字节的空间。
+Encodes a 16-bit signed integer number as bytes at the index of ``byte_offset`` bytes. The array must have at least 2 bytes of space, starting at the offset.
 
 .. rst-class:: classref-item-separator
 
@@ -626,7 +626,7 @@ GZIP 的最大压缩率为 1032:1，这意味着较小的压缩后负载很有�
 
 |void| **encode_s32**\ (\ byte_offset\: :ref:`int<class_int>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_encode_s32>`
 
-将 32 位无符号整数编码为字节序列，起始位置字节偏移量为 ``byte_offset``\ 。从偏移量位置开始，该数组必须还分配有至少 4 个字节的空间。
+Encodes a 32-bit signed integer number as bytes at the index of ``byte_offset`` bytes. The array must have at least 4 bytes of space, starting at the offset.
 
 .. rst-class:: classref-item-separator
 
@@ -638,7 +638,7 @@ GZIP 的最大压缩率为 1032:1，这意味着较小的压缩后负载很有�
 
 |void| **encode_s64**\ (\ byte_offset\: :ref:`int<class_int>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_encode_s64>`
 
-将 64 位有符号整数编码为字节序列，起始位置字节偏移量为 ``byte_offset``\ 。从偏移量位置开始，该数组必须还分配有至少 8 个字节的空间。
+Encodes a 64-bit signed integer number as bytes at the index of ``byte_offset`` bytes. The array must have at least 8 bytes of space, starting at the offset.
 
 .. rst-class:: classref-item-separator
 
@@ -650,7 +650,7 @@ GZIP 的最大压缩率为 1032:1，这意味着较小的压缩后负载很有�
 
 |void| **encode_u8**\ (\ byte_offset\: :ref:`int<class_int>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_encode_u8>`
 
-将 8 位无符号整数编码为字节序列，起始位置字节偏移量为 ``byte_offset``\ 。从偏移量位置开始，该数组必须还分配有至少 1 个字节的空间。
+Encodes a 8-bit unsigned integer number (byte) at the index of ``byte_offset`` bytes. The array must have at least 1 byte of space, starting at the offset.
 
 .. rst-class:: classref-item-separator
 
@@ -662,7 +662,7 @@ GZIP 的最大压缩率为 1032:1，这意味着较小的压缩后负载很有�
 
 |void| **encode_u16**\ (\ byte_offset\: :ref:`int<class_int>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_encode_u16>`
 
-将 16 位无符号整数编码为字节序列，起始位置字节偏移量为 ``byte_offset``\ 。从偏移量位置开始，该数组必须还分配有至少 2 个字节的空间。
+Encodes a 16-bit unsigned integer number as bytes at the index of ``byte_offset`` bytes. The array must have at least 2 bytes of space, starting at the offset.
 
 .. rst-class:: classref-item-separator
 
@@ -674,7 +674,7 @@ GZIP 的最大压缩率为 1032:1，这意味着较小的压缩后负载很有�
 
 |void| **encode_u32**\ (\ byte_offset\: :ref:`int<class_int>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_encode_u32>`
 
-将 32 位无符号整数编码为字节序列，起始位置字节偏移量为 ``byte_offset``\ 。从偏移量位置开始，该数组必须还分配有至少 4 个字节的空间。
+Encodes a 32-bit unsigned integer number as bytes at the index of ``byte_offset`` bytes. The array must have at least 4 bytes of space, starting at the offset.
 
 .. rst-class:: classref-item-separator
 
@@ -686,7 +686,7 @@ GZIP 的最大压缩率为 1032:1，这意味着较小的压缩后负载很有�
 
 |void| **encode_u64**\ (\ byte_offset\: :ref:`int<class_int>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_encode_u64>`
 
-将 64 位无符号整数编码为字节序列，起始位置字节偏移量为 ``byte_offset``\ 。从偏移量位置开始，该数组必须还分配有至少 8 个字节的空间。
+Encodes a 64-bit unsigned integer number as bytes at the index of ``byte_offset`` bytes. The array must have at least 8 bytes of space, starting at the offset.
 
 .. rst-class:: classref-item-separator
 
@@ -698,7 +698,7 @@ GZIP 的最大压缩率为 1032:1，这意味着较小的压缩后负载很有�
 
 :ref:`int<class_int>` **encode_var**\ (\ byte_offset\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`, allow_objects\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PackedByteArray_method_encode_var>`
 
-将 :ref:`Variant<class_Variant>` 编码为字节序列，起始位置字节偏移量为 ``byte_offset``\ 。必须分配有足够的空间，空间大小取决于编码后变体的大小。如果 ``allow_objects`` 为 ``false``\ ，则不允许派生自 :ref:`Object<class_Object>` 的值，只会将其 ID 进行序列化。
+Encodes a :ref:`Variant<class_Variant>` at the index of ``byte_offset`` bytes. A sufficient space must be allocated, depending on the encoded variant's size. If ``allow_objects`` is ``false``, :ref:`Object<class_Object>`-derived values are not permitted and will instead be serialized as ID-only.
 
 .. rst-class:: classref-item-separator
 
@@ -710,7 +710,7 @@ GZIP 的最大压缩率为 1032:1，这意味着较小的压缩后负载很有�
 
 :ref:`bool<class_bool>` **erase**\ (\ value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_erase>`
 
-在数组中移除首次出现的某个值并返回 ``true``\ 。如果数组中不存在该值，则不会发生任何事情，返回 ``false``\ 。要按照索引移除元素，请改用 :ref:`remove_at()<class_PackedByteArray_method_remove_at>`\ 。
+Removes the first occurrence of a value from the array and returns ``true``. If the value does not exist in the array, nothing happens and ``false`` is returned. To remove an element by index, use :ref:`remove_at()<class_PackedByteArray_method_remove_at>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -722,7 +722,7 @@ GZIP 的最大压缩率为 1032:1，这意味着较小的压缩后负载很有�
 
 |void| **fill**\ (\ value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_fill>`
 
-将数组中的所有元素都设为给定的值。通常与 :ref:`resize()<class_PackedByteArray_method_resize>` 一起使用，创建给定大小的数组并初始化元素。
+Assigns the given value to all elements in the array. This can typically be used together with :ref:`resize()<class_PackedByteArray_method_resize>` to create an array with a given size and initialized elements.
 
 .. rst-class:: classref-item-separator
 
@@ -734,7 +734,7 @@ GZIP 的最大压缩率为 1032:1，这意味着较小的压缩后负载很有�
 
 :ref:`int<class_int>` **find**\ (\ value\: :ref:`int<class_int>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PackedByteArray_method_find>`
 
-在数组中搜索值并返回其索引，如果未找到则返回 ``-1`` 。可选地，可以传递起始搜索索引。
+Searches the array for a value and returns its index or ``-1`` if not found. Optionally, the initial search index can be passed.
 
 .. rst-class:: classref-item-separator
 
@@ -760,7 +760,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`String<class_String>` **get_string_from_ascii**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_get_string_from_ascii>`
 
-将 ASCII/Latin-1 编码的数组转换为 :ref:`String<class_String>`\ 。如果内容仅为 ASCII/Latin-1，则是比 :ref:`get_string_from_utf8()<class_PackedByteArray_method_get_string_from_utf8>` 更快的选择。与 UTF-8 函数不同，这个函数会将数组中的每个字节都映射到一个字符。多字节序列无法正确解析。要解析用户的输入内容，请始终使用 :ref:`get_string_from_utf8()<class_PackedByteArray_method_get_string_from_utf8>`\ 。这是 :ref:`String.to_ascii_buffer()<class_String_method_to_ascii_buffer>` 的逆运算。
+Converts ASCII/Latin-1 encoded array to :ref:`String<class_String>`. Fast alternative to :ref:`get_string_from_utf8()<class_PackedByteArray_method_get_string_from_utf8>` if the content is ASCII/Latin-1 only. Unlike the UTF-8 function this function maps every byte to a character in the array. Multibyte sequences will not be interpreted correctly. For parsing user input always use :ref:`get_string_from_utf8()<class_PackedByteArray_method_get_string_from_utf8>`. This is the inverse of :ref:`String.to_ascii_buffer()<class_String_method_to_ascii_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -772,13 +772,13 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`String<class_String>` **get_string_from_multibyte_char**\ (\ encoding\: :ref:`String<class_String>` = ""\ ) |const| :ref:`🔗<class_PackedByteArray_method_get_string_from_multibyte_char>`
 
-将使用系统多字节代码页编码的数组转换为 :ref:`String<class_String>`\ 。如果转换失败，则会返回空字符串。这是 :ref:`String.to_multibyte_char_buffer()<class_String_method_to_multibyte_char_buffer>` 的逆运算。
+Converts system multibyte code page encoded array to :ref:`String<class_String>`. If conversion fails, empty string is returned. This is the inverse of :ref:`String.to_multibyte_char_buffer()<class_String_method_to_multibyte_char_buffer>`.
 
-\ ``encoding`` 的有效值由系统决定。如果 ``encoding`` 为空字符串，则会使用系统默认的编码。
+The values permitted for ``encoding`` are system dependent. If ``encoding`` is empty string, system default encoding is used.
 
-- 对于 Windows，见\ `代码页标识符 <https://learn.microsoft.com/en-us/windows/win32/Intl/code-page-identifiers>`__ .NET 名称。
+- For Windows, see `Code Page Identifiers <https://learn.microsoft.com/en-us/windows/win32/Intl/code-page-identifiers>`__ .NET names.
 
-- 对于 macOS 和 Linux/BSD，支持的编码列表见 ``libiconv`` 库文档及 ``iconv --list``\ 。
+- For macOS and Linux/BSD, see ``libiconv`` library documentation and ``iconv --list`` for a list of supported encodings.
 
 .. rst-class:: classref-item-separator
 
@@ -790,7 +790,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`String<class_String>` **get_string_from_utf8**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_get_string_from_utf8>`
 
-将 UTF-8 编码的数组转换为 :ref:`String<class_String>`\ 。比 :ref:`get_string_from_ascii()<class_PackedByteArray_method_get_string_from_ascii>` 慢，但支持 UTF-8 编码的数据。不确定数据来源时请使用此函数。对于用户的输入内容，应始终首选此函数。如果源数组不是有效的 UTF-8 字符串，则返回空字符串。这是 :ref:`String.to_utf8_buffer()<class_String_method_to_utf8_buffer>` 的逆运算。
+Converts UTF-8 encoded array to :ref:`String<class_String>`. Slower than :ref:`get_string_from_ascii()<class_PackedByteArray_method_get_string_from_ascii>` but supports UTF-8 encoded data. Use this function if you are unsure about the source of the data. For user input this function should always be preferred. Returns empty string if source array is not valid UTF-8 string. This is the inverse of :ref:`String.to_utf8_buffer()<class_String_method_to_utf8_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -802,7 +802,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`String<class_String>` **get_string_from_utf16**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_get_string_from_utf16>`
 
-将 UTF-16 编码的数组转换为 :ref:`String<class_String>`\ 。如果缺少 BOM，则假定为小端字节序。如果源数组不是有效的 UTF-16 字符串，则返回空字符串。这是 :ref:`String.to_utf16_buffer()<class_String_method_to_utf16_buffer>` 的逆运算。
+Converts UTF-16 encoded array to :ref:`String<class_String>`. If the BOM is missing, little-endianness is assumed. Returns empty string if source array is not valid UTF-16 string. This is the inverse of :ref:`String.to_utf16_buffer()<class_String_method_to_utf16_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -814,7 +814,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`String<class_String>` **get_string_from_utf32**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_get_string_from_utf32>`
 
-将 UTF-32 编码的数组转换为 :ref:`String<class_String>`\ 。如果源数组不是有效的 UTF-32 字符串则返回空字符串。这是 :ref:`String.to_utf32_buffer()<class_String_method_to_utf32_buffer>` 的逆运算。
+Converts UTF-32 encoded array to :ref:`String<class_String>`. Returns empty string if source array is not valid UTF-32 string. This is the inverse of :ref:`String.to_utf32_buffer()<class_String_method_to_utf32_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -826,7 +826,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`String<class_String>` **get_string_from_wchar**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_get_string_from_wchar>`
 
-将宽字符（\ ``wchar_t``\ ，在 Windows 上为 UTF-16，在其他平台上为 UTF-32）编码的数组转换为 :ref:`String<class_String>`\ 。如果源数组不是有效的宽字符串，则返回空字符串。这是 :ref:`String.to_wchar_buffer()<class_String_method_to_wchar_buffer>` 的逆运算。
+Converts wide character (``wchar_t``, UTF-16 on Windows, UTF-32 on other platforms) encoded array to :ref:`String<class_String>`. Returns empty string if source array is not valid wide string. This is the inverse of :ref:`String.to_wchar_buffer()<class_String_method_to_wchar_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -838,7 +838,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`bool<class_bool>` **has**\ (\ value\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedByteArray_method_has>`
 
-如果该数组包含 ``value``\ ，则返回 ``true``\ 。
+Returns ``true`` if the array contains ``value``.
 
 .. rst-class:: classref-item-separator
 
@@ -850,7 +850,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`bool<class_bool>` **has_encoded_var**\ (\ byte_offset\: :ref:`int<class_int>`, allow_objects\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_PackedByteArray_method_has_encoded_var>`
 
-如果可以从字节偏移量 ``byte_offset`` 处解码出有效的 :ref:`Variant<class_Variant>`\ ，则返回 ``true``\ 。其他情况，或者当该值派生自 :ref:`Object<class_Object>` 而 ``allow_objects`` 为 ``false`` 时，则返回 ``false``\ 。
+Returns ``true`` if a valid :ref:`Variant<class_Variant>` value can be decoded at the ``byte_offset``. Returns ``false`` otherwise or when the value is :ref:`Object<class_Object>`-derived and ``allow_objects`` is ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -862,7 +862,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`String<class_String>` **hex_encode**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_hex_encode>`
 
-返回该数组的十六进制表示，类型为 :ref:`String<class_String>`\ 。
+Returns a hexadecimal representation of this array as a :ref:`String<class_String>`.
 
 
 .. tabs::
@@ -870,12 +870,12 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
  .. code-tab:: gdscript
 
     var array = PackedByteArray([11, 46, 255])
-    print(array.hex_encode()) # 输出“0b2eff”
+    print(array.hex_encode()) # Prints "0b2eff"
 
  .. code-tab:: csharp
 
     byte[] array = [11, 46, 255];
-    GD.Print(array.HexEncode()); // 输出“0b2eff”
+    GD.Print(array.HexEncode()); // Prints "0b2eff"
 
 
 
@@ -889,7 +889,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`int<class_int>` **insert**\ (\ at_index\: :ref:`int<class_int>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_insert>`
 
-在数组中给定的位置插入一个新元素。这个位置必须是有效的，或者是在数组的末端（\ ``idx == size()``\ ）。
+Inserts a new element at a given position in the array. The position must be valid, or at the end of the array (``idx == size()``).
 
 .. rst-class:: classref-item-separator
 
@@ -901,7 +901,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`bool<class_bool>` **is_empty**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_is_empty>`
 
-该数组为空时，返回 ``true``\ 。
+Returns ``true`` if the array is empty.
 
 .. rst-class:: classref-item-separator
 
@@ -913,7 +913,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`bool<class_bool>` **push_back**\ (\ value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_push_back>`
 
-在数组的末尾追加一个元素。
+Appends an element at the end of the array.
 
 .. rst-class:: classref-item-separator
 
@@ -925,7 +925,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 |void| **remove_at**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_remove_at>`
 
-从数组中删除位于索引的元素。
+Removes an element from the array by index.
 
 .. rst-class:: classref-item-separator
 
@@ -937,9 +937,9 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`int<class_int>` **resize**\ (\ new_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_resize>`
 
-设置数组的大小。如果数组增大，则预留数组末端的元素。如果数组缩小，则将数组截断到新的大小。调用一次 :ref:`resize()<class_PackedByteArray_method_resize>` 然后赋值比逐个添加新元素要快。
+Sets the size of the array. If the array is grown, reserves elements at the end of the array. If the array is shrunk, truncates the array to the new size. Calling :ref:`resize()<class_PackedByteArray_method_resize>` once and assigning the new values is faster than adding new elements one by one.
 
-成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，失败时返回下列 :ref:`Error<enum_@GlobalScope_Error>` 常量：大小为负数则返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ ，分配失败则返回 :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>`\ 。请使用 :ref:`size()<class_PackedByteArray_method_size>` 获取调整后的实际大小。
+Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the following :ref:`Error<enum_@GlobalScope_Error>` constants if this method fails: :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the size is negative, or :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>` if allocations fail. Use :ref:`size()<class_PackedByteArray_method_size>` to find the actual size of the array after resize.
 
 .. rst-class:: classref-item-separator
 
@@ -951,7 +951,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 |void| **reverse**\ (\ ) :ref:`🔗<class_PackedByteArray_method_reverse>`
 
-将数组中的元素逆序排列。
+Reverses the order of the elements in the array.
 
 .. rst-class:: classref-item-separator
 
@@ -963,7 +963,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`int<class_int>` **rfind**\ (\ value\: :ref:`int<class_int>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_PackedByteArray_method_rfind>`
 
-逆序搜索数组。还可以传递起始搜索位置索引。如果为负，则起始索引被视为相对于数组的结尾。
+Searches the array in reverse order. Optionally, a start search index can be passed. If negative, the start index is considered relative to the end of the array.
 
 .. rst-class:: classref-item-separator
 
@@ -975,7 +975,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 |void| **set**\ (\ index\: :ref:`int<class_int>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_method_set>`
 
-改变给定索引处的字节。
+Changes the byte at the given index.
 
 .. rst-class:: classref-item-separator
 
@@ -987,7 +987,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`int<class_int>` **size**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_size>`
 
-返回数组中元素的个数。
+Returns the number of elements in the array.
 
 .. rst-class:: classref-item-separator
 
@@ -999,11 +999,11 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`PackedByteArray<class_PackedByteArray>` **slice**\ (\ begin\: :ref:`int<class_int>`, end\: :ref:`int<class_int>` = 2147483647\ ) |const| :ref:`🔗<class_PackedByteArray_method_slice>`
 
-返回该 **PackedByteArray** 的切片，是从 ``begin``\ （含）到 ``end``\ （不含）的全新 **PackedByteArray**\ 。
+Returns the slice of the **PackedByteArray**, from ``begin`` (inclusive) to ``end`` (exclusive), as a new **PackedByteArray**.
 
-\ ``begin`` 和 ``end`` 的绝对值会按数组大小进行限制，所以 ``end`` 的默认值会切到数组大小为止（即 ``arr.slice(1)`` 是 ``arr.slice(1, arr.size())`` 的简写）。
+The absolute value of ``begin`` and ``end`` will be clamped to the array size, so the default value for ``end`` makes it slice to the size of the array by default (i.e. ``arr.slice(1)`` is a shorthand for ``arr.slice(1, arr.size())``).
 
-如果 ``begin`` 或 ``end`` 为负，则表示相对于数组的末尾（即 ``arr.slice(0, -2)`` 是 ``arr.slice(0, arr.size() - 2)`` 的简写）。
+If either ``begin`` or ``end`` are negative, they will be relative to the end of the array (i.e. ``arr.slice(0, -2)`` is a shorthand for ``arr.slice(0, arr.size() - 2)``).
 
 .. rst-class:: classref-item-separator
 
@@ -1015,7 +1015,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 |void| **sort**\ (\ ) :ref:`🔗<class_PackedByteArray_method_sort>`
 
-将该数组中的元素按升序排列。
+Sorts the elements of the array in ascending order.
 
 .. rst-class:: classref-item-separator
 
@@ -1027,9 +1027,9 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`PackedColorArray<class_PackedColorArray>` **to_color_array**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_to_color_array>`
 
-返回数据副本转换得到的 :ref:`PackedColorArray<class_PackedColorArray>`\ ，会将每 16 个字节的数据块会转换为一个 :ref:`Color<class_Color>` 变体。
+Returns a copy of the data converted to a :ref:`PackedColorArray<class_PackedColorArray>`, where each block of 16 bytes has been converted to a :ref:`Color<class_Color>` variant.
 
-\ **注意：**\ 输入数组的大小必须为 16（四个 32 位 float 变量的大小）的倍数。新数组的大小是 ``byte_array.size() / 16``\ 。如果原数据无法转换为 :ref:`Color<class_Color>` 变体，则最终的数据未定义。
+\ **Note:** The size of the input array must be a multiple of 16 (size of four 32-bit float variables). The size of the new array will be ``byte_array.size() / 16``. If the original data can't be converted to :ref:`Color<class_Color>` variants, the resulting data is undefined.
 
 .. rst-class:: classref-item-separator
 
@@ -1041,11 +1041,11 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`PackedFloat32Array<class_PackedFloat32Array>` **to_float32_array**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_to_float32_array>`
 
-返回将数据转换为 :ref:`PackedFloat32Array<class_PackedFloat32Array>` 的副本，每 4 个字节块转换为一个 32 位浮点数（C++ 的 ``float``\ ）。
+Returns a copy of the data converted to a :ref:`PackedFloat32Array<class_PackedFloat32Array>`, where each block of 4 bytes has been converted to a 32-bit float (C++ ``float``).
 
-输入数组的大小必须为 4 的倍数（32 位浮点数的大小）。新数组的大小为 ``byte_array.size() / 4``\ 。
+The size of the input array must be a multiple of 4 (size of 32-bit float). The size of the new array will be ``byte_array.size() / 4``.
 
-如果原始数据无法转换为 32 位浮点数，则最终的数据未定义。
+If the original data can't be converted to 32-bit floats, the resulting data is undefined.
 
 .. rst-class:: classref-item-separator
 
@@ -1057,11 +1057,11 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`PackedFloat64Array<class_PackedFloat64Array>` **to_float64_array**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_to_float64_array>`
 
-返回将数据转换为 :ref:`PackedFloat64Array<class_PackedFloat64Array>` 的副本，每 8 个字节块转换为一个 64 位浮点数（C++ 的 ``double``\ ）。
+Returns a copy of the data converted to a :ref:`PackedFloat64Array<class_PackedFloat64Array>`, where each block of 8 bytes has been converted to a 64-bit float (C++ ``double``, Godot :ref:`float<class_float>`).
 
-输入数组的大小必须为 8 的倍数（64 位浮点数的大小）。新数组的大小为 ``byte_array.size() / 8``\ 。
+The size of the input array must be a multiple of 8 (size of 64-bit double). The size of the new array will be ``byte_array.size() / 8``.
 
-如果原始数据无法转换为 64 位浮点数，则最终的数据未定义。
+If the original data can't be converted to 64-bit floats, the resulting data is undefined.
 
 .. rst-class:: classref-item-separator
 
@@ -1073,11 +1073,11 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **to_int32_array**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_to_int32_array>`
 
-返回将数据转换为 :ref:`PackedInt32Array<class_PackedInt32Array>` 的副本，每 4 个字节块转换为一个 32 位有符号整数（C++ 的 ``int32_t``\ ）。
+Returns a copy of the data converted to a :ref:`PackedInt32Array<class_PackedInt32Array>`, where each block of 4 bytes has been converted to a signed 32-bit integer (C++ ``int32_t``).
 
-输入数组的大小必须为 4 的倍数（32 位整数的大小）。新数组的大小为 ``byte_array.size() / 4``\ 。
+The size of the input array must be a multiple of 4 (size of 32-bit integer). The size of the new array will be ``byte_array.size() / 4``.
 
-如果原始数据无法转换为 32 位有符号整数，则最终的数据未定义。
+If the original data can't be converted to signed 32-bit integers, the resulting data is undefined.
 
 .. rst-class:: classref-item-separator
 
@@ -1089,11 +1089,11 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **to_int64_array**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_to_int64_array>`
 
-返回将数据转换为 :ref:`PackedInt64Array<class_PackedInt64Array>` 的副本，每 8 个字节块转换为一个 64 位有符号整数（C++ 的 ``int64_t``\ ）。
+Returns a copy of the data converted to a :ref:`PackedInt64Array<class_PackedInt64Array>`, where each block of 8 bytes has been converted to a signed 64-bit integer (C++ ``int64_t``, Godot :ref:`int<class_int>`).
 
-输入数组的大小必须为 8 的倍数（64 位整数的大小）。新数组的大小为 ``byte_array.size() / 8``\ 。
+The size of the input array must be a multiple of 8 (size of 64-bit integer). The size of the new array will be ``byte_array.size() / 8``.
 
-如果原始数据无法转换为 64 位有符号整数，则最终的数据未定义。
+If the original data can't be converted to signed 64-bit integers, the resulting data is undefined.
 
 .. rst-class:: classref-item-separator
 
@@ -1105,9 +1105,9 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **to_vector2_array**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_to_vector2_array>`
 
-返回数据副本转换得到的 :ref:`PackedVector2Array<class_PackedVector2Array>`\ ，会将每 8 个字节（32 位）或每 16 个字节（64 位）的数据块会转换为一个 :ref:`Vector2<class_Vector2>` 变体。
+Returns a copy of the data converted to a :ref:`PackedVector2Array<class_PackedVector2Array>`, where each block of 8 bytes or 16 bytes (32-bit or 64-bit) has been converted to a :ref:`Vector2<class_Vector2>` variant.
 
-\ **注意：**\ 输入数组的大小必须为 8 或 16（取决于构建设置，详见 :ref:`Vector2<class_Vector2>`\ ）的倍数。新数组的大小是 ``byte_array.size() / (8 或 16)``\ 。如果原数据无法转换为 :ref:`Vector2<class_Vector2>` 变体，则最终的数据未定义。
+\ **Note:** The size of the input array must be a multiple of 8 or 16 (depending on the build settings, see :ref:`Vector2<class_Vector2>` for more details). The size of the new array will be ``byte_array.size() / (8 or 16)``. If the original data can't be converted to :ref:`Vector2<class_Vector2>` variants, the resulting data is undefined.
 
 .. rst-class:: classref-item-separator
 
@@ -1119,9 +1119,9 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **to_vector3_array**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_to_vector3_array>`
 
-返回数据副本转换得到的 :ref:`PackedVector3Array<class_PackedVector3Array>`\ ，会将每 12 个字节（32 位）或每 24 个字节（64 位）的数据块会转换为一个 :ref:`Vector3<class_Vector3>` 变体。
+Returns a copy of the data converted to a :ref:`PackedVector3Array<class_PackedVector3Array>`, where each block of 12 or 24 bytes (32-bit or 64-bit) has been converted to a :ref:`Vector3<class_Vector3>` variant.
 
-\ **注意：**\ 输入数组的大小必须为 12 或 24（取决于构建设置，详见 :ref:`Vector3<class_Vector3>`\ ）的倍数。新数组的大小是 ``byte_array.size() / (12 或 24)``\ 。如果原数据无法转换为 :ref:`Vector3<class_Vector3>` 变体，则最终的数据未定义。
+\ **Note:** The size of the input array must be a multiple of 12 or 24 (depending on the build settings, see :ref:`Vector3<class_Vector3>` for more details). The size of the new array will be ``byte_array.size() / (12 or 24)``. If the original data can't be converted to :ref:`Vector3<class_Vector3>` variants, the resulting data is undefined.
 
 .. rst-class:: classref-item-separator
 
@@ -1133,9 +1133,9 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`PackedVector4Array<class_PackedVector4Array>` **to_vector4_array**\ (\ ) |const| :ref:`🔗<class_PackedByteArray_method_to_vector4_array>`
 
-返回数据副本转换得到的 :ref:`PackedVector4Array<class_PackedVector4Array>`\ ，会将每 16 个字节（32 位）或每 32 个字节（64 位）的数据块会转换为一个 :ref:`Vector4<class_Vector4>` 变体。
+Returns a copy of the data converted to a :ref:`PackedVector4Array<class_PackedVector4Array>`, where each block of 16 or 32 bytes (32-bit or 64-bit) has been converted to a :ref:`Vector4<class_Vector4>` variant.
 
-\ **注意：**\ 输入数组的大小必须为 16 或 32（取决于构建设置，详见 :ref:`Vector4<class_Vector4>`\ ）的倍数。新数组的大小是 ``byte_array.size() / (16 或 32)``\ 。如果原数据无法转换为 :ref:`Vector4<class_Vector4>` 变体，则最终的数据未定义。
+\ **Note:** The size of the input array must be a multiple of 16 or 32 (depending on the build settings, see :ref:`Vector4<class_Vector4>` for more details). The size of the new array will be ``byte_array.size() / (16 or 32)``. If the original data can't be converted to :ref:`Vector4<class_Vector4>` variants, the resulting data is undefined.
 
 .. rst-class:: classref-section-separator
 
@@ -1143,8 +1143,8 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 .. rst-class:: classref-descriptions-group
 
-运算符说明
-----------
+Operator Descriptions
+---------------------
 
 .. _class_PackedByteArray_operator_neq_PackedByteArray:
 
@@ -1152,7 +1152,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_PackedByteArray_operator_neq_PackedByteArray>`
 
-如果数组内容不同，则返回 ``true``\ 。
+Returns ``true`` if contents of the arrays differ.
 
 .. rst-class:: classref-item-separator
 
@@ -1164,7 +1164,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`PackedByteArray<class_PackedByteArray>` **operator +**\ (\ right\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_PackedByteArray_operator_sum_PackedByteArray>`
 
-返回新的 **PackedByteArray**\ ，新数组的内容为此数组在末尾加上 ``right``\ 。为了提高性能，请考虑改用 :ref:`append_array()<class_PackedByteArray_method_append_array>`\ 。
+Returns a new **PackedByteArray** with contents of ``right`` added at the end of this array. For better performance, consider using :ref:`append_array()<class_PackedByteArray_method_append_array>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -1176,7 +1176,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_PackedByteArray_operator_eq_PackedByteArray>`
 
-如果两个数组的内容相同，即对应索引号的字节相等，则返回 ``true``\ 。
+Returns ``true`` if contents of both arrays are the same, i.e. they have all equal bytes at the corresponding indices.
 
 .. rst-class:: classref-item-separator
 
@@ -1188,16 +1188,16 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`int<class_int>` **operator []**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedByteArray_operator_idx_int>`
 
-返回索引 ``index`` 处的字节。负数索引可以从末尾开始访问元素。使用越界的索引会报错。
+Returns the byte at index ``index``. Negative indices can be used to access the elements starting from the end. Using index out of array's bounds will result in an error.
 
-请注意，返回的字节是 64 位 :ref:`int<class_int>`\ 。
+Note that the byte is returned as a 64-bit :ref:`int<class_int>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

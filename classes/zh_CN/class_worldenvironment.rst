@@ -8,36 +8,36 @@
 WorldEnvironment
 ================
 
-**继承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-整个场景的默认环境属性，后期处理效果、照明和背景设置。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-**WorldEnvironment** 节点用于为场景配置默认的 :ref:`Environment<class_Environment>`\ 。
-
-\ **WorldEnvironment** 中定义的参数可以被设置为当前的 :ref:`Camera3D<class_Camera3D>` 上所设置的 :ref:`Environment<class_Environment>` 资源覆盖。此外，在一个给定场景中，同一时间只能实例化一个 **WorldEnvironment**\ 。
-
-\ **WorldEnvironment** 允许用户指定默认的照明参数（例如环境照明）、各种后处理效果（例如 SSAO、DOF、色调映射）、以及如何绘制背景（例如纯色、天空盒）。通常，添加这些是为了提高场景的真实感/色彩平衡。
+Default environment properties for the entire scene (post-processing effects, lighting and background settings).
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`环境和后期处理 <../tutorials/3d/environment_and_post_processing>`
+The **WorldEnvironment** node is used to configure the default :ref:`Environment<class_Environment>` for the scene.
 
-- `3D 材质测试演示 <https://godotengine.org/asset-library/asset/2742>`__
+The parameters defined in the **WorldEnvironment** can be overridden by an :ref:`Environment<class_Environment>` node set on the current :ref:`Camera3D<class_Camera3D>`. Additionally, only one **WorldEnvironment** may be instantiated in a given scene at a time.
 
-- `第三人称射击（TPS）演示 <https://godotengine.org/asset-library/asset/2710>`__
+The **WorldEnvironment** allows the user to specify default lighting parameters (e.g. ambient lighting), various post-processing effects (e.g. SSAO, DOF, Tonemapping), and how to draw the background (e.g. solid color, skybox). Usually, these are added in order to improve the realism/color balance of the scene.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Environment and post-processing <../tutorials/3d/environment_and_post_processing>`
+
+- `3D Material Testers Demo <https://godotengine.org/asset-library/asset/2742>`__
+
+- `Third Person Shooter (TPS) Demo <https://godotengine.org/asset-library/asset/2710>`__
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ WorldEnvironment
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_WorldEnvironment_property_camera_attributes:
 
@@ -70,7 +70,7 @@ WorldEnvironment
 - |void| **set_camera_attributes**\ (\ value\: :ref:`CameraAttributes<class_CameraAttributes>`\ )
 - :ref:`CameraAttributes<class_CameraAttributes>` **get_camera_attributes**\ (\ )
 
-:ref:`Camera3D<class_Camera3D>` 上未设置时 :ref:`CameraAttributes<class_CameraAttributes>` 时默认使用的资源。
+The default :ref:`CameraAttributes<class_CameraAttributes>` resource to use if none set on the :ref:`Camera3D<class_Camera3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -87,7 +87,7 @@ WorldEnvironment
 - |void| **set_compositor**\ (\ value\: :ref:`Compositor<class_Compositor>`\ )
 - :ref:`Compositor<class_Compositor>` **get_compositor**\ (\ )
 
-:ref:`Camera3D<class_Camera3D>` 上未设置时要使用的默认 :ref:`Compositor<class_Compositor>` 资源。
+The default :ref:`Compositor<class_Compositor>` resource to use if none set on the :ref:`Camera3D<class_Camera3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -104,14 +104,14 @@ WorldEnvironment
 - |void| **set_environment**\ (\ value\: :ref:`Environment<class_Environment>`\ )
 - :ref:`Environment<class_Environment>` **get_environment**\ (\ )
 
-此 **WorldEnvironment** 世界环境所使用的 :ref:`Environment<class_Environment>` 环境资源，定义默认属性。
+The :ref:`Environment<class_Environment>` resource used by this **WorldEnvironment**, defining the default properties.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,34 +5,34 @@
 PhysicsBody3D
 =============
 
-**繼承：** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`CharacterBody3D<class_CharacterBody3D>`, :ref:`PhysicalBone3D<class_PhysicalBone3D>`, :ref:`RigidBody3D<class_RigidBody3D>`, :ref:`StaticBody3D<class_StaticBody3D>`
+**Inherited By:** :ref:`CharacterBody3D<class_CharacterBody3D>`, :ref:`PhysicalBone3D<class_PhysicalBone3D>`, :ref:`RigidBody3D<class_RigidBody3D>`, :ref:`StaticBody3D<class_StaticBody3D>`
 
-受物理影響的 3D 遊戲物件的抽象基底類別。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-**PhysicsBody3D** 與受物理影響的 3D 遊戲物件的抽象基底類別。所有 3D 物理體都繼承自這個類。
-
-\ **警告：**\ 縮放不均勻時，這個節點的行為可能不符合預期。建議讓所有軸上的縮放都保持一致，改為調整碰撞形狀的大小。
+Abstract base class for 3D game objects affected by physics.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- :doc:`物理介紹 <../tutorials/physics/physics_introduction>`
+**PhysicsBody3D** is an abstract base class for 3D game objects affected by physics. All 3D physics bodies inherit from it.
+
+\ **Warning:** With a non-uniform scale, this node will likely not behave as expected. It is advised to keep its scale the same on all axes and adjust its collision shape(s) instead.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Physics introduction <../tutorials/physics/physics_introduction>`
 
 - :doc:`Troubleshooting physics issues <../tutorials/physics/troubleshooting_physics_issues>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ PhysicsBody3D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -83,8 +83,8 @@ PhysicsBody3D
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_PhysicsBody3D_property_axis_lock_angular_x:
 
@@ -97,7 +97,7 @@ PhysicsBody3D
 - |void| **set_axis_lock**\ (\ axis\: :ref:`BodyAxis<enum_PhysicsServer3D_BodyAxis>`, lock\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_axis_lock**\ (\ axis\: :ref:`BodyAxis<enum_PhysicsServer3D_BodyAxis>`\ ) |const|
 
-鎖定物體在 X 軸上的旋轉。
+Lock the body's rotation in the X axis.
 
 .. rst-class:: classref-item-separator
 
@@ -114,7 +114,7 @@ PhysicsBody3D
 - |void| **set_axis_lock**\ (\ axis\: :ref:`BodyAxis<enum_PhysicsServer3D_BodyAxis>`, lock\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_axis_lock**\ (\ axis\: :ref:`BodyAxis<enum_PhysicsServer3D_BodyAxis>`\ ) |const|
 
-鎖定物體在 Y 軸上的旋轉。
+Lock the body's rotation in the Y axis.
 
 .. rst-class:: classref-item-separator
 
@@ -131,7 +131,7 @@ PhysicsBody3D
 - |void| **set_axis_lock**\ (\ axis\: :ref:`BodyAxis<enum_PhysicsServer3D_BodyAxis>`, lock\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_axis_lock**\ (\ axis\: :ref:`BodyAxis<enum_PhysicsServer3D_BodyAxis>`\ ) |const|
 
-鎖定物體在 Z 軸上的旋轉。
+Lock the body's rotation in the Z axis.
 
 .. rst-class:: classref-item-separator
 
@@ -148,7 +148,7 @@ PhysicsBody3D
 - |void| **set_axis_lock**\ (\ axis\: :ref:`BodyAxis<enum_PhysicsServer3D_BodyAxis>`, lock\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_axis_lock**\ (\ axis\: :ref:`BodyAxis<enum_PhysicsServer3D_BodyAxis>`\ ) |const|
 
-鎖定物體在 X 軸上的線性運動。
+Lock the body's linear movement in the X axis.
 
 .. rst-class:: classref-item-separator
 
@@ -165,7 +165,7 @@ PhysicsBody3D
 - |void| **set_axis_lock**\ (\ axis\: :ref:`BodyAxis<enum_PhysicsServer3D_BodyAxis>`, lock\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_axis_lock**\ (\ axis\: :ref:`BodyAxis<enum_PhysicsServer3D_BodyAxis>`\ ) |const|
 
-鎖定物體在 Y 軸上的線性運動。
+Lock the body's linear movement in the Y axis.
 
 .. rst-class:: classref-item-separator
 
@@ -182,7 +182,7 @@ PhysicsBody3D
 - |void| **set_axis_lock**\ (\ axis\: :ref:`BodyAxis<enum_PhysicsServer3D_BodyAxis>`, lock\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_axis_lock**\ (\ axis\: :ref:`BodyAxis<enum_PhysicsServer3D_BodyAxis>`\ ) |const|
 
-鎖定物體在 Z 軸上的線性運動。
+Lock the body's linear movement in the Z axis.
 
 .. rst-class:: classref-section-separator
 
@@ -190,8 +190,8 @@ PhysicsBody3D
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_PhysicsBody3D_method_add_collision_exception_with:
 
@@ -199,7 +199,7 @@ PhysicsBody3D
 
 |void| **add_collision_exception_with**\ (\ body\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_PhysicsBody3D_method_add_collision_exception_with>`
 
-將一個物體新增到這個物體不能碰撞的物體列表中。
+Adds a body to the list of bodies that this body can't collide with.
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ PhysicsBody3D
 
 :ref:`bool<class_bool>` **get_axis_lock**\ (\ axis\: :ref:`BodyAxis<enum_PhysicsServer3D_BodyAxis>`\ ) |const| :ref:`🔗<class_PhysicsBody3D_method_get_axis_lock>`
 
-如果指定的線性或旋轉軸 ``axis`` 被鎖定，則返回 ``true``\ 。
+Returns ``true`` if the specified linear or rotational ``axis`` is locked.
 
 .. rst-class:: classref-item-separator
 
@@ -223,7 +223,7 @@ PhysicsBody3D
 
 :ref:`Array<class_Array>`\[:ref:`PhysicsBody3D<class_PhysicsBody3D>`\] **get_collision_exceptions**\ (\ ) :ref:`🔗<class_PhysicsBody3D_method_get_collision_exceptions>`
 
-返回該物體的碰撞例外節點陣列。
+Returns an array of nodes that were added as collision exceptions for this body.
 
 .. rst-class:: classref-item-separator
 
@@ -247,17 +247,17 @@ Returns the gravity vector computed from all sources that can affect the body, i
 
 :ref:`KinematicCollision3D<class_KinematicCollision3D>` **move_and_collide**\ (\ motion\: :ref:`Vector3<class_Vector3>`, test_only\: :ref:`bool<class_bool>` = false, safe_margin\: :ref:`float<class_float>` = 0.001, recovery_as_collision\: :ref:`bool<class_bool>` = false, max_collisions\: :ref:`int<class_int>` = 1\ ) :ref:`🔗<class_PhysicsBody3D_method_move_and_collide>`
 
-沿著運動向量 ``motion`` 移動該物體。為了在 :ref:`Node._physics_process()<class_Node_private_method__physics_process>` 和 :ref:`Node._process()<class_Node_private_method__process>` 中不依賴畫面播放速率，\ ``motion`` 應該使用 ``delta`` 計算。
+Moves the body along the vector ``motion``. In order to be frame rate independent in :ref:`Node._physics_process()<class_Node_private_method__physics_process>` or :ref:`Node._process()<class_Node_private_method__process>`, ``motion`` should be computed using ``delta``.
 
-發生碰撞後該物體就會停止運動。返回 :ref:`KinematicCollision3D<class_KinematicCollision3D>`\ ，包含停止時的碰撞信息，或者沿運動向量接觸到其他物體時的碰撞資訊。
+The body will stop if it collides. Returns a :ref:`KinematicCollision3D<class_KinematicCollision3D>`, which contains information about the collision when stopped, or when touching another body along the motion.
 
-如果 ``test_only`` 為 ``true``\ ，則該物體不會移動，但會給出可能的碰撞信息。
+If ``test_only`` is ``true``, the body does not move but the would-be collision information is given.
 
-\ ``safe_margin`` 是用於碰撞恢復的額外邊距（詳見 :ref:`CharacterBody3D.safe_margin<class_CharacterBody3D_property_safe_margin>` ）。
+\ ``safe_margin`` is the extra margin used for collision recovery (see :ref:`CharacterBody3D.safe_margin<class_CharacterBody3D_property_safe_margin>` for more details).
 
-如果 ``recovery_as_collision`` 為 ``true``\ ，則恢復階段發生的穿透解除也會被報告為碰撞；例如，\ :ref:`CharacterBody3D<class_CharacterBody3D>` 在吸附到地板時會用這個選項來改善對地板偵測。
+If ``recovery_as_collision`` is ``true``, any depenetration from the recovery phase is also reported as a collision; this is used e.g. by :ref:`CharacterBody3D<class_CharacterBody3D>` for improving floor detection during floor snapping.
 
-\ ``max_collisions`` 可用於檢索多次碰撞的結果。
+\ ``max_collisions`` allows to retrieve more than one collision result.
 
 .. rst-class:: classref-item-separator
 
@@ -269,7 +269,7 @@ Returns the gravity vector computed from all sources that can affect the body, i
 
 |void| **remove_collision_exception_with**\ (\ body\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_PhysicsBody3D_method_remove_collision_exception_with>`
 
-將一個物體從該物體不能碰撞的物體列表中移除。
+Removes a body from the list of bodies that this body can't collide with.
 
 .. rst-class:: classref-item-separator
 
@@ -281,7 +281,7 @@ Returns the gravity vector computed from all sources that can affect the body, i
 
 |void| **set_axis_lock**\ (\ axis\: :ref:`BodyAxis<enum_PhysicsServer3D_BodyAxis>`, lock\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PhysicsBody3D_method_set_axis_lock>`
 
-根據 ``lock`` 的值鎖定或解鎖指定的線性或旋轉軸 ``axis``\ 。
+Locks or unlocks the specified linear or rotational ``axis`` depending on the value of ``lock``.
 
 .. rst-class:: classref-item-separator
 
@@ -293,24 +293,24 @@ Returns the gravity vector computed from all sources that can affect the body, i
 
 :ref:`bool<class_bool>` **test_move**\ (\ from\: :ref:`Transform3D<class_Transform3D>`, motion\: :ref:`Vector3<class_Vector3>`, collision\: :ref:`KinematicCollision3D<class_KinematicCollision3D>` = null, safe_margin\: :ref:`float<class_float>` = 0.001, recovery_as_collision\: :ref:`bool<class_bool>` = false, max_collisions\: :ref:`int<class_int>` = 1\ ) :ref:`🔗<class_PhysicsBody3D_method_test_move>`
 
-在不移動實體的情況下檢查碰撞。為了在 :ref:`Node._physics_process()<class_Node_private_method__physics_process>` 或 :ref:`Node._process()<class_Node_private_method__process>` 中獨立於畫面播放速率，\ ``motion`` 應該使用 ``delta`` 來計算。
+Checks for collisions without moving the body. In order to be frame rate independent in :ref:`Node._physics_process()<class_Node_private_method__physics_process>` or :ref:`Node._process()<class_Node_private_method__process>`, ``motion`` should be computed using ``delta``.
 
-實際上是將節點的位置、縮放和旋轉設定為給定 :ref:`Transform3D<class_Transform3D>` 的位置、縮放和旋轉，然後嘗試沿向量 ``motion`` 移動實體。如果碰撞會阻止實體沿整個路徑移動，則返回 ``true``\ 。
+Virtually sets the node's position, scale and rotation to that of the given :ref:`Transform3D<class_Transform3D>`, then tries to move the body along the vector ``motion``. Returns ``true`` if a collision would stop the body from moving along the whole path.
 
-\ ``collision`` 是型別為 :ref:`KinematicCollision3D<class_KinematicCollision3D>` 的一個可選物件，它包含有關停止時碰撞、或沿運動接觸另一個實體時碰撞的附加資訊。
+\ ``collision`` is an optional object of type :ref:`KinematicCollision3D<class_KinematicCollision3D>`, which contains additional information about the collision when stopped, or when touching another body along the motion.
 
-\ ``safe_margin`` 是用於碰撞恢復的額外餘量（有關更多詳細資訊，請參閱 :ref:`CharacterBody3D.safe_margin<class_CharacterBody3D_property_safe_margin>`\ ）。
+\ ``safe_margin`` is the extra margin used for collision recovery (see :ref:`CharacterBody3D.safe_margin<class_CharacterBody3D_property_safe_margin>` for more details).
 
-如果 ``recovery_as_collision`` 為 ``true``\ ，恢復階段的任何穿透也將被報告為碰撞；這對於檢查該實體是否會\ *接觸*\ 其他任意實體很有用。
+If ``recovery_as_collision`` is ``true``, any depenetration from the recovery phase is also reported as a collision; this is useful for checking whether the body would *touch* any other bodies.
 
-\ ``max_collisions`` 允許檢索一個以上的碰撞結果。
+\ ``max_collisions`` allows to retrieve more than one collision result.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

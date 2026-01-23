@@ -8,14 +8,14 @@
 Label
 =====
 
-**繼承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-用於顯示純文字的控制項。
+A control for displaying plain text.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 A control for displaying plain text. It gives you control over the horizontal and vertical alignment and can wrap the text inside the node's bounding rectangle. It doesn't support bold, italics, or other rich text formatting. For that, use :ref:`RichTextLabel<class_RichTextLabel>` instead.
 
@@ -23,15 +23,15 @@ A control for displaying plain text. It gives you control over the horizontal an
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- `2D Dodge The Creeps 範例 <https://godotengine.org/asset-library/asset/2712>`__
+- `2D Dodge The Creeps Demo <https://godotengine.org/asset-library/asset/2712>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -88,8 +88,8 @@ A control for displaying plain text. It gives you control over the horizontal an
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -108,8 +108,8 @@ A control for displaying plain text. It gives you control over the horizontal an
 
 .. rst-class:: classref-reftable-group
 
-主題屬性
---------
+Theme Properties
+----------------
 
 .. table::
    :widths: auto
@@ -148,8 +148,8 @@ A control for displaying plain text. It gives you control over the horizontal an
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_Label_property_autowrap_mode:
 
@@ -196,7 +196,7 @@ Autowrap space trimming flags. See :ref:`TextServer.BREAK_TRIM_START_EDGE_SPACES
 - |void| **set_clip_text**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_clipping_text**\ (\ )
 
-如果為 ``true``\ ，Label 將僅顯示位於其邊界矩形內部的文字，並將水平裁剪文字。
+If ``true``, the Label only shows the text that fits inside its bounding rectangle and will clip text horizontally.
 
 .. rst-class:: classref-item-separator
 
@@ -264,7 +264,7 @@ Line fill alignment rules.
 - |void| **set_label_settings**\ (\ value\: :ref:`LabelSettings<class_LabelSettings>`\ )
 - :ref:`LabelSettings<class_LabelSettings>` **get_label_settings**\ (\ )
 
-:ref:`LabelSettings<class_LabelSettings>` 資源，可以在多個 **Label** 節點之間共用。優先於主題屬性。
+A :ref:`LabelSettings<class_LabelSettings>` resource that can be shared between multiple **Label** nodes. Takes priority over theme properties.
 
 .. rst-class:: classref-item-separator
 
@@ -315,7 +315,7 @@ The number of the lines ignored and not displayed from the start of the :ref:`te
 - |void| **set_max_lines_visible**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_lines_visible**\ (\ )
 
-限制節點在螢幕上顯示的文字行數。
+Limits the lines of text the node shows on screen.
 
 .. rst-class:: classref-item-separator
 
@@ -349,7 +349,7 @@ String used as a paragraph separator. Each paragraph is processed independently,
 - |void| **set_structured_text_bidi_override**\ (\ value\: :ref:`StructuredTextParser<enum_TextServer_StructuredTextParser>`\ )
 - :ref:`StructuredTextParser<enum_TextServer_StructuredTextParser>` **get_structured_text_bidi_override**\ (\ )
 
-為結構化文字設定 BiDi 演算法覆蓋。
+Set BiDi algorithm override for the structured text.
 
 .. rst-class:: classref-item-separator
 
@@ -366,7 +366,7 @@ String used as a paragraph separator. Each paragraph is processed independently,
 - |void| **set_structured_text_bidi_override_options**\ (\ value\: :ref:`Array<class_Array>`\ )
 - :ref:`Array<class_Array>` **get_structured_text_bidi_override_options**\ (\ )
 
-設定 BiDi 覆蓋的附加選項。
+Set additional options for BiDi override.
 
 .. rst-class:: classref-item-separator
 
@@ -383,7 +383,7 @@ String used as a paragraph separator. Each paragraph is processed independently,
 - |void| **set_tab_stops**\ (\ value\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ )
 - :ref:`PackedFloat32Array<class_PackedFloat32Array>` **get_tab_stops**\ (\ )
 
-將文字與給定的定位停駐點對齊。
+Aligns text to the given tab-stops.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
 
@@ -402,7 +402,7 @@ String used as a paragraph separator. Each paragraph is processed independently,
 - |void| **set_text**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_text**\ (\ )
 
-要在螢幕上顯示的文字。
+The text to display on screen.
 
 .. rst-class:: classref-item-separator
 
@@ -419,7 +419,7 @@ String used as a paragraph separator. Each paragraph is processed independently,
 - |void| **set_text_direction**\ (\ value\: :ref:`TextDirection<enum_Control_TextDirection>`\ )
 - :ref:`TextDirection<enum_Control_TextDirection>` **get_text_direction**\ (\ )
 
-基礎文字書寫方向。
+Base text writing direction.
 
 .. rst-class:: classref-item-separator
 
@@ -453,7 +453,7 @@ The clipping behavior when the text exceeds the node's bounding rectangle.
 - |void| **set_uppercase**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_uppercase**\ (\ )
 
-如果為 ``true``\ ，所有文字都將顯示為大寫。
+If ``true``, all the text displays as UPPERCASE.
 
 .. rst-class:: classref-item-separator
 
@@ -525,9 +525,9 @@ The clipping behavior when :ref:`visible_characters<class_Label_property_visible
 - |void| **set_visible_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_visible_ratio**\ (\ )
 
-相對於字元總數（參見 :ref:`get_total_character_count()<class_Label_method_get_total_character_count>`\ ），要顯示的字元的占比。如果設定為 ``1.0``\ ，則顯示所有字元。如果設定為 ``0.5``\ ，則只顯示一半的字元。這用於在對話方塊中為顯示的文字設定動畫。
+The fraction of characters to display, relative to the total number of characters (see :ref:`get_total_character_count()<class_Label_method_get_total_character_count>`). If set to ``1.0``, all characters are displayed. If set to ``0.5``, only half of the characters will be displayed. This can be useful when animating the text appearing in a dialog box.
 
-\ **注意：**\ 設定該屬性會相應地更新 :ref:`visible_characters<class_Label_property_visible_characters>`\ 。
+\ **Note:** Setting this property updates :ref:`visible_characters<class_Label_property_visible_characters>` accordingly.
 
 .. rst-class:: classref-section-separator
 
@@ -535,8 +535,8 @@ The clipping behavior when :ref:`visible_characters<class_Label_property_visible
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_Label_method_get_character_bounds:
 
@@ -556,7 +556,7 @@ Returns the bounding rectangle of the character at position ``pos`` in the label
 
 :ref:`int<class_int>` **get_line_count**\ (\ ) |const| :ref:`🔗<class_Label_method_get_line_count>`
 
-返回該 Label 的文字行數。
+Returns the number of lines of text the Label has.
 
 .. rst-class:: classref-item-separator
 
@@ -568,11 +568,11 @@ Returns the bounding rectangle of the character at position ``pos`` in the label
 
 :ref:`int<class_int>` **get_line_height**\ (\ line\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_Label_method_get_line_height>`
 
-返回行 ``line`` 的高度。
+Returns the height of the line ``line``.
 
-如果 ``line`` 被設定為 ``-1`` ，則返回最大的行高。
+If ``line`` is set to ``-1``, returns the biggest line height.
 
-如果沒有行，則返回字形大小，單位是圖元。
+If there are no lines, returns font size in pixels.
 
 .. rst-class:: classref-item-separator
 
@@ -584,7 +584,7 @@ Returns the bounding rectangle of the character at position ``pos`` in the label
 
 :ref:`int<class_int>` **get_total_character_count**\ (\ ) |const| :ref:`🔗<class_Label_method_get_total_character_count>`
 
-返回文字中可列印的字元總數，不包括空格和分行符號。
+Returns the total number of printable characters in the text (excluding spaces and newlines).
 
 .. rst-class:: classref-item-separator
 
@@ -596,7 +596,7 @@ Returns the bounding rectangle of the character at position ``pos`` in the label
 
 :ref:`int<class_int>` **get_visible_line_count**\ (\ ) |const| :ref:`🔗<class_Label_method_get_visible_line_count>`
 
-返回顯示的行數。如果 **Label** 的高度目前無法顯示所有的行數，將會有用。
+Returns the number of lines shown. Useful if the **Label**'s height cannot currently display all lines.
 
 .. rst-class:: classref-section-separator
 
@@ -604,8 +604,8 @@ Returns the bounding rectangle of the character at position ``pos`` in the label
 
 .. rst-class:: classref-descriptions-group
 
-主題屬性說明
-------------
+Theme Property Descriptions
+---------------------------
 
 .. _class_Label_theme_color_font_color:
 
@@ -613,7 +613,7 @@ Returns the bounding rectangle of the character at position ``pos`` in the label
 
 :ref:`Color<class_Color>` **font_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_Label_theme_color_font_color>`
 
-**Label** 標籤的預設文字顏色 :ref:`Color<class_Color>`\ 。
+Default text :ref:`Color<class_Color>` of the **Label**.
 
 .. rst-class:: classref-item-separator
 
@@ -625,7 +625,7 @@ Returns the bounding rectangle of the character at position ``pos`` in the label
 
 :ref:`Color<class_Color>` **font_outline_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_Label_theme_color_font_outline_color>`
 
-文字輪廓的顏色。
+The color of text outline.
 
 .. rst-class:: classref-item-separator
 
@@ -637,7 +637,7 @@ Returns the bounding rectangle of the character at position ``pos`` in the label
 
 :ref:`Color<class_Color>` **font_shadow_color** = ``Color(0, 0, 0, 0)`` :ref:`🔗<class_Label_theme_color_font_shadow_color>`
 
-文字陰影效果的顏色 :ref:`Color<class_Color>`\ 。
+:ref:`Color<class_Color>` of the text's shadow effect.
 
 .. rst-class:: classref-item-separator
 
@@ -689,7 +689,7 @@ Vertical space between paragraphs. Added on top of :ref:`line_spacing<class_Labe
 
 :ref:`int<class_int>` **shadow_offset_x** = ``1`` :ref:`🔗<class_Label_theme_constant_shadow_offset_x>`
 
-文字陰影的水平偏移。
+The horizontal offset of the text's shadow.
 
 .. rst-class:: classref-item-separator
 
@@ -701,7 +701,7 @@ Vertical space between paragraphs. Added on top of :ref:`line_spacing<class_Labe
 
 :ref:`int<class_int>` **shadow_offset_y** = ``1`` :ref:`🔗<class_Label_theme_constant_shadow_offset_y>`
 
-文字陰影的垂直偏移。
+The vertical offset of the text's shadow.
 
 .. rst-class:: classref-item-separator
 
@@ -713,7 +713,7 @@ Vertical space between paragraphs. Added on top of :ref:`line_spacing<class_Labe
 
 :ref:`int<class_int>` **shadow_outline_size** = ``1`` :ref:`🔗<class_Label_theme_constant_shadow_outline_size>`
 
-陰影輪廓的大小。
+The size of the shadow outline.
 
 .. rst-class:: classref-item-separator
 
@@ -725,7 +725,7 @@ Vertical space between paragraphs. Added on top of :ref:`line_spacing<class_Labe
 
 :ref:`Font<class_Font>` **font** :ref:`🔗<class_Label_theme_font_font>`
 
-用於標籤 **Label** 文字的字形 :ref:`Font<class_Font>`\ 。
+:ref:`Font<class_Font>` used for the **Label**'s text.
 
 .. rst-class:: classref-item-separator
 
@@ -737,7 +737,7 @@ Vertical space between paragraphs. Added on top of :ref:`line_spacing<class_Labe
 
 :ref:`int<class_int>` **font_size** :ref:`🔗<class_Label_theme_font_size_font_size>`
 
-該 **Label** 文字的字形大小。
+Font size of the **Label**'s text.
 
 .. rst-class:: classref-item-separator
 
@@ -761,14 +761,14 @@ Vertical space between paragraphs. Added on top of :ref:`line_spacing<class_Labe
 
 :ref:`StyleBox<class_StyleBox>` **normal** :ref:`🔗<class_Label_theme_style_normal>`
 
-為 **Label** 設定背景樣式盒 :ref:`StyleBox<class_StyleBox>`\ 。
+Background :ref:`StyleBox<class_StyleBox>` for the **Label**.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

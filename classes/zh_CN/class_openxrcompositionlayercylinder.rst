@@ -5,23 +5,23 @@
 OpenXRCompositionLayerCylinder
 ==============================
 
-**实验性：** This class may be changed or removed in future versions.
+**Experimental:** This class may be changed or removed in future versions.
 
-**继承：** :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-作为圆柱体内部切片进行渲染的 OpenXR 合成层。
+An OpenXR composition layer that is rendered as an internal slice of a cylinder.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-OpenXR 合成层，允许在圆柱体的内部切片上渲染 :ref:`SubViewport<class_SubViewport>`\ 。
+An OpenXR composition layer that allows rendering a :ref:`SubViewport<class_SubViewport>` on an internal slice of a cylinder.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ OpenXR 合成层，允许在圆柱体的内部切片上渲染 :ref:`SubViewport<
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_OpenXRCompositionLayerCylinder_property_aspect_ratio:
 
@@ -56,7 +56,7 @@ OpenXR 合成层，允许在圆柱体的内部切片上渲染 :ref:`SubViewport<
 - |void| **set_aspect_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_aspect_ratio**\ (\ )
 
-切片的长宽比。用于设定相对于宽度的高度。
+The aspect ratio of the slice. Used to set the height relative to the width.
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ OpenXR 合成层，允许在圆柱体的内部切片上渲染 :ref:`SubViewport<
 - |void| **set_central_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_central_angle**\ (\ )
 
-圆柱体的中心角。用于设置宽度。
+The central angle of the cylinder. Used to set the width.
 
 .. rst-class:: classref-item-separator
 
@@ -90,7 +90,7 @@ OpenXR 合成层，允许在圆柱体的内部切片上渲染 :ref:`SubViewport<
 - |void| **set_fallback_segments**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_fallback_segments**\ (\ )
 
-回退网格所使用的段数。
+The number of segments to use in the fallback mesh.
 
 .. rst-class:: classref-item-separator
 
@@ -107,14 +107,14 @@ OpenXR 合成层，允许在圆柱体的内部切片上渲染 :ref:`SubViewport<
 - |void| **set_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_radius**\ (\ )
 
-圆柱体的半径。
+The radius of the cylinder.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

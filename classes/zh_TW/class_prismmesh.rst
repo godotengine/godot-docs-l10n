@@ -5,21 +5,21 @@
 PrismMesh
 =========
 
-**繼承：** :ref:`PrimitiveMesh<class_PrimitiveMesh>` **<** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`PrimitiveMesh<class_PrimitiveMesh>` **<** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-表示棱柱形 :ref:`PrimitiveMesh<class_PrimitiveMesh>` 的類。
+Class representing a prism-shaped :ref:`PrimitiveMesh<class_PrimitiveMesh>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-表示棱柱形 :ref:`PrimitiveMesh<class_PrimitiveMesh>` 的類。
+Class representing a prism-shaped :ref:`PrimitiveMesh<class_PrimitiveMesh>`.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ PrismMesh
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_PrismMesh_property_left_to_right:
 
@@ -56,7 +56,7 @@ PrismMesh
 - |void| **set_left_to_right**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_left_to_right**\ (\ )
 
-上邊緣沿 X 軸的位移。0.0 將邊緣定位在左下邊緣的正上方。
+Displacement of the upper edge along the X axis. 0.0 positions edge straight above the bottom-left edge.
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ PrismMesh
 - |void| **set_size**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_size**\ (\ )
 
-棱鏡的大小。
+Size of the prism.
 
 .. rst-class:: classref-item-separator
 
@@ -90,7 +90,7 @@ PrismMesh
 - |void| **set_subdivide_depth**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_subdivide_depth**\ (\ )
 
-沿 Z 軸新增的邊迴圈數。
+Number of added edge loops along the Z axis.
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ PrismMesh
 - |void| **set_subdivide_height**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_subdivide_height**\ (\ )
 
-沿 Y 軸新增的邊迴圈數。
+Number of added edge loops along the Y axis.
 
 .. rst-class:: classref-item-separator
 
@@ -124,14 +124,14 @@ PrismMesh
 - |void| **set_subdivide_width**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_subdivide_width**\ (\ )
 
-沿 X 軸新增的邊迴圈數。
+Number of added edge loops along the X axis.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

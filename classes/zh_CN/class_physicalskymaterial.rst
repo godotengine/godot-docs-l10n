@@ -5,23 +5,23 @@
 PhysicalSkyMaterial
 ===================
 
-**继承：** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-通过一组物理属性定义 :ref:`Sky<class_Sky>` 资源的天空的材质。
+A material that defines a sky for a :ref:`Sky<class_Sky>` resource by a set of physical properties.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-该 **PhysicalSkyMaterial** 使用 Preetham 解析日光模型，根据物理属性绘制一个天空。这会产生比 :ref:`ProceduralSkyMaterial<class_ProceduralSkyMaterial>` 更加逼真的天空，但速度稍慢且灵活性较差。
+The **PhysicalSkyMaterial** uses the Preetham analytic daylight model to draw a sky based on physical properties. This results in a substantially more realistic sky than the :ref:`ProceduralSkyMaterial<class_ProceduralSkyMaterial>`, but it is slightly slower and less flexible.
 
-该 **PhysicalSkyMaterial** 仅支持一个太阳。太阳的颜色、能量和方向，取自场景树中的第一个 :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ 。
+The **PhysicalSkyMaterial** only supports one sun. The color, energy, and direction of the sun are taken from the first :ref:`DirectionalLight3D<class_DirectionalLight3D>` in the scene tree.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ PhysicalSkyMaterial
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_PhysicalSkyMaterial_property_energy_multiplier:
 
@@ -70,7 +70,7 @@ PhysicalSkyMaterial
 - |void| **set_energy_multiplier**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_energy_multiplier**\ (\ )
 
-天空整体亮度的乘数。数值越高，天空就越亮。
+The sky's overall brightness multiplier. Higher values result in a brighter sky.
 
 .. rst-class:: classref-item-separator
 
@@ -87,7 +87,7 @@ PhysicalSkyMaterial
 - |void| **set_ground_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_ground_color**\ (\ )
 
-调制天空下半部分的 :ref:`Color<class_Color>`\ ，这部分代表地面。
+Modulates the :ref:`Color<class_Color>` on the bottom half of the sky to represent the ground.
 
 .. rst-class:: classref-item-separator
 
@@ -104,7 +104,7 @@ PhysicalSkyMaterial
 - |void| **set_mie_coefficient**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mie_coefficient**\ (\ )
 
-控制天空中\ `米氏散射 <https://zh.wikipedia.org/wiki/%E7%B1%B3%E6%B0%8F%E6%95%A3%E5%B0%84>`__\ 的强度。米氏散射是光与较大的粒子（例如水）碰撞的结果。在地球上，米氏散射的结果是太阳和地平线周围的颜色发白。
+Controls the strength of `Mie scattering <https://en.wikipedia.org/wiki/Mie_scattering>`__ for the sky. Mie scattering results from light colliding with larger particles (like water). On earth, Mie scattering results in a whitish color around the sun and horizon.
 
 .. rst-class:: classref-item-separator
 
@@ -121,7 +121,7 @@ PhysicalSkyMaterial
 - |void| **set_mie_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_mie_color**\ (\ )
 
-控制天空中\ `米氏散射 <https://zh.wikipedia.org/wiki/%E7%B1%B3%E6%B0%8F%E6%95%A3%E5%B0%84>`__\ 效果的 :ref:`Color<class_Color>`\ 。虽然在物理上并不准确，但可以创造出看上去像的外星球的天空。
+Controls the :ref:`Color<class_Color>` of the `Mie scattering <https://en.wikipedia.org/wiki/Mie_scattering>`__ effect. While not physically accurate, this allows for the creation of alien-looking planets.
 
 .. rst-class:: classref-item-separator
 
@@ -138,7 +138,7 @@ PhysicalSkyMaterial
 - |void| **set_mie_eccentricity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mie_eccentricity**\ (\ )
 
-控制\ `米氏散射 <https://zh.wikipedia.org/wiki/%E7%B1%B3%E6%B0%8F%E6%95%A3%E5%B0%84>`__\ 的方向。值为 ``1`` 表示当光照到粒子时会直接穿过。值为\ ``-1`` 表示所有的光都是向后散射的。
+Controls the direction of the `Mie scattering <https://en.wikipedia.org/wiki/Mie_scattering>`__. A value of ``1`` means that when light hits a particle it's passing through straight forward. A value of ``-1`` means that all light is scatter backwards.
 
 .. rst-class:: classref-item-separator
 
@@ -155,7 +155,7 @@ PhysicalSkyMaterial
 - |void| **set_night_sky**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_night_sky**\ (\ )
 
-用于夜空的 :ref:`Texture2D<class_Texture2D>`\ 。会添加到天空中，所以足够亮的话在白天也可能会看到。
+:ref:`Texture2D<class_Texture2D>` for the night sky. This is added to the sky, so if it is bright enough, it may be visible during the day.
 
 .. rst-class:: classref-item-separator
 
@@ -172,7 +172,7 @@ PhysicalSkyMaterial
 - |void| **set_rayleigh_coefficient**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_rayleigh_coefficient**\ (\ )
 
-控制\ `瑞利散射 <https://zh.wikipedia.org/zh/%E7%91%9E%E5%88%A9%E6%95%A3%E5%B0%84>`__\ 的强度。瑞利散射是光与较小粒子碰撞的结果，是天空呈蓝色的原因。
+Controls the strength of the `Rayleigh scattering <https://en.wikipedia.org/wiki/Rayleigh_scattering>`__. Rayleigh scattering results from light colliding with small particles. It is responsible for the blue color of the sky.
 
 .. rst-class:: classref-item-separator
 
@@ -189,7 +189,7 @@ PhysicalSkyMaterial
 - |void| **set_rayleigh_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_rayleigh_color**\ (\ )
 
-控制\ `瑞利散射 <https://zh.wikipedia.org/zh/%E7%91%9E%E5%88%A9%E6%95%A3%E5%B0%84>`__\ 的 :ref:`Color<class_Color>`\ 。虽然在物理上并不准确，但可以创造出看上去像的外星球的天空。例如，将其设为红色 :ref:`Color<class_Color>`\ ，可以得到火星大气的外观，日落时为蓝色。
+Controls the :ref:`Color<class_Color>` of the `Rayleigh scattering <https://en.wikipedia.org/wiki/Rayleigh_scattering>`__. While not physically accurate, this allows for the creation of alien-looking planets. For example, setting this to a red :ref:`Color<class_Color>` results in a Mars-looking atmosphere with a corresponding blue sunset.
 
 .. rst-class:: classref-item-separator
 
@@ -206,7 +206,7 @@ PhysicalSkyMaterial
 - |void| **set_sun_disk_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_sun_disk_scale**\ (\ )
 
-设置太阳圆盘的大小。默认值基于从地球对太阳的感知大小。
+Sets the size of the sun disk. Default value is based on Sol's perceived size from Earth.
 
 .. rst-class:: classref-item-separator
 
@@ -223,7 +223,7 @@ PhysicalSkyMaterial
 - |void| **set_turbidity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_turbidity**\ (\ )
 
-设置大气的厚度。高浊度会产生雾状外观的大气，而低浊度会产生更清晰的大气。
+Sets the thickness of the atmosphere. High turbidity creates a foggy-looking atmosphere, while a low turbidity results in a clearer atmosphere.
 
 .. rst-class:: classref-item-separator
 
@@ -240,14 +240,14 @@ PhysicalSkyMaterial
 - |void| **set_use_debanding**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_debanding**\ (\ )
 
-如果为 ``true``\ ，则启用去色带。去色带会增加少量噪点，这有助于减少天空中颜色的平滑变化而出现的色带。
+If ``true``, enables debanding. Debanding adds a small amount of noise which helps reduce banding that appears from the smooth changes in color in the sky.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,23 +5,23 @@
 SceneState
 ==========
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-提供對場景檔資訊的存取。
+Provides access to a scene file's information.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-維護一個與場景相關的資源、節點、匯出的和重寫的屬性以及內建腳本的列表。無法從 **SceneState** 修改，只能讀取。可用於在不產生實體 :ref:`PackedScene<class_PackedScene>` 的前提下觀察其中的內容。
+Maintains a list of resources, nodes, exported and overridden properties, and built-in scripts associated with a scene. They cannot be modified from a **SceneState**, only accessed. Useful for peeking into what a :ref:`PackedScene<class_PackedScene>` contains without instantiating it.
 
-這個類不能直接產生實體，它是作為 :ref:`PackedScene.get_state()<class_PackedScene_method_get_state>` 的結果為一個給定的場景檢索的。
+This class cannot be instantiated directly, it is retrieved for a given scene as the result of :ref:`PackedScene.get_state()<class_PackedScene_method_get_state>`.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -80,8 +80,8 @@ SceneState
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_SceneState_GenEditState:
 
@@ -95,7 +95,7 @@ enum **GenEditState**: :ref:`🔗<enum_SceneState_GenEditState>`
 
 :ref:`GenEditState<enum_SceneState_GenEditState>` **GEN_EDIT_STATE_DISABLED** = ``0``
 
-如果傳遞給 :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`\ ，則會阻止對場景狀態的編輯。
+If passed to :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`, blocks edits to the scene state.
 
 .. _class_SceneState_constant_GEN_EDIT_STATE_INSTANCE:
 
@@ -103,9 +103,9 @@ enum **GenEditState**: :ref:`🔗<enum_SceneState_GenEditState>`
 
 :ref:`GenEditState<enum_SceneState_GenEditState>` **GEN_EDIT_STATE_INSTANCE** = ``1``
 
-如果傳遞給 :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`\ ，則會把繼承的場景資源提供給本地場景。
+If passed to :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`, provides inherited scene resources to the local scene.
 
-\ **注意：**\ 僅在編輯器建構中可用。
+\ **Note:** Only available in editor builds.
 
 .. _class_SceneState_constant_GEN_EDIT_STATE_MAIN:
 
@@ -113,9 +113,9 @@ enum **GenEditState**: :ref:`🔗<enum_SceneState_GenEditState>`
 
 :ref:`GenEditState<enum_SceneState_GenEditState>` **GEN_EDIT_STATE_MAIN** = ``2``
 
-如果傳遞給 :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`\ ，則會為本地場景提供本地場景資源。只有主場景應該接收主編輯狀態。
+If passed to :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`, provides local scene resources to the local scene. Only the main scene should receive the main edit state.
 
-\ **注意：**\ 僅在編輯器建構中可用。
+\ **Note:** Only available in editor builds.
 
 .. _class_SceneState_constant_GEN_EDIT_STATE_MAIN_INHERITED:
 
@@ -123,9 +123,9 @@ enum **GenEditState**: :ref:`🔗<enum_SceneState_GenEditState>`
 
 :ref:`GenEditState<enum_SceneState_GenEditState>` **GEN_EDIT_STATE_MAIN_INHERITED** = ``3``
 
-如果傳遞給 :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`\ ，則類似於 :ref:`GEN_EDIT_STATE_MAIN<class_SceneState_constant_GEN_EDIT_STATE_MAIN>`\ ，但適用於該場景被產生實體為另一個場景的基底類別的情況。
+If passed to :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`, it's similar to :ref:`GEN_EDIT_STATE_MAIN<class_SceneState_constant_GEN_EDIT_STATE_MAIN>`, but for the case where the scene is being instantiated to be the base of another one.
 
-\ **注意：**\ 僅在編輯器建構中可用。
+\ **Note:** Only available in editor builds.
 
 .. rst-class:: classref-section-separator
 
@@ -133,8 +133,8 @@ enum **GenEditState**: :ref:`🔗<enum_SceneState_GenEditState>`
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_SceneState_method_get_base_scene_state:
 
@@ -154,7 +154,7 @@ Returns the **SceneState** of the scene that this scene inherits from, or ``null
 
 :ref:`Array<class_Array>` **get_connection_binds**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_connection_binds>`
 
-返回 ``idx`` 處訊號的綁定參數列表。
+Returns the list of bound parameters for the signal at ``idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -166,9 +166,9 @@ Returns the **SceneState** of the scene that this scene inherits from, or ``null
 
 :ref:`int<class_int>` **get_connection_count**\ (\ ) |const| :ref:`🔗<class_SceneState_method_get_connection_count>`
 
-返回場景中的訊號連接數。
+Returns the number of signal connections in the scene.
 
-用於查詢其他 ``get_connection_*`` 方法中的連接中繼資料的 ``idx`` 參數，範圍是 ``[0, get_connection_count() - 1]``\ 。
+The ``idx`` argument used to query connection metadata in other ``get_connection_*`` methods in the interval ``[0, get_connection_count() - 1]``.
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ Returns the **SceneState** of the scene that this scene inherits from, or ``null
 
 :ref:`int<class_int>` **get_connection_flags**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_connection_flags>`
 
-返回 ``idx`` 處的訊號的連接旗標。見 :ref:`ConnectFlags<enum_Object_ConnectFlags>` 常數。
+Returns the connection flags for the signal at ``idx``. See :ref:`ConnectFlags<enum_Object_ConnectFlags>` constants.
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ Returns the **SceneState** of the scene that this scene inherits from, or ``null
 
 :ref:`StringName<class_StringName>` **get_connection_method**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_connection_method>`
 
-返回連接到 ``idx`` 處訊號的方法。
+Returns the method connected to the signal at ``idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ Returns the **SceneState** of the scene that this scene inherits from, or ``null
 
 :ref:`StringName<class_StringName>` **get_connection_signal**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_connection_signal>`
 
-返回索引為 ``idx`` 的訊號的名稱。
+Returns the name of the signal at ``idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -216,7 +216,7 @@ Returns the **SceneState** of the scene that this scene inherits from, or ``null
 
 :ref:`NodePath<class_NodePath>` **get_connection_source**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_connection_source>`
 
-返回擁有 ``idx`` 處訊號的節點路徑，相對於根節點。
+Returns the path to the node that owns the signal at ``idx``, relative to the root node.
 
 .. rst-class:: classref-item-separator
 
@@ -228,7 +228,7 @@ Returns the **SceneState** of the scene that this scene inherits from, or ``null
 
 :ref:`NodePath<class_NodePath>` **get_connection_target**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_connection_target>`
 
-返回到擁有連接到 ``idx`` 處的訊號的方法的節點的路徑，相對於根節點。
+Returns the path to the node that owns the method connected to the signal at ``idx``, relative to the root node.
 
 .. rst-class:: classref-item-separator
 
@@ -240,7 +240,7 @@ Returns the **SceneState** of the scene that this scene inherits from, or ``null
 
 :ref:`int<class_int>` **get_connection_unbinds**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_connection_unbinds>`
 
-返回 ``idx`` 處訊號的解綁參數數量。
+Returns the number of unbound parameters for the signal at ``idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -252,9 +252,9 @@ Returns the **SceneState** of the scene that this scene inherits from, or ``null
 
 :ref:`int<class_int>` **get_node_count**\ (\ ) |const| :ref:`🔗<class_SceneState_method_get_node_count>`
 
-返回場景中節點的數量。
+Returns the number of nodes in the scene.
 
-\ ``idx`` 參數用於在其他 ``get_node_*`` 方法中查詢節點資料，範圍為 ``[0, get_node_count() - 1]``\ 。
+The ``idx`` argument used to query node data in other ``get_node_*`` methods in the interval ``[0, get_node_count() - 1]``.
 
 .. rst-class:: classref-item-separator
 
@@ -266,7 +266,7 @@ Returns the **SceneState** of the scene that this scene inherits from, or ``null
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_node_groups**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_node_groups>`
 
-返回與 ``idx`` 處的節點關聯的組名列表。
+Returns the list of group names associated with the node at ``idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,7 @@ Returns the **SceneState** of the scene that this scene inherits from, or ``null
 
 :ref:`int<class_int>` **get_node_index**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_node_index>`
 
-返回該節點的索引，這是它相對於其兄弟節點的位置。這僅在新節點被新增到一個實例化的或繼承的場景，在基礎場景的兄弟節點之間的情況下，才相關並被保存在場景中。儘管名稱如此，但該索引與此處和其他方法中使用的 ``idx`` 參數無關。
+Returns the node's index, which is its position relative to its siblings. This is only relevant and saved in scenes for cases where new nodes are added to an instantiated or inherited scene among siblings from the base scene. Despite the name, this index is not related to the ``idx`` argument used here and in other methods.
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ Returns the **SceneState** of the scene that this scene inherits from, or ``null
 
 :ref:`PackedScene<class_PackedScene>` **get_node_instance**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_node_instance>`
 
-為 ``idx`` 處的節點返回一個 :ref:`PackedScene<class_PackedScene>`\ （即從該節點開始的整個分支，包括其子節點和資源），如果該節點不是一個實例，則返回 ``null``\ 。
+Returns a :ref:`PackedScene<class_PackedScene>` for the node at ``idx`` (i.e. the whole branch starting at this node, with its child nodes and resources), or ``null`` if the node is not an instance.
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +302,7 @@ Returns the **SceneState** of the scene that this scene inherits from, or ``null
 
 :ref:`String<class_String>` **get_node_instance_placeholder**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_node_instance_placeholder>`
 
-如果 ``idx`` 處的節點是一個 :ref:`InstancePlaceholder<class_InstancePlaceholder>`\ ，則返回所表示的場景檔的路徑。
+Returns the path to the represented scene file if the node at ``idx`` is an :ref:`InstancePlaceholder<class_InstancePlaceholder>`.
 
 .. rst-class:: classref-item-separator
 
@@ -314,7 +314,7 @@ Returns the **SceneState** of the scene that this scene inherits from, or ``null
 
 :ref:`StringName<class_StringName>` **get_node_name**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_node_name>`
 
-返回索引為 ``idx`` 的節點的名稱。
+Returns the name of the node at ``idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -326,7 +326,7 @@ Returns the **SceneState** of the scene that this scene inherits from, or ``null
 
 :ref:`NodePath<class_NodePath>` **get_node_owner_path**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_node_owner_path>`
 
-返回相對於根節點的位於 ``idx`` 處的節點的所有者的路徑。
+Returns the path to the owner of the node at ``idx``, relative to the root node.
 
 .. rst-class:: classref-item-separator
 
@@ -338,9 +338,9 @@ Returns the **SceneState** of the scene that this scene inherits from, or ``null
 
 :ref:`NodePath<class_NodePath>` **get_node_path**\ (\ idx\: :ref:`int<class_int>`, for_parent\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_SceneState_method_get_node_path>`
 
-返回 ``idx`` 處的節點的路徑。
+Returns the path to the node at ``idx``.
 
-如果 ``for_parent`` 為 ``true``\ ，則返回 ``idx`` 節點的父節點的路徑。
+If ``for_parent`` is ``true``, returns the path of the ``idx`` node's parent instead.
 
 .. rst-class:: classref-item-separator
 
@@ -352,9 +352,9 @@ Returns the **SceneState** of the scene that this scene inherits from, or ``null
 
 :ref:`int<class_int>` **get_node_property_count**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_node_property_count>`
 
-返回在 ``idx`` 處的節點的匯出的或覆蓋的屬性數量。
+Returns the number of exported or overridden properties for the node at ``idx``.
 
-\ ``prop_idx`` 參數介於區間 ``[0, get_node_property_count() - 1]``\ ，用於在其他 ``get_node_property_*`` 方法中查詢節點屬性資料。
+The ``prop_idx`` argument used to query node property data in other ``get_node_property_*`` methods in the interval ``[0, get_node_property_count() - 1]``.
 
 .. rst-class:: classref-item-separator
 
@@ -366,7 +366,7 @@ Returns the **SceneState** of the scene that this scene inherits from, or ``null
 
 :ref:`StringName<class_StringName>` **get_node_property_name**\ (\ idx\: :ref:`int<class_int>`, prop_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_node_property_name>`
 
-返回索引為 ``idx`` 的節點中，索引為 ``prop_idx`` 的屬性的名稱。
+Returns the name of the property at ``prop_idx`` for the node at ``idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -378,7 +378,7 @@ Returns the **SceneState** of the scene that this scene inherits from, or ``null
 
 :ref:`Variant<class_Variant>` **get_node_property_value**\ (\ idx\: :ref:`int<class_int>`, prop_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_node_property_value>`
 
-返回索引為 ``idx`` 的節點中，索引為 ``prop_idx`` 的屬性的值。
+Returns the value of the property at ``prop_idx`` for the node at ``idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -390,7 +390,7 @@ Returns the **SceneState** of the scene that this scene inherits from, or ``null
 
 :ref:`StringName<class_StringName>` **get_node_type**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_node_type>`
 
-返回索引為 ``idx`` 的節點的型別。
+Returns the type of the node at ``idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -414,14 +414,14 @@ Returns the resource path to the represented :ref:`PackedScene<class_PackedScene
 
 :ref:`bool<class_bool>` **is_node_instance_placeholder**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_is_node_instance_placeholder>`
 
-如果 ``idx`` 處的節點是一個 :ref:`InstancePlaceholder<class_InstancePlaceholder>`\ ，則返回 ``true``\ 。
+Returns ``true`` if the node at ``idx`` is an :ref:`InstancePlaceholder<class_InstancePlaceholder>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

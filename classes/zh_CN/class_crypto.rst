@@ -5,18 +5,18 @@
 Crypto
 ======
 
-**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-提供对高阶加密功能的访问。
+Provides access to advanced cryptographic functionalities.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-Crypto 类提供对高阶加密功能的访问。
+The Crypto class provides access to advanced cryptographic functionalities.
 
-目前，包括非对称密钥的加密/解密和签名/验证、生成加密安全随机字节、RSA 密钥、HMAC 摘要以及自签名的 :ref:`X509Certificate<class_X509Certificate>`\ 。
+Currently, this includes asymmetric key encryption/decryption, signing/verification, and generating cryptographically secure random bytes, RSA keys, HMAC digests, and self-signed :ref:`X509Certificate<class_X509Certificate>`\ s.
 
 
 .. tabs::
@@ -25,30 +25,30 @@ Crypto 类提供对高阶加密功能的访问。
 
     var crypto = Crypto.new()
 
-    # 生成新的 RSA 密钥。
+    # Generate new RSA key.
     var key = crypto.generate_rsa(4096)
 
-    # 使用给定的密钥生成新的自签名证书。
+    # Generate new self-signed certificate with the given key.
     var cert = crypto.generate_self_signed_certificate(key, "CN=mydomain.com,O=My Game Company,C=IT")
 
-    # 将密钥和证书保存在用户文件夹中。
+    # Save key and certificate in the user folder.
     key.save("user://generated.key")
     cert.save("user://generated.crt")
 
-    # 加密
+    # Encryption
     var data = "Some data"
     var encrypted = crypto.encrypt(key, data.to_utf8_buffer())
 
-    # 解密
+    # Decryption
     var decrypted = crypto.decrypt(key, encrypted)
 
-    # 签名
+    # Signing
     var signature = crypto.sign(HashingContext.HASH_SHA256, data.sha256_buffer(), key)
 
-    # 验证
+    # Verifying
     var verified = crypto.verify(HashingContext.HASH_SHA256, data.sha256_buffer(), signature, key)
 
-    # 校验
+    # Checks
     assert(verified)
     assert(data.to_utf8_buffer() == decrypted)
 
@@ -59,30 +59,30 @@ Crypto 类提供对高阶加密功能的访问。
 
     Crypto crypto = new Crypto();
 
-    // 生成新的 RSA 密钥。
+    // Generate new RSA key.
     CryptoKey key = crypto.GenerateRsa(4096);
 
-    // 使用给定的密钥生成新的自签名证书。
+    // Generate new self-signed certificate with the given key.
     X509Certificate cert = crypto.GenerateSelfSignedCertificate(key, "CN=mydomain.com,O=My Game Company,C=IT");
 
-    // 将密钥和证书保存在用户文件夹中。
+    // Save key and certificate in the user folder.
     key.Save("user://generated.key");
     cert.Save("user://generated.crt");
 
-    // 加密
+    // Encryption
     string data = "Some data";
     byte[] encrypted = crypto.Encrypt(key, data.ToUtf8Buffer());
 
-    // 解密
+    // Decryption
     byte[] decrypted = crypto.Decrypt(key, encrypted);
 
-    // 签名
+    // Signing
     byte[] signature = crypto.Sign(HashingContext.HashType.Sha256, Data.Sha256Buffer(), key);
 
-    // 验证
+    // Verifying
     bool verified = crypto.Verify(HashingContext.HashType.Sha256, Data.Sha256Buffer(), signature, key);
 
-    // 校验
+    // Checks
     Debug.Assert(verified);
     Debug.Assert(data.ToUtf8Buffer() == decrypted);
 
@@ -90,8 +90,8 @@ Crypto 类提供对高阶加密功能的访问。
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -122,8 +122,8 @@ Crypto 类提供对高阶加密功能的访问。
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_Crypto_method_constant_time_compare:
 
@@ -131,9 +131,9 @@ Crypto 类提供对高阶加密功能的访问。
 
 :ref:`bool<class_bool>` **constant_time_compare**\ (\ trusted\: :ref:`PackedByteArray<class_PackedByteArray>`, received\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_Crypto_method_constant_time_compare>`
 
-比较两个 :ref:`PackedByteArray<class_PackedByteArray>` 是否相等，不会泄漏时序信息，能够防止时序攻击。
+Compares two :ref:`PackedByteArray<class_PackedByteArray>`\ s for equality without leaking timing information in order to prevent timing attacks.
 
-详见\ `这篇博文 <https://paragonie.com/blog/2015/11/preventing-timing-attacks-on-string-comparison-with-double-hmac-strategy>`__\ 。
+See `this blog post <https://paragonie.com/blog/2015/11/preventing-timing-attacks-on-string-comparison-with-double-hmac-strategy>`__ for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -145,9 +145,9 @@ Crypto 类提供对高阶加密功能的访问。
 
 :ref:`PackedByteArray<class_PackedByteArray>` **decrypt**\ (\ key\: :ref:`CryptoKey<class_CryptoKey>`, ciphertext\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_Crypto_method_decrypt>`
 
-用提供的私钥 ``key`` 解密给定的密文 ``ciphertext``\ 。
+Decrypt the given ``ciphertext`` with the provided private ``key``.
 
-\ **注意：**\ 所接受的密文的最大尺寸受到密钥大小的限制。
+\ **Note:** The maximum size of accepted ciphertext is limited by the key size.
 
 .. rst-class:: classref-item-separator
 
@@ -159,9 +159,9 @@ Crypto 类提供对高阶加密功能的访问。
 
 :ref:`PackedByteArray<class_PackedByteArray>` **encrypt**\ (\ key\: :ref:`CryptoKey<class_CryptoKey>`, plaintext\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_Crypto_method_encrypt>`
 
-用提供的公钥 ``key`` 加密给定的明文 ``plaintext``\ 。
+Encrypt the given ``plaintext`` with the provided public ``key``.
 
-\ **注意：**\ 所接受的明文的最大尺寸受到密钥大小的限制。
+\ **Note:** The maximum size of accepted plaintext is limited by the key size.
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +173,7 @@ Crypto 类提供对高阶加密功能的访问。
 
 :ref:`PackedByteArray<class_PackedByteArray>` **generate_random_bytes**\ (\ size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Crypto_method_generate_random_bytes>`
 
-生成具有给定大小 ``size`` 的加密安全随机字节的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。
+Generates a :ref:`PackedByteArray<class_PackedByteArray>` of cryptographically secure random bytes with given ``size``.
 
 .. rst-class:: classref-item-separator
 
@@ -185,7 +185,7 @@ Crypto 类提供对高阶加密功能的访问。
 
 :ref:`CryptoKey<class_CryptoKey>` **generate_rsa**\ (\ size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Crypto_method_generate_rsa>`
 
-生成可用于创建自签名证书并传递给 :ref:`StreamPeerTLS.accept_stream()<class_StreamPeerTLS_method_accept_stream>` 的 RSA :ref:`CryptoKey<class_CryptoKey>`\ 。
+Generates an RSA :ref:`CryptoKey<class_CryptoKey>` that can be used for creating self-signed certificates and passed to :ref:`StreamPeerTLS.accept_stream()<class_StreamPeerTLS_method_accept_stream>`.
 
 .. rst-class:: classref-item-separator
 
@@ -197,9 +197,9 @@ Crypto 类提供对高阶加密功能的访问。
 
 :ref:`X509Certificate<class_X509Certificate>` **generate_self_signed_certificate**\ (\ key\: :ref:`CryptoKey<class_CryptoKey>`, issuer_name\: :ref:`String<class_String>` = "CN=myserver,O=myorganisation,C=IT", not_before\: :ref:`String<class_String>` = "20140101000000", not_after\: :ref:`String<class_String>` = "20340101000000"\ ) :ref:`🔗<class_Crypto_method_generate_self_signed_certificate>`
 
-根据给定的 :ref:`CryptoKey<class_CryptoKey>` 和 ``issuer_name`` 生成自签名的 :ref:`X509Certificate<class_X509Certificate>`\ 。证书有效性将由 ``not_before`` 和 ``not_after``\ （第一个有效日期和最后一个有效日期）定义。\ ``issuer_name`` 必须至少包含“CN=”（通用名称，即域名）、“O=”（组织，即你的公司名称）、“C=”（国家，即 2 个字母的该组织所在的国家/地区的 ISO-3166 代码）。
+Generates a self-signed :ref:`X509Certificate<class_X509Certificate>` from the given :ref:`CryptoKey<class_CryptoKey>` and ``issuer_name``. The certificate validity will be defined by ``not_before`` and ``not_after`` (first valid date and last valid date). The ``issuer_name`` must contain at least "CN=" (common name, i.e. the domain name), "O=" (organization, i.e. your company name), "C=" (country, i.e. 2 lettered ISO-3166 code of the country the organization is based in).
 
-生成 RSA 密钥和 X509 自签名证书的小示例。
+A small example to generate an RSA key and an X509 self-signed certificate.
 
 
 .. tabs::
@@ -207,17 +207,17 @@ Crypto 类提供对高阶加密功能的访问。
  .. code-tab:: gdscript
 
     var crypto = Crypto.new()
-    # 生成 4096 比特 RSA 密钥。
+    # Generate 4096 bits RSA key.
     var key = crypto.generate_rsa(4096)
-    # 使用给定的密钥生成自签名证书。
+    # Generate self-signed certificate using the given key.
     var cert = crypto.generate_self_signed_certificate(key, "CN=example.com,O=A Game Company,C=IT")
 
  .. code-tab:: csharp
 
     var crypto = new Crypto();
-    // 生成 4096 比特 RSA 密钥。
+    // Generate 4096 bits RSA key.
     CryptoKey key = crypto.GenerateRsa(4096);
-    // 使用给定的密钥生成自签名证书。
+    // Generate self-signed certificate using the given key.
     X509Certificate cert = crypto.GenerateSelfSignedCertificate(key, "CN=mydomain.com,O=My Game Company,C=IT");
 
 
@@ -232,9 +232,9 @@ Crypto 类提供对高阶加密功能的访问。
 
 :ref:`PackedByteArray<class_PackedByteArray>` **hmac_digest**\ (\ hash_type\: :ref:`HashType<enum_HashingContext_HashType>`, key\: :ref:`PackedByteArray<class_PackedByteArray>`, msg\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_Crypto_method_hmac_digest>`
 
-使用密钥 ``key`` 生成 ``msg`` 的 `HMAC <https://zh.wikipedia.org/wiki/HMAC>`__ 摘要。\ ``hash_type`` 参数是用于内部和外部哈希的哈希算法。
+Generates an `HMAC <https://en.wikipedia.org/wiki/HMAC>`__ digest of ``msg`` using ``key``. The ``hash_type`` parameter is the hashing algorithm that is used for the inner and outer hashes.
 
-目前仅支持 :ref:`HashingContext.HASH_SHA256<class_HashingContext_constant_HASH_SHA256>` 和 :ref:`HashingContext.HASH_SHA1<class_HashingContext_constant_HASH_SHA1>`\ 。
+Currently, only :ref:`HashingContext.HASH_SHA256<class_HashingContext_constant_HASH_SHA256>` and :ref:`HashingContext.HASH_SHA1<class_HashingContext_constant_HASH_SHA1>` are supported.
 
 .. rst-class:: classref-item-separator
 
@@ -246,7 +246,7 @@ Crypto 类提供对高阶加密功能的访问。
 
 :ref:`PackedByteArray<class_PackedByteArray>` **sign**\ (\ hash_type\: :ref:`HashType<enum_HashingContext_HashType>`, hash\: :ref:`PackedByteArray<class_PackedByteArray>`, key\: :ref:`CryptoKey<class_CryptoKey>`\ ) :ref:`🔗<class_Crypto_method_sign>`
 
-使用提供的私钥 ``key`` 对类型为 ``hash_type`` 的给定 ``hash`` 进行签名。
+Sign a given ``hash`` of type ``hash_type`` with the provided private ``key``.
 
 .. rst-class:: classref-item-separator
 
@@ -258,14 +258,14 @@ Crypto 类提供对高阶加密功能的访问。
 
 :ref:`bool<class_bool>` **verify**\ (\ hash_type\: :ref:`HashType<enum_HashingContext_HashType>`, hash\: :ref:`PackedByteArray<class_PackedByteArray>`, signature\: :ref:`PackedByteArray<class_PackedByteArray>`, key\: :ref:`CryptoKey<class_CryptoKey>`\ ) :ref:`🔗<class_Crypto_method_verify>`
 
-使用提供的公钥 ``key`` 验证类型为 ``hash_type`` 的给定签名 ``signature``\ 。
+Verify that a given ``signature`` for ``hash`` of type ``hash_type`` against the provided public ``key``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

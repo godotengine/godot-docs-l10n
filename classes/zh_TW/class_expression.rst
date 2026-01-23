@@ -5,20 +5,20 @@
 Expression
 ==========
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-儲存你可以執行的運算式的類。
+A class that stores an expression you can execute.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-運算式可以由任何算數運算、內建數學函式呼叫、傳遞實例的方法呼叫或內建型別建構呼叫組成。
+An expression can be made of any arithmetic operation, built-in math function call, method call of a passed instance, or built-in type construction call.
 
-一個使用內建數學函式的範例運算式文字可以是 ``sqrt(pow(3, 2) + pow(4, 2))``\ 。
+An example expression text using the built-in math functions could be ``sqrt(pow(3, 2) + pow(4, 2))``.
 
-在下面的範例中，我們使用 :ref:`LineEdit<class_LineEdit>` 節點來編寫運算式並顯示結果。
+In the following example we use a :ref:`LineEdit<class_LineEdit>` node to write our expression and show the result.
 
 
 .. tabs::
@@ -67,15 +67,15 @@ Expression
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`運算式求值 <../tutorials/scripting/evaluating_expressions>`
+- :doc:`Evaluating Expressions <../tutorials/scripting/evaluating_expressions>`
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -96,8 +96,8 @@ Expression
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_Expression_method_execute:
 
@@ -105,9 +105,9 @@ Expression
 
 :ref:`Variant<class_Variant>` **execute**\ (\ inputs\: :ref:`Array<class_Array>` = [], base_instance\: :ref:`Object<class_Object>` = null, show_error\: :ref:`bool<class_bool>` = true, const_calls_only\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Expression_method_execute>`
 
-執行之前由 :ref:`parse()<class_Expression_method_parse>` 解析的運算式，並返回結果。在使用返回的物件之前，應該通過呼叫 :ref:`has_execute_failed()<class_Expression_method_has_execute_failed>` 來檢查方法是否失敗。
+Executes the expression that was previously parsed by :ref:`parse()<class_Expression_method_parse>` and returns the result. Before you use the returned object, you should check if the method failed by calling :ref:`has_execute_failed()<class_Expression_method_has_execute_failed>`.
 
-如果你在 :ref:`parse()<class_Expression_method_parse>` 中定義了輸入變數，你可以在輸入陣列中以同樣的順序指定它們的值。
+If you defined input variables in :ref:`parse()<class_Expression_method_parse>`, you can specify their values in the inputs array, in the same order.
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ Expression
 
 :ref:`String<class_String>` **get_error_text**\ (\ ) |const| :ref:`🔗<class_Expression_method_get_error_text>`
 
-如果 :ref:`parse()<class_Expression_method_parse>` 或 :ref:`execute()<class_Expression_method_execute>` 失敗，則返回錯誤文字。
+Returns the error text if :ref:`parse()<class_Expression_method_parse>` or :ref:`execute()<class_Expression_method_execute>` has failed.
 
 .. rst-class:: classref-item-separator
 
@@ -131,7 +131,7 @@ Expression
 
 :ref:`bool<class_bool>` **has_execute_failed**\ (\ ) |const| :ref:`🔗<class_Expression_method_has_execute_failed>`
 
-如果 :ref:`execute()<class_Expression_method_execute>` 失敗，返回 ``true``\ 。
+Returns ``true`` if :ref:`execute()<class_Expression_method_execute>` has failed.
 
 .. rst-class:: classref-item-separator
 
@@ -143,16 +143,16 @@ Expression
 
 :ref:`Error<enum_@GlobalScope_Error>` **parse**\ (\ expression\: :ref:`String<class_String>`, input_names\: :ref:`PackedStringArray<class_PackedStringArray>` = PackedStringArray()\ ) :ref:`🔗<class_Expression_method_parse>`
 
-解析運算式並返回 :ref:`Error<enum_@GlobalScope_Error>` 程式碼。
+Parses the expression and returns an :ref:`Error<enum_@GlobalScope_Error>` code.
 
-你也可以選擇用 ``input_names`` 來指定可能出現在運算式中的變數名稱，這樣就可以在執行運算式時進行綁定。
+You can optionally specify names of variables that may appear in the expression with ``input_names``, so that you can bind them when it gets executed.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

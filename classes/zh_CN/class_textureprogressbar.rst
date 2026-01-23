@@ -5,21 +5,21 @@
 TextureProgressBar
 ==================
 
-**继承：** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-基于纹理的进度条。适用于加载屏幕和生命或体力条。
+Texture-based progress bar. Useful for loading screens and life or stamina bars.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-TextureProgressBar 的工作方式类似于 :ref:`ProgressBar<class_ProgressBar>`\ ，但最多使用 3 个纹理，不使用 Godot 的 :ref:`Theme<class_Theme>` 资源。可用于创建水平、垂直和径向进度条。
+TextureProgressBar works like :ref:`ProgressBar<class_ProgressBar>`, but uses up to 3 textures instead of Godot's :ref:`Theme<class_Theme>` resource. It can be used to create horizontal, vertical and radial progress bars.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -66,8 +66,8 @@ TextureProgressBar 的工作方式类似于 :ref:`ProgressBar<class_ProgressBar>
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -84,8 +84,8 @@ TextureProgressBar 的工作方式类似于 :ref:`ProgressBar<class_ProgressBar>
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_TextureProgressBar_FillMode:
 
@@ -99,7 +99,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 
 :ref:`FillMode<enum_TextureProgressBar_FillMode>` **FILL_LEFT_TO_RIGHT** = ``0``
 
-:ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` 从左到右填充。
+The :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` fills from left to right.
 
 .. _class_TextureProgressBar_constant_FILL_RIGHT_TO_LEFT:
 
@@ -107,7 +107,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 
 :ref:`FillMode<enum_TextureProgressBar_FillMode>` **FILL_RIGHT_TO_LEFT** = ``1``
 
-:ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` 从右到左填充。
+The :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` fills from right to left.
 
 .. _class_TextureProgressBar_constant_FILL_TOP_TO_BOTTOM:
 
@@ -115,7 +115,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 
 :ref:`FillMode<enum_TextureProgressBar_FillMode>` **FILL_TOP_TO_BOTTOM** = ``2``
 
-:ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` 从上到下填充。
+The :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` fills from top to bottom.
 
 .. _class_TextureProgressBar_constant_FILL_BOTTOM_TO_TOP:
 
@@ -123,7 +123,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 
 :ref:`FillMode<enum_TextureProgressBar_FillMode>` **FILL_BOTTOM_TO_TOP** = ``3``
 
-:ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` 自下而上填充。
+The :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` fills from bottom to top.
 
 .. _class_TextureProgressBar_constant_FILL_CLOCKWISE:
 
@@ -131,7 +131,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 
 :ref:`FillMode<enum_TextureProgressBar_FillMode>` **FILL_CLOCKWISE** = ``4``
 
-将节点变成径向条形。\ :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` 顺时针填充。参阅\ :ref:`radial_center_offset<class_TextureProgressBar_property_radial_center_offset>`\ 、\ :ref:`radial_initial_angle<class_TextureProgressBar_property_radial_initial_angle>`\ 和\ :ref:`radial_fill_degrees<class_TextureProgressBar_property_radial_fill_degrees>`\ 来控制条形填充的方式。
+Turns the node into a radial bar. The :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` fills clockwise. See :ref:`radial_center_offset<class_TextureProgressBar_property_radial_center_offset>`, :ref:`radial_initial_angle<class_TextureProgressBar_property_radial_initial_angle>` and :ref:`radial_fill_degrees<class_TextureProgressBar_property_radial_fill_degrees>` to control the way the bar fills up.
 
 .. _class_TextureProgressBar_constant_FILL_COUNTER_CLOCKWISE:
 
@@ -139,7 +139,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 
 :ref:`FillMode<enum_TextureProgressBar_FillMode>` **FILL_COUNTER_CLOCKWISE** = ``5``
 
-将节点变成径向条形。\ :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>`\ 逆时针填充。参阅\ :ref:`radial_center_offset<class_TextureProgressBar_property_radial_center_offset>`\ 、\ :ref:`radial_initial_angle<class_TextureProgressBar_property_radial_initial_angle>`\ 和\ :ref:`radial_fill_degrees<class_TextureProgressBar_property_radial_fill_degrees>`\ 来控制条形填充的方式。
+Turns the node into a radial bar. The :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` fills counterclockwise. See :ref:`radial_center_offset<class_TextureProgressBar_property_radial_center_offset>`, :ref:`radial_initial_angle<class_TextureProgressBar_property_radial_initial_angle>` and :ref:`radial_fill_degrees<class_TextureProgressBar_property_radial_fill_degrees>` to control the way the bar fills up.
 
 .. _class_TextureProgressBar_constant_FILL_BILINEAR_LEFT_AND_RIGHT:
 
@@ -147,7 +147,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 
 :ref:`FillMode<enum_TextureProgressBar_FillMode>` **FILL_BILINEAR_LEFT_AND_RIGHT** = ``6``
 
-:ref:`texture_progress<class_TextureProgressBar_property_texture_progress>`\ 从中心开始填充，向左和向右扩展。
+The :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` fills from the center, expanding both towards the left and the right.
 
 .. _class_TextureProgressBar_constant_FILL_BILINEAR_TOP_AND_BOTTOM:
 
@@ -155,7 +155,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 
 :ref:`FillMode<enum_TextureProgressBar_FillMode>` **FILL_BILINEAR_TOP_AND_BOTTOM** = ``7``
 
-:ref:`texture_progress<class_TextureProgressBar_property_texture_progress>`\ 从中心开始填充，同时向顶部和底部扩展。
+The :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` fills from the center, expanding both towards the top and the bottom.
 
 .. _class_TextureProgressBar_constant_FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE:
 
@@ -163,7 +163,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 
 :ref:`FillMode<enum_TextureProgressBar_FillMode>` **FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE** = ``8``
 
-将节点变成径向条形。\ :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>`\ 从中心径向填充，顺时针和逆时针扩展。参阅\ :ref:`radial_center_offset<class_TextureProgressBar_property_radial_center_offset>`\ 、\ :ref:`radial_initial_angle<class_TextureProgressBar_property_radial_initial_angle>`\ 和\ :ref:`radial_fill_degrees<class_TextureProgressBar_property_radial_fill_degrees>`\ 来控制条形填充的方式。
+Turns the node into a radial bar. The :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` fills radially from the center, expanding both clockwise and counterclockwise. See :ref:`radial_center_offset<class_TextureProgressBar_property_radial_center_offset>`, :ref:`radial_initial_angle<class_TextureProgressBar_property_radial_initial_angle>` and :ref:`radial_fill_degrees<class_TextureProgressBar_property_radial_fill_degrees>` to control the way the bar fills up.
 
 .. rst-class:: classref-section-separator
 
@@ -171,8 +171,8 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_TextureProgressBar_property_fill_mode:
 
@@ -185,7 +185,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 - |void| **set_fill_mode**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_fill_mode**\ (\ )
 
-填充方向。可能的取值见 :ref:`FillMode<enum_TextureProgressBar_FillMode>`\ 。
+The fill direction. See :ref:`FillMode<enum_TextureProgressBar_FillMode>` for possible values.
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 - |void| **set_nine_patch_stretch**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_nine_patch_stretch**\ (\ )
 
-如果为 ``true``\ ，Godot 会像在 :ref:`NinePatchRect<class_NinePatchRect>` 中那样处理进度条的纹理。请使用 :ref:`stretch_margin_bottom<class_TextureProgressBar_property_stretch_margin_bottom>` 等 ``stretch_margin_*`` 属性来设置九宫格的 3×3 网格。当使用径向的 :ref:`fill_mode<class_TextureProgressBar_property_fill_mode>` 时，该设置将为 :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` 启用拉伸，\ :ref:`texture_under<class_TextureProgressBar_property_texture_under>` 和 :ref:`texture_over<class_TextureProgressBar_property_texture_over>` 则进行类似于 :ref:`NinePatchRect<class_NinePatchRect>` 的处理。
+If ``true``, Godot treats the bar's textures like in :ref:`NinePatchRect<class_NinePatchRect>`. Use the ``stretch_margin_*`` properties like :ref:`stretch_margin_bottom<class_TextureProgressBar_property_stretch_margin_bottom>` to set up the nine patch's 3×3 grid. When using a radial :ref:`fill_mode<class_TextureProgressBar_property_fill_mode>`, this setting will only enable stretching for :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>`, while :ref:`texture_under<class_TextureProgressBar_property_texture_under>` and :ref:`texture_over<class_TextureProgressBar_property_texture_over>` will be treated like in :ref:`NinePatchRect<class_NinePatchRect>`.
 
 .. rst-class:: classref-item-separator
 
@@ -219,9 +219,9 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 - |void| **set_radial_center_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_radial_center_offset**\ (\ )
 
-:ref:`fill_mode<class_TextureProgressBar_property_fill_mode>` 为 :ref:`FILL_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE>`\ 、\ :ref:`FILL_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_COUNTER_CLOCKWISE>` 或 :ref:`FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE>` 时， :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` 的偏移。
+Offsets :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` if :ref:`fill_mode<class_TextureProgressBar_property_fill_mode>` is :ref:`FILL_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE>`, :ref:`FILL_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_COUNTER_CLOCKWISE>`, or :ref:`FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE>`.
 
-\ **注意：**\ 有效的径向中心始终保持在 :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` 的范围内。如果需要将其移动到纹理的边界之外，请修改 :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>`\ ，让该纹理包含所需的额外空白空间。
+\ **Note:** The effective radial center always stays within the :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` bounds. If you need to move it outside the texture's bounds, modify the :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` to contain additional empty space where needed.
 
 .. rst-class:: classref-item-separator
 
@@ -238,9 +238,9 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 - |void| **set_fill_degrees**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fill_degrees**\ (\ )
 
-:ref:`fill_mode<class_TextureProgressBar_property_fill_mode>` 为 :ref:`FILL_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE>`\ 、\ :ref:`FILL_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_COUNTER_CLOCKWISE>` 或 :ref:`FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE>` 时， :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` 的填充上限。当节点的 ``value`` 等于其 ``max_value`` 时，则纹理将会填充到这个角度。
+Upper limit for the fill of :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` if :ref:`fill_mode<class_TextureProgressBar_property_fill_mode>` is :ref:`FILL_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE>`, :ref:`FILL_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_COUNTER_CLOCKWISE>`, or :ref:`FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE>`. When the node's ``value`` is equal to its ``max_value``, the texture fills up to this angle.
 
-见 :ref:`Range.value<class_Range_property_value>`\ 、\ :ref:`Range.max_value<class_Range_property_max_value>`\ 。
+See :ref:`Range.value<class_Range_property_value>`, :ref:`Range.max_value<class_Range_property_max_value>`.
 
 .. rst-class:: classref-item-separator
 
@@ -257,9 +257,9 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 - |void| **set_radial_initial_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_radial_initial_angle**\ (\ )
 
-:ref:`fill_mode<class_TextureProgressBar_property_fill_mode>` 为 :ref:`FILL_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE>`\ 、\ :ref:`FILL_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_COUNTER_CLOCKWISE>` 或 :ref:`FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE>` 时，\ :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` 填充的起始角度。当节点的 ``value`` 等于其 ``min_value`` 时，纹理根本不会显示出来。当 ``value`` 增加时，纹理填充并趋向于 :ref:`radial_fill_degrees<class_TextureProgressBar_property_radial_fill_degrees>`\ 。
+Starting angle for the fill of :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` if :ref:`fill_mode<class_TextureProgressBar_property_fill_mode>` is :ref:`FILL_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE>`, :ref:`FILL_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_COUNTER_CLOCKWISE>`, or :ref:`FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE<class_TextureProgressBar_constant_FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE>`. When the node's ``value`` is equal to its ``min_value``, the texture doesn't show up at all. When the ``value`` increases, the texture fills and tends towards :ref:`radial_fill_degrees<class_TextureProgressBar_property_radial_fill_degrees>`.
 
-\ **注意：**\ :ref:`radial_initial_angle<class_TextureProgressBar_property_radial_initial_angle>` 会在 ``0`` 到 ``360`` 度之间环绕（包含两端）。
+\ **Note:** :ref:`radial_initial_angle<class_TextureProgressBar_property_radial_initial_angle>` is wrapped between ``0`` and ``360`` degrees (inclusive).
 
 .. rst-class:: classref-item-separator
 
@@ -276,7 +276,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 - |void| **set_stretch_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_stretch_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-九宫格底部一行的高度。边距为 16 意味着九宫格的底角和侧面将有 16 像素的高度。你可以单独设置所有 4 个边距值，来创建边框不均一的面板。仅在 :ref:`nine_patch_stretch<class_TextureProgressBar_property_nine_patch_stretch>` 为 ``true`` 时有效。
+The height of the 9-patch's bottom row. A margin of 16 means the 9-slice's bottom corners and side will have a height of 16 pixels. You can set all 4 margin values individually to create panels with non-uniform borders. Only effective if :ref:`nine_patch_stretch<class_TextureProgressBar_property_nine_patch_stretch>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -293,7 +293,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 - |void| **set_stretch_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_stretch_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-九宫格左侧一列的宽度。仅在 :ref:`nine_patch_stretch<class_TextureProgressBar_property_nine_patch_stretch>` 为 ``true`` 时有效。
+The width of the 9-patch's left column. Only effective if :ref:`nine_patch_stretch<class_TextureProgressBar_property_nine_patch_stretch>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -310,7 +310,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 - |void| **set_stretch_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_stretch_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-九宫格右侧一列的宽度。仅在 :ref:`nine_patch_stretch<class_TextureProgressBar_property_nine_patch_stretch>` 为 ``true`` 时有效。
+The width of the 9-patch's right column. Only effective if :ref:`nine_patch_stretch<class_TextureProgressBar_property_nine_patch_stretch>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +327,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 - |void| **set_stretch_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_stretch_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-九宫格顶部一行的高度。仅在 :ref:`nine_patch_stretch<class_TextureProgressBar_property_nine_patch_stretch>` 为 ``true`` 时有效。
+The height of the 9-patch's top row. Only effective if :ref:`nine_patch_stretch<class_TextureProgressBar_property_nine_patch_stretch>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -344,7 +344,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 - |void| **set_over_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_over_texture**\ (\ )
 
-在进度条至上绘制的 :ref:`Texture2D<class_Texture2D>`\ 。可用于添加高光，也可用于添加遮挡部分 :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` 的上层边框。
+:ref:`Texture2D<class_Texture2D>` that draws over the progress bar. Use it to add highlights or an upper-frame that hides part of :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>`.
 
 .. rst-class:: classref-item-separator
 
@@ -361,9 +361,9 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 - |void| **set_progress_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_progress_texture**\ (\ )
 
-被裁剪的 :ref:`Texture2D<class_Texture2D>`\ 。裁剪基于该节点的 ``value`` 和 :ref:`fill_mode<class_TextureProgressBar_property_fill_mode>`\ 。随着 ``value`` 的增加，该纹理将被填满。当 ``value`` 达到 ``max_value`` 时，它将完整显示。如果 ``value`` 等于 ``min_value``\ ，则它根本不显示。
+:ref:`Texture2D<class_Texture2D>` that clips based on the node's ``value`` and :ref:`fill_mode<class_TextureProgressBar_property_fill_mode>`. As ``value`` increased, the texture fills up. It shows entirely when ``value`` reaches ``max_value``. It doesn't show at all if ``value`` is equal to ``min_value``.
 
-\ ``value`` 属性来自 :ref:`Range<class_Range>`\ 。参见 :ref:`Range.value<class_Range_property_value>`\ 、\ :ref:`Range.min_value<class_Range_property_min_value>`\ 、\ :ref:`Range.max_value<class_Range_property_max_value>`\ 。
+The ``value`` property comes from :ref:`Range<class_Range>`. See :ref:`Range.value<class_Range_property_value>`, :ref:`Range.min_value<class_Range_property_min_value>`, :ref:`Range.max_value<class_Range_property_max_value>`.
 
 .. rst-class:: classref-item-separator
 
@@ -380,7 +380,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 - |void| **set_texture_progress_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_texture_progress_offset**\ (\ )
 
-:ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` 的偏移量。对于带有花哨的边框的 :ref:`texture_over<class_TextureProgressBar_property_texture_over>` 和 :ref:`texture_under<class_TextureProgressBar_property_texture_under>` 很有用，可以避免进度纹理的边缘透明。
+The offset of :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>`. Useful for :ref:`texture_over<class_TextureProgressBar_property_texture_over>` and :ref:`texture_under<class_TextureProgressBar_property_texture_under>` with fancy borders, to avoid transparent margins in your progress texture.
 
 .. rst-class:: classref-item-separator
 
@@ -397,7 +397,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 - |void| **set_under_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_under_texture**\ (\ )
 
-在进度条下绘制的 :ref:`Texture2D<class_Texture2D>`\ 。该进度条的背景。
+:ref:`Texture2D<class_Texture2D>` that draws under the progress bar. The bar's background.
 
 .. rst-class:: classref-item-separator
 
@@ -414,7 +414,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 - |void| **set_tint_over**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_tint_over**\ (\ )
 
-将与该进度条的 :ref:`texture_over<class_TextureProgressBar_property_texture_over>` 纹理的颜色相乘。其效果类似于 :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>` ，只是它只影响这个特定的纹理，而不是整个节点。
+Multiplies the color of the bar's :ref:`texture_over<class_TextureProgressBar_property_texture_over>` texture. The effect is similar to :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>`, except it only affects this specific texture instead of the entire node.
 
 .. rst-class:: classref-item-separator
 
@@ -431,7 +431,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 - |void| **set_tint_progress**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_tint_progress**\ (\ )
 
-将与该进度条的 :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` 纹理的颜色相乘。
+Multiplies the color of the bar's :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` texture.
 
 .. rst-class:: classref-item-separator
 
@@ -448,7 +448,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 - |void| **set_tint_under**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_tint_under**\ (\ )
 
-将与该进度条的 :ref:`texture_under<class_TextureProgressBar_property_texture_under>` 纹理的颜色相乘。
+Multiplies the color of the bar's :ref:`texture_under<class_TextureProgressBar_property_texture_under>` texture.
 
 .. rst-class:: classref-section-separator
 
@@ -456,8 +456,8 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_TextureProgressBar_method_get_stretch_margin:
 
@@ -465,7 +465,7 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 
 :ref:`int<class_int>` **get_stretch_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const| :ref:`🔗<class_TextureProgressBar_method_get_stretch_margin>`
 
-返回给定索引的拉伸边距。见 :ref:`stretch_margin_bottom<class_TextureProgressBar_property_stretch_margin_bottom>` 及相关属性。
+Returns the stretch margin with the specified index. See :ref:`stretch_margin_bottom<class_TextureProgressBar_property_stretch_margin_bottom>` and related properties.
 
 .. rst-class:: classref-item-separator
 
@@ -477,14 +477,14 @@ enum **FillMode**: :ref:`🔗<enum_TextureProgressBar_FillMode>`
 
 |void| **set_stretch_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextureProgressBar_method_set_stretch_margin>`
 
-设置给定索引的拉伸边距。见 :ref:`stretch_margin_bottom<class_TextureProgressBar_property_stretch_margin_bottom>` 及相关属性。
+Sets the stretch margin with the specified index. See :ref:`stretch_margin_bottom<class_TextureProgressBar_property_stretch_margin_bottom>` and related properties.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

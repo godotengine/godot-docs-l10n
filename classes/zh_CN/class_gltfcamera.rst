@@ -5,32 +5,32 @@
 GLTFCamera
 ==========
 
-**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-代表 glTF 相机。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-代表基础 glTF 规格中定义的相机。
+Represents a glTF camera.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`运行时文件加载与保存 <../tutorials/io/runtime_file_loading_and_saving>`
+Represents a camera as defined by the base glTF spec.
 
-- `glTF 相机的详细规格 <https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-camera>`__
+.. rst-class:: classref-introduction-group
 
-- `glTF 相机规格和示例文件 <https://github.com/KhronosGroup/glTF-Tutorials/blob/master/gltfTutorial/gltfTutorial_015_SimpleCameras.md>`__
+Tutorials
+---------
+
+- :doc:`Runtime file loading and saving <../tutorials/io/runtime_file_loading_and_saving>`
+
+- `glTF camera detailed specification <https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#reference-camera>`__
+
+- `glTF camera spec and example file <https://github.com/KhronosGroup/glTF-Tutorials/blob/master/gltfTutorial/gltfTutorial_015_SimpleCameras.md>`__
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ GLTFCamera
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -71,8 +71,8 @@ GLTFCamera
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_GLTFCamera_property_depth_far:
 
@@ -85,7 +85,7 @@ GLTFCamera
 - |void| **set_depth_far**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth_far**\ (\ )
 
-该相机与远剔除边界的距离，相对于其本地 Z 轴，单位为米。映射到 glTF 的 ``zfar`` 属性。
+The distance to the far culling boundary for this camera relative to its local Z axis, in meters. This maps to glTF's ``zfar`` property.
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +102,7 @@ GLTFCamera
 - |void| **set_depth_near**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth_near**\ (\ )
 
-该相机与近剔除边界的距离，相对于其本地 Z 轴，单位为米。映射到 glTF 的 ``znear`` 属性。
+The distance to the near culling boundary for this camera relative to its local Z axis, in meters. This maps to glTF's ``znear`` property.
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ GLTFCamera
 - |void| **set_fov**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fov**\ (\ )
 
-该相机的 FOV。这个类和 glTF 在定义相机 FOV 时使用的都是弧度，但 Godot 使用的是度。映射到 glTF 的 ``yfov`` 属性。只在透视相机中使用，即 :ref:`perspective<class_GLTFCamera_property_perspective>` 为 ``true`` 时。
+The FOV of the camera. This class and glTF define the camera FOV in radians, while Godot uses degrees. This maps to glTF's ``yfov`` property. This value is only used for perspective cameras, when :ref:`perspective<class_GLTFCamera_property_perspective>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ GLTFCamera
 - |void| **set_perspective**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_perspective**\ (\ )
 
-如果为 ``true``\ ，则相机处于透视模式。否则相机处于正交模式。映射到 glTF 的相机 ``type`` 属性。详见 :ref:`Camera3D.projection<class_Camera3D_property_projection>` 及 glTF 规格。
+If ``true``, the camera is in perspective mode. Otherwise, the camera is in orthographic/orthogonal mode. This maps to glTF's camera ``type`` property. See :ref:`Camera3D.projection<class_Camera3D_property_projection>` and the glTF spec for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ GLTFCamera
 - |void| **set_size_mag**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_size_mag**\ (\ )
 
-该相机的大小。这个类和 glTF 在定义相机大小尺度时使用的都是半径的米数，但 Godot 使用的是直径的米数。映射到 glTF 的 ``ymag`` 属性。只在正交相机中使用，即 :ref:`perspective<class_GLTFCamera_property_perspective>` 为 ``false`` 时。
+The size of the camera. This class and glTF define the camera size magnitude as a radius in meters, while Godot defines it as a diameter in meters. This maps to glTF's ``ymag`` property. This value is only used for orthographic/orthogonal cameras, when :ref:`perspective<class_GLTFCamera_property_perspective>` is ``false``.
 
 .. rst-class:: classref-section-separator
 
@@ -161,8 +161,8 @@ GLTFCamera
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_GLTFCamera_method_from_dictionary:
 
@@ -170,7 +170,7 @@ GLTFCamera
 
 :ref:`GLTFCamera<class_GLTFCamera>` **from_dictionary**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`\ ) |static| :ref:`🔗<class_GLTFCamera_method_from_dictionary>`
 
-通过解析给定的 :ref:`Dictionary<class_Dictionary>` 新建 GLTFCamera 实例。
+Creates a new GLTFCamera instance by parsing the given :ref:`Dictionary<class_Dictionary>`.
 
 .. rst-class:: classref-item-separator
 
@@ -182,7 +182,7 @@ GLTFCamera
 
 :ref:`GLTFCamera<class_GLTFCamera>` **from_node**\ (\ camera_node\: :ref:`Camera3D<class_Camera3D>`\ ) |static| :ref:`🔗<class_GLTFCamera_method_from_node>`
 
-从给定的 Godot :ref:`Camera3D<class_Camera3D>` 节点新建 GLTFCamera 实例。
+Create a new GLTFCamera instance from the given Godot :ref:`Camera3D<class_Camera3D>` node.
 
 .. rst-class:: classref-item-separator
 
@@ -194,7 +194,7 @@ GLTFCamera
 
 :ref:`Dictionary<class_Dictionary>` **to_dictionary**\ (\ ) |const| :ref:`🔗<class_GLTFCamera_method_to_dictionary>`
 
-将这个 GLTFCamera 实例序列化为 :ref:`Dictionary<class_Dictionary>`\ 。
+Serializes this GLTFCamera instance into a :ref:`Dictionary<class_Dictionary>`.
 
 .. rst-class:: classref-item-separator
 
@@ -206,14 +206,14 @@ GLTFCamera
 
 :ref:`Camera3D<class_Camera3D>` **to_node**\ (\ ) |const| :ref:`🔗<class_GLTFCamera_method_to_node>`
 
-将这个 GLTFCamera 实例转换为 Godot :ref:`Camera3D<class_Camera3D>` 节点。
+Converts this GLTFCamera instance into a Godot :ref:`Camera3D<class_Camera3D>` node.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

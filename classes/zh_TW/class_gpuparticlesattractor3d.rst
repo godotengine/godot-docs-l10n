@@ -5,29 +5,29 @@
 GPUParticlesAttractor3D
 =======================
 
-**繼承：** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`GPUParticlesAttractorBox3D<class_GPUParticlesAttractorBox3D>`, :ref:`GPUParticlesAttractorSphere3D<class_GPUParticlesAttractorSphere3D>`, :ref:`GPUParticlesAttractorVectorField3D<class_GPUParticlesAttractorVectorField3D>`
+**Inherited By:** :ref:`GPUParticlesAttractorBox3D<class_GPUParticlesAttractorBox3D>`, :ref:`GPUParticlesAttractorSphere3D<class_GPUParticlesAttractorSphere3D>`, :ref:`GPUParticlesAttractorVectorField3D<class_GPUParticlesAttractorVectorField3D>`
 
-分隔線的抽象基底類別。
+Abstract base class for 3D particle attractors.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-粒子吸引器可以將粒子朝吸引器的原點吸，也可以將粒子推離吸引器的原點。
+Particle attractors can be used to attract particles towards the attractor's origin, or to push them away from the attractor's origin.
 
-粒子吸引器是即時進行的，可以在遊戲過程中進行移動、旋轉、縮放。與碰撞形狀不同，吸引器支援不均勻的縮放。
+Particle attractors work in real-time and can be moved, rotated and scaled during gameplay. Unlike collision shapes, non-uniform scaling of attractors is also supported.
 
-臨時禁用吸引器的方法是將其隱藏，也可以將 :ref:`strength<class_GPUParticlesAttractor3D_property_strength>` 設定為 ``0.0``\ 。
+Attractors can be temporarily disabled by hiding them, or by setting their :ref:`strength<class_GPUParticlesAttractor3D_property_strength>` to ``0.0``.
 
-\ **注意：**\ 粒子吸引器只會影響 :ref:`GPUParticles3D<class_GPUParticles3D>`\ ，不影響 :ref:`CPUParticles3D<class_CPUParticles3D>`\ 。
+\ **Note:** Particle attractors only affect :ref:`GPUParticles3D<class_GPUParticles3D>`, not :ref:`CPUParticles3D<class_CPUParticles3D>`.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -48,8 +48,8 @@ GPUParticlesAttractor3D
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_GPUParticlesAttractor3D_property_attenuation:
 
@@ -62,7 +62,7 @@ GPUParticlesAttractor3D
 - |void| **set_attenuation**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_attenuation**\ (\ )
 
-粒子吸引器的衰減。較高的值會導致粒子在靠近吸引器的原點時逐漸被推動。零值或負值將導致粒子一接觸吸引器的邊緣就會被快速推動。
+The particle attractor's attenuation. Higher values result in more gradual pushing of particles as they come closer to the attractor's origin. Zero or negative values will cause particles to be pushed very fast as soon as the touch the attractor's edges.
 
 .. rst-class:: classref-item-separator
 
@@ -79,11 +79,11 @@ GPUParticlesAttractor3D
 - |void| **set_cull_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_cull_mask**\ (\ )
 
-將受吸引器影響的粒子算繪層（\ :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`\ ）。預設情況下，所有粒子都受吸引子器影響。
+The particle rendering layers (:ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`) that will be affected by the attractor. By default, all particles are affected by an attractor.
 
-相應地配置粒子節點後，可以取消勾選特定層，以防止某些粒子受到吸引器的影響。例如，如果將吸引器用作法術效果的一部分，但不希望吸引器影響同一位置的不相關天氣粒子，則可以使用該屬性。
+After configuring particle nodes accordingly, specific layers can be unchecked to prevent certain particles from being affected by attractors. For example, this can be used if you're using an attractor as part of a spell effect but don't want the attractor to affect unrelated weather particles at the same position.
 
-通過在 :ref:`GPUParticles3D<class_GPUParticles3D>` 節點上設定 :ref:`ParticleProcessMaterial.attractor_interaction_enabled<class_ParticleProcessMaterial_property_attractor_interaction_enabled>`\ ，也可以在每個程序材質的基上禁用粒子吸引。
+Particle attraction can also be disabled on a per-process material basis by setting :ref:`ParticleProcessMaterial.attractor_interaction_enabled<class_ParticleProcessMaterial_property_attractor_interaction_enabled>` on the :ref:`GPUParticles3D<class_GPUParticles3D>` node.
 
 .. rst-class:: classref-item-separator
 
@@ -100,9 +100,9 @@ GPUParticlesAttractor3D
 - |void| **set_directionality**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_directionality**\ (\ )
 
-調整吸引器的方向。在 ``0.0`` 處，吸引器完全沒有方向性：它會將粒子吸引到其中心。在 ``1.0`` 中，吸引器是完全定向的：粒子將始終被推向局部 -Z（如果 :ref:`strength<class_GPUParticlesAttractor3D_property_strength>` 為負數，則推向 +Z）。
+Adjusts how directional the attractor is. At ``0.0``, the attractor is not directional at all: it will attract particles towards its center. At ``1.0``, the attractor is fully directional: particles will always be pushed towards local -Z (or +Z if :ref:`strength<class_GPUParticlesAttractor3D_property_strength>` is negative).
 
-\ **注意：**\ 如果 :ref:`directionality<class_GPUParticlesAttractor3D_property_directionality>` 大於 ``0.0``\ ，則可以通過旋轉 **GPUParticlesAttractor3D** 節點，來改變粒子推送的方向。
+\ **Note:** If :ref:`directionality<class_GPUParticlesAttractor3D_property_directionality>` is greater than ``0.0``, the direction in which particles are pushed can be changed by rotating the **GPUParticlesAttractor3D** node.
 
 .. rst-class:: classref-item-separator
 
@@ -119,14 +119,14 @@ GPUParticlesAttractor3D
 - |void| **set_strength**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_strength**\ (\ )
 
-如果 :ref:`strength<class_GPUParticlesAttractor3D_property_strength>` 為負，則粒子將被反向推動。如果 :ref:`directionality<class_GPUParticlesAttractor3D_property_directionality>` 為 ``0.0``\ ，則粒子將被推\ *離*\ 吸引器的原點，如果 :ref:`directionality<class_GPUParticlesAttractor3D_property_directionality>` 大於 ``0.0``\ ，則粒子將被推向局部 +Z。
+Adjusts the strength of the attractor. If :ref:`strength<class_GPUParticlesAttractor3D_property_strength>` is negative, particles will be pushed in the opposite direction. Particles will be pushed *away* from the attractor's origin if :ref:`directionality<class_GPUParticlesAttractor3D_property_directionality>` is ``0.0``, or towards local +Z if :ref:`directionality<class_GPUParticlesAttractor3D_property_directionality>` is greater than ``0.0``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,35 +5,35 @@
 EditorUndoRedoManager
 =====================
 
-**继承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-管理编辑器中打开场景的撤销历史。
+Manages undo history of scenes opened in the editor.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-**EditorUndoRedoManager** 是将 :ref:`UndoRedo<class_UndoRedo>` 对象与编辑场景相关联的管理器。每个场景都有自己的撤销历史，\ **EditorUndoRedoManager** 能够确保编辑器中执行的每个动作都与正确的场景相关联。与场景无关的动作（对 :ref:`ProjectSettings<class_ProjectSettings>`\ 、外部资源等对象的编辑）使用单独的全局历史。
+**EditorUndoRedoManager** is a manager for :ref:`UndoRedo<class_UndoRedo>` objects associated with edited scenes. Each scene has its own undo history and **EditorUndoRedoManager** ensures that each action performed in the editor gets associated with a proper scene. For actions not related to scenes (:ref:`ProjectSettings<class_ProjectSettings>` edits, external resources, etc.), a separate global history is used.
 
-用法与 :ref:`UndoRedo<class_UndoRedo>` 基本一致。需要创建并提交动作，然后管理器会自动决定这个动作属于哪个场景。场景是根据该动作中第一个操作所使用的对象来推断的。规则如下：
+The usage is mostly the same as :ref:`UndoRedo<class_UndoRedo>`. You create and commit actions and the manager automatically decides under-the-hood what scenes it belongs to. The scene is deduced based on the first operation in an action, using the object from the operation. The rules are as follows:
 
-- 如果该对象为 :ref:`Node<class_Node>`\ ，则使用当前编辑的场景；
+- If the object is a :ref:`Node<class_Node>`, use the currently edited scene;
 
-- 如果该对象为内置资源，则使用其路径上的场景；
+- If the object is a built-in resource, use the scene from its path;
 
-- 如果该对象为外部资源或任何其他对象，则使用全局历史。
+- If the object is external resource or anything else, use global history.
 
-推断的结果有时并不准确，所以在创建动作时你可以提供自定义的上下文对象。
+This guessing can sometimes yield false results, so you can provide a custom context object when creating an action.
 
-\ **EditorUndoRedoManager** 是为 Godot 编辑器插件使用而设计的。你可以使用 :ref:`EditorPlugin.get_undo_redo()<class_EditorPlugin_method_get_undo_redo>` 获取。对于非编辑器使用场景或者不需要与编辑器撤销历史记录集成的插件，请改用 :ref:`UndoRedo<class_UndoRedo>`\ 。
+\ **EditorUndoRedoManager** is intended to be used by Godot editor plugins. You can obtain it using :ref:`EditorPlugin.get_undo_redo()<class_EditorPlugin_method_get_undo_redo>`. For non-editor uses or plugins that don't need to integrate with the editor's undo history, use :ref:`UndoRedo<class_UndoRedo>` instead.
 
-管理器的 API 与 :ref:`UndoRedo<class_UndoRedo>` 基本一致，它的文档中有更多示例。主要区别在于 **EditorUndoRedoManager** 的动作使用对象 + 方法名，而不是 :ref:`Callable<class_Callable>`\ 。
+The manager's API is mostly the same as in :ref:`UndoRedo<class_UndoRedo>`, so you can refer to its documentation for more examples. The main difference is that **EditorUndoRedoManager** uses object + method name for actions, instead of :ref:`Callable<class_Callable>`.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -72,8 +72,8 @@ EditorUndoRedoManager
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_EditorUndoRedoManager_signal_history_changed:
 
@@ -81,7 +81,7 @@ EditorUndoRedoManager
 
 **history_changed**\ (\ ) :ref:`🔗<class_EditorUndoRedoManager_signal_history_changed>`
 
-当任何历史中的动作列表发生变化时发出，无论是当一个动作被提交或一个历史被清除时。
+Emitted when the list of actions in any history has changed, either when an action is committed or a history is cleared.
 
 .. rst-class:: classref-item-separator
 
@@ -93,7 +93,7 @@ EditorUndoRedoManager
 
 **version_changed**\ (\ ) :ref:`🔗<class_EditorUndoRedoManager_signal_version_changed>`
 
-当任何历史记录的版本因撤消或重做调用而变化时发出。
+Emitted when the version of any history has changed as a result of undo or redo call.
 
 .. rst-class:: classref-section-separator
 
@@ -101,8 +101,8 @@ EditorUndoRedoManager
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_EditorUndoRedoManager_SpecialHistory:
 
@@ -116,7 +116,7 @@ enum **SpecialHistory**: :ref:`🔗<enum_EditorUndoRedoManager_SpecialHistory>`
 
 :ref:`SpecialHistory<enum_EditorUndoRedoManager_SpecialHistory>` **GLOBAL_HISTORY** = ``0``
 
-全局历史不与任何场景相关联，但与外部资源等相关联。
+Global history not associated with any scene, but with external resources etc.
 
 .. _class_EditorUndoRedoManager_constant_REMOTE_HISTORY:
 
@@ -124,7 +124,7 @@ enum **SpecialHistory**: :ref:`🔗<enum_EditorUndoRedoManager_SpecialHistory>`
 
 :ref:`SpecialHistory<enum_EditorUndoRedoManager_SpecialHistory>` **REMOTE_HISTORY** = ``-9``
 
-与远程检查器相关的历史。在实时编辑正在运行的游戏项目时使用。
+History associated with remote inspector. Used when live editing a running project.
 
 .. _class_EditorUndoRedoManager_constant_INVALID_HISTORY:
 
@@ -132,7 +132,7 @@ enum **SpecialHistory**: :ref:`🔗<enum_EditorUndoRedoManager_SpecialHistory>`
 
 :ref:`SpecialHistory<enum_EditorUndoRedoManager_SpecialHistory>` **INVALID_HISTORY** = ``-99``
 
-无效历史“null”。这是一个特殊值，不与任何对象相关联。
+Invalid "null" history. It's a special value, not associated with any object.
 
 .. rst-class:: classref-section-separator
 
@@ -140,8 +140,8 @@ enum **SpecialHistory**: :ref:`🔗<enum_EditorUndoRedoManager_SpecialHistory>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_EditorUndoRedoManager_method_add_do_method:
 
@@ -149,9 +149,9 @@ enum **SpecialHistory**: :ref:`🔗<enum_EditorUndoRedoManager_SpecialHistory>`
 
 |void| **add_do_method**\ (\ object\: :ref:`Object<class_Object>`, method\: :ref:`StringName<class_StringName>`, ...\ ) |vararg| :ref:`🔗<class_EditorUndoRedoManager_method_add_do_method>`
 
-注册一个方法，当动作被提交（即“做”的动作）时将被调用。
+Register a method that will be called when the action is committed (i.e. the "do" action).
 
-如果这是第一次操作，\ ``object`` 将被用于推断目标撤消历史。
+If this is the first operation, the ``object`` will be used to deduce target undo history.
 
 .. rst-class:: classref-item-separator
 
@@ -163,9 +163,9 @@ enum **SpecialHistory**: :ref:`🔗<enum_EditorUndoRedoManager_SpecialHistory>`
 
 |void| **add_do_property**\ (\ object\: :ref:`Object<class_Object>`, property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_EditorUndoRedoManager_method_add_do_property>`
 
-为“做”注册一个属性值变更。
+Register a property value change for "do".
 
-如果这是第一次操作，\ ``object`` 将被用于推断目标撤消历史。
+If this is the first operation, the ``object`` will be used to deduce target undo history.
 
 .. rst-class:: classref-item-separator
 
@@ -177,7 +177,7 @@ enum **SpecialHistory**: :ref:`🔗<enum_EditorUndoRedoManager_SpecialHistory>`
 
 |void| **add_do_reference**\ (\ object\: :ref:`Object<class_Object>`\ ) :ref:`🔗<class_EditorUndoRedoManager_method_add_do_reference>`
 
-为“做”注册一个引用，如果“做”历史丢失，则该引用将被擦除。这主要用于为“做”调用而创建的新节点。请不要用于资源。
+Register a reference for "do" that will be erased if the "do" history is lost. This is useful mostly for new nodes created for the "do" call. Do not use for resources.
 
 .. rst-class:: classref-item-separator
 
@@ -189,9 +189,9 @@ enum **SpecialHistory**: :ref:`🔗<enum_EditorUndoRedoManager_SpecialHistory>`
 
 |void| **add_undo_method**\ (\ object\: :ref:`Object<class_Object>`, method\: :ref:`StringName<class_StringName>`, ...\ ) |vararg| :ref:`🔗<class_EditorUndoRedoManager_method_add_undo_method>`
 
-注册一个方法，当动作被撤销时（即“撤销”动作）将被调用。
+Register a method that will be called when the action is undone (i.e. the "undo" action).
 
-如果这是第一次操作，\ ``object`` 将被用于推断目标撤消历史。
+If this is the first operation, the ``object`` will be used to deduce target undo history.
 
 .. rst-class:: classref-item-separator
 
@@ -203,9 +203,9 @@ enum **SpecialHistory**: :ref:`🔗<enum_EditorUndoRedoManager_SpecialHistory>`
 
 |void| **add_undo_property**\ (\ object\: :ref:`Object<class_Object>`, property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_EditorUndoRedoManager_method_add_undo_property>`
 
-为“撤销”注册一个属性值变更。
+Register a property value change for "undo".
 
-如果这是第一次操作，\ ``object`` 将被用于推断目标撤消历史。
+If this is the first operation, the ``object`` will be used to deduce target undo history.
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ enum **SpecialHistory**: :ref:`🔗<enum_EditorUndoRedoManager_SpecialHistory>`
 
 |void| **add_undo_reference**\ (\ object\: :ref:`Object<class_Object>`\ ) :ref:`🔗<class_EditorUndoRedoManager_method_add_undo_reference>`
 
-为“撤消”注册一个引用，如果“撤消”历史丢失，则该引用将被擦除。这主要用于通过“做”调用（而不是“撤销”调用！）而移除的节点。
+Register a reference for "undo" that will be erased if the "undo" history is lost. This is useful mostly for nodes removed with the "do" call (not the "undo" call!).
 
 .. rst-class:: classref-item-separator
 
@@ -251,7 +251,7 @@ If ``increase_version`` is ``true``, the undo history version will be increased,
 
 |void| **commit_action**\ (\ execute\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_EditorUndoRedoManager_method_commit_action>`
 
-提交该动作。如果 ``execute`` 为 ``true``\ （默认值），则该函数被调用时所有“做”方法/属性将被调用/设置。
+Commits the action. If ``execute`` is ``true`` (default), all "do" methods/properties are called/set when this function is called.
 
 .. rst-class:: classref-item-separator
 
@@ -263,15 +263,15 @@ If ``increase_version`` is ``true``, the undo history version will be increased,
 
 |void| **create_action**\ (\ name\: :ref:`String<class_String>`, merge_mode\: :ref:`MergeMode<enum_UndoRedo_MergeMode>` = 0, custom_context\: :ref:`Object<class_Object>` = null, backward_undo_ops\: :ref:`bool<class_bool>` = false, mark_unsaved\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_EditorUndoRedoManager_method_create_action>`
 
-创建一个新的动作。调用后，请执行所有你需要的 :ref:`add_do_method()<class_EditorUndoRedoManager_method_add_do_method>`\ 、\ :ref:`add_undo_method()<class_EditorUndoRedoManager_method_add_undo_method>`\ 、\ :ref:`add_do_property()<class_EditorUndoRedoManager_method_add_do_property>` 和 :ref:`add_undo_property()<class_EditorUndoRedoManager_method_add_undo_property>` 调用，然后再用 :ref:`commit_action()<class_EditorUndoRedoManager_method_commit_action>` 提交这个动作。
+Create a new action. After this is called, do all your calls to :ref:`add_do_method()<class_EditorUndoRedoManager_method_add_do_method>`, :ref:`add_undo_method()<class_EditorUndoRedoManager_method_add_undo_method>`, :ref:`add_do_property()<class_EditorUndoRedoManager_method_add_do_property>`, and :ref:`add_undo_property()<class_EditorUndoRedoManager_method_add_undo_property>`, then commit the action with :ref:`commit_action()<class_EditorUndoRedoManager_method_commit_action>`.
 
-动作的合并方式由 ``merge_mode`` 参数决定。
+The way actions are merged is dictated by the ``merge_mode`` argument.
 
-如果提供了 ``custom_context`` 对象，则它将被用于推断目标历史（而不是使用第一个操作）。
+If ``custom_context`` object is provided, it will be used for deducing target history (instead of using the first operation).
 
-动作中撤销操作的顺序由 ``backward_undo_ops`` 决定。\ ``backward_undo_ops`` 为 ``false`` 时，撤销选项的顺序和添加顺序一致。也就是说，先添加的操作会先撤销。
+The way undo operation are ordered in actions is dictated by ``backward_undo_ops``. When ``backward_undo_ops`` is ``false`` undo option are ordered in the same order they were added. Which means the first operation to be added will be the first to be undone.
 
-如果 ``mark_unsaved`` 为 ``false``\ ，则该动作不会将历史标记为未保存。例如，适用于修改选中项的动作，或自动保存的设置项。否则，如果动作需要用户进行保存或不保存可能导致数据丢失，请将其保持为 ``true``\ 。
+If ``mark_unsaved`` is ``false``, the action will not mark the history as unsaved. This is useful for example for actions that change a selection, or a setting that will be saved automatically. Otherwise, this should be left to ``true`` if the action requires saving by the user or if it can cause data loss when left unsaved.
 
 .. rst-class:: classref-item-separator
 
@@ -283,9 +283,9 @@ If ``increase_version`` is ``true``, the undo history version will be increased,
 
 |void| **force_fixed_history**\ (\ ) :ref:`🔗<class_EditorUndoRedoManager_method_force_fixed_history>`
 
-强制下一个操作（例如 :ref:`add_do_method()<class_EditorUndoRedoManager_method_add_do_method>`\ ）使用操作的历史记录，而不是从对象中猜测。当无法正确确定历史记录时，有时需要这样做，例如对于尚未有路径的嵌套资源。
+Forces the next operation (e.g. :ref:`add_do_method()<class_EditorUndoRedoManager_method_add_do_method>`) to use the action's history rather than guessing it from the object. This is sometimes needed when a history can't be correctly determined, like for a nested resource that doesn't have a path yet.
 
-仅应在绝对必要时使用该方法，否则可能会导致无效的历史记录状态。对于大多数复杂情况，\ :ref:`create_action()<class_EditorUndoRedoManager_method_create_action>` 的 ``custom_context`` 参数就足够了。
+This method should only be used when absolutely necessary, otherwise it might cause invalid history state. For most of complex cases, the ``custom_context`` parameter of :ref:`create_action()<class_EditorUndoRedoManager_method_create_action>` is sufficient.
 
 .. rst-class:: classref-item-separator
 
@@ -297,11 +297,11 @@ If ``increase_version`` is ``true``, the undo history version will be increased,
 
 :ref:`UndoRedo<class_UndoRedo>` **get_history_undo_redo**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorUndoRedoManager_method_get_history_undo_redo>`
 
-返回与给定历史 ``id`` 关联的 :ref:`UndoRedo<class_UndoRedo>` 对象。
+Returns the :ref:`UndoRedo<class_UndoRedo>` object associated with the given history ``id``.
 
-\ ``0`` 以上的 ``id`` 被映射到打开的场景选项卡（但它与它们的顺序不匹配）。\ ``0`` 或更低的 ``id`` 具有特殊含义（参阅 :ref:`SpecialHistory<enum_EditorUndoRedoManager_SpecialHistory>`\ ）。
+\ ``id`` above ``0`` are mapped to the opened scene tabs (but it doesn't match their order). ``id`` of ``0`` or lower have special meaning (see :ref:`SpecialHistory<enum_EditorUndoRedoManager_SpecialHistory>`).
 
-最好与 :ref:`get_object_history_id()<class_EditorUndoRedoManager_method_get_object_history_id>` 一起使用。该方法被提供，只是以防需要 :ref:`UndoRedo<class_UndoRedo>` 的一些更高级的方法的情况（但请记住，直接操作 :ref:`UndoRedo<class_UndoRedo>` 对象可能会影响编辑器的稳定性）。
+Best used with :ref:`get_object_history_id()<class_EditorUndoRedoManager_method_get_object_history_id>`. This method is only provided in case you need some more advanced methods of :ref:`UndoRedo<class_UndoRedo>` (but keep in mind that directly operating on the :ref:`UndoRedo<class_UndoRedo>` object might affect editor's stability).
 
 .. rst-class:: classref-item-separator
 
@@ -313,7 +313,7 @@ If ``increase_version`` is ``true``, the undo history version will be increased,
 
 :ref:`int<class_int>` **get_object_history_id**\ (\ object\: :ref:`Object<class_Object>`\ ) |const| :ref:`🔗<class_EditorUndoRedoManager_method_get_object_history_id>`
 
-返回从给定的 ``object`` 推导出的历史 ID。它可以与 :ref:`get_history_undo_redo()<class_EditorUndoRedoManager_method_get_history_undo_redo>` 一起使用。
+Returns the history ID deduced from the given ``object``. It can be used with :ref:`get_history_undo_redo()<class_EditorUndoRedoManager_method_get_history_undo_redo>`.
 
 .. rst-class:: classref-item-separator
 
@@ -325,14 +325,14 @@ If ``increase_version`` is ``true``, the undo history version will be increased,
 
 :ref:`bool<class_bool>` **is_committing_action**\ (\ ) |const| :ref:`🔗<class_EditorUndoRedoManager_method_is_committing_action>`
 
-如果 **EditorUndoRedoManager** 当前正在提交该动作，即运行其“做”方法或属性更改（请参阅 :ref:`commit_action()<class_EditorUndoRedoManager_method_commit_action>`\ ）时，则返回 ``true``\ 。
+Returns ``true`` if the **EditorUndoRedoManager** is currently committing the action, i.e. running its "do" method or property change (see :ref:`commit_action()<class_EditorUndoRedoManager_method_commit_action>`).
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

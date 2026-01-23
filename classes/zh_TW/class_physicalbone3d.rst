@@ -8,14 +8,14 @@
 PhysicalBone3D
 ==============
 
-**繼承：** :ref:`PhysicsBody3D<class_PhysicsBody3D>` **<** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`PhysicsBody3D<class_PhysicsBody3D>` **<** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-用於讓 :ref:`Skeleton3D<class_Skeleton3D>` 中的骨骼對物理作出反應的物理體。
+A physics body used to make bones in a :ref:`Skeleton3D<class_Skeleton3D>` react to physics.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 The **PhysicalBone3D** node is a physics body that can be used to make bones in a :ref:`Skeleton3D<class_Skeleton3D>` react to physics.
 
@@ -23,15 +23,15 @@ The **PhysicalBone3D** node is a physics body that can be used to make bones in 
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
 - :doc:`Ragdoll System <../tutorials/physics/ragdoll_system>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -72,8 +72,8 @@ The **PhysicalBone3D** node is a physics body that can be used to make bones in 
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -98,8 +98,8 @@ The **PhysicalBone3D** node is a physics body that can be used to make bones in 
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_PhysicalBone3D_DampMode:
 
@@ -113,7 +113,7 @@ enum **DampMode**: :ref:`🔗<enum_PhysicalBone3D_DampMode>`
 
 :ref:`DampMode<enum_PhysicalBone3D_DampMode>` **DAMP_MODE_COMBINE** = ``0``
 
-在這種模式下，物體的阻尼值將被加到區域中設定的任何值或預設值。
+In this mode, the body's damping value is added to any value set in areas or the default value.
 
 .. _class_PhysicalBone3D_constant_DAMP_MODE_REPLACE:
 
@@ -121,7 +121,7 @@ enum **DampMode**: :ref:`🔗<enum_PhysicalBone3D_DampMode>`
 
 :ref:`DampMode<enum_PhysicalBone3D_DampMode>` **DAMP_MODE_REPLACE** = ``1``
 
-在這種模式下，物體的阻尼值將替換掉區域中設定的任何值或預設值。
+In this mode, the body's damping value replaces any value set in areas or the default value.
 
 .. rst-class:: classref-item-separator
 
@@ -187,8 +187,8 @@ A 6 degrees of freedom joint is applied to the PhysicsBone3D.
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_PhysicalBone3D_property_angular_damp:
 
@@ -237,7 +237,7 @@ Defines how :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>` is a
 - |void| **set_angular_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_angular_velocity**\ (\ )
 
-該 PhysicalBone3D 的旋轉速度，以每秒\ *弧度*\ 為單位。
+The PhysicalBone3D's rotational velocity in *radians* per second.
 
 .. rst-class:: classref-item-separator
 
@@ -254,7 +254,7 @@ Defines how :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>` is a
 - |void| **set_body_offset**\ (\ value\: :ref:`Transform3D<class_Transform3D>`\ )
 - :ref:`Transform3D<class_Transform3D>` **get_body_offset**\ (\ )
 
-設定該物體的變換。
+Sets the body's transform.
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ The body's bounciness. Values range from ``0`` (no bounce) to ``1`` (full bounci
 - |void| **set_can_sleep**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_able_to_sleep**\ (\ )
 
-如果為 ``true``\ ，則會在不移動時停用該物體，所以它在被外力喚醒前不會參與模擬。
+If ``true``, the body is deactivated when there is no movement, so it will not take part in the simulation until it is awakened by an external force.
 
 .. rst-class:: classref-item-separator
 
@@ -326,7 +326,7 @@ Setting this property will call the method :ref:`PhysicsServer3D.body_set_omit_f
 - |void| **set_friction**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_friction**\ (\ )
 
-該物體的摩擦，從 ``0``\ （無摩擦）到 ``1``\ （最大摩擦）。
+The body's friction, from ``0`` (frictionless) to ``1`` (max friction).
 
 .. rst-class:: classref-item-separator
 
@@ -360,7 +360,7 @@ This is multiplied by :ref:`ProjectSettings.physics/3d/default_gravity<class_Pro
 - |void| **set_joint_offset**\ (\ value\: :ref:`Transform3D<class_Transform3D>`\ )
 - :ref:`Transform3D<class_Transform3D>` **get_joint_offset**\ (\ )
 
-設定該關節的變換。
+Sets the joint's transform.
 
 .. rst-class:: classref-item-separator
 
@@ -377,7 +377,7 @@ This is multiplied by :ref:`ProjectSettings.physics/3d/default_gravity<class_Pro
 - |void| **set_joint_rotation**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_joint_rotation**\ (\ )
 
-設定該關節的旋轉，單位為弧度。
+Sets the joint's rotation in radians.
 
 .. rst-class:: classref-item-separator
 
@@ -447,7 +447,7 @@ Defines how :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` is app
 - |void| **set_linear_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_linear_velocity**\ (\ )
 
-物體的線速度，單位為單位每秒。可以偶爾使用，但是\ **不要每一影格都設定它**\ ，因為物理可能在另一個執行緒中運作，並且以不同的間隔。使用 :ref:`_integrate_forces()<class_PhysicalBone3D_private_method__integrate_forces>` 作為你的程序迴圈，以精確控制物體狀態。
+The body's linear velocity in units per second. Can be used sporadically, but **don't set this every frame**, because physics may run in another thread and runs at a different granularity. Use :ref:`_integrate_forces()<class_PhysicalBone3D_private_method__integrate_forces>` as your process loop for precise control of the body state.
 
 .. rst-class:: classref-item-separator
 
@@ -464,7 +464,7 @@ Defines how :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` is app
 - |void| **set_mass**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mass**\ (\ )
 
-此實體的質量。
+The body's mass.
 
 .. rst-class:: classref-section-separator
 
@@ -472,8 +472,8 @@ Defines how :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` is app
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_PhysicalBone3D_private_method__integrate_forces:
 
@@ -551,12 +551,12 @@ Returns ``true`` if the PhysicsBone3D is allowed to simulate physics.
 
 Returns ``true`` if the PhysicsBone3D is currently simulating physics.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

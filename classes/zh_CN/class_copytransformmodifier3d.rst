@@ -5,14 +5,14 @@
 CopyTransformModifier3D
 =======================
 
-**继承：** :ref:`BoneConstraint3D<class_BoneConstraint3D>` **<** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`BoneConstraint3D<class_BoneConstraint3D>` **<** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-对骨骼应用变换的 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`\ ，变换复制自参考骨骼。
+A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` that apply transform to the bone which copied from reference.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
 Apply the copied transform of the bone set by :ref:`BoneConstraint3D.set_reference_bone()<class_BoneConstraint3D_method_set_reference_bone>` to the bone set by :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` with processing it with some masks and options.
 
@@ -38,8 +38,8 @@ There are 4 ways to apply the transform, depending on the combination of :ref:`s
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ There are 4 ways to apply the transform, depending on the combination of :ref:`s
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -120,8 +120,8 @@ There are 4 ways to apply the transform, depending on the combination of :ref:`s
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_CopyTransformModifier3D_TransformFlag:
 
@@ -135,7 +135,7 @@ flags **TransformFlag**: :ref:`🔗<enum_CopyTransformModifier3D_TransformFlag>`
 
 :ref:`TransformFlag<enum_CopyTransformModifier3D_TransformFlag>` **TRANSFORM_FLAG_POSITION** = ``1``
 
-如果设置，则会允许复制位置。
+If set, allows to copy the position.
 
 .. _class_CopyTransformModifier3D_constant_TRANSFORM_FLAG_ROTATION:
 
@@ -143,7 +143,7 @@ flags **TransformFlag**: :ref:`🔗<enum_CopyTransformModifier3D_TransformFlag>`
 
 :ref:`TransformFlag<enum_CopyTransformModifier3D_TransformFlag>` **TRANSFORM_FLAG_ROTATION** = ``2``
 
-如果设置，则会允许复制旋转。
+If set, allows to copy the rotation.
 
 .. _class_CopyTransformModifier3D_constant_TRANSFORM_FLAG_SCALE:
 
@@ -151,7 +151,7 @@ flags **TransformFlag**: :ref:`🔗<enum_CopyTransformModifier3D_TransformFlag>`
 
 :ref:`TransformFlag<enum_CopyTransformModifier3D_TransformFlag>` **TRANSFORM_FLAG_SCALE** = ``4``
 
-如果设置，则会允许复制缩放。
+If set, allows to copy the scale.
 
 .. _class_CopyTransformModifier3D_constant_TRANSFORM_FLAG_ALL:
 
@@ -159,7 +159,7 @@ flags **TransformFlag**: :ref:`🔗<enum_CopyTransformModifier3D_TransformFlag>`
 
 :ref:`TransformFlag<enum_CopyTransformModifier3D_TransformFlag>` **TRANSFORM_FLAG_ALL** = ``7``
 
-如果设置，则会允许复制位置、旋转、缩放。
+If set, allows to copy the position/rotation/scale.
 
 .. rst-class:: classref-item-separator
 
@@ -177,7 +177,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 :ref:`AxisFlag<enum_CopyTransformModifier3D_AxisFlag>` **AXIS_FLAG_X** = ``1``
 
-如果设置，则会允许处理 X 轴。
+If set, allows to process the X-axis.
 
 .. _class_CopyTransformModifier3D_constant_AXIS_FLAG_Y:
 
@@ -185,7 +185,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 :ref:`AxisFlag<enum_CopyTransformModifier3D_AxisFlag>` **AXIS_FLAG_Y** = ``2``
 
-如果设置，则会允许处理 Y 轴。
+If set, allows to process the Y-axis.
 
 .. _class_CopyTransformModifier3D_constant_AXIS_FLAG_Z:
 
@@ -193,7 +193,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 :ref:`AxisFlag<enum_CopyTransformModifier3D_AxisFlag>` **AXIS_FLAG_Z** = ``4``
 
-如果设置，则会允许处理 Z 轴。
+If set, allows to process the Z-axis.
 
 .. _class_CopyTransformModifier3D_constant_AXIS_FLAG_ALL:
 
@@ -201,7 +201,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 :ref:`AxisFlag<enum_CopyTransformModifier3D_AxisFlag>` **AXIS_FLAG_ALL** = ``7``
 
-如果设置，则会允许处理所有轴。
+If set, allows to process the all axes.
 
 .. rst-class:: classref-section-separator
 
@@ -209,8 +209,8 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_CopyTransformModifier3D_property_setting_count:
 
@@ -223,7 +223,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 - |void| **set_setting_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_setting_count**\ (\ )
 
-修改器中设置的数量。
+The number of settings in the modifier.
 
 .. rst-class:: classref-section-separator
 
@@ -231,8 +231,8 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_CopyTransformModifier3D_method_get_axis_flags:
 
@@ -240,7 +240,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |bitfield|\[:ref:`AxisFlag<enum_CopyTransformModifier3D_AxisFlag>`\] **get_axis_flags**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CopyTransformModifier3D_method_get_axis_flags>`
 
-返回索引为 ``index`` 的设置的轴标志。
+Returns the axis flags of the setting at ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -252,7 +252,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |bitfield|\[:ref:`TransformFlag<enum_CopyTransformModifier3D_TransformFlag>`\] **get_copy_flags**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CopyTransformModifier3D_method_get_copy_flags>`
 
-返回索引为 ``index`` 的设置的复制标志。
+Returns the copy flags of the setting at ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -264,7 +264,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |bitfield|\[:ref:`AxisFlag<enum_CopyTransformModifier3D_AxisFlag>`\] **get_invert_flags**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CopyTransformModifier3D_method_get_invert_flags>`
 
-返回索引为 ``index`` 的设置的翻转标志。
+Returns the invert flags of the setting at ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -276,7 +276,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 :ref:`bool<class_bool>` **is_additive**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CopyTransformModifier3D_method_is_additive>`
 
-如果索引为 ``index`` 的设置启用了加法选项，则返回 ``true``\ 。
+Returns ``true`` if the additive option is enabled in the setting at ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -288,7 +288,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 :ref:`bool<class_bool>` **is_axis_x_enabled**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CopyTransformModifier3D_method_is_axis_x_enabled>`
 
-如果索引为 ``index`` 的设置的启用标志中存在 X 轴对应的标志，则返回 ``true``\ 。另见 :ref:`set_axis_flags()<class_CopyTransformModifier3D_method_set_axis_flags>`\ 。
+Returns ``true`` if the enable flags has the flag for the X-axis in the setting at ``index``. See also :ref:`set_axis_flags()<class_CopyTransformModifier3D_method_set_axis_flags>`.
 
 .. rst-class:: classref-item-separator
 
@@ -300,7 +300,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 :ref:`bool<class_bool>` **is_axis_x_inverted**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CopyTransformModifier3D_method_is_axis_x_inverted>`
 
-如果索引为 ``index`` 的设置的翻转标志中存在 X 轴对应的标志，则返回 ``true``\ 。另见 :ref:`set_invert_flags()<class_CopyTransformModifier3D_method_set_invert_flags>`\ 。
+Returns ``true`` if the invert flags has the flag for the X-axis in the setting at ``index``. See also :ref:`set_invert_flags()<class_CopyTransformModifier3D_method_set_invert_flags>`.
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +312,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 :ref:`bool<class_bool>` **is_axis_y_enabled**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CopyTransformModifier3D_method_is_axis_y_enabled>`
 
-如果索引为 ``index`` 的设置的启用标志中存在 Y 轴对应的标志，则返回 ``true``\ 。另见 :ref:`set_axis_flags()<class_CopyTransformModifier3D_method_set_axis_flags>`\ 。
+Returns ``true`` if the enable flags has the flag for the Y-axis in the setting at ``index``. See also :ref:`set_axis_flags()<class_CopyTransformModifier3D_method_set_axis_flags>`.
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +324,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 :ref:`bool<class_bool>` **is_axis_y_inverted**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CopyTransformModifier3D_method_is_axis_y_inverted>`
 
-如果索引为 ``index`` 的设置的翻转标志中存在 Y 轴对应的标志，则返回 ``true``\ 。另见 :ref:`set_invert_flags()<class_CopyTransformModifier3D_method_set_invert_flags>`\ 。
+Returns ``true`` if the invert flags has the flag for the Y-axis in the setting at ``index``. See also :ref:`set_invert_flags()<class_CopyTransformModifier3D_method_set_invert_flags>`.
 
 .. rst-class:: classref-item-separator
 
@@ -336,7 +336,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 :ref:`bool<class_bool>` **is_axis_z_enabled**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CopyTransformModifier3D_method_is_axis_z_enabled>`
 
-如果索引为 ``index`` 的设置的启用标志中存在 Z 轴对应的标志，则返回 ``true``\ 。另见 :ref:`set_axis_flags()<class_CopyTransformModifier3D_method_set_axis_flags>`\ 。
+Returns ``true`` if the enable flags has the flag for the Z-axis in the setting at ``index``. See also :ref:`set_axis_flags()<class_CopyTransformModifier3D_method_set_axis_flags>`.
 
 .. rst-class:: classref-item-separator
 
@@ -348,7 +348,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 :ref:`bool<class_bool>` **is_axis_z_inverted**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CopyTransformModifier3D_method_is_axis_z_inverted>`
 
-如果索引为 ``index`` 的设置的翻转标志中存在 Z 轴对应的标志，则返回 ``true``\ 。另见 :ref:`set_invert_flags()<class_CopyTransformModifier3D_method_set_invert_flags>`\ 。
+Returns ``true`` if the invert flags has the flag for the Z-axis in the setting at ``index``. See also :ref:`set_invert_flags()<class_CopyTransformModifier3D_method_set_invert_flags>`.
 
 .. rst-class:: classref-item-separator
 
@@ -360,7 +360,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 :ref:`bool<class_bool>` **is_position_copying**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CopyTransformModifier3D_method_is_position_copying>`
 
-如果索引为 ``index`` 的设置的复制标志中存在位置对应的标志，则返回 ``true``\ 。另见 :ref:`set_copy_flags()<class_CopyTransformModifier3D_method_set_copy_flags>`\ 。
+Returns ``true`` if the copy flags has the flag for the position in the setting at ``index``. See also :ref:`set_copy_flags()<class_CopyTransformModifier3D_method_set_copy_flags>`.
 
 .. rst-class:: classref-item-separator
 
@@ -372,7 +372,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 :ref:`bool<class_bool>` **is_relative**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CopyTransformModifier3D_method_is_relative>`
 
-如果索引为 ``index`` 的设置启用了相对选项，则返回 ``true``\ 。
+Returns ``true`` if the relative option is enabled in the setting at ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -384,7 +384,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 :ref:`bool<class_bool>` **is_rotation_copying**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CopyTransformModifier3D_method_is_rotation_copying>`
 
-如果索引为 ``index`` 的设置的复制标志中存在旋转对应的标志，则返回 ``true``\ 。另见 :ref:`set_copy_flags()<class_CopyTransformModifier3D_method_set_copy_flags>`\ 。
+Returns ``true`` if the copy flags has the flag for the rotation in the setting at ``index``. See also :ref:`set_copy_flags()<class_CopyTransformModifier3D_method_set_copy_flags>`.
 
 .. rst-class:: classref-item-separator
 
@@ -396,7 +396,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 :ref:`bool<class_bool>` **is_scale_copying**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CopyTransformModifier3D_method_is_scale_copying>`
 
-如果索引为 ``index`` 的设置的复制标志中存在缩放对应的标志，则返回 ``true``\ 。另见 :ref:`set_copy_flags()<class_CopyTransformModifier3D_method_set_copy_flags>`\ 。
+Returns ``true`` if the copy flags has the flag for the scale in the setting at ``index``. See also :ref:`set_copy_flags()<class_CopyTransformModifier3D_method_set_copy_flags>`.
 
 .. rst-class:: classref-item-separator
 
@@ -408,11 +408,11 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_additive**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_additive>`
 
-将索引为 ``index`` 的设置的叠加选项设置为 ``enabled``\ 。主要影响对 :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` 施加变换的过程。
+Sets additive option in the setting at ``index`` to ``enabled``. This mainly affects the process of applying transform to the :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>`.
 
-如果将 ``enabled`` 设置为 ``true``\ ，则会将处理后的变换叠加到当前应用骨骼的姿势之上。
+If sets ``enabled`` to ``true``, the processed transform is added to the pose of the current apply bone.
 
-如果将 ``enabled`` 设置为 ``false``\ ，则会将当前应用骨骼的姿势替换为处理后的变换。不过如果将 :ref:`set_relative()<class_CopyTransformModifier3D_method_set_relative>` 设为 ``true``\ ，则该变换是相对于放松姿势的。
+If sets ``enabled`` to ``false``, the pose of the current apply bone is replaced with the processed transform. However, if set :ref:`set_relative()<class_CopyTransformModifier3D_method_set_relative>` to ``true``, the transform is relative to rest.
 
 .. rst-class:: classref-item-separator
 
@@ -424,7 +424,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_axis_flags**\ (\ index\: :ref:`int<class_int>`, axis_flags\: |bitfield|\[:ref:`AxisFlag<enum_CopyTransformModifier3D_AxisFlag>`\]\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_axis_flags>`
 
-设置复制轴标志。如果标志有效，则会复制对应的轴。
+Sets the flags to copy axes. If the flag is valid, the axis is copied.
 
 .. rst-class:: classref-item-separator
 
@@ -436,7 +436,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_axis_x_enabled**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_axis_x_enabled>`
 
-如果 ``enabled`` 为 ``true``\ ，则会复制 X 轴。
+If sets ``enabled`` to ``true``, the X-axis will be copied.
 
 .. rst-class:: classref-item-separator
 
@@ -448,7 +448,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_axis_x_inverted**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_axis_x_inverted>`
 
-如果 ``enabled`` 为 ``true``\ ，则会翻转 X 轴。
+If sets ``enabled`` to ``true``, the X-axis will be inverted.
 
 .. rst-class:: classref-item-separator
 
@@ -460,7 +460,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_axis_y_enabled**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_axis_y_enabled>`
 
-如果 ``enabled`` 为 ``true``\ ，则会复制 Y 轴。
+If sets ``enabled`` to ``true``, the Y-axis will be copied.
 
 .. rst-class:: classref-item-separator
 
@@ -472,7 +472,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_axis_y_inverted**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_axis_y_inverted>`
 
-如果 ``enabled`` 为 ``true``\ ，则会翻转 Y 轴。
+If sets ``enabled`` to ``true``, the Y-axis will be inverted.
 
 .. rst-class:: classref-item-separator
 
@@ -484,7 +484,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_axis_z_enabled**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_axis_z_enabled>`
 
-如果 ``enabled`` 为 ``true``\ ，则会复制 Z 轴。
+If sets ``enabled`` to ``true``, the Z-axis will be copied.
 
 .. rst-class:: classref-item-separator
 
@@ -496,7 +496,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_axis_z_inverted**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_axis_z_inverted>`
 
-如果 ``enabled`` 为 ``true``\ ，则会翻转 Z 轴。
+If sets ``enabled`` to ``true``, the Z-axis will be inverted.
 
 .. rst-class:: classref-item-separator
 
@@ -508,9 +508,9 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_copy_flags**\ (\ index\: :ref:`int<class_int>`, copy_flags\: |bitfield|\[:ref:`TransformFlag<enum_CopyTransformModifier3D_TransformFlag>`\]\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_copy_flags>`
 
-设置处理变换操作的标志。如果标志有效，则会处理变换操作。
+Sets the flags to process the transform operations. If the flag is valid, the transform operation is processed.
 
-\ **注意：**\ 如果旋转仅对一个轴有效，就会考虑有效轴的滚转值。如果旋转对两个轴有效，就会丢弃无效轴的滚转值。
+\ **Note:** If the rotation is valid for only one axis, it respects the roll of the valid axis. If the rotation is valid for two axes, it discards the roll of the invalid axis.
 
 .. rst-class:: classref-item-separator
 
@@ -522,7 +522,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_copy_position**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_copy_position>`
 
-如果 ``enabled`` 为 ``true``\ ，则会复制位置。
+If sets ``enabled`` to ``true``, the position will be copied.
 
 .. rst-class:: classref-item-separator
 
@@ -534,7 +534,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_copy_rotation**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_copy_rotation>`
 
-如果 ``enabled`` 为 ``true``\ ，则会复制旋转。
+If sets ``enabled`` to ``true``, the rotation will be copied.
 
 .. rst-class:: classref-item-separator
 
@@ -546,7 +546,7 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_copy_scale**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_copy_scale>`
 
-如果 ``enabled`` 为 ``true``\ ，则会复制缩放。
+If sets ``enabled`` to ``true``, the scale will be copied.
 
 .. rst-class:: classref-item-separator
 
@@ -558,11 +558,11 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_invert_flags**\ (\ index\: :ref:`int<class_int>`, axis_flags\: |bitfield|\[:ref:`AxisFlag<enum_CopyTransformModifier3D_AxisFlag>`\]\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_invert_flags>`
 
-设置翻转轴的标志。如果标志有效，则会复制该轴。
+Sets the flags to inverte axes. If the flag is valid, the axis is copied.
 
-\ **注意：**\ 缩放翻转意味着对数值取倒数，并不是负数缩放。例如将 ``2.0`` 翻转就是 ``0.5``\ 。
+\ **Note:** An inverted scale means an inverse number, not a negative scale. For example, inverting ``2.0`` means ``0.5``.
 
-\ **注意：**\ 旋转翻转会翻转四元数的元素。例如，双轴反转会翻转每个轴的滚转，而三轴反转会翻转最终朝向。不过请注意，仅翻转一个轴可能会导致未翻转轴的意外旋转，这是由于四元数的特性所导致的。
+\ **Note:** An inverted rotation flips the elements of the quaternion. For example, a two-axis inversion will flip the roll of each axis, and a three-axis inversion will flip the final orientation. However, be aware that flipping only one axis may cause unintended rotation by the unflipped axes, due to the characteristics of the quaternion.
 
 .. rst-class:: classref-item-separator
 
@@ -574,18 +574,18 @@ flags **AxisFlag**: :ref:`🔗<enum_CopyTransformModifier3D_AxisFlag>`
 
 |void| **set_relative**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CopyTransformModifier3D_method_set_relative>`
 
-将索引为 ``index`` 的设置的相对选项设置为 ``enabled``\ 。
+Sets relative option in the setting at ``index`` to ``enabled``.
 
-如果将 ``enabled`` 设置为 ``true``\ ，则提取并应用的变换是相对于放松姿势的。
+If sets ``enabled`` to ``true``, the extracted and applying transform is relative to the rest.
 
-如果将 ``enabled`` 设置为 ``false``\ ，则提取到的变换是绝对的。
+If sets ``enabled`` to ``false``, the extracted transform is absolute.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

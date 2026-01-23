@@ -5,32 +5,32 @@
 ENetPacketPeer
 ==============
 
-**繼承：** :ref:`PacketPeer<class_PacketPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`PacketPeer<class_PacketPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-`ENetPeer <http://enet.bespin.org/group__peer.html>`__ 的包裝類。
-
-.. rst-class:: classref-introduction-group
-
-說明
-----
-
-表示 :ref:`ENetConnection<class_ENetConnection>` 對等體的 PacketPeer 實作。
-
-該類無法被直接產生實體，但可以在 :ref:`ENetConnection.service()<class_ENetConnection_method_service>` 期間，或通過 :ref:`ENetConnection.get_peers()<class_ENetConnection_method_get_peers>` 進行檢索。
-
-\ **注意：**\ 匯出到 Android 時，在匯出專案或使用一鍵部署之前，請確保在 Android 匯出預設中，啟用了 ``INTERNET`` 許可權。否則，Android 將阻止任何型別的網路通信。
+A wrapper class for an `ENetPeer <http://enet.bespin.org/group__peer.html>`__.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Description
+-----------
 
-- `ENet 網站上的 API 文件 <http://enet.bespin.org/usergroup0.html>`__
+A PacketPeer implementation representing a peer of an :ref:`ENetConnection<class_ENetConnection>`.
+
+This class cannot be instantiated directly but can be retrieved during :ref:`ENetConnection.service()<class_ENetConnection_method_service>` or via :ref:`ENetConnection.get_peers()<class_ENetConnection_method_get_peers>`.
+
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- `API documentation on the ENet website <http://enet.bespin.org/usergroup0.html>`__
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -75,8 +75,8 @@ ENetPacketPeer
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_ENetPacketPeer_PeerState:
 
@@ -90,7 +90,7 @@ enum **PeerState**: :ref:`🔗<enum_ENetPacketPeer_PeerState>`
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **STATE_DISCONNECTED** = ``0``
 
-該對等體已斷開連接。
+The peer is disconnected.
 
 .. _class_ENetPacketPeer_constant_STATE_CONNECTING:
 
@@ -98,7 +98,7 @@ enum **PeerState**: :ref:`🔗<enum_ENetPacketPeer_PeerState>`
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **STATE_CONNECTING** = ``1``
 
-該對等體正在嘗試連接。
+The peer is currently attempting to connect.
 
 .. _class_ENetPacketPeer_constant_STATE_ACKNOWLEDGING_CONNECT:
 
@@ -106,7 +106,7 @@ enum **PeerState**: :ref:`🔗<enum_ENetPacketPeer_PeerState>`
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **STATE_ACKNOWLEDGING_CONNECT** = ``2``
 
-該對等體已確認連接請求。
+The peer has acknowledged the connection request.
 
 .. _class_ENetPacketPeer_constant_STATE_CONNECTION_PENDING:
 
@@ -114,7 +114,7 @@ enum **PeerState**: :ref:`🔗<enum_ENetPacketPeer_PeerState>`
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **STATE_CONNECTION_PENDING** = ``3``
 
-該對等體正在連接。
+The peer is currently connecting.
 
 .. _class_ENetPacketPeer_constant_STATE_CONNECTION_SUCCEEDED:
 
@@ -122,7 +122,7 @@ enum **PeerState**: :ref:`🔗<enum_ENetPacketPeer_PeerState>`
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **STATE_CONNECTION_SUCCEEDED** = ``4``
 
-該對等體已成功連接，但還沒有準備好進行通訊（\ :ref:`STATE_CONNECTED<class_ENetPacketPeer_constant_STATE_CONNECTED>`\ ）。
+The peer has successfully connected, but is not ready to communicate with yet (:ref:`STATE_CONNECTED<class_ENetPacketPeer_constant_STATE_CONNECTED>`).
 
 .. _class_ENetPacketPeer_constant_STATE_CONNECTED:
 
@@ -130,7 +130,7 @@ enum **PeerState**: :ref:`🔗<enum_ENetPacketPeer_PeerState>`
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **STATE_CONNECTED** = ``5``
 
-該對等體已連接，可以進行通訊。
+The peer is currently connected and ready to communicate with.
 
 .. _class_ENetPacketPeer_constant_STATE_DISCONNECT_LATER:
 
@@ -146,7 +146,7 @@ The peer is expected to disconnect after it has no more outgoing packets to send
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **STATE_DISCONNECTING** = ``7``
 
-該對等體正在斷開連接。
+The peer is currently disconnecting.
 
 .. _class_ENetPacketPeer_constant_STATE_ACKNOWLEDGING_DISCONNECT:
 
@@ -154,7 +154,7 @@ The peer is expected to disconnect after it has no more outgoing packets to send
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **STATE_ACKNOWLEDGING_DISCONNECT** = ``8``
 
-該對等體已確認斷開請求。
+The peer has acknowledged the disconnection request.
 
 .. _class_ENetPacketPeer_constant_STATE_ZOMBIE:
 
@@ -162,7 +162,7 @@ The peer is expected to disconnect after it has no more outgoing packets to send
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **STATE_ZOMBIE** = ``9``
 
-該對等體已丟失連接，但並未真正斷開連接（因為該對等體還沒有對斷開連接請求進行確認）。
+The peer has lost connection, but is not considered truly disconnected (as the peer didn't acknowledge the disconnection request).
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`PeerStatistic<enum_ENetPacketPeer_PeerStatistic>` **PEER_PACKET_LOSS** = ``0``
 
-可靠封包的平均丟包率，即與 :ref:`PACKET_LOSS_SCALE<class_ENetPacketPeer_constant_PACKET_LOSS_SCALE>` 的比率。
+Mean packet loss of reliable packets as a ratio with respect to the :ref:`PACKET_LOSS_SCALE<class_ENetPacketPeer_constant_PACKET_LOSS_SCALE>`.
 
 .. _class_ENetPacketPeer_constant_PEER_PACKET_LOSS_VARIANCE:
 
@@ -188,7 +188,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`PeerStatistic<enum_ENetPacketPeer_PeerStatistic>` **PEER_PACKET_LOSS_VARIANCE** = ``1``
 
-丟包方差。
+Packet loss variance.
 
 .. _class_ENetPacketPeer_constant_PEER_PACKET_LOSS_EPOCH:
 
@@ -196,7 +196,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`PeerStatistic<enum_ENetPacketPeer_PeerStatistic>` **PEER_PACKET_LOSS_EPOCH** = ``2``
 
-丟包統計資訊上一次被更新的時間（從連接開始後的毫秒數）。丟包統計資訊更新的時間間隔為 10 秒，自上次統計資訊更新以來，至少必須有一個封包被發送。
+The time at which packet loss statistics were last updated (in milliseconds since the connection started). The interval for packet loss statistics updates is 10 seconds, and at least one packet must have been sent since the last statistics update.
 
 .. _class_ENetPacketPeer_constant_PEER_ROUND_TRIP_TIME:
 
@@ -204,7 +204,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`PeerStatistic<enum_ENetPacketPeer_PeerStatistic>` **PEER_ROUND_TRIP_TIME** = ``3``
 
-可靠封包的平均往返時間。
+Mean packet round trip time for reliable packets.
 
 .. _class_ENetPacketPeer_constant_PEER_ROUND_TRIP_TIME_VARIANCE:
 
@@ -212,7 +212,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`PeerStatistic<enum_ENetPacketPeer_PeerStatistic>` **PEER_ROUND_TRIP_TIME_VARIANCE** = ``4``
 
-平均往返時間方差。
+Variance of the mean round trip time.
 
 .. _class_ENetPacketPeer_constant_PEER_LAST_ROUND_TRIP_TIME:
 
@@ -220,7 +220,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`PeerStatistic<enum_ENetPacketPeer_PeerStatistic>` **PEER_LAST_ROUND_TRIP_TIME** = ``5``
 
-可靠封包的記錄的上次行程時間。
+Last recorded round trip time for a reliable packet.
 
 .. _class_ENetPacketPeer_constant_PEER_LAST_ROUND_TRIP_TIME_VARIANCE:
 
@@ -228,7 +228,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`PeerStatistic<enum_ENetPacketPeer_PeerStatistic>` **PEER_LAST_ROUND_TRIP_TIME_VARIANCE** = ``6``
 
-記錄的上次行程時間方差。
+Variance of the last trip time recorded.
 
 .. _class_ENetPacketPeer_constant_PEER_PACKET_THROTTLE:
 
@@ -236,7 +236,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`PeerStatistic<enum_ENetPacketPeer_PeerStatistic>` **PEER_PACKET_THROTTLE** = ``7``
 
-該對等體的目前節流狀態。
+The peer's current throttle status.
 
 .. _class_ENetPacketPeer_constant_PEER_PACKET_THROTTLE_LIMIT:
 
@@ -244,7 +244,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`PeerStatistic<enum_ENetPacketPeer_PeerStatistic>` **PEER_PACKET_THROTTLE_LIMIT** = ``8``
 
-不應被丟棄的不可靠封包的最大數量。這個值總是大於或等於 ``1`` 。初始值等於 :ref:`PACKET_THROTTLE_SCALE<class_ENetPacketPeer_constant_PACKET_THROTTLE_SCALE>`\ 。
+The maximum number of unreliable packets that should not be dropped. This value is always greater than or equal to ``1``. The initial value is equal to :ref:`PACKET_THROTTLE_SCALE<class_ENetPacketPeer_constant_PACKET_THROTTLE_SCALE>`.
 
 .. _class_ENetPacketPeer_constant_PEER_PACKET_THROTTLE_COUNTER:
 
@@ -252,7 +252,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`PeerStatistic<enum_ENetPacketPeer_PeerStatistic>` **PEER_PACKET_THROTTLE_COUNTER** = ``9``
 
-用於增加封包節流計數器的內部值。該值被硬編碼為 ``7`` 且無法更改。你可能想查看 :ref:`PEER_PACKET_THROTTLE_ACCELERATION<class_ENetPacketPeer_constant_PEER_PACKET_THROTTLE_ACCELERATION>`\ 。
+Internal value used to increment the packet throttle counter. The value is hardcoded to ``7`` and cannot be changed. You probably want to look at :ref:`PEER_PACKET_THROTTLE_ACCELERATION<class_ENetPacketPeer_constant_PEER_PACKET_THROTTLE_ACCELERATION>` instead.
 
 .. _class_ENetPacketPeer_constant_PEER_PACKET_THROTTLE_EPOCH:
 
@@ -260,7 +260,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`PeerStatistic<enum_ENetPacketPeer_PeerStatistic>` **PEER_PACKET_THROTTLE_EPOCH** = ``10``
 
-節流統計資料上一次被更新的時間（自連接開始以來的毫秒數）。節流統計更新的時間間隔是 :ref:`PEER_PACKET_THROTTLE_INTERVAL<class_ENetPacketPeer_constant_PEER_PACKET_THROTTLE_INTERVAL>`\ 。
+The time at which throttle statistics were last updated (in milliseconds since the connection started). The interval for throttle statistics updates is :ref:`PEER_PACKET_THROTTLE_INTERVAL<class_ENetPacketPeer_constant_PEER_PACKET_THROTTLE_INTERVAL>`.
 
 .. _class_ENetPacketPeer_constant_PEER_PACKET_THROTTLE_ACCELERATION:
 
@@ -268,7 +268,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`PeerStatistic<enum_ENetPacketPeer_PeerStatistic>` **PEER_PACKET_THROTTLE_ACCELERATION** = ``11``
 
-節流的加速係數。更高的值將使 ENet 更快地適應波動的網路條件，從而導致不可靠的封包\ *更*\ 頻繁地被發送。預設值為 ``2``\ 。
+The throttle's acceleration factor. Higher values will make ENet adapt to fluctuating network conditions faster, causing unrelaible packets to be sent *more* often. The default value is ``2``.
 
 .. _class_ENetPacketPeer_constant_PEER_PACKET_THROTTLE_DECELERATION:
 
@@ -276,7 +276,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`PeerStatistic<enum_ENetPacketPeer_PeerStatistic>` **PEER_PACKET_THROTTLE_DECELERATION** = ``12``
 
-節流的減速係數。更高的值將使 ENet 更快地適應波動的網路條件，從而導致不可靠的封包\ *不會*\ 頻繁地被發送。預設值為 ``2``\ 。
+The throttle's deceleration factor. Higher values will make ENet adapt to fluctuating network conditions faster, causing unrelaible packets to be sent *less* often. The default value is ``2``.
 
 .. _class_ENetPacketPeer_constant_PEER_PACKET_THROTTLE_INTERVAL:
 
@@ -284,7 +284,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`PeerStatistic<enum_ENetPacketPeer_PeerStatistic>` **PEER_PACKET_THROTTLE_INTERVAL** = ``13``
 
-測量最低平均往返時間的時間間隔，供節流機制使用（單位：毫秒）。預設值為 ``5000``\ 。
+The interval over which the lowest mean round trip time should be measured for use by the throttle mechanism (in milliseconds). The default value is ``5000``.
 
 .. rst-class:: classref-section-separator
 
@@ -292,8 +292,8 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 .. rst-class:: classref-descriptions-group
 
-常數
-----
+Constants
+---------
 
 .. _class_ENetPacketPeer_constant_PACKET_LOSS_SCALE:
 
@@ -301,7 +301,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 **PACKET_LOSS_SCALE** = ``65536`` :ref:`🔗<class_ENetPacketPeer_constant_PACKET_LOSS_SCALE>`
 
-丟包的參考尺度。請參閱 :ref:`get_statistic()<class_ENetPacketPeer_method_get_statistic>` 和 :ref:`PEER_PACKET_LOSS<class_ENetPacketPeer_constant_PEER_PACKET_LOSS>`\ 。
+The reference scale for packet loss. See :ref:`get_statistic()<class_ENetPacketPeer_method_get_statistic>` and :ref:`PEER_PACKET_LOSS<class_ENetPacketPeer_constant_PEER_PACKET_LOSS>`.
 
 .. _class_ENetPacketPeer_constant_PACKET_THROTTLE_SCALE:
 
@@ -309,7 +309,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 **PACKET_THROTTLE_SCALE** = ``32`` :ref:`🔗<class_ENetPacketPeer_constant_PACKET_THROTTLE_SCALE>`
 
-節流配置的參考值。預設值為 ``32``\ 。 請參閱 :ref:`throttle_configure()<class_ENetPacketPeer_method_throttle_configure>`\ 。
+The reference value for throttle configuration. The default value is ``32``. See :ref:`throttle_configure()<class_ENetPacketPeer_method_throttle_configure>`.
 
 .. _class_ENetPacketPeer_constant_FLAG_RELIABLE:
 
@@ -317,7 +317,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 **FLAG_RELIABLE** = ``1`` :ref:`🔗<class_ENetPacketPeer_constant_FLAG_RELIABLE>`
 
-將要發送的封包標記為可靠。
+Mark the packet to be sent as reliable.
 
 .. _class_ENetPacketPeer_constant_FLAG_UNSEQUENCED:
 
@@ -325,7 +325,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 **FLAG_UNSEQUENCED** = ``2`` :ref:`🔗<class_ENetPacketPeer_constant_FLAG_UNSEQUENCED>`
 
-將要發送的封包標記為無序（不可靠）。
+Mark the packet to be sent unsequenced (unreliable).
 
 .. _class_ENetPacketPeer_constant_FLAG_UNRELIABLE_FRAGMENT:
 
@@ -333,7 +333,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 **FLAG_UNRELIABLE_FRAGMENT** = ``8`` :ref:`🔗<class_ENetPacketPeer_constant_FLAG_UNRELIABLE_FRAGMENT>`
 
-將要發送的封包標記為不可靠，即使封包太大且需要分片（增加其被丟棄的機會）。
+Mark the packet to be sent unreliable even if the packet is too big and needs fragmentation (increasing the chance of it being dropped).
 
 .. rst-class:: classref-section-separator
 
@@ -341,8 +341,8 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_ENetPacketPeer_method_get_channels:
 
@@ -350,7 +350,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`int<class_int>` **get_channels**\ (\ ) |const| :ref:`🔗<class_ENetPacketPeer_method_get_channels>`
 
-返回為與對等體通信而分配的通道數。
+Returns the number of channels allocated for communication with peer.
 
 .. rst-class:: classref-item-separator
 
@@ -374,7 +374,7 @@ Returns the ENet flags of the next packet in the received queue. See ``FLAG_*`` 
 
 :ref:`String<class_String>` **get_remote_address**\ (\ ) |const| :ref:`🔗<class_ENetPacketPeer_method_get_remote_address>`
 
-返回該對等體的 IP 地址。
+Returns the IP address of this peer.
 
 .. rst-class:: classref-item-separator
 
@@ -386,7 +386,7 @@ Returns the ENet flags of the next packet in the received queue. See ``FLAG_*`` 
 
 :ref:`int<class_int>` **get_remote_port**\ (\ ) |const| :ref:`🔗<class_ENetPacketPeer_method_get_remote_port>`
 
-返回該對等體的遠端埠。
+Returns the remote port of this peer.
 
 .. rst-class:: classref-item-separator
 
@@ -422,7 +422,7 @@ Returns the requested ``statistic`` for this peer.
 
 :ref:`bool<class_bool>` **is_active**\ (\ ) |const| :ref:`🔗<class_ENetPacketPeer_method_is_active>`
 
-如果對等體目前處於活動狀態（即關聯的 :ref:`ENetConnection<class_ENetConnection>` 仍然有效），則返回 ``true``\ 。
+Returns ``true`` if the peer is currently active (i.e. the associated :ref:`ENetConnection<class_ENetConnection>` is still valid).
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +434,7 @@ Returns the requested ``statistic`` for this peer.
 
 |void| **peer_disconnect**\ (\ data\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ENetPacketPeer_method_peer_disconnect>`
 
-請求與對等體斷開連接。一旦斷開連接完成，在 :ref:`ENetConnection.service()<class_ENetConnection_method_service>` 期間，將生成一個 :ref:`ENetConnection.EVENT_DISCONNECT<class_ENetConnection_constant_EVENT_DISCONNECT>`\ 。
+Request a disconnection from a peer. An :ref:`ENetConnection.EVENT_DISCONNECT<class_ENetConnection_constant_EVENT_DISCONNECT>` will be generated during :ref:`ENetConnection.service()<class_ENetConnection_method_service>` once the disconnection is complete.
 
 .. rst-class:: classref-item-separator
 
@@ -446,7 +446,7 @@ Returns the requested ``statistic`` for this peer.
 
 |void| **peer_disconnect_later**\ (\ data\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ENetPacketPeer_method_peer_disconnect_later>`
 
-請求與對等體斷開連接，但僅在發送完所有佇列的傳出封包之後。一旦斷開連接完成，在 :ref:`ENetConnection.service()<class_ENetConnection_method_service>` 期間，將生成一個 :ref:`ENetConnection.EVENT_DISCONNECT<class_ENetConnection_constant_EVENT_DISCONNECT>`\ 。
+Request a disconnection from a peer, but only after all queued outgoing packets are sent. An :ref:`ENetConnection.EVENT_DISCONNECT<class_ENetConnection_constant_EVENT_DISCONNECT>` will be generated during :ref:`ENetConnection.service()<class_ENetConnection_method_service>` once the disconnection is complete.
 
 .. rst-class:: classref-item-separator
 
@@ -458,7 +458,7 @@ Returns the requested ``statistic`` for this peer.
 
 |void| **peer_disconnect_now**\ (\ data\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ENetPacketPeer_method_peer_disconnect_now>`
 
-強制立即斷開與對等體的連接。不會生成 :ref:`ENetConnection.EVENT_DISCONNECT<class_ENetConnection_constant_EVENT_DISCONNECT>`\ 。不保證外部對等體會收到斷開連接通知，並會在從此函式返回後立即重設。
+Force an immediate disconnection from a peer. No :ref:`ENetConnection.EVENT_DISCONNECT<class_ENetConnection_constant_EVENT_DISCONNECT>` will be generated. The foreign peer is not guaranteed to receive the disconnect notification, and is reset immediately upon return from this function.
 
 .. rst-class:: classref-item-separator
 
@@ -470,7 +470,7 @@ Returns the requested ``statistic`` for this peer.
 
 |void| **ping**\ (\ ) :ref:`🔗<class_ENetPacketPeer_method_ping>`
 
-向對等體發送 ping 請求。ENet 會定期自動 ping 所有連接的對等體，但也可以手動調用此函式，確保進行更頻繁的 ping 請求。
+Sends a ping request to a peer. ENet automatically pings all connected peers at regular intervals, however, this function may be called to ensure more frequent ping requests.
 
 .. rst-class:: classref-item-separator
 
@@ -482,7 +482,7 @@ Returns the requested ``statistic`` for this peer.
 
 |void| **ping_interval**\ (\ ping_interval\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ENetPacketPeer_method_ping_interval>`
 
-設定向對等體發送 ping 的間隔 ``ping_interval``\ ，單位為毫秒。Ping 既用於監控連接的有效性，也用於在低流量期間動態調整節流，以便在流量高峰期節流具有合理的回應能力。預設的 ping 間隔為 ``500`` 毫秒。
+Sets the ``ping_interval`` in milliseconds at which pings will be sent to a peer. Pings are used both to monitor the liveness of the connection and also to dynamically adjust the throttle during periods of low traffic so that the throttle has reasonable responsiveness during traffic spikes. The default ping interval is ``500`` milliseconds.
 
 .. rst-class:: classref-item-separator
 
@@ -494,7 +494,7 @@ Returns the requested ``statistic`` for this peer.
 
 |void| **reset**\ (\ ) :ref:`🔗<class_ENetPacketPeer_method_reset>`
 
-強制斷開對等體。對等體代表的外部主機不會收到斷開連接的通知，並且會在與本地主機的連接上超時。
+Forcefully disconnects a peer. The foreign host represented by the peer is not notified of the disconnection and will timeout on its connection to the local host.
 
 .. rst-class:: classref-item-separator
 
@@ -506,7 +506,7 @@ Returns the requested ``statistic`` for this peer.
 
 :ref:`Error<enum_@GlobalScope_Error>` **send**\ (\ channel\: :ref:`int<class_int>`, packet\: :ref:`PackedByteArray<class_PackedByteArray>`, flags\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ENetPacketPeer_method_send>`
 
-將封包 ``packet`` 加入通過通道 ``channel`` 發送的佇列。可用的封包旗標見 ``FLAG_*`` 常數。
+Queues a ``packet`` to be sent over the specified ``channel``. See ``FLAG_*`` constants for available packet flags.
 
 .. rst-class:: classref-item-separator
 
@@ -518,9 +518,9 @@ Returns the requested ``statistic`` for this peer.
 
 |void| **set_timeout**\ (\ timeout\: :ref:`int<class_int>`, timeout_min\: :ref:`int<class_int>`, timeout_max\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ENetPacketPeer_method_set_timeout>`
 
-設定對等體的超時參數。超時參數控制對等體因無法確認可靠流量而超時的方式和時間。超時值以毫秒表示。
+Sets the timeout parameters for a peer. The timeout parameters control how and when a peer will timeout from a failure to acknowledge reliable traffic. Timeout values are expressed in milliseconds.
 
-\ ``timeout`` 是一個係數，乘以基於平均往返時間的值，將確定可靠封包的超時限制。當達到該限制時，超時將加倍，如果該限制已達到 ``timeout_min``\ ，則對等體將斷開連接。另一方面，\ ``timeout_max`` 參數定義了一個固定的超時時間，在該時間內必須確認所有封包，否則對等體將被丟棄。
+The ``timeout`` is a factor that, multiplied by a value based on the average round trip time, will determine the timeout limit for a reliable packet. When that limit is reached, the timeout will be doubled, and the peer will be disconnected if that limit has reached ``timeout_min``. The ``timeout_max`` parameter, on the other hand, defines a fixed timeout for which any packet must be acknowledged or the peer will be dropped.
 
 .. rst-class:: classref-item-separator
 
@@ -532,22 +532,22 @@ Returns the requested ``statistic`` for this peer.
 
 |void| **throttle_configure**\ (\ interval\: :ref:`int<class_int>`, acceleration\: :ref:`int<class_int>`, deceleration\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ENetPacketPeer_method_throttle_configure>`
 
-為對等體配置節流參數。
+Configures throttle parameter for a peer.
 
-不可靠的封包會被 ENet 丟棄，以應對與對等體的互聯網連接的各種情況。節流表示一個不可靠封包不應被丟棄並因此由 ENet 將其發送到對等體的概率。通過測量指定 ``interval`` 內可靠封包往返時間的波動，ENet 將按照 ``acceleration`` 參數中指定的量增加概率，或者按照 ``deceleration`` 參數中指定的量降低概率（兩者都是與 :ref:`PACKET_THROTTLE_SCALE<class_ENetPacketPeer_constant_PACKET_THROTTLE_SCALE>` 的比率）。
+Unreliable packets are dropped by ENet in response to the varying conditions of the Internet connection to the peer. The throttle represents a probability that an unreliable packet should not be dropped and thus sent by ENet to the peer. By measuring fluctuations in round trip times of reliable packets over the specified ``interval``, ENet will either increase the probability by the amount specified in the ``acceleration`` parameter, or decrease it by the amount specified in the ``deceleration`` parameter (both are ratios to :ref:`PACKET_THROTTLE_SCALE<class_ENetPacketPeer_constant_PACKET_THROTTLE_SCALE>`).
 
-當節流的值為 :ref:`PACKET_THROTTLE_SCALE<class_ENetPacketPeer_constant_PACKET_THROTTLE_SCALE>` 時，ENet 不會丟棄任何不可靠的數據包，因此所有不可靠封包以 100% 的概率將被發送。
+When the throttle has a value of :ref:`PACKET_THROTTLE_SCALE<class_ENetPacketPeer_constant_PACKET_THROTTLE_SCALE>`, no unreliable packets are dropped by ENet, and so 100% of all unreliable packets will be sent.
 
-當節流的值為 ``0`` 時，ENet 將丟棄所有不可靠的封包，因此所有不可靠封包以 0% 的概率將被發送。
+When the throttle has a value of ``0``, all unreliable packets are dropped by ENet, and so 0% of all unreliable packets will be sent.
 
-節流的中間值表示發送不可靠封包的 0% 到 100% 之間的中間概率。考慮本地和外部主機的頻寬限制，以確定節流概率的合理限制，即使在最好的條件下也不應超過該限制。
+Intermediate values for the throttle represent intermediate probabilities between 0% and 100% of unreliable packets being sent. The bandwidth limits of the local and foreign hosts are taken into account to determine a sensible limit for the throttle probability above which it should not raise even in the best of conditions.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

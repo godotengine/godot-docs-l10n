@@ -5,16 +5,16 @@
 Signal
 ======
 
-代表 :ref:`Object<class_Object>` 中某个信号的内置类型。
+A built-in type representing a signal of an :ref:`Object<class_Object>`.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-**Signal** 即信号，是一种内置的 :ref:`Variant<class_Variant>` 类型，代表某个 :ref:`Object<class_Object>` 实例上的某个信号。与所有 :ref:`Variant<class_Variant>` 一样，信号可以存储在变量中也可以传递给函数。所有连接到该信号的 :ref:`Callable<class_Callable>`\ （以及扩展出的相应对象）都可以监听事件并对事件进行响应，无需相互直接引用。这样代码就更加灵活，便于管理。你可以使用 :ref:`Object.has_signal()<class_Object_method_has_signal>` 来检查某个 :ref:`Object<class_Object>` 对象是否有特定名称的信号。
+**Signal** is a built-in :ref:`Variant<class_Variant>` type that represents a signal of an :ref:`Object<class_Object>` instance. Like all :ref:`Variant<class_Variant>` types, it can be stored in variables and passed to functions. Signals allow all connected :ref:`Callable<class_Callable>`\ s (and by extension their respective objects) to listen and react to events, without directly referencing one another. This keeps the code flexible and easier to manage. You can check whether an :ref:`Object<class_Object>` has a given signal name using :ref:`Object.has_signal()<class_Object_method_has_signal>`.
 
-在 GDScript 中，信号可以使用 ``signal`` 关键字声明。在 C# 中，你可以对委托使用 ``[Signal]`` 特性。
+In GDScript, signals can be declared with the ``signal`` keyword. In C#, you may use the ``[Signal]`` attribute on a delegate.
 
 
 .. tabs::
@@ -23,8 +23,8 @@ Signal
 
     signal attacked
 
-    # 还可以额外声明参数。
-    # 发出信号时必须传入这些参数。
+    # Additional arguments may be declared.
+    # These arguments must be passed when the signal is emitted.
     signal item_dropped(item_name, amount)
 
  .. code-tab:: csharp
@@ -32,14 +32,14 @@ Signal
     [Signal]
     delegate void AttackedEventHandler();
 
-    // 还可以额外声明参数。
-    // 发出信号时必须传入这些参数。
+    // Additional arguments may be declared.
+    // These arguments must be passed when the signal is emitted.
     [Signal]
     delegate void ItemDroppedEventHandler(string itemName, int amount);
 
 
 
-连接信号是 Godot 中最常见的操作之一，API 为此提供了许多选项，详见下文。下面的代码展示的是推荐的做法。
+Connecting signals is one of the most common operations in Godot and the API gives many options to do so, which are described further down. The code block below shows the recommended approach.
 
 
 .. tabs::
@@ -48,51 +48,51 @@ Signal
 
     func _ready():
         var button = Button.new()
-        # 这里的 `button_down` 是 Signal Variant 类型。因此调用的是 Signal.connect() 方法而不是 Object.connect() 方法。
-        # 对该 API 的概述见下面的讨论。
+        # `button_down` here is a Signal Variant type. We therefore call the Signal.connect() method, not Object.connect().
+        # See discussion below for a more in-depth overview of the API.
         button.button_down.connect(_on_button_down)
 
-        # 假设存在 `Player` 类，定义了 `hit` 信号。
+        # This assumes that a `Player` class exists, which defines a `hit` signal.
         var player = Player.new()
-        # 我们再次使用 Signal.connect()，还使用了 Callable.bind() 方法，
-        # 返回的是绑定了参数的新 Callable。
+        # We use Signal.connect() again, and we also use the Callable.bind() method,
+        # which returns a new Callable with the parameter binds.
         player.hit.connect(_on_player_hit.bind("sword", 100))
 
     func _on_button_down():
-        print("按下了按钮！")
+        print("Button down!")
 
     func _on_player_hit(weapon_type, damage):
-        print("使用武器 %s 造成了 %d 点伤害。" % [weapon_type, damage])
+        print("Hit with weapon %s for %d damage." % [weapon_type, damage])
 
  .. code-tab:: csharp
 
     public override void _Ready()
     {
         var button = new Button();
-        // C# 支持将信号以事件的形式传递，因此我们可以这么写：
+        // C# supports passing signals as events, so we can use this idiomatic construct:
         button.ButtonDown += OnButtonDown;
 
-        // 假设存在 `Player` 类，定义了 `hit` 信号。
+        // This assumes that a `Player` class exists, which defines a `Hit` signal.
         var player = new Player();
-        // 需要绑定额外参数时可以使用 lambda。
+        // We can use lambdas when we need to bind additional parameters.
         player.Hit += () => OnPlayerHit("sword", 100);
     }
 
     private void OnButtonDown()
     {
-        GD.Print("按下了按钮！");
+        GD.Print("Button down!");
     }
 
     private void OnPlayerHit(string weaponType, int damage)
     {
-        GD.Print($"使用武器 {weaponType} 造成了 {damage} 点伤害。");
+        GD.Print($"Hit with weapon {weaponType} for {damage} damage.");
     }
 
 
 
-\ **\ ``Object.connect()`` 还是 ``Signal.connect()``?**\ 
+\ **\ ``Object.connect()`` or ``Signal.connect()``?**\ 
 
-如上所示，并不推荐使用 :ref:`Object.connect()<class_Object_method_connect>` 来连接信号。下面的代码中展示了连接信号的四种方法，包括这种传统的方法、推荐的 :ref:`connect()<class_Signal_method_connect>` 方法、使用隐式 :ref:`Callable<class_Callable>`\ 、以及手动定义。
+As seen above, the recommended method to connect signals is not :ref:`Object.connect()<class_Object_method_connect>`. The code block below shows the four options for connecting signals, using either this legacy method or the recommended :ref:`connect()<class_Signal_method_connect>`, and using either an implicit :ref:`Callable<class_Callable>` or a manually defined one.
 
 
 .. tabs::
@@ -101,13 +101,13 @@ Signal
 
     func _ready():
         var button = Button.new()
-        # 方法 1：Object.connect() 与方法的隐式 Callable。
+        # Option 1: Object.connect() with an implicit Callable for the defined function.
         button.connect("button_down", _on_button_down)
-        # 方法 2：Object.connect() 与使用目标对象和方法名构造的 Callable。
+        # Option 2: Object.connect() with a constructed Callable using a target object and method name.
         button.connect("button_down", Callable(self, "_on_button_down"))
-        # 方法 3：Signal.connect() 与方法的隐式 Callable。
+        # Option 3: Signal.connect() with an implicit Callable for the defined function.
         button.button_down.connect(_on_button_down)
-        # 方法 4：Signal.connect() 与使用目标对象和方法名构造的 Callable。
+        # Option 4: Signal.connect() with a constructed Callable using a target object and method name.
         button.button_down.connect(Callable(self, "_on_button_down"))
 
     func _on_button_down():
@@ -118,28 +118,28 @@ Signal
     public override void _Ready()
     {
         var button = new Button();
-        // 方法 1：在 C# 中，我们可以将信号以事件的形式使用，因此我们可以这么连接：
+        // Option 1: In C#, we can use signals as events and connect with this idiomatic syntax:
         button.ButtonDown += OnButtonDown;
-        // 方法 2：GodotObject.Connect() 与方法组构造的 Callable。
+        // Option 2: GodotObject.Connect() with a constructed Callable from a method group.
         button.Connect(Button.SignalName.ButtonDown, Callable.From(OnButtonDown));
-        // 方法 3：GodotObject.Connect() 与使用目标对象和方法名构造的 Callable。
+        // Option 3: GodotObject.Connect() with a constructed Callable using a target object and method name.
         button.Connect(Button.SignalName.ButtonDown, new Callable(this, MethodName.OnButtonDown));
     }
 
     private void OnButtonDown()
     {
-        GD.Print("按下了按钮！");
+        GD.Print("Button down!");
     }
 
 
 
-所有方法的效果都是一样的（\ ``button`` 的 :ref:`BaseButton.button_down<class_BaseButton_signal_button_down>` 信号连接到 ``_on_button_down``\ ），\ **方法 3** 的校验最为完善：如果 ``button_down`` **Signal** 或 ``_on_button_down`` :ref:`Callable<class_Callable>` 未定义就会输出编译错误。而\ **方法 2** 仅依赖字符串名称，只能在运行时校验名称：如果 ``"button_down"`` 不是信号或者 ``"_on_button_down"`` 不是 ``self`` 对象的方法，就会在运行时生成错误。使用方法 1、2、4 的主要原因是确实需要使用字符串（例如根据从配置文件读取的字符串通过程序来连接信号）。否则建议使用方法 3（而且速度最快）。
+While all options have the same outcome (``button``'s :ref:`BaseButton.button_down<class_BaseButton_signal_button_down>` signal will be connected to ``_on_button_down``), **option 3** offers the best validation: it will print a compile-time error if either the ``button_down`` **Signal** or the ``_on_button_down`` :ref:`Callable<class_Callable>` are not defined. On the other hand, **option 2** only relies on string names and will only be able to validate either names at runtime: it will generate an error at runtime if ``"button_down"`` is not a signal, or if ``"_on_button_down"`` is not a method in the object ``self``. The main reason for using options 1, 2, or 4 would be if you actually need to use strings (e.g. to connect signals programmatically based on strings read from a configuration file). Otherwise, option 3 is the recommended (and fastest) method.
 
-\ **参数的绑定和传递：**\ 
+\ **Binding and passing parameters:**\ 
 
-绑定参数的语法需要使用 :ref:`Callable.bind()<class_Callable_method_bind>`\ ，返回的是当前 :ref:`Callable<class_Callable>` 绑定参数后的副本。
+The syntax to bind parameters is through :ref:`Callable.bind()<class_Callable_method_bind>`, which returns a copy of the :ref:`Callable<class_Callable>` with its parameters bound.
 
-调用 :ref:`emit()<class_Signal_method_emit>` 或 :ref:`Object.emit_signal()<class_Object_method_emit_signal>` 时也可以传递信号的参数。下面的例子展示的是信号参数和绑定参数之间的关系。
+When calling :ref:`emit()<class_Signal_method_emit>` or :ref:`Object.emit_signal()<class_Object_method_emit_signal>`, the signal parameters can be also passed. The examples below show the relationship between these signal parameters and bound parameters.
 
 
 .. tabs::
@@ -147,59 +147,59 @@ Signal
  .. code-tab:: gdscript
 
     func _ready():
-        # 假设存在 `Player` 类，定义了 `hit` 信号。
+        # This assumes that a `Player` class exists, which defines a `hit` signal.
         var player = Player.new()
-        # 使用 Callable.bind()。
+        # Using Callable.bind().
         player.hit.connect(_on_player_hit.bind("sword", 100))
 
-        # 发出信号时添加的参数先传递。
+        # Parameters added when emitting the signal are passed first.
         player.hit.emit("Dark lord", 5)
 
-    # 发出信号时传入了 (`hit_by`, `level`) 两个参数，
-    # 连接信号时绑定了 (`weapon_type`, `damage`) 两个参数。
+    # We pass two arguments when emitting (`hit_by`, `level`),
+    # and bind two more arguments when connecting (`weapon_type`, `damage`).
     func _on_player_hit(hit_by, level, weapon_type, damage):
-        print("受到来自 %s（%d 级）的攻击，使用武器 %s 造成了 %d 点伤害。" % [hit_by, level, weapon_type, damage])
+        print("Hit by %s (level %d) with weapon %s for %d damage." % [hit_by, level, weapon_type, damage])
 
  .. code-tab:: csharp
 
     public override void _Ready()
     {
-        // 假设存在 `Player` 类，定义了 `hit` 信号。
+        // This assumes that a `Player` class exists, which defines a `Hit` signal.
         var player = new Player();
-        // 使用 lambda 表达式创建闭包，捕获额外参数。
-        // Lambda 只会接受信号委托定义的参数。
+        // Using lambda expressions that create a closure that captures the additional parameters.
+        // The lambda only receives the parameters defined by the signal's delegate.
         player.Hit += (hitBy, level) => OnPlayerHit(hitBy, level, "sword", 100);
 
-        // 发出信号时添加的参数先传递。
+        // Parameters added when emitting the signal are passed first.
         player.EmitSignal(SignalName.Hit, "Dark lord", 5);
     }
 
-    // 发出信号时传入了 (`hit_by`, `level`) 两个参数，
-    // 连接信号时绑定了 (`weapon_type`, `damage`) 两个参数。
+    // We pass two arguments when emitting (`hit_by`, `level`),
+    // and bind two more arguments when connecting (`weapon_type`, `damage`).
     private void OnPlayerHit(string hitBy, int level, string weaponType, int damage)
     {
-        GD.Print($"受到来自 {hitBy}（{level} 级）的攻击，使用武器 {weaponType} 造成了 {damage} 点伤害。");
+        GD.Print($"Hit by {hitBy} (level {level}) with weapon {weaponType} for {damage} damage.");
     }
 
 
 
 .. note::
 
-	通过 C# 使用该 API 时会有显著不同，详见 :ref:`doc_c_sharp_differences`\ 。
+	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
-- :doc:`使用信号 <../getting_started/step_by_step/signals>`
+- :doc:`Using Signals <../getting_started/step_by_step/signals>`
 
-- `GDScript 基础 <../tutorials/scripting/gdscript/gdscript_basics.html#signals>`__
+- `GDScript Basics <../tutorials/scripting/gdscript/gdscript_basics.html#signals>`__
 
 .. rst-class:: classref-reftable-group
 
-构造函数
---------
+Constructors
+------------
 
 .. table::
    :widths: auto
@@ -214,8 +214,8 @@ Signal
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -244,8 +244,8 @@ Signal
 
 .. rst-class:: classref-reftable-group
 
-运算符
-------
+Operators
+---------
 
 .. table::
    :widths: auto
@@ -262,8 +262,8 @@ Signal
 
 .. rst-class:: classref-descriptions-group
 
-构造函数说明
-------------
+Constructor Descriptions
+------------------------
 
 .. _class_Signal_constructor_Signal:
 
@@ -271,7 +271,7 @@ Signal
 
 :ref:`Signal<class_Signal>` **Signal**\ (\ ) :ref:`🔗<class_Signal_constructor_Signal>`
 
-构造空的 **Signal**\ ，没有绑定对象和信号名称。
+Constructs an empty **Signal** with no object nor signal name bound.
 
 .. rst-class:: classref-item-separator
 
@@ -281,7 +281,7 @@ Signal
 
 :ref:`Signal<class_Signal>` **Signal**\ (\ from\: :ref:`Signal<class_Signal>`\ )
 
-构造给定 **Signal** 的副本。
+Constructs a **Signal** as a copy of the given **Signal**.
 
 .. rst-class:: classref-item-separator
 
@@ -291,7 +291,7 @@ Signal
 
 :ref:`Signal<class_Signal>` **Signal**\ (\ object\: :ref:`Object<class_Object>`, signal\: :ref:`StringName<class_StringName>`\ )
 
-新建 **Signal** 对象，引用 ``object`` 对象中名为 ``signal`` 的信号。
+Creates a **Signal** object referencing a signal named ``signal`` in the specified ``object``.
 
 .. rst-class:: classref-section-separator
 
@@ -299,8 +299,8 @@ Signal
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_Signal_method_connect:
 
@@ -308,9 +308,9 @@ Signal
 
 :ref:`int<class_int>` **connect**\ (\ callable\: :ref:`Callable<class_Callable>`, flags\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_Signal_method_connect>`
 
-将信号连接到可调用体 ``callable``\ 。还可以添加 ``flags`` 对连接的行为进行配置（见 :ref:`ConnectFlags<enum_Object_ConnectFlags>` 常量）。可以使用 :ref:`Callable.bind()<class_Callable_method_bind>` 为连接的 ``callable`` 提供额外的参数。
+Connects this signal to the specified ``callable``. Optional ``flags`` can be also added to configure the connection's behavior (see :ref:`ConnectFlags<enum_Object_ConnectFlags>` constants). You can provide additional arguments to the connected ``callable`` by using :ref:`Callable.bind()<class_Callable_method_bind>`.
 
-一个信号只能和同一个 :ref:`Callable<class_Callable>` 连接一次。如果信号已连接，则会返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` 并生成错误，除非信号是用 :ref:`Object.CONNECT_REFERENCE_COUNTED<class_Object_constant_CONNECT_REFERENCE_COUNTED>` 连接的。要防止这个问题，请先使用 :ref:`is_connected()<class_Signal_method_is_connected>` 检查已有连接。
+A signal can only be connected once to the same :ref:`Callable<class_Callable>`. If the signal is already connected, this method returns :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` and generates an error, unless the signal is connected with :ref:`Object.CONNECT_REFERENCE_COUNTED<class_Object_constant_CONNECT_REFERENCE_COUNTED>`. To prevent this, use :ref:`is_connected()<class_Signal_method_is_connected>` first to check for existing connections.
 
 ::
 
@@ -318,9 +318,9 @@ Signal
         button.pressed.connect(_on_pressed.bind(button))
 
     func _on_pressed(button):
-        print(button.name, " 被按了一下")
+        print(button.name, " was pressed")
 
-\ **注意：**\ 如果 ``callable`` 的对象被释放，连接会丢失。
+\ **Note:** If the ``callable``'s object is freed, the connection will be lost.
 
 .. rst-class:: classref-item-separator
 
@@ -332,7 +332,7 @@ Signal
 
 |void| **disconnect**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_Signal_method_disconnect>`
 
-将该信号与给定的 :ref:`Callable<class_Callable>` 断开连接。如果该连接不存在，则会生成错误。请使用 :ref:`is_connected()<class_Signal_method_is_connected>` 来确保连接存在。
+Disconnects this signal from the specified :ref:`Callable<class_Callable>`. If the connection does not exist, generates an error. Use :ref:`is_connected()<class_Signal_method_is_connected>` to make sure that the connection exists.
 
 .. rst-class:: classref-item-separator
 
@@ -344,7 +344,7 @@ Signal
 
 |void| **emit**\ (\ ...\ ) |vararg| |const| :ref:`🔗<class_Signal_method_emit>`
 
-发出该信号。与该信号相连的所有 :ref:`Callable<class_Callable>` 都将被触发。此方法支持可变数量的参数，所以参数可以用逗号分隔列表的形式传递。
+Emits this signal. All :ref:`Callable<class_Callable>`\ s connected to this signal will be triggered. This method supports a variable number of arguments, so parameters can be passed as a comma separated list.
 
 .. rst-class:: classref-item-separator
 
@@ -356,13 +356,13 @@ Signal
 
 :ref:`Array<class_Array>` **get_connections**\ (\ ) |const| :ref:`🔗<class_Signal_method_get_connections>`
 
-返回该信号的连接 :ref:`Array<class_Array>`\ 。连接用 :ref:`Dictionary<class_Dictionary>` 表示，包含三个条目：
+Returns an :ref:`Array<class_Array>` of connections for this signal. Each connection is represented as a :ref:`Dictionary<class_Dictionary>` that contains three entries:
 
-- ``signal`` 是对此信号的引用。
+- ``signal`` is a reference to this signal;
 
-- ``callable`` 是对连接的 :ref:`Callable<class_Callable>` 的引用。
+- ``callable`` is a reference to the connected :ref:`Callable<class_Callable>`;
 
-- ``flags`` 是 :ref:`ConnectFlags<enum_Object_ConnectFlags>` 的组合。
+- ``flags`` is a combination of :ref:`ConnectFlags<enum_Object_ConnectFlags>`.
 
 .. rst-class:: classref-item-separator
 
@@ -374,7 +374,7 @@ Signal
 
 :ref:`StringName<class_StringName>` **get_name**\ (\ ) |const| :ref:`🔗<class_Signal_method_get_name>`
 
-返回该信号的名称。
+Returns the name of this signal.
 
 .. rst-class:: classref-item-separator
 
@@ -386,7 +386,7 @@ Signal
 
 :ref:`Object<class_Object>` **get_object**\ (\ ) |const| :ref:`🔗<class_Signal_method_get_object>`
 
-返回发出该信号的对象。
+Returns the object emitting this signal.
 
 .. rst-class:: classref-item-separator
 
@@ -398,7 +398,7 @@ Signal
 
 :ref:`int<class_int>` **get_object_id**\ (\ ) |const| :ref:`🔗<class_Signal_method_get_object_id>`
 
-返回发出该信号的对象的 ID（见 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`\ ）。
+Returns the ID of the object emitting this signal (see :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`).
 
 .. rst-class:: classref-item-separator
 
@@ -410,7 +410,7 @@ Signal
 
 :ref:`bool<class_bool>` **has_connections**\ (\ ) |const| :ref:`🔗<class_Signal_method_has_connections>`
 
-如果存在连接到该信号的 :ref:`Callable<class_Callable>`\ ，则返回 ``true``\ 。
+Returns ``true`` if any :ref:`Callable<class_Callable>` is connected to this signal.
 
 .. rst-class:: classref-item-separator
 
@@ -422,7 +422,7 @@ Signal
 
 :ref:`bool<class_bool>` **is_connected**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Signal_method_is_connected>`
 
-如果指定的 :ref:`Callable<class_Callable>` 已连接到此信号，则返回 ``true``\ 。
+Returns ``true`` if the specified :ref:`Callable<class_Callable>` is connected to this signal.
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +434,7 @@ Signal
 
 :ref:`bool<class_bool>` **is_null**\ (\ ) |const| :ref:`🔗<class_Signal_method_is_null>`
 
-如果该 **Signal** 不存在对象且信号名为空，则返回 ``true``\ 。等价于 ``signal == Signal()``\ 。
+Returns ``true`` if this **Signal** has no object and the signal name is empty. Equivalent to ``signal == Signal()``.
 
 .. rst-class:: classref-section-separator
 
@@ -442,8 +442,8 @@ Signal
 
 .. rst-class:: classref-descriptions-group
 
-运算符说明
-----------
+Operator Descriptions
+---------------------
 
 .. _class_Signal_operator_neq_Signal:
 
@@ -451,7 +451,7 @@ Signal
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Signal<class_Signal>`\ ) :ref:`🔗<class_Signal_operator_neq_Signal>`
 
-如果信号的对象或名称不同，则返回 ``true``\ 。
+Returns ``true`` if the signals do not share the same object and name.
 
 .. rst-class:: classref-item-separator
 
@@ -463,14 +463,14 @@ Signal
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Signal<class_Signal>`\ ) :ref:`🔗<class_Signal_operator_eq_Signal>`
 
-如果信号的对象和名称相同，则返回 ``true``\ 。
+Returns ``true`` if both signals share the same object and name.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

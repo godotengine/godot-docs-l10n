@@ -5,23 +5,23 @@
 GLTFPhysicsShape
 ================
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 Represents a glTF physics shape.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 Represents a physics shape as defined by the ``OMI_physics_shape`` or ``OMI_collider`` glTF extensions. This class is an intermediary between the glTF data and Godot's nodes, and it's abstracted in a way that allows adding support for different glTF physics extensions in the future.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`執行時檔案載入與儲存 <../tutorials/io/runtime_file_loading_and_saving>`
+- :doc:`Runtime file loading and saving <../tutorials/io/runtime_file_loading_and_saving>`
 
 - `OMI_physics_shape glTF extension <https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/OMI_physics_shape>`__
 
@@ -29,8 +29,8 @@ Represents a physics shape as defined by the ``OMI_physics_shape`` or ``OMI_coll
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ Represents a physics shape as defined by the ``OMI_physics_shape`` or ``OMI_coll
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -79,8 +79,8 @@ Represents a physics shape as defined by the ``OMI_physics_shape`` or ``OMI_coll
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_GLTFPhysicsShape_property_height:
 
@@ -205,8 +205,8 @@ The size of the shape, in meters. This is only used when the shape type is ``"bo
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_GLTFPhysicsShape_method_from_dictionary:
 
@@ -214,7 +214,7 @@ The size of the shape, in meters. This is only used when the shape type is ``"bo
 
 :ref:`GLTFPhysicsShape<class_GLTFPhysicsShape>` **from_dictionary**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`\ ) |static| :ref:`🔗<class_GLTFPhysicsShape_method_from_dictionary>`
 
-通過解析給定的 :ref:`Dictionary<class_Dictionary>` 新建 GLTFPhysicsShape 實例。
+Creates a new GLTFPhysicsShape instance by parsing the given :ref:`Dictionary<class_Dictionary>`.
 
 .. rst-class:: classref-item-separator
 
@@ -262,7 +262,7 @@ Serializes this GLTFPhysicsShape instance into a :ref:`Dictionary<class_Dictiona
 
 :ref:`CollisionShape3D<class_CollisionShape3D>` **to_node**\ (\ cache_shapes\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_GLTFPhysicsShape_method_to_node>`
 
-將這個 GLTFPhysicsShape 實例轉換為 Godot :ref:`CollisionShape3D<class_CollisionShape3D>` 節點。
+Converts this GLTFPhysicsShape instance into a Godot :ref:`CollisionShape3D<class_CollisionShape3D>` node.
 
 .. rst-class:: classref-item-separator
 
@@ -276,12 +276,12 @@ Serializes this GLTFPhysicsShape instance into a :ref:`Dictionary<class_Dictiona
 
 Converts this GLTFPhysicsShape instance into a Godot :ref:`Shape3D<class_Shape3D>` resource.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

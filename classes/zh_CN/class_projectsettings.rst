@@ -5,40 +5,40 @@
 ProjectSettings
 ===============
 
-**继承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-存储全局变量。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-储存可以从任何地方访问的变量。请使用 :ref:`get_setting()<class_ProjectSettings_method_get_setting>`\ 、\ :ref:`set_setting()<class_ProjectSettings_method_set_setting>`\ 、\ :ref:`has_setting()<class_ProjectSettings_method_has_setting>` 访问。存储在 ``project.godot`` 中的变量也会被加载到 **ProjectSettings** 中，因此这个对象常用于读取自定义游戏配置选项。
-
-指定“项目设置”的属性时，请使用设置的完整路径，包括类别。例如项目名称应使用 ``"application/config/name"``\ 。类别和属性名称可以在“项目设置”对话框中查看。
-
-\ **特性标签：**\ 可以使用\ :doc:`特性标签 <../tutorials/export/feature_tags>`\ 来针对特定的平台和配置（调试、发布……）做项目设置的覆盖。
-
-\ **覆盖：**\ 在项目的根目录下创建名为 ``override.cfg`` 的文件，就可以对任意项目设置进行覆盖。对于已导出的项目，把这个文件放在与项目二进制文件相同的目录下，也可以达到覆盖的目的。覆盖时仍会考虑基础项目设置的\ :doc:`特性标签 <../tutorials/export/feature_tags>`\ 。因此，如果你想让它们在所有平台和配置上覆盖基础项目设置，请确保\ *也用*\ 所需的特性标签覆盖该设置。
+Stores globally-accessible variables.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`项目设置 <../tutorials/editor/project_settings>`
+Stores variables that can be accessed from everywhere. Use :ref:`get_setting()<class_ProjectSettings_method_get_setting>`, :ref:`set_setting()<class_ProjectSettings_method_set_setting>` or :ref:`has_setting()<class_ProjectSettings_method_has_setting>` to access them. Variables stored in ``project.godot`` are also loaded into **ProjectSettings**, making this object very useful for reading custom game configuration options.
 
-- `3D 物理测试演示 <https://godotengine.org/asset-library/asset/2747>`__
+When naming a Project Settings property, use the full path to the setting including the category. For example, ``"application/config/name"`` for the project name. Category and property names can be viewed in the Project Settings dialog.
 
-- `3D 平台跳跃演示 <https://godotengine.org/asset-library/asset/2748>`__
+\ **Feature tags:** Project settings can be overridden for specific platforms and configurations (debug, release, ...) using :doc:`feature tags <../tutorials/export/feature_tags>`.
 
-- `操作系统测试演示 <https://godotengine.org/asset-library/asset/2789>`__
+\ **Overriding:** Any project setting can be overridden by creating a file named ``override.cfg`` in the project's root directory. This can also be used in exported projects by placing this file in the same directory as the project binary. Overriding will still take the base project settings' :doc:`feature tags <../tutorials/export/feature_tags>` in account. Therefore, make sure to *also* override the setting with the desired feature tags if you want them to override base project settings on all platforms and configurations.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Project Settings <../tutorials/editor/project_settings>`
+
+- `3D Physics Tests Demo <https://godotengine.org/asset-library/asset/2747>`__
+
+- `3D Platformer Demo <https://godotengine.org/asset-library/asset/2748>`__
+
+- `Operating System Testing Demo <https://godotengine.org/asset-library/asset/2789>`__
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -1911,8 +1911,8 @@ ProjectSettings
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -1967,8 +1967,8 @@ ProjectSettings
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_ProjectSettings_signal_settings_changed:
 
@@ -1976,7 +1976,7 @@ ProjectSettings
 
 **settings_changed**\ (\ ) :ref:`🔗<class_ProjectSettings_signal_settings_changed>`
 
-任何设置项发生改变的时候发出，每个处理帧最多一次。
+Emitted when any setting is changed, up to once per process frame.
 
 .. rst-class:: classref-section-separator
 
@@ -1984,8 +1984,8 @@ ProjectSettings
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_ProjectSettings_property_accessibility/general/accessibility_support:
 
@@ -2013,7 +2013,7 @@ Accessibility support mode:
 
 :ref:`int<class_int>` **accessibility/general/updates_per_second** = ``60`` :ref:`🔗<class_ProjectSettings_property_accessibility/general/updates_per_second>`
 
-每秒无障碍信息的更新次数。
+The number of accessibility information updates per second.
 
 .. rst-class:: classref-item-separator
 
@@ -2039,7 +2039,7 @@ If ``true``, :ref:`MeshInstance3D.skeleton<class_MeshInstance3D_property_skeleto
 
 :ref:`bool<class_bool>` **animation/warnings/check_angle_interpolation_type_conflicting** = ``true`` :ref:`🔗<class_ProjectSettings_property_animation/warnings/check_angle_interpolation_type_conflicting>`
 
-如果为 ``true``\ ，\ :ref:`AnimationMixer<class_AnimationMixer>` 会打印由于 :ref:`AnimationMixer<class_AnimationMixer>` 缓存中混合了多种角度插值类型而导致插值被迫选择最短旋转路径的警告。
+If ``true``, :ref:`AnimationMixer<class_AnimationMixer>` prints the warning of interpolation being forced to choose the shortest rotation path due to multiple angle interpolation types being mixed in the :ref:`AnimationMixer<class_AnimationMixer>` cache.
 
 .. rst-class:: classref-item-separator
 
@@ -2051,7 +2051,7 @@ If ``true``, :ref:`MeshInstance3D.skeleton<class_MeshInstance3D_property_skeleto
 
 :ref:`bool<class_bool>` **animation/warnings/check_invalid_track_paths** = ``true`` :ref:`🔗<class_ProjectSettings_property_animation/warnings/check_invalid_track_paths>`
 
-如果为 ``true``\ ，则 :ref:`AnimationMixer<class_AnimationMixer>` 打印场景中轨道路径没有匹配对象的警告。
+If ``true``, :ref:`AnimationMixer<class_AnimationMixer>` prints the warning of no matching object of the track path in the scene.
 
 .. rst-class:: classref-item-separator
 
@@ -2063,7 +2063,7 @@ If ``true``, :ref:`MeshInstance3D.skeleton<class_MeshInstance3D_property_skeleto
 
 :ref:`Color<class_Color>` **application/boot_splash/bg_color** = ``Color(0.14, 0.14, 0.14, 1)`` :ref:`🔗<class_ProjectSettings_property_application/boot_splash/bg_color>`
 
-启动界面的背景色。
+Background color for the boot splash.
 
 .. rst-class:: classref-item-separator
 
@@ -2075,13 +2075,13 @@ If ``true``, :ref:`MeshInstance3D.skeleton<class_MeshInstance3D_property_skeleto
 
 :ref:`String<class_String>` **application/boot_splash/image** = ``""`` :ref:`🔗<class_ProjectSettings_property_application/boot_splash/image>`
 
-图像的路径，会作为启动画面使用。留空时将使用默认的 Godot 引擎启动画面。
+Path to an image used as the boot splash. If left empty, the default Godot Engine splash will be displayed instead.
 
-\ **注意：**\ 仅在 :ref:`application/boot_splash/show_image<class_ProjectSettings_property_application/boot_splash/show_image>` 为 ``true`` 时有效。
+\ **Note:** Only effective if :ref:`application/boot_splash/show_image<class_ProjectSettings_property_application/boot_splash/show_image>` is ``true``.
 
-\ **注意：**\ 只支持 PNG 格式。使用其他图像格式会导致出错。
+\ **Note:** The only supported format is PNG. Using another image format will result in an error.
 
-\ **注意：**\ 使用编辑器打开该项目时也会显示这个图像。如果你希望在编辑器中使用默认的启用画面，请针对 ``editor_hint`` 特性添加一个空的覆盖项。
+\ **Note:** The image will also show when opening the project in the editor. If you want to display the default splash image in the editor, add an empty override for ``editor_hint`` feature.
 
 .. rst-class:: classref-item-separator
 
@@ -2093,7 +2093,7 @@ If ``true``, :ref:`MeshInstance3D.skeleton<class_MeshInstance3D_property_skeleto
 
 :ref:`int<class_int>` **application/boot_splash/minimum_display_time** = ``0`` :ref:`🔗<class_ProjectSettings_property_application/boot_splash/minimum_display_time>`
 
-启动画面的最小显示时间（单位为毫秒）。不建议设置为过高的值。
+Minimum boot splash display time (in milliseconds). It is not recommended to set too high values for this setting.
 
 .. rst-class:: classref-item-separator
 
@@ -2105,7 +2105,7 @@ If ``true``, :ref:`MeshInstance3D.skeleton<class_MeshInstance3D_property_skeleto
 
 :ref:`bool<class_bool>` **application/boot_splash/show_image** = ``true`` :ref:`🔗<class_ProjectSettings_property_application/boot_splash/show_image>`
 
-如果为 ``true``\ ，将在引擎启动时显示 :ref:`application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>` 所指定的图像。为 ``false`` 时，仅显示 :ref:`application/boot_splash/bg_color<class_ProjectSettings_property_application/boot_splash/bg_color>` 所指定的纯色。
+If ``true``, displays the image specified in :ref:`application/boot_splash/image<class_ProjectSettings_property_application/boot_splash/image>` when the engine starts. If ``false``, only displays the plain color specified in :ref:`application/boot_splash/bg_color<class_ProjectSettings_property_application/boot_splash/bg_color>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2129,7 +2129,7 @@ Specifies how the splash image will be stretched. For the original size without 
 
 :ref:`bool<class_bool>` **application/boot_splash/use_filter** = ``true`` :ref:`🔗<class_ProjectSettings_property_application/boot_splash/use_filter>`
 
-如果为 ``true``\ ，则在缩放图像时会应用线性过滤（推荐用于高分辨率图稿）。如果为 ``false``\ ，则使用最近邻插值（推荐用于像素画）。
+If ``true``, applies linear filtering when scaling the image (recommended for high-resolution artwork). If ``false``, uses nearest-neighbor interpolation (recommended for pixel art).
 
 .. rst-class:: classref-item-separator
 
@@ -2141,7 +2141,7 @@ Specifies how the splash image will be stretched. For the original size without 
 
 :ref:`bool<class_bool>` **application/config/auto_accept_quit** = ``true`` :ref:`🔗<class_ProjectSettings_property_application/config/auto_accept_quit>`
 
-如果为 ``true``\ ，则该应用程序会自动接受退出请求。
+If ``true``, the application automatically accepts quitting requests.
 
 .. rst-class:: classref-item-separator
 
@@ -2153,11 +2153,11 @@ Specifies how the splash image will be stretched. For the original size without 
 
 :ref:`String<class_String>` **application/config/custom_user_dir_name** = ``""`` :ref:`🔗<class_ProjectSettings_property_application/config/custom_user_dir_name>`
 
-该用户目录用于存储持久数据（\ ``user://`` 文件系统）。如果定义了自定义目录名称，则该名称将被追加到系统特定的用户数据目录（与 :ref:`OS.get_user_data_dir()<class_OS_method_get_user_data_dir>` 中记录的 Godot 配置文件夹相同的父文件夹）。
+This user directory is used for storing persistent data (``user://`` filesystem). If a custom directory name is defined, this name will be appended to the system-specific user data directory (same parent folder as the Godot configuration folder documented in :ref:`OS.get_user_data_dir()<class_OS_method_get_user_data_dir>`).
 
-\ :ref:`application/config/use_custom_user_dir<class_ProjectSettings_property_application/config/use_custom_user_dir>` 设置必须被启用，该设置才能生效。
+The :ref:`application/config/use_custom_user_dir<class_ProjectSettings_property_application/config/use_custom_user_dir>` setting must be enabled for this to take effect.
 
-\ **注意：**\ 如果 :ref:`application/config/custom_user_dir_name<class_ProjectSettings_property_application/config/custom_user_dir_name>` 以英文句点结尾，末尾的所有句点都会被剥离，因为 Windows 上不允许文件夹的名称以句点结尾。
+\ **Note:** If :ref:`application/config/custom_user_dir_name<class_ProjectSettings_property_application/config/custom_user_dir_name>` contains trailing periods, they will be stripped as folder names ending with a period are not allowed on Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -2169,7 +2169,7 @@ Specifies how the splash image will be stretched. For the original size without 
 
 :ref:`String<class_String>` **application/config/description** = ``""`` :ref:`🔗<class_ProjectSettings_property_application/config/description>`
 
-项目的描述，在项目管理器中悬停时显示为工具提示。
+The project's description, displayed as a tooltip in the Project Manager when hovering the project.
 
 .. rst-class:: classref-item-separator
 
@@ -2193,7 +2193,7 @@ If ``true``, disables loading of project settings overrides (file defined in :re
 
 :ref:`String<class_String>` **application/config/icon** = ``""`` :ref:`🔗<class_ProjectSettings_property_application/config/icon>`
 
-项目所使用的图标，在项目加载时设置。导出器也会在必要时使用此图标作为回退。
+Icon used for the project, set when project loads. Exporters will also use this icon as a fallback if necessary.
 
 .. rst-class:: classref-item-separator
 
@@ -2205,7 +2205,7 @@ If ``true``, disables loading of project settings overrides (file defined in :re
 
 :ref:`String<class_String>` **application/config/macos_native_icon** = ``""`` :ref:`🔗<class_ProjectSettings_property_application/config/macos_native_icon>`
 
-设置 macOS 上游戏的图标，使用 ``.icns`` 图标集格式。启动时会通过调用 :ref:`DisplayServer.set_native_icon()<class_DisplayServer_method_set_native_icon>` 自动完成。
+Icon set in ``.icns`` format used on macOS to set the game's icon. This is done automatically on start by calling :ref:`DisplayServer.set_native_icon()<class_DisplayServer_method_set_native_icon>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2217,9 +2217,9 @@ If ``true``, disables loading of project settings overrides (file defined in :re
 
 :ref:`String<class_String>` **application/config/name** = ``""`` :ref:`🔗<class_ProjectSettings_property_application/config/name>`
 
-项目名称。会在项目管理器和导出器中使用。可以通过翻译本地化文件中的值来翻译项目名称。窗口标题将设置为在启动时自动匹配项目名称。
+The project's name. It is used both by the Project Manager and by exporters. The project name can be translated by translating its value in localization files. The window title will be set to match the project name automatically on startup.
 
-\ **注意：**\ 如果 :ref:`application/config/use_custom_user_dir<class_ProjectSettings_property_application/config/use_custom_user_dir>` 为 ``false``\ ，更改此值也会更改用户数据文件夹的路径。重命名项目后，你将无法再访问 ``user://`` 中的现有数据，除非你重命名旧文件夹以匹配新项目名称。有关更多信息，请参阅文档中的 :doc:`《数据路径》 <../tutorials/io/data_paths>`\ 。
+\ **Note:** Changing this value will also change the user data folder's path if :ref:`application/config/use_custom_user_dir<class_ProjectSettings_property_application/config/use_custom_user_dir>` is ``false``. After renaming the project, you will no longer be able to access existing data in ``user://`` unless you rename the old folder to match the new project name. See :doc:`Data paths <../tutorials/io/data_paths>` in the documentation for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -2245,9 +2245,9 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`String<class_String>` **application/config/project_settings_override** = ``""`` :ref:`🔗<class_ProjectSettings_property_application/config/project_settings_override>`
 
-指定一个文件来覆盖项目设置。例如：\ ``user://custom_settings.cfg``\ 。参见 **ProjectSettings** 顶部类描述中的“Overriding”以获取更多信息。
+Specifies a file to override project settings. For example: ``user://custom_settings.cfg``. See "Overriding" in the **ProjectSettings** class description at the top for more information.
 
-\ **注意：**\ 不管这个设置的值如何，\ ``res://override.cfg`` 仍然会被读取来覆盖项目设置。
+\ **Note:** Regardless of this setting's value, ``res://override.cfg`` will still be read to override the project settings.
 
 .. rst-class:: classref-item-separator
 
@@ -2259,7 +2259,7 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`bool<class_bool>` **application/config/quit_on_go_back** = ``true`` :ref:`🔗<class_ProjectSettings_property_application/config/quit_on_go_back>`
 
-如果为 ``true``\ ，则该应用程序会在导航返回时自动退出（例如在 Android 上使用系统“返回”键）。
+If ``true``, the application quits automatically when navigating back (e.g. using the system "Back" button on Android).
 
 .. rst-class:: classref-item-separator
 
@@ -2271,9 +2271,9 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`bool<class_bool>` **application/config/use_custom_user_dir** = ``false`` :ref:`🔗<class_ProjectSettings_property_application/config/use_custom_user_dir>`
 
-如果为 ``true``\ ，项目会将用户数据保存到它自己的用户目录中。如果 :ref:`application/config/custom_user_dir_name<class_ProjectSettings_property_application/config/custom_user_dir_name>` 为空，将使用 ``<操作系统用户数据目录>/<项目名称>`` 目录。如果为 ``false``\ ，项目会将用户数据保存到 ``<操作系统用户数据目录>/Godot/app_userdata/<项目名称>``\ 。
+If ``true``, the project will save user data to its own user directory. If :ref:`application/config/custom_user_dir_name<class_ProjectSettings_property_application/config/custom_user_dir_name>` is empty, ``<OS user data directory>/<project name>`` directory will be used. If ``false``, the project will save user data to ``<OS user data directory>/Godot/app_userdata/<project name>``.
 
-另见 `Godot 项目中的文件路径 <../tutorials/io/data_paths.html#accessing-persistent-user-data-user>`__\ 。该设置仅在桌面平台上有效。
+See also `File paths in Godot projects <../tutorials/io/data_paths.html#accessing-persistent-user-data-user>`__. This setting is only effective on desktop platforms.
 
 .. rst-class:: classref-item-separator
 
@@ -2285,13 +2285,13 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`bool<class_bool>` **application/config/use_hidden_project_data_directory** = ``true`` :ref:`🔗<class_ProjectSettings_property_application/config/use_hidden_project_data_directory>`
 
-如果为 ``true``\ ，该项目会使用隐藏目录（\ ``.godot``\ ）来存储项目特定的数据（元数据、着色器缓存等）。
+If ``true``, the project will use a hidden directory (``.godot``) for storing project-specific data (metadata, shader cache, etc.).
 
-如果为 ``false``\ ，将改用非隐藏目录（\ ``godot``\ ）。
+If ``false``, a non-hidden directory (``godot``) will be used instead.
 
-\ **注意：**\ 请在更改此设置后重新启动应用程序。
+\ **Note:** Restart the application after changing this setting.
 
-\ **注意：**\ 修改这个值可能有助于在禁止使用隐藏目录模式的平台或第三方工具上使用。但是，仅在你确定你的环境需要更改此设置时才进行修改，因为某些外部工具或插件可能使用默认的 ``.godot`` 文件夹，因此更改默认设置可能会影响它们的使用。
+\ **Note:** Changing this value can help on platforms or with third-party tools where hidden directory patterns are disallowed. Only modify this setting if you know that your environment requires it, as changing the default can impact compatibility with some external tools or plugins which expect the default ``.godot`` folder.
 
 .. rst-class:: classref-item-separator
 
@@ -2303,7 +2303,7 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`String<class_String>` **application/config/version** = ``""`` :ref:`🔗<class_ProjectSettings_property_application/config/version>`
 
-项目的人类可读版本标识符。如果导出器中没有覆盖版本标识符，就会使用这个标识符。如果 :ref:`application/config/version<class_ProjectSettings_property_application/config/version>` 为空字符串，并且导出器中没有覆盖版本标识符，则导出器会使用 ``1.0.0`` 作为版本标识符。
+The project's human-readable version identifier. This is used by exporters if the version identifier isn't overridden there. If :ref:`application/config/version<class_ProjectSettings_property_application/config/version>` is an empty string and the version identifier isn't overridden in an exporter, the exporter will use ``1.0.0`` as a version identifier.
 
 .. rst-class:: classref-item-separator
 
@@ -2315,7 +2315,7 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`String<class_String>` **application/config/windows_native_icon** = ``""`` :ref:`🔗<class_ProjectSettings_property_application/config/windows_native_icon>`
 
-设置 Windows 上游戏的图标，使用 ``.ico`` 图标集格式。启动时会通过调用 :ref:`DisplayServer.set_native_icon()<class_DisplayServer_method_set_native_icon>` 自动完成。
+Icon set in ``.ico`` format used on Windows to set the game's icon. This is done automatically on start by calling :ref:`DisplayServer.set_native_icon()<class_DisplayServer_method_set_native_icon>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2327,11 +2327,11 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`bool<class_bool>` **application/run/delta_smoothing** = ``true`` :ref:`🔗<class_ProjectSettings_property_application/run/delta_smoothing>`
 
-帧增量的时间样本可能会受到平台带来的随机影响，即使垂直同步能够让帧按照固定的间隔显示也无济于事。因此可能导致卡顿。增量平滑通常能够带来更好的效果，会通过过滤输入增量来修改刷新率带来的微小波动。
+Time samples for frame deltas are subject to random variation introduced by the platform, even when frames are displayed at regular intervals thanks to V-Sync. This can lead to jitter. Delta smoothing can often give a better result by filtering the input deltas to correct for minor fluctuations from the refresh rate.
 
-\ **注意：**\ 只会在 :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` 为 ``enabled`` 时尝试进行增量平滑，因为没有垂直同步时无法很好地工作。
+\ **Note:** Delta smoothing is only attempted when :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is set to ``enabled``, as it does not work well without V-Sync.
 
-最开始激活平滑前可能会需要有若干秒的稳定帧率。只会在性能足以让渲染帧与刷新率匹配的机器上激活。
+It may take several seconds at a stable frame rate before the smoothing is initially activated. It will only be active on machines where performance is adequate to render frames at the refresh rate.
 
 .. rst-class:: classref-item-separator
 
@@ -2343,9 +2343,9 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`bool<class_bool>` **application/run/disable_stderr** = ``false`` :ref:`🔗<class_ProjectSettings_property_application/run/disable_stderr>`
 
-如果为 ``true``\ ，则禁用输出到标准错误。如果为 ``true``\ ，也会隐藏由 :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` 和 :ref:`@GlobalScope.push_warning()<class_@GlobalScope_method_push_warning>` 输出的错误和警告消息。另见 :ref:`application/run/disable_stdout<class_ProjectSettings_property_application/run/disable_stdout>`\ 。
+If ``true``, disables printing to standard error. If ``true``, this also hides error and warning messages printed by :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` and :ref:`@GlobalScope.push_warning()<class_@GlobalScope_method_push_warning>`. See also :ref:`application/run/disable_stdout<class_ProjectSettings_property_application/run/disable_stdout>`.
 
-对该设置项的更改将只在重新启动应用程序后生效。要在运行时控制请使用 :ref:`Engine.print_error_messages<class_Engine_property_print_error_messages>`\ 。
+Changes to this setting will only be applied upon restarting the application. To control this at runtime, use :ref:`Engine.print_error_messages<class_Engine_property_print_error_messages>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2357,9 +2357,9 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`bool<class_bool>` **application/run/disable_stdout** = ``false`` :ref:`🔗<class_ProjectSettings_property_application/run/disable_stdout>`
 
-如果为 ``true``\ ，则禁用输出到标准输出。相当于使用 ``--quiet`` :doc:`命令行参数 <../tutorials/editor/command_line_tutorial>`\ 启动编辑器或项目。另见 :ref:`application/run/disable_stderr<class_ProjectSettings_property_application/run/disable_stderr>`\ 。
+If ``true``, disables printing to standard output. This is equivalent to starting the editor or project with the ``--quiet`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`. See also :ref:`application/run/disable_stderr<class_ProjectSettings_property_application/run/disable_stderr>`.
 
-对该设置项的更改将只在重新启动应用程序后生效。要在运行时控制请使用 :ref:`Engine.print_to_stdout<class_Engine_property_print_to_stdout>`\ 。
+Changes to this setting will only be applied upon restarting the application. To control this at runtime, use :ref:`Engine.print_to_stdout<class_Engine_property_print_to_stdout>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2371,11 +2371,11 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`bool<class_bool>` **application/run/enable_alt_space_menu** = ``false`` :ref:`🔗<class_ProjectSettings_property_application/run/enable_alt_space_menu>`
 
-如果为 ``true``\ ，则允许 :kbd:`Alt + 空格` 键显示窗口菜单。用户能够通过窗口菜单执行移动、调整大小、最小化等窗口管理操作。
+If ``true``, allows the :kbd:`Alt + Space` keys to display the window menu. This menu allows the user to perform various window management operations such as moving, resizing, or minimizing the window.
 
-\ **注意：**\ 显示窗口菜单时会暂停项目运行，直到该菜单\ *完全*\ 关闭，这是 Windows 的行为。在网络多人游戏中启用该设置时请考虑这一点。完全关闭的意思是，选择了某个选项，用户点击菜单外部，或打开窗口菜单后按下 :kbd:`ESC` 键\ *并且*\ 此后按下了另一个按键。
+\ **Note:** When the menu is displayed, project execution will pause until the menu is *fully* closed due to Windows behavior. Consider this when enabling this setting in a networked multiplayer game. The menu is only considered fully closed when an option is selected, when the user clicks outside, or when :kbd:`Escape` is pressed after bringing up the window menu *and* another key is pressed afterwards.
 
-\ **注意：**\ 该设置仅在 Windows 上实现。
+\ **Note:** This setting is implemented only on Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -2387,13 +2387,13 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`bool<class_bool>` **application/run/flush_stdout_on_print** = ``false`` :ref:`🔗<class_ProjectSettings_property_application/run/flush_stdout_on_print>`
 
-如果为 ``true``\ ，则每次打印一行时刷新标准输出流。这会影响终端日志记录和文件日志记录。
+If ``true``, flushes the standard output stream every time a line is printed. This affects both terminal logging and file logging.
 
-运行项目时，如果希望由 systemd/journalctl 等服务管理器收集日志，则必须启用此设置。默认情况下，在发布版本中禁用此设置，因为如果快速连续打印大量行，则在每个打印行上刷新都会对性能产生负面影响。此外，如果启用此设置，如果应用程序崩溃或以其他方式被用户杀死（不会“正常”关闭），则仍会成功写入日志文件。
+When running a project, this setting must be enabled if you want logs to be collected by service managers such as systemd/journalctl. This setting is disabled by default on release builds, since flushing on every printed line will negatively affect performance if lots of lines are printed in a rapid succession. Also, if this setting is enabled, logged files will still be written successfully if the application crashes or is otherwise killed by the user (without being closed "normally").
 
-\ **注意：**\ 无论此设置如何，标准错误流 (``stderr``) 在打印一行时总是被刷新。
+\ **Note:** Regardless of this setting, the standard error stream (``stderr``) is always flushed when a line is printed to it.
 
-对此设置的更改只会在重新启动应用程序时应用。
+Changes to this setting will only be applied upon restarting the application.
 
 .. rst-class:: classref-item-separator
 
@@ -2405,9 +2405,9 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`bool<class_bool>` **application/run/flush_stdout_on_print.debug** = ``true`` :ref:`🔗<class_ProjectSettings_property_application/run/flush_stdout_on_print.debug>`
 
-调试构建覆盖\ :ref:`application/run/flush_stdout_on_print<class_ProjectSettings_property_application/run/flush_stdout_on_print>`\ ，因为在调试过程中性能不那么重要。
+Debug build override for :ref:`application/run/flush_stdout_on_print<class_ProjectSettings_property_application/run/flush_stdout_on_print>`, as performance is less important during debugging.
 
-仅在重新启动应用程序时才会应用此设置的更改。
+Changes to this setting will only be applied upon restarting the application.
 
 .. rst-class:: classref-item-separator
 
@@ -2419,9 +2419,9 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`int<class_int>` **application/run/frame_delay_msec** = ``0`` :ref:`🔗<class_ProjectSettings_property_application/run/frame_delay_msec>`
 
-强制主循环中的帧之间有\ *恒定的*\ 延迟（以毫秒为单位）。在大多数情况下，应首选 :ref:`application/run/max_fps<class_ProjectSettings_property_application/run/max_fps>` 作为 FPS 限制器，因为它更精确。
+Forces a *constant* delay between frames in the main loop (in milliseconds). In most situations, :ref:`application/run/max_fps<class_ProjectSettings_property_application/run/max_fps>` should be preferred as an FPS limiter as it's more precise.
 
-可以使用 ``--frame-delay <ms;>`` 命令行参数覆盖该设置。
+This setting can be overridden using the ``--frame-delay <ms;>`` command line argument.
 
 .. rst-class:: classref-item-separator
 
@@ -2433,9 +2433,9 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`bool<class_bool>` **application/run/load_shell_environment** = ``false`` :ref:`🔗<class_ProjectSettings_property_application/run/load_shell_environment>`
 
-如果为 ``true``\ ，则会加载默认的 Shell，将由 Shell 启动脚本设置的环境变量复制到应用程序环境中。
+If ``true``, loads the default shell and copies environment variables set by the shell startup scripts to the app environment.
 
-\ **注意：**\ 该设置仅在 macOS 上针对非沙盒应用程序实现。
+\ **Note:** This setting is implemented on macOS for non-sandboxed applications only.
 
 .. rst-class:: classref-item-separator
 
@@ -2447,7 +2447,7 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`bool<class_bool>` **application/run/low_processor_mode** = ``false`` :ref:`🔗<class_ProjectSettings_property_application/run/low_processor_mode>`
 
-如果为 ``true``\ ，则启用低处理器占用模式。启用后，引擎进行重绘的耗时变长，但只会在必要时重绘屏幕。这样做能够降低耗电量，目的是用于编辑器以及移动应用程序。大多数游戏每帧都需要重绘屏幕，所以建议保持禁用状态。
+If ``true``, enables low-processor usage mode. When enabled, the engine takes longer to redraw, but only redraws the screen if necessary. This may lower power consumption, and is intended for editors or mobile applications. For most games, because the screen needs to be redrawn every frame, it is recommended to keep this setting disabled.
 
 .. rst-class:: classref-item-separator
 
@@ -2459,7 +2459,7 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`int<class_int>` **application/run/low_processor_mode_sleep_usec** = ``6900`` :ref:`🔗<class_ProjectSettings_property_application/run/low_processor_mode_sleep_usec>`
 
-启用低处理器使用模式时帧间的睡眠量（以微秒计）。值越高，CPU占用率越低。
+Amount of sleeping between frames when the low-processor usage mode is enabled (in microseconds). Higher values will result in lower CPU usage.
 
 .. rst-class:: classref-item-separator
 
@@ -2471,7 +2471,7 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`String<class_String>` **application/run/main_loop_type** = ``"SceneTree"`` :ref:`🔗<class_ProjectSettings_property_application/run/main_loop_type>`
 
-实现引擎主循环的类型名称。
+The name of the type implementing the engine's main loop.
 
 .. rst-class:: classref-item-separator
 
@@ -2483,7 +2483,7 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`String<class_String>` **application/run/main_scene** = ``""`` :ref:`🔗<class_ProjectSettings_property_application/run/main_scene>`
 
-项目运行时将加载的主场景文件的路径。
+Path to the main scene file that will be loaded when the project runs.
 
 .. rst-class:: classref-item-separator
 
@@ -2521,7 +2521,7 @@ This setting can be overridden using the ``--max-fps <fps>`` command line argume
 
 :ref:`bool<class_bool>` **application/run/print_header** = ``true`` :ref:`🔗<class_ProjectSettings_property_application/run/print_header>`
 
-如果为 ``true``\ ，则启动时在控制台中打印引擎标头。该标头描述了引擎的当前版本以及正在使用的渲染器。也可以使用 ``--no-header`` 选项在命令行上禁用该行为。
+If ``true``, the engine header is printed in the console on startup. This header describes the current version of the engine, as well as the renderer being used. This behavior can also be disabled on the command line with the ``--no-header`` option.
 
 .. rst-class:: classref-item-separator
 
@@ -2533,7 +2533,7 @@ This setting can be overridden using the ``--max-fps <fps>`` command line argume
 
 :ref:`float<class_float>` **audio/buses/channel_disable_threshold_db** = ``-60.0`` :ref:`🔗<class_ProjectSettings_property_audio/buses/channel_disable_threshold_db>`
 
-当声音在给定的时间内低于给定的 dB 阈值时，音频总线将自动关闭。这可以节省 CPU，因为分配给该总线的效果将不再做任何处理。
+Audio buses will disable automatically when sound goes below a given dB threshold for a given time. This saves CPU as effects assigned to that bus will no longer do any processing.
 
 .. rst-class:: classref-item-separator
 
@@ -2545,7 +2545,7 @@ This setting can be overridden using the ``--max-fps <fps>`` command line argume
 
 :ref:`float<class_float>` **audio/buses/channel_disable_time** = ``2.0`` :ref:`🔗<class_ProjectSettings_property_audio/buses/channel_disable_time>`
 
-当声音在给定的时间内低于给定的 dB 阈值时，音频总线将自动关闭。这可以节省 CPU，因为分配给该总线的效果将不再做任何处理。
+Audio buses will disable automatically when sound goes below a given dB threshold for a given time. This saves CPU as effects assigned to that bus will no longer do any processing.
 
 .. rst-class:: classref-item-separator
 
@@ -2557,7 +2557,7 @@ This setting can be overridden using the ``--max-fps <fps>`` command line argume
 
 :ref:`String<class_String>` **audio/buses/default_bus_layout** = ``"res://default_bus_layout.tres"`` :ref:`🔗<class_ProjectSettings_property_audio/buses/default_bus_layout>`
 
-项目中使用的默认 :ref:`AudioBusLayout<class_AudioBusLayout>` 资源文件，除非被场景覆盖。
+Default :ref:`AudioBusLayout<class_AudioBusLayout>` resource file to use in the project, unless overridden by the scene.
 
 .. rst-class:: classref-item-separator
 
@@ -2569,13 +2569,13 @@ This setting can be overridden using the ``--max-fps <fps>`` command line argume
 
 :ref:`String<class_String>` **audio/driver/driver** :ref:`🔗<class_ProjectSettings_property_audio/driver/driver>`
 
-指定要使用的音频驱动程序。这个设置与平台有关，因为不同的平台支持不同的音频驱动。如果留空，将使用默认的音频驱动程序。
+Specifies the audio driver to use. This setting is platform-dependent as each platform supports different audio drivers. If left empty, the default audio driver will be used.
 
-\ ``Dummy`` 音频驱动程序会禁用所有的音频播放和录制，对非游戏应用程序很有用，因为会减少对 CPU 的使用。它还可以防止引擎作为正在播放音频的应用程序出现在操作系统的音频混合器中。
+The ``Dummy`` audio driver disables all audio playback and recording, which is useful for non-game applications as it reduces CPU usage. It also prevents the engine from appearing as an application playing audio in the OS' audio mixer.
 
-要查询在运行时使用的值（该值可能会被命令行参数或无头模式覆盖），请使用 :ref:`AudioServer.get_driver_name()<class_AudioServer_method_get_driver_name>`\ 。
+To query the value that is being used at run-time (which may be overridden by command-line arguments or headless mode), use :ref:`AudioServer.get_driver_name()<class_AudioServer_method_get_driver_name>`.
 
-\ **注意：**\ 运行时可以通过 ``--audio-driver`` :doc:`命令行参数 <../tutorials/editor/command_line_tutorial>`\ 覆盖所使用的驱动程序。
+\ **Note:** The driver in use can be overridden at runtime via the ``--audio-driver`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2587,9 +2587,9 @@ This setting can be overridden using the ``--max-fps <fps>`` command line argume
 
 :ref:`bool<class_bool>` **audio/driver/enable_input** = ``false`` :ref:`🔗<class_ProjectSettings_property_audio/driver/enable_input>`
 
-如果为 ``true``\ ，会允许麦克风输入。导出到 Android 和 iOS 时需要设置合适的权限。
+If ``true``, microphone input will be allowed. This requires appropriate permissions to be set when exporting to Android or iOS.
 
-\ **注意：**\ 如果操作系统（根据该用户的隐私设置）阻止了对音频输入设备的访问，那么音频捕获只会返回静音。在 Windows 上，请确保在操作系统的隐私设置中允许应用对麦克风的访问。
+\ **Note:** If the operating system blocks access to audio input devices (due to the user's privacy settings), audio capture will only return silence. On Windows, make sure that apps are allowed to access the microphone in the OS' privacy settings.
 
 .. rst-class:: classref-item-separator
 
@@ -2601,11 +2601,11 @@ This setting can be overridden using the ``--max-fps <fps>`` command line argume
 
 :ref:`int<class_int>` **audio/driver/mix_rate** = ``44100`` :ref:`🔗<class_ProjectSettings_property_audio/driver/mix_rate>`
 
-音频使用的目标混音率（单位为赫兹）。一般来说最好不要修改这个设置，将其留给宿主操作系统处理。
+Target mixing rate used for audio (in Hz). In general, it's better to not touch this and leave it to the host operating system.
 
-\ **注意：**\ 在 iOS 和 macOS 上，混音率由音频驱动决定，会忽略该值。
+\ **Note:** On iOS and macOS, mixing rate is determined by audio driver, this value is ignored.
 
-\ **注意：**\ 输入混音率和输出混音率可能不同。请使用 :ref:`AudioServer.get_mix_rate()<class_AudioServer_method_get_mix_rate>` 和 :ref:`AudioServer.get_input_mix_rate()<class_AudioServer_method_get_input_mix_rate>` 获取实际的值。
+\ **Note:** Input and output mixing rates might be different. Use :ref:`AudioServer.get_mix_rate()<class_AudioServer_method_get_mix_rate>` and :ref:`AudioServer.get_input_mix_rate()<class_AudioServer_method_get_input_mix_rate>` to get actual values.
 
 .. rst-class:: classref-item-separator
 
@@ -2617,7 +2617,7 @@ This setting can be overridden using the ``--max-fps <fps>`` command line argume
 
 :ref:`int<class_int>` **audio/driver/mix_rate.web** = ``0`` :ref:`🔗<class_ProjectSettings_property_audio/driver/mix_rate.web>`
 
-:ref:`audio/driver/mix_rate<class_ProjectSettings_property_audio/driver/mix_rate>` 在 Web 平台上更安全的覆盖项。这里的 ``0`` 表示“让浏览器选择”（因为有些浏览器不喜欢强制混合率）。
+Safer override for :ref:`audio/driver/mix_rate<class_ProjectSettings_property_audio/driver/mix_rate>` in the Web platform. Here ``0`` means "let the browser choose" (since some browsers do not like forcing the mix rate).
 
 .. rst-class:: classref-item-separator
 
@@ -2629,13 +2629,13 @@ This setting can be overridden using the ``--max-fps <fps>`` command line argume
 
 :ref:`int<class_int>` **audio/driver/output_latency** = ``15`` :ref:`🔗<class_ProjectSettings_property_audio/driver/output_latency>`
 
-指定音频的首选输出延迟，单位为毫秒。较低的值将导致较低的音频延迟，但会增加 CPU 使用率。低值可能会导致在较慢的硬件上发出可听见的破裂声。
+Specifies the preferred output latency in milliseconds for audio. Lower values will result in lower audio latency at the cost of increased CPU usage. Low values may result in audible crackling on slower hardware.
 
-音频输出延迟可能会受到主机操作系统和音频硬件驱动程序的限制。如果主机无法提供指定的音频输出延迟，那么 Godot 将尝试使用主机允许的最近延迟。因此，应该始终使用 :ref:`AudioServer.get_output_latency()<class_AudioServer_method_get_output_latency>` 来确定实际的音频输出延迟。
+Audio output latency may be constrained by the host operating system and audio hardware drivers. If the host can not provide the specified audio output latency then Godot will attempt to use the nearest latency allowed by the host. As such you should always use :ref:`AudioServer.get_output_latency()<class_AudioServer_method_get_output_latency>` to determine the actual audio output latency.
 
-音频输出延迟可以使用 ``--audio-output-latency <ms>`` 命令行参数覆盖。
+Audio output latency can be overridden using the ``--audio-output-latency <ms>`` command line argument.
 
-\ **注意：**\ 在 Android 上会忽略这个设置。
+\ **Note:** This setting is ignored on Android.
 
 .. rst-class:: classref-item-separator
 
@@ -2647,7 +2647,7 @@ This setting can be overridden using the ``--max-fps <fps>`` command line argume
 
 :ref:`int<class_int>` **audio/driver/output_latency.web** = ``50`` :ref:`🔗<class_ProjectSettings_property_audio/driver/output_latency.web>`
 
-:ref:`audio/driver/output_latency<class_ProjectSettings_property_audio/driver/output_latency>` 在 Web 平台上更安全的覆盖项，能够避免一些音频问题，尤其是在移动设备上。
+Safer override for :ref:`audio/driver/output_latency<class_ProjectSettings_property_audio/driver/output_latency>` in the Web platform, to avoid audio issues especially on mobile devices.
 
 .. rst-class:: classref-item-separator
 
@@ -2659,9 +2659,9 @@ This setting can be overridden using the ``--max-fps <fps>`` command line argume
 
 :ref:`float<class_float>` **audio/general/2d_panning_strength** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_audio/general/2d_panning_strength>`
 
-所有 :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>` 节点的声像效果的基本强度。可以使用 :ref:`AudioStreamPlayer2D.panning_strength<class_AudioStreamPlayer2D_property_panning_strength>` 在每个节点上进一步缩放声像强度。\ ``0.0`` 的值会完全禁用立体声声像，只保留音量衰减。如果声音恰好位于听者的左侧（或右侧），则 ``1.0`` 的值会使其中一个通道完全静音。
+The base strength of the panning effect for all :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>` nodes. The panning strength can be further scaled on each Node using :ref:`AudioStreamPlayer2D.panning_strength<class_AudioStreamPlayer2D_property_panning_strength>`. A value of ``0.0`` disables stereo panning entirely, leaving only volume attenuation in place. A value of ``1.0`` completely mutes one of the channels if the sound is located exactly to the left (or right) of the listener.
 
-\ ``0.5`` 的默认值是针对耳机进行调谐的。当使用扬声器时，可能会发现较低的值效果更好，因为与耳机相比，扬声器的立体声分离度较低。
+The default value of ``0.5`` is tuned for headphones. When using speakers, you may find lower values to sound better as speakers have a lower stereo separation compared to headphones.
 
 .. rst-class:: classref-item-separator
 
@@ -2673,9 +2673,9 @@ This setting can be overridden using the ``--max-fps <fps>`` command line argume
 
 :ref:`float<class_float>` **audio/general/3d_panning_strength** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_audio/general/3d_panning_strength>`
 
-所有 :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` 节点的声像效果的基本强度。可以使用 :ref:`AudioStreamPlayer3D.panning_strength<class_AudioStreamPlayer3D_property_panning_strength>` 在每个节点上进一步缩放声像强度。\ ``0.0`` 的值会完全禁用立体声声像，只保留音量衰减。如果声音恰好位于听者的左侧（或右侧），则 ``1.0`` 的值会使其中一个通道完全静音。
+The base strength of the panning effect for all :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` nodes. The panning strength can be further scaled on each Node using :ref:`AudioStreamPlayer3D.panning_strength<class_AudioStreamPlayer3D_property_panning_strength>`. A value of ``0.0`` disables stereo panning entirely, leaving only volume attenuation in place. A value of ``1.0`` completely mutes one of the channels if the sound is located exactly to the left (or right) of the listener.
 
-默认值 ``0.5`` 是针对耳机进行调谐的，对向声道的音量不会低于近侧声道音量的 50%。当使用扬声器时，你可能会发现将这个值设置得更高可以达到相同的效果，因为双耳都可以从各个扬声器听到声音。
+The default value of ``0.5`` is tuned for headphones which means that the opposite side channel goes no lower than 50% of the volume of the nearside channel. You may find that you can set this value higher for speakers to have the same effect since both ears can hear from each speaker.
 
 .. rst-class:: classref-item-separator
 
@@ -2687,11 +2687,11 @@ This setting can be overridden using the ``--max-fps <fps>`` command line argume
 
 :ref:`int<class_int>` **audio/general/default_playback_type** = ``0`` :ref:`🔗<class_ProjectSettings_property_audio/general/default_playback_type>`
 
-**实验性：** 未来版本中可能会修改或移除该属性。
+**Experimental:** This property may be changed or removed in future versions.
 
-指定各平台的默认回放类型。
+Specifies the default playback type of the platform.
 
-默认值为 **Stream**\ ，因为大多数平台可以正常进行混流。
+The default value is set to **Stream**, as most platforms have no issues mixing streams.
 
 .. rst-class:: classref-item-separator
 
@@ -2703,13 +2703,13 @@ This setting can be overridden using the ``--max-fps <fps>`` command line argume
 
 :ref:`int<class_int>` **audio/general/default_playback_type.web** = ``1`` :ref:`🔗<class_ProjectSettings_property_audio/general/default_playback_type.web>`
 
-**实验性：** 未来版本中可能会修改或移除该属性。
+**Experimental:** This property may be changed or removed in future versions.
 
-指定 Web 平台的默认回放类型。
+Specifies the default playback type of the Web platform.
 
-默认值为 **Sample**\ ，因为 Web 平台不适合在 Web Audio API 以外混合音频流，导出为单线程游戏时尤为明显。\ **Sample** 即采样，能够牺牲灵活性（不支持 :ref:`AudioEffect<class_AudioEffect>`\ ）换取 Web 平台上更低的延迟。
+The default value is set to **Sample** as the Web platform is not suited to mix audio streams outside of the Web Audio API, especially when exporting a single-threaded game. **Sample** allows for lower latency on the web platform at the cost of flexibility (:ref:`AudioEffect<class_AudioEffect>`\ s are not supported).
 
-\ **警告：**\ 在 Web 平台上强制使用 **Stream** 可能造成较大的音频延迟和爆音，导出为多线程游戏时尤为明显。
+\ **Warning:** Forcing **Stream** on the Web platform may cause high audio latency and crackling, especially when exporting a multi-threaded game.
 
 .. rst-class:: classref-item-separator
 
@@ -2721,9 +2721,9 @@ This setting can be overridden using the ``--max-fps <fps>`` command line argume
 
 :ref:`bool<class_bool>` **audio/general/ios/mix_with_others** = ``false`` :ref:`🔗<class_ProjectSettings_property_audio/general/ios/mix_with_others>`
 
-设置 iOS 的 AVAudioSession 的 `mixWithOthers <https://developer.apple.com/documentation/avfaudio/avaudiosession/categoryoptions/1616611-mixwithothers>`__ 选项。当类别为 ``Play and Record``\ 、\ ``Playback``\ 、\ ``Multi Route`` 时会覆盖混音行为。
+Sets the `mixWithOthers <https://developer.apple.com/documentation/avfaudio/avaudiosession/categoryoptions/1616611-mixwithothers>`__ option for the AVAudioSession on iOS. This will override the mix behavior, if the category is set to ``Play and Record``, ``Playback``, or ``Multi Route``.
 
-\ ``Ambient`` 默认会设置这个选项。
+\ ``Ambient`` always has this set per default.
 
 .. rst-class:: classref-item-separator
 
@@ -2735,7 +2735,7 @@ This setting can be overridden using the ``--max-fps <fps>`` command line argume
 
 :ref:`int<class_int>` **audio/general/ios/session_category** = ``0`` :ref:`🔗<class_ProjectSettings_property_audio/general/ios/session_category>`
 
-设置 iOS 的 `AVAudioSessionCategory <https://developer.apple.com/documentation/avfaudio/avaudiosessioncategory>`__\ 。如果需要让手机在静音模式时也进行声音输出，请使用 ``Playback`` 类别。
+Sets the `AVAudioSessionCategory <https://developer.apple.com/documentation/avfaudio/avaudiosessioncategory>`__ on iOS. Use the ``Playback`` category to get sound output, even if the phone is in silent mode.
 
 .. rst-class:: classref-item-separator
 
@@ -2761,7 +2761,7 @@ If ``true``, text-to-speech support is enabled on startup, otherwise it is enabl
 
 :ref:`int<class_int>` **audio/video/video_delay_compensation_ms** = ``0`` :ref:`🔗<class_ProjectSettings_property_audio/video/video_delay_compensation_ms>`
 
-播放视频时设置为硬编码音频延迟。除非你知道自己在做什么，否则最好保持不变。
+Setting to hardcode audio delay when playing video. Best to leave this unchanged unless you know what you are doing.
 
 .. rst-class:: classref-item-separator
 
@@ -2773,7 +2773,7 @@ If ``true``, text-to-speech support is enabled on startup, otherwise it is enabl
 
 :ref:`bool<class_bool>` **collada/use_ambient** = ``false`` :ref:`🔗<class_ProjectSettings_property_collada/use_ambient>`
 
-如果为 ``true``\ ，则 COLLADA 模型中的环境光源会被导入为 :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ 。如果为 ``false``\ ，则会忽略环境光源。
+If ``true``, ambient lights will be imported from COLLADA models as :ref:`DirectionalLight3D<class_DirectionalLight3D>`. If ``false``, ambient lights will be ignored.
 
 .. rst-class:: classref-item-separator
 
@@ -2785,7 +2785,7 @@ If ``true``, text-to-speech support is enabled on startup, otherwise it is enabl
 
 :ref:`int<class_int>` **compression/formats/gzip/compression_level** = ``-1`` :ref:`🔗<class_ProjectSettings_property_compression/formats/gzip/compression_level>`
 
-gzip 的默认压缩级别。影响压缩的场景和资源。较高的级别会以压缩速度为代价导致文件变小。解压缩速度大多不受压缩级别的影响。\ ``-1`` 使用默认的 gzip 压缩级别，该级别与 ``6`` 相同，但由于底层 zlib 更新，未来可能会发生变化。
+The default compression level for gzip. Affects compressed scenes and resources. Higher levels result in smaller files at the cost of compression speed. Decompression speed is mostly unaffected by the compression level. ``-1`` uses the default gzip compression level, which is identical to ``6`` but could change in the future due to underlying zlib updates.
 
 .. rst-class:: classref-item-separator
 
@@ -2797,7 +2797,7 @@ gzip 的默认压缩级别。影响压缩的场景和资源。较高的级别会
 
 :ref:`int<class_int>` **compression/formats/zlib/compression_level** = ``-1`` :ref:`🔗<class_ProjectSettings_property_compression/formats/zlib/compression_level>`
 
-Zlib 的默认压缩级别。影响压缩的场景和资源。较高的级别会以压缩速度为代价导致文件变小。解压缩速度大多不受压缩级别的影响。\ ``-1`` 使用默认的 gzip 压缩级别，该级别与 ``6`` 相同，但由于底层 zlib 更新，未来可能会发生变化。
+The default compression level for Zlib. Affects compressed scenes and resources. Higher levels result in smaller files at the cost of compression speed. Decompression speed is mostly unaffected by the compression level. ``-1`` uses the default gzip compression level, which is identical to ``6`` but could change in the future due to underlying zlib updates.
 
 .. rst-class:: classref-item-separator
 
@@ -2809,7 +2809,7 @@ Zlib 的默认压缩级别。影响压缩的场景和资源。较高的级别会
 
 :ref:`int<class_int>` **compression/formats/zstd/compression_level** = ``3`` :ref:`🔗<class_ProjectSettings_property_compression/formats/zstd/compression_level>`
 
-Zstandard 的默认压缩级别。影响压缩的场景和资源。较高的级别会以压缩速度为代价导致文件变小。解压缩速度大多不受压缩级别的影响。
+The default compression level for Zstandard. Affects compressed scenes and resources. Higher levels result in smaller files at the cost of compression speed. Decompression speed is mostly unaffected by the compression level.
 
 .. rst-class:: classref-item-separator
 
@@ -2821,7 +2821,7 @@ Zstandard 的默认压缩级别。影响压缩的场景和资源。较高的级�
 
 :ref:`bool<class_bool>` **compression/formats/zstd/long_distance_matching** = ``false`` :ref:`🔗<class_ProjectSettings_property_compression/formats/zstd/long_distance_matching>`
 
-启用 Zstandard 的\ `长距离匹配 <https://github.com/facebook/zstd/releases/tag/v1.3.2>`__\ 。
+Enables `long-distance matching <https://github.com/facebook/zstd/releases/tag/v1.3.2>`__ in Zstandard.
 
 .. rst-class:: classref-item-separator
 
@@ -2833,7 +2833,7 @@ Zstandard 的默认压缩级别。影响压缩的场景和资源。较高的级�
 
 :ref:`int<class_int>` **compression/formats/zstd/window_log_size** = ``27`` :ref:`🔗<class_ProjectSettings_property_compression/formats/zstd/window_log_size>`
 
-使用 Zstandard 的长距离匹配进行压缩时，允许的最大大小限制（2 的幂）。更高的值可以产生更好的压缩，但是在压缩和解压缩时需要更多的内存。
+Largest size limit (in power of 2) allowed when compressing using long-distance matching with Zstandard. Higher values can result in better compression, but will require more memory when compressing and decompressing.
 
 .. rst-class:: classref-item-separator
 
@@ -2845,7 +2845,7 @@ Zstandard 的默认压缩级别。影响压缩的场景和资源。较高的级�
 
 :ref:`Color<class_Color>` **debug/canvas_items/debug_redraw_color** = ``Color(1, 0.2, 0.2, 0.5)`` :ref:`🔗<class_ProjectSettings_property_debug/canvas_items/debug_redraw_color>`
 
-如果画布项重绘调试处于活动状态，则画布项重绘时会使用这个颜色进行闪光。
+If canvas item redraw debugging is active, this color will be flashed on canvas items when they redraw.
 
 .. rst-class:: classref-item-separator
 
@@ -2857,7 +2857,7 @@ Zstandard 的默认压缩级别。影响压缩的场景和资源。较高的级�
 
 :ref:`float<class_float>` **debug/canvas_items/debug_redraw_time** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_debug/canvas_items/debug_redraw_time>`
 
-如果画布项重绘调试处于活动状态，则这个选项表示画布项每次重绘时闪光的持续时间。
+If canvas item redraw debugging is active, this will be the time the flash will last each time they redraw.
 
 .. rst-class:: classref-item-separator
 
@@ -2869,7 +2869,7 @@ Zstandard 的默认压缩级别。影响压缩的场景和资源。较高的级�
 
 :ref:`bool<class_bool>` **debug/file_logging/enable_file_logging** = ``false`` :ref:`🔗<class_ProjectSettings_property_debug/file_logging/enable_file_logging>`
 
-如果为 ``true``\ ，则会将所有输出和错误消息保存在文件中。另见 :ref:`debug/file_logging/log_path<class_ProjectSettings_property_debug/file_logging/log_path>`\ 、\ :ref:`debug/file_logging/max_log_files<class_ProjectSettings_property_debug/file_logging/max_log_files>`\ 、\ :ref:`application/run/flush_stdout_on_print<class_ProjectSettings_property_application/run/flush_stdout_on_print>`\ 。
+If ``true``, logs all output and error messages to files. See also :ref:`debug/file_logging/log_path<class_ProjectSettings_property_debug/file_logging/log_path>`, :ref:`debug/file_logging/max_log_files<class_ProjectSettings_property_debug/file_logging/max_log_files>`, and :ref:`application/run/flush_stdout_on_print<class_ProjectSettings_property_application/run/flush_stdout_on_print>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2881,7 +2881,7 @@ Zstandard 的默认压缩级别。影响压缩的场景和资源。较高的级�
 
 :ref:`bool<class_bool>` **debug/file_logging/enable_file_logging.pc** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/file_logging/enable_file_logging.pc>`
 
-:ref:`debug/file_logging/enable_file_logging<class_ProjectSettings_property_debug/file_logging/enable_file_logging>` 在桌面平台的覆盖项，因为在移动/Web 平台上不容易访问日志文件。
+Desktop override for :ref:`debug/file_logging/enable_file_logging<class_ProjectSettings_property_debug/file_logging/enable_file_logging>`, as log files are not readily accessible on mobile/Web platforms.
 
 .. rst-class:: classref-item-separator
 
@@ -2893,9 +2893,9 @@ Zstandard 的默认压缩级别。影响压缩的场景和资源。较高的级�
 
 :ref:`String<class_String>` **debug/file_logging/log_path** = ``"user://logs/godot.log"`` :ref:`🔗<class_ProjectSettings_property_debug/file_logging/log_path>`
 
-项目日志文件的存储路径。建议使用 ``user://`` 中的路径。
+Path at which to store log files for the project. Using a path under ``user://`` is recommended.
 
-也可以使用 ``--log-file <file>`` :doc:`命令行参数 <../tutorials/editor/command_line_tutorial>`\ 手动设置。如果指定了这个命令行参数，则会自动禁用日志轮换（见 :ref:`debug/file_logging/max_log_files<class_ProjectSettings_property_debug/file_logging/max_log_files>`\ ）。
+This can be specified manually on the command line using the ``--log-file <file>`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`. If this command line argument is specified, log rotation is automatically disabled (see :ref:`debug/file_logging/max_log_files<class_ProjectSettings_property_debug/file_logging/max_log_files>`).
 
 .. rst-class:: classref-item-separator
 
@@ -2907,9 +2907,9 @@ Zstandard 的默认压缩级别。影响压缩的场景和资源。较高的级�
 
 :ref:`int<class_int>` **debug/file_logging/max_log_files** = ``5`` :ref:`🔗<class_ProjectSettings_property_debug/file_logging/max_log_files>`
 
-指定允许的最大日志文件数（用于轮换）。设置为 ``1`` 将禁用日志文件轮转。
+Specifies the maximum number of log files allowed (used for rotation). Set to ``1`` to disable log file rotation.
 
-如果使用 ``--log-file <file>`` :doc:`命令行参数 <../tutorials/editor/command_line_tutorial>` ，则始终禁用日志轮转。
+If the ``--log-file <file>`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>` is used, log rotation is always disabled.
 
 .. rst-class:: classref-item-separator
 
@@ -3037,7 +3037,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/gdscript/warnings/enable** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/enable>`
 
-如果为 ``true``\ ，则启用特定的 GDScript 警告（请参阅 ``debug/gdscript/warnings/*`` 设置）。如果为 ``false``\ ，则禁用所有 GDScript 警告。
+If ``true``, enables specific GDScript warnings (see ``debug/gdscript/warnings/*`` settings). If ``false``, disables all GDScript warnings.
 
 .. rst-class:: classref-item-separator
 
@@ -3231,7 +3231,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/gdscript/warnings/renamed_in_godot_4_hint** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/renamed_in_godot_4_hint>`
 
-启用后，使用自 Godot 3 以来重命名的属性、枚举或函数，将在发生错误时产生一个提示。
+When enabled, using a property, enum, or function that was renamed since Godot 3 will produce a hint if an error occurs.
 
 .. rst-class:: classref-item-separator
 
@@ -3509,7 +3509,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`String<class_String>` **debug/settings/crash_handler/message** = ``"Please include this when reporting the bug to the project developer."`` :ref:`🔗<class_ProjectSettings_property_debug/settings/crash_handler/message>`
 
-引擎崩溃时，在回溯之前显示的消息。默认情况下，由于仅限编辑器的覆盖会应用于该设置，故该消息仅用于导出的项目中。
+Message to be displayed before the backtrace when the engine crashes. By default, this message is only used in exported projects due to the editor-only override applied to this setting.
 
 .. rst-class:: classref-item-separator
 
@@ -3521,7 +3521,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`String<class_String>` **debug/settings/crash_handler/message.editor** = ``"Please include this when reporting the bug on: https://github.com/godotengine/godot/issues"`` :ref:`🔗<class_ProjectSettings_property_debug/settings/crash_handler/message.editor>`
 
-:ref:`debug/settings/crash_handler/message<class_ProjectSettings_property_debug/settings/crash_handler/message>` 的仅限编辑器的覆盖。不会影响以调试或发布模式导出的项目。
+Editor-only override for :ref:`debug/settings/crash_handler/message<class_ProjectSettings_property_debug/settings/crash_handler/message>`. Does not affect exported projects in debug or release mode.
 
 .. rst-class:: classref-item-separator
 
@@ -3533,9 +3533,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/settings/gdscript/always_track_call_stacks** = ``false`` :ref:`🔗<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`
 
-是否在发布构建中跟踪 GDScript 调用堆栈，从而使 :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>` 能够正常工作。
+Whether GDScript call stacks will be tracked in release builds, thus allowing :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>` to function.
 
-\ **注意：**\ 该设置在编辑器构建和调试构建中无效，始终会跟踪 GDScript 调用堆栈。
+\ **Note:** This setting has no effect on editor builds or debug builds, where GDScript call stacks are tracked regardless.
 
 .. rst-class:: classref-item-separator
 
@@ -3547,11 +3547,11 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/settings/gdscript/always_track_local_variables** = ``false`` :ref:`🔗<class_ProjectSettings_property_debug/settings/gdscript/always_track_local_variables>`
 
-是否在包括导出构建在内的所有构建中跟踪 GDScript 局部变量，从而使 :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>` 在启用 ``include_variables`` 参数时能够捕获局部变量。
+Whether GDScript local variables will be tracked in all builds, including export builds, thus allowing :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>` to capture them when enabling its ``include_variables`` parameter.
 
-启用的代价是项目中每个编译的类中每个局部变量会多耗费约 50 字节的内存，大型项目可能总体达到多干 MiB。
+Enabling this comes at the cost of roughly 50 bytes of memory per local variable, for every compiled class in the entire project, so can be several MiB in larger projects.
 
-\ **注意：**\ 该设置在编辑器构建和调试构建中无效，始终会跟踪 GDScript 局部变量。
+\ **Note:** This setting has no effect when running the game from the editor, where GDScript local variables are tracked regardless.
 
 .. rst-class:: classref-item-separator
 
@@ -3563,7 +3563,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/settings/gdscript/max_call_stack** = ``1024`` :ref:`🔗<class_ProjectSettings_property_debug/settings/gdscript/max_call_stack>`
 
-调试 GDScript 时允许的最大调用堆栈。
+Maximum call stack allowed for debugging GDScript.
 
 .. rst-class:: classref-item-separator
 
@@ -3575,9 +3575,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/settings/physics_interpolation/enable_warnings** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/settings/physics_interpolation/enable_warnings>`
 
-如果为 ``true``\ ，则会启用警告，帮助排查错误地更新节点的场合，错误的更新会导致插值问题和显示问题。
+If ``true``, enables warnings which can help pinpoint where nodes are being incorrectly updated, which will result in incorrect interpolation and visual glitches.
 
-对节点进行插值时，必须在 :ref:`Node._physics_process()<class_Node_private_method__physics_process>`\ （在物理周期中）而不是 :ref:`Node._process()<class_Node_private_method__process>`\ （在帧中）设置变换。
+When a node is being interpolated, it is essential that the transform is set during :ref:`Node._physics_process()<class_Node_private_method__physics_process>` (during a physics tick) rather than :ref:`Node._process()<class_Node_private_method__process>` (during a frame).
 
 .. rst-class:: classref-item-separator
 
@@ -3589,7 +3589,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/settings/profiler/max_functions** = ``16384`` :ref:`🔗<class_ProjectSettings_property_debug/settings/profiler/max_functions>`
 
-分析时单帧允许的最大函数数量。
+Maximum number of functions per frame allowed when profiling.
 
 .. rst-class:: classref-item-separator
 
@@ -3601,7 +3601,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/settings/profiler/max_timestamp_query_elements** = ``256`` :ref:`🔗<class_ProjectSettings_property_debug/settings/profiler/max_timestamp_query_elements>`
 
-每帧允许用于可视分析的时间戳查询元素的最大数量。
+Maximum number of timestamp query elements allowed per frame for visual profiling.
 
 .. rst-class:: classref-item-separator
 
@@ -3613,7 +3613,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/settings/stdout/print_fps** = ``false`` :ref:`🔗<class_ProjectSettings_property_debug/settings/stdout/print_fps>`
 
-每秒将帧率打印到标准输出。
+Print frames per second to standard output every second.
 
 .. rst-class:: classref-item-separator
 
@@ -3625,7 +3625,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/settings/stdout/print_gpu_profile** = ``false`` :ref:`🔗<class_ProjectSettings_property_debug/settings/stdout/print_gpu_profile>`
 
-每秒将 GPU 配置文件信息打印到标准输出。这包括平均每帧需要 GPU 渲染多长时间，细分为渲染管道的不同步骤，例如 CanvasItems、阴影、辉光等。
+Print GPU profile information to standard output every second. This includes how long each frame takes the GPU to render on average, broken down into different steps of the render pipeline, such as CanvasItems, shadows, glow, etc.
 
 .. rst-class:: classref-item-separator
 
@@ -3637,7 +3637,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/settings/stdout/verbose_stdout** = ``false`` :ref:`🔗<class_ProjectSettings_property_debug/settings/stdout/verbose_stdout>`
 
-运行时将更多信息打印到标准输出。它显示诸如内存泄漏、正在加载哪些场景和资源等信息。这也可以使用 ``--verbose`` 或 ``-v`` :doc:`命令行参数 <../tutorials/editor/command_line_tutorial>`\ 来启用，即使在导出的项目中也是如此。另见 :ref:`OS.is_stdout_verbose()<class_OS_method_is_stdout_verbose>` and :ref:`@GlobalScope.print_verbose()<class_@GlobalScope_method_print_verbose>`\ 。
+Print more information to standard output when running. It displays information such as memory leaks, which scenes and resources are being loaded, etc. This can also be enabled using the ``--verbose`` or ``-v`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`, even on an exported project. See also :ref:`OS.is_stdout_verbose()<class_OS_method_is_stdout_verbose>` and :ref:`@GlobalScope.print_verbose()<class_@GlobalScope_method_print_verbose>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3649,7 +3649,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shader_language/warnings/device_limit_exceeded** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shader_language/warnings/device_limit_exceeded>`
 
-设为 ``true`` 时，当着色器超出设备极限时会产生警告。目前唯一检测的设备极限是 Uniform 缓冲的大小。未来会加入更多设备极限。
+When set to ``true``, produces a warning when the shader exceeds certain device limits. Currently, the only device limit checked is the limit on uniform buffer size. More device limits will be added in the future.
 
 .. rst-class:: classref-item-separator
 
@@ -3661,7 +3661,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shader_language/warnings/enable** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shader_language/warnings/enable>`
 
-如果为 ``true``\ ，则启用特定的着色器警告（请参阅 ``debug/shader_language/warnings/*`` 设置）。如果为 ``false``\ ，则禁用所有着色器警告。
+If ``true``, enables specific shader warnings (see ``debug/shader_language/warnings/*`` settings). If ``false``, disables all shader warnings.
 
 .. rst-class:: classref-item-separator
 
@@ -3673,7 +3673,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shader_language/warnings/float_comparison** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shader_language/warnings/float_comparison>`
 
-设为 ``true`` 时，当使用 ``==`` 或 ``!=`` 运算符直接比较两个浮点数时，会产生警告。
+When set to ``true``, produces a warning when two floating-point numbers are compared directly with the ``==`` operator or the ``!=`` operator.
 
 .. rst-class:: classref-item-separator
 
@@ -3685,7 +3685,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shader_language/warnings/formatting_error** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shader_language/warnings/formatting_error>`
 
-设为 ``true`` 时，当遇到格式错误时会产生警告。目前唯一检测的是空语句。未来可能加入更多格式错误。
+When set to ``true``, produces a warning upon encountering certain formatting errors. Currently this only checks for empty statements. More formatting errors may be added over time.
 
 .. rst-class:: classref-item-separator
 
@@ -3697,7 +3697,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shader_language/warnings/magic_position_write** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shader_language/warnings/magic_position_write>`
 
-当设置为 ``true`` 时，如果着色器包含 ``POSITION = vec4(vertex,``\ ，则会产生警告，因为这是在 Godot 4.2 及更早版本中编写的非常常见的代码，与 QuadMesh 配对以产生一个全屏后期处理阶段。在 4.3 中切换到反转 z 后，该技巧不再有效，因为它隐式依赖于 ``VERTEX.z`` 为 0。
+When set to ``true``, produces a warning when the shader contains ``POSITION = vec4(vertex,`` as this was very common code written in Godot 4.2 and earlier that was paired with a QuadMesh to produce a full screen post processes pass. With the switch to reversed z in 4.3, this trick no longer works, as it implicitly relied on the ``VERTEX.z`` being 0.
 
 .. rst-class:: classref-item-separator
 
@@ -3709,7 +3709,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shader_language/warnings/treat_warnings_as_errors** = ``false`` :ref:`🔗<class_ProjectSettings_property_debug/shader_language/warnings/treat_warnings_as_errors>`
 
-设为 ``true`` 时，会将警告作为错误对待。
+When set to ``true``, warnings are treated as errors.
 
 .. rst-class:: classref-item-separator
 
@@ -3721,7 +3721,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shader_language/warnings/unused_constant** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shader_language/warnings/unused_constant>`
 
-设为 ``true`` 时，当从未使用某个常量时会产生警告。
+When set to ``true``, produces a warning when a constant is never used.
 
 .. rst-class:: classref-item-separator
 
@@ -3733,7 +3733,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shader_language/warnings/unused_function** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shader_language/warnings/unused_function>`
 
-设为 ``true`` 时，当从未使用某个函数时会产生警告。
+When set to ``true``, produces a warning when a function is never used.
 
 .. rst-class:: classref-item-separator
 
@@ -3745,7 +3745,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shader_language/warnings/unused_local_variable** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shader_language/warnings/unused_local_variable>`
 
-设为 ``true`` 时，当从未使用某个局部变量时会产生警告。
+When set to ``true``, produces a warning when a local variable is never used.
 
 .. rst-class:: classref-item-separator
 
@@ -3757,7 +3757,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shader_language/warnings/unused_struct** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shader_language/warnings/unused_struct>`
 
-设为 ``true`` 时，当从未使用某个结构体时会产生警告。
+When set to ``true``, produces a warning when a struct is never used.
 
 .. rst-class:: classref-item-separator
 
@@ -3769,7 +3769,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shader_language/warnings/unused_uniform** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shader_language/warnings/unused_uniform>`
 
-设为 ``true`` 时，当从未使用某个 uniform 时会产生警告。
+When set to ``true``, produces a warning when a uniform is never used.
 
 .. rst-class:: classref-item-separator
 
@@ -3781,7 +3781,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shader_language/warnings/unused_varying** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shader_language/warnings/unused_varying>`
 
-设为 ``true`` 时，当从未使用某个 varying 时会产生警告。
+When set to ``true``, produces a warning when a varying is never used.
 
 .. rst-class:: classref-item-separator
 
@@ -3793,7 +3793,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/2d/agents_radius_color** = ``Color(1, 1, 0, 0.25)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/2d/agents_radius_color>`
 
-避障代理半径的颜色，在“调试”菜单中启用“显示避障”时可见。
+Color of the avoidance agents radius, visible when "Visible Avoidance" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -3805,7 +3805,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shapes/avoidance/2d/enable_agents_radius** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/2d/enable_agents_radius>`
 
-如果处于启用状态，会在启用“调试”菜单中的“显示避障”时显示避障代理的半径。
+If enabled, displays avoidance agents radius when "Visible Avoidance" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -3817,7 +3817,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shapes/avoidance/2d/enable_obstacles_radius** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/2d/enable_obstacles_radius>`
 
-如果处于启用状态，会在启用“调试”菜单中的“显示避障”时显示避障障碍物的半径。
+If enabled, displays avoidance obstacles radius when "Visible Avoidance" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -3829,7 +3829,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shapes/avoidance/2d/enable_obstacles_static** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/2d/enable_obstacles_static>`
 
-如果处于启用状态，会在启用“调试”菜单中的“显示避障”时显示静态避障障碍物。
+If enabled, displays static avoidance obstacles when "Visible Avoidance" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -3841,7 +3841,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/2d/obstacles_radius_color** = ``Color(1, 0.5, 0, 0.25)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/2d/obstacles_radius_color>`
 
-避障障碍物半径的颜色，在调试菜单中启用“显示避障”时可见。
+Color of the avoidance obstacles radius, visible when "Visible Avoidance" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -3853,7 +3853,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/2d/obstacles_static_edge_pushin_color** = ``Color(1, 0, 0, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/2d/obstacles_static_edge_pushin_color>`
 
-静态障碍物的顶点缠绕顺序会将代理推入时，障碍物边的颜色，在调试菜单中启用“显示避障”时可见。
+Color of the static avoidance obstacles edges when their vertices are winded in order to push agents in, visible when "Visible Avoidance" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -3865,7 +3865,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/2d/obstacles_static_edge_pushout_color** = ``Color(1, 1, 0, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/2d/obstacles_static_edge_pushout_color>`
 
-静态障碍物的顶点缠绕顺序会将代理推出时，障碍物边的颜色，在调试菜单中启用“显示避障”时可见。
+Color of the static avoidance obstacles edges when their vertices are winded in order to push agents out, visible when "Visible Avoidance" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -3877,7 +3877,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/2d/obstacles_static_face_pushin_color** = ``Color(1, 0, 0, 0)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/2d/obstacles_static_face_pushin_color>`
 
-静态障碍物的顶点缠绕顺序会将代理推入时，障碍物面的颜色，在调试菜单中启用“显示避障”时可见。
+Color of the static avoidance obstacles faces when their vertices are winded in order to push agents in, visible when "Visible Avoidance" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -3889,7 +3889,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/2d/obstacles_static_face_pushout_color** = ``Color(1, 1, 0, 0.5)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/2d/obstacles_static_face_pushout_color>`
 
-静态障碍物的顶点缠绕顺序会将代理推出时，障碍物面的颜色，在调试菜单中启用“显示避障”时可见。
+Color of the static avoidance obstacles faces when their vertices are winded in order to push agents out, visible when "Visible Avoidance" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -3901,7 +3901,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/3d/agents_radius_color** = ``Color(1, 1, 0, 0.25)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/3d/agents_radius_color>`
 
-避障代理半径的颜色，在“调试”菜单中启用“显示避障”时可见。
+Color of the avoidance agents radius, visible when "Visible Avoidance" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -3913,7 +3913,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shapes/avoidance/3d/enable_agents_radius** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/3d/enable_agents_radius>`
 
-如果处于启用状态，会在启用“调试”菜单中的“显示避障”时显示避障代理的半径。
+If enabled, displays avoidance agents radius when "Visible Avoidance" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -3925,7 +3925,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shapes/avoidance/3d/enable_obstacles_radius** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/3d/enable_obstacles_radius>`
 
-如果处于启用状态，会在启用“调试”菜单中的“显示避障”时显示避障障碍物的半径。
+If enabled, displays avoidance obstacles radius when "Visible Avoidance" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -3937,7 +3937,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shapes/avoidance/3d/enable_obstacles_static** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/3d/enable_obstacles_static>`
 
-如果处于启用状态，会在启用“调试”菜单中的“显示避障”时显示静态避障障碍物。
+If enabled, displays static avoidance obstacles when "Visible Avoidance" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -3949,7 +3949,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/3d/obstacles_radius_color** = ``Color(1, 0.5, 0, 0.25)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/3d/obstacles_radius_color>`
 
-避障障碍物半径的颜色，在调试菜单中启用“显示避障”时可见。
+Color of the avoidance obstacles radius, visible when "Visible Avoidance" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -3961,7 +3961,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/3d/obstacles_static_edge_pushin_color** = ``Color(1, 0, 0, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/3d/obstacles_static_edge_pushin_color>`
 
-静态障碍物的顶点缠绕顺序会将代理推入时，障碍物边的颜色，在调试菜单中启用“显示避障”时可见。
+Color of the static avoidance obstacles edges when their vertices are winded in order to push agents in, visible when "Visible Avoidance" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -3973,7 +3973,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/3d/obstacles_static_edge_pushout_color** = ``Color(1, 1, 0, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/3d/obstacles_static_edge_pushout_color>`
 
-静态障碍物的顶点缠绕顺序会将代理推出时，障碍物边的颜色，在调试菜单中启用“显示避障”时可见。
+Color of the static avoidance obstacles edges when their vertices are winded in order to push agents out, visible when "Visible Avoidance" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -3985,7 +3985,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/3d/obstacles_static_face_pushin_color** = ``Color(1, 0, 0, 0)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/3d/obstacles_static_face_pushin_color>`
 
-静态障碍物的顶点缠绕顺序会将代理推入时，障碍物面的颜色，在调试菜单中启用“显示避障”时可见。
+Color of the static avoidance obstacles faces when their vertices are winded in order to push agents in, visible when "Visible Avoidance" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -3997,7 +3997,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/3d/obstacles_static_face_pushout_color** = ``Color(1, 1, 0, 0.5)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/3d/obstacles_static_face_pushout_color>`
 
-静态障碍物的顶点缠绕顺序会将代理推出时，障碍物面的颜色，在调试菜单中启用“显示避障”时可见。
+Color of the static avoidance obstacles faces when their vertices are winded in order to push agents out, visible when "Visible Avoidance" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4009,7 +4009,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/collision/contact_color** = ``Color(1, 0.2, 0.1, 0.8)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/collision/contact_color>`
 
-碰撞形状之间接触点的颜色，在调试菜单中启用“显示碰撞形状”时可见。
+Color of the contact points between collision shapes, visible when "Visible Collision Shapes" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4021,7 +4021,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shapes/collision/draw_2d_outlines** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/collision/draw_2d_outlines>`
 
-设置当调试菜单中的启用“显示碰撞形状”时，2D 物理是否会在游戏中显示碰撞轮廓。
+Sets whether 2D physics will display collision outlines in game when "Visible Collision Shapes" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4033,7 +4033,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/shapes/collision/max_contacts_displayed** = ``10000`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/collision/max_contacts_displayed>`
 
-当在调试菜单中启用“显示碰撞形状”时，碰撞形状之间显示的最大接触点数。
+Maximum number of contact points between collision shapes to display when "Visible Collision Shapes" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4045,7 +4045,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/collision/shape_color** = ``Color(0, 0.6, 0.7, 0.42)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/collision/shape_color>`
 
-碰撞形状的颜色，当在调试菜单中启用“显示碰撞形状”时可见。
+Color of the collision shapes, visible when "Visible Collision Shapes" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4057,7 +4057,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/2d/agent_path_color** = ``Color(1, 0, 0, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/2d/agent_path_color>`
 
-用于显示已启用的导航代理路径的颜色，代理启用调试时生效。
+Color to display enabled navigation agent paths when an agent has debug enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -4069,7 +4069,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`float<class_float>` **debug/shapes/navigation/2d/agent_path_point_size** = ``4.0`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/2d/agent_path_point_size>`
 
-栅格大小（像素），如果导航代理启用了调试，则会用于渲染该代理的路径点。
+Rasterized size (pixel) used to render navigation agent path points when an agent has debug enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -4081,7 +4081,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/2d/edge_connection_color** = ``Color(1, 0, 1, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/2d/edge_connection_color>`
 
-用于显示导航区域之间的边缘连接的颜色，在“调试”菜单中，启用“可见导航”时可见。
+Color to display edge connections between navigation regions, visible when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4093,7 +4093,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shapes/navigation/2d/enable_agent_paths** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/2d/enable_agent_paths>`
 
-如果处于启用状态，会在导航代理启用调试时显示其路径。
+If enabled, displays navigation agent paths when an agent has debug enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -4105,7 +4105,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shapes/navigation/2d/enable_edge_connections** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/2d/enable_edge_connections>`
 
-如果处于启用状态，会在启用“调试”菜单中的“显示导航”时显示导航地区之间的边缘连接。
+If enabled, displays edge connections between navigation regions when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4117,7 +4117,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shapes/navigation/2d/enable_edge_lines** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/2d/enable_edge_lines>`
 
-如果处于启用状态，会在启用“调试”菜单中的“显示导航”时显示导航网格多边形的边缘。
+If enabled, displays navigation mesh polygon edges when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4129,7 +4129,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shapes/navigation/2d/enable_geometry_face_random_color** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/2d/enable_geometry_face_random_color>`
 
-如果处于启用状态，会在启用“调试”菜单中的“显示导航”时为每个导航网格多边形面使用随机颜色着色。
+If enabled, colorizes each navigation mesh polygon face with a random color when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4141,7 +4141,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shapes/navigation/2d/enable_link_connections** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/2d/enable_link_connections>`
 
-如果处于启用状态，会在启用“调试”菜单中的“显示导航”时显示导航链接的连接。
+If enabled, displays navigation link connections when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4153,7 +4153,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/2d/geometry_edge_color** = ``Color(0.5, 1, 1, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/2d/geometry_edge_color>`
 
-用于显示已启用导航网格多边形边缘的颜色，在“调试”菜单中启用“显示导航”时可见。
+Color to display enabled navigation mesh polygon edges, visible when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4165,7 +4165,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/2d/geometry_edge_disabled_color** = ``Color(0.5, 0.5, 0.5, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/2d/geometry_edge_disabled_color>`
 
-用于显示已禁用导航网格多边形边缘的颜色，在“调试”菜单中启用“显示导航”时可见。
+Color to display disabled navigation mesh polygon edges, visible when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4177,7 +4177,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/2d/geometry_face_color** = ``Color(0.5, 1, 1, 0.4)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/2d/geometry_face_color>`
 
-用于显示已启用导航网格多边形面的颜色，在“调试”菜单中启用“显示导航”时可见。
+Color to display enabled navigation mesh polygon faces, visible when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4189,7 +4189,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/2d/geometry_face_disabled_color** = ``Color(0.5, 0.5, 0.5, 0.4)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/2d/geometry_face_disabled_color>`
 
-用于显示已禁用导航网格多边形面的颜色，在“调试”菜单中启用“显示导航”时可见。
+Color to display disabled navigation mesh polygon faces, visible when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4201,7 +4201,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/2d/link_connection_color** = ``Color(1, 0.5, 1, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/2d/link_connection_color>`
 
-导航链接连接的颜色，在调试菜单中启用“显示导航”时可见。
+Color to use to display navigation link connections, visible when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4213,7 +4213,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/2d/link_connection_disabled_color** = ``Color(0.5, 0.5, 0.5, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/2d/link_connection_disabled_color>`
 
-被禁用的导航链接连接的颜色，在调试菜单中启用“显示导航”时可见。
+Color to use to display disabled navigation link connections, visible when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4225,7 +4225,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/3d/agent_path_color** = ``Color(1, 0, 0, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/agent_path_color>`
 
-用于显示已启用的导航代理路径的颜色，代理启用调试时生效。
+Color to display enabled navigation agent paths when an agent has debug enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -4237,7 +4237,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`float<class_float>` **debug/shapes/navigation/3d/agent_path_point_size** = ``4.0`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/agent_path_point_size>`
 
-栅格大小（像素），如果导航代理启用了调试，则会用于渲染该代理的路径点。
+Rasterized size (pixel) used to render navigation agent path points when an agent has debug enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -4249,7 +4249,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/3d/edge_connection_color** = ``Color(1, 0, 1, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/edge_connection_color>`
 
-用于显示导航区域之间的边缘连接的颜色，在“调试”菜单中，启用“可见导航”时可见。
+Color to display edge connections between navigation regions, visible when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4261,7 +4261,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shapes/navigation/3d/enable_agent_paths** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/enable_agent_paths>`
 
-如果处于启用状态，会在导航代理启用调试时显示其路径。
+If enabled, displays navigation agent paths when an agent has debug enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -4273,7 +4273,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shapes/navigation/3d/enable_agent_paths_xray** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/enable_agent_paths_xray>`
 
-如果处于启用状态，会在导航代理启用调试时透过几何体显示其路径。
+If enabled, displays navigation agent paths through geometry when an agent has debug enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -4285,7 +4285,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shapes/navigation/3d/enable_edge_connections** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/enable_edge_connections>`
 
-如果处于启用状态，会在启用“调试”菜单中的“显示导航”时显示导航地区之间的边缘连接。
+If enabled, displays edge connections between navigation regions when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4297,7 +4297,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shapes/navigation/3d/enable_edge_connections_xray** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/enable_edge_connections_xray>`
 
-如果处于启用状态，会在启用“调试”菜单中的“显示导航”时透过几何体显示导航地区之间的边缘连接。
+If enabled, displays edge connections between navigation regions through geometry when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4309,7 +4309,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shapes/navigation/3d/enable_edge_lines** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/enable_edge_lines>`
 
-如果处于启用状态，会在启用“调试”菜单中的“显示导航”时显示导航网格多边形的边缘。
+If enabled, displays navigation mesh polygon edges when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4321,7 +4321,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shapes/navigation/3d/enable_edge_lines_xray** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/enable_edge_lines_xray>`
 
-如果处于启用状态，会在启用“调试”菜单中的“显示导航”时透过几何体显示导航网格多边形的边缘。
+If enabled, displays navigation mesh polygon edges through geometry when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4333,7 +4333,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shapes/navigation/3d/enable_geometry_face_random_color** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/enable_geometry_face_random_color>`
 
-如果处于启用状态，会在启用“调试”菜单中的“显示导航”时为每个导航网格多边形面使用随机颜色着色。
+If enabled, colorizes each navigation mesh polygon face with a random color when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4345,7 +4345,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shapes/navigation/3d/enable_link_connections** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/enable_link_connections>`
 
-如果处于启用状态，会在启用“调试”菜单中的“显示导航”时显示导航链接的连接。
+If enabled, displays navigation link connections when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4357,7 +4357,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **debug/shapes/navigation/3d/enable_link_connections_xray** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/enable_link_connections_xray>`
 
-如果处于启用状态，会在启用“调试”菜单中的“显示导航”时透过几何体显示导航链接的连接。
+If enabled, displays navigation link connections through geometry when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4369,7 +4369,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/3d/geometry_edge_color** = ``Color(0.5, 1, 1, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/geometry_edge_color>`
 
-用于显示已启用导航网格多边形边缘的颜色，在“调试”菜单中启用“显示导航”时可见。
+Color to display enabled navigation mesh polygon edges, visible when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4381,7 +4381,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/3d/geometry_edge_disabled_color** = ``Color(0.5, 0.5, 0.5, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/geometry_edge_disabled_color>`
 
-用于显示已禁用导航网格多边形边缘的颜色，在“调试”菜单中启用“显示导航”时可见。
+Color to display disabled navigation mesh polygon edges, visible when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4393,7 +4393,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/3d/geometry_face_color** = ``Color(0.5, 1, 1, 0.4)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/geometry_face_color>`
 
-用于显示已启用导航网格多边形面的颜色，在“调试”菜单中启用“显示导航”时可见。
+Color to display enabled navigation mesh polygon faces, visible when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4405,7 +4405,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/3d/geometry_face_disabled_color** = ``Color(0.5, 0.5, 0.5, 0.4)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/geometry_face_disabled_color>`
 
-用于显示已禁用导航网格多边形面的颜色，在“调试”菜单中启用“显示导航”时可见。
+Color to display disabled navigation mesh polygon faces, visible when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4417,7 +4417,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/3d/link_connection_color** = ``Color(1, 0.5, 1, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/link_connection_color>`
 
-导航链接连接的颜色，在调试菜单中启用“显示导航”时可见。
+Color to use to display navigation link connections, visible when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4429,7 +4429,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/navigation/3d/link_connection_disabled_color** = ``Color(0.5, 0.5, 0.5, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/navigation/3d/link_connection_disabled_color>`
 
-被禁用的导航链接连接的颜色，在调试菜单中启用“显示导航”时可见。
+Color to use to display disabled navigation link connections, visible when "Visible Navigation" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4441,7 +4441,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Color<class_Color>` **debug/shapes/paths/geometry_color** = ``Color(0.1, 1, 0.7, 0.4)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/paths/geometry_color>`
 
-曲线路径几何图形的颜色，在“调试”菜单中启用“可见路径”时可见。
+Color of the curve path geometry, visible when "Visible Paths" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4453,7 +4453,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`float<class_float>` **debug/shapes/paths/geometry_width** = ``2.0`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/paths/geometry_width>`
 
-曲线路径几何图形的线宽，在“调试”菜单中启用“可见路径”时可见。
+Line width of the curve path geometry, visible when "Visible Paths" is enabled in the Debug menu.
 
 .. rst-class:: classref-item-separator
 
@@ -4465,7 +4465,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`String<class_String>` **display/display_server/driver** :ref:`🔗<class_ProjectSettings_property_display/display_server/driver>`
 
-设置显示服务器要使用的驱动程序。该属性不能直接编辑，请改用特定平台的覆盖项来设置驱动程序。
+Sets the driver to be used by the display server. This property can not be edited directly, instead, set the driver using the platform-specific overrides.
 
 .. rst-class:: classref-item-separator
 
@@ -4477,7 +4477,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`String<class_String>` **display/display_server/driver.android** :ref:`🔗<class_ProjectSettings_property_display/display_server/driver.android>`
 
-:ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>` 在 Android 的覆盖项。
+Android override for :ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4489,7 +4489,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`String<class_String>` **display/display_server/driver.ios** :ref:`🔗<class_ProjectSettings_property_display/display_server/driver.ios>`
 
-:ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>` 在 iOS 的覆盖项。
+iOS override for :ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4501,7 +4501,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`String<class_String>` **display/display_server/driver.linuxbsd** :ref:`🔗<class_ProjectSettings_property_display/display_server/driver.linuxbsd>`
 
-:ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>` 在 LinuxBSD 的覆盖项。
+LinuxBSD override for :ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4513,7 +4513,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`String<class_String>` **display/display_server/driver.macos** :ref:`🔗<class_ProjectSettings_property_display/display_server/driver.macos>`
 
-:ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>` 在 macOS 的覆盖项。
+MacOS override for :ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4525,7 +4525,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`String<class_String>` **display/display_server/driver.visionos** :ref:`🔗<class_ProjectSettings_property_display/display_server/driver.visionos>`
 
-:ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>` 在 visionOS 的覆盖项。
+visionOS override for :ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4537,7 +4537,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`String<class_String>` **display/display_server/driver.windows** :ref:`🔗<class_ProjectSettings_property_display/display_server/driver.windows>`
 
-:ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>` 在 Windows 的覆盖项。
+Windows override for :ref:`display/display_server/driver<class_ProjectSettings_property_display/display_server/driver>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4549,7 +4549,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`String<class_String>` **display/mouse_cursor/custom_image** = ``""`` :ref:`🔗<class_ProjectSettings_property_display/mouse_cursor/custom_image>`
 
-鼠标光标的自定义图像（最大 256×256）。
+Custom image for the mouse cursor (limited to 256×256).
 
 .. rst-class:: classref-item-separator
 
@@ -4561,7 +4561,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Vector2<class_Vector2>` **display/mouse_cursor/custom_image_hotspot** = ``Vector2(0, 0)`` :ref:`🔗<class_ProjectSettings_property_display/mouse_cursor/custom_image_hotspot>`
 
-自定义鼠标光标图像的热点。
+Hotspot for the custom mouse cursor image.
 
 .. rst-class:: classref-item-separator
 
@@ -4573,7 +4573,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Vector2<class_Vector2>` **display/mouse_cursor/tooltip_position_offset** = ``Vector2(10, 10)`` :ref:`🔗<class_ProjectSettings_property_display/mouse_cursor/tooltip_position_offset>`
 
-工具提示相对于鼠标光标热点的位置偏移量。
+Position offset for tooltips, relative to the mouse cursor's hotspot.
 
 .. rst-class:: classref-item-separator
 
@@ -4585,9 +4585,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **display/window/dpi/allow_hidpi** = ``true`` :ref:`🔗<class_ProjectSettings_property_display/window/dpi/allow_hidpi>`
 
-如果为 ``true`` ，则允许在 Windows、macOS、Android、iOS 和 Web 上使用 HiDPI 显示器。如果为 ``false`` ，则在 HiDPI 显示器上将使用该平台的低 DPI 回退，这样会导致窗口模糊或像素化的方式显示（并且可能导致各种窗口管理问题）。因此，建议你让项目支持\ :doc:`多个分辨率 <../tutorials/rendering/multiple_resolutions>`\ ，而不是禁用此设置。
+If ``true``, allows HiDPI display on Windows, macOS, Android, iOS and Web. If ``false``, the platform's low-DPI fallback will be used on HiDPI displays, which causes the window to be displayed in a blurry or pixelated manner (and can cause various window management bugs). Therefore, it is recommended to make your project scale to :doc:`multiple resolutions <../tutorials/rendering/multiple_resolutions>` instead of disabling this setting.
 
-\ **注意：**\ 这个设置在 Linux 上无效，因为 Linux 不支持 DPI 感知回退。
+\ **Note:** This setting has no effect on Linux as DPI-awareness fallbacks are not supported there.
 
 .. rst-class:: classref-item-separator
 
@@ -4599,7 +4599,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **display/window/energy_saving/keep_screen_on** = ``true`` :ref:`🔗<class_ProjectSettings_property_display/window/energy_saving/keep_screen_on>`
 
-如果为 ``true``\ ，则保持屏幕打开（即使在不活动的情况下），因此屏幕保护程序不会接管。适用于桌面和移动平台。
+If ``true``, keeps the screen on (even in case of inactivity), so the screensaver does not take over. Works on desktop and mobile platforms.
 
 .. rst-class:: classref-item-separator
 
@@ -4611,9 +4611,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **display/window/frame_pacing/android/enable_frame_pacing** = ``true`` :ref:`🔗<class_ProjectSettings_property_display/window/frame_pacing/android/enable_frame_pacing>`
 
-启用 Swappy，能够在 Android 上实现稳定帧率。强烈推荐。
+Enable Swappy for stable frame pacing on Android. Highly recommended.
 
-\ **注意：**\ 使用 OpenXR 时会强制关闭该选项。
+\ **Note:** This option will be forced off when using OpenXR.
 
 .. rst-class:: classref-item-separator
 
@@ -4625,15 +4625,15 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **display/window/frame_pacing/android/swappy_mode** = ``2`` :ref:`🔗<class_ProjectSettings_property_display/window/frame_pacing/android/swappy_mode>`
 
-要使用的 Swappy 模式。可选项有：
+Swappy mode to use. The options are:
 
-- ``pipeline_forced_on``\ ：尝试遵循 :ref:`Engine.max_fps<class_Engine_property_max_fps>`\ 。管线始终启用。这是桌面 PC 的默认行为。
+- ``pipeline_forced_on``: Try to honor :ref:`Engine.max_fps<class_Engine_property_max_fps>`. Pipelining is always on. This is the same behavior as a desktop PC.
 
-- ``auto_fps_pipeline_forced_on``\ ：自动计算最大 FPS。实际的 max_fps 会在 ``0`` 到 :ref:`Engine.max_fps<class_Engine_property_max_fps>` 之间。虽然听起来很方便，但请注意，在找到足够稳定的最大值之前 Swappy 经常会降低最大 FPS。也就是说，如果你的游戏在 60hz 屏幕上运行在 40fps 和 60fps 之间，那么在一段时间后 Swappy 就会将最大 FPS 降低，让游戏精准地使用 30fps 渲染。
+- ``auto_fps_pipeline_forced_on``: Calculate the max FPS automatically. The actual max FPS will be between ``0`` and :ref:`Engine.max_fps<class_Engine_property_max_fps>`. While this sounds convenient, beware that Swappy will often downgrade the max FPS until it finds a value that can be maintained. That means, if your game runs between 40fps and 60fps on a 60hz screen, after some time Swappy will downgrade the max FPS so that the game renders at a perfect 30fps.
 
-- ``auto_fps_auto_pipeline``\ ：与 ``auto_fps_pipeline_forced_on`` 相同，但是如果 Swappy 检测到渲染极快（例如在 60hz 屏幕上耗时小于 8ms），那么 Swappy 就会禁用管线，尽可能降低输入延迟。这是默认行为。
+- ``auto_fps_auto_pipeline``: Same as ``auto_fps_pipeline_forced_on``, but if Swappy detects that rendering is very fast (for example it takes less than 8ms to render on a 60hz screen), Swappy will disable pipelining to minimize input latency. This is the default.
 
-\ **注意：**\ 如果 :ref:`Engine.max_fps<class_Engine_property_max_fps>` 为 ``0``\ ，那么就会把屏幕的刷新率当作实际的最大 FPS（通常是 60hz、90hz、120hz 之类的，取决于设备型号和操作系统设置）。
+\ **Note:** If :ref:`Engine.max_fps<class_Engine_property_max_fps>` is ``0``, the actual max FPS will be considered to be the screen's refresh rate (often 60hz, 90hz, or 120hz, depending on device model and OS settings).
 
 .. rst-class:: classref-item-separator
 
@@ -4645,9 +4645,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **display/window/handheld/orientation** = ``0`` :ref:`🔗<class_ProjectSettings_property_display/window/handheld/orientation>`
 
-在移动设备上使用的默认屏幕朝向。可能的取值见 :ref:`ScreenOrientation<enum_DisplayServer_ScreenOrientation>`\ 。
+The default screen orientation to use on mobile devices. See :ref:`ScreenOrientation<enum_DisplayServer_ScreenOrientation>` for possible values.
 
-\ **注意：**\ 设为竖屏时，该项目设置不会自动翻转项目分辨率的宽度和高度。你必须设置与之相对应的 :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` 和 :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`\ 。
+\ **Note:** When set to a portrait orientation, this project setting does not flip the project resolution's width and height automatically. Instead, you have to set :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` and :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>` accordingly.
 
 .. rst-class:: classref-item-separator
 
@@ -4659,7 +4659,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **display/window/ios/allow_high_refresh_rate** = ``true`` :ref:`🔗<class_ProjectSettings_property_display/window/ios/allow_high_refresh_rate>`
 
-如果为 ``true``\ ，则允许支持高刷新率“ProMotion”的 iOS 设备以每秒 120 帧的速度渲染。
+If ``true``, iOS devices that support high refresh rate/"ProMotion" will be allowed to render at up to 120 frames per second.
 
 .. rst-class:: classref-item-separator
 
@@ -4671,7 +4671,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **display/window/ios/hide_home_indicator** = ``true`` :ref:`🔗<class_ProjectSettings_property_display/window/ios/hide_home_indicator>`
 
-如果为 ``true``\ ，home 指示器将自动隐藏。这只会影响没有物理 home 键的 iOS 设备。
+If ``true``, the home indicator is hidden automatically. This only affects iOS devices without a physical home button.
 
 .. rst-class:: classref-item-separator
 
@@ -4683,7 +4683,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **display/window/ios/hide_status_bar** = ``true`` :ref:`🔗<class_ProjectSettings_property_display/window/ios/hide_status_bar>`
 
-如果为 ``true``\ ，则状态栏将在应用程序运行时隐藏。
+If ``true``, the status bar is hidden while the app is running.
 
 .. rst-class:: classref-item-separator
 
@@ -4695,9 +4695,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **display/window/ios/suppress_ui_gesture** = ``true`` :ref:`🔗<class_ProjectSettings_property_display/window/ios/suppress_ui_gesture>`
 
-如果为 ``true``\ ，则需要两次滑动才能访问使用手势的 iOS UI。
+If ``true``, it will require two swipes to access iOS UI that uses gestures.
 
-\ **注意：**\ 如果 ``hide_home_indicator`` 为 ``true``\ ，则该设置对 home 指示器没有影响。
+\ **Note:** This setting has no effect on the home indicator if ``hide_home_indicator`` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -4709,7 +4709,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **display/window/per_pixel_transparency/allowed** = ``false`` :ref:`🔗<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`
 
-如果为 ``true``\ ，则允许窗口背景的逐像素透明度。这样会影响性能，因此除非需要，否则请将其保留为 ``false``\ 。另见 :ref:`display/window/size/transparent<class_ProjectSettings_property_display/window/size/transparent>` 和 :ref:`rendering/viewport/transparent_background<class_ProjectSettings_property_rendering/viewport/transparent_background>`\ 。
+If ``true``, allows per-pixel transparency for the window background. This affects performance, so leave it on ``false`` unless you need it. See also :ref:`display/window/size/transparent<class_ProjectSettings_property_display/window/size/transparent>` and :ref:`rendering/viewport/transparent_background<class_ProjectSettings_property_rendering/viewport/transparent_background>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4721,9 +4721,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **display/window/size/always_on_top** = ``false`` :ref:`🔗<class_ProjectSettings_property_display/window/size/always_on_top>`
 
-强制主窗口始终置顶。
+Forces the main window to be always on top.
 
-\ **注意：**\ 该设置在 iOS、Android 和 Web 上被忽略。
+\ **Note:** This setting is ignored on iOS, Android, and Web.
 
 .. rst-class:: classref-item-separator
 
@@ -4735,9 +4735,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **display/window/size/borderless** = ``false`` :ref:`🔗<class_ProjectSettings_property_display/window/size/borderless>`
 
-强制主窗口无边框。
+Forces the main window to be borderless.
 
-\ **注意：**\ 该设置在 iOS、Android 和 Web 上被忽略。
+\ **Note:** This setting is ignored on iOS, Android, and Web.
 
 .. rst-class:: classref-item-separator
 
@@ -4749,9 +4749,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **display/window/size/extend_to_title** = ``false`` :ref:`🔗<class_ProjectSettings_property_display/window/size/extend_to_title>`
 
-主窗口的内容会扩展到整个窗口的大小。与无边框窗口不同的是，窗口的框架仍是完整的，可以用来调整窗口的大小，标题栏是透明的，但有最小/最大/关闭按钮。
+Main window content is expanded to the full size of the window. Unlike a borderless window, the frame is left intact and can be used to resize the window, and the title bar is transparent, but has minimize/maximize/close buttons.
 
-\ **注意：**\ 该设置只在 macOS 上实现。
+\ **Note:** This setting is implemented only on macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4763,9 +4763,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Vector2i<class_Vector2i>` **display/window/size/initial_position** = ``Vector2i(0, 0)`` :ref:`🔗<class_ProjectSettings_property_display/window/size/initial_position>`
 
-主窗口的初始位置（使用虚拟桌面坐标），该设置仅在 :ref:`display/window/size/initial_position_type<class_ProjectSettings_property_display/window/size/initial_position_type>` 设置为“Absolute”（\ ``0`` ）时使用。
+Main window initial position (in virtual desktop coordinates), this setting is used only if :ref:`display/window/size/initial_position_type<class_ProjectSettings_property_display/window/size/initial_position_type>` is set to "Absolute" (``0``).
 
-\ **注意：**\ 该设置仅影响导出的项目，或者当项目从命令行运行时。在编辑器中，请改用 :ref:`EditorSettings.run/window_placement/rect_custom_position<class_EditorSettings_property_run/window_placement/rect_custom_position>` 的值。
+\ **Note:** This setting only affects the exported project, or when the project is run from the command line. In the editor, the value of :ref:`EditorSettings.run/window_placement/rect_custom_position<class_EditorSettings_property_run/window_placement/rect_custom_position>` is used instead.
 
 .. rst-class:: classref-item-separator
 
@@ -4801,9 +4801,9 @@ Main window initial position.
 
 :ref:`int<class_int>` **display/window/size/initial_screen** = ``0`` :ref:`🔗<class_ProjectSettings_property_display/window/size/initial_screen>`
 
-主窗口的初始屏幕，该设置仅在 :ref:`display/window/size/initial_position_type<class_ProjectSettings_property_display/window/size/initial_position_type>` 被设置为“Other Screen Center”（\ ``2`` ）时使用。
+Main window initial screen, this setting is used only if :ref:`display/window/size/initial_position_type<class_ProjectSettings_property_display/window/size/initial_position_type>` is set to "Other Screen Center" (``2``).
 
-\ **注意：**\ 该设置仅影响导出的项目，或者当项目从命令行运行时。在编辑器中，请改用 :ref:`EditorSettings.run/window_placement/screen<class_EditorSettings_property_run/window_placement/screen>` 的值。
+\ **Note:** This setting only affects the exported project, or when the project is run from the command line. In the editor, the value of :ref:`EditorSettings.run/window_placement/screen<class_EditorSettings_property_run/window_placement/screen>` is used instead.
 
 .. rst-class:: classref-item-separator
 
@@ -4815,7 +4815,7 @@ Main window initial position.
 
 :ref:`bool<class_bool>` **display/window/size/maximize_disabled** = ``false`` :ref:`🔗<class_ProjectSettings_property_display/window/size/maximize_disabled>`
 
-如果为 ``true``\ ，则禁用主窗口的最大化按钮。
+If ``true``, the main window's maximize button is disabled.
 
 .. rst-class:: classref-item-separator
 
@@ -4827,7 +4827,7 @@ Main window initial position.
 
 :ref:`bool<class_bool>` **display/window/size/minimize_disabled** = ``false`` :ref:`🔗<class_ProjectSettings_property_display/window/size/minimize_disabled>`
 
-如果为 ``true``\ ，则禁用主窗口的最小化按钮。
+If ``true``, the main window's minimize button is disabled.
 
 .. rst-class:: classref-item-separator
 
@@ -4839,9 +4839,9 @@ Main window initial position.
 
 :ref:`int<class_int>` **display/window/size/mode** = ``0`` :ref:`🔗<class_ProjectSettings_property_display/window/size/mode>`
 
-主窗口的模式。可能的取值以及各个模式的行为请参阅 :ref:`WindowMode<enum_DisplayServer_WindowMode>`\ 。
+Main window mode. See :ref:`WindowMode<enum_DisplayServer_WindowMode>` for possible values and how each mode behaves.
 
-\ **注意：**\ 游戏内嵌仅在“Windowed”模式下可用。
+\ **Note:** Game embedding is available only in the "Windowed" mode.
 
 .. rst-class:: classref-item-separator
 
@@ -4853,7 +4853,7 @@ Main window initial position.
 
 :ref:`bool<class_bool>` **display/window/size/no_focus** = ``false`` :ref:`🔗<class_ProjectSettings_property_display/window/size/no_focus>`
 
-主窗口无法成为焦点。无焦点的窗口将忽略除鼠标点击之外的所有输入。
+Main window can't be focused. No-focus window will ignore all input, except mouse clicks.
 
 .. rst-class:: classref-item-separator
 
@@ -4865,13 +4865,13 @@ Main window initial position.
 
 :ref:`bool<class_bool>` **display/window/size/resizable** = ``true`` :ref:`🔗<class_ProjectSettings_property_display/window/size/resizable>`
 
-如果为 ``true``\ ，则默认允许窗口调整大小。
+If ``true``, allows the window to be resizable by default.
 
-\ **注意：**\ 该属性仅在项目启动时读取。要更改窗口在运行时是否可调整大小，请改在根窗口上设置 :ref:`Window.unresizable<class_Window_property_unresizable>`\ ，这样可以使用 ``get_viewport().get_window()`` 检索根窗口。\ :ref:`Window.unresizable<class_Window_property_unresizable>` 采用与该设置相反的值。
+\ **Note:** This property is only read when the project starts. To change whether the window is resizable at runtime, set :ref:`Window.unresizable<class_Window_property_unresizable>` instead on the root Window, which can be retrieved using ``get_viewport().get_window()``. :ref:`Window.unresizable<class_Window_property_unresizable>` takes the opposite value of this setting.
 
-\ **注意：**\ 某些窗口管理器可以被配置为忽略窗口的不可调整大小状态。不要依赖该设置来保证窗口\ *永远不会*\ 调整大小。
+\ **Note:** Certain window managers can be configured to ignore the non-resizable status of a window. Do not rely on this setting as a guarantee that the window will *never* be resizable.
 
-\ **注意：**\ 该设置在 iOS 上被忽略。
+\ **Note:** This setting is ignored on iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4883,9 +4883,9 @@ Main window initial position.
 
 :ref:`bool<class_bool>` **display/window/size/sharp_corners** = ``false`` :ref:`🔗<class_ProjectSettings_property_display/window/size/sharp_corners>`
 
-如果为 ``true``\ ，则主窗口默认使用尖角。
+If ``true``, the main window uses sharp corners by default.
 
-\ **注意：**\ 该属性在 Windows（11）上实现。
+\ **Note:** This property is implemented only on Windows (11).
 
 .. rst-class:: classref-item-separator
 
@@ -4897,13 +4897,13 @@ Main window initial position.
 
 :ref:`bool<class_bool>` **display/window/size/transparent** = ``false`` :ref:`🔗<class_ProjectSettings_property_display/window/size/transparent>`
 
-如果为 ``true``\ ，则启用窗口管理器提示，表示主窗口背景\ *能够*\ 透明。这并不会让背景变得透明。要让背景变透明，根视口必须也通过启用 :ref:`rendering/viewport/transparent_background<class_ProjectSettings_property_rendering/viewport/transparent_background>` 来变得透明。
+If ``true``, enables a window manager hint that the main window background *can* be transparent. This does not make the background actually transparent. For the background to be transparent, the root viewport must also be made transparent by enabling :ref:`rendering/viewport/transparent_background<class_ProjectSettings_property_rendering/viewport/transparent_background>`.
 
-\ **注意：**\ 要使用透明的启动画面，请将 :ref:`application/boot_splash/bg_color<class_ProjectSettings_property_application/boot_splash/bg_color>` 设为 ``Color(0, 0, 0, 0)``\ 。
+\ **Note:** To use a transparent splash screen, set :ref:`application/boot_splash/bg_color<class_ProjectSettings_property_application/boot_splash/bg_color>` to ``Color(0, 0, 0, 0)``.
 
-\ **注意：**\ 如果 :ref:`display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>` 为 ``false``\ ，则这个设置项无效。
+\ **Note:** This setting has no effect if :ref:`display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>` is set to ``false``.
 
-\ **注意：**\ 这个设置在 Android 上无效，透明度仅通过 :ref:`display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>` 控制。
+\ **Note:** This setting has no effect on Android as transparency is controlled only via :ref:`display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4915,7 +4915,7 @@ Main window initial position.
 
 :ref:`int<class_int>` **display/window/size/viewport_height** = ``648`` :ref:`🔗<class_ProjectSettings_property_display/window/size/viewport_height>`
 
-设置游戏的主视口高度。在桌面平台上，这也是初始窗口高度，在 2D 编辑器中使用靛蓝色的矩形表示。使用 ``canvas_items`` 和 ``viewport`` 拉伸模式时也会以此作为参考。另见 :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>`\ 、\ :ref:`display/window/size/window_width_override<class_ProjectSettings_property_display/window/size/window_width_override>` 和 :ref:`display/window/size/window_height_override<class_ProjectSettings_property_display/window/size/window_height_override>`\ 。
+Sets the game's main viewport height. On desktop platforms, this is also the initial window height, represented by an indigo-colored rectangle in the 2D editor. Stretch mode settings also use this as a reference when using the ``canvas_items`` or ``viewport`` stretch modes. See also :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>`, :ref:`display/window/size/window_width_override<class_ProjectSettings_property_display/window/size/window_width_override>` and :ref:`display/window/size/window_height_override<class_ProjectSettings_property_display/window/size/window_height_override>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4927,7 +4927,7 @@ Main window initial position.
 
 :ref:`int<class_int>` **display/window/size/viewport_width** = ``1152`` :ref:`🔗<class_ProjectSettings_property_display/window/size/viewport_width>`
 
-设置游戏的主视口宽度。在桌面平台上，这也是初始窗口宽度，在 2D 编辑器中使用靛蓝色的矩形表示。使用 ``canvas_items`` 和 ``viewport`` 拉伸模式时也会以此作为参考。另见 :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`\ 、\ :ref:`display/window/size/window_width_override<class_ProjectSettings_property_display/window/size/window_width_override>` 和 :ref:`display/window/size/window_height_override<class_ProjectSettings_property_display/window/size/window_height_override>`\ 。
+Sets the game's main viewport width. On desktop platforms, this is also the initial window width, represented by an indigo-colored rectangle in the 2D editor. Stretch mode settings also use this as a reference when using the ``canvas_items`` or ``viewport`` stretch modes. See also :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`, :ref:`display/window/size/window_width_override<class_ProjectSettings_property_display/window/size/window_width_override>` and :ref:`display/window/size/window_height_override<class_ProjectSettings_property_display/window/size/window_height_override>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4939,9 +4939,9 @@ Main window initial position.
 
 :ref:`int<class_int>` **display/window/size/window_height_override** = ``0`` :ref:`🔗<class_ProjectSettings_property_display/window/size/window_height_override>`
 
-在桌面平台上，覆盖游戏的初始窗口高度。另见 :ref:`display/window/size/window_width_override<class_ProjectSettings_property_display/window/size/window_width_override>`\ 、\ :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` 和 :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`\ 。
+On desktop platforms, overrides the game's initial window height. See also :ref:`display/window/size/window_width_override<class_ProjectSettings_property_display/window/size/window_width_override>`, :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` and :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`.
 
-\ **注意：**\ 默认情况下，或者当设置为\ ``0`` 时，初始窗口高度为 :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`\ 。在 iOS、Android 和 Web 上会忽略这个设置。
+\ **Note:** By default, or when set to ``0``, the initial window height is the :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`. This setting is ignored on iOS, Android, and Web.
 
 .. rst-class:: classref-item-separator
 
@@ -4953,9 +4953,9 @@ Main window initial position.
 
 :ref:`int<class_int>` **display/window/size/window_width_override** = ``0`` :ref:`🔗<class_ProjectSettings_property_display/window/size/window_width_override>`
 
-在桌面平台上，覆盖游戏的初始窗口宽度。另见 :ref:`display/window/size/window_height_override<class_ProjectSettings_property_display/window/size/window_height_override>`\ 、\ :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` 和 :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`\ 。
+On desktop platforms, overrides the game's initial window width. See also :ref:`display/window/size/window_height_override<class_ProjectSettings_property_display/window/size/window_height_override>`, :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` and :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`.
 
-\ **注意：**\ 默认情况下，或者当设置为 ``0`` 时，初始窗口宽度为 :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>`\ 。在 iOS、Android 和 Web 上会忽略该设置。
+\ **Note:** By default, or when set to ``0``, the initial window width is the :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>`. This setting is ignored on iOS, Android, and Web.
 
 .. rst-class:: classref-item-separator
 
@@ -5007,7 +5007,7 @@ Defines how the base size is stretched to fit the resolution of the window or sc
 
 :ref:`float<class_float>` **display/window/stretch/scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_display/window/stretch/scale>`
 
-2D 元素缩放系数的乘数。这个乘数会与由 :ref:`display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>` 决定的最终缩放系数相乘。如果使用的是 **Disabled** 拉伸模式，那么这个缩放系数是原样使用的。可以通过调节这个数值来让 UI 则某些屏幕上更易于阅读。
+The scale factor multiplier to use for 2D elements. This multiplies the final scale factor determined by :ref:`display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>`. If using the **Disabled** stretch mode, this scale factor is applied as-is. This can be adjusted to make the UI easier to read on certain displays.
 
 .. rst-class:: classref-item-separator
 
@@ -5053,17 +5053,17 @@ This is equivalent to :ref:`EditorSettings.interface/editor/single_window_mode<c
 
 :ref:`int<class_int>` **display/window/vsync/vsync_mode** = ``1`` :ref:`🔗<class_ProjectSettings_property_display/window/vsync/vsync_mode>`
 
-设置游戏主窗口的垂直同步模式。编辑器自己的垂直同步模式可以使用 :ref:`EditorSettings.interface/editor/vsync_mode<class_EditorSettings_property_interface/editor/vsync_mode>` 来设置。
+Sets the V-Sync mode for the main game window. The editor's own V-Sync mode can be set using :ref:`EditorSettings.interface/editor/vsync_mode<class_EditorSettings_property_interface/editor/vsync_mode>`.
 
-请参阅 :ref:`VSyncMode<enum_DisplayServer_VSyncMode>` 了解可能的值以及它们如何影响应用程序的行为。
+See :ref:`VSyncMode<enum_DisplayServer_VSyncMode>` for possible values and how they affect the behavior of your application.
 
-根据平台和渲染方法，如果所需的模式不受支持，则引擎将回退到 **Enabled**\ 。
+Depending on the platform and rendering method, the engine will fall back to **Enabled** if the desired mode is not supported.
 
-可以在命令行中使用 ``--disable-vsync`` :doc:`命令行参数 <../tutorials/editor/command_line_tutorial>`\ 禁用 V-Sync。
+V-Sync can be disabled on the command line using the ``--disable-vsync`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`.
 
-\ **注意：**\ **Adaptive**\ 和 **Mailbox**\ 垂直同步模式仅支持 Forward+ 和 Mobile 渲染方法，不支持 Compatibility。
+\ **Note:** The **Adaptive** and **Mailbox** V-Sync modes are only supported in the Forward+ and Mobile rendering methods, not Compatibility.
 
-\ **注意：**\ 这个属性只在项目启动时读取。要在运行时改变垂直同步模式，请改为调用 :ref:`DisplayServer.window_set_vsync_mode()<class_DisplayServer_method_window_set_vsync_mode>`\ 。
+\ **Note:** This property is only read when the project starts. To change the V-Sync mode at runtime, call :ref:`DisplayServer.window_set_vsync_mode()<class_DisplayServer_method_window_set_vsync_mode>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -5075,7 +5075,7 @@ This is equivalent to :ref:`EditorSettings.interface/editor/single_window_mode<c
 
 :ref:`String<class_String>` **dotnet/project/assembly_name** = ``""`` :ref:`🔗<class_ProjectSettings_property_dotnet/project/assembly_name>`
 
-.NET 程序集的名称。这个名称会被用作 ``.csproj`` 和 ``.sln`` 文件的名称。默认情况下，它被设置为项目的名称（\ :ref:`application/config/name<class_ProjectSettings_property_application/config/name>`\ ），这样将来进行修改时就不会影响 .NET 程序集。
+Name of the .NET assembly. This name is used as the name of the ``.csproj`` and ``.sln`` files. By default, it's set to the name of the project (:ref:`application/config/name<class_ProjectSettings_property_application/config/name>`) allowing to change it in the future without affecting the .NET assembly.
 
 .. rst-class:: classref-item-separator
 
@@ -5087,7 +5087,7 @@ This is equivalent to :ref:`EditorSettings.interface/editor/single_window_mode<c
 
 :ref:`int<class_int>` **dotnet/project/assembly_reload_attempts** = ``3`` :ref:`🔗<class_ProjectSettings_property_dotnet/project/assembly_reload_attempts>`
 
-重新构建 .NET 程序集后尝试重新加载程序集的次数。实际也是等待脚本程序集卸载完成的超时秒数。
+Number of times to attempt assembly reloading after rebuilding .NET assemblies. Effectively also the timeout in seconds to wait for unloading of script assemblies to finish.
 
 .. rst-class:: classref-item-separator
 
@@ -5099,9 +5099,9 @@ This is equivalent to :ref:`EditorSettings.interface/editor/single_window_mode<c
 
 :ref:`String<class_String>` **dotnet/project/solution_directory** = ``""`` :ref:`🔗<class_ProjectSettings_property_dotnet/project/solution_directory>`
 
-包含 ``.sln`` 文件的目录。默认情况下，\ ``.sln`` 文件在项目目录的根部，和 ``project.godot`` 和 ``.csproj`` 文件在同一个目录。
+Directory that contains the ``.sln`` file. By default, the ``.sln`` files is in the root of the project directory, next to the ``project.godot`` and ``.csproj`` files.
 
-改变这个值可以设置包含多个 ``.csproj`` 的多项目方案。请记住，Godot 项目被认为是工作空间中的 C# 项目之一，根目录应该包含 ``project.godot`` 和\ ``.csproj``\ 。
+Changing this value allows setting up a multi-project scenario where there are multiple ``.csproj``. Keep in mind that the Godot project is considered one of the C# projects in the workspace and it's root directory should contain the ``project.godot`` and ``.csproj`` next to each other.
 
 .. rst-class:: classref-item-separator
 
@@ -5113,11 +5113,11 @@ This is equivalent to :ref:`EditorSettings.interface/editor/single_window_mode<c
 
 :ref:`bool<class_bool>` **editor/export/convert_text_resources_to_binary** = ``true`` :ref:`🔗<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>`
 
-如果为 ``true``\ ，则导出时会将文本资源文件（\ ``tres``\ ）和文本场景文件（\ ``tscn``\ ）转换为对应的二进制格式。这样做能够减小文件大小、略微加快加载速度。
+If ``true``, text resource (``tres``) and text scene (``tscn``) files are converted to their corresponding binary format on export. This decreases file sizes and speeds up loading slightly.
 
-\ **注意：**\ 导出后的项目中，资源文件的扩展名可能发生改变，因此强烈建议在动态加载资源时使用 :ref:`@GDScript.load()<class_@GDScript_method_load>` 和 :ref:`ResourceLoader<class_ResourceLoader>`\ ，不要使用 :ref:`FileAccess<class_FileAccess>`\ 。
+\ **Note:** Because a resource's file extension may change in an exported project, it is heavily recommended to use :ref:`@GDScript.load()<class_@GDScript_method_load>` or :ref:`ResourceLoader<class_ResourceLoader>` instead of :ref:`FileAccess<class_FileAccess>` to load resources dynamically.
 
-\ **注意：**\ 导出时始终会将项目设置文件（\ ``project.godot``\ ）转换为二进制格式，与该设置无关。
+\ **Note:** The project settings file (``project.godot``) will always be converted to binary on export, regardless of this setting.
 
 .. rst-class:: classref-item-separator
 
@@ -5129,7 +5129,7 @@ This is equivalent to :ref:`EditorSettings.interface/editor/single_window_mode<c
 
 :ref:`int<class_int>` **editor/import/atlas_max_width** = ``2048`` :ref:`🔗<class_ProjectSettings_property_editor/import/atlas_max_width>`
 
-作为图集导入纹理时使用的最大宽度。使用时会将取值向上取整到最近的二次幂。这个设置可以防止导入的纹理在其他方向上增长得过大。
+The maximum width to use when importing textures as an atlas. The value will be rounded to the nearest power of two when used. Use this to prevent imported textures from growing too large in the other direction.
 
 .. rst-class:: classref-item-separator
 
@@ -5155,7 +5155,7 @@ This is equivalent to :ref:`EditorSettings.interface/editor/single_window_mode<c
 
 :ref:`bool<class_bool>` **editor/import/use_multiple_threads** = ``true`` :ref:`🔗<class_ProjectSettings_property_editor/import/use_multiple_threads>`
 
-如果为 ``true``\ ，则会多线程执行资源的导入。
+If ``true`` importing of resources is run on multiple threads.
 
 .. rst-class:: classref-item-separator
 
@@ -5179,9 +5179,9 @@ Number of bits per audio sample written to the ``.avi`` file. Only 16 and 32-bit
 
 :ref:`bool<class_bool>` **editor/movie_writer/disable_vsync** = ``false`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/disable_vsync>`
 
-如果为 ``true``\ ，则在写入电影时会请求禁用垂直同步（类似于将 :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` 设置为 **Disabled**\ ）。如果硬件的渲染速度足够快，那么就可以加速视频的写入，以高于显示器刷新率的帧速率渲染、编码和保存视频。
+If ``true``, requests V-Sync to be disabled when writing a movie (similar to setting :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` to **Disabled**). This can speed up video writing if the hardware is fast enough to render, encode and save the video at a framerate higher than the monitor's refresh rate.
 
-\ **注意：**\ 如果操作系统或图形驱动程序强制垂直同步，则应用程序无法禁用，\ :ref:`editor/movie_writer/disable_vsync<class_ProjectSettings_property_editor/movie_writer/disable_vsync>` 无效。
+\ **Note:** :ref:`editor/movie_writer/disable_vsync<class_ProjectSettings_property_editor/movie_writer/disable_vsync>` has no effect if the operating system or graphics driver forces V-Sync with no way for applications to disable it.
 
 .. rst-class:: classref-item-separator
 
@@ -5193,9 +5193,9 @@ Number of bits per audio sample written to the ``.avi`` file. Only 16 and 32-bit
 
 :ref:`int<class_int>` **editor/movie_writer/fps** = ``60`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/fps>`
 
-输出电影时，在视频中每秒记录的帧数。仿真速度将调整为始终与指定的帧数相匹配，这意味着引擎在较高的 :ref:`editor/movie_writer/fps<class_ProjectSettings_property_editor/movie_writer/fps>` 值下会显得运行较慢。部分 FPS 值将需要你调整 :ref:`editor/movie_writer/mix_rate<class_ProjectSettings_property_editor/movie_writer/mix_rate>`\ ，防止音频随着时间的推移而出现不同步。
+The number of frames per second to record in the video when writing a movie. Simulation speed will adjust to always match the specified framerate, which means the engine will appear to run slower at higher :ref:`editor/movie_writer/fps<class_ProjectSettings_property_editor/movie_writer/fps>` values. Certain FPS values will require you to adjust :ref:`editor/movie_writer/mix_rate<class_ProjectSettings_property_editor/movie_writer/mix_rate>` to prevent audio from desynchronizing over time.
 
-可以在命令行中使用 ``--fixed-fps <fps>`` :doc:`命令行参数 <../tutorials/editor/command_line_tutorial>`\ 手动指定。
+This can be specified manually on the command line using the ``--fixed-fps <fps>`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5207,7 +5207,7 @@ Number of bits per audio sample written to the ``.avi`` file. Only 16 and 32-bit
 
 :ref:`int<class_int>` **editor/movie_writer/mix_rate** = ``48000`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/mix_rate>`
 
-写入影片时，录制的音频所使用的音频混合采样率（单位为 Hz）。可以和 :ref:`audio/driver/mix_rate<class_ProjectSettings_property_audio/driver/mix_rate>` 不同，但这个值必须能够被 :ref:`editor/movie_writer/fps<class_ProjectSettings_property_editor/movie_writer/fps>` 整除，从而防止音频可能逐渐不同步的问题。
+The audio mix rate to use in the recorded audio when writing a movie (in Hz). This can be different from :ref:`audio/driver/mix_rate<class_ProjectSettings_property_audio/driver/mix_rate>`, but this value must be divisible by :ref:`editor/movie_writer/fps<class_ProjectSettings_property_editor/movie_writer/fps>` to prevent audio from desynchronizing over time.
 
 .. rst-class:: classref-item-separator
 
@@ -5219,19 +5219,19 @@ Number of bits per audio sample written to the ``.avi`` file. Only 16 and 32-bit
 
 :ref:`String<class_String>` **editor/movie_writer/movie_file** = ``""`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/movie_file>`
 
-影片的输出路径。文件扩展名决定要使用的 :ref:`MovieWriter<class_MovieWriter>`\ 。
+The output path for the movie. The file extension determines the :ref:`MovieWriter<class_MovieWriter>` that will be used.
 
-Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
+Godot has 3 built-in :ref:`MovieWriter<class_MovieWriter>`\ s:
 
-- 使用 Theora 视频和 Vorbis 音频的 OVG 容器（文件扩展名为 ``.ogv``\ ）。有损压缩、文件大小中等、编码速度快。有损压缩质量可以通过修改 :ref:`editor/movie_writer/video_quality<class_ProjectSettings_property_editor/movie_writer/video_quality>` 和 :ref:`editor/movie_writer/ogv/audio_quality<class_ProjectSettings_property_editor/movie_writer/ogv/audio_quality>` 来调整。生成的文件在 Godot 中可以使用 :ref:`VideoStreamPlayer<class_VideoStreamPlayer>` 查看，也可以使用大多数视频播放器查看，但是无法在网页浏览器中查看，因为它们不支持 Theora。
+- OGV container with Theora for video and Vorbis for audio (``.ogv`` file extension). Lossy compression, medium file sizes, fast encoding. The lossy compression quality can be adjusted by changing :ref:`editor/movie_writer/video_quality<class_ProjectSettings_property_editor/movie_writer/video_quality>` and :ref:`editor/movie_writer/ogv/audio_quality<class_ProjectSettings_property_editor/movie_writer/ogv/audio_quality>`. The resulting file can be viewed in Godot with :ref:`VideoStreamPlayer<class_VideoStreamPlayer>` and most video players, but not web browsers as they don't support Theora.
 
-- 使用 MJPEG 视频和未压缩音频的 AVI 容器（文件扩展名为 ``.avi``\ ）。有损压缩、文件大小中等、编码速度较快。有损压缩质量可以通过修改 :ref:`editor/movie_writer/video_quality<class_ProjectSettings_property_editor/movie_writer/video_quality>` 来调整。生成的文件可以使用大多数视频播放器查看，但如果要在 Web 上查看或者用 Godot 的 :ref:`VideoStreamPlayer<class_VideoStreamPlayer>` 查看，则必须先进行格式的转换。MJPEG 不支持透明度。AVI 输出的文件目前最多为 4 GB 大小。
+- AVI container with MJPEG for video and uncompressed audio (``.avi`` file extension). Lossy compression, medium file sizes, fast encoding. The lossy compression quality can be adjusted by changing :ref:`editor/movie_writer/video_quality<class_ProjectSettings_property_editor/movie_writer/video_quality>`. The resulting file can be viewed in most video players, but it must be converted to another format for viewing on the web or by Godot with :ref:`VideoStreamPlayer<class_VideoStreamPlayer>`. MJPEG does not support transparency. AVI output is currently limited to a file of 4 GB in size at most.
 
-- 视频使用 PNG 图像序列，音频使用 WAV（文件扩展名为 ``.png``\ ）。无损压缩，文件大小较大，编码较慢。旨在录制后使用 `FFmpeg <https://ffmpeg.org/>`__ 等其他工具编码为视频文件。目前不支持透明度，即便将根视口设为透明也不行。
+- PNG image sequence for video and WAV for audio (``.png`` file extension). Lossless compression, large file sizes, slow encoding. Designed to be encoded to a video file with another tool such as `FFmpeg <https://ffmpeg.org/>`__ after recording. Transparency is currently not supported, even if the root viewport is set to be transparent.
 
-如果需要编码为其他格式，或者将流导入至第三方软件，你可以扩展 :ref:`MovieWriter<class_MovieWriter>` 类，创建自己的影片写入器。
+If you need to encode to a different format or pipe a stream through third-party software, you can extend this :ref:`MovieWriter<class_MovieWriter>` class to create your own movie writers.
 
-使用 PNG 输出时，帧号将附加在文件名末尾。帧号从 0 开始，会补齐至 8 位数字，从而确保能够正确排序，处理起来也更方便。例如，如果输出路径为 ``/tmp/hello.png``\ ，那么前两帧就是 ``/tmp/hello00000000.png`` 和 ``/tmp/hello00000001.png``\ 。音频将保存在 ``/tmp/hello.wav``\ 。
+When using PNG output, the frame number will be appended at the end of the file name. It starts from 0 and is padded with 8 digits to ensure correct sorting and easier processing. For example, if the output path is ``/tmp/hello.png``, the first two frames will be ``/tmp/hello00000000.png`` and ``/tmp/hello00000001.png``. The audio will be saved at ``/tmp/hello.wav``.
 
 .. rst-class:: classref-item-separator
 
@@ -5243,9 +5243,9 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`float<class_float>` **editor/movie_writer/ogv/audio_quality** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/ogv/audio_quality>`
 
-将 Vorbis 音频写入文件时使用的音频编码质量，在 ``-0.1`` 和 ``1.0`` 之间（含两端）。\ ``quality`` 取值越高，输出的声音越好，但文件大小也越大。即便质量为 ``1.0``\ ，压缩也仍然是有损的。
+The audio encoding quality to use when writing Vorbis audio to a file, between ``-0.1`` and ``1.0`` (inclusive). Higher ``quality`` values result in better-sounding output at the cost of larger file sizes. Even at quality ``1.0``, compression remains lossy.
 
-\ **注意：**\ 不影响视频质量，视频质量 由 :ref:`editor/movie_writer/video_quality<class_ProjectSettings_property_editor/movie_writer/video_quality>` 控制。
+\ **Note:** This does not affect video quality, which is controlled by :ref:`editor/movie_writer/video_quality<class_ProjectSettings_property_editor/movie_writer/video_quality>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -5257,7 +5257,7 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`int<class_int>` **editor/movie_writer/ogv/encoding_speed** = ``4`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/ogv/encoding_speed>`
 
-编码速度和压缩效率之间的权衡。速度 ``1`` 最慢，但压缩效果最佳。速度 ``4`` 最快，但压缩效果最差。该设置通常不会对视频质量产生显著影响。
+The tradeoff between encoding speed and compression efficiency. Speed ``1`` is the slowest but provides the best compression. Speed ``4`` is the fastest but provides the worst compression. Video quality is generally not affected significantly by this setting.
 
 .. rst-class:: classref-item-separator
 
@@ -5269,7 +5269,7 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`int<class_int>` **editor/movie_writer/ogv/keyframe_interval** = ``64`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/ogv/keyframe_interval>`
 
-强制关键帧使用特定的间隔（单位为帧数）。较高的取值可以一定程度改善压缩，但会导致跳转时延迟较高。
+Forces keyframes at the specified interval (in frame count). Higher values can improve compression up to a certain level at the expense of higher latency when seeking.
 
 .. rst-class:: classref-item-separator
 
@@ -5281,7 +5281,7 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`int<class_int>` **editor/movie_writer/speaker_mode** = ``0`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/speaker_mode>`
 
-保存电影时，录制的音频中所使用的扬声器模式。可能的值见 :ref:`SpeakerMode<enum_AudioServer_SpeakerMode>`\ 。
+The speaker mode to use in the recorded audio when writing a movie. See :ref:`SpeakerMode<enum_AudioServer_SpeakerMode>` for possible values.
 
 .. rst-class:: classref-item-separator
 
@@ -5293,7 +5293,7 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`float<class_float>` **editor/movie_writer/video_quality** = ``0.75`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/video_quality>`
 
-将 Theora 或 AVI（MJPEG）视频写入文件时使用的视频编码质量，在 ``0.0`` 和 ``1.0`` 之间（含两端）。\ ``quality`` 取值越高，输出的画质越好，但文件大小也越大。建议将 ``quality`` 设为 ``0.75`` 和 ``0.9`` 之间的值。即便质量为 ``1.0``\ ，压缩也仍然是有损的。
+The video encoding quality to use when writing a Theora or AVI (MJPEG) video to a file, between ``0.0`` and ``1.0`` (inclusive). Higher ``quality`` values result in better-looking output at the cost of larger file sizes. Recommended ``quality`` values are between ``0.75`` and ``0.9``. Even at quality ``1.0``, compression remains lossy.
 
 .. rst-class:: classref-item-separator
 
@@ -5305,7 +5305,7 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`String<class_String>` **editor/naming/default_signal_callback_name** = ``"_on_{node_name}_{signal_name}"`` :ref:`🔗<class_ProjectSettings_property_editor/naming/default_signal_callback_name>`
 
-信号回调名称的默认格式（在信号连接对话框中使用）。可以使用以下替换：\ ``{NodeName}``\ 、\ ``{nodeName}``\ 、\ ``{node_name}``\ 、\ ``{SignalName}``\ 、\ ``{signalName}``\ 、\ ``{signal_name}``\ 。
+The format of the default signal callback name (in the Signal Connection Dialog). The following substitutions are available: ``{NodeName}``, ``{nodeName}``, ``{node_name}``, ``{SignalName}``, ``{signalName}``, and ``{signal_name}``.
 
 .. rst-class:: classref-item-separator
 
@@ -5317,7 +5317,7 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`String<class_String>` **editor/naming/default_signal_callback_to_self_name** = ``"_on_{signal_name}"`` :ref:`🔗<class_ProjectSettings_property_editor/naming/default_signal_callback_to_self_name>`
 
-信号回调名称的默认格式，用于连接到与发出信号相同节点的情况（在信号连接对话框中使用）。可以使用以下替换：\ ``{NodeName}``\ 、\ ``{nodeName}``\ 、\ ``{node_name}``\ 、\ ``{SignalName}``\ 、\ ``{signalName}``\ 、\ ``{signal_name}``\ 。
+The format of the default signal callback name when a signal connects to the same node that emits it (in the Signal Connection Dialog). The following substitutions are available: ``{NodeName}``, ``{nodeName}``, ``{node_name}``, ``{SignalName}``, ``{signalName}``, and ``{signal_name}``.
 
 .. rst-class:: classref-item-separator
 
@@ -5329,7 +5329,7 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`int<class_int>` **editor/naming/node_name_casing** = ``0`` :ref:`🔗<class_ProjectSettings_property_editor/naming/node_name_casing>`
 
-自动创建节点名称时，该项目所使用的大小写类型。主要是编辑器设置。
+When creating node names automatically, set the type of casing to use in this project. This is mostly an editor setting.
 
 .. rst-class:: classref-item-separator
 
@@ -5341,7 +5341,7 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`int<class_int>` **editor/naming/node_name_num_separator** = ``0`` :ref:`🔗<class_ProjectSettings_property_editor/naming/node_name_num_separator>`
 
-用什么来分隔节点名称和编号。这主要是一个编辑器的设置。
+What to use to separate node name from number. This is mostly an editor setting.
 
 .. rst-class:: classref-item-separator
 
@@ -5353,7 +5353,7 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`int<class_int>` **editor/naming/scene_name_casing** = ``2`` :ref:`🔗<class_ProjectSettings_property_editor/naming/scene_name_casing>`
 
-根据场景根节点生成场景文件名称时，该项目所使用的大小写类型。主要是编辑器设置。
+When generating scene file names from scene root node, set the type of casing to use in this project. This is mostly an editor setting.
 
 .. rst-class:: classref-item-separator
 
@@ -5365,7 +5365,7 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`int<class_int>` **editor/naming/script_name_casing** = ``0`` :ref:`🔗<class_ProjectSettings_property_editor/naming/script_name_casing>`
 
-根据所选节点生成脚本文件名称时，该项目所使用的大小写类型。主要是编辑器设置。
+When generating script file names from the selected node, set the type of casing to use in this project. This is mostly an editor setting.
 
 .. rst-class:: classref-item-separator
 
@@ -5377,11 +5377,11 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`String<class_String>` **editor/run/main_run_args** = ``""`` :ref:`🔗<class_ProjectSettings_property_editor/run/main_run_args>`
 
-运行项目时附加到 Godot 自己的命令行的命令行参数。这不会影响编辑器本身。
+The command-line arguments to append to Godot's own command line when running the project. This doesn't affect the editor itself.
 
-可以使用 ``%command%`` 占位符使另一个可执行文件运行 Godot。占位符将替换为 Godot 自己的命令行。程序特定的参数应该放在\ *占位符之前*\ ，而 Godot 特定参数应该放在\ *占位符之后*\ 。
+It is possible to make another executable run Godot by using the ``%command%`` placeholder. The placeholder will be replaced with Godot's own command line. Program-specific arguments should be placed *before* the placeholder, whereas Godot-specific arguments should be placed *after* the placeholder.
 
-例如，这可用于强制项目在 Linux 上的 NVIDIA Optimus 系统中的专用 GPU 上运行：
+For example, this can be used to force the project to run on the dedicated GPU in an NVIDIA Optimus system on Linux:
 
 .. code:: text
 
@@ -5397,7 +5397,7 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`PackedStringArray<class_PackedStringArray>` **editor/script/search_in_file_extensions** :ref:`🔗<class_ProjectSettings_property_editor/script/search_in_file_extensions>`
 
-脚本编辑器的“在文件中查找”特性中包含的基于文本的文件扩展名。你可以添加例如 ``tscn``\ ，如果你也想解析你的场景文件，特别是如果你使用的是在场景文件中序列化的内置脚本。
+Text-based file extensions to include in the script editor's "Find in Files" feature. You can add e.g. ``tscn`` if you wish to also parse your scene files, especially if you use built-in scripts which are serialized in the scene files.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -5411,7 +5411,7 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`String<class_String>` **editor/script/templates_search_path** = ``"res://script_templates"`` :ref:`🔗<class_ProjectSettings_property_editor/script/templates_search_path>`
 
-对于项目特定的脚本模板的搜索路径。Godot 将在编辑器的特定路径和此项目的路径中搜索。
+Search path for project-specific script templates. Godot will search for script templates both in the editor-specific path and in this project-specific path.
 
 .. rst-class:: classref-item-separator
 
@@ -5451,9 +5451,9 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`bool<class_bool>` **filesystem/import/blender/enabled** = ``true`` :ref:`🔗<class_ProjectSettings_property_filesystem/import/blender/enabled>`
 
-如果为 ``true``\ ，扩展名为 ``.blend`` 的 Blender 3D 场景文件会通过转换为 glTF 2.0 来导入。
+If ``true``, Blender 3D scene files with the ``.blend`` extension will be imported by converting them to glTF 2.0.
 
-需要在编辑器设置 :ref:`EditorSettings.filesystem/import/blender/blender_path<class_EditorSettings_property_filesystem/import/blender/blender_path>` 中配置 Blender 可执行文件的路径。需要 Blender 3.0 或更高版本。
+This requires configuring a path to a Blender executable in the :ref:`EditorSettings.filesystem/import/blender/blender_path<class_EditorSettings_property_filesystem/import/blender/blender_path>` setting. Blender 3.0 or later is required.
 
 .. rst-class:: classref-item-separator
 
@@ -5465,7 +5465,7 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`bool<class_bool>` **filesystem/import/blender/enabled.android** = ``false`` :ref:`🔗<class_ProjectSettings_property_filesystem/import/blender/enabled.android>`
 
-:ref:`filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>` 在 Android 上的覆盖项，Godot 无法轻易访问到 Blender。
+Override for :ref:`filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>` on Android where Blender can't easily be accessed from Godot.
 
 .. rst-class:: classref-item-separator
 
@@ -5477,7 +5477,7 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`bool<class_bool>` **filesystem/import/blender/enabled.web** = ``false`` :ref:`🔗<class_ProjectSettings_property_filesystem/import/blender/enabled.web>`
 
-:ref:`filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>` 在 Web 上的覆盖项，Godot 无法轻易访问到 Blender。
+Override for :ref:`filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>` on the Web where Blender can't easily be accessed from Godot.
 
 .. rst-class:: classref-item-separator
 
@@ -5489,9 +5489,9 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`bool<class_bool>` **filesystem/import/fbx2gltf/enabled** = ``true`` :ref:`🔗<class_ProjectSettings_property_filesystem/import/fbx2gltf/enabled>`
 
-如果为 ``true``\ ，扩展名为 ``.fbx`` 的 Autodesk FBX 3D 场景文件会通过转换为 glTF 2.0 来导入。
+If ``true``, Autodesk FBX 3D scene files with the ``.fbx`` extension will be imported by converting them to glTF 2.0.
 
-需要在编辑器设置 :ref:`EditorSettings.filesystem/import/fbx/fbx2gltf_path<class_EditorSettings_property_filesystem/import/fbx/fbx2gltf_path>` 中，配置 FBX2glTF 可执行文件的路径。
+This requires configuring a path to an FBX2glTF executable in the editor settings at :ref:`EditorSettings.filesystem/import/fbx/fbx2gltf_path<class_EditorSettings_property_filesystem/import/fbx/fbx2gltf_path>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5503,7 +5503,7 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`bool<class_bool>` **filesystem/import/fbx2gltf/enabled.android** = ``false`` :ref:`🔗<class_ProjectSettings_property_filesystem/import/fbx2gltf/enabled.android>`
 
-:ref:`filesystem/import/fbx2gltf/enabled<class_ProjectSettings_property_filesystem/import/fbx2gltf/enabled>` 在 Android 上的覆盖项，在 Android 上 Godot 无法轻易访问到 FBX2glTF。
+Override for :ref:`filesystem/import/fbx2gltf/enabled<class_ProjectSettings_property_filesystem/import/fbx2gltf/enabled>` on Android where FBX2glTF can't easily be accessed from Godot.
 
 .. rst-class:: classref-item-separator
 
@@ -5515,7 +5515,7 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`bool<class_bool>` **filesystem/import/fbx2gltf/enabled.web** = ``false`` :ref:`🔗<class_ProjectSettings_property_filesystem/import/fbx2gltf/enabled.web>`
 
-:ref:`filesystem/import/fbx2gltf/enabled<class_ProjectSettings_property_filesystem/import/fbx2gltf/enabled>` 在 Web 上的覆盖项，在 Web 上 Godot 无法轻易访问到 FBX2glTF。
+Override for :ref:`filesystem/import/fbx2gltf/enabled<class_ProjectSettings_property_filesystem/import/fbx2gltf/enabled>` on the Web where FBX2glTF can't easily be accessed from Godot.
 
 .. rst-class:: classref-item-separator
 
@@ -5527,7 +5527,7 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`int<class_int>` **gui/common/default_scroll_deadzone** = ``0`` :ref:`🔗<class_ProjectSettings_property_gui/common/default_scroll_deadzone>`
 
-:ref:`ScrollContainer.scroll_deadzone<class_ScrollContainer_property_scroll_deadzone>`\ ，它将用于所有 :ref:`ScrollContainer<class_ScrollContainer>`\ ，除非fug。
+Default value for :ref:`ScrollContainer.scroll_deadzone<class_ScrollContainer_property_scroll_deadzone>`, which will be used for all :ref:`ScrollContainer<class_ScrollContainer>`\ s unless overridden.
 
 .. rst-class:: classref-item-separator
 
@@ -5569,7 +5569,7 @@ Determines whether a :ref:`Control<class_Control>` should visually indicate focu
 
 :ref:`bool<class_bool>` **gui/common/snap_controls_to_pixels** = ``true`` :ref:`🔗<class_ProjectSettings_property_gui/common/snap_controls_to_pixels>`
 
-如果为 ``true``\ ，则将 :ref:`Control<class_Control>` 节点的顶点吸附到最近的像素，确保即便相机发生移动或缩放也能够保持锐利。
+If ``true``, snaps :ref:`Control<class_Control>` node vertices to the nearest pixel to ensure they remain crisp even when the camera moves or zooms.
 
 .. rst-class:: classref-item-separator
 
@@ -5603,7 +5603,7 @@ To check if these buttons are swapped at runtime, use :ref:`DisplayServer.get_sw
 
 :ref:`int<class_int>` **gui/common/text_edit_undo_stack_max_size** = ``1024`` :ref:`🔗<class_ProjectSettings_property_gui/common/text_edit_undo_stack_max_size>`
 
-:ref:`TextEdit<class_TextEdit>` 字段的最大撤销/重做历史大小。
+Maximum undo/redo history size for :ref:`TextEdit<class_TextEdit>` fields.
 
 .. rst-class:: classref-item-separator
 
@@ -5627,7 +5627,7 @@ If set to ``true`` and :ref:`display/window/stretch/mode<class_ProjectSettings_p
 
 :ref:`String<class_String>` **gui/theme/custom** = ``""`` :ref:`🔗<class_ProjectSettings_property_gui/theme/custom>`
 
-:ref:`Theme<class_Theme>` 资源文件的路径，用于自定义项目主题（扩展名为 ``.theme`` 或通用的 ``.tres``/``.res``\ ）。
+Path to a custom :ref:`Theme<class_Theme>` resource file to use for the project (``.theme`` or generic ``.tres``/``.res`` extension).
 
 .. rst-class:: classref-item-separator
 
@@ -5639,7 +5639,7 @@ If set to ``true`` and :ref:`display/window/stretch/mode<class_ProjectSettings_p
 
 :ref:`String<class_String>` **gui/theme/custom_font** = ``""`` :ref:`🔗<class_ProjectSettings_property_gui/theme/custom_font>`
 
-自定义 :ref:`Font<class_Font>` 资源的路径，用作项目中所有 GUI 元素的默认字体。
+Path to a custom :ref:`Font<class_Font>` resource to use as default for all GUI elements of the project.
 
 .. rst-class:: classref-item-separator
 
@@ -5651,9 +5651,9 @@ If set to ``true`` and :ref:`display/window/stretch/mode<class_ProjectSettings_p
 
 :ref:`int<class_int>` **gui/theme/default_font_antialiasing** = ``1`` :ref:`🔗<class_ProjectSettings_property_gui/theme/default_font_antialiasing>`
 
-默认项目字体的字体抗锯齿模式。见 :ref:`FontFile.antialiasing<class_FontFile_property_antialiasing>`\ 。
+Font anti-aliasing mode for the default project font. See :ref:`FontFile.antialiasing<class_FontFile_property_antialiasing>`.
 
-\ **注意：**\ 这项设置不影响项目中使用的自定义 :ref:`Font<class_Font>`\ 。请改用\ **导入**\ 面板（见 :ref:`ResourceImporterDynamicFont.antialiasing<class_ResourceImporterDynamicFont_property_antialiasing>`\ ）。
+\ **Note:** This setting does not affect custom :ref:`Font<class_Font>`\ s used within the project. Use the **Import** dock for that instead (see :ref:`ResourceImporterDynamicFont.antialiasing<class_ResourceImporterDynamicFont_property_antialiasing>`).
 
 .. rst-class:: classref-item-separator
 
@@ -5665,11 +5665,11 @@ If set to ``true`` and :ref:`display/window/stretch/mode<class_ProjectSettings_p
 
 :ref:`bool<class_bool>` **gui/theme/default_font_generate_mipmaps** = ``false`` :ref:`🔗<class_ProjectSettings_property_gui/theme/default_font_generate_mipmaps>`
 
-如果设置为 ``true``\ ，则默认字体将生成 mipmap。这样可以防止文本在 :ref:`Control<class_Control>` 被按比例缩小或从远距离查看 :ref:`Label3D<class_Label3D>` 时看起来有颗粒感（如果 :ref:`Label3D.texture_filter<class_Label3D_property_texture_filter>` 设置为显示 mipmap 的模式）。
+If set to ``true``, the default font will have mipmaps generated. This prevents text from looking grainy when a :ref:`Control<class_Control>` is scaled down, or when a :ref:`Label3D<class_Label3D>` is viewed from a long distance (if :ref:`Label3D.texture_filter<class_Label3D_property_texture_filter>` is set to a mode that displays mipmaps).
 
-启用 :ref:`gui/theme/default_font_generate_mipmaps<class_ProjectSettings_property_gui/theme/default_font_generate_mipmaps>` 会增加字体生成时间和内存使用量。请只在你确实需要时才启用此设置。
+Enabling :ref:`gui/theme/default_font_generate_mipmaps<class_ProjectSettings_property_gui/theme/default_font_generate_mipmaps>` increases font generation time and memory usage. Only enable this setting if you actually need it.
 
-\ **注意：**\ 此设置不会影响项目中使用的自定义 :ref:`Font<class_Font>`\ 。这种情况下请改用\ **导入**\ 面板（见 :ref:`ResourceImporterDynamicFont.generate_mipmaps<class_ResourceImporterDynamicFont_property_generate_mipmaps>`\ ）。
+\ **Note:** This setting does not affect custom :ref:`Font<class_Font>`\ s used within the project. Use the **Import** dock for that instead (see :ref:`ResourceImporterDynamicFont.generate_mipmaps<class_ResourceImporterDynamicFont_property_generate_mipmaps>`).
 
 .. rst-class:: classref-item-separator
 
@@ -5681,9 +5681,9 @@ If set to ``true`` and :ref:`display/window/stretch/mode<class_ProjectSettings_p
 
 :ref:`int<class_int>` **gui/theme/default_font_hinting** = ``1`` :ref:`🔗<class_ProjectSettings_property_gui/theme/default_font_hinting>`
 
-默认项目字体的字体微调模式。见 :ref:`FontFile.hinting<class_FontFile_property_hinting>`\ 。
+Font hinting mode for the default project font. See :ref:`FontFile.hinting<class_FontFile_property_hinting>`.
 
-\ **注意：**\ 这项设置不影响项目中使用的自定义 :ref:`Font<class_Font>`\ 。请改用\ **导入**\ 面板（见 :ref:`ResourceImporterDynamicFont.hinting<class_ResourceImporterDynamicFont_property_hinting>`\ ）。
+\ **Note:** This setting does not affect custom :ref:`Font<class_Font>`\ s used within the project. Use the **Import** dock for that instead (see :ref:`ResourceImporterDynamicFont.hinting<class_ResourceImporterDynamicFont_property_hinting>`).
 
 .. rst-class:: classref-item-separator
 
@@ -5695,11 +5695,11 @@ If set to ``true`` and :ref:`display/window/stretch/mode<class_ProjectSettings_p
 
 :ref:`bool<class_bool>` **gui/theme/default_font_multichannel_signed_distance_field** = ``false`` :ref:`🔗<class_ProjectSettings_property_gui/theme/default_font_multichannel_signed_distance_field>`
 
-如果设置为 ``true``\ ，默认字体将使用多通道带符号距离场（MSDF），任何尺寸都能够进行清晰的渲染。由于这种方法不需要在每次字体大小更改时都对字体进行光栅化，因此可以实时调整字体大小，不会造成任何性能损失。对于按比例缩小的 :ref:`Control<class_Control>`\ （或从远距离查看的 :ref:`Label3D<class_Label3D>`\ ），文本也不会看起来有颗粒感。
+If set to ``true``, the default font will use multichannel signed distance field (MSDF) for crisp rendering at any size. Since this approach does not rely on rasterizing the font every time its size changes, this allows for resizing the font in real-time without any performance penalty. Text will also not look grainy for :ref:`Control<class_Control>`\ s that are scaled down (or for :ref:`Label3D<class_Label3D>`\ s viewed from a long distance).
 
-MSDF 字体渲染可以与 :ref:`gui/theme/default_font_generate_mipmaps<class_ProjectSettings_property_gui/theme/default_font_generate_mipmaps>` 结合使用，从而进一步提高缩小时的字体渲染质量。
+MSDF font rendering can be combined with :ref:`gui/theme/default_font_generate_mipmaps<class_ProjectSettings_property_gui/theme/default_font_generate_mipmaps>` to further improve font rendering quality when scaled down.
 
-\ **注意：**\ 此设置不会影响项目中使用的自定义 :ref:`Font<class_Font>`\ 。这种情况下请改用\ **导入**\ 面板（见 :ref:`ResourceImporterDynamicFont.multichannel_signed_distance_field<class_ResourceImporterDynamicFont_property_multichannel_signed_distance_field>`\ ）。
+\ **Note:** This setting does not affect custom :ref:`Font<class_Font>`\ s used within the project. Use the **Import** dock for that instead (see :ref:`ResourceImporterDynamicFont.multichannel_signed_distance_field<class_ResourceImporterDynamicFont_property_multichannel_signed_distance_field>`).
 
 .. rst-class:: classref-item-separator
 
@@ -5711,9 +5711,9 @@ MSDF 字体渲染可以与 :ref:`gui/theme/default_font_generate_mipmaps<class_P
 
 :ref:`int<class_int>` **gui/theme/default_font_subpixel_positioning** = ``1`` :ref:`🔗<class_ProjectSettings_property_gui/theme/default_font_subpixel_positioning>`
 
-默认项目字体的字体字形次像素定位模式。见 :ref:`FontFile.subpixel_positioning<class_FontFile_property_subpixel_positioning>`\ 。
+Font glyph subpixel positioning mode for the default project font. See :ref:`FontFile.subpixel_positioning<class_FontFile_property_subpixel_positioning>`.
 
-\ **注意：**\ 这项设置不影响项目中使用的自定义 :ref:`Font<class_Font>`\ 。请改用\ **导入**\ 面板（见 :ref:`ResourceImporterDynamicFont.subpixel_positioning<class_ResourceImporterDynamicFont_property_subpixel_positioning>`\ ）。
+\ **Note:** This setting does not affect custom :ref:`Font<class_Font>`\ s used within the project. Use the **Import** dock for that instead (see :ref:`ResourceImporterDynamicFont.subpixel_positioning<class_ResourceImporterDynamicFont_property_subpixel_positioning>`).
 
 .. rst-class:: classref-item-separator
 
@@ -5739,7 +5739,7 @@ The default scale factor for :ref:`Control<class_Control>`\ s, when not overridd
 
 :ref:`int<class_int>` **gui/theme/lcd_subpixel_layout** = ``1`` :ref:`🔗<class_ProjectSettings_property_gui/theme/lcd_subpixel_layout>`
 
-LCD 次像素布局，用于字体抗锯齿。见 :ref:`FontLCDSubpixelLayout<enum_TextServer_FontLCDSubpixelLayout>`\ 。
+LCD subpixel layout used for font anti-aliasing. See :ref:`FontLCDSubpixelLayout<enum_TextServer_FontLCDSubpixelLayout>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5751,7 +5751,7 @@ LCD 次像素布局，用于字体抗锯齿。见 :ref:`FontLCDSubpixelLayout<en
 
 :ref:`float<class_float>` **gui/timers/button_shortcut_feedback_highlight_time** = ``0.2`` :ref:`🔗<class_ProjectSettings_property_gui/timers/button_shortcut_feedback_highlight_time>`
 
-启用 :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedback>` 时，按下快捷键后 :ref:`BaseButton<class_BaseButton>` 保持高亮的时间。
+When :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedback>` is enabled, this is the time the :ref:`BaseButton<class_BaseButton>` will remain highlighted after a shortcut.
 
 .. rst-class:: classref-item-separator
 
@@ -5763,7 +5763,7 @@ LCD 次像素布局，用于字体抗锯齿。见 :ref:`FontLCDSubpixelLayout<en
 
 :ref:`int<class_int>` **gui/timers/incremental_search_max_interval_msec** = ``2000`` :ref:`🔗<class_ProjectSettings_property_gui/timers/incremental_search_max_interval_msec>`
 
-在 :ref:`Tree<class_Tree>`\ 、\ :ref:`ItemList<class_ItemList>` 等控件中为增量搜索设置计时器（单位为毫秒）。
+Timer setting for incremental search in :ref:`Tree<class_Tree>`, :ref:`ItemList<class_ItemList>`, etc. controls (in milliseconds).
 
 .. rst-class:: classref-item-separator
 
@@ -5775,7 +5775,7 @@ LCD 次像素布局，用于字体抗锯齿。见 :ref:`FontLCDSubpixelLayout<en
 
 :ref:`float<class_float>` **gui/timers/text_edit_idle_detect_sec** = ``3`` :ref:`🔗<class_ProjectSettings_property_gui/timers/text_edit_idle_detect_sec>`
 
-检测 :ref:`TextEdit<class_TextEdit>` 空闲的计时器（单位为秒）。
+Timer for detecting idle in :ref:`TextEdit<class_TextEdit>` (in seconds).
 
 .. rst-class:: classref-item-separator
 
@@ -5787,7 +5787,7 @@ LCD 次像素布局，用于字体抗锯齿。见 :ref:`FontLCDSubpixelLayout<en
 
 :ref:`float<class_float>` **gui/timers/tooltip_delay_sec** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_gui/timers/tooltip_delay_sec>`
 
-工具提示的默认延迟（单位为秒）。
+Default delay for tooltips (in seconds).
 
 .. rst-class:: classref-item-separator
 
@@ -5799,7 +5799,7 @@ LCD 次像素布局，用于字体抗锯齿。见 :ref:`FontLCDSubpixelLayout<en
 
 :ref:`float<class_float>` **gui/timers/tooltip_delay_sec.editor_hint** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_gui/timers/tooltip_delay_sec.editor_hint>`
 
-编辑器中工具提示的延迟。
+Delay for tooltips in the editor.
 
 .. rst-class:: classref-item-separator
 
@@ -5811,9 +5811,9 @@ LCD 次像素布局，用于字体抗锯齿。见 :ref:`FontLCDSubpixelLayout<en
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_accept** :ref:`🔗<class_ProjectSettings_property_input/ui_accept>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于确认焦点按钮、菜单或列表项，或用于验证输入。
+Default :ref:`InputEventAction<class_InputEventAction>` to confirm a focused button, menu or list item, or validate input.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -5825,9 +5825,9 @@ LCD 次像素布局，用于字体抗锯齿。见 :ref:`FontLCDSubpixelLayout<en
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_accessibility_drag_and_drop** :ref:`🔗<class_ProjectSettings_property_input/ui_accessibility_drag_and_drop>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于不借助鼠标开始或结束拖放操作。
+Default :ref:`InputEventAction<class_InputEventAction>` to start or end a drag-and-drop operation without using mouse.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -5839,9 +5839,9 @@ LCD 次像素布局，用于字体抗锯齿。见 :ref:`FontLCDSubpixelLayout<en
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_cancel** :ref:`🔗<class_ProjectSettings_property_input/ui_cancel>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于放弃模态或挂起的输入。
+Default :ref:`InputEventAction<class_InputEventAction>` to discard a modal or pending input.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -5879,9 +5879,9 @@ macOS specific override for the shortcut to close a dialog window.
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_colorpicker_delete_preset** :ref:`🔗<class_ProjectSettings_property_input/ui_colorpicker_delete_preset>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于在 :ref:`ColorPicker<class_ColorPicker>` 中删除一个颜色预设。
+Default :ref:`InputEventAction<class_InputEventAction>` to delete a color preset in a :ref:`ColorPicker<class_ColorPicker>`.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -5893,9 +5893,9 @@ macOS specific override for the shortcut to close a dialog window.
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_copy** :ref:`🔗<class_ProjectSettings_property_input/ui_copy>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于将选中内容复制到剪贴板。
+Default :ref:`InputEventAction<class_InputEventAction>` to copy a selection to the clipboard.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -5907,9 +5907,9 @@ macOS specific override for the shortcut to close a dialog window.
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_cut** :ref:`🔗<class_ProjectSettings_property_input/ui_cut>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于将选中内容剪切到剪贴板。
+Default :ref:`InputEventAction<class_InputEventAction>` to cut a selection to the clipboard.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -5921,9 +5921,9 @@ macOS specific override for the shortcut to close a dialog window.
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_down** :ref:`🔗<class_ProjectSettings_property_input/ui_down>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于在 UI 中向下移动。
+Default :ref:`InputEventAction<class_InputEventAction>` to move down in the UI.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -5935,9 +5935,9 @@ macOS specific override for the shortcut to close a dialog window.
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_end** :ref:`🔗<class_ProjectSettings_property_input/ui_end>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于前往 :ref:`Control<class_Control>` 的末尾（例如 :ref:`ItemList<class_ItemList>` 和 :ref:`Tree<class_Tree>` 中的最后一个项目），与常见桌面 UI 系统中 :ref:`@GlobalScope.KEY_END<class_@GlobalScope_constant_KEY_END>` 的 行为一致。
+Default :ref:`InputEventAction<class_InputEventAction>` to go to the end position of a :ref:`Control<class_Control>` (e.g. last item in an :ref:`ItemList<class_ItemList>` or a :ref:`Tree<class_Tree>`), matching the behavior of :ref:`@GlobalScope.KEY_END<class_@GlobalScope_constant_KEY_END>` on typical desktop UI systems.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6003,9 +6003,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_refresh** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_refresh>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于刷新 :ref:`FileDialog<class_FileDialog>` 中当前目录的内容。
+Default :ref:`InputEventAction<class_InputEventAction>` to refresh the contents of the current directory of a :ref:`FileDialog<class_FileDialog>`.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6017,9 +6017,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_show_hidden** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_show_hidden>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于开关 :ref:`FileDialog<class_FileDialog>` 中隐藏文件和目录的显示。
+Default :ref:`InputEventAction<class_InputEventAction>` to toggle showing hidden files and directories in a :ref:`FileDialog<class_FileDialog>`.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6031,9 +6031,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_up_one_level** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_up_one_level>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于在 :ref:`FileDialog<class_FileDialog>` 前往上一级目录。
+Default :ref:`InputEventAction<class_InputEventAction>` to go up one directory in a :ref:`FileDialog<class_FileDialog>`.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6045,9 +6045,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_focus_mode** :ref:`🔗<class_ProjectSettings_property_input/ui_focus_mode>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于对 :ref:`TextEdit<class_TextEdit>` 的 :ref:`input/ui_text_indent<class_ProjectSettings_property_input/ui_text_indent>` 在“将键盘焦点移动到场景中的下一个 :ref:`Control<class_Control>` 上”和“输入 ``Tab`` 字符”之间进行切换。
+Default :ref:`InputEventAction<class_InputEventAction>` to switch :ref:`TextEdit<class_TextEdit>` :ref:`input/ui_text_indent<class_ProjectSettings_property_input/ui_text_indent>` between moving keyboard focus to the next :ref:`Control<class_Control>` in the scene and inputting a ``Tab`` character.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6059,9 +6059,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_focus_next** :ref:`🔗<class_ProjectSettings_property_input/ui_focus_next>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于聚焦场景中的下一个 :ref:`Control<class_Control>`\ 。聚焦行为可以通过 :ref:`Control.focus_next<class_Control_property_focus_next>` 配置。
+Default :ref:`InputEventAction<class_InputEventAction>` to focus the next :ref:`Control<class_Control>` in the scene. The focus behavior can be configured via :ref:`Control.focus_next<class_Control_property_focus_next>`.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6073,9 +6073,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_focus_prev** :ref:`🔗<class_ProjectSettings_property_input/ui_focus_prev>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于聚焦场景中的上一个 :ref:`Control<class_Control>`\ 。聚焦行为可以通过 :ref:`Control.focus_previous<class_Control_property_focus_previous>` 配置。
+Default :ref:`InputEventAction<class_InputEventAction>` to focus the previous :ref:`Control<class_Control>` in the scene. The focus behavior can be configured via :ref:`Control.focus_previous<class_Control_property_focus_previous>`.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6087,9 +6087,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_graph_delete** :ref:`🔗<class_ProjectSettings_property_input/ui_graph_delete>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于删除 :ref:`GraphEdit<class_GraphEdit>` 中的某个 :ref:`GraphNode<class_GraphNode>`\ 。
+Default :ref:`InputEventAction<class_InputEventAction>` to delete a :ref:`GraphNode<class_GraphNode>` in a :ref:`GraphEdit<class_GraphEdit>`.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6101,9 +6101,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_graph_duplicate** :ref:`🔗<class_ProjectSettings_property_input/ui_graph_duplicate>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于制作 :ref:`GraphEdit<class_GraphEdit>` 中某个 :ref:`GraphNode<class_GraphNode>` 的副本。
+Default :ref:`InputEventAction<class_InputEventAction>` to duplicate a :ref:`GraphNode<class_GraphNode>` in a :ref:`GraphEdit<class_GraphEdit>`.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6115,9 +6115,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_graph_follow_left** :ref:`🔗<class_ProjectSettings_property_input/ui_graph_follow_left>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于跟踪 :ref:`GraphNode<class_GraphNode>` 输入端口的连接。
+Default :ref:`InputEventAction<class_InputEventAction>` to follow a :ref:`GraphNode<class_GraphNode>` input port connection.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6129,7 +6129,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_graph_follow_left.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_graph_follow_left.macos>`
 
-针对 macOS 的快捷键覆盖项，对应跟踪 :ref:`GraphNode<class_GraphNode>` 输入端口的连接。
+macOS specific override for the shortcut to follow a :ref:`GraphNode<class_GraphNode>` input port connection.
 
 .. rst-class:: classref-item-separator
 
@@ -6141,9 +6141,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_graph_follow_right** :ref:`🔗<class_ProjectSettings_property_input/ui_graph_follow_right>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于跟踪 :ref:`GraphNode<class_GraphNode>` 输出端口的连接。
+Default :ref:`InputEventAction<class_InputEventAction>` to follow a :ref:`GraphNode<class_GraphNode>` output port connection.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6155,7 +6155,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_graph_follow_right.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_graph_follow_right.macos>`
 
-针对 macOS 的快捷键覆盖项，对应跟踪 :ref:`GraphNode<class_GraphNode>` 输出端口的连接。
+macOS specific override for the shortcut to follow a :ref:`GraphNode<class_GraphNode>` output port connection.
 
 .. rst-class:: classref-item-separator
 
@@ -6167,9 +6167,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_home** :ref:`🔗<class_ProjectSettings_property_input/ui_home>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于前往 :ref:`Control<class_Control>` 的开头（例如 :ref:`ItemList<class_ItemList>` 和 :ref:`Tree<class_Tree>` 中的第一个项目），与常见桌面 UI 系统中 :ref:`@GlobalScope.KEY_HOME<class_@GlobalScope_constant_KEY_HOME>` 的 行为一致。
+Default :ref:`InputEventAction<class_InputEventAction>` to go to the start position of a :ref:`Control<class_Control>` (e.g. first item in an :ref:`ItemList<class_ItemList>` or a :ref:`Tree<class_Tree>`), matching the behavior of :ref:`@GlobalScope.KEY_HOME<class_@GlobalScope_constant_KEY_HOME>` on typical desktop UI systems.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作不能被删除，因为它们是几个 :ref:`Control<class_Control>` 的内部逻辑所必需的。然而，分配给动作的事件可以被修改。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6181,9 +6181,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_left** :ref:`🔗<class_ProjectSettings_property_input/ui_left>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于在 UI 中向左移动。
+Default :ref:`InputEventAction<class_InputEventAction>` to move left in the UI.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6195,9 +6195,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_menu** :ref:`🔗<class_ProjectSettings_property_input/ui_menu>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于在文本字段中打开上下文菜单。
+Default :ref:`InputEventAction<class_InputEventAction>` to open a context menu in a text field.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6209,9 +6209,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_page_down** :ref:`🔗<class_ProjectSettings_property_input/ui_page_down>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于在 :ref:`Control<class_Control>`\ （例如 :ref:`ItemList<class_ItemList>` 和 :ref:`Tree<class_Tree>`\ ）中向下翻页，与常见桌面 UI 系统中 :ref:`@GlobalScope.KEY_PAGEDOWN<class_@GlobalScope_constant_KEY_PAGEDOWN>` 的 行为一致。
+Default :ref:`InputEventAction<class_InputEventAction>` to go down a page in a :ref:`Control<class_Control>` (e.g. in an :ref:`ItemList<class_ItemList>` or a :ref:`Tree<class_Tree>`), matching the behavior of :ref:`@GlobalScope.KEY_PAGEDOWN<class_@GlobalScope_constant_KEY_PAGEDOWN>` on typical desktop UI systems.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6223,9 +6223,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_page_up** :ref:`🔗<class_ProjectSettings_property_input/ui_page_up>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于在 :ref:`Control<class_Control>`\ （例如 :ref:`ItemList<class_ItemList>` 和 :ref:`Tree<class_Tree>`\ ）中向上翻页，与常见桌面 UI 系统中 :ref:`@GlobalScope.KEY_PAGEUP<class_@GlobalScope_constant_KEY_PAGEUP>` 的 行为一致。
+Default :ref:`InputEventAction<class_InputEventAction>` to go up a page in a :ref:`Control<class_Control>` (e.g. in an :ref:`ItemList<class_ItemList>` or a :ref:`Tree<class_Tree>`), matching the behavior of :ref:`@GlobalScope.KEY_PAGEUP<class_@GlobalScope_constant_KEY_PAGEUP>` on typical desktop UI systems.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6237,9 +6237,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_paste** :ref:`🔗<class_ProjectSettings_property_input/ui_paste>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于从剪贴板粘贴内容。
+Default :ref:`InputEventAction<class_InputEventAction>` to paste from the clipboard.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6251,9 +6251,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_redo** :ref:`🔗<class_ProjectSettings_property_input/ui_redo>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于重做被撤销的动作。
+Default :ref:`InputEventAction<class_InputEventAction>` to redo an undone action.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6265,9 +6265,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_right** :ref:`🔗<class_ProjectSettings_property_input/ui_right>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于在 UI 中向右移动。
+Default :ref:`InputEventAction<class_InputEventAction>` to move right in the UI.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6279,9 +6279,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_select** :ref:`🔗<class_ProjectSettings_property_input/ui_select>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于在 :ref:`Control<class_Control>`\ （例如 :ref:`ItemList<class_ItemList>` 和 :ref:`Tree<class_Tree>`\ ）中选中项目。
+Default :ref:`InputEventAction<class_InputEventAction>` to select an item in a :ref:`Control<class_Control>` (e.g. in an :ref:`ItemList<class_ItemList>` or a :ref:`Tree<class_Tree>`).
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6293,7 +6293,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_swap_input_direction** :ref:`🔗<class_ProjectSettings_property_input/ui_swap_input_direction>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于交换输入方向，例如在“从左至右”和“从右至左”模式之间切换。影响文本编辑控件（\ :ref:`LineEdit<class_LineEdit>`\ 、\ :ref:`TextEdit<class_TextEdit>`\ ）。
+Default :ref:`InputEventAction<class_InputEventAction>` to swap input direction, i.e. change between left-to-right to right-to-left modes. Affects text-editing controls (:ref:`LineEdit<class_LineEdit>`, :ref:`TextEdit<class_TextEdit>`).
 
 .. rst-class:: classref-item-separator
 
@@ -6305,15 +6305,15 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_add_selection_for_next_occurrence** :ref:`🔗<class_ProjectSettings_property_input/ui_text_add_selection_for_next_occurrence>`
 
-如果文本字段的最近一个光标处存在选中的文本，则会搜索所选内容下一次出现的位置，在那个位置添加一个光标，然后选中该处的内容。
+If a selection is currently active with the last caret in text fields, searches for the next occurrence of the selection, adds a caret and selects the next occurrence.
 
-如果文本字段的最近一个光标处没有选中文本，则会选中当前光标下的单词。
+If no selection is currently active with the last caret in text fields, selects the word currently under the caret.
 
-该动作可以连续执行，选中最近一个光标所选文本的所有出现位置，所有现存光标均适用。
+The action can be performed sequentially for all occurrences of the selection of the last caret and for all existing carets.
 
-视口会根据最近新添加的文本光标进行调整。
+The viewport is adjusted to the latest newly added caret.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6325,9 +6325,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_backspace** :ref:`🔗<class_ProjectSettings_property_input/ui_text_backspace>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于删除文本光标前的字符。
+Default :ref:`InputEventAction<class_InputEventAction>` to delete the character before the text cursor.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6339,9 +6339,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_backspace_all_to_left** :ref:`🔗<class_ProjectSettings_property_input/ui_text_backspace_all_to_left>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于删除文本光标前的\ **所有**\ 文本。
+Default :ref:`InputEventAction<class_InputEventAction>` to delete **all** text before the text cursor.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6353,7 +6353,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_backspace_all_to_left.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_backspace_all_to_left.macos>`
 
-针对 macOS 的快捷键覆盖项，对应删除文本光标前所有文本的快捷键。
+macOS specific override for the shortcut to delete all text before the text cursor.
 
 .. rst-class:: classref-item-separator
 
@@ -6365,9 +6365,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_backspace_word** :ref:`🔗<class_ProjectSettings_property_input/ui_text_backspace_word>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于删除光标前、空白或标点字符后的所有字符。
+Default :ref:`InputEventAction<class_InputEventAction>` to delete all characters before the cursor up until a whitespace or punctuation character.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6379,7 +6379,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_backspace_word.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_backspace_word.macos>`
 
-针对 macOS 的快捷键覆盖项，对应删除单词的快捷键。
+macOS specific override for the shortcut to delete a word.
 
 .. rst-class:: classref-item-separator
 
@@ -6391,7 +6391,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_add_above** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_add_above>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于在文本中各个光标上方再添加一个光标。
+Default :ref:`InputEventAction<class_InputEventAction>` to add an additional caret above every caret of a text.
 
 .. rst-class:: classref-item-separator
 
@@ -6403,7 +6403,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_add_above.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_add_above.macos>`
 
-针对 macOS 的快捷键覆盖项，对应在各个光标上方再添加一个光标的快捷键。
+macOS specific override for the shortcut to add a caret above every caret.
 
 .. rst-class:: classref-item-separator
 
@@ -6415,7 +6415,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_add_below** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_add_below>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于在文本中各个光标下方再添加一个光标。
+Default :ref:`InputEventAction<class_InputEventAction>` to add an additional caret below every caret of a text.
 
 .. rst-class:: classref-item-separator
 
@@ -6427,7 +6427,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_add_below.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_add_below.macos>`
 
-针对 macOS 的快捷键覆盖项，对应在各个光标下方再添加一个光标的快捷键。
+macOS specific override for the shortcut to add a caret below every caret.
 
 .. rst-class:: classref-item-separator
 
@@ -6439,9 +6439,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_document_end** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_document_end>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于将文本光标移动到文本的末尾。
+Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor to the end of the text.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6453,7 +6453,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_document_end.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_document_end.macos>`
 
-针对 macOS 的快捷键覆盖项，对应将文本光标移动到文本末尾的快捷键。
+macOS specific override for the shortcut to move the text cursor to the end of the text.
 
 .. rst-class:: classref-item-separator
 
@@ -6465,9 +6465,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_document_start** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_document_start>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于将文本光标移动到文本的开头。
+Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor to the start of the text.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6479,7 +6479,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_document_start.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_document_start.macos>`
 
-针对 macOS 的快捷键覆盖项，对应将文本光标移动到文本开头的快捷键。
+macOS specific override for the shortcut to move the text cursor to the start of the text.
 
 .. rst-class:: classref-item-separator
 
@@ -6491,9 +6491,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_down** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_down>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于将文本光标向下移动。
+Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor down.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6505,9 +6505,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_left** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_left>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于将文本光标向左移动。
+Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor left.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6519,9 +6519,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_line_end** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_line_end>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于将文本光标移动到该行的末尾。
+Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor to the end of the line.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6533,7 +6533,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_line_end.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_line_end.macos>`
 
-针对 macOS 的快捷键覆盖项，对应将文本光标移动到改行末尾的快捷键。
+macOS specific override for the shortcut to move the text cursor to the end of the line.
 
 .. rst-class:: classref-item-separator
 
@@ -6545,9 +6545,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_line_start** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_line_start>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于将文本光标移动到该行的开头。
+Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor to the start of the line.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6559,7 +6559,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_line_start.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_line_start.macos>`
 
-针对 macOS 的快捷键覆盖项，对应将文本光标移动到改行开头的快捷键。
+macOS specific override for the shortcut to move the text cursor to the start of the line.
 
 .. rst-class:: classref-item-separator
 
@@ -6571,9 +6571,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_page_down** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_page_down>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于将文本光标向下移动一页。
+Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor down one page.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6585,9 +6585,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_page_up** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_page_up>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于将文本光标向上移动一页。
+Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor up one page.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6599,9 +6599,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_right** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_right>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于将文本光标向右移动。
+Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor right.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6613,9 +6613,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_up** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_up>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于将文本光标向上移动。
+Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor up.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6627,9 +6627,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_word_left** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_word_left>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于将文本光标向左移动到最近的空白或标点字符。
+Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor left to the next whitespace or punctuation.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6641,7 +6641,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_word_left.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_word_left.macos>`
 
-针对 macOS 的快捷键覆盖项，对应将文本光标向后移动一个单词的快捷键。
+macOS specific override for the shortcut to move the text cursor back one word.
 
 .. rst-class:: classref-item-separator
 
@@ -6653,9 +6653,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_word_right** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_word_right>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于将文本光标向右移动到最近的空白或标点字符。
+Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor right to the next whitespace or punctuation.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6667,7 +6667,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_word_right.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_word_right.macos>`
 
-针对 macOS 的快捷键覆盖项，对应将文本光标向前移动一个单词的快捷键。
+macOS specific override for the shortcut to move the text cursor forward one word.
 
 .. rst-class:: classref-item-separator
 
@@ -6679,11 +6679,11 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_clear_carets_and_selection** :ref:`🔗<class_ProjectSettings_property_input/ui_text_clear_carets_and_selection>`
 
-如果处于活动状态并且有选区的光标只有一个，则清除该选区。
+If there's only one caret active and with a selection, clears the selection.
 
-如果有多个光标处于活动状态，请移除次要光标并清除其选区。
+In case there's more than one caret active, removes the secondary carets and clears their selections.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作无法移除，因为它们对于部分 :ref:`Control<class_Control>` 的内部逻辑是必需的。但是，可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6695,9 +6695,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_completion_accept** :ref:`🔗<class_ProjectSettings_property_input/ui_text_completion_accept>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于接受某个自动补全提示。
+Default :ref:`InputEventAction<class_InputEventAction>` to accept an autocompletion hint.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6709,9 +6709,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_completion_query** :ref:`🔗<class_ProjectSettings_property_input/ui_text_completion_query>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于请求自动补全。
+Default :ref:`InputEventAction<class_InputEventAction>` to request autocompletion.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6723,9 +6723,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_completion_replace** :ref:`🔗<class_ProjectSettings_property_input/ui_text_completion_replace>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于接受某个自动补全提示并替换现有文本。
+Default :ref:`InputEventAction<class_InputEventAction>` to accept an autocompletion hint, replacing existing text.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6737,9 +6737,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_dedent** :ref:`🔗<class_ProjectSettings_property_input/ui_text_dedent>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于取消文本缩进。
+Default :ref:`InputEventAction<class_InputEventAction>` to unindent text.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6751,9 +6751,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_delete** :ref:`🔗<class_ProjectSettings_property_input/ui_text_delete>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于删除文本光标后的字符。
+Default :ref:`InputEventAction<class_InputEventAction>` to delete the character after the text cursor.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6765,9 +6765,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_delete_all_to_right** :ref:`🔗<class_ProjectSettings_property_input/ui_text_delete_all_to_right>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于删除文本光标后的\ **所有**\ 文本。
+Default :ref:`InputEventAction<class_InputEventAction>` to delete **all** text after the text cursor.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6779,7 +6779,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_delete_all_to_right.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_delete_all_to_right.macos>`
 
-针对 macOS 的快捷键覆盖项，对应删除文本光标后所有文本的快捷键。
+macOS specific override for the shortcut to delete all text after the text cursor.
 
 .. rst-class:: classref-item-separator
 
@@ -6791,9 +6791,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_delete_word** :ref:`🔗<class_ProjectSettings_property_input/ui_text_delete_word>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于删除光标后、空白或标点字符前的所有字符。
+Default :ref:`InputEventAction<class_InputEventAction>` to delete all characters after the cursor up until a whitespace or punctuation character.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6805,7 +6805,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_delete_word.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_delete_word.macos>`
 
-针对 macOS 的快捷键覆盖项，对应删除文本光标前的单词的快捷键。
+macOS specific override for the shortcut to delete a word after the text cursor.
 
 .. rst-class:: classref-item-separator
 
@@ -6817,9 +6817,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_indent** :ref:`🔗<class_ProjectSettings_property_input/ui_text_indent>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于缩进当前行。
+Default :ref:`InputEventAction<class_InputEventAction>` to indent the current line.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6831,9 +6831,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_newline** :ref:`🔗<class_ProjectSettings_property_input/ui_text_newline>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于在文本光标处插入换行。
+Default :ref:`InputEventAction<class_InputEventAction>` to insert a new line at the position of the text cursor.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6845,9 +6845,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_newline_above** :ref:`🔗<class_ProjectSettings_property_input/ui_text_newline_above>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于在当前行之前插入一个空行。
+Default :ref:`InputEventAction<class_InputEventAction>` to insert a new line before the current one.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6859,9 +6859,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_newline_blank** :ref:`🔗<class_ProjectSettings_property_input/ui_text_newline_blank>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于在当前行之后插入一个空行。
+Default :ref:`InputEventAction<class_InputEventAction>` to insert a new line after the current one.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6873,9 +6873,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_scroll_down** :ref:`🔗<class_ProjectSettings_property_input/ui_text_scroll_down>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于向下滚动一行文本。
+Default :ref:`InputEventAction<class_InputEventAction>` to scroll down one line of text.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6887,7 +6887,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_scroll_down.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_scroll_down.macos>`
 
-针对 macOS 的快捷键覆盖项，对应向下滚动一行的快捷键。
+macOS specific override for the shortcut to scroll down one line.
 
 .. rst-class:: classref-item-separator
 
@@ -6899,9 +6899,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_scroll_up** :ref:`🔗<class_ProjectSettings_property_input/ui_text_scroll_up>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于向上滚动一行文本。
+Default :ref:`InputEventAction<class_InputEventAction>` to scroll up one line of text.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6913,7 +6913,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_scroll_up.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_scroll_up.macos>`
 
-针对 macOS 的快捷键覆盖项，对应向上滚动一行的快捷键。
+macOS specific override for the shortcut to scroll up one line.
 
 .. rst-class:: classref-item-separator
 
@@ -6925,9 +6925,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_select_all** :ref:`🔗<class_ProjectSettings_property_input/ui_text_select_all>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于全选文本。
+Default :ref:`InputEventAction<class_InputEventAction>` to select all text.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6939,9 +6939,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_select_word_under_caret** :ref:`🔗<class_ProjectSettings_property_input/ui_text_select_word_under_caret>`
 
-如果文本框中当前没有选中文本，则选中文本光标下的单词。如果有当前选中的文本，则取消选中。
+If no selection is currently active, selects the word currently under the caret in text fields. If a selection is currently active, deselects the current selection.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6953,7 +6953,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_select_word_under_caret.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_select_word_under_caret.macos>`
 
-针对 macOS 的快捷键覆盖项，对应选中光标处单词的快捷键。
+macOS specific override for the shortcut to select the word currently under the caret.
 
 .. rst-class:: classref-item-separator
 
@@ -6965,13 +6965,13 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_skip_selection_for_next_occurrence** :ref:`🔗<class_ProjectSettings_property_input/ui_text_skip_selection_for_next_occurrence>`
 
-如果文本字段的最后一个文本光标当前未处于活动状态，则会搜索当前位于文本光标下方的单词的下一次出现的位置，并将文本光标移动到下一个出现位置。可以对最后一个文本光标下方的单词的其他出现位置依次执行该动作。
+If no selection is currently active with the last caret in text fields, searches for the next occurrence of the word currently under the caret and moves the caret to the next occurrence. The action can be performed sequentially for other occurrences of the word under the last caret.
 
-如果文本字段中最后一个文本光标当前处于活动状态，则搜索所选内容的下一个出现位置，添加文本光标，选择下一个出现位置，然后取消选择上一个选择及其关联的文本光标。可以对上一个文本光标的其他出现位置依次执行该动作。
+If a selection is currently active with the last caret in text fields, searches for the next occurrence of the selection, adds a caret, selects the next occurrence then deselects the previous selection and its associated caret. The action can be performed sequentially for other occurrences of the selection of the last caret.
 
-视口会根据最近新添加的文本光标进行调整。
+The viewport is adjusted to the latest newly added caret.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作对于多个 :ref:`Control<class_Control>` 的内部逻辑是必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6983,9 +6983,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_submit** :ref:`🔗<class_ProjectSettings_property_input/ui_text_submit>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于提交文本字段。
+Default :ref:`InputEventAction<class_InputEventAction>` to submit a text field.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -6997,9 +6997,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_toggle_insert_mode** :ref:`🔗<class_ProjectSettings_property_input/ui_text_toggle_insert_mode>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于开关文本字段的\ *插入模式*\ 。在插入模式中，插入新的文本会覆盖光标后的字符，除非下一个字符是换行符。
+Default :ref:`InputEventAction<class_InputEventAction>` to toggle *insert mode* in a text field. While in insert mode, inserting new text overrides the character after the cursor, unless the next character is a new line.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -7011,9 +7011,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_undo** :ref:`🔗<class_ProjectSettings_property_input/ui_undo>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于撤销最近的动作。
+Default :ref:`InputEventAction<class_InputEventAction>` to undo the most recent action.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -7025,9 +7025,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_unicode_start** :ref:`🔗<class_ProjectSettings_property_input/ui_unicode_start>`
 
-默认 :ref:`InputEventAction<class_InputEventAction>`\ ，用于在文本框中开启 Unicode 字符的十六进制码输入。
+Default :ref:`InputEventAction<class_InputEventAction>` to start Unicode character hexadecimal code input in a text field.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -7039,9 +7039,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_up** :ref:`🔗<class_ProjectSettings_property_input/ui_up>`
 
-默认在 UI 中向上移动\ :ref:`InputEventAction<class_InputEventAction>`\ 。
+Default :ref:`InputEventAction<class_InputEventAction>` to move up in the UI.
 
-\ **注意：**\ 默认的 ``ui_*`` 动作是部分 :ref:`Control<class_Control>` 的内部逻辑所必需的，无法删除。但是可以修改分配给该动作的事件。
+\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -7053,13 +7053,13 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`bool<class_bool>` **input_devices/buffering/agile_event_flushing** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/buffering/agile_event_flushing>`
 
-如果为 ``true``\ ，按键/触摸/操纵杆事件将在每个空闲帧和物理帧之前刷新。
+If ``true``, key/touch/joystick events will be flushed just before every idle and physics frame.
 
-如果为 ``false``\ ，该类事件将在引擎迭代之间的每个进程帧中仅刷新一次。
+If ``false``, such events will be flushed only once per process frame, between iterations of the engine.
 
-启用该功能可以极大地提高对输入的响应能力，特别是在每个可见（进程）帧需要运行多个物理帧的设备中，因为它们无法以目标帧速率运行。
+Enabling this can greatly improve the responsiveness to input, specially in devices that need to run multiple physics frames per visible (process) frame, because they can't run at the target frame rate.
 
-\ **注意：**\ 目前只在 Android 上实现。
+\ **Note:** Currently implemented only on Android.
 
 .. rst-class:: classref-item-separator
 
@@ -7071,11 +7071,11 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`bool<class_bool>` **input_devices/compatibility/legacy_just_pressed_behavior** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/compatibility/legacy_just_pressed_behavior>`
 
-如果为 ``true``\ ，则 :ref:`Input.is_action_just_pressed()<class_Input_method_is_action_just_pressed>` 和 :ref:`Input.is_action_just_released()<class_Input_method_is_action_just_released>` 只有在动作仍然处于相应状态时返回 ``true``\ ，也就是说，会忽略在同一帧按下\ *并*\ 释放的动作。
+If ``true``, :ref:`Input.is_action_just_pressed()<class_Input_method_is_action_just_pressed>` and :ref:`Input.is_action_just_released()<class_Input_method_is_action_just_released>` will only return ``true`` if the action is still in the respective state, i.e. an action that is pressed *and* released on the same frame will be missed.
 
-如果为 ``false``\ ，则不会丢失任何输入。
+If ``false``, no input will be lost.
 
-\ **注意：**\ 几乎所有情况下都应该优先设置为 ``false``\ 。旧有行为的用途是支持老项目，这样不需要修改脚本就可以使用以前的逻辑。
+\ **Note:** You should in nearly all cases prefer the ``false`` setting. The legacy behavior is to enable supporting old projects that rely on the old logic, without changes to script.
 
 .. rst-class:: classref-item-separator
 
@@ -7087,11 +7087,11 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **input_devices/pen_tablet/driver** :ref:`🔗<class_ProjectSettings_property_input_devices/pen_tablet/driver>`
 
-指定要使用的平板驱动。如果留空，则会使用默认驱动。
+Specifies the tablet driver to use. If left empty, the default driver will be used.
 
-\ **注意：**\ 所使用的驱动可以通过 ``--tablet-driver`` :doc:`命令行参数 <../tutorials/editor/command_line_tutorial>`\ 在运行时进行覆盖。
+\ **Note:** The driver in use can be overridden at runtime via the ``--tablet-driver`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`.
 
-\ **注意：**\ 运行时切换平板驱动请使用 :ref:`DisplayServer.tablet_set_current_driver()<class_DisplayServer_method_tablet_set_current_driver>`\ 。
+\ **Note:** Use :ref:`DisplayServer.tablet_set_current_driver()<class_DisplayServer_method_tablet_set_current_driver>` to switch tablet driver in runtime.
 
 .. rst-class:: classref-item-separator
 
@@ -7103,15 +7103,15 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **input_devices/pen_tablet/driver.windows** :ref:`🔗<class_ProjectSettings_property_input_devices/pen_tablet/driver.windows>`
 
-:ref:`input_devices/pen_tablet/driver<class_ProjectSettings_property_input_devices/pen_tablet/driver>` 在 Windows 上的覆盖项。支持的值有：
+Override for :ref:`input_devices/pen_tablet/driver<class_ProjectSettings_property_input_devices/pen_tablet/driver>` on Windows. Supported values are:
 
-- ``auto``\ （默认），在 Wacom 平板属性或系统设置中禁用 Windows Ink 时使用 ``wintab``\ ，否则使用 ``winink``\ 。
+- ``auto`` (default), uses ``wintab`` if Windows Ink is disabled in the Wacom Tablet Properties or system settings, ``winink`` otherwise.
 
-- ``winink``\ ，使用 Windows 原生“Windows Ink”驱动。
+- ``winink``, uses Windows native "Windows Ink" driver.
 
-- ``wintab``, 使用 Wacom“WinTab”驱动。
+- ``wintab``, uses Wacom "WinTab" driver.
 
-- ``dummy``\ ，禁用平板输入。
+- ``dummy``, tablet input is disabled.
 
 .. rst-class:: classref-item-separator
 
@@ -7123,7 +7123,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`bool<class_bool>` **input_devices/pointing/android/disable_scroll_deadzone** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/pointing/android/disable_scroll_deadzone>`
 
-如果为 ``true``\ ，则会在 Android 上禁用滚动死区，从而让非常小的滚动动作也能够被注册。这可能会增加滚动灵敏度，但也可能导致由于轻微的手指移动而产生意外的滚动。
+If ``true``, disables the scroll deadzone on Android, allowing even very small scroll movements to be registered. This may increase scroll sensitivity but can also lead to unintended scrolling from slight finger movements.
 
 .. rst-class:: classref-item-separator
 
@@ -7135,7 +7135,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`bool<class_bool>` **input_devices/pointing/android/enable_long_press_as_right_click** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/pointing/android/enable_long_press_as_right_click>`
 
-如果为 ``true``\ ，则在 Android 触摸屏上的长按事件会被转换为右键单击事件。
+If ``true``, long press events on an Android touchscreen are transformed into right click events.
 
 .. rst-class:: classref-item-separator
 
@@ -7147,7 +7147,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`bool<class_bool>` **input_devices/pointing/android/enable_pan_and_scale_gestures** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/pointing/android/enable_pan_and_scale_gestures>`
 
-如果为 ``true``\ ，则会在 Android 设备上启用多点平移和缩放手势。
+If ``true``, multi-touch pan and scale gestures are enabled on Android devices.
 
 .. rst-class:: classref-item-separator
 
@@ -7159,7 +7159,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`bool<class_bool>` **input_devices/pointing/android/override_volume_buttons** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/pointing/android/override_volume_buttons>`
 
-如果为 ``true``\ ，则在应用中使用系统音量按钮时禁用音量调节。
+If ``true``, system volume changes are disabled when the buttons are used within the app.
 
 .. rst-class:: classref-item-separator
 
@@ -7171,7 +7171,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`int<class_int>` **input_devices/pointing/android/rotary_input_scroll_axis** = ``1`` :ref:`🔗<class_ProjectSettings_property_input_devices/pointing/android/rotary_input_scroll_axis>`
 
-在 Wear OS 设备上，定义鼠标滚轮旋钮输入映射的轴。旋钮输入通常是通过旋转智能手表的物理或虚拟（基于触摸）表冠进行的。
+On Wear OS devices, defines which axis of the mouse wheel rotary input is mapped to. This rotary input is usually performed by rotating the physical or virtual (touch-based) bezel on a smartwatch.
 
 .. rst-class:: classref-item-separator
 
@@ -7183,7 +7183,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`bool<class_bool>` **input_devices/pointing/emulate_mouse_from_touch** = ``true`` :ref:`🔗<class_ProjectSettings_property_input_devices/pointing/emulate_mouse_from_touch>`
 
-如果为 ``true``\ ，则在点击或滑动触摸屏时发送鼠标输入事件。
+If ``true``, sends mouse input events when tapping or swiping on the touchscreen.
 
 .. rst-class:: classref-item-separator
 
@@ -7195,7 +7195,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`bool<class_bool>` **input_devices/pointing/emulate_touch_from_mouse** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>`
 
-如果为 ``true``\ ，则在点击或拖动鼠标时发送触摸输入事件。
+If ``true``, sends touch input events when clicking or dragging the mouse.
 
 .. rst-class:: classref-item-separator
 
@@ -7207,7 +7207,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`bool<class_bool>` **input_devices/sensors/enable_accelerometer** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/sensors/enable_accelerometer>`
 
-如果为 ``true``\ ，则启用了加速度计传感器，并且 :ref:`Input.get_accelerometer()<class_Input_method_get_accelerometer>` 会返回有效数据。
+If ``true``, the accelerometer sensor is enabled and :ref:`Input.get_accelerometer()<class_Input_method_get_accelerometer>` returns valid data.
 
 .. rst-class:: classref-item-separator
 
@@ -7219,7 +7219,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`bool<class_bool>` **input_devices/sensors/enable_gravity** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/sensors/enable_gravity>`
 
-如果为 ``true``\ ，则启用了重力传感器，并且 :ref:`Input.get_gravity()<class_Input_method_get_gravity>` 会返回有效数据。
+If ``true``, the gravity sensor is enabled and :ref:`Input.get_gravity()<class_Input_method_get_gravity>` returns valid data.
 
 .. rst-class:: classref-item-separator
 
@@ -7231,7 +7231,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`bool<class_bool>` **input_devices/sensors/enable_gyroscope** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/sensors/enable_gyroscope>`
 
-如果为 ``true``\ ，则启用了陀螺仪传感器，并且 :ref:`Input.get_gyroscope()<class_Input_method_get_gyroscope>` 会返回有效数据。
+If ``true``, the gyroscope sensor is enabled and :ref:`Input.get_gyroscope()<class_Input_method_get_gyroscope>` returns valid data.
 
 .. rst-class:: classref-item-separator
 
@@ -7243,7 +7243,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`bool<class_bool>` **input_devices/sensors/enable_magnetometer** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/sensors/enable_magnetometer>`
 
-如果为 ``true``\ ，则启用了磁力计传感器，并且 :ref:`Input.get_magnetometer()<class_Input_method_get_magnetometer>` 会返回有效数据。
+If ``true``, the magnetometer sensor is enabled and :ref:`Input.get_magnetometer()<class_Input_method_get_magnetometer>` returns valid data.
 
 .. rst-class:: classref-item-separator
 
@@ -7255,9 +7255,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **internationalization/locale/fallback** = ``"en"`` :ref:`🔗<class_ProjectSettings_property_internationalization/locale/fallback>`
 
-如果给定语言的翻译不可用，则使用默认区域设置。如果留空则使用 ``en``\ （英文）。
+The locale to fall back to if a translation isn't available in a given language. If left empty, ``en`` (English) will be used.
 
-\ **注意：**\ 请勿与 :ref:`TextServerFallback<class_TextServerFallback>` 混淆。
+\ **Note:** Not to be confused with :ref:`TextServerFallback<class_TextServerFallback>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7269,11 +7269,11 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`bool<class_bool>` **internationalization/locale/include_text_server_data** = ``false`` :ref:`🔗<class_ProjectSettings_property_internationalization/locale/include_text_server_data>`
 
-如果为 ``true``\ ，则文本服务器中断迭代规则集、字典和其他可选数据将被包含在导出的项目中。
+If ``true``, text server break iteration rule sets, dictionaries and other optional data are included in the exported project.
 
-\ **注意：**\ “ICU / HarfBuzz / Graphite”文本服务器数据，包括缅甸语、汉语、日语、高棉语、老挝语和泰语的词典，以及 Unicode 标准附件 #29 和 Unicode 标准附件 #14 单词和行折断规则。数据大约 4 MB。
+\ **Note:** "ICU / HarfBuzz / Graphite" text server data includes dictionaries for Burmese, Chinese, Japanese, Khmer, Lao and Thai as well as Unicode Standard Annex #29 and Unicode Standard Annex #14 word and line breaking rules. Data is about 4 MB large.
 
-\ **注意：**\ :ref:`TextServerFallback<class_TextServerFallback>` 不使用额外数据。
+\ **Note:** :ref:`TextServerFallback<class_TextServerFallback>` does not use additional data.
 
 .. rst-class:: classref-item-separator
 
@@ -7285,17 +7285,17 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`int<class_int>` **internationalization/locale/line_breaking_strictness** = ``0`` :ref:`🔗<class_ProjectSettings_property_internationalization/locale/line_breaking_strictness>`
 
-默认的断行规则严格程度。在语言代码后加上 ``@lb={auto,loose,normal,strict}`` 可以进行覆盖。
+Default strictness of line-breaking rules. Can be overridden by adding ``@lb={auto,loose,normal,strict}`` to the language code.
 
-- **Auto**\ （\ ``0``\ ）- 严格度基于行的长度。
+- **Auto** (``0``) - strictness is based on the length of the line.
 
-- **Loose**\ （\ ``1``\ ）- 严格度最低的断行规则集。常用于较短的行。
+- **Loose** (``1``) - the least restrictive set of line-breaking rules. Typically used for short lines.
 
-- **Normal**\ （\ ``2``\ ）- 最常见的断行规则集。
+- **Normal** (``2``) - the most common set of line-breaking rules.
 
-- **Strict**\ （\ ``3``\ ）- 最严格的断行规则集。
+- **Strict** (``3``) - the most stringent set of line-breaking rules.
 
-详见《\ `Line Breaking Strictness: the line-break property <https://www.w3.org/TR/css-text-3/#line-break-property>`__\ 》。
+See `Line Breaking Strictness: the line-break property <https://www.w3.org/TR/css-text-3/#line-break-property>`__ for more info.
 
 .. rst-class:: classref-item-separator
 
@@ -7307,9 +7307,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **internationalization/locale/test** = ``""`` :ref:`🔗<class_ProjectSettings_property_internationalization/locale/test>`
 
-如果非空，则将使用该区域设置，不使用自动检测的系统区域设置。
+If non-empty, this locale will be used instead of the automatically detected system locale.
 
-\ **注意：**\ 该设置也适用于导出后的项目。要仅影响编辑器中的测试，请使用 ``editor`` :doc:`功能标签 <../tutorials/export/feature_tags>`\ 来覆盖该设置项，以便进行本地化测试。
+\ **Note:** This setting also applies to the exported project. To only affect testing within the editor, override this setting with an ``editor`` :doc:`feature tag <../tutorials/export/feature_tags>` for localization testing purposes.
 
 .. rst-class:: classref-item-separator
 
@@ -7321,7 +7321,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`bool<class_bool>` **internationalization/pseudolocalization/double_vowels** = ``false`` :ref:`🔗<class_ProjectSettings_property_internationalization/pseudolocalization/double_vowels>`
 
-进行伪本地化时，重复字符串中的元音字母，模拟由于本地化而造成的文本加长。
+Double vowels in strings during pseudolocalization to simulate the lengthening of text due to localization.
 
 .. rst-class:: classref-item-separator
 
@@ -7333,7 +7333,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`float<class_float>` **internationalization/pseudolocalization/expansion_ratio** = ``0.0`` :ref:`🔗<class_ProjectSettings_property_internationalization/pseudolocalization/expansion_ratio>`
 
-进行伪本地化时的扩展比率。取 ``0.3`` 能够适应大部分实际使用，会将每个字符串加长 30%。
+The expansion ratio to use during pseudolocalization. A value of ``0.3`` is sufficient for most practical purposes, and will increase the length of each string by 30%.
 
 .. rst-class:: classref-item-separator
 
@@ -7345,7 +7345,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`bool<class_bool>` **internationalization/pseudolocalization/fake_bidi** = ``false`` :ref:`🔗<class_ProjectSettings_property_internationalization/pseudolocalization/fake_bidi>`
 
-如果为 ``true``\ ，则在启用伪本地化时模拟双向（从右至左）文本。可用于发现 RTL 布局和 UI 镜像问题，如果项目本地化为阿拉伯语或希伯来语等 RTL 语言，则会出现这些问题。另见 :ref:`internationalization/rendering/force_right_to_left_layout_direction<class_ProjectSettings_property_internationalization/rendering/force_right_to_left_layout_direction>`\ 。
+If ``true``, emulate bidirectional (right-to-left) text when pseudolocalization is enabled. This can be used to spot issues with RTL layout and UI mirroring that will crop up if the project is localized to RTL languages such as Arabic or Hebrew. See also :ref:`internationalization/rendering/force_right_to_left_layout_direction<class_ProjectSettings_property_internationalization/rendering/force_right_to_left_layout_direction>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7357,7 +7357,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`bool<class_bool>` **internationalization/pseudolocalization/override** = ``false`` :ref:`🔗<class_ProjectSettings_property_internationalization/pseudolocalization/override>`
 
-将字符串中的所有字符替换为 ``*``\ 。用于查找不可本地化的字符串。
+Replace all characters in the string with ``*``. Useful for finding non-localizable strings.
 
 .. rst-class:: classref-item-separator
 
@@ -7369,7 +7369,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **internationalization/pseudolocalization/prefix** = ``"["`` :ref:`🔗<class_ProjectSettings_property_internationalization/pseudolocalization/prefix>`
 
-将被前置到伪本地化字符串的前缀。
+Prefix that will be prepended to the pseudolocalized string.
 
 .. rst-class:: classref-item-separator
 
@@ -7381,7 +7381,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`bool<class_bool>` **internationalization/pseudolocalization/replace_with_accents** = ``true`` :ref:`🔗<class_ProjectSettings_property_internationalization/pseudolocalization/replace_with_accents>`
 
-进行伪本地化时，将所有字符替换为其重音变体。
+Replace all characters with their accented variants during pseudolocalization.
 
 .. rst-class:: classref-item-separator
 
@@ -7393,7 +7393,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`bool<class_bool>` **internationalization/pseudolocalization/skip_placeholders** = ``true`` :ref:`🔗<class_ProjectSettings_property_internationalization/pseudolocalization/skip_placeholders>`
 
-进行伪本地化时，跳过 ``%s`` 或 ``%f`` 等用于字符串格式的占位符。有助于识别需要额外的控制字符才能正确显示的字符串。
+Skip placeholders for string formatting like ``%s`` or ``%f`` during pseudolocalization. Useful to identify strings which need additional control characters to display correctly.
 
 .. rst-class:: classref-item-separator
 
@@ -7405,7 +7405,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **internationalization/pseudolocalization/suffix** = ``"]"`` :ref:`🔗<class_ProjectSettings_property_internationalization/pseudolocalization/suffix>`
 
-将被追加到伪本地化字符串的后缀。
+Suffix that will be appended to the pseudolocalized string.
 
 .. rst-class:: classref-item-separator
 
@@ -7417,9 +7417,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`bool<class_bool>` **internationalization/pseudolocalization/use_pseudolocalization** = ``false`` :ref:`🔗<class_ProjectSettings_property_internationalization/pseudolocalization/use_pseudolocalization>`
 
-如果为 ``true``\ ，则为项目启用伪本地化。这可用于发现，一旦项目被本地化为字符串比源语言更长的语言时，可能出现的无法翻译的字符串或布局问题。
+If ``true``, enables pseudolocalization for the project. This can be used to spot untranslatable strings or layout issues that may occur once the project is localized to languages that have longer strings than the source language.
 
-\ **注意：**\ 只有在项目启动时该属性才会被读取。要在运行时切换伪本地化，请改用 :ref:`TranslationServer.pseudolocalization_enabled<class_TranslationServer_property_pseudolocalization_enabled>`\ 。
+\ **Note:** This property is only read when the project starts. To toggle pseudolocalization at run-time, use :ref:`TranslationServer.pseudolocalization_enabled<class_TranslationServer_property_pseudolocalization_enabled>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -7431,7 +7431,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`bool<class_bool>` **internationalization/rendering/force_right_to_left_layout_direction** = ``false`` :ref:`🔗<class_ProjectSettings_property_internationalization/rendering/force_right_to_left_layout_direction>`
 
-强制所有控件使用“从右至左”的排版方向和文字书写方向，即便当前区域设置应当使用从左至右的布局和文字书写方向。只应在测试时启用。另见 :ref:`internationalization/pseudolocalization/fake_bidi<class_ProjectSettings_property_internationalization/pseudolocalization/fake_bidi>`\ 。
+Force layout direction and text writing direction to RTL for all controls, even if the current locale is intended to use a left-to-right layout and text writing direction. This should be enabled for testing purposes only. See also :ref:`internationalization/pseudolocalization/fake_bidi<class_ProjectSettings_property_internationalization/pseudolocalization/fake_bidi>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7443,9 +7443,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`bool<class_bool>` **internationalization/rendering/root_node_auto_translate** = ``true`` :ref:`🔗<class_ProjectSettings_property_internationalization/rendering/root_node_auto_translate>`
 
-如果为 ``true``\ ，则根节点使用 :ref:`Node.AUTO_TRANSLATE_MODE_ALWAYS<class_Node_constant_AUTO_TRANSLATE_MODE_ALWAYS>`\ ，否则使用 :ref:`Node.AUTO_TRANSLATE_MODE_DISABLED<class_Node_constant_AUTO_TRANSLATE_MODE_DISABLED>`\ 。
+If ``true``, root node will use :ref:`Node.AUTO_TRANSLATE_MODE_ALWAYS<class_Node_constant_AUTO_TRANSLATE_MODE_ALWAYS>`, otherwise :ref:`Node.AUTO_TRANSLATE_MODE_DISABLED<class_Node_constant_AUTO_TRANSLATE_MODE_DISABLED>` will be used.
 
-\ **注意：**\ 该属性仅在项目启动时读取。要在运行时更改自动翻译模式，请改为设置 :ref:`SceneTree.root<class_SceneTree_property_root>` 的 :ref:`Node.auto_translate_mode<class_Node_property_auto_translate_mode>`\ 。
+\ **Note:** This property is only read when the project starts. To change the auto translate mode at runtime, set :ref:`Node.auto_translate_mode<class_Node_property_auto_translate_mode>` of :ref:`SceneTree.root<class_SceneTree_property_root>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -7457,7 +7457,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`int<class_int>` **internationalization/rendering/root_node_layout_direction** = ``0`` :ref:`🔗<class_ProjectSettings_property_internationalization/rendering/root_node_layout_direction>`
 
-根节点的默认布局方向。
+Root node default layout direction.
 
 .. rst-class:: classref-item-separator
 
@@ -7469,13 +7469,13 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **internationalization/rendering/text_driver** = ``""`` :ref:`🔗<class_ProjectSettings_property_internationalization/rendering/text_driver>`
 
-指定要使用的 :ref:`TextServer<class_TextServer>`\ 。如果留空，则会使用默认服务器。
+Specifies the :ref:`TextServer<class_TextServer>` to use. If left empty, the default will be used.
 
-“ICU / HarfBuzz / Graphite”（\ :ref:`TextServerAdvanced<class_TextServerAdvanced>`\ ）是最先进的文本驱动，支持从右至左的排版和复杂文字（用于阿拉伯语、希伯来语等语言）。“Fallback”（\ :ref:`TextServerFallback<class_TextServerFallback>`\ ）文本驱动不支持从右至左的排版和复杂文字。
+"ICU / HarfBuzz / Graphite" (:ref:`TextServerAdvanced<class_TextServerAdvanced>`) is the most advanced text driver, supporting right-to-left typesetting and complex scripts (for languages like Arabic, Hebrew, etc.). The "Fallback" text driver (:ref:`TextServerFallback<class_TextServerFallback>`) does not support right-to-left typesetting and complex scripts.
 
-\ **注意：**\ 在运行时可以通过 ``--text-driver`` :doc:`命令行参数 <../tutorials/editor/command_line_tutorial>`\ 覆盖使用的驱动程序。
+\ **Note:** The driver in use can be overridden at runtime via the ``--text-driver`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`.
 
-\ **注意：**\ 另外还提供了 ``Dummy`` 文本驱动，它禁用了所有文本渲染和字体相关的功能。这个驱动没有在项目设置中列出，但可以在运行编辑器或项目时使用 ``--text-driver Dummy`` :doc:`命令行参数 <../tutorials/editor/command_line_tutorial>`\ 启用。
+\ **Note:** There is an additional ``Dummy`` text driver available, which disables all text rendering and font-related functionality. This driver is not listed in the project settings, but it can be enabled when running the editor or project using the ``--text-driver Dummy`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7487,7 +7487,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_1** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_1>`
 
-2D 导航层 1 的可选名称。留空则会显示为“层 1”。
+Optional name for the 2D navigation layer 1. If left empty, the layer will display as "Layer 1".
 
 .. rst-class:: classref-item-separator
 
@@ -7499,7 +7499,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_2** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_2>`
 
-2D 导航层 2 的可选名称。留空则会显示为“层 2”。
+Optional name for the 2D navigation layer 2. If left empty, the layer will display as "Layer 2".
 
 .. rst-class:: classref-item-separator
 
@@ -7511,7 +7511,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_3** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_3>`
 
-2D 导航层 3 的可选名称。留空则会显示为“层 3”。
+Optional name for the 2D navigation layer 3. If left empty, the layer will display as "Layer 3".
 
 .. rst-class:: classref-item-separator
 
@@ -7523,7 +7523,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_4** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_4>`
 
-2D 导航层 4 的可选名称。留空则会显示为“层 4”。
+Optional name for the 2D navigation layer 4. If left empty, the layer will display as "Layer 4".
 
 .. rst-class:: classref-item-separator
 
@@ -7535,7 +7535,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_5** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_5>`
 
-2D 导航层 5 的可选名称。留空则会显示为“层 5”。
+Optional name for the 2D navigation layer 5. If left empty, the layer will display as "Layer 5".
 
 .. rst-class:: classref-item-separator
 
@@ -7547,7 +7547,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_6** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_6>`
 
-2D 导航层 6 的可选名称。留空则会显示为“层 6”。
+Optional name for the 2D navigation layer 6. If left empty, the layer will display as "Layer 6".
 
 .. rst-class:: classref-item-separator
 
@@ -7559,7 +7559,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_7** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_7>`
 
-2D 导航层 7 的可选名称。留空则会显示为“层 7”。
+Optional name for the 2D navigation layer 7. If left empty, the layer will display as "Layer 7".
 
 .. rst-class:: classref-item-separator
 
@@ -7571,7 +7571,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_8** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_8>`
 
-2D 导航层 8 的可选名称。留空则会显示为“层 8”。
+Optional name for the 2D navigation layer 8. If left empty, the layer will display as "Layer 8".
 
 .. rst-class:: classref-item-separator
 
@@ -7583,7 +7583,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_9** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_9>`
 
-2D 导航层 9 的可选名称。留空则会显示为“层 9”。
+Optional name for the 2D navigation layer 9. If left empty, the layer will display as "Layer 9".
 
 .. rst-class:: classref-item-separator
 
@@ -7595,7 +7595,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_10** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_10>`
 
-2D 导航层 10 的可选名称。留空则会显示为“层 10”。
+Optional name for the 2D navigation layer 10. If left empty, the layer will display as "Layer 10".
 
 .. rst-class:: classref-item-separator
 
@@ -7607,7 +7607,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_11** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_11>`
 
-2D 导航层 11 的可选名称。留空则会显示为“层 11”。
+Optional name for the 2D navigation layer 11. If left empty, the layer will display as "Layer 11".
 
 .. rst-class:: classref-item-separator
 
@@ -7619,7 +7619,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_12** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_12>`
 
-2D 导航层 12 的可选名称。留空则会显示为“层 12”。
+Optional name for the 2D navigation layer 12. If left empty, the layer will display as "Layer 12".
 
 .. rst-class:: classref-item-separator
 
@@ -7631,7 +7631,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_13** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_13>`
 
-2D 导航层 13 的可选名称。留空则会显示为“层 13”。
+Optional name for the 2D navigation layer 13. If left empty, the layer will display as "Layer 13".
 
 .. rst-class:: classref-item-separator
 
@@ -7643,7 +7643,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_14** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_14>`
 
-2D 导航层 14 的可选名称。留空则会显示为“层 14”。
+Optional name for the 2D navigation layer 14. If left empty, the layer will display as "Layer 14".
 
 .. rst-class:: classref-item-separator
 
@@ -7655,7 +7655,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_15** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_15>`
 
-2D 导航层 15 的可选名称。留空则会显示为“层 15”。
+Optional name for the 2D navigation layer 15. If left empty, the layer will display as "Layer 15".
 
 .. rst-class:: classref-item-separator
 
@@ -7667,7 +7667,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_16** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_16>`
 
-2D 导航层 16 的可选名称。留空则会显示为“层 16”。
+Optional name for the 2D navigation layer 16. If left empty, the layer will display as "Layer 16".
 
 .. rst-class:: classref-item-separator
 
@@ -7679,7 +7679,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_17** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_17>`
 
-2D 导航层 17 的可选名称。留空则会显示为“层 17”。
+Optional name for the 2D navigation layer 17. If left empty, the layer will display as "Layer 17".
 
 .. rst-class:: classref-item-separator
 
@@ -7691,7 +7691,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_18** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_18>`
 
-2D 导航层 18 的可选名称。留空则会显示为“层 18”。
+Optional name for the 2D navigation layer 18. If left empty, the layer will display as "Layer 18".
 
 .. rst-class:: classref-item-separator
 
@@ -7703,7 +7703,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_19** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_19>`
 
-2D 导航层 19 的可选名称。留空则会显示为“层 19”。
+Optional name for the 2D navigation layer 19. If left empty, the layer will display as "Layer 19".
 
 .. rst-class:: classref-item-separator
 
@@ -7715,7 +7715,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_20** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_20>`
 
-2D 导航层 20 的可选名称。留空则会显示为“层 20”。
+Optional name for the 2D navigation layer 20. If left empty, the layer will display as "Layer 20".
 
 .. rst-class:: classref-item-separator
 
@@ -7727,7 +7727,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_21** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_21>`
 
-2D 导航层 21 的可选名称。留空则会显示为“层 21”。
+Optional name for the 2D navigation layer 21. If left empty, the layer will display as "Layer 21".
 
 .. rst-class:: classref-item-separator
 
@@ -7739,7 +7739,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_22** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_22>`
 
-2D 导航层 22 的可选名称。留空则会显示为“层 22”。
+Optional name for the 2D navigation layer 22. If left empty, the layer will display as "Layer 22".
 
 .. rst-class:: classref-item-separator
 
@@ -7751,7 +7751,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_23** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_23>`
 
-2D 导航层 23 的可选名称。留空则会显示为“层 23”。
+Optional name for the 2D navigation layer 23. If left empty, the layer will display as "Layer 23".
 
 .. rst-class:: classref-item-separator
 
@@ -7763,7 +7763,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_24** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_24>`
 
-2D 导航层 24 的可选名称。留空则会显示为“层 24”。
+Optional name for the 2D navigation layer 24. If left empty, the layer will display as "Layer 24".
 
 .. rst-class:: classref-item-separator
 
@@ -7775,7 +7775,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_25** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_25>`
 
-2D 导航层 25 的可选名称。留空则会显示为“层 25”。
+Optional name for the 2D navigation layer 25. If left empty, the layer will display as "Layer 25".
 
 .. rst-class:: classref-item-separator
 
@@ -7787,7 +7787,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_26** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_26>`
 
-2D 导航层 26 的可选名称。留空则会显示为“层 26”。
+Optional name for the 2D navigation layer 26. If left empty, the layer will display as "Layer 26".
 
 .. rst-class:: classref-item-separator
 
@@ -7799,7 +7799,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_27** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_27>`
 
-2D 导航层 27 的可选名称。留空则会显示为“层 27”。
+Optional name for the 2D navigation layer 27. If left empty, the layer will display as "Layer 27".
 
 .. rst-class:: classref-item-separator
 
@@ -7811,7 +7811,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_28** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_28>`
 
-2D 导航层 28 的可选名称。留空则会显示为“层 28”。
+Optional name for the 2D navigation layer 28. If left empty, the layer will display as "Layer 28".
 
 .. rst-class:: classref-item-separator
 
@@ -7823,7 +7823,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_29** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_29>`
 
-2D 导航层 29 的可选名称。留空则会显示为“层 29”。
+Optional name for the 2D navigation layer 29. If left empty, the layer will display as "Layer 29".
 
 .. rst-class:: classref-item-separator
 
@@ -7835,7 +7835,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_30** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_30>`
 
-2D 导航层 30 的可选名称。留空则会显示为“层 30”。
+Optional name for the 2D navigation layer 30. If left empty, the layer will display as "Layer 30".
 
 .. rst-class:: classref-item-separator
 
@@ -7847,7 +7847,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_31** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_31>`
 
-2D 导航层 31 的可选名称。留空则会显示为“层 31”。
+Optional name for the 2D navigation layer 31. If left empty, the layer will display as "Layer 31".
 
 .. rst-class:: classref-item-separator
 
@@ -7859,7 +7859,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_navigation/layer_32** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_navigation/layer_32>`
 
-2D 导航层 32 的可选名称。留空则会显示为“层 32”。
+Optional name for the 2D navigation layer 32. If left empty, the layer will display as "Layer 32".
 
 .. rst-class:: classref-item-separator
 
@@ -7871,7 +7871,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_1** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_1>`
 
-2D 物理层 1 的可选名称。留空则会显示为“层 1”。
+Optional name for the 2D physics layer 1. If left empty, the layer will display as "Layer 1".
 
 .. rst-class:: classref-item-separator
 
@@ -7883,7 +7883,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_2** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_2>`
 
-2D 物理层 2 的可选名称。留空则会显示为“层 2”。
+Optional name for the 2D physics layer 2. If left empty, the layer will display as "Layer 2".
 
 .. rst-class:: classref-item-separator
 
@@ -7895,7 +7895,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_3** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_3>`
 
-2D 物理层 3 的可选名称。留空则会显示为“层 3”。
+Optional name for the 2D physics layer 3. If left empty, the layer will display as "Layer 3".
 
 .. rst-class:: classref-item-separator
 
@@ -7907,7 +7907,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_4** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_4>`
 
-2D 物理层 4 的可选名称。留空则会显示为“层 4”。
+Optional name for the 2D physics layer 4. If left empty, the layer will display as "Layer 4".
 
 .. rst-class:: classref-item-separator
 
@@ -7919,7 +7919,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_5** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_5>`
 
-2D 物理层 5 的可选名称。留空则会显示为“层 5”。
+Optional name for the 2D physics layer 5. If left empty, the layer will display as "Layer 5".
 
 .. rst-class:: classref-item-separator
 
@@ -7931,7 +7931,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_6** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_6>`
 
-2D 物理层 6 的可选名称。留空则会显示为“层 6”。
+Optional name for the 2D physics layer 6. If left empty, the layer will display as "Layer 6".
 
 .. rst-class:: classref-item-separator
 
@@ -7943,7 +7943,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_7** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_7>`
 
-2D 物理层 7 的可选名称。留空则会显示为“层 7”。
+Optional name for the 2D physics layer 7. If left empty, the layer will display as "Layer 7".
 
 .. rst-class:: classref-item-separator
 
@@ -7955,7 +7955,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_8** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_8>`
 
-2D 物理层 8 的可选名称。留空则会显示为“层 8”。
+Optional name for the 2D physics layer 8. If left empty, the layer will display as "Layer 8".
 
 .. rst-class:: classref-item-separator
 
@@ -7967,7 +7967,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_9** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_9>`
 
-2D 物理层 9 的可选名称。留空则会显示为“层 9”。
+Optional name for the 2D physics layer 9. If left empty, the layer will display as "Layer 9".
 
 .. rst-class:: classref-item-separator
 
@@ -7979,7 +7979,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_10** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_10>`
 
-2D 物理层 10 的可选名称。留空则会显示为“层 10”。
+Optional name for the 2D physics layer 10. If left empty, the layer will display as "Layer 10".
 
 .. rst-class:: classref-item-separator
 
@@ -7991,7 +7991,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_11** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_11>`
 
-2D 物理层 11 的可选名称。留空则会显示为“层 11”。
+Optional name for the 2D physics layer 11. If left empty, the layer will display as "Layer 11".
 
 .. rst-class:: classref-item-separator
 
@@ -8003,7 +8003,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_12** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_12>`
 
-2D 物理层 12 的可选名称。留空则会显示为“层 12”。
+Optional name for the 2D physics layer 12. If left empty, the layer will display as "Layer 12".
 
 .. rst-class:: classref-item-separator
 
@@ -8015,7 +8015,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_13** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_13>`
 
-2D 物理层 13 的可选名称。留空则会显示为“层 13”。
+Optional name for the 2D physics layer 13. If left empty, the layer will display as "Layer 13".
 
 .. rst-class:: classref-item-separator
 
@@ -8027,7 +8027,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_14** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_14>`
 
-2D 物理层 14 的可选名称。留空则会显示为“层 14”。
+Optional name for the 2D physics layer 14. If left empty, the layer will display as "Layer 14".
 
 .. rst-class:: classref-item-separator
 
@@ -8039,7 +8039,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_15** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_15>`
 
-2D 物理层 15 的可选名称。留空则会显示为“层 15”。
+Optional name for the 2D physics layer 15. If left empty, the layer will display as "Layer 15".
 
 .. rst-class:: classref-item-separator
 
@@ -8051,7 +8051,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_16** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_16>`
 
-2D 物理层 16 的可选名称。留空则会显示为“层 16”。
+Optional name for the 2D physics layer 16. If left empty, the layer will display as "Layer 16".
 
 .. rst-class:: classref-item-separator
 
@@ -8063,7 +8063,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_17** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_17>`
 
-2D 物理层 17 的可选名称。留空则会显示为“层 17”。
+Optional name for the 2D physics layer 17. If left empty, the layer will display as "Layer 17".
 
 .. rst-class:: classref-item-separator
 
@@ -8075,7 +8075,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_18** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_18>`
 
-2D 物理层 18 的可选名称。留空则会显示为“层 18”。
+Optional name for the 2D physics layer 18. If left empty, the layer will display as "Layer 18".
 
 .. rst-class:: classref-item-separator
 
@@ -8087,7 +8087,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_19** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_19>`
 
-2D 物理层 19 的可选名称。留空则会显示为“层 19”。
+Optional name for the 2D physics layer 19. If left empty, the layer will display as "Layer 19".
 
 .. rst-class:: classref-item-separator
 
@@ -8099,7 +8099,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_20** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_20>`
 
-2D 物理层 20 的可选名称。留空则会显示为“层 20”。
+Optional name for the 2D physics layer 20. If left empty, the layer will display as "Layer 20".
 
 .. rst-class:: classref-item-separator
 
@@ -8111,7 +8111,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_21** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_21>`
 
-2D 物理层 21 的可选名称。留空则会显示为“层 21”。
+Optional name for the 2D physics layer 21. If left empty, the layer will display as "Layer 21".
 
 .. rst-class:: classref-item-separator
 
@@ -8123,7 +8123,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_22** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_22>`
 
-2D 物理层 22 的可选名称。留空则会显示为“层 22”。
+Optional name for the 2D physics layer 22. If left empty, the layer will display as "Layer 22".
 
 .. rst-class:: classref-item-separator
 
@@ -8135,7 +8135,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_23** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_23>`
 
-2D 物理层 23 的可选名称。留空则会显示为“层 23”。
+Optional name for the 2D physics layer 23. If left empty, the layer will display as "Layer 23".
 
 .. rst-class:: classref-item-separator
 
@@ -8147,7 +8147,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_24** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_24>`
 
-2D 物理层 24 的可选名称。留空则会显示为“层 24”。
+Optional name for the 2D physics layer 24. If left empty, the layer will display as "Layer 24".
 
 .. rst-class:: classref-item-separator
 
@@ -8159,7 +8159,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_25** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_25>`
 
-2D 物理层 25 的可选名称。留空则会显示为“层 25”。
+Optional name for the 2D physics layer 25. If left empty, the layer will display as "Layer 25".
 
 .. rst-class:: classref-item-separator
 
@@ -8171,7 +8171,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_26** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_26>`
 
-2D 物理层 26 的可选名称。留空则会显示为“层 26”。
+Optional name for the 2D physics layer 26. If left empty, the layer will display as "Layer 26".
 
 .. rst-class:: classref-item-separator
 
@@ -8183,7 +8183,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_27** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_27>`
 
-2D 物理层 27 的可选名称。留空则会显示为“层 27”。
+Optional name for the 2D physics layer 27. If left empty, the layer will display as "Layer 27".
 
 .. rst-class:: classref-item-separator
 
@@ -8195,7 +8195,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_28** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_28>`
 
-2D 物理层 28 的可选名称。留空则会显示为“层 28”。
+Optional name for the 2D physics layer 28. If left empty, the layer will display as "Layer 28".
 
 .. rst-class:: classref-item-separator
 
@@ -8207,7 +8207,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_29** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_29>`
 
-2D 物理层 29 的可选名称。留空则会显示为“层 29”。
+Optional name for the 2D physics layer 29. If left empty, the layer will display as "Layer 29".
 
 .. rst-class:: classref-item-separator
 
@@ -8219,7 +8219,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_30** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_30>`
 
-2D 物理层 30 的可选名称。留空则会显示为“层 30”。
+Optional name for the 2D physics layer 30. If left empty, the layer will display as "Layer 30".
 
 .. rst-class:: classref-item-separator
 
@@ -8231,7 +8231,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_31** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_31>`
 
-2D 物理层 31 的可选名称。留空则会显示为“层 31”。
+Optional name for the 2D physics layer 31. If left empty, the layer will display as "Layer 31".
 
 .. rst-class:: classref-item-separator
 
@@ -8243,7 +8243,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_physics/layer_32** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_physics/layer_32>`
 
-2D 物理层 32 的可选名称。留空则会显示为“层 32”。
+Optional name for the 2D physics layer 32. If left empty, the layer will display as "Layer 32".
 
 .. rst-class:: classref-item-separator
 
@@ -8255,7 +8255,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_1** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_1>`
 
-2D 渲染层 1 的可选名称。留空则会显示为“层 1”。
+Optional name for the 2D render layer 1. If left empty, the layer will display as "Layer 1".
 
 .. rst-class:: classref-item-separator
 
@@ -8267,7 +8267,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_2** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_2>`
 
-2D 渲染层 2 的可选名称。留空则会显示为“层 2”。
+Optional name for the 2D render layer 2. If left empty, the layer will display as "Layer 2".
 
 .. rst-class:: classref-item-separator
 
@@ -8279,7 +8279,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_3** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_3>`
 
-2D 渲染层 3 的可选名称。留空则会显示为“层 3”。
+Optional name for the 2D render layer 3. If left empty, the layer will display as "Layer 3".
 
 .. rst-class:: classref-item-separator
 
@@ -8291,7 +8291,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_4** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_4>`
 
-2D 渲染层 4 的可选名称。留空则会显示为“层 4”。
+Optional name for the 2D render layer 4. If left empty, the layer will display as "Layer 4".
 
 .. rst-class:: classref-item-separator
 
@@ -8303,7 +8303,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_5** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_5>`
 
-2D 渲染层 5 的可选名称。留空则会显示为“层 5”。
+Optional name for the 2D render layer 5. If left empty, the layer will display as "Layer 5".
 
 .. rst-class:: classref-item-separator
 
@@ -8315,7 +8315,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_6** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_6>`
 
-2D 渲染层 6 的可选名称。留空则会显示为“层 6”。
+Optional name for the 2D render layer 6. If left empty, the layer will display as "Layer 6".
 
 .. rst-class:: classref-item-separator
 
@@ -8327,7 +8327,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_7** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_7>`
 
-2D 渲染层 7 的可选名称。留空则会显示为“层 7”。
+Optional name for the 2D render layer 7. If left empty, the layer will display as "Layer 7".
 
 .. rst-class:: classref-item-separator
 
@@ -8339,7 +8339,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_8** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_8>`
 
-2D 渲染层 8 的可选名称。留空则会显示为“层 8”。
+Optional name for the 2D render layer 8. If left empty, the layer will display as "Layer 8".
 
 .. rst-class:: classref-item-separator
 
@@ -8351,7 +8351,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_9** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_9>`
 
-2D 渲染层 9 的可选名称。留空则会显示为“层 9”。
+Optional name for the 2D render layer 9. If left empty, the layer will display as "Layer 9".
 
 .. rst-class:: classref-item-separator
 
@@ -8363,7 +8363,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_10** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_10>`
 
-2D 渲染层 10 的可选名称。留空则会显示为“层 10”。
+Optional name for the 2D render layer 10. If left empty, the layer will display as "Layer 10".
 
 .. rst-class:: classref-item-separator
 
@@ -8375,7 +8375,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_11** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_11>`
 
-2D 渲染层 11 的可选名称。留空则会显示为“层 11”。
+Optional name for the 2D render layer 11. If left empty, the layer will display as "Layer 11".
 
 .. rst-class:: classref-item-separator
 
@@ -8387,7 +8387,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_12** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_12>`
 
-2D 渲染层 12 的可选名称。留空则会显示为“层 12”。
+Optional name for the 2D render layer 12. If left empty, the layer will display as "Layer 12".
 
 .. rst-class:: classref-item-separator
 
@@ -8399,7 +8399,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_13** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_13>`
 
-2D 渲染层 13 的可选名称。留空则会显示为“层 13”。
+Optional name for the 2D render layer 13. If left empty, the layer will display as "Layer 13".
 
 .. rst-class:: classref-item-separator
 
@@ -8411,7 +8411,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_14** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_14>`
 
-2D 渲染层 14 的可选名称。留空则会显示为“层 14”。
+Optional name for the 2D render layer 14. If left empty, the layer will display as "Layer 14".
 
 .. rst-class:: classref-item-separator
 
@@ -8423,7 +8423,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_15** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_15>`
 
-2D 渲染层 15 的可选名称。留空则会显示为“层 15”。
+Optional name for the 2D render layer 15. If left empty, the layer will display as "Layer 15".
 
 .. rst-class:: classref-item-separator
 
@@ -8435,7 +8435,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_16** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_16>`
 
-2D 渲染层 16 的可选名称。留空则会显示为“层 16”。
+Optional name for the 2D render layer 16. If left empty, the layer will display as "Layer 16".
 
 .. rst-class:: classref-item-separator
 
@@ -8447,7 +8447,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_17** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_17>`
 
-2D 渲染层 17 的可选名称。留空则会显示为“层 17”。
+Optional name for the 2D render layer 17. If left empty, the layer will display as "Layer 17".
 
 .. rst-class:: classref-item-separator
 
@@ -8459,7 +8459,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_18** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_18>`
 
-2D 渲染层 18 的可选名称。留空则会显示为“层 18”。
+Optional name for the 2D render layer 18. If left empty, the layer will display as "Layer 18".
 
 .. rst-class:: classref-item-separator
 
@@ -8471,7 +8471,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_19** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_19>`
 
-2D 渲染层 19 的可选名称。留空则会显示为“层 19”。
+Optional name for the 2D render layer 19. If left empty, the layer will display as "Layer 19".
 
 .. rst-class:: classref-item-separator
 
@@ -8483,7 +8483,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/2d_render/layer_20** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/2d_render/layer_20>`
 
-2D 渲染层 20 的可选名称。留空则会显示为“层 20”。
+Optional name for the 2D render layer 20. If left empty, the layer will display as "Layer 20".
 
 .. rst-class:: classref-item-separator
 
@@ -8495,7 +8495,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_1** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_1>`
 
-3D 导航层 1 的可选名称。留空则会显示为“层 1”。
+Optional name for the 3D navigation layer 1. If left empty, the layer will display as "Layer 1".
 
 .. rst-class:: classref-item-separator
 
@@ -8507,7 +8507,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_2** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_2>`
 
-3D 导航层 2 的可选名称。留空则会显示为“层 2”。
+Optional name for the 3D navigation layer 2. If left empty, the layer will display as "Layer 2".
 
 .. rst-class:: classref-item-separator
 
@@ -8519,7 +8519,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_3** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_3>`
 
-3D 导航层 3 的可选名称。留空则会显示为“层 3”。
+Optional name for the 3D navigation layer 3. If left empty, the layer will display as "Layer 3".
 
 .. rst-class:: classref-item-separator
 
@@ -8531,7 +8531,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_4** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_4>`
 
-3D 导航层 4 的可选名称。留空则会显示为“层 4”。
+Optional name for the 3D navigation layer 4. If left empty, the layer will display as "Layer 4".
 
 .. rst-class:: classref-item-separator
 
@@ -8543,7 +8543,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_5** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_5>`
 
-3D 导航层 5 的可选名称。留空则会显示为“层 5”。
+Optional name for the 3D navigation layer 5. If left empty, the layer will display as "Layer 5".
 
 .. rst-class:: classref-item-separator
 
@@ -8555,7 +8555,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_6** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_6>`
 
-3D 导航层 6 的可选名称。留空则会显示为“层 6”。
+Optional name for the 3D navigation layer 6. If left empty, the layer will display as "Layer 6".
 
 .. rst-class:: classref-item-separator
 
@@ -8567,7 +8567,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_7** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_7>`
 
-3D 导航层 7 的可选名称。留空则会显示为“层 7”。
+Optional name for the 3D navigation layer 7. If left empty, the layer will display as "Layer 7".
 
 .. rst-class:: classref-item-separator
 
@@ -8579,7 +8579,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_8** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_8>`
 
-3D 导航层 8 的可选名称。留空则会显示为“层 8”。
+Optional name for the 3D navigation layer 8. If left empty, the layer will display as "Layer 8".
 
 .. rst-class:: classref-item-separator
 
@@ -8591,7 +8591,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_9** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_9>`
 
-3D 导航层 9 的可选名称。留空则会显示为“层 9”。
+Optional name for the 3D navigation layer 9. If left empty, the layer will display as "Layer 9".
 
 .. rst-class:: classref-item-separator
 
@@ -8603,7 +8603,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_10** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_10>`
 
-3D 导航层 10 的可选名称。留空则会显示为“层 10”。
+Optional name for the 3D navigation layer 10. If left empty, the layer will display as "Layer 10".
 
 .. rst-class:: classref-item-separator
 
@@ -8615,7 +8615,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_11** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_11>`
 
-3D 导航层 11 的可选名称。留空则会显示为“层 11”。
+Optional name for the 3D navigation layer 11. If left empty, the layer will display as "Layer 11".
 
 .. rst-class:: classref-item-separator
 
@@ -8627,7 +8627,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_12** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_12>`
 
-3D 导航层 12 的可选名称。留空则会显示为“层 12”。
+Optional name for the 3D navigation layer 12. If left empty, the layer will display as "Layer 12".
 
 .. rst-class:: classref-item-separator
 
@@ -8639,7 +8639,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_13** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_13>`
 
-3D 导航层 13 的可选名称。留空则会显示为“层 13”。
+Optional name for the 3D navigation layer 13. If left empty, the layer will display as "Layer 13".
 
 .. rst-class:: classref-item-separator
 
@@ -8651,7 +8651,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_14** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_14>`
 
-3D 导航层 14 的可选名称。留空则会显示为“层 14”。
+Optional name for the 3D navigation layer 14. If left empty, the layer will display as "Layer 14".
 
 .. rst-class:: classref-item-separator
 
@@ -8663,7 +8663,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_15** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_15>`
 
-3D 导航层 15 的可选名称。留空则会显示为“层 15”。
+Optional name for the 3D navigation layer 15. If left empty, the layer will display as "Layer 15".
 
 .. rst-class:: classref-item-separator
 
@@ -8675,7 +8675,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_16** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_16>`
 
-3D 导航层 16 的可选名称。留空则会显示为“层 16”。
+Optional name for the 3D navigation layer 16. If left empty, the layer will display as "Layer 16".
 
 .. rst-class:: classref-item-separator
 
@@ -8687,7 +8687,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_17** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_17>`
 
-3D 导航层 17 的可选名称。留空则会显示为“层 17”。
+Optional name for the 3D navigation layer 17. If left empty, the layer will display as "Layer 17".
 
 .. rst-class:: classref-item-separator
 
@@ -8699,7 +8699,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_18** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_18>`
 
-3D 导航层 18 的可选名称。留空则会显示为“层 18”。
+Optional name for the 3D navigation layer 18. If left empty, the layer will display as "Layer 18".
 
 .. rst-class:: classref-item-separator
 
@@ -8711,7 +8711,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_19** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_19>`
 
-3D 导航层 19 的可选名称。留空则会显示为“层 19”。
+Optional name for the 3D navigation layer 19. If left empty, the layer will display as "Layer 19".
 
 .. rst-class:: classref-item-separator
 
@@ -8723,7 +8723,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_20** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_20>`
 
-3D 导航层 20 的可选名称。留空则会显示为“层 20”。
+Optional name for the 3D navigation layer 20. If left empty, the layer will display as "Layer 20".
 
 .. rst-class:: classref-item-separator
 
@@ -8735,7 +8735,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_21** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_21>`
 
-3D 导航层 21 的可选名称。留空则会显示为“层 21”。
+Optional name for the 3D navigation layer 21. If left empty, the layer will display as "Layer 21".
 
 .. rst-class:: classref-item-separator
 
@@ -8747,7 +8747,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_22** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_22>`
 
-3D 导航层 22 的可选名称。留空则会显示为“层 22”。
+Optional name for the 3D navigation layer 22. If left empty, the layer will display as "Layer 22".
 
 .. rst-class:: classref-item-separator
 
@@ -8759,7 +8759,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_23** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_23>`
 
-3D 导航层 23 的可选名称。留空则会显示为“层 23”。
+Optional name for the 3D navigation layer 23. If left empty, the layer will display as "Layer 23".
 
 .. rst-class:: classref-item-separator
 
@@ -8771,7 +8771,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_24** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_24>`
 
-3D 导航层 24 的可选名称。留空则会显示为“层 24”。
+Optional name for the 3D navigation layer 24. If left empty, the layer will display as "Layer 24".
 
 .. rst-class:: classref-item-separator
 
@@ -8783,7 +8783,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_25** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_25>`
 
-3D 导航层 25 的可选名称。留空则会显示为“层 25”。
+Optional name for the 3D navigation layer 25. If left empty, the layer will display as "Layer 25".
 
 .. rst-class:: classref-item-separator
 
@@ -8795,7 +8795,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_26** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_26>`
 
-3D 导航层 26 的可选名称。留空则会显示为“层 26”。
+Optional name for the 3D navigation layer 26. If left empty, the layer will display as "Layer 26".
 
 .. rst-class:: classref-item-separator
 
@@ -8807,7 +8807,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_27** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_27>`
 
-3D 导航层 27 的可选名称。留空则会显示为“层 27”。
+Optional name for the 3D navigation layer 27. If left empty, the layer will display as "Layer 27".
 
 .. rst-class:: classref-item-separator
 
@@ -8819,7 +8819,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_28** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_28>`
 
-3D 导航层 28 的可选名称。留空则会显示为“层 28”。
+Optional name for the 3D navigation layer 28. If left empty, the layer will display as "Layer 28".
 
 .. rst-class:: classref-item-separator
 
@@ -8831,7 +8831,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_29** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_29>`
 
-3D 导航层 29 的可选名称。留空则会显示为“层 29”。
+Optional name for the 3D navigation layer 29. If left empty, the layer will display as "Layer 29".
 
 .. rst-class:: classref-item-separator
 
@@ -8843,7 +8843,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_30** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_30>`
 
-3D 导航层 30 的可选名称。留空则会显示为“层 30”。
+Optional name for the 3D navigation layer 30. If left empty, the layer will display as "Layer 30".
 
 .. rst-class:: classref-item-separator
 
@@ -8855,7 +8855,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_31** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_31>`
 
-3D 导航层 31 的可选名称。留空则会显示为“层 31”。
+Optional name for the 3D navigation layer 31. If left empty, the layer will display as "Layer 31".
 
 .. rst-class:: classref-item-separator
 
@@ -8867,7 +8867,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_navigation/layer_32** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_navigation/layer_32>`
 
-3D 导航层 32 的可选名称。留空则会显示为“层 32”。
+Optional name for the 3D navigation layer 32. If left empty, the layer will display as "Layer 32".
 
 .. rst-class:: classref-item-separator
 
@@ -8879,7 +8879,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_1** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_1>`
 
-3D 物理层 1 的可选名称。留空则会显示为“层 1”。
+Optional name for the 3D physics layer 1. If left empty, the layer will display as "Layer 1".
 
 .. rst-class:: classref-item-separator
 
@@ -8891,7 +8891,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_2** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_2>`
 
-3D 物理层 2 的可选名称。留空则会显示为“层 2”。
+Optional name for the 3D physics layer 2. If left empty, the layer will display as "Layer 2".
 
 .. rst-class:: classref-item-separator
 
@@ -8903,7 +8903,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_3** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_3>`
 
-3D 物理层 3 的可选名称。留空则会显示为“层 3”。
+Optional name for the 3D physics layer 3. If left empty, the layer will display as "Layer 3".
 
 .. rst-class:: classref-item-separator
 
@@ -8915,7 +8915,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_4** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_4>`
 
-3D 物理层 4 的可选名称。留空则会显示为“层 4”。
+Optional name for the 3D physics layer 4. If left empty, the layer will display as "Layer 4".
 
 .. rst-class:: classref-item-separator
 
@@ -8927,7 +8927,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_5** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_5>`
 
-3D 物理层 5 的可选名称。留空则会显示为“层 5”。
+Optional name for the 3D physics layer 5. If left empty, the layer will display as "Layer 5".
 
 .. rst-class:: classref-item-separator
 
@@ -8939,7 +8939,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_6** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_6>`
 
-3D 物理层 6 的可选名称。留空则会显示为“层 6”。
+Optional name for the 3D physics layer 6. If left empty, the layer will display as "Layer 6".
 
 .. rst-class:: classref-item-separator
 
@@ -8951,7 +8951,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_7** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_7>`
 
-3D 物理层 7 的可选名称。留空则会显示为“层 7”。
+Optional name for the 3D physics layer 7. If left empty, the layer will display as "Layer 7".
 
 .. rst-class:: classref-item-separator
 
@@ -8963,7 +8963,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_8** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_8>`
 
-3D 物理层 8 的可选名称。留空则会显示为“层 8”。
+Optional name for the 3D physics layer 8. If left empty, the layer will display as "Layer 8".
 
 .. rst-class:: classref-item-separator
 
@@ -8975,7 +8975,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_9** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_9>`
 
-3D 物理层 9 的可选名称。留空则会显示为“层 9”。
+Optional name for the 3D physics layer 9. If left empty, the layer will display as "Layer 9".
 
 .. rst-class:: classref-item-separator
 
@@ -8987,7 +8987,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_10** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_10>`
 
-3D 物理层 10 的可选名称。留空则会显示为“层 10”。
+Optional name for the 3D physics layer 10. If left empty, the layer will display as "Layer 10".
 
 .. rst-class:: classref-item-separator
 
@@ -8999,7 +8999,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_11** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_11>`
 
-3D 物理层 11 的可选名称。留空则会显示为“层 11”。
+Optional name for the 3D physics layer 11. If left empty, the layer will display as "Layer 11".
 
 .. rst-class:: classref-item-separator
 
@@ -9011,7 +9011,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_12** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_12>`
 
-3D 物理层 12 的可选名称。留空则会显示为“层 12”。
+Optional name for the 3D physics layer 12. If left empty, the layer will display as "Layer 12".
 
 .. rst-class:: classref-item-separator
 
@@ -9023,7 +9023,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_13** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_13>`
 
-3D 物理层 13 的可选名称。留空则会显示为“层 13”。
+Optional name for the 3D physics layer 13. If left empty, the layer will display as "Layer 13".
 
 .. rst-class:: classref-item-separator
 
@@ -9035,7 +9035,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_14** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_14>`
 
-3D 物理层 14 的可选名称。留空则会显示为“层 14”。
+Optional name for the 3D physics layer 14. If left empty, the layer will display as "Layer 14".
 
 .. rst-class:: classref-item-separator
 
@@ -9047,7 +9047,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_15** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_15>`
 
-3D 物理层 15 的可选名称。留空则会显示为“层 15”。
+Optional name for the 3D physics layer 15. If left empty, the layer will display as "Layer 15".
 
 .. rst-class:: classref-item-separator
 
@@ -9059,7 +9059,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_16** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_16>`
 
-3D 物理层 16 的可选名称。留空则会显示为“层 16”。
+Optional name for the 3D physics layer 16. If left empty, the layer will display as "Layer 16".
 
 .. rst-class:: classref-item-separator
 
@@ -9071,7 +9071,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_17** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_17>`
 
-3D 物理层 17 的可选名称。留空则会显示为“层 17”。
+Optional name for the 3D physics layer 17. If left empty, the layer will display as "Layer 17".
 
 .. rst-class:: classref-item-separator
 
@@ -9083,7 +9083,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_18** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_18>`
 
-3D 物理层 18 的可选名称。留空则会显示为“层 18”。
+Optional name for the 3D physics layer 18. If left empty, the layer will display as "Layer 18".
 
 .. rst-class:: classref-item-separator
 
@@ -9095,7 +9095,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_19** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_19>`
 
-3D 物理层 19 的可选名称。留空则会显示为“层 19”。
+Optional name for the 3D physics layer 19. If left empty, the layer will display as "Layer 19".
 
 .. rst-class:: classref-item-separator
 
@@ -9107,7 +9107,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_20** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_20>`
 
-3D 物理层 20 的可选名称。留空则会显示为“层 20”。
+Optional name for the 3D physics layer 20. If left empty, the layer will display as "Layer 20".
 
 .. rst-class:: classref-item-separator
 
@@ -9119,7 +9119,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_21** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_21>`
 
-3D 物理层 21 的可选名称。留空则会显示为“层 21”。
+Optional name for the 3D physics layer 21. If left empty, the layer will display as "Layer 21".
 
 .. rst-class:: classref-item-separator
 
@@ -9131,7 +9131,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_22** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_22>`
 
-3D 物理层 22 的可选名称。留空则会显示为“层 22”。
+Optional name for the 3D physics layer 22. If left empty, the layer will display as "Layer 22".
 
 .. rst-class:: classref-item-separator
 
@@ -9143,7 +9143,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_23** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_23>`
 
-3D 物理层 23 的可选名称。留空则会显示为“层 23”。
+Optional name for the 3D physics layer 23. If left empty, the layer will display as "Layer 23".
 
 .. rst-class:: classref-item-separator
 
@@ -9155,7 +9155,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_24** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_24>`
 
-3D 物理层 24 的可选名称。留空则会显示为“层 24”。
+Optional name for the 3D physics layer 24. If left empty, the layer will display as "Layer 24".
 
 .. rst-class:: classref-item-separator
 
@@ -9167,7 +9167,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_25** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_25>`
 
-3D 物理层 25 的可选名称。留空则会显示为“层 25”。
+Optional name for the 3D physics layer 25. If left empty, the layer will display as "Layer 25".
 
 .. rst-class:: classref-item-separator
 
@@ -9179,7 +9179,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_26** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_26>`
 
-3D 物理层 26 的可选名称。留空则会显示为“层 26”。
+Optional name for the 3D physics layer 26. If left empty, the layer will display as "Layer 26".
 
 .. rst-class:: classref-item-separator
 
@@ -9191,7 +9191,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_27** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_27>`
 
-3D 物理层 27 的可选名称。留空则会显示为“层 27”。
+Optional name for the 3D physics layer 27. If left empty, the layer will display as "Layer 27".
 
 .. rst-class:: classref-item-separator
 
@@ -9203,7 +9203,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_28** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_28>`
 
-3D 物理层 28 的可选名称。留空则会显示为“层 28”。
+Optional name for the 3D physics layer 28. If left empty, the layer will display as "Layer 28".
 
 .. rst-class:: classref-item-separator
 
@@ -9215,7 +9215,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_29** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_29>`
 
-3D 物理层 29 的可选名称。留空则会显示为“层 29”。
+Optional name for the 3D physics layer 29. If left empty, the layer will display as "Layer 29".
 
 .. rst-class:: classref-item-separator
 
@@ -9227,7 +9227,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_30** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_30>`
 
-3D 物理层 30 的可选名称。留空则会显示为“层 30”。
+Optional name for the 3D physics layer 30. If left empty, the layer will display as "Layer 30".
 
 .. rst-class:: classref-item-separator
 
@@ -9239,7 +9239,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_31** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_31>`
 
-3D 物理层 31 的可选名称。留空则会显示为“层 31”。
+Optional name for the 3D physics layer 31. If left empty, the layer will display as "Layer 31".
 
 .. rst-class:: classref-item-separator
 
@@ -9251,7 +9251,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_physics/layer_32** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_physics/layer_32>`
 
-3D 物理层 32 的可选名称。留空则会显示为“层 32”。
+Optional name for the 3D physics layer 32. If left empty, the layer will display as "Layer 32".
 
 .. rst-class:: classref-item-separator
 
@@ -9263,7 +9263,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_1** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_1>`
 
-3D 渲染层 1 的可选名称。留空则会显示为“层 1”。
+Optional name for the 3D render layer 1. If left empty, the layer will display as "Layer 1".
 
 .. rst-class:: classref-item-separator
 
@@ -9275,7 +9275,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_2** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_2>`
 
-3D 渲染层 2 的可选名称。留空则会显示为“层 2”。
+Optional name for the 3D render layer 2. If left empty, the layer will display as "Layer 2".
 
 .. rst-class:: classref-item-separator
 
@@ -9287,7 +9287,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_3** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_3>`
 
-3D 渲染层 3 的可选名称。留空则会显示为“层 3”。
+Optional name for the 3D render layer 3. If left empty, the layer will display as "Layer 3".
 
 .. rst-class:: classref-item-separator
 
@@ -9299,7 +9299,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_4** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_4>`
 
-3D 渲染层 4 的可选名称。留空则会显示为“层 4”。
+Optional name for the 3D render layer 4. If left empty, the layer will display as "Layer 4".
 
 .. rst-class:: classref-item-separator
 
@@ -9311,7 +9311,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_5** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_5>`
 
-3D 渲染层 5 的可选名称。留空则会显示为“层 5”。
+Optional name for the 3D render layer 5. If left empty, the layer will display as "Layer 5".
 
 .. rst-class:: classref-item-separator
 
@@ -9323,7 +9323,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_6** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_6>`
 
-3D 渲染层 6 的可选名称。留空则会显示为“层 6”。
+Optional name for the 3D render layer 6. If left empty, the layer will display as "Layer 6".
 
 .. rst-class:: classref-item-separator
 
@@ -9335,7 +9335,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_7** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_7>`
 
-3D 渲染层 7 的可选名称。留空则会显示为“层 7”。
+Optional name for the 3D render layer 7. If left empty, the layer will display as "Layer 7".
 
 .. rst-class:: classref-item-separator
 
@@ -9347,7 +9347,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_8** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_8>`
 
-3D 渲染层 8 的可选名称。留空则会显示为“层 8”。
+Optional name for the 3D render layer 8. If left empty, the layer will display as "Layer 8".
 
 .. rst-class:: classref-item-separator
 
@@ -9359,7 +9359,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_9** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_9>`
 
-3D 渲染层 9 的可选名称。留空则会显示为“层 9”。
+Optional name for the 3D render layer 9. If left empty, the layer will display as "Layer 9".
 
 .. rst-class:: classref-item-separator
 
@@ -9371,7 +9371,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_10** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_10>`
 
-3D 渲染层 10 的可选名称。留空则会显示为“层 10”。
+Optional name for the 3D render layer 10. If left empty, the layer will display as "Layer 10".
 
 .. rst-class:: classref-item-separator
 
@@ -9383,7 +9383,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_11** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_11>`
 
-3D 渲染层 11 的可选名称。留空则会显示为“层 11”。
+Optional name for the 3D render layer 11. If left empty, the layer will display as "Layer 11".
 
 .. rst-class:: classref-item-separator
 
@@ -9395,7 +9395,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_12** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_12>`
 
-3D 渲染层 12 的可选名称。留空则会显示为“层 12”。
+Optional name for the 3D render layer 12. If left empty, the layer will display as "Layer 12".
 
 .. rst-class:: classref-item-separator
 
@@ -9407,7 +9407,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_13** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_13>`
 
-3D 渲染层 13 的可选名称。留空则会显示为“层 13”。
+Optional name for the 3D render layer 13. If left empty, the layer will display as "Layer 13".
 
 .. rst-class:: classref-item-separator
 
@@ -9419,7 +9419,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_14** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_14>`
 
-3D 渲染层 14 的可选名称。留空则会显示为“层 14”。
+Optional name for the 3D render layer 14. If left empty, the layer will display as "Layer 14".
 
 .. rst-class:: classref-item-separator
 
@@ -9431,7 +9431,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_15** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_15>`
 
-3D 渲染层 15 的可选名称。留空则会显示为“层 15”。
+Optional name for the 3D render layer 15. If left empty, the layer will display as "Layer 15".
 
 .. rst-class:: classref-item-separator
 
@@ -9443,7 +9443,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_16** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_16>`
 
-3D 渲染层 16 的可选名称。留空则会显示为“层 16”。
+Optional name for the 3D render layer 16. If left empty, the layer will display as "Layer 16".
 
 .. rst-class:: classref-item-separator
 
@@ -9455,7 +9455,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_17** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_17>`
 
-3D 渲染层 17 的可选名称。留空则会显示为“层 17”。
+Optional name for the 3D render layer 17. If left empty, the layer will display as "Layer 17".
 
 .. rst-class:: classref-item-separator
 
@@ -9467,7 +9467,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_18** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_18>`
 
-3D 渲染层 18 的可选名称。留空则会显示为“层 18”。
+Optional name for the 3D render layer 18. If left empty, the layer will display as "Layer 18".
 
 .. rst-class:: classref-item-separator
 
@@ -9479,7 +9479,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_19** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_19>`
 
-3D 渲染层 19 的可选名称。留空则会显示为“层 19”。
+Optional name for the 3D render layer 19. If left empty, the layer will display as "Layer 19".
 
 .. rst-class:: classref-item-separator
 
@@ -9491,7 +9491,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_20** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_20>`
 
-3D 渲染层 20 的可选名称。留空则会显示为“层 20”。
+Optional name for the 3D render layer 20. If left empty, the layer will display as "Layer 20".
 
 .. rst-class:: classref-item-separator
 
@@ -9503,7 +9503,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_1** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_1>`
 
-导航避障层 1 的可选名称。留空则会显示为“层 1”。
+Optional name for the navigation avoidance layer 1. If left empty, the layer will display as "Layer 1".
 
 .. rst-class:: classref-item-separator
 
@@ -9515,7 +9515,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_2** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_2>`
 
-导航避障层 2 的可选名称。留空则会显示为“层 2”。
+Optional name for the navigation avoidance layer 2. If left empty, the layer will display as "Layer 2".
 
 .. rst-class:: classref-item-separator
 
@@ -9527,7 +9527,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_3** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_3>`
 
-导航避障层 3 的可选名称。留空则会显示为“层 3”。
+Optional name for the navigation avoidance layer 3. If left empty, the layer will display as "Layer 3".
 
 .. rst-class:: classref-item-separator
 
@@ -9539,7 +9539,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_4** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_4>`
 
-导航避障层 4 的可选名称。留空则会显示为“层 4”。
+Optional name for the navigation avoidance layer 4. If left empty, the layer will display as "Layer 4".
 
 .. rst-class:: classref-item-separator
 
@@ -9551,7 +9551,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_5** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_5>`
 
-导航避障层 5 的可选名称。留空则会显示为“层 5”。
+Optional name for the navigation avoidance layer 5. If left empty, the layer will display as "Layer 5".
 
 .. rst-class:: classref-item-separator
 
@@ -9563,7 +9563,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_6** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_6>`
 
-导航避障层 6 的可选名称。留空则会显示为“层 6”。
+Optional name for the navigation avoidance layer 6. If left empty, the layer will display as "Layer 6".
 
 .. rst-class:: classref-item-separator
 
@@ -9575,7 +9575,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_7** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_7>`
 
-导航避障层 7 的可选名称。留空则会显示为“层 7”。
+Optional name for the navigation avoidance layer 7. If left empty, the layer will display as "Layer 7".
 
 .. rst-class:: classref-item-separator
 
@@ -9587,7 +9587,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_8** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_8>`
 
-导航避障层 8 的可选名称。留空则会显示为“层 8”。
+Optional name for the navigation avoidance layer 8. If left empty, the layer will display as "Layer 8".
 
 .. rst-class:: classref-item-separator
 
@@ -9599,7 +9599,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_9** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_9>`
 
-导航避障层 9 的可选名称。留空则会显示为“层 9”。
+Optional name for the navigation avoidance layer 9. If left empty, the layer will display as "Layer 9".
 
 .. rst-class:: classref-item-separator
 
@@ -9611,7 +9611,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_10** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_10>`
 
-导航避障层 10 的可选名称。留空则会显示为“层 10”。
+Optional name for the navigation avoidance layer 10. If left empty, the layer will display as "Layer 10".
 
 .. rst-class:: classref-item-separator
 
@@ -9623,7 +9623,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_11** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_11>`
 
-导航避障层 11 的可选名称。留空则会显示为“层 11”。
+Optional name for the navigation avoidance layer 11. If left empty, the layer will display as "Layer 11".
 
 .. rst-class:: classref-item-separator
 
@@ -9635,7 +9635,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_12** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_12>`
 
-导航避障层 12 的可选名称。留空则会显示为“层 12”。
+Optional name for the navigation avoidance layer 12. If left empty, the layer will display as "Layer 12".
 
 .. rst-class:: classref-item-separator
 
@@ -9647,7 +9647,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_13** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_13>`
 
-导航避障层 13 的可选名称。留空则会显示为“层 13”。
+Optional name for the navigation avoidance layer 13. If left empty, the layer will display as "Layer 13".
 
 .. rst-class:: classref-item-separator
 
@@ -9659,7 +9659,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_14** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_14>`
 
-导航避障层 14 的可选名称。留空则会显示为“层 14”。
+Optional name for the navigation avoidance layer 14. If left empty, the layer will display as "Layer 14".
 
 .. rst-class:: classref-item-separator
 
@@ -9671,7 +9671,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_15** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_15>`
 
-导航避障层 15 的可选名称。留空则会显示为“层 15”。
+Optional name for the navigation avoidance layer 15. If left empty, the layer will display as "Layer 15".
 
 .. rst-class:: classref-item-separator
 
@@ -9683,7 +9683,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_16** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_16>`
 
-导航避障层 16 的可选名称。留空则会显示为“层 16”。
+Optional name for the navigation avoidance layer 16. If left empty, the layer will display as "Layer 16".
 
 .. rst-class:: classref-item-separator
 
@@ -9695,7 +9695,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_17** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_17>`
 
-导航避障层 17 的可选名称。留空则会显示为“层 17”。
+Optional name for the navigation avoidance layer 17. If left empty, the layer will display as "Layer 17".
 
 .. rst-class:: classref-item-separator
 
@@ -9707,7 +9707,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_18** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_18>`
 
-导航避障层 18 的可选名称。留空则会显示为“层 18”。
+Optional name for the navigation avoidance layer 18. If left empty, the layer will display as "Layer 18".
 
 .. rst-class:: classref-item-separator
 
@@ -9719,7 +9719,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_19** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_19>`
 
-导航避障层 19 的可选名称。留空则会显示为“层 19”。
+Optional name for the navigation avoidance layer 19. If left empty, the layer will display as "Layer 19".
 
 .. rst-class:: classref-item-separator
 
@@ -9731,7 +9731,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_20** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_20>`
 
-导航避障层 20 的可选名称。留空则会显示为“层 20”。
+Optional name for the navigation avoidance layer 20. If left empty, the layer will display as "Layer 20".
 
 .. rst-class:: classref-item-separator
 
@@ -9743,7 +9743,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_21** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_21>`
 
-导航避障层 21 的可选名称。留空则会显示为“层 21”。
+Optional name for the navigation avoidance layer 21. If left empty, the layer will display as "Layer 21".
 
 .. rst-class:: classref-item-separator
 
@@ -9755,7 +9755,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_22** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_22>`
 
-导航避障层 22 的可选名称。留空则会显示为“层 22”。
+Optional name for the navigation avoidance layer 22. If left empty, the layer will display as "Layer 22".
 
 .. rst-class:: classref-item-separator
 
@@ -9767,7 +9767,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_23** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_23>`
 
-导航避障层 23 的可选名称。留空则会显示为“层 23”。
+Optional name for the navigation avoidance layer 23. If left empty, the layer will display as "Layer 23".
 
 .. rst-class:: classref-item-separator
 
@@ -9779,7 +9779,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_24** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_24>`
 
-导航避障层 24 的可选名称。留空则会显示为“层 24”。
+Optional name for the navigation avoidance layer 24. If left empty, the layer will display as "Layer 24".
 
 .. rst-class:: classref-item-separator
 
@@ -9791,7 +9791,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_25** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_25>`
 
-导航避障层 25 的可选名称。留空则会显示为“层 25”。
+Optional name for the navigation avoidance layer 25. If left empty, the layer will display as "Layer 25".
 
 .. rst-class:: classref-item-separator
 
@@ -9803,7 +9803,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_26** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_26>`
 
-导航避障层 26 的可选名称。留空则会显示为“层 26”。
+Optional name for the navigation avoidance layer 26. If left empty, the layer will display as "Layer 26".
 
 .. rst-class:: classref-item-separator
 
@@ -9815,7 +9815,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_27** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_27>`
 
-导航避障层 27 的可选名称。留空则会显示为“层 27”。
+Optional name for the navigation avoidance layer 27. If left empty, the layer will display as "Layer 27".
 
 .. rst-class:: classref-item-separator
 
@@ -9827,7 +9827,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_28** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_28>`
 
-导航避障层 28 的可选名称。留空则会显示为“层 28”。
+Optional name for the navigation avoidance layer 28. If left empty, the layer will display as "Layer 28".
 
 .. rst-class:: classref-item-separator
 
@@ -9839,7 +9839,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_29** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_29>`
 
-导航避障层 29 的可选名称。留空则会显示为“层 29”。
+Optional name for the navigation avoidance layer 29. If left empty, the layer will display as "Layer 29".
 
 .. rst-class:: classref-item-separator
 
@@ -9851,7 +9851,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_30** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_30>`
 
-导航避障层 30 的可选名称。留空则会显示为“层 30”。
+Optional name for the navigation avoidance layer 30. If left empty, the layer will display as "Layer 30".
 
 .. rst-class:: classref-item-separator
 
@@ -9863,7 +9863,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_31** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_31>`
 
-导航避障层 31 的可选名称。留空则会显示为“层 31”。
+Optional name for the navigation avoidance layer 31. If left empty, the layer will display as "Layer 31".
 
 .. rst-class:: classref-item-separator
 
@@ -9875,7 +9875,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_32** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_32>`
 
-导航避障层 32 的可选名称。留空则会显示为“层 32”。
+Optional name for the navigation avoidance layer 32. If left empty, the layer will display as "Layer 32".
 
 .. rst-class:: classref-item-separator
 
@@ -9887,7 +9887,7 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`int<class_int>` **memory/limits/message_queue/max_size_mb** = ``32`` :ref:`🔗<class_ProjectSettings_property_memory/limits/message_queue/max_size_mb>`
 
-Godot 使用一个消息队列来延迟一些函数调用。如果你的空间用完了（你会看到一个错误），你可以在这里增加大小。
+Godot uses a message queue to defer some function calls. If you run out of space on it (you will see an error), you can increase the size here.
 
 .. rst-class:: classref-item-separator
 
@@ -9899,7 +9899,7 @@ Godot 使用一个消息队列来延迟一些函数调用。如果你的空间�
 
 :ref:`float<class_float>` **navigation/2d/default_cell_size** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/default_cell_size>`
 
-2D 导航地图的默认单元格大小。见 :ref:`NavigationServer2D.map_set_cell_size()<class_NavigationServer2D_method_map_set_cell_size>`\ 。
+Default cell size for 2D navigation maps. See :ref:`NavigationServer2D.map_set_cell_size()<class_NavigationServer2D_method_map_set_cell_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9911,7 +9911,7 @@ Godot 使用一个消息队列来延迟一些函数调用。如果你的空间�
 
 :ref:`float<class_float>` **navigation/2d/default_edge_connection_margin** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/default_edge_connection_margin>`
 
-2D 导航地图的默认边界链接边距。见 :ref:`NavigationServer2D.map_set_edge_connection_margin()<class_NavigationServer2D_method_map_set_edge_connection_margin>`\ 。
+Default edge connection margin for 2D navigation maps. See :ref:`NavigationServer2D.map_set_edge_connection_margin()<class_NavigationServer2D_method_map_set_edge_connection_margin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9923,7 +9923,7 @@ Godot 使用一个消息队列来延迟一些函数调用。如果你的空间�
 
 :ref:`float<class_float>` **navigation/2d/default_link_connection_radius** = ``4.0`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/default_link_connection_radius>`
 
-2D 导航地图的默认链接连接半径。见 :ref:`NavigationServer2D.map_set_link_connection_radius()<class_NavigationServer2D_method_map_set_link_connection_radius>`\ 。
+Default link connection radius for 2D navigation maps. See :ref:`NavigationServer2D.map_set_link_connection_radius()<class_NavigationServer2D_method_map_set_link_connection_radius>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9935,7 +9935,7 @@ Godot 使用一个消息队列来延迟一些函数调用。如果你的空间�
 
 :ref:`float<class_float>` **navigation/2d/merge_rasterizer_cell_scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/merge_rasterizer_cell_scale>`
 
-2D 导航地图的默认合并光栅化单元格缩放。见 :ref:`NavigationServer2D.map_set_merge_rasterizer_cell_scale()<class_NavigationServer2D_method_map_set_merge_rasterizer_cell_scale>`\ 。
+Default merge rasterizer cell scale for 2D navigation maps. See :ref:`NavigationServer2D.map_set_merge_rasterizer_cell_scale()<class_NavigationServer2D_method_map_set_merge_rasterizer_cell_scale>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9967,7 +9967,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`bool<class_bool>` **navigation/2d/use_edge_connections** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/use_edge_connections>`
 
-如果启用，则 2D 导航地区会使用边缘连接来连接其他导航地区，使用的是导航地图边缘连接边距。这项设置只会影响 World2D 的默认导航地图。
+If enabled 2D navigation regions will use edge connections to connect with other navigation regions within proximity of the navigation map edge connection margin. This setting only affects World2D default navigation maps.
 
 .. rst-class:: classref-item-separator
 
@@ -9979,7 +9979,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`bool<class_bool>` **navigation/2d/warnings/navmesh_cell_size_mismatch** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/warnings/navmesh_cell_size_mismatch>`
 
-如果 ``true``\ ，当在单元尺寸更大的导航地图上使用小单元尺寸的导航网格时，导航系统会打印警告，因为这通常会导致光栅化错误。
+If ``true``, the navigation system will print warnings when a navigation mesh with a small cell size is used on a navigation map with a larger size as this commonly causes rasterization errors.
 
 .. rst-class:: classref-item-separator
 
@@ -9991,7 +9991,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`bool<class_bool>` **navigation/2d/warnings/navmesh_edge_merge_errors** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/warnings/navmesh_edge_merge_errors>`
 
-如果 ``true``\ ，导航系统将在导航区域或地图中出现导航网格边缘合并错误时打印警告。
+If ``true``, the navigation system will print warnings about navigation mesh edge merge errors occurring in navigation regions or maps.
 
 .. rst-class:: classref-item-separator
 
@@ -10003,7 +10003,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`float<class_float>` **navigation/3d/default_cell_height** = ``0.25`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/default_cell_height>`
 
-3D 导航地图的默认单元格高度。见 :ref:`NavigationServer3D.map_set_cell_height()<class_NavigationServer3D_method_map_set_cell_height>`\ 。
+Default cell height for 3D navigation maps. See :ref:`NavigationServer3D.map_set_cell_height()<class_NavigationServer3D_method_map_set_cell_height>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10015,7 +10015,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`float<class_float>` **navigation/3d/default_cell_size** = ``0.25`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/default_cell_size>`
 
-3D 导航地图的默认单元格大小。见 :ref:`NavigationServer3D.map_set_cell_size()<class_NavigationServer3D_method_map_set_cell_size>`\ 。
+Default cell size for 3D navigation maps. See :ref:`NavigationServer3D.map_set_cell_size()<class_NavigationServer3D_method_map_set_cell_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10027,7 +10027,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`float<class_float>` **navigation/3d/default_edge_connection_margin** = ``0.25`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/default_edge_connection_margin>`
 
-3D 导航地图的默认边界链接边距。见 :ref:`NavigationServer3D.map_set_edge_connection_margin()<class_NavigationServer3D_method_map_set_edge_connection_margin>`\ 。
+Default edge connection margin for 3D navigation maps. See :ref:`NavigationServer3D.map_set_edge_connection_margin()<class_NavigationServer3D_method_map_set_edge_connection_margin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10039,7 +10039,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`float<class_float>` **navigation/3d/default_link_connection_radius** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/default_link_connection_radius>`
 
-3D 导航地图的默认链接连接半径。见 :ref:`NavigationServer3D.map_set_link_connection_radius()<class_NavigationServer3D_method_map_set_link_connection_radius>`\ 。
+Default link connection radius for 3D navigation maps. See :ref:`NavigationServer3D.map_set_link_connection_radius()<class_NavigationServer3D_method_map_set_link_connection_radius>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10051,7 +10051,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`Vector3<class_Vector3>` **navigation/3d/default_up** = ``Vector3(0, 1, 0)`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/default_up>`
 
-3D 导航地图的默认上方向。见 :ref:`NavigationServer3D.map_set_up()<class_NavigationServer3D_method_map_set_up>`\ 。
+Default up orientation for 3D navigation maps. See :ref:`NavigationServer3D.map_set_up()<class_NavigationServer3D_method_map_set_up>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10063,7 +10063,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`float<class_float>` **navigation/3d/merge_rasterizer_cell_scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/merge_rasterizer_cell_scale>`
 
-3D 导航地图的默认合并光栅化单元格缩放。请参阅 :ref:`NavigationServer3D.map_set_merge_rasterizer_cell_scale()<class_NavigationServer3D_method_map_set_merge_rasterizer_cell_scale>`\ 。
+Default merge rasterizer cell scale for 3D navigation maps. See :ref:`NavigationServer3D.map_set_merge_rasterizer_cell_scale()<class_NavigationServer3D_method_map_set_merge_rasterizer_cell_scale>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10095,7 +10095,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`bool<class_bool>` **navigation/3d/use_edge_connections** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/use_edge_connections>`
 
-如果启用，则 3D 导航地区会使用边缘连接来连接其他导航地区，使用的是导航地图边缘连接边距。这项设置只会影响 World3D 的默认导航地图。
+If enabled 3D navigation regions will use edge connections to connect with other navigation regions within proximity of the navigation map edge connection margin. This setting only affects World3D default navigation maps.
 
 .. rst-class:: classref-item-separator
 
@@ -10107,7 +10107,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`bool<class_bool>` **navigation/3d/warnings/navmesh_cell_size_mismatch** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/warnings/navmesh_cell_size_mismatch>`
 
-如果 ``true``\ ，当在单元尺寸（或 3D 高度）更大的导航地图上使用小单元尺寸的导航网格时，导航系统会打印警告，因为这通常会导致光栅化错误。
+If ``true``, the navigation system will print warnings when a navigation mesh with a small cell size (or in 3D height) is used on a navigation map with a larger size as this commonly causes rasterization errors.
 
 .. rst-class:: classref-item-separator
 
@@ -10119,7 +10119,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`bool<class_bool>` **navigation/3d/warnings/navmesh_edge_merge_errors** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/warnings/navmesh_edge_merge_errors>`
 
-如果 ``true``\ ，导航系统将在导航区域或地图中出现导航网格边缘合并错误时打印警告。
+If ``true``, the navigation system will print warnings about navigation mesh edge merge errors occurring in navigation regions or maps.
 
 .. rst-class:: classref-item-separator
 
@@ -10131,7 +10131,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`bool<class_bool>` **navigation/avoidance/thread_model/avoidance_use_high_priority_threads** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/avoidance/thread_model/avoidance_use_high_priority_threads>`
 
-如果启用，并且使用多线程进行避障计算，则执行的线程为高优先级。
+If enabled and avoidance calculations use multiple threads the threads run with high priority.
 
 .. rst-class:: classref-item-separator
 
@@ -10143,7 +10143,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`bool<class_bool>` **navigation/avoidance/thread_model/avoidance_use_multiple_threads** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/avoidance/thread_model/avoidance_use_multiple_threads>`
 
-如果启用，则会使用多线程进行避障计算。
+If enabled the avoidance calculations use multiple threads.
 
 .. rst-class:: classref-item-separator
 
@@ -10155,7 +10155,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`bool<class_bool>` **navigation/baking/thread_model/baking_use_high_priority_threads** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/baking/thread_model/baking_use_high_priority_threads>`
 
-如果启用，并且使用多线程进行异步导航网格烘焙，则执行的线程为高优先级。
+If enabled and async navmesh baking uses multiple threads the threads run with high priority.
 
 .. rst-class:: classref-item-separator
 
@@ -10167,7 +10167,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`bool<class_bool>` **navigation/baking/thread_model/baking_use_multiple_threads** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/baking/thread_model/baking_use_multiple_threads>`
 
-如果启用，则会使用多线程进行异步导航网格烘焙。
+If enabled the async navmesh baking uses multiple threads.
 
 .. rst-class:: classref-item-separator
 
@@ -10179,7 +10179,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`bool<class_bool>` **navigation/baking/use_crash_prevention_checks** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/baking/use_crash_prevention_checks>`
 
-如果启用，当烘焙可能导致引擎崩溃时，会打断烘焙并发出错误消息进行解释。
+If enabled, and baking would potentially lead to an engine crash, the baking will be interrupted and an error message with explanation will be raised.
 
 .. rst-class:: classref-item-separator
 
@@ -10191,7 +10191,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`int<class_int>` **navigation/pathfinding/max_threads** = ``4`` :ref:`🔗<class_ProjectSettings_property_navigation/pathfinding/max_threads>`
 
-在同一张寻路图上，例如同一张导航地图上，能够同时运行寻路查询的线程数量上限。线程越多，内存占用就越大，额外为每个线程准备数据副本也会导致同步时间的增加。取值为 ``-1`` 表示数量不限，使用操作系统最大可用的处理器的数量。操作系统不支持线程时默认为 ``1``\ 。
+Maximum number of threads that can run pathfinding queries simultaneously on the same pathfinding graph, for example the same navigation map. Additional threads increase memory consumption and synchronization time due to the need for extra data copies prepared for each thread. A value of ``-1`` means unlimited and the maximum available OS processor count is used. Defaults to ``1`` when the OS does not support threads.
 
 .. rst-class:: classref-item-separator
 
@@ -10203,7 +10203,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`bool<class_bool>` **navigation/world/map_use_async_iterations** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/world/map_use_async_iterations>`
 
-如果启用，导航地图的同步会在后台线程上进行异步处理。这样能够防止阻塞主线程，但是导航地图的更改都会增加额外的延迟。
+If enabled, navigation map synchronization uses an async process that runs on a background thread. This avoids stalling the main thread but adds an additional delay to any navigation map change.
 
 .. rst-class:: classref-item-separator
 
@@ -10215,7 +10215,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`bool<class_bool>` **navigation/world/region_use_async_iterations** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/world/region_use_async_iterations>`
 
-如果启用，导航区块的同步会在后台线程上进行异步处理。这样能够防止阻塞主线程，但是导航区块的更改都会增加额外的延迟。
+If enabled, navigation region synchronization uses an async process that runs on a background thread. This avoids stalling the main thread but adds an additional delay to any navigation region change.
 
 .. rst-class:: classref-item-separator
 
@@ -10227,7 +10227,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`int<class_int>` **network/limits/debugger/max_chars_per_second** = ``32768`` :ref:`🔗<class_ProjectSettings_property_network/limits/debugger/max_chars_per_second>`
 
-允许作为调试器输出发送的最大字符数。超过该值，内容将被丢弃。这有助于避免调试器的连接停滞。
+Maximum number of characters allowed to send as output from the debugger. Over this value, content is dropped. This helps not to stall the debugger connection.
 
 .. rst-class:: classref-item-separator
 
@@ -10239,7 +10239,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`int<class_int>` **network/limits/debugger/max_errors_per_second** = ``400`` :ref:`🔗<class_ProjectSettings_property_network/limits/debugger/max_errors_per_second>`
 
-允许从调试器发送的最大错误数。超过该值，内容将被丢弃。这有助于避免调试器的连接停滞。
+Maximum number of errors allowed to be sent from the debugger. Over this value, content is dropped. This helps not to stall the debugger connection.
 
 .. rst-class:: classref-item-separator
 
@@ -10251,7 +10251,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`int<class_int>` **network/limits/debugger/max_queued_messages** = ``2048`` :ref:`🔗<class_ProjectSettings_property_network/limits/debugger/max_queued_messages>`
 
-调试器队列中的最大消息数。超过该值，内容将被丢弃。这有助于限制调试器的内存使用。
+Maximum number of messages in the debugger queue. Over this value, content is dropped. This helps to limit the debugger memory usage.
 
 .. rst-class:: classref-item-separator
 
@@ -10263,7 +10263,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`int<class_int>` **network/limits/debugger/max_warnings_per_second** = ``400`` :ref:`🔗<class_ProjectSettings_property_network/limits/debugger/max_warnings_per_second>`
 
-允许从调试器发送的最大警告数。超过此值，内容将被丢弃。这有助于避免调试器的连接停滞。
+Maximum number of warnings allowed to be sent from the debugger. Over this value, content is dropped. This helps not to stall the debugger connection.
 
 .. rst-class:: classref-item-separator
 
@@ -10275,7 +10275,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`int<class_int>` **network/limits/packet_peer_stream/max_buffer_po2** = ``16`` :ref:`🔗<class_ProjectSettings_property_network/limits/packet_peer_stream/max_buffer_po2>`
 
-用于反序列化 Godot 数据的数据包对等流 (stream) 的默认大小（以字节为单位，指定为 2 的幂）。默认值 ``16`` 等于 65,536 字节。超过此大小，数据将被丢弃。
+Default size of packet peer stream for deserializing Godot data (in bytes, specified as a power of two). The default value ``16`` is equal to 65,536 bytes. Over this size, data is dropped.
 
 .. rst-class:: classref-item-separator
 
@@ -10287,7 +10287,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`int<class_int>` **network/limits/tcp/connect_timeout_seconds** = ``30`` :ref:`🔗<class_ProjectSettings_property_network/limits/tcp/connect_timeout_seconds>`
 
-使用TCP的连接尝试的超时（以秒为单位）。
+Timeout (in seconds) for connection attempts using TCP.
 
 .. rst-class:: classref-item-separator
 
@@ -10311,7 +10311,7 @@ Timeout (in seconds) for connection attempts using UNIX domain socket.
 
 :ref:`int<class_int>` **network/limits/webrtc/max_channel_in_buffer_kb** = ``64`` :ref:`🔗<class_ProjectSettings_property_network/limits/webrtc/max_channel_in_buffer_kb>`
 
-:ref:`WebRTCDataChannel<class_WebRTCDataChannel>` 输入缓冲区的最大尺寸（单位为 kiB）。
+Maximum size (in kiB) for the :ref:`WebRTCDataChannel<class_WebRTCDataChannel>` input buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -10337,9 +10337,9 @@ If in doubt, leave this setting empty.
 
 :ref:`bool<class_bool>` **network/tls/enable_tls_v1.3** = ``true`` :ref:`🔗<class_ProjectSettings_property_network/tls/enable_tls_v1.3>`
 
-如果为 ``true``\ ，则启用 TLSv1.3 协商。
+If ``true``, enable TLSv1.3 negotiation.
 
-\ **注意：**\ 仅在使用 Mbed TLS 3.0 或更高版本时支持（Linux 发行版包可能是针对较旧的系统 Mbed TLS 包编译的），否则最大支持的 TLS 版本始终为 TLSv1.2。
+\ **Note:** Only supported when using Mbed TLS 3.0 or later (Linux distribution packages may be compiled against older system Mbed TLS packages), otherwise the maximum supported TLS version is always TLSv1.2.
 
 .. rst-class:: classref-item-separator
 
@@ -10351,15 +10351,15 @@ If in doubt, leave this setting empty.
 
 :ref:`float<class_float>` **physics/2d/default_angular_damp** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_physics/2d/default_angular_damp>`
 
-默认的 2D 旋转运动阻尼。阻尼可以用来让物理对象逐渐慢下来。RigidBody 在合并自身的阻尼值时，如果没有区域阻尼，那么就会回退到这个值。
+The default rotational motion damping in 2D. Damping is used to gradually slow down physical objects over time. RigidBodies will fall back to this value when combining their own damping values and no area damping value is present.
 
-建议使用 ``0`` 到 ``30`` 之间的值。为 ``0`` 时，对象会使用相同的速度持续移动。值越大、物体停得越快。如果大于等于物理周期（\ :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`\ ），那么对象进行一次迭代就会停下来。
+Suggested values are in the range ``0`` to ``30``. At value ``0`` objects will keep moving with the same velocity. Greater values will stop the object faster. A value equal to or greater than the physics tick rate (:ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`) will bring the object to a stop in one iteration.
 
-\ **注意：**\ Godot 中的阻尼计算与速度相关，即物体移动得越快、静止所需的时间就越长，不会对惯性、摩擦力、空气阻力进行仿真。因此，较重较大的物体和较轻较小的物体会以相同的比例损失速度。
+\ **Note:** Godot damping calculations are velocity-dependent, meaning bodies moving faster will take a longer time to come to rest. They do not simulate inertia, friction, or air resistance. Therefore heavier or larger bodies will lose speed at the same proportional rate as lighter or smaller bodies.
 
-每个物理周期中，Godot 会将 RigidBody 的线速度乘以 ``1.0 - combined_damp / physics_ticks_per_second``\ 。默认情况下，物体的合并阻尼系数 ``combined_damp`` 是该物体所有阻尼值与这个值或物体所处区域阻尼值之和。见 :ref:`DampMode<enum_RigidBody2D_DampMode>`\ 。
+During each physics tick, Godot will multiply the linear velocity of RigidBodies by ``1.0 - combined_damp / physics_ticks_per_second``. By default, bodies combine damp factors: ``combined_damp`` is the sum of the damp value of the body and this value or the area's value the body is in. See :ref:`DampMode<enum_RigidBody2D_DampMode>`.
 
-\ **警告：**\ Godot 中的阻尼计算与仿真周期率相关。修改 :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` 可能对仿真的结果和感觉造成显著影响。只要是大于 0 的阻尼值都会有这种现象。要恢复此前的感觉，就需要修改阻尼值。修改多少并不成比例，需要根据实际情况调整。
+\ **Warning:** Godot's damping calculations are simulation tick rate dependent. Changing :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` may significantly change the outcomes and feel of your simulation. This is true for the entire range of damping values greater than 0. To get back to a similar feel, you also need to change your damp values. This needed change is not proportional and differs from case to case.
 
 .. rst-class:: classref-item-separator
 
@@ -10371,21 +10371,21 @@ If in doubt, leave this setting empty.
 
 :ref:`float<class_float>` **physics/2d/default_gravity** = ``980.0`` :ref:`🔗<class_ProjectSettings_property_physics/2d/default_gravity>`
 
-2D 默认重力强度（单位为像素每平方秒）。
+The default gravity strength in 2D (in pixels per second squared).
 
-\ **注意：**\ 这个属性只在项目启动时读取。要在运行时改变默认重力，请使用以下代码示例：
+\ **Note:** This property is only read when the project starts. To change the default gravity at runtime, use the following code sample:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # 将默认重力强度设置为 980。
+    # Set the default gravity strength to 980.
     PhysicsServer2D.area_set_param(get_viewport().find_world_2d().space, PhysicsServer2D.AREA_PARAM_GRAVITY, 980)
 
  .. code-tab:: csharp
 
-    // 将默认重力强度设置为 980。
+    // Set the default gravity strength to 980.
     PhysicsServer2D.AreaSetParam(GetViewport().FindWorld2D().Space, PhysicsServer2D.AreaParameter.Gravity, 980);
 
 
@@ -10400,21 +10400,21 @@ If in doubt, leave this setting empty.
 
 :ref:`Vector2<class_Vector2>` **physics/2d/default_gravity_vector** = ``Vector2(0, 1)`` :ref:`🔗<class_ProjectSettings_property_physics/2d/default_gravity_vector>`
 
-2D 默认重力方向。
+The default gravity direction in 2D.
 
-\ **注意：**\ 这个属性只在项目启动时读取。要在运行时改变默认重力向量，请使用以下代码示例：
+\ **Note:** This property is only read when the project starts. To change the default gravity vector at runtime, use the following code sample:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # 将默认整理方向设置为 `Vector2(0, 1)`。
+    # Set the default gravity direction to `Vector2(0, 1)`.
     PhysicsServer2D.area_set_param(get_viewport().find_world_2d().space, PhysicsServer2D.AREA_PARAM_GRAVITY_VECTOR, Vector2.DOWN)
 
  .. code-tab:: csharp
 
-    // 将默认整理方向设置为 `Vector2(0, 1)`。
+    // Set the default gravity direction to `Vector2(0, 1)`.
     PhysicsServer2D.AreaSetParam(GetViewport().FindWorld2D().Space, PhysicsServer2D.AreaParameter.GravityVector, Vector2.Down)
 
 
@@ -10429,15 +10429,15 @@ If in doubt, leave this setting empty.
 
 :ref:`float<class_float>` **physics/2d/default_linear_damp** = ``0.1`` :ref:`🔗<class_ProjectSettings_property_physics/2d/default_linear_damp>`
 
-默认的 2D 线性运动阻尼。阻尼可以用来让物理对象逐渐慢下来。RigidBody 在合并自身的阻尼值时，如果没有区域阻尼，那么就会回退到这个值。
+The default linear motion damping in 2D. Damping is used to gradually slow down physical objects over time. RigidBodies will fall back to this value when combining their own damping values and no area damping value is present.
 
-建议使用 ``0`` 到 ``30`` 之间的值。为 ``0`` 时，对象会使用相同的速度持续移动。值越大、物体停得越快。如果大于等于物理周期（\ :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`\ ），那么对象进行一次迭代就会停下来。
+Suggested values are in the range ``0`` to ``30``. At value ``0`` objects will keep moving with the same velocity. Greater values will stop the object faster. A value equal to or greater than the physics tick rate (:ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`) will bring the object to a stop in one iteration.
 
-\ **注意：**\ Godot 中的阻尼计算与速度相关，即物体移动得越快、静止所需的时间就越长，不会对惯性、摩擦力、空气阻力进行仿真。因此，较重较大的物体和较轻较小的物体会以相同的比例损失速度。
+\ **Note:** Godot damping calculations are velocity-dependent, meaning bodies moving faster will take a longer time to come to rest. They do not simulate inertia, friction, or air resistance. Therefore heavier or larger bodies will lose speed at the same proportional rate as lighter or smaller bodies.
 
-每个物理周期中，Godot 会将 RigidBody 的线速度乘以 ``1.0 - combined_damp / physics_ticks_per_second``\ ，其中 ``combined_damp`` 是该物体线性阻尼值与这个值或物体所处区域阻尼值之和。这些都以物体默认合并阻尼值为前提。见 :ref:`DampMode<enum_RigidBody2D_DampMode>`\ 。
+During each physics tick, Godot will multiply the linear velocity of RigidBodies by ``1.0 - combined_damp / physics_ticks_per_second``, where ``combined_damp`` is the sum of the linear damp of the body and this value, or the area's value the body is in, assuming the body defaults to combine damp values. See :ref:`DampMode<enum_RigidBody2D_DampMode>`.
 
-\ **警告：**\ Godot 中的阻尼计算与仿真周期率相关。修改 :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` 可能对仿真的结果和感觉造成显著影响。只要是大于 0 的阻尼值都会有这种现象。要恢复此前的感觉，就需要修改阻尼值。修改多少并不成比例，需要根据实际情况调整。
+\ **Warning:** Godot's damping calculations are simulation tick rate dependent. Changing :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` may significantly change the outcomes and feel of your simulation. This is true for the entire range of damping values greater than 0. To get back to a similar feel, you also need to change your damp values. This needed change is not proportional and differs from case to case.
 
 .. rst-class:: classref-item-separator
 
@@ -10449,15 +10449,15 @@ If in doubt, leave this setting empty.
 
 :ref:`String<class_String>` **physics/2d/physics_engine** = ``"DEFAULT"`` :ref:`🔗<class_ProjectSettings_property_physics/2d/physics_engine>`
 
-设置用于 2D 物理的物理引擎。
+Sets which physics engine to use for 2D physics.
 
-\ **DEFAULT** 目前等价于 **GodotPhysics2D**\ ，但在未来的版本中可能会有所更改。如果希望确保项目始终使用相同的引擎，请选择明确的实现。
+\ **DEFAULT** is currently equivalent to **GodotPhysics2D**, but may change in future releases. Select an explicit implementation if you want to ensure that your project stays on the same engine.
 
-\ **GodotPhysics2D** 是 Godot 的内部 2D 物理引擎。
+\ **GodotPhysics2D** is Godot's internal 2D physics engine.
 
-\ **Dummy** 是一个不执行任何操作、仅返回虚设值的 2D 物理服务器，实际上禁用了所有 2D 物理功能。
+\ **Dummy** is a 2D physics server that does nothing and returns only dummy values, effectively disabling all 2D physics functionality.
 
-第三方扩展和模块可以通过该设置添加其他可选择的物理引擎。
+Third-party extensions and modules can add other physics engines to select with this setting.
 
 .. rst-class:: classref-item-separator
 
@@ -10469,7 +10469,7 @@ If in doubt, leave this setting empty.
 
 :ref:`bool<class_bool>` **physics/2d/run_on_separate_thread** = ``false`` :ref:`🔗<class_ProjectSettings_property_physics/2d/run_on_separate_thread>`
 
-如果为 ``true``\ ，则 2D 物理服务器会在单独的线程上运行，能够更好地利用多核 CPU。如果为 ``false``\ ，则 2D 物理服务器会在主线程上运行。在单独的线程上运行物理服务器能够提高性能，但会把对 API 的访问限制在物理处理中。
+If ``true``, the 2D physics server runs on a separate thread, making better use of multi-core CPUs. If ``false``, the 2D physics server runs on the main thread. Running the physics server on a separate thread can increase performance, but restricts API access to only physics process.
 
 .. rst-class:: classref-item-separator
 
@@ -10481,7 +10481,7 @@ If in doubt, leave this setting empty.
 
 :ref:`float<class_float>` **physics/2d/sleep_threshold_angular** = ``0.13962634`` :ref:`🔗<class_ProjectSettings_property_physics/2d/sleep_threshold_angular>`
 
-角速度的阈值，在该阈值以下的 2D 物理体将被视为不活动。见 :ref:`PhysicsServer2D.SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer2D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD>`\ 。
+Threshold angular velocity under which a 2D physics body will be considered inactive. See :ref:`PhysicsServer2D.SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer2D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10493,7 +10493,7 @@ If in doubt, leave this setting empty.
 
 :ref:`float<class_float>` **physics/2d/sleep_threshold_linear** = ``2.0`` :ref:`🔗<class_ProjectSettings_property_physics/2d/sleep_threshold_linear>`
 
-线速度的阈值，在该阈值以下的 2D 物理体将被视为不活动。见 :ref:`PhysicsServer2D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer2D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`\ 。
+Threshold linear velocity under which a 2D physics body will be considered inactive. See :ref:`PhysicsServer2D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer2D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10505,7 +10505,7 @@ If in doubt, leave this setting empty.
 
 :ref:`float<class_float>` **physics/2d/solver/contact_max_allowed_penetration** = ``0.3`` :ref:`🔗<class_ProjectSettings_property_physics/2d/solver/contact_max_allowed_penetration>`
 
-两个形状互相穿透的最大距离，超过该距离后将视为碰撞。见 :ref:`PhysicsServer2D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer2D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`\ 。
+Maximum distance a shape can penetrate another shape before it is considered a collision. See :ref:`PhysicsServer2D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer2D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10517,7 +10517,7 @@ If in doubt, leave this setting empty.
 
 :ref:`float<class_float>` **physics/2d/solver/contact_max_separation** = ``1.5`` :ref:`🔗<class_ProjectSettings_property_physics/2d/solver/contact_max_separation>`
 
-两个形状间的最大距离，超过该距离后它们将被视为分离，接触将被弃置。见 :ref:`PhysicsServer2D.SPACE_PARAM_CONTACT_MAX_SEPARATION<class_PhysicsServer2D_constant_SPACE_PARAM_CONTACT_MAX_SEPARATION>`\ 。
+Maximum distance a shape can be from another before they are considered separated and the contact is discarded. See :ref:`PhysicsServer2D.SPACE_PARAM_CONTACT_MAX_SEPARATION<class_PhysicsServer2D_constant_SPACE_PARAM_CONTACT_MAX_SEPARATION>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10529,7 +10529,7 @@ If in doubt, leave this setting empty.
 
 :ref:`float<class_float>` **physics/2d/solver/contact_recycle_radius** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_physics/2d/solver/contact_recycle_radius>`
 
-一对物体在其碰撞状态被重新计算之前的最大移动距离。见 :ref:`PhysicsServer2D.SPACE_PARAM_CONTACT_RECYCLE_RADIUS<class_PhysicsServer2D_constant_SPACE_PARAM_CONTACT_RECYCLE_RADIUS>`\ 。
+Maximum distance a pair of bodies has to move before their collision status has to be recalculated. See :ref:`PhysicsServer2D.SPACE_PARAM_CONTACT_RECYCLE_RADIUS<class_PhysicsServer2D_constant_SPACE_PARAM_CONTACT_RECYCLE_RADIUS>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10541,9 +10541,9 @@ If in doubt, leave this setting empty.
 
 :ref:`float<class_float>` **physics/2d/solver/default_constraint_bias** = ``0.2`` :ref:`🔗<class_ProjectSettings_property_physics/2d/solver/default_constraint_bias>`
 
-所有物理约束的默认求解器偏置。定义物体对强制约束的反应程度。见 :ref:`PhysicsServer2D.SPACE_PARAM_CONSTRAINT_DEFAULT_BIAS<class_PhysicsServer2D_constant_SPACE_PARAM_CONSTRAINT_DEFAULT_BIAS>`\ 。
+Default solver bias for all physics constraints. Defines how much bodies react to enforce constraints. See :ref:`PhysicsServer2D.SPACE_PARAM_CONSTRAINT_DEFAULT_BIAS<class_PhysicsServer2D_constant_SPACE_PARAM_CONSTRAINT_DEFAULT_BIAS>`.
 
-不同的约束可以指定不同的偏置值（见 :ref:`Joint2D.bias<class_Joint2D_property_bias>`\ ）。
+Individual constraints can have a specific bias value (see :ref:`Joint2D.bias<class_Joint2D_property_bias>`).
 
 .. rst-class:: classref-item-separator
 
@@ -10555,9 +10555,9 @@ If in doubt, leave this setting empty.
 
 :ref:`float<class_float>` **physics/2d/solver/default_contact_bias** = ``0.8`` :ref:`🔗<class_ProjectSettings_property_physics/2d/solver/default_contact_bias>`
 
-所有物理接触的默认求解器偏置。定义物体对强制接触拆分的反应程度。见 :ref:`PhysicsServer2D.SPACE_PARAM_CONTACT_DEFAULT_BIAS<class_PhysicsServer2D_constant_SPACE_PARAM_CONTACT_DEFAULT_BIAS>`\ 。
+Default solver bias for all physics contacts. Defines how much bodies react to enforce contact separation. See :ref:`PhysicsServer2D.SPACE_PARAM_CONTACT_DEFAULT_BIAS<class_PhysicsServer2D_constant_SPACE_PARAM_CONTACT_DEFAULT_BIAS>`.
 
-不同的形状可以指定不同的偏置值（见 :ref:`Shape2D.custom_solver_bias<class_Shape2D_property_custom_solver_bias>`\ ）。
+Individual shapes can have a specific bias value (see :ref:`Shape2D.custom_solver_bias<class_Shape2D_property_custom_solver_bias>`).
 
 .. rst-class:: classref-item-separator
 
@@ -10569,7 +10569,7 @@ If in doubt, leave this setting empty.
 
 :ref:`int<class_int>` **physics/2d/solver/solver_iterations** = ``16`` :ref:`🔗<class_ProjectSettings_property_physics/2d/solver/solver_iterations>`
 
-所有接触和约束的求解器迭代次数。迭代次数越多，碰撞越精确。然而，大量迭代也会消耗大量的 CPU 性能，可能导致性能的降低。见 :ref:`PhysicsServer2D.SPACE_PARAM_SOLVER_ITERATIONS<class_PhysicsServer2D_constant_SPACE_PARAM_SOLVER_ITERATIONS>`\ 。
+Number of solver iterations for all contacts and constraints. The greater the number of iterations, the more accurate the collisions will be. However, a greater number of iterations requires more CPU power, which can decrease performance. See :ref:`PhysicsServer2D.SPACE_PARAM_SOLVER_ITERATIONS<class_PhysicsServer2D_constant_SPACE_PARAM_SOLVER_ITERATIONS>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10581,7 +10581,7 @@ If in doubt, leave this setting empty.
 
 :ref:`float<class_float>` **physics/2d/time_before_sleep** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_physics/2d/time_before_sleep>`
 
-2D 物理物体进入睡眠状态之前，所需的不活动时间（以秒为单位）。请参阅 :ref:`PhysicsServer2D.SPACE_PARAM_BODY_TIME_TO_SLEEP<class_PhysicsServer2D_constant_SPACE_PARAM_BODY_TIME_TO_SLEEP>`\ 。
+Time (in seconds) of inactivity before which a 2D physics body will put to sleep. See :ref:`PhysicsServer2D.SPACE_PARAM_BODY_TIME_TO_SLEEP<class_PhysicsServer2D_constant_SPACE_PARAM_BODY_TIME_TO_SLEEP>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10593,15 +10593,15 @@ If in doubt, leave this setting empty.
 
 :ref:`float<class_float>` **physics/3d/default_angular_damp** = ``0.1`` :ref:`🔗<class_ProjectSettings_property_physics/3d/default_angular_damp>`
 
-默认的 3D 旋转运动阻尼。阻尼可以用来让物理对象逐渐慢下来。RigidBody 在合并自身的阻尼值时，如果没有区域阻尼，那么就会回退到这个值。
+The default rotational motion damping in 3D. Damping is used to gradually slow down physical objects over time. RigidBodies will fall back to this value when combining their own damping values and no area damping value is present.
 
-建议使用 ``0`` 到 ``30`` 之间的值。为 ``0`` 时，对象会使用相同的速度持续移动。值越大、物体停得越快。如果大于等于物理周期（\ :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`\ ），那么对象进行一次迭代就会停下来。
+Suggested values are in the range ``0`` to ``30``. At value ``0`` objects will keep moving with the same velocity. Greater values will stop the object faster. A value equal to or greater than the physics tick rate (:ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`) will bring the object to a stop in one iteration.
 
-\ **注意：**\ Godot 中的阻尼计算与速度相关，即物体移动得越快、静止所需的时间就越长，不会对惯性、摩擦力、空气阻力进行仿真。因此，较重较大的物体和较轻较小的物体会以相同的比例损失速度。
+\ **Note:** Godot damping calculations are velocity-dependent, meaning bodies moving faster will take a longer time to come to rest. They do not simulate inertia, friction, or air resistance. Therefore heavier or larger bodies will lose speed at the same proportional rate as lighter or smaller bodies.
 
-每个物理周期中，Godot 会将 RigidBody 的角速度乘以 ``1.0 - combined_damp / physics_ticks_per_second``\ 。默认情况下，物体的合并阻尼系数 ``combined_damp`` 是该物体所有阻尼值与这个值或物体所处区域阻尼值之和。见 :ref:`DampMode<enum_RigidBody3D_DampMode>`\ 。
+During each physics tick, Godot will multiply the angular velocity of RigidBodies by ``1.0 - combined_damp / physics_ticks_per_second``. By default, bodies combine damp factors: ``combined_damp`` is the sum of the damp value of the body and this value or the area's value the body is in. See :ref:`DampMode<enum_RigidBody3D_DampMode>`.
 
-\ **警告：**\ Godot 中的阻尼计算与仿真周期率相关。修改 :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` 可能对仿真的结果和感觉造成显著影响。只要是大于 0 的阻尼值都会有这种现象。要恢复此前的感觉，就需要修改阻尼值。修改多少并不成比例，需要根据实际情况调整。
+\ **Warning:** Godot's damping calculations are simulation tick rate dependent. Changing :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` may significantly change the outcomes and feel of your simulation. This is true for the entire range of damping values greater than 0. To get back to a similar feel, you also need to change your damp values. This needed change is not proportional and differs from case to case.
 
 .. rst-class:: classref-item-separator
 
@@ -10613,21 +10613,21 @@ If in doubt, leave this setting empty.
 
 :ref:`float<class_float>` **physics/3d/default_gravity** = ``9.8`` :ref:`🔗<class_ProjectSettings_property_physics/3d/default_gravity>`
 
-3D 默认重力强度（单位为米每平方秒）。
+The default gravity strength in 3D (in meters per second squared).
 
-\ **注意：**\ 这个属性只在项目启动时读取。要在运行时改变默认重力，请使用以下代码示例：
+\ **Note:** This property is only read when the project starts. To change the default gravity at runtime, use the following code sample:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # 将默认重力强度设置为 9.8。
+    # Set the default gravity strength to 9.8.
     PhysicsServer3D.area_set_param(get_viewport().find_world_3d().space, PhysicsServer3D.AREA_PARAM_GRAVITY, 9.8)
 
  .. code-tab:: csharp
 
-    // 将默认重力强度设置为 9.8。
+    // Set the default gravity strength to 9.8.
     PhysicsServer3D.AreaSetParam(GetViewport().FindWorld3D().Space, PhysicsServer3D.AreaParameter.Gravity, 9.8);
 
 
@@ -10642,21 +10642,21 @@ If in doubt, leave this setting empty.
 
 :ref:`Vector3<class_Vector3>` **physics/3d/default_gravity_vector** = ``Vector3(0, -1, 0)`` :ref:`🔗<class_ProjectSettings_property_physics/3d/default_gravity_vector>`
 
-3D 默认重力方向。
+The default gravity direction in 3D.
 
-\ **注意：**\ 这个属性只在项目启动时读取。要在运行时改变默认重力向量，请使用以下代码示例：
+\ **Note:** This property is only read when the project starts. To change the default gravity vector at runtime, use the following code sample:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # 将默认整理方向设置为 `Vector3(0, -1, 0)`。
+    # Set the default gravity direction to `Vector3(0, -1, 0)`.
     PhysicsServer3D.area_set_param(get_viewport().find_world_3d().space, PhysicsServer3D.AREA_PARAM_GRAVITY_VECTOR, Vector3.DOWN)
 
  .. code-tab:: csharp
 
-    // 将默认整理方向设置为 `Vector3(0, -1, 0)`。
+    // Set the default gravity direction to `Vector3(0, -1, 0)`.
     PhysicsServer3D.AreaSetParam(GetViewport().FindWorld3D().Space, PhysicsServer3D.AreaParameter.GravityVector, Vector3.Down)
 
 
@@ -10671,15 +10671,15 @@ If in doubt, leave this setting empty.
 
 :ref:`float<class_float>` **physics/3d/default_linear_damp** = ``0.1`` :ref:`🔗<class_ProjectSettings_property_physics/3d/default_linear_damp>`
 
-默认的 3D 线性运动阻尼。阻尼可以用来让物理对象逐渐慢下来。RigidBody 在合并自身的阻尼值时，如果没有区域阻尼，那么就会回退到这个值。
+The default linear motion damping in 3D. Damping is used to gradually slow down physical objects over time. RigidBodies will fall back to this value when combining their own damping values and no area damping value is present.
 
-建议使用 ``0`` 到 ``30`` 之间的值。为 ``0`` 时，对象会使用相同的速度持续移动。值越大、物体停得越快。如果大于等于物理周期（\ :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`\ ），那么对象进行一次迭代就会停下来。
+Suggested values are in the range ``0`` to ``30``. At value ``0`` objects will keep moving with the same velocity. Greater values will stop the object faster. A value equal to or greater than the physics tick rate (:ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`) will bring the object to a stop in one iteration.
 
-\ **注意：**\ Godot 中的阻尼计算与速度相关，即物体移动得越快、静止所需的时间就越长，不会对惯性、摩擦力、空气阻力进行仿真。因此，较重较大的物体和较轻较小的物体会以相同的比例损失速度。
+\ **Note:** Godot damping calculations are velocity-dependent, meaning bodies moving faster will take a longer time to come to rest. They do not simulate inertia, friction, or air resistance. Therefore heavier or larger bodies will lose speed at the same proportional rate as lighter or smaller bodies.
 
-每个物理周期中，Godot 会将 RigidBody 的线速度乘以 ``1.0 - combined_damp / physics_ticks_per_second``\ ，默认情况下，物体的合并阻尼系数 ``combined_damp`` 是该物体线性阻尼值与这个值或物体所处区域阻尼值之和。这些都以物体默认合并阻尼值为前提。见 :ref:`DampMode<enum_RigidBody3D_DampMode>`\ 。
+During each physics tick, Godot will multiply the linear velocity of RigidBodies by ``1.0 - combined_damp / physics_ticks_per_second``. By default, bodies combine damp factors: ``combined_damp`` is the sum of the damp value of the body and this value or the area's value the body is in. See :ref:`DampMode<enum_RigidBody3D_DampMode>`.
 
-\ **警告：**\ Godot 中的阻尼计算与仿真周期率相关。修改 :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` 可能对仿真的结果和感觉造成显著影响。只要是大于 0 的阻尼值都会有这种现象。要恢复此前的感觉，就需要修改阻尼值。修改多少并不成比例，需要根据实际情况调整。
+\ **Warning:** Godot's damping calculations are simulation tick rate dependent. Changing :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` may significantly change the outcomes and feel of your simulation. This is true for the entire range of damping values greater than 0. To get back to a similar feel, you also need to change your damp values. This needed change is not proportional and differs from case to case.
 
 .. rst-class:: classref-item-separator
 
@@ -10713,13 +10713,13 @@ Third-party extensions and modules can add other physics engines to select with 
 
 :ref:`String<class_String>` **physics/3d/physics_interpolation/scene_traversal** = ``"DEFAULT"`` :ref:`🔗<class_ProjectSettings_property_physics/3d/physics_interpolation/scene_traversal>`
 
-启用物理插值时，遍历 3D 场景所使用的方法。
+The approach used for 3D scene traversal when physics interpolation is enabled.
 
-- ``DEFAULT``\ （默认）：默认优化方法。
+- ``DEFAULT``: The default optimized method.
 
-- ``Legacy``\ （遗留）：以前的场景树遍历参考方法，较慢。
+- ``Legacy``: The previous reference method used for scene tree traversal, which is slower.
 
-- ``Debug``\ （调试）：帧与帧之间交替使用 ``DEFAULT`` 和 ``Legacy`` 方法，提供日志信息（因此会较慢）。仅适用于调试；大多数情况下应使用 ``DEFAULT`` 方法。
+- ``Debug``: Swaps between ``DEFAULT`` and ``Legacy`` methods on alternating frames, and provides logging information (which in turn makes it slower). Intended for debugging only; you should use the ``DEFAULT`` method in most cases.
 
 .. rst-class:: classref-item-separator
 
@@ -10731,9 +10731,9 @@ Third-party extensions and modules can add other physics engines to select with 
 
 :ref:`bool<class_bool>` **physics/3d/run_on_separate_thread** = ``false`` :ref:`🔗<class_ProjectSettings_property_physics/3d/run_on_separate_thread>`
 
-如果为 ``true``\ ，则 3D 物理服务器会在单独的线程上运行，能够更好地利用多核 CPU。如果为 ``false``\ ，则 3D 物理服务器会在主线程上运行。在单独的线程上运行物理服务器能够提高性能，但会把对 API 的访问限制在物理处理中。
+If ``true``, the 3D physics server runs on a separate thread, making better use of multi-core CPUs. If ``false``, the 3D physics server runs on the main thread. Running the physics server on a separate thread can increase performance, but restricts API access to only physics process.
 
-\ **注意：**\ :ref:`physics/3d/physics_engine<class_ProjectSettings_property_physics/3d/physics_engine>` 为 ``Jolt Physics`` 时，启用该设置会导致 3D 物理服务器在报告错误和警告时无法提供任何上下文，而是始终将节点称为 ``<unknown>``\ 。
+\ **Note:** When :ref:`physics/3d/physics_engine<class_ProjectSettings_property_physics/3d/physics_engine>` is set to ``Jolt Physics``, enabling this setting will prevent the 3D physics server from being able to provide any context when reporting errors and warnings, and will instead always refer to nodes as ``<unknown>``.
 
 .. rst-class:: classref-item-separator
 
@@ -10745,7 +10745,7 @@ Third-party extensions and modules can add other physics engines to select with 
 
 :ref:`float<class_float>` **physics/3d/sleep_threshold_angular** = ``0.13962634`` :ref:`🔗<class_ProjectSettings_property_physics/3d/sleep_threshold_angular>`
 
-角速度的阈值，在该阈值以下的 3D 物理体将被视为不活动。见 :ref:`PhysicsServer3D.SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD>`\ 。
+Threshold angular velocity under which a 3D physics body will be considered inactive. See :ref:`PhysicsServer3D.SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10757,7 +10757,7 @@ Third-party extensions and modules can add other physics engines to select with 
 
 :ref:`float<class_float>` **physics/3d/sleep_threshold_linear** = ``0.1`` :ref:`🔗<class_ProjectSettings_property_physics/3d/sleep_threshold_linear>`
 
-线速度的阈值，在该阈值以下的 3D 物理体将被视为不活动。见 :ref:`PhysicsServer3D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`\ 。
+Threshold linear velocity under which a 3D physics body will be considered inactive. See :ref:`PhysicsServer3D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10769,7 +10769,7 @@ Third-party extensions and modules can add other physics engines to select with 
 
 :ref:`float<class_float>` **physics/3d/solver/contact_max_allowed_penetration** = ``0.01`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/contact_max_allowed_penetration>`
 
-两个形状互相穿透的最大距离，超过该距离后将视为碰撞。见 :ref:`PhysicsServer2D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer2D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`\ 。 :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`\ 。
+Maximum distance a shape can penetrate another shape before it is considered a collision. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10781,7 +10781,7 @@ Third-party extensions and modules can add other physics engines to select with 
 
 :ref:`float<class_float>` **physics/3d/solver/contact_max_separation** = ``0.05`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/contact_max_separation>`
 
-两个形状间的最大距离，超过该距离后它们将被视为分离，接触将被弃置。见 :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_SEPARATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_SEPARATION>`\ 。
+Maximum distance a shape can be from another before they are considered separated and the contact is discarded. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_SEPARATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_SEPARATION>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10793,7 +10793,7 @@ Third-party extensions and modules can add other physics engines to select with 
 
 :ref:`float<class_float>` **physics/3d/solver/contact_recycle_radius** = ``0.01`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/contact_recycle_radius>`
 
-一对物体在其碰撞状态被重新计算之前的最大移动距离。见 :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_RECYCLE_RADIUS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_RECYCLE_RADIUS>`\ 。
+Maximum distance a pair of bodies has to move before their collision status has to be recalculated. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_RECYCLE_RADIUS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_RECYCLE_RADIUS>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10805,9 +10805,9 @@ Third-party extensions and modules can add other physics engines to select with 
 
 :ref:`float<class_float>` **physics/3d/solver/default_contact_bias** = ``0.8`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/default_contact_bias>`
 
-所有物理接触的默认求解器偏置。定义物体对强制接触拆分的反应程度。见 :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_DEFAULT_BIAS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_DEFAULT_BIAS>`\ 。
+Default solver bias for all physics contacts. Defines how much bodies react to enforce contact separation. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_DEFAULT_BIAS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_DEFAULT_BIAS>`.
 
-不同的形状可以指定不同的偏置值（见 :ref:`Shape3D.custom_solver_bias<class_Shape3D_property_custom_solver_bias>`\ ）。
+Individual shapes can have a specific bias value (see :ref:`Shape3D.custom_solver_bias<class_Shape3D_property_custom_solver_bias>`).
 
 .. rst-class:: classref-item-separator
 
@@ -10819,7 +10819,7 @@ Third-party extensions and modules can add other physics engines to select with 
 
 :ref:`int<class_int>` **physics/3d/solver/solver_iterations** = ``16`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/solver_iterations>`
 
-所有接触与约束的求解器迭代数。迭代次数越多，碰撞越准确。但是，大量的迭代会需要更多的 CPU 能力，会降低性能。见 :ref:`PhysicsServer3D.SPACE_PARAM_SOLVER_ITERATIONS<class_PhysicsServer3D_constant_SPACE_PARAM_SOLVER_ITERATIONS>`\ 。
+Number of solver iterations for all contacts and constraints. The greater the number of iterations, the more accurate the collisions will be. However, a greater number of iterations requires more CPU power, which can decrease performance. See :ref:`PhysicsServer3D.SPACE_PARAM_SOLVER_ITERATIONS<class_PhysicsServer3D_constant_SPACE_PARAM_SOLVER_ITERATIONS>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10831,7 +10831,7 @@ Third-party extensions and modules can add other physics engines to select with 
 
 :ref:`float<class_float>` **physics/3d/time_before_sleep** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_physics/3d/time_before_sleep>`
 
-3D 物理物体进入睡眠状态之前，所需的不活动时间（以秒为单位）。请参阅 :ref:`PhysicsServer3D.SPACE_PARAM_BODY_TIME_TO_SLEEP<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_TIME_TO_SLEEP>`\ 。
+Time (in seconds) of inactivity before which a 3D physics body will put to sleep. See :ref:`PhysicsServer3D.SPACE_PARAM_BODY_TIME_TO_SLEEP<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_TIME_TO_SLEEP>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10843,7 +10843,7 @@ Third-party extensions and modules can add other physics engines to select with 
 
 :ref:`bool<class_bool>` **physics/common/enable_object_picking** = ``true`` :ref:`🔗<class_ProjectSettings_property_physics/common/enable_object_picking>`
 
-在根视图上启用 :ref:`Viewport.physics_object_picking<class_Viewport_property_physics_object_picking>`\ 。
+Enables :ref:`Viewport.physics_object_picking<class_Viewport_property_physics_object_picking>` on the root viewport.
 
 .. rst-class:: classref-item-separator
 
@@ -10855,11 +10855,11 @@ Third-party extensions and modules can add other physics engines to select with 
 
 :ref:`int<class_int>` **physics/common/max_physics_steps_per_frame** = ``8`` :ref:`🔗<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>`
 
-控制每个渲染帧所能模拟的最大物理迭代数。默认值经过特调，可以避免帧率突然降得非常低、低于特定物理仿真次数的情况。造成的原因是物理引擎无法保持预期的仿真频率。此时帧率会开始下降，但引擎每个渲染帧最多只能进行特定次数的物理步骤仿真。从而逐渐形成恶性循环，帧率不断下降，直至一个非常低的帧率（通常是 1-2 FPS），这就是\ *物理死亡螺旋*\ 。
+Controls the maximum number of physics steps that can be simulated each rendered frame. The default value is tuned to avoid situations where the framerate suddenly drops to a very low value beyond a certain amount of physics simulation. This occurs because the physics engine can't keep up with the expected simulation rate. In this case, the framerate will start dropping, but the engine is only allowed to simulate a certain number of physics steps per rendered frame. This snowballs into a situation where framerate keeps dropping until it reaches a very low framerate (typically 1-2 FPS) and is called the *physics spiral of death*.
 
-不过渲染 FPS 低于 :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` 的 ``1 / max_physics_steps_per_frame`` 就会给人降速的效果。即便在物理计算中一直使用 ``delta`` 也会如此。为了避免这种情况，如果已经将 :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` 提高到明显大于默认值，请增大 :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>`\ 。
+However, the game will appear to slow down if the rendering FPS is less than ``1 / max_physics_steps_per_frame`` of :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`. This occurs even if ``delta`` is consistently used in physics calculations. To avoid this, increase :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` if you have increased :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` significantly above its default value.
 
-\ **注意：**\ 这个属性只会在项目启动时读取。要在运行时修改最大物理步骤仿真次数，请改为设置 :ref:`Engine.max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>`\ 。
+\ **Note:** This property is only read when the project starts. To change the maximum number of simulated physics steps per frame at runtime, set :ref:`Engine.max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -10871,13 +10871,13 @@ Third-party extensions and modules can add other physics engines to select with 
 
 :ref:`bool<class_bool>` **physics/common/physics_interpolation** = ``false`` :ref:`🔗<class_ProjectSettings_property_physics/common/physics_interpolation>`
 
-如果为 ``true``\ ，则渲染器将在最后两个变换之间插入对象的变换（无论该对象为物理对象还是非物理对象），这样即使物理刻度与渲染帧不一致，也可以看到平滑的运动。另见 :ref:`Node.reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>`\ 。
+If ``true``, the renderer will interpolate the transforms of objects (both physics and non-physics) between the last two transforms, so that smooth motion is seen even when physics ticks do not coincide with rendered frames. See also :ref:`Node.reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>`.
 
-\ **注意：**\ 尽管这是全局设置，仍可使用 :ref:`Node.physics_interpolation_mode<class_Node_property_physics_interpolation_mode>` 对 :ref:`SceneTree<class_SceneTree>` 中的分支进行精细的控制。
+\ **Note:** Although this is a global setting, finer control of individual branches of the :ref:`SceneTree<class_SceneTree>` is possible using :ref:`Node.physics_interpolation_mode<class_Node_property_physics_interpolation_mode>`.
 
-\ **注意：**\ 该属性仅在项目启动时读取。要在运行时切换物理插值，请改为设置 :ref:`SceneTree.physics_interpolation<class_SceneTree_property_physics_interpolation>`\ 。
+\ **Note:** This property is only read when the project starts. To toggle physics interpolation at runtime, set :ref:`SceneTree.physics_interpolation<class_SceneTree_property_physics_interpolation>` instead.
 
-\ **注意：**\ 如果 :ref:`physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>` 为 ``true``\ ，则会自动禁用 :ref:`physics/common/physics_jitter_fix<class_ProjectSettings_property_physics/common/physics_jitter_fix>` 属性，因为这两个方法不兼容。
+\ **Note:** Property :ref:`physics/common/physics_jitter_fix<class_ProjectSettings_property_physics/common/physics_jitter_fix>` is automatically disabled if :ref:`physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>` is set to ``true``, as the two methods are incompatible.
 
 .. rst-class:: classref-item-separator
 
@@ -10889,13 +10889,13 @@ Third-party extensions and modules can add other physics engines to select with 
 
 :ref:`float<class_float>` **physics/common/physics_jitter_fix** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_physics/common/physics_jitter_fix>`
 
-控制物理周期与真实时间的同步程度。小于等于 0 时周期是同步的。对时钟同步有要求的网络游戏建议使用此类值。较高的值会导致游戏内时钟和真实时钟的较大偏差，但可以平滑帧率抖动。大多数情况下，默认值 0.5 应该足够好了；大于 2 的值可能导致游戏对丢帧作出明显延迟的反应，因此不推荐使用。
+Controls how much physics ticks are synchronized with real time. For 0 or less, the ticks are synchronized. Such values are recommended for network games, where clock synchronization matters. Higher values cause higher deviation of in-game clock and real clock, but allows smoothing out framerate jitters. The default value of 0.5 should be good enough for most; values above 2 could cause the game to react to dropped frames with a noticeable delay and are not recommended.
 
-\ **注意：**\ 启用 :ref:`physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>` 时会自动禁用抖动修复功能。
+\ **Note:** Jitter fix is automatically disabled at runtime when :ref:`physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>` is enabled.
 
-\ **注意：**\ 使用自定义物理插值解决方案时应将 :ref:`physics/common/physics_jitter_fix<class_ProjectSettings_property_physics/common/physics_jitter_fix>` 设置为 ``0.0``\ ，禁用物理抖动修复。
+\ **Note:** When using a custom physics interpolation solution, the physics jitter fix should be disabled by setting :ref:`physics/common/physics_jitter_fix<class_ProjectSettings_property_physics/common/physics_jitter_fix>` to ``0.0``.
 
-\ **注意：**\ 该属性仅在项目启动时读取。 要在运行时更改物理抖动修复，请改为设置 :ref:`Engine.physics_jitter_fix<class_Engine_property_physics_jitter_fix>`\ 。
+\ **Note:** This property is only read when the project starts. To change the physics jitter fix at runtime, set :ref:`Engine.physics_jitter_fix<class_Engine_property_physics_jitter_fix>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -10929,15 +10929,15 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/collisions/active_edge_threshold** = ``0.87266463`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/collisions/active_edge_threshold>`
 
-在 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` 或 :ref:`HeightMapShape3D<class_HeightMapShape3D>` 中两个相邻三角形之间的最大角度（单位为弧度），超过该角度的边被视为不活跃。
+The maximum angle, in radians, between two adjacent triangles in a :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` or :ref:`HeightMapShape3D<class_HeightMapShape3D>` for which the edge between those triangles is considered inactive.
 
-与不活跃边相碰撞会将碰撞法线覆盖为三角形的表面法线。这样做有助于减轻虚假碰撞。
+Collisions against an inactive edge will have its normal overridden to instead be the surface normal of the triangle. This can help alleviate ghost collisions.
 
-\ **注意：**\ 设置得过高可能导致物体无法正确脱离重叠。
+\ **Note:** Setting this too high can result in objects not depenetrating properly.
 
-\ **注意：**\ 该设置适用于所有形状查询，以及模拟中的物理体。
+\ **Note:** This applies to all shape queries, as well as physics bodies within the simulation.
 
-\ **注意：**\ 启用 Jolt 的增强内部边缘移除功能时该设置不适用，该功能优先。
+\ **Note:** This does not apply when enabling Jolt's enhanced internal edge removal, which supersedes this.
 
 .. rst-class:: classref-item-separator
 
@@ -10949,11 +10949,11 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/collisions/collision_margin_fraction** = ``0.08`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/collisions/collision_margin_fraction>`
 
-:ref:`BoxShape3D<class_BoxShape3D>`\ 、\ :ref:`CylinderShape3D<class_CylinderShape3D>`\ 、\ :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 等凸碰撞形状使用的碰撞边距大小，是相对于该形状最短轴的比例，上限为 :ref:`Shape3D.margin<class_Shape3D_property_margin>`\ 。主要用于加速凸形状的碰撞检测。
+The amount of collision margin to use for certain convex collision shapes, such as :ref:`BoxShape3D<class_BoxShape3D>`, :ref:`CylinderShape3D<class_CylinderShape3D>` and :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>`, as a fraction of the shape's shortest axis, with :ref:`Shape3D.margin<class_Shape3D_property_margin>` as the upper bound. This is mainly used to speed up collision detection with convex shapes.
 
-\ **注意：**\ Jolt 中的碰撞边距不会为形状添加额外的大小。相反，形状会先根据边距收缩，然后再用相同的大小扩展，得到的是圆角形状。
+\ **Note:** Collision margins in Jolt do not add any extra size to the shape. Instead the shape is first shrunk by the margin and then expanded by the same amount, resulting in a shape with rounded corners.
 
-\ **注意：**\ 将该值设得过于接近 ``0.0`` 可能也会对凸形状碰撞检测的精度产生负面影响。
+\ **Note:** Setting this value too close to ``0.0`` may also negatively affect the accuracy of the collision detection with convex shapes.
 
 .. rst-class:: classref-item-separator
 
@@ -10965,9 +10965,9 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`int<class_int>` **physics/jolt_physics_3d/joints/world_node** = ``0`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/joints/world_node>`
 
-关节连接的两个节点 :ref:`Joint3D.node_a<class_Joint3D_property_node_a>` 和 :ref:`Joint3D.node_b<class_Joint3D_property_node_b>` 中，如果省略一个，那么哪个节点应当代表世界。可以理解为省略的节点是位于关节位置的 :ref:`StaticBody3D<class_StaticBody3D>` 节点。让 :ref:`Joint3D.node_a<class_Joint3D_property_node_a>` 代表世界更利于关节限制的表达。
+Which of the two nodes bound by a joint should represent the world when one of the two is omitted, as either :ref:`Joint3D.node_a<class_Joint3D_property_node_a>` or :ref:`Joint3D.node_b<class_Joint3D_property_node_b>`. This can be thought of as having the omitted node be a :ref:`StaticBody3D<class_StaticBody3D>` at the joint's position. Joint limits are more easily expressed when :ref:`Joint3D.node_a<class_Joint3D_property_node_a>` represents the world.
 
-\ **注意：**\ 在 Godot Physics 中只有 :ref:`Joint3D.node_b<class_Joint3D_property_node_b>` 能够代表世界。
+\ **Note:** In Godot Physics, only :ref:`Joint3D.node_b<class_Joint3D_property_node_b>` can represent the world.
 
 .. rst-class:: classref-item-separator
 
@@ -10979,9 +10979,9 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/limits/max_angular_velocity** = ``47.12389`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/limits/max_angular_velocity>`
 
-:ref:`RigidBody3D<class_RigidBody3D>` 能够达到的最大角速度，单位为弧度每秒。
+The maximum angular velocity that a :ref:`RigidBody3D<class_RigidBody3D>` can reach, in radians per second.
 
-主要用作安全机制，防止模拟出现崩溃，因为快速移动的物体与复杂物理结构碰撞可能会导致失控。快速移动的物体还可能对碰撞检测系统造成很大的压力，可能显著减慢模拟的速度。
+This is mainly used as a fail-safe, to prevent the simulation from exploding, as fast-moving objects colliding with complex physics structures can otherwise cause them to go out of control. Fast-moving objects can also cause a lot of stress on the collision detection system, which can slow down the simulation considerably.
 
 .. rst-class:: classref-item-separator
 
@@ -10993,9 +10993,9 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`int<class_int>` **physics/jolt_physics_3d/limits/max_bodies** = ``10240`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/limits/max_bodies>`
 
-同时支持的 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 的最大数量，包括处于活动状态和休眠状态的物体。超出该限制时会报错，此后的行为均未定义。
+The maximum number of :ref:`PhysicsBody3D<class_PhysicsBody3D>` to support at the same time, awake or sleeping. When this limit is exceeded, an error is reported and anything past that point is undefined behavior.
 
-\ **注意：**\ 该限制也适用于编辑器。
+\ **Note:** This limit also applies within the editor.
 
 .. rst-class:: classref-item-separator
 
@@ -11007,7 +11007,7 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`int<class_int>` **physics/jolt_physics_3d/limits/max_body_pairs** = ``65536`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/limits/max_body_pairs>`
 
-允许处理的物体对的最大数量。超出该限制时会报警告，此时会随机忽略碰撞，物体相互穿透。
+The maximum number of body pairs to allow processing of. When this limit is exceeded, a warning is reported and collisions will randomly be ignored while bodies pass through each other.
 
 .. rst-class:: classref-item-separator
 
@@ -11019,7 +11019,7 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`int<class_int>` **physics/jolt_physics_3d/limits/max_contact_constraints** = ``20480`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/limits/max_contact_constraints>`
 
-允许处理的接触约束的最大数量。超出该限制时会报警告，此时会随机忽略碰撞，物体相互穿透。
+The maximum number of contact constraints to allow processing of. When this limit is exceeded, a warning is reported and collisions will randomly be ignored while bodies pass through each other.
 
 .. rst-class:: classref-item-separator
 
@@ -11031,9 +11031,9 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/limits/max_linear_velocity** = ``500.0`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/limits/max_linear_velocity>`
 
-:ref:`RigidBody3D<class_RigidBody3D>` 能够达到的最大线速度，单位为米每秒。
+The maximum linear velocity that a :ref:`RigidBody3D<class_RigidBody3D>` can reach, in meters per second.
 
-主要用作安全机制，防止模拟出现崩溃，因为快速移动的物体与复杂物理结构碰撞可能会导致失控。快速移动的物体还可能对碰撞检测系统造成很大的压力，可能显著减慢模拟的速度。
+This is mainly used as a fail-safe, to prevent the simulation from exploding, as fast-moving objects colliding with complex physics structures can otherwise cause them to go out of control. Fast-moving objects can also cause a lot of stress on the collision detection system, which can slow down the simulation considerably.
 
 .. rst-class:: classref-item-separator
 
@@ -11045,7 +11045,7 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`int<class_int>` **physics/jolt_physics_3d/limits/temporary_memory_buffer_size** = ``32`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/limits/temporary_memory_buffer_size>`
 
-为 Jolt 所使用的栈分配器预分配的内存大小，单位为 MiB。物理步骤中会使用该分配器存储只有在该步骤中用到的内容，例如哪些物体发生了接触、这些物体如何分组、解决接触需要哪些数据等。
+The amount of memory to pre-allocate for the stack allocator used within Jolt, in MiB. This allocator is used within the physics step to store things that are only needed during it, like which bodies are in contact, how they form islands and the data needed to solve the contacts.
 
 .. rst-class:: classref-item-separator
 
@@ -11057,11 +11057,11 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/limits/world_boundary_shape_size** = ``2000.0`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/limits/world_boundary_shape_size>`
 
-:ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` 三个维度的边界大小。平面实际上在该大小的立方体内居中，立方体外的物体都无法与之发生碰撞。这样做的原因是使用 Jolt 时为了防止出现精度问题，所以 :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` 并不是无限延伸的。
+The size of :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` boundaries, for all three dimensions. The plane is effectively centered within a box of this size, and anything outside of the box will not collide with it. This is necessary as :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` is not unbounded when using Jolt, in order to prevent precision issues.
 
-\ **注意：**\ 将该值设得过高可能让碰撞检测的精度降低。
+\ **Note:** Setting this value too high can make collision detection less accurate.
 
-\ **注意：**\ 与 :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` 实际边界的碰撞是不一致的。
+\ **Note:** Collisions against the effective edges of a :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` will be inconsistent.
 
 .. rst-class:: classref-item-separator
 
@@ -11073,9 +11073,9 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/motion_queries/recovery_amount** = ``0.4`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/motion_queries/recovery_amount>`
 
-运动查询过程中，单次穿透修正迭代对总穿透量的修正比例。
+Fraction of the total penetration to depenetrate per iteration during motion queries.
 
-\ **注意：**\ 受影响的方法有 :ref:`CharacterBody3D.move_and_slide()<class_CharacterBody3D_method_move_and_slide>`\ 、\ :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`\ 、\ :ref:`PhysicsBody3D.test_move()<class_PhysicsBody3D_method_test_move>`\ 、\ :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>`\ 。
+\ **Note:** This affects methods :ref:`CharacterBody3D.move_and_slide()<class_CharacterBody3D_method_move_and_slide>`, :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`, :ref:`PhysicsBody3D.test_move()<class_PhysicsBody3D_method_test_move>` and :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11087,9 +11087,9 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`int<class_int>` **physics/jolt_physics_3d/motion_queries/recovery_iterations** = ``4`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/motion_queries/recovery_iterations>`
 
-运动查询过程中，穿透修正的迭代次数。
+The number of iterations to run when depenetrating during motion queries.
 
-\ **注意：**\ 受影响的方法有 :ref:`CharacterBody3D.move_and_slide()<class_CharacterBody3D_method_move_and_slide>`\ 、\ :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`\ 、\ :ref:`PhysicsBody3D.test_move()<class_PhysicsBody3D_method_test_move>`\ 、\ :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>`\ 。
+\ **Note:** This affects methods :ref:`CharacterBody3D.move_and_slide()<class_CharacterBody3D_method_move_and_slide>`, :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`, :ref:`PhysicsBody3D.test_move()<class_PhysicsBody3D_method_test_move>` and :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11101,9 +11101,9 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`bool<class_bool>` **physics/jolt_physics_3d/motion_queries/use_enhanced_internal_edge_removal** = ``true`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/motion_queries/use_enhanced_internal_edge_removal>`
 
-如果为 ``true``\ ，则会启用 Jolt 在运动查询期间的增强内部边缘移除。这样做有利于减轻幽灵碰撞，但仅适用于单个物体内的边缘，即不同物体之间的边缘仍然可能发生幽灵碰撞。
+If ``true``, enables Jolt's enhanced internal edge removal during motion queries. This can help alleviate ghost collisions, but only with edges within a single body, meaning edges between separate bodies can still cause ghost collisions.
 
-\ **注意：**\ :ref:`CharacterBody3D.move_and_slide()<class_CharacterBody3D_method_move_and_slide>`\ 、\ :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`\ 、\ :ref:`PhysicsBody3D.test_move()<class_PhysicsBody3D_method_test_move>`\ 、\ :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>` 等方法均会受到影响。
+\ **Note:** This affects methods :ref:`CharacterBody3D.move_and_slide()<class_CharacterBody3D_method_move_and_slide>`, :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`, :ref:`PhysicsBody3D.test_move()<class_PhysicsBody3D_method_test_move>` and :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11115,9 +11115,9 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`bool<class_bool>` **physics/jolt_physics_3d/queries/enable_ray_cast_face_index** = ``false`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/queries/enable_ray_cast_face_index>`
 
-如果为 ``true``\ ，则会在 :ref:`PhysicsDirectSpaceState3D.intersect_ray()<class_PhysicsDirectSpaceState3D_method_intersect_ray>` 的结果中填充 ``face_index`` 字段，该字段也可以通过 :ref:`RayCast3D.get_collision_face_index()<class_RayCast3D_method_get_collision_face_index>` 访问。如果为 ``false``\ ，则 ``face_index`` 字段会保持默认值 ``-1``\ 。
+If ``true``, populates the ``face_index`` field in the results of :ref:`PhysicsDirectSpaceState3D.intersect_ray()<class_PhysicsDirectSpaceState3D_method_intersect_ray>`, also accessed through :ref:`RayCast3D.get_collision_face_index()<class_RayCast3D_method_get_collision_face_index>`. If ``false``, the ``face_index`` field will be left at its default value of ``-1``.
 
-\ **注意：**\ 启用该设置会使 Jolt 对 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` 的内存使用增加约 25%。
+\ **Note:** Enabling this setting will increase Jolt's memory usage for :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` by around 25%.
 
 .. rst-class:: classref-item-separator
 
@@ -11129,11 +11129,11 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`bool<class_bool>` **physics/jolt_physics_3d/queries/use_enhanced_internal_edge_removal** = ``false`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/queries/use_enhanced_internal_edge_removal>`
 
-如果为 ``true``\ ，则会在形状查询期间启用 Jolt 的增强内部边缘移除。这样做有利于减轻在使用形状查询进行角色移动等操作时的幽灵碰撞，但仅适用于单个物体内的边缘，即不同物体之间的边缘仍然可能发生幽灵碰撞。
+If ``true``, enables Jolt's enhanced internal edge removal during shape queries. This can help alleviate ghost collisions when using shape queries for things like character movement, but only with edges within a single body, meaning edges between separate bodies can still cause ghost collisions.
 
-\ **注意：**\ :ref:`PhysicsDirectSpaceState3D.cast_motion()<class_PhysicsDirectSpaceState3D_method_cast_motion>`\ 、\ :ref:`PhysicsDirectSpaceState3D.collide_shape()<class_PhysicsDirectSpaceState3D_method_collide_shape>`\ 、\ :ref:`PhysicsDirectSpaceState3D.get_rest_info()<class_PhysicsDirectSpaceState3D_method_get_rest_info>`\ 、\ :ref:`PhysicsDirectSpaceState3D.intersect_shape()<class_PhysicsDirectSpaceState3D_method_intersect_shape>` 等方法均会受到影响。
+\ **Note:** This affects methods :ref:`PhysicsDirectSpaceState3D.cast_motion()<class_PhysicsDirectSpaceState3D_method_cast_motion>`, :ref:`PhysicsDirectSpaceState3D.collide_shape()<class_PhysicsDirectSpaceState3D_method_collide_shape>`, :ref:`PhysicsDirectSpaceState3D.get_rest_info()<class_PhysicsDirectSpaceState3D_method_get_rest_info>` and :ref:`PhysicsDirectSpaceState3D.intersect_shape()<class_PhysicsDirectSpaceState3D_method_intersect_shape>`.
 
-\ **注意：**\ 启用该设置可能导致从结果中完全剔除某些形状，但每个物体至少会得到一个交点。
+\ **Note:** Enabling this setting can cause certain shapes to be culled from the results entirely, but you will get at least one intersection per body.
 
 .. rst-class:: classref-item-separator
 
@@ -11145,7 +11145,7 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`bool<class_bool>` **physics/jolt_physics_3d/simulation/allow_sleep** = ``true`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/allow_sleep>`
 
-如果为 ``true``\ ，则 :ref:`RigidBody3D<class_RigidBody3D>` 节点在速度低于 :ref:`physics/jolt_physics_3d/simulation/sleep_velocity_threshold<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/sleep_velocity_threshold>` 中定义的阈值，并且持续时间达到 :ref:`physics/jolt_physics_3d/simulation/sleep_time_threshold<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/sleep_time_threshold>` 时，允许进入休眠状态。这样做可以在存在不移动的 :ref:`RigidBody3D<class_RigidBody3D>` 节点时提高物理模拟性能，但可能会导致部分节点在特定场景下无法唤醒。排查 :ref:`RigidBody3D<class_RigidBody3D>` 节点在应移动时未移动的问题时，请考虑暂时禁用该功能。
+If ``true``, :ref:`RigidBody3D<class_RigidBody3D>` nodes are allowed to go to sleep if their velocity is below the threshold defined in :ref:`physics/jolt_physics_3d/simulation/sleep_velocity_threshold<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/sleep_velocity_threshold>` for the duration set in :ref:`physics/jolt_physics_3d/simulation/sleep_time_threshold<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/sleep_time_threshold>`. This can improve physics simulation performance when there are non-moving :ref:`RigidBody3D<class_RigidBody3D>` nodes, at the cost of some nodes possibly failing to wake up in certain scenarios. Consider disabling this temporarily to troubleshoot :ref:`RigidBody3D<class_RigidBody3D>` nodes not moving when they should.
 
 .. rst-class:: classref-item-separator
 
@@ -11157,9 +11157,9 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/baumgarte_stabilization_factor** = ``0.2`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/baumgarte_stabilization_factor>`
 
-在物理步骤中修正 :ref:`RigidBody3D<class_RigidBody3D>` 位置误差的比例，其中 ``0.0`` 表示不修正， ``1.0`` 表示完全修正。这个设置会影响物体脱离重叠状态的速度。
+How much of the position error of a :ref:`RigidBody3D<class_RigidBody3D>` to fix during a physics step, where ``0.0`` is none and ``1.0`` is the full amount. This affects things like how quickly bodies depenetrate.
 
-\ **注意：**\ 将该值设置得过高可能会导致 :ref:`RigidBody3D<class_RigidBody3D>` 节点不稳定。
+\ **Note:** Setting this value too high can make :ref:`RigidBody3D<class_RigidBody3D>` nodes unstable.
 
 .. rst-class:: classref-item-separator
 
@@ -11171,7 +11171,7 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/body_pair_contact_cache_angle_threshold** = ``0.034906585`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/body_pair_contact_cache_angle_threshold>`
 
-一对物体可以移动的最大相对角度，移动后仍然可以重用上一个物理步骤的碰撞结果，单位为弧度。
+The maximum relative angle by which a body pair can move and still reuse the collision results from the previous physics step, in radians.
 
 .. rst-class:: classref-item-separator
 
@@ -11183,7 +11183,7 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/body_pair_contact_cache_distance_threshold** = ``0.001`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/body_pair_contact_cache_distance_threshold>`
 
-一对物体可以移动的最大相对距离，移动后仍然可以重用上一个物理步骤的碰撞结果，单位为米。
+The maximum relative distance by which a body pair can move and still reuse the collision results from the previous physics step, in meters.
 
 .. rst-class:: classref-item-separator
 
@@ -11195,7 +11195,7 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`bool<class_bool>` **physics/jolt_physics_3d/simulation/body_pair_contact_cache_enabled** = ``true`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/body_pair_contact_cache_enabled>`
 
-如果为 ``true``\ ，则会启用物体对的接触缓存，这样在两个物体的相对方向变化不大时就不必再进行碰撞检测了，这种检测的开销可能很大。
+If ``true``, enables the body pair contact cache, which removes the need for potentially expensive collision detection when the relative orientation between two bodies hasn't changed much.
 
 .. rst-class:: classref-item-separator
 
@@ -11207,7 +11207,7 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/bounce_velocity_threshold** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/bounce_velocity_threshold>`
 
-发生弹性碰撞所需的最小速度，单位为米每秒。
+The minimum velocity needed before a collision can be bouncy, in meters per second.
 
 .. rst-class:: classref-item-separator
 
@@ -11219,7 +11219,7 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/continuous_cd_max_penetration** = ``0.25`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/continuous_cd_max_penetration>`
 
-使用连续碰撞检测时，一个物体的内半径能够穿透另一个物体的比例。
+Fraction of a body's inner radius that may penetrate another body while using continuous collision detection.
 
 .. rst-class:: classref-item-separator
 
@@ -11231,7 +11231,7 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/continuous_cd_movement_threshold** = ``0.75`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/continuous_cd_movement_threshold>`
 
-为了使用连续碰撞检测，物体每一步必须移动的内半径的比例。
+Fraction of a body's inner radius that the body must move per step to make use of continuous collision detection.
 
 .. rst-class:: classref-item-separator
 
@@ -11243,9 +11243,9 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`bool<class_bool>` **physics/jolt_physics_3d/simulation/generate_all_kinematic_contacts** = ``false`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/generate_all_kinematic_contacts>`
 
-如果为 ``true``\ ，则使用 :ref:`RigidBody3D.FREEZE_MODE_KINEMATIC<class_RigidBody3D_constant_FREEZE_MODE_KINEMATIC>` 冻结的 :ref:`RigidBody3D<class_RigidBody3D>` 能够与其他运动学物体和静态物体发生碰撞，从而生成接触点。
+If ``true``, a :ref:`RigidBody3D<class_RigidBody3D>` frozen with :ref:`RigidBody3D.FREEZE_MODE_KINEMATIC<class_RigidBody3D_constant_FREEZE_MODE_KINEMATIC>` is able to collide with other kinematic and static bodies, and therefore generate contacts for them.
 
-\ **注意：**\ 如果允许许多/大型冻结的 :ref:`RigidBody3D.max_contacts_reported<class_RigidBody3D_property_max_contacts_reported>` 非零的运动学物体与 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`\ 、\ :ref:`HeightMapShape3D<class_HeightMapShape3D>` 等复杂的静态几何体重叠，那么这个设置可能会带来较高的 CPU 和内存开销。
+\ **Note:** This setting can come at a heavy CPU and memory cost if you allow many/large frozen kinematic bodies with a non-zero :ref:`RigidBody3D.max_contacts_reported<class_RigidBody3D_property_max_contacts_reported>` to overlap with complex static geometry, such as :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` or :ref:`HeightMapShape3D<class_HeightMapShape3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11257,7 +11257,7 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/penetration_slop** = ``0.02`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/penetration_slop>`
 
-允许物体相互穿透的程度，单位为米。
+How much bodies are allowed to penetrate each other, in meters.
 
 .. rst-class:: classref-item-separator
 
@@ -11269,7 +11269,7 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`int<class_int>` **physics/jolt_physics_3d/simulation/position_steps** = ``2`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/position_steps>`
 
-求解器的位置迭代次数。迭代次数越大，模拟精确度越高，但对 CPU 性能的消耗也越大。
+Number of solver position iterations. The greater the number of iterations, the more accurate the simulation will be, at the cost of CPU performance.
 
 .. rst-class:: classref-item-separator
 
@@ -11281,7 +11281,7 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/sleep_time_threshold** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/sleep_time_threshold>`
 
-:ref:`RigidBody3D<class_RigidBody3D>` 的速度低于休眠速度阈值时，进入休眠前等待的时间，单位为秒。
+Time in seconds a :ref:`RigidBody3D<class_RigidBody3D>` will spend below the sleep velocity threshold before going to sleep.
 
 .. rst-class:: classref-item-separator
 
@@ -11293,7 +11293,7 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/sleep_velocity_threshold** = ``0.03`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/sleep_velocity_threshold>`
 
-:ref:`RigidBody3D<class_RigidBody3D>` 包围盒上指定点的线速度，单位为米每秒，低于该速度时可以将其置于休眠状态。这些点有助于捕捉 :ref:`RigidBody3D<class_RigidBody3D>` 的线性运动和角运动。
+The linear velocity of specific points on the bounding box of a :ref:`RigidBody3D<class_RigidBody3D>`, below which it can be put to sleep, in meters per second. These points help capture both the linear and angular motion of a :ref:`RigidBody3D<class_RigidBody3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11305,7 +11305,7 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/soft_body_point_radius** = ``0.01`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/soft_body_point_radius>`
 
-:ref:`SoftBody3D<class_SoftBody3D>` 的点的大小，单位为米。较高的值可以防止布料与其他表面完全贴合而导致的 Z 冲突行为。
+How big the points of a :ref:`SoftBody3D<class_SoftBody3D>` are, in meters. A higher value can prevent behavior such as cloth laying perfectly flush against other surfaces and causing Z-fighting.
 
 .. rst-class:: classref-item-separator
 
@@ -11317,9 +11317,9 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/speculative_contact_distance** = ``0.02`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/speculative_contact_distance>`
 
-围绕物理体的半径，单位为米，位于此半径中的推测接触点能够被检测到。主要用于防止 :ref:`RigidBody3D<class_RigidBody3D>` 节点在模拟中发生隧穿/穿透。
+Radius around physics bodies, inside which speculative contact points will be detected, in meters. This is mainly used to prevent tunneling/penetration for :ref:`RigidBody3D<class_RigidBody3D>` nodes during simulation.
 
-\ **注意：**\ 设置得过高可能导致幽灵碰撞，因为推测接触是基于碰撞检测步骤中最接近的点，而在两个物体碰撞时，这些点可能并不是实际的最接近点。
+\ **Note:** Setting this too high may result in ghost collisions, as speculative contacts are based on the closest points during the collision detection step which may not be the actual closest points by the time the two bodies hit.
 
 .. rst-class:: classref-item-separator
 
@@ -11331,7 +11331,7 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`bool<class_bool>` **physics/jolt_physics_3d/simulation/use_enhanced_internal_edge_removal** = ``true`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/use_enhanced_internal_edge_removal>`
 
-如果为 ``true``\ ，则会启用 Jolt 对 :ref:`RigidBody3D<class_RigidBody3D>` 的增强内部边缘移除。这样做有利于减轻幽灵碰撞，例如在 :ref:`RigidBody3D<class_RigidBody3D>` 与两个完美连接的 :ref:`BoxShape3D<class_BoxShape3D>` 边缘碰撞时就可能产生这样的碰撞。移除仅适用于单个物体内部的边缘，即不同物体之间的边缘仍然可能发生幽灵碰撞。
+If ``true``, enables Jolt's enhanced internal edge removal for :ref:`RigidBody3D<class_RigidBody3D>`. This can help alleviate ghost collisions when, for example, a :ref:`RigidBody3D<class_RigidBody3D>` collides with the edges of two perfectly joined :ref:`BoxShape3D<class_BoxShape3D>`. The removal only applies to edges internal to a single body, meaning edges between separate bodies can still cause ghost collisions.
 
 .. rst-class:: classref-item-separator
 
@@ -11343,9 +11343,9 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`int<class_int>` **physics/jolt_physics_3d/simulation/velocity_steps** = ``10`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/velocity_steps>`
 
-求解器的速度迭代次数。迭代次数越大，模拟精确度越高，但对 CPU 性能的消耗也越大。
+Number of solver velocity iterations. The greater the number of iterations, the more accurate the simulation will be, at the cost of CPU performance.
 
-\ **注意：**\ 至少为 ``2`` 阻力才会生效，因为阻力需要根据上一次迭代的非穿透冲量进行计算。
+\ **Note:** This needs to be at least ``2`` in order for friction to work, as friction is applied using the non-penetration impulse from the previous iteration.
 
 .. rst-class:: classref-item-separator
 
@@ -11357,7 +11357,7 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`int<class_int>` **rendering/2d/batching/item_buffer_size** = ``16384`` :ref:`🔗<class_ProjectSettings_property_rendering/2d/batching/item_buffer_size>`
 
-可以批处理到单个绘制调用中的最大画布项目命令数量。
+Maximum number of canvas item commands that can be batched into a single draw call.
 
 .. rst-class:: classref-item-separator
 
@@ -11369,9 +11369,9 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`int<class_int>` **rendering/2d/batching/uniform_set_cache_size** = ``4096`` :ref:`🔗<class_ProjectSettings_property_rendering/2d/batching/uniform_set_cache_size>`
 
-在批处理绘制调用时，2D 渲染器缓存的 Uniform 集的最大数量。
+Maximum number of uniform sets that will be cached by the 2D renderer when batching draw calls.
 
-\ **注意：**\ 如果项目每帧都会渲染大量不同的精灵纹理，增加该值会提升性能。
+\ **Note:** Increasing this value can improve performance if the project renders many unique sprite textures every frame.
 
 .. rst-class:: classref-item-separator
 
@@ -11383,11 +11383,11 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`int<class_int>` **rendering/2d/sdf/oversize** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/2d/sdf/oversize>`
 
-控制 2D 带符号距离场应该覆盖原始视口中多大的区域。该 SDF 可以在 :ref:`CanvasItem<class_CanvasItem>` 着色器中采样，用于 :ref:`GPUParticles2D<class_GPUParticles2D>` 碰撞。生成带符号距离场时，较高的值能够让部分处于视口外的遮挡器也纳入考虑范围，但会以牺牲性能为代价。如果你注意到 :ref:`LightOccluder2D<class_LightOccluder2D>` 离开视口时粒子会穿过遮挡器，就可以增大这个设置。
+Controls how much of the original viewport size should be covered by the 2D signed distance field. This SDF can be sampled in :ref:`CanvasItem<class_CanvasItem>` shaders and is used for :ref:`GPUParticles2D<class_GPUParticles2D>` collision. Higher values allow portions of occluders located outside the viewport to still be taken into account in the generated signed distance field, at the cost of performance. If you notice particles falling through :ref:`LightOccluder2D<class_LightOccluder2D>`\ s as the occluders leave the viewport, increase this setting.
 
-每一侧每个轴上都会添加指定的百分比。例如，默认设置为 120% 就会让带符号距离场覆盖视口之外每侧（上、右、下、左）各 20% 的大小。
+The percentage specified is added on each axis and on both sides. For example, with the default setting of 120%, the signed distance field will cover 20% of the viewport's size outside the viewport on each side (top, right, bottom, left).
 
-\ **注意：**\ 这个属性仅在项目启动时读取。要在运行时修改 2D SDF 扩界百分比，请改用 :ref:`RenderingServer.viewport_set_sdf_oversize_and_scale()<class_RenderingServer_method_viewport_set_sdf_oversize_and_scale>`\ 。
+\ **Note:** This property is only read when the project starts. To change the 2D SDF oversizing percentage at runtime, use :ref:`RenderingServer.viewport_set_sdf_oversize_and_scale()<class_RenderingServer_method_viewport_set_sdf_oversize_and_scale>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -11399,9 +11399,9 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`int<class_int>` **rendering/2d/sdf/scale** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/2d/sdf/scale>`
 
-2D 带符号距离场的分辨率缩放。设置为较大的值能够得到更精确的带符号距离场，也能让带符号距离场在相机移动时更为稳定，但代价是牺牲性能。默认值（50%）表示每个轴使用视口大小的一半大小的分辨率，因此生成的 SDF 的像素数量是视口像素数量的 25%。
+The resolution scale to use for the 2D signed distance field. Higher values lead to a more precise and more stable signed distance field as the camera moves, at the cost of performance. The default value (50%) renders at half the resolution of the viewport size on each axis, which means the SDF is generated with 25% of the viewport's pixel count.
 
-\ **注意：**\ 该属性仅在项目启动时读取。 要在运行时更改 2D SDF 分辨率缩放，请改为使用 :ref:`RenderingServer.viewport_set_sdf_oversize_and_scale()<class_RenderingServer_method_viewport_set_sdf_oversize_and_scale>`\ 。
+\ **Note:** This property is only read when the project starts. To change the 2D SDF resolution scale at runtime, use :ref:`RenderingServer.viewport_set_sdf_oversize_and_scale()<class_RenderingServer_method_viewport_set_sdf_oversize_and_scale>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -11413,9 +11413,9 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`int<class_int>` **rendering/2d/shadow_atlas/size** = ``2048`` :ref:`🔗<class_ProjectSettings_property_rendering/2d/shadow_atlas/size>`
 
-2D 阴影图集的大小，单位为像素。值越高，\ :ref:`Light2D<class_Light2D>` 的阴影越精确，但性能消耗和显存占用也越大。指定的值会根据最接近的 2 的幂进行向上取整。
+The size of the 2D shadow atlas in pixels. Higher values result in more precise :ref:`Light2D<class_Light2D>` shadows, at the cost of performance and video memory usage. The specified value is rounded up to the nearest power of 2.
 
-\ **注意：**\ 这个属性仅在项目启动时读取。要在运行时修改 2D 阴影图集的大小，请改用 :ref:`RenderingServer.canvas_set_shadow_texture_size()<class_RenderingServer_method_canvas_set_shadow_texture_size>`\ 。
+\ **Note:** This property is only read when the project starts. To change the 2D shadow atlas size at runtime, use :ref:`RenderingServer.canvas_set_shadow_texture_size()<class_RenderingServer_method_canvas_set_shadow_texture_size>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -11427,13 +11427,13 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`bool<class_bool>` **rendering/2d/snap/snap_2d_transforms_to_pixel** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/2d/snap/snap_2d_transforms_to_pixel>`
 
-如果为 ``true``\ ，则 :ref:`CanvasItem<class_CanvasItem>` 节点会在内部吸附到整像素。对于低分辨率像素艺术游戏很有用。节点的位置仍然可以是次像素的，但小数点不会产生影响，因为位置被四舍五入。这样外观看上去就会更锐利，但会影响移动的平滑程度，尤其是在启用了 :ref:`Camera2D<class_Camera2D>` 平滑的情况下。
+If ``true``, :ref:`CanvasItem<class_CanvasItem>` nodes will internally snap to full pixels. Useful for low-resolution pixel art games. Their position can still be sub-pixel, but the decimals will not have effect as the position is rounded. This can lead to a crisper appearance at the cost of less smooth movement, especially when :ref:`Camera2D<class_Camera2D>` smoothing is enabled.
 
-\ **注意：**\ 这个属性仅在项目启动时读取。要在运行时开关 2D 变换的吸附，请改为在根 :ref:`Viewport<class_Viewport>` 上使用 :ref:`RenderingServer.viewport_set_snap_2d_transforms_to_pixel()<class_RenderingServer_method_viewport_set_snap_2d_transforms_to_pixel>`\ 。
+\ **Note:** This property is only read when the project starts. To toggle 2D transform snapping at runtime, use :ref:`RenderingServer.viewport_set_snap_2d_transforms_to_pixel()<class_RenderingServer_method_viewport_set_snap_2d_transforms_to_pixel>` on the root :ref:`Viewport<class_Viewport>` instead.
 
-\ **注意：**\ :ref:`Control<class_Control>` 节点默认就是吸附到最接近的像素的。这种行为由 :ref:`gui/common/snap_controls_to_pixels<class_ProjectSettings_property_gui/common/snap_controls_to_pixels>` 控制。
+\ **Note:** :ref:`Control<class_Control>` nodes are snapped to the nearest pixel by default. This is controlled by :ref:`gui/common/snap_controls_to_pixels<class_ProjectSettings_property_gui/common/snap_controls_to_pixels>`.
 
-\ **注意：**\ 不建议将该设置与 :ref:`rendering/2d/snap/snap_2d_vertices_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_vertices_to_pixel>` 一起使用，因为移动可能会显得更不平滑。最好只启用该设置。
+\ **Note:** It is not recommended to use this setting together with :ref:`rendering/2d/snap/snap_2d_vertices_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_vertices_to_pixel>`, as movement may appear even less smooth. Prefer only enabling this setting instead.
 
 .. rst-class:: classref-item-separator
 
@@ -11445,13 +11445,13 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`bool<class_bool>` **rendering/2d/snap/snap_2d_vertices_to_pixel** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/2d/snap/snap_2d_vertices_to_pixel>`
 
-如果为 ``true``\ ，则 :ref:`CanvasItem<class_CanvasItem>` 节点的顶点会吸附到整像素。对于低分辨率像素艺术游戏很有用。只影响最终顶点的位置，不影响变换。这样外观看上去就会更锐利，但会影响移动的平滑程度，尤其是在启用了 :ref:`Camera2D<class_Camera2D>` 平滑的情况下。
+If ``true``, vertices of :ref:`CanvasItem<class_CanvasItem>` nodes will snap to full pixels. Useful for low-resolution pixel art games. Only affects the final vertex positions, not the transforms. This can lead to a crisper appearance at the cost of less smooth movement, especially when :ref:`Camera2D<class_Camera2D>` smoothing is enabled.
 
-\ **注意：**\ 这个属性仅在项目启动时读取。要在运行时开关 2D 顶点的吸附，请改为在根 :ref:`Viewport<class_Viewport>` 上使用 :ref:`RenderingServer.viewport_set_snap_2d_vertices_to_pixel()<class_RenderingServer_method_viewport_set_snap_2d_vertices_to_pixel>`\ 。
+\ **Note:** This property is only read when the project starts. To toggle 2D vertex snapping at runtime, use :ref:`RenderingServer.viewport_set_snap_2d_vertices_to_pixel()<class_RenderingServer_method_viewport_set_snap_2d_vertices_to_pixel>` on the root :ref:`Viewport<class_Viewport>` instead.
 
-\ **注意：**\ :ref:`Control<class_Control>` 节点默认就是吸附到最接近的像素的。这种行为由 :ref:`gui/common/snap_controls_to_pixels<class_ProjectSettings_property_gui/common/snap_controls_to_pixels>` 控制。
+\ **Note:** :ref:`Control<class_Control>` nodes are snapped to the nearest pixel by default. This is controlled by :ref:`gui/common/snap_controls_to_pixels<class_ProjectSettings_property_gui/common/snap_controls_to_pixels>`.
 
-\ **注意：**\ 不建议将该设置与 :ref:`rendering/2d/snap/snap_2d_transforms_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_transforms_to_pixel>` 一起使用，因为移动可能会显得更不平滑。最好只启用该设置。
+\ **Note:** It is not recommended to use this setting together with :ref:`rendering/2d/snap/snap_2d_transforms_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_transforms_to_pixel>`, as movement may appear even less smooth. Prefer only enabling that setting instead.
 
 .. rst-class:: classref-item-separator
 
@@ -11463,11 +11463,11 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`int<class_int>` **rendering/anti_aliasing/quality/msaa_2d** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_2d>`
 
-设置用于 2D/Canvas 渲染的多重采样抗锯齿（MSAA）采样数（为 2 的幂）。MSAA 可用于减少多边形边缘周围的锯齿。较高的 MSAA 值会产生更平滑的边缘，但在某些硬件上可能会明显变慢，尤其是显存带宽比较有限的集成显卡。这对着色器引起的锯齿或纹理锯齿无效。
+Sets the number of multisample antialiasing (MSAA) samples to use for 2D/Canvas rendering (as a power of two). MSAA is used to reduce aliasing around the edges of polygons. A higher MSAA value results in smoother edges but can be significantly slower on some hardware, especially integrated graphics due to their limited memory bandwidth. This has no effect on shader-induced aliasing or texture aliasing.
 
-\ **注意：**\ MSAA 仅支持 Forward+ 和 Mobile 渲染方式，不支持 Compatibility。
+\ **Note:** MSAA is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
 
-\ **注意：**\ 该属性仅在项目启动时读取。要在运行时设置 2D MSAA 的采样数，请设置 :ref:`Viewport.msaa_2d<class_Viewport_property_msaa_2d>` 或使用 :ref:`RenderingServer.viewport_set_msaa_2d()<class_RenderingServer_method_viewport_set_msaa_2d>`\ 。
+\ **Note:** This property is only read when the project starts. To set the number of 2D MSAA samples at runtime, set :ref:`Viewport.msaa_2d<class_Viewport_property_msaa_2d>` or use :ref:`RenderingServer.viewport_set_msaa_2d()<class_RenderingServer_method_viewport_set_msaa_2d>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11479,9 +11479,9 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`int<class_int>` **rendering/anti_aliasing/quality/msaa_3d** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>`
 
-设置用于 3D 渲染的多重采样抗锯齿（MSAA）采样数（为 2 的幂）。MSAA 用于减少多边形边缘周围的锯齿。较高的 MSAA 值会产生更平滑的边缘，但在某些硬件上可能会明显变慢，尤其是显存带宽比较有限的集成显卡。另见用于超级采样的双线性缩放 3d :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>`\ ，它提供更高的质量但更昂贵。这对着色器引起的锯齿或纹理锯齿无效。
+Sets the number of multisample antialiasing (MSAA) samples to use for 3D rendering (as a power of two). MSAA is used to reduce aliasing around the edges of polygons. A higher MSAA value results in smoother edges but can be significantly slower on some hardware, especially integrated graphics due to their limited memory bandwidth. See also :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` for supersampling, which provides higher quality but is much more expensive. This has no effect on shader-induced aliasing or texture aliasing.
 
-\ **注意：**\ 该属性仅在项目启动时读取。要在运行时设置 3D MSAA 的采样数，请设置 :ref:`Viewport.msaa_3d<class_Viewport_property_msaa_3d>` 或使用 :ref:`RenderingServer.viewport_set_msaa_3d()<class_RenderingServer_method_viewport_set_msaa_3d>`\ 。
+\ **Note:** This property is only read when the project starts. To set the number of 3D MSAA samples at runtime, set :ref:`Viewport.msaa_3d<class_Viewport_property_msaa_3d>` or use :ref:`RenderingServer.viewport_set_msaa_3d()<class_RenderingServer_method_viewport_set_msaa_3d>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11493,13 +11493,13 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`int<class_int>` **rendering/anti_aliasing/quality/screen_space_aa** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`
 
-设置默认屏幕 :ref:`Viewport<class_Viewport>` 的屏幕空间抗锯齿模式。屏幕空间抗锯齿的原理是使用后期处理着色器选择性地让边缘模糊。与 MSAA 的区别在于，MSAA 是在渲染对象时进行了多次覆盖采样。屏幕空间 AA 的方法通常比 MSAA 要快，会将镜面反射锯齿也进行平滑处理，但容易让场景变得模糊。这种模糊可以通过自动使用负的 Mipmap LOD 偏置部分缓解（见 :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`\ ）。
+Sets the screen-space antialiasing mode for the default screen :ref:`Viewport<class_Viewport>`. Screen-space antialiasing works by selectively blurring edges in a post-process shader. It differs from MSAA which takes multiple coverage samples while rendering objects. Screen-space AA methods are typically faster than MSAA and will smooth out specular aliasing, but tend to make scenes appear blurry. The blurriness is partially counteracted by automatically using a negative mipmap LOD bias (see :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`).
 
-对抗镜面反射锯齿的另一种方法是启用 :ref:`rendering/anti_aliasing/screen_space_roughness_limiter/enabled<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/enabled>`\ 。
+Another way to combat specular aliasing is to enable :ref:`rendering/anti_aliasing/screen_space_roughness_limiter/enabled<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/enabled>`.
 
-\ **注意：**\ 屏幕空间抗锯齿仅支持 Forward+ 和 Mobile 渲染方法，不支持 Compatibility。
+\ **Note:** Screen-space antialiasing is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
 
-\ **注意：**\ 该属性仅在项目启动时读取。要在运行时设置屏幕空间抗锯齿模式，请在根 :ref:`Viewport<class_Viewport>` 上设置 :ref:`Viewport.screen_space_aa<class_Viewport_property_screen_space_aa>` 或使用 :ref:`RenderingServer.viewport_set_screen_space_aa()<class_RenderingServer_method_viewport_set_screen_space_aa>`\ 。
+\ **Note:** This property is only read when the project starts. To set the screen-space antialiasing mode at runtime, set :ref:`Viewport.screen_space_aa<class_Viewport_property_screen_space_aa>` on the root :ref:`Viewport<class_Viewport>` instead, or use :ref:`RenderingServer.viewport_set_screen_space_aa()<class_RenderingServer_method_viewport_set_screen_space_aa>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11511,9 +11511,9 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`float<class_float>` **rendering/anti_aliasing/quality/smaa_edge_detection_threshold** = ``0.05`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/quality/smaa_edge_detection_threshold>`
 
-设置使用 SMAA 抗锯齿时对边界的敏感度。取值越低捕获的边界越多，但潜在的性能开销也越高。
+Sets the sensitivity to edges when using SMAA for antialiasing. Lower values will catch more edges, at a potentially higher performance cost.
 
-\ **注意：**\ 该属性仅在项目启动时读取，目前没有办法在运行时更改。
+\ **Note:** This property is only read when the project starts. There is currently no way to change this setting at run-time.
 
 .. rst-class:: classref-item-separator
 
@@ -11541,13 +11541,13 @@ In some cases, debanding may introduce a slightly noticeable dithering pattern. 
 
 :ref:`bool<class_bool>` **rendering/anti_aliasing/quality/use_taa** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`
 
-为默认屏幕 :ref:`Viewport<class_Viewport>` 启用时间抗锯齿（Temporal Anti-Aliasing）。TAA 的原理是让相机产生抖动并积累最近渲染的几帧图像，使用运动向量渲染让相机和对象产生运动。启用 TAA 会让图像变模糊，这种模糊可以通过自动使用负的 Mipmap LOD 偏置部分缓解（见 :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`\ ）。
+Enables temporal antialiasing for the default screen :ref:`Viewport<class_Viewport>`. TAA works by jittering the camera and accumulating the images of the last rendered frames, motion vector rendering is used to account for camera and object motion. Enabling TAA can make the image blurrier, which is partially counteracted by automatically using a negative mipmap LOD bias (see :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`).
 
-\ **注意：**\ 实现尚未完成，粒子及蒙皮网格等某些视觉实例可能会显示运动中的重影伪像。
+\ **Note:** The implementation is not complete yet. Some visual instances such as particles and skinned meshes may show ghosting artifacts in motion.
 
-\ **注意：**\ TAA 只支持 Forward+ 渲染方式，不支持 Mobile 或 Compatibility。
+\ **Note:** TAA is only supported in the Forward+ rendering method, not Mobile or Compatibility.
 
-\ **注意：**\ 该属性仅在项目启动时读取。要在运行时设置 TAA，请在根 :ref:`Viewport<class_Viewport>` 上设置 :ref:`Viewport.use_taa<class_Viewport_property_use_taa>` 或使用 :ref:`RenderingServer.viewport_set_use_taa()<class_RenderingServer_method_viewport_set_use_taa>`\ 。
+\ **Note:** This property is only read when the project starts. To set TAA at runtime, set :ref:`Viewport.use_taa<class_Viewport_property_use_taa>` on the root :ref:`Viewport<class_Viewport>` instead, or use :ref:`RenderingServer.viewport_set_use_taa()<class_RenderingServer_method_viewport_set_use_taa>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11559,7 +11559,7 @@ In some cases, debanding may introduce a slightly noticeable dithering pattern. 
 
 :ref:`float<class_float>` **rendering/anti_aliasing/screen_space_roughness_limiter/amount** = ``0.25`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/amount>`
 
-**注意：**\ 这个属性仅在项目启动时读取。要在运行时控制屏幕空间粗糙度限制器，请调用 :ref:`RenderingServer.screen_space_roughness_limiter_set_active()<class_RenderingServer_method_screen_space_roughness_limiter_set_active>`\ 。
+**Note:** This property is only read when the project starts. To control the screen-space roughness limiter at runtime, call :ref:`RenderingServer.screen_space_roughness_limiter_set_active()<class_RenderingServer_method_screen_space_roughness_limiter_set_active>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -11571,11 +11571,11 @@ In some cases, debanding may introduce a slightly noticeable dithering pattern. 
 
 :ref:`bool<class_bool>` **rendering/anti_aliasing/screen_space_roughness_limiter/enabled** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/enabled>`
 
-如果为 ``true``\ ，则启用空间过滤器以限制具有高频细节的区域的粗糙度。这可以在一定程度上帮助减少镜面反射锯齿，尽管不如启用 :ref:`rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`\ 。 该过滤器的性能成本很小，因此如果它对你的场景没有明显好处，请考虑禁用它。
+If ``true``, enables a spatial filter to limit roughness in areas with high-frequency detail. This can help reduce specular aliasing to an extent, though not as much as enabling :ref:`rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`. This filter has a small performance cost, so consider disabling it if it doesn't benefit your scene noticeably.
 
-\ **注意：**\ 屏幕空间粗糙度限制器只支持 Forward+ 和 Mobile 渲染方式，不支持 Compatibility。
+\ **Note:** The screen-space roughness limiter is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
 
-\ **注意：**\ 这个属性仅在项目启动时读取。要在运行时控制屏幕空间粗糙度限制器，请调用 :ref:`RenderingServer.screen_space_roughness_limiter_set_active()<class_RenderingServer_method_screen_space_roughness_limiter_set_active>`\ 。
+\ **Note:** This property is only read when the project starts. To control the screen-space roughness limiter at runtime, call :ref:`RenderingServer.screen_space_roughness_limiter_set_active()<class_RenderingServer_method_screen_space_roughness_limiter_set_active>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -11587,7 +11587,7 @@ In some cases, debanding may introduce a slightly noticeable dithering pattern. 
 
 :ref:`float<class_float>` **rendering/anti_aliasing/screen_space_roughness_limiter/limit** = ``0.18`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/limit>`
 
-**注意：**\ 这个属性仅在项目启动时读取。要在运行时控制屏幕空间粗糙度限制器，请调用 :ref:`RenderingServer.screen_space_roughness_limiter_set_active()<class_RenderingServer_method_screen_space_roughness_limiter_set_active>`\ 。
+**Note:** This property is only read when the project starts. To control the screen-space roughness limiter at runtime, call :ref:`RenderingServer.screen_space_roughness_limiter_set_active()<class_RenderingServer_method_screen_space_roughness_limiter_set_active>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -11599,7 +11599,7 @@ In some cases, debanding may introduce a slightly noticeable dithering pattern. 
 
 :ref:`int<class_int>` **rendering/camera/depth_of_field/depth_of_field_bokeh_quality** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/camera/depth_of_field/depth_of_field_bokeh_quality>`
 
-设置景深效果的质量。质量越高，采样的数量也越多，也会更慢，但看起来更平滑。
+Sets the quality of the depth of field effect. Higher quality takes more samples, which is slower but looks smoother.
 
 .. rst-class:: classref-item-separator
 
@@ -11611,7 +11611,7 @@ In some cases, debanding may introduce a slightly noticeable dithering pattern. 
 
 :ref:`int<class_int>` **rendering/camera/depth_of_field/depth_of_field_bokeh_shape** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/camera/depth_of_field/depth_of_field_bokeh_shape>`
 
-设置景深的形状。可以是方形、六边形或圆形。方形最快。圆形最真实，但计算开销也是最大的。
+Sets the depth of field shape. Can be Box, Hexagon, or Circle. Box is the fastest. Circle is the most realistic, but also the most expensive to compute.
 
 .. rst-class:: classref-item-separator
 
@@ -11623,7 +11623,7 @@ In some cases, debanding may introduce a slightly noticeable dithering pattern. 
 
 :ref:`bool<class_bool>` **rendering/camera/depth_of_field/depth_of_field_use_jitter** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/camera/depth_of_field/depth_of_field_use_jitter>`
 
-如果为 ``true``\ ，则抖动 DOF 样本以使效果稍微模糊，并隐藏低采样率创建的线条。当与较低的样本数一起使用时，这可能会导致外观略带颗粒感。
+If ``true``, jitters DOF samples to make effect slightly blurrier and hide lines created from low sample rates. This can result in a slightly grainy appearance when used with a low number of samples.
 
 .. rst-class:: classref-item-separator
 
@@ -11635,7 +11635,7 @@ In some cases, debanding may introduce a slightly noticeable dithering pattern. 
 
 :ref:`String<class_String>` **rendering/driver/depth_prepass/disable_for_vendors** = ``"PowerVR,Mali,Adreno,Apple"`` :ref:`🔗<class_ProjectSettings_property_rendering/driver/depth_prepass/disable_for_vendors>`
 
-针对某些供应商禁用 :ref:`rendering/driver/depth_prepass/enable<class_ProjectSettings_property_rendering/driver/depth_prepass/enable>`\ 。默认情况下会针对移动设备禁用前置深度阶段，因为移动设备由于独特的架构而无法从前置深度阶段中获益。
+Disables :ref:`rendering/driver/depth_prepass/enable<class_ProjectSettings_property_rendering/driver/depth_prepass/enable>` conditionally for certain vendors. By default, disables the depth prepass for mobile devices as mobile devices do not benefit from the depth prepass due to their unique architecture.
 
 .. rst-class:: classref-item-separator
 
@@ -11647,9 +11647,9 @@ In some cases, debanding may introduce a slightly noticeable dithering pattern. 
 
 :ref:`bool<class_bool>` **rendering/driver/depth_prepass/enable** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/driver/depth_prepass/enable>`
 
-如果 ``true``\ ，则在渲染 3D 材质之前先执行深度阶段。当使用复杂的材质和照明时，这样做能够显著提高过度绘制场景的性能。然而，如果场景中被遮挡的表面比较少，前置深度阶段可能会降低性能。如果你的游戏使用的是不易造成过度绘制的固定视角（例如俯视或者横版视角），请考虑禁用前置深度阶段，从而提升性能。这个设置可以在运行时更改，针对当前查看的场景来优化进行。
+If ``true``, performs a previous depth pass before rendering 3D materials. This increases performance significantly in scenes with high overdraw, when complex materials and lighting are used. However, in scenes with few occluded surfaces, the depth prepass may reduce performance. If your game is viewed from a fixed angle that makes it easy to avoid overdraw (such as top-down or side-scrolling perspective), consider disabling the depth prepass to improve performance. This setting can be changed at run-time to optimize performance depending on the scene currently being viewed.
 
-\ **注意：**\ 前置深度阶段仅在使用 Forward+ 或 Compatibility 渲染方法时支持。使用 Mobile 渲染方法时，不会执行前置深度阶段。
+\ **Note:** Depth prepass is only supported when using the Forward+ or Compatibility rendering method. When using the Mobile rendering method, there is no depth prepass performed.
 
 .. rst-class:: classref-item-separator
 
@@ -11661,9 +11661,9 @@ In some cases, debanding may introduce a slightly noticeable dithering pattern. 
 
 :ref:`int<class_int>` **rendering/driver/threads/thread_model** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/driver/threads/thread_model>`
 
-**实验性：** This setting has several known bugs which can lead to crashing, especially when using particles or resizing the window. Not recommended for use in production at this stage.
+**Experimental:** This setting has several known bugs which can lead to crashing, especially when using particles or resizing the window. Not recommended for use in production at this stage.
 
-用于渲染的线程模型。在线程上渲染可能会提高性能，但同步到主线程可能会导致更多的抖动。
+The thread model to use for rendering. Rendering on a thread may improve performance, but synchronizing to the main thread can cause a bit more jitter.
 
 .. rst-class:: classref-item-separator
 
@@ -11675,7 +11675,7 @@ In some cases, debanding may introduce a slightly noticeable dithering pattern. 
 
 :ref:`Color<class_Color>` **rendering/environment/defaults/default_clear_color** = ``Color(0.3, 0.3, 0.3, 1)`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/defaults/default_clear_color>`
 
-默认清屏颜色。\ :ref:`Viewport<class_Viewport>` 可使用其 :ref:`Environment<class_Environment>` 进行覆盖。具体见 :ref:`Environment.background_mode<class_Environment_property_background_mode>` 和 :ref:`Environment.background_color<class_Environment_property_background_color>`\ 。要通过代码更改此默认颜色，请使用 :ref:`RenderingServer.set_default_clear_color()<class_RenderingServer_method_set_default_clear_color>`\ 。
+Default background clear color. Overridable per :ref:`Viewport<class_Viewport>` using its :ref:`Environment<class_Environment>`. See :ref:`Environment.background_mode<class_Environment_property_background_mode>` and :ref:`Environment.background_color<class_Environment_property_background_color>` in particular. To change this default color programmatically, use :ref:`RenderingServer.set_default_clear_color()<class_RenderingServer_method_set_default_clear_color>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11687,7 +11687,7 @@ In some cases, debanding may introduce a slightly noticeable dithering pattern. 
 
 :ref:`String<class_String>` **rendering/environment/defaults/default_environment** = ``""`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/defaults/default_environment>`
 
-场景未指定其环境时作为回退环境使用的 :ref:`Environment<class_Environment>`\ 。无论是否设置了环境，加载场景时都会加载默认环境。如果你不依赖回退环境，那么就不需要设置这个属性。
+:ref:`Environment<class_Environment>` that will be used as a fallback environment in case a scene does not specify its own environment. The default environment is loaded in at scene load time regardless of whether you have set an environment or not. If you do not rely on the fallback environment, you do not need to set this property.
 
 .. rst-class:: classref-item-separator
 
@@ -11699,9 +11699,9 @@ In some cases, debanding may introduce a slightly noticeable dithering pattern. 
 
 :ref:`int<class_int>` **rendering/environment/glow/upscale_mode** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/glow/upscale_mode>`
 
-设置辉光效果在复制到屏幕之前的放大方式。Linear（线性）更快，但看起来棱角分明。Bicubic（双线性）更慢，但看起来比较平滑。
+Sets how the glow effect is upscaled before being copied onto the screen. Linear is faster, but looks blocky. Bicubic is slower but looks smooth.
 
-\ **注意：**\ :ref:`rendering/environment/glow/upscale_mode<class_ProjectSettings_property_rendering/environment/glow/upscale_mode>` 仅在使用 Forward+ 和 Mobile 渲染方法时有效，Compatibility 使用的辉光实现不同。
+\ **Note:** :ref:`rendering/environment/glow/upscale_mode<class_ProjectSettings_property_rendering/environment/glow/upscale_mode>` is only effective when using the Forward+ or Mobile rendering methods, as Compatibility uses a different glow implementation.
 
 .. rst-class:: classref-item-separator
 
@@ -11713,7 +11713,7 @@ In some cases, debanding may introduce a slightly noticeable dithering pattern. 
 
 :ref:`int<class_int>` **rendering/environment/glow/upscale_mode.mobile** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/glow/upscale_mode.mobile>`
 
-由于性能或驱动程序支持问题，\ :ref:`rendering/environment/glow/upscale_mode<class_ProjectSettings_property_rendering/environment/glow/upscale_mode>` 在移动设备上的低端覆盖项。
+Lower-end override for :ref:`rendering/environment/glow/upscale_mode<class_ProjectSettings_property_rendering/environment/glow/upscale_mode>` on mobile devices, due to performance concerns or driver support.
 
 .. rst-class:: classref-item-separator
 
@@ -11737,7 +11737,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`float<class_float>` **rendering/environment/ssao/adaptive_target** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssao/adaptive_target>`
 
-当 :ref:`rendering/environment/ssao/quality<class_ProjectSettings_property_rendering/environment/ssao/quality>` 被设置为 ``Ultra`` 时所使用的质量目标。值为 ``0.0`` 时的质量和速度与 ``Medium`` 相似，而值为 ``1.0`` 时的质量比其他任何设置都要高得多，代价是牺牲性能。
+Quality target to use when :ref:`rendering/environment/ssao/quality<class_ProjectSettings_property_rendering/environment/ssao/quality>` is set to ``Ultra``. A value of ``0.0`` provides a quality and speed similar to ``Medium`` while a value of ``1.0`` provides much higher quality than any of the other settings at the cost of performance.
 
 .. rst-class:: classref-item-separator
 
@@ -11749,7 +11749,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/environment/ssao/blur_passes** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssao/blur_passes>`
 
-模糊通道数，在计算屏幕空间环境光遮蔽时使用。数值越大，外观越平滑，但计算速度会变慢，高频细节也会变少。
+Number of blur passes to use when computing screen-space ambient occlusion. A higher number will result in a smoother look, but will be slower to compute and will have less high-frequency detail.
 
 .. rst-class:: classref-item-separator
 
@@ -11761,7 +11761,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`float<class_float>` **rendering/environment/ssao/fadeout_from** = ``50.0`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssao/fadeout_from>`
 
-屏幕空间环境光遮蔽效果开始淡出的距离。使用该属性可以在较远处隐藏环境光遮蔽。
+Distance at which the screen-space ambient occlusion effect starts to fade out. Use this hide ambient occlusion from far away.
 
 .. rst-class:: classref-item-separator
 
@@ -11773,7 +11773,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`float<class_float>` **rendering/environment/ssao/fadeout_to** = ``300.0`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssao/fadeout_to>`
 
-屏幕空间环境光遮蔽效果完全淡出的距离。使用该属性可以在较远处隐藏环境光遮蔽。
+Distance at which the screen-space ambient occlusion is fully faded out. Use this hide ambient occlusion from far away.
 
 .. rst-class:: classref-item-separator
 
@@ -11785,7 +11785,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`bool<class_bool>` **rendering/environment/ssao/half_size** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssao/half_size>`
 
-如果为 ``true``\ ，屏幕空间环境光遮蔽将以一半大小渲染，然后在被添加到场景之前放大。这明显更快，但可能会遗漏一些小细节。如果为 ``false``\ ，屏幕空间环境光遮蔽将以全尺寸渲染。
+If ``true``, screen-space ambient occlusion will be rendered at half size and then upscaled before being added to the scene. This is significantly faster but may miss small details. If ``false``, screen-space ambient occlusion will be rendered at full size.
 
 .. rst-class:: classref-item-separator
 
@@ -11797,7 +11797,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/environment/ssao/quality** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssao/quality>`
 
-设置屏幕空间环境光遮蔽效果的质量。值越高，采样数量越多，因此最终的质量也越高，但代价是消耗性能。设为 ``Ultra`` 会使用 :ref:`rendering/environment/ssao/adaptive_target<class_ProjectSettings_property_rendering/environment/ssao/adaptive_target>` 设置。
+Sets the quality of the screen-space ambient occlusion effect. Higher values take more samples and so will result in better quality, at the cost of performance. Setting to ``Ultra`` will use the :ref:`rendering/environment/ssao/adaptive_target<class_ProjectSettings_property_rendering/environment/ssao/adaptive_target>` setting.
 
 .. rst-class:: classref-item-separator
 
@@ -11809,7 +11809,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`float<class_float>` **rendering/environment/ssil/adaptive_target** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssil/adaptive_target>`
 
-当 :ref:`rendering/environment/ssil/quality<class_ProjectSettings_property_rendering/environment/ssil/quality>` 被设置为 ``Ultra`` 时所使用的质量目标。值为 ``0.0`` 时的质量和速度与 ``Medium`` 相似，而值为 ``1.0`` 时的质量比其他任何设置都要高得多，代价是牺牲性能。使用适应目标时，性能损耗与场景复杂度成正比。
+Quality target to use when :ref:`rendering/environment/ssil/quality<class_ProjectSettings_property_rendering/environment/ssil/quality>` is set to ``Ultra``. A value of ``0.0`` provides a quality and speed similar to ``Medium`` while a value of ``1.0`` provides much higher quality than any of the other settings at the cost of performance. When using the adaptive target, the performance cost scales with the complexity of the scene.
 
 .. rst-class:: classref-item-separator
 
@@ -11821,7 +11821,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/environment/ssil/blur_passes** = ``4`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssil/blur_passes>`
 
-模糊通道数，在计算屏幕空间间接光照时使用。数值越大，外观越平滑，但计算速度会变慢，高频细节也会变少。
+Number of blur passes to use when computing screen-space indirect lighting. A higher number will result in a smoother look, but will be slower to compute and will have less high-frequency detail.
 
 .. rst-class:: classref-item-separator
 
@@ -11833,7 +11833,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`float<class_float>` **rendering/environment/ssil/fadeout_from** = ``50.0`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssil/fadeout_from>`
 
-屏幕空间间接光照效果开始淡出的距离。使用该属性可以在较远处隐藏屏幕空间间接光照。
+Distance at which the screen-space indirect lighting effect starts to fade out. Use this to hide screen-space indirect lighting from far away.
 
 .. rst-class:: classref-item-separator
 
@@ -11845,7 +11845,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`float<class_float>` **rendering/environment/ssil/fadeout_to** = ``300.0`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssil/fadeout_to>`
 
-屏幕空间间接光照效果完全淡出的距离。使用该属性可以在较远处隐藏屏幕空间间接光照。
+Distance at which the screen-space indirect lighting is fully faded out. Use this to hide screen-space indirect lighting from far away.
 
 .. rst-class:: classref-item-separator
 
@@ -11857,7 +11857,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`bool<class_bool>` **rendering/environment/ssil/half_size** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssil/half_size>`
 
-如果为 ``true``\ ，屏幕空间间接光照将以一半大小渲染，然后在被添加到场景之前放大。这明显更快，但可能会遗漏一些小细节，部分对象的边缘也会出现发光的情况。
+If ``true``, screen-space indirect lighting will be rendered at half size and then upscaled before being added to the scene. This is significantly faster but may miss small details and may result in some objects appearing to glow at their edges.
 
 .. rst-class:: classref-item-separator
 
@@ -11869,7 +11869,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/environment/ssil/quality** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssil/quality>`
 
-设置屏幕空间间接照明效果的质量。值越高，采样数量越多，因此最终的质量也越高，但代价是消耗性能。设为 ``Ultra`` 会使用 :ref:`rendering/environment/ssil/adaptive_target<class_ProjectSettings_property_rendering/environment/ssil/adaptive_target>` 设置。
+Sets the quality of the screen-space indirect lighting effect. Higher values take more samples and so will result in better quality, at the cost of performance. Setting to ``Ultra`` will use the :ref:`rendering/environment/ssil/adaptive_target<class_ProjectSettings_property_rendering/environment/ssil/adaptive_target>` setting.
 
 .. rst-class:: classref-item-separator
 
@@ -11881,9 +11881,9 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`float<class_float>` **rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale** = ``0.01`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale>`
 
-对次表面散射效果应用深度进行缩放。较高的取值能够让灯光散射进网格的某些部分或者在屏幕空间中距离较近但深度更远的其他网格。另见 :ref:`rendering/environment/subsurface_scattering/subsurface_scattering_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_scale>`\ 。
+Scales the depth over which the subsurface scattering effect is applied. A high value may allow light to scatter into a part of the mesh or another mesh that is close in screen space but far in depth. See also :ref:`rendering/environment/subsurface_scattering/subsurface_scattering_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_scale>`.
 
-\ **注意：**\ 这个属性仅在项目启动时读取。要在运行时设置次表面散射深度缩放，请改为调用 :ref:`RenderingServer.sub_surface_scattering_set_scale()<class_RenderingServer_method_sub_surface_scattering_set_scale>`\ 。
+\ **Note:** This property is only read when the project starts. To set the subsurface scattering depth scale at runtime, call :ref:`RenderingServer.sub_surface_scattering_set_scale()<class_RenderingServer_method_sub_surface_scattering_set_scale>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -11895,9 +11895,9 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/environment/subsurface_scattering/subsurface_scattering_quality** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_quality>`
 
-设置次表面散射效果的质量。值越高越慢，但视觉效果更佳。影响 :ref:`BaseMaterial3D.subsurf_scatter_enabled<class_BaseMaterial3D_property_subsurf_scatter_enabled>` 为 ``true`` 以及设置了 ``SSS_STRENGTH`` 的 :ref:`ShaderMaterial<class_ShaderMaterial>` 的材质的渲染。
+Sets the quality of the subsurface scattering effect. Higher values are slower but look nicer. This affects the rendering of materials that have :ref:`BaseMaterial3D.subsurf_scatter_enabled<class_BaseMaterial3D_property_subsurf_scatter_enabled>` set to ``true``, along with :ref:`ShaderMaterial<class_ShaderMaterial>`\ s that set ``SSS_STRENGTH``.
 
-\ **注意：**\ 这个属性仅在项目启动时读取。要在运行时设置次表面散射质量，请改为调用 :ref:`RenderingServer.sub_surface_scattering_set_quality()<class_RenderingServer_method_sub_surface_scattering_set_quality>`\ 。
+\ **Note:** This property is only read when the project starts. To set the subsurface scattering quality at runtime, call :ref:`RenderingServer.sub_surface_scattering_set_quality()<class_RenderingServer_method_sub_surface_scattering_set_quality>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -11909,9 +11909,9 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`float<class_float>` **rendering/environment/subsurface_scattering/subsurface_scattering_scale** = ``0.05`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_scale>`
 
-缩放对次表面散射效果进行采样的距离。更改该值不会影响性能；但较高的值将导致明显的伪影，因为样本将变得明显分散。较低的值会导致散射光的散布更小。另见 :ref:`rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale>`\ 。
+Scales the distance over which samples are taken for subsurface scattering effect. Changing this does not impact performance, but higher values will result in significant artifacts as the samples will become obviously spread out. A lower value results in a smaller spread of scattered light. See also :ref:`rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale>`.
 
-\ **注意：**\ 这个属性仅在项目启动时读取。如果要在运行时设置次表面散射缩放，请改为调用 :ref:`RenderingServer.sub_surface_scattering_set_scale()<class_RenderingServer_method_sub_surface_scattering_set_scale>`\ 。
+\ **Note:** This property is only read when the project starts. To set the subsurface scattering scale at runtime, call :ref:`RenderingServer.sub_surface_scattering_set_scale()<class_RenderingServer_method_sub_surface_scattering_set_scale>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -11923,7 +11923,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/environment/volumetric_fog/use_filter** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/volumetric_fog/use_filter>`
 
-在积分之前启用体积雾效果的过滤。这大大模糊了雾，减少了精细的细节，但也平滑了粗糙的边缘和锯齿伪影。当需要更多细节时禁用。
+Enables filtering of the volumetric fog effect prior to integration. This substantially blurs the fog which reduces fine details but also smooths out harsh edges and aliasing artifacts. Disable when more detail is required.
 
 .. rst-class:: classref-item-separator
 
@@ -11935,7 +11935,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/environment/volumetric_fog/volume_depth** = ``64`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/volumetric_fog/volume_depth>`
 
-沿着片段体素缓冲区的深度使用的切片数量，用于体积雾。较小的数字会更有效，但可能会导致相机移动时出现伪影。另见 :ref:`Environment.volumetric_fog_length<class_Environment_property_volumetric_fog_length>`\ 。
+Number of slices to use along the depth of the froxel buffer for volumetric fog. A lower number will be more efficient but may result in artifacts appearing during camera movement. See also :ref:`Environment.volumetric_fog_length<class_Environment_property_volumetric_fog_length>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11947,7 +11947,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/environment/volumetric_fog/volume_size** = ``64`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/volumetric_fog/volume_size>`
 
-用于确定相机 X 轴和 Y 轴中片段体素缓冲区大小的基本大小。最终大小按屏幕的长宽比缩放，因此实际值可能与设置的值不同。设置较大的大小，以获得更详细的雾；设置较小的大小，以获得更好的性能。
+Base size used to determine size of froxel buffer in the camera X-axis and Y-axis. The final size is scaled by the aspect ratio of the screen, so actual values may differ from what is set. Set a larger size for more detailed fog, set a smaller size for better performance.
 
 .. rst-class:: classref-item-separator
 
@@ -11959,21 +11959,21 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`String<class_String>` **rendering/gl_compatibility/driver** = ``"opengl3"`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/driver>`
 
-设置使用 Compatibility 渲染器时渲染器所使用的驱动。默认配置中编辑该属性无效，因为第一方平台都有各自特定的覆盖项，配置这些平台的驱动请使用对应的覆盖项。
+Sets the driver to be used by the renderer when using the Compatibility renderer. Editing this property has no effect in the default configuration, as first-party platforms each have platform-specific overrides. Use those overrides to configure the driver for each platform.
 
-可以使用 ``--rendering-driver <driver>`` 命令行参数覆盖。
+This can be overridden using the ``--rendering-driver <driver>`` command line argument.
 
-支持的值有：
+Supported values are:
 
-- ``opengl3``\ ，桌面平台为 OpenGL 3.3，移动平台为 OpenGL ES 3.0，Web 平台为 WebGL 2.0。
+- ``opengl3``, OpenGL 3.3 on desktop platforms, OpenGL ES 3.0 on mobile platforms, WebGL 2.0 on web.
 
-- ``opengl3_angle``\ ，使用 ANGLE 兼容层的 OpenGL ES 3.0，支持 macOS（原生 OpenGL）和 Windows（基于 Direct3D 11）。
+- ``opengl3_angle``, OpenGL ES 3.0 using the ANGLE compatibility layer, supported on macOS (over native OpenGL) and Windows (over Direct3D 11).
 
-- ``opengl3_es``\ ，Linux/BSD 为 OpenGL ES 3.0。
+- ``opengl3_es``, OpenGL ES 3.0 on Linux/BSD.
 
-\ **注意：**\ 这些选项是否可用取决于编译引擎时是否开启了对应的支持（由 SCons 选项 ``opengl3`` 和 ``angle_libs`` 决定）。
+\ **Note:** The availability of these options depends on whether the engine was compiled with support for them (determined by SCons options ``opengl3`` and ``angle_libs``).
 
-\ **注意：**\ 实际的渲染驱动程序可能会因为回退或用户指定的命令行参数而被引擎自动更改。要获取在运行时使用的实际渲染驱动程序，请使用 :ref:`RenderingServer.get_current_rendering_driver_name()<class_RenderingServer_method_get_current_rendering_driver_name>`\ ，不要读取该项目设置的值。
+\ **Note:** The actual rendering driver may be automatically changed by the engine as a result of a fallback, or a user-specified command line argument. To get the actual rendering driver that is used at runtime, use :ref:`RenderingServer.get_current_rendering_driver_name()<class_RenderingServer_method_get_current_rendering_driver_name>` instead of reading this project setting's value.
 
 .. rst-class:: classref-item-separator
 
@@ -11985,11 +11985,11 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`String<class_String>` **rendering/gl_compatibility/driver.android** = ``"opengl3"`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/driver.android>`
 
-:ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` 的 Android 覆盖项。
+Android override for :ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>`.
 
-仅支持一个选项：
+Only one option is supported:
 
-- ``opengl3``\ ，原生驱动的 OpenGL ES 3.0。
+- ``opengl3``, OpenGL ES 3.0 from native drivers.
 
 .. rst-class:: classref-item-separator
 
@@ -12001,11 +12001,11 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`String<class_String>` **rendering/gl_compatibility/driver.ios** = ``"opengl3"`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/driver.ios>`
 
-:ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` 的 iOS 覆盖项。
+iOS override for :ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>`.
 
-仅支持一个选项：
+Only one option is supported:
 
-- ``opengl3``\ ，原生驱动的 OpenGL ES 3.0。
+- ``opengl3``, OpenGL ES 3.0 from native drivers.
 
 .. rst-class:: classref-item-separator
 
@@ -12017,13 +12017,13 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`String<class_String>` **rendering/gl_compatibility/driver.linuxbsd** = ``"opengl3"`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/driver.linuxbsd>`
 
-:ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` 的 LinuxBSD 覆盖项。
+LinuxBSD override for :ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>`.
 
-支持两个选项：
+Two options are supported:
 
-- ``opengl3``\ （默认），原生驱动的 OpenGL 3.3。
+- ``opengl3`` (default), OpenGL 3.3 from native drivers.
 
-- ``opengl3_es``\ ，原生驱动的 OpenGL ES 3.0。如果启用了 :ref:`rendering/gl_compatibility/fallback_to_gles<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_gles>`\ ，则会在不支持 OpenGL 3.3 时作为回退使用。
+- ``opengl3_es``, OpenGL ES 3.0 from native drivers. If :ref:`rendering/gl_compatibility/fallback_to_gles<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_gles>` is enabled, this is used as a fallback if OpenGL 3.3 is not supported.
 
 .. rst-class:: classref-item-separator
 
@@ -12035,13 +12035,13 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`String<class_String>` **rendering/gl_compatibility/driver.macos** = ``"opengl3"`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/driver.macos>`
 
-:ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` 的 macOS 覆盖项。
+macOS override for :ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>`.
 
-支持两个选项：
+Two options are supported:
 
-- ``opengl3``\ （默认），原生驱动的 OpenGL 3.3。如果启用了 :ref:`rendering/gl_compatibility/fallback_to_native<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_native>`\ ，则会在将 ANGLE 配置为首选驱动但不支持时作为回退使用。
+- ``opengl3`` (default), OpenGL 3.3 from native drivers. If :ref:`rendering/gl_compatibility/fallback_to_native<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_native>` is enabled, this is used as a fallback if ANGLE is configured as the preferred driver but not supported.
 
-- ``opengl3_es``\ ，基于原生 OpenGL 驱动使用 ANGLE 兼容层的 OpenGL ES 3.0。如果启用了 :ref:`rendering/gl_compatibility/fallback_to_angle<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_angle>`\ ，则会在不支持 OpenGL 3.3 时作为回退使用。
+- ``opengl3_angle``, OpenGL ES 3.0 using the ANGLE compatibility layer over native OpenGL drivers. If :ref:`rendering/gl_compatibility/fallback_to_angle<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_angle>` is enabled, this is used as a fallback if OpenGL 3.3 is not supported.
 
 .. rst-class:: classref-item-separator
 
@@ -12053,11 +12053,11 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`String<class_String>` **rendering/gl_compatibility/driver.web** = ``"opengl3"`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/driver.web>`
 
-:ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` 的 Web 覆盖项。
+Web override for :ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>`.
 
-仅支持一个选项：
+Only one option is supported:
 
-- ``opengl3``\ ，WebGL 2.0。底层原生 API 取决于目标操作系统、浏览器以及浏览器配置。
+- ``opengl3``, WebGL 2.0. The underlying native API depends on the target OS, browser, and browser configuration.
 
 .. rst-class:: classref-item-separator
 
@@ -12069,13 +12069,13 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`String<class_String>` **rendering/gl_compatibility/driver.windows** = ``"opengl3"`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/driver.windows>`
 
-:ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` 的 Windows 覆盖项。
+Windows override for :ref:`rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>`.
 
-支持两个选项：
+Two options are supported:
 
-- ``opengl3``\ （默认），原生驱动的 OpenGL 3.3。如果启用了 :ref:`rendering/gl_compatibility/fallback_to_native<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_native>`\ ，则会在将 ANGLE 配置为首选驱动但不支持时作为回退使用。
+- ``opengl3`` (default), OpenGL 3.3 from native drivers. If :ref:`rendering/gl_compatibility/fallback_to_native<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_native>` is enabled, this is used as a fallback if ANGLE is configured as the preferred driver but not supported.
 
-- ``opengl3_angle``\ ，基于原生 Direct3D 11 驱动使用 ANGLE 兼容层的 OpenGL ES 3.0。如果启用了 :ref:`rendering/gl_compatibility/fallback_to_angle<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_angle>`\ ，则会在不支持 OpenGL 3.3 时作为回退使用。默认情况下，\ :ref:`rendering/gl_compatibility/force_angle_on_devices<class_ProjectSettings_property_rendering/gl_compatibility/force_angle_on_devices>` 中列出的设备会使用 ANGLE 作为默认驱动。
+- ``opengl3_angle``, OpenGL ES 3.0 using the ANGLE compatibility layer over native Direct3D 11 drivers. If :ref:`rendering/gl_compatibility/fallback_to_angle<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_angle>` is enabled, this is used as a fallback if OpenGL 3.3 is not supported. By default, ANGLE is used as the default driver for some devices listed in :ref:`rendering/gl_compatibility/force_angle_on_devices<class_ProjectSettings_property_rendering/gl_compatibility/force_angle_on_devices>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12087,9 +12087,9 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`bool<class_bool>` **rendering/gl_compatibility/fallback_to_angle** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_angle>`
 
-为 ``true`` 时，如果原生 OpenGL 不受支持或设备被列在 :ref:`rendering/gl_compatibility/force_angle_on_devices<class_ProjectSettings_property_rendering/gl_compatibility/force_angle_on_devices>` 中，则兼容性渲染器将回退到 ANGLE。
+If ``true``, the Compatibility renderer will fall back to ANGLE if native OpenGL is not supported or the device is listed in :ref:`rendering/gl_compatibility/force_angle_on_devices<class_ProjectSettings_property_rendering/gl_compatibility/force_angle_on_devices>`.
 
-\ **注意：**\ 该设置仅在 Windows 上实现。
+\ **Note:** This setting is implemented only on Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -12101,9 +12101,9 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`bool<class_bool>` **rendering/gl_compatibility/fallback_to_gles** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_gles>`
 
-为 ``true`` 时，如果桌面 OpenGL 不被支持，则兼容性渲染器将回退到 OpenGLES。
+If ``true``, the Compatibility renderer will fall back to OpenGLES if desktop OpenGL is not supported.
 
-\ **注意：**\ 该设置仅在 Linux/X11 上实现。
+\ **Note:** This setting is implemented only on Linux/X11.
 
 .. rst-class:: classref-item-separator
 
@@ -12115,9 +12115,9 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`bool<class_bool>` **rendering/gl_compatibility/fallback_to_native** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/fallback_to_native>`
 
-如果为 ``true``\ ，如果不支持 ANGLE 或无法找到 ANGLE 动态库，则兼容性渲染器将回退到原生 OpenGL。
+If ``true``, the Compatibility renderer will fall back to native OpenGL if ANGLE is not supported, or ANGLE dynamic libraries aren't found.
 
-\ **注意：**\ 该设置在 macOS 和 Windows 上实现。
+\ **Note:** This setting is implemented on macOS and Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -12129,11 +12129,11 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`Array<class_Array>` **rendering/gl_compatibility/force_angle_on_devices** :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/force_angle_on_devices>`
 
-应始终使用 ANGLE 渲染器的设备的 :ref:`Array<class_Array>`\ 。
+An :ref:`Array<class_Array>` of devices which should always use the ANGLE renderer.
 
-每个条目都是一个带有以下键的 :ref:`Dictionary<class_Dictionary>`\ ：\ ``vendor`` 和 ``name``\ 。\ ``name`` 可以被设置为 ``*`` 以添加所有带有指定 ``vendor`` 的设备。
+Each entry is a :ref:`Dictionary<class_Dictionary>` with the following keys: ``vendor`` and ``name``. ``name`` can be set to ``*`` to add all devices with the specified ``vendor``.
 
-\ **注意：**\ 该设置仅在 Windows 上实现。
+\ **Note:** This setting is implemented only on Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -12145,7 +12145,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/gl_compatibility/item_buffer_size** = ``16384`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/item_buffer_size>`
 
-单次视口更新中能够绘制的画布项目命令的最大数量。如果发出了更多的渲染命令，就会被忽略。降低这个限制可以在带宽有限的设备上提高性能。如果你发现不是所有的对象都在同一帧中被绘制，请提高这个限制。
+Maximum number of canvas items commands that can be drawn in a single viewport update. If more render commands are issued they will be ignored. Decreasing this limit may improve performance on bandwidth limited devices. Increase this limit if you find that not all objects are being drawn in a frame.
 
 .. rst-class:: classref-item-separator
 
@@ -12157,9 +12157,9 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`bool<class_bool>` **rendering/gl_compatibility/nvidia_disable_threaded_optimization** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/gl_compatibility/nvidia_disable_threaded_optimization>`
 
-如果为 ``true``\ ，则禁用 NVIDIA 驱动的多线程优化功能，这个功能会导致大多数 OpenGL 应用的卡顿。
+If ``true``, disables the threaded optimization feature from the NVIDIA drivers, which are known to cause stuttering in most OpenGL applications.
 
-\ **注意：**\ 这个设置仅在 Windows 上有效，因为在其他平台上多线程优化默认都是关闭的。
+\ **Note:** This setting only works on Windows, as threaded optimization is disabled by default on other platforms.
 
 .. rst-class:: classref-item-separator
 
@@ -12171,9 +12171,9 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`bool<class_bool>` **rendering/global_illumination/gi/use_half_resolution** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/global_illumination/gi/use_half_resolution>`
 
-如果为 ``true``\ ，则以减半的分辨率渲染 :ref:`VoxelGI<class_VoxelGI>` 和 SDFGI（\ :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`\ ）缓冲区（例如，当视口大小为 1920×1080 时为 960×540）。当启用 VoxelGI 或 SDFGI 时，这会显著提高性能，但代价是多边形边缘上可能会出现可见的伪影。随着视口分辨率的增加，质量损失变得不那么明显。\ :ref:`LightmapGI<class_LightmapGI>` 渲染不受该设置的影响。
+If ``true``, renders :ref:`VoxelGI<class_VoxelGI>` and SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`) buffers at halved resolution (e.g. 960×540 when the viewport size is 1920×1080). This improves performance significantly when VoxelGI or SDFGI is enabled, at the cost of artifacts that may be visible on polygon edges. The loss in quality becomes less noticeable as the viewport resolution increases. :ref:`LightmapGI<class_LightmapGI>` rendering is not affected by this setting.
 
-\ **注意：**\ 只有在项目启动时该属性才会被读取。要在运行时设置半分辨率 GI，请改为调用 :ref:`RenderingServer.gi_set_use_half_resolution()<class_RenderingServer_method_gi_set_use_half_resolution>`\ 。
+\ **Note:** This property is only read when the project starts. To set half-resolution GI at run-time, call :ref:`RenderingServer.gi_set_use_half_resolution()<class_RenderingServer_method_gi_set_use_half_resolution>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -12185,9 +12185,9 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/global_illumination/sdfgi/frames_to_converge** = ``5`` :ref:`🔗<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_converge>`
 
-用于收敛带符号距离场全局光照的帧数。值越高，得到的噪点越少，但完全收敛所需的时间也就越长。这意味着场景的全局光照处于过暗状态的时间可能更长，在相机快速移动时尤为明显。实际的收敛速度取决于渲染帧率。例如，默认设置为 30 帧，则 60 FPS 的渲染会让 SDFGI 在 0.5 秒后完全收敛。另见 :ref:`rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>` 和 :ref:`rendering/global_illumination/sdfgi/probe_ray_count<class_ProjectSettings_property_rendering/global_illumination/sdfgi/probe_ray_count>`\ 。
+The number of frames to use for converging signed distance field global illumination. Higher values lead to a less noisy result, at the cost of taking a longer time to fully converge. This means the scene's global illumination will be too dark for a longer period of time, especially when the camera moves fast. The actual convergence speed depends on rendered framerate. For example, with the default setting of 30 frames, rendering at 60 FPS will make SDFGI fully converge after 0.5 seconds. See also :ref:`rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>` and :ref:`rendering/global_illumination/sdfgi/probe_ray_count<class_ProjectSettings_property_rendering/global_illumination/sdfgi/probe_ray_count>`.
 
-\ **注意：**\ 这个属性仅在项目启动时读取。要在运行时控制 SDFGI 的收敛速度，请改为调用 :ref:`RenderingServer.environment_set_sdfgi_frames_to_converge()<class_RenderingServer_method_environment_set_sdfgi_frames_to_converge>`\ 。
+\ **Note:** This property is only read when the project starts. To control SDFGI convergence speed at runtime, call :ref:`RenderingServer.environment_set_sdfgi_frames_to_converge()<class_RenderingServer_method_environment_set_sdfgi_frames_to_converge>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -12199,11 +12199,11 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/global_illumination/sdfgi/frames_to_update_lights** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`
 
-带符号距离场全局光照中动态光照更新所需的帧数。值越高，动态灯光造成的间接光照就会花费更多的时间来更新，但动态灯光数量较多时性能会更好。另见 :ref:`rendering/global_illumination/sdfgi/frames_to_converge<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_converge>` 和 :ref:`rendering/global_illumination/sdfgi/probe_ray_count<class_ProjectSettings_property_rendering/global_illumination/sdfgi/probe_ray_count>`\ 。
+The number of frames over which dynamic lights should be updated in signed distance field global illumination. Higher values take more time to update indirect lighting coming from dynamic lights, but result in better performance when many dynamic lights are present. See also :ref:`rendering/global_illumination/sdfgi/frames_to_converge<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_converge>` and :ref:`rendering/global_illumination/sdfgi/probe_ray_count<class_ProjectSettings_property_rendering/global_illumination/sdfgi/probe_ray_count>`.
 
-\ **注意：**\ 仅影响 :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>` 为 :ref:`Light3D.BAKE_DYNAMIC<class_Light3D_constant_BAKE_DYNAMIC>`\ （默认值）的 :ref:`Light3D<class_Light3D>` 节点。让不会移动的灯光使用 :ref:`Light3D.BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>` 烘焙模式能够提升性能。
+\ **Note:** This only affects :ref:`Light3D<class_Light3D>` nodes whose :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>` is :ref:`Light3D.BAKE_DYNAMIC<class_Light3D_constant_BAKE_DYNAMIC>` (which is the default). Consider making non-moving lights use the :ref:`Light3D.BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>` bake mode to improve performance.
 
-\ **注意：**\ 这个属性仅在项目启动时读取。要在运行时控制 SDFGI 的灯光更新速度，请改为调用 :ref:`RenderingServer.environment_set_sdfgi_frames_to_update_light()<class_RenderingServer_method_environment_set_sdfgi_frames_to_update_light>`\ 。
+\ **Note:** This property is only read when the project starts. To control SDFGI light update speed at runtime, call :ref:`RenderingServer.environment_set_sdfgi_frames_to_update_light()<class_RenderingServer_method_environment_set_sdfgi_frames_to_update_light>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -12215,9 +12215,9 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/global_illumination/sdfgi/probe_ray_count** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/global_illumination/sdfgi/probe_ray_count>`
 
-计算带符号距离场全局光照时每帧发出的射线。值越高，得到的噪点越少，但性能消耗也越大。另见 :ref:`rendering/global_illumination/sdfgi/frames_to_converge<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_converge>` 和 :ref:`rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`\ 。
+The number of rays to throw per frame when computing signed distance field global illumination. Higher values lead to a less noisy result, at the cost of performance. See also :ref:`rendering/global_illumination/sdfgi/frames_to_converge<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_converge>` and :ref:`rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`.
 
-\ **注意：**\ 这个属性仅在项目启动时读取。要在运行时控制 SDFGI 的质量，请改为调用 :ref:`RenderingServer.environment_set_sdfgi_ray_count()<class_RenderingServer_method_environment_set_sdfgi_ray_count>`\ 。
+\ **Note:** This property is only read when the project starts. To control SDFGI quality at runtime, call :ref:`RenderingServer.environment_set_sdfgi_ray_count()<class_RenderingServer_method_environment_set_sdfgi_ray_count>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -12229,9 +12229,9 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/global_illumination/voxel_gi/quality** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/global_illumination/voxel_gi/quality>`
 
-要使用的 VoxelGI 质量。高质量下的光照更精确、反射质量更好，但渲染速度较慢。这个设置不影响烘焙数据，应用时不需要重新烘焙 :ref:`VoxelGI<class_VoxelGI>`\ 。
+The VoxelGI quality to use. High quality leads to more precise lighting and better reflections, but is slower to render. This setting does not affect the baked data and doesn't require baking the :ref:`VoxelGI<class_VoxelGI>` again to apply.
 
-\ **注意：**\ 这个属性仅在项目启动时读取。要在运行时控制 VoxelGI 的质量，请改为调用 :ref:`RenderingServer.voxel_gi_set_quality()<class_RenderingServer_method_voxel_gi_set_quality>`\ 。
+\ **Note:** This property is only read when the project starts. To control VoxelGI quality at runtime, call :ref:`RenderingServer.voxel_gi_set_quality()<class_RenderingServer_method_voxel_gi_set_quality>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -12243,9 +12243,9 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/lightmapping/bake_performance/max_rays_per_pass** = ``4`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/bake_performance/max_rays_per_pass>`
 
-使用 :ref:`LightmapGI<class_LightmapGI>` 烘焙光照贴图时，每阶段可以投射的最大射线数。根据场景的不同，调整该值可能会提高烘焙光照贴图时的 GPU 利用率，从而加快烘焙时间。
+The maximum number of rays that can be thrown per pass when baking lightmaps with :ref:`LightmapGI<class_LightmapGI>`. Depending on the scene, adjusting this value may result in higher GPU utilization when baking lightmaps, leading to faster bake times.
 
-\ **注意：**\ 使用对系统而言过高的值可能会导致崩溃，因为 GPU 在长时间内无响应，操作系统会重置图形驱动程序。
+\ **Note:** Using a value that is too high for your system can cause crashes due to the GPU being unresponsive for long periods of time, and the graphics driver being reset by the OS.
 
 .. rst-class:: classref-item-separator
 
@@ -12257,9 +12257,9 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/lightmapping/bake_performance/max_rays_per_probe_pass** = ``64`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/bake_performance/max_rays_per_probe_pass>`
 
-在带有 :ref:`LightmapGI<class_LightmapGI>` 的 :ref:`LightmapProbe<class_LightmapProbe>` 中烘焙动态对象光照时，每阶段可以投射的最大光线数。根据场景的不同，调整该值可能会在烘焙光照贴图时提高 GPU 利用率，从而加快烘焙时间。
+The maximum number of rays that can be thrown per pass when baking dynamic object lighting in :ref:`LightmapProbe<class_LightmapProbe>`\ s with :ref:`LightmapGI<class_LightmapGI>`. Depending on the scene, adjusting this value may result in higher GPU utilization when baking lightmaps, leading to faster bake times.
 
-\ **注意：**\ 使用对系统而言过高的值可能会导致崩溃，因为 GPU 在长时间内无响应，操作系统会重置图形驱动程序。
+\ **Note:** Using a value that is too high for your system can cause crashes due to the GPU being unresponsive for long periods of time, and the graphics driver being reset by the OS.
 
 .. rst-class:: classref-item-separator
 
@@ -12271,9 +12271,9 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/lightmapping/bake_performance/max_transparency_rays** = ``8`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/bake_performance/max_transparency_rays>`
 
-使用 :ref:`LightmapGI<class_LightmapGI>` 烘焙光照贴图时，每阶段可以投射的最大重试射线数。根据场景的不同，降低该值可能会加快烘焙时间。
+The maximum number of retry rays that can be thrown per pass when hitting a transparent surface when baking lightmaps with :ref:`LightmapGI<class_LightmapGI>`. Depending on the scene, reducing this value may lead to faster bake times.
 
-\ **注意：**\ 使用对系统而言过高的值可能会导致崩溃，因为 GPU 在长时间内无响应，操作系统会重置图形驱动程序。
+\ **Note:** Using a value that is too high for your system can cause crashes due to the GPU being unresponsive for long periods of time, and the graphics driver being reset by the OS.
 
 .. rst-class:: classref-item-separator
 
@@ -12285,9 +12285,9 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/lightmapping/bake_performance/region_size** = ``512`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/bake_performance/region_size>`
 
-使用 :ref:`LightmapGI<class_LightmapGI>` 烘焙光照贴图时使用的区域大小。指定的值会向上舍入到最近的 2 的幂。
+The region size to use when baking lightmaps with :ref:`LightmapGI<class_LightmapGI>`. The specified value is rounded up to the nearest power of 2.
 
-\ **注意：**\ 使用过高的值可能会导致系统崩溃，因为 GPU 如果长时间无响应，操作系统会重置图形驱动程序。
+\ **Note:** Using a value that is too high for your system can cause crashes due to the GPU being unresponsive for long periods of time, and the graphics driver being reset by the OS.
 
 .. rst-class:: classref-item-separator
 
@@ -12299,7 +12299,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/lightmapping/bake_quality/high_quality_probe_ray_count** = ``512`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/bake_quality/high_quality_probe_ray_count>`
 
-当 :ref:`LightmapGI.quality<class_LightmapGI_property_quality>` 为 :ref:`LightmapGI.BAKE_QUALITY_HIGH<class_LightmapGI_constant_BAKE_QUALITY_HIGH>` 时，用于在 :ref:`LightmapProbe<class_LightmapProbe>` 中烘焙动态对象光照的光线数。
+The number of rays to use for baking dynamic object lighting in :ref:`LightmapProbe<class_LightmapProbe>`\ s when :ref:`LightmapGI.quality<class_LightmapGI_property_quality>` is :ref:`LightmapGI.BAKE_QUALITY_HIGH<class_LightmapGI_constant_BAKE_QUALITY_HIGH>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12311,7 +12311,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/lightmapping/bake_quality/high_quality_ray_count** = ``512`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/bake_quality/high_quality_ray_count>`
 
-当 :ref:`LightmapGI.quality<class_LightmapGI_property_quality>` 为 :ref:`LightmapGI.BAKE_QUALITY_HIGH<class_LightmapGI_constant_BAKE_QUALITY_HIGH>` 时，用于使用 :ref:`LightmapGI<class_LightmapGI>` 烘焙光照贴图的光线数。
+The number of rays to use for baking lightmaps with :ref:`LightmapGI<class_LightmapGI>` when :ref:`LightmapGI.quality<class_LightmapGI_property_quality>` is :ref:`LightmapGI.BAKE_QUALITY_HIGH<class_LightmapGI_constant_BAKE_QUALITY_HIGH>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12323,7 +12323,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/lightmapping/bake_quality/low_quality_probe_ray_count** = ``64`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/bake_quality/low_quality_probe_ray_count>`
 
-当 :ref:`LightmapGI.quality<class_LightmapGI_property_quality>` 为 :ref:`LightmapGI.BAKE_QUALITY_LOW<class_LightmapGI_constant_BAKE_QUALITY_LOW>` 时，用于在 :ref:`LightmapProbe<class_LightmapProbe>` 中烘焙动态对象光照的光线数。
+The number of rays to use for baking dynamic object lighting in :ref:`LightmapProbe<class_LightmapProbe>`\ s when :ref:`LightmapGI.quality<class_LightmapGI_property_quality>` is :ref:`LightmapGI.BAKE_QUALITY_LOW<class_LightmapGI_constant_BAKE_QUALITY_LOW>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12335,7 +12335,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/lightmapping/bake_quality/low_quality_ray_count** = ``32`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/bake_quality/low_quality_ray_count>`
 
-当 :ref:`LightmapGI.quality<class_LightmapGI_property_quality>` 为 :ref:`LightmapGI.BAKE_QUALITY_LOW<class_LightmapGI_constant_BAKE_QUALITY_LOW>` 时，用于使用 :ref:`LightmapGI<class_LightmapGI>` 烘焙光照贴图的光线数。
+The number of rays to use for baking lightmaps with :ref:`LightmapGI<class_LightmapGI>` when :ref:`LightmapGI.quality<class_LightmapGI_property_quality>` is :ref:`LightmapGI.BAKE_QUALITY_LOW<class_LightmapGI_constant_BAKE_QUALITY_LOW>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12347,7 +12347,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/lightmapping/bake_quality/medium_quality_probe_ray_count** = ``256`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/bake_quality/medium_quality_probe_ray_count>`
 
-当 :ref:`LightmapGI.quality<class_LightmapGI_property_quality>` 为 :ref:`LightmapGI.BAKE_QUALITY_MEDIUM<class_LightmapGI_constant_BAKE_QUALITY_MEDIUM>` 时，用于在 :ref:`LightmapProbe<class_LightmapProbe>` 中烘焙动态对象光照的光线数。
+The number of rays to use for baking dynamic object lighting in :ref:`LightmapProbe<class_LightmapProbe>`\ s when :ref:`LightmapGI.quality<class_LightmapGI_property_quality>` is :ref:`LightmapGI.BAKE_QUALITY_MEDIUM<class_LightmapGI_constant_BAKE_QUALITY_MEDIUM>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12359,7 +12359,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/lightmapping/bake_quality/medium_quality_ray_count** = ``128`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/bake_quality/medium_quality_ray_count>`
 
-当 :ref:`LightmapGI.quality<class_LightmapGI_property_quality>` 为 :ref:`LightmapGI.BAKE_QUALITY_MEDIUM<class_LightmapGI_constant_BAKE_QUALITY_MEDIUM>` 时，用于使用 :ref:`LightmapGI<class_LightmapGI>` 烘焙光照贴图的光线数。
+The number of rays to use for baking lightmaps with :ref:`LightmapGI<class_LightmapGI>` when :ref:`LightmapGI.quality<class_LightmapGI_property_quality>` is :ref:`LightmapGI.BAKE_QUALITY_MEDIUM<class_LightmapGI_constant_BAKE_QUALITY_MEDIUM>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12371,7 +12371,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/lightmapping/bake_quality/ultra_quality_probe_ray_count** = ``2048`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/bake_quality/ultra_quality_probe_ray_count>`
 
-当 :ref:`LightmapGI.quality<class_LightmapGI_property_quality>` 为 :ref:`LightmapGI.BAKE_QUALITY_ULTRA<class_LightmapGI_constant_BAKE_QUALITY_ULTRA>` 时，用于在 :ref:`LightmapProbe<class_LightmapProbe>` 中烘焙动态对象光照的光线数。
+The number of rays to use for baking dynamic object lighting in :ref:`LightmapProbe<class_LightmapProbe>`\ s when :ref:`LightmapGI.quality<class_LightmapGI_property_quality>` is :ref:`LightmapGI.BAKE_QUALITY_ULTRA<class_LightmapGI_constant_BAKE_QUALITY_ULTRA>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12383,7 +12383,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/lightmapping/bake_quality/ultra_quality_ray_count** = ``2048`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/bake_quality/ultra_quality_ray_count>`
 
-当 :ref:`LightmapGI.quality<class_LightmapGI_property_quality>` 为 :ref:`LightmapGI.BAKE_QUALITY_ULTRA<class_LightmapGI_constant_BAKE_QUALITY_ULTRA>` 时，用于使用 :ref:`LightmapGI<class_LightmapGI>` 烘焙光照贴图的光线数。
+The number of rays to use for baking lightmaps with :ref:`LightmapGI<class_LightmapGI>` when :ref:`LightmapGI.quality<class_LightmapGI_property_quality>` is :ref:`LightmapGI.BAKE_QUALITY_ULTRA<class_LightmapGI_constant_BAKE_QUALITY_ULTRA>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12395,19 +12395,19 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`int<class_int>` **rendering/lightmapping/denoising/denoiser** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/denoising/denoiser>`
 
-用于对光照贴图进行降噪的降噪器工具。
+Denoiser tool used for denoising lightmaps.
 
-使用 `OpenImageDenoise <https://www.openimagedenoise.org/>`__\ （OIDN）需要在 :ref:`EditorSettings.filesystem/tools/oidn/oidn_denoise_path<class_EditorSettings_property_filesystem/tools/oidn/oidn_denoise_path>` 的编辑器设置中配置 OIDN 可执行文件的路径。OIDN 可以从 `OpenImageDenoise 的下载页面 <https://www.openimagedenoise.org/downloads.html>`__\ 下载。
+Using `OpenImageDenoise <https://www.openimagedenoise.org/>`__ (OIDN) requires configuring a path to an OIDN executable in the editor settings at :ref:`EditorSettings.filesystem/tools/oidn/oidn_denoise_path<class_EditorSettings_property_filesystem/tools/oidn/oidn_denoise_path>`. OIDN can be downloaded from `OpenImageDenoise's downloads page <https://www.openimagedenoise.org/downloads.html>`__.
 
-OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 JNLM 不同，OIDN 使用特定于供应商的加速方法。要使 GPU 加速可用，必须根据你的 GPU 在系统上安装以下库：
+OIDN will use GPU acceleration when available. Unlike JNLM which uses compute shaders for acceleration, OIDN uses vendor-specific acceleration methods. For GPU acceleration to be available, the following libraries must be installed on the system depending on your GPU:
 
-- NVIDIA GPU：CUDA 库
+- NVIDIA GPUs: CUDA libraries
 
-- AMD GPU：HIP 库
+- AMD GPUs: HIP libraries
 
-- Intel GPU：SYCL 库
+- Intel GPUs: SYCL libraries
 
-如果系统上没有配置 GPU 加速，则会执行基于 CPU 的多线程去噪。在大多数情况下，这种基于 CPU 的降噪明显慢于 JNLM 降噪器。
+If no GPU acceleration is configured on the system, multi-threaded CPU-based denoising will be performed instead. This CPU-based denoising is significantly slower than the JNLM denoiser in most cases.
 
 .. rst-class:: classref-item-separator
 
@@ -12419,9 +12419,9 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`bool<class_bool>` **rendering/lightmapping/lightmap_gi/use_bicubic_filter** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/lightmap_gi/use_bicubic_filter>`
 
-如果为 ``true``\ ，则会在光照贴图采样期间应用双三次过滤。这样光照贴图看起来会更加平滑，但会带来一定的性能开销。
+If ``true``, applies a bicubic filter during lightmap sampling. This makes lightmaps look much smoother, at a moderate performance cost.
 
-\ **注意：**\ 双三次过滤会夸大光照贴图分辨率足够低时出现的“出血”效果。
+\ **Note:** The bicubic filter exaggerates the 'bleeding' effect that occurs when a lightmap's resolution is low enough.
 
 .. rst-class:: classref-item-separator
 
@@ -12433,7 +12433,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`float<class_float>` **rendering/lightmapping/primitive_meshes/texel_size** = ``0.2`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/primitive_meshes/texel_size>`
 
-用于计算启用了 :ref:`PrimitiveMesh.add_uv2<class_PrimitiveMesh_property_add_uv2>` 的 :ref:`PrimitiveMesh<class_PrimitiveMesh>` 资源上的 :ref:`Mesh.lightmap_size_hint<class_Mesh_property_lightmap_size_hint>` 的体素大小。
+The texel_size that is used to calculate the :ref:`Mesh.lightmap_size_hint<class_Mesh_property_lightmap_size_hint>` on :ref:`PrimitiveMesh<class_PrimitiveMesh>` resources if :ref:`PrimitiveMesh.add_uv2<class_PrimitiveMesh_property_add_uv2>` is enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -12445,7 +12445,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`float<class_float>` **rendering/lightmapping/probe_capture/update_speed** = ``15`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/probe_capture/update_speed>`
 
-当表示来自 :ref:`LightmapProbe<class_LightmapProbe>` 的动态对象光照时，与帧速率无关的更新速度。较高的值使动态对象光照更新更快。较高的值可以防止快速移动的对象在其上显示“过时的”间接光照，但代价是当对象从明亮区域移动到阴影区域时可能会出现闪烁。
+The framerate-independent update speed when representing dynamic object lighting from :ref:`LightmapProbe<class_LightmapProbe>`\ s. Higher values make dynamic object lighting update faster. Higher values can prevent fast-moving objects from having "outdated" indirect lighting displayed on them, at the cost of possible flickering when an object moves from a bright area to a shaded area.
 
 .. rst-class:: classref-item-separator
 
@@ -12457,7 +12457,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`bool<class_bool>` **rendering/lights_and_shadows/directional_shadow/16_bits** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/16_bits>`
 
-使用 16 位的平行光阴影深度贴图。启用后，阴影的精度会降低，可能造成阴影失真，但能够在部分设备上提升性能。
+Use 16 bits for the directional shadow depth map. Enabling this results in shadows having less precision and may result in shadow acne, but can lead to performance improvements on some devices.
 
 .. rst-class:: classref-item-separator
 
@@ -12469,7 +12469,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/directional_shadow/size** = ``4096`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/size>`
 
-方向阴影的大小，单位为像素。值越高，得到的阴影越清晰，但会以性能为代价。取值将舍入到最接近的 2 次幂。
+The directional shadow's size in pixels. Higher values will result in sharper shadows, at the cost of performance. The value is rounded up to the nearest power of 2.
 
 .. rst-class:: classref-item-separator
 
@@ -12481,7 +12481,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/directional_shadow/size.mobile** = ``2048`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/size.mobile>`
 
-由于性能和驱动支持，在移动设备上会对 :ref:`rendering/lights_and_shadows/directional_shadow/size<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/size>` 以低配数值覆盖。
+Lower-end override for :ref:`rendering/lights_and_shadows/directional_shadow/size<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/size>` on mobile devices, due to performance concerns or driver support.
 
 .. rst-class:: classref-item-separator
 
@@ -12493,11 +12493,11 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/directional_shadow/soft_shadow_filter_quality** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/soft_shadow_filter_quality>`
 
-:ref:`DirectionalLight3D<class_DirectionalLight3D>` 投射的阴影的质量设置。质量设置地越高，从阴影贴图读取的样本越多，因此速度也越慢。质量设置地较低时，可能会导致阴影看起来有颗粒感。
+Quality setting for shadows cast by :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ s. Higher quality settings use more samples when reading from shadow maps and are thus slower. Low quality settings may result in shadows looking grainy.
 
-\ **注意：**\ Soft Very Low 设置会自动将\ *常量*\ 的阴影模糊乘以 0.75 倍，从而减少可见的噪点。这种对自动模糊的更改仅影响 :ref:`Light3D.shadow_blur<class_Light3D_property_shadow_blur>` 中定义的常量模糊系数，不影响 :ref:`DirectionalLight3D<class_DirectionalLight3D>` 的 :ref:`Light3D.light_angular_distance<class_Light3D_property_light_angular_distance>` 执行的可变模糊。
+\ **Note:** The Soft Very Low setting will automatically multiply *constant* shadow blur by 0.75x to reduce the amount of noise visible. This automatic blur change only affects the constant blur factor defined in :ref:`Light3D.shadow_blur<class_Light3D_property_shadow_blur>`, not the variable blur performed by :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ s' :ref:`Light3D.light_angular_distance<class_Light3D_property_light_angular_distance>`.
 
-\ **注意：**\ Soft High 和 Soft Ultra 设置，会自动将\ *常量*\ 的阴影模糊分别乘以 1.5 倍和 2 倍，从而更好地利用增加的样本数。这种对模糊的提升还改善了动态对象阴影的稳定性。
+\ **Note:** The Soft High and Soft Ultra settings will automatically multiply *constant* shadow blur by 1.5× and 2× respectively to make better use of the increased sample count. This increased blur also improves stability of dynamic object shadows.
 
 .. rst-class:: classref-item-separator
 
@@ -12509,7 +12509,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/directional_shadow/soft_shadow_filter_quality.mobile** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/soft_shadow_filter_quality.mobile>`
 
-由于性能和驱动支持，在移动设备上会对 :ref:`rendering/lights_and_shadows/directional_shadow/soft_shadow_filter_quality<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/soft_shadow_filter_quality>` 以低配数值覆盖。
+Lower-end override for :ref:`rendering/lights_and_shadows/directional_shadow/soft_shadow_filter_quality<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/soft_shadow_filter_quality>` on mobile devices, due to performance concerns or driver support.
 
 .. rst-class:: classref-item-separator
 
@@ -12521,7 +12521,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`bool<class_bool>` **rendering/lights_and_shadows/positional_shadow/atlas_16_bits** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_16_bits>`
 
-使用 16 位的全向灯/聚光灯阴影深度贴图。启用后，阴影的精度会降低，可能造成阴影失真，但能够在部分设备上提升性能。
+Use 16 bits for the omni/spot shadow depth map. Enabling this results in shadows having less precision and may result in shadow acne, but can lead to performance improvements on some devices.
 
 .. rst-class:: classref-item-separator
 
@@ -12533,7 +12533,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/positional_shadow/atlas_quadrant_0_subdiv** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_quadrant_0_subdiv>`
 
-阴影图集中第一象限的细分量。详见\ `文档 <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__\ 。
+The subdivision amount of the first quadrant on the shadow atlas. See the `documentation <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__ for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -12545,7 +12545,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/positional_shadow/atlas_quadrant_1_subdiv** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_quadrant_1_subdiv>`
 
-阴影图集中第二象限的细分量。详见\ `文档 <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__\ 。
+The subdivision amount of the second quadrant on the shadow atlas. See the `documentation <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__ for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -12557,7 +12557,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/positional_shadow/atlas_quadrant_2_subdiv** = ``3`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_quadrant_2_subdiv>`
 
-阴影图集中第三象限的细分量。详见\ `文档 <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__\ 。
+The subdivision amount of the third quadrant on the shadow atlas. See the `documentation <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__ for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -12569,7 +12569,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/positional_shadow/atlas_quadrant_3_subdiv** = ``4`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_quadrant_3_subdiv>`
 
-阴影图集中第四象限的细分量。详见\ `文档 <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__\ 。
+The subdivision amount of the fourth quadrant on the shadow atlas. See the `documentation <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__ for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -12581,7 +12581,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/positional_shadow/atlas_size** = ``4096`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_size>`
 
-:ref:`OmniLight3D<class_OmniLight3D>` 和 :ref:`SpotLight3D<class_SpotLight3D>` 节点所使用的阴影图集的大小。详见\ `文档 <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__\ 。
+The size of the shadow atlas used for :ref:`OmniLight3D<class_OmniLight3D>` and :ref:`SpotLight3D<class_SpotLight3D>` nodes. See the `documentation <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__ for more information.
 
 .. rst-class:: classref-item-separator
 
@@ -12593,7 +12593,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/positional_shadow/atlas_size.mobile** = ``2048`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_size.mobile>`
 
-由于性能和驱动支持，在移动设备上会对 :ref:`rendering/lights_and_shadows/positional_shadow/atlas_size<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_size>` 以低配数值覆盖。
+Lower-end override for :ref:`rendering/lights_and_shadows/positional_shadow/atlas_size<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_size>` on mobile devices, due to performance concerns or driver support.
 
 .. rst-class:: classref-item-separator
 
@@ -12605,11 +12605,11 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality>`
 
-:ref:`OmniLight3D<class_OmniLight3D>` 和 :ref:`SpotLight3D<class_SpotLight3D>` 投射的阴影的质量设置。质量设置地越高，从阴影贴图读取的样本越多，因此速度也越慢。质量设置地较低时，可能会导致阴影看起来有颗粒感。
+Quality setting for shadows cast by :ref:`OmniLight3D<class_OmniLight3D>`\ s and :ref:`SpotLight3D<class_SpotLight3D>`\ s. Higher quality settings use more samples when reading from shadow maps and are thus slower. Low quality settings may result in shadows looking grainy.
 
-\ **注意：**\ Soft Very Low 设置会自动将\ *常量*\ 的阴影模糊乘以 0.75 倍，从而减少可见的噪点。这种对自动模糊的更改仅影响 :ref:`Light3D.shadow_blur<class_Light3D_property_shadow_blur>` 中定义的常量模糊系数，不影响 :ref:`DirectionalLight3D<class_DirectionalLight3D>` 的 :ref:`Light3D.light_angular_distance<class_Light3D_property_light_angular_distance>` 执行的可变模糊。
+\ **Note:** The Soft Very Low setting will automatically multiply *constant* shadow blur by 0.75x to reduce the amount of noise visible. This automatic blur change only affects the constant blur factor defined in :ref:`Light3D.shadow_blur<class_Light3D_property_shadow_blur>`, not the variable blur performed by :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ s' :ref:`Light3D.light_angular_distance<class_Light3D_property_light_angular_distance>`.
 
-\ **注意：**\ Soft High 和 Soft Ultra 设置，会自动将阴影模糊分别乘以 1.5 倍和 2 倍，从而更好地利用增加的样本数。这种对模糊的提升还改善了动态对象阴影的稳定性。
+\ **Note:** The Soft High and Soft Ultra settings will automatically multiply shadow blur by 1.5× and 2× respectively to make better use of the increased sample count. This increased blur also improves stability of dynamic object shadows.
 
 .. rst-class:: classref-item-separator
 
@@ -12621,7 +12621,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality.mobile** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality.mobile>`
 
-由于性能和驱动支持，在移动设备上会对 :ref:`rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality>` 以低配数值覆盖。
+Lower-end override for :ref:`rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality>` on mobile devices, due to performance concerns or driver support.
 
 .. rst-class:: classref-item-separator
 
@@ -12633,9 +12633,9 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`bool<class_bool>` **rendering/lights_and_shadows/tighter_shadow_caster_culling** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/tighter_shadow_caster_culling>`
 
-如果为 ``true``\ ，则阴影无法抵达视锥的对象不会渲染在阴影贴图中。
+If ``true``, items that cannot cast shadows into the view frustum will not be rendered into shadow maps.
 
-可以提高性能。
+This can increase performance.
 
 .. rst-class:: classref-item-separator
 
@@ -12647,7 +12647,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`bool<class_bool>` **rendering/lights_and_shadows/use_physical_light_units** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>`
 
-允许对光源使用基于物理的单位。基于物理的单位往往比 Godot 使用的任意单位大得多，但它们可用于将 Godot 内的照明与真实世界的照明相匹配。由于自然界中照明条件的动态范围很大，Godot 在渲染之前会将曝光量烘焙到各种照明量中。大多数光源在运行时根据活动的 :ref:`CameraAttributes<class_CameraAttributes>` 资源自动烘焙曝光，但 :ref:`LightmapGI<class_LightmapGI>` 和 :ref:`VoxelGI<class_VoxelGI>` 需要在烘焙时设置 :ref:`CameraAttributes<class_CameraAttributes>` 资源以减少动态范围。在运行时，Godot 将自动协调烘焙的曝光与活动的曝光，以确保照明保持一致。
+Enables the use of physically based units for light sources. Physically based units tend to be much larger than the arbitrary units used by Godot, but they can be used to match lighting within Godot to real-world lighting. Due to the large dynamic range of lighting conditions present in nature, Godot bakes exposure into the various lighting quantities before rendering. Most light sources bake exposure automatically at run time based on the active :ref:`CameraAttributes<class_CameraAttributes>` resource, but :ref:`LightmapGI<class_LightmapGI>` and :ref:`VoxelGI<class_VoxelGI>` require a :ref:`CameraAttributes<class_CameraAttributes>` resource to be set at bake time to reduce the dynamic range. At run time, Godot will automatically reconcile the baked exposure with the active exposure to ensure lighting remains consistent.
 
 .. rst-class:: classref-item-separator
 
@@ -12659,11 +12659,11 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`float<class_float>` **rendering/limits/cluster_builder/max_clustered_elements** = ``512`` :ref:`🔗<class_ProjectSettings_property_rendering/limits/cluster_builder/max_clustered_elements>`
 
-可以在相机视图中一次渲染的集群元素（\ :ref:`OmniLight3D<class_OmniLight3D>` + :ref:`SpotLight3D<class_SpotLight3D>` + :ref:`Decal<class_Decal>` + :ref:`ReflectionProbe<class_ReflectionProbe>`\ ）的最大数量。如果相机视图中存在更多的集群元素，其中一些将不会被渲染（导致在相机移动期间弹出）。在灯光和贴花上启用距离淡入淡出（\ :ref:`Light3D.distance_fade_enabled<class_Light3D_property_distance_fade_enabled>`\ 、\ :ref:`Decal.distance_fade_enabled<class_Decal_property_distance_fade_enabled>`\ ）有助于避免达到该限制。
+The maximum number of clustered elements (:ref:`OmniLight3D<class_OmniLight3D>` + :ref:`SpotLight3D<class_SpotLight3D>` + :ref:`Decal<class_Decal>` + :ref:`ReflectionProbe<class_ReflectionProbe>`) that can be rendered at once in the camera view. If there are more clustered elements present in the camera view, some of them will not be rendered (leading to pop-in during camera movement). Enabling distance fade on lights and decals (:ref:`Light3D.distance_fade_enabled<class_Light3D_property_distance_fade_enabled>`, :ref:`Decal.distance_fade_enabled<class_Decal_property_distance_fade_enabled>`) can help avoid reaching this limit.
 
-减小该值可能会提高某些设置的 GPU 性能，即使在项目中从未达到集群元素最大数量也是如此。
+Decreasing this value may improve GPU performance on certain setups, even if the maximum number of clustered elements is never reached in the project.
 
-\ **注意：**\ 该设置仅在使用 Forward+ 渲染方式时有效，对 Mobile 和 Compatibility 无效。
+\ **Note:** This setting is only effective when using the Forward+ rendering method, not Mobile and Compatibility.
 
 .. rst-class:: classref-item-separator
 
@@ -12675,9 +12675,9 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/limits/global_shader_variables/buffer_size** = ``65536`` :ref:`🔗<class_ProjectSettings_property_rendering/limits/global_shader_variables/buffer_size>`
 
-全局着色器 uniform 缓冲能够使用的 uniform 的最大数量。每个条目占据一个位置。换句话说，单个 uniform float 和单个 uniform vec4 在缓冲中占据的空间是相同的。
+The maximum number of uniforms that can be used by the global shader uniform buffer. Each item takes up one slot. In other words, a single uniform float and a uniform vec4 will take the same amount of space in the buffer.
 
-\ **注意：**\ 使用 Compatibility 渲染器时，由于硬件的限制，大多数移动设备（以及所有 Web 导出）对最大数量都有 1024 的上限。
+\ **Note:** When using the Compatibility renderer, most mobile devices (and all web exports) will be limited to a maximum size of 1024 due to hardware constraints.
 
 .. rst-class:: classref-item-separator
 
@@ -12689,9 +12689,9 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/limits/opengl/max_lights_per_object** = ``8`` :ref:`🔗<class_ProjectSettings_property_rendering/limits/opengl/max_lights_per_object>`
 
-每个对象可渲染的全向灯和聚光灯的最大数量。默认值为 8，这意味着每个表面最多可受到 8 个全向灯和 8 个聚光灯影响。这进一步受到硬件支持和 :ref:`rendering/limits/opengl/max_renderable_lights<class_ProjectSettings_property_rendering/limits/opengl/max_renderable_lights>` 的限制。将该设置得较低会略微减少内存使用，可能会减少着色器编译时间，并可能导致在低端、移动或 Web 设备上的渲染速度更快。
+Max number of omnilights and spotlights renderable per object. At the default value of 8, this means that each surface can be affected by up to 8 omnilights and 8 spotlights. This is further limited by hardware support and :ref:`rendering/limits/opengl/max_renderable_lights<class_ProjectSettings_property_rendering/limits/opengl/max_renderable_lights>`. Setting this low will slightly reduce memory usage, may decrease shader compile times, and may result in faster rendering on low-end, mobile, or web devices.
 
-\ **注意：**\ 该设置仅支持 Compatibility 渲染方式，不支持 Forward+ 和 Mobile。
+\ **Note:** This setting is only effective when using the Compatibility rendering method, not Forward+ and Mobile.
 
 .. rst-class:: classref-item-separator
 
@@ -12703,9 +12703,9 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/limits/opengl/max_renderable_elements** = ``65536`` :ref:`🔗<class_ProjectSettings_property_rendering/limits/opengl/max_renderable_elements>`
 
-一帧中可渲染的最大元素数。如果每帧可见的元素多于此，则不会绘制它们。请记住，元素指的是网格表面，而不是网格本身。将此值设置得较低会略微减少内存使用量，并可能减少着色器编译时间，尤其是在 Web 上。对于大多数用途，默认值是合适的，但在 Web 导出时可考虑尽可能降低。
+Max number of elements renderable in a frame. If more elements than this are visible per frame, they will not be drawn. Keep in mind elements refer to mesh surfaces and not meshes themselves. Setting this low will slightly reduce memory usage and may decrease shader compile times, particularly on web. For most uses, the default value is suitable, but consider lowering as much as possible on web export.
 
-\ **注意：**\ 该设置仅在支持 Compatibility 渲染方式，不支持 Forward+ 和 Mobile。
+\ **Note:** This setting is only effective when using the Compatibility rendering method, not Forward+ and Mobile.
 
 .. rst-class:: classref-item-separator
 
@@ -12717,9 +12717,9 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/limits/opengl/max_renderable_lights** = ``32`` :ref:`🔗<class_ProjectSettings_property_rendering/limits/opengl/max_renderable_lights>`
 
-一帧中可渲染的定位灯的最大数量。如果使用的灯多于此数量，则它们将被忽略。将此值设置得较低会略微减少内存使用量，并可能减少着色器编译时间，尤其是在 Web 上。对于大多数用途，默认值是合适的，但在 Web 导出时可考虑尽可能降低。
+Max number of positional lights renderable in a frame. If more lights than this number are used, they will be ignored. Setting this low will slightly reduce memory usage and may decrease shader compile times, particularly on web. For most uses, the default value is suitable, but consider lowering as much as possible on web export.
 
-\ **注意：**\ 该设置仅在支持 Compatibility 渲染方式，不支持 Forward+ 和 Mobile。
+\ **Note:** This setting is only effective when using the Compatibility rendering method, not Forward+ and Mobile.
 
 .. rst-class:: classref-item-separator
 
@@ -12731,7 +12731,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/limits/spatial_indexer/threaded_cull_minimum_instances** = ``1000`` :ref:`🔗<class_ProjectSettings_property_rendering/limits/spatial_indexer/threaded_cull_minimum_instances>`
 
-在多线程上启用剔除计算时，场景中必须存在的最小实例数。如果场景的实例数少于该数量，则在单线程上完成剔除。
+The minimum number of instances that must be present in a scene to enable culling computations on multiple threads. If a scene has fewer instances than this number, culling is done on a single thread.
 
 .. rst-class:: classref-item-separator
 
@@ -12757,9 +12757,9 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`float<class_float>` **rendering/limits/time/time_rollover_secs** = ``3600`` :ref:`🔗<class_ProjectSettings_property_rendering/limits/time/time_rollover_secs>`
 
-``TIME`` 着色器内置变量发生环绕前所能达到的最大时间（单位为秒）。\ ``TIME`` 变量每帧都会根据 ``delta`` 增大，超过这个值后就会绕回 ``0.0``\ 。由于浮点数在数值较大时比数值较小时的精度低，应当把这个值设得尽可能低，从而最大化 ``TIME`` 着色器内置变量的精度。这一点在移动平台上尤为重要，因为移动平台上着色器的精度有显著的降低。不过如果设得太低的话，着色器动画就可能会在项目运行过程中重新开始。
+Maximum time (in seconds) before the ``TIME`` shader built-in variable rolls over. The ``TIME`` variable increments by ``delta`` each frame, and when it exceeds this value, it rolls over to ``0.0``. Since large floating-point values are less precise than small floating-point values, this should be set as low as possible to maximize the precision of the ``TIME`` built-in variable in shaders. This is especially important on mobile platforms where precision in shaders is significantly reduced. However, if this is set too low, shader animations may appear to restart from the beginning while the project is running.
 
-在桌面平台上建议使用低于 ``4096`` 的值，低于 ``2048`` 更为理想。在移动平台上建议使用低于 ``64`` 的值，低于 ``32`` 更为理想。
+On desktop platforms, values below ``4096`` are recommended, ideally below ``2048``. On mobile platforms, values below ``64`` are recommended, ideally below ``32``.
 
 .. rst-class:: classref-item-separator
 
@@ -12771,11 +12771,11 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`float<class_float>` **rendering/mesh_lod/lod_change/threshold_pixels** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>`
 
-用于 :ref:`ReflectionProbe<class_ReflectionProbe>` 中渲染的网格的自动 LOD 偏置。较高的值将使用生成了 LOD 变化的不太详细的网格版本。如果设置为 ``0.0``\ ，则自动 LOD 将被禁用。增加 :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` 以牺牲几何细节为代价提高性能。
+The automatic LOD bias to use for meshes rendered within the :ref:`ReflectionProbe<class_ReflectionProbe>`. Higher values will use less detailed versions of meshes that have LOD variations generated. If set to ``0.0``, automatic LOD is disabled. Increase :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` to improve performance at the cost of geometry detail.
 
-\ **注意：**\ :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` 不影响 :ref:`GeometryInstance3D<class_GeometryInstance3D>` 可见性范围（也称为“手动”LOD 或分层 LOD）。
+\ **Note:** :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` does not affect :ref:`GeometryInstance3D<class_GeometryInstance3D>` visibility ranges (also known as "manual" LOD or hierarchical LOD).
 
-\ **注意：**\ 只有在项目启动时该属性才会被读取。要在运行时调整自动 LOD 阈值，请在根 :ref:`Viewport<class_Viewport>` 上设置 :ref:`Viewport.mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>`\ 。
+\ **Note:** This property is only read when the project starts. To adjust the automatic LOD threshold at runtime, set :ref:`Viewport.mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` on the root :ref:`Viewport<class_Viewport>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12787,9 +12787,9 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/occlusion_culling/bvh_build_quality** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/occlusion_culling/bvh_build_quality>`
 
-渲染遮挡剔除缓冲区时使用的 `BVH <https://en.wikipedia.org/wiki/Bounding_volume_hierarchy>`__ 质量。值越高，得到的遮挡剔除越精确，但代价是 CPU 使用率也越高。另见 :ref:`rendering/occlusion_culling/occlusion_rays_per_thread<class_ProjectSettings_property_rendering/occlusion_culling/occlusion_rays_per_thread>`\ 。
+The `Bounding Volume Hierarchy <https://en.wikipedia.org/wiki/Bounding_volume_hierarchy>`__ quality to use when rendering the occlusion culling buffer. Higher values will result in more accurate occlusion culling, at the cost of higher CPU usage. See also :ref:`rendering/occlusion_culling/occlusion_rays_per_thread<class_ProjectSettings_property_rendering/occlusion_culling/occlusion_rays_per_thread>`.
 
-\ **注意：**\ 这个属性仅在项目启动时读取。如果要在运行时调整 BVH 构建质量，请使用 :ref:`RenderingServer.viewport_set_occlusion_culling_build_quality()<class_RenderingServer_method_viewport_set_occlusion_culling_build_quality>`\ 。
+\ **Note:** This property is only read when the project starts. To adjust the BVH build quality at runtime, use :ref:`RenderingServer.viewport_set_occlusion_culling_build_quality()<class_RenderingServer_method_viewport_set_occlusion_culling_build_quality>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12801,7 +12801,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`bool<class_bool>` **rendering/occlusion_culling/jitter_projection** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/occlusion_culling/jitter_projection>`
 
-如果为 ``true``\ ，则会抖动用于渲染剔除缓冲的投影。利于防止错误地剔除能够通过较小缝隙看到的对象。
+If ``true``, the projection used for rendering the occlusion buffer will be jittered. This can help prevent objects being incorrectly culled when visible through small gaps.
 
 .. rst-class:: classref-item-separator
 
@@ -12813,9 +12813,9 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/occlusion_culling/occlusion_rays_per_thread** = ``512`` :ref:`🔗<class_ProjectSettings_property_rendering/occlusion_culling/occlusion_rays_per_thread>`
 
-每个 CPU 线程所追踪的剔除射线数量。更高的值将导致更准确的遮挡剔除，但代价是更高的 CPU 使用率。遮挡剔除缓冲区的像素数大致等于 ``occlusion_rays_per_thread * number_of_logical_cpu_cores``\ ，因此它取决于系统的 CPU。因此，内核较少的 CPU 将使用较低的分辨率，来尝试保持跨设备的性能成本。另见 :ref:`rendering/occlusion_culling/bvh_build_quality<class_ProjectSettings_property_rendering/occlusion_culling/bvh_build_quality>`\ 。
+The number of occlusion rays traced per CPU thread. Higher values will result in more accurate occlusion culling, at the cost of higher CPU usage. The occlusion culling buffer's pixel count is roughly equal to ``occlusion_rays_per_thread * number_of_logical_cpu_cores``, so it will depend on the system's CPU. Therefore, CPUs with fewer cores will use a lower resolution to attempt keeping performance costs even across devices. See also :ref:`rendering/occlusion_culling/bvh_build_quality<class_ProjectSettings_property_rendering/occlusion_culling/bvh_build_quality>`.
 
-\ **注意：**\ 这个属性仅在项目启动时读取。如果要在运行时调整每个线程所追踪的剔除射线数量，请使用 :ref:`RenderingServer.viewport_set_occlusion_rays_per_thread()<class_RenderingServer_method_viewport_set_occlusion_rays_per_thread>`\ 。
+\ **Note:** This property is only read when the project starts. To adjust the number of occlusion rays traced per thread at runtime, use :ref:`RenderingServer.viewport_set_occlusion_rays_per_thread()<class_RenderingServer_method_viewport_set_occlusion_rays_per_thread>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12827,11 +12827,11 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`bool<class_bool>` **rendering/occlusion_culling/use_occlusion_culling** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/occlusion_culling/use_occlusion_culling>`
 
-如果为 ``true``\ ，则 :ref:`OccluderInstance3D<class_OccluderInstance3D>` 节点在根视口的 3D 遮挡剔除中可用。对于自定义视口，必须改为将 :ref:`Viewport.use_occlusion_culling<class_Viewport_property_use_occlusion_culling>` 设为 ``true``\ 。
+If ``true``, :ref:`OccluderInstance3D<class_OccluderInstance3D>` nodes will be usable for occlusion culling in 3D in the root viewport. In custom viewports, :ref:`Viewport.use_occlusion_culling<class_Viewport_property_use_occlusion_culling>` must be set to ``true`` instead.
 
-\ **注意：**\ 启用遮挡剔除会消耗 CPU 资源。请只在打算使用时启用遮挡剔除。阻挡视线的对象很少或根本不存在的大型开放场景通常不会因遮挡剔除而获得什么优化。相对于遮挡剔除，大型开放场景通常能够从网格 LOD 和可见范围（\ :ref:`GeometryInstance3D.visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>` 和 :ref:`GeometryInstance3D.visibility_range_end<class_GeometryInstance3D_property_visibility_range_end>`\ ）中获益。
+\ **Note:** Enabling occlusion culling has a cost on the CPU. Only enable occlusion culling if you actually plan to use it. Large open scenes with few or no objects blocking the view will generally not benefit much from occlusion culling. Large open scenes generally benefit more from mesh LOD and visibility ranges (:ref:`GeometryInstance3D.visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>` and :ref:`GeometryInstance3D.visibility_range_end<class_GeometryInstance3D_property_visibility_range_end>`) compared to occlusion culling.
 
-\ **注意：**\ 由于内存限制，Web 导出模板中默认不支持遮挡剔除。编译自定义 Web 导出模板时使用 ``module_raycast_enabled=yes`` 可以启用。
+\ **Note:** Due to memory constraints, occlusion culling is not supported by default in Web export templates. It can be enabled by compiling custom Web export templates with ``module_raycast_enabled=yes``.
 
 .. rst-class:: classref-item-separator
 
@@ -12843,7 +12843,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/reflections/reflection_atlas/reflection_count** = ``64`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/reflection_atlas/reflection_count>`
 
-存储在反射图集中的立方体贴图数量。场景中的 :ref:`ReflectionProbe<class_ReflectionProbe>` 数量受此数量限制。数字越高，所需的显存越多。
+Number of cubemaps to store in the reflection atlas. The number of :ref:`ReflectionProbe<class_ReflectionProbe>`\ s in a scene will be limited by this amount. A higher number requires more VRAM.
 
 .. rst-class:: classref-item-separator
 
@@ -12855,7 +12855,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/reflections/reflection_atlas/reflection_size** = ``256`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/reflection_atlas/reflection_size>`
 
-:ref:`ReflectionProbe<class_ReflectionProbe>` 的立方体贴图面的大小。数字越大，所需的显存越多，并且反射探针的更新也可能变得越慢。
+Size of cubemap faces for :ref:`ReflectionProbe<class_ReflectionProbe>`\ s. A higher number requires more VRAM and may make reflection probe updating slower.
 
 .. rst-class:: classref-item-separator
 
@@ -12867,7 +12867,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/reflections/reflection_atlas/reflection_size.mobile** = ``128`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/reflection_atlas/reflection_size.mobile>`
 
-移动设备上 :ref:`rendering/reflections/reflection_atlas/reflection_size<class_ProjectSettings_property_rendering/reflections/reflection_atlas/reflection_size>` 的低端覆盖项，出于性能问题或驱动程序支持的考虑。
+Lower-end override for :ref:`rendering/reflections/reflection_atlas/reflection_size<class_ProjectSettings_property_rendering/reflections/reflection_atlas/reflection_size>` on mobile devices, due to performance concerns or driver support.
 
 .. rst-class:: classref-item-separator
 
@@ -12879,7 +12879,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`bool<class_bool>` **rendering/reflections/sky_reflections/fast_filter_high_quality** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/sky_reflections/fast_filter_high_quality>`
 
-使用快速过滤算法的更高质量变体。明显比使用默认质量慢，但会产生更平滑的反射。只应在场景特别详细时使用。
+Use a higher quality variant of the fast filtering algorithm. Significantly slower than using default quality, but results in smoother reflections. Should only be used when the scene is especially detailed.
 
 .. rst-class:: classref-item-separator
 
@@ -12891,7 +12891,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/reflections/sky_reflections/ggx_samples** = ``32`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/sky_reflections/ggx_samples>`
 
-设置在对 :ref:`Sky<class_Sky>` 和 :ref:`ReflectionProbe<class_ReflectionProbe>` 使用重要性采样时要采用的样本数。较高的值将导致更平滑、更高质量的反射，但会增加计算辐射率贴图的时间。一般来说，更简单的低动态范围环境需要更少的样本，而 HDR 环境和具有高细节层次的环境需要更多的样本。
+Sets the number of samples to take when using importance sampling for :ref:`Sky<class_Sky>`\ s and :ref:`ReflectionProbe<class_ReflectionProbe>`\ s. A higher value will result in smoother, higher quality reflections, but increases time to calculate radiance maps. In general, fewer samples are needed for simpler, low dynamic range environments while more samples are needed for HDR environments and environments with a high level of detail.
 
 .. rst-class:: classref-item-separator
 
@@ -12903,7 +12903,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/reflections/sky_reflections/ggx_samples.mobile** = ``16`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/sky_reflections/ggx_samples.mobile>`
 
-移动设备上 :ref:`rendering/reflections/sky_reflections/ggx_samples<class_ProjectSettings_property_rendering/reflections/sky_reflections/ggx_samples>` 的低端覆盖项，出于性能问题或驱动程序支持的考虑。
+Lower-end override for :ref:`rendering/reflections/sky_reflections/ggx_samples<class_ProjectSettings_property_rendering/reflections/sky_reflections/ggx_samples>` on mobile devices, due to performance concerns or driver support.
 
 .. rst-class:: classref-item-separator
 
@@ -12915,7 +12915,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/reflections/sky_reflections/roughness_layers** = ``7`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/sky_reflections/roughness_layers>`
 
-使用重要性采样时，限制在辐射率映射中使用的层数。较低的数字会稍微快一些，并且会占用较少的 VRAM。
+Limits the number of layers to use in radiance maps when using importance sampling. A lower number will be slightly faster and take up less VRAM.
 
 .. rst-class:: classref-item-separator
 
@@ -12927,9 +12927,9 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`bool<class_bool>` **rendering/reflections/sky_reflections/texture_array_reflections** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/sky_reflections/texture_array_reflections>`
 
-如果为 ``true``\ ，则使用纹理数组而不是 mipmap，用于反射探针和全景背景（天空）。这减少了反射上的抖动噪声和放大伪影，但计算速度明显变慢，并且使用了 :ref:`rendering/reflections/sky_reflections/roughness_layers<class_ProjectSettings_property_rendering/reflections/sky_reflections/roughness_layers>` 倍的内存。
+If ``true``, uses texture arrays instead of mipmaps for reflection probes and panorama backgrounds (sky). This reduces jitter noise and upscaling artifacts on reflections, but is significantly slower to compute and uses :ref:`rendering/reflections/sky_reflections/roughness_layers<class_ProjectSettings_property_rendering/reflections/sky_reflections/roughness_layers>` times more memory.
 
-\ **注意：**\ 由于驱动问题，纹理数组反射在 Intel GPU 的 macOS 上始终禁用。
+\ **Note:** Texture array reflections are always disabled on macOS on Intel GPUs due to driver bugs.
 
 .. rst-class:: classref-item-separator
 
@@ -12941,7 +12941,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`bool<class_bool>` **rendering/reflections/sky_reflections/texture_array_reflections.mobile** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/sky_reflections/texture_array_reflections.mobile>`
 
-移动设备上 :ref:`rendering/reflections/sky_reflections/texture_array_reflections<class_ProjectSettings_property_rendering/reflections/sky_reflections/texture_array_reflections>` 的低端覆盖项，出于性能问题或驱动程序支持的考虑。
+Lower-end override for :ref:`rendering/reflections/sky_reflections/texture_array_reflections<class_ProjectSettings_property_rendering/reflections/sky_reflections/texture_array_reflections>` on mobile devices, due to performance concerns or driver support.
 
 .. rst-class:: classref-item-separator
 
@@ -12953,7 +12953,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`bool<class_bool>` **rendering/reflections/specular_occlusion/enabled** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/specular_occlusion/enabled>`
 
-如果为 ``true``\ ，则会减少基于环境光的反射。
+If ``true``, reduces reflections based on ambient light.
 
 .. rst-class:: classref-item-separator
 
@@ -12987,7 +12987,7 @@ This can be overridden using the ``--rendering-method <method>`` command line ar
 
 :ref:`String<class_String>` **rendering/renderer/rendering_method.mobile** = ``"mobile"`` :ref:`🔗<class_ProjectSettings_property_rendering/renderer/rendering_method.mobile>`
 
-移动设备的 :ref:`rendering/renderer/rendering_method<class_ProjectSettings_property_rendering/renderer/rendering_method>` 覆盖项。
+Override for :ref:`rendering/renderer/rendering_method<class_ProjectSettings_property_rendering/renderer/rendering_method>` on mobile devices.
 
 .. rst-class:: classref-item-separator
 
@@ -12999,7 +12999,7 @@ This can be overridden using the ``--rendering-method <method>`` command line ar
 
 :ref:`String<class_String>` **rendering/renderer/rendering_method.web** = ``"gl_compatibility"`` :ref:`🔗<class_ProjectSettings_property_rendering/renderer/rendering_method.web>`
 
-Web 平台的 :ref:`rendering/renderer/rendering_method<class_ProjectSettings_property_rendering/renderer/rendering_method>` 覆盖项。
+Override for :ref:`rendering/renderer/rendering_method<class_ProjectSettings_property_rendering/renderer/rendering_method>` on web.
 
 .. rst-class:: classref-item-separator
 
@@ -13051,23 +13051,23 @@ Depending on the complexity of scenes, this value may be lowered or may need to 
 
 :ref:`String<class_String>` **rendering/rendering_device/driver** = ``"vulkan"`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/driver>`
 
-设置在使用 Forward+、Mobile 等基于 RenderingDevice 的渲染器时所使用的驱动程序。在默认配置中编辑该属性没有效果，因为第一方平台都有针对各自平台的覆盖项。请使用这些覆盖项来针对平台配置驱动程序。
+Sets the driver to be used by the renderer when using a RenderingDevice-based renderer like the Forward+ or Mobile renderers. Editing this property has no effect in the default configuration, as first-party platforms each have platform-specific overrides. Use those overrides to configure the driver for each platform.
 
-可以使用 ``--rendering-driver <driver>`` 命令行参数进行覆盖。
+This can be overridden using the ``--rendering-driver <driver>`` command line argument.
 
-支持的值有：
+Supported values are:
 
-- ``metal``\ ，Metal（在 Apple Silicon Mac 和 iOS 上支持）。
+- ``metal``, Metal (supported on Apple Silicon Macs and iOS).
 
-- ``vulkan``\ ，Vulkan（在所有桌面和移动平台上支持）。
+- ``vulkan``, Vulkan (supported on all desktop and mobile platforms).
 
-- ``d3d12``\ ，Direct3D 12（在 Windows 上支持）。
+- ``d3d12``, Direct3D 12 (supported on Windows).
 
-\ **注意：**\ 这些选项是否可用取决于编译引擎时是否打开了支持开关（由 SCons 选项 ``vulkan``\ 、\ ``metal`` 和 ``d3d12`` 决定）。
+\ **Note:** The availability of these options depends on whether the engine was compiled with support for them (determined by SCons options ``vulkan``, ``metal``, and ``d3d12``).
 
-\ **注意：**\ 如果某个平台没有注册的驱动程序，那么启用了 :ref:`rendering/rendering_device/fallback_to_opengl3<class_ProjectSettings_property_rendering/rendering_device/fallback_to_opengl3>` 的话就可以回退到 Compatibility 渲染器（OpenGL 3）。Web 平台会自动进行这种回退，与该属性的取值无关。
+\ **Note:** If a given platform has no registered drivers, it can fall back to the Compatibility renderer (OpenGL 3) if :ref:`rendering/rendering_device/fallback_to_opengl3<class_ProjectSettings_property_rendering/rendering_device/fallback_to_opengl3>` is enabled. This fallback happens automatically for the Web platform regardless of that property.
 
-\ **注意：**\ 实际的渲染驱动程序可能会因回退或用户指定的命令行参数而被引擎自动更改。要获取运行时使用的实际渲染驱动程序，请使用 :ref:`RenderingServer.get_current_rendering_driver_name()<class_RenderingServer_method_get_current_rendering_driver_name>`\ ，不要读取该项目设置的值。
+\ **Note:** The actual rendering driver may be automatically changed by the engine as a result of a fallback, or a user-specified command line argument. To get the actual rendering driver that is used at runtime, use :ref:`RenderingServer.get_current_rendering_driver_name()<class_RenderingServer_method_get_current_rendering_driver_name>` instead of reading this project setting's value.
 
 .. rst-class:: classref-item-separator
 
@@ -13079,13 +13079,13 @@ Depending on the complexity of scenes, this value may be lowered or may need to 
 
 :ref:`String<class_String>` **rendering/rendering_device/driver.android** = ``"vulkan"`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/driver.android>`
 
-:ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>` 针对 Android 的覆盖项目。
+Android override for :ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>`.
 
-仅支持一个选项：
+Only one option is supported:
 
-- ``vulkan``\ ，使用原生驱动程序的 Vulkan。
+- ``vulkan``, Vulkan from native drivers.
 
-\ **注意：**\ 如果编译时禁用了 Vulkan 则不会有备选的 RenderingDevice 驱动程序。
+\ **Note:** If Vulkan was disabled at compile time, there is no alternative RenderingDevice driver.
 
 .. rst-class:: classref-item-separator
 
@@ -13097,13 +13097,13 @@ Depending on the complexity of scenes, this value may be lowered or may need to 
 
 :ref:`String<class_String>` **rendering/rendering_device/driver.ios** = ``"metal"`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/driver.ios>`
 
-:ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>` 针对 iOS 的覆盖项。
+iOS override for :ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>`.
 
-支持两个选项：
+Two options are supported:
 
-- ``metal``\ （默认），使用原生驱动程序的 Metal。
+- ``metal`` (default), Metal from native drivers.
 
-- ``vulkan``\ ，借助 MoltenVK 实现的基于 Metal 的 Vulkan。
+- ``vulkan``, Vulkan over Metal via MoltenVK.
 
 .. rst-class:: classref-item-separator
 
@@ -13115,13 +13115,13 @@ Depending on the complexity of scenes, this value may be lowered or may need to 
 
 :ref:`String<class_String>` **rendering/rendering_device/driver.linuxbsd** = ``"vulkan"`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/driver.linuxbsd>`
 
-:ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>` 针对 LinuxBSD 的覆盖项。
+LinuxBSD override for :ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>`.
 
-仅支持一个选项：
+Only one option is supported:
 
-- ``vulkan``\ ，使用原生驱动程序的 Vulkan。
+- ``vulkan``, Vulkan from native drivers.
 
-\ **注意：**\ 如果编译时禁用了 Vulkan 则不会有备选的 RenderingDevice 驱动程序。
+\ **Note:** If Vulkan was disabled at compile time, there is no alternative RenderingDevice driver.
 
 .. rst-class:: classref-item-separator
 
@@ -13133,13 +13133,13 @@ Depending on the complexity of scenes, this value may be lowered or may need to 
 
 :ref:`String<class_String>` **rendering/rendering_device/driver.macos** = ``"metal"`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/driver.macos>`
 
-:ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>` 针对 macOS 的覆盖项。
+macOS override for :ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>`.
 
-支持两个选项：
+Two options are supported:
 
-- ``metal``\ （默认），使用原生驱动程序的 Metal，仅支持 Apple Silicon 设备。在 Intel 设备上会自动回退到 ``vulkan``\ ，因为没有实现对 Metal 的支持。
+- ``metal`` (default), Metal from native drivers, only supported on Apple Silicon Macs. On Intel Macs, it will automatically fall back to ``vulkan`` as Metal support is not implemented.
 
-- ``vulkan``\ ，通过 MoltenVK 在 Metal 上使用 Vulkan，支持 Apple Silicon 和 Intel 的设备。
+- ``vulkan``, Vulkan over Metal via MoltenVK, supported on both Apple Silicon and Intel Macs.
 
 .. rst-class:: classref-item-separator
 
@@ -13151,11 +13151,11 @@ Depending on the complexity of scenes, this value may be lowered or may need to 
 
 :ref:`String<class_String>` **rendering/rendering_device/driver.visionos** = ``"metal"`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/driver.visionos>`
 
-:ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>` 针对 visionOS 的覆盖项。
+visionOS override for :ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>`.
 
-仅支持一个选项：
+Only one option is supported:
 
-- ``metal``\ （默认），使用原生驱动程序的 Metal。
+- ``metal`` (default), Metal from native drivers.
 
 .. rst-class:: classref-item-separator
 
@@ -13229,9 +13229,9 @@ If ``true``, the Forward+ renderer will fall back to Vulkan if Direct3D 12 (on W
 
 :ref:`bool<class_bool>` **rendering/rendering_device/pipeline_cache/enable** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/pipeline_cache/enable>`
 
-如果图形 API 支持，则启用保存到磁盘的管道缓存。
+Enable the pipeline cache that is saved to disk if the graphics API supports it.
 
-\ **注意：**\ 该属性无法控制 GPU 驱动程序本身的管道缓存。如果希望模拟用户首次启动游戏时的体验，则只需关闭该功能并删除驱动程序缓存的内容即可。
+\ **Note:** This property is unable to control the pipeline caching the GPU driver itself does. Only turn this off along with deleting the contents of the driver's cache if you wish to simulate the experience a user will get when starting the game for the first time.
 
 .. rst-class:: classref-item-separator
 
@@ -13243,7 +13243,7 @@ If ``true``, the Forward+ renderer will fall back to Vulkan if Direct3D 12 (on W
 
 :ref:`float<class_float>` **rendering/rendering_device/pipeline_cache/save_chunk_size_mb** = ``3.0`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/pipeline_cache/save_chunk_size_mb>`
 
-决定管线缓存保存到磁盘的间隔。值越低，保存地越频繁。
+Determines at which interval pipeline cache is saved to disk. The lower the value, the more often it is saved.
 
 .. rst-class:: classref-item-separator
 
@@ -13255,9 +13255,9 @@ If ``true``, the Forward+ renderer will fall back to Vulkan if Direct3D 12 (on W
 
 :ref:`int<class_int>` **rendering/rendering_device/staging_buffer/block_size_kb** = ``256`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/block_size_kb>`
 
-在暂存缓冲区中分配的块的大小。暂存缓冲区是引擎用于上传或下载数据到 GPU 的中间资源。该设置决定了在复制操作中可以传输的最大数据量。增大该值数据传输会变快，但会占用额外的内存。
+The size of a block allocated in the staging buffers. Staging buffers are the intermediate resources the engine uses to upload or download data to the GPU. This setting determines the max amount of data that can be transferred in a copy operation. Increasing this will result in faster data transfers at the cost of extra memory.
 
-\ **注意：**\ 该属性仅在项目启动时读取，目前没有办法在运行时更改。
+\ **Note:** This property is only read when the project starts. There is currently no way to change this value at run-time.
 
 .. rst-class:: classref-item-separator
 
@@ -13269,9 +13269,9 @@ If ``true``, the Forward+ renderer will fall back to Vulkan if Direct3D 12 (on W
 
 :ref:`int<class_int>` **rendering/rendering_device/staging_buffer/max_size_mb** = ``128`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/max_size_mb>`
 
-暂存缓冲区允许使用的最大内存量。如果上传或下载的数据量超过该限制，GPU 会停滞，等待之前的帧完成。
+The maximum amount of memory allowed to be used by staging buffers. If the amount of data being uploaded or downloaded exceeds this amount, the GPU will stall and wait for previous frames to finish.
 
-\ **注意：**\ 该属性仅在项目启动时读取，目前没有办法在运行时更改。
+\ **Note:** This property is only read when the project starts. There is currently no way to change this value at run-time.
 
 .. rst-class:: classref-item-separator
 
@@ -13283,11 +13283,11 @@ If ``true``, the Forward+ renderer will fall back to Vulkan if Direct3D 12 (on W
 
 :ref:`int<class_int>` **rendering/rendering_device/staging_buffer/texture_download_region_size_px** = ``64`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/texture_download_region_size_px>`
 
-使用 :ref:`RenderingDevice.texture_get_data_async()<class_RenderingDevice_method_texture_get_data_async>` 等方法从 GPU 下载纹理数据时区域的大小，单位为像素。
+The region size in pixels used to download texture data from the GPU when using methods like :ref:`RenderingDevice.texture_get_data_async()<class_RenderingDevice_method_texture_get_data_async>`.
 
-\ **注意：**\ 该属性的上限由 :ref:`rendering/rendering_device/staging_buffer/block_size_kb<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/block_size_kb>` 控制，并且需要考虑是否可以使用请求的格式分配一个具有该区域大小的单个纹理数据块。
+\ **Note:** This property's upper limit is controlled by :ref:`rendering/rendering_device/staging_buffer/block_size_kb<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/block_size_kb>` and whether it's possible to allocate a single block of texture data with this region size in the format that is requested.
 
-\ **注意：**\ 该属性只在项目启动时读取，目前无法在运行时修改。
+\ **Note:** This property is only read when the project starts. There is currently no way to change this value at run-time.
 
 .. rst-class:: classref-item-separator
 
@@ -13299,11 +13299,11 @@ If ``true``, the Forward+ renderer will fall back to Vulkan if Direct3D 12 (on W
 
 :ref:`int<class_int>` **rendering/rendering_device/staging_buffer/texture_upload_region_size_px** = ``64`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/texture_upload_region_size_px>`
 
-使用 :ref:`RenderingDevice.texture_update()<class_RenderingDevice_method_texture_update>` 等方法将纹理数据上传至 GPU 时区域的大小，单位为像素。
+The region size in pixels used to upload texture data from the GPU when using methods like :ref:`RenderingDevice.texture_update()<class_RenderingDevice_method_texture_update>`.
 
-\ **注意：**\ 该属性的上限由 :ref:`rendering/rendering_device/staging_buffer/block_size_kb<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/block_size_kb>` 控制，并且需要考虑是否可以使用请求的格式分配一个具有该区域大小的单个纹理数据块。
+\ **Note:** This property's upper limit is controlled by :ref:`rendering/rendering_device/staging_buffer/block_size_kb<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/block_size_kb>` and whether it's possible to allocate a single block of texture data with this region size in the format that is requested.
 
-\ **注意：**\ 该属性只在项目启动时读取，目前无法在运行时修改。
+\ **Note:** This property is only read when the project starts. There is currently no way to change this value at run-time.
 
 .. rst-class:: classref-item-separator
 
@@ -13315,11 +13315,11 @@ If ``true``, the Forward+ renderer will fall back to Vulkan if Direct3D 12 (on W
 
 :ref:`int<class_int>` **rendering/rendering_device/vsync/frame_queue_size** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/vsync/frame_queue_size>`
 
-在停止等待 GPU 之前要在 CPU 端跟踪的帧数。
+The number of frames to track on the CPU side before stalling to wait for the GPU.
 
-尝试使用\ `垂直同步模拟器 <https://darksylinc.github.io/vsync_simulator/>`__\ ，这是一个交互式界面，可以模拟演示，以更好地了解不同条件下不同变量的影响。
+Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an interactive interface that simulates presentation to better understand how it is affected by different variables under various conditions.
 
-\ **注意：**\ 该属性仅在项目启动时读取。目前无法在运行时更改该值。
+\ **Note:** This property is only read when the project starts. There is currently no way to change this value at run-time.
 
 .. rst-class:: classref-item-separator
 
@@ -13355,11 +13355,11 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`int<class_int>` **rendering/rendering_device/vulkan/max_descriptors_per_pool** = ``64`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/vulkan/max_descriptors_per_pool>`
 
-每个池的描述符数量。Godot 的 Vulkan 后端针对在同一帧中创建并销毁的描述符使用的是线性池。每帧中并不会对描述符进行逐一销毁，而是会通过重置描述符所属的池来统一销毁。
+The number of descriptors per pool. Godot's Vulkan backend uses linear pools for descriptors that will be created and destroyed within a single frame. Instead of destroying every single descriptor every frame, they all can be destroyed at once by resetting the pool they belong to.
 
-并不是值越大效率越高，超出阈值后只会浪费内存（一帧最多只有一个池最高效）。数值低到极致就是一个描述符一个池，会对性能产生负面影响。
+A larger number is more efficient up to a limit, after that it will only waste RAM (maximum efficiency is achieved when there is no more than 1 pool per frame). A small number could end up with one pool per descriptor, which negatively impacts performance.
 
-\ **注意：**\ 修改该属性后需要重启才能生效。
+\ **Note:** Changing this property requires a restart to take effect.
 
 .. rst-class:: classref-item-separator
 
@@ -13371,7 +13371,7 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`float<class_float>` **rendering/scaling_3d/fsr_sharpness** = ``0.2`` :ref:`🔗<class_ProjectSettings_property_rendering/scaling_3d/fsr_sharpness>`
 
-决定使用 FSR 放大模式时放大图像的清晰度。每个整数的锐度减半。值从 0.0（最锐利）到 2.0。高于 2.0 的值不会产生明显的差异。
+Determines how sharp the upscaled image will be when using the FSR upscaling mode. Sharpness halves with every whole number. Values go from 0.0 (sharpest) to 2.0. Values above 2.0 won't make a visible difference.
 
 .. rst-class:: classref-item-separator
 
@@ -13383,9 +13383,9 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`int<class_int>` **rendering/scaling_3d/mode** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/scaling_3d/mode>`
 
-设置缩放 3D 模式。双线性缩放以不同的分辨率渲染，以对视口进行欠采样或超采样。FidelityFX 超分辨率（FidelityFX Super Resolution） 1.0，缩写为 FSR，是一种放大技术，可通过使用一种空间感知放大算法，以快速帧速率生成高质量图像。FSR 比双线性稍微贵一点，但它产生的图像质量明显更高。在特别低端的 GPU 上，FSR 的性价比过低（与使用具有一个稍高分辨率缩放以匹配性能的双线性缩放相比）。
+Sets the scaling 3D mode. Bilinear scaling renders at different resolution to either undersample or supersample the viewport. FidelityFX Super Resolution 1.0, abbreviated to FSR, is an upscaling technology that produces high quality images at fast framerates by using a spatially-aware upscaling algorithm. FSR is slightly more expensive than bilinear, but it produces significantly higher image quality. On particularly low-end GPUs, the added cost of FSR may not be worth it (compared to using bilinear scaling with a slightly higher resolution scale to match performance).
 
-\ **注意：**\ FSR 只在使用 Forward+ 渲染方式时有效，对 Mobile 或 Compatibility 无效。如果使用不兼容的渲染方法，FSR 将回退到双线性缩放。
+\ **Note:** FSR is only effective when using the Forward+ rendering method, not Mobile or Compatibility. If using an incompatible rendering method, FSR will fall back to bilinear scaling.
 
 .. rst-class:: classref-item-separator
 
@@ -13397,7 +13397,7 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`int<class_int>` **rendering/scaling_3d/mode.ios** :ref:`🔗<class_ProjectSettings_property_rendering/scaling_3d/mode.ios>`
 
-:ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` 针对 iOS 的覆盖项。允许选择 MetalFX 空间缩放和 MetalFX 时间缩放模式，这些模式仅适用于使用 Metal 渲染驱动程序的平台。
+iOS override for :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>`. This allows selecting the MetalFX spatial and MetalFX temporal scaling modes, which are exclusive to platforms where the Metal rendering driver is used.
 
 .. rst-class:: classref-item-separator
 
@@ -13409,7 +13409,7 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`int<class_int>` **rendering/scaling_3d/mode.macos** :ref:`🔗<class_ProjectSettings_property_rendering/scaling_3d/mode.macos>`
 
-:ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` 针对 macOS 的覆盖项。允许选择 MetalFX 空间缩放和 MetalFX 时间缩放模式，这些模式仅适用于使用 Metal 渲染驱动程序的平台。
+macOS override for :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>`. This allows selecting the MetalFX spatial and MetalFX temporal scaling modes, which are exclusive to platforms where the Metal rendering driver is used.
 
 .. rst-class:: classref-item-separator
 
@@ -13421,7 +13421,7 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`float<class_float>` **rendering/scaling_3d/scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_rendering/scaling_3d/scale>`
 
-根据视口大小缩放 3D 渲染缓冲区，使用 :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` 中指定的图像过滤器将输出图像缩放至完整的视口大小。比 ``1.0`` 小的值可以牺牲质量（欠采样）换取更高的 3D 渲染速度。比 ``1.0`` 大的值仅对双线性模式有效，可以大幅牺牲性能（超采样）换取 3D 渲染质量的提升。另见 :ref:`rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` 多重采样抗锯齿，性能成本显著降低，但仅平滑多边形的边缘。
+Scales the 3D render buffer based on the viewport size uses an image filter specified in :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` to scale the output image to the full viewport size. Values lower than ``1.0`` can be used to speed up 3D rendering at the cost of quality (undersampling). Values greater than ``1.0`` are only valid for bilinear mode and can be used to improve 3D rendering quality at a high performance cost (supersampling). See also :ref:`rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` for multi-sample antialiasing, which is significantly cheaper but only smooths the edges of polygons.
 
 .. rst-class:: classref-item-separator
 
@@ -13447,7 +13447,7 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`bool<class_bool>` **rendering/shader_compiler/shader_cache/enabled** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/shader_compiler/shader_cache/enabled>`
 
-启用着色器缓存，编译后的着色器会存储在磁盘上，防止在下次需要该着色器时因为编译着色器而带来卡顿。
+Enable the shader cache, which stores compiled shaders to disk to prevent stuttering from shader compilation the next time the shader is needed.
 
 .. rst-class:: classref-item-separator
 
@@ -13501,7 +13501,7 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`bool<class_bool>` **rendering/shading/overrides/force_lambert_over_burley** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/shading/overrides/force_lambert_over_burley>`
 
-如果为 ``true``\ ，则使用速度更快但质量较低的 Lambert 材质照明模型，不使用 Burley 模型。
+If ``true``, uses faster but lower-quality Lambert material lighting model instead of Burley.
 
 .. rst-class:: classref-item-separator
 
@@ -13513,7 +13513,7 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`bool<class_bool>` **rendering/shading/overrides/force_lambert_over_burley.mobile** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/shading/overrides/force_lambert_over_burley.mobile>`
 
-由于性能问题或驱动程序支持，移动设备上用于 :ref:`rendering/shading/overrides/force_lambert_over_burley<class_ProjectSettings_property_rendering/shading/overrides/force_lambert_over_burley>` 的低端覆盖。
+Lower-end override for :ref:`rendering/shading/overrides/force_lambert_over_burley<class_ProjectSettings_property_rendering/shading/overrides/force_lambert_over_burley>` on mobile devices, due to performance concerns or driver support.
 
 .. rst-class:: classref-item-separator
 
@@ -13525,7 +13525,7 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`bool<class_bool>` **rendering/shading/overrides/force_vertex_shading** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/shading/overrides/force_vertex_shading>`
 
-如果为 ``true``\ ，为所有渲染强制顶点着色。这可以大大提高性能，但也会极大地降低质量。可用于优化低端移动设备的性能。
+If ``true``, forces vertex shading for all rendering. This can increase performance a lot, but also reduces quality immensely. Can be used to optimize performance on low-end mobile devices.
 
 .. rst-class:: classref-item-separator
 
@@ -13537,7 +13537,7 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`int<class_int>` **rendering/textures/basis_universal/rdo_dict_size** = ``1024`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/basis_universal/rdo_dict_size>`
 
-率-失真优化（Rate-Distortion Optimization、RDO）的字典大小，将纹理导入为 Basis Universal 且启用 RDO 时使用，范围为 ``64`` 到 ``65536`` 之间。值越高，文件大小减小得越多，但会显著增加编码时间。
+The dictionary size for Rate-Distortion Optimization (RDO) when importing textures as Basis Universal and when RDO is enabled, ranging from ``64`` to ``65536``. Higher values reduce the file sizes further, but make encoding times significantly longer.
 
 .. rst-class:: classref-item-separator
 
@@ -13549,9 +13549,9 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`bool<class_bool>` **rendering/textures/basis_universal/zstd_supercompression** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/basis_universal/zstd_supercompression>`
 
-如果为 ``true``\ ，则会启用 Zstandard 超压缩，在以 Basis Universal 形式导入纹理时减小文件大小。
+If ``true``, enables Zstandard supercompression to reduce file size when importing textures as Basis Universal.
 
-\ **注意：**\ Basis Universal 纹理需要压缩才能利用更小的文件尺寸，否则和 VRAM 压缩纹理一样大。
+\ **Note:** Basis Universal textures need to be compressed to gain the benefit of smaller file sizes, otherwise they are as large as VRAM-compressed textures.
 
 .. rst-class:: classref-item-separator
 
@@ -13563,7 +13563,7 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`int<class_int>` **rendering/textures/basis_universal/zstd_supercompression_level** = ``6`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/basis_universal/zstd_supercompression_level>`
 
-指定 Basis Universal Zstandard 超压缩的压缩级别，范围从 ``1`` 到 ``22``\ 。
+Specify the compression level for Basis Universal Zstandard supercompression, ranging from ``1`` to ``22``.
 
 .. rst-class:: classref-item-separator
 
@@ -13575,9 +13575,9 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`int<class_int>` **rendering/textures/canvas_textures/default_texture_filter** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/canvas_textures/default_texture_filter>`
 
-:ref:`CanvasItem<class_CanvasItem>` 内置纹理所使用的默认纹理过滤模式。在着色器中可以通过 ``TEXTURE`` 访问该纹理。
+The default texture filtering mode to use for :ref:`CanvasItem<class_CanvasItem>`\ s built-in texture. In shaders, this texture is accessed as ``TEXTURE``.
 
-\ **注意：**\ 制作像素风游戏时另见 :ref:`rendering/2d/snap/snap_2d_vertices_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_vertices_to_pixel>` 和 :ref:`rendering/2d/snap/snap_2d_transforms_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_transforms_to_pixel>`\ 。
+\ **Note:** For pixel art aesthetics, see also :ref:`rendering/2d/snap/snap_2d_vertices_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_vertices_to_pixel>` and :ref:`rendering/2d/snap/snap_2d_transforms_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_transforms_to_pixel>`.
 
 .. rst-class:: classref-item-separator
 
@@ -13589,7 +13589,7 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`int<class_int>` **rendering/textures/canvas_textures/default_texture_repeat** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/canvas_textures/default_texture_repeat>`
 
-:ref:`CanvasItem<class_CanvasItem>` 内置纹理所使用的默认纹理重复模式。在着色器中可以通过 ``TEXTURE`` 访问该纹理。
+The default texture repeating mode to use for :ref:`CanvasItem<class_CanvasItem>`\ s built-in texture. In shaders, this texture is accessed as ``TEXTURE``.
 
 .. rst-class:: classref-item-separator
 
@@ -13601,7 +13601,7 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`int<class_int>` **rendering/textures/decals/filter** = ``3`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/decals/filter>`
 
-:ref:`Decal<class_Decal>` 节点的过滤质量。使用 Anisotropic（各向异性）过滤模式时，各向异性过滤级别由 :ref:`rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>` 控制。
+The filtering quality to use for :ref:`Decal<class_Decal>` nodes. When using one of the anisotropic filtering modes, the anisotropic filtering level is controlled by :ref:`rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
 
 .. rst-class:: classref-item-separator
 
@@ -13613,15 +13613,15 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`int<class_int>` **rendering/textures/default_filters/anisotropic_filtering_level** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`
 
-设置在纹理上使用各向异性过滤时要采用的最大样本数（作为 2 的幂）。更高的采样数将导致倾斜角度的纹理更清晰，但计算成本更高。\ ``0`` 的值会强制禁用各向异性过滤，即使在启用它的材质上也是如此。
+Sets the maximum number of samples to take when using anisotropic filtering on textures (as a power of two). A higher sample count will result in sharper textures at oblique angles, but is more expensive to compute. A value of ``0`` forcibly disables anisotropic filtering, even on materials where it is enabled.
 
-如果贴花和投影器被配置为使用各向异性过滤，则各向异性过滤级别也会影响它们。请参阅 :ref:`rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>` and :ref:`rendering/textures/light_projectors/filter<class_ProjectSettings_property_rendering/textures/light_projectors/filter>`\ 。
+The anisotropic filtering level also affects decals and light projectors if they are configured to use anisotropic filtering. See :ref:`rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>` and :ref:`rendering/textures/light_projectors/filter<class_ProjectSettings_property_rendering/textures/light_projectors/filter>`.
 
-\ **注意：**\ 要使该设置在 3D 中生效，请在材质上将 :ref:`BaseMaterial3D.texture_filter<class_BaseMaterial3D_property_texture_filter>` 设置为 :ref:`BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` 或 :ref:`BaseMaterial3D.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>`\ 。
+\ **Note:** In 3D, for this setting to have an effect, set :ref:`BaseMaterial3D.texture_filter<class_BaseMaterial3D_property_texture_filter>` to :ref:`BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` or :ref:`BaseMaterial3D.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>` on materials.
 
-\ **注意：**\ 要使该设置在 2D 中生效，请在显示纹理的 :ref:`CanvasItem<class_CanvasItem>` 节点上（或 :ref:`CanvasTexture<class_CanvasTexture>` 中）将 :ref:`CanvasItem.texture_filter<class_CanvasItem_property_texture_filter>` 设置为 :ref:`CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` 或 :ref:`CanvasItem.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>`\ 。然而各向异性过滤在 2D 中并不实用，因此在 2D 中只有在它产生有意义的视觉差异时才对纹理启用它。
+\ **Note:** In 2D, for this setting to have an effect, set :ref:`CanvasItem.texture_filter<class_CanvasItem_property_texture_filter>` to :ref:`CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` or :ref:`CanvasItem.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>` on the :ref:`CanvasItem<class_CanvasItem>` node displaying the texture (or in :ref:`CanvasTexture<class_CanvasTexture>`). However, anisotropic filtering is rarely useful in 2D, so only enable it for textures in 2D if it makes a meaningful visual difference.
 
-\ **注意：**\ 该属性仅在项目启动时读取。要在运行时更改各向异性过滤级别，请在根 :ref:`Viewport<class_Viewport>` 上设置 :ref:`Viewport.anisotropic_filtering_level<class_Viewport_property_anisotropic_filtering_level>`\ 。
+\ **Note:** This property is only read when the project starts. To change the anisotropic filtering level at runtime, set :ref:`Viewport.anisotropic_filtering_level<class_Viewport_property_anisotropic_filtering_level>` on the root :ref:`Viewport<class_Viewport>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -13633,11 +13633,11 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`float<class_float>` **rendering/textures/default_filters/texture_mipmap_bias** = ``0.0`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`
 
-通过从更低或更高的 mipmap 中读取数据影响最终纹理的锐度（也叫“纹理 LOD 偏置”）。负值会让 mipmap 纹理更锐利，但从较远处观察时颗粒更明显，而正值会让 mipmap 纹理更模糊（即便凑近看也一样）。
+Affects the final texture sharpness by reading from a lower or higher mipmap (also called "texture LOD bias"). Negative values make mipmapped textures sharper but grainier when viewed at a distance, while positive values make mipmapped textures blurrier (even when up close).
 
-启用时间抗锯齿（\ :ref:`rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`\ ）会对这个值应用 ``-0.5`` 的偏移量，而启用 FXAA（\ :ref:`rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`\ ）则会对这个值应用 ``-0.25`` 的偏移量。如果同时启用 TAA 和 FXAA，则会对这个值应用 ``-0.75`` 的偏移量。
+Enabling temporal antialiasing (:ref:`rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`) will automatically apply a ``-0.5`` offset to this value, while enabling FXAA (:ref:`rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`) will automatically apply a ``-0.25`` offset to this value. If both TAA and FXAA are enabled at the same time, an offset of ``-0.75`` is applied to this value.
 
-\ **注意：**\ 如果 :ref:`rendering/scaling_3d/scale<class_ProjectSettings_property_rendering/scaling_3d/scale>` 比 ``1.0`` 小（包含），则会使用 :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>` 自动调整 mipmap 偏置，内部会根据缩放系数进行计算。公式为 ``log2(scaling_3d_scale) + mipmap_bias``\ 。
+\ **Note:** If :ref:`rendering/scaling_3d/scale<class_ProjectSettings_property_rendering/scaling_3d/scale>` is lower than ``1.0`` (exclusive), :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>` is used to adjust the automatic mipmap bias which is calculated internally based on the scale factor. The formula for this is ``log2(scaling_3d_scale) + mipmap_bias``.
 
 .. rst-class:: classref-item-separator
 
@@ -13649,9 +13649,9 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`bool<class_bool>` **rendering/textures/default_filters/use_nearest_mipmap_filter** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>`
 
-如果为 ``true``\ ，则在使用 mipmap 时使用最近邻 mipmap 过滤（也称为“双线性过滤”），这将导致在 mipmap 阶段之间出现可见的接缝。因为使用的内存带宽更少，这可能会提高移动设备的性能。如果为 ``false``\ ，则使用线性 mipmap 过滤（也称为“三线性过滤”）。
+If ``true``, uses nearest-neighbor mipmap filtering when using mipmaps (also called "bilinear filtering"), which will result in visible seams appearing between mipmap stages. This may increase performance in mobile as less memory bandwidth is used. If ``false``, linear mipmap filtering (also called "trilinear filtering") is used.
 
-\ **注意：**\ 只有在项目启动时该属性才会被读取。目前无法在运行时更改该设置。
+\ **Note:** This property is only read when the project starts. There is currently no way to change this setting at run-time.
 
 .. rst-class:: classref-item-separator
 
@@ -13663,7 +13663,7 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`int<class_int>` **rendering/textures/light_projectors/filter** = ``3`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/light_projectors/filter>`
 
-:ref:`OmniLight3D<class_OmniLight3D>` 和 :ref:`SpotLight3D<class_SpotLight3D>` 投影器的过滤质量。使用 Anisotropic（各向异性）过滤模式时，各向异性过滤级别由 :ref:`rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>` 控制。
+The filtering quality to use for :ref:`OmniLight3D<class_OmniLight3D>` and :ref:`SpotLight3D<class_SpotLight3D>` projectors. When using one of the anisotropic filtering modes, the anisotropic filtering level is controlled by :ref:`rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
 
 .. rst-class:: classref-item-separator
 
@@ -13675,7 +13675,7 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`bool<class_bool>` **rendering/textures/lossless_compression/force_png** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/lossless_compression/force_png>`
 
-如果为 ``true``\ ，纹理导入器将使用 PNG 格式导入无损纹理。否则默认使用 WebP。
+If ``true``, the texture importer will import lossless textures using the PNG format. Otherwise, it will default to using WebP.
 
 .. rst-class:: classref-item-separator
 
@@ -13699,11 +13699,11 @@ If ``true``, the GPU texture compressor will cache the local RenderingDevice and
 
 :ref:`bool<class_bool>` **rendering/textures/vram_compression/compress_with_gpu** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/vram_compression/compress_with_gpu>`
 
-如果为 ``true``\ ，则纹理导入器会利用 GPU 来压缩纹理，提高大图像的导入时间。
+If ``true``, the texture importer will utilize the GPU for compressing textures, improving the import time of large images.
 
-\ **注意：**\ 仅在支持 Vulkan、Direct3D 12 或 Metal 作为渲染驱动的设备上有效。
+\ **Note:** This only functions on a device which supports either Vulkan, Direct3D 12, or Metal as a rendering driver.
 
-\ **注意：**\ 目前仅影响部分压缩格式（BC1、BC3、BC4、BC5 和 BC6），这些格式均专属于桌面平台和游戏主机。
+\ **Note:** Currently this only affects certain compressed formats (BC1, BC3, BC4, BC5, and BC6), all of which are exclusive to desktop platforms and consoles.
 
 .. rst-class:: classref-item-separator
 
@@ -13715,11 +13715,11 @@ If ``true``, the GPU texture compressor will cache the local RenderingDevice and
 
 :ref:`bool<class_bool>` **rendering/textures/vram_compression/import_etc2_astc** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/vram_compression/import_etc2_astc>`
 
-如果为 ``true``\ ，则纹理导入器，将使用 Ericsson 纹理压缩 2 算法导入 VRAM 压缩纹理以获取较低质量的纹理和法线贴图，并使用自适应可缩放纹理压缩算法导入高质量纹理（4×4 块大小）。
+If ``true``, the texture importer will import VRAM-compressed textures using the Ericsson Texture Compression 2 algorithm for lower quality textures and normal maps and Adaptable Scalable Texture Compression algorithm for high quality textures (in 4×4 block size).
 
-\ **注意：**\ 这是设置覆盖项。即便设为 ``false``\ ，纹理导入器也始终会导入宿主平台所需的格式。
+\ **Note:** This setting is an override. The texture importer will always import the format the host platform needs, even if this is set to ``false``.
 
-\ **注意：**\ 更改该设置\ *不会*\ 影响之前已经导入的纹理。要使该设置应用于已导入的纹理，请退出编辑器，移除位于项目文件夹内的 ``.godot/imported/`` 文件夹，然后重新启动编辑器（请参阅 :ref:`application/config/use_hidden_project_data_directory<class_ProjectSettings_property_application/config/use_hidden_project_data_directory>`\ ）。
+\ **Note:** Changing this setting does *not* impact textures that were already imported before. To make this setting apply to textures that were already imported, exit the editor, remove the ``.godot/imported/`` folder located inside the project folder then restart the editor (see :ref:`application/config/use_hidden_project_data_directory<class_ProjectSettings_property_application/config/use_hidden_project_data_directory>`).
 
 .. rst-class:: classref-item-separator
 
@@ -13731,11 +13731,11 @@ If ``true``, the GPU texture compressor will cache the local RenderingDevice and
 
 :ref:`bool<class_bool>` **rendering/textures/vram_compression/import_s3tc_bptc** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/vram_compression/import_s3tc_bptc>`
 
-如果为 ``true``\ ，纹理导入器将使用 S3 纹理压缩算法（DXT1-5）导入 VRAM 压缩纹理以获得较低质量的纹理；并使用 BPTC 算法（BC6H 和 BC7）导入高质量纹理。该算法仅在 PC 桌面平台和主机平台上受支持。
+If ``true``, the texture importer will import VRAM-compressed textures using the S3 Texture Compression algorithm (DXT1-5) for lower quality textures and the BPTC algorithm (BC6H and BC7) for high quality textures. This algorithm is only supported on PC desktop platforms and consoles.
 
-\ **注意：**\ 这是设置覆盖项。即便设为 ``false``\ ，纹理导入器也始终会导入宿主平台所需的格式。
+\ **Note:** This setting is an override. The texture importer will always import the format the host platform needs, even if this is set to ``false``.
 
-\ **注意：**\ 更改该设置\ *不会*\ 影响之前已经导入的纹理。要使该设置应用于已导入的纹理，请退出编辑器，移除位于项目文件夹内的 ``.godot/imported/`` 文件夹，然后重新启动编辑器（请参阅 :ref:`application/config/use_hidden_project_data_directory<class_ProjectSettings_property_application/config/use_hidden_project_data_directory>`\ ）。
+\ **Note:** Changing this setting does *not* impact textures that were already imported before. To make this setting apply to textures that were already imported, exit the editor, remove the ``.godot/imported/`` folder located inside the project folder then restart the editor (see :ref:`application/config/use_hidden_project_data_directory<class_ProjectSettings_property_application/config/use_hidden_project_data_directory>`).
 
 .. rst-class:: classref-item-separator
 
@@ -13747,7 +13747,7 @@ If ``true``, the GPU texture compressor will cache the local RenderingDevice and
 
 :ref:`int<class_int>` **rendering/textures/webp_compression/compression_method** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/webp_compression/compression_method>`
 
-WebP 的默认压缩方法。影响有损和无损 WebP。较高的值会以压缩速度为代价产生较小的文件。解压缩速度基本上不受压缩方法的影响。支持的值为 0 到 6。请注意，高于 4 的压缩方法非常慢并且节省的空间很小。
+The default compression method for WebP. Affects both lossy and lossless WebP. A higher value results in smaller files at the cost of compression speed. Decompression speed is mostly unaffected by the compression method. Supported values are 0 to 6. Note that compression methods above 4 are very slow and offer very little savings.
 
 .. rst-class:: classref-item-separator
 
@@ -13759,7 +13759,7 @@ WebP 的默认压缩方法。影响有损和无损 WebP。较高的值会以压�
 
 :ref:`float<class_float>` **rendering/textures/webp_compression/lossless_compression_factor** = ``25`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/webp_compression/lossless_compression_factor>`
 
-无损 WebP 的默认压缩系数。解压速度通常不受压缩系数的影响。支持的值为 0 到 100。
+The default compression factor for lossless WebP. Decompression speed is mostly unaffected by the compression factor. Supported values are 0 to 100.
 
 .. rst-class:: classref-item-separator
 
@@ -13787,7 +13787,7 @@ Practically speaking, this means that the end result of the Viewport will not be
 
 :ref:`bool<class_bool>` **rendering/viewport/transparent_background** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/viewport/transparent_background>`
 
-如果为 ``true`` ，则在根视口上启用 :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` 。这样在同时启用 :ref:`display/window/size/transparent<class_ProjectSettings_property_display/window/size/transparent>` 和 :ref:`display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>` 之后，逐像素透明就会生效。
+If ``true``, enables :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` on the root viewport. This allows per-pixel transparency to be effective after also enabling :ref:`display/window/size/transparent<class_ProjectSettings_property_display/window/size/transparent>` and :ref:`display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`.
 
 .. rst-class:: classref-item-separator
 
@@ -13799,7 +13799,7 @@ Practically speaking, this means that the end result of the Viewport will not be
 
 :ref:`int<class_int>` **rendering/vrs/mode** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/vrs/mode>`
 
-为主视口设置默认的可变速率着色（VRS）模式。请参阅 :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` 以在运行时更改该设置，并参阅 :ref:`VRSMode<enum_Viewport_VRSMode>` 以获取可能的值。
+Set the default Variable Rate Shading (VRS) mode for the main viewport. See :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` to change this at runtime, and :ref:`VRSMode<enum_Viewport_VRSMode>` for possible values.
 
 .. rst-class:: classref-item-separator
 
@@ -13811,9 +13811,9 @@ Practically speaking, this means that the end result of the Viewport will not be
 
 :ref:`String<class_String>` **rendering/vrs/texture** = ``""`` :ref:`🔗<class_ProjectSettings_property_rendering/vrs/texture>`
 
-如果 :ref:`rendering/vrs/mode<class_ProjectSettings_property_rendering/vrs/mode>` 为 **Texture**\ ，则这是 VRS 图像所加载的默认纹理的路径。
+If :ref:`rendering/vrs/mode<class_ProjectSettings_property_rendering/vrs/mode>` is set to **Texture**, this is the path to default texture loaded as the VRS image.
 
-该纹理\ *必须*\ 使用无损压缩格式，以便可以精确匹配颜色。以下 VRS 密度会映射为各种颜色，较亮的颜色代表较低的着色精度。
+The texture *must* use a lossless compression format so that colors can be matched precisely. The following VRS densities are mapped to various colors, with brighter colors representing a lower level of shading precision:
 
 .. code:: text
 
@@ -13824,9 +13824,9 @@ Practically speaking, this means that the end result of the Viewport will not be
     - 2×4 = rgb(85, 170, 0)  - #55aa00
     - 4×2 = rgb(170, 85, 0)  - #aa5500
     - 4×4 = rgb(170, 170, 0) - #aaaa00
-    - 4×8 = rgb(170, 255, 0) - #aaff00 - 大多数硬件不支持
-    - 8×4 = rgb(255, 170, 0) - #ffaa00 - 大多数硬件不支持
-    - 8×8 = rgb(255, 255, 0) - #ffff00 - 大多数硬件不支持
+    - 4×8 = rgb(170, 255, 0) - #aaff00 - Not supported on most hardware
+    - 8×4 = rgb(255, 170, 0) - #ffaa00 - Not supported on most hardware
+    - 8×8 = rgb(255, 255, 0) - #ffff00 - Not supported on most hardware
 
 .. rst-class:: classref-item-separator
 
@@ -13838,7 +13838,7 @@ Practically speaking, this means that the end result of the Viewport will not be
 
 :ref:`float<class_float>` **threading/worker_pool/low_priority_thread_ratio** = ``0.3`` :ref:`🔗<class_ProjectSettings_property_threading/worker_pool/low_priority_thread_ratio>`
 
-为低优先级任务保留的 :ref:`WorkerThreadPool<class_WorkerThreadPool>` 线程的比例。例如总共有 10 个线程，而这个值是 ``0.3``\ ，那么就会为低优先级任务保留 3 个工作线程。实际的取值不会超过 CPU 核心数减一，如果可能，至少会有一个专门用于低优先级任务的线程。
+The ratio of :ref:`WorkerThreadPool<class_WorkerThreadPool>`'s threads that will be reserved for low-priority tasks. For example, if 10 threads are available and this value is set to ``0.3``, 3 of the worker threads will be reserved for low-priority tasks. The actual value won't exceed the number of CPU cores minus one, and if possible, at least one worker thread will be dedicated to low-priority tasks.
 
 .. rst-class:: classref-item-separator
 
@@ -13862,7 +13862,7 @@ Maximum number of threads to be used by :ref:`WorkerThreadPool<class_WorkerThrea
 
 :ref:`bool<class_bool>` **xr/openxr/binding_modifiers/analog_threshold** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/binding_modifiers/analog_threshold>`
 
-如果为 ``true``\ ，则会在 XR 运行时支持时启用模拟阈值绑定修改器。
+If ``true``, enables the analog threshold binding modifier if supported by the XR runtime.
 
 .. rst-class:: classref-item-separator
 
@@ -13874,7 +13874,7 @@ Maximum number of threads to be used by :ref:`WorkerThreadPool<class_WorkerThrea
 
 :ref:`bool<class_bool>` **xr/openxr/binding_modifiers/dpad_binding** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/binding_modifiers/dpad_binding>`
 
-如果为 ``true``\ ，则会在 XR 运行时支持时启用十字键绑定修改器。
+If ``true``, enables the D-pad binding modifier if supported by the XR runtime.
 
 .. rst-class:: classref-item-separator
 
@@ -13886,7 +13886,7 @@ Maximum number of threads to be used by :ref:`WorkerThreadPool<class_WorkerThrea
 
 :ref:`String<class_String>` **xr/openxr/default_action_map** = ``"res://openxr_action_map.tres"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/default_action_map>`
 
-默认加载的动作映射配置。
+Action map configuration to load by default.
 
 .. rst-class:: classref-item-separator
 
@@ -13898,7 +13898,7 @@ Maximum number of threads to be used by :ref:`WorkerThreadPool<class_WorkerThrea
 
 :ref:`bool<class_bool>` **xr/openxr/enabled** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/enabled>`
 
-如果为 ``true``\ ，Godot 将在启动时设置并初始化 OpenXR。
+If ``true``, Godot will setup and initialize OpenXR on startup.
 
 .. rst-class:: classref-item-separator
 
@@ -13910,7 +13910,7 @@ Maximum number of threads to be used by :ref:`WorkerThreadPool<class_WorkerThrea
 
 :ref:`int<class_int>` **xr/openxr/environment_blend_mode** = ``"0"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/environment_blend_mode>`
 
-指定 OpenXR 应如何混合环境。针对的是部分 AR 和穿透设备，XR 合成器会混合相机图像。
+Specify how OpenXR should blend in the environment. This is specific to certain AR and passthrough devices where camera images are blended in by the XR compositor.
 
 .. rst-class:: classref-item-separator
 
@@ -13922,7 +13922,7 @@ Maximum number of threads to be used by :ref:`WorkerThreadPool<class_WorkerThrea
 
 :ref:`int<class_int>` **xr/openxr/extensions/debug_message_types** = ``"15"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/debug_message_types>`
 
-指定请求调试消息的消息类型。要求设置 :ref:`xr/openxr/extensions/debug_utils<class_ProjectSettings_property_xr/openxr/extensions/debug_utils>` 并且 XR 运行时支持该扩展。
+Specifies the message types for which we request debug messages. Requires :ref:`xr/openxr/extensions/debug_utils<class_ProjectSettings_property_xr/openxr/extensions/debug_utils>` to be set and the extension to be supported by the XR runtime.
 
 .. rst-class:: classref-item-separator
 
@@ -13934,7 +13934,7 @@ Maximum number of threads to be used by :ref:`WorkerThreadPool<class_WorkerThrea
 
 :ref:`int<class_int>` **xr/openxr/extensions/debug_utils** = ``"0"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/debug_utils>`
 
-启用支持调试工具扩展的 XR 运行时的调试工具。设置报告的最大严重性（0 = 禁用、1 = 错误、2 = 警告、3 = 信息、4 = 冗长）。
+Enables debug utilities on XR runtimes that supports the debug utils extension. Sets the maximum severity being reported (0 = disabled, 1 = error, 2 = warning, 3 = info, 4 = verbose).
 
 .. rst-class:: classref-item-separator
 
@@ -13946,7 +13946,7 @@ Maximum number of threads to be used by :ref:`WorkerThreadPool<class_WorkerThrea
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/eye_gaze_interaction** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/eye_gaze_interaction>`
 
-指定是否为该项目启用眼动追踪。根据平台的不同，可能需要额外的导出配置。
+Specify whether to enable eye tracking for this project. Depending on the platform, additional export configuration may be needed.
 
 .. rst-class:: classref-item-separator
 
@@ -13972,7 +13972,7 @@ If ``true`` the frame synthesis extension will be activated if supported by the 
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/hand_interaction_profile** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/hand_interaction_profile>`
 
-如果为 ``true``\ ，平台支持时会激活手部交互配置扩展。
+If ``true`` the hand interaction profile extension will be activated if supported by the platform.
 
 .. rst-class:: classref-item-separator
 
@@ -13984,9 +13984,9 @@ If ``true`` the frame synthesis extension will be activated if supported by the 
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/hand_tracking** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking>`
 
-如果为 ``true``\ ，则手部跟踪扩展可用时会将其启用。
+If ``true``, the hand tracking extension is enabled if available.
 
-\ **注意：**\ 默认情况下，只有 XR 运行时选择的数据源才能用于手部跟踪。SteamVR 中为控制器推测的数据源，大多数其他运行时为畅通数据源。无法对此进行查询。如果运行时支持 OpenXR 数据源扩展，就可以使用 :ref:`xr/openxr/extensions/hand_tracking_controller_data_source<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_controller_data_source>` 和/或 :ref:`xr/openxr/extensions/hand_tracking_unobstructed_data_source<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_unobstructed_data_source>` 表示你希望启用这些数据源。如果两者均未选中则不会启用数据源扩展，XR 运行时会继续使用默认行为。
+\ **Note:** By default hand tracking will only work for data sources chosen by the XR runtime. For SteamVR this is the controller inferred data source, for most other runtimes this is the unobstructed data source. There is no way to query this. If a runtime supports the OpenXR data source extension you can use the :ref:`xr/openxr/extensions/hand_tracking_controller_data_source<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_controller_data_source>` and/or :ref:`xr/openxr/extensions/hand_tracking_unobstructed_data_source<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_unobstructed_data_source>` to indicate you wish to enable these data sources. If neither is selected the data source extension is not enabled and the XR runtimes default behavior persists.
 
 .. rst-class:: classref-item-separator
 
@@ -13998,9 +13998,9 @@ If ``true`` the frame synthesis extension will be activated if supported by the 
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/hand_tracking_controller_data_source** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_controller_data_source>`
 
-如果为 ``true``\ ，则会请求支持控制器推测的数据源。如果支持，即便用户手中持握控制器也能够接收到手部跟踪数据，手指的位置是根据控制器的输入和/或传感器自动推测的。
+If ``true``, support for the controller inferred data source is requested. If supported, you will receive hand tracking data even if the user has a controller in hand, with finger positions automatically inferred from controller input and/or sensors.
 
-\ **注意：**\ 需要 XR 运行时支持 OpenXR 数据源扩展和控制器推测手部跟踪。如果不支持就会忽略该设置项。必须启用 :ref:`xr/openxr/extensions/hand_tracking<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking>` 才会使用该设置项。
+\ **Note:** This requires the OpenXR data source extension and controller inferred handtracking to be supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/hand_tracking<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking>` must be enabled for this setting to be used.
 
 .. rst-class:: classref-item-separator
 
@@ -14012,9 +14012,9 @@ If ``true`` the frame synthesis extension will be activated if supported by the 
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/hand_tracking_unobstructed_data_source** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_unobstructed_data_source>`
 
-如果为 ``true``\ ，则会请求畅通数据源。如果支持，你就会接收到基于用户实际手指位置的手部追踪数据，这些位置通常通过光学追踪来确定。
+If ``true``, support for the unobstructed data source is requested. If supported, you will receive hand tracking data based on the actual finger positions of the user often determined by optical tracking.
 
-\ **注意：**\ 需要 XR 运行时支持 OpenXR 数据源扩展和畅通手部跟踪。如果不支持就会忽略该设置项。必须启用 :ref:`xr/openxr/extensions/hand_tracking<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking>` 才会使用该设置项。
+\ **Note:** This requires the OpenXR data source extension and unobstructed handtracking to be supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/hand_tracking<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking>` must be enabled for this setting to be used.
 
 .. rst-class:: classref-item-separator
 
@@ -14026,9 +14026,9 @@ If ``true`` the frame synthesis extension will be activated if supported by the 
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/render_model** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/render_model>`
 
-如果为 ``true``\ ，则在渲染模型扩展可用时启用该扩展。
+If ``true`` we enable the render model extension if available.
 
-\ **注意：**\ 与核心 OpenXR 渲染模型扩展相关，与供应商渲染模型扩展无关。
+\ **Note:** This relates to the core OpenXR render model extension and has no relation to any vendor render model extensions.
 
 .. rst-class:: classref-item-separator
 
@@ -14176,7 +14176,7 @@ If ``true``, support for the spatial entity extension is requested. If supported
 
 :ref:`int<class_int>` **xr/openxr/form_factor** = ``"0"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/form_factor>`
 
-指定是否应为 HMD 或手持设备配置 OpenXR。
+Specify whether OpenXR should be configured for an HMD or a hand held device.
 
 .. rst-class:: classref-item-separator
 
@@ -14188,7 +14188,7 @@ If ``true``, support for the spatial entity extension is requested. If supported
 
 :ref:`bool<class_bool>` **xr/openxr/foveation_dynamic** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/foveation_dynamic>`
 
-如果为 ``true`` 并且支持注视点，将根据帧速率自动调整注视点级别，直至达到 :ref:`xr/openxr/foveation_level<class_ProjectSettings_property_xr/openxr/foveation_level>` 上设置的级别。
+If ``true`` and foveation is supported, will automatically adjust foveation level based on framerate up to the level set on :ref:`xr/openxr/foveation_level<class_ProjectSettings_property_xr/openxr/foveation_level>`.
 
 .. rst-class:: classref-item-separator
 
@@ -14214,7 +14214,7 @@ Applied foveation level if supported.
 
 :ref:`int<class_int>` **xr/openxr/reference_space** = ``"1"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/reference_space>`
 
-指定默认参照空间。
+Specify the default reference space.
 
 .. rst-class:: classref-item-separator
 
@@ -14226,7 +14226,7 @@ Applied foveation level if supported.
 
 :ref:`bool<class_bool>` **xr/openxr/startup_alert** = ``true`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/startup_alert>`
 
-如果为 ``true``\ ，则启动时如果 OpenXR 初始化失败，Godot 就会显示警告弹框。
+If ``true``, Godot will display an alert modal when OpenXR initialization fails on startup.
 
 .. rst-class:: classref-item-separator
 
@@ -14238,7 +14238,7 @@ Applied foveation level if supported.
 
 :ref:`bool<class_bool>` **xr/openxr/submit_depth_buffer** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/submit_depth_buffer>`
 
-如果为 ``true``\ ，则 OpenXR 会管理深度缓冲区，使用深度缓冲区进行高级再投影，前提是 XR 运行时支持。请注意，Godot 中的部分渲染特性无法与该特性一同使用。
+If ``true``, OpenXR will manage the depth buffer and use the depth buffer for advanced reprojection provided this is supported by the XR runtime. Note that some rendering features in Godot can't be used with this feature.
 
 .. rst-class:: classref-item-separator
 
@@ -14262,7 +14262,7 @@ Optionally sets a specific API version of OpenXR to initialize in ``major.minor.
 
 :ref:`int<class_int>` **xr/openxr/view_configuration** = ``"1"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/view_configuration>`
 
-指定视图配置，用于配置 OpenXR 设置单视场或立体渲染。
+Specify the view configuration with which to configure OpenXR setting up either Mono or Stereo rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -14274,7 +14274,7 @@ Optionally sets a specific API version of OpenXR to initialize in ``major.minor.
 
 :ref:`bool<class_bool>` **xr/shaders/enabled** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/shaders/enabled>`
 
-如果为 ``true``\ ，Godot 将编译 XR 所需的着色器。
+If ``true``, Godot will compile shaders required for XR.
 
 .. rst-class:: classref-section-separator
 
@@ -14282,8 +14282,8 @@ Optionally sets a specific API version of OpenXR to initialize in ``major.minor.
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_ProjectSettings_method_add_property_info:
 
@@ -14291,13 +14291,13 @@ Optionally sets a specific API version of OpenXR to initialize in ``major.minor.
 
 |void| **add_property_info**\ (\ hint\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_ProjectSettings_method_add_property_info>`
 
-为某个属性添加自定义属性信息。字典必须包含：
+Adds a custom property info to a property. The dictionary must contain:
 
-- ``"name"``\ ：\ :ref:`String<class_String>`\ （属性名称）
+- ``"name"``: :ref:`String<class_String>` (the property's name)
 
-- ``"type"``\ ：\ :ref:`int<class_int>`\ （见 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`\ ）
+- ``"type"``: :ref:`int<class_int>` (see :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`)
 
-- 可选的 ``"hint"``\ ：\ :ref:`int<class_int>`\ （见 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`\ ）和 ``"hint_string"``\ ：\ :ref:`String<class_String>`\ 
+- optionally ``"hint"``: :ref:`int<class_int>` (see :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`) and ``"hint_string"``: :ref:`String<class_String>`\ 
 
 
 .. tabs::
@@ -14331,7 +14331,7 @@ Optionally sets a specific API version of OpenXR to initialize in ``major.minor.
 
 
 
-\ **注意：**\ 不支持设置属性的 ``"usage"``\ 。请使用 :ref:`set_as_basic()<class_ProjectSettings_method_set_as_basic>`\ 、\ :ref:`set_restart_if_changed()<class_ProjectSettings_method_set_restart_if_changed>`\ 、\ :ref:`set_as_internal()<class_ProjectSettings_method_set_as_internal>` 修改用途标志。
+\ **Note:** Setting ``"usage"`` for the property is not supported. Use :ref:`set_as_basic()<class_ProjectSettings_method_set_as_basic>`, :ref:`set_restart_if_changed()<class_ProjectSettings_method_set_restart_if_changed>`, and :ref:`set_as_internal()<class_ProjectSettings_method_set_as_internal>` to modify usage flags.
 
 .. rst-class:: classref-item-separator
 
@@ -14343,7 +14343,7 @@ Optionally sets a specific API version of OpenXR to initialize in ``major.minor.
 
 :ref:`bool<class_bool>` **check_changed_settings_in_group**\ (\ setting_prefix\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_ProjectSettings_method_check_changed_settings_in_group>`
 
-检查已改变的设置中是否存在前缀为 ``setting_prefix`` 的设置项。另见 :ref:`get_changed_settings()<class_ProjectSettings_method_get_changed_settings>`\ 。
+Checks if any settings with the prefix ``setting_prefix`` exist in the set of changed settings. See also :ref:`get_changed_settings()<class_ProjectSettings_method_get_changed_settings>`.
 
 .. rst-class:: classref-item-separator
 
@@ -14355,7 +14355,7 @@ Optionally sets a specific API version of OpenXR to initialize in ``major.minor.
 
 |void| **clear**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ProjectSettings_method_clear>`
 
-清除整个配置（不推荐，可能会弄坏东西）。
+Clears the whole configuration (not recommended, may break things).
 
 .. rst-class:: classref-item-separator
 
@@ -14379,19 +14379,19 @@ Gets an array of the settings which have been changed since the last save. Note 
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_global_class_list**\ (\ ) :ref:`🔗<class_ProjectSettings_method_get_global_class_list>`
 
-返回已注册的全局类的 :ref:`Array<class_Array>`\ 。每个全局类都被表示为包含以下条目的 :ref:`Dictionary<class_Dictionary>`\ ：
+Returns an :ref:`Array<class_Array>` of registered global classes. Each global class is represented as a :ref:`Dictionary<class_Dictionary>` that contains the following entries:
 
-- ``base`` 是基类的名称；
+- ``base`` is a name of the base class;
 
-- ``class`` 是被注册的全局类的名称；
+- ``class`` is a name of the registered global class;
 
-- ``icon`` 是全局类自定义图标的路径，如果有的话；
+- ``icon`` is a path to a custom icon of the global class, if it has any;
 
-- ``language`` 是编写全局类的编程语言的名称；
+- ``language`` is a name of a programming language in which the global class is written;
 
-- ``path`` 是包含全局类的文件的路径。
+- ``path`` is a path to a file containing the global class.
 
-\ **注意：**\ 脚本和图标路径都是项目文件系统的本地路径，即它们以 ``res://`` 开头。
+\ **Note:** Both the script and the icon paths are local to the project filesystem, i.e. they start with ``res://``.
 
 .. rst-class:: classref-item-separator
 
@@ -14403,7 +14403,7 @@ Gets an array of the settings which have been changed since the last save. Note 
 
 :ref:`int<class_int>` **get_order**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_ProjectSettings_method_get_order>`
 
-返回配置值的顺序（保存到配置文件时会产生影响）。
+Returns the order of a configuration value (influences when saved to the config file).
 
 .. rst-class:: classref-item-separator
 
@@ -14415,7 +14415,7 @@ Gets an array of the settings which have been changed since the last save. Note 
 
 :ref:`Variant<class_Variant>` **get_setting**\ (\ name\: :ref:`String<class_String>`, default_value\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_ProjectSettings_method_get_setting>`
 
-返回由名称 ``name`` 标识的设置项的值。如果该设置项不存在，并且指定了默认值 ``default_value``\ ，则会返回 ``default_value`` 的值。否则返回 ``null``\ 。
+Returns the value of the setting identified by ``name``. If the setting doesn't exist and ``default_value`` is specified, the value of ``default_value`` is returned. Otherwise, ``null`` is returned.
 
 
 .. tabs::
@@ -14423,18 +14423,18 @@ Gets an array of the settings which have been changed since the last save. Note 
  .. code-tab:: gdscript
 
     print(ProjectSettings.get_setting("application/config/name"))
-    print(ProjectSettings.get_setting("application/config/custom_description", "未指定描述。"))
+    print(ProjectSettings.get_setting("application/config/custom_description", "No description specified."))
 
  .. code-tab:: csharp
 
     GD.Print(ProjectSettings.GetSetting("application/config/name"));
-    GD.Print(ProjectSettings.GetSetting("application/config/custom_description", "未指定描述。"));
+    GD.Print(ProjectSettings.GetSetting("application/config/custom_description", "No description specified."));
 
 
 
-\ **注意：**\ 这个方法不会自动考虑可能的特性覆盖项。如需无缝处理，请使用 :ref:`get_setting_with_override()<class_ProjectSettings_method_get_setting_with_override>`\ 。
+\ **Note:** This method doesn't take potential feature overrides into account automatically. Use :ref:`get_setting_with_override()<class_ProjectSettings_method_get_setting_with_override>` to handle seamlessly.
 
-另见 :ref:`has_setting()<class_ProjectSettings_method_has_setting>`\ ，用于检查设置是否存在。
+See also :ref:`has_setting()<class_ProjectSettings_method_has_setting>` to check whether a setting exists.
 
 .. rst-class:: classref-item-separator
 
@@ -14446,9 +14446,9 @@ Gets an array of the settings which have been changed since the last save. Note 
 
 :ref:`Variant<class_Variant>` **get_setting_with_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ProjectSettings_method_get_setting_with_override>`
 
-类似于 :ref:`get_setting()<class_ProjectSettings_method_get_setting>`\ ，但会应用有效的特性标签覆盖项。
+Similar to :ref:`get_setting()<class_ProjectSettings_method_get_setting>`, but applies feature tag overrides if any exists and is valid.
 
-\ **示例：**\ 如果存在设置覆盖项 ``"application/config/name.windows"`` 并且下列代码在 *Windows* 操作系统上执行，就会改为输出覆盖后的设置值。
+\ **Example:** If the setting override ``"application/config/name.windows"`` exists, and the following code is executed on a *Windows* operating system, the overridden setting is printed instead:
 
 
 .. tabs::
@@ -14473,7 +14473,7 @@ Gets an array of the settings which have been changed since the last save. Note 
 
 :ref:`Variant<class_Variant>` **get_setting_with_override_and_custom_features**\ (\ name\: :ref:`StringName<class_StringName>`, features\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |const| :ref:`🔗<class_ProjectSettings_method_get_setting_with_override_and_custom_features>`
 
-与 :ref:`get_setting_with_override()<class_ProjectSettings_method_get_setting_with_override>` 类似，但是会应用特性标签覆盖而不是使用当前操作系统的特性。
+Similar to :ref:`get_setting_with_override()<class_ProjectSettings_method_get_setting_with_override>`, but applies feature tag overrides instead of current OS features.
 
 .. rst-class:: classref-item-separator
 
@@ -14485,22 +14485,22 @@ Gets an array of the settings which have been changed since the last save. Note 
 
 :ref:`String<class_String>` **globalize_path**\ (\ path\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_ProjectSettings_method_globalize_path>`
 
-返回与本地化 ``path``\ （以 ``res://`` 或 ``user://`` 开头）相对应的绝对原生 OS 路径。返回的路径将因操作系统和用户首选项而异。 请参阅\ :doc:`《Godot 项目中的文件路径》 <../tutorials/io/data_paths>`\ 以查看这些路径转换成的内容。另见 :ref:`localize_path()<class_ProjectSettings_method_localize_path>`\ 。
+Returns the absolute, native OS path corresponding to the localized ``path`` (starting with ``res://`` or ``user://``). The returned path will vary depending on the operating system and user preferences. See :doc:`File paths in Godot projects <../tutorials/io/data_paths>` to see what those paths convert to. See also :ref:`localize_path()<class_ProjectSettings_method_localize_path>`.
 
-\ **注意：**\ 对 ``res://`` 调用 :ref:`globalize_path()<class_ProjectSettings_method_globalize_path>` 在导出的项目中不会起作用。而是，当从导出的项目运行时，将可执行文件的基目录添加到路径中：
+\ **Note:** :ref:`globalize_path()<class_ProjectSettings_method_globalize_path>` with ``res://`` will not work in an exported project. Instead, prepend the executable's base directory to the path when running from an exported project:
 
 ::
 
     var path = ""
     if OS.has_feature("editor"):
-        # 从编辑器二进制文件运行。
-        # `path` 将包含位于项目根目录中的 `hello.txt` 的绝对路径。
+        # Running from an editor binary.
+        # `path` will contain the absolute path to `hello.txt` located in the project root.
         path = ProjectSettings.globalize_path("res://hello.txt")
     else:
-        # 从导出的项目运行。
-        # `path` 将包含可执行文件旁边的 `hello.txt` 的绝对路径。
-        # 这与使用 `ProjectSettings.globalize_path()` 和 `res://` 路径*不*相同，
-        # 但在目的上足够接近。
+        # Running from an exported project.
+        # `path` will contain the absolute path to `hello.txt` next to the executable.
+        # This is *not* identical to using `ProjectSettings.globalize_path()` with a `res://` path,
+        # but is close enough in spirit.
         path = OS.get_executable_path().get_base_dir().path_join("hello.txt")
 
 .. rst-class:: classref-item-separator
@@ -14513,9 +14513,9 @@ Gets an array of the settings which have been changed since the last save. Note 
 
 :ref:`bool<class_bool>` **has_setting**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_ProjectSettings_method_has_setting>`
 
-如果某个配置的值存在，则返回 ``true``\ 。
+Returns ``true`` if a configuration value is present.
 
-\ **注意：**\ 为了能够被检测到，自定义设置需要通过 :ref:`set_setting()<class_ProjectSettings_method_set_setting>` 定义或在 ``project.godot`` 文件中存在。使用 :ref:`set_initial_value()<class_ProjectSettings_method_set_initial_value>` 时尤为如此。
+\ **Note:** In order to be be detected, custom settings have to be either defined with :ref:`set_setting()<class_ProjectSettings_method_set_setting>`, or exist in the ``project.godot`` file. This is especially relevant when using :ref:`set_initial_value()<class_ProjectSettings_method_set_initial_value>`.
 
 .. rst-class:: classref-item-separator
 
@@ -14527,13 +14527,13 @@ Gets an array of the settings which have been changed since the last save. Note 
 
 :ref:`bool<class_bool>` **load_resource_pack**\ (\ pack\: :ref:`String<class_String>`, replace_files\: :ref:`bool<class_bool>` = true, offset\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ProjectSettings_method_load_resource_pack>`
 
-将 ``pack`` 指定的 .pck 或 .zip 文件的内容，加载到资源文件系统（\ ``res://``\ ）。成功时返回 ``true``\ 。
+Loads the contents of the .pck or .zip file specified by ``pack`` into the resource filesystem (``res://``). Returns ``true`` on success.
 
-\ **注意：**\ 如果来自 ``pack`` 的文件与资源文件系统中已有的文件路径相同，则任何加载该文件的尝试，都将使用来自 ``pack`` 的文件，除非 ``replace_files`` 被设置为 ``false``\ 。
+\ **Note:** If a file from ``pack`` shares the same path as a file already in the resource filesystem, any attempts to load that file will use the file from ``pack`` unless ``replace_files`` is set to ``false``.
 
-\ **注意：**\ 可选的 ``offset`` 参数可用于指定资源包开头的字节偏移量。只支持 .pck 文件。
+\ **Note:** The optional ``offset`` parameter can be used to specify the offset in bytes to the start of the resource pack. This is only supported for .pck files.
 
-\ **注意：**\ 调用该函数后，\ :ref:`DirAccess<class_DirAccess>` 不再显示对 ``res://`` 内容的更改。
+\ **Note:** :ref:`DirAccess<class_DirAccess>` will not show changes made to the contents of ``res://`` after calling this function.
 
 .. rst-class:: classref-item-separator
 
@@ -14545,7 +14545,7 @@ Gets an array of the settings which have been changed since the last save. Note 
 
 :ref:`String<class_String>` **localize_path**\ (\ path\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_ProjectSettings_method_localize_path>`
 
-返回对应于绝对本地操作系统 ``path`` 的本地化路径（以 ``res://`` 开头）。另见 :ref:`globalize_path()<class_ProjectSettings_method_globalize_path>`\ 。
+Returns the localized path (starting with ``res://``) corresponding to the absolute, native OS ``path``. See also :ref:`globalize_path()<class_ProjectSettings_method_globalize_path>`.
 
 .. rst-class:: classref-item-separator
 
@@ -14557,9 +14557,9 @@ Gets an array of the settings which have been changed since the last save. Note 
 
 :ref:`Error<enum_@GlobalScope_Error>` **save**\ (\ ) :ref:`🔗<class_ProjectSettings_method_save>`
 
-将配置保存到 ``project.godot`` 文件中。
+Saves the configuration to the ``project.godot`` file.
 
-\ **注意：**\ 此方法是为编辑器插件使用的，因为修改后的 **ProjectSettings** 无法在运行的应用程序中加载回来。如果要更改导出项目中的项目设置，请使用 :ref:`save_custom()<class_ProjectSettings_method_save_custom>` 保存 ``override.cfg`` 文件。
+\ **Note:** This method is intended to be used by editor plugins, as modified **ProjectSettings** can't be loaded back in the running app. If you want to change project settings in exported projects, use :ref:`save_custom()<class_ProjectSettings_method_save_custom>` to save ``override.cfg`` file.
 
 .. rst-class:: classref-item-separator
 
@@ -14571,7 +14571,7 @@ Gets an array of the settings which have been changed since the last save. Note 
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_custom**\ (\ file\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ProjectSettings_method_save_custom>`
 
-将配置保存到自定义文件。文件扩展名必须是 ``.godot``\ （以基于文本的 :ref:`ConfigFile<class_ConfigFile>` 格式保存）或 ``.binary``\ （以二进制格式保存）。你也可以保存为 ``override.cfg`` 文件，它也是文本，但与其他格式不同，可以在导出的项目中使用。
+Saves the configuration to a custom file. The file extension must be ``.godot`` (to save in text-based :ref:`ConfigFile<class_ConfigFile>` format) or ``.binary`` (to save in binary format). You can also save ``override.cfg`` file, which is also text, but can be used in exported projects unlike other formats.
 
 .. rst-class:: classref-item-separator
 
@@ -14583,7 +14583,7 @@ Gets an array of the settings which have been changed since the last save. Note 
 
 |void| **set_as_basic**\ (\ name\: :ref:`String<class_String>`, basic\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ProjectSettings_method_set_as_basic>`
 
-决定指定的设置是基本设置还是高级设置。项目设置中始终显示基本设置。高级设置仅在用户启用“高级设置”选项时显示。
+Defines if the specified setting is considered basic or advanced. Basic settings will always be shown in the project settings. Advanced settings will only be shown if the user enables the "Advanced Settings" option.
 
 .. rst-class:: classref-item-separator
 
@@ -14595,7 +14595,7 @@ Gets an array of the settings which have been changed since the last save. Note 
 
 |void| **set_as_internal**\ (\ name\: :ref:`String<class_String>`, internal\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ProjectSettings_method_set_as_internal>`
 
-定义一个设置是否为内部设置。内部设置不会显示在“项目设置”对话框中。这主要用于插件存储其自身的内部配置，避免直接暴露给用户。
+Defines if the specified setting is considered internal. An internal setting won't show up in the Project Settings dialog. This is mostly useful for addons that need to store their own internal settings without exposing them directly to the user.
 
 .. rst-class:: classref-item-separator
 
@@ -14607,7 +14607,7 @@ Gets an array of the settings which have been changed since the last save. Note 
 
 |void| **set_initial_value**\ (\ name\: :ref:`String<class_String>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_ProjectSettings_method_set_initial_value>`
 
-设置指定设置的初始值。这是还原该设置时所使用的值。调用该方法前应该已存在该设置。请注意，不会保存当前值与默认值相同的项目设置，编写代码时请务必考虑这一点。
+Sets the specified setting's initial value. This is the value the setting reverts to. The setting should already exist before calling this method. Note that project settings equal to their default value are not saved, so your code needs to account for that.
 
 ::
 
@@ -14622,7 +14622,7 @@ Gets an array of the settings which have been changed since the last save. Note 
 
         ProjectSettings.set_initial_value(SETTING_NAME, SETTING_DEFAULT)
 
-如果使用 :ref:`EditorPlugin<class_EditorPlugin>` 定义了项目设置，但又想要在运行的项目中使用这一设置，则需要在运行时执行类似的代码。
+If you have a project setting defined by an :ref:`EditorPlugin<class_EditorPlugin>`, but want to use it in a running project, you will need a similar code at runtime.
 
 .. rst-class:: classref-item-separator
 
@@ -14634,7 +14634,7 @@ Gets an array of the settings which have been changed since the last save. Note 
 
 |void| **set_order**\ (\ name\: :ref:`String<class_String>`, position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ProjectSettings_method_set_order>`
 
-设置配置值的顺序（保存到配置文件时会产生影响）。
+Sets the order of a configuration value (influences when saved to the config file).
 
 .. rst-class:: classref-item-separator
 
@@ -14646,9 +14646,9 @@ Gets an array of the settings which have been changed since the last save. Note 
 
 |void| **set_restart_if_changed**\ (\ name\: :ref:`String<class_String>`, restart\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ProjectSettings_method_set_restart_if_changed>`
 
-设置一个设置是否需要重新启动编辑器才能正确生效。
+Sets whether a setting requires restarting the editor to properly take effect.
 
-\ **注意：**\ 这只是向用户显示的提示，提示必须重新启动编辑器才能使更改生效。启用 :ref:`set_restart_if_changed()<class_ProjectSettings_method_set_restart_if_changed>` *不*\ 会延迟在更改时设置的设置。
+\ **Note:** This is just a hint to display to the user that the editor must be restarted for changes to take effect. Enabling :ref:`set_restart_if_changed()<class_ProjectSettings_method_set_restart_if_changed>` does *not* delay the setting being set when changed.
 
 .. rst-class:: classref-item-separator
 
@@ -14660,7 +14660,7 @@ Gets an array of the settings which have been changed since the last save. Note 
 
 |void| **set_setting**\ (\ name\: :ref:`String<class_String>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_ProjectSettings_method_set_setting>`
 
-设置设置项的值。
+Sets the value of a setting.
 
 
 .. tabs::
@@ -14675,14 +14675,14 @@ Gets an array of the settings which have been changed since the last save. Note 
 
 
 
-也可以用来擦除自定义项目设置。方法是将设置项的值设置为 ``null``\ 。
+This can also be used to erase custom project settings. To do this change the setting value to ``null``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

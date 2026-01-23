@@ -5,21 +5,21 @@
 VisualShaderNodeVectorOp
 ========================
 
-**继承：** :ref:`VisualShaderNodeVectorBase<class_VisualShaderNodeVectorBase>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`VisualShaderNodeVectorBase<class_VisualShaderNodeVectorBase>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-在可视化着色器图中使用的向量运算符。
+A vector operator to be used within the visual shader graph.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-用于使用向量运算符的可视化着色器节点。对向量\ ``a``\ 和向量\ ``b``\ 进行操作。
+A visual shader node for use of vector operators. Operates on vector ``a`` and vector ``b``.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ VisualShaderNodeVectorOp
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_VisualShaderNodeVectorOp_Operator:
 
@@ -49,7 +49,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeVectorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeVectorOp_Operator>` **OP_ADD** = ``0``
 
-将两个向量相加。
+Adds two vectors.
 
 .. _class_VisualShaderNodeVectorOp_constant_OP_SUB:
 
@@ -57,7 +57,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeVectorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeVectorOp_Operator>` **OP_SUB** = ``1``
 
-从一个向量中减去一个向量。
+Subtracts a vector from a vector.
 
 .. _class_VisualShaderNodeVectorOp_constant_OP_MUL:
 
@@ -65,7 +65,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeVectorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeVectorOp_Operator>` **OP_MUL** = ``2``
 
-将两个向量相乘。
+Multiplies two vectors.
 
 .. _class_VisualShaderNodeVectorOp_constant_OP_DIV:
 
@@ -73,7 +73,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeVectorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeVectorOp_Operator>` **OP_DIV** = ``3``
 
-将向量除以向量。
+Divides vector by vector.
 
 .. _class_VisualShaderNodeVectorOp_constant_OP_MOD:
 
@@ -81,7 +81,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeVectorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeVectorOp_Operator>` **OP_MOD** = ``4``
 
-返回两个向量的余数。
+Returns the remainder of the two vectors.
 
 .. _class_VisualShaderNodeVectorOp_constant_OP_POW:
 
@@ -89,7 +89,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeVectorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeVectorOp_Operator>` **OP_POW** = ``5``
 
-返回第一个参数的值提高到第二个参数的幂，对于向量的每个分量。
+Returns the value of the first parameter raised to the power of the second, for each component of the vectors.
 
 .. _class_VisualShaderNodeVectorOp_constant_OP_MAX:
 
@@ -97,7 +97,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeVectorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeVectorOp_Operator>` **OP_MAX** = ``6``
 
-对于向量的每个分量，返回两个值中的较大值。
+Returns the greater of two values, for each component of the vectors.
 
 .. _class_VisualShaderNodeVectorOp_constant_OP_MIN:
 
@@ -105,7 +105,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeVectorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeVectorOp_Operator>` **OP_MIN** = ``7``
 
-对于向量的每个分量，返回两个数值中的较小者。
+Returns the lesser of two values, for each component of the vectors.
 
 .. _class_VisualShaderNodeVectorOp_constant_OP_CROSS:
 
@@ -113,7 +113,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeVectorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeVectorOp_Operator>` **OP_CROSS** = ``8``
 
-计算两个向量的叉积。
+Calculates the cross product of two vectors.
 
 .. _class_VisualShaderNodeVectorOp_constant_OP_ATAN2:
 
@@ -121,7 +121,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeVectorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeVectorOp_Operator>` **OP_ATAN2** = ``9``
 
-返回参数的反正切值。
+Returns the arc-tangent of the parameters.
 
 .. _class_VisualShaderNodeVectorOp_constant_OP_REFLECT:
 
@@ -129,7 +129,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeVectorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeVectorOp_Operator>` **OP_REFLECT** = ``10``
 
-返回指向反射方向的向量。\ ``a`` 是入射向量，\ ``b`` 是法向量。
+Returns the vector that points in the direction of reflection. ``a`` is incident vector and ``b`` is the normal vector.
 
 .. _class_VisualShaderNodeVectorOp_constant_OP_STEP:
 
@@ -137,7 +137,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeVectorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeVectorOp_Operator>` **OP_STEP** = ``11``
 
-向量步长运算符。如果\ ``a``\ 小于\ ``b``\ ，返回 ``0.0``\ ，否则返回 ``1.0``\ 。
+Vector step operator. Returns ``0.0`` if ``a`` is smaller than ``b`` and ``1.0`` otherwise.
 
 .. _class_VisualShaderNodeVectorOp_constant_OP_ENUM_SIZE:
 
@@ -145,7 +145,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeVectorOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeVectorOp_Operator>` **OP_ENUM_SIZE** = ``12``
 
-代表 :ref:`Operator<enum_VisualShaderNodeVectorOp_Operator>` 枚举的大小。
+Represents the size of the :ref:`Operator<enum_VisualShaderNodeVectorOp_Operator>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -153,8 +153,8 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeVectorOp_Operator>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_VisualShaderNodeVectorOp_property_operator:
 
@@ -167,14 +167,14 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeVectorOp_Operator>`
 - |void| **set_operator**\ (\ value\: :ref:`Operator<enum_VisualShaderNodeVectorOp_Operator>`\ )
 - :ref:`Operator<enum_VisualShaderNodeVectorOp_Operator>` **get_operator**\ (\ )
 
-要使用的运算符。
+The operator to be used.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

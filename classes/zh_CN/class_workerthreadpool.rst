@@ -5,75 +5,75 @@
 WorkerThreadPool
 ================
 
-**继承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-单例，启动时会分配一些 :ref:`Thread<class_Thread>`\ ，可以将任务卸载到这些线程中执行。
+A singleton that allocates some :ref:`Thread<class_Thread>`\ s on startup, used to offload tasks to these threads.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-**WorkerThreadPool** 单例在项目启动时会分配一组 :ref:`Thread<class_Thread>`\ （称作工作线程）并提供将任务卸载至这些线程上执行的方法。这样就能够简化多线程的使用，不必创建 :ref:`Thread<class_Thread>`\ 。
+The **WorkerThreadPool** singleton allocates a set of :ref:`Thread<class_Thread>`\ s (called worker threads) on project startup and provides methods for offloading tasks to them. This can be used for simple multithreading without having to create :ref:`Thread<class_Thread>`\ s.
 
-任务里放置的是要让线程执行的 :ref:`Callable<class_Callable>`\ 。\ **WorkerThreadPool** 既可以创建常规任务也可以创建分组任务，常规任务由单个工作线程执行，而分组任务可以分布在多个工作线程执行。分组任务会多次执行同一个 :ref:`Callable<class_Callable>`\ ，可用于遍历大量的元素，例如场景中的敌人。
+Tasks hold the :ref:`Callable<class_Callable>` to be run by the threads. **WorkerThreadPool** can be used to create regular tasks, which will be taken by one worker thread, or group tasks, which can be distributed between multiple worker threads. Group tasks execute the :ref:`Callable<class_Callable>` multiple times, which makes them useful for iterating over a lot of elements, such as the enemies in an arena.
 
-以下是将开销很大的函数卸载到工作线程执行的例子：
+Here's a sample on how to offload an expensive function to worker threads:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var enemies = [] # 用敌人填充的数组。
+    var enemies = [] # An array to be filled with enemies.
 
     func process_enemy_ai(enemy_index):
         var processed_enemy = enemies[enemy_index]
-        # 开销很大的逻辑……
+        # Expensive logic...
 
     func _process(delta):
         var task_id = WorkerThreadPool.add_group_task(process_enemy_ai, enemies.size())
-        # 其他代码……
+        # Other code...
         WorkerThreadPool.wait_for_group_task_completion(task_id)
-        # 要求敌人 AI 已经处理完毕的其他代码。
+        # Other code that depends on the enemy AI already being processed.
 
  .. code-tab:: csharp
 
-    private List<Node> _enemies = new List<Node>(); // 用敌人填充的数组。
+    private List<Node> _enemies = new List<Node>(); // A list to be filled with enemies.
 
     private void ProcessEnemyAI(int enemyIndex)
     {
         Node processedEnemy = _enemies[enemyIndex];
-        // 开销很大的逻辑……
+        // Expensive logic here.
     }
 
     public override void _Process(double delta)
     {
         long taskId = WorkerThreadPool.AddGroupTask(Callable.From<int>(ProcessEnemyAI), _enemies.Count);
-        // 其他代码……
+        // Other code...
         WorkerThreadPool.WaitForGroupTaskCompletion(taskId);
-        // 要求敌人 AI 已经处理完毕的其他代码。
+        // Other code that depends on the enemy AI already being processed.
     }
 
 
 
-以上代码要求 ``enemies`` 数组中的元素个数在多线程部分执行时保持不变。
+The above code relies on the number of elements in the ``enemies`` array remaining constant during the multithreaded part.
 
-\ **注意：**\ 如果分布到多个线程执行的任务在计算方面的开销并不大，那么使用这个单例可能对性能有负面影响。
+\ **Note:** Using this singleton could affect performance negatively if the task being distributed between threads is not computationally expensive.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
-- :doc:`使用多线程 <../tutorials/performance/using_multiple_threads>`
+- :doc:`Using multiple threads <../tutorials/performance/using_multiple_threads>`
 
-- :doc:`线程安全的 API <../tutorials/performance/thread_safe_apis>`
+- :doc:`Thread-safe APIs <../tutorials/performance/thread_safe_apis>`
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -104,8 +104,8 @@ WorkerThreadPool
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_WorkerThreadPool_method_add_group_task:
 
@@ -113,13 +113,13 @@ WorkerThreadPool
 
 :ref:`int<class_int>` **add_group_task**\ (\ action\: :ref:`Callable<class_Callable>`, elements\: :ref:`int<class_int>`, tasks_needed\: :ref:`int<class_int>` = -1, high_priority\: :ref:`bool<class_bool>` = false, description\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_WorkerThreadPool_method_add_group_task>`
 
-将 ``action`` 添加为分组任务，让多个工作线程执行。该 :ref:`Callable<class_Callable>` 的调用次数由 ``elements`` 决定，第一个调用的线程使用 ``0`` 作为参数，后续执行时会将其加 1，直到变为 ``element - 1``\ 。
+Adds ``action`` as a group task to be executed by the worker threads. The :ref:`Callable<class_Callable>` will be called a number of times based on ``elements``, with the first thread calling it with the value ``0`` as a parameter, and each consecutive execution incrementing this value by 1 until it reaches ``element - 1``.
 
-任务分布的线程数由 ``tasks_needed`` 定义，默认值 ``-1`` 表示分布到所有工作线程。\ ``high_priority`` 决定的是任务具有高优先级还是低优先级（默认）。你还可以选择提供 ``description`` 作为描述信息，方便调试。
+The number of threads the task is distributed to is defined by ``tasks_needed``, where the default value ``-1`` means it is distributed to all worker threads. ``high_priority`` determines if the task has a high priority or a low priority (default). You can optionally provide a ``description`` to help with debugging.
 
-返回分组任务 ID，可用于其他方法。
+Returns a group task ID that can be used by other methods.
 
-\ **警告：**\ 每个任务都必须在某处使用 :ref:`wait_for_task_completion()<class_WorkerThreadPool_method_wait_for_task_completion>` 或 :ref:`wait_for_group_task_completion()<class_WorkerThreadPool_method_wait_for_group_task_completion>` 等待完成，从而清理任务中分配的资源。
+\ **Warning:** Every task must be waited for completion using :ref:`wait_for_task_completion()<class_WorkerThreadPool_method_wait_for_task_completion>` or :ref:`wait_for_group_task_completion()<class_WorkerThreadPool_method_wait_for_group_task_completion>` at some point so that any allocated resources inside the task can be cleaned up.
 
 .. rst-class:: classref-item-separator
 
@@ -131,11 +131,11 @@ WorkerThreadPool
 
 :ref:`int<class_int>` **add_task**\ (\ action\: :ref:`Callable<class_Callable>`, high_priority\: :ref:`bool<class_bool>` = false, description\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_WorkerThreadPool_method_add_task>`
 
-将 ``action`` 添加为分组任务，让单个工作线程执行。\ ``high_priority`` 决定的是任务具有高优先级还是低优先级（默认）。你还可以选择提供 ``description`` 作为描述信息，方便调试。
+Adds ``action`` as a task to be executed by a worker thread. ``high_priority`` determines if the task has a high priority or a low priority (default). You can optionally provide a ``description`` to help with debugging.
 
-返回任务 ID，可用于其他方法。
+Returns a task ID that can be used by other methods.
 
-\ **警告：**\ 每个任务都必须在某处使用 :ref:`wait_for_task_completion()<class_WorkerThreadPool_method_wait_for_task_completion>` 或 :ref:`wait_for_group_task_completion()<class_WorkerThreadPool_method_wait_for_group_task_completion>` 等待完成，从而清理任务中分配的资源。
+\ **Warning:** Every task must be waited for completion using :ref:`wait_for_task_completion()<class_WorkerThreadPool_method_wait_for_task_completion>` or :ref:`wait_for_group_task_completion()<class_WorkerThreadPool_method_wait_for_group_task_completion>` at some point so that any allocated resources inside the task can be cleaned up.
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +147,7 @@ WorkerThreadPool
 
 :ref:`int<class_int>` **get_caller_group_id**\ (\ ) |const| :ref:`🔗<class_WorkerThreadPool_method_get_caller_group_id>`
 
-返回调用该方法的当前线程的任务组 ID，如果无效或当前线程不属于任何任务组，则返回 ``-1``\ 。
+Returns the task group ID of the current thread calling this method, or ``-1`` if invalid or the current thread is not part of a task group.
 
 .. rst-class:: classref-item-separator
 
@@ -159,11 +159,11 @@ WorkerThreadPool
 
 :ref:`int<class_int>` **get_caller_task_id**\ (\ ) |const| :ref:`🔗<class_WorkerThreadPool_method_get_caller_task_id>`
 
-返回调用该方法的当前线程的任务 ID，如果任务是组任务、无效或当前线程不属于线程池（例如为主线程），则返回 ``-1``\ 。
+Returns the task ID of the current thread calling this method, or ``-1`` if the task is a group task, invalid or the current thread is not part of the thread pool (e.g. the main thread).
 
-任务可以用该方法获取其自身的任务 ID 或确定当前代码是否在工作线程池中运行。
+Can be used by a task to get its own task ID, or to determine whether the current code is running inside the worker thread pool.
 
-\ **注意：**\ 分组任务有其自己的 ID，因此该方法对于分组任务将返回 ``-1``\ 。
+\ **Note:** Group tasks have their own IDs, so this method will return ``-1`` for group tasks.
 
 .. rst-class:: classref-item-separator
 
@@ -175,9 +175,9 @@ WorkerThreadPool
 
 :ref:`int<class_int>` **get_group_processed_element_count**\ (\ group_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_WorkerThreadPool_method_get_group_processed_element_count>`
 
-返回具有给定 ID 的分组任务的 :ref:`Callable<class_Callable>` 已经被工作线程执行的次数。
+Returns how many times the :ref:`Callable<class_Callable>` of the group task with the given ID has already been executed by the worker threads.
 
-\ **注意：**\ 线程已经开始执行 :ref:`Callable<class_Callable>` 但尚未完成的情况不计算在内。
+\ **Note:** If a thread has started executing the :ref:`Callable<class_Callable>` but is yet to finish, it won't be counted.
 
 .. rst-class:: classref-item-separator
 
@@ -189,9 +189,9 @@ WorkerThreadPool
 
 :ref:`bool<class_bool>` **is_group_task_completed**\ (\ group_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_WorkerThreadPool_method_is_group_task_completed>`
 
-如果 ID 对应的分组任务已完成，则返回 ``true``\ 。
+Returns ``true`` if the group task with the given ID is completed.
 
-\ **注意：**\ 只应该在添加分组任务之后、等待完成之前调用该方法。
+\ **Note:** You should only call this method between adding the group task and awaiting its completion.
 
 .. rst-class:: classref-item-separator
 
@@ -203,9 +203,9 @@ WorkerThreadPool
 
 :ref:`bool<class_bool>` **is_task_completed**\ (\ task_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_WorkerThreadPool_method_is_task_completed>`
 
-如果 ID 对应的任务已完成，则返回 ``true``\ 。
+Returns ``true`` if the task with the given ID is completed.
 
-\ **注意：**\ 只应该在添加分组任务之后、等待完成之前调用该方法。
+\ **Note:** You should only call this method between adding the task and awaiting its completion.
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ WorkerThreadPool
 
 |void| **wait_for_group_task_completion**\ (\ group_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_WorkerThreadPool_method_wait_for_group_task_completion>`
 
-在具有给定 ID 的分组任务完成前暂停调用这个方法的线程。
+Pauses the thread that calls this method until the group task with the given ID is completed.
 
 .. rst-class:: classref-item-separator
 
@@ -229,20 +229,20 @@ WorkerThreadPool
 
 :ref:`Error<enum_@GlobalScope_Error>` **wait_for_task_completion**\ (\ task_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_WorkerThreadPool_method_wait_for_task_completion>`
 
-暂停调用该方法的线程，直到给定 ID 对应的任务完成。
+Pauses the thread that calls this method until the task with the given ID is completed.
 
-如果能够成功等待任务，则返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ 。
+Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the task could be successfully awaited.
 
-如果不存在与传入 ID 对应的任务（可能已被等待或处理），则返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ 。
+Returns :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if a task with the passed ID does not exist (maybe because it was already awaited and disposed of).
 
-如果其他正在执行的任务调用了该方法，并且由于任务调度的原因，存在死锁的可能性（例如，要等待的任务可能位于调用堆栈中的较低级别，因此不能继续），则返回 :ref:`@GlobalScope.ERR_BUSY<class_@GlobalScope_constant_ERR_BUSY>`\ 。这是比较高级的情况，只有任务之间存在依赖关系（在当前实现中，棘手的情况是尝试等待较旧任务的任务）时才会出现。
+Returns :ref:`@GlobalScope.ERR_BUSY<class_@GlobalScope_constant_ERR_BUSY>` if the call is made from another running task and, due to task scheduling, there's potential for deadlocking (e.g., the task to await may be at a lower level in the call stack and therefore can't progress). This is an advanced situation that should only matter when some tasks depend on others (in the current implementation, the tricky case is a task trying to wait on an older one).
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

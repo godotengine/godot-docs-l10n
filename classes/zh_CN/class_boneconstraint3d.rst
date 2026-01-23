@@ -5,23 +5,23 @@
 BoneConstraint3D
 ================
 
-**继承：** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**派生：** :ref:`AimModifier3D<class_AimModifier3D>`, :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>`, :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>`
+**Inherited By:** :ref:`AimModifier3D<class_AimModifier3D>`, :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>`, :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>`
 
-能够修改 Skeleton3D 中骨骼对两根骨骼进行关联的节点。
+A node that may modify Skeleton3D's bone with associating the two bones.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-:ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 的基类，能够根据 :ref:`get_reference_bone()<class_BoneConstraint3D_method_get_reference_bone>` 所获得骨骼的变换修改 :ref:`set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` 中设置的骨骼。
+Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` that modifies the bone set in :ref:`set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` based on the transform of the bone retrieved by :ref:`get_reference_bone()<class_BoneConstraint3D_method_get_reference_bone>`.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -68,8 +68,8 @@ BoneConstraint3D
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_BoneConstraint3D_ReferenceType:
 
@@ -101,8 +101,8 @@ In other words, the reference target's coordinates are treated as if it were pla
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_BoneConstraint3D_method_clear_setting:
 
@@ -110,7 +110,7 @@ In other words, the reference target's coordinates are treated as if it were pla
 
 |void| **clear_setting**\ (\ ) :ref:`🔗<class_BoneConstraint3D_method_clear_setting>`
 
-清空所有设置。
+Clear all settings.
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +122,7 @@ In other words, the reference target's coordinates are treated as if it were pla
 
 :ref:`float<class_float>` **get_amount**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneConstraint3D_method_get_amount>`
 
-返回索引为 ``index`` 的设置的应用量。
+Returns the apply amount of the setting at ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +134,7 @@ In other words, the reference target's coordinates are treated as if it were pla
 
 :ref:`int<class_int>` **get_apply_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneConstraint3D_method_get_apply_bone>`
 
-返回索引为 ``index`` 的设置的应用骨骼。骨骼会发生修改。
+Returns the apply bone of the setting at ``index``. This bone will be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +146,7 @@ In other words, the reference target's coordinates are treated as if it were pla
 
 :ref:`String<class_String>` **get_apply_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneConstraint3D_method_get_apply_bone_name>`
 
-返回索引为 ``index`` 的设置的应用骨骼名称。骨骼会发生修改。
+Returns the apply bone name of the setting at ``index``. This bone will be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -158,9 +158,9 @@ In other words, the reference target's coordinates are treated as if it were pla
 
 :ref:`int<class_int>` **get_reference_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneConstraint3D_method_get_reference_bone>`
 
-返回索引为 ``index`` 的设置的参考骨骼。
+Returns the reference bone of the setting at ``index``.
 
-修改器只会参考该骨骼，不会对其进行修改。
+This bone will be only referenced and not modified by this modifier.
 
 .. rst-class:: classref-item-separator
 
@@ -172,9 +172,9 @@ In other words, the reference target's coordinates are treated as if it were pla
 
 :ref:`String<class_String>` **get_reference_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneConstraint3D_method_get_reference_bone_name>`
 
-返回索引为 ``index`` 的设置的参考骨骼名称。
+Returns the reference bone name of the setting at ``index``.
 
-修改器只会参考该骨骼，不会对其进行修改。
+This bone will be only referenced and not modified by this modifier.
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ This node will be only referenced and not modified by this modifier.
 
 :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>` **get_reference_type**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneConstraint3D_method_get_reference_type>`
 
-返回索引为 ``index`` 的设置的参考骨骼类型。参见 :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`\ 。
+Returns the reference target type of the setting at ``index``. See also :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
 
 .. rst-class:: classref-item-separator
 
@@ -212,7 +212,7 @@ This node will be only referenced and not modified by this modifier.
 
 :ref:`int<class_int>` **get_setting_count**\ (\ ) |const| :ref:`🔗<class_BoneConstraint3D_method_get_setting_count>`
 
-返回修改器中的设置数。
+Returns the number of settings in the modifier.
 
 .. rst-class:: classref-item-separator
 
@@ -224,7 +224,7 @@ This node will be only referenced and not modified by this modifier.
 
 |void| **set_amount**\ (\ index\: :ref:`int<class_int>`, amount\: :ref:`float<class_float>`\ ) :ref:`🔗<class_BoneConstraint3D_method_set_amount>`
 
-将索引为 ``index`` 的设置的应用量设置为 ``amount``\ 。
+Sets the apply amount of the setting at ``index`` to ``amount``.
 
 .. rst-class:: classref-item-separator
 
@@ -236,7 +236,7 @@ This node will be only referenced and not modified by this modifier.
 
 |void| **set_apply_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_BoneConstraint3D_method_set_apply_bone>`
 
-将索引为 ``index`` 的设置的应用骨骼设置为 ``bone``\ 。骨骼会发生修改。
+Sets the apply bone of the setting at ``index`` to ``bone``. This bone will be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -248,7 +248,7 @@ This node will be only referenced and not modified by this modifier.
 
 |void| **set_apply_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_BoneConstraint3D_method_set_apply_bone_name>`
 
-将索引为 ``index`` 的设置的应用骨骼名称设置为 ``bone_name``\ 。骨骼会发生修改。
+Sets the apply bone of the setting at ``index`` to ``bone_name``. This bone will be modified.
 
 .. rst-class:: classref-item-separator
 
@@ -260,9 +260,9 @@ This node will be only referenced and not modified by this modifier.
 
 |void| **set_reference_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_BoneConstraint3D_method_set_reference_bone>`
 
-将索引为 ``index`` 的设置的参考骨骼设置为 ``bone``\ 。
+Sets the reference bone of the setting at ``index`` to ``bone``.
 
-修改器只会参考该骨骼，不会对其进行修改。
+This bone will be only referenced and not modified by this modifier.
 
 .. rst-class:: classref-item-separator
 
@@ -274,9 +274,9 @@ This node will be only referenced and not modified by this modifier.
 
 |void| **set_reference_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_BoneConstraint3D_method_set_reference_bone_name>`
 
-将索引为 ``index`` 的设置的参考骨骼名称设置为 ``bone_name``\ 。
+Sets the reference bone of the setting at ``index`` to ``bone_name``.
 
-修改器只会参考该骨骼，不会对其进行修改。
+This bone will be only referenced and not modified by this modifier.
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +302,7 @@ This node will be only referenced and not modified by this modifier.
 
 |void| **set_reference_type**\ (\ index\: :ref:`int<class_int>`, type\: :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`\ ) :ref:`🔗<class_BoneConstraint3D_method_set_reference_type>`
 
-将索引为 ``index`` 的设置的参考目标类型设置为 ``type``\ 。另见 :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`\ 。
+Sets the reference target type of the setting at ``index`` to ``type``. See also :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
 
 .. rst-class:: classref-item-separator
 
@@ -314,14 +314,14 @@ This node will be only referenced and not modified by this modifier.
 
 |void| **set_setting_count**\ (\ count\: :ref:`int<class_int>`\ ) :ref:`🔗<class_BoneConstraint3D_method_set_setting_count>`
 
-设置修改器中的设置数。
+Sets the number of settings in the modifier.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

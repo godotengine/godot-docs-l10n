@@ -5,31 +5,31 @@
 SkeletonModification2DFABRIK
 ============================
 
-**实验性：** This class may be changed or removed in future versions.
+**Experimental:** This class may be changed or removed in future versions.
 
-**继承：** :ref:`SkeletonModification2D<class_SkeletonModification2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`SkeletonModification2D<class_SkeletonModification2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-使用 FABRIK 操纵一系列 :ref:`Bone2D<class_Bone2D>` 到达某个目标的修改器。
+A modification that uses FABRIK to manipulate a series of :ref:`Bone2D<class_Bone2D>` nodes to reach a target.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-这种 :ref:`SkeletonModification2D<class_SkeletonModification2D>` 使用的是名为前后延伸反向运动学（Forward And Backward Reaching Inverse Kinematics）的算法，即 FABRIK，能够对一条骨骼链进行旋转，从而抵达目标。
+This :ref:`SkeletonModification2D<class_SkeletonModification2D>` uses an algorithm called Forward And Backward Reaching Inverse Kinematics, or FABRIK, to rotate a bone chain so that it reaches a target.
 
-FABRIK 需要先拿到一系列骨骼的位置和长度，这组骨骼通常称作“骨骼链”。它首先会做一次向前处理，将最终的骨骼放置在目标的位置。然后让所有其他骨骼朝尖端骨骼移动，恢复原有的骨骼长度。然后再做一次向后处理，将 FABRIK 链中的根/第一根骨骼放回原点。然后移动所有其他骨骼，恢复原有的骨骼长度。这样就尽可能地让骨骼链抵达了目标，并且所有骨骼之间的长度仍然为正确的长度。
+FABRIK works by knowing the positions and lengths of a series of bones, typically called a "bone chain". It first starts by running a forward pass, which places the final bone at the target's position. Then all other bones are moved towards the tip bone, so they stay at the defined bone length away. Then a backwards pass is performed, where the root/first bone in the FABRIK chain is placed back at the origin. Then all other bones are moved so they stay at the defined bone length away. This positions the bone chain so that it reaches the target when possible, but all of the bones stay the correct length away from each other.
 
-由于 FABRIK 的工作原理，它通常比 :ref:`SkeletonModification2DCCDIK<class_SkeletonModification2DCCDIK>` 得到的结果更加自然。
+Because of how FABRIK works, it often gives more natural results than those seen in :ref:`SkeletonModification2DCCDIK<class_SkeletonModification2DCCDIK>`.
 
-\ **注意：**\ FABRIK 修改器具有关节属性 ``fabrik_joints``\ ，里面是存放 FABRIK 链中各个关节数据的数据对象。关节和 :ref:`Bone2D<class_Bone2D>` 是两码事！FABRIK 关节存放的是 FABRIK 所使用的骨骼链中每根 :ref:`Bone2D<class_Bone2D>` 所需的数据。
+\ **Note:** The FABRIK modifier has ``fabrik_joints``, which are the data objects that hold the data for each joint in the FABRIK chain. This is different from :ref:`Bone2D<class_Bone2D>` nodes! FABRIK joints hold the data needed for each :ref:`Bone2D<class_Bone2D>` in the bone chain used by FABRIK.
 
-可以传入磁铁向量来帮助控制 FABRIK 关节的移动，会在求解前让骨骼朝某个方向做略微的移动，对最终结果进行微调。
+To help control how the FABRIK joints move, a magnet vector can be passed, which can nudge the bones in a certain direction prior to solving, giving a level of control over the final result.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ FABRIK 需要先拿到一系列骨骼的位置和长度，这组骨骼通常称�
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -72,8 +72,8 @@ FABRIK 需要先拿到一系列骨骼的位置和长度，这组骨骼通常称�
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_SkeletonModification2DFABRIK_property_fabrik_data_chain_length:
 
@@ -86,7 +86,7 @@ FABRIK 需要先拿到一系列骨骼的位置和长度，这组骨骼通常称�
 - |void| **set_fabrik_data_chain_length**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_fabrik_data_chain_length**\ (\ )
 
-FABRIK 修改中 FABRIK 关节的数量。
+The number of FABRIK joints in the FABRIK modification.
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ FABRIK 修改中 FABRIK 关节的数量。
 - |void| **set_target_node**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_target_node**\ (\ )
 
-FABRIK 修改器的目标节点的 NodePath。FABRIK 链会尝试将骨骼链转向这个节点。
+The NodePath to the node that is the target for the FABRIK modification. This node is what the FABRIK chain will attempt to rotate the bone chain to.
 
 .. rst-class:: classref-section-separator
 
@@ -111,8 +111,8 @@ FABRIK 修改器的目标节点的 NodePath。FABRIK 链会尝试将骨骼链转
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_SkeletonModification2DFABRIK_method_get_fabrik_joint_bone2d_node:
 
@@ -120,7 +120,7 @@ FABRIK 修改器的目标节点的 NodePath。FABRIK 链会尝试将骨骼链转
 
 :ref:`NodePath<class_NodePath>` **get_fabrik_joint_bone2d_node**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DFABRIK_method_get_fabrik_joint_bone2d_node>`
 
-返回分配给位于 ``joint_idx`` 的 FABRIK 关节的 :ref:`Bone2D<class_Bone2D>` 节点。
+Returns the :ref:`Bone2D<class_Bone2D>` node assigned to the FABRIK joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ FABRIK 修改器的目标节点的 NodePath。FABRIK 链会尝试将骨骼链转
 
 :ref:`int<class_int>` **get_fabrik_joint_bone_index**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DFABRIK_method_get_fabrik_joint_bone_index>`
 
-返回分配给位于 ``joint_idx`` 的 FABRIK 关节的 :ref:`Bone2D<class_Bone2D>` 节点的索引。
+Returns the index of the :ref:`Bone2D<class_Bone2D>` node assigned to the FABRIK joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -144,7 +144,7 @@ FABRIK 修改器的目标节点的 NodePath。FABRIK 链会尝试将骨骼链转
 
 :ref:`Vector2<class_Vector2>` **get_fabrik_joint_magnet_position**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DFABRIK_method_get_fabrik_joint_magnet_position>`
 
-返回位于 ``joint_idx`` 的关节的磁吸位置向量。
+Returns the magnet position vector for the joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ FABRIK 修改器的目标节点的 NodePath。FABRIK 链会尝试将骨骼链转
 
 :ref:`bool<class_bool>` **get_fabrik_joint_use_target_rotation**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DFABRIK_method_get_fabrik_joint_use_target_rotation>`
 
-返回关节是否正在使用目标的旋转，而不是允许 FABRIK 旋转关节。此选项仅适用于链中的末端/最终关节。
+Returns whether the joint is using the target's rotation rather than allowing FABRIK to rotate the joint. This option only applies to the tip/final joint in the chain.
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ FABRIK 修改器的目标节点的 NodePath。FABRIK 链会尝试将骨骼链转
 
 |void| **set_fabrik_joint_bone2d_node**\ (\ joint_idx\: :ref:`int<class_int>`, bone2d_nodepath\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SkeletonModification2DFABRIK_method_set_fabrik_joint_bone2d_node>`
 
-设置分配给位于 ``joint_idx`` 的 FABRIK 关节的 :ref:`Bone2D<class_Bone2D>` 节点。
+Sets the :ref:`Bone2D<class_Bone2D>` node assigned to the FABRIK joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ FABRIK 修改器的目标节点的 NodePath。FABRIK 链会尝试将骨骼链转
 
 |void| **set_fabrik_joint_bone_index**\ (\ joint_idx\: :ref:`int<class_int>`, bone_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SkeletonModification2DFABRIK_method_set_fabrik_joint_bone_index>`
 
-设置位于 ``joint_idx`` 的 FABRIK 关节的骨骼索引 ``bone_idx``\ 。可能时，这也会根据链接骨架所提供的数据来更新 FABRIK 关节的 ``bone2d_node``\ 。
+Sets the bone index, ``bone_idx``, of the FABRIK joint at ``joint_idx``. When possible, this will also update the ``bone2d_node`` of the FABRIK joint based on data provided by the linked skeleton.
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ FABRIK 修改器的目标节点的 NodePath。FABRIK 链会尝试将骨骼链转
 
 |void| **set_fabrik_joint_magnet_position**\ (\ joint_idx\: :ref:`int<class_int>`, magnet_position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_SkeletonModification2DFABRIK_method_set_fabrik_joint_magnet_position>`
 
-设置位于 ``joint_idx`` 的关节的磁吸位置向量。
+Sets the magnet position vector for the joint at ``joint_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -204,16 +204,16 @@ FABRIK 修改器的目标节点的 NodePath。FABRIK 链会尝试将骨骼链转
 
 |void| **set_fabrik_joint_use_target_rotation**\ (\ joint_idx\: :ref:`int<class_int>`, use_target_rotation\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SkeletonModification2DFABRIK_method_set_fabrik_joint_use_target_rotation>`
 
-设置位于 ``joint_idx`` 的关节是否正在使用目标节点的旋转，而不是让 FABRIK 旋转关节。
+Sets whether the joint at ``joint_idx`` will use the target node's rotation rather than letting FABRIK rotate the node.
 
-\ **注意：**\ 这个选项仅适用于链中的末端/最终关节。对于所有其他节点，这个选项将被忽略。
+\ **Note:** This option only works for the tip/final joint in the chain. For all other nodes, this option will be ignored.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

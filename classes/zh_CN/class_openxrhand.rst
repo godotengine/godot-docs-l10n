@@ -5,29 +5,29 @@
 OpenXRHand
 ==========
 
-**已弃用：** Use :ref:`XRHandModifier3D<class_XRHandModifier3D>` instead.
+**Deprecated:** Use :ref:`XRHandModifier3D<class_XRHandModifier3D>` instead.
 
-**继承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-OpenXR 中支持手和手指跟踪的节点。
+Node supporting hand and finger tracking in OpenXR.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-该节点启用 OpenXR 的手部跟踪功能。该节点应该是 :ref:`XROrigin3D<class_XROrigin3D>` 节点的子节点，跟踪会将其位置更新为玩家被跟踪的手掌关节位置（中指的掌骨中心）。该节点还会更新正确蒙皮的手或头像模型的骨架。
+This node enables OpenXR's hand tracking functionality. The node should be a child node of an :ref:`XROrigin3D<class_XROrigin3D>` node, tracking will update its position to the player's tracked hand Palm joint location (the center of the middle finger's metacarpal bone). This node also updates the skeleton of a properly skinned hand or avatar model.
 
-如果骨架是一只手（手部骨骼之一是该骨架的根节点），则该骨架将相对于手掌位置放置，并且手部网格和骨架应该是 OpenXRHand 节点的子级。
+If the skeleton is a hand (one of the hand bones is the root node of the skeleton), then the skeleton will be placed relative to the hand palm location and the hand mesh and skeleton should be children of the OpenXRHand node.
 
-如果手骨是完整骨架的一部分，假设使用 IK 来定位手和胳膊，则手的根部将保持其位置。
+If the hand bones are part of a full skeleton, then the root of the hand will keep its location with the assumption that IK is used to position the hand and arm.
 
-默认情况下，骨架手骨会被重新定位以匹配跟踪的手的大小。要保留建模的骨骼大小，请更改 :ref:`bone_update<class_OpenXRHand_property_bone_update>` 以仅应用旋转。
+By default the skeleton hand bones are repositioned to match the size of the tracked hand. To preserve the modeled bone sizes change :ref:`bone_update<class_OpenXRHand_property_bone_update>` to apply rotation only.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ OpenXR 中支持手和手指跟踪的节点。
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_OpenXRHand_Hands:
 
@@ -65,7 +65,7 @@ enum **Hands**: :ref:`🔗<enum_OpenXRHand_Hands>`
 
 :ref:`Hands<enum_OpenXRHand_Hands>` **HAND_LEFT** = ``0``
 
-追踪玩家的左手。
+Tracking the player's left hand.
 
 .. _class_OpenXRHand_constant_HAND_RIGHT:
 
@@ -73,7 +73,7 @@ enum **Hands**: :ref:`🔗<enum_OpenXRHand_Hands>`
 
 :ref:`Hands<enum_OpenXRHand_Hands>` **HAND_RIGHT** = ``1``
 
-追踪玩家的右手。
+Tracking the player's right hand.
 
 .. _class_OpenXRHand_constant_HAND_MAX:
 
@@ -81,7 +81,7 @@ enum **Hands**: :ref:`🔗<enum_OpenXRHand_Hands>`
 
 :ref:`Hands<enum_OpenXRHand_Hands>` **HAND_MAX** = ``2``
 
-最大支持的手数。
+Maximum supported hands.
 
 .. rst-class:: classref-item-separator
 
@@ -99,7 +99,7 @@ enum **MotionRange**: :ref:`🔗<enum_OpenXRHand_MotionRange>`
 
 :ref:`MotionRange<enum_OpenXRHand_MotionRange>` **MOTION_RANGE_UNOBSTRUCTED** = ``0``
 
-玩家抓握时，手部骨架呈握拳状。
+When player grips, hand skeleton will form a full fist.
 
 .. _class_OpenXRHand_constant_MOTION_RANGE_CONFORM_TO_CONTROLLER:
 
@@ -107,7 +107,7 @@ enum **MotionRange**: :ref:`🔗<enum_OpenXRHand_MotionRange>`
 
 :ref:`MotionRange<enum_OpenXRHand_MotionRange>` **MOTION_RANGE_CONFORM_TO_CONTROLLER** = ``1``
 
-玩家抓握时，手部骨架遵循玩家所持的控制器。
+When player grips, hand skeleton conforms to the controller the player is holding.
 
 .. _class_OpenXRHand_constant_MOTION_RANGE_MAX:
 
@@ -115,7 +115,7 @@ enum **MotionRange**: :ref:`🔗<enum_OpenXRHand_MotionRange>`
 
 :ref:`MotionRange<enum_OpenXRHand_MotionRange>` **MOTION_RANGE_MAX** = ``2``
 
-最大支持的运动范围。
+Maximum supported motion ranges.
 
 .. rst-class:: classref-item-separator
 
@@ -133,7 +133,7 @@ enum **SkeletonRig**: :ref:`🔗<enum_OpenXRHand_SkeletonRig>`
 
 :ref:`SkeletonRig<enum_OpenXRHand_SkeletonRig>` **SKELETON_RIG_OPENXR** = ``0``
 
-符合 OpenXR 标准的骨架。
+An OpenXR compliant skeleton.
 
 .. _class_OpenXRHand_constant_SKELETON_RIG_HUMANOID:
 
@@ -141,7 +141,7 @@ enum **SkeletonRig**: :ref:`🔗<enum_OpenXRHand_SkeletonRig>`
 
 :ref:`SkeletonRig<enum_OpenXRHand_SkeletonRig>` **SKELETON_RIG_HUMANOID** = ``1``
 
-符合 :ref:`SkeletonProfileHumanoid<class_SkeletonProfileHumanoid>` 标准的骨架。
+A :ref:`SkeletonProfileHumanoid<class_SkeletonProfileHumanoid>` compliant skeleton.
 
 .. _class_OpenXRHand_constant_SKELETON_RIG_MAX:
 
@@ -149,7 +149,7 @@ enum **SkeletonRig**: :ref:`🔗<enum_OpenXRHand_SkeletonRig>`
 
 :ref:`SkeletonRig<enum_OpenXRHand_SkeletonRig>` **SKELETON_RIG_MAX** = ``2``
 
-最大支持的手数。
+Maximum supported hands.
 
 .. rst-class:: classref-item-separator
 
@@ -167,7 +167,7 @@ enum **BoneUpdate**: :ref:`🔗<enum_OpenXRHand_BoneUpdate>`
 
 :ref:`BoneUpdate<enum_OpenXRHand_BoneUpdate>` **BONE_UPDATE_FULL** = ``0``
 
-骨架骨骼已完全更新（位置和旋转）以匹配跟踪的骨骼。
+The skeletons bones are fully updated (both position and rotation) to match the tracked bones.
 
 .. _class_OpenXRHand_constant_BONE_UPDATE_ROTATION_ONLY:
 
@@ -175,7 +175,7 @@ enum **BoneUpdate**: :ref:`🔗<enum_OpenXRHand_BoneUpdate>`
 
 :ref:`BoneUpdate<enum_OpenXRHand_BoneUpdate>` **BONE_UPDATE_ROTATION_ONLY** = ``1``
 
-骨架骨骼仅旋转以与跟踪的骨骼对齐，从而保留骨骼长度。
+The skeletons bones are only rotated to align with the tracked bones, preserving bone length.
 
 .. _class_OpenXRHand_constant_BONE_UPDATE_MAX:
 
@@ -183,7 +183,7 @@ enum **BoneUpdate**: :ref:`🔗<enum_OpenXRHand_BoneUpdate>`
 
 :ref:`BoneUpdate<enum_OpenXRHand_BoneUpdate>` **BONE_UPDATE_MAX** = ``2``
 
-最大支持的骨骼更新模式。
+Maximum supported bone update mode.
 
 .. rst-class:: classref-section-separator
 
@@ -191,8 +191,8 @@ enum **BoneUpdate**: :ref:`🔗<enum_OpenXRHand_BoneUpdate>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_OpenXRHand_property_bone_update:
 
@@ -205,7 +205,7 @@ enum **BoneUpdate**: :ref:`🔗<enum_OpenXRHand_BoneUpdate>`
 - |void| **set_bone_update**\ (\ value\: :ref:`BoneUpdate<enum_OpenXRHand_BoneUpdate>`\ )
 - :ref:`BoneUpdate<enum_OpenXRHand_BoneUpdate>` **get_bone_update**\ (\ )
 
-指定要在骨骼上执行的更新类型。
+Specify the type of updates to perform on the bone.
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +222,7 @@ enum **BoneUpdate**: :ref:`🔗<enum_OpenXRHand_BoneUpdate>`
 - |void| **set_hand**\ (\ value\: :ref:`Hands<enum_OpenXRHand_Hands>`\ )
 - :ref:`Hands<enum_OpenXRHand_Hands>` **get_hand**\ (\ )
 
-指定该节点是追踪玩家的左手还是右手。
+Specifies whether this node tracks the left or right hand of the player.
 
 .. rst-class:: classref-item-separator
 
@@ -239,7 +239,7 @@ enum **BoneUpdate**: :ref:`🔗<enum_OpenXRHand_BoneUpdate>`
 - |void| **set_hand_skeleton**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_hand_skeleton**\ (\ )
 
-设置一个\ :ref:`Skeleton3D<class_Skeleton3D>`\ 节点，该节点的姿势位置将被更新。
+Set a :ref:`Skeleton3D<class_Skeleton3D>` node for which the pose positions will be updated.
 
 .. rst-class:: classref-item-separator
 
@@ -256,7 +256,7 @@ enum **BoneUpdate**: :ref:`🔗<enum_OpenXRHand_BoneUpdate>`
 - |void| **set_motion_range**\ (\ value\: :ref:`MotionRange<enum_OpenXRHand_MotionRange>`\ )
 - :ref:`MotionRange<enum_OpenXRHand_MotionRange>` **get_motion_range**\ (\ )
 
-设置限制手部运动的运动范围（前提是支持）。
+Set the motion range (if supported) limiting the hand motion.
 
 .. rst-class:: classref-item-separator
 
@@ -273,14 +273,14 @@ enum **BoneUpdate**: :ref:`🔗<enum_OpenXRHand_BoneUpdate>`
 - |void| **set_skeleton_rig**\ (\ value\: :ref:`SkeletonRig<enum_OpenXRHand_SkeletonRig>`\ )
 - :ref:`SkeletonRig<enum_OpenXRHand_SkeletonRig>` **get_skeleton_rig**\ (\ )
 
-设置 :ref:`hand_skeleton<class_OpenXRHand_property_hand_skeleton>` 所兼容的骨架绑定类型。
+Set the type of skeleton rig the :ref:`hand_skeleton<class_OpenXRHand_property_hand_skeleton>` is compliant with.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

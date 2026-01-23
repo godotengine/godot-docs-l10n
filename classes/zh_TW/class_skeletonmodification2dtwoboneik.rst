@@ -5,25 +5,25 @@
 SkeletonModification2DTwoBoneIK
 ===============================
 
-**實驗性：** This class may be changed or removed in future versions.
+**Experimental:** This class may be changed or removed in future versions.
 
-**繼承：** :ref:`SkeletonModification2D<class_SkeletonModification2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`SkeletonModification2D<class_SkeletonModification2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-這種修改器會讓兩個骨骼按照餘弦定理進行旋轉，最終抵達目標。
+A modification that rotates two bones using the law of cosines to reach the target.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-這種 :ref:`SkeletonModification2D<class_SkeletonModification2D>` 所使用的演算法一般稱之為 TwoBoneIK。這種演算法的原理是利用餘弦定理和骨骼的長度來推算骨骼目前的旋轉量和構成三角形所需的旋轉量，三角形由第一根骨骼、第二根骨骼以及目標構成。因為這種演算法的原理是構成三角形，所以僅能對兩根骨骼進行操作。
+This :ref:`SkeletonModification2D<class_SkeletonModification2D>` uses an algorithm typically called TwoBoneIK. This algorithm works by leveraging the law of cosines and the lengths of the bones to figure out what rotation the bones currently have, and what rotation they need to make a complete triangle, where the first bone, the second bone, and the target form the three vertices of the triangle. Because the algorithm works by making a triangle, it can only operate on two bones.
 
-TwoBoneIK 適用於手臂、腿部，其實任何能夠用兩根骨頭彎向某個目標來代表的關節均能使用。求解器比 :ref:`SkeletonModification2DFABRIK<class_SkeletonModification2DFABRIK>` 更輕量，但也能得到類似的比較自然的結果。
+TwoBoneIK is great for arms, legs, and really any joints that can be represented by just two bones that bend to reach a target. This solver is more lightweight than :ref:`SkeletonModification2DFABRIK<class_SkeletonModification2DFABRIK>`, but gives similar, natural looking results.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ TwoBoneIK 適用於手臂、腿部，其實任何能夠用兩根骨頭彎向某�
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -70,8 +70,8 @@ TwoBoneIK 適用於手臂、腿部，其實任何能夠用兩根骨頭彎向某�
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_SkeletonModification2DTwoBoneIK_property_flip_bend_direction:
 
@@ -101,7 +101,7 @@ If ``true``, the bones in the modification will bend outward as opposed to inwar
 - |void| **set_target_maximum_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_target_maximum_distance**\ (\ )
 
-該目標可以到達的最大距離。如果目標比這個距離更遠，則該修改將如同它就在這個最大距離處一樣求解。當設定為 ``0`` 時，則該修改將不受距離限制地求解。
+The maximum distance the target can be at. If the target is farther than this distance, the modification will solve as if it's at this maximum distance. When set to ``0``, the modification will solve without distance constraints.
 
 .. rst-class:: classref-item-separator
 
@@ -118,7 +118,7 @@ If ``true``, the bones in the modification will bend outward as opposed to inwar
 - |void| **set_target_minimum_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_target_minimum_distance**\ (\ )
 
-該目標可以到達的最小距離。如果目標比這個距離更近，則該修改將如同它就在這個最小距離處一樣求解。當設定為 ``0`` 時，則該修改將不受距離限制地求解。
+The minimum distance the target can be at. If the target is closer than this distance, the modification will solve as if it's at this minimum distance. When set to ``0``, the modification will solve without distance constraints.
 
 .. rst-class:: classref-item-separator
 
@@ -135,7 +135,7 @@ If ``true``, the bones in the modification will bend outward as opposed to inwar
 - |void| **set_target_node**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_target_node**\ (\ )
 
-作為 TwoBoneIK 修改目標的節點的 NodePath。該節點是彎曲 :ref:`Bone2D<class_Bone2D>` 節點時該修改將使用的節點。
+The NodePath to the node that is the target for the TwoBoneIK modification. This node is what the modification will use when bending the :ref:`Bone2D<class_Bone2D>` nodes.
 
 .. rst-class:: classref-section-separator
 
@@ -143,8 +143,8 @@ If ``true``, the bones in the modification will bend outward as opposed to inwar
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_SkeletonModification2DTwoBoneIK_method_get_joint_one_bone2d_node:
 
@@ -152,7 +152,7 @@ If ``true``, the bones in the modification will bend outward as opposed to inwar
 
 :ref:`NodePath<class_NodePath>` **get_joint_one_bone2d_node**\ (\ ) |const| :ref:`🔗<class_SkeletonModification2DTwoBoneIK_method_get_joint_one_bone2d_node>`
 
-返回 TwoBoneIK 修改器中作為第一個骨骼的 :ref:`Bone2D<class_Bone2D>` 節點。
+Returns the :ref:`Bone2D<class_Bone2D>` node that is being used as the first bone in the TwoBoneIK modification.
 
 .. rst-class:: classref-item-separator
 
@@ -164,7 +164,7 @@ If ``true``, the bones in the modification will bend outward as opposed to inwar
 
 :ref:`int<class_int>` **get_joint_one_bone_idx**\ (\ ) |const| :ref:`🔗<class_SkeletonModification2DTwoBoneIK_method_get_joint_one_bone_idx>`
 
-返回 TwoBoneIK 修改器中作為第一個骨骼的 :ref:`Bone2D<class_Bone2D>` 節點的索引。
+Returns the index of the :ref:`Bone2D<class_Bone2D>` node that is being used as the first bone in the TwoBoneIK modification.
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +176,7 @@ If ``true``, the bones in the modification will bend outward as opposed to inwar
 
 :ref:`NodePath<class_NodePath>` **get_joint_two_bone2d_node**\ (\ ) |const| :ref:`🔗<class_SkeletonModification2DTwoBoneIK_method_get_joint_two_bone2d_node>`
 
-返回 TwoBoneIK 修改器中作為第二個骨骼的 :ref:`Bone2D<class_Bone2D>` 節點。
+Returns the :ref:`Bone2D<class_Bone2D>` node that is being used as the second bone in the TwoBoneIK modification.
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ If ``true``, the bones in the modification will bend outward as opposed to inwar
 
 :ref:`int<class_int>` **get_joint_two_bone_idx**\ (\ ) |const| :ref:`🔗<class_SkeletonModification2DTwoBoneIK_method_get_joint_two_bone_idx>`
 
-返回 TwoBoneIK 修改器中作為第二個骨骼的 :ref:`Bone2D<class_Bone2D>` 節點的索引。
+Returns the index of the :ref:`Bone2D<class_Bone2D>` node that is being used as the second bone in the TwoBoneIK modification.
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ If ``true``, the bones in the modification will bend outward as opposed to inwar
 
 |void| **set_joint_one_bone2d_node**\ (\ bone2d_node\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SkeletonModification2DTwoBoneIK_method_set_joint_one_bone2d_node>`
 
-設定 TwoBoneIK 修改器中作為第一個骨骼的 :ref:`Bone2D<class_Bone2D>` 節點。
+Sets the :ref:`Bone2D<class_Bone2D>` node that is being used as the first bone in the TwoBoneIK modification.
 
 .. rst-class:: classref-item-separator
 
@@ -212,7 +212,7 @@ If ``true``, the bones in the modification will bend outward as opposed to inwar
 
 |void| **set_joint_one_bone_idx**\ (\ bone_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SkeletonModification2DTwoBoneIK_method_set_joint_one_bone_idx>`
 
-設定 TwoBoneIK 修改器中作為第一個骨骼的 :ref:`Bone2D<class_Bone2D>` 節點的索引。
+Sets the index of the :ref:`Bone2D<class_Bone2D>` node that is being used as the first bone in the TwoBoneIK modification.
 
 .. rst-class:: classref-item-separator
 
@@ -224,7 +224,7 @@ If ``true``, the bones in the modification will bend outward as opposed to inwar
 
 |void| **set_joint_two_bone2d_node**\ (\ bone2d_node\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SkeletonModification2DTwoBoneIK_method_set_joint_two_bone2d_node>`
 
-設定 TwoBoneIK 修改器中作為第二個骨骼的 :ref:`Bone2D<class_Bone2D>` 節點。
+Sets the :ref:`Bone2D<class_Bone2D>` node that is being used as the second bone in the TwoBoneIK modification.
 
 .. rst-class:: classref-item-separator
 
@@ -236,14 +236,14 @@ If ``true``, the bones in the modification will bend outward as opposed to inwar
 
 |void| **set_joint_two_bone_idx**\ (\ bone_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SkeletonModification2DTwoBoneIK_method_set_joint_two_bone_idx>`
 
-設定 TwoBoneIK 修改器中作為第二個骨骼的 :ref:`Bone2D<class_Bone2D>` 節點的索引。
+Sets the index of the :ref:`Bone2D<class_Bone2D>` node that is being used as the second bone in the TwoBoneIK modification.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

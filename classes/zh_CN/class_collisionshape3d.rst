@@ -5,14 +5,14 @@
 CollisionShape3D
 ================
 
-**继承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-向 :ref:`CollisionObject3D<class_CollisionObject3D>` 父级提供 :ref:`Shape3D<class_Shape3D>` 的节点。
+A node that provides a :ref:`Shape3D<class_Shape3D>` to a :ref:`CollisionObject3D<class_CollisionObject3D>` parent.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
 A node that provides a :ref:`Shape3D<class_Shape3D>` to a :ref:`CollisionObject3D<class_CollisionObject3D>` parent and allows it to be edited. This can give a detection shape to an :ref:`Area3D<class_Area3D>` or turn a :ref:`PhysicsBody3D<class_PhysicsBody3D>` into a solid object.
 
@@ -20,21 +20,21 @@ A node that provides a :ref:`Shape3D<class_Shape3D>` to a :ref:`CollisionObject3
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
-- :doc:`物理介绍 <../tutorials/physics/physics_introduction>`
+- :doc:`Physics introduction <../tutorials/physics/physics_introduction>`
 
-- `3D 动力学角色演示 <https://godotengine.org/asset-library/asset/2739>`__
+- `3D Kinematic Character Demo <https://godotengine.org/asset-library/asset/2739>`__
 
-- `3D 平台跳跃演示 <https://godotengine.org/asset-library/asset/2748>`__
+- `3D Platformer Demo <https://godotengine.org/asset-library/asset/2748>`__
 
-- `第三人称射击（TPS）演示 <https://godotengine.org/asset-library/asset/2710>`__
+- `Third Person Shooter (TPS) Demo <https://godotengine.org/asset-library/asset/2710>`__
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -51,8 +51,8 @@ A node that provides a :ref:`Shape3D<class_Shape3D>` to a :ref:`CollisionObject3
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -69,8 +69,8 @@ A node that provides a :ref:`Shape3D<class_Shape3D>` to a :ref:`CollisionObject3
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_CollisionShape3D_property_debug_color:
 
@@ -83,9 +83,9 @@ A node that provides a :ref:`Shape3D<class_Shape3D>` to a :ref:`CollisionObject3
 - |void| **set_debug_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_debug_color**\ (\ )
 
-碰撞形状的颜色，在编辑器中显示，勾选编辑器顶部的 **调试 > 显示碰撞形状** 时也会在运行项目时显示。
+The collision shape color that is displayed in the editor, or in the running project if **Debug > Visible Collision Shapes** is checked at the top of the editor.
 
-\ **注意：**\ 默认值为 :ref:`ProjectSettings.debug/shapes/collision/shape_color<class_ProjectSettings_property_debug/shapes/collision/shape_color>`\ 。这里记录的 ``Color(0, 0, 0, 0)`` 值是占位符，不是实际的默认调试颜色。
+\ **Note:** The default value is :ref:`ProjectSettings.debug/shapes/collision/shape_color<class_ProjectSettings_property_debug/shapes/collision/shape_color>`. The ``Color(0, 0, 0, 0)`` value documented here is a placeholder, and not the actual default debug color.
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +102,7 @@ A node that provides a :ref:`Shape3D<class_Shape3D>` to a :ref:`CollisionObject3
 - |void| **set_enable_debug_fill**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enable_debug_fill**\ (\ )
 
-如果为 ``true``\ ，则显示形状时除了显示线框外还会显示填充颜色。
+If ``true``, when the shape is displayed, it will show a solid fill color in addition to its wireframe.
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ A node that provides a :ref:`Shape3D<class_Shape3D>` to a :ref:`CollisionObject3
 - |void| **set_disabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_disabled**\ (\ )
 
-禁用的碰撞形状在世界中没有影响。这个属性应该用 :ref:`Object.set_deferred()<class_Object_method_set_deferred>` 改变。
+A disabled collision shape has no effect in the world. This property should be changed with :ref:`Object.set_deferred()<class_Object_method_set_deferred>`.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ A node that provides a :ref:`Shape3D<class_Shape3D>` to a :ref:`CollisionObject3
 - |void| **set_shape**\ (\ value\: :ref:`Shape3D<class_Shape3D>`\ )
 - :ref:`Shape3D<class_Shape3D>` **get_shape**\ (\ )
 
-该碰撞形状拥有的实际形状。
+The actual shape owned by this collision shape.
 
 .. rst-class:: classref-section-separator
 
@@ -144,8 +144,8 @@ A node that provides a :ref:`Shape3D<class_Shape3D>` to a :ref:`CollisionObject3
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_CollisionShape3D_method_make_convex_from_siblings:
 
@@ -153,7 +153,7 @@ A node that provides a :ref:`Shape3D<class_Shape3D>` to a :ref:`CollisionObject3
 
 |void| **make_convex_from_siblings**\ (\ ) :ref:`🔗<class_CollisionShape3D_method_make_convex_from_siblings>`
 
-将碰撞形状的形状设置为其所有凸面 :ref:`MeshInstance3D<class_MeshInstance3D>` 同级几何体的相加。
+Sets the collision shape's shape to the addition of all its convexed :ref:`MeshInstance3D<class_MeshInstance3D>` siblings geometry.
 
 .. rst-class:: classref-item-separator
 
@@ -165,16 +165,16 @@ A node that provides a :ref:`Shape3D<class_Shape3D>` to a :ref:`CollisionObject3
 
 |void| **resource_changed**\ (\ resource\: :ref:`Resource<class_Resource>`\ ) :ref:`🔗<class_CollisionShape3D_method_resource_changed>`
 
-**已弃用：** Use :ref:`Resource.changed<class_Resource_signal_changed>` instead.
+**Deprecated:** Use :ref:`Resource.changed<class_Resource_signal_changed>` instead.
 
-这个方法什么也不做。
+This method does nothing.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,14 +5,14 @@
 CameraServer
 ============
 
-**繼承：** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Object<class_Object>`
 
-追蹤 Godot 中可存取的不同攝像頭的伺服器。
+Server keeping track of different cameras accessible in Godot.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 The **CameraServer** keeps track of different cameras accessible in Godot. These are external cameras such as webcams or the cameras on your phone.
 
@@ -22,8 +22,8 @@ It is notably used to provide AR modules with a video feed from the camera.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ It is notably used to provide AR modules with a video feed from the camera.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -58,8 +58,8 @@ It is notably used to provide AR modules with a video feed from the camera.
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_CameraServer_signal_camera_feed_added:
 
@@ -67,7 +67,7 @@ It is notably used to provide AR modules with a video feed from the camera.
 
 **camera_feed_added**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CameraServer_signal_camera_feed_added>`
 
-當新增 :ref:`CameraFeed<class_CameraFeed>` 時發出（例如插入網路攝像頭時）。
+Emitted when a :ref:`CameraFeed<class_CameraFeed>` is added (e.g. a webcam is plugged in).
 
 .. rst-class:: classref-item-separator
 
@@ -79,7 +79,7 @@ It is notably used to provide AR modules with a video feed from the camera.
 
 **camera_feed_removed**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CameraServer_signal_camera_feed_removed>`
 
-當移除 :ref:`CameraFeed<class_CameraFeed>` 時發出（例如拔掉網路攝像頭時）。
+Emitted when a :ref:`CameraFeed<class_CameraFeed>` is removed (e.g. a webcam is unplugged).
 
 .. rst-class:: classref-item-separator
 
@@ -99,8 +99,8 @@ Emitted when camera feeds are updated.
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_CameraServer_FeedImage:
 
@@ -114,7 +114,7 @@ enum **FeedImage**: :ref:`🔗<enum_CameraServer_FeedImage>`
 
 :ref:`FeedImage<enum_CameraServer_FeedImage>` **FEED_RGBA_IMAGE** = ``0``
 
-RGBA 相機圖像。
+The RGBA camera image.
 
 .. _class_CameraServer_constant_FEED_YCBCR_IMAGE:
 
@@ -122,7 +122,7 @@ RGBA 相機圖像。
 
 :ref:`FeedImage<enum_CameraServer_FeedImage>` **FEED_YCBCR_IMAGE** = ``0``
 
-`YCbCr <https://zh.wikipedia.org/zh-cn/YCbCr>`__ 相機圖像。
+The `YCbCr <https://en.wikipedia.org/wiki/YCbCr>`__ camera image.
 
 .. _class_CameraServer_constant_FEED_Y_IMAGE:
 
@@ -130,7 +130,7 @@ RGBA 相機圖像。
 
 :ref:`FeedImage<enum_CameraServer_FeedImage>` **FEED_Y_IMAGE** = ``0``
 
-Y 分量相機圖像。
+The Y component camera image.
 
 .. _class_CameraServer_constant_FEED_CBCR_IMAGE:
 
@@ -138,7 +138,7 @@ Y 分量相機圖像。
 
 :ref:`FeedImage<enum_CameraServer_FeedImage>` **FEED_CBCR_IMAGE** = ``1``
 
-CbCr 分量相機圖像。
+The CbCr component camera image.
 
 .. rst-class:: classref-section-separator
 
@@ -146,8 +146,8 @@ CbCr 分量相機圖像。
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_CameraServer_property_monitoring_feeds:
 
@@ -199,8 +199,8 @@ This has a performance cost, so only set it to ``true`` when you're actively acc
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_CameraServer_method_add_feed:
 
@@ -208,7 +208,7 @@ This has a performance cost, so only set it to ``true`` when you're actively acc
 
 |void| **add_feed**\ (\ feed\: :ref:`CameraFeed<class_CameraFeed>`\ ) :ref:`🔗<class_CameraServer_method_add_feed>`
 
-將相機源 ``feed`` 新增到相機伺服器中。
+Adds the camera ``feed`` to the camera server.
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ This has a performance cost, so only set it to ``true`` when you're actively acc
 
 :ref:`Array<class_Array>`\[:ref:`CameraFeed<class_CameraFeed>`\] **feeds**\ (\ ) :ref:`🔗<class_CameraServer_method_feeds>`
 
-返回一個 :ref:`CameraFeed<class_CameraFeed>` 陣列。
+Returns an array of :ref:`CameraFeed<class_CameraFeed>`\ s.
 
 .. rst-class:: classref-item-separator
 
@@ -232,7 +232,7 @@ This has a performance cost, so only set it to ``true`` when you're actively acc
 
 :ref:`CameraFeed<class_CameraFeed>` **get_feed**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CameraServer_method_get_feed>`
 
-返回與給定索引 ``index`` 的相機對應的 :ref:`CameraFeed<class_CameraFeed>`\ 。
+Returns the :ref:`CameraFeed<class_CameraFeed>` corresponding to the camera with the given ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -244,7 +244,7 @@ This has a performance cost, so only set it to ``true`` when you're actively acc
 
 :ref:`int<class_int>` **get_feed_count**\ (\ ) :ref:`🔗<class_CameraServer_method_get_feed_count>`
 
-返回註冊的 :ref:`CameraFeed<class_CameraFeed>` 的數量。
+Returns the number of :ref:`CameraFeed<class_CameraFeed>`\ s registered.
 
 .. rst-class:: classref-item-separator
 
@@ -256,14 +256,14 @@ This has a performance cost, so only set it to ``true`` when you're actively acc
 
 |void| **remove_feed**\ (\ feed\: :ref:`CameraFeed<class_CameraFeed>`\ ) :ref:`🔗<class_CameraServer_method_remove_feed>`
 
-移除指定的相機源 ``feed``\ 。
+Removes the specified camera ``feed``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

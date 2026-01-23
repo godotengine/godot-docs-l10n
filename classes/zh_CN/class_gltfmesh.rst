@@ -5,28 +5,28 @@
 GLTFMesh
 ========
 
-**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-GLTFMesh 代表 glTF 网格。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-GLTFMesh 处理从 glTF 文件导入的 3D 网格数据，包括混合通道、混合权重、实例材质等属性和网格本身。
+GLTFMesh represents a glTF mesh.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`运行时文件加载与保存 <../tutorials/io/runtime_file_loading_and_saving>`
+GLTFMesh handles 3D mesh data imported from glTF files. It includes properties for blend channels, blend weights, instance materials, and the mesh itself.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Runtime file loading and saving <../tutorials/io/runtime_file_loading_and_saving>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -43,8 +43,8 @@ GLTFMesh 处理从 glTF 文件导入的 3D 网格数据，包括混合通道、�
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -61,8 +61,8 @@ GLTFMesh 处理从 glTF 文件导入的 3D 网格数据，包括混合通道、�
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_GLTFMesh_property_blend_weights:
 
@@ -75,7 +75,7 @@ GLTFMesh 处理从 glTF 文件导入的 3D 网格数据，包括混合通道、�
 - |void| **set_blend_weights**\ (\ value\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ )
 - :ref:`PackedFloat32Array<class_PackedFloat32Array>` **get_blend_weights**\ (\ )
 
-float 数组，代表网格的混合权重。
+An array of floats representing the blend weights of the mesh.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
 
@@ -94,7 +94,7 @@ float 数组，代表网格的混合权重。
 - |void| **set_instance_materials**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`Material<class_Material>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`Material<class_Material>`\] **get_instance_materials**\ (\ )
 
-Material 对象数组，代表网格所使用的材质。
+An array of Material objects representing the materials used in the mesh.
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ Material 对象数组，代表网格所使用的材质。
 - |void| **set_mesh**\ (\ value\: :ref:`ImporterMesh<class_ImporterMesh>`\ )
 - :ref:`ImporterMesh<class_ImporterMesh>` **get_mesh**\ (\ )
 
-代表网格本身的 :ref:`ImporterMesh<class_ImporterMesh>` 对象。
+The :ref:`ImporterMesh<class_ImporterMesh>` object representing the mesh itself.
 
 .. rst-class:: classref-item-separator
 
@@ -128,7 +128,7 @@ Material 对象数组，代表网格所使用的材质。
 - |void| **set_original_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_original_name**\ (\ )
 
-网格的原名。
+The original name of the mesh.
 
 .. rst-class:: classref-section-separator
 
@@ -136,8 +136,8 @@ Material 对象数组，代表网格所使用的材质。
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_GLTFMesh_method_get_additional_data:
 
@@ -145,9 +145,9 @@ Material 对象数组，代表网格所使用的材质。
 
 :ref:`Variant<class_Variant>` **get_additional_data**\ (\ extension_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_GLTFMesh_method_get_additional_data>`
 
-在这个 **GLTFMesh** 实例中获取额外的任意数据。这可用于将每个节点的状态数据保存在 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 类中，这很重要，因为它们是无状态的。
+Gets additional arbitrary data in this **GLTFMesh** instance. This can be used to keep per-node state data in :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` classes, which is important because they are stateless.
 
-参数应该是 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 的名字（不必与 glTF 文件中的扩展名匹配），且返回值可以是你设置的任何值。如果没有设置任何内容，则返回值为 ``null``\ 。
+The argument should be the :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` name (does not have to match the extension name in the glTF file), and the return value can be anything you set. If nothing was set, the return value is ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -159,16 +159,16 @@ Material 对象数组，代表网格所使用的材质。
 
 |void| **set_additional_data**\ (\ extension_name\: :ref:`StringName<class_StringName>`, additional_data\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_GLTFMesh_method_set_additional_data>`
 
-在这个 **GLTFMesh** 实例中设置额外的任意数据。这可用于将每个节点的状态数据保存在 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 类中，这很重要，因为它们是无状态的。
+Sets additional arbitrary data in this **GLTFMesh** instance. This can be used to keep per-node state data in :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` classes, which is important because they are stateless.
 
-第一个参数应该是 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 的名字（不必与 glTF 文件中的扩展名匹配），第二个参数可以是你想要的任何内容。
+The first argument should be the :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` name (does not have to match the extension name in the glTF file), and the second argument can be anything you want.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

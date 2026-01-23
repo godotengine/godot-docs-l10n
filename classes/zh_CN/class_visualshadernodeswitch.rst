@@ -5,21 +5,21 @@
 VisualShaderNodeSwitch
 ======================
 
-**继承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-可视化着色器中使用的选择器函数。
+A selector function for use within the visual shader graph.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-如果提供的布尔值为 ``true`` 或 ``false``\ ，则返回 :ref:`op_type<class_VisualShaderNodeSwitch_property_op_type>` 类型的一个关联值。
+Returns an associated value of the :ref:`op_type<class_VisualShaderNodeSwitch_property_op_type>` type if the provided boolean value is ``true`` or ``false``.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ VisualShaderNodeSwitch
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_VisualShaderNodeSwitch_OpType:
 
@@ -49,7 +49,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeSwitch_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeSwitch_OpType>` **OP_TYPE_FLOAT** = ``0``
 
-浮点标量。
+A floating-point scalar.
 
 .. _class_VisualShaderNodeSwitch_constant_OP_TYPE_INT:
 
@@ -57,7 +57,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeSwitch_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeSwitch_OpType>` **OP_TYPE_INT** = ``1``
 
-整数标量。
+An integer scalar.
 
 .. _class_VisualShaderNodeSwitch_constant_OP_TYPE_UINT:
 
@@ -65,7 +65,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeSwitch_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeSwitch_OpType>` **OP_TYPE_UINT** = ``2``
 
-无符号整数标量。
+An unsigned integer scalar.
 
 .. _class_VisualShaderNodeSwitch_constant_OP_TYPE_VECTOR_2D:
 
@@ -73,7 +73,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeSwitch_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeSwitch_OpType>` **OP_TYPE_VECTOR_2D** = ``3``
 
-2D 向量类型。
+A 2D vector type.
 
 .. _class_VisualShaderNodeSwitch_constant_OP_TYPE_VECTOR_3D:
 
@@ -81,7 +81,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeSwitch_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeSwitch_OpType>` **OP_TYPE_VECTOR_3D** = ``4``
 
-3D向量类型。
+A 3D vector type.
 
 .. _class_VisualShaderNodeSwitch_constant_OP_TYPE_VECTOR_4D:
 
@@ -89,7 +89,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeSwitch_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeSwitch_OpType>` **OP_TYPE_VECTOR_4D** = ``5``
 
-4D 向量类型。
+A 4D vector type.
 
 .. _class_VisualShaderNodeSwitch_constant_OP_TYPE_BOOLEAN:
 
@@ -97,7 +97,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeSwitch_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeSwitch_OpType>` **OP_TYPE_BOOLEAN** = ``6``
 
-布林类型。
+A boolean type.
 
 .. _class_VisualShaderNodeSwitch_constant_OP_TYPE_TRANSFORM:
 
@@ -105,7 +105,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeSwitch_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeSwitch_OpType>` **OP_TYPE_TRANSFORM** = ``7``
 
-变换类型。
+A transform type.
 
 .. _class_VisualShaderNodeSwitch_constant_OP_TYPE_MAX:
 
@@ -113,7 +113,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeSwitch_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeSwitch_OpType>` **OP_TYPE_MAX** = ``8``
 
-代表 :ref:`OpType<enum_VisualShaderNodeSwitch_OpType>` 枚举的大小。
+Represents the size of the :ref:`OpType<enum_VisualShaderNodeSwitch_OpType>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -121,8 +121,8 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeSwitch_OpType>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_VisualShaderNodeSwitch_property_op_type:
 
@@ -135,14 +135,14 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeSwitch_OpType>`
 - |void| **set_op_type**\ (\ value\: :ref:`OpType<enum_VisualShaderNodeSwitch_OpType>`\ )
 - :ref:`OpType<enum_VisualShaderNodeSwitch_OpType>` **get_op_type**\ (\ )
 
-操作数和返回值的类型。
+A type of operands and returned value.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

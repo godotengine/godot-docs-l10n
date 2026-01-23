@@ -5,30 +5,30 @@
 GLTFSpecGloss
 =============
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 Archived glTF extension for specular/glossy materials.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 KHR_materials_pbrSpecularGlossiness is an archived glTF extension. This means that it is deprecated and not recommended for new files. However, it is still supported for loading old files.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`執行時檔案載入與儲存 <../tutorials/io/runtime_file_loading_and_saving>`
+- :doc:`Runtime file loading and saving <../tutorials/io/runtime_file_loading_and_saving>`
 
 - `KHR_materials_pbrSpecularGlossiness glTF extension spec <https://github.com/KhronosGroup/glTF/blob/main/extensions/2.0/Archived/KHR_materials_pbrSpecularGlossiness>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -51,8 +51,8 @@ KHR_materials_pbrSpecularGlossiness is an archived glTF extension. This means th
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_GLTFSpecGloss_property_diffuse_factor:
 
@@ -65,7 +65,7 @@ KHR_materials_pbrSpecularGlossiness is an archived glTF extension. This means th
 - |void| **set_diffuse_factor**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_diffuse_factor**\ (\ )
 
-該材質反射漫反射係數。
+The reflected diffuse factor of the material.
 
 .. rst-class:: classref-item-separator
 
@@ -82,7 +82,7 @@ KHR_materials_pbrSpecularGlossiness is an archived glTF extension. This means th
 - |void| **set_diffuse_img**\ (\ value\: :ref:`Image<class_Image>`\ )
 - :ref:`Image<class_Image>` **get_diffuse_img**\ (\ )
 
-漫反射紋理。
+The diffuse texture.
 
 .. rst-class:: classref-item-separator
 
@@ -99,7 +99,7 @@ KHR_materials_pbrSpecularGlossiness is an archived glTF extension. This means th
 - |void| **set_gloss_factor**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gloss_factor**\ (\ )
 
-材質的光澤度或光滑度。
+The glossiness or smoothness of the material.
 
 .. rst-class:: classref-item-separator
 
@@ -116,7 +116,7 @@ KHR_materials_pbrSpecularGlossiness is an archived glTF extension. This means th
 - |void| **set_spec_gloss_img**\ (\ value\: :ref:`Image<class_Image>`\ )
 - :ref:`Image<class_Image>` **get_spec_gloss_img**\ (\ )
 
-鏡面光澤度紋理。
+The specular-glossiness texture.
 
 .. rst-class:: classref-item-separator
 
@@ -133,14 +133,14 @@ KHR_materials_pbrSpecularGlossiness is an archived glTF extension. This means th
 - |void| **set_specular_factor**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_specular_factor**\ (\ )
 
-材質的鏡面反射 RGB 顏色。不使用 Alpha 通道。
+The specular RGB color of the material. The alpha channel is unused.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

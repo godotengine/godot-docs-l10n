@@ -5,23 +5,23 @@
 EngineProfiler
 ==============
 
-**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用於建立自訂分析器的基底類別。
+Base class for creating custom profilers.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-這個類可用於實作自訂分析器，能夠與引擎和編輯器除錯器進行互動。
+This class can be used to implement custom profilers that are able to interact with the engine and editor debugger.
 
-有關詳細資訊，請參閱 :ref:`EngineDebugger<class_EngineDebugger>` 和 :ref:`EditorDebuggerPlugin<class_EditorDebuggerPlugin>`\ 。
+See :ref:`EngineDebugger<class_EngineDebugger>` and :ref:`EditorDebuggerPlugin<class_EditorDebuggerPlugin>` for more information.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ EngineProfiler
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_EngineProfiler_private_method__add_frame:
 
@@ -49,7 +49,7 @@ EngineProfiler
 
 |void| **_add_frame**\ (\ data\: :ref:`Array<class_Array>`\ ) |virtual| :ref:`🔗<class_EngineProfiler_private_method__add_frame>`
 
-使用 :ref:`EngineDebugger.profiler_add_frame_data()<class_EngineDebugger_method_profiler_add_frame_data>` 將資料加入分析器時呼叫。
+Called when data is added to profiler using :ref:`EngineDebugger.profiler_add_frame_data()<class_EngineDebugger_method_profiler_add_frame_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -61,7 +61,7 @@ EngineProfiler
 
 |void| **_tick**\ (\ frame_time\: :ref:`float<class_float>`, process_time\: :ref:`float<class_float>`, physics_time\: :ref:`float<class_float>`, physics_frame_time\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_EngineProfiler_private_method__tick>`
 
-當分析器使用有關目前影格的資訊處於活動狀態時，每次引擎反覆運算呼叫一次。所有時間值都以秒為單位。較低的值表示更快的處理時間，因此被認為更好。
+Called once every engine iteration when the profiler is active with information about the current frame. All time values are in seconds. Lower values represent faster processing times and are therefore considered better.
 
 .. rst-class:: classref-item-separator
 
@@ -73,14 +73,14 @@ EngineProfiler
 
 |void| **_toggle**\ (\ enable\: :ref:`bool<class_bool>`, options\: :ref:`Array<class_Array>`\ ) |virtual| :ref:`🔗<class_EngineProfiler_private_method__toggle>`
 
-啟用/禁用分析器時呼叫，提供了一組選項 ``options``\ 。
+Called when the profiler is enabled/disabled, along with a set of ``options``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

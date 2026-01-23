@@ -5,23 +5,23 @@
 PhysicsDirectBodyState2DExtension
 =================================
 
-**繼承：** :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` **<** :ref:`Object<class_Object>`
 
-提供能夠覆蓋的虛方法，用於建立 :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` 的自訂實作。
+Provides virtual methods that can be overridden to create custom :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` implementations.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-這個類擴充自 :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`\ ，額外提供了可覆蓋的虛方法。呼叫時會使用這些覆蓋後的方法代替物理伺服器中的內部方法。
+This class extends :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` by providing additional virtual methods that can be overridden. When these methods are overridden, they will be called instead of the internal methods of the physics server.
 
-旨在用於 GDExtension，用於建立 :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` 的自訂實作。
+Intended for use with GDExtension to create custom implementations of :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -130,8 +130,8 @@ PhysicsDirectBodyState2DExtension
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_PhysicsDirectBodyState2DExtension_private_method__add_constant_central_force:
 
@@ -713,12 +713,12 @@ Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.sleeping<cl
 
 Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.transform<class_PhysicsDirectBodyState2D_property_transform>` and its respective setter.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

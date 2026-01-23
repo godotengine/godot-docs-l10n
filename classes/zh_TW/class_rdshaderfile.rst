@@ -5,23 +5,23 @@
 RDShaderFile
 ============
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-編譯後的 SPIR-V 形式的著色器檔（由 :ref:`RenderingDevice<class_RenderingDevice>` 使用）。請勿與 Godot 自身的 :ref:`Shader<class_Shader>` 混淆。
+Compiled shader file in SPIR-V form (used by :ref:`RenderingDevice<class_RenderingDevice>`). Not to be confused with Godot's own :ref:`Shader<class_Shader>`.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-編譯後的 SPIR-V 形式的著色器檔。
+Compiled shader file in SPIR-V form.
 
-另見 :ref:`RDShaderSource<class_RDShaderSource>`\ 。\ **RDShaderFile** 應該僅用於 :ref:`RenderingDevice<class_RenderingDevice>` API。不應與 Godot 自身的 :ref:`Shader<class_Shader>` 資源混淆，後者是 Godot 諸多節點所使用的資源，用於高階著色器程式設計。
+See also :ref:`RDShaderSource<class_RDShaderSource>`. **RDShaderFile** is only meant to be used with the :ref:`RenderingDevice<class_RenderingDevice>` API. It should not be confused with Godot's own :ref:`Shader<class_Shader>` resource, which is what Godot's various nodes use for high-level shader programming.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -32,8 +32,8 @@ RDShaderFile
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -52,8 +52,8 @@ RDShaderFile
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_RDShaderFile_property_base_error:
 
@@ -66,7 +66,7 @@ RDShaderFile
 - |void| **set_base_error**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_base_error**\ (\ )
 
-基礎編譯錯誤消息，如果非空，表示與特定著色器階段無關的錯誤。如果為空，著色器編譯也不一定成功（請檢查 :ref:`RDShaderSPIRV<class_RDShaderSPIRV>` 的各種錯誤消息成員）。
+The base compilation error message, which indicates errors not related to a specific shader stage if non-empty. If empty, shader compilation is not necessarily successful (check :ref:`RDShaderSPIRV<class_RDShaderSPIRV>`'s error message members).
 
 .. rst-class:: classref-section-separator
 
@@ -74,8 +74,8 @@ RDShaderFile
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_RDShaderFile_method_get_spirv:
 
@@ -83,7 +83,7 @@ RDShaderFile
 
 :ref:`RDShaderSPIRV<class_RDShaderSPIRV>` **get_spirv**\ (\ version\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_RDShaderFile_method_get_spirv>`
 
-返回指定著色器版本 ``version`` 的 SPIR-V 中間表示。
+Returns the SPIR-V intermediate representation for the specified shader ``version``.
 
 .. rst-class:: classref-item-separator
 
@@ -95,7 +95,7 @@ RDShaderFile
 
 :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\] **get_version_list**\ (\ ) |const| :ref:`🔗<class_RDShaderFile_method_get_version_list>`
 
-返回該著色器的編譯版本列表。
+Returns the list of compiled versions for this shader.
 
 .. rst-class:: classref-item-separator
 
@@ -107,14 +107,14 @@ RDShaderFile
 
 |void| **set_bytecode**\ (\ bytecode\: :ref:`RDShaderSPIRV<class_RDShaderSPIRV>`, version\: :ref:`StringName<class_StringName>` = &""\ ) :ref:`🔗<class_RDShaderFile_method_set_bytecode>`
 
-設定指定著色器版本 ``version`` 要編譯的 SPIR-V 位元組碼 ``bytecode``\ 。
+Sets the SPIR-V ``bytecode`` that will be compiled for the specified ``version``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

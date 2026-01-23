@@ -5,38 +5,38 @@
 Rect2i
 ======
 
-使用整数坐标的 2D 轴对齐边界框。
+A 2D axis-aligned bounding box using integer coordinates.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-**Rect2i** 是内置的 :ref:`Variant<class_Variant>` 类型，代表 2D 空间中与轴对齐的矩形，使用整数坐标。由 :ref:`position<class_Rect2i_property_position>` 和 :ref:`size<class_Rect2i_property_size>` 定义，它们都是 :ref:`Vector2i<class_Vector2i>`\ 。因为这个矩形不会旋转，所以可以进行快速的重合检查（见 :ref:`intersects()<class_Rect2i_method_intersects>`\ ）。
+The **Rect2i** built-in :ref:`Variant<class_Variant>` type represents an axis-aligned rectangle in a 2D space, using integer coordinates. It is defined by its :ref:`position<class_Rect2i_property_position>` and :ref:`size<class_Rect2i_property_size>`, which are :ref:`Vector2i<class_Vector2i>`. Because it does not rotate, it is frequently used for fast overlap tests (see :ref:`intersects()<class_Rect2i_method_intersects>`).
 
-浮点数坐标的版本见 :ref:`Rect2<class_Rect2>`\ 。
+For floating-point coordinates, see :ref:`Rect2<class_Rect2>`.
 
-\ **注意：**\ 不支持负数的 :ref:`size<class_Rect2i_property_size>`\ 。如果大小为负数，\ **Rect2i** 的大多数方法都无法正常工作。请使用 :ref:`abs()<class_Rect2i_method_abs>` 获取等价且大小非负的 **Rect2i**\ 。
+\ **Note:** Negative values for :ref:`size<class_Rect2i_property_size>` are not supported. With negative size, most **Rect2i** methods do not work correctly. Use :ref:`abs()<class_Rect2i_method_abs>` to get an equivalent **Rect2i** with a non-negative size.
 
-\ **注意：**\ 在布尔值上下文中，\ :ref:`position<class_Rect2i_property_position>` 和 :ref:`size<class_Rect2i_property_size>` 均为零（等于 :ref:`Vector2i.ZERO<class_Vector2i_constant_ZERO>`\ ）的 **Rect2i** 会得到 ``false``\ 。否则得到 ``true``\ 。
+\ **Note:** In a boolean context, a **Rect2i** evaluates to ``false`` if both :ref:`position<class_Rect2i_property_position>` and :ref:`size<class_Rect2i_property_size>` are zero (equal to :ref:`Vector2i.ZERO<class_Vector2i_constant_ZERO>`). Otherwise, it always evaluates to ``true``.
 
 .. note::
 
-	通过 C# 使用该 API 时会有显著不同，详见 :ref:`doc_c_sharp_differences`\ 。
+	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
-- :doc:`数学文档索引 <../tutorials/math/index>`
+- :doc:`Math documentation index <../tutorials/math/index>`
 
-- :doc:`向量数学 <../tutorials/math/vector_math>`
+- :doc:`Vector math <../tutorials/math/vector_math>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -51,8 +51,8 @@ Rect2i
 
 .. rst-class:: classref-reftable-group
 
-构造函数
---------
+Constructors
+------------
 
 .. table::
    :widths: auto
@@ -71,8 +71,8 @@ Rect2i
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -107,8 +107,8 @@ Rect2i
 
 .. rst-class:: classref-reftable-group
 
-运算符
-------
+Operators
+---------
 
 .. table::
    :widths: auto
@@ -125,8 +125,8 @@ Rect2i
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_Rect2i_property_end:
 
@@ -134,7 +134,7 @@ Rect2i
 
 :ref:`Vector2i<class_Vector2i>` **end** = ``Vector2i(0, 0)`` :ref:`🔗<class_Rect2i_property_end>`
 
-终点。通常为矩形的右下角，等价于 ``position + size``\ 。设置该点会影响 :ref:`size<class_Rect2i_property_size>`\ 。
+The ending point. This is usually the bottom-right corner of the rectangle, and is equivalent to ``position + size``. Setting this point affects the :ref:`size<class_Rect2i_property_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +146,7 @@ Rect2i
 
 :ref:`Vector2i<class_Vector2i>` **position** = ``Vector2i(0, 0)`` :ref:`🔗<class_Rect2i_property_position>`
 
-原点。通常为矩形的左上角。
+The origin point. This is usually the top-left corner of the rectangle.
 
 .. rst-class:: classref-item-separator
 
@@ -158,9 +158,9 @@ Rect2i
 
 :ref:`Vector2i<class_Vector2i>` **size** = ``Vector2i(0, 0)`` :ref:`🔗<class_Rect2i_property_size>`
 
-矩形的宽和高，相对于 :ref:`position<class_Rect2i_property_position>`\ 。设置该值会影响终点 :ref:`end<class_Rect2i_property_end>`\ 。
+The rectangle's width and height, starting from :ref:`position<class_Rect2i_property_position>`. Setting this value also affects the :ref:`end<class_Rect2i_property_end>` point.
 
-\ **注意：**\ 建议将宽和高设置为非负数，因为 Godot 中的大多数方法假设 :ref:`position<class_Rect2i_property_position>` 为左上角、\ :ref:`end<class_Rect2i_property_end>` 为右下角。要获取等价且大小非负的矩形，请使用 :ref:`abs()<class_Rect2i_method_abs>`\ 。
+\ **Note:** It's recommended setting the width and height to non-negative values, as most methods in Godot assume that the :ref:`position<class_Rect2i_property_position>` is the top-left corner, and the :ref:`end<class_Rect2i_property_end>` is the bottom-right corner. To get an equivalent rectangle with non-negative size, use :ref:`abs()<class_Rect2i_method_abs>`.
 
 .. rst-class:: classref-section-separator
 
@@ -168,8 +168,8 @@ Rect2i
 
 .. rst-class:: classref-descriptions-group
 
-构造函数说明
-------------
+Constructor Descriptions
+------------------------
 
 .. _class_Rect2i_constructor_Rect2i:
 
@@ -177,7 +177,7 @@ Rect2i
 
 :ref:`Rect2i<class_Rect2i>` **Rect2i**\ (\ ) :ref:`🔗<class_Rect2i_constructor_Rect2i>`
 
-构造 **Rect2i**\ ，将 :ref:`position<class_Rect2i_property_position>` 和 :ref:`size<class_Rect2i_property_size>` 设置为 :ref:`Vector2i.ZERO<class_Vector2i_constant_ZERO>`\ 。
+Constructs a **Rect2i** with its :ref:`position<class_Rect2i_property_position>` and :ref:`size<class_Rect2i_property_size>` set to :ref:`Vector2i.ZERO<class_Vector2i_constant_ZERO>`.
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ Rect2i
 
 :ref:`Rect2i<class_Rect2i>` **Rect2i**\ (\ from\: :ref:`Rect2i<class_Rect2i>`\ )
 
-构造给定 **Rect2i** 的副本。
+Constructs a **Rect2i** as a copy of the given **Rect2i**.
 
 .. rst-class:: classref-item-separator
 
@@ -197,7 +197,7 @@ Rect2i
 
 :ref:`Rect2i<class_Rect2i>` **Rect2i**\ (\ from\: :ref:`Rect2<class_Rect2>`\ )
 
-根据 :ref:`Rect2<class_Rect2>` 构造 **Rect2i**\ 。会截断浮点数坐标。
+Constructs a **Rect2i** from a :ref:`Rect2<class_Rect2>`. The floating-point coordinates are truncated.
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ Rect2i
 
 :ref:`Rect2i<class_Rect2i>` **Rect2i**\ (\ position\: :ref:`Vector2i<class_Vector2i>`, size\: :ref:`Vector2i<class_Vector2i>`\ )
 
-使用指定的 ``position`` 和 ``size`` 构造 **Rect2i**\ 。
+Constructs a **Rect2i** by ``position`` and ``size``.
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ Rect2i
 
 :ref:`Rect2i<class_Rect2i>` **Rect2i**\ (\ x\: :ref:`int<class_int>`, y\: :ref:`int<class_int>`, width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`\ )
 
-构造 **Rect2i**\ ，将 :ref:`position<class_Rect2i_property_position>` 设置为 (``x``, ``y``)，将 :ref:`size<class_Rect2i_property_size>` 设置为 (``width``, ``height``)。
+Constructs a **Rect2i** by setting its :ref:`position<class_Rect2i_property_position>` to (``x``, ``y``), and its :ref:`size<class_Rect2i_property_size>` to (``width``, ``height``).
 
 .. rst-class:: classref-section-separator
 
@@ -225,8 +225,8 @@ Rect2i
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_Rect2i_method_abs:
 
@@ -234,7 +234,7 @@ Rect2i
 
 :ref:`Rect2i<class_Rect2i>` **abs**\ (\ ) |const| :ref:`🔗<class_Rect2i_method_abs>`
 
-返回一个与该矩形等效的 **Rect2i**\ ，其宽度和高度被修改为非负值，其 :ref:`position<class_Rect2i_property_position>` 为该矩形的左上角。
+Returns a **Rect2i** equivalent to this rectangle, with its width and height modified to be non-negative values, and with its :ref:`position<class_Rect2i_property_position>` being the top-left corner of the rectangle.
 
 
 .. tabs::
@@ -242,16 +242,16 @@ Rect2i
  .. code-tab:: gdscript
 
     var rect = Rect2i(25, 25, -100, -50)
-    var absolute = rect.abs() # 绝对值为 Rect2i(-75, -25, 100, 50)
+    var absolute = rect.abs() # absolute is Rect2i(-75, -25, 100, 50)
 
  .. code-tab:: csharp
 
     var rect = new Rect2I(25, 25, -100, -50);
-    var absolute = rect.Abs(); // 绝对值为 Rect2I(-75, -25, 100, 50)
+    var absolute = rect.Abs(); // absolute is Rect2I(-75, -25, 100, 50)
 
 
 
-\ **注意：**\ 当 :ref:`size<class_Rect2i_property_size>` 为负时，建议使用该方法，因为 Godot 中的大多数其他方法都假设 :ref:`position<class_Rect2i_property_position>` 是左上角，\ :ref:`end<class_Rect2i_property_end>` 是右下角。
+\ **Note:** It's recommended to use this method when :ref:`size<class_Rect2i_property_size>` is negative, as most other methods in Godot assume that the :ref:`position<class_Rect2i_property_position>` is the top-left corner, and the :ref:`end<class_Rect2i_property_end>` is the bottom-right corner.
 
 .. rst-class:: classref-item-separator
 
@@ -263,7 +263,7 @@ Rect2i
 
 :ref:`bool<class_bool>` **encloses**\ (\ b\: :ref:`Rect2i<class_Rect2i>`\ ) |const| :ref:`🔗<class_Rect2i_method_encloses>`
 
-如果该 **Rect2i** 完全包含另一个，则返回 ``true``\ 。
+Returns ``true`` if this **Rect2i** completely encloses another one.
 
 .. rst-class:: classref-item-separator
 
@@ -275,7 +275,7 @@ Rect2i
 
 :ref:`Rect2i<class_Rect2i>` **expand**\ (\ to\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_Rect2i_method_expand>`
 
-返回该矩形的副本，如有必要，该矩形被扩展为将边缘与给定的 ``to`` 点对齐。
+Returns a copy of this rectangle expanded to align the edges with the given ``to`` point, if necessary.
 
 
 .. tabs::
@@ -284,15 +284,15 @@ Rect2i
 
     var rect = Rect2i(0, 0, 5, 2)
 
-    rect = rect.expand(Vector2i(10, 0)) # rect 为 Rect2i(0, 0, 10, 2)
-    rect = rect.expand(Vector2i(-5, 5)) # rect 为 Rect2i(-5, 0, 15, 5)
+    rect = rect.expand(Vector2i(10, 0)) # rect is Rect2i(0, 0, 10, 2)
+    rect = rect.expand(Vector2i(-5, 5)) # rect is Rect2i(-5, 0, 15, 5)
 
  .. code-tab:: csharp
 
     var rect = new Rect2I(0, 0, 5, 2);
 
-    rect = rect.Expand(new Vector2I(10, 0)); // rect 为 Rect2I(0, 0, 10, 2)
-    rect = rect.Expand(new Vector2I(-5, 5)); // rect 为 Rect2I(-5, 0, 15, 5)
+    rect = rect.Expand(new Vector2I(10, 0)); // rect is Rect2I(0, 0, 10, 2)
+    rect = rect.Expand(new Vector2I(-5, 5)); // rect is Rect2I(-5, 0, 15, 5)
 
 
 
@@ -306,7 +306,7 @@ Rect2i
 
 :ref:`int<class_int>` **get_area**\ (\ ) |const| :ref:`🔗<class_Rect2i_method_get_area>`
 
-返回该矩形的面积。这相当于 ``size.x * size.y``\ 。另见 :ref:`has_area()<class_Rect2i_method_has_area>`\ 。
+Returns the rectangle's area. This is equivalent to ``size.x * size.y``. See also :ref:`has_area()<class_Rect2i_method_has_area>`.
 
 .. rst-class:: classref-item-separator
 
@@ -318,9 +318,9 @@ Rect2i
 
 :ref:`Vector2i<class_Vector2i>` **get_center**\ (\ ) |const| :ref:`🔗<class_Rect2i_method_get_center>`
 
-返回该矩形的中心点。这与 ``position + (size / 2)`` 相同。
+Returns the center point of the rectangle. This is the same as ``position + (size / 2)``.
 
-\ **注意：**\ 如果 :ref:`size<class_Rect2i_property_size>` 为奇数，则结果将向 :ref:`position<class_Rect2i_property_position>` 舍入。
+\ **Note:** If the :ref:`size<class_Rect2i_property_size>` is odd, the result will be rounded towards :ref:`position<class_Rect2i_property_position>`.
 
 .. rst-class:: classref-item-separator
 
@@ -332,20 +332,20 @@ Rect2i
 
 :ref:`Rect2i<class_Rect2i>` **grow**\ (\ amount\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Rect2i_method_grow>`
 
-返回该矩形的副本，该矩形在所有边上扩展给定的 ``amount``\ 。负的 ``amount`` 会缩小该矩形。另见 :ref:`grow_individual()<class_Rect2i_method_grow_individual>` 和 :ref:`grow_side()<class_Rect2i_method_grow_side>`\ 。
+Returns a copy of this rectangle extended on all sides by the given ``amount``. A negative ``amount`` shrinks the rectangle instead. See also :ref:`grow_individual()<class_Rect2i_method_grow_individual>` and :ref:`grow_side()<class_Rect2i_method_grow_side>`.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var a = Rect2i(4, 4, 8, 8).grow(4) # a 为 Rect2i(0, 0, 16, 16)
-    var b = Rect2i(0, 0, 8, 4).grow(2) # b 为 Rect2i(-2, -2, 12, 8)
+    var a = Rect2i(4, 4, 8, 8).grow(4) # a is Rect2i(0, 0, 16, 16)
+    var b = Rect2i(0, 0, 8, 4).grow(2) # b is Rect2i(-2, -2, 12, 8)
 
  .. code-tab:: csharp
 
-    var a = new Rect2I(4, 4, 8, 8).Grow(4); // a 为 Rect2I(0, 0, 16, 16)
-    var b = new Rect2I(0, 0, 8, 4).Grow(2); // b 为 Rect2I(-2, -2, 12, 8)
+    var a = new Rect2I(4, 4, 8, 8).Grow(4); // a is Rect2I(0, 0, 16, 16)
+    var b = new Rect2I(0, 0, 8, 4).Grow(2); // b is Rect2I(-2, -2, 12, 8)
 
 
 
@@ -359,7 +359,7 @@ Rect2i
 
 :ref:`Rect2i<class_Rect2i>` **grow_individual**\ (\ left\: :ref:`int<class_int>`, top\: :ref:`int<class_int>`, right\: :ref:`int<class_int>`, bottom\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Rect2i_method_grow_individual>`
 
-返回该矩形的副本，其 ``left``\ 、\ ``top``\ 、\ ``right`` 和 ``bottom`` 边扩展了给定的量。相反，负值会缩小边。另见 :ref:`grow()<class_Rect2i_method_grow>` and :ref:`grow_side()<class_Rect2i_method_grow_side>`\ 。
+Returns a copy of this rectangle with its ``left``, ``top``, ``right``, and ``bottom`` sides extended by the given amounts. Negative values shrink the sides, instead. See also :ref:`grow()<class_Rect2i_method_grow>` and :ref:`grow_side()<class_Rect2i_method_grow_side>`.
 
 .. rst-class:: classref-item-separator
 
@@ -371,7 +371,7 @@ Rect2i
 
 :ref:`Rect2i<class_Rect2i>` **grow_side**\ (\ side\: :ref:`int<class_int>`, amount\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Rect2i_method_grow_side>`
 
-返回该矩形的副本，其 ``side`` 按给定的 ``amount`` 扩展（请参阅 :ref:`Side<enum_@GlobalScope_Side>` 常量）。相反，负的 ``amount`` 会缩小该矩形。另见 :ref:`grow()<class_Rect2i_method_grow>` 和 :ref:`grow_individual()<class_Rect2i_method_grow_individual>`\ 。
+Returns a copy of this rectangle with its ``side`` extended by the given ``amount`` (see :ref:`Side<enum_@GlobalScope_Side>` constants). A negative ``amount`` shrinks the rectangle, instead. See also :ref:`grow()<class_Rect2i_method_grow>` and :ref:`grow_individual()<class_Rect2i_method_grow_individual>`.
 
 .. rst-class:: classref-item-separator
 
@@ -383,7 +383,7 @@ Rect2i
 
 :ref:`bool<class_bool>` **has_area**\ (\ ) |const| :ref:`🔗<class_Rect2i_method_has_area>`
 
-如果该矩形具有正的宽度和高度，则返回 ``true``\ 。另见 :ref:`get_area()<class_Rect2i_method_get_area>`\ 。
+Returns ``true`` if this rectangle has positive width and height. See also :ref:`get_area()<class_Rect2i_method_get_area>`.
 
 .. rst-class:: classref-item-separator
 
@@ -395,9 +395,9 @@ Rect2i
 
 :ref:`bool<class_bool>` **has_point**\ (\ point\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_Rect2i_method_has_point>`
 
-如果该矩形包含给定的 ``point``\ ，则返回 ``true``\ 。依照惯例，\ **不**\ 包括右侧和底部边缘上的点。
+Returns ``true`` if the rectangle contains the given ``point``. By convention, points on the right and bottom edges are **not** included.
 
-\ **注意：**\ 对于\ *大小为负*\ 的 **Rect2i**\ ，该方法并不可靠。请首先使用 :ref:`abs()<class_Rect2i_method_abs>` 获取一个有效的矩形。
+\ **Note:** This method is not reliable for **Rect2i** with a *negative* :ref:`size<class_Rect2i_property_size>`. Use :ref:`abs()<class_Rect2i_method_abs>` first to get a valid rectangle.
 
 .. rst-class:: classref-item-separator
 
@@ -409,7 +409,7 @@ Rect2i
 
 :ref:`Rect2i<class_Rect2i>` **intersection**\ (\ b\: :ref:`Rect2i<class_Rect2i>`\ ) |const| :ref:`🔗<class_Rect2i_method_intersection>`
 
-返回该矩形与 ``b`` 之间的交集。如果矩形不相交，则返回空的 **Rect2i**\ 。
+Returns the intersection between this rectangle and ``b``. If the rectangles do not intersect, returns an empty **Rect2i**.
 
 
 .. tabs::
@@ -419,18 +419,18 @@ Rect2i
     var a = Rect2i(0, 0, 5, 10)
     var b = Rect2i(2, 0, 8, 4)
 
-    var c = a.intersection(b) # c 为 Rect2i(2, 0, 3, 4)
+    var c = a.intersection(b) # c is Rect2i(2, 0, 3, 4)
 
  .. code-tab:: csharp
 
     var a = new Rect2I(0, 0, 5, 10);
     var b = new Rect2I(2, 0, 8, 4);
 
-    var c = rect1.Intersection(rect2); // c 为 Rect2I(2, 0, 3, 4)
+    var c = rect1.Intersection(rect2); // c is Rect2I(2, 0, 3, 4)
 
 
 
-\ **注意：**\ 如果你只需要知道两个矩形是否重叠，请改用 :ref:`intersects()<class_Rect2i_method_intersects>`\ 。
+\ **Note:** If you only need to know whether two rectangles are overlapping, use :ref:`intersects()<class_Rect2i_method_intersects>`, instead.
 
 .. rst-class:: classref-item-separator
 
@@ -442,7 +442,7 @@ Rect2i
 
 :ref:`bool<class_bool>` **intersects**\ (\ b\: :ref:`Rect2i<class_Rect2i>`\ ) |const| :ref:`🔗<class_Rect2i_method_intersects>`
 
-如果该矩形与 ``b`` 矩形重叠，则返回 ``true``\ 。两个矩形的边缘均被排除。
+Returns ``true`` if this rectangle overlaps with the ``b`` rectangle. The edges of both rectangles are excluded.
 
 .. rst-class:: classref-item-separator
 
@@ -454,7 +454,7 @@ Rect2i
 
 :ref:`Rect2i<class_Rect2i>` **merge**\ (\ b\: :ref:`Rect2i<class_Rect2i>`\ ) |const| :ref:`🔗<class_Rect2i_method_merge>`
 
-返回一个包含该矩形和边缘周围的 ``b`` 的 **Rect2i**\ 。另见 :ref:`encloses()<class_Rect2i_method_encloses>`\ 。
+Returns a **Rect2i** that encloses both this rectangle and ``b`` around the edges. See also :ref:`encloses()<class_Rect2i_method_encloses>`.
 
 .. rst-class:: classref-section-separator
 
@@ -462,8 +462,8 @@ Rect2i
 
 .. rst-class:: classref-descriptions-group
 
-运算符说明
-----------
+Operator Descriptions
+---------------------
 
 .. _class_Rect2i_operator_neq_Rect2i:
 
@@ -471,7 +471,7 @@ Rect2i
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Rect2i<class_Rect2i>`\ ) :ref:`🔗<class_Rect2i_operator_neq_Rect2i>`
 
-如果两个矩形的 :ref:`position<class_Rect2i_property_position>` 或 :ref:`size<class_Rect2i_property_size>` 不相等，则返回 ``true``\ 。
+Returns ``true`` if the :ref:`position<class_Rect2i_property_position>` or :ref:`size<class_Rect2i_property_size>` of both rectangles are not equal.
 
 .. rst-class:: classref-item-separator
 
@@ -483,14 +483,14 @@ Rect2i
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Rect2i<class_Rect2i>`\ ) :ref:`🔗<class_Rect2i_operator_eq_Rect2i>`
 
-如果该矩形的 :ref:`position<class_Rect2i_property_position>` 和 :ref:`size<class_Rect2i_property_size>` 分别相等，则返回 ``true``\ 。
+Returns ``true`` if both :ref:`position<class_Rect2i_property_position>` and :ref:`size<class_Rect2i_property_size>` of the rectangles are equal, respectively.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

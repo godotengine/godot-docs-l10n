@@ -5,21 +5,21 @@
 HingeJoint3D
 ============
 
-**继承：** :ref:`Joint3D<class_Joint3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Joint3D<class_Joint3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-限制 3D 物理体旋转轴的物理关节，旋转轴相对于另一个物理体。
+A physics joint that restricts the rotation of a 3D physics body around an axis relative to another physics body.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-限制 3D 物理体旋转轴的物理关节，旋转轴相对于另一个物理体。例如甲物体可以是代表门铰链的 :ref:`StaticBody3D<class_StaticBody3D>`\ ，\ :ref:`RigidBody3D<class_RigidBody3D>` 可以围绕它旋转。
+A physics joint that restricts the rotation of a 3D physics body around an axis relative to another physics body. For example, Body A can be a :ref:`StaticBody3D<class_StaticBody3D>` representing a door hinge that a :ref:`RigidBody3D<class_RigidBody3D>` rotates around.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -48,8 +48,8 @@ HingeJoint3D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -70,8 +70,8 @@ HingeJoint3D
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_HingeJoint3D_Param:
 
@@ -85,7 +85,7 @@ enum **Param**: :ref:`🔗<enum_HingeJoint3D_Param>`
 
 :ref:`Param<enum_HingeJoint3D_Param>` **PARAM_BIAS** = ``0``
 
-两个物体向不同方向移动时被拉回到一起的速度。
+The speed with which the two bodies get pulled together when they move in different directions.
 
 .. _class_HingeJoint3D_constant_PARAM_LIMIT_UPPER:
 
@@ -93,7 +93,7 @@ enum **Param**: :ref:`🔗<enum_HingeJoint3D_Param>`
 
 :ref:`Param<enum_HingeJoint3D_Param>` **PARAM_LIMIT_UPPER** = ``1``
 
-最大的旋转量。只有在\ :ref:`angular_limit/enable<class_HingeJoint3D_property_angular_limit/enable>`\ 为 ``true`` 时才有效。
+The maximum rotation. Only active if :ref:`angular_limit/enable<class_HingeJoint3D_property_angular_limit/enable>` is ``true``.
 
 .. _class_HingeJoint3D_constant_PARAM_LIMIT_LOWER:
 
@@ -101,7 +101,7 @@ enum **Param**: :ref:`🔗<enum_HingeJoint3D_Param>`
 
 :ref:`Param<enum_HingeJoint3D_Param>` **PARAM_LIMIT_LOWER** = ``2``
 
-最小的旋转量。只有在\ :ref:`angular_limit/enable<class_HingeJoint3D_property_angular_limit/enable>`\ 为 ``true`` 时才有效。
+The minimum rotation. Only active if :ref:`angular_limit/enable<class_HingeJoint3D_property_angular_limit/enable>` is ``true``.
 
 .. _class_HingeJoint3D_constant_PARAM_LIMIT_BIAS:
 
@@ -109,7 +109,7 @@ enum **Param**: :ref:`🔗<enum_HingeJoint3D_Param>`
 
 :ref:`Param<enum_HingeJoint3D_Param>` **PARAM_LIMIT_BIAS** = ``3``
 
-垂直于铰链的轴线上的旋转得到纠正的速度。
+The speed with which the rotation across the axis perpendicular to the hinge gets corrected.
 
 .. _class_HingeJoint3D_constant_PARAM_LIMIT_SOFTNESS:
 
@@ -117,7 +117,7 @@ enum **Param**: :ref:`🔗<enum_HingeJoint3D_Param>`
 
 :ref:`Param<enum_HingeJoint3D_Param>` **PARAM_LIMIT_SOFTNESS** = ``4``
 
-**已弃用：** This property is never used by the engine and is kept for compatibility purpose.
+**Deprecated:** This property is never used by the engine and is kept for compatibility purpose.
 
 
 
@@ -127,7 +127,7 @@ enum **Param**: :ref:`🔗<enum_HingeJoint3D_Param>`
 
 :ref:`Param<enum_HingeJoint3D_Param>` **PARAM_LIMIT_RELAXATION** = ``5``
 
-该值越低，旋转速度越慢。
+The lower this value, the more the rotation gets slowed down.
 
 .. _class_HingeJoint3D_constant_PARAM_MOTOR_TARGET_VELOCITY:
 
@@ -135,7 +135,7 @@ enum **Param**: :ref:`🔗<enum_HingeJoint3D_Param>`
 
 :ref:`Param<enum_HingeJoint3D_Param>` **PARAM_MOTOR_TARGET_VELOCITY** = ``6``
 
-目标马达的目标速度。
+Target speed for the motor.
 
 .. _class_HingeJoint3D_constant_PARAM_MOTOR_MAX_IMPULSE:
 
@@ -143,7 +143,7 @@ enum **Param**: :ref:`🔗<enum_HingeJoint3D_Param>`
 
 :ref:`Param<enum_HingeJoint3D_Param>` **PARAM_MOTOR_MAX_IMPULSE** = ``7``
 
-马达的最大加速度。
+Maximum acceleration for the motor.
 
 .. _class_HingeJoint3D_constant_PARAM_MAX:
 
@@ -151,7 +151,7 @@ enum **Param**: :ref:`🔗<enum_HingeJoint3D_Param>`
 
 :ref:`Param<enum_HingeJoint3D_Param>` **PARAM_MAX** = ``8``
 
-代表 :ref:`Param<enum_HingeJoint3D_Param>` 枚举的大小。
+Represents the size of the :ref:`Param<enum_HingeJoint3D_Param>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ enum **Flag**: :ref:`🔗<enum_HingeJoint3D_Flag>`
 
 :ref:`Flag<enum_HingeJoint3D_Flag>` **FLAG_USE_LIMIT** = ``0``
 
-如果为 ``true``,则会对由\ :ref:`angular_limit/lower<class_HingeJoint3D_property_angular_limit/lower>`\ 和\ :ref:`angular_limit/upper<class_HingeJoint3D_property_angular_limit/upper>`\ 定义的铰链最大和最小旋转量产生影响。
+If ``true``, the hinges maximum and minimum rotation, defined by :ref:`angular_limit/lower<class_HingeJoint3D_property_angular_limit/lower>` and :ref:`angular_limit/upper<class_HingeJoint3D_property_angular_limit/upper>` has effects.
 
 .. _class_HingeJoint3D_constant_FLAG_ENABLE_MOTOR:
 
@@ -177,7 +177,7 @@ enum **Flag**: :ref:`🔗<enum_HingeJoint3D_Flag>`
 
 :ref:`Flag<enum_HingeJoint3D_Flag>` **FLAG_ENABLE_MOTOR** = ``1``
 
-激活后，电机会使铰链转动。
+When activated, a motor turns the hinge.
 
 .. _class_HingeJoint3D_constant_FLAG_MAX:
 
@@ -185,7 +185,7 @@ enum **Flag**: :ref:`🔗<enum_HingeJoint3D_Flag>`
 
 :ref:`Flag<enum_HingeJoint3D_Flag>` **FLAG_MAX** = ``2``
 
-代表 :ref:`Flag<enum_HingeJoint3D_Flag>` 枚举的大小。
+Represents the size of the :ref:`Flag<enum_HingeJoint3D_Flag>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -193,8 +193,8 @@ enum **Flag**: :ref:`🔗<enum_HingeJoint3D_Flag>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_HingeJoint3D_property_angular_limit/bias:
 
@@ -207,7 +207,7 @@ enum **Flag**: :ref:`🔗<enum_HingeJoint3D_Flag>`
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`\ ) |const|
 
-垂直于铰链的轴线上的旋转得到纠正的速度。
+The speed with which the rotation across the axis perpendicular to the hinge gets corrected.
 
 .. rst-class:: classref-item-separator
 
@@ -224,7 +224,7 @@ enum **Flag**: :ref:`🔗<enum_HingeJoint3D_Flag>`
 - |void| **set_flag**\ (\ flag\: :ref:`Flag<enum_HingeJoint3D_Flag>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flag<enum_HingeJoint3D_Flag>`\ ) |const|
 
-如果为 ``true``,则会对由\ :ref:`angular_limit/lower<class_HingeJoint3D_property_angular_limit/lower>`\ 和\ :ref:`angular_limit/upper<class_HingeJoint3D_property_angular_limit/upper>`\ 定义的铰链最大和最小旋转量产生影响。
+If ``true``, the hinges maximum and minimum rotation, defined by :ref:`angular_limit/lower<class_HingeJoint3D_property_angular_limit/lower>` and :ref:`angular_limit/upper<class_HingeJoint3D_property_angular_limit/upper>` has effects.
 
 .. rst-class:: classref-item-separator
 
@@ -241,7 +241,7 @@ enum **Flag**: :ref:`🔗<enum_HingeJoint3D_Flag>`
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`\ ) |const|
 
-最小的旋转量。只有在\ :ref:`angular_limit/enable<class_HingeJoint3D_property_angular_limit/enable>`\ 为 ``true`` 时才有效。
+The minimum rotation. Only active if :ref:`angular_limit/enable<class_HingeJoint3D_property_angular_limit/enable>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -258,7 +258,7 @@ enum **Flag**: :ref:`🔗<enum_HingeJoint3D_Flag>`
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`\ ) |const|
 
-该值越低，旋转速度越慢。
+The lower this value, the more the rotation gets slowed down.
 
 .. rst-class:: classref-item-separator
 
@@ -275,7 +275,7 @@ enum **Flag**: :ref:`🔗<enum_HingeJoint3D_Flag>`
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`\ ) |const|
 
-**已弃用：** This property is never set by the engine and is kept for compatibility purposes.
+**Deprecated:** This property is never set by the engine and is kept for compatibility purposes.
 
 .. rst-class:: classref-item-separator
 
@@ -292,7 +292,7 @@ enum **Flag**: :ref:`🔗<enum_HingeJoint3D_Flag>`
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`\ ) |const|
 
-最大的旋转量。只有在\ :ref:`angular_limit/enable<class_HingeJoint3D_property_angular_limit/enable>`\ 为 ``true`` 时才有效。
+The maximum rotation. Only active if :ref:`angular_limit/enable<class_HingeJoint3D_property_angular_limit/enable>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -309,7 +309,7 @@ enum **Flag**: :ref:`🔗<enum_HingeJoint3D_Flag>`
 - |void| **set_flag**\ (\ flag\: :ref:`Flag<enum_HingeJoint3D_Flag>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flag<enum_HingeJoint3D_Flag>`\ ) |const|
 
-激活后，电机会使铰链转动。
+When activated, a motor turns the hinge.
 
 .. rst-class:: classref-item-separator
 
@@ -326,7 +326,7 @@ enum **Flag**: :ref:`🔗<enum_HingeJoint3D_Flag>`
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`\ ) |const|
 
-马达的最大加速度。
+Maximum acceleration for the motor.
 
 .. rst-class:: classref-item-separator
 
@@ -343,7 +343,7 @@ enum **Flag**: :ref:`🔗<enum_HingeJoint3D_Flag>`
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`\ ) |const|
 
-目标马达的目标速度。
+Target speed for the motor.
 
 .. rst-class:: classref-item-separator
 
@@ -360,7 +360,7 @@ enum **Flag**: :ref:`🔗<enum_HingeJoint3D_Flag>`
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`\ ) |const|
 
-两个物体向不同方向移动时被拉回到一起的速度。
+The speed with which the two bodies get pulled together when they move in different directions.
 
 .. rst-class:: classref-section-separator
 
@@ -368,8 +368,8 @@ enum **Flag**: :ref:`🔗<enum_HingeJoint3D_Flag>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_HingeJoint3D_method_get_flag:
 
@@ -377,7 +377,7 @@ enum **Flag**: :ref:`🔗<enum_HingeJoint3D_Flag>`
 
 :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flag<enum_HingeJoint3D_Flag>`\ ) |const| :ref:`🔗<class_HingeJoint3D_method_get_flag>`
 
-返回指定标志的值。
+Returns the value of the specified flag.
 
 .. rst-class:: classref-item-separator
 
@@ -389,7 +389,7 @@ enum **Flag**: :ref:`🔗<enum_HingeJoint3D_Flag>`
 
 :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`\ ) |const| :ref:`🔗<class_HingeJoint3D_method_get_param>`
 
-返回指定参数的值。
+Returns the value of the specified parameter.
 
 .. rst-class:: classref-item-separator
 
@@ -401,7 +401,7 @@ enum **Flag**: :ref:`🔗<enum_HingeJoint3D_Flag>`
 
 |void| **set_flag**\ (\ flag\: :ref:`Flag<enum_HingeJoint3D_Flag>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_HingeJoint3D_method_set_flag>`
 
-如果为 ``true``\ ，启用指定的标志。
+If ``true``, enables the specified flag.
 
 .. rst-class:: classref-item-separator
 
@@ -413,14 +413,14 @@ enum **Flag**: :ref:`🔗<enum_HingeJoint3D_Flag>`
 
 |void| **set_param**\ (\ param\: :ref:`Param<enum_HingeJoint3D_Param>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_HingeJoint3D_method_set_param>`
 
-设置指定参数的值。
+Sets the value of the specified parameter.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

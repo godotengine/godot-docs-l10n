@@ -5,16 +5,16 @@
 NavigationObstacle2D
 ====================
 
-**實驗性：** This class may be changed or removed in future versions.
+**Experimental:** This class may be changed or removed in future versions.
 
-**繼承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 2D obstacle used to affect navigation mesh baking or constrain velocities of avoidance controlled agents.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 An obstacle needs a navigation map and outline :ref:`vertices<class_NavigationObstacle2D_property_vertices>` defined to work correctly. The outlines can not cross or overlap.
 
@@ -24,15 +24,15 @@ With :ref:`avoidance_enabled<class_NavigationObstacle2D_property_avoidance_enabl
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`使用 NavigationObstacle <../tutorials/navigation/navigation_using_navigationobstacles>`
+- :doc:`Using NavigationObstacles <../tutorials/navigation/navigation_using_navigationobstacles>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -55,8 +55,8 @@ With :ref:`avoidance_enabled<class_NavigationObstacle2D_property_avoidance_enabl
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -79,8 +79,8 @@ With :ref:`avoidance_enabled<class_NavigationObstacle2D_property_avoidance_enabl
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_NavigationObstacle2D_property_affect_navigation_mesh:
 
@@ -110,7 +110,7 @@ If enabled and parsed in a navigation mesh baking process the obstacle will disc
 - |void| **set_avoidance_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_avoidance_enabled**\ (\ )
 
-如果為 ``true``\ ，則該障礙物會影響使用代理的避障。
+If ``true`` the obstacle affects avoidance using agents.
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +127,7 @@ If enabled and parsed in a navigation mesh baking process the obstacle will disc
 - |void| **set_avoidance_layers**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_avoidance_layers**\ (\ )
 
-決定該障礙物的避障層的位域。避障遮罩中存在配對位元的代理會躲避該障礙物。
+A bitfield determining the avoidance layers for this obstacle. Agents with a matching bit on the their avoidance mask will avoid this obstacle.
 
 .. rst-class:: classref-item-separator
 
@@ -165,7 +165,7 @@ Requires :ref:`affect_navigation_mesh<class_NavigationObstacle2D_property_affect
 - |void| **set_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_radius**\ (\ )
 
-設定該障礙物的避障半徑。
+Sets the avoidance radius for the obstacle.
 
 .. rst-class:: classref-item-separator
 
@@ -182,7 +182,7 @@ Requires :ref:`affect_navigation_mesh<class_NavigationObstacle2D_property_affect
 - |void| **set_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_velocity**\ (\ )
 
-設定該障礙物的期望速度，這樣如果（每影格）一直使用相同的速度移動而不是直接跳到某個位置，那麼其他代理就能夠更好地預測該障礙物的行為。僅影響該障礙物 :ref:`radius<class_NavigationObstacle2D_property_radius>` 的避障。不會影響障礙物的靜態頂點。
+Sets the wanted velocity for the obstacle so other agent's can better predict the obstacle if it is moved with a velocity regularly (every frame) instead of warped to a new position. Does only affect avoidance for the obstacles :ref:`radius<class_NavigationObstacle2D_property_radius>`. Does nothing for the obstacles static vertices.
 
 .. rst-class:: classref-item-separator
 
@@ -199,7 +199,7 @@ Requires :ref:`affect_navigation_mesh<class_NavigationObstacle2D_property_affect
 - |void| **set_vertices**\ (\ value\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ )
 - :ref:`PackedVector2Array<class_PackedVector2Array>` **get_vertices**\ (\ )
 
-該障礙物的輪廓頂點。如果這些頂點是按照順時針順序纏繞的，那麼障礙物就會將其他代理向內推，否則就會向外推。輪廓不能交叉或重疊。如果這些頂點直接跳到了新的位置，那麼其他代理可能無法預測這種行為，導致被困在障礙物內。
+The outline vertices of the obstacle. If the vertices are winded in clockwise order agents will be pushed in by the obstacle, else they will be pushed out. Outlines can not be crossed or overlap. Should the vertices using obstacle be warped to a new position agent's can not predict this movement and may get trapped inside the obstacle.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
@@ -209,8 +209,8 @@ Requires :ref:`affect_navigation_mesh<class_NavigationObstacle2D_property_affect
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_NavigationObstacle2D_method_get_avoidance_layer_value:
 
@@ -218,7 +218,7 @@ Requires :ref:`affect_navigation_mesh<class_NavigationObstacle2D_property_affect
 
 :ref:`bool<class_bool>` **get_avoidance_layer_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NavigationObstacle2D_method_get_avoidance_layer_value>`
 
-返回 :ref:`avoidance_layers<class_NavigationObstacle2D_property_avoidance_layers>` 位元遮罩中指定的層是否啟用，給定的 ``layer_number`` 應在 1 和 32 之間。
+Returns whether or not the specified layer of the :ref:`avoidance_layers<class_NavigationObstacle2D_property_avoidance_layers>` bitmask is enabled, given a ``layer_number`` between 1 and 32.
 
 .. rst-class:: classref-item-separator
 
@@ -230,7 +230,7 @@ Requires :ref:`affect_navigation_mesh<class_NavigationObstacle2D_property_affect
 
 :ref:`RID<class_RID>` **get_navigation_map**\ (\ ) |const| :ref:`🔗<class_NavigationObstacle2D_method_get_navigation_map>`
 
-返回該 NavigationObstacle 節點的導覽地圖的 :ref:`RID<class_RID>`\ 。該函式始終返回在 NavigationObstacle 節點上設定的地圖，而不是 NavigationServer 上抽象障礙物所使用的地圖。如果該障礙物地圖使用 NavigationServer API 直接更改，則該 NavigationObstacle 節點將不會察覺該地圖的更改。請使用 :ref:`set_navigation_map()<class_NavigationObstacle2D_method_set_navigation_map>` 更改 NavigationObstacle 的導覽地圖，也會更新 NavigationServer 上的障礙物。
+Returns the :ref:`RID<class_RID>` of the navigation map for this NavigationObstacle node. This function returns always the map set on the NavigationObstacle node and not the map of the abstract obstacle on the NavigationServer. If the obstacle map is changed directly with the NavigationServer API the NavigationObstacle node will not be aware of the map change. Use :ref:`set_navigation_map()<class_NavigationObstacle2D_method_set_navigation_map>` to change the navigation map for the NavigationObstacle and also update the obstacle on the NavigationServer.
 
 .. rst-class:: classref-item-separator
 
@@ -242,7 +242,7 @@ Requires :ref:`affect_navigation_mesh<class_NavigationObstacle2D_property_affect
 
 :ref:`RID<class_RID>` **get_rid**\ (\ ) |const| :ref:`🔗<class_NavigationObstacle2D_method_get_rid>`
 
-返回這個障礙物在 :ref:`NavigationServer2D<class_NavigationServer2D>` 上的 :ref:`RID<class_RID>`\ 。
+Returns the :ref:`RID<class_RID>` of this obstacle on the :ref:`NavigationServer2D<class_NavigationServer2D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -254,7 +254,7 @@ Requires :ref:`affect_navigation_mesh<class_NavigationObstacle2D_property_affect
 
 |void| **set_avoidance_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationObstacle2D_method_set_avoidance_layer_value>`
 
-根據 ``value`` 啟用或禁用 :ref:`avoidance_layers<class_NavigationObstacle2D_property_avoidance_layers>` 位元遮罩中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
+Based on ``value``, enables or disables the specified layer in the :ref:`avoidance_layers<class_NavigationObstacle2D_property_avoidance_layers>` bitmask, given a ``layer_number`` between 1 and 32.
 
 .. rst-class:: classref-item-separator
 
@@ -266,14 +266,14 @@ Requires :ref:`affect_navigation_mesh<class_NavigationObstacle2D_property_affect
 
 |void| **set_navigation_map**\ (\ navigation_map\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_NavigationObstacle2D_method_set_navigation_map>`
 
-設定該 NavigationObstacle 節點應使用的導覽地圖的 :ref:`RID<class_RID>`\ ，並會更新 NavigationServer 上的 ``obstacle``\ 。
+Sets the :ref:`RID<class_RID>` of the navigation map this NavigationObstacle node should use and also updates the ``obstacle`` on the NavigationServer.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -1924,7 +1924,7 @@ La dirección del movimiento del cursor del ratón a usar al hacer zoom moviendo
 
 :ref:`float<class_float>` **editors/3d/navigation_feel/angle_snap_threshold** :ref:`🔗<class_EditorSettings_property_editors/3d/navigation_feel/angle_snap_threshold>`
 
-The angle threshold for snapping camera rotation to 45-degree angles while orbiting with :kbd:`Alt` held.
+El umbral de ángulo para ajustar la rotación de la cámara a ángulos de 45 grados mientras se orbita con :kbd:`Alt` presionado.
 
 .. rst-class:: classref-item-separator
 
@@ -2044,7 +2044,7 @@ El color a usar para la caja de selección que rodea los nodos seleccionados en 
 
 :ref:`int<class_int>` **editors/3d/show_gizmo_during_rotation** :ref:`🔗<class_EditorSettings_property_editors/3d/show_gizmo_during_rotation>`
 
-If checked, the transform gizmo remains visible during rotation in that transform mode.
+Si está marcado, el gizmo de transformación permanece visible durante la rotación en ese modo de transformación.
 
 .. rst-class:: classref-item-separator
 
@@ -2128,7 +2128,7 @@ El color del gizmo del editor 3D para la cuadrícula de :ref:`GridMap<class_Grid
 
 :ref:`Color<class_Color>` **editors/3d_gizmos/gizmo_colors/ik_chain** :ref:`🔗<class_EditorSettings_property_editors/3d_gizmos/gizmo_colors/ik_chain>`
 
-The 3D editor gizmo color for the :ref:`IKModifier3D<class_IKModifier3D>` guides.
+El color del gizmo del editor 3D para las guías de :ref:`IKModifier3D<class_IKModifier3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2404,7 +2404,7 @@ The shape of :ref:`Skeleton3D<class_Skeleton3D>` bone gizmos in the 3D editor. *
 
 :ref:`float<class_float>` **editors/3d_gizmos/gizmo_settings/lightmap_gi_probe_size** :ref:`🔗<class_EditorSettings_property_editors/3d_gizmos/gizmo_settings/lightmap_gi_probe_size>`
 
-Size of probe gizmos displayed when editing :ref:`LightmapGI<class_LightmapGI>` and :ref:`LightmapProbe<class_LightmapProbe>` nodes. Setting this to ``0.0`` will hide the probe spheres of :ref:`LightmapGI<class_LightmapGI>` and wireframes of :ref:`LightmapProbe<class_LightmapProbe>` nodes, but will keep the wireframes linking probes from :ref:`LightmapGI<class_LightmapGI>` and billboard icons from :ref:`LightmapProbe<class_LightmapProbe>` intact.
+Tamaño de los gizmos de sonda mostrados al editar nodos :ref:`LightmapGI<class_LightmapGI>` y :ref:`LightmapProbe<class_LightmapProbe>`. Establecer esto en ``0.0`` ocultará las esferas de sonda de :ref:`LightmapGI<class_LightmapGI>` y los wireframes de los nodos :ref:`LightmapProbe<class_LightmapProbe>`, pero mantendrá intactos los wireframes que conectan las sondas de :ref:`LightmapGI<class_LightmapGI>` y los iconos de cartelera de :ref:`LightmapProbe<class_LightmapProbe>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2454,9 +2454,9 @@ Si es ``false``, el comportamiento se invierte, es decir, el diálogo solo apare
 
 :ref:`float<class_float>` **editors/animation/default_animation_step** :ref:`🔗<class_EditorSettings_property_editors/animation/default_animation_step>`
 
-Default step used when creating a new :ref:`Animation<class_Animation>` in the Animation bottom panel. Only affects the first animation created in the :ref:`AnimationPlayer<class_AnimationPlayer>`. By default, other newly created animations will use the step from the previous ones.
+Paso predeterminado utilizado al crear una nueva :ref:`Animation<class_Animation>` en el panel inferior de Animación. Sólo afecta a la primera animación creada en el :ref:`AnimationPlayer<class_AnimationPlayer>`. Por defecto, otras animaciones recién creadas usarán el paso de las anteriores.
 
-This value is always expressed in seconds. If you want e.g. ``10`` FPS to be the default, you need to set the default step to ``0.1``.
+Este valor siempre se expresa en segundos. Si quieres, por ejemplo, que ``10`` FPS sea el valor predeterminado, tienes que establecer el paso predeterminado en ``0.1``.
 
 .. rst-class:: classref-item-separator
 
@@ -2468,7 +2468,7 @@ This value is always expressed in seconds. If you want e.g. ``10`` FPS to be the
 
 :ref:`bool<class_bool>` **editors/animation/default_create_bezier_tracks** :ref:`🔗<class_EditorSettings_property_editors/animation/default_create_bezier_tracks>`
 
-If ``true``, create a Bezier track instead of a standard track when pressing the "key" icon next to a property. Bezier tracks provide more control over animation curves, but are more difficult to adjust quickly.
+Si es ``true``, crea una pista Bezier en lugar de una pista estándar al presionar el icono de "llave" junto a una propiedad. Las pistas Bezier proporcionan más control sobre las curvas de animación, pero son más difíciles de ajustar rápidamente.
 
 .. rst-class:: classref-item-separator
 
@@ -2480,7 +2480,7 @@ If ``true``, create a Bezier track instead of a standard track when pressing the
 
 :ref:`bool<class_bool>` **editors/animation/default_create_reset_tracks** :ref:`🔗<class_EditorSettings_property_editors/animation/default_create_reset_tracks>`
 
-If ``true``, create a ``RESET`` track when creating a new animation track. This track can be used to restore the animation to a "default" state.
+Si es ``true``, crea una pista ``RESET`` al crear una nueva pista de animación. Esta pista se puede usar para restaurar la animación a un estado "predeterminado".
 
 .. rst-class:: classref-item-separator
 
@@ -2492,7 +2492,7 @@ If ``true``, create a ``RESET`` track when creating a new animation track. This 
 
 :ref:`bool<class_bool>` **editors/animation/default_fps_compatibility** :ref:`🔗<class_EditorSettings_property_editors/animation/default_fps_compatibility>`
 
-Controls whether :ref:`AnimationPlayer<class_AnimationPlayer>` will apply snapping to nearest integer FPS when snapping is in Seconds mode. The option is remembered locally for a scene and this option only determines the default value when scene doesn't have local state yet.
+Controla si :ref:`AnimationPlayer<class_AnimationPlayer>` aplicará el ajuste a los FPS enteros más cercanos cuando el ajuste está en modo Segundos. La opción se recuerda localmente para una escena y esta opción sólo determina el valor predeterminado cuando la escena aún no tiene estado local.
 
 .. rst-class:: classref-item-separator
 
@@ -2504,7 +2504,7 @@ Controls whether :ref:`AnimationPlayer<class_AnimationPlayer>` will apply snappi
 
 :ref:`int<class_int>` **editors/animation/default_fps_mode** :ref:`🔗<class_EditorSettings_property_editors/animation/default_fps_mode>`
 
-Default step mode for :ref:`AnimationPlayer<class_AnimationPlayer>` (seconds or FPS). The option is remembered locally for a scene and this option only determines the default value when scene doesn't have local state yet.
+Modo de paso predeterminado para :ref:`AnimationPlayer<class_AnimationPlayer>` (segundos o FPS). La opción se recuerda localmente para una escena y esta opción sólo determina el valor predeterminado cuando la escena aún no tiene estado local.
 
 .. rst-class:: classref-item-separator
 
@@ -2516,9 +2516,9 @@ Default step mode for :ref:`AnimationPlayer<class_AnimationPlayer>` (seconds or 
 
 :ref:`bool<class_bool>` **editors/animation/insert_at_current_time** :ref:`🔗<class_EditorSettings_property_editors/animation/insert_at_current_time>`
 
-If ``true``, animation keys and markers are inserted at the current time in the animation.
+Si es ``true``, las claves de animación y los marcadores se insertan en el tiempo actual de la animación.
 
-If ``false``, they are inserted at the mouse cursor's position.
+Si es ``false``, se insertan en la posición del cursor del ratón.
 
 .. rst-class:: classref-item-separator
 
@@ -2530,7 +2530,7 @@ If ``false``, they are inserted at the mouse cursor's position.
 
 :ref:`Color<class_Color>` **editors/animation/onion_layers_future_color** :ref:`🔗<class_EditorSettings_property_editors/animation/onion_layers_future_color>`
 
-The modulate color to use for "future" frames displayed in the animation editor's onion skinning feature.
+El color de modulación a usar para los fotogramas "futuros" mostrados en la función de \*onion skinning\* del editor de animaciones.
 
 .. rst-class:: classref-item-separator
 
@@ -2610,7 +2610,7 @@ The modulate color to use for "past" frames displayed in the animation editor's 
 
 :ref:`float<class_float>` **editors/grid_map/pick_distance** :ref:`🔗<class_EditorSettings_property_editors/grid_map/pick_distance>`
 
-The maximum distance at which tiles can be placed on a GridMap, relative to the camera position (in 3D units).
+La distancia máxima a la que se pueden colocar los \*tiles\* en un GridMap, relativa a la posición de la cámara (en unidades 3D).
 
 .. rst-class:: classref-item-separator
 
@@ -2622,7 +2622,7 @@ The maximum distance at which tiles can be placed on a GridMap, relative to the 
 
 :ref:`int<class_int>` **editors/grid_map/preview_size** :ref:`🔗<class_EditorSettings_property_editors/grid_map/preview_size>`
 
-Texture size of mesh previews generated for GridMap's MeshLibrary.
+Tamaño de la textura de las vistas previas de malla generadas para la MeshLibrary de GridMap.
 
 .. rst-class:: classref-item-separator
 
@@ -2706,7 +2706,7 @@ If ``true``, warps the mouse around the 2D viewport while panning in the 2D edit
 
 :ref:`int<class_int>` **editors/panning/zoom_style** :ref:`🔗<class_EditorSettings_property_editors/panning/zoom_style>`
 
-The mouse cursor movement direction to use when drag-zooming in any editor (except 3D scene editor) by moving the mouse. This does not affect zooming with the mouse wheel.
+La dirección de movimiento del cursor del ratón a utilizar al hacer zoom arrastrando en cualquier editor (excepto el editor de escenas 3D) moviendo el ratón. Esto no afecta al zoom con la rueda del ratón.
 
 .. rst-class:: classref-item-separator
 
@@ -2730,7 +2730,7 @@ The delay in seconds until more complex and performance costly polygon editors c
 
 :ref:`int<class_int>` **editors/polygon_editor/point_grab_radius** :ref:`🔗<class_EditorSettings_property_editors/polygon_editor/point_grab_radius>`
 
-The radius in which points can be selected in the :ref:`Polygon2D<class_Polygon2D>` and :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` editors (in pixels). Higher values make it easier to select points quickly, but can make it more difficult to select the expected point when several points are located close to each other.
+El radio en el que se pueden seleccionar puntos en los editores :ref:`Polygon2D<class_Polygon2D>` y :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` (en píxeles). Valores más altos facilitan la selección rápida de puntos, pero pueden dificultar la selección del punto esperado cuando varios puntos están ubicados cerca unos de otros.
 
 .. rst-class:: classref-item-separator
 
@@ -3168,21 +3168,21 @@ El programa que abre los archivos de imagen ráster al hacer clic en la opción 
 
 :ref:`String<class_String>` **filesystem/external_programs/terminal_emulator** :ref:`🔗<class_EditorSettings_property_filesystem/external_programs/terminal_emulator>`
 
-The terminal emulator program to use when using **Open in Terminal** context menu action in the FileSystem dock. You can enter an absolute path to a program binary, or a path to a program that is present in the ``PATH`` environment variable.
+El programa emulador de terminal a usar cuando se utiliza la acción del menú contextual **Abrir en Terminal** en el panel Sistema de Archivos. Puedes introducir una ruta absoluta a un binario del programa, o una ruta a un programa que esté presente en la variable de entorno ``PATH``.
 
-If left empty, Godot will use the default terminal emulator for the system:
+Si se deja vacío, Godot usará el emulador de terminal por defecto para el sistema:
 
 - **Windows:** PowerShell
 
 - **macOS:** Terminal.app
 
-- **Linux:** The first terminal found on the system in this order: gnome-terminal, konsole, xfce4-terminal, lxterminal, kitty, alacritty, urxvt, xterm.
+- **Linux:** La primera terminal encontrada en el sistema en este orden: gnome-terminal, konsole, xfce4-terminal, lxterminal, kitty, alacritty, urxvt, xterm.
 
-To use Command Prompt (cmd) instead of PowerShell on Windows, enter ``cmd`` in this field and the correct flags will automatically be used.
+Para usar Símbolo del sistema (cmd) en lugar de PowerShell en Windows, introduce ``cmd`` en este campo y las banderas correctas se usarán automáticamente.
 
-On macOS, make sure to point to the actual program binary located within the ``Programs/MacOS`` folder of the .app bundle, rather than the .app bundle directory.
+En macOS, asegúrate de apuntar al binario real del programa ubicado dentro de la carpeta ``Programs/MacOS`` del paquete .app, en lugar de al directorio del paquete .app.
 
-If specifying a custom terminal emulator, you may need to override :ref:`filesystem/external_programs/terminal_emulator_flags<class_EditorSettings_property_filesystem/external_programs/terminal_emulator_flags>` so it opens in the correct folder.
+Si especificas un emulador de terminal personalizado, puede que necesites sobreescribir :ref:`filesystem/external_programs/terminal_emulator_flags<class_EditorSettings_property_filesystem/external_programs/terminal_emulator_flags>` para que se abra en la carpeta correcta.
 
 .. rst-class:: classref-item-separator
 
@@ -3286,11 +3286,11 @@ Puerto utilizado para el servidor de archivos al exportar el proyecto con un sis
 
 :ref:`String<class_String>` **filesystem/import/blender/blender_path** :ref:`🔗<class_EditorSettings_property_filesystem/import/blender/blender_path>`
 
-The path to the Blender executable used for converting the Blender 3D scene files ``.blend`` to glTF 2.0 format during import. Blender 3.0 or later is required.
+La ruta al ejecutable de Blender usado para convertir los archivos de escena 3D de Blender ``.blend`` al formato glTF 2.0 durante la importación. Se requiere Blender 3.0 o posterior.
 
-To enable this feature for your specific project, use :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>`.
+Para activar esta característica para tu proyecto específico, usa :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>`.
 
-If this setting is empty, Blender's default paths will be detected and used automatically if present in this order:
+Si esta configuración está vacía, las rutas por defecto de Blender serán detectadas y usadas automáticamente si están presentes en este orden:
 
 \ **Windows:**\ 
 
@@ -3421,11 +3421,11 @@ Si se establece en ``Adaptativo``, el diálogo se abre en vista de lista o vista
 
 :ref:`bool<class_bool>` **filesystem/quick_open_dialog/enable_fuzzy_matching** :ref:`🔗<class_EditorSettings_property_filesystem/quick_open_dialog/enable_fuzzy_matching>`
 
-If ``true``, together with exact matches of a filename, the dialog includes approximate matches.
+Si es ``true``, junto con las coincidencias exactas de un nombre de archivo, el diálogo incluye las coincidencias aproximadas.
 
-This is useful for finding the correct files even when there are typos in the search query; for example, searching "nprmal" will find "normal". Additionally, it allows you to write shorter search queries; for example, searching "nml" will also find "normal".
+Esto es útil para encontrar los archivos correctos incluso cuando hay errores tipográficos en la consulta de búsqueda; por ejemplo, buscar "nprmal" encontrará "normal". Además, te permite escribir consultas de búsqueda más cortas; por ejemplo, buscar "nml" también encontrará "normal".
 
-See also :ref:`filesystem/quick_open_dialog/max_fuzzy_misses<class_EditorSettings_property_filesystem/quick_open_dialog/max_fuzzy_misses>`.
+Véase también :ref:`filesystem/quick_open_dialog/max_fuzzy_misses<class_EditorSettings_property_filesystem/quick_open_dialog/max_fuzzy_misses>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3449,7 +3449,7 @@ Si es ``true``, los resultados incluirán archivos ubicados en la carpeta ``addo
 
 :ref:`bool<class_bool>` **filesystem/quick_open_dialog/instant_preview** :ref:`🔗<class_EditorSettings_property_filesystem/quick_open_dialog/instant_preview>`
 
-If ``true``, highlighting a resource will preview it quickly without confirming the selection or closing the dialog.
+Si es ``true``, al resaltar un recurso se previsualizará rápidamente sin confirmar la selección ni cerrar el diálogo.
 
 .. rst-class:: classref-item-separator
 
@@ -3527,11 +3527,11 @@ Habilitar esta configuración puede mejorar en gran medida la capacidad de respu
 
 :ref:`bool<class_bool>` **input/buffering/use_accumulated_input** :ref:`🔗<class_EditorSettings_property_input/buffering/use_accumulated_input>`
 
-If ``true``, similar input events sent by the operating system are accumulated. When input accumulation is enabled, all input events generated during a frame will be merged and emitted when the frame is done rendering. Therefore, this limits the number of input method calls per second to the rendering FPS.
+Si es ``true``, los eventos de entrada similares enviados por el sistema operativo se acumulan. Cuando la acumulación de entrada está habilitada, todos los eventos de entrada generados durante un fotograma se fusionarán y se emitirán cuando el fotograma termine de renderizarse. Por lo tanto, esto limita el número de llamadas al método de entrada por segundo al FPS de renderizado.
 
-Input accumulation can be disabled to get slightly more precise/reactive input at the cost of increased CPU usage.
+La acumulación de entrada puede deshabilitarse para obtener una entrada ligeramente más precisa/reactiva a costa de un mayor uso de la CPU.
 
-\ **Note:** Input accumulation is *enabled* by default.
+\ **Nota:** La acumulación de entrada está *habilitada* por defecto.
 
 .. rst-class:: classref-item-separator
 
@@ -3543,15 +3543,15 @@ Input accumulation can be disabled to get slightly more precise/reactive input a
 
 :ref:`int<class_int>` **interface/accessibility/accessibility_support** :ref:`🔗<class_EditorSettings_property_interface/accessibility/accessibility_support>`
 
-Editor accessibility support mode:
+Modo de soporte de accesibilidad del editor:
 
-- **Auto** (``0``): Accessibility support is enabled, but updates to the accessibility information are processed only if an assistive app (such as a screen reader or a Braille display) is active (default).
+- **Automático** (``0``): El soporte de accesibilidad está habilitado, pero las actualizaciones de la información de accesibilidad se procesan solo si una aplicación de asistencia (como un lector de pantalla o una pantalla Braille) está activa (predeterminado).
 
-- **Always Active** (``1``): Accessibility support is enabled, and updates to the accessibility information are always processed, regardless of the status of assistive apps.
+- **Siempre Activo** (``1``): El soporte de accesibilidad está habilitado, y las actualizaciones de la información de accesibilidad se procesan siempre, independientemente del estado de las aplicaciones de asistencia.
 
-- **Disabled** (``2``): Accessibility support is fully disabled.
+- **Desactivado** (``2``): El soporte de accesibilidad está completamente deshabilitado.
 
-\ **Note:** Accessibility debugging tools, such as Accessibility Insights for Windows, Accessibility Inspector (macOS), or AT-SPI Browser (Linux/BSD), do not count as assistive apps. To test the editor with these tools, use **Always Active**.
+\ **Nota:** Las herramientas de depuración de accesibilidad, como Accessibility Insights para Windows, Accessibility Inspector (macOS) o AT-SPI Browser (Linux/BSD), no cuentan como aplicaciones de asistencia. Para probar el editor con estas herramientas, usa **Siempre Activo**.
 
 .. rst-class:: classref-item-separator
 
@@ -3583,7 +3583,7 @@ To check if these buttons are swapped at runtime, use :ref:`DisplayServer.get_sw
 
 :ref:`bool<class_bool>` **interface/editor/automatically_open_screenshots** :ref:`🔗<class_EditorSettings_property_interface/editor/automatically_open_screenshots>`
 
-If ``true``, automatically opens screenshots with the default program associated to ``.png`` files after a screenshot is taken using the **Editor > Take Screenshot** action.
+Si es ``true``, abre automáticamente las capturas de pantalla con el programa predeterminado asociado a los archivos ``.png`` después de tomar una captura de pantalla usando la acción **Editor > Tomar captura de pantalla**.
 
 .. rst-class:: classref-item-separator
 
@@ -3595,7 +3595,7 @@ If ``true``, automatically opens screenshots with the default program associated
 
 :ref:`int<class_int>` **interface/editor/bottom_dock_tab_style** :ref:`🔗<class_EditorSettings_property_interface/editor/bottom_dock_tab_style>`
 
-Tab style of editor docks located at the bottom.
+Estilo de las pestañas de los docks del editor ubicados en la parte inferior.
 
 .. rst-class:: classref-item-separator
 
@@ -3607,7 +3607,7 @@ Tab style of editor docks located at the bottom.
 
 :ref:`String<class_String>` **interface/editor/code_font** :ref:`🔗<class_EditorSettings_property_interface/editor/code_font>`
 
-The font to use for the script editor. Must be a resource of a :ref:`Font<class_Font>` type such as a ``.ttf`` or ``.otf`` font file.
+La fuente a usar para el editor de scripts. Debe ser un recurso de tipo :ref:`Font<class_Font>` como un archivo de fuente ``.ttf`` o ``.otf``.
 
 .. rst-class:: classref-item-separator
 
@@ -3619,9 +3619,9 @@ The font to use for the script editor. Must be a resource of a :ref:`Font<class_
 
 :ref:`int<class_int>` **interface/editor/code_font_contextual_ligatures** :ref:`🔗<class_EditorSettings_property_interface/editor/code_font_contextual_ligatures>`
 
-The font ligatures to enable for the currently configured code font. Not all fonts include support for ligatures.
+Las ligaduras de fuente a habilitar para la fuente de código configurada actualmente. No todas las fuentes incluyen soporte para ligaduras.
 
-\ **Note:** The default editor code font (`JetBrains Mono <https://www.jetbrains.com/lp/mono/>`__) has contextual ligatures in its font file.
+\ **Nota:** La fuente de código predeterminada del editor (`JetBrains Mono <https://www.jetbrains.com/lp/mono/>`__) tiene ligaduras contextuales en su archivo de fuente.
 
 .. rst-class:: classref-item-separator
 
@@ -3633,9 +3633,9 @@ The font ligatures to enable for the currently configured code font. Not all fon
 
 :ref:`String<class_String>` **interface/editor/code_font_custom_opentype_features** :ref:`🔗<class_EditorSettings_property_interface/editor/code_font_custom_opentype_features>`
 
-List of custom OpenType features to use, if supported by the currently configured code font. Not all fonts include support for custom OpenType features. The string should follow the OpenType specification.
+Lista de características de OpenType personalizadas a usar, si se es compatible con la fuente de código configurada actualmente. No todas las fuentes incluyen soporte para características de OpenType personalizadas. La cadena debe seguir la especificación OpenType.
 
-\ **Note:** The default editor code font (`JetBrains Mono <https://www.jetbrains.com/lp/mono/>`__) has custom OpenType features in its font file, but there is no documented list yet.
+\ **Nota:** La fuente de código predeterminada del editor (`JetBrains Mono <https://www.jetbrains.com/lp/mono/>`__) tiene características de OpenType personalizadas en su archivo de fuente, pero aún no hay una lista documentada.
 
 .. rst-class:: classref-item-separator
 
@@ -3647,9 +3647,9 @@ List of custom OpenType features to use, if supported by the currently configure
 
 :ref:`String<class_String>` **interface/editor/code_font_custom_variations** :ref:`🔗<class_EditorSettings_property_interface/editor/code_font_custom_variations>`
 
-List of alternative characters to use, if supported by the currently configured code font. Not all fonts include support for custom variations. The string should follow the OpenType specification.
+Lista de caracteres alternativos a usar, si es compatible con la fuente de código configurada actualmente. No todas las fuentes incluyen soporte para variaciones personalizadas. La cadena debe seguir la especificación de OpenType.
 
-\ **Note:** The default editor code font (`JetBrains Mono <https://www.jetbrains.com/lp/mono/>`__) has alternate characters in its font file, but there is no documented list yet.
+\ **Nota:** La fuente de código predeterminada del editor (`JetBrains Mono <https://www.jetbrains.com/lp/mono/>`__) tiene caracteres alternativos en su archivo de fuente, pero aún no hay una lista documentada.
 
 .. rst-class:: classref-item-separator
 
@@ -3661,7 +3661,7 @@ List of alternative characters to use, if supported by the currently configured 
 
 :ref:`int<class_int>` **interface/editor/code_font_size** :ref:`🔗<class_EditorSettings_property_interface/editor/code_font_size>`
 
-The size of the font in the script editor. This setting does not impact the font size of the Output panel (see :ref:`run/output/font_size<class_EditorSettings_property_run/output/font_size>`).
+El tamaño de la fuente en el editor de scripts. Esta configuración no afecta el tamaño de la fuente del panel de Salida (véase :ref:`run/output/font_size<class_EditorSettings_property_run/output/font_size>`).
 
 .. rst-class:: classref-item-separator
 
@@ -3673,11 +3673,11 @@ The size of the font in the script editor. This setting does not impact the font
 
 :ref:`bool<class_bool>` **interface/editor/collapse_main_menu** :ref:`🔗<class_EditorSettings_property_interface/editor/collapse_main_menu>`
 
-If ``true``, the main menu collapses into a :ref:`MenuButton<class_MenuButton>`.
+Si es ``true``, el menú principal se colapsa en un :ref:`MenuButton<class_MenuButton>`.
 
-\ **Note:** This setting is only applicable on macOS when :ref:`interface/editor/use_embedded_menu<class_EditorSettings_property_interface/editor/use_embedded_menu>` is ``true``.
+\ **Nota:** Esta configuración solo es aplicable en macOS cuando :ref:`interface/editor/use_embedded_menu<class_EditorSettings_property_interface/editor/use_embedded_menu>` es ``true``.
 
-\ **Note:** Defaults to ``true`` on the Android editor.
+\ **Nota:** Por defecto es ``true`` en el editor de Android.
 
 .. rst-class:: classref-item-separator
 
@@ -3689,9 +3689,9 @@ If ``true``, the main menu collapses into a :ref:`MenuButton<class_MenuButton>`.
 
 :ref:`float<class_float>` **interface/editor/custom_display_scale** :ref:`🔗<class_EditorSettings_property_interface/editor/custom_display_scale>`
 
-The custom editor scale factor to use. This can be used for displays with very high DPI where a scale factor of 200% is not sufficient.
+El factor de escala personalizado del editor a usar. Esto se puede usar para pantallas con DPI muy alto donde un factor de escala del 200% no es suficiente.
 
-\ **Note:** Only effective if :ref:`interface/editor/display_scale<class_EditorSettings_property_interface/editor/display_scale>` is set to **Custom**.
+\ **Nota:** Solo es efectivo si :ref:`interface/editor/display_scale<class_EditorSettings_property_interface/editor/display_scale>` está establecido en **Custom**.
 
 .. rst-class:: classref-item-separator
 
@@ -3719,7 +3719,7 @@ If set to **Custom**, the scaling value in :ref:`interface/editor/custom_display
 
 :ref:`int<class_int>` **interface/editor/dock_tab_style** :ref:`🔗<class_EditorSettings_property_interface/editor/dock_tab_style>`
 
-Tab style of editor docks, except bottom docks.
+Estilo de las pestañas de los docks del editor, excepto los docks inferiores.
 
 .. rst-class:: classref-item-separator
 
@@ -3731,7 +3731,7 @@ Tab style of editor docks, except bottom docks.
 
 :ref:`float<class_float>` **interface/editor/dragging_hover_wait_seconds** :ref:`🔗<class_EditorSettings_property_interface/editor/dragging_hover_wait_seconds>`
 
-During a drag-and-drop, this is how long to wait over a UI element before it triggers a reaction (e.g. a section unfolds to show nested items).
+Durante una operación de arrastrar y soltar, este es el tiempo de espera sobre un elemento de la interfaz de usuario antes de que active una reacción (por ejemplo, una sección se despliega para mostrar elementos anidados).
 
 .. rst-class:: classref-item-separator
 
@@ -3757,7 +3757,7 @@ Translations are provided by the community. If you spot a mistake, `contribute t
 
 :ref:`int<class_int>` **interface/editor/editor_screen** :ref:`🔗<class_EditorSettings_property_interface/editor/editor_screen>`
 
-The preferred monitor to display the editor. If **Auto**, the editor will remember the last screen it was displayed on across multiple sessions.
+El monitor preferido para mostrar el editor. Si es **Automático**, el editor recordará la última pantalla en la que se mostró en múltiples sesiones.
 
 .. rst-class:: classref-item-separator
 
@@ -3769,9 +3769,9 @@ The preferred monitor to display the editor. If **Auto**, the editor will rememb
 
 :ref:`bool<class_bool>` **interface/editor/expand_to_title** :ref:`🔗<class_EditorSettings_property_interface/editor/expand_to_title>`
 
-Expanding main editor window content to the title, if supported by :ref:`DisplayServer<class_DisplayServer>`. See :ref:`DisplayServer.WINDOW_FLAG_EXTEND_TO_TITLE<class_DisplayServer_constant_WINDOW_FLAG_EXTEND_TO_TITLE>`.
+Expande el contenido de la ventana principal del editor hasta el título, si es compatible con :ref:`DisplayServer<class_DisplayServer>`. Véase :ref:`DisplayServer.WINDOW_FLAG_EXTEND_TO_TITLE<class_DisplayServer_constant_WINDOW_FLAG_EXTEND_TO_TITLE>`.
 
-Specific to the macOS platform.
+Específico para la plataforma macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -3783,7 +3783,7 @@ Specific to the macOS platform.
 
 :ref:`bool<class_bool>` **interface/editor/font_allow_msdf** :ref:`🔗<class_EditorSettings_property_interface/editor/font_allow_msdf>`
 
-If set to ``true``, MSDF font rendering will be used for the visual shader graph editor. You may need to set this to ``false`` when using a custom main font, as some fonts will look broken due to the use of self-intersecting outlines in their font data. Downloading the font from the font maker's official website as opposed to a service like Google Fonts can help resolve this issue.
+Si se establece en ``true``, se utilizará el renderizado de fuente MSDF para el editor visual de grafos de shaders. Es posible que debas establecer esto en ``false`` cuando uses una fuente principal personalizada, ya que algunas fuentes se verán rotas debido al uso de contornos autointersecantes en sus datos de fuente. Descargar la fuente del sitio web oficial del creador de la fuente en lugar de un servicio como Google Fonts puede ayudar a resolver este problema.
 
 .. rst-class:: classref-item-separator
 
@@ -3807,7 +3807,7 @@ FreeType's font anti-aliasing mode used to render the editor fonts. Most fonts a
 
 :ref:`bool<class_bool>` **interface/editor/font_disable_embedded_bitmaps** :ref:`🔗<class_EditorSettings_property_interface/editor/font_disable_embedded_bitmaps>`
 
-If set to ``true``, embedded font bitmap loading is disabled (bitmap-only and color fonts ignore this property).
+Si se establece en ``true``, la carga de mapas de bits de fuentes incrustados se desactiva (las fuentes solo de mapa de bits y de color ignoran esta propiedad).
 
 .. rst-class:: classref-item-separator
 
@@ -3819,15 +3819,15 @@ If set to ``true``, embedded font bitmap loading is disabled (bitmap-only and co
 
 :ref:`int<class_int>` **interface/editor/font_hinting** :ref:`🔗<class_EditorSettings_property_interface/editor/font_hinting>`
 
-The font hinting mode to use for the editor fonts. FreeType supports the following font hinting modes:
+El modo de hinting de fuente a usar para las fuentes del editor. FreeType admite los siguientes modos de hinting de fuente:
 
-- **None:** Don't use font hinting when rasterizing the font. This results in a smooth font, but it can look blurry.
+- **Ninguno:** No usar hinting de fuente al rasterizar la fuente. Esto resulta en una fuente suave, pero puede verse borrosa.
 
-- **Light:** Use hinting on the X axis only. This is a compromise between font sharpness and smoothness.
+- **Ligero:** Usar hinting solo en el eje X. Esto es un compromiso entre la nitidez y la suavidad de la fuente.
 
-- **Normal:** Use hinting on both X and Y axes. This results in a sharp font, but it doesn't look very smooth.
+- **Normal:** Usar hinting en los ejes X e Y. Esto resulta en una fuente nítida, pero no se ve muy suave.
 
-If set to **Auto**, the font hinting mode will be set to match the current operating system in use. This means the **Light** hinting mode will be used on Windows and Linux, and the **None** hinting mode will be used on macOS.
+Si se establece en **Auto**, el modo de hinting de fuente se ajustará para coincidir con el sistema operativo actual en uso. Esto significa que el modo de hinting **Ligero** se utilizará en Windows y Linux, y el modo de hinting **Ninguno** se utilizará en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -3875,9 +3875,9 @@ Si es ``true``, mantiene la pantalla encendida (incluso en caso de inactividad),
 
 :ref:`bool<class_bool>` **interface/editor/localize_settings** :ref:`🔗<class_EditorSettings_property_interface/editor/localize_settings>`
 
-If ``true``, setting names in the editor are localized when possible.
+Si es ``true``, los nombres de las configuraciones en el editor se localizan cuando es posible.
 
-\ **Note:** This setting affects most :ref:`EditorInspector<class_EditorInspector>`\ s in the editor UI, primarily Project Settings and Editor Settings. To control names displayed in the Inspector dock, use :ref:`interface/inspector/default_property_name_style<class_EditorSettings_property_interface/inspector/default_property_name_style>` instead.
+\ **Nota:** Esta configuración afecta a la mayoría de los :ref:`EditorInspector<class_EditorInspector>`\ s en la interfaz de usuario del editor, principalmente a la Configuración del Proyecto y la Configuración del Editor. Para controlar los nombres que se muestran en el panel del Inspector, usa :ref:`interface/inspector/default_property_name_style<class_EditorSettings_property_interface/inspector/default_property_name_style>` en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -3931,11 +3931,11 @@ La fuente que se usará para el texto en negrita en la interfaz del editor. Debe
 
 :ref:`String<class_String>` **interface/editor/main_font_custom_opentype_features** :ref:`🔗<class_EditorSettings_property_interface/editor/main_font_custom_opentype_features>`
 
-List of custom OpenType features to use, if supported by the currently configured main font. Check what OpenType features are supported by your font first.
+Lista de características OpenType personalizadas a usar, si son compatibles con la fuente principal configurada actualmente. Comprueba primero qué características OpenType son compatibles con tu fuente.
 
-The string should follow the OpenType specification, e.g. ``ss01,tnum,calt=false``. Microsoft's documentation contains a list of `all registered features <https://learn.microsoft.com/en-us/typography/opentype/spec/featurelist>`__.
+La cadena debe seguir la especificación OpenType, por ejemplo, ``ss01,tnum,calt=false``. La documentación de Microsoft contiene una lista de `todas las características registradas <https://learn.microsoft.com/en-us/typography/opentype/spec/featurelist>`__.
 
-\ **Note:** The default editor main font (`Inter <https://rsms.me/inter>`__) has custom OpenType features in its font file, with ``ss04`` and ``tnum`` enabled and ``calt`` disabled by default. Supported features can be found at its website.
+\ **Nota:** La fuente principal predeterminada del editor (`Inter <https://rsms.me/inter>`__) tiene características OpenType personalizadas en su archivo de fuente, con ``ss04`` y ``tnum`` habilitadas y ``calt`` deshabilitada por defecto. Las características compatibles se pueden encontrar en su sitio web.
 
 .. rst-class:: classref-item-separator
 
@@ -4033,15 +4033,15 @@ The default **Auto** value will only enable this if the editor was compiled with
 
 :ref:`int<class_int>` **interface/editor/show_update_spinner** :ref:`🔗<class_EditorSettings_property_interface/editor/show_update_spinner>`
 
-If enabled, displays an icon in the top-right corner of the editor that spins when the editor redraws a frame. This can be used to diagnose situations where the engine is constantly redrawing, which should be avoided as this increases CPU and GPU utilization for no good reason. To further troubleshoot these situations, start the editor with the ``--debug-canvas-item-redraw`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`.
+Si está habilitado, muestra un icono en la esquina superior derecha del editor que gira cuando el editor vuelve a dibujar un fotograma. Esto se puede usar para diagnosticar situaciones en las que el motor está constantemente redibujando, lo que debe evitarse ya que esto aumenta la utilización de CPU y GPU sin una buena razón. Para solucionar más a fondo estas situaciones, inicia el editor con el ``--debug-canvas-item-redraw`` :doc:`argumento de línea de comandos <../tutorials/editor/command_line_tutorial>`.
 
-Consider enabling this if you are developing editor plugins to ensure they only make the editor redraw when required.
+Considera habilitar esto si estás desarrollando plugins de editor para asegurarte de que solo hacen que el editor se redibuje cuando sea necesario.
 
-The default **Auto** value will only enable this if the editor was compiled with the ``dev_build=yes`` SCons option (the default is ``dev_build=no``).
+El valor predeterminado **Automático** solo lo habilitará si el editor fue compilado con la opción SCons ``dev_build=yes`` (el valor predeterminado es ``dev_build=no``).
 
-\ **Note:** If :ref:`interface/editor/update_continuously<class_EditorSettings_property_interface/editor/update_continuously>` is ``true``, the spinner icon displays in red.
+\ **Nota:** Si :ref:`interface/editor/update_continuously<class_EditorSettings_property_interface/editor/update_continuously>` es ``true``, el icono del spinner se muestra en rojo.
 
-\ **Note:** If the editor was started with the ``--debug-canvas-item-redraw`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`, the update spinner will *never* display regardless of this setting's value. This is to avoid confusion with what would cause redrawing in real world scenarios.
+\ **Nota:** Si el editor se inició con el ``--debug-canvas-item-redraw`` :doc:`argumento de línea de comandos <../tutorials/editor/command_line_tutorial>`, el spinner de actualización *nunca* se mostrará independientemente del valor de esta configuración. Esto es para evitar confusiones sobre qué causaría el redibujado en escenarios del mundo real.
 
 .. rst-class:: classref-item-separator
 
@@ -4083,7 +4083,7 @@ Sobrescribe el controlador de tableta utilizado por el editor.
 
 :ref:`int<class_int>` **interface/editor/ui_layout_direction** :ref:`🔗<class_EditorSettings_property_interface/editor/ui_layout_direction>`
 
-Editor UI default layout direction.
+Dirección predeterminada del diseño de la interfaz de usuario del editor.
 
 .. rst-class:: classref-item-separator
 
@@ -4095,9 +4095,9 @@ Editor UI default layout direction.
 
 :ref:`int<class_int>` **interface/editor/unfocused_low_processor_mode_sleep_usec** :ref:`🔗<class_EditorSettings_property_interface/editor/unfocused_low_processor_mode_sleep_usec>`
 
-When the editor window is unfocused, the amount of sleeping between frames when the low-processor usage mode is enabled (in microseconds). Higher values will result in lower CPU/GPU usage, which can improve battery life on laptops (in addition to improving the running project's performance if the editor has to redraw continuously). However, higher values will result in a less responsive editor. The default value is set to limit the editor to 10 FPS when the editor window is unfocused. See also :ref:`interface/editor/low_processor_mode_sleep_usec<class_EditorSettings_property_interface/editor/low_processor_mode_sleep_usec>`.
+Cuando la ventana del editor no está enfocada, la cantidad de tiempo de espera entre fotogramas cuando el modo de bajo uso del procesador está habilitado (en microsegundos). Valores más altos resultarán en un menor uso de CPU/GPU, lo que puede mejorar la duración de la batería en portátiles (además de mejorar el rendimiento del proyecto en ejecución si el editor tiene que redibujar continuamente). Sin embargo, valores más altos resultarán en un editor menos responsivo. El valor predeterminado está configurado para limitar el editor a 10 FPS cuando la ventana del editor no está enfocada. Véase también :ref:`interface/editor/low_processor_mode_sleep_usec<class_EditorSettings_property_interface/editor/low_processor_mode_sleep_usec>`.
 
-\ **Note:** This setting is ignored if :ref:`interface/editor/update_continuously<class_EditorSettings_property_interface/editor/update_continuously>` is ``true``, as enabling that setting disables low-processor mode.
+\ **Nota:** Esta configuración se ignora si :ref:`interface/editor/update_continuously<class_EditorSettings_property_interface/editor/update_continuously>` es ``true``, ya que habilitar esa configuración desactiva el modo de bajo uso del procesador.
 
 .. rst-class:: classref-item-separator
 
@@ -4123,9 +4123,9 @@ If ``true``, redraws the editor every frame even if nothing has changed on scree
 
 :ref:`bool<class_bool>` **interface/editor/use_embedded_menu** :ref:`🔗<class_EditorSettings_property_interface/editor/use_embedded_menu>`
 
-If ``true``, editor main menu is using embedded :ref:`MenuBar<class_MenuBar>` instead of system global menu.
+Si ``true``, el menú principal del editor utiliza una :ref:`MenuBar<class_MenuBar>` incrustada en lugar del menú global del sistema.
 
-Specific to the macOS platform.
+Específico de la plataforma macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4137,7 +4137,7 @@ Specific to the macOS platform.
 
 :ref:`bool<class_bool>` **interface/editor/use_native_file_dialogs** :ref:`🔗<class_EditorSettings_property_interface/editor/use_native_file_dialogs>`
 
-If ``true``, editor UI uses OS native file/directory selection dialogs.
+Si ``true``, la interfaz de usuario del editor utiliza los diálogos nativos del sistema operativo para la selección de archivos/directorios.
 
 .. rst-class:: classref-item-separator
 
@@ -4189,9 +4189,9 @@ Si es ``true``, el dock de Escena mostrará botones para agregar rápidamente un
 
 :ref:`bool<class_bool>` **interface/inspector/auto_unfold_foreign_scenes** :ref:`🔗<class_EditorSettings_property_interface/inspector/auto_unfold_foreign_scenes>`
 
-If ``true``, automatically unfolds Inspector property groups containing modified values when opening a scene for the first time. Only affects scenes without saved folding preferences and only unfolds groups with properties that have been changed from their default values.
+Si ``true``, despliega automáticamente los grupos de propiedades del Inspector que contienen valores modificados al abrir una escena por primera vez. Solo afecta a escenas sin preferencias de plegado guardadas y solo despliega grupos con propiedades que han sido cambiadas de sus valores predeterminados.
 
-\ **Note:** This setting only works in specific scenarios: when opening a scene brought in from another project, or when opening a new scene that already has modified properties (e.g., from version control). Duplicated scenes are not considered foreign, so this setting will not affect them.
+\ **Nota:** Esta configuración solo funciona en escenarios específicos: al abrir una escena traída de otro proyecto, o al abrir una nueva escena que ya tiene propiedades modificadas (por ejemplo, desde control de versiones). Las escenas duplicadas no se consideran ajenas, por lo que esta configuración no las afectará.
 
 .. rst-class:: classref-item-separator
 
@@ -4333,7 +4333,7 @@ Si es ``true``, las propiedades :ref:`Vector3<class_Vector3>`, :ref:`Vector3i<cl
 
 :ref:`float<class_float>` **interface/inspector/integer_drag_speed** :ref:`🔗<class_EditorSettings_property_interface/inspector/integer_drag_speed>`
 
-Base speed for increasing/decreasing integer values by dragging them in the inspector.
+Velocidad base para aumentar/disminuir los valores enteros arrastrándolos en el inspector.
 
 .. rst-class:: classref-item-separator
 
@@ -4455,7 +4455,7 @@ Si es ``true``, la posición, el tamaño y la pantalla del panel flotante se gua
 
 :ref:`bool<class_bool>` **interface/scene_tabs/auto_select_current_scene_file** :ref:`🔗<class_EditorSettings_property_interface/scene_tabs/auto_select_current_scene_file>`
 
-If ``true``, the FileSystem dock will automatically navigate to the currently selected scene tab.
+Si es ``true``, el dock del sistema de archivos navegará automáticamente a la pestaña de escena seleccionada actualmente.
 
 .. rst-class:: classref-item-separator
 
@@ -4491,9 +4491,9 @@ El ancho máximo de cada pestaña de escena en la parte superior del editor (en 
 
 :ref:`bool<class_bool>` **interface/scene_tabs/restore_scenes_on_load** :ref:`🔗<class_EditorSettings_property_interface/scene_tabs/restore_scenes_on_load>`
 
-If ``true``, when a project is loaded, restores scenes that were opened on the last editor session.
+Si es ``true``, cuando se carga un proyecto, restaura las escenas que se abrieron en la última sesión del editor.
 
-\ **Note:** With many opened scenes, the editor may take longer to become usable. If starting the editor quickly is necessary, consider setting this to ``false``.
+\ **Nota:** Con muchas escenas abiertas, el editor puede tardar más en ser utilizable. Si es necesario iniciar el editor rápidamente, considera establecer esto en ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -4591,7 +4591,7 @@ El tamaño del borde que se usará para los elementos de la interfaz (en píxele
 
 :ref:`String<class_String>` **interface/theme/color_preset** :ref:`🔗<class_EditorSettings_property_interface/theme/color_preset>`
 
-The editor color preset to use.
+El ajuste preestablecido de color del editor a utilizar.
 
 .. rst-class:: classref-item-separator
 
@@ -4651,13 +4651,13 @@ Si es ``true``, dibuja bordes adicionales alrededor de los elementos interactivo
 
 :ref:`int<class_int>` **interface/theme/draw_relationship_lines** :ref:`🔗<class_EditorSettings_property_interface/theme/draw_relationship_lines>`
 
-What relationship lines to draw in the editor's :ref:`Tree<class_Tree>`-based GUIs (such as the Scene tree dock).
+Qué líneas de relación dibujar en las GUIs basadas en :ref:`Tree<class_Tree>` del editor (como el dock del árbol de escenas).
 
-- **None** will make it so that no relationship lines are drawn.
+- **Ninguno** hará que no se dibujen líneas de relación.
 
-- **Selected Only** will only draw them for selected items.
+- **Solo Seleccionados** solo las dibujará para los elementos seleccionados.
 
-- **All** will always draw them for all items.
+- **Todos** siempre las dibujará para todos los elementos.
 
 .. rst-class:: classref-item-separator
 
@@ -4681,13 +4681,13 @@ Si es ``true``, el tema preestablecido del editor intentará coincidir automáti
 
 :ref:`int<class_int>` **interface/theme/icon_and_font_color** :ref:`🔗<class_EditorSettings_property_interface/theme/icon_and_font_color>`
 
-The icon and font color scheme to use in the editor.
+El esquema de color de iconos y fuentes a utilizar en el editor.
 
-- **Auto** determines the color scheme to use automatically based on :ref:`interface/theme/base_color<class_EditorSettings_property_interface/theme/base_color>`.
+- **Auto** determina el esquema de color a utilizar automáticamente según :ref:`interface/theme/base_color<class_EditorSettings_property_interface/theme/base_color>`.
 
-- **Dark** makes fonts and icons dark (suitable for light themes). Icon colors are automatically converted by the editor following the set of rules defined in `this file <https://github.com/godotengine/godot/blob/master/editor/themes/editor_theme_manager.cpp>`__.
+- **Oscuro** hace que las fuentes y los iconos sean oscuros (adecuado para temas claros). Los colores de los iconos son convertidos automáticamente por el editor siguiendo el conjunto de reglas definido en `este archivo <https://github.com/godotengine/godot/blob/master/editor/themes/editor_theme_manager.cpp>`__.
 
-- **Light** makes fonts and icons light (suitable for dark themes).
+- **Claro** hace que las fuentes y los iconos sean claros (adecuado para temas oscuros).
 
 .. rst-class:: classref-item-separator
 
@@ -4737,7 +4737,7 @@ El preajuste de espaciado del tema del editor que se utilizará. Véase también
 
 :ref:`String<class_String>` **interface/theme/style** :ref:`🔗<class_EditorSettings_property_interface/theme/style>`
 
-The editor theme style to use.
+El estilo del tema del editor a usar.
 
 .. rst-class:: classref-item-separator
 
@@ -4791,9 +4791,9 @@ Si es ``true``, habilita los gestos de desplazamiento y escala con dos dedos en 
 
 :ref:`bool<class_bool>` **interface/touchscreen/enable_touch_optimizations** :ref:`🔗<class_EditorSettings_property_interface/touchscreen/enable_touch_optimizations>`
 
-If ``true``, increases the scrollbar touch area, enables a larger dragger for split containers, and increases PopupMenu vertical separation to improve usability on touchscreen devices.
+Si es ``true``, aumenta el área táctil de la barra de desplazamiento, habilita un arrastrador más grande para los contenedores divididos y aumenta la separación vertical del PopupMenu para mejorar la usabilidad en dispositivos con pantalla táctil.
 
-\ **Note:** Defaults to ``true`` on touchscreen devices.
+\ **Nota:** El valor predeterminado es ``true`` en dispositivos con pantalla táctil.
 
 .. rst-class:: classref-item-separator
 
@@ -4855,9 +4855,9 @@ Todos los modos de actualización ignorarán las compilaciones con diferentes ve
 
 :ref:`int<class_int>` **network/connection/network_mode** :ref:`🔗<class_EditorSettings_property_network/connection/network_mode>`
 
-Determines whether online features, such as the Asset Library or update checks, are enabled in the editor. If this is a privacy concern, disabling these online features prevents the editor from making HTTP requests to the Godot website or third-party platforms hosting assets from the Asset Library.
+Determina si las funciones en línea, como la Librería de Assets o las comprobaciones de actualización, están habilitadas en el editor. Si esto es una preocupación de privacidad, deshabilitar estas funciones en línea evita que el editor realice solicitudes HTTP al sitio web de Godot o a plataformas de terceros que alojan recursos de la Librería de Assets.
 
-Editor plugins and tool scripts are recommended to follow this setting. However, Godot can't prevent them from violating this rule.
+Se recomienda que los plugins del editor y los scripts de herramientas sigan esta configuración. Sin embargo, Godot no puede evitar que la infrinjan.
 
 .. rst-class:: classref-item-separator
 
@@ -4959,7 +4959,7 @@ El tipo de renderizador que se marcará por defecto al crear un nuevo proyecto. 
 
 :ref:`int<class_int>` **project_manager/directory_naming_convention** :ref:`🔗<class_EditorSettings_property_project_manager/directory_naming_convention>`
 
-Directory naming convention for the project manager. Options are "No Convention" (project name is directory name), "kebab-case" (default), "snake_case", "camelCase", "PascalCase", or "Title Case".
+Convención de nomenclatura de directorios para el administrador de proyectos. Las opciones son "Sin convención" (el nombre del proyecto es el nombre del directorio), "kebab-case" (predeterminado), "snake_case", "camelCase", "PascalCase" o "Title Case".
 
 .. rst-class:: classref-item-separator
 
@@ -5617,7 +5617,7 @@ Si es ``true``, el cursor se moverá al hacer clic derecho en algún lugar del e
 
 :ref:`bool<class_bool>` **text_editor/behavior/navigation/open_script_when_connecting_signal_to_existing_method** :ref:`🔗<class_EditorSettings_property_text_editor/behavior/navigation/open_script_when_connecting_signal_to_existing_method>`
 
-If ``true``, opens the script editor when connecting a signal to an existing script method from the Signals dock.
+Si es ``true``, abre el editor de scripts al conectar una señal a un método de script existente desde el panel de Señales.
 
 .. rst-class:: classref-item-separator
 
@@ -5717,7 +5717,7 @@ Si es ``true``, utiliza :ref:`NodePath<class_NodePath>` en lugar de :ref:`String
 
 :ref:`bool<class_bool>` **text_editor/completion/add_string_name_literals** :ref:`🔗<class_EditorSettings_property_text_editor/completion/add_string_name_literals>`
 
-If ``true``, uses :ref:`StringName<class_StringName>` instead of :ref:`String<class_String>` when appropriate for code autocompletion.
+Si es ``true``, usa :ref:`StringName<class_StringName>` en lugar de :ref:`String<class_String>` cuando sea apropiado para el completado automático de código.
 
 .. rst-class:: classref-item-separator
 

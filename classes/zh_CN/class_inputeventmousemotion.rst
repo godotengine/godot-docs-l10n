@@ -5,36 +5,36 @@
 InputEventMouseMotion
 =====================
 
-**继承：** :ref:`InputEventMouse<class_InputEventMouse>` **<** :ref:`InputEventWithModifiers<class_InputEventWithModifiers>` **<** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`InputEventMouse<class_InputEventMouse>` **<** :ref:`InputEventWithModifiers<class_InputEventWithModifiers>` **<** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-代表鼠标或笔的移动。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-存储鼠标或笔的运动信息。支持相对位置、绝对位置和速度。见 :ref:`Node._input()<class_Node_private_method__input>`\ 。
-
-\ **注意：**\ 默认情况下，该事件每个渲染帧最多只会发出一个。如果你需要更精确的输入汇报，请将 :ref:`Input.use_accumulated_input<class_Input_property_use_accumulated_input>` 设置为 ``false``\ ，尽可能频繁地发出事件。如果你使用 InputEventMouseMotion 来画线，请考虑同时使用 :ref:`Geometry2D.bresenham_line()<class_Geometry2D_method_bresenham_line>`\ ，避免在用户快速移动鼠标时出现可见的线条空隙。
-
-\ **注意：**\ 即使鼠标没有移动，操作系统或 Godot 本身也可能会发出该事件。如果你确实需要知道鼠标是否移动（例如为了防止显示工具提示），你应当检查 ``relative.is_zero_approx()`` 是否为 ``false``\ 。
+Represents a mouse or a pen movement.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`使用 InputEvent <../tutorials/inputs/inputevent>`
+Stores information about a mouse or a pen motion. This includes relative position, absolute position, and velocity. See :ref:`Node._input()<class_Node_private_method__input>`.
 
-- :doc:`鼠标和输入坐标 <../tutorials/inputs/mouse_and_input_coordinates>`
+\ **Note:** By default, this event is only emitted once per frame rendered at most. If you need more precise input reporting, set :ref:`Input.use_accumulated_input<class_Input_property_use_accumulated_input>` to ``false`` to make events emitted as often as possible. If you use InputEventMouseMotion to draw lines, consider using :ref:`Geometry2D.bresenham_line()<class_Geometry2D_method_bresenham_line>` as well to avoid visible gaps in lines if the user is moving the mouse quickly.
 
-- `3D 体素演示 <https://godotengine.org/asset-library/asset/2755>`__
+\ **Note:** This event may be emitted even when the mouse hasn't moved, either by the operating system or by Godot itself. If you really need to know if the mouse has moved (e.g. to suppress displaying a tooltip), you should check that ``relative.is_zero_approx()`` is ``false``.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Using InputEvent <../tutorials/inputs/inputevent>`
+
+- :doc:`Mouse and input coordinates <../tutorials/inputs/mouse_and_input_coordinates>`
+
+- `3D Voxel Demo <https://godotengine.org/asset-library/asset/2755>`__
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -61,8 +61,8 @@ InputEventMouseMotion
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_InputEventMouseMotion_property_pen_inverted:
 
@@ -75,9 +75,9 @@ InputEventMouseMotion
 - |void| **set_pen_inverted**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_pen_inverted**\ (\ )
 
-使用手写笔的橡皮端时，返回 ``true``\ 。
+Returns ``true`` when using the eraser end of a stylus pen.
 
-\ **注意：**\ 这个属性在 Linux、macOS 和 Windows 上实现。
+\ **Note:** This property is implemented on Linux, macOS and Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -94,7 +94,7 @@ InputEventMouseMotion
 - |void| **set_pressure**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pressure**\ (\ )
 
-表示用户对笔施加的压力。范围从 ``0.0`` 到 ``1.0`` 。
+Represents the pressure the user puts on the pen. Ranges from ``0.0`` to ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -111,11 +111,11 @@ InputEventMouseMotion
 - |void| **set_relative**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_relative**\ (\ )
 
-鼠标相对于前一个位置（上一帧时的位置）的位置。
+The mouse position relative to the previous position (position at the last frame).
 
-\ **注意：**\ 因为 **InputEventMouseMotion** 可能只在鼠标移动时发出，检查该属性无法可靠地检测鼠标何时停止移动。可能需要一个单独的短时间计时器。
+\ **Note:** Since **InputEventMouseMotion** may only be emitted when the mouse moves, it is not possible to reliably detect when the mouse has stopped moving by checking this property. A separate, short timer may be necessary.
 
-\ **注意：**\ :ref:`relative<class_InputEventMouseMotion_property_relative>` 会根据内容缩放系数自动进行缩放，这个系数是在项目的拉伸模式设置中定义的。也就是说在 :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` 鼠标模式下，如果在脚本中使用 :ref:`relative<class_InputEventMouseMotion_property_relative>` 来处理鼠标瞄准，那么鼠标的灵敏度就会因分辨率的不同而不同。为了避免这种情况，请改用 :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>`\ 。
+\ **Note:** :ref:`relative<class_InputEventMouseMotion_property_relative>` is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. This means mouse sensitivity will appear different depending on resolution when using :ref:`relative<class_InputEventMouseMotion_property_relative>` in a script that handles mouse aiming with the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode. To avoid this, use :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` instead.
 
 .. rst-class:: classref-item-separator
 
@@ -132,11 +132,11 @@ InputEventMouseMotion
 - |void| **set_screen_relative**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_screen_relative**\ (\ )
 
-未缩放的鼠标位置，该位置相对于屏幕坐标系中的前一个位置（上一帧的位置）。
+The unscaled mouse position relative to the previous position in the coordinate system of the screen (position at the last frame).
 
-\ **注意：**\ 因为 **InputEventMouseMotion** 可能只在鼠标移动时发出，检查该属性无法可靠地检测鼠标何时停止移动。可能需要一个单独的短时间计时器。
+\ **Note:** Since **InputEventMouseMotion** may only be emitted when the mouse moves, it is not possible to reliably detect when the mouse has stopped moving by checking this property. A separate, short timer may be necessary.
 
-\ **注意：**\ 该坐标\ *不会*\ 根据内容缩放因子或调用 :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>` 进行缩放。当使用 :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` 鼠标模式时，无论项目的拉伸模式如何，对于鼠标瞄准来说，这都应该优于 :ref:`relative<class_InputEventMouseMotion_property_relative>`\ 。
+\ **Note:** This coordinate is *not* scaled according to the content scale factor or calls to :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`. This should be preferred over :ref:`relative<class_InputEventMouseMotion_property_relative>` for mouse aiming when using the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode, regardless of the project's stretch mode.
 
 .. rst-class:: classref-item-separator
 
@@ -153,9 +153,9 @@ InputEventMouseMotion
 - |void| **set_screen_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_screen_velocity**\ (\ )
 
-屏幕坐标中未缩放的鼠标速度（单位为每秒像素数）。该速度\ *不会*\ 根据内容缩放系数或对 :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>` 的调用进行缩放。
+The unscaled mouse velocity in pixels per second in screen coordinates. This velocity is *not* scaled according to the content scale factor or calls to :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`.
 
-\ **注意：**\ 使用 :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` 鼠标模式时，请使用 :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` 实现鼠标瞄准。
+\ **Note:** Use :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` for mouse aiming using the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode.
 
 .. rst-class:: classref-item-separator
 
@@ -172,7 +172,7 @@ InputEventMouseMotion
 - |void| **set_tilt**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_tilt**\ (\ )
 
-代表笔的倾斜角度。正的 X 坐标值表示向右倾斜。正的Y坐标值表示向用户自身倾斜。两个轴的范围是 ``-1.0`` 到 ``1.0``\ 。
+Represents the angles of tilt of the pen. Positive X-coordinate value indicates a tilt to the right. Positive Y-coordinate value indicates a tilt toward the user. Ranges from ``-1.0`` to ``1.0`` for both axes.
 
 .. rst-class:: classref-item-separator
 
@@ -189,18 +189,18 @@ InputEventMouseMotion
 - |void| **set_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_velocity**\ (\ )
 
-鼠标速度，单位为像素每秒。
+The mouse velocity in pixels per second.
 
-\ **注意：**\ :ref:`velocity<class_InputEventMouseMotion_property_velocity>` 会根据内容缩放系数自动缩放，内容缩放系数由项目的拉伸模式设置定义。这意味着鼠标灵敏度将根据分辨率而有所不同。
+\ **Note:** :ref:`velocity<class_InputEventMouseMotion_property_velocity>` is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. That means mouse sensitivity may appear different depending on resolution.
 
-\ **注意：**\ 使用 :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` 鼠标模式时，请使用 :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` 实现鼠标瞄准。
+\ **Note:** Use :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` for mouse aiming using the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

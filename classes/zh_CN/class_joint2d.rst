@@ -5,23 +5,23 @@
 Joint2D
 =======
 
-**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**派生：** :ref:`DampedSpringJoint2D<class_DampedSpringJoint2D>`, :ref:`GrooveJoint2D<class_GrooveJoint2D>`, :ref:`PinJoint2D<class_PinJoint2D>`
+**Inherited By:** :ref:`DampedSpringJoint2D<class_DampedSpringJoint2D>`, :ref:`GrooveJoint2D<class_GrooveJoint2D>`, :ref:`PinJoint2D<class_PinJoint2D>`
 
-所有 2D 物理关节的抽象基类。
+Abstract base class for all 2D physics joints.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-2D 物理中所有关节的抽象基类。2D 关节能够将两个物理体（\ :ref:`node_a<class_Joint2D_property_node_a>` 和 :ref:`node_b<class_Joint2D_property_node_b>`\ ）绑定在一起并施加约束。
+Abstract base class for all joints in 2D physics. 2D joints bind together two physics bodies (:ref:`node_a<class_Joint2D_property_node_a>` and :ref:`node_b<class_Joint2D_property_node_b>`) and apply a constraint.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ Joint2D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -54,8 +54,8 @@ Joint2D
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_Joint2D_property_bias:
 
@@ -68,9 +68,9 @@ Joint2D
 - |void| **set_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bias**\ (\ )
 
-当 :ref:`node_a<class_Joint2D_property_node_a>` 和 :ref:`node_b<class_Joint2D_property_node_b>` 向不同方向移动时，\ :ref:`bias<class_Joint2D_property_bias>` 控制关节将它们拉回到原始位置的速度。\ :ref:`bias<class_Joint2D_property_bias>` 越低，两个实体对该关节的拉力就越大。
+When :ref:`node_a<class_Joint2D_property_node_a>` and :ref:`node_b<class_Joint2D_property_node_b>` move in different directions the :ref:`bias<class_Joint2D_property_bias>` controls how fast the joint pulls them back to their original position. The lower the :ref:`bias<class_Joint2D_property_bias>` the more the two bodies can pull on the joint.
 
-当被设置为 ``0`` 时，使用来自 :ref:`ProjectSettings.physics/2d/solver/default_constraint_bias<class_ProjectSettings_property_physics/2d/solver/default_constraint_bias>` 的默认值。
+When set to ``0``, the default value from :ref:`ProjectSettings.physics/2d/solver/default_constraint_bias<class_ProjectSettings_property_physics/2d/solver/default_constraint_bias>` is used.
 
 .. rst-class:: classref-item-separator
 
@@ -87,7 +87,7 @@ Joint2D
 - |void| **set_exclude_nodes_from_collision**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_exclude_nodes_from_collision**\ (\ )
 
-如果为 ``true``\ ，则绑定在一起的两个物体不会相互碰撞。
+If ``true``, the two bodies bound together do not collide with each other.
 
 .. rst-class:: classref-item-separator
 
@@ -104,7 +104,7 @@ Joint2D
 - |void| **set_node_a**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_node_a**\ (\ )
 
-连接到关节的第一个物体（A）的路径。该节点必须继承自 :ref:`PhysicsBody2D<class_PhysicsBody2D>`\ 。
+Path to the first body (A) attached to the joint. The node must inherit :ref:`PhysicsBody2D<class_PhysicsBody2D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -121,7 +121,7 @@ Joint2D
 - |void| **set_node_b**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_node_b**\ (\ )
 
-连接到关节的第二个物体（B）的路径。该节点必须继承自 :ref:`PhysicsBody2D<class_PhysicsBody2D>`\ 。
+Path to the second body (B) attached to the joint. The node must inherit :ref:`PhysicsBody2D<class_PhysicsBody2D>`.
 
 .. rst-class:: classref-section-separator
 
@@ -129,8 +129,8 @@ Joint2D
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_Joint2D_method_get_rid:
 
@@ -138,14 +138,14 @@ Joint2D
 
 :ref:`RID<class_RID>` **get_rid**\ (\ ) |const| :ref:`🔗<class_Joint2D_method_get_rid>`
 
-从 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 返回关节的内部 :ref:`RID<class_RID>`\ 。
+Returns the joint's internal :ref:`RID<class_RID>` from the :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

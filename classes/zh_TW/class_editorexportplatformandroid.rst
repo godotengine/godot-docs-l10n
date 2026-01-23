@@ -5,25 +5,25 @@
 EditorExportPlatformAndroid
 ===========================
 
-**繼承：** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-適用於 Android 的匯出器。
+Exporter for Android.
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`為 Android 匯出 <../tutorials/export/exporting_for_android>`
+- :doc:`Exporting for Android <../tutorials/export/exporting_for_android>`
 
 - :doc:`Gradle builds for Android <../tutorials/export/android_gradle_build>`
 
-- :doc:`編輯器外掛程式文件索引 <../tutorials/platform/index>`
+- :doc:`Android plugins documentation index <../tutorials/platform/index>`
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -446,8 +446,8 @@ EditorExportPlatformAndroid
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_EditorExportPlatformAndroid_property_apk_expansion/SALT:
 
@@ -493,7 +493,7 @@ Base64 encoded RSA public key for your publisher account, available from the pro
 
 :ref:`bool<class_bool>` **architectures/arm64-v8a** :ref:`🔗<class_EditorExportPlatformAndroid_property_architectures/arm64-v8a>`
 
-如果為 ``true``\ ，\ ``arm64`` 二進位檔案將包含在匯出的專案中。
+If ``true``, ``arm64`` binaries are included into exported project.
 
 .. rst-class:: classref-item-separator
 
@@ -505,7 +505,7 @@ Base64 encoded RSA public key for your publisher account, available from the pro
 
 :ref:`bool<class_bool>` **architectures/armeabi-v7a** :ref:`🔗<class_EditorExportPlatformAndroid_property_architectures/armeabi-v7a>`
 
-如果為 ``true``\ ，\ ``arm32`` 二進位檔案將包含在匯出的專案中。
+If ``true``, ``arm32`` binaries are included into exported project.
 
 .. rst-class:: classref-item-separator
 
@@ -517,7 +517,7 @@ Base64 encoded RSA public key for your publisher account, available from the pro
 
 :ref:`bool<class_bool>` **architectures/x86** :ref:`🔗<class_EditorExportPlatformAndroid_property_architectures/x86>`
 
-如果為 ``true``\ ，\ ``x86_32`` 二進位檔案將包含在匯出的專案中。
+If ``true``, ``x86_32`` binaries are included into exported project.
 
 .. rst-class:: classref-item-separator
 
@@ -529,7 +529,7 @@ Base64 encoded RSA public key for your publisher account, available from the pro
 
 :ref:`bool<class_bool>` **architectures/x86_64** :ref:`🔗<class_EditorExportPlatformAndroid_property_architectures/x86_64>`
 
-如果為 ``true``\ ，\ ``x86_64`` 二進位檔案將包含在匯出的專案中。
+If ``true``, ``x86_64`` binaries are included into exported project.
 
 .. rst-class:: classref-item-separator
 
@@ -691,7 +691,7 @@ The Android API level on which the application is designed to run (used during G
 
 :ref:`bool<class_bool>` **gradle_build/use_gradle_build** :ref:`🔗<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>`
 
-如果為 ``true``\ ，則使用 Gradle 建構而不是預建構的 APK。
+If ``true``, Gradle build is used instead of pre-built APK.
 
 .. rst-class:: classref-item-separator
 
@@ -703,7 +703,7 @@ The Android API level on which the application is designed to run (used during G
 
 :ref:`bool<class_bool>` **graphics/opengl_debug** :ref:`🔗<class_EditorExportPlatformAndroid_property_graphics/opengl_debug>`
 
-如果為 ``true``\ ，則將建立 OpenGL ES 除錯本文（額外的運作時檢查、驗證、和紀錄記錄）。
+If ``true``, OpenGL ES debug context will be created (additional runtime checking, validation, and logging).
 
 .. rst-class:: classref-item-separator
 
@@ -715,11 +715,11 @@ The Android API level on which the application is designed to run (used during G
 
 :ref:`String<class_String>` **keystore/debug** :ref:`🔗<class_EditorExportPlatformAndroid_property_keystore/debug>`
 
-除錯金鑰庫檔的路徑。
+Path of the debug keystore file.
 
-可以被環境變數 ``GODOT_ANDROID_KEYSTORE_DEBUG_PATH`` 覆蓋。
+Can be overridden with the environment variable ``GODOT_ANDROID_KEYSTORE_DEBUG_PATH``.
 
-如果為空，則退回到 ``EditorSettings.export/android/debug_keystore``\ 。
+Fallbacks to ``EditorSettings.export/android/debug_keystore`` if empty.
 
 .. rst-class:: classref-item-separator
 
@@ -731,11 +731,11 @@ The Android API level on which the application is designed to run (used during G
 
 :ref:`String<class_String>` **keystore/debug_password** :ref:`🔗<class_EditorExportPlatformAndroid_property_keystore/debug_password>`
 
-除錯金鑰庫檔的密碼。
+Password for the debug keystore file.
 
-可以使用環境變數 ``GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD`` 覆蓋。
+Can be overridden with the environment variable ``GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD``.
 
-如果該屬性和 :ref:`keystore/debug<class_EditorExportPlatformAndroid_property_keystore/debug>` 都為空，則退回到 ``EditorSettings.export/android/debug_keystore_pass``\ 。
+Fallbacks to ``EditorSettings.export/android/debug_keystore_pass`` if both it and :ref:`keystore/debug<class_EditorExportPlatformAndroid_property_keystore/debug>` are empty.
 
 .. rst-class:: classref-item-separator
 
@@ -747,11 +747,11 @@ The Android API level on which the application is designed to run (used during G
 
 :ref:`String<class_String>` **keystore/debug_user** :ref:`🔗<class_EditorExportPlatformAndroid_property_keystore/debug_user>`
 
-除錯金鑰庫檔案的使用者名。
+User name for the debug keystore file.
 
-可以使用環境變數 ``GODOT_ANDROID_KEYSTORE_DEBUG_USER`` 覆蓋。
+Can be overridden with the environment variable ``GODOT_ANDROID_KEYSTORE_DEBUG_USER``.
 
-如果該屬性和 :ref:`keystore/debug<class_EditorExportPlatformAndroid_property_keystore/debug>` 都為空，則退回到 ``EditorSettings.export/android/debug_keystore_user``\ 。
+Fallbacks to ``EditorSettings.export/android/debug_keystore_user`` if both it and :ref:`keystore/debug<class_EditorExportPlatformAndroid_property_keystore/debug>` are empty.
 
 .. rst-class:: classref-item-separator
 
@@ -763,9 +763,9 @@ The Android API level on which the application is designed to run (used during G
 
 :ref:`String<class_String>` **keystore/release** :ref:`🔗<class_EditorExportPlatformAndroid_property_keystore/release>`
 
-發行金鑰庫檔的路徑。
+Path of the release keystore file.
 
-可以使用環境變數 ``GODOT_ANDROID_KEYSTORE_RELEASE_PATH`` 覆蓋。
+Can be overridden with the environment variable ``GODOT_ANDROID_KEYSTORE_RELEASE_PATH``.
 
 .. rst-class:: classref-item-separator
 
@@ -777,9 +777,9 @@ The Android API level on which the application is designed to run (used during G
 
 :ref:`String<class_String>` **keystore/release_password** :ref:`🔗<class_EditorExportPlatformAndroid_property_keystore/release_password>`
 
-發行金鑰庫檔的密碼。
+Password for the release keystore file.
 
-可以使用環境變數 ``GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD`` 覆蓋。
+Can be overridden with the environment variable ``GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD``.
 
 .. rst-class:: classref-item-separator
 
@@ -791,9 +791,9 @@ The Android API level on which the application is designed to run (used during G
 
 :ref:`String<class_String>` **keystore/release_user** :ref:`🔗<class_EditorExportPlatformAndroid_property_keystore/release_user>`
 
-發行金鑰庫檔的使用者名。
+User name for the release keystore file.
 
-可以使用環境變數 ``GODOT_ANDROID_KEYSTORE_RELEASE_USER`` 覆蓋。
+Can be overridden with the environment variable ``GODOT_ANDROID_KEYSTORE_RELEASE_USER``.
 
 .. rst-class:: classref-item-separator
 
@@ -841,7 +841,7 @@ Monochrome layer of the application adaptive icon file. See `Design adaptive ico
 
 :ref:`String<class_String>` **launcher_icons/main_192x192** :ref:`🔗<class_EditorExportPlatformAndroid_property_launcher_icons/main_192x192>`
 
-套用程式圖示檔。如果留空，它將退回到 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。
+Application icon file. If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`.
 
 .. rst-class:: classref-item-separator
 
@@ -877,7 +877,7 @@ If ``true``, task initiated by main activity will be excluded from the list of r
 
 :ref:`String<class_String>` **package/name** :ref:`🔗<class_EditorExportPlatformAndroid_property_package/name>`
 
-套用程式的名稱。
+Name of the application.
 
 .. rst-class:: classref-item-separator
 
@@ -901,7 +901,7 @@ If ``true``, when the user uninstalls an app, a prompt to keep the app's data wi
 
 :ref:`bool<class_bool>` **package/show_as_launcher_app** :ref:`🔗<class_EditorExportPlatformAndroid_property_package/show_as_launcher_app>`
 
-如果為 ``true``\ ，則編輯器會在運作遊戲專案時清空“輸出”面板。
+If ``true``, the user will be able to set this app as the system launcher in Android preferences.
 
 .. rst-class:: classref-item-separator
 
@@ -913,7 +913,7 @@ If ``true``, when the user uninstalls an app, a prompt to keep the app's data wi
 
 :ref:`bool<class_bool>` **package/show_in_android_tv** :ref:`🔗<class_EditorExportPlatformAndroid_property_package/show_in_android_tv>`
 
-如果為 ``true``\ ，對話方塊將顯示出隱藏檔。
+If ``true``, this app will show in Android TV launcher UI.
 
 .. rst-class:: classref-item-separator
 
@@ -925,9 +925,9 @@ If ``true``, when the user uninstalls an app, a prompt to keep the app's data wi
 
 :ref:`bool<class_bool>` **package/show_in_app_library** :ref:`🔗<class_EditorExportPlatformAndroid_property_package/show_in_app_library>`
 
-如果為 ``true``\ ，則在觸控式螢幕裝置上啟用兩指平移和縮放手勢。
+If ``true``, this app will show in the device's app library.
 
-\ **注意：**\ 在觸控式螢幕裝置上預設為 ``true``\ 。
+\ **Note:** This is ``true`` by default.
 
 .. rst-class:: classref-item-separator
 
@@ -939,7 +939,7 @@ If ``true``, when the user uninstalls an app, a prompt to keep the app's data wi
 
 :ref:`bool<class_bool>` **package/signed** :ref:`🔗<class_EditorExportPlatformAndroid_property_package/signed>`
 
-如果為 ``true``\ ，則包簽章被啟用。
+If ``true``, package signing is enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -969,7 +969,7 @@ If ``$genname`` is present in the value, it will be replaced by the project name
 
 :ref:`bool<class_bool>` **permissions/access_checkin_properties** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/access_checkin_properties>`
 
-允許對簽到資料庫的“properties”表進行讀寫存取。見 `ACCESS_CHECKIN_PROPERTIES <https://developer.android.com/reference/android/Manifest.permission#ACCESS_CHECKIN_PROPERTIES>`__\ 。
+Allows read/write access to the "properties" table in the checkin database. See `ACCESS_CHECKIN_PROPERTIES <https://developer.android.com/reference/android/Manifest.permission#ACCESS_CHECKIN_PROPERTIES>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -981,7 +981,7 @@ If ``$genname`` is present in the value, it will be replaced by the project name
 
 :ref:`bool<class_bool>` **permissions/access_coarse_location** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/access_coarse_location>`
 
-允許存取大致位置資訊。見 `ACCESS_COARSE_LOCATION <https://developer.android.com/reference/android/Manifest.permission#ACCESS_COARSE_LOCATION>`__\ 。
+Allows access to the approximate location information. See `ACCESS_COARSE_LOCATION <https://developer.android.com/reference/android/Manifest.permission#ACCESS_COARSE_LOCATION>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -993,7 +993,7 @@ If ``$genname`` is present in the value, it will be replaced by the project name
 
 :ref:`bool<class_bool>` **permissions/access_fine_location** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/access_fine_location>`
 
-允許存取精確位置資訊。見 `ACCESS_FINE_LOCATION <https://developer.android.com/reference/android/Manifest.permission#ACCESS_FINE_LOCATION>`__\ 。
+Allows access to the precise location information. See `ACCESS_FINE_LOCATION <https://developer.android.com/reference/android/Manifest.permission#ACCESS_FINE_LOCATION>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1005,7 +1005,7 @@ If ``$genname`` is present in the value, it will be replaced by the project name
 
 :ref:`bool<class_bool>` **permissions/access_location_extra_commands** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/access_location_extra_commands>`
 
-允許對額外位置提供方命令的存取。見 `ACCESS_LOCATION_EXTRA_COMMANDS <https://developer.android.com/reference/android/Manifest.permission#ACCESS_LOCATION_EXTRA_COMMANDS>`__\ 。
+Allows access to the extra location provider commands. See `ACCESS_LOCATION_EXTRA_COMMANDS <https://developer.android.com/reference/android/Manifest.permission#ACCESS_LOCATION_EXTRA_COMMANDS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1029,7 +1029,7 @@ Allows an application to access any geographic locations persisted in the user's
 
 :ref:`bool<class_bool>` **permissions/access_mock_location** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/access_mock_location>`
 
-允許套用程式為測試目的建立 Mock 位置提供方。
+Allows an application to create mock location providers for testing.
 
 .. rst-class:: classref-item-separator
 
@@ -1041,7 +1041,7 @@ Allows an application to access any geographic locations persisted in the user's
 
 :ref:`bool<class_bool>` **permissions/access_network_state** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/access_network_state>`
 
-允許對網路相關資訊進行存取。見 `ACCESS_NETWORK_STATE <https://developer.android.com/reference/android/Manifest.permission#ACCESS_NETWORK_STATE>`__\ 。
+Allows access to the information about networks. See `ACCESS_NETWORK_STATE <https://developer.android.com/reference/android/Manifest.permission#ACCESS_NETWORK_STATE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1053,7 +1053,7 @@ Allows an application to access any geographic locations persisted in the user's
 
 :ref:`bool<class_bool>` **permissions/access_surface_flinger** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/access_surface_flinger>`
 
-允許套用程式使用 SurfaceFlinger 的底層功能。
+Allows an application to use SurfaceFlinger's low level features.
 
 .. rst-class:: classref-item-separator
 
@@ -1065,7 +1065,7 @@ Allows an application to access any geographic locations persisted in the user's
 
 :ref:`bool<class_bool>` **permissions/access_wifi_state** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/access_wifi_state>`
 
-允許對 Wi-Fi 網路相關資訊進行存取。見 `ACCESS_WIFI_STATE <https://developer.android.com/reference/android/Manifest.permission#ACCESS_WIFI_STATE>`__\ 。
+Allows access to the information about Wi-Fi networks. See `ACCESS_WIFI_STATE <https://developer.android.com/reference/android/Manifest.permission#ACCESS_WIFI_STATE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1077,7 +1077,7 @@ Allows an application to access any geographic locations persisted in the user's
 
 :ref:`bool<class_bool>` **permissions/account_manager** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/account_manager>`
 
-允許套用程式對 AccountAuthenticator 進行呼叫。見 `ACCOUNT_MANAGER <https://developer.android.com/reference/android/Manifest.permission#ACCOUNT_MANAGER>`__\ 。
+Allows applications to call into AccountAuthenticators. See `ACCOUNT_MANAGER <https://developer.android.com/reference/android/Manifest.permission#ACCOUNT_MANAGER>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1089,7 +1089,7 @@ Allows an application to access any geographic locations persisted in the user's
 
 :ref:`bool<class_bool>` **permissions/add_voicemail** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/add_voicemail>`
 
-允許套用程式向系統中新增語音郵件。見 `ADD_VOICEMAIL <https://developer.android.com/reference/android/Manifest.permission#ADD_VOICEMAIL>`__\ 。
+Allows an application to add voicemails into the system. See `ADD_VOICEMAIL <https://developer.android.com/reference/android/Manifest.permission#ADD_VOICEMAIL>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1101,7 +1101,7 @@ Allows an application to access any geographic locations persisted in the user's
 
 :ref:`bool<class_bool>` **permissions/authenticate_accounts** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/authenticate_accounts>`
 
-允許套用程式在 AccountManager 中扮演 AccountAuthenticator 的角色。
+Allows an application to act as an AccountAuthenticator for the AccountManager.
 
 .. rst-class:: classref-item-separator
 
@@ -1113,7 +1113,7 @@ Allows an application to access any geographic locations persisted in the user's
 
 :ref:`bool<class_bool>` **permissions/battery_stats** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/battery_stats>`
 
-允許套用程式收集電池統計資訊。見 `BATTERY_STATS <https://developer.android.com/reference/android/Manifest.permission#BATTERY_STATS>`__\ 。
+Allows an application to collect battery statistics. See `BATTERY_STATS <https://developer.android.com/reference/android/Manifest.permission#BATTERY_STATS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1125,7 +1125,7 @@ Allows an application to access any geographic locations persisted in the user's
 
 :ref:`bool<class_bool>` **permissions/bind_accessibility_service** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/bind_accessibility_service>`
 
-AccessibilityService 必須要求此許可權，確保只能系統能夠進行綁定。見 `BIND_ACCESSIBILITY_SERVICE <https://developer.android.com/reference/android/Manifest.permission#BIND_ACCESSIBILITY_SERVICE>`__\ 。
+Must be required by an AccessibilityService, to ensure that only the system can bind to it. See `BIND_ACCESSIBILITY_SERVICE <https://developer.android.com/reference/android/Manifest.permission#BIND_ACCESSIBILITY_SERVICE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1137,7 +1137,7 @@ AccessibilityService 必須要求此許可權，確保只能系統能夠進行�
 
 :ref:`bool<class_bool>` **permissions/bind_appwidget** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/bind_appwidget>`
 
-允許套用程式告訴 AppWidget 服務哪個套用程式可以存取 AppWidget 的資料。見 `BIND_APPWIDGET <https://developer.android.com/reference/android/Manifest.permission#BIND_APPWIDGET>`__\ 。
+Allows an application to tell the AppWidget service which application can access AppWidget's data. See `BIND_APPWIDGET <https://developer.android.com/reference/android/Manifest.permission#BIND_APPWIDGET>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1149,7 +1149,7 @@ AccessibilityService 必須要求此許可權，確保只能系統能夠進行�
 
 :ref:`bool<class_bool>` **permissions/bind_device_admin** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/bind_device_admin>`
 
-裝置管理接收器所必需的，以確保只有系統可以與其互動。見 `BIND_DEVICE_ADMIN <https://developer.android.com/reference/android/Manifest.permission#BIND_DEVICE_ADMIN>`__\ 。
+Must be required by device administration receiver, to ensure that only the system can interact with it. See `BIND_DEVICE_ADMIN <https://developer.android.com/reference/android/Manifest.permission#BIND_DEVICE_ADMIN>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1161,7 +1161,7 @@ AccessibilityService 必須要求此許可權，確保只能系統能夠進行�
 
 :ref:`bool<class_bool>` **permissions/bind_input_method** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/bind_input_method>`
 
-InputMethodService 必須要求此許可權，確保只能系統能夠進行綁定。見 `BIND_INPUT_METHOD <https://developer.android.com/reference/android/Manifest.permission#BIND_INPUT_METHOD>`__\ 。
+Must be required by an InputMethodService, to ensure that only the system can bind to it. See `BIND_INPUT_METHOD <https://developer.android.com/reference/android/Manifest.permission#BIND_INPUT_METHOD>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1173,7 +1173,7 @@ InputMethodService 必須要求此許可權，確保只能系統能夠進行綁�
 
 :ref:`bool<class_bool>` **permissions/bind_nfc_service** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/bind_nfc_service>`
 
-HostApduService 或 OffHostApduService 必須要求此許可權，確保只能系統能夠進行綁定。見 `BIND_NFC_SERVICE <https://developer.android.com/reference/android/Manifest.permission#BIND_NFC_SERVICE>`__\ 。
+Must be required by a HostApduService or OffHostApduService to ensure that only the system can bind to it. See `BIND_NFC_SERVICE <https://developer.android.com/reference/android/Manifest.permission#BIND_NFC_SERVICE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1185,7 +1185,7 @@ HostApduService 或 OffHostApduService 必須要求此許可權，確保只能�
 
 :ref:`bool<class_bool>` **permissions/bind_notification_listener_service** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/bind_notification_listener_service>`
 
-NotificationListenerService 必須要求此許可權，確保只能系統能夠進行綁定。見 `BIND_NOTIFICATION_LISTENER_SERVICE <https://developer.android.com/reference/android/Manifest.permission#BIND_NOTIFICATION_LISTENER_SERVICE>`__\ 。
+Must be required by a NotificationListenerService, to ensure that only the system can bind to it. See `BIND_NOTIFICATION_LISTENER_SERVICE <https://developer.android.com/reference/android/Manifest.permission#BIND_NOTIFICATION_LISTENER_SERVICE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1197,7 +1197,7 @@ NotificationListenerService 必須要求此許可權，確保只能系統能夠�
 
 :ref:`bool<class_bool>` **permissions/bind_print_service** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/bind_print_service>`
 
-PrintService 必須要求此許可權，確保只能系統能夠進行綁定。見 `BIND_PRINT_SERVICE <https://developer.android.com/reference/android/Manifest.permission#BIND_PRINT_SERVICE>`__\ 。
+Must be required by a PrintService, to ensure that only the system can bind to it. See `BIND_PRINT_SERVICE <https://developer.android.com/reference/android/Manifest.permission#BIND_PRINT_SERVICE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1209,7 +1209,7 @@ PrintService 必須要求此許可權，確保只能系統能夠進行綁定。�
 
 :ref:`bool<class_bool>` **permissions/bind_remoteviews** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/bind_remoteviews>`
 
-RemoteViewsService 必須要求此許可權，確保只能系統能夠進行綁定。見 `BIND_REMOTEVIEWS <https://developer.android.com/reference/android/Manifest.permission#BIND_REMOTEVIEWS>`__\ 。
+Must be required by a RemoteViewsService, to ensure that only the system can bind to it. See `BIND_REMOTEVIEWS <https://developer.android.com/reference/android/Manifest.permission#BIND_REMOTEVIEWS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1221,7 +1221,7 @@ RemoteViewsService 必須要求此許可權，確保只能系統能夠進行綁�
 
 :ref:`bool<class_bool>` **permissions/bind_text_service** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/bind_text_service>`
 
-TextService（例如 SpellCheckerService）必須要求此許可權，確保只能系統能夠進行綁定。見 `BIND_TEXT_SERVICE <https://developer.android.com/reference/android/Manifest.permission#BIND_TEXT_SERVICE>`__\ 。
+Must be required by a TextService (e.g. SpellCheckerService) to ensure that only the system can bind to it. See `BIND_TEXT_SERVICE <https://developer.android.com/reference/android/Manifest.permission#BIND_TEXT_SERVICE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1233,7 +1233,7 @@ TextService（例如 SpellCheckerService）必須要求此許可權，確保只�
 
 :ref:`bool<class_bool>` **permissions/bind_vpn_service** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/bind_vpn_service>`
 
-VpnService 必須要求此許可權，確保只能系統能夠進行綁定。見 `BIND_VPN_SERVICE <https://developer.android.com/reference/android/Manifest.permission#BIND_VPN_SERVICE>`__\ 。
+Must be required by a VpnService, to ensure that only the system can bind to it. See `BIND_VPN_SERVICE <https://developer.android.com/reference/android/Manifest.permission#BIND_VPN_SERVICE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1245,7 +1245,7 @@ VpnService 必須要求此許可權，確保只能系統能夠進行綁定。見
 
 :ref:`bool<class_bool>` **permissions/bind_wallpaper** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/bind_wallpaper>`
 
-WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定。見 `BIND_WALLPAPER <https://developer.android.com/reference/android/Manifest.permission#BIND_WALLPAPER>`__\ 。
+Must be required by a WallpaperService, to ensure that only the system can bind to it. See `BIND_WALLPAPER <https://developer.android.com/reference/android/Manifest.permission#BIND_WALLPAPER>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1257,7 +1257,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/bluetooth** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/bluetooth>`
 
-允許套用程式連接到配對的藍牙裝置。見 `BLUETOOTH <https://developer.android.com/reference/android/Manifest.permission#BLUETOOTH>`__\ 。
+Allows applications to connect to paired bluetooth devices. See `BLUETOOTH <https://developer.android.com/reference/android/Manifest.permission#BLUETOOTH>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1269,7 +1269,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/bluetooth_admin** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/bluetooth_admin>`
 
-允許套用程式發現並配對藍牙裝置。見 `BLUETOOTH_ADMIN <https://developer.android.com/reference/android/Manifest.permission#BLUETOOTH_ADMIN>`__\ 。
+Allows applications to discover and pair bluetooth devices. See `BLUETOOTH_ADMIN <https://developer.android.com/reference/android/Manifest.permission#BLUETOOTH_ADMIN>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1281,7 +1281,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/bluetooth_privileged** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/bluetooth_privileged>`
 
-允許套用程式在無需使用者互動的情況下配對藍牙裝置，並允許或禁止存取電話簿或消息。見 `BLUETOOTH_PRIVILEGED <https://developer.android.com/reference/android/Manifest.permission#BLUETOOTH_PRIVILEGED>`__\ 。
+Allows applications to pair bluetooth devices without user interaction, and to allow or disallow phonebook access or message access. See `BLUETOOTH_PRIVILEGED <https://developer.android.com/reference/android/Manifest.permission#BLUETOOTH_PRIVILEGED>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1293,7 +1293,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/brick** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/brick>`
 
-能夠禁用該裝置（非常危險！）必須要求此許可權。
+Required to be able to disable the device (very dangerous!).
 
 .. rst-class:: classref-item-separator
 
@@ -1305,7 +1305,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/broadcast_package_removed** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/broadcast_package_removed>`
 
-允許套用程式廣播套用套裝程式已被刪除的通知。見 `BROADCAST_PACKAGE_REMOVED <https://developer.android.com/reference/android/Manifest.permission#BROADCAST_PACKAGE_REMOVED>`__\ 。
+Allows an application to broadcast a notification that an application package has been removed. See `BROADCAST_PACKAGE_REMOVED <https://developer.android.com/reference/android/Manifest.permission#BROADCAST_PACKAGE_REMOVED>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1317,7 +1317,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/broadcast_sms** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/broadcast_sms>`
 
-允許套用程式廣播短信接收通知。見 `BROADCAST_SMS <https://developer.android.com/reference/android/Manifest.permission#BROADCAST_SMS>`__\ 。
+Allows an application to broadcast an SMS receipt notification. See `BROADCAST_SMS <https://developer.android.com/reference/android/Manifest.permission#BROADCAST_SMS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1329,7 +1329,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/broadcast_sticky** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/broadcast_sticky>`
 
-允許套用程式廣播粘性意圖。見 `BROADCAST_STICKY <https://developer.android.com/reference/android/Manifest.permission#BROADCAST_STICKY>`__\ 。
+Allows an application to broadcast sticky intents. See `BROADCAST_STICKY <https://developer.android.com/reference/android/Manifest.permission#BROADCAST_STICKY>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1341,7 +1341,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/broadcast_wap_push** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/broadcast_wap_push>`
 
-允許套用程式廣播 WAP PUSH 回條通知。見 `BROADCAST_WAP_PUSH <https://developer.android.com/reference/android/Manifest.permission#BROADCAST_WAP_PUSH>`__\ 。
+Allows an application to broadcast a WAP PUSH receipt notification. See `BROADCAST_WAP_PUSH <https://developer.android.com/reference/android/Manifest.permission#BROADCAST_WAP_PUSH>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1353,7 +1353,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/call_phone** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/call_phone>`
 
-允許套用程式無需通過撥號器使用者介面即可發起電話呼叫。見 `CALL_PHONE <https://developer.android.com/reference/android/Manifest.permission#CALL_PHONE>`__\ 。
+Allows an application to initiate a phone call without going through the Dialer user interface. See `CALL_PHONE <https://developer.android.com/reference/android/Manifest.permission#CALL_PHONE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1365,7 +1365,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/call_privileged** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/call_privileged>`
 
-允許套用程式無需通過撥號器使用者介面，即可撥打任意電話號碼，包括緊急號碼。見 `CALL_PRIVILEGED <https://developer.android.com/reference/android/Manifest.permission#CALL_PRIVILEGED>`__\ 。
+Allows an application to call any phone number, including emergency numbers, without going through the Dialer user interface. See `CALL_PRIVILEGED <https://developer.android.com/reference/android/Manifest.permission#CALL_PRIVILEGED>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1377,7 +1377,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/camera** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/camera>`
 
-能夠存取相機裝置必須要求此許可權。見 `CAMERA <https://developer.android.com/reference/android/Manifest.permission#CAMERA>`__\ 。
+Required to be able to access the camera device. See `CAMERA <https://developer.android.com/reference/android/Manifest.permission#CAMERA>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1389,7 +1389,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/capture_audio_output** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/capture_audio_output>`
 
-允許套用程式捕獲音訊輸出。見 `CAPTURE_AUDIO_OUTPUT <https://developer.android.com/reference/android/Manifest.permission#CAPTURE_AUDIO_OUTPUT>`__\ 。
+Allows an application to capture audio output. See `CAPTURE_AUDIO_OUTPUT <https://developer.android.com/reference/android/Manifest.permission#CAPTURE_AUDIO_OUTPUT>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1401,7 +1401,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/capture_secure_video_output** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/capture_secure_video_output>`
 
-允許套用程式捕獲安全的影片輸出。
+Allows an application to capture secure video output.
 
 .. rst-class:: classref-item-separator
 
@@ -1413,7 +1413,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/capture_video_output** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/capture_video_output>`
 
-允許套用程式捕獲影片輸出。
+Allows an application to capture video output.
 
 .. rst-class:: classref-item-separator
 
@@ -1425,7 +1425,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/change_component_enabled_state** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/change_component_enabled_state>`
 
-允許套用程式更改是否啟用套用程式元件（除了它自己的元件）。見 `CHANGE_COMPONENT_ENABLED_STATE <https://developer.android.com/reference/android/Manifest.permission#CHANGE_COMPONENT_ENABLED_STATE>`__\ 。
+Allows an application to change whether an application component (other than its own) is enabled or not. See `CHANGE_COMPONENT_ENABLED_STATE <https://developer.android.com/reference/android/Manifest.permission#CHANGE_COMPONENT_ENABLED_STATE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1437,7 +1437,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/change_configuration** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/change_configuration>`
 
-允許套用程式修改目前配置，例如區域設定。見 `CHANGE_CONFIGURATION <https://developer.android.com/reference/android/Manifest.permission#CHANGE_CONFIGURATION>`__\ 。
+Allows an application to modify the current configuration, such as locale. See `CHANGE_CONFIGURATION <https://developer.android.com/reference/android/Manifest.permission#CHANGE_CONFIGURATION>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1449,7 +1449,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/change_network_state** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/change_network_state>`
 
-允許套用程式更改網路連接狀態。見 `CHANGE_NETWORK_STATE <https://developer.android.com/reference/android/Manifest.permission#CHANGE_NETWORK_STATE>`__\ 。
+Allows applications to change network connectivity state. See `CHANGE_NETWORK_STATE <https://developer.android.com/reference/android/Manifest.permission#CHANGE_NETWORK_STATE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1461,7 +1461,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/change_wifi_multicast_state** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/change_wifi_multicast_state>`
 
-允許套用程式進入 Wi-Fi 多播模式。見 `CHANGE_WIFI_MULTICAST_STATE <https://developer.android.com/reference/android/Manifest.permission#CHANGE_WIFI_MULTICAST_STATE>`__\ 。
+Allows applications to enter Wi-Fi Multicast mode. See `CHANGE_WIFI_MULTICAST_STATE <https://developer.android.com/reference/android/Manifest.permission#CHANGE_WIFI_MULTICAST_STATE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1473,7 +1473,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/change_wifi_state** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/change_wifi_state>`
 
-允許套用程式更改 Wi-Fi 連接狀態。見 `CHANGE_WIFI_STATE <https://developer.android.com/reference/android/Manifest.permission#CHANGE_WIFI_STATE>`__\ 。
+Allows applications to change Wi-Fi connectivity state. See `CHANGE_WIFI_STATE <https://developer.android.com/reference/android/Manifest.permission#CHANGE_WIFI_STATE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1485,7 +1485,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/clear_app_cache** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/clear_app_cache>`
 
-允許套用程式清除裝置上所有已安裝套用程式的快取。見 `CLEAR_APP_CACHE <https://developer.android.com/reference/android/Manifest.permission#CLEAR_APP_CACHE>`__\ 。
+Allows an application to clear the caches of all installed applications on the device. See `CLEAR_APP_CACHE <https://developer.android.com/reference/android/Manifest.permission#CLEAR_APP_CACHE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1497,7 +1497,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/clear_app_user_data** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/clear_app_user_data>`
 
-允許套用程式清除使用者資料。
+Allows an application to clear user data.
 
 .. rst-class:: classref-item-separator
 
@@ -1509,7 +1509,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/control_location_updates** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/control_location_updates>`
 
-允許啟用/禁用無線電的位置更新通知。見 `CONTROL_LOCATION_UPDATES <https://developer.android.com/reference/android/Manifest.permission#CONTROL_LOCATION_UPDATES>`__\ 。
+Allows enabling/disabling location update notifications from the radio. See `CONTROL_LOCATION_UPDATES <https://developer.android.com/reference/android/Manifest.permission#CONTROL_LOCATION_UPDATES>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1521,7 +1521,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`PackedStringArray<class_PackedStringArray>` **permissions/custom_permissions** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/custom_permissions>`
 
-自訂許可權字串陣列。
+Array of custom permission strings.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -1535,7 +1535,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/delete_cache_files** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/delete_cache_files>`
 
-**已棄用：** 此屬性可能在未來版本中變更或移除。
+**Deprecated:** This property may be changed or removed in future versions.
 
 .. rst-class:: classref-item-separator
 
@@ -1547,7 +1547,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/delete_packages** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/delete_packages>`
 
-允許套用程式刪除包。見 `DELETE_PACKAGES <https://developer.android.com/reference/android/Manifest.permission#DELETE_PACKAGES>`__\ 。
+Allows an application to delete packages. See `DELETE_PACKAGES <https://developer.android.com/reference/android/Manifest.permission#DELETE_PACKAGES>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1559,7 +1559,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/device_power** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/device_power>`
 
-允許對電源管理進行低級存取。
+Allows low-level access to power management.
 
 .. rst-class:: classref-item-separator
 
@@ -1571,7 +1571,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/diagnostic** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/diagnostic>`
 
-允許套用程式讀寫診斷資源。見 `DIAGNOSTIC <https://developer.android.com/reference/android/Manifest.permission#DIAGNOSTIC>`__\ 。
+Allows applications to RW to diagnostic resources. See `DIAGNOSTIC <https://developer.android.com/reference/android/Manifest.permission#DIAGNOSTIC>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1583,7 +1583,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/disable_keyguard** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/disable_keyguard>`
 
-如果鍵盤保護不安全，則允許套用程式禁用它。見 `DISABLE_KEYGUARD <https://developer.android.com/reference/android/Manifest.permission#DISABLE_KEYGUARD>`__\ 。
+Allows applications to disable the keyguard if it is not secure. See `DISABLE_KEYGUARD <https://developer.android.com/reference/android/Manifest.permission#DISABLE_KEYGUARD>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1595,7 +1595,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/dump** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/dump>`
 
-允許套用程式從系統服務檢索狀態轉儲資訊。見 `DUMP <https://developer.android.com/reference/android/Manifest.permission#DUMP>`__\ 。
+Allows an application to retrieve state dump information from system services. See `DUMP <https://developer.android.com/reference/android/Manifest.permission#DUMP>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1607,7 +1607,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/expand_status_bar** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/expand_status_bar>`
 
-允許套用程式展開或折疊狀態列。見 `EXPAND_STATUS_BAR <https://developer.android.com/reference/android/Manifest.permission#EXPAND_STATUS_BAR>`__\ 。
+Allows an application to expand or collapse the status bar. See `EXPAND_STATUS_BAR <https://developer.android.com/reference/android/Manifest.permission#EXPAND_STATUS_BAR>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1619,7 +1619,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/factory_test** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/factory_test>`
 
-作為製造商測試套用程式運作，以 root 使用者身份運作。見 `FACTORY_TEST <https://developer.android.com/reference/android/Manifest.permission#FACTORY_TEST>`__\ 。
+Run as a manufacturer test application, running as the root user. See `FACTORY_TEST <https://developer.android.com/reference/android/Manifest.permission#FACTORY_TEST>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1631,7 +1631,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/flashlight** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/flashlight>`
 
-允許存取手電筒。
+Allows access to the flashlight.
 
 .. rst-class:: classref-item-separator
 
@@ -1643,7 +1643,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/force_back** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/force_back>`
 
-允許套用程式對任何頂部 activity 強制執行 BACK 操作。
+Allows an application to force a BACK operation on whatever is the top activity.
 
 .. rst-class:: classref-item-separator
 
@@ -1655,7 +1655,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/get_accounts** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/get_accounts>`
 
-允許存取帳戶服務中的帳戶列表。見 `GET_ACCOUNTS <https://developer.android.com/reference/android/Manifest.permission#GET_ACCOUNTS>`__\ 。
+Allows access to the list of accounts in the Accounts Service. See `GET_ACCOUNTS <https://developer.android.com/reference/android/Manifest.permission#GET_ACCOUNTS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1667,7 +1667,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/get_package_size** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/get_package_size>`
 
-允許套用程式找出任何包所使用的空間。見 `GET_PACKAGE_SIZE <https://developer.android.com/reference/android/Manifest.permission#GET_PACKAGE_SIZE>`__\ 。
+Allows an application to find out the space used by any package. See `GET_PACKAGE_SIZE <https://developer.android.com/reference/android/Manifest.permission#GET_PACKAGE_SIZE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1679,7 +1679,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/get_tasks** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/get_tasks>`
 
-**已棄用：** Deprecated in API level 21.
+**Deprecated:** Deprecated in API level 21.
 
 .. rst-class:: classref-item-separator
 
@@ -1691,7 +1691,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/get_top_activity_info** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/get_top_activity_info>`
 
-允許套用程式檢索有關目前頂部 activity 的私有資訊。
+Allows an application to retrieve private information about the current top activity.
 
 .. rst-class:: classref-item-separator
 
@@ -1703,7 +1703,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/global_search** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/global_search>`
 
-用於內容提供者，以允許全域搜索系統存取其資料。見 `GLOBAL_SEARCH <https://developer.android.com/reference/android/Manifest.permission#GLOBAL_SEARCH>`__\ 。
+Used on content providers to allow the global search system to access their data. See `GLOBAL_SEARCH <https://developer.android.com/reference/android/Manifest.permission#GLOBAL_SEARCH>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1715,7 +1715,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/hardware_test** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/hardware_test>`
 
-允許存取硬體週邊裝置。
+Allows access to hardware peripherals.
 
 .. rst-class:: classref-item-separator
 
@@ -1727,7 +1727,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/inject_events** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/inject_events>`
 
-允許套用程式將使用者事件（按鍵、觸摸、軌跡球）注入事件流並將它們傳遞到任意窗口。
+Allows an application to inject user events (keys, touch, trackball) into the event stream and deliver them to ANY window.
 
 .. rst-class:: classref-item-separator
 
@@ -1739,7 +1739,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/install_location_provider** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/install_location_provider>`
 
-允許套用程式將位置提供程式安裝到位置管理器中。見 `INSTALL_LOCATION_PROVIDER <https://developer.android.com/reference/android/Manifest.permission#INSTALL_LOCATION_PROVIDER>`__\ 。
+Allows an application to install a location provider into the Location Manager. See `INSTALL_LOCATION_PROVIDER <https://developer.android.com/reference/android/Manifest.permission#INSTALL_LOCATION_PROVIDER>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1751,7 +1751,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/install_packages** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/install_packages>`
 
-允許套用程式安裝套裝軟體。見 `INSTALL_PACKAGES <https://developer.android.com/reference/android/Manifest.permission#INSTALL_PACKAGES>`__\ 。
+Allows an application to install packages. See `INSTALL_PACKAGES <https://developer.android.com/reference/android/Manifest.permission#INSTALL_PACKAGES>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1763,7 +1763,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/install_shortcut** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/install_shortcut>`
 
-允許套用程式在啟動器中安裝快捷方式。見 `INSTALL_SHORTCUT <https://developer.android.com/reference/android/Manifest.permission#INSTALL_SHORTCUT>`__\ 。
+Allows an application to install a shortcut in Launcher. See `INSTALL_SHORTCUT <https://developer.android.com/reference/android/Manifest.permission#INSTALL_SHORTCUT>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1775,7 +1775,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/internal_system_window** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/internal_system_window>`
 
-允許套用程式打開供系統使用者介面部分使用的視窗。
+Allows an application to open windows that are for use by parts of the system user interface.
 
 .. rst-class:: classref-item-separator
 
@@ -1787,7 +1787,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/internet** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/internet>`
 
-允許套用程式打開網路通訊端。見 `INTERNET <https://developer.android.com/reference/android/Manifest.permission#INTERNET>`__\ 。
+Allows applications to open network sockets. See `INTERNET <https://developer.android.com/reference/android/Manifest.permission#INTERNET>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1799,7 +1799,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/kill_background_processes** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/kill_background_processes>`
 
-允許套用程式呼叫 ActivityManager.killBackgroundProcesses(String)。見 `KILL_BACKGROUND_PROCESSES <https://developer.android.com/reference/android/Manifest.permission#KILL_BACKGROUND_PROCESSES>`__\ 。
+Allows an application to call ActivityManager.killBackgroundProcesses(String). See `KILL_BACKGROUND_PROCESSES <https://developer.android.com/reference/android/Manifest.permission#KILL_BACKGROUND_PROCESSES>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1811,7 +1811,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/location_hardware** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/location_hardware>`
 
-允許套用程式使用硬體中的位置功能，例如地理圍欄 API。見 `LOCATION_HARDWARE <https://developer.android.com/reference/android/Manifest.permission#LOCATION_HARDWARE>`__\ 。
+Allows an application to use location features in hardware, such as the geofencing api. See `LOCATION_HARDWARE <https://developer.android.com/reference/android/Manifest.permission#LOCATION_HARDWARE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1823,7 +1823,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/manage_accounts** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/manage_accounts>`
 
-允許套用程式管理 AccountManager 中的帳戶列表。
+Allows an application to manage the list of accounts in the AccountManager.
 
 .. rst-class:: classref-item-separator
 
@@ -1835,7 +1835,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/manage_app_tokens** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/manage_app_tokens>`
 
-允許套用程式在視窗管理器中管理（建立、銷毀、Z 排序）套用程式權杖。
+Allows an application to manage (create, destroy, Z-order) application tokens in the window manager.
 
 .. rst-class:: classref-item-separator
 
@@ -1847,7 +1847,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/manage_documents** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/manage_documents>`
 
-允許套用程式管理對文件的存取，通常作為文件選擇器的一部分。見 `MANAGE_DOCUMENTS <https://developer.android.com/reference/android/Manifest.permission#MANAGE_DOCUMENTS>`__\ 。
+Allows an application to manage access to documents, usually as part of a document picker. See `MANAGE_DOCUMENTS <https://developer.android.com/reference/android/Manifest.permission#MANAGE_DOCUMENTS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1859,7 +1859,7 @@ WallpaperService 必須要求此許可權，確保只能系統能夠進行綁定
 
 :ref:`bool<class_bool>` **permissions/manage_external_storage** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/manage_external_storage>`
 
-允許套用程式廣泛存取範圍儲存中的外部儲存。見 `MANAGE_EXTERNAL_STORAGE <https://developer.android.com/reference/android/Manifest.permission#MANAGE_EXTERNAL_STORAGE>`__\ 。
+Allows an application a broad access to external storage in scoped storage. See `MANAGE_EXTERNAL_STORAGE <https://developer.android.com/reference/android/Manifest.permission#MANAGE_EXTERNAL_STORAGE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1883,7 +1883,7 @@ Allows an application to modify and delete media files on this device or any con
 
 :ref:`bool<class_bool>` **permissions/master_clear** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/master_clear>`
 
-見 `MASTER_CLEAR <https://developer.android.com/reference/android/Manifest.permission#MASTER_CLEAR>`__\ 。
+See `MASTER_CLEAR <https://developer.android.com/reference/android/Manifest.permission#MASTER_CLEAR>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1895,7 +1895,7 @@ Allows an application to modify and delete media files on this device or any con
 
 :ref:`bool<class_bool>` **permissions/media_content_control** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/media_content_control>`
 
-允許套用程式瞭解正在播放的內容並控制其播放。見 `MEDIA_CONTENT_CONTROL <https://developer.android.com/reference/android/Manifest.permission#MEDIA_CONTENT_CONTROL>`__\ 。
+Allows an application to know what content is playing and control its playback. See `MEDIA_CONTENT_CONTROL <https://developer.android.com/reference/android/Manifest.permission#MEDIA_CONTENT_CONTROL>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1907,7 +1907,7 @@ Allows an application to modify and delete media files on this device or any con
 
 :ref:`bool<class_bool>` **permissions/modify_audio_settings** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/modify_audio_settings>`
 
-允許套用程式修改全域音訊設定。見 `MODIFY_AUDIO_SETTINGS <https://developer.android.com/reference/android/Manifest.permission#MODIFY_AUDIO_SETTINGS>`__\ 。
+Allows an application to modify global audio settings. See `MODIFY_AUDIO_SETTINGS <https://developer.android.com/reference/android/Manifest.permission#MODIFY_AUDIO_SETTINGS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1919,7 +1919,7 @@ Allows an application to modify and delete media files on this device or any con
 
 :ref:`bool<class_bool>` **permissions/modify_phone_state** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/modify_phone_state>`
 
-允許修改電話狀態 - 開機、mmi 等。不包括撥打電話。見 `MODIFY_PHONE_STATE <https://developer.android.com/reference/android/Manifest.permission#MODIFY_PHONE_STATE>`__\ 。
+Allows modification of the telephony state - power on, mmi, etc. Does not include placing calls. See `MODIFY_PHONE_STATE <https://developer.android.com/reference/android/Manifest.permission#MODIFY_PHONE_STATE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1931,7 +1931,7 @@ Allows an application to modify and delete media files on this device or any con
 
 :ref:`bool<class_bool>` **permissions/mount_format_filesystems** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/mount_format_filesystems>`
 
-允許格式化卸除式存放裝置的檔案系統。見 `MOUNT_FORMAT_FILESYSTEMS <https://developer.android.com/reference/android/Manifest.permission#MOUNT_FORMAT_FILESYSTEMS>`__\ 。
+Allows formatting file systems for removable storage. See `MOUNT_FORMAT_FILESYSTEMS <https://developer.android.com/reference/android/Manifest.permission#MOUNT_FORMAT_FILESYSTEMS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1943,7 +1943,7 @@ Allows an application to modify and delete media files on this device or any con
 
 :ref:`bool<class_bool>` **permissions/mount_unmount_filesystems** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/mount_unmount_filesystems>`
 
-允許掛載和解除安裝卸除式存放裝置的檔案系統。見 `MOUNT_UNMOUNT_FILESYSTEMS <https://developer.android.com/reference/android/Manifest.permission#MOUNT_UNMOUNT_FILESYSTEMS>`__\ 。
+Allows mounting and unmounting file systems for removable storage. See `MOUNT_UNMOUNT_FILESYSTEMS <https://developer.android.com/reference/android/Manifest.permission#MOUNT_UNMOUNT_FILESYSTEMS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1955,7 +1955,7 @@ Allows an application to modify and delete media files on this device or any con
 
 :ref:`bool<class_bool>` **permissions/nfc** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/nfc>`
 
-允許套用程式通過 NFC 執行 I/O 操作。見 `NFC <https://developer.android.com/reference/android/Manifest.permission#NFC>`__\ 。
+Allows applications to perform I/O operations over NFC. See `NFC <https://developer.android.com/reference/android/Manifest.permission#NFC>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1967,7 +1967,7 @@ Allows an application to modify and delete media files on this device or any con
 
 :ref:`bool<class_bool>` **permissions/persistent_activity** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/persistent_activity>`
 
-**已棄用：** Deprecated in API level 15.
+**Deprecated:** Deprecated in API level 15.
 
 Allows an application to make its activities persistent.
 
@@ -1993,7 +1993,7 @@ Allows an application to post notifications. Added in API level 33. See `Notific
 
 :ref:`bool<class_bool>` **permissions/process_outgoing_calls** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/process_outgoing_calls>`
 
-**已棄用：** Deprecated in API level 29.
+**Deprecated:** Deprecated in API level 29.
 
 Allows an application to see the number being dialed during an outgoing call with the option to redirect the call to a different number or abort the call altogether. See `PROCESS_OUTGOING_CALLS <https://developer.android.com/reference/android/Manifest.permission#PROCESS_OUTGOING_CALLS>`__.
 
@@ -2007,7 +2007,7 @@ Allows an application to see the number being dialed during an outgoing call wit
 
 :ref:`bool<class_bool>` **permissions/read_calendar** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_calendar>`
 
-允許套用程式讀取使用者的日曆資料。見 `READ_CALENDAR <https://developer.android.com/reference/android/Manifest.permission#READ_CALENDAR>`__\ 。
+Allows an application to read the user's calendar data. See `READ_CALENDAR <https://developer.android.com/reference/android/Manifest.permission#READ_CALENDAR>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2019,7 +2019,7 @@ Allows an application to see the number being dialed during an outgoing call wit
 
 :ref:`bool<class_bool>` **permissions/read_call_log** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_call_log>`
 
-允許套用程式讀取使用者的通話記錄。見 `READ_CALL_LOG <https://developer.android.com/reference/android/Manifest.permission#READ_CALL_LOG>`__\ 。
+Allows an application to read the user's call log. See `READ_CALL_LOG <https://developer.android.com/reference/android/Manifest.permission#READ_CALL_LOG>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2031,7 +2031,7 @@ Allows an application to see the number being dialed during an outgoing call wit
 
 :ref:`bool<class_bool>` **permissions/read_contacts** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_contacts>`
 
-允許套用程式讀取使用者的連路人資料。見 `READ_CONTACTS <https://developer.android.com/reference/android/Manifest.permission#READ_CONTACTS>`__\ 。
+Allows an application to read the user's contacts data. See `READ_CONTACTS <https://developer.android.com/reference/android/Manifest.permission#READ_CONTACTS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2043,7 +2043,7 @@ Allows an application to see the number being dialed during an outgoing call wit
 
 :ref:`bool<class_bool>` **permissions/read_external_storage** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_external_storage>`
 
-**已棄用：** Deprecated in API level 33.
+**Deprecated:** Deprecated in API level 33.
 
 Allows an application to read from external storage. See `READ_EXTERNAL_STORAGE <https://developer.android.com/reference/android/Manifest.permission#READ_EXTERNAL_STORAGE>`__.
 
@@ -2057,7 +2057,7 @@ Allows an application to read from external storage. See `READ_EXTERNAL_STORAGE 
 
 :ref:`bool<class_bool>` **permissions/read_frame_buffer** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_frame_buffer>`
 
-允許套用程式截取螢幕截圖，並且更常見的是存取框架緩衝區資料。
+Allows an application to take screen shots and more generally get access to the frame buffer data.
 
 .. rst-class:: classref-item-separator
 
@@ -2069,7 +2069,7 @@ Allows an application to read from external storage. See `READ_EXTERNAL_STORAGE 
 
 :ref:`bool<class_bool>` **permissions/read_history_bookmarks** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_history_bookmarks>`
 
-允許套用程式讀取（但不能寫入）使用者的流覽歷史記錄和書簽。
+Allows an application to read (but not write) the user's browsing history and bookmarks.
 
 .. rst-class:: classref-item-separator
 
@@ -2081,7 +2081,7 @@ Allows an application to read from external storage. See `READ_EXTERNAL_STORAGE 
 
 :ref:`bool<class_bool>` **permissions/read_input_state** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_input_state>`
 
-**已棄用：** Deprecated in API level 16.
+**Deprecated:** Deprecated in API level 16.
 
 .. rst-class:: classref-item-separator
 
@@ -2093,7 +2093,7 @@ Allows an application to read from external storage. See `READ_EXTERNAL_STORAGE 
 
 :ref:`bool<class_bool>` **permissions/read_logs** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_logs>`
 
-允許套用程式讀取低級系統紀錄檔。見 `READ_LOGS <https://developer.android.com/reference/android/Manifest.permission#READ_LOGS>`__\ 。
+Allows an application to read the low-level system log files. See `READ_LOGS <https://developer.android.com/reference/android/Manifest.permission#READ_LOGS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2153,7 +2153,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/read_phone_state** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_phone_state>`
 
-允許對電話狀態進行唯讀存取。見 `READ_PHONE_STATE <https://developer.android.com/reference/android/Manifest.permission#READ_PHONE_STATE>`__\ 。
+Allows read only access to phone state. See `READ_PHONE_STATE <https://developer.android.com/reference/android/Manifest.permission#READ_PHONE_STATE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2165,7 +2165,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/read_profile** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_profile>`
 
-允許套用程式讀取使用者的個人設定檔資料。
+Allows an application to read the user's personal profile data.
 
 .. rst-class:: classref-item-separator
 
@@ -2177,7 +2177,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/read_sms** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_sms>`
 
-允許套用程式讀取 SMS 消息。見 `READ_SMS <https://developer.android.com/reference/android/Manifest.permission#READ_SMS>`__\ 。
+Allows an application to read SMS messages. See `READ_SMS <https://developer.android.com/reference/android/Manifest.permission#READ_SMS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2189,7 +2189,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/read_social_stream** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_social_stream>`
 
-允許套用程式讀取使用者的社交流。
+Allows an application to read from the user's social stream.
 
 .. rst-class:: classref-item-separator
 
@@ -2201,7 +2201,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/read_sync_settings** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_sync_settings>`
 
-允許套用程式讀取同步設定。見 `READ_SYNC_SETTINGS <https://developer.android.com/reference/android/Manifest.permission#READ_SYNC_SETTINGS>`__\ 。
+Allows applications to read the sync settings. See `READ_SYNC_SETTINGS <https://developer.android.com/reference/android/Manifest.permission#READ_SYNC_SETTINGS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2213,7 +2213,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/read_sync_stats** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_sync_stats>`
 
-允許套用程式讀取同步統計資訊。見 `READ_SYNC_STATS <https://developer.android.com/reference/android/Manifest.permission#READ_SYNC_STATS>`__\ 。
+Allows applications to read the sync stats. See `READ_SYNC_STATS <https://developer.android.com/reference/android/Manifest.permission#READ_SYNC_STATS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2225,7 +2225,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/read_user_dictionary** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_user_dictionary>`
 
-允許套用程式讀取使用者詞典。
+Allows an application to read the user dictionary.
 
 .. rst-class:: classref-item-separator
 
@@ -2237,7 +2237,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/reboot** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/reboot>`
 
-能夠重新開機裝置必須要求此許可權。見 `REBOOT <https://developer.android.com/reference/android/Manifest.permission#REBOOT>`__\ 。
+Required to be able to reboot the device. See `REBOOT <https://developer.android.com/reference/android/Manifest.permission#REBOOT>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2249,7 +2249,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/receive_boot_completed** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/receive_boot_completed>`
 
-允許套用程式接收系統啟動完成後廣播的 Intent.ACTION_BOOT_COMPLETED。見 `RECEIVE_BOOT_COMPLETED <https://developer.android.com/reference/android/Manifest.permission#RECEIVE_BOOT_COMPLETED>`__\ 。
+Allows an application to receive the Intent.ACTION_BOOT_COMPLETED that is broadcast after the system finishes booting. See `RECEIVE_BOOT_COMPLETED <https://developer.android.com/reference/android/Manifest.permission#RECEIVE_BOOT_COMPLETED>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2261,7 +2261,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/receive_mms** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/receive_mms>`
 
-允許套用程式監聽收到的 MMS 消息。見 `RECEIVE_MMS <https://developer.android.com/reference/android/Manifest.permission#RECEIVE_MMS>`__\ 。
+Allows an application to monitor incoming MMS messages. See `RECEIVE_MMS <https://developer.android.com/reference/android/Manifest.permission#RECEIVE_MMS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2273,7 +2273,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/receive_sms** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/receive_sms>`
 
-允許套用程式接收短信。見 `RECEIVE_SMS <https://developer.android.com/reference/android/Manifest.permission#RECEIVE_SMS>`__\ 。
+Allows an application to receive SMS messages. See `RECEIVE_SMS <https://developer.android.com/reference/android/Manifest.permission#RECEIVE_SMS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2285,7 +2285,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/receive_wap_push** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/receive_wap_push>`
 
-允許套用程式接收 WAP 推送消息。見 `RECEIVE_WAP_PUSH <https://developer.android.com/reference/android/Manifest.permission#RECEIVE_WAP_PUSH>`__\ 。
+Allows an application to receive WAP push messages. See `RECEIVE_WAP_PUSH <https://developer.android.com/reference/android/Manifest.permission#RECEIVE_WAP_PUSH>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2297,7 +2297,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/record_audio** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/record_audio>`
 
-允許套用程式錄音。見 `RECORD_AUDIO <https://developer.android.com/reference/android/Manifest.permission#RECORD_AUDIO>`__\ 。
+Allows an application to record audio. See `RECORD_AUDIO <https://developer.android.com/reference/android/Manifest.permission#RECORD_AUDIO>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2309,7 +2309,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/reorder_tasks** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/reorder_tasks>`
 
-允許套用程式對工作的 Z 順序進行修改。見 `REORDER_TASKS <https://developer.android.com/reference/android/Manifest.permission#REORDER_TASKS>`__\ 。
+Allows an application to change the Z-order of tasks. See `REORDER_TASKS <https://developer.android.com/reference/android/Manifest.permission#REORDER_TASKS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2321,7 +2321,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/restart_packages** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/restart_packages>`
 
-**已棄用：** Deprecated in API level 15.
+**Deprecated:** Deprecated in API level 15.
 
 .. rst-class:: classref-item-separator
 
@@ -2333,7 +2333,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/send_respond_via_message** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/send_respond_via_message>`
 
-允許套用程式（手機）在接聽電話時向其他套用程式發送對“通過短信回復”動作的處理請求。見 `SEND_RESPOND_VIA_MESSAGE <https://developer.android.com/reference/android/Manifest.permission#SEND_RESPOND_VIA_MESSAGE>`__\ 。
+Allows an application (Phone) to send a request to other applications to handle the respond-via-message action during incoming calls. See `SEND_RESPOND_VIA_MESSAGE <https://developer.android.com/reference/android/Manifest.permission#SEND_RESPOND_VIA_MESSAGE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2345,7 +2345,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/send_sms** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/send_sms>`
 
-允許套用程式發送短信。見 `SEND_SMS <https://developer.android.com/reference/android/Manifest.permission#SEND_SMS>`__\ 。
+Allows an application to send SMS messages. See `SEND_SMS <https://developer.android.com/reference/android/Manifest.permission#SEND_SMS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2357,7 +2357,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/set_activity_watcher** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/set_activity_watcher>`
 
-允許套用程式對系統如何啟動 Activity 進行全域監聽和控制。
+Allows an application to watch and control how activities are started globally in the system.
 
 .. rst-class:: classref-item-separator
 
@@ -2369,7 +2369,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/set_alarm** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/set_alarm>`
 
-允許套用程式對設定使用者鬧鐘的 Intent 進行廣播。見 `SET_ALARM <https://developer.android.com/reference/android/Manifest.permission#SET_ALARM>`__\ 。
+Allows an application to broadcast an Intent to set an alarm for the user. See `SET_ALARM <https://developer.android.com/reference/android/Manifest.permission#SET_ALARM>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2381,7 +2381,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/set_always_finish** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/set_always_finish>`
 
-允許套用程式對進入後臺時是否立即終止 Activity 進行控制。見 `SET_ALWAYS_FINISH <https://developer.android.com/reference/android/Manifest.permission#SET_ALWAYS_FINISH>`__\ 。
+Allows an application to control whether activities are immediately finished when put in the background. See `SET_ALWAYS_FINISH <https://developer.android.com/reference/android/Manifest.permission#SET_ALWAYS_FINISH>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2393,7 +2393,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/set_animation_scale** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/set_animation_scale>`
 
-允許對全域動畫縮放係數進行修改。見 `SET_ANIMATION_SCALE <https://developer.android.com/reference/android/Manifest.permission#SET_ANIMATION_SCALE>`__\ 。
+Allows to modify the global animation scaling factor. See `SET_ANIMATION_SCALE <https://developer.android.com/reference/android/Manifest.permission#SET_ANIMATION_SCALE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2405,7 +2405,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/set_debug_app** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/set_debug_app>`
 
-對套用程式進行除錯配置。見 `SET_DEBUG_APP <https://developer.android.com/reference/android/Manifest.permission#SET_DEBUG_APP>`__\ 。
+Configure an application for debugging. See `SET_DEBUG_APP <https://developer.android.com/reference/android/Manifest.permission#SET_DEBUG_APP>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2417,7 +2417,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/set_orientation** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/set_orientation>`
 
-允許對設定螢幕朝向（本質為旋轉）的功能進行底層存取。
+Allows low-level access to setting the orientation (actually rotation) of the screen.
 
 .. rst-class:: classref-item-separator
 
@@ -2429,7 +2429,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/set_pointer_speed** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/set_pointer_speed>`
 
-允許對設定指標速度的功能進行底層存取。
+Allows low-level access to setting the pointer speed.
 
 .. rst-class:: classref-item-separator
 
@@ -2441,7 +2441,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/set_preferred_applications** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/set_preferred_applications>`
 
-**已棄用：** Deprecated in API level 15.
+**Deprecated:** Deprecated in API level 15.
 
 .. rst-class:: classref-item-separator
 
@@ -2453,7 +2453,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/set_process_limit** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/set_process_limit>`
 
-允許套用程式對同時能夠運作的最大（不再需要的）套用程式程序數進行設定。見 `SET_PROCESS_LIMIT <https://developer.android.com/reference/android/Manifest.permission#SET_PROCESS_LIMIT>`__\ 。
+Allows an application to set the maximum number of (not needed) application processes that can be running. See `SET_PROCESS_LIMIT <https://developer.android.com/reference/android/Manifest.permission#SET_PROCESS_LIMIT>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2465,7 +2465,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/set_time** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/set_time>`
 
-允許套用程式對系統時間進行直接設定。見 `SET_TIME <https://developer.android.com/reference/android/Manifest.permission#SET_TIME>`__\ 。
+Allows applications to set the system time directly. See `SET_TIME <https://developer.android.com/reference/android/Manifest.permission#SET_TIME>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2477,7 +2477,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/set_time_zone** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/set_time_zone>`
 
-允許套用程式對系統時區進行直接設定。見 `SET_TIME_ZONE <https://developer.android.com/reference/android/Manifest.permission#SET_TIME_ZONE>`__\ 。
+Allows applications to set the system time zone directly. See `SET_TIME_ZONE <https://developer.android.com/reference/android/Manifest.permission#SET_TIME_ZONE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2489,7 +2489,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/set_wallpaper** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/set_wallpaper>`
 
-允許套用程式對壁紙進行設定。見 `SET_WALLPAPER <https://developer.android.com/reference/android/Manifest.permission#SET_WALLPAPER>`__\ 。
+Allows applications to set the wallpaper. See `SET_WALLPAPER <https://developer.android.com/reference/android/Manifest.permission#SET_WALLPAPER>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2501,7 +2501,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/set_wallpaper_hints** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/set_wallpaper_hints>`
 
-允許套用程式對壁紙提示進行設定。見 `SET_WALLPAPER_HINTS <https://developer.android.com/reference/android/Manifest.permission#SET_WALLPAPER_HINTS>`__\ 。
+Allows applications to set the wallpaper hints. See `SET_WALLPAPER_HINTS <https://developer.android.com/reference/android/Manifest.permission#SET_WALLPAPER_HINTS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2513,7 +2513,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/signal_persistent_processes** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/signal_persistent_processes>`
 
-允許套用程式請求將訊號發送到所有持久化程序。見 `SIGNAL_PERSISTENT_PROCESSES <https://developer.android.com/reference/android/Manifest.permission#SIGNAL_PERSISTENT_PROCESSES>`__\ 。
+Allow an application to request that a signal be sent to all persistent processes. See `SIGNAL_PERSISTENT_PROCESSES <https://developer.android.com/reference/android/Manifest.permission#SIGNAL_PERSISTENT_PROCESSES>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2525,7 +2525,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/status_bar** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/status_bar>`
 
-允許套用程式對狀態列及其圖示進行打開、關閉、禁用等操作。見 `STATUS_BAR <https://developer.android.com/reference/android/Manifest.permission#STATUS_BAR>`__\ 。
+Allows an application to open, close, or disable the status bar and its icons. See `STATUS_BAR <https://developer.android.com/reference/android/Manifest.permission#STATUS_BAR>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2537,7 +2537,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/subscribed_feeds_read** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/subscribed_feeds_read>`
 
-允許套用程式對訂閱的 ContentProvider 源進行存取。
+Allows an application to allow access the subscribed feeds ContentProvider.
 
 .. rst-class:: classref-item-separator
 
@@ -2549,7 +2549,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/subscribed_feeds_write** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/subscribed_feeds_write>`
 
-**已棄用：** 此屬性可能在未來版本中變更或移除。
+**Deprecated:** This property may be changed or removed in future versions.
 
 .. rst-class:: classref-item-separator
 
@@ -2561,7 +2561,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/system_alert_window** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/system_alert_window>`
 
-允許套用使用 WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY 型別建立顯示在其他套用之上的視窗。見 `SYSTEM_ALERT_WINDOW <https://developer.android.com/reference/android/Manifest.permission#SYSTEM_ALERT_WINDOW>`__\ 。
+Allows an app to create windows using the type WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY, shown on top of all other apps. See `SYSTEM_ALERT_WINDOW <https://developer.android.com/reference/android/Manifest.permission#SYSTEM_ALERT_WINDOW>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2573,7 +2573,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/transmit_ir** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/transmit_ir>`
 
-允許使用該裝置的 IR 發送器。見 `TRANSMIT_IR <https://developer.android.com/reference/android/Manifest.permission#TRANSMIT_IR>`__\ 。
+Allows using the device's IR transmitter, if available. See `TRANSMIT_IR <https://developer.android.com/reference/android/Manifest.permission#TRANSMIT_IR>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2585,7 +2585,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/uninstall_shortcut** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/uninstall_shortcut>`
 
-**已棄用：** 此屬性可能在未來版本中變更或移除。
+**Deprecated:** This property may be changed or removed in future versions.
 
 .. rst-class:: classref-item-separator
 
@@ -2597,7 +2597,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/update_device_stats** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/update_device_stats>`
 
-允許套用程式對裝置統計資訊進行更新。見 `UPDATE_DEVICE_STATS <https://developer.android.com/reference/android/Manifest.permission#UPDATE_DEVICE_STATS>`__\ 。
+Allows an application to update device statistics. See `UPDATE_DEVICE_STATS <https://developer.android.com/reference/android/Manifest.permission#UPDATE_DEVICE_STATS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2609,7 +2609,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/use_credentials** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/use_credentials>`
 
-允許套用程式向 AccountManager 請求授權權杖。
+Allows an application to request authtokens from the AccountManager.
 
 .. rst-class:: classref-item-separator
 
@@ -2621,7 +2621,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/use_sip** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/use_sip>`
 
-允許套用程式使用 SIP 服務。見 `USE_SIP <https://developer.android.com/reference/android/Manifest.permission#USE_SIP>`__\ 。
+Allows an application to use SIP service. See `USE_SIP <https://developer.android.com/reference/android/Manifest.permission#USE_SIP>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2633,7 +2633,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/vibrate** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/vibrate>`
 
-允許存取振動器。見 `VIBRATE <https://developer.android.com/reference/android/Manifest.permission#VIBRATE>`__\ 。
+Allows access to the vibrator. See `VIBRATE <https://developer.android.com/reference/android/Manifest.permission#VIBRATE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2645,7 +2645,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/wake_lock** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/wake_lock>`
 
-允許使用 PowerManager WakeLock 放置處理器進入休眠或螢幕變暗。見 `WAKE_LOCK <https://developer.android.com/reference/android/Manifest.permission#WAKE_LOCK>`__\ 。
+Allows using PowerManager WakeLocks to keep processor from sleeping or screen from dimming. See `WAKE_LOCK <https://developer.android.com/reference/android/Manifest.permission#WAKE_LOCK>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2657,7 +2657,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/write_apn_settings** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/write_apn_settings>`
 
-允許套用程式寫入 APN 設定並讀取已有 APN 設定中的使用者名、密碼等敏感欄位。見 `WRITE_APN_SETTINGS <https://developer.android.com/reference/android/Manifest.permission#WRITE_APN_SETTINGS>`__\ 。
+Allows applications to write the apn settings and read sensitive fields of an existing apn settings like user and password. See `WRITE_APN_SETTINGS <https://developer.android.com/reference/android/Manifest.permission#WRITE_APN_SETTINGS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2669,7 +2669,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/write_calendar** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/write_calendar>`
 
-允許套用程式對使用者的日曆資料進行寫操作。見 `WRITE_CALENDAR <https://developer.android.com/reference/android/Manifest.permission#WRITE_CALENDAR>`__\ 。
+Allows an application to write the user's calendar data. See `WRITE_CALENDAR <https://developer.android.com/reference/android/Manifest.permission#WRITE_CALENDAR>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2681,7 +2681,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/write_call_log** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/write_call_log>`
 
-允許套用程式對使用者的通話記錄資料進行寫操作（不會允許讀操作）。見 `WRITE_CALL_LOG <https://developer.android.com/reference/android/Manifest.permission#WRITE_CALL_LOG>`__\ 。
+Allows an application to write (but not read) the user's call log data. See `WRITE_CALL_LOG <https://developer.android.com/reference/android/Manifest.permission#WRITE_CALL_LOG>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2693,7 +2693,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/write_contacts** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/write_contacts>`
 
-允許套用程式對使用者的通訊錄資料進行寫操作。見 `WRITE_CONTACTS <https://developer.android.com/reference/android/Manifest.permission#WRITE_CONTACTS>`__\ 。
+Allows an application to write the user's contacts data. See `WRITE_CONTACTS <https://developer.android.com/reference/android/Manifest.permission#WRITE_CONTACTS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2705,7 +2705,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/write_external_storage** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/write_external_storage>`
 
-允許套用程式對外部儲存進行寫操作。見 `WRITE_EXTERNAL_STORAGE <https://developer.android.com/reference/android/Manifest.permission#WRITE_EXTERNAL_STORAGE>`__\ 。
+Allows an application to write to external storage. See `WRITE_EXTERNAL_STORAGE <https://developer.android.com/reference/android/Manifest.permission#WRITE_EXTERNAL_STORAGE>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2717,7 +2717,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/write_gservices** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/write_gservices>`
 
-允許套用程式對 Google 服務對應進行修改。見 `WRITE_GSERVICES <https://developer.android.com/reference/android/Manifest.permission#WRITE_GSERVICES>`__\ 。
+Allows an application to modify the Google service map. See `WRITE_GSERVICES <https://developer.android.com/reference/android/Manifest.permission#WRITE_GSERVICES>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2729,7 +2729,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/write_history_bookmarks** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/write_history_bookmarks>`
 
-允許套用程式對使用者的流覽器歷史和收藏進行寫操作（不會允許讀操作）。
+Allows an application to write (but not read) the user's browsing history and bookmarks.
 
 .. rst-class:: classref-item-separator
 
@@ -2741,7 +2741,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/write_profile** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/write_profile>`
 
-允許套用程式對使用者的個人資訊資料進行寫操作（不會允許讀操作）。
+Allows an application to write (but not read) the user's personal profile data.
 
 .. rst-class:: classref-item-separator
 
@@ -2753,7 +2753,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/write_secure_settings** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/write_secure_settings>`
 
-允許套用程式對安全系統設定進行讀寫操作。見 `WRITE_SECURE_SETTINGS <https://developer.android.com/reference/android/Manifest.permission#WRITE_SECURE_SETTINGS>`__\ 。
+Allows an application to read or write the secure system settings. See `WRITE_SECURE_SETTINGS <https://developer.android.com/reference/android/Manifest.permission#WRITE_SECURE_SETTINGS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2765,7 +2765,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/write_settings** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/write_settings>`
 
-允許套用程式對系統設定進行讀寫操作。見 `WRITE_SETTINGS <https://developer.android.com/reference/android/Manifest.permission#WRITE_SETTINGS>`__\ 。
+Allows an application to read or write the system settings. See `WRITE_SETTINGS <https://developer.android.com/reference/android/Manifest.permission#WRITE_SETTINGS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2777,7 +2777,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/write_sms** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/write_sms>`
 
-允許套用程式發送短信。
+Allows an application to write SMS messages.
 
 .. rst-class:: classref-item-separator
 
@@ -2789,7 +2789,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/write_social_stream** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/write_social_stream>`
 
-允許套用程式對使用者的社交流資料進行寫操作（不會允許讀操作）。
+Allows an application to write (but not read) the user's social stream data.
 
 .. rst-class:: classref-item-separator
 
@@ -2801,7 +2801,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/write_sync_settings** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/write_sync_settings>`
 
-允許套用程式對同步設定進行寫操作。見 `WRITE_SYNC_SETTINGS <https://developer.android.com/reference/android/Manifest.permission#WRITE_SYNC_SETTINGS>`__\ 。
+Allows applications to write the sync settings. See `WRITE_SYNC_SETTINGS <https://developer.android.com/reference/android/Manifest.permission#WRITE_SYNC_SETTINGS>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2813,7 +2813,7 @@ Allows an application to read image or video files from external storage that a 
 
 :ref:`bool<class_bool>` **permissions/write_user_dictionary** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/write_user_dictionary>`
 
-允許套用程式對使用者字典進行寫操作。
+Allows an application to write to the user dictionary.
 
 .. rst-class:: classref-item-separator
 
@@ -2863,7 +2863,7 @@ If ``true``, hides the navigation and status bar. Set :ref:`DisplayServer.window
 
 :ref:`bool<class_bool>` **screen/support_large** :ref:`🔗<class_EditorExportPlatformAndroid_property_screen/support_large>`
 
-表示套用程式是否支援較大螢幕尺寸。
+Indicates whether the application supports larger screen form-factors.
 
 .. rst-class:: classref-item-separator
 
@@ -2875,7 +2875,7 @@ If ``true``, hides the navigation and status bar. Set :ref:`DisplayServer.window
 
 :ref:`bool<class_bool>` **screen/support_normal** :ref:`🔗<class_EditorExportPlatformAndroid_property_screen/support_normal>`
 
-表示套用程式是否支援“正常”螢幕尺寸。
+Indicates whether an application supports the "normal" screen form-factors.
 
 .. rst-class:: classref-item-separator
 
@@ -2887,7 +2887,7 @@ If ``true``, hides the navigation and status bar. Set :ref:`DisplayServer.window
 
 :ref:`bool<class_bool>` **screen/support_small** :ref:`🔗<class_EditorExportPlatformAndroid_property_screen/support_small>`
 
-表示套用程式是否支援較小螢幕尺寸。
+Indicates whether the application supports smaller screen form-factors.
 
 .. rst-class:: classref-item-separator
 
@@ -2899,7 +2899,7 @@ If ``true``, hides the navigation and status bar. Set :ref:`DisplayServer.window
 
 :ref:`bool<class_bool>` **screen/support_xlarge** :ref:`🔗<class_EditorExportPlatformAndroid_property_screen/support_xlarge>`
 
-表示套用程式是否支援超大螢幕尺寸。
+Indicates whether the application supports extra large screen form-factors.
 
 .. rst-class:: classref-item-separator
 
@@ -2925,7 +2925,7 @@ If ``true``, shaders will be compiled and embedded in the application. This opti
 
 :ref:`bool<class_bool>` **user_data_backup/allow** :ref:`🔗<class_EditorExportPlatformAndroid_property_user_data_backup/allow>`
 
-如果為 ``true``\ ，則允許套用程式參與基礎設施的備份與恢復。
+If ``true``, allows the application to participate in the backup and restore infrastructure.
 
 .. rst-class:: classref-item-separator
 
@@ -2937,7 +2937,7 @@ If ``true``, shaders will be compiled and embedded in the application. This opti
 
 :ref:`int<class_int>` **version/code** :ref:`🔗<class_EditorExportPlatformAndroid_property_version/code>`
 
-機器可讀的套用程式版本。每向 Play Store 推送一個新版本，該版本都必須遞增。
+Machine-readable application version. This must be incremented for every new release pushed to the Play Store.
 
 .. rst-class:: classref-item-separator
 
@@ -2949,7 +2949,7 @@ If ``true``, shaders will be compiled and embedded in the application. This opti
 
 :ref:`String<class_String>` **version/name** :ref:`🔗<class_EditorExportPlatformAndroid_property_version/name>`
 
-套用程式圖示檔。如果留空，它將退回到 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。
+Application version visible to the user. Falls back to :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>` if left empty.
 
 .. rst-class:: classref-item-separator
 
@@ -2963,12 +2963,12 @@ If ``true``, shaders will be compiled and embedded in the application. This opti
 
 The extended reality (XR) mode for this application.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

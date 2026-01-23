@@ -5,23 +5,23 @@
 ImporterMesh
 ============
 
-**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-在匯入過程中，包含基於頂點陣列的幾何體的 :ref:`Resource<class_Resource>`\ 。
+A :ref:`Resource<class_Resource>` that contains vertex array-based geometry during the import process.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-ImporterMesh 是一種類似於 :ref:`ArrayMesh<class_ArrayMesh>` 的 :ref:`Resource<class_Resource>`\ 。它包含基於頂點陣列的幾何體，被分為\ *表面*\ 。每個表面都包含一個完全獨立的陣列和一個用於繪製它的材質。在設計方面，具有多個表面的網格優於單個表面，因為在 3D 編輯軟體中建立的對象通常包含多種材質。
+ImporterMesh is a type of :ref:`Resource<class_Resource>` analogous to :ref:`ArrayMesh<class_ArrayMesh>`. It contains vertex array-based geometry, divided in *surfaces*. Each surface contains a completely separate array and a material used to draw it. Design wise, a mesh with multiple surfaces is preferred to a single surface, because objects created in 3D editing software commonly contain multiple materials.
 
-與其運作時對應物不同，\ **ImporterMesh** 在各種匯入步驟（例如 lod 和陰影網格生成）發生之前包含網格資料。修改表面資料時，通過先呼叫 :ref:`clear()<class_ImporterMesh_method_clear>` ，然後為每個表面呼叫 :ref:`add_surface()<class_ImporterMesh_method_add_surface>`\ 。
+Unlike its runtime counterpart, **ImporterMesh** contains mesh data before various import steps, such as lod and shadow mesh generation, have taken place. Modify surface data by calling :ref:`clear()<class_ImporterMesh_method_clear>`, followed by :ref:`add_surface()<class_ImporterMesh_method_add_surface>` for each surface.
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -82,8 +82,8 @@ ImporterMesh 是一種類似於 :ref:`ArrayMesh<class_ArrayMesh>` 的 :ref:`Reso
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_ImporterMesh_method_add_blend_shape:
 
@@ -91,7 +91,7 @@ ImporterMesh 是一種類似於 :ref:`ArrayMesh<class_ArrayMesh>` 的 :ref:`Reso
 
 |void| **add_blend_shape**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ImporterMesh_method_add_blend_shape>`
 
-為將使用 :ref:`add_surface()<class_ImporterMesh_method_add_surface>` 新增的混合形狀新增名稱。必須在表面被新增之前調用。
+Adds name for a blend shape that will be added with :ref:`add_surface()<class_ImporterMesh_method_add_surface>`. Must be called before surface is added.
 
 .. rst-class:: classref-item-separator
 
@@ -103,19 +103,19 @@ ImporterMesh 是一種類似於 :ref:`ArrayMesh<class_ArrayMesh>` 的 :ref:`Reso
 
 |void| **add_surface**\ (\ primitive\: :ref:`PrimitiveType<enum_Mesh_PrimitiveType>`, arrays\: :ref:`Array<class_Array>`, blend_shapes\: :ref:`Array<class_Array>`\[:ref:`Array<class_Array>`\] = [], lods\: :ref:`Dictionary<class_Dictionary>` = {}, material\: :ref:`Material<class_Material>` = null, name\: :ref:`String<class_String>` = "", flags\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ImporterMesh_method_add_surface>`
 
-建立新的曲面。\ :ref:`Mesh.get_surface_count()<class_Mesh_method_get_surface_count>` 的返回值將成為此曲面的 ``surf_idx``\ 。
+Creates a new surface. :ref:`Mesh.get_surface_count()<class_Mesh_method_get_surface_count>` will become the ``surf_idx`` for this new surface.
 
-曲面會以 ``primitive`` 指定的圖元型別進行繪製，可為 :ref:`PrimitiveType<enum_Mesh_PrimitiveType>` 中的任一值。
+Surfaces are created to be rendered using a ``primitive``, which may be any of the values defined in :ref:`PrimitiveType<enum_Mesh_PrimitiveType>`.
 
-\ ``arrays`` 是「陣列的陣列」。在 :ref:`Mesh.ARRAY_MAX<class_Mesh_constant_ARRAY_MAX>` 個元素中，每個元素要嘛包含由 :ref:`ArrayType<enum_Mesh_ArrayType>` 相對應成員所描述的曲面資料，要嘛為未使用時的 ``null``\ 。例如，\ ``arrays[0]`` 為頂點陣列；此子陣列為必填，其餘則為可選。若加上索引陣列，即會進入「索引模式」，此時頂點與其他陣列成為資料來源，而索引陣列決定頂點次序。除非使用 :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>`\ ，否則所有子陣列長度必須等於頂點陣列長度（或為其整數倍，當一個頂點對應多個子陣列元素時），或保持空陣列。
+The ``arrays`` argument is an array of arrays. Each of the :ref:`Mesh.ARRAY_MAX<class_Mesh_constant_ARRAY_MAX>` elements contains an array with some of the mesh data for this surface as described by the corresponding member of :ref:`ArrayType<enum_Mesh_ArrayType>` or ``null`` if it is not used by the surface. For example, ``arrays[0]`` is the array of vertices. That first vertex sub-array is always required; the others are optional. Adding an index array puts this surface into "index mode" where the vertex and other arrays become the sources of data and the index array defines the vertex order. All sub-arrays must have the same length as the vertex array (or be an exact multiple of the vertex array's length, when multiple elements of a sub-array correspond to a single vertex) or be empty, except for :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` if it is used.
 
-\ ``blend_shapes`` 是每個混合形狀的頂點資料陣列。其結構與 ``arrays`` 相同，但僅當 ``arrays`` 內有設定 :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>`\ 、\ :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>` 或 :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>` 時，對應項目才會被設定；其餘皆為 ``null``\ 。
+The ``blend_shapes`` argument is an array of vertex data for each blend shape. Each element is an array of the same structure as ``arrays``, but :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>`, :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>`, and :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>` are set if and only if they are set in ``arrays`` and all other entries are ``null``.
 
-\ ``lods`` 為字典，鍵值為 :ref:`float<class_float>`\ 、內容為 :ref:`PackedInt32Array<class_PackedInt32Array>`\ 。每一項代表此曲面的一級 LOD，其中值為該 LOD 使用的 :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` 陣列，鍵值大致對應開始啟用該 LOD 的距離；鍵越大，啟用距離亦越遠。
+The ``lods`` argument is a dictionary with :ref:`float<class_float>` keys and :ref:`PackedInt32Array<class_PackedInt32Array>` values. Each entry in the dictionary represents an LOD level of the surface, where the value is the :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` array to use for the LOD level and the key is roughly proportional to the distance at which the LOD stats being used. I.e., increasing the key of an LOD also increases the distance that the objects has to be from the camera before the LOD is used.
 
-\ ``flags`` 為多個旗標的位元 OR：對於每個使用中的自訂通道，將 :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` 的值左移 ``ARRAY_FORMAT_CUSTOMn_SHIFT``\ ；亦可加入 :ref:`Mesh.ARRAY_FLAG_USE_DYNAMIC_UPDATE<class_Mesh_constant_ARRAY_FLAG_USE_DYNAMIC_UPDATE>`\ 、\ :ref:`Mesh.ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_Mesh_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>`\ 、\ :ref:`Mesh.ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY<class_Mesh_constant_ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY>`\ 。
+The ``flags`` argument is the bitwise OR of, as required: One value of :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` left shifted by ``ARRAY_FORMAT_CUSTOMn_SHIFT`` for each custom channel in use, :ref:`Mesh.ARRAY_FLAG_USE_DYNAMIC_UPDATE<class_Mesh_constant_ARRAY_FLAG_USE_DYNAMIC_UPDATE>`, :ref:`Mesh.ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_Mesh_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>`, or :ref:`Mesh.ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY<class_Mesh_constant_ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY>`.
 
-\ **注意：**\ 使用索引時建議僅使用點、線或三角形圖元。
+\ **Note:** When using indices, it is recommended to only use points, lines, or triangles.
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +127,7 @@ ImporterMesh 是一種類似於 :ref:`ArrayMesh<class_ArrayMesh>` 的 :ref:`Reso
 
 |void| **clear**\ (\ ) :ref:`🔗<class_ImporterMesh_method_clear>`
 
-從該 **ImporterMesh** 中，移除所有表面和混合形狀。
+Removes all surfaces and blend shapes from this **ImporterMesh**.
 
 .. rst-class:: classref-item-separator
 
@@ -171,7 +171,7 @@ The number of generated lods can be accessed using :ref:`get_surface_lod_count()
 
 :ref:`int<class_int>` **get_blend_shape_count**\ (\ ) |const| :ref:`🔗<class_ImporterMesh_method_get_blend_shape_count>`
 
-返回該網格包含的混合形狀的數量。
+Returns the number of blend shapes that the mesh holds.
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +183,7 @@ The number of generated lods can be accessed using :ref:`get_surface_lod_count()
 
 :ref:`BlendShapeMode<enum_Mesh_BlendShapeMode>` **get_blend_shape_mode**\ (\ ) |const| :ref:`🔗<class_ImporterMesh_method_get_blend_shape_mode>`
 
-返回該網格的混合形狀模式。
+Returns the blend shape mode for this Mesh.
 
 .. rst-class:: classref-item-separator
 
@@ -195,7 +195,7 @@ The number of generated lods can be accessed using :ref:`get_surface_lod_count()
 
 :ref:`String<class_String>` **get_blend_shape_name**\ (\ blend_shape_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ImporterMesh_method_get_blend_shape_name>`
 
-回傳此索引處混合形狀的名稱。
+Returns the name of the blend shape at this index.
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ The number of generated lods can be accessed using :ref:`get_surface_lod_count()
 
 :ref:`Vector2i<class_Vector2i>` **get_lightmap_size_hint**\ (\ ) |const| :ref:`🔗<class_ImporterMesh_method_get_lightmap_size_hint>`
 
-返回該網格的大小提示，用於在 UV 空間中展開光照貼圖。
+Returns the size hint of this mesh for lightmap-unwrapping in UV-space.
 
 .. rst-class:: classref-item-separator
 
@@ -219,11 +219,11 @@ The number of generated lods can be accessed using :ref:`get_surface_lod_count()
 
 :ref:`ArrayMesh<class_ArrayMesh>` **get_mesh**\ (\ base_mesh\: :ref:`ArrayMesh<class_ArrayMesh>` = null\ ) :ref:`🔗<class_ImporterMesh_method_get_mesh>`
 
-將該 **ImporterMesh** 表示的網格資料作為一個可用的 :ref:`ArrayMesh<class_ArrayMesh>` 返回。
+Returns the mesh data represented by this **ImporterMesh** as a usable :ref:`ArrayMesh<class_ArrayMesh>`.
 
-這個方法快取了返回的網格，後續的呼叫將返回快取的資料，直到 :ref:`clear()<class_ImporterMesh_method_clear>` 被呼叫。
+This method caches the returned mesh, and subsequent calls will return the cached data until :ref:`clear()<class_ImporterMesh_method_clear>` is called.
 
-如果還沒有快取並且提供了 ``base_mesh``\ ，則 ``base_mesh`` 將被使用並被改變。
+If not yet cached and ``base_mesh`` is provided, ``base_mesh`` will be used and mutated.
 
 .. rst-class:: classref-item-separator
 
@@ -247,7 +247,7 @@ Returns the arrays for the vertices, normals, UVs, etc. that make up the request
 
 :ref:`Array<class_Array>` **get_surface_blend_shape_arrays**\ (\ surface_idx\: :ref:`int<class_int>`, blend_shape_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ImporterMesh_method_get_surface_blend_shape_arrays>`
 
-為一個表面請求的混合形狀索引，返回一組混合形狀陣列。
+Returns a single set of blend shape arrays for the requested blend shape index for a surface.
 
 .. rst-class:: classref-item-separator
 
@@ -259,7 +259,7 @@ Returns the arrays for the vertices, normals, UVs, etc. that make up the request
 
 :ref:`int<class_int>` **get_surface_count**\ (\ ) |const| :ref:`🔗<class_ImporterMesh_method_get_surface_count>`
 
-返回該網格擁有的表面數。
+Returns the number of surfaces that the mesh holds.
 
 .. rst-class:: classref-item-separator
 
@@ -271,7 +271,7 @@ Returns the arrays for the vertices, normals, UVs, etc. that make up the request
 
 :ref:`int<class_int>` **get_surface_format**\ (\ surface_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ImporterMesh_method_get_surface_format>`
 
-返回該網格擁有的表面的格式。
+Returns the format of the surface that the mesh holds.
 
 .. rst-class:: classref-item-separator
 
@@ -283,7 +283,7 @@ Returns the arrays for the vertices, normals, UVs, etc. that make up the request
 
 :ref:`int<class_int>` **get_surface_lod_count**\ (\ surface_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ImporterMesh_method_get_surface_lod_count>`
 
-返回該網格在給定表面上保留的 lod 數。
+Returns the number of lods that the mesh holds on a given surface.
 
 .. rst-class:: classref-item-separator
 
@@ -295,7 +295,7 @@ Returns the arrays for the vertices, normals, UVs, etc. that make up the request
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_surface_lod_indices**\ (\ surface_idx\: :ref:`int<class_int>`, lod_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ImporterMesh_method_get_surface_lod_indices>`
 
-返回表面的 lod 的索引緩衝區。
+Returns the index buffer of a lod for a surface.
 
 .. rst-class:: classref-item-separator
 
@@ -307,7 +307,7 @@ Returns the arrays for the vertices, normals, UVs, etc. that make up the request
 
 :ref:`float<class_float>` **get_surface_lod_size**\ (\ surface_idx\: :ref:`int<class_int>`, lod_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ImporterMesh_method_get_surface_lod_size>`
 
-返回為一個表面啟動 lod 的螢幕比率。
+Returns the screen ratio which activates a lod for a surface.
 
 .. rst-class:: classref-item-separator
 
@@ -319,7 +319,7 @@ Returns the arrays for the vertices, normals, UVs, etc. that make up the request
 
 :ref:`Material<class_Material>` **get_surface_material**\ (\ surface_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ImporterMesh_method_get_surface_material>`
 
-返回給定面的 :ref:`Material<class_Material>` 材質。面將由該材質來算繪。
+Returns a :ref:`Material<class_Material>` in a given surface. Surface is rendered using this material.
 
 .. rst-class:: classref-item-separator
 
@@ -331,7 +331,7 @@ Returns the arrays for the vertices, normals, UVs, etc. that make up the request
 
 :ref:`String<class_String>` **get_surface_name**\ (\ surface_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ImporterMesh_method_get_surface_name>`
 
-取得此曲面設定的名稱。
+Gets the name assigned to this surface.
 
 .. rst-class:: classref-item-separator
 
@@ -343,7 +343,7 @@ Returns the arrays for the vertices, normals, UVs, etc. that make up the request
 
 :ref:`PrimitiveType<enum_Mesh_PrimitiveType>` **get_surface_primitive_type**\ (\ surface_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ImporterMesh_method_get_surface_primitive_type>`
 
-返回所請求表面的基元型別（參見 :ref:`add_surface()<class_ImporterMesh_method_add_surface>`\ ）。
+Returns the primitive type of the requested surface (see :ref:`add_surface()<class_ImporterMesh_method_add_surface>`).
 
 .. rst-class:: classref-item-separator
 
@@ -367,7 +367,7 @@ Sets the blend shape mode.
 
 |void| **set_lightmap_size_hint**\ (\ size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_ImporterMesh_method_set_lightmap_size_hint>`
 
-設定該網格的大小提示，以便在 UV 空間中展開光照貼圖。
+Sets the size hint of this mesh for lightmap-unwrapping in UV-space.
 
 .. rst-class:: classref-item-separator
 
@@ -379,7 +379,7 @@ Sets the blend shape mode.
 
 |void| **set_surface_material**\ (\ surface_idx\: :ref:`int<class_int>`, material\: :ref:`Material<class_Material>`\ ) :ref:`🔗<class_ImporterMesh_method_set_surface_material>`
 
-設定給定面的 :ref:`Material<class_Material>` 材質。該面將會使用此材質算繪。
+Sets a :ref:`Material<class_Material>` for a given surface. Surface will be rendered using this material.
 
 .. rst-class:: classref-item-separator
 
@@ -391,14 +391,14 @@ Sets the blend shape mode.
 
 |void| **set_surface_name**\ (\ surface_idx\: :ref:`int<class_int>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ImporterMesh_method_set_surface_name>`
 
-為指定曲面設定名稱。
+Sets a name for a given surface.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,23 +5,23 @@
 StreamPeerBuffer
 ================
 
-**继承：** :ref:`StreamPeer<class_StreamPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`StreamPeer<class_StreamPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用于处理二进制数据流的流对等体。
+A stream peer used to handle binary data streams.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-使用字节数组作为流的数据缓冲区流对等体。该对象可用于处理来自网络会话的二进制数据。要处理保存在文件中的二进制数据，可以直接使用 :ref:`FileAccess<class_FileAccess>`\ 。
+A data buffer stream peer that uses a byte array as the stream. This object can be used to handle binary data from network sessions. To handle binary data stored in files, :ref:`FileAccess<class_FileAccess>` can be used directly.
 
-\ **StreamPeerBuffer** 对象会保存一个内部指针，是距离该缓冲区开头的字节偏移量。Get 和 put 操作都在该指针处进行，并会将其进行对应的移动。
+A **StreamPeerBuffer** object keeps an internal cursor which is the offset in bytes to the start of the buffer. Get and put operations are performed at the cursor position and will move the cursor accordingly.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -32,8 +32,8 @@ StreamPeerBuffer
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -58,8 +58,8 @@ StreamPeerBuffer
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_StreamPeerBuffer_property_data_array:
 
@@ -72,7 +72,7 @@ StreamPeerBuffer
 - |void| **set_data_array**\ (\ value\: :ref:`PackedByteArray<class_PackedByteArray>`\ )
 - :ref:`PackedByteArray<class_PackedByteArray>` **get_data_array**\ (\ )
 
-内部的数据缓冲。设置该值会重置指针。
+The underlying data buffer. Setting this value resets the cursor.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
@@ -82,8 +82,8 @@ StreamPeerBuffer
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_StreamPeerBuffer_method_clear:
 
@@ -91,7 +91,7 @@ StreamPeerBuffer
 
 |void| **clear**\ (\ ) :ref:`🔗<class_StreamPeerBuffer_method_clear>`
 
-清除 :ref:`data_array<class_StreamPeerBuffer_property_data_array>` 并重置指针。
+Clears the :ref:`data_array<class_StreamPeerBuffer_property_data_array>` and resets the cursor.
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ StreamPeerBuffer
 
 :ref:`StreamPeerBuffer<class_StreamPeerBuffer>` **duplicate**\ (\ ) |const| :ref:`🔗<class_StreamPeerBuffer_method_duplicate>`
 
-返回新的 **StreamPeerBuffer**\ ，具有相同的 :ref:`data_array<class_StreamPeerBuffer_property_data_array>` 内容。
+Returns a new **StreamPeerBuffer** with the same :ref:`data_array<class_StreamPeerBuffer_property_data_array>` content.
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +115,7 @@ StreamPeerBuffer
 
 :ref:`int<class_int>` **get_position**\ (\ ) |const| :ref:`🔗<class_StreamPeerBuffer_method_get_position>`
 
-返回当前的指针位置。
+Returns the current cursor position.
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +127,7 @@ StreamPeerBuffer
 
 :ref:`int<class_int>` **get_size**\ (\ ) |const| :ref:`🔗<class_StreamPeerBuffer_method_get_size>`
 
-返回 :ref:`data_array<class_StreamPeerBuffer_property_data_array>` 的大小。
+Returns the size of :ref:`data_array<class_StreamPeerBuffer_property_data_array>`.
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ StreamPeerBuffer
 
 |void| **resize**\ (\ size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_StreamPeerBuffer_method_resize>`
 
-调整 :ref:`data_array<class_StreamPeerBuffer_property_data_array>` 的大小。\ *不会*\ 更新指针。
+Resizes the :ref:`data_array<class_StreamPeerBuffer_property_data_array>`. This *doesn't* update the cursor.
 
 .. rst-class:: classref-item-separator
 
@@ -151,14 +151,14 @@ StreamPeerBuffer
 
 |void| **seek**\ (\ position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_StreamPeerBuffer_method_seek>`
 
-将指针移动到指定的位置。\ ``position`` 必须是 :ref:`data_array<class_StreamPeerBuffer_property_data_array>` 的有效索引。
+Moves the cursor to the specified position. ``position`` must be a valid index of :ref:`data_array<class_StreamPeerBuffer_property_data_array>`.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

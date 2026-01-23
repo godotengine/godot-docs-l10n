@@ -5,29 +5,27 @@
 GraphEdit
 =========
 
-**实验性：** This class may be changed or removed in future versions.
+**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**继承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
-
-图结构编辑器，使用 :ref:`GraphNode<class_GraphNode>`\ 。
+An editor for graph-like structures, using :ref:`GraphNode<class_GraphNode>`\ s.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-**GraphEdit** 提供了用于对各种图进行创建、操作、显示的工具。它在引擎中的主要目的是驱动可视化编程系统，例如可视化着色器，但也可以在用户项目中使用。
+**GraphEdit** provides tools for creation, manipulation, and display of various graphs. Its main purpose in the engine is to power the visual programming systems, such as visual shaders, but it is also available for use in user projects.
 
-\ **GraphEdit** 本身只是一个空容器，表示一个可以放置 :ref:`GraphNode<class_GraphNode>` 的无限栅格。每个 :ref:`GraphNode<class_GraphNode>` 代表图中的一个节点，是连接方案中的单个数据单元。而 **GraphEdit** 则有助于控制节点和节点之间的各种交互。当用户尝试连接、断开或删除一个 :ref:`GraphNode<class_GraphNode>` 时，\ **GraphEdit** 中会发出对应的信号，但默认情况下不执行任何动作。使用此控件的程序员负责实现必要的逻辑，来确定应如何处理每个请求。
+\ **GraphEdit** by itself is only an empty container, representing an infinite grid where :ref:`GraphNode<class_GraphNode>`\ s can be placed. Each :ref:`GraphNode<class_GraphNode>` represents a node in the graph, a single unit of data in the connected scheme. **GraphEdit**, in turn, helps to control various interactions with nodes and between nodes. When the user attempts to connect, disconnect, or delete a :ref:`GraphNode<class_GraphNode>`, a signal is emitted in the **GraphEdit**, but no action is taken by default. It is the responsibility of the programmer utilizing this control to implement the necessary logic to determine how each request should be handled.
 
-\ **性能：**\ 强烈建议在使用 GraphEdit 时启用低处理器使用模式（见 :ref:`OS.low_processor_usage_mode<class_OS_property_low_processor_usage_mode>`\ ）。
+\ **Performance:** It is greatly advised to enable low-processor usage mode (see :ref:`OS.low_processor_usage_mode<class_OS_property_low_processor_usage_mode>`) when using GraphEdits.
 
-\ **注意：**\ 请注意，由于技术限制，\ :ref:`Node.get_children()<class_Node_method_get_children>` 还将返回名为 ``_connection_layer`` 的连接层节点。该行为可能会在未来版本中发生变化。
+\ **Note:** Keep in mind that :ref:`Node.get_children()<class_Node_method_get_children>` will also return the connection layer node named ``_connection_layer`` due to technical limitations. This behavior may change in future releases.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -90,8 +88,8 @@ GraphEdit
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -158,8 +156,8 @@ GraphEdit
 
 .. rst-class:: classref-reftable-group
 
-主题属性
---------
+Theme Properties
+----------------
 
 .. table::
    :widths: auto
@@ -214,8 +212,8 @@ GraphEdit
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_GraphEdit_signal_begin_node_move:
 
@@ -223,7 +221,7 @@ GraphEdit
 
 **begin_node_move**\ (\ ) :ref:`🔗<class_GraphEdit_signal_begin_node_move>`
 
-在 :ref:`GraphElement<class_GraphElement>` 移动开始时发出。
+Emitted at the beginning of a :ref:`GraphElement<class_GraphElement>`'s movement.
 
 .. rst-class:: classref-item-separator
 
@@ -235,7 +233,7 @@ GraphEdit
 
 **connection_drag_ended**\ (\ ) :ref:`🔗<class_GraphEdit_signal_connection_drag_ended>`
 
-在连接拖动结束时发出。
+Emitted at the end of a connection drag.
 
 .. rst-class:: classref-item-separator
 
@@ -247,7 +245,7 @@ GraphEdit
 
 **connection_drag_started**\ (\ from_node\: :ref:`StringName<class_StringName>`, from_port\: :ref:`int<class_int>`, is_output\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_GraphEdit_signal_connection_drag_started>`
 
-在连接拖动开始时发出。
+Emitted at the beginning of a connection drag.
 
 .. rst-class:: classref-item-separator
 
@@ -259,7 +257,7 @@ GraphEdit
 
 **connection_from_empty**\ (\ to_node\: :ref:`StringName<class_StringName>`, to_port\: :ref:`int<class_int>`, release_position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_GraphEdit_signal_connection_from_empty>`
 
-当用户将连接从输入端口拖动到图形的空白区域时发出。
+Emitted when user drags a connection from an input port into the empty space of the graph.
 
 .. rst-class:: classref-item-separator
 
@@ -271,7 +269,7 @@ GraphEdit
 
 **connection_request**\ (\ from_node\: :ref:`StringName<class_StringName>`, from_port\: :ref:`int<class_int>`, to_node\: :ref:`StringName<class_StringName>`, to_port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphEdit_signal_connection_request>`
 
-当尝试创建 ``from_node`` :ref:`GraphNode<class_GraphNode>` 的 ``from_port`` 和 ``to_node`` :ref:`GraphNode<class_GraphNode>` 的 ``to_port`` 之间的连接时发出。
+Emitted to the GraphEdit when the connection between the ``from_port`` of the ``from_node`` :ref:`GraphNode<class_GraphNode>` and the ``to_port`` of the ``to_node`` :ref:`GraphNode<class_GraphNode>` is attempted to be created.
 
 .. rst-class:: classref-item-separator
 
@@ -283,7 +281,7 @@ GraphEdit
 
 **connection_to_empty**\ (\ from_node\: :ref:`StringName<class_StringName>`, from_port\: :ref:`int<class_int>`, release_position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_GraphEdit_signal_connection_to_empty>`
 
-当用户将连接从输出端口拖动到图形的空白区域时发出。
+Emitted when user drags a connection from an output port into the empty space of the graph.
 
 .. rst-class:: classref-item-separator
 
@@ -295,7 +293,7 @@ GraphEdit
 
 **copy_nodes_request**\ (\ ) :ref:`🔗<class_GraphEdit_signal_copy_nodes_request>`
 
-当该 **GraphEdit** 捕获 ``ui_copy`` 动作（默认情况下为 :kbd:`Ctrl + C`\ ）时发出。一般来说，该信号指示所选的 :ref:`GraphElement<class_GraphElement>` 应被复制。
+Emitted when this **GraphEdit** captures a ``ui_copy`` action (:kbd:`Ctrl + C` by default). In general, this signal indicates that the selected :ref:`GraphElement<class_GraphElement>`\ s should be copied.
 
 .. rst-class:: classref-item-separator
 
@@ -307,7 +305,7 @@ GraphEdit
 
 **cut_nodes_request**\ (\ ) :ref:`🔗<class_GraphEdit_signal_cut_nodes_request>`
 
-当该 **GraphEdit** 捕获 ``ui_cut`` 动作（默认情况下为 :kbd:`Ctrl + X`\ ）时发出。一般来说，该信号指示所选的 :ref:`GraphElement<class_GraphElement>` 应被剪切。
+Emitted when this **GraphEdit** captures a ``ui_cut`` action (:kbd:`Ctrl + X` by default). In general, this signal indicates that the selected :ref:`GraphElement<class_GraphElement>`\ s should be cut.
 
 .. rst-class:: classref-item-separator
 
@@ -319,9 +317,9 @@ GraphEdit
 
 **delete_nodes_request**\ (\ nodes\: :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\]\ ) :ref:`🔗<class_GraphEdit_signal_delete_nodes_request>`
 
-当该 **GraphEdit** 捕获 ``ui_graph_delete`` 动作（默认为 :kbd:`Delete`\ ）时触发。
+Emitted when this **GraphEdit** captures a ``ui_graph_delete`` action (:kbd:`Delete` by default).
 
-\ ``nodes`` 是应被移除的节点的名称的数组。这些通常包括所有选定的节点。
+\ ``nodes`` is an array of node names that should be removed. These usually include all selected nodes.
 
 .. rst-class:: classref-item-separator
 
@@ -333,7 +331,7 @@ GraphEdit
 
 **disconnection_request**\ (\ from_node\: :ref:`StringName<class_StringName>`, from_port\: :ref:`int<class_int>`, to_node\: :ref:`StringName<class_StringName>`, to_port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphEdit_signal_disconnection_request>`
 
-当试图移除 ``from_node`` :ref:`GraphNode<class_GraphNode>` 的 ``from_port`` 和 ``to_node`` :ref:`GraphNode<class_GraphNode>` 的 ``to_port`` 之间的连接时发出。
+Emitted to the GraphEdit when the connection between ``from_port`` of ``from_node`` :ref:`GraphNode<class_GraphNode>` and ``to_port`` of ``to_node`` :ref:`GraphNode<class_GraphNode>` is attempted to be removed.
 
 .. rst-class:: classref-item-separator
 
@@ -345,7 +343,7 @@ GraphEdit
 
 **duplicate_nodes_request**\ (\ ) :ref:`🔗<class_GraphEdit_signal_duplicate_nodes_request>`
 
-当该 **GraphEdit** 捕获 ``ui_graph_duplicate`` 动作（默认为 :kbd:`Ctrl + D`\ ）时触发。一般来说，该信号指示应被复制的所选的 :ref:`GraphElement<class_GraphElement>`\ 。
+Emitted when this **GraphEdit** captures a ``ui_graph_duplicate`` action (:kbd:`Ctrl + D` by default). In general, this signal indicates that the selected :ref:`GraphElement<class_GraphElement>`\ s should be duplicated.
 
 .. rst-class:: classref-item-separator
 
@@ -357,7 +355,7 @@ GraphEdit
 
 **end_node_move**\ (\ ) :ref:`🔗<class_GraphEdit_signal_end_node_move>`
 
-在 :ref:`GraphElement<class_GraphElement>` 移动结束时发出。
+Emitted at the end of a :ref:`GraphElement<class_GraphElement>`'s movement.
 
 .. rst-class:: classref-item-separator
 
@@ -369,7 +367,7 @@ GraphEdit
 
 **frame_rect_changed**\ (\ frame\: :ref:`GraphFrame<class_GraphFrame>`, new_rect\: :ref:`Rect2<class_Rect2>`\ ) :ref:`🔗<class_GraphEdit_signal_frame_rect_changed>`
 
-当 :ref:`GraphFrame<class_GraphFrame>` ``frame`` 大小调整为 ``new_rect`` 时发出。
+Emitted when the :ref:`GraphFrame<class_GraphFrame>` ``frame`` is resized to ``new_rect``.
 
 .. rst-class:: classref-item-separator
 
@@ -381,9 +379,9 @@ GraphEdit
 
 **graph_elements_linked_to_frame_request**\ (\ elements\: :ref:`Array<class_Array>`, frame\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_GraphEdit_signal_graph_elements_linked_to_frame_request>`
 
-当一个或多个 :ref:`GraphElement<class_GraphElement>` 被放到名为 ``frame`` 的 :ref:`GraphFrame<class_GraphFrame>` 上，且它们之前未被附加到任何其他框中时发出。
+Emitted when one or more :ref:`GraphElement<class_GraphElement>`\ s are dropped onto the :ref:`GraphFrame<class_GraphFrame>` named ``frame``, when they were not previously attached to any other one.
 
-\ ``elements`` 是要附加的 :ref:`GraphElement<class_GraphElement>` 数组。
+\ ``elements`` is an array of :ref:`GraphElement<class_GraphElement>`\ s to be attached.
 
 .. rst-class:: classref-item-separator
 
@@ -395,7 +393,7 @@ GraphEdit
 
 **node_deselected**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_GraphEdit_signal_node_deselected>`
 
-当给定的 :ref:`GraphElement<class_GraphElement>` 节点被取消选择时发出。
+Emitted when the given :ref:`GraphElement<class_GraphElement>` node is deselected.
 
 .. rst-class:: classref-item-separator
 
@@ -407,7 +405,7 @@ GraphEdit
 
 **node_selected**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_GraphEdit_signal_node_selected>`
 
-当给定的 :ref:`GraphElement<class_GraphElement>` 节点被选中时发出。
+Emitted when the given :ref:`GraphElement<class_GraphElement>` node is selected.
 
 .. rst-class:: classref-item-separator
 
@@ -419,7 +417,7 @@ GraphEdit
 
 **paste_nodes_request**\ (\ ) :ref:`🔗<class_GraphEdit_signal_paste_nodes_request>`
 
-当该 **GraphEdit** 捕获 ``ui_paste`` 动作（默认为 :kbd:`Ctrl + V`\ ）时触发。一般来说，该信号指示应被粘贴的先前复制的 :ref:`GraphElement<class_GraphElement>`\ 。
+Emitted when this **GraphEdit** captures a ``ui_paste`` action (:kbd:`Ctrl + V` by default). In general, this signal indicates that previously copied :ref:`GraphElement<class_GraphElement>`\ s should be pasted.
 
 .. rst-class:: classref-item-separator
 
@@ -431,7 +429,7 @@ GraphEdit
 
 **popup_request**\ (\ at_position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_GraphEdit_signal_popup_request>`
 
-当请求弹出窗口时发出。在 GraphEdit 中右键点击时发生。\ ``at_position``\ 为该信号被发出时鼠标指针的位置。
+Emitted when a popup is requested. Happens on right-clicking in the GraphEdit. ``at_position`` is the position of the mouse pointer when the signal is sent.
 
 .. rst-class:: classref-item-separator
 
@@ -443,7 +441,7 @@ GraphEdit
 
 **scroll_offset_changed**\ (\ offset\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_GraphEdit_signal_scroll_offset_changed>`
 
-当用户改变滚动偏移量时发出。在代码中改变滚动偏移量时，它不会被触发。
+Emitted when the scroll offset is changed by the user. It will not be emitted when changed in code.
 
 .. rst-class:: classref-section-separator
 
@@ -451,8 +449,8 @@ GraphEdit
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_GraphEdit_PanningScheme:
 
@@ -466,7 +464,7 @@ enum **PanningScheme**: :ref:`🔗<enum_GraphEdit_PanningScheme>`
 
 :ref:`PanningScheme<enum_GraphEdit_PanningScheme>` **SCROLL_ZOOMS** = ``0``
 
-:kbd:`鼠标滚轮`\ 进行缩放，\ :kbd:`Ctrl + 鼠标滚轮`\ 进行视图的移动。
+:kbd:`Mouse Wheel` will zoom, :kbd:`Ctrl + Mouse Wheel` will move the view.
 
 .. _class_GraphEdit_constant_SCROLL_PANS:
 
@@ -474,7 +472,7 @@ enum **PanningScheme**: :ref:`🔗<enum_GraphEdit_PanningScheme>`
 
 :ref:`PanningScheme<enum_GraphEdit_PanningScheme>` **SCROLL_PANS** = ``1``
 
-:kbd:`鼠标滚轮`\ 进行视图的移动，\ :kbd:`Ctrl + 鼠标滚轮`\ 进行缩放。
+:kbd:`Mouse Wheel` will move the view, :kbd:`Ctrl + Mouse Wheel` will zoom.
 
 .. rst-class:: classref-item-separator
 
@@ -492,7 +490,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 :ref:`GridPattern<enum_GraphEdit_GridPattern>` **GRID_PATTERN_LINES** = ``0``
 
-使用实线绘制网格。
+Draw the grid using solid lines.
 
 .. _class_GraphEdit_constant_GRID_PATTERN_DOTS:
 
@@ -500,7 +498,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 :ref:`GridPattern<enum_GraphEdit_GridPattern>` **GRID_PATTERN_DOTS** = ``1``
 
-使用点线绘制网格。
+Draw the grid using dots.
 
 .. rst-class:: classref-section-separator
 
@@ -508,8 +506,8 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_GraphEdit_property_connection_lines_antialiased:
 
@@ -522,7 +520,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_connection_lines_antialiased**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_connection_lines_antialiased**\ (\ )
 
-如果为 ``true``\ ，节点之间的线将使用抗锯齿。
+If ``true``, the lines between nodes will use antialiasing.
 
 .. rst-class:: classref-item-separator
 
@@ -539,7 +537,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_connection_lines_curvature**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_connection_lines_curvature**\ (\ )
 
-节点之间连线的曲率。0 得到的是直线。
+The curvature of the lines between the nodes. 0 results in straight lines.
 
 .. rst-class:: classref-item-separator
 
@@ -556,7 +554,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_connection_lines_thickness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_connection_lines_thickness**\ (\ )
 
-节点之间连线的粗细。
+The thickness of the lines between the nodes.
 
 .. rst-class:: classref-item-separator
 
@@ -573,9 +571,9 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_connections**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_connection_list**\ (\ )
 
-:ref:`GraphNode<class_GraphNode>` 之间的连接。
+The connections between :ref:`GraphNode<class_GraphNode>`\ s.
 
-连接由 :ref:`Dictionary<class_Dictionary>` 代表，形式为：
+A connection is represented as a :ref:`Dictionary<class_Dictionary>` in the form of:
 
 ::
 
@@ -587,7 +585,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
         keep_alive: bool
     }
 
-重绘时，如果 ``keep_alive`` 为 ``false`` 的连接无效，则可能会被自动删除。
+Connections with ``keep_alive`` set to ``false`` may be deleted automatically if invalid during a redraw.
 
 .. rst-class:: classref-item-separator
 
@@ -604,7 +602,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_grid_pattern**\ (\ value\: :ref:`GridPattern<enum_GraphEdit_GridPattern>`\ )
 - :ref:`GridPattern<enum_GraphEdit_GridPattern>` **get_grid_pattern**\ (\ )
 
-绘制网格时使用的图案。
+The pattern used for drawing the grid.
 
 .. rst-class:: classref-item-separator
 
@@ -621,7 +619,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_minimap_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_minimap_enabled**\ (\ )
 
-如果为 ``true``\ ，小图是可见的。
+If ``true``, the minimap is visible.
 
 .. rst-class:: classref-item-separator
 
@@ -638,7 +636,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_minimap_opacity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_minimap_opacity**\ (\ )
 
-小图矩形的不透明度。
+The opacity of the minimap rectangle.
 
 .. rst-class:: classref-item-separator
 
@@ -655,7 +653,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_minimap_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_minimap_size**\ (\ )
 
-小图矩形的大小。地图自身基于网格区域的大小，并被缩放以适应这个矩形。
+The size of the minimap rectangle. The map itself is based on the size of the grid area and is scaled to fit this rectangle.
 
 .. rst-class:: classref-item-separator
 
@@ -672,7 +670,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_panning_scheme**\ (\ value\: :ref:`PanningScheme<enum_GraphEdit_PanningScheme>`\ )
 - :ref:`PanningScheme<enum_GraphEdit_PanningScheme>` **get_panning_scheme**\ (\ )
 
-定义使用鼠标滚轮平移的控制方案。
+Defines the control scheme for panning with mouse wheel.
 
 .. rst-class:: classref-item-separator
 
@@ -689,7 +687,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_right_disconnects**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_right_disconnects_enabled**\ (\ )
 
-如果为 ``true``\ ，通过拖动右端，可以断开 GraphEdit 中现有的连接。
+If ``true``, enables disconnection of existing connections in the GraphEdit by dragging the right end.
 
 .. rst-class:: classref-item-separator
 
@@ -706,7 +704,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_scroll_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_scroll_offset**\ (\ )
 
-滚动偏移量。
+The scroll offset.
 
 .. rst-class:: classref-item-separator
 
@@ -723,7 +721,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_show_arrange_button**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_showing_arrange_button**\ (\ )
 
-如果为 ``true``\ ，则自动排列图形节点的按钮可见。
+If ``true``, the button to automatically arrange graph nodes is visible.
 
 .. rst-class:: classref-item-separator
 
@@ -740,7 +738,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_show_grid**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_showing_grid**\ (\ )
 
-如果为 ``true``\ ，则该网格可见。
+If ``true``, the grid is visible.
 
 .. rst-class:: classref-item-separator
 
@@ -757,7 +755,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_show_grid_buttons**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_showing_grid_buttons**\ (\ )
 
-如果为 ``true``\ ，则允许配置栅格和吸附选项的按钮可见。
+If ``true``, buttons that allow to configure grid and snapping options are visible.
 
 .. rst-class:: classref-item-separator
 
@@ -774,7 +772,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_show_menu**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_showing_menu**\ (\ )
 
-如果为 ``true``\ ，则菜单栏可见。
+If ``true``, the menu toolbar is visible.
 
 .. rst-class:: classref-item-separator
 
@@ -791,7 +789,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_show_minimap_button**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_showing_minimap_button**\ (\ )
 
-如果为 ``true``\ ，则切换小地图的按钮可见。
+If ``true``, the button to toggle the minimap is visible.
 
 .. rst-class:: classref-item-separator
 
@@ -808,7 +806,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_show_zoom_buttons**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_showing_zoom_buttons**\ (\ )
 
-如果为 ``true``\ ，则允许更改和重置缩放级别的按钮可见。
+If ``true``, buttons that allow to change and reset the zoom level are visible.
 
 .. rst-class:: classref-item-separator
 
@@ -825,7 +823,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_show_zoom_label**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_showing_zoom_label**\ (\ )
 
-如果为 ``true``\ ，则使带有当前缩放级别的标签可见。缩放级别以百分比显示。
+If ``true``, the label with the current zoom level is visible. The zoom level is displayed in percents.
 
 .. rst-class:: classref-item-separator
 
@@ -842,7 +840,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_snapping_distance**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_snapping_distance**\ (\ )
 
-吸附距离，单位为像素，也决定了栅格线距离。
+The snapping distance in pixels, also determines the grid line distance.
 
 .. rst-class:: classref-item-separator
 
@@ -859,7 +857,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_snapping_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_snapping_enabled**\ (\ )
 
-如果为 ``true``\ ，启用自动吸附。
+If ``true``, enables snapping.
 
 .. rst-class:: classref-item-separator
 
@@ -893,7 +891,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_zoom**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_zoom**\ (\ )
 
-当前缩放值。
+The current zoom value.
 
 .. rst-class:: classref-item-separator
 
@@ -910,7 +908,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_zoom_max**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_zoom_max**\ (\ )
 
-缩放上限。
+The upper zoom limit.
 
 .. rst-class:: classref-item-separator
 
@@ -927,7 +925,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_zoom_min**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_zoom_min**\ (\ )
 
-缩放下限。
+The lower zoom limit.
 
 .. rst-class:: classref-item-separator
 
@@ -944,7 +942,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 - |void| **set_zoom_step**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_zoom_step**\ (\ )
 
-每个缩放级别的步长。
+The step of each zoom level.
 
 .. rst-class:: classref-section-separator
 
@@ -952,8 +950,8 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_GraphEdit_private_method__get_connection_line:
 
@@ -961,7 +959,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **_get_connection_line**\ (\ from_position\: :ref:`Vector2<class_Vector2>`, to_position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |const| :ref:`🔗<class_GraphEdit_private_method__get_connection_line>`
 
-可以重写的虚方法，以自定义如何绘制连接。
+Virtual method which can be overridden to customize how connections are drawn.
 
 .. rst-class:: classref-item-separator
 
@@ -973,11 +971,11 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 :ref:`bool<class_bool>` **_is_in_input_hotzone**\ (\ in_node\: :ref:`Object<class_Object>`, in_port\: :ref:`int<class_int>`, mouse_position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| :ref:`🔗<class_GraphEdit_private_method__is_in_input_hotzone>`
 
-返回 ``mouse_position`` 是否在输入热区。
+Returns whether the ``mouse_position`` is in the input hot zone.
 
-默认情况下，热区是一个 :ref:`Rect2<class_Rect2>`\ ，其中心位于 ``in_node``.\ :ref:`GraphNode.get_input_port_position()<class_GraphNode_method_get_input_port_position>`\ (``in_port``)（对于输出的情况，请改为调用 :ref:`GraphNode.get_output_port_position()<class_GraphNode_method_get_output_port_position>`\ ）。热区的宽度是主题属性 ``port_grab_distance_horizontal`` 的两倍，高度是 ``port_grab_distance_vertical`` 的两倍。
+By default, a hot zone is a :ref:`Rect2<class_Rect2>` positioned such that its center is at ``in_node``.\ :ref:`GraphNode.get_input_port_position()<class_GraphNode_method_get_input_port_position>`\ (``in_port``) (For output's case, call :ref:`GraphNode.get_output_port_position()<class_GraphNode_method_get_output_port_position>` instead). The hot zone's width is twice the Theme Property ``port_grab_distance_horizontal``, and its height is twice the ``port_grab_distance_vertical``.
 
-下面是一个示例代码，以帮助入门：
+Below is a sample code to help get started:
 
 ::
 
@@ -998,9 +996,9 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 :ref:`bool<class_bool>` **_is_in_output_hotzone**\ (\ in_node\: :ref:`Object<class_Object>`, in_port\: :ref:`int<class_int>`, mouse_position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| :ref:`🔗<class_GraphEdit_private_method__is_in_output_hotzone>`
 
-返回 ``mouse_position`` 是否在输出热区。有关热区的更多信息，请参阅 :ref:`_is_in_input_hotzone()<class_GraphEdit_private_method__is_in_input_hotzone>`\ 。
+Returns whether the ``mouse_position`` is in the output hot zone. For more information on hot zones, see :ref:`_is_in_input_hotzone()<class_GraphEdit_private_method__is_in_input_hotzone>`.
 
-下面是一个示例代码，以帮助入门：
+Below is a sample code to help get started:
 
 ::
 
@@ -1021,11 +1019,11 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 :ref:`bool<class_bool>` **_is_node_hover_valid**\ (\ from_node\: :ref:`StringName<class_StringName>`, from_port\: :ref:`int<class_int>`, to_node\: :ref:`StringName<class_StringName>`, to_port\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_GraphEdit_private_method__is_node_hover_valid>`
 
-当用户在有效端口上拖动连接时，该虚拟方法可用于插入额外的错误检测。
+This virtual method can be used to insert additional error detection while the user is dragging a connection over a valid port.
 
-如果连接确实有效，则返回 ``true``\ ；如果连接不可能，则返回 ``false``\ 。如果连接是不可能的，则不会捕捉到该端口，因此不会发起对该端口的连接请求。
+Return ``true`` if the connection is indeed valid or return ``false`` if the connection is impossible. If the connection is impossible, no snapping to the port and thus no connection request to that port will happen.
 
-在该示例中，抑制了与同一节点的连接：
+In this example a connection to same node is suppressed:
 
 
 .. tabs::
@@ -1054,9 +1052,9 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 |void| **add_valid_connection_type**\ (\ from_type\: :ref:`int<class_int>`, to_type\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphEdit_method_add_valid_connection_type>`
 
-允许两种不同端口类型之间的连接。端口类型是使用 :ref:`GraphNode.set_slot()<class_GraphNode_method_set_slot>` 方法为每个插槽的左右端口单独定义的。
+Allows the connection between two different port types. The port type is defined individually for the left and the right port of each slot with the :ref:`GraphNode.set_slot()<class_GraphNode_method_set_slot>` method.
 
-另见 :ref:`is_valid_connection_type()<class_GraphEdit_method_is_valid_connection_type>` 和 :ref:`remove_valid_connection_type()<class_GraphEdit_method_remove_valid_connection_type>`\ 。
+See also :ref:`is_valid_connection_type()<class_GraphEdit_method_is_valid_connection_type>` and :ref:`remove_valid_connection_type()<class_GraphEdit_method_remove_valid_connection_type>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1068,7 +1066,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 |void| **add_valid_left_disconnect_type**\ (\ type\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphEdit_method_add_valid_left_disconnect_type>`
 
-如果 :ref:`GraphNode<class_GraphNode>` 插槽的左侧端口具有指定的类型，则允许在从该端口拖动时断开节点。另见 :ref:`remove_valid_left_disconnect_type()<class_GraphEdit_method_remove_valid_left_disconnect_type>`\ 。
+Allows to disconnect nodes when dragging from the left port of the :ref:`GraphNode<class_GraphNode>`'s slot if it has the specified type. See also :ref:`remove_valid_left_disconnect_type()<class_GraphEdit_method_remove_valid_left_disconnect_type>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1080,7 +1078,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 |void| **add_valid_right_disconnect_type**\ (\ type\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphEdit_method_add_valid_right_disconnect_type>`
 
-如果 :ref:`GraphNode<class_GraphNode>` 插槽的右侧端口具有指定的类型，则允许在从该端口拖动时断开节点。另见 :ref:`remove_valid_right_disconnect_type()<class_GraphEdit_method_remove_valid_right_disconnect_type>`\ 。
+Allows to disconnect nodes when dragging from the right port of the :ref:`GraphNode<class_GraphNode>`'s slot if it has the specified type. See also :ref:`remove_valid_right_disconnect_type()<class_GraphEdit_method_remove_valid_right_disconnect_type>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1092,7 +1090,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 |void| **arrange_nodes**\ (\ ) :ref:`🔗<class_GraphEdit_method_arrange_nodes>`
 
-重新排列布局中的选定节点，使连接之间的交叉最少，节点之间的水平和垂直间隙保持一致。
+Rearranges selected nodes in a layout with minimum crossings between connections and uniform horizontal and vertical gap between nodes.
 
 .. rst-class:: classref-item-separator
 
@@ -1104,7 +1102,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 |void| **attach_graph_element_to_frame**\ (\ element\: :ref:`StringName<class_StringName>`, frame\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_GraphEdit_method_attach_graph_element_to_frame>`
 
-将 ``element`` :ref:`GraphElement<class_GraphElement>` 附加到 ``frame`` :ref:`GraphFrame<class_GraphFrame>`\ 。
+Attaches the ``element`` :ref:`GraphElement<class_GraphElement>` to the ``frame`` :ref:`GraphFrame<class_GraphFrame>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1116,7 +1114,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 |void| **clear_connections**\ (\ ) :ref:`🔗<class_GraphEdit_method_clear_connections>`
 
-移除节点之间的所有连接。
+Removes all connections between nodes.
 
 .. rst-class:: classref-item-separator
 
@@ -1128,9 +1126,9 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **connect_node**\ (\ from_node\: :ref:`StringName<class_StringName>`, from_port\: :ref:`int<class_int>`, to_node\: :ref:`StringName<class_StringName>`, to_port\: :ref:`int<class_int>`, keep_alive\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_GraphEdit_method_connect_node>`
 
-在来源 :ref:`GraphNode<class_GraphNode>` 节点 ``from_node`` 的 ``from_port`` 端口和目标 :ref:`GraphNode<class_GraphNode>` 节点 ``to_node`` 的 ``to_port`` 端口之间创建连接。如果已存在连接，则不会创建连接。
+Create a connection between the ``from_port`` of the ``from_node`` :ref:`GraphNode<class_GraphNode>` and the ``to_port`` of the ``to_node`` :ref:`GraphNode<class_GraphNode>`. If the connection already exists, no connection is created.
 
-\ ``keep_alive`` 为 ``false`` 的连接如果在重绘期间失效，则可能会被自动删除。
+Connections with ``keep_alive`` set to ``false`` may be deleted automatically if invalid during a redraw.
 
 .. rst-class:: classref-item-separator
 
@@ -1142,7 +1140,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 |void| **detach_graph_element_from_frame**\ (\ element\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_GraphEdit_method_detach_graph_element_from_frame>`
 
-将 ``element`` :ref:`GraphElement<class_GraphElement>` 从其当前附加的 :ref:`GraphFrame<class_GraphFrame>` 中分离出来。
+Detaches the ``element`` :ref:`GraphElement<class_GraphElement>` from the :ref:`GraphFrame<class_GraphFrame>` it is currently attached to.
 
 .. rst-class:: classref-item-separator
 
@@ -1154,7 +1152,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 |void| **disconnect_node**\ (\ from_node\: :ref:`StringName<class_StringName>`, from_port\: :ref:`int<class_int>`, to_node\: :ref:`StringName<class_StringName>`, to_port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphEdit_method_disconnect_node>`
 
-移除 ``from_node`` :ref:`GraphNode<class_GraphNode>` 的 ``from_port`` 和 ``to_node`` :ref:`GraphNode<class_GraphNode>` 的 ``to_port`` 之间的连接。如果该连接不存在，则不移除任何连接。
+Removes the connection between the ``from_port`` of the ``from_node`` :ref:`GraphNode<class_GraphNode>` and the ``to_port`` of the ``to_node`` :ref:`GraphNode<class_GraphNode>`. If the connection does not exist, no connection is removed.
 
 .. rst-class:: classref-item-separator
 
@@ -1166,11 +1164,11 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 |void| **force_connection_drag_end**\ (\ ) :ref:`🔗<class_GraphEdit_method_force_connection_drag_end>`
 
-结束当前连接的创建。换句话说，如果正在拖动一个连接，可以使用该方法中止该过程，并移除鼠标光标后面的线。
+Ends the creation of the current connection. In other words, if you are dragging a connection you can use this method to abort the process and remove the line that followed your cursor.
 
-这最好与 :ref:`connection_drag_started<class_GraphEdit_signal_connection_drag_started>` 和 :ref:`connection_drag_ended<class_GraphEdit_signal_connection_drag_ended>` 一起使用，以添加自定义的行为，如通过快捷方式添加节点。
+This is best used together with :ref:`connection_drag_started<class_GraphEdit_signal_connection_drag_started>` and :ref:`connection_drag_ended<class_GraphEdit_signal_connection_drag_ended>` to add custom behavior like node addition through shortcuts.
 
-\ **注意：**\ 该方法会抑制除 :ref:`connection_drag_ended<class_GraphEdit_signal_connection_drag_ended>` 之外的任何其他连接请求信号。
+\ **Note:** This method suppresses any other connection request signals apart from :ref:`connection_drag_ended<class_GraphEdit_signal_connection_drag_ended>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1182,7 +1180,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\] **get_attached_nodes_of_frame**\ (\ frame\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_GraphEdit_method_get_attached_nodes_of_frame>`
 
-返回附加到给定名称的 :ref:`GraphFrame<class_GraphFrame>` 的节点名称数组。
+Returns an array of node names that are attached to the :ref:`GraphFrame<class_GraphFrame>` with the given name.
 
 .. rst-class:: classref-item-separator
 
@@ -1194,9 +1192,9 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 :ref:`Dictionary<class_Dictionary>` **get_closest_connection_at_point**\ (\ point\: :ref:`Vector2<class_Vector2>`, max_distance\: :ref:`float<class_float>` = 4.0\ ) |const| :ref:`🔗<class_GraphEdit_method_get_closest_connection_at_point>`
 
-返回到屏幕空间中给定点的最近连接。如果在 ``max_distance`` 像素内未找到连接，则返回空的 :ref:`Dictionary<class_Dictionary>`\ 。
+Returns the closest connection to the given point in screen space. If no connection is found within ``max_distance`` pixels, an empty :ref:`Dictionary<class_Dictionary>` is returned.
 
-连接由以下形式的结构组成：
+A connection is represented as a :ref:`Dictionary<class_Dictionary>` in the form of:
 
 ::
 
@@ -1208,7 +1206,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
         keep_alive: bool
     }
 
-例如，可以像这样实现获取在给定鼠标位置处的连接：
+For example, getting a connection at a given mouse position can be achieved like this:
 
 
 .. tabs::
@@ -1229,7 +1227,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 :ref:`int<class_int>` **get_connection_count**\ (\ from_node\: :ref:`StringName<class_StringName>`, from_port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphEdit_method_get_connection_count>`
 
-返回 ``from_node`` 节点的 ``from_port`` 端口的连接数量。
+Returns the number of connections from ``from_port`` of ``from_node``.
 
 .. rst-class:: classref-item-separator
 
@@ -1241,7 +1239,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_connection_line**\ (\ from_node\: :ref:`Vector2<class_Vector2>`, to_node\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_GraphEdit_method_get_connection_line>`
 
-返回构成 ``from_node`` 和 ``to_node`` 之间的连接的点。
+Returns the points which would make up a connection between ``from_node`` and ``to_node``.
 
 .. rst-class:: classref-item-separator
 
@@ -1253,9 +1251,9 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_connection_list_from_node**\ (\ node\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_GraphEdit_method_get_connection_list_from_node>`
 
-返回包含 ``node`` 节点所有连接的 :ref:`Array<class_Array>`\ 。
+Returns an :ref:`Array<class_Array>` containing a list of all connections for ``node``.
 
-连接使用 :ref:`Dictionary<class_Dictionary>` 表示，形式为：
+A connection is represented as a :ref:`Dictionary<class_Dictionary>` in the form of:
 
 ::
 
@@ -1267,7 +1265,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
         keep_alive: bool
     }
 
-\ **示例：**\ 获取指定端口的所有连接：
+\ **Example:** Get all connections on a specific port:
 
 ::
 
@@ -1298,9 +1296,9 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_connections_intersecting_with_rect**\ (\ rect\: :ref:`Rect2<class_Rect2>`\ ) |const| :ref:`🔗<class_GraphEdit_method_get_connections_intersecting_with_rect>`
 
-返回一个 :ref:`Array<class_Array>`\ ，其中包含与给定 :ref:`Rect2<class_Rect2>` 相交的连接列表。
+Returns an :ref:`Array<class_Array>` containing the list of connections that intersect with the given :ref:`Rect2<class_Rect2>`.
 
-连接由 :ref:`Dictionary<class_Dictionary>` 表示，结构如下：
+A connection is represented as a :ref:`Dictionary<class_Dictionary>` in the form of:
 
 ::
 
@@ -1322,7 +1320,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 :ref:`GraphFrame<class_GraphFrame>` **get_element_frame**\ (\ element\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_GraphEdit_method_get_element_frame>`
 
-返回包含给定名称的 :ref:`GraphElement<class_GraphElement>` 的 :ref:`GraphFrame<class_GraphFrame>`\ 。
+Returns the :ref:`GraphFrame<class_GraphFrame>` that contains the :ref:`GraphElement<class_GraphElement>` with the given name.
 
 .. rst-class:: classref-item-separator
 
@@ -1334,9 +1332,9 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 :ref:`HBoxContainer<class_HBoxContainer>` **get_menu_hbox**\ (\ ) :ref:`🔗<class_GraphEdit_method_get_menu_hbox>`
 
-获取包含图形左上角的缩放和网格捕捉控件的 :ref:`HBoxContainer<class_HBoxContainer>`\ 。你可以使用此方法重新定位工具栏或向其添加自定义控件。
+Gets the :ref:`HBoxContainer<class_HBoxContainer>` that contains the zooming and grid snap controls in the top left of the graph. You can use this method to reposition the toolbar or to add your own custom controls to it.
 
-\ **警告：**\ 这是一个必需的内部节点，删除和释放它可能会导致崩溃。如果你希望隐藏它或其任何子项，请使用它们的 :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` 属性。
+\ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` property.
 
 .. rst-class:: classref-item-separator
 
@@ -1348,7 +1346,7 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 :ref:`bool<class_bool>` **is_node_connected**\ (\ from_node\: :ref:`StringName<class_StringName>`, from_port\: :ref:`int<class_int>`, to_node\: :ref:`StringName<class_StringName>`, to_port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphEdit_method_is_node_connected>`
 
-如果 ``from_node`` :ref:`GraphNode<class_GraphNode>` 的 ``from_port`` 连接到 ``to_node`` :ref:`GraphNode<class_GraphNode>` 的 ``to_port``\ ，则返回 ``true``\ 。
+Returns ``true`` if the ``from_port`` of the ``from_node`` :ref:`GraphNode<class_GraphNode>` is connected to the ``to_port`` of the ``to_node`` :ref:`GraphNode<class_GraphNode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1360,9 +1358,9 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 :ref:`bool<class_bool>` **is_valid_connection_type**\ (\ from_type\: :ref:`int<class_int>`, to_type\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GraphEdit_method_is_valid_connection_type>`
 
-返回是否可以在两种不同的端口类型之间建立连接。端口类型是使用 :ref:`GraphNode.set_slot()<class_GraphNode_method_set_slot>` 方法为每个插槽的左右端口单独定义的。
+Returns whether it's possible to make a connection between two different port types. The port type is defined individually for the left and the right port of each slot with the :ref:`GraphNode.set_slot()<class_GraphNode_method_set_slot>` method.
 
-另见 :ref:`add_valid_connection_type()<class_GraphEdit_method_add_valid_connection_type>` 和 :ref:`remove_valid_connection_type()<class_GraphEdit_method_remove_valid_connection_type>`\ 。
+See also :ref:`add_valid_connection_type()<class_GraphEdit_method_add_valid_connection_type>` and :ref:`remove_valid_connection_type()<class_GraphEdit_method_remove_valid_connection_type>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1374,9 +1372,9 @@ enum **GridPattern**: :ref:`🔗<enum_GraphEdit_GridPattern>`
 
 |void| **remove_valid_connection_type**\ (\ from_type\: :ref:`int<class_int>`, to_type\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphEdit_method_remove_valid_connection_type>`
 
-不允许先前由 :ref:`add_valid_connection_type()<class_GraphEdit_method_add_valid_connection_type>` 允许的两种不同端口类型之间的连接。端口类型是通过 :ref:`GraphNode.set_slot()<class_GraphNode_method_set_slot>` 方法为每个插槽的左右端口单独定义的。
+Disallows the connection between two different port types previously allowed by :ref:`add_valid_connection_type()<class_GraphEdit_method_add_valid_connection_type>`. The port type is defined individually for the left and the right port of each slot with the :ref:`GraphNode.set_slot()<class_GraphNode_method_set_slot>` method.
 
-另见 :ref:`is_valid_connection_type()<class_GraphEdit_method_is_valid_connection_type>`\ 。
+See also :ref:`is_valid_connection_type()<class_GraphEdit_method_is_valid_connection_type>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1412,7 +1410,7 @@ Disallows to disconnect nodes when dragging from the right port of the :ref:`Gra
 
 |void| **set_connection_activity**\ (\ from_node\: :ref:`StringName<class_StringName>`, from_port\: :ref:`int<class_int>`, to_node\: :ref:`StringName<class_StringName>`, to_port\: :ref:`int<class_int>`, amount\: :ref:`float<class_float>`\ ) :ref:`🔗<class_GraphEdit_method_set_connection_activity>`
 
-使用 :ref:`activity<class_GraphEdit_theme_color_activity>` 主题属性中提供的颜色，设置 ``from_node`` 的 ``from_port`` 和 ``to_node`` 的 ``to_port`` 之间的连接的颜色。使用 ``amount`` 作为权重，在连接颜色和活动颜色之间线性插值颜色。
+Sets the coloration of the connection between ``from_node``'s ``from_port`` and ``to_node``'s ``to_port`` with the color provided in the :ref:`activity<class_GraphEdit_theme_color_activity>` theme property. The color is linearly interpolated between the connection color and the activity color using ``amount`` as weight.
 
 .. rst-class:: classref-item-separator
 
@@ -1424,7 +1422,7 @@ Disallows to disconnect nodes when dragging from the right port of the :ref:`Gra
 
 |void| **set_selected**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_GraphEdit_method_set_selected>`
 
-将指定的 ``node`` 节点设置为选中的节点。
+Sets the specified ``node`` as the one selected.
 
 .. rst-class:: classref-section-separator
 
@@ -1432,8 +1430,8 @@ Disallows to disconnect nodes when dragging from the right port of the :ref:`Gra
 
 .. rst-class:: classref-descriptions-group
 
-主题属性说明
-------------
+Theme Property Descriptions
+---------------------------
 
 .. _class_GraphEdit_theme_color_activity:
 
@@ -1441,7 +1439,7 @@ Disallows to disconnect nodes when dragging from the right port of the :ref:`Gra
 
 :ref:`Color<class_Color>` **activity** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_GraphEdit_theme_color_activity>`
 
-根据连接的活动值插入连接线的颜色（请参阅 :ref:`set_connection_activity()<class_GraphEdit_method_set_connection_activity>`\ ）。
+Color the connection line is interpolated to based on the activity value of a connection (see :ref:`set_connection_activity()<class_GraphEdit_method_set_connection_activity>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1453,7 +1451,7 @@ Disallows to disconnect nodes when dragging from the right port of the :ref:`Gra
 
 :ref:`Color<class_Color>` **connection_hover_tint_color** = ``Color(0, 0, 0, 0.3)`` :ref:`🔗<class_GraphEdit_theme_color_connection_hover_tint_color>`
 
-当鼠标悬停在连接线上时与该连接线混合的颜色。
+Color which is blended with the connection line when the mouse is hovering over it.
 
 .. rst-class:: classref-item-separator
 
@@ -1465,7 +1463,7 @@ Disallows to disconnect nodes when dragging from the right port of the :ref:`Gra
 
 :ref:`Color<class_Color>` **connection_rim_color** = ``Color(0.1, 0.1, 0.1, 0.6)`` :ref:`🔗<class_GraphEdit_theme_color_connection_rim_color>`
 
-每条连接线周围的边缘颜色，用于使相交线更容易区分。
+Color of the rim around each connection line used for making intersecting lines more distinguishable.
 
 .. rst-class:: classref-item-separator
 
@@ -1477,7 +1475,7 @@ Disallows to disconnect nodes when dragging from the right port of the :ref:`Gra
 
 :ref:`Color<class_Color>` **connection_valid_target_tint_color** = ``Color(1, 1, 1, 0.4)`` :ref:`🔗<class_GraphEdit_theme_color_connection_valid_target_tint_color>`
 
-当前拖动的连接悬停在有效目标端口上时与该连接线混合的颜色。
+Color which is blended with the connection line when the currently dragged connection is hovering over a valid target port.
 
 .. rst-class:: classref-item-separator
 
@@ -1489,7 +1487,7 @@ Disallows to disconnect nodes when dragging from the right port of the :ref:`Gra
 
 :ref:`Color<class_Color>` **grid_major** = ``Color(1, 1, 1, 0.2)`` :ref:`🔗<class_GraphEdit_theme_color_grid_major>`
 
-主要栅格线/点的颜色。
+Color of major grid lines/dots.
 
 .. rst-class:: classref-item-separator
 
@@ -1501,7 +1499,7 @@ Disallows to disconnect nodes when dragging from the right port of the :ref:`Gra
 
 :ref:`Color<class_Color>` **grid_minor** = ``Color(1, 1, 1, 0.05)`` :ref:`🔗<class_GraphEdit_theme_color_grid_minor>`
 
-次要栅格线/点的颜色。
+Color of minor grid lines/dots.
 
 .. rst-class:: classref-item-separator
 
@@ -1513,7 +1511,7 @@ Disallows to disconnect nodes when dragging from the right port of the :ref:`Gra
 
 :ref:`Color<class_Color>` **selection_fill** = ``Color(1, 1, 1, 0.3)`` :ref:`🔗<class_GraphEdit_theme_color_selection_fill>`
 
-选定的矩形的填充颜色。
+The fill color of the selection rectangle.
 
 .. rst-class:: classref-item-separator
 
@@ -1525,7 +1523,7 @@ Disallows to disconnect nodes when dragging from the right port of the :ref:`Gra
 
 :ref:`Color<class_Color>` **selection_stroke** = ``Color(1, 1, 1, 0.8)`` :ref:`🔗<class_GraphEdit_theme_color_selection_stroke>`
 
-选择的矩形的轮廓颜色。
+The outline color of the selection rectangle.
 
 .. rst-class:: classref-item-separator
 
@@ -1549,7 +1547,7 @@ Widens the line of a connection when the mouse is hovering over it by a percenta
 
 :ref:`int<class_int>` **port_hotzone_inner_extent** = ``22`` :ref:`🔗<class_GraphEdit_theme_constant_port_hotzone_inner_extent>`
 
-能够抓取端口的（内侧）横向范围。
+The horizontal range within which a port can be grabbed (inner side).
 
 .. rst-class:: classref-item-separator
 
@@ -1561,7 +1559,7 @@ Widens the line of a connection when the mouse is hovering over it by a percenta
 
 :ref:`int<class_int>` **port_hotzone_outer_extent** = ``26`` :ref:`🔗<class_GraphEdit_theme_constant_port_hotzone_outer_extent>`
 
-能够抓取端口的（外侧）横向范围。
+The horizontal range within which a port can be grabbed (outer side).
 
 .. rst-class:: classref-item-separator
 
@@ -1573,7 +1571,7 @@ Widens the line of a connection when the mouse is hovering over it by a percenta
 
 :ref:`Texture2D<class_Texture2D>` **grid_toggle** :ref:`🔗<class_GraphEdit_theme_icon_grid_toggle>`
 
-网格开关按钮的图标。
+The icon for the grid toggle button.
 
 .. rst-class:: classref-item-separator
 
@@ -1585,7 +1583,7 @@ Widens the line of a connection when the mouse is hovering over it by a percenta
 
 :ref:`Texture2D<class_Texture2D>` **layout** :ref:`🔗<class_GraphEdit_theme_icon_layout>`
 
-用于自动排列图形的布局按钮的图标。
+The icon for the layout button for auto-arranging the graph.
 
 .. rst-class:: classref-item-separator
 
@@ -1597,7 +1595,7 @@ Widens the line of a connection when the mouse is hovering over it by a percenta
 
 :ref:`Texture2D<class_Texture2D>` **minimap_toggle** :ref:`🔗<class_GraphEdit_theme_icon_minimap_toggle>`
 
-小地图开关按钮的图标。
+The icon for the minimap toggle button.
 
 .. rst-class:: classref-item-separator
 
@@ -1609,7 +1607,7 @@ Widens the line of a connection when the mouse is hovering over it by a percenta
 
 :ref:`Texture2D<class_Texture2D>` **snapping_toggle** :ref:`🔗<class_GraphEdit_theme_icon_snapping_toggle>`
 
-吸附开关按钮的图标。
+The icon for the snapping toggle button.
 
 .. rst-class:: classref-item-separator
 
@@ -1621,7 +1619,7 @@ Widens the line of a connection when the mouse is hovering over it by a percenta
 
 :ref:`Texture2D<class_Texture2D>` **zoom_in** :ref:`🔗<class_GraphEdit_theme_icon_zoom_in>`
 
-放大按钮的图标。
+The icon for the zoom in button.
 
 .. rst-class:: classref-item-separator
 
@@ -1633,7 +1631,7 @@ Widens the line of a connection when the mouse is hovering over it by a percenta
 
 :ref:`Texture2D<class_Texture2D>` **zoom_out** :ref:`🔗<class_GraphEdit_theme_icon_zoom_out>`
 
-缩小按钮的图标。
+The icon for the zoom out button.
 
 .. rst-class:: classref-item-separator
 
@@ -1645,7 +1643,7 @@ Widens the line of a connection when the mouse is hovering over it by a percenta
 
 :ref:`Texture2D<class_Texture2D>` **zoom_reset** :ref:`🔗<class_GraphEdit_theme_icon_zoom_reset>`
 
-缩放重置按钮的图标。
+The icon for the zoom reset button.
 
 .. rst-class:: classref-item-separator
 
@@ -1671,7 +1669,7 @@ Widens the line of a connection when the mouse is hovering over it by a percenta
 
 :ref:`StyleBox<class_StyleBox>` **panel** :ref:`🔗<class_GraphEdit_theme_style_panel>`
 
-绘制在栅格下方的背景。
+The background drawn under the grid.
 
 .. rst-class:: classref-item-separator
 
@@ -1683,14 +1681,14 @@ Widens the line of a connection when the mouse is hovering over it by a percenta
 
 :ref:`StyleBox<class_StyleBox>` **panel_focus** :ref:`🔗<class_GraphEdit_theme_style_panel_focus>`
 
-当 **GraphEdit** 处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ （使用辅助应用时）。
+:ref:`StyleBox<class_StyleBox>` used when the **GraphEdit** is focused (when used with assistive apps).
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

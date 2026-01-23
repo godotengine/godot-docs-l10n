@@ -5,31 +5,31 @@
 EditorInspector
 ===============
 
-**繼承：** :ref:`ScrollContainer<class_ScrollContainer>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`ScrollContainer<class_ScrollContainer>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-用於編輯物件屬性的控制項。
+A control used to edit properties of an object.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-這是實作編輯器設定對話框、屬性檢視器面板等中屬性編輯功能的 Control。若要取得在編輯器屬性檢視器面板中使用的 **EditorInspector**\ ，請使用 :ref:`EditorInterface.get_inspector()<class_EditorInterface_method_get_inspector>`\ 。
+This is the control that implements property editing in the editor's Settings dialogs, the Inspector dock, etc. To get the **EditorInspector** used in the editor's Inspector dock, use :ref:`EditorInterface.get_inspector()<class_EditorInterface_method_get_inspector>`.
 
-\ **EditorInspector** 將會依照由 :ref:`Object.get_property_list()<class_Object_method_get_property_list>` 傳回的陣列順序顯示屬性。
+\ **EditorInspector** will show properties in the same order as the array returned by :ref:`Object.get_property_list()<class_Object_method_get_property_list>`.
 
-如果屬性的名稱類似路徑 (亦即如果它包含斜線 /)，\ **EditorInspector** 將會沿著路徑為「目錄」建立巢狀區段。例如，如果屬性名稱為 ``highlighting/gdscript/node_path_color``\ ，它將會顯示為「Node Path Color」，位於巢狀於「Highlighting」區段內的「GDScript」區段中。
+If a property's name is path-like (i.e. if it contains forward slashes), **EditorInspector** will create nested sections for "directories" along the path. For example, if a property is named ``highlighting/gdscript/node_path_color``, it will be shown as "Node Path Color" inside the "GDScript" section nested inside the "Highlighting" section.
 
-如果屬性具有 :ref:`@GlobalScope.PROPERTY_USAGE_GROUP<class_@GlobalScope_constant_PROPERTY_USAGE_GROUP>` 用途，它將會將名稱以屬性提示字串開頭的後續屬性分組。當屬性名稱不是以該提示字串開頭，或當一個新的群組開始時，群組即結束。空的群組名稱實際上會結束目前群組。\ **EditorInspector** 將會為每個群組建立一個頂層區段。例如，如果一個具有群組用途的屬性名稱為 ``Collide With``\ ，且其提示字串為 ``collide_with_``\ ，則後續的 ``collide_with_area`` 屬性將會顯示為「Area」，位於「Collide With」區段內。還有一個特殊情況：當提示字串包含屬性的名稱時，該屬性也會被分組。這主要是為了幫助分組像 ``font``\ 、\ ``font_color`` 和 ``font_size`` 這樣的屬性 (使用提示字串 ``font_``)。
+If a property has :ref:`@GlobalScope.PROPERTY_USAGE_GROUP<class_@GlobalScope_constant_PROPERTY_USAGE_GROUP>` usage, it will group subsequent properties whose name starts with the property's hint string. The group ends when a property does not start with that hint string or when a new group starts. An empty group name effectively ends the current group. **EditorInspector** will create a top-level section for each group. For example, if a property with group usage is named ``Collide With`` and its hint string is ``collide_with_``, a subsequent ``collide_with_area`` property will be shown as "Area" inside the "Collide With" section. There is also a special case: when the hint string contains the name of a property, that property is grouped too. This is mainly to help grouping properties like ``font``, ``font_color`` and ``font_size`` (using the hint string ``font_``).
 
-如果屬性具有 :ref:`@GlobalScope.PROPERTY_USAGE_SUBGROUP<class_@GlobalScope_constant_PROPERTY_USAGE_SUBGROUP>` 用途，將會以與群組相同的方式建立一個子群組，並為每個子群組建立一個第二層區段。
+If a property has :ref:`@GlobalScope.PROPERTY_USAGE_SUBGROUP<class_@GlobalScope_constant_PROPERTY_USAGE_SUBGROUP>` usage, a subgroup will be created in the same way as a group, and a second-level section will be created for each subgroup.
 
-\ **注意：** 與從類似路徑的屬性名稱建立的區段不同，\ **EditorInspector** 不會將從群組建立的區段名稱大寫。因此，具有群組用途的屬性通常使用大寫名稱，而非 snake_case 的名稱。
+\ **Note:** Unlike sections created from path-like property names, **EditorInspector** won't capitalize the name for sections created from groups. So properties with group usage usually use capitalized names instead of snake_cased names.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ EditorInspector
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -68,8 +68,8 @@ EditorInspector
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_EditorInspector_signal_edited_object_changed:
 
@@ -77,7 +77,7 @@ EditorInspector
 
 **edited_object_changed**\ (\ ) :ref:`🔗<class_EditorInspector_signal_edited_object_changed>`
 
-當正在被屬性檢視器編輯的物件已變更時發出。
+Emitted when the object being edited by the inspector has changed.
 
 .. rst-class:: classref-item-separator
 
@@ -89,7 +89,7 @@ EditorInspector
 
 **object_id_selected**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_EditorInspector_signal_object_id_selected>`
 
-當 :ref:`Object<class_Object>` 的編輯按鈕在屬性檢視器中被按下時發出。 這主要用於遠端場景樹屬性檢視器。
+Emitted when the Edit button of an :ref:`Object<class_Object>` has been pressed in the inspector. This is mainly used in the remote scene tree Inspector.
 
 .. rst-class:: classref-item-separator
 
@@ -101,7 +101,7 @@ EditorInspector
 
 **property_deleted**\ (\ property\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInspector_signal_property_deleted>`
 
-當屬性從屬性檢視器中被移除時發出。
+Emitted when a property is removed from the inspector.
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +113,7 @@ EditorInspector
 
 **property_edited**\ (\ property\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInspector_signal_property_edited>`
 
-當屬性在屬性檢視器中被編輯時發出。
+Emitted when a property is edited in the inspector.
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ EditorInspector
 
 **property_keyed**\ (\ property\: :ref:`String<class_String>`, value\: :ref:`Variant<class_Variant>`, advance\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorInspector_signal_property_keyed>`
 
-當屬性在屬性檢視器中被 Key 時發出。當動畫面板被切換時，可以透過點擊屬性旁邊的「Key」圖示來 Key 屬性。
+Emitted when a property is keyed in the inspector. Properties can be keyed by clicking the "key" icon next to a property when the Animation panel is toggled.
 
 .. rst-class:: classref-item-separator
 
@@ -137,7 +137,7 @@ EditorInspector
 
 **property_selected**\ (\ property\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInspector_signal_property_selected>`
 
-當屬性在屬性檢視器中被選取時觸發。
+Emitted when a property is selected in the inspector.
 
 .. rst-class:: classref-item-separator
 
@@ -149,9 +149,9 @@ EditorInspector
 
 **property_toggled**\ (\ property\: :ref:`String<class_String>`, checked\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorInspector_signal_property_toggled>`
 
-當屬性檢視器中的布林值屬性被切換狀態時發出。
+Emitted when a boolean property is toggled in the inspector.
 
-\ **注意：** 如果內部 ``autoclear`` 屬性已啟用，此訊號從未發出。由於此屬性在編輯器屬性檢視器中總是已啟用，因此此訊號不會由編輯器本身發出。
+\ **Note:** This signal is never emitted if the internal ``autoclear`` property enabled. Since this property is always enabled in the editor inspector, this signal is never emitted by the editor itself.
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ EditorInspector
 
 **resource_selected**\ (\ resource\: :ref:`Resource<class_Resource>`, path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInspector_signal_resource_selected>`
 
-當在屬性檢視器中選取資源時發出。
+Emitted when a resource is selected in the inspector.
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ EditorInspector
 
 **restart_requested**\ (\ ) :ref:`🔗<class_EditorInspector_signal_restart_requested>`
 
-當在屬性檢視器中編輯了需要重新啟動才能套用的屬性時發出。這僅用於專案設定和編輯器設定。
+Emitted when a property that requires a restart to be applied is edited in the inspector. This is only used in the Project Settings and Editor Settings.
 
 .. rst-class:: classref-section-separator
 
@@ -183,8 +183,8 @@ EditorInspector
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_EditorInspector_method_edit:
 
@@ -206,7 +206,7 @@ Shows the properties of the given ``object`` in this inspector for editing. To c
 
 :ref:`Object<class_Object>` **get_edited_object**\ (\ ) :ref:`🔗<class_EditorInspector_method_get_edited_object>`
 
-返回發出該訊號的物件。
+Returns the object currently selected in this inspector.
 
 .. rst-class:: classref-item-separator
 
@@ -218,7 +218,7 @@ Shows the properties of the given ``object`` in this inspector for editing. To c
 
 :ref:`String<class_String>` **get_selected_path**\ (\ ) |const| :ref:`🔗<class_EditorInspector_method_get_selected_path>`
 
-獲取目前選定屬性的路徑。
+Gets the path of the currently selected property.
 
 .. rst-class:: classref-item-separator
 
@@ -232,12 +232,12 @@ Shows the properties of the given ``object`` in this inspector for editing. To c
 
 Creates a property editor that can be used by plugin UI to edit the specified property of an ``object``.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

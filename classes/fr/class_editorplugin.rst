@@ -204,7 +204,7 @@ Signaux
 
 **main_screen_changed**\ (\ screen_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorPlugin_signal_main_screen_changed>`
 
-Emitted when user changes the workspace (**2D**, **3D**, **Script**, **Game**, **AssetLib**). Also works with custom screens defined by plugins.
+Émis quand l'utilisateur change d'espace de travail (**2D**, **3D**, **Script**, **Jeu**, **AssetLib**). Fonctionne aussi avec les écrans personnalisés définis par des plugins.
 
 .. rst-class:: classref-item-separator
 
@@ -667,7 +667,7 @@ You need to enable calling of this method by using :ref:`set_force_draw_over_for
 
 :ref:`int<class_int>` **_forward_3d_gui_input**\ (\ viewport_camera\: :ref:`Camera3D<class_Camera3D>`, event\: :ref:`InputEvent<class_InputEvent>`\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__forward_3d_gui_input>`
 
-Appelé lorsqu'il y a un nœud racine dans la scène modifiée actuelle, ``méthode _handles`` est mis en œuvre, et un :ref:`InputEvent<class_InputEvent>` se produit dans la fenêtre d'affichage 3D. La valeur retournée décide si le :ref:`InputEvent<class_InputEvent>` est consommé ou transmis à d'autres **EditorPlugin**. Voir :ref:`AfterGUIInput<enum_EditorPlugin_AfterGUIInput>` pour les options.
+Appelé lorsqu'il y a un nœud racine dans la scène modifiée actuelle, :ref:`_handles()<class_EditorPlugin_private_method__handles>` est mis en œuvre, et un :ref:`InputEvent<class_InputEvent>` se produit dans la fenêtre d'affichage 3D. La valeur retournée décide si le :ref:`InputEvent<class_InputEvent>` est consommé ou transmis à d'autres **EditorPlugin**. Voir :ref:`AfterGUIInput<enum_EditorPlugin_AfterGUIInput>` pour les options.
 
 
 .. tabs::
@@ -782,7 +782,7 @@ You need to enable calling of this method by using :ref:`set_force_draw_over_for
 
 :ref:`bool<class_bool>` **_forward_canvas_gui_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__forward_canvas_gui_input>`
 
-Appelé quand il y a un nœud racine dans la scène en cours d’édition, que :ref:`handles()<class_EditorPlugin_method_handles>` est implémenté et qu'un :ref:`InputEvent<class_InputEvent>` est déclenché dans la fenêtre d'affichage 2D. Si cette méthode retourne ``true``, ``event``\ est intercepté par cet **EditorPlugin**, sinon ``event`` est transmis aux autres classes d'éditeur.
+Appelé quand il y a un nœud racine dans la scène en cours d’édition, que :ref:`_handles()<class_EditorPlugin_private_method__handles>` est implémenté et qu'un :ref:`InputEvent<class_InputEvent>` est déclenché dans la fenêtre d'affichage 2D. Si cette méthode retourne ``true``, ``event``\ est intercepté par cet **EditorPlugin**, sinon ``event`` est transmis aux autres classes d'éditeur.
 
 
 .. tabs::
@@ -1276,13 +1276,13 @@ Voir :ref:`add_inspector_plugin()<class_EditorPlugin_method_add_inspector_plugin
 
 |void| **add_import_plugin**\ (\ importer\: :ref:`EditorImportPlugin<class_EditorImportPlugin>`, first_priority\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_EditorPlugin_method_add_import_plugin>`
 
-Registers a new :ref:`EditorImportPlugin<class_EditorImportPlugin>`. Import plugins are used to import custom and unsupported assets as a custom :ref:`Resource<class_Resource>` type.
+Enregistre un nouveau :ref:`EditorImportPlugin<class_EditorImportPlugin>`. Les plugins d'importation sont utilisés pour importer des éléments personnalisés et non reconnus comme un type personnalisé :ref:`Resource<class_Resource>`.
 
-If ``first_priority`` is ``true``, the new import plugin is inserted first in the list and takes precedence over pre-existing plugins.
+Si ``first_priority`` vaut ``true``, le nouveau plugin d'importation est inséré en premier dans la liste et a priorité sur les plugins préexistants.
 
-\ **Note:** If you want to import custom 3D asset formats use :ref:`add_scene_format_importer_plugin()<class_EditorPlugin_method_add_scene_format_importer_plugin>` instead.
+\ **Note :** Si vous voulez importer des formats d'éléments 3D personnalisés, utilisez plutôt :ref:`add_scene_format_importer_plugin()<class_EditorPlugin_method_add_scene_format_importer_plugin>`.
 
-See :ref:`add_inspector_plugin()<class_EditorPlugin_method_add_inspector_plugin>` for an example of how to register a plugin.
+Voir :ref:`add_inspector_plugin()<class_EditorPlugin_method_add_inspector_plugin>` pour un exemple sur comment enregistrer un plugin.
 
 .. rst-class:: classref-item-separator
 
@@ -1532,7 +1532,7 @@ Met en file d'attente la sauvegarde de la disposition de l'éditeur du projet.
 
 |void| **remove_autoload_singleton**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_autoload_singleton>`
 
-Removes an Autoload ``name`` from the list.
+Supprime un chargement automatique (Autoload) nommé ``name`` de la liste.
 
 .. rst-class:: classref-item-separator
 
@@ -1728,7 +1728,7 @@ Supprime l':ref:`EditorScenePostImportPlugin<class_EditorScenePostImportPlugin>`
 
 |void| **remove_tool_menu_item**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_tool_menu_item>`
 
-Removes a menu ``name`` from **Project > Tools**.
+Retire un menu ``name`` de **Projet > Outils**.
 
 .. rst-class:: classref-item-separator
 

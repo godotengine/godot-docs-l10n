@@ -5,23 +5,23 @@
 SpriteBase3D
 ============
 
-**繼承：** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`AnimatedSprite3D<class_AnimatedSprite3D>`, :ref:`Sprite3D<class_Sprite3D>`
+**Inherited By:** :ref:`AnimatedSprite3D<class_AnimatedSprite3D>`, :ref:`Sprite3D<class_Sprite3D>`
 
-3D 環境中的 2D 精靈節點。
+2D sprite node in 3D environment.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-在 3D 環境中顯示 2D 紋理資訊的節點。另請參閱 :ref:`Sprite3D<class_Sprite3D>`\ ，其中定義了許多其他屬性。
+A node that displays 2D texture information in a 3D environment. See also :ref:`Sprite3D<class_Sprite3D>` where many other properties are defined.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -70,8 +70,8 @@ SpriteBase3D
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -92,8 +92,8 @@ SpriteBase3D
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_SpriteBase3D_DrawFlags:
 
@@ -107,7 +107,7 @@ enum **DrawFlags**: :ref:`🔗<enum_SpriteBase3D_DrawFlags>`
 
 :ref:`DrawFlags<enum_SpriteBase3D_DrawFlags>` **FLAG_TRANSPARENT** = ``0``
 
-如果設定，紋理的透明度和不透明性用於使精靈的這些部分不可見。
+If set, the texture's transparency and the opacity are used to make those parts of the sprite invisible.
 
 .. _class_SpriteBase3D_constant_FLAG_SHADED:
 
@@ -115,7 +115,7 @@ enum **DrawFlags**: :ref:`🔗<enum_SpriteBase3D_DrawFlags>`
 
 :ref:`DrawFlags<enum_SpriteBase3D_DrawFlags>` **FLAG_SHADED** = ``1``
 
-如果設定，環境中的燈光會影響精靈。
+If set, lights in the environment affect the sprite.
 
 .. _class_SpriteBase3D_constant_FLAG_DOUBLE_SIDED:
 
@@ -123,7 +123,7 @@ enum **DrawFlags**: :ref:`🔗<enum_SpriteBase3D_DrawFlags>`
 
 :ref:`DrawFlags<enum_SpriteBase3D_DrawFlags>` **FLAG_DOUBLE_SIDED** = ``2``
 
-如果啟用，則紋理也可以從背面看到。如果未啟用，則紋理從後面查看時不可見。
+If set, texture can be seen from the back as well. If not, the texture is invisible when looking at it from behind.
 
 .. _class_SpriteBase3D_constant_FLAG_DISABLE_DEPTH_TEST:
 
@@ -131,7 +131,7 @@ enum **DrawFlags**: :ref:`🔗<enum_SpriteBase3D_DrawFlags>`
 
 :ref:`DrawFlags<enum_SpriteBase3D_DrawFlags>` **FLAG_DISABLE_DEPTH_TEST** = ``3``
 
-禁用深度測試，所以這個物件被畫在所有其他物件的上面。但是，在繪製順序中，在它之後繪製的物件可能會覆蓋它。
+Disables the depth test, so this object is drawn on top of all others. However, objects drawn after it in the draw order may cover it.
 
 .. _class_SpriteBase3D_constant_FLAG_FIXED_SIZE:
 
@@ -139,7 +139,7 @@ enum **DrawFlags**: :ref:`🔗<enum_SpriteBase3D_DrawFlags>`
 
 :ref:`DrawFlags<enum_SpriteBase3D_DrawFlags>` **FLAG_FIXED_SIZE** = ``4``
 
-標籤會根據深度進行縮放，從而在螢幕上始終以相同的大小顯示。
+Label is scaled by depth so that it always appears the same size on screen.
 
 .. _class_SpriteBase3D_constant_FLAG_MAX:
 
@@ -147,7 +147,7 @@ enum **DrawFlags**: :ref:`🔗<enum_SpriteBase3D_DrawFlags>`
 
 :ref:`DrawFlags<enum_SpriteBase3D_DrawFlags>` **FLAG_MAX** = ``5``
 
-代表 :ref:`DrawFlags<enum_SpriteBase3D_DrawFlags>` 列舉的大小。
+Represents the size of the :ref:`DrawFlags<enum_SpriteBase3D_DrawFlags>` enum.
 
 .. rst-class:: classref-item-separator
 
@@ -165,7 +165,7 @@ enum **AlphaCutMode**: :ref:`🔗<enum_SpriteBase3D_AlphaCutMode>`
 
 :ref:`AlphaCutMode<enum_SpriteBase3D_AlphaCutMode>` **ALPHA_CUT_DISABLED** = ``0``
 
-這個模式會進行標準的 Alpha 混合。可以顯示半透明區域，但透明材質存在重疊時可能會暴露透明度排序問題。
+This mode performs standard alpha blending. It can display translucent areas, but transparency sorting issues may be visible when multiple transparent materials are overlapping.
 
 .. _class_SpriteBase3D_constant_ALPHA_CUT_DISCARD:
 
@@ -173,7 +173,7 @@ enum **AlphaCutMode**: :ref:`🔗<enum_SpriteBase3D_AlphaCutMode>`
 
 :ref:`AlphaCutMode<enum_SpriteBase3D_AlphaCutMode>` **ALPHA_CUT_DISCARD** = ``1``
 
-該模式僅允許完全透明或完全不透明的圖元。除非啟用了某種形式的螢幕空間抗鋸齒（請參閱 :ref:`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`\ ），否則會看到粗糙的邊緣。從好的方面來說，當多個透明材質重疊時，該模式不會出現透明度排序問題。這種模式也被稱為 *alpha 測試*\ 或 *1 位透明度*\ 。
+This mode only allows fully transparent or fully opaque pixels. Harsh edges will be visible unless some form of screen-space antialiasing is enabled (see :ref:`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`). On the bright side, this mode doesn't suffer from transparency sorting issues when multiple transparent materials are overlapping. This mode is also known as *alpha testing* or *1-bit transparency*.
 
 .. _class_SpriteBase3D_constant_ALPHA_CUT_OPAQUE_PREPASS:
 
@@ -181,7 +181,7 @@ enum **AlphaCutMode**: :ref:`🔗<enum_SpriteBase3D_AlphaCutMode>`
 
 :ref:`AlphaCutMode<enum_SpriteBase3D_AlphaCutMode>` **ALPHA_CUT_OPAQUE_PREPASS** = ``2``
 
-該模式在深度預算繪階段繪製完全不透明的圖元。這比 :ref:`ALPHA_CUT_DISABLED<class_SpriteBase3D_constant_ALPHA_CUT_DISABLED>` 或 :ref:`ALPHA_CUT_DISCARD<class_SpriteBase3D_constant_ALPHA_CUT_DISCARD>` 慢，但它允許在使用正確排序的同時顯示半透明區域和平滑邊緣。
+This mode draws fully opaque pixels in the depth prepass. This is slower than :ref:`ALPHA_CUT_DISABLED<class_SpriteBase3D_constant_ALPHA_CUT_DISABLED>` or :ref:`ALPHA_CUT_DISCARD<class_SpriteBase3D_constant_ALPHA_CUT_DISCARD>`, but it allows displaying translucent areas and smooth edges while using proper sorting.
 
 .. _class_SpriteBase3D_constant_ALPHA_CUT_HASH:
 
@@ -189,7 +189,7 @@ enum **AlphaCutMode**: :ref:`🔗<enum_SpriteBase3D_AlphaCutMode>`
 
 :ref:`AlphaCutMode<enum_SpriteBase3D_AlphaCutMode>` **ALPHA_CUT_HASH** = ``3``
 
-該模式繪製時會截斷所有低於空間確定性閾值的值，其餘值將保持不透明。
+This mode draws cuts off all values below a spatially-deterministic threshold, the rest will remain opaque.
 
 .. rst-class:: classref-section-separator
 
@@ -197,8 +197,8 @@ enum **AlphaCutMode**: :ref:`🔗<enum_SpriteBase3D_AlphaCutMode>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_SpriteBase3D_property_alpha_antialiasing_edge:
 
@@ -211,7 +211,7 @@ enum **AlphaCutMode**: :ref:`🔗<enum_SpriteBase3D_AlphaCutMode>`
 - |void| **set_alpha_antialiasing_edge**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_alpha_antialiasing_edge**\ (\ )
 
-在 Alpha 通道上套用抗鋸齒的臨界值。
+Threshold at which antialiasing will be applied on the alpha channel.
 
 .. rst-class:: classref-item-separator
 
@@ -228,7 +228,7 @@ enum **AlphaCutMode**: :ref:`🔗<enum_SpriteBase3D_AlphaCutMode>`
 - |void| **set_alpha_antialiasing**\ (\ value\: :ref:`AlphaAntiAliasing<enum_BaseMaterial3D_AlphaAntiAliasing>`\ )
 - :ref:`AlphaAntiAliasing<enum_BaseMaterial3D_AlphaAntiAliasing>` **get_alpha_antialiasing**\ (\ )
 
-要套用的 Alpha 抗鋸齒類型。
+The type of alpha antialiasing to apply.
 
 .. rst-class:: classref-item-separator
 
@@ -262,7 +262,7 @@ The alpha cutting mode to use for the sprite.
 - |void| **set_alpha_hash_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_alpha_hash_scale**\ (\ )
 
-Alpha Hash 的雜湊比例，建議值介於 ``0`` 與 ``2`` 之間。
+The hashing scale for Alpha Hash. Recommended values between ``0`` and ``2``.
 
 .. rst-class:: classref-item-separator
 
@@ -279,7 +279,7 @@ Alpha Hash 的雜湊比例，建議值介於 ``0`` 與 ``2`` 之間。
 - |void| **set_alpha_scissor_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_alpha_scissor_threshold**\ (\ )
 
-Alpha 裁剪丟棄數值的閾值。
+Threshold at which the alpha scissor will discard values.
 
 .. rst-class:: classref-item-separator
 
@@ -296,7 +296,7 @@ Alpha 裁剪丟棄數值的閾值。
 - |void| **set_axis**\ (\ value\: :ref:`Axis<enum_Vector3_Axis>`\ )
 - :ref:`Axis<enum_Vector3_Axis>` **get_axis**\ (\ )
 
-紋理正面朝向的方向。
+The direction in which the front of the texture faces.
 
 .. rst-class:: classref-item-separator
 
@@ -332,7 +332,7 @@ The billboard mode to use for the sprite.
 - |void| **set_centered**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_centered**\ (\ )
 
-如果為 ``true``\ ，紋理將被居中。
+If ``true``, texture will be centered.
 
 .. rst-class:: classref-item-separator
 
@@ -349,7 +349,7 @@ The billboard mode to use for the sprite.
 - |void| **set_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_SpriteBase3D_DrawFlags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_SpriteBase3D_DrawFlags>`\ ) |const|
 
-如果為 ``true``\ ，則從後面也可以看到紋理，如果為 ``false``\ ，則從後面看它是不可見的。
+If ``true``, texture can be seen from the back as well, if ``false``, it is invisible when looking at it from behind.
 
 .. rst-class:: classref-item-separator
 
@@ -383,7 +383,7 @@ If ``true``, the texture is rendered at the same size regardless of distance. Th
 - |void| **set_flip_h**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_flipped_h**\ (\ )
 
-若為 ``true``\ ，紋理將水平翻轉。
+If ``true``, texture is flipped horizontally.
 
 .. rst-class:: classref-item-separator
 
@@ -400,7 +400,7 @@ If ``true``, the texture is rendered at the same size regardless of distance. Th
 - |void| **set_flip_v**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_flipped_v**\ (\ )
 
-若為 ``true``\ ，紋理將垂直翻轉。
+If ``true``, texture is flipped vertically.
 
 .. rst-class:: classref-item-separator
 
@@ -438,7 +438,7 @@ A color value used to *multiply* the texture's colors. Can be used for mood-colo
 - |void| **set_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_SpriteBase3D_DrawFlags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_SpriteBase3D_DrawFlags>`\ ) |const|
 
-若設為 ``true``\ ，將停用深度測試，物件依繪製順序顯示。
+If ``true``, depth testing is disabled and the object will be drawn in render order.
 
 .. rst-class:: classref-item-separator
 
@@ -474,7 +474,7 @@ The texture's drawing offset.
 - |void| **set_pixel_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pixel_size**\ (\ )
 
-精靈上一個圖元寬度的大小，以 3D 縮放。
+The size of one pixel's width on the sprite to scale it in 3D.
 
 .. rst-class:: classref-item-separator
 
@@ -491,11 +491,11 @@ The texture's drawing offset.
 - |void| **set_render_priority**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_render_priority**\ (\ )
 
-設定該精靈的算繪優先順序。優先順序高的物體將被排序在優先順序低的物體前面。
+Sets the render priority for the sprite. Higher priority objects will be sorted in front of lower priority objects.
 
-\ **注意：**\ 僅在 :ref:`alpha_cut<class_SpriteBase3D_property_alpha_cut>` 為 :ref:`ALPHA_CUT_DISABLED<class_SpriteBase3D_constant_ALPHA_CUT_DISABLED>`\ （預設值）時適用。
+\ **Note:** This only applies if :ref:`alpha_cut<class_SpriteBase3D_property_alpha_cut>` is set to :ref:`ALPHA_CUT_DISABLED<class_SpriteBase3D_constant_ALPHA_CUT_DISABLED>` (default value).
 
-\ **注意：**\ 僅適用於透明物體的排序。這不會影響透明物體相對於不透明物體的排序方式。這是因為不透明物件不被排序，而透明物件則從後往前排序（取決於優先順序）。
+\ **Note:** This only applies to sorting of transparent objects. This will not impact how transparent objects are sorted relative to opaque objects. This is because opaque objects are not sorted, while transparent objects are sorted from back to front (subject to priority).
 
 .. rst-class:: classref-item-separator
 
@@ -512,7 +512,7 @@ The texture's drawing offset.
 - |void| **set_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_SpriteBase3D_DrawFlags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_SpriteBase3D_DrawFlags>`\ ) |const|
 
-如果為 ``true``\ ，則 :ref:`Environment<class_Environment>` 中的 :ref:`Light3D<class_Light3D>` 對該精靈有影響。
+If ``true``, the :ref:`Light3D<class_Light3D>` in the :ref:`Environment<class_Environment>` has effects on the sprite.
 
 .. rst-class:: classref-item-separator
 
@@ -548,7 +548,7 @@ Filter flags for the texture.
 - |void| **set_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_SpriteBase3D_DrawFlags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_SpriteBase3D_DrawFlags>`\ ) |const|
 
-如果為 ``true``\ ，紋理的透明度和不透明度用於使精靈的這些部分不可見。
+If ``true``, the texture's transparency and the opacity are used to make those parts of the sprite invisible.
 
 .. rst-class:: classref-section-separator
 
@@ -556,8 +556,8 @@ Filter flags for the texture.
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_SpriteBase3D_method_generate_triangle_mesh:
 
@@ -565,7 +565,7 @@ Filter flags for the texture.
 
 :ref:`TriangleMesh<class_TriangleMesh>` **generate_triangle_mesh**\ (\ ) |const| :ref:`🔗<class_SpriteBase3D_method_generate_triangle_mesh>`
 
-返回一個 :ref:`TriangleMesh<class_TriangleMesh>`\ ，其中精靈的頂點遵循它的目前配置（例如它的 :ref:`axis<class_SpriteBase3D_property_axis>` 和 :ref:`pixel_size<class_SpriteBase3D_property_pixel_size>`\ ）。
+Returns a :ref:`TriangleMesh<class_TriangleMesh>` with the sprite's vertices following its current configuration (such as its :ref:`axis<class_SpriteBase3D_property_axis>` and :ref:`pixel_size<class_SpriteBase3D_property_pixel_size>`).
 
 .. rst-class:: classref-item-separator
 
@@ -577,7 +577,7 @@ Filter flags for the texture.
 
 :ref:`bool<class_bool>` **get_draw_flag**\ (\ flag\: :ref:`DrawFlags<enum_SpriteBase3D_DrawFlags>`\ ) |const| :ref:`🔗<class_SpriteBase3D_method_get_draw_flag>`
 
-返回指定旗標的值。
+Returns the value of the specified flag.
 
 .. rst-class:: classref-item-separator
 
@@ -589,7 +589,7 @@ Filter flags for the texture.
 
 :ref:`Rect2<class_Rect2>` **get_item_rect**\ (\ ) |const| :ref:`🔗<class_SpriteBase3D_method_get_item_rect>`
 
-返回表示此精靈的矩形。
+Returns the rectangle representing this sprite.
 
 .. rst-class:: classref-item-separator
 
@@ -603,12 +603,12 @@ Filter flags for the texture.
 
 If ``true``, the specified flag will be enabled.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

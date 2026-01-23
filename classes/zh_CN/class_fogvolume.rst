@@ -5,32 +5,32 @@
 FogVolume
 =========
 
-**继承：** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-影响世界环境中默认体积雾的区块。
-
-.. rst-class:: classref-introduction-group
-
-描述
-----
-
-**FogVolume** 用于将局部雾添加到全局体积雾效果中。如果使用具有负 :ref:`FogMaterial.density<class_FogMaterial_property_density>` 的 :ref:`FogMaterial<class_FogMaterial>`\ ，\ **FogVolume** 也可以从特定区域移除体积雾。
-
-\ **FogVolume** 的性能与它在屏幕上的相对大小以及它所附加的 :ref:`FogMaterial<class_FogMaterial>` 的复杂性直接相关。最好尽可能保持 **FogVolume** 相对较小且简单。
-
-\ **注意：**\ **FogVolume** 只有在 :ref:`Environment.volumetric_fog_enabled<class_Environment_property_volumetric_fog_enabled>` 为 ``true`` 时才会有可见效果。如果不希望雾全局可见（而只是在 **FogVolume** 节点内），请将 :ref:`Environment.volumetric_fog_density<class_Environment_property_volumetric_fog_density>` 设置为 ``0.0``\ 。
+A region that contributes to the default volumetric fog from the world environment.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Description
+-----------
 
-- :doc:`体积雾及规模 <../tutorials/3d/volumetric_fog>`
+**FogVolume**\ s are used to add localized fog into the global volumetric fog effect. **FogVolume**\ s can also remove volumetric fog from specific areas if using a :ref:`FogMaterial<class_FogMaterial>` with a negative :ref:`FogMaterial.density<class_FogMaterial_property_density>`.
+
+Performance of **FogVolume**\ s is directly related to their relative size on the screen and the complexity of their attached :ref:`FogMaterial<class_FogMaterial>`. It is best to keep **FogVolume**\ s relatively small and simple where possible.
+
+\ **Note:** **FogVolume**\ s only have a visible effect if :ref:`Environment.volumetric_fog_enabled<class_Environment_property_volumetric_fog_enabled>` is ``true``. If you don't want fog to be globally visible (but only within **FogVolume** nodes), set :ref:`Environment.volumetric_fog_density<class_Environment_property_volumetric_fog_density>` to ``0.0``.
+
+.. rst-class:: classref-introduction-group
+
+Tutorials
+---------
+
+- :doc:`Volumetric fog and fog volumes <../tutorials/3d/volumetric_fog>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ FogVolume
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_FogVolume_property_material:
 
@@ -63,7 +63,7 @@ FogVolume
 - |void| **set_material**\ (\ value\: :ref:`Material<class_Material>`\ )
 - :ref:`Material<class_Material>` **get_material**\ (\ )
 
-**FogVolume** 使用的 :ref:`Material<class_Material>`\ 。可以是一个内置的 :ref:`FogMaterial<class_FogMaterial>` 或一个自定义的 :ref:`ShaderMaterial<class_ShaderMaterial>`\ 。
+The :ref:`Material<class_Material>` used by the **FogVolume**. Can be either a built-in :ref:`FogMaterial<class_FogMaterial>` or a custom :ref:`ShaderMaterial<class_ShaderMaterial>`.
 
 .. rst-class:: classref-item-separator
 
@@ -80,7 +80,7 @@ FogVolume
 - |void| **set_shape**\ (\ value\: :ref:`FogVolumeShape<enum_RenderingServer_FogVolumeShape>`\ )
 - :ref:`FogVolumeShape<enum_RenderingServer_FogVolumeShape>` **get_shape**\ (\ )
 
-**FogVolume** 的形状。这可以被设置为 :ref:`RenderingServer.FOG_VOLUME_SHAPE_ELLIPSOID<class_RenderingServer_constant_FOG_VOLUME_SHAPE_ELLIPSOID>`\ 、\ :ref:`RenderingServer.FOG_VOLUME_SHAPE_CONE<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CONE>`\ 、\ :ref:`RenderingServer.FOG_VOLUME_SHAPE_CYLINDER<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CYLINDER>`\ 、\ :ref:`RenderingServer.FOG_VOLUME_SHAPE_BOX<class_RenderingServer_constant_FOG_VOLUME_SHAPE_BOX>` 或 :ref:`RenderingServer.FOG_VOLUME_SHAPE_WORLD<class_RenderingServer_constant_FOG_VOLUME_SHAPE_WORLD>`\ 。
+The shape of the **FogVolume**. This can be set to either :ref:`RenderingServer.FOG_VOLUME_SHAPE_ELLIPSOID<class_RenderingServer_constant_FOG_VOLUME_SHAPE_ELLIPSOID>`, :ref:`RenderingServer.FOG_VOLUME_SHAPE_CONE<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CONE>`, :ref:`RenderingServer.FOG_VOLUME_SHAPE_CYLINDER<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CYLINDER>`, :ref:`RenderingServer.FOG_VOLUME_SHAPE_BOX<class_RenderingServer_constant_FOG_VOLUME_SHAPE_BOX>` or :ref:`RenderingServer.FOG_VOLUME_SHAPE_WORLD<class_RenderingServer_constant_FOG_VOLUME_SHAPE_WORLD>`.
 
 .. rst-class:: classref-item-separator
 
@@ -97,18 +97,18 @@ FogVolume
 - |void| **set_size**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_size**\ (\ )
 
-当 :ref:`shape<class_FogVolume_property_shape>` 为 :ref:`RenderingServer.FOG_VOLUME_SHAPE_ELLIPSOID<class_RenderingServer_constant_FOG_VOLUME_SHAPE_ELLIPSOID>`\ 、\ :ref:`RenderingServer.FOG_VOLUME_SHAPE_CONE<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CONE>`\ 、\ :ref:`RenderingServer.FOG_VOLUME_SHAPE_CYLINDER<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CYLINDER>` 或 :ref:`RenderingServer.FOG_VOLUME_SHAPE_BOX<class_RenderingServer_constant_FOG_VOLUME_SHAPE_BOX>`\ 时，该 **FogVolume** 的大小。
+The size of the **FogVolume** when :ref:`shape<class_FogVolume_property_shape>` is :ref:`RenderingServer.FOG_VOLUME_SHAPE_ELLIPSOID<class_RenderingServer_constant_FOG_VOLUME_SHAPE_ELLIPSOID>`, :ref:`RenderingServer.FOG_VOLUME_SHAPE_CONE<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CONE>`, :ref:`RenderingServer.FOG_VOLUME_SHAPE_CYLINDER<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CYLINDER>` or :ref:`RenderingServer.FOG_VOLUME_SHAPE_BOX<class_RenderingServer_constant_FOG_VOLUME_SHAPE_BOX>`.
 
-\ **注意：**\ 当相机移动或旋转时，薄雾体积可能会出现闪烁。这可以通过增加 :ref:`ProjectSettings.rendering/environment/volumetric_fog/volume_depth<class_ProjectSettings_property_rendering/environment/volumetric_fog/volume_depth>`\ （以性能为代价）或减少 :ref:`Environment.volumetric_fog_length<class_Environment_property_volumetric_fog_length>`\ （无性能成本，但以降低雾的范围为代价）来缓解。或者，\ **FogVolume** 可以做得更厚，并在 :ref:`material<class_FogVolume_property_material>` 中使用较低的密度。
+\ **Note:** Thin fog volumes may appear to flicker when the camera moves or rotates. This can be alleviated by increasing :ref:`ProjectSettings.rendering/environment/volumetric_fog/volume_depth<class_ProjectSettings_property_rendering/environment/volumetric_fog/volume_depth>` (at a performance cost) or by decreasing :ref:`Environment.volumetric_fog_length<class_Environment_property_volumetric_fog_length>` (at no performance cost, but at the cost of lower fog range). Alternatively, the **FogVolume** can be made thicker and use a lower density in the :ref:`material<class_FogVolume_property_material>`.
 
-\ **注意：**\ 如果 :ref:`shape<class_FogVolume_property_shape>` 为 :ref:`RenderingServer.FOG_VOLUME_SHAPE_CONE<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CONE>` 或 :ref:`RenderingServer.FOG_VOLUME_SHAPE_CYLINDER<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CYLINDER>`\ ，圆锥体/圆柱体将被调整以适应该大小。不支持通过 :ref:`size<class_FogVolume_property_size>` 属性对圆锥体/圆柱体形状进行非均匀缩放，但可以改为缩放该 **FogVolume** 节点。
+\ **Note:** If :ref:`shape<class_FogVolume_property_shape>` is :ref:`RenderingServer.FOG_VOLUME_SHAPE_CONE<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CONE>` or :ref:`RenderingServer.FOG_VOLUME_SHAPE_CYLINDER<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CYLINDER>`, the cone/cylinder will be adjusted to fit within the size. Non-uniform scaling of cone/cylinder shapes via the :ref:`size<class_FogVolume_property_size>` property is not supported, but you can scale the **FogVolume** node instead.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

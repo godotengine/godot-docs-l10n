@@ -5,21 +5,21 @@
 PinJoint2D
 ==========
 
-**继承：** :ref:`Joint2D<class_Joint2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Joint2D<class_Joint2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-将两个 2D 物理体通过单点进行连接的物理关节，能够让它们自由旋转。
+A physics joint that attaches two 2D physics bodies at a single point, allowing them to freely rotate.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-将两个 2D 物理体通过单点进行连接的物理关节，能够让它们自由旋转。例如可以将 :ref:`RigidBody2D<class_RigidBody2D>` 连接到 :ref:`StaticBody2D<class_StaticBody2D>` 上，从而创建钟摆或跷跷板。
+A physics joint that attaches two 2D physics bodies at a single point, allowing them to freely rotate. For example, a :ref:`RigidBody2D<class_RigidBody2D>` can be attached to a :ref:`StaticBody2D<class_StaticBody2D>` to create a pendulum or a seesaw.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ PinJoint2D
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_PinJoint2D_property_angular_limit_enabled:
 
@@ -58,7 +58,7 @@ PinJoint2D
 - |void| **set_angular_limit_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_angular_limit_enabled**\ (\ )
 
-如果为 ``true``\ ，则应用由 :ref:`angular_limit_lower<class_PinJoint2D_property_angular_limit_lower>` 和 :ref:`angular_limit_upper<class_PinJoint2D_property_angular_limit_upper>` 定义的销的最大和最小旋转。
+If ``true``, the pin maximum and minimum rotation, defined by :ref:`angular_limit_lower<class_PinJoint2D_property_angular_limit_lower>` and :ref:`angular_limit_upper<class_PinJoint2D_property_angular_limit_upper>` are applied.
 
 .. rst-class:: classref-item-separator
 
@@ -75,7 +75,7 @@ PinJoint2D
 - |void| **set_angular_limit_lower**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angular_limit_lower**\ (\ )
 
-最小的旋转量。只有在 :ref:`angular_limit_enabled<class_PinJoint2D_property_angular_limit_enabled>` 为 ``true`` 时才有效。
+The minimum rotation. Only active if :ref:`angular_limit_enabled<class_PinJoint2D_property_angular_limit_enabled>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -92,7 +92,7 @@ PinJoint2D
 - |void| **set_angular_limit_upper**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angular_limit_upper**\ (\ )
 
-最大的旋转量。只有在 :ref:`angular_limit_enabled<class_PinJoint2D_property_angular_limit_enabled>` 为 ``true`` 时才有效。
+The maximum rotation. Only active if :ref:`angular_limit_enabled<class_PinJoint2D_property_angular_limit_enabled>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -109,7 +109,7 @@ PinJoint2D
 - |void| **set_motor_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_motor_enabled**\ (\ )
 
-激活后，马达会转动该销。
+When activated, a motor turns the pin.
 
 .. rst-class:: classref-item-separator
 
@@ -126,7 +126,7 @@ PinJoint2D
 - |void| **set_motor_target_velocity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_motor_target_velocity**\ (\ )
 
-马达的目标速度。单位为弧度每秒。
+Target speed for the motor. In radians per second.
 
 .. rst-class:: classref-item-separator
 
@@ -143,14 +143,14 @@ PinJoint2D
 - |void| **set_softness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_softness**\ (\ )
 
-这个值越高，与被牵制的两个物体之间的的联系就越灵活。
+The higher this value, the more the bond to the pinned partner can flex.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

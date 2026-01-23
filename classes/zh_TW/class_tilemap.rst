@@ -8,16 +8,16 @@
 TileMap
 =======
 
-**已棄用：** Use multiple :ref:`TileMapLayer<class_TileMapLayer>` nodes instead. To convert a TileMap to a set of TileMapLayer nodes, open the TileMap bottom panel with the node selected, click the toolbox icon in the top-right corner and choose 'Extract TileMap layers as individual TileMapLayer nodes'.
+**Deprecated:** Use multiple :ref:`TileMapLayer<class_TileMapLayer>` nodes instead. To convert a TileMap to a set of TileMapLayer nodes, open the TileMap bottom panel with the node selected, click the toolbox icon in the top-right corner and choose 'Extract TileMap layers as individual TileMapLayer nodes'.
 
-**繼承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-基於 2D 圖塊的地圖節點。
+Node for 2D tile-based maps.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
 Node for 2D tile-based maps. Tilemaps use a :ref:`TileSet<class_TileSet>` which contain a list of tiles which are used to create grid-based maps. A TileMap may have several layers, layouting tiles on top of each other.
 
@@ -29,29 +29,29 @@ To force an update earlier on, call :ref:`update_internals()<class_TileMap_metho
 
 .. rst-class:: classref-introduction-group
 
-教學
-----
+Tutorials
+---------
 
-- :doc:`使用 Tilemap <../tutorials/2d/using_tilemaps>`
+- :doc:`Using Tilemaps <../tutorials/2d/using_tilemaps>`
 
-- `2D 平台範例 <https://godotengine.org/asset-library/asset/2727>`__
+- `2D Platformer Demo <https://godotengine.org/asset-library/asset/2727>`__
 
-- `2D 等軸演示 <https://godotengine.org/asset-library/asset/2718>`__
+- `2D Isometric Demo <https://godotengine.org/asset-library/asset/2718>`__
 
-- `2D 六邊形演示 <https://godotengine.org/asset-library/asset/2717>`__
+- `2D Hexagonal Demo <https://godotengine.org/asset-library/asset/2717>`__
 
 - `2D Grid-based Navigation with AStarGrid2D Demo <https://godotengine.org/asset-library/asset/2723>`__
 
-- `2D 角色扮演遊戲範例 <https://godotengine.org/asset-library/asset/2729>`__
+- `2D Role Playing Game (RPG) Demo <https://godotengine.org/asset-library/asset/2729>`__
 
-- `2D 運動學角色演示 <https://godotengine.org/asset-library/asset/2719>`__
+- `2D Kinematic Character Demo <https://godotengine.org/asset-library/asset/2719>`__
 
 - `2D Dynamic TileMap Layers Demo <https://godotengine.org/asset-library/asset/2713>`__
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -70,8 +70,8 @@ To force an update earlier on, call :ref:`update_internals()<class_TileMap_metho
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -190,8 +190,8 @@ To force an update earlier on, call :ref:`update_internals()<class_TileMap_metho
 
 .. rst-class:: classref-descriptions-group
 
-訊號
-----
+Signals
+-------
 
 .. _class_TileMap_signal_changed:
 
@@ -199,7 +199,7 @@ To force an update earlier on, call :ref:`update_internals()<class_TileMap_metho
 
 **changed**\ (\ ) :ref:`🔗<class_TileMap_signal_changed>`
 
-該 TileMap 的 :ref:`TileSet<class_TileSet>` 發生改變時發出。
+Emitted when the :ref:`TileSet<class_TileSet>` of this TileMap changes.
 
 .. rst-class:: classref-section-separator
 
@@ -207,8 +207,8 @@ To force an update earlier on, call :ref:`update_internals()<class_TileMap_metho
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_TileMap_VisibilityMode:
 
@@ -222,7 +222,7 @@ enum **VisibilityMode**: :ref:`🔗<enum_TileMap_VisibilityMode>`
 
 :ref:`VisibilityMode<enum_TileMap_VisibilityMode>` **VISIBILITY_MODE_DEFAULT** = ``0``
 
-使用除錯設定確定可見性。
+Use the debug settings to determine visibility.
 
 .. _class_TileMap_constant_VISIBILITY_MODE_FORCE_HIDE:
 
@@ -230,7 +230,7 @@ enum **VisibilityMode**: :ref:`🔗<enum_TileMap_VisibilityMode>`
 
 :ref:`VisibilityMode<enum_TileMap_VisibilityMode>` **VISIBILITY_MODE_FORCE_HIDE** = ``2``
 
-始終隱藏。
+Always hide.
 
 .. _class_TileMap_constant_VISIBILITY_MODE_FORCE_SHOW:
 
@@ -238,7 +238,7 @@ enum **VisibilityMode**: :ref:`🔗<enum_TileMap_VisibilityMode>`
 
 :ref:`VisibilityMode<enum_TileMap_VisibilityMode>` **VISIBILITY_MODE_FORCE_SHOW** = ``1``
 
-始終顯示。
+Always show.
 
 .. rst-class:: classref-section-separator
 
@@ -246,8 +246,8 @@ enum **VisibilityMode**: :ref:`🔗<enum_TileMap_VisibilityMode>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_TileMap_property_collision_animatable:
 
@@ -260,9 +260,9 @@ enum **VisibilityMode**: :ref:`🔗<enum_TileMap_VisibilityMode>`
 - |void| **set_collision_animatable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_collision_animatable**\ (\ )
 
-如果啟用，TileMap 將看到它的碰撞同步到物理週期並將其碰撞型別從靜態更改為運動學。這是建立基於 TileMap 的移動的平臺所必需的。
+If enabled, the TileMap will see its collisions synced to the physics tick and change its collision type from static to kinematic. This is required to create TileMap-based moving platform.
 
-\ **注意：**\ 啟用 :ref:`collision_animatable<class_TileMap_property_collision_animatable>` 可能會對性能產生一個很小的影響，只有在該 TileMap 正在移動並且有碰撞的圖塊時才這樣做。
+\ **Note:** Enabling :ref:`collision_animatable<class_TileMap_property_collision_animatable>` may have a small performance impact, only do it if the TileMap is moving and has colliding tiles.
 
 .. rst-class:: classref-item-separator
 
@@ -279,7 +279,7 @@ enum **VisibilityMode**: :ref:`🔗<enum_TileMap_VisibilityMode>`
 - |void| **set_collision_visibility_mode**\ (\ value\: :ref:`VisibilityMode<enum_TileMap_VisibilityMode>`\ )
 - :ref:`VisibilityMode<enum_TileMap_VisibilityMode>` **get_collision_visibility_mode**\ (\ )
 
-顯示或隱藏該 TileMap 的碰撞形狀。如果設定為 :ref:`VISIBILITY_MODE_DEFAULT<class_TileMap_constant_VISIBILITY_MODE_DEFAULT>`\ ，則取決於除錯設定“顯示碰撞”。
+Show or hide the TileMap's collision shapes. If set to :ref:`VISIBILITY_MODE_DEFAULT<class_TileMap_constant_VISIBILITY_MODE_DEFAULT>`, this depends on the show collision debug settings.
 
 .. rst-class:: classref-item-separator
 
@@ -296,7 +296,7 @@ enum **VisibilityMode**: :ref:`🔗<enum_TileMap_VisibilityMode>`
 - |void| **set_navigation_visibility_mode**\ (\ value\: :ref:`VisibilityMode<enum_TileMap_VisibilityMode>`\ )
 - :ref:`VisibilityMode<enum_TileMap_VisibilityMode>` **get_navigation_visibility_mode**\ (\ )
 
-顯示或隱藏該 TileMap 的導覽網格。如果設定為 :ref:`VISIBILITY_MODE_DEFAULT<class_TileMap_constant_VISIBILITY_MODE_DEFAULT>`\ ，則取決於除錯設定“顯示導覽”。
+Show or hide the TileMap's navigation meshes. If set to :ref:`VISIBILITY_MODE_DEFAULT<class_TileMap_constant_VISIBILITY_MODE_DEFAULT>`, this depends on the show navigation debug settings.
 
 .. rst-class:: classref-item-separator
 
@@ -342,8 +342,8 @@ The :ref:`TileSet<class_TileSet>` used by this **TileMap**. The textures, collis
 
 .. rst-class:: classref-descriptions-group
 
-方法說明
---------
+Method Descriptions
+-------------------
 
 .. _class_TileMap_private_method__tile_data_runtime_update:
 
@@ -351,13 +351,13 @@ The :ref:`TileSet<class_TileSet>` used by this **TileMap**. The textures, collis
 
 |void| **_tile_data_runtime_update**\ (\ layer\: :ref:`int<class_int>`, coords\: :ref:`Vector2i<class_Vector2i>`, tile_data\: :ref:`TileData<class_TileData>`\ ) |virtual| :ref:`🔗<class_TileMap_private_method__tile_data_runtime_update>`
 
-會使用 TileMap 內部即將使用的 TileData 物件來呼叫，從而實作運作時修改。
+Called with a TileData object about to be used internally by the TileMap, allowing its modification at runtime.
 
-這個方法被呼叫的前提是：實作了 :ref:`_use_tile_data_runtime_update()<class_TileMap_private_method__use_tile_data_runtime_update>`\ ，並且對給定的圖塊座標 ``coords`` 和層 ``layer`` 返回 ``true`` 。
+This method is only called if :ref:`_use_tile_data_runtime_update()<class_TileMap_private_method__use_tile_data_runtime_update>` is implemented and returns ``true`` for the given tile ``coords`` and ``layer``.
 
-\ **警告：**\ 該 ``tile_data`` 物件的子資源和 TileSet 中的子資源是一樣的。對它們進行修改可能會影響整個 TileSet。請確保製作這些資源的副本再進行修改。
+\ **Warning:** The ``tile_data`` object's sub-resources are the same as the one in the TileSet. Modifying them might impact the whole TileSet. Instead, make sure to duplicate those resources.
 
-\ **注意：**\ 如果 ``tile_data`` 物件的屬性要隨時間變化，請使用 :ref:`force_update()<class_TileMap_method_force_update>` 來觸發 TileMap 更新。
+\ **Note:** If the properties of ``tile_data`` object should change over time, use :ref:`notify_runtime_tile_data_update()<class_TileMap_method_notify_runtime_tile_data_update>` to notify the TileMap it needs an update.
 
 .. rst-class:: classref-item-separator
 
@@ -369,9 +369,11 @@ The :ref:`TileSet<class_TileSet>` used by this **TileMap**. The textures, collis
 
 :ref:`bool<class_bool>` **_use_tile_data_runtime_update**\ (\ layer\: :ref:`int<class_int>`, coords\: :ref:`Vector2i<class_Vector2i>`\ ) |virtual| :ref:`🔗<class_TileMap_private_method__use_tile_data_runtime_update>`
 
-如果位於層 ``layer`` 座標 ``coords`` 的圖塊需要運作時更新，則應返回 ``true``\ 。
+Should return ``true`` if the tile at coordinates ``coords`` on layer ``layer`` requires a runtime update.
 
-\ **警告：**\ 請確保這個函式只在需要時返回 ``true``\ 。任何在沒有需要的情況下在運作時處理的圖塊都將導致顯著的性能損失。
+\ **Warning:** Make sure this function only return ``true`` when needed. Any tile processed at runtime without a need for it will imply a significant performance penalty.
+
+\ **Note:** If the result of this function should changed, use :ref:`notify_runtime_tile_data_update()<class_TileMap_method_notify_runtime_tile_data_update>` to notify the TileMap it needs an update.
 
 .. rst-class:: classref-item-separator
 
@@ -383,7 +385,7 @@ The :ref:`TileSet<class_TileSet>` used by this **TileMap**. The textures, collis
 
 |void| **add_layer**\ (\ to_position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileMap_method_add_layer>`
 
-在陣列中的給定位置 ``to_position`` 新增層。如果 ``to_position`` 為負數，則位置從結尾處開始計數，\ ``-1`` 會把層新增在陣列的末尾。
+Adds a layer at the given position ``to_position`` in the array. If ``to_position`` is negative, the position is counted from the end, with ``-1`` adding the layer at the end of the array.
 
 .. rst-class:: classref-item-separator
 
@@ -395,7 +397,7 @@ The :ref:`TileSet<class_TileSet>` used by this **TileMap**. The textures, collis
 
 |void| **clear**\ (\ ) :ref:`🔗<class_TileMap_method_clear>`
 
-清除所有儲存格。
+Clears all cells.
 
 .. rst-class:: classref-item-separator
 
@@ -407,9 +409,9 @@ The :ref:`TileSet<class_TileSet>` used by this **TileMap**. The textures, collis
 
 |void| **clear_layer**\ (\ layer\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileMap_method_clear_layer>`
 
-設定圖層的名稱。主要在編輯器中使用。
+Clears all cells on the given layer.
 
-如果 ``layer`` 為負，則逆序存取圖層。
+If ``layer`` is negative, the layers are accessed from the last one.
 
 .. rst-class:: classref-item-separator
 
@@ -435,7 +437,7 @@ If ``layer`` is negative, the layers are accessed from the last one.
 
 |void| **fix_invalid_tiles**\ (\ ) :ref:`🔗<class_TileMap_method_fix_invalid_tiles>`
 
-清除圖塊集中不存在的儲存格。
+Clears cells that do not exist in the tileset.
 
 .. rst-class:: classref-item-separator
 
@@ -447,7 +449,7 @@ If ``layer`` is negative, the layers are accessed from the last one.
 
 |void| **force_update**\ (\ layer\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TileMap_method_force_update>`
 
-**已棄用：** Use :ref:`notify_runtime_tile_data_update()<class_TileMap_method_notify_runtime_tile_data_update>` and/or :ref:`update_internals()<class_TileMap_method_update_internals>` instead.
+**Deprecated:** Use :ref:`notify_runtime_tile_data_update()<class_TileMap_method_notify_runtime_tile_data_update>` and/or :ref:`update_internals()<class_TileMap_method_update_internals>` instead.
 
 Forces the TileMap and the layer ``layer`` to update.
 
@@ -535,7 +537,7 @@ If ``use_proxies`` is ``false``, ignores the :ref:`TileSet<class_TileSet>`'s til
 
 :ref:`Vector2i<class_Vector2i>` **get_coords_for_body_rid**\ (\ body\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_TileMap_method_get_coords_for_body_rid>`
 
-返回給定物理物體 RID 對應圖塊的座標。與圖塊發生碰撞時，可以通過 :ref:`KinematicCollision2D.get_collider_rid()<class_KinematicCollision2D_method_get_collider_rid>` 獲取該 RID。
+Returns the coordinates of the tile for given physics body RID. Such RID can be retrieved from :ref:`KinematicCollision2D.get_collider_rid()<class_KinematicCollision2D_method_get_collider_rid>`, when colliding with a tile.
 
 .. rst-class:: classref-item-separator
 
@@ -547,7 +549,7 @@ If ``use_proxies`` is ``false``, ignores the :ref:`TileSet<class_TileSet>`'s til
 
 :ref:`int<class_int>` **get_layer_for_body_rid**\ (\ body\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_TileMap_method_get_layer_for_body_rid>`
 
-返回給定物理物體 RID 對應圖塊的 TileMap 圖層。與圖塊發生碰撞時，可以通過 :ref:`KinematicCollision2D.get_collider_rid()<class_KinematicCollision2D_method_get_collider_rid>` 獲取該 RID。
+Returns the tilemap layer of the tile for given physics body RID. Such RID can be retrieved from :ref:`KinematicCollision2D.get_collider_rid()<class_KinematicCollision2D_method_get_collider_rid>`, when colliding with a tile.
 
 .. rst-class:: classref-item-separator
 
@@ -559,9 +561,9 @@ If ``use_proxies`` is ``false``, ignores the :ref:`TileSet<class_TileSet>`'s til
 
 :ref:`Color<class_Color>` **get_layer_modulate**\ (\ layer\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileMap_method_get_layer_modulate>`
 
-設定圖層的名稱。主要在編輯器中使用。
+Returns a TileMap layer's modulate.
 
-如果 ``layer`` 為負，則逆序存取圖層。
+If ``layer`` is negative, the layers are accessed from the last one.
 
 .. rst-class:: classref-item-separator
 
@@ -573,9 +575,9 @@ If ``use_proxies`` is ``false``, ignores the :ref:`TileSet<class_TileSet>`'s til
 
 :ref:`String<class_String>` **get_layer_name**\ (\ layer\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileMap_method_get_layer_name>`
 
-設定圖層的名稱。主要在編輯器中使用。
+Returns a TileMap layer's name.
 
-如果 ``layer`` 為負，則逆序存取圖層。
+If ``layer`` is negative, the layers are accessed from the last one.
 
 .. rst-class:: classref-item-separator
 
@@ -605,9 +607,9 @@ If ``layer`` is negative, the layers are accessed from the last one.
 
 :ref:`int<class_int>` **get_layer_y_sort_origin**\ (\ layer\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileMap_method_get_layer_y_sort_origin>`
 
-設定圖層的名稱。主要在編輯器中使用。
+Returns a TileMap layer's Y sort origin.
 
-如果 ``layer`` 為負，則逆序存取圖層。
+If ``layer`` is negative, the layers are accessed from the last one.
 
 .. rst-class:: classref-item-separator
 
@@ -619,9 +621,9 @@ If ``layer`` is negative, the layers are accessed from the last one.
 
 :ref:`int<class_int>` **get_layer_z_index**\ (\ layer\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileMap_method_get_layer_z_index>`
 
-設定圖層的 Z 索引值。各個圖塊的 Z 索引值都會加上這個 Z 索引。
+Returns a TileMap layer's Z-index value.
 
-如果 ``layer`` 為負，則逆序存取圖層。
+If ``layer`` is negative, the layers are accessed from the last one.
 
 .. rst-class:: classref-item-separator
 
@@ -633,7 +635,7 @@ If ``layer`` is negative, the layers are accessed from the last one.
 
 :ref:`int<class_int>` **get_layers_count**\ (\ ) |const| :ref:`🔗<class_TileMap_method_get_layers_count>`
 
-返回 TileMap 圖層的數量。
+Returns the number of layers in the TileMap.
 
 .. rst-class:: classref-item-separator
 
@@ -645,7 +647,7 @@ If ``layer`` is negative, the layers are accessed from the last one.
 
 :ref:`RID<class_RID>` **get_navigation_map**\ (\ layer\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileMap_method_get_navigation_map>`
 
-**已棄用：** Use :ref:`get_layer_navigation_map()<class_TileMap_method_get_layer_navigation_map>` instead.
+**Deprecated:** Use :ref:`get_layer_navigation_map()<class_TileMap_method_get_layer_navigation_map>` instead.
 
 Returns the :ref:`RID<class_RID>` of the :ref:`NavigationServer2D<class_NavigationServer2D>` navigation map assigned to the specified TileMap layer ``layer``.
 
@@ -659,7 +661,7 @@ Returns the :ref:`RID<class_RID>` of the :ref:`NavigationServer2D<class_Navigati
 
 :ref:`Vector2i<class_Vector2i>` **get_neighbor_cell**\ (\ coords\: :ref:`Vector2i<class_Vector2i>`, neighbor\: :ref:`CellNeighbor<enum_TileSet_CellNeighbor>`\ ) |const| :ref:`🔗<class_TileMap_method_get_neighbor_cell>`
 
-返回與位於座標 ``coords`` 的儲存格相鄰的儲存格，方向由 ``neighbor`` 表示。這個方法會考慮 TileMap 的不同佈局。
+Returns the neighboring cell to the one at coordinates ``coords``, identified by the ``neighbor`` direction. This method takes into account the different layouts a TileMap can take.
 
 .. rst-class:: classref-item-separator
 
@@ -685,7 +687,7 @@ If ``layer`` is negative, the layers are accessed from the last one.
 
 :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\] **get_surrounding_cells**\ (\ coords\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TileMap_method_get_surrounding_cells>`
 
-返回與 ``coords`` 處的儲存格相鄰的所有儲存格的列表。
+Returns the list of all neighbourings cells to the one at ``coords``.
 
 .. rst-class:: classref-item-separator
 
@@ -729,7 +731,7 @@ If ``layer`` is negative, the layers are accessed from the last one.
 
 :ref:`Rect2i<class_Rect2i>` **get_used_rect**\ (\ ) |const| :ref:`🔗<class_TileMap_method_get_used_rect>`
 
-返回該地圖的包圍矩形，包圍所有圖層中的已使用（非空）的圖塊。
+Returns a rectangle enclosing the used (non-empty) tiles of the map, including all layers.
 
 .. rst-class:: classref-item-separator
 
@@ -777,9 +779,9 @@ Returns ``true`` if the cell on layer ``layer`` at coordinates ``coords`` is tra
 
 :ref:`bool<class_bool>` **is_layer_enabled**\ (\ layer\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileMap_method_is_layer_enabled>`
 
-設定圖層的名稱。主要在編輯器中使用。
+Returns if a layer is enabled.
 
-如果 ``layer`` 為負，則逆序存取圖層。
+If ``layer`` is negative, the layers are accessed from the last one.
 
 .. rst-class:: classref-item-separator
 
@@ -803,9 +805,9 @@ Returns if a layer's built-in navigation regions generation is enabled.
 
 :ref:`bool<class_bool>` **is_layer_y_sort_enabled**\ (\ layer\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileMap_method_is_layer_y_sort_enabled>`
 
-設定圖層的名稱。主要在編輯器中使用。
+Returns if a layer Y-sorts its tiles.
 
-如果 ``layer`` 為負，則逆序存取圖層。
+If ``layer`` is negative, the layers are accessed from the last one.
 
 .. rst-class:: classref-item-separator
 
@@ -817,7 +819,7 @@ Returns if a layer's built-in navigation regions generation is enabled.
 
 :ref:`Vector2i<class_Vector2i>` **local_to_map**\ (\ local_position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_TileMap_method_local_to_map>`
 
-返回包含給定 ``local_position`` 的儲存格地圖座標。如果 ``local_position`` 使用全域座標，請考慮在傳入這個方法前使用 :ref:`Node2D.to_local()<class_Node2D_method_to_local>`\ 。另見 :ref:`map_to_local()<class_TileMap_method_map_to_local>`\ 。
+Returns the map coordinates of the cell containing the given ``local_position``. If ``local_position`` is in global coordinates, consider using :ref:`Node2D.to_local()<class_Node2D_method_to_local>` before passing it to this method. See also :ref:`map_to_local()<class_TileMap_method_map_to_local>`.
 
 .. rst-class:: classref-item-separator
 
@@ -829,7 +831,7 @@ Returns if a layer's built-in navigation regions generation is enabled.
 
 :ref:`Vector2i<class_Vector2i>` **map_pattern**\ (\ position_in_tilemap\: :ref:`Vector2i<class_Vector2i>`, coords_in_pattern\: :ref:`Vector2i<class_Vector2i>`, pattern\: :ref:`TileMapPattern<class_TileMapPattern>`\ ) :ref:`🔗<class_TileMap_method_map_pattern>`
 
-如果圖案貼上在 ``position_in_tilemap`` 座標處（請參閱 :ref:`set_pattern()<class_TileMap_method_set_pattern>`\ ），則返回 :ref:`TileMapPattern<class_TileMapPattern>` 中給定座標 ``coords_in_pattern`` 對應的儲存格座標。該對應是必需的，因為在半偏移圖塊形狀中，對應可能無法通過計算 ``position_in_tile_map + coords_in_pattern`` 工作。
+Returns for the given coordinate ``coords_in_pattern`` in a :ref:`TileMapPattern<class_TileMapPattern>` the corresponding cell coordinates if the pattern was pasted at the ``position_in_tilemap`` coordinates (see :ref:`set_pattern()<class_TileMap_method_set_pattern>`). This mapping is required as in half-offset tile shapes, the mapping might not work by calculating ``position_in_tile_map + coords_in_pattern``.
 
 .. rst-class:: classref-item-separator
 
@@ -841,9 +843,9 @@ Returns if a layer's built-in navigation regions generation is enabled.
 
 :ref:`Vector2<class_Vector2>` **map_to_local**\ (\ map_position\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileMap_method_map_to_local>`
 
-返回儲存格的中心位置，使用 TileMap 的局部座標。要將返回值轉換為全域座標，請使用 :ref:`Node2D.to_global()<class_Node2D_method_to_global>`\ 。另見 :ref:`local_to_map()<class_TileMap_method_local_to_map>`\ 。
+Returns the centered position of a cell in the TileMap's local coordinate space. To convert the returned value into global coordinates, use :ref:`Node2D.to_global()<class_Node2D_method_to_global>`. See also :ref:`local_to_map()<class_TileMap_method_local_to_map>`.
 
-\ **注意：**\ 可能與圖塊的可視位置沒有對應關係，即忽略各個圖塊的 :ref:`TileData.texture_origin<class_TileData_property_texture_origin>` 屬性。
+\ **Note:** This may not correspond to the visual position of the tile, i.e. it ignores the :ref:`TileData.texture_origin<class_TileData_property_texture_origin>` property of individual tiles.
 
 .. rst-class:: classref-item-separator
 
@@ -855,7 +857,7 @@ Returns if a layer's built-in navigation regions generation is enabled.
 
 |void| **move_layer**\ (\ layer\: :ref:`int<class_int>`, to_position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileMap_method_move_layer>`
 
-將索引 ``layer`` 處的圖層移動到陣列中給定的位置 ``to_position``\ 。
+Moves the layer at index ``layer`` to the given position ``to_position`` in the array.
 
 .. rst-class:: classref-item-separator
 
@@ -867,13 +869,13 @@ Returns if a layer's built-in navigation regions generation is enabled.
 
 |void| **notify_runtime_tile_data_update**\ (\ layer\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TileMap_method_notify_runtime_tile_data_update>`
 
-通知呼叫\ :ref:`_use_tile_data_runtime_update()<class_TileMap_private_method__use_tile_data_runtime_update>`\ 或\ :ref:`_tile_data_runtime_update()<class_TileMap_private_method__tile_data_runtime_update>`\ 的TileMap節點將導致不同的結果。這將因此觸發TileMap更新。
+Notifies the TileMap node that calls to :ref:`_use_tile_data_runtime_update()<class_TileMap_private_method__use_tile_data_runtime_update>` or :ref:`_tile_data_runtime_update()<class_TileMap_private_method__tile_data_runtime_update>` will lead to different results. This will thus trigger a TileMap update.
 
-如果提供了 ``layer``\ ，則僅通知給定層的變更。出於效能原因，通常首選提供 ``layer`` 參數（如果適用）。
+If ``layer`` is provided, only notifies changes for the given layer. Providing the ``layer`` argument (when applicable) is usually preferred for performance reasons.
 
-\ **警告：** 更新 TileMap 的運算成本很高，並且可能會影響效能。盡量限制該函式的呼叫次數，以避免不必要的更新。
+\ **Warning:** Updating the TileMap is computationally expensive and may impact performance. Try to limit the number of calls to this function to avoid unnecessary update.
 
-\ **注意：**\ 這不會觸發 TileMap 的直接更新，更新將照常在影格末尾完成（除非您呼叫 :ref:`update_internals()<class_TileMap_method_update_internals>`\ ）。
+\ **Note:** This does not trigger a direct update of the TileMap, the update will be done at the end of the frame as usual (unless you call :ref:`update_internals()<class_TileMap_method_update_internals>`).
 
 .. rst-class:: classref-item-separator
 
@@ -885,7 +887,7 @@ Returns if a layer's built-in navigation regions generation is enabled.
 
 |void| **remove_layer**\ (\ layer\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileMap_method_remove_layer>`
 
-移除索引為 ``layer`` 的層。
+Removes the layer at index ``layer``.
 
 .. rst-class:: classref-item-separator
 
@@ -897,17 +899,17 @@ Returns if a layer's built-in navigation regions generation is enabled.
 
 |void| **set_cell**\ (\ layer\: :ref:`int<class_int>`, coords\: :ref:`Vector2i<class_Vector2i>`, source_id\: :ref:`int<class_int>` = -1, atlas_coords\: :ref:`Vector2i<class_Vector2i>` = Vector2i(-1, -1), alternative_tile\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_TileMap_method_set_cell>`
 
-設定位於層 ``layer`` 座標為 ``coords`` 的儲存格的圖塊識別字。\ :ref:`TileSet<class_TileSet>` 中的每個圖塊都由三部分進行標識：
+Sets the tile identifiers for the cell on layer ``layer`` at coordinates ``coords``. Each tile of the :ref:`TileSet<class_TileSet>` is identified using three parts:
 
-- 源識別字 ``source_id`` 標識的是 :ref:`TileSetSource<class_TileSetSource>` 識別字。見 :ref:`TileSet.set_source_id()<class_TileSet_method_set_source_id>`\ ，
+- The source identifier ``source_id`` identifies a :ref:`TileSetSource<class_TileSetSource>` identifier. See :ref:`TileSet.set_source_id()<class_TileSet_method_set_source_id>`,
 
-- 合集座標識別字 ``atlas_coords`` 標識的是合集中的圖塊座標（如果使用的是 :ref:`TileSetAtlasSource<class_TileSetAtlasSource>` 源）。如果使用的是 :ref:`TileSetScenesCollectionSource<class_TileSetScenesCollectionSource>`\ ，應該始終為 ``Vector2i(0, 0)``\ ，
+- The atlas coordinates identifier ``atlas_coords`` identifies a tile coordinates in the atlas (if the source is a :ref:`TileSetAtlasSource<class_TileSetAtlasSource>`). For :ref:`TileSetScenesCollectionSource<class_TileSetScenesCollectionSource>` it should always be ``Vector2i(0, 0)``),
 
-- 備選圖塊識別字 ``alternative_tile`` 標識的是合集中的圖塊備選項（如果使用的是 :ref:`TileSetAtlasSource<class_TileSetAtlasSource>` 源），如果使用的是 :ref:`TileSetScenesCollectionSource<class_TileSetScenesCollectionSource>` 則標識的是場景。
+- The alternative tile identifier ``alternative_tile`` identifies a tile alternative in the atlas (if the source is a :ref:`TileSetAtlasSource<class_TileSetAtlasSource>`), and the scene for a :ref:`TileSetScenesCollectionSource<class_TileSetScenesCollectionSource>`.
 
-如果 ``source_id`` 為 ``-1``\ 、\ ``atlas_coords`` 為 ``Vector2i(-1, -1)`` 或 ``alternative_tile`` 為 ``-1``\ ，則會擦除該儲存格。擦除後的儲存格中，\ **所有**\ 識別字都會自動設為對應的無效值，即 ``-1``\ 、\ ``Vector2i(-1, -1)`` 和 ``-1``\ 。
+If ``source_id`` is set to ``-1``, ``atlas_coords`` to ``Vector2i(-1, -1)`` or ``alternative_tile`` to ``-1``, the cell will be erased. An erased cell gets **all** its identifiers automatically set to their respective invalid values, namely ``-1``, ``Vector2i(-1, -1)`` and ``-1``.
 
-如果 ``layer`` 為負數，則從最後一個圖層開始存取。
+If ``layer`` is negative, the layers are accessed from the last one.
 
 .. rst-class:: classref-item-separator
 
@@ -969,9 +971,9 @@ If ``layer`` is negative, the layers are accessed from the last one.
 
 |void| **set_layer_modulate**\ (\ layer\: :ref:`int<class_int>`, modulate\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_TileMap_method_set_layer_modulate>`
 
-設定圖層的顏色。該顏色會與圖塊的顏色以及 TileMap 的調變色相乘。
+Sets a layer's color. It will be multiplied by tile's color and TileMap's modulate.
 
-如果 ``layer`` 為負，則逆序存取圖層。
+If ``layer`` is negative, the layers are accessed from the last one.
 
 .. rst-class:: classref-item-separator
 
@@ -983,9 +985,9 @@ If ``layer`` is negative, the layers are accessed from the last one.
 
 |void| **set_layer_name**\ (\ layer\: :ref:`int<class_int>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TileMap_method_set_layer_name>`
 
-設定圖層的名稱。主要在編輯器中使用。
+Sets a layer's name. This is mostly useful in the editor.
 
-如果 ``layer`` 為負，則逆序存取圖層。
+If ``layer`` is negative, the layers are accessed from the last one.
 
 .. rst-class:: classref-item-separator
 
@@ -1027,11 +1029,11 @@ If ``layer`` is negative, the layers are accessed from the last one.
 
 |void| **set_layer_y_sort_enabled**\ (\ layer\: :ref:`int<class_int>`, y_sort_enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TileMap_method_set_layer_y_sort_enabled>`
 
-啟用或禁用圖層的 Y 排序。如果進行了 Y 排序，則該圖層和 CanvasItem 節點的行為一致，會將其中的每個圖塊都進行 Y 排序。
+Enables or disables a layer's Y-sorting. If a layer is Y-sorted, the layer will behave as a CanvasItem node where each of its tile gets Y-sorted.
 
-Y 排序圖層的 Z 索引一般應該和未 Y 排序的圖層不同，否則未 Y 排序的圖層會作為一個整體，和 Y 排序圖層一起進行 Y 排序。通常不希望發生這樣的行為。
+Y-sorted layers should usually be on different Z-index values than not Y-sorted layers, otherwise, each of those layer will be Y-sorted as whole with the Y-sorted one. This is usually an undesired behavior.
 
-如果 ``layer`` 為負，則逆序存取圖層。
+If ``layer`` is negative, the layers are accessed from the last one.
 
 .. rst-class:: classref-item-separator
 
@@ -1043,11 +1045,11 @@ Y 排序圖層的 Z 索引一般應該和未 Y 排序的圖層不同，否則未
 
 |void| **set_layer_y_sort_origin**\ (\ layer\: :ref:`int<class_int>`, y_sort_origin\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileMap_method_set_layer_y_sort_origin>`
 
-設定圖層的 Y 排序原點。各個圖塊的 Y 排序原點值都會加上這個 Y 排序原點值。
+Sets a layer's Y-sort origin value. This Y-sort origin value is added to each tile's Y-sort origin value.
 
-用例是為圖層冒充不同的高度級別。俯視角遊戲比較有用。
+This allows, for example, to fake a different height level on each layer. This can be useful for top-down view games.
 
-如果 ``layer`` 為負，則逆序存取圖層。
+If ``layer`` is negative, the layers are accessed from the last one.
 
 .. rst-class:: classref-item-separator
 
@@ -1059,9 +1061,9 @@ Y 排序圖層的 Z 索引一般應該和未 Y 排序的圖層不同，否則未
 
 |void| **set_layer_z_index**\ (\ layer\: :ref:`int<class_int>`, z_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileMap_method_set_layer_z_index>`
 
-設定圖層的 Z 索引值。各個圖塊的 Z 索引值都會加上這個 Z 索引。
+Sets a layers Z-index value. This Z-index is added to each tile's Z-index value.
 
-如果 ``layer`` 為負，則逆序存取圖層。
+If ``layer`` is negative, the layers are accessed from the last one.
 
 .. rst-class:: classref-item-separator
 
@@ -1073,7 +1075,7 @@ Y 排序圖層的 Z 索引一般應該和未 Y 排序的圖層不同，否則未
 
 |void| **set_navigation_map**\ (\ layer\: :ref:`int<class_int>`, map\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_TileMap_method_set_navigation_map>`
 
-**已棄用：** Use :ref:`set_layer_navigation_map()<class_TileMap_method_set_layer_navigation_map>` instead.
+**Deprecated:** Use :ref:`set_layer_navigation_map()<class_TileMap_method_set_layer_navigation_map>` instead.
 
 Assigns ``map`` as a :ref:`NavigationServer2D<class_NavigationServer2D>` navigation map for the specified TileMap layer ``layer``.
 
@@ -1087,9 +1089,9 @@ Assigns ``map`` as a :ref:`NavigationServer2D<class_NavigationServer2D>` navigat
 
 |void| **set_pattern**\ (\ layer\: :ref:`int<class_int>`, position\: :ref:`Vector2i<class_Vector2i>`, pattern\: :ref:`TileMapPattern<class_TileMapPattern>`\ ) :ref:`🔗<class_TileMap_method_set_pattern>`
 
-將給定的 :ref:`TileMapPattern<class_TileMapPattern>` 貼上到圖塊地圖中的 ``position`` 位置和 ``layer`` 層。
+Paste the given :ref:`TileMapPattern<class_TileMapPattern>` at the given ``position`` and ``layer`` in the tile map.
 
-如果 ``layer`` 為負，則從最後一層開始存取。
+If ``layer`` is negative, the layers are accessed from the last one.
 
 .. rst-class:: classref-item-separator
 
@@ -1107,12 +1109,12 @@ However, for performance reasons, those updates are batched and delayed to the e
 
 \ **Warning:** Updating the TileMap is computationally expensive and may impact performance. Try to limit the number of updates and how many tiles they impact.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

@@ -5,26 +5,26 @@
 Plane
 =====
 
-使用黑塞范式的平面。
+A plane in Hessian normal form.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-代表归一化的平面方程。\ :ref:`normal<class_Plane_property_normal>` 是平面的法线（归一化的 a、b、c），而 :ref:`d<class_Plane_property_d>` 是原点到平面的距离（沿“法线”方向）。平面的“上方”是平面朝向法线方向的一面。
+Represents a normalized plane equation. :ref:`normal<class_Plane_property_normal>` is the normal of the plane (a, b, c normalized), and :ref:`d<class_Plane_property_d>` is the distance from the origin to the plane (in the direction of "normal"). "Over" or "Above" the plane is considered the side of the plane towards where the normal is pointing.
 
 .. rst-class:: classref-introduction-group
 
-教程
-----
+Tutorials
+---------
 
-- :doc:`数学文档索引 <../tutorials/math/index>`
+- :doc:`Math documentation index <../tutorials/math/index>`
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -43,8 +43,8 @@ Plane
 
 .. rst-class:: classref-reftable-group
 
-构造函数
---------
+Constructors
+------------
 
 .. table::
    :widths: auto
@@ -67,8 +67,8 @@ Plane
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -99,8 +99,8 @@ Plane
 
 .. rst-class:: classref-reftable-group
 
-运算符
-------
+Operators
+---------
 
 .. table::
    :widths: auto
@@ -123,8 +123,8 @@ Plane
 
 .. rst-class:: classref-descriptions-group
 
-常量
-----
+Constants
+---------
 
 .. _class_Plane_constant_PLANE_YZ:
 
@@ -132,7 +132,7 @@ Plane
 
 **PLANE_YZ** = ``Plane(1, 0, 0, 0)`` :ref:`🔗<class_Plane_constant_PLANE_YZ>`
 
-在 Y 轴和 Z 轴上延伸的平面（法向量指向 +X）。
+A plane that extends in the Y and Z axes (normal vector points +X).
 
 .. _class_Plane_constant_PLANE_XZ:
 
@@ -140,7 +140,7 @@ Plane
 
 **PLANE_XZ** = ``Plane(0, 1, 0, 0)`` :ref:`🔗<class_Plane_constant_PLANE_XZ>`
 
-在 X 轴和 Z 轴上延伸的平面（法向量朝向 +Y）。
+A plane that extends in the X and Z axes (normal vector points +Y).
 
 .. _class_Plane_constant_PLANE_XY:
 
@@ -148,7 +148,7 @@ Plane
 
 **PLANE_XY** = ``Plane(0, 0, 1, 0)`` :ref:`🔗<class_Plane_constant_PLANE_XY>`
 
-在 X 轴和 Y 轴上延伸的平面（法向量朝向 +Z）。
+A plane that extends in the X and Y axes (normal vector points +Z).
 
 .. rst-class:: classref-section-separator
 
@@ -156,8 +156,8 @@ Plane
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_Plane_property_d:
 
@@ -165,9 +165,9 @@ Plane
 
 :ref:`float<class_float>` **d** = ``0.0`` :ref:`🔗<class_Plane_property_d>`
 
-从原点到平面的距离，按照 :ref:`normal<class_Plane_property_normal>` 取值（根据其方向和长度）。原点与平面的实际绝对距离可以通过 ``abs(d) / normal.length()`` 计算（如果 :ref:`normal<class_Plane_property_normal>` 长度为零，则该 **Plane** 表示的不是有效平面）。
+The distance from the origin to the plane, expressed in terms of :ref:`normal<class_Plane_property_normal>` (according to its direction and magnitude). Actual absolute distance from the origin to the plane can be calculated as ``abs(d) / normal.length()`` (if :ref:`normal<class_Plane_property_normal>` has zero length then this **Plane** does not represent a valid plane).
 
-在平面 ``ax + by + cz = d`` 的标量方程中，这是 ``d``\ ，而 ``(a, b, c)`` 坐标由 :ref:`normal<class_Plane_property_normal>` 属性表示。
+In the scalar equation of the plane ``ax + by + cz = d``, this is ``d``, while the ``(a, b, c)`` coordinates are represented by the :ref:`normal<class_Plane_property_normal>` property.
 
 .. rst-class:: classref-item-separator
 
@@ -179,9 +179,9 @@ Plane
 
 :ref:`Vector3<class_Vector3>` **normal** = ``Vector3(0, 0, 0)`` :ref:`🔗<class_Plane_property_normal>`
 
-该平面的法线，通常为单位向量。不应该为零向量，因为 :ref:`normal<class_Plane_property_normal>` 为零的 **Plane** 代表的不是有效平面。
+The normal of the plane, typically a unit vector. Shouldn't be a zero vector as **Plane** with such :ref:`normal<class_Plane_property_normal>` does not represent a valid plane.
 
-在平面 ``ax + by + cz = d`` 的标量方程中，这是向量 ``(a, b, c)``\ ，其中 ``d`` 是 :ref:`d<class_Plane_property_d>` 属性。
+In the scalar equation of the plane ``ax + by + cz = d``, this is the vector ``(a, b, c)``, where ``d`` is the :ref:`d<class_Plane_property_d>` property.
 
 .. rst-class:: classref-item-separator
 
@@ -193,7 +193,7 @@ Plane
 
 :ref:`float<class_float>` **x** = ``0.0`` :ref:`🔗<class_Plane_property_x>`
 
-平面法向量 :ref:`normal<class_Plane_property_normal>` 的 X 分量。
+The X component of the plane's :ref:`normal<class_Plane_property_normal>` vector.
 
 .. rst-class:: classref-item-separator
 
@@ -205,7 +205,7 @@ Plane
 
 :ref:`float<class_float>` **y** = ``0.0`` :ref:`🔗<class_Plane_property_y>`
 
-平面法向量 :ref:`normal<class_Plane_property_normal>` 的 Y 分量。
+The Y component of the plane's :ref:`normal<class_Plane_property_normal>` vector.
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ Plane
 
 :ref:`float<class_float>` **z** = ``0.0`` :ref:`🔗<class_Plane_property_z>`
 
-平面法向量 :ref:`normal<class_Plane_property_normal>` 的 Z 分量。
+The Z component of the plane's :ref:`normal<class_Plane_property_normal>` vector.
 
 .. rst-class:: classref-section-separator
 
@@ -225,8 +225,8 @@ Plane
 
 .. rst-class:: classref-descriptions-group
 
-构造函数说明
-------------
+Constructor Descriptions
+------------------------
 
 .. _class_Plane_constructor_Plane:
 
@@ -234,7 +234,7 @@ Plane
 
 :ref:`Plane<class_Plane>` **Plane**\ (\ ) :ref:`🔗<class_Plane_constructor_Plane>`
 
-构造默认初始化的 **Plane**\ ，所有分量都设置为 ``0``\ 。
+Constructs a default-initialized **Plane** with all components set to ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -244,7 +244,7 @@ Plane
 
 :ref:`Plane<class_Plane>` **Plane**\ (\ from\: :ref:`Plane<class_Plane>`\ )
 
-构造给定 **Plane** 的副本。
+Constructs a **Plane** as a copy of the given **Plane**.
 
 .. rst-class:: classref-item-separator
 
@@ -254,7 +254,7 @@ Plane
 
 :ref:`Plane<class_Plane>` **Plane**\ (\ a\: :ref:`float<class_float>`, b\: :ref:`float<class_float>`, c\: :ref:`float<class_float>`, d\: :ref:`float<class_float>`\ )
 
-根据四个参数创建一个平面。产生的平面的 :ref:`normal<class_Plane_property_normal>` 的三个分量是 ``a``\ 、\ ``b`` 和 ``c``\ ，且该平面与原点的距离为 ``d``\ 。
+Creates a plane from the four parameters. The three components of the resulting plane's :ref:`normal<class_Plane_property_normal>` are ``a``, ``b`` and ``c``, and the plane has a distance of ``d`` from the origin.
 
 .. rst-class:: classref-item-separator
 
@@ -264,9 +264,9 @@ Plane
 
 :ref:`Plane<class_Plane>` **Plane**\ (\ normal\: :ref:`Vector3<class_Vector3>`\ )
 
-根据法向量创建一个平面。该平面将与原点相交。
+Creates a plane from the normal vector. The plane will intersect the origin.
 
-该平面的 ``normal`` 必须是一个单位向量。
+The ``normal`` of the plane must be a unit vector.
 
 .. rst-class:: classref-item-separator
 
@@ -276,9 +276,9 @@ Plane
 
 :ref:`Plane<class_Plane>` **Plane**\ (\ normal\: :ref:`Vector3<class_Vector3>`, d\: :ref:`float<class_float>`\ )
 
-根据法向量和平面与原点的距离创建一个平面。
+Creates a plane from the normal vector and the plane's distance from the origin.
 
-平面的 ``normal`` 必须是一个单位向量。
+The ``normal`` of the plane must be a unit vector.
 
 .. rst-class:: classref-item-separator
 
@@ -288,9 +288,9 @@ Plane
 
 :ref:`Plane<class_Plane>` **Plane**\ (\ normal\: :ref:`Vector3<class_Vector3>`, point\: :ref:`Vector3<class_Vector3>`\ )
 
-从法向量和平面上的一个点创建一个平面。
+Creates a plane from the normal vector and a point on the plane.
 
-平面的 ``normal`` 必须是一个单位向量。
+The ``normal`` of the plane must be a unit vector.
 
 .. rst-class:: classref-item-separator
 
@@ -300,7 +300,7 @@ Plane
 
 :ref:`Plane<class_Plane>` **Plane**\ (\ point1\: :ref:`Vector3<class_Vector3>`, point2\: :ref:`Vector3<class_Vector3>`, point3\: :ref:`Vector3<class_Vector3>`\ )
 
-根据顺时针顺序给出的三个点创建一个平面。
+Creates a plane from the three points, given in clockwise order.
 
 .. rst-class:: classref-section-separator
 
@@ -308,8 +308,8 @@ Plane
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_Plane_method_distance_to:
 
@@ -317,7 +317,7 @@ Plane
 
 :ref:`float<class_float>` **distance_to**\ (\ point\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Plane_method_distance_to>`
 
-返回从该平面到位置 ``point`` 的最短距离。如果该点在平面上方，则距离将为正。如果在下方，则距离将为负。
+Returns the shortest distance from the plane to the position ``point``. If the point is above the plane, the distance will be positive. If below, the distance will be negative.
 
 .. rst-class:: classref-item-separator
 
@@ -329,7 +329,7 @@ Plane
 
 :ref:`Vector3<class_Vector3>` **get_center**\ (\ ) |const| :ref:`🔗<class_Plane_method_get_center>`
 
-返回平面的中心。
+Returns the center of the plane.
 
 .. rst-class:: classref-item-separator
 
@@ -341,7 +341,7 @@ Plane
 
 :ref:`bool<class_bool>` **has_point**\ (\ point\: :ref:`Vector3<class_Vector3>`, tolerance\: :ref:`float<class_float>` = 1e-05\ ) |const| :ref:`🔗<class_Plane_method_has_point>`
 
-如果 ``point`` 在该平面内，则返回 ``true``\ 。比较将使用一个自定义的最小 ``tolerance`` 阈值。
+Returns ``true`` if ``point`` is inside the plane. Comparison uses a custom minimum ``tolerance`` threshold.
 
 .. rst-class:: classref-item-separator
 
@@ -353,7 +353,7 @@ Plane
 
 :ref:`Variant<class_Variant>` **intersect_3**\ (\ b\: :ref:`Plane<class_Plane>`, c\: :ref:`Plane<class_Plane>`\ ) |const| :ref:`🔗<class_Plane_method_intersect_3>`
 
-返回 ``b``\ 、\ ``c``\ 、该平面这三个平面的交点。如果没有找到交点，则返回 ``null``\ 。
+Returns the intersection point of the three planes ``b``, ``c`` and this plane. If no intersection is found, ``null`` is returned.
 
 .. rst-class:: classref-item-separator
 
@@ -365,7 +365,7 @@ Plane
 
 :ref:`Variant<class_Variant>` **intersects_ray**\ (\ from\: :ref:`Vector3<class_Vector3>`, dir\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Plane_method_intersects_ray>`
 
-返回由位置 ``from`` 和方向法线 ``dir`` 组成的射线与该平面的交点。如果没有找到交点，则返回 ``null``\ 。
+Returns the intersection point of a ray consisting of the position ``from`` and the direction normal ``dir`` with this plane. If no intersection is found, ``null`` is returned.
 
 .. rst-class:: classref-item-separator
 
@@ -377,7 +377,7 @@ Plane
 
 :ref:`Variant<class_Variant>` **intersects_segment**\ (\ from\: :ref:`Vector3<class_Vector3>`, to\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Plane_method_intersects_segment>`
 
-返回从位置 ``from`` 到位置 ``to`` 的线段与该平面的交点。如果没有找到交点，则返回 ``null``\ 。
+Returns the intersection point of a segment from position ``from`` to position ``to`` with this plane. If no intersection is found, ``null`` is returned.
 
 .. rst-class:: classref-item-separator
 
@@ -389,7 +389,7 @@ Plane
 
 :ref:`bool<class_bool>` **is_equal_approx**\ (\ to_plane\: :ref:`Plane<class_Plane>`\ ) |const| :ref:`🔗<class_Plane_method_is_equal_approx>`
 
-如果该平面和 ``to_plane`` 近似相等，则返回 ``true``\ ，判断近似相等的方法是通过在每个分量上运行 :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>`\ 。
+Returns ``true`` if this plane and ``to_plane`` are approximately equal, by running :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>` on each component.
 
 .. rst-class:: classref-item-separator
 
@@ -401,7 +401,7 @@ Plane
 
 :ref:`bool<class_bool>` **is_finite**\ (\ ) |const| :ref:`🔗<class_Plane_method_is_finite>`
 
-如果该平面是有限的，则返回 ``true``\ ，判断方法是在每个分量上调用 :ref:`@GlobalScope.is_finite()<class_@GlobalScope_method_is_finite>`\ 。
+Returns ``true`` if this plane is finite, by calling :ref:`@GlobalScope.is_finite()<class_@GlobalScope_method_is_finite>` on each component.
 
 .. rst-class:: classref-item-separator
 
@@ -413,7 +413,7 @@ Plane
 
 :ref:`bool<class_bool>` **is_point_over**\ (\ point\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Plane_method_is_point_over>`
 
-如果 ``point`` 位于平面上方，则返回 ``true``\ 。
+Returns ``true`` if ``point`` is located above the plane.
 
 .. rst-class:: classref-item-separator
 
@@ -425,7 +425,7 @@ Plane
 
 :ref:`Plane<class_Plane>` **normalized**\ (\ ) |const| :ref:`🔗<class_Plane_method_normalized>`
 
-返回该平面归一化 :ref:`normal<class_Plane_property_normal>` 后的副本（法线成为单位向量）。如果 :ref:`normal<class_Plane_property_normal>` 无法归一化（长度为零），则返回 ``Plane(0, 0, 0, 0)``\ 。
+Returns a copy of the plane, with normalized :ref:`normal<class_Plane_property_normal>` (so it's a unit vector). Returns ``Plane(0, 0, 0, 0)`` if :ref:`normal<class_Plane_property_normal>` can't be normalized (it has zero length).
 
 .. rst-class:: classref-item-separator
 
@@ -437,7 +437,7 @@ Plane
 
 :ref:`Vector3<class_Vector3>` **project**\ (\ point\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Plane_method_project>`
 
-返回 ``point`` 在该平面中的正交投影。
+Returns the orthogonal projection of ``point`` into a point in the plane.
 
 .. rst-class:: classref-section-separator
 
@@ -445,8 +445,8 @@ Plane
 
 .. rst-class:: classref-descriptions-group
 
-运算符说明
-----------
+Operator Descriptions
+---------------------
 
 .. _class_Plane_operator_neq_Plane:
 
@@ -454,9 +454,9 @@ Plane
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Plane<class_Plane>`\ ) :ref:`🔗<class_Plane_operator_neq_Plane>`
 
-如果平面不相等，则返回 ``true``\ 。
+Returns ``true`` if the planes are not equal.
 
-\ **注意：**\ 由于浮点数精度误差，请考虑改用 :ref:`is_equal_approx()<class_Plane_method_is_equal_approx>`\ ，会更可靠。
+\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Plane_method_is_equal_approx>` instead, which is more reliable.
 
 .. rst-class:: classref-item-separator
 
@@ -468,9 +468,9 @@ Plane
 
 :ref:`Plane<class_Plane>` **operator ***\ (\ right\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_Plane_operator_mul_Transform3D>`
 
-将 **Plane** 逆向变换（乘以）给定的 :ref:`Transform3D<class_Transform3D>` 变换矩阵。
+Inversely transforms (multiplies) the **Plane** by the given :ref:`Transform3D<class_Transform3D>` transformation matrix.
 
-\ ``plane * transform`` 相当于 ``transform.affine_inverse() * plane``\ 。请参阅 :ref:`Transform3D.affine_inverse()<class_Transform3D_method_affine_inverse>`\ 。
+\ ``plane * transform`` is equivalent to ``transform.affine_inverse() * plane``. See :ref:`Transform3D.affine_inverse()<class_Transform3D_method_affine_inverse>`.
 
 .. rst-class:: classref-item-separator
 
@@ -482,9 +482,9 @@ Plane
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Plane<class_Plane>`\ ) :ref:`🔗<class_Plane_operator_eq_Plane>`
 
-如果平面完全相等，则返回 ``true``\ 。
+Returns ``true`` if the planes are exactly equal.
 
-\ **注意：**\ 由于浮点数精度误差，请考虑改用 :ref:`is_equal_approx()<class_Plane_method_is_equal_approx>`\ ，会更可靠。
+\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Plane_method_is_equal_approx>` instead, which is more reliable.
 
 .. rst-class:: classref-item-separator
 
@@ -496,7 +496,7 @@ Plane
 
 :ref:`Plane<class_Plane>` **operator unary+**\ (\ ) :ref:`🔗<class_Plane_operator_unplus>`
 
-返回与 ``+`` 不存在时相同的值。单目 ``+`` 没有作用，但有时可以使你的代码更具可读性。
+Returns the same value as if the ``+`` was not there. Unary ``+`` does nothing, but sometimes it can make your code more readable.
 
 .. rst-class:: classref-item-separator
 
@@ -508,14 +508,14 @@ Plane
 
 :ref:`Plane<class_Plane>` **operator unary-**\ (\ ) :ref:`🔗<class_Plane_operator_unminus>`
 
-返回该 **Plane** 的负值。和写 ``Plane(-p.normal, -p.d)`` 相同。该操作翻转了法线向量的方向，也翻转了距离值，得到的 Plane 位于同一个位置，但是朝向相反的方向。
+Returns the negative value of the **Plane**. This is the same as writing ``Plane(-p.normal, -p.d)``. This operation flips the direction of the normal vector and also flips the distance value, resulting in a Plane that is in the same place, but facing the opposite direction.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

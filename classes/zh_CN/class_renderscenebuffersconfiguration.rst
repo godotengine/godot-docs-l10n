@@ -5,21 +5,21 @@
 RenderSceneBuffersConfiguration
 ===============================
 
-**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用于设置 :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` 对象的配置对象。
+Configuration object used to setup a :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` object.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-该配置对象由渲染引擎在视口更改时创建和填充，并用于（重新）配置 :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` 对象。
+This configuration object is created and populated by the render engine on a viewport change and used to (re)configure a :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` object.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -52,8 +52,8 @@ RenderSceneBuffersConfiguration
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_RenderSceneBuffersConfiguration_property_anisotropic_filtering_level:
 
@@ -66,7 +66,7 @@ RenderSceneBuffersConfiguration
 - |void| **set_anisotropic_filtering_level**\ (\ value\: :ref:`ViewportAnisotropicFiltering<enum_RenderingServer_ViewportAnisotropicFiltering>`\ )
 - :ref:`ViewportAnisotropicFiltering<enum_RenderingServer_ViewportAnisotropicFiltering>` **get_anisotropic_filtering_level**\ (\ )
 
-各向异性过滤的级别。
+Level of the anisotropic filter.
 
 .. rst-class:: classref-item-separator
 
@@ -83,7 +83,7 @@ RenderSceneBuffersConfiguration
 - |void| **set_fsr_sharpness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fsr_sharpness**\ (\ )
 
-如果使用 FSR 放大，则 FSR 锐度适用。
+FSR Sharpness applicable if FSR upscaling is used.
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ RenderSceneBuffersConfiguration
 - |void| **set_internal_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_internal_size**\ (\ )
 
-用于渲染的 3D 渲染缓冲区的大小。
+The size of the 3D render buffer used for rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ RenderSceneBuffersConfiguration
 - |void| **set_msaa_3d**\ (\ value\: :ref:`ViewportMSAA<enum_RenderingServer_ViewportMSAA>`\ )
 - :ref:`ViewportMSAA<enum_RenderingServer_ViewportMSAA>` **get_msaa_3d**\ (\ )
 
-用于 3D 渲染的 MSAA 模式。
+The MSAA mode we're using for 3D rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +134,7 @@ RenderSceneBuffersConfiguration
 - |void| **set_render_target**\ (\ value\: :ref:`RID<class_RID>`\ )
 - :ref:`RID<class_RID>` **get_render_target**\ (\ )
 
-与这些缓冲区关联的渲染目标。
+The render target associated with these buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -151,7 +151,7 @@ RenderSceneBuffersConfiguration
 - |void| **set_scaling_3d_mode**\ (\ value\: :ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>`\ )
 - :ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>` **get_scaling_3d_mode**\ (\ )
 
-如果 :ref:`internal_size<class_RenderSceneBuffersConfiguration_property_internal_size>` 和 :ref:`target_size<class_RenderSceneBuffersConfiguration_property_target_size>` 不相等，则将使用所请求的缩放模式进行放大/缩小。
+The requested scaling mode with which we upscale/downscale if :ref:`internal_size<class_RenderSceneBuffersConfiguration_property_internal_size>` and :ref:`target_size<class_RenderSceneBuffersConfiguration_property_target_size>` are not equal.
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ RenderSceneBuffersConfiguration
 - |void| **set_screen_space_aa**\ (\ value\: :ref:`ViewportScreenSpaceAA<enum_RenderingServer_ViewportScreenSpaceAA>`\ )
 - :ref:`ViewportScreenSpaceAA<enum_RenderingServer_ViewportScreenSpaceAA>` **get_screen_space_aa**\ (\ )
 
-请求在后期处理中应用的屏幕空间抗锯齿。
+The requested screen space AA applied in post processing.
 
 .. rst-class:: classref-item-separator
 
@@ -185,7 +185,7 @@ RenderSceneBuffersConfiguration
 - |void| **set_target_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_target_size**\ (\ )
 
-使用缩放时的目标（放大）大小。
+The target (upscale) size if scaling is used.
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ RenderSceneBuffersConfiguration
 - |void| **set_texture_mipmap_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_texture_mipmap_bias**\ (\ )
 
-应用于 mipmap 的偏置。
+Bias applied to mipmaps.
 
 .. rst-class:: classref-item-separator
 
@@ -219,14 +219,14 @@ RenderSceneBuffersConfiguration
 - |void| **set_view_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_view_count**\ (\ )
 
-渲染的视图数。
+The number of views we're rendering.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

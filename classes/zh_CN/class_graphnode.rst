@@ -5,29 +5,27 @@
 GraphNode
 =========
 
-**实验性：** This class may be changed or removed in future versions.
+**Inherits:** :ref:`GraphElement<class_GraphElement>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**继承：** :ref:`GraphElement<class_GraphElement>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
-
-带有连接端口的容器，代表 :ref:`GraphEdit<class_GraphEdit>` 中的一个节点。
+A container with connection ports, representing a node in a :ref:`GraphEdit<class_GraphEdit>`.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-**GraphNode** 能够在 :ref:`GraphEdit<class_GraphEdit>` 图中创建节点，节点会根据其子控件定制内容。\ **GraphNode** 派生自 :ref:`Container<class_Container>`\ ，负责将其子节点放置在屏幕上。工作原理类似于 :ref:`VBoxContainer<class_VBoxContainer>`\ 。而子节点为 **GraphNode** 提供所谓的插槽，每个插槽的两侧都可以有一个连接端口。
+**GraphNode** allows to create nodes for a :ref:`GraphEdit<class_GraphEdit>` graph with customizable content based on its child controls. **GraphNode** is derived from :ref:`Container<class_Container>` and it is responsible for placing its children on screen. This works similar to :ref:`VBoxContainer<class_VBoxContainer>`. Children, in turn, provide **GraphNode** with so-called slots, each of which can have a connection port on either side.
 
-\ **GraphNode** 的插槽由其索引定义，一个插槽可以为节点提供最多两个端口：一个在左侧，一个在右侧。根据惯例，左侧端口也被称为\ **输入端口**\ ，右侧端口被称为\ **输出端口**\ 。每个端口都可以单独启用和配置，使用不同的类型和颜色。类型是你按照自己的需要来定义的任意值。父 :ref:`GraphEdit<class_GraphEdit>` 将在每个连接和断开连接请求中收到此信息。
+Each **GraphNode** slot is defined by its index and can provide the node with up to two ports: one on the left, and one on the right. By convention the left port is also referred to as the **input port** and the right port is referred to as the **output port**. Each port can be enabled and configured individually, using different type and color. The type is an arbitrary value that you can define using your own considerations. The parent :ref:`GraphEdit<class_GraphEdit>` will receive this information on each connect and disconnect request.
 
-添加至少一个子 :ref:`Control<class_Control>` 后，就可以在“检查器”面板中配置插槽。这些属性在“Slot”部分中按每个插槽的索引进行分组。
+Slots can be configured in the Inspector dock once you add at least one child :ref:`Control<class_Control>`. The properties are grouped by each slot's index in the "Slot" section.
 
-\ **注意：**\ 虽然 GraphNode 是使用插槽和插槽索引设置的，但连接是在启用的端口之间建立的。因此 :ref:`GraphEdit<class_GraphEdit>` 使用端口的索引，而不是插槽的索引。可以使用 :ref:`get_input_port_slot()<class_GraphNode_method_get_input_port_slot>` 和 :ref:`get_output_port_slot()<class_GraphNode_method_get_output_port_slot>` 从端口索引中获取插槽索引。
+\ **Note:** While GraphNode is set up using slots and slot indices, connections are made between the ports which are enabled. Because of that :ref:`GraphEdit<class_GraphEdit>` uses the port's index and not the slot's index. You can use :ref:`get_input_port_slot()<class_GraphNode_method_get_input_port_slot>` and :ref:`get_output_port_slot()<class_GraphNode_method_get_output_port_slot>` to get the slot index from the port index.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -46,8 +44,8 @@ GraphNode
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -130,8 +128,8 @@ GraphNode
 
 .. rst-class:: classref-reftable-group
 
-主题属性
---------
+Theme Properties
+----------------
 
 .. table::
    :widths: auto
@@ -166,8 +164,8 @@ GraphNode
 
 .. rst-class:: classref-descriptions-group
 
-信号
-----
+Signals
+-------
 
 .. _class_GraphNode_signal_slot_sizes_changed:
 
@@ -175,7 +173,7 @@ GraphNode
 
 **slot_sizes_changed**\ (\ ) :ref:`🔗<class_GraphNode_signal_slot_sizes_changed>`
 
-当任意插槽的大小可能已更改时发出。
+Emitted when any slot's size might have changed.
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +185,7 @@ GraphNode
 
 **slot_updated**\ (\ slot_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphNode_signal_slot_updated>`
 
-当任意图形节点的插槽更新时发出。
+Emitted when any GraphNode's slot is updated.
 
 .. rst-class:: classref-section-separator
 
@@ -195,8 +193,8 @@ GraphNode
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_GraphNode_property_ignore_invalid_connection_type:
 
@@ -209,7 +207,7 @@ GraphNode
 - |void| **set_ignore_invalid_connection_type**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ignoring_valid_connection_type**\ (\ )
 
-如果为 ``true``\ ，则可以连接不同类型的端口，即使父级 :ref:`GraphEdit<class_GraphEdit>` 中未明确允许该连接。
+If ``true``, you can connect ports with different types, even if the connection was not explicitly allowed in the parent :ref:`GraphEdit<class_GraphEdit>`.
 
 .. rst-class:: classref-item-separator
 
@@ -226,13 +224,13 @@ GraphNode
 - |void| **set_slots_focus_mode**\ (\ value\: :ref:`FocusMode<enum_Control_FocusMode>`\ )
 - :ref:`FocusMode<enum_Control_FocusMode>` **get_slots_focus_mode**\ (\ )
 
-决定连接槽位的聚焦方法。
+Determines how connection slots can be focused.
 
-- 如果设为 :ref:`Control.FOCUS_CLICK<class_Control_constant_FOCUS_CLICK>`\ ，则只能使用鼠标创建连接。
+- If set to :ref:`Control.FOCUS_CLICK<class_Control_constant_FOCUS_CLICK>`, connections can only be made with the mouse.
 
-- 如果设为 :ref:`Control.FOCUS_ALL<class_Control_constant_FOCUS_ALL>`\ ，则槽位还可以使用 :ref:`ProjectSettings.input/ui_up<class_ProjectSettings_property_input/ui_up>` 和 :ref:`ProjectSettings.input/ui_down<class_ProjectSettings_property_input/ui_down>` 聚焦，使用 :ref:`ProjectSettings.input/ui_left<class_ProjectSettings_property_input/ui_left>` 和 :ref:`ProjectSettings.input/ui_right<class_ProjectSettings_property_input/ui_right>` 输入动作连接。
+- If set to :ref:`Control.FOCUS_ALL<class_Control_constant_FOCUS_ALL>`, slots can also be focused using the :ref:`ProjectSettings.input/ui_up<class_ProjectSettings_property_input/ui_up>` and :ref:`ProjectSettings.input/ui_down<class_ProjectSettings_property_input/ui_down>` and connected using :ref:`ProjectSettings.input/ui_left<class_ProjectSettings_property_input/ui_left>` and :ref:`ProjectSettings.input/ui_right<class_ProjectSettings_property_input/ui_right>` input actions.
 
-- 如果设为 :ref:`Control.FOCUS_ACCESSIBILITY<class_Control_constant_FOCUS_ACCESSIBILITY>`\ ，则只会在读屏软件活动时启用槽位输入动作。
+- If set to :ref:`Control.FOCUS_ACCESSIBILITY<class_Control_constant_FOCUS_ACCESSIBILITY>`, slot input actions are only enabled when the screen reader is active.
 
 .. rst-class:: classref-item-separator
 
@@ -249,7 +247,7 @@ GraphNode
 - |void| **set_title**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_title**\ (\ )
 
-显示在 GraphNode 标题栏中的文本。
+The text displayed in the GraphNode's title bar.
 
 .. rst-class:: classref-section-separator
 
@@ -257,8 +255,8 @@ GraphNode
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_GraphNode_private_method__draw_port:
 
@@ -280,7 +278,7 @@ GraphNode
 
 |void| **clear_all_slots**\ (\ ) :ref:`🔗<class_GraphNode_method_clear_all_slots>`
 
-禁用 GraphNode 的所有插槽。会移除该 GraphNode 的所有输入/输出端口。
+Disables all slots of the GraphNode. This will remove all input/output ports from the GraphNode.
 
 .. rst-class:: classref-item-separator
 
@@ -292,7 +290,7 @@ GraphNode
 
 |void| **clear_slot**\ (\ slot_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphNode_method_clear_slot>`
 
-禁用索引为 ``slot_index`` 的插槽。会移除该 GraphNode 的对应输入和输出端口。
+Disables the slot with the given ``slot_index``. This will remove the corresponding input and output port from the GraphNode.
 
 .. rst-class:: classref-item-separator
 
@@ -304,7 +302,7 @@ GraphNode
 
 :ref:`Color<class_Color>` **get_input_port_color**\ (\ port_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphNode_method_get_input_port_color>`
 
-返回索引为 ``port_idx`` 的输入端口的 :ref:`Color<class_Color>`\ 。
+Returns the :ref:`Color<class_Color>` of the input port with the given ``port_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -316,7 +314,7 @@ GraphNode
 
 :ref:`int<class_int>` **get_input_port_count**\ (\ ) :ref:`🔗<class_GraphNode_method_get_input_port_count>`
 
-返回启用了输入端口的插槽数。
+Returns the number of slots with an enabled input port.
 
 .. rst-class:: classref-item-separator
 
@@ -328,7 +326,7 @@ GraphNode
 
 :ref:`Vector2<class_Vector2>` **get_input_port_position**\ (\ port_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphNode_method_get_input_port_position>`
 
-返回索引为 ``port_idx`` 的输入端口的位置。
+Returns the position of the input port with the given ``port_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -340,7 +338,7 @@ GraphNode
 
 :ref:`int<class_int>` **get_input_port_slot**\ (\ port_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphNode_method_get_input_port_slot>`
 
-返回索引为 ``port_idx`` 的输入端口的对应插槽索引。
+Returns the corresponding slot index of the input port with the given ``port_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -352,7 +350,7 @@ GraphNode
 
 :ref:`int<class_int>` **get_input_port_type**\ (\ port_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphNode_method_get_input_port_type>`
 
-返回索引为 ``port_idx`` 的输入端口的类型。
+Returns the type of the input port with the given ``port_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -364,7 +362,7 @@ GraphNode
 
 :ref:`Color<class_Color>` **get_output_port_color**\ (\ port_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphNode_method_get_output_port_color>`
 
-返回索引为 ``port_idx`` 的输出端口的 :ref:`Color<class_Color>`\ 。
+Returns the :ref:`Color<class_Color>` of the output port with the given ``port_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -376,7 +374,7 @@ GraphNode
 
 :ref:`int<class_int>` **get_output_port_count**\ (\ ) :ref:`🔗<class_GraphNode_method_get_output_port_count>`
 
-返回启用了输出端口的插槽数。
+Returns the number of slots with an enabled output port.
 
 .. rst-class:: classref-item-separator
 
@@ -388,7 +386,7 @@ GraphNode
 
 :ref:`Vector2<class_Vector2>` **get_output_port_position**\ (\ port_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphNode_method_get_output_port_position>`
 
-返回索引为 ``port_idx`` 的输出端口的位置。
+Returns the position of the output port with the given ``port_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -400,7 +398,7 @@ GraphNode
 
 :ref:`int<class_int>` **get_output_port_slot**\ (\ port_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphNode_method_get_output_port_slot>`
 
-返回索引为 ``port_idx`` 的输出端口的对应插槽索引。
+Returns the corresponding slot index of the output port with the given ``port_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -412,7 +410,7 @@ GraphNode
 
 :ref:`int<class_int>` **get_output_port_type**\ (\ port_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphNode_method_get_output_port_type>`
 
-返回索引为 ``port_idx`` 的输出端口的类型。
+Returns the type of the output port with the given ``port_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -424,7 +422,7 @@ GraphNode
 
 :ref:`Color<class_Color>` **get_slot_color_left**\ (\ slot_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GraphNode_method_get_slot_color_left>`
 
-返回索引为 ``slot_index`` 的插槽左侧（输入）的 :ref:`Color<class_Color>`\ 。
+Returns the left (input) :ref:`Color<class_Color>` of the slot with the given ``slot_index``.
 
 .. rst-class:: classref-item-separator
 
@@ -436,7 +434,7 @@ GraphNode
 
 :ref:`Color<class_Color>` **get_slot_color_right**\ (\ slot_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GraphNode_method_get_slot_color_right>`
 
-返回索引为 ``slot_index`` 的插槽右侧（输出）的 :ref:`Color<class_Color>`\ 。
+Returns the right (output) :ref:`Color<class_Color>` of the slot with the given ``slot_index``.
 
 .. rst-class:: classref-item-separator
 
@@ -448,7 +446,7 @@ GraphNode
 
 :ref:`Texture2D<class_Texture2D>` **get_slot_custom_icon_left**\ (\ slot_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GraphNode_method_get_slot_custom_icon_left>`
 
-返回具有给定 ``slot_index`` 的插槽的左侧（输入）的自定义 :ref:`Texture2D<class_Texture2D>`\ 。
+Returns the left (input) custom :ref:`Texture2D<class_Texture2D>` of the slot with the given ``slot_index``.
 
 .. rst-class:: classref-item-separator
 
@@ -460,7 +458,7 @@ GraphNode
 
 :ref:`Texture2D<class_Texture2D>` **get_slot_custom_icon_right**\ (\ slot_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GraphNode_method_get_slot_custom_icon_right>`
 
-返回具有给定 ``slot_index`` 的插槽的右侧（输出）的自定义 :ref:`Texture2D<class_Texture2D>`\ 。
+Returns the right (output) custom :ref:`Texture2D<class_Texture2D>` of the slot with the given ``slot_index``.
 
 .. rst-class:: classref-item-separator
 
@@ -496,7 +494,7 @@ Returns the right (output) metadata of the slot with the given ``slot_index``.
 
 :ref:`int<class_int>` **get_slot_type_left**\ (\ slot_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GraphNode_method_get_slot_type_left>`
 
-返回索引为 ``slot_index`` 的插槽左侧（输入）的类型。
+Returns the left (input) type of the slot with the given ``slot_index``.
 
 .. rst-class:: classref-item-separator
 
@@ -508,7 +506,7 @@ Returns the right (output) metadata of the slot with the given ``slot_index``.
 
 :ref:`int<class_int>` **get_slot_type_right**\ (\ slot_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GraphNode_method_get_slot_type_right>`
 
-返回索引为 ``slot_index`` 的插槽右侧（输出）的类型。
+Returns the right (output) type of the slot with the given ``slot_index``.
 
 .. rst-class:: classref-item-separator
 
@@ -520,7 +518,7 @@ Returns the right (output) metadata of the slot with the given ``slot_index``.
 
 :ref:`HBoxContainer<class_HBoxContainer>` **get_titlebar_hbox**\ (\ ) :ref:`🔗<class_GraphNode_method_get_titlebar_hbox>`
 
-返回标题栏所使用的 :ref:`HBoxContainer<class_HBoxContainer>`\ ，默认只包含一个 :ref:`Label<class_Label>`\ ，用于显示标题。可用于向标题栏添加自定义控件，例如选项和关闭按钮等。
+Returns the :ref:`HBoxContainer<class_HBoxContainer>` used for the title bar, only containing a :ref:`Label<class_Label>` for displaying the title by default. This can be used to add custom controls to the title bar such as option or close buttons.
 
 .. rst-class:: classref-item-separator
 
@@ -532,7 +530,7 @@ Returns the right (output) metadata of the slot with the given ``slot_index``.
 
 :ref:`bool<class_bool>` **is_slot_draw_stylebox**\ (\ slot_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GraphNode_method_is_slot_draw_stylebox>`
 
-如果绘制索引为 ``slot_index`` 的槽位的背景 :ref:`StyleBox<class_StyleBox>`\ ，则返回 ``true``\ 。
+Returns ``true`` if the background :ref:`StyleBox<class_StyleBox>` of the slot with the given ``slot_index`` is drawn.
 
 .. rst-class:: classref-item-separator
 
@@ -544,7 +542,7 @@ Returns the right (output) metadata of the slot with the given ``slot_index``.
 
 :ref:`bool<class_bool>` **is_slot_enabled_left**\ (\ slot_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GraphNode_method_is_slot_enabled_left>`
 
-如果启用了索引为 ``slot_index`` 的插槽的左侧（输入），则返回 ``true``\ 。
+Returns ``true`` if left (input) side of the slot with the given ``slot_index`` is enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -556,7 +554,7 @@ Returns the right (output) metadata of the slot with the given ``slot_index``.
 
 :ref:`bool<class_bool>` **is_slot_enabled_right**\ (\ slot_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GraphNode_method_is_slot_enabled_right>`
 
-如果启用了索引为 ``slot_index`` 的插槽的右侧（输出），则返回 ``true``\ 。
+Returns ``true`` if right (output) side of the slot with the given ``slot_index`` is enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -568,19 +566,19 @@ Returns the right (output) metadata of the slot with the given ``slot_index``.
 
 |void| **set_slot**\ (\ slot_index\: :ref:`int<class_int>`, enable_left_port\: :ref:`bool<class_bool>`, type_left\: :ref:`int<class_int>`, color_left\: :ref:`Color<class_Color>`, enable_right_port\: :ref:`bool<class_bool>`, type_right\: :ref:`int<class_int>`, color_right\: :ref:`Color<class_Color>`, custom_icon_left\: :ref:`Texture2D<class_Texture2D>` = null, custom_icon_right\: :ref:`Texture2D<class_Texture2D>` = null, draw_stylebox\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_GraphNode_method_set_slot>`
 
-设置索引为 ``slot_index`` 的插槽的属性。
+Sets properties of the slot with the given ``slot_index``.
 
-如果 ``enable_left_port``/``enable_right_port`` 为 ``true``\ ，则将出现一个端口，插槽将能够从这一侧连接。
+If ``enable_left_port``/``enable_right_port`` is ``true``, a port will appear and the slot will be able to be connected from this side.
 
-使用 ``type_left``/``type_right`` 可以为每个端口分配一个任意类型。如果两个端口具有相同的类型，或者如果它们的类型之间的连接在父 :ref:`GraphEdit<class_GraphEdit>` 中被允许（参见 :ref:`GraphEdit.add_valid_connection_type()<class_GraphEdit_method_add_valid_connection_type>`\ ），那么这两个端口就可以被连接。请记住，\ :ref:`GraphEdit<class_GraphEdit>` 在接受连接上拥有最终决定权。类型兼容性只允许发出 :ref:`GraphEdit.connection_request<class_GraphEdit_signal_connection_request>` 信号。
+With ``type_left``/``type_right`` an arbitrary type can be assigned to each port. Two ports can be connected if they share the same type, or if the connection between their types is allowed in the parent :ref:`GraphEdit<class_GraphEdit>` (see :ref:`GraphEdit.add_valid_connection_type()<class_GraphEdit_method_add_valid_connection_type>`). Keep in mind that the :ref:`GraphEdit<class_GraphEdit>` has the final say in accepting the connection. Type compatibility simply allows the :ref:`GraphEdit.connection_request<class_GraphEdit_signal_connection_request>` signal to be emitted.
 
-可以使用 ``color_left``/``color_right`` 和 ``custom_icon_left``/``custom_icon_right`` 进一步定制端口。颜色参数为图标添加了一个色调。自定义图标可以用来覆盖默认的端口点。
+Ports can be further customized using ``color_left``/``color_right`` and ``custom_icon_left``/``custom_icon_right``. The color parameter adds a tint to the icon. The custom icon can be used to override the default port dot.
 
-此外，\ ``draw_stylebox`` 可以用来启用或禁用每个插槽的背景样式框的绘制。参见 :ref:`slot<class_GraphNode_theme_style_slot>`\ 。
+Additionally, ``draw_stylebox`` can be used to enable or disable drawing of the background stylebox for each slot. See :ref:`slot<class_GraphNode_theme_style_slot>`.
 
-单个属性也可以使用 ``set_slot_*`` 方法之一来设置。
+Individual properties can also be set using one of the ``set_slot_*`` methods.
 
-\ **注意：**\ 该方法只设置插槽的属性。要创建插槽本身，请将 :ref:`Control<class_Control>` 派生的子节点添加到该 GraphNode。
+\ **Note:** This method only sets properties of the slot. To create the slot itself, add a :ref:`Control<class_Control>`-derived child to the GraphNode.
 
 .. rst-class:: classref-item-separator
 
@@ -592,7 +590,7 @@ Returns the right (output) metadata of the slot with the given ``slot_index``.
 
 |void| **set_slot_color_left**\ (\ slot_index\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_GraphNode_method_set_slot_color_left>`
 
-将索引为 ``slot_index`` 的插槽的左侧（输入）的 :ref:`Color<class_Color>` 设置为 ``color``\ 。
+Sets the :ref:`Color<class_Color>` of the left (input) side of the slot with the given ``slot_index`` to ``color``.
 
 .. rst-class:: classref-item-separator
 
@@ -604,7 +602,7 @@ Returns the right (output) metadata of the slot with the given ``slot_index``.
 
 |void| **set_slot_color_right**\ (\ slot_index\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_GraphNode_method_set_slot_color_right>`
 
-将索引为 ``slot_index`` 的插槽的右侧（输出）的 :ref:`Color<class_Color>` 设置为 ``color``\ 。
+Sets the :ref:`Color<class_Color>` of the right (output) side of the slot with the given ``slot_index`` to ``color``.
 
 .. rst-class:: classref-item-separator
 
@@ -616,7 +614,7 @@ Returns the right (output) metadata of the slot with the given ``slot_index``.
 
 |void| **set_slot_custom_icon_left**\ (\ slot_index\: :ref:`int<class_int>`, custom_icon\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_GraphNode_method_set_slot_custom_icon_left>`
 
-将索引为 ``slot_index`` 的插槽的左侧（输入）的自定义 :ref:`Texture2D<class_Texture2D>` 设置为 ``custom_icon``\ 。
+Sets the custom :ref:`Texture2D<class_Texture2D>` of the left (input) side of the slot with the given ``slot_index`` to ``custom_icon``.
 
 .. rst-class:: classref-item-separator
 
@@ -628,7 +626,7 @@ Returns the right (output) metadata of the slot with the given ``slot_index``.
 
 |void| **set_slot_custom_icon_right**\ (\ slot_index\: :ref:`int<class_int>`, custom_icon\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_GraphNode_method_set_slot_custom_icon_right>`
 
-将索引为 ``slot_index`` 的插槽的右侧（输出）的自定义 :ref:`Texture2D<class_Texture2D>` 设置为 ``custom_icon``\ 。
+Sets the custom :ref:`Texture2D<class_Texture2D>` of the right (output) side of the slot with the given ``slot_index`` to ``custom_icon``.
 
 .. rst-class:: classref-item-separator
 
@@ -640,7 +638,7 @@ Returns the right (output) metadata of the slot with the given ``slot_index``.
 
 |void| **set_slot_draw_stylebox**\ (\ slot_index\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_GraphNode_method_set_slot_draw_stylebox>`
 
-开关索引为 ``slot_index`` 的插槽的背景 :ref:`StyleBox<class_StyleBox>`\ 。
+Toggles the background :ref:`StyleBox<class_StyleBox>` of the slot with the given ``slot_index``.
 
 .. rst-class:: classref-item-separator
 
@@ -652,7 +650,7 @@ Returns the right (output) metadata of the slot with the given ``slot_index``.
 
 |void| **set_slot_enabled_left**\ (\ slot_index\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_GraphNode_method_set_slot_enabled_left>`
 
-切换给定插槽 ``slot_index`` 的左侧（输入）端口。如果 ``enable`` 为 ``true``\ ，则左侧会出现一个端口，并且该插槽可以从这一侧连接。
+Toggles the left (input) side of the slot with the given ``slot_index``. If ``enable`` is ``true``, a port will appear on the left side and the slot will be able to be connected from this side.
 
 .. rst-class:: classref-item-separator
 
@@ -664,7 +662,7 @@ Returns the right (output) metadata of the slot with the given ``slot_index``.
 
 |void| **set_slot_enabled_right**\ (\ slot_index\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_GraphNode_method_set_slot_enabled_right>`
 
-切换给定插槽 ``slot_index`` 的右侧（输出）端口。如果 ``enable`` 为 ``true``\ ，则右侧会出现一个端口，并且该插槽可以从这一侧连接。
+Toggles the right (output) side of the slot with the given ``slot_index``. If ``enable`` is ``true``, a port will appear on the right side and the slot will be able to be connected from this side.
 
 .. rst-class:: classref-item-separator
 
@@ -700,7 +698,7 @@ Sets the custom metadata for the right (output) side of the slot with the given 
 
 |void| **set_slot_type_left**\ (\ slot_index\: :ref:`int<class_int>`, type\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphNode_method_set_slot_type_left>`
 
-将给定插槽 ``slot_index`` 的左侧（输入）类型设置为 ``type``\ 。如果该值为负，则所有的连接将不允许通过用户输入来创建。
+Sets the left (input) type of the slot with the given ``slot_index`` to ``type``. If the value is negative, all connections will be disallowed to be created via user inputs.
 
 .. rst-class:: classref-item-separator
 
@@ -712,7 +710,7 @@ Sets the custom metadata for the right (output) side of the slot with the given 
 
 |void| **set_slot_type_right**\ (\ slot_index\: :ref:`int<class_int>`, type\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphNode_method_set_slot_type_right>`
 
-将给定插槽 ``slot_index`` 的右侧（输出）类型设置为 ``type``\ 。如果该值为负，则所有的连接将不允许通过用户输入来创建。
+Sets the right (output) type of the slot with the given ``slot_index`` to ``type``. If the value is negative, all connections will be disallowed to be created via user inputs.
 
 .. rst-class:: classref-section-separator
 
@@ -720,8 +718,8 @@ Sets the custom metadata for the right (output) side of the slot with the given 
 
 .. rst-class:: classref-descriptions-group
 
-主题属性说明
-------------
+Theme Property Descriptions
+---------------------------
 
 .. _class_GraphNode_theme_color_resizer_color:
 
@@ -729,7 +727,7 @@ Sets the custom metadata for the right (output) side of the slot with the given 
 
 :ref:`Color<class_Color>` **resizer_color** = ``Color(0.875, 0.875, 0.875, 1)`` :ref:`🔗<class_GraphNode_theme_color_resizer_color>`
 
-应用于调整尺寸大小图标的颜色调制。
+The color modulation applied to the resizer icon.
 
 .. rst-class:: classref-item-separator
 
@@ -741,7 +739,7 @@ Sets the custom metadata for the right (output) side of the slot with the given 
 
 :ref:`int<class_int>` **port_h_offset** = ``0`` :ref:`🔗<class_GraphNode_theme_constant_port_h_offset>`
 
-端口的水平偏移量。
+Horizontal offset for the ports.
 
 .. rst-class:: classref-item-separator
 
@@ -753,7 +751,7 @@ Sets the custom metadata for the right (output) side of the slot with the given 
 
 :ref:`int<class_int>` **separation** = ``2`` :ref:`🔗<class_GraphNode_theme_constant_separation>`
 
-端口之间的垂直距离。
+The vertical distance between ports.
 
 .. rst-class:: classref-item-separator
 
@@ -765,7 +763,7 @@ Sets the custom metadata for the right (output) side of the slot with the given 
 
 :ref:`Texture2D<class_Texture2D>` **port** :ref:`🔗<class_GraphNode_theme_icon_port>`
 
-该图标用于表示端口。
+The icon used for representing ports.
 
 .. rst-class:: classref-item-separator
 
@@ -777,7 +775,7 @@ Sets the custom metadata for the right (output) side of the slot with the given 
 
 :ref:`StyleBox<class_StyleBox>` **panel** :ref:`🔗<class_GraphNode_theme_style_panel>`
 
-**GraphNode** 槽区域的默认背景。
+The default background for the slot area of the **GraphNode**.
 
 .. rst-class:: classref-item-separator
 
@@ -789,7 +787,7 @@ Sets the custom metadata for the right (output) side of the slot with the given 
 
 :ref:`StyleBox<class_StyleBox>` **panel_focus** :ref:`🔗<class_GraphNode_theme_style_panel_focus>`
 
-当 **GraphNode** 处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ （使用辅助应用时）。
+:ref:`StyleBox<class_StyleBox>` used when the **GraphNode** is focused (when used with assistive apps).
 
 .. rst-class:: classref-item-separator
 
@@ -801,7 +799,7 @@ Sets the custom metadata for the right (output) side of the slot with the given 
 
 :ref:`StyleBox<class_StyleBox>` **panel_selected** :ref:`🔗<class_GraphNode_theme_style_panel_selected>`
 
-用于被选中时的插槽区域的 :ref:`StyleBox<class_StyleBox>`\ 。
+The :ref:`StyleBox<class_StyleBox>` used for the slot area when selected.
 
 .. rst-class:: classref-item-separator
 
@@ -813,7 +811,7 @@ Sets the custom metadata for the right (output) side of the slot with the given 
 
 :ref:`StyleBox<class_StyleBox>` **slot** :ref:`🔗<class_GraphNode_theme_style_slot>`
 
-用于 **GraphNode** 的每个插槽的 :ref:`StyleBox<class_StyleBox>`\ 。
+The :ref:`StyleBox<class_StyleBox>` used for each slot of the **GraphNode**.
 
 .. rst-class:: classref-item-separator
 
@@ -825,7 +823,7 @@ Sets the custom metadata for the right (output) side of the slot with the given 
 
 :ref:`StyleBox<class_StyleBox>` **slot_selected** :ref:`🔗<class_GraphNode_theme_style_slot_selected>`
 
-当插槽处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ （使用辅助应用时）。
+:ref:`StyleBox<class_StyleBox>` used when the slot is focused (when used with assistive apps).
 
 .. rst-class:: classref-item-separator
 
@@ -837,7 +835,7 @@ Sets the custom metadata for the right (output) side of the slot with the given 
 
 :ref:`StyleBox<class_StyleBox>` **titlebar** :ref:`🔗<class_GraphNode_theme_style_titlebar>`
 
-用于该 **GraphNode** 标题栏的 :ref:`StyleBox<class_StyleBox>`\ 。
+The :ref:`StyleBox<class_StyleBox>` used for the title bar of the **GraphNode**.
 
 .. rst-class:: classref-item-separator
 
@@ -849,14 +847,14 @@ Sets the custom metadata for the right (output) side of the slot with the given 
 
 :ref:`StyleBox<class_StyleBox>` **titlebar_selected** :ref:`🔗<class_GraphNode_theme_style_titlebar_selected>`
 
-当 **GraphNode** 被选中时，用于其标题栏的 :ref:`StyleBox<class_StyleBox>`\ 。
+The :ref:`StyleBox<class_StyleBox>` used for the title bar of the **GraphNode** when it is selected.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

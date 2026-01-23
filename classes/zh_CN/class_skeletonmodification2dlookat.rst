@@ -5,23 +5,23 @@
 SkeletonModification2DLookAt
 ============================
 
-**实验性：** This class may be changed or removed in future versions.
+**Experimental:** This class may be changed or removed in future versions.
 
-**继承：** :ref:`SkeletonModification2D<class_SkeletonModification2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`SkeletonModification2D<class_SkeletonModification2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-对 :ref:`Bone2D<class_Bone2D>` 节点进行旋转，让它看向某个目标的修改器。
+A modification that rotates a :ref:`Bone2D<class_Bone2D>` node to look at a target.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-这种 :ref:`SkeletonModification2D<class_SkeletonModification2D>` 会对骨骼进行旋转，让它看向某个目标。适合让角色的头部看向玩家、让炮塔看向目标以及其他需要让骨骼朝某个东西快速旋转的情况。
+This :ref:`SkeletonModification2D<class_SkeletonModification2D>` rotates a bone to look a target. This is extremely helpful for moving character's head to look at the player, rotating a turret to look at a target, or any other case where you want to make a bone rotate towards something quickly and easily.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ SkeletonModification2DLookAt
 
 .. rst-class:: classref-reftable-group
 
-方法
-----
+Methods
+-------
 
 .. table::
    :widths: auto
@@ -70,8 +70,8 @@ SkeletonModification2DLookAt
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_SkeletonModification2DLookAt_property_bone2d_node:
 
@@ -84,7 +84,7 @@ SkeletonModification2DLookAt
 - |void| **set_bone2d_node**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_bone2d_node**\ (\ )
 
-要修改的 :ref:`Bone2D<class_Bone2D>` 节点。
+The :ref:`Bone2D<class_Bone2D>` node that the modification will operate on.
 
 .. rst-class:: classref-item-separator
 
@@ -101,7 +101,7 @@ SkeletonModification2DLookAt
 - |void| **set_bone_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bone_index**\ (\ )
 
-要执行修改的 :ref:`Bone2D<class_Bone2D>` 节点的索引。
+The index of the :ref:`Bone2D<class_Bone2D>` node that the modification will operate on.
 
 .. rst-class:: classref-item-separator
 
@@ -118,7 +118,7 @@ SkeletonModification2DLookAt
 - |void| **set_target_node**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_target_node**\ (\ )
 
-作为 LookAt 修改目标的节点的 NodePath。该节点是该修改将 :ref:`Bone2D<class_Bone2D>` 旋转到的节点。
+The NodePath to the node that is the target for the LookAt modification. This node is what the modification will rotate the :ref:`Bone2D<class_Bone2D>` to.
 
 .. rst-class:: classref-section-separator
 
@@ -126,8 +126,8 @@ SkeletonModification2DLookAt
 
 .. rst-class:: classref-descriptions-group
 
-方法说明
---------
+Method Descriptions
+-------------------
 
 .. _class_SkeletonModification2DLookAt_method_get_additional_rotation:
 
@@ -135,7 +135,7 @@ SkeletonModification2DLookAt
 
 :ref:`float<class_float>` **get_additional_rotation**\ (\ ) |const| :ref:`🔗<class_SkeletonModification2DLookAt_method_get_additional_rotation>`
 
-返回执行 LookAt 修改后被应用的额外旋转的量。
+Returns the amount of additional rotation that is applied after the LookAt modification executes.
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +147,7 @@ SkeletonModification2DLookAt
 
 :ref:`bool<class_bool>` **get_constraint_angle_invert**\ (\ ) |const| :ref:`🔗<class_SkeletonModification2DLookAt_method_get_constraint_angle_invert>`
 
-返回该修改的约束是否反转。
+Returns whether the constraints to this modification are inverted or not.
 
 .. rst-class:: classref-item-separator
 
@@ -159,7 +159,7 @@ SkeletonModification2DLookAt
 
 :ref:`float<class_float>` **get_constraint_angle_max**\ (\ ) |const| :ref:`🔗<class_SkeletonModification2DLookAt_method_get_constraint_angle_max>`
 
-返回该约束允许的最大角度。
+Returns the constraint's maximum allowed angle.
 
 .. rst-class:: classref-item-separator
 
@@ -171,7 +171,7 @@ SkeletonModification2DLookAt
 
 :ref:`float<class_float>` **get_constraint_angle_min**\ (\ ) |const| :ref:`🔗<class_SkeletonModification2DLookAt_method_get_constraint_angle_min>`
 
-返回该约束允许的最小角度。
+Returns the constraint's minimum allowed angle.
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +183,7 @@ SkeletonModification2DLookAt
 
 :ref:`bool<class_bool>` **get_enable_constraint**\ (\ ) |const| :ref:`🔗<class_SkeletonModification2DLookAt_method_get_enable_constraint>`
 
-如果该 LookAt 修改器正在使用约束，则返回 ``true``\ 。
+Returns ``true`` if the LookAt modification is using constraints.
 
 .. rst-class:: classref-item-separator
 
@@ -195,7 +195,7 @@ SkeletonModification2DLookAt
 
 |void| **set_additional_rotation**\ (\ rotation\: :ref:`float<class_float>`\ ) :ref:`🔗<class_SkeletonModification2DLookAt_method_set_additional_rotation>`
 
-设置执行该修改后要被应用的额外旋转的量。这允许将结果偏移输入的旋转量。
+Sets the amount of additional rotation that is to be applied after executing the modification. This allows for offsetting the results by the inputted rotation amount.
 
 .. rst-class:: classref-item-separator
 
@@ -207,9 +207,9 @@ SkeletonModification2DLookAt
 
 |void| **set_constraint_angle_invert**\ (\ invert\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SkeletonModification2DLookAt_method_set_constraint_angle_invert>`
 
-当为 ``true`` 时，修改将使用一个反转的关节约束。
+When ``true``, the modification will use an inverted joint constraint.
 
-反转的关节约束仅将该 :ref:`Bone2D<class_Bone2D>` 约束到输入的最小角度和最大角度\ *之外*\ 的角度。出于这个原因，它被称为反向关节约束，因为它将关节约束在输入值的外部。
+An inverted joint constraint only constraints the :ref:`Bone2D<class_Bone2D>` to the angles *outside of* the inputted minimum and maximum angles. For this reason, it is referred to as an inverted joint constraint, as it constraints the joint to the outside of the inputted values.
 
 .. rst-class:: classref-item-separator
 
@@ -221,7 +221,7 @@ SkeletonModification2DLookAt
 
 |void| **set_constraint_angle_max**\ (\ angle_max\: :ref:`float<class_float>`\ ) :ref:`🔗<class_SkeletonModification2DLookAt_method_set_constraint_angle_max>`
 
-设置该约束允许的最大角度。
+Sets the constraint's maximum allowed angle.
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ SkeletonModification2DLookAt
 
 |void| **set_constraint_angle_min**\ (\ angle_min\: :ref:`float<class_float>`\ ) :ref:`🔗<class_SkeletonModification2DLookAt_method_set_constraint_angle_min>`
 
-设置该约束允许的最小角度。
+Sets the constraint's minimum allowed angle.
 
 .. rst-class:: classref-item-separator
 
@@ -245,14 +245,14 @@ SkeletonModification2DLookAt
 
 |void| **set_enable_constraint**\ (\ enable_constraint\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SkeletonModification2DLookAt_method_set_enable_constraint>`
 
-设置此修改器是否使用约束。为 ``true`` 时，会在求解 LookAt 修改器时应用约束。
+Sets whether this modification will use constraints or not. When ``true``, constraints will be applied when solving the LookAt modification.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

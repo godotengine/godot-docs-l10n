@@ -5,21 +5,21 @@
 ProgressBar
 ===========
 
-**继承：** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-将百分比可视化表示的控件。
+A control used for visual representation of a percentage.
 
 .. rst-class:: classref-introduction-group
 
-描述
-----
+Description
+-----------
 
-将百分比可视化表示的控件。在中央显示填充百分比。还可以用来显示尚未确定的进度。如果需要更多填充模式，请改用 :ref:`TextureProgressBar<class_TextureProgressBar>`\ 。
+A control used for visual representation of a percentage. Shows the fill percentage in the center. Can also be used to show indeterminate progress. For more fill modes, use :ref:`TextureProgressBar<class_TextureProgressBar>` instead.
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ ProgressBar
 
 .. rst-class:: classref-reftable-group
 
-主题属性
---------
+Theme Properties
+----------------
 
 .. table::
    :widths: auto
@@ -64,8 +64,8 @@ ProgressBar
 
 .. rst-class:: classref-descriptions-group
 
-枚举
-----
+Enumerations
+------------
 
 .. _enum_ProgressBar_FillMode:
 
@@ -79,7 +79,7 @@ enum **FillMode**: :ref:`🔗<enum_ProgressBar_FillMode>`
 
 :ref:`FillMode<enum_ProgressBar_FillMode>` **FILL_BEGIN_TO_END** = ``0``
 
-进度条从开头到结尾水平填充，开头和结尾的位置取决于语言的方向。如果 :ref:`Control.is_layout_rtl()<class_Control_method_is_layout_rtl>` 返回 ``false`` 则为从左至右填充，如果返回 ``true`` 则为从右至左填充。
+The progress bar fills from begin to end horizontally, according to the language direction. If :ref:`Control.is_layout_rtl()<class_Control_method_is_layout_rtl>` returns ``false``, it fills from left to right, and if it returns ``true``, it fills from right to left.
 
 .. _class_ProgressBar_constant_FILL_END_TO_BEGIN:
 
@@ -87,7 +87,7 @@ enum **FillMode**: :ref:`🔗<enum_ProgressBar_FillMode>`
 
 :ref:`FillMode<enum_ProgressBar_FillMode>` **FILL_END_TO_BEGIN** = ``1``
 
-进度条从结尾到开头水平填充，开头和结尾的位置取决于语言的方向。如果 :ref:`Control.is_layout_rtl()<class_Control_method_is_layout_rtl>` 返回 ``false`` 则为从左至右填充，如果返回 ``true`` 则为从右至左填充。
+The progress bar fills from end to begin horizontally, according to the language direction. If :ref:`Control.is_layout_rtl()<class_Control_method_is_layout_rtl>` returns ``false``, it fills from right to left, and if it returns ``true``, it fills from left to right.
 
 .. _class_ProgressBar_constant_FILL_TOP_TO_BOTTOM:
 
@@ -95,7 +95,7 @@ enum **FillMode**: :ref:`🔗<enum_ProgressBar_FillMode>`
 
 :ref:`FillMode<enum_ProgressBar_FillMode>` **FILL_TOP_TO_BOTTOM** = ``2``
 
-进度从上到下填充。
+The progress fills from top to bottom.
 
 .. _class_ProgressBar_constant_FILL_BOTTOM_TO_TOP:
 
@@ -103,7 +103,7 @@ enum **FillMode**: :ref:`🔗<enum_ProgressBar_FillMode>`
 
 :ref:`FillMode<enum_ProgressBar_FillMode>` **FILL_BOTTOM_TO_TOP** = ``3``
 
-进度从下到上填充。
+The progress fills from bottom to top.
 
 .. rst-class:: classref-section-separator
 
@@ -111,8 +111,8 @@ enum **FillMode**: :ref:`🔗<enum_ProgressBar_FillMode>`
 
 .. rst-class:: classref-descriptions-group
 
-属性说明
---------
+Property Descriptions
+---------------------
 
 .. _class_ProgressBar_property_editor_preview_indeterminate:
 
@@ -125,7 +125,7 @@ enum **FillMode**: :ref:`🔗<enum_ProgressBar_FillMode>`
 - |void| **set_editor_preview_indeterminate**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_editor_preview_indeterminate_enabled**\ (\ )
 
-如果为 ``false``\ ，则会在编辑器中暂停 :ref:`indeterminate<class_ProgressBar_property_indeterminate>` 动画。
+If ``false``, the :ref:`indeterminate<class_ProgressBar_property_indeterminate>` animation will be paused in the editor.
 
 .. rst-class:: classref-item-separator
 
@@ -142,7 +142,7 @@ enum **FillMode**: :ref:`🔗<enum_ProgressBar_FillMode>`
 - |void| **set_fill_mode**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_fill_mode**\ (\ )
 
-填充方向。可能的取值见 :ref:`FillMode<enum_ProgressBar_FillMode>`\ 。
+The fill direction. See :ref:`FillMode<enum_ProgressBar_FillMode>` for possible values.
 
 .. rst-class:: classref-item-separator
 
@@ -159,7 +159,7 @@ enum **FillMode**: :ref:`🔗<enum_ProgressBar_FillMode>`
 - |void| **set_indeterminate**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_indeterminate**\ (\ )
 
-设为 ``true`` 时，进度表会使用动画来表示正在执行某些操作，但是不会显示填充和具体的值。
+When set to ``true``, the progress bar indicates that something is happening with an animation, but does not show the fill percentage or value.
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +176,7 @@ enum **FillMode**: :ref:`🔗<enum_ProgressBar_FillMode>`
 - |void| **set_show_percentage**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_percentage_shown**\ (\ )
 
-为 ``true`` 时，将在进度条上显示百分比。
+If ``true``, the fill percentage is displayed on the bar.
 
 .. rst-class:: classref-section-separator
 
@@ -184,8 +184,8 @@ enum **FillMode**: :ref:`🔗<enum_ProgressBar_FillMode>`
 
 .. rst-class:: classref-descriptions-group
 
-主题属性说明
-------------
+Theme Property Descriptions
+---------------------------
 
 .. _class_ProgressBar_theme_color_font_color:
 
@@ -193,7 +193,7 @@ enum **FillMode**: :ref:`🔗<enum_ProgressBar_FillMode>`
 
 :ref:`Color<class_Color>` **font_color** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_ProgressBar_theme_color_font_color>`
 
-文本的颜色。
+The color of the text.
 
 .. rst-class:: classref-item-separator
 
@@ -205,7 +205,7 @@ enum **FillMode**: :ref:`🔗<enum_ProgressBar_FillMode>`
 
 :ref:`Color<class_Color>` **font_outline_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ProgressBar_theme_color_font_outline_color>`
 
-**ProgressBar** 的文本轮廓的色调。
+The tint of text outline of the **ProgressBar**.
 
 .. rst-class:: classref-item-separator
 
@@ -217,9 +217,9 @@ enum **FillMode**: :ref:`🔗<enum_ProgressBar_FillMode>`
 
 :ref:`int<class_int>` **outline_size** = ``0`` :ref:`🔗<class_ProgressBar_theme_constant_outline_size>`
 
-文字轮廓的大小。
+The size of the text outline.
 
-\ **注意：**\ 如果使用启用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字体，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必须至少设置为 :ref:`outline_size<class_ProgressBar_theme_constant_outline_size>` 的\ *两倍*\ ，轮廓渲染才能看起来正确。否则，轮廓可能会比预期的更早被切断。
+\ **Note:** If using a font with :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` enabled, its :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` must be set to at least *twice* the value of :ref:`outline_size<class_ProgressBar_theme_constant_outline_size>` for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
 
 .. rst-class:: classref-item-separator
 
@@ -231,7 +231,7 @@ enum **FillMode**: :ref:`🔗<enum_ProgressBar_FillMode>`
 
 :ref:`Font<class_Font>` **font** :ref:`🔗<class_ProgressBar_theme_font_font>`
 
-:ref:`show_percentage<class_ProgressBar_property_show_percentage>` 为 ``true`` 时，用于绘制填充百分比的字体。
+Font used to draw the fill percentage if :ref:`show_percentage<class_ProgressBar_property_show_percentage>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ enum **FillMode**: :ref:`🔗<enum_ProgressBar_FillMode>`
 
 :ref:`int<class_int>` **font_size** :ref:`🔗<class_ProgressBar_theme_font_size_font_size>`
 
-:ref:`show_percentage<class_ProgressBar_property_show_percentage>` 为 ``true`` 时，用于绘制填充百分比的字体。
+Font size used to draw the fill percentage if :ref:`show_percentage<class_ProgressBar_property_show_percentage>` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -255,7 +255,7 @@ enum **FillMode**: :ref:`🔗<enum_ProgressBar_FillMode>`
 
 :ref:`StyleBox<class_StyleBox>` **background** :ref:`🔗<class_ProgressBar_theme_style_background>`
 
-背景的样式。
+The style of the background.
 
 .. rst-class:: classref-item-separator
 
@@ -267,14 +267,14 @@ enum **FillMode**: :ref:`🔗<enum_ProgressBar_FillMode>`
 
 :ref:`StyleBox<class_StyleBox>` **fill** :ref:`🔗<class_ProgressBar_theme_style_fill>`
 
-进度的样式（即填充进度条的部分）。
+The style of the progress (i.e. the part that fills the bar).
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
-.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
-.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
-.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
-.. |void| replace:: :abbr:`void (无返回值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`

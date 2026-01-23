@@ -5,21 +5,21 @@
 VisualShaderNodeTransformFunc
 =============================
 
-**繼承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-在視覺化著色器圖中，計算 :ref:`Transform3D<class_Transform3D>` 函式。
+Computes a :ref:`Transform3D<class_Transform3D>` function within the visual shader graph.
 
 .. rst-class:: classref-introduction-group
 
-說明
-----
+Description
+-----------
 
-計算提供的 :ref:`Transform3D<class_Transform3D>` 的逆或轉置函式。
+Computes an inverse or transpose function on the provided :ref:`Transform3D<class_Transform3D>`.
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
+Properties
+----------
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ VisualShaderNodeTransformFunc
 
 .. rst-class:: classref-descriptions-group
 
-列舉
-----
+Enumerations
+------------
 
 .. _enum_VisualShaderNodeTransformFunc_Function:
 
@@ -49,7 +49,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeTransformFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeTransformFunc_Function>` **FUNC_INVERSE** = ``0``
 
-對 :ref:`Transform3D<class_Transform3D>` 矩陣執行逆運算。
+Perform the inverse operation on the :ref:`Transform3D<class_Transform3D>` matrix.
 
 .. _class_VisualShaderNodeTransformFunc_constant_FUNC_TRANSPOSE:
 
@@ -57,7 +57,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeTransformFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeTransformFunc_Function>` **FUNC_TRANSPOSE** = ``1``
 
-對 :ref:`Transform3D<class_Transform3D>` 矩陣執行轉置運算。
+Perform the transpose operation on the :ref:`Transform3D<class_Transform3D>` matrix.
 
 .. _class_VisualShaderNodeTransformFunc_constant_FUNC_MAX:
 
@@ -65,7 +65,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeTransformFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeTransformFunc_Function>` **FUNC_MAX** = ``2``
 
-代表 :ref:`Function<enum_VisualShaderNodeTransformFunc_Function>` 列舉的大小。
+Represents the size of the :ref:`Function<enum_VisualShaderNodeTransformFunc_Function>` enum.
 
 .. rst-class:: classref-section-separator
 
@@ -73,8 +73,8 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeTransformFunc_Function>`
 
 .. rst-class:: classref-descriptions-group
 
-屬性說明
---------
+Property Descriptions
+---------------------
 
 .. _class_VisualShaderNodeTransformFunc_property_function:
 
@@ -89,12 +89,12 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeTransformFunc_Function>`
 
 The function to be computed.
 
-.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
-.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
-.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
-.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
-.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
-.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
-.. |void| replace:: :abbr:`void (無回傳值。)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`
