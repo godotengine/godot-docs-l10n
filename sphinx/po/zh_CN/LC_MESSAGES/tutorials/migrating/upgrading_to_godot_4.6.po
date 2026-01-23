@@ -1,0 +1,124 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Breaking changes"
+msgstr "破坏性更改"
+
+msgid ""
+"This article indicates whether each breaking change affects GDScript and "
+"whether the C# breaking change is *binary compatible* or *source compatible*:"
+msgstr ""
+"这篇文章指出了每项破坏性改动是否会影响 GDScript，以及 C# 的破坏性改动是 *二进"
+"制兼容* 还是 *源代码兼容*\\ ："
+
+msgid ""
+"**Binary compatible** - Existing binaries will load and execute successfully "
+"without recompilation, and the run-time behavior won't change."
+msgstr ""
+"**二进制兼容** — 现有可执行文件无需重新编译即可成功加载和执行，且运行时行为不"
+"会发生变化。"
+
+msgid ""
+"**Source compatible** - Source code will compile successfully without "
+"changes when upgrading Godot."
+msgstr "**源代码兼容**\\ —— 在升级 Godot 时，源代码可成功编译，无需更改。"
+
+msgid "Core"
+msgstr "核心"
+
+msgid "Change"
+msgstr "更改"
+
+msgid "GDScript Compatible"
+msgstr "GDScript 兼容"
+
+msgid "C# Binary Compatible"
+msgstr "C# 二进制兼容"
+
+msgid "C# Source Compatible"
+msgstr "C# 源代码兼容"
+
+msgid "Introduced"
+msgstr "引入"
+
+msgid "**FileAccess**"
+msgstr "**FileAccess**"
+
+msgid "|✔️|"
+msgstr "|✔️|"
+
+msgid "|✔️ with compat|"
+msgstr "|✔️ with compat|"
+
+msgid "**Performance**"
+msgstr "**性能**"
+
+msgid "Animation"
+msgstr "动画"
+
+msgid "**AnimationPlayer**"
+msgstr "**AnimationPlayer**"
+
+msgid "|❌|"
+msgstr "|❌|"
+
+msgid "3D"
+msgstr "3D"
+
+msgid "Rendering"
+msgstr "渲染"
+
+msgid "**DisplayServer**"
+msgstr "**DisplayServer**"
+
+msgid "GUI nodes"
+msgstr "GUI 节点"
+
+msgid "Networking"
+msgstr "网络"
+
+msgid "OpenXR"
+msgstr "OpenXR"
+
+msgid "N/A"
+msgstr "N/A"
+
+msgid "Editor"
+msgstr "编辑器"
+
+msgid "|❌ with stub|"
+msgstr "|❌ 待兼容|"
+
+msgid "Behavior changes"
+msgstr "行为更改"
+
+msgid "Android"
+msgstr "Android"
+
+msgid "**MeshInstance3D**"
+msgstr "**MeshInstance3D**"
+
+msgid "8"
+msgstr "8"
+
+msgid "7"
+msgstr "7"
+
+msgid "2"
+msgstr "2"
+
+msgid "1"
+msgstr "1"
+
+msgid "**PopupMenu**"
+msgstr "**PopupMenu**"

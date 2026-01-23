@@ -22,6 +22,17 @@ msgstr ""
 "першу чергу. Для цього корисними інструментами є профайлери."
 
 msgid ""
+"There is a :ref:`built-in GDScript profiler <doc_the_profiler>` in the "
+"editor, but using a C++ profiler may be useful in cases where the GDScript "
+"profiler is not accurate enough or is missing information due to bugs in the "
+"profiler."
+msgstr ""
+"У редакторі є :ref:`built-in GDScript profiler <doc_the_profiler>`, але "
+"використання профайлера C++ може бути корисним у випадках, коли профайлер "
+"GDScript недостатньо точний або в ньому відсутня інформація через помилки в "
+"профайлері."
+
+msgid ""
 "There are two main types of profilers: sampling profilers and tracing "
 "profilers."
 msgstr ""
@@ -74,6 +85,18 @@ msgstr ""
 
 msgid "Sampling profilers"
 msgstr "Профілери вибірки"
+
+msgid "We recommend the following sampling profilers:"
+msgstr "Ми рекомендуємо такі профайлери вибірки:"
+
+msgid ":ref:`VerySleepy <doc_profiler_very_sleepy>` (Windows only)"
+msgstr ":ref:`VerySleepy <doc_profiler_very_sleepy>` (Тільки для Windows)"
+
+msgid ":ref:`Hotspot <doc_profiler_hotspot>` (Linux only)"
+msgstr ":ref:`Hotspot <doc_profiler_hotspot>` (Тільки для Linux)"
+
+msgid ":ref:`Instruments <doc_profiler_instruments>` (Apple only)"
+msgstr ":ref:`Instruments <doc_profiler_instruments>` (Тільки Apple)"
 
 msgid ""
 "These profilers may not be the most powerful or flexible options, but their "
@@ -149,6 +172,18 @@ msgstr ""
 "Перегляньте :ref:`doc_command_line_tutorial` більше аргументів командного "
 "рядка, які підтримує Godot."
 
+msgid "Tracing profilers"
+msgstr "Трасування профайлерів"
+
+msgid "Godot currently supports three tracing profilers:"
+msgstr "Godot наразі підтримує три профайлери трасування:"
+
+msgid ":ref:`Tracy <doc_profiler_tracy>`"
+msgstr ":ref:`Tracy <doc_profiler_tracy>`"
+
+msgid ":ref:`Perfetto <doc_profiler_perfetto>`"
+msgstr ":ref:`Perfetto <doc_profiler_perfetto>`"
+
 msgid ""
 "In order to use either of them, you'll need to build the engine from source. "
 "If you've never done this before, please read :ref:`these docs "
@@ -161,3 +196,6 @@ msgstr ""
 "прочитайте :ref:`цю документацію <doc_compiling_index>` для платформи, на "
 "якій ви хочете створити профіль. Вам потрібно буде виконати ті ж кроки тут, "
 "але з деякими додатковими аргументами для ``scons``."
+
+msgid "All recommended profilers"
+msgstr "Усі рекомендовані профайлери"

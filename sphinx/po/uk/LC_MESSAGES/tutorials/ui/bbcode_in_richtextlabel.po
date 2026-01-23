@@ -378,11 +378,17 @@ msgstr "**u**"
 msgid "Makes ``{text}`` underlined."
 msgstr "Робить ``{text}`` підкресленим."
 
+msgid "``[u]{text}[/u]`` ``[u color={color}]{text}[/u]``"
+msgstr "``[u]{text}[/u]`` ``[u color={color}]{text}[/u]``"
+
 msgid "**s**"
 msgstr "**s**"
 
 msgid "Makes ``{text}`` strikethrough."
 msgstr "Робить ``{text}`` закресленим."
+
+msgid "``[s]{text}[/s]`` ``[s color={color}]{text}[/s]``"
+msgstr "``[s]{text}[/s]`` ``[s color={color}]{text}[/s]``"
 
 msgid "**code**"
 msgstr "**код**"
@@ -515,6 +521,15 @@ msgid "**url**"
 msgstr "**адреса**"
 
 msgid ""
+"Creates a hyperlink (underlined and clickable text). Can contain optional "
+"``{text}`` or display ``{link}`` as is. Supports configuration options, "
+"see :ref:`doc_bbcode_in_richtextlabel_url_options`."
+msgstr ""
+"Створює гіперпосилання (підкреслений текст, на який можна натискати). Може "
+"містити необов'язковий ``{text}`` або відображати ``{link}`` як є. Підтримує "
+"параметри конфігурації, див. :ref:`doc_bbcode_in_richtextlabel_url_options`."
+
+msgid ""
 "**Must be handled with the \"meta_clicked\" signal to have an effect,** "
 "see :ref:`doc_bbcode_in_richtextlabel_handling_url_tag_clicks`."
 msgstr ""
@@ -526,6 +541,9 @@ msgstr "``[url]{link}[/url]``"
 
 msgid "``[url={link}]{text}[/url]``"
 msgstr "``[url={link}]{text}[/url]``"
+
+msgid "``[url {options}]{text}[/url]``"
+msgstr "``[url {options}]{text}[/url]``"
 
 msgid "**hint**"
 msgstr "**hint**"
@@ -826,6 +844,10 @@ msgstr ""
 "Якщо використовується вирівнювання за базовою лінією, таблиця вирівнюється "
 "за базовою лінією рядка з індексом ``{alignment_row}`` (від нуля)."
 
+msgid "``{name}`` is a table name for assistive apps (screen reader)."
+msgstr ""
+"``{name}`` – це назва таблиці для допоміжних (програм зчитування з екрана)."
+
 msgid "``[table={number}]{cells}[/table]``"
 msgstr "``[table={number}]{cells}[/table]``"
 
@@ -834,6 +856,11 @@ msgstr "``[table={number},{valign}]{cells}[/table]``"
 
 msgid "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
 msgstr "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
+
+msgid ""
+"``[table={number},{valign},{alignment_row} name={name}]{cells}[/table]``"
+msgstr ""
+"``[table={number},{valign},{alignment_row} name={name}]{cells}[/table]``"
 
 msgid "**cell**"
 msgstr "**cell**"
@@ -1198,8 +1225,35 @@ msgstr ""
 msgid "Horizontal alignment."
 msgstr "Горизонтальне вирівнювання."
 
+msgid "URL options"
+msgstr "Параметри URL-адреси"
+
+msgid "**underline**"
+msgstr "**underline**"
+
+msgid "``always``, ``never``, ``hover``"
+msgstr "``always``, ``never``, ``hover``"
+
+msgid "``always``"
+msgstr "``always``"
+
+msgid "URL underlining mode."
+msgstr "Режим підкреслення URL-адреси."
+
 msgid "**tooltip**"
 msgstr "**підказка**"
+
+msgid "String."
+msgstr "Рядок."
+
+msgid "URL tooltip."
+msgstr "Підказка URL-адреси."
+
+msgid "**href**"
+msgstr "**href**"
+
+msgid "URL target address."
+msgstr "Цільова URL-адреса."
 
 msgid "Image options"
 msgstr "Параметри зображення"
@@ -1257,6 +1311,21 @@ msgstr "Строка (рядок, текст)"
 
 msgid "Image tooltip."
 msgstr "Підказка зображення."
+
+msgid "**alt**"
+msgstr "**alt**"
+
+msgid "see :ref:`doc_bbcode_in_richtextlabel_image_and_table_alignment`"
+msgstr "див. :ref:`doc_bbcode_in_richtextlabel_image_and_table_alignment`"
+
+msgid "``center,center``"
+msgstr "``center,center``"
+
+msgid "Image alignment to the surrounding text."
+msgstr "Вирівнювання зображення відносно навколишнього тексту."
+
+msgid "Image description for assistive apps (screen reader)."
+msgstr "Опис зображення для допоміжних програм (програма зчитування з екрана)."
 
 msgid "Image and table vertical alignment"
 msgstr "Вертикальне вирівнювання зображення та таблиці"
@@ -1478,8 +1547,14 @@ msgstr ""
 msgid "Cell options"
 msgstr "Варіанти комірки"
 
+msgid "**shrink**"
+msgstr "**shrink**"
+
 msgid "``true``"
 msgstr "``ture``"
+
+msgid "If ``true``, cell can shrink to its contents."
+msgstr "Якщо ``true``, комірка може стиснутися до свого вмісту."
 
 msgid "**expand**"
 msgstr "**expand**"

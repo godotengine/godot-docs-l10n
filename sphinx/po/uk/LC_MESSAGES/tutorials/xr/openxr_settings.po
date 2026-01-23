@@ -527,6 +527,30 @@ msgid "This allows you to choose which debug messages are logged."
 msgstr ""
 "Це дозволяє вибрати, які повідомлення налагодження записуватимуться в журнал."
 
+msgid "Frame Synthesis"
+msgstr "Синтез фреймів"
+
+msgid ""
+"When enabled, provided it's supported by the XR runtime, lower resolution "
+"motion vector and depth buffers are rendered and provided to the XR runtime. "
+"The XR runtime can now inject reprojection frames and compensate for lower "
+"framerates."
+msgstr ""
+"Коли цю функцію ввімкнено, за умови підтримки середовища виконання XR, "
+"буфери вектора руху та глибини з нижчою роздільною здатністю візуалізуються "
+"та надаються середовищу виконання XR. Тепер середовище виконання XR може "
+"вставляти кадри повторного проекційування та компенсувати нижчу частоту "
+"кадрів."
+
+msgid "It currently has the following limitations:"
+msgstr "Наразі він має такі обмеження:"
+
+msgid "Does NOT work in the Forward+ renderer."
+msgstr "НЕ працює у рендерері Forward+."
+
+msgid "Only works with stereo rendering."
+msgstr "Працює лише зі стереорендерингом."
+
 msgid "Hand Tracking"
 msgstr "Відстеження рук"
 
@@ -616,6 +640,20 @@ msgstr ""
 "Якщо надається лише профіль взаємодії з рукою, будь-яке середовище виконання "
 "повинно використовувати взаємодію з рукою, навіть якщо контролер тримається "
 "в руках."
+
+msgid "Spatial Entities"
+msgstr "Просторові сутності"
+
+msgid ""
+"This extension and its settings are used to obtain and interact with "
+"information about the user's real world environment. You can find more "
+"detailed information on how it works on the :ref:`spatial entities page "
+"<doc_openxr_spatial_entities>`."
+msgstr ""
+"Це розширення та його налаштування використовуються для отримання та "
+"взаємодії з інформацією про реальне середовище користувача. Більш детальну "
+"інформацію про те, як воно працює, можна знайти на сторінці :ref:`spatial "
+"entities page <doc_openxr_spatial_entities>`."
 
 msgid "Eye Gaze Interaction"
 msgstr "Взаємодія погляду очей"

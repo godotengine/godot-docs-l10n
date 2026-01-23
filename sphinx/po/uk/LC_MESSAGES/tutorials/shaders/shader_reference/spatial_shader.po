@@ -986,6 +986,17 @@ msgstr ""
 msgid "in vec4 **FRAGCOORD**"
 msgstr "In vec4 **FRAGCOORD**"
 
+msgid ""
+"Coordinate of pixel center in screen space. ``xy`` specifies position in "
+"window. Origin is upper left. ``z`` specifies fragment depth. It is also "
+"used as the output value for the fragment depth unless ``DEPTH`` is written "
+"to."
+msgstr ""
+"Координата центру пікселя в просторі екрана. ``xy`` визначає положення у "
+"вікні. Початок координат знаходиться у верхньому лівому куті. ``z`` визначає "
+"глибину фрагмента. Він також використовується як вихідне значення для "
+"глибини фрагмента, якщо не записується ``DEPTH``."
+
 msgid "in bool **FRONT_FACING**"
 msgstr "In bool **FRONT_FACING**"
 

@@ -179,6 +179,14 @@ msgstr ""
 "个新函数来打开和关闭其运动。我们需要像我们在上一课中所做的操作一样，将一个脚"
 "本附加到 Sprite2D 节点。"
 
+msgid ""
+"You can connect signals in the :ui:`Signals` dock. Select the Button node "
+"and, on the right side of the editor, click on the tab named :ui:`Signals` "
+"next to the :ui:`Inspector`."
+msgstr ""
+"您可以在 :ui:`Signals` 面板中连接信号。选中 Button 节点，然后在编辑器右侧点击"
+"紧邻 :ui:`Inspector` 旁边的 :ui:`Signals` 。"
+
 msgid "The dock displays a list of signals available on the selected node."
 msgstr "停靠栏显示所选节点上可用的信号列表。"
 
@@ -437,6 +445,13 @@ msgid ""
 "As signals represent events that just occurred, we generally use an action "
 "verb in the past tense in their names."
 msgstr "由于信号表示刚刚发生的事件，我们通常在其名称中使用过去时态的动作动词。"
+
+msgid ""
+"Your signals work the same way as built-in ones: they appear in "
+"the :ui:`Signals` tab and you can connect to them like any other."
+msgstr ""
+"您的自定义信号与内置信号的工作方式相同：它们会显示在 :ui:`Signals` 标签页中，"
+"并且可以像其他信号一样进行连接。"
 
 msgid "To emit a signal in your scripts, call ``emit()`` on the signal."
 msgstr "要通过代码发出信号，请调用信号的 ``emit()`` 方法。"
