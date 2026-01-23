@@ -58,7 +58,7 @@ msgstr ""
 "Project-Id-Version: Ukrainian (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-01-19 13:24+0100\n"
-"PO-Revision-Date: 2026-01-07 17:01+0000\n"
+"PO-Revision-Date: 2026-01-20 12:54+0000\n"
 "Last-Translator: Максим Горпиніч <gorpinicmaksim0@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/uk/>\n"
@@ -68,7 +68,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -636,13 +636,12 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:25
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:24
-#, fuzzy
 msgid ""
 "For information about console support, see the `Godot website <https://"
 "godotengine.org/consoles/>`_."
 msgstr ""
-"Також див. `сторінку ліцензії на вебсайті Godot <https://godotengine.org/"
-"license>`_."
+"Щоб отримати інформацію про підтримку консолей, див. веб-сайт Godot <https://"
+"godotengine.org/consoles/>`_."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "**Can run both the editor and exported projects:**"
@@ -4183,13 +4182,12 @@ msgstr ""
 "Godot на заснованих на ARM системах із ядром Linux, зокрема на Raspberry Pi."
 
 #: ../../docs/about/faq.rst:65
-#, fuzzy
 msgid ""
 "For information about console support, see the `Godot website <https://"
 "godotengine.org/consoles/>`__."
 msgstr ""
-"Також див. `сторінку ліцензії на вебсайті Godot <https://godotengine.org/"
-"license>`_."
+"Щоб отримати інформацію про підтримку консолей, див. веб-сайт Godot <https://"
+"godotengine.org/consoles/>`__."
 
 #: ../../docs/about/faq.rst:67
 msgid ""
@@ -5557,7 +5555,6 @@ msgid "Who is working on Godot? How can I contact you?"
 msgstr "Хто працює над Godot? Як я можу зв'язатися з вами?"
 
 #: ../../docs/about/faq.rst:624
-#, fuzzy
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`__."
@@ -11525,15 +11522,14 @@ msgstr ""
 "попередньому уроці."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:117
-#, fuzzy
 msgid ""
 "You can connect signals in the :ui:`Signals` dock. Select the Button node "
 "and, on the right side of the editor, click on the tab named :ui:`Signals` "
 "next to the :ui:`Inspector`."
 msgstr ""
-"Ви можете підключати сигнали в доці :ui:`Node`. Виберіть вузол Button і, у "
-"правій частині редактора, натисніть на вкладку з назвою :ui:`Node` поруч "
-"з :ui:`Inspector`."
+"Ви можете підключати сигнали в доці :ui:`Signals`. Виберіть вузол Button і, "
+"у правій частині редактора, натисніть на вкладку з назвою :ui:`Signals` "
+"поруч з :ui:`Inspector`."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:123
 msgid "The dock displays a list of signals available on the selected node."
@@ -11862,13 +11858,13 @@ msgstr ""
 "використовуємо дієслово дії в минулому часі в їх назвах."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:470
-#, fuzzy
 msgid ""
 "Your signals work the same way as built-in ones: they appear in "
 "the :ui:`Signals` tab and you can connect to them like any other."
 msgstr ""
 "Ваші сигнали працюють так само, як і вбудовані: вони відображаються на "
-"вкладці :ui:`Node`, і ви можете підключитися до них, як до будь-яких інших."
+"вкладці :ui:`Signals`, і ви можете підключитися до них, як до будь-яких "
+"інших."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:475
 msgid "To emit a signal in your scripts, call ``emit()`` on the signal."
@@ -12860,18 +12856,17 @@ msgstr ""
 "його після ``public partial class Player : Area2D``:"
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:365
-#, fuzzy
 msgid ""
 "This defines a custom signal called \"hit\" that we will have our player "
 "emit (send out) when it collides with an enemy. We will use ``Area2D`` to "
 "detect the collision. Select the ``Player`` node and click the :ui:`Signals` "
 "tab next to the Inspector tab to see the list of signals the player can emit:"
 msgstr ""
-"Цей рядок визначає власний сигнал під назвою \"hit\" (\"удар\"), який буде "
-"випромінюватися з нашого гравця, коли він буде стикатися з ворогом. Ми "
-"будемо використовувати ``Area2D`` для виявлення зіткнення. Виберіть вузол "
-"``Player`` і натисніть на вкладку \"Вузол\" поруч із вкладкою Інспектор, щоб "
-"побачити список сигналів, які гравець може випромінювати:"
+"Це визначає спеціальний сигнал під назвою \"удар\", який наш гравець "
+"видаватиме (надсилатиме) при зіткненні з ворогом. Ми використовуватимемо "
+"``Area2D`` для виявлення зіткнення. Виберіть вузол ``Player`` та клацніть "
+"вкладку :ui:`Signals` поруч із вкладкою Inspector, щоб переглянути список "
+"сигналів, які гравець може видавати:"
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:372
 msgid ""
@@ -13908,16 +13903,14 @@ msgstr ""
 "вони мають знищитися. Ми можемо зробити це за допомогою функції \"group\"."
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:282
-#, fuzzy
 msgid ""
 "In the ``Mob`` scene, select the root node and click the :ui:`Groups` tab "
 "next to the :ui:`Signals` tab and the \"+\" button to open the \"Create New "
 "Group\" dialog."
 msgstr ""
-"У сцені ``Mob`` виберіть кореневий вузол і клацніть вкладку «Вузол» поруч із "
-"інспектором (там само, де ви знайдете сигнали вузла). Поруч із «Сигналами» "
-"натисніть «Групи», щоб відкрити огляд групи, і кнопку «+», щоб відкрити "
-"діалогове вікно «Створити нову групу»."
+"У сцені ``Mob`` виберіть кореневий вузол і натисніть вкладку :ui:`Groups` "
+"поруч із вкладкою :ui:`Signals` та кнопку \"+\", щоб відкрити діалогове "
+"вікно \"Створити нову групу\"."
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:287
 msgid "Name the group ``mobs`` and click \"ok\" to add a new scene group."
@@ -14115,13 +14108,12 @@ msgstr ""
 "нього новий елемент масиву, клацнувши **Масив[InputEvent] (розмір 0)** ."
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:104
-#, fuzzy
 msgid ""
 "Create a new :ref:`InputEventAction <class_InputEventAction>` and select the "
 "``start_game`` action."
 msgstr ""
-"Створіть новий :ref:`InputEventAction <class_InputEventAction>` і назвіть "
-"його ``start_game``."
+"Створіть новий :ref:`InputEventAction <class_InputEventAction>` та виберіть "
+"дію ``start_game``."
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:108
 msgid ""
@@ -14525,7 +14517,6 @@ msgstr ""
 "осі в вікні перегляду."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:107
-#, fuzzy
 msgid ""
 "We're going to move the ground down so we can see the floor grid. To do "
 "this, the grid snapping feature can be used. Grid snapping can be activated "
@@ -14534,12 +14525,12 @@ msgid ""
 "handle on the gizmo **then** holding :kbd:`Ctrl` (:kbd:`Cmd` on macOS) while "
 "holding the selected node."
 msgstr ""
-"Ми перемістимо землю вниз, щоб побачити сітку підлоги. Для цього можна "
-"використовувати функцію прив’язки сітки. Прив’язку сітки можна активувати "
-"двома способами в 3D-редакторі. Ґ Перший – натиснути кнопку *Use Snap* (або "
-"натиснути клавішу :kbd:`Y`). По-друге, вибравши вузол, перетягнувши "
-"дескриптор гізмо, **потім** утримуючи :kbd:`Ctrl`, продовжуючи натискати, "
-"щоб увімкнути прив’язку, доки :kbd:`Ctrl` утримується."
+"Ми збираємося перемістити землю вниз, щоб побачити сітку підлоги. Для цього "
+"можна використовувати функцію прив'язки сітки. Прив'язку сітки можна "
+"активувати двома способами в 3D-редакторі. Перший – натисканням кнопки "
+"*Використовувати прив'язку* (або натисканням клавіші :kbd:`Y`). Другий – "
+"вибравши вузол, перетягнувши маркер на гізмо, **а потім** утримуючи "
+":kbd:`Ctrl` (:kbd:`Cmd` на macOS), одночасно утримуючи вибраний вузол."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:114
 msgid ""
@@ -26796,9 +26787,8 @@ msgid "Go to Line"
 msgstr "Перейти до рядка"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:327
-#, fuzzy
 msgid ":kbd:`Ctrl + G`"
-msgstr ":kbd:`Ctrl + O`"
+msgstr ":kbd:`Ctrl + G`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:327
 msgid ":kbd:`Cmd + L`"
@@ -27761,69 +27751,60 @@ msgid "``tileset_editor/editmode_z_index``"
 msgstr "``tileset_editor/editmode_z_index``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:562
-#, fuzzy
 msgid "GridMap Editor"
-msgstr "Редактор сценаріїв"
+msgstr "Редактор GridMap"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:567
-#, fuzzy
 msgid "Previous Floor"
-msgstr "Попередня координата"
+msgstr "Попередній поверх"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:567
 msgid "``grid_map/previous_floor``"
-msgstr ""
+msgstr "``grid_map/previous_floor``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:569
-#, fuzzy
 msgid "Next Floor"
-msgstr "Наступна координата"
+msgstr "Наступний поверх"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:569
 msgid "``grid_map/next_floor``"
-msgstr ""
+msgstr "``grid_map/next_floor``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:571
-#, fuzzy
 msgid "Edit X Axis"
-msgstr "Редагувати > Обрізати"
+msgstr "Редагувати вісь X"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:571
-#, fuzzy
 msgid ":kbd:`Shift + Z`"
-msgstr ":kbd:`Shift + S`"
+msgstr ":kbd:`Shift + Z`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:571
 msgid "``grid_map/edit_x_axis``"
-msgstr ""
+msgstr "``grid_map/edit_x_axis``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:573
-#, fuzzy
 msgid "Edit Y Axis"
-msgstr "Редагувати > Обрізати"
+msgstr "Редагувати вісь Y"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:573
-#, fuzzy
 msgid ":kbd:`Shift + X`"
-msgstr ":kbd:`Shift + S`"
+msgstr ":kbd:`Shift + X`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:573
 msgid "``grid_map/edit_y_axis``"
-msgstr ""
+msgstr "``grid_map/edit_y_axis``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:575
-#, fuzzy
 msgid "Edit Z Axis"
-msgstr "Редагувати > Обрізати"
+msgstr "Редагувати вісь Z"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:575
-#, fuzzy
 msgid ":kbd:`Shift + C`"
-msgstr ":kbd:`Shift + S`"
+msgstr ":kbd:`Shift + C`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:575
 msgid "``grid_map/edit_z_axis``"
-msgstr ""
+msgstr "``grid_map/edit_z_axis``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:577
 #: ../../docs/tutorials/3d/standard_material_3d.rst:744
@@ -27833,7 +27814,7 @@ msgstr "Перетворення"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:577
 msgid "``grid_map/transform_tool``"
-msgstr ""
+msgstr "``grid_map/transform_tool``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:579
 #: ../../docs/tutorials/2d/using_tilemaps.rst:198
@@ -27841,32 +27822,28 @@ msgid "Selection"
 msgstr "Вибір"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:579
-#, fuzzy
 msgid "``grid_map/selection_tool``"
-msgstr "``tiles_editor/selection_tool``"
+msgstr "``grid_map/selection_tool``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:581
-#, fuzzy
 msgid "Erase"
-msgstr "Гумка"
+msgstr "Стерти"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:581
 msgid "``grid_map/erase_tool``"
-msgstr ""
+msgstr "``grid_map/erase_tool``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:583
-#, fuzzy
 msgid "``grid_map/paint_tool``"
-msgstr "``tiles_editor/paint_tool``"
+msgstr "``grid_map/paint_tool``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:585
-#, fuzzy
 msgid "Pick"
-msgstr "Пікер"
+msgstr "Вибрати"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:585
 msgid "``grid_map/pick_tool``"
-msgstr ""
+msgstr "``grid_map/pick_tool``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:587
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:132
@@ -27875,52 +27852,47 @@ msgstr "Fill"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:587
 msgid "``grid_map/fill_tool``"
-msgstr ""
+msgstr "``grid_map/fill_tool``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:589
-#, fuzzy
 msgid "Move"
-msgstr "Перемістити вгору"
+msgstr "Перемістити"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:589
 msgid "``grid_map/move_tool``"
-msgstr ""
+msgstr "``grid_map/move_tool``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:591
 msgid "``grid_map/duplicate_tool``"
-msgstr ""
+msgstr "``grid_map/duplicate_tool``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:593
-#, fuzzy
 msgid "``grid_map/delete_tool``"
-msgstr "``file_dialog/delete``"
+msgstr "``grid_map/delete_tool``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:595
-#, fuzzy
 msgid "Cursor Rotate X"
-msgstr "Список курсорів"
+msgstr "Поворот курсора X"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:595
 msgid "``grid_map/cursor_rotate_x``"
-msgstr ""
+msgstr "``grid_map/cursor_rotate_x``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:597
-#, fuzzy
 msgid "Cursor Rotate Y"
-msgstr "Список курсорів"
+msgstr "Поворот курсора по осі Y"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:597
 msgid "``grid_map/cursor_rotate_y``"
-msgstr ""
+msgstr "``grid_map/cursor_rotate_y``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:599
-#, fuzzy
 msgid "Cursor Rotate Z"
-msgstr "Список курсорів"
+msgstr "Поворот курсора по осі Z"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:599
 msgid "``grid_map/cursor_rotate_z``"
-msgstr ""
+msgstr "``grid_map/cursor_rotate_z``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:603
 msgid "Project manager"
@@ -28400,7 +28372,6 @@ msgstr ""
 "безпосередньо на пристрій."
 
 #: ../../docs/tutorials/editor/using_the_xr_editor.rst:10
-#, fuzzy
 msgid ""
 "The app can be downloaded from the `Google Play Store <https://"
 "play.google.com/store/apps/details?id=org.godotengine.editor.v4>`__, `Meta "
@@ -28408,9 +28379,11 @@ msgid ""
 "7713660705416473/>`__, or from the `Godot download page <https://"
 "godotengine.org/download/preview/>`__."
 msgstr ""
-"Програму можна завантажити з магазину `Meta Horizon Store <https://"
-"www.meta.com/experiences/godot-game-engine/7713660705416473/>`__ або зі "
-"сторінки завантаження `Godot <https://godotengine.org/download/preview/>`__."
+"Додаток можна завантажити з магазину Google Play <https://play.google.com/"
+"store/apps/details?id=org.godotengine.editor.v4>`__, магазину Meta Horizon "
+"<https://www.meta.com/experiences/godot-game-engine/7713660705416473/>`__ "
+"або зі сторінки завантаження Godot <https://godotengine.org/download/"
+"preview/>`__."
 
 #: ../../docs/tutorials/editor/using_the_xr_editor.rst:16
 msgid ""
@@ -28425,20 +28398,18 @@ msgid "XR devices support"
 msgstr "Підтримка пристроїв XR"
 
 #: ../../docs/tutorials/editor/using_the_xr_editor.rst:21
-#, fuzzy
 msgid ""
 "For now, the Godot XR editor is only available for Android XR devices, and "
 "the following `Meta Quest <https://www.meta.com/quest/>`__ devices running "
 "**Meta Horizon OS v69 or higher**:"
 msgstr ""
-"Наразі редактор Godot XR доступний лише для наступних пристроїв `Meta Quest "
-"<https://www.meta.com/quest/>`__, які працюють під керуванням **Meta Horizon "
-"OS v69 або новішої**:"
+"Наразі редактор Godot XR доступний лише для пристроїв Android XR та таких "
+"пристроїв `Meta Quest <https://www.meta.com/quest/>`__ з **Meta Horizon OS "
+"v69 або вище**:"
 
 #: ../../docs/tutorials/editor/using_the_xr_editor.rst:24
-#, fuzzy
 msgid "Meta Quest 2"
-msgstr "Meta Quest 3"
+msgstr "Meta Quest 2"
 
 #: ../../docs/tutorials/editor/using_the_xr_editor.rst:25
 msgid "Meta Quest 3"
@@ -28506,15 +28477,14 @@ msgstr ""
 "enable-input>`__ налаштування проекту ввімкнено."
 
 #: ../../docs/tutorials/editor/using_the_xr_editor.rst:41
-#, fuzzy
 msgid ""
 "`USE_SCENE (META ONLY) <https://developers.meta.com/horizon/documentation/"
 "native/native-spatial-data-perm/>`__: Required to enable and access the "
 "scene APIs when running an XR project."
 msgstr ""
-"`USE_SCENE <https://developers.meta.com/horizon/documentation/native/native-"
-"spatial-data-perm/>`__: необхідний для ввімкнення та доступу до API сцени "
-"під час запуску проекту XR."
+"`USE_SCENE (ТІЛЬКИ МЕТА) <https://developers.meta.com/horizon/documentation/"
+"native/native-spatial-data-perm/>`__: Потрібно для ввімкнення та доступу до "
+"API сцен під час запуску XR-проекту."
 
 #: ../../docs/tutorials/editor/using_the_xr_editor.rst:44
 #: ../../docs/tutorials/editor/using_the_android_editor.rst:35
@@ -28569,9 +28539,8 @@ msgstr ""
 "touchscreen-increase-scrollbar-touch-area>`__ налаштування редактора."
 
 #: ../../docs/tutorials/editor/using_the_xr_editor.rst:55
-#, fuzzy
 msgid "**Multi-tasking on Quest**"
-msgstr "**Багатозадачність**"
+msgstr "**Багатозадачність увімкнена Quest**"
 
 #: ../../docs/tutorials/editor/using_the_xr_editor.rst:57
 msgid ""
@@ -28933,15 +28902,12 @@ msgid "Browser support"
 msgstr "Підтримка браузерів"
 
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:20
-#, fuzzy
 msgid ""
 "The Web editor requires support for WebAssembly's SharedArrayBuffer. This is "
 "in turn required to support threading in the browser."
 msgstr ""
-"Веб-редактору потрібна підтримка SharedArrayBuffer WebAssembly, для "
-"підтримки потоків у браузері. Наступні браузери для настільних комп'ютерів "
-"підтримують потокову передачу WebAssembly і тому можуть запускати "
-"вебредактор:"
+"Веб-редактору потрібна підтримка SharedArrayBuffer у WebAssembly. Це, у свою "
+"чергу, необхідно для підтримки потоків у браузері."
 
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:23
 msgid ""
@@ -28949,14 +28915,16 @@ msgid ""
 "Mobile browsers are supported, but won't provide an ideal experience due to "
 "performance and input limitations."
 msgstr ""
+"Див. список підтримуваних веббраузерів у розділі "
+":ref:`doc_system_requirements`. Мобільні браузери підтримуються, але не "
+"забезпечать ідеального досвіду через обмеження продуктивності та введення."
 
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:27
-#, fuzzy
 msgid ""
 "The web editor only supports the Compatibility renderer, as there is no "
 "stable way to run Vulkan applications on the web yet."
 msgstr ""
-"Веб-редактор підтримує лише метод візуалізації сумісності, оскільки ще немає "
+"Веб-редактор підтримує лише рендерер сумісності, оскільки поки що немає "
 "стабільного способу запуску програм Vulkan в Інтернеті."
 
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:32
@@ -28964,6 +28932,9 @@ msgid ""
 "If you run into performance issues on Firefox, try using a Chromium-based "
 "browser as these may perform better in WebGL applications."
 msgstr ""
+"Якщо у вас виникли проблеми з продуктивністю у Firefox, спробуйте "
+"скористатися браузером на базі Chromium, оскільки такі браузери можуть краще "
+"працювати в WebGL-додатках."
 
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:38
 #: ../../docs/tutorials/editor/using_engine_compilation_configuration_editor.rst:89
@@ -42104,9 +42075,8 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:289
 #: ../../docs/tutorials/3d/particles/process_material_properties.rst:452
-#, fuzzy
 msgid "Customizing the process material"
-msgstr "Створення технологічного матеріалу"
+msgstr "Налаштування технологічного матеріалу"
 
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:291
 #: ../../docs/tutorials/3d/particles/process_material_properties.rst:454
@@ -42117,22 +42087,23 @@ msgid ""
 "conversion process. Features that are enabled will also affect what's "
 "present in the converted shader code."
 msgstr ""
+"Якщо вам потрібно змінити або реалізувати нові поведінки в коді шейдера, ви "
+"можете зробити це, перетворивши поточний ParticleProcessMaterial на "
+":ref:`class_ShaderMaterial`. Існуючі властивості зберігаються в процесі "
+"перетворення. Увімкнені функції також впливатимуть на те, що присутнє в "
+"перетвореному коді шейдера."
 
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:296
 #: ../../docs/tutorials/3d/particles/process_material_properties.rst:459
-#, fuzzy
 msgid ""
 "To do so, right-click on the material in the FileSystem dock and choose "
 "**Convert to ShaderMaterial**. You can also do so by right-clicking on any "
 "property holding a reference to the material in the inspector."
 msgstr ""
-"Матеріали, успадковані від ресурсу :ref:`class_Material`, такі "
-"як :ref:`class_StandardMaterial3D` і :ref:`class_ParticleProcessMaterial`, "
-"можна перетворити на :ref:`class_ShaderMaterial`, а їхні існуючі властивості "
-"буде перетворено на супровідний текстовий шейдер. Для цього клацніть правою "
-"кнопкою миші на матеріалі в док-станції FileSystem і виберіть **Перетворити "
-"на ShaderMaterial**. Ви також можете зробити це, клацнувши правою кнопкою "
-"миші будь-яку властивість, що містить посилання на матеріал в інспекторі."
+"Щоб це зробити, клацніть правою кнопкою миші на матеріалі в доці файлової "
+"системи та виберіть **Конвертувати в ShaderMaterial**. Ви також можете "
+"зробити це, клацнувши правою кнопкою миші на будь-якій властивості, яка "
+"містить посилання на матеріал, в інспекторі."
 
 #: ../../docs/tutorials/2d/2d_antialiasing.rst:4
 msgid "2D antialiasing"
@@ -48867,7 +48838,6 @@ msgstr ""
 "ви хочете написати скрипт для тесселяції, спрощення, або деформування, меша."
 
 #: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:9
-#, fuzzy
 msgid ""
 "The MeshDataTool is not as fast as altering arrays directly "
 "using :ref:`ArrayMesh <class_arraymesh>`. However, it provides more "
@@ -48877,12 +48847,12 @@ msgid ""
 "algorithms. If you do not need this extra information then it may be better "
 "to use an ArrayMesh."
 msgstr ""
-"MeshDataTool не такий швидкий, як безпосередня зміна масивів за допомогою "
-"ArrayMesh. Однак він надає більше інформації та інструментів для роботи з "
-"мешами, ніж ArrayMesh. Коли використовується MeshDataTool, він обчислює дані "
-"меша недоступні в ArrayMeshes, такі як грані та ребра, які необхідні для "
-"певних алгоритмів меша. Якщо вам не потрібна ця додаткова інформація, "
-"можливо, краще використовувати ArrayMesh."
+"MeshDataTool не такий швидкий, як зміна масивів безпосередньо за допомогою "
+":ref:`ArrayMesh <class_arraymesh>`. Однак він надає більше інформації та "
+"інструментів для роботи з сітками, ніж ArrayMesh. Коли використовується "
+"MeshDataTool, він обчислює дані сітки, які недоступні в ArrayMesh, такі як "
+"грані та ребра, які необхідні для певних алгоритмів сітки. Якщо вам не "
+"потрібна ця додаткова інформація, можливо, краще використовувати ArrayMesh."
 
 #: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:14
 msgid ""
@@ -48893,7 +48863,6 @@ msgstr ""
 "PrimitiveType ``Mesh.PRIMITIVE_TRIANGLES``."
 
 #: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:16
-#, fuzzy
 msgid ""
 "We initialize the MeshDataTool from an ArrayMesh by "
 "calling :ref:`create_from_surface() "
@@ -48903,9 +48872,11 @@ msgid ""
 "<class_meshdatatool_method_clear>` yourself before re-using the MeshDataTool."
 msgstr ""
 "Ми ініціалізуємо MeshDataTool з ArrayMesh, викликаючи "
-"``create_from_surface()``. Якщо в MeshDataTool вже є дані, ініціалізовані, "
-"виклик ``create_from_surface()`` очистить їх. Або ж ви можете самостійно "
-"викликати ``clear()`` перед повторним використанням MeshDataTool."
+":ref:`create_from_surface() <class_meshdatatool_method_create_from_surface>"
+"`. Якщо в MeshDataTool вже є ініціалізовані дані, виклик "
+"``create_from_surface()`` очистить їх. Або ж ви можете самостійно викликати "
+":ref:`clear() <class_meshdatatool_method_clear>` перед повторним "
+"використанням MeshDataTool."
 
 #: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:19
 msgid ""
@@ -49865,6 +49836,10 @@ msgid ""
 "are drawn after opaque geometry. As a result, features that rely on the "
 "normal-roughness buffer will not affect transparent materials."
 msgstr ""
+"Прозорі об'єкти не відображаються в буфері нормальної шорсткості, оскільки "
+"вони малюються після непрозорої геометрії. Як результат, об'єкти, що "
+"залежать від буфера нормальної шорсткості, не впливатимуть на прозорі "
+"матеріали."
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:126
 msgid ""
@@ -56362,13 +56337,12 @@ msgid "3D Particle trails"
 msgstr "Тривимірні сліди частинок"
 
 #: ../../docs/tutorials/3d/particles/trails.rst:8
-#, fuzzy
 msgid ""
 "Particle trails are only supported in the Forward+ and Mobile renderers, not "
 "Compatibility."
 msgstr ""
-"Наклейки підтримуються лише у засобах візуалізації Forward+ і Mobile, але не "
-"підтримуються для рендерера сумісності."
+"Сліди частинок підтримуються лише у рендерах Forward+ та Mobile, а не в "
+"Compatibility."
 
 #: ../../docs/tutorials/3d/particles/trails.rst:14
 msgid "Particle trail params"
@@ -57611,13 +57585,12 @@ msgid "SDF collision"
 msgstr "Зіткнення SDF"
 
 #: ../../docs/tutorials/3d/particles/collision.rst:128
-#, fuzzy
 msgid ""
 "Particle SDF collision is only supported in the Forward+ and Mobile "
 "renderers, not Compatibility."
 msgstr ""
-"Наклейки підтримуються лише у засобах візуалізації Forward+ і Mobile, але не "
-"підтримуються для рендерера сумісності."
+"Зіткнення частинок SDF підтримується лише у рендерах Forward+ та Mobile, а "
+"не в режимі Compatibility."
 
 #: ../../docs/tutorials/3d/particles/collision.rst:131
 msgid "Particle collision SDF"
@@ -62724,7 +62697,6 @@ msgstr ""
 "<doc_environment_and_post_processing_using_glow_in_2d>`."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:158
-#, fuzzy
 msgid ""
 "**Keep** does not draw any sky, keeping what was present on previous frames "
 "instead. This improves performance in purely indoor scenes, but creates a "
@@ -62733,8 +62705,10 @@ msgid ""
 "the background, useful for AR games on mobile devices."
 msgstr ""
 "**Зберегти** не малює небо, зберігаючи те, що було на попередніх кадрах. Це "
-"покращує продуктивність у сценах виключно в приміщенні, але створює "
-"візуальний збій у «залі дзеркал», якщо небо видно в будь-який час."
+"покращує продуктивність у суто внутрішніх сценах, але створює візуальний "
+"збій \"дзеркальної зали\", якщо небо видно в будь-який момент. - **Камера "
+"Стрічка** відображає :ref:`class_CameraFeed` з фізичної камери як фон, що "
+"корисно для AR-ігор на мобільних пристроях."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:165
 msgid "Sky materials"
@@ -63076,19 +63050,16 @@ msgstr ""
 "більш реалістичного вигляду. Трохи повільніше, ніж у режимі Filmic."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:298
-#, fuzzy
 msgid ""
 "**AgX:** Uses a film-like tonemapping curve and desaturates bright values "
 "for a more realistic appearance. Better than other tonemappers at "
 "maintaining the hue of colors as they become brighter. The slowest "
 "tonemapping option."
 msgstr ""
-"**AgX:** Використовує криву тонального відображення, схожу на плівку, та "
+"**AgX:** Використовує криву тонального відображення, подібну до плівки, та "
 "знебарвлює яскраві значення для більш реалістичного вигляду. Краще, ніж інші "
 "тональні відображення, зберігає відтінок кольорів, коли вони стають "
-"яскравішими. Найповільніший варіант тонального відображення. **Білий** має "
-"фіксоване значення ``16.29``, що робить AgX непридатним для використання з "
-"методом мобільного рендерингу."
+"яскравішими. Найповільніший варіант тонального відображення."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:303
 msgid ""
@@ -63105,7 +63076,6 @@ msgstr ""
 "щоб отримати подібну видиму яскравість, як і для лінійної."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:309
-#, fuzzy
 msgid ""
 "**White:** The white reference value for tonemapping, which indicates where "
 "bright white is located in the scale of values provided to the tonemapper. "
@@ -63119,9 +63089,11 @@ msgstr ""
 "**Білий:** Опорне значення білого для тонального відображення, яке вказує, "
 "де знаходиться яскраво-білий колір у шкалі значень, що надаються тональному "
 "відображенню. Для фотореалістичного освітлення рекомендовані значення "
-"знаходяться в діапазоні від ``6.0`` до ``8.0``. Вищі значення призводять до "
-"менш пересвічених ділянок, але можуть зробити сцену менш контрастною. "
-"**Білий** недоступний під час використання **Лінійний** або **AgX**."
+"знаходяться між ``6.0`` та ``8.0``. Вищі значення призводять до менш "
+"пересвічених ділянок, але можуть зробити сцену менш контрастною. **Білий** "
+"недоступний під час використання **Лінійного**. Якщо ви використовуєте AGX, "
+"мобільний рендерер і HDR 2D вимкнено, то встановлене тут значення буде "
+"проігноровано, а замість нього буде використано значення ``2.0``."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:318
 msgid ""
@@ -63130,6 +63102,10 @@ msgid ""
 "the contrast option in the adjustment section at no additional performance "
 "cost."
 msgstr ""
+"**Контрастність AGX:** Доступно лише за використання AGX. Збільшення цього "
+"параметра робить темні значення темнішими, а світлі — яскравішими. Це "
+"створює кращі результати, ніж параметр контрастності в розділі налаштування, "
+"без додаткового зниження продуктивності."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:323
 msgid "Mid- and post-processing effects"
@@ -64040,20 +64016,18 @@ msgstr ""
 "(або вище) певної висоти, незалежно від відстані від камери."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:728
-#, fuzzy
 msgid ""
 "Both of these fog types can have their curves tweaked, making their "
 "transition more or less sharp."
 msgstr ""
-"Обидва ці параметри туману можуть мати свою криву налаштування, що робить їх "
-"перехід більш, чи менш, різким."
+"Обидва ці типи туману можна налаштувати, зробивши їхній перехід більш або "
+"менш різким."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:730
 msgid "Two properties can be tweaked to make the fog effect more interesting:"
 msgstr "Два параметри можна налаштувати, щоб зробити ефект туману цікавішим:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:732
-#, fuzzy
 msgid ""
 "The first is **Sun Scatter**, which makes use of the DirectionalLight3D's "
 "color and energy in the current scene. When looking toward the directional "
@@ -64288,16 +64262,16 @@ msgid "Camera attribute options"
 msgstr "Параметри атрибутів камери"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:844
-#, fuzzy
 msgid ""
 "Godot has two kinds of camera attributes, physical and practical. When using "
 "CameraAttributesPhysical instead of CameraAttributesPractical, depth of "
 "field is automatically computed from the camera attributes' focus distance, "
 "focal length, and aperture. In addition, Frutsum options are available."
 msgstr ""
-"У разі використання CameraAttributesPhysical замість "
-"CameraAttributesPractical глибина різкості автоматично обчислюється на "
-"основі фокусної відстані, фокусної відстані та діафрагми атрибутів камери."
+"Godot має два типи атрибутів камери: фізичні та практичні. При використанні "
+"CameraAttributesPhysical замість CameraAttributesPractical, глибина різкості "
+"автоматично обчислюється на основі фокусної відстані, фокусної відстані та "
+"діафрагми атрибутів камери. Крім того, доступні опції Frutsum."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:850
 msgid "Depth of Field / Far Blur"
@@ -73190,13 +73164,12 @@ msgstr ""
 "``AnimationPlayer``, який був створений в імпортованій сцені."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:30
-#, fuzzy
 msgid ""
 "This is how it's done in the `Third Person Shooter demo <https://"
 "godotengine.org/asset-library/asset/2710>`_, for reference:"
 msgstr ""
 "Ось як це зроблено в демо-версії шутера від третьої особи <https://"
-"godotengine.org/asset-library/asset/678>`_, для довідки:"
+"godotengine.org/asset-library/asset/2710>`_, для довідки:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:34
 msgid ""
@@ -73611,7 +73584,7 @@ msgstr "``is_walking``"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:253
 msgid "``is_walking == true`` (behaves the same as the one above)"
-msgstr ""
+msgstr "``is_walking == true`` (поводиться так само, як і вищезгадане)"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:254
 msgid "``is_walking && !is_idle``"
@@ -73633,6 +73606,11 @@ msgid ""
 "should match the style used in the script, which is typically ``snake_case`` "
 "in GDScript and ``PascalCase`` in C#."
 msgstr ""
+"Вираз **чутливий до регістру**. Якщо ви посилаєтеся на властивості движка, "
+"такі як ``velocity``, на вузлі :ref:`class_CharacterBody3D`, вам слід "
+"використовувати правила іменування ``snake_case``. Якщо ви посилаєтеся на "
+"властивості скрипта, вам слід відповідати стилю, що використовується у "
+"скрипті, який зазвичай є ``snake_case`` у GDScript та ``PascalCase`` у C#."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:266
 msgid ""
@@ -73684,6 +73662,9 @@ msgid ""
 "class. See :ref:`doc_evaluating_expressions` for more information on writing "
 "expressions."
 msgstr ""
+"Вираз Advance обчислюється за допомогою класу Godot :ref:`class_expression`. "
+"Див. :ref:`doc_evaluating_expressions` для отримання додаткової інформації "
+"про написання виразів."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:293
 msgid "StateMachine travel"
@@ -80004,6 +79985,9 @@ msgid ""
 "GLTF's buffer/accessor data instead of numerous singular Mesh3D object. This "
 "does not include Geometry Nodes instancing."
 msgstr ""
+"**Екземпляри GPU** Якщо позначено, екземпляри та системи частинок "
+"імпортуються як дані буфера/аксесора GLTF, а не як численні окремі об'єкти "
+"Mesh3D. Це не включає створення екземплярів вузлів геометрії."
 
 #: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/import_configuration.rst:212
 msgid "**Tangents:** If checked, imports vertex tangents from Blender."
@@ -103067,6 +103051,11 @@ msgid ""
 "``event.relative`` and ``event.velocity`` so that mouse movement behaves the "
 "same across :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
+"Під час реалізації таких функцій, як mouselook, рекомендується "
+"використовувати ``event.screen_relative`` та ``event.screen_velocity`` "
+"замість ``event.relative`` та ``event.velocity``, щоб рух миші поводився "
+"однаково при різних роздільних здатностях :ref:`multiple resolutions "
+"<doc_multiple_resolutions>`."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:4
 msgid "Customizing the mouse cursor"
@@ -103794,9 +103783,8 @@ msgstr ""
 "109645>`__ у майбутньому випуску."
 
 #: ../../docs/tutorials/inputs/controller_features.rst:4
-#, fuzzy
 msgid "Controller features"
-msgstr "Основні функції"
+msgstr "Функції контролера"
 
 #: ../../docs/tutorials/inputs/controller_features.rst:6
 msgid ""
@@ -103804,15 +103792,16 @@ msgid ""
 "gameplay experience. This page describes these features, how existing games "
 "have used them, and how you can get started with them in Godot."
 msgstr ""
+"Godot підтримує функції, специфічні для контролерів, які можуть ще більше "
+"покращити ігровий процес. На цій сторінці описано ці функції, як їх "
+"використовували в існуючих іграх і як почати використовувати їх у Godot."
 
 #: ../../docs/tutorials/inputs/controller_features.rst:12
-#, fuzzy
 msgid ""
 "These controller features are currently only supported on Windows, macOS, "
 "and Linux."
 msgstr ""
-"Завантаження системних шрифтів підтримується лише в Windows, macOS, Linux, "
-"Android та iOS."
+"Ці функції контролера наразі підтримуються лише у Windows, macOS та Linux."
 
 #: ../../docs/tutorials/inputs/controller_features.rst:17
 msgid ""
@@ -103820,6 +103809,9 @@ msgid ""
 "controllers, remember that there is no guarantee that players will have a "
 "controller with any given features."
 msgstr ""
+"Якщо ви спеціально не рекламуєте свою гру як таку, що вимагає певних "
+"контролерів, пам’ятайте, що немає гарантії, що гравці матимуть контролер з "
+"будь-якими заданими функціями."
 
 #: ../../docs/tutorials/inputs/controller_features.rst:21
 msgid ""
@@ -103827,11 +103819,13 @@ msgid ""
 "experience for players whose controllers support them, without detracting "
 "from those who don't have controllers."
 msgstr ""
+"Як наслідок, ми пропонуємо використовувати ці функції для покращення "
+"ігрового процесу для гравців, чиї контролери їх підтримують, не відволікаючи "
+"при цьому тих, у кого контролерів немає."
 
 #: ../../docs/tutorials/inputs/controller_features.rst:27
-#, fuzzy
 msgid "LED color"
-msgstr "колір"
+msgstr "Колір світлодіода"
 
 #: ../../docs/tutorials/inputs/controller_features.rst:29
 msgid ""
@@ -103839,24 +103833,32 @@ msgid ""
 "on-screen gameplay by providing some matching visuals in the player's hands. "
 "Here are some notable examples:"
 msgstr ""
+"Ігри можуть використовувати світлодіодні індикатори на певних контролерах, "
+"щоб ненав’язливо доповнювати ігровий процес на екрані, забезпечуючи "
+"відповідні візуальні ефекти в руках гравця. Ось кілька яскравих прикладів:"
 
 #: ../../docs/tutorials/inputs/controller_features.rst:32
 msgid ""
 "In *Hades*, the color of the light matches the god you're receiving a boon "
 "from."
 msgstr ""
+"У *Аїді* колір світла відповідає богу, від якого ви отримуєте благословення."
 
 #: ../../docs/tutorials/inputs/controller_features.rst:33
 msgid ""
 "In *Resident Evil 2*, the color of the light indicates your health (green "
 "for full, yellow for medium, red for low)."
 msgstr ""
+"У грі *Resident Evil 2* колір світла вказує на ваш рівень здоров'я (зелений "
+"— повний, жовтий — середній, червоний — низький)."
 
 #: ../../docs/tutorials/inputs/controller_features.rst:34
 msgid ""
 "In *Star Wars Jedi: Fallen Order*, the color of the light matches your "
 "lightsaber's color."
 msgstr ""
+"У грі *Зоряні війни: Джедаї: Занепад Ордена* колір світла відповідає кольору "
+"вашого світлового меча."
 
 #: ../../docs/tutorials/inputs/controller_features.rst:36
 msgid ""
@@ -103864,6 +103866,9 @@ msgid ""
 "method :ref:`Input.set_joy_light()<class_Input_method_set_joy_light>` to set "
 "the color of a given controller's LEDs."
 msgstr ""
+"Використовуйте метод :ref:`Input.set_joy_light()"
+"<class_Input_method_set_joy_light>` для встановлення кольору світлодіодів "
+"заданого контролера."
 
 #: ../../docs/tutorials/inputs/controller_features.rst:39
 msgid ""
@@ -103872,22 +103877,32 @@ msgid ""
 "The PlayStation DualShock and DualSense controllers are known to support LED "
 "lights."
 msgstr ""
+"Щоб визначити, чи підтримує даний контролер налаштування світлодіодного "
+"підсвічування, скористайтеся методом :ref:`Input.has_joy_light()"
+"<class_Input_method_has_joy_light>`. Відомо, що контролери PlayStation "
+"DualShock та DualSense підтримують світлодіодне підсвічування."
 
 #: ../../docs/tutorials/inputs/controller_features.rst:42
 msgid ""
 "The following ``_process()`` method sets the LED color according to the "
 "currently pressed button, and turns it off if no button is being pressed:"
 msgstr ""
+"Наступний метод ``_process()`` встановлює колір світлодіода відповідно до "
+"натиснутої кнопки та вимикає його, якщо жодна кнопка не натискається:"
 
 #: ../../docs/tutorials/inputs/controller_features.rst:62
 msgid "The following example smoothly fades the LED through hues in a loop:"
 msgstr ""
+"У наступному прикладі світлодіод плавно змінюється за допомогою відтінків у "
+"циклі:"
 
 #: ../../docs/tutorials/inputs/controller_features.rst:73
 msgid ""
 "The following example makes the LED blink red three times when the south "
 "button (Cross/X on PlayStation controllers) is pressed:"
 msgstr ""
+"У наступному прикладі світлодіод блимає червоним тричі, коли натискається "
+"кнопка «південь» (Cross/X на контролерах PlayStation):"
 
 #: ../../docs/tutorials/inputs/handling_quit_requests.rst:4
 msgid "Handling quit requests"
@@ -118600,7 +118615,6 @@ msgid "Using Jolt Physics"
 msgstr "Використання Jolt Physics"
 
 #: ../../docs/tutorials/physics/using_jolt_physics.rst:9
-#, fuzzy
 msgid ""
 "The Jolt physics engine was added as an alternative to the existing Godot "
 "Physics physics engine in 4.4. Jolt is developed by Jorrit Rouwe with a "
@@ -118611,10 +118625,10 @@ msgstr ""
 "Фізичний двигун Jolt було додано як альтернативу існуючому фізичному двигуну "
 "Godot Physics у версії 4.4. Jolt розроблено Jorrit Rouwe з акцентом на ігри "
 "та VR-додатки. Раніше він був доступний як розширення, але тепер вбудований "
-"у Godot."
+"у Godot. За замовчуванням нові проекти використовуватимуть його як фізичний "
+"двигун."
 
 #: ../../docs/tutorials/physics/using_jolt_physics.rst:14
-#, fuzzy
 msgid ""
 "The existing extension is now considered in maintenance mode. That means bug "
 "fixes will be merged, and it will be kept compatible with new versions of "
@@ -118626,9 +118640,10 @@ msgstr ""
 "Існуюче розширення зараз розглядається як таке, що перебуває в режимі "
 "обслуговування. Це означає, що виправлення помилок будуть об'єднані, і воно "
 "буде сумісним з новими версіями Godot, доки вбудований модуль не матиме "
-"паритету функціональності з розширенням. Розширення можна знайти `тут на "
-"GitHub <https://github.com/godot-jolt/godot-jolt>`_ та в бібліотеці ресурсів "
-"Godot."
+"паритету функціональності з розширенням. Єдине, чого бракує на даний момент, "
+"це пов'язані з'єднання, про які ви можете прочитати на цій сторінці. "
+"Розширення можна знайти `тут на GitHub <https://github.com/godot-jolt/godot-"
+"jolt>`_ та в бібліотеці ресурсів Godot."
 
 #: ../../docs/tutorials/physics/using_jolt_physics.rst:21
 msgid ""
@@ -123027,7 +123042,6 @@ msgstr ""
 "знаходяться далеко від джерела світу."
 
 #: ../../docs/tutorials/physics/large_world_coordinates.rst:230
-#, fuzzy
 msgid ""
 ":ref:`class_GPUParticles3D` nodes with **Local Coords** disabled will not "
 "benefit from increased precision. This can cause visible particle snapping "
@@ -123035,20 +123049,19 @@ msgid ""
 "enabled, as well as :ref:`class_CPUParticles3D` nodes, will still benefit "
 "from increased precision."
 msgstr ""
-"2D-візуалізація наразі не виграє від підвищення точності, коли ввімкнено "
-"великі світові координати. Це може спричинити видиме прив’язування моделі на "
-"великій відстані від джерела світу (починаючи з кількох мільйонів пікселів "
-"при типових рівнях масштабування). Однак двовимірні обчислення фізики все "
-"одно виграють від підвищення точності."
+"Вузли :ref:`class_GPUParticles3D` з вимкненими **Локальними координатами** "
+"не матимуть підвищеної точності. Це може призвести до видимого прив'язування "
+"частинок, коли вони знаходяться далеко від початку координат. Вузли з "
+"увімкненими **Локальними координатами**, а також вузли "
+":ref:`class_CPUParticles3D`, все одно матимуть підвищену точність."
 
 #: ../../docs/tutorials/physics/large_world_coordinates.rst:234
-#, fuzzy
 msgid ""
 "Shaders using the ``skip_vertex_transform`` or ``world_vertex_coords`` "
 "render modes don't benefit from increased precision."
 msgstr ""
-"Шейдери, які використовують ``skip_vertex_transform`` або "
-"``world_vertex_coords``, не виграють від підвищення точності."
+"Шейдери, що використовують режими рендерингу ``skip_vertex_transform`` або "
+"``world_vertex_coords``, не отримують переваг від підвищеної точності."
 
 #: ../../docs/tutorials/physics/large_world_coordinates.rst:236
 msgid ""
@@ -127154,6 +127167,9 @@ msgid ""
 "``ndk-stack`` looks for an initial line of asterisks when parsing the crash "
 "log. Make sure your ``crash.txt`` starts with the following line:"
 msgstr ""
+"``ndk-stack`` шукає початковий рядок зірочок під час аналізу журналу "
+"аварійного завершення. Переконайтеся, що ваш ``crash.txt`` починається з "
+"наступного рядка:"
 
 #: ../../docs/tutorials/platform/android/resolving_crashes_on_android.rst:111
 msgid ""
@@ -129657,7 +129673,6 @@ msgstr ""
 "якщо ви бажаєте:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:209
-#, fuzzy
 msgid ""
 "That's it for our basic button. You can save this as ``my_button.gd`` inside "
 "the plugin folder. You may have a 16×16 icon to show in the scene tree. If "
@@ -129665,12 +129680,11 @@ msgid ""
 "in your `addons/my_custom_node` folder as `icon.png`, or use the default "
 "Godot logo (`preload(\"res://icon.svg\")`)."
 msgstr ""
-"Ось і все для нашої основної кнопки. Ви можете зберегти це як "
-"``my_button.gd`` у папці плагіна. Вам також знадобиться піктограма 16×16 для "
-"відображення в дереві сцени. Якщо у вас його немає, ви можете отримати "
-"типовий логотип із механізму та зберегти його у папці `addons/"
-"my_custom_node` як `icon.png` або використати типовий логотип Godot "
-"(`preload(\"res://) icon.svg\")`)."
+"Ось і все про нашу базову кнопку. Ви можете зберегти її як ``my_button.gd`` "
+"в папці плагіна. У вас може бути значок розміром 16×16 для відображення в "
+"дереві сцени. Якщо у вас його немає, ви можете взяти стандартний з движка та "
+"зберегти його в папці `addons/my_custom_node` як `icon.png` або використати "
+"стандартний логотип Godot (`preload(\"res://icon.svg\")`)."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:217
 msgid ""
@@ -132541,9 +132555,8 @@ msgid "Depth texture"
 msgstr "Глибина текстури"
 
 #: ../../docs/tutorials/rendering/renderers.rst:334
-#, fuzzy
 msgid "Normal/Roughness buffer"
-msgstr "Нормальна/Шорстка текстура"
+msgstr "Буфер нормального/шорсткого стану"
 
 #: ../../docs/tutorials/rendering/renderers.rst:336
 msgid "Compute shaders"
@@ -132563,9 +132576,8 @@ msgid "Decals"
 msgstr "Декалі"
 
 #: ../../docs/tutorials/rendering/renderers.rst:354
-#, fuzzy
 msgid "Particle SDF collision"
-msgstr "Зіткнення частинок"
+msgstr "Зіткнення частинок SDF"
 
 #: ../../docs/tutorials/rendering/renderers.rst:356
 msgid "Depth of field blur"
@@ -136724,16 +136736,16 @@ msgid "Annotations"
 msgstr "Анотації"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:452
-#, fuzzy
 msgid ""
 "Annotations are special tokens in GDScript that act as modifiers to an "
 "entire script, a declaration, a statement, or a location in the source code. "
 "Annotations may affect how the script is treated by the Godot editor and the "
 "GDScript compiler."
 msgstr ""
-"Анотації — це спеціальні маркери в GDScript, які діють як модифікатори "
-"скрипта або його коду та можуть впливати на те, як скрипт обробляється "
-"механізмом або редактором Godot."
+"Анотації — це спеціальні токени в GDScript, які діють як модифікатори цілого "
+"скрипта, оголошення, оператора або місця у вихідному коді. Анотації можуть "
+"впливати на те, як скрипт обробляється редактором Godot та компілятором "
+"GDScript."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:456
 msgid ""
@@ -152867,7 +152879,6 @@ msgstr ""
 "Godot."
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:15
-#, fuzzy
 msgid ""
 "Create builds for all platforms you want to support (e.g. using `GitHub "
 "Actions <https://github.com/godotengine/godot-cpp-template/blob/main/.github/"
@@ -152875,7 +152886,7 @@ msgid ""
 msgstr ""
 "Створюйте збірки для всіх платформ, які ви хочете підтримувати (наприклад, "
 "використовуючи `GitHub Actions <https://github.com/godotengine/godot-cpp-"
-"template/blob/main/.github/workflows/builds.yml>`__)."
+"template/blob/main/.github/workflows/make_build.yml>`__)."
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:16
 msgid ""
@@ -153172,7 +153183,6 @@ msgid "gdextension_cpp_example/src/register_types.cpp"
 msgstr "gdextension_cpp_example/src/register_types.cpp"
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:264
-#, fuzzy
 msgid ""
 "The ``initialize_example_module`` and ``uninitialize_example_module`` "
 "functions get called respectively when Godot loads our plugin and when it "
@@ -153181,19 +153191,20 @@ msgid ""
 "depending on your needs. We call the ``GDREGISTER_CLASS`` macro for each of "
 "our classes in our library."
 msgstr ""
-"Функції ``initialize_example_module`` і ``uninitialize_example_module`` "
-"викликаються відповідно, коли Godot завантажує наш плагін і коли він його "
-"вивантажує. Все, що ми робимо тут, це розібрати функції в нашому модулі "
-"прив’язок, щоб ініціалізувати їх, але вам, можливо, доведеться налаштувати "
-"більше речей залежно від ваших потреб. Ми викликаємо макрос "
-"``GDREGISTER_RUNTIME_CLASS`` для кожного з наших класів у нашій бібліотеці. "
-"Це змусить їх працювати лише в грі, як за замовчуванням для GDScript."
+"Функції ``initialize_example_module`` та ``uninitialize_example_module`` "
+"викликаються відповідно, коли Godot завантажує наш плагін та коли вивантажує "
+"його. Все, що ми тут робимо, це розбираємо функції в нашому модулі зв'язок, "
+"щоб ініціалізувати їх, але вам, можливо, доведеться налаштувати більше речей "
+"залежно від ваших потреб. Ми викликаємо макрос ``GDREGISTER_CLASS`` для "
+"кожного з наших класів у нашій бібліотеці."
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:272
 msgid ""
 "You can find information about ``GDREGISTER_CLASS`` (and alternatives) "
 "at :ref:`doc_object_class`."
 msgstr ""
+"Ви можете знайти інформацію про ``GDREGISTER_CLASS`` (та альтернативи) за "
+"адресою :ref:`doc_object_class`."
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:274
 msgid ""
@@ -155118,9 +155129,8 @@ msgid "`Go <https://github.com/grow-graphics/gd>`__"
 msgstr "`Go <https://github.com/grow-graphics/gd>`__"
 
 #: ../../docs/tutorials/scripting/other_languages.rst:26
-#, fuzzy
 msgid "`Java/Kotlin <https://github.com/utopia-rise/godot-kotlin-jvm>`__"
-msgstr "`Nim <https://github.com/godot-nim/gdext-nim>`__"
+msgstr "`Java/Kotlin <https://github.com/utopia-rise/godot-kotlin-jvm>`__"
 
 #: ../../docs/tutorials/scripting/other_languages.rst:27
 msgid "`Nim <https://github.com/godot-nim/gdext-nim>`__"
@@ -155570,21 +155580,24 @@ msgstr ""
 "Frameworks``."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:4
-#, fuzzy
 msgid "The C interface JSON file"
-msgstr "Інтерфейс eval"
+msgstr "JSON-файл інтерфейсу C"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:6
 msgid ""
 "The ``gdextension_interface.json`` file is the \"source of truth\" for the C "
 "API that Godot uses to communicate with GDExtensions."
 msgstr ""
+"Файл ``gdextension_interface.json`` є «джерелом достовірності» для C API, "
+"який Godot використовує для зв'язку з GDExtensions."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:9
 msgid ""
 "You can use the Godot executable to dump the file by using the following "
 "command:"
 msgstr ""
+"Ви можете скористатися виконуваним файлом Godot для створення дампа файлу за "
+"допомогою такої команди:"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:15
 msgid ""
@@ -155592,6 +155605,9 @@ msgid ""
 "generate code for using this API in whatever form makes the most sense for "
 "that language."
 msgstr ""
+"Цей файл призначений для використання мовними прив'язками GDExtension для "
+"генерації коду для використання цього API у будь-якій формі, що має "
+"найбільший сенс для цієї мови."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:20
 msgid ""
@@ -155601,6 +155617,10 @@ msgid ""
 "``gdextension_interface.json`` is more low-level, and is used to interact "
 "with those higher-level classes and methods."
 msgstr ""
+"Це не слід плутати з ``extension_api.json``, який також використовується "
+"зв'язками мови GDExtension та містить інформацію про класи та методи, що "
+"надаються Godot. ``gdextension_interface.json`` є більш низькорівневим і "
+"використовується для взаємодії з цими класами та методами вищого рівня."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:25
 msgid ""
@@ -155608,6 +155628,9 @@ msgid ""
 "with C code, it's also possible to use the Godot executable to dump a "
 "generated C header file:"
 msgstr ""
+"Для мов, які можна розширити за допомогою C або які надають інструменти для "
+"взаємодії з кодом C, також можна використовувати виконуваний файл Godot для "
+"виведення згенерованого заголовкового файлу C:"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:34
 msgid ""
@@ -155615,6 +155638,9 @@ msgid ""
 "were included with Godot 4.5 and earlier, which means it preserves some "
 "typos in names in order to ensure compatibility."
 msgstr ""
+"Заголовковий файл сумісний з попередніми версіями заголовкового файлу, які "
+"були включені до Godot 4.5 та попередніх версій, що означає, що він зберігає "
+"деякі друкарські помилки в іменах, щоб забезпечити сумісність."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:38
 msgid ""
@@ -155622,27 +155648,32 @@ msgid ""
 "language bindings that would like to do their own code generation from the "
 "JSON."
 msgstr ""
+"Мета цієї сторінки — пояснити формат JSON для мовних прив'язок GDExtension, "
+"які бажають самостійно генерувати код з JSON."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:42
-#, fuzzy
 msgid "Overall structure"
-msgstr "Структура вузлів"
+msgstr "Загальна структура"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:44
 msgid "The JSON file is broken up into 3 sections:"
-msgstr ""
+msgstr "JSON-файл розділений на 3 частини:"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:46
 msgid ""
 "The header, which includes some miscellaneous information at the top-level "
 "of the JSON file."
 msgstr ""
+"Заголовок, який містить деяку різноманітну інформацію на верхньому рівні "
+"JSON-файлу."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:47
 msgid ""
 "The ``types`` key, which defines all the types used in the GDExtension "
 "interface."
 msgstr ""
+"Ключ ``types``, який визначає всі типи, що використовуються в інтерфейсі "
+"GDExtension."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:48
 msgid ""
@@ -155650,16 +155681,18 @@ msgid ""
 "loaded via the ``GDExtensionInterfaceGetProcAddress`` function pointer, "
 "which is passed to all GDExtensions when they are loaded."
 msgstr ""
+"Ключ ``interface``, який визначає всі вказівники на функції, що можуть бути "
+"завантажені через вказівник функції ``GDExtensionInterfaceGetProcAddress``, "
+"що передається всім GDExtensions під час їх завантаження."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:52
-#, fuzzy
 msgid ""
 "There is a complete `JSON schema <https://github.com/godotengine/godot/blob/"
 "master/core/extension/gdextension_interface.schema.json>`__ included in "
 "Godot's source code."
 msgstr ""
-"`core/io/resource.h <https://github.com/godotengine/godot/blob/master/core/"
-"io/resource.h>`__"
+"У вихідному коді Godot є повна `JSON-схема <https://github.com/godotengine/"
+"godot/blob/master/core/extension/gdextension_interface.schema.json>`__."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:55
 msgid ""
@@ -155671,23 +155704,31 @@ msgid ""
 "anything in versions of Godot that are newer than the version you are "
 "targeting."
 msgstr ""
+"Навіть попри те, що ми можемо додавати нові типи та функції інтерфейсу з "
+"кожним незначним випуском Godot, ми прагнемо **ніколи** не змінювати їх у "
+"зворотній спосіб, несумісний зі стандартною версією, або видаляти їх. Кожна "
+"функція інтерфейсу позначена версією Godot, у якій вона була введена (ключ "
+"``since``), тому ви завжди можете використовувати останню версію файлу та "
+"просто утримуватися від використання будь-чого у версіях Godot, новіших за "
+"ту, на яку ви орієнтуєтесь."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:62
-#, fuzzy
 msgid "Header"
-msgstr "Шейдери"
+msgstr "Заголовок"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:64
 msgid ""
 "The \"header\" is made up of 3 miscellaneous keys at the top-level of the "
 "file:"
-msgstr ""
+msgstr "«Заголовок» складається з 3 різних ключів на верхньому рівні файлу:"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:66
 msgid ""
 "``_copyright``: The standard copyright and license text that Godot includes "
 "in all source code files."
 msgstr ""
+"``_copyright``: Стандартний текст авторських прав та ліцензії, який Godot "
+"включає до всіх файлів вихідного коду."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:68
 msgid ""
@@ -155695,6 +155736,9 @@ msgid ""
 "useful to place the schema in the same directory, if you're viewing it with "
 "a code editor that understands JSON schema."
 msgstr ""
+"``$schema``: Вказує на схему JSON відносно цього файлу. Може бути корисним "
+"розмістити схему в тому ж каталозі, якщо ви переглядаєте її за допомогою "
+"редактора коду, який розуміє схему JSON."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:71
 msgid ""
@@ -155706,6 +155750,13 @@ msgid ""
 "never have to use it, but it allows code generators to error early if they "
 "encounter an unexpected value here."
 msgstr ""
+"``format_version``: Ціле число для версії формату файлу (тобто схеми). "
+"Наразі існує лише одна версія формату (``1``). Якщо ми коли-небудь змінимо "
+"формат файлу несумісним чином, ми збільшимо це число. Це *не* відображає "
+"версію даних у файлі (тому він не змінюватиметься між версіями Godot), лише "
+"його формат. Сподіваємося, нам ніколи не доведеться це використовувати, але "
+"це дозволяє генераторам коду видавати помилки завчасно, якщо вони зіткнуться "
+"з неочікуваним значенням тут."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:79
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:136
@@ -155718,18 +155769,22 @@ msgid ""
 "The ``types`` section is an array of types that will be used by other types, "
 "and the interface functions that will be in the last section."
 msgstr ""
+"Розділ ``types`` — це масив типів, які будуть використовуватися іншими "
+"типами, та функції інтерфейсу, які будуть в останньому розділі."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:84
 msgid ""
 "The types should be evaluated in order. Later types may refer to earlier "
 "types, but earlier types will not refer to later types."
 msgstr ""
+"Типи слід оцінювати по порядку. Пізніші типи можуть посилатися на попередні "
+"типи, але попередні типи не посилатимуться на пізніші типи."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:87
 msgid ""
 "There is a small set of built-in types which aren't explicitly listed in the "
 "JSON:"
-msgstr ""
+msgstr "Існує невеликий набір вбудованих типів, які явно не перелічені в JSON:"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:89
 #: ../../docs/tutorials/scripting/creating_script_templates.rst:239
@@ -155737,64 +155792,60 @@ msgid "``void``"
 msgstr "``void``"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:90
-#, fuzzy
 msgid "``int8_t``"
-msgstr "``int``"
+msgstr "``int8_t``"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:91
-#, fuzzy
 msgid "``uint8_t``"
-msgstr "``Color(uint)``"
+msgstr "``uint8_t``"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:92
-#, fuzzy
 msgid "``int16_t``"
-msgstr "``int``"
+msgstr "``int16_t``"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:93
 msgid "``uint16_t``"
-msgstr ""
+msgstr "``uint16_t``"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:94
-#, fuzzy
 msgid "``int32_t``"
-msgstr "``int``"
+msgstr "``int32_t``"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:95
 msgid "``uint32_t``"
-msgstr ""
+msgstr "``uint32_t``"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:96
-#, fuzzy
 msgid "``int64_t``"
-msgstr "``int``"
+msgstr "``int64_t``"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:97
 msgid "``uint64_t``"
-msgstr ""
+msgstr "``uint64_t``"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:98
 msgid ""
 "``size_t`` (``uint32_t`` on 32-bit architectures, and ``uint64_t`` on 64-bit "
 "architectures)"
 msgstr ""
+"``size_t`` (``uint32_t`` на 32-бітних архітектурах та ``uint64_t`` на 64-"
+"бітних архітектурах)"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:99
-#, fuzzy
 msgid "``char``"
-msgstr "char"
+msgstr "``char``"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:100
 msgid "``char16_t``"
-msgstr ""
+msgstr "``char16_t``"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:101
 msgid "``char32_t``"
-msgstr ""
+msgstr "``char32_t``"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:102
 msgid "``wchar_t``"
-msgstr ""
+msgstr "``wchar_t``"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:103
 #: ../../docs/tutorials/scripting/creating_script_templates.rst:238
@@ -155802,69 +155853,65 @@ msgid "``float``"
 msgstr "``float``"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:104
-#, fuzzy
 msgid "``double``"
-msgstr "``double[]``"
+msgstr "``double``"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:106
-#, fuzzy
 msgid "These correspond to their equivalent C types."
-msgstr "Повний список типів Variant і їх еквівалентного типу C#:"
+msgstr "Вони відповідають еквівалентним типам C."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:108
 msgid "Additionally, types can include modifiers such as:"
-msgstr ""
+msgstr "Крім того, типи можуть містити модифікатори, такі як:"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:110
 msgid "``*`` (e.g. ``int8_t*``) to indicate a pointer to the type"
-msgstr ""
+msgstr "``*`` (наприклад, ``int8_t*``) для позначення вказівника на тип"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:111
 msgid "``const`` (e.g. ``const int8_t*``) to indicate a const type"
 msgstr ""
+"``const`` (наприклад, ``const int8_t*``) для позначення константного типу"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:113
 msgid "Each type defined in the JSON file falls into one of 5 \"kinds\":"
-msgstr ""
+msgstr "Кожен тип, визначений у JSON-файлі, належить до одного з 5 «видів»:"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:115
-#, fuzzy
 msgid "``enum``"
-msgstr "``end``"
+msgstr "``enum``"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:116
-#, fuzzy
 msgid "``handle``"
-msgstr "``Scale``"
+msgstr "``handle``"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:117
-#, fuzzy
 msgid "``alias``"
-msgstr "псевдонім"
+msgstr "``alias``"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:118
-#, fuzzy
 msgid "``struct``"
-msgstr "``string``"
+msgstr "``struct``"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:119
-#, fuzzy
 msgid "``function``"
-msgstr "функція"
+msgstr "``function``"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:121
 msgid "Regardless of the \"kind\", all types can have the following keys:"
-msgstr ""
+msgstr "Незалежно від «виду», усі типи можуть мати такі ключі:"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:123
 msgid "``kind`` (required): The type's \"kind\"."
-msgstr ""
+msgstr "``kind`` (обов'язково): Тип типу."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:124
 msgid ""
 "``name`` (required): The name of the type, which could be used as a valid C "
 "identifier."
 msgstr ""
+"``name`` (обов'язково): Назва типу, яку можна використовувати як дійсний "
+"ідентифікатор C."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:125
 msgid ""
@@ -155872,6 +155919,9 @@ msgid ""
 "is a line of documentation (this format for ``description`` is used "
 "throughout the JSON file)."
 msgstr ""
+"``description``: Масив рядків, що документують тип, де кожен рядок є рядком "
+"документації (цей формат для ``description`` використовується в усьому JSON-"
+"файлі)."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:127
 msgid ""
@@ -155879,46 +155929,60 @@ msgid ""
 "was deprecated in (``since``), a message explaining the deprecation "
 "(``message``), and optionally a replacement to use instead (``replacement``)."
 msgstr ""
+"``deprecated``: Об'єкт із власними ключами для версії Godot, для якої цей "
+"тип був визнаний застарілим (``since``), повідомленням із поясненням "
+"депрекції (``message``) та, за бажанням, заміною для використання "
+"(``replacement``)."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:134
 msgid ""
 "Enums are 32-bit integers with a fixed set of possible values. In C, they "
 "could be represented as an ``enum``."
 msgstr ""
+"Переліки — це 32-бітні цілі числа з фіксованим набором можливих значень. У "
+"мові C їх можна представити як ``enum``."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:137
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:183
-#, fuzzy
 msgid "They have the following keys:"
-msgstr "З такими назвами:"
+msgstr "Вони мають такі ключі:"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:139
 msgid ""
 "``is_bitfield``: If true, this enum is a bitfield, where the enum values can "
 "be bitwise OR'd together. It is false by default."
 msgstr ""
+"``is_bitfield``: Якщо значення true, це перелік є бітовим полем, де значення "
+"переліку можна об'єднувати побітовою операцією АБО. За замовчуванням "
+"значення false."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:141
 msgid ""
 "``values``: The array of fixed values for this enum, each with a ``name``, "
 "``value``, and ``description``."
 msgstr ""
+"``values``: Масив фіксованих значень для цього переліку, кожне з яких має "
+"``name``, ``value`` та ``description``."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:143
 msgid ""
 "An enum should be represented as an ``int32_t``, unless ``is_bitfield`` is "
 "true, in which case a ``uint32_t`` should be used."
 msgstr ""
+"Перелік слід представляти як ``int32_t``, якщо тільки ``is_bitfield`` не має "
+"значення true, і в цьому випадку слід використовувати ``uint32_t``."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:179
 msgid "Handles"
-msgstr ""
+msgstr "Ручки"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:181
 msgid ""
 "Handles are pointers to opaque structs. In C, they could be represented as "
 "``void *`` or ``struct{} *``."
 msgstr ""
+"Десктопи — це вказівники на непрозорі структури. У C їх можна представити як "
+"``void *`` або ``struct{} *``."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:185
 msgid ""
@@ -155926,6 +155990,9 @@ msgid ""
 "pointer\", meaning its internal data will not be changed. It is false by "
 "default."
 msgstr ""
+"``is_const``: Якщо значення true, цей тип дескриптора слід розглядати як «"
+"константний вказівник», тобто його внутрішні дані не будуть змінені. За "
+"замовчуванням значення false."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:187
 msgid ""
@@ -155933,6 +156000,10 @@ msgid ""
 "to uninitialized memory (which may be initialized using interface "
 "functions). It is false by default."
 msgstr ""
+"``is_uninitialized``: Якщо значення true, цей тип дескриптора слід "
+"розглядати як вказівник на неініціалізовану пам'ять (яку можна "
+"ініціалізувати за допомогою функцій інтерфейсу). За замовчуванням значення "
+"false."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:189
 msgid ""
@@ -155940,39 +156011,50 @@ msgid ""
 "the const or uninitialized version of the parent type. This only makes sense "
 "if either ``is_const`` or ``is_uninitialized`` is true."
 msgstr ""
+"``parent``: Необов'язкова назва іншого типу дескриптора, якщо цей тип "
+"дескриптора є константною або неініціалізованою версією батьківського типу. "
+"Це має сенс лише тоді, коли ``is_const`` або ``is_uninitialized`` мають "
+"значення true."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:192
 msgid ""
 "Handles are the size of pointers on the given architecture (so, 64-bit on "
 "x86_64 and 32-bit on x86_32, for example)."
 msgstr ""
+"Десктопи – це розмір вказівників на заданій архітектурі (наприклад, 64-бітна "
+"на x86_64 та 32-бітна на x86_32)."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:206
-#, fuzzy
 msgid "Aliases"
-msgstr "псевдонім"
+msgstr "Псевдоніми"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:208
 msgid ""
 "Aliases are alternative names for a type. In C, they could be represented as "
 "a ``typedef``."
 msgstr ""
+"Псевдоніми – це альтернативні назви для типу. У C їх можна представити як "
+"``typedef``."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:210
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:233
 msgid "They have only one additional key:"
-msgstr ""
+msgstr "У них є лише один додатковий ключ:"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:212
 msgid ""
 "``type``: The type the alias is an alternative name for. It may include "
 "modifiers as described above."
 msgstr ""
+"``type``: Тип, для якого псевдонім є альтернативною назвою. Він може містити "
+"модифікатори, як описано вище."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:214
 msgid ""
 "These should be represented using the same C type as the type they refer to."
 msgstr ""
+"Вони повинні бути представлені з використанням того ж типу C, що й тип, на "
+"який вони посилаються."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:228
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:423
@@ -155985,12 +156067,17 @@ msgid ""
 "given members in order), and should follow all the same layout and alignment "
 "rules as C structs."
 msgstr ""
+"Структури представляють собою C-``struct``\\s (тобто блок пам'яті, що "
+"складається з заданих членів по порядку) і повинні дотримуватися тих самих "
+"правил розміщення та вирівнювання, що й C-структури."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:235
 msgid ""
 "``members``: An array of objects which have a ``name``, ``type`` (which may "
 "include modifiers), and ``description``."
 msgstr ""
+"``члени``: Масив об'єктів, що мають ``ім'я``, ``тип`` (який може включати "
+"модифікатори) та ``опис``."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:265
 msgid ""
@@ -155998,11 +156085,13 @@ msgid ""
 "return type, and should follow the same size and alignment requirements as C "
 "function pointers."
 msgstr ""
+"Функції представляють типи вказівників на функції C зі списком аргументів та "
+"типом повернення, і повинні відповідати тим самим вимогам до розміру та "
+"вирівнювання, що й вказівники на функції C."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:268
-#, fuzzy
 msgid "They have the following members:"
-msgstr "З такими назвами:"
+msgstr "Вони мають таких членів:"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:270
 msgid ""
@@ -156010,17 +156099,21 @@ msgid ""
 "modifiers) and ``description``. If the function has no return value, this "
 "will be omitted."
 msgstr ""
+"``return_value``: Об'єкт, який має ``type`` (який може включати "
+"модифікатори) та ``description``. Якщо функція не має повертаного значення, "
+"це буде пропущено."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:272
 msgid ""
 "``arguments`` (required): An array of function arguments which each has a "
 "``type`` (which may include modifiers), ``name``, and ``description``."
 msgstr ""
+"``аргументи`` (обов'язково): Масив аргументів функції, кожен з яких має "
+"``тип`` (який може включати модифікатори), ``назва`` та ``опис``."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:297
-#, fuzzy
 msgid "Interface"
-msgstr "XRInterface"
+msgstr "Інтерфейс"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:299
 msgid ""
@@ -156029,12 +156122,18 @@ msgid ""
 "``GDExtensionInterfaceGetProcAddress`` function pointer, which is passed to "
 "all GDExtensions when they are loaded."
 msgstr ""
+"Розділ ``interface`` JSON-файлу — це список функцій інтерфейсу, які можна "
+"завантажити за допомогою ``name``, використовуючи вказівник функції "
+"``GDExtensionInterfaceGetProcAddress``, який передається всім GDExtensions "
+"під час їх завантаження."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:303
 msgid ""
 "Interface functions have some of the same keys as types, including ``name`` "
 "(required), ``deprecated``, and ``description``."
 msgstr ""
+"Функції інтерфейсу мають деякі з тих самих ключів, що й типи, зокрема "
+"``name`` (обов'язковий), ``deprecated`` та ``description``."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:306
 msgid ""
@@ -156042,16 +156141,21 @@ msgid ""
 "the same format as the equivalent keys on function types (as described in "
 "the previous section)."
 msgstr ""
+"А також вони мають ``return_value`` та ``arguments`` (обов'язкові), які "
+"мають той самий формат, що й еквівалентні ключі у типах функцій (як описано "
+"в попередньому розділі)."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:309
 msgid "There are only a handful of unique keys:"
-msgstr ""
+msgstr "Існує лише кілька унікальних ключів:"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:311
 msgid ""
 "``since`` (required): The Godot version that introduced this interface "
 "function."
 msgstr ""
+"``since`` (обов'язково): Версія Godot, яка запроваджувала цю функцію "
+"інтерфейсу."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:312
 msgid ""
@@ -156059,6 +156163,9 @@ msgid ""
 "information, for example, names of classes or functions in the Godot source "
 "code, or URLs pointing to documentation."
 msgstr ""
+"``see``: Масив рядків, що описують зовнішні посилання з додатковою "
+"інформацією, наприклад, назви класів або функцій у вихідному коді Godot, або "
+"URL-адреси, що вказують на документацію."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:314
 msgid ""
@@ -156069,6 +156176,13 @@ msgid ""
 "from Godot 4.5 or earlier, and it shouldn't be used unless you also need to "
 "maintain compatibility with the old header."
 msgstr ""
+"``legacy_type_name``: Застаріле ім'я, що використовується для типу "
+"вказівника функції в заголовку, згенерованому Godot, коли застаріле ім'я не "
+"відповідає шаблону, що використовується для цих імен типів. Це поле існує "
+"лише для того, щоб ми могли згенерувати заголовок таким чином, щоб він був "
+"зворотно сумісний із заголовком Godot 4.5 або ранішої версії, і його не слід "
+"використовувати, якщо вам також не потрібно підтримувати сумісність зі "
+"старим заголовком."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:4
 msgid "GDExtension C example"
@@ -175393,17 +175507,16 @@ msgid "in vec4 **FRAGCOORD**"
 msgstr "In vec4 **FRAGCOORD**"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:363
-#, fuzzy
 msgid ""
 "Coordinate of pixel center in screen space. ``xy`` specifies position in "
 "window. Origin is upper left. ``z`` specifies fragment depth. It is also "
 "used as the output value for the fragment depth unless ``DEPTH`` is written "
 "to."
 msgstr ""
-"Координата центру пікселя в просторі екрана. ``xy`` вказує позицію у вікні. "
-"Початок ліворуч внизу. ``z`` визначає глибину фрагмента. Він також "
-"використовується як вихідне значення для глибини фрагмента, якщо не вказано "
-"``DEPTH``."
+"Координата центру пікселя в просторі екрана. ``xy`` визначає положення у "
+"вікні. Початок координат знаходиться у верхньому лівому куті. ``z`` визначає "
+"глибину фрагмента. Він також використовується як вихідне значення для "
+"глибини фрагмента, якщо не записується ``DEPTH``."
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:367
 msgid "in bool **FRONT_FACING**"
@@ -183761,7 +183874,6 @@ msgid "Keyboard/Controller Navigation and Focus"
 msgstr "Навігація з клавіатури/контролера та фокус"
 
 #: ../../docs/tutorials/ui/gui_navigation.rst:6
-#, fuzzy
 msgid ""
 "It is a common requirement for a user interface to have full keyboard and "
 "controller support for navigation and interaction. There are two main "
@@ -183770,12 +183882,12 @@ msgid ""
 "project ready for consoles (or just for people who prefer to game with a "
 "controller on PC)."
 msgstr ""
-"Загальною вимогою до інтерфейсу користувача є повна підтримка клавіатури та "
-"контролера для навігації та взаємодії. Є дві основні причини, чому це "
-"корисно для проектів: покращена доступність (не кожен може використовувати "
-"мишу або сенсорне керування для взаємодії) і підготовка вашого проекту "
-"до :ref:`consoles <doc_consoles>` (або просто для людей, які віддають "
-"перевагу гра з контролером на ПК)."
+"Загальною вимогою для користувацького інтерфейсу є повна підтримка "
+"клавіатури та контролера для навігації та взаємодії. Існує дві основні "
+"причини, чому це корисно для проектів: покращена доступність (не всі можуть "
+"використовувати мишу або сенсорне керування для взаємодії) та підготовка "
+"вашого проекту до консолей (або просто для тих, хто віддає перевагу грі з "
+"контролером на ПК)."
 
 #: ../../docs/tutorials/ui/gui_navigation.rst:12
 msgid ""
@@ -187465,11 +187577,11 @@ msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:256
 msgid "``[u]{text}[/u]`` ``[u color={color}]{text}[/u]``"
-msgstr ""
+msgstr "``[u]{text}[/u]`` ``[u color={color}]{text}[/u]``"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:262
 msgid "``[s]{text}[/s]`` ``[s color={color}]{text}[/s]``"
-msgstr ""
+msgstr "``[s]{text}[/s]`` ``[s color={color}]{text}[/s]``"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:0
 msgid "Makes ``{text}`` use the mono font of ``RichTextLabel``."
@@ -187607,14 +187719,14 @@ msgid "``[indent]{text}[/indent]``"
 msgstr "``[indent]{text}[/indent]``"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:0
-#, fuzzy
 msgid ""
 "Creates a hyperlink (underlined and clickable text). Can contain optional "
 "``{text}`` or display ``{link}`` as is. Supports configuration options, "
 "see :ref:`doc_bbcode_in_richtextlabel_url_options`."
 msgstr ""
-"Створює гіперпосилання (підкреслений текст, який можна натиснути). Може "
-"містити необов’язковий ``{text}`` або відображати ``{link}`` як є."
+"Створює гіперпосилання (підкреслений текст, на який можна натискати). Може "
+"містити необов'язковий ``{text}`` або відображати ``{link}`` як є. Підтримує "
+"параметри конфігурації, див. :ref:`doc_bbcode_in_richtextlabel_url_options`."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:0
 msgid ""
@@ -187625,9 +187737,8 @@ msgstr ""
 "див. :ref:`doc_bbcode_in_richtextlabel_handling_url_tag_clicks`."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:0
-#, fuzzy
 msgid "``[url {options}]{text}[/url]``"
-msgstr "``[p {options}]{text}[/p]``"
+msgstr "``[url {options}]{text}[/url]``"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:0
 msgid "**hint**"
@@ -187891,6 +188002,7 @@ msgstr ""
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:0
 msgid "``{name}`` is a table name for assistive apps (screen reader)."
 msgstr ""
+"``{name}`` – це назва таблиці для допоміжних (програм зчитування з екрана)."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:0
 msgid "``[table={number}]{cells}[/table]``"
@@ -187905,10 +188017,10 @@ msgid "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
 msgstr "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:0
-#, fuzzy
 msgid ""
 "``[table={number},{valign},{alignment_row} name={name}]{cells}[/table]``"
-msgstr "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
+msgstr ""
+"``[table={number},{valign},{alignment_row} name={name}]{cells}[/table]``"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:0
 msgid "**cell**"
@@ -188442,27 +188554,24 @@ msgid "Horizontal alignment."
 msgstr "Горизонтальне вирівнювання."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:668
-#, fuzzy
 msgid "URL options"
-msgstr "Параметри шрифту"
+msgstr "Параметри URL-адреси"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:670
-#, fuzzy
 msgid "**underline**"
-msgstr "Підкреслити"
+msgstr "**underline**"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:673
 msgid "``always``, ``never``, ``hover``"
-msgstr ""
+msgstr "``always``, ``never``, ``hover``"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:675
 msgid "``always``"
-msgstr ""
+msgstr "``always``"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:678
-#, fuzzy
 msgid "URL underlining mode."
-msgstr "Методи візуалізації"
+msgstr "Режим підкреслення URL-адреси."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:680
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:756
@@ -188471,23 +188580,20 @@ msgstr "**підказка**"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:683
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:693
-#, fuzzy
 msgid "String."
-msgstr "Строка (рядок, текст)"
+msgstr "Рядок."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:688
-#, fuzzy
 msgid "URL tooltip."
-msgstr "Підказка зображення."
+msgstr "Підказка URL-адреси."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:690
-#, fuzzy
 msgid "**href**"
-msgstr "**hr**"
+msgstr "**href**"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:698
 msgid "URL target address."
-msgstr ""
+msgstr "Цільова URL-адреса."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:704
 msgid "Image options"
@@ -188553,29 +188659,24 @@ msgstr "Підказка зображення."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:766
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:776
-#, fuzzy
 msgid "**alt**"
-msgstr "**align**"
+msgstr "**alt**"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:769
-#, fuzzy
 msgid "see :ref:`doc_bbcode_in_richtextlabel_image_and_table_alignment`"
-msgstr ""
-"Підтримує параметри конфігурації, "
-"див. :ref:`doc_bbcode_in_richtextlabel_image_options`."
+msgstr "див. :ref:`doc_bbcode_in_richtextlabel_image_and_table_alignment`"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:771
-#, fuzzy
 msgid "``center,center``"
-msgstr "``[center]`` ``[/center]``"
+msgstr "``center,center``"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:774
 msgid "Image alignment to the surrounding text."
-msgstr ""
+msgstr "Вирівнювання зображення відносно навколишнього тексту."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:784
 msgid "Image description for assistive apps (screen reader)."
-msgstr ""
+msgstr "Опис зображення для допоміжних програм (програма зчитування з екрана)."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:789
 msgid "Image and table vertical alignment"
@@ -188850,13 +188951,12 @@ msgid "Cell options"
 msgstr "Варіанти комірки"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:985
-#, fuzzy
 msgid "**shrink**"
-msgstr "**shader_baker**"
+msgstr "**shrink**"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:993
 msgid "If ``true``, cell can shrink to its contents."
-msgstr ""
+msgstr "Якщо ``true``, комірка може стиснутися до свого вмісту."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:995
 msgid "**expand**"
@@ -191431,9 +191531,8 @@ msgstr ""
 "Це дозволяє вибрати, які повідомлення налагодження записуватимуться в журнал."
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:240
-#, fuzzy
 msgid "Frame Synthesis"
-msgstr "Кадрувати вибране"
+msgstr "Синтез фреймів"
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:242
 msgid ""
@@ -191442,20 +191541,23 @@ msgid ""
 "The XR runtime can now inject reprojection frames and compensate for lower "
 "framerates."
 msgstr ""
+"Коли цю функцію ввімкнено, за умови підтримки середовища виконання XR, "
+"буфери вектора руху та глибини з нижчою роздільною здатністю візуалізуються "
+"та надаються середовищу виконання XR. Тепер середовище виконання XR може "
+"вставляти кадри повторного проекційування та компенсувати нижчу частоту "
+"кадрів."
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:246
-#, fuzzy
 msgid "It currently has the following limitations:"
-msgstr "Він має такі параметри:"
+msgstr "Наразі він має такі обмеження:"
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:248
 msgid "Does NOT work in the Forward+ renderer."
-msgstr ""
+msgstr "НЕ працює у рендерері Forward+."
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:249
-#, fuzzy
 msgid "Only works with stereo rendering."
-msgstr "Чому б не відкласти рендеринг?"
+msgstr "Працює лише зі стереорендерингом."
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:252
 msgid "Hand Tracking"
@@ -191561,7 +191663,6 @@ msgstr ""
 "в руках."
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:294
-#, fuzzy
 msgid "Spatial Entities"
 msgstr "Просторові сутності"
 
@@ -191572,6 +191673,10 @@ msgid ""
 "detailed information on how it works on the :ref:`spatial entities page "
 "<doc_openxr_spatial_entities>`."
 msgstr ""
+"Це розширення та його налаштування використовуються для отримання та "
+"взаємодії з інформацією про реальне середовище користувача. Більш детальну "
+"інформацію про те, як воно працює, можна знайти на сторінці :ref:`spatial "
+"entities page <doc_openxr_spatial_entities>`."
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:301
 msgid "Eye Gaze Interaction"
@@ -197730,9 +197835,8 @@ msgstr ""
 "вихідний код Godot C++."
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:4
-#, fuzzy
 msgid "Godot's architecture overview"
-msgstr "Архітектурна схема Godot"
+msgstr "Огляд архітектури Godot"
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:6
 msgid ""
@@ -197741,6 +197845,9 @@ msgid ""
 "giving a high-level overview of the main components and their relationships "
 "to each other."
 msgstr ""
+"Наведена нижче діаграма описує найважливіші аспекти архітектури Godot. Вона "
+"не є вичерпною, а лише надає загальний огляд основних компонентів та їхніх "
+"взаємозв'язків один з одним."
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:10
 msgid ""
@@ -197749,19 +197856,21 @@ msgid ""
 "with Core and Main separated on the right side since they interact with all "
 "layers."
 msgstr ""
+"Діаграма архітектури Godot; розділена на три шари (зверху вниз: шар сцени, "
+"шар сервера та шар інтерфейсу драйверів і платформи), причому ядро та "
+"основний шари розділені праворуч, оскільки вони взаємодіють з усіма шарами."
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:13
-#, fuzzy
 msgid ""
 "Credit: `Hendrik Brucker <https://github.com/Geometror/godot-architecture-"
 "diagram>`__"
 msgstr ""
-"`godot-orchestrator <https://github.com/CraterCrash/godot-orchestrator/>`__"
+"Кредит: `Хендрік Брукер <https://github.com/Geometror/godot-architecture-"
+"diagram>`__"
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:16
-#, fuzzy
 msgid "Scene Layer"
-msgstr "Дерево сцени"
+msgstr "Шар сцени"
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:18
 msgid ""
@@ -197770,26 +197879,31 @@ msgid ""
 "or games. See :ref:`class_SceneTree` / :ref:`doc_scene_tree` "
 "and :ref:`class_Node` for more information."
 msgstr ""
+"Шар сцени – це найвищий рівень архітектури Godot, що забезпечує систему "
+"сцен, яка є основним способом побудови та структурування ваших програм або "
+"ігор. Див. :ref:`class_SceneTree` / :ref:`doc_scene_tree` та "
+":ref:`class_Node` для отримання додаткової інформації."
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:21
-#, fuzzy
 msgid ""
 "Corresponding source code: `/scene/* <https://github.com/godotengine/godot/"
 "tree/master/scene>`__"
 msgstr ""
-"`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
-"icons>`__"
+"Відповідний вихідний код: `/scene/* <https://github.com/godotengine/godot/"
+"tree/master/scene>`__"
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:24
-#, fuzzy
 msgid "Server Layer"
-msgstr "Сервери"
+msgstr "Серверний рівень"
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:26
 msgid ""
 "Server components implement most of Godot's subsystems (rendering, audio, "
 "physics, etc.). They are singleton objects initialized at engine startup."
 msgstr ""
+"Серверні компоненти реалізують більшість підсистем Godot (рендеринг, аудіо, "
+"фізика тощо). Вони є однотонними об'єктами, ініціалізованими під час запуску "
+"движка."
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:28
 #: ../../docs/engine_details/architecture/custom_godot_servers.rst:21
@@ -197801,17 +197915,16 @@ msgstr ""
 "why-does-godot-use-servers-and-rids>`__"
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:30
-#, fuzzy
 msgid ""
 "Corresponding source code: `/servers/* <https://github.com/godotengine/godot/"
 "tree/master/servers>`__"
 msgstr ""
-"`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
-"icons>`__"
+"Відповідний вихідний код: `/servers/* <https://github.com/godotengine/godot/"
+"tree/master/servers>`__"
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:33
 msgid "Drivers / Platform Interface"
-msgstr ""
+msgstr "Інтерфейс драйверів / платформи"
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:35
 msgid ""
@@ -197820,16 +197933,20 @@ msgid ""
 "platform-specific :ref:`class_OS` and :ref:`class_DisplayServer` "
 "implementations)."
 msgstr ""
+"Цей рівень абстрагує низькорівневі деталі, специфічні для платформи, "
+"включаючи драйвери для графічних API, аудіо-бекендів та інтерфейсів "
+"операційної системи (всі реалізації :ref:`class_OS` та "
+":ref:`class_DisplayServer`, специфічні для платформи)."
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:38
-#, fuzzy
 msgid ""
 "Corresponding source code: `/drivers/* <https://github.com/godotengine/godot/"
 "tree/master/drivers>`__ and `/platform/* <https://github.com/godotengine/"
 "godot/tree/master/platform>`__"
 msgstr ""
-"Офіційні прив'язки GDExtension для `C <https://github.com/godotengine/godot-"
-"headers>`__ та `C++ <https://github.com/godotengine/godot-cpp>`__."
+"Відповідний вихідний код: `/drivers/* <https://github.com/godotengine/godot/"
+"tree/master/drivers>`__ і `/platform/* <https://github.com/godotengine/godot/"
+"tree/master/platform>`__"
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:43
 msgid ""
@@ -197840,15 +197957,19 @@ msgid ""
 "O, :ref:`Variant <doc_variant_class>`, and :ref:`other utilities "
 "<doc_common_engine_methods_and_macros>`."
 msgstr ""
+"Ядро рушія містить основні функції та структури даних, що використовуються в "
+"усьому рушії, такі як :ref:`class_Object` та :ref:`class_ClassDB`, "
+":ref:`керування пам'яттю <doc_core_types>`, :ref:`контейнери <doc_core_types>"
+"`, файловий ввід/вивід, :ref:`Variant <doc_variant_class>` та :ref:`інші "
+"утиліти <doc_common_engine_methods_and_macros>`."
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:46
-#, fuzzy
 msgid ""
 "Corresponding source code: `/core/* <https://github.com/godotengine/godot/"
 "tree/master/core>`__"
 msgstr ""
-"`основний/математика <https://github.com/godotengine/godot/tree/master/core/"
-"math>`__"
+"Відповідний вихідний код: `/core/* <https://github.com/godotengine/godot/"
+"tree/master/core>`__"
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:51
 msgid ""
@@ -197856,15 +197977,17 @@ msgid ""
 "lifecycle, including startup, shutdown, and the main loop. "
 "See :ref:`class_MainLoop` for more details."
 msgstr ""
+"Компонент Main відповідає за ініціалізацію та керування життєвим циклом "
+"двигуна, включаючи запуск, зупинку та головний цикл. Див. "
+":ref:`class_MainLoop` для отримання додаткової інформації."
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:53
-#, fuzzy
 msgid ""
 "Corresponding source code: `/main/* <https://github.com/godotengine/godot/"
 "tree/master/main>`__"
 msgstr ""
-"`основний/математика <https://github.com/godotengine/godot/tree/master/core/"
-"math>`__"
+"Відповідний вихідний код: `/main/* <https://github.com/godotengine/godot/"
+"tree/master/main>`__"
 
 #: ../../docs/engine_details/architecture/common_engine_methods_and_macros.rst:4
 msgid "Common engine methods and macros"
@@ -201409,14 +201532,12 @@ msgstr ""
 "щоб зменшити вплив на продуктивність."
 
 #: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:651
-#, fuzzy
 msgid ""
 "SSAO, SSIL, and SSR are performed at half resolution by default to improve "
 "performance."
 msgstr ""
-"SSAO та SSIL виконуються з половинною роздільною здатністю за замовчуванням "
-"для покращення продуктивності. SSR завжди виконується з половинною "
-"роздільною здатністю для покращення продуктивності."
+"SSAO, SSIL та SSR за замовчуванням виконуються з половинною роздільною "
+"здатністю для покращення продуктивності."
 
 #: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:653
 msgid "**Screen-space effects C++ code:**"
@@ -203234,18 +203355,16 @@ msgid "godot/modules/tts/SCsub"
 msgstr "godot/modules/tts/SCsub"
 
 #: ../../docs/engine_details/architecture/binding_to_external_libraries.rst:116
-#, fuzzy
 msgid ""
 "You'll need to install the external library on your machine to get the .a "
 "library files. See the library's official documentation for specific "
 "instructions on how to do this for your operating system. We've included the "
 "installation commands for Linux below, for reference."
 msgstr ""
-"Щоб отримати файли бібліотеки .a, вам потрібно буде встановити зовнішню "
-"бібліотеку на ваш комп’ютер. Перегляньте офіційну документацію бібліотеки, "
-"щоб отримати конкретні інструкції щодо того, як це зробити для вашої "
-"операційної системи. Ми включили команди встановлення для Linux нижче для "
-"довідки."
+"Вам потрібно буде встановити зовнішню бібліотеку на свій комп’ютер, щоб "
+"отримати файли бібліотеки .a. Дивіться офіційну документацію бібліотеки, щоб "
+"отримати конкретні інструкції щодо того, як це зробити для вашої операційної "
+"системи. Нижче ми навели команди встановлення для Linux для довідки."
 
 #: ../../docs/engine_details/architecture/binding_to_external_libraries.rst:127
 msgid ""
@@ -203980,7 +204099,6 @@ msgid "Some reasons to create custom platform ports might be:"
 msgstr "Деякі причини для створення спеціальних портів платформи можуть бути:"
 
 #: ../../docs/engine_details/architecture/custom_platform_ports.rst:17
-#, fuzzy
 msgid ""
 "You want to port your game to consoles (see also the `Godot website on "
 "console support <https://godotengine.org/consoles/>`_), but wish to write "
@@ -203988,10 +204106,12 @@ msgid ""
 "requires signing NDAs with console manufacturers, but it allows you to have "
 "full control over the console porting process."
 msgstr ""
-"Ви хочете :ref:`port your game to consoles <doc_consoles>`, але хочете "
-"написати рівень платформи самостійно. Це тривалий і трудомісткий процес, "
-"оскільки він вимагає підписання NDA з виробниками консолей, але він дозволяє "
-"повністю контролювати процес портування консолі."
+"Ви хочете портувати свою гру на консолі (див. також `вебсайт Godot про "
+"підтримку консолей <https://godotengine.org/consoles/>`_), але хочете "
+"самостійно написати платформний рівень. Це довгий і складний процес, "
+"оскільки він вимагає підписання угод про нерозголошення з виробниками "
+"консолей, але дозволяє вам повністю контролювати процес портування на "
+"консоль."
 
 #: ../../docs/engine_details/architecture/custom_platform_ports.rst:22
 msgid ""
@@ -209591,6 +209711,10 @@ msgid ""
 "available by default. To increase the memory limit on OpenBSD within the "
 "maximum for the current user, run ``ulimit -d {new amount in kB}``."
 msgstr ""
+"Компіляція на деяких платформах, таких як OpenBSD, може вимагати більше "
+"пам'яті, ніж доступно за замовчуванням. Щоб збільшити ліміт пам'яті на "
+"OpenBSD у межах максимуму для поточного користувача, виконайте команду "
+"``ulimit -d {new amount in kB}``."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:298
 msgid ""
@@ -210004,12 +210128,11 @@ msgstr ""
 "Clang."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:578
-#, fuzzy
 msgid ""
 "Once mold is installed, use the following SCons command when compiling Godot:"
 msgstr ""
-"Відкрийте новий термінал (або запустіть ``source \"$HOME/.bash_profile\"``), "
-"а потім використовуйте наступну команду SCons під час компіляції Godot:"
+"Після встановлення mold, використовуйте таку команду SCons під час "
+"компіляції Godot:"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:585
 msgid "Using system libraries for faster development"
@@ -212603,18 +212726,17 @@ msgstr ""
 "багато з них:"
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:275
-#, fuzzy
 msgid ""
 "If this proves not to work for your use case, you should review the list of "
 "modules and see which ones you actually still need for your game (e.g. you "
 "might want to keep networking-related modules, regex support, ``mp3``/"
 "``ogg``/``vorbis`` to play music, or ``theora`` to play videos)."
 msgstr ""
-"Якщо виявиться, що це не працює для вашого випадку використання, вам слід "
-"переглянути список модулів і дізнатися, які з них вам ще потрібні для вашої "
-"гри (наприклад, ви можете зберегти модулі, пов’язані з мережею, підтримку "
-"регулярних виразів, ``minimp3``/ ``ogg``/``vorbis`` для відтворення музики "
-"або ``theora`` для відтворення відео)."
+"Якщо це виявиться непридатним для вашого випадку використання, вам слід "
+"переглянути список модулів і подивитися, які з них вам дійсно все ще "
+"потрібні для вашої гри (наприклад, ви можете зберегти модулі, пов'язані з "
+"мережею, підтримку регулярних виразів, ``mp3``/``ogg``/``vorbis`` для "
+"відтворення музики або ``theora`` для відтворення відео)."
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:280
 msgid ""
@@ -213448,7 +213570,6 @@ msgstr ""
 "першу чергу. Для цього корисними інструментами є профайлери."
 
 #: ../../docs/engine_details/development/profiling/index.rst:11
-#, fuzzy
 msgid ""
 "There is a :ref:`built-in GDScript profiler <doc_the_profiler>` in the "
 "editor, but using a C++ profiler may be useful in cases where the GDScript "
@@ -213521,25 +213642,21 @@ msgid "Sampling profilers"
 msgstr "Профілери вибірки"
 
 #: ../../docs/engine_details/development/profiling/index.rst:39
-#, fuzzy
 msgid "We recommend the following sampling profilers:"
-msgstr "У режимі відновлення вимкнено наступне:"
+msgstr "Ми рекомендуємо такі профайлери вибірки:"
 
 #: ../../docs/engine_details/development/profiling/index.rst:41
-#, fuzzy
 msgid ":ref:`VerySleepy <doc_profiler_very_sleepy>` (Windows only)"
-msgstr ""
-"`VerySleepy <http://www.codersnotes.com/sleepy/>`__ (тільки для Windows)"
+msgstr ":ref:`VerySleepy <doc_profiler_very_sleepy>` (Тільки для Windows)"
 
 #: ../../docs/engine_details/development/profiling/index.rst:42
-#, fuzzy
 msgid ":ref:`Hotspot <doc_profiler_hotspot>` (Linux only)"
-msgstr "`HotSpot <https://github.com/KDAB/hotspot>`__ (тільки для Linux)"
+msgstr ":ref:`Hotspot <doc_profiler_hotspot>` (Тільки для Linux)"
 
 #: ../../docs/engine_details/development/profiling/index.rst:43
 #: ../../docs/engine_details/development/profiling/index.rst:90
 msgid ":ref:`Instruments <doc_profiler_instruments>` (Apple only)"
-msgstr ""
+msgstr ":ref:`Instruments <doc_profiler_instruments>` (Тільки Apple)"
 
 #: ../../docs/engine_details/development/profiling/index.rst:45
 msgid ""
@@ -213625,22 +213742,20 @@ msgstr ""
 "рядка, які підтримує Godot."
 
 #: ../../docs/engine_details/development/profiling/index.rst:84
-#, fuzzy
 msgid "Tracing profilers"
 msgstr "Трасування профайлерів"
 
 #: ../../docs/engine_details/development/profiling/index.rst:86
 msgid "Godot currently supports three tracing profilers:"
-msgstr ""
+msgstr "Godot наразі підтримує три профайлери трасування:"
 
 #: ../../docs/engine_details/development/profiling/index.rst:88
-#, fuzzy
 msgid ":ref:`Tracy <doc_profiler_tracy>`"
-msgstr ":ref:`Array <class_Array>`"
+msgstr ":ref:`Tracy <doc_profiler_tracy>`"
 
 #: ../../docs/engine_details/development/profiling/index.rst:89
 msgid ":ref:`Perfetto <doc_profiler_perfetto>`"
-msgstr ""
+msgstr ":ref:`Perfetto <doc_profiler_perfetto>`"
 
 #: ../../docs/engine_details/development/profiling/index.rst:92
 msgid ""
@@ -213657,28 +213772,28 @@ msgstr ""
 "але з деякими додатковими аргументами для ``scons``."
 
 #: ../../docs/engine_details/development/profiling/index.rst:99
-#, fuzzy
 msgid "All recommended profilers"
-msgstr "Рекомендовані профайлери"
+msgstr "Усі рекомендовані профайлери"
 
 #: ../../docs/engine_details/development/profiling/hotspot.rst:4
 msgid "Hotspot"
-msgstr ""
+msgstr "Hotspot"
 
 #: ../../docs/engine_details/development/profiling/hotspot.rst:6
 #: ../../docs/engine_details/development/profiling/very_sleepy.rst:6
-#, fuzzy
 msgid ""
 "Please see the :ref:`sampling profiler instructions "
 "<doc_sampling_profilers>` for more information."
 msgstr ""
-"Перегляньте :ref:`doc_shading_reference` для отримання додаткової інформації."
+"Будь ласка, дивіться інструкції щодо :ref:`sampling profiler instructions "
+"<doc_sampling_profilers>` для отримання додаткової інформації."
 
 #: ../../docs/engine_details/development/profiling/hotspot.rst:8
-#, fuzzy
 msgid ""
 "Open `Hotspot <https://github.com/KDAB/hotspot>`__. Click **Record Data**:"
-msgstr "`HotSpot <https://github.com/KDAB/hotspot>`__ (тільки для Linux)"
+msgstr ""
+"Відкрийте `Hotspot <https://github.com/KDAB/hotspot>`__. Натисніть "
+"**Записати дані**:"
 
 #: ../../docs/engine_details/development/profiling/hotspot.rst:12
 msgid ""
@@ -213728,16 +213843,15 @@ msgstr ""
 "редакторі/проекті."
 
 #: ../../docs/engine_details/development/profiling/hotspot.rst:25
-#, fuzzy
 msgid ""
 "Quit the editor/project normally or use the **Stop Profiling** button in "
 "Hotspot to stop profiling early. Stopping profiling early can result in "
 "cleaner profiles if you're not interested in the engine's shutdown procedure."
 msgstr ""
 "Закрийте редактор/проект звичайним способом або скористайтеся кнопкою "
-"**Зупинити профілювання** у HotSpot, щоб зупинити профілювання раніше. Раннє "
+"**Зупинити профілювання** в Hotspot, щоб зупинити профілювання раніше. Раннє "
 "зупинення профілювання може призвести до чистіших профілів, якщо вас не "
-"цікавить процедура завершення роботи двигуна."
+"цікавить процедура завершення роботи рушія."
 
 #: ../../docs/engine_details/development/profiling/hotspot.rst:28
 msgid ""
@@ -213774,17 +213888,16 @@ msgstr ""
 "момент часу."
 
 #: ../../docs/engine_details/development/profiling/hotspot.rst:45
-#, fuzzy
 msgid ""
 "If you don't want the startup procedure to be included in the profile, you "
 "can also attach Hotspot to a running process by clicking **Record Data** "
 "then setting the **Launch Application** dropdown option to **Attach To "
 "Process(es)**."
 msgstr ""
-"Якщо ви не бажаєте, щоб процедура запуску була включена в профіль, ви також "
-"можете приєднати HotSpot до запущеного процесу, клацнувши **Записати дані**, "
-"а потім установивши для параметра спадного меню **Запустити програму** "
-"значення **Приєднати до процесу (es)**."
+"Якщо ви не хочете, щоб процедура запуску була включена до профілю, ви також "
+"можете приєднати Hotspot до запущеного процесу, натиснувши **Записати "
+"дані**, а потім встановивши у спадному списку **Запустити програму** "
+"значення **Приєднати до процесу(ів)**."
 
 #: ../../docs/engine_details/development/profiling/hotspot.rst:50
 msgid ""
@@ -213795,9 +213908,8 @@ msgstr ""
 "який використовує VerySleepy."
 
 #: ../../docs/engine_details/development/profiling/instruments.rst:4
-#, fuzzy
 msgid "Instruments"
-msgstr "Інструменти Xcode"
+msgstr "Інструменти"
 
 #: ../../docs/engine_details/development/profiling/instruments.rst:6
 msgid ""
@@ -213805,15 +213917,18 @@ msgid ""
 "<doc_sampling_profilers>` and the :ref:`tracing profiler instructions "
 "<doc_tracing_profilers>` for more information."
 msgstr ""
+"Будь ласка, дивіться інструкції щодо :ref:`sampling profiler instructions "
+"<doc_sampling_profilers>` та інструкції щодо :ref:`tracing profiler "
+"instructions <doc_tracing_profilers>` для отримання додаткової інформації."
 
 #: ../../docs/engine_details/development/profiling/instruments.rst:10
-#, fuzzy
 msgid ""
 "Open `Xcode <https://developer.apple.com/xcode/>`__. Select **Open Developer "
 "Tool** - **Instruments** from the **Xcode** app menu:"
 msgstr ""
-"Відкрийте Xcode. Виберіть **Open Developer Tool** - **Instruments** у меню "
-"програми **Xcode**:"
+"Відкрийте `Xcode <https://developer.apple.com/xcode/>`__. Виберіть "
+"**Відкрити інструмент розробника** - **Інструменти** з меню програми "
+"**Xcode**:"
 
 #: ../../docs/engine_details/development/profiling/instruments.rst:12
 msgid "Double-click on **Time Profiler** in the **Instruments** window:"
@@ -213881,27 +213996,26 @@ msgstr ""
 
 #: ../../docs/engine_details/development/profiling/perfetto.rst:4
 msgid "Perfetto"
-msgstr ""
+msgstr "Perfetto"
 
 #: ../../docs/engine_details/development/profiling/perfetto.rst:6
 #: ../../docs/engine_details/development/profiling/tracy.rst:6
-#, fuzzy
 msgid ""
 "Please see the :ref:`tracing profiler instructions <doc_tracing_profilers>` "
 "for more information."
 msgstr ""
-"Для отримання додаткової інформації перегляньте навчальні "
-"посібники :ref:`doc_performance`."
+"Будь ласка, дивіться :ref:`tracing profiler instructions "
+"<doc_tracing_profilers>` для отримання додаткової інформації."
 
 #: ../../docs/engine_details/development/profiling/perfetto.rst:8
-#, fuzzy
 msgid ""
 "`Perfetto <https://perfetto.dev>`__ is the default tracing system for "
 "Android. In fact, its system tracing service has been built into the "
 "platform since Android 9."
 msgstr ""
-"Perfetto – це система трасування за замовчуванням для Android. Фактично, її "
-"служба трасування системи вбудована в платформу, починаючи з Android 9."
+"`Perfetto <https://perfetto.dev>`__ є системою трасування за замовчуванням "
+"для Android. Фактично, служба трасування системи вбудована в платформу, "
+"починаючи з Android 9."
 
 #: ../../docs/engine_details/development/profiling/perfetto.rst:12
 msgid "Build Godot with Perfetto support"
@@ -214053,10 +214167,9 @@ msgstr ""
 
 #: ../../docs/engine_details/development/profiling/tracy.rst:4
 msgid "Tracy"
-msgstr ""
+msgstr "Tracy"
 
 #: ../../docs/engine_details/development/profiling/tracy.rst:8
-#, fuzzy
 msgid ""
 "`Tracy <https://github.com/wolfpld/tracy>`__ is an Open Source profiler that "
 "runs on a wide variety of platforms, including Windows, Linux, and macOS. "
@@ -214064,11 +214177,11 @@ msgid ""
 "data like a :ref:`sampling profiler <doc_sampling_profilers>`, giving some "
 "of the benefits of both approaches."
 msgstr ""
-"Tracy — це профайлер з відкритим кодом, який працює на широкому спектрі "
-"платформ, включаючи Windows, Linux та macOS. Хоча це, перш за все, профайлер "
-"трасування, він також може періодично вибірково проводити вибірку даних, "
-"як :ref:`sampling profiler <doc_sampling_profilers>`, що надає деякі "
-"переваги обох підходів."
+"`Tracy <https://github.com/wolfpld/tracy>`__ — це профайлер з відкритим "
+"кодом, який працює на широкому спектрі платформ, включаючи Windows, Linux та "
+"macOS. Хоча це, перш за все, профайлер трасування, він також може періодично "
+"вибірково проводити вибірку даних, як :ref:`sampling profiler "
+"<doc_sampling_profilers>`, що надає деякі переваги обох підходів."
 
 #: ../../docs/engine_details/development/profiling/tracy.rst:15
 msgid "Build Godot with Tracy support"
@@ -214270,13 +214383,12 @@ msgstr ""
 "редагованого або запущеного проекту."
 
 #: ../../docs/engine_details/development/profiling/very_sleepy.rst:12
-#, fuzzy
 msgid ""
 "Open `VerySleepy <https://github.com/VerySleepy/verysleepy>`__ and select "
 "the Godot executable in the list of processes on the left:"
 msgstr ""
-"Відкрийте VerySleepy і виберіть виконуваний файл Godot у списку процесів "
-"ліворуч:"
+"Відкрийте `VerySleepy <https://github.com/VerySleepy/verysleepy>`__ та "
+"виберіть виконуваний файл Godot у списку процесів ліворуч:"
 
 #: ../../docs/engine_details/development/profiling/very_sleepy.rst:17
 msgid "Click the **Profile All** button on the right to start profiling."

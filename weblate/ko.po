@@ -126,12 +126,14 @@
 # "A Thousand Ships (she/her)" <over999ships@gmail.com>, 2025.
 # "영하십도Ent." <newminus10degreesent@gmail.com>, 2025, 2026.
 # 멘탕핑 <tjtjdnjswhd@gmail.com>, 2025.
+# yoohyeon <yoohyeon0526@naver.com>, 2026.
+# 고절선 <jc0010@naver.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-01-19 13:24+0100\n"
-"PO-Revision-Date: 2026-01-15 08:07+0000\n"
+"PO-Revision-Date: 2026-01-23 09:50+0000\n"
 "Last-Translator: Myeongjin <aranet100@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
@@ -140,7 +142,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.15.2\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -692,13 +694,12 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:25
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:24
-#, fuzzy
 msgid ""
 "For information about console support, see the `Godot website <https://"
 "godotengine.org/consoles/>`_."
 msgstr ""
-"`Godot 웹 사이트의 라이선스 페이지 <https://godotengine.org/license>`_\\ 도 "
-"참조하세요."
+"콘솔 지원에 대한 정보는 `Godot 웹사이트 <https://godotengine.org/consoles/>"
+"`_\\ 를 참조하세요."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "**Can run both the editor and exported projects:**"
@@ -10651,8 +10652,8 @@ msgid ""
 "to it will have its own copy of the ``speed`` and ``angular_speed`` "
 "properties."
 msgstr ""
-"멤버 변수는 스크립트 상단 부근의 \"extends\" 줄 보다는 뒤에, 함수 보다는 앞"
-"에 위치합니다. 이 스크립트가 첨부된 모든 노드 인스턴스는 ``speed`` 및 "
+"멤버 변수는 스크립트 상단 부근의 \"extends\" 줄 보다는 뒤에, 함수 보다는 "
+"앞에 위치합니다. 이 스크립트가 붙여진 모든 노드 인스턴스는 ``speed`` 및 "
 "``angular_speed`` 속성의 복사본을 갖게 됩니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:199
@@ -11319,7 +11320,7 @@ msgid ""
 msgstr ""
 "여기서는 버튼의 \"pressed\" 시그널을 Sprite2D에 연결하고, 모션을 켜고 끄는 "
 "새 함수를 호출하고 싶습니다. 이를 위해서는 이전 단원에서 배운 대로 Sprite2D "
-"노드에 스크립트를 첨부해야 합니다."
+"노드에 스크립트를 붙여야 합니다."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:117
 #, fuzzy
@@ -11360,9 +11361,9 @@ msgid ""
 "The simple one only allows you to connect to nodes that have a script "
 "attached to them and creates a new callback function on them."
 msgstr ""
-"편집기의 Node 독을 통해 signal을 연결할 때는 두 가지 모드를 사용할 수 있습니"
-"다. 단순 모드에서는 스크립트가 첨부된 노드에만 연결할 수 있으며 노드에 새 콜"
-"백 함수를 생성합니다."
+"편집기의 Node 독을 통해 시그널을 연결할 때는 두 가지 모드를 사용할 수 "
+"있습니다. 단순 모드에서는 스크립트가 붙여진 노드에만 연결할 수 있으며 노드에 "
+"새 콜백 함수를 생성합니다."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:144
 #, fuzzy
@@ -12267,8 +12268,9 @@ msgid ""
 "in node, so we'll add a script. Click the ``Player`` node and click the "
 "\"Attach Script\" button:"
 msgstr ""
-"이제 내장 노드 만으로는 얻을 수 없는 몇 가지 기능을 추가해야 하므로 스크립트"
-"를 만들겁니다. ``Player`` 노드를 클릭하고 \"스크립트 첨부\" 버튼을 누르세요:"
+"이제 내장 노드 만으로는 얻을 수 없는 몇 가지 기능을 추가해야 하므로 "
+"스크립트를 만들겁니다. ``Player`` 노드를 클릭하고 \"스크립트 붙이기\" 버튼을 "
+"누르세요:"
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:15
 msgid ""
@@ -13037,25 +13039,24 @@ msgid ""
 ":ref:`Timer <class_Timer>` (named ``ScoreTimer``) - to increment the score "
 "every second"
 msgstr ""
-":ref:`Timer <class_Timer>` (``ScoreTimer`` 라고 이름지음) - 매 초마다 점수를 "
-"증가시키기 위해 사용"
+":ref:`Timer <class_Timer>` (``ScoreTimer``\\ 라고 이름 지음) - 매 초마다 "
+"점수를 증가시키기 위해 사용"
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:23
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``StartTimer``) - to give a delay before "
 "starting"
 msgstr ""
-":ref:`Timer <class_Timer>` (``StratTimer`` 라고 이름지음) - 시작하기 전에 지"
-"연시간을 주기 위해 사용"
+":ref:`Timer <class_Timer>` (``StartTimer``\\ 라고 이름 지음) - 시작하기 전에 "
+"지연을 주기 위해 사용"
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:25
-#, fuzzy
 msgid ""
 ":ref:`Marker2D <class_Marker2D>` (named ``StartPosition``) - to indicate the "
 "player's start position"
 msgstr ""
-":ref:`Position2D <class_Position2D>` (``StartPosition`` 이라고 이름지음) - 플"
-"레이어의 시작 지점을 표시하기 위해 사용"
+":ref:`Marker2D <class_Marker2D>` (``StartPosition``\\ 이라고 이름 지음) - "
+"플레이어의 시작 위치를 나타내기 위해 사용"
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:28
 #, fuzzy
@@ -14740,10 +14741,10 @@ msgid ""
 "the *Create* button. We set it to *Empty* because we want to write our own "
 "code for player movement."
 msgstr ""
-"``Player`` 노드를 마우스 오른쪽 버튼으로 클릭하고 *스크립트 첨부*\\ 를 선택하"
-"여 새 스크립트를 추가합니다. 팝업에서 *템플릿*\\ 을 *비었음*\\ 으로 설정한 "
-"후 *만들기* 버튼을 누릅니다. 우리가 *비었음*\\ 으로 설정하는 이유는 플레이어 "
-"이동을 위한 코드를 직접 작성하고자 하기 때문입니다."
+"``Player`` 노드를 마우스 오른쪽 버튼으로 클릭하고 *스크립트 붙이기*\\ 를 "
+"선택하여 새 스크립트를 추가합니다. 팝업에서 *템플릿*\\ 을 *비었음*\\ 으로 "
+"설정한 후 *만들기* 버튼을 누릅니다. 우리가 *비었음*\\ 으로 설정하는 이유는 "
+"플레이어 이동을 위한 코드를 직접 작성하고자 하기 때문입니다."
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:27
 msgid ""
@@ -24178,7 +24179,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:131
 msgid "Pan View"
-msgstr "팬 보기"
+msgstr "패닝 보기"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:131
 msgid ":kbd:`Space`"
@@ -121954,8 +121955,8 @@ msgid ""
 "Attached C# scripts should refer to a class that has a class name that "
 "matches the file name."
 msgstr ""
-"첨부된 C# 스크립트가 파일 이름과 일치하는 클래스 이름을 가진 클래스를 참조해"
-"야 합니다."
+"붙여진 C# 스크립트가 파일 이름과 일치하는 클래스 이름을 가진 클래스를 "
+"참조해야 합니다."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:300
 #, fuzzy
@@ -128214,9 +128215,9 @@ msgid ""
 "editor. Exporting is done by using the ``[Export]`` attribute."
 msgstr ""
 "Godot에서는 클래스 멤버는 내보낼 수 있습니다. 즉, 해당 값은 (:ref:`scene "
-"<class_PackedScene>`\\ 과 같이) 첨부된 리소스와 함께 저장됩니다. 또한 속성 편"
-"집기에서 편집할 수 있습니다. 내보내기는 ``[Export]`` 특성을 사용하여 수행됩니"
-"다."
+"<class_PackedScene>`\\ 과 같이) 붙여진 리소스와 함께 저장됩니다. 또한 속성 "
+"편집기에서 편집할 수 있습니다. 내보내기는 ``[Export]`` 특성을 사용하여 "
+"수행됩니다."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_exports.rst:21
 msgid ""
@@ -158203,18 +158204,16 @@ msgid "Cell options"
 msgstr "셀 옵션"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:985
-#, fuzzy
 msgid "**shrink**"
-msgstr "셰이더"
+msgstr "**shrink**"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:993
 msgid "If ``true``, cell can shrink to its contents."
-msgstr ""
+msgstr "``true``\\ 이면 셀은 내용물에 맞춰 수축될 수 있습니다."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:995
-#, fuzzy
 msgid "**expand**"
-msgstr "**설명**"
+msgstr "**expand**"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1003
 msgid ""
@@ -165105,7 +165104,7 @@ msgstr ""
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:4
 msgid "Godot's architecture overview"
-msgstr ""
+msgstr "Godot의 아키텍처 개요"
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:6
 msgid ""
@@ -165131,9 +165130,8 @@ msgid ""
 msgstr "https://github.com/godotengine/godot-demo-projects"
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:16
-#, fuzzy
 msgid "Scene Layer"
-msgstr "씬 트리"
+msgstr "씬 레이어"
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:18
 msgid ""
@@ -165151,9 +165149,8 @@ msgid ""
 msgstr "https://github.com/godotengine/godot-demo-projects"
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:24
-#, fuzzy
 msgid "Server Layer"
-msgstr "**Server**"
+msgstr "서버 레이어"
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:26
 msgid ""
@@ -165177,7 +165174,7 @@ msgstr "https://github.com/godotengine/godot-demo-projects"
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:33
 msgid "Drivers / Platform Interface"
-msgstr ""
+msgstr "드라이버 / 플랫폼 인터페이스"
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:35
 msgid ""
@@ -177560,13 +177557,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/engine_details/development/profiling/index.rst:99
-#, fuzzy
 msgid "All recommended profilers"
-msgstr "추천 프로파일러"
+msgstr "모든 추천 프로파일러"
 
 #: ../../docs/engine_details/development/profiling/hotspot.rst:4
 msgid "Hotspot"
-msgstr ""
+msgstr "핫스팟"
 
 #: ../../docs/engine_details/development/profiling/hotspot.rst:6
 #: ../../docs/engine_details/development/profiling/very_sleepy.rst:6
@@ -179996,6 +179992,8 @@ msgid ""
 "Once you are logged in, you will be able to head over to the \"Submit "
 "Assets\" page of the AssetLib, which will look like this:"
 msgstr ""
+"일단 로그인하고 나면, AssetLib의 \"Submit Assets(에셋 제출하기)\" 페이지로 "
+"향할 수 있습니다. 해당 페이지는 다음과 같이 생겼습니다. :"
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:130
 msgid ""
@@ -180003,6 +180001,9 @@ msgid ""
 "field is described in terms of what you should put in. We will nonetheless "
 "go over what is required in the submission form here as well."
 msgstr ""
+"양이 다소 많을 수도 있지만 (스크롤을 내려보면 더 많습니다), 전부 꼭 입력해야 "
+"하는 항목에 대한 설명들입니다. 설명이 잘 되어 있지만, 제출 양식에 필요한 "
+"항목들을 여기에서도 짚고 넘어가겠습니다."
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:134
 msgid "**Asset Name**:"
@@ -180013,6 +180014,8 @@ msgid ""
 "The name of your asset. Should be a unique, descriptive title of what your "
 "asset is."
 msgstr ""
+"당신의 에셋의 이름입니다. 유일하면서도, 당신의 에셋이 무엇인지 잘 설명할 수 "
+"있는 이름이어야 합니다."
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:137
 msgid "**Category**:"
@@ -180026,6 +180029,11 @@ msgid ""
 "viewing the AssetLib from the Project Manager, while assets of the Addon "
 "type will only be visible from inside a project."
 msgstr ""
+"당신의 에셋이 속할 카테고리입니다. 당신의 에셋은 검색 결과에 해당 카테고리로 "
+"보여집니다. 카테고리는 **Addons**와 **Projects**로 나눠집니다. 에디터에서, "
+"프로젝트 타입(템플릿, 데모, 프로젝트)의 에셋은 프로젝트 매니저에서 "
+"AssetLib을 볼 때만 나타납니다. 반면에 애드온 타입의 에셋은 프로젝트 "
+"안쪽에서만 볼 수 있습니다."
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:143
 msgid "**Godot version**:"

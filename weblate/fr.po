@@ -290,8 +290,8 @@ msgstr ""
 "Project-Id-Version: French (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-01-19 13:24+0100\n"
-"PO-Revision-Date: 2026-01-18 07:30+0000\n"
-"Last-Translator: Posemartonis <weblate.drainage895@passmail.net>\n"
+"PO-Revision-Date: 2026-01-21 18:58+0000\n"
+"Last-Translator: aioshiro <aioshiro57@proton.me>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fr/>\n"
 "Language: fr\n"
@@ -299,7 +299,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.2\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -29844,17 +29844,14 @@ msgid "Browser support"
 msgstr "Support des navigateurs"
 
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:20
-#, fuzzy
 msgid ""
 "The Web editor requires support for WebAssembly's SharedArrayBuffer. This is "
 "in turn required to support threading in the browser."
 msgstr ""
-"L'éditeur en ligne a besoin de supporter le SharedArrayBuffer de WebAssembly "
-"(littéralement : la liste de mémoire partagé du langage assembleur pour le "
-"web). Ceci est en effet nécessaire pour pouvoir supporter de multiple fil "
-"d’exécution (threading) sur le navigateur. Les navigateurs de bureau "
-"suivants supportent le l'utilisation de multiple fil d’exécution de "
-"WebAssembly et peuvent donc lancer l'éditeur web :"
+"L'éditeur Web a besoin de supporter le SharedArrayBuffer de WebAssembly "
+"(littéralement : la tableau de mémoire partagée du langage assembleur pour "
+"le web). Ceci est en effet nécessaire pour pouvoir supporter le threading "
+"sur le navigateur."
 
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:23
 msgid ""
@@ -145878,14 +145875,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:52
-#, fuzzy
 msgid ""
 "There is a complete `JSON schema <https://github.com/godotengine/godot/blob/"
 "master/core/extension/gdextension_interface.schema.json>`__ included in "
 "Godot's source code."
 msgstr ""
-"`core/io/resource.h <https://github.com/godotengine/godot/blob/master/core/"
-"io/resource.h>`__"
+"Il y a un `schéma JSON <https://github.com/godotengine/godot/blob/master/"
+"core/extension/gdextension_interface.schema.json>`__ complet inclus dans le "
+"code source de Godot."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_interface_json_file.rst:55
 msgid ""
@@ -176119,9 +176116,8 @@ msgid "``always``"
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:678
-#, fuzzy
 msgid "URL underlining mode."
-msgstr "Mode de rendu"
+msgstr "Mode de soulignage des URLs."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:680
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:756
@@ -176130,9 +176126,8 @@ msgstr "**tooltip**"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:683
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:693
-#, fuzzy
 msgid "String."
-msgstr "Chaîne de caractères"
+msgstr "Chaîne de caractères."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:688
 #, fuzzy
@@ -176208,11 +176203,8 @@ msgid "**alt**"
 msgstr "**align**"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:769
-#, fuzzy
 msgid "see :ref:`doc_bbcode_in_richtextlabel_image_and_table_alignment`"
-msgstr ""
-"Supporte les options de configuration, "
-"voir :ref:`doc_bbcode_in_richtextlabel_image_options`."
+msgstr "voir :ref:`doc_bbcode_in_richtextlabel_image_and_table_alignment`"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:771
 #, fuzzy
@@ -178938,9 +178930,8 @@ msgid "Does NOT work in the Forward+ renderer."
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:249
-#, fuzzy
 msgid "Only works with stereo rendering."
-msgstr "Pourquoi pas un rendu différé ?"
+msgstr "Ne fonctionne qu'avec le rendu stéréo."
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:252
 msgid "Hand Tracking"
@@ -184002,15 +183993,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:38
-#, fuzzy
 msgid ""
 "Corresponding source code: `/drivers/* <https://github.com/godotengine/godot/"
 "tree/master/drivers>`__ and `/platform/* <https://github.com/godotengine/"
 "godot/tree/master/platform>`__"
 msgstr ""
-"les liaisons GDExtension officiels pour le `C <https://github.com/"
-"godotengine/godot-headers>`__ et pour le `C++ <https://github.com/"
-"godotengine/godot-cpp>`__."
+"Code source correspondant : `/drivers/* <https://github.com/godotengine/"
+"godot/tree/master/drivers>`__ et `/platform/* <https://github.com/"
+"godotengine/godot/tree/master/platform>`__"
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:43
 msgid ""

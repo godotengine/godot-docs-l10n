@@ -131,8 +131,8 @@
 # SIYU FU <1002492607@qq.com>, 2019.
 # Skpmrbog Mechiterynz <liunianxiahuabili@gmail.com>, 2021, 2023.
 # sudo-behappy <3216539984@qq.com>, 2021.
-# suplife <2634557184@qq.com>, 2021-2022, 2023, 2025.
-# suplife <2634557184@qq.com>, 2023, 2025.
+# suplife <2634557184@qq.com>, 2021-2022, 2023, 2025, 2026.
+# suplife <2634557184@qq.com>, 2023, 2025, 2026.
 # tangdou1 <1093505442@qq.com>, 2018-2020.
 # tf <1353699675@qq.com>, 2018.
 # Toby <tianer2820@163.com>, 2018-2019.
@@ -460,21 +460,22 @@
 # MapleL <zihanyee@gmail.com>, 2026.
 # NotBadCrawler <458967599@qq.com>, 2026.
 # link <synapse.link@users.noreply.hosted.weblate.org>, 2026.
+# uoeng <uo.eng@outlook.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-01-19 13:24+0100\n"
-"PO-Revision-Date: 2026-01-18 07:30+0000\n"
-"Last-Translator: link <synapse.link@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2026-01-23 02:44+0000\n"
+"Last-Translator: uoeng <uo.eng@outlook.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/godot-engine/godot-docs/zh_Hans/>\n"
-"Language: zh_Hans\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 5.15.2\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -1006,12 +1007,10 @@ msgstr "软硬件版本需求见 :ref:`doc_system_requirements`\\ 。"
 
 #: ../../docs/about/list_of_features.rst:25
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:24
-#, fuzzy
 msgid ""
 "For information about console support, see the `Godot website <https://"
 "godotengine.org/consoles/>`_."
-msgstr ""
-"还可以查阅 `Godot 网站上的许可页面 <https://godotengine.org/license>`_\\ 。"
+msgstr "主机支持的更多信息参考 `Godot 网站 <https://godotengine.org/consoles/>`_\\ 。"
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "**Can run both the editor and exported projects:**"
@@ -4242,12 +4241,12 @@ msgstr ""
 "一些用户还报告在基于 ARM 的 Linux 系统（如树莓派）上成功构建和使用 Godot。"
 
 #: ../../docs/about/faq.rst:65
-#, fuzzy
 msgid ""
 "For information about console support, see the `Godot website <https://"
 "godotengine.org/consoles/>`__."
 msgstr ""
-"还可以查阅 `Godot 网站上的许可页面 <https://godotengine.org/license>`_\\ 。"
+"主机支持的更多信息参考 `Godot 网站 <https://godotengine.org/consoles/>`__\\ "
+"。"
 
 #: ../../docs/about/faq.rst:67
 msgid ""
@@ -5460,11 +5459,10 @@ msgid "Who is working on Godot? How can I contact you?"
 msgstr "谁在为 Godot 工作？如何联系？"
 
 #: ../../docs/about/faq.rst:624
-#, fuzzy
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`__."
-msgstr "见 `Godot 官网 <https://godotengine.org/contact>`_\\ 上的相应页面。"
+msgstr "见 `Godot 官网 <https://godotengine.org/contact>`__\\ 上的相应页面。"
 
 #: ../../docs/about/complying_with_licenses.rst:6
 msgid "Complying with licenses"
@@ -10976,14 +10974,13 @@ msgstr ""
 "本附加到 Sprite2D 节点。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:117
-#, fuzzy
 msgid ""
 "You can connect signals in the :ui:`Signals` dock. Select the Button node "
 "and, on the right side of the editor, click on the tab named :ui:`Signals` "
 "next to the :ui:`Inspector`."
 msgstr ""
-"您可以在 :ui:`Node` 面板中连接信号。选中 Button 节点，然后在编辑器右侧点击紧"
-"邻 :ui:`Inspector` 旁边的 :ui:`Node` 。"
+"您可以在 :ui:`Signals` 面板中连接信号。选中 Button 节点，然后在编辑器右侧点击"
+"紧邻 :ui:`Inspector` 旁边的 :ui:`Signals` 。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:123
 msgid "The dock displays a list of signals available on the selected node."
@@ -11280,13 +11277,12 @@ msgid ""
 msgstr "由于信号表示刚刚发生的事件，我们通常在其名称中使用过去时态的动作动词。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:470
-#, fuzzy
 msgid ""
 "Your signals work the same way as built-in ones: they appear in "
 "the :ui:`Signals` tab and you can connect to them like any other."
 msgstr ""
-"您的自定义信号与内置信号的工作方式相同：它们会显示在 :ui:`Node` 标签页中，并"
-"且可以像其他信号一样进行连接。"
+"您的自定义信号与内置信号的工作方式相同：它们会显示在 :ui:`Signals` 标签页中，"
+"并且可以像其他信号一样进行连接。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:475
 msgid "To emit a signal in your scripts, call ``emit()`` on the signal."
@@ -12192,16 +12188,15 @@ msgstr ""
 "Area2D`` 之后："
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:365
-#, fuzzy
 msgid ""
 "This defines a custom signal called \"hit\" that we will have our player "
 "emit (send out) when it collides with an enemy. We will use ``Area2D`` to "
 "detect the collision. Select the ``Player`` node and click the :ui:`Signals` "
 "tab next to the Inspector tab to see the list of signals the player can emit:"
 msgstr ""
-"这定义了一个叫作“hit”的自定义信号，当玩家与敌人碰撞时，我们会让他发出这个信"
-"号。我们将使用 ``Area2D`` 来检测碰撞。选中 ``Player`` 节点，然后点击“检查器”"
-"选项卡旁边的“节点”选项卡，就可以查看玩家可以发出的信号列表："
+"这定义了一个叫作“hit”的自定义信号，当玩家与敌人碰撞时，我们会让他发出这个信号"
+"。我们将使用 ``Area2D`` 来检测碰撞。选中 ``Player`` 节点，然后点击“检查器”选"
+"项卡旁边的 :ui:`Signals` 选项卡，就可以查看玩家可以发出的信号列表："
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:372
 msgid ""
@@ -13143,15 +13138,13 @@ msgstr ""
 "除它自己的方法，为此可以使用“分组”功能。"
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:282
-#, fuzzy
 msgid ""
 "In the ``Mob`` scene, select the root node and click the :ui:`Groups` tab "
 "next to the :ui:`Signals` tab and the \"+\" button to open the \"Create New "
 "Group\" dialog."
 msgstr ""
-"在 ``Mob`` 场景中，选择根节点并单击 “Inspector”（检查器）旁边的 “Node”（节"
-"点）选项卡（也就是节点信号的地方）。在 “信号 ”旁边点击 “组 ”打开组概览，点击 "
-"“+”按钮打开 “创建新组 ”对话框。"
+"在 ``Mob`` 场景中，选择根节点，然后选择:ui:`Signals` 选项卡旁边的 "
+":ui:`Groups` 选项卡并点击“+”按钮以打开“创建新组”对话框。"
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:287
 msgid "Name the group ``mobs`` and click \"ok\" to add a new scene group."
@@ -13335,13 +13328,12 @@ msgstr ""
 "向其添加一个新的数组元素。"
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:104
-#, fuzzy
 msgid ""
 "Create a new :ref:`InputEventAction <class_InputEventAction>` and select the "
 "``start_game`` action."
 msgstr ""
-"创建一个新的 :ref:`InputEventAction <class_InputEventAction>`\\ 并将其命名为 "
-"``start_game``\\ 。"
+"创建一个新的 :ref:`InputEventAction <class_InputEventAction>`\\ 并选择 "
+"``start_game``\\ 动作。"
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:108
 msgid ""
@@ -39246,18 +39238,13 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:296
 #: ../../docs/tutorials/3d/particles/process_material_properties.rst:459
-#, fuzzy
 msgid ""
 "To do so, right-click on the material in the FileSystem dock and choose "
 "**Convert to ShaderMaterial**. You can also do so by right-clicking on any "
 "property holding a reference to the material in the inspector."
 msgstr ""
-"继承自 :ref:`class_Material` 资源的材质，例"
-"如 :ref:`class_StandardMaterial3D` 和 :ref:`class_ParticleProcessMaterial`，"
-"可以转换为 :ref:`class_ShaderMaterial`，并且它们现有的属性将被转换为附带的文"
-"本着色器。要执行此操作，请在文件系统面板中右键单击材质并选择**转换为 "
-"ShaderMaterial**。你也可以通过在检查器中右键单击任何持有材质引用的属性来完成"
-"此操作。"
+"为此，请在文件系统面板中右键点击材质，然后选择\\ **转换为 ShaderMaterial**\\ "
+"。你也可以在检查器中右键点击任何引用该材质的属性来完成此操作。"
 
 #: ../../docs/tutorials/2d/2d_antialiasing.rst:4
 msgid "2D antialiasing"
@@ -57946,7 +57933,6 @@ msgstr ""
 "式。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:303
-#, fuzzy
 msgid ""
 "**Exposure:** Adjusts the brightness of values before they are provided to "
 "the tonemapper. Higher **Exposure** values result in a brighter image. "
@@ -57954,9 +57940,9 @@ msgid ""
 "``1.8`` for **Filmic** and **ACES** respectively to produce a similar "
 "apparent brightness as Linear."
 msgstr ""
-"**曝光度**：调节输入色调映射器前的亮度值。数值越高画面越亮。**电影级**和"
-"**ACES**模式的输入值会分别乘以``2.0``和``1.8``系数，以保持与线性模式相近的视"
-"觉亮度。"
+"**曝光:** 调整数值在提供给色调映射器之前的亮度。较高的\\ **曝光**\\ 值会导致"
+"图像更亮。提供给色调映射器的数值还会分别乘以 ``2.0`` (针对 \\ **Filmic**\\ ) "
+"和 ``1.8`` (针对 \\ **ACES**\\ )，以产生与 Linear 模式相似的视觉亮度表现。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:309
 #, fuzzy
@@ -110869,7 +110855,6 @@ msgstr ""
 "一。这是 AI 等复杂行为的基础。本教程将介绍在 2D 和 3D 中的实现方法。"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:14
-#, fuzzy
 msgid ""
 "Godot stores all the low-level game information in servers, while the scene "
 "is only a frontend. As such, ray casting is generally a lower-level task. "
@@ -110877,10 +110862,10 @@ msgid ""
 "and :ref:`RayCast2D <class_RayCast2D>` will work, as they return every frame "
 "what the result of a raycast is."
 msgstr ""
-"Godot 将所有底层游戏信息存储在服务器中，场景只是一个前端。投射射线本身通常是"
-"一项比较底层的任务。简单的射线投射可以使用 :ref:`RayCast3D "
-"<class_RayCast3D>` 和 :ref:`RayCast2D <class_RayCast2D>` 等节点实现，它们可以"
-"返回每帧投射射线的结果。"
+"Godot 将所有底层游戏信息存储在服务器中，而场景仅是一个前端。因此，射线投射通"
+"常是一项底层任务。对于简单的射线投射，像 :ref:`RayCast3D <class_RayCast3D>` "
+"和 :ref:`RayCast2D <class_RayCast2D>` 这样的节点就可以胜任，它们会返回每帧的"
+"射线投射结果。"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:21
 msgid ""
@@ -110894,7 +110879,6 @@ msgid "Space"
 msgstr "空间"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:27
-#, fuzzy
 msgid ""
 "In the physics world, Godot stores all the low-level collision and physics "
 "information in a *space*. The current 2d space (for 2D Physics) can be "
@@ -110902,11 +110886,10 @@ msgid ""
 "<class_CanvasItem_method_get_world_2d>`. For 3D, "
 "it's :ref:`Node3D.get_world_3d().space <class_Node3D_method_get_world_3d>`."
 msgstr ""
-"在物理世界中，Godot 将所有低级碰撞和物理信息存储在一个\\ *空间*\\ 中。可以通"
-"过访问 :ref:`CanvasItem.get_world_2d().space "
-"<class_CanvasItem_method_get_world_2d>` 获取当前 2D 空间（用于 2D 物理）。3D "
-"则是使用 :ref:`Node3D.get_world_3d().space "
-"<class_Node3D_method_get_world_3d>`\\ 。"
+"在物理世界中，Godot将所有底层碰撞和物理信息存储在一个\\ *空间*\\ 中。当前2D空"
+"间（用于2D物理）可以通过访问 :ref:`CanvasItem.get_world_2d().space "
+"<class_CanvasItem_method_get_world_2d>` 来获取。对于3D，则是 "
+":ref:`Node3D.get_world_3d().space <class_Node3D_method_get_world_3d>`\\ 。"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:33
 msgid ""
@@ -110937,13 +110920,12 @@ msgstr ""
 "可能会产生一个错误，因为空间会被\\ *锁定*\\ 。"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:47
-#, fuzzy
 msgid ""
 "To perform queries into physics space, the :ref:`PhysicsDirectSpaceState2D "
 "<class_PhysicsDirectSpaceState2D>` and :ref:`PhysicsDirectSpaceState3D "
 "<class_PhysicsDirectSpaceState3D>` must be used."
 msgstr ""
-"要对物理空间执行查询，必须使用 :ref:`PhysicsDirectSpaceState2D "
+"要执行物理空间查询，必须使用 :ref:`PhysicsDirectSpaceState2D "
 "<class_PhysicsDirectSpaceState2D>` 和 :ref:`PhysicsDirectSpaceState3D "
 "<class_PhysicsDirectSpaceState3D>`。"
 
