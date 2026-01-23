@@ -15,413 +15,413 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:4
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:4
 msgid "Custom modules in C++"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:7
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:7
 msgid "Modules"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:9
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:9
 msgid "Godot allows extending the engine in a modular way. New modules can be created and then enabled/disabled. This allows for adding new engine functionality at every level without modifying the core, which can be split for use and reuse in different modules."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:14
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:14
 msgid "Modules are located in the ``modules/`` subdirectory of the build system. By default, dozens of modules are enabled, such as GDScript (which, yes, is not part of the base engine), GridMap support, a regular expressions module, and others. As many new modules as desired can be created and combined. The SCons build system will take care of it transparently."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:22
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:22
 msgid "What for?"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:24
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:24
 msgid "While it's recommended that most of a game be written in scripting (as it is an enormous time saver), it's perfectly possible to use C++ instead. Adding C++ modules can be useful in the following scenarios:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:28
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:28
 msgid "Binding an external library to Godot (like PhysX, FMOD, etc)."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:29
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:29
 msgid "Optimize critical parts of a game."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:30
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:30
 msgid "Adding new functionality to the engine and/or editor."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:31
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:31
 msgid "Porting an existing game to Godot."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:32
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:32
 msgid "Write a whole, new game in C++ because you can't live without C++."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:37
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:37
 msgid "While it is possible to use modules for custom game logic, :ref:`GDExtension <doc_gdextension>` is generally more suited as it doesn't require recompiling the engine after every code change."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:41
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:41
 msgid "C++ modules are mainly needed when GDExtension doesn't suffice and deeper engine integration is required."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:45
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:45
 msgid "Creating a new module"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:47
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:47
 msgid "Before creating a module, make sure to :ref:`download the source code of Godot and compile it <toc-devel-compiling>`."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:50
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:50
 msgid "To create a new module, the first step is creating a directory inside ``modules/``. If you want to maintain the module separately, you can checkout a different VCS into modules and use it."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:54
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:54
 msgid "The example module will be called \"summator\" (``godot/modules/summator``). Inside we will create a summator class:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:57
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:57
 msgid "godot/modules/summator/summator.h"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:80
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:80
 msgid "And then the cpp file."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:82
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:82
 msgid "godot/modules/summator/summator.cpp"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:109
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:109
 msgid "Then, the new class needs to be registered somehow, so two more files need to be created:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:118
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:118
 msgid "These files must be in the top-level folder of your module (next to your ``SCsub`` and ``config.py`` files) for the module to be registered properly."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:121
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:121
 msgid "These files should contain the following:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:123
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:356
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:123
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:356
 msgid "godot/modules/summator/register_types.h"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:132
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:370
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:132
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:370
 msgid "godot/modules/summator/register_types.cpp"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:154
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:154
 msgid "Next, we need to create an ``SCsub`` file so the build system compiles this module:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:157
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:190
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:157
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:190
 msgid "godot/modules/summator/SCsub"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:166
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:166
 msgid "With multiple sources, you can also add each file individually to a Python string list:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:174
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:174
 msgid "This allows for powerful possibilities using Python to construct the file list using loops and logic statements. Look at some modules that ship with Godot by default for examples."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:178
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:178
 msgid "To add include directories for the compiler to look at you can append it to the environment's paths:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:186
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:186
 msgid "If you want to add custom compiler flags when building your module, you need to clone ``env`` first, so it won't add those flags to whole Godot build (which can cause errors). Example ``SCsub`` with custom flags:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:203
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:203
 msgid "And finally, the configuration file for the module, this is a Python script that must be named ``config.py``:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:206
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:206
 msgid "godot/modules/summator/config.py"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:217
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:217
 msgid "The module is asked if it's OK to build for the specific platform (in this case, ``True`` means it will build for every platform)."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:220
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:220
 msgid "And that's it. Hope it was not too complex! Your module should look like this:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:232
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:232
 msgid "You can then zip it and share the module with everyone else. When building for every platform (instructions in the previous sections), your module will be included."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:237
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:237
 msgid "Using the module"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:239
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:239
 msgid "You can now use your newly created module from any script:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:251
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:251
 msgid "The output will be ``60``."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:253
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:253
 msgid "The previous Summator example is great for small, custom modules, but what if you want to use a larger, external library? Refer to :ref:`doc_binding_to_external_libraries` for details about binding to external libraries."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:258
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:258
 msgid "If your module is meant to be accessed from the running project (not just from the editor), you must also recompile every export template you plan to use, then specify the path to the custom template in each export preset. Otherwise, you'll get errors when running the project as the module isn't compiled in the export template. See the :ref:`Compiling <toc-devel-compiling>` pages for more information."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:267
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:267
 msgid "Compiling a module externally"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:269
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:269
 msgid "Compiling a module involves moving the module's sources directly under the engine's ``modules/`` directory. While this is the most straightforward way to compile a module, there are a couple of reasons as to why this might not be a practical thing to do:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:274
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:274
 msgid "Having to manually copy modules sources every time you want to compile the engine with or without the module, or taking additional steps needed to manually disable a module during compilation with a build option similar to ``module_summator_enabled=no``. Creating symbolic links may also be a solution, but you may additionally need to overcome OS restrictions like needing the symbolic link privilege if doing this via script."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:281
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:281
 msgid "Depending on whether you have to work with the engine's source code, the module files added directly to ``modules/`` changes the working tree to the point where using a VCS (like ``git``) proves to be cumbersome as you need to make sure that only the engine-related code is committed by filtering changes."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:287
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:287
 msgid "So if you feel like the independent structure of custom modules is needed, lets take our \"summator\" module and move it to the engine's parent directory:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:295
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:295
 msgid "Compile the engine with our module by providing ``custom_modules`` build option which accepts a comma-separated list of directory paths containing custom C++ modules, similar to the following:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:303
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:303
 msgid "The build system shall detect all modules under the ``../modules`` directory and compile them accordingly, including our \"summator\" module."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:308
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:308
 msgid "Any path passed to ``custom_modules`` will be converted to an absolute path internally as a way to distinguish between custom and built-in modules. It means that things like generating module documentation may rely on a specific path structure on your machine."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:315
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:315
 msgid ":ref:`Introduction to the buildsystem - Custom modules build option <doc_buildsystem_custom_modules>`."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:318
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:318
 msgid "Customizing module types initialization"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:320
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:320
 msgid "Modules can interact with other built-in engine classes during runtime and even affect the way core types are initialized. So far, we've been using ``register_summator_types`` as a way to bring in module classes to be available within the engine."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:325
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:325
 msgid "A crude order of the engine setup can be summarized as a list of the following type registration methods:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:344
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:344
 msgid "Our ``Summator`` class is initialized during the ``register_module_types()`` call. Imagine that we need to satisfy some common module runtime dependency (like singletons), or allow us to override existing engine method callbacks before they can be assigned by the engine itself. In that case, we want to ensure that our module classes are registered *before* any other built-in type."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:350
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:350
 msgid "This is where we can define an optional ``preregister_summator_types()`` method which will be called before anything else during the ``preregister_module_types()`` engine setup stage."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:354
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:354
 msgid "We now need to add this method to ``register_types`` header and source files:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:365
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:365
 msgid "Unlike other register methods, we have to explicitly define ``MODULE_SUMMATOR_HAS_PREREGISTER`` to let the build system know what relevant method calls to include at compile time. The module's name has to be converted to uppercase as well."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:392
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:392
 msgid "Writing custom documentation"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:394
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:394
 msgid "Writing documentation may seem like a boring task, but it is highly recommended to document your newly created module to make it easier for users to benefit from it. Not to mention that the code you've written one year ago may become indistinguishable from the code that was written by someone else, so be kind to your future self!"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:400
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:400
 msgid "There are several steps in order to setup custom docs for the module:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:402
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:402
 msgid "Make a new directory in the root of the module. The directory name can be anything, but we'll be using the ``doc_classes`` name throughout this section."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:405
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:405
 msgid "Now, we need to edit ``config.py``, add the following snippet:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:417
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:417
 msgid "The ``get_doc_path()`` function is used by the build system to determine the location of the docs. In this case, they will be located in the ``modules/summator/doc_classes`` directory. If you don't define this, the doc path for your module will fall back to the main ``doc/classes`` directory."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:423
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:423
 msgid "The ``get_doc_classes()`` method is necessary for the build system to know which registered classes belong to the module. You need to list all of your classes here. The classes that you don't list will end up in the main ``doc/classes`` directory."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:430
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:430
 msgid "You can use Git to check if you have missed some of your classes by checking the untracked files with ``git status``. For example:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:437
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:437
 msgid "Example output:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:451
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:451
 msgid "Now we can generate the documentation:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:453
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:453
 msgid "We can do this via running Godot's doctool i.e. ``godot --doctool <path>``, which will dump the engine API reference to the given ``<path>`` in XML format."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:456
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:456
 msgid "In our case we'll point it to the root of the cloned repository. You can point it to an another folder, and just copy over the files that you need."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:459
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:459
 msgid "Run command:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:465
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:465
 msgid "Now if you go to the ``godot/modules/summator/doc_classes`` folder, you will see that it contains a ``Summator.xml`` file, or any other classes, that you referenced in your ``get_doc_classes`` function."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:469
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:469
 msgid "Edit the file(s) following the `class reference primer <https://contributing.godotengine.org/en/latest/documentation/class_reference/class_reference_primer.html>`__ and recompile the engine."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:471
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:471
 msgid "Once the compilation process is finished, the docs will become accessible within the engine's built-in documentation system."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:474
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:474
 msgid "In order to keep documentation up-to-date, all you'll have to do is simply modify one of the XML files and recompile the engine from now on."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:477
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:477
 msgid "If you change your module's API, you can also re-extract the docs, they will contain the things that you previously added. Of course if you point it to your godot folder, make sure you don't lose work by extracting older docs from an older engine build on top of the newer ones."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:482
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:482
 msgid "Note that if you don't have write access rights to your supplied ``<path>``, you might encounter an error similar to the following:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:493
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:493
 msgid "Writing custom unit tests"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:495
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:495
 msgid "It's possible to write self-contained unit tests as part of a C++ module. If you are not familiar with the unit testing process in Godot yet, please refer to :ref:`doc_unit_testing`."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:499
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:499
 msgid "The procedure is the following:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:501
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:501
 msgid "Create a new directory named ``tests/`` under your module's root:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:509
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:509
 msgid "Create a new test suite: ``test_summator.h``. The header must be prefixed with ``test_`` so that the build system can collect it and include it as part of the ``tests/test_main.cpp`` where the tests are run."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:513
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:513
 msgid "Write some test cases. Here's an example:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:515
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:515
 msgid "godot/modules/summator/tests/test_summator.h"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:545
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:545
 msgid "Compile the engine with ``scons tests=yes``, and run the tests with the following command:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:552
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:552
 msgid "You should see the passing assertions now."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:557
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:557
 msgid "Adding custom editor icons"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:559
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:559
 msgid "Similarly to how you can write self-contained documentation within a module, you can also create your own custom icons for classes to appear in the editor."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:562
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:562
 msgid "For the actual process of creating editor icons to be integrated within the engine, please refer to :ref:`doc_editor_icons` first."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:565
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:565
 msgid "Once you've created your icon(s), proceed with the following steps:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:567
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:567
 msgid "Make a new directory in the root of the module named ``icons``. This is the default path for the engine to look for module's editor icons."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:570
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:570
 msgid "Move your newly created ``svg`` icons (optimized or not) into that folder."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:572
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:572
 msgid "Recompile the engine and run the editor. Now the icon(s) will appear in editor's interface where appropriate."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:575
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:575
 msgid "If you'd like to store your icons somewhere else within your module, add the following code snippet to ``config.py`` to override the default path:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:584
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:584
 msgid "Summing up"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:586
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:586
 msgid "Remember to:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:588
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:588
 msgid "Use ``GDCLASS`` macro for inheritance, so Godot can wrap it."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:589
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:589
 msgid "Use ``_bind_methods`` to bind your functions to scripting, and to allow them to work as callbacks for signals."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:591
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:591
 msgid "**Avoid multiple inheritance for classes exposed to Godot**, as ``GDCLASS`` doesn't support this. You can still use multiple inheritance in your own classes as long as they're not exposed to Godot's scripting API."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:595
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:595
 msgid "But this is not all, depending what you do, you will be greeted with some (hopefully positive) surprises."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:598
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:598
 msgid "If you inherit from :ref:`class_Node` (or any derived node type, such as Sprite2D), your new class will appear in the editor, in the inheritance tree in the \"Add Node\" dialog."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:601
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:601
 msgid "If you inherit from :ref:`class_Resource`, it will appear in the resource list, and all the exposed properties can be serialized when saved/loaded."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_modules_in_cpp.rst:604
+#: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:604
 msgid "By this same logic, you can extend the Editor and almost any area of the engine."
 msgstr ""

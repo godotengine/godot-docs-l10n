@@ -120,7 +120,7 @@ msgid "The name under ``program`` depends on your build configuration, e.g. ``go
 msgstr ""
 
 #: ../../docs/engine_details/development/configuring_an_ide/visual_studio_code.rst:200
-msgid "Configuring Intellisense"
+msgid "Configuring IntelliSense"
 msgstr ""
 
 #: ../../docs/engine_details/development/configuring_an_ide/visual_studio_code.rst:202
@@ -167,10 +167,30 @@ msgstr ""
 msgid "This argument can be added to your build task in ``tasks.json`` since it will need to be run whenever files are added or moved."
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/visual_studio_code.rst:254
-msgid "If you run into any issues, ask for help in one of `Godot's community channels <https://godotengine.org/community>`__."
+#: ../../docs/engine_details/development/configuring_an_ide/visual_studio_code.rst:255
+msgid "Linting class reference XML files"
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/visual_studio_code.rst:259
+#: ../../docs/engine_details/development/configuring_an_ide/visual_studio_code.rst:257
 msgid "To get linting on class reference XML files, install the `vscode-xml extension <https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml>`__."
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/visual_studio_code.rst:261
+msgid "Displaying documentation on hover"
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/visual_studio_code.rst:263
+msgid "By installing the `Godot Hover Docs extension <https://marketplace.visualstudio.com/items?itemName=RedMser.godot-hover-docs>`__, you can make class reference documentation appear when hovering symbols in C++ source or header files. The information is sourced from local XML files, so it works offline."
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/visual_studio_code.rst:270
+msgid "This is only effective for symbols that are documented in the class reference XML, i.e. those that are exposed to the scripting API. Internal engine symbols will not show documentation on hover, unless they have a comment right above their declaration."
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/visual_studio_code.rst:275
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/visual_studio_code.rst:277
+msgid "If you run into any issues, ask for help in one of `Godot's community channels <https://godotengine.org/community>`__."
 msgstr ""

@@ -15,182 +15,182 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:4
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:4
 msgid "Custom resource format loaders"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:7
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:7
 msgid "Introduction"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:9
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:9
 msgid "ResourceFormatLoader is a factory interface for loading file assets. Resources are primary containers. When load is called on the same file path again, the previous loaded Resource will be referenced. Naturally, loaded resources must be stateless."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:14
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:14
 msgid "This guide assumes the reader knows how to create C++ modules and Godot data types. If not, refer to this guide: :ref:`doc_custom_modules_in_cpp`"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:18
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:39
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:291
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:342
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:18
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:39
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:291
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:342
 msgid "References"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:20
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:20
 msgid ":ref:`ResourceLoader<class_resourceloader>`"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:21
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:344
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:21
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:344
 msgid "`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/master/core/io/resource_loader.cpp>`_"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:24
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:24
 msgid "What for?"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:26
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:26
 msgid "Adding new support for many file formats"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:27
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:27
 msgid "Audio formats"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:28
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:28
 msgid "Video formats"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:29
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:29
 msgid "Machine learning models"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:32
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:32
 msgid "What not?"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:34
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:34
 msgid "Raster images"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:36
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:36
 msgid "ImageFormatLoader should be used to load images."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:41
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:41
 msgid "`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/core/io/image_loader.h>`_"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:45
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:45
 msgid "Creating a ResourceFormatLoader"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:47
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:47
 msgid "Each file format consist of a data container and a ``ResourceFormatLoader``."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:49
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:49
 msgid "ResourceFormatLoaders are classes which return all the necessary metadata for supporting new extensions in Godot. The class must return the format name and the extension string."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:53
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:53
 msgid "In addition, ResourceFormatLoaders must convert file paths into resources with the ``load`` function. To load a resource, ``load`` must read and handle data serialization."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:58
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:58
 msgid "resource_loader_json.h"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:74
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:74
 msgid "resource_loader_json.cpp"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:105
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:105
 msgid "Creating a ResourceFormatSaver"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:107
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:107
 msgid "If you'd like to be able to edit and save a resource, you can implement a ``ResourceFormatSaver``:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:110
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:110
 msgid "resource_saver_json.h"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:125
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:125
 msgid "resource_saver_json.cpp"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:150
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:150
 msgid "Creating custom data types"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:152
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:152
 msgid "Godot may not have a proper substitute within its :ref:`doc_core_types` or managed resources. Godot needs a new registered data type to understand additional binary formats such as machine learning models."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:156
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:156
 msgid "Here is an example of creating a custom datatype:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:158
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:158
 msgid "resource_json.h"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:188
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:188
 msgid "resource_json.cpp"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:250
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:250
 msgid "Considerations"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:252
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:252
 msgid "Some libraries may not define certain common routines such as IO handling. Therefore, Godot call translations are required."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:255
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:255
 msgid "For example, here is the code for translating ``FileAccess`` calls into ``std::istream``."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:293
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:293
 msgid "`istream <https://cplusplus.com/reference/istream/istream/>`_"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:294
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:294
 msgid "`streambuf <https://cplusplus.com/reference/streambuf/streambuf/?kw=streambuf>`_"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:295
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:295
 msgid "`core/io/file_access.h <https://github.com/godotengine/godot/blob/master/core/io/file_access.h>`_"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:298
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:298
 msgid "Registering the new file format"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:300
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:300
 msgid "Godot registers ``ResourcesFormatLoader`` with a ``ResourceLoader`` handler. The handler selects the proper loader automatically when ``load`` is called."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:304
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:304
 msgid "register_types.h"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:310
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:310
 msgid "register_types.cpp"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:347
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:347
 msgid "Loading it on GDScript"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:349
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:349
 msgid "Save a file called ``demo.json`` with the following contents and place it in the project's root folder:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_resource_format_loaders.rst:365
+#: ../../docs/engine_details/engine_api/custom_resource_format_loaders.rst:365
 msgid "Then attach the following script to any node:"
 msgstr ""

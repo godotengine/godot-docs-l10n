@@ -91,159 +91,171 @@ msgstr ""
 msgid "Modifications in the editor are permanent, with no undo/redo possible. For example, in the next section when we remove the script, the node will keep its rotation. Be careful to avoid making unwanted modifications. Consider setting up :ref:`version control <doc_version_control_systems>` to avoid losing work in case you make a mistake."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:136
-msgid "Using the debugger and breakpoints on tool scripts is not currently supported. Breakpoints placed in the script editor or using the ``breakpoint`` keyword are ignored. You can use print statements to display the contents of variables instead."
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:137
+msgid "Debugging"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:142
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:139
+msgid "While the debugger and breakpoints cannot be used directly with tool scripts, it is possible to launch a new instance of the editor and debug from there. To do this, navigate to **Debug > Customize Run Instances...** and specify `--editor` in **Main Run Args**."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:143
+msgid "See :ref:`doc_overview_of_debugging_tools` for more information."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:145
+msgid "Additionally, you can use print statements to display the contents of variables instead."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:149
 msgid "Try ``@tool`` out"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:144
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:151
 msgid "Add a ``Sprite2D`` node to your scene and set the texture to Godot icon. Attach and open a script, and change it to this:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:169
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:176
 msgid "Save the script and return to the editor. You should now see your object rotate. If you run the game, it will also rotate."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:173
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:180
 msgid "You may need to restart the editor. This is a known bug found in all Godot 4 versions: `GH-66381 <https://github.com/godotengine/godot/issues/66381>`_."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:180
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:187
 msgid "If you don't see the changes, reload the scene (close it and open it again)."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:182
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:189
 msgid "Now let's choose which code runs when. Modify your ``_process()`` function to look like this:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:208
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:215
 msgid "Save the script. Now the object will spin clockwise in the editor, but if you run the game, it will spin counter-clockwise."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:212
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:219
 msgid "Editing variables"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:214
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:221
 msgid "Add and export a variable speed to the script. To update the speed and also reset the rotation angle add a setter ``set(new_speed)`` which is executed with the input from the inspector. Modify ``_process()`` to include the rotation speed."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:264
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:271
 msgid "Code from other nodes doesn't run in the editor. Your access to other nodes is limited. You can access the tree and nodes, and their default properties, but you can't access user variables. If you want to do so, other nodes have to run in the editor too."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:270
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:277
 msgid "Getting notified when resources change"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:272
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:279
 msgid "Sometimes you want your tool to use a resource. However, when you change a property of that resource in the editor, the ``set()`` method of your tool will not be called."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:321
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:328
 msgid "To get around this problem you first have to make your resource a tool and make it emit the ``changed`` signal whenever a property is set:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:360
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:367
 msgid "You then want to connect the signal when a new resource is set:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:409
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:416
 msgid "Lastly, remember to disconnect the signal as the old resource being used and changed somewhere else would cause unneeded updates."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:446
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:453
 msgid "Reporting node configuration warnings"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:448
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:455
 msgid "Godot uses a *node configuration warning* system to warn users about incorrectly configured nodes. When a node isn't configured correctly, a yellow warning sign appears next to the node's name in the Scene dock. When you hover or click on the icon, a warning message pops up. You can use this feature in your scripts to help you and your team avoid mistakes when setting up scenes."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:454
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:461
 msgid "When using node configuration warnings, when any value that should affect or remove the warning changes, you need to call :ref:`update_configuration_warnings<class_Node_method_update_configuration_warnings>` . By default, the warning only updates when closing and reopening the scene."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:491
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:498
 msgid "Running one-off scripts using EditorScript"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:493
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:500
 msgid "Sometimes, you need to run code just one time to automate a certain task that is not available in the editor out of the box. Some examples might be:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:496
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:503
 msgid "Use as a playground for GDScript or C# scripting without having to run a project. ``print()`` output is displayed in the editor Output panel."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:498
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:505
 msgid "Scale all light nodes in the currently edited scene, as you noticed your level ends up looking too dark or too bright after placing lights where desired."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:500
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:507
 msgid "Replace nodes that were copy-pasted with scene instances to make them easier to modify later."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:503
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:510
 msgid "This is available in Godot by extending :ref:`class_EditorScript` in a script. This provides a way to run individual scripts in the editor without having to create an editor plugin."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:507
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:514
 msgid "To create an EditorScript, right-click a folder or empty space in the FileSystem dock then choose **New > Script...**. In the script creation dialog, click the tree icon to choose an object to extend from (or enter ``EditorScript`` directly in the field on the left, though note this is case-sensitive):"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:512
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:516
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:519
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:523
 msgid "Creating an editor script in the script editor creation dialog"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:518
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:525
 msgid "This will automatically select a script template that is suited for EditorScripts, with a ``_run()`` method already inserted:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:530
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:537
 msgid "This ``_run()`` method is executed when you use **File > Run** or the keyboard shortcut :kbd:`Ctrl + Shift + X` while the EditorScript is the currently open script in the script editor. This keyboard shortcut is only effective when currently focused on the script editor."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:535
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:542
 msgid "Scripts that extend EditorScript must be ``@tool`` scripts to function."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:539
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:546
 msgid "EditorScripts can only be run from the Godot script editor. If you are using an external editor, open the script inside the Godot script editor to run it."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:544
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:551
 msgid "EditorScripts have no undo/redo functionality, so **make sure to save your scene before running one** if the script is designed to modify any data."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:547
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:554
 msgid "To access nodes in the currently edited scene, use the :ref:`EditorScript.get_scene <class_EditorScript_method_get_scene>` method which returns the root Node of the currently edited scene. Here's an example that recursively gets all nodes in the currently edited scene and doubles the range of all OmniLight3D nodes:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:580
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:587
 msgid "You can change the currently edited scene at the top of the editor even while the Script view is open. This will affect the return value of :ref:`EditorScript.get_scene <class_EditorScript_method_get_scene>`, so make sure you've selected the scene you intend to iterate upon before running the script."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:587
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:594
 msgid "Instancing scenes"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:589
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:596
 msgid "You can instantiate packed scenes normally and add them to the scene currently opened in the editor. By default, nodes or scenes added with :ref:`Node.add_child(node) <class_Node_method_add_child>` are **not** visible in the Scene tree dock and are **not** persisted to disk. If you wish the node or scene to be visible in the scene tree dock and persisted to disk when saving the scene, you need to set the child node's :ref:`owner <class_Node_property_owner>` property to the currently edited scene root."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:597
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:604
 msgid "If you are using ``@tool``:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:622
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:629
 msgid "If you are using :ref:`EditorScript<class_EditorScript>`:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:653
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:660
 msgid "Using ``@tool`` improperly can yield many errors. It is advised to first write the code how you want it, and only then add the ``@tool`` annotation to the top. Also, make sure to separate code that runs in-editor from code that runs in-game. This way, you can find bugs more easily."
 msgstr ""
