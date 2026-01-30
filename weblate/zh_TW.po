@@ -73,23 +73,25 @@
 # Peter <asd921921921@gmail.com>, 2025.
 # Hikari <ben109092ben@gmail.com>, 2025.
 # 陳間時光（MorningFungame） <morningfungame@gmail.com>, 2025.
-# Myeongjin <aranet100@gmail.com>, 2025.
+# Myeongjin <aranet100@gmail.com>, 2025, 2026.
 # 林立 <nxlmoz@gmail.com>, 2025.
+# Wei-Fu Chen <410477jimmy@gmail.com>, 2026.
+# Xiang990293 <990293kwi@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-01-23 13:08+0100\n"
-"PO-Revision-Date: 2025-10-27 08:03+0000\n"
-"Last-Translator: Myeongjin <aranet100@gmail.com>\n"
+"PO-Revision-Date: 2026-01-28 10:46+0000\n"
+"Last-Translator: Xiang990293 <990293kwi@gmail.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
 "projects/godot-engine/godot-docs/zh_Hant/>\n"
-"Language: zh_Hant\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.14.1-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -156,9 +158,8 @@ msgid "Class reference"
 msgstr "類別參照手冊"
 
 #: ../../docs/index.rst:4
-#, fuzzy
 msgid "Godot Docs – *master* branch"
-msgstr "Godot 文件 – *4.5* 分支"
+msgstr "Godot 文件 – *master* 分支"
 
 #: ../../docs/index.rst:8
 msgid ""
@@ -195,7 +196,7 @@ msgid ""
 "engine versions using the \"Read the Docs\" panel at the bottom of the "
 "sidebar."
 msgstr ""
-"目前，本地化翻譯只適用於 **穩定** 分支，您仍然可以使用側邊欄底部的“閱讀文件”"
+"目前，本地化翻譯只適用於「穩定」分支，您仍然可以使用側邊欄底部的「閱讀文件」"
 "面板查看其他引擎版本的英文文件。"
 
 #: ../../docs/index.rst:28
@@ -214,7 +215,7 @@ msgstr ""
 msgid ""
 "To begin reading the relevant documentation, select the tile that matches "
 "your profile:"
-msgstr ""
+msgstr "若要開始閱讀相關文件，請選取符合您使用情境的圖塊："
 
 #: ../../docs/index.rst:111
 #, fuzzy
@@ -4771,6 +4772,8 @@ msgid ""
 "to be used with its editor. We recommend you give it a try, as it will most "
 "likely save you time in the long term."
 msgstr ""
+"若你正考慮使用 Godot 製作遊戲，請記住 Godot 被設計與自帶的編輯器一起使用的。"
+"我們推薦你嘗試使用，長遠看來它很也可能幫助你省時間。"
 
 #: ../../docs/about/faq.rst:488
 msgid ""
@@ -4780,6 +4783,10 @@ msgid ""
 "currently supported on Windows, macOS, and Linux. Support for Android and "
 "iOS is planned for a future release."
 msgstr ""
+"對於更多訂製化應用程式，你可以合理的將 Godot 用作 函式庫。自從 Godot 4.6 版本"
+"起，Godot 以 LibGodot 的形式提供**experimental**支持，可以將 Godot 用作靜態庫"
+"或共享庫。這正於 Windows、macOS 和 Linux 系統支持。在未來計畫支持 Android 和 "
+"iOS。"
 
 #: ../../docs/about/faq.rst:494
 msgid ""
@@ -4787,6 +4794,8 @@ msgid ""
 "libgodot_project GitHub repository <https://github.com/migeran/"
 "libgodot_project>`__."
 msgstr ""
+"你可以在 `migeran/libgodot_project GitHub repository <https://github.com/"
+"migeran/libgodot_project>`__ 找到以 Godot 作為函式庫的應用程式樣本。"
 
 #: ../../docs/about/faq.rst:498
 msgid "What user interface toolkit does Godot use?"
@@ -11612,7 +11621,7 @@ msgstr ""
 msgid ""
 "The \"Listening for Input...\" field should automatically be selected. Press "
 "the \"right\" key on your keyboard, and the menu should look like this now."
-msgstr "會自動選中“監聽輸入...”區域。按下鍵盤上的“右方向”鍵，選單應該像這樣。"
+msgstr "會自動選中“偵聽輸入中...”區域。按下鍵盤上的“右方向”鍵，選單應該像這樣。"
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:118
 msgid ""
@@ -16832,7 +16841,7 @@ msgstr "**一般：**"
 
 #: ../../docs/tutorials/index.rst:30
 msgid "Topics"
-msgstr ""
+msgstr "主題"
 
 #: ../../docs/tutorials/best_practices/introduction_best_practices.rst:6
 msgid ""
@@ -24420,7 +24429,7 @@ msgstr ":kbd:`Shift + Opt + Down Arrow`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:295
 msgid "``common/ui_text_caret_add_below``"
-msgstr ""
+msgstr "``common/ui_text_caret_add_below``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:297
 #, fuzzy
@@ -24439,11 +24448,11 @@ msgstr ":kbd:`Shift + Opt + Up Arrow`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:297
 msgid "``common/ui_text_caret_add_above``"
-msgstr ""
+msgstr "``common/ui_text_caret_add_above``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:299
 msgid "Select Next Occurrence"
-msgstr ""
+msgstr "選擇下一個匹配項目"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:299
 #: ../../docs/tutorials/editor/default_key_mapping.rst:450
@@ -24461,7 +24470,7 @@ msgstr ":kbd:`Cmd + D`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:299
 msgid "``common/ui_text_add_selection_for_next_occurrence``"
-msgstr ""
+msgstr "``common/ui_text_add_selection_for_next_occurrence``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:301
 msgid "Complete Symbol"
@@ -25622,7 +25631,7 @@ msgstr "上一個座標"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:567
 msgid "``grid_map/previous_floor``"
-msgstr ""
+msgstr "``grid_map/previous_floor``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:569
 #, fuzzy
@@ -25631,7 +25640,7 @@ msgstr "下一個座標"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:569
 msgid "``grid_map/next_floor``"
-msgstr ""
+msgstr "``grid_map/next_floor``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:571
 #, fuzzy
@@ -25645,7 +25654,7 @@ msgstr ":kbd:`Shift + S`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:571
 msgid "``grid_map/edit_x_axis``"
-msgstr ""
+msgstr "``grid_map/edit_x_axis``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:573
 #, fuzzy
@@ -25659,7 +25668,7 @@ msgstr ":kbd:`Shift + S`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:573
 msgid "``grid_map/edit_y_axis``"
-msgstr ""
+msgstr "``grid_map/edit_y_axis``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:575
 #, fuzzy
@@ -25672,8 +25681,9 @@ msgid ":kbd:`Shift + C`"
 msgstr ":kbd:`Shift + S`"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:575
+#, fuzzy
 msgid "``grid_map/edit_z_axis``"
-msgstr ""
+msgstr "``grid_map/edit_z_axis``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:577
 #: ../../docs/tutorials/3d/standard_material_3d.rst:744
@@ -25682,8 +25692,9 @@ msgid "Transform"
 msgstr "變換"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:577
+#, fuzzy
 msgid "``grid_map/transform_tool``"
-msgstr ""
+msgstr "``grid_map/transform_tool``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:579
 #: ../../docs/tutorials/2d/using_tilemaps.rst:198
@@ -25702,7 +25713,7 @@ msgstr "橡皮擦"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:581
 msgid "``grid_map/erase_tool``"
-msgstr ""
+msgstr "``grid_map/erase_tool``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:583
 #, fuzzy
@@ -25715,8 +25726,9 @@ msgid "Pick"
 msgstr "選取器"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:585
+#, fuzzy
 msgid "``grid_map/pick_tool``"
-msgstr ""
+msgstr "``grid_map/pick_tool``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:587
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:132
@@ -25725,7 +25737,7 @@ msgstr "填入"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:587
 msgid "``grid_map/fill_tool``"
-msgstr ""
+msgstr "``grid_map/fill_tool``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:589
 #, fuzzy
@@ -25734,11 +25746,11 @@ msgstr "上移"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:589
 msgid "``grid_map/move_tool``"
-msgstr ""
+msgstr "``grid_map/move_tool``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:591
 msgid "``grid_map/duplicate_tool``"
-msgstr ""
+msgstr "``grid_map/duplicate_tool``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:593
 #, fuzzy
@@ -25752,7 +25764,7 @@ msgstr "游標列表"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:595
 msgid "``grid_map/cursor_rotate_x``"
-msgstr ""
+msgstr "``grid_map/cursor_rotate_x``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:597
 #, fuzzy
@@ -25761,7 +25773,7 @@ msgstr "游標列表"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:597
 msgid "``grid_map/cursor_rotate_y``"
-msgstr ""
+msgstr "``grid_map/cursor_rotate_y``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:599
 #, fuzzy
@@ -25770,7 +25782,7 @@ msgstr "游標列表"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:599
 msgid "``grid_map/cursor_rotate_z``"
-msgstr ""
+msgstr "``grid_map/cursor_rotate_z``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:603
 msgid "Project manager"
@@ -26717,6 +26729,8 @@ msgid ""
 "Mobile browsers are supported, but won't provide an ideal experience due to "
 "performance and input limitations."
 msgstr ""
+"支援的瀏覽器完整列表詳見 :ref:`doc_system_requirements` 。行動端瀏覽器支援， "
+"由於性能和輸入限制，可能無法提供理想的使用體驗。"
 
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:27
 #, fuzzy
@@ -26732,6 +26746,8 @@ msgid ""
 "If you run into performance issues on Firefox, try using a Chromium-based "
 "browser as these may perform better in WebGL applications."
 msgstr ""
+"若你在 Firefox 遇到性能問題，試著使用 Chromium 為基底的瀏覽器，因 WebGL 應用"
+"程式在後者的表現較好。"
 
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:38
 #: ../../docs/tutorials/editor/using_engine_compilation_configuration_editor.rst:89
@@ -35068,7 +35084,7 @@ msgstr "方法 ``set_scope`` 被 ``set_method`` 的選用參數所取代"
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:42
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:137
 msgid "|❌ with stub|"
-msgstr ""
+msgstr "|❌ 待兼容|"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:42
 msgid "`GH-104890`_"
@@ -35615,6 +35631,15 @@ msgid ""
 "<class_TileMapLayer_property_physics_quadrant_size>` to ``1``, which "
 "disables physics chunking."
 msgstr ""
+"相較於 4.4 版本，4.5 版本的 :ref:`TileMapLayer.get_coords_for_body_rid() "
+"<class_TileMapLayer_method_get_coords_for_body_rid>` 將回傳不同值，由於 "
+"TileMapLayer 物理分塊預設是啟用的。較新版本的  "
+":ref:`TileMapLayer.physics_quadrant_size "
+"<class_TileMapLayer_property_physics_quadrant_size>` 將使這個函式沒那麼精確。"
+"要在 4.4 或更早之前的版本中獲得精確的呼叫座標需要設定 "
+":ref:`TileMapLayer.physics_quadrant_size "
+"<class_TileMapLayer_property_physics_quadrant_size>` 為 ``1``同時將停用物理分"
+"塊。"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:206
 msgid "3D Model Import"
@@ -35648,6 +35673,11 @@ msgid ""
 "call :ref:`Resource.duplicate_deep(DEEP_DUPLICATE_ALL) "
 "<class_Resource_method_duplicate_deep>` instead to keep the old behavior."
 msgstr ""
+":ref:`Resource.duplicate(true) <class_Resource_method_duplicate>` （執行深度"
+"複製）現在只複製被呼叫時資源文件內部的資源。在 4.4 版本中，它反而會複製所有内"
+"容，包括外部资源。如果你正在深度複製一個包含引用著其他外部資源的資源，這些外"
+"部資源將不再被複製。你必須呼叫 :ref:`Resource.duplicate_deep"
+"(DEEP_DUPLICATE_ALL) <class_Resource_method_duplicate_deep>` 維持舊的行為。"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:231
 msgid ""
@@ -35663,6 +35693,16 @@ msgid ""
 "or :ref:`ProjectSettings.set_as_internal() "
 "<class_ProjectSettings_method_set_as_internal>` instead."
 msgstr ""
+"當字典參數鍵缺少或無效時，現在 :ref:`ProjectSettings.add_property_info() "
+"<class_ProjectSettings_method_add_property_info>` 會發出警告。最重要的是，它"
+"會在傳遞 ``usage`` 鍵時發出警告，因為該鍵未被使用。在 4.5 之前也是如此，但它"
+"被默默忽略了。作為提醒，要正確設定屬性使用訊息，必須使用 "
+":ref:`ProjectSettings.set_as_basic() "
+"<class_ProjectSettings_method_set_as_basic>`， "
+":ref:`ProjectSettings.set_restart_if_changed() "
+"<class_ProjectSettings_method_set_restart_if_changed>` ，或 "
+":ref:`ProjectSettings.set_as_internal() "
+"<class_ProjectSettings_method_set_as_internal>` 。"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:242
 msgid ""
@@ -35700,6 +35740,9 @@ msgid ""
 "toggled with the ``navigation/world/region_use_async_iterations`` project "
 "setting."
 msgstr ""
+"預設情況下，NavigationServer 地圖區域中，將會通過線程異步更新以提升性能。這可"
+"能由於線程同步導致額外的更新延遲。異步區域更新可以透過 ``navigation/world/"
+"region_use_async_iterations`` 項目設置進行切換。"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:266
 msgid ""
@@ -35852,8 +35895,9 @@ msgstr ""
 "方法 ``set_name`` 的 ``name`` 參數型別由 ``String`` 改為 ``StringName``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:57
+#, fuzzy
 msgid "**SpringBoneSimulator3D**"
-msgstr ""
+msgstr "**SpringBoneSimulator3D**"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:58
 #, fuzzy

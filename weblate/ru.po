@@ -319,7 +319,7 @@
 # "Артемий Скрябин (ArtMine97)" <artmine97@gmail.com>, 2023.
 # Mikhail Sychev <m.w.s@bk.ru>, 2023.
 # DLushin <dmiyashyt@gmail.com>, 2023.
-# Ruslan <vovavalenkov15@gmail.com>, 2023, 2024, 2025.
+# Ruslan <vovavalenkov15@gmail.com>, 2023, 2024, 2025, 2026.
 # meTur4ik <tur4ikkk@mail.ru>, 2023.
 # a-d-polevoi <a.d.polevoi@gmail.com>, 2023.
 # Affir Vega <feskow.ilya@ya.ru>, 2023.
@@ -443,8 +443,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-01-23 13:08+0100\n"
-"PO-Revision-Date: 2026-01-11 16:36+0000\n"
-"Last-Translator: Richard Dolphin <ilushativ@gmail.com>\n"
+"PO-Revision-Date: 2026-01-27 17:08+0000\n"
+"Last-Translator: Ruslan <vovavalenkov15@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -453,7 +453,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -586,9 +586,10 @@ msgid ""
 "To begin reading the relevant documentation, select the tile that matches "
 "your profile:"
 msgstr ""
+"Чтобы начать чтение нужной вам документации, выберите плитку, "
+"соответствующую вашей цели:"
 
 #: ../../docs/index.rst:111
-#, fuzzy
 msgid ""
 "You can also use the table of contents in the sidebar to access easily "
 "access any section of the documentation for your topic of interest. You can "
@@ -36246,9 +36247,9 @@ msgid ""
 "migrate to 4.2. This page intends to cover everything you need to pay "
 "attention to when migrating your project."
 msgstr ""
-"Большинство игр и приложений сделанных в 4.1 может быть относительно легко "
-"перенесено на 4.2. Эта страница предназначена для освещения всего что "
-"требует внимания при переносе вашего проекта."
+"Для большинства игр и приложений сделанных на Godot 4.1, переход на 4.2 "
+"будет относительно безопасным. Эта страница нужна, для того, чтобы показать, "
+"на что обратить внимание при переходе вашего проекта."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:13
 msgid ""
@@ -37057,9 +37058,9 @@ msgid ""
 "migrate to 4.3. This page intends to cover everything you need to pay "
 "attention to when migrating your project."
 msgstr ""
-"Для большинства игр и приложений, созданных с 4.2, миграция на 4.3 должна "
-"быть относительно безопасной. На этой странице вы найдете все, на что "
-"следует обратить внимание при миграции вашего проекта."
+"Для большинства игр и приложений сделанных на Godot 4.2, переход на 4.3 "
+"будет относительно безопасным. Эта страница нужна, для того, чтобы показать, "
+"на что обратить внимание при переходе вашего проекта."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.3.rst:13
 msgid ""
@@ -37941,9 +37942,9 @@ msgid ""
 "migrate to 4.4. This page intends to cover everything you need to pay "
 "attention to when migrating your project."
 msgstr ""
-"Для большинства игр и приложений, созданных с 4.3, миграция на 4.4 должна "
-"быть относительно безопасной. На этой странице вы найдете все, на что "
-"следует обратить внимание при миграции вашего проекта."
+"Для большинства игр и приложений сделанных на Godot 4.3, переход на 4.4 "
+"будет относительно безопасным. Эта страница нужна, для того, чтобы показать, "
+"на что обратить внимание при переходе вашего проекта."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.4.rst:13
 msgid ""
@@ -38544,9 +38545,9 @@ msgid ""
 "migrate to 4.5. This page intends to cover everything you need to pay "
 "attention to when migrating your project."
 msgstr ""
-"Для большинства игр и приложений, созданных на версии 4.4, миграция на "
-"версию 4.5 должна быть относительно безопасной. На этой странице вы найдёте "
-"всё, на что следует обратить внимание при миграции проекта."
+"Для большинства игр и приложений сделанных на Godot 4.4, переход на 4.5 "
+"будет относительно безопасным. Эта страница нужна, для того, чтобы показать, "
+"на что обратить внимание при переходе вашего проекта."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:13
 msgid ""
@@ -39357,18 +39358,16 @@ msgid "Upgrading from Godot 4.5 to Godot 4.6"
 msgstr "Обновление с Godot 4.4 на Godot 4.5"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:6
-#, fuzzy
 msgid ""
 "For most games and apps made with 4.5 it should be relatively safe to "
 "migrate to 4.6. This page intends to cover everything you need to pay "
 "attention to when migrating your project."
 msgstr ""
-"Для большинства игр и приложений, созданных на версии 4.4, миграция на "
-"версию 4.5 должна быть относительно безопасной. На этой странице вы найдёте "
-"всё, на что следует обратить внимание при миграции проекта."
+"Для большинства игр и приложений сделанных на Godot 4.5, переход на 4.6 "
+"будет относительно безопасным. Эта страница нужна, для того, чтобы показать, "
+"на что обратить внимание при переходе вашего проекта."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:13
-#, fuzzy
 msgid ""
 "If you are migrating from 4.5 to 4.6, the breaking changes listed here might "
 "affect you. Changes are grouped by areas/systems."
@@ -39995,18 +39994,25 @@ msgid ""
 "to match the default Android Studio project structure (`GH-110829`_). This "
 "affects the directory layout of the Android project:"
 msgstr ""
+"Конфигурация исходных наборов для шаблонов экспорта Android была обновлена, "
+"чтобы соответствовать структуре проекта Android Studio по умолчанию (`GH-"
+"110829`_). Это влияет на расположение каталогов в проекте Android:"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:180
 msgid ""
 "Files previously in ``[Project root]/android/build/src/`` are now in "
 "``[Project root]/android/build/src/main/java/``."
 msgstr ""
+"Файлы, которые ранее были в ``[Project root]/android/build/src/``, теперь "
+"находятся в ``[Project root]/android/build/src/main/java/``."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:181
 msgid ""
 "Android manifest file and assets directory have been moved to ``src/main/`` "
 "subdirectories."
 msgstr ""
+"Файл манифеста Android и каталог ресурсов были перемещены в подкаталоги "
+"``src/main/``."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:183
 msgid ""

@@ -54,7 +54,7 @@
 # ebor <ebor@post.cz>, 2023.
 # Nikola Kraus <nikolakraus4@gmail.com>, 2023.
 # David Houdek <sarejnovec@gmail.com>, 2024.
-# Marek Poustka <noskrat@gmail.com>, 2024.
+# Marek Poustka <noskrat@gmail.com>, 2024, 2026.
 # multiflexi <multi.flexi@seznam.cz>, 2024.
 # Nela Flosová <nela.flosova@gmail.com>, 2024.
 # Tomáš Peltan <pelt@email.cz>, 2024.
@@ -73,8 +73,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-01-23 13:08+0100\n"
-"PO-Revision-Date: 2026-01-05 16:02+0000\n"
-"Last-Translator: Frostcorn <houskam@gasos-ro.cz>\n"
+"PO-Revision-Date: 2026-01-30 06:10+0000\n"
+"Last-Translator: Marek Poustka <noskrat@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/cs/>\n"
 "Language: cs\n"
@@ -82,7 +82,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -210,17 +210,18 @@ msgid ""
 "To begin reading the relevant documentation, select the tile that matches "
 "your profile:"
 msgstr ""
+"Chcete-li začít číst příslušnou dokumentaci, vyberte blok, který odpovídá "
+"vašemu profilu:"
 
 #: ../../docs/index.rst:111
-#, fuzzy
 msgid ""
 "You can also use the table of contents in the sidebar to access easily "
 "access any section of the documentation for your topic of interest. You can "
 "also use the search function in the top-left corner."
 msgstr ""
-"Obsah v postranním panelu vám umožní snadný přístup k dokumentaci témat, "
-"která vás zajímají. Můžete také použít funkci vyhledávání v levém horním "
-"rohu."
+"Můžete také použít obsah v postranním panelu, abyste měli snadný přístup k "
+"libovolné části dokumentace, která vás zajímá. Můžete také použít funkci "
+"vyhledávání v levém horním rohu."
 
 #: ../../docs/index.rst:116
 msgid "Get involved"
@@ -580,7 +581,6 @@ msgid "About this documentation"
 msgstr "O této dokumentaci"
 
 #: ../../docs/about/introduction.rst:97
-#, fuzzy
 msgid ""
 "Members of the Godot Engine community continuously write, correct, edit, and "
 "improve this documentation. We are always looking for more help. You can "
@@ -593,14 +593,15 @@ msgid ""
 "#documentation>`_ on `Godot Contributors Chat <https://chat.godotengine.org/"
 ">`_."
 msgstr ""
-"Členové komunity enginu Godot tuto dokumentaci neustále rozšiřují, opravují "
-"a vylepšují. Neustále hledáme další pomoc. Můžete také přispět vytvářením "
-"issues na GitHubu nebo překladem dokumentace do vašeho jazyka. Máte-li zájem "
-"pomoci, podívejte se na :ref:`Jak můžu pomoci <doc_ways_to_contribute>` "
-"a :ref:`Psaní dokuemntace <doc_contributing_writing_documentation>`, nebo se "
-"obraťte na `Tým dokumentaristů <https://godotengine.org/teams/"
-"#documentation>`_ v `Godot Contributors Chat <https://chat.godotengine.org/"
-">`_."
+"Členové komunity Godot Engine tuto dokumentaci neustále rozšiřují, opravují, "
+"upravují a vylepšují. Neustále hledáme další pomoc. Můžete také přispět "
+"vytvářením Github issues nebo překladem dokumentace do vašeho jazyka. Máte-"
+"li zájem pomoci, podívejte se na `Jak mohu pomoci <https://"
+"contributing.godotengine.org/en/latest/organization/how_to_contribute.html>"
+"`__ a `Psaní dokumentace <https://contributing.godotengine.org/en/latest/"
+"documentation/manual/index.html>`__, nebo se obraťte na `Tým dokumentaristů "
+"<https://godotengine.org/teams/#documentation>`_ v `Chatu přispěvatelů Godot "
+"<https://chat.godotengine.org/>`_."
 
 #: ../../docs/about/introduction.rst:105
 msgid ""
@@ -652,12 +653,12 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:25
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:24
-#, fuzzy
 msgid ""
 "For information about console support, see the `Godot website <https://"
 "godotengine.org/consoles/>`_."
 msgstr ""
-"Viz také `licenční stránka na webu Godot <https://godotengine.org/license>`_."
+"Pro více informací o podpoře konzolí naleznete na stránkách `Godot <https://"
+"godot.engine.org/consoles/>`_."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "**Can run both the editor and exported projects:**"
@@ -707,7 +708,6 @@ msgstr ""
 "experimentální. Pokud cílíte na HTML5, doporučujeme použít Godot 3.x."
 
 #: ../../docs/about/list_of_features.rst:45
-#, fuzzy
 msgid ""
 "Linux supports rv64 (RISC-V), ppc64 & ppc32 (PowerPC), and loongarch64. "
 "However you must compile the editor for that platform (as well as export "
@@ -716,9 +716,9 @@ msgid ""
 "page."
 msgstr ""
 "Linux podporuje rv64 (RISC-V), ppc64 & ppc32 (PowerPC) a loongarch64. Ale "
-"musíš compile the editor pro tuto platformu (as well as export templates) "
-"yourself, no official downloads are currently provided. RISC-V compiling "
-"instructions can be found on the :ref:`doc_compiling_for_linuxbsd` page."
+"musíte zkompilovat editor pro tuto platformu stejně jako exportní šablony)"
+"sami, žádné oficiální stažení není k dispozici. Instrukce pro kompilaci RISC-"
+"V najde na stránce :ref:`doc_compiling_for_linuxbsd`."
 
 #: ../../docs/about/list_of_features.rst:50
 msgid "**Runs exported projects:**"
@@ -12210,15 +12210,14 @@ msgid ""
 "the Inspector and click \"[empty]\" -> \"New SpriteFrames\":"
 msgstr ""
 "Klikněte na uzel ``Player`` a přidejte mu (:kbd:`Ctrl + A` v systému Windows/"
-"Linux nebo :kbd:`Cmd + A` v systému macOS) podřízený "
-"uzel :ref:`AnimatedSprite2D <class_AnimatedSprite2D>` (\"2D animovaný "
-"sprite\"). Ten se postará o vzhled a animace našeho hráče. Všimněte si, že "
-"vedle uzlu je  další varovný symbol. ``AnimatedSprite2D`` vyžaduje "
-"zdroj :ref:`SpriteFrames <class_SpriteFrames>` (\"snímky spritu\"), což je "
-"seznam animací, které může zobrazit. Ujistěte se, že máte "
-"``AnimatedSprite2D`` vybraný a v Inspektoru najděte vlastnost ``Snímky "
-"spritu`` v sekci ``Animace``. Klikněte na \"[prázdné]\" -> \"Nový "
-"SpriteFrames\":"
+"Linux nebo :kbd:`Cmd + A` v systému macOS) podřízený uzel "
+":ref:`AnimatedSprite2D <class_AnimatedSprite2D>` (\"2D animovaný sprite\"). "
+"``AnimatedSprite2D`` se postará o vzhled a animace našeho hráče. Všimněte "
+"si, že vedle uzlu je varovný symbol. ``AnimatedSprite2D`` vyžaduje zdroj "
+":ref:`SpriteFrames <class_SpriteFrames>` (\"snímky spritu\"), což je seznam "
+"animací, které může zobrazit. Ujistěte se, že máte ``AnimatedSprite2D`` "
+"vybraný a v Inspektoru najděte vlastnost ``Sprite Frames`` v sekci "
+"``Animation`` a klikněte na \"[prázdné]\" -> \"Nový SpriteFrames\":"
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:76
 msgid ""

@@ -110,7 +110,7 @@
 # Mark B <berezun.mark@gmail.com>, 2018.
 # Markus Lechner <marcus.lechner@gmail.com>, 2020.
 # Martin Majewski <mail@martinmajewski.net>, 2019.
-# Martin <martinreininger@gmx.net>, 2019, 2021.
+# Martin <martinreininger@gmx.net>, 2019, 2021, 2026.
 # Martin Neumann <trumpeling@gmail.com>, 2019.
 # Martin Ziegler <martin.zie@gmx.de>, 2018.
 # Mathias Schmalisch <mathias.schmalisch@gmail.com>, 2018-2019.
@@ -226,8 +226,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-01-23 13:08+0100\n"
-"PO-Revision-Date: 2026-01-11 23:26+0000\n"
-"Last-Translator: Maximilian Wey <wey.maximilian@gmail.com>\n"
+"PO-Revision-Date: 2026-01-28 01:30+0000\n"
+"Last-Translator: Martin <martinreininger@gmx.net>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/de/>\n"
 "Language: de\n"
@@ -235,7 +235,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -368,17 +368,18 @@ msgid ""
 "To begin reading the relevant documentation, select the tile that matches "
 "your profile:"
 msgstr ""
+"Wählen Sie die Kachel aus, die Ihrem Level entspricht, um mit der relevanten "
+"Dokumentation zu beginnen:"
 
 #: ../../docs/index.rst:111
-#, fuzzy
 msgid ""
 "You can also use the table of contents in the sidebar to access easily "
 "access any section of the documentation for your topic of interest. You can "
 "also use the search function in the top-left corner."
 msgstr ""
-"Mithilfe des Inhaltsverzeichnisses in der Seitenleiste können Sie leicht auf "
-"die Dokumentation zu Ihrem gewünschten Thema zugreifen. Sie können auch die "
-"Suchfunktion in der oberen linken Ecke verwenden."
+"Über das Inhaltsverzeichnis in der Seitenleiste gelangen Sie schnell zu "
+"jedem Abschnitt der Dokumentation zu Ihrem Thema. Alternativ können Sie die "
+"Suchfunktion in der oberen linken Ecke nutzen."
 
 #: ../../docs/index.rst:116
 msgid "Get involved"
@@ -823,13 +824,12 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:25
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:24
-#, fuzzy
 msgid ""
 "For information about console support, see the `Godot website <https://"
 "godotengine.org/consoles/>`_."
 msgstr ""
-"Siehe auch `Hinweise zur Lizenz auf der Godot-Webseite <https://"
-"godotengine.org/license>`_."
+"Informationen zur Konsolenunterstützung finden Sie auf der `Godot-Website "
+"<https://godotengine.org/consoles/>`_."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "**Can run both the editor and exported projects:**"
@@ -1991,9 +1991,8 @@ msgid "**Post-processing:**"
 msgstr "**Post-Processing:**"
 
 #: ../../docs/about/list_of_features.rst:359
-#, fuzzy
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES, AgX)."
-msgstr "Tonemapping (Linear, Reinhard, Filmic, ACES)."
+msgstr "Tonemapping (Linear, Reinhard, Filmic, ACES, AgX)."
 
 #: ../../docs/about/list_of_features.rst:360
 msgid ""
@@ -2332,9 +2331,8 @@ msgstr ""
 "Transformationen."
 
 #: ../../docs/about/list_of_features.rst:464
-#, fuzzy
 msgid ":ref:`GDScript: <doc_gdscript>`"
-msgstr ":ref:`Script <class_Script>`"
+msgstr ":ref:`GDScript: <doc_gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:466
 msgid ""
@@ -3413,14 +3411,13 @@ msgstr ""
 "statisch in die Engine-Binärdatei gelinkt sind."
 
 #: ../../docs/about/list_of_features.rst:789
-#, fuzzy
 msgid ""
 "Most built-in modules can be disabled at compile-time to reduce binary size "
 "in custom builds. See :ref:`doc_optimizing_for_size` for details."
 msgstr ""
-"Sie können auch einige der Built-in-Module vor dem Kompilieren deaktivieren, "
-"um Zeit zu sparen, die für die Erstellung der Engine benötigt wird. Siehe "
-"die :ref:`doc_optimizing_for_size`-Seite für weitere Details."
+"Die meisten Built-in-Module können zur Kompilierzeit deaktiviert werden, um "
+"die Binärgröße in benutzerdefinierten Builds zu reduzieren. Weitere "
+"Informationen finden Sie unter :ref:`doc_optimizing_for_size`."
 
 #: ../../docs/about/list_of_features.rst:792
 msgid "Engine and editor written in C++17."
@@ -3516,20 +3513,17 @@ msgstr "**CPU**"
 
 #: ../../docs/about/system_requirements.rst:26
 #: ../../docs/about/system_requirements.rst:211
-#, fuzzy
 msgid ""
 "**Windows:** x86_32 CPU with SSE2 support, x86_64 CPU with SSE4.2 support, "
 "ARMv8 CPU"
 msgstr ""
-"**Windows:** x86_32 CPU mit SSE2-Instruktionen, x86_64 CPU, ARMv8 oder ARMv8 "
-"CPU"
+"**Windows:** x86_32 CPU mit SSE2 Unterstützung, x86_64 CPU mit SSE4.2 "
+"Unterstützung, ARMv8 CPU"
 
 #: ../../docs/about/system_requirements.rst:28
 #: ../../docs/about/system_requirements.rst:214
-#, fuzzy
 msgid "*Example: Intel Core 2 Duo E8200, AMD FX-4100, Snapdragon X Elite*"
-msgstr ""
-"*Beispiel: Intel Core 2 Duo E8200, AMD Athlon XE BE-2300, Raspberry Pi 4*"
+msgstr "*Beispiel: Intel Core 2 Duo E8200, AMD FX-4100, Snapdragon X Elite*"
 
 #: ../../docs/about/system_requirements.rst:30
 #: ../../docs/about/system_requirements.rst:120
@@ -3545,20 +3539,17 @@ msgstr "*Beispiel: Intel Core 2 Duo SU9400, Apple M1*"
 
 #: ../../docs/about/system_requirements.rst:34
 #: ../../docs/about/system_requirements.rst:220
-#, fuzzy
 msgid ""
 "**Linux:** x86_32 CPU with SSE2 support, x86_64 CPU with SSE4.2 support, "
 "ARMv7 or ARMv8 CPU"
 msgstr ""
-"**Linux:** x86_32 CPU mit SSE2-Instruktionen, x86_64 CPU, ARMv7 oder ARMv8 "
-"CPU"
+"**Linux:** x86_32 CPU mit SSE2 Unterstützung, x86_64 CPU mit SSE4.2 "
+"Unterstützung, ARMv7 oder ARMv8 CPU"
 
 #: ../../docs/about/system_requirements.rst:37
 #: ../../docs/about/system_requirements.rst:223
-#, fuzzy
 msgid "*Example: Intel Core 2 Duo E8200, AMD FX-4100, Raspberry Pi 4*"
-msgstr ""
-"*Beispiel: Intel Core 2 Duo E8200, AMD Athlon XE BE-2300, Raspberry Pi 4*"
+msgstr "*Beispiel: Intel Core 2 Duo E8200, AMD FX-4100, Raspberry Pi 4*"
 
 #: ../../docs/about/system_requirements.rst:39
 #: ../../docs/about/system_requirements.rst:85
@@ -3572,7 +3563,6 @@ msgid "**GPU**"
 msgstr "**GPU**"
 
 #: ../../docs/about/system_requirements.rst:39
-#, fuzzy
 msgid "**Forward+ renderer:** Integrated graphics with full Vulkan 1.0 support"
 msgstr ""
 "**Forward+ Rendering-Methode:** Integrierter Grafikprozessor mit voller "
@@ -3582,22 +3572,18 @@ msgstr ""
 #: ../../docs/about/system_requirements.rst:45
 #: ../../docs/about/system_requirements.rst:228
 #: ../../docs/about/system_requirements.rst:233
-#, fuzzy
 msgid ""
 "*Example: Intel HD Graphics 510 (Skylake), AMD Radeon R5 Graphics (Kaveri)*"
 msgstr ""
-"*Beispiel: Intel HD Graphics 5500 (Broadwell), AMD Radeon R5 Graphics "
-"(Kaveri)*"
+"*Beispiel: Intel HD Graphics 510 (Skylake), AMD Radeon R5 Graphics (Kaveri)*"
 
 #: ../../docs/about/system_requirements.rst:43
-#, fuzzy
 msgid "**Mobile renderer:** Integrated graphics with full Vulkan 1.0 support"
 msgstr ""
 "**Mobile Rendering-Methode:** Integrierter Grafikprozessor mit voller Vulkan "
 "1.0-Unterstützung"
 
 #: ../../docs/about/system_requirements.rst:47
-#, fuzzy
 msgid ""
 "**Compatibility renderer:** Integrated graphics with full OpenGL 3.3 support"
 msgstr ""
@@ -3666,19 +3652,17 @@ msgid "**Operating system**"
 msgstr "**Betriebssystem**"
 
 #: ../../docs/about/system_requirements.rst:58
-#, fuzzy
 msgid ""
 "**Native editor:** Windows 10, macOS 10.13 (Compatibility) or macOS 10.15 "
 "(Forward+/Mobile), Linux distribution released after 2018"
 msgstr ""
 "**Nativer Editor:** Windows 7, macOS 10.13 (Kompatibilität) oder macOS 10.15 "
-"(Forward+/Mobile), Linux-Distributionen, die nach 2016 veröffentlicht wurden"
+"(Forward+/Mobile), Linux-Distributionen, die nach 2018 veröffentlicht wurden"
 
 #: ../../docs/about/system_requirements.rst:60
 #: ../../docs/about/system_requirements.rst:105
 #: ../../docs/about/system_requirements.rst:248
 #: ../../docs/about/system_requirements.rst:287
-#, fuzzy
 msgid ""
 "**Web editor:** Recent versions of mainstream browsers: Firefox and "
 "derivatives (including ESR), Chrome and Chromium derivatives, Safari and "
@@ -3689,15 +3673,14 @@ msgstr ""
 "Derivate."
 
 #: ../../docs/about/system_requirements.rst:66
-#, fuzzy
 msgid ""
 "If your x86_64 CPU does not support SSE4.2, you can still run the 32-bit "
 "Godot executable which only has a SSE2 requirement (all x86_64 CPUs support "
 "SSE2)."
 msgstr ""
-"Wenn Ihre x86-64-CPU SSE4.2 nicht unterstützt, können Sie Godot dennoch als "
-"32-Bit-Programm ausführen – diese Variante benötigt nur SSE2, das alle "
-"x86-64-CPUs unterstützen."
+"Falls Ihre x86_64-CPU SSE4.2 nicht unterstützt, können Sie trotzdem die 32-"
+"Bit-Godot-Executable ausführen, die nur SSE2 voraussetzt (alle x86_64-CPUs "
+"unterstützen SSE2)."
 
 #: ../../docs/about/system_requirements.rst:69
 msgid ""
@@ -3736,7 +3719,6 @@ msgid "**iOS:** *Cannot run the editor*"
 msgstr "**iOS:** *Keine Unterstützung für den Editor*"
 
 #: ../../docs/about/system_requirements.rst:85
-#, fuzzy
 msgid "**Forward+ renderer:** SoC featuring GPU with full Vulkan 1.0 support"
 msgstr ""
 "**Forward+ Rendering-Methode:** SoC mit GPU mit voller Vulkan 1.0-"
@@ -3748,7 +3730,6 @@ msgid "*Example: Qualcomm Adreno 505, Mali-G71 MP2*"
 msgstr "*Beispiel: Qualcomm Adreno 505, Mali-G71 MP2*"
 
 #: ../../docs/about/system_requirements.rst:89
-#, fuzzy
 msgid "**Mobile renderer:** SoC featuring GPU with full Vulkan 1.0 support"
 msgstr ""
 "**Mobile-Rendering-Verfahren:** SoC mit GPU mit voller Vulkan 1.0-"
@@ -3756,11 +3737,10 @@ msgstr ""
 
 #: ../../docs/about/system_requirements.rst:93
 #: ../../docs/about/system_requirements.rst:276
-#, fuzzy
 msgid ""
 "**Compatibility renderer:** SoC featuring GPU with full OpenGL ES 3.0 support"
 msgstr ""
-"**Kompatibilität-Rendering-Verfahren:** SoC mit GPU mit voller OpenGL ES 3.0-"
+"**Kompatibilität-Rendering-Methode:** SoC mit GPU mit voller OpenGL ES 3.0-"
 "Unterstützung"
 
 #: ../../docs/about/system_requirements.rst:95
@@ -3785,13 +3765,12 @@ msgstr ""
 "werden (1,3 GB nach der Installation)."
 
 #: ../../docs/about/system_requirements.rst:104
-#, fuzzy
 msgid ""
 "**Native editor:** Android 6.0 (Compatibility) or Android 9.0 (Forward+/"
 "Mobile)"
 msgstr ""
 "**Nativer Editor:** Android 6.0 (Kompatibilität) oder Android 9.0 (Forward+/"
-"Mobile), iOS 11.0"
+"Mobile)"
 
 #: ../../docs/about/system_requirements.rst:109
 msgid ""
@@ -3808,12 +3787,11 @@ msgstr "Desktop- oder Laptop-PC - Empfohlen"
 
 #: ../../docs/about/system_requirements.rst:116
 #: ../../docs/about/system_requirements.rst:298
-#, fuzzy
 msgid ""
 "**Windows:** x86_64 CPU with SSE4.2 support, with 4 physical cores or more, "
 "ARMv8 CPU"
 msgstr ""
-"**Windows:** x86_64 CPU mit SSE4.2-Instruktionen, mit 4 physischen Kernen "
+"**Windows:** x86_64 CPU mit SSE4.2-Unterstützung, mit 4 physischen Kernen "
 "oder mehr, ARMv8 CPU"
 
 #: ../../docs/about/system_requirements.rst:118
@@ -3827,11 +3805,8 @@ msgid "*Example: Intel Core i5-8500, Apple M1*"
 msgstr "*Beispiel: Intel Core i5-8500, Apple M1*"
 
 #: ../../docs/about/system_requirements.rst:124
-#, fuzzy
 msgid "**Linux:** x86_64 CPU with SSE4.2 support, ARMv7 or ARMv8 CPU"
-msgstr ""
-"**Linux:** x86_32 CPU mit SSE2-Instruktionen, x86_64 CPU, ARMv7 oder ARMv8 "
-"CPU"
+msgstr "**Linux:** x86_64 CPU mit SSE4.2-Unterstützung, ARMv7 oder ARMv8 CPU"
 
 #: ../../docs/about/system_requirements.rst:126
 #: ../../docs/about/system_requirements.rst:309
@@ -3928,7 +3903,6 @@ msgid "*Example: Qualcomm Snapdragon 845, Samsung Exynos 9810*"
 msgstr "*Beispiel: Qualcomm Snapdragon 845, Samsung Exynos 9810*"
 
 #: ../../docs/about/system_requirements.rst:160
-#, fuzzy
 msgid "**Forward+ renderer:** SoC featuring GPU with full Vulkan 1.2 support"
 msgstr ""
 "**Forward+ Rendering-Methode:** SoC mit GPU mit voller Vulkan 1.2-"
@@ -3941,15 +3915,12 @@ msgid "*Example: Qualcomm Adreno 630, Mali-G72 MP18*"
 msgstr "*Beispiel: Qualcomm Adreno 630, Mali-G72 MP18*"
 
 #: ../../docs/about/system_requirements.rst:164
-#, fuzzy
 msgid "**Mobile renderer:** SoC featuring GPU with full Vulkan 1.2 support"
 msgstr ""
-"**Mobile-Rendering-Verfahren:** SoC mit GPU mit voller Vulkan 1.2-"
-"Unterstützung"
+"**Mobile-Rendering-Methode:** SoC mit GPU mit voller Vulkan 1.2-Unterstützung"
 
 #: ../../docs/about/system_requirements.rst:168
 #: ../../docs/about/system_requirements.rst:357
-#, fuzzy
 msgid ""
 "**Compatibility renderer:** SoC featuring GPU with full OpenGL ES 3.2 support"
 msgstr ""
@@ -3961,9 +3932,8 @@ msgid "**Native editor:** 6 GB"
 msgstr "**Nativer Editor:** 6 GB"
 
 #: ../../docs/about/system_requirements.rst:177
-#, fuzzy
 msgid "**Native editor:** Android 9.0"
-msgstr "**Nativer Editor:** Android 9.0 oder iOS 11.0"
+msgstr "**Nativer Editor:** Android 9.0"
 
 #: ../../docs/about/system_requirements.rst:178
 msgid ""
@@ -4019,31 +3989,30 @@ msgstr ""
 "einfaches, mit Godot exportiertes 2D- oder 3D-Projekt auszuführen:"
 
 #: ../../docs/about/system_requirements.rst:225
-#, fuzzy
 msgid ""
 "**Forward+ renderer:** Integrated graphics with full Vulkan 1.0 support, "
 "Metal 3 support (macOS) or Direct3D 12 (12_0 feature level) support (Windows)"
 msgstr ""
 "**Forward+ Rendering-Methode:** Integrierter Grafikprozessor mit voller "
-"Vulkan 1.0 Unterstützung"
+"Vulkan 1.0 Unterstützung, Metal 3-Unterstützung (macOS) oder Direct3D 12 "
+"(12_0 Feature-Level)-Unterstützung (Windows)"
 
 #: ../../docs/about/system_requirements.rst:230
-#, fuzzy
 msgid ""
 "**Mobile renderer:** Integrated graphics with full Vulkan 1.0 support, Metal "
 "3 support (macOS) or Direct3D 12 (12_0 feature level) support (Windows)"
 msgstr ""
 "**Mobile Rendering-Methode:** Integrierter Grafikprozessor mit voller Vulkan "
-"1.0-Unterstützung"
+"1.0-Unterstützung, Metal 3-Unterstützung (macOS) oder Direct3D 12 (12_0 "
+"Feature-Level)-Unterstützung (Windows)"
 
 #: ../../docs/about/system_requirements.rst:235
-#, fuzzy
 msgid ""
 "**Compatibility renderer:** Integrated graphics with full OpenGL 3.3 support "
 "or Direct3D 11 support (Windows)."
 msgstr ""
 "**Kompatibilität-Rendering-Methode:** Integrierter Grafikprozessor mit "
-"voller OpenGL 3.3-Unterstützung"
+"voller OpenGL 3.3-Unterstützung oder Direct3D 11-Unterstützung (Windows)."
 
 #: ../../docs/about/system_requirements.rst:240
 #: ../../docs/about/system_requirements.rst:361
@@ -4063,15 +4032,14 @@ msgid "150 MB (used for the executable, project files and cache)"
 msgstr "150 MB (für die ausführbare Datei, die Projektdateien und den Cache)"
 
 #: ../../docs/about/system_requirements.rst:245
-#, fuzzy
 msgid ""
 "**For native exports:** Windows 10, macOS 10.13 (Compatibility), macOS 10.15 "
 "(Forward+/Mobile, Vulkan), macOS 13.0 (Forward+/Mobile, Metal), Linux "
 "distribution released after 2018"
 msgstr ""
-"**Für native Exporte:** Windows 7, macOS 10.13 (Kompatibilität) oder macOS "
-"10.15 (Forward+/Mobile), Linux-Distributionen, die nach 2016 veröffentlicht "
-"wurden"
+"**Für native Exporte:** Windows 10, macOS 10.13 (Kompatibilität), macOS "
+"10.15 (Forward+/Mobile, Vulkan), macOS 13.0 (Forward+/Mobile, Metal), Linux-"
+"Distributionen, die nach 2018 veröffentlicht wurden"
 
 #: ../../docs/about/system_requirements.rst:260
 msgid "**iOS:** SoC with any 64-bit ARM CPU"
@@ -4082,43 +4050,38 @@ msgid "*Example: Apple A7 (iPhone 5S)*"
 msgstr "*Beispiel: Apple A7 (iPhone 5S)*"
 
 #: ../../docs/about/system_requirements.rst:264
-#, fuzzy
 msgid ""
 "**Forward+ renderer:** SoC featuring GPU with full Vulkan 1.0 support, or "
 "Metal 3 support (iOS/iPadOS)"
 msgstr ""
 "**Forward+ Rendering-Methode:** SoC mit GPU mit voller Vulkan 1.0-"
-"Unterstützung"
+"Unterstützung, oder Metal 3-Unterstützung (iOS/iPadOS)"
 
 #: ../../docs/about/system_requirements.rst:267
 #: ../../docs/about/system_requirements.rst:273
-#, fuzzy
 msgid ""
 "*Example (Vulkan): Qualcomm Adreno 505, Mali-G71 MP2, Apple A12 (iPhone XR/"
 "XS)*"
 msgstr ""
-"*Beispiel: Qualcomm Adreno 630, Mali-G72 MP18, Apple G11P (iPhone XR/XS)*"
+"*Beispiel (Vulkan): Qualcomm Adreno 505, Mali-G71 MP2, Apple A12 (iPhone XR/"
+"XS)*"
 
 #: ../../docs/about/system_requirements.rst:268
 #: ../../docs/about/system_requirements.rst:274
-#, fuzzy
 msgid "*Example (Metal): Apple A12 (iPhone XR/XS)*"
-msgstr "*Beispiel: Apple A7 (iPhone 5S)*"
+msgstr "*Beispiel (Metal): Apple A12 (iPhone XR/XS)*"
 
 #: ../../docs/about/system_requirements.rst:270
-#, fuzzy
 msgid ""
 "**Mobile renderer:** SoC featuring GPU with full Vulkan 1.0 support, or "
 "Metal 3 support (iOS/iPadOS)"
 msgstr ""
-"**Mobile-Rendering-Verfahren:** SoC mit GPU mit voller Vulkan 1.0-"
-"Unterstützung"
+"**Mobile-Rendering-Methode:** SoC mit GPU mit voller Vulkan 1.0-"
+"Unterstützung, oder Metal 3-Unterstützung (iOS/iPadOS)"
 
 #: ../../docs/about/system_requirements.rst:278
-#, fuzzy
 msgid "*Example: Qualcomm Adreno 306, Mali-T628 MP6, Apple A7 (iPhone 5S)*"
-msgstr ""
-"*Beispiel: Qualcomm Adreno 306, Mali-T628 MP6, PowerVR G6430 (iPhone 5S)*"
+msgstr "*Beispiel: Qualcomm Adreno 306, Mali-T628 MP6, Apple A7 (iPhone 5S)*"
 
 #: ../../docs/about/system_requirements.rst:280
 msgid "**For native exports:** 1 GB"
@@ -4129,14 +4092,14 @@ msgid "**For web exports:** 2 GB"
 msgstr "**Für Web-Exporte:** 2 GB"
 
 #: ../../docs/about/system_requirements.rst:285
-#, fuzzy
 msgid ""
 "**For native exports:** Android 6.0 (Compatibility), Android 9.0 (Forward+/"
 "Mobile), iOS 12.0 (Forward+/Mobile, Vulkan), iOS 16.0 (Forward+/Mobile, "
 "Metal)"
 msgstr ""
-"**Für native Exporte:** Android 6.0 (Kompatibilität) oder Android 9.0 "
-"(Forward+/Mobile), iOS 11.0"
+"**Für native Exporte:** Android 6.0 (Kompatibilität), Android 9.0 (Forward+/"
+"Mobile), iOS 12.0 (Forward+/Mobile, Vulkan), iOS 16.0 (Forward+/Mobile, "
+"Metal)"
 
 #: ../../docs/about/system_requirements.rst:291
 msgid ""
@@ -4147,23 +4110,22 @@ msgstr ""
 "Projekt, das mit Godot exportiert wird, reibungslos ablaufen zu lassen:"
 
 #: ../../docs/about/system_requirements.rst:306
-#, fuzzy
 msgid ""
 "**Linux:** x86_64 CPU with SSE4.2 support, with 4 physical cores or more, "
 "ARMv7 or ARMv8 CPU"
 msgstr ""
-"**Windows:** x86_64 CPU mit SSE4.2-Instruktionen, mit 4 physischen Kernen "
-"oder mehr, ARMv8 CPU"
+"**Linux:** x86_64 CPU mit SSE4.2-Unterstützung, mit 4 physischen Kernen oder "
+"mehr, ARMv7 or ARMv8 CPU"
 
 #: ../../docs/about/system_requirements.rst:311
-#, fuzzy
 msgid ""
 "**Forward+ renderer:** Dedicated graphics with full Vulkan 1.2 support, "
 "Metal 3 support (macOS), or Direct3D 12 (12_0 feature level) support "
 "(Windows)"
 msgstr ""
 "**Forward+ Rendering-Methode:** Dedizierte Grafikkarte mit voller Vulkan 1.2-"
-"Unterstützung"
+"Unterstützung, Metal 3-Unterstützung (macOS), oder Direct3D 12 (12_0 Feature "
+"level)-Unterstützung (Windows)"
 
 #: ../../docs/about/system_requirements.rst:316
 msgid ""
@@ -4183,14 +4145,13 @@ msgid "**For web exports:** 8 GB"
 msgstr "**Für Web-Exporte:** 8 GB"
 
 #: ../../docs/about/system_requirements.rst:330
-#, fuzzy
 msgid ""
 "**For native exports:** Windows 10, macOS 10.15 (Forward+/Mobile, Vulkan), "
 "macOS 13.0 (Forward+/Mobile, Metal), Linux distribution released after 2020"
 msgstr ""
-"**Für native Exporte:** Windows 7, macOS 10.13 (Kompatibilität) oder macOS "
-"10.15 (Forward+/Mobile), Linux-Distributionen, die nach 2016 veröffentlicht "
-"wurden"
+"**Für native Exporte:** Windows 10, macOS 10.15 (Forward+/Mobile, Vulkan), "
+"macOS 13.0 (Forward+/Mobile, Metal), Linux-Distributionen, die nach 2020 "
+"veröffentlicht wurden"
 
 #: ../../docs/about/system_requirements.rst:332
 msgid ""
@@ -4203,44 +4164,38 @@ msgid "**iOS:** SoC with 64-bit ARM CPU"
 msgstr "**iOS:** SoC mit 64-bit ARM CPU"
 
 #: ../../docs/about/system_requirements.rst:345
-#, fuzzy
 msgid "*Example: Apple A14 (iPhone 12)*"
-msgstr "*Beispiel: Apple A7 (iPhone 5S)*"
+msgstr "*Beispiel: Apple A14 (iPhone 12)*"
 
 #: ../../docs/about/system_requirements.rst:347
-#, fuzzy
 msgid ""
 "**Forward+ renderer:** SoC featuring GPU with full Vulkan 1.2 support, or "
 "Metal 3 support (iOS/iPadOS)"
 msgstr ""
 "**Forward+ Rendering-Methode:** SoC mit GPU mit voller Vulkan 1.2-"
-"Unterstützung"
+"Unterstützung, oder Metal 3-Unterstützung (iOS/iPadOS)"
 
 #: ../../docs/about/system_requirements.rst:350
 #: ../../docs/about/system_requirements.rst:355
 #: ../../docs/about/system_requirements.rst:359
-#, fuzzy
 msgid "*Example: Qualcomm Adreno 630, Mali-G72 MP18, Apple A14 (iPhone 12)*"
-msgstr ""
-"*Beispiel: Qualcomm Adreno 630, Mali-G72 MP18, Apple G11P (iPhone XR/XS)*"
+msgstr "*Beispiel: Qualcomm Adreno 630, Mali-G72 MP18, Apple A14 (iPhone 12)*"
 
 #: ../../docs/about/system_requirements.rst:352
-#, fuzzy
 msgid ""
 "**Mobile renderer:** SoC featuring GPU with full Vulkan 1.2 support, or "
 "Metal 3 support (iOS/iPadOS)"
 msgstr ""
-"**Mobile-Rendering-Verfahren:** SoC mit GPU mit voller Vulkan 1.2-"
-"Unterstützung"
+"**Mobile-Rendering-Methode:** SoC mit GPU mit voller Vulkan 1.2-"
+"Unterstützung, oder Metal 3-Unterstützung (iOS/iPadOS)"
 
 #: ../../docs/about/system_requirements.rst:366
-#, fuzzy
 msgid ""
 "**For native exports:** Android 9.0, iOS 14.1 (Forward+/Mobile, Vulkan), iOS "
 "16.0 (Forward+/Mobile, Metal)"
 msgstr ""
-"**Für native Exporte:** Android 6.0 (Kompatibilität) oder Android 9.0 "
-"(Forward+/Mobile), iOS 11.0"
+"**Für native Exporte:** Android 9.0, iOS 14.1 (Forward+/Mobile, Vulkan), iOS "
+"16.0 (Forward+/Mobile, Metal)"
 
 #: ../../docs/about/system_requirements.rst:368
 msgid ""
@@ -4458,13 +4413,12 @@ msgstr ""
 "Systemen, wie dem Raspberry Pi, erfolgreich kompilieren und benutzen konnten."
 
 #: ../../docs/about/faq.rst:65
-#, fuzzy
 msgid ""
 "For information about console support, see the `Godot website <https://"
 "godotengine.org/consoles/>`__."
 msgstr ""
-"Siehe auch `Hinweise zur Lizenz auf der Godot-Webseite <https://"
-"godotengine.org/license>`_."
+"Siehe auch Informationen zur Konsolenunterstützung auf der `Godot-Webseite "
+"<https://godotengine.org/consoles/>`__."
 
 #: ../../docs/about/faq.rst:67
 msgid ""
@@ -4577,15 +4531,12 @@ msgstr ""
 "der :ref:`GDScript Skripting-Anleitung <doc_gdscript>`."
 
 #: ../../docs/about/faq.rst:115
-#, fuzzy
 msgid ""
 "There are several reasons to use GDScript, but the most salient reason is "
 "the overall **reduction of complexity**."
 msgstr ""
-"Es gibt mehrere Gründe, GDScript zu verwenden, insbesondere wenn Sie "
-"Prototypen erstellen, sich in der Alpha-/Beta-Phase Ihres Projekts befinden "
-"oder nicht gerade den nächsten AAA-Titel entwickeln. Der hervorstechendste "
-"Grund ist die allgemeine **Reduzierung der Komplexität**."
+"Es gibt mehrere Gründe für die Verwendung von GDScript, der wichtigste ist "
+"jedoch die allgemeine **Reduzierung der Komplexität**."
 
 #: ../../docs/about/faq.rst:118
 msgid ""
@@ -4610,7 +4561,6 @@ msgstr ""
 "Laufen zu bringen."
 
 #: ../../docs/about/faq.rst:126
-#, fuzzy
 msgid ""
 "Since Godot is an open source project, it was imperative from the start to "
 "prioritize a more integrated and seamless experience over attracting "
@@ -4622,17 +4572,16 @@ msgid ""
 "once you see how powerful it is and how rapid your development becomes, we "
 "think GDScript will grow on you."
 msgstr ""
-"Da es sich bei Godot um ein Open-Source-Projekt handelt, war es von Anfang "
-"an unumgänglich, einem stärker integrierten und nahtlosen Erlebnis den "
-"Vorrang vor der Gewinnung zusätzlicher Nutzer durch die Unterstützung "
-"vertrauterer Programmiersprachen zu geben, insbesondere wenn die "
-"Unterstützung dieser vertrauten Sprachen zu einem schlechteren Erlebnis "
-"führen würde. Wir verstehen, wenn Sie lieber eine andere Sprache in Godot "
-"verwenden möchten (siehe die Liste der unterstützten Optionen oben). Wenn "
-"Sie GDScript jedoch noch nicht ausprobiert haben, sollten Sie es **drei "
-"Tage** lang testen. Sobald Sie sehen, wie leistungsfähig es ist und wie sehr "
-"es Ihre Entwicklung beschleunigt, glauben wir, dass GDScript Ihnen genau wie "
-"Godot ans Herz wachsen wird."
+"Da Godot ein Open-Source-Projekt ist, war es von Anfang an unerlässlich, "
+"eine möglichst integrierte und nahtlose Benutzererfahrung zu priorisieren, "
+"anstatt durch die Unterstützung bekannterer Programmiersprachen zusätzliche "
+"Nutzer zu gewinnen – insbesondere, da dies zu einer schlechteren "
+"Benutzererfahrung führen würde. Wir verstehen, wenn Sie in Godot lieber eine "
+"andere Sprache verwenden möchten (siehe die Liste der unterstützten Optionen "
+"oben). Sollten Sie GDScript noch nicht ausprobiert haben, testen Sie es "
+"**drei Tage lang**. Genau wie bei Godot gilt: Sobald Sie die "
+"Leistungsfähigkeit und die Geschwindigkeit Ihrer Entwicklung erkennen, "
+"werden Sie von GDScript begeistert sein."
 
 #: ../../docs/about/faq.rst:135
 msgid ""
@@ -4730,9 +4679,8 @@ msgid "GDScript was designed to curtail the issues above, and more."
 msgstr "GDScript wurde entworfen, um diese und weitere Probleme zu umgehen."
 
 #: ../../docs/about/faq.rst:170
-#, fuzzy
 msgid "Which programming language is fastest?"
-msgstr "Welche Programmiersprachen werden in Godot unterstützt?"
+msgstr "Welche Programmiersprache ist die Schnellste?"
 
 #: ../../docs/about/faq.rst:172
 msgid ""
@@ -5386,17 +5334,17 @@ msgstr ""
 "Godot-Entwickler verwenden."
 
 #: ../../docs/about/faq.rst:432
-#, fuzzy
 msgid ""
 "We explain how to work with the engine source, how to edit the "
 "documentation, and what other ways to contribute are there in our "
 "`documentation for contributors <https://contributing.godotengine.org/en/"
 "latest/organization/how_to_contribute.html>`__."
 msgstr ""
-"Wir erklären in unserer :ref:`Dokumentation für Mitwirkende "
-"<doc_ways_to_contribute>`, wie man mit dem Quellcode der Engine arbeitet, "
-"wie man die Dokumentation bearbeitet und welche anderen Möglichkeiten es "
-"gibt, einen Beitrag zu leisten."
+"Wir erklären in unserer `Dokumentation für Mitwirkende <https://"
+"contributing.godotengine.org/en/latest/organization/how_to_contribute.html>"
+"`__, wie man mit dem Quellcode der Engine arbeitet, wie man die "
+"Dokumentation bearbeitet und welche anderen Möglichkeiten es gibt, einen "
+"Beitrag zu leisten."
 
 #: ../../docs/about/faq.rst:436
 msgid "I have a great idea for Godot. How can I share it?"
@@ -5555,7 +5503,6 @@ msgid "What user interface toolkit does Godot use?"
 msgstr "Welches UI-Toolkit nutzt Godot?"
 
 #: ../../docs/about/faq.rst:500
-#, fuzzy
 msgid ""
 "Godot does not use a standard :abbr:`GUI (Graphical User Interface)` toolkit "
 "like GTK, Qt or wxWidgets. Instead, Godot uses its own user interface "
@@ -5563,28 +5510,22 @@ msgid ""
 "built-in software fallback, although external solutions that emulate "
 "graphics APIs on the CPU can be used."
 msgstr ""
-"Godot nutzt kein Standard :abbr:`GUI (Graphical User Interface, deutsch "
-"„Benutzeroberfäche“)` Toolkit wie GTK, Qt oder wxWidgets. Stattdessen nutzt "
-"Godot sein eigenes UI-Toolkit welches mit Open GL oder Vulcan gerendert "
-"wird. Dieses Toolkit wird in Form von Control-Nodes dargestellt, welche "
-"verwendet werden, um den Editor zu rendern (welcher in C++ geschrieben "
-"wurde). Diese Control-Nodes können ebenfalls in Projekten von jeder durch "
-"Godot unterstützten Skriptsprache aus verwendet werden."
+"Godot verwendet kein Standard :abbr:`GUI (Graphical User Interface, deutsch „"
+"Benutzeroberfäche“)` Toolkit wie GTK, Qt oder wxWidgets. Stattdessen nutzt "
+"Godot ein eigenes UI-Toolkit, das stets hardwarebeschleunigt gerendert wird. "
+"Es gibt keine integrierte Software-Ausweichlösung, jedoch können externe "
+"Lösungen verwendet werden, die Grafik-APIs auf der CPU emulieren."
 
 #: ../../docs/about/faq.rst:505
-#, fuzzy
 msgid ""
 "This toolkit is exposed in the form of Control nodes, which are used to "
 "render the editor (which is written in C++). These Control nodes can also be "
 "used in projects from any scripting language supported by Godot."
 msgstr ""
-"Godot nutzt kein Standard :abbr:`GUI (Graphical User Interface, deutsch "
-"„Benutzeroberfäche“)` Toolkit wie GTK, Qt oder wxWidgets. Stattdessen nutzt "
-"Godot sein eigenes UI-Toolkit welches mit Open GL oder Vulcan gerendert "
-"wird. Dieses Toolkit wird in Form von Control-Nodes dargestellt, welche "
-"verwendet werden, um den Editor zu rendern (welcher in C++ geschrieben "
-"wurde). Diese Control-Nodes können ebenfalls in Projekten von jeder durch "
-"Godot unterstützten Skriptsprache aus verwendet werden."
+"Dieses Toolkit wird in Form von Control-Nodes bereitgestellt, die zum "
+"Rendern des (in C++ geschriebenen) Editors verwendet werden. Diese Control-"
+"Nodes können auch in Projekten jeder von Godot unterstützten Skriptsprache "
+"verwendet werden."
 
 #: ../../docs/about/faq.rst:509
 msgid ""
@@ -5603,17 +5544,16 @@ msgstr ""
 "Benutzer von Godots UI-System ist."
 
 #: ../../docs/about/faq.rst:515
-#, fuzzy
 msgid ""
 "This custom UI toolkit can be :ref:`embedded into other applications "
 "<doc_faq_use_godot_as_library>` (experimental). However, the preferred way "
 "to use it is to :ref:`use Godot to create non-game applications with the "
 "editor <doc_faq_non_game_applications>`."
 msgstr ""
-"Dieses eigene UI-Toolkit :ref:`kann nicht als lib verwendet werden "
-"<doc_faq_use_godot_as_library>`, aber Sie können immer noch :ref:`Godot für "
-"„für nicht Spiele“-Apps verwenden, indem Sie den Editor nutzen "
-"<doc_faq_non_game_applications>`."
+"Dieses benutzerdefinierte UI-Toolkit kann :ref:`in andere Anwendungen "
+"eingebettet werden <doc_faq_use_godot_as_library>` (experimentell). Die "
+"empfohlene Verwendungsmethode ist jedoch die :ref:`Erstellung von Nicht-"
+"Spiel-Anwendungen mit Godot und dem Editor <doc_faq_non_game_applications>`."
 
 #: ../../docs/about/faq.rst:522
 msgid "Why does Godot use the SCons build system?"
@@ -5805,16 +5745,15 @@ msgstr ""
 "Anwendungsfälle schnell genug ist."
 
 #: ../../docs/about/faq.rst:589
-#, fuzzy
 msgid ""
 "That said, nothing prevents you from making use of composition in your "
 "project by creating child Nodes with individual scripts. These nodes can "
 "then be added and removed at runtime to dynamically add and remove behaviors."
 msgstr ""
-"Nichtsdestotrotz können Sie die Zusammensetzung in Ihrem Projekt nutzen, "
-"indem Sie Child-Nodes mit individuellen Skripten erstellen. Diese Nodes "
-"können dann zur Laufzeit hinzugefügt und entfernt werden, um dynamisch "
-"Verhaltensweisen hinzuzufügen oder zu entfernen."
+"Nichts spricht jedoch dagegen, in Ihrem Projekt Komposition zu nutzen, indem "
+"Sie untergeordnete Nodes mit individuellen Skripten erstellen. Diese Nodes "
+"können dann zur Laufzeit hinzugefügt und entfernt werden, um "
+"Verhaltensweisen dynamisch hinzuzufügen oder zu entfernen."
 
 #: ../../docs/about/faq.rst:593
 msgid ""
@@ -5894,13 +5833,12 @@ msgid "Who is working on Godot? How can I contact you?"
 msgstr "Wer arbeitet an Godot? Wie kann ich euch kontaktieren?"
 
 #: ../../docs/about/faq.rst:624
-#, fuzzy
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`__."
 msgstr ""
 "Siehe die dazugehörige Seite auf der `Godot-Webseite <https://"
-"godotengine.org/contact>`_."
+"godotengine.org/contact>`__."
 
 #: ../../docs/about/complying_with_licenses.rst:6
 msgid "Complying with licenses"
@@ -5945,7 +5883,6 @@ msgstr ""
 "ursprünglichen Lizenz übereinstimmen."
 
 #: ../../docs/about/complying_with_licenses.rst:28
-#, fuzzy
 msgid ""
 "This section covers compliance with licenses from a user perspective. If you "
 "are interested in licence compliance as a contributor, you can find "
@@ -5955,8 +5892,10 @@ msgid ""
 msgstr ""
 "Dieser Abschnitt behandelt die Einhaltung von Lizenzen aus der Sicht der "
 "Nutzer. Falls Sie als Mitwirkende an der Einhaltung von Lizenzen "
-"interessiert sind, finden Sie Richtlinien :ref:`hier "
-"<doc_best_practices_for_engine_contributors_license_compliance>`."
+"interessiert sind, finden Sie Richtlinien `hier <https://"
+"contributing.godotengine.org/en/latest/engine/guidelines/"
+"best_practices.html#don-t-use-complex-canned-solutions-for-simple-problems>"
+"`__."
 
 #: ../../docs/about/complying_with_licenses.rst:34
 msgid ""
@@ -5994,11 +5933,10 @@ msgstr ""
 "Lizenztext irgendwo in Ihrem Spiel oder abgeleiteten Projekt einzubinden."
 
 #: ../../docs/about/complying_with_licenses.rst:45
-#, fuzzy
 msgid "This text reads as follows:"
 msgstr ""
 "Dieser Text lautet wie folgt (eine sinngemäße Übersetzung finden Sie `hier "
-"<https://de.wikipedia.org/wiki/MIT-Lizenz>`_)::"
+"<https://de.wikipedia.org/wiki/MIT-Lizenz>`_):"
 
 #: ../../docs/about/complying_with_licenses.rst:72
 msgid ""
@@ -40312,9 +40250,8 @@ msgid "Tools"
 msgstr "Tools"
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:4
-#, fuzzy
 msgid "Introduction to 2D"
-msgstr "3D Einführung"
+msgstr "2D Einführung"
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:6
 msgid ""
@@ -40328,28 +40265,38 @@ msgid ""
 "accessibility and flexibility, provide a solid foundation for creating "
 "engaging 2D games."
 msgstr ""
+"Godots 2D-Spieleentwicklungswerkzeuge umfassen eine dedizierte 2D-Rendering-"
+"Engine, ein Physiksystem und speziell für die Erstellung von 2D-Erlebnissen "
+"entwickelte Funktionen. Mit dem TileMap-System lassen sich Level effizient "
+"gestalten, Charaktere mit 2D-Sprite- oder Cutout-Animationen animieren und "
+"die 2D-Beleuchtung für dynamische Szenenbeleuchtung nutzen. Das integrierte "
+"2D-Partikelsystem ermöglicht die Erstellung komplexer visueller Effekte, und "
+"Godot unterstützt zudem benutzerdefinierte Shader zur Verbesserung der "
+"Grafik. Diese Funktionen, kombiniert mit Godots Zugänglichkeit und "
+"Flexibilität, bilden eine solide Grundlage für die Entwicklung fesselnder 2D-"
+"Spiele."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:16
 msgid "2D Platformer Demo available on the Asset Library."
-msgstr ""
+msgstr "Demo des 2D-Plattformers in der Asset-Bibliothek verfügbar."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:18
 msgid ""
 "This page will show you the 2D workspace and how you can get to know it."
 msgstr ""
+"Auf dieser Seite wird Ihnen der 2D-Arbeitsbereich vorgestellt und erklärt."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:20
-#, fuzzy
 msgid ""
 "If you would like to get an introduction to 3D, "
 "see :ref:`doc_introduction_to_3d`."
 msgstr ""
-"Wenn Sie mit Shadern nicht vertraut sind, lesen Sie "
-"zunächst :ref:`doc_introduction_to_shaders`."
+"Wenn Sie mit Shadern nicht vertraut sind, lesen Sie zuerst "
+":ref:`doc_introduction_to_3d`."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:23
 msgid "2D workspace"
-msgstr ""
+msgstr "2D Arbeitsbereich"
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:25
 msgid ""
@@ -40358,6 +40305,10 @@ msgid ""
 "a 2D node from the scene tree, or use the workspace selector located at the "
 "top edge of the editor:"
 msgstr ""
+"Im 2D-Arbeitsbereich bearbeiten Sie 2D-Szenen, entwerfen Level oder "
+"erstellen Benutzeroberflächen. Um zum 2D-Arbeitsbereich zu wechseln, wählen "
+"Sie entweder einen 2D-Node in der Szenenbaum aus oder verwenden Sie die "
+"Arbeitsbereichsauswahl am oberen Rand des Editors:"
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:32
 msgid ""
@@ -40366,6 +40317,11 @@ msgid ""
 "button. The left and right docks should be familiar from :ref:`editor "
 "introduction <toc-editor-interface>`."
 msgstr ""
+"Ähnlich wie in 3D können Sie mithilfe der Registerkarten unterhalb der "
+"Arbeitsbereichsauswahl zwischen aktuell geöffneten Szenen wechseln oder mit "
+"dem Plus-Button (+) eine neue Szene erstellen. Die linke und rechte "
+"Dockleiste sollten Ihnen aus der :ref:`Editor-Einführung <toc-editor-"
+"interface>` bekannt sein."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:36
 msgid ""
@@ -40385,12 +40341,20 @@ msgid ""
 "child of the root node. If :kbd:`Alt + Shift` is held when dropping, the "
 "node type can be selected if applicable."
 msgstr ""
+"Sie können kompatible Nodes aus dem Dateisystem-Dock per Drag & Drop in den "
+"Ansichtsbereich einfügen. Der gezogene Node wird als gleichrangiger Node des "
+"ausgewählten Nodes hinzugefügt (wenn der Root-Node ausgewählt ist, als "
+"untergeordneter Node). Wenn Sie beim Ablegen die :kbd:`Shift` gedrückt "
+"halten, wird der Node als untergeordneter Node des ausgewählten Nodes "
+"hinzugefügt. Halten Sie beim Ablegen :kbd:`Alt` gedrückt, wird der Node als "
+"untergeordneter Node des Root-Nodes hinzugefügt. Wenn Sie beim Ablegen "
+":kbd:`Alt + Shift` gedrückt halten, können Sie gegebenenfalls den Node-Typ "
+"auswählen."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:50
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:43
-#, fuzzy
 msgid "Main toolbar"
-msgstr "MainLoop"
+msgstr "Hauptwerkzeugleiste"
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:52
 msgid ""
@@ -40401,6 +40365,13 @@ msgid ""
 "functionality of each button with its default shortcut is provided below "
 "from left to right:"
 msgstr ""
+"Einige Button in der Hauptwerkzeugleiste entsprechen denen im 3D-"
+"Arbeitsbereich. Eine kurze Erklärung der Tastenkürzel wird angezeigt, wenn "
+"der Mauszeiger eine Sekunde lang über einen Button bewegt wird. Manche "
+"Button bieten zusätzliche Funktionen, die durch einen weiteren Tastendruck "
+"ausgelöst werden. Eine Übersicht der Hauptfunktionen jedes "
+"ButtonsTastenkürzel mit ihrer Standard-Tastenkombination finden Sie unten "
+"(von links nach rechts):"
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:60
 msgid ""
@@ -40415,18 +40386,35 @@ msgid ""
 "rotation are possible. In this mode, rotation and scaling will not use the "
 "snapping options if snapping is enabled."
 msgstr ""
+"**Auswahl-Modus** (:kbd:`Q`): Ermöglicht die Auswahl von Nodes im Viewport. "
+"Ein Linksklick auf einen Node im Viewport wählt diesen aus. Durch Klicken "
+"und Ziehen eines Rechtecks werden alle Nodes innerhalb der Rechteckgrenzen "
+"ausgewählt. Durch Gedrückthalten von :kbd:`Shift` werden weitere Nodes zur "
+"Auswahl hinzugefügt. Ein Klick auf einen ausgewählten Node bei gedrückter "
+"Umschalttaste :kbd:`Shift` hebt die Auswahl auf. In diesem Modus können Sie "
+"die ausgewählten Nodes verschieben, mit :kbd:`Ctrl` vorübergehend in den "
+"Rotationsmodus wechseln oder sie mithilfe der roten Kreise skalieren. Sind "
+"mehrere Nodes ausgewählt, sind nur Verschieben und Drehen möglich. In diesem "
+"Modus werden die Einrastfunktionen beim Drehen und Skalieren nicht "
+"verwendet, sofern diese aktiviert sind."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:70
 msgid ""
 "**Move Mode** (:kbd:`W`): Enables move (or translate) mode for the selected "
 "nodes. See :ref:`doc_introduction_to_2d_the_viewport` for more details."
 msgstr ""
+"**Verschieben-Modus** (:kbd:`W`): Aktiviert den Verschieben-Modus für die "
+"ausgewählten Nodes. Weitere Informationen finden Sie unter "
+":ref:`doc_introduction_to_2d_the_viewport`."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:72
 msgid ""
 "**Rotate Mode** (:kbd:`E`): Enables rotation mode for the selected nodes. "
 "See :ref:`doc_introduction_to_2d_the_viewport` for more details."
 msgstr ""
+"**Rotation-Modus** (:kbd:`E`): Aktiviert den Rotation-Modus für die "
+"ausgewählten Nodes. Weitere Informationen finden Sie unter "
+":ref:`doc_introduction_to_2d_the_viewport`."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:74
 msgid ""
@@ -40434,6 +40422,9 @@ msgid ""
 "both axes for the selected node(s). "
 "See :ref:`doc_introduction_to_2d_the_viewport` for more details."
 msgstr ""
+"**Skalierieren-Modus** (:kbd:`S`): Aktiviert die Skalierung und zeigt "
+"Skalierungs-Gizmos in beiden Achsen für die ausgewählten Nodes an. Weitere "
+"Informationen finden Sie unter :ref:`doc_introduction_to_2d_the_viewport`."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:76
 msgid ""
@@ -40441,6 +40432,10 @@ msgid ""
 "suggests, this provides a list of selectable nodes at the clicked position "
 "as a context menu, if there is more than one node in the clicked area."
 msgstr ""
+"**Liste der auswählbaren Nodes an der angeklickten Position anzeigen**: Wie "
+"die Beschreibung bereits andeutet, wird hiermit eine Liste der auswählbaren "
+"Nodes an der angeklickten Position als Kontextmenü angezeigt, sofern sich im "
+"angeklickten Bereich mehr als ein Node befindet."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:79
 msgid ""
@@ -40456,6 +40451,18 @@ msgid ""
 "center of selected nodes. If any of the snap options are enabled, the pivot "
 "will also snap to them when dragged."
 msgstr ""
+"**Rotations-Pivotpunkt**: Legt den Rotations-Pivotpunkt fest, um den Nodes "
+"gedreht werden. Ein hinzugefügter Node hat standardmäßig den Pivotpunkt bei "
+"``x: 0``, ``y: 0``, mit Ausnahmen. Beispielsweise ist der Standarddrehpunkt "
+"für ein :ref:`Sprite2D <class_Sprite2D>` dessen Mitte, wenn die Eigenschaft "
+"``centered`` auf ``true`` gesetzt ist. Um den Pivotpunkt eines Nodes zu "
+"ändern, klicken Sie auf diesen Button und wählen Sie per Linksklick eine "
+"neue Position. Der Node dreht sich um diesen Punkt. Wenn mehrere Nodes "
+"ausgewählt sind, fügt dieses Symbol einen temporären Pivotpunkt hinzu, der "
+"von allen ausgewählten Nodes gemeinsam verwendet wird. Durch Drücken von "
+":kbd:`Shift` und Klicken auf diesen Button wird der Pivotpunkt in der Mitte "
+"der ausgewählten Nodes erstellt. Wenn eine der Einrastoptionen aktiviert "
+"ist, rastet der Pivotpunkt beim Ziehen automatisch an dieser ein."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:88
 msgid ""
@@ -40463,6 +40470,10 @@ msgid ""
 "accidentally selecting any nodes. In other modes, you can also "
 "hold :kbd:`Space` and drag with the left mouse button to do the same."
 msgstr ""
+"**Schwenk-Modus** (:kbd:`G`): Ermöglicht die Navigation im Viewport, ohne "
+"versehentlich Nodes auszuwählen. In anderen Modi können Sie dies auch "
+"erreichen, indem Sie :kbd:`Space` gedrückt halten und mit der linken "
+"Maustaste ziehen."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:90
 msgid ""
@@ -40474,11 +40485,18 @@ msgid ""
 "activates the ruler. If snapping is enabled, it also displays the "
 "measurements in terms of grid count:"
 msgstr ""
+"**Lineal-Modus**: Nach der Aktivierung klicken Sie auf den Viewport, um die "
+"aktuellen globalen x- und y-Koordinaten anzuzeigen. Durch Ziehen von einer "
+"Position zur anderen wird die Entfernung in Pixeln gemessen. Bei diagonalem "
+"Ziehen wird ein Dreieck gezeichnet und die einzelnen Entfernungen in x- und "
+"y-Richtung sowie die Gesamtentfernung zum Ziel inklusive der Winkel zu den "
+"Achsen in Grad angezeigt. Die Taste :kbd:`R` aktiviert das Lineal. Wenn die "
+"Einrastfunktion aktiviert ist, werden die Messwerte zusätzlich in "
+"Rasterpunkten angezeigt:"
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:99
-#, fuzzy
 msgid "Using ruler with snapping enabled."
-msgstr "Oder, wenn alle Optionen aktiviert sind:"
+msgstr "Verwendung eines Lineals mit aktivierter Einrastfunktion."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:101
 msgid ""
@@ -40486,6 +40504,10 @@ msgid ""
 "modes; and the rotation pivot. Customize it using the three-dot menu next to "
 "the snap tools."
 msgstr ""
+"**Intelligentes Einrasten verwenden**: Aktiviert/Deaktiviert das "
+"intelligente Einrasten für die Modi Verschieben, Drehen und Skalieren sowie "
+"den Pivotpunkt. Passen Sie die Einstellungen über das Dreipunkt-Menü neben "
+"den Einrastwerkzeugen an."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:103
 msgid ""
@@ -40493,6 +40515,9 @@ msgid ""
 "rotation pivot, and the ruler. Customize it using the three-dot menu next to "
 "the snap tools."
 msgstr ""
+"**Einrastraster verwenden**: Aktiviert/Deaktiviert das Einrasten am Raster "
+"für die Modi Verschieben, Drehen und Skalieren sowie den Pivotpunkt. Passen "
+"Sie die Einstellungen über das Dreipunkt-Menü neben den Einrastwerkzeugen an."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:106
 msgid ""
@@ -40500,18 +40525,25 @@ msgid ""
 "mode, ruler, and rotation pivot uses snapping. Use the three-dot menu for "
 "this:"
 msgstr ""
+"Sie können die Rastereinstellungen so anpassen, dass Verschieben, Drehen, "
+"Skalieren, Lineal und Pivotpunkt per Einrastfunktion funktionieren. "
+"Verwenden Sie dazu das Drei-Punkte-Menü:"
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:112
 msgid ""
 "**Use Rotation Snap**: Toggles snapping using the configured rotation "
 "setting."
 msgstr ""
+"**Rotationsraster verwenden**: Aktiviert/Deaktiviert das Einrasten anhand "
+"der konfigurierten Rotationseinstellung."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:113
 msgid ""
 "**Use Scale Snap**: Toggles snapping using the configured scaling step "
 "setting."
 msgstr ""
+"**Skalierungsraster verwenden**: Aktiviert/Deaktiviert das Einrasten anhand "
+"der konfigurierten Skalierungsschrittweite."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:114
 msgid ""
@@ -40520,6 +40552,11 @@ msgid ""
 "pixels and if the selected node is located at ``x: 1, y: 1``, then, enabling "
 "this option will temporarily shift the grids by ``x: 1, y: 1``."
 msgstr ""
+"**Relativ einrasten**: Aktiviert/Deaktiviert das Einrasten basierend auf den "
+"aktuellen Transformationswerten des ausgewählten Nodes. Wenn beispielsweise "
+"die Raster auf 32x32 Pixel eingestellt sind und sich der ausgewählte Node "
+"bei ``x: 1, y: 1`` befindet, werden die Raster durch Aktivieren dieser "
+"Option vorübergehend um ``x: 1, y: 1`` verschoben."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:118
 msgid ""
@@ -40530,18 +40567,32 @@ msgid ""
 "and `Project Settings > GUI > General > Snap Controls to Pixels` for Control "
 "nodes."
 msgstr ""
+"**Pixel-Einrasten verwenden**: Aktiviert/Deaktiviert die Verwendung von "
+"Subpixeln zum Einrasten. Ist diese Option aktiviert, werden die "
+"Positionswerte als ganze Zahlen angegeben; ist sie deaktiviert, werden "
+"Subpixel-Bewegungen als Dezimalwerte ermöglicht. Für die Laufzeit-"
+"Eigenschaft sollten Sie bei Node2D-Nodes die Option `Projekteinstellungen > "
+"Rendern > 2D > Einrasten` und bei Control-Nodes die Option "
+"`Projekteinstellungen > GUI > Allgemein > Control-Vertices auf Pixeln "
+"einrasten` überprüfen."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:123
 msgid ""
 "**Smart Snapping**: Provides a set of options to snap to specific positions "
 "if they are enabled:"
 msgstr ""
+"**Intelligentes Einrasten**: Bietet eine Reihe von Optionen zum Einrasten an "
+"bestimmten Positionen, sofern diese aktiviert sind:"
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:125
 msgid ""
 "Snap to Parent: Snaps to parent's edges. For example, scaling a child "
 "control node while this is enabled will snap to the boundaries of the parent."
 msgstr ""
+"Am übergeordneten Element ausrichten: Richtet sich an den Kanten des "
+"übergeordneten Elements aus. Wenn Sie beispielsweise einen untergeordneten "
+"Control-Node skalieren, während diese Option aktiviert ist, richtet er sich "
+"an den Grenzen des übergeordneten Elements aus."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:127
 msgid ""
@@ -40549,36 +40600,51 @@ msgid ""
 "a control node is positioned at different positions, enabling this will snap "
 "to the sides and corners of the anchor."
 msgstr ""
+"An Node-Anker ausrichten: Richtet den Node am Anker aus. Befinden sich die "
+"Anker eines Control-Nodes beispielsweise an unterschiedlichen Positionen, "
+"richtet sich die Ausrichtung durch Aktivieren dieser Option an den Seiten "
+"und Ecken des Ankers aus."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:130
 msgid ""
 "Snap to Node Sides: Snaps to the node's sides, such as for the rotation "
 "pivot or anchor positioning."
 msgstr ""
+"An Node-Seiten einrasten: Rastet an den Seiten des Nodes ein, z. B. für den "
+"Pivotpunkt oder die Ankerpositionierung."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:132
 msgid ""
 "Snap to Node Center: Snaps to the node's center, such as for the rotation "
 "pivot or anchor positioning."
 msgstr ""
+"Am Node-Mittelpunkt einrasten: Rastet am Mittelpunkt des Nodes ein, z. B. "
+"für den Pivotpunkt oder die Ankerpositionierung."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:134
 msgid ""
 "Snap to Other Nodes: Snaps to other nodes while moving or scaling. Useful to "
 "align nodes in the editor."
 msgstr ""
+"An anderen Nodes einrasten: Rastet Elemente beim Verschieben oder Skalieren "
+"an anderen Nodes ein. Nützlich zum Ausrichten von Nodes im Editor."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:136
 msgid ""
 "Snap to Guides: Snaps to custom guides drawn using the horizontal or "
 "vertical ruler. More on the ruler and guides below."
 msgstr ""
+"An Hilfslinien einrasten: Rastet an benutzerdefinierten Hilfslinien ein, die "
+"mit dem horizontalen oder vertikalen Lineal gezeichnet wurden. Mehr zum "
+"Lineal und den Hilfslinien weiter unten."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:141
 msgid ""
 "**Configure Snap**: Opens the window shown above, offering a set of snapping "
 "parameters."
 msgstr ""
+"**Einrasten konfigurieren**: Öffnet das oben gezeigte Fenster mit einer "
+"Reihe von Einrastparametern."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:143
 msgid ""
@@ -45756,7 +45822,6 @@ msgid "Using TileSets"
 msgstr "TileSets verwenden"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:9
-#, fuzzy
 msgid ""
 "A tilemap is a grid of tiles used to create a game's layout. There are "
 "several benefits to using :ref:`TileMapLayer <class_TileMapLayer>` nodes to "
@@ -45767,28 +45832,28 @@ msgid ""
 "allow you to add greater functionality to your tiles with collision, "
 "occlusion, and navigation shapes."
 msgstr ""
-"Eine Tilemap ist ein Raster aus Tiles, das zur Gestaltung eines Spiellayouts "
-"verwendet wird. Es gibt mehrere Vorteile bei der Verwendung "
-"von :ref:`TileMap <class_TileMap>`-Nodes, um Ihre Level zu gestalten. "
-"Erstens können Sie ein Layout zeichnen, indem Sie Tiles auf ein Raster "
-"\"malen\", was viel schneller ist, als einzelne :ref:`Sprite2D "
-"<class_Sprite2D>`-Nodes einzeln zu platzieren. Zweitens erlauben sie größere "
-"Levels, da sie für das Zeichnen einer großen Anzahl von Tiles optimiert "
-"sind. Und schließlich können Sie Ihren Tiles mit Kollisions-, Okklusions- "
-"und Navigations-Shapes eine größere Funktionalität verleihen."
+"Eine Tilemap ist ein Raster aus Tiles, das zum Erstellen des Spiellayouts "
+"verwendet wird. Die Verwendung von :ref:`TileMapLayer <class_TileMapLayer>`-"
+"Nodes beim Leveldesign bietet mehrere Vorteile. Erstens ermöglichen sie das "
+"Zeichnen eines Layouts durch das „Malen“ von Tiles auf ein Raster, was "
+"deutlich schneller ist als das Platzieren einzelner :ref:`Sprite2D "
+"<class_Sprite2D>`-Nodes. Zweitens ermöglichen sie größere Level, da sie für "
+"die Darstellung einer großen Anzahl von Tiles optimiert sind. Schließlich "
+"erlauben sie es, den Tiles zusätzliche Funktionen wie Kollisions-, "
+"Verdeckungs- und Navigationsformen hinzuzufügen."
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:18
-#, fuzzy
 msgid ""
 "To use TileMapLayer nodes, you will need to create a TileSet first. A "
 "TileSet is a collection of tiles that can be placed in a TileMapLayer node. "
 "After creating a TileSet, you will be able to place them :ref:`using the "
 "TileMap editor <doc_using_tilemaps>`."
 msgstr ""
-"Um Tilemaps zu verwenden, müssen Sie zunächst ein TileSet erstellen. Ein "
-"TileSet ist eine Sammlung von Tiles, die in einem TileMap Node platziert "
-"werden können. Nachdem Sie ein TileSet erstellt haben, können Sie "
-"sie :ref:`mit dem TileMap-Editor <doc_using_tilemaps>` platzieren."
+"Um TileMapLayer-Nodes zu verwenden, müssen Sie zunächst ein TileSet "
+"erstellen. Ein TileSet ist eine Sammlung von Tiles, die in einem "
+"TileMapLayer-Node platziert werden können. Nachdem Sie ein TileSet erstellt "
+"haben, können Sie die Tiles :ref:`mit dem TileMap-Editor <doc_using_tilemaps>"
+"` platzieren."
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:23
 msgid ""
@@ -45834,19 +45899,18 @@ msgstr ""
 "abstract-platformer>`__"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:46
-#, fuzzy
 msgid ""
 "Create a new **TileMapLayer** node, then select it and create a new TileSet "
 "resource in the inspector:"
 msgstr ""
-"Erstellen Sie einen neuen Node **TileMap**, wählen Sie ihn aus und erstellen "
-"Sie eine neue TileSet-Ressource im Inspektor:"
+"Erstellen Sie einen neuen **TileMapLayer** Node, wählen Sie ihn aus und "
+"erstellen Sie eine neue TileSet-Ressource im Inspektor:"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:48
 #: ../../docs/tutorials/2d/using_tilesets.rst:52
-#, fuzzy
 msgid "Creating a new TileSet resource within the TileMapLayer node"
-msgstr "Erstellen einer neuen TileSet-Ressource innerhalb des TileMap-Nodes"
+msgstr ""
+"Erstellen einer neuen TileSet-Ressource innerhalb des TileMapLayer-Nodes"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:54
 msgid ""
@@ -45885,7 +45949,6 @@ msgstr ""
 "entsprechen"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:71
-#, fuzzy
 msgid ""
 "If relying on automatic tiles creation (like we're about to do here), you "
 "must set the tile size **before** creating the *atlas*. The atlas will "
@@ -45895,8 +45958,8 @@ msgstr ""
 "Wenn Sie sich auf die automatische Erstellung von Tiles verlassen (wie wir "
 "es hier tun werden), müssen Sie die Größe der Tiles **vor** der Erstellung "
 "des *Atlas* festlegen. Der Atlas bestimmt, welche Tiles aus dem Tilesheet zu "
-"einem TileMap-Node hinzugefügt werden können (da nicht jeder Teil des Bildes "
-"ein gültiges Tile sein kann)."
+"einem TileMapLayer-Node hinzugefügt werden können (da nicht jeder Teil des "
+"Bildes ein gültiges Tile sein kann)."
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:76
 msgid ""
@@ -46038,16 +46101,15 @@ msgstr ""
 "einzelnen Tiles)."
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:137
-#, fuzzy
 msgid ""
 "**Texture Region Size:** The size of each tile on the atlas in pixels. In "
 "most cases, this should match the tile size defined in the TileMapLayer "
 "property (although this is not strictly necessary)."
 msgstr ""
-"**Textur-Regionsgröße:** Die Größe der einzelnen Tiles im Atlas in Pixeln. "
-"In den meisten Fällen sollte dies mit der in der Property TileMap "
-"definierten Tile-Größe übereinstimmen (obwohl dies nicht unbedingt "
-"erforderlich ist)."
+"**Texturbereichsgröße:** Die Größe der einzelnen Tiles im Atlas in Pixeln. "
+"In den meisten Fällen sollte diese der in der TileMapLayer-Eigenschaft "
+"definierten Tilegröße entsprechen (dies ist jedoch nicht zwingend "
+"erforderlich)."
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:140
 msgid ""
@@ -46087,7 +46149,6 @@ msgid "Using a collection of scenes"
 msgstr "Verwendung einer Sammlung von Szenen"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:160
-#, fuzzy
 msgid ""
 "You can also place actual *scenes* as tiles. This allows you to use any "
 "collection of nodes as a tile. For example, you could use scene tiles to "
@@ -46095,12 +46156,12 @@ msgid ""
 "with. You could also use scene tiles to place AudioStreamPlayer2Ds (for "
 "ambient sounds), particle effects, and more."
 msgstr ""
-"Seit Godot 4.0 können Sie tatsächliche *Szenen* als Tiles platzieren. So "
-"können Sie jede Sammlung von Nodes als Tile verwenden. Sie können zum "
-"Beispiel Szenen-Tiles verwenden, um Gameplay-Elemente zu platzieren, wie z. "
-"B. Geschäfte, mit denen der Spieler interagieren kann. Sie können Szenen-"
-"Tiles auch verwenden, um AudioStreamPlayer2Ds (für Umgebungsgeräusche), "
-"Partikeleffekte und mehr zu platzieren."
+"Sie können auch ganze *Szenen* als Tiles platzieren. Dadurch lässt sich jede "
+"beliebige Node-Gruppe als Tile verwenden. Beispielsweise können Sie Szenen-"
+"Nodes nutzen, um Spielelemente wie Geschäfte zu platzieren, mit denen der "
+"Spieler interagieren kann. Sie können Szenen-Tiles auch verwenden, um "
+"AudioStreamPlayer2Ds (für Umgebungsgeräusche), Partikeleffekte und vieles "
+"mehr zu platzieren."
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:168
 msgid ""
@@ -46112,7 +46173,6 @@ msgstr ""
 "instanziiert wird."
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:171
-#, fuzzy
 msgid ""
 "It's recommended to only use scene tiles when necessary. To draw sprites in "
 "a tile without any kind of advanced manipulation, :ref:`use atlases instead "
@@ -46124,7 +46184,6 @@ msgstr ""
 "<doc_creating_tilesets_using_tilesheet>`."
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:175
-#, fuzzy
 msgid ""
 "For this example, we'll create a scene containing a CPUParticles2D root "
 "node. Save this scene to a scene file (separate from the scene containing "
@@ -46134,9 +46193,9 @@ msgid ""
 msgstr ""
 "Für dieses Beispiel erstellen wir eine Szene, die einen CPUParticles2D Root-"
 "Node enthält. Speichern Sie diese Szene in einer Szenendatei (getrennt von "
-"der Szene mit der TileMap) und wechseln Sie dann zu der Szene, die den "
-"TileMap-Node enthält. Öffnen Sie den TileSet-Editor und erstellen Sie eine "
-"neue **Szenensammlung** in der linken Spalte:"
+"der Szene mit der TileMapLayer) und wechseln Sie dann zu der Szene, die den "
+"TileMapLayer-Node enthält. Öffnen Sie den TileSet-Editor und erstellen Sie "
+"eine neue **Szenensammlung** in der linken Spalte:"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:180
 #: ../../docs/tutorials/2d/using_tilesets.rst:184
@@ -46292,10 +46351,9 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:258
 msgid "Adding collision, navigation and occlusion to the TileSet"
-msgstr "Hinzufügen von Kollision, Navigation und Occlusion zum TileSet"
+msgstr "Hinzufügen von Kollision, Navigation und Verdeckungen zum TileSet"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:260
-#, fuzzy
 msgid ""
 "We've now successfully created a basic TileSet. We could start using it in "
 "the TileMapLayer node now, but it currently lacks any form of collision "
@@ -46303,9 +46361,9 @@ msgid ""
 "through the floor or walls."
 msgstr ""
 "Wir haben nun erfolgreich ein grundlegendes TileSet erstellt. Wir könnten "
-"nun den TileMap-Node verwenden, aber dieser verfügt derzeit über keine Form "
-"der Kollisionserkennung. Das bedeutet, dass der Spieler und andere Objekte "
-"direkt durch den Boden oder die Wände laufen könnten."
+"nun den TileMapLayer-Node verwenden, aber dieser verfügt derzeit über keine "
+"Form der Kollisionserkennung. Das bedeutet, dass der Spieler und andere "
+"Objekte direkt durch den Boden oder die Wände laufen könnten."
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:265
 msgid ""
@@ -46330,7 +46388,6 @@ msgstr ""
 "auf dem TileSet definiert werden."
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:273
-#, fuzzy
 msgid ""
 "To be able to define collision, navigation and occlusion shapes for each "
 "tile, you will need to create a physics, navigation or occlusion layer for "
@@ -46338,22 +46395,21 @@ msgid ""
 "the TileSet property value in the inspector to edit it then unfold **Physics "
 "Layers** and choose **Add Element**:"
 msgstr ""
-"Um Kollisions-, Navigations- und Occlusion-Shapes für jede Tile definieren "
+"Um Kollisions-, Navigations- und Verdeckungsformen für jede Tile definieren "
 "zu können, müssen Sie zunächst eine Physik-, Navigations- oder Occlusion-"
 "Schicht für die TileSet-Ressource erstellen. Wählen Sie dazu den Node "
-"TileMap aus, klicken Sie im Inspektor auf den Property-Wert TileSet, um ihn "
-"zu bearbeiten, klappen Sie dann **Physik-Ebenen** auf und wählen Sie "
+"TileMapLayer aus, klicken Sie im Inspektor auf den Eigenschaftswert TileSet, "
+"um ihn zu bearbeiten, klappen Sie dann **Physik-Ebenen** auf und wählen Sie "
 "**Element hinzufügen**:"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:279
 #: ../../docs/tutorials/2d/using_tilesets.rst:283
-#, fuzzy
 msgid ""
 "Creating a physics layer in the TileSet resource inspector (within the "
 "TileMapLayer node)"
 msgstr ""
 "Erstellen einer Physik-Ebene im TileSet-Ressourceninspektor (innerhalb des "
-"TileMap-Nodes)"
+"TileMapLayer-Nodes)"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:285
 msgid ""
@@ -46365,31 +46421,29 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:287
 #: ../../docs/tutorials/2d/using_tilesets.rst:291
-#, fuzzy
 msgid ""
 "Creating a navigation layer in the TileSet resource inspector (within the "
 "TileMapLayer node)"
 msgstr ""
 "Erstellen einer Navigationsebene im TileSet-Ressourceninspektor (innerhalb "
-"des TileMap-Nodes)"
+"des TileMapLayer-Nodes)"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:293
 msgid ""
 "If you need support for light polygon occluders, now is a good time to "
 "create an occlusion layer:"
 msgstr ""
-"Wenn Sie Unterstützung für Licht-Polygon-Occluder benötigen, ist jetzt ein "
-"guter Zeitpunkt, um eine Okklusionsebene zu erstellen:"
+"Wenn Sie Unterstützung für Licht-Polygon-Verdeckungen benötigen, ist jetzt "
+"ein guter Zeitpunkt, um eine Verdeckungsebene zu erstellen:"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:295
 #: ../../docs/tutorials/2d/using_tilesets.rst:299
-#, fuzzy
 msgid ""
 "Creating an occlusion layer in the TileSet resource inspector (within the "
 "TileMapLayer node)"
 msgstr ""
-"Erstellen einer Occlusion-Ebene im TileSet-Ressourceninspektor (innerhalb "
-"des TileMap-Nodes)"
+"Erstellen einer Verdeckungsebene im TileSet-Ressourceninspektor (innerhalb "
+"des TileMapLayer-Nodes)"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:303
 msgid ""
@@ -46572,20 +46626,19 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:382
 #: ../../docs/tutorials/2d/using_tilesets.rst:386
-#, fuzzy
 msgid ""
 "Creating a custom data layer in the TileSet resource inspector (within the "
 "TileMapLayer node)"
 msgstr ""
 "Erstellen einer benutzerdefinierten Datenebene im TileSet-"
-"Ressourceninspektor (innerhalb des TileMap-Nodes)"
+"Ressourceninspektor (innerhalb des TileMapLayer-Nodes)"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:388
 #: ../../docs/tutorials/2d/using_tilesets.rst:392
 msgid "Example of configured custom data layers with game-specific properties"
 msgstr ""
 "Beispiel für konfigurierte benutzerdefinierte Datenebenen mit "
-"spielspezifischen Propertys"
+"spielspezifischen Eigenschaften"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:394
 msgid ""
@@ -46594,20 +46647,17 @@ msgid ""
 msgstr ""
 "Sie können benutzerdefinierte Daten neu anordnen, ohne bestehende Metadaten "
 "zu zerstören: Der TileSet-Editor wird automatisch aktualisiert, nachdem "
-"benutzerdefinierte Daten-Propertys neu angeordnet wurden."
+"benutzerdefinierte Dateneigenschaften neu angeordnet wurden."
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:397
-#, fuzzy
 msgid ""
 "With the custom data layers example shown above, we're assigning a tile to "
 "have the ``damage_per_second`` metadata set to ``25`` and the "
 "``destructible`` metadata to ``false``:"
 msgstr ""
-"Beachten Sie, dass im Editor die Namen der Propertys nicht erscheinen (nur "
-"ihr Index, in der Reihenfolge, in der sie definiert sind). In dem oben "
-"gezeigten Beispiel für benutzerdefinierte Datenebenen weisen wir einer Tile "
-"die Metadaten ``damage_per_second`` auf ``25`` und ``destructible`` auf "
-"``false`` zu:"
+"In dem oben gezeigten Beispiel für benutzerdefinierte Datenebenen weisen wir "
+"einer Tile die Metadaten ``damage_per_second`` auf ``25`` und "
+"``destructible`` auf ``false`` zu:"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:401
 #: ../../docs/tutorials/2d/using_tilesets.rst:405
@@ -46681,7 +46731,6 @@ msgstr ""
 "schwierig sein und eine Menge Code erfordern."
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:439
-#, fuzzy
 msgid ""
 "Godot offers *terrains* to perform this kind of tile connection "
 "automatically. This allows you to have the \"correct\" tile variants "
@@ -46713,23 +46762,21 @@ msgstr ""
 "den Funktionen des `Tiled <https://www.mapeditor.org/>`__-Editors."
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:452
-#, fuzzy
 msgid ""
 "Select the TileMapLayer node, go to the inspector and create a new terrain "
 "set within the TileSet *resource*:"
 msgstr ""
-"Wählen Sie den TileMap-Node, gehen Sie zum Inspektor und erstellen Sie ein "
-"neues Terrain-Set innerhalb der TileSet-*Ressource*:"
+"Wählen Sie den TileMapLayer-Node, gehen Sie zum Inspektor und erstellen Sie "
+"ein neues Terrain-Set innerhalb der TileSet-*Ressource*:"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:454
 #: ../../docs/tutorials/2d/using_tilesets.rst:458
-#, fuzzy
 msgid ""
 "Creating a terrain set in the TileSet resource inspector (within the "
 "TileMapLayer node)"
 msgstr ""
 "Erstellen eines Terrainsets im TileSet-Ressourceninspektor (innerhalb des "
-"TileMap-Nodes)"
+"TileMapLayer-Nodes)"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:460
 msgid ""
@@ -46833,14 +46880,14 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:519
 msgid "Assigning properties to multiple tiles at once"
-msgstr "Zuweisung von Propertys zu mehreren Kacheln auf einmal"
+msgstr "Zuweisung von Eigenschaften zu mehreren Tiles auf einmal"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:521
 msgid ""
 "There are two ways to assign properties to multiple tiles at once. Depending "
 "on your use cases, one method may be faster than the other:"
 msgstr ""
-"Es gibt zwei Möglichkeiten, mehreren Tiles gleichzeitig Propertys "
+"Es gibt zwei Möglichkeiten, mehreren Tiles gleichzeitig Eigenschaften "
 "zuzuweisen. Je nach Anwendungsfall kann die eine Methode schneller sein als "
 "die andere:"
 
@@ -46849,13 +46896,13 @@ msgid "Using multiple tile selection"
 msgstr "Mehrfachauswahl von Tiles verwenden"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:527
-#, fuzzy
 msgid ""
 "If you wish to configure various properties on several tiles at once, choose "
 "the **Select** mode at the top of the TileSet editor:"
 msgstr ""
-"Wenn Sie verschiedene Propertys für mehrere Tiles gleichzeitig konfigurieren "
-"möchten, wählen Sie den Modus **Auswählen** oben im TileSet-Editor:"
+"Wenn Sie verschiedene Eigenschaften für mehrere Tiles gleichzeitig "
+"konfigurieren möchten, wählen Sie den Modus **Auswählen** oben im TileSet-"
+"Editor:"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:530
 msgid ""
@@ -46906,15 +46953,15 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:553
 msgid "Using tile property painting"
-msgstr "Verwenden von Tile-Property-Malen"
+msgstr "Verwenden von Tile-Mal-Eigenschaft"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:555
 msgid ""
 "If you wish to apply a single property to several tiles at once, you can use "
 "the *property painting* mode for this purpose."
 msgstr ""
-"Wenn Sie eine einzelne Property auf mehrere Tiles gleichzeitig anwenden "
-"möchten, können Sie dazu den Modus *Property-Malen* verwenden."
+"Wenn Sie eine einzelne Eigenschaft auf mehrere Tiles gleichzeitig anwenden "
+"möchten, können Sie dazu den Modus *Mal-Eigenschaft* verwenden."
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:558
 msgid ""
@@ -46922,23 +46969,23 @@ msgid ""
 "(or hold down the left mouse button) in the right column to \"paint\" "
 "properties onto tiles."
 msgstr ""
-"Konfigurieren Sie in der mittleren Spalte eine Property, die gezeichnet "
+"Konfigurieren Sie in der mittleren Spalte eine Eigenschaft, die gezeichnet "
 "werden soll, und klicken Sie dann in der rechten Spalte auf Tiles (oder "
-"halten Sie die linke Maustaste gedrückt), um Propertys auf Tiles zu "
+"halten Sie die linke Maustaste gedrückt), um Eigenschaften auf Tiles zu "
 "\"malen\"."
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:562
 #: ../../docs/tutorials/2d/using_tilesets.rst:566
 msgid "Painting tile properties using the TileSet editor"
-msgstr "Malen von Tile Propertys mit dem TileSet-Editor"
+msgstr "Malen von Tile Eigenschaften mit dem TileSet-Editor"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:568
 msgid ""
 "Tile property painting is especially useful with properties that are time-"
 "consuming to set manually, such as collision shapes:"
 msgstr ""
-"Das Malen von Tile-Propertys ist besonders nützlich bei Propertys, deren "
-"manuelle Einstellung zeitaufwändig ist, wie z. B. bei Kollisions-Shapes:"
+"Das Malen von Tile-Eigenschaften ist besonders nützlich bei Eigenschaften, "
+"deren manuelle Festlegung zeitaufwändig ist, wie z. B. Kollisionsformen:"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:571
 #: ../../docs/tutorials/2d/using_tilesets.rst:575
@@ -47106,7 +47153,6 @@ msgstr ""
 "die Kachel vor anderen auf derselben Ebene gerendert."
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:640
-#, fuzzy
 msgid ""
 "**Y Sort Origin:** The vertical offset to use for tile sorting based on its "
 "Y coordinate (in pixels). This allows using layers as if they were on "
@@ -47114,13 +47160,13 @@ msgid ""
 "issues with sorting certain tiles. Only effective if **Y Sort Enabled** is "
 "``true`` on the TileMapLayer node under **CanvasItem > Ordering**"
 msgstr ""
-"**Y-Sortierungsursprung:** Der vertikale Offset, der für die Sortierung der "
-"Tiles basierend auf ihrer Y-Koordinate (in Pixel) verwendet wird. Dies "
-"ermöglicht die Verwendung von Ebenen, wie wenn sie auf verschiedenen Höhen "
-"bei Top-Down-Spiele wären. Die Anpassung dieses Wertes kann helfen, Probleme "
-"bei der Sortierung bestimmter Tiles zu beheben. Nur wirksam, wenn **Y-"
-"Sortierung aktiviert** auf dem TileMap Layer, auf dem das Tile platziert "
-"ist, auf ``true`` steht."
+"**Y-Sortierursprung:** Der vertikale Versatz für die Sortierung der Tiles "
+"basierend auf der Y-Koordinate (in Pixeln). Dadurch können Ebenen in Top-"
+"Down-Spielen so verwendet werden, als befänden sie sich auf "
+"unterschiedlichen Höhen. Durch Anpassen dieses Wertes lassen sich Probleme "
+"bei der Sortierung bestimmter Tiles beheben. Diese Einstellung ist nur "
+"wirksam, wenn **Y-Sortierung aktiviert** im TileMapLayer-Node unter "
+"**CanvasItem > Ordering** auf ``true`` gesetzt ist."
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:646
 msgid ""
@@ -47161,7 +47207,6 @@ msgstr ""
 "TileMap zu erstellen."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:15
-#, fuzzy
 msgid ""
 "A tilemap is a grid of tiles used to create a game's layout. There are "
 "several benefits to using :ref:`TileMapLayer <class_TileMapLayer>` nodes to "
@@ -47172,20 +47217,19 @@ msgid ""
 "numbers of tiles. Finally, you can add collision, occlusion, and navigation "
 "shapes to tiles, adding greater functionality to the TileMap."
 msgstr ""
-"Eine Tilemap ist ein Raster aus Tiles, das für das Layout eines Spiels "
-"verwendet wird. Die Verwendung von :ref:`TileMap <class_TileMap>`-Nodes für "
-"die Gestaltung von Levels hat mehrere Vorteile. Erstens ermöglichen sie es, "
-"das Layout zu zeichnen, indem man die Tiles auf ein Gitter \"malt\", was "
-"viel schneller ist, als einzelne :ref:`Sprite2D <class_Sprite2D>`-Nodes "
-"einzeln zu platzieren. Zweitens ermöglichen sie viel größere Levels, da sie "
-"für das Zeichnen einer großen Anzahl von Tiles optimiert sind. Schließlich "
-"können Sie den Tiles Kollisions-, Okklusions- und Navigations-Shapes "
-"hinzufügen, was der TileMap eine größere Funktionalität verleiht."
+"Eine Tilemap ist ein Raster aus Tiles, das zum Erstellen des Spiellayouts "
+"verwendet wird. Die Verwendung von :ref:`TileMapLayer <class_TileMapLayer>`-"
+"Nodes beim Leveldesign bietet mehrere Vorteile. Erstens ermöglichen sie das "
+"Zeichnen eines Layouts durch das „Malen“ von Tiles auf ein Raster, was "
+"deutlich schneller ist als das Platzieren einzelner :ref:`Sprite2D "
+"<class_Sprite2D>`-Nodes. Zweitens ermöglichen sie größere Level, da sie für "
+"die Darstellung einer großen Anzahl von Tiles optimiert sind. Schließlich "
+"erlauben sie es, den Tiles zusätzliche Funktionen wie Kollisions-, "
+"Verdeckungs- und Navigationsformen hinzuzufügen."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:25
-#, fuzzy
 msgid "Specifying the TileSet in the TileMapLayer"
-msgstr "Festlegen des TileSet in der TileMap"
+msgstr "Festlegen des TileSet in der TileMapLayer"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:27
 #, fuzzy

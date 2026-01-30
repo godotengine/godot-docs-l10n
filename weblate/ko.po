@@ -133,7 +133,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-01-23 13:08+0100\n"
-"PO-Revision-Date: 2026-01-23 09:50+0000\n"
+"PO-Revision-Date: 2026-01-30 06:10+0000\n"
 "Last-Translator: Myeongjin <aranet100@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
@@ -11469,9 +11469,9 @@ msgid ""
 "move the node automatically and not wait for user input. Replace it with the "
 "following code, which we saw two lessons ago:"
 msgstr ""
-"게임을 시도해보기 전에, 사용자 입력을 기다리지 않고 노드를 자동으로 이동하도"
-"록 ``_process()`` 함수를 단순화해야 합니다. 이 함수를 지난 두 수업 전에 보았"
-"던 다음 코드로 대체합니다:"
+"게임을 시도해보기 전에, 사용자 입력을 기다리지 않고 노드를 자동으로 "
+"이동하도록 ``_process()`` 함수를 단순화해야 합니다. 이 함수를 지난 두 수업 "
+"전에 보았던 다음 코드로 대체합니다:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:213
 #, fuzzy
@@ -12437,8 +12437,8 @@ msgid ""
 "The \"Listening for Input...\" field should automatically be selected. Press "
 "the \"right\" key on your keyboard, and the menu should look like this now."
 msgstr ""
-"\"입력 대기 중...\" 필드가 자동으로 선택됩니다. 키보드에서 \"오른쪽\" 키를 누"
-"르면 메뉴가 이제 다음과 같아야 합니다."
+"\"입력을 받는 중...\" 필드가 자동으로 선택됩니다. 키보드에서 \"오른쪽\" 키를 "
+"누르면 메뉴가 이제 다음과 같아야 합니다."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:118
 msgid ""
@@ -14620,9 +14620,9 @@ msgid ""
 "there's a powerful system that allows you to assign a label to a set of keys "
 "and buttons. This simplifies our scripts and makes them more readable."
 msgstr ""
-"캐릭터를 움직이기 위해 플레이어의 입력, 예를 들어 화살표 키를 누르는 것을 감"
-"지할 것입니다. Godot에서는 모든 키 바인딩을 코드로 작성할 수 있지만, 키와 버"
-"튼 세트에 레이블을 할당할 수 있는 강력한 시스템이 있습니다. 이는 스크립트를 "
+"캐릭터를 움직이기 위해 화살표 키를 누르는 것과 같은 플레이어의 입력을 받을 "
+"것입니다. Godot에서는 모든 키 바인딩을 코드로 작성할 수 있지만, 키와 버튼 "
+"세트에 레이블을 할당할 수 있는 강력한 시스템이 있습니다. 이는 스크립트를 "
 "단순화하고 더 읽기 쉽게 만듭니다."
 
 #: ../../docs/getting_started/first_3d_game/02.player_input.rst:98
@@ -17208,8 +17208,8 @@ msgid ""
 "We'll now add the ability to play again after dying. When the player dies, "
 "we'll display a message on the screen and wait for input."
 msgstr ""
-"이제 죽은 후에 다시 플레이할 수 있는 기능을 추가해 보겠습니다. 플레이어가 죽"
-"으면 화면에 메시지를 표시하고 입력을 기다리도록 할 것입니다."
+"이제 죽은 후에 다시 플레이할 수 있는 기능을 추가해 보겠습니다. 플레이어가 "
+"죽으면 화면에 메시지를 표시하고 입력을 기다리도록 할 것입니다."
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:183
 msgid ""
@@ -17316,9 +17316,9 @@ msgid ""
 "the built-in ``_unhandled_input()`` callback, which is triggered on any "
 "input."
 msgstr ""
-"마지막으로, ``Retry`` 노드가 표시될 때 플레이어의 입력을 감지해, 엔터 키를 누"
-"르면 게임을 다시 시작해야 합니다. 이를 위해, 모든 입력에서 호출되는 내장 콜"
-"백 함수 ``_unhandled_input()``를 이용할 것입니다."
+"마지막으로, ``Retry`` 노드가 보일 때 플레이어의 입력을 받아, 엔터 키를 "
+"누르면 게임을 다시 시작해야 합니다. 이를 위해, 모든 입력에서 호출되는 내장 "
+"콜백 함수 ``_unhandled_input()``\\ 를 이용할 것입니다."
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:266
 msgid ""
@@ -17896,11 +17896,11 @@ msgid ""
 "OK to close the window."
 msgstr ""
 "다음으로 ``mob.tscn``\\ 을 열고, :ref:`AnimationPlayer "
-"<class_AnimationPlayer>` 자식 노드를 생성하고 선택합니다. **애니메이션 > 애니"
-"메이션 관리**\\ 를 클릭한 다음 **라이브러리 추가**\\ 를 클릭합니다. \"전역 라"
-"이브러리가 생성됩니다.\"라는 메시지가 표시됩니다. 텍스트 필드를 비워두고 확인"
-"을 클릭합니다. *붙여넣기* 아이콘(클립보드)을 클릭하면 창에 나타납니다. 확인"
-"을 클릭하여 창을 닫습니다."
+"<class_AnimationPlayer>` 자식 노드를 생성하고 선택합니다. **애니메이션 > "
+"애니메이션 관리**\\ 를 클릭한 다음 **라이브러리 추가**\\ 를 클릭합니다. "
+"\"전역 라이브러리가 생성됩니다.\"라는 메시지가 표시됩니다. 텍스트 필드를 "
+"비워 두고 확인을 클릭합니다. *붙여넣기* 아이콘(클립보드)을 클릭하면 창에 "
+"나타납니다. 확인을 클릭하여 창을 닫습니다."
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:272
 msgid ""
@@ -20979,8 +20979,8 @@ msgid ""
 "file should be empty. It does not support patterns like ``.gitignore`` files "
 "do."
 msgstr ""
-"``.gdignore`` 파일은 ``.gitignore`` 처럼 패턴을 지원하지 않고 그냥 내용이 무"
-"시되므로 파일의 내용은 비워두는게 좋습니다."
+"``.gdignore`` 파일은 ``.gitignore`` 처럼 패턴을 지원하지 않고 그냥 내용이 "
+"무시되므로 파일의 내용은 비워 두는게 좋습니다."
 
 #: ../../docs/tutorials/best_practices/project_organization.rst:100
 msgid "Case sensitivity"
@@ -79733,9 +79733,8 @@ msgstr "언어"
 #: ../../docs/tutorials/i18n/locales.rst:19
 #: ../../docs/tutorials/i18n/locales.rst:1256
 #: ../../docs/tutorials/i18n/locales.rst:1641
-#, fuzzy
 msgid "Name"
-msgstr "루트 이름"
+msgstr "이름"
 
 #: ../../docs/tutorials/i18n/locales.rst:21
 msgid "aa"
