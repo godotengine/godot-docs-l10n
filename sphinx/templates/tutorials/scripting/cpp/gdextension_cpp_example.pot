@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -132,11 +132,11 @@ msgid "Now it's time to build an actual plugin. We'll start by creating an empty
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:106
-msgid "Open Godot and create a new project. For this example, we will place it in a folder called ``demo`` inside our GDExtension's folder structure."
+msgid "Open Godot and create a new project. For this example, we will place it in a folder called ``project`` inside our GDExtension's folder structure."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:109
-msgid "In our demo project, we'll create a scene containing a Node called \"Main\" and we'll save it as ``main.tscn``. We'll come back to that later."
+msgid "In our project, we'll create a scene containing a Node called \"Main\" and we'll save it as ``main.tscn``. We'll come back to that later."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:112
@@ -144,7 +144,7 @@ msgid "Back in the top-level GDExtension module folder, we're also going to crea
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:115
-msgid "You should now have ``demo``, ``godot-cpp``, and ``src`` directories in your GDExtension module."
+msgid "You should now have ``project``, ``godot-cpp``, and ``src`` directories in your GDExtension module."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:118
@@ -240,11 +240,11 @@ msgid "This ``SConstruct`` file was written to be used with the latest ``godot-c
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:310
-msgid "Once you've downloaded the ``SConstruct`` file, place it in your GDExtension folder structure alongside ``godot-cpp``, ``src`` and ``demo``, then run:"
+msgid "Once you've downloaded the ``SConstruct`` file, place it in your GDExtension folder structure alongside ``godot-cpp``, ``src``, and ``project``, then run:"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:317
-msgid "You should now be able to find the module in ``demo/bin/<platform>``."
+msgid "You should now be able to find the module in ``project/bin/<platform>``."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:321
@@ -256,7 +256,7 @@ msgid "Using the GDExtension module"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:328
-msgid "Before we jump back into Godot, we need to create one more file in ``demo/bin/``."
+msgid "Before we jump back into Godot, we need to create one more file in ``project/bin/``."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:331

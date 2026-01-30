@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -255,11 +255,11 @@ msgid "Local Coords"
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:250
-msgid "By default this option is on, and it means that the space that particles are emitted to is relative to the node. If the node is moved, all particles are moved with it:"
+msgid "By default, this option is off. It means that the space that particles are emitted to is global, and **not** relative to the node. If the node is moved, existing particles are not moved with it:"
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:256
-msgid "If disabled, particles will emit to global space, meaning that if the node is moved, already emitted particles are not affected:"
+msgid "If enabled, particles will emit to local space, meaning that if the node is moved, already emitted particles are also affected:"
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:262

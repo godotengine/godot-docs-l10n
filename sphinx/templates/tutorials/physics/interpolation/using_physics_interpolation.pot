@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -199,4 +199,12 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/interpolation/using_physics_interpolation.rst:153
 msgid "The other great advantage to testing at a low tick rate is you can often notice other game systems that are synchronized to the physics tick and creating glitches which you may want to work around. Typical examples include setting animation blend values, which you may decide to set in ``_process()`` and interpolate manually."
+msgstr ""
+
+#: ../../docs/tutorials/physics/interpolation/using_physics_interpolation.rst:160
+msgid "In 2D, the position of visible collision shapes shown by the :menu:`Debug > Visible Collision Shapes` option **will** take physics interpolation into account."
+msgstr ""
+
+#: ../../docs/tutorials/physics/interpolation/using_physics_interpolation.rst:164
+msgid "By contrast, in 3D, the position of visible collision shapes **will not** take physics interpolation into account. This means the visible collision shapes can appear to move less smoothly and appear slightly in front of the object's visual representation when the object is moving. This is not a bug, but a consequence of how physics interpolation is implemented in 3D."
 msgstr ""

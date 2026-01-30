@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -411,98 +411,98 @@ msgstr ""
 msgid "To better support tablets and foldable phones (which frequently feature displays with aspect ratios close to 4:3), consider using a base resolution that has a 3:4 aspect ratio while following the rest of the instructions here. For instance, you can set the base window width to ``960`` and the base window height to ``1280``."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:485
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:487
 msgid "Non-game application"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:487
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:489
 msgid "Set the base window width and height to the smallest window size that you intend to target. This is not required, but this ensures that you design your UI with small window sizes in mind."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:489
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:491
 msgid "Keep the stretch mode to its default value, ``disabled``."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:490
-msgid "Keep the stretch aspect to its default value, ``ignore`` (its value won't be used since the stretch mode is ``disabled``)."
-msgstr ""
-
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:492
-msgid "You can define a minimum window size by calling ``get_window().set_min_size()`` in a script's ``_ready()`` function. This prevents the user from resizing the application below a certain size, which could break the UI layout."
+msgid "Keep the stretch aspect to its default value, ``keep`` (its value won't be used since the stretch mode is ``disabled``)."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:495
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:494
+msgid "You can define a minimum window size by setting ``get_window().min_size`` in a script's ``_ready()`` function. This prevents the user from resizing the application below a certain size, which could break the UI layout."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:497
 msgid "Add a setting in the application's settings to change the root viewport's :ref:`stretch scale <doc_multiple_resolutions_stretch_scale>`, so that the UI can be made larger to account for hiDPI displays. See also the section on hiDPI support below."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:501
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:503
 msgid "hiDPI support"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:503
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:505
 msgid "By default, Godot projects are considered DPI-aware by the operating system. This is controlled by the **Display > Window > DPI > Allow hiDPI** project setting, which should be left enabled whenever possible. Disabling DPI awareness can break fullscreen behavior on Windows."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:508
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:510
 msgid "Since Godot projects are DPI-aware, they may appear at a very small window size when launching on an hiDPI display (proportionally to the screen resolution). For a game, the most common way to work around this issue is to make them fullscreen by default. Alternatively, you could set the window size in an :ref:`autoload <doc_singletons_autoload>`'s ``_ready()`` function according to the screen size."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:515
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:517
 msgid "To ensure 2D elements don't appear too small on hiDPI displays:"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:517
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:519
 msgid "For games, use the ``canvas_items`` or ``viewport`` stretch modes so that 2D elements are automatically resized according to the current window size."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:519
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:521
 msgid "For non-game applications, use the ``disabled`` stretch mode and set the stretch scale to a value corresponding to the display scale factor in an :ref:`autoload <doc_singletons_autoload>`'s ``_ready()`` function. The display scale factor is set in the operating system's settings and can be queried using :ref:`screen_get_scale <class_DisplayServer_method_screen_get_scale>`. This method is currently implemented on Android, iOS, Linux (Wayland only), macOS and Web. On other platforms, you'll have to implement a method to guess the display scale factor based on the screen resolution (with a setting to let the user override this if needed). This is the approach currently used by the Godot editor."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:529
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:531
 msgid "The **Allow hiDPI** setting is only effective on Windows and macOS. It's ignored on all other platforms."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:534
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:536
 msgid "The Godot editor itself is always marked as DPI-aware. Running the project from the editor will only be DPI-aware if **Allow hiDPI** is enabled in the Project Settings."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:541
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:543
 msgid "Reducing aliasing on downsampling"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:543
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:545
 msgid "If the game has a very high base resolution (e.g. 3840×2160), aliasing might appear when downsampling to something considerably lower like 1280×720."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:546
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:548
 msgid "To resolve this, you can :ref:`enable mipmaps <doc_importing_images_mipmaps>` on all your 2D textures. However, enabling mipmaps will increase memory usage which can be an issue on low-end mobile devices."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:551
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:553
 msgid "Handling aspect ratios"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:553
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:555
 msgid "Once scaling for different resolutions is accounted for, make sure that your *user interface* also scales for different aspect ratios. This can be done using :ref:`anchors <doc_size_and_anchors>` and/or :ref:`containers <doc_gui_containers>`."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:559
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:561
 msgid "Field of view scaling"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:561
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:563
 msgid "The 3D Camera node's **Keep Aspect** property defaults to the **Keep Height** scaling mode (also called *Hor+*). This is usually the best value for desktop games and mobile games in landscape mode, as widescreen displays will automatically use a wider field of view."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:566
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:568
 msgid "However, if your 3D game is intended to be played in portrait mode, it may make more sense to use **Keep Width** instead (also called *Vert-*). This way, smartphones with an aspect ratio taller than 16:9 (e.g. 19:9) will use a *taller* field of view, which is more logical here."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:572
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:574
 msgid "Scaling 2D and 3D elements differently"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:574
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:576
 msgid "To render 3D at a different resolution from 2D elements (such as the UI), use Godot's :ref:`resolution scaling <doc_resolution_scaling>` functionality. This allows you to control the resolution scale factor used for 3D without needing to use a separate Viewport node. This can either be used to improve performance by rendering 3D at a lower resolution, or improve quality via supersampling."
 msgstr ""

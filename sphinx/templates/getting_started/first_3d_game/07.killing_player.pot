@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -88,7 +88,7 @@ msgid "image3"
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:50
-msgid "When areas detect a collision, they emit signals. We're going to connect one to the ``Player`` node. Select ``MobDetector`` and go to *Inspector*'s *Node* tab, double-click the ``body_entered`` signal and connect it to the ``Player``"
+msgid "When areas detect a collision, they emit signals. We're going to connect one to the ``Player`` node. Select ``MobDetector`` and go to the Signals dock, double-click the ``body_entered`` signal and connect it to the ``Player``"
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:54
@@ -116,7 +116,7 @@ msgid "We can use the ``Player``\\ 's ``hit`` signal to end the game. All we nee
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:110
-msgid "Open ``main.tscn``, select the ``Player`` node, and in the *Node* dock, connect its ``hit`` signal to the ``Main`` node."
+msgid "Open ``main.tscn``, select the ``Player`` node, and in the *Signals* dock, connect its ``hit`` signal to the ``Main`` node."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:113

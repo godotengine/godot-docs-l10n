@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -304,7 +304,7 @@ msgid "A demo project"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:639
-msgid "Now that we can create and free our custom object, we should be able to try it out in an actual project. For this, you need to open Godot and create a new project on the ``demo`` folder. The project manager may warn you the folder isn't empty if you have compiled the extension before, you can safely ignore this warning this time."
+msgid "Now that we can create and free our custom object, we should be able to try it out in an actual project. For this, you need to open Godot and create a new project in the ``project`` folder. The project manager may warn you the folder isn't empty if you have compiled the extension before, you can safely ignore this warning this time."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:645
@@ -312,7 +312,7 @@ msgid "If you didn't compile the extension yet, it is the time to do it now. To 
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:650
-msgid "Then, create a file called ``gdexample.gdextension`` inside the ``demo`` folder. This is a Godot resource that describes the extension, allowing the engine to properly load it. Put the following content in this file:"
+msgid "Then, create a file called ``gdexample.gdextension`` inside the ``project`` folder. This is a Godot resource that describes the extension, allowing the engine to properly load it. Put the following content in this file:"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:666
@@ -520,7 +520,7 @@ msgid "Since this function is already being called by the initialization process
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:1311
-msgid "If you compile the code and reopen the demo project, nothing will be different at first, since we only added two new methods. To ensure those are registered properly, you can search for ``GDExample`` in the editor help and verify they are present in the documentation page."
+msgid "If you compile the code and reopen the Godot project, nothing will be different at first, since we only added two new methods. To ensure those are registered properly, you can search for ``GDExample`` in the editor help and verify they are present in the documentation page."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:1320
@@ -644,7 +644,7 @@ msgid "The only thing missing is using those callbacks when the class is registe
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:1620
-msgid "This is enough to bind the virtual method. If you build the extension and run the demo project again, the ``_process()`` function will be called. You just won't be able to tell since the function itself does nothing visible. We will solve this now by making the custom node move following a pattern."
+msgid "This is enough to bind the virtual method. If you build the extension and run the Godot project again, the ``_process()`` function will be called. You just won't be able to tell since the function itself does nothing visible. We will solve this now by making the custom node move following a pattern."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:1625
@@ -808,7 +808,7 @@ msgid "This updates the time passed for the signal emission and, if it is over o
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:2117
-msgid "Now we're done with our C GDExtension. Build it once more and reopen the demo project in the editor."
+msgid "Now we're done with our C GDExtension. Build it once more and reopen the Godot project in the editor."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:2120

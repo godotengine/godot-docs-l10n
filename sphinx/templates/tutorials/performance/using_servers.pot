@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -15,28 +15,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/performance/using_servers.rst:6
+#: ../../docs/tutorials/performance/using_servers.rst:4
 msgid "Optimization using Servers"
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:8
-msgid "Engines like Godot provide increased ease of use thanks to their high-level constructs and features. Most of them are accessed and used via the :ref:`Scene System<doc_scene_tree>`. Using nodes and resources simplifies project organization and asset management in complex games."
+#: ../../docs/tutorials/performance/using_servers.rst:6
+msgid "Engines like Godot provide increased ease of use thanks to their high-level constructs and features. Most of them are accessed and used via the :ref:`scene system <doc_scene_tree>`. Using nodes and resources simplifies project organization and asset management in complex games."
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:12
-msgid "There are, of course, always drawbacks:"
+#: ../../docs/tutorials/performance/using_servers.rst:11
+msgid "There are several drawbacks to this:"
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:14
+#: ../../docs/tutorials/performance/using_servers.rst:13
 msgid "There is an extra layer of complexity."
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:15
+#: ../../docs/tutorials/performance/using_servers.rst:14
 msgid "Performance is lower than when using simple APIs directly."
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:16
-msgid "It is not possible to use multiple threads to control them."
+#: ../../docs/tutorials/performance/using_servers.rst:15
+msgid "It is not possible to :ref:`use multiple threads <doc_using_multiple_threads>` to control them."
 msgstr ""
 
 #: ../../docs/tutorials/performance/using_servers.rst:17
@@ -44,153 +44,157 @@ msgid "More memory is needed."
 msgstr ""
 
 #: ../../docs/tutorials/performance/using_servers.rst:19
-msgid "In many cases, this is not really a problem (Godot is very optimized, and most operations are handled with signals, so no polling is required). Still, sometimes it can be. For example, dealing with tens of thousands of instances for something that needs to be processed every frame can be a bottleneck."
-msgstr ""
-
-#: ../../docs/tutorials/performance/using_servers.rst:23
-msgid "This type of situation makes programmers regret they are using a game engine and wish they could go back to a more handcrafted, low-level implementation of game code."
+msgid "In most cases, this is not really a problem. Godot is well-optimized, and most operations are handled with signals, which means no polling is required. Still, sometimes, we want to extract better performance from the hardware when other avenues of optimization have been exhausted. For example, dealing with tens of thousands of instances for something that needs to be processed every frame can be a bottleneck."
 msgstr ""
 
 #: ../../docs/tutorials/performance/using_servers.rst:26
-msgid "Still, Godot is designed to work around this problem."
+msgid "This type of situation makes programmers regret they are using a game engine and wish they could go back to a more handcrafted, low-level implementation of game code."
 msgstr ""
 
 #: ../../docs/tutorials/performance/using_servers.rst:30
-msgid "You can see how using low-level servers works in action using the `Bullet Shower demo project <https://github.com/godotengine/godot-demo-projects/tree/master/2d/bullet_shower>`__"
+msgid "Still, Godot is designed to work around this problem."
 msgstr ""
 
 #: ../../docs/tutorials/performance/using_servers.rst:34
+msgid "You can see how using low-level servers works in action using the `Bullet Shower demo project <https://github.com/godotengine/godot-demo-projects/tree/master/2d/bullet_shower>`__."
+msgstr ""
+
+#: ../../docs/tutorials/performance/using_servers.rst:38
 msgid "Servers"
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:36
-msgid "One of the most interesting design decisions for Godot is the fact that the whole scene system is *optional*. While it is not currently possible to compile it out, it can be completely bypassed."
-msgstr ""
-
-#: ../../docs/tutorials/performance/using_servers.rst:39
-msgid "At the core, Godot uses the concept of Servers. They are very low-level APIs to control rendering, physics, sound, etc. The scene system is built on top of them and uses them directly. The most common servers are:"
-msgstr ""
-
-#: ../../docs/tutorials/performance/using_servers.rst:43
-msgid ":ref:`RenderingServer <class_RenderingServer>`: handles everything related to graphics."
+#: ../../docs/tutorials/performance/using_servers.rst:40
+msgid "One of the most interesting design decisions for Godot is the fact that the whole scene system is *optional*. While it is not possible to compile it out, it can be completely bypassed."
 msgstr ""
 
 #: ../../docs/tutorials/performance/using_servers.rst:44
-msgid ":ref:`PhysicsServer3D <class_PhysicsServer3D>`: handles everything related to 3D physics."
-msgstr ""
-
-#: ../../docs/tutorials/performance/using_servers.rst:45
-msgid ":ref:`PhysicsServer2D <class_PhysicsServer2D>`: handles everything related to 2D physics."
-msgstr ""
-
-#: ../../docs/tutorials/performance/using_servers.rst:46
-msgid ":ref:`AudioServer <class_AudioServer>`: handles everything related to audio."
+msgid "At the core, Godot uses the concept of Servers. They are low-level APIs to control rendering, physics, sound, etc. The scene system is built on top of them and uses them directly. The most common servers are:"
 msgstr ""
 
 #: ../../docs/tutorials/performance/using_servers.rst:48
-msgid "Explore their APIs and you will realize that all the functions provided are low-level implementations of everything Godot allows you to do."
+msgid ":ref:`class_RenderingServer`: Handles everything related to graphics."
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:52
+#: ../../docs/tutorials/performance/using_servers.rst:49
+msgid ":ref:`class_PhysicsServer3D`: Handles everything related to 3D physics."
+msgstr ""
+
+#: ../../docs/tutorials/performance/using_servers.rst:50
+msgid ":ref:`class_PhysicsServer2D`: Handles everything related to 2D physics."
+msgstr ""
+
+#: ../../docs/tutorials/performance/using_servers.rst:51
+msgid ":ref:`class_AudioServer`: Handles everything related to audio."
+msgstr ""
+
+#: ../../docs/tutorials/performance/using_servers.rst:53
+msgid "Explore their APIs, and you will realize that all the functions provided are low-level implementations of everything Godot allows you to do using nodes."
+msgstr ""
+
+#: ../../docs/tutorials/performance/using_servers.rst:57
 msgid "RIDs"
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:54
+#: ../../docs/tutorials/performance/using_servers.rst:59
 msgid "The key to using servers is understanding Resource ID (:ref:`RID <class_RID>`) objects. These are opaque handles to the server implementation. They are allocated and freed manually. Almost every function in the servers requires RIDs to access the actual resource."
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:58
+#: ../../docs/tutorials/performance/using_servers.rst:64
 msgid "Most Godot nodes and resources contain these RIDs from the servers internally, and they can be obtained with different functions. In fact, anything that inherits :ref:`Resource <class_Resource>` can be directly casted to an RID. Not all resources contain an RID, though: in such cases, the RID will be empty. The resource can then be passed to server APIs as an RID."
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:62
-msgid "Resources are reference-counted (see :ref:`RefCounted <class_RefCounted>`), and references to a resource's RID are *not* counted when determining whether the resource is still in use. Make sure to keep a reference to the resource outside the server, or else both it and its RID will be erased."
+#: ../../docs/tutorials/performance/using_servers.rst:72
+msgid "Resources are reference-counted (see :ref:`RefCounted <class_RefCounted>`), and references to a resource's RID are *not* counted when determining whether the resource is still in use. Make sure to **keep a reference** to the resource outside the server. Otherwise, both the resource and its RID will be erased."
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:67
+#: ../../docs/tutorials/performance/using_servers.rst:77
 msgid "For nodes, there are many functions available:"
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:69
+#: ../../docs/tutorials/performance/using_servers.rst:79
 msgid "For CanvasItem, the :ref:`CanvasItem.get_canvas_item() <class_CanvasItem_method_get_canvas_item>` method will return the canvas item RID in the server."
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:71
+#: ../../docs/tutorials/performance/using_servers.rst:81
 msgid "For CanvasLayer, the :ref:`CanvasLayer.get_canvas() <class_CanvasLayer_method_get_canvas>` method will return the canvas RID in the server."
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:73
+#: ../../docs/tutorials/performance/using_servers.rst:83
 msgid "For Viewport, the :ref:`Viewport.get_viewport_rid() <class_Viewport_method_get_viewport_rid>` method will return the viewport RID in the server."
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:75
-msgid "For 3D, the :ref:`World3D <class_World3D>` resource (obtainable in the :ref:`Viewport <class_Viewport>` and :ref:`Node3D <class_Node3D>` nodes) contains functions to get the *RenderingServer Scenario*, and the *PhysicsServer Space*. This allows creating 3D objects directly with the server API and using them."
-msgstr ""
-
-#: ../../docs/tutorials/performance/using_servers.rst:79
-msgid "For 2D, the :ref:`World2D <class_World2D>` resource (obtainable in the :ref:`Viewport <class_Viewport>` and :ref:`CanvasItem <class_CanvasItem>` nodes) contains functions to get the *RenderingServer Canvas*, and the *Physics2DServer Space*. This allows creating 2D objects directly with the server API and using them."
-msgstr ""
-
-#: ../../docs/tutorials/performance/using_servers.rst:83
-msgid "The :ref:`VisualInstance3D<class_VisualInstance3D>` class, allows getting the scenario *instance* and *instance base* via the :ref:`VisualInstance3D.get_instance() <class_VisualInstance3D_method_get_instance>` and :ref:`VisualInstance3D.get_base() <class_VisualInstance3D_method_get_base>` respectively."
-msgstr ""
-
-#: ../../docs/tutorials/performance/using_servers.rst:87
-msgid "Try exploring the nodes and resources you are familiar with and find the functions to obtain the server *RIDs*."
+#: ../../docs/tutorials/performance/using_servers.rst:85
+msgid "For 2D, the :ref:`class_World2D` resource (obtainable in the :ref:`class_Viewport` and :ref:`CanvasItem <class_CanvasItem>` nodes) contains functions to get the *RenderingServer Canvas*, and the *PhysicsServer2D Space*. This allows creating 2D objects directly with the server API and using them."
 msgstr ""
 
 #: ../../docs/tutorials/performance/using_servers.rst:89
-msgid "It is not advised to control RIDs from objects that already have a node associated. Instead, server functions should always be used for creating and controlling new ones and interacting with the existing ones."
+msgid "For 3D, the :ref:`class_World3D` resource (obtainable in the :ref:`class_Viewport` and :ref:`class_Node3D` nodes) contains functions to get the *RenderingServer Scenario*, and the *PhysicsServer Space*. This allows creating 3D objects directly with the server API and using them."
 msgstr ""
 
 #: ../../docs/tutorials/performance/using_servers.rst:93
+msgid "The :ref:`class_VisualInstance3D` class, allows getting the scenario *instance* and *instance base* via the :ref:`VisualInstance3D.get_instance() <class_VisualInstance3D_method_get_instance>` and :ref:`VisualInstance3D.get_base() <class_VisualInstance3D_method_get_base>` respectively."
+msgstr ""
+
+#: ../../docs/tutorials/performance/using_servers.rst:97
+msgid "Try exploring the nodes and resources you are familiar with and find the functions to obtain the server *RIDs*."
+msgstr ""
+
+#: ../../docs/tutorials/performance/using_servers.rst:99
+msgid "It is not advised to control RIDs from objects that already have a node associated. Instead, server functions should always be used for creating and controlling new ones and interacting with the existing ones."
+msgstr ""
+
+#: ../../docs/tutorials/performance/using_servers.rst:103
 msgid "Creating a sprite"
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:95
-msgid "This is an example of how to create a sprite from code and move it using the low-level :ref:`CanvasItem <class_CanvasItem>` API."
+#: ../../docs/tutorials/performance/using_servers.rst:105
+msgid "This is an example of how to create a sprite from code and move it using the low-level :ref:`class_CanvasItem` API."
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:98
+#: ../../docs/tutorials/performance/using_servers.rst:110
 msgid "When creating canvas items using the RenderingServer, you should reset physics interpolation on the first frame using :ref:`RenderingServer.canvas_item_reset_physics_interpolation() <class_RenderingServer_method_canvas_item_reset_physics_interpolation>`. This ensures proper synchronization between the rendering and physics systems."
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:151
-msgid "The Canvas Item API in the server allows you to add draw primitives to it. Once added, they can't be modified. The Item needs to be cleared and the primitives re-added (this is not the case for setting the transform, which can be done as many times as desired)."
-msgstr ""
-
-#: ../../docs/tutorials/performance/using_servers.rst:155
-msgid "Primitives are cleared this way:"
-msgstr ""
-
-#: ../../docs/tutorials/performance/using_servers.rst:168
-msgid "Instantiating a Mesh into 3D space"
+#: ../../docs/tutorials/performance/using_servers.rst:115
+msgid "If this is not done, the canvas item may appear to teleport in when the scene is loaded, rather than appearing directly at its intended location."
 msgstr ""
 
 #: ../../docs/tutorials/performance/using_servers.rst:170
+msgid "The Canvas Item API in the server allows you to add draw primitives to it. Once added, they can't be modified. The Item needs to be cleared and the primitives re-added. This is not the case for setting the transform, which can be done as many times as desired."
+msgstr ""
+
+#: ../../docs/tutorials/performance/using_servers.rst:175
+msgid "Primitives are cleared this way:"
+msgstr ""
+
+#: ../../docs/tutorials/performance/using_servers.rst:188
+msgid "Instantiating a Mesh into 3D space"
+msgstr ""
+
+#: ../../docs/tutorials/performance/using_servers.rst:190
 msgid "The 3D APIs are different from the 2D ones, so the instantiation API must be used."
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:223
+#: ../../docs/tutorials/performance/using_servers.rst:243
 msgid "Creating a 2D RigidBody and moving a sprite with it"
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:225
-msgid "This creates a :ref:`RigidBody2D <class_RigidBody2D>` using the :ref:`PhysicsServer2D <class_PhysicsServer2D>` API, and moves a :ref:`CanvasItem <class_CanvasItem>` when the body moves."
+#: ../../docs/tutorials/performance/using_servers.rst:245
+msgid "This creates a :ref:`class_RigidBody2D` using the :ref:`class_PhysicsServer2D` API, and moves a :ref:`class_CanvasItem` when the body moves."
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:295
-msgid "The 3D version should be very similar, as 2D and 3D physics servers are identical (using :ref:`RigidBody3D <class_RigidBody3D>` and :ref:`PhysicsServer3D <class_PhysicsServer3D>` respectively)."
+#: ../../docs/tutorials/performance/using_servers.rst:328
+msgid "The 3D version should be very similar, as the 2D and 3D physics servers are identical (using :ref:`class_RigidBody3D` and :ref:`class_PhysicsServer3D` respectively)."
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:299
+#: ../../docs/tutorials/performance/using_servers.rst:333
 msgid "Getting data from the servers"
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:301
-msgid "Try to **never** request any information from ``RenderingServer``, ``PhysicsServer2D`` or ``PhysicsServer3D`` by calling functions unless you know what you are doing. These servers will often run asynchronously for performance and calling any function that returns a value will stall them and force them to process anything pending until the function is actually called. This will severely decrease performance if you call them every frame (and it won't be obvious why)."
+#: ../../docs/tutorials/performance/using_servers.rst:335
+msgid "Try to **never** request any information from :ref:`class_RenderingServer`, :ref:`class_PhysicsServer2D`, or :ref:`class_PhysicsServer3D` by calling functions unless you know what you are doing. These servers will often run asynchronously for performance and calling any function that returns a value will stall them and force them to process anything pending until the function is actually called. This will severely decrease performance if you call them every frame (and it won't be obvious why)."
 msgstr ""
 
-#: ../../docs/tutorials/performance/using_servers.rst:307
+#: ../../docs/tutorials/performance/using_servers.rst:343
 msgid "Because of this, most APIs in such servers are designed so it's not even possible to request information back, until it's actual data that can be saved."
 msgstr ""

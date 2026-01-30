@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -60,25 +60,29 @@ msgid "Set this key as environment variable in the console that you will use to 
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_with_script_encryption_key.rst:64
-msgid "Compile Godot export templates and set them as custom export templates in the export preset options."
+msgid "Note that the commands suggested above do **not** persist the variables across terminal sessions."
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_with_script_encryption_key.rst:67
+msgid "Compile Godot export templates and set them as custom export templates in the export preset options. If the environment variable is set correctly, the following message is printed at the beginning of compilation:"
+msgstr ""
+
+#: ../../docs/engine_details/development/compiling/compiling_with_script_encryption_key.rst:76
 msgid "Set the encryption key in the **Encryption** tab of the export preset:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_with_script_encryption_key.rst:71
+#: ../../docs/engine_details/development/compiling/compiling_with_script_encryption_key.rst:80
 msgid "Add filters for the files/folders to encrypt. **By default**, include filters are empty and **nothing will be encrypted**."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_with_script_encryption_key.rst:74
+#: ../../docs/engine_details/development/compiling/compiling_with_script_encryption_key.rst:83
 msgid "Export the project. The project should run with the files encrypted now."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_with_script_encryption_key.rst:77
+#: ../../docs/engine_details/development/compiling/compiling_with_script_encryption_key.rst:86
 msgid "Troubleshooting"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_with_script_encryption_key.rst:79
+#: ../../docs/engine_details/development/compiling/compiling_with_script_encryption_key.rst:88
 msgid "If you get an error like below, it means the key wasn't properly included in your Godot build. Godot is encrypting PCK file during export, but can't read it at runtime."
 msgstr ""
